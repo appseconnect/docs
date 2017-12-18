@@ -247,10 +247,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      author_profile: false
+      read_time: false
+      comments: true
+      share: false
       related: true
       sidebar:
         nav: "docs"
