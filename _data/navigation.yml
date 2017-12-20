@@ -14,8 +14,8 @@ main:
 customers:
  <ul>
     {% for doc in site.posts %}
-      {% if doc.category == "customers" %}
+    
         <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-      {% endif %}
+      
     {% endfor %}
  </ul>
