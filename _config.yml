@@ -252,3 +252,16 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+  - scope:
+      path: "customers"
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: true
+      sidebar:
+       nav: "customers"
