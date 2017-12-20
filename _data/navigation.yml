@@ -13,4 +13,4 @@ main:
   
 customers:
  - title: Test4
-   url:# 
+   url: /customers/ 
