@@ -1,7 +1,7 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
    <ul>
-    {% for doc in site.posts[post.category]%}
+    {% for doc in site.posts %}
         <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
     {% endfor %}
   </ul>
