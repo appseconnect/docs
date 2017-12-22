@@ -238,6 +238,7 @@ compress_html:
   ignore:
     envs: development
 
+JEKYLL_ENV = production
 
 # Defaults
 defaults:
