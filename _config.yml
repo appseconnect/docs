@@ -5,19 +5,19 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "default", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "APPSeCONNECT Product Documentation"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name                     : "Team APPSeCONNECT"
+description              : "APPSeCONNECT Product documentation for Customers, Implementers, Partners etc."
+url                      : "https://appseconnect.github.io"
+baseurl                  : "/docs"
+repository               : "appseconnect/docs"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # false, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -51,7 +51,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true, false (default)
 
 # SEO Related
 google_site_verification :
@@ -83,10 +83,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Team APPSeCONNECT"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "APPSeCONNECT product development team."
+  location         : ""
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -247,10 +247,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      author_profile: false
+      read_time: false
+      comments: true
+      share: false
       related: true
       
   - scope:
@@ -260,8 +260,6 @@ defaults:
       layout: single
       author_profile: false
       read_time: false
-      comments: # true
+      comments: true
       share: false
       related: true
-      sidebar:
-       nav: "customers"
