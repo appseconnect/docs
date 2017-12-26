@@ -24,9 +24,9 @@
 {% endif %}
 {% endcomment %}
 
-<h1>Tagged {{ page.tag }}</h1>
+<h1>Tagged {{ page.category }}</h1>
 
-{% assign posts = site.tags[page.tag] %}
+{% assign posts = site.categories[page.category] %}
 {% for post in posts %}
    <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 {% endfor %}
