@@ -23,44 +23,22 @@
   </div>
 {% endif %}
 {% endcomment %}
-
-
-
 {% assign posts = site.tags[page.tag] %}
-{% for post in posts %}
-   <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-{% endfor %}
-
-
 
 <div class="sidebar sticky">
-  
-<nav class="nav__list">
-
-  <ul class="nav__items">
-    
-      <li>
-        
-          <span class="nav__sub-title">page.tag</span>
-        
-
-        
-        <ul>
-          
-            {% for post in posts %}
-  <li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-{% endfor %}
-         
-          
-        </ul>
-        
-      </li>
-    
+  <nav class="nav__list">
+    <ul class="nav__items">
+    <li>
+     <span class="nav__sub-title">{{page.tag}}</span>
+      <ul>
+     {% for post in posts %}
+       <li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+     {% endfor %}
+     </ul>
+   </li>
   </ul>
 </nav>
-    
-  
-  </div>
+</div>
 
 
 
