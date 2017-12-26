@@ -23,9 +23,40 @@
   </div>
 {% endif %}
 {% endcomment %}
+1
+{% for doc in site.posts[page.categories] %}
 
-{% for doc in site.posts %}
-      
         <li>{{ doc.title }}</li>
-     
+
 {% endfor %}
+2
+{% for doc in site.posts[page.category] %}
+
+        <li>{{ doc.title }}</li>
+
+{% endfor %}
+3
+{% for doc in site.posts[post.categories] %}
+
+        <li>{{ doc.title }}</li>
+
+{% endfor %}
+4
+{% for doc in site.posts[post.category] %}
+
+        <li>{{ doc.title }}</li>
+
+{% endfor %}
+5
+{% for doc in site.posts[site.categories] %}
+
+        <li>{{ doc.title }}</li>
+
+{% endfor %}
+6
+{% for doc in site.posts[site.category] %}
+
+        <li>{{ doc.title }}</li>
+
+{% endfor %}
+
