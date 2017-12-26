@@ -23,10 +23,11 @@
   </div>
 {% endif %}
 {% endcomment %}
-{% for post in site.tags.abc %}
+{% assign cat = page.tags %}
+{% for post in site.tags.[cat] %}
     <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 {% endfor %}
-{% page.tags %}
+
 
 
 
