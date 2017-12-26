@@ -24,8 +24,8 @@
 {% endif %}
 {% endcomment %}
 
-{% for doc in site.posts %}
+{% for doc in site.categories %}
       
-        <li><a href="{{ doc.url }}">{{ doc.category }}</a></li>
+        <li>{{ doc.title }}</li>
      
 {% endfor %}
