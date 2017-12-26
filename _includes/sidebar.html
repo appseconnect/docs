@@ -25,7 +25,7 @@
 {% endcomment %}
 {% assign cat = page.tags %}
 {{ cat }}
-{% for post in site.tags.[cat] %}
+{% for post in site.tags.{{cat}} %}
     <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 {% endfor %}
 
