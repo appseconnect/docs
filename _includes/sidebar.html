@@ -23,35 +23,13 @@
   </div>
 {% endif %}
 {% endcomment %}
-{% assign cat = page.tags %}
-{% assign cat2 = site.tags[cat] %}
-{{ cat }}
-{{ cat2 }}
-{% for post in site.tags.cat %}
-    <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+
+<h1>Tagged {{ page.tag }}</h1>
+
+{% assign posts = site.tags[page.tag] %}
+{% for post in posts %}
+   <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 {% endfor %}
-
-
-<h2>{{page.title}}</h2>
-
-{% capture tags %}
-  {% for tag in site.tags %}
-    {{ tag[0] }}
-  {% endfor %}
-{% endcapture %}
-{% assign sortedtags = tags | split:' ' | sort %}
-
-{% for tag in sortedtags %}
-  <h3 id="{{ tag | escape }}">{{ tag }}</h3>
-  <ul>
-  {% for post in site.tags[tag] %}
-  {% if site.tags[tag] == cat %}
-    <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-  {% endif %}
-  {% endfor %}
-  </ul>
-{% endfor %}
-
 
 
 
