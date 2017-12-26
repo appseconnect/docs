@@ -24,7 +24,7 @@
 {% endif %}
 {% endcomment %}
 {% assign cat = page.tags %}
-{% assign cat2 = site.tags %}
+{% assign cat2 = site.tags[cat] %}
 {{ cat }}
 {{ cat2 }}
 {% for post in site.tags.cat %}
