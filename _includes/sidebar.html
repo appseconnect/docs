@@ -25,14 +25,14 @@
 {% endcomment %}
 1
 {% for post in site.categories.FOO %}
-    <li>{{ post.title }}</li>
+    <li>{{ post }}</li>
 {% endfor %}
 2
 {% for post in site.categories[category_name] %}
-    <li>{{ post.title }}</li>
+    <li>{{ post }}</li>
 {% endfor %}
 3
 {% for post in site.categories.FOO %}
- + [{{ post.title }}]({{ page.url }})
+ + [{{ post }}]({{ page.url }})
 {% endfor %}
 
