@@ -32,9 +32,11 @@
      <span class="nav__sub-title">{{page.tag}}</span>
       <ul>
      {% for post in posts %}
-	 {{ post.url}}
-	 {{ page.url}}
-       <li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+	    {% if post.url == page.url %}
+       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+	    {% else %}
+		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+		{% endif %}
      {% endfor %}
      </ul>
    </li>
