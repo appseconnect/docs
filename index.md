@@ -14,21 +14,21 @@ feature_row:
     title: "Customers"
     excerpt: "Learn how to use APPSeCONNECT in super easy steps."
     url: "/customers/"
-    btn_class: "btn--primary"
+    btn_class: "btn--appsy"
     btn_label: "Learn More"
   - image_path: /assets/images/Implementer.png
     alt: "fully responsive"
     title: "Implementers"
     excerpt: "Learn how to configure and implement APPSeCONNECT."
     url: "/implementers/"
-    btn_class: "btn--primary"
+    btn_class: "btn--appsy"
     btn_label: "Learn More"
   - image_path: /assets/images/Developer.png
     alt: "100% free"
     title: "Developers"
     excerpt: "Learn how to create a adapter from scratch using APPSeCONNECT."
     url: "/developers/"
-    btn_class: "btn--primary"
+    btn_class: "btn--appsy"
     btn_label: "Learn More"
 github:
   - excerpt: ''
