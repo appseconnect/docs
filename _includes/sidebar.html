@@ -31,7 +31,7 @@
     <li>
      <span class="nav__sub-title">{{page.tag}}</span>
       <ul>
-     {% for post in posts %}
+     {% for post in posts | reverse %}
 	    {% if post.url == page.url %}
        <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
