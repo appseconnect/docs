@@ -9,21 +9,21 @@ header:
   caption:
 excerpt: 'Find everything related to APPSeCONNECT in one place.<br /> <small>Latest release v4.0.0</small>'
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/customer.png
     alt: "customizable"
     title: "Customers"
     excerpt: "Learn how to use APPSeCONNECT in super easy steps."
     url: "/customers/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/mm-responsive-feature.png
+  - image_path: /assets/images/Implementer.png
     alt: "fully responsive"
     title: "Implementers"
     excerpt: "Learn how to configure and implement APPSeCONNECT."
     url: "/implementers/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/mm-free-feature.png
+  - image_path: /assets/images/Developer.png
     alt: "100% free"
     title: "Developers"
     excerpt: "Learn how to create a adapter from scratch using APPSeCONNECT."
