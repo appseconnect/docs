@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#1D7AB1"
-  overlay_image: /assets/images/APPSeCONNECT-documentation.jpg
+  overlay_image: /assets/images/APPSeCONNECT-documentation.png
   cta_label: "Visit on GitHub"
   cta_url: "https://github.com/appseconnect/docs"
   caption:
