@@ -1,6 +1,0 @@
----
-layout: splash
-permalink: /categories/#customers/
----
-
-Test Category
