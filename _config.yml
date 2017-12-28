@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en"
-title                    : "APPSeCONNECT Product Documentation"
+title                    : "APPSeCONNECT Product Docs"
 title_separator          : "-"
 name                     : "Team APPSeCONNECT"
 description              : "APPSeCONNECT Product documentation for Customers, Implementers, Partners etc."
@@ -238,6 +238,10 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  category:
+    output: true
+
 # Defaults
 defaults:
   # _posts
@@ -262,3 +266,9 @@ defaults:
       comments: true
       share: false
       related: true
+      
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
