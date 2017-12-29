@@ -3,12 +3,20 @@ layout: splash
 permalink: /categories/implementers/
 ---
 
-<p>Posts in category "Implementers" are:</p>
+<p>Posts in category <strong>Implementers</strong> are:</p>
 
-<ul>
+
   {% for post in site.categories.implementers %}
-    {% if post.url %}
-        <li><a href="/docs{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
+    <div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/docs{{ post.url }}">{{ post.title }}</a>
+      
+    </h2>
+     
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt }}</p>
+  </article>
+</div>
   {% endfor %}
-</ul>
