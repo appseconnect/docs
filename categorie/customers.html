@@ -3,4 +3,12 @@ layout: splash
 permalink: /categories/customers/
 ---
 
-Test Category
+<p>Posts in category "Customers" are:</p>
+
+<ul>
+  {% for post in site.categories.customers %}
+    {% if post.url %}
+        <li><a href="/docs{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
