@@ -26,7 +26,7 @@ feature_row:
   - image_path: /assets/images/Developer.png
     alt: "100% free"
     title: "Developers"
-    excerpt: "Learn how to create a adapter from scratch."
+    excerpt: "Learn how to create a adapter from scratch using APPSeCONNECT."
     url: "/developers/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
