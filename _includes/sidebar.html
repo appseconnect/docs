@@ -25,6 +25,11 @@
 {% endcomment %}
 {% assign posts = site.tags[page.tag] %}
 
+
+ {% for x in site.categories %}
+    {{ x[0] }}<br>{{ x }}	
+ {% endfor %}
+
 <div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
