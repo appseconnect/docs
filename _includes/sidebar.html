@@ -30,8 +30,9 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
+	{% for x in site.categories %}
     <li>
-     <span class="nav__sub-title">{{page.tag}}</span>
+     <span class="nav__sub-title">{{ x }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -42,6 +43,7 @@
      {% endfor %}
      </ul>
    </li>
+   {% endfor %}
   </ul>
 </nav>
 </div>
