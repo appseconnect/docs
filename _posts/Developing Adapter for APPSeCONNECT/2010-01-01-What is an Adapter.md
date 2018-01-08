@@ -1,8 +1,7 @@
 ---
 title: "What is an Adapter"
 toc: true
-categories: 
-	- "Developing Adapter for APPSeCONNECT"
+category: "Developing Adapter for APPSeCONNECT"
 tag: developers
 ---
 
