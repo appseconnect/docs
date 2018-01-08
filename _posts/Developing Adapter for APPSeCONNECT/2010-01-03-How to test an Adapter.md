@@ -2,5 +2,5 @@
 title: "How to test an Adapter"
 toc: true
 tag: developers
-categories: Developing Adapter for APPSeCONNECT
+category: Developing Adapter for APPSeCONNECT
 ---
