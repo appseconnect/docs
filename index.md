@@ -11,9 +11,9 @@ excerpt: 'Find everything related to APPSeCONNECT in one place.<br /> <small>Lat
 feature_row:
   - image_path: /assets/images/customer.png
     alt: "customizable"
-    title: "Customers"
-    excerpt: "Learn how to use APPSeCONNECT in super easy steps."
-    url: "/What-is-an-Adapter/"
+    title: "Developers"
+    excerpt: "Learn how to create a adapter from scratch using APPSeCONNECT."
+    url: "/developing%20adapter%20for%20appseconnect/What-is-an-Adapter/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/Implementer.png
@@ -25,8 +25,8 @@ feature_row:
     btn_label: "Learn More"
   - image_path: /assets/images/Developer.png
     alt: "100% free"
-    title: "Developers"
-    excerpt: "Learn how to create a adapter from scratch using APPSeCONNECT."
+    title: "Customers"
+    excerpt: "Learn how to use APPSeCONNECT."
     url: ""
     btn_class: "btn--primary"
     btn_label: "Learn More"

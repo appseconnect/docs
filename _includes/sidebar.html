@@ -35,11 +35,13 @@
      <span class="nav__sub-title">{{ x }}</span>
       <ul>
      {% for post in posts reversed %}
+	  {% if post.category == x %}
 	    {% if post.url == page.url %}
        <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
+	   {% endif %}
      {% endfor %}
      </ul>
    </li>
