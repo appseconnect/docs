@@ -1,4 +1,4 @@
-
+{% comment %}
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
@@ -22,8 +22,8 @@
   {% endif %}
   </div>
 {% endif %}
-
-{% assign posts = site.tags[page.tag] %}
+{% endcomment %}
+{% assign posts = site.posts %}
 
 <div class="sidebar sticky">
   <nav class="nav__list">
