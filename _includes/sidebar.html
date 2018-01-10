@@ -25,15 +25,16 @@
 {% endcomment %}
 {% assign posts = site.tags[page.tag] %}
 {% assign currentTag = page.tag %}
+{% assign currentCat = page.category %}
 
  {% if currentTag == "developers" %}
 <div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for x in site.categories[page.category] %}
+	
     <li>
-     <span class="nav__sub-title">{{ x }}</span>
+     <span class="nav__sub-title">Heading</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -44,7 +45,7 @@
    {% endfor %}
      </ul>
    </li>
- {% endfor %}
+
   </ul>
 </nav>
 </div>  
@@ -55,9 +56,9 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for x in site.categories[page.category] %}
+	
     <li>
-       <span class="nav__sub-title">{{ x }}</span>
+     <span class="nav__sub-title">Heading</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -68,10 +69,10 @@
    {% endfor %}
      </ul>
    </li>
- {% endfor %}
+
   </ul>
 </nav>
-</div> 
+</div>  
  {% endif %}
  
  {% if currentTag == "administrators" %}
@@ -79,9 +80,9 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for x in site.categories[page.category] %}
+	
     <li>
-     <span class="nav__sub-title">{{ x }}</span>
+     <span class="nav__sub-title">Heading</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -92,9 +93,9 @@
    {% endfor %}
      </ul>
    </li>
- {% endfor %}
+
   </ul>
 </nav>
-</div> 
+</div>  
  {% endif %}
 
