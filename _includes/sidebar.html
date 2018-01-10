@@ -28,21 +28,10 @@
 
  {% if currentTag == "developers" %}
  A
- {% endif %}
- 
- {% if currentTag == "implementers" %}
- B
- {% endif %}
- 
- {% if currentTag == "administrators" %}
- C
- {% endif %}
-
-<!--<div class="sidebar sticky">
+ <div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for x in site.categories %}
     <li>
      <span class="nav__sub-title">{{ x }}</span>
       <ul>
@@ -52,10 +41,58 @@
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
-     {% endfor %}
      </ul>
    </li>
    {% endfor %}
   </ul>
 </nav>
-</div> -->
+</div>
+ {% endif %}
+ 
+ {% if currentTag == "implementers" %}
+ B
+ <div class="sidebar sticky">
+<p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
+  <nav class="nav__list">
+    <ul class="nav__items">
+    <li>
+     <span class="nav__sub-title">{{ x }}</span>
+      <ul>
+     {% for post in posts reversed %}
+	    {% if post.url == page.url %}
+       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+	    {% else %}
+		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+		{% endif %}
+     </ul>
+   </li>
+   {% endfor %}
+  </ul>
+</nav>
+</div>
+ {% endif %}
+ 
+ {% if currentTag == "administrators" %}
+ C
+ <div class="sidebar sticky">
+<p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
+  <nav class="nav__list">
+    <ul class="nav__items">
+    <li>
+     <span class="nav__sub-title">{{ x }}</span>
+      <ul>
+     {% for post in posts reversed %}
+	    {% if post.url == page.url %}
+       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+	    {% else %}
+		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+		{% endif %}
+     </ul>
+   </li>
+   {% endfor %}
+  </ul>
+</nav>
+</div>
+ {% endif %}
+
+
