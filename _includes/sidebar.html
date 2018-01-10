@@ -27,18 +27,21 @@
 {% assign currentTag = page.tag %}
 
  {% if currentTag == "developers" %}
- <div class="sidebar sticky">
+<div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-    
+    <li>
+     <span class="nav__sub-title">Heading</span>
+      <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
        <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
-     
+     </ul>
+   </li>
    {% endfor %}
   </ul>
 </nav>
@@ -46,18 +49,21 @@
  {% endif %}
  
  {% if currentTag == "implementers" %}
- <div class="sidebar sticky">
+<div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-    
+    <li>
+     <span class="nav__sub-title">Heading</span>
+      <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
        <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
-    
+     </ul>
+   </li>
    {% endfor %}
   </ul>
 </nav>
@@ -69,14 +75,17 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-   
+    <li>
+     <span class="nav__sub-title">Heading</span>
+      <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
        <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
-    
+     </ul>
+   </li>
    {% endfor %}
   </ul>
 </nav>
