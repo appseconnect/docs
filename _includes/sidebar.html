@@ -24,9 +24,21 @@
 {% endif %}
 {% endcomment %}
 {% assign posts = site.tags[page.tag] %}
+{% assign currentTag = page.tag %}
 
+ {% if currentTag == "developers" %}
+ A
+ {% endif %}
+ 
+ {% if currentTag == "implementers" %}
+ B
+ {% endif %}
+ 
+ {% if currentTag == "administrators" %}
+ C
+ {% endif %}
 
-<div class="sidebar sticky">
+<!--<div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
@@ -46,4 +58,4 @@
    {% endfor %}
   </ul>
 </nav>
-</div>
+</div> -->
