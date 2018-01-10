@@ -31,7 +31,7 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	
+	{% for post in site.categories[post.category] %}
     <li>
      <span class="nav__sub-title">Heading</span>
       <ul>
@@ -44,10 +44,10 @@
    {% endfor %}
      </ul>
    </li>
-
+ {% endfor %}
   </ul>
 </nav>
-</div> 
+</div>  
  {% endif %}
  
  {% if currentTag == "implementers" %}
@@ -55,7 +55,7 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	
+	{% for post in site.categories[post.category] %}
     <li>
      <span class="nav__sub-title">Heading</span>
       <ul>
@@ -68,7 +68,7 @@
    {% endfor %}
      </ul>
    </li>
-
+ {% endfor %}
   </ul>
 </nav>
 </div> 
@@ -79,7 +79,7 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	
+	{% for post in site.categories[post.category] %}
     <li>
      <span class="nav__sub-title">Heading</span>
       <ul>
@@ -92,7 +92,7 @@
    {% endfor %}
      </ul>
    </li>
- 
+ {% endfor %}
   </ul>
 </nav>
 </div> 
