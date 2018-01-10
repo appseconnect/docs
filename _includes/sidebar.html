@@ -31,9 +31,9 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for post in site.categories[post.category] %}
+	{% for x in site.categories[post.category] %}
     <li>
-     <span class="nav__sub-title">Heading</span>
+     <span class="nav__sub-title">{{ x }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -55,9 +55,9 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for post in site.categories[post.category] %}
+	{% for x in site.categories[post.category] %}
     <li>
-     <span class="nav__sub-title">Heading</span>
+       <span class="nav__sub-title">{{ x }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -79,9 +79,9 @@
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	{% for post in site.categories[post.category] %}
+	{% for x in site.categories[post.category] %}
     <li>
-     <span class="nav__sub-title">Heading</span>
+     <span class="nav__sub-title">{{ x }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
