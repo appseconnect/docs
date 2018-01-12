@@ -34,7 +34,7 @@
     <ul class="nav__items">
 	
     <li>
-     <span class="nav__sub-title">Heading</span>
+     <span class="nav__sub-title">{{ currentCat }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
@@ -53,7 +53,7 @@
  
  {% if currentTag == "implementers" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{ currentCat }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 	
@@ -77,12 +77,12 @@
  
  {% if currentTag == "administrators" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{ currentCat }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 	
     <li>
-     <span class="nav__sub-title">Heading</span>
+     <span class="nav__sub-title">{{ page.category }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
