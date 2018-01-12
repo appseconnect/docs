@@ -25,7 +25,7 @@
 {% endcomment %}
 {% assign posts = site.tags[page.tag] %}
 {% assign currentTag = page.tag %}
-{% assign matchCat = "hello" %}
+{% assign matchCat = " " %}
 
 
 {% if currentTag == "developers" %}
@@ -34,32 +34,15 @@
   <nav class="nav__list">
     <ul class="nav__items">
 	{% for post in posts reversed %}
-	{% assign postCat = post.category %}
-	 {% if postCat != matchCat %}
-	 <li>
-     <span class="nav__sub-title">{{ postCat }}</span>
-      <ul>
-     
-	    {% if post.url == page.url %}
-       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
-	    {% else %}
-		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-		{% endif %}
-		{% matchCat = post.category %}
-		
-	 {% else %}
-	 
-		{% if post.url == page.url %}
-			<li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
-	    {% else %}
-			<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-		{% endif %}
-	 
-	 
-	 {% endif %}
-	 </ul>
-   </li>
-	 
+			{% assign postCat = post.category %}
+			 {% if postCat != matchCat %}
+			
+			 {% else %}
+			 
+			
+			 
+			 {% endif %}
+			 
   {% endfor %}
   </ul>
 </nav>
