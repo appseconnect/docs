@@ -28,7 +28,7 @@
 {% assign matchCat = " " %}
 
 
- {% if currentTag == "developers" %}
+{% if currentTag == "developers" %}
 <div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
@@ -45,16 +45,15 @@
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
-   
-     
-      {% matchCat = post.category %}
+		{% matchCat = post.category %}
+		
 	 {% else %}
 	 
-	  {% if post.url == page.url %}
-       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+		{% if post.url == page.url %}
+			<li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
-		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-	 {% endif %}
+			<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+		{% endif %}
 	 
 	 
 	 {% endif %}
@@ -65,7 +64,7 @@
   </ul>
 </nav>
 </div>  
- {% endif %}
+{% endif %}
  
  {% if currentTag == "implementers" %}
 <div class="sidebar sticky">
