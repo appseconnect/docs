@@ -38,7 +38,7 @@
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
-       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+       <li> <a href="/docs{{ post.url}}" class="active">{{ post.category }}</a></li>
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
@@ -82,7 +82,7 @@
     <ul class="nav__items">
 	
     <li>
-     <span class="nav__sub-title">{{{ currentCat }}</span>
+     <span class="nav__sub-title">{{ currentCat }}</span>
       <ul>
      {% for post in posts reversed %}
 	    {% if post.url == page.url %}
