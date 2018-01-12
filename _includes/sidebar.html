@@ -25,27 +25,43 @@
 {% endcomment %}
 {% assign posts = site.tags[page.tag] %}
 {% assign currentTag = page.tag %}
-{% assign currentCat = page.category %}
+{% assign matchCat %}
+
 
  {% if currentTag == "developers" %}
 <div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	
-    <li>
-     <span class="nav__sub-title">{{ currentCat }}</span>
+	{% for post in posts reversed %}
+	{% assign postCat = post.category %}
+	 {% if postCat != matchCat %}
+	 <li>
+     <span class="nav__sub-title">{{ postCat }}</span>
       <ul>
-     {% for post in posts reversed %}
+     
 	    {% if post.url == page.url %}
-       <li> <a href="/docs{{ post.url}}" class="active">{{ post.category }}</a></li>
+       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 	    {% else %}
 		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 		{% endif %}
-   {% endfor %}
-     </ul>
+   
+     
+      {% matchCat == post.category %}
+	 {% else %}
+	 
+	  {% if post.url == page.url %}
+       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+	    {% else %}
+		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+	 {% endif %}
+	 
+	 
+	 {% endif %}
+	 </ul>
    </li>
-
+	 
+  {% endfor %}
   </ul>
 </nav>
 </div>  
