@@ -30,7 +30,7 @@
 
 {% if currentTag == "developers" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{page.tag}}</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 
@@ -38,13 +38,13 @@
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
-			 <span class="nav__sub-title">{{ postCat }}</span>
+			 <span class="nav__sub-title sub-title">{{ postCat }}</span>
 		
 			 
 				{% if post.url == page.url %}
-			   <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-				<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 				{% endif %}
 				
 			 {% assign matchCat = post.category %}
@@ -52,9 +52,9 @@
 			 {% else %}
 			 
 				{% if post.url == page.url %}
-					<li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-					<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 				{% endif %}
 			 
 			 
@@ -69,22 +69,37 @@
  
  {% if currentTag == "implementers" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{ page.tag }}</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	
-    <li>
-     <span class="nav__sub-title">{{ currentCat }}</span>
-      <ul>
-     {% for post in posts reversed %}
-	    {% if post.url == page.url %}
-       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
-	    {% else %}
-		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-		{% endif %}
+
+	{% for post in posts reversed %}
+			{% assign postCat = post.category %}
+			 {% if postCat != matchCat %}
+
+			 <span class="nav__sub-title sub-title">{{ postCat }}</span>
+		
+			 
+				{% if post.url == page.url %}
+			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+				
+			 {% assign matchCat = post.category %}
+
+			 {% else %}
+			 
+				{% if post.url == page.url %}
+					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+			 
+			 
+			 {% endif %}
+
    {% endfor %}
-     </ul>
-   </li>
 
   </ul>
 </nav>
@@ -93,22 +108,37 @@
  
  {% if currentTag == "administrators" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{ page.tag }}</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
-	
-    <li>
-     <span class="nav__sub-title">{{ currentCat }}</span>
-      <ul>
-     {% for post in posts reversed %}
-	    {% if post.url == page.url %}
-       <li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
-	    {% else %}
-		<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-		{% endif %}
+
+	{% for post in posts reversed %}
+			{% assign postCat = post.category %}
+			 {% if postCat != matchCat %}
+
+			 <span class="nav__sub-title sub-title">{{ postCat }}</span>
+		
+			 
+				{% if post.url == page.url %}
+			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+				
+			 {% assign matchCat = post.category %}
+
+			 {% else %}
+			 
+				{% if post.url == page.url %}
+					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+			 
+			 
+			 {% endif %}
+
    {% endfor %}
-     </ul>
-   </li>
 
   </ul>
 </nav>
