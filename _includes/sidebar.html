@@ -39,10 +39,16 @@
 			
 			 {% else %}
 			 
-			
+				{% if post.url == page.url %}
+					<li> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+					<li> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+			 
 			 
 			 {% endif %}
-			 
+			 </ul>
+		   </li>
   {% endfor %}
   </ul>
 </nav>
