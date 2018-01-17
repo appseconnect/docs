@@ -34,7 +34,7 @@
   <nav class="nav__list">
     <ul class="nav__items">
 
-	{% for post in posts reversed %}
+	{% for post in posts sort "stack" %}
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
