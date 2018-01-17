@@ -1,7 +1,9 @@
 ---
 title: "How to configure the cloud"
 toc: true
-tag: implementers
+tags:
+- implementers
+- developers
 category: "Working with APPSeCONNECT Cloud"
 stack: 3
 ---
