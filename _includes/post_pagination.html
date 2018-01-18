@@ -18,25 +18,13 @@
 
 {% assign posts = site.tags[page.tag] %}
 {% assign currentTag = page.tag %}
-{% assign matchCat = " " %}
 
 
 {% if currentTag == "developers" %}
 
 {% for post in posts reversed %}
 
- <nav class="pagination">
-    {% if page.previous %}
-      <a href="/docs{{ post.url}}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-    {% endif %}
-    {% if page.next %}
-      <a href="/docs{{ post.url}}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-    {% endif %}
-</nav>
+{{ post.name }}
   
 {% endfor %}  
   
