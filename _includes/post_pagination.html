@@ -22,15 +22,20 @@
 
 
 
-{% for post in posts reversed %}
-
-<nav class="pagination">
-
-{{ forloop.index }} - {{ post.url }}
- 
-</nav>
-
-{% endfor %}  
+{% if page.total_pages > 1 %}
+  <div class="posts-nav-links clearfix">
+    {% if page.prev_page %}
+      {% if page.prev_page == 1 %}
+        <a class="pull-left" href="/blog/">&lt;</a>
+      {% else %}
+        <a class="pull-left" href="/blog/pages/{{ page.prev_page }}">&lt;</a>
+      {% endif %}
+    {% endif %}
+    {% if page.next_page %}
+      <a class="pull-right" href="/blog/pages/{{ page.next_page }}">&gt;</a>
+    {% endif %}
+  </div>
+{% endif %}
   
 
 
