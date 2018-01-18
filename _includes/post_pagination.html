@@ -16,10 +16,10 @@
 {% endcomment %}
 
 
-{% if currentTag == "developer" %}
+
 {% assign tag = site.tags[page.tag] %}
 
-
+{% if page.tag == "developer" %}
 {% for posts in tag %}
 
 
