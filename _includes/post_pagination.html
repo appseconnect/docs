@@ -24,11 +24,16 @@
 
 {% for post in posts reversed %}
 
-{{ post.name }}
-  
+<nav class="pagination">
+
+{{ post.url }}
+ 
+</nav>
+
 {% endfor %}  
   
 {% endif %}
+
 
 
 {% if currentTag == "implementers" %}
