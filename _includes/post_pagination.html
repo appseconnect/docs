@@ -16,37 +16,22 @@
 {% endcomment %}
 
 
-
-{% assign tag = site.tags[page.tag] %}
-
-{% if page.tag == "developer" %}
-{% for posts in tag %}
+{% assign posts = site.tags[page.tag] %}
+{% assign currentTag = page.tag %}
 
 
-{% for post in posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
 
 
-{% endfor %}
-{% endif %}
+{% for post in posts reversed %}
 
+<nav class="pagination">
 
+{{ forloop.index }} - {{ post.url }}
+ 
+</nav>
+
+{% endfor %}  
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
