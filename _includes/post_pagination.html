@@ -26,8 +26,8 @@
 
     {% assign next_i = forloop.index0 | plus: 1 %}
     {% assign prev_i = forloop.index0 | minus: 1 %}
-    {{ items[next_i] }}
-    {{ items[prev_i] }}
+    {{ item[next_i] }}
+    {{ item[prev_i] }}
 
 {% endfor %}  
   
