@@ -24,7 +24,7 @@
 
 {% for post in posts reversed %}
 
-{{ forloop.index }} {{ post.url}}
+{{ forloop.index }} {{ post.url[forloop.index]}}
 
 
 {% endfor %}  
