@@ -24,11 +24,7 @@
 
 {% for post in posts reversed %}
 
-<nav class="pagination">
-
-{{ post }}
- 
-</nav>
+{{ post | first }}
 
 {% endfor %}  
   
