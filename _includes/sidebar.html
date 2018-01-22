@@ -28,9 +28,9 @@
 {% assign matchCat = " " %}
 
 
-{% if currentTag == "developers" %}
+{% if currentTag == "developers" or currentTag == "developers and implementers" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>X</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 
@@ -67,9 +67,9 @@
 </div>  
 {% endif %}
  
- {% if currentTag == "implementers" %}
+ {% if currentTag == "implementers" or currentTag == "developers and implementers"%}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>x</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 
@@ -108,7 +108,7 @@
  
  {% if currentTag == "administrators" %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>x</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 
