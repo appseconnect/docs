@@ -79,6 +79,39 @@
  {% for mytags in page.tags %}
  
 <p style="color:#1D7AB1"><strong>{{mytags | capitalize }}</strong> persona</p>
+  <nav class="nav__list">
+    <ul class="nav__items">
+
+	{% for post in site.tags[mytags] reversed %}
+			{% assign postCat = post.category %}
+			 {% if postCat != matchCat %}
+
+			 <span class="nav__sub-title sub-title">{{ postCat }}</span>
+		
+			 
+				{% if post.url == page.url %}
+			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+				
+			 {% assign matchCat = post.category %}
+
+			 {% else %}
+			 
+				{% if post.url == page.url %}
+					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+				{% else %}
+					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				{% endif %}
+			 
+			 
+			 {% endif %}
+
+   {% endfor %}
+
+  </ul>
+</nav>
  
  
  {% endfor %}
