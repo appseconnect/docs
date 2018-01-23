@@ -27,9 +27,9 @@
 {% assign currentTag = page.tag %}
 {% assign matchCat = " " %}
 
-
+{% if page.tags.size == 1 %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{page.tags | capitalize }}</strong> persona</p>
+<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
 
@@ -64,6 +64,26 @@
   </ul>
 </nav>
 </div>  
-
+{% endif %}
  
+ 
+ 
+ 
+ 
+ {% if page.tags.size > 1 %}
+ 
+
+ <div class="sidebar sticky">
+ 
+ 
+ {% for mytags in page.tags %}
+ 
+<p style="color:#1D7AB1"><strong>{{mytags | capitalize }}</strong> persona</p>
+ 
+ 
+ {% endfor %}
+ 
+ </div> 
+  
+{% endif %}
  
