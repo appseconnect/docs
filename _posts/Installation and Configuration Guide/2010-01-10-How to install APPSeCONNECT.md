@@ -1,7 +1,9 @@
 ---
 title: "How to install APPSeCONNECT"
 toc: true
-tag: developersimplementers
+tags:
+ - implementers
+ - developers
 category: "Installation and Configuration Guide"
 ---
 
