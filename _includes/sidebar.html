@@ -28,7 +28,7 @@
 {% assign matchCat = " " %}
 
 {% if page.tags.size == 1 %}
-
+<div class="sidebar sticky">
 <p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
   <nav class="nav__list">
     <ul class="nav__items">
@@ -37,9 +37,9 @@
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
-			 <span class="nav__sub-title sub-title broad">{{ postCat }}</span>
+			 <span class="nav__sub-title sub-title">{{ postCat }}</span>
 		
-			 <span class="bsection">
+			 
 				{% if post.url == page.url %}
 			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
@@ -55,7 +55,7 @@
 				{% else %}
 					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 				{% endif %}
-			 </span>
+			 
 			 
 			 {% endif %}
 
@@ -86,9 +86,8 @@
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
-			 <span class="nav__sub-title sub-title accordian">{{ postCat }}</span>
+			 <span class="nav__sub-title sub-title">{{ postCat }}</span>
 		
-		<div class="panel">
 			 
 				{% if post.url == page.url %}
 			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
@@ -101,12 +100,11 @@
 			 {% else %}
 			 
 				{% if post.url == page.url %}
-					<li class="menu-items panel"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-					<li class="menu-items panel"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
 				{% endif %}
 			 
-			 </div>
 			 
 			 {% endif %}
 
