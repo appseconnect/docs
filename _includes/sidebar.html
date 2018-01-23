@@ -45,7 +45,7 @@
 			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
 				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-				</div>
+			
 				{% endif %}
 				
 			 {% assign matchCat = post.category %}
@@ -53,11 +53,11 @@
 			 {% else %}
 			 
 				{% if post.url == page.url %}
-				<div class="">
+	
 					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
 					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
-					</div>
+				
 				{% endif %}
 			 
 			 
