@@ -37,9 +37,9 @@
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
-			 <span class="nav__sub-title sub-title accordian">{{ postCat }}</span>
+			 <span class="nav__sub-title sub-title broad">{{ postCat }}</span>
 		
-			 <div class="panel">
+			 <div class="bsection">
 				{% if post.url == page.url %}
 			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
