@@ -4,9 +4,10 @@
   crossorigin="anonymous"></script>
   
 <script>
-$(".nav__sub-title").css("font-size", "10" );
-$(".menu-items").hide();
 
+if ( $(".menu-items").not(".active")) {
+$(".menu-items").hide();
+}
 function showMenu(o) {
 
 $(o).nextUntil(".nav__sub-title").toggle();
