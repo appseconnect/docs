@@ -37,7 +37,7 @@
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
-			 <span class="nav__sub-title sub-title" onclick="showMenu(obj)">{{ postCat }}</span>
+			 <span class="nav__sub-title sub-title" onclick="showMenu(this)">{{ postCat }}</span>
 		
 			 
 				{% if post.url == page.url %}
