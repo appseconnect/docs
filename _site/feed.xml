@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-07T09:47:41+05:30</updated><id>http://localhost:4000/</id><title type="html">APPSeCONNECT Product Docs</title><subtitle>APPSeCONNECT Product documentation for Customers, Implementers, Partners etc.</subtitle><author><name>Team APPSeCONNECT</name></author><entry><title type="html">How to edit subscription</title><link href="http://localhost:4000/working%20with%20subscription/How-to-edit-subscription/" rel="alternate" type="text/html" title="How to edit subscription" /><published>2010-01-18T00:00:00+05:30</published><updated>2010-01-18T00:00:00+05:30</updated><id>http://localhost:4000/working%20with%20subscription/How%20to%20edit%20subscription</id><content type="html" xml:base="http://localhost:4000/working%20with%20subscription/How-to-edit-subscription/"></content><author><name>Team APPSeCONNECT</name></author><category term="Working with Subscription" /><category term="administrators" /><summary type="html"></summary></entry><entry><title type="html">How to change subscription</title><link href="http://localhost:4000/working%20with%20subscription/How-to-change-subscription/" rel="alternate" type="text/html" title="How to change subscription" /><published>2010-01-17T00:00:00+05:30</published><updated>2010-01-17T00:00:00+05:30</updated><id>http://localhost:4000/working%20with%20subscription/How%20to%20change%20subscription</id><content type="html" xml:base="http://localhost:4000/working%20with%20subscription/How-to-change-subscription/"></content><author><name>Team APPSeCONNECT</name></author><category term="Working with Subscription" /><category term="administrators" /><summary type="html"></summary></entry><entry><title type="html">What is a Subscription</title><link href="http://localhost:4000/working%20with%20subscription/What-is-a-Subscription/" rel="alternate" type="text/html" title="What is a Subscription" /><published>2010-01-16T00:00:00+05:30</published><updated>2010-01-16T00:00:00+05:30</updated><id>http://localhost:4000/working%20with%20subscription/What%20is%20a%20Subscription</id><content type="html" xml:base="http://localhost:4000/working%20with%20subscription/What-is-a-Subscription/"></content><author><name>Team APPSeCONNECT</name></author><category term="Working with Subscription" /><category term="administrators" /><summary type="html"></summary></entry><entry><title type="html">How to revoke permission</title><link href="http://localhost:4000/adding%20permission/How-to-revoke-permission/" rel="alternate" type="text/html" title="How to revoke permission" /><published>2010-01-15T00:00:00+05:30</published><updated>2010-01-15T00:00:00+05:30</updated><id>http://localhost:4000/adding%20permission/How%20to%20revoke%20permission</id><content type="html" xml:base="http://localhost:4000/adding%20permission/How-to-revoke-permission/"></content><author><name>Team APPSeCONNECT</name></author><category term="Adding Permission" /><category term="administrators" /><summary type="html"></summary></entry><entry><title type="html">How to add permission</title><link href="http://localhost:4000/adding%20permission/How-to-add-permission/" rel="alternate" type="text/html" title="How to add permission" /><published>2010-01-14T00:00:00+05:30</published><updated>2010-01-14T00:00:00+05:30</updated><id>http://localhost:4000/adding%20permission/How%20to%20add%20permission</id><content type="html" xml:base="http://localhost:4000/adding%20permission/How-to-add-permission/"></content><author><name>Team APPSeCONNECT</name></author><category term="Adding Permission" /><category term="administrators" /><summary type="html"></summary></entry><entry><title type="html">What is a Permission</title><link href="http://localhost:4000/adding%20permission/What-is-a-Permission/" rel="alternate" type="text/html" title="What is a Permission" /><published>2010-01-13T00:00:00+05:30</published><updated>2010-01-13T00:00:00+05:30</updated><id>http://localhost:4000/adding%20permission/What%20is%20a%20Permission</id><content type="html" xml:base="http://localhost:4000/adding%20permission/What-is-a-Permission/"></content><author><name>Team APPSeCONNECT</name></author><category term="Adding Permission" /><category term="administrators" /><summary type="html"></summary></entry><entry><title type="html">How to configure APPSeCONNECT</title><link href="http://localhost:4000/installation%20and%20configuration%20guide/How-to-configure-APPSeCONNECT/" rel="alternate" type="text/html" title="How to configure APPSeCONNECT" /><published>2010-01-12T00:00:00+05:30</published><updated>2010-01-12T00:00:00+05:30</updated><id>http://localhost:4000/installation%20and%20configuration%20guide/How%20to%20configure%20APPSeCONNECT</id><content type="html" xml:base="http://localhost:4000/installation%20and%20configuration%20guide/How-to-configure-APPSeCONNECT/"></content><author><name>Team APPSeCONNECT</name></author><category term="Installation and Configuration Guide" /><category term="implementers" /><summary type="html"></summary></entry><entry><title type="html">How to install Agent</title><link href="http://localhost:4000/installation%20and%20configuration%20guide/How-to-install-Agent/" rel="alternate" type="text/html" title="How to install Agent" /><published>2010-01-11T00:00:00+05:30</published><updated>2010-01-11T00:00:00+05:30</updated><id>http://localhost:4000/installation%20and%20configuration%20guide/How%20to%20install%20Agent</id><content type="html" xml:base="http://localhost:4000/installation%20and%20configuration%20guide/How-to-install-Agent/"></content><author><name>Team APPSeCONNECT</name></author><category term="Installation and Configuration Guide" /><category term="implementers" /><summary type="html"></summary></entry><entry><title type="html">How to install APPSeCONNECT</title><link href="http://localhost:4000/installation%20and%20configuration%20guide/How-to-install-APPSeCONNECT/" rel="alternate" type="text/html" title="How to install APPSeCONNECT" /><published>2010-01-10T00:00:00+05:30</published><updated>2010-01-10T00:00:00+05:30</updated><id>http://localhost:4000/installation%20and%20configuration%20guide/How%20to%20install%20APPSeCONNECT</id><content type="html" xml:base="http://localhost:4000/installation%20and%20configuration%20guide/How-to-install-APPSeCONNECT/">&lt;p&gt;Minimal Mistakes has been developed as a &lt;a href=&quot;http://jekyllrb.com/docs/themes/&quot;&gt;Jekyll theme gem&lt;/a&gt; for easier use. It is also 100% compatible with GitHub Pages — just with slightly different installation process.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-the-theme&quot;&gt;Installing the Theme&lt;/h2&gt;
+
+&lt;p&gt;If you’re running Jekyll v3.5+ and self-hosting you can quickly install the theme as a Ruby gem.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;ProTip:&lt;/strong&gt; Be sure to remove &lt;code class=&quot;highlighter-rouge&quot;&gt;/docs&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;/test&lt;/code&gt; if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don’t want them littering up your repo.&lt;/p&gt;
+
+&lt;h3 id=&quot;ruby-gem-method&quot;&gt;Ruby Gem Method&lt;/h3&gt;
+
+&lt;p&gt;Add this line to your Jekyll site’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minimal-mistakes-jekyll&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add this line to your Jekyll site’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;minimal-mistakes-jekyll&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then run Bundler to install the theme gem and dependencies:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;github-pages-method&quot;&gt;GitHub Pages Method&lt;/h3&gt;
+
+&lt;p&gt;GitHub Pages has added &lt;a href=&quot;https://github.com/blog/2464-use-any-theme-with-github-pages&quot;&gt;full support&lt;/a&gt; for any GitHub-hosted theme.&lt;/p&gt;
+
+&lt;p&gt;Replace &lt;code class=&quot;highlighter-rouge&quot;&gt;gem &quot;jekyll&quot;&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;github-pages&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;group: :jekyll_plugins&lt;/span&gt;			
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; and verify that all gems install properly.&lt;/p&gt;
+
+&lt;p&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;remote_theme: &quot;mmistakes/minimal-mistakes&quot;&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. Remove any other &lt;code class=&quot;highlighter-rouge&quot;&gt;theme:&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;remote_theme:&lt;/code&gt; entry.&lt;/p&gt;
+
+&lt;p&gt;You may also optionally specify a branch, &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/tags&quot;&gt;tag&lt;/a&gt;, or commit to use by appending an @ and the Git ref (e.g., &lt;code class=&quot;highlighter-rouge&quot;&gt;mmistakes/minimal-mistakes@4.9.0&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d&lt;/code&gt;). If you don’t specify a Git ref, the master branch will be used.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; Your Jekyll site should be viewable immediately at &lt;a href=&quot;http://USERNAME.github.io&quot;&gt;http://USERNAME.github.io&lt;/a&gt;. If it’s not, you can force a rebuild by &lt;strong&gt;Customizing Your Site&lt;/strong&gt; (see below for more details).&lt;/p&gt;
+
+&lt;p&gt;If you’re hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than &lt;strong&gt;USERNAME.github.io&lt;/strong&gt; and create a &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch off of &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. For more details on how to set things up check &lt;a href=&quot;https://help.github.com/articles/user-organization-and-project-pages/&quot;&gt;GitHub’s documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/mm-gh-pages.gif&quot; alt=&quot;creating a new branch on GitHub&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can also install the theme by copying all of the theme files&lt;sup id=&quot;fnref:structure&quot;&gt;&lt;a href=&quot;#fn:structure&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; into your project.&lt;/p&gt;
+
+&lt;p&gt;To do so fork the &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/fork&quot;&gt;Minimal Mistakes theme&lt;/a&gt;, then rename the repo to &lt;strong&gt;USERNAME.github.io&lt;/strong&gt; — replacing &lt;strong&gt;USERNAME&lt;/strong&gt; with your GitHub username.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/mm-theme-fork-repo.png&quot; alt=&quot;fork Minimal Mistakes&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;GitHub Pages Alternatives:&lt;/strong&gt; Looking to host your site for free and install/update the theme painlessly? &lt;a href=&quot;https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/&quot;&gt;Netflify&lt;/a&gt;, &lt;a href=&quot;https://about.gitlab.com/2016/04/07/gitlab-pages-setup/&quot;&gt;GitLab Pages&lt;/a&gt;, and &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/&quot;&gt;Continuous Integration (CI) services&lt;/a&gt; have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the &lt;a href=&quot;#ruby-gem-method&quot;&gt;Ruby Gem Method&lt;/a&gt; above.&lt;/p&gt;
+
+&lt;h3 id=&quot;remove-the-unnecessary&quot;&gt;Remove the Unnecessary&lt;/h3&gt;
+
+&lt;p&gt;If you forked or downloaded the &lt;code class=&quot;highlighter-rouge&quot;&gt;minimal-mistakes-jekyll&lt;/code&gt; repo you can safely remove the following folders and files:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.editorconfig&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.github&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/docs&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/test&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CHANGELOG.md&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;minimal-mistakes-jekyll.gemspec&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;screenshot-layouts.png&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;screenshot.png&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setup-your-site&quot;&gt;Setup Your Site&lt;/h2&gt;
+
+&lt;p&gt;Depending on the path you took installing Minimal Mistakes you’ll setup things a little differently.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;ProTip:&lt;/strong&gt; The source code and content files for this site can be found in the &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/tree/master/docs&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/docs&lt;/code&gt; folder&lt;/a&gt; if you want to copy or learn from them.&lt;/p&gt;
+
+&lt;h3 id=&quot;starting-fresh&quot;&gt;Starting Fresh&lt;/h3&gt;
+
+&lt;p&gt;Starting with an empty folder and &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; you’ll need to copy or re-create this &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml&quot;&gt;default &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;&lt;/a&gt; file. For a full explanation of every setting be sure to read the &lt;a href=&quot;http://localhost:4000/docs/configuration/&quot;&gt;&lt;strong&gt;Configuration&lt;/strong&gt;&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;From &lt;code class=&quot;highlighter-rouge&quot;&gt;v4.5.0&lt;/code&gt; onwards, Minimal Mistakes theme-gem comes bundled with the necessary data files and will automatically use them via the &lt;a href=&quot;https://github.com/ashmaroli/jekyll-data&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-data&lt;/code&gt;&lt;/a&gt; plugin. So you no longer need to maintain a copy of these data files at your project directory.&lt;/p&gt;
+
+&lt;p&gt;However like all other bundled files, you’ll need to create and edit these data files to customize them.
+The bundled data files are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_data/ui-text.yml&lt;/code&gt;&lt;/a&gt; - UI text &lt;a href=&quot;http://localhost:4000/docs/ui-text/&quot;&gt;documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_data/navigation.yml&lt;/code&gt;&lt;/a&gt; - navigation &lt;a href=&quot;http://localhost:4000/docs/navigation/&quot;&gt;documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;starting-from-jekyll-new&quot;&gt;Starting from &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Scaffolding out a site with the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; command requires you to modify a few files that it creates.&lt;/p&gt;
+
+&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. Then:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Replace &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;site root&amp;gt;/index.md&lt;/code&gt; with a modified &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/blob/master/index.html&quot;&gt;Minimal Mistakes &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/a&gt;. Be sure to enable pagination if using the &lt;a href=&quot;http://localhost:4000/docs/layouts/#home-page&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; layout&lt;/a&gt; by adding the necessary lines to &lt;strong&gt;_config.yml&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Change &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: post&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts/0000-00-00-welcome-to-jekyll.markdown&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: single&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Remove &lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt;, or at the very least change &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: page&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: single&lt;/code&gt; and remove references to &lt;code class=&quot;highlighter-rouge&quot;&gt;icon-github.html&lt;/code&gt; (or &lt;a href=&quot;https://github.com/jekyll/minima/tree/master/_includes&quot;&gt;copy to your &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt;&lt;/a&gt; if using it).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;migrating-to-gem-version&quot;&gt;Migrating to Gem Version&lt;/h3&gt;
+
+&lt;p&gt;If you’re migrating a site already using Minimal Mistakes and haven’t customized any of the theme files things upgrading will be easier for you.&lt;/p&gt;
+
+&lt;p&gt;Start by removing the following folders and any files within them:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;├── _includes
+├── _layouts
+├── _sass
+├── assets
+|  ├── css
+|  ├── fonts
+|  └── js
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You won’t need these anymore as they’re bundled with the theme gem — unless you intend to &lt;a href=&quot;http://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot;&gt;override them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; When clearing out the &lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt; folder be sure to leave any files you’ve added and need. This includes images, CSS, or JavaScript that aren’t already &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/tree/master/assets&quot;&gt;bundled in the theme&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;From &lt;code class=&quot;highlighter-rouge&quot;&gt;v4.5.0&lt;/code&gt; onwards, you don’t have to maintain a copy of the default data files viz. &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/ui-text.yml&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/navigation.yml&lt;/code&gt; either.
+The default files are read-in automatically via the &lt;a href=&quot;https://github.com/ashmaroli/jekyll-data&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-data&lt;/code&gt;&lt;/a&gt; plugin.&lt;/p&gt;
+
+&lt;p&gt;If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should &lt;a href=&quot;http://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot;&gt;override&lt;/a&gt; the versions bundled with the theme and be used by Jekyll instead.&lt;/p&gt;
+
+&lt;h4 id=&quot;update-gemfile&quot;&gt;Update Gemfile&lt;/h4&gt;
+
+&lt;p&gt;Replace &lt;code class=&quot;highlighter-rouge&quot;&gt;gem &quot;github-pages&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;gem &quot;jekyll&quot;&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;gem &quot;jekyll&quot;, &quot;~&amp;gt; 3.5&quot;&lt;/code&gt;. You’ll need the latest version of Jekyll&lt;sup id=&quot;fnref:update-jekyll&quot;&gt;&lt;a href=&quot;#fn:update-jekyll&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; for Minimal Mistakes to work and load all of the theme’s assets properly, this line forces Bundler to do that.&lt;/p&gt;
+
+&lt;p&gt;Add the Minimal Mistakes theme gem:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minimal-mistakes-jekyll&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When finished your &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; should look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://rubygems.org&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;jekyll&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~&amp;gt; 3.5&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minimal-mistakes-jekyll&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; and add &lt;code class=&quot;highlighter-rouge&quot;&gt;theme: minimal-mistakes-jekyll&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;notice--danger&quot;&gt;&lt;strong&gt;v4 Breaking Change:&lt;/strong&gt; Paths for image headers, overlays, teasers, &lt;a href=&quot;http://localhost:4000/docs/helpers/#gallery&quot;&gt;galleries&lt;/a&gt;, and &lt;a href=&quot;http://localhost:4000/docs/helpers/#feature-row&quot;&gt;feature rows&lt;/a&gt; have changed and now require a full path. Instead of just &lt;code class=&quot;highlighter-rouge&quot;&gt;image: filename.jpg&lt;/code&gt; you’ll need to use the full path eg: &lt;code class=&quot;highlighter-rouge&quot;&gt;image: /assets/images/filename.jpg&lt;/code&gt;. The preferred location is now &lt;code class=&quot;highlighter-rouge&quot;&gt;/assets/images/&lt;/code&gt; but can be placed elsewhere or externally hosted. This applies to image references in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;author.yml&lt;/code&gt; as well.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s it! If all goes well running &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; should spin-up your site.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:structure&quot;&gt;
+      &lt;p&gt;See &lt;a href=&quot;http://localhost:4000/docs/structure/&quot;&gt;&lt;strong&gt;Structure&lt;/strong&gt; page&lt;/a&gt; for a list of theme files and what they do. &lt;a href=&quot;#fnref:structure&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:update-jekyll&quot;&gt;
+      &lt;p&gt;You could also run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update jekyll&lt;/code&gt; to update Jekyll. &lt;a href=&quot;#fnref:update-jekyll&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Team APPSeCONNECT</name></author><category term="Installation and Configuration Guide" /><category term="implementers" /><category term="developers" /><summary type="html">Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub Pages — just with slightly different installation process.</summary></entry><entry><title type="html">How to configure the cloud</title><link href="http://localhost:4000/working%20with%20appseconnect%20cloud/How-to-configure-the-cloud/" rel="alternate" type="text/html" title="How to configure the cloud" /><published>2010-01-09T00:00:00+05:30</published><updated>2010-01-09T00:00:00+05:30</updated><id>http://localhost:4000/working%20with%20appseconnect%20cloud/How%20to%20configure%20the%20cloud</id><content type="html" xml:base="http://localhost:4000/working%20with%20appseconnect%20cloud/How-to-configure-the-cloud/"></content><author><name>Team APPSeCONNECT</name></author><category term="Working with APPSeCONNECT Cloud" /><category term="implementers" /><summary type="html"></summary></entry></feed>
