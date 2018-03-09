@@ -35,6 +35,8 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include="assets\css\aos.css" />
+    <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\images\17322_128fd5d7b36e87a19d06ca737e059a7af79990ab_appseconnect_m.jpeg" />
     <Content Include="assets\images\APPSeCONNECT-documentation.png" />
@@ -45,6 +47,7 @@
     <Content Include="assets\images\mm-customizable-feature.png" />
     <Content Include="assets\images\mm-free-feature.png" />
     <Content Include="assets\images\mm-responsive-feature.png" />
+    <Content Include="assets\js\aos.js" />
     <Content Include="assets\js\lunr-en.js" />
     <Content Include="assets\js\lunr.min.js" />
     <Content Include="assets\js\main.min.js" />
@@ -52,6 +55,7 @@
     <Content Include="assets\js\plugins\jquery.greedy-navigation.js" />
     <Content Include="assets\js\plugins\jquery.magnific-popup.js" />
     <Content Include="assets\js\plugins\jquery.smooth-scroll.min.js" />
+    <Content Include="assets\js\script.js" />
     <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
     <Content Include="assets\js\_main.js" />
     <Content Include="banner.js" />
