@@ -1,4 +1,4 @@
-{% if page.header.image contains "://" %}
+<!--{% if page.header.image contains "://" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
   {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
@@ -10,11 +10,6 @@
   {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
 {% endif %}
 
-{% if page.header.overlay_image contains "://" %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
-{% elsif page.header.overlay_image %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image | absolute_url }}{% endcapture %}
-{% endif %}
 
 {% if page.header.overlay_filter contains "rgba" %}
   {% capture overlay_filter %}{{ page.header.overlay_filter }}{% endcapture %}
@@ -58,10 +53,11 @@
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
   {% endif %}
-</div>
+</div>-->
 <div class="headerPan">
     <div class="headerInn">
-        <a href="#" title="" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="#" title="{{page.header.header_logo_alt}}" 
+            class="logo"><img src="{{page.header.header_logo}}" alt="{{page.header.header_logo_alt}}"></a>
         <ul class="headerRight">
             <li><a href="#" title=""><i class="fa fa-question"></i> FAQ</a></li>
             <li><a href="#" title=""><i class="fa fa-pencil-square-o"></i> Blog</a></li>
@@ -75,55 +71,34 @@
     <div class="navInn">
         <div id='cssmenu'>
             <ul>
-                <li class="active"><a href='#'><span>Home</span></a></li>
-                <li><a href='#'><span>Customers</span></a></li>
-                <li><a href='#'><span>Developers</span></a></li>
-                <li><a href='#'><span>Implementers</span></a></li>
-                <li><a href='#'><span>Reseller</span></a></li>
-                <li><a href='#'><span>Courses</span></a></li>
-                <li class="last"><a href='#'><span>Video</span></a></li>
+                <li class="active"><a href='{{page.permalink}}'><span>Home</span></a></li>
+                {% for f in page.feature_row %}
+                    <li><a href="{{f.url}}"><span>{{f.title}}</span></a></li> 
+                {% endfor %}
+                <li><a href='{{page.courseurl}}'><span>Courses</span></a></li>
+                <li class="last"><a href='{{page.videourl}}'><span>Video</span></a></li>
             </ul>
         </div>
     </div>
 </div>
 <!-- End : Nav -->
-<div class="bannerPan"><img src="images/banner-img.png" alt=""></div>
+<div class="bannerPan">
+    <img alt="" src="{{page.header.overlay_image}}" />
+</div>
 <div id="main" role="main">
     <!-- Start : Are you a -->
     <div class="block4Pan">
         <h2 class="aos-item" data-aos="fade-down" data-aos-duration="800"><span>Are you a</span></h2>
-        <div class="block4Inn aos-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="block4Box">
-                <img alt="" src="images/customer-2.png">
-                <h3>Customers</h3>
-                <p>Learn how to use APPSeCONNECT</p>
-                <a href="#" title="Learn More">Learn More</a>
+        {% for f in page.feature_row %}
+            <div class="block4Inn aos-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="block4Box">
+                    <img alt="" src="{{f.image_path}}">
+                    <h3>{{f.title}}</h3>
+                    <p>{{f.excerpt}}</p>
+                    <a href="{{f.url}}" title="{{f.alt}}">{{f.btn_label}}</a>
+                </div>
             </div>
-        </div>
-        <div class="block4Inn aos-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="block4Box">
-                <img alt="" src="images/Developer-2.png">
-                <h3>Developers</h3>
-                <p>Learn how to create a adapter from scratch using APPSeCONNECT.</p>
-                <a href="#" title="Learn More">Learn More</a>
-            </div>
-        </div>
-        <div class="block4Inn aos-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="block4Box">
-                <img alt="" src="images/Implementer-2.png">
-                <h3>Implementers</h3>
-                <p>Learn how to configure and implement APPSeCONNECT.</p>
-                <a href="#" title="Learn More">Learn More</a>
-            </div>
-        </div>
-        <div class="block4Inn aos-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="block4Box">
-                <img alt="" src="images/reseller-2.png">
-                <h3>Reseller</h3>
-                <p>Learn how to use APPSeCONNECT</p>
-                <a href="#" title="Learn More">Learn More</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 <!-- End : Are you a -->
@@ -132,12 +107,12 @@
     <div id="main" role="main">
         <h2 class="aos-item" data-aos="fade-left"><span>Videos</span></h2>
         <ul>
-            <li class="aos-item" data-aos="flip-left" data-aos-duration="800"><img src="images/video-thumb.png" alt=""></li>
-            <li class="aos-item" data-aos="flip-left" data-aos-duration="800"><img src="images/video-thumb.png" alt=""></li>
-            <li class="aos-item" data-aos="flip-left" data-aos-duration="800"><img src="images/video-thumb.png" alt=""></li>
-            <li class="aos-item" data-aos="flip-left" data-aos-duration="800"><img src="images/video-thumb.png" alt=""></li>
+            {% for f in page.feature_videos %}
+                <li class="aos-item" data-aos="flip-left" 
+                    data-aos-duration="800"><img src="{{f.image_path}}" alt="{{f.alt}}"></li>
+            {% endfor %}
         </ul>
-        <a href="#" title="More" class="videoBtn aos-item" data-aos="fade-up">More &raquo;</a>
+        <a href="{{page.videourl}}" title="More" class="videoBtn aos-item" data-aos="fade-up">More &raquo;</a>
     </div>
 </div>
 <!-- End : Video -->
@@ -146,11 +121,16 @@
     <div id="main" role="main">
         <h2 class="aos-item" data-aos="fade-right"><span>Courses</span></h2>
         <ul>
-            <li class="aos-item" data-aos="flip-down" data-aos-duration="800"><img src="images/Facilitation-Guide-icon.png" alt=""> <h3>Test Courses</h3> <p>Creating and managing your website is simple with WordPress.com’s powerful platform. Get started in minutes and make changes to your site easily.<p></li>
-            <li class="aos-item" data-aos="flip-down" data-aos-duration="800"><img src="images/Facilitation-Guide-icon.png" alt=""> <h3>Test Courses</h3> <p>Creating and managing your website is simple with WordPress.com’s powerful platform. Get started in minutes and make changes to your site easily.<p></li>
-            <li class="aos-item" data-aos="flip-down" data-aos-duration="800"><img src="images/Facilitation-Guide-icon.png" alt=""> <h3>Test Courses</h3> <p>Creating and managing your website is simple with WordPress.com’s powerful platform. Get started in minutes and make changes to your site easily.<p></li>
+            {% for f in page.feature_courses %}
+            <li class="aos-item" data-aos="flip-down" 
+                data-aos-duration="800">
+                <img src="{{f.image_path}}" alt="{{f.alt}}"> 
+                <h3>{{f.course_title}}</h3> 
+                <p>{{f.excerpt}}<p>
+            </li>
+            {% endfor %}
         </ul>
-        <a href="#" title="More" class="coursesBtn aos-item" data-aos="fade-up">More &raquo;</a>
+        <a href="{{page.courseurl}}" title="More" class="coursesBtn aos-item" data-aos="fade-up">More &raquo;</a>
     </div>
 </div>
 <!-- End : Courses -->
@@ -217,7 +197,7 @@
         <div class="footerBottomInn">
             <p>
                 APPSeCONNECT is a product by <u>InSync</u>
-                © 2017 InSync Tech-Fin Solutions Ltd. All rights reserved.<br>
+                &copy; 2017 InSync Tech-Fin Solutions Ltd. All rights reserved.<br>
                 <a href="#" title="Terms of Use">Terms of Use</a> | <a href="#" title="Privacy Policy">Privacy Policy</a> | <a href="#" title="Disclaimer">Disclaimer</a>
             </p>
             <ul>

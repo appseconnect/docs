@@ -32,7 +32,7 @@ var idx = lunr(function () {
       title: "How to test an Adapter",
       excerpt: "\n",
       categories: ["Developing Adapter for APPSeCONNECT"],
-      tags: ["developers"],
+      tags: ["developers,reseller"],
       id: 2
     });
     
@@ -120,7 +120,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "What is a Permission",
-      excerpt: "\n",
+      excerpt: "hi\n\nWhats up?\nlink\n\n",
       categories: ["Adding Permission"],
       tags: ["administrators"],
       id: 12
@@ -317,7 +317,7 @@ var store = [
       {
         "title": "What is a Permission",
         "url": "http://localhost:4000/adding%20permission/What-is-a-Permission/",
-        "excerpt": "\n",
+        "excerpt": "hi\n\nWhats up?\nlink\n\n",
         "teaser":
           
             null
