@@ -131,8 +131,8 @@
 
 <!-- end custom head snippets -->
 
-<link type="text/css" rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/aos.css" /> 
+<link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/aos.css" /> 
 <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css">
   </head>
 
@@ -148,7 +148,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
        <!-- <a class="site-title" href="http://localhost:4000/">APPSeCONNECT Product Docs</a> -->
-		<a class="site-title" href="http://localhost:4000/"><img src="https://appseconnect.azureedge.net/images/2017/logo.png"></a>
+		<a class="site-title" href="http://localhost:4000/"><img src="/assets/images/logo.png"></a>
         <ul class="visible-links">
           
         </ul>
@@ -546,25 +546,26 @@
 
   
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/aos.js"></script>
 <script type="text/javascript">
-var nav = $('.sidebar__right');
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 136) {
-        nav.addClass("f-nav");
-    } else {
-        nav.removeClass("f-nav");
-    }
-});
-(function ($) {
+    var nav = $('.sidebar__right');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 136) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        }
+    });
+
     $(document).ready(function () {
+        
         $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
         $('#cssmenu #menu-button').on('click', function () {
+            debugger;
             var menu = $(this).next('ul');
             if (menu.hasClass('open')) {
                 menu.removeClass('open');
@@ -574,18 +575,17 @@ $(window).scroll(function () {
             }
         });
     });
-})(jQuery);
-function showMenu(o) {
+    function showMenu(o) {
 
-$(o).nextUntil(".nav__sub-title").toggle();
+        $(o).nextUntil(".nav__sub-title").toggle();
 
-}
-$(".nav__sub-title").click(function () {
-    $(this).toggleClass("sidebaractive");
-});
-AOS.init({
-    easing: 'ease-in-out-sine'
-}); 
+    }
+    $(".nav__sub-title").click(function () {
+        $(this).toggleClass("sidebaractive");
+    });
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
 </script>
 
 
