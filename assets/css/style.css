@@ -112,8 +112,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a4d56', end
 .footerInn.footerInn2 {width: 40%;}
 .footerInn h3 {font-size: 16px; line-height: 24px; margin: 0 0 10px; padding: 0 10px 5px 0; color: #00aadc; border-bottom: 2px solid #bec9ce; clear: both; display: inline-block;}
 .footerInn ul {list-style: none; clear: both; margin: 0 0 20px; padding: 0;}
-.footerInn ul li {list-style: none; clear: both; margin: 0; padding: 0 0 0 20px; background: url(../images/footer-arrow.png) no-repeat 0 9px;}
-.footerInn ul li a {color: #b0bec5; text-decoration: none; font-size: 13px; line-height: 18px;}
+.footerInn ul li {list-style: none; clear: both; margin: 0; padding: 0 0 0 20px; background: url(../images/footer-arrow.png) no-repeat 0 9px; font: 400 13px/24px "Open Sans", sans-serif;}
+.footerInn ul li a {color: #b0bec5; text-decoration: none; font-size: 13px; line-height: 24px;}
 .footerInn ul li a:hover {color: #00A9DC;}
 .footerInn ul li span {color: #fff; text-decoration: none; font-size: 13px; line-height: 18px;}
 .subscribeForm { padding:10px 0 0; clear: both;}

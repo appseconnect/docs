@@ -71,6 +71,7 @@
     <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
     <Content Include="assets\js\_main.js" />
     <Content Include="banner.js" />
+    <Content Include="favicon.ico" />
     <Content Include="LICENSE.txt" />
     <Content Include="_includes\analytics-providers\custom.html" />
     <Content Include="_includes\analytics-providers\google-universal.html" />
