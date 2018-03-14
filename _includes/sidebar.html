@@ -42,9 +42,9 @@
 			 
 				{% if post.url == page.url %}
 				
-			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+			   <li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
 			
 				{% endif %}
 				
@@ -54,9 +54,9 @@
 			 
 				{% if post.url == page.url %}
 	
-					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
 				
 				{% endif %}
 			 
@@ -94,9 +94,9 @@
 		
 			 
 				{% if post.url == page.url %}
-			   <li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+			   <li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-				<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+				<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
 				{% endif %}
 				
 			 {% assign matchCat = post.category %}
@@ -104,9 +104,9 @@
 			 {% else %}
 			 
 				{% if post.url == page.url %}
-					<li class="menu-items"> <a href="/docs{{ post.url}}" class="active">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-					<li class="menu-items"> <a href="/docs{{ post.url}}">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
 				{% endif %}
 			 
 			 
