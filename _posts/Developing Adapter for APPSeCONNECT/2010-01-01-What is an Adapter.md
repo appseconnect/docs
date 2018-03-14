@@ -62,7 +62,7 @@ You may also optionally specify a branch, [tag](https://github.com/mmistakes/min
 If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
 <figure>
-  <img src="{{ '/assets/images/mm-gh-pages.gif' | absolute_url }}" alt="creating a new branch on GitHub">
+  <img src="{{ '/assets/images/developer.png' | absolute_url }}" alt="creating a new branch on GitHub">
 </figure>
 
 You can also install the theme by copying all of the theme files[^structure] into your project.
@@ -70,7 +70,7 @@ You can also install the theme by copying all of the theme files[^structure] int
 To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
 <figure>
-  <img src="{{ '/assets/images/mm-theme-fork-repo.png' | absolute_url }}" alt="fork Minimal Mistakes">
+  <img src="{{ '/assets/images/developer.png' | absolute_url }}" alt="fork Minimal Mistakes">
 </figure>
 
 **GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netflify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.

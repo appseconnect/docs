@@ -120,6 +120,7 @@
     <Content Include="_layouts\search.html" />
     <Content Include="_layouts\single.html" />
     <Content Include="_layouts\splash.html" />
+    <None Include="videos.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
