@@ -15,7 +15,7 @@ name                     : "APPSeCONNECT"
 description              : "APPSeCONNECT Product documentation for Customers, Implementers, Partners etc."
 url                      : "https://appseconnect.github.io"
 baseurl                  : ""
-repository               : "appseconnect/docs"
+repository               : "appseconnect"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # false, false (default)
 words_per_minute         : 200
