@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA53DE52-C021-40A7-A903-2C053E1024CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InSyncDocs</RootNamespace>
+    <AssemblyName>InSyncDocs</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="assets\css\aos.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\images\17322_128fd5d7b36e87a19d06ca737e059a7af79990ab_appseconnect_m.jpeg" />
+    <Content Include="assets\images\APPSeCONNECT-documentation.png" />
+    <Content Include="assets\images\banner-img.png" />
+    <Content Include="assets\images\customer-2.png" />
+    <Content Include="assets\images\customer.png" />
+    <Content Include="assets\images\Developer-2.png" />
+    <Content Include="assets\images\Developer.png" />
+    <Content Include="assets\images\Facilitation-Guide-icon.png" />
+    <Content Include="assets\images\footer-arrow.png" />
+    <Content Include="assets\images\images.png" />
+    <Content Include="assets\images\Implementer-2.png" />
+    <Content Include="assets\images\Implementer.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\mm-customizable-feature.png" />
+    <Content Include="assets\images\mm-free-feature.png" />
+    <Content Include="assets\images\mm-responsive-feature.png" />
+    <Content Include="assets\images\reseller-2.png" />
+    <Content Include="assets\images\stacks-image-4691429.jpg" />
+    <Content Include="assets\images\training-300x271.png" />
+    <Content Include="assets\images\video-thumb.png" />
+    <Content Include="assets\js\aos.js" />
+    <Content Include="assets\js\lunr-en.js" />
+    <Content Include="assets\js\lunr.min.js" />
+    <Content Include="assets\js\main.min.js" />
+    <Content Include="assets\js\plugins\jquery.fitvids.js" />
+    <Content Include="assets\js\plugins\jquery.greedy-navigation.js" />
+    <Content Include="assets\js\plugins\jquery.magnific-popup.js" />
+    <Content Include="assets\js\plugins\jquery.smooth-scroll.min.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="assets\js\_main.js" />
+    <Content Include="banner.js" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="_includes\analytics-providers\custom.html" />
+    <Content Include="_includes\analytics-providers\google-universal.html" />
+    <Content Include="_includes\analytics-providers\google.html" />
+    <Content Include="_includes\analytics.html" />
+    <Content Include="_includes\archive-single.html" />
+    <Content Include="_includes\author-profile-custom-links.html" />
+    <Content Include="_includes\author-profile.html" />
+    <Content Include="_includes\breadcrumbs.html" />
+    <Content Include="_includes\browser-upgrade.html" />
+    <Content Include="_includes\category-list.html" />
+    <Content Include="_includes\comment.html" />
+    <Content Include="_includes\comments-providers\custom.html" />
+    <Content Include="_includes\comments-providers\discourse.html" />
+    <Content Include="_includes\comments-providers\disqus.html" />
+    <Content Include="_includes\comments-providers\facebook.html" />
+    <Content Include="_includes\comments-providers\google-plus.html" />
+    <Content Include="_includes\comments-providers\scripts.html" />
+    <Content Include="_includes\comments-providers\staticman.html" />
+    <Content Include="_includes\comments-providers\staticman_v2.html" />
+    <Content Include="_includes\comments.html" />
+    <Content Include="_includes\footer.html" />
+    <Content Include="_includes\footer\scripts.html" />
+    <Content Include="_includes\footer\custom.html" />
+    <Content Include="_includes\head.html" />
+    <Content Include="_includes\head\custom.html" />
+    <Content Include="_includes\masthead.html" />
+    <Content Include="_includes\page__hero.html" />
+    <Content Include="_includes\page__hero_video.html" />
+    <Content Include="_includes\page__taxonomy.html" />
+    <Content Include="_includes\paginator.html" />
+    <Content Include="_includes\post_pagination.html" />
+    <Content Include="_includes\read-time.html" />
+    <Content Include="_includes\scripts.html" />
+    <Content Include="_includes\search_form.html" />
+    <Content Include="_includes\seo.html" />
+    <Content Include="_includes\sidebar.html" />
+    <Content Include="_includes\social-share.html" />
+    <Content Include="_includes\tag-list.html" />
+    <Content Include="_includes\toc.html" />
+    <Content Include="_layouts\archive-taxonomy.html" />
+    <Content Include="_layouts\archive.html" />
+    <Content Include="_layouts\compress.html" />
+    <Content Include="_layouts\default.html" />
+    <Content Include="_layouts\home.html" />
+    <Content Include="_layouts\search.html" />
+    <Content Include="_layouts\single.html" />
+    <Content Include="_layouts\splash.html" />
+    <None Include="_sass\minimal-mistakes\custom-style.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\css\custom-style.scss" />
+    <None Include="assets\css\main.scss" />
+    <None Include="assets\fonts\fontawesome-webfont.eot" />
+    <None Include="assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="assets\fonts\fontawesome-webfont.woff" />
+    <None Include="assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="assets\fonts\FontAwesome.otf" />
+    <None Include="Gemfile" />
+    <None Include="index.md" />
+    <None Include="package.json" />
+    <None Include="Rakefile" />
+    <None Include="staticman.yml" />
+    <None Include="_config.yml" />
+    <None Include="_data\navigation.yml" />
+    <None Include="_data\ui-text.yml" />
+    <None Include="_includes\base_path" />
+    <None Include="_includes\feature_row" />
+    <None Include="_includes\figure" />
+    <None Include="_includes\gallery" />
+    <None Include="_includes\group-by-array" />
+    <None Include="_includes\nav_list" />
+    <None Include="_includes\toc" />
+    <None Include="_includes\video" />
+    <None Include="_posts\Adding Permission%27\2010-01-13-What is a Permission.md" />
+    <None Include="_posts\Adding Permission%27\2010-01-14-How to add permission.md" />
+    <None Include="_posts\Adding Permission%27\2010-01-15-How to revoke permission.md" />
+    <None Include="_posts\Developing Adapter for APPSeCONNECT\2010-01-01-What is an Adapter.md" />
+    <None Include="_posts\Developing Adapter for APPSeCONNECT\2010-01-02-How to develop an Adapter.md" />
+    <None Include="_posts\Developing Adapter for APPSeCONNECT\2010-01-03-How to test an Adapter.md" />
+    <None Include="_posts\Developing Resources for APPSeCONNECT\2010-01-04-What is a Resourse.md" />
+    <None Include="_posts\Developing Resources for APPSeCONNECT\2010-01-05-How to develop an Resourse.md" />
+    <None Include="_posts\Developing Resources for APPSeCONNECT\2010-01-06-How to test an Resourse.md" />
+    <None Include="_posts\Installation and Configuration Guide\2010-01-10-How to install APPSeCONNECT.md" />
+    <None Include="_posts\Installation and Configuration Guide\2010-01-11-How to install Agent.md" />
+    <None Include="_posts\Installation and Configuration Guide\2010-01-12-How to configure APPSeCONNECT.md" />
+    <None Include="_posts\Working with APPSeCONNECT Cloud\2010-01-07-What is a Cloud.md" />
+    <None Include="_posts\Working with APPSeCONNECT Cloud\2010-01-08-How to work with the cloud.md" />
+    <None Include="_posts\Working with APPSeCONNECT Cloud\2010-01-09-How to configure the cloud.md" />
+    <None Include="_posts\Working with Subscription\2010-01-16-What is a Subscription.md" />
+    <None Include="_posts\Working with Subscription\2010-01-17-How to change subscription.md" />
+    <None Include="_posts\Working with Subscription\2010-01-18-How to edit subscription.md" />
+    <None Include="_sass\minimal-mistakes.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_air.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_appseconnect.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_aqua.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_contrast.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_dark.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_default.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_dirt.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_mint.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_neon.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_plum.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_sunrise.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\double\_default-pair.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\double\_default.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\double\_double-string.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\resolution\_resolution.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\single\_default.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\triple\_default.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\_double.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\_query.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\_resolution.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\_single.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\parsers\_triple.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_breakpoint.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_context.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_helpers.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_legacy-settings.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_no-query.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_parsers.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_respond-to.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\breakpoint\_settings.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_animated.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_bordered-pulled.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_core.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_fixed-width.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_font-awesome.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_icons.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_larger.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_list.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_mixins.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_path.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_rotated-flipped.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_screen-reader.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_stacked.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\font-awesome\_variables.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\magnific-popup\_magnific-popup.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\magnific-popup\_settings.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\svg-grid\_prefix.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\svg-grid\_svg-api.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\svg-grid\_svg-grid-math.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\svg-grid\_svg-settings.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\svg-grid\_svg-unprefix.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\svg-grid\_svg-utilities.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\plugins\_svg-grid.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_api.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_normalize.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_parse.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_settings.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_su-math.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_su-validate.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_syntax-helpers.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_unprefix.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\susy\_utilities.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\_su.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\_susy-prefix.scss" />
+    <None Include="_sass\minimal-mistakes\vendor\susy\_susy.scss" />
+    <None Include="_sass\minimal-mistakes\_animations.scss" />
+    <None Include="_sass\minimal-mistakes\_archive.scss" />
+    <None Include="_sass\minimal-mistakes\_base.scss" />
+    <None Include="_sass\minimal-mistakes\_buttons.scss" />
+    <None Include="_sass\minimal-mistakes\_footer.scss" />
+    <None Include="_sass\minimal-mistakes\_forms.scss" />
+    <None Include="_sass\minimal-mistakes\_masthead.scss" />
+    <None Include="_sass\minimal-mistakes\_mixins.scss" />
+    <None Include="_sass\minimal-mistakes\_navigation.scss" />
+    <None Include="_sass\minimal-mistakes\_notices.scss" />
+    <None Include="_sass\minimal-mistakes\_page.scss" />
+    <None Include="_sass\minimal-mistakes\_print.scss" />
+    <None Include="_sass\minimal-mistakes\_reset.scss" />
+    <None Include="_sass\minimal-mistakes\_search.scss" />
+    <None Include="_sass\minimal-mistakes\_sidebar.scss" />
+    <None Include="_sass\minimal-mistakes\_syntax.scss" />
+    <None Include="_sass\minimal-mistakes\_tables.scss" />
+    <None Include="_sass\minimal-mistakes\_utilities.scss" />
+    <None Include="_sass\minimal-mistakes\_variables.scss" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="rd /s /q $(OutputPath)" Condition="Exists($(OutputPath))" />
+  </Target>
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

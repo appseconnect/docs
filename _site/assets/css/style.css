@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+* { margin: 0; padding: 0;}
+img {max-width: 100%; border:0;}
+body {background: #f7f7f7;}
+/* ---------------- Start : Header ----------------------- */
+.headerPan {clear: both; background: #dbe3e8; overflow: hidden;}
+.headerInn {max-width: 1280px; clear: both; margin: 0 auto; padding:11px 0 20px; overflow: hidden;}
+.logo {float: left; width: auto; display: block; width: 280px;}
+.nav {background: #36414a;color: #bdd0de;}
+.navInn {max-width: 1280px; clear: both; margin: 0 auto; padding:0;}
+.navInn ul { list-style: none; margin: 0; padding: 0; clear:both;}
+.navInn ul li {list-style: none; margin: 0; padding: 0; float: left;}
+.navInn ul li a {color: #fff; text-decoration: none;}
+.headerRight {float: right; width: auto; list-style: none; margin: 0; padding: 0;}
+.headerRight li { float: left; width:auto; padding: 0 18px; border-right: 1px dotted #8e9498; margin: 0;}
+.headerRight li:last-child {border-right: 0;}
+.headerRight li a {text-decoration: none; color:#5b7c8c; font-size: 12px; font-family: "Open Sans", sans-serif;}
+.headerRight li a:hover {color: #4cb6ea;}
+.headerRight li a i {padding-right: 10px; color: #a6b4bf;}
+/* ---------------- End : Header ----------------------- */
+/* ---------------- Start : Nav ----------------------- */
+#cssmenu {background: transparent; margin: 0; width: auto; padding: 0; line-height: 1; display: block; position: relative; font-family: 'PT Sans', sans-serif;}
+#cssmenu ul {list-style: none; margin: 0; padding: 0; display: block;}
+#cssmenu ul:after,  #cssmenu:after { content: " "; display: block; font-size: 0; height: 0; clear: both; visibility: hidden;}
+#cssmenu ul li {margin: 0;padding: 0;display: block;position: relative;}
+#cssmenu ul li a {text-decoration: none;display: block;margin: 0;-webkit-transition: color .2s ease;-moz-transition: color .2s ease;-ms-transition: color .2s ease;-o-transition: color .2s ease;transition: color .2s ease;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+#cssmenu ul li ul {position: absolute;left: -9999px;top: auto;}
+#cssmenu ul li ul li {max-height: 0;position: absolute;-webkit-transition: max-height 0.4s ease-out;-moz-transition: max-height 0.4s ease-out;-ms-transition: max-height 0.4s ease-out;-o-transition: max-height 0.4s ease-out;transition: max-height 0.4s ease-out;background: #ffffff;}
+#cssmenu ul li ul li.has-sub:after {display: block;position: absolute;content: "";height: 10px;width: 10px;border-radius: 5px;background: #000000;z-index: 1;top: 13px;right: 15px;}
+#cssmenu.align-right ul li ul li.has-sub:after {right: auto;left: 15px;}
+#cssmenu ul li ul li.has-sub:before {display: block;position: absolute;content: "";height: 0;width: 0;border: 3px solid transparent;border-left-color: #ffffff;z-index: 2;top: 15px;right: 15px;}
+#cssmenu.align-right ul li ul li.has-sub:before {right: auto;left: 15px;border-left-color: transparent;border-right-color: #ffffff;}
+#cssmenu ul li ul li a {font-size: 14px;font-weight: 400;text-transform: none;color: #000000;letter-spacing: 0;display: block;width: 170px;padding: 11px 10px 11px 20px;}
+#cssmenu ul li ul li:hover > a,#cssmenu ul li ul li.active > a {color: #4cb6ea;}
+#cssmenu ul li ul li:hover:after,#cssmenu ul li ul li.active:after {background: #4cb6ea;}
+#cssmenu ul li ul li:hover > ul {left: 100%;top: 0;}
+#cssmenu ul li ul li:hover > ul > li {max-height: 72px;position: relative;}
+#cssmenu > ul > li {float: left;}
+#cssmenu.align-center > ul > li {float: none;display: inline-block;}
+#cssmenu.align-center > ul {text-align: center;}
+#cssmenu.align-center ul ul {text-align: left;}
+#cssmenu.align-right > ul {float: right;}
+#cssmenu.align-right > ul > li:hover > ul {left: auto;right: 0;}
+#cssmenu.align-right ul ul li:hover > ul {right: 100%;left: auto;}
+#cssmenu.align-right ul ul li a {text-align: right;}
+#cssmenu > ul > li:after {content: "";display: block;position: absolute;width: 100%;height: 0;top: 0;z-index: 0;background: #00aadc;-webkit-transition: height .2s;-moz-transition: height .2s;-ms-transition: height .2s;-o-transition: height .2s;transition: height .2s;}
+#cssmenu > ul > li.has-sub > a {padding-right: 40px;}
+#cssmenu > ul > li.has-sub > a:after {display: block;content: "";background: #00aadc;height: 12px;width: 12px;position: absolute;border-radius: 13px;right: 14px;top: 16px;}
+#cssmenu > ul > li.has-sub > a:before {display: block;content: "";border: 4px solid transparent;border-top-color: #4cb6ea;z-index: 2;height: 0;width: 0;position: absolute;right: 16px;top: 21px;}
+#cssmenu > ul > li > a {color: #9caab5;padding: 15px 20px;font-weight: 400;letter-spacing: 1px;text-transform: uppercase;font-size: 14px;z-index: 2;position: relative; -webkit-transition: all 0s ease-in-out; -moz-transition: all 0s ease-in-out; transition: all 0s ease-in-out;}
+#cssmenu > ul > li:hover:after,#cssmenu > ul > li.active:after {height: 100%;}
+#cssmenu > ul > li:hover > a,#cssmenu > ul > li.active > a {color: #fff; background: #00aadc; font-weight: 400;}
+#cssmenu > ul > li:hover > a:after,#cssmenu > ul > li.active > a:after {background: #000000;}
+#cssmenu > ul > li:hover > a:before,#cssmenu > ul > li.active > a:before {border-top-color: #ffffff;}
+#cssmenu > ul > li:hover > ul {left: 0;}
+#cssmenu > ul > li:hover > ul > li {max-height: 72px;position: relative;}
+#cssmenu #menu-button {display: none;}
+#cssmenu > ul > li > a {display: block;}
+#cssmenu > ul > li {width: auto;}
+#cssmenu > ul > li > ul {width: 170px;display: block;}
+#cssmenu > ul > li > ul > li {width: 170px;display: block;}
+/* ---------------- End : Nav ----------------------- */
+.bannerPan {clear: both; border-bottom: 7px solid #36414a;}
+.bannerPan img {width: 100%; height: auto; display: block;}
+#main {max-width: 1280px; clear: both; margin: 0 auto; padding:50px 0 30px;}
+/* ---------------- Start : Are you a ----------------------- */
+.block4Pan { position:relative; clear:both; overflow:hidden; padding:0 0 50px;}
+.block4Pan h2 { clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Open Sans', sans-serif;}
+.block4Pan h2:before {position: absolute; content: ""; width: 100%; height: 1px; left: 0; top:50%; background: #d2dee6; z-index:1;}
+.block4Pan h2 span {display: inline-block; background: #f7f7f7; padding: 0 10px; position: relative; z-index: 2;}
+.block4Inn { width:25%; float:left; box-sizing:border-box; padding:0 10px;}
+.block4Box { background:#fff; clear:both; padding:15px; text-align:center; font-family: 'Open Sans', sans-serif; -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12); -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12); box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12);}
+.block4Box img { display:block; margin:0; clear:both; margin:0 auto 10px; width: 100%;}
+.block4Box h3 { clear:both; margin:0 0 10px; font-size:17px; padding:0; text-transform:uppercase; color: #5c86a4;}
+.block4Box p { clear:both; margin:0 0 10px; font-size:15px; padding:0; min-height: 60px; color:#87a6bc;}
+.block4Box a { display: block; width: 100%; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff; font-size: 16px; line-height: 36px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+.block4Box a:hover { text-decoration:none; background: #3e555f; border: 1px solid #d2dee6; color: #fff;}
+/* ---------------- End : Are you a ----------------------- */
+/* ---------------- Start : Video ----------------------- */
+.videoPan {clear: both; background: #d2dee6; padding: 5px 0 50px;}
+.videoPan h2 {clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Open Sans', sans-serif;}
+.videoPan h2:before {position: absolute; content: ""; width: 100%; height: 1px; left: 0; top:50%; background: #fff; z-index:1;}
+.videoPan h2 span {display: inline-block; background: #d2dee6; padding: 0 10px; position: relative; z-index: 2;}
+.videoPan ul {list-style: none; margin: 0 0 50px; padding: 0; clear: both; overflow: hidden;}
+.videoPan ul li {list-style: none; margin: 0; padding: 0 15px; float: left; width: 25%; box-sizing: border-box;}
+.videoPan ul li img {width: 100%; display: block;}
+.videoBtn {display: block; width: 100px; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff; font-size: 16px; line-height: 34px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: "Open Sans", sans-serif}
+.videoBtn:hover {background: #3e555f; border: 1px solid #d2dee6; color: #fff;}
+/* ---------------- End : Video ----------------------- */
+/* ---------------- Start : Course ----------------------- */
+.coursesPan {clear: both; background: #fff; padding: 5px 0 50px;}
+.coursesPan h2 {clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Open Sans', sans-serif;}
+.coursesPan h2:before {position: absolute; content: ""; width: 100%; height: 1px; left: 0; top:50%; background: #ddd; z-index:1;}
+.coursesPan h2 span {display: inline-block; background: #fff; padding: 0 10px; position: relative; z-index: 2;}
+.coursesPan ul {list-style: none; margin: 0 0 50px; padding: 0; clear: both; overflow: hidden;}
+.coursesPan ul li {list-style: none; margin: 0; padding: 0 15px; float: left; width: 33.3%; box-sizing: border-box;}
+.coursesPan ul li img {max-width: 100%; text-align: center; margin: 0 auto; display: block;}
+.coursesPan ul li h3 {padding: 10px 20px; margin: 0; font-size: 21px; color: #375163; text-align: center; font-family: "Open Sans", sans-serif;}
+.coursesPan ul li p {padding: 0 20px; font-size: 15px; font-weight: 400; line-height: 1.5; text-align: center; font-family: "Open Sans", sans-serif; color: #4b6673;}
+.coursesBtn {display: block; width: 100px; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff; font-size: 16px; line-height: 34px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: "Open Sans", sans-serif}
+.coursesBtn:hover {background: #3e555f; border: 1px solid #d2dee6; color: #fff;}
+/* ---------------- End : Course ----------------------- */
+/* ---------------- Start : Footer ----------------------- */
+.footerPan { clear: both; padding: 10px 0; overflow: hidden; border-top: 12px solid #36525a;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a4d56+21,253339+100 */
+background: rgb(58,77,86); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(58,77,86,1) 21%, rgba(37,51,57,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(58,77,86,1) 21%,rgba(37,51,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(58,77,86,1) 21%,rgba(37,51,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a4d56', endColorstr='#253339',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
+.footerInn { width: 30%; float: left; font-family: "Open Sans", sans-serif;}
+.footerInn.footerInn2 {width: 40%;}
+.footerInn h3 {font-size: 16px; line-height: 24px; margin: 0 0 10px; padding: 0 10px 5px 0; color: #00aadc; border-bottom: 2px solid #bec9ce; clear: both; display: inline-block;}
+.footerInn ul {list-style: none; clear: both; margin: 0 0 20px; padding: 0;}
+.footerInn ul li {list-style: none; clear: both; margin: 0; padding: 0 0 0 20px; background: url(../images/footer-arrow.png) no-repeat 0 9px;}
+.footerInn ul li a {color: #b0bec5; text-decoration: none; font-size: 13px; line-height: 18px;}
+.footerInn ul li a:hover {color: #00A9DC;}
+.footerInn ul li span {color: #fff; text-decoration: none; font-size: 13px; line-height: 18px;}
+.subscribeForm { padding:10px 0 0; clear: both;}
+.subscribeForm input.subscribeInput {border: 1px solid #50656f !important; width: 75%; height: 40px; background: #3d4e55; border:0; float:left; display: block; color: #859297; padding:0 0 0 10px; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; font-size: 14px; }
+.subscribeForm input.subscribeButton { cursor: pointer; width: 25%; height: 40px; border:0; font: 700 14px/34px "Open Sans", sans sarif; color: #fff; display: block; float:left; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41a4f4+2,2397f3+85 */
+background: rgb(65,164,244); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(65,164,244,1) 2%, rgba(35,151,243,1) 85%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(65,164,244,1) 2%,rgba(35,151,243,1) 85%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(65,164,244,1) 2%,rgba(35,151,243,1) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a4f4', endColorstr='#2397f3',GradientType=0 ); /* IE6-9 */}
+.footerBottom {clear: both; padding: 10px 0; background: #243238;}
+.footerBottomInn { text-align: center; clear: both; padding: 0; overflow: hidden;}
+.footerBottomInn p {color: #98a5ab;  font: 300 12px/24px "Open Sans", sans sarif; text-align: left; width: 50%; float: left;}
+.footerBottomInn p a {color: #6f8189; text-decoration: none;}
+.footerBottomInn p a:hover {color:#339ef4;}
+.footerBottom #main {padding:10px 0;}
+.footerBottom ul {list-style: none; margin: 0; padding: 0; float: right; width: auto;}
+.footerBottom ul li {list-style: none; margin: 0; padding: 0 5px; float: left; width: auto;}
+.footerBottom ul li a {color: #fff; text-decoration: none; display: block; width: 40px; text-align: center; line-height: 40px; background: #3e555f; height: 40px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;}
+.footerBottom ul li a i {color: #fff; line-height: 40px; text-align: center;}
+.footerBottom ul li a:hover { background:#339ef4;}
+form { margin: 0; padding: 0em; background-color: transparent; }
+/* ---------------- End : Footer ----------------------- */
+
+
+
+/* ---------------- Start : Responsive ----------------------- */
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+#cssmenu > ul { max-height: 0; overflow: hidden; -webkit-transition: max-height 0.35s ease-out; -moz-transition: max-height 0.35s ease-out; -ms-transition: max-height 0.35s ease-out; -o-transition: max-height 0.35s ease-out; transition: max-height 0.35s ease-out;}
+#cssmenu > ul > li > ul { width: 100%; display: block;}
+#cssmenu.align-right ul li a {text-align: left;}
+#cssmenu > ul > li > ul > li { width: 100%; display: block;}
+#cssmenu.align-right ul ul li a {text-align: left;}
+#cssmenu > ul > li > ul > li > a { width: 100%; display: block;}
+#cssmenu ul li ul li a { width: 100%;}
+#cssmenu.align-center > ul { text-align: left;}
+#cssmenu.align-center > ul > li { display: block;}
+#cssmenu > ul.open { max-height: 1000px; border-top: 1px solid rgba(110, 110, 110, 0.25);}
+#cssmenu ul { width: 100%;}
+#cssmenu ul > li { float: none; width: 100%;}
+#cssmenu ul li a { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 12px 20px;}
+#cssmenu ul > li:after { display: none;}
+#cssmenu ul li.has-sub > a:after,#cssmenu ul li.has-sub > a:before,#cssmenu ul li ul li.has-sub:after,#cssmenu ul li ul li.has-sub:before {display: none;}
+#cssmenu ul li ul,
+#cssmenu ul li ul li ul,
+#cssmenu ul li ul li:hover > ul,
+#cssmenu.align-right ul li ul,
+#cssmenu.align-right ul li ul li ul,
+#cssmenu.align-right ul li ul li:hover > ul {left: 0; position: relative; right: auto;}
+#cssmenu ul li ul li,#cssmenu ul li:hover > ul > li { max-height: 999px; position: relative; background: none;}
+#cssmenu ul li ul li a {padding: 8px 20px 8px 35px; color: #ffffff;}
+#cssmenu ul li ul ul li a { padding: 8px 20px 8px 50px;}
+#cssmenu ul li ul li:hover > a {color: #4cb6ea;}
+#cssmenu #menu-button {display: block; -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 15px 20px; text-transform: uppercase; font-weight: 700; font-size: 14px; letter-spacing: 1px; color: #ffffff; cursor: pointer;}
+#cssmenu #menu-button:after {display: block; content: ''; position: absolute; height: 3px; width: 22px; border-top: 2px solid #ffffff; border-bottom: 2px solid #ffffff; right: 20px; top: 16px;}
+#cssmenu #menu-button:before { display: block; content: ''; position: absolute; height: 3px; width: 22px; border-top: 2px solid #ffffff; right: 20px; top: 26px;}
+}
+@media only screen and (max-width: 800px) {
+.footerPan {padding: 10px;}
+.footerInn {width: 100%; text-align: center;}
+.footerInn ul li { width: auto; float: none; clear: none; display: inline-block;}
+.footerInn ul {padding: 0; overflow: hidden;}
+.footerInn.footerInn2 {width: 100%;}
+.footerBottomInn p {text-align: center; width: 100%;}
+.footerBottom ul { list-style: none; margin: 0 auto; padding: 0; float: none;  width: 300px; clear: both;}
+.subscribeForm { padding: 10px 0 10px; overflow: hidden;}
+.coursesPan ul li {width: 100%;}
+.videoPan ul li {margin: 0 10% 30px; padding: 0; width: 80%;}
+.block4Inn { width: 300px; float: none; box-sizing: border-box; padding: 0 10px; clear: both; margin: 0 auto 20px;}
+.logo{ padding-left: 5px;}
+}
+@media only screen and (max-width: 600px) {
+.headerRight {float: none; width: 278px; list-style: none; margin: 0 auto; padding: 20px 0 0; clear: both;}    
+.logo { float: none; display: block; width: 280px; margin: 0 auto;}
+}
+
+
+
+
+
+
+
+
+

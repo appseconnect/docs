@@ -4,15 +4,15 @@ img {max-width: 100%; border:0;}
 body {background: #f7f7f7;}
 /* ---------------- Start : Header ----------------------- */
 .headerPan {clear: both; background: #dbe3e8; overflow: hidden;}
-.headerInn {max-width: 1280px; clear: both; margin: 0 auto; padding:15px 0 20px; overflow: hidden;}
+.headerInn {max-width: 1280px; clear: both; margin: 0 auto; padding:11px 0 20px; overflow: hidden;}
 .logo {float: left; width: auto; display: block; width: 280px;}
 .nav {background: #36414a;color: #bdd0de;}
 .navInn {max-width: 1280px; clear: both; margin: 0 auto; padding:0;}
 .navInn ul { list-style: none; margin: 0; padding: 0; clear:both;}
 .navInn ul li {list-style: none; margin: 0; padding: 0; float: left;}
 .navInn ul li a {color: #fff; text-decoration: none;}
-.headerRight {float: right; width: auto; list-style: none; margin: 8px 0 0; padding: 0;}
-.headerRight li { float: left; width:auto; padding: 0 18px; border-right: 1px dotted #8e9498;}
+.headerRight {float: right; width: auto; list-style: none; margin: 0; padding: 0;}
+.headerRight li { float: left; width:auto; padding: 0 18px; border-right: 1px dotted #8e9498; margin: 0;}
 .headerRight li:last-child {border-right: 0;}
 .headerRight li a {text-decoration: none; color:#5b7c8c; font-size: 12px; font-family: "Open Sans", sans-serif;}
 .headerRight li a:hover {color: #4cb6ea;}
@@ -47,7 +47,7 @@ body {background: #f7f7f7;}
 #cssmenu > ul > li.has-sub > a {padding-right: 40px;}
 #cssmenu > ul > li.has-sub > a:after {display: block;content: "";background: #00aadc;height: 12px;width: 12px;position: absolute;border-radius: 13px;right: 14px;top: 16px;}
 #cssmenu > ul > li.has-sub > a:before {display: block;content: "";border: 4px solid transparent;border-top-color: #4cb6ea;z-index: 2;height: 0;width: 0;position: absolute;right: 16px;top: 21px;}
-#cssmenu > ul > li > a {color: #9caab5;padding: 15px 20px;font-weight: 400;letter-spacing: 1px;text-transform: uppercase;font-size: 14px;z-index: 2;position: relative;}
+#cssmenu > ul > li > a {color: #9caab5;padding: 15px 20px;font-weight: 400;letter-spacing: 1px;text-transform: uppercase;font-size: 14px;z-index: 2;position: relative; -webkit-transition: all 0s ease-in-out; -moz-transition: all 0s ease-in-out; transition: all 0s ease-in-out;}
 #cssmenu > ul > li:hover:after,#cssmenu > ul > li.active:after {height: 100%;}
 #cssmenu > ul > li:hover > a,#cssmenu > ul > li.active > a {color: #fff; background: #00aadc; font-weight: 400;}
 #cssmenu > ul > li:hover > a:after,#cssmenu > ul > li.active > a:after {background: #000000;}
@@ -117,8 +117,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a4d56', end
 .footerInn ul li a:hover {color: #00A9DC;}
 .footerInn ul li span {color: #fff; text-decoration: none; font-size: 13px; line-height: 18px;}
 .subscribeForm { padding:10px 0 0; clear: both;}
-.subscribeForm input.subscribeInput {border: 1px solid #50656f !important; width: 75%; height: 40px; background: #3d4e55; border:0; float:left; display: block; color: #859297; padding:0 0 0 10px; }
-.subscribeForm input.subscribeButton { cursor: pointer; width: 25%; height: 40px; border:0; font: 700 14px/40px "Open Sans", sans sarif; color: #fff; display: block; float:left;
+.subscribeForm input.subscribeInput {border: 1px solid #50656f !important; width: 75%; height: 40px; background: #3d4e55; border:0; float:left; display: block; color: #859297; padding:0 0 0 10px; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; font-size: 14px; }
+.subscribeForm input.subscribeButton { cursor: pointer; width: 25%; height: 40px; border:0; font: 700 14px/34px "Open Sans", sans sarif; color: #fff; display: block; float:left; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41a4f4+2,2397f3+85 */
 background: rgb(65,164,244); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(65,164,244,1) 2%, rgba(35,151,243,1) 85%); /* FF3.6-15 */
@@ -136,6 +136,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a4f4', end
 .footerBottom ul li a {color: #fff; text-decoration: none; display: block; width: 40px; text-align: center; line-height: 40px; background: #3e555f; height: 40px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;}
 .footerBottom ul li a i {color: #fff; line-height: 40px; text-align: center;}
 .footerBottom ul li a:hover { background:#339ef4;}
+form { margin: 0; padding: 0em; background-color: transparent; }
 /* ---------------- End : Footer ----------------------- */
 
 
