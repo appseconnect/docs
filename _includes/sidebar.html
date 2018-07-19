@@ -37,7 +37,7 @@
 			{% assign postCat = post.category %}
 			 {% if postCat != matchCat %}
 
-			 <span class="nav__sub-title sub-title" onclick="showMenu(this)">{{ postCat }}</span>
+			 <li class="nav__sub-title sub-title" onclick="showMenu(this)">{{ postCat }}</li>
 		
 			 
 				{% if post.url == page.url %}
@@ -54,9 +54,9 @@
 			 
 				{% if post.url == page.url %}
 	
-					<li class="menu-items"> <a href="{{base_path}}/{{ post.url}}" class="active">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
 				{% else %}
-					<li class="menu-items"> <a href="{{base_path}}/{{ post.url}}">{{ post.title }}</a></li>
+					<li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
 				
 				{% endif %}
 			 

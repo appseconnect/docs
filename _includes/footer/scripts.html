@@ -5,12 +5,43 @@
 <script src="/assets/js/aos.js"></script>
 <script type="text/javascript">
     var nav = $('.sidebar__right');
+    var lastId;
+    var tocMenu = $("#toc__menu");
+
+    // All list items
+    var menuItems = tocMenu.find("a");
+    // Anchors corresponding to menu items
+    var scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 136) {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop();
+
+        if (fromTop > 136) {
             nav.addClass("f-nav");
         } else {
             nav.removeClass("f-nav");
+        } 
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+              .parent().removeClass("active")
+              .end().filter("[href='#" + id + "']").parent().addClass("active");
         }
+
     });
 
     $(document).ready(function () {
