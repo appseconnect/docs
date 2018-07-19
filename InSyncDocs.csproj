@@ -58,6 +58,7 @@
     <Content Include="assets\images\reseller-2.png" />
     <Content Include="assets\images\stacks-image-4691429.jpg" />
     <Content Include="assets\images\training-300x271.png" />
+    <Content Include="assets\images\Video-player.png" />
     <Content Include="assets\images\video-thumb.png" />
     <Content Include="assets\js\aos.js" />
     <Content Include="assets\js\lunr-en.js" />
@@ -71,8 +72,11 @@
     <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
     <Content Include="assets\js\_main.js" />
     <Content Include="banner.js" />
+    <Content Include="courses.html" />
     <Content Include="favicon.ico" />
+    <Content Include="feed.xml" />
     <Content Include="LICENSE.txt" />
+    <Content Include="videos.html" />
     <Content Include="_includes\analytics-providers\custom.html" />
     <Content Include="_includes\analytics-providers\google-universal.html" />
     <Content Include="_includes\analytics-providers\google.html" />
@@ -117,10 +121,13 @@
     <Content Include="_layouts\compress.html" />
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\home.html" />
+    <Content Include="_layouts\page.html" />
     <Content Include="_layouts\search.html" />
     <Content Include="_layouts\single.html" />
     <Content Include="_layouts\splash.html" />
+    <Content Include="_layouts\videos.html" />
     <None Include="videos.md" />
+    <None Include="_pages\about\index.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +174,7 @@
     <None Include="_posts\Working with Subscription\2010-01-18-How to edit subscription.md" />
     <None Include="_sass\minimal-mistakes.scss" />
     <None Include="_sass\minimal-mistakes\skins\_air.scss" />
+    <None Include="_sass\minimal-mistakes\skins\_appseconnect-light.scss" />
     <None Include="_sass\minimal-mistakes\skins\_appseconnect.scss" />
     <None Include="_sass\minimal-mistakes\skins\_aqua.scss" />
     <None Include="_sass\minimal-mistakes\skins\_contrast.scss" />

@@ -1,17 +1,9 @@
 ﻿---
-layout: default
-author_profile: false
-permalink: videos
+layout: page
+title: Videos
+permalink: /videos/
 ---
 
-<!DOCTYPE html>
+## Videos
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
- checking video file
-</body>
-</html>
+Only For Testing purpose.
