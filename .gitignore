@@ -243,3 +243,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/martinbuberl.github.io
+/_layouts
+/_pages/about
+/_site/about
+/_site/martinbuberl.github.io
