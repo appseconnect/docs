@@ -41,28 +41,17 @@
 
                 <ul class="sub-menu">
                     {% if post.url == page.url %}
-
                     <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
                     {% else %}
                     <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
-
                     {% endif %}
 
                     {% assign matchCat = post.category %}
 
-                    {% else %}
-
-                    {% if post.url == page.url %}
-
-                    <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
-                    {% else %}
-                    <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
-
-                    {% endif %}
                 </ul>
-
-                {% endif %}
             </li>
+            {% endif %}
+
             {% endfor %}
 
         </ul>
@@ -100,19 +89,11 @@
                     <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
                     {% endif %}
 
-                    {% assign matchCat = post.category %}
-
-                    {% else %}
-
-                    {% if post.url == page.url %}
-                    <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
-                    {% else %}
-                    <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
-                    {% endif %}
-
+                    {% assign matchCat = post.category %} 
                 </ul>
-                {% endif %}
             </li>
+            {% endif %}
+
             {% endfor %}
 
         </ul>
