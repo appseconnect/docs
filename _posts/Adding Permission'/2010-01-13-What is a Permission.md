@@ -1,8 +1,8 @@
 ---
 title: "What is a Permission"
 toc: true
-tag: administrators
-category: "Adding Permission"
+tag: developers
+category: "Handling Permission"
 ---
 # Handling Permission
 
