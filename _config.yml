@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "appseconnect" # "air", "aqua", "contrast", "dark", "dirt", "neon", "default", "plum", "sunrise", "appseconnect"
+minimal_mistakes_skin    : "appseconnect-light" # "air", "aqua", "contrast", "dark", "dirt", "neon", "default", "plum", "sunrise", "appseconnect", "appseconnect-light"
 
 # Site Settings
 locale                   : "en"
@@ -116,9 +116,7 @@ author:
 
 
 # Reading Files
-include:
-  - .htaccess
-  - _pages
+include: ['_pages']
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
