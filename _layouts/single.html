@@ -96,14 +96,30 @@ layout: default
         {% endif %}
     </article>
 
-    
+
     {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
-        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "See Also" }}</h4>
         <div class="grid__wrapper">
-            {% for post in site.related_posts limit:4 %}
-            {% include archive-single.html type="grid" %}
-            {% endfor %}
+            <div class="sectionbody">
+                <div class="ulist">
+                    <ul>
+                        {% for post in site.related_posts limit:4 %}
+                        <li>
+                            {% if post.link %}
+                            <a href="{{ post.link }}">{{ title }}</a>
+                            <a href="{{ post.url | absolute_url }}" rel="permalink">
+                                <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
+                                <span class="sr-only">Permalink</span>
+                            </a>
+                            {% else %}
+                            <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     {% elsif page.id and page.related %}
@@ -128,7 +144,7 @@ layout: default
                         {% endfor %}
                     </ul>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
     {% endif %}
