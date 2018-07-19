@@ -1,26 +1,25 @@
 {% comment %}
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
+<div class="sidebar sticky">
+    {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+    {% if page.sidebar %}
     {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | absolute_url }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
+    {% if s.image %}
+    <img src={% if s.image contains "://" %}
+         "{{ s.image }}"
+         {% else %}
+         "{{ s.image | absolute_url }}"
+         {% endif %}
+         alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+    {% endif %}
+    {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+    {% if s.text %}{{ s.text | markdownify }}{% endif %}
     {% endfor %}
     {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
+    {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
-  {% endif %}
-  </div>
+    {% endif %}
+</div>
 {% endif %}
 {% endcomment %}
 {% assign posts = site.tags[page.tag] %}
@@ -29,98 +28,99 @@
 
 {% if page.tags.size == 1 %}
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
-  <nav class="nav__list">
-    <ul class="nav__items">
+    <p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
+    <nav class="nav__list">
+        <ul class="nav__items">
 
-	{% for post in posts reversed %}
-			{% assign postCat = post.category %}
-			 {% if postCat != matchCat %}
+            {% for post in posts reversed %}
+            {% assign postCat = post.category %}
+            {% if postCat != matchCat %}
 
-			 <li class="nav__sub-title sub-title" onclick="showMenu(this)">{{ postCat }}</li>
-		
-			 
-				{% if post.url == page.url %}
-				
-			   <li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
-				{% else %}
-				<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
-			
-				{% endif %}
-				
-			 {% assign matchCat = post.category %}
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">
+                {{ postCat }}
 
-			 {% else %}
-			 
-				{% if post.url == page.url %}
-	
-					<li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
-				{% else %}
-					<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
-				
-				{% endif %}
-			 
-			 
-			 {% endif %}
+                <ul class="sub-menu">
+                    {% if post.url == page.url %}
 
-   {% endfor %}
+                    <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
+                    {% else %}
+                    <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
 
-  </ul>
-</nav>
-</div>  
+                    {% endif %}
+
+                    {% assign matchCat = post.category %}
+
+                    {% else %}
+
+                    {% if post.url == page.url %}
+
+                    <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
+                    {% else %}
+                    <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
+
+                    {% endif %}
+                </ul>
+
+                {% endif %}
+            </li>
+            {% endfor %}
+
+        </ul>
+    </nav>
+</div>
 {% endif %}
- 
- 
- 
- 
- 
+
+
+
+
+
  {% if page.tags.size > 1 %}
- 
 
- <div class="sidebar sticky">
- 
- 
- {% for mytags in page.tags %}
- 
-<p style="color:#1D7AB1"><strong>{{mytags | capitalize }}</strong> persona</p>
-  <nav class="nav__list">
-    <ul class="nav__items">
 
-	{% for post in site.tags[mytags] reversed %}
-			{% assign postCat = post.category %}
-			 {% if postCat != matchCat %}
+<div class="sidebar sticky">
 
-			<span class="nav__sub-title sub-title" onclick="showMenu(this)">{{ postCat }}</span>
-		
-			 
-				{% if post.url == page.url %}
-			   <li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
-				{% else %}
-				<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
-				{% endif %}
-				
-			 {% assign matchCat = post.category %}
 
-			 {% else %}
-			 
-				{% if post.url == page.url %}
-					<li class="menu-items"> <a href="/{{ post.url}}" class="active">{{ post.title }}</a></li>
-				{% else %}
-					<li class="menu-items"> <a href="/{{ post.url}}">{{ post.title }}</a></li>
-				{% endif %}
-			 
-			 
-			 {% endif %}
+    {% for mytags in page.tags %}
 
-   {% endfor %}
+    <p style="color:#1D7AB1"><strong>{{mytags | capitalize }}</strong> persona</p>
+    <nav class="nav__list">
+        <ul class="nav__items">
 
-  </ul>
-</nav>
- 
- 
- {% endfor %}
- 
- </div> 
-  
+            {% for post in site.tags[mytags] reversed %}
+            {% assign postCat = post.category %}
+            {% if postCat != matchCat %}
+
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">
+                {{ postCat }}
+
+                <ul class="sub-menu">
+                    {% if post.url == page.url %}
+                    <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
+                    {% else %}
+                    <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
+                    {% endif %}
+
+                    {% assign matchCat = post.category %}
+
+                    {% else %}
+
+                    {% if post.url == page.url %}
+                    <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
+                    {% else %}
+                    <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
+                    {% endif %}
+
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+
+        </ul>
+    </nav>
+
+
+    {% endfor %}
+
+</div>
+
 {% endif %}
- 
