@@ -16,7 +16,7 @@ description              : "APPSeCONNECT Product documentation for Customers, Im
 url                      : "http://docs.appseconnect.com"
 baseurl                  : ""
 repository               : "appseconnect"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/APPSeCONNECT-documentation.png"
 breadcrumbs              : true # false, false (default)
 words_per_minute         : 200
 comments:
@@ -87,8 +87,8 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "APPSeCONNECT product development team."
   location         : ""
-  email            :
-  uri              :
+  email            : "support@appseconnect.com"
+  uri              : "http://support.appseconnect.com"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
