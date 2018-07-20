@@ -62,7 +62,7 @@ You may also optionally specify a branch, [tag](https://github.com/mmistakes/min
 If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
 <figure>
-  <img src="{{ '/assets/images/developer.png' | absolute_url }}" alt="creating a new branch on GitHub">
+  <img src="{{ '/assets/images/Developer.png' | absolute_url }}" alt="creating a new branch on GitHub">
 </figure>
 
 You can also install the theme by copying all of the theme files[^structure] into your project.
