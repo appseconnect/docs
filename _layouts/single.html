@@ -99,11 +99,10 @@ layout: default
                     <div class="ulist">
                         <ul>
                             {% for post in site.posts limit:4 %}
-                            {% assign title = post.title | markdownify | remove: "
-                            <p>" | remove: "</p>" %}
+                            {% assign title = post.title %}
                             <li> 
-                                <a href="{{ post.url | absolute_url }}" rel="permalink" data-position="imperfect">
-                                    <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
+                                <a href="{{ post.url | absolute_url }}" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     {{ title }}
                                 </a> 
                             </li>
