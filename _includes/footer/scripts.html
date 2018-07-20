@@ -38,10 +38,11 @@
             lastId = id;
             // Set/remove active class
             menuItems
-              .removeClass("active")
-              .end()
-              .filter("[href='" + location.href.replace(location.hash, "") + "#" + id + "']")
-              .addClass("active");
+              .removeClass("active");
+
+            var selectedMenu = menuItems.filter("[href='" + location.href.replace(location.hash, "") + "#" + id + "']");
+
+            selectedMenu.addClass("active");
         }
 
     });
