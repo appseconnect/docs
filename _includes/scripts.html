@@ -1,3 +1,4 @@
+{% include /footer/scripts.html %}
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     {% if script contains "://" %}
@@ -22,4 +23,4 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
-{% include /footer/scripts.html %}
+
