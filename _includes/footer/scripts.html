@@ -39,7 +39,9 @@
             // Set/remove active class
             menuItems
               .removeClass("active")
-              .end().filter("[href='#" + id + "']").addClass("active");
+              .end()
+              .filter("[href='" + location.href.replace(location.hash, "") + "#" + id + "']")
+              .addClass("active");
         }
 
     });

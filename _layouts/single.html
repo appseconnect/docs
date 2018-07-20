@@ -113,7 +113,7 @@ layout: default
                                 <span class="sr-only">Permalink</span>
                             </a>
                             {% else %}
-                            <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
+                            <a href="{{ post.url | absolute_url }}" rel="permalink" data-position="perfect">{{ title }}</a>
                             {% endif %}
                         </li>
                         {% endfor %}
@@ -138,7 +138,7 @@ layout: default
                                 <span class="sr-only">Permalink</span>
                             </a>
                             {% else %}
-                            <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
+                            <a href="{{ post.url | absolute_url }}" rel="permalink"  data-position="imperfect">{{ title }}</a>
                             {% endif %}
                         </li>
                         {% endfor %}
