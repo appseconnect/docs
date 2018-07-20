@@ -52,6 +52,8 @@ reCaptcha:
 atom_feed:
   path                   : feed.xml # blank (default) uses feed.xml
 search                   : true #, false (default)
+footer_scripts			 : 
+	- assets/js/plugins/jquery.fitvids.js
 
 # SEO Related
 google_site_verification :
