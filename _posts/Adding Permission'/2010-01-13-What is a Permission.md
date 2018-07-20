@@ -3,7 +3,10 @@ title: "What is a Permission"
 toc: true
 tag: developers
 category: "Handling Permission"
+read_time:
 ---
+Permission is a set of previledges which lets the user access a feature or service in APPSeCONNECT platform. Permissions are generally required by an enterprise or an user to access a project / application or any resources in the platform
+
 # Handling Permission
 
 Permission is a technique of giving access to users on projects or services. After getting permission on a project or a service, the user would be able to manage the resources without requiring us to be involved on a change. 
