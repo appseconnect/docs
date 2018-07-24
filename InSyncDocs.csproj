@@ -57,6 +57,8 @@
     <Content Include="assets\images\mm-free-feature.png" />
     <Content Include="assets\images\mm-responsive-feature.png" />
     <Content Include="assets\images\reseller-2.png" />
+    <Content Include="assets\images\search-img.png" />
+    <Content Include="assets\images\search-not-found.png" />
     <Content Include="assets\images\stacks-image-4691429.jpg" />
     <Content Include="assets\images\training-300x271.png" />
     <Content Include="assets\images\Video-player.png" />
