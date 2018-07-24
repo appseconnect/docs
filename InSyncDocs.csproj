@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="_posts\Setting Up\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -57,6 +56,8 @@
     <Content Include="assets\images\mm-free-feature.png" />
     <Content Include="assets\images\mm-responsive-feature.png" />
     <Content Include="assets\images\reseller-2.png" />
+    <Content Include="assets\images\search-img.png" />
+    <Content Include="assets\images\search-not-found.png" />
     <Content Include="assets\images\stacks-image-4691429.jpg" />
     <Content Include="assets\images\training-300x271.png" />
     <Content Include="assets\images\Video-player.png" />
@@ -129,6 +130,7 @@
     <Content Include="_layouts\videos.html" />
     <None Include="videos.md" />
     <None Include="_pages\about\index.md" />
+    <None Include="_posts\Setting Up\2010-01-16-Setting Up Your Profile.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
