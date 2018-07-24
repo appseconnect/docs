@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="_posts\Setting Up\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -131,6 +130,7 @@
     <Content Include="_layouts\videos.html" />
     <None Include="videos.md" />
     <None Include="_pages\about\index.md" />
+    <None Include="_posts\Setting Up\2010-01-16-Setting Up Your Profile.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
