@@ -133,6 +133,7 @@
     <Content Include="_layouts\tag.html" />
     <Content Include="_layouts\tags.html" />
     <Content Include="_layouts\videos.html" />
+    <None Include="assets\css\main.scss" />
     <None Include="videos.md" />
     <None Include="_pages\about\index.md" />
     <None Include="_pages\category-archive.md" />
@@ -142,7 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\css\custom-style.scss" />
-    <None Include="assets\css\main.scss" />
     <None Include="assets\fonts\fontawesome-webfont.eot" />
     <None Include="assets\fonts\fontawesome-webfont.ttf" />
     <None Include="assets\fonts\fontawesome-webfont.woff" />
