@@ -120,6 +120,9 @@
     <Content Include="_includes\toc.html" />
     <Content Include="_layouts\archive-taxonomy.html" />
     <Content Include="_layouts\archive.html" />
+    <Content Include="_layouts\categories.html" />
+    <Content Include="_layouts\category.html" />
+    <Content Include="_layouts\collection.html" />
     <Content Include="_layouts\compress.html" />
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\home.html" />
@@ -127,6 +130,8 @@
     <Content Include="_layouts\search.html" />
     <Content Include="_layouts\single.html" />
     <Content Include="_layouts\splash.html" />
+    <Content Include="_layouts\tag.html" />
+    <Content Include="_layouts\tags.html" />
     <Content Include="_layouts\videos.html" />
     <None Include="videos.md" />
     <None Include="_pages\about\index.md" />
