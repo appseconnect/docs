@@ -77,7 +77,7 @@ body.layout--single h1, body.layout--single h2, body.layout--single h3, body.lay
 body.layout--single h5, body.layout--single h6 {margin: 0.5em 0;}
 body.layout--single figure {margin: 0.5em 0;}
 body.layout--single figure img {margin: 0;}
-body.layout--single .search-content__inner-wrap .list__item {background: #fff; padding: 20px; margin: 0 0 20px; -webkit-box-shadow:inset 0px 0px 15px -1px rgba(0,0,0,0.30); -moz-box-shadow:inset 0px 0px 15px -1px rgba(0,0,0,0.30); box-shadow:inset 0px 0px 15px -1px rgba(0,0,0,0.30);}
+body.layout--single .search-content__inner-wrap .list__item {background: #fff; padding: 10px; margin: 0 0 20px; border:1px solid #ddd;}
 body.layout--single .toc .nav__title {margin-top: 0;}
 body.layout--single .toc .nav__title { background: transparent; color: #444; text-transform: capitalize; font-size: 14px; font-weight: 600;}
 .toc {box-shadow: 0 0 0 rgba(0,0,0,0) !important; -moz-box-shadow: 0 0 0 rgba(0,0,0,0) !important; -webkit-box-shadow: 0 0 0 rgba(0,0,0,0) !important; border:0 !important;}
@@ -160,6 +160,23 @@ body.layout--single .sub-title.sidebaractive:before { content: "\f105"; left: 5p
 .ulist ul li {line-height: 20px; font-size: 14px; color: #333;}
 .ulist ul li a {color: #1e4656; text-decoration: none;}
 .ulist ul li a i {margin:0 5px 0 0;}
+.search-content.is--visible { display: block; visibility: visible; position: absolute; z-index: 100; background: rgba(0,0,0,0.5); width: 100%; height: 100%; top: 0; left: 0;}
+.search-content__inner-wrap {background:#fff; position:relative;}
+.archive__item-teaser {display:none;}
+.search-content__inner-wrap .results{overflow:hidden;}
+.search-content.is--visible .search-input {font-size: 18px; margin: 0; border: 0; line-height: 50px; height: 50px; background: #f1f1f1; padding: 0 20px; display: block; font-weight: 400; color: #000;}
+.closeSearch {position: absolute; right: 20px; top: 10px; font-size: 30px; width: 25px; height: 25px; background: #fff; line-height: 25px; border-radius: 50%; color: #1d1f21 !important;}
+.closeSearch i {line-height:24px; color: #ddd;}
+.searchTopGap {clear:both; padding:50px 0 20px;}
+.search-content .archive__item-title {margin-top: 0; font-size: 18px; color: #555; margin: 0;}
+.search-content .archive__item-title a {color: #555; text-decoration: none;}
+.search-content .archive__item-excerpt { margin: 5px 0 0;}
+.search-content__inner-wrap { max-width: 800px !important; height: 600px; overflow-x: hidden; overflow-y: scroll;}
+.searchDefaultBox img {display:block; margin:0 auto;}
+.searchDefaultBox h3 { clear:both; padding:10px 0; text-align:center; border-top:1px solid #81cabb; border-bottom:1px solid #81cabb; color:#2f403d; font-size:30px; margin:20px auto !important; text-transform: uppercase; width: 480px;}
+.search-content.is--visible .searchDefaultBox p { font-size: 15px; line-height: 24px; text-align: center; width: 90%; margin: 0 5%;}
+.searchDefaultBox { clear:both; padding:0 0 30px 0;}
+.hideBox {display:none;}
 
 
 @media (max-width: 63.9375em) {

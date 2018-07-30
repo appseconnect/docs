@@ -53,13 +53,22 @@ var store = [
     {% endfor %}
   {% endfor %}]
 
-$(document).ready(function() {
-  $('input#search').on('keyup', function () {
+$(document).ready(function () {
+    $('input#search').on('keyup', function () {
+        debugger;
+        $("#searchFound").addClass('hideBox');
     var resultdiv = $('#results');
     var query = $(this).val();
-    var result = idx.search(query);
+        var result = idx.search(query);
+        if (result.length == 0) {
+            $("#searchNotFound").removeClass('hideBox');
+            $("#results").addClass('hideBox');
+            return false;
+        }
+        $("#searchNotFound").addClass('hideBox');
+        $("#results").removeClass('hideBox');
     resultdiv.empty();
-    resultdiv.prepend('<p class="results__found">'+result.length+' {{ site.data.ui-text[site.locale].results_found | default: "Result(s) found" }}</p>');
+        resultdiv.prepend('<p class="results__found">' + result.length + ' {{ site.data.ui-text[site.locale].results_found | default: "Result(s) found" }}</p>');
     for (var item in result) {
       var ref = result[item].ref;
       if(store[ref].teaser){
