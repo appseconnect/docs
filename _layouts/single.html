@@ -122,6 +122,8 @@ layout: default
                             {% if post.url != page.url %}
                             {% if page.tags contains tag %}
                             {% assign sameTagCount = sameTagCount | plus: 1 %}
+                            {% capture tagmarkup %}
+                            <span class="label label-default">{{ tag }}</span> {% endcapture %}
                             {% assign commonTags = commonTags | append: tagmarkup %}
                             {% endif %}
                             {% endif %}
@@ -132,7 +134,7 @@ layout: default
                             <li>
                                 <a href="{{ post.url | absolute_url }}" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    {{ title }}
+                                    {{ title }} {{ commonTags }}
                                 </a>
                             </li>
                             {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
