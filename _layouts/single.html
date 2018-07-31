@@ -129,7 +129,7 @@ layout: default
                             {% endif %}
                             {% endfor %}
 
-                            {% if sameTagCount >= minCommonTags %}
+                            <!--{% if sameTagCount >= minCommonTags %}-->
                             {% assign title = post.title %}
                             <li>
                                 <a href="{{ post.url | absolute_url }}" rel="permalink">
@@ -137,11 +137,11 @@ layout: default
                                     {{ title }} {{ commonTags }}
                                 </a>
                             </li>
-                            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+                            <!--{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
                             {% if maxRelatedCounter >= maxRelated %}
                             {% break %}
                             {% endif %}
-                            {% endif %}
+                            {% endif %}-->
 
                             {% endfor %}
                            
