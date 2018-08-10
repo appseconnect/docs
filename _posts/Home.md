@@ -32,7 +32,9 @@ APPSeCONNECT helps enterprises seamlessly connect applications both on-premises 
     Simple browser-based management that requires no additional on premise infrastructure
 
 * Scale up or down more Easily
-    Easy Scaling in terms of app count, user count or both     
+    Easy Scaling in terms of app count, user count or both
+
+
 
 # APPSeCONNECT as iPaaS
 
@@ -56,3 +58,5 @@ A Sneak-Peak to APPSeCONNECT Feature
 * API-led Connectivity
 * Business Rule Engine
 * Secure Integration
+
+# App se Connect Architecture & Usability
