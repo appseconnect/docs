@@ -27,12 +27,15 @@ APPSeCONNECT helps enterprises seamlessly connect applications both on-premises 
 # Why is Cloud Integration necessary?
 
 * Easily Accessible solution
+
     Access business data real time from any device and in any location 
 
 * Totally Flexible Platform
+
     Simple browser-based management that requires no additional on premise infrastructure
 
 * Scale up or down more Easily
+
     Easy Scaling in terms of app count, user count or both
 
 
