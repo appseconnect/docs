@@ -80,3 +80,5 @@ APPSeCONNECT comprises of mainly two components.
 It is a hybrid solution which can centralize your application(s) communication logic, business logic, and your custom data into configurable endpoints (also called as Touchpoints), which will eventually be downloaded to the APPSeCONNECT thin clients installed on your local server to transform your business data between applications
 
 
+
+
