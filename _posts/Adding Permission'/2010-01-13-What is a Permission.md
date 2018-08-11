@@ -16,11 +16,10 @@ Adding permission to accounts is sometimes necessary when you require an externa
 
 ### Steps
 
-
-1. Open any *project*, and click on permission.
-2. On the organization assignment page, choose the user and activate the `account`. 
-3. Add the user from the list of users in the popup.
-4. Click `Save` to commit changes. 
++ Open any *project*, and click on permission.
++ On the organization assignment page, choose the user and activate the `account`. 
++ Add the user from the list of users in the popup.
++ Click `Save` to commit changes. 
 
 When the user is assigned to the project, the project is accessible to that particular user from his/her login. 
 
