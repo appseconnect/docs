@@ -24,7 +24,7 @@ Adding permission to accounts is sometimes necessary when you require an externa
 When the user is assigned to the project, the project is accessible to that particular user from his/her login. 
 
 
-## Adding permission to an Application
+### Adding permission to an Application
 
 Adding permission to the app is sometimes necessary when you require an external **ISV** to access a specific application. APPSeCONNECT by default hides all the apps in which your role does not have permission to. Based on that, you can allow some third-party users or partners to have access to the apps.
 
