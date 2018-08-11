@@ -1,13 +1,9 @@
-
----
+--- 
 title: "What is Workflow"
 toc: true
 tag: developers
-category: "APPSeCONNECT Workflow"
-menus: 
-    header:
-        title: What is Workflow
-        weight: 1
+category: "Workflow Management Documentation"
+Author: Soumita
 ---
 A workflow consists of an orchestrated pattern of business activity enabled by the systematic 
 organization of resources into processes that transform materials or process information.
@@ -30,13 +26,15 @@ This feature enables to execute the orchestrated pattern of business activity wi
 5. Modifying Step Order
 6. Real time Reports
 
-**Elements of Workflow**
+**Elements/Nodes of Workflow**
 
 * Get
 * Process
 * Post
 * Halt- Resume
 * Delay
+
+(Create Link to the Nodes details page)
 
 **Actions of Workflow**
 * Email
