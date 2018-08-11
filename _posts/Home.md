@@ -86,3 +86,15 @@ APPSeCONNECT comprises of mainly two components.
 * Cloud Implementation
 * Hybrid Implementation
 
+# Platform - Permissions 
+
+# Release Notes/Release Information
+
+
+# Trial Version Request
+
+## Visitor's Request
+
+## Partner's Request
+
+# Customer Registration & logging Information
