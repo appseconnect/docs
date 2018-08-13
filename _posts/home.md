@@ -99,4 +99,15 @@ APPSeCONNECT comprises of mainly two components.
 
 # Customer Registration & logging Information   
 
-1. Click on the URL (Insrt URL & Link it) and this will take you the login page of APPSeConnect Portal.
+1. Click on the URL (Insert URL & Link it) and this will take you the login page of APPSeConnect Portal.
+
+2. The login page has a username and password field. Enter the details there
+
+3. Login with your  valid email Id and password. Click on Sign In button
+
+4. You are now logged in to teh application.
+
+5. Select the "Remember Me" checkbox in the login page, If you wish the system to remember your login emial id
+   after logging out from the account.
+
+6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.  
