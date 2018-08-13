@@ -115,9 +115,10 @@ First, you must sign up for an account with APPSeCONNECT Community.
 
 5. You are now logged in to the APPSeCONNECT portal.
 
-6. To change the password, go to [APPSeCONNECT Portal Profile](https://appseconnect.freshdesk.com/a/solutions/articles/4000073318)section and click on **Change Details** to change your password.
+6. To change the password, go to [APPSeCONNECT Portal Profile](https://appseconnect.freshdesk.com/a/solutions/articles/4000073318) section and click on **Change Details** to change your password.
 
-**ProTip:** >If a user cannot access the temporary password sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.
+**ProTip:** If a user cannot access the temporary password sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.
+{: .notice--info}
 
 
 
