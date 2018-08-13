@@ -97,7 +97,12 @@ APPSeCONNECT comprises of mainly two components.
 
 ## Partner's Request
 
-# Customer Registration & logging Information   
+# Customer Registration & logging Information  
+
+## New Customer Logging Information
+
+
+## Existing Customer Logging Information
 
 1. Click on the URL (Insert URL & Link it) and this will take you the login page of APPSeConnect Portal.
 
