@@ -8,7 +8,7 @@ read_time: true
 APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud'  while all the credentials remain intact in the system's own premises. 
 APPSeCONNECT is developed as a platform where an ISV partner can also work together with APPSeCONNECT and develop the cloud configurations for the Apps which it does not support and can work seamlessly together with Apps which it does. APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
 
-iness function perspective. The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components
+iness function perspective. The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components.
 
 # Introduction to IPAAS
 
