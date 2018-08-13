@@ -107,6 +107,18 @@ First, you must sign up for an account with APPSeCONNECT Community.
 
 1. The Implementation Team will do user activation. Click [User Activation](https://appseconnect.freshdesk.com/a/solutions/articles/4000073318) to view the same.
 
+2. You will receive an activation mail in the provided email id with UserId & Password (one time password)         details. 
+
+3. Click on the link and the user account gets activated.
+
+4. Now login to the portal with the provided UserId & Password (one time password) details. 
+
+5. You are now logged in to the APPSeCONNECT portal.
+
+6. To change the password, go to "Home - My Profile" section and click on "Change Details" to change your            password.
+
+**ProTip:** If a user cannot access the temporary password sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.
+
 
 
 ## Existing Customer Logging Information
