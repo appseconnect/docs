@@ -105,7 +105,7 @@ You must sign up for an account with  APPSeCONNECT Community and be logged in or
 
 First, you must sign up for an account with APPSeCONNECT Community.
 
-1. The Implementation Team will do user activation. Click [User Activation] (https://appseconnect.freshdesk.com/a/solutions/articles/4000073318) to view the same.
+1. The Implementation Team will do user activation. Click [User Activation](https://appseconnect.freshdesk.com/a/solutions/articles/4000073318) to view the same.
 
 
 
