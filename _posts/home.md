@@ -99,4 +99,4 @@ APPSeCONNECT comprises of mainly two components.
 
 # Customer Registration & logging Information   
 
-Click on the URL (Insrt URL & Link it) and this will take you the login page of APPSeConnect Portal.
+1. Click on the URL (Insrt URL & Link it) and this will take you the login page of APPSeConnect Portal.
