@@ -110,9 +110,9 @@ APPSeCONNECT comprises of mainly two components.
 
 3. Login with your  valid email Id and password. Click on Sign In button
 
-4. You are now logged in to teh application.
+4. You are now logged in to the application.
 
-5. Select the "Remember Me" checkbox in the login page, If you wish the system to remember your login emial id
+5. Select the "Remember Me" checkbox in the login page, If you wish the system to remember your login email id
    after logging out from the account.
 
 6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.  
