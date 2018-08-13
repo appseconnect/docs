@@ -101,7 +101,7 @@ APPSeCONNECT comprises of mainly two components.
 
 You must sign up for an account with  APPSeCONNECT Community and be logged in order to access the Support section of the community.
 
-## New Customer Logging Information
+## A. New Customer Logging Information
 
 First, you must sign up for an account with APPSeCONNECT Community.
 
@@ -122,7 +122,7 @@ First, you must sign up for an account with APPSeCONNECT Community.
 
 
 
-## Existing Customer Logging Information
+## B. Existing Customer Logging Information
 
 Once registered, make sure you are logged in to the APPSeCONNECT Community to view and manage your support cases.
 
