@@ -138,6 +138,7 @@
     <None Include="_pages\about\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\home.md" />
     <None Include="_posts\Setting Up\2010-01-16-Setting Up Your Profile.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>

@@ -26,6 +26,7 @@
 {% assign currentTag = page.tag %}
 {% assign matchCat = " " %}
 
+{{ site.posts | jsonify }}
 
 {% if page.tags.size == 1 %}
 <div class="sidebar sticky">
