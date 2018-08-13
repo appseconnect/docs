@@ -99,12 +99,21 @@ APPSeCONNECT comprises of mainly two components.
 
 # Customer Registration & logging Information  
 
+You must sign up for an account with  APPSeCONNECT Community and be logged in order to access the Support section of the community.
+
 ## New Customer Logging Information
+
+First, you must sign up for an account with APPSeCONNECT Community.
+
+1. The Implementation Team will do user activation. Click [User Activation] (https://appseconnect.freshdesk.com/a/solutions/articles/4000073318) to view the same.
+
 
 
 ## Existing Customer Logging Information
 
-1. Click on the URL (Insert URL & Link it) and this will take you the login page of APPSeConnect Portal.
+Once registered, make sure you are logged in to the APPSeCONNECT Community to view and manage your support cases.
+
+1. Click on the URL (Insert URL & Link it) and this will take you the login page of  APPSeCONNECT Portal.
 
 2. The login page has a username and password field. Enter the details there
 
@@ -115,4 +124,5 @@ APPSeCONNECT comprises of mainly two components.
 5. Select the "Remember Me" checkbox in the login page, If you wish the system to remember your login email id
    after logging out from the account.
 
-6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.  
+6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.
+
