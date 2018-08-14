@@ -56,3 +56,64 @@ Page setup for a process / project document must be the following:
 *	‘Footer’ as 0.9  inches
 *	‘Paper size:’ as ‘A4’.
 
+### 2.2.2	Standard Pages in a Document
+
+All Documents (other than dynamically controlled documents) should incorporate the following standard pages: 
+
+*	Cover Page
+*	Table of Contents
+*	List of Amendments made on the previous version
+*	Circulation Details.
+
+### 2.2.3	Cover Page of a Document 
+
+The cover page should carry the following information, arranged in the order listed: 
+*	Document Name
+*	Version No. 
+*	Date of Release (the date format is ‘dd-month-yyyy’)
+*	Copy No.
+*	Company name in full
+*	Name of the City. 
+
+### 2.2.4	Table of Contents
+
+A document, (items like letter, circular or minutes of meeting are not considered here as documents) must have a 'Table of Contents'. The standards to be followed for that are stated as follows:
+
+The Table of Contents (TOC) should be generated automatically. A TOC should observe the following:
+
+*	Page numbers must be right aligned
+*	Only 3 levels should be shown, which are Heading 1, Heading 2, Heading 3, and Subtitle as illustrated in this document
+*	It should be printed on a separate page with the list of Appendices at the bottom.
+
+The Font Style, Font Type, and Font Size that should be used while automatically generating \ the TOC is given in Section 2.2.10 of this document
+
+### 2.2.5	Circulation Details of Process and Project Documents
+
+When documents are issued to a controlled copy holder, copy numbers should be marked in the document, and copy numbers and details of location of the copy, should be mentioned in ‘Circulation Details’, of every document.
+
+### 2.2.6	Bullets and Numbering
+Use Bullets and numbers, as much as possible. It increases the readability. While assigning the Bullets and numbers, following care should be taken:
+
+* If you use a particular bullet symbol, use it consistently for all documents in the project. If you use one symbol as sub-bullet, then use the same symbol at all the places.
+
+* The second line of the bulleted items should be aligned with first line.
+
+* Use a full stop (‘.’) at the end of the last sentence.
+
+## 2.3	Standards for Proposal
+### 2.3.1	Page Set up for a Proposal
+
+Page setup for a Proposal must be the following:
+*	‘Unit of measurement ‘ for margins as ‘inch’
+*	‘Top:’ margins as 1.5 inch
+*	‘Bottom:’ margins as 1.1 inches
+*	‘Left:’ margins as 1.1 inches
+*	‘Right:’ margins as 1.1 inches
+*	‘Header’ as 0.4 inches
+*	‘Footer’ as 0.9 inches
+*	‘Paper size:’ as ‘A4’
+
+### 2.3.2	Codification Scheme for Proposal Identification Number
+
+For all Proposals that are prepared by Insync, the following codification scheme for proposal identification number will be used.
+(../assets/images/Codification Scheme for Proposal ID.png)
