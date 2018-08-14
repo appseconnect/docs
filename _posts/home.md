@@ -128,6 +128,10 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
 
 1. Click on the URL (Insert URL & Link it) and this will take you the login page of  APPSeCONNECT Portal.
 
+<figure>
+  <img src="{{ '/assets/images/Customer_Login.png' | absolute_url }}" alt="fork Minimal Mistakes">
+</figure>
+
 2. The login page has a username and password field. Enter the details there
 
 3. Login with your  valid email Id and password. Click on Sign In button
