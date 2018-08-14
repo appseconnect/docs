@@ -116,4 +116,5 @@ Page setup for a Proposal must be the following:
 ### 2.3.2	Codification Scheme for Proposal Identification Number
 
 For all Proposals that are prepared by Insync, the following codification scheme for proposal identification number will be used.
-(../assets/images/Codification Scheme for Proposal ID.png)
+![Login](../assets/images/Codification Scheme for Proposal ID.png)
+
