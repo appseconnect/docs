@@ -1,9 +1,3 @@
-A.	Document Release History
-
-B.	Circulation Details
-
-C.	List of Amendments made on the previous version no.:  CQ 2.0
-
 ---
 title: "Documentation Standard"
 toc: true
