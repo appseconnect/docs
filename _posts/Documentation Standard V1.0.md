@@ -130,4 +130,8 @@ The Header of a proposal shall contain the following information:
 * Name of the client company and location in the center and
 * Company Logo on the right.
 
+The following header may be used throughout the Proposal Document
+
+Proposal for <Subject> <Prospect Name, Country> <Company Logo>
+
 
