@@ -4,6 +4,13 @@ B.	Circulation Details
 
 C.	List of Amendments made on the previous version no.:  CQ 2.0
 
+---
+title: "Documentation Standard"
+toc: true
+tag: All Users
+category: "Working with Organization Documents"
+---
+
 # 1.0 Introduction
 
 ## 1.1	Purpose
@@ -132,6 +139,60 @@ The Header of a proposal shall contain the following information:
 
 The following header may be used throughout the Proposal Document
 
-Proposal for <Subject> <Prospect Name, Country> <Company Logo>
+Proposal for (Subject) (Prospect Name, Country) (Company Logo)
+
+### 2.3.5	Footer of a Proposal
+The Footer of a proposal shall contain the following information:
+
+*	Proposal Identification Number on the left
+*	Version Number in the center
+*	Page Number on the right.
+
+The following footer may be used throughout the Proposal Document.
+
+(Customer)/Project>/D/PRP  (Version No. x.y) (Page x of y)    
+
+**N.B: Where ’x’ is the number of the page and ‘y’ is the total count of all the pages of the document.**
+
+### 2.3.6	Standard Pages in a Proposal
+All Proposals should incorporate the following standard pages in this order:
+*	Cover Page
+*	Table of Contents
+*	Executive Summary.
+
+### 2.3.7	Cover Page of a Proposal
+The cover page of the Proposal should carry the following information, arranged in the order listed: 
+*  Subject of Proposal
+*  Name of Client Organization for whom the Proposal is being prepared
+*  Location of Client Organization.
+
+### 2.3.8	Table of Contents
+The Table of Contents (TOC) should be generated automatically. A TOC should observe the following:
+ * Page numbers must be right aligned
+ *  Only 3 levels should be shown, which are Heading 1, Heading 2, Heading 3, and Subtitle as illustrated in this document
+ * It should be printed on a separate page.
+
+
+The Font Style, Font Type, and Font Size that should be used while automatically generating the TOC.
+
+### 2.3.9	Executive Summary
+The Executive Summary of the Proposal shall be created using appropriate Styles
+
+### 2.3.10	Font Style, Font Type and Font Size
+
+These should be uniform throughout the document.
+
+### 2.3.11	Heading Name and Numbering
+‘Heading Name and Numbering’ will be guided by the following rules:
+* Use Numbering system (like 1, 1.1, 1.1.1 etc.) in the Heading Numbering
+* Use Font Style, Type and Size of Heading should be uniform. There must be one blank line after each heading
+* Use Heading 1 for main section, Heading 2 for sub section and Heading 3 for further sub sections.
+
+### 2.3.12	Bullets and Numbering
+
+Use Bullets and numbers, as much as possible. It increases the readability. While assigning the Bullets and numbers, following care should be taken:
+* If you use a particular bullet symbol, use it consistently for all documents in the project. If you use one symbol as sub-bullet, then use the same symbol at all the places
+* The second line of the bulleted items should be aligned with first line
+* Use a full stop (‘.’) at the end of the last sentence. 
 
 
