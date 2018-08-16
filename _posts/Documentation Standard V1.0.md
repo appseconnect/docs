@@ -116,5 +116,18 @@ Page setup for a Proposal must be the following:
 ### 2.3.2	Codification Scheme for Proposal Identification Number
 
 For all Proposals that are prepared by Insync, the following codification scheme for proposal identification number will be used.
+
 ![Login](../assets/images/Codification Scheme for Proposal ID.png)
+
+### 2.3.3	Version Number of a Proposal
+All pages of a proposal should carry a version number. The Version No. will be x.y where the numbering starts at 1.0.  In the above definition, x and y are serial numbers to be used for version numbering.
+The version number will have the number 1.0, when the proposal is prepared for the first time.
+
+### 2.3.4	Header of a Proposal
+The Header of a proposal shall contain the following information:
+
+* Subject of the Proposal on the left
+* Name of the client company and location in the center and
+* Company Logo on the right.
+
 
