@@ -11,7 +11,7 @@ category: "Working with Organization Documents"
 
 This documentation standard describes the format for the preparation of various types of documents mentioned herein under scope so that every document produced by any person in the organization is uniformly presentable, complete and consistent across the organization. 
 
-## 1.2 Why do I need a Document Standard?
+## 1.2 Why do I need a Documention Standard?
 
 The “documentation standard “is a reference document or a guideline that includes rules and suggestions for writing style and document presentation. Style guides often specify which option to use when several options exist, and they include items that are specific to the company or industry and items for which a “standard” or example does not exist through commercial style guides. 
 
@@ -132,7 +132,7 @@ Page setup for a Proposal must be the following:
 
 For all Proposals that are prepared by Insync, the following codification scheme for proposal identification number will be used.
 
-![Login](../assets/images/Codification Scheme for Proposal ID.png)
+(../assets/images/Codification Scheme for Proposal ID.png)
 
 ### 2.3.3	Version Number of a Proposal
 All pages of a proposal should carry a version number. The Version No. will be x.y where the numbering starts at 1.0.  In the above definition, x and y are serial numbers to be used for version numbering.
