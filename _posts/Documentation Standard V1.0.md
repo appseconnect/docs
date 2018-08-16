@@ -132,7 +132,7 @@ Page setup for a Proposal must be the following:
 
 For all Proposals that are prepared by Insync, the following codification scheme for proposal identification number will be used.
 
-(../assets/images/Codification Scheme for Proposal ID.png)
+![Codification Scheme for Proposal ID](../assets/images/Codification Scheme for Proposal ID.png)
 
 ### 2.3.3	Version Number of a Proposal
 All pages of a proposal should carry a version number. The Version No. will be x.y where the numbering starts at 1.0.  In the above definition, x and y are serial numbers to be used for version numbering.
