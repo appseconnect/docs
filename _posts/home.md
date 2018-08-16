@@ -142,4 +142,5 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
    after logging out from the account.
 
 6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.
+![Login](../assets/images/Forgot Login Password.png)
 
