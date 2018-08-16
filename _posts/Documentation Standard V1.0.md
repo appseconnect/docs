@@ -86,7 +86,7 @@ The Table of Contents (TOC) should be generated automatically. A TOC should obse
 *	Only 3 levels should be shown, which are Heading 1, Heading 2, Heading 3, and Subtitle as illustrated in this document
 *	It should be printed on a separate page with the list of Appendices at the bottom.
 
-The Font Style, Font Type, and Font Size that should be used while automatically generating \ the TOC is given in Section 2.2.10 of this document
+The Font Style, Font Type, and Font Size that should be used while automatically generating from the TOC
 
 ### 2.2.5	Circulation Details of Process and Project Documents
 
@@ -188,5 +188,61 @@ Use Bullets and numbers, as much as possible. It increases the readability. Whil
 * If you use a particular bullet symbol, use it consistently for all documents in the project. If you use one symbol as sub-bullet, then use the same symbol at all the places
 * The second line of the bulleted items should be aligned with first line
 * Use a full stop (‘.’) at the end of the last sentence. 
+
+## 2.4	Standards for Customer related documents
+### 2.4.1	Document Set up
+* Page Size: Custom
+*	Dimensions: 6.6 x 8.35 inches
+*	Orientation: Tall
+*	Left Margin: 0.5 inches
+*	Right Margin: 0.5 inches
+*	Top Margin: 1 inches
+*	Bottom Margin: 0.7 inches
+*	Resolution: 4800 dpi
+
+### 2.4.2	Cover Page
+ This page will include the following detail in the given sequence:
+
+ #### 2.4.2.1	Product Name
+ The product logo will be used here. 
+* Char: Calibri Bold + size 18
+* Paragraph: Auto leading + Centered + Space before: 1 + Space after: 0.25
+* Tab: None
+* Hyphenation: None
+* Next style: Module Name
+
+#### 2.4.2.2	Module Name
+
+The name of the module is to be specified in this style.
+* Char: Calibri + size 36
+* Paragraph: Auto leading + Track: Normal + Centered + Space after: 1 
+* Tab: None
+* Hyphenation: None
+* Next style: Manual Type
+
+### 2.4.2.3	Manual Type
+
+The document type is to be specified in this style. The document type includes, User Manual, System Admin guide etc.
+* Char: Calibri + underline + all caps + size 60
+* Paragraph: Auto leading + Centered
+* Tab: None
+* Hyphenation: None
+
+### 2.4.3	Master Page 
+#### 2.4.3.1	Header
+
+Name of the chapter to be written as part of the header will be in this style. This section is applicable for all pages of the document.
+The Background image:
+* A background image may be put here if so desired. 
+* Char: Calibri + Small Caps + size 14 +Bold
+* Paragraph: Track: none + Keep together
+* Tab: None
+* Hyphenation: None
+* Next style: None 
+* Background: Image + text
+
+
+
+
 
 
