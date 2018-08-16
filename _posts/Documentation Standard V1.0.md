@@ -11,9 +11,23 @@ category: "Working with Organization Documents"
 
 This documentation standard describes the format for the preparation of various types of documents mentioned herein under scope so that every document produced by any person in the organization is uniformly presentable, complete and consistent across the organization. 
 
-## 1.2	Scope
+## 1.2 Why do I need a Document Standard?
+
+The “documentation standard “is a reference document or a guideline that includes rules and suggestions for writing style and document presentation. Style guides often specify which option to use when several options exist, and they include items that are specific to the company or industry and items for which a “standard” or example does not exist through commercial style guides. 
+
+The specific content in the style guide is not usually a matter of “correct” or “incorrect” grammar or style, but rather the decisions you or your employer or client have made from among the many possibilities. More specifically, style guides can serve several purposes:
+
+* To ensure that documents conform to corporate image and policy, including legal requirements
+* To inform new writers and editors of existing style and presentation decisions and solutions
+* To define which style issues are negotiable and which are not
+* To improve consistency within and among documents, especially when more than one writer is involved or when a document will be translated
+* To remove the necessity to reinvent the wheel for every new project
+* To serve as part of the specifications for the deliverables, when writing for clients outside your company or when outsourcing writing projects
+
+
+## 1.3	Scope
 This standard is applicable to the following four types of documents of Insync :
-* Process and Project Documents
+* Process and Product Documents
 * Proposal
 * All Customer-related documents and
 * Training Material.
@@ -240,6 +254,73 @@ The Background image:
 * Hyphenation: None
 * Next style: None 
 * Background: Image + text
+
+#### 2.4.3.2	Footer
+* Char: Calibri + size 10
+* Paragraph: Auto leading + Flush left 
+* Tab: None
+* Hyphenation: None
+* Next style: None
+
+### 2.4.4	Content Page
+#### 2.4.4.1	TOC Title
+* Char: Calibri + Underline + size 16
+* Paragraph: Auto leading + Centered + Space after 0.5
+* Tab: None
+* Hyphenation: None
+* Next style: TOC Chapter name
+
+#### 2.4.4.2	TOC Chapter Name
+* Char: Calibri + Bold + size 14
+* Paragraph: Auto leading
+* Tab: None
+* Hyphenation: None
+* Other: Next style: None
+
+#### 2.4.4.3	TOC Heading
+* Char: Calibri + Bold + size 12
+* Paragraph: Auto leading + Space after 0.5 + Indent 0.50 inches
+* Tab: None
+* Hyphenation: None
+* Next style: TOC Chapter name
+
+#### 2.4.4.4	TOC Subheads
+* Char: Calibri + Bold + size 12
+* Paragraph: Auto leading + Flush left + Left Indent 0.75
+* Tab: None
+* Hyphenation: None
+* Next style: None
+
+### 2.4.5	General Page
+#### 2.4.5.1	Chapter Heading
+* Char: Calibri + size 22
+* Paragraph: Auto leading + left + Indent 0.5 inches + rule below maroon color + width of 
+* Tab: None
+* Hyphenation: None
+* Next style: None
+#### 2.4.5.2	Heading
+* Char: Calibri + Bold + size 18
+* Paragraph: Auto leading + Flush Left + Left indent 0.5
+* Tab: None
+* Hyphenation: None
+* Next style: None
+
+#### 2.4.5.3	Subhead
+* Char: Calibri + Bold + size 14
+* Paragraph: Auto leading + Flush left + Left Indent 0.5
+* Tab: None
+* Hyphenation: None
+* Next style: None
+
+#### 2.4.5.4	Note Icon (same style is applicable for Tips and Caution icons)
+* Char: Calibri + size 10 + Subscript
+* Paragraph: Leading: 1 + Shift down: 10 + Track: V-Tight + Flush left + Left Indent 0.25 + Space before: 0.2 + Space after: 0
+* Tab: None
+* Hyphenation: None
+* Other: Next style: Note 
+
+
+
 
 
 
