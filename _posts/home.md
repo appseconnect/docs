@@ -63,7 +63,7 @@ A Sneak-Peak to APPSeCONNECT Feature
 * Business Rule Engine
 * Secure Integration
 
-# App se Connect Architecture & Usability
+# APPSeCONNECT Architecture & Usability
 
 APPSeCONNECT is a generic platform which enables users to deploy, run, and succeed in their integration projects. Using APPSeCONNECT, the users can run their integration processes completely in the cloud without the need to procure any software or the set-up required to operate it. 
 
@@ -124,7 +124,7 @@ Free Trial (Where we will only showcase the integration on vanilla systems)
  1. The process of getting paid request trial is similar to free request trial.
 
  2. Since it is a paid request where we will charge a nominal implementation cost but will implement integration based on Visitors/Customers customization.
- 
+
 
 # Customer Registration & logging Information  
 
