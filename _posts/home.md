@@ -93,11 +93,13 @@ APPSeCONNECT comprises of mainly two components.
 # Release Notes/Release Information
 
 
-# Trial Version Request
+# Trial Version Request - APPSeCONNECT
 
-## Visitor's Free Request
+## Visitor's Free Request Trial
 
 You can request a free trial version of APPSeCONNECT by visting the portal of APPSeCONNECT  and clicking on https://www.appseconnect.com/.
+
+Free Trial (Where we will only showcase the integration on vanilla systems)
 
 1. The Landing page of the APPSeCONNECT Portal gives the option to request for a **FREE TRIAL**.
 
@@ -105,8 +107,24 @@ You can request a free trial version of APPSeCONNECT by visting the portal of AP
 
  ![FreeTrial](../assets/images/FreeTrial.png)
 
-3. A vistors request form for availing trial version appears 
+3. A vistors request form for availing trial version opens up as    shown below. Here the vistor can put their requirement details.
+
+![Trial_Form](../assets/images/Trial_Form.png)
+
+4. The form requires the visitors to fill the basic contact details along with the application(s) selection criteria to choose from and the time required to buy the services.
+
+5. The visitors will complete of form Fill up and click on **Start Free Trial** button given at the end of the form.
+
+6. An automatic email will be send to both the visitors and APPSeCONNECT Consultant regarding the request.
+
+7. Our Consultant will connect back to the vistors and help them with their request for integration within our trial period of 30 days.
+
 ## Visitors Paid Request
+ 
+ 1. The process of getting paid request trial is similar to free request trial.
+
+ 2. Since it is a paid request where we will charge a nominal implementation cost but will implement integration based on Visitors/Customers customization.
+ 
 
 # Customer Registration & logging Information  
 
@@ -153,5 +171,6 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
    after logging out from the account.
 
 6. Click the "Forgot Password" option to reset the password. A mail will be sent to your (user) account. You can reset the password by clicking on the link provided in the mail and set up a new password.
+
 ![Forgot Login Password](../assets/images/Forgot Login Password.png)
 
