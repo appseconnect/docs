@@ -105,6 +105,7 @@ You can request a free trial version of APPSeCONNECT by visting the portal of AP
 
  ![FreeTrial](../assets/images/FreeTrial.png)
 
+3. A vistors request form for availing trial version appears 
 ## Visitors Paid Request
 
 # Customer Registration & logging Information  
@@ -151,7 +152,6 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
 5. Select the "Remember Me" checkbox in the login page, If you wish the system to remember your login email id
    after logging out from the account.
 
-6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.
-
-![Login](../assets/images/Forgot Login Password.png)
+6. Click the "Forgot Password" option to reset the password. A mail will be sent to your (user) account. You can reset the password by clicking on the link provided in the mail and set up a new password.
+![Forgot Login Password](../assets/images/Forgot Login Password.png)
 
