@@ -86,16 +86,26 @@ APPSeCONNECT comprises of mainly two components.
 * Cloud Implementation
 * Hybrid Implementation
 
-# Platform - Permissions 
+# APPSeCONNECT Platform - Functional Menus
+
+
 
 # Release Notes/Release Information
 
 
 # Trial Version Request
 
-## Visitor's Request
+## Visitor's Free Request
 
-## Partner's Request
+You can request a free trial version of APPSeCONNECT by visting the portal of APPSeCONNECT  and clicking on https://www.appseconnect.com/.
+
+1. The Landing page of the APPSeCONNECT Portal gives the option to request for a **FREE TRIAL**.
+
+2. Click the option Free Trial and the following screen appears
+
+ ![FreeTrial](../assets/images/FreeTrial.png)
+
+## Visitors Paid Request
 
 # Customer Registration & logging Information  
 
@@ -142,5 +152,6 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
    after logging out from the account.
 
 6. Click the "Forget Password" option to reset the password. A mail will be sent to your (user) account. You       can reset the password by clicking on the link provided in the mail and set up a new password.
+
 ![Login](../assets/images/Forgot Login Password.png)
 
