@@ -88,6 +88,14 @@ APPSeCONNECT comprises of mainly two components.
 
 # APPSeCONNECT Platform - Functional Menus
 
+The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The APPSeCONNECT portal is accessible at https://portal.appseconnect.com/.
+
+Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.
+
+The set of functional menus are easy to navigate and ease the method of imtegration via our Portal.
+The view of functional menu(s) is given below:
+![FunctionalMenus](../assets/images/FunctionalMenus.png)
+
 
 
 # Release Notes/Release Information
@@ -136,7 +144,7 @@ First, you must sign up for an account with APPSeCONNECT Community.
 
 1. The Implementation Team will do user activation. Click [User Activation](https://appseconnect.freshdesk.com/a/solutions/articles/4000073318) to view the same.
 
-2. You will receive an activation mail in the provided email id with UserId & Password (one time password)         details. 
+2. You will receive an activation mail in the provided email id with UserId & Password (one time password) details. 
 
 3. Click on the link and the user account gets activated.
 
