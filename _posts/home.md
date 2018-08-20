@@ -94,6 +94,7 @@ Once you have logged in, some elements of the APPSeCONNECT portal are common to 
 
 The set of functional menus are easy to navigate and ease the method of imtegration via our Portal.
 The view of functional menu(s) is given below:
+
 ![FunctionalMenus](../assets/images/FunctionalMenus.png)
 
 
