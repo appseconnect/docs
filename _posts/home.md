@@ -117,6 +117,8 @@ Dashboard is the default page which you can view after logging in to the APPSeCO
 
 Dashboard View is given below:
 
+![Dashboard](../assets/images/Dashboard.png)
+
 
 Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details (Link to dashboard detail page).
 
@@ -146,17 +148,12 @@ Here you can - Choose App & also Add New App.
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 
-
 Some of the predefined categories are : 
 
 1. ERP 
-
 2. ECommerce
-
 3. CRM
-
 4. Accounting, etc. 
-
 
 
 # Release Notes/Release Information
