@@ -150,7 +150,7 @@ Some of the predefined categories are :
 
 One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - **Choose App & Add New App**.
 
-## Process of Using - Choose App 
+## Process of Choosing App 
 
 1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
 
@@ -162,11 +162,36 @@ One has to search for the organization in the search box and the organization wi
 
 ![AppView](../assets/images/AppView.png)
 
-4. Each app has four different component attached to it - Schema, Adapater, Functions & Delete.
+4. Each app has four different component attached to it - **Schema, Adapater, Functions & Delete**.
 
 ![AppComponents](../assets/images/AppComponents.png)
 
-Schema- 
+APPSeCONNECT Schema/Entity- An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
+
+* Data can be stored about such entities.
+
+* Each schema has its own characteristics or attributes. For example, ‘customer id’, ‘address’, ‘phone number’ are attributes to the ‘customer’ entity. Each customer record in the database serves as an entity item.
+
+* The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.
+
+* If a customer is an entity, then the complete set of the various fields associated with it is called its schema.
+
+Schema Image is given below:
+
+![Schema](../assets/images/Schema.png)
+
+
+
+
+
+
+
+
+
+
+
+
+- 
 Adapter
 Functions
 Delete
