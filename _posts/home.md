@@ -166,7 +166,7 @@ One has to search for the organization in the search box and the organization wi
 
 ![AppComponents](../assets/images/AppComponents.png)
 
-APPSeCONNECT Schema/Entity- An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
+**APPSeCONNECT Schema/Entity**- An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
 
 * Data can be stored about such entities.
 
@@ -180,29 +180,19 @@ Schema Image is given below:
 
 ![Schema](../assets/images/Schema.png)
 
-
-
-
-
-
-
-
-
-
-
-
-- 
 Adapter
 Functions
 Delete
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 
-## Process of Using - Add New App 
+## Process of Adding New App 
 
+** LINK WILL BE GIVEN** 
 
 # Release Notes/Release Information
 
+** LINK WILL BE GIVEN**
 
 # Trial Version Request - APPSeCONNECT
 
