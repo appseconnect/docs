@@ -162,6 +162,14 @@ One has to search for the organization in the search box and the organization wi
 
 ![AppView](../assets/images/AppView.png)
 
+4. Each app has four different component attached to it - Schema, Adapater, Functions & Delete.
+
+![AppComponents](../assets/images/AppComponents.png)
+
+Schema- 
+Adapter
+Functions
+Delete
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 
