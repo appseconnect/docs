@@ -131,20 +131,27 @@ You can see and track all the activities in form of recent feeds directly throug
 2. click on **Feeds** menu.
 3. Here you can only see your activities in your logged in profile.
 4. Feeds Page has search criteria, so that you can filter the feed using topic keyoword filters like "touchpoint", "masterdata" etc.
-4. This is view only mrenu.
+4. This is view only menu.
 
 **ProTip:** If you are a superadmin, any changes in the organizations done by you will be reflected in your feed section and also in the those organization feed section where changes has been made. 
 
 # C. App
 
+APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. Any App once added is assigned to a particular category. 
 
+The organization-specific app screen page displays all the apps that are present in a specific organization. 
 
-There are a large number of Apps that are supported in APPSeCONNECT. If you still cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. Any App once added is assigned to a particular category. 
+1. One has to search for the organization in the search box and the organization will open up.
 
-The organization-specific app screen page displays all the apps that are present in a specific organization.
-One has to search for the organization in the search box and the organization will open up.
+2. Go to the App menu. Here you will get two option - Choose App & Add New App.
 
-Here you can - Choose App & also Add New App.
+3. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
+
+4. A dialog box appears where you will choose the application and version number from the drop down list.
+
+![ChooseApp_Dialogbox1](../assets/images/ChooseApp_Dialogbox1.png)
+
+5. 
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 
