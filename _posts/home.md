@@ -101,7 +101,7 @@ Let us walkthrough the Functional Menu for understanding the usage and need of e
 
 # A. Accessing Organization Dashboard 
 
-Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the basic information- 
+Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information- 
 
 1. Basic organization information.
 
@@ -134,6 +134,29 @@ You can see and track all the activities in form of recent feeds directly throug
 **ProTip:** If you are a superadmin, any changes in the organizations done by you will be reflected in your feed section and also in the those organization feed section where changes has been made. 
 
 # C. App
+
+
+
+There are a large number of Apps that are supported in APPSeCONNECT. If you still cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. Any App once added is assigned to a particular category. 
+
+The organization-specific app screen page displays all the apps that are present in a specific organization.
+One has to search for the organization in the search box and the organization will open up.
+
+Here you can - Choose App & also Add New App.
+
+**ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
+
+
+Some of the predefined categories are : 
+
+1. ERP 
+
+2. ECommerce
+
+3. CRM
+
+4. Accounting, etc. 
+
 
 
 # Release Notes/Release Information
