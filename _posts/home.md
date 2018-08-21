@@ -141,26 +141,31 @@ APPSeCONNECT support large number of apps and you can find and choose the app fr
 
 The organization-specific app screen page displays all the apps that are present in a specific organization. 
 
-1. One has to search for the organization in the search box and the organization will open up.
-
-2. Go to the App menu. Here you will get two option - Choose App & Add New App.
-
-3. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
-
-4. A dialog box appears where you will choose the application and version number from the drop down list.
-
-![ChooseApp_Dialogbox1](../assets/images/ChooseApp_Dialogbox1.png)
-
-5. 
-
-**ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
-
 Some of the predefined categories are : 
 
 1. ERP 
 2. ECommerce
 3. CRM
 4. Accounting, etc. 
+
+One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - **Choose App & Add New App**.
+
+## Process of Using - Choose App 
+
+1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
+
+2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
+
+![ChooseApp_Dialogbox1](../assets/images/ChooseApp_Dialogbox1.png)
+
+3. The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
+
+![AppView](../assets/images/AppView.png)
+
+
+**ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
+
+## Process of Using - Add New App 
 
 
 # Release Notes/Release Information
