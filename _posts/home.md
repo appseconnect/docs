@@ -97,6 +97,43 @@ The view of functional menu(s) is given below:
 
 ![FunctionalMenus](../assets/images/FunctionalMenus.png)
 
+Let us walkthrough the Functional Menu for understanding the usage and need of each menu. 
+
+# A. Accessing Organization Dashboard 
+
+Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the basic information- 
+
+1. Basic organization information.
+
+2. Subscription Detail of the user 
+
+3. Sync Errors of last 24 hours showing success sync & failure sync information
+
+3. Support tickets status - Pending/Open tickets.
+
+4. List of today's to-do for that user who has logged in.
+
+5. Shortcut links for variously related menus.
+
+Dashboard View is given below:
+
+
+Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details (Link to dashboard detail page).
+
+
+# B. Feeds
+
+You can see and track all the activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. Traces of past activities of the user can be been viewed in the feed section.
+
+1. Choose & Click on a Project.
+2. click on **Feeds** menu.
+3. Here you can only see your activities in your logged in profile.
+4. Feeds Page has search criteria, so that you can filter the feed using topic keyoword filters like "touchpoint", "masterdata" etc.
+4. This is view only mrenu.
+
+**ProTip:** If you are a superadmin, any changes in the organizations done by you will be reflected in your feed section and also in the those organization feed section where changes has been made. 
+
+# C. App
 
 
 # Release Notes/Release Information
