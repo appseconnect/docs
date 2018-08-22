@@ -148,7 +148,7 @@ Some of the predefined categories are :
 
 One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - **Choose App & Add New App**.
 
-## Process of Choosing App 
+## (a) Process of Choosing App 
 
 1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
 
@@ -201,9 +201,9 @@ Extensions, on the other hand, are the applications which add an extra feature i
 
 The APPSeCONNECT expression methods are special transformation block used during **mapping** (link). The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
 
-** Generic
-** Native
-** Cloud App Resource
+* Generic
+* Native
+* Cloud App Resource
 
 
 **Delete**
@@ -212,13 +212,12 @@ This button enables to delete selected app from the list.
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 
-
-
-## Configuring App
+## (B) Configuring App
 **LINK WILL BE GIVEN** 
 
 # D. Connections
 
+The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.
 
 
 
