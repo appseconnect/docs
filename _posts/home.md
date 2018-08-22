@@ -100,7 +100,6 @@ The view of functional menu(s) is given below:
 Let us walkthrough the Functional Menu for understanding the usage and need of each menu. 
 
 # A. Accessing Organization Dashboard 
-
 Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information- 
 
 1. Basic organization information.
@@ -122,7 +121,6 @@ Dashboard View is given below:
 
 Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details (Link to dashboard detail page).
 
-
 # B. Feeds
 
 You can see and track all the activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. Traces of past activities of the user can be been viewed in the feed section.
@@ -135,7 +133,7 @@ You can see and track all the activities in form of recent feeds directly throug
 
 **ProTip:** If you are a superadmin, any changes in the organizations done by you will be reflected in your feed section and also in the those organization feed section where changes has been made. 
 
-# C. App
+# C. Choosing App
 
 APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. Any App once added is assigned to a particular category. 
 
@@ -162,7 +160,7 @@ One has to search for the organization in the search box and the organization wi
 
 ![AppView](../assets/images/AppView.png)
 
-4. Each app has four different component attached to it - **Schema, Adapater, Functions & Delete**.
+4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
 
 ![AppComponents](../assets/images/AppComponents.png)
 
@@ -180,19 +178,55 @@ Schema Image is given below:
 
 ![Schema](../assets/images/Schema.png)
 
-Adapter
-Functions
-Delete
+**Adapter**
+Adapters helps in integration with other applications easy. Adapter represents an interface between an APP and APPSeCONNECT. An adapter is a component which connects your app with APPSeCONNECT. 
+
+There are few responsibilities of an adapter which are defined as under: 
+
+* Create a credentials view which allows connecting to the respective APP where you want to connect.
+
+* Create Push and Pull method inside the adapter which can send and receive data to and from the application.
+
+* Add additional business behavior with respect to the corresponding app.
+
+The Adapter is loaded dynamically by the **Agent** (create link) and calls some specific methods using a fixed contract defined as an interface. 
+
+**LINK TO ADAPTER DEVELOPMENT**
+
+**Extension**
+
+Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.
+
+**Functions**
+
+The APPSeCONNECT expression methods are special transformation block used during **mapping** (link). The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
+
+** Generic
+** Native
+** Cloud App Resource
+
+
+**Delete**
+
+This button enables to delete selected app from the list.
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 
-## Process of Adding New App 
 
-** LINK WILL BE GIVEN** 
+
+## Configuring App
+**LINK WILL BE GIVEN** 
+
+# D. Connections
+
+
+
+
+
 
 # Release Notes/Release Information
 
-** LINK WILL BE GIVEN**
+**LINK WILL BE GIVEN**
 
 # Trial Version Request - APPSeCONNECT
 
@@ -225,7 +259,6 @@ Free Trial (Where we will only showcase the integration on vanilla systems)
  1. The process of getting paid request trial is similar to free request trial.
 
  2. Since it is a paid request where we will charge a nominal implementation cost but will implement integration based on Visitors/Customers customization.
-
 
 # Customer Registration & logging Information  
 
