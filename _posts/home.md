@@ -305,6 +305,6 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
 
 6. Click the "Forgot Password" option to reset the password. A mail will be sent to your (user) account. You can reset the password by clicking on the link provided in the mail and set up a new password.
 
-![ForgotLogin](../assets/images/ForgotLogin _Password.png)
+![ForgotLogin _Password](../assets/images/ForgotLogin _Password.png)
 
 
