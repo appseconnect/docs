@@ -5,7 +5,7 @@ tag: developers
 category: "AppseConnect & IPaaS"
 ---
 
-APPSeCONNECT is provider of both bybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
+APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
 
 APPSeCONNECT is a platform that support any third party independent software vendor to work and develop connectors. 
 APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
@@ -130,12 +130,12 @@ Choose any of the dashboard panel and it will redirect you to the related functi
 You can see and track all the activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. Traces of past activities of the user can be been viewed in the feed section.
 
 1. Choose & Click on a Project.
-2. click on **Feeds** menu.
+2. Click on **Feeds** menu.
 3. Here you can only see your activities in your logged in profile.
 4. Feeds Page has search criteria, so that you can filter the feed using topic keyoword filters like "touchpoint", "masterdata" etc.
 4. This is view only menu.
 
-**ProTip:** If you are a superadmin, any changes in the organizations done by you will be reflected in your feed section and also in the those organization feed section where changes has been made. 
+**ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
 
 # C. Choosing App
 
