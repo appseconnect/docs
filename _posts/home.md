@@ -2,18 +2,21 @@
 title: "Overview of AppseConnect"
 toc: true
 tag: developers
-category: "AppseConnect & IPAAS"
+category: "AppseConnect & IPaaS"
 ---
 
-APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud'  while all the credentials remain intact in the system's own premises. 
-APPSeCONNECT is developed as a platform where an ISV partner can also work together with APPSeCONNECT and develop the cloud configurations for the Apps which it does not support and can work seamlessly together with Apps which it does. APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
+APPSeCONNECT is provider of both bybrid and cloud hosted applications which can connect to any two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
 
-iness function perspective. The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components.
+APPSeCONNECT is a platform that support any third party independent software vendor to work and develop connectors. 
+APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
 
-# Introduction to IPAAS
+The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components.
 
-Integration Platform as a Service (IPPAS) is a group of cloud services which enables to execute and control the integration flows via on premises and cloud-based processes, applications and data within individual or across multiple organizations.
-In IPPAS the third-party provider provides infrastructure and middleware to manage the data integration on premises and cloud-based processes.
+# Introduction to IPaaS
+
+Integration Platform as a Service (IPaaS) is a group of cloud services which enables to execute and control the integration flows via on premises and cloud-based processes, applications and data within individual or across multiple organizations.
+In IPaaS the third-party provider provides infrastructure and middleware to manage the data integration on premises and cloud-based processes.
+
 Generally, data integration happens between:
 
 Cloud to Cloud Applications: For e.g Salesforce and Shopify
@@ -42,9 +45,9 @@ APPSeCONNECT helps enterprises seamlessly connect applications both on-premises 
 
 # APPSeCONNECT as iPaaS
 
-APPSeCONNECT is a smart and robust integration platform (IPAAS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
+APPSeCONNECT is a smart and robust integration platform (IPaaS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
 
-APPSeCONNECT as IPAAS - Save Time and Effort, Focus on Profitability & Boost Productivity
+APPSeCONNECT as IPaaS - Save Time and Effort, Focus on Profitability & Boost Productivity
 
 ## Save Time and Effort
 Seamlessly connect business-critical applications and save huge amount of time and effort by automating business processes
