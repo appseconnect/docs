@@ -5,7 +5,7 @@ tag: developers
 category: "AppseConnect & IPaaS"
 ---
 
-APPSeCONNECT is provider of both bybrid and cloud hosted applications which can connect to any two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
+APPSeCONNECT is provider of both bybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
 
 APPSeCONNECT is a platform that support any third party independent software vendor to work and develop connectors. 
 APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
@@ -20,6 +20,7 @@ In IPaaS the third-party provider provides infrastructure and middleware to mana
 Generally, data integration happens between:
 
 Cloud to Cloud Applications: For e.g Salesforce and Shopify
+
 Cloud to On-Premise / On-Premise to On-Premise Applications (Hybrid): For e.g Salesforce and SAP Business One
 
 # Hybrid Integration Model
