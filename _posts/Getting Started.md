@@ -105,3 +105,4 @@ Pre-requisites:
 ![Connection_Touchpoint](../assets/images/Connection_Touchpoint.png)
 
 
+**Configuring Apps**
