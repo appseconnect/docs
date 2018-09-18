@@ -11,23 +11,20 @@ Let us dive in details about every section of customer profile information.
 My Profile 
 
 Log in to the APPSeCONNECT portal with valid credentials.
-Click on your name, then you can see My Profile tab in it. There you will be able to edit your profile details.
+Click on your name, then you can view My Profile tab. 
 
 ![MyProfile](../assets/images/MyProfile.png)
 
+Here you will be able to edit your profile details. Here You will see two tabs - Overview & Change Details page.
 
-You will see two tabs - Overview & Change Details page.
-
-In this page, under your name, there will be brief details of yours.
-
-Under your name, you will see your registered e-mail, under which your role will be written. To know more about Role Management, click here.
+In this page, you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address. To know more about Role Management, click here.
 
 
-In the Summary section, the count of projects you handle/under organization is shown. You can also see your expired projects counts and trials according to your Role and access level, you can see the companies.
-Assigned Companies will be shown on User Role basis.
-In My Company section, only your company details will be there.
+In the Summary section, the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
 
-**IMAGE**
+Assigned Companies will be shown on User Role basis. In My Company section, only your company details will be there.
+
+![AssignedCompanies](../assets/images/AssignedCompanies.png)
 
 My Feeds section is for seeing your recent activities.
 
