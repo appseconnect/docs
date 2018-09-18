@@ -33,7 +33,7 @@ By clicking Projects, Workflows, you will be redirected to that particular pages
 If you click on Change Details tab, you can edit all details.
 
 
-**IMAGE**
+![ChangeDetails](../assets/images/ChangeDetails.png)
 
 In the Personal Info tab, you can edit your name, mobile number.
 
