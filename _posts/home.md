@@ -2,7 +2,7 @@
 title: "Overview of AppseConnect"
 toc: true
 tag: developers
-category: "AppseConnect & IPaaS"
+category: "AppseConnect & iPaaS"
 ---
 
 APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
@@ -12,10 +12,10 @@ APPSeCONNECT installs an Agent on the system's own premises, which downloads all
 
 The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components.
 
-# Introduction to IPaaS
+# Introduction to iPaaS
 
-Integration Platform as a Service (IPaaS) is a group of cloud services which enables to execute and control the integration flows via on premises and cloud-based processes, applications and data within individual or across multiple organizations.
-In IPaaS the third-party provider provides infrastructure and middleware to manage the data integration on premises and cloud-based processes.
+Integration Platform as a Service (iPaaS) is a group of cloud services which enables to execute and control the integration flows via on premises and cloud-based processes, applications and data within individual or across multiple organizations.
+In iPaaS the third-party provider provides infrastructure and middleware to manage the data integration on premises and cloud-based processes.
 
 Generally, data integration happens between:
 
@@ -46,9 +46,9 @@ APPSeCONNECT helps enterprises seamlessly connect applications both on-premises 
 
 # APPSeCONNECT as iPaaS
 
-APPSeCONNECT is a smart and robust integration platform (IPaaS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
+APPSeCONNECT is a smart and robust integration platform (iPaaS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
 
-APPSeCONNECT as IPaaS - Save Time and Effort, Focus on Profitability & Boost Productivity
+APPSeCONNECT as iPaaS - Save Time and Effort, Focus on Profitability & Boost Productivity
 
 ## Save Time and Effort
 Seamlessly connect business-critical applications and save huge amount of time and effort by automating business processes
@@ -222,8 +222,6 @@ This button enables to delete selected app from the list.
 # D. Connections
 
 The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.
-
-
 
 
 
