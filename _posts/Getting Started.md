@@ -13,7 +13,7 @@ Let us dive in details about every section of customer profile information.
 Log in to the APPSeCONNECT portal with valid credentials.
 Click on your name, then you can view My Profile tab. 
 
-                 ![MyProfile](../assets/images/MyProfile.png)
+![MyProfile](../assets/images/MyProfile.png)
 
 Here you will be able to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
 
@@ -40,12 +40,12 @@ In the Personal Info tab, you can edit your name, mobile number.
 Click  **Change Avatar** to change your Profile picture.
 
 
-Click ** Change Password** to change the password and set your new password.
+Click **Change Password** to change the password and set your new password.
 
 
 The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
 
-Security Setting - Here you can enable all the security related settings like password expiry time set, account decativation and updating encryption policy. 
+The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
 
 ![SecuritySettings](../assets/images/SecuritySettings.png)
 
