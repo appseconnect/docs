@@ -10,10 +10,10 @@ Let us dive in details about every section of customer profile information.
 
 My Profile 
 
-Log in to the Cloud portal with valid credentials.
+Log in to the APPSeCONNECT portal with valid credentials.
 Click on your name, then you can see My Profile tab in it. There you will be able to edit your profile details.
 
-**IMAGE**
+![MyProfile](../assets/images/MyProfile.png)
 
 
 You will see two tabs - Overview & Change Details page.
