@@ -39,23 +39,15 @@ In the Personal Info tab, you can edit your name, mobile number.
 
 Click on Change Avatar to change your Profile picture.
 
-**IMAGE**
 
-you can change the password from the Change Password section.
-
-**IMAGE**
-
-From Privacy Setting section you have to agree/disagree with the privacy policy.
+Click on Change Password to change the password and set your new password.
 
 
-Overview
-Assigned Companies
-My Company
-My Feeds
-Change User Details
-Personal Info
-Change Avatar
-Change Password
-Privacy Setting
-Security Setting
+The Privacy Setting section allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
+
+Security Setting - Here you can enable all the security related settings like password expiry time set, account decativation and updating encryption policy. 
+
+![SecuritySettings](../assets/images/SecuritySettings.png)
+
+
 
