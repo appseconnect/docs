@@ -49,5 +49,59 @@ The **Security Setting** enables you to handle all the security related settings
 
 ![SecuritySettings](../assets/images/SecuritySettings.png)
 
+**CONFIGURING APPSeCONNECT**
+
+**Login to APPSeCONNECT - View Home Page to get the details. Click here**
+
+**Configuring Environment - Agent download / Cloud agent configuration**
+
+APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and is configured on cloud and does the actual data synchronization with the help of other concerned adapters while the Cloud agent is a similar tool that performs the same function as the on-premise agent but is present on cloud itself. No server is required to configure or sync using the cloud agent.
+
+Environment setup of the on-premise agent:
+
+ 1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
+
+   ![DashboardScreen](../assets/images/DashboardScreen.png)
+
+ 2. Run the setup folder to install the Agent in the system.
+ 3. Open the installed Agent on your machine.
+
+4. Login to the agent with your portal credentials.
+
+   ![Login1](../assets/images/Login1.png)
+
+5.   There are four icons as shown below:
+The home icon shows the connections in the project.
+The apps configuration icon (next to the home icon) shows the applications used for the connections which need to be configured for successful sync.
+
+The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.
+
+The last one is the Workflow option that displays the configured workflows in the project.
+
+  ![Connections](../assets/images/Connections.png)
+
+**Environment setup of the Cloud agent**:
+
+Pre-requisites:
+* The project should be cloud supported.
+
+* The two apps between which data has to be synced should be cloud supported. 
+
+* The connection between the two applications should be cloud supported.
+
+
+1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).
+
+![App](../assets/images/App.png)
+
+2.  Go to the Connections page and assign the app's credential to the connection by choosing the configuration setup option as shown below.
+
+![Connection_New](../assets/images/Connection_New.png)
+
+3. Click on the View the Connection icon and navigate to the touchpoints page.
+
+4. Click on the play button to run the sync process.
+
+![Connection_Touchpoint](../assets/images/Connection_Touchpoint.png)
 
 
