@@ -56,6 +56,8 @@
     <Content Include="assets\images\mm-free-feature.png" />
     <Content Include="assets\images\mm-responsive-feature.png" />
     <Content Include="assets\images\reseller-2.png" />
+    <Content Include="assets\images\search-img.png" />
+    <Content Include="assets\images\search-not-found.png" />
     <Content Include="assets\images\stacks-image-4691429.jpg" />
     <Content Include="assets\images\training-300x271.png" />
     <Content Include="assets\images\Video-player.png" />
@@ -118,6 +120,9 @@
     <Content Include="_includes\toc.html" />
     <Content Include="_layouts\archive-taxonomy.html" />
     <Content Include="_layouts\archive.html" />
+    <Content Include="_layouts\categories.html" />
+    <Content Include="_layouts\category.html" />
+    <Content Include="_layouts\collection.html" />
     <Content Include="_layouts\compress.html" />
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\home.html" />
@@ -125,14 +130,20 @@
     <Content Include="_layouts\search.html" />
     <Content Include="_layouts\single.html" />
     <Content Include="_layouts\splash.html" />
+    <Content Include="_layouts\tag.html" />
+    <Content Include="_layouts\tags.html" />
     <Content Include="_layouts\videos.html" />
+    <None Include="assets\css\main.scss" />
     <None Include="videos.md" />
     <None Include="_pages\about\index.md" />
+    <None Include="_pages\category-archive.md" />
+    <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\2010-01-16-home.md" />
+    <None Include="_posts\Setting Up\2010-01-16-Setting Up Your Profile.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\css\custom-style.scss" />
-    <None Include="assets\css\main.scss" />
     <None Include="assets\fonts\fontawesome-webfont.eot" />
     <None Include="assets\fonts\fontawesome-webfont.ttf" />
     <None Include="assets\fonts\fontawesome-webfont.woff" />
