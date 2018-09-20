@@ -2,21 +2,25 @@
 title: "Overview of AppseConnect"
 toc: true
 tag: developers
-category: "AppseConnect & IPAAS"
+category: "AppseConnect & iPaaS"
 ---
 
-APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud'  while all the credentials remain intact in the system's own premises. 
-APPSeCONNECT is developed as a platform where an ISV partner can also work together with APPSeCONNECT and develop the cloud configurations for the Apps which it does not support and can work seamlessly together with Apps which it does. APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
+APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, ecommerce or marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the APPSeCONNECT 'cloud' while all the credentials remain intact in the system's own premises. 
 
-iness function perspective. The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components.
+APPSeCONNECT is a platform that support any third party independent software vendor to work and develop connectors. 
+APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
 
-# Introduction to IPAAS
+The goal of the User Manual is to give a detailed overview of all the features of the product along with a proper description of the components.
 
-Integration Platform as a Service (IPPAS) is a group of cloud services which enables to execute and control the integration flows via on premises and cloud-based processes, applications and data within individual or across multiple organizations.
-In IPPAS the third-party provider provides infrastructure and middleware to manage the data integration on premises and cloud-based processes.
+# Introduction to iPaaS
+
+Integration Platform as a Service (iPaaS) is a group of cloud services which enables to execute and control the integration flows via on premises and cloud-based processes, applications and data within individual or across multiple organizations.
+In iPaaS the third-party provider provides infrastructure and middleware to manage the data integration on premises and cloud-based processes.
+
 Generally, data integration happens between:
 
 Cloud to Cloud Applications: For e.g Salesforce and Shopify
+
 Cloud to On-Premise / On-Premise to On-Premise Applications (Hybrid): For e.g Salesforce and SAP Business One
 
 # Hybrid Integration Model
@@ -42,9 +46,9 @@ APPSeCONNECT helps enterprises seamlessly connect applications both on-premises 
 
 # APPSeCONNECT as iPaaS
 
-APPSeCONNECT is a smart and robust integration platform (IPAAS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
+APPSeCONNECT is a smart and robust integration platform (iPaaS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
 
-APPSeCONNECT as IPAAS - Save Time and Effort, Focus on Profitability & Boost Productivity
+APPSeCONNECT as iPaaS - Save Time and Effort, Focus on Profitability & Boost Productivity
 
 ## Save Time and Effort
 Seamlessly connect business-critical applications and save huge amount of time and effort by automating business processes
@@ -126,12 +130,12 @@ Choose any of the dashboard panel and it will redirect you to the related functi
 You can see and track all the activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. Traces of past activities of the user can be been viewed in the feed section.
 
 1. Choose & Click on a Project.
-2. click on **Feeds** menu.
+2. Click on **Feeds** menu.
 3. Here you can only see your activities in your logged in profile.
 4. Feeds Page has search criteria, so that you can filter the feed using topic keyoword filters like "touchpoint", "masterdata" etc.
 4. This is view only menu.
 
-**ProTip:** If you are a superadmin, any changes in the organizations done by you will be reflected in your feed section and also in the those organization feed section where changes has been made. 
+**ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
 
 # C. Choosing App
 
@@ -221,8 +225,6 @@ The Connection Page of the Portal enables creating the connection between two di
 
 
 
-
-
 # Release Notes/Release Information
 
 **LINK WILL BE GIVEN**
@@ -305,6 +307,6 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
 
 6. Click the "Forgot Password" option to reset the password. A mail will be sent to your (user) account. You can reset the password by clicking on the link provided in the mail and set up a new password.
 
-![ForgotLogin](../assets/images/ForgotLogin _Password.png)
+![ForgotLogin_Password](../assets/images/ForgotLogin_Password.png)
 
 
