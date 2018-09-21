@@ -146,20 +146,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of AppseConnect",
-      excerpt: "APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It...",
-      categories: ["AppseConnect & IPAAS"],
-      tags: ["developers"],
-      id: 15
-    });
-    
-  
-    idx.add({
       title: "How to setup your account with APPSeCONNECT",
       excerpt: "Installing and creating account with APPSeCONNECT is an effort. To install\n",
       categories: ["Installation and Configuration Guide"],
       tags: ["customer"],
-      id: 16
+      id: 15
     });
     
   
@@ -168,6 +159,15 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Working with Subscription"],
       tags: ["administrators"],
+      id: 16
+    });
+    
+  
+    idx.add({
+      title: "Getting Started",
+      excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
+      categories: [],
+      tags: [],
       id: 17
     });
     
@@ -187,6 +187,177 @@ var idx = lunr(function () {
       categories: ["Working with Subscription"],
       tags: ["administrators"],
       id: 19
+    });
+    
+  
+    idx.add({
+      title: "Overview of API Management",
+      excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 20
+    });
+    
+  
+    idx.add({
+      title: "Important Terminologies",
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 21
+    });
+    
+  
+    idx.add({
+      title: "Architecture",
+      excerpt: "API\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 22
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to create web proxies",
+      excerpt: "Let\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 23
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to create webhook APIs",
+      excerpt: "WebHooks are important concept\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 24
+    });
+    
+  
+    idx.add({
+      title: "Quota for a Key policy",
+      excerpt: "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 25
+    });
+    
+  
+    idx.add({
+      title: "Choosing applications for data source",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 26
+    });
+    
+  
+    idx.add({
+      title: "Filter Request by IP policy",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 27
+    });
+    
+  
+    idx.add({
+      title: "Validate http headers policy",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 28
+    });
+    
+  
+    idx.add({
+      title: "Compression Policy",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 29
+    });
+    
+  
+    idx.add({
+      title: "Response content format identification policy",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 30
+    });
+    
+  
+    idx.add({
+      title: "Overview of API Management",
+      excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 31
+    });
+    
+  
+    idx.add({
+      title: "Important Terminologies",
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 32
+    });
+    
+  
+    idx.add({
+      title: "Architecture",
+      excerpt: "API\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 33
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to create web proxies",
+      excerpt: "Let\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 34
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to create webhook APIs",
+      excerpt: "WebHooks are important concept\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 35
+    });
+    
+  
+    idx.add({
+      title: "Quota for a Key policy",
+      excerpt: "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 36
+    });
+    
+  
+    idx.add({
+      title: "Filter Request by IP policy",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 37
+    });
+    
+  
+    idx.add({
+      title: "Validate http headers policy",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 38
     });
     
   
@@ -366,17 +537,6 @@ var store = [
     
       
       {
-        "title": "Overview of AppseConnect",
-        "url": "http://localhost:4000/appseconnect%20&%20ipaas/home/",
-        "excerpt": "APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It...",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "How to setup your account with APPSeCONNECT",
         "url": "http://localhost:4000/installation%20and%20configuration%20guide/Setting-Up-Your-Profile/",
         "excerpt": "Installing and creating account with APPSeCONNECT is an effort. To install\n",
@@ -399,6 +559,17 @@ var store = [
     
       
       {
+        "title": "Getting Started",
+        "url": "http://localhost:4000/getting-started/",
+        "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "How to change subscription",
         "url": "http://localhost:4000/working%20with%20subscription/How-to-change-subscription/",
         "excerpt": "\n",
@@ -412,6 +583,215 @@ var store = [
       {
         "title": "How to edit subscription",
         "url": "http://localhost:4000/working%20with%20subscription/How-to-edit-subscription/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of API Management",
+        "url": "http://localhost:4000/api%20management/overview/",
+        "excerpt": "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Important Terminologies",
+        "url": "http://localhost:4000/api%20management/Terminologies/",
+        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Architecture",
+        "url": "http://localhost:4000/api%20management/architecture-design-runtime/",
+        "excerpt": "API\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to create web proxies",
+        "url": "http://localhost:4000/api%20management/steps-to-create-your-first-workflow/",
+        "excerpt": "Let\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to create webhook APIs",
+        "url": "http://localhost:4000/api%20management/monitoring-and-debugging-a-workflow/",
+        "excerpt": "WebHooks are important concept\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quota for a Key policy",
+        "url": "http://localhost:4000/api%20management/working-with-get/",
+        "excerpt": "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Choosing applications for data source",
+        "url": "http://localhost:4000/workflow/choosing-apps-for-integration/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Filter Request by IP policy",
+        "url": "http://localhost:4000/api%20management/working-with-process/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Validate http headers policy",
+        "url": "http://localhost:4000/api%20management/working-with-post/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Compression Policy",
+        "url": "http://localhost:4000/api%20management/working-with-filter/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Response content format identification policy",
+        "url": "http://localhost:4000/api%20management/working-with-delay/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of API Management",
+        "url": "http://localhost:4000/api%20management/overview/",
+        "excerpt": "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Important Terminologies",
+        "url": "http://localhost:4000/api%20management/Terminologies/",
+        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Architecture",
+        "url": "http://localhost:4000/api%20management/architecture-design-runtime/",
+        "excerpt": "API\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to create web proxies",
+        "url": "http://localhost:4000/api%20management/steps-to-create-proxy-endpoint/",
+        "excerpt": "Let\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to create webhook APIs",
+        "url": "http://localhost:4000/api%20management/steps-to-create-webhook-endpoint/",
+        "excerpt": "WebHooks are important concept\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quota for a Key policy",
+        "url": "http://localhost:4000/api%20management/quota-per-user-key/",
+        "excerpt": "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Filter Request by IP policy",
+        "url": "http://localhost:4000/api%20management/ip-restrict/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Validate http headers policy",
+        "url": "http://localhost:4000/api%20management/validate-http-header/",
         "excerpt": "\n",
         "teaser":
           

@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="_posts\Best practices\" />
+    <Folder Include="_posts\Rules\" />
+    <Folder Include="_posts\SDK-References\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -133,13 +136,43 @@
     <Content Include="_layouts\tag.html" />
     <Content Include="_layouts\tags.html" />
     <Content Include="_layouts\videos.html" />
+    <Content Include="_posts\API Management\media\ip-restrict-policy.PNG" />
+    <Content Include="_posts\Workflows\media\ip-restrict-policy.PNG" />
     <None Include="assets\css\main.scss" />
     <None Include="videos.md" />
     <None Include="_pages\about\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
     <None Include="_posts\2010-01-16-home.md" />
+    <None Include="_posts\2010-01-17-getting-started.md" />
+    <None Include="_posts\API Management\2018-09-14-overview.md" />
+    <None Include="_posts\API Management\2018-09-15-Terminologies.md" />
+    <None Include="_posts\API Management\2018-09-16-architecture-design-runtime.md" />
+    <None Include="_posts\API Management\How-to guides\2018-09-24-configure-appseconnect-for-apis.md" />
+    <None Include="_posts\API Management\How-to guides\2018-09-25-choosing-backend-apps.md" />
+    <None Include="_posts\API Management\How-to guides\2018-09-28-debug-configure-publish.md" />
+    <None Include="_posts\API Management\How-to guides\2018-09-26-connecting-to-a-data-source.md" />
+    <None Include="_posts\API Management\How-to guides\2018-09-27-deployments-and-environments.md" />
+    <None Include="_posts\API Management\Policies\2018-09-22-compression-apply - Copy.md" />
+    <None Include="_posts\API Management\Policies\2018-09-23-response-content-format.md" />
+    <None Include="_posts\API Management\Policies\2018-09-21-validate-http-header.md" />
+    <None Include="_posts\API Management\Policies\2018-09-20-ip-restrict.md" />
+    <None Include="_posts\API Management\Policies\2018-09-19-quota-per-user-key.md" />
+    <None Include="_posts\API Management\Quickstart\2018-09-18-steps-to-create-webhook-endpoint.md" />
+    <None Include="_posts\API Management\Quickstart\2018-09-17-steps-to-create-proxy-endpoint.md" />
+    <None Include="_posts\Documentation Standard V1.0.md" />
     <None Include="_posts\Setting Up\2010-01-16-Setting Up Your Profile.md" />
+    <None Include="_posts\Workflows\2018-08-14-overview.md" />
+    <None Include="_posts\Workflows\2018-08-15-Terminologies.md" />
+    <None Include="_posts\Workflows\2018-08-16-architecture-design-runtime.md" />
+    <None Include="_posts\Workflows\How-to guides\2018-08-20-choosing-apps-for-integration.md" />
+    <None Include="_posts\Workflows\Nodes\2018-08-19-working-with-get.md" />
+    <None Include="_posts\Workflows\Nodes\2018-08-20-working-with-process.md" />
+    <None Include="_posts\Workflows\Nodes\2018-08-21-working-with-post.md" />
+    <None Include="_posts\Workflows\Nodes\2018-08-22-working-with-filter.md" />
+    <None Include="_posts\Workflows\Nodes\2018-08-23-working-with-delay.md" />
+    <None Include="_posts\Workflows\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
+    <None Include="_posts\Workflows\Quickstart\2018-08-18-monitoring-and-debugging-a-workflow.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>

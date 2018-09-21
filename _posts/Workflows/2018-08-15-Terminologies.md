@@ -3,11 +3,6 @@ title: "Important Terminologies"
 toc: true
 tag: developers
 category: "API Management"
-menus: 
-    api:
-        icon: fa fa-gg
-        title: "Terminology" 
-        identifier: terminology 
 ---
 
 This article demonstrates the important terminologies that you need to consider while using our API management system.
