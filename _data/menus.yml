@@ -1,0 +1,14 @@
+main:
+  - title: Projects
+    identifier: projects
+    url: /projects
+
+  - title: Home
+    identifier: Home
+    url: /
+projects:
+  - title: Project1
+    url: /projects/project1
+    identifier: project1
+
+ 

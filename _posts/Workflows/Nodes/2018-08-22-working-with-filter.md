@@ -1,6 +1,6 @@
 ﻿---
-title: "Compression Policy"
+title: "FILTER Node"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 ---

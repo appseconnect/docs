@@ -4,6 +4,10 @@ toc: true
 tag: developers
 category: "API Management"
 author: "Abhishek Sur"
+menus: 
+    policies:
+        icon: fa fa-gg
+        title: "Quota-Per-Key-Policy" 
 ---
 The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is 
 getting somehow spammed, the policy will automatically detect it and updae the response accordingly. The 

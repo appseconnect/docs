@@ -1,6 +1,6 @@
 ﻿---
-title: "Response content format identification policy"
+title: "DELAY Node"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 ---

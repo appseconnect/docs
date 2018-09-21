@@ -1,32 +1,31 @@
 ﻿---
-title: "Quota for a Key policy"
+title: "GET Node"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 author: "Abhishek Sur"
 ---
-The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is 
-getting somehow spammed, the policy will automatically detect it and updae the response accordingly. The 
-API rate limit can be set up by the developer for a specified time period and when the policy is
-triggered for a specific call, the caller will receive `429 Too Many Requests` as response status code.
+To get data from an application, APPSeCONNECT uses `GET` node. A `GET` node is associated with a particular action which
+uses specific action filters and credentials mentioned to the application to get a response back to APPSeCONNECT. As APPSeCONNECT always talk in terms of 
+XML, it is the work of an adapter to pass the data in XML format such that the data is properly interpreted before performing a transformation 
 
-**ProTip:** Policy can only be used once per API configuration.
+**ProTip:** GET node does not allow an input as the main idea of GET node is to generate output by calling an API tied to an application.
 
-### Policy Statement
+### Working Principle
 
-Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
-Below are the list of configurations required for this policy.
+Each node in APPSeCONNECT workflow is tied to a particular connection, such that when the node is executed the data from that particular Application is generated 
+and responded back to the application workspace. 
 
-![Ip Restrict Policy](../media/ip-restrict-policy.PNG)
+![GET Node](../media/ip-restrict-policy.PNG)
 
-The rules and setup needs to be made accordingly. 
+The configurations that are allowed to a Get node are as follows. 
 
-|Name|Description|Is Mandatory|Default Value|
+|Name|Description|Supported Endpoint|Support Self loop|
 |-----------|--------------------|----------|----------|
 |Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|Yes|Infinity|
 |Max Requests|Number of requests to be allowed during the specified timespan|Yes|100|
 
-### Policy Usage
+### Node Usage
 
 The policy can be applied only at `inbound` section.
 

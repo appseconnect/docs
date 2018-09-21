@@ -1,7 +1,7 @@
 ﻿---
-title: "Quickstart guide to create web proxies"
+title: "Quickstart guide to your first workflow"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 ---
 Let

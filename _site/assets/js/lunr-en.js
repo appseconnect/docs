@@ -191,9 +191,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of API Management",
-      excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
-      categories: ["API Management"],
+      title: "Overview of Workflows",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 20
     });
@@ -201,8 +201,8 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Important Terminologies",
-      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
-      categories: ["API Management"],
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow Touchpoint Action Filters...",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 21
     });
@@ -211,41 +211,41 @@ var idx = lunr(function () {
     idx.add({
       title: "Architecture",
       excerpt: "API\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 22
     });
     
   
     idx.add({
-      title: "Quickstart guide to create web proxies",
+      title: "Quickstart guide to your first workflow",
       excerpt: "Let\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 23
     });
     
   
     idx.add({
-      title: "Quickstart guide to create webhook APIs",
+      title: "Quickstart guide to debug workflows",
       excerpt: "WebHooks are important concept\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 24
     });
     
   
     idx.add({
-      title: "Quota for a Key policy",
-      excerpt: "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
-      categories: ["API Management"],
+      title: "GET Node",
+      excerpt: "To get data from an application, APPSeCONNECT uses GET node. A GET node is associated with a particular action which...",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 25
     });
     
   
     idx.add({
-      title: "Choosing applications for data source",
+      title: "Choosing applications for integration",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -254,36 +254,36 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Filter Request by IP policy",
+      title: "PROCESS Node",
       excerpt: "\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 27
     });
     
   
     idx.add({
-      title: "Validate http headers policy",
+      title: "POST Node",
       excerpt: "\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 28
     });
     
   
     idx.add({
-      title: "Compression Policy",
+      title: "FILTER Node",
       excerpt: "\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 29
     });
     
   
     idx.add({
-      title: "Response content format identification policy",
+      title: "DELAY Node",
       excerpt: "\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 30
     });
@@ -300,7 +300,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Important Terminologies",
-      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API Management"],
       tags: ["developers"],
       id: 32
@@ -309,7 +309,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Architecture",
-      excerpt: "API\n",
+      excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API Management"],
       tags: ["developers"],
       id: 33
@@ -335,11 +335,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Policy Overview",
+      excerpt: "\n",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 36
+    });
+    
+  
+    idx.add({
       title: "Quota for a Key policy",
       excerpt: "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 36
+      id: 37
     });
     
   
@@ -348,7 +357,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 37
+      id: 38
     });
     
   
@@ -357,7 +366,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 38
+      id: 39
     });
     
   
@@ -592,9 +601,9 @@ var store = [
     
       
       {
-        "title": "Overview of API Management",
-        "url": "http://localhost:4000/api%20management/overview/",
-        "excerpt": "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
+        "title": "Overview of Workflows",
+        "url": "http://localhost:4000/workflow/overview/",
+        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -604,8 +613,8 @@ var store = [
       
       {
         "title": "Important Terminologies",
-        "url": "http://localhost:4000/api%20management/Terminologies/",
-        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+        "url": "http://localhost:4000/workflow/Terminologies/",
+        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow Touchpoint Action Filters...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -615,7 +624,7 @@ var store = [
       
       {
         "title": "Architecture",
-        "url": "http://localhost:4000/api%20management/architecture-design-runtime/",
+        "url": "http://localhost:4000/workflow/architecture-design-runtime/",
         "excerpt": "API\n",
         "teaser":
           
@@ -625,8 +634,8 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to create web proxies",
-        "url": "http://localhost:4000/api%20management/steps-to-create-your-first-workflow/",
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/steps-to-create-your-first-workflow/",
         "excerpt": "Let\n",
         "teaser":
           
@@ -636,8 +645,8 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to create webhook APIs",
-        "url": "http://localhost:4000/api%20management/monitoring-and-debugging-a-workflow/",
+        "title": "Quickstart guide to debug workflows",
+        "url": "http://localhost:4000/workflow/monitoring-and-debugging-a-workflow/",
         "excerpt": "WebHooks are important concept\n",
         "teaser":
           
@@ -647,9 +656,9 @@ var store = [
     
       
       {
-        "title": "Quota for a Key policy",
-        "url": "http://localhost:4000/api%20management/working-with-get/",
-        "excerpt": "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+        "title": "GET Node",
+        "url": "http://localhost:4000/workflow/working-with-get/",
+        "excerpt": "To get data from an application, APPSeCONNECT uses GET node. A GET node is associated with a particular action which...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -658,7 +667,7 @@ var store = [
     
       
       {
-        "title": "Choosing applications for data source",
+        "title": "Choosing applications for integration",
         "url": "http://localhost:4000/workflow/choosing-apps-for-integration/",
         "excerpt": "\n",
         "teaser":
@@ -669,8 +678,8 @@ var store = [
     
       
       {
-        "title": "Filter Request by IP policy",
-        "url": "http://localhost:4000/api%20management/working-with-process/",
+        "title": "PROCESS Node",
+        "url": "http://localhost:4000/workflow/working-with-process/",
         "excerpt": "\n",
         "teaser":
           
@@ -680,8 +689,8 @@ var store = [
     
       
       {
-        "title": "Validate http headers policy",
-        "url": "http://localhost:4000/api%20management/working-with-post/",
+        "title": "POST Node",
+        "url": "http://localhost:4000/workflow/working-with-post/",
         "excerpt": "\n",
         "teaser":
           
@@ -691,8 +700,8 @@ var store = [
     
       
       {
-        "title": "Compression Policy",
-        "url": "http://localhost:4000/api%20management/working-with-filter/",
+        "title": "FILTER Node",
+        "url": "http://localhost:4000/workflow/working-with-filter/",
         "excerpt": "\n",
         "teaser":
           
@@ -702,8 +711,8 @@ var store = [
     
       
       {
-        "title": "Response content format identification policy",
-        "url": "http://localhost:4000/api%20management/working-with-delay/",
+        "title": "DELAY Node",
+        "url": "http://localhost:4000/workflow/working-with-delay/",
         "excerpt": "\n",
         "teaser":
           
@@ -726,7 +735,7 @@ var store = [
       {
         "title": "Important Terminologies",
         "url": "http://localhost:4000/api%20management/Terminologies/",
-        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API Proxy...",
+        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -737,7 +746,7 @@ var store = [
       {
         "title": "Architecture",
         "url": "http://localhost:4000/api%20management/architecture-design-runtime/",
-        "excerpt": "API\n",
+        "excerpt": "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -760,6 +769,17 @@ var store = [
         "title": "Quickstart guide to create webhook APIs",
         "url": "http://localhost:4000/api%20management/steps-to-create-webhook-endpoint/",
         "excerpt": "WebHooks are important concept\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Policy Overview",
+        "url": "http://localhost:4000/api%20management/policies/",
+        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
