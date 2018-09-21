@@ -408,36 +408,73 @@
     
       <div class="search-content">
         <div class="search-content__inner-wrap">
-  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <a href="#" title="close" class="closeSearch"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <div class="searchTopGap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." /></div>
+  <div id="searchFound" class="searchDefaultBox">
+      <img src="/assets/images/search-img.png" alt="" />
+      <h3>Search your Term...</h3>
+      <p>
+          Donec vulputate urna at tellus eleifend, at ornare mi porta. Curabitur et odio gravida,
+          commodo felis eget, consectetur eros. Nullam venenatis lacus placerat sagittis pharetra.
+      </p>
+  </div>
+  <div id="searchNotFound" class="searchDefaultBox hideBox">
+      <img src="/assets/images/search-not-found.png" alt="" />
+      <h3>No Results</h3>
+      <p>We Searched far and wide and couldn't<br /> find any documents matching your search.</p>
+  </div>
   <div id="results" class="results"></div>
 </div>
       </div>
     
       
-    
-  <script src="http://localhost:4000/assets/js/main.min.js"></script>
-
-
-
-  <script src="http://localhost:4000/assets/js/lunr.min.js"></script>
-  <script src="http://localhost:4000/assets/js/lunr-en.js"></script>
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script src="/assets/js/script.js"></script>
 <script src="/assets/js/aos.js"></script>
 <script type="text/javascript">
     var nav = $('.sidebar__right');
+    var lastId;
+    var tocMenu = $(".toc__menu");
+
+    // All list items
+    var menuItems = tocMenu.find("a");
+    // Anchors corresponding to menu items
+    var scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 136) {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop();
+
+        if (fromTop > 136) {
             nav.addClass("f-nav");
         } else {
             nav.removeClass("f-nav");
+        } 
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+              .removeClass("active");
+
+            var selectedMenu = menuItems.filter("[href*='" + id + "']");
+
+            selectedMenu.addClass("active");
         }
+
     });
 
     $(document).ready(function () {
@@ -456,7 +493,7 @@
     });
     function showMenu(o) {
 
-        $(o).nextUntil(".nav__sub-title").toggle();
+        $(o).nextUntil(".nav__sub-title").slideToggle();
 
     }
     $(".nav__sub-title").click(function () {
@@ -466,6 +503,22 @@
         easing: 'ease-in-out-sine'
     });
 </script>
+
+  <script src="http://localhost:4000/assets/js/plugins/jquery.fitvids.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.greedy-navigation.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.magnific-popup.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.smooth-scroll.min.js"></script>
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+  <script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+  <script src="http://localhost:4000/assets/js/lunr-en.js"></script>
+
+
+
+
+
 
 
   </body>

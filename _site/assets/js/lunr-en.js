@@ -120,9 +120,9 @@ var idx = lunr(function () {
   
     idx.add({
       title: "What is a Permission",
-      excerpt: "hi\n\nWhats up?\nlink\n\n",
-      categories: ["Adding Permission"],
-      tags: ["administrators"],
+      excerpt: "Permission is a set of previledges which lets the user access a feature or service in APPSeCONNECT platform. Permissions are...",
+      categories: ["Handling Permission"],
+      tags: ["developers"],
       id: 12
     });
     
@@ -138,10 +138,28 @@ var idx = lunr(function () {
   
     idx.add({
       title: "How to revoke permission",
-      excerpt: "\n",
+      excerpt: "To revoke permission you need to go to …\n",
       categories: ["Adding Permission"],
       tags: ["administrators"],
       id: 14
+    });
+    
+  
+    idx.add({
+      title: "Overview of AppseConnect",
+      excerpt: "APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It...",
+      categories: ["AppseConnect & IPAAS"],
+      tags: ["developers"],
+      id: 15
+    });
+    
+  
+    idx.add({
+      title: "How to setup your account with APPSeCONNECT",
+      excerpt: "Installing and creating account with APPSeCONNECT is an effort. To install\n",
+      categories: ["Installation and Configuration Guide"],
+      tags: ["customer"],
+      id: 16
     });
     
   
@@ -150,7 +168,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Working with Subscription"],
       tags: ["administrators"],
-      id: 15
+      id: 17
     });
     
   
@@ -159,7 +177,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Working with Subscription"],
       tags: ["administrators"],
-      id: 16
+      id: 18
     });
     
   
@@ -168,7 +186,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Working with Subscription"],
       tags: ["administrators"],
-      id: 17
+      id: 19
     });
     
   
@@ -188,7 +206,7 @@ var store = [
         "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -199,7 +217,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -210,7 +228,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -221,7 +239,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -232,7 +250,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -243,7 +261,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -254,7 +272,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -265,7 +283,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -276,7 +294,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -287,7 +305,7 @@ var store = [
         "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -298,7 +316,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -309,18 +327,18 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
       
       {
         "title": "What is a Permission",
-        "url": "http://localhost:4000/adding%20permission/What-is-a-Permission/",
-        "excerpt": "hi\n\nWhats up?\nlink\n\n",
+        "url": "http://localhost:4000/handling%20permission/What-is-a-Permission/",
+        "excerpt": "Permission is a set of previledges which lets the user access a feature or service in APPSeCONNECT platform. Permissions are...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -331,7 +349,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -339,10 +357,32 @@ var store = [
       {
         "title": "How to revoke permission",
         "url": "http://localhost:4000/adding%20permission/How-to-revoke-permission/",
-        "excerpt": "\n",
+        "excerpt": "To revoke permission you need to go to …\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of AppseConnect",
+        "url": "http://localhost:4000/appseconnect%20&%20ipaas/home/",
+        "excerpt": "APPSeCONNECT is a cloud-based hybrid solution which maps business processes of ERP with eCommerce / Marketplaces or CRM Systems. It...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "How to setup your account with APPSeCONNECT",
+        "url": "http://localhost:4000/installation%20and%20configuration%20guide/Setting-Up-Your-Profile/",
+        "excerpt": "Installing and creating account with APPSeCONNECT is an effort. To install\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -353,7 +393,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -364,7 +404,7 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       },
     
@@ -375,19 +415,28 @@ var store = [
         "excerpt": "\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
           
       }
     
   ]
 
-$(document).ready(function() {
-  $('input#search').on('keyup', function () {
+$(document).ready(function () {
+    $('input#search').on('keyup', function () {
+        debugger;
+        $("#searchFound").addClass('hideBox');
     var resultdiv = $('#results');
     var query = $(this).val();
-    var result = idx.search(query);
+        var result = idx.search(query);
+        if (result.length == 0) {
+            $("#searchNotFound").removeClass('hideBox');
+            $("#results").addClass('hideBox');
+            return false;
+        }
+        $("#searchNotFound").addClass('hideBox');
+        $("#results").removeClass('hideBox');
     resultdiv.empty();
-    resultdiv.prepend('<p class="results__found">'+result.length+' Result(s) found</p>');
+        resultdiv.prepend('<p class="results__found">' + result.length + ' Result(s) found</p>');
     for (var item in result) {
       var ref = result[item].ref;
       if(store[ref].teaser){

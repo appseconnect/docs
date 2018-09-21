@@ -22,28 +22,22 @@
 </div>
 {% endif %}
 {% endcomment %}
-{% assign posts = site.tags[page.tag] %}
+{% assign posts = site.posts %}
 {% assign currentTag = page.tag %}
 {% assign matchCat = " " %}
  
 {% if page.tags.size == 1 %}
-<div class="sidebar sticky">
-    <p>{{ site.posts | jsonify }}</p>
-    <p style="color:#1D7AB1"><strong>{{page.tag | capitalize }}</strong> persona</p>
+<div class="sidebar sticky"> 
     <nav class="nav__list">
-        <ul class="nav__items">
-
+        <ul class="nav__items"> 
             {% for post in posts reversed %}
             {% assign postCat = post.category %}
             {% if postCat != matchCat %} 
-            <li class="nav__sub-title sub-title" onclick="showMenu(this)">{{ postCat }}</li>
-
-
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.{{ postCat }}</li>
             {% if post.url == page.url %}
-
-            <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
+                <li class="menu-items"> <a href="{{ post.url}}" class="active">-{{ post.title }}</a></li>
             {% else %}
-            <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
+                <li class="menu-items"> <a href="{{ post.url}}">@{{ post.title }}</a></li>
 
             {% endif %}
 
@@ -53,9 +47,9 @@
 
             {% if post.url == page.url %}
 
-            <li class="menu-items"> <a href="{{ post.url}}" class="active">{{ post.title }}</a></li>
+            <li class="menu-items"> <a href="{{ post.url}}" class="active">+{{ post.title }}</a></li>
             {% else %}
-            <li class="menu-items"> <a href="{{ post.url}}">{{ post.title }}</a></li>
+            <li class="menu-items"> <a href="{{ post.url}}">^{{ post.title }}</a></li>
 
             {% endif %}
 
