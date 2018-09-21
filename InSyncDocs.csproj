@@ -137,7 +137,10 @@
     <Content Include="_layouts\tag.html" />
     <Content Include="_layouts\tags.html" />
     <Content Include="_layouts\videos.html" />
+    <Content Include="_posts\API Management\media\CompressionPolicy.PNG" />
     <Content Include="_posts\API Management\media\ip-restrict-policy.PNG" />
+    <Content Include="_posts\API Management\media\IPRestrictPolicy.PNG" />
+    <Content Include="_posts\API Management\media\ValidateHTTPHeaderPolicy.PNG" />
     <Content Include="_posts\Workflows\media\ip-restrict-policy.PNG" />
     <None Include="assets\css\main.scss" />
     <None Include="videos.md" />

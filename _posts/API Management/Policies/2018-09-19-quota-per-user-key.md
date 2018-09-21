@@ -5,7 +5,7 @@ tag: developers
 category: "API Management"
 author: "Abhishek Sur"
 ---
-The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is 
+The **Rate-limit quota** policy prevents an API usage spikes on per user basis, such that if the same API is 
 getting somehow spammed, the policy will automatically detect it and updae the response accordingly. The 
 API rate limit can be set up by the developer for a specified time period and when the policy is
 triggered for a specific call, the caller will receive `429 Too Many Requests` as response status code.
@@ -32,6 +32,6 @@ The policy can be applied only at `inbound` section.
 
 ### Scope
 
-Currently the policy can be applied at API Operation Scope only.
+Currently the policy can be applied at API Version Scope only.
 
 
