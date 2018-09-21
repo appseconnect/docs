@@ -188,7 +188,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-menus
   - jemoji
+
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -196,6 +198,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-menus
   - jemoji
 
 

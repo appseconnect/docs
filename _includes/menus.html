@@ -1,0 +1,16 @@
+﻿{% if menu %}
+<ul>
+    {% for item in menu %}
+    <li class="menu-item-{{ loop.index }}">
+        {% if item.icon %}
+            <i class="{{ item.icon }}"></i>
+        {% endif %}
+        <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+        {% if item.children %}
+        {% assign menu = item.children %}
+        {% include menus.html %}
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
