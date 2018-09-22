@@ -290,11 +290,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Architecture",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 31
+    });
+    
+  
+    idx.add({
       title: "Overview of API Management",
       excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 31
+      id: 32
     });
     
   
@@ -303,7 +312,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 32
+      id: 33
     });
     
   
@@ -312,7 +321,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 33
+      id: 34
     });
     
   
@@ -321,7 +330,7 @@ var idx = lunr(function () {
       excerpt: "Let\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 34
+      id: 35
     });
     
   
@@ -330,7 +339,7 @@ var idx = lunr(function () {
       excerpt: "WebHooks are important concept\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 35
+      id: 36
     });
     
   
@@ -339,22 +348,13 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 36
-    });
-    
-  
-    idx.add({
-      title: "Quota for a Key policy",
-      excerpt: "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
-      categories: ["API Management"],
-      tags: ["developers"],
       id: 37
     });
     
   
     idx.add({
-      title: "Filter Request by IP policy",
-      excerpt: "\n",
+      title: "Quota for a Key policy",
+      excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API Management"],
       tags: ["developers"],
       id: 38
@@ -362,11 +362,29 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Validate http headers policy",
-      excerpt: "\n",
+      title: "Filter Request by IP policy",
+      excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
       categories: ["API Management"],
       tags: ["developers"],
       id: 39
+    });
+    
+  
+    idx.add({
+      title: "Validate http headers policy",
+      excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 40
+    });
+    
+  
+    idx.add({
+      title: "Compression Policy",
+      excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
+      categories: ["API Management"],
+      tags: ["developers"],
+      id: 41
     });
     
   
@@ -722,6 +740,17 @@ var store = [
     
       
       {
+        "title": "Architecture",
+        "url": "http://localhost:4000/workflow/faqs/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Overview of API Management",
         "url": "http://localhost:4000/api%20management/overview/",
         "excerpt": "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
@@ -790,7 +819,7 @@ var store = [
       {
         "title": "Quota for a Key policy",
         "url": "http://localhost:4000/api%20management/quota-per-user-key/",
-        "excerpt": "The rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+        "excerpt": "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -801,7 +830,7 @@ var store = [
       {
         "title": "Filter Request by IP policy",
         "url": "http://localhost:4000/api%20management/ip-restrict/",
-        "excerpt": "\n",
+        "excerpt": "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -812,7 +841,18 @@ var store = [
       {
         "title": "Validate http headers policy",
         "url": "http://localhost:4000/api%20management/validate-http-header/",
-        "excerpt": "\n",
+        "excerpt": "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Compression Policy",
+        "url": "http://localhost:4000/api%20management/compression-apply/",
+        "excerpt": "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
