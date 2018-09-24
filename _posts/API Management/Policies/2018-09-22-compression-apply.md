@@ -3,6 +3,7 @@ title: "Compression Policy"
 toc: true
 tag: developers
 category: "API Management"
+author: "Soumya Ghosh"
 menus: 
     policies:
         icon: fa fa-gg

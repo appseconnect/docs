@@ -3,6 +3,7 @@ title: "Filter Request by IP policy"
 toc: true
 tag: developers
 category: "API Management"
+author: "Soumya Ghosh"
 menus: 
     policies:
         icon: fa fa-gg
@@ -26,8 +27,8 @@ The rules and setup needs to be made accordingly.
 |Name|Description|Is Mandatory|Default Value|
 |-----------|--------------------------------------------------------|----------|----------|
 |IP Restriction Policy Types|This policy provides two options  <br/> __Lists of Allowed__ : Whether the given IP Address Range will be allowed <br/> __Lists Of Restricted__ : Whether the given IP Address Range will be restricted |Yes| Not Applicable |
-|From Range|This is will provide the lower bound of the IP Address Range |Yes|Not Applicable|
-|To Range|This is will provide the upper bound of the IP Address Range |Yes|Not Applicable|
+|From Range|This will provide the lower bound of the IP Address Range |Yes|Not Applicable|
+|To Range|This will provide the upper bound of the IP Address Rane |Yes|Not Applicable|
 
 ### Policy Usage
 
