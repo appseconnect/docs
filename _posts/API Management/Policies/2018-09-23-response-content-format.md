@@ -3,6 +3,10 @@ title: "Response content format identification policy"
 toc: true
 tag: developers
 category: "API Management"
+menus: 
+    policies:
+        icon: fa fa-gg
+        title: "Response Content Format Transform Policy" 
 ---
 **Reponse Content Format** policy inspects `Content-Type` for each HTTP request header and based upon the 
 identification,it modifies the response content. For example,if the incoming HTTP request contains 

@@ -2,7 +2,7 @@
 title: "Architecture"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 ---
 
 API

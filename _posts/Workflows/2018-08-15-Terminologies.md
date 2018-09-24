@@ -2,22 +2,20 @@
 title: "Important Terminologies"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 ---
 
-This article demonstrates the important terminologies that you need to consider while using our API management system.
+This article demonstrates the important terminologies that you need to consider while using our Workflow system.
 
-- Webhook API
-- Proxy APIs
-- Flow APIs
-- Backend APPs
-- Authentication Server
-- API Versions
-- Frontend Configuration
-- Policy
-- Swagger Endpoint
-- Inbound
-- Outbound
-- Adapter
-- Protocol
-- Response setup
+- Flow
+- Touchpoint
+- Action
+- Filters
+- Links
+- Nodes
+- Properties
+- Scheduler
+- Debugging
+- Output
+- Resync Bucket 
+- Logs

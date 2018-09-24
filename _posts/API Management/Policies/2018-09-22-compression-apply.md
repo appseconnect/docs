@@ -3,6 +3,10 @@ title: "Compression Policy"
 toc: true
 tag: developers
 category: "API Management"
+menus: 
+    policies:
+        icon: fa fa-gg
+        title: "Apply Compression Policy" 
 ---
 **Compression Policy** compresses the response coming from the backend and thus can help to increase the performance of websites.
 As per configurations, it chooses the right algorithm to compress the content.So after execution of the backend action if the response 

@@ -1,6 +1,6 @@
 ﻿---
-title: "Validate http headers policy"
+title: "POST Node"
 toc: true
 tag: developers
-category: "API Management"
+category: "Workflow"
 ---

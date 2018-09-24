@@ -3,6 +3,11 @@ title: "Filter Request by IP policy"
 toc: true
 tag: developers
 category: "API Management"
+menus: 
+    policies:
+        icon: fa fa-gg
+        title: "IP-Restrict Policy" 
+
 ---
 The **IP Restrict Policy** is used to restrict the access of an API Proxy by limiting the number of IP Addresses who can access it.If an organization wants to develop an API which is to be accessed from only a set of IP addresses,and wants to block 
 the access for all other clients,this policy would provide exactly that configuration and thus controls the access for a particular API Proxy.
