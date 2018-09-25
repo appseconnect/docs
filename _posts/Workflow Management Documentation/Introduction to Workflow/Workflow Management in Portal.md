@@ -6,26 +6,28 @@ category: "Workflow Management Documentation"
 Author: Soumita
 ---
  
- Workflows are the diagrammatic representations of a business process. As an organization, a customer can have a number of business processes which he or she might need to perform your daily activities. The workflow management screen will allow to search, filter, create, edit workflows.
+ APPSeCONNECT Workflows are the diagrammatic representations of a business process.  
 
  Organizations use Workflows to coordinate tasks and synchronize data between systems, with the ultimate goal of improving organizational efficiency, responsiveness and ease of use.
+
+ The workflow management screen will allow to search, filter, create and edit workflows.
 
  An implementer can ensure that all the projects are listed on a single page showing its various status and allowing to change status by reading this document.
 
  1. Log in to the APPSeCONNECT Portal
  2. Now choose a `Project -> Workflows` section under Account and a new page will open.
 
-![Workflow](../media/Workflow.PNG)
+   ![Workflow](../Media/Workflow.PNG)
 
  **Protip** Choose Project only, if you have multiple projects, else directly you are into your project
 
  3. If you are a new user and no previous workflow is there, neither in Base nor in the user template, this screen will appear
 
- ![NoWorkflow](../media/NoWorkflow.PNG)
+ ![NoWorkflow](../Media/NoWorkflow.PNG)
 
  4.  If you are an existing user who have used Workflows, the following screen will appear
 
-![Workflow_Landing](../media/Workflow_Landing.PNG)
+![Workflow_Landing](../Media/Workflow_Landing.PNG)
 
  5. You can view maximum of 6 workflow designed in a workflow page, rest workflows can be scrolled through navigation pages.
 
@@ -37,11 +39,11 @@ Author: Soumita
  
  7. Every workflow has one switch, this will either take the  workflow to `Active state` or will go to `Inactive state`. If it's in Inactive state, that workflow will not work on Agent's App.
 
-      ![Workflow_dialog](../media/Workflow_dialog.PNG)
+      ![Workflow_dialog](../Media/Workflow_dialog.PNG)
 
  8. You will get `SEARCH` panel in the top of the workflow page.
 
-      ![Search_Workflow](../media/Search_Workflow.PNG)
+      ![Search_Workflow](../Media/Search_Workflow.PNG)
 
 There are three types of Search functions you can use,e.g. 
 * Active - indicates that you want to search only for the active Workflows.
