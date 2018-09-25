@@ -1,7 +1,6 @@
 ﻿---
-title: "Overview of Workflows"
+title: "DELAY Node"
 toc: true
 tag: developers
 category: "Workflow"
-
 ---

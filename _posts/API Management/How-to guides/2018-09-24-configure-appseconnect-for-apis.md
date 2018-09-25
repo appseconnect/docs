@@ -10,3 +10,4 @@ menus:
         title: "How tos" 
         identifier: howtoapi 
 ---
+APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently without 

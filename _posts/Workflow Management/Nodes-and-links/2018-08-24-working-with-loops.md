@@ -1,7 +1,6 @@
 ﻿---
-title: "Quickstart guide to your first workflow"
+title: "DELAY Node"
 toc: true
 tag: developers
 category: "Workflow"
 ---
-Let
