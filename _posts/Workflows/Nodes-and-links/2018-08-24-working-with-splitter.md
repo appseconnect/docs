@@ -1,7 +1,6 @@
 ﻿---
-title: "Quickstart guide to debug workflows"
+title: "DELAY Node"
 toc: true
 tag: developers
 category: "Workflow"
 ---
- 
