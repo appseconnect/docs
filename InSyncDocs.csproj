@@ -143,6 +143,9 @@
     <Content Include="_posts\API Management\media\api-proxy-listing-screen.PNG" />
     <Content Include="_posts\API Management\media\authentication-genarate-api-key.PNG" />
     <Content Include="_posts\API Management\media\CompressionPolicy.PNG" />
+    <Content Include="_posts\API Management\media\HowToConnectDataSource-appandappversion.PNG" />
+    <Content Include="_posts\API Management\media\HowToConnectDataSource-selectapp.PNG" />
+    <Content Include="_posts\API Management\media\HowToConnectDataSource-Wizard.PNG" />
     <Content Include="_posts\API Management\media\inbound-policy-example.PNG" />
     <Content Include="_posts\API Management\media\ip-restrict-policy.PNG" />
     <Content Include="_posts\API Management\media\IPRestrictPolicy.PNG" />
