@@ -1,5 +1,5 @@
 --- 
-title: "How to open Workflow in Portal"
+title: "Workflow Management in Portal"
 toc: true
 tag: developers
 category: "Workflow Management Documentation"
@@ -53,7 +53,7 @@ There are three types of Search functions you can use,e.g.
 
 **Protip** The search will work with `all types characters like special, alphanumeric`. `Partial search` also will happen. There is no need to combine the search and dropdown in the Search section. 
 
-If you type nothing and click on Search, all the Workflows listed under your project will show on the page.
+9. If you type nothing and click on Search, all the Workflows listed under your project will show on the page.
 
 The above points explains the basic Workflow management in the portal.
 
