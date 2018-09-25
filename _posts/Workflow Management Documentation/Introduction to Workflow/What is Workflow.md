@@ -5,13 +5,13 @@ tag: developers
 category: "Workflow Management Documentation"
 Author: Soumita
 ---
-A workflow consists of an orchestrated pattern of business activity enabled by the systematic organization of resources into processes that transform materials or process information.
+Workflow is group of instructions to the integration service in APPSeCONNECT. 
 
-APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. APPSeCONNECT Wokflow is a concept that describe how process in business divides work activities into distinct roles, task, procedures and rules.
+APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is  a concept that describes how process in business divides work activities into distinct *roles, task, procedures and rules*.
 
 The Workflow feature helps user to graphically organize, create and view the data flow of a process.The customers with the aid of workflow can now design integration anytime and anywhere with the help of cloud portal.
 
-This feature enables to execute the orchestrated pattern of business activity with efficiency and optimality.
+Workflow enables to execute the orchestrated pattern of business activity with efficiency and optimality.
 
 **Benefits of Using Workflow**
 
