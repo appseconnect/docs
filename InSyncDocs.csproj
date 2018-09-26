@@ -150,8 +150,10 @@
     <Content Include="_posts\API Management\media\IPRestrictPolicy.PNG" />
     <Content Include="_posts\API Management\media\proxy-api-edit-screen.PNG" />
     <Content Include="_posts\API Management\media\register-url-org.PNG" />
+    <Content Include="_posts\API Management\media\register-url.PNG" />
     <Content Include="_posts\API Management\media\response-configure-api.PNG" />
     <Content Include="_posts\API Management\media\ValidateHTTPHeaderPolicy.PNG" />
+    <Content Include="_posts\API Management\media\Webhook-Introduction.PNG" />
     <Content Include="_posts\Workflow Management\media\NoWorkflow.png" />
     <Content Include="_posts\Workflow Management\media\Search_Workflow.png" />
     <Content Include="_posts\Workflow Management\media\Workflow.png" />
