@@ -36,6 +36,8 @@ You have to choose one project.
 After successfully logging in, you have to choose My Workflows section under Account and a new page will open.
 
 Refer the below steps [Working with Workflow in APPSeCONNECT] 
+[^structure]: See [**Structure** page]({{ "/_posts/Workflow-Management/2018-08-14-overview" | absolute_url }}) 
+
 Configuring 
 
 - Property Tab
