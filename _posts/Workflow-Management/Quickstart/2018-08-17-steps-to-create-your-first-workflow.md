@@ -57,17 +57,23 @@ Here select General Touchpoint and then drag it to the grid/blank panel.
 
      ![AddTouchpoint](media/AddTouchpoint.png)
 
-8. You have to select a connection and a touchpoint from the drop-down list of Select Connection and Select Touchpoint.
-Then click OK button, to confirm.
+8. You have to select a connection and a touchpoint from the drop-down list of `Select Connection` and `Select Touchpoint`.
+   Now click OK button, to confirm.The following screen appears
 
-* Similarly, you have to drag & drop more touchpoints to complete a cycle.
+   ![Masterdata-Add](media/Masterdata-Add.png)
+
+* Similarly, drag & drop more touchpoints to complete a cycle.
 * You should make connections between all the touchpoints through lower circle segment of each pane.
 * After all the steps have been completed, you have to run it.
 
-`Protip` Initially the Run button will be in disable state, you have to activate it following these steps:
+    ![Runbutton](media/Runbutton.png)
+
+`Protip` Initially the Run button will be in disabled state, you have to activate it following these steps:
 `Go to the APPSeCONNECT -> Settings Panel -> check the Activate box`.`
 
 9. Now Run it and this will open another form.
+
+ ![Workflow-Executed](media/Workflow-Executed.png)
 
 10. Here, you can see each step of the operation. The circle segments of the nodes will change its color according to the operation
 
