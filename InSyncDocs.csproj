@@ -142,6 +142,8 @@
     <Content Include="_posts\API-Management\media\api-proxy-listing-screen.PNG" />
     <Content Include="_posts\API-Management\media\API-Webhook-shopify.PNG" />
     <Content Include="_posts\API-Management\media\authentication-genarate-api-key.PNG" />
+    <Content Include="_posts\API-Management\media\BackendApp-How-to-chooseapps.PNG" />
+    <Content Include="_posts\API-Management\media\BackendApp-How-to.PNG" />
     <Content Include="_posts\API-Management\media\CompressionPolicy.PNG" />
     <Content Include="_posts\API-Management\media\CreateAPI_webhook.PNG" />
     <Content Include="_posts\API-Management\media\HowToConnectDataSource-appandappversion.PNG" />
