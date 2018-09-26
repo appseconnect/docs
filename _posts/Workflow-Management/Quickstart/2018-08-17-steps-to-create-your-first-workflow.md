@@ -24,7 +24,7 @@ If you are new to Workflow, then please go through the below steps to know more.
 
 * Now Choose two generic app for integration & workflow creation.
 
-* Sample App chosen - Magento & SAP B1
+* Sample App chosen - Magento 2 & SAP B1
 
 * You should have a valid order on Magento 2. That means it should have valid items, Business Partner, and Sales Order.
 The connection should be done in the Cloud.
@@ -42,8 +42,11 @@ After successfully logging in, you have to choose My Workflows section under Acc
 
 4. Go to my Workflows section under Account and a new page will open.
 
+   ![WorkflowPage](media/WorkflowPage.png)
 
 5. On the upper left corner you will get the **Create Workflow** button.Click on it and the following page appears
+
+   ![CreateWorkflowPage](media/CreateWorkflowPage.png)
 
 6. To start the workflow, Drag & Drop the Start node from the ITEMS section, on the blank/grid section.
 
@@ -67,6 +70,26 @@ Then click OK button, to confirm.
 
 You will a pop-up on the screen.
 
+N.B: Operation is going on = yellow color
+        Operation successfully did = green color
+        Operation failed = red color
+
+You see messages in each step.
+You can check the workflow functionalities for the following nodes:
+GetSpilter
+Start
+Merger
+Loop
+Halt
+Resume
+Note: For execution of workflow using cloud agent you need to have cloud to cloud connection, cloud agent and cloud supported app.
+
+See Also:
+
+APPSeCONNECT workflow listing page
+Base-workflow.
+Split and merger in workflow     
+Attribute Mapping of workflow
 
 
 
