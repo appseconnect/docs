@@ -50,8 +50,12 @@ After successfully logging in, you have to choose My Workflows section under Acc
 
 6. To start the workflow, Drag & Drop the Start node from the ITEMS section, on the blank/grid section.
 
+    ![Start](media/Start.png)
+
 7. Click the (+) sign beside Templates section, a list will open. 
 Here select General Touchpoint and then drag it to the grid/blank panel.
+
+     ![AddTouchpoint](media/AddTouchpoint.png)
 
 8. You have to select a connection and a touchpoint from the drop-down list of Select Connection and Select Touchpoint.
 Then click OK button, to confirm.
