@@ -1,5 +1,5 @@
 ﻿---
-title: "DELAY Node"
+title: "Loops Node"
 toc: true
 tag: developers
 category: "Workflow"
