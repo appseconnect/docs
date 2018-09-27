@@ -42,7 +42,7 @@ category: "Workflow"
 
 * Alternate Flows – NOT APPLICABLE 
 * Post-conditions – The user can now see that the Customer downloaded is successful and can be fetched in SAP B1. 
-* Exception courses –  The user will get resync bucket error log if the customer download is failure.
+* Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the customer download is failure.
 * Frequency of use  – The user can execute teh workflow as and when required. Scheduler can be used for scheduling the workflow.
 * Assumptions – NOT APPLICABLE 
 
