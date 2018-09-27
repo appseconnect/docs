@@ -181,9 +181,16 @@
     <Content Include="_posts\API-Management\media\Wizard-API-Mapping.PNG" />
     <Content Include="_posts\API-Management\media\Wizard-API-Source.PNG" />
     <Content Include="_posts\API-Management\media\Wizard-API-Summary.PNG" />
+    <Content Include="_posts\Workflow-Management\media\AddTouchpoint.png" />
+    <Content Include="_posts\Workflow-Management\media\CreateWorkflow.png" />
+    <Content Include="_posts\Workflow-Management\media\Masterdata-Add.png" />
     <Content Include="_posts\Workflow-Management\media\NoWorkflow.png" />
+    <Content Include="_posts\Workflow-Management\media\Runbutton.png" />
     <Content Include="_posts\Workflow-Management\media\Search_Workflow.png" />
+    <Content Include="_posts\Workflow-Management\media\Start.png" />
+    <Content Include="_posts\Workflow-Management\media\Workflow-Executed.png" />
     <Content Include="_posts\Workflow-Management\media\Workflow.png" />
+    <Content Include="_posts\Workflow-Management\media\WorkflowPage.png" />
     <Content Include="_posts\Workflow-Management\media\Workflow_dialog.png" />
     <Content Include="_posts\Workflow-Management\media\Workflow_Landing.png" />
     <None Include="assets\css\main.scss" />
