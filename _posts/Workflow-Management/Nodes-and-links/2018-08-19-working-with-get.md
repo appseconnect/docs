@@ -3,7 +3,6 @@ title: "GET Node"
 toc: true
 tag: developers
 category: "Workflow"
-author: "Abhishek Sur"
 ---
 To get data from an application, APPSeCONNECT uses `GET` node. A `GET` node is associated with a particular action which
 uses specific action filters and credentials mentioned to the application to get a response back to APPSeCONNECT. As APPSeCONNECT always talk in terms of 
