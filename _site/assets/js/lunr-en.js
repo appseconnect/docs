@@ -102,7 +102,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Important Terminologies",
-      excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow Touchpoint - Touchpoints...",
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow - A flow...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 10
@@ -610,7 +610,7 @@ var store = [
       {
         "title": "Important Terminologies",
         "url": "http://localhost:4000/workflow/Terminologies/",
-        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow Touchpoint - Touchpoints...",
+        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow - A flow...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
