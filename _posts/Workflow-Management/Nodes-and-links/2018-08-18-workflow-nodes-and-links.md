@@ -3,7 +3,6 @@ title: "Nodes and Link overview"
 toc: true
 tag: developers
 category: "Workflow"
-author: "Abhishek Sur"
 menus: 
     workflow:
         icon: fa fa-link
@@ -12,47 +11,3 @@ menus:
 
 ---
 
-Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to an API publisher
-that can impose some change in behavior of an API. Policies are collection of statements which are execued sequentially
-on the request or response of an API. They are applied either before execution of actual action (stated as InBound policies) or 
-after the actual action has been executed (termed as Outbound Policies). Some policies can change the Http Pipeline of an API execution 
-altogether. 
-
-## Understanding Policies
-
-To understand policy infrastructure of an API let us dig deep into how the Http Pipeline of an API looks like
-[Image]
-
-In the above image, it is eminent that when a request is received to the API gateway, it goes through the pipeline 
-first to authentication through user registry, then execute `Inbound` policies, next it executes the backend action 
-to generate the response in XML format, executes the `Outbound` policies and finally returns the response 
-back to the caller. 
-
-**Note** Policies execute in sequential order, you can change the sequence anytime just to ensure the 
-policies are configured correctly. 
-
-
-## Policy References
-
-|Name|Description|Applied for|Is Mandatory|Scope|
-|-----|----------|---|---|---|
-|[QuotaPerUser Policy]()|Quota per user applies quota to certain user such that after a fixed number of calls, the API will automatically throttle. [Read More]()|`Inbound`|No|Operation|
-|[IP Restrict Policy]()|Allows the user to provide IP range which will automatically restrict calls[Read More]()|`Inbound`|No|Operation|
-|[ValidateHttpHeader Policy]()|Validates a fixed header on a request [ReadMore]()|`Inbound`|No|Operation|
-|[Compression Policy]()|Allows compressed response when browser accepts compression [Read More]()|`Outbound`|No|Operation|
-|[ResponseFormatConversion Policy]()|Replies data in format requested [Read More]()|`Outbound`|No|Operation|
-
-## Policy Scope
-
-Policy scope is the area where the policies can be applied. The scope can be of different types : 
-
-|Scope|Description|Overrides|
-|-----|----------|---|
-|Operation|Applies to leaf level of an API, for example, when `Customer` is an API, Operation is `GET` of a Customer.|Yes|
-|API|Applies to a particular API and automatically override all `Operation` of the API|Yes|
-|Organization|Applies to all APIs of an organization|Yes|
-|Base|Applies to all organization irrespective of any API|No|
-
-Once `Inbound`specifies the scope of the policy to be applied before execution of main data source and `Outbound`specifies it after the execution of main data source. 
-
-**Protip** Do not validate a request in `Outbound` scope, as it will always consume your resources and response time will be increased 
