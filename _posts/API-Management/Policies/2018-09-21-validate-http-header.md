@@ -6,7 +6,7 @@ category: "API Management"
 author: "Soumya Ghosh"
 menus: 
     policies:
-        icon: fa fa-gg
+        icon: fa fa-cogs
         title: "Invalidate Http Headers" 
 ---
 **Validate HTTP Header** policy inspects each HTTP Request whether the HTTP Request contains a particular 

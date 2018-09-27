@@ -123,14 +123,13 @@
 
 
     <!-- start custom head snippets -->
-
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
-
 <!-- end custom head snippets -->
-
 <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/aos.css" /> 
+<link rel="stylesheet" href="/assets/css/aos.css" />
 <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/assets/js/plugins/jstree/dist/themes/default-dark/style.min.css"/>
+<link type="text/css" rel="stylesheet" href="/assets/js/plugins/jstree/dist/themes/default/style.min.css" />
   </head>
 
   <body class="layout--splash">
@@ -428,11 +427,11 @@
       </div>
     
       
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="/assets/js/plugins/jquery.min.js"></script>
+<script src="/assets/js/plugins/ajaxify/ajaxify.min.js"></script>
 <script src="/assets/js/script.js"></script>
 <script src="/assets/js/aos.js"></script>
+<script src="/assets/js/plugins/jstree/dist/jstree.js"></script>
 <script type="text/javascript">
     var nav = $('.sidebar__right');
     var lastId;
@@ -445,7 +444,11 @@
         var item = $($(this).attr("href"));
         if (item.length) { return item; }
     });
-
+    $("#sidebarMenu").on('changed.jstree', function (e, data) {
+        if (data.action == 'select_node') { 
+            location.href = data.node.a_attr.href;
+        }
+    }).jstree();
     $(window).scroll(function () {
         // Get container scroll position
         var fromTop = $(this).scrollTop();
@@ -489,7 +492,7 @@
             else {
                 menu.addClass('open');
             }
-        });
+        }); 
     });
     function showMenu(o) {
 

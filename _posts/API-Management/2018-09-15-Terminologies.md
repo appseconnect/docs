@@ -7,7 +7,7 @@ menus:
     api:
         icon: fa fa-gg
         title: "Terminology" 
-        identifier: terminology 
+        identifier: apiterminology 
 author: "Abhishek Sur"
 ---
 

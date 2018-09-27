@@ -6,7 +6,7 @@ category: "API Management"
 author: "Soumya Ghosh"
 menus: 
     policies:
-        icon: fa fa-gg
+        icon: fa fa-cogs
         title: "Apply Compression Policy" 
 ---
 **Compression Policy** compresses the response coming from the backend and thus can help to increase the performance of websites.

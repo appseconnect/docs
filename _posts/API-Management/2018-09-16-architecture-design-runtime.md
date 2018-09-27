@@ -7,15 +7,17 @@ menus:
     api:
         icon: fa fa-gg
         title: "Architecture Overview" 
-        identifier: architecture 
+        identifier: apiarchitecture 
 author: "Abhishek Sur"
 ---
 
 APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute data interactions using standard set of protocol defined by the industry. APPSeCONNECT uses 
 REST protocol to communicate which is translated to the application code automatically using our time tested solution and to generate output response back to the user.  In this article we will look at how 
-the Architecture of APPSeCONNECT looks like. 
+the Architecture of APPSeCONNECT looks like.
+ 
+![Architecture Api Management](media/architecture-api-management.png)
 
-[image]
+## Components
 
 API management stack for our platform connects to the same stack which is followed by the integration system. There are components which connects 
 different sections of the application. The External world comprises of diverse devices, some of them are Laptops, some are Mobiles, or even some are

@@ -7,7 +7,7 @@ menus:
     api:
         icon: fa fa-gg
         category: "How to guides"
-        title: "How tos" 
+        title: "How to guides" 
         identifier: howtoapi 
 ---
 APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.
