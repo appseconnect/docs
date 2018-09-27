@@ -24,6 +24,7 @@ category: "Workflow"
 
 8. The user after creating the workflow will give a name to the untitled workflow and click on `SAVE` button to save the workflow.
 
+            ![CustomerDownload_Simple](media/CustomerDownload_Simple.png)
 9. The user after creating the workflow will deploy that in the Agent.
 
 10. The user will navigate to teh Enviornment module and click on Agent Setting to check the connection is active or not .
