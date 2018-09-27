@@ -101,11 +101,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Getting started to APPSeCONNECT",
+      excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
+      categories: ["AppseConnect & IPAAS"],
+      tags: ["developers"],
+      id: 10
+    });
+    
+  
+    idx.add({
       title: "Overview of Workflows",
       excerpt: "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 10
+      id: 11
     });
     
   
@@ -114,7 +123,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow - A flow...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 11
+      id: 12
     });
     
   
@@ -123,7 +132,7 @@ var idx = lunr(function () {
       excerpt: "API\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 12
+      id: 13
     });
     
   
@@ -132,7 +141,7 @@ var idx = lunr(function () {
       excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 13
+      id: 14
     });
     
   
@@ -141,7 +150,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 14
+      id: 15
     });
     
   
@@ -150,7 +159,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 15
+      id: 16
     });
     
   
@@ -159,7 +168,7 @@ var idx = lunr(function () {
       excerpt: "To get data from an application, APPSeCONNECT uses GET node. A GET node is associated with a particular action which...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 16
+      id: 17
     });
     
   
@@ -168,7 +177,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 17
+      id: 18
     });
     
   
@@ -177,7 +186,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 18
+      id: 19
     });
     
   
@@ -186,7 +195,7 @@ var idx = lunr(function () {
       excerpt: "Markdown file\n",
       categories: [],
       tags: [],
-      id: 19
+      id: 20
     });
     
   
@@ -195,7 +204,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 20
+      id: 21
     });
     
   
@@ -204,21 +213,12 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 21
-    });
-    
-  
-    idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "\n",
-      categories: ["Workflow"],
-      tags: ["developers"],
       id: 22
     });
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "Quickstart guide to your first workflow",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -227,7 +227,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
+      title: "DELAY Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -236,7 +236,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Architecture",
+      title: "Quickstart guide to your first workflow",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -245,7 +245,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "HALT/RESUME Node",
+      title: "Architecture",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -254,7 +254,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Working with Loops",
+      title: "HALT/RESUME Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -263,7 +263,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Merge Node",
+      title: "Working with Loops",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -272,7 +272,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Rule Node",
+      title: "Merge Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -281,7 +281,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Sequencer Node",
+      title: "Rule Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -290,7 +290,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Splitter Node",
+      title: "Sequencer Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -299,7 +299,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Working with Workflow groups",
+      title: "Splitter Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -308,7 +308,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
+      title: "Working with Workflow groups",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -362,11 +362,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 39
+    });
+    
+  
+    idx.add({
       title: "Overview of API Management",
       excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 39
+      id: 40
     });
     
   
@@ -375,7 +384,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 40
+      id: 41
     });
     
   
@@ -384,7 +393,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 41
+      id: 42
     });
     
   
@@ -393,7 +402,7 @@ var idx = lunr(function () {
       excerpt: "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 42
+      id: 43
     });
     
   
@@ -402,7 +411,7 @@ var idx = lunr(function () {
       excerpt: "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 43
+      id: 44
     });
     
   
@@ -411,7 +420,7 @@ var idx = lunr(function () {
       excerpt: "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 44
+      id: 45
     });
     
   
@@ -420,7 +429,7 @@ var idx = lunr(function () {
       excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 45
+      id: 46
     });
     
   
@@ -429,7 +438,7 @@ var idx = lunr(function () {
       excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 46
+      id: 47
     });
     
   
@@ -438,7 +447,7 @@ var idx = lunr(function () {
       excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 47
+      id: 48
     });
     
   
@@ -447,7 +456,7 @@ var idx = lunr(function () {
       excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 48
+      id: 49
     });
     
   
@@ -456,7 +465,7 @@ var idx = lunr(function () {
       excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 49
+      id: 50
     });
     
   
@@ -465,7 +474,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently without\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 50
+      id: 51
     });
     
   
@@ -474,7 +483,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 51
+      id: 52
     });
     
   
@@ -483,7 +492,7 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 52
+      id: 53
     });
     
   
@@ -492,7 +501,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API Management"],
       tags: ["developers"],
-      id: 53
+      id: 54
     });
     
   
@@ -609,6 +618,17 @@ var store = [
         "title": "Overview of AppseConnect",
         "url": "http://localhost:4000/appseconnect%20and%20ipaas/home/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Getting started to APPSeCONNECT",
+        "url": "http://localhost:4000/appseconnect%20&%20ipaas/getting-started/",
+        "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
