@@ -126,14 +126,13 @@
 
 
     <!-- start custom head snippets -->
-
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
-
 <!-- end custom head snippets -->
-
 <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/aos.css" /> 
+<link rel="stylesheet" href="/assets/css/aos.css" />
 <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/assets/js/plugins/jstree/dist/themes/default-dark/style.min.css"/>
+<link type="text/css" rel="stylesheet" href="/assets/js/plugins/jstree/dist/themes/default/style.min.css" />
   </head>
 
   <body class="layout--single">
@@ -230,110 +229,996 @@
 
 
 
+<div id="sidebarMenu">
+    
+    
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/workflow/overview/" title="Go to Workflow Management">Workflow Management</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/workflow/architecture-design-runtime/" title="Go to Architecture">Architecture</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/steps-to-create-your-first-workflow/" title="Go to Getting started with Workflow">Getting started with Workflow</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/activating-prepackaged-workflow/" title="Go to Packaging and Activating workflow">Packaging and Activating workflow</a>
+        
+    </li>
+    
+</ul>
 
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/workflow-nodes-and-links/" title="Go to Nodes and Links">Nodes and Links</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-get/" title="Go to Working with Get">Working with Get</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-process/" title="Go to Working with Process">Working with Process</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-post/" title="Go to Working with Post">Working with Post</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-filter/" title="Go to Working with Filter">Working with Filter</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-delay/" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-halt-resume/" title="Go to Working with Halt/Resume">Working with Halt/Resume</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-loops/" title="Go to Working with Loops">Working with Loops</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-merger/" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-rule/" title="Go to Working with Rules">Working with Rules</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-sequencer/" title="Go to Working with Sequencer">Working with Sequencer</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/working-with-splitter/" title="Go to Working with Splitter">Working with Splitter</a>
+        
+    </li>
+    
+</ul>
 
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/basic-workflow-customer-download/" title="Go to Simple quickstart to workflow">Simple quickstart to workflow</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/delay-execution-in-workflow/" title="Go to Delay workflow execution">Delay workflow execution</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/workflow-filter-node-customer-download/" title="Go to Filter data in Workflow">Filter data in Workflow</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/process-to-configure-customer-with-splitter/" title="Go to Splitting data in workflow">Splitting data in workflow</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/executing-an-endpoint-before-another/" title="Go to Executing workflow sequentially">Executing workflow sequentially</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/process-to-configure-a-task-with-acknowledgement/" title="Go to Acknoledge data to new endpoint">Acknoledge data to new endpoint</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/executing-an-endpoint-after-another/" title="Go to Sequence workflow connectors">Sequence workflow connectors</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/workflow-creation-with-reusable-data/" title="Go to Reuseing data multiple times">Reuseing data multiple times</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/workflow/faqs/" title="Go to FAQs">FAQs</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/workflow/Terminologies/" title="Go to Terminology">Terminology</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-home"}'>
+        <a href="/appseconnect%20&%20ipaas/home/" title="Go to Home">Home</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-etsy"}'>
+        <a href="/api%20management/overview/" title="Go to API Management">API Management</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/api%20management/architecture-design-runtime/" title="Go to Architecture Overview">Architecture Overview</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a href="/api%20management/policies/" title="Go to Policies">Policies</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a href="/api%20management/ip-restrict/" title="Go to IP-Restrict Policy">IP-Restrict Policy</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a href="/api%20management/validate-http-header/" title="Go to Invalidate Http Headers">Invalidate Http Headers</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a href="/api%20management/compression-apply/" title="Go to Apply Compression Policy">Apply Compression Policy</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a href="/api%20management/response-content-format/" title="Go to Response Content Format Transform Policy">Response Content Format Transform Policy</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a href="/api%20management/quota-per-user-key/" title="Go to Quota-Per-Key-Policy">Quota-Per-Key-Policy</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/api%20management/configure-appseconnect-for-apis/" title="Go to How to guides">How to guides</a>
+        
+        
+        
+<ul>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/api%20management/connecting-to-a-data-source/" title="Go to Connecting to external data source">Connecting to external data source</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/api%20management/deployments-and-environments/" title="Go to Deploy to environments">Deploy to environments</a>
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/api%20management/choosing-backend-apps/" title="Go to Configure Apps">Configure Apps</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/api%20management/Terminologies/" title="Go to Terminology">Terminology</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-play"}'>
+        <a href="/appseconnect%20&%20ipaas/getting-started/" title="Go to Getting Started">Getting Started</a>
+        
+    </li>
+    
+</ul>
+
+</div>
+<!--
 <div class="sidebar sticky">
-<p style="color:#1D7AB1"><strong>Developers</strong> persona</p>
-  <nav class="nav__list">
-    <ul class="nav__items">
+    <nav class="nav__list">
+        <ul class="nav__items">
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.Developing Adapter for APPSeCONNECT</li>
+            
+            <li class="menu-items"> <a href="/developing%20adapter%20for%20appseconnect/What-is-an-Adapter/">@What is an Adapter</a></li>
 
-	
-			
-			 
+            
 
-			 <span class="nav__sub-title sub-title" onclick="showMenu(this)">Developing Adapter for APPSeCONNECT</span>
-		
-			 
-				
-				<li class="menu-items" style="display:none;"> <a href="//developing%20adapter%20for%20appseconnect/What-is-an-Adapter/">What is an Adapter</a></li>
-			
-				
-				
-			 
+            
 
-			 
+            
 
-   
-			
-			 
-			 
-				
-					<li class="menu-items" style="display:none;"> <a href="//developing%20adapter%20for%20appseconnect/How-to-develop-an-Adapter/">How to develop an Adapter</a></li>
-				
-				
-			 
-			 
-			 
+            
+            
+            
 
-   
-			
-			 
+            
+            <li class="menu-items"> <a href="/developing%20adapter%20for%20appseconnect/How-to-develop-an-Adapter/">^How to develop an Adapter</a></li>
 
-			 <span class="nav__sub-title sub-title" onclick="showMenu(this)">Developing Resources for APPSeCONNECT</span>
-		
-			 
-				
-				
-			   <li class="menu-items" style="display:none;"> <a href="//developing%20resources%20for%20appseconnect/What-is-a-Resourse/" class="active">What is an Resource</a></li>
-				
-				
-			 
+            
 
-			 
 
-   
-			
-			 
-			 
-				
-					<li class="menu-items" style="display:none;"> <a href="//developing%20resources%20for%20appseconnect/How-to-develop-an-Resourse/">How to develop an Resource</a></li>
-				
-				
-			 
-			 
-			 
+            
 
-   
-			
-			 
-			 
-				
-					<li class="menu-items" style="display:none;"> <a href="//developing%20resources%20for%20appseconnect/How-to-test-an-Resourse/">How to test an Resource</a></li>
-				
-				
-			 
-			 
-			 
+            
+            
+            
 
-   
-			
-			 
+            
+            <li class="menu-items"> <a href="/developing%20adapter%20for%20appseconnect/How-to-test-an-Adapter/">^How to test an Adapter</a></li>
 
-			 <span class="nav__sub-title sub-title" onclick="showMenu(this)">Installation and Configuration Guide</span>
-		
-			 
-				
-				<li class="menu-items" style="display:none;"> <a href="//installation%20and%20configuration%20guide/How-to-install-APPSeCONNECT/">How to install APPSeCONNECT</a></li>
-			
-				
-				
-			 
+            
 
-			 
 
-   
+            
 
-  </ul>
-</nav>
-</div>  
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.Developing Resources for APPSeCONNECT</li>
+            
+            <li class="menu-items"> <a href="/developing%20resources%20for%20appseconnect/What-is-a-Resourse/" class="active">-What is an Resource</a></li>
+            
 
- 
- 
- 
- 
- 
- 
- 
+            
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/developing%20resources%20for%20appseconnect/How-to-develop-an-Resourse/">^How to develop an Resource</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/developing%20resources%20for%20appseconnect/How-to-test-an-Resourse/">^How to test an Resource</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.Handling Permission</li>
+            
+            <li class="menu-items"> <a href="/handling%20permission/What-is-a-Permission/">@What is a Permission</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.Adding Permission</li>
+            
+            <li class="menu-items"> <a href="/adding%20permission/How-to-add-permission/">@How to add permission</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/adding%20permission/How-to-revoke-permission/">^How to revoke permission</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.AppseConnect & IPAAS</li>
+            
+            <li class="menu-items"> <a href="/appseconnect%20&%20ipaas/home/">@Overview of AppseConnect</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/appseconnect%20&%20ipaas/getting-started/">^Getting started to APPSeCONNECT</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.Workflow</li>
+            
+            <li class="menu-items"> <a href="/workflow/overview/">@Overview of Workflows</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/Terminologies/">^Important Terminologies</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/architecture-design-runtime/">^Architecture</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/steps-to-create-your-first-workflow/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/workflow-nodes-and-links/">^Nodes and Link overview</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/activating-prepackaged-workflow/">^Quickstart guide to debug workflows</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-get/">^GET Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/choosing-apps-for-integration/">^Choosing applications for integration</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-process/">^PROCESS Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.</li>
+            
+            <li class="menu-items"> <a href="/deploying-and-executing/">@Deploying And Executing</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.Workflow</li>
+            
+            <li class="menu-items"> <a href="/workflow/working-with-post/">@POST Node</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-filter/">^FILTER Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/basic-workflow-customer-download/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-delay/">^DELAY Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/workflow-creation-with-reusable-data/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/faqs/">^Architecture</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-halt-resume/">^HALT/RESUME Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-loops/">^Working with Loops</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-merger/">^Merge Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-rule/">^Rule Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-sequencer/">^Sequencer Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-splitter/">^Splitter Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/working-with-touchpoint/">^Touchpoint Node</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/delay-execution-in-workflow/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/workflow-filter-node-customer-download/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/process-to-configure-customer-with-splitter/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/executing-an-endpoint-before-another/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/process-to-configure-a-task-with-acknowledgement/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/workflow/executing-an-endpoint-after-another/">^Quickstart guide to your first workflow</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+            <li class="nav__sub-title sub-title" onclick="showMenu(this)">.API Management</li>
+            
+            <li class="menu-items"> <a href="/api%20management/overview/">@Overview of API Management</a></li>
+
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/Terminologies/">^Important Terminologies</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/architecture-design-runtime/">^Architecture</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/steps-to-create-proxy-endpoint/">^Quickstart guide to create web proxies</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/steps-to-create-webhook-endpoint/">^Quickstart guide to create webhook APIs</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/policies/">^Policy Overview</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/quota-per-user-key/">^Quota for a Key policy</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/ip-restrict/">^Filter Request by IP policy</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/validate-http-header/">^Validate http headers policy</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/compression-apply/">^Compression Policy</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/response-content-format/">^Response content format identification policy</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/configure-appseconnect-for-apis/">^Configuring APPSeCONNECT for API Hosting</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/choosing-backend-apps/">^Choose Applications from catalog</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/connecting-to-a-data-source/">^Connecting an API to any data source</a></li>
+
+            
+
+
+            
+
+            
+            
+            
+
+            
+            <li class="menu-items"> <a href="/api%20management/deployments-and-environments/">^Deploy and publish APIs to different environments</a></li>
+
+            
+
+
+            
+
+            
+
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
+
+ -->
+
+
+
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="What is an Resource">
@@ -352,7 +1237,7 @@
                     <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1" />
                 </li>
-                <span class="sep">/</span>
+                <li class="sep">/</li>
                 
                 
                 
@@ -360,7 +1245,7 @@
                     <a href="http://localhost:4000/categories/developing-resources-for-appseconnect" itemprop="item"><span itemprop="name">Developing resources for appseconnect</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
-                <span class="sep">/</span>
+                <li class="sep">/</li>
                 
                 
                 
@@ -377,6 +1262,37 @@
             <header>
                 <h1 class="page__title" itemprop="headline">What is an Resource
 </h1>
+                
+                
+
+
+  
+  
+  
+
+  <div class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#developers" class="page__taxonomy-item" rel="tag">developers</a>
+    
+    </span>
+  </div>
+
+                
+                
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-04T00:00:00+05:30">January 04, 2010</time></p>
+                
+                
+                <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
                 
             </header>
             
@@ -398,6 +1314,9 @@
             <footer class="page__meta">
                 
                 
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-04T00:00:00+05:30">January 04, 2010</time></div>
+                
+                
   
 
 
@@ -405,7 +1324,7 @@
   
   
 
-  <p class="page__taxonomy">
+  <div class="page__taxonomy">
     <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
@@ -414,7 +1333,7 @@
       <a href="http://localhost:4000/tags/#developers" class="page__taxonomy-item" rel="tag">developers</a>
     
     </span>
-  </p>
+  </div>
 
 
 
@@ -438,107 +1357,84 @@
   </p>
 
 
-                
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-04T00:00:00+05:30">January 04, 2010</time></p>
-                
+
             </footer>
 
-            
+            <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=What+is+an+Resource%20http%3A%2F%2Flocalhost%3A4000%2Fdeveloping%2520resources%2520for%2520appseconnect%2FWhat-is-a-Resourse%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdeveloping%2520resources%2520for%2520appseconnect%2FWhat-is-a-Resourse%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fdeveloping%2520resources%2520for%2520appseconnect%2FWhat-is-a-Resourse%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdeveloping%2520resources%2520for%2520appseconnect%2FWhat-is-a-Resourse%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
 
             
 
 
 
         </div>
+
+
+
+        
+        <div class="section-see-also">
+            <h2 class="page__see-also">See Also</h2>
+            <div class="page-grid-seealso">
+                <div class="sectionbody">
+                    <div class="ulist">
+                        <ul>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api%20management/deployments-and-environments/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Deploy and publish APIs to different environments
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api%20management/connecting-to-a-data-source/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Connecting an API to any data source
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api%20management/choosing-backend-apps/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Choose Applications from catalog
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api%20management/configure-appseconnect-for-apis/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Configuring APPSeCONNECT for API Hosting
+                                </a>
+                            </li>
+                            
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
 
         
     </article>
-
-    
-    
-    <div class="page__related">
-        <h4 class="page__related-title">You May Also Enjoy</h4>
-        <div class="grid__wrapper">
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/working%20with%20subscription/How-to-edit-subscription/" rel="permalink">How to edit subscription
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/working%20with%20subscription/How-to-change-subscription/" rel="permalink">How to change subscription
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/working%20with%20subscription/What-is-a-Subscription/" rel="permalink">What is a Subscription
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/adding%20permission/How-to-revoke-permission/" rel="permalink">How to revoke permission
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-            
-        </div>
-    </div>
-    
 </div>
 
 
@@ -548,7 +1444,21 @@
     
       <div class="search-content">
         <div class="search-content__inner-wrap">
-  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <a href="#" title="close" class="closeSearch"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <div class="searchTopGap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." /></div>
+  <div id="searchFound" class="searchDefaultBox">
+      <img src="/assets/images/search-img.png" alt="" />
+      <h3>Search your Term...</h3>
+      <p>
+          Donec vulputate urna at tellus eleifend, at ornare mi porta. Curabitur et odio gravida,
+          commodo felis eget, consectetur eros. Nullam venenatis lacus placerat sagittis pharetra.
+      </p>
+  </div>
+  <div id="searchNotFound" class="searchDefaultBox hideBox">
+      <img src="/assets/images/search-not-found.png" alt="" />
+      <h3>No Results</h3>
+      <p>We Searched far and wide and couldn't<br /> find any documents matching your search.</p>
+  </div>
   <div id="results" class="results"></div>
 </div>
       </div>
@@ -576,7 +1486,90 @@
           </footer>
         </div>
       
-    
+    <script src="/assets/js/plugins/jquery.min.js"></script>
+<script src="/assets/js/plugins/ajaxify/ajaxify.min.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/aos.js"></script>
+<script src="/assets/js/plugins/jstree/dist/jstree.js"></script>
+<script type="text/javascript">
+    var nav = $('.sidebar__right');
+    var lastId;
+    var tocMenu = $(".toc__menu");
+
+    // All list items
+    var menuItems = tocMenu.find("a");
+    // Anchors corresponding to menu items
+    var scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+    $("#sidebarMenu").on('changed.jstree', function (e, data) {
+        if (data.action == 'select_node') { 
+            location.href = data.node.a_attr.href;
+        }
+    }).jstree();
+    $(window).scroll(function () {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop();
+
+        if (fromTop > 136) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        } 
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+              .removeClass("active");
+
+            var selectedMenu = menuItems.filter("[href*='" + id + "']");
+
+            selectedMenu.addClass("active");
+        }
+
+    });
+
+    $(document).ready(function () {
+        
+        $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
+        $('#cssmenu #menu-button').on('click', function () {
+            debugger;
+            var menu = $(this).next('ul');
+            if (menu.hasClass('open')) {
+                menu.removeClass('open');
+            }
+            else {
+                menu.addClass('open');
+            }
+        }); 
+    });
+    function showMenu(o) {
+
+        $(o).nextUntil(".nav__sub-title").slideToggle();
+
+    }
+    $(".nav__sub-title").click(function () {
+        $(this).toggleClass("sidebaractive");
+    });
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
+
+  <script src="http://localhost:4000/assets/js/plugins/jquery.fitvids.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.greedy-navigation.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.magnific-popup.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.smooth-scroll.min.js"></script>
   <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
@@ -606,47 +1599,7 @@
 
   
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/aos.js"></script>
-<script type="text/javascript">
-    var nav = $('.sidebar__right');
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 136) {
-            nav.addClass("f-nav");
-        } else {
-            nav.removeClass("f-nav");
-        }
-    });
 
-    $(document).ready(function () {
-        
-        $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
-        $('#cssmenu #menu-button').on('click', function () {
-            debugger;
-            var menu = $(this).next('ul');
-            if (menu.hasClass('open')) {
-                menu.removeClass('open');
-            }
-            else {
-                menu.addClass('open');
-            }
-        });
-    });
-    function showMenu(o) {
-
-        $(o).nextUntil(".nav__sub-title").toggle();
-
-    }
-    $(".nav__sub-title").click(function () {
-        $(this).toggleClass("sidebaractive");
-    });
-    AOS.init({
-        easing: 'ease-in-out-sine'
-    });
-</script>
 
 
   </body>
