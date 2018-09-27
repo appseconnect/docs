@@ -173,7 +173,15 @@
 <lastmod>2018-09-16T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/api-management/common-use-cases-on-api-management/</loc>
+<lastmod>2018-09-16T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/api-management/steps-to-create-proxy-endpoint/</loc>
+<lastmod>2018-09-17T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/api-management/create-api-using-custom-datasource/</loc>
 <lastmod>2018-09-17T00:00:00+05:30</lastmod>
 </url>
 <url>
