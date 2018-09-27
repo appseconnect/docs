@@ -196,8 +196,6 @@
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
     <None Include="_posts\2010-01-16-home.md" />
-    <None Include="_posts\2010-01-16-home.md" />
-    <None Include="_posts\2010-01-17-getting-started.md" />
     <None Include="_posts\2010-01-17-getting-started.md" />
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
     <None Include="_posts\API-Management\2018-09-15-Terminologies.md" />
@@ -232,6 +230,7 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-rule.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-sequencer.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-splitter.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-touchpoint.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-activating-prepackaged-workflow.md" />
     <None Include="_posts\Workflow-Management\Used Cases\2018-08-22-basic-workflow-customer-download.md" />
