@@ -2,7 +2,7 @@
 title: "Connecting an API to any data source"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 menus: 
     howtoapi:
         icon: fa fa-gg
@@ -32,5 +32,8 @@ If you are creating **API proxy** for the `First Time`, you are being presented 
  * For example,I have choosen an App called **GenericDatabaseConnect**. Upon selecting the app, you will have to choose
    App Version,Protocol,Credential(If provided already), Schema and Action. In my case,I have selected App Version `1.0`,
    Schema `OCRD` and Action `Insert`.
+
+   If you want to know more about how you can import schema and actions for an app
+   [Click here]() 
 
 In this way,one can connect to a data source very easily.

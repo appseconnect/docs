@@ -2,12 +2,12 @@
 title: "Important Terminologies"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 menus: 
     api:
         icon: fa fa-gg
         title: "Terminology" 
-        identifier: terminology 
+        identifier: apiterminology 
 author: "Abhishek Sur"
 ---
 

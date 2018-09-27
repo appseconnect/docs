@@ -65,65 +65,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "What is a Cloud",
-      excerpt: "\n",
-      categories: ["Working with APPSeCONNECT Cloud"],
-      tags: ["implementers"],
-      id: 6
-    });
-    
-  
-    idx.add({
-      title: "How to work with the cloud",
-      excerpt: "\n",
-      categories: ["Working with APPSeCONNECT Cloud"],
-      tags: ["implementers"],
-      id: 7
-    });
-    
-  
-    idx.add({
-      title: "How to configure the cloud",
-      excerpt: "\n",
-      categories: ["Working with APPSeCONNECT Cloud"],
-      tags: ["implementers"],
-      id: 8
-    });
-    
-  
-    idx.add({
-      title: "How to install APPSeCONNECT",
-      excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-      categories: ["Installation and Configuration Guide"],
-      tags: ["implementers","developers"],
-      id: 9
-    });
-    
-  
-    idx.add({
-      title: "How to install Agent",
-      excerpt: "\n",
-      categories: ["Installation and Configuration Guide"],
-      tags: ["implementers"],
-      id: 10
-    });
-    
-  
-    idx.add({
-      title: "How to configure APPSeCONNECT",
-      excerpt: "\n",
-      categories: ["Installation and Configuration Guide"],
-      tags: ["implementers"],
-      id: 11
-    });
-    
-  
-    idx.add({
       title: "What is a Permission",
       excerpt: "Permission is a set of previledges which lets the user access a feature or service in APPSeCONNECT platform. Permissions are...",
       categories: ["Handling Permission"],
       tags: ["developers"],
-      id: 12
+      id: 6
     });
     
   
@@ -132,7 +78,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Adding Permission"],
       tags: ["administrators"],
-      id: 13
+      id: 7
     });
     
   
@@ -141,70 +87,43 @@ var idx = lunr(function () {
       excerpt: "To revoke permission you need to go to …\n",
       categories: ["Adding Permission"],
       tags: ["administrators"],
-      id: 14
+      id: 8
     });
     
   
     idx.add({
-      title: "How to setup your account with APPSeCONNECT",
-      excerpt: "Installing and creating account with APPSeCONNECT is an effort. To install\n",
-      categories: ["Installation and Configuration Guide"],
-      tags: ["customer"],
-      id: 15
+      title: "Overview of AppseConnect",
+      excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
+      categories: ["AppseConnect and IPAAS"],
+      tags: ["developers"],
+      id: 9
     });
     
   
     idx.add({
-      title: "What is a Subscription",
-      excerpt: "\n",
-      categories: ["Working with Subscription"],
-      tags: ["administrators"],
-      id: 16
-    });
-    
-  
-    idx.add({
-      title: "Getting Started",
+      title: "Getting started to APPSeCONNECT",
       excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
-      categories: [],
-      tags: [],
-      id: 17
-    });
-    
-  
-    idx.add({
-      title: "How to change subscription",
-      excerpt: "\n",
-      categories: ["Working with Subscription"],
-      tags: ["administrators"],
-      id: 18
-    });
-    
-  
-    idx.add({
-      title: "How to edit subscription",
-      excerpt: "\n",
-      categories: ["Working with Subscription"],
-      tags: ["administrators"],
-      id: 19
+      categories: ["AppseConnect & IPAAS"],
+      tags: ["developers"],
+      id: 10
     });
     
   
     idx.add({
       title: "Overview of Workflows",
-      excerpt: "\n",
+      excerpt: "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 20
+      id: 11
     });
     
   
     idx.add({
       title: "Important Terminologies",
-      excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow Touchpoint Action Filters...",
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow - A flow...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 21
+      id: 12
     });
     
   
@@ -213,25 +132,34 @@ var idx = lunr(function () {
       excerpt: "API\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 22
+      id: 13
     });
     
   
     idx.add({
       title: "Quickstart guide to your first workflow",
-      excerpt: "Let\n",
+      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 23
+      id: 14
+    });
+    
+  
+    idx.add({
+      title: "Nodes and Link overview",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 15
     });
     
   
     idx.add({
       title: "Quickstart guide to debug workflows",
-      excerpt: "WebHooks are important concept\n",
+      excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 24
+      id: 16
     });
     
   
@@ -240,7 +168,7 @@ var idx = lunr(function () {
       excerpt: "To get data from an application, APPSeCONNECT uses GET node. A GET node is associated with a particular action which...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 25
+      id: 17
     });
     
   
@@ -249,7 +177,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 26
+      id: 18
     });
     
   
@@ -258,7 +186,16 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 27
+      id: 19
+    });
+    
+  
+    idx.add({
+      title: "Deploying And Executing",
+      excerpt: "Markdown file\n",
+      categories: [],
+      tags: [],
+      id: 20
     });
     
   
@@ -267,7 +204,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 28
+      id: 21
     });
     
   
@@ -276,7 +213,16 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 29
+      id: 22
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 23
     });
     
   
@@ -285,7 +231,16 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 30
+      id: 24
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 25
     });
     
   
@@ -294,97 +249,277 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
+      id: 26
+    });
+    
+  
+    idx.add({
+      title: "HALT/RESUME Node",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 27
+    });
+    
+  
+    idx.add({
+      title: "Working with Loops",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 28
+    });
+    
+  
+    idx.add({
+      title: "Merge Node",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 29
+    });
+    
+  
+    idx.add({
+      title: "Rule Node",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 30
+    });
+    
+  
+    idx.add({
+      title: "Sequencer Node",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
       id: 31
     });
     
   
     idx.add({
-      title: "Overview of API Management",
-      excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
-      categories: ["API Management"],
+      title: "Splitter Node",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 32
     });
     
   
     idx.add({
-      title: "Important Terminologies",
-      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
-      categories: ["API Management"],
+      title: "Working with Workflow groups",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 33
     });
     
   
     idx.add({
-      title: "Architecture",
-      excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
-      categories: ["API Management"],
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 34
     });
     
   
     idx.add({
-      title: "Quickstart guide to create web proxies",
-      excerpt: "Let\n",
-      categories: ["API Management"],
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 35
     });
     
   
     idx.add({
-      title: "Quickstart guide to create webhook APIs",
-      excerpt: "WebHooks are important concept\n",
-      categories: ["API Management"],
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 36
     });
     
   
     idx.add({
-      title: "Policy Overview",
+      title: "Quickstart guide to your first workflow",
       excerpt: "\n",
-      categories: ["API Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 37
     });
     
   
     idx.add({
-      title: "Quota for a Key policy",
-      excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
-      categories: ["API Management"],
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 38
     });
     
   
     idx.add({
-      title: "Filter Request by IP policy",
-      excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
-      categories: ["API Management"],
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 39
     });
     
   
     idx.add({
-      title: "Validate http headers policy",
-      excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
-      categories: ["API Management"],
+      title: "Overview of API Management",
+      excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
+      categories: ["API-Management"],
       tags: ["developers"],
       id: 40
     });
     
   
     idx.add({
-      title: "Compression Policy",
-      excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
-      categories: ["API Management"],
+      title: "Important Terminologies",
+      excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
+      categories: ["API-Management"],
       tags: ["developers"],
       id: 41
+    });
+    
+  
+    idx.add({
+      title: "Architecture",
+      excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 42
+    });
+    
+  
+    idx.add({
+      title: "Common Use Cases for API management",
+      excerpt: "\n",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 43
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to create web proxies",
+      excerpt: "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 44
+    });
+    
+  
+    idx.add({
+      title: "Create API to Connect On-premise Database",
+      excerpt: "\n",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 45
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to create webhook APIs",
+      excerpt: "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 46
+    });
+    
+  
+    idx.add({
+      title: "Policy Overview",
+      excerpt: "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 47
+    });
+    
+  
+    idx.add({
+      title: "Quota for a Key policy",
+      excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 48
+    });
+    
+  
+    idx.add({
+      title: "Filter Request by IP policy",
+      excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 49
+    });
+    
+  
+    idx.add({
+      title: "Validate http headers policy",
+      excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 50
+    });
+    
+  
+    idx.add({
+      title: "Compression Policy",
+      excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 51
+    });
+    
+  
+    idx.add({
+      title: "Response content format identification policy",
+      excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 52
+    });
+    
+  
+    idx.add({
+      title: "Configuring APPSeCONNECT for API Hosting",
+      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 53
+    });
+    
+  
+    idx.add({
+      title: "Choose Applications from catalog",
+      excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 54
+    });
+    
+  
+    idx.add({
+      title: "Connecting an API to any data source",
+      excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 55
+    });
+    
+  
+    idx.add({
+      title: "Deploy and publish APIs to different environments",
+      excerpt: "\n",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 56
     });
     
   
@@ -465,72 +600,6 @@ var store = [
     
       
       {
-        "title": "What is a Cloud",
-        "url": "http://localhost:4000/working%20with%20appseconnect%20cloud/What-is-a-Cloud/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to work with the cloud",
-        "url": "http://localhost:4000/working%20with%20appseconnect%20cloud/How-to-work-with-the-cloud/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to configure the cloud",
-        "url": "http://localhost:4000/working%20with%20appseconnect%20cloud/How-to-configure-the-cloud/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to install APPSeCONNECT",
-        "url": "http://localhost:4000/installation%20and%20configuration%20guide/How-to-install-APPSeCONNECT/",
-        "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to install Agent",
-        "url": "http://localhost:4000/installation%20and%20configuration%20guide/How-to-install-Agent/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to configure APPSeCONNECT",
-        "url": "http://localhost:4000/installation%20and%20configuration%20guide/How-to-configure-APPSeCONNECT/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "What is a Permission",
         "url": "http://localhost:4000/handling%20permission/What-is-a-Permission/",
         "excerpt": "Permission is a set of previledges which lets the user access a feature or service in APPSeCONNECT platform. Permissions are...",
@@ -564,9 +633,9 @@ var store = [
     
       
       {
-        "title": "How to setup your account with APPSeCONNECT",
-        "url": "http://localhost:4000/installation%20and%20configuration%20guide/Setting-Up-Your-Profile/",
-        "excerpt": "Installing and creating account with APPSeCONNECT is an effort. To install\n",
+        "title": "Overview of AppseConnect",
+        "url": "http://localhost:4000/appseconnect%20and%20ipaas/home/",
+        "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -575,42 +644,9 @@ var store = [
     
       
       {
-        "title": "What is a Subscription",
-        "url": "http://localhost:4000/working%20with%20subscription/What-is-a-Subscription/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Getting Started",
-        "url": "http://localhost:4000/getting-started/",
+        "title": "Getting started to APPSeCONNECT",
+        "url": "http://localhost:4000/appseconnect%20&%20ipaas/getting-started/",
         "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to change subscription",
-        "url": "http://localhost:4000/working%20with%20subscription/How-to-change-subscription/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "How to edit subscription",
-        "url": "http://localhost:4000/working%20with%20subscription/How-to-edit-subscription/",
-        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -621,7 +657,7 @@ var store = [
       {
         "title": "Overview of Workflows",
         "url": "http://localhost:4000/workflow/overview/",
-        "excerpt": "\n",
+        "excerpt": "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -632,7 +668,7 @@ var store = [
       {
         "title": "Important Terminologies",
         "url": "http://localhost:4000/workflow/Terminologies/",
-        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow Touchpoint Action Filters...",
+        "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow - A flow...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -654,7 +690,18 @@ var store = [
       {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/steps-to-create-your-first-workflow/",
-        "excerpt": "Let\n",
+        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Nodes and Link overview",
+        "url": "http://localhost:4000/workflow/workflow-nodes-and-links/",
+        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -664,8 +711,8 @@ var store = [
       
       {
         "title": "Quickstart guide to debug workflows",
-        "url": "http://localhost:4000/workflow/monitoring-and-debugging-a-workflow/",
-        "excerpt": "WebHooks are important concept\n",
+        "url": "http://localhost:4000/workflow/activating-prepackaged-workflow/",
+        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -707,6 +754,17 @@ var store = [
     
       
       {
+        "title": "Deploying And Executing",
+        "url": "http://localhost:4000/deploying-and-executing/",
+        "excerpt": "Markdown file\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "POST Node",
         "url": "http://localhost:4000/workflow/working-with-post/",
         "excerpt": "\n",
@@ -729,8 +787,30 @@ var store = [
     
       
       {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "DELAY Node",
         "url": "http://localhost:4000/workflow/working-with-delay/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/workflow-creation-with-reusable-data/",
         "excerpt": "\n",
         "teaser":
           
@@ -751,8 +831,151 @@ var store = [
     
       
       {
+        "title": "HALT/RESUME Node",
+        "url": "http://localhost:4000/workflow/working-with-halt-resume/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Working with Loops",
+        "url": "http://localhost:4000/workflow/working-with-loops/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Merge Node",
+        "url": "http://localhost:4000/workflow/working-with-merger/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Rule Node",
+        "url": "http://localhost:4000/workflow/working-with-rule/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Sequencer Node",
+        "url": "http://localhost:4000/workflow/working-with-sequencer/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Splitter Node",
+        "url": "http://localhost:4000/workflow/working-with-splitter/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Working with Workflow groups",
+        "url": "http://localhost:4000/workflow/working-with-touchpoint/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/delay-execution-in-workflow/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/process-to-configure-customer-with-splitter/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/executing-an-endpoint-before-another/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/process-to-configure-a-task-with-acknowledgement/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to your first workflow",
+        "url": "http://localhost:4000/workflow/executing-an-endpoint-after-another/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Overview of API Management",
-        "url": "http://localhost:4000/api%20management/overview/",
+        "url": "http://localhost:4000/api-management/overview/",
         "excerpt": "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
         "teaser":
           
@@ -763,7 +986,7 @@ var store = [
       
       {
         "title": "Important Terminologies",
-        "url": "http://localhost:4000/api%20management/Terminologies/",
+        "url": "http://localhost:4000/api-management/Terminologies/",
         "excerpt": "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
         "teaser":
           
@@ -774,7 +997,7 @@ var store = [
       
       {
         "title": "Architecture",
-        "url": "http://localhost:4000/api%20management/architecture-design-runtime/",
+        "url": "http://localhost:4000/api-management/architecture-design-runtime/",
         "excerpt": "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
         "teaser":
           
@@ -784,30 +1007,8 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to create web proxies",
-        "url": "http://localhost:4000/api%20management/steps-to-create-proxy-endpoint/",
-        "excerpt": "Let\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Quickstart guide to create webhook APIs",
-        "url": "http://localhost:4000/api%20management/steps-to-create-webhook-endpoint/",
-        "excerpt": "WebHooks are important concept\n",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Policy Overview",
-        "url": "http://localhost:4000/api%20management/policies/",
+        "title": "Common Use Cases for API management",
+        "url": "http://localhost:4000/api-management/common-use-cases-on-api-management/",
         "excerpt": "\n",
         "teaser":
           
@@ -817,8 +1018,52 @@ var store = [
     
       
       {
+        "title": "Quickstart guide to create web proxies",
+        "url": "http://localhost:4000/api-management/steps-to-create-proxy-endpoint/",
+        "excerpt": "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Create API to Connect On-premise Database",
+        "url": "http://localhost:4000/api-management/create-api-using-custom-datasource/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guide to create webhook APIs",
+        "url": "http://localhost:4000/api-management/steps-to-create-webhook-endpoint/",
+        "excerpt": "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Policy Overview",
+        "url": "http://localhost:4000/api-management/policies/",
+        "excerpt": "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Quota for a Key policy",
-        "url": "http://localhost:4000/api%20management/quota-per-user-key/",
+        "url": "http://localhost:4000/api-management/quota-per-user-key/",
         "excerpt": "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
         "teaser":
           
@@ -829,7 +1074,7 @@ var store = [
       
       {
         "title": "Filter Request by IP policy",
-        "url": "http://localhost:4000/api%20management/ip-restrict/",
+        "url": "http://localhost:4000/api-management/ip-restrict/",
         "excerpt": "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
         "teaser":
           
@@ -840,7 +1085,7 @@ var store = [
       
       {
         "title": "Validate http headers policy",
-        "url": "http://localhost:4000/api%20management/validate-http-header/",
+        "url": "http://localhost:4000/api-management/validate-http-header/",
         "excerpt": "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
         "teaser":
           
@@ -851,8 +1096,63 @@ var store = [
       
       {
         "title": "Compression Policy",
-        "url": "http://localhost:4000/api%20management/compression-apply/",
+        "url": "http://localhost:4000/api-management/compression-apply/",
         "excerpt": "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Response content format identification policy",
+        "url": "http://localhost:4000/api-management/response-content-format/",
+        "excerpt": "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Configuring APPSeCONNECT for API Hosting",
+        "url": "http://localhost:4000/api-management/configure-appseconnect-for-apis/",
+        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Choose Applications from catalog",
+        "url": "http://localhost:4000/api-management/choosing-backend-apps/",
+        "excerpt": "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Connecting an API to any data source",
+        "url": "http://localhost:4000/api-management/connecting-to-a-data-source/",
+        "excerpt": "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Deploy and publish APIs to different environments",
+        "url": "http://localhost:4000/api-management/deployments-and-environments/",
+        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

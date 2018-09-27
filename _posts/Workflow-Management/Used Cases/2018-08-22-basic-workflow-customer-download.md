@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Basic Workflow for Customer Downloading"
 toc: true
 tag: developers
@@ -48,3 +49,15 @@ category: "Workflow"
 
 
 
+=======
+title: "Quickstart guide to your first workflow"
+toc: true
+tag: developers
+category: "Workflow"
+menus: 
+    workflow:
+        icon: fa fa-link
+        title: "Simple quickstart to workflow" 
+        identifier: usedcases
+---
+>>>>>>> e2b6827f3276bbffe04c89dac4b3151ef633c9d2

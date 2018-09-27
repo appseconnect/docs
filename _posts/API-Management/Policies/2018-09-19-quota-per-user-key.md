@@ -2,11 +2,11 @@
 title: "Quota for a Key policy"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 author: "Abhishek Sur"
 menus: 
     policies:
-        icon: fa fa-gg
+        icon: fa fa-cogs
         title: "Quota-Per-Key-Policy" 
 ---
 The **Rate-limit quota** policy prevents an API usage spikes on per user basis, such that if the same API is 
