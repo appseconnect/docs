@@ -1,5 +1,5 @@
 ﻿---
-title: "DELAY Node"
+title: "HALT/RESUME Node"
 toc: true
 tag: developers
 category: "Workflow"

@@ -1,5 +1,5 @@
 ﻿---
-title: "DELAY Node"
+title: "Merge Node"
 toc: true
 tag: developers
 category: "Workflow"

@@ -254,7 +254,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "HALT/RESUME Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -263,7 +263,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "Working with Loops",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -272,7 +272,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "Merge Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -281,7 +281,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "Rule Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -290,7 +290,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "Sequencer Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -299,7 +299,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "DELAY Node",
+      title: "Splitter Node",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -804,7 +804,7 @@ var store = [
     
       
       {
-        "title": "DELAY Node",
+        "title": "HALT/RESUME Node",
         "url": "http://localhost:4000/workflow/working-with-halt-resume/",
         "excerpt": "\n",
         "teaser":
@@ -815,7 +815,7 @@ var store = [
     
       
       {
-        "title": "DELAY Node",
+        "title": "Working with Loops",
         "url": "http://localhost:4000/workflow/working-with-loops/",
         "excerpt": "\n",
         "teaser":
@@ -826,7 +826,7 @@ var store = [
     
       
       {
-        "title": "DELAY Node",
+        "title": "Merge Node",
         "url": "http://localhost:4000/workflow/working-with-merger/",
         "excerpt": "\n",
         "teaser":
@@ -837,7 +837,7 @@ var store = [
     
       
       {
-        "title": "DELAY Node",
+        "title": "Rule Node",
         "url": "http://localhost:4000/workflow/working-with-rule/",
         "excerpt": "\n",
         "teaser":
@@ -848,7 +848,7 @@ var store = [
     
       
       {
-        "title": "DELAY Node",
+        "title": "Sequencer Node",
         "url": "http://localhost:4000/workflow/working-with-sequencer/",
         "excerpt": "\n",
         "teaser":
@@ -859,7 +859,7 @@ var store = [
     
       
       {
-        "title": "DELAY Node",
+        "title": "Splitter Node",
         "url": "http://localhost:4000/workflow/working-with-splitter/",
         "excerpt": "\n",
         "teaser":

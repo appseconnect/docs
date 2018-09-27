@@ -1,5 +1,5 @@
 ﻿---
-title: "DELAY Node"
+title: "Splitter Node"
 toc: true
 tag: developers
 category: "Workflow"
