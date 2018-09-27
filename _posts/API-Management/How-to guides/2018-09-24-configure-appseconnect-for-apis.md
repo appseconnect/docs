@@ -46,4 +46,4 @@ After this you are all set to create an API proxy.
 
 [To get started on how to create a proxy click here.]()
 
-[If you want to create a Webhook follw this article.]()
+[If you want to create a Webhook follow this article.]()
