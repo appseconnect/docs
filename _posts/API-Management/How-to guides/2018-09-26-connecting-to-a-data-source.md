@@ -2,7 +2,7 @@
 title: "Connecting an API to any data source"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 menus: 
     howtoapi:
         icon: fa fa-gg

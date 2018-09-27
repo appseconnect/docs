@@ -2,7 +2,7 @@
 title: "Filter Request by IP policy"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 author: "Soumya Ghosh"
 menus: 
     policies:

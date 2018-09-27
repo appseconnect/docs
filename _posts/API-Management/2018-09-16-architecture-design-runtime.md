@@ -2,7 +2,7 @@
 title: "Architecture"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 menus: 
     api:
         icon: fa fa-gg
