@@ -25,10 +25,10 @@
 {% assign posts = site.posts %}
 {% assign currentTag = page.tag %}
 {% assign matchCat = " " %}
-
-  {% assign menu = site.menus.header %}
-  {% include menus.html %}
-
+<div id="sidebarMenu">
+    {% assign menu = site.menus.header %}
+    {% include menus.html %}
+</div>
 <!--{% if page.tags.size == 1 %}
 <div class="sidebar sticky">
     <nav class="nav__list">

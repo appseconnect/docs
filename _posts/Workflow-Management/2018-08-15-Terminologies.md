@@ -3,11 +3,16 @@ title: "Important Terminologies"
 toc: true
 tag: developers
 category: "Workflow"
+menus: 
+    workflow:
+        title: "Terminology" 
+        icon: fa fa-file-word-o
+        identifier: workflowterminology
 ---
 
 This article demonstrates the important terminologies that you need to consider while using our Workflow system.
 
-- Flow
+- Flow 
 - Touchpoint - Touchpoints are special connections which map the source entity for a particular action with the destination entity for a particular action. By generating a process of transforming and pushing data for every touchpoint. Thus, in other words, Touchpoint is said to be the unit of pulling and pushing data.
 
 - Action

@@ -6,7 +6,7 @@ category: "API Management"
 author: "Soumya Ghosh"
 menus: 
     policies:
-        icon: fa fa-gg
+        icon: fa fa-cogs
         title: "Response Content Format Transform Policy" 
 ---
 **Reponse Content Format** policy inspects `Content-Type` for each HTTP request header and based upon the 
