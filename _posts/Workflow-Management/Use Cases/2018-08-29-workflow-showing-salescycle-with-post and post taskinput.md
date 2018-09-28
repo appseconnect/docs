@@ -1,11 +1,6 @@
 ---
-title: "Quickstart guide to your first workflow"
+title: "Workflow showing salescycle with post and post task inputs"
 toc: true
 tag: developers
 category: "Workflow"
-menus: 
-    usedcases:
-        icon: fa fa-link
-        title: "Sequence workflow connectors" 
-        identifier: usedcases-seqwf
 ---
