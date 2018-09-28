@@ -41,7 +41,7 @@
 <lastmod>2010-01-16T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/appseconnect%20&amp;%20ipaas/getting-started/</loc>
+<loc>http://localhost:4000/home/getting-started/</loc>
 <lastmod>2010-01-17T00:00:00+05:30</lastmod>
 </url>
 <url>
@@ -101,7 +101,11 @@
 <lastmod>2018-08-23T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow/workflow-creation-with-reusable-data/</loc>
+<loc>http://localhost:4000/workflow-creation-for-add-salesorder/</loc>
+<lastmod>2018-08-23T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/workflow-showing-product-upload-with-stock-sync/</loc>
 <lastmod>2018-08-23T00:00:00+05:30</lastmod>
 </url>
 <url>
@@ -129,11 +133,11 @@
 <lastmod>2018-08-24T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow/working-with-splitter/</loc>
+<loc>http://localhost:4000/workflow/working-with-splitter-Copy/</loc>
 <lastmod>2018-08-24T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow/working-with-touchpoint/</loc>
+<loc>http://localhost:4000/workflow/working-with-splitter/</loc>
 <lastmod>2018-08-24T00:00:00+05:30</lastmod>
 </url>
 <url>
