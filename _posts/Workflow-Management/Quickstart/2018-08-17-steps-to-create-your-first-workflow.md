@@ -46,23 +46,23 @@ After successfully logging in, you have to choose My Workflows section under Acc
 
 4. Go to my Workflows section under Account and a new page will open up.
 
-   ![WorkflowPage](media/WorkflowPage.png)
+   ![WorkflowPage](/staticfiles/workflow-management/media/WorkflowPage.png)
 
 5. On the upper left corner you will get the `Create Workflow` button.Click on it and the following page appears
 
-   ![CreateWorkflowPage](media/CreateWorkflowPage.png)
+   ![CreateWorkflowPage](/staticfiles/workflow-management/media/CreateWorkflowPage.png)
 
 6. To start the workflow, Drag & Drop the Start node from the ITEMS section, on the blank/grid section.
 
-    ![Start](media/Start.png)
+    ![Start](/staticfiles/workflow-management/media/Start.png)
 
 7. Click the (+) sign beside Templates section, a list will open. Now select General Touchpoint and then drag it to the grid/blank panel.
 
-     ![AddTouchpoint](media/AddTouchpoint.png)
+     ![AddTouchpoint](/staticfiles/workflow-management/media/AddTouchpoint.png)
 
 8. You have to select a connection and a touchpoint from the drop-down list of `Select Connection` and `Select Touchpoint`. Now click OK button, to confirm.The following screen appears
 
-   ![Masterdata-Add](media/Masterdata-Add.png)
+   ![Masterdata-Add](/staticfiles/workflow-management/media/Masterdata-Add.png)
 
 * Similarly, drag & drop more touchpoints to complete a cycle.
 
@@ -70,14 +70,14 @@ After successfully logging in, you have to choose My Workflows section under Acc
 
 * After all the steps have been completed, the workflow is ready to be run.
 
-    ![Runbutton](media/Runbutton.png)
+    ![Runbutton](/staticfiles/workflow-management/media/Runbutton.png)
 
 `Protip` Initially the Run button will be in disabled state, you have to activate it following these steps:
 `Go to the APPSeCONNECT -> Settings Panel -> check the Activate box`.`
 
 9. Now Run it and this will open another form.
 
- ![Workflow-Executed](media/Workflow-Executed.png)
+ ![Workflow-Executed](/staticfiles/workflow-management/media/Workflow-Executed.png)
 
 10. In the above screen, you can see each step of the operation. 
 The circle segments of the nodes will change its color according to the operation

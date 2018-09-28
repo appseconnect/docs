@@ -18,7 +18,7 @@ is not compressed then this policy will create a compressed response.
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
 Below are the list of configurations required for this policy.
 
-![Compression Policy](../media/CompressionPolicy.PNG)
+![Compression Policy](/staticfiles/api-management/media/CompressionPolicy.PNG)
 
 The rules and setup needs to be made accordingly. 
 

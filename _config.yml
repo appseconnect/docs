@@ -86,7 +86,7 @@ author:
   name             : "Team APPSeCONNECT"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "APPSeCONNECT product development team."
-  location         : ""
+  location         : 
   email            : "support@appseconnect.com"
   uri              : "http://support.appseconnect.com"
   home             : # null (default), "absolute or relative url to link to author home"
@@ -190,6 +190,7 @@ plugins:
   - jekyll-feed
   - jekyll-menus
   - jemoji
+  - jekyll-github-metadata
 
 
 # mimic GitHub Pages with --safe
@@ -200,6 +201,7 @@ whitelist:
   - jekyll-feed
   - jekyll-menus
   - jemoji
+  - jekyll-github-metadata
 
 
 # Archives
