@@ -7,11 +7,14 @@ category: "Workflow"
 
 
 •	Use Case Name - Workflow creation of sales cycle with post and post task inputs
+
 •	Brief Description – This workflow enables the user to add sales order, delivery and Invoice in Ecommerce (Shopify) and update the
     relationship mapping  in ERP ( SAP B1) by executing this workflow and do the execution and data sync between two apps. This is a Sales cycle with post and post input task where reusable data is used.
  
-•	Actor – Implementers, Developers, Partners     
+•	Actor – Implementers, Developers, Partners  
+
 •	Preconditions – Organization Creation & Connection Creation 
+
 •	Basic Flow – The user will execute the flow as given below.
 
 Step 1 to 11 is similar to the execution flow of [basic workflow customer download] (insert link)
@@ -30,8 +33,12 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 16.  The user will go to SAP B1 (App 2) and go to **Relationship Mapping** section to fetch the synced data  and generate a desired report. 
 
 •	Alternate Flows – NOT APPLICABLE 
+
 •	Post-conditions – The user can now see that the sales order, delivery to invoice gneration in available in ERP( SAP B1)
+
 •	Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the product
-    sync is failure.        
+    sync is failure.       
+
 •	Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
+
 •	Assumptions – NOT APPLICABLE 
