@@ -1,4 +1,4 @@
-title: "Workflow creation with the reusable data"
+title: "Workflow showing Product Upload with stock Sync"
 toc: true
 tag: developers
 category: "Workflow"
@@ -10,7 +10,10 @@ category: "Workflow"
 •	Actor – A list of the types of users who can engage in the activities described in the use case. Actor names should not
     correspond to job titles.   
 •	Preconditions – A description of the relevant and non-trivial state(s) of the system prior to the use case starting.
-•	Basic Flow – The set of steps the actors take to accomplish the goal of the use case. A clear description of what the system does in response to each user action.
+•	Basic Flow – he user will execute the flow as given below
+
+
+
 •	Alternate Flows – Capture the less common user/system interactions, such as being on a new computer and answering a security question.
 •	Post-conditions – Anything that must be true when the use case is complete
 •	Exception courses – Descriptions of what the user will experience when something goes wrong.
