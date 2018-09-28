@@ -1,21 +1,46 @@
-title: "Workflow showing Product Upload with stock Sync"
+---
+title: "Workflow for sales order"
 toc: true
 tag: developers
 category: "Workflow"
 ---
 
 
-•	Use Case Name - Workflow creation with the reusable data
-•	Brief Description – A brief paragraph of text describing the scope of the use case.
-•	Actor – A list of the types of users who can engage in the activities described in the use case. Actor names should not
-    correspond to job titles.   
-•	Preconditions – A description of the relevant and non-trivial state(s) of the system prior to the use case starting.
-•	Basic Flow – he user will execute the flow as given below
+•	Use Case Name - Workflow for sales order
+
+•	Brief Description – This is a workflow where the user can add sales order in Eccommece (Shopify) and execute the workflow to sync the
+    sales order in the ERP (SAPB1) 
+
+•	Actor – Implementers, Developers, Partners  
+
+•	Preconditions – Organization Creation & Connection Creation 
+
+•	Basic Flow – The user will execute the flow as given below.
+
+Step 1 to 11 is similar to the execution flow of [basic workflow customer download] (insert link)
+
+12. The user will now login/signup to Eccomerce (Shopify - App 1) and add sales order.
 
 
+13. The user will go back to Workflow module and select the saved workflow.
 
-•	Alternate Flows – Capture the less common user/system interactions, such as being on a new computer and answering a security question.
-•	Post-conditions – Anything that must be true when the use case is complete
-•	Exception courses – Descriptions of what the user will experience when something goes wrong.
-•	Frequency of use  – An estimate of how often a particular use case will be exercised.
-•	Assumptions – Any assumptions that are implicit in the definition of the use case.
+![Workflow-SalesOrderAdd](media/Workflow-SalesOrderAdd.png)
+
+14. The user will click on RUN button to run the workflow.
+
+15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
+
+16.  The user will go to SAP B1 (App 2)  to fetch the synced data - Sales Order will sync in Sales Order section. 
+
+•	Alternate Flows – NOT APPLICABLE 
+
+•	Post-conditions – The user can now see that the sales order is  available in ERP( SAP B1)
+
+•	Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the sales order
+    sync is failure.       
+
+•	Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
+
+•	Assumptions – NOT APPLICABLE 
+
+

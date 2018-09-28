@@ -30,13 +30,14 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 
-16.  The user will go to SAP B1 (App 2) and go to **Relationship Mapping** section to fetch the synced data  and generate a desired report. 
+16.  The user will go to SAP B1 (App 2) section to fetch the synced data - Sales Order will sync in Sales Order section, Invoice and 
+   delivery in invoice the delivery section. 
 
 •	Alternate Flows – NOT APPLICABLE 
 
 •	Post-conditions – The user can now see that the sales order, delivery to invoice gneration in available in ERP( SAP B1)
 
-•	Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the product
+•	Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the sales order
     sync is failure.       
 
 •	Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
