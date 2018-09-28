@@ -2,7 +2,7 @@
 title: "Getting started to APPSeCONNECT"
 toc: true
 tag: developers
-category: "AppseConnect & IPAAS"
+category: "home"
 menus: 
     header:
         title: Getting Started
