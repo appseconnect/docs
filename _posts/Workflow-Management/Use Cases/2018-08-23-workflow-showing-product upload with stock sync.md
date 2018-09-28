@@ -7,7 +7,7 @@ category: "Workflow"
 
 •	Use Case Name - Workflow creation with product upload and stock sync
 •	Brief Description – This workflow enables the user to add/upload product in ecommerce (Shopify) and stock update in ERP ( SAP 
-    B1) and do the execution and data sync between two apps. 
+    B1) and do the execution and data sync between two apps. This is a post task scenario workflow
  
 •	Actor – Implementers, Developers, Partners     
 •	Preconditions – Connection Creation & Touchpoint creation should be done. 
@@ -26,7 +26,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 
-16.  The user will go to SAP B1 (App 2) and click on Inventory & Item Master Data to fetch the products added in shopify. 
+16.  The user will go to SAP B1 (App 2) and click on **Inventory & Item Master Data** to fetch the products added in shopify. 
 
 •	Alternate Flows – NOT APPLICABLE 
 •	Post-conditions – The user can now see that the products  is successful fetched in SAP B1.
