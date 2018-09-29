@@ -103,6 +103,9 @@
     <Content Include="feed.xml" />
     <Content Include="LICENSE.txt" />
     <Content Include="staticfiles\api-management\media\api-management-simple-architecture.png" />
+    <Content Include="staticfiles\workflow-management\media\CustomerDownload_Simple.png" />
+    <Content Include="staticfiles\workflow-management\media\ProductUpload_StockSync.png" />
+    <Content Include="staticfiles\workflow-management\media\Workflow-SalesOrderAdd.png" />
     <Content Include="videos.html" />
     <Content Include="_includes\analytics-providers\custom.html" />
     <Content Include="_includes\analytics-providers\google-universal.html" />
@@ -244,17 +247,17 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-rule.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-sequencer.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-splitter.md" />
-    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-touchpoint.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-activating-prepackaged-workflow.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-22-basic-workflow-customer-download.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-23-workflow-creation-with-reusable-data.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-24-delay-execution-in-workflow.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-25-workflow-filter-node-customer-download.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-26-process-to-configure-customer-with-splitter.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-27-executing-an-endpoint-before-another.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-28-process-to-configure-a-task-with-acknowledgement.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-29-executing-an-endpoint-after-another.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-creation-for-add-salesorder.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-showing-product upload with stock sync.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-24-delay-execution-in-workflow.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-25-workflow-filter-node-customer-download.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-26-process-to-configure-customer-with-splitter.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-27-executing-an-endpoint-before-another.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-28-process-to-configure-a-task-with-acknowledgement.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-29-workflow-showing-salescycle-with-post and post taskinput.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>

@@ -101,7 +101,7 @@
 <lastmod>2018-08-23T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow-creation-for-add-salesorder/</loc>
+<loc>http://localhost:4000/workflow/workflow-creation-for-add-salesorder/</loc>
 <lastmod>2018-08-23T00:00:00+05:30</lastmod>
 </url>
 <url>
@@ -133,10 +133,6 @@
 <lastmod>2018-08-24T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow/working-with-splitter-Copy/</loc>
-<lastmod>2018-08-24T00:00:00+05:30</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/workflow/working-with-splitter/</loc>
 <lastmod>2018-08-24T00:00:00+05:30</lastmod>
 </url>
@@ -161,7 +157,7 @@
 <lastmod>2018-08-28T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow/executing-an-endpoint-after-another/</loc>
+<loc>http://localhost:4000/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/</loc>
 <lastmod>2018-08-29T00:00:00+05:30</lastmod>
 </url>
 <url>

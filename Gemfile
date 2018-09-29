@@ -18,7 +18,6 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  #gem "github-pages"
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-menus"
 end
@@ -35,4 +34,3 @@ gem "jekyll-gist"
 gem "jemoji"
 gem "minimal-mistakes-jekyll"
 gem "sass"
-gem "jekyll-github-metadata"

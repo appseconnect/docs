@@ -190,7 +190,6 @@ plugins:
   - jekyll-feed
   - jekyll-menus
   - jemoji
-  - jekyll-github-metadata
 
 
 # mimic GitHub Pages with --safe
@@ -201,7 +200,6 @@ whitelist:
   - jekyll-feed
   - jekyll-menus
   - jemoji
-  - jekyll-github-metadata
 
 
 # Archives
