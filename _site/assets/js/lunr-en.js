@@ -236,10 +236,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow Creation For Add Salesorder",
-      excerpt: "title: “Workflow showing Product Upload with stock Sync” toc: true tag: developers category: “Workflow” — • Use Case Name -...",
-      categories: [],
-      tags: [],
+      title: "Workflow for sales order",
+      excerpt: "• Use Case Name - Workflow for sales order • Brief Description – This is a workflow where the user...",
+      categories: ["Workflow"],
+      tags: ["developers"],
       id: 25
     });
     
@@ -336,7 +336,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guide to your first workflow",
-      excerpt: "\n",
+      excerpt: "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 36
@@ -345,7 +345,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guide to your first workflow",
-      excerpt: "\n",
+      excerpt: "• Use Case Name - Workflow showing task configuration with splitter rule • Brief Description – This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 37
@@ -362,8 +362,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "\n",
+      title: "Workflow showing task configuration with acknowledgement data",
+      excerpt: "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 39
@@ -371,8 +371,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "\n",
+      title: "Workflow showing salescycle with post and post task inputs",
+      excerpt: "• Use Case Name - Workflow creation of sales cycle with post and post task inputs • Brief Description –...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 40
@@ -818,9 +818,9 @@ var store = [
     
       
       {
-        "title": "Workflow Creation For Add Salesorder",
-        "url": "http://localhost:4000/workflow-creation-for-add-salesorder/",
-        "excerpt": "title: “Workflow showing Product Upload with stock Sync” toc: true tag: developers category: “Workflow” — • Use Case Name -...",
+        "title": "Workflow for sales order",
+        "url": "http://localhost:4000/workflow/workflow-creation-for-add-salesorder/",
+        "excerpt": "• Use Case Name - Workflow for sales order • Brief Description – This is a workflow where the user...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -941,7 +941,7 @@ var store = [
       {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
-        "excerpt": "\n",
+        "excerpt": "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -952,7 +952,7 @@ var store = [
       {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/process-to-configure-customer-with-splitter/",
-        "excerpt": "\n",
+        "excerpt": "• Use Case Name - Workflow showing task configuration with splitter rule • Brief Description – This workflow enables the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -972,9 +972,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
+        "title": "Workflow showing task configuration with acknowledgement data",
         "url": "http://localhost:4000/workflow/process-to-configure-a-task-with-acknowledgement/",
-        "excerpt": "\n",
+        "excerpt": "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -983,9 +983,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
-        "url": "http://localhost:4000/workflow/executing-an-endpoint-after-another/",
-        "excerpt": "\n",
+        "title": "Workflow showing salescycle with post and post task inputs",
+        "url": "http://localhost:4000/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/",
+        "excerpt": "• Use Case Name - Workflow creation of sales cycle with post and post task inputs • Brief Description –...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

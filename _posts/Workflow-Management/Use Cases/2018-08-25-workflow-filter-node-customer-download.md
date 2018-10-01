@@ -36,7 +36,6 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 16.  The user will go to SAP B1 (App 2) section to fetch the synced data from Shopify and view the customer details.
 
-•	Alternate Flows – NOT APPLICABLE 
 
 •	Post-conditions – The user can now see that the sales order, delivery to invoice gneration in available in ERP( SAP B1)
 
