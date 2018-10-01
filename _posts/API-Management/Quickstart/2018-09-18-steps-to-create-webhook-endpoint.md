@@ -38,7 +38,7 @@ prerequisites. Here are some of them :
 
 * Go to **API** section from the left side menu.
 
-![Webhook Introduction](../media/Webhook-Introduction.PNG)
+![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.PNG)
 
 *  Inside **APIManagementSection** you can see Webhooks and Proxy.By defeault,Webhook section will be
   shown.You can see all your connections listed here.
@@ -46,7 +46,7 @@ prerequisites. Here are some of them :
 * If you do not have a registered URL with **APPSeCONNECT** you have to Register a URL for your organization.Here is how to do it.
    Click on Register URL button. Upon clicking you will get a  popup like this.
 
-![Register Url Org](../media/register-url-org.PNG)
+![Register Url Org](/staticfiles/api-management/media/register-url-org.PNG)
 
 * Please activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
   So the Base URL for the organization would be `veonconsulting.appseconnectapi.com`.
@@ -58,36 +58,36 @@ prerequisites. Here are some of them :
 
 * Now under the desired connection,Expand the Connection,you will find **Create API** button like this.
 
-![Create A P I Webhook](../media/CreateAPI_webhook.PNG)
+![Create A P I Webhook](/staticfiles/api-management/media/CreateAPI_webhook.PNG)
 
 * Upon clicking the button you will get introduced to a Wizard like this
 
-![Wizard A P I Basic](../media/Wizard-API-Basic.PNG)
+![Wizard A P I Basic](/staticfiles/api-management/media/Wizard-API-Basic.PNG)
 
 * Provide basic information like API name,API help document url etc.
 
 * After that,provide Source App Configuration like Source Schema,Action,Protocol and Protocol Method.
 
-![Wizard A P I Source](../media/Wizard-API-Source.PNG)
+![Wizard A P I Source](/staticfiles/api-management/media/Wizard-API-Source.PNG)
 
 * Thereafter provide Destination App Configuration like Destination Schema,Action,Protocol and Protocol Method.
 
-![Wizard A P I Destination](../media/Wizard-API-Destination.PNG)
+![Wizard A P I Destination](/staticfiles/api-management/media/Wizard-API-Destination.PNG)
 
 * Then you have to configure mapping for transformation from source to destination
 
-![Wizard A P I Mapping](../media/Wizard-API-Mapping.PNG)
+![Wizard A P I Mapping](/staticfiles/api-management/media/Wizard-API-Mapping.PNG)
 
 * After everything is done click on finish to Save your API.
 
-![Wizard A P I Summary](../media/Wizard-API-Summary.PNG)
+![Wizard A P I Summary](/staticfiles/api-management/media/Wizard-API-Summary.PNG)
 
 * You will be re-directed to Webhook section afterwards.You can find your newly created Webhook API
  under the connection you created.
 
-![Webhook A P I Data](../media/Webhook-API-Data.PNG)
+![Webhook A P I Data](/staticfiles/api-management/media/Webhook-API-Data.PNG)
 
 * Copy the URL and use it as a webhook endpoint in applications that support webhooks.
-![A P I Webhook Shopify](../media/API-Webhook-shopify.PNG) 
+![A P I Webhook Shopify](/staticfiles/api-management/media/API-Webhook-shopify.PNG) 
 
 Thus APPSeConnect provides you the platform to create Webhook API to fetch real time data and sync to other applications.

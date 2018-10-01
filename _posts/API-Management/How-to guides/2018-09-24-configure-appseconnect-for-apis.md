@@ -16,15 +16,15 @@ APPSeCONNECT is a platform which allows hosting of APIs such that the hosted API
 
 Follow these steps to configure a APPSeCONNECT Proxy.
 
-1. [Create an account in APPSeCONNECT Portal]()
-2. [Configure Environment for your project]()
-3. [Choosing Back-end Apps]()
+1. [Create an account in APPSeCONNECT Portal](https://www.appseconnect.com/free-trial/)
+2. [Configure Environment for your project](/home/getting-started/)
+3. [Choosing Back-end Apps](http://support.appseconnect.com/support/solutions/articles/4000112077-appseconnect-portal-add-edit-app-app-version)
 
 Afterwards, you have to register a URL for your organization.
 
 * Go to **API** section from the left side menu.
-
-![Webhook Introduction](../media/Webhook-Introduction.PNG)
+* 
+![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.PNG)
 
 *  Inside **APIManagementSection** you can see Webhooks and Proxy.By defeault,Webhook section will be
   shown.You can see all your connections listed here.
@@ -32,7 +32,7 @@ Afterwards, you have to register a URL for your organization.
 * If you do not have a registered URL with **APPSeCONNECT** you have to Register a URL for your organization.Here is how to do it.
    Click on Register URL button. Upon clicking you will get a  popup like this.
 
-![Register Url Org](../media/register-url-org.PNG)
+![Register Url Org](/staticfiles/api-management/media/register-url-org.PNG)
 
 * Please activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
   So the Base URL for the organization would be `veonconsulting.appseconnectapi.com`.
@@ -44,6 +44,6 @@ Afterwards, you have to register a URL for your organization.
 
 After this you are all set to create an API proxy. 
 
-[To get started on how to create a proxy click here.]()
+[To get started on how to create a proxy follow this article.](/api-management/steps-to-create-proxy-endpoint)
 
-[If you want to create a Webhook follow this article.]()
+[If you want to create a Webhook follow this article.](/api-management/steps-to-create-webhook-endpoint)

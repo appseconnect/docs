@@ -5,10 +5,9 @@ category: "Workflow"
 ---
 
 
-•	Use Case Name - Workflow creation with product upload and stock sync
+•	Use Case Name - Creating a workflow with product upload and stock sync
 
-•	Brief Description – This workflow enables the user to add/upload product in ecommerce (Shopify) and stock update in ERP ( SAP 
-    B1) and do the execution and data sync between two apps. This is a Product upload with stock synchronization-post task scenario workflow.
+•	Brief Description – This workflow enables the user to add/upload product in ecommerce (Shopify) and stock update  in ERP ( SAP B1) and do the execution and data sync between two apps. This is a Product upload with stock synchronization-post task scenario workflow.
  
 •	Actor – Implementers, Developers, Partners     
 

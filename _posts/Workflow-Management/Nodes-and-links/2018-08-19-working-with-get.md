@@ -21,7 +21,7 @@ XML, it is the work of an adapter to pass the data in XML format such that the d
 Each node in APPSeCONNECT workflow is tied to a particular connection, such that when the node is executed the data from that particular Application is generated 
 and responded back to the application workspace. 
 
-![GET Node](../media/ip-restrict-policy.PNG)
+![GET Node](/staticfiles/workflow-management/media/ip-restrict-policy.PNG)
 
 The configurations that are allowed to a Get node are as follows. 
 

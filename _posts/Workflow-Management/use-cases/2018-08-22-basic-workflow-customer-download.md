@@ -27,9 +27,9 @@ category: "Workflow"
             ![CustomerDownload_Simple](media/CustomerDownload_Simple.png)
 9. The user after creating the workflow will deploy that in the Agent.
 
-10. The user will navigate to the Enviornment module and click on Agent Setting to check the connection is active or not .
+10. The user will navigate to teh Enviornment module and click on Agent Setting to check the connection is active or not .
 
-11. The user will navigate to the Deploy Configuration button to deploy the configuration. The success message will come.
+11. The user will navigate to teh Deploy Configuration button to deploy the configuration. The success message will come.
 
 12. The user will now login/signup to Shopify (App 1) and view the added Customer.
 

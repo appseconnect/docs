@@ -15,7 +15,7 @@ APPSeCONNECT API management is a set of micro service based environment which al
 REST protocol to communicate which is translated to the application code automatically using our time tested solution and to generate output response back to the user.  In this article we will look at how 
 the Architecture of APPSeCONNECT looks like.
  
-![Architecture Api Management](media/architecture-api-management.png)
+![Architecture Api Management](/staticfiles/api-management/media/architecture-api-management.png)
 
 ## Components
 
@@ -57,7 +57,7 @@ API management system exposes the valuable internal data and business logic via 
 when it is in transit. It takes care of authentication, authorizations, applies policies, calls backend and creates a response back to the
 caller. 
 
-[image]
+![Api Management Simple Architecture](/staticfiles/api-management/media/api-management-simple-architecture.png)
 
 The internal data is exposed via APPSeCONNECT easily using REST based services which will channel the partners and consumers to use those 
 APIs as per requirements and deliver business intelligence. 

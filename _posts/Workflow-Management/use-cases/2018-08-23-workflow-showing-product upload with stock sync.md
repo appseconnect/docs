@@ -1,16 +1,11 @@
----
-title: "Quickstart guide to your first workflow"
+title: "Workflow showing product upload and stock sync"
 toc: true
 tag: developers
 category: "Workflow"
-menus: 
-    usedcases:
-        icon: fa fa-link
-        title: "Delay workflow execution" 
-        identifier: usedcases-delay
 ---
 
-•	Use Case Name - Creating a workflow with filter node for custmer download
+
+•	Use Case Name - Workflow creation with product upload and stock sync
 
 •	Brief Description – This workflow enables the user to add/upload product in ecommerce (Shopify) and stock update in ERP ( SAP 
     B1) and do the execution and data sync between two apps. This is a Product upload with stock synchronization-post task scenario workflow.
