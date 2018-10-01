@@ -33,14 +33,14 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 
-16.  The user will go to SAP B1 (App 2) and click on **Inventory & Item Master Data** to fetch the products added in shopify. 
+16.  The user will go to Shopify (App 2) and can view the  stock updated in shopify. 
 
 •	Alternate Flows – NOT APPLICABLE 
 
-•	Post-conditions – The user can now see that the products  is successful fetched in SAP B1.
+•	Post-conditions – The user can now see that the products  is successful fetched in Shopify.
 
 •	Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if 
-    the product sync is failure.
+the product sync is failure.
 
 •	Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
 
