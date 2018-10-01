@@ -10,9 +10,9 @@ menus:
         identifier: usedcases-delay
 ---
 
-•	Use Case Name - Workflow creation with delay execution action
+•	Use Case Name - Workflow creation and task execution with delay execution filter
 
-•	Brief Description – This workflow enables the user to add/upload product in ecommerce (Shopify) and stock update in ERP ( SAP B1) and do the execution and data sync between two apps. This is a Product upload with stock synchronization-post task scenario workflow.
+•	Brief Description – This workflow enables the user to configure a task iand do the execution and data sync between two apps with delay filter. This worflow shows a scenario where stock update is getting executed with delay filter.
  
 •	Actor – Implementers, Developers, Partners     
 
@@ -22,12 +22,12 @@ menus:
 
 Step 1 to 11 is similar to the execution flow of [basic workflow customer download] (insert link)
 
-12. The user will now login/signup to Shopify (App 1) and add/update the products. Similarly the user will log in to SAP B1 to  update stock 
+12. The user will now login/signup to SAP B1 (App 1) and update the stock. 
 
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![ProductUpload_StockSync](media/ProductUpload_StockSync.png)
+![DelayWorkflow](..media/DelayWorkflow.png)
 
 14. The user will click on RUN button to run the workflow.
 
