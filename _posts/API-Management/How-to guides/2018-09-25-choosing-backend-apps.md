@@ -16,8 +16,8 @@ The heart of an API Proxy is Backend.**APPSeCONNECT** lets you connect to a data
 
 **Pre-Requisuties**
 
- 1. [Getting a new account for APPSeCONNECT]()
- 2. [Configure your Environment]()
+ 1. [Getting a new account for APPSeCONNECT](https://www.appseconnect.com/free-trial/)
+ 2. [Configure your Environment](/home/getting-started/)
 
 
 * After that go to `App` section.

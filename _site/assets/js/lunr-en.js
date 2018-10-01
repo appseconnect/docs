@@ -129,7 +129,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Architecture",
-      excerpt: "Workflow in APPSeCONNECT generates flow\n",
+      excerpt: "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 13
@@ -147,7 +147,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Nodes and Link overview",
-      excerpt: "\n",
+      excerpt: "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 15
@@ -326,8 +326,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
+      title: "Workflow Actions",
+      excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 35
@@ -335,7 +335,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
+      title: "Sending Emails",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -344,7 +344,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
+      title: "Generating Support tickets",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -353,11 +353,56 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Webhook callback",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 38
+    });
+    
+  
+    idx.add({
+      title: "Storing Files",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 39
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to your first workflow",
+      excerpt: "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 40
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 41
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guide to your first workflow",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 42
+    });
+    
+  
+    idx.add({
       title: "Workflow showing task configuration with acknowledgement data",
       excerpt: "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 38
+      id: 43
     });
     
   
@@ -366,7 +411,7 @@ var idx = lunr(function () {
       excerpt: "• Use Case Name - Workflow creation of sales cycle with post and post task inputs • Brief Description –...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 39
+      id: 44
     });
     
   
@@ -375,7 +420,7 @@ var idx = lunr(function () {
       excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 40
+      id: 45
     });
     
   
@@ -384,7 +429,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 41
+      id: 46
     });
     
   
@@ -393,16 +438,16 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 42
+      id: 47
     });
     
   
     idx.add({
       title: "Common Use Cases for API management",
-      excerpt: "\n",
+      excerpt: "APIs are tje central to any application development process. As data forms an important part of any business it is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 43
+      id: 48
     });
     
   
@@ -411,7 +456,7 @@ var idx = lunr(function () {
       excerpt: "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 44
+      id: 49
     });
     
   
@@ -420,7 +465,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 45
+      id: 50
     });
     
   
@@ -429,7 +474,7 @@ var idx = lunr(function () {
       excerpt: "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 46
+      id: 51
     });
     
   
@@ -438,7 +483,7 @@ var idx = lunr(function () {
       excerpt: "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 47
+      id: 52
     });
     
   
@@ -447,7 +492,7 @@ var idx = lunr(function () {
       excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 48
+      id: 53
     });
     
   
@@ -456,7 +501,7 @@ var idx = lunr(function () {
       excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 49
+      id: 54
     });
     
   
@@ -465,7 +510,7 @@ var idx = lunr(function () {
       excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 50
+      id: 55
     });
     
   
@@ -474,7 +519,7 @@ var idx = lunr(function () {
       excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 51
+      id: 56
     });
     
   
@@ -483,7 +528,7 @@ var idx = lunr(function () {
       excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 52
+      id: 57
     });
     
   
@@ -492,7 +537,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 53
+      id: 58
     });
     
   
@@ -501,7 +546,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 54
+      id: 59
     });
     
   
@@ -510,16 +555,16 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 55
+      id: 60
     });
     
   
     idx.add({
       title: "Deploy and publish APIs to different environments",
-      excerpt: "\n",
+      excerpt: "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 56
+      id: 61
     });
     
   
@@ -679,7 +724,7 @@ var store = [
       {
         "title": "Architecture",
         "url": "http://localhost:4000/workflow/architecture-design-runtime/",
-        "excerpt": "Workflow in APPSeCONNECT generates flow\n",
+        "excerpt": "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -701,7 +746,7 @@ var store = [
       {
         "title": "Nodes and Link overview",
         "url": "http://localhost:4000/workflow/workflow-nodes-and-links/",
-        "excerpt": "\n",
+        "excerpt": "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -919,6 +964,61 @@ var store = [
     
       
       {
+        "title": "Workflow Actions",
+        "url": "http://localhost:4000/workflow/generating-actions/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Sending Emails",
+        "url": "http://localhost:4000/workflow/generating-notification-emails/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Generating Support tickets",
+        "url": "http://localhost:4000/workflow/generating-notification-support-ticket/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Webhook callback",
+        "url": "http://localhost:4000/workflow/generating-notification-webhooks/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Storing Files",
+        "url": "http://localhost:4000/workflow/generating-storage-action/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
         "excerpt": "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
@@ -1009,7 +1109,7 @@ var store = [
       {
         "title": "Common Use Cases for API management",
         "url": "http://localhost:4000/api-management/common-use-cases-on-api-management/",
-        "excerpt": "\n",
+        "excerpt": "APIs are tje central to any application development process. As data forms an important part of any business it is...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1152,7 +1252,7 @@ var store = [
       {
         "title": "Deploy and publish APIs to different environments",
         "url": "http://localhost:4000/api-management/deployments-and-environments/",
-        "excerpt": "\n",
+        "excerpt": "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

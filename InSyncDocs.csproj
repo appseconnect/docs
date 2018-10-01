@@ -35,6 +35,8 @@
     <Folder Include="staticfiles\partner-management\" />
     <Folder Include="staticfiles\rules\" />
     <Folder Include="staticfiles\sdk-references\" />
+    <Folder Include="_posts\apps-management\concepts\" />
+    <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
     <Folder Include="_posts\Rules\" />
   </ItemGroup>
@@ -229,6 +231,7 @@
     <None Include="_posts\API-Management\Quickstart\2018-09-18-steps-to-create-webhook-endpoint.md" />
     <None Include="_posts\API-Management\Use Cases\2018-09-16-common-use-cases-on-api-management.md" />
     <None Include="_posts\API-Management\Use Cases\2018-09-17-create-api-using-custom-datasource.md" />
+    <None Include="_posts\apps-management\how-to-guides\2019-08-15-handling-schemas-on-apps.md" />
     <None Include="_posts\Workflow-Management\2018-08-14-overview.md" />
     <None Include="_posts\Workflow-Management\2018-08-15-Terminologies.md" />
     <None Include="_posts\Workflow-Management\2018-08-16-architecture-design-runtime.md" />
@@ -247,6 +250,11 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-rule.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-sequencer.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-splitter.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-storage-action.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-support-ticket.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-emails.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-webhooks.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-actions.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-activating-prepackaged-workflow.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />

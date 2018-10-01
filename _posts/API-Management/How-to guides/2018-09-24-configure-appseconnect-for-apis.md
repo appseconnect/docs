@@ -16,9 +16,9 @@ APPSeCONNECT is a platform which allows hosting of APIs such that the hosted API
 
 Follow these steps to configure a APPSeCONNECT Proxy.
 
-1. [Create an account in APPSeCONNECT Portal]()
-2. [Configure Environment for your project]()
-3. [Choosing Back-end Apps]()
+1. [Create an account in APPSeCONNECT Portal](https://www.appseconnect.com/free-trial/)
+2. [Configure Environment for your project](/home/getting-started/)
+3. [Choosing Back-end Apps](http://support.appseconnect.com/support/solutions/articles/4000112077-appseconnect-portal-add-edit-app-app-version)
 
 Afterwards, you have to register a URL for your organization.
 
@@ -44,6 +44,6 @@ Afterwards, you have to register a URL for your organization.
 
 After this you are all set to create an API proxy. 
 
-[To get started on how to create a proxy follow this article.](/)
+[To get started on how to create a proxy follow this article.](/api-management/steps-to-create-proxy-endpoint)
 
-[If you want to create a Webhook follow this article.](/)
+[If you want to create a Webhook follow this article.](/api-management/steps-to-create-webhook-endpoint)

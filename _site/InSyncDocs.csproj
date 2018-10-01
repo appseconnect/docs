@@ -35,6 +35,8 @@
     <Folder Include="staticfiles\partner-management\" />
     <Folder Include="staticfiles\rules\" />
     <Folder Include="staticfiles\sdk-references\" />
+    <Folder Include="_posts\apps-management\concepts\" />
+    <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
     <Folder Include="_posts\Rules\" />
   </ItemGroup>
@@ -103,6 +105,9 @@
     <Content Include="feed.xml" />
     <Content Include="LICENSE.txt" />
     <Content Include="staticfiles\api-management\media\api-management-simple-architecture.png" />
+    <Content Include="staticfiles\workflow-management\media\CustomerDownload_Simple.png" />
+    <Content Include="staticfiles\workflow-management\media\ProductUpload_StockSync.png" />
+    <Content Include="staticfiles\workflow-management\media\Workflow-SalesOrderAdd.png" />
     <Content Include="videos.html" />
     <Content Include="_includes\analytics-providers\custom.html" />
     <Content Include="_includes\analytics-providers\google-universal.html" />
@@ -226,6 +231,7 @@
     <None Include="_posts\API-Management\Quickstart\2018-09-18-steps-to-create-webhook-endpoint.md" />
     <None Include="_posts\API-Management\Use Cases\2018-09-16-common-use-cases-on-api-management.md" />
     <None Include="_posts\API-Management\Use Cases\2018-09-17-create-api-using-custom-datasource.md" />
+    <None Include="_posts\apps-management\how-to-guides\2019-08-15-handling-schemas-on-apps.md" />
     <None Include="_posts\Workflow-Management\2018-08-14-overview.md" />
     <None Include="_posts\Workflow-Management\2018-08-15-Terminologies.md" />
     <None Include="_posts\Workflow-Management\2018-08-16-architecture-design-runtime.md" />
@@ -244,17 +250,22 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-rule.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-sequencer.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-splitter.md" />
-    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-24-working-with-touchpoint.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-storage-action.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-support-ticket.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-emails.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-webhooks.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-actions.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-activating-prepackaged-workflow.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-22-basic-workflow-customer-download.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-23-workflow-creation-with-reusable-data.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-24-delay-execution-in-workflow.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-25-workflow-filter-node-customer-download.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-26-process-to-configure-customer-with-splitter.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-27-executing-an-endpoint-before-another.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-28-process-to-configure-a-task-with-acknowledgement.md" />
-    <None Include="_posts\Workflow-Management\Used Cases\2018-08-29-executing-an-endpoint-after-another.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-creation-for-add-salesorder.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-showing-product upload with stock sync.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-24-delay-execution-in-workflow.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-25-workflow-filter-node-customer-download.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-26-process-to-configure-customer-with-splitter.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-27-executing-an-endpoint-before-another.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-28-process-to-configure-a-task-with-acknowledgement.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-08-29-workflow-showing-salescycle-with-post and post taskinput.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
