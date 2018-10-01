@@ -66,7 +66,23 @@ After successfully logging in, you have to choose My Workflows section under Acc
 
 * Similarly, drag & drop more touchpoints to complete a cycle.
 
-* You should make connections between all the touchpoints through lower circle segment of each pane.
+* A list of different types of touchpoints will be generated
+
+![Templates](/staticfiles/workflow-management/media/Templates-Add.png)
+
+* Drag in the general touchpoint to the workflow creation area
+
+![Adding-Touchpoint](/staticfiles/workflow-management/media/Adding-Touchpoint-Add.png)
+
+* Once you’ve provided the details, click OK. The touchpoint will be added. Also Add an ‘End’ node
+
+![StartEnd-Node](/staticfiles/workflow-management/media/StartEnd-Node-Add.png)
+
+* Connect the ‘Start’ Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
+
+![StartEnd-NodeConnected](/staticfiles/workflow-management/media/StartEnd-NodeConnected-Add.png)
+
+Click on ‘Save’. The workflow is now ready to be executed.
 
 * After all the steps have been completed, the workflow is ready to be run.
 
@@ -90,9 +106,7 @@ The circle segments of the nodes will change its color according to the operatio
 11. You will view messages in each step. You can check the workflow functionalities for the following nodes:
 
 * GetSpilter
-
 * Start
-
 * Merger
 * Loop
 * Halt Resume
@@ -102,7 +116,6 @@ The circle segments of the nodes will change its color according to the operatio
 See Also:
 
 APPSeCONNECT workflow listing page
-Base-workflow.
 Split and merger in workflow     
 Attribute Mapping of workflow
 

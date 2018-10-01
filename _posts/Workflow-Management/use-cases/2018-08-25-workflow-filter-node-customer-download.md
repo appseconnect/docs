@@ -10,7 +10,7 @@ menus:
         identifier: usedcases-filter
 ---
 
-•	Use Case Name - Workflow showing task configuration with  data filteration
+•	Use Case Name - Workflow creation and task configuration with data filteration
 
 •	Brief Description – This workflow enables the user to add customer in Ecommerce (Shopify) and enable the execution and data sync between Eccomerce & ERP with **Filter**  node (Insert Link). 
 

@@ -372,7 +372,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
+      excerpt: "• Use Case Name - Workflow creation and task configuration with data filteration • Brief Description – This workflow enables...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 40
@@ -1012,7 +1012,7 @@ var store = [
       {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
-        "excerpt": "• Use Case Name - Workflow showing task configuration with data filteration • Brief Description – This workflow enables the...",
+        "excerpt": "• Use Case Name - Workflow creation and task configuration with data filteration • Brief Description – This workflow enables...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
