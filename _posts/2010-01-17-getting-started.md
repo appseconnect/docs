@@ -20,7 +20,7 @@ Let us dive in details about every section of customer profile information.
 
 ## My Profile
 
-1. Log in to the [APPSeCONNECT portal](%20ipaas/home/) with valid credentials.
+1. Log in to the [APPSeCONNECT portal]() with valid credentials.
 
 2. Click on your name, and you can view `My Profile` tab. 
 
@@ -45,7 +45,7 @@ By clicking Projects, Workflows, you will be redirected to that particular pages
 **If you click on *Change Details* tab, you can edit all details**.
 
 
-![ChangeDetails](/staticfiles/root/media/AssignedCompanies.PNG)
+![ChangeDetails](/staticfiles/root/media/ChangeDetails.PNG)
 
 In the Personal Info tab, you can edit your name, mobile number.
 
@@ -59,7 +59,7 @@ The **Privacy Setting section** allows you to agree/disagree with the privacy po
 
 The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
 
-![SecuritySettings](/staticfiles/root/media/AssignedCompanies.PNG)
+![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
 
 **CONFIGURING APPSeCONNECT**
 
@@ -73,14 +73,14 @@ Environment setup of the on-premise agent:
 
  1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
 
-   ![DashboardScreen](/staticfiles/root/media/AssignedCompanies.PNG)
+   ![DashboardScreen](/staticfiles/root/media/DashboardScreen.PNG)
 
  2. Run the setup folder to install the Agent in the system.
  3. Open the installed Agent on your machine.
 
 4. Login to the agent with your portal credentials.
 
-   ![Login1](/staticfiles/root/media/AssignedCompanies.PNG)
+   ![Login1](/staticfiles/root/media/Login1.PNG)
 
 5.   There are four icons as shown below:
 The home icon shows the connections in the project.
