@@ -10,7 +10,7 @@ menus:
         weight: 1
 ---
 
-**CUSTOMER PROFILE INFORMATION**	
+# CUSTOMER PROFILE INFORMATION
 
 This section enables you to quickly access your profile after logging into the application. This is where you will get the overview of your organization including assigned companies under you, your organizxaton details and feeds.
 
@@ -18,12 +18,14 @@ This section also enables you to change details like your personal information, 
 
 Let us dive in details about every section of customer profile information.
 
-**My Profile**
+## My Profile
 
-Log in to the APPSeCONNECT portal with valid credentials.
-Click on your name, then you can view My Profile tab. 
+1. Log in to the [APPSeCONNECT portal](appseconnect%20and%20ipaas/home/) with valid credentials.
+
+2. Click on your name, and you can view `My Profile` tab. 
 
 ![MyProfile](../assets/images/MyProfile.png)
+
 
 Here you will be able to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
 
