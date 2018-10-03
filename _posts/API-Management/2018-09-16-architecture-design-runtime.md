@@ -3,6 +3,7 @@ title: "Architecture"
 toc: true
 tag: developers
 category: "API-Management"
+weight: 2
 menus: 
     api:
         icon: fa fa-gg

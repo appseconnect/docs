@@ -131,6 +131,7 @@
     <Content Include="staticfiles\root\media\SecuritySettings.png" />
     <Content Include="staticfiles\root\media\Trial_Form.png" />
     <Content Include="staticfiles\workflow-management\media\Adding-Touchpoint.png" />
+    <Content Include="staticfiles\workflow-management\media\appseconnect-workflow-architecture.png" />
     <Content Include="staticfiles\workflow-management\media\CustomerDownload_Simple.png" />
     <Content Include="staticfiles\workflow-management\media\DelayNode\DelayNode.PNG" />
     <Content Include="staticfiles\workflow-management\media\DelayWorkflow.png" />
@@ -264,6 +265,7 @@
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
     <None Include="_posts\API-Management\2018-09-15-Terminologies.md" />
     <None Include="_posts\API-Management\2018-09-16-architecture-design-runtime.md" />
+    <None Include="_posts\API-Management\2018-10-17-faqs.md" />
     <None Include="_posts\API-Management\How-to guides\2018-09-24-configure-appseconnect-for-apis.md" />
     <None Include="_posts\API-Management\How-to guides\2018-09-25-choosing-backend-apps.md" />
     <None Include="_posts\API-Management\How-to guides\2018-09-26-connecting-to-a-data-source.md" />

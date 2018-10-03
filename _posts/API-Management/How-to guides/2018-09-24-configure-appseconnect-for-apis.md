@@ -5,6 +5,7 @@ tag:
      - developers
      - implementation
 category: "API-Management"
+weight: 3
 menus: 
     api:
         icon: fa fa-gg

@@ -4,6 +4,7 @@ toc: true
 tag: developers
 category: "API-Management"
 author: "Äbhishek Sur"
+weight: 7
 menus: 
     api: 
         icon: fa fa-gg

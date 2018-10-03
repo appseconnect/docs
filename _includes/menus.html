@@ -1,11 +1,11 @@
 ﻿{% if menu %}
 <ul class="nav__items">
-    {% for item in menu %}
+    {% for item in menu | sort:"weight" %}
     {% if item.icon %}
     {% assign icon = item.icon %}
     {% else %}
     {% assign icon = "" %}
-    {% endif %} 
+    {% endif %}
     <li class="menu-item-{{ loop.index }}" data-jstree='{"icon":"{{icon}}"}'>
         <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
         {% if item.children %}
