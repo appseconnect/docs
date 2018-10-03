@@ -12,7 +12,7 @@ menus:
 
 # CUSTOMER PROFILE INFORMATION
 
-This section enables you to quickly access your profile after [logging](/home/home/) into the application. This is where you will get the overview of your organization including assigned companies under you, your organizxaton details and feeds.
+This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/home/home/).
 
 This section also enables you to change details like your personal information, changing avatar, changing password, privacy setting and security setting.
 
@@ -20,7 +20,7 @@ Let us dive in details about every section of customer profile information.
 
 ## My Profile
 
-1. Log in to the [APPSeCONNECT portal](/home/home/) with valid credentials.
+1. Log in to the [APPSeCONNECT portal](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) with valid credentials.
 
 2. Click on your name, and you can view `My Profile` tab. 
 
@@ -39,9 +39,10 @@ Let us dive in details about every section of customer profile information.
 
 7. `My Feeds` section is for seeing your recent activities.
 
-By clicking Projects, Workflows, you will be redirected to that particular pages respectively.
+By clicking Projects, [Workflows](/workflow/overview/), you will be redirected to that particular pages respectively.
 
-**If you click on *Change Details* tab, you can edit all details**.
+**ProTip:** If you click on Change Details tab, you can edit all details 
+{: .notice--info}
 
 
 ![ChangeDetails](/staticfiles/root/media/ChangeDetails.PNG)
