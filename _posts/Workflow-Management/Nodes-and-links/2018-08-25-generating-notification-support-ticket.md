@@ -18,5 +18,5 @@ Components of the support tickets are
 |---|---|
 | Priority  | Priority of support ticket |
 | Summary  | Summary of the support ticket |
-| Tokens  | Some predefined tokens used to build email body|
+| Tokens  | Some predefined tokens used to build ticket body|
 | Body  | Support ticket body |

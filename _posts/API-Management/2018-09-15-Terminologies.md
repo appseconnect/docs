@@ -8,7 +8,6 @@ menus:
         icon: fa fa-gg
         title: "Terminology" 
         identifier: apiterminology 
-author: "Abhishek Sur"
 ---
 
 This article demonstrates the important terminologies that you need to consider while using our API management system.
