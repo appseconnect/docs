@@ -314,9 +314,6 @@
     <None Include="_includes\nav_list" />
     <None Include="_includes\toc" />
     <None Include="_includes\video" />
-    <None Include="_posts\Partner-management\2010-01-13-What is a Permission.md" />
-    <None Include="_posts\Partner-management\2010-01-14-How to add permission.md" />
-    <None Include="_posts\Partner-management\2010-01-15-How to revoke permission.md" />
     <None Include="_posts\SDK-References\2010-01-01-What is an Adapter.md" />
     <None Include="_posts\SDK-References\2010-01-02-How to develop an Adapter.md" />
     <None Include="_posts\SDK-References\2010-01-03-How to test an Adapter.md" />
