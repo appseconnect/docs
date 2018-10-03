@@ -1017,7 +1017,7 @@ var store = [
       
       {
         "title": "Architecture",
-        "url": "http://localhost:4000/api-management/architecture-design-runtime/",
+        "url": "http://localhost:4000/api-management/architecture-design-runtime-Copy/",
         "excerpt": "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
         "teaser":
           
