@@ -3,7 +3,7 @@ title: "GET Node"
 toc: true
 tag: developers
 category: "Workflow"
-author: "Abhishek Sur"
+author: "Utpal Maity"
 menus: 
     nodeandlinks:
         icon: fa fa-link

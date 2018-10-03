@@ -1,7 +1,9 @@
 ﻿---
 title: "Configuring APPSeCONNECT for API Hosting"
 toc: true
-tag: developers
+tag: 
+     - developers
+     - implementation
 category: "API-Management"
 menus: 
     api:

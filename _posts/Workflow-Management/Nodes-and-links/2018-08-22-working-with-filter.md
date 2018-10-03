@@ -3,6 +3,7 @@ title: "FILTER Node"
 toc: true
 tag: developers
 category: "Workflow"
+author: "Utpal Maity"
 menus: 
     nodeandlinks:
         icon: fa fa-link
