@@ -106,6 +106,8 @@
     <Content Include="LICENSE.txt" />
     <Content Include="staticfiles\api-management\media\api-management-simple-architecture.png" />
     <Content Include="staticfiles\api-management\media\api-policy-pipeline.png" />
+    <Content Include="staticfiles\Home\Dashboardview1.png" />
+    <Content Include="staticfiles\Home\media\APPSeCONNECT-Architecture.jpg" />
     <Content Include="staticfiles\root\media\App.png" />
     <Content Include="staticfiles\root\media\AppComponents.png" />
     <Content Include="staticfiles\root\media\AppView.png" />
