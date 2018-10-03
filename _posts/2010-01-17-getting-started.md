@@ -20,14 +20,14 @@ Let us dive in details about every section of customer profile information.
 
 ## My Profile
 
-1. Log in to the [APPSeCONNECT portal](appseconnect%20and%20ipaas/home/) with valid credentials.
+1. Log in to the [APPSeCONNECT portal](%20ipaas/home/) with valid credentials.
 
 2. Click on your name, and you can view `My Profile` tab. 
 
-![MyProfile](../assets/images/MyProfile.png)
+![MyProfile](/staticfiles/root/media/MyProfile.PNG)
 
 
-Here you will be able to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
+\Here you will be able to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
 
 In this page, you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address. To know more about Role Management, **click here**.
 
@@ -36,7 +36,7 @@ In the **Summary section**, the count of projects you handle/under organization 
 
 **Assigned Companies** will be shown on User Role basis. In **My Company section**, only your company details will be there.
 
-![AssignedCompanies](../assets/images/AssignedCompanies.png)
+![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.PNG)
 
 **My Feeds** section is for seeing your recent activities.
 
@@ -45,7 +45,7 @@ By clicking Projects, Workflows, you will be redirected to that particular pages
 **If you click on *Change Details* tab, you can edit all details**.
 
 
-![ChangeDetails](../assets/images/ChangeDetails.png)
+![ChangeDetails](/staticfiles/root/media/AssignedCompanies.PNG)
 
 In the Personal Info tab, you can edit your name, mobile number.
 
@@ -59,7 +59,7 @@ The **Privacy Setting section** allows you to agree/disagree with the privacy po
 
 The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
 
-![SecuritySettings](../assets/images/SecuritySettings.png)
+![SecuritySettings](/staticfiles/root/media/AssignedCompanies.PNG)
 
 **CONFIGURING APPSeCONNECT**
 
@@ -73,14 +73,14 @@ Environment setup of the on-premise agent:
 
  1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
 
-   ![DashboardScreen](../assets/images/DashboardScreen.png)
+   ![DashboardScreen](/staticfiles/root/media/AssignedCompanies.PNG)
 
  2. Run the setup folder to install the Agent in the system.
  3. Open the installed Agent on your machine.
 
 4. Login to the agent with your portal credentials.
 
-   ![Login1](../assets/images/Login1.png)
+   ![Login1](/staticfiles/root/media/AssignedCompanies.PNG)
 
 5.   There are four icons as shown below:
 The home icon shows the connections in the project.
@@ -90,7 +90,7 @@ The sync panel displays the connections deployed successfully for sync. It is vi
 
 The last one is the Workflow option that displays the configured workflows in the project.
 
-  ![Connections](../assets/images/Connections.png)
+  ![Connections](/staticfiles/root/media/Connections.PNG)
 
 **Environment setup of the Cloud agent**:
 
@@ -104,17 +104,17 @@ Pre-requisites:
 
 1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).
 
-![App](../assets/images/App.png)
+![App](/staticfiles/root/media/App.PNG)
 
 2.  Go to the Connections page and assign the app's credential to the connection by choosing the configuration setup option as shown below.
 
-![Connection_New](../assets/images/Connection_New.png)
+![Connection_New](/staticfiles/root/media/Connection_New.PNG)
 
 3. Click on the View the Connection icon and navigate to the touchpoints page.
 
 4. Click on the play button to run the sync process.
 
-![Connection_Touchpoint](../assets/images/Connection_Touchpoint.png)
+![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoints.PNG)
 
 
 **Configuring Apps**
