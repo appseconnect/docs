@@ -5,6 +5,7 @@ Adding a Project in Recent Project Tab from Search Box
 2. Now the login page will be redirected to a homepage as shown below
 
 
+
 **Note: 1. Account menu will only be available.
       2. For an end user, Administration menu will not be available**
 
