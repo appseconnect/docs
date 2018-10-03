@@ -10,6 +10,9 @@ var idx = lunr(function () {
 
   
   
+
+  
+  
     idx.add({
       title: "What is an Adapter",
       excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
@@ -200,10 +203,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deploying And Executing",
-      excerpt: "Markdown file\n",
-      categories: [],
-      tags: [],
+      title: "Deploying a workflow and executing it",
+      excerpt: "\n",
+      categories: ["Workflow"],
+      tags: ["developers"],
       id: 21
     });
     
@@ -336,7 +339,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Workflow Actions",
-      excerpt: "\n",
+      excerpt: "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 36
@@ -536,7 +539,7 @@ var idx = lunr(function () {
       title: "Configuring APPSeCONNECT for API Hosting",
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
-      tags: ["developers"],
+      tags: ["developers","implementation"],
       id: 58
     });
     
@@ -554,7 +557,7 @@ var idx = lunr(function () {
       title: "Connecting an API to any data source",
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
-      tags: ["developers"],
+      tags: ["developers","implementation"],
       id: 60
     });
     
@@ -573,6 +576,10 @@ var idx = lunr(function () {
 console.log( jQuery.type(idx) );
 
 var store = [
+  
+    
+    
+    
   
     
     
@@ -810,9 +817,9 @@ var store = [
     
       
       {
-        "title": "Deploying And Executing",
-        "url": "http://localhost:4000/deploying-and-executing/",
-        "excerpt": "Markdown file\n",
+        "title": "Deploying a workflow and executing it",
+        "url": "http://localhost:4000/workflow/deploying-and-executing/",
+        "excerpt": "\n",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -977,7 +984,7 @@ var store = [
       {
         "title": "Workflow Actions",
         "url": "http://localhost:4000/workflow/generating-actions/",
-        "excerpt": "\n",
+        "excerpt": "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

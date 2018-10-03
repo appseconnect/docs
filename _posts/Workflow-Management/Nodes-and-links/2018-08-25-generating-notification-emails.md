@@ -3,6 +3,7 @@ title: "Sending Emails"
 toc: true
 tag: developers
 category: "Workflow"
+author: "Utpal Maity"
 menus: 
     nodesaction:
         icon: fa fa-link

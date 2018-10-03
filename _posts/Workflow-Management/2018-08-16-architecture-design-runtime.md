@@ -41,5 +41,6 @@ adapters, execute stroage plugins, triggers notification, generate logs etc.
 If there is any cloud involvement from an on-premise execution or an on-premise dependency for a 
 cloud solution, it triggers the call automatically using Service Bus and executes the process. 
 
-The Repository services takes care of storage and snapshot of the workflow executions.
+The Repository services takes care of storage and snapshot of the workflow executions which one can investigate later.
+
 

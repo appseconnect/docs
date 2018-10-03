@@ -31,6 +31,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "jekyll-sitemap"
 gem "jekyll-paginate"
 gem "jekyll-gist"
+gem "jekyll-archives"
 gem "jemoji"
 gem "minimal-mistakes-jekyll"
 gem "sass"

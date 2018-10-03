@@ -38,15 +38,14 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.1.1)
+      jekyll (>= 2.4)
     jekyll-data (1.0.0)
       jekyll (~> 3.3)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
-    jekyll-github-metadata (2.9.4)
-      jekyll (~> 3.1)
-      octokit (~> 4.0, != 4.4.0)
     jekyll-menus (0.6.0)
       jekyll (~> 3.1)
     jekyll-paginate (1.1.0)
@@ -117,9 +116,9 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8.3)
+  jekyll-archives
   jekyll-feed (~> 0.6)
   jekyll-gist
-  jekyll-github-metadata
   jekyll-menus
   jekyll-paginate
   jekyll-sitemap
