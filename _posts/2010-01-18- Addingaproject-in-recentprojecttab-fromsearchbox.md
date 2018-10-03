@@ -5,6 +5,8 @@ Adding a Project in Recent Project Tab from Search Box
 2. Now the login page will be redirected to a homepage as shown below
 
 
+[Dashboardview1](/staticfiles/root/media/Dashboardview1.PNG)
+
 
 **Note: 1. Account menu will only be available.
       2. For an end user, Administration menu will not be available**
@@ -13,7 +15,11 @@ Adding a Project in Recent Project Tab from Search Box
 
 4. Enter  keyword in the search field.
 
+[Search-Project](/staticfiles/root/media/Search-Project.PNG)
+
 5. Now click on Add button and Search field will come up.
+
+[Add-SearchProjects](/staticfiles/root/media/Add-SearchProjectst.PNG)
 
 6 There is a `cross` and `pin` button. 
 
@@ -21,18 +27,22 @@ Adding a Project in Recent Project Tab from Search Box
 
 8. The pin will toggle on or off, where On means the project will not be removed automatically.
 
+[Pinbar](/staticfiles/root/media/Pinbar.PNG)
+
 9. After the pin is in on state that project will go to the first option.
 
 
-10. If minimize the browser size then all project will show the bread button.
+10. If you minimize the browser size then all project will show the bread button.
 
-**Note: When one project is added beyond the 5 projects, the last accessed project will be automatically removed.
-When already few project are added as pinned then after adding new project the new project will add to the left 
-side of last unpinned added to project.**
+[Projects-View](/staticfiles/root/media/Projects-View.PNG)
+
+**Note: When one project is added beyond the 5 projects, the last accessed project will be automatically removed.When already few project are added as pinned then after adding new project the new project will add to the left side of last unpinned added to project.**
+
+[Pinned-Projects](/staticfiles/root/media/Pinned-Projects.PNG)
 
 11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this. 
 
-E.g.:
+[NewProject-Added](/staticfiles/root/media/NewProject-Added.PNG)
 
 12. If all 5 projects are pinned in the tab then if a new project is added it will be added but it will not show on the tab.
 
