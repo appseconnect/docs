@@ -453,7 +453,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Create API to Connect On-premise Database",
-      excerpt: "\n",
+      excerpt: "APIs is required when you don’t have an existing API for your data source. To implement new APIs, you might...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 49
@@ -1111,7 +1111,7 @@ var store = [
       {
         "title": "Create API to Connect On-premise Database",
         "url": "http://localhost:4000/api-management/create-api-using-custom-datasource/",
-        "excerpt": "\n",
+        "excerpt": "APIs is required when you don’t have an existing API for your data source. To implement new APIs, you might...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
