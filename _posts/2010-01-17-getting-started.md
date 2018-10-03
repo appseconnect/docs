@@ -20,7 +20,7 @@ Let us dive in details about every section of customer profile information.
 
 ## My Profile
 
-1. Log in to the [APPSeCONNECT portal]() with valid credentials.
+1. Log in to the [APPSeCONNECT portal](appseconnect%20and%20ipaas/home/) with valid credentials.
 
 2. Click on your name, and you can view `My Profile` tab. 
 
