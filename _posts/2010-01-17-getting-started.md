@@ -12,7 +12,7 @@ menus:
 
 # CUSTOMER PROFILE INFORMATION
 
-This section enables you to quickly access your profile after [logging](/home/home/) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/home/home/).
+This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/home/home/).
 
 This section also enables you to change details like your personal information, changing avatar, changing password, privacy setting and security setting.
 
