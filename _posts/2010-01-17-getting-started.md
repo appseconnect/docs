@@ -60,15 +60,15 @@ The **Security Setting** enables you to handle all the security related settings
 
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
 
-**CONFIGURING APPSeCONNECT**
+## CONFIGURING APPSeCONNECT 
 
-**Login to APPSeCONNECT - View Home Page to get the details. Click here**
+1. Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
 
-**Configuring Environment - Agent download / Cloud agent configuration**
+## Configuring Environment - Agent download / Cloud agent configuration
 
 APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and is configured on cloud and does the actual data synchronization with the help of other concerned adapters while the Cloud agent is a similar tool that performs the same function as the on-premise agent but is present on cloud itself. No server is required to configure or sync using the cloud agent.
 
-Environment setup of the on-premise agent:
+### Environment setup of the on-premise agent:
 
  1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
 
@@ -91,9 +91,9 @@ The last one is the Workflow option that displays the configured workflows in th
 
   ![Connections](/staticfiles/root/media/Connections.PNG)
 
-**Environment setup of the Cloud agent**:
+### Environment setup of the Cloud agent
 
-Pre-requisites:
+**Pre-requisites:**
 * The project should be cloud supported.
 
 * The two apps between which data has to be synced should be cloud supported. 
@@ -116,4 +116,4 @@ Pre-requisites:
 ![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoints.PNG)
 
 
-**Configuring Apps**
+## Configuring Apps
