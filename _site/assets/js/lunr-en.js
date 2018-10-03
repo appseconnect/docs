@@ -67,7 +67,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of AppseConnect",
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
-      categories: ["AppseConnect and IPAAS"],
+      categories: ["Home"],
       tags: ["developers"],
       id: 6
     });
@@ -628,7 +628,7 @@ var store = [
       
       {
         "title": "Overview of AppseConnect",
-        "url": "http://localhost:4000/appseconnect%20and%20ipaas/home/",
+        "url": "http://localhost:4000/home/home/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
           
