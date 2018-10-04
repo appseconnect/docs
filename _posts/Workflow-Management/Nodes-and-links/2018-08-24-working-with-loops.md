@@ -1,9 +1,11 @@
 ﻿---
 title: "Working with Loops"
 toc: true
-tag: developers
+tag: 
+tag: 
+        - developers
+        - nodes
 category: "Workflow"
-author: "Utpal Maity"
 menus: 
     nodeandlinks:
         icon: fa fa-link
