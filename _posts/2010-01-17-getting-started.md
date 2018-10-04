@@ -65,22 +65,76 @@ The **Security Setting** enables you to handle all the security related settings
 
 This section gives the overall idea about chhosing application, configuring connection, ennviornment setup and execution of the sync process. Step by Step direction is given below:
 
-1. Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
+Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
 
 ## Choosing Application
-1. Go to the APP section of APPSeCONNECT and You can view that organization-specific app screen page displays all the apps that are present in a specific organization.
+## (1) Process of Choosing App 
 
-2. Now Search for the organization in the search box and the organization will appear.  You can view all the apps which are present under the organization.
+1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
 
-3. `Choose App` option enables you to choose and add apps available under the subscription plan of the organization.
+2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
 
-4. Choose Desired Application from the drop-down and select the appropriate version. After choosing both app and version, click on *Save* button.
+![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
 
-5. The app will be added. The Search Text box helps you to quickly search the desired app.
+3. The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
 
-6. Click on the Delete option beside the app, to delete any app you dont require.
+![AppView](/staticfiles/root/media/AppView.png)
 
-You can Expand the section by clicking on  the "Plus" button beside the app name. Now you can view the versions of the app and the `Schema`,`Adapter` and the `Function` option are available.
+4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
+
+![AppComponents](/staticfiles/root/media/AppComponents.png)
+
+### APPSeCONNECT Schema/Entity-
+ 
+ An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
+
+* Data can be stored about such entities.
+
+* Each schema has its own characteristics or attributes. For example, `customer id`, `address`, `phone number` are attributes to the `customer` entity. Each customer record in the database serves as an entity item.
+
+* The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.
+
+* If a customer is an entity, then the complete set of the various fields associated with it is called its schema.
+
+Schema Image is given below:
+
+![Schema](/staticfiles/root/media/Schema.png)
+
+### Adapter
+Adapters helps in integration with other applications easy. Adapter represents an interface between an APP and APPSeCONNECT. An adapter is a component which connects your app with APPSeCONNECT. 
+
+There are few responsibilities of an adapter which are defined as under: 
+
+* Create a credentials view which allows connecting to the respective APP where you want to connect.
+
+* Create Push and Pull method inside the adapter which can send and receive data to and from the application.
+
+* Add additional business behavior with respect to the corresponding app.
+
+The Adapter is loaded dynamically by the **Agent** (create link) and calls some specific methods using a fixed contract defined as an interface. 
+
+
+### Extension
+
+Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.
+
+### Functions
+
+The APPSeCONNECT expression methods are special transformation block used during **mapping** (link). The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
+
+* Generic
+* Native
+* Cloud App Resource
+
+
+### Delete
+
+This button enables to delete selected app from the list.
+
+**ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
+{: .notice--info}
+
+
 
 The process of Adding New App is present in the subsequent section of the module.
 
