@@ -280,10 +280,13 @@
     <None Include="_posts\API-Management\Policies\2018-09-21-validate-http-header.md" />
     <None Include="_posts\API-Management\Policies\2018-09-22-compression-apply.md" />
     <None Include="_posts\API-Management\Policies\2018-09-23-response-content-format.md" />
+    <None Include="_posts\API-Management\Quickstart\2018-09-16-quickstart-guides-to-api-management.md" />
     <None Include="_posts\API-Management\Quickstart\2018-09-17-steps-to-create-proxy-endpoint.md" />
     <None Include="_posts\API-Management\Quickstart\2018-09-18-steps-to-create-webhook-endpoint.md" />
     <None Include="_posts\API-Management\use-cases\2018-09-16-common-use-cases-on-api-management.md" />
     <None Include="_posts\API-Management\use-cases\2018-09-17-create-api-using-custom-datasource.md" />
+    <None Include="_posts\API-Management\use-cases\2018-09-18-create-api-connecting-to-api.md" />
+    <None Include="_posts\API-Management\use-cases\2018-09-19-create-api-connecting-to-webhook.md" />
     <None Include="_posts\apps-management\how-to-guides\2019-08-15-handling-schemas-on-apps.md" />
     <None Include="_posts\Workflow-Management\2018-08-14-overview.md" />
     <None Include="_posts\Workflow-Management\2018-08-15-Terminologies.md" />
@@ -310,6 +313,7 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-actions.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-debugging-a-workflow.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-08-16-quickstart-guides-to-workflow-management.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-creation-for-add-salesorder.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-showing-product upload with stock sync.md" />
