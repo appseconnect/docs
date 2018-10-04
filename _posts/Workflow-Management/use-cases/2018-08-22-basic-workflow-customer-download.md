@@ -32,13 +32,13 @@ menus:
 
 8. The user after creating the workflow will give a name to the untitled workflow (Workflow for Customer Downloading) and click on `SAVE` button to save the workflow.
 
-            ![CustomerDownload_Simple](media/CustomerDownload_Simple.png)
+ ![CustomerDownload_Simple](/staticfiles/root/media//CustomerDownload_Simple.png)
             
 9. The user after creating the workflow will deploy that in the Agent.
 
-10. The user will navigate to teh Enviornment module and click on Agent Setting to check the connection is active or not .
+10. The user will navigate to the Enviornment module and click on Agent Setting to check the connection is active or not .
 
-11. The user will navigate to teh Deploy Configuration button to deploy the configuration. The success message will come.
+11. The user will navigate to the Deploy Configuration button to deploy the configuration. The success message will come.
 
 12. The user will now login/signup to Shopify (App 1) and view the added Customer.
 
@@ -52,7 +52,7 @@ menus:
 
 
 * Alternate Flows – NOT APPLICABLE 
-* Post-conditions – The user can now see that the Customer downloaded is successful and can be fetched in SAP B1. 
+* Post-conditions – The user can now see that the Customer download is successful and can be fetched in SAP B1. 
 * Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the customer download is failure.
 * Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
 * Assumptions – NOT APPLICABLE 
