@@ -39,7 +39,7 @@ The connection should be done in the Cloud.
 After successfully logging in, you have to choose My Workflows section under Account and a new page will open.
 
 1. Refer the  steps
-[Working with Workflow in APPSeCONNECT](https://github.com/appseconnect/docs/blob/demo/_posts/Workflow-Management/2018-08-14-overview.md#working-with-workflow-in-appseconnect) 
+[Working with Workflow in APPSeCONNECT]() 
 2. Log into the Cloud Portal with valid credentials.
 
 3. Choose one project.
