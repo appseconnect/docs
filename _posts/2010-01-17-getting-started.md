@@ -61,9 +61,64 @@ The **Security Setting** enables you to handle all the security related settings
 
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
 
-## CONFIGURING APPSeCONNECT 
+# CONFIGURING APPSeCONNECT 
+
+This section gives the overall idea about chhosing application, configuring connection, ennviornment setup and execution of the sync process. Step by Step direction is given below:
 
 1. Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
+
+## Choosing Application
+
+## Creating Connection & executing the touchpoint
+
+The Connection Page of the Cloud Portal is needed for creating connection between two different Applications. 
+
+For Example, if you want to create a connection between SAP B1 to Magento 2, you have to come to this page & create the connection. You will also see the existing connection for a particular organization on this page.
+
+1. Login to portal with the valid details of a user.
+
+2. Navigate to the following path: Choose a Project -> Connection 
+
+![ConnectionDetails](/staticfiles/root/media/ConnectionDetails.png) 
+
+3. To find existing Connection, Click Search button. An existing connection opens up
+
+4. A typical connection has the following buttons attached to it.
+
+**Protip** On clicking the Publish button, all the Touchpoints will be published under the connection. Once a connection has been published, only the Republish button will appear instead of Publish button {: .notice--info}
+
+5. All the existing connection of the project will be displayed here. One can activate or deactivate connection by the toggle button. 
+
+![Search-Connection](/staticfiles/root/media/Search-Connection.png) 
+
+
+6. You  can create a new connection by clicking `Create Connection` button.
+
+7. The following page opens up where you have to input the new connection details.
+
+![Create-NewConnection](/staticfiles/root/media/Create-NewConnection.png) 
+
+8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.
+
+![CreateConnection1](/staticfiles/root/media/CreateConnection1.png)
+
+9. Activate default touchpoint button will be checked by default.
+Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.
+
+![Select-Connection](/staticfiles/root/media/Select-Connection.png)
+
+10. On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.
+
+![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)
+
+11. On selecting View connection, all the touchpoints of the connection will be displayed.
+![Touchpoint-List](/staticfiles/root/media/Touchpoint-List.png)
+
+12. Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.
+
+**Protip** On the Touchpoints page, there will be a Reverse button (only if applicable, for e.g here NAV to Magento connection is also available). The connection will be reversed.
+Related document {: .notice--info}
+
 
 ## Configuring Environment - Agent download / Cloud agent configuration
 
@@ -117,4 +172,3 @@ The last one is the Workflow option that displays the configured workflows in th
 ![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoints.PNG)
 
 
-## Configuring Apps
