@@ -1,9 +1,10 @@
 ﻿---
 title: "Splitter Node"
 toc: true
-tag: developers
+tag: 
+        - developers
+        - nodes
 category: "Workflow"
-author: "Utpal Maity"
 menus: 
     nodeandlinks:
         icon: fa fa-link
