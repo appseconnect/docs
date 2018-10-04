@@ -70,7 +70,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of AppseConnect",
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
-      categories: ["Home"],
+      categories: ["APPSeCONNECT"],
       tags: ["developers"],
       id: 6
     });
@@ -79,7 +79,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Getting started to APPSeCONNECT",
       excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
-      categories: ["home"],
+      categories: ["APPSeCONNECT"],
       tags: ["developers"],
       id: 7
     });
@@ -132,7 +132,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guide to debug workflows",
-      excerpt: "\n",
+      excerpt: "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 13
@@ -143,7 +143,7 @@ var idx = lunr(function () {
       title: "GET Node",
       excerpt: "GET node is used for getting data from an application by using the API provided by the application. When we...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 14
     });
     
@@ -161,14 +161,14 @@ var idx = lunr(function () {
       title: "PROCESS Node",
       excerpt: "PROCESS node is used for transforming data from one format to another format based on the mapping logic specified for...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 16
     });
     
   
     idx.add({
       title: "Deploying a workflow and executing it",
-      excerpt: "\n",
+      excerpt: "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 17
@@ -179,7 +179,7 @@ var idx = lunr(function () {
       title: "POST Node",
       excerpt: "POST node is used for pushing data to an application based on the API provided by the application.You need to...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 18
     });
     
@@ -617,7 +617,7 @@ var store = [
       
       {
         "title": "Overview of AppseConnect",
-        "url": "http://localhost:4000/home/home/",
+        "url": "http://localhost:4000/appseconnect/home/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
           
@@ -628,7 +628,7 @@ var store = [
       
       {
         "title": "Getting started to APPSeCONNECT",
-        "url": "http://localhost:4000/home/getting-started/",
+        "url": "http://localhost:4000/appseconnect/getting-started/",
         "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
         "teaser":
           
@@ -694,8 +694,8 @@ var store = [
       
       {
         "title": "Quickstart guide to debug workflows",
-        "url": "http://localhost:4000/workflow/activating-prepackaged-workflow/",
-        "excerpt": "\n",
+        "url": "http://localhost:4000/workflow/debugging-a-workflow/",
+        "excerpt": "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -739,7 +739,7 @@ var store = [
       {
         "title": "Deploying a workflow and executing it",
         "url": "http://localhost:4000/workflow/deploying-and-executing/",
-        "excerpt": "\n",
+        "excerpt": "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

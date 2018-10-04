@@ -1,7 +1,9 @@
 ﻿---
 title: "POST Node"
 toc: true
-tag: developers
+tag: 
+    - developers
+    - nodes
 category: "Workflow"
 author: "Utpal Maity"
 menus: 
