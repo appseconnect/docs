@@ -6,10 +6,10 @@ tag:
     - usecases
 category: "Workflow-Management"           
 menus: 
-    usecase:
+    workflowusecases:
         icon: fa fa-link
         title: "Basic Workflow for Customer Downloading" 
-        identifier: workflowusecase
+        identifier: workflowusecase-customerdownload
 ---
 
 * Use Case Name - Creating a Basic Workflow for Customer Downloading.
