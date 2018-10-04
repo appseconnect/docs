@@ -245,6 +245,12 @@
 <loc>http://localhost:4000/nodes/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/usecases/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/actions/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/implementation/</loc>
 </url>
 <url>

@@ -8,6 +8,8 @@ menus:
         title: Getting Started
         icon: fa fa-play
         weight: 1
+header:
+    teaser: /staticfiles/root/media/MyProfile.PNG
 ---
 
 # CUSTOMER PROFILE INFORMATION

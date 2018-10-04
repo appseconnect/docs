@@ -188,16 +188,16 @@ var idx = lunr(function () {
       title: "FILTER Node",
       excerpt: "This node is used to fetch a subset of data from an original data packet based on the criteria specified...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 19
     });
     
   
     idx.add({
-      title: "Basic Workflow for Customer Downloading",
+      title: "Workflow-Use Cases",
       excerpt: "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","usecases"],
       id: 20
     });
     
@@ -206,7 +206,7 @@ var idx = lunr(function () {
       title: "DELAY Node",
       excerpt: "DELAY node is used to delay or stop an execution flow for a specific period. For example, I have an...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 21
     });
     
@@ -242,7 +242,7 @@ var idx = lunr(function () {
       title: "HALT/RESUME Node",
       excerpt: "HALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 25
     });
     
@@ -251,7 +251,7 @@ var idx = lunr(function () {
       title: "Working with Loops",
       excerpt: "In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the other nodes that are...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 26
     });
     
@@ -260,7 +260,7 @@ var idx = lunr(function () {
       title: "Merge Node",
       excerpt: "This node is used to merge smaller data chunks into a single data packet. Like a SPLITTER node, it also...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 27
     });
     
@@ -269,7 +269,7 @@ var idx = lunr(function () {
       title: "Rule Node",
       excerpt: "This node is used for decision making during workflow execution. A rule can be applied on a single chunk of...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 28
     });
     
@@ -278,7 +278,7 @@ var idx = lunr(function () {
       title: "Sequencer Node",
       excerpt: "This node is used to order elements by a certain attribute. This node can be applied to any collection of...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 29
     });
     
@@ -287,7 +287,7 @@ var idx = lunr(function () {
       title: "Splitter Node",
       excerpt: "This node is used to split a data packet into smaller chunks for processing in small batches. There are three...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","nodes"],
       id: 30
     });
     
@@ -305,7 +305,7 @@ var idx = lunr(function () {
       title: "Workflow Actions",
       excerpt: "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","actions"],
       id: 32
     });
     
@@ -314,7 +314,7 @@ var idx = lunr(function () {
       title: "Sending Emails",
       excerpt: "This node is used to send an email notification to a user during workflow execution. For example, using this node...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","actions"],
       id: 33
     });
     
@@ -323,7 +323,7 @@ var idx = lunr(function () {
       title: "Generating Support tickets",
       excerpt: "Using this node user can create a support ticket during workflow execution. For example, after data is pushed to an...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","actions"],
       id: 34
     });
     
@@ -332,7 +332,7 @@ var idx = lunr(function () {
       title: "Webhook callback",
       excerpt: "The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","actions"],
       id: 35
     });
     
@@ -341,7 +341,7 @@ var idx = lunr(function () {
       title: "Storing Files",
       excerpt: "Using this node user can store data in text file during workflow execution for future reference. Created file will be...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","actions"],
       id: 36
     });
     
@@ -632,7 +632,7 @@ var store = [
         "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
         "teaser":
           
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+            "http://localhost:4000/staticfiles/root/media/MyProfile.PNG"
           
       },
     
@@ -770,7 +770,7 @@ var store = [
     
       
       {
-        "title": "Basic Workflow for Customer Downloading",
+        "title": "Workflow-Use Cases",
         "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
         "excerpt": "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
         "teaser":
