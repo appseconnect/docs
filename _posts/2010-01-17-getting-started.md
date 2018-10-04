@@ -155,7 +155,8 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 
 4. A typical connection has the following buttons attached to it.
 
-**Protip** On clicking the Publish button, all the Touchpoints will be published under the connection. Once a connection has been published, only the Republish button will appear instead of Publish button {: .notice--info}
+**Protip** On clicking the Publish button, all the Touchpoints will be published under the connection. Once a connection has been published, only the Republish button will appear instead of Publish button
+{: .notice--info}
 
 5. All the existing connection of the project will be displayed here. One can activate or deactivate connection by the toggle button. 
 
@@ -246,5 +247,3 @@ The last one is the Workflow option that displays the configured workflows in th
 4. Click on the play button to run the sync process.
 
 ![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoints.PNG)
-
-
