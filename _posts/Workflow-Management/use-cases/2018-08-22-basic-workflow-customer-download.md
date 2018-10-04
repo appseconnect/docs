@@ -1,10 +1,10 @@
 ---
-title: "Workflow-Use Cases"
+title: "Common Use Cases for Workflow management"
 toc: true
 tag: 
     - developers
     - usecases
-category: "Workflow"          
+category: "Workflow-Management"           
 menus: 
     usecase:
         icon: fa fa-link
@@ -17,7 +17,8 @@ menus:
 * Brief Description – This is a basic workflow where the user can download customer from Shopify to SAP B1 with the execution of this basic and easy to use workflow through our portal .
 * Actor – Implementers, Developers, Partners   
 * Preconditions – Organization Creation & Connection Creation 
-* Basic Flow –  The user will execute the flow as given below
+* Basic Flow –  The user will execute the flow as given below:
+
 1. The user will select the Start node, where the workflow execution will begin
 2. The user will now go to template section and select General Touchpoint.
 3. The user will get `Adding Touchpoint`button. Input the Touchpoint from the drop down list.
@@ -25,13 +26,14 @@ menus:
 5. The Customer Download touchpint appears in the grid pane. 
 6. The user will now link the Start node with the touchpoint.Drag the link to the touchpoint
 7. The touchpoint has three group nodes - 
-[Get](https://github.com/appseconnect/docs/blob/demo/_posts/Workflow-Management/Nodes-and-links/2018-08-19-working-with-get.md#title-get-nodetoc-truetag-developerscategory-workflowauthor-abhishek-sur)
-* [Process](https://github.com/appseconnect/docs/blob/demo/_posts/Workflow-Management/Nodes-and-links/2018-08-20-working-with-process.md#title-process-nodetoc-truetag-developerscategory-workflow)
-* [Post](https://github.com/appseconnect/docs/blob/demo/_posts/Workflow-Management/Nodes-and-links/2018-08-21-working-with-post.md#title-post-nodetoc-truetag-developerscategory-workflow)
+* [Get]()
+* [Process]()
+* [Post]()
 
 8. The user after creating the workflow will give a name to the untitled workflow (Workflow for Customer Downloading) and click on `SAVE` button to save the workflow.
 
             ![CustomerDownload_Simple](media/CustomerDownload_Simple.png)
+            
 9. The user after creating the workflow will deploy that in the Agent.
 
 10. The user will navigate to teh Enviornment module and click on Agent Setting to check the connection is active or not .

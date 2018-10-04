@@ -81,7 +81,7 @@
 <lastmod>2018-08-22T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/workflow/basic-workflow-customer-download/</loc>
+<loc>http://localhost:4000/workflow-management/basic-workflow-customer-download/</loc>
 <lastmod>2018-08-22T00:00:00+05:30</lastmod>
 </url>
 <url>
@@ -270,10 +270,10 @@
 <loc>http://localhost:4000/workflow/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/api-management/</loc>
+<loc>http://localhost:4000/workflow-management/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/workflow-management/</loc>
+<loc>http://localhost:4000/api-management/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/courses.html</loc>

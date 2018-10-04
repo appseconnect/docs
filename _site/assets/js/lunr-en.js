@@ -194,9 +194,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow-Use Cases",
+      title: "Common Use Cases for Workflow management",
       excerpt: "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
-      categories: ["Workflow"],
+      categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 20
     });
@@ -779,8 +779,8 @@ var store = [
     
       
       {
-        "title": "Workflow-Use Cases",
-        "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
+        "title": "Common Use Cases for Workflow management",
+        "url": "http://localhost:4000/workflow-management/basic-workflow-customer-download/",
         "excerpt": "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
         "teaser":
           
