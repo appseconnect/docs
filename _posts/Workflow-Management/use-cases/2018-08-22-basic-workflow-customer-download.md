@@ -3,6 +3,12 @@ title: "Basic Workflow for Customer Downloading"
 toc: true
 tag: developers
 category: "Workflow"
+          "usecase"
+menus: 
+    usecase:
+        icon: fa fa-link
+        title: "UseCase of Workflow" 
+        identifier: workflowusecase
 ---
 
 * Use Case Name - Creating a Basic Workflow for Customer Downloading.
