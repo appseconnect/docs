@@ -86,7 +86,7 @@ author:
   name             : "Team APPSeCONNECT"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "APPSeCONNECT product development team."
-  location         : ""
+  location         : 
   email            : "support@appseconnect.com"
   uri              : "http://support.appseconnect.com"
   home             : # null (default), "absolute or relative url to link to author home"
@@ -112,7 +112,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : # "https://www.youtube.com/user/insyncsolutions"
 
 
 # Reading Files
@@ -189,6 +189,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-menus
+  - jekyll-archives
   - jemoji
 
 
@@ -199,6 +200,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-menus
+  - jekyll-archives
   - jemoji
 
 
@@ -214,21 +216,21 @@ whitelist:
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /:name/
+     tag: /:name/
 
 
 # HTML Compression
@@ -237,7 +239,9 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
+collections:
+  category:
+    output: true
 # Defaults
 defaults:
   # _posts
@@ -250,8 +254,8 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true
-      
+      related: true 
+
   - scope:
       path: "customers"
       type: posts

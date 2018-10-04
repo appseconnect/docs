@@ -66,6 +66,21 @@ layout: default
                 {% if page.read_time %}
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
                 {% endif %}
+                {% if site.github %}
+                    <span class="contributors-text">
+                        Contributors
+                    </span>
+                    <ul>
+                        {% for contributer in site.github.contributors %}
+                            <li>
+                                <a href="{{html_url}}" 
+                                   title="{{name}}">
+                                <img src="{{html_url}}.png?size=32" 
+                                     alt="{{name}}"></a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </header>
             {% endunless %}
 
@@ -118,7 +133,7 @@ layout: default
                                 </a>
                             </li>
                             {% endfor %}
-                           
+
                         </ul>
                     </div>
                 </div>
