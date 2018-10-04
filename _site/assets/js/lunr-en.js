@@ -482,11 +482,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Common Use Cases for Workflow management",
+      excerpt: "Workflow signifies the definition, execution, and automation of business processes where tasks and information are passed from one touchpoint to...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
+      id: 52
+    });
+    
+  
+    idx.add({
       title: "Compression Policy",
       excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 52
+      id: 53
     });
     
   
@@ -495,7 +504,7 @@ var idx = lunr(function () {
       excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 53
+      id: 54
     });
     
   
@@ -504,7 +513,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 54
+      id: 55
     });
     
   
@@ -513,7 +522,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 55
+      id: 56
     });
     
   
@@ -522,7 +531,7 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 56
+      id: 57
     });
     
   
@@ -531,7 +540,7 @@ var idx = lunr(function () {
       excerpt: "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 57
+      id: 58
     });
     
   
@@ -1114,6 +1123,17 @@ var store = [
         "title": "Validate http headers policy",
         "url": "http://localhost:4000/api-management/validate-http-header/",
         "excerpt": "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Common Use Cases for Workflow management",
+        "url": "http://localhost:4000/workflow-management/common-use-cases-on-workflow-management/",
+        "excerpt": "Workflow signifies the definition, execution, and automation of business processes where tasks and information are passed from one touchpoint to...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
