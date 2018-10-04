@@ -68,8 +68,24 @@ This section gives the overall idea about chhosing application, configuring conn
 1. Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
 
 ## Choosing Application
+1. Go to the APP section of APPSeCONNECT and You can view that organization-specific app screen page displays all the apps that are present in a specific organization.
 
-## Creating Connection & executing the touchpoint
+2. Now Search for the organization in the search box and the organization will appear.  You can view all the apps which are present under the organization.
+
+3. `Choose App` option enables you to choose and add apps available under the subscription plan of the organization.
+
+4. Choose Desired Application from the drop-down and select the appropriate version. After choosing both app and version, click on *Save* button.
+
+5. The app will be added. The Search Text box helps you to quickly search the desired app.
+
+6. Click on the Delete option beside the app, to delete any app you dont require.
+
+You can Expand the section by clicking on  the "Plus" button beside the app name. Now you can view the versions of the app and the `Schema`,`Adapter` and the `Function` option are available.
+
+The process of Adding New App is present in the subsequent section of the module.
+
+
+## Creating Connection & Executing the touchpoint
 
 The Connection Page of the Cloud Portal is needed for creating connection between two different Applications. 
 
@@ -118,6 +134,12 @@ Select the connection, provide the connection name and select the protocol. Clic
 
 **Protip** On the Touchpoints page, there will be a Reverse button (only if applicable, for e.g here NAV to Magento connection is also available). The connection will be reversed.
 Related document {: .notice--info}
+
+**Value Mapping** is an important function under touchpoint selection. 
+
+Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during transformation.
+
+Details of Value Mapping will come in subsequent section of the document.
 
 
 ## Configuring Environment - Agent download / Cloud agent configuration
