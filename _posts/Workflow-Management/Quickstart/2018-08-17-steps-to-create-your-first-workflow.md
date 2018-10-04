@@ -6,7 +6,7 @@ category: "Workflow"
 menus: 
     workflow:
         icon: fa fa-link
-        title: "Getting started with Workflow" 
+        title: "Getting started" 
         identifier: quickstartworkflow
 ---
 

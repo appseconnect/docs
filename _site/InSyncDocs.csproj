@@ -133,6 +133,8 @@
     <Content Include="staticfiles\workflow-management\media\Adding-Touchpoint.png" />
     <Content Include="staticfiles\workflow-management\media\appseconnect-workflow-architecture.png" />
     <Content Include="staticfiles\workflow-management\media\CustomerDownload_Simple.png" />
+    <Content Include="staticfiles\workflow-management\media\data-inspector-files.PNG" />
+    <Content Include="staticfiles\workflow-management\media\data-inspector-workflow.PNG" />
     <Content Include="staticfiles\workflow-management\media\DelayNode\DelayNode.PNG" />
     <Content Include="staticfiles\workflow-management\media\DelayWorkflow.png" />
     <Content Include="staticfiles\workflow-management\media\ElementNode.png" />
@@ -154,6 +156,8 @@
     <Content Include="staticfiles\workflow-management\media\StartEnd-Node.png" />
     <Content Include="staticfiles\workflow-management\media\StartEnd-NodeConnected.png" />
     <Content Include="staticfiles\workflow-management\media\Templates.png" />
+    <Content Include="staticfiles\workflow-management\media\workflow-execution-step1.png" />
+    <Content Include="staticfiles\workflow-management\media\workflow-execution-step2.png" />
     <Content Include="staticfiles\workflow-management\media\Workflow-SalesOrderAdd.png" />
     <Content Include="staticfiles\workflow-management\media\WorkflowSplitter.png" />
     <Content Include="videos.html" />
@@ -305,7 +309,7 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-webhooks.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-actions.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
-    <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-activating-prepackaged-workflow.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-debugging-a-workflow.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-creation-for-add-salesorder.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-showing-product upload with stock sync.md" />
