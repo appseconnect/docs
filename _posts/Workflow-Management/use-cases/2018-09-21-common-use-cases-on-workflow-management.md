@@ -21,13 +21,20 @@ Organizations use Workflows to coordinate tasks and synchronize data between sys
 
 
 
-In this article, we will look how APPSeCONNECT Workflow can help in developing solutions for your business.
+In this article, we will look on APPSeCONNECT Workflow Use Cases which can help in developing solutions for your business.
 
 |Use Case|Description|
 |-----|----------|
-|[Proxy to existing API]()| In this article we will look how you can leverage your own API system to take over the existing APIs available for an Application, such that your application consumes data uniformly.|
-|[Proxy to a data source]()|In this article we will look how we can use protocol based generic adapters to connect to on-premise data source and proxy it directly to the API management system.|
-|[API for a Webhook]()|In this section, you will see how you can create APIs for webhooks which you can directly subscribe to an web application for custom callback.|
+|[basic-workflow-customer-download]()| In this article you will get a basic workflow where the user can download customer from Ecommerce (Shopify) to ERP (SAP B1) with the execution of this basic and easy to use workflow through APPSeCONNECT portal .|
+|[workflow-creation-for-add-salesorder]()|In this article   the user can add sales order in Ecommece (Shopify) and execute the  workflow to sync the sales order in the ERP (SAPB1) |
+|[workflow-showing-product upload with stock sync]()|This workflow enables the user to add/upload product in ecommerce (Shopify) and stock update in ERP ( SAP B1) and do the execution and data sync between two apps. This is a Product upload with stock synchronization-post task scenario workflow.|'
+|[delay-execution-in-workflow]()|This workflow enables the user to configure a task and do the execution and data sync between two apps with delay filter. This worflow shows a scenario where stock update is getting executed with delay filter.|'
+|[workflow-filter-node-customer-download.md]()|In this section, you will see how you can create APIs for webhooks which you can directly subscribe to an web application for custom callback.|'
+|[process-to-configure-customer-with-splitter]()|This workflow enables the user to add customer in Ecommerce (Shopify) and enable the execution and data sync between Eccomerce & ERP with **Splitter** node. |'
+|[process-to-configure-a-task-with-acknowledgement]()|This workflow enables the user to add payment and update payment response in Eccommerce (Shopify) and enable the execution and data sync between Eccomerce & ERP. This is a payment cycle configuration  done with acknowledgement data.|'
+|[workflow-showing-salescycle-with-post and post taskinput]()|This workflow enables the user to add sales order, delivery and Invoice in Ecommerce (Shopify) and update the relationship mapping  in ERP ( SAP B1). By executing this workflow and do the execution and data sync between two apps. This is a Sales cycle with post and post input task where reusable data is used.|'
+
+
 
 
 
