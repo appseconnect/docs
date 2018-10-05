@@ -3,7 +3,6 @@ title: "Filter Request by IP policy"
 toc: true
 tag: developers
 category: "API-Management"
-author: "Soumya Ghosh"
 menus: 
     policies:
         icon: fa fa-cogs

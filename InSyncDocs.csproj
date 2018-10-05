@@ -48,6 +48,9 @@
     <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\images\17322_128fd5d7b36e87a19d06ca737e059a7af79990ab_appseconnect_m.jpeg" />
+    <Content Include="assets\images\AEC-Code-Review.png" />
+    <Content Include="assets\images\AEC-Coding-Guidelines.png" />
+    <Content Include="assets\images\AEC-Development-Process.png" />
     <Content Include="assets\images\APPSeCONNECT-documentation.png" />
     <Content Include="assets\images\banner-img.png" />
     <Content Include="assets\images\customer-2.png" />
@@ -68,12 +71,15 @@
     <Content Include="assets\images\mm-responsive-feature.png" />
     <Content Include="assets\images\reseller-2.png" />
     <Content Include="assets\images\role-img.png" />
+    <Content Include="assets\images\SAP-B1-with-HANA%28DIS%29-and-Shopify-Integration.png" />
+    <Content Include="assets\images\SAP-SL-and-Magento-Integration.png" />
     <Content Include="assets\images\search-img.png" />
     <Content Include="assets\images\search-not-found.png" />
     <Content Include="assets\images\stacks-image-4691429.jpg" />
     <Content Include="assets\images\training-300x271.png" />
     <Content Include="assets\images\Video-player.png" />
     <Content Include="assets\images\video-thumb.png" />
+    <Content Include="assets\images\Workflow-Management.png" />
     <Content Include="assets\js\aos.js" />
     <Content Include="assets\js\lunr-en.js" />
     <Content Include="assets\js\lunr.min.js" />
@@ -284,7 +290,7 @@
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
     <None Include="_posts\API-Management\2018-09-15-Terminologies.md" />
     <None Include="_posts\API-Management\2018-09-16-architecture-design-runtime.md" />
-    <None Include="_posts\API-Management\2018-10-17-faqs.md" />
+    <None Include="_posts\API-Management\2018-10-17-faqs-api-management.md" />
     <None Include="_posts\API-Management\How-to guides\2018-09-24-configure-appseconnect-for-apis.md" />
     <None Include="_posts\API-Management\How-to guides\2018-09-25-choosing-backend-apps.md" />
     <None Include="_posts\API-Management\How-to guides\2018-09-26-connecting-to-a-data-source.md" />
@@ -327,8 +333,9 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-webhooks.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-actions.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
-    <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-debugging-a-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-16-quickstart-guides-to-workflow-management.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-attribute-mapping-workflow.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-08-19-debugging-a-workflow.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-creation-for-add-salesorder.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-showing-product upload with stock sync.md" />
@@ -337,6 +344,7 @@
     <None Include="_posts\Workflow-Management\use-cases\2018-08-26-process-to-configure-customer-with-splitter.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-28-process-to-configure-a-task-with-acknowledgement.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-29-workflow-showing-salescycle-with-post and post taskinput.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-09-21-common-use-cases-on-workflow-management.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>

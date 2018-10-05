@@ -4,7 +4,7 @@ toc: true
 tag: 
     - developers
     - usecases
-category: "Workflow-Management"           
+category: "Workflow"                    
 menus: 
     workflowusecases:
         icon: fa fa-link
@@ -25,34 +25,34 @@ This is a basic workflow where the user can download customer from Shopify to SA
  Organization Creation & Connection Creation 
 
 ### Basic Flow
-  The user will execute the flow as given below:
+  The user will execute the flow as given below
 
 1. The user will select the Start node, where the workflow execution will begin
-2. The user will now go to template section and select General Touchpoint.
-3. The user will get `Adding Touchpoint`button. Input the Touchpoint from the drop down list.
-4. The user will select Customer Download Touchpoint and click OK button
+2. Go to template section and select General Touchpoint.
+3. You will get `Adding Touchpoint`button. Input the Touchpoint from the drop down list.
+4. Now select Customer Download Touchpoint and click OK button
 5. The Customer Download touchpint appears in the grid pane. 
-6. The user will now link the Start node with the touchpoint.Drag the link to the touchpoint
+6. Now link the Start node with the touchpoint.Drag the link to the touchpoint
 7. The touchpoint has three group nodes - 
 * [Get](/workflow/working-with-get/)
 * [Process](/workflow/working-with-process/)
 * [Post](/workflow/working-with-post/)
 
-8. The user after creating the workflow will give a name to the untitled workflow (Workflow for Customer Downloading) and click on `SAVE` button to save the workflow.
+8. Workflow is created and then give a name to the untitled workflow (Workflow for Customer Downloading) and click on `SAVE` button to save the workflow.
 
  ![CustomerDownload_Simple](/staticfiles/workflow-management/media/CustomerDownload_Simple.png)
             
-9. The user after creating the workflow will deploy that in the Agent.
+9.  After creating the workflow deploy that in the Agent.
 
-10. The user will navigate to the Enviornment module and click on `Agent Setting` to check the connection is active or not .
+10. Navigate to the Enviornment module and click on `Agent Setting` to check the connection is active or not .
 
-11. The user will navigate to the `Deploy Configuration` button to deploy the configuration. The success message will come.
+11. Now go to the `Deploy Configuration` button to deploy the configuration. The success message will come.
 
-12. The user will then login/signup to Shopify (App 1) and view the added Customer.
+12. Login/signup to Shopify (App 1) and view the added Customer.
 
-13. The user will check  back to Workflow module and select the saved workflow.
+13.  Now check  back to Workflow module and select the saved workflow.
 
-14. The user will click on RUN button to run the workflow.
+14. Then click on RUN button to run the workflow.
 
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 

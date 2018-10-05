@@ -1,5 +1,5 @@
 ﻿---
-title: "Quickstart guide to create web proxies"
+title: " Creating proxy endpoint"
 toc: true
 tag: developers
 category: "API-Management"

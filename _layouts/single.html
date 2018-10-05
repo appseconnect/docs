@@ -17,7 +17,11 @@ layout: inner
 <!-- Start : header -->
 {% include header-block.html %}
 <!-- End : header -->
-
+<div class="progress progress-striped active globalprogressCustom" id="globalprogress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+        <span class="sr-only"> 40% Complete (success) </span>
+    </div>
+</div>
 <div id="main" role="main">
     {% include sidebar.html %}
 

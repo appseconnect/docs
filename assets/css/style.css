@@ -3,6 +3,7 @@
 * { margin: 0; padding: 0;}
 img {max-width: 100%; border:0;}
 body {background: #f7f7f7; color:#000; font-family: 'Montserrat', sans-serif;}
+.spacer {font-size:0; line-height:0; clear:both;}
 /* ---------------- Start : Header ----------------------- */
 .headerPan {clear: both; background: #fff; position: relative; z-index: 100;}
 .headerInn {max-width: 100%; clear: both; margin: 0 auto; padding:9px 30px 10px; background: #f1ecec; border-bottom: 1px solid #ece7e7;}
@@ -20,7 +21,7 @@ body {background: #f7f7f7; color:#000; font-family: 'Montserrat', sans-serif;}
 .headerRight li a i {padding-right: 10px; color: #a6b4bf;}
 /* ---------------- End : Header ----------------------- */
 /* ---------------- Start : Nav ----------------------- */
-#cssmenu {background: transparent; margin: 0; width: auto; padding: 0; line-height: 1; display: block; position: relative; font-family: 'PT Sans', sans-serif;}
+#cssmenu {background: transparent; margin: 0; width: auto; padding: 0; line-height: 1; display: block; position: relative; font-family: 'Montserrat', sans-serif; float:left;}
 #cssmenu ul {list-style: none; margin: 0; padding: 0; display: block;}
 #cssmenu ul:after,  #cssmenu:after { content: " "; display: block; font-size: 0; height: 0; clear: both; visibility: hidden;}
 #cssmenu ul li {margin: 0;padding: 0;display: block;position: relative;}
@@ -204,7 +205,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .resourcePan {clear:both; background:#0d345a;}
 .resourcePan .resourceInn {max-width: 100%; clear: both; margin: 0 auto; padding:20px 30px; overflow:hidden;}
 .resourcePan .resourceInn h3 {font-size:21px; color:#fff; font-weight:600; margin:0 0 10px;}
-.resourcePan .resourceInn ul li { font-size: 14px; color: #fff; font-weight: 500; float: left; padding: 0 20px 0 0; margin: 0; line-height: 40px;}
+.resourcePan .resourceInn ul {padding:0;}
+.resourcePan .resourceInn ul li { font-size: 14px; color: #fff; font-weight: 500; float: left; padding: 0 20px 0 0; margin: 0; line-height: 40px; list-style:none;}
 .resourcePan .resourceInn ul li a {text-decoration:none; color:#fff;}
 .resourcePan .resourceInn .resourceLeft {width:50%; float:left;}
 .resourcePan .resourceInn .resourceRight {width:40%; float:right;}
@@ -215,7 +217,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .copyRightPan { clear: both; padding: 10px 0; overflow: hidden; border-top: 1px solid #ddd;}
 .copyRightLeft {float:left; width:50%;}
 .copyRightRight {float:right; width:50%;}
-.copyRightRight ul {float:right; width:auto;}
+.copyRightRight ul {float:right; width:auto; list-style:none; padding:0;}
 .copyRightRight ul li {float:left; width:auto; padding:0 5px; margin:0;}
 .copyRightRight ul li a {border:2px solid rgb(65,164,244); width:30px; height:30px; display:block; border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px; text-align:center; line-height: 28px; background:#fff;}
 .copyRightRight ul li a i {font-size:13px;}
@@ -223,32 +225,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .copyRightLeft p {margin:5px 0;}
 .headerLogo { float: left; width: 200px; padding:2px 10px 4px 0; border-right: 1px solid #999ca2;}
 .headerLogo a {padding:0;}
-.layout--archive-taxonomy #main {max-width: 100%; padding: 50px 30px 30px;}
+.layout--archive-taxonomy #main {max-width: 100%; padding: 0;}
 #cssmenu > ul > li > a span {padding: 6px 15px;}
 #cssmenu > ul > li:last-child > a span { padding: 6px 12px; background: #ec7940; color: #fff; border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px;}
 
-.learningtrailpan {clear: both; background: #ddd;}
+.learningtrailpan {clear: both; background: #e7e7ea;}
 .learningtrailInn { max-width: 100%; clear: both; margin: 0 auto; padding: 50px 30px; overflow: hidden;}
 .learningtrailLeft { width: 50%; float: left;}
 .learningtrailLeft h3 { font-size: 36px; line-height: 40px; clear: both; margin: 0 0 14px; font-weight: 600;}
 .learningtrailLeft p {font-size: 14px; line-height: 20px; clear: both; margin: 0 0 20px; font-weight: 500;}
 .learningtrailLeft select { border: 1px solid #a4a7b1; height: 34px; line-height: 34px; padding: 0; font-size: 15px; width: 250px;}
 .learningtrailRight {width: 40%; float: right;}
-.learningTrailsBottomPan {clear: both; background: #131315; color: #c5c7ca; border-top: 5px solid #404052;}
+.learningTrailsBottomPan {clear: both; background: #fcfcff; color: #000; border-top: 5px solid #e8e8ea;}
 .learningTrailsBottomInn { max-width: 100%; clear: both; margin: 0 auto; padding: 40px 30px 50px; overflow: hidden;}
 .learningTrailsBottomInn h3 { font-size: 36px; line-height: 40px; clear: both; margin: 0 0 14px; font-weight: 600;}
-.learningTrailsBottomInn p {font-size: 14px; line-height: 20px; clear: both; margin: 0 0 20px; font-weight: 500; color: #999ea5;  white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.learningTrailsBottomInn p {font-size: 14px; line-height: 20px; clear: both; margin: 0 0 20px; font-weight: 500; color: #000;  white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;}
 .learningTrailsBottomInn ul {list-style:none; margin:0; padding:0; clear:both;}
 .learningTrailsBottomInn ul li {float:left; width:33.3%; padding:0 20px 20px 0; box-sizing:border-box; margin:0;}
-.learningTrailsBottomInn ul li .learningWhiteBox {overflow: hidden; background: #1c1c1f; padding: 20px; border-bottom: 5px solid #3d4044;}
+.learningTrailsBottomInn ul li .learningWhiteBox {overflow: hidden; background: #e7e7ea; padding: 20px; border-bottom: 0 solid #3d4044;}
 .learningTrailsBottomInn ul li h4 {padding:0; margin:0 0 10px; color: #43668a;}
 .learningTrailsBottomInn ul li a { float: left; width: auto; padding: 3px 20px; display: inline-block; background: #2970b7; color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; margin: 0;}
 .learningTrailsBottomInn ul li h4 img { width:60px;}
 .learningTrailsBottomInn ul li h4 span { display: inline-block; padding: 0 0 0 10px;}
 .search__toggle {width: 50%; float: right;}
 .search__toggle, .search__toggle img {border:0; outline:none;}
-.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #e8e9ea; margin: 0 0 20px;}
-.learningtrailRight img {float:right;}
+.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #eaeaea; margin: 0 0 20px;}
+.learningtrailRight img {float:right; padding-right: 50px;}
+.learningWhiteBox img { width:80px; margin: 0 0 10px;}
+.archive__item-excerpt {margin:0 0 10px;}
+.copyRightLeft a {color:#777;}
 
 
 
@@ -280,10 +285,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 #cssmenu > ul > li:last-child > a {padding:0;}
 #cssmenu > ul > li:last-child > a span { padding: 6px 24px; background: #ec7940; color: #fff; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; width: 100%; float: none; display: block;}
 .learningTrailsBottomInn ul li h4 { white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.docFooterBottomInn {font-size: 11px; font-weight: 500;}
+.layout--archive-taxonomy .sidebar.sticky, .body.layout--single .sidebar.sticky, .sidebar {background:#ddd; padding:15px;}
+.sidebar__right {display:none;}
+.learningtrailRight img {float:none; padding-right: 0; margin:0 auto; display:block;}
+#cssmenu {float:none;}
 }
 @media only screen and (min-width: 64em) {
 body .layout--single .sidebar.sticky { margin-top: 15px;}
-body.layout--single .sticky {top: 15px;}
+body.layout--single .sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh - 90px - 2em);}
 }
 /* ---------------- Start : Responsive ----------------------- */
 @media all and (max-width: 1000px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {

@@ -4,12 +4,12 @@ toc: true
 tag: 
     - developers
     - usecases
-category: "Workflow-Management"   
+category: "Workflow"   
 menus: 
     workflowusecases:
         icon: fa fa-link
-        title: "Filter data use in Workflow" 
-        identifier: usedcases-workflow with splitter
+        title: "Use cases of splitter" 
+        identifier: usedcases-workflow
         
 ---
 

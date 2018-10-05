@@ -239,6 +239,7 @@
                 <li><a href="https://www.appseconnect.com/free-trial/" title="Free Trail"><span>Free Trial</span></a></li>
             </ul>
         </div>
+        <br class="spacer" />
     </div>
 </div>
 
@@ -251,7 +252,7 @@
             <p>Dedicated first-hand training to enrich your knowledge and gain a competitive edge.</p>
         </div>
         <div class="learningPortalRight">
-            <a href="#" title="Start Learning">Start Learning &gt;</a>
+            <a href="http://learning.appseconnect.com/login/" target="_blank" title="Start Learning">Start Learning &gt;</a>
         </div>
     </div>
 </div>
@@ -275,17 +276,13 @@
     
     <ul>
         
-            <li><a href="http://localhost:4000/developing-adapter-for-appseconnect" title="Developing Adapter for APPSeCONNECT"><span>Developing Adapter for APPSeCONNECT</span></a></li>
-        
-            <li><a href="http://localhost:4000/developing-resources-for-appseconnect" title="Developing Resources for APPSeCONNECT"><span>Developing Resources for APPSeCONNECT</span></a></li>
+            <li><a href="http://localhost:4000/sdk" title="SDK"><span>SDK</span></a></li>
         
             <li><a href="http://localhost:4000/appseconnect" title="APPSeCONNECT"><span>APPSeCONNECT</span></a></li>
         
             <li><a href="http://localhost:4000/workflow" title="Workflow"><span>Workflow</span></a></li>
         
             <li><a href="http://localhost:4000/api-management" title="API-Management"><span>API-Management</span></a></li>
-        
-            <li><a href="http://localhost:4000/workflow-management" title="Workflow-Management"><span>Workflow-Management</span></a></li>
         
     </ul>
     
@@ -297,8 +294,11 @@
         <div class="learningtrailLeft">
             <h3>Start a Learning Trail</h3>
             <p>Up your Knowledge with a learning path tailored to today's developer and technology masterminds and designed to prepare you for industry-recognized <a href="#" title="APPSeCONNECT Certifications">APPSeCONNECT Certifications</a>.</p>
-            <select name="role" id="role">
-                <option>Select your role</option>
+            <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option value="" selected>Select your role</option>
+                <option value="http://learning.appseconnect.com/login/">Developer</option>
+                <option value="http://learning.appseconnect.com/login/">Implementer</option>
+                <option value="http://learning.appseconnect.com/login/">Administrator</option>
             </select>
         </div>
         <div class="learningtrailRight">
@@ -306,6 +306,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- End : Appseconnect Learning Trail -->
 <!-- Start : Appseconnect Learning Trail Bottom -->
 <div class="learningTrailsBottomPan">
@@ -315,44 +317,50 @@
         <ul>
             <li>
                 <div class="learningWhiteBox">
+                    <img src="../assets/images/AEC-Development-Process.png" />
                     <h4>AEC Development Process</h4>
                     <p>This course will guide partners and  developers about the APPSeCONNECT development process.</p>
-                    <a href="#" title="Get Started">Get Started</a>
+                    <a href="http://learning.appseconnect.com/login/" title="Get Started">Get Started</a>
                 </div>
             </li>
             <li>
                 <div class="learningWhiteBox">
+                    <img src="../assets/images/AEC-Coding-Guidelines.png" />
                     <h4>AEC Coding Guidelines</h4>
                     <p>Learn how to improvise your coding style and know more about the standard APPSeCONNECT coding guidelines.</p>
-                    <a href="#" title="Get Started">Get Started</a>
+                    <a href="http://learning.appseconnect.com/login/" title="Get Started">Get Started</a>
                 </div>
             </li>
             <li>
                 <div class="learningWhiteBox">
+                    <img src="../assets/images/AEC-Code-Review.png" />
                     <h4>AEC Code Review</h4>
                     <p>Learn how to enhance the quality of source codes for a software and the techniques which every developer will find invaluable. </p>
-                    <a href="#" title="Get Started">Get Started</a>
+                    <a href="http://learning.appseconnect.com/login/" title="Get Started">Get Started</a>
                 </div>
             </li>
             <li>
                 <div class="learningWhiteBox">
+                    <img src="../assets/images/SAP-SL-and-Magento-Integration.png" />
                     <h4>SAP SL and Magento Integration</h4>
                     <p>Step-by-step guide to help you through the process of SAP SL with Magento Integration.</p>
-                    <a href="#" title="Get Started">Get Started</a>
+                    <a href="http://learning.appseconnect.com/login/" title="Get Started">Get Started</a>
                 </div>
             </li>
             <li>
                 <div class="learningWhiteBox">
+                    <img src="../assets/images/SAP-B1-with-HANA(DIS)-and-Shopify-Integration.png" />
                     <h4>SAP B1 with HANA(DIS) and Shopify Integration</h4>
                     <p>Learn about the process of SAP integration with Shopify and detailed info about HANA or SQL databases.</p>
-                    <a href="#" title="Get Started">Get Started</a>
+                    <a href="http://learning.appseconnect.com/login/" title="Get Started">Get Started</a>
                 </div>
             </li>
             <li>
                 <div class="learningWhiteBox">
+                    <img src="../assets/images/Workflow-Management.png" />
                     <h4>Workflow Management - Part 1</h4>
                     <p>Guided course on how to design and manage workflows from the cloud.</p>
-                    <a href="#" title="Get Started">Get Started</a>
+                    <a href="http://learning.appseconnect.com/login/" title="Get Started">Get Started</a>
                 </div>
             </li>
         </ul>
@@ -371,12 +379,12 @@
         <div class="resourceLeft">
             <h3>Resources</h3>
             <ul>
-                <li><a href="#" title="Video Learning">Video Learning</a></li>
-                <li><a href="#" title="Webinars">Webinars</a></li>
-                <li><a href="#" title="E-Books & Guides">E-Books & Guides</a></li>
-                <li><a href="#" title="Blog">Blog</a></li>
-                <li><a href="#" title="FAQ">FAQ</a></li>
-                <li><a href="#" title="Contact">Contact</a></li>
+                <li><a href="https://www.appseconnect.com/video-gallery/" title="Video Learning">Video Learning</a></li>
+                <li><a href="https://www.appseconnect.com/webinars/" title="Webinars">Webinars</a></li>
+                <li><a href="https://www.appseconnect.com/ebooks/" title="E-Books & Guides">E-Books & Guides</a></li>
+                <li><a href="https://www.appseconnect.com/blog/" title="Blog">Blog</a></li>
+                <li><a href="https://www.appseconnect.com/faqs" title="FAQ">FAQ</a></li>
+                <li><a href="https://www.appseconnect.com/contact" title="Contact">Contact</a></li>
             </ul>
         </div>
         <div class="resourceRight">
@@ -395,7 +403,7 @@
         <div class="docFooterBottomTop"><p>APPSeCONNECT is a smart and robust Integration Platform as a Service (iPaaS) that seamlessly integrates a host of business applications to one another to streamline operations and facilitate the free-flow of data across various platforms. Advancing in the industry of iPaaS, APPSeCONNECT proves to be a best-in-the-class platform that easily connects systems to collect data under the same roof.</p></div>
         <div class="copyRightPan">
             <div class="copyRightLeft">
-                <p>Copyright 2018 by InSync Tech-Fin Solutions Ltd. All rights reserved. Privacy Policy</p>
+                <p>Copyright 2018 by InSync Tech-Fin Solutions Ltd. All rights reserved. <a href="https://www.appseconnect.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></p>
             </div>
             <div class="copyRightRight">
                 <ul>
@@ -472,13 +480,12 @@
         if (item.length) { return item; }
     });
     $("#sidebarMenu").on('changed.jstree', function (e, data) {
-        if (data.action == 'select_node') { 
+        if (data.action == 'select_node') {
             location.href = data.node.a_attr.href;
         }
     }).jstree();
-
-
-    $(window).scroll(function () {
+    var onScrollCallback = function () {
+        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -486,7 +493,7 @@
             nav.addClass("f-nav");
         } else {
             nav.removeClass("f-nav");
-        } 
+        }
         // Get id of current scroll item
         var cur = scrollItems.map(function () {
             if ($(this).offset().top < fromTop)
@@ -500,20 +507,20 @@
             lastId = id;
             // Set/remove active class
             menuItems
-              .removeClass("active");
+                .removeClass("active");
 
             var selectedMenu = menuItems.filter("[href*='" + id + "']");
 
             selectedMenu.addClass("active");
         }
 
-    });
+    }; 
+    $(window).scroll(onScrollCallback);
 
     $(document).ready(function () {
-        
+
         $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
         $('#cssmenu #menu-button').on('click', function () {
-            debugger;
             var menu = $(this).next('ul');
             if (menu.hasClass('open')) {
                 menu.removeClass('open');
@@ -521,8 +528,121 @@
             else {
                 menu.addClass('open');
             }
-        }); 
+        });
     });
+    window.onpopstate = function (e) {
+        debugger;
+        if (e.srcElement.location.hash.startsWith('#')) {
+            return false;
+        }
+        if (e.state == null)
+            return;
+        selectTab(e.state.url);
+    };
+    var currentRequest;
+    var intervalObjects = {};
+    function ajaxCall(item, url, callback, errorcallback, options) {
+        var global = false;
+        var cacheTransaction = true;
+        var progressState = 10;
+        var blockui;
+        if (typeof options !== "undefined") {
+            if (options.globalSettings) {
+                global = options.globalSettings;
+                blockui = options.blockui;
+            }
+            if (options.ajaxCache !== "undefined") {
+                cacheTransaction = options.ajaxCache;
+            }
+        }
+        if (currentRequest && currentRequest.readyState != 4) {
+            currentRequest.abort();
+            $('#globalprogress > div.progress-bar').width('100' + '%');
+        }
+        currentRequest = $.ajax({
+            url: url,
+            cache: cacheTransaction,
+            global: global,
+            xhr: function () {
+
+                var xhr = new window.XMLHttpRequest();
+
+                if (intervalObjects && intervalObjects.globalProgressBar) {
+                    clearInterval(intervalObjects.globalProgressBar);
+                    $('#globalprogress > div.progress-bar').width(0 + "%");
+                }
+
+                var promise = setInterval(function () {
+                    if (progressState <= 60) {
+                        $('#globalprogress > div.progress-bar').show();
+                        $('#globalprogress > div.progress-bar').width(progressState + "%");
+                        progressState = progressState + 1;
+                    }
+                    return progressState;
+                }, 200);
+
+                intervalObjects["globalProgressBar"] = promise;
+
+
+                xhr.addEventListener("loadstart", function (e) {
+                    $('#globalprogress').show();
+                    $('#globalprogress > div.progress-bar').width(progressState + '%');
+                });
+
+                //Download progress
+                xhr.addEventListener("progress", function (evt) {
+                    var percentComplete;
+                    if (evt.lengthComputable) {
+                        percentComplete = (evt.loaded / evt.total) * 100;
+                        //Do something with download progress
+                        globalProgressBarHandler(percentComplete, promise);
+                    }
+                    else if (evt.total === 0) {  // Meaning Content Length is unknown to Client as Server is sending Zipped Response
+                        globalProgressBarHandler(100, promise);
+                    }
+                }, false);
+
+
+                return xhr;
+            },
+            success: function (data, s, xhr) {
+                if (callback) {
+                    callback(data, s, xhr);
+                }
+            },
+            error: function (request, textStatus, errorThrown) {
+                if (errorcallback) {
+                    errorcallback(request, textStatus, errorThrown);
+                } 
+            },
+            complete: function () {
+                $('#globalprogress > div.progress-bar').width(0 + "%");
+                $('#globalprogress > div.progress-bar').hide();
+            }
+        });
+    }
+    function globalProgressBarHandler(percentComplete, promise) {
+        if (percentComplete && percentComplete >= 60) {
+            $('#globalprogress > div.progress-bar').width(percentComplete + '%');
+        }
+        if (percentComplete == 100) {
+            clearInterval(promise); 
+        }
+    }
+    function selectTab(url) {
+        ajaxCall('.page', url, function (data, s, xhr) {
+            menuItems = tocMenu.find("a");
+            scrollItems = menuItems.map(function () {
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+            });
+            var title = $(data).find('title').html();
+            $('.page').html($(data).find('.page').html()); 
+            window.history.pushState({ url: url }, title, url);
+        }, function (request) {
+            $('.page').html(request.responseText);
+        });
+    }
     function showMenu(o) {
 
         $(o).nextUntil(".nav__sub-title").slideToggle();

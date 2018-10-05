@@ -4,7 +4,7 @@
     <div class="LeftSearchBar">
         {% if site.search == true %}
         <button class="search__toggle" type="button">
-            <img src="../assets/images/home-search-img.png" />
+            Filter by title
         </button>
         {% endif %}
     </div>
@@ -33,6 +33,13 @@
 {% assign currentTag = page.tag %}
 {% assign matchCat = " " %}
 <div class="sidebar sticky">
+    <div class="LeftSearchBar">
+        {% if site.search == true %}
+        <button class="search__toggle" type="button">
+            Filter by title
+        </button>
+        {% endif %}
+    </div>
     <nav class="nav__list leftSideBar" id="sidebarMenu">
         {% assign menu = site.menus.header %}
         {% include menus.html %}
