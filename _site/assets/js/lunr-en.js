@@ -276,7 +276,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Rule Node",
-      excerpt: "### What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied...",
+      excerpt: "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 29
@@ -294,7 +294,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Splitter Node",
-      excerpt: "This node is used to split a data packet into smaller chunks for processing in small batches. There are three...",
+      excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 31
@@ -312,7 +312,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Workflow Actions",
-      excerpt: "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
+      excerpt: "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 33
@@ -330,7 +330,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Generating Support tickets",
-      excerpt: "Using this node user can create a support ticket during workflow execution. For example, after data is pushed to an...",
+      excerpt: "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 35
@@ -916,7 +916,7 @@ var store = [
       {
         "title": "Rule Node",
         "url": "http://localhost:4000/workflow/working-with-rule/",
-        "excerpt": "### What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied...",
+        "excerpt": "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -938,7 +938,7 @@ var store = [
       {
         "title": "Splitter Node",
         "url": "http://localhost:4000/workflow/working-with-splitter/",
-        "excerpt": "This node is used to split a data packet into smaller chunks for processing in small batches. There are three...",
+        "excerpt": "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -960,7 +960,7 @@ var store = [
       {
         "title": "Workflow Actions",
         "url": "http://localhost:4000/workflow/generating-actions/",
-        "excerpt": "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
+        "excerpt": "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -982,7 +982,7 @@ var store = [
       {
         "title": "Generating Support tickets",
         "url": "http://localhost:4000/workflow/generating-notification-support-ticket/",
-        "excerpt": "Using this node user can create a support ticket during workflow execution. For example, after data is pushed to an...",
+        "excerpt": "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

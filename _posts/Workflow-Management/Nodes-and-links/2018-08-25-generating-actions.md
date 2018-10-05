@@ -5,17 +5,19 @@ tag:
      - developers
      - actions
 category: "Workflow"
-author: "Abhishek Sur"
 menus: 
     nodeandlinks:
         icon: fa fa-link
         title: "Actions" 
         identifier: nodesaction
 ---
+
+### Why do you need action?
 Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally used 
 to notify something to the someone or perform a special activity. In case of workflow of 
 APPSeCONNECT, there is a number of actions that you can perform while executing the workflow.
 
+### Actions Type of Workflow 
 |Action Name|Description|
 |-----|----------|
 |[Email Action](/workflow/generating-notification-emails/)|Email action is used to send email notification from inside the workflow such that an email with proper data could be send to the intended users whenever it reaches the action|

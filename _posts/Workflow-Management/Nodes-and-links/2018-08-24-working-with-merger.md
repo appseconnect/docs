@@ -14,6 +14,7 @@ menus:
 ---
 
 ### What is Merge Node?
+
 This node is used to merge smaller data chunks into a single data packet. Like a `SPLITTER` node, it also has three components XPath, Entity Name and Batch size. For example, you have specified a batch size of 10 in a `MERGER` node then it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.
 
 **Entityname** : Here specify the name which will act as a root element under which data will be merged.

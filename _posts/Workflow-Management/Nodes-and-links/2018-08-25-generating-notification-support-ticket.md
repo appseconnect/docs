@@ -11,6 +11,9 @@ menus:
         title: "Support Tickets" 
         identifier: nodesactionsupport
 ---
+
+### Support Ticket  Notification 
+
 Using this node user can create a support ticket during workflow execution. For example, after data is pushed to an application user can check the push status and create a support ticket if any error occurred during the push operation. The support ticket will be created in the Appseconnect support portal and notification about the support ticket will be sent to the AppseConnect support team.
 
 Components of the support tickets are 
