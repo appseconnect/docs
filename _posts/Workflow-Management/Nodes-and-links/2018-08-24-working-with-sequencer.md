@@ -11,6 +11,10 @@ menus:
         title: "Working with Sequencer" 
         identifier: nodesequencer
 ---
+
+
+### What is Sequencer Node?
+
 This node is used to order elements by a certain attribute. This node can be applied to any collection of elements. For example, user have data of a collection of orders and I want to process the oldest orders first. User can add a `SEQUENCER` node to sort the order based on their creation date.After the data passed through the `SEQUENCER` node it will be arranged based on the `SEQUENCER` node logic.
 Sequence node have three components
 

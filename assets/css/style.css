@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 * { margin: 0; padding: 0;}
 img {max-width: 100%; border:0;}
-body {background: #f7f7f7;}
+body {background: #f7f7f7; color:#000; font-family: 'Montserrat', sans-serif;}
 /* ---------------- Start : Header ----------------------- */
-.headerPan {clear: both; background: #dbe3e8; overflow: hidden;}
-.headerInn {max-width: 1280px; clear: both; margin: 0 auto; padding:11px 0 20px; overflow: hidden;}
+.headerPan {clear: both; background: #fff; position: relative; z-index: 100;}
+.headerInn {max-width: 100%; clear: both; margin: 0 auto; padding:9px 30px 10px; background: #f1ecec; border-bottom: 1px solid #ece7e7;}
 .logo {float: left; width: auto; display: block; width: 280px;}
 .nav {background: #272e33;color: #bdd0de;}
 .navInn {max-width: 1280px; clear: both; margin: 0 auto; padding:0;}
@@ -12,9 +13,9 @@ body {background: #f7f7f7;}
 .navInn ul li {list-style: none; margin: 0; padding: 0; float: left;}
 .navInn ul li a {color: #fff; text-decoration: none;}
 .headerRight {float: right; width: auto; list-style: none; margin: 15px 0 0; padding: 0;}
-.headerRight li { float: left; width:auto; padding: 0 18px; border-right: 1px dotted #8e9498; margin: 0; font: 400 12px/18px "Open Sans", sans-serif;}
+.headerRight li { float: left; width:auto; padding: 0 18px; border-right: 1px dotted #8e9498; margin: 0; font: 400 12px/18px 'Montserrat', sans-serif;}
 .headerRight li:last-child {border-right: 0;}
-.headerRight li a {text-decoration: none; color:#5b7c8c; font: 400 12px/18px "Open Sans", sans-serif;}
+.headerRight li a {text-decoration: none; color:#5b7c8c; font: 400 12px/18px 'Montserrat', sans-serif;}
 .headerRight li a:hover {color: #4cb6ea;}
 .headerRight li a i {padding-right: 10px; color: #a6b4bf;}
 /* ---------------- End : Header ----------------------- */
@@ -43,15 +44,15 @@ body {background: #f7f7f7;}
 #cssmenu.align-right > ul > li:hover > ul {left: auto;right: 0;}
 #cssmenu.align-right ul ul li:hover > ul {right: 100%;left: auto;}
 #cssmenu.align-right ul ul li a {text-align: right;}
-#cssmenu > ul > li:after {content: "";display: block;position: absolute;width: 100%;height: 0;top: 0;z-index: 0;background: #00aadc;-webkit-transition: height .2s;-moz-transition: height .2s;-ms-transition: height .2s;-o-transition: height .2s;transition: height .2s;}
+#cssmenu > ul > li:after {content: "";display: block;position: absolute;width: 100%;height: 0;top: 0;z-index: 0;background: #fff;-webkit-transition: height .2s;-moz-transition: height .2s;-ms-transition: height .2s;-o-transition: height .2s;transition: height .2s;}
 #cssmenu > ul > li.has-sub > a {padding-right: 40px;}
-#cssmenu > ul > li.has-sub > a:after {display: block;content: "";background: #00aadc;height: 12px;width: 12px;position: absolute;border-radius: 13px;right: 14px;top: 16px;}
+#cssmenu > ul > li.has-sub > a:after {display: block;content: "";background:transparent;height: 12px;width: 12px;position: absolute;border-radius: 13px;right: 14px;top: 16px;}
 #cssmenu > ul > li.has-sub > a:before {display: block;content: "";border: 4px solid transparent;border-top-color: #4cb6ea;z-index: 2;height: 0;width: 0;position: absolute;right: 16px;top: 21px;}
-#cssmenu > ul > li > a {color: #9caab5;padding: 15px 20px;font-weight: 400;letter-spacing: 1px;text-transform: uppercase;font-size: 14px;z-index: 2;position: relative; -webkit-transition: all 0s ease-in-out; -moz-transition: all 0s ease-in-out; transition: all 0s ease-in-out;}
+#cssmenu > ul > li > a {color: #000;padding: 0;font-weight: 500;letter-spacing: 1px;text-transform: capitalize;font-size: 12px; line-height:30px; z-index: 2;position: relative; -webkit-transition: all 0s ease-in-out; -moz-transition: all 0s ease-in-out; transition: all 0s ease-in-out;}
 #cssmenu > ul > li:hover:after,#cssmenu > ul > li.active:after {height: 100%;}
-#cssmenu > ul > li:hover > a,#cssmenu > ul > li.active > a {color: #fff; background: #00aadc; font-weight: 400;}
+#cssmenu > ul > li:hover > a,#cssmenu > ul > li.active > a {color: #00aadc; background: #f1ecec; font-weight: 400;}
 #cssmenu > ul > li:hover > a:after,#cssmenu > ul > li.active > a:after {background: #000000;}
-#cssmenu > ul > li:hover > a:before,#cssmenu > ul > li.active > a:before {border-top-color: #ffffff;}
+#cssmenu > ul > li:hover > a:before,#cssmenu > ul > li.active > a:before {border-top-color: #f1ecec;}
 #cssmenu > ul > li:hover > ul {left: 0;}
 #cssmenu > ul > li:hover > ul > li {max-height: 72px;position: relative;}
 #cssmenu #menu-button {display: none;}
@@ -59,13 +60,16 @@ body {background: #f7f7f7;}
 #cssmenu > ul > li {width: auto;}
 #cssmenu > ul > li > ul {width: 170px;display: block;}
 #cssmenu > ul > li > ul > li {width: 170px;display: block;}
+#cssmenu > ul > li.rightSideLink { float:right; width:auto;}
+#cssmenu ul li.homeLogo {width:200px; border-right: 1px solid #959aa2;}
+#cssmenu > ul > li > a span.freeTrail {}
 /* ---------------- End : Nav ----------------------- */
 .bannerPan {clear: both; border-bottom: 7px solid #36414a;}
 .bannerPan img {width: 100%; height: auto; display: block;}
 #main {max-width: 1280px; clear: both; margin: 0 auto; padding:50px 0 30px;}
 /* ---------------- Start : Are you a ----------------------- */
 .block4Pan { position:relative; clear:both; overflow:hidden; padding:0 0 50px;}
-.block4Pan h2 { clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Open Sans', sans-serif;}
+.block4Pan h2 { clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Montserrat', sans-serif;}
 .block4Pan h2:before {position: absolute; content: ""; width: 100%; height: 1px; left: 0; top:50%; background: #d2dee6; z-index:1;}
 .block4Pan h2 span {display: inline-block; background: #f7f7f7; padding: 0 10px; position: relative; z-index: 2;}
 .block4Inn { width:25%; float:left; box-sizing:border-box; padding:0 10px; margin-bottom: 20px;}
@@ -78,14 +82,14 @@ body {background: #f7f7f7;}
 /* ---------------- End : Are you a ----------------------- */
 /* ---------------- Start : Video ----------------------- */
 .videoPan {clear: both; background: #d2dee6; padding: 5px 0 50px;}
-.videoPan h2 {clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Open Sans', sans-serif;}
+.videoPan h2 {clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Montserrat', sans-serif;}
 .videoPan h2:before {position: absolute; content: ""; width: 100%; height: 1px; left: 0; top:50%; background: #fff; z-index:1;}
 .videoPan h2 span {display: inline-block; background: #d2dee6; padding: 0 10px; position: relative; z-index: 2;}
 .videoPan ul {list-style: none; margin: 0 0 40px; padding: 0; clear: both; overflow: hidden;}
 .videoPan ul li { list-style: none; margin: 0 1% 25px; padding: 15px 15px 20px; background: #fff; float: left; width: 23%; box-sizing: border-box;}
 .videoPan ul li img {width: 100%; display: block;}
 .videoPan ul li h3 {clear: both; margin: 10px 0 0; padding: 0; font-size: 19px; line-height: 26px; text-align: left; font-weight: 400; color: #124567;}
-.videoBtn {display: block; width: 100px; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff !important; font-size: 16px; line-height: 34px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: "Open Sans", sans-serif}
+.videoBtn {display: block; width: 100px; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff !important; font-size: 16px; line-height: 34px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: 'Montserrat', sans-serif}
 .videoBtn:hover {background: #3e555f; border: 1px solid #d2dee6; color: #fff;}
 .VideoTopPan {clear:both; background:#0d2933; padding:30px 0;}
 .VideoTopPan #main {overflow:hidden; clear:both; padding: 20px 0;}
@@ -99,7 +103,7 @@ body {background: #f7f7f7;}
 /* ---------------- End : Video ----------------------- */
 /* ---------------- Start : Course ----------------------- */
 .coursesPan {clear: both; background: #fff; padding: 5px 0 50px;}
-.coursesPan h2 {clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Open Sans', sans-serif;}
+.coursesPan h2 {clear: both; margin: 0 0 20px; padding: 0; text-align: center; color: #405d71; position: relative; font-size: 32px; text-transform: uppercase;  font-family: 'Montserrat', sans-serif;}
 .coursesPan h2:before {position: absolute; content: ""; width: 100%; height: 1px; left: 0; top:50%; background: #ddd; z-index:1;}
 .coursesPan h2 span {display: inline-block; background: #fff; padding: 0 10px; position: relative; z-index: 2;}
 .coursesPan ul {list-style: none; margin: 0 0 50px; padding: 0; clear: both; overflow: hidden;}
@@ -107,7 +111,7 @@ body {background: #f7f7f7;}
 .coursesPan ul li img {max-width: 100%; text-align: center; margin: 0 auto; display: block;}
 .coursesPan ul li h3 {padding: 10px 20px; margin: 0; font-size: 21px; color: #375163; text-align: center; font-family: "Open Sans", sans-serif;}
 .coursesPan ul li p {padding: 0 20px; font-size: 15px; font-weight: 400; line-height: 1.5; text-align: center; font-family: "Open Sans", sans-serif; color: #4b6673;}
-.coursesBtn {display: block; width: 100px; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff !important; font-size: 16px; line-height: 34px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: "Open Sans", sans-serif}
+.coursesBtn {display: block; width: 100px; height: 36px; margin: 0 auto; text-align: center; text-decoration: none !important; background: #00aadc; border: 1px solid #377094; color: #fff !important; font-size: 16px; line-height: 34px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: 'Montserrat', sans-serif;}
 .coursesBtn:hover {background: #3e555f; border: 1px solid #d2dee6; color: #fff;}
 /* ---------------- End : Course ----------------------- */
 /* ---------------- Start : Footer ----------------------- */
@@ -118,17 +122,17 @@ background: -moz-radial-gradient(center, ellipse cover, rgba(58,77,86,1) 21%, rg
 background: -webkit-radial-gradient(center, ellipse cover, rgba(58,77,86,1) 21%,rgba(37,51,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: radial-gradient(ellipse at center, rgba(58,77,86,1) 21%,rgba(37,51,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a4d56', endColorstr='#253339',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
-.footerInn { width: 30%; float: left; font-family: "Open Sans", sans-serif;}
+.footerInn { width: 30%; float: left; font-family: 'Montserrat', sans-serif;}
 .footerInn.footerInn2 {width: 40%;}
 .footerInn h3 {font-size: 16px; line-height: 24px; margin: 0 0 10px; padding: 0 10px 5px 0; color: #00aadc; border-bottom: 2px solid #bec9ce; clear: both; display: inline-block;}
 .footerInn ul {list-style: none; clear: both; margin: 0 0 20px; padding: 0;}
-.footerInn ul li {list-style: none; clear: both; margin: 0; padding: 0 0 0 20px; background: url(../images/footer-arrow.png) no-repeat 0 9px; font: 400 13px/24px "Open Sans", sans-serif;}
+.footerInn ul li {list-style: none; clear: both; margin: 0; padding: 0 0 0 20px; background: url(../images/footer-arrow.png) no-repeat 0 9px; font: 400 13px/24px 'Montserrat', sans-serif;}
 .footerInn ul li a {color: #b0bec5; text-decoration: none; font-size: 13px; line-height: 24px;}
 .footerInn ul li a:hover {color: #00A9DC;}
 .footerInn ul li span {color: #fff; text-decoration: none; font-size: 13px; line-height: 18px;}
-.subscribeForm { padding:10px 0 0; clear: both;}
-.subscribeForm input.subscribeInput {border: 1px solid #50656f !important; width: 75%; height: 40px; background: #3d4e55; border:0; float:left; display: block; color: #859297; padding:0 0 0 10px; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; font-size: 14px; box-sizing: border-box;}
-.subscribeForm input.subscribeButton { cursor: pointer; width: 25%; height: 40px; border:0; font: 700 14px/34px "Open Sans", sans sarif; color: #fff; display: block; float:left; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; 
+.subscribeForm { padding:5px 0 0; clear: both;}
+.subscribeForm input.subscribeInput {border: 1px solid #fff !important; width: 75%; height: 35px; background: #fff; border:0; float:left; display: block; color: #4e5658; padding:0 0 0 10px; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; font-size: 14px; box-sizing: border-box; line-height:34px; -webkit-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomleft: 5px; border-top-left-radius: 5px !important; border-bottom-left-radius: 5px !important;}
+.subscribeForm input.subscribeButton { cursor: pointer; width: 25%; height: 35px; border:0; font: 500 14px/20px 'Montserrat', sans-serif; color: #fff; display: block; float:left; border-radius: 0 !important; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; border-top-right-radius: 5px !important; border-bottom-right-radius: 5px !important; 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41a4f4+2,2397f3+85 */
 background: rgb(65,164,244); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(65,164,244,1) 2%, rgba(35,151,243,1) 85%); /* FF3.6-15 */
@@ -137,7 +141,7 @@ background: linear-gradient(to bottom, rgba(65,164,244,1) 2%,rgba(35,151,243,1) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a4f4', endColorstr='#2397f3',GradientType=0 ); /* IE6-9 */}
 .footerBottom {clear: both; padding: 10px 0; background: #243238;}
 .footerBottomInn { text-align: center; clear: both; padding: 0; overflow: hidden;}
-.footerBottomInn p {color: #98a5ab;  font: 300 12px/24px "Open Sans", sans sarif; text-align: left; width: 50%; float: left;}
+.footerBottomInn p { color: #98a5ab; font: 300 12px/24px 'Montserrat', sans-serif; text-align: left; width: 50%; float: left;}
 .footerBottomInn p a {color: #6f8189; text-decoration: none;}
 .footerBottomInn p a:hover {color:#339ef4;}
 .footerBottom #main {padding:10px 0;}
@@ -148,11 +152,140 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a4f4', end
 .footerBottom ul li a:hover { background:#339ef4;}
 form { margin: 0; padding: 0em; background-color: transparent; }
 /* ---------------- End : Footer ----------------------- */
+leftSideBar {width:}
+leftSideBar ul li {font-size: 14px; color: #222;}
+
+.page__taxonomy, .page__date, .page__meta {display: inline-block; font-size: 11px; margin: 0; float: left !important; clear: none !important; color:#1e2d3a;}
+.page__date {margin-top: 3px;}
+.page__meta {margin: 3px 0 0 15px;}
+.page__taxonomy-item {padding: 2px 6px;}
+.page .page__inner-wrap .page__meta {width:auto; color: #1e2d3a; font-weight: 700; margin-left:10px;}
+body.layout--single .page__share a {color:#fff;}
+.page .page__inner-wrap .page__share {margin: 10px 0; padding: 0;}
+.section-see-also h2.page__see-also {font-size: 20px;}
+body.layout--single h1, body.layout--single h2, body.layout--single h3, body.layout--single h4, body.layout--single h5, body.layout--single h6 {padding:0;}
+.learningPortalBan {clear:both; width:100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#214a73+0,214a73+47,214a73+48,ddb486+48,ddb486+48,ddb486+100 */
+background: #214a73; /* Old browsers */
+background: -moz-linear-gradient(left, #214a73 0%, #214a73 47%, #214a73 48%, #ddb486 48%, #ddb486 48%, #ddb486 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #214a73 0%,#214a73 47%,#214a73 48%,#ddb486 48%,#ddb486 48%,#ddb486 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #214a73 0%,#214a73 47%,#214a73 48%,#ddb486 48%,#ddb486 48%,#ddb486 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', endColorstr='#ddb486',GradientType=1 ); /* IE6-9 */
+}
+.learningPortalInn {max-width: 100%; clear: both; margin: 0 auto; padding: 0 30px; overflow:hidden; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#214a73+0,214a73+17,ddb486+100 */
+background: #214a73; /* Old browsers */
+background: -moz-linear-gradient(left, #214a73 0%, #214a73 17%, #ddb486 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #214a73 0%,#214a73 17%,#ddb486 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #214a73 0%,#214a73 17%,#ddb486 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', endColorstr='#ddb486',GradientType=1 ); /* IE6-9 */}
+.learningPortalLeft {float:left; width:50%;}
+.learningPortalRight {float:left; width:50%; background:url("../images/learning-portal-img.png") no-repeat 100% 100%; background-size: auto 91px;}
+.learningPortalLeft h3 {margin:0; color:#fff; font-size:21px; line-height:21px; font-weight:600; padding:20px 0 10px;}
+.learningPortalLeft p {margin:0; color:#fff; font-size:12px; line-height:21px; font-weight:600; padding:0 0 20px;}
+.learningPortalRight a {float:right; width:auto; padding:10px 20px; display:inline-block; background:#214a73; color:#fff; text-decoration:none; font-size:18px; font-weight:600; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; margin: 22px 0;}
+.AppseconnectDocText {max-width: 100%; clear: both; margin: 0 auto; padding:30px;}
+.AppseconnectDocText h2 {clear:both; font-size:36px; line-height:40px; margin:0 0 15px; padding:0; font-weight:600;}
+.AppseconnectDocText p {clear:both; font-size:36px; margin:0; padding:0; font-size:14px; line-height:20px; font-weight:500;}
+.appseconnectDocTabs {max-width: 100%; clear: both; margin: 0 auto; padding:0 30px 30px; overflow:hidden;}
+.appseconnectDocTabs ul {list-style:none; clear:both; width:100%; margin:0; padding:0;}
+.appseconnectDocTabs ul li {width:20%; float:left; box-sizing:border-box; padding:5px; margin:0; display:block;}
+.appseconnectDocTabs ul li a {height:80px; line-height:21px; background:#214a73; width:100%; padding:10px; box-sizing:border-box; color:#fff; font-size:16px; font-weight:600; text-decoration:none; text-align:center; text-transform:uppercase; display:block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.appseconnectDocTabs ul li a:after {content: ''; display: inline-block; vertical-align: middle; height: 100%;}
+.appseconnectDocTabs ul li a span {display: inline-block; vertical-align: middle; width:100%; text-align:center; }
+.appseconnectDocTabs ul li:nth-child(1) a {background:#214a73;}
+.appseconnectDocTabs ul li:nth-child(2) a {background:#2970b7;}
+.appseconnectDocTabs ul li:nth-child(3) a {background:#107dea;}
+.appseconnectDocTabs ul li:nth-child(4) a {background:#1d74cc;}
+.appseconnectDocTabs ul li:nth-child(5) a {background:#07529e;}
+.appseconnectDocTabs ul li:nth-child(10) a {background:#214a73;}
+.appseconnectDocTabs ul li:nth-child(9) a {background:#2970b7;}
+.appseconnectDocTabs ul li:nth-child(8) a {background:#107dea;}
+.appseconnectDocTabs ul li:nth-child(7) a {background:#1d74cc;}
+.appseconnectDocTabs ul li:nth-child(6) a {background:#07529e;}
+.resourcePan {clear:both; background:#0d345a;}
+.resourcePan .resourceInn {max-width: 100%; clear: both; margin: 0 auto; padding:20px 30px; overflow:hidden;}
+.resourcePan .resourceInn h3 {font-size:21px; color:#fff; font-weight:600; margin:0 0 10px;}
+.resourcePan .resourceInn ul li { font-size: 14px; color: #fff; font-weight: 500; float: left; padding: 0 20px 0 0; margin: 0; line-height: 40px;}
+.resourcePan .resourceInn ul li a {text-decoration:none; color:#fff;}
+.resourcePan .resourceInn .resourceLeft {width:50%; float:left;}
+.resourcePan .resourceInn .resourceRight {width:40%; float:right;}
+.docFooterBottom { clear:both; background:#fff;}
+.docFooterBottomInn {font-size:12px; line-height:16px; font-weight:600; max-width: 100%; clear: both; margin: 0 auto; padding: 0 30px; overflow:hidden;}
+.docFooterBottomInn .docFooterBottomTop {padding:30px 0; clear:both;}
+.docFooterBottomInn .docFooterBottomTop p {margin:0;}
+.copyRightPan { clear: both; padding: 10px 0; overflow: hidden; border-top: 1px solid #ddd;}
+.copyRightLeft {float:left; width:50%;}
+.copyRightRight {float:right; width:50%;}
+.copyRightRight ul {float:right; width:auto;}
+.copyRightRight ul li {float:left; width:auto; padding:0 5px; margin:0;}
+.copyRightRight ul li a {border:2px solid rgb(65,164,244); width:30px; height:30px; display:block; border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px; text-align:center; line-height: 28px; background:#fff;}
+.copyRightRight ul li a i {font-size:13px;}
+.copyRightRight ul li a:hover {background:#4aa1da; color:#fff;}
+.copyRightLeft p {margin:5px 0;}
+.headerLogo { float: left; width: 200px; padding:2px 10px 4px 0; border-right: 1px solid #999ca2;}
+.headerLogo a {padding:0;}
+.layout--archive-taxonomy #main {max-width: 100%; padding: 50px 30px 30px;}
+#cssmenu > ul > li > a span {padding: 6px 15px;}
+#cssmenu > ul > li:last-child > a span { padding: 6px 12px; background: #ec7940; color: #fff; border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px;}
+
+.learningtrailpan {clear: both; background: #ddd;}
+.learningtrailInn { max-width: 100%; clear: both; margin: 0 auto; padding: 50px 30px; overflow: hidden;}
+.learningtrailLeft { width: 50%; float: left;}
+.learningtrailLeft h3 { font-size: 36px; line-height: 40px; clear: both; margin: 0 0 14px; font-weight: 600;}
+.learningtrailLeft p {font-size: 14px; line-height: 20px; clear: both; margin: 0 0 20px; font-weight: 500;}
+.learningtrailLeft select { border: 1px solid #a4a7b1; height: 34px; line-height: 34px; padding: 0; font-size: 15px; width: 250px;}
+.learningtrailRight {width: 40%; float: right;}
+.learningTrailsBottomPan {clear: both; background: #131315; color: #c5c7ca; border-top: 5px solid #404052;}
+.learningTrailsBottomInn { max-width: 100%; clear: both; margin: 0 auto; padding: 40px 30px 50px; overflow: hidden;}
+.learningTrailsBottomInn h3 { font-size: 36px; line-height: 40px; clear: both; margin: 0 0 14px; font-weight: 600;}
+.learningTrailsBottomInn p {font-size: 14px; line-height: 20px; clear: both; margin: 0 0 20px; font-weight: 500; color: #999ea5;  white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.learningTrailsBottomInn ul {list-style:none; margin:0; padding:0; clear:both;}
+.learningTrailsBottomInn ul li {float:left; width:33.3%; padding:0 20px 20px 0; box-sizing:border-box; margin:0;}
+.learningTrailsBottomInn ul li .learningWhiteBox {overflow: hidden; background: #1c1c1f; padding: 20px; border-bottom: 5px solid #3d4044;}
+.learningTrailsBottomInn ul li h4 {padding:0; margin:0 0 10px; color: #43668a;}
+.learningTrailsBottomInn ul li a { float: left; width: auto; padding: 3px 20px; display: inline-block; background: #2970b7; color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; margin: 0;}
+.learningTrailsBottomInn ul li h4 img { width:60px;}
+.learningTrailsBottomInn ul li h4 span { display: inline-block; padding: 0 0 0 10px;}
+.search__toggle {width: 50%; float: right;}
+.search__toggle, .search__toggle img {border:0; outline:none;}
+.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #e8e9ea; margin: 0 0 20px;}
+.learningtrailRight img {float:right;}
 
 
-
+@media only screen and (max-width: 1336px) {
+    .learningPortalLeft h3 { font-size:16px;}
+.learningPortalLeft p {font-size:11px; font-weight:500;}
+.learningPortalRight {background:none;}
+.appseconnectDocTabs ul li a {font-size:15px;}
+}
+@media only screen and (max-width: 1200px) {
+.appseconnectDocTabs ul li a {font-size: 12px;}
+.resourcePan .resourceInn ul li {font-size: 11px;}
+#cssmenu ul li ul li a {color:#000;}
+}
+@media only screen and (max-width: 1000px) {
+.resourcePan .resourceInn .resourceLeft { width: 100%; float: none; text-align: center; clear: both;}
+.resourcePan .resourceInn .resourceLeft ul {width:100%; clear:both; text-align:center;}
+.resourcePan .resourceInn .resourceLeft ul li {float:none; display:inline-block; text-align:center;}
+.resourcePan .resourceInn .resourceRight { width: 300px; float: none; margin: 0 auto; text-align:center;}
+.subscribeForm input.subscribeButton {font-size:11px;}
+.copyRightLeft, .copyRightRight {width:100%; clear:both; float:none; text-align:center;}
+.copyRightRight ul {width:100%; clear:both; text-align:center;}
+.copyRightRight ul li {float:none; display:inline-block; text-align:center;}
+.copyRightLeft p {margin-bottom:15px;}
+.learningtrailLeft, .learningtrailRight {width: 100%; float: none; clear:both;}
+.learningtrailLeft select {width:100%;}
+.search__toggle {width: 100%; float: none; clear:both; margin: 0 0 20px;}
+.search__toggle {width: 100%; float: none; clear:both; }
+#cssmenu > ul > li:last-child > a {padding:0;}
+#cssmenu > ul > li:last-child > a span { padding: 6px 24px; background: #ec7940; color: #fff; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; width: 100%; float: none; display: block;}
+.learningTrailsBottomInn ul li h4 { white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+}
+@media only screen and (min-width: 64em) {
+body .layout--single .sidebar.sticky { margin-top: 15px;}
+body.layout--single .sticky {top: 15px;}
+}
 /* ---------------- Start : Responsive ----------------------- */
-@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+@media all and (max-width: 1000px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
 #cssmenu > ul { max-height: 0; overflow: hidden; -webkit-transition: max-height 0.35s ease-out; -moz-transition: max-height 0.35s ease-out; -ms-transition: max-height 0.35s ease-out; -o-transition: max-height 0.35s ease-out; transition: max-height 0.35s ease-out;}
 #cssmenu > ul > li > ul { width: 100%; display: block;}
 #cssmenu.align-right ul li a {text-align: left;}
@@ -164,8 +297,8 @@ form { margin: 0; padding: 0em; background-color: transparent; }
 #cssmenu.align-center > ul > li { display: block;}
 #cssmenu > ul.open { max-height: 1000px; border-top: 1px solid rgba(110, 110, 110, 0.25);}
 #cssmenu ul { width: 100%;}
-#cssmenu ul > li { float: none; width: 100%;}
-#cssmenu ul li a { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 12px 20px;}
+#cssmenu ul > li {float: none; width: 100%; background: #d4d8da; border-bottom: 1px solid #fff;}
+#cssmenu ul li a { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 0 10px;}
 #cssmenu ul > li:after { display: none;}
 #cssmenu ul li.has-sub > a:after,#cssmenu ul li.has-sub > a:before,#cssmenu ul li ul li.has-sub:after,#cssmenu ul li ul li.has-sub:before {display: none;}
 #cssmenu ul li ul,
@@ -174,13 +307,14 @@ form { margin: 0; padding: 0em; background-color: transparent; }
 #cssmenu.align-right ul li ul,
 #cssmenu.align-right ul li ul li ul,
 #cssmenu.align-right ul li ul li:hover > ul {left: 0; position: relative; right: auto;}
-#cssmenu ul li ul li,#cssmenu ul li:hover > ul > li { max-height: 999px; position: relative; background: none;}
-#cssmenu ul li ul li a {padding: 8px 20px 8px 35px; color: #ffffff;}
+#cssmenu ul li ul li,#cssmenu ul li:hover > ul > li { max-height: 999px; position: relative; background: #e8e8e8; border-bottom: 1px solid #fff;}
+#cssmenu ul li ul li a {padding: 8px 20px 8px 35px; color: #000;}
 #cssmenu ul li ul ul li a { padding: 8px 20px 8px 50px;}
 #cssmenu ul li ul li:hover > a {color: #4cb6ea;}
-#cssmenu #menu-button {display: block; -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 15px 20px; text-transform: uppercase; font-weight: 700; font-size: 14px; letter-spacing: 1px; color: #ffffff; cursor: pointer;}
+#cssmenu #menu-button {display: block; -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 15px 20px; text-transform: uppercase; font-weight: 700; font-size: 14px; letter-spacing: 1px; color: #f7f7f7; background: #425563; cursor: pointer;}
 #cssmenu #menu-button:after {display: block; content: ''; position: absolute; height: 3px; width: 22px; border-top: 2px solid #ffffff; border-bottom: 2px solid #ffffff; right: 20px; top: 16px;}
 #cssmenu #menu-button:before { display: block; content: ''; position: absolute; height: 3px; width: 22px; border-top: 2px solid #ffffff; right: 20px; top: 26px;}
+.headerLogo { float: none; width: 270px; padding: 2px 10px 4px 0; border-right: 0; margin: 0 auto 10px;}
 }
 @media only screen and (max-width: 800px) {
 .footerPan {padding: 10px;}
@@ -190,18 +324,20 @@ form { margin: 0; padding: 0em; background-color: transparent; }
 .footerInn.footerInn2 {width: 100%;}
 .footerBottomInn p {text-align: center; width: 100%;}
 .footerBottom ul { list-style: none; margin: 0 auto; padding: 0; float: none;  width: 300px; clear: both;}
-.subscribeForm { padding: 10px 0 10px; overflow: hidden;}
+.subscribeForm { padding: 5px 0 10px; overflow: hidden;}
 .coursesPan ul li {width: 100%;}
 .videoPan ul li {margin: 0 10% 30px; width: 80%;}
 .block4Inn { width: 300px; float: none; box-sizing: border-box; padding: 0 10px; clear: both; margin: 0 auto 20px;}
 .logo{ padding-left: 5px;}
 .VideoTopLeft, .VideoTopRight {float: none; width: 80%; box-sizing: border-box; padding: 0; margin: 0 auto;}
 .VideoTopRight ul {margin-top:20px;}
+.appseconnectDocTabs ul li {width:50%;}
 }
 @media only screen and (max-width: 600px) {
 .headerRight {float: none; width: 278px; list-style: none; margin: 0 auto; padding: 20px 0 0; clear: both;}    
 .logo { float: none; display: block; width: 280px; margin: 0 auto;}
 .VideoTopRight ul li { width:100%; padding: 0 0 20px;}
+.learningTrailsBottomInn ul li {width:50%;}
 }
 
 

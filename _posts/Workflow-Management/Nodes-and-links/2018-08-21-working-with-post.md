@@ -5,13 +5,14 @@ tag:
     - developers
     - nodes
 category: "Workflow"
-author: "Utpal Maity"
 menus: 
     nodeandlinks:
         icon: fa fa-link
         title: "Working with Post" 
         identifier: nodepost
 ---
+### What is Post Node?
+
 `POST` node is used for pushing data to an application based on the API provided by the application.You need to provide data in the required format to the `POST` node most of the time we use `PROCESS` node befor a `POST` node to prepare required data format for the `POST` node . When we drag a `POST` node in the workflow we need to select a touchpoint. For example we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP) `POST` node will take the transform data from `PROCESS` node and push the data in SAP B1.  
 
 ### Working Principle

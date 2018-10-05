@@ -11,6 +11,9 @@ menus:
         title: "Working with Filter" 
         identifier: nodefilter
 ---
+
+### What is filter node?
+
 This node is used to fetch a subset of data from an original data packet based on the criteria specified in the `FILTER` node. A user can specify multiple criteria in the `Filter` node and data will be filter based on the specified criteria. Criteria expressions are specified using XPath.For example, a user is fetching data packet with a certain number of a customer from which he only wants to process verified customers only. A user can implement a `FILTER` node by specifying a XPath and from that data packet, only those data will flow to the next node which will match the filter condition.
 
 ### Working Principle

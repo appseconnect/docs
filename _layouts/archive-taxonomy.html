@@ -1,16 +1,16 @@
 ---
-layout: default
+layout: inner
 author_profile: false
 ---
+{% include header-block.html %}
 
 <div id="main" role="main">
-  {% include sidebar.html %}
+    {% include sidebar.html %}
 
-  <div class="archive">
-    <h1 class="page__title">{{ page.title }}</h1>
-    <p>Tag Archives for "{{page.title}}"</p>
-    {% for post in page.posts %}
-      {% include archive-single.html %}
-    {% endfor %}
-  </div>
+    <div class="archive">
+        <h1 class="page__title">{{ page.title }}</h1>
+        {% for post in page.posts %}
+        {% include archive-single.html %}
+        {% endfor %}
+    </div>
 </div>

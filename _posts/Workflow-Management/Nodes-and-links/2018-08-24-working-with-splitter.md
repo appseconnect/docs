@@ -11,6 +11,9 @@ menus:
         title: "Working with Splitter" 
         identifier: nodesplitter
 ---
+
+### What is Splitter Node?
+
 This node is used to split a data packet into smaller chunks for processing in small batches. There are three components in a splitter. First one is batch size. For example, suppose you have a data packet which contains 10 customer data and you applied a splitter with 2 batch size, so after execution of the splitter node the data packet will be split into 5 data packets where each packet contains two customer data and smaller packets will be sent to the next node for processing. The other two component are Entity name and XPath.
 
 **Entityname**: Here specify the name which will act as a root element to append the splitted data.

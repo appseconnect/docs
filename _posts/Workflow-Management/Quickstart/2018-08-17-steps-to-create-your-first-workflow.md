@@ -15,11 +15,10 @@ menus:
 
 This section will guide you through workflow creation & configuration in simple steps.
 
-## Steps to create Workflow
 
 By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal. 
 
-In Workflow diagram panel there are some Template Touchpoints provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
+In Workflow diagram panel there are some [Template Touchpoints]() provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
 
 If you are new to Workflow, then go through the below steps to know more.
 
@@ -34,21 +33,20 @@ If you are new to Workflow, then go through the below steps to know more.
 
 * Sample App chosen - Magento 2 & SAP B1
 
-* Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order.
-The connection should be done in the Cloud.
+* Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order. 
 
-**Once the pre-requisites are ready follow these steps:**
+* The connection should be done in the Cloud.
 
-After successfully logging in, choose `Workflows` section under Account and a new page will open.
+## Steps to workflow creation
 
-1. Refer the  steps
+ 1. Logging in to the Portal, choose `Workflows` section under Account and a new page will open.
+
+ 2.  Refer the  steps
 [Working with Workflow in APPSeCONNECT](/workflow/overview/)
-
-2. Log into the Cloud Portal with valid credentials.
 
 3. Choose one project.
 
-4. Go to Workflows section under Account and a new page will open up.
+4. Go to Workflows section under Account and a new page will  open up.
 
    ![WorkflowPage](/staticfiles/workflow-management/media/WorkflowPage.png)
 
@@ -103,34 +101,21 @@ NOTE - Initially the Run button will be in disabled state, you have to activate 
 The circle segments of the nodes will change its color according to the operation
 
 
-**NOTE: Ongoing Operation= Yellow color
+**Protip** Ongoing Operation= Yellow color
         Successful Operation= Green color
-        Failed Operation  = Red color**
+        Failed Operation  = Red color
+         {: .notice--info}
 
-11. You will view messages in each step. You can check the workflow functionalities for the following nodes:
+11. You will view messages in each step.  You can check the workflow functionalities for the following nodes:
 
-* GetSpilter
-* Start
-* Merger
-* Loop
-* Halt Resume
+## Workflow Nodes
+
+* [Get](/workflow/working-with-get/)
+* [Spilter](/workflow/working-with-splitter/)
+* [Merger](/workflow/working-with-merger/)
+* [Loop](/workflow/working-with-loops/)
+* [Halt Resume](/workflow/working-with-halt-resume/)
 
 **Protip** For execution of workflow using cloud agent you need to have cloud to cloud connection, cloud agent and cloud supported app.
 {: .notice--info}
 
-See Also:
-
-APPSeCONNECT workflow listing page
-Split and merger in workflow     
-Attribute Mapping of workflow
-
-
-
-Configuring 
-
-- Property Tab
-- Nodes links
-
-Explain workflow different sections
-
-Workflow scheduling

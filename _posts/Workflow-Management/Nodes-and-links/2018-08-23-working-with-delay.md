@@ -11,6 +11,8 @@ menus:
         title: "Working with Delay" 
         identifier: nodedelay
 ---
+
+### What is Delay node?
 `DELAY` node is used to delay or stop an execution flow for a specific period. For example, I have an API which accepts only one request per second. So before calling the API for `POST` or `GET` operation, I can put a delay node which will delay the execution of `GET` or `POST` node for the specified amount of time.
 
 ### Working Principle
