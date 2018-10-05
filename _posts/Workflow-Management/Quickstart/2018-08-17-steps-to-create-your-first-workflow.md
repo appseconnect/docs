@@ -19,7 +19,7 @@ This section will guide you through workflow creation & configuration in simple 
 
 By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal. 
 
-In Workflow diagram panel there are some Template Touchpoints provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
+In Workflow diagram panel there are some [Template Touchpoints]() provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
 
 If you are new to Workflow, then go through the below steps to know more.
 
@@ -37,18 +37,16 @@ If you are new to Workflow, then go through the below steps to know more.
 * Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order.
 The connection should be done in the Cloud.
 
-**Once the pre-requisites are ready follow these steps:**
+## Steps to workflow creation
 
-After successfully logging in, choose `Workflows` section under Account and a new page will open.
+ 1. Logging in to the Portal, choose `Workflows` section under Account and a new page will open.
 
-1. Refer the  steps
+ 2.  Refer the  steps
 [Working with Workflow in APPSeCONNECT](/workflow/overview/)
-
-2. Log into the Cloud Portal with valid credentials.
 
 3. Choose one project.
 
-4. Go to Workflows section under Account and a new page will open up.
+4. Go to Workflows section under Account and a new page will  open up.
 
    ![WorkflowPage](/staticfiles/workflow-management/media/WorkflowPage.png)
 
@@ -118,19 +116,3 @@ The circle segments of the nodes will change its color according to the operatio
 **Protip** For execution of workflow using cloud agent you need to have cloud to cloud connection, cloud agent and cloud supported app.
 {: .notice--info}
 
-See Also:
-
-APPSeCONNECT workflow listing page
-Split and merger in workflow     
-Attribute Mapping of workflow
-
-
-
-Configuring 
-
-- Property Tab
-- Nodes links
-
-Explain workflow different sections
-
-Workflow scheduling
