@@ -671,7 +671,7 @@ var store = [
       
       {
         "title": "Overview of AppseConnect",
-        "url": "http://localhost:4000/appseconnect/home/",
+        "url": "http://localhost:4000/appseconnect/appseconnect/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
           
