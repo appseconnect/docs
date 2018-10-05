@@ -16,7 +16,7 @@ var idx = lunr(function () {
     idx.add({
       title: "What is an Adapter",
       excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-      categories: ["Developing Adapter for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 0
     });
@@ -25,7 +25,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to develop an Adapter",
       excerpt: "\n",
-      categories: ["Developing Adapter for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 1
     });
@@ -34,7 +34,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to test an Adapter",
       excerpt: "\n",
-      categories: ["Developing Adapter for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers,reseller"],
       id: 2
     });
@@ -43,7 +43,7 @@ var idx = lunr(function () {
     idx.add({
       title: "What is an Resource",
       excerpt: "\n",
-      categories: ["Developing Resources for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 3
     });
@@ -52,7 +52,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to develop an Resource",
       excerpt: "\n",
-      categories: ["Developing Resources for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 4
     });
@@ -61,7 +61,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to test an Resource",
       excerpt: "\n",
-      categories: ["Developing Resources for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 5
     });
@@ -115,7 +115,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Quickstart guides to create Workflow",
       excerpt: "\n",
-      categories: ["API-Management"],
+      categories: ["workflow"],
       tags: ["developers"],
       id: 11
     });
@@ -205,7 +205,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Basic Workflow for Customer Downloading",
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 21
     });
@@ -223,7 +223,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow for adding sales order",
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 23
     });
@@ -232,7 +232,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow for product upload and stock sync",
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 24
     });
@@ -304,7 +304,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Delay execution workflow",
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 32
     });
@@ -358,7 +358,7 @@ var idx = lunr(function () {
     idx.add({
       title: " Workflow execution with data filteration",
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 38
     });
@@ -367,7 +367,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow creation & execution with splitter",
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 39
     });
@@ -376,7 +376,7 @@ var idx = lunr(function () {
     idx.add({
       title: " Workflow execution with acknowledgement data",
       excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 40
     });
@@ -385,7 +385,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow showing salescycle with post and post task inputs",
       excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
       id: 41
     });
@@ -596,7 +596,7 @@ var store = [
       
       {
         "title": "What is an Adapter",
-        "url": "http://localhost:4000/developing%20adapter%20for%20appseconnect/What-is-an-Adapter/",
+        "url": "http://localhost:4000/sdk/What-is-an-Adapter/",
         "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
         "teaser":
           
@@ -607,7 +607,7 @@ var store = [
       
       {
         "title": "How to develop an Adapter",
-        "url": "http://localhost:4000/developing%20adapter%20for%20appseconnect/How-to-develop-an-Adapter/",
+        "url": "http://localhost:4000/sdk/How-to-develop-an-Adapter/",
         "excerpt": "\n",
         "teaser":
           
@@ -618,7 +618,7 @@ var store = [
       
       {
         "title": "How to test an Adapter",
-        "url": "http://localhost:4000/developing%20adapter%20for%20appseconnect/How-to-test-an-Adapter/",
+        "url": "http://localhost:4000/sdk/How-to-test-an-Adapter/",
         "excerpt": "\n",
         "teaser":
           
@@ -629,7 +629,7 @@ var store = [
       
       {
         "title": "What is an Resource",
-        "url": "http://localhost:4000/developing%20resources%20for%20appseconnect/What-is-a-Resourse/",
+        "url": "http://localhost:4000/sdk/What-is-a-Resourse/",
         "excerpt": "\n",
         "teaser":
           
@@ -640,7 +640,7 @@ var store = [
       
       {
         "title": "How to develop an Resource",
-        "url": "http://localhost:4000/developing%20resources%20for%20appseconnect/How-to-develop-an-Resourse/",
+        "url": "http://localhost:4000/sdk/How-to-develop-an-Resourse/",
         "excerpt": "\n",
         "teaser":
           
@@ -651,7 +651,7 @@ var store = [
       
       {
         "title": "How to test an Resource",
-        "url": "http://localhost:4000/developing%20resources%20for%20appseconnect/How-to-test-an-Resourse/",
+        "url": "http://localhost:4000/sdk/How-to-test-an-Resourse/",
         "excerpt": "\n",
         "teaser":
           
@@ -717,7 +717,7 @@ var store = [
       
       {
         "title": "Quickstart guides to create Workflow",
-        "url": "http://localhost:4000/api-management/quickstart-guides-to-workflow-management/",
+        "url": "http://localhost:4000/workflow/quickstart-guides-to-workflow-management/",
         "excerpt": "\n",
         "teaser":
           
@@ -827,7 +827,7 @@ var store = [
       
       {
         "title": "Basic Workflow for Customer Downloading",
-        "url": "http://localhost:4000/workflow-management/basic-workflow-customer-download/",
+        "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
         "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
         "teaser":
           
@@ -849,7 +849,7 @@ var store = [
       
       {
         "title": "Workflow for adding sales order",
-        "url": "http://localhost:4000/workflow-management/workflow-creation-for-add-salesorder/",
+        "url": "http://localhost:4000/workflow/workflow-creation-for-add-salesorder/",
         "excerpt": "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
         "teaser":
           
@@ -860,7 +860,7 @@ var store = [
       
       {
         "title": "Workflow for product upload and stock sync",
-        "url": "http://localhost:4000/workflow-management/workflow-showing-product-upload-with-stock-sync/",
+        "url": "http://localhost:4000/workflow/workflow-showing-product-upload-with-stock-sync/",
         "excerpt": "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
         "teaser":
           
@@ -948,7 +948,7 @@ var store = [
       
       {
         "title": "Delay execution workflow",
-        "url": "http://localhost:4000/workflow-management/delay-execution-in-workflow/",
+        "url": "http://localhost:4000/workflow/delay-execution-in-workflow/",
         "excerpt": "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
         "teaser":
           
@@ -1014,7 +1014,7 @@ var store = [
       
       {
         "title": " Workflow execution with data filteration",
-        "url": "http://localhost:4000/workflow-management/workflow-filter-node-customer-download/",
+        "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
         "excerpt": "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
         "teaser":
           
@@ -1025,7 +1025,7 @@ var store = [
       
       {
         "title": "Workflow creation & execution with splitter",
-        "url": "http://localhost:4000/workflow-management/process-to-configure-customer-with-splitter/",
+        "url": "http://localhost:4000/workflow/process-to-configure-customer-with-splitter/",
         "excerpt": "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
         "teaser":
           
@@ -1036,7 +1036,7 @@ var store = [
       
       {
         "title": " Workflow execution with acknowledgement data",
-        "url": "http://localhost:4000/workflow-management/process-to-configure-a-task-with-acknowledgement/",
+        "url": "http://localhost:4000/workflow/process-to-configure-a-task-with-acknowledgement/",
         "excerpt": "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
         "teaser":
           
@@ -1047,7 +1047,7 @@ var store = [
       
       {
         "title": "Workflow showing salescycle with post and post task inputs",
-        "url": "http://localhost:4000/workflow-management/workflow-showing-salescycle-with-post-and-post-taskinput/",
+        "url": "http://localhost:4000/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/",
         "excerpt": "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
         "teaser":
           

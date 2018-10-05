@@ -3,12 +3,13 @@ title: "Frequently asked questions"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 8
+weight: 2
 menus: 
     api:
         icon: fa fa-gg
-        title: "FAQs" 
+        title: "Frequently Asked questions" 
         identifier: apifaqs 
+author: "Abhishek Sur"
 ---
 `FAQ` is the best way to address frequently asked questions about your business, of course. This section contains list of questions and answers pertaining to a particular subject, especially one giving basic information for users of a website. 
 

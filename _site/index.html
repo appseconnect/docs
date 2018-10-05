@@ -275,13 +275,13 @@
     
     <ul>
         
-            <li><a href="http://localhost:4000/developing-adapter-for-appseconnect" title="Developing Adapter for APPSeCONNECT"><span>Developing Adapter for APPSeCONNECT</span></a></li>
-        
-            <li><a href="http://localhost:4000/developing-resources-for-appseconnect" title="Developing Resources for APPSeCONNECT"><span>Developing Resources for APPSeCONNECT</span></a></li>
+            <li><a href="http://localhost:4000/sdk" title="SDK"><span>SDK</span></a></li>
         
             <li><a href="http://localhost:4000/appseconnect" title="APPSeCONNECT"><span>APPSeCONNECT</span></a></li>
         
             <li><a href="http://localhost:4000/workflow" title="Workflow"><span>Workflow</span></a></li>
+        
+            <li><a href="http://localhost:4000/workflow" title="workflow"><span>workflow</span></a></li>
         
             <li><a href="http://localhost:4000/api-management" title="API-Management"><span>API-Management</span></a></li>
         
@@ -476,8 +476,6 @@
             location.href = data.node.a_attr.href;
         }
     }).jstree();
-
-
     $(window).scroll(function () {
         // Get container scroll position
         var fromTop = $(this).scrollTop();
@@ -513,7 +511,6 @@
         
         $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
         $('#cssmenu #menu-button').on('click', function () {
-            debugger;
             var menu = $(this).next('ul');
             if (menu.hasClass('open')) {
                 menu.removeClass('open');
@@ -522,6 +519,8 @@
                 menu.addClass('open');
             }
         }); 
+
+        $("#main").ajaxify();
     });
     function showMenu(o) {
 
