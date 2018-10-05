@@ -302,8 +302,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow creation and task execution with delay execution filter • Brief Description – This workflow...",
+      title: "Delay execution workflow",
+      excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 32
@@ -947,9 +947,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
+        "title": "Delay execution workflow",
         "url": "http://localhost:4000/workflow/delay-execution-in-workflow/",
-        "excerpt": "• Use Case Name - Workflow creation and task execution with delay execution filter • Brief Description – This workflow...",
+        "excerpt": "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

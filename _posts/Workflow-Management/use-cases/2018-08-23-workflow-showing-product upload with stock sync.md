@@ -33,14 +33,13 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![ProductUpload_StockSync](/staticfiles/workflow-management/ProductUpload_StockSync.png)
+![ProductUpload_StockSync](/staticfiles/workflow-management/media/ProductUpload_StockSync.png)
 
 14. The user will click on RUN button to run the workflow.
 
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 
 16.  The user will go to SAP B1 (App 2) and click on **Inventory & Item Master Data** to fetch the products added in shopify. 
-
 
 
 ### Post-conditions 
@@ -52,5 +51,5 @@ The user will get resync bucket error log in the agent and in the workflow secti
 ### Frequency of use  
 The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
 
-###Assumptions 
+### Assumptions 
 NOT APPLICABLE 
