@@ -178,7 +178,7 @@ background: -webkit-linear-gradient(left, #214a73 0%,#214a73 17%,#ddb486 100%); 
 background: linear-gradient(to right, #214a73 0%,#214a73 17%,#ddb486 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', endColorstr='#ddb486',GradientType=1 ); /* IE6-9 */}
 .learningPortalLeft {float:left; width:50%;}
-.learningPortalRight {float:left; width:50%; background:url("../images/learning-portal-img.png") no-repeat 100% 100%; background-size: auto 91px;}
+.learningPortalRight {float:left; width:50%; /*background:url("../images/learning-portal-img.png") no-repeat 100% 100%; background-size: auto 91px;*/}
 .learningPortalLeft h3 {margin:0; color:#fff; font-size:21px; line-height:21px; font-weight:600; padding:20px 0 10px;}
 .learningPortalLeft p {margin:0; color:#fff; font-size:12px; line-height:21px; font-weight:600; padding:0 0 20px;}
 .learningPortalRight a {float:right; width:auto; padding:10px 20px; display:inline-block; background:#214a73; color:#fff; text-decoration:none; font-size:18px; font-weight:600; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; margin: 22px 0;}
@@ -249,6 +249,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .search__toggle, .search__toggle img {border:0; outline:none;}
 .list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #e8e9ea; margin: 0 0 20px;}
 .learningtrailRight img {float:right;}
+
 
 
 @media only screen and (max-width: 1336px) {
