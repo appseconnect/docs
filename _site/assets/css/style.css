@@ -249,7 +249,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .learningTrailsBottomInn ul li h4 span { display: inline-block; padding: 0 0 0 10px;}
 .search__toggle {width: 50%; float: right;}
 .search__toggle, .search__toggle img {border:0; outline:none;}
-.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #eaeaea; margin: 0 0 20px;}
+.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #eae6e6; padding: 10px 20px; background: #f3efef; margin: 0 0 20px;}
 .learningtrailRight img {float:right; padding-right: 50px;}
 .learningWhiteBox img { width:80px; margin: 0 0 10px;}
 .archive__item-excerpt {margin:0 0 10px;}
@@ -286,7 +286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 #cssmenu > ul > li:last-child > a span { padding: 6px 24px; background: #ec7940; color: #fff; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; width: 100%; float: none; display: block;}
 .learningTrailsBottomInn ul li h4 { white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis;}
 .docFooterBottomInn {font-size: 11px; font-weight: 500;}
-.layout--archive-taxonomy .sidebar.sticky, .body.layout--single .sidebar.sticky, .sidebar {background:#ddd; padding:15px;}
+.layout--archive-taxonomy .sidebar.sticky, .body.layout--single .sidebar.sticky, .sidebar {background:#f1ecec; padding:15px;}
 .sidebar__right {display:none;}
 .learningtrailRight img {float:none; padding-right: 0; margin:0 auto; display:block;}
 #cssmenu {float:none;}
