@@ -168,7 +168,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "PROCESS Node",
-      excerpt: "PROCESS node is used for transforming data from one format to another format based on the mapping logic specified for...",
+      excerpt: "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 17
@@ -186,7 +186,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "POST Node",
-      excerpt: "POST node is used for pushing data to an application based on the API provided by the application.You need to...",
+      excerpt: "What is Post Node? POST node is used for pushing data to an application based on the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 19
@@ -784,7 +784,7 @@ var store = [
       {
         "title": "PROCESS Node",
         "url": "http://localhost:4000/workflow/working-with-process/",
-        "excerpt": "PROCESS node is used for transforming data from one format to another format based on the mapping logic specified for...",
+        "excerpt": "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -806,7 +806,7 @@ var store = [
       {
         "title": "POST Node",
         "url": "http://localhost:4000/workflow/working-with-post/",
-        "excerpt": "POST node is used for pushing data to an application based on the API provided by the application.You need to...",
+        "excerpt": "What is Post Node? POST node is used for pushing data to an application based on the API provided by...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
