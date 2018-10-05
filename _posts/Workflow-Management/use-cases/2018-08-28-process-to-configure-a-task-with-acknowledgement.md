@@ -35,7 +35,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![PaymentUpload](/staticfiles/workflow-management/media/PaymentUpload.png)
+![Acknowldegementdata-workflow](/staticfiles/workflow-management/media/Acknowldegementdata-workflow.png)
 
 14. The user will click on RUN button to run the workflow.
 
