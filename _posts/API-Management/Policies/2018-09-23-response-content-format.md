@@ -3,7 +3,6 @@ title: "Response content format identification policy"
 toc: true
 tag: developers
 category: "API-Management"
-author: "Soumya Ghosh"
 menus: 
     policies:
         icon: fa fa-cogs
@@ -15,6 +14,7 @@ the `Content-Type` **XML** or **JSON** then the response content format would be
 Request `Content-Type` header.
 
 **ProTip:** Policy can only be used once per API configuration.
+{: .notice--info}
 
 ### Policy Usage
 
