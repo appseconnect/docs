@@ -212,19 +212,19 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow for sales order",
+      title: "Common Use Cases for Workflow management",
       excerpt: "• Use Case Name - Creating a Workflow for sales order • Brief Description – This is a workflow where...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 22
     });
     
   
     idx.add({
-      title: "Workflow Showing Product upload with stock sync",
-      excerpt: "title: “Workflow showing product upload and stock sync” toc: true tag: developers category: “Workflow” — • Use Case Name -...",
-      categories: [],
-      tags: [],
+      title: "Common Use Cases for Workflow management",
+      excerpt: "• Use Case Name - Workflow creation with product upload and stock sync • Brief Description – This workflow enables...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 23
     });
     
@@ -801,8 +801,8 @@ var store = [
     
       
       {
-        "title": "Workflow for sales order",
-        "url": "http://localhost:4000/workflow/workflow-creation-for-add-salesorder/",
+        "title": "Common Use Cases for Workflow management",
+        "url": "http://localhost:4000/workflow-management/workflow-creation-for-add-salesorder/",
         "excerpt": "• Use Case Name - Creating a Workflow for sales order • Brief Description – This is a workflow where...",
         "teaser":
           
@@ -812,9 +812,9 @@ var store = [
     
       
       {
-        "title": "Workflow Showing Product upload with stock sync",
-        "url": "http://localhost:4000/workflow-showing-product-upload-with-stock-sync/",
-        "excerpt": "title: “Workflow showing product upload and stock sync” toc: true tag: developers category: “Workflow” — • Use Case Name -...",
+        "title": "Common Use Cases for Workflow management",
+        "url": "http://localhost:4000/workflow-management/workflow-showing-product-upload-with-stock-sync/",
+        "excerpt": "• Use Case Name - Workflow creation with product upload and stock sync • Brief Description – This workflow enables...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

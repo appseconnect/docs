@@ -1,8 +1,15 @@
 ---
-title: "Workflow for sales order"
+title: "Common Use Cases for Workflow management"
 toc: true
-tag: developers
-category: "Workflow"
+tag: 
+    - developers
+    - usecases
+category: "Workflow-Management"           
+menus: 
+    workflowusecases:
+        icon: fa fa-link
+        title: " Workflow for adding sales order" 
+        identifier: workflowusecase-addsales order
 ---
 
 
@@ -22,7 +29,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![Workflow-SalesOrderAdd](media/Workflow-SalesOrderAdd.png)
+![Workflow-SalesOrderAdd](/staticfiles/root/media/Workflow-SalesOrderAdd.PNG)
 
 14. The user will click on RUN button to run the workflow.
 

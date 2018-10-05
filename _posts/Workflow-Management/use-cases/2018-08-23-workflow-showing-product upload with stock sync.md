@@ -1,9 +1,16 @@
-title: "Workflow showing product upload and stock sync"
-toc: true
-tag: developers
-category: "Workflow"
 ---
-
+title: "Common Use Cases for Workflow management"
+toc: true
+tag: 
+    - developers
+    - usecases
+category: "Workflow-Management"           
+menus: 
+    workflowusecases:
+        icon: fa fa-link
+        title: "Workflow for product upload and stock sync" 
+        identifier: workflowusecase-product upload and stock sync
+---
 
 •	Use Case Name - Workflow creation with product upload and stock sync
 
