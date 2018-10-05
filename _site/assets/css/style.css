@@ -3,6 +3,7 @@
 * { margin: 0; padding: 0;}
 img {max-width: 100%; border:0;}
 body {background: #f7f7f7; color:#000; font-family: 'Montserrat', sans-serif;}
+.spacer {font-size:0; line-height:0; clear:both;}
 /* ---------------- Start : Header ----------------------- */
 .headerPan {clear: both; background: #fff; position: relative; z-index: 100;}
 .headerInn {max-width: 100%; clear: both; margin: 0 auto; padding:9px 30px 10px; background: #f1ecec; border-bottom: 1px solid #ece7e7;}
@@ -20,7 +21,7 @@ body {background: #f7f7f7; color:#000; font-family: 'Montserrat', sans-serif;}
 .headerRight li a i {padding-right: 10px; color: #a6b4bf;}
 /* ---------------- End : Header ----------------------- */
 /* ---------------- Start : Nav ----------------------- */
-#cssmenu {background: transparent; margin: 0; width: auto; padding: 0; line-height: 1; display: block; position: relative; font-family: 'PT Sans', sans-serif;}
+#cssmenu {background: transparent; margin: 0; width: auto; padding: 0; line-height: 1; display: block; position: relative; font-family: 'Montserrat', sans-serif; float:left;}
 #cssmenu ul {list-style: none; margin: 0; padding: 0; display: block;}
 #cssmenu ul:after,  #cssmenu:after { content: " "; display: block; font-size: 0; height: 0; clear: both; visibility: hidden;}
 #cssmenu ul li {margin: 0;padding: 0;display: block;position: relative;}
@@ -248,9 +249,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .learningTrailsBottomInn ul li h4 span { display: inline-block; padding: 0 0 0 10px;}
 .search__toggle {width: 50%; float: right;}
 .search__toggle, .search__toggle img {border:0; outline:none;}
-.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #e8e9ea; margin: 0 0 20px;}
+.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #ddd; padding: 10px 20px; background: #eaeaea; margin: 0 0 20px;}
 .learningtrailRight img {float:right; padding-right: 50px;}
 .learningWhiteBox img { width:80px; margin: 0 0 10px;}
+.archive__item-excerpt {margin:0 0 10px;}
+.copyRightLeft a {color:#777;}
 
 
 
@@ -286,6 +289,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .layout--archive-taxonomy .sidebar.sticky, .body.layout--single .sidebar.sticky, .sidebar {background:#ddd; padding:15px;}
 .sidebar__right {display:none;}
 .learningtrailRight img {float:none; padding-right: 0; margin:0 auto; display:block;}
+#cssmenu {float:none;}
 }
 @media only screen and (min-width: 64em) {
 body .layout--single .sidebar.sticky { margin-top: 15px;}

@@ -343,6 +343,7 @@
     <None Include="_posts\Workflow-Management\use-cases\2018-08-26-process-to-configure-customer-with-splitter.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-28-process-to-configure-a-task-with-acknowledgement.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-29-workflow-showing-salescycle-with-post and post taskinput.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-09-21-common-use-cases-on-workflow-management.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
   </ItemGroup>
   <ItemGroup>
