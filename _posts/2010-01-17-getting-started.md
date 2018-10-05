@@ -7,7 +7,7 @@ menus:
     header:
         title: Getting Started
         icon: fa fa-play
-        weight: 1
+        weight: 2
 header:
     teaser: /staticfiles/root/media/MyProfile.PNG
 ---
