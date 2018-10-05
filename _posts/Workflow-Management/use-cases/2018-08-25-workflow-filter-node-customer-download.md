@@ -16,7 +16,7 @@ menus:
 Workflow creation with data filteration
 
 ### Brief Description 
-This workflow enables the user to add customer in Ecommerce (Shopify) and enable the execution and data sync between Eccomerce & ERP with **Filter**  node (Insert Link). 
+This workflow enables the user to add customer in Ecommerce (Shopify) and enable the execution and data sync between Eccomerce & ERP with [Filter](/workflow/working-with-filter/)  node . 
 
 The Get node will get all the data and the filter property action will process the data as defined in filteration criteria. The filtered data will be processed and get posted in the destination. This workflow allows task configuration with  data filteration.
  
