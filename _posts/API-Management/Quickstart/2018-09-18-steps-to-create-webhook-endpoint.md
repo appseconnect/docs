@@ -1,5 +1,5 @@
 ﻿---
-title: "Quickstart guide to create webhook APIs"
+title: "Creating Webhook endpoint"
 toc: true
 tag: developers
 category: "API-Management"
