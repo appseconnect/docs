@@ -321,7 +321,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Sending Emails",
-      excerpt: "This node is used to send an email notification to a user during workflow execution. For example, using this node...",
+      excerpt: "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 34
@@ -971,7 +971,7 @@ var store = [
       {
         "title": "Sending Emails",
         "url": "http://localhost:4000/workflow/generating-notification-emails/",
-        "excerpt": "This node is used to send an email notification to a user during workflow execution. For example, using this node...",
+        "excerpt": "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

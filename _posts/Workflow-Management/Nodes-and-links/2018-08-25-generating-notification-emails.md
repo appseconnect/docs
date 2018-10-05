@@ -11,6 +11,9 @@ menus:
         title: "Emails" 
         identifier: nodesactionemail
 ---
+
+### Email Action Notification 
+
 This node is used to send an email notification to a user during workflow execution. For example, using this node we can trigger an email when a node executed successfully. In email message body we can use various predefined tokens to construct an email message body. 
 
 |  Element Name | Description  |
