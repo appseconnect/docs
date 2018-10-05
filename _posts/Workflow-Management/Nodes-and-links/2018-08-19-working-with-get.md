@@ -1,41 +1,31 @@
 ﻿---
 title: "GET Node"
 toc: true
-tag: developers
+tag: 
+    - developers
+    - nodes
 category: "Workflow"
-author: "Abhishek Sur"
 menus: 
     nodeandlinks:
         icon: fa fa-link
         title: "Working with Get" 
         identifier: nodeget 
 ---
-To get data from an application, APPSeCONNECT uses `GET` node. A `GET` node is associated with a particular action which
-uses specific action filters and credentials mentioned to the application to get a response back to APPSeCONNECT. As APPSeCONNECT always talk in terms of 
-XML, it is the work of an adapter to pass the data in XML format such that the data is properly interpreted before performing a transformation 
 
-**ProTip:** GET node does not allow an input as the main idea of GET node is to generate output by calling an API tied to an application.
+### What is Get Node?
+
+`GET` node is used for getting data from an application by using the API provided by the application. When we drag a `GET` node in the workflow we need to select a touchpoint. For example we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP). If we add a `GET` node in the workflow based on this touchpoint then `GET` node will fetch data from Shopify based on the action criteria defined in that touchpoint.
+
 
 ### Working Principle
 
-Each node in APPSeCONNECT workflow is tied to a particular connection, such that when the node is executed the data from that particular Application is generated 
+`GET` node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data from that particular Application is generated 
 and responded back to the application workspace. 
 
-![GET Node](../media/ip-restrict-policy.PNG)
+The highlighted node with red one is an implementation of `GET` node.
 
-The configurations that are allowed to a Get node are as follows. 
+![Get Node](/staticfiles/workflow-management/media/GetNode/GetNode.PNG)
 
-|Name|Description|Supported Endpoint|Support Self loop|
-|-----------|--------------------|----------|----------|
-|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|Yes|Infinity|
-|Max Requests|Number of requests to be allowed during the specified timespan|Yes|100|
+Below picture depicts the action filter based on which action of `GET` node will be performed.Depending on APP the filter structure may changed.
 
-### Node Usage
-
-The policy can be applied only at `inbound` section.
-
-### Scope
-
-Currently the policy can be applied at API Operation Scope only.
-
-
+![Action Filter](/staticfiles/workflow-management/media/GetNode/ActionFilter.PNG)

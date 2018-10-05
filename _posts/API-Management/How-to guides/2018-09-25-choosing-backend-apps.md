@@ -2,7 +2,7 @@
 title: "Choose Applications from catalog"
 toc: true
 tag: developers
-category: "API Management"
+category: "API-Management"
 menus: 
     howtoapi:
         icon: fa fa-gg
@@ -16,13 +16,13 @@ The heart of an API Proxy is Backend.**APPSeCONNECT** lets you connect to a data
 
 **Pre-Requisuties**
 
- 1. [Getting a new account for APPSeCONNECT]()
- 2. [Configure your Environment]()
+ 1. [Getting a new account for APPSeCONNECT](https://www.appseconnect.com/free-trial/)
+ 2. [Configure your Environment](/home/getting-started/)
 
 
 * After that go to `App` section.
 
-![Backend App How To](../media/BackendApp-How-to.PNG)
+![Backend App How To](/staticfiles/api-management/media/BackendApp-How-to.PNG)
 
 You will find two options here.
 
@@ -32,7 +32,7 @@ You will find two options here.
 
 **Choose Apps** : With this option you get to choose apps which fall under the plan your organization has been subscribed to.
 
-![Backend App How To](../media/BackendApp-How-to.PNG)
+![Backend App How To](/staticfiles/api-management/media/BackendApp-How-to.PNG)
 
 
 **Create App**: With this option you can create your own custom app as per your need to connect
@@ -55,7 +55,7 @@ credential from App section. [Here is how to provide credentials for cloud agent
 After this you are all set to choose app for your API proxy Backend section which you
 can create from here.
 
-![Api Backend Configuration](../media/api-backend-configuration.PNG)
+![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.PNG)
 
 
 
