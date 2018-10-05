@@ -384,7 +384,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Workflow showing salescycle with post and post task inputs",
-      excerpt: "### Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables...",
+      excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 41
@@ -1048,7 +1048,7 @@ var store = [
       {
         "title": "Workflow showing salescycle with post and post task inputs",
         "url": "http://localhost:4000/workflow-management/workflow-showing-salescycle-with-post-and-post-taskinput/",
-        "excerpt": "### Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables...",
+        "excerpt": "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
