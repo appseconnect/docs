@@ -223,7 +223,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow for adding sales order",
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 23
     });
@@ -232,7 +232,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow for product upload and stock sync",
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 24
     });
@@ -304,7 +304,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Delay execution workflow",
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 32
     });
