@@ -13,15 +13,16 @@ menus:
         identifier: workflowusecases
 ---
 
+## Workflow Use Cases for specific bussiness scenario 
+
 Workflow signifies the definition, execution, and automation of business processes where tasks and information are passed from one touchpoint to another for action, according to a set of procedural rules.
 
 Organizations use Workflows to coordinate tasks and synchronize data between systems, with the ultimate goal of improving organizational efficiency, responsiveness and ease of use.
 
 
-
-
-
 In this article, we will look on APPSeCONNECT Workflow Use Cases which can help in developing solutions for your business.
+
+## Table of Use Cases
 
 |Use Case|Description|
 |-----|----------|

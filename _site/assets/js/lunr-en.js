@@ -519,7 +519,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Common Use Cases for Workflow management",
-      excerpt: "Workflow signifies the definition, execution, and automation of business processes where tasks and information are passed from one touchpoint to...",
+      excerpt: "Workflow Use Cases for specific bussiness scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 56
@@ -1213,7 +1213,7 @@ var store = [
       {
         "title": "Common Use Cases for Workflow management",
         "url": "http://localhost:4000/workflow-management/common-use-cases-on-workflow-management/",
-        "excerpt": "Workflow signifies the definition, execution, and automation of business processes where tasks and information are passed from one touchpoint to...",
+        "excerpt": "Workflow Use Cases for specific bussiness scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
