@@ -339,7 +339,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Webhook callback",
-      excerpt: "The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP...",
+      excerpt: "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 36
@@ -348,7 +348,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Storing Files",
-      excerpt: "Using this node user can store data in text file during workflow execution for future reference. Created file will be...",
+      excerpt: "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 37
@@ -993,7 +993,7 @@ var store = [
       {
         "title": "Webhook callback",
         "url": "http://localhost:4000/workflow/generating-notification-webhooks/",
-        "excerpt": "The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP...",
+        "excerpt": "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1004,7 +1004,7 @@ var store = [
       {
         "title": "Storing Files",
         "url": "http://localhost:4000/workflow/generating-storage-action/",
-        "excerpt": "Using this node user can store data in text file during workflow execution for future reference. Created file will be...",
+        "excerpt": "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
