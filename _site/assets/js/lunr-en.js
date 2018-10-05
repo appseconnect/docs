@@ -113,7 +113,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to create APIs",
+      title: "Quickstart guides to create Workflow",
       excerpt: "\n",
       categories: ["API-Management"],
       tags: ["developers"],
@@ -123,7 +123,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guide to your first workflow",
-      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
+      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 12
@@ -150,7 +150,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "GET Node",
-      excerpt: "GET node is used for getting data from an application by using the API provided by the application. When we...",
+      excerpt: "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 15
@@ -716,7 +716,7 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to create APIs",
+        "title": "Quickstart guides to create Workflow",
         "url": "http://localhost:4000/api-management/quickstart-guides-to-workflow-management/",
         "excerpt": "\n",
         "teaser":
@@ -729,7 +729,7 @@ var store = [
       {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/steps-to-create-your-first-workflow/",
-        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
+        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -762,7 +762,7 @@ var store = [
       {
         "title": "GET Node",
         "url": "http://localhost:4000/workflow/working-with-get/",
-        "excerpt": "GET node is used for getting data from an application by using the API provided by the application. When we...",
+        "excerpt": "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

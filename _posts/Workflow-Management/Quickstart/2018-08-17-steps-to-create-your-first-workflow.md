@@ -15,7 +15,6 @@ menus:
 
 This section will guide you through workflow creation & configuration in simple steps.
 
-## Steps to create Workflow
 
 By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal. 
 
@@ -34,8 +33,9 @@ If you are new to Workflow, then go through the below steps to know more.
 
 * Sample App chosen - Magento 2 & SAP B1
 
-* Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order.
-The connection should be done in the Cloud.
+* Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order. 
+
+* The connection should be done in the Cloud.
 
 ## Steps to workflow creation
 
@@ -101,17 +101,20 @@ NOTE - Initially the Run button will be in disabled state, you have to activate 
 The circle segments of the nodes will change its color according to the operation
 
 
-**NOTE: Ongoing Operation= Yellow color
+**Protip** Ongoing Operation= Yellow color
         Successful Operation= Green color
-        Failed Operation  = Red color**
+        Failed Operation  = Red color
+         {: .notice--info}
 
-11. You will view messages in each step. You can check the workflow functionalities for the following nodes:
+11. You will view messages in each step.  You can check the workflow functionalities for the following nodes:
 
-* GetSpilter
-* Start
-* Merger
-* Loop
-* Halt Resume
+## Workflow Nodes
+
+* [Get](/workflow/working-with-get/)
+* [Spilter](/workflow/working-with-splitter/)
+* [Merger](/workflow/working-with-merger/)
+* [Loop](/workflow/working-with-loops/)
+* [Halt Resume](/workflow/working-with-halt-resume/)
 
 **Protip** For execution of workflow using cloud agent you need to have cloud to cloud connection, cloud agent and cloud supported app.
 {: .notice--info}
