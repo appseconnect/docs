@@ -25,7 +25,7 @@ This is a basic workflow where the user can download customer from Shopify to SA
  Organization Creation & Connection Creation 
 
 ### Basic Flow
-  The user will execute the flow as given below:
+  The user will execute the flow as given below
 
 1. The user will select the Start node, where the workflow execution will begin
 2. Go to template section and select General Touchpoint.

@@ -189,9 +189,10 @@ body.layout--single .learningPortalBan h3, body.layout--single .learningPortalRi
 .layout--archive-taxonomy #main { max-width: 100%; padding: 0;}
 body.layout--single .LeftSearchBar .search__toggle, layout--archive-taxonomy .LeftSearchBar .search__toggle, .LeftSearchBar .search__toggle { clear: both; width: 100%; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; background: #fff; border: 1px solid #b8b9b9; height: 40px; line-height: 40px; position: relative; border-radius:0; color:#889aa5; text-align:left; font-size:14px; margin:0; padding:0 10px;}
 .LeftSearchBar {clear: both; width: 100%; margin: 0 0 20px; overflow: hidden;}
-.layout--archive-taxonomy .sidebar.sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh - 90px - 2em); margin:0;}
+.layout--archive-taxonomy .sidebar.sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh - 90px - 2em); margin:0; background:#f1ecec;}
 .layout--archive-taxonomy .archive {padding-top:20px;}
 .search-content .archive__item {width:100% !important;}
+.archive a.readmoreBtn {padding: 5px 20px; background: #1c79b1; color: #fff; border-radius: 25px; font-size: 14px;}
 
 
 
@@ -237,6 +238,12 @@ body.layout--single .LeftSearchBar .search__toggle, layout--archive-taxonomy .Le
     body.layout--single .page__related h2 {
         margin: 0 0 20px;
     }
-    .nav__list a {display:inline !important;}
-    .layout--archive-taxonomy .sidebar.sticky {height:auto;}
+
+    .nav__list a {
+        display: inline !important;
+    }
+
+    .layout--archive-taxonomy .sidebar.sticky {
+        height: auto;
+    }
 }
