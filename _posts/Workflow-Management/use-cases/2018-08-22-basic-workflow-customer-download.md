@@ -12,12 +12,17 @@ menus:
         identifier: workflowusecase-customerdownload
 ---
 
-### Use Case Name - Creating a Basic Workflow for Customer Downloading.
+### Use Case Name 
+Basic Workflow for Customer Downloading.
 
-### Brief Description – This is a basic workflow where the user can download customer from Shopify to SAP B1 with the execution of this basic and easy to use workflow through our portal .
-### Actor – Implementers, Developers, Partners   
-### Preconditions – Organization Creation & Connection Creation 
-### Basic Flow –  The user will execute the flow as given below:
+### Brief Description 
+This is a basic workflow where the user can download customer from Shopify to SAP B1 with the execution of this basic and easy to use workflow through our portal .
+### Actor
+ Implementers, Developers, Partners   
+### Preconditions
+ Organization Creation & Connection Creation 
+### Basic Flow
+  The user will execute the flow as given below:
 
 1. The user will select the Start node, where the workflow execution will begin
 2. The user will now go to template section and select General Touchpoint.
@@ -51,11 +56,16 @@ menus:
 16.  The user will go to SAP B1 (App 2) and click on Business Partner Master Data to fetch the downloaded customers. 
 
 
-### Alternate Flows – NOT APPLICABLE 
-### Post-conditions – The user can now see that the Customer download is successful and can be fetched in SAP B1. 
-### Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the customer download is failure.
-### Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
-### Assumptions – NOT APPLICABLE 
+### Alternate Flows 
+NOT APPLICABLE 
+### Post-conditions
+The user can now see that the Customer download is successful and can be fetched in SAP B1. 
+### Exception courses 
+The user will get resync bucket error log in the agent and in the workflow section also, if the customer download is failure.
+### Frequency of use
+The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
+### Assumptions 
+NOT APPLICABLE 
 
 
 

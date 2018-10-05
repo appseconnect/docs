@@ -204,7 +204,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Common Use Cases for Workflow management",
-      excerpt: "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
+      excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 21
@@ -519,7 +519,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Common Use Cases for Workflow management",
-      excerpt: "Workflow Use Cases for specific bussiness scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
+      excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 56
@@ -828,7 +828,7 @@ var store = [
       {
         "title": "Common Use Cases for Workflow management",
         "url": "http://localhost:4000/workflow-management/basic-workflow-customer-download/",
-        "excerpt": "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
+        "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1213,7 +1213,7 @@ var store = [
       {
         "title": "Common Use Cases for Workflow management",
         "url": "http://localhost:4000/workflow-management/common-use-cases-on-workflow-management/",
-        "excerpt": "Workflow Use Cases for specific bussiness scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
+        "excerpt": "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

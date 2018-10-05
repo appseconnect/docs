@@ -13,7 +13,7 @@ menus:
         identifier: workflowusecases
 ---
 
-## Workflow Use Cases for specific bussiness scenario 
+## Workflow Use Cases for specific business scenario 
 
 Workflow signifies the definition, execution, and automation of business processes where tasks and information are passed from one touchpoint to another for action, according to a set of procedural rules.
 
