@@ -365,7 +365,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow creation & execution wth filter data",
+      title: "Workflow creation & execution with splitter",
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
@@ -374,19 +374,19 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow showing task configuration with acknowledgement data",
-      excerpt: "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: " Workflow execution with acknowledgement data",
+      excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 40
     });
     
   
     idx.add({
       title: "Workflow showing salescycle with post and post task inputs",
-      excerpt: "• Use Case Name - Workflow creation of sales cycle with post and post task inputs • Brief Description –...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 41
     });
     
@@ -1024,7 +1024,7 @@ var store = [
     
       
       {
-        "title": "Workflow creation & execution wth filter data",
+        "title": "Workflow creation & execution with splitter",
         "url": "http://localhost:4000/workflow-management/process-to-configure-customer-with-splitter/",
         "excerpt": "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
         "teaser":
@@ -1035,9 +1035,9 @@ var store = [
     
       
       {
-        "title": "Workflow showing task configuration with acknowledgement data",
-        "url": "http://localhost:4000/workflow/process-to-configure-a-task-with-acknowledgement/",
-        "excerpt": "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
+        "title": " Workflow execution with acknowledgement data",
+        "url": "http://localhost:4000/workflow-management/process-to-configure-a-task-with-acknowledgement/",
+        "excerpt": "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1047,8 +1047,8 @@ var store = [
       
       {
         "title": "Workflow showing salescycle with post and post task inputs",
-        "url": "http://localhost:4000/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/",
-        "excerpt": "• Use Case Name - Workflow creation of sales cycle with post and post task inputs • Brief Description –...",
+        "url": "http://localhost:4000/workflow-management/workflow-showing-salescycle-with-post-and-post-taskinput/",
+        "excerpt": "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
