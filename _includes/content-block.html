@@ -1,0 +1,115 @@
+﻿<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
+
+
+    <div class="breadcrumbs">
+        <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+            {% assign crumbs = page.url | split: '/' %}
+            {% assign i = 1 %}
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.first %}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="{{ site.url }}{{ site.baseurl }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</span></a>
+                <meta itemprop="position" content="{{ i }}" />
+            </li>
+            <li class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</li>
+            {% endif %}
+            {% if forloop.last %}
+            <li class="current">{{ page.title }}</li>
+            {% else %}
+            {% assign i = i | plus: 1 %}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | absolute_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+                <meta itemprop="position" content="{{ i }}" />
+            </li>
+            <li class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</li>
+            {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
+
+
+    <div class="page__inner-wrap">
+        {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+            {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+            {% if site.tag_archive.type and page.tags[0] %}
+            {% include tag-list.html %}
+            {% endif %}
+            {% if page.last_modified_at %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
+            {% elsif page.date %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+            {% endif %}
+            {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+            {% endif %}
+        </header>
+        {% endunless %}
+
+        <section class="page__content" itemprop="text">
+            {% if page.toc %}
+            <aside class="sidebar__right">
+                <nav class="toc">
+                    <header><h4 class="nav__title"><i class="fa fa-{{ page.toc_icon | default: 'file-text' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+                    {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
+                </nav>
+            </aside>
+            {% endif %}
+            {{ content }}
+            {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        </section>
+
+        <footer class="page__meta">
+            {% if site.data.ui-text[site.locale].meta_label %}
+            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+            {% endif %}
+            {% if page.last_modified_at %}
+            <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></div>
+            {% elsif page.date %}
+            <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></div>
+            {% endif %}
+            {% include page__taxonomy.html %}
+
+        </footer>
+
+        {% if page.share %}{% include social-share.html %}{% endif %}
+
+        {% include post_pagination.html %}
+    </div>
+
+
+
+    {% if page.id and page.related %}
+    <div class="section-see-also">
+        <h2 class="page__see-also">{{ site.data.ui-text[site.locale].related_label | default: "See Also" }}</h2>
+        <div class="page-grid-seealso">
+            <div class="sectionbody">
+                <div class="ulist">
+                    <ul>
+                        {% for post in site.posts limit:4 %}
+                        {% assign title = post.title %}
+                        <li>
+                            <a href="{{ post.url | absolute_url }}" rel="permalink">
+                                <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                {{ title }}
+                            </a>
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+
+
+    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+    {% include comments.html %}
+    {% endif %}
+</article>

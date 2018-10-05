@@ -113,7 +113,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to create APIs",
+      title: "Quickstart guides to create Workflow",
       excerpt: "\n",
       categories: ["API-Management"],
       tags: ["developers"],
@@ -123,7 +123,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guide to your first workflow",
-      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
+      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 12
@@ -150,7 +150,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "GET Node",
-      excerpt: "GET node is used for getting data from an application by using the API provided by the application. When we...",
+      excerpt: "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 15
@@ -168,7 +168,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "PROCESS Node",
-      excerpt: "PROCESS node is used for transforming data from one format to another format based on the mapping logic specified for...",
+      excerpt: "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 17
@@ -186,7 +186,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "POST Node",
-      excerpt: "POST node is used for pushing data to an application based on the API provided by the application.You need to...",
+      excerpt: "What is Post Node? POST node is used for pushing data to an application based on the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 19
@@ -195,7 +195,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "FILTER Node",
-      excerpt: "This node is used to fetch a subset of data from an original data packet based on the criteria specified...",
+      excerpt: "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 20
@@ -203,9 +203,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow-Use Cases",
-      excerpt: "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
-      categories: ["Workflow"],
+      title: "Basic Workflow for Customer Downloading",
+      excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
+      categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 21
     });
@@ -213,7 +213,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "DELAY Node",
-      excerpt: "DELAY node is used to delay or stop an execution flow for a specific period. For example, I have an...",
+      excerpt: "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 22
@@ -221,19 +221,19 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow for sales order",
-      excerpt: "• Use Case Name - Creating a Workflow for sales order • Brief Description – This is a workflow where...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: "Workflow for adding sales order",
+      excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 23
     });
     
   
     idx.add({
-      title: "Workflow Showing Product upload with stock sync",
-      excerpt: "title: “Workflow showing product upload and stock sync” toc: true tag: developers category: “Workflow” — • Use Case Name -...",
-      categories: [],
-      tags: [],
+      title: "Workflow for product upload and stock sync",
+      excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 24
     });
     
@@ -249,7 +249,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "HALT/RESUME Node",
-      excerpt: "HALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current...",
+      excerpt: "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 26
@@ -258,7 +258,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Working with Loops",
-      excerpt: "In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the other nodes that are...",
+      excerpt: "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 27
@@ -267,7 +267,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Merge Node",
-      excerpt: "This node is used to merge smaller data chunks into a single data packet. Like a SPLITTER node, it also...",
+      excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 28
@@ -276,7 +276,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Rule Node",
-      excerpt: "This node is used for decision making during workflow execution. A rule can be applied on a single chunk of...",
+      excerpt: "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 29
@@ -285,7 +285,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Sequencer Node",
-      excerpt: "This node is used to order elements by a certain attribute. This node can be applied to any collection of...",
+      excerpt: "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 30
@@ -294,7 +294,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Splitter Node",
-      excerpt: "This node is used to split a data packet into smaller chunks for processing in small batches. There are three...",
+      excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 31
@@ -302,17 +302,17 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow creation and task execution with delay execution filter • Brief Description – This workflow...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: "Delay execution workflow",
+      excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 32
     });
     
   
     idx.add({
       title: "Workflow Actions",
-      excerpt: "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
+      excerpt: "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 33
@@ -321,7 +321,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Sending Emails",
-      excerpt: "This node is used to send an email notification to a user during workflow execution. For example, using this node...",
+      excerpt: "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 34
@@ -330,7 +330,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Generating Support tickets",
-      excerpt: "Using this node user can create a support ticket during workflow execution. For example, after data is pushed to an...",
+      excerpt: "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 35
@@ -339,7 +339,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Webhook callback",
-      excerpt: "The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP...",
+      excerpt: "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 36
@@ -348,7 +348,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Storing Files",
-      excerpt: "Using this node user can store data in text file during workflow execution for future reference. Created file will be...",
+      excerpt: "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 37
@@ -356,19 +356,19 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow creation and task configuration with data filteration • Brief Description – This workflow enables...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: " Workflow execution with data filteration",
+      excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 38
     });
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow showing task configuration with splitter rule • Brief Description – This workflow enables the...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: "Workflow creation & execution wth filter data",
+      excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 39
     });
     
@@ -518,11 +518,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Common Use Cases for Workflow management",
+      excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
+      id: 56
+    });
+    
+  
+    idx.add({
       title: "Compression Policy",
       excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 56
+      id: 57
     });
     
   
@@ -531,7 +540,7 @@ var idx = lunr(function () {
       excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 57
+      id: 58
     });
     
   
@@ -540,7 +549,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 58
+      id: 59
     });
     
   
@@ -549,7 +558,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 59
+      id: 60
     });
     
   
@@ -558,7 +567,7 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 60
+      id: 61
     });
     
   
@@ -567,7 +576,7 @@ var idx = lunr(function () {
       excerpt: "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 61
+      id: 62
     });
     
   
@@ -707,7 +716,7 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to create APIs",
+        "title": "Quickstart guides to create Workflow",
         "url": "http://localhost:4000/api-management/quickstart-guides-to-workflow-management/",
         "excerpt": "\n",
         "teaser":
@@ -720,7 +729,7 @@ var store = [
       {
         "title": "Quickstart guide to your first workflow",
         "url": "http://localhost:4000/workflow/steps-to-create-your-first-workflow/",
-        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. Steps to create Workflow By reading...",
+        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -753,7 +762,7 @@ var store = [
       {
         "title": "GET Node",
         "url": "http://localhost:4000/workflow/working-with-get/",
-        "excerpt": "GET node is used for getting data from an application by using the API provided by the application. When we...",
+        "excerpt": "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -775,7 +784,7 @@ var store = [
       {
         "title": "PROCESS Node",
         "url": "http://localhost:4000/workflow/working-with-process/",
-        "excerpt": "PROCESS node is used for transforming data from one format to another format based on the mapping logic specified for...",
+        "excerpt": "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -797,7 +806,7 @@ var store = [
       {
         "title": "POST Node",
         "url": "http://localhost:4000/workflow/working-with-post/",
-        "excerpt": "POST node is used for pushing data to an application based on the API provided by the application.You need to...",
+        "excerpt": "What is Post Node? POST node is used for pushing data to an application based on the API provided by...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -808,7 +817,7 @@ var store = [
       {
         "title": "FILTER Node",
         "url": "http://localhost:4000/workflow/working-with-filter/",
-        "excerpt": "This node is used to fetch a subset of data from an original data packet based on the criteria specified...",
+        "excerpt": "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -817,9 +826,9 @@ var store = [
     
       
       {
-        "title": "Workflow-Use Cases",
-        "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
-        "excerpt": "Use Case Name - Creating a Basic Workflow for Customer Downloading. Brief Description – This is a basic workflow where...",
+        "title": "Basic Workflow for Customer Downloading",
+        "url": "http://localhost:4000/workflow-management/basic-workflow-customer-download/",
+        "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -830,7 +839,7 @@ var store = [
       {
         "title": "DELAY Node",
         "url": "http://localhost:4000/workflow/working-with-delay/",
-        "excerpt": "DELAY node is used to delay or stop an execution flow for a specific period. For example, I have an...",
+        "excerpt": "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -839,9 +848,9 @@ var store = [
     
       
       {
-        "title": "Workflow for sales order",
-        "url": "http://localhost:4000/workflow/workflow-creation-for-add-salesorder/",
-        "excerpt": "• Use Case Name - Creating a Workflow for sales order • Brief Description – This is a workflow where...",
+        "title": "Workflow for adding sales order",
+        "url": "http://localhost:4000/workflow-management/workflow-creation-for-add-salesorder/",
+        "excerpt": "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -850,9 +859,9 @@ var store = [
     
       
       {
-        "title": "Workflow Showing Product upload with stock sync",
-        "url": "http://localhost:4000/workflow-showing-product-upload-with-stock-sync/",
-        "excerpt": "title: “Workflow showing product upload and stock sync” toc: true tag: developers category: “Workflow” — • Use Case Name -...",
+        "title": "Workflow for product upload and stock sync",
+        "url": "http://localhost:4000/workflow-management/workflow-showing-product-upload-with-stock-sync/",
+        "excerpt": "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -874,7 +883,7 @@ var store = [
       {
         "title": "HALT/RESUME Node",
         "url": "http://localhost:4000/workflow/working-with-halt-resume/",
-        "excerpt": "HALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current...",
+        "excerpt": "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -885,7 +894,7 @@ var store = [
       {
         "title": "Working with Loops",
         "url": "http://localhost:4000/workflow/working-with-loops/",
-        "excerpt": "In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the other nodes that are...",
+        "excerpt": "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -896,7 +905,7 @@ var store = [
       {
         "title": "Merge Node",
         "url": "http://localhost:4000/workflow/working-with-merger/",
-        "excerpt": "This node is used to merge smaller data chunks into a single data packet. Like a SPLITTER node, it also...",
+        "excerpt": "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -907,7 +916,7 @@ var store = [
       {
         "title": "Rule Node",
         "url": "http://localhost:4000/workflow/working-with-rule/",
-        "excerpt": "This node is used for decision making during workflow execution. A rule can be applied on a single chunk of...",
+        "excerpt": "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -918,7 +927,7 @@ var store = [
       {
         "title": "Sequencer Node",
         "url": "http://localhost:4000/workflow/working-with-sequencer/",
-        "excerpt": "This node is used to order elements by a certain attribute. This node can be applied to any collection of...",
+        "excerpt": "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -929,7 +938,7 @@ var store = [
       {
         "title": "Splitter Node",
         "url": "http://localhost:4000/workflow/working-with-splitter/",
-        "excerpt": "This node is used to split a data packet into smaller chunks for processing in small batches. There are three...",
+        "excerpt": "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -938,9 +947,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
-        "url": "http://localhost:4000/workflow/delay-execution-in-workflow/",
-        "excerpt": "• Use Case Name - Workflow creation and task execution with delay execution filter • Brief Description – This workflow...",
+        "title": "Delay execution workflow",
+        "url": "http://localhost:4000/workflow-management/delay-execution-in-workflow/",
+        "excerpt": "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -951,7 +960,7 @@ var store = [
       {
         "title": "Workflow Actions",
         "url": "http://localhost:4000/workflow/generating-actions/",
-        "excerpt": "Workflow is capable of generating action by placing an action node directly on the workflow canvas. The Actions are generally...",
+        "excerpt": "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -962,7 +971,7 @@ var store = [
       {
         "title": "Sending Emails",
         "url": "http://localhost:4000/workflow/generating-notification-emails/",
-        "excerpt": "This node is used to send an email notification to a user during workflow execution. For example, using this node...",
+        "excerpt": "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -973,7 +982,7 @@ var store = [
       {
         "title": "Generating Support tickets",
         "url": "http://localhost:4000/workflow/generating-notification-support-ticket/",
-        "excerpt": "Using this node user can create a support ticket during workflow execution. For example, after data is pushed to an...",
+        "excerpt": "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -984,7 +993,7 @@ var store = [
       {
         "title": "Webhook callback",
         "url": "http://localhost:4000/workflow/generating-notification-webhooks/",
-        "excerpt": "The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP...",
+        "excerpt": "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -995,7 +1004,7 @@ var store = [
       {
         "title": "Storing Files",
         "url": "http://localhost:4000/workflow/generating-storage-action/",
-        "excerpt": "Using this node user can store data in text file during workflow execution for future reference. Created file will be...",
+        "excerpt": "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1004,9 +1013,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
-        "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
-        "excerpt": "• Use Case Name - Workflow creation and task configuration with data filteration • Brief Description – This workflow enables...",
+        "title": " Workflow execution with data filteration",
+        "url": "http://localhost:4000/workflow-management/workflow-filter-node-customer-download/",
+        "excerpt": "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1015,9 +1024,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
-        "url": "http://localhost:4000/workflow/process-to-configure-customer-with-splitter/",
-        "excerpt": "• Use Case Name - Workflow showing task configuration with splitter rule • Brief Description – This workflow enables the...",
+        "title": "Workflow creation & execution wth filter data",
+        "url": "http://localhost:4000/workflow-management/process-to-configure-customer-with-splitter/",
+        "excerpt": "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -1194,6 +1203,17 @@ var store = [
         "title": "Validate http headers policy",
         "url": "http://localhost:4000/api-management/validate-http-header/",
         "excerpt": "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Common Use Cases for Workflow management",
+        "url": "http://localhost:4000/workflow-management/common-use-cases-on-workflow-management/",
+        "excerpt": "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"

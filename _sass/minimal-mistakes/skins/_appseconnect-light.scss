@@ -30,13 +30,17 @@ $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+body {font-family: 'Montserrat', sans-serif;}
 
-body.layout--single {font-family:'Open Sans', sans-serif;}
+body.layout--single {font-family:'Montserrat', sans-serif;}
 @media (min-width: 80em) {
 body.layout--single .masthead__inner-wrap {max-width: 100%;}
 body.layout--single .breadcrumbs {max-width: 100%;}
 body.layout--single .breadcrumbs ol {padding-left: 0;}
-body.layout--single #main {max-width: 100%; padding: 0; background: #fff; margin-top: 0;}
+
+body.layout--single #main {max-width: 100%; padding: 0; background: #fff; margin-top: 0; position: relative; z-index: 10;}
+
 body.layout--single .sidebar__right {margin-top: -45px;}
 body.layout--single .sidebar__right {width:280px;}
 body.layout--single .page {background: #fff; min-height: 700px; padding: 20px 320px 20px 20px;}
@@ -55,7 +59,7 @@ body.layout--single .breadcrumbs ol {font-size: 14px; margin:0; padding:0;}
 body.layout--single .breadcrumbs ol li, body.layout--single .breadcrumbs ol li a {color:#64757d; text-decoration:none;}
 body.layout--single .breadcrumbs .current {color: #36414a;}
 body.layout--single .search__toggle { border: 0; padding: 0; color: #ffffff; background-color: #00aadc; margin: 0 20px 0 0; border-radius: 50%; width: 44px; height: 44px;}
-body.layout--single .page__content p, body.layout--single .page__content li, body.layout--single .page__content dl {font-size: 14px !important; line-height: 24px; color: #4c5152; font-family:'Open Sans', sans-serif;}
+body.layout--single .page__content p, body.layout--single .page__content li, body.layout--single .page__content dl {font-size: 14px !important; line-height: 24px; color: #4c5152; font-family:'Montserrat', sans-serif;}
 body.layout--single h1, body.layout--single h2, body.layout--single h3, body.layout--single h4 {color: #3d4a50;}
 body.layout--single  {color:#566267;}
 body.layout--single .toc, body.layout--single .notice--info, body.layout--single div.highlighter-rouge pre.highlight, body.layout--single figure.highlight pre.highlight {background: transparent;}
@@ -178,6 +182,7 @@ body.layout--single .sub-title.sidebaractive:before { content: "\f105"; left: 5p
 .searchDefaultBox { clear:both; padding:0 0 30px 0;}
 .page__inner-wrap .page__meta { display: block;}
 .hideBox {display:none;}
+body.layout--single .learningPortalBan h3, body.layout--single .learningPortalRight a { color: #fff;}
 
 
 @media (max-width: 63.9375em) {

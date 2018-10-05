@@ -21,12 +21,12 @@
     {% endif %}
 </div>
 {% endif %}
-{% endcomment %} 
+{% endcomment %}
 {% assign posts = site.posts %}
 {% assign currentTag = page.tag %}
 {% assign matchCat = " " %}
 <div class="sidebar sticky">
-    <nav class="nav__list" id="sidebarMenu">
+    <nav class="nav__list leftSideBar" id="sidebarMenu">
         {% assign menu = site.menus.header %}
         {% include menus.html %}
     </nav>

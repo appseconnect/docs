@@ -5,13 +5,15 @@ tag:
     - developers
     - nodes
 category: "Workflow"
-author: "Utpal Maity"
 menus: 
     nodeandlinks:
         icon: fa fa-link
         title: "Working with Get" 
         identifier: nodeget 
 ---
+
+### What is Get Node?
+
 `GET` node is used for getting data from an application by using the API provided by the application. When we drag a `GET` node in the workflow we need to select a touchpoint. For example we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP). If we add a `GET` node in the workflow based on this touchpoint then `GET` node will fetch data from Shopify based on the action criteria defined in that touchpoint.
 
 

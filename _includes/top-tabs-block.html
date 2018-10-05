@@ -1,0 +1,10 @@
+﻿<div class="appseconnectDocTabs">
+
+    {% if site.categories %}
+    <ul>
+        {% for category in site.categories %}
+            <li><a href="{{ category[0] | slugify | prepend: path_type | prepend: site.category_archive.path | absolute_url }}" title="{{ category[0] }}"><span>{{ category[0] }}</span></a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
