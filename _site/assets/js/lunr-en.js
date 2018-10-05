@@ -214,7 +214,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Basic Workflow for Customer Downloading",
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 22
     });
@@ -248,7 +248,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "FAQs",
+      title: "Frequently asked questions",
       excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -529,7 +529,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Common Use Cases for Workflow management",
       excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 57
     });
@@ -847,7 +847,7 @@ var store = [
       
       {
         "title": "Basic Workflow for Customer Downloading",
-        "url": "http://localhost:4000/workflow-management/basic-workflow-customer-download/",
+        "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
         "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
         "teaser":
           
@@ -890,7 +890,7 @@ var store = [
     
       
       {
-        "title": "FAQs",
+        "title": "Frequently asked questions",
         "url": "http://localhost:4000/workflow/faqs/",
         "excerpt": "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
         "teaser":
@@ -1232,7 +1232,7 @@ var store = [
       
       {
         "title": "Common Use Cases for Workflow management",
-        "url": "http://localhost:4000/workflow-management/common-use-cases-on-workflow-management/",
+        "url": "http://localhost:4000/workflow/common-use-cases-on-workflow-management/",
         "excerpt": "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
         "teaser":
           
