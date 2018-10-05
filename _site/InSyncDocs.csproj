@@ -61,6 +61,7 @@
     <Content Include="assets\images\Implementer-2.png" />
     <Content Include="assets\images\Implementer.png" />
     <Content Include="assets\images\learning-img.png" />
+    <Content Include="assets\images\learning-portal-img.png" />
     <Content Include="assets\images\logo.png" />
     <Content Include="assets\images\mm-customizable-feature.png" />
     <Content Include="assets\images\mm-free-feature.png" />
@@ -271,6 +272,8 @@
     <None Include="assets\js\plugins\ajaxify\ajaxify.jquery.json" />
     <None Include="assets\js\plugins\ajaxify\bower.json" />
     <None Include="assets\js\plugins\jstree\jstree.jquery.json" />
+    <None Include="contributor.md" />
+    <None Include="README.md" />
     <None Include="videos.md" />
     <None Include="_data\menus.yml" />
     <None Include="_pages\about\index.md" />

@@ -1,0 +1,41 @@
+﻿---
+---
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.8.0 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="{{ site.locale | slice: 0,2 | inner: "en" }}" class="no-js">
+<head>
+    {% include head.html %}
+    {% include head/custom.html %}
+</head>
+
+<body class="layout--{{ page.layout | inner: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | inner: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+
+    {% include browser-upgrade.html %}
+    {% if page.permalink <> "/" %}
+
+    {% endif %}
+    <div class="initial-content">
+        {{ content }}
+    </div>
+
+    {% if site.search == true %}
+    <div class="search-content">
+        {% include search_form.html %}
+    </div>
+    {% endif %}
+    {% if page.permalink <> "/" %}
+
+    <!-- Start : Footer -->
+    {% include footer-block.html %}
+    <!-- End : Footer -->
+    {% endif %}
+    {% include scripts.html %}
+
+</body>
+</html>

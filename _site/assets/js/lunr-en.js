@@ -374,10 +374,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow showing task configuration with acknowledgement data",
-      excerpt: "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: " Workflow execution with acknowledgement data",
+      excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 40
     });
     
@@ -1035,9 +1035,9 @@ var store = [
     
       
       {
-        "title": "Workflow showing task configuration with acknowledgement data",
-        "url": "http://localhost:4000/workflow/process-to-configure-a-task-with-acknowledgement/",
-        "excerpt": "• Use Case Name - Workflow showing task configuration with acknowledgement data • Brief Description – This workflow enables the...",
+        "title": " Workflow execution with acknowledgement data",
+        "url": "http://localhost:4000/workflow-management/process-to-configure-a-task-with-acknowledgement/",
+        "excerpt": "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
