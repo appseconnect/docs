@@ -195,7 +195,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "FILTER Node",
-      excerpt: "This node is used to fetch a subset of data from an original data packet based on the criteria specified...",
+      excerpt: "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 20
@@ -213,7 +213,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "DELAY Node",
-      excerpt: "DELAY node is used to delay or stop an execution flow for a specific period. For example, I have an...",
+      excerpt: "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 22
@@ -249,7 +249,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "HALT/RESUME Node",
-      excerpt: "HALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current...",
+      excerpt: "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 26
@@ -817,7 +817,7 @@ var store = [
       {
         "title": "FILTER Node",
         "url": "http://localhost:4000/workflow/working-with-filter/",
-        "excerpt": "This node is used to fetch a subset of data from an original data packet based on the criteria specified...",
+        "excerpt": "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -839,7 +839,7 @@ var store = [
       {
         "title": "DELAY Node",
         "url": "http://localhost:4000/workflow/working-with-delay/",
-        "excerpt": "DELAY node is used to delay or stop an execution flow for a specific period. For example, I have an...",
+        "excerpt": "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -883,7 +883,7 @@ var store = [
       {
         "title": "HALT/RESUME Node",
         "url": "http://localhost:4000/workflow/working-with-halt-resume/",
-        "excerpt": "HALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current...",
+        "excerpt": "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
