@@ -15,7 +15,7 @@ menus:
 ### Use Case Name  
 Creating a Workflow for sales order
 
-###Brief Description
+### Brief Description
  This is a workflow where the user can add sales order in Eccommece (Shopify) and execute the  workflow to sync the sales order in the ERP (SAPB1) 
 
 ### Actor 
@@ -42,8 +42,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 16.  The user will go to SAP B1 (App 2)  to fetch the synced data - Sales Order will sync in Sales Order section. 
 
-### Alternate Flows 
- NOT APPLICABLE 
+
 
 ### Post-conditions
  The user can now see that the sales order is  available in ERP( SAP B1)

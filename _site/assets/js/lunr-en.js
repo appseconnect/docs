@@ -222,7 +222,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Workflow for adding sales order",
-      excerpt: "Use Case Name Creating a Workflow for sales order ###Brief Description This is a workflow where the user can add...",
+      excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 23
@@ -230,8 +230,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Common Use Cases for Workflow management",
-      excerpt: "• Use Case Name - Workflow creation with product upload and stock sync • Brief Description – This workflow enables...",
+      title: "Workflow for product upload and stock sync",
+      excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 24
@@ -850,7 +850,7 @@ var store = [
       {
         "title": "Workflow for adding sales order",
         "url": "http://localhost:4000/workflow-management/workflow-creation-for-add-salesorder/",
-        "excerpt": "Use Case Name Creating a Workflow for sales order ###Brief Description This is a workflow where the user can add...",
+        "excerpt": "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -859,9 +859,9 @@ var store = [
     
       
       {
-        "title": "Common Use Cases for Workflow management",
+        "title": "Workflow for product upload and stock sync",
         "url": "http://localhost:4000/workflow-management/workflow-showing-product-upload-with-stock-sync/",
-        "excerpt": "• Use Case Name - Workflow creation with product upload and stock sync • Brief Description – This workflow enables...",
+        "excerpt": "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
