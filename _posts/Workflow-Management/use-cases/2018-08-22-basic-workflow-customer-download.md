@@ -23,7 +23,7 @@ This is a basic workflow where the user can download customer from Shopify to SA
 
 ### Preconditions
  Organization Creation & Connection Creation 
- 
+
 ### Basic Flow
   The user will execute the flow as given below:
 
@@ -59,8 +59,6 @@ This is a basic workflow where the user can download customer from Shopify to SA
 16.  The user will go to SAP B1 (App 2) and click on Business Partner Master Data to fetch the downloaded customers. 
 
 
-### Alternate Flows 
-NOT APPLICABLE 
 ### Post-conditions
 The user can now see that the Customer download is successful and can be fetched in SAP B1. 
 ### Exception courses 

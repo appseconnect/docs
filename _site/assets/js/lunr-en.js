@@ -304,8 +304,8 @@ var idx = lunr(function () {
     idx.add({
       title: "Delay execution workflow",
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 32
     });
     
@@ -356,10 +356,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow creation and task configuration with data filteration • Brief Description – This workflow enables...",
+      title: " Workflow execution with data filteration",
+      excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
       categories: ["Workflow"],
-      tags: ["developers"],
+      tags: ["developers","usecases"],
       id: 38
     });
     
@@ -948,7 +948,7 @@ var store = [
       
       {
         "title": "Delay execution workflow",
-        "url": "http://localhost:4000/workflow/delay-execution-in-workflow/",
+        "url": "http://localhost:4000/workflow-management/delay-execution-in-workflow/",
         "excerpt": "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
         "teaser":
           
@@ -1013,9 +1013,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
+        "title": " Workflow execution with data filteration",
         "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
-        "excerpt": "• Use Case Name - Workflow creation and task configuration with data filteration • Brief Description – This workflow enables...",
+        "excerpt": "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
