@@ -183,6 +183,9 @@ body.layout--single .sub-title.sidebaractive:before { content: "\f105"; left: 5p
 .page__inner-wrap .page__meta { display: block;}
 .hideBox {display:none;}
 body.layout--single .learningPortalBan h3, body.layout--single .learningPortalRight a { color: #fff;}
+.archive__item-excerpt {clear:both;}
+.layout--archive-taxonomy #main { max-width: 100%; padding: 0;}
+
 
 
 @media (max-width: 63.9375em) {

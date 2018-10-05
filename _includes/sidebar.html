@@ -1,6 +1,13 @@
 {% comment %}
 {% if page.author_profile or layout.author_profile or page.sidebar %}
 <div class="sidebar sticky">
+    <div class="LeftSearchBar">
+        {% if site.search == true %}
+        <button class="search__toggle" type="button">
+            <img src="../assets/images/home-search-img.png" />
+        </button>
+        {% endif %}
+    </div>
     {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
     {% if page.sidebar %}
     {% for s in page.sidebar %}
