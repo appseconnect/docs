@@ -124,7 +124,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Steps to create your first workflow",
       excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
-      categories: ["Workflow"],
+      categories: ["Workflow-Management"],
       tags: ["developers"],
       id: 12
     });
@@ -737,7 +737,7 @@ var store = [
       
       {
         "title": "Steps to create your first workflow",
-        "url": "http://localhost:4000/workflow/steps-to-create-your-first-workflow/",
+        "url": "http://localhost:4000/workflow-management/steps-to-create-your-first-workflow/",
         "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
         "teaser":
           

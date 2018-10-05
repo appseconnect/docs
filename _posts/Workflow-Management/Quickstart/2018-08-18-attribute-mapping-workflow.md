@@ -24,12 +24,15 @@ You can search for a connection from the Search section. Hover the mouse on the 
 3. A new page will open where you can edit the touch points.
 
 ![Attribute-Mapping2](/staticfiles/workflow-management/media/Attribute-Mapping2.png)
+
 **Protip**Edit mapping will only be applicable for your custom touchpoint i.e. if you add any new touchpoint. Edit link will not be visible for Base touchpoints that get auto-created at the time of connection creation.
+{: .notice--info}
 
 
 4. You will see a page like this. Refer to this document.
 
 ![Attribute-Mapping3](/staticfiles/workflow-management/media/Attribute-Mapping3.png)
+
 5. Choose Open Mapping, A pop-up will open.
 
 ![Attribute-Mapping4](/staticfiles/workflow-management/media/Attribute-Mapping4.png)

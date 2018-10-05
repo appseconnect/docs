@@ -2,7 +2,7 @@
 title: "Steps to create your first workflow"
 toc: true
 tag: developers
-category: "Workflow"
+category: "Workflow-Management"
 weight: 6
 menus: 
     quickstartworkflow:
