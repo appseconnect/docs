@@ -1,5 +1,5 @@
 ---
-title: "Common Use Cases for Workflow management"
+title: "Basic Workflow for Customer Downloading"
 toc: true
 tag: 
     - developers
@@ -17,10 +17,13 @@ Basic Workflow for Customer Downloading.
 
 ### Brief Description 
 This is a basic workflow where the user can download customer from Shopify to SAP B1 with the execution of this basic and easy to use workflow through our portal .
+
 ### Actor
  Implementers, Developers, Partners   
+
 ### Preconditions
  Organization Creation & Connection Creation 
+ 
 ### Basic Flow
   The user will execute the flow as given below:
 
@@ -37,7 +40,7 @@ This is a basic workflow where the user can download customer from Shopify to SA
 
 8. The user after creating the workflow will give a name to the untitled workflow (Workflow for Customer Downloading) and click on `SAVE` button to save the workflow.
 
- ![CustomerDownload_Simple](/staticfiles/root/media//CustomerDownload_Simple.png)
+ ![CustomerDownload_Simple](/staticfiles/workflow-management/media/CustomerDownload_Simple.png)
             
 9. The user after creating the workflow will deploy that in the Agent.
 

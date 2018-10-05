@@ -1,5 +1,5 @@
 ---
-title: "Common Use Cases for Workflow management"
+title: "Workflow for adding sales order"
 toc: true
 tag: 
     - developers
@@ -12,24 +12,29 @@ menus:
         identifier: workflowusecase-addsales order
 ---
 
+### Use Case Name  
+Creating a Workflow for sales order
 
-•	Use Case Name - Creating a Workflow for sales order
+###Brief Description
+ This is a workflow where the user can add sales order in Eccommece (Shopify) and execute the  workflow to sync the sales order in the ERP (SAPB1) 
 
-•	Brief Description – This is a workflow where the user can add sales order in Eccommece (Shopify) and execute the  workflow to sync the sales order in the ERP (SAPB1) 
+### Actor 
+Implementers, Developers, Partners  
 
-•	Actor – Implementers, Developers, Partners  
+### Preconditions 
+Organization Creation & Connection Creation 
 
-•	Preconditions – Organization Creation & Connection Creation 
+### Basic Flow
 
-•	Basic Flow – The user will execute the flow as given below.
+The user will execute the flow as given below.
 
-Step 1 to 11 is similar to the execution flow of [basic workflow customer download] (insert link)
+Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow-management/basic-workflow-customer-download/)
 
 12. The user will now login/signup to Eccomerce (Shopify - App 1) and add sales order.
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![Workflow-SalesOrderAdd](/staticfiles/root/media/Workflow-SalesOrderAdd.PNG)
+![Workflow-SalesOrderAdd](/staticfiles/workflow-management/media/Workflow-SalesOrderAdd.PNG)
 
 14. The user will click on RUN button to run the workflow.
 
@@ -37,14 +42,19 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 16.  The user will go to SAP B1 (App 2)  to fetch the synced data - Sales Order will sync in Sales Order section. 
 
-•	Alternate Flows – NOT APPLICABLE 
+### Alternate Flows 
+ NOT APPLICABLE 
 
-•	Post-conditions – The user can now see that the sales order is  available in ERP( SAP B1)
+### Post-conditions
+ The user can now see that the sales order is  available in ERP( SAP B1)
 
-•	Exception courses –  The user will get resync bucket error log in the agent and in the workflow section also, if the sales order sync is failure.       
+### Exception courses 
+The user will get resync bucket error log in the agent and in the workflow section also, if the sales order sync is failure.       
 
-•	Frequency of use  – The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
+### Frequency of use
+ The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.
 
-•	Assumptions – NOT APPLICABLE 
+### Assumptions 
+NOT APPLICABLE 
 
 

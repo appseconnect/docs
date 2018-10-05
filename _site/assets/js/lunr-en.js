@@ -203,7 +203,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Common Use Cases for Workflow management",
+      title: "Basic Workflow for Customer Downloading",
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
@@ -221,8 +221,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Common Use Cases for Workflow management",
-      excerpt: "• Use Case Name - Creating a Workflow for sales order • Brief Description – This is a workflow where...",
+      title: "Workflow for adding sales order",
+      excerpt: "Use Case Name Creating a Workflow for sales order ###Brief Description This is a workflow where the user can add...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 23
@@ -826,7 +826,7 @@ var store = [
     
       
       {
-        "title": "Common Use Cases for Workflow management",
+        "title": "Basic Workflow for Customer Downloading",
         "url": "http://localhost:4000/workflow-management/basic-workflow-customer-download/",
         "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
         "teaser":
@@ -848,9 +848,9 @@ var store = [
     
       
       {
-        "title": "Common Use Cases for Workflow management",
+        "title": "Workflow for adding sales order",
         "url": "http://localhost:4000/workflow-management/workflow-creation-for-add-salesorder/",
-        "excerpt": "• Use Case Name - Creating a Workflow for sales order • Brief Description – This is a workflow where...",
+        "excerpt": "Use Case Name Creating a Workflow for sales order ###Brief Description This is a workflow where the user can add...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
