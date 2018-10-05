@@ -3,7 +3,6 @@ title: "Architecture"
 toc: true
 tag: developers
 category: "Workflow"
-author: "Abhishek Sur"
 menus: 
     workflow:
         title: "Architecture" 

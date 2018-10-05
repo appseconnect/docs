@@ -214,7 +214,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Basic Workflow for Customer Downloading",
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 22
     });
@@ -232,7 +232,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow for adding sales order",
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 24
     });
@@ -241,14 +241,14 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow for product upload and stock sync",
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 25
     });
     
   
     idx.add({
-      title: "FAQs",
+      title: "Frequently asked questions",
       excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -313,7 +313,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Delay execution workflow",
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 33
     });
@@ -367,7 +367,7 @@ var idx = lunr(function () {
     idx.add({
       title: " Workflow execution with data filteration",
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 39
     });
@@ -376,7 +376,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow creation & execution with splitter",
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 40
     });
@@ -385,7 +385,7 @@ var idx = lunr(function () {
     idx.add({
       title: " Workflow execution with acknowledgement data",
       excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 41
     });
@@ -394,7 +394,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Workflow showing salescycle with post and post task inputs",
       excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 42
     });
@@ -529,7 +529,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Common Use Cases for Workflow management",
       excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 57
     });
@@ -890,7 +890,7 @@ var store = [
     
       
       {
-        "title": "FAQs",
+        "title": "Frequently asked questions",
         "url": "http://localhost:4000/workflow/faqs/",
         "excerpt": "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
         "teaser":
@@ -1232,7 +1232,7 @@ var store = [
       
       {
         "title": "Common Use Cases for Workflow management",
-        "url": "http://localhost:4000/workflow-management/common-use-cases-on-workflow-management/",
+        "url": "http://localhost:4000/workflow/common-use-cases-on-workflow-management/",
         "excerpt": "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
         "teaser":
           
