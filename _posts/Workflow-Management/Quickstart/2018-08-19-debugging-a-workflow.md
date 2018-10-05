@@ -2,7 +2,7 @@
 title: "Debugging workflows"
 toc: true
 tag: developers
-category: "Workflow-Management"
+category: "Workflow"
 weight: 8
 menus: 
     quickstartworkflow:
