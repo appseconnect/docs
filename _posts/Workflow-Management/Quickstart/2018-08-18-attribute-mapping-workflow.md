@@ -2,8 +2,8 @@
 title: "Attribute Mapping of workflow"
 toc: true
 tag: developers
-category: "Workflow"
-weight: 6
+category: "Workflow-Management"
+weight: 7
 menus: 
     quickstartworkflow:
         icon: fa fa-link

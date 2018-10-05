@@ -2,7 +2,7 @@
 title: "Quickstart guides to create Workflow"
 toc: true
 tag: developers
-category: "API-Management"
+category: "Workflow-Management"
 weight: 5
 menus: 
     workflow: 
