@@ -67,7 +67,6 @@
         });
     });
     window.onpopstate = function (e) {
-        debugger;
         if (e.srcElement.location.hash.startsWith('#')) {
             return false;
         }
@@ -100,9 +99,9 @@
             cache: cacheTransaction,
             global: global,
             xhr: function () {
-
+                debugger;
                 var xhr = new window.XMLHttpRequest();
-
+                $('#globalprogress > div.progress-bar').show();
                 if (intervalObjects && intervalObjects.globalProgressBar) {
                     clearInterval(intervalObjects.globalProgressBar);
                     $('#globalprogress > div.progress-bar').width(0 + "%");
