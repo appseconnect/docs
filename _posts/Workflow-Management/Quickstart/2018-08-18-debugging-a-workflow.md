@@ -3,6 +3,7 @@ title: "Quickstart guide to debug workflows"
 toc: true
 tag: developers
 category: "Workflow"
+weight: 7
 menus: 
     quickstartworkflow:
         icon: fa fa-link
