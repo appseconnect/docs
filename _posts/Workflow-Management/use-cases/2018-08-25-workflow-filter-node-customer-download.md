@@ -4,11 +4,11 @@ toc: true
 tag: 
     - developers
     - usecases
-category: "Workflow"
+category: "Workflow-Management"   
 menus: 
-    usedcases:
+    workflowusecases:
         icon: fa fa-link
-        title: "Filter data in Workflow" 
+        title: "Filter data use in Workflow" 
         identifier: usedcases-workflow with filter
 ---
 
@@ -29,13 +29,13 @@ Organization Creation & Connection Creation
 ### Basic Flow
 The user will execute the flow as given below.
 
-Step 1 to 11 is similar to the execution flow of [basic workflow customer download] (insert link)
+Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow-management/basic-workflow-customer-download/)
 
 12. The user will now login/signup to Eccomerce (Shopify - App 1) and add customer 
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![Customer-DownloadFilter](media/Customer-DownloadFilter.png)
+![Customer-DownloadFilter](/staticfiles/workflow-management/media/Customer-DownloadFilter.png)
 
 14. The user will click on RUN button to run the workflow.
 
@@ -49,7 +49,7 @@ The user can now see that the sales order, delivery to invoice gneration in avai
 
 ### Exception courses 
 The user will get resync bucket error log in the agent and in the workflow section also, if the sales order
-    sync is failure.       
+sync is failure.       
 
 ### Frequency of use
 The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.

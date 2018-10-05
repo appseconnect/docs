@@ -358,17 +358,17 @@ var idx = lunr(function () {
     idx.add({
       title: " Workflow execution with data filteration",
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
-      categories: ["Workflow"],
+      categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
       id: 38
     });
     
   
     idx.add({
-      title: "Quickstart guide to your first workflow",
-      excerpt: "• Use Case Name - Workflow showing task configuration with splitter rule • Brief Description – This workflow enables the...",
-      categories: ["Workflow"],
-      tags: ["developers"],
+      title: "Workflow creation & execution wth filter data",
+      excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
+      categories: ["Workflow-Management"],
+      tags: ["developers","usecases"],
       id: 39
     });
     
@@ -1014,7 +1014,7 @@ var store = [
       
       {
         "title": " Workflow execution with data filteration",
-        "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
+        "url": "http://localhost:4000/workflow-management/workflow-filter-node-customer-download/",
         "excerpt": "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
         "teaser":
           
@@ -1024,9 +1024,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guide to your first workflow",
-        "url": "http://localhost:4000/workflow/process-to-configure-customer-with-splitter/",
-        "excerpt": "• Use Case Name - Workflow showing task configuration with splitter rule • Brief Description – This workflow enables the...",
+        "title": "Workflow creation & execution wth filter data",
+        "url": "http://localhost:4000/workflow-management/process-to-configure-customer-with-splitter/",
+        "excerpt": "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
