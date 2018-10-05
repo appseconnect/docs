@@ -16,7 +16,7 @@ var idx = lunr(function () {
     idx.add({
       title: "What is an Adapter",
       excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-      categories: ["Developing Adapter for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 0
     });
@@ -25,7 +25,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to develop an Adapter",
       excerpt: "\n",
-      categories: ["Developing Adapter for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 1
     });
@@ -34,7 +34,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to test an Adapter",
       excerpt: "\n",
-      categories: ["Developing Adapter for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers,reseller"],
       id: 2
     });
@@ -43,7 +43,7 @@ var idx = lunr(function () {
     idx.add({
       title: "What is an Resource",
       excerpt: "\n",
-      categories: ["Developing Resources for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 3
     });
@@ -52,7 +52,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to develop an Resource",
       excerpt: "\n",
-      categories: ["Developing Resources for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 4
     });
@@ -61,7 +61,7 @@ var idx = lunr(function () {
     idx.add({
       title: "How to test an Resource",
       excerpt: "\n",
-      categories: ["Developing Resources for APPSeCONNECT"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 5
     });
@@ -115,7 +115,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Quickstart guides to create Workflow",
       excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers"],
       id: 11
     });
@@ -212,38 +212,29 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Basic Workflow for Customer Downloading",
-      excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
-      categories: ["Workflow"],
-      tags: ["developers","usecases"],
-      id: 22
-    });
-    
-  
-    idx.add({
       title: "DELAY Node",
       excerpt: "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 23
+      id: 22
     });
     
   
     idx.add({
       title: "Workflow for adding sales order",
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
-      id: 24
+      id: 23
     });
     
   
     idx.add({
       title: "Workflow for product upload and stock sync",
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
-      id: 25
+      id: 24
     });
     
   
@@ -252,7 +243,7 @@ var idx = lunr(function () {
       excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 26
+      id: 25
     });
     
   
@@ -261,7 +252,7 @@ var idx = lunr(function () {
       excerpt: "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 27
+      id: 26
     });
     
   
@@ -270,7 +261,7 @@ var idx = lunr(function () {
       excerpt: "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 28
+      id: 27
     });
     
   
@@ -279,7 +270,7 @@ var idx = lunr(function () {
       excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 29
+      id: 28
     });
     
   
@@ -288,7 +279,7 @@ var idx = lunr(function () {
       excerpt: "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 30
+      id: 29
     });
     
   
@@ -297,7 +288,7 @@ var idx = lunr(function () {
       excerpt: "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 31
+      id: 30
     });
     
   
@@ -306,16 +297,16 @@ var idx = lunr(function () {
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 32
+      id: 31
     });
     
   
     idx.add({
       title: "Delay execution workflow",
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
-      categories: ["Workflow-Management"],
+      categories: ["workflow"],
       tags: ["developers","usecases"],
-      id: 33
+      id: 32
     });
     
   
@@ -324,7 +315,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 34
+      id: 33
     });
     
   
@@ -333,7 +324,7 @@ var idx = lunr(function () {
       excerpt: "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 35
+      id: 34
     });
     
   
@@ -342,7 +333,7 @@ var idx = lunr(function () {
       excerpt: "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 36
+      id: 35
     });
     
   
@@ -351,7 +342,7 @@ var idx = lunr(function () {
       excerpt: "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 37
+      id: 36
     });
     
   
@@ -360,43 +351,43 @@ var idx = lunr(function () {
       excerpt: "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 38
+      id: 37
     });
     
   
     idx.add({
       title: " Workflow execution with data filteration",
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 39
+      id: 38
     });
     
   
     idx.add({
       title: "Workflow creation & execution with splitter",
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 40
+      id: 39
     });
     
   
     idx.add({
       title: " Workflow execution with acknowledgement data",
       excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 41
+      id: 40
     });
     
   
     idx.add({
       title: "Workflow showing salescycle with post and post task inputs",
       excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 42
+      id: 41
     });
     
   
@@ -405,7 +396,7 @@ var idx = lunr(function () {
       excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 43
+      id: 42
     });
     
   
@@ -414,7 +405,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 44
+      id: 43
     });
     
   
@@ -423,7 +414,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 45
+      id: 44
     });
     
   
@@ -432,7 +423,7 @@ var idx = lunr(function () {
       excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 46
+      id: 45
     });
     
   
@@ -441,7 +432,7 @@ var idx = lunr(function () {
       excerpt: "APIs are tje central to any application development process. As data forms an important part of any business it is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 47
+      id: 46
     });
     
   
@@ -450,7 +441,7 @@ var idx = lunr(function () {
       excerpt: "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 48
+      id: 47
     });
     
   
@@ -459,7 +450,7 @@ var idx = lunr(function () {
       excerpt: "APIs is required when you don’t have an existing API for your data source. To implement new APIs, you might...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 49
+      id: 48
     });
     
   
@@ -468,7 +459,7 @@ var idx = lunr(function () {
       excerpt: "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 50
+      id: 49
     });
     
   
@@ -477,7 +468,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 51
+      id: 50
     });
     
   
@@ -486,7 +477,7 @@ var idx = lunr(function () {
       excerpt: "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 52
+      id: 51
     });
     
   
@@ -495,7 +486,7 @@ var idx = lunr(function () {
       excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 53
+      id: 52
     });
     
   
@@ -504,7 +495,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 54
+      id: 53
     });
     
   
@@ -513,7 +504,7 @@ var idx = lunr(function () {
       excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 55
+      id: 54
     });
     
   
@@ -522,7 +513,7 @@ var idx = lunr(function () {
       excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 56
+      id: 55
     });
     
   
@@ -531,7 +522,7 @@ var idx = lunr(function () {
       excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 57
+      id: 56
     });
     
   
@@ -540,7 +531,7 @@ var idx = lunr(function () {
       excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 58
+      id: 57
     });
     
   
@@ -549,7 +540,7 @@ var idx = lunr(function () {
       excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 59
+      id: 58
     });
     
   
@@ -558,7 +549,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 60
+      id: 59
     });
     
   
@@ -567,7 +558,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 61
+      id: 60
     });
     
   
@@ -576,7 +567,7 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 62
+      id: 61
     });
     
   
@@ -585,6 +576,15 @@ var idx = lunr(function () {
       excerpt: "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
       categories: ["API-Management"],
       tags: ["developers"],
+      id: 62
+    });
+    
+  
+    idx.add({
+      title: null,
+      excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
+      categories: [],
+      tags: null,
       id: 63
     });
     
@@ -605,7 +605,7 @@ var store = [
       
       {
         "title": "What is an Adapter",
-        "url": "http://localhost:4000/developing%20adapter%20for%20appseconnect/What-is-an-Adapter/",
+        "url": "http://localhost:4000/sdk/What-is-an-Adapter/",
         "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
         "teaser":
           
@@ -616,7 +616,7 @@ var store = [
       
       {
         "title": "How to develop an Adapter",
-        "url": "http://localhost:4000/developing%20adapter%20for%20appseconnect/How-to-develop-an-Adapter/",
+        "url": "http://localhost:4000/sdk/How-to-develop-an-Adapter/",
         "excerpt": "\n",
         "teaser":
           
@@ -627,7 +627,7 @@ var store = [
       
       {
         "title": "How to test an Adapter",
-        "url": "http://localhost:4000/developing%20adapter%20for%20appseconnect/How-to-test-an-Adapter/",
+        "url": "http://localhost:4000/sdk/How-to-test-an-Adapter/",
         "excerpt": "\n",
         "teaser":
           
@@ -638,7 +638,7 @@ var store = [
       
       {
         "title": "What is an Resource",
-        "url": "http://localhost:4000/developing%20resources%20for%20appseconnect/What-is-a-Resourse/",
+        "url": "http://localhost:4000/sdk/What-is-a-Resourse/",
         "excerpt": "\n",
         "teaser":
           
@@ -649,7 +649,7 @@ var store = [
       
       {
         "title": "How to develop an Resource",
-        "url": "http://localhost:4000/developing%20resources%20for%20appseconnect/How-to-develop-an-Resourse/",
+        "url": "http://localhost:4000/sdk/How-to-develop-an-Resourse/",
         "excerpt": "\n",
         "teaser":
           
@@ -660,7 +660,7 @@ var store = [
       
       {
         "title": "How to test an Resource",
-        "url": "http://localhost:4000/developing%20resources%20for%20appseconnect/How-to-test-an-Resourse/",
+        "url": "http://localhost:4000/sdk/How-to-test-an-Resourse/",
         "excerpt": "\n",
         "teaser":
           
@@ -726,7 +726,7 @@ var store = [
       
       {
         "title": "Quickstart guides to create Workflow",
-        "url": "http://localhost:4000/workflow-management/quickstart-guides-to-workflow-management/",
+        "url": "http://localhost:4000/workflow/quickstart-guides-to-workflow-management/",
         "excerpt": "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
           
@@ -846,17 +846,6 @@ var store = [
     
       
       {
-        "title": "Basic Workflow for Customer Downloading",
-        "url": "http://localhost:4000/workflow/basic-workflow-customer-download/",
-        "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
-        "teaser":
-          
-            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "DELAY Node",
         "url": "http://localhost:4000/workflow/working-with-delay/",
         "excerpt": "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
@@ -869,7 +858,7 @@ var store = [
       
       {
         "title": "Workflow for adding sales order",
-        "url": "http://localhost:4000/workflow-management/workflow-creation-for-add-salesorder/",
+        "url": "http://localhost:4000/workflow/workflow-creation-for-add-salesorder/",
         "excerpt": "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
         "teaser":
           
@@ -880,7 +869,7 @@ var store = [
       
       {
         "title": "Workflow for product upload and stock sync",
-        "url": "http://localhost:4000/workflow-management/workflow-showing-product-upload-with-stock-sync/",
+        "url": "http://localhost:4000/workflow/workflow-showing-product-upload-with-stock-sync/",
         "excerpt": "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
         "teaser":
           
@@ -968,7 +957,7 @@ var store = [
       
       {
         "title": "Delay execution workflow",
-        "url": "http://localhost:4000/workflow-management/delay-execution-in-workflow/",
+        "url": "http://localhost:4000/workflow/delay-execution-in-workflow/",
         "excerpt": "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
         "teaser":
           
@@ -1034,7 +1023,7 @@ var store = [
       
       {
         "title": " Workflow execution with data filteration",
-        "url": "http://localhost:4000/workflow-management/workflow-filter-node-customer-download/",
+        "url": "http://localhost:4000/workflow/workflow-filter-node-customer-download/",
         "excerpt": "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
         "teaser":
           
@@ -1045,7 +1034,7 @@ var store = [
       
       {
         "title": "Workflow creation & execution with splitter",
-        "url": "http://localhost:4000/workflow-management/process-to-configure-customer-with-splitter/",
+        "url": "http://localhost:4000/workflow/process-to-configure-customer-with-splitter/",
         "excerpt": "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
         "teaser":
           
@@ -1056,7 +1045,7 @@ var store = [
       
       {
         "title": " Workflow execution with acknowledgement data",
-        "url": "http://localhost:4000/workflow-management/process-to-configure-a-task-with-acknowledgement/",
+        "url": "http://localhost:4000/workflow/process-to-configure-a-task-with-acknowledgement/",
         "excerpt": "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
         "teaser":
           
@@ -1067,7 +1056,7 @@ var store = [
       
       {
         "title": "Workflow showing salescycle with post and post task inputs",
-        "url": "http://localhost:4000/workflow-management/workflow-showing-salescycle-with-post-and-post-taskinput/",
+        "url": "http://localhost:4000/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/",
         "excerpt": "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
         "teaser":
           
@@ -1300,6 +1289,17 @@ var store = [
         "title": "Deploy and publish APIs to different environments",
         "url": "http://localhost:4000/api-management/deployments-and-environments/",
         "excerpt": "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
+        "teaser":
+          
+            "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": null,
+        "url": "http://localhost:4000/2018-08-22-basic-workflow-customer-download/",
+        "excerpt": "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
