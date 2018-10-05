@@ -1,0 +1,1258 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.8.0 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Important Terminologies - APPSeCONNECT Product Docs</title>
+
+
+
+
+<meta name="description" content="This article demonstrates the important terminologies that you need to consider while using our API management system.">
+
+
+
+
+<meta name="author" content="Team APPSeCONNECT">
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="APPSeCONNECT Product Docs">
+<meta property="og:title" content="Important Terminologies">
+
+
+  <link rel="canonical" href="http://localhost:4000/api-management/Terminologies/">
+  <meta property="og:url" content="http://localhost:4000/api-management/Terminologies/">
+
+
+
+  <meta property="og:description" content="This article demonstrates the important terminologies that you need to consider while using our API management system.">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2018-09-15T00:00:00+05:30">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "APPSeCONNECT",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="feed.xml" type="application/atom+xml" rel="alternate" title="APPSeCONNECT Product Docs Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- end custom head snippets -->
+<link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/aos.css" />
+<link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/assets/js/plugins/jstree/dist/themes/default-dark/style.min.css"/>
+<link type="text/css" rel="stylesheet" href="/assets/js/plugins/jstree/dist/themes/default/style.min.css" />
+</head>
+
+<body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+    <div class="initial-content">
+        
+
+
+  
+    
+
+
+
+
+<!--<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  
+  
+  
+    
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <span class="sep">/</span>
+    
+    
+      
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="http://localhost:4000/api-management" itemprop="item"><span itemprop="name">Api management</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <span class="sep">/</span>
+    
+  
+    
+    
+      <li class="current">Important Terminologies</li>
+    
+  
+</ol>-->
+
+<!--div class="nav">
+    <div class="navInn">
+        <div id='cssmenu'>
+            <ul>
+                <li class="active"><a href='#'><span>Home</span></a></li>
+                <li><a href='#'><span>Customers</span></a></li>
+                <li><a href='#'><span>Developers</span></a></li>
+                <li><a href='#'><span>Implementers</span></a></li>
+                <li><a href='#'><span>Reseller</span></a></li>
+                <li><a href='#'><span>Courses</span></a></li>
+                <li class="last"><a href='#'><span>Video</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div-->
+
+  
+
+
+<!-- Start : header -->
+<div class="headerPan">
+    <div class="headerInn">
+        <div class="headerLogo"><a class="site-title" href="http://localhost:4000/"><img src="/assets/images/logo.png"></a></div>
+        <div id='cssmenu'>
+            <ul>
+                <li>
+                    <a href="#" title="Product"><span>Product</span></a>
+                    <ul>
+                        <li><a href="https://www.appseconnect.com/overview/" title="Overview">Overview</a></li>
+                        <li><a href="https://www.appseconnect.com/integrations/" title="Integrations">Integrations</a></li>
+                        <li><a href="https://www.appseconnect.com/features/" title="Features">Features</a></li>
+                        <li><a href="https://www.appseconnect.com/technology/" title="Technology">Technology</a></li>
+                        <li><a href="https://www.appseconnect.com/workflow/" title="Visual Workflow">Visual Workflow</a></li>
+                        <li><a href="https://www.appseconnect.com/release-notes/" title="Release Notes">Release Notes</a></li>
+                        <li><a href="https://www.appseconnect.com/product-roadmap/" title="Roadmap">Roadmap</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" title="Solutions"><span>Solutions</span></a>
+                    <ul>
+                        <li><a href="https://www.appseconnect.com/integrations/" title="Integrations">Integrations</a></li>
+                        <li><a href="https://www.appseconnect.com/data-migration/" title="Data Migration">Data Migration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" title="Resources"><span> Resources</span></a>
+                    <ul>
+                        <li><a href="https://www.appseconnect.com/blog/" title="Blogs">Blogs</a></li>
+                        <li><a href="https://www.appseconnect.com/webinars/" title="Webinars">Webinars</a></li>
+                        <li><a href="https://www.appseconnect.com/video-gallery/" title="Videos">Videos</a></li>
+                        <li><a href="https://www.appseconnect.com/ebooks/" title=“Ebook”>Ebook</a></li>
+                        <li><a href="https://www.appseconnect.com/events" title=“Events”>Event</a></li>
+                        <li><a href="https://www.appseconnect.com/faqs/" title=“FAQ”>FAQ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://www.appseconnect.com/about-us" title="Company"><span>Company</span></a>
+                    <ul>
+                        <li><a href="https://www.appseconnect.com/about-us/" title="About">About</a></li>
+                        <li><a href="https://www.appseconnect.com/team/" title=“Team”>Team</a></li>
+                        <li><a href="https://www.appseconnect.com/advisory-board/" title="Advisory">Advisory</a></li>
+                        <li><a href="https://www.appseconnect.com/affiliations/" title=“Affiliations”>Affiliations</a></li>
+                        <li><a href="https://www.appseconnect.com/press/" title=“Press”>Press</a></li>
+                        <li><a href="https://www.appseconnect.com/awards/" title=“Awards”>Awards</a></li>
+                        <li><a href="https://www.appseconnect.com/gdpr/" title=“GDPR”>GDPR</a></li>
+                        <li><a href="https://insync.co.in/careers/" title=“Careers”>Careers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=“#” title="Customers"><span> Customers</span></a>
+                    <ul>
+                        <li><a href="https://www.appseconnect.com/case-studies/" title="Case Studies">Case Studies</a></li>
+                        <li><a href="https://www.appseconnect.com/testimonials/" title=“Testimonials”>Testimonials</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=“https://www.appseconnect.com/partners/” title="Partners"><span> Partners</span></a>
+                    <ul>
+                        <li><a href="https://www.appseconnect.com/partners/" title="Become a Partner">Become a Partne</a></li>
+                        <li><a href="https://www.appseconnect.com/find-a-partner/" title=“Find a Partner”>Find a Partner</a></li>
+                        <li><a href="https://www.appseconnect.com/partners-lead-registration/" title=“Register Partner Lead”>Register Partner Lead</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.appseconnect.com/contact" title="Contact"><span>Contact</span></a></li>
+                <li><a href="https://www.appseconnect.com/free-trial/" title="Free Trail"><span>Free Trial</span></a></li>
+            </ul>
+        </div>
+        <br class="spacer" />
+    </div>
+</div>
+
+<!-- End : header -->
+<div class="progress progress-striped active globalprogressCustom" id="globalprogress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+        <span class="sr-only"> 40% Complete (success) </span>
+    </div>
+</div>
+<div id="main" role="main">
+    
+
+
+
+<div class="sidebar sticky">
+    <div class="LeftSearchBar">
+        
+        <button class="search__toggle" type="button">
+            Filter by title
+        </button>
+        
+    </div>
+    <nav class="nav__list leftSideBar" id="sidebarMenu">
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-home"}'>
+        <a onclick="selectTab('/appseconnect/home/');" title="Go to Home">Home</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-play"}'>
+        <a onclick="selectTab('/appseconnect/getting-started/');" title="Go to Getting Started">Getting Started</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/workflow/overview/');" title="Go to Workflow">Workflow</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/workflow/architecture-design-runtime/');" title="Go to Architecture">Architecture</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/workflow/quickstart-guides-to-workflow-management/');" title="Go to Quickstart">Quickstart</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/attribute-mapping-workflow/');" title="Go to Attribute Mapping of workflow">Attribute Mapping of workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/debugging-a-workflow/');" title="Go to Debugging workflows">Debugging workflows</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/steps-to-create-your-first-workflow/');" title="Go to Steps to create your first workflow">Steps to create your first workflow</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/workflow-nodes-and-links/');" title="Go to Nodes and Links">Nodes and Links</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-get/');" title="Go to Working with Get">Working with Get</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-process/');" title="Go to Working with Process">Working with Process</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-post/');" title="Go to Working with Post">Working with Post</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-filter/');" title="Go to Working with Filter">Working with Filter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-delay/');" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-halt-resume/');" title="Go to Working with Halt/Resume">Working with Halt/Resume</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-loops/');" title="Go to Working with Loops">Working with Loops</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-merger/');" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-rule/');" title="Go to Working with Rules">Working with Rules</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-sequencer/');" title="Go to Working with Sequencer">Working with Sequencer</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/working-with-splitter/');" title="Go to Working with Splitter">Working with Splitter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/generating-actions/');" title="Go to Actions">Actions</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/generating-notification-support-ticket/');" title="Go to Support Tickets">Support Tickets</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/generating-notification-webhooks/');" title="Go to Webhooks">Webhooks</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/generating-storage-action/');" title="Go to Storage">Storage</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/generating-notification-emails/');" title="Go to Emails">Emails</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/deploying-and-executing/');" title="Go to Deploying and Executing">Deploying and Executing</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/workflow/faqs/');" title="Go to FAQs">FAQs</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/common-use-cases-on-workflow-management/');" title="Go to Use cases">Use cases</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/workflow-creation-for-add-salesorder/');" title="Go to  Workflow for adding sales order"> Workflow for adding sales order</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/workflow-showing-product-upload-with-stock-sync/');" title="Go to Workflow for product upload and stock sync">Workflow for product upload and stock sync</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/delay-execution-in-workflow/');" title="Go to Workflow  with delay execution filter">Workflow  with delay execution filter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/workflow-filter-node-customer-download/');" title="Go to Filter data use in Workflow">Filter data use in Workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/process-to-configure-customer-with-splitter/');" title="Go to Use cases of splitter">Use cases of splitter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/process-to-configure-a-task-with-acknowledgement/');" title="Go to Workflow execution with acknowledgement data">Workflow execution with acknowledgement data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/');" title="Go to Workflow showing salescycle with post and post task inputs">Workflow showing salescycle with post and post task inputs</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-link"}'>
+        <a onclick="selectTab('/workflow/basic-workflow-customer-download/');" title="Go to Basic Workflow for Customer Downloading">Basic Workflow for Customer Downloading</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/workflow/Terminologies/');" title="Go to Terminology">Terminology</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a onclick="selectTab('/api-management/overview/');" title="Go to API Management">API Management</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/architecture-design-runtime/');" title="Go to Architecture Overview">Architecture Overview</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/quickstart-guides-to-api-management/');" title="Go to Quickstart">Quickstart</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/');" title="Go to Create Webhook endpoint">Create Webhook endpoint</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/steps-to-create-proxy-endpoint/');" title="Go to Create Proxy endpoint">Create Proxy endpoint</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/common-use-cases-on-api-management/');" title="Go to Use cases">Use cases</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/create-api-connecting-to-api/');" title="Go to Wrap around existing API">Wrap around existing API</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/create-api-connecting-to-webhook/');" title="Go to Create webhook API">Create webhook API</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/create-api-using-custom-datasource/');" title="Go to Connect to OnPremise Data source">Connect to OnPremise Data source</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a onclick="selectTab('/api-management/policies/');" title="Go to Policies">Policies</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a onclick="selectTab('/api-management/ip-restrict/');" title="Go to IP-Restrict Policy">IP-Restrict Policy</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a onclick="selectTab('/api-management/validate-http-header/');" title="Go to Invalidate Http Headers">Invalidate Http Headers</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a onclick="selectTab('/api-management/compression-apply/');" title="Go to Apply Compression Policy">Apply Compression Policy</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a onclick="selectTab('/api-management/response-content-format/');" title="Go to Response Content Format Transform Policy">Response Content Format Transform Policy</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
+        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Quota-Per-Key-Policy">Quota-Per-Key-Policy</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/configure-appseconnect-for-apis/');" title="Go to How to guides">How to guides</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/connecting-to-a-data-source/');" title="Go to Connecting to external data source">Connecting to external data source</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/deployments-and-environments/');" title="Go to Deploy to environments">Deploy to environments</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/choosing-backend-apps/');" title="Go to Configure Apps">Configure Apps</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/Terminologies/');" title="Go to Terminology">Terminology</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+</ul>
+
+    </nav>
+</div>
+
+
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="headline" content="Important Terminologies">
+        <meta itemprop="description" content="This article demonstrates the important terminologies that you need to consider while using our API management system.">
+        <meta itemprop="datePublished" content="September 15, 2018">
+        
+
+
+        <div class="breadcrumbs">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+                
+                
+                
+                
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="sep">/</li>
+                
+                
+                
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="http://localhost:4000/api-management" itemprop="item"><span itemprop="name">Api management</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="sep">/</li>
+                
+                
+                
+                
+                <li class="current">Important Terminologies</li>
+                
+                
+            </ol>
+        </div>
+
+
+        <div class="page__inner-wrap">
+            
+            <header>
+                <h1 class="page__title" itemprop="headline">Important Terminologies
+</h1>
+                
+                
+
+
+  
+  
+  
+
+  <div class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/developers" class="page__taxonomy-item" rel="tag">developers</a>
+    
+    </span>
+  </div>
+
+                
+                
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-15T00:00:00+05:30">September 15, 2018</time></p>
+                
+                
+                <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+                
+                
+            </header>
+            
+
+            <section class="page__content" itemprop="text">
+                
+                <aside class="sidebar__right">
+                    <nav class="toc">
+                        <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+                        
+                    </nav>
+                </aside>
+                
+                <p>This article demonstrates the important terminologies that you need to consider while using our API management system.</p>
+
+<ul>
+  <li><strong>Webhook API</strong> - Web hooks are special web based callback which allows the user to configure an endpoint for a particular resource, such that when there is an update to that resource, the data for that particular resource will be automatically called back to the API url. For APPSeCONNECT, Webhook API will provide an unique URL which can be tracked separately for a particular resource whcih can be configured for an application.</li>
+  <li><strong>Proxy APIs</strong> - Proxy APIs are those which just proxies an existing API to the external world through the help of APPSeCONNECT platform. Even though the APP might be providing an endpoint which can be called directly, organziations prefer to put is behind a firewall using a separate layer which help them to secure and maintain a proper standard for the data coming from the API. Proxy APIs on APPSeCONNECT helps to achieve these goals for a particular organization.</li>
+  <li><strong>Flow APIs</strong> - Flow APIs are full fledged API which allows transformation of data before an API data is returned. A flow API will allow you to maintain payload, soft check the data before it is actually getting transmitted to the external world. A flow API can be visually configured and can also return data from multiple endpoints.</li>
+  <li><strong>Backend APPs</strong> - Backend APPs for APPSeCONNECT are those which can connect to a backend data source. In case of APPSeCONNECT, we ask the customer to provide details of all the apps which might need to be included as data source for the APIs. The backend APPs can either be hosted in cloud (if the application provides a web based API endpoints) or can be configured on premise (for on premise data sources). We also provide pre-packaged application templates that has readymade interfacing to the APIs.</li>
+  <li><strong>Authentication Server</strong> - As the name suggests, APPSeCONNECT redirects all of the requests to a particular authentication server to validate the authenticity of a request. The authentication server is responsible of keeping track of each of the calls, to validate a user and also return error messages appropriately.</li>
+  <li><strong>API Versions</strong> - API versioning is a concept which allows the same API to be modified or changed even after it is deployed to production. As an API endpoint is critical to be maintained, the API URL needs to be running even though a new change is performed on the API stack. APPSeCONNECT provides versioning of APIs which lets the developer create a staging API before it is deployed to public.</li>
+  <li><strong>Frontend Configuration</strong> - Frontend of an API provides face of the API. It provides the name of the API, its description, the Suffix URL, or even the operation type and its description. You can also mark an API to be Obsolete or Release an API from Frontend configuration.</li>
+  <li><strong>Policy</strong> - APPSeCONNECT provides a set of predefined policies which allows the implementers to apply them on a particular endpoint. A policy is a filter to an HTTP Pipeline which allows to perform certain action on the request and either respond or pass through it correctly.</li>
+  <li><strong>Swagger Endpoint</strong> - To test a particular API, Swagger endpoint is helpful. Swagger gives a API testing environment which you can make use to generate documentation for the whole API stack.</li>
+  <li><strong>Inbound</strong> - Inbound is mainly deals with the policies which are executed before the backend action is executed.</li>
+  <li><strong>Outbound</strong> - Outbound policies are applied after the backend action is executed and output response is received to the API stack.</li>
+  <li><strong>Adapter</strong> - To communicate to the external application, APPSeCONNECT requires an adpater which changes the language in which APPSeCONNECT understands the data to something which is understandable to the application. Adapter is developed using the <a href="https://appseconnect.com/sdk">SDK</a> supported by APPSeCONNECT.</li>
+  <li><strong>Protocol</strong> - A protocol or rule is a common set of transport pattern which is associated to an application. An adapter generally communicates with an application using the protocol defined by the application itself.</li>
+  <li><strong>Response setup</strong> - Just like frontend setup, the Response setup is also an important aspect of each API. This section allows to define how the data needs to be returned from the API.</li>
+</ul>
+
+<p>There are a lot of other commonly used terms which you can find from the <a href="/docs/faq">reference section</a>.</p>
+
+                
+            </section>
+
+            <footer class="page__meta">
+                
+                
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-15T00:00:00+05:30">September 15, 2018</time></div>
+                
+                
+  
+
+
+  
+  
+  
+
+  <div class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/developers" class="page__taxonomy-item" rel="tag">developers</a>
+    
+    </span>
+  </div>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/#api-management" class="page__taxonomy-item" rel="tag">API-Management</a>
+    
+    </span>
+  </p>
+
+
+
+            </footer>
+
+            <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Important+Terminologies%20http%3A%2F%2Flocalhost%3A4000%2Fapi-management%2FTerminologies%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fapi-management%2FTerminologies%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fapi-management%2FTerminologies%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fapi-management%2FTerminologies%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+            
+
+
+
+        </div>
+
+
+
+        
+        <div class="section-see-also">
+            <h2 class="page__see-also">See Also</h2>
+            <div class="page-grid-seealso">
+                <div class="sectionbody">
+                    <div class="ulist">
+                        <ul>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api-management/deployments-and-environments/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Deploy and publish APIs to different environments
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api-management/connecting-to-a-data-source/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Connecting an API to any data source
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api-management/choosing-backend-apps/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Choose Applications from catalog
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="http://localhost:4000/api-management/configure-appseconnect-for-apis/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Configuring APPSeCONNECT for API Hosting
+                                </a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        
+    </article>
+</div>
+
+
+    </div>
+
+    
+    <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <a href="#" title="close" class="closeSearch"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <div class="searchTopGap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." /></div>
+  <div id="searchFound" class="searchDefaultBox">
+      <img src="/assets/images/search-img.png" alt="" />
+      <h3>Search your Term...</h3>
+      <p>
+          Donec vulputate urna at tellus eleifend, at ornare mi porta. Curabitur et odio gravida,
+          commodo felis eget, consectetur eros. Nullam venenatis lacus placerat sagittis pharetra.
+      </p>
+  </div>
+  <div id="searchNotFound" class="searchDefaultBox hideBox">
+      <img src="/assets/images/search-not-found.png" alt="" />
+      <h3>No Results</h3>
+      <p>We Searched far and wide and couldn't<br /> find any documents matching your search.</p>
+  </div>
+  <div id="results" class="results"></div>
+</div>
+    </div>
+    
+    
+
+    <!-- Start : Footer -->
+    <div class="resourcePan">
+    <div class="resourceInn">
+        <div class="resourceLeft">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://www.appseconnect.com/video-gallery/" title="Video Learning">Video Learning</a></li>
+                <li><a href="https://www.appseconnect.com/webinars/" title="Webinars">Webinars</a></li>
+                <li><a href="https://www.appseconnect.com/ebooks/" title="E-Books & Guides">E-Books & Guides</a></li>
+                <li><a href="https://www.appseconnect.com/blog/" title="Blog">Blog</a></li>
+                <li><a href="https://www.appseconnect.com/faqs" title="FAQ">FAQ</a></li>
+                <li><a href="https://www.appseconnect.com/contact" title="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="resourceRight">
+            <h3>Sign up for our newsletter</h3>
+            <div class="subscribeForm">
+                <form action="https://insync.us1.list-manage.com/subscribe/post?u=34d5748bf96fc9ddc74dd62eb&amp;id=8c6022bb95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" style="background:#272727" target="_blank" novalidate="">
+                    <input value="Enter your email" class="subscribeInput" type="email" name="EMAIL" id="mce-EMAIL">
+                    <input type="submit" value="Subscribe" class="subscribeButton" name="subscribe" id="mc-embedded-subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="docFooterBottom">
+    <div class="docFooterBottomInn">
+        <div class="docFooterBottomTop"><p>APPSeCONNECT is a smart and robust Integration Platform as a Service (iPaaS) that seamlessly integrates a host of business applications to one another to streamline operations and facilitate the free-flow of data across various platforms. Advancing in the industry of iPaaS, APPSeCONNECT proves to be a best-in-the-class platform that easily connects systems to collect data under the same roof.</p></div>
+        <div class="copyRightPan">
+            <div class="copyRightLeft">
+                <p>Copyright 2018 by InSync Tech-Fin Solutions Ltd. All rights reserved. <a href="https://www.appseconnect.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></p>
+            </div>
+            <div class="copyRightRight">
+                <ul>
+                    <li><a href="https://www.facebook.com/InSyncSolutions" title="facebook" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="http://www.linkedin.com/company/insync" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/Appseconnect" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/+InsyncCoIn/posts" title="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="http://www.youtube.com/insyncsolutions" title="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://in.pinterest.com/appseconnect/" title="pinterest" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- End : Footer -->
+    
+    <script src="/assets/js/plugins/jquery.min.js"></script>
+<script src="/assets/js/plugins/ajaxify/ajaxify.min.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/aos.js"></script>
+<script src="/assets/js/plugins/jstree/dist/jstree.js"></script>
+<script type="text/javascript">
+    var nav = $('.sidebar__right');
+    var lastId;
+    var tocMenu = $(".toc__menu");
+
+    // All list items
+    var menuItems = tocMenu.find("a");
+    // Anchors corresponding to menu items
+    var scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+    $("#sidebarMenu").on('changed.jstree', function (e, data) {
+        if (data.action == 'select_node') {
+            location.href = data.node.a_attr.href;
+        }
+    }).jstree();
+    var onScrollCallback = function () {
+        debugger;
+        // Get container scroll position
+        var fromTop = $(this).scrollTop();
+
+        if (fromTop > 136) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        }
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+                .removeClass("active");
+
+            var selectedMenu = menuItems.filter("[href*='" + id + "']");
+
+            selectedMenu.addClass("active");
+        }
+
+    }; 
+    $(window).scroll(onScrollCallback);
+
+    $(document).ready(function () {
+
+        $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
+        $('#cssmenu #menu-button').on('click', function () {
+            var menu = $(this).next('ul');
+            if (menu.hasClass('open')) {
+                menu.removeClass('open');
+            }
+            else {
+                menu.addClass('open');
+            }
+        });
+    });
+    window.onpopstate = function (e) {
+        if (e.srcElement.location.hash.startsWith('#')) {
+            return false;
+        }
+        if (e.state == null)
+            return;
+        selectTab(e.state.url);
+    };
+    var currentRequest;
+    var intervalObjects = {};
+    function ajaxCall(item, url, callback, errorcallback, options) {
+        var global = false;
+        var cacheTransaction = true;
+        var progressState = 10;
+        var blockui;
+        if (typeof options !== "undefined") {
+            if (options.globalSettings) {
+                global = options.globalSettings;
+                blockui = options.blockui;
+            }
+            if (options.ajaxCache !== "undefined") {
+                cacheTransaction = options.ajaxCache;
+            }
+        }
+        if (currentRequest && currentRequest.readyState != 4) {
+            currentRequest.abort();
+            $('#globalprogress > div.progress-bar').width('100' + '%');
+        }
+        currentRequest = $.ajax({
+            url: url,
+            cache: cacheTransaction,
+            global: global,
+            xhr: function () {
+                debugger;
+                var xhr = new window.XMLHttpRequest();
+                $('#globalprogress > div.progress-bar').show();
+                if (intervalObjects && intervalObjects.globalProgressBar) {
+                    clearInterval(intervalObjects.globalProgressBar);
+                    $('#globalprogress > div.progress-bar').width(0 + "%");
+                }
+
+                var promise = setInterval(function () {
+                    if (progressState <= 60) {
+                        $('#globalprogress > div.progress-bar').show();
+                        $('#globalprogress > div.progress-bar').width(progressState + "%");
+                        progressState = progressState + 1;
+                    }
+                    return progressState;
+                }, 200);
+
+                intervalObjects["globalProgressBar"] = promise;
+
+
+                xhr.addEventListener("loadstart", function (e) {
+                    $('#globalprogress').show();
+                    $('#globalprogress > div.progress-bar').width(progressState + '%');
+                });
+
+                //Download progress
+                xhr.addEventListener("progress", function (evt) {
+                    var percentComplete;
+                    if (evt.lengthComputable) {
+                        percentComplete = (evt.loaded / evt.total) * 100;
+                        //Do something with download progress
+                        globalProgressBarHandler(percentComplete, promise);
+                    }
+                    else if (evt.total === 0) {  // Meaning Content Length is unknown to Client as Server is sending Zipped Response
+                        globalProgressBarHandler(100, promise);
+                    }
+                }, false);
+
+
+                return xhr;
+            },
+            success: function (data, s, xhr) {
+                if (callback) {
+                    callback(data, s, xhr);
+                }
+            },
+            error: function (request, textStatus, errorThrown) {
+                if (errorcallback) {
+                    errorcallback(request, textStatus, errorThrown);
+                } 
+            },
+            complete: function () {
+                $('#globalprogress > div.progress-bar').width(0 + "%");
+                $('#globalprogress > div.progress-bar').hide();
+            }
+        });
+    }
+    function globalProgressBarHandler(percentComplete, promise) {
+        if (percentComplete && percentComplete >= 60) {
+            $('#globalprogress > div.progress-bar').width(percentComplete + '%');
+        }
+        if (percentComplete == 100) {
+            clearInterval(promise); 
+        }
+    }
+    function selectTab(url) {
+        ajaxCall('.page', url, function (data, s, xhr) {
+            menuItems = tocMenu.find("a");
+            scrollItems = menuItems.map(function () {
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+            });
+            var title = $(data).find('title').html();
+            $('.page').html($(data).find('.page').html()); 
+            window.history.pushState({ url: url }, title, url);
+        }, function (request) {
+            $('.page').html(request.responseText);
+        });
+    }
+    function showMenu(o) {
+
+        $(o).nextUntil(".nav__sub-title").slideToggle();
+
+    }
+    $(".nav__sub-title").click(function () {
+        $(this).toggleClass("sidebaractive");
+    });
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
+
+  <script src="http://localhost:4000/assets/js/plugins/jquery.fitvids.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.greedy-navigation.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.magnific-popup.js"></script>
+  <script src="http://localhost:4000/assets/js/plugins/jquery.smooth-scroll.min.js"></script>
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+  <script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+  <script src="http://localhost:4000/assets/js/lunr-en.js"></script>
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/api-management/Terminologies/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/api-management/Terminologies"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://appseconnect-docs.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+</body>
+</html>
