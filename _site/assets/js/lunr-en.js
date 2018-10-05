@@ -115,7 +115,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Quickstart guides to create Workflow",
       excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
-      categories: ["workflow"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 11
     });
@@ -124,7 +124,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Steps to create your first workflow",
       excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 12
     });
@@ -142,7 +142,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Attribute Mapping of workflow",
       excerpt: "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 14
     });
@@ -160,7 +160,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Debugging workflows",
       excerpt: "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
-      categories: ["Workflow-Management"],
+      categories: ["Workflow"],
       tags: ["developers"],
       id: 16
     });
@@ -737,7 +737,7 @@ var store = [
       
       {
         "title": "Steps to create your first workflow",
-        "url": "http://localhost:4000/workflow-management/steps-to-create-your-first-workflow/",
+        "url": "http://localhost:4000/workflow/steps-to-create-your-first-workflow/",
         "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
         "teaser":
           
@@ -759,7 +759,7 @@ var store = [
       
       {
         "title": "Attribute Mapping of workflow",
-        "url": "http://localhost:4000/workflow-management/attribute-mapping-workflow/",
+        "url": "http://localhost:4000/workflow/attribute-mapping-workflow/",
         "excerpt": "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
         "teaser":
           
@@ -781,7 +781,7 @@ var store = [
       
       {
         "title": "Debugging workflows",
-        "url": "http://localhost:4000/workflow-management/debugging-a-workflow/",
+        "url": "http://localhost:4000/workflow/debugging-a-workflow/",
         "excerpt": "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
         "teaser":
           

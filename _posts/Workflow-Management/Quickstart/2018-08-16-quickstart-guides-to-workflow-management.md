@@ -2,7 +2,7 @@
 title: "Quickstart guides to create Workflow"
 toc: true
 tag: developers
-category: "workflow"
+category: "Workflow"
 weight: 5
 menus: 
     workflow: 
