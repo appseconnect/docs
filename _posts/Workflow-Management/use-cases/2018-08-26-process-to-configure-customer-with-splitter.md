@@ -1,5 +1,5 @@
 ---
-title: "Workflow creation & execution wth filter data"
+title: "Workflow creation & execution with splitter"
 toc: true
 tag: 
     - developers

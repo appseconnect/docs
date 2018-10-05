@@ -365,7 +365,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Workflow creation & execution wth filter data",
+      title: "Workflow creation & execution with splitter",
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
       categories: ["Workflow-Management"],
       tags: ["developers","usecases"],
@@ -1024,7 +1024,7 @@ var store = [
     
       
       {
-        "title": "Workflow creation & execution wth filter data",
+        "title": "Workflow creation & execution with splitter",
         "url": "http://localhost:4000/workflow-management/process-to-configure-customer-with-splitter/",
         "excerpt": "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
         "teaser":
