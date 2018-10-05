@@ -3,7 +3,6 @@ title: "Validate http headers policy"
 toc: true
 tag: developers
 category: "API-Management"
-author: "Soumya Ghosh"
 menus: 
     policies:
         icon: fa fa-cogs

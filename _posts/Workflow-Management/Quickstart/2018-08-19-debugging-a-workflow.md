@@ -1,14 +1,14 @@
 ﻿---
-title: "Quickstart guide to debug workflows"
+title: "Debugging workflows"
 toc: true
 tag: developers
-category: "Workflow"
-weight: 7
+category: "Workflow-Management"
+weight: 8
 menus: 
     quickstartworkflow:
         icon: fa fa-link
-        title: "Debugging" 
-        identifier: packagingworkflow
+        title: "Debugging workflows" 
+        identifier: quickstartfirstworkflow
 ---
 As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business need. In this article we will see how you can investigate the workflow by executing one or more nodes directly within the workflow and inspect the data being fetched or passed to the actions.
 

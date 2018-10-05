@@ -4,7 +4,11 @@ toc: true
 tag: 
     - developers
     - usecases
-category: "Workflow-Management"           
+<<<<<<< HEAD
+category: "Workflow"           
+=======
+category: "workflow"           
+>>>>>>> 862e0e2f4458bf6a4042f1de6a5386ed98fb4f49
 menus: 
     workflowusecases:
         icon: fa fa-link

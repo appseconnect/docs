@@ -20,8 +20,6 @@
             location.href = data.node.a_attr.href;
         }
     }).jstree();
-
-
     $(window).scroll(function () {
         // Get container scroll position
         var fromTop = $(this).scrollTop();
@@ -57,7 +55,6 @@
         
         $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
         $('#cssmenu #menu-button').on('click', function () {
-            debugger;
             var menu = $(this).next('ul');
             if (menu.hasClass('open')) {
                 menu.removeClass('open');
@@ -66,6 +63,8 @@
                 menu.addClass('open');
             }
         }); 
+
+        $("#main").ajaxify();
     });
     function showMenu(o) {
 
