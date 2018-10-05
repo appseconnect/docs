@@ -258,7 +258,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Working with Loops",
-      excerpt: "In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the other nodes that are...",
+      excerpt: "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 27
@@ -267,7 +267,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Merge Node",
-      excerpt: "This node is used to merge smaller data chunks into a single data packet. Like a SPLITTER node, it also...",
+      excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 28
@@ -276,7 +276,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Rule Node",
-      excerpt: "This node is used for decision making during workflow execution. A rule can be applied on a single chunk of...",
+      excerpt: "### What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 29
@@ -285,7 +285,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Sequencer Node",
-      excerpt: "This node is used to order elements by a certain attribute. This node can be applied to any collection of...",
+      excerpt: "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 30
@@ -894,7 +894,7 @@ var store = [
       {
         "title": "Working with Loops",
         "url": "http://localhost:4000/workflow/working-with-loops/",
-        "excerpt": "In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the other nodes that are...",
+        "excerpt": "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -905,7 +905,7 @@ var store = [
       {
         "title": "Merge Node",
         "url": "http://localhost:4000/workflow/working-with-merger/",
-        "excerpt": "This node is used to merge smaller data chunks into a single data packet. Like a SPLITTER node, it also...",
+        "excerpt": "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -916,7 +916,7 @@ var store = [
       {
         "title": "Rule Node",
         "url": "http://localhost:4000/workflow/working-with-rule/",
-        "excerpt": "This node is used for decision making during workflow execution. A rule can be applied on a single chunk of...",
+        "excerpt": "### What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
@@ -927,7 +927,7 @@ var store = [
       {
         "title": "Sequencer Node",
         "url": "http://localhost:4000/workflow/working-with-sequencer/",
-        "excerpt": "This node is used to order elements by a certain attribute. This node can be applied to any collection of...",
+        "excerpt": "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
         "teaser":
           
             "http://localhost:4000/assets/images/APPSeCONNECT-documentation.png"
