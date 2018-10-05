@@ -38,6 +38,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.1.1)
+      jekyll (>= 2.4)
     jekyll-data (1.0.0)
       jekyll (~> 3.3)
     jekyll-feed (0.11.0)
@@ -114,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8.3)
+  jekyll-archives
   jekyll-feed (~> 0.6)
   jekyll-gist
   jekyll-menus
@@ -127,4 +130,4 @@ DEPENDENCIES
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.16.4
+   1.16.5

@@ -10,6 +10,9 @@ var idx = lunr(function () {
 
   
   
+
+  
+  
     idx.add({
       title: "What is an Adapter",
       excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
@@ -510,6 +513,10 @@ var idx = lunr(function () {
 console.log( jQuery.type(idx) );
 
 var store = [
+  
+    
+    
+    
   
     
     

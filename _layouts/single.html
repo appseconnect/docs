@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: inner
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -13,6 +13,10 @@ layout: default
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
+
+<!-- Start : header -->
+{% include header-block.html %}
+<!-- End : header -->
 
 <div id="main" role="main">
     {% include sidebar.html %}
@@ -118,7 +122,7 @@ layout: default
                                 </a>
                             </li>
                             {% endfor %}
-                           
+
                         </ul>
                     </div>
                 </div>
@@ -133,5 +137,4 @@ layout: default
         {% endif %}
     </article>
 </div>
-
 
