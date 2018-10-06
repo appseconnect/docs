@@ -1019,7 +1019,7 @@ actions are defined in terms of</p>
 <script src="/assets/js/aos.js"></script>
 <script src="/assets/js/plugins/jstree/dist/jstree.js"></script>
 <script type="text/javascript">
-    var nav = $('.sidebar__right');
+    var nav = $('.sidebar__right,.page');
     var lastId;
     var tocMenu = $(".toc__menu");
 
@@ -1095,7 +1095,6 @@ actions are defined in terms of</p>
         var global = false;
         var cacheTransaction = true;
         var progressState = 10;
-        var blockui;
         if (typeof options !== "undefined") {
             if (options.globalSettings) {
                 global = options.globalSettings;
@@ -1114,7 +1113,6 @@ actions are defined in terms of</p>
             cache: cacheTransaction,
             global: global,
             xhr: function () {
-                debugger;
                 var xhr = new window.XMLHttpRequest();
                 $('#globalprogress > div.progress-bar').show();
                 if (intervalObjects && intervalObjects.globalProgressBar) {
@@ -1189,6 +1187,7 @@ actions are defined in terms of</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);
         });
