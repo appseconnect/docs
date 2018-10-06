@@ -1,13 +1,13 @@
 <!--{% if page.header.image contains "://" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
-  {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
+  {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% endif %}
 
 {% if page.header.cta_url contains "://" %}
   {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
 {% else %}
-  {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
+  {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
 {% endif %}
 
 

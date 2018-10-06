@@ -41,13 +41,13 @@ var store = [
       {% endif %}
       {
         "title": {{ doc.title | jsonify }},
-        "url": {{ doc.url | absolute_url | jsonify }},
+        "url": {{ doc.url | jsonify }},
         "excerpt": {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
         "teaser":
           {% if teaser contains "://" %}
             {{ teaser | jsonify }}
           {% else %}
-            {{ teaser | absolute_url | jsonify }}
+            {{ teaser | jsonify }}
           {% endif %}
       }{% unless forloop.last and l %},{% endunless %}
     {% endfor %}
