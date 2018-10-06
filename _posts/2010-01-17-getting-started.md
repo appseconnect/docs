@@ -6,8 +6,9 @@ category: "APPSeCONNECT"
 menus: 
     header:
         title: Getting Started
-        icon: fa fa-play
         weight: 2
+        icon: fa fa-play
+        
 header:
     teaser: /staticfiles/root/media/MyProfile.PNG
 ---
@@ -23,24 +24,14 @@ Let us dive in details about every section of customer profile information.
 ## My Profile
 
 1. Log in to the [APPSeCONNECT portal](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) with valid credentials.
-
 2. Click on your name, and you can view `My Profile` tab. 
-
 ![MyProfile](/staticfiles/root/media/MyProfile.PNG)
-
 3. This section enables you to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
-
 4. Here you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address.
-
-
 5. In the `Summary section`, the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
-
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
-
 ![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.PNG)
-
 7. `My Feeds` section is for seeing your recent activities.
-
 By clicking Projects, [Workflows](/workflow/overview/), you will be redirected to that particular pages respectively.
 
 **ProTip:** If you click on Change Details tab, you can edit all details 
@@ -51,15 +42,15 @@ By clicking Projects, [Workflows](/workflow/overview/), you will be redirected t
 
 In the Personal Info tab, you can edit your name, mobile number.
 
-Click  **Change Avatar** to change your Profile picture.
+* Click  **Change Avatar** to change your Profile picture.
 
 
-Click **Change Password** to change the password and set your new password.
+* Click **Change Password** to change the password and set your new password.
 
 
-The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
+* The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
 
-The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
+* The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
 
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
 
@@ -67,23 +58,17 @@ The **Security Setting** enables you to handle all the security related settings
 
 This section gives the overall idea about chhosing application, configuring connection, ennviornment setup and execution of the sync process. Step by Step direction is given below:
 
-Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
+Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details.
 
 ## Choosing Application
 ## (1) Process of Choosing App 
 
 1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
-
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
-
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
-
 3. The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
-
 ![AppView](/staticfiles/root/media/AppView.png)
-
 4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
-
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
 
 ### APPSeCONNECT Schema/Entity-
@@ -122,7 +107,7 @@ Extensions, on the other hand, are the applications which add an extra feature i
 
 ### Functions
 
-The APPSeCONNECT expression methods are special transformation block used during **mapping** (link). The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
+The APPSeCONNECT expression methods are special transformation block used during `mapping`. The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
 
 * Generic
 * Native
@@ -190,9 +175,9 @@ Select the connection, provide the connection name and select the protocol. Clic
 12. Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.
 
 **Protip** On the Touchpoints page, there will be a Reverse button (only if applicable, for e.g here NAV to Magento connection is also available). The connection will be reversed.
-Related document {: .notice--info}
+{: .notice--info}
 
-**Value Mapping** is an important function under touchpoint selection. 
+`Value Mapping` is an important function under touchpoint selection. 
 
 Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during transformation.
 
@@ -248,4 +233,4 @@ The last one is the Workflow option that displays the configured workflows in th
 
 4. Click on the play button to run the sync process.
 
-![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoints.PNG)
+![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.PNG)

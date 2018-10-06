@@ -594,31 +594,6 @@
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
         <a onclick="selectTab('/api-management/common-use-cases-on-api-management/');" title="Go to Use cases">Use cases</a>
         
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/api-management/create-api-connecting-to-api/');" title="Go to Wrap around existing API">Wrap around existing API</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/api-management/create-api-connecting-to-webhook/');" title="Go to Create webhook API">Create webhook API</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/api-management/create-api-using-custom-datasource/');" title="Go to Connect to OnPremise Data source">Connect to OnPremise Data source</a>
-        
-    </li>
-    
-</ul>
-
-        
     </li>
     
     
@@ -804,50 +779,30 @@
 <p>Please follow the steps written below:</p>
 
 <ol>
-  <li>
-    <p>Log in with valid credentials in the Cloud portal.</p>
-  </li>
-  <li>
-    <p>Choose any project and navigate to Connections -&gt; Choose a connection -&gt; View The Connection.
-<img src="/staticfiles/workflow-management/media/Attribute-Mapping1.png" alt="Attribute-Mapping1" />
+  <li>Log in with valid credentials in the Cloud portal.</li>
+  <li>Choose any project and navigate to Connections -&gt; Choose a connection -&gt; View The Connection.</li>
+</ol>
+
+<p><img src="/staticfiles/workflow-management/media/Attribute-Mapping1.png" alt="Attribute-Mapping1" /><br />
 You can search for a connection from the Search section. Hover the mouse on the connection, click on View the Connection.</p>
-  </li>
-  <li>
-    <p>A new page will open where you can edit the touch points.</p>
-  </li>
+<ol class="notice--info">
+  <li>A new page will open where you can edit the touch points.<br />
+<img src="/staticfiles/workflow-management/media/Attribute-Mapping2.png" alt="Attribute-Mapping2" /><br />
+<strong>Protip</strong>Edit mapping will only be applicable for your custom touchpoint i.e. if you add any new touchpoint. Edit link will not be visible for Base touchpoints that get auto-created at the time of connection creation.</li>
 </ol>
-
-<p><img src="/staticfiles/workflow-management/media/Attribute-Mapping2.png" alt="Attribute-Mapping2" /></p>
-
-<p class="notice--info"><strong>Protip</strong>Edit mapping will only be applicable for your custom touchpoint i.e. if you add any new touchpoint. Edit link will not be visible for Base touchpoints that get auto-created at the time of connection creation.</p>
-
 <ol>
-  <li>You will see a page like this. Refer to this document.</li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/Attribute-Mapping3.png" alt="Attribute-Mapping3" /></p>
-
-<ol>
-  <li>Choose Open Mapping, A pop-up will open.</li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/Attribute-Mapping4.png" alt="Attribute-Mapping4" /></p>
-
-<ol>
-  <li>In the white box section, you have to write the fields for mapping. You can also click on the entities/attributes to get it on the box.If value mapping is required, check the box below and add some tips.</li>
-</ol>
-
-<p>Choose the value mapping type. Leaving a comment is optional.</p>
-
-<ol>
+  <li>You will see a page like this. Refer to this document.<br />
+<img src="/staticfiles/workflow-management/media/Attribute-Mapping3.png" alt="Attribute-Mapping3" /></li>
+  <li>Choose Open Mapping, A pop-up will open.<br />
+<img src="/staticfiles/workflow-management/media/Attribute-Mapping4.png" alt="Attribute-Mapping4" /></li>
+  <li>In the white box section, you have to write the fields for mapping. You can also click on the entities/attributes to get it on the box.If value mapping is required, check the box below and add some tips.
+Choose the value mapping type. Leaving a comment is optional.</li>
   <li>You can now enable or disable attribute mapping. <code class="highlighter-rouge">Disable Mapping feature</code> is not available for the primary key.
 You can now Delete Custom attribute along with its mapping.</li>
   <li>`The custom attribute’ is the attribute which is defined in project level. You can use the custom attributes only for a particular touchpoint.</li>
   <li>You can sort the order of attributes and variables in the mapping page by dragging and dropping the same under its parent only if the mapping for the attribute has been provided.</li>
   <li>In case of the complex object or complex object collection type of attributes, a blank mapping is required for its sorting.</li>
-  <li>
-    <p>Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.</p>
-  </li>
+  <li>Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.</li>
   <li>You can create variable and condition by a pop-up in the attribute mapping section.
     <ul>
       <li>Source entity and destination entity can be mapped using drag and drop feature.</li>
