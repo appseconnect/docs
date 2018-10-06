@@ -333,8 +333,9 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-notification-webhooks.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-08-25-generating-actions.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-17-steps-to-create-your-first-workflow.md" />
-    <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-debugging-a-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-08-16-quickstart-guides-to-workflow-management.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-08-18-attribute-mapping-workflow.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-08-19-debugging-a-workflow.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-22-basic-workflow-customer-download.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-creation-for-add-salesorder.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-08-23-workflow-showing-product upload with stock sync.md" />

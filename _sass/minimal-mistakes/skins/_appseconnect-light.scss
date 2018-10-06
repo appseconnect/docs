@@ -35,7 +35,7 @@ body {font-family: 'Montserrat', sans-serif;}
 
 body.layout--single {font-family:'Montserrat', sans-serif;}
 @media (min-width: 80em) {
-body.layout--single .masthead__inner-wrap {max-width: 100%;}
+body .masthead__inner-wrap {max-width: 100%;}
 body.layout--single .breadcrumbs {max-width: 100%;}
 body.layout--single .breadcrumbs ol {padding-left: 0;}
 
@@ -194,6 +194,8 @@ body.layout--single .LeftSearchBar .search__toggle, layout--archive-taxonomy .Le
 .search-content .archive__item {width:100% !important;}
 .archive a.readmoreBtn {padding: 5px 20px; background: #1c79b1; color: #fff; border-radius: 25px; font-size: 14px;}
 pre { overflow-x: auto; background: #161719; font-size: 18px; line-height: 30px; color: #e8e8e8; padding: 20px; margin: 0 0 20px;}
+layout--archive-taxonomy {}
+.headerPan .progress.globalprogressCustom, .progress { margin:0 !important;}
 
 
 

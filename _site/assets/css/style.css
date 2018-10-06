@@ -343,6 +343,7 @@ body.layout--single .sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh
 .VideoTopLeft, .VideoTopRight {float: none; width: 80%; box-sizing: border-box; padding: 0; margin: 0 auto;}
 .VideoTopRight ul {margin-top:20px;}
 .appseconnectDocTabs ul li {width:50%;}
+.learningPortalRight a { padding: 10px 10px; font-size: 12px;}
 }
 @media only screen and (max-width: 600px) {
 .headerRight {float: none; width: 278px; list-style: none; margin: 0 auto; padding: 20px 0 0; clear: both;}    
