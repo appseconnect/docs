@@ -15,7 +15,7 @@
     <img src={% if s.image contains "://" %}
          "{{ s.image }}"
          {% else %}
-         "{{ s.image | absolute_url }}"
+         "{{ s.image }}"
          {% endif %}
          alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
     {% endif %}
