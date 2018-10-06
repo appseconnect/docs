@@ -198,11 +198,14 @@ body.layout--single .learningPortalBan h3, body.layout--single .learningPortalRi
 .archive__item-excerpt {clear:both;}
 .layout--archive-taxonomy #main { max-width: 100%; padding: 0;}
 body.layout--single .LeftSearchBar .search__toggle, layout--archive-taxonomy .LeftSearchBar .search__toggle, .LeftSearchBar .search__toggle { clear: both; width: 100%; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; background: #fff; border: 1px solid #b8b9b9; height: 40px; line-height: 40px; position: relative; border-radius:0; color:#889aa5; text-align:left; font-size:14px; margin:0; padding:0 10px;}
+
+body.layout--archive-taxonomy .LeftSearchBar .search__toggle, layout--archive-taxonomy .LeftSearchBar .search__toggle, .LeftSearchBar .search__toggle { clear: both; width: 100%; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; background: #fff; border: 1px solid #b8b9b9; height: 40px; line-height: 40px; position: relative; border-radius:0; color:#889aa5; text-align:left; font-size:14px; margin:0; padding:0 10px;}
+
 .LeftSearchBar {clear: both; width: 100%; margin: 0 0 20px; overflow: hidden;}
 .layout--archive-taxonomy .sidebar.sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh - 90px - 2em); margin:0; background:#f1ecec;}
 .layout--archive-taxonomy .archive {padding-top:20px;}
 .search-content .archive__item {width:100% !important;}
-.archive a.readmoreBtn {padding: 5px 20px; background: #1c79b1; color: #fff; border-radius: 25px; font-size: 14px;}
+.archive a.readmoreBtn {padding: 5px 20px; background: #1c79b1; color: #fff !important; border-radius: 25px; font-size: 14px;}
 pre { overflow-x: auto; background: #161719; font-size: 18px; line-height: 30px; color: #e8e8e8; padding: 20px; margin: 0 0 20px;}
 layout--archive-taxonomy {}
 .headerPan .progress.globalprogressCustom, .progress { margin:0 !important;}
