@@ -24,24 +24,14 @@ Let us dive in details about every section of customer profile information.
 ## My Profile
 
 1. Log in to the [APPSeCONNECT portal](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) with valid credentials.
-
 2. Click on your name, and you can view `My Profile` tab. 
-
 ![MyProfile](/staticfiles/root/media/MyProfile.PNG)
-
 3. This section enables you to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
-
 4. Here you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address.
-
-
 5. In the `Summary section`, the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
-
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
-
 ![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.PNG)
-
 7. `My Feeds` section is for seeing your recent activities.
-
 By clicking Projects, [Workflows](/workflow/overview/), you will be redirected to that particular pages respectively.
 
 **ProTip:** If you click on Change Details tab, you can edit all details 
@@ -74,17 +64,11 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 ## (1) Process of Choosing App 
 
 1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
-
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
-
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
-
 3. The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
-
 ![AppView](/staticfiles/root/media/AppView.png)
-
 4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
-
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
 
 ### APPSeCONNECT Schema/Entity-
