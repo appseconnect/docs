@@ -28,11 +28,11 @@ Follow these steps to create a Webhook API with **APPSeCONNECT**
 As per requirement, before you start creating a new Webhook endpoint, you need to make sure you meet all the 
 prerequisites. Here are some of them : 
 
-1. [Getting a new account for APPSeCONNECT]()
-2. [Configuring your Environments]()
-3. [Choosing Apps or Adding Apps]()
-4. [Importing schemas and actions of an Application]()
-5. [Creating a Connection]()
+1. [Getting a new account for APPSeCONNECT](/appseconnect/home/)
+2. [Configuring your Environments](/api-management/deployments-and-environments/)
+3. [Choosing Apps or Adding Apps](/api-management/choosing-backend-apps/)
+4. [Importing schemas and actions of an Application](/appseconnect/getting-started/)
+5. [Creating a Connection](/appseconnect/getting-started/)
 
 
 ## Steps to create Webhook Endpoint:
