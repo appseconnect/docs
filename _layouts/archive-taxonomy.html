@@ -2,12 +2,12 @@
 layout: inner
 author_profile: false
 ---
-{% include header-block.html %}
+{% include header-block.html %} 
 
 <div id="main" role="main">
     {% include sidebar.html %}
 
-    <div class="archive">
+    <div class="archive page">
         <h1 class="page__title">{{ page.title }}</h1>
         {% for post in page.posts %}
         {% include archive-single.html %}

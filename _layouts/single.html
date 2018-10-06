@@ -17,7 +17,11 @@ layout: inner
 <!-- Start : header -->
 {% include header-block.html %}
 <!-- End : header -->
-
+<div class="progress progress-striped active globalprogressCustom" id="globalprogress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+        <span class="sr-only"> 40% Complete (success) </span>
+    </div>
+</div>
 <div id="main" role="main">
     {% include sidebar.html %}
 
@@ -45,7 +49,7 @@ layout: inner
                 {% else %}
                 {% assign i = i | plus: 1 %}
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | absolute_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+                    <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
                     <meta itemprop="position" content="{{ i }}" />
                 </li>
                 <li class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</li>
@@ -131,7 +135,7 @@ layout: inner
                             {% for post in site.posts limit:4 %}
                             {% assign title = post.title %}
                             <li>
-                                <a href="{{ post.url | absolute_url }}" rel="permalink">
+                                <a href="{{ post.url }}" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     {{ title }}
                                 </a>

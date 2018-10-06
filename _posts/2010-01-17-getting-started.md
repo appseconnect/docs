@@ -8,7 +8,11 @@ menus:
         title: Getting Started
         weight: 2
         icon: fa fa-play
+<<<<<<< HEAD
         
+=======
+        weight: 2
+>>>>>>> cffcc7c10c31330d13ab0a4820be9acc0245e6dc
 header:
     teaser: /staticfiles/root/media/MyProfile.PNG
 ---
