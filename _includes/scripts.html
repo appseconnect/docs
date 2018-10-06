@@ -4,21 +4,21 @@
     {% if script contains "://" %}
       {% capture script_path %}{{ script }}{% endcapture %}
     {% else %}
-      {% capture script_path %}{{ script | absolute_url }}{% endcapture %}
+      {% capture script_path %}{{ script }}{% endcapture %}
     {% endif %}
     <script src="{{ script_path }}"></script>
   {% endfor %}
 {% else %}
-  <script src="{{ '/assets/js/plugins/jquery.fitvids.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/plugins/jquery.greedy-navigation.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/plugins/jquery.magnific-popup.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/plugins/jquery.smooth-scroll.min.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/plugins/jquery.fitvids.js' }}"></script>
+  <script src="{{ '/assets/js/plugins/jquery.greedy-navigation.js' }}"></script>
+  <script src="{{ '/assets/js/plugins/jquery.magnific-popup.js' }}"></script>
+  <script src="{{ '/assets/js/plugins/jquery.smooth-scroll.min.js' }}"></script>
+  <script src="{{ '/assets/js/main.min.js' }}"></script>
 {% endif %}
 
 {% if site.search == true or page.layout == 'search' %}
-  <script src="{{ '/assets/js/lunr.min.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/lunr-en.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/lunr.min.js' }}"></script>
+  <script src="{{ '/assets/js/lunr-en.js' }}"></script>
 {% endif %}
 
 {% include analytics.html %}
