@@ -6,8 +6,9 @@ category: "APPSeCONNECT"
 menus: 
     header:
         title: Getting Started
-        icon: fa fa-play
         weight: 2
+        icon: fa fa-play
+        
 header:
     teaser: /staticfiles/root/media/MyProfile.PNG
 ---
