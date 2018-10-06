@@ -247,6 +247,9 @@
     <Content Include="docs\bin\Debug\LICENSE.txt" />
     <Content Include="docs\bin\Debug\videos.html" />
     <Content Include="docs\courses.html" />
+    <Content Include="docs\create-api-connecting-to-api\index.html" />
+    <Content Include="docs\create-api-connecting-to-webhook\index.html" />
+    <Content Include="docs\create-api-using-custom-datasource\index.html" />
     <Content Include="docs\developers-reseller\index.html" />
     <Content Include="docs\developers\index.html" />
     <Content Include="docs\favicon.ico" />
