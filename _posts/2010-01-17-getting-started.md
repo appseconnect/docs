@@ -52,15 +52,15 @@ By clicking Projects, [Workflows](/workflow/overview/), you will be redirected t
 
 In the Personal Info tab, you can edit your name, mobile number.
 
-Click  **Change Avatar** to change your Profile picture.
+* Click  **Change Avatar** to change your Profile picture.
 
 
-Click **Change Password** to change the password and set your new password.
+* Click **Change Password** to change the password and set your new password.
 
 
-The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
+* The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
 
-The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
+* The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
 
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
 
@@ -68,7 +68,7 @@ The **Security Setting** enables you to handle all the security related settings
 
 This section gives the overall idea about chhosing application, configuring connection, ennviornment setup and execution of the sync process. Step by Step direction is given below:
 
-Login to APPSeCONNECT - View [Home Page](/home/home/) to get the details.
+Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details.
 
 ## Choosing Application
 ## (1) Process of Choosing App 
@@ -123,7 +123,7 @@ Extensions, on the other hand, are the applications which add an extra feature i
 
 ### Functions
 
-The APPSeCONNECT expression methods are special transformation block used during **mapping** (link). The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
+The APPSeCONNECT expression methods are special transformation block used during `mapping`. The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:
 
 * Generic
 * Native
@@ -191,9 +191,9 @@ Select the connection, provide the connection name and select the protocol. Clic
 12. Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.
 
 **Protip** On the Touchpoints page, there will be a Reverse button (only if applicable, for e.g here NAV to Magento connection is also available). The connection will be reversed.
-Related document {: .notice--info}
+{: .notice--info}
 
-**Value Mapping** is an important function under touchpoint selection. 
+`Value Mapping` is an important function under touchpoint selection. 
 
 Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during transformation.
 
@@ -249,4 +249,4 @@ The last one is the Workflow option that displays the configured workflows in th
 
 4. Click on the play button to run the sync process.
 
-![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoints.PNG)
+![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.PNG)

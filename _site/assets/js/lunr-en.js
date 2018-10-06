@@ -455,10 +455,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Create API to Connect On-premise Database",
-      excerpt: "APIs is required when you don’t have an existing API for your data source. To implement new APIs, you might...",
-      categories: ["API-Management"],
-      tags: ["developers"],
+      title: "Create Api Using Custom Datasource",
+      excerpt: "title: “Create API to Connect On-premise Database” toc: true tag: developers APIs is required when you don’t have an existing...",
+      categories: [],
+      tags: [],
       id: 49
     });
     
@@ -473,10 +473,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Create API proxy existing API",
-      excerpt: "\n",
-      categories: ["API-Management"],
-      tags: ["developers"],
+      title: "Create Api Connecting To Api",
+      excerpt: "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
+      categories: [],
+      tags: [],
       id: 51
     });
     
@@ -500,10 +500,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Create API to configure webhook callback",
-      excerpt: "\n",
-      categories: ["API-Management"],
-      tags: ["developers"],
+      title: "Create Api Connecting To Webhook",
+      excerpt: "\ntitle: “Create API to configure webhook callback”\ntoc: true\ntag: developers\n",
+      categories: [],
+      tags: [],
       id: 54
     });
     
@@ -1143,9 +1143,9 @@ var store = [
     
       
       {
-        "title": "Create API to Connect On-premise Database",
-        "url": "/api-management/create-api-using-custom-datasource/",
-        "excerpt": "APIs is required when you don’t have an existing API for your data source. To implement new APIs, you might...",
+        "title": "Create Api Using Custom Datasource",
+        "url": "/create-api-using-custom-datasource/",
+        "excerpt": "title: “Create API to Connect On-premise Database” toc: true tag: developers APIs is required when you don’t have an existing...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -1165,9 +1165,9 @@ var store = [
     
       
       {
-        "title": "Create API proxy existing API",
-        "url": "/api-management/create-api-connecting-to-api/",
-        "excerpt": "\n",
+        "title": "Create Api Connecting To Api",
+        "url": "/create-api-connecting-to-api/",
+        "excerpt": "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -1198,9 +1198,9 @@ var store = [
     
       
       {
-        "title": "Create API to configure webhook callback",
-        "url": "/api-management/create-api-connecting-to-webhook/",
-        "excerpt": "\n",
+        "title": "Create Api Connecting To Webhook",
+        "url": "/create-api-connecting-to-webhook/",
+        "excerpt": "\ntitle: “Create API to configure webhook callback”\ntoc: true\ntag: developers\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
