@@ -33,19 +33,19 @@ $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 body {font-family: 'Montserrat', sans-serif;}
 
-body.layout--single {font-family:'Montserrat', sans-serif;}
+body.layout--single body.layout--archive-taxonomy {font-family:'Montserrat', sans-serif;}
 @media (min-width: 80em) {
 body .masthead__inner-wrap {max-width: 100%;}
-body.layout--single .breadcrumbs {max-width: 100%;}
-body.layout--single .breadcrumbs ol {padding-left: 0;}
+body.layout--single .breadcrumbs, body.layout--archive-taxonomy .breadcrumbs {max-width: 100%;}
+body.layout--single .breadcrumbs ol, body.layout--archive-taxonomy .breadcrumbs ol {padding-left: 0;}
 
-body.layout--single #main {max-width: 100%; padding: 0; background: #fff; margin-top: 0; position: relative; z-index: 10;}
+body.layout--single #main, body.layout--archive-taxonomy #main {max-width: 100%; padding: 0; background: #fff; margin-top: 0; position: relative; z-index: 10;}
 
-body.layout--single .sidebar__right {margin-top: -105px;}
-body.layout--single .sidebar__right {width:280px;}
-body.layout--single .page {background: #fff; min-height: 700px; padding: 20px 320px 20px 20px;}
-body.layout--single .page__footer footer {max-width: 100%; padding: 20px; margin: 0;}
-body.layout--single .search-content .archive__item { width: 100%; margin: 0;}
+body.layout--single .sidebar__right, body.layout--archive-taxonomy .sidebar__right {margin-top: -105px;}
+body.layout--single .sidebar__right, body.layout--archive-taxonomy .sidebar__right {width:280px;}
+body.layout--single .page, body.layout--archive-taxonomy page{background: #fff; min-height: 700px; padding: 20px 320px 20px 20px;}
+body.layout--single .page__footer footer, body.layout--archive-taxonomy .page__footer footer {max-width: 100%; padding: 20px; margin: 0;}
+body.layout--single .search-content .archive__item, body.layout--archive-taxonomy .search-content .archive__item { width: 100%; margin: 0;}
 }
 @media (min-width: 64em){
 body.layout--single .breadcrumbs ol {float: left; width: 100%;}
@@ -57,20 +57,27 @@ body.layout--single .greedy-nav a {padding: 0; width:280px; margin:11px 0 16px 1
 body.layout--single .breadcrumbs {padding:0; margin:0; clear:both;}
 body.layout--single .breadcrumbs ol {font-size: 14px; margin:0; padding:0;}
 body.layout--single .breadcrumbs ol li, body.layout--single .breadcrumbs ol li a {color:#000; text-decoration:none;}
-body.layout--single .breadcrumbs .current {color: #000;}
-body.layout--single .search__toggle { border: 0; padding: 0; color: #ffffff; background-color: #00aadc; margin: 0 20px 0 0; border-radius: 50%; width: 44px; height: 44px;}
+body.layout--single .breadcrumbs .current, body.layout--archive-taxonomy .breadcrumbs .current {color: #000;}
+body.layout--single .search__toggle, body.layout--archive-taxonomy .search__toggle { border: 0; padding: 0; color: #ffffff; background-color: #00aadc; margin: 0 20px 0 0; border-radius: 50%; width: 44px; height: 44px;}
 body.layout--single .page__content p, body.layout--single .page__content li, body.layout--single .page__content dl {font-size: 14px !important; line-height: 24px; color: #000; font-family:'Montserrat', sans-serif;}
+
+body.layout--archive-taxonomy .page__content p, body.layout--archive-taxonomy .page__content li, body.layout--archive-taxonomy .page__content dl {font-size: 14px !important; line-height: 24px; color: #000; font-family:'Montserrat', sans-serif;}
+body.layout--archive-taxonomy h1, body.layout--archive-taxonomy h2, body.layout--archive-taxonomy h3, body.layout--archive-taxonomy h4 {color: #3d4a50;}
 body.layout--single h1, body.layout--single h2, body.layout--single h3, body.layout--single h4 {color: #3d4a50;}
-body.layout--single  {color:#566267;}
+body.layout--single, body.layout--archive-taxonomy  {color:#566267;}
+
 body.layout--single .toc, body.layout--single .notice--info, body.layout--single div.highlighter-rouge pre.highlight, body.layout--single figure.highlight pre.highlight {background: transparent;}
-body.layout--single .page__footer {background-color: #232b2f; color: #ffffff; margin-top: 0; position:relative;}
-body.layout--single .page__footer-copyright { text-align: center; font-size: 12px; color: #8d9398;}
-body.layout--single .notice--warning {border-bottom: 0 solid #f45104; box-shadow: 0 1px 1px rgba(0,0,34,0.25); -moz-box-shadow: 0 1px 1px rgba(0,0,34,0.25); -webkit-box-shadow: 0 1px 1px rgba(0,0,34,0.25); background-color: #fff;}
-body.layout--single a, body.layout--single a:visited, .notice--info a {color: #2783ab;}
+
+body.layout--archive-taxonomy .toc, body.layout--archive-taxonomy .notice--info, body.layout--archive-taxonomy div.highlighter-rouge pre.highlight, body.layout--archive-taxonomy figure.highlight pre.highlight {background: transparent;}
+
+body.layout--single .page__footer, body.layout--archive-taxonomy .page__footer {background-color: #232b2f; color: #ffffff; margin-top: 0; position:relative;}
+body.layout--single .page__footer-copyright, body.layout--archive-taxonomy .page__footer-copyright { text-align: center; font-size: 12px; color: #8d9398;}
+body.layout--single .notice--warning, body.layout--archive-taxonomy .notice--warning {border-bottom: 0 solid #f45104; box-shadow: 0 1px 1px rgba(0,0,34,0.25); -moz-box-shadow: 0 1px 1px rgba(0,0,34,0.25); -webkit-box-shadow: 0 1px 1px rgba(0,0,34,0.25); background-color: #fff;}
+body.layout--single a, body.layout--archive-taxonomy a, body.layout--archive-taxonomy a:visited, .notice--info a {color: #2783ab;}
 .jstree-default .jstree-anchor {color:#000;}
-body.layout--single .notice--danger {border-bottom: 0 solid #c70a0a; box-shadow: 0 1px 1px rgba(0,0,34,0.25); -moz-box-shadow: 0 1px 1px rgba(0,0,34,0.25); -webkit-box-shadow: 0 1px 1px rgba(0,0,34,0.25); background-color: #fff;}
-body.layout--single .toc .nav__title {background: transparent; padding: 0 0 0 14px;}
-body.layout--single .toc .nav__title i.fa {color:#adb4b9;}
+body.layout--single .notice--danger, body.layout--archive-taxonomy .notice--danger {border-bottom: 0 solid #c70a0a; box-shadow: 0 1px 1px rgba(0,0,34,0.25); -moz-box-shadow: 0 1px 1px rgba(0,0,34,0.25); -webkit-box-shadow: 0 1px 1px rgba(0,0,34,0.25); background-color: #fff;}
+body.layout--single .toc .nav__title,body.layout--archive-taxonomy .toc .nav__title {background: transparent; padding: 0 0 0 14px;}
+body.layout--single .toc .nav__title i.fa, body.layout--archive-taxonomy .toc .nav__title i.fa {color:#adb4b9;}
 
 /*body.layout--single .page__related {margin-top: 0; padding: 20px; border-top: 0; background: #373f42; color: #fff;}
 body.layout--single .page__related h4 {color: #aeb5b9; margin-bottom: 30px;}
@@ -142,8 +149,11 @@ body.layout--single .notice--info:after {position:absolute; left:60px; top:50%; 
 #cssmenu > ul > li { width: auto;}
 #cssmenu > ul > li > ul {width: 170px; display: block;}
 #cssmenu > ul > li > ul > li { width: 170px; display: block;}
-body.layout--single .sidebar__right.f-nav {top:10px; position: fixed; right: 20px; margin: 0;}
+body.layout--single .sidebar__right.f-nav, body.layout--archive-taxonomy .sidebar__right.f-nav {top:10px; position: fixed; right: 20px; margin: 0;}
+body.layout--archive-taxonomy h1, body.layout--archive-taxonomy h2, body.layout--archive-taxonomy h3, body.layout--archive-taxonomy h4, body.layout--archive-taxonomy h5, body.layout--archive-taxonomy h6 { color: #000;  font-weight: 600;}
+
 body.layout--single h1, body.layout--single h2, body.layout--single h3, body.layout--single h4, body.layout--single h5, body.layout--single h6 {color: #000; font-weight:600;}
+
 body.layout--single .navInn {max-width: 100%; clear: both; margin: 0; padding: 0 0 0 10px;}
 ul, ol {padding-left:20px;}
 .sidebar.sticky > p {margin-top: 10px;}
@@ -158,10 +168,10 @@ ul, ol {padding-left:20px;}
 .nav__list .nav__items .active { color: #fff; font-weight: normal !important; background: #1d79b1;  padding: 5px 0 5px 35px !important; margin: 0 !important; }
 .nav__list .nav__items a {padding:2px 0 2px 35px !important; margin: 0 !important;}
 .notice--info, .notice--warning { background: #f7f7f7 !important;}
-body.layout--single .sub-title {text-transform: initial !important; font-size: 13px !important; background: transparent; margin: 0; cursor: pointer; width: 100%; border: 0; padding: 5px 0 5px 20px; display: block; font-weight:normal;}
-body.layout--single .sub-title {position:relative;}
-body.layout--single .sub-title:before {position: absolute; left: 2px; top: 15px; content: "\f107"; color: #36414a; font-size: 20px; transform: translate(0, -50%); font-family: "FontAwesome";}
-body.layout--single .sub-title.sidebaractive:before { content: "\f105"; left: 5px; top: 15px;}
+body.layout--single .sub-title, body.layout--archive-taxonomy .sub-tittle{text-transform: initial !important; font-size: 13px !important; background: transparent; margin: 0; cursor: pointer; width: 100%; border: 0; padding: 5px 0 5px 20px; display: block; font-weight:normal;}
+body.layout--single .sub-title, body.layout--archive-taxonomy sub-title { position:relative;}
+body.layout--single .sub-title:before, body.layout--archive-taxonomy .sub-title:before {position: absolute; left: 2px; top: 15px; content: "\f107"; color: #36414a; font-size: 20px; transform: translate(0, -50%); font-family: "FontAwesome";}
+body.layout--single .sub-title.sidebaractive:before, body.layout--archive-taxonomy .sub-title.sidebaractive:before { content: "\f105"; left: 5px; top: 15px;}
 .ulist ul {padding:0;}
 .ulist ul li {line-height: 20px; font-size: 14px; color: #333; list-style:none;}
 .ulist ul li a {color: #1e4656; text-decoration: none;}
@@ -200,7 +210,7 @@ layout--archive-taxonomy {}
 
 
 @media (max-width: 63.9375em) {
-    body.layout--single .sidebar__right.f-nav {
+    body.layout--single .sidebar__right.f-nav, body.layout--archive-taxonomy .sidebar__right.f-nav {
         top: 0;
         position: relative;
         right: 0;
@@ -237,7 +247,7 @@ layout--archive-taxonomy {}
         width: 100%;
     }
 
-    body.layout--single .page__related h2 {
+    body.layout--single , body.layout--archive-taxonomy .page__related h2 {
         margin: 0 0 20px;
     }
 
