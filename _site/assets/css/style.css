@@ -249,11 +249,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .learningTrailsBottomInn ul li h4 span { display: inline-block; padding: 0 0 0 10px;}
 .search__toggle {width: 50%; float: right;}
 .search__toggle, .search__toggle img {border:0; outline:none;}
-.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #eae6e6; padding: 10px 20px; background: #f3efef; margin: 0 0 20px;}
+.list__item.sectionbody { clear: both; width: 100%; overflow: hidden; border: 1px solid #dad1d1; padding: 10px 20px; background: #f6f7fb; margin: 0 0 20px;}
 .learningtrailRight img {float:right; padding-right: 50px;}
 .learningWhiteBox img { width:80px; margin: 0 0 10px;}
 .archive__item-excerpt {margin:0 0 10px;}
 .copyRightLeft a {color:#777;}
+.page__share a.btn i{ color:#fff;}
 
 
 
