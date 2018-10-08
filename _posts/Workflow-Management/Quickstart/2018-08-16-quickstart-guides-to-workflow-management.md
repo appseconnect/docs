@@ -18,8 +18,8 @@ By reading this document an implementer would be able to design the first workfl
 
 To know in details, go through the given sections:
 
-[Attribute Mapping of workflow](/workflow-management/attribute-mapping-workflow/)
+[Attribute Mapping of workflow](/workflow/attribute-mapping-workflow/)
 
-[Steps to create your first workflow](/workflow-management/steps-to-create-your-first-workflow/)
+[Steps to create your first workflow](/workflow/steps-to-create-your-first-workflow/)
 
-[Debugging a workflow](/workflow-management/debugging-a-workflow/)
+[Debugging a workflow](/workflow/debugging-a-workflow/)
