@@ -90,7 +90,9 @@
             <div class="sectionbody">
                 <div class="ulist">
                     <ul>
+                        {% assign cateogory = page.category %}
                         {% for post in site.posts limit:4 %}
+                        {% if post.id != page.id && post.category == category %}
                         {% assign title = post.title %}
                         <li>
                             <a href="{{ post.url }}" rel="permalink">
@@ -98,6 +100,7 @@
                                 {{ title }}
                             </a>
                         </li>
+                        {% endif %}
                         {% endfor %}
 
                     </ul>

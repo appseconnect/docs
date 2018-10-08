@@ -123,7 +123,7 @@ layout: inner
             {% include post_pagination.html %}
         </div>
 
-
+        {% assign relatedposts = 0 %}
 
         {% if page.id and page.related %}
         <div class="section-see-also">
@@ -132,7 +132,44 @@ layout: inner
                 <div class="sectionbody">
                     <div class="ulist">
                         <ul>
-                            {% for post in site.posts limit:4 %}
+                            {% assign maxRelated = 5 %}
+                            {% assign minCommonTags =  2 %}
+                            {% assign maxRelatedCounter = 0 %}
+                            {% for post in site.posts %}
+                            {% assign sameTagCount = 0 %}
+                            {% assign commonTags = '' %}
+
+                            {% for tag in post.tags %}
+                            {% if post.url != page.url %}
+                            {% if page.tags contains tag %}
+                            {% assign sameTagCount = sameTagCount | plus: 1 %}
+                            {% capture tagmarkup %}
+                            <span class="label label-default">{{ tag }}</span> {% endcapture %}
+                            {% assign commonTags = commonTags | append: tagmarkup %}
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+
+                            {% if sameTagCount >= minCommonTags %}
+                            <li>
+                                <a href="{{ post.url }}" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    {{ post.title }}
+                                </a>
+                            </li>
+                            {% assign relatedposts = relatedposts | plus: 1 %}
+                            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+                            {% if maxRelatedCounter >= maxRelated %}
+                            {% break %}
+                            {% endif %}
+                            {% endif %}
+
+                            {% endfor %} 
+                            {% if relatedposts <= 4 %} 
+                            {% assign category = page.category %}
+                            {% assign i = 0 %}
+                            {% for post in site.posts %}
+                            {% if post.id != page.id and post.category == category and i <= 4 %}
                             {% assign title = post.title %}
                             <li>
                                 <a href="{{ post.url }}" rel="permalink">
@@ -140,8 +177,10 @@ layout: inner
                                     {{ title }}
                                 </a>
                             </li>
+                            {% assign i = i | plus: 1 %}
+                            {% endif %}
                             {% endfor %}
-
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
