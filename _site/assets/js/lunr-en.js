@@ -77,7 +77,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Getting started to APPSeCONNECT",
+      title: "Getting Started to APPSeCONNECT",
       excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -681,7 +681,7 @@ var store = [
     
       
       {
-        "title": "Getting started to APPSeCONNECT",
+        "title": "Getting Started to APPSeCONNECT",
         "url": "/appseconnect/getting-started/",
         "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
         "teaser":
