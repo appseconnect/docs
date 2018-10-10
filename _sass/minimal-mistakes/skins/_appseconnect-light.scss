@@ -209,6 +209,8 @@ body.layout--archive-taxonomy .LeftSearchBar .search__toggle, layout--archive-ta
 pre { overflow-x: auto; background: #161719; font-size: 18px; line-height: 30px; color: #e8e8e8; padding: 20px; margin: 0 0 20px;}
 layout--archive-taxonomy {}
 .headerPan .progress.globalprogressCustom, .progress { margin:0 !important;}
+.learningtrailLeft p a {color:#fff; text-decoration:none;}
+body.layout--single .sidebar.sticky a, body.layout--archive-taxonomy .sidebar.sticky a, body.layout--archive-taxonomy .sidebar.sticky a:visited {color:#000;}
 
 
 

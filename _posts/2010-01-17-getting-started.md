@@ -1,5 +1,5 @@
 ---
-title: "Getting started to APPSeCONNECT"
+title: "Getting Started to APPSeCONNECT"
 toc: true
 tag: developers
 category: "APPSeCONNECT"
@@ -14,7 +14,7 @@ header:
 ---
 
 # CUSTOMER PROFILE INFORMATION
-This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/home/home/).
+This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/appseconnect/home/).
 
 This section also enables you to change details like your personal information, changing avatar, changing password, privacy setting and security setting.
 
@@ -30,7 +30,7 @@ Let us dive in details about every section of customer profile information.
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
 ![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.PNG)
 7. `My Feeds` section is for seeing your recent activities.
-By clicking Projects, [Workflows](/workflow/overview/), you will be redirected to that particular pages respectively.
+By Clicking Projects, [Workflows](/workflow/overview/), you will be redirected to that particular pages respectively.
 
 **ProTip:** If you click on Change Details tab, you can edit all details 
 {: .notice--info}
