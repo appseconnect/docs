@@ -64,7 +64,7 @@ body.layout--single .page__content p, body.layout--single .page__content li, bod
 body.layout--archive-taxonomy .page__content p, body.layout--archive-taxonomy .page__content li, body.layout--archive-taxonomy .page__content dl {font-size: 14px !important; line-height: 24px; color: #000; font-family:'Montserrat', sans-serif;}
 body.layout--archive-taxonomy h1, body.layout--archive-taxonomy h2, body.layout--archive-taxonomy h3, body.layout--archive-taxonomy h4 {color: #3d4a50;}
 body.layout--single h1, body.layout--single h2, body.layout--single h3, body.layout--single h4 {color: #3d4a50;}
-body.layout--single, body.layout--archive-taxonomy  {color:#566267;}
+body.layout--single, body.layout--archive-taxonomy  {color:#000;}
 
 body.layout--single .toc, body.layout--single .notice--info, body.layout--single div.highlighter-rouge pre.highlight, body.layout--single figure.highlight pre.highlight {background: transparent;}
 
@@ -104,7 +104,7 @@ body.layout--single .notice--danger:after {position:absolute; left:60px; top:50%
 body.layout--single .notice--info {position:relative; padding-left: 75px; box-shadow: 1px 1px 5px rgba(0,0,0,0.20); -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.20); -moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.20);}
 body.layout--single .notice--info:before {position:absolute; left:16px; top:50%; content:"\f06a"; color:#8fa3ad; font-size:32px; transform: translate(0, -50%); font-family:"FontAwesome";}
 body.layout--single .notice--info:after {position:absolute; left:60px; top:50%; content:""; background:#dadfe0; width:3px; height:90%; transform: translate(0, -50%); font-size:30px; font-family:"FontAwesome";}
-.toc__menu a { display: block; padding: 0 0 0 10px !important; color: #4a4c54 !important; font-size: 12px !important; font-weight: bold; line-height: 26px !important; border-bottom: 0px solid #e8f3f9 !important; border-left:4px solid #fff; text-transform: initial !important; text-transform: initial !important; font-family:'Montserrat', sans-serif;}
+.toc__menu a { display: block; padding: 0 0 0 10px !important; color: #000 !important; font-size: 12px !important; font-weight: 500 !important; line-height: 26px !important; border-bottom: 0px solid #e8f3f9 !important; border-left:4px solid #fff; text-transform: initial !important; text-transform: initial !important; font-family:'Montserrat', sans-serif;}
 .toc__menu li ul>li a {padding-left: 0;}
 .sidebar.sticky > p {color: #0c9fca !important;}
 .nav { background: #272e33; color: #bdd0de;}
@@ -185,7 +185,7 @@ body.layout--single .sub-title.sidebaractive:before, body.layout--archive-taxono
 .closeSearch i {line-height:24px; color: #ddd;}
 .searchTopGap {clear:both; padding:50px 0 20px;}
 .search-content .archive__item-title {margin-top: 0; font-size: 18px; color: #555; margin: 0;}
-.search-content .archive__item-title a {color: #555; text-decoration: none;}
+.search-content .archive__item-title a {color: #000; text-decoration: none;}
 .search-content .archive__item-excerpt { margin: 5px 0 0;}
 .search-content__inner-wrap { max-width: 800px !important; height: 600px; overflow-x: hidden; overflow-y: scroll;}
 .searchDefaultBox img {display:block; margin:0 auto;}
@@ -195,7 +195,7 @@ body.layout--single .sub-title.sidebaractive:before, body.layout--archive-taxono
 .page__inner-wrap .page__meta { display: block;}
 .hideBox {display:none;}
 body.layout--single .learningPortalBan h3, body.layout--single .learningPortalRight a { color: #fff;}
-.archive__item-excerpt {clear:both;}
+.archive__item-excerpt {clear:both; font-size:12px; line-height:24px;}
 .layout--archive-taxonomy #main { max-width: 100%; padding: 0;}
 body.layout--single .LeftSearchBar .search__toggle, layout--archive-taxonomy .LeftSearchBar .search__toggle, .LeftSearchBar .search__toggle { clear: both; width: 100%; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; background: #fff; border: 1px solid #b8b9b9; height: 40px; line-height: 40px; position: relative; border-radius:0; color:#889aa5; text-align:left; font-size:14px; margin:0; padding:0 10px;}
 
@@ -209,6 +209,11 @@ body.layout--archive-taxonomy .LeftSearchBar .search__toggle, layout--archive-ta
 pre { overflow-x: auto; background: #161719; font-size: 18px; line-height: 30px; color: #e8e8e8; padding: 20px; margin: 0 0 20px;}
 layout--archive-taxonomy {}
 .headerPan .progress.globalprogressCustom, .progress { margin:0 !important;}
+.learningtrailLeft p a {color:#fff; text-decoration:none;}
+body.layout--single .sidebar.sticky a, body.layout--archive-taxonomy .sidebar.sticky a, body.layout--archive-taxonomy .sidebar.sticky a:visited {color:#000;}
+
+
+
 
 
 
@@ -278,6 +283,7 @@ layout--archive-taxonomy {}
     }
 
     body.layout--single .breadcrumbs, body.layout--archive-taxonomy .breadcrumbs {
-        padding: 0 0 20px !important;
+        padding: 0 !important;
     }
+    .sidebar.sticky {opacity: 1 !important;}
 }
