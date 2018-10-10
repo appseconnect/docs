@@ -611,6 +611,12 @@
     <None Include="docs\_pages\tag-archive.md" />
     <None Include="README.md" />
     <None Include="videos.md" />
+    <None Include="_listcourses\environment.md" />
+    <None Include="_listcourses\rules.md" />
+    <None Include="_listcourses\touchpoint.md" />
+    <None Include="_listcourses\workflow.md" />
+    <None Include="_listcourses\adapter.md" />
+    <None Include="_listcourses\platform.md" />
     <None Include="_data\menus.yml" />
     <None Include="_pages\about\index.md" />
     <None Include="_pages\category-archive.md" />

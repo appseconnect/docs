@@ -3,6 +3,16 @@
         <h3>Learning Trails</h3>
         <p>Start your learning adventure with APPSeCONNECT.</p>
         <ul>
+            {% for course in site.collections.listcourses %}
+            <li>
+                <div class="learningWhiteBox">
+                    <img src="{{ course.icon }}" />
+                    <h4>{{ course.name }}</h4>
+                    <p>{{ course.content | markdownify }}</p>
+                    <a href="http://learning.appseconnect.com/{{ course.path }}" title="Get Started">Get Started</a>
+                </div>
+            </li>
+            {% endfor %}
             <li>
                 <div class="learningWhiteBox">
                     <img src="../assets/images/AEC-Development-Process.png" />
