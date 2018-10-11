@@ -89,7 +89,7 @@ author:
   location         : 
   email            : "support@appseconnect.com"
   uri              : "http://support.appseconnect.com"
-  home             : # null (default), "absolute or relative url to link to author home"
+  home             : "https://www.appseconnect.com" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -242,6 +242,9 @@ compress_html:
 collections:
   category:
     output: true
+  listcourses:
+    permalink: /:collection/:name
+    output: true
 # Defaults
 defaults:
   # _posts
@@ -255,7 +258,6 @@ defaults:
       comments: true
       share: true
       related: true 
-
   - scope:
       path: "customers"
       type: posts
