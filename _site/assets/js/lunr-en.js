@@ -68,83 +68,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of Workflows",
-      excerpt: "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 6
-    });
-    
-  
-    idx.add({
       title: "Important Terminologies",
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow A flow or...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 7
-    });
-    
-  
-    idx.add({
-      title: "Architecture",
-      excerpt: "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 8
-    });
-    
-  
-    idx.add({
-      title: "Quickstart guides to create Workflow",
-      excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 9
-    });
-    
-  
-    idx.add({
-      title: "Steps to create your first workflow",
-      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 10
-    });
-    
-  
-    idx.add({
-      title: "Nodes and Link overview",
-      excerpt: "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 11
-    });
-    
-  
-    idx.add({
-      title: "Attribute Mapping of workflow",
-      excerpt: "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 12
-    });
-    
-  
-    idx.add({
-      title: "GET Node",
-      excerpt: "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
-      categories: ["Workflow"],
-      tags: ["developers","nodes"],
-      id: 13
-    });
-    
-  
-    idx.add({
-      title: "Debugging workflows",
-      excerpt: "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 14
+      id: 6
     });
     
   
@@ -153,16 +81,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 15
-    });
-    
-  
-    idx.add({
-      title: "PROCESS Node",
-      excerpt: "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
-      categories: ["Workflow"],
-      tags: ["developers","nodes"],
-      id: 16
+      id: 7
     });
     
   
@@ -171,7 +90,7 @@ var idx = lunr(function () {
       excerpt: "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 17
+      id: 8
     });
     
   
@@ -180,7 +99,7 @@ var idx = lunr(function () {
       excerpt: "What is Post Node? POST node is used for pushing data to an application based on the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 18
+      id: 9
     });
     
   
@@ -189,7 +108,7 @@ var idx = lunr(function () {
       excerpt: "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 19
+      id: 10
     });
     
   
@@ -198,7 +117,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 20
+      id: 11
     });
     
   
@@ -207,7 +126,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 21
+      id: 12
     });
     
   
@@ -216,7 +135,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 22
+      id: 13
     });
     
   
@@ -225,7 +144,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 23
+      id: 14
     });
     
   
@@ -234,7 +153,7 @@ var idx = lunr(function () {
       excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 24
+      id: 15
     });
     
   
@@ -243,7 +162,7 @@ var idx = lunr(function () {
       excerpt: "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 25
+      id: 16
     });
     
   
@@ -252,7 +171,7 @@ var idx = lunr(function () {
       excerpt: "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 26
+      id: 17
     });
     
   
@@ -261,7 +180,7 @@ var idx = lunr(function () {
       excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 27
+      id: 18
     });
     
   
@@ -270,7 +189,7 @@ var idx = lunr(function () {
       excerpt: "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 28
+      id: 19
     });
     
   
@@ -279,7 +198,7 @@ var idx = lunr(function () {
       excerpt: "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 29
+      id: 20
     });
     
   
@@ -288,7 +207,7 @@ var idx = lunr(function () {
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 30
+      id: 21
     });
     
   
@@ -297,7 +216,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 31
+      id: 22
     });
     
   
@@ -306,7 +225,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 32
+      id: 23
     });
     
   
@@ -315,7 +234,7 @@ var idx = lunr(function () {
       excerpt: "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 33
+      id: 24
     });
     
   
@@ -324,7 +243,7 @@ var idx = lunr(function () {
       excerpt: "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 34
+      id: 25
     });
     
   
@@ -333,7 +252,7 @@ var idx = lunr(function () {
       excerpt: "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 35
+      id: 26
     });
     
   
@@ -342,7 +261,7 @@ var idx = lunr(function () {
       excerpt: "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 36
+      id: 27
     });
     
   
@@ -351,7 +270,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 37
+      id: 28
     });
     
   
@@ -360,7 +279,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 38
+      id: 29
     });
     
   
@@ -369,7 +288,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 39
+      id: 30
     });
     
   
@@ -378,7 +297,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 40
+      id: 31
     });
     
   
@@ -387,7 +306,7 @@ var idx = lunr(function () {
       excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 41
+      id: 32
     });
     
   
@@ -396,7 +315,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 42
+      id: 33
     });
     
   
@@ -405,7 +324,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
-      id: 43
+      id: 34
     });
     
   
@@ -414,7 +333,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 44
+      id: 35
     });
     
   
@@ -423,7 +342,7 @@ var idx = lunr(function () {
       excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 45
+      id: 36
     });
     
   
@@ -432,7 +351,7 @@ var idx = lunr(function () {
       excerpt: "APIs are tje central to any application development process. As data forms an important part of any business it is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 46
+      id: 37
     });
     
   
@@ -441,7 +360,7 @@ var idx = lunr(function () {
       excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
-      id: 47
+      id: 38
     });
     
   
@@ -450,7 +369,7 @@ var idx = lunr(function () {
       excerpt: "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 48
+      id: 39
     });
     
   
@@ -459,7 +378,25 @@ var idx = lunr(function () {
       excerpt: "title: “Create API to Connect On-premise Database” toc: true tag: developers APIs is required when you don’t have an existing...",
       categories: [],
       tags: [],
-      id: 49
+      id: 40
+    });
+    
+  
+    idx.add({
+      title: "Architecture",
+      excerpt: "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 41
+    });
+    
+  
+    idx.add({
+      title: "Overview of Workflows",
+      excerpt: "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 42
     });
     
   
@@ -468,7 +405,7 @@ var idx = lunr(function () {
       excerpt: "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 50
+      id: 43
     });
     
   
@@ -477,7 +414,25 @@ var idx = lunr(function () {
       excerpt: "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
       categories: [],
       tags: [],
-      id: 51
+      id: 44
+    });
+    
+  
+    idx.add({
+      title: "Quickstart guides to create Workflow",
+      excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 45
+    });
+    
+  
+    idx.add({
+      title: "Steps to create your first workflow",
+      excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 46
     });
     
   
@@ -486,7 +441,7 @@ var idx = lunr(function () {
       excerpt: "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 52
+      id: 47
     });
     
   
@@ -495,7 +450,7 @@ var idx = lunr(function () {
       excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 53
+      id: 48
     });
     
   
@@ -504,7 +459,25 @@ var idx = lunr(function () {
       excerpt: "\ntitle: “Create API to configure webhook callback”\ntoc: true\ntag: developers\n",
       categories: [],
       tags: [],
-      id: 54
+      id: 49
+    });
+    
+  
+    idx.add({
+      title: "Attribute Mapping of workflow",
+      excerpt: "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 50
+    });
+    
+  
+    idx.add({
+      title: "Debugging workflows",
+      excerpt: "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 51
     });
     
   
@@ -513,6 +486,33 @@ var idx = lunr(function () {
       excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
       categories: ["API-Management"],
       tags: ["developers"],
+      id: 52
+    });
+    
+  
+    idx.add({
+      title: "Nodes and Link overview",
+      excerpt: "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
+      categories: ["Workflow"],
+      tags: ["developers"],
+      id: 53
+    });
+    
+  
+    idx.add({
+      title: "GET Node",
+      excerpt: "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
+      categories: ["Workflow"],
+      tags: ["developers","nodes"],
+      id: 54
+    });
+    
+  
+    idx.add({
+      title: "PROCESS Node",
+      excerpt: "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
+      categories: ["Workflow"],
+      tags: ["developers","nodes"],
       id: 55
     });
     
@@ -670,17 +670,6 @@ var store = [
     
       
       {
-        "title": "Overview of Workflows",
-        "url": "/workflow/overview/",
-        "excerpt": "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Important Terminologies",
         "url": "/workflow/Terminologies/",
         "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow A flow or...",
@@ -692,97 +681,9 @@ var store = [
     
       
       {
-        "title": "Architecture",
-        "url": "/workflow/architecture-design-runtime/",
-        "excerpt": "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Quickstart guides to create Workflow",
-        "url": "/workflow/quickstart-guides-to-workflow-management/",
-        "excerpt": "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Steps to create your first workflow",
-        "url": "/workflow/steps-to-create-your-first-workflow/",
-        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Nodes and Link overview",
-        "url": "/workflow/workflow-nodes-and-links/",
-        "excerpt": "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Attribute Mapping of workflow",
-        "url": "/workflow/attribute-mapping-workflow/",
-        "excerpt": "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "GET Node",
-        "url": "/workflow/working-with-get/",
-        "excerpt": "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Debugging workflows",
-        "url": "/workflow/debugging-a-workflow/",
-        "excerpt": "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Choosing applications for integration",
         "url": "/workflow/choosing-apps-for-integration/",
         "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "PROCESS Node",
-        "url": "/workflow/working-with-process/",
-        "excerpt": "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -1154,6 +1055,28 @@ var store = [
     
       
       {
+        "title": "Architecture",
+        "url": "/workflow/architecture-design-runtime/",
+        "excerpt": "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Workflows",
+        "url": "/workflow/overview/",
+        "excerpt": "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Creating Webhook endpoint",
         "url": "/api-management/steps-to-create-webhook-endpoint/",
         "excerpt": "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
@@ -1168,6 +1091,28 @@ var store = [
         "title": "Create Api Connecting To Api",
         "url": "/create-api-connecting-to-api/",
         "excerpt": "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Quickstart guides to create Workflow",
+        "url": "/workflow/quickstart-guides-to-workflow-management/",
+        "excerpt": "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Steps to create your first workflow",
+        "url": "/workflow/steps-to-create-your-first-workflow/",
+        "excerpt": "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -1209,9 +1154,64 @@ var store = [
     
       
       {
+        "title": "Attribute Mapping of workflow",
+        "url": "/workflow/attribute-mapping-workflow/",
+        "excerpt": "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Debugging workflows",
+        "url": "/workflow/debugging-a-workflow/",
+        "excerpt": "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Filter Request by IP policy",
         "url": "/api-management/ip-restrict/",
         "excerpt": "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Nodes and Link overview",
+        "url": "/workflow/workflow-nodes-and-links/",
+        "excerpt": "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "GET Node",
+        "url": "/workflow/working-with-get/",
+        "excerpt": "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "PROCESS Node",
+        "url": "/workflow/working-with-process/",
+        "excerpt": "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
