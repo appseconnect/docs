@@ -1,4 +1,4 @@
-﻿---
+---
 name: AEC Platform Understanding
 icon: ../assets/images/AEC-Development-Process.png
 path: /login

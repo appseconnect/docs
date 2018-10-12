@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Compression Policy"
 toc: true
 tag: developers

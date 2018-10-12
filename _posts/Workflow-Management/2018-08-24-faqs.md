@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Frequently asked questions"
 toc: true
 tag: developers

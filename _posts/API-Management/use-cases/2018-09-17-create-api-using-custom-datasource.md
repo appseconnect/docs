@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Create API to Connect On-premise Database"
 toc: true
 tag: developers

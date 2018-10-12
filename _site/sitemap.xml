@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/listcourses/adapter</loc>
+<lastmod>2018-10-12T14:32:33+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/listcourses/environment</loc>
+<lastmod>2018-10-12T14:32:33+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/listcourses/platform</loc>
+<lastmod>2018-10-12T14:32:33+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/listcourses/rules</loc>
+<lastmod>2018-10-12T14:32:33+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/listcourses/touchpoint</loc>
+<lastmod>2018-10-12T14:32:33+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/listcourses/workflow</loc>
+<lastmod>2018-10-12T14:32:33+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/sdk/What-is-an-Adapter/</loc>
 <lastmod>2010-01-01T00:00:00+05:30</lastmod>
 </url>
@@ -257,7 +281,16 @@
 <lastmod>2018-09-27T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/categories/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/about/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tags/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/developers/</loc>

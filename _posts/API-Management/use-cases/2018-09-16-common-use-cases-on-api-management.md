@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Common Use Cases for API management"
 toc: true
 tag: developers

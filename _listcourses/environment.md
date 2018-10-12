@@ -1,4 +1,4 @@
-﻿---
+---
 name: Debugging and Environment management
 icon: /assets/images/SAP-SL-and-Magento-Integration.png
 path: /login
