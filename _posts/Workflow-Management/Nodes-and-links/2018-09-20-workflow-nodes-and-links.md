@@ -3,7 +3,6 @@ title: "Nodes and Link overview"
 toc: true
 tag: developers
 category: "Workflow"
-author: "Abhishek Sur"
 menus: 
     workflow:
         icon: fa fa-link

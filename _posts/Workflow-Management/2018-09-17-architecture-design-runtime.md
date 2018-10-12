@@ -3,6 +3,7 @@ title: "Architecture"
 toc: true
 tag: developers
 category: "Workflow"
+weight: 2
 menus: 
     workflow:
         title: "Architecture" 
