@@ -1,4 +1,4 @@
-﻿---
+---
 title: "DELAY Node"
 toc: true
 tag: 

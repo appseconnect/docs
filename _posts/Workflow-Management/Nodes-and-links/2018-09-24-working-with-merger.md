@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Merge Node"
 toc: true
 tag: 

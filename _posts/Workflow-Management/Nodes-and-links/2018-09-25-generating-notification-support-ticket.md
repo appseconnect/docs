@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Generating Support tickets"
 toc: true
 tag: 

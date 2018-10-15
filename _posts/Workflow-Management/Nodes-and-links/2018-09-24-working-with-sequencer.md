@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sequencer Node"
 toc: true
 tag: 

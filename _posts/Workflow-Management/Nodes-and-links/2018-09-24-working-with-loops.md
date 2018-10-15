@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Working with Loops"
 toc: true
 tag: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GET Node"
 toc: true
 tag: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Rule Node"
 toc: true
 tag: 

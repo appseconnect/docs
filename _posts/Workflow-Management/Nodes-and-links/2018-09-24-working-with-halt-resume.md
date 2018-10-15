@@ -1,4 +1,4 @@
-﻿---
+---
 title: "HALT/RESUME Node"
 toc: true
 tag: 
