@@ -627,7 +627,7 @@
     <None Include="_listcourses\adapter.md" />
     <None Include="_listcourses\platform.md" />
     <None Include="_data\menus.yml" />
-    <None Include="_pages\about\index.md" />
+    <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
     <None Include="_posts\2010-01-16-home.md" />
