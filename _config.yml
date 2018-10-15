@@ -249,10 +249,10 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: "/"
-      type: pages
+      path: ""
+      type: posts
     values:
-      layout: inner
+      layout: single
       author_profile: false
       read_time: true
       comments: true
