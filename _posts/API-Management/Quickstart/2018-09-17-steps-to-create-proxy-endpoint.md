@@ -1,4 +1,4 @@
-﻿---
+---
 title: " Creating proxy endpoint"
 toc: true
 tag: developers

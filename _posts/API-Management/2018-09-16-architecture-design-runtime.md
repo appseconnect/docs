@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Architecture"
 toc: true
 tag: developers
