@@ -249,6 +249,7 @@
     <Content Include="docs\bin\Debug\feed.xml" />
     <Content Include="docs\bin\Debug\LICENSE.txt" />
     <Content Include="docs\bin\Debug\videos.html" />
+    <Content Include="docs\categories\index.html" />
     <Content Include="docs\courses.html" />
     <Content Include="docs\create-api-connecting-to-api\index.html" />
     <Content Include="docs\create-api-connecting-to-webhook\index.html" />
@@ -261,6 +262,13 @@
     <Content Include="docs\index.html" />
     <Content Include="docs\InSyncDocs.csproj" />
     <Content Include="docs\InSyncDocs.csproj.user" />
+    <Content Include="docs\isdn.html" />
+    <Content Include="docs\listcourses\adapter.html" />
+    <Content Include="docs\listcourses\environment.html" />
+    <Content Include="docs\listcourses\platform.html" />
+    <Content Include="docs\listcourses\rules.html" />
+    <Content Include="docs\listcourses\touchpoint.html" />
+    <Content Include="docs\listcourses\workflow.html" />
     <Content Include="docs\nodes\index.html" />
     <Content Include="docs\robots.txt" />
     <Content Include="docs\sdk\How-to-develop-an-Adapter\index.html" />
@@ -387,6 +395,7 @@
     <Content Include="docs\staticfiles\workflow-management\media\WorkflowSplitter.png" />
     <Content Include="docs\staticfiles\workflow-management\media\Workflow_dialog.png" />
     <Content Include="docs\staticfiles\workflow-management\media\Workflow_Landing.png" />
+    <Content Include="docs\tags\index.html" />
     <Content Include="docs\usecases\index.html" />
     <Content Include="docs\videos.html" />
     <Content Include="docs\workflow\architecture-design-runtime\index.html" />
