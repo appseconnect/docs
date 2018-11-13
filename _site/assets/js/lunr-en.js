@@ -278,7 +278,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Create Api Connecting To Webhook",
+      title: "Create Api Connecting To Webhook   copy",
       excerpt: "\ntitle: “Create API to configure webhook callback”\ntoc: true\ntag: developers\n",
       categories: [],
       tags: [],
@@ -646,6 +646,51 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Frequently asked questions",
+      excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 70
+    });
+    
+  
+    idx.add({
+      title: "Create API to Quota Management Access Restriction",
+      excerpt: "Use Case Name API to Quota Management Access Restriction Brief Description This is a api which the user can create...",
+      categories: ["API-Management"],
+      tags: ["developers","usecases"],
+      id: 71
+    });
+    
+  
+    idx.add({
+      title: "Overview of Generic Rest Adapters",
+      excerpt: "Overview of Generic Rest Adapters Generic Adapters are the adapters that follow the same REST/SOAP protocol for different applications. You...",
+      categories: ["Adapters"],
+      tags: ["developers"],
+      id: 72
+    });
+    
+  
+    idx.add({
+      title: null,
+      excerpt: "\n",
+      categories: [],
+      tags: null,
+      id: 73
+    });
+    
+  
+    idx.add({
+      title: null,
+      excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
+      categories: [],
+      tags: null,
+      id: 74
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -984,8 +1029,8 @@ var store = [
     
       
       {
-        "title": "Create Api Connecting To Webhook",
-        "url": "/create-api-connecting-to-webhook/",
+        "title": "Create Api Connecting To Webhook   copy",
+        "url": "/create-api-connecting-to-webhook-Copy/",
         "excerpt": "\ntitle: “Create API to configure webhook callback”\ntoc: true\ntag: developers\n",
         "teaser":
           
@@ -1427,6 +1472,61 @@ var store = [
         "title": "Frequently asked questions",
         "url": "/workflow/faqs/",
         "excerpt": "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Frequently asked questions",
+        "url": "/api-management/faqs-api-management/",
+        "excerpt": "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Create API to Quota Management Access Restriction",
+        "url": "/api-management/create-api-quotamanagement-to-restriction-access/",
+        "excerpt": "Use Case Name API to Quota Management Access Restriction Brief Description This is a api which the user can create...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Generic Rest Adapters",
+        "url": "/adapters/Overview-of-GenericRest-Adapters/",
+        "excerpt": "Overview of Generic Rest Adapters Generic Adapters are the adapters that follow the same REST/SOAP protocol for different applications. You...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": null,
+        "url": "/2018-11-06-Authentication-&-Authorization/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": null,
+        "url": "/2018-11-06-BasicAuthentication/",
+        "excerpt": "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

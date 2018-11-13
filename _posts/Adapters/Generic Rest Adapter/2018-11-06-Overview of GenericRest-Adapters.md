@@ -6,8 +6,8 @@ category: "Adapters"
 menus: 
     header:
         title: "Adapters"
-        weight: 1
-        icon: fa fa-file-word-o 
+        weight: 5
+        icon: fa fa-wpexplorer
         identifier: adapters
 ---
 # Overview of Generic Rest Adapters

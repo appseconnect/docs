@@ -3,12 +3,13 @@ title: "Basic Authentication "
 toc: true
 tag: developers
 category: "Adapters"
+weight:6
 menus: 
-    header:
-        title: "Adapters"
-        icon: fa fa-file-word-o  
-        weight: 3
-              identifier: adapters
+  adapters:
+         icon: fa fa-gg
+        category: "Basic Authentication"
+        title: "Basic Authentication"
+        identifier: basicauthentication
 ---
 # Process to Configure Basic Authentication in Generic Rest Adapter
 To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
