@@ -5,9 +5,9 @@ tag: developers
 category: "Workflow"
 weight: 2
 menus: 
-    workflow:
-        title: "Architecture" 
+    workflow:   
         icon: fa fa-file-word-o
+        title: "Architecture" 
         identifier: workflowarchitecture
 ---
 

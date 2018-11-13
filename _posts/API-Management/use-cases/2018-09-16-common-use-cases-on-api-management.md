@@ -3,7 +3,6 @@ title: "Common Use Cases for API management"
 toc: true
 tag: developers
 category: "API-Management"
-author: "Äbhishek Sur"
 weight: 7
 menus: 
     api: 
