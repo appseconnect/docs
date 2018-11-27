@@ -10,7 +10,7 @@ menus:
         title: "Quota-Per-Key-Policy" 
 ---
 The **Rate-limit quota** policy prevents an API usage spikes on per user basis, such that if the same API is 
-getting somehow spammed, the policy will automatically detect it and updae the response accordingly. The 
+getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
 API rate limit can be set up by the developer for a specified time period and when the policy is
 triggered for a specific call, the caller will receive `429 Too Many Requests` as response status code.
 

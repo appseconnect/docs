@@ -48,6 +48,11 @@ Presently the REST Adapter supports two set of content type conversion- XML and 
 * Support for uploading sample XML documents to define schema for XML content during REST Adapter configuration.
 * Support for uploading sample JSON documents to define schema during REST Adapter configuration.
 
+**Protip**  XML documents passed to a REST endpoint that support the XML content type must comply with the
+XML schema specified during trigger (inbound) REST configuration. When the REST invokes a target endpoint, 
+the XML response must comply with the XML schema specified during invoke (outbound) 
+REST response configuration. {: .notice--info}
+
 
 5. Select the Content-Type from the drop down list and Click on Validate button for validating the URL.
 
