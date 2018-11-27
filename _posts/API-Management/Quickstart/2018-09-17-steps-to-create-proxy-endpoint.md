@@ -34,7 +34,7 @@ prerequisites. Here are some of them :
 
 After all these steps are done, make sure the environment is kept running and credentials are propery updated. 
 
-## Steps to create Proxy App
+## Steps to create Proxy Api
 
 To start creating a Proxy API, login to APPSeCONNECT and move to API Management section. You will see sections 
 depicting Proxy, select the section to navigate to it.

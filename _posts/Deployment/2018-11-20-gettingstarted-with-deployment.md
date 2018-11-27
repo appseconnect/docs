@@ -3,18 +3,19 @@ title: "Getting started with deployment"
 toc: true
 tag: developers
 category: "Deployment"
+weight: 2
 menus: 
-    header:
-        title: Deployment
-        icon: fa fa-deployment
-        weight: 1        
+    deployment:
+        icon: fa fa-gg
+        title: "Getting started"
+        identifier: deployement
+                
 ---
 
-# Getting started with deployment
 
 This section lets you get started with the deploying processes and components to an environment for APPSeCONNECT.
 
-APPSeCONNECT Components for deployment includes the following items:
+`APPSeCONNECT Components` for deployment includes the following items:
 
 * AGENT
 * ADAPTER
