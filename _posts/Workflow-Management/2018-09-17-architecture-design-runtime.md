@@ -3,10 +3,10 @@ title: "Architecture"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 2
 menus: 
     workflow:   
-        icon: fa fa-file-word-o
+        icon: fa fa-gg
+        weight: 3
         title: "Architecture" 
         identifier: workflowarchitecture
 ---

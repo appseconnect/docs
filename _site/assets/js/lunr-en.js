@@ -647,29 +647,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Frequently asked questions",
-      excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
-      categories: ["Workflow"],
-      tags: ["developers"],
-      id: 70
-    });
-    
-  
-    idx.add({
-      title: "Frequently asked questions",
-      excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
-      categories: ["API-Management"],
-      tags: ["developers"],
-      id: 71
-    });
-    
-  
-    idx.add({
       title: "Create API to Quota Management Access Restriction",
       excerpt: "Use Case Name API to Quota Management Access Restriction Brief Description This is a api which the user can create...",
       categories: ["API-Management"],
       tags: ["developers","usecases"],
-      id: 72
+      id: 70
     });
     
   
@@ -678,7 +660,7 @@ var idx = lunr(function () {
       excerpt: "title: “Overview of Generic Rest Adapters” toc: true tag: developers category: “APPSeCONNECT” menus: header: title: Adapter icon: fa fa-adapter weight:...",
       categories: [],
       tags: [],
-      id: 73
+      id: 71
     });
     
   
@@ -687,7 +669,7 @@ var idx = lunr(function () {
       excerpt: "The APPSeCONNECT Platform either for cloud or on-premise integration is a fully integrated solution that enables organizations to design, develop,...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 74
+      id: 72
     });
     
   
@@ -695,6 +677,24 @@ var idx = lunr(function () {
       title: "Getting started with deployment",
       excerpt: "This section lets you get started with the deploying processes and components to an environment for APPSeCONNECT. APPSeCONNECT Components for...",
       categories: ["Deployment"],
+      tags: ["developers"],
+      id: 73
+    });
+    
+  
+    idx.add({
+      title: "Deployment of Connectors",
+      excerpt: "\n",
+      categories: ["APPSeCONNECT"],
+      tags: ["developers"],
+      id: 74
+    });
+    
+  
+    idx.add({
+      title: "Deployment of Connectors",
+      excerpt: "\n",
+      categories: ["APPSeCONNECT"],
       tags: ["developers"],
       id: 75
     });
@@ -719,29 +719,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
-      excerpt: "\n",
-      categories: ["APPSeCONNECT"],
-      tags: ["developers"],
-      id: 78
-    });
-    
-  
-    idx.add({
-      title: "Deployment of Connectors",
-      excerpt: "\n",
-      categories: ["APPSeCONNECT"],
-      tags: ["developers"],
-      id: 79
-    });
-    
-  
-    idx.add({
       title: "Cors policy",
       excerpt: "Cross-Origin Resource Sharing (CORS) Policy is a mechanism which allows restriction to domain access. Domains configured by the User is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 80
+      id: 78
     });
     
   
@@ -750,7 +732,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: [],
       tags: null,
-      id: 81
+      id: 79
     });
     
   
@@ -759,7 +741,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
       categories: [],
       tags: null,
-      id: 82
+      id: 80
     });
     
   
@@ -1544,28 +1526,6 @@ var store = [
         "title": "Important Terminologies",
         "url": "/workflow/Terminologies/",
         "excerpt": "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow A flow or...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Frequently asked questions",
-        "url": "/workflow/faqs/",
-        "excerpt": "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Frequently asked questions",
-        "url": "/api-management/faqs-api-management/",
-        "excerpt": "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

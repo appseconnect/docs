@@ -23,13 +23,13 @@ This section lets you get started with the deploying processes and components to
 * ADDONS
 * EXTENSIONS
 
-1) AGENT - APPSeCONNECT Agent is a special tool that can be downloaded on your own Server and does the actual data
+1) **AGENT** - APPSeCONNECT Agent is a special tool that can be downloaded on your own Server and does the actual data
 synchronization with on-premise application with the help of Adapters.The Agent is a background service which runs 
 as per your configuration running on schedule, either automatically or manually, and syncing data between applications. 
 The Agent is capable of responding to any configurational changes and can retain that application configuration until
 the next change. 
 
-2) ADAPTER -  Adapter represents an interface between an APPLICATION and APPSeCONNECT. 
+2) **ADAPTER** -  Adapter represents an interface between an APPLICATION and APPSeCONNECT. 
 An adapter is one of the intregal component which connects your app with APPSeCONNECT. 
 There are few responsibilities of an adapter which are defined as under: 
 
@@ -39,12 +39,12 @@ There are few responsibilities of an adapter which are defined as under:
 
 The Adapter is loaded dynamically by the Agent and calls some specific methods using a fixed contract defined as an interface. 
 
-3) PLUGINS - Plugin for AEC Database of Agent to Support any DBMS at client side/client-server such that AEC can support 
+3) **PLUGINS** - Plugin for AEC Database of Agent to Support any DBMS at client side/client-server such that AEC can support 
 databases like MYSQL,HANA,OLE-DB, Oracle, etc. for keeping a log and other transaction details. 
 
-4) ADDONS - AEC Add-on extends the functionality of a certain program but they are usually meant to function on a certain program. 
+4) **ADD ONS** - AEC Add-on extends the functionality of a certain program but they are usually meant to function on a certain program. 
 
-5) EXTENSIONS - APPSeCONNECT extension is something that is specific to the browser, and they are a bit different on 
+5) **EXTENSIONS** - APPSeCONNECT extension is something that is specific to the browser, and they are a bit different on 
 each browser, but tend to be able to learn more about the overall state of the browser; they may be automatically 
 added to pages, accessible separately from a page, etc.
 
