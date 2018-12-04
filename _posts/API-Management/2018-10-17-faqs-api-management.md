@@ -20,7 +20,7 @@ To create and avail API server through appseconnect, first step is to register a
 
 **2. What is Policy?** 
 
-Policy(s) are the technique to filter API consumer before/or after accessing the actual required data. There are many policy that an API management organization can apply in appseconnect. Throttling is one of the example of policy which restricts API consumer and limits the data server hits.  
+Policy(s) are the technique to filter API consumer before/or after accessing the actual required data. There are many policy that an API management organization can apply in appseconnect. `Throttling` is one of the example of policy which restricts API consumer and limits the data server hits.  
 
 **3.Define Authentication in API?**
  
@@ -47,16 +47,17 @@ APPSeCONNECT’s cloud-based API management platform provides the leverage to crea
 **8. What are the Policies that APPSeCONNECT supports in its API Management?**
 
 AEC API comes with a set of defined policies that we use in our APPSeCONNECT API MANAGEMENT. The details about each these policies are given in the link below.
-https://docs.appseconnect.com/api-management/policies/
+
+[Policy Overview](/api-management/policies/)
 
 **9. What are Inbound Policy in APPSeCONNECT API MANAGEMENT?**
 
-In the API Gateway Pipeline, Policies are executed step wise. Policies that are declared before the backend Actions are known as the Inbound Policies. Some of the Inbound policies are – IP Restrict Policy, Validate HTTP Header, Quota Per Key Policy, CORS Policy.
+In the API Gateway Pipeline, Policies are executed step wise. Policies that are declared before the backend Actions are known as the Inbound Policies. Some of the Inbound policies are – `IP Restrict Policy, Validate HTTP Header, Quota Per Key Policy, CORS Policy`
 
 
 **10. What are Outbound Policy in APPSeCONNECT API MANAGEMENT?**
 
-In the API Gateway Pipeline, Policies are executed step-wise. Policies that are declared after the backend Actions are known as the Inbound Policies. Some of the Outbound policies are – Response Content Format.
+In the API Gateway Pipeline, Policies are executed step-wise. Policies that are declared after the backend Actions are known as the Inbound Policies. Some of the Outbound policies are – `Compression Policy & Response Content Format`.
 
 **11. How many Policy can I provide in a single API?** 
 
@@ -76,6 +77,11 @@ API Proxy acts as a bridge or a medium which provides access to secured resource
 
 
 How to build an API 
-For Details [Click here](/home/apimanagement)
+For Details [Click here](/appseconnect/home/)
+
+**15. What are Webhooks in API?**
+
+To know about webhooks, [Click here](/api-management/steps-to-create-webhook-endpoint/)
+
 
 
