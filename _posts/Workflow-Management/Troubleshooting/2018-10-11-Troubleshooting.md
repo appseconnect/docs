@@ -5,22 +5,29 @@ tag: developers
 category: "Workflow"
 menus: 
     workflow:
+        icon: fa fa-gg
+        category: "Troubleshooting" 
         title: "Troubleshooting" 
-        icon: fa fa-file-word-o
         identifier: workflowtroubleshoot
 ---
-Troubleshoot Experience 1: Workflow Created & Run Button Disabled: 
+This topic describes common problems that can occur when you develop and test a workflow in AEC Portal. Given below are few common trouble shooting
+solution for your needs.
 
-As we create a Workflow, we witness a very common issue and that is, the RUN button is disabled. 
+**Troubleshoot Category 1: Workflow Created although Run Button Disabled**
+
+You have created the Workflow as per business need, although attimes you may witness a very common issue 
+and that is, the RUN button is disabled. 
 
 IMAGE INSERT 
 
-So, what is to be done to fix this?  
-1.	First of all, make the workflow Active by Clicking on the Active/InActive Checkbox, After clicking 
+Given below is the step troubleshoot
+
+1.	First  make the workflow Active by Clicking on the Active/InActive Checkbox, After clicking 
+Make sure the Touchpoint for the workflow is published on Cloud and Synced in the agent.
 
 IMAGE INSERT 
 
-2.	Make sure the Touchpoint for the workflow is published on Cloud and Synced in the agent.
+
 3.	Even after this we see, its inactive. This is possibly due to the autosync is Activated. Here, we just turn the Autosync Off/On once.
 4.	We then click our cursor the START tab of the Workflow and we see the Run button is activated.
 
