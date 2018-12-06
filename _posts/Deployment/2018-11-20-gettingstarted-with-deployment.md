@@ -48,3 +48,4 @@ databases like MYSQL,HANA,OLE-DB, Oracle, etc. for keeping a log and other trans
 each browser, but tend to be able to learn more about the overall state of the browser; they may be automatically 
 added to pages, accessible separately from a page, etc.
 
+Deployment primarly talks about APPSeCONNECT Agent which is your own on-premises tool which needs to be installed on your own server to start doing the actual sync operation.

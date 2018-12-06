@@ -16,27 +16,51 @@ solution for your needs.
 **Troubleshoot Category 1: Workflow Created although Run Button Disabled**
 
 You have created the Workflow as per business need, although attimes you may witness a very common issue 
-and that is, the RUN button is disabled. 
+and that is the `RUN button is disabled`. 
 
-IMAGE INSERT 
+**Solution:**
 
-Given below is the step troubleshoot
+1. Make the workflow Active by Clicking `Active/InActive Checkbox` thereafter check the Touchpoint for the workflow is published on Cloud and Synced in the agent.
+   The Runbutton should be working now.
 
-1.	First  make the workflow Active by Clicking on the Active/InActive Checkbox, After clicking 
-Make sure the Touchpoint for the workflow is published on Cloud and Synced in the agent.
+2.  If the Run button is yet inactive, this might be possible due to the activation of autosync. Check and turn the autosync Off/On once.
 
-IMAGE INSERT 
+3. Check the `START` node of the Workflow and now you can view the Run button is in activated mode which signifies the workflow is ready for execution.
+
+4.  Now Run the Workflow and check for `Data Sync Log` in `Agent’s Workflow Panel`and also check `data transaction LOG` for any errors or error messages. 
+    If there is no error, the SYNC is successful.
+
+**Troubleshoot Category 2: Workflow is executed, but nothing is posted in the Destination Application**
+
+**Solution:**
+
+1. After workflow execution, if nothing is posted in the destination application, go to agent and check the transactional
+   logs under workflow panel. Double click on the error received and a window will appear.
+
+2.	In the Technical info section of the window, Select and Copy the 1st set of the code, and search for it in the APPSeCONNECT 
+    system folder, on the directory where your system folder is installed.
+
+`C:\Users\{user name}\AppData\Local\APPSeCONNECT\Content`
+
+3. If you find the input and the output packet, irrespective of this error code in your AEC system folder 
+(Packet type – Input/Process/Output). Open each of the folders and look for the XML Code errors in it.
+
+4. In case, if you don’t get any input or output packets, its probable reason is, your source and 
+destination application are not validated properly, or any of the applications prerequisite hasn’t
+properly made.
+
+**Troubleshoot Category 3: Transformation Failed and skipped further synchronization**
+
+**Solution:**
+
+1. This is the situation where you have done integration but transformation failed and skipped further synchronization.
+Similarly, as of the previous one, select and copy the error code and check for the packets (input, Transform, output) in the given path
+`C:\Users\{user name}\AppData\Local\APPSeCONNECT\Content`.
+
+2. In this case you will get the input packet, as the error says about transformation, you will not get the Transform Packet and the Output packet.
+
+3. This error is due to the mapping of data files. Check for the Mapping in the Transform section of the touchpoint (you’ll find it in the menu bar below the touchpoint) 
+    you are synchronizing. Now when the mapping is properly done, you are ready to sync the data again.
 
 
-3.	Even after this we see, its inactive. This is possibly due to the autosync is Activated. Here, we just turn the Autosync Off/On once.
-4.	We then click our cursor the START tab of the Workflow and we see the Run button is activated.
 
-IMAGE INSERT 
-5.	Here, we see our Run button to be Active, which signifies the workflow is ready to execute.
-
-IMAGE INSERT 
-6.  Now we Run our Workflow and check for our Data Sync Log in the agent’s Workflow Panel.
-
-IMAGE INSERT 
-
-Here, in the Workflow Panel, we check our data transaction LOG for any errors or error messages. If no error, the SYNC was successful.
