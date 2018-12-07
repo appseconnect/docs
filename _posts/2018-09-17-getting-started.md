@@ -61,7 +61,6 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
 
-
 APPSeCONNECT provides an option to Create `Custom application` and `Technology application` (organization specific) for the users.
 Any App once added is assigned to a particular category. 
 
@@ -74,9 +73,10 @@ The steps are shown below:
 
 1. Go to My Apps section> Choose App> Create Custom App. The following screen appears
 
-![CustomAPP-Creation1.PNG](/staticfiles/root/media/CustomAPP-Creation1.PNG.png)
+![CustomAPP-Creation1](/staticfiles/root/media/CustomAPP-Creation1.png)
 
 2. In the Custom App Creation Screen the section are divided into - **App Details, Version Details, Protocol Setup & Adapter.**
+![CustomAPP-Creation2](/staticfiles/root/media/CustomAPP-Creation2.png)
 
 **Protip**  App Name will take up to 30 characters and will not allow special character except underscore(_)and dot(.){: .notice--info}
 
@@ -90,25 +90,34 @@ The steps are shown below:
 4. Click Continue button, it will direct to the Version detail page. Enter the details of the version of the App. The version screen will allow specifying the version number, 
    version description, version definition, supported version, Adapter template.
 
+![CustomAPP-Creation3](/staticfiles/root/media/CustomAPP-Creation3.png)
+
 5. Click Continue button, it will direct to the Protocol Setup Page. Enter the mandatory field like Protocol Name, Protocol Method.
+
+![CustomAPP-Creation4](/staticfiles/root/media/CustomAPP-Creation4.png)
 
 Protocol setup will have two sections: 
  1. Either create new protocol on fly which will require them to create protocol file 
  2. OR Select from the generic protocol. The generic protocol will generally have adapter assigned to it, if not the adapter needed to be uploaded to next screen.
 
 You can upload/create a Template File. (If you upload a file then it has to be in XSLT format else an error message will be shown).
+
+![CustomApp-AddNamespace](/staticfiles/root/media/CustomApp-AddNamespace.png)
+
 In the Add Namespace portion, you can add new namespace by filling Prefix and URL field.
 The namespaces added to the template file will be applied to root node only during XSLT generation.
 
 6. Click Continue button, it will direct to the Adapter page.Here you can `Upload Adapter or Select Adapter`.
+![CustomApp-UploadAdapter](/staticfiles/root/media/CustomApp-UploadAdapter.png)
 
 **ProTip:**
 1. If the generic protocol is selected which already have an adapter specified, this section will show that adapter is already selected and only allow extension upload. 
 2. If the generic protocol does not have adapter uploaded, the upload adapter option will be enabled.
 {: .notice--info}
 
-
-  * Select Adapter provides you the option to select Adapter from the list:
+  * Select Adapter provides you the option to select Adapter from the list
+  
+  ![CustomApp-SelectAdapter](/staticfiles/root/media/CustomApp-SelectAdapter.png)
   * In case of  Upload Adapter, you must give File Name, File Title, Assembly Version and upload Adapter.
   
 The Upload adapter will allow either selecting generic adapter or upload adapter file specifically.
@@ -117,7 +126,9 @@ The Upload adapter will allow either selecting generic adapter or upload adapter
 {: .notice--info}
 
 * You can also check the Checkbox in case it is a 3rd party adapter.
+
 * If you try to upload Extension, follow the steps in Adapter.
+![CustomApp-Extension](/staticfiles/root/media/CustomApp-Extension.png)
 
 6. Click Continue button, it will redirect you to the Credential section.
 
@@ -143,16 +154,17 @@ The steps are given below:
 
 2. In the screen, Provide the **APP NAME and DESCRIPTION**, Choose the **Adapter Technology** and click SAVE.
 
-![TechnologyApp-Creation Screen2](/staticfiles/root/media/TechnologyApp-Creation Screen2.png)
-**Protip** Currently we are using only three Adapter Technology – FILE, REST, and OLEDB. {: .notice--info}
+![TechnologyApp-CreationScreen2](/staticfiles/root/media/TechnologyApp-CreationScreen2.png)
+
+**Protip** Currently we are using only these Technology Adapter – FILE, REST, OLEDB & FT. {: .notice--info}
 
 3.	Now you can view the technology application name, successfully added to your List of APPLICATIONS with a default Image. 
 
-![TechnologyApp-Creation Screen3](/staticfiles/root/media/TechnologyApp-Creation Screen3.png)
+![TechnologyApp-CreationScreen3](/staticfiles/root/media/TechnologyApp-CreationScreen3.png)
 
 4.  You can edit and add image to your app anytime, by clicking on the VIEW button beside the application name.
 
-### APPSeCONNECT Schema/Entity-
+### APPSeCONNECT Schema/Entity
  
  An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
 
@@ -223,6 +235,7 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.
 
 ![CreateConnection1](/staticfiles/root/media/CreateConnection1.png)
+
 9. Activate default touchpoint button will be checked by default.
 Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.
 
@@ -233,6 +246,7 @@ Select the connection, provide the connection name and select the protocol. Clic
 ![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)
 
 11. On selecting View connection, all the touchpoints of the connection will be displayed.
+
 ![Touchpoint-List](/staticfiles/root/media/Touchpoint-List.png)
 
 12. Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.

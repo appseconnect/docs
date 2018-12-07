@@ -647,10 +647,10 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of genericrest Adapters",
-      excerpt: "title: “Overview of Generic Rest Adapters” toc: true tag: developers category: “APPSeCONNECT” menus: header: title: Adapter icon: fa fa-adapter weight:...",
-      categories: [],
-      tags: [],
+      title: "Overview of Generic Rest Adapters",
+      excerpt: "Generic REST Adapter is a software which provides REST applications a leverage to communicate and adapt with the AEC Portal....",
+      categories: ["APPSeCONNECT"],
+      tags: ["developers"],
       id: 70
     });
     
@@ -1525,9 +1525,9 @@ var store = [
     
       
       {
-        "title": "Overview of genericrest Adapters",
-        "url": "/Overview-of-GenericRest-Adapters/",
-        "excerpt": "title: “Overview of Generic Rest Adapters” toc: true tag: developers category: “APPSeCONNECT” menus: header: title: Adapter icon: fa fa-adapter weight:...",
+        "title": "Overview of Generic Rest Adapters",
+        "url": "/appseconnect/Overview-of-GenericRest-Adapters/",
+        "excerpt": "Generic REST Adapter is a software which provides REST applications a leverage to communicate and adapt with the AEC Portal....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
