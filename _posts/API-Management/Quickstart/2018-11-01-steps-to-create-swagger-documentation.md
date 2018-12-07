@@ -8,7 +8,7 @@ menus:
     quickstartapi:
         icon: fa fa-gg
         category: "Quickstart"
-        title: "Create Swagger Documentation"
+        title: "Creating Swagger Documentation"
         identifier: quickstartswagger
 ---
 

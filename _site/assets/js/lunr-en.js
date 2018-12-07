@@ -719,11 +719,38 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Overview of Connectors",
+      excerpt: "\n",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 78
+    });
+    
+  
+    idx.add({
+      title: "Overview of Connectors",
+      excerpt: "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 79
+    });
+    
+  
+    idx.add({
+      title: "Magento2 Configuration",
+      excerpt: "\n",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 80
+    });
+    
+  
+    idx.add({
       title: null,
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: [],
       tags: null,
-      id: 78
+      id: 81
     });
     
   
@@ -732,7 +759,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
       categories: [],
       tags: null,
-      id: 79
+      id: 82
     });
     
   
@@ -1605,6 +1632,39 @@ var store = [
         "title": "Cors policy",
         "url": "/api-management/cors/",
         "excerpt": "Cross-Origin Resource Sharing (CORS) Policy is a mechanism which allows restriction to domain access. Domains configured by the User is...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Connectors",
+        "url": "/connectors/Shopify/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Connectors",
+        "url": "/connectors/Overview-of-Connectors/",
+        "excerpt": "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Magento2 Configuration",
+        "url": "/connectors/Magento2/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

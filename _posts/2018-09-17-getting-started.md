@@ -5,7 +5,7 @@ tag: developers
 category: "APPSeCONNECT"
 menus: 
     header:
-        title: Getting Started
+        title: "Getting Started"
         icon: fa fa-play
         weight: 2
        
