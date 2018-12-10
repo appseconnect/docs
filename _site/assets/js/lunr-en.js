@@ -674,7 +674,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Agent Blocking",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -683,7 +683,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Agent Deactivating",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -692,7 +692,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Cloud and OP",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -701,7 +701,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Environment Overview",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -719,11 +719,29 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Overview of Connectors",
+      excerpt: "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 78
+    });
+    
+  
+    idx.add({
+      title: "Overview of Technology Connectors",
+      excerpt: "\n",
+      categories: ["Technology"],
+      tags: ["developers"],
+      id: 79
+    });
+    
+  
+    idx.add({
       title: null,
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: [],
       tags: null,
-      id: 78
+      id: 80
     });
     
   
@@ -732,7 +750,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
       categories: [],
       tags: null,
-      id: 79
+      id: 81
     });
     
   
@@ -1558,29 +1576,7 @@ var store = [
     
       
       {
-        "title": "Deployment of Connectors",
-        "url": "/appseconnect/Cloud-&-OnPremise/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Deployment of Connectors",
-        "url": "/appseconnect/Enviornment-Overview/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Deployment of Connectors",
+        "title": "Agent Blocking",
         "url": "/appseconnect/Agent-Blocking/",
         "excerpt": "\n",
         "teaser":
@@ -1591,8 +1587,30 @@ var store = [
     
       
       {
-        "title": "Deployment of Connectors",
+        "title": "Agent Deactivating",
         "url": "/appseconnect/Agent-Deactivating/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Cloud and OP",
+        "url": "/appseconnect/Cloud-&-OnPremise/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Environment Overview",
+        "url": "/appseconnect/Enviornment-Overview/",
         "excerpt": "\n",
         "teaser":
           
@@ -1605,6 +1623,28 @@ var store = [
         "title": "Cors policy",
         "url": "/api-management/cors/",
         "excerpt": "Cross-Origin Resource Sharing (CORS) Policy is a mechanism which allows restriction to domain access. Domains configured by the User is...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Connectors",
+        "url": "/connectors/Overview-of-Connectors/",
+        "excerpt": "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Technology Connectors",
+        "url": "/technology/Overview-of-technology-connectors/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

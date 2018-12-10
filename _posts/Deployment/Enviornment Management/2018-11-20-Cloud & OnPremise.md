@@ -1,11 +1,11 @@
 ---
-title: "Deployment of Connectors"
+title: "Cloud and OP"
 toc: true
 tag: developers
 category: "APPSeCONNECT"
 menus: 
-    header:
-        title: Deployment
+    environment:
+        title: "Cloud and OP"
         icon: fa fa-deployment
         weight: 7
         

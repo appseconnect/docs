@@ -1,12 +1,12 @@
 ---
-title: "Deployment of Connectors"
+title: "Environment Overview"
 toc: true
 tag: developers
 category: "APPSeCONNECT"
 menus: 
-    header:
-        title: Deployment
+    deployment:
+        title: "Environment"
         icon: fa fa-deployment
         weight: 7
-        
+        identifier: environment
 ---

@@ -3,12 +3,11 @@ title: "Getting started with deployment"
 toc: true
 tag: developers
 category: "Deployment"
-weight: 2
 menus: 
     deployment:
         icon: fa fa-gg
         title: "Getting started"
-        identifier: deployement
+        identifier: gsdeployment
                 
 ---
 
