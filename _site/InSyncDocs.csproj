@@ -713,8 +713,8 @@
     <None Include="_posts\Deployment\2018-11-20-gettingstarted-with-deployment.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Cloud &amp; OnPremise.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Enviornment Overview.md" />
-    <None Include="_posts\Deployment\Licensing\2018-11-20-Agent Blocking.md" />
-    <None Include="_posts\Deployment\Licensing\2018-11-20-Agent Deactivating.md" />
+    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Agent Blocking.md" />
+    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Agent Deactivating.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-architecture-design-runtime.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-overview.md" />
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />
