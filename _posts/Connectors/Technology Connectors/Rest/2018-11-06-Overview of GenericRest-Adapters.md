@@ -4,11 +4,11 @@ toc: true
 tag: developers
 category: "APPSeCONNECT"
 menus: 
-    header:
-        title: Adapter
-        icon: fa fa-adapter
+    technologyconnector :
+        title: "REST"
+        icon: fa fa-wpexplorer
         weight: 7
-        
+        identifier: resttechnology
 ---
 
 Generic REST Adapter is a software which provides REST applications a leverage to communicate and adapt with the 

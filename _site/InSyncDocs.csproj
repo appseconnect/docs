@@ -704,6 +704,8 @@
     <None Include="_posts\Connectors\2018-12-07-Overview of Connectors.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-06-Shopify.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-07-Magento2.md" />
+    <None Include="_posts\Connectors\Application Connectors\Overview of Application Connectors.md" />
+    <None Include="_posts\Connectors\Technology Connectors\2018-12-07-Overview of technology connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Authentication &amp; Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-BasicAuthentication.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Overview of GenericRest-Adapters.md" />

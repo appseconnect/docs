@@ -2,12 +2,12 @@
 title: "Overview of Connectors"
 toc: true
 tag: developers
-category: "Connectors"
+category: "Application"
 menus: 
-    header:
-        title: "Connectors"
+    Connectors:
+        title: "Application"
         weight: 6
         icon: fa fa-file-word-o
-        identifier: Connectors
+        identifier: applicationconnector
 ---
 

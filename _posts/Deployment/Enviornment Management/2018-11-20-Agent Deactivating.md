@@ -1,11 +1,11 @@
 ---
-title: "Deployment of Connectors"
+title: "Agent Deactivating"
 toc: true
 tag: developers
 category: "APPSeCONNECT"
 menus: 
-    header:
-        title: Deployment
+    environment:
+        title: "Deactivating"
         icon: fa fa-deployment
         weight: 7
         

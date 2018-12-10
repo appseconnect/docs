@@ -5,8 +5,8 @@ tag: developers
 category: "Adapters"
 weight:7
 menus: 
-   adapters:
-         icon: fa fa-gg
+   resttechnology:
+        icon: fa fa-gg
         category: "Authentication of REST Adapters"
         title: "Authentication of REST Adapters"
         identifier: authentication

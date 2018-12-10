@@ -674,7 +674,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Agent Blocking",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -683,7 +683,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Agent Deactivating",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -692,7 +692,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Cloud and OP",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -701,7 +701,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment of Connectors",
+      title: "Environment Overview",
       excerpt: "\n",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
@@ -720,7 +720,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Overview of Connectors",
-      excerpt: "\n",
+      excerpt: "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 78
@@ -728,9 +728,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of Connectors",
-      excerpt: "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
-      categories: ["Connectors"],
+      title: "Overview of Technology Connectors",
+      excerpt: "\n",
+      categories: ["Technology"],
       tags: ["developers"],
       id: 79
     });
@@ -1576,29 +1576,7 @@ var store = [
     
       
       {
-        "title": "Deployment of Connectors",
-        "url": "/appseconnect/Cloud-&-OnPremise/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Deployment of Connectors",
-        "url": "/appseconnect/Enviornment-Overview/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Deployment of Connectors",
+        "title": "Agent Blocking",
         "url": "/appseconnect/Agent-Blocking/",
         "excerpt": "\n",
         "teaser":
@@ -1609,8 +1587,30 @@ var store = [
     
       
       {
-        "title": "Deployment of Connectors",
+        "title": "Agent Deactivating",
         "url": "/appseconnect/Agent-Deactivating/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Cloud and OP",
+        "url": "/appseconnect/Cloud-&-OnPremise/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Environment Overview",
+        "url": "/appseconnect/Enviornment-Overview/",
         "excerpt": "\n",
         "teaser":
           
@@ -1632,8 +1632,8 @@ var store = [
       
       {
         "title": "Overview of Connectors",
-        "url": "/connectors/Shopify/",
-        "excerpt": "\n",
+        "url": "/connectors/Overview-of-Connectors/",
+        "excerpt": "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -1642,9 +1642,9 @@ var store = [
     
       
       {
-        "title": "Overview of Connectors",
-        "url": "/connectors/Overview-of-Connectors/",
-        "excerpt": "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+        "title": "Overview of Technology Connectors",
+        "url": "/technology/Overview-of-technology-connectors/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

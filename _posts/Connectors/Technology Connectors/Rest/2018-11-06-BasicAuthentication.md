@@ -5,8 +5,8 @@ tag: developers
 category: "Adapters"
 weight:6
 menus: 
-  adapters:
-         icon: fa fa-gg
+  resttechnology:
+        icon: fa fa-gg
         category: "Basic Authentication"
         title: "Basic Authentication"
         identifier: basicauthentication
