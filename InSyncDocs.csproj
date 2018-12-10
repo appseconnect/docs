@@ -637,6 +637,7 @@
     <Content Include="staticfiles\workflow-management\media\WorkflowPage.png" />
     <Content Include="staticfiles\workflow-management\media\Workflow_dialog.png" />
     <Content Include="staticfiles\workflow-management\media\Workflow_Landing.png" />
+    <Content Include="_posts\Workflow-Management\Troubleshooting\Searchfolder.png" />
     <None Include="assets\css\main.scss" />
     <None Include="assets\js\plugins\ajaxify\ajaxify.jquery.json" />
     <None Include="assets\js\plugins\ajaxify\bower.json" />
@@ -703,6 +704,9 @@
     <None Include="_posts\API-Management\use-cases\2018-09-18-create-api-connecting-to-api.md" />
     <None Include="_posts\API-Management\use-cases\2018-09-19-create-api-connecting-to-webhook.md" />
     <None Include="_posts\apps-management\how-to-guides\2019-08-15-handling-schemas-on-apps.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Authentication &amp; Authorization.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-BasicAuthentication.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Overview of GenericRest-Adapters.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\Generic Rest Adapter\2018-11-06-Authentication &amp; Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\Generic Rest Adapter\2018-11-06-BasicAuthentication.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\Generic Rest Adapter\2018-11-06-Overview of GenericRest-Adapters.md" />
@@ -715,7 +719,7 @@
     <None Include="_posts\Workflow-Management\2018-09-17-architecture-design-runtime.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-overview.md" />
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />
-    <None Include="_posts\Workflow-Management\2018-09-30-faqs.md" />
+    <None Include="_posts\Workflow-Management\2018-10-11-faqs.md" />
     <None Include="_posts\Workflow-Management\How-to guides\2018-08-20-choosing-apps-for-integration.md" />
     <None Include="_posts\Workflow-Management\How-to guides\2018-09-20-deploying-and-executing.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-20-workflow-nodes-and-links.md" />
@@ -739,6 +743,7 @@
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-19-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-20-attribute-mapping-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-21-debugging-a-workflow.md" />
+    <None Include="_posts\Workflow-Management\Troubleshooting\2018-10-11-Troubleshooting.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-27-basic-workflow-customer-download.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-27-common-use-cases-on-workflow-management.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-27-delay-execution-in-workflow.md" />

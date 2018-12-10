@@ -3,7 +3,7 @@ title: "Basic Authentication "
 toc: true
 tag: developers
 category: "Adapters"
-weight: 6
+weight:6
 menus: 
   adapters:
         icon: fa fa-gg
@@ -14,22 +14,15 @@ menus:
 # Process to Configure Basic Authentication in Generic Rest Adapter
 To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
 
-1. Login to APPSeCONNECT Portal and choose the desired application (Rest Supported Application).
+1. Login to APPSeCONNECT Portal and choose the desired application. Follow APP Selection process.
 
-2. Create Connection between the application.
+2. Create Connection between the application  as shown below. 
 
-**Protip:** Here you will get a connection for Shopify (REST Supported Application) where you can view the validation
-details as required {: .notice--info}.
+![Connectioncreation-restadapter](/staticfiles/root/media/Connectioncreation-restadapter.PNG)
 
-**SHOPIFY is BASIC AUTH supported**, inputs these details.
+3. Login to the agent and the following screen will appear. 
 
-* Base URL
-* Username 
-* Password
-
-3. Login to the agent and Choose Basic.
-
-![BasicAuthentation-Rest](/staticfiles/generic/media/BasicAuthentation-Rest.png)
+![RestApi_authentication](/staticfiles/root/media/RestApi_authentication.PNG)
 
 The generic rest api screen contains the following fields:
 
@@ -41,18 +34,14 @@ The generic rest api screen contains the following fields:
   b) Basic — Basic uses base64 encoding. Because user passwords are not encrypted and the target server is not authenticated, Basic is not a secure authentication.
   Here you have to select the Authentication type as `Basic'.
 
-Input the required details on the basic authentication screen of the REST ADAPTER.
-
-![BasicAuthentation-Inputdetails](/staticfiles/generic/media/BasicAuthentation-Inputdetails.png)
-
-* Base URL - Input the Base URL
 * User Name - The user name for authentication.
 * Password -  The password for authentication.
 * Content-Type - This is the content type section that includes the file format types like XML, JSON
 
-4.  Now click on the Content-Type Tab and the following screen appears
+4. Now click on the Content-Type Tab and the following screen appears
 
-![BasicAuthentation-ContentType](/staticfiles/generic/media/BasicAuthentation-ContentType.png)
+![RestApi_ContentType](/staticfiles/root/media/RestApi_ContentType.PNG)
+
 
 Presently the REST Adapter supports two set of content type conversion- XML and JSON
 
@@ -67,18 +56,22 @@ REST response configuration. {: .notice--info}
 
 5. Select the Content-Type from the drop down list and Click on Validate button for validating the URL.
 
-![BasicAuthentation-Validation](/staticfiles/root/media/BasicAuthentation-Validation.png)
+![RestApi_ContentType1](/staticfiles/root/media/RestApi_ContentType1.PNG)
 
-6. Similarly go to App Configuration option and enter the server details for the application (here we have choosen
-SAP B1 as another application) which is not based on REST API.
+6. Now go to App Configuration option and enter the server details for the application (here we have choosen
+SAP B1 as another application) which is not based on REST Api.
 
-7. Click on Validate button for validating the URL.
+![SAPDI-ServerDetails](/staticfiles/root/media/SAPDI-ServerDetails.PNG)
+ 
+Click on Validate button for validating the URL.
 
 7. Now Go to the sync panel to run the sync process
 
+![SyncPanel](/staticfiles/root/media/SyncPanel.PNG)
+
 8. Click on connections tab to view the connection between two applications. 
 
-
+![ConnectionPage1](/staticfiles/root/media/ConnectionPage1.PNG)
 
 
 
