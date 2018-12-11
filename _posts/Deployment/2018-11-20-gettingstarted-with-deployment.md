@@ -85,4 +85,4 @@ https://appsdrive.blob.core.windows.net/
 https://services.appseconnet.com/
 
 **Protip:** We also require you to keep some of the Ports Open for APPSeCONNECT. 
-Here is the list : 8080, 443, 59051, 59050. {: .notice--info}
+Here is the list : 8080, 443, 59051, 59050.{: .notice--info}
