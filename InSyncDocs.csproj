@@ -38,11 +38,8 @@
     <Folder Include="_posts\apps-management\concepts\" />
     <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
-    <Folder Include="_posts\Connectors\Custom Connectors\" />
-    <Folder Include="_posts\Connectors\Technology Connectors\Database\OLEDB Adapter\" />
+    <Folder Include="_posts\Connectors\Technology Connectors\Database\" />
     <Folder Include="_posts\Connectors\Technology Connectors\File System\" />
-    <Folder Include="_posts\Deployment\Transactional Stores\HANA Plugin\" />
-    <Folder Include="_posts\Deployment\Transactional Stores\MYSQL Plugin\" />
     <Folder Include="_posts\Deployment\Troubleshooting\" />
     <Folder Include="_posts\Deployment\Upgradation &amp; Migration\" />
     <Folder Include="_posts\Rules\" />
@@ -730,6 +727,7 @@
     <None Include="_posts\Connectors\Application Connectors\2018-12-06-Shopify.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-07-Magento2.md" />
     <None Include="_posts\Connectors\Application Connectors\Overview of Application Connectors.md" />
+    <None Include="_posts\Connectors\Custom Connectors\2018-12-06-overview-of-custom-connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\2018-12-07-Overview of technology connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Authentication &amp; Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-OAuth2.0.md" />
@@ -739,10 +737,14 @@
     <None Include="_posts\Deployment\2018-12-10- settings.md" />
     <None Include="_posts\Deployment\2018-11-20- overview.md" />
     <None Include="_posts\Deployment\2018-11-20-gettingstarted-with-deployment.md" />
+    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Agent Blocking &amp; Unblocking.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Cloud &amp; OnPremise.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Enviornment Overview.md" />
-    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Agent Blocking.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Agent Deactivating.md" />
+    <None Include="_posts\Deployment\Transactional Stores\2018-11-21-hana-plugin-installation.md" />
+    <None Include="_posts\Deployment\Transactional Stores\2018-11-23-OLE-db-plugin-installation.md" />
+    <None Include="_posts\Deployment\Transactional Stores\2018-11-22-MYSQL-plugin-installation.md" />
+    <None Include="_posts\Deployment\Transactional Stores\Overview of Plugin.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-What is an Adapter.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-02-How to develop an Adapter.md" />
@@ -753,6 +755,8 @@
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Implementing Resync.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Logging &amp; Tracking.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Understanding Connectivity.md" />
+    <None Include="_posts\SDK\Postrequisite\2018-12-17-testing-and-uploading-adapter-to-appseconnect-cloud.md" />
+    <None Include="_posts\SDK\Postrequisite\2018-12-18-upgrading-and-reversioning-adapters.md" />
     <None Include="_posts\SDK\Prerequisites\2018-12-10-Prerequisites.md" />
     <None Include="_posts\SDK\Prerequisites\2018-12-11-Development Guidelines.md" />
     <None Include="_posts\SDK\Prerequisites\2018-12-12-Do%27s &amp; Dont%27s for SDK.md" />
