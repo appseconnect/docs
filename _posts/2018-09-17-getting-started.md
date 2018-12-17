@@ -52,7 +52,7 @@ This section gives the overall idea about chhosing application, configuring conn
 Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details.
 
 ## Choosing Application
-## (1) Process of Choosing App 
+##  Process of Choosing App 
 1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
@@ -61,108 +61,6 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
 
-APPSeCONNECT provides an option to Create `Custom application` and `Technology application` (organization specific) for the users.
-Any App once added is assigned to a particular category. 
-
- Both the process of application creation is given below.
-
-### (a) Custom App Creation
-
-The feature of custom app creation enbles you to create a custom app with all the required credentials.
-The steps are shown below:
-
-1. Go to My Apps section> Choose App> Create Custom App. The following screen appears
-
-![CustomAPP-Creation1](/staticfiles/root/media/CustomAPP-Creation1.png)
-
-2. In the Custom App Creation Screen the section are divided into - **App Details, Version Details, Protocol Setup & Adapter.**
-![CustomAPP-Creation2](/staticfiles/root/media/CustomAPP-Creation2.png)
-
-**Protip**  App Name will take up to 30 characters and will not allow special character except underscore(_)and dot(.){: .notice--info}
-
-3. Enter details like - App Name, Description, Category, Stage, Status, Is Cloud Supported, Choose Picture.
-
-* Stage indicates, in what state the App is, for example, it might be in development stage or design stage.
-* Some of the predefined categories are : ERP, ECommerce, CRM, Accounting, etc.
-* Stage indicates, in what state the App is, for example, it might be in development stage or design stage.
-* The Is Cloud Supported checkbox is to check if the version of the App is cloud supported.
-
-4. Click Continue button, it will direct to the Version detail page. Enter the details of the version of the App. The version screen will allow specifying the version number, 
-   version description, version definition, supported version, Adapter template.
-
-![CustomAPP-Creation3](/staticfiles/root/media/CustomAPP-Creation3.png)
-
-5. Click Continue button, it will direct to the Protocol Setup Page. Enter the mandatory field like Protocol Name, Protocol Method.
-
-![CustomAPP-Creation4](/staticfiles/root/media/CustomAPP-Creation4.png)
-
-Protocol setup will have two sections: 
- 1. Either create new protocol on fly which will require them to create protocol file 
- 2. OR Select from the generic protocol. The generic protocol will generally have adapter assigned to it, if not the adapter needed to be uploaded to next screen.
-
-You can upload/create a Template File. (If you upload a file then it has to be in XSLT format else an error message will be shown).
-
-![CustomApp-AddNamespace](/staticfiles/root/media/CustomApp-AddNamespace.png)
-
-In the Add Namespace portion, you can add new namespace by filling Prefix and URL field.
-The namespaces added to the template file will be applied to root node only during XSLT generation.
-
-6. Click Continue button, it will direct to the Adapter page.Here you can `Upload Adapter or Select Adapter`.
-![CustomApp-UploadAdapter](/staticfiles/root/media/CustomApp-UploadAdapter.png)
-
-**ProTip:**
-1. If the generic protocol is selected which already have an adapter specified, this section will show that adapter is already selected and only allow extension upload. 
-2. If the generic protocol does not have adapter uploaded, the upload adapter option will be enabled.
-{: .notice--info}
-
-  * Select Adapter provides you the option to select Adapter from the list
-  
-  ![CustomApp-SelectAdapter](/staticfiles/root/media/CustomApp-SelectAdapter.png)
-  * In case of  Upload Adapter, you must give File Name, File Title, Assembly Version and upload Adapter.
-  
-The Upload adapter will allow either selecting generic adapter or upload adapter file specifically.
-
-**ProTip:** The Adapter needs to be in Zip Format else will show an Error message. Selection of the adapter is restricted to only one 
-{: .notice--info}
-
-* You can also check the Checkbox in case it is a 3rd party adapter.
-
-* If you try to upload Extension, follow the steps in Adapter.
-![CustomApp-Extension](/staticfiles/root/media/CustomApp-Extension.png)
-
-6. Click Continue button, it will redirect you to the Credential section.
-
-After execution of all the steps mentioned above you have created a custom App successfully.
-The newly created app, can be viewed in the app listing section. 
-
-**ProTip:** The user can edit & delete the custom app & technology app {: .notice--info}
-
-### (b) Technology App Creation
-
-The feature of technolgy app creation  in APPSeCONNECT is to ease the process of adding Organisation 
-Specific App.
-
-Previously, for every addition of Organisation Specific Application, you had to provide inputs like - Version Details, Protocol Setup etc. as in a custom way. 
-Techology App Creation wizard provides a single screen where input details like Application Name, Description and the Adapter Technology for adding an Organisation Specific App can be provided in one
-go.
-
-The steps are given below:
-
-1.	Go to My Apps section> Choose App> Create Technology App. Click on the drop-down icon and select Create Technology APP.
-
-![TechnologyApp-Creation](/staticfiles/root/media/TechnologyApp-Creation.png)
-
-2. In the screen, Provide the **APP NAME and DESCRIPTION**, Choose the **Adapter Technology** and click SAVE.
-
-![TechnologyApp-CreationScreen2](/staticfiles/root/media/TechnologyApp-CreationScreen2.png)
-
-**Protip** Currently we are using only these Technology Adapter – FILE, REST, OLEDB & FT. {: .notice--info}
-
-3.	Now you can view the technology application name, successfully added to your List of APPLICATIONS with a default Image. 
-
-![TechnologyApp-CreationScreen3](/staticfiles/root/media/TechnologyApp-CreationScreen3.png)
-
-4.  You can edit and add image to your app anytime, by clicking on the VIEW button beside the application name.
 
 ### APPSeCONNECT Schema/Entity
  

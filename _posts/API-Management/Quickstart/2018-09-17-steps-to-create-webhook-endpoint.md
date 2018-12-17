@@ -27,6 +27,7 @@ of webhook and that data can then be synced to other apps via APPSeCONNECT Integ
 Platform in real time using real-time API.
 
 Follow these steps to create a Webhook API with **APPSeCONECT**
+
 ## Prerequisites
 
 As per requirement, before you start creating a new API Proxy, you need to make sure you meet all the 
@@ -50,11 +51,11 @@ depicting Proxy, select the section to navigate to it.
 
 ![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.PNG)
 
-*  Inside **APIManagementSection** you can see Webhooks and Proxy.By defeault,Webhook section will be
-  shown.You can see all your connections listed here.
+*  Inside **APIManagementSection** you can see Webhooks and Proxy.By default,Webhook section will be
+   shown. You can see all your connections listed here.
 
 * If you do not have a registered URL with **APPSeCONNECT** you have to Register a URL for your organization.Here is how to do it.
-   Click on Register URL button. Upon clicking you will get a  popup like this.
+  Click on Register URL button. Upon clicking you will get a  popup like this.
 
 ![Register Url Org](/staticfiles/api-management/media/register-url-org.PNG)
 

@@ -51,16 +51,16 @@ Here you will view the Organization Information, Base URL, Proxy API URL, Schema
 7. Select the Schema as HTTP from the drop down list and now you have to activate the `Authorize` button. 
  for Authorizing the SWAGGER which asks for a Username and Password.
 
-**ProTip:** Every-time, you open the SWAGGER window, you need to generate the username and password {: .notice--info}.
+**ProTip:** Every-time, you open the SWAGGER window, you need to re-generate the username and password{: .notice--info}.
 
 8. Go to APPSeCONNECT Portal> API> Proxy> Click on the `AUTHENTICATION` button (Top Right Corner), on the APPSeCONNECT Cloud Portal.
 
 ![authentication-proxy](/staticfiles/api-management/media/authentication-proxy.png)
 
 9. The following screen appears. Select your User Organisation from the drop-down menu and it will automatically generate the 
- Username and Password.
+ Username and Password. Click on the Re-generate button to regenerate the authentication details as and when required.
 
-![authentication-generation](/staticfiles/api-management/media/authentication-generation.png)
+![authentication-re-generation](/staticfiles/api-management/media/authentication-re-generation.png)
 
 10. Click `Authorize` button in the swagger screen. Enter the basic authorization details and click on authorize.	
 You’ll get a confirmation message `AUTHENTICATED` in the same window as shown below.

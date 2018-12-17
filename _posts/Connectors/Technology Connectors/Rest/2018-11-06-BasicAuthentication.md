@@ -27,7 +27,7 @@ details as required {: .notice--info}.
 * Username 
 * Password
 
-3. Login to the agent and Choose Basic.
+3. Login to the agent and Choose `Basic` Authentication Type.
 
 ![BasicAuthentation-Rest](/staticfiles/generic/media/BasicAuthentation-Rest.png)
 
@@ -41,14 +41,22 @@ The generic rest api screen contains the following fields:
   b) Basic — Basic uses base64 encoding. Because user passwords are not encrypted and the target server is not authenticated, Basic is not a secure authentication.
   Here you have to select the Authentication type as `Basic'.
 
+  c) OAuth 2.0 - OAuth 2.0 is the industry-standard protocol for authorization. The OAuth 2.0 authorization framework enables a third-party
+   application to obtain limited access to an HTTP service, either on behalf of a resource owner, or by allowing the third-party application to 
+   obtain access on its own behalf.
+
 Input the required details on the basic authentication screen of the REST ADAPTER.
 
 ![BasicAuthentation-Inputdetails](/staticfiles/generic/media/BasicAuthentation-Inputdetails.png)
 
-* Base URL - Input the Base URL
+* Base URL - Input the Base URL of the Rest Supported APP
 * User Name - The user name for authentication.
 * Password -  The password for authentication.
 * Content-Type - This is the content type section that includes the file format types like XML, JSON
+
+**Protip** Here the username is the API KEY generated against your PRIVATE APP created on Shopify. 
+The pathway for generating new Private App in Shopify is:                                  
+APP>Manage Apps>Create a New Private app {: .notice--info}
 
 4.  Now click on the Content-Type Tab and the following screen appears
 
@@ -65,7 +73,7 @@ the XML response must comply with the XML schema specified during invoke (outbou
 REST response configuration. {: .notice--info}
 
 
-5. Select the Content-Type from the drop down list and Click on Validate button for validating the URL.
+5. Select the Content-Type from the drop down list. Click on **VALIDATE** and **SAVE** after providing the credentials. 
 
 ![BasicAuthentation-Validation](/staticfiles/root/media/BasicAuthentation-Validation.png)
 
@@ -74,9 +82,14 @@ SAP B1 as another application) which is not based on REST API.
 
 7. Click on Validate button for validating the URL.
 
-7. Now Go to the sync panel to run the sync process
+8. Now Go to the sync panel to run the sync process
 
-8. Click on connections tab to view the connection between two applications. 
+9.	After the validation, the touchpoints are published for integration between the REST application SHOPIFY and SAP B1.
+
+10. The touchpoint is executed for the Sync Process by clicking on the START SYNC NOW button.
+
+
+
 
 
 
