@@ -25,6 +25,8 @@ application such that the application can fetch or send data to and fro to the a
 
 **Supported Authentications**
 
+The REST adapter supports a number of [authentication]() modules. 
+
 - No Auth
 - [Basic Auth]()
 - [OAuth 1.0]()

@@ -21,11 +21,11 @@ to these requests. Given below is the process to make requests and send response
 
 The generic rest api authentication types for AEC presently are:
 
-  a) None — No login information in required.
+  a) **No Auth** — No login information in required.
 
-  b) Basic — Basic uses base64 encoding. Because user passwords are not encrypted and the target server is not authenticated, Basic is not a secure authentication.
+  b) **Basic** — [Basic]() uses base64 encoding. Because user passwords are not encrypted and the target server is not authenticated, Basic is not a secure authentication.
   Here you have to select the Authentication type as `Basic'.
 
-  c) OAuth 2.0 - OAuth 2.0 is the industry-standard protocol for authorization. The OAuth 2.0 authorization framework enables a third-party
+  c) **OAuth 2.0** - [OAuth 2.0]() is the industry-standard protocol for authorization. The OAuth 2.0 authorization framework enables a third-party
    application to obtain limited access to an HTTP service, either on behalf of a resource owner, or by allowing the third-party application to 
    obtain access on its own behalf.
