@@ -25,10 +25,10 @@ Given below are common troubleshooting scenarios to ease the debugging areas.
 
 2.  Go to the Adapters inside the APPSeCONNECT system folder.
 3.  Select all the Adapters, except the InSync.eConnect.NLogModule.dll file. Delete the selected files.
-4.	Open and Login the Agent. Do the Update Adapters and Update Configurations.
+4.	Login to the Agent. Do the Update Adapters and Update Configurations.
 
 **Protip:** InSync.eConnect.NLogModule.dll is a system file, generated only during the agent installation. 
-Updating Adapters won't fetch this file back {: .notice--info}
+Updating Adapters will not fetch this file back {: .notice--info}
 
 **Troubleshooting Scenario 2:** - CorrectFileNotFound - While Configuring an Application in the OP Agent
 
@@ -42,12 +42,12 @@ If the adapter file is missing, Click on UPDATE ADAPTERS in the agent.
 ![Error-UpdateAdapter](/staticfiles/deployment/media/Troubleshooting/Error-UpdateAdapter.png)
 
 2.	After Update Adapters, Log Off and Exit your Agent and Open again.
-5.	Check, If the adapter file is present, and still the issue persists. Copy the .dll file and Paste it in a different location. 
+5.	Check If the adapter file is present, and still the issue persists. Copy the .dll file and Paste it in a different location. 
 6.	Delete the .dll from the Adapters folder and paste the copied .dll file back in to the adapters folder.
 7.	Log Off and Exit the agent and Open again. Check your App Configuration Page.
 
-**Troubleshooting Scenario 3:** - Nothing to POST to SAP - Often occurrs while Integrating with SAP 
-even if data's present in the Source Application.
+**Troubleshooting Scenario 3:** - Nothing to POST to SAP – Often occurrs while Integrating with SAP 
+even if data is present in the Source Application.
 
 ![TransactionLog-Error](/staticfiles/deployment/media/Troubleshooting/TransactionLog-Error.png)
 
