@@ -21,7 +21,7 @@ Follow these steps to create a Swagger Documentation of API with **APPSeCONNECT*
 
 ## Prerequisites
 
-As per requirement before you start creating a new swagger documentation for an API, you need to make sure you meet all the 
+As per requirement before you start creating a new swagger documentation for an API you need to make sure you meet all the 
 prerequisites which is given in  [Create a Proxy API](/api-management/steps-to-create-proxy-endpoint/)
 
 The Proxy API section will guide the user to create a new API, Provide Basic Information of API, Versioning of API, Apply Policy, Specify the 

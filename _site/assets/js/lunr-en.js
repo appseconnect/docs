@@ -818,11 +818,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Overview of Connectors",
+      excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 89
+    });
+    
+  
+    idx.add({
       title: "Overview of Custom Connectors",
       excerpt: "APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources....",
       categories: ["Custom"],
       tags: ["developers"],
-      id: 89
+      id: 90
     });
     
   
@@ -831,7 +840,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 90
+      id: 91
     });
     
   
@@ -840,7 +849,7 @@ var idx = lunr(function () {
       excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
       categories: ["Technology"],
       tags: ["developers"],
-      id: 91
+      id: 92
     });
     
   
@@ -848,15 +857,6 @@ var idx = lunr(function () {
       title: "Settings",
       excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
       categories: ["Deployment"],
-      tags: ["developers"],
-      id: 92
-    });
-    
-  
-    idx.add({
-      title: "What is an Adapter",
-      excerpt: "\n",
-      categories: ["SDK"],
       tags: ["developers"],
       id: 93
     });
@@ -881,11 +881,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "What is an Adapter",
+      excerpt: "\n",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 96
+    });
+    
+  
+    idx.add({
       title: "Testing And Uploading Adapter To Appseconnect Cloud",
       excerpt: "Markdown file\n",
       categories: [],
       tags: [],
-      id: 96
+      id: 97
     });
     
   
@@ -894,7 +903,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
       categories: [],
       tags: null,
-      id: 97
+      id: 98
     });
     
   
@@ -903,7 +912,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
       categories: [],
       tags: null,
-      id: 98
+      id: 99
     });
     
   
@@ -1897,6 +1906,17 @@ var store = [
         "title": "MYSQL Plugin",
         "url": "/appseconnect/OLE-db-plugin-installation/",
         "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Connectors",
+        "url": "/connectors/Shopify/",
+        "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
