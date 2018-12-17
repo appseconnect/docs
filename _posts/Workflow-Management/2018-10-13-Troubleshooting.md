@@ -27,7 +27,7 @@ and that is the `RUN button is disabled`.
 
 3. Check the `START` node of the Workflow and now you can view the Run button is in activated mode which signifies the workflow is ready for execution.
 
-4.  Now Run the Workflow and check for `Data Sync Log` in `Agent’s Workflow Panel`and also check `data transaction LOG` for any errors or error messages. 
+4.  Now Run the Workflow and check for `Data Sync Log` in `Agent's Workflow Panel`and also check `data transaction LOG` for any errors or error messages. 
     If there is no error, the SYNC is successful.
 
 **Troubleshoot Category 2: Workflow is executed, but nothing is posted in the Destination Application**
@@ -43,10 +43,10 @@ and that is the `RUN button is disabled`.
 `C:\Users\{user name}\AppData\Local\APPSeCONNECT\Content`
 
 3. If you find the input and the output packet, irrespective of this error code in your AEC system folder 
-(Packet type – Input/Process/Output). Open each of the folders and look for the XML Code errors in it.
+(Packet - type  Input/Process/Output). Open each of the folders and look for the XML Code errors in it.
 
-4. In case, if you don’t get any input or output packets, its probable reason is, your source and 
-destination application are not validated properly, or any of the applications prerequisite hasn’t
+4. In case, if you don't get any input or output packets, its probable reason is, your source and 
+destination application are not validated properly, or any of the applications prerequisite hasn't
 properly made.
 
 **Troubleshoot Category 3: Transformation Failed and skipped further synchronization**
@@ -59,8 +59,7 @@ Similarly, as of the previous one, select and copy the error code and check for 
 
 2. In this case you will get the input packet, as the error says about transformation, you will not get the Transform Packet and the Output packet.
 
-3. This error is due to the mapping of data files. Check for the Mapping in the Transform section of the touchpoint (you’ll find it in the menu bar below the touchpoint) 
+3. This error is due to the mapping of data files. Check for the Mapping in the Transform section of the touchpoint (you'll find it in the menu bar below the touchpoint) 
     you are synchronizing. Now when the mapping is properly done, you are ready to sync the data again.
-
 
 
