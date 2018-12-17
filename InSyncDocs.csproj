@@ -41,7 +41,6 @@
     <Folder Include="_posts\Connectors\Custom Connectors\" />
     <Folder Include="_posts\Connectors\Technology Connectors\Database\OLEDB Adapter\" />
     <Folder Include="_posts\Connectors\Technology Connectors\File System\" />
-    <Folder Include="_posts\Deployment\Settings\" />
     <Folder Include="_posts\Deployment\Transactional Stores\HANA Plugin\" />
     <Folder Include="_posts\Deployment\Transactional Stores\MYSQL Plugin\" />
     <Folder Include="_posts\Deployment\Troubleshooting\" />
@@ -691,6 +690,7 @@
     <None Include="_posts\API-Management\Policies\2018-09-20-ip-restrict.md" />
     <None Include="_posts\API-Management\Policies\2018-09-21-validate-http-header.md" />
     <None Include="_posts\API-Management\Policies\2018-09-22-compression-apply.md" />
+    <None Include="_posts\API-Management\Policies\2018-09-23-response-content-format - Copy.md" />
     <None Include="_posts\API-Management\Policies\2018-09-23-response-content-format.md" />
     <None Include="_posts\API-Management\Quickstart\2018-09-16-quickstart-guides-to-api-management.md" />
     <None Include="_posts\API-Management\Quickstart\2018-09-17-steps-to-create-proxy-endpoint.md" />
@@ -709,6 +709,7 @@
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Authentication &amp; Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-BasicAuthentication.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Overview of GenericRest-Adapters.md" />
+    <None Include="_posts\Deployment\2018-12-10- settings.md" />
     <None Include="_posts\Deployment\2018-11-20- overview.md" />
     <None Include="_posts\Deployment\2018-11-20-gettingstarted-with-deployment.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Cloud &amp; OnPremise.md" />

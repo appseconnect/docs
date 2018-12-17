@@ -737,11 +737,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Settings",
+      excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
+      categories: ["Deployment"],
+      tags: ["developers"],
+      id: 80
+    });
+    
+  
+    idx.add({
       title: null,
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: [],
       tags: null,
-      id: 80
+      id: 81
     });
     
   
@@ -750,7 +759,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
       categories: [],
       tags: null,
-      id: 81
+      id: 82
     });
     
   
@@ -1645,6 +1654,17 @@ var store = [
         "title": "Overview of Technology Connectors",
         "url": "/technology/Overview-of-technology-connectors/",
         "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Settings",
+        "url": "/deployment/settings/",
+        "excerpt": "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
