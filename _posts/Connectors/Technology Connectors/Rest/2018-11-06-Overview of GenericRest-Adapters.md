@@ -11,10 +11,21 @@ menus:
         identifier: resttechnology
 ---
 
-Generic REST Adapter is a software which provides REST applications a leverage to communicate and adapt with the 
-AEC Portal. This adapter is App-specific and is limited to certain apps which are developed using HTTP Protocol 
+Http based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate with any application 
+supporting standard REST protocol and standard authentication mechanisms. This adapter is App-specific and is limited to certain apps which are developed using HTTP Protocol 
 and REST Webservices. 
 
-The REST Adapter can expose integrations as REST APIs by configuring a REST Adapter connection as a trigger. 
-The REST Adapter can also consume any external REST API by configuring a REST Adapter connection as an invoke. 
-This section identifies the capabilities of the REST Adapter when used as a trigger or invoke connection.
+You can use the connector to connect to any REST based data sources or application endpoints by configuring the endpoint inside 
+APPSeCONNECT through APPSeCONNECT portal and define filters and endpoint configurations correctly. Once the endpoints are properly 
+configured for the REST connector, APPSeCONNECT will have access to all the data present in the application, which can later be used either 
+for integration purpose or defining APIs through API management.
+
+When the application is deployed to our portal, you need to provide credentials to connect to the particular endpoint of the 
+application such that the application can fetch or send data to and fro to the application endpoint. 
+
+**Supported Authentications**
+
+- No Auth
+- [Basic Auth]()
+- [OAuth 1.0]()
+- [OAuth 2.0]()
