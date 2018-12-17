@@ -18,7 +18,9 @@ triggered for a specific call, the caller will receive `429 Too Many Requests` a
 ### Policy Statement
 
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
-Below are the list of configurations required for this policy.
+Below are the list of configurations required for this policy. 
+
+Sequence - The order of your policies applied/you want this policy to run.
 
 ![Ip Restrict Policy](/staticfiles/api-management/media/ip-restrict-policy.PNG)
 
@@ -26,8 +28,8 @@ The rules and setup needs to be made accordingly.
 
 |Name|Description|Is Mandatory|Default Value|
 |-----------|--------------------|----------|----------|
-|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|Yes|Infinity|
-|Max Requests|Number of requests to be allowed during the specified timespan|Yes|100|
+|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|Yes|Null|
+|Max Requests|Number of requests to be allowed during the specified timespan|Yes|Null|
 
 ### Policy Usage
 

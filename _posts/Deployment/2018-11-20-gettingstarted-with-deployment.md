@@ -9,6 +9,7 @@ menus:
         title: "Getting started"
         identifier: gsdeployment
                
+               
 ---
 
 This section lets you get started with the deploying processes and components to an environment for APPSeCONNECT.

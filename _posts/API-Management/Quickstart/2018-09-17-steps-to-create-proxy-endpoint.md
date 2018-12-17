@@ -44,17 +44,21 @@ depicting Proxy, select the section to navigate to it.
 details are important to create the face of the API. 
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
-not speicify the version element in the API, you will face lot of challenges in future. 
+not specify the version element in the API, you will face lot of challenges in future. 
+
 ![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.PNG)
-**Note:** For simplicity, APPSeCONNECT Requires the API provider to speicify a default version mandatorily. 
+**Note:** For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily. 
+
 4. Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
+
 ![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.PNG)
 In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
 of the policies applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
 you can continue the wizard. 
 5. The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API. 
+
 ![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.PNG)
 6. The backend needs to be configured correctly by specifying the Application, Schema, and Action. In addition to that
 you can also choose the credential here to connect to the particular data source. 
