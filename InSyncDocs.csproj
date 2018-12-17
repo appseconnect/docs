@@ -720,6 +720,7 @@
     <None Include="_posts\API-Management\Quickstart\2018-09-17-steps-to-create-proxy-endpoint.md" />
     <None Include="_posts\API-Management\Quickstart\2018-09-17-steps-to-create-webhook-endpoint.md" />
     <None Include="_posts\API-Management\Quickstart\2018-11-01-steps-to-create-swagger-documentation.md" />
+    <None Include="_posts\API-Management\Quickstart\2018-12-20-steps-to-assign-parameter-per-actionfilter.md" />
     <None Include="_posts\API-Management\use-cases\2018-09-16-common-use-cases-on-api-management.md" />
     <None Include="_posts\API-Management\use-cases\2018-09-17-create-api-using-custom-datasource.md" />
     <None Include="_posts\API-Management\use-cases\2018-09-18-create-api-connecting-to-api.md" />

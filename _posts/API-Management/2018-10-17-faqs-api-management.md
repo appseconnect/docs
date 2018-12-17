@@ -10,13 +10,13 @@ menus:
         title: "Frequently Asked questions" 
         identifier: apifaqs 
 ---
-`FAQ` is the best way to address frequently asked questions about your business, of course. This section contains list of questions and answers pertaining to a particular subject, especially one giving basic information for users of a website. 
+`FAQ` is the best way to address frequently asked questions about your business. This section contains list of questions and answers pertaining to a particular subject especially one giving basic information for users of a website. 
 
 `API Management` FAQ will help you to get instant solution to basic problems you may face as a first time user or as an user.
 
 **1. What is Registration key?**
  
-To create and avail API server through appseconnect, first step is to register a URL. Register URL is a combination of registration key and appseconnectapi.com. A registration key.Registration key is the unique identification of an organization. For example micky.appeconnectapi.com, here micky sub-domain is  the registration key. 
+To create and avail API server through appseconnect first step is to register a URL. Register URL is a combination of registration key and appseconnectapi.com. A registration key.Registration key is the unique identification of an organization. For example micky.appeconnectapi.com, here micky sub-domain is  the registration key. 
 
 **2. What is Policy?** 
 
@@ -28,11 +28,12 @@ Authentication is the way to authenticate API consumer before accessing the actu
 
 **4. How to test the configured API?**
 
-After creating an API, easily it can be tested. As APPSeCONNECT API management swagger implemented, through swagger it can be tested. There are so many popular http client available in the market. Like postman can be used for testing any API that created in APPSeCONNECT. 
+After creating an API easily it can be tested. As APPSeCONNECT API management swagger is implemented through swagger it can be tested. There are so many popular http client available in the market. Like postman can be used for testing any API that created in APPSeCONNECT. 
 
 **5. Who can be the users of the API/who will be benefitted from API module?**
 
-API management tool within a microservices architecture. It present an API to a user or client device, and then invoke APIs to microservices, harmonizing API and microservices management. An API gateway presents a single API to a device to mask a complex series of microservices access processes
+API management tool is within a microservices architecture. It present an API to a user or client device and then invoke APIs to microservices, harmonizing API and microservices management. 
+An API gateway presents a single API to a device to mask a complex series of microservices access processes
 API Management (APIM) helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
 
 **6. Why do I need to setup Policy in API?** 
@@ -41,7 +42,7 @@ Adding up the Policies in the API ensures more security, restricting unknown sou
 
 **7. How scalable is APPSeCONNECT API Management?**
 
-APPSeCONNECT’s cloud-based API management platform provides the leverage to create, edit and configure APIs for any 3rd party applications enforcing security policy for an API consumption like the IP limits, usage limits and data access limits.
+APPSeCONNECT cloud-based API management platform provides the leverage to create, edit and configure APIs for any 3rd party applications enforcing security policy for an API consumption like the IP limits, usage limits and data access limits.
 
 
 **8. What are the Policies that APPSeCONNECT supports in its API Management?**
@@ -61,7 +62,7 @@ In the API Gateway Pipeline, Policies are executed step-wise. Policies that are 
 
 **11. How many Policy can I provide in a single API?** 
 
-You can add, Multiple Policies in a single API.
+You can add Multiple Policies in a single API.
 
 **12. How many Domains can you add while configuring against CORS Policy?**
 
@@ -69,14 +70,15 @@ You can add multiple domains in CORS Policy for a single API.
 
 **13. Can I ADD policy after creating API?**
 
-Yes, you can add policy even after creating API. You can click on the Edit button beside the API and you select the policy, by clicking on the Policy node.
+Yes you can add policy even after creating an API. You can click on the Edit button beside the API and can select the policy by clicking on the Policy node.
 
 **14. What is API Proxy?**
 
 API Proxy acts as a bridge or a medium which provides access to secured resources with minimum amount of information. 
 
 
-How to build an API 
+**15. How to build an API?**
+
 For Details [Click here](/appseconnect/home/)
 
 **15. What are Webhooks in API?**
