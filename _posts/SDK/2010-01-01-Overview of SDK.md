@@ -3,7 +3,11 @@ title: "What is an Adapter"
 toc: true
 category: "SDK"
 tag: developers
-read_time: true
+menus:
+    header: 
+        icon: fa fa-gg
+        title: "Troubleshooting"
+        identifier: sdk            
 ---
 
 

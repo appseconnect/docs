@@ -2,7 +2,7 @@
 title: "Environment Overview"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "Agent"
 menus: 
     deployment:
         title: "Environment"

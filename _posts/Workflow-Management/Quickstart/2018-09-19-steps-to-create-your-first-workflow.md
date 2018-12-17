@@ -76,15 +76,15 @@ If you are new to Workflow, then go through the below steps to know more.
 
 ![Adding-Touchpoint](/staticfiles/workflow-management/media/Adding-Touchpoint.png)
 
-* Once you’ve provided the details, click OK. The touchpoint will be added. Also Add an ‘End’ node
+* Once you've provided the details, click OK. The touchpoint will be added. Also Add an 'End' node
 
 ![StartEnd-Node](/staticfiles/workflow-management/media/StartEnd-Node.png)
 
-* Connect the ‘Start’ Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
+* Connect the 'Start' Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
 
 ![StartEnd-NodeConnected](/staticfiles/workflow-management/media/StartEnd-NodeConnected.png)
 
-Click on ‘Save’. The workflow is now ready to be executed.
+Click on 'Save'. The workflow is now ready to be executed.
 
 * After all the steps have been completed - Agent & Cloud Configuration, the workflow is ready to be run.
 

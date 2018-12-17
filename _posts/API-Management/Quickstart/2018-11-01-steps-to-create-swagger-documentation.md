@@ -12,7 +12,7 @@ menus:
         identifier: quickstartswagger
 ---
 
-**Swagger** is an Open Source Framework for the documentation of API’s. Swagger is a tools which enables you to generate, visualize and 
+**Swagger** is an Open Source Framework for the documentation of API's. Swagger is a tools which enables you to generate, visualize and 
 maintain your API docs, so that your documentation stays up-to-date as your API evolves. APPSeCONNECT Swagger documentation in portal is an apt platform 
 which helps in easy maintainance of API throughout the evolution of the API Process.
 
@@ -40,7 +40,7 @@ and Response setup of the API.
 
 4. Select the Proxy API for which you want to create swagger documentation. 
 
-5. Now click on “Here is your swagger endpoint” to open the swagger portal.
+5. Now click on `Here is your swagger endpoint` to open the swagger portal.
 
 6. The Swagger window appears as shown below.
   
@@ -63,7 +63,7 @@ Here you will view the Organization Information, Base URL, Proxy API URL, Schema
 ![authentication-re-generation](/staticfiles/api-management/media/authentication-re-generation.png)
 
 10. Click `Authorize` button in the swagger screen. Enter the basic authorization details and click on authorize.	
-You’ll get a confirmation message `AUTHENTICATED` in the same window as shown below.
+You'll get a confirmation message `AUTHENTICATED` in the same window as shown below.
 
 ![swagger-authorization](/staticfiles/api-management/media/swagger-authorization.png)
 
@@ -72,7 +72,7 @@ Once, the Parameter Section gets expanded, Click on TRY IT OUT to execute the pa
 
 ![swagger-parameter-execution](/staticfiles/api-management/media/swagger-parameter-execution.png)
 
-  12.  After clicking on TRY IT OUT, you’ll find an EXECUTE button below. Click on it.
+  12.  After clicking on TRY IT OUT, you'll find an EXECUTE button below. Click on it.
 
 ![execute-button-swagger](/staticfiles/api-management/media/execute-button-swagger.png)
   
