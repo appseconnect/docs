@@ -30,7 +30,7 @@ Given below are common troubleshooting scenarios to ease the debugging areas.
 **Protip:** InSync.eConnect.NLogModule.dll is a system file, generated only during the agent installation. 
 Updating Adapters will not fetch this file back {: .notice--info}
 
-**Troubleshooting Scenario 2:** - CorrectFileNotFound – While Configuring an Application in the OP Agent
+**Troubleshooting Scenario 2:** - CorrectFileNotFound - While Configuring an Application in the OP Agent
 
 ![AppConfig-Error](/staticfiles/deployment/media/Troubleshooting/AppConfig-Error.png)
 
@@ -46,7 +46,7 @@ If the adapter file is missing, Click UPDATE ADAPTERS in the agent.
 6.	Delete the .dll from the Adapters folder and paste the copied .dll file back in to the adapters folder.
 7.	Log Off and Exit the agent and Open again. Check your App Configuration Page.
 
-**Troubleshooting Scenario 3:** - Nothing to POST to SAP – Often occurrs while Integrating with SAP 
+**Troubleshooting Scenario 3:** - Nothing to POST to SAP - Often occurrs while Integrating with SAP 
 even if data is present in the Source Application.
 
 ![TransactionLog-Error](/staticfiles/deployment/media/Troubleshooting/TransactionLog-Error.png)

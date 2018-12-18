@@ -53,12 +53,12 @@ AEC API comes with a set of defined policies that we use in our APPSeCONNECT API
 
 **9. What are Inbound Policy in APPSeCONNECT API MANAGEMENT?**
 
-In the API Gateway Pipeline, Policies are executed step wise. Policies that are declared before the backend Actions are known as the Inbound Policies. Some of the Inbound policies are – `IP Restrict Policy, Validate HTTP Header, Quota Per Key Policy, CORS Policy`
+In the API Gateway Pipeline, Policies are executed step wise. Policies that are declared before the backend Actions are known as the Inbound Policies. Some of the Inbound policies are : `IP Restrict Policy, Validate HTTP Header, Quota Per Key Policy, CORS Policy`
 
 
 **10. What are Outbound Policy in APPSeCONNECT API MANAGEMENT?**
 
-In the API Gateway Pipeline, Policies are executed step-wise. Policies that are declared after the backend Actions are known as the Inbound Policies. Some of the Outbound policies are – `Compression Policy & Response Content Format`.
+In the API Gateway Pipeline, Policies are executed step-wise. Policies that are declared after the backend Actions are known as the Inbound Policies. Some of the Outbound policies are : `Compression Policy & Response Content Format`.
 
 **11. How many Policy can I provide in a single API?** 
 

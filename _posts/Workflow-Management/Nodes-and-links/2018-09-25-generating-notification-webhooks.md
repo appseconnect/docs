@@ -14,7 +14,7 @@ menus:
 
 ## Webhook Callback Action 
 
-The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP POST. When a particular event occurs data is posted to a particular URL. By implementing Webhook user can tell the provider the situations when he/she like to receive data. Whenever there’s something new, the webhook will send it to your URL.
+The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple event-notification via HTTP POST. When a particular event occurs data is posted to a particular URL. By implementing Webhook user can tell the provider the situations when he/she like to receive data. Whenever there's something new, the webhook will send it to your URL.
 
 Components of a Webhook are
 

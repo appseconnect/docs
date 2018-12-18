@@ -2,7 +2,7 @@
 title: "Cloud and OP"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "Agent"
 menus: 
     environment:
         title: "Cloud and OP"

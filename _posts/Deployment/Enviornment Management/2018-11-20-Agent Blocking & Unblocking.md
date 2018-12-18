@@ -2,7 +2,7 @@
 title: "Agent Blocking"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "Agent"
 menus: 
     environment:
         title: "Blocking"

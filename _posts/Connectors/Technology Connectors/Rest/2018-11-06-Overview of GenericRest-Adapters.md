@@ -2,9 +2,9 @@
 title: "Overview of Generic Rest Adapters"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "REST"
 menus: 
-    technologyconnector :
+    technologyconnector:
         title: "REST"
         icon: fa fa-wpexplorer
         weight: 7

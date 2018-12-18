@@ -2,7 +2,7 @@
 title: "Agent Deactivating"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "Agent"
 menus: 
     environment:
         title: "Deactivating"

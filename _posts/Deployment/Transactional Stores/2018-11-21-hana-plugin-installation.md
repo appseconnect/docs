@@ -2,7 +2,7 @@
 title: "HANA Plugin"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "Plugins"
 menus: 
     environment:
         title: "Hana"

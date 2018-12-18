@@ -2,10 +2,10 @@
 title: "Basic Authentication "
 toc: true
 tag: developers
-category: "Adapters"
-weight:6
+category: "REST"
+weight: 6
 menus: 
-  resttechnology:
+    resttechnology:
         icon: fa fa-gg
         category: "Basic Authentication"
         title: "Basic Authentication"
@@ -19,7 +19,7 @@ To configure the Basic Authentication Type for Generic Rest Adapter follow the s
 2. Create Connection between the application.
 
 **Protip:** Here you will get a connection for Shopify (REST Supported Application) where you can view the validation
-details as required {: .notice--info}.
+details as required.
 
 **SHOPIFY is BASIC AUTH supported**, inputs these details.
 
@@ -56,7 +56,7 @@ Input the required details on the basic authentication screen of the REST ADAPTE
 
 **Protip** Here the username is the API KEY generated against your PRIVATE APP created on Shopify. 
 The pathway for generating new Private App in Shopify is:                                  
-APP>Manage Apps>Create a New Private app {: .notice--info}
+APP>Manage Apps>Create a New Private app 
 
 4.  Now click on the Content-Type Tab and the following screen appears
 
@@ -70,7 +70,7 @@ Presently the REST Adapter supports two set of content type conversion- XML and 
 **Protip**  XML documents passed to a REST endpoint that support the XML content type must comply with the
 XML schema specified during trigger (inbound) REST configuration. When the REST invokes a target endpoint, 
 the XML response must comply with the XML schema specified during invoke (outbound) 
-REST response configuration. {: .notice--info}
+REST response configuration.
 
 
 5. Select the Content-Type from the drop down list. Click on **VALIDATE** and **SAVE** after providing the credentials. 

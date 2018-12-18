@@ -74,7 +74,7 @@ Once the Parameter Section gets expanded,  Click on **TRY IT OUT** to execute th
 
 ![swagger-parameter-execution](/staticfiles/api-management/media/swagger-parameter-execution.png)
 
-  12.  After clicking on TRY IT OUT, you’ll find an EXECUTE button below. Click on it.
+  12.  After clicking on TRY IT OUT, you'll find an EXECUTE button below. Click on it.
 
 ![execute-button-swagger](/staticfiles/api-management/media/execute-button-swagger.png)
   

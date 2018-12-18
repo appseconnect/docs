@@ -2,7 +2,7 @@
 title: "MYSQL Plugin"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
+category: "Plugins"
 menus: 
     environment:
         title: "OLE"
@@ -10,4 +10,3 @@ menus:
         weight: 7
         identifier: mysqlplugin
 ---
-
