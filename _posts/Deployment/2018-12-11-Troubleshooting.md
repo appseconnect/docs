@@ -37,7 +37,7 @@ Updating Adapters will not fetch this file back {: .notice--info}
 **Solution**
 
 1.	Check the Adapters folder inside the APPSeCONNECT system folder. Now Check for the Application Adapter (.dll file) present or not. 
-If the adapter file is missing, Click on UPDATE ADAPTERS in the agent.
+If the adapter file is missing, Click UPDATE ADAPTERS in the agent.
 
 ![Error-UpdateAdapter](/staticfiles/deployment/media/Troubleshooting/Error-UpdateAdapter.png)
 

@@ -18,7 +18,7 @@ and in OP Agent. This document will help you to know and configure the Cloud Age
 ### Pre-requisites
 * The Organisation should be cloud Enabled.
 * The two applications between which data has to be synced should be cloud supported.
-* The connection, made for the two applications should be cloud supported.
+* The connection made for the two applications should be cloud supported.
 
 ### Configuration Process
 
@@ -50,7 +50,6 @@ b.	Run the SETUP FILE (as administrator). The Setup wizard opens.
 c.  Click **Next button** to begin the installation process.
 
 d.	Open the Agent after the installation.
-
 
 e.	Hover and activate the cursor on the Login ID field and Press CTRL+F10 for configuring 
     the Base API URL, Connection URL.
