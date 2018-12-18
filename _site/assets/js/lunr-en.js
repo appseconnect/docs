@@ -783,7 +783,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "MYSQL Plugin",
-      excerpt: "This Document provides you the process of installing the SAP HANA Database Plugin in your System and how to use...",
+      excerpt: "This Document provides you the detailed instructions on how to install the MySQL Database ODBC Connector in your System. Prerequisites...",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
       id: 85
@@ -1881,7 +1881,7 @@ var store = [
       {
         "title": "MYSQL Plugin",
         "url": "/appseconnect/MYSQL-plugin-installation/",
-        "excerpt": "This Document provides you the process of installing the SAP HANA Database Plugin in your System and how to use...",
+        "excerpt": "This Document provides you the detailed instructions on how to install the MySQL Database ODBC Connector in your System. Prerequisites...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -5,7 +5,7 @@ tag: developers
 category: "APPSeCONNECT"
 menus: 
     environment:
-        title: "MYSQL"
+        title: "OLE"
         icon: fa fa-deployment
         weight: 7
         identifier: mysqlplugin
