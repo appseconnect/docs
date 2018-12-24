@@ -1,5 +1,5 @@
 ---
-title: "AssignParameters to Action Filter API"
+title: "Steps to define Static and dynamic criterias for an API"
 toc: true
 tag: developers
 category: "API-Management"

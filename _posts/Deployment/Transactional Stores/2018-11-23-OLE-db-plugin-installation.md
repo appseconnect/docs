@@ -4,8 +4,8 @@ toc: true
 tag: developers
 category: "Plugins"
 menus: 
-    environment:
-        title: "MYSQL"
+    plugins:
+        title: "OLE"
         icon: fa fa-deployment
         weight: 7
         identifier: mysqlplugin

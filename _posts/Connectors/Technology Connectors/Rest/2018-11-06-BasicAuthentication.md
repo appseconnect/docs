@@ -54,7 +54,8 @@ Input the required details on the basic authentication screen of the REST ADAPTE
 * Password -  The password for authentication.
 * Content-Type - This is the content type section that includes the file format types like XML, JSON
 
-**Protip** Here the username is the API KEY generated against your PRIVATE APP created on Shopify. 
+**Protip** Here the username is the API KEY generated against your PRIVATE APP created on Shopify {: .notice--info} 
+
 The pathway for generating new Private App in Shopify is:                                  
 APP>Manage Apps>Create a New Private app 
 
