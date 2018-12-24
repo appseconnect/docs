@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Plugins"
 menus: 
-    environment:
+    plugins:
         title: "Hana"
         icon: fa fa-deployment
         weight: 7

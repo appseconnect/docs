@@ -43,8 +43,6 @@
     <Folder Include="_posts\Deployment\Troubleshooting\" />
     <Folder Include="_posts\Deployment\Upgradation &amp; Migration\" />
     <Folder Include="_posts\Rules\" />
-    <Folder Include="_posts\SDK\Developing Plugins\" />
-    <Folder Include="_posts\SDK\Developing Policies\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -750,7 +748,7 @@
     <None Include="_posts\Deployment\Transactional Stores\2018-11-22-MYSQL-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\Overview of Plugin.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
-    <None Include="_posts\SDK\Developing Adapters\2010-01-01-What is an Adapter.md" />
+    <None Include="_posts\SDK\Developing Adapters\2010-01-01-overview-adapters.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-02-How to develop an Adapter.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Designing &amp; Mapping Credentials.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Developing AppResources.md" />
@@ -759,6 +757,8 @@
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Implementing Resync.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Logging &amp; Tracking.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Understanding Connectivity.md" />
+    <None Include="_posts\SDK\Developing Plugins\2010-01-01-overview-plugins.md" />
+    <None Include="_posts\SDK\Developing Policies\2010-01-01-overview-policies.md" />
     <None Include="_posts\SDK\Postrequisite\2018-12-17-testing-and-uploading-adapter-to-appseconnect-cloud.md" />
     <None Include="_posts\SDK\Postrequisite\2018-12-18-upgrading-and-reversioning-adapters.md" />
     <None Include="_posts\SDK\Prerequisites\2018-12-10-Prerequisites.md" />
