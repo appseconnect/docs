@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Plugins"
 menus: 
-    environment:
+    plugins:
         title: "Hana"
         icon: fa fa-deployment
         weight: 7
@@ -45,12 +45,12 @@ As a Pre-requisite for Installing the Plugin, configure the SAP HANA Database. T
 8. Right Click on the Hana Container > Properties > Hosts Used to Connect, to view the Port number.
 ![HanaContainer-Port](/staticfiles/deployment/media/TransactionalStores/HanaContainer-Port.png)
 
-* Driver Name – This your SAP 32 Bit client environments driver name. 
-* ServerIP – This is IP Address of your HANA container.
-* Serverport – This is the port of the HANA container. 
+* Driver Name - This your SAP 32 Bit client environments driver name. 
+* ServerIP - This is IP Address of your HANA container.
+* Serverport - This is the port of the HANA container. 
 * UserID -  Enter HANA Database Username
 * Password -  Enter HANA Database Password
-* Name – Enter name of database.
+* Name - Enter name of database.
 
 
 8.	Click on SAVE. Successful message is delivered once the connection is validated.

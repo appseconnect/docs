@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Plugins"
 menus: 
-    environment:
+    plugins:
         title: "MYSQL"
         icon: fa fa-deployment
         weight: 7
@@ -22,20 +22,30 @@ This Document provides you the detailed instructions on how to install the MySQL
 
 As a Pre-requisite for Installing the Plugin, you need to specify few Configurations. The Detailed Procedure is provided below.
 
-1.	After Installing the MySQL ODBC Connector and the MySQL Database, Login to your Local Database with the Password that was 
+1. MySQL ODBC Connector and the MySQL Database is now installed in your system. Login to your Local Database with the Password that was 
  provided by you during its Installation.
 
-2.	Click on Database > Connect to Database.
+2.	Click Database > Connect to Database.
+
+![MYSQLBench](/staticfiles/deployment/media/TransactionalStores/MYSQLBench.png)
 
 3.	Create a new Schema with a proper Name and click APPLY. The defined Schema appears on the Leftside of the screen. 
 
-4.  The Schema is created. Now open ADMINISTRATIVE TOOLS from Control Panel. 
+![Defined-Schema](/staticfiles/deployment/media/TransactionalStores/Defined-Schema.png)
 
-5.	Double Click ODBC Data Sources (32 bit). Click System DSN tab for its window to open and Click on ADD.
+4.  The Schema is now created. Open **ADMINISTRATIVE TOOLS** from Control Panel. 
 
-6. Select MySQL ODBC Unicode from the window that opens and click on Finish.
+5.	Double Click ODBC Data Sources (32 bit). Click System DSN tab for its window to open and Click ADD.
+
+![SystemDSN-tab](/staticfiles/deployment/media/TransactionalStores/SystemDSN-tab.png)
+
+6.  Select MySQL ODBC Unicode from the window that opens and click Finish.
+
+![MYSQL-ODBC-Code](/staticfiles/deployment/media/TransactionalStores/MYSQL-ODBC-Code.png)
 
 7.	You can now view the Driver present in this window.
+
+![SystemDSN-Driver](/staticfiles/deployment/media/TransactionalStores/SystemDSN-Driver.png)
 
 8.  Once You are done with these Prerequisites, Download the MySQL ODBC Plugin form the Cloud Portal of AEC.
 
@@ -43,4 +53,6 @@ As a Pre-requisite for Installing the Plugin, you need to specify few Configurat
 
 10. Log Off and Exit your OP agent and Login again.
 
-11. Go to setting button of the agent & Click on Plugins. You can view the MySQL Plugin, present on the Plugin Manager Window.  
+11. Go to setting button of the agent & Click on Plugins. You can now view the MySQL Plugin, present on the Plugin Manager Window.  
+
+![Downloading-HanaPlugin](/staticfiles/deployment/media/TransactionalStores/Downloading-HanaPlugin.png)

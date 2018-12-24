@@ -35,6 +35,7 @@
     <Folder Include="staticfiles\partner-management\" />
     <Folder Include="staticfiles\rules\" />
     <Folder Include="staticfiles\sdk-references\" />
+    <Folder Include="_posts\.vs\_posts\v15\" />
     <Folder Include="_posts\apps-management\concepts\" />
     <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
@@ -501,6 +502,17 @@
     <Content Include="staticfiles\root\media\Schema.png" />
     <Content Include="staticfiles\root\media\SecuritySettings.png" />
     <Content Include="staticfiles\root\media\Trial_Form.png" />
+    <Content Include="staticfiles\Transformation\Attribute -Fields.png" />
+    <Content Include="staticfiles\Transformation\Attribute-Structure.png" />
+    <Content Include="staticfiles\Transformation\Attributelevel-AddCondition.png" />
+    <Content Include="staticfiles\Transformation\Attributelevel-ConditionView.png" />
+    <Content Include="staticfiles\Transformation\Attributelevel-Else.png" />
+    <Content Include="staticfiles\Transformation\Attributelevel-Mapping.png" />
+    <Content Include="staticfiles\Transformation\Business-Partner.png" />
+    <Content Include="staticfiles\Transformation\DifferentObject-Attributes.png" />
+    <Content Include="staticfiles\Transformation\For-Each-Loop.png" />
+    <Content Include="staticfiles\Transformation\sourcedestination-mapping.png" />
+    <Content Include="staticfiles\Transformation\Teansformation.png" />
     <Content Include="staticfiles\workflow-management\media\Acknowldegementdata-workflow.png" />
     <Content Include="staticfiles\workflow-management\media\Adding-Touchpoint.png" />
     <Content Include="staticfiles\workflow-management\media\appseconnect-workflow-architecture.png" />
@@ -699,6 +711,8 @@
     <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\.vs\slnx.sqlite" />
+    <None Include="_posts\.vs\VSWorkspaceState.json" />
     <None Include="_posts\2018-09-16-home.md" />
     <None Include="_posts\2018-09-17-getting-started.md" />
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
@@ -728,6 +742,7 @@
     <None Include="_posts\API-Management\use-cases\2018-10-19-create-api-quotamanagement-to-restriction access.md" />
     <None Include="_posts\apps-management\how-to-guides\2019-08-15-handling-schemas-on-apps.md" />
     <None Include="_posts\Connectors\2018-12-07-Overview of Connectors.md" />
+    <None Include="_posts\Connectors\Application Connectors\2018-12-01-Overview of Application Connectors.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-06-Shopify.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-07-Magento2.md" />
     <None Include="_posts\Connectors\Application Connectors\Overview of Application Connectors.md" />
@@ -749,6 +764,7 @@
     <None Include="_posts\Deployment\Transactional Stores\2018-11-23-OLE-db-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-22-MYSQL-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\Overview of Plugin.md" />
+    <None Include="_posts\Deployment\Upgradation &amp; Migration.md" />
     <None Include="_posts\SDK\2018-12-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-What is an Adapter.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-02-How to develop an Adapter.md" />
@@ -767,6 +783,9 @@
     <None Include="_posts\SDK\Prerequisites\2018-12-12-Do%27s &amp; Dont%27s for SDK.md" />
     <None Include="_posts\SDK\Troubleshooting\2010-01-01-Debugging.md" />
     <None Include="_posts\SDK\Troubleshooting\2010-01-01-Logs &amp; File Structure.md" />
+    <None Include="_posts\Transformation\2018-09-17-overview.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\2018-09-17-define-logic-over-destination-mapping.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\2018-09-17-define-source-destination-transformation.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-architecture-design-runtime.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-overview.md" />
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />

@@ -5,8 +5,8 @@ tag: developers
 category: "SDK"
 menus: 
     header:
-        title: "Overview of SDK"
-        weight: 7
+        weight: 10
+        title: "SDK"
         icon: fa fa-wpexplorer
         identifier: sdk
 ---

@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Application"
 menus: 
-    Connectors:
+    Connectors :
         title: "Application"
         weight: 5
         icon: fa fa-file-word-o

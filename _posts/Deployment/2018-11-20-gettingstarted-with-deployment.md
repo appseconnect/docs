@@ -6,6 +6,7 @@ category: "Deployment"
 menus: 
     deployment:
         icon: fa fa-gg
+        weight: 1
         title: "Getting started"
         identifier: gsdeployment
                
