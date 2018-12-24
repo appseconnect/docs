@@ -91,7 +91,8 @@ In the below screen, you can see the DELAY element has been successfully execute
 
 ![delayelement-execution-snapshot](/staticfiles/workflow-management/media/delayelement-execution-snapshot.png)
 
-**Protip** For the DELAY node, only Log Bucket is generated. {: .notice--info}
+**Protip** For the DELAY node, only Log Bucket is generated.
+{: .notice--info}
 
 **Scenario 3:**
 
@@ -99,16 +100,22 @@ Here we are executing a workflow with a **Split-Process** Property. Here the exe
 files are generated as shown in t he screen given below.
 
 ![Split-Process-Snapshot](/staticfiles/workflow-management/media/Split-Process-Snapshot.png)
-**Protip** For each split, individual files are generated, you can double click on each of them, to view the XML code inside. {: .notice--info}
+
+**Protip** For each split individual files are generated. You can double click on each of them to view the XML code inside. 
+
+{: .notice--info}
+
 
 **Scenario 4:**
-
 Here we are executing a workflow with **Merge Process** property. You can see the `Resync Bucket, Log Bucket and File` for each of the merged process. 
 In the Resync Bucket, you can view the Source ID, Status and the Message of the single merge process.
+
 ![Mergeprocess-Snapshot](/staticfiles/workflow-management/media/Mergeprocess-Snapshot.png)
 
 **Protip** Execution of `Rule Process Property, Halt Node, Resume Element, Filter Element` will give similar node 
-level view as explained above {: .notice--info}
+level view as explained above 
+{: .notice--info}
+
 
 **Scenario 5:**
 Webhook is one of the Action nodes in workflow. Here, you will only be able to view the Log Bucket generated for webhook. 
@@ -123,3 +130,4 @@ Below, is the screen of Email Action Log Bucket generated.
 ![Email-snapshot](/staticfiles/workflow-management/media/Email-snapshot.png)
 
 **Protip** For all the ACTION NODES, you will only get the View of the Log Bucket.
+{: .notice--info}

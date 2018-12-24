@@ -13,11 +13,11 @@ menus:
 
 Mapping is done to initiate the transformation process successfully between the Source and the Destination apps. This document will help you to know the Source-Destination Mapping in APPSeCONNECT portal.
 
-**Source – Destination Mapping**
+**Source - Destination Mapping**
 
 Source-Destination mapping is used to map the attributes of destination application with source application attributes.
 
-![sourcedestination-mapping](/staticfiles/api-management/media/sourcedestination-mapping.png)
+![sourcedestination-mapping](/staticfiles/transformation/media/sourcedestination-mapping.png)
 
 Mapping is done at various level of Input Packet.
 
@@ -25,9 +25,9 @@ Mapping is done at various level of Input Packet.
 It is useful to display each item in a collection of items till when the loop is defined.
 Under For-Each loop, Entities have been used and Variables are set under Entities.
 
-2.	Complex Object Collection – This specify the mapping list within a complex object. This mainly includes the collection of complex object and attributes. 
+2.	Complex Object Collection - This specify the mapping list within a complex object. This mainly includes the collection of complex object and attributes. 
 
-3.	Complex Object – This specify the 
+3.	Complex Object - This specify the 
 
 4.	Attributes - Each target system configuration constructs an "attribute map" which contains all the attributes known by the system. 
 

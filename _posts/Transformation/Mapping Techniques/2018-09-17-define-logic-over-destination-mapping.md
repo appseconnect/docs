@@ -24,25 +24,25 @@ Mapping is done at various level of Input Packet. Refer [here]()
 
 The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.
 
-![Attributelevel-Mapping](/staticfiles/api-management/media/Attributelevel-Mapping.png)
+![Attributelevel-Mapping](/staticfiles/transformation/media/Attributelevel-Mapping.png)
 
 The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.
 
-![Attributelevel-AddCondition](/staticfiles/api-management/media/Attributelevel-AddCondition.png)
+![Attributelevel-AddCondition](/staticfiles/transformation/media/Attributelevel-AddCondition.png)
 
 Refer the screen given below:
 
-![Attributelevel-ConditionView](/staticfiles/api-management/media/Attributelevel-ConditionView.png)
+![Attributelevel-ConditionView](/staticfiles/transformation/media/Attributelevel-ConditionView.png)
 
 The User can also add Else-If and Else(Otherwise) and its clauses in the attribute Level. The following screen shows the Condition add for If-Else.
 
-![Attributelevel-Else](/staticfiles/api-management/media/Attributelevel-Else.png)
+![Attributelevel-Else](/staticfiles/transformation/media/Attributelevel-Else.png)
 
 ***Mapping at Loop Level***
 
 The `If Mapping can be done at the For-Each Loop level`. Below is the screen which shows the **If Mapping** at the For-Each Loop Level.
 
-![LoopLevel-Mapping](/staticfiles/api-management/media/LoopLevel-Mapping.png)
+![LoopLevel-Mapping](/staticfiles/transformation/media/LoopLevel-Mapping.png)
 
 **Protip** In the For-Loop Level, only IF is used as this level is just for removing duplicate check and also removing junk data, for integration process {: .notice--info}
 
@@ -51,7 +51,7 @@ The `If Mapping can be done at the For-Each Loop level`. Below is the screen whi
 The user/implementer can work on the If-Else Mapping in the complex object level. 
 Below is the Screen which shows the If-Else Mapping at the complex object level.
 
-![LoopLevel-Mapping](/staticfiles/api-management/media/ComplexObject-Mapping.png)
+![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObject-Mapping.png)
 
 Like other levels, the user can add Else-If and Otherwise and its conditions from the drop down. 
 
@@ -59,24 +59,24 @@ Like other levels, the user can add Else-If and Otherwise and its conditions fro
 
 The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.
 
-![LoopLevel-Mapping](/staticfiles/api-management/media/ComplexObjectCollection-If-Mapping.png)
+![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-If-Mapping.png)
 
-![LoopLevel-Mapping](/staticfiles/api-management/media/ComplexObjectCollection-else-Mapping.png)
+![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-else-Mapping.png)
 
 **UI Condition for Grouping Criteria**
 
 In the IF-Else Mapping, the user/implementer has the privilege to add numerous Condition at one go. 
-An IF statement can have numerous conditions, APPSeCONNECT’s IF-ELSE Mapping can add numerous clauses or conditions. 
+An IF statement can have numerous conditions, APPSeCONNECT IF-ELSE Mapping can add numerous clauses or conditions. 
 Here the condition parameters can be grouped when required such that the proper grouping of the criteria could be maintained.
 
 Below is the screen that shows the grouping of the conditions of an object. 
-![grouping-condition](/staticfiles/api-management/media/grouping-condition.png)
+![grouping-condition](/staticfiles/transformation/media/grouping-condition.png)
 
 The User/Implementer can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions.
-![grouping-condition-window](/staticfiles/api-management/media/grouping-condition-window.png)
+![grouping-condition-window](/staticfiles/transformation/media/grouping-condition-window.png)
 
 You can add multiple condition by click on the ADD NEW CLAUSE button. Click on the save icon to save the condition.
 
 Below is the Screen that displays the Added Conditions in group.
 
-![grouping-addcondition](/staticfiles/api-management/media/grouping-addcondition.png)
+![grouping-addcondition](/staticfiles/transformation/media/grouping-addcondition.png)

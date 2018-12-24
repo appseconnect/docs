@@ -31,12 +31,12 @@ Testing the Connection and Validation {: .notice--info}
 
 The Connection string comprises of the following elements.
 
-* Provider – This is your database server provider.
-* Password – The password is of the database server
-* Persists Security Info – This is the authentication info displayed on enabling the password for saving.
-* UserID – The Username or the UserID for the database server.
-* Initial Catalog – It is the database name on the selected server.	
-* DataSource – This is the name of the Database Server.
+* Provider - This is your database server provider.
+* Password - The password is of the database server
+* Persists Security Info - This is the authentication info displayed on enabling the password for saving.
+* UserID - The Username or the UserID for the database server.
+* Initial Catalog - It is the database name on the selected server.	
+* DataSource - This is the name of the Database Server.
 
 8. Click on Validate and Save.
 
