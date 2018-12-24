@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "SDK"
 menus:
-    sdk: 
+    overviewsdkadapter: 
         icon: fa fa-gg
         title: "Overview"
         identifier: developsdk    
