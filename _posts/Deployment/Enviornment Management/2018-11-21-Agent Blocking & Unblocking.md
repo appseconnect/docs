@@ -43,11 +43,11 @@ Steps 1 to 3 is similar to the enviornment setup for OP Agent.
 
 **Quick Facts about Agents (OP & Cloud) Enviornment Setup** 
 
-•	If the Agent is in Block State, you can view the Unblock button for unblocking the agent.
-•	An Organisation can have only one primary agent.
-•	Blocking an Agent, will stop all the Processes that was done on that agent. Blocking will result into Agent login failure in the system.
-•	Here Deploying Configuration and Deploy Adapter is equivalent to Update configuration and Update Adapter operation of the agent.
-•	For Deploy Adapter one has to restart the Agent and Autosync in the deployed environment.
-•	Upon Unblocking an agent, one must restart the Agent and Autosync in the deployed environment.
-•	Upon setting a new Agent as primary, You have to restart Agent and Autosync in the deployed environment.
-•	Blocked Agents are considered as the Inactive agents. Agents which are not blocked are the Active Agents.
+-	If the Agent is in Block State, you can view the Unblock button for unblocking the agent.
+-	An Organisation can have only one primary agent.
+-	Blocking an Agent, will stop all the Processes that was done on that agent. Blocking will result into Agent login failure in the system.
+-	Here Deploying Configuration and Deploy Adapter is equivalent to Update configuration and Update Adapter operation of the agent.
+-	For Deploy Adapter one has to restart the Agent and Autosync in the deployed environment.
+-	Upon Unblocking an agent, one must restart the Agent and Autosync in the deployed environment.
+-	Upon setting a new Agent as primary, You have to restart Agent and Autosync in the deployed environment.
+-	Blocked Agents are considered as the Inactive agents. Agents which are not blocked are the Active Agents.

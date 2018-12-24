@@ -39,7 +39,6 @@
     <Folder Include="_posts\apps-management\concepts\" />
     <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
-    <Folder Include="_posts\Connectors\Technology Connectors\Database\" />
     <Folder Include="_posts\Connectors\Technology Connectors\File System\" />
     <Folder Include="_posts\Deployment\Troubleshooting\" />
     <Folder Include="_posts\Deployment\Upgradation &amp; Migration\" />
@@ -557,6 +556,14 @@
     <Content Include="staticfiles\workflow-management\media\StartEnd-Node.png" />
     <Content Include="staticfiles\workflow-management\media\StartEnd-NodeConnected.png" />
     <Content Include="staticfiles\workflow-management\media\Templates.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\Activebutton.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\Agent-WorkflowPanel.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\AgentError.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\Error-in-TransformationChecking.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\Runbutton-Activated.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\Runbutton-Disabled.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\System-folder.png" />
+    <Content Include="staticfiles\workflow-management\media\Troubleshooting\Workflow-Execution.png" />
     <Content Include="staticfiles\workflow-management\media\webhook-snapshot.png" />
     <Content Include="staticfiles\workflow-management\media\workflow-execution-step1.png" />
     <Content Include="staticfiles\workflow-management\media\workflow-execution-step2.png" />
@@ -748,6 +755,7 @@
     <None Include="_posts\Connectors\Application Connectors\Overview of Application Connectors.md" />
     <None Include="_posts\Connectors\Custom Connectors\2018-12-06-overview-of-custom-connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\2018-12-07-Overview of technology connectors.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-12-OLEDB Adapter OnPremise.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Authentication &amp; Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-OAuth2.0.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-BasicAuthentication.md" />
@@ -760,6 +768,7 @@
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Cloud &amp; OnPremise.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Enviornment Overview.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Agent Deactivating.md" />
+    <None Include="_posts\Deployment\Enviornment Management\2018-11-21-Agent Blocking &amp; Unblocking.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-21-hana-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-23-OLE-db-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-22-MYSQL-plugin-installation.md" />
@@ -812,6 +821,7 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-25-generating-notification-webhooks.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-25-generating-storage-action.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-18-quickstart-guides-to-workflow-management.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-09-18-steps-to-choose-your-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-19-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-20-attribute-mapping-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-21-debugging-a-workflow.md" />
