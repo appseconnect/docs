@@ -5,8 +5,9 @@ category: "SDK"
 tag: developers
 menus:
     header: 
+        weight: 10
         icon: fa fa-gg
-        title: "Troubleshooting"
+        title: "SDK"
         identifier: sdk            
 ---
 

@@ -4,7 +4,7 @@ toc: true
 tag: developers,reseller
 category: "SDK"
 menus:
-    sdk: 
+    overviewsdkadapter: 
         icon: fa fa-gg
         title: "Testing"
         identifier: testingsdk    
