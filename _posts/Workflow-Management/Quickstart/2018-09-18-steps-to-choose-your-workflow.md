@@ -3,10 +3,10 @@ title: "Steps to choose your workflow"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 5
 menus: 
     quickstartworkflow:
         icon: fa fa-link
+        weight: 5
         title: "Steps to choose your workflow" 
         identifier: quickstartfirstworkflow
 ---

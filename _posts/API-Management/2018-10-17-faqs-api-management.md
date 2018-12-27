@@ -3,9 +3,9 @@ title: "Frequently asked questions"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 2
 menus: 
     api:
+        weight: 2
         icon: fa fa-gg
         title: "Frequently Asked questions" 
         identifier: apifaqs 

@@ -7,11 +7,13 @@ menus:
     plugins:
         title: "Hana"
         icon: fa fa-deployment
-        weight: 7
+        weight: 8
         identifier: hanaplugin
 ---
 
-This Document provides you the process of installing the SAP HANA Database Plugin in your System and how to use plugin in the adapter.
+Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. 
+The Plugin can be downloaded from the AEC Portal itself. This section of the document provides you the detailed instructions on the process of installing the SAP HANA Database Plugin in your System 
+and how to use plugin in the adapter.
 
 ## Prerequisites
 1.	SAP HANA Database installed in the system.
@@ -19,7 +21,7 @@ This Document provides you the process of installing the SAP HANA Database Plugi
 
 ## HANA Plugin Installation
 
-As a Pre-requisite for Installing the Plugin, configure the SAP HANA Database. The Detailed Procedure for SAP Hana installation is provided below.
+As a Pre-requisite for Installing the Plugin, Configure the SAP HANA Database. The Detailed Procedure for SAP Hana installation is provided below.
 
 1.	Login to the AEC Cloud Portal with the valid credentials. Download the SAP HANA Plugin from the download options in the portal.
 
@@ -57,8 +59,10 @@ As a Pre-requisite for Installing the Plugin, configure the SAP HANA Database. T
 
 ![HanaPlugin-ConnectionStringDetails](/staticfiles/deployment/media/TransactionalStores/HanaPlugin-ConnectionStringDetails.png)
 
-**Protip** Before placing the .dll file in the Adapters Folder turn off the auto sync in the agent. Log off and exit the agent from the taskbar. Make sure to UNBLOCK Checkbox if ticked in the properties of .dll file.{: .notice--info}
+**Protip** Before placing the .dll file in the Adapters Folder turn off the auto sync in the agent. Log off and exit the agent from the taskbar. Make sure to UNBLOCK Checkbox if ticked in the properties of .dll file
+{: .notice--info}
 
-The installation and configuration of the HANA Database will be done by the System Administrator {: .notice--info}.
+
+The installation and configuration of the HANA Database will be done by the System Administrator 
 
 The process of using hana plugin in [adapter]() is explained here.

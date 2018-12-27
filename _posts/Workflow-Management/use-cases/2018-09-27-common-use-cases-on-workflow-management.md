@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     workflow:
         icon: fa fa-link
+        weight: 6
         category: "Use Cases"
         title: "Use cases" 
         identifier: workflowusecases

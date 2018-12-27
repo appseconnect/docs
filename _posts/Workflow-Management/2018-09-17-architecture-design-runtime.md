@@ -6,7 +6,7 @@ category: "Workflow"
 menus: 
     workflow:   
         icon: fa fa-gg
-        weight: 3
+        weight: 0
         title: "Architecture" 
         identifier: workflowarchitecture
 ---
@@ -21,7 +21,7 @@ picture of the workflow.
 
 ## Architecture
 
-![Workflow Architecture](/staticfiles/workflow/media/appseconnect-workflow-architecture.png)
+![Workflow Architecture](/staticfiles/workflow-management/media/appseconnect-workflow-architecture.png)
 
 When an workflow is getting executed, there are a number of things that can happen. First, an execution 
 can happen on cloud directly on an hosted environment maintained by APPSeCONNECT, or it can genarate a call

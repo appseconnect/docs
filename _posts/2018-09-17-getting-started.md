@@ -14,7 +14,7 @@ menus:
 ## CUSTOMER PROFILE INFORMATION
 This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/appseconnect/home/).
 
-This section also enables you to change details like your personal information, changing avatar, changing password, privacy setting and security setting.
+This section also enables you to change details like your *personal information, changing avatar, changing password, privacy setting and security setting*.
 
 Let us dive in details about every section of customer profile information.
 
@@ -153,13 +153,14 @@ Select the connection, provide the connection name and select the protocol. Clic
 {: .notice--info}
 
 `Value Mapping` is an important function under touchpoint selection. 
-Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during transformation.
+Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during [transformation](/transformation/overview/).
 Details of Value Mapping will come in subsequent section of the document.
 
 
 ## Configuring Environment - Agent download / Cloud agent configuration
 
 APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and is configured on cloud and does the actual data synchronization with the help of other concerned adapters while the Cloud agent is a similar tool that performs the same function as the on-premise agent but is present on cloud itself. No server is required to configure or sync using the cloud agent.
+To know more about Configuring Enviornment, [Click here](/agent/Deployment-Configuration/)
 
 ### Environment setup of the on-premise agent:
 
@@ -172,7 +173,7 @@ APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and 
 
    ![Login1](/staticfiles/root/media/Login1.PNG)
 
-5.   There are four icons as shown below:
+ 5. There are four icons as shown below:
 The home icon shows the connections in the project.
 The apps configuration icon (next to the home icon) shows the applications used for the connections which need to be configured for successful sync.
 The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.

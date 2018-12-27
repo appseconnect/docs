@@ -6,6 +6,7 @@ category: "Workflow"
 menus: 
     workflow:
         icon: fa fa-link
+        weight: 5
         title: "Nodes and Links" 
         identifier: nodeandlinks 
 

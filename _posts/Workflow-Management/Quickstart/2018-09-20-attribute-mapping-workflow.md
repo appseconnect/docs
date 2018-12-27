@@ -3,10 +3,10 @@ title: "Attribute Mapping of workflow"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 7
 menus: 
     quickstartworkflow:
         icon: fa fa-link
+        weight: 7
         title: "Attribute Mapping of workflow" 
         identifier: quickstartfirstworkflow
 ---

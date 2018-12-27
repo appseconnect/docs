@@ -1,5 +1,5 @@
 ---
-title: "Overview of Connectors"
+title: "Overview of Application Connectors"
 toc: true
 tag: developers
 category: "Application"

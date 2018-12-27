@@ -6,6 +6,7 @@ category: "Workflow"
 menus: 
     workflow:
         icon: fa fa-gg
+        weight: 7
         category: "Troubleshooting" 
         title: "Troubleshooting" 
         identifier: workflowtroubleshoot

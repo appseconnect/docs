@@ -10,8 +10,8 @@ menus:
         weight: 7
         
 ---
-APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL
-and in OP Agent. This document will help you to know and configure the Cloud Agent as well as the OP Agent.
+APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the `CLOUD PORTAL`
+and in `OP Agent`. This section of the document will enable you to know and configure the Cloud Agent and the OP Agent.
 
 ## Cloud Agent Configuration
 
@@ -26,11 +26,11 @@ a.	On the Dashboard of your cloud portal, click PROJECTS > Manage Projects.
 
 b.	Click on the Edit button on your project.
 
-![Edit-Organization](/staticfiles/deployment/media/Settings/Edit-Organization.PNG)
+![Edit-Organization](/staticfiles/deployment/media/AgentConfig/Edit-Organization.PNG)
 
 c.	Enable the Check-Box for **Cloud Hosting** and click **SAVE**.
 
-![Edit-Organization1](/staticfiles/deployment/media/Settings/Edit-Organization1.PNG)
+![Edit-Organization1](/staticfiles/deployment/media/AgentConfig/Edit-Organization1.PNG)
 
 d.	After enabling the organisation for Cloud Hosting, a new environment is to be created for CLOUD EXECUTION.
 
@@ -59,7 +59,7 @@ a.	Login to the portal. From the Dashboard section, download the Agent from the 
 
 b.	Run the SETUP FILE (as administrator). The Setup wizard opens.
 
-![AgentWizard](/staticfiles/deployment/media/Settings/AgentWizard.png)
+![AgentWizard](/staticfiles/deployment/media/AgentConfig/AgentWizard.png)
 
 c.  Click **Next button** to begin the installation process.
 
@@ -68,13 +68,13 @@ d.	Open the Agent after the installation.
 e.	Hover and activate the cursor on the Login ID field and Press CTRL+F10 for configuring 
     the Base API URL, Connection URL.
 
-![AgentLogin-Screen](/staticfiles/deployment/media/Settings/AgentLogin-Screen.png)
+![AgentLogin-Screen](/staticfiles/deployment/media/AgentConfig/AgentLogin-Screen.png)
 
 f.	Provide the Username and Password of your AEC Cloud Portal and click Login.
 
 g.	Once logged in the *Agent provides four set of tabs*  as shown below:
 
-![Agent-Icon](/staticfiles/deployment/media/Settings/Agent-Icon.png)
+![Agent-Icon](/staticfiles/deployment/media/AgentConfig/Agent-Icon.png)
 
 * The home icon shows the Connections in the project.
 * The Apps configuration icon (next to the home icon) shows the applications used for the connections 

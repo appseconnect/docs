@@ -3,10 +3,10 @@ title: "Debugging workflows"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 8
 menus: 
     quickstartworkflow:
         icon: fa fa-link
+        weight: 8
         title: "Debugging workflows" 
         identifier: quickstartfirstworkflow
 ---

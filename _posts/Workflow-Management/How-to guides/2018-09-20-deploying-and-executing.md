@@ -6,6 +6,7 @@ category: "Workflow"
 menus: 
     workflow:
         icon: fa fa-link
+        weight: 4
         title: "Deploying and Executing" 
         identifier: deployworkflow 
 

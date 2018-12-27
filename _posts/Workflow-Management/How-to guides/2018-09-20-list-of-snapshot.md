@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Workflow"
 menus: 
-    workflow:
+    deployworkflow:
         icon: fa fa-link
         title: "Listing of Snapshot" 
         identifier: snapshotworkflow 

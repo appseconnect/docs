@@ -29,7 +29,7 @@ details as required.
 
 3. Login to the agent and Choose `Basic` Authentication Type.
 
-![BasicAuthentation-Rest](/staticfiles/generic/media/BasicAuthentation-Rest.png)
+![BasicAuthentation-Rest](/staticfiles/connectors/media/technology-connector/BasicAuthentation-Rest.png)
 
 The generic rest api screen contains the following fields:
 
@@ -47,7 +47,7 @@ The generic rest api screen contains the following fields:
 
 Input the required details on the basic authentication screen of the REST ADAPTER.
 
-![BasicAuthentation-Inputdetails](/staticfiles/generic/media/BasicAuthentation-Inputdetails.png)
+![BasicAuthentation-Inputdetails](/staticfiles/connectors/media/technology-connector/BasicAuthentation-Inputdetails.png)
 
 * Base URL - Input the Base URL of the Rest Supported APP
 * User Name - The user name for authentication.
@@ -61,7 +61,7 @@ APP>Manage Apps>Create a New Private app
 
 4.  Now click on the Content-Type Tab and the following screen appears
 
-![BasicAuthentation-ContentType](/staticfiles/generic/media/BasicAuthentation-ContentType.png)
+![BasicAuthentation-ContentType](/staticfiles/connectors/media/technology-connector/BasicAuthentation-ContentType.png)
 
 Presently the REST Adapter supports two set of content type conversion- XML and JSON
 
@@ -76,7 +76,7 @@ REST response configuration.
 
 5. Select the Content-Type from the drop down list. Click on **VALIDATE** and **SAVE** after providing the credentials. 
 
-![BasicAuthentation-Validation](/staticfiles/root/media/BasicAuthentation-Validation.png)
+![BasicAuthentation-Validation](/staticfiles/connectors/media/technology-connector/BasicAuthentation-Validation.png)
 
 6. Similarly go to App Configuration option and enter the server details for the application (here we have choosen
 SAP B1 as another application) which is not based on REST API.

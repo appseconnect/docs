@@ -3,10 +3,10 @@ title: "Steps to create your first workflow"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 6
 menus: 
     quickstartworkflow:
         icon: fa fa-link
+        weight: 6
         title: "Steps to create your first workflow" 
         identifier: quickstartfirstworkflow
 ---

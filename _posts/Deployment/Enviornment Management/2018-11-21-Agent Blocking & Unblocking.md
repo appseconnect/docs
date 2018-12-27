@@ -12,10 +12,10 @@ menus:
 ---
 APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL 
 as well as from the OP Agent. The Implementer or User can control and modify settings for all the agents, 
-from cloud portal for his/her organisation. This document will help you to know about the Block/Unblock
+from cloud portal for his/her organisation. This section of the document will enable you to know about the Block/Unblock
 and other features in the Environment section of the cloud Portal.
 
-**Environment Setup for the OP Agent**
+## Environment Setup for the OP Agent
 
 1.	Log in to cloud portal with your valid credentials.
 2.	Navigate to Environments section. 
@@ -26,7 +26,7 @@ and other features in the Environment section of the cloud Portal.
 7.	Blocking an Agent, will stop all the processes running in the agent and it will stop permanently. 
 8.  Blocking will result into Agent login failure in the system.
 
-**Environment Setup for the Cloud Agent**
+## Environment Setup for the Cloud Agent
 
 Steps 1 to 3 is similar to the enviornment setup for OP Agent.
 
@@ -34,14 +34,16 @@ Steps 1 to 3 is similar to the enviornment setup for OP Agent.
 
 2. In the Primary cloud agent, you can view the options Agent Settings and the Block/Unblock option.
 
-**Protip:** By default, Cloud agent remains blocked after its creation {: .notice--info}
+**Protip:** By default, Cloud agent remains blocked after its creation 
+
+{: .notice--info}
 
 3.	In the Agent Settings section, you will be able to see the detailed settings of your cloud Agents.
 
 4.	Blocking the Cloud Agent, will disable the cloud integration process for that organisation.
 
 
-**Quick Facts about Agents (OP & Cloud) Enviornment Setup** 
+## Quick Facts about Agents (OP & Cloud) Enviornment Setup
 
 -	If the Agent is in Block State, you can view the Unblock button for unblocking the agent.
 -	An Organisation can have only one primary agent.

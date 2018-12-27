@@ -71,8 +71,8 @@ var idx = lunr(function () {
   
   
     idx.add({
-      title: "Overview on adapter development",
-      excerpt: "\n",
+      title: "What is an Adapter",
+      excerpt: "APPSeCONNECT is a generic platform that helps a developer as well as an integration consultant to work on specific application,...",
       categories: ["SDK"],
       tags: ["developers"],
       id: 6
@@ -80,11 +80,29 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "What is an Adapter",
-      excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-      categories: ["SDK"],
+      title: "Overview on adapter development",
+      excerpt: "Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to...",
+      categories: ["Adapter"],
       tags: ["developers"],
       id: 7
+    });
+    
+  
+    idx.add({
+      title: "Overview on plugin development",
+      excerpt: "Plugins are a piece of software which lets to tightly couple with the platform to enhance the platform and /...",
+      categories: ["Plugin"],
+      tags: ["developers"],
+      id: 8
+    });
+    
+  
+    idx.add({
+      title: "Overview on policies development",
+      excerpt: "\n",
+      categories: ["Policies"],
+      tags: ["developers"],
+      id: 9
     });
     
   
@@ -93,7 +111,16 @@ var idx = lunr(function () {
       excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 8
+      id: 10
+    });
+    
+  
+    idx.add({
+      title: "What is an Adapter",
+      excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 11
     });
     
   
@@ -102,33 +129,6 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 9
-    });
-    
-  
-    idx.add({
-      title: "How to test an Adapter",
-      excerpt: "\n",
-      categories: ["SDK"],
-      tags: ["developers,reseller"],
-      id: 10
-    });
-    
-  
-    idx.add({
-      title: "How to test an Adapter",
-      excerpt: "\n",
-      categories: ["SDK"],
-      tags: ["developers,reseller"],
-      id: 11
-    });
-    
-  
-    idx.add({
-      title: "How to test an Adapter",
-      excerpt: "\n",
-      categories: ["SDK"],
-      tags: ["developers,reseller"],
       id: 12
     });
     
@@ -170,11 +170,38 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Choosing applications for integration",
+      title: "How to test an Adapter",
+      excerpt: "\n",
+      categories: ["SDK"],
+      tags: ["developers,reseller"],
+      id: 17
+    });
+    
+  
+    idx.add({
+      title: "How to test an Adapter",
+      excerpt: "\n",
+      categories: ["SDK"],
+      tags: ["developers,reseller"],
+      id: 18
+    });
+    
+  
+    idx.add({
+      title: "How to test an Adapter",
+      excerpt: "\n",
+      categories: ["SDK"],
+      tags: ["developers,reseller"],
+      id: 19
+    });
+    
+  
+    idx.add({
+      title: "Choosing Apps for Integration",
       excerpt: "\n",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 17
+      id: 20
     });
     
   
@@ -183,7 +210,7 @@ var idx = lunr(function () {
       excerpt: "Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 18
+      id: 21
     });
     
   
@@ -192,7 +219,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our API management system. Webhook API -...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 19
+      id: 22
     });
     
   
@@ -201,7 +228,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
-      id: 20
+      id: 23
     });
     
   
@@ -210,7 +237,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT API management is a set of micro service based environment which allows the external users to call and execute...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 21
+      id: 24
     });
     
   
@@ -219,7 +246,7 @@ var idx = lunr(function () {
       excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 22
+      id: 25
     });
     
   
@@ -228,7 +255,7 @@ var idx = lunr(function () {
       excerpt: "APIs are tje central to any application development process. As data forms an important part of any business it is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 23
+      id: 26
     });
     
   
@@ -237,7 +264,7 @@ var idx = lunr(function () {
       excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
       categories: ["APPSeCONNECT"],
       tags: ["developers"],
-      id: 24
+      id: 27
     });
     
   
@@ -246,7 +273,7 @@ var idx = lunr(function () {
       excerpt: "Proxies are the full REST (Representational State Transfer) services which allows to create proxy over a set of existing data...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 25
+      id: 28
     });
     
   
@@ -255,7 +282,7 @@ var idx = lunr(function () {
       excerpt: "Webhooks are custom callbacks from an application which is generated by the caller and data is pushed to all of...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 26
+      id: 29
     });
     
   
@@ -264,7 +291,7 @@ var idx = lunr(function () {
       excerpt: "title: “Create API to Connect On-premise Database” toc: true tag: developers APIs is required when you don’t have an existing...",
       categories: [],
       tags: [],
-      id: 27
+      id: 30
     });
     
   
@@ -273,7 +300,7 @@ var idx = lunr(function () {
       excerpt: "This document will guide you through the TRANSFORMATION functionality in APPSeCONNECT portal. TRANSFORMATION is the field where the corresponding to...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 28
+      id: 31
     });
     
   
@@ -282,7 +309,7 @@ var idx = lunr(function () {
       excerpt: "Steps to define logic over destination mapping Mapping in APPSeCONNECT is done so that a Source Application can communicate with...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 29
+      id: 32
     });
     
   
@@ -291,7 +318,7 @@ var idx = lunr(function () {
       excerpt: "Mapping is done to initiate the transformation process successfully between the Source and the Destination apps. This document will help...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 30
+      id: 33
     });
     
   
@@ -300,7 +327,7 @@ var idx = lunr(function () {
       excerpt: "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 31
+      id: 34
     });
     
   
@@ -309,7 +336,7 @@ var idx = lunr(function () {
       excerpt: "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 32
+      id: 35
     });
     
   
@@ -318,7 +345,7 @@ var idx = lunr(function () {
       excerpt: "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
       categories: [],
       tags: [],
-      id: 33
+      id: 36
     });
     
   
@@ -327,7 +354,7 @@ var idx = lunr(function () {
       excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 34
+      id: 37
     });
     
   
@@ -336,7 +363,7 @@ var idx = lunr(function () {
       excerpt: "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 35
+      id: 38
     });
     
   
@@ -345,7 +372,7 @@ var idx = lunr(function () {
       excerpt: "Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 36
+      id: 39
     });
     
   
@@ -354,7 +381,7 @@ var idx = lunr(function () {
       excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 37
+      id: 40
     });
     
   
@@ -363,7 +390,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["API-Management"],
       tags: ["developers","usecases"],
-      id: 38
+      id: 41
     });
     
   
@@ -372,7 +399,7 @@ var idx = lunr(function () {
       excerpt: "Introduction This section will guide you through workflow creation &amp; configuration in simple steps. By reading this section of the...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 39
+      id: 42
     });
     
   
@@ -381,7 +408,7 @@ var idx = lunr(function () {
       excerpt: "The IP Restrict Policy is used to restrict the access of an API Proxy by limiting the number of IP...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 40
+      id: 43
     });
     
   
@@ -390,7 +417,7 @@ var idx = lunr(function () {
       excerpt: "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 41
+      id: 44
     });
     
   
@@ -399,7 +426,7 @@ var idx = lunr(function () {
       excerpt: "List of snapshot is a pictorial representation of the executed workflow at various node level. Here the user will get...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 42
+      id: 45
     });
     
   
@@ -408,7 +435,7 @@ var idx = lunr(function () {
       excerpt: "Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and updates business data...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 43
+      id: 46
     });
     
   
@@ -417,7 +444,7 @@ var idx = lunr(function () {
       excerpt: "What is Get Node? GET node is used for getting data from an application by using the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 44
+      id: 47
     });
     
   
@@ -426,7 +453,7 @@ var idx = lunr(function () {
       excerpt: "What is Process Node? PROCESS node is used for transforming data from one format to another format based on the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 45
+      id: 48
     });
     
   
@@ -435,7 +462,7 @@ var idx = lunr(function () {
       excerpt: "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 46
+      id: 49
     });
     
   
@@ -444,7 +471,7 @@ var idx = lunr(function () {
       excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 47
+      id: 50
     });
     
   
@@ -453,7 +480,7 @@ var idx = lunr(function () {
       excerpt: "What is Post Node? POST node is used for pushing data to an application based on the API provided by...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 48
+      id: 51
     });
     
   
@@ -462,7 +489,7 @@ var idx = lunr(function () {
       excerpt: "As workflow provides end to end business flow mapping, debugging and changing workflow mapping and links is often a business...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 49
+      id: 52
     });
     
   
@@ -471,7 +498,7 @@ var idx = lunr(function () {
       excerpt: "Compression Policy compresses the response coming from the backend and thus can help to increase the performance of websites. As...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 50
+      id: 53
     });
     
   
@@ -480,7 +507,7 @@ var idx = lunr(function () {
       excerpt: "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 51
+      id: 54
     });
     
   
@@ -489,7 +516,7 @@ var idx = lunr(function () {
       excerpt: "Reponse Content Format policy inspects Content-Type for each HTTP request header and based upon the identification,it modifies the response content....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 52
+      id: 55
     });
     
   
@@ -498,7 +525,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 53
+      id: 56
     });
     
   
@@ -507,7 +534,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 54
+      id: 57
     });
     
   
@@ -516,7 +543,7 @@ var idx = lunr(function () {
       excerpt: "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 55
+      id: 58
     });
     
   
@@ -525,7 +552,7 @@ var idx = lunr(function () {
       excerpt: "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 56
+      id: 59
     });
     
   
@@ -534,7 +561,7 @@ var idx = lunr(function () {
       excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 57
+      id: 60
     });
     
   
@@ -543,7 +570,7 @@ var idx = lunr(function () {
       excerpt: "What is Rule Node? This node is used for decision making during workflow execution. A rule can be applied on...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 58
+      id: 61
     });
     
   
@@ -552,7 +579,7 @@ var idx = lunr(function () {
       excerpt: "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 59
+      id: 62
     });
     
   
@@ -561,7 +588,7 @@ var idx = lunr(function () {
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 60
+      id: 63
     });
     
   
@@ -570,7 +597,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 61
+      id: 64
     });
     
   
@@ -579,7 +606,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 62
+      id: 65
     });
     
   
@@ -588,7 +615,7 @@ var idx = lunr(function () {
       excerpt: "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example,...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 63
+      id: 66
     });
     
   
@@ -597,7 +624,7 @@ var idx = lunr(function () {
       excerpt: "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 64
+      id: 67
     });
     
   
@@ -606,7 +633,7 @@ var idx = lunr(function () {
       excerpt: "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 65
+      id: 68
     });
     
   
@@ -615,7 +642,7 @@ var idx = lunr(function () {
       excerpt: "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 66
+      id: 69
     });
     
   
@@ -624,7 +651,7 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 67
+      id: 70
     });
     
   
@@ -633,7 +660,7 @@ var idx = lunr(function () {
       excerpt: "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 68
+      id: 71
     });
     
   
@@ -642,7 +669,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 69
+      id: 72
     });
     
   
@@ -651,7 +678,7 @@ var idx = lunr(function () {
       excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 70
+      id: 73
     });
     
   
@@ -660,7 +687,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task iand...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 71
+      id: 74
     });
     
   
@@ -669,7 +696,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add customer...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 72
+      id: 75
     });
     
   
@@ -678,7 +705,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 73
+      id: 76
     });
     
   
@@ -687,7 +714,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 74
+      id: 77
     });
     
   
@@ -696,7 +723,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 75
+      id: 78
     });
     
   
@@ -705,7 +732,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 76
+      id: 79
     });
     
   
@@ -714,7 +741,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 77
+      id: 80
     });
     
   
@@ -723,7 +750,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow A flow or...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 78
+      id: 81
     });
     
   
@@ -732,7 +759,7 @@ var idx = lunr(function () {
       excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 79
+      id: 82
     });
     
   
@@ -741,7 +768,7 @@ var idx = lunr(function () {
       excerpt: "This topic describes common problems that can occur when you develop and test a workflow in AEC Portal. Given below...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 80
+      id: 83
     });
     
   
@@ -750,7 +777,7 @@ var idx = lunr(function () {
       excerpt: "FAQ is the best way to address frequently asked questions about your business. This section contains list of questions and...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 81
+      id: 84
     });
     
   
@@ -759,7 +786,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name API to Quota Management Access Restriction Brief Description This is a api which the user can create...",
       categories: ["API-Management"],
       tags: ["developers","usecases"],
-      id: 82
+      id: 85
     });
     
   
@@ -768,7 +795,7 @@ var idx = lunr(function () {
       excerpt: "Swagger is an Open Source Framework for the documentation of API. Swagger is a tools which enables you to generate,...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 83
+      id: 86
     });
     
   
@@ -777,7 +804,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: ["REST"],
       tags: ["developers"],
-      id: 84
+      id: 87
     });
     
   
@@ -786,7 +813,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
       categories: ["REST"],
       tags: ["developers"],
-      id: 85
+      id: 88
     });
     
   
@@ -795,7 +822,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
       categories: ["REST"],
       tags: ["developers"],
-      id: 86
+      id: 89
     });
     
   
@@ -804,7 +831,7 @@ var idx = lunr(function () {
       excerpt: "Http based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["REST"],
       tags: ["developers"],
-      id: 87
+      id: 90
     });
     
   
@@ -813,7 +840,7 @@ var idx = lunr(function () {
       excerpt: "The APPSeCONNECT Platform either for cloud or on-premise integration is a fully integrated solution that enables organizations to design, develop,...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 88
+      id: 91
     });
     
   
@@ -822,7 +849,7 @@ var idx = lunr(function () {
       excerpt: "This section lets you get started with the deploying processes and components to an environment for APPSeCONNECT. APPSeCONNECT Components for...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 89
+      id: 92
     });
     
   
@@ -831,7 +858,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Agent"],
       tags: ["developers"],
-      id: 90
+      id: 93
     });
     
   
@@ -840,16 +867,25 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
       categories: ["Agent"],
       tags: ["developers"],
-      id: 91
+      id: 94
     });
     
   
     idx.add({
       title: "Enviornment Overview",
-      excerpt: "The Environment is a section in the AEC Portal where the two types of agents that is the On-Premise Agent...",
+      excerpt: "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
       categories: ["Enviornment"],
       tags: ["developers"],
-      id: 92
+      id: 95
+    });
+    
+  
+    idx.add({
+      title: "Overview of Plugin",
+      excerpt: "A plugin is any kind of an addon or an extension software component that adds a specific feature to an...",
+      categories: ["Plugins"],
+      tags: ["developers"],
+      id: 96
     });
     
   
@@ -858,25 +894,25 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from...",
       categories: ["Agent"],
       tags: ["developers"],
-      id: 93
+      id: 97
     });
     
   
     idx.add({
       title: "HANA Plugin",
-      excerpt: "This Document provides you the process of installing the SAP HANA Database Plugin in your System and how to use...",
+      excerpt: "Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. The Plugin can...",
       categories: ["Plugins"],
       tags: ["developers"],
-      id: 94
+      id: 98
     });
     
   
     idx.add({
       title: "MYSQL Plugin",
-      excerpt: "This Document provides you the detailed instructions on how to install the MySQL Database ODBC Connector in your System. Prerequisites...",
+      excerpt: "Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. The Plugin can be downloaded...",
       categories: ["Plugins"],
       tags: ["developers"],
-      id: 95
+      id: 99
     });
     
   
@@ -885,34 +921,25 @@ var idx = lunr(function () {
       excerpt: "Cross-Origin Resource Sharing (CORS) Policy is a mechanism which allows restriction to domain access. Domains configured by the User is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 96
+      id: 100
     });
     
   
     idx.add({
-      title: "MYSQL Plugin",
+      title: "OLEDB Plugin",
       excerpt: "\n",
       categories: ["Plugins"],
       tags: ["developers"],
-      id: 97
+      id: 101
     });
     
   
     idx.add({
-      title: "Overview of Connectors",
+      title: "Overview of Application Connectors",
       excerpt: "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
       categories: ["Application"],
       tags: ["developers"],
-      id: 98
-    });
-    
-  
-    idx.add({
-      title: "Overview of SDK",
-      excerpt: "\n",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 99
+      id: 102
     });
     
   
@@ -921,7 +948,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 100
+      id: 103
     });
     
   
@@ -930,16 +957,16 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources....",
       categories: ["Custom"],
       tags: ["developers"],
-      id: 101
+      id: 104
     });
     
   
     idx.add({
       title: "Overview of Connectors",
-      excerpt: "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+      excerpt: "Connectors are the connection template of the BASE application which contains the BASE touchpoints. Creating this template migrates all the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 102
+      id: 105
     });
     
   
@@ -948,7 +975,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 103
+      id: 106
     });
     
   
@@ -957,7 +984,7 @@ var idx = lunr(function () {
       excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
       categories: ["Technology"],
       tags: ["developers"],
-      id: 104
+      id: 107
     });
     
   
@@ -966,7 +993,7 @@ var idx = lunr(function () {
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
       categories: ["Database"],
       tags: ["developers"],
-      id: 105
+      id: 108
     });
     
   
@@ -975,7 +1002,7 @@ var idx = lunr(function () {
       excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 106
+      id: 109
     });
     
   
@@ -984,16 +1011,7 @@ var idx = lunr(function () {
       excerpt: "System Requirement of Adapter Development\n\nProject Creation\n\nNew get Package Download\n\nInstallation\n\n",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 107
-    });
-    
-  
-    idx.add({
-      title: "OLEDB Adapters Cloud",
-      excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
-      categories: ["Database"],
-      tags: ["developers"],
-      id: 108
+      id: 110
     });
     
   
@@ -1001,24 +1019,6 @@ var idx = lunr(function () {
       title: "Troubleshooting",
       excerpt: "While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent. Given...",
       categories: ["Deployment"],
-      tags: ["developers"],
-      id: 109
-    });
-    
-  
-    idx.add({
-      title: "What is an Adapter",
-      excerpt: "\n",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 110
-    });
-    
-  
-    idx.add({
-      title: "OLEDB Adapters OnPremise",
-      excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
-      categories: ["Database"],
       tags: ["developers"],
       id: 111
     });
@@ -1034,11 +1034,38 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "OLEDB Adapters OnPremise",
+      excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
+      categories: ["Database"],
+      tags: ["developers"],
+      id: 113
+    });
+    
+  
+    idx.add({
+      title: "Upgradation & Migration",
+      excerpt: "With every update AEC Agent need upgradation to a higher version without losing any data in the agent. This upgradation...",
+      categories: ["Deployment"],
+      tags: ["developers"],
+      id: 114
+    });
+    
+  
+    idx.add({
+      title: "What is an Adapter",
+      excerpt: "\n",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 115
+    });
+    
+  
+    idx.add({
       title: "Testing And Uploading Adapter To Appseconnect Cloud",
       excerpt: "Markdown file\n",
       categories: [],
       tags: [],
-      id: 113
+      id: 116
     });
     
   
@@ -1047,7 +1074,7 @@ var idx = lunr(function () {
       excerpt: "Markdown file\n",
       categories: [],
       tags: [],
-      id: 114
+      id: 117
     });
     
   
@@ -1056,7 +1083,7 @@ var idx = lunr(function () {
       excerpt: "Markdown file\n",
       categories: [],
       tags: [],
-      id: 115
+      id: 118
     });
     
   
@@ -1065,7 +1092,7 @@ var idx = lunr(function () {
       excerpt: "This Document provides the details and the functionality aspect of the API components to define static and dynamic criterias for...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 116
+      id: 119
     });
     
   
@@ -1154,8 +1181,41 @@ var store = [
     
       
       {
+        "title": "What is an Adapter",
+        "url": "/sdk/Overview-of-SDK/",
+        "excerpt": "APPSeCONNECT is a generic platform that helps a developer as well as an integration consultant to work on specific application,...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Overview on adapter development",
-        "url": "/sdk/What-is-an-Adapter/",
+        "url": "/adapter/overview-adapters/",
+        "excerpt": "Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview on plugin development",
+        "url": "/plugin/overview-plugins/",
+        "excerpt": "Plugins are a piece of software which lets to tightly couple with the platform to enhance the platform and /...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview on policies development",
+        "url": "/policies/overview-policies/",
         "excerpt": "\n",
         "teaser":
           
@@ -1275,7 +1335,7 @@ var store = [
     
       
       {
-        "title": "Choosing applications for integration",
+        "title": "Choosing Apps for Integration",
         "url": "/workflow/choosing-apps-for-integration/",
         "excerpt": "\n",
         "teaser":
@@ -2102,7 +2162,18 @@ var store = [
       {
         "title": "Enviornment Overview",
         "url": "/enviornment/Enviornment-Overview/",
-        "excerpt": "The Environment is a section in the AEC Portal where the two types of agents that is the On-Premise Agent...",
+        "excerpt": "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Plugin",
+        "url": "/plugins/Overview-of-Plugin/",
+        "excerpt": "A plugin is any kind of an addon or an extension software component that adds a specific feature to an...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2124,7 +2195,7 @@ var store = [
       {
         "title": "HANA Plugin",
         "url": "/plugins/hana-plugin-installation/",
-        "excerpt": "This Document provides you the process of installing the SAP HANA Database Plugin in your System and how to use...",
+        "excerpt": "Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. The Plugin can...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2135,7 +2206,7 @@ var store = [
       {
         "title": "MYSQL Plugin",
         "url": "/plugins/MYSQL-plugin-installation/",
-        "excerpt": "This Document provides you the detailed instructions on how to install the MySQL Database ODBC Connector in your System. Prerequisites...",
+        "excerpt": "Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. The Plugin can be downloaded...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2155,7 +2226,7 @@ var store = [
     
       
       {
-        "title": "MYSQL Plugin",
+        "title": "OLEDB Plugin",
         "url": "/plugins/OLE-db-plugin-installation/",
         "excerpt": "\n",
         "teaser":
@@ -2166,20 +2237,9 @@ var store = [
     
       
       {
-        "title": "Overview of Connectors",
+        "title": "Overview of Application Connectors",
         "url": "/application/Overview-of-Application-Connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Overview of SDK",
-        "url": "/sdk/Overview-of-SDK/",
-        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2212,7 +2272,7 @@ var store = [
       {
         "title": "Overview of Connectors",
         "url": "/connectors/Overview-of-Connectors/",
-        "excerpt": "APPSeCONNECT is an open framework which supports the creation of connectors. The connector which are created will automatically come as...",
+        "excerpt": "Connectors are the connection template of the BASE application which contains the BASE touchpoints. Creating this template migrates all the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2276,17 +2336,6 @@ var store = [
     
       
       {
-        "title": "OLEDB Adapters Cloud",
-        "url": "/database/OLEDB-Adapter-Cloud/",
-        "excerpt": "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Troubleshooting",
         "url": "/deployment/Troubleshooting/",
         "excerpt": "While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent. Given...",
@@ -2312,6 +2361,17 @@ var store = [
         "title": "OLEDB Adapters OnPremise",
         "url": "/database/OLEDB-Adapter-OnPremise/",
         "excerpt": "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Upgradation & Migration",
+        "url": "/deployment/upgradation-and-migration/",
+        "excerpt": "With every update AEC Agent need upgradation to a higher version without losing any data in the agent. This upgradation...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

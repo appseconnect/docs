@@ -12,15 +12,15 @@ menus:
 ---
 
 
-**Steps to define logic over destination mapping**
+## Steps to define logic over destination mapping
 
 Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure `If-Else Mapping`. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.
 
-**Mapping Levels**
+## Mapping Levels
 
 Mapping is done at various level of Input Packet. Refer [here]()
 
-***Mapping at Attribute Level***
+### Mapping at Attribute Level
 
 The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.
 
@@ -38,15 +38,16 @@ The User can also add Else-If and Else(Otherwise) and its clauses in the attribu
 
 ![Attributelevel-Else](/staticfiles/transformation/media/Attributelevel-Else.png)
 
-***Mapping at Loop Level***
+### Mapping at Loop Level
 
 The `If Mapping can be done at the For-Each Loop level`. Below is the screen which shows the **If Mapping** at the For-Each Loop Level.
 
 ![LoopLevel-Mapping](/staticfiles/transformation/media/LoopLevel-Mapping.png)
 
-**Protip** In the For-Loop Level, only IF is used as this level is just for removing duplicate check and also removing junk data, for integration process {: .notice--info}
+**Protip** In the For-Loop Level, only IF is used as this level is just for removing duplicate check and also removing junk data, for integration process 
+{: .notice--info}
 
-***Mapping at Complex Object Level***
+### Mapping at Complex Object Level
 
 The user/implementer can work on the If-Else Mapping in the complex object level. 
 Below is the Screen which shows the If-Else Mapping at the complex object level.
@@ -55,7 +56,7 @@ Below is the Screen which shows the If-Else Mapping at the complex object level.
 
 Like other levels, the user can add Else-If and Otherwise and its conditions from the drop down. 
 
-***Mapping at Complex Object Collection  Level***
+### Mapping at Complex Object Collection  Level
 
 The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.
 
@@ -63,7 +64,7 @@ The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is t
 
 ![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-else-Mapping.png)
 
-**UI Condition for Grouping Criteria**
+## UI Condition for Grouping Criteria
 
 In the IF-Else Mapping, the user/implementer has the privilege to add numerous Condition at one go. 
 An IF statement can have numerous conditions, APPSeCONNECT IF-ELSE Mapping can add numerous clauses or conditions. 
