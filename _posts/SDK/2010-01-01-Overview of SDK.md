@@ -1,5 +1,5 @@
 ---
-title: "What is an Adapter"
+title: "SDK Overview"
 toc: true
 category: "SDK"
 tag: developers

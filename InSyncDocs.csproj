@@ -35,7 +35,6 @@
     <Folder Include="staticfiles\connectors\media\application-connector\" />
     <Folder Include="staticfiles\partner-management\" />
     <Folder Include="staticfiles\rules\" />
-    <Folder Include="_posts\.vs\_posts\v15\" />
     <Folder Include="_posts\apps-management\concepts\" />
     <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
@@ -452,10 +451,14 @@
     <Content Include="staticfiles\api-management\media\swagger-parameter-execution.png" />
     <Content Include="staticfiles\api-management\media\swagger-response.png" />
     <Content Include="staticfiles\api-management\media\swagger-screen.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\AddAdapter.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\AppResources_AddAdapter.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\BasicAuthentation-Content Type.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\BasicAuthentation-Inputdetails.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\BasicAuthentation-Rest.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\BasicAuthentation-Validation.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter1.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input2.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential.png" />
@@ -472,6 +475,7 @@
     <Content Include="staticfiles\connectors\media\technology-connector\Outh2.0Authentation-TokenGeneration.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Outh2.0Authentation-Validation.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Outh2.0Authentation.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\Save_AppResources.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\Agent-Icon.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\AgentLogin-Screen.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\AgentWizard.png" />
@@ -484,7 +488,11 @@
     <Content Include="staticfiles\deployment\media\Setting\LoggingSettings.PNG" />
     <Content Include="staticfiles\deployment\media\Setting\Resync-Schedule.PNG" />
     <Content Include="staticfiles\deployment\media\Setting\SettingPanel.PNG" />
+    <Content Include="staticfiles\deployment\media\TransactionalStores\Agent_plugin-selection.png" />
+    <Content Include="staticfiles\deployment\media\TransactionalStores\Connection2.png" />
+    <Content Include="staticfiles\deployment\media\TransactionalStores\ConnectionSetup.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\ConnectionString-DSN.png" />
+    <Content Include="staticfiles\deployment\media\TransactionalStores\DataPluginProperties1.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\Defined-Schema.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\Downloading-HanaPlugin.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\HanaContainer-Port.png" />
@@ -496,6 +504,7 @@
     <Content Include="staticfiles\deployment\media\TransactionalStores\MYSQLBench.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\MYSQLPlugin-Agent.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\MYSQLPlugin-Installed.png" />
+    <Content Include="staticfiles\deployment\media\TransactionalStores\PluginManager.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\SystemDSN-Driver.png" />
     <Content Include="staticfiles\deployment\media\TransactionalStores\SystemDSN-tab.png" />
     <Content Include="staticfiles\deployment\media\Troubleshooting\AppConfig-Error.png" />
@@ -775,8 +784,6 @@
     <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
-    <None Include="_posts\.vs\slnx.sqlite" />
-    <None Include="_posts\.vs\VSWorkspaceState.json" />
     <None Include="_posts\2018-09-16-home.md" />
     <None Include="_posts\2018-09-17-getting-started.md" />
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
@@ -813,6 +820,7 @@
     <None Include="_posts\Connectors\Technology Connectors\2018-12-07-Overview of technology connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-10-Overview of OLEDB Adapter.md" />
     <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-11-OLEDB Adapter Cloud.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-12-Version-Extraction For Adapter-Upload.md" />
     <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-12-OLEDB Adapter OnPremise.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-Authentication &amp; Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2018-11-06-OAuth2.0.md" />

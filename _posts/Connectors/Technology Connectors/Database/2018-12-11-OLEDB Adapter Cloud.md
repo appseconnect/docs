@@ -11,7 +11,9 @@ menus:
         icon: fa fa-wpexplorer
         identifier: oledbtechnology
 ---
-Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal. This Document provides you the detailed process of validating a OLEDB database application in the APPSeCONNECT Cloud Portal.
+Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate 
+and adapt with the AEC Portal. This Document provides you the detailed process of validating a 
+OLEDB database application in the APPSeCONNECT Cloud Portal.
 
 1. Go to the APP module of the AEC Portal. Click on the button beside the OLEDB Application name
  which you have created.
@@ -38,12 +40,12 @@ For instance: Provider=SQL****;Password=abcd****;Persist Security Info=True;User
 
 Detailed description of the credential string is given below:
 
-*	Provider - This is your database server provider.
-*	Password - The password is of the database server
-*	Persists Security Info - This is the authentication info displayed on enabling the password for saving.
-*	UserID - The Username or the UserID for the database server.
-*	Initial Catalog - It is the database name on the selected server.	
-*	DataSource - This is the name of the Database Server.
+-	Provider - This is your database server provider.
+-	Password - The password is of the database server
+-	Persists Security Info - This is the authentication info displayed on enabling the password for saving.
+-	UserID - The Username or the UserID for the database server.
+-	Initial Catalog - It is the database name on the selected server.	
+-	DataSource - This is the name of the Database Server.
 
 
 6. Input all the details & Click SAVE.
