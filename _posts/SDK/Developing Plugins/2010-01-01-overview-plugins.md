@@ -6,7 +6,7 @@ tag: developers
 menus:
     sdk: 
         icon: fa fa-gg
-        title: "Overview"
+        title: "Plugins"
         identifier: overviewsdkplugin            
 ---
 Plugins are a piece of software which lets to tightly couple with the platform to enhance the platform

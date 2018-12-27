@@ -6,7 +6,7 @@ tag: developers
 menus:
     sdk: 
         icon: fa fa-gg
-        title: "Overview"
+        title: "Adapters"
         identifier: overviewsdkadapter            
 ---
 Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to the system seamelessly such that the
