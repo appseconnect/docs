@@ -1,8 +1,12 @@
 ---
-title: "What is an Adapter"
+title: "Development Guidelines"
 toc: true
-category: "SDK"
 tag: developers
-read_time: true
+category: "SDK"
+menus: 
+    sdkprerequisite:
+        title: "Guidelines"
+        weight: 7
+        icon: fa fa-file-word-o
+        identifier: sdkprerequisiteguidelines
 ---
-

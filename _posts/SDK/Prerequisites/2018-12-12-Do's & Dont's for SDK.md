@@ -1,8 +1,12 @@
 ---
-title: "What is an Adapter"
+title: "Best practices"
 toc: true
-category: "SDK"
 tag: developers
-read_time: true
+category: "SDK"
+menus: 
+    sdkprerequisite:
+        title: "Best practices"
+        weight: 7
+        icon: fa fa-file-word-o
+        identifier: sdkprerequisitepractices
 ---
-
