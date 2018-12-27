@@ -35,7 +35,6 @@
     <Folder Include="staticfiles\connectors\media\application-connector\" />
     <Folder Include="staticfiles\partner-management\" />
     <Folder Include="staticfiles\rules\" />
-    <Folder Include="staticfiles\sdk-references\" />
     <Folder Include="_posts\.vs\_posts\v15\" />
     <Folder Include="_posts\apps-management\concepts\" />
     <Folder Include="_posts\apps-management\quickstart-guides\" />
@@ -535,6 +534,8 @@
     <Content Include="staticfiles\root\media\Schema.png" />
     <Content Include="staticfiles\root\media\SecuritySettings.png" />
     <Content Include="staticfiles\root\media\Trial_Form.png" />
+    <Content Include="staticfiles\sdk-references\media\attachtoprocesshandler.PNG" />
+    <Content Include="staticfiles\sdk-references\media\credential-user-interface.PNG" />
     <Content Include="staticfiles\Transformation\media\Attribute-Fields.png" />
     <Content Include="staticfiles\Transformation\media\Attribute-Structure.png" />
     <Content Include="staticfiles\Transformation\media\Attributelevel-AddCondition.png" />
@@ -821,14 +822,13 @@
     <None Include="_posts\Deployment\2018-12-12-upgradation and migration.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-overview-adapters.md" />
-    <None Include="_posts\SDK\Developing Adapters\2010-01-02-How to develop an Adapter.md" />
+    <None Include="_posts\SDK\Developing Adapters\2010-01-02-Implementing-adapter-basic-functionalities.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Designing &amp; Mapping Credentials.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Developing AppResources.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Handling Events.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-How to test an Adapter.md" />
-    <None Include="_posts\SDK\Developing Adapters\2010-01-03-Implementing Resync.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Logging &amp; Tracking.md" />
-    <None Include="_posts\SDK\Developing Adapters\2010-01-03-Understanding Connectivity.md" />
+    <None Include="_posts\SDK\Developing Adapters\2010-01-03-Implementing-Actionfilter-Parsers.md" />
     <None Include="_posts\SDK\Developing Plugins\2010-01-01-overview-plugins.md" />
     <None Include="_posts\SDK\Developing Policies\2010-01-01-overview-policies.md" />
     <None Include="_posts\SDK\Postrequisite\2018-12-17-testing-and-uploading-adapter-to-appseconnect-cloud.md" />

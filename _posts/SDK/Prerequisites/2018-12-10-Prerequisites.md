@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "SDK"
 menus: 
-    SDK:
+    sdk:
         title: "Prerequisite"
         weight: 7
         icon: fa fa-file-word-o
