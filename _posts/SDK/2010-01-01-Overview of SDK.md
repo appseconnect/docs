@@ -1,12 +1,12 @@
 ---
-title: "What is an Adapter"
+title: "SDK Overview"
 toc: true
 category: "SDK"
 tag: developers
 menus:
     header: 
         icon: fa fa-gg
-        title: "Troubleshooting"
+        title: "SDK"
         identifier: sdk            
 ---
 
