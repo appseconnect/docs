@@ -6,7 +6,7 @@ tag: developers
 menus:
     sdk: 
         icon: fa fa-gg
-        title: "Overview"
+        title: "Policies"
         identifier: overviewsdkpolicies           
 ---
 Policies are special modules which hooks over an Http pipeline of API execution. In addition to prebuilt policies,
