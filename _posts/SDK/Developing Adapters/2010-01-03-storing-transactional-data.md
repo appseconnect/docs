@@ -90,6 +90,102 @@ You can also specify the DefaultValue for each column, such that if no data is p
 
 ### Maintaining data for the objects
 
-To create or update or even delete the data, you can use the existing APIs.
+To create or update or even delete the data, you can use the existing APIs on SDK. Let us look at the code below : 
+
+```csharp
+var utils = this._context.ApplicationUtility;
+var storagePlugin = utils.TransactionalDataStore.ConnectionManager;
+//To create a table
+var inputParamAecSyncData = new DatabaseInputParameter<SyncInfoDataTable>(DatabaseOperation.CREATETABLE)
+{
+  Object = new SyncInfoDataTable()
+};
+var creationResult = storagePlugin.Execute<DatabaseInputParameter<SyncInfoDataTable>, SyncInfoDataTable>(inputParamAecSyncData);
+if(creationResult.Status)
+{
+    //Successfully created table.
+}
+```
+
+In the above code, we have executed the transaction to create a table based on a model. We need to ensure that the table is created only once, so it is recommended to CreateTable inside Credential object storage event or
+inside `Initialize` block of Adapter. 
+
+Similar to this, you can use any operation based on the object model. For instance, if you require to store a data, you can use the following code : 
+
+```csharp
+ var data_syncData = new DatabaseInputParameter<SyncInfoDataTable>(DatabaseOperation.INSERT);
+ var syncInfo = new SyncInfoDataTable()
+ {
+   ValueProperty = "DefaultText"
+ };
+ var insertResult = this._context.ApplicationUtility.TransactionalDataStore.ConnectionManager.Execute<DatabaseInputParameter<SyncInfoDataTable>, SyncInfoDataTable>(syncInfo);
+ if(insertResult.Status)
+ {
+    // Successfully inserted data
+ }
+```
+Similarly, you can use various operations like Update, Delete, Select, Truncate etc.
+
+To select a data from a particular table, you can specify various filters. Let us look into how to do that. 
+
+```csharp
+
+var data_prodData = new DatabaseInputParameter<AECPRODUCTDATA>(DatabaseOperation.SELECT);
+data_prodData.AddFilters(new DatabaseFilter[]
+    {
+        new DatabaseFilter(System.Data.DbType.String)
+        {
+            FieldName = fieldName,
+            Operator = OperatorType.EQUALS,
+            Value = fieldValue
+        },
+        new DatabaseFilter(System.Data.DbType.String)
+        {
+            Logical = LogicalOperatorType.AND,
+            FieldName = "ConnectionId",
+            Operator = OperatorType.EQUALS,
+            Value = connectionId,
+            GroupStart = true
+        },
+        new DatabaseFilter(System.Data.DbType.String)
+        {
+            Logical = LogicalOperatorType.AND,
+            FieldName = "ConnectionId",
+            Operator = OperatorType.EQUALS,
+            Value = reverseConnectionId,
+            GroupEnd = true
+        },
+        new DatabaseFilter(System.Data.DbType.String)
+        {
+            FieldName = "ObjectType",
+            Operator = OperatorType.EQUALS,
+            Value = objectName
+        }
+    });
+var productDataSelectionResult = this._context.ApplicationUtility.TransactionalDataStore.ConnectionManager.Execute<DatabaseInputParameter<AECPRODUCTDATA>, AECPRODUCTDATA>(data_prodData);
+if (productDataSelectionResult.Status)
+{
+    var aecSyncDataObject = productDataResult.Value;
+     
+}
+``` 
+In the above code, you can see the AECPRODUCTDATA table records are being fetched using multiple filter conditions.
+The filter conditions are specified for each columns using object of `DatabaseFilter` type and when the Transaction is executed through the Execute method, 
+the data is retrieved from the database. 
+
+
 
 ## File Storage
+
+Even though it is discouraged, but you can still use file system to store isolated storage of files from your adapter. The adapter file system is exposed to an
+separate secure location, sandboxed from the external world. The files created in the adapter will be separately located on 
+APPSeCONNECT secure location and you can use various functionalities while accessing the files. 
+
+```csharp
+this._context.ApplicationUtility.FileStore.WriteString("a.txt", "data");
+var strFile = this._context.ApplicationUtility.FileStore.GetFileString("a.txt");
+```
+
+The first line of the API will create a file in the file system inside APPSeCONNECT and name it as a.txt, which can 
+be retrieved back using GetFileString and the fileName specified at a later stage. In addition to these, the FileStorage utility 
+provides various functionalities which will help in accessing file / folder system on local drive as Isolated storage. 
