@@ -38,12 +38,12 @@ For instance: Provider=SQL****;Password=abcd****;Persist Security Info=True;User
 
 Detailed description of the credential string is given below:
 
-•	Provider - This is your database server provider.
-•	Password - The password is of the database server
-•	Persists Security Info - This is the authentication info displayed on enabling the password for saving.
-•	UserID - The Username or the UserID for the database server.
-•	Initial Catalog - It is the database name on the selected server.	
-•	DataSource - This is the name of the Database Server.
+*	Provider - This is your database server provider.
+*	Password - The password is of the database server
+*	Persists Security Info - This is the authentication info displayed on enabling the password for saving.
+*	UserID - The Username or the UserID for the database server.
+*	Initial Catalog - It is the database name on the selected server.	
+*	DataSource - This is the name of the Database Server.
 
 
 6. Input all the details & Click SAVE.

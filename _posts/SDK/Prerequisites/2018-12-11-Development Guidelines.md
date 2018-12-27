@@ -83,8 +83,8 @@ Example: backColor
 
 - All database connections in code should be handled through the DB class. The DB class should have generic methods for connection, disconnection, execution of insert, update, delete queries, returning DataTables, returning DataSets, etc. 
 - SQL queries should be defined in a separate class per functional module. The methods in the class should have parameters which are required for the creation of the query. The UI classes should not contain any SQL Query constructs. This would help in managing changes in case of database migration and database structure changes. 
-- No queries should have “Select *”. Instead, use the column names. If required, use the Query Designer in SQL Server Management Studio to generate query statements. 
-- Do not access DataTables using the column indexes. The indexes might change if a new field is inserted. Access columns by the fieldname, e.g. dataTable1.Fields(“DistributorID”) instead of dataTable1.Fields(0) 
+- No queries should have "Select *". Instead, use the column names. If required, use the Query Designer in SQL Server Management Studio to generate query statements. 
+- Do not access DataTables using the column indexes. The indexes might change if a new field is inserted. Access columns by the fieldname, e.g. dataTable1.Fields("DistributorID") instead of dataTable1.Fields(0) 
 - While modifying or deleting a record check for the constraints before execution of the update of delete statement. This may be done at the database level through triggers and the appropriate exception being caught in the code. 
 - Define meaningful table and column names. Do not use short forms. Use the Pascal Casing 
 - Define meaningful Stored Procedure, Function, Trigger, Index, etc. names. Do not use short forms. Use the Pascal Casing 
