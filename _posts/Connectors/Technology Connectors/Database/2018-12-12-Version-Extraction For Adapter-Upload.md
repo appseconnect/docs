@@ -5,11 +5,11 @@ tag: developers
 category: "Database"
 weight: 8
 menus: 
-    technologyconnector:
-        title: "Correct Assembly Version Extarction for Adapter Upload"
+    oledbtechnology:
+        title: "Reversioning"
         category: "Database"
         icon: fa fa-wpexplorer
-        identifier: oledbtechnology
+        identifier: oledbtechnologyext
 ---
 
 This section of the document provides you the full details of using Assembly Version Extraction 
@@ -24,16 +24,16 @@ with any other dependency file of the particular application you are working on.
 
 
 1. Add the APP on the Cloud Portal, click on the **+ button** beside the Application name which you have created.
-2. Click on the Adapter button  from the menulist. The ADAPTER window appears, Click on `ADD ADAPTER`.
+2. Click on the Adapter button  from the menulist. The ADAPTER window appears, Click on `ADD ADAPTER`.  
 ![AddAdapter](/staticfiles/connectors/media/technology-connector/AddAdapter.png)
-3. The following window opens. You can upload the ZIP FOLDER from `CHOOSE FILE` option.
+3. The following window opens. You can upload the ZIP FOLDER from `CHOOSE FILE` option.  
 ![ChooseFiles_AddAdapter](/staticfiles/connectors/media/technology-connector/ChooseFiles_AddAdapter.png)
-4. All the field details would be automatically filled up after the ZIP folder is chosen.
+4. All the field details would be automatically filled up after the ZIP folder is chosen.  
 ![ChooseFiles_AddAdapter1](/staticfiles/connectors/media/technology-connector/ChooseFiles_AddAdapter1.png)
-5. Upload the ZIP Folder. Then the APPRESOURCES window opens where you can select the appresources.
+5. Upload the ZIP Folder. Then the APPRESOURCES window opens where you can select the appresources.  
 ![AppResources_AddAdapter](/staticfiles/connectors/media/technology-connector/AppResources_AddAdapter.png)
 6. You have the options for selecting all the appresources (by selecting the Check-Box beside the Title "Function Name") 
-   and also you have the option to go for the one you require.
+   and also you have the option to go for the one you require.  
 ![Save_AppResources](/staticfiles/connectors/media/technology-connector/Save_AppResources.png)
 7.  Now the selection of APPRESOURCE is complete, Click on SAVE.
 
