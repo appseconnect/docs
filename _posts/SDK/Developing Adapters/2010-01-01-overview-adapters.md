@@ -1,7 +1,7 @@
 ---
 title: "Overview on adapter development"
 toc: true
-category: "Adapter"
+category: "SDK"
 tag: developers
 menus:
     sdk: 

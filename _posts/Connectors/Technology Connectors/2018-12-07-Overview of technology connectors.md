@@ -2,7 +2,7 @@
 title: "Overview of Technology Connectors"
 toc: true
 tag: developers
-category: "Technology"
+category: "Connectors"
 menus: 
     Connectors:
         title: "Technology"

@@ -2,7 +2,7 @@
 title: "MYSQL Plugin"
 toc: true
 tag: developers
-category: "Plugins"
+category: "Deployment"
 menus: 
     plugins:
         title: "MYSQL"

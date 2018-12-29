@@ -2,7 +2,7 @@
 title: "Correct Assembly Version Extarction for Adapter Upload"
 toc: true
 tag: developers
-category: "Database"
+category: "Connectors"
 weight: 8
 menus: 
     technologyconnector:

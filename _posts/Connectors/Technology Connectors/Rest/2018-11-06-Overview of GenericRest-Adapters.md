@@ -2,7 +2,7 @@
 title: "Overview of Generic Rest Adapters"
 toc: true
 tag: developers
-category: "REST"
+category: "Connectors"
 menus: 
     technologyconnector:
         title: "REST"

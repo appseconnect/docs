@@ -2,7 +2,7 @@
 title: "Basic Authentication "
 toc: true
 tag: developers
-category: "REST"
+category: "Connectors"
 weight: 6
 menus: 
     resttechnology:

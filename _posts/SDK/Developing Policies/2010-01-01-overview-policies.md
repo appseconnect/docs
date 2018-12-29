@@ -1,7 +1,7 @@
 ---
 title: "Overview on policies development"
 toc: true
-category: "Policies"
+category: "SDK"
 tag: developers
 menus:
     sdk: 
