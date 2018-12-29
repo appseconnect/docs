@@ -5,11 +5,11 @@ tag: developers
 category: "Connectors"
 weight: 7
 menus: 
-    technologyconnector:
-        title: "OLEDB Adapters Cloud"
+    oledbtechnology:
+        title: "Cloud"
         category: "Database"
         icon: fa fa-wpexplorer
-        identifier: oledbtechnology
+        identifier: oledbtechnologycloud
 ---
 Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate 
 and adapt with the AEC Portal. This Document provides you the detailed process of validating a 
