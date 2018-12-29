@@ -1,7 +1,7 @@
 ---
 title: "Overview on plugin development"
 toc: true
-category: "Plugin"
+category: "SDK"
 tag: developers
 menus:
     sdk: 

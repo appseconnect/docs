@@ -2,7 +2,7 @@
 title: "Agent Blocking & Unblocking"
 toc: true
 tag: developers
-category: "Agent"
+category: "Deployment"
 menus: 
     environment:
         title: "Agent Blocking & Unblocking"

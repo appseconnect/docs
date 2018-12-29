@@ -2,7 +2,7 @@
 title: "Overview of OLEDB Adapters"
 toc: true
 tag: developers
-category: "Database"
+category: "Connectors"
 menus: 
     technologyconnector:
         title: "Database"

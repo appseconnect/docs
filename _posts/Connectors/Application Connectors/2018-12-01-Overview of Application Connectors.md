@@ -2,7 +2,7 @@
 title: "Overview of Application Connectors"
 toc: true
 tag: developers
-category: "Application"
+category: "Connectors"
 menus: 
     Connectors :
         title: "Application"

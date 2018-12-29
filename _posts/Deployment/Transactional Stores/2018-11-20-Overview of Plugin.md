@@ -2,7 +2,7 @@
 title: "Overview of Plugin"
 toc: true
 tag: developers
-category: "Plugins"
+category: "Deployment"
 menus: 
     deployment :
         title: "Plugins"  

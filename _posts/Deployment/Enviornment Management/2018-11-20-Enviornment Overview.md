@@ -2,7 +2,7 @@
 title: "Enviornment Overview"
 toc: true
 tag: developers
-category: "Enviornment"
+category: "Deployment"
 menus: 
     deployment :
         title: "Enviornment"

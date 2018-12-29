@@ -2,7 +2,7 @@
 title: "Overview of Custom Connectors"
 toc: true
 tag: developers
-category: "Custom"
+category: "Connectors"
 menus: 
     Connectors:
         title: "Custom"

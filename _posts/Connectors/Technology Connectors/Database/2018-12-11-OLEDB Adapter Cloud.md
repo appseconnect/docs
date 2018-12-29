@@ -2,7 +2,7 @@
 title: "OLEDB Adapters Cloud"
 toc: true
 tag: developers
-category: "Database"
+category: "Connectors"
 weight: 7
 menus: 
     oledbtechnology:

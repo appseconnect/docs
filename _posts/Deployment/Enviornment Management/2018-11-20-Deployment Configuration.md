@@ -2,7 +2,7 @@
 title: "Deployment Configuration"
 toc: true
 tag: developers
-category: "Agent"
+category: "Deployment"
 menus: 
     environment:
         title: "Deployment Configuration"
