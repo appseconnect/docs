@@ -82,7 +82,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview on adapter development",
       excerpt: "Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to...",
-      categories: ["Adapter"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 7
     });
@@ -91,7 +91,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview on plugin development",
       excerpt: "Plugins are a piece of software which lets to tightly couple with the platform to enhance the platform and /...",
-      categories: ["Plugin"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 8
     });
@@ -100,7 +100,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview on policies development",
       excerpt: "Policies are special modules which hooks over an Http pipeline of API execution. In addition to prebuilt policies, APPSeCONNECT also...",
-      categories: ["Policies"],
+      categories: ["SDK"],
       tags: ["developers"],
       id: 9
     });
@@ -226,7 +226,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of AppseConnect",
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
-      categories: ["APPSeCONNECT"],
+      categories: [],
       tags: ["developers"],
       id: 23
     });
@@ -262,7 +262,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Getting Started to APPSeCONNECT",
       excerpt: "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
-      categories: ["APPSeCONNECT"],
+      categories: [],
       tags: ["developers"],
       id: 27
     });
@@ -802,7 +802,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Authentication & Authorization of Generic REST Adapters",
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
-      categories: ["REST"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 87
     });
@@ -811,7 +811,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Basic Authentication ",
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
-      categories: ["REST"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 88
     });
@@ -820,7 +820,7 @@ var idx = lunr(function () {
     idx.add({
       title: "OAuth2.0 Authentication",
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
-      categories: ["REST"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 89
     });
@@ -829,7 +829,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of Generic Rest Adapters",
       excerpt: "Http based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
-      categories: ["REST"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 90
     });
@@ -856,7 +856,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Agent Deactivating",
       excerpt: "\n",
-      categories: ["Agent"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 93
     });
@@ -865,7 +865,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Deployment Configuration",
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
-      categories: ["Agent"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 94
     });
@@ -874,7 +874,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Enviornment Overview",
       excerpt: "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
-      categories: ["Enviornment"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 95
     });
@@ -883,7 +883,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of Plugin",
       excerpt: "A plugin is any kind of an addon or an extension software component that adds a specific feature to an...",
-      categories: ["Plugins"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 96
     });
@@ -892,7 +892,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Agent Blocking & Unblocking",
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from...",
-      categories: ["Agent"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 97
     });
@@ -901,7 +901,7 @@ var idx = lunr(function () {
     idx.add({
       title: "HANA Plugin",
       excerpt: "Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. The Plugin can...",
-      categories: ["Plugins"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 98
     });
@@ -910,7 +910,7 @@ var idx = lunr(function () {
     idx.add({
       title: "MYSQL Plugin",
       excerpt: "Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. The Plugin can be downloaded...",
-      categories: ["Plugins"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 99
     });
@@ -928,7 +928,7 @@ var idx = lunr(function () {
     idx.add({
       title: "OLEDB Plugin",
       excerpt: "Plugin for AEC Database of Agent to Support any DBMS at client side/client server such that AEC can support databases...",
-      categories: ["Plugins"],
+      categories: ["Deployment"],
       tags: ["developers"],
       id: 101
     });
@@ -937,7 +937,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of Application Connectors",
       excerpt: "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
-      categories: ["Application"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 102
     });
@@ -955,7 +955,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of Custom Connectors",
       excerpt: "APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources....",
-      categories: ["Custom"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 104
     });
@@ -963,7 +963,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Overview of Connectors",
-      excerpt: "Connectors are the connection template of the BASE application which contains the BASE touchpoints. Creating this template migrates all the...",
+      excerpt: "AEC Connectors acts like a bridge to create connection between applications that connects different data sources both on-premise or in...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 105
@@ -982,7 +982,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of Technology Connectors",
       excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
-      categories: ["Technology"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 107
     });
@@ -991,7 +991,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Overview of OLEDB Adapters",
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
-      categories: ["Database"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 108
     });
@@ -1018,7 +1018,7 @@ var idx = lunr(function () {
     idx.add({
       title: "OLEDB Adapters Cloud",
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
-      categories: ["Database"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 111
     });
@@ -1045,7 +1045,7 @@ var idx = lunr(function () {
     idx.add({
       title: "OLEDB Adapters OnPremise",
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
-      categories: ["Database"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 114
     });
@@ -1054,7 +1054,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Correct Assembly Version Extraction for Adapter Upload",
       excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
-      categories: ["Database"],
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 115
     });
@@ -1211,7 +1211,7 @@ var store = [
       
       {
         "title": "Overview on adapter development",
-        "url": "/adapter/overview-adapters/",
+        "url": "/sdk/overview-adapters/",
         "excerpt": "Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to...",
         "teaser":
           
@@ -1222,7 +1222,7 @@ var store = [
       
       {
         "title": "Overview on plugin development",
-        "url": "/plugin/overview-plugins/",
+        "url": "/sdk/overview-plugins/",
         "excerpt": "Plugins are a piece of software which lets to tightly couple with the platform to enhance the platform and /...",
         "teaser":
           
@@ -1233,7 +1233,7 @@ var store = [
       
       {
         "title": "Overview on policies development",
-        "url": "/policies/overview-policies/",
+        "url": "/sdk/overview-policies/",
         "excerpt": "Policies are special modules which hooks over an Http pipeline of API execution. In addition to prebuilt policies, APPSeCONNECT also...",
         "teaser":
           
@@ -1387,7 +1387,7 @@ var store = [
       
       {
         "title": "Overview of AppseConnect",
-        "url": "/appseconnect/home/",
+        "url": "/home/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
           
@@ -1431,7 +1431,7 @@ var store = [
       
       {
         "title": "Getting Started to APPSeCONNECT",
-        "url": "/appseconnect/getting-started/",
+        "url": "/getting-started/",
         "excerpt": "CUSTOMER PROFILE INFORMATION This section enables you to quickly access your profile after logging into the application. This is where...",
         "teaser":
           
@@ -2091,7 +2091,7 @@ var store = [
       
       {
         "title": "Authentication & Authorization of Generic REST Adapters",
-        "url": "/rest/Authentication-&-Authorization/",
+        "url": "/connectors/Authentication-&-Authorization/",
         "excerpt": "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
         "teaser":
           
@@ -2102,7 +2102,7 @@ var store = [
       
       {
         "title": "Basic Authentication ",
-        "url": "/rest/BasicAuthentication/",
+        "url": "/connectors/BasicAuthentication/",
         "excerpt": "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
         "teaser":
           
@@ -2113,7 +2113,7 @@ var store = [
       
       {
         "title": "OAuth2.0 Authentication",
-        "url": "/rest/OAuth2.0/",
+        "url": "/connectors/OAuth2.0/",
         "excerpt": "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
         "teaser":
           
@@ -2124,7 +2124,7 @@ var store = [
       
       {
         "title": "Overview of Generic Rest Adapters",
-        "url": "/rest/Overview-of-GenericRest-Adapters/",
+        "url": "/connectors/Overview-of-GenericRest-Adapters/",
         "excerpt": "Http based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
         "teaser":
           
@@ -2157,7 +2157,7 @@ var store = [
       
       {
         "title": "Agent Deactivating",
-        "url": "/agent/Agent-Deactivating/",
+        "url": "/deployment/Agent-Deactivating/",
         "excerpt": "\n",
         "teaser":
           
@@ -2168,7 +2168,7 @@ var store = [
       
       {
         "title": "Deployment Configuration",
-        "url": "/agent/Deployment-Configuration/",
+        "url": "/deployment/Deployment-Configuration/",
         "excerpt": "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
         "teaser":
           
@@ -2179,7 +2179,7 @@ var store = [
       
       {
         "title": "Enviornment Overview",
-        "url": "/enviornment/Enviornment-Overview/",
+        "url": "/deployment/Enviornment-Overview/",
         "excerpt": "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
         "teaser":
           
@@ -2190,7 +2190,7 @@ var store = [
       
       {
         "title": "Overview of Plugin",
-        "url": "/plugins/Overview-of-Plugin/",
+        "url": "/deployment/Overview-of-Plugin/",
         "excerpt": "A plugin is any kind of an addon or an extension software component that adds a specific feature to an...",
         "teaser":
           
@@ -2201,7 +2201,7 @@ var store = [
       
       {
         "title": "Agent Blocking & Unblocking",
-        "url": "/agent/Agent-Blocking-&-Unblocking/",
+        "url": "/deployment/Agent-Blocking-&-Unblocking/",
         "excerpt": "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from...",
         "teaser":
           
@@ -2212,7 +2212,7 @@ var store = [
       
       {
         "title": "HANA Plugin",
-        "url": "/plugins/hana-plugin-installation/",
+        "url": "/deployment/hana-plugin-installation/",
         "excerpt": "Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. The Plugin can...",
         "teaser":
           
@@ -2223,7 +2223,7 @@ var store = [
       
       {
         "title": "MYSQL Plugin",
-        "url": "/plugins/MYSQL-plugin-installation/",
+        "url": "/deployment/MYSQL-plugin-installation/",
         "excerpt": "Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. The Plugin can be downloaded...",
         "teaser":
           
@@ -2245,7 +2245,7 @@ var store = [
       
       {
         "title": "OLEDB Plugin",
-        "url": "/plugins/OLE-db-plugin-installation/",
+        "url": "/deployment/OLE-db-plugin-installation/",
         "excerpt": "Plugin for AEC Database of Agent to Support any DBMS at client side/client server such that AEC can support databases...",
         "teaser":
           
@@ -2256,7 +2256,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/application/Overview-of-Application-Connectors/",
+        "url": "/connectors/Overview-of-Application-Connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
@@ -2278,7 +2278,7 @@ var store = [
       
       {
         "title": "Overview of Custom Connectors",
-        "url": "/custom/overview-of-custom-connectors/",
+        "url": "/connectors/overview-of-custom-connectors/",
         "excerpt": "APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources....",
         "teaser":
           
@@ -2290,7 +2290,7 @@ var store = [
       {
         "title": "Overview of Connectors",
         "url": "/connectors/Overview-of-Connectors/",
-        "excerpt": "Connectors are the connection template of the BASE application which contains the BASE touchpoints. Creating this template migrates all the...",
+        "excerpt": "AEC Connectors acts like a bridge to create connection between applications that connects different data sources both on-premise or in...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2311,7 +2311,7 @@ var store = [
       
       {
         "title": "Overview of Technology Connectors",
-        "url": "/technology/Overview-of-technology-connectors/",
+        "url": "/connectors/Overview-of-technology-connectors/",
         "excerpt": "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
         "teaser":
           
@@ -2322,7 +2322,7 @@ var store = [
       
       {
         "title": "Overview of OLEDB Adapters",
-        "url": "/database/Overview-of-OLEDB-Adapter/",
+        "url": "/connectors/Overview-of-OLEDB-Adapter/",
         "excerpt": "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
         "teaser":
           
@@ -2355,7 +2355,7 @@ var store = [
       
       {
         "title": "OLEDB Adapters Cloud",
-        "url": "/database/OLEDB-Adapter-Cloud/",
+        "url": "/connectors/OLEDB-Adapter-Cloud/",
         "excerpt": "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
         "teaser":
           
@@ -2388,7 +2388,7 @@ var store = [
       
       {
         "title": "OLEDB Adapters OnPremise",
-        "url": "/database/OLEDB-Adapter-OnPremise/",
+        "url": "/connectors/OLEDB-Adapter-OnPremise/",
         "excerpt": "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
         "teaser":
           
@@ -2399,7 +2399,7 @@ var store = [
       
       {
         "title": "Correct Assembly Version Extraction for Adapter Upload",
-        "url": "/database/Version-Extraction-For-Adapter-Upload/",
+        "url": "/connectors/Version-Extraction-For-Adapter-Upload/",
         "excerpt": "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
         "teaser":
           

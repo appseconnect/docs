@@ -2,7 +2,7 @@
 title: "Agent Deactivating"
 toc: true
 tag: developers
-category: "Agent"
+category: "Deployment"
 menus: 
     environment:
         title: "Deactivating"

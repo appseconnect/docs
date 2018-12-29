@@ -6,7 +6,7 @@ category: "Transformation"
 menus: 
     transformation:
         title: "If-Else"
-        weight: 3
+        weight: 4
         icon: fa fa-file-word-o
         identifier: transformationlogic
 ---
@@ -29,6 +29,16 @@ The user/implementer can work on If-Else Mapping in the attribute level. Given b
 The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.
 
 ![Attributelevel-AddCondition](/staticfiles/transformation/media/Attributelevel-AddCondition.png)
+
+**Note: The user can add conditions (Else-If & Else) inside an IF Node similarly as shown in the screen below, except for the FOR-EACH LOOP LEVEL.**
+
+* The above given mapping scenario,is explained below 
+
+The Condition default-address/country-code='US' in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.
+
+The Condition default-address/country-code='IN' in the Else-If node describes that if the Country code in the Default Address is IN, the clause Country_Region_Code = GB is carried out.
+
+And for the Otherwise (ELSE)Node,the given clause will be carried out.
 
 Refer the screen given below:
 

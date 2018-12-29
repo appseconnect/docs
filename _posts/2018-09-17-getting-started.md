@@ -2,7 +2,6 @@
 title: "Getting Started to APPSeCONNECT"
 toc: true
 tag: developers
-category: "APPSeCONNECT"
 menus: 
     header:
         title: "Getting Started"
