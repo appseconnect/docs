@@ -1052,7 +1052,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Correct Assembly Version Extarction for Adapter Upload",
+      title: "Correct Assembly Version Extraction for Adapter Upload",
       excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
       categories: ["Database"],
       tags: ["developers"],
@@ -1332,7 +1332,7 @@ var store = [
       
       {
         "title": "Logging and Tracing",
-        "url": "/sdk/Logging-&-Tracking-Copy/",
+        "url": "/sdk/Logging-&-Tracking/",
         "excerpt": "Adapter works on background always to communicate data between application and APPSeCONNECT. As there are a large part of code...",
         "teaser":
           
@@ -2398,7 +2398,7 @@ var store = [
     
       
       {
-        "title": "Correct Assembly Version Extarction for Adapter Upload",
+        "title": "Correct Assembly Version Extraction for Adapter Upload",
         "url": "/database/Version-Extraction-For-Adapter-Upload/",
         "excerpt": "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
         "teaser":

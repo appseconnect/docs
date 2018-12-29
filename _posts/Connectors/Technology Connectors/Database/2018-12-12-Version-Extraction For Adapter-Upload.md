@@ -1,5 +1,5 @@
 ---
-title: "Correct Assembly Version Extarction for Adapter Upload"
+title: "Correct Assembly Version Extraction for Adapter Upload"
 toc: true
 tag: developers
 category: "Database"
