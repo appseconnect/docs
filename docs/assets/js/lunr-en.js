@@ -224,7 +224,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of AppseConnect",
+      title: "Overview of APPSeConnect",
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
       categories: [],
       tags: ["developers"],
@@ -377,8 +377,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quota for a Key policy",
-      excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+      title: "Throttling policy",
+      excerpt: "Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 40
@@ -854,8 +854,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Agent Deactivating",
-      excerpt: "\n",
+      title: "Deployment Configuration",
+      excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
       categories: ["Deployment"],
       tags: ["developers"],
       id: 93
@@ -863,20 +863,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deployment Configuration",
-      excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
-      categories: ["Deployment"],
-      tags: ["developers"],
-      id: 94
-    });
-    
-  
-    idx.add({
-      title: "Enviornment Overview",
+      title: "Environment Overview",
       excerpt: "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 95
+      id: 94
     });
     
   
@@ -885,7 +876,7 @@ var idx = lunr(function () {
       excerpt: "A plugin is any kind of an addon or an extension software component that adds a specific feature to an...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 96
+      id: 95
     });
     
   
@@ -894,7 +885,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 97
+      id: 96
     });
     
   
@@ -903,7 +894,7 @@ var idx = lunr(function () {
       excerpt: "Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. The Plugin can...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 98
+      id: 97
     });
     
   
@@ -912,7 +903,7 @@ var idx = lunr(function () {
       excerpt: "Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. The Plugin can be downloaded...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 99
+      id: 98
     });
     
   
@@ -921,7 +912,7 @@ var idx = lunr(function () {
       excerpt: "Cross-Origin Resource Sharing (CORS) Policy is a mechanism which allows restriction to domain access. Domains configured by the User is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 100
+      id: 99
     });
     
   
@@ -930,7 +921,7 @@ var idx = lunr(function () {
       excerpt: "Plugin for AEC Database of Agent to Support any DBMS at client side/client server such that AEC can support databases...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 101
+      id: 100
     });
     
   
@@ -939,16 +930,16 @@ var idx = lunr(function () {
       excerpt: "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 102
+      id: 101
     });
     
   
     idx.add({
-      title: "Overview of Connectors",
+      title: "Shopify",
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 103
+      id: 102
     });
     
   
@@ -957,7 +948,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 104
+      id: 103
     });
     
   
@@ -966,16 +957,16 @@ var idx = lunr(function () {
       excerpt: "AEC Connectors acts like a bridge to create connection between applications that connects different data sources both on-premise or in...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 105
+      id: 104
     });
     
   
     idx.add({
-      title: "Magento2 Configuration",
+      title: "Magento2",
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 106
+      id: 105
     });
     
   
@@ -984,7 +975,7 @@ var idx = lunr(function () {
       excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 107
+      id: 106
     });
     
   
@@ -993,7 +984,7 @@ var idx = lunr(function () {
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 108
+      id: 107
     });
     
   
@@ -1002,7 +993,7 @@ var idx = lunr(function () {
       excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 109
+      id: 108
     });
     
   
@@ -1011,7 +1002,7 @@ var idx = lunr(function () {
       excerpt: "Adapter represents an interface between an APP and APPSeCONNECT. An adapter is the most important component which connects your app...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 110
+      id: 109
     });
     
   
@@ -1020,7 +1011,7 @@ var idx = lunr(function () {
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 111
+      id: 110
     });
     
   
@@ -1029,7 +1020,7 @@ var idx = lunr(function () {
       excerpt: "While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent. Given...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 112
+      id: 111
     });
     
   
@@ -1038,7 +1029,7 @@ var idx = lunr(function () {
       excerpt: "Pascal Case and CamelCase Pascal Casing - First character of all words are Upper Case and other characters are lower...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 113
+      id: 112
     });
     
   
@@ -1047,7 +1038,7 @@ var idx = lunr(function () {
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 114
+      id: 113
     });
     
   
@@ -1056,7 +1047,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 115
+      id: 114
     });
     
   
@@ -1065,7 +1056,7 @@ var idx = lunr(function () {
       excerpt: "With every update AEC Agent need upgradation to a higher version without losing any data in the agent. This upgradation...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 116
+      id: 115
     });
     
   
@@ -1074,7 +1065,7 @@ var idx = lunr(function () {
       excerpt: "Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 117
+      id: 116
     });
     
   
@@ -1083,7 +1074,7 @@ var idx = lunr(function () {
       excerpt: "An admin or an end-user can upload updated adapter to an existing app such that the adapter can be changed...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 118
+      id: 117
     });
     
   
@@ -1092,7 +1083,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Component Version Pattern contains four numbers, which convey the following information: Pattern- (1st-Number).(2nd-Number).(3rd-Number).(4th-Number) From left to right the numbers...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 119
+      id: 118
     });
     
   
@@ -1101,7 +1092,7 @@ var idx = lunr(function () {
       excerpt: "Environment section of APPSeCONNECT allows the user to deploy configurations and adapters. In case of APPSeCONNECT, you will automatically get...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 120
+      id: 119
     });
     
   
@@ -1110,7 +1101,7 @@ var idx = lunr(function () {
       excerpt: "This Document provides the details and the functionality aspect of the API components to define static and dynamic criterias for...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 121
+      id: 120
     });
     
   
@@ -1386,7 +1377,7 @@ var store = [
     
       
       {
-        "title": "Overview of AppseConnect",
+        "title": "Overview of APPSeConnect",
         "url": "/home/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
@@ -1573,9 +1564,9 @@ var store = [
     
       
       {
-        "title": "Quota for a Key policy",
+        "title": "Throttling policy",
         "url": "/api-management/quota-per-user-key/",
-        "excerpt": "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+        "excerpt": "Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2156,17 +2147,6 @@ var store = [
     
       
       {
-        "title": "Agent Deactivating",
-        "url": "/deployment/Agent-Deactivating/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Deployment Configuration",
         "url": "/deployment/Deployment-Configuration/",
         "excerpt": "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
@@ -2178,7 +2158,7 @@ var store = [
     
       
       {
-        "title": "Enviornment Overview",
+        "title": "Environment Overview",
         "url": "/deployment/Enviornment-Overview/",
         "excerpt": "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
         "teaser":
@@ -2266,7 +2246,7 @@ var store = [
     
       
       {
-        "title": "Overview of Connectors",
+        "title": "Shopify",
         "url": "/connectors/Shopify/",
         "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
@@ -2299,7 +2279,7 @@ var store = [
     
       
       {
-        "title": "Magento2 Configuration",
+        "title": "Magento2",
         "url": "/connectors/Magento2/",
         "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
         "teaser":

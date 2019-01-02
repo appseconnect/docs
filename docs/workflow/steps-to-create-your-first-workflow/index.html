@@ -679,7 +679,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
-        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Quota-Per-Key-Policy">Quota-Per-Key-Policy</a>
+        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Throttling policy">Throttling policy</a>
         
     </li>
     
@@ -754,13 +754,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2 Configuration">Magento2 Configuration</a>
+        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2">Magento2</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify Connector">Shopify Connector</a>
+        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify">Shopify</a>
         
     </li>
     
@@ -876,7 +876,7 @@
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Enviornment-Overview/');" title="Go to Enviornment">Enviornment</a>
         
         
@@ -884,19 +884,13 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Deployment-Configuration/');" title="Go to Deployment Configuration">Deployment Configuration</a>
         
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
-        <a onclick="selectTab('/deployment/Agent-Deactivating/');" title="Go to Deactivating">Deactivating</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Agent-Blocking-&-Unblocking/');" title="Go to Agent Blocking & Unblocking">Agent Blocking & Unblocking</a>
         
     </li>
@@ -1051,7 +1045,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Overview">Overview</a>
+        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
         
     </li>
     
@@ -1062,7 +1056,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Logs">Logs</a>
+        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1076,13 +1070,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
+        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
         
     </li>
     
@@ -1118,7 +1112,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1230,7 +1224,7 @@
 
 <p>By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal.</p>
 
-<p>In Workflow diagram panel there are some <a href="">Template Touchpoints</a> provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement.</p>
+<p>In Workflow diagram panel there are some Template Touchpoints provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement.</p>
 
 <p>If you are new to Workflow, then go through the below steps to know more.</p>
 
@@ -1298,62 +1292,40 @@
 </ol>
 
 <ul>
-  <li>
-    <p>Similarly, drag &amp; drop more touchpoints to complete a cycle.</p>
-  </li>
-  <li>
-    <p>A list of different types of touchpoints will be generated</p>
-  </li>
+  <li>Similarly, drag &amp; drop more touchpoints to complete a cycle.</li>
+  <li>A list of different types of touchpoints will be generated</li>
 </ul>
 
 <p><img src="/staticfiles/workflow-management/media/Templates.png" alt="Templates" /></p>
-
-<ul>
-  <li>Drag in the general touchpoint to the workflow creation area</li>
-</ul>
-
-<p><img src="/staticfiles/workflow-management/media/Adding-Touchpoint.png" alt="Adding-Touchpoint" /></p>
-
-<ul>
-  <li>Once you’ve provided the details, click OK. The touchpoint will be added. Also Add an ‘End’ node</li>
-</ul>
-
-<p><img src="/staticfiles/workflow-management/media/StartEnd-Node.png" alt="StartEnd-Node" /></p>
-
-<ul>
-  <li>Connect the ‘Start’ Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.</li>
-</ul>
-
-<p><img src="/staticfiles/workflow-management/media/StartEnd-NodeConnected.png" alt="StartEnd-NodeConnected" /></p>
-
-<p>Click on ‘Save’. The workflow is now ready to be executed.</p>
-
-<ul>
-  <li>
-    <p>After all the steps have been completed - Agent &amp; Cloud Configuration, the workflow is ready to be run.</p>
-
-    <p><img src="/staticfiles/workflow-management/media/Runbutton.png" alt="Runbutton" /></p>
-  </li>
-</ul>
+<ol>
+  <li>Drag in the general touchpoint to the workflow creation area<br />
+<img src="/staticfiles/workflow-management/media/Adding-Touchpoint.png" alt="Adding-Touchpoint" /></li>
+  <li>Once you have provided the details, click OK. The touchpoint will be added. Also Add an ‘End’ node
+<img src="/staticfiles/workflow-management/media/StartEnd-Node.png" alt="StartEnd-Node" /></li>
+  <li>Connect the ‘Start’ Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
+<img src="/staticfiles/workflow-management/media/StartEnd-NodeConnected.png" alt="StartEnd-NodeConnected" /></li>
+  <li>Click on ‘Save’. The workflow is now ready to be executed.</li>
+  <li>After all the steps have been completed - Agent &amp; Cloud Configuration, the workflow is ready to be run.  <br />
+<img src="/staticfiles/workflow-management/media/Runbutton.png" alt="Runbutton" /></li>
+</ol>
 
 <p>NOTE - Initially the Run button will be in disabled state, you have to activate it following these steps:
 <code class="highlighter-rouge">Go to the APPSeCONNECT -&gt; Settings Panel -&gt; Check the Activate box</code>.</p>
 
 <ol>
-  <li>Now Run it and this will open another form.</li>
+  <li>
+    <p>Now Run it and this will open another form.<br />
+ <img src="/staticfiles/workflow-management/media/Workflow-Executed.png" alt="Workflow-Executed" /></p>
+  </li>
+  <li>
+    <p>In the above screen, you can see each step of the operation. The circle segments of the nodes will change its color according to the operation</p>
+  </li>
 </ol>
 
-<p><img src="/staticfiles/workflow-management/media/Workflow-Executed.png" alt="Workflow-Executed" /></p>
-
-<ol>
-  <li>In the above screen, you can see each step of the operation. 
-The circle segments of the nodes will change its color according to the operation</li>
-</ol>
-
-<p><strong>Protip</strong> Ongoing Operation= Yellow color
-        Successful Operation= Green color
-        Failed Operation  = Red color
-         {: .notice–info}</p>
+<p class="notice--info"><strong>Protip</strong> 
+           Ongoing Operation= Yellow color<br />
+           Successful Operation= Green color
+           Failed Operation  = Red color</p>
 
 <ol>
   <li>You will view messages in each step.  You can check the workflow functionalities for the following nodes:</li>
@@ -1363,7 +1335,7 @@ The circle segments of the nodes will change its color according to the operatio
 
 <ul>
   <li><a href="/workflow/working-with-get/">Get</a></li>
-  <li><a href="/workflow/working-with-splitter/">Spilter</a></li>
+  <li><a href="/workflow/working-with-splitter/">Splitter</a></li>
   <li><a href="/workflow/working-with-merger/">Merger</a></li>
   <li><a href="/workflow/working-with-loops/">Loop</a></li>
   <li><a href="/workflow/working-with-halt-resume/">Halt Resume</a></li>
@@ -2377,18 +2349,8 @@ The circle segments of the nodes will change its color according to the operatio
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
                             
                             
                             

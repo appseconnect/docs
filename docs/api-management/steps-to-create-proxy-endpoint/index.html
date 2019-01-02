@@ -679,7 +679,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
-        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Quota-Per-Key-Policy">Quota-Per-Key-Policy</a>
+        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Throttling policy">Throttling policy</a>
         
     </li>
     
@@ -754,13 +754,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2 Configuration">Magento2 Configuration</a>
+        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2">Magento2</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify Connector">Shopify Connector</a>
+        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify">Shopify</a>
         
     </li>
     
@@ -876,7 +876,7 @@
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Enviornment-Overview/');" title="Go to Enviornment">Enviornment</a>
         
         
@@ -884,19 +884,13 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Deployment-Configuration/');" title="Go to Deployment Configuration">Deployment Configuration</a>
         
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
-        <a onclick="selectTab('/deployment/Agent-Deactivating/');" title="Go to Deactivating">Deactivating</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Agent-Blocking-&-Unblocking/');" title="Go to Agent Blocking & Unblocking">Agent Blocking & Unblocking</a>
         
     </li>
@@ -1051,7 +1045,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Overview">Overview</a>
+        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
         
     </li>
     
@@ -1062,7 +1056,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Logs">Logs</a>
+        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1076,13 +1070,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
+        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
         
     </li>
     
@@ -1118,7 +1112,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1242,12 +1236,12 @@ APPSeCONNECT Portal.</p>
 prerequisites. Here are some of them :</p>
 
 <ol>
-  <li><a href="">Getting a new account for APPSeCONNECT</a></li>
-  <li><a href="">Choosing and Configuring Backend APPs</a></li>
-  <li><a href="">Connecting to your data sources</a></li>
-  <li><a href="">Configuring Environments, installing / deploying Agent</a></li>
-  <li><a href="">Feeding Credentials for applications and data sources</a></li>
-  <li><a href="">Configuring / Importing Schemas and Actions</a></li>
+  <li><a href="/home/#appseconnect-platform---functional-menus">Getting a new account for APPSeCONNECT</a></li>
+  <li><a href="/getting-started/#choosing-application">Choosing and Configuring Backend APPs</a></li>
+  <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Connecting to your data sources</a></li>
+  <li><a href="/deployment/Deployment-Configuration/">Configuring Environments, installing / deploying Agent</a></li>
+  <li><a href="/getting-started/#appseconnect-schemaentity">Feeding Credentials for applications and data sources</a></li>
+  <li><a href="/getting-started/#appseconnect-schemaentity">Configuring / Importing Schemas and Actions</a></li>
 </ol>
 
 <p>After all these steps are done, make sure the environment is kept running and credentials are propery updated.</p>
@@ -1263,28 +1257,17 @@ depicting Proxy, select the section to navigate to it.</p>
 details are important to create the face of the API.</li>
   <li>The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
-not specify the version element in the API, you will face lot of challenges in future.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/api-frontend-configuration.PNG" alt="Api Frontend Configuration" />
-<strong>Note:</strong> For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily.</p>
-
-<ol>
+not specify the version element in the API, you will face lot of challenges in future. 
+<img src="/staticfiles/api-management/media/api-frontend-configuration.PNG" alt="Api Frontend Configuration" /></li>
   <li>Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
-to specify policies which will be executed before the execution of Backend Action.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/inbound-policy-example.PNG" alt="Inbound Policy Example" />
+to specify policies which will be executed before the execution of Backend Action.
+<img src="/staticfiles/api-management/media/inbound-policy-example.PNG" alt="Inbound Policy Example" />
 In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
-of the policies applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
-you can continue the wizard.</p>
-<ol>
+of the <a href="/api-management/policies/">policies</a> applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
+you can continue the wizard. For Plocy Configurtaion, Click <a href="/api-management/policies/">here</a></li>
   <li>The next screen is where you specify the backend. This section is very important because this section
-provides the actual data source for that particular API.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/api-backend-configuration.PNG" alt="Api Backend Configuration" /></p>
-<ol>
+provides the actual data source for that particular API. 
+<img src="/staticfiles/api-management/media/api-backend-configuration.PNG" alt="Api Backend Configuration" /></li>
   <li>The backend needs to be configured correctly by specifying the Application, Schema, and Action. In addition to that
 you can also choose the credential here to connect to the particular data source.</li>
   <li>The outboud policies are those which are applied after the backend is executed. Here also similar to the Inbound 
@@ -1295,6 +1278,8 @@ should return when there is a failure in execution or success in execution. You 
 if you are not happy with our defualt messaging.</li>
   <li>Each of the APIs crated will show the URL and Http Method which needs to be used to execute it from the listing screen.</li>
 </ol>
+
+<p><strong>Note:</strong> For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily.</p>
 
 <h3 id="steps-to-follow-while-editing-your-proxy-endpoint">Steps to follow while editing your proxy endpoint</h3>
 
@@ -2312,14 +2297,6 @@ change versions, publish new version or add credential to the backend.</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -2384,8 +2361,6 @@ change versions, publish new version or add credential to the backend.</p>
                                     Cors policy
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

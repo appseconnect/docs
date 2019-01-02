@@ -679,7 +679,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
-        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Quota-Per-Key-Policy">Quota-Per-Key-Policy</a>
+        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Throttling policy">Throttling policy</a>
         
     </li>
     
@@ -754,13 +754,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2 Configuration">Magento2 Configuration</a>
+        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2">Magento2</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify Connector">Shopify Connector</a>
+        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify">Shopify</a>
         
     </li>
     
@@ -876,7 +876,7 @@
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Enviornment-Overview/');" title="Go to Enviornment">Enviornment</a>
         
         
@@ -884,19 +884,13 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Deployment-Configuration/');" title="Go to Deployment Configuration">Deployment Configuration</a>
         
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
-        <a onclick="selectTab('/deployment/Agent-Deactivating/');" title="Go to Deactivating">Deactivating</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Agent-Blocking-&-Unblocking/');" title="Go to Agent Blocking & Unblocking">Agent Blocking & Unblocking</a>
         
     </li>
@@ -1051,7 +1045,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Overview">Overview</a>
+        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
         
     </li>
     
@@ -1062,7 +1056,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Logs">Logs</a>
+        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1076,13 +1070,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
+        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
         
     </li>
     
@@ -1118,7 +1112,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1216,14 +1210,17 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#usability-of-choosing-workflow-feature">Usability of Choosing Workflow feature</a></li>
+  <li><a href="#steps-to-choosing-workflow-in-organization">Steps to choosing Workflow in Organization</a></li>
+</ul>
                     </nav>
                 </aside>
                 
                 <p>Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more applications. 
 An implementer can now be able to use the <code class="highlighter-rouge">CHOOSE WORKFLOW</code> feature in the APPSeCONNECT Portal. This document will help the implementer to go through the feature in detail.</p>
 
-<p><strong><em>Usability of Choosing Workflow feature</em></strong></p>
+<h2 id="usability-of-choosing-workflow-feature">Usability of Choosing Workflow feature</h2>
 
 <ul>
   <li>This Feature lists you all the workflows that are created in BASE.</li>
@@ -1231,41 +1228,20 @@ An implementer can now be able to use the <code class="highlighter-rouge">CHOOSE
   <li>Choose a BASE workflow, and a Connection specific request pops-up in case of multiple BASE Application Connection.</li>
 </ul>
 
-<p><strong><em>Steps to choosing Workflow in Organization</em></strong></p>
+<h2 id="steps-to-choosing-workflow-in-organization">Steps to choosing Workflow in Organization</h2>
 
 <ol>
-  <li>
-    <p>Login to your APPSeCONNECT Portal with valid credentials.</p>
-  </li>
-  <li>
-    <p>Click on the Workflow module and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in the organisation.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/ChooseWorkflow1.png" alt="ChooseWorkflow1" /></p>
-
-<ol>
-  <li>Click Choose Workflow button and you can view the list of workflows migrated from the BASE appears.</li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/ChooseWorkflow-Connectionlist.png" alt="ChooseWorkflow-Connectionlist" /></p>
-
-<ol>
-  <li>You can choose any of the Workflow from the list. The Chosen Workflow will appear in your Workflow Panel.</li>
-</ol>
-
-<p>Here we have chosen the Activate the Workflow-Customer [Add MS Dynamics NAV to Magento]</p>
-
-<p><img src="/staticfiles/workflow-management/media/ActivateWorkflow-Connectionlist.png" alt="ActivateWorkflow-Connectionlist" /></p>
-
-<ol>
+  <li>Login to your APPSeCONNECT Portal with valid credentials.</li>
+  <li>Click on the Workflow module and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in the organisation.
+<img src="/staticfiles/workflow-management/media/ChooseWorkflow1.png" alt="ChooseWorkflow1" /></li>
+  <li>Click Choose Workflow button and you can view the list of workflows migrated from the BASE appears.
+<img src="/staticfiles/workflow-management/media/ChooseWorkflow-Connectionlist.png" alt="ChooseWorkflow-Connectionlist" /></li>
+  <li>You can choose any of the Workflow from the list. The Chosen Workflow will appear in your Workflow Panel.
+Here we have chosen the Activate the Workflow-Customer [Add MS Dynamics NAV to Magento]<br />
+<img src="/staticfiles/workflow-management/media/ActivateWorkflow-Connectionlist.png" alt="ActivateWorkflow-Connectionlist" /></li>
   <li>If the organisation has more than one connection template for BASE applications, a connection specific request pops up where you need to specify 
-for which connection you want the workflow to get activated.</li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/ChooseConnection-mutliple.png" alt="ChooseConnection-mutliple" /></p>
-
-<ol>
+for which connection you want the workflow to get activated.<br />
+<img src="/staticfiles/workflow-management/media/ChooseConnection-mutliple.png" alt="ChooseConnection-mutliple" /></li>
   <li>Click Save the Workflow gets added to the organisation workflow panel.</li>
 </ol>
 
@@ -2278,18 +2254,8 @@ for which connection you want the workflow to get activated.</li>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
                             
                             
                             

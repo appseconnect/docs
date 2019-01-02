@@ -83,5 +83,4 @@ Once the Parameter Section gets expanded,  Click **TRY IT OUT** to execute the p
 **ProTip:** Every-time, you execute the Proxy API in Swagger endpoint you can view both success and failure messages. 
 e.g: The HTTP Response code for success/failure will come like 200 OK, 202 Accepted, 
 302 Moved Temporarily, 204 No Content, 206 Partial Content etc.
-
 {: .notice--info}.

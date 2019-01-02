@@ -679,7 +679,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
-        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Quota-Per-Key-Policy">Quota-Per-Key-Policy</a>
+        <a onclick="selectTab('/api-management/quota-per-user-key/');" title="Go to Throttling policy">Throttling policy</a>
         
     </li>
     
@@ -754,13 +754,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2 Configuration">Magento2 Configuration</a>
+        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2">Magento2</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify Connector">Shopify Connector</a>
+        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify">Shopify</a>
         
     </li>
     
@@ -876,7 +876,7 @@
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Enviornment-Overview/');" title="Go to Enviornment">Enviornment</a>
         
         
@@ -884,19 +884,13 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Deployment-Configuration/');" title="Go to Deployment Configuration">Deployment Configuration</a>
         
     </li>
     
     
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
-        <a onclick="selectTab('/deployment/Agent-Deactivating/');" title="Go to Deactivating">Deactivating</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-deployment"}'>
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a onclick="selectTab('/deployment/Agent-Blocking-&-Unblocking/');" title="Go to Agent Blocking & Unblocking">Agent Blocking & Unblocking</a>
         
     </li>
@@ -1051,7 +1045,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Overview">Overview</a>
+        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
         
     </li>
     
@@ -1062,7 +1056,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Logs">Logs</a>
+        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1076,13 +1070,13 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
+        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
         
     </li>
     
@@ -1118,7 +1112,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Guidelines">Guidelines</a>
+        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Troubleshooting">Troubleshooting</a>
         
     </li>
     
@@ -1224,6 +1218,7 @@
   <li><a href="#templates-of-workflow">Templates of Workflow</a>
     <ul>
       <li><a href="#working-with-workflow-in-appseconnect">Working with Workflow in APPSeCONNECT</a></li>
+      <li><a href="#search-functions-of-workflow">Search functions of Workflow</a></li>
     </ul>
   </li>
 </ul>
@@ -1313,49 +1308,30 @@ Currently APPSeCONNECT supports the following actions:</p>
 
 <ol>
   <li>Log in to the APPSeCONNECT Portal</li>
-  <li>Now choose a <code class="highlighter-rouge">Project -&gt; Workflows</code> section under Account and a new page will open.</li>
+  <li>Now choose a <code class="highlighter-rouge">Project -&gt; Workflows</code> section under Account and a new page will open.
+  <img src="/staticfiles/workflow-management/media/Workflow.png" alt="Workflow" /></li>
+  <li>If you are a new user and no previous workflow is there, neither in Base nor in the user template, this screen will appear
+<img src="/staticfiles/workflow-management/media/NoWorkflow.png" alt="NoWorkflow" /></li>
+  <li>If you are an existing user who have used Workflows, the following screen will appear
+<img src="/staticfiles/workflow-management/media/Workflow_Landing.png" alt="Workflow_Landing" /></li>
+  <li>You can view maximum of 6 workflow designed in a workflow page, rest workflows can be scrolled through navigation pages.</li>
+  <li>APPSeCONNECT has two category of Workflows:</li>
 </ol>
 
-<p><img src="/staticfiles/workflow-management/media/Workflow.png" alt="Workflow" /></p>
+<p><strong>Organization Workflow</strong> -  This type of Workflow have two button <code class="highlighter-rouge">Edit</code> &amp; <code class="highlighter-rouge">Delete</code>and you have to activate it.</p>
+
+<p><strong>Base Workflow</strong> - This type of workflow has initially one button. Once you activate it, you will see that Workflow contains two buttons, one for Edit, another for Delete.</p>
+
+<ol>
+  <li>Every workflow has one switch, this will either take the  workflow to <code class="highlighter-rouge">Active state</code> or will go to <code class="highlighter-rouge">Inactive state</code>. If it’s in Inactive state, that workflow will not work on Agent’s App.
+ <img src="/staticfiles/workflow-management/media/Workflow_dialog.png" alt="Workflow_dialog" /></li>
+  <li>You will get <code class="highlighter-rouge">SEARCH</code> panel in the top of the workflow page.
+ <img src="/staticfiles/workflow-management/media/Search_Workflow.png" alt="Search_Workflow" /></li>
+</ol>
 
 <p class="notice--info"><strong>Protip</strong> Choose Project only, if you have multiple projects, else directly you are into your project</p>
 
-<ol>
-  <li>If you are a new user and no previous workflow is there, neither in Base nor in the user template, this screen will appear</li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/NoWorkflow.png" alt="NoWorkflow" /></p>
-
-<ol>
-  <li>If you are an existing user who have used Workflows, the following screen will appear</li>
-</ol>
-
-<p><img src="/staticfiles/workflow-management/media/Workflow_Landing.png" alt="Workflow_Landing" /></p>
-
-<ol>
-  <li>
-    <p>You can view maximum of 6 workflow designed in a workflow page, rest workflows can be scrolled through navigation pages.</p>
-  </li>
-  <li>
-    <p>APPSeCONNECT has two category of Workflows:</p>
-
-    <p><strong>Organization Workflow</strong> -  This type of Workflow have two button <code class="highlighter-rouge">Edit</code> &amp; <code class="highlighter-rouge">Delete</code>and you have to activate it.</p>
-
-    <p><strong>Base Workflow</strong> - This type of workflow has initially one button. Once you activate it, you will see that Workflow contains two buttons, one for Edit, another for Delete.</p>
-  </li>
-  <li>
-    <p>Every workflow has one switch, this will either take the  workflow to <code class="highlighter-rouge">Active state</code> or will go to <code class="highlighter-rouge">Inactive state</code>. If it’s in Inactive state, that workflow will not work on Agent’s App.</p>
-
-    <p><img src="/staticfiles/workflow-management/media/Workflow_dialog.png" alt="Workflow_dialog" /></p>
-  </li>
-  <li>
-    <p>You will get <code class="highlighter-rouge">SEARCH</code> panel in the top of the workflow page.</p>
-
-    <p><img src="/staticfiles/workflow/workflow-management/media/Search_Workflow.png" alt="Search_Workflow" /></p>
-  </li>
-</ol>
-
-<p>### Search functions of Workflow</p>
+<h3 id="search-functions-of-workflow">Search functions of Workflow</h3>
 
 <ul>
   <li>Active - indicates that you want to search only for the active Workflows.</li>
@@ -2377,18 +2353,8 @@ Currently APPSeCONNECT supports the following actions:</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
                             
                             
                             
