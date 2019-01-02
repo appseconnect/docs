@@ -32,9 +32,9 @@ The command will download all the necessary files which you might need while dev
 
 The SDK (Software development toolkit) provided to build custom solution are mainly considered for : 
 
-- [Adapters](/SDK/overview) : That connects to an application for transferring data to APPSeCONNECT. 
-- [Plugins]() : It plugs in to APPSeCONNECT to specially expose and enrich functionalities of the platform. 
-- [Policies]() : These are separate set of policies which are used for any API built over APPSeCONNECT API Platform which lets you to hook between API request / response Pipeline. 
+- [Adapters](/sdk/overview-adapters/): That connects to an application for transferring data to APPSeCONNECT. 
+- [Plugins](/sdk/overview-plugins/) : It plugs in to APPSeCONNECT to specially expose and enrich functionalities of the platform. 
+- [Policies](/sdk/overview-policies/) : These are separate set of policies which are used for any API built over APPSeCONNECT API Platform which lets you to hook between API request / response Pipeline. 
 
 
 To improve the delivery of robust and good code, it is important to consider [best practicies]() which we follow thoroughly for any development. We also encourage to 

@@ -79,7 +79,7 @@ API Proxy acts as a bridge or a medium which provides access to secured resource
 
 **15. How to build an API?**
 
-For Details [Click here](/appseconnect/home/)
+For Details [Click here](/api-management/quickstart-guides-to-api-management/)
 
 **15. What are Webhooks in API?**
 

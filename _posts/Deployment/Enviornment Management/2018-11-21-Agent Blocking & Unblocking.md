@@ -6,7 +6,7 @@ category: "Deployment"
 menus: 
     environment:
         title: "Agent Blocking & Unblocking"
-        icon: fa fa-deployment
+        icon: fa fa-cloud-download
         weight: 8
         
 ---
@@ -31,17 +31,12 @@ and other features in the Environment section of the cloud Portal.
 Steps 1 to 3 is similar to the enviornment setup for OP Agent.
 
 1. You can identify the Cloud Agent with cloud icon beside the enviornment name.
-
 2. In the Primary cloud agent, you can view the options Agent Settings and the Block/Unblock option.
-
-**Protip:** By default, Cloud agent remains blocked after its creation 
-
-{: .notice--info}
-
 3.	In the Agent Settings section, you will be able to see the detailed settings of your cloud Agents.
-
 4.	Blocking the Cloud Agent, will disable the cloud integration process for that organisation.
 
+**Protip:** By default, Cloud agent remains blocked after its creation 
+{: .notice--info}
 
 ## Quick Facts about Agents (OP & Cloud) Enviornment Setup
 

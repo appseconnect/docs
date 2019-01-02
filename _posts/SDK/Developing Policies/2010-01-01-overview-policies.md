@@ -18,7 +18,7 @@ the policy can inspect the incoming Http Request and Response and provide certai
 ## Pre-packaged Policies
 
 APPSeCONNECT provides a number of pre-packaged policies which one can use out of the box without requiring any further 
-development. Some of them like [Quota](/api-management/Quota-Per-Key-Policy.), [IP-restrict](), [Invalidate Http headers](), [Compression]() etc. These policies can be used
+development. Some of them like [Throttle](/api-management/quota-per-user-key/), [IP-restrict](/api-management/ip-restrict/), [Invalidate Http headers](/api-management/validate-http-header/), [Compression](/api-management/compression-apply/) etc. These policies can be used
 directly on any API created on the portal. 
 
 ## Custom Policies

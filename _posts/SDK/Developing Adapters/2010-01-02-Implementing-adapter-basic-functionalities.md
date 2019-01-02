@@ -6,7 +6,7 @@ category: "SDK"
 menus:
     overviewsdkadapter: 
         icon: fa fa-gg
-        title: "Overview"
+        title: "Implementing functionality viz, Pull, Push & Resync"
         identifier: developadapterbasic    
 ---
 It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, 

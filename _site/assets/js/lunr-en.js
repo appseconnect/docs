@@ -224,7 +224,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of AppseConnect",
+      title: "Overview of APPSeConnect",
       excerpt: "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
       categories: [],
       tags: ["developers"],
@@ -377,8 +377,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quota for a Key policy",
-      excerpt: "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+      title: "Throttling policy",
+      excerpt: "Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 40
@@ -872,7 +872,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Enviornment Overview",
+      title: "Environment Overview",
       excerpt: "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
       categories: ["Deployment"],
       tags: ["developers"],
@@ -944,7 +944,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of Connectors",
+      title: "Shopify",
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -971,7 +971,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Magento2 Configuration",
+      title: "Magento2",
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1386,7 +1386,7 @@ var store = [
     
       
       {
-        "title": "Overview of AppseConnect",
+        "title": "Overview of APPSeConnect",
         "url": "/home/",
         "excerpt": "APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP,...",
         "teaser":
@@ -1573,9 +1573,9 @@ var store = [
     
       
       {
-        "title": "Quota for a Key policy",
+        "title": "Throttling policy",
         "url": "/api-management/quota-per-user-key/",
-        "excerpt": "The Rate-limit quota policy prevents an API usage spikes on per user basis, such that if the same API is...",
+        "excerpt": "Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2178,7 +2178,7 @@ var store = [
     
       
       {
-        "title": "Enviornment Overview",
+        "title": "Environment Overview",
         "url": "/deployment/Enviornment-Overview/",
         "excerpt": "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
         "teaser":
@@ -2266,7 +2266,7 @@ var store = [
     
       
       {
-        "title": "Overview of Connectors",
+        "title": "Shopify",
         "url": "/connectors/Shopify/",
         "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
@@ -2299,7 +2299,7 @@ var store = [
     
       
       {
-        "title": "Magento2 Configuration",
+        "title": "Magento2",
         "url": "/connectors/Magento2/",
         "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
         "teaser":

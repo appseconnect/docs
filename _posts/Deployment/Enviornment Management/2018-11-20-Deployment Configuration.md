@@ -6,7 +6,7 @@ category: "Deployment"
 menus: 
     environment:
         title: "Deployment Configuration"
-        icon: fa fa-deployment
+        icon: fa fa-cloud-download
         weight: 7
         
 ---

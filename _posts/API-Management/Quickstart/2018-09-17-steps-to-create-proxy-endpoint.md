@@ -25,12 +25,12 @@ APPSeCONNECT Portal.
 As per requirement, before you start creating a new API Proxy, you need to make sure you meet all the 
 prerequisites. Here are some of them : 
 
-1. [Getting a new account for APPSeCONNECT]()
-2. [Choosing and Configuring Backend APPs]()
-3. [Connecting to your data sources]()
-4. [Configuring Environments, installing / deploying Agent]()
-5. [Feeding Credentials for applications and data sources]()
-5. [Configuring / Importing Schemas and Actions]()
+1. [Getting a new account for APPSeCONNECT](/home/#appseconnect-platform---functional-menus)
+2. [Choosing and Configuring Backend APPs](/getting-started/#choosing-application)
+3. [Connecting to your data sources](/getting-started/#creating-connection--executing-the-touchpoint)
+4. [Configuring Environments, installing / deploying Agent](/deployment/Deployment-Configuration/)
+5. [Feeding Credentials for applications and data sources](/getting-started/#appseconnect-schemaentity)
+5. [Configuring / Importing Schemas and Actions](/getting-started/#appseconnect-schemaentity)
 
 After all these steps are done, make sure the environment is kept running and credentials are propery updated. 
 
@@ -45,20 +45,15 @@ details are important to create the face of the API.
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
 not specify the version element in the API, you will face lot of challenges in future. 
-
 ![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.PNG)
-**Note:** For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily. 
-
 4. Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
-
 ![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.PNG)
 In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
-of the policies applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
-you can continue the wizard. 
+of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
+you can continue the wizard. For Plocy Configurtaion, Click [here](/api-management/policies/)
 5. The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API. 
-
 ![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.PNG)
 6. The backend needs to be configured correctly by specifying the Application, Schema, and Action. In addition to that
 you can also choose the credential here to connect to the particular data source. 
@@ -69,6 +64,8 @@ to the next screen.
 should return when there is a failure in execution or success in execution. You can also specify the response message 
 if you are not happy with our defualt messaging. 
 9. Each of the APIs crated will show the URL and Http Method which needs to be used to execute it from the listing screen.
+
+**Note:** For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily. 
 
 ### Steps to follow while editing your proxy endpoint
 

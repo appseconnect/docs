@@ -6,9 +6,9 @@ category: "SDK"
 menus: 
     sdkprerequisite:
         title: "Best practices"
-        weight: 7
+        weight: 8
         icon: fa fa-file-word-o
-        identifier: sdkprerequisitepractices
+        identifier: sdkprerequisitebestpractices
 ---
 
 Let us discuss some of the Do's and Don'ts that one need to maintain while developing an Adapter in APPSeCONNECT platform.

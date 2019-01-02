@@ -1,14 +1,14 @@
 ---
-title: "Quota for a Key policy"
+title: "Throttling policy"
 toc: true
 tag: developers
 category: "API-Management"
 menus: 
     policies:
         icon: fa fa-cogs
-        title: "Quota-Per-Key-Policy" 
+        title: "Throttling policy" 
 ---
-The **Rate-limit quota** policy prevents an API usage spikes on per user basis, such that if the same API is 
+Throttling policy prevents an API usage spikes on per user basis, such that if the same API is 
 getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
 API rate limit can be set up by the developer for a specified time period and when the policy is
 triggered for a specific call, the caller will receive `429 Too Many Requests` as response status code.

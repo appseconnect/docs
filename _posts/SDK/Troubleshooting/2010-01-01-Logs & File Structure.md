@@ -5,7 +5,7 @@ tag: developers
 category: "SDK"
 menus: 
     sdk:
-        title: "Logs"
+        title: "Troubleshooting"
         weight: 7
         icon: fa fa-file-word-o
         identifier: sdkprerequisiteinspecting

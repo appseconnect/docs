@@ -56,4 +56,11 @@ As a Pre-requisite for Installing the Plugin, you need to specify few Configurat
 
 * Go to setting button of the agent & Click on Plugins. You can now view the MySQL Plugin, present on the Plugin Manager Window.  
 
-![Downloading-HanaPlugin](/staticfiles/deployment/media/TransactionalStores/Downloading-HanaPlugin.png)
+![Downloading-MySQLPlugin](/staticfiles/deployment/media/TransactionalStores/Downloading-MySQLPlugin.png)
+
+## Integration scenarios with MySQL Plugin
+
+MySQL Plugin has been successfully tested for the various application like `MS Dynamics GP-Shopify for the touchpoints Product Add Variant,
+Inventory Update and Price Update`.
+
+Similarly this has been tested for the `Application Magento 2 and SAP B1 for the touchpoints Business Partner Add and Simple product Add`.

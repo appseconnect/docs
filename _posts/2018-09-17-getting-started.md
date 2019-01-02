@@ -142,7 +142,7 @@ Details of Value Mapping will come in subsequent section of the document.
 ## Configuring Environment - Agent download / Cloud agent configuration
 
 APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and is configured on cloud and does the actual data synchronization with the help of other concerned adapters while the Cloud agent is a similar tool that performs the same function as the on-premise agent but is present on cloud itself. No server is required to configure or sync using the cloud agent.
-To know more about Configuring Enviornment, [Click here](/agent/Deployment-Configuration/)
+To know more about Configuring Environment, [Click here](/deployment/Deployment-Configuration/) 
 
 ### Environment setup of the on-premise agent:
 

@@ -16,7 +16,7 @@ This Document provides the details and the functionality aspect of the API compo
 along with the brief demonstration about it. Here you will find the overview and steps needed to carry out this API component.
 
 
-**Understanding Action Filters**
+## Understanding Action Filters
 
 An action filter is an attribute that you can apply to a controller action -- or an entire controller -- 
 which changes the way in which the action is executed. 
@@ -29,7 +29,7 @@ which changes the way in which the action is executed.
   action or an entire controller.
 
 
-**Enabling Query Options based on OData**
+## Enabling Query Options based on OData
 
 Web API supports the following OData query options:
 
@@ -48,7 +48,7 @@ Web API supports the following OData query options:
 2. Valid Credentials for the APPSeCONNECT Portal.
 3. The Application should be cloud supported. OLE DB is the only application that is being supported now.
 4. Schema needs to be defined with proper Actions (GET, PUT, POST, FILTER). 
-5. API Proxy needs to be Created. Steps for creating API Proxy is given [here](). A valid API URL is required.
+5. API Proxy needs to be Created. Steps for creating API Proxy is given [here](/api-management/steps-to-create-proxy-endpoint/). A valid API URL is required.
 
 ## Steps to define Static and dynamic criterias for an API
 
@@ -68,6 +68,10 @@ assigning parameters to the following operations - GET, PUT, POST & DELETE.
 
 **NOTE:** The action filter is provided only for the GET Operation for fetching the data from the source Application. 
 This is also called as the Static Filters.
+
+**Protip:** The user can add mutliple operation under a single API Proxy or can create seperate operation for different API
+as per the business requirement.
+{: .notice--info}
 
 ### Using Action Parameters for PUT Operation
 

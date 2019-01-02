@@ -11,7 +11,7 @@ menus:
 ---
 Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to the system seamelessly such that the
  platform can communicate to the respective application. In case of building an integration between two disparate apps, you need an adapter. Even though if the 
-application is following standard protocols, we encourage to use [prebuild technology connectors]() which will help in fetching data without requiring to write 
+application is following standard protocols, we encourage to use [prebuild technology connectors](/connectors/Overview-of-technology-connectors/) which will help in fetching data without requiring to write 
 a single lines of code. But in case, you are not sure about the protocol or you want to optimize the connection for the application itself, or even you 
 want to remove the complexity from the user while connecting to the application from cloud, adapter development would be your perfect choice down the line. 
 
@@ -20,8 +20,8 @@ we will use C# as a primary language for developing an adapter, but you can also
 
 ## Steps to building adapter
 
-If you have installed [all the prerequisites]() of the adapter development, you can start writing your code. If you are still unsure what you need, please go ahead
-and refer to [this document]() which will help you in installing and setting up all the required resources. There are a number of Do's and Don'ts which we prefer as 
+If you have installed [all the prerequisites](/sdk/Prerequisites/) of the adapter development, you can start writing your code. If you are still unsure what you need, please go ahead
+and refer to this document which will help you in installing and setting up all the required resources. There are a number of Do's and Don'ts which we prefer as 
 best practices for adapter development, we encourage to read it before writing your first line of code. 
 
 The adapter development process consists of different areas : 

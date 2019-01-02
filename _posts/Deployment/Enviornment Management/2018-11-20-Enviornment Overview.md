@@ -1,12 +1,12 @@
 ---
-title: "Enviornment Overview"
+title: "Environment Overview"
 toc: true
 tag: developers
 category: "Deployment"
 menus: 
     deployment :
         title: "Enviornment"
-        icon: fa fa-deployment
+        icon: fa fa-cloud-download
         weight: 5
         identifier: environment
 ---
@@ -20,4 +20,4 @@ and The Cloud Agent which are configured and created.
 * There are multiple activites whch can be executed in the Enviornment section.  The user can **Block, Unblock, Deploy Configuration, 
   Deploy Adapter** and do agent specific settings from the Environment Section in the Cloud AEC Portal.
 
-Refer to the [Deployment Configuration](/agent/Deployment-Configuration/) section to know about the Enviornment Overview.
+Refer to the [Deployment Configuration](/deployment/Deployment-Configuration/) section to know about the Enviornment Overview.
