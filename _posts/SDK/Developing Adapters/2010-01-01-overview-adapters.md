@@ -26,12 +26,13 @@ best practices for adapter development, we encourage to read it before writing y
 
 The adapter development process consists of different areas : 
 
-- Implementing Adapter basic functionality viz, Pull, Push, Resync
-- Understanding Action filters and techniques to parse Action filters
-- Working with Utility Classes
-- Understanding transactional store, and how to store transactional data.
-- Handling events and creating notifications
-- How to efficiently log in adapter. 
+- [Implementing Adapter basic functionality viz, Pull, Push, Resync](/sdk/Implementing-adapter-basic-functionalities/)
+- [Understanding Action filters and techniques to parse Action filters](/sdk/Implementing-Actionfilter-Parsers/)
+- [Understanding transactional store, and how to store transactional data.](/sdk/storing-transactional-data/)
+- [Handling events and creating notifications](/sdk/Handling-Events/)
+- [How to efficiently log in adapter.](/sdk/Logging-and-Tracking)
+- [Working with AppResources](/sdk/Developing-AppResources/)
+- [Debugging and Testing Adapter code](/sdk/How-to-test-an-Adapter/)
 
 An adapter is the building block of data for any connector. It is plugged in directly to the appseconnect platform to connect and execute integration points. 
 

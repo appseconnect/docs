@@ -1,10 +1,11 @@
 ---
-title: "Implementing Adapter basic functionality viz, Pull, Push & Resync"
+title: "Implementing Pull and Push functions"
 toc: true
 tag: developers
 category: "SDK"
 menus:
     overviewsdkadapter: 
+        weight: 1
         icon: fa fa-gg
         title: "Basic Implementation"
         identifier: developadapterbasic    
@@ -18,11 +19,32 @@ Also you need to make sure that you follow our [best practices](/sdk/Best-practi
 
 ## Implementing the IAdapter interface
 
-An `IAdapter` interface is a hook to specify the code which will run to fetch or push data to and from from the application. 
-The main method that needs to be implemented while implementing [IAdapter]() is the `Execute`, which provides you with 
-`OperationType` which lets you specify code that needs to be implemented to invoke Request to the application. 
+An [`IAdapter`](http://isdn.appseconnect.com/html/73508818.htm) interface is a hook to specify the code which will run to fetch 
+or push data to and from from the application. 
+The main method that needs to be implemented while implementing 
+[IAdapter](http://isdn.appseconnect.com/html/73508818.htm) is the 
+[`Execute`](http://isdn.appseconnect.com/html/364EAD9A.htm), which provides you with 
+[`ExecutionType`](http://isdn.appseconnect.com/html/EBA2D728.htm) which lets you specify code that needs to be implemented to invoke Request to the application. 
 
-### Implementing GET :
+An [OperationType](http://isdn.appseconnect.com/html/F675346E.htm) specifies the type of the execution which you need to perform. 
+
+|OperationType|Description|
+|---|------|
+|GET|Adapter receives GET as ExecutionType when the adapter need to pull data from source application. Remember, during this operation, you will have to work with [`ActionFilter`](http://isdn.appseconnect.com/html/996C8CA9.htm) and you should not look for [TransformedResponse](http://isdn.appseconnect.com/html/281D6BC4.htm).|
+|POST|Adapter receives POST as ExecutionType when the adapter need to push data to the target application. The adapter receives the actual data in [`TransformedResponse`](http://isdn.appseconnect.com/html/281D6BC4.htm) as XML data and the target application need to push the same to the application end. |
+
+**Protip:** The basic function of an adapter method `Execute` is to pull/push data (convert the data to XML) and set it to APPSeCONNECT using [`ReturnMessage<string>`](http://isdn.appseconnect.com/html/2ECC6977.htm)
+{: .notice--info}.
+
+
+### Implementing GET
+
+The GET execution of an adapter require to do the following steps : 
+
+- Parse `ActionFilter` to generate the Request structure. An ActionFilter is a Hierarchical Key-Value pair data received from APPSeCONNECT cloud. 
+- Get Credential to connect to the target application. 
+- Fetch data from the target application and push it the APPSeCONNECT using the api `ReturnMessage.SetSuccess`.
+
 The Credential received by the interface will allow you to create the request body so as to create a communication with the end 
 application. Let us look at the code below : 
 
@@ -80,9 +102,10 @@ private ReturnMessage<string> ExecuteGetOperation(ExecutionSettings settings)
 ```
 
 In the above code you can see an implementation of adapter GET method. This piece of code will be executed when a workflow
-encounters a Get method. If you properly inspect the method, you can see, that the method receives an ExecutionSettings and also 
-it uses `_context` to get various data from APPSeCONNECT. The `_context` object is an object that lets you get objects 
-application wide. This object does not change between calls to the method and also represents the contextual reference of the 
+encounters a Get node. If you properly inspect the method, you can see, that the method receives an 
+[`ExecutionSettings`](http://isdn.appseconnect.com/html/BC65452C.htm) and also 
+it uses [`_context`](http://isdn.appseconnect.com/html/10297E4C.htm) to get various data from APPSeCONNECT. The `_context` is an object that lets you get data 
+application wide. This object does not change between calls to the adapter and also represents the contextual reference of the 
 process on the application. 
 
 The line `this._context.Logger` gets the logger class, which helps you to write debug, status or information over [APPSeCONNECT 
@@ -94,6 +117,7 @@ or cloud agent, and you need a model created as a class inside the project to ac
 
 **protip**: You can also manually read / write json statements, using the overload `GetConnectionDetails` but it is always 
 preferrable to have a model class.
+{: .notice--info}.
 
 The `settings.GetCommandProcessor(Protocol.REST)`allows the user to get an url generated from the Action filters 
 put in APPSeCONNECT cloud. We specifically generate the action filter parsers for REST and or SOAP requests, so if it does not 
@@ -204,3 +228,10 @@ Here in case of the code above, the resync data is sent using the object `settin
 data blocks to execute the resync. You can see, the InteractGet is called here to resync the requestData passed in from 
 APPSeCONNECT. In case of POST request as well, you can use the settings.TransformedResponse to resync the data. To detect whether 
 the call to an adapter is for Resync or normal call, you can use the property `settings.CalledFrom`.
+
+### Various other methods in IAdapter interface
+
+There are some additional properties that an IAdapter interface hosts, which lets you process various part of data. 
+
+- [Resource](http://isdn.appseconnect.com/html/81A29C5A.htm) : You needed to implement a property Resource. This is an implementation of [IAppResource](http://isdn.appseconnect.com/html/3C4C3144.htm) inside the adpater such that APPSeCONNECT could call the methods. Remember, if you do not specify an object, the transformation in APPSeCONNECT could not call additional functions.
+- [ValidateProcess](http://isdn.appseconnect.com/html/E8F54FAE.htm): This method is used to validate the execution data before actual processing. Feel free to put logic that identifies whether the data passed to the Execute or the Request structure is valid or not. 

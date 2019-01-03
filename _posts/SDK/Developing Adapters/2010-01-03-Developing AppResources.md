@@ -22,8 +22,6 @@ Let us look at how the IAppResource class looks like :
 
     private ApplicationContext _context;
     private CredentialModel CredentialObject { get; set; }
-    public static List<string> orderids = new List<string>();
-    const string LAST_DATE = "lastdate";
 
     /// <summary>
     /// Default Constructor called by Agent. It will call Initialize to pass Application context
@@ -90,13 +88,15 @@ public XPathNavigator GetCustomerAddress(string id)
 }
 ```
 
-The method GetCustomerAddress is specially designed to invoke `\customers` API such that when required the 
+The method `GetCustomerAddress` is specially designed to invoke `\customers` API such that when required the 
 mapping can invoke the method to dynamically invoke a separate API while transformation. You can see the 
 return type of the method is `XPathNavigator`. As the method can be used directly from Mapping the allowed method 
 return types are as under : 
 
-- XPathNavigator
-- XPathIterator
-- String
+- [XPathNavigator](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=netframework-4.7.2)
+- [XPathNodeIterator](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnodeiterator?view=netframework-4.7.2)
+- [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+The `CallAPI` method is used to execute an API to the application.
 
 Once the method is returning a value, you can put the data in a variable on mapping section and iterate the data over. 

@@ -9,7 +9,7 @@ menus:
         title: "Action-filter Parser"
         identifier: actionfilterparser    
 ---
-Action filters are special key-value data store for each integration points which provides functionality to have 
+Action filters are special hierarchical key-value data store for each integration points which provides functionality to have 
 hierarchy and can invoke AppResource methods. An Action filter is an open ended data store which lets the developer
 specify a storage to generate Request and Response data structure. 
 
@@ -218,10 +218,22 @@ implementation of ActionFilter parser.
 The above code will allow to generate the request URL for a REST based endpoint, by invoking the AppResource methods 
 directly during parsing. 
 
-You can see, the `ActionFilter.PrepareCommand` method which lets the adapter developer to generate the 
+You can see, the [`ActionFilter.PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which lets the adapter developer to generate the 
 structure which lets adapter to execute a REST method. 
 
 In case of Action Filters, the platform automatically detects the methods that needs to be executed. So if you see the ActionParameterValue objects,
 it automatically detects whether the filter criteria requires a method execution, and if so, you can create the 
 parameter by executing the method. 
 
+### Hooking a Custom Processor
+
+By default, [as identified in the adapters](/sdk/Basic-Implementation), we call the [settings.GetCommandProcessor()](http://isdn.appseconnect.com/html/787CAB4C.htm) to get the processor specific to the request. For custom made action filter parsers, you can call 
+[`BuildRequest`](http://isdn.appseconnect.com/html/57E775B7.htm) to get an instance of the command processor on your code. 
+
+```csharp
+
+var commandProcessor = this._context.BuildRequest<GenericRESTFilterCommandProcessor>(settings.CurrentActionFilter);
+var request = commandProcessor.PrepareCommand();
+``` 
+
+The two lines above will let you create an Filter Processor inside your adapter code. 

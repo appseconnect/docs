@@ -19,7 +19,7 @@ appseconnect agent and use Visual Studio to debug the code.
 2. Once the agent is installed on your premise you can [configure](/deployment/Deployment-Configuration/) the onpremise agent with credentails such that you can execute a process. 
 3. Now open the adapter code and use Debug -> Attach to Process.
 4. A window will popup, where you need to select InSync.eConnect.AppStarter.exe. 
-5. Now execute the touchpoint, and put a breakpoint on the code which is getting executed for Pull and Push operation. 
+5. Now execute the touchpoint, and put a breakpoint on the code which is getting executed for Pull and Push operation.   
 ![Attachtoprocesshandler](/staticfiles/sdk-references/media/attachtoprocesshandler.PNG)
 6. You can debug and step through your code to ensure proper working of the method. 
 
