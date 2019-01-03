@@ -20,7 +20,7 @@ In this article, we will look how APIs can help in developing solutions for your
 
 |Use Case|Description|
 |-----|----------|
-|[Proxy to existing API]()| In this article we will look how you can leverage your own API system to take over the existing APIs available for an Application, such that your application consumes data uniformly.|
-|[Proxy to a data source]()|In this article we will look how we can use protocol based generic adapters to connect to on-premise data source and proxy it directly to the API management system.|
-|[API for a Webhook]()|In this section, you will see how you can create APIs for webhooks which you can directly subscribe to an web application for custom callback.|
+|[Proxy to existing API](/api-management/steps-to-create-proxy-endpoint/)| In this article we will look how you can leverage your own API system to take over the existing APIs available for an Application, such that your application consumes data uniformly.|
+|Proxy to a data source|In this article we will look how we can use protocol based generic adapters to connect to on-premise data source and proxy it directly to the API management system.|
+|[API for a Webhook](/api-management/steps-to-create-webhook-endpoint/)|In this section, you will see how you can create APIs for webhooks which you can directly subscribe to an web application for custom callback.|
 

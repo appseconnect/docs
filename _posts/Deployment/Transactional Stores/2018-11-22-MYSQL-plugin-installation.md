@@ -36,7 +36,8 @@ As a Pre-requisite for Installing the Plugin, you need to specify few Configurat
 
 * The Schema is now created. Open **ADMINISTRATIVE TOOLS** from Control Panel. 
 
-* Double Click ODBC Data Sources (32 bit). Click System DSN tab for its window to open and Click ADD
+* Double Click ODBC Data Sources (32 bit). Click `System DSN` tab for its window to open and Click ADD. **Here Choosing User DSN will 
+fetch errors, so System DSN needs to be choosen**.
 
 ![SystemDSN-tab](/staticfiles/deployment/media/TransactionalStores/SystemDSN-tab.png)
 

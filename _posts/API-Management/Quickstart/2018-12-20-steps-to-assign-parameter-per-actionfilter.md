@@ -53,7 +53,7 @@ Web API supports the following OData query options:
 ## Steps to define Static and dynamic criterias for an API
 
 You can define action parameters for anvarious opertaions of an API. Presently AEC API Management provides 
-assigning parameters to the following operations - GET, PUT, POST & DELETE.
+assigning parameters to the following operations - `GET, PUT, POST & DELETE`.
 
 ### Using Action Filter & Action Parameters for GET operation
 
@@ -66,8 +66,8 @@ assigning parameters to the following operations - GET, PUT, POST & DELETE.
 
 3. Click on SAVE.
 
-**NOTE:** The action filter is provided only for the GET Operation for fetching the data from the source Application. 
-This is also called as the Static Filters.
+**NOTE:The action filter is provided only for the GET Operation for fetching the data from the source Application. 
+This is also called as the Static Filters**
 
 **Protip:** The user can add mutliple operation under a single API Proxy or can create seperate operation for different API
 as per the business requirement.
@@ -86,9 +86,8 @@ as per the business requirement.
 
 5. Click on the Send option for running the Query Param.
 
-**Note:** Any API Development Environment can be used for this process.
-
-**Note:** Once Authorized for an API the user does not have to authorize again except for the cases for Multiple API's.
+**Note:Any API Development Environment can be used for this process. Once Authorized for an 
+API the user does not have to authorize again except for the cases for Multiple API's**
 
 
 ### Using Action Parameter for the POST Operation
@@ -107,4 +106,4 @@ as per the business requirement.
 3. Provide the Query Params and click on SEND.    
 ![ActionParameter-DeleteOperation2](/staticfiles/api-management/media/ActionParameter-DeleteOperation2.png)
 
-**Note:** Applying the DELETE Operation will delete the data from the database corresponding to the Query Param.
+**Note: Applying the DELETE Operation will delete the data from the database corresponding to the Query Param.**

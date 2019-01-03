@@ -75,6 +75,27 @@ Schema Image is given below:
 
 ![Schema](/staticfiles/root/media/Schema.png)
 
+### Importing Schemas and Actions of an Application
+The user can view the schemas and the action present or can also add schema and add action for each application. 
+This section enables the user to view and add the Schema and its Actions.
+
+**Prerequisites:**
+1. The User needs to have a valid AEC account.
+2. An application is needed to be select for defining the Schemas and its Actions.
+
+**Procedure:**
+1. Login to the APPSeCONNECT Portal with valid credentials.
+2. Move into the APPS Page and Choose (link for choosing application) any application. 
+3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
+![Select-Schema](/staticfiles/root/media/Select-Schema.PNG)
+4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.
+![Add-Schema](/staticfiles/root/media/Add-Schema.PNG)
+5. The Actions inside a schema can be viewed by clicking on the + sign. The ADD ACTION option is provided for Adding Actions inside a Schema.
+![Add-Action](/staticfiles/root/media/Add-Action.PNG)
+
+**Protip:** Default Schemas would only be present for the BASE APPS.
+{: .notice--info}
+
 ### Adapter
 Adapters helps in integration with other applications easy. Adapter represents an interface between an APP and APPSeCONNECT. An adapter is a component which connects your app with APPSeCONNECT. 
 There are few responsibilities of an adapter which are defined as under: 

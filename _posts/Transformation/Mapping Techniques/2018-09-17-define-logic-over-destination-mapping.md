@@ -48,6 +48,8 @@ The User can also add Else-If and Else(Otherwise) and its clauses in the attribu
 
 ![Attributelevel-Else](/staticfiles/transformation/media/Attributelevel-Else.png)
 
+**NOTE: The Add Condition window is for the condition marked in the Yellow Box**
+
 ### Mapping at Loop Level
 
 The `If Mapping can be done at the For-Each Loop level`. Below is the screen which shows the **If Mapping** at the For-Each Loop Level.

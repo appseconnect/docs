@@ -423,7 +423,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Listing of Snapshot for a Workflow for OP Agent",
-      excerpt: "List of snapshot is a pictorial representation of the executed workflow at various node level. Here the user will get...",
+      excerpt: "List of Snapshots List of snapshot is a pictorial representation of the executed workflow at various node level. Here the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 45
@@ -1621,7 +1621,7 @@ var store = [
       {
         "title": "Listing of Snapshot for a Workflow for OP Agent",
         "url": "/workflow/list-of-snapshot/",
-        "excerpt": "List of snapshot is a pictorial representation of the executed workflow at various node level. Here the user will get...",
+        "excerpt": "List of Snapshots List of snapshot is a pictorial representation of the executed workflow at various node level. Here the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

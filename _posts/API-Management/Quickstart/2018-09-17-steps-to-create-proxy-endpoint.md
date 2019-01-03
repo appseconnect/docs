@@ -42,6 +42,15 @@ depicting Proxy, select the section to navigate to it.
 1. Click on `Add New` button to create a new API.
 2. Put basic information, such as `API name`, `Description`, `URL Suffix`, `HTTP method` etc. These 
 details are important to create the face of the API. 
+
+* API Name - Enter the API Name
+* Suffix - This signify the actual API Endpoint that needs to be specified. E.g: Filter, Delete, Fetcch.
+* Method - This signify the API Operations like GET, PUT, POST, DELETE.
+* State - This signify the API state weather it is released, obsolete or in WIP. By default, Released is set in state, you can choose per business
+* requirement.
+* Version - This signify the API Version Number
+* Version Append Type - This is set as'Path'
+
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
 not specify the version element in the API, you will face lot of challenges in future. 
@@ -51,21 +60,21 @@ to specify policies which will be executed before the execution of Backend Actio
 ![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.PNG)
 In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
 of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
-you can continue the wizard. For Plocy Configurtaion, Click [here](/api-management/policies/)
+you can continue the wizard. For Policy Configuration, Click [here](/api-management/policies/)
 5. The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API. 
 ![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.PNG)
-6. The backend needs to be configured correctly by specifying the Application, Schema, and Action. In addition to that
-you can also choose the credential here to connect to the particular data source. 
-7.  The outboud policies are those which are applied after the backend is executed. Here also similar to the Inbound 
+6. The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select `Schema Action`
+from the drop down list. [Click here](/getting-started/#importing-schemas-and-actions-of-an-application) to know more
+7. The outboud policies are those which are applied after the backend is executed. Here also similar to the Inbound 
 policies, you are allowed to choose as many policies from the list as you want and configure each of them to continue 
 to the next screen.
 8. The next screen specifies the Response setup of the API. Here you are allowed to specify what response code the API 
 should return when there is a failure in execution or success in execution. You can also specify the response message 
 if you are not happy with our defualt messaging. 
-9. Each of the APIs crated will show the URL and Http Method which needs to be used to execute it from the listing screen.
+9. Each of the APIs created will show the URL and Http Method which needs to be used to execute it from the listing screen.
 
-**Note:** For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily. 
+**Note: For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily**
 
 ### Steps to follow while editing your proxy endpoint
 
