@@ -10,6 +10,8 @@ menus:
         identifier: snapshotworkflow 
 ---
 
+## List of Snapshots
+
 List of snapshot is a pictorial representation of the executed workflow at various node level. Here the user will
 get the snapshot view of the workflow whenever executed. This feature of the workflow is beneficial to the users 
 because they can now view the effective debugging at the node level in the user interface. 
@@ -17,7 +19,14 @@ because they can now view the effective debugging at the node level in the user 
 After a successful execution of workflow the user can see the snapshot listing on the multiple time execution 
 of the workflow and the latest listing is visible on the upper section of the list.
 
-Steps to executing list of snapshot for the workflow:
+## Pre-Requisites of Listing of Snapshot for a Workflow
+
+1. All the Pre-requisites to workflow execution has to be met. [Clickhere](/workflow/steps-to-choose-your-workflow/)
+2. Agent should be Primary (as Unlicensed agents will malfunction due to the non- connectivity between SignalR & Agent)
+3. Autosync of the Agent should be `ON` (To trigger the workflow in the agent)
+
+
+## Steps to executing list of snapshot for the workflow
 
 1. List of Snapshot is present on the upper section of the workflow screen as shown below:
 ![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.PNG)

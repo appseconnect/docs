@@ -24,25 +24,18 @@ and how to use plugin in the adapter.
 As a Pre-requisite for Installing the Plugin, Configure the SAP HANA Database. The Detailed Procedure for SAP Hana installation is provided below.
 
 1.	Login to the AEC Cloud Portal with the valid credentials. Download the SAP HANA Plugin from the download options in the portal.
-
 ![Downloading-HanaPlugin](/staticfiles/deployment/media/TransactionalStores/Downloading-HanaPlugin.png)
-
 2.	Copy and Paste the .dll file on the Adapter Folder of the APPSeCONNECT File in your system. 
-
 3.	Login to the On-Premise AEC Agent (credential as ADMINISTRATOR) with your cloud portal credential.
-
 4.	Go to Agent- Settings. Click on Plugins.
-
 5.	You will find the HANA Plugin present on the Plugin Manager Window.
-
 ![HanaPlugin-Manager](/staticfiles/deployment/media/TransactionalStores/HanaPlugin-Manager.png)
 6.	Click HANA Plugin find the Install option below. Click and begin the Installation Process.
-
 ![HanaPlugin-Installation](/staticfiles/deployment/media/TransactionalStores/HanaPlugin-Installation.png)
+7.	Enter details namely the  Driver Name, ServerIP, Serverport, UserID, Password, Database Name that you have 
+configured in the database.  
 
-7.	Enter details namely the  Driver Name, ServerIP, Serverport, UserID, Password, Database Name that you have configured in the database.
 ![HanaPlugin-ConnectionString](/staticfiles/deployment/media/TransactionalStores/HanaPlugin-ConnectionString.png)
-
 
 8. Right Click on the Hana Container > Properties > Hosts Used to Connect, to view the Port number.
 ![HanaContainer-Port](/staticfiles/deployment/media/TransactionalStores/HanaContainer-Port.png)
@@ -54,8 +47,7 @@ As a Pre-requisite for Installing the Plugin, Configure the SAP HANA Database. T
 * Password -  Enter HANA Database Password
 * Name - Enter name of database.
 
-
-8.	Click on SAVE. Successful message is delivered once the connection is validated.
+9. Click on SAVE. Successful message is delivered once the connection is validated.  
 
 ![HanaPlugin-ConnectionStringDetails](/staticfiles/deployment/media/TransactionalStores/HanaPlugin-ConnectionStringDetails.png)
 
@@ -65,4 +57,9 @@ As a Pre-requisite for Installing the Plugin, Configure the SAP HANA Database. T
 
 The installation and configuration of the HANA Database will be done by the System Administrator 
 
-The process of using hana plugin in [adapter]() is explained here.
+The process of using hana plugin in [adapter](/sdk/overview-adapters/) is explained here.
+
+## Integration scenarios with HANA Plugin
+
+SAP HANA Plugin has been successfully tested for the application `MAGENTO2-SAP B1` for the touchpoints 
+Business Partner Add and Sales Order Add.

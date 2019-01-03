@@ -808,37 +808,6 @@
         
     </li>
     
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a onclick="selectTab('/connectors/Overview-of-GenericRest-Adapters/');" title="Go to REST">REST</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/BasicAuthentication/');" title="Go to Basic Authentication">Basic Authentication</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/OAuth2.0/');" title="Go to OAuth2.0 Authentication">OAuth2.0 Authentication</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/Authentication-&-Authorization/');" title="Go to Authentication of REST Adapters">Authentication of REST Adapters</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
 </ul>
 
         
@@ -891,7 +860,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-cloud-download"}'>
-        <a onclick="selectTab('/deployment/Agent-Blocking-&-Unblocking/');" title="Go to Agent Blocking & Unblocking">Agent Blocking & Unblocking</a>
+        <a onclick="selectTab('/deployment/Agent-Blocking-and-Unblocking/');" title="Go to Agent Blocking & Unblocking">Agent Blocking & Unblocking</a>
         
     </li>
     
@@ -1003,7 +972,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Designing-&-Mapping-Credentials/');" title="Go to Designing Credential UI">Designing Credential UI</a>
+        <a onclick="selectTab('/sdk/Designing-and-Mapping-Credentials/');" title="Go to Designing Credential UI">Designing Credential UI</a>
         
     </li>
     
@@ -1033,7 +1002,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Logging-&-Tracking/');" title="Go to Logging and tracing">Logging and tracing</a>
+        <a onclick="selectTab('/sdk/Logging-and-Tracking/');" title="Go to Logging and tracing">Logging and tracing</a>
         
     </li>
     
@@ -1046,37 +1015,6 @@
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
         <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Logs-&-File-Structure/');" title="Go to Troubleshooting">Troubleshooting</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Prerequisites/');" title="Go to Prerequisite">Prerequisite</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
         
     </li>
     
@@ -1112,7 +1050,26 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Debugging/');" title="Go to Troubleshooting">Troubleshooting</a>
+        <a onclick="selectTab('/sdk/Prerequisites/');" title="Go to Prerequisite">Prerequisite</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/sdk/Development-Guidelines/');" title="Go to Guidelines">Guidelines</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
+        
+    </li>
+    
+</ul>
+
         
     </li>
     
@@ -1235,79 +1192,44 @@ and Response setup of the API.</p>
 <h2 id="steps-to-create-swagger-documentation">Steps to Create Swagger Documentation:</h2>
 
 <ol>
-  <li>Go to <strong>API</strong> section from the left side menu.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/api-swagger.PNG" alt="api-swagger" /></p>
-
-<ol>
-  <li>
-    <p>Inside <strong>API ManagementSection</strong> you can see <code class="highlighter-rouge">Webhooks</code> and <code class="highlighter-rouge">Proxy</code>.By default, Webhook section will be
+  <li>Go to <strong>API</strong> section from the left side menu.
+<img src="/staticfiles/api-management/media/api-swagger.PNG" alt="api-swagger" /></li>
+  <li>Inside <strong>API ManagementSection</strong> you can see <code class="highlighter-rouge">Webhooks</code> and <code class="highlighter-rouge">Proxy</code>.By default, Webhook section will be
   shown and you can see all your connections listed here. Click on <strong>Proxy</strong>. Here you can view the list of Proxy API created or you if you are a 
-  first time user, you can create a New Proxy API. <code class="highlighter-rouge">Add New</code> button enables to create a new Proxy API. Refer <a href="/api-management/steps-to-create-proxy-endpoint/">Create a Proxy API</a></p>
-  </li>
-  <li>
-    <p>Select the Proxy API for which you want to create swagger documentation.</p>
-  </li>
-  <li>
-    <p>Now click <strong>Here is your swagger endpoint</strong> to open the swagger portal. The Swagger window appears as shown below.</p>
-  </li>
+  first time user, you can create a New Proxy API. <code class="highlighter-rouge">Add New</code> button enables to create a new Proxy API. Refer <a href="/api-management/steps-to-create-proxy-endpoint/">Create a Proxy API</a></li>
+  <li>Select the Proxy API for which you want to create swagger documentation.</li>
+  <li>Now click <strong>Here is your swagger endpoint</strong> to open the swagger portal. The Swagger window appears as shown below.<br />
+<img src="/staticfiles/api-management/media/swagger-screen.png" alt="swagger-screen" /></li>
 </ol>
 
-<p><img src="/staticfiles/api-management/media/swagger-screen.png" alt="swagger-screen" /></p>
-
-<p>Here you will view the Organization Information, Base URL, Proxy API URL, Schema selection option, and the Proxy API Created.</p>
+<p>Here you will view the <code class="highlighter-rouge">Organization Information, Base URL, Proxy API URL, Schema selection option, and the Proxy API Created</code>.</p>
 
 <ol>
   <li>Select the Schema as HTTP from the drop down list and now you have to activate the <code class="highlighter-rouge">Authorize</code> button. 
  for Authorizing the SWAGGER which asks for a Username and Password.</li>
-</ol>
-
-<p><strong>ProTip:</strong> Every-time, you open the SWAGGER window, you need to re-generate the username and password.
- {: .notice–info}.</p>
-
-<ol>
-  <li>Go to <strong>APPSeCONNECT Portal&gt; API&gt; Proxy&gt; Click on the <code class="highlighter-rouge">AUTHENTICATION</code> button</strong>(Top Right Corner) on the APPSeCONNECT Cloud Portal.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/authentication-proxy.png" alt="authentication-proxy" /></p>
-
-<ol>
+  <li>Go to <strong>APPSeCONNECT Portal&gt; API&gt; Proxy&gt; Click on the <code class="highlighter-rouge">AUTHENTICATION</code> button</strong>(Top Right Corner) on the APPSeCONNECT Cloud Portal.
+<img src="/staticfiles/api-management/media/authentication-proxy.png" alt="authentication-proxy" /></li>
   <li>The following screen appears. Select your User Organisation from the drop-down menu and it will automatically generate the 
- Username and Password. Click on the Re-generate button to regenerate the authentication details as and when required.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/authentication-re-generation.png" alt="authentication-re-generation" /></p>
-
-<ol>
+ Username and Password. Click on the Re-generate button to regenerate the authentication details as and when required.
+<img src="/staticfiles/api-management/media/authentication-re-generation.png" alt="authentication-re-generation" /></li>
   <li>Click <code class="highlighter-rouge">Authorize</code> button in the swagger screen. Enter the basic authorization details and click on authorize.	
-You will get a confirmation message <code class="highlighter-rouge">AUTHENTICATED</code> in the same window as shown below.</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/swagger-authorization.png" alt="swagger-authorization" /></p>
-
-<ol>
+You will get a confirmation message <code class="highlighter-rouge">AUTHENTICATED</code> in the same window as shown below.
+<img src="/staticfiles/api-management/media/swagger-authorization.png" alt="swagger-authorization" /></li>
   <li>Now the authorization is complete, Click on GET for expanding the Parameters section. 
-Once the Parameter Section gets expanded,  Click <strong>TRY IT OUT</strong> to execute the parameters.</li>
+Once the Parameter Section gets expanded,  Click <strong>TRY IT OUT</strong> to execute the parameters.
+<img src="/staticfiles/api-management/media/swagger-parameter-execution.png" alt="swagger-parameter-execution" /></li>
+  <li>After clicking on <code class="highlighter-rouge">TRY IT OUT</code> you will find an EXECUTE button below. Click on it
+<img src="/staticfiles/api-management/media/execute-button-swagger.png" alt="execute-button-swagger" /></li>
+  <li>Now you can see the result given below, along with the HTTP Response code for success (200).
+<img src="/staticfiles/api-management/media/swagger-response.png" alt="swagger-response" /></li>
 </ol>
 
-<p><img src="/staticfiles/api-management/media/swagger-parameter-execution.png" alt="swagger-parameter-execution" /></p>
-
-<ol>
-  <li>After clicking on <code class="highlighter-rouge">TRY IT OUT</code> you will find an EXECUTE button below. Click on it</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/execute-button-swagger.png" alt="execute-button-swagger" /></p>
-
-<ol>
-  <li>Now you can see the result given below, along with the HTTP Response code for success (200).</li>
-</ol>
-
-<p><img src="/staticfiles/api-management/media/swagger-response.png" alt="swagger-response" /></p>
+<p><strong>ProTip:</strong> Every-time, you open the SWAGGER window, you need to re-generate the username and password
+{: .notice–info}.</p>
 
 <p><strong>ProTip:</strong> Every-time, you execute the Proxy API in Swagger endpoint you can view both success and failure messages. 
 e.g: The HTTP Response code for success/failure will come like 200 OK, 202 Accepted, 
-302 Moved Temporarily, 204 No Content, 206 Partial Content etc.
+302 Moved Temporarily, 204 No Content, 206 Partial Content etc
 {: .notice–info}.</p>
 
                 
@@ -2267,54 +2189,6 @@ e.g: The HTTP Response code for success/failure will come like 200 OK, 202 Accep
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -2402,14 +2276,6 @@ e.g: The HTTP Response code for success/failure will come like 200 OK, 202 Accep
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                             <li>
                                 <a href="/api-management/create-api-quotamanagement-to-restriction-access/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
@@ -2462,10 +2328,6 @@ e.g: The HTTP Response code for success/failure will come like 200 OK, 202 Accep
                                     Deploy and publish APIs to different environments
                                 </a>
                             </li>
-                            
-                            
-                            
-                            
                             
                             
                             

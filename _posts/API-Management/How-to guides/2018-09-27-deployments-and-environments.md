@@ -16,7 +16,7 @@ help you to run an API either on your own Premise or on Cloud dependening on the
 deployments, you need to consider installing our [on-premise agent](), and configure it to be active 
 on Environment section of APPSeCONNECT. 
 
-To Deploy an API, you need to make sure, [all pre-requisites of an API development is met](api-management/steps-to-create-proxy-endpoint/). 
+To Deploy an API, you need to make sure, [all pre-requisites of an API development is met](/steps-to-create-webhook-endpoint/). 
 Once confirmed, you can add new APIs, and do an Update Configuration, before executing it from Cloud. 
 
 You can use Swagger endpoint URL to call the APIs from APPSeCONNECT portal itself. 
