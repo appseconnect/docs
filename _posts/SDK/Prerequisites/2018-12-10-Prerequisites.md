@@ -58,16 +58,16 @@ APPSeCONNECT needs adapter to connect to a specific Application and Get and Push
 If you know all these you can follow the steps to create an Adapter : 
 
 * Open Visual Studio and Create new Class Library using your preferred language. 
-Lets name it as Insync.eConnect.FavApp (In your case, you can replace FavApp with your Application name) for our sample project.Click OK to create the project.
+Lets name it as Insync.eConnect.FavApp (In your case, you can replace FavApp with your Application name) for our sample project.Click OK to create the project.  
 ![Choose Project](/staticfiles/sdk-references/media/choose-project.png)
 * After the application is created, delete **"Class1.cs"** that is automatically selected. Just from the solution explorer, right click on the Class1.cs file and select "Remove".
-Right click on "References" and select **"Manage Nuget Packages"**.
+Right click on "References" and select **"Manage Nuget Packages"**.  
 ![Managenuget](/staticfiles/sdk-references/media/managenuget.png)
 * The Nuget Package manager will load, you can now type **"APPSeCONNECT API"** on the Search Online box on top and filter to our Adapter API.  
 * ![Appseconnect A P I](/staticfiles/sdk-references/media/appseconnectAPI.png)
 * Select **"Install"**. The Installer will create all the necessary files that are needed to create APPSeCONNECT Adapter.
 
-Now after you have the code ready, Go to View -> Task List from Menu and select Comments on the Box. It will show all the ToDo items you need to do to develop an adapter.  Follow the steps to remove the ToDo items with code such to work. 
-![Todos Adapter](/staticfiles/sdk-references/media/todos-adapter.png)
+Now after you have the code ready, Go to View -> Task List from Menu and select Comments on the Box. It will show all the ToDo items you need to do to develop an adapter.  Follow the steps to remove the ToDo items with code such to work.  
+![Todos Adapter](/staticfiles/sdk-references/media/todos-adapter.png)  
 Follow the instructions in ToDo and create the adapter. Let us know at support@appseconnect.com if you face any difficulties in developing or understanding a point. 
 

@@ -23,13 +23,13 @@ An implementer can now be able to use the `CHOOSE WORKFLOW` feature in the APPSe
 ## Steps to choosing Workflow in Organization
 
 1. Login to your APPSeCONNECT Portal with valid credentials.
-2. Click on the Workflow module and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in the organisation.
-![ChooseWorkflow1](/staticfiles/workflow-management/media/ChooseWorkflow1.png)
-3. Click Choose Workflow button and you can view the list of workflows migrated from the BASE appears.
-![ChooseWorkflow-Connectionlist](/staticfiles/workflow-management/media/ChooseWorkflow-Connectionlist.png)
-4.  You can choose any of the Workflow from the list. The Chosen Workflow will appear in your Workflow Panel.
+2. Click on the Workflow module and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in the organisation.  
+![ChooseWorkflow1](/staticfiles/workflow-management/media/ChooseWorkflow1.png)  
+3. Click Choose Workflow button and you can view the list of workflows migrated from the BASE appears.  
+![ChooseWorkflow-Connectionlist](/staticfiles/workflow-management/media/ChooseWorkflow-Connectionlist.png)  
+4.  You can choose any of the Workflow from the list. The Chosen Workflow will appear in your Workflow Panel.  
 Here we have chosen the Activate the Workflow-Customer [Add MS Dynamics NAV to Magento]  
-![ActivateWorkflow-Connectionlist](/staticfiles/workflow-management/media/ActivateWorkflow-Connectionlist.png)
+![ActivateWorkflow-Connectionlist](/staticfiles/workflow-management/media/ActivateWorkflow-Connectionlist.png)  
 5.  If the organisation has more than one connection template for BASE applications, a connection specific request pops up where you need to specify 
 for which connection you want the workflow to get activated.  
 ![ChooseConnection-mutliple](/staticfiles/workflow-management/media/ChooseConnection-mutliple.png)

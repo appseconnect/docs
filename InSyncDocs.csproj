@@ -845,7 +845,7 @@
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Developing AppResources.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Handling Events.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-How to test an Adapter.md" />
-    <None Include="_posts\SDK\Developing Adapters\2010-01-03-Logging &amp; Tracking - Copy.md" />
+    <None Include="_posts\SDK\Developing Adapters\2010-01-03-Logging &amp; Tracking.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-storing-transactional-data.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Implementing-Actionfilter-Parsers.md" />
     <None Include="_posts\SDK\Developing Plugins\2010-01-01-overview-plugins.md" />

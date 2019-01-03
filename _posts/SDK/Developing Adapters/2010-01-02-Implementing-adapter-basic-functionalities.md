@@ -12,12 +12,14 @@ menus:
 It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, 
 such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement 
 the adapter in such a way, so that the data is perfectly transferred from one application to another without compormising
-performance and also giving most of the flexibility for cloud integrations. 
+performance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connector
+I hope you have [installed the pre-requisites](/sdk/Prerequisites/) correctly on the system and you have all the prebuilt code ready on your visual studio.
+Also you need to make sure that you follow our [best practices](/sdk/Best-practices/) and [guidelines](/sdk/Development-Guidelines/) provided for adapter development. 
 
 ## Implementing the IAdapter interface
 
 An `IAdapter` interface is a hook to specify the code which will run to fetch or push data to and from from the application. 
-The main method that needs to be implemented while implementing IAdapter is the Execute, which provides you with 
+The main method that needs to be implemented while implementing [IAdapter]() is the `Execute`, which provides you with 
 `OperationType` which lets you specify code that needs to be implemented to invoke Request to the application. 
 
 ### Implementing GET :
@@ -84,7 +86,7 @@ application wide. This object does not change between calls to the method and al
 process on the application. 
 
 The line `this._context.Logger` gets the logger class, which helps you to write debug, status or information over [APPSeCONNECT 
-logging system](). 
+logging system](/sdk/logging-and-tracing/). 
 
 The next important consideration is the Credential object. You can call `this._context.GetConnectionDetails` to retrieve the 
 credentials which is used to connect to the application. Remember, the credentials are generally put by the customer on the local 
@@ -95,7 +97,7 @@ preferrable to have a model class.
 
 The `settings.GetCommandProcessor(Protocol.REST)`allows the user to get an url generated from the Action filters 
 put in APPSeCONNECT cloud. We specifically generate the action filter parsers for REST and or SOAP requests, so if it does not 
-suit your need, you can easily [create an ActionFilter parser yourself]().
+suit your need, you can easily [create an ActionFilter parser yourself](/sdk/Implementing-Actionfilter-Parsers/).
 
  Finally, the `interactAPI.InteractGetByPage` is an individual request to the application which helps in getting data from the application. 
 Once you get the data, you can assign keys to the Resync Bucket, such that the data that is been retrieved could be properly tracked by the 
