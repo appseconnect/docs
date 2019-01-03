@@ -19,12 +19,12 @@
 
 
 
-<title>POST Node - APPSeCONNECT Product Docs</title>
+<title>Agent Blocking &amp; Unblocking - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="What is Post Node?">
+<meta name="description" content="APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from the OP Agent. The Implementer or User can control and modify settings for all the agents, from cloud portal for his/her organisation. This section of the document will enable you to know about the Block/Unblockand other features in the Environment section of the cloud Portal.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="POST Node">
+<meta property="og:title" content="Agent Blocking &amp; Unblocking">
 
 
-  <link rel="canonical" href="http://localhost:4000/workflow/working-with-post/">
-  <meta property="og:url" content="http://localhost:4000/workflow/working-with-post/">
+  <link rel="canonical" href="http://localhost:4000/deployment/Agent-Blocking-and-Unblocking/">
+  <meta property="og:url" content="http://localhost:4000/deployment/Agent-Blocking-and-Unblocking/">
 
 
 
-  <meta property="og:description" content="What is Post Node?">
+  <meta property="og:description" content="APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from the OP Agent. The Implementer or User can control and modify settings for all the agents, from cloud portal for his/her organisation. This section of the document will enable you to know about the Block/Unblockand other features in the Environment section of the cloud Portal.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-09-21T00:00:00+05:30">
+  <meta property="article:published_time" content="2018-11-21T00:00:00+05:30">
 
 
 
@@ -166,7 +166,7 @@
     
       
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+        <a href="/deployment" itemprop="item"><span itemprop="name">Deployment</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <span class="sep">/</span>
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">POST Node</li>
+      <li class="current">Agent Blocking & Unblocking</li>
     
   
 </ol>-->
@@ -1085,9 +1085,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="POST Node">
-        <meta itemprop="description" content="What is Post Node?">
-        <meta itemprop="datePublished" content="September 21, 2018">
+        <meta itemprop="headline" content="Agent Blocking &amp; Unblocking">
+        <meta itemprop="description" content="APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from the OP Agent. The Implementer or User can control and modify settings for all the agents, from cloud portal for his/her organisation. This section of the document will enable you to know about the Block/Unblockand other features in the Environment section of the cloud Portal.">
+        <meta itemprop="datePublished" content="November 21, 2018">
         
 
 
@@ -1106,7 +1106,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+                    <a href="/deployment" itemprop="item"><span itemprop="name">Deployment</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
                 <li class="sep">/</li>
@@ -1114,7 +1114,7 @@
                 
                 
                 
-                <li class="current">POST Node</li>
+                <li class="current">Agent Blocking & Unblocking</li>
                 
                 
             </ol>
@@ -1124,7 +1124,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">POST Node
+                <h1 class="page__title" itemprop="headline">Agent Blocking &amp; Unblocking
 </h1>
                 
                 
@@ -1140,18 +1140,14 @@
     
       
       
-      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/nodes" class="page__taxonomy-item" rel="tag">nodes</a>
+      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a>
     
     </span>
   </div>
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-21T00:00:00+05:30">September 21, 2018</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-21T00:00:00+05:30">November 21, 2018</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1159,7 +1155,7 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1172,23 +1168,56 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#what-is-post-node">What is Post Node?</a></li>
-  <li><a href="#working-principle">Working Principle</a></li>
+  <li><a href="#environment-setup-for-the-op-agent">Environment Setup for the OP Agent</a></li>
+  <li><a href="#environment-setup-for-the-cloud-agent">Environment Setup for the Cloud Agent</a></li>
+  <li><a href="#quick-facts-about-agents-op--cloud-enviornment-setup">Quick Facts about Agents (OP &amp; Cloud) Enviornment Setup</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <h3 id="what-is-post-node">What is Post Node?</h3>
+                <p>APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL 
+as well as from the OP Agent. The Implementer or User can control and modify settings for all the agents, 
+from cloud portal for his/her organisation. This section of the document will enable you to know about the Block/Unblock
+and other features in the Environment section of the cloud Portal.</p>
 
-<p><code class="highlighter-rouge">POST</code> node is used for pushing data to an application based on the API provided by the application.You need to provide data in the required format to the <code class="highlighter-rouge">POST</code> node most of the time we use <code class="highlighter-rouge">PROCESS</code> node befor a <code class="highlighter-rouge">POST</code> node to prepare required data format for the <code class="highlighter-rouge">POST</code> node . When we drag a <code class="highlighter-rouge">POST</code> node in the workflow we need to select a touchpoint. For example we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP) <code class="highlighter-rouge">POST</code> node will take the transform data from <code class="highlighter-rouge">PROCESS</code> node and push the data in SAP B1.</p>
+<h2 id="environment-setup-for-the-op-agent">Environment Setup for the OP Agent</h2>
 
-<h3 id="working-principle">Working Principle</h3>
+<ol>
+  <li>Log in to cloud portal with your valid credentials.</li>
+  <li>Navigate to Environments section.</li>
+  <li>You can view Primary agents and Secondary Agents (if any). Agents with the Tickmark Toggle is considered as the Primary Agent.</li>
+  <li>Under Primary Agents you will see options like Agent Settings, Block/Unblock, Deploy Configuration &amp; Deploy Adapter.</li>
+  <li>In the Agent Settings section, you can view the detailed settings of your Agents.</li>
+  <li>The Deploy Configuration &amp; Deploy Adapter button is used for updating the Configuration and Adapter respectively, but this feature is only applicable to Primary Agent.</li>
+  <li>Blocking an Agent, will stop all the processes running in the agent and it will stop permanently.</li>
+  <li>Blocking will result into Agent login failure in the system.</li>
+</ol>
 
-<p><code class="highlighter-rouge">POST</code> node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data will be posted to the application.</p>
+<h2 id="environment-setup-for-the-cloud-agent">Environment Setup for the Cloud Agent</h2>
 
-<p>The highlighted node with red one is an implementation of <code class="highlighter-rouge">POST</code> node.</p>
+<p>Steps 1 to 3 is similar to the enviornment setup for OP Agent.</p>
 
-<p><img src="/staticfiles/workflow-management/media/POSTNode/Post.PNG" alt="Post" /></p>
+<ol>
+  <li>You can identify the Cloud Agent with cloud icon beside the enviornment name.</li>
+  <li>In the Primary cloud agent, you can view the options Agent Settings and the Block/Unblock option.</li>
+  <li>In the Agent Settings section, you will be able to see the detailed settings of your cloud Agents.</li>
+  <li>Blocking the Cloud Agent, will disable the cloud integration process for that organisation.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> By default, Cloud agent remains blocked after its creation</p>
+
+<h2 id="quick-facts-about-agents-op--cloud-enviornment-setup">Quick Facts about Agents (OP &amp; Cloud) Enviornment Setup</h2>
+
+<ul>
+  <li>If the Agent is in Block State, you can view the Unblock button for unblocking the agent.</li>
+  <li>An Organisation can have only one primary agent.</li>
+  <li>Blocking an Agent, will stop all the Processes that was done on that agent. Blocking will result into Agent login failure in the system.</li>
+  <li>Here Deploying Configuration and Deploy Adapter is equivalent to Update configuration and Update Adapter operation of the agent.</li>
+  <li>For Deploy Adapter one has to restart the Agent and Autosync in the deployed environment.</li>
+  <li>Upon Unblocking an agent, one must restart the Agent and Autosync in the deployed environment.</li>
+  <li>Upon setting a new Agent as primary, You have to restart Agent and Autosync in the deployed environment.</li>
+  <li>Blocked Agents are considered as the Inactive agents. Agents which are not blocked are the Active Agents.</li>
+</ul>
 
                 
             </section>
@@ -1196,7 +1225,7 @@
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-21T00:00:00+05:30">September 21, 2018</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-21T00:00:00+05:30">November 21, 2018</time></div>
                 
                 
   
@@ -1212,11 +1241,7 @@
     
       
       
-      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/nodes" class="page__taxonomy-item" rel="tag">nodes</a>
+      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a>
     
     </span>
   </div>
@@ -1237,7 +1262,7 @@
     
       
       
-      <a href="/workflow" class="page__taxonomy-item" rel="tag">Workflow</a>
+      <a href="/deployment" class="page__taxonomy-item" rel="tag">Deployment</a>
     
     </span>
   </p>
@@ -1251,13 +1276,13 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=POST+Node%20https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Agent+Blocking+%26+Unblocking%20https://docs.appseconnect.com%2Fdeployment%2FAgent-Blocking-and-Unblocking%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fdeployment%2FAgent-Blocking-and-Unblocking%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fdeployment%2FAgent-Blocking-and-Unblocking%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fdeployment%2FAgent-Blocking-and-Unblocking%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -1710,15 +1735,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-splitter/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Splitter Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1728,15 +1751,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-sequencer/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Sequencer Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1746,15 +1767,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-rule/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Rule Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1764,15 +1783,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-merger/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Merge Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1782,16 +1799,651 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-loops/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Loops
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
+                             
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/deployment/upgradation-and-migration/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Upgradation & Migration
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/deployment/Troubleshooting/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Troubleshooting
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/deployment/settings/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Settings
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/deployment/OLE-db-plugin-installation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    OLEDB Plugin
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/deployment/MYSQL-plugin-installation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    MYSQL Plugin
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                         </ul>
                     </div>
@@ -2088,8 +2740,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/workflow/working-with-post/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/workflow/working-with-post"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/deployment/Agent-Blocking-and-Unblocking/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/deployment/Agent Blocking and Unblocking"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

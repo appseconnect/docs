@@ -19,12 +19,12 @@
 
 
 
-<title>POST Node - APPSeCONNECT Product Docs</title>
+<title>How to design an interface for Credentials - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="What is Post Node?">
+<meta name="description" content="APPSeCONNECT adapter development SDK allows one to implement and create user interface for credentials. In case of OnPremise agent, you need to implement the user interface using XAML syntax, while for Cloud interface, a dynamic designer is used to implement the credential UI.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="POST Node">
+<meta property="og:title" content="How to design an interface for Credentials">
 
 
-  <link rel="canonical" href="http://localhost:4000/workflow/working-with-post/">
-  <meta property="og:url" content="http://localhost:4000/workflow/working-with-post/">
+  <link rel="canonical" href="http://localhost:4000/sdk/Designing-and-Mapping-Credentials/">
+  <meta property="og:url" content="http://localhost:4000/sdk/Designing-and-Mapping-Credentials/">
 
 
 
-  <meta property="og:description" content="What is Post Node?">
+  <meta property="og:description" content="APPSeCONNECT adapter development SDK allows one to implement and create user interface for credentials. In case of OnPremise agent, you need to implement the user interface using XAML syntax, while for Cloud interface, a dynamic designer is used to implement the credential UI.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-09-21T00:00:00+05:30">
+  <meta property="article:published_time" content="2010-01-03T00:00:00+05:30">
 
 
 
@@ -166,7 +166,7 @@
     
       
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+        <a href="/sdk" itemprop="item"><span itemprop="name">Sdk</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <span class="sep">/</span>
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">POST Node</li>
+      <li class="current">How to design an interface for Credentials</li>
     
   
 </ol>-->
@@ -1085,9 +1085,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="POST Node">
-        <meta itemprop="description" content="What is Post Node?">
-        <meta itemprop="datePublished" content="September 21, 2018">
+        <meta itemprop="headline" content="How to design an interface for Credentials">
+        <meta itemprop="description" content="APPSeCONNECT adapter development SDK allows one to implement and create user interface for credentials. In case of OnPremise agent, you need to implement the user interface using XAML syntax, while for Cloud interface, a dynamic designer is used to implement the credential UI.">
+        <meta itemprop="datePublished" content="January 03, 2010">
         
 
 
@@ -1106,7 +1106,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+                    <a href="/sdk" itemprop="item"><span itemprop="name">Sdk</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
                 <li class="sep">/</li>
@@ -1114,7 +1114,7 @@
                 
                 
                 
-                <li class="current">POST Node</li>
+                <li class="current">How to design an interface for Credentials</li>
                 
                 
             </ol>
@@ -1124,7 +1124,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">POST Node
+                <h1 class="page__title" itemprop="headline">How to design an interface for Credentials
 </h1>
                 
                 
@@ -1140,18 +1140,22 @@
     
       
       
-      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a><span class="sep">, </span>
+      <a href="/" class="page__taxonomy-item" rel="tag"></a><span class="sep">, </span>
     
       
       
-      <a href="/nodes" class="page__taxonomy-item" rel="tag">nodes</a>
+      <a href="/" class="page__taxonomy-item" rel="tag"></a><span class="sep">, </span>
+    
+      
+      
+      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a>
     
     </span>
   </div>
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-21T00:00:00+05:30">September 21, 2018</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-03T00:00:00+05:30">January 03, 2010</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1159,7 +1163,7 @@
 
 
 
-  less than 1 minute read
+  4 minute read
 </p>
                 
                 
@@ -1172,23 +1176,218 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#what-is-post-node">What is Post Node?</a></li>
-  <li><a href="#working-principle">Working Principle</a></li>
+  <li><a href="#pre-requisite-for-developing-credentials">Pre-requisite for Developing Credentials</a></li>
+  <li><a href="#implementing-user-interface-for-local-agent">Implementing User interface for Local Agent</a></li>
+  <li><a href="#implementing-user-interface-for-cloud-agent">Implementing User interface for Cloud Agent</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <h3 id="what-is-post-node">What is Post Node?</h3>
+                <p>APPSeCONNECT adapter development SDK allows one to implement and create user interface for credentials. In case of OnPremise 
+agent, you need to implement the user interface using XAML syntax, while for Cloud interface, a dynamic designer is 
+used to implement the credential UI.</p>
 
-<p><code class="highlighter-rouge">POST</code> node is used for pushing data to an application based on the API provided by the application.You need to provide data in the required format to the <code class="highlighter-rouge">POST</code> node most of the time we use <code class="highlighter-rouge">PROCESS</code> node befor a <code class="highlighter-rouge">POST</code> node to prepare required data format for the <code class="highlighter-rouge">POST</code> node . When we drag a <code class="highlighter-rouge">POST</code> node in the workflow we need to select a touchpoint. For example we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP) <code class="highlighter-rouge">POST</code> node will take the transform data from <code class="highlighter-rouge">PROCESS</code> node and push the data in SAP B1.</p>
+<h2 id="pre-requisite-for-developing-credentials">Pre-requisite for Developing Credentials</h2>
 
-<h3 id="working-principle">Working Principle</h3>
+<p>Credentails are a set of data that needs to be retrieved from an application User using either an Agent interface
+or from cloud interface. For an adapter developer, we highly encourage to create a Model which can hold these 
+data together such that you can use these data to execute or authenticate requests made on the application end.</p>
 
-<p><code class="highlighter-rouge">POST</code> node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data will be posted to the application.</p>
+<p>For example, let us take an example of a Model.</p>
 
-<p>The highlighted node with red one is an implementation of <code class="highlighter-rouge">POST</code> node.</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">CredentialModel</span>
+<span class="p">{</span>
+    <span class="c1">//Todo : Add all your credentials which you want to input from the user for this application.</span>
 
-<p><img src="/staticfiles/workflow-management/media/POSTNode/Post.PNG" alt="Post" /></p>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">UserName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ApiPath</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ApiToken</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Here in case of the above class, the Model is represented to hold the UserName, APIPath(or base URL), and APIToken. 
+For your application, you can make use of any number of data that you might need to authenticate your application.</p>
+
+<p>Once you have built the model, you can either implement the interface for Cloud Agent or for Local Agent.</p>
+
+<h2 id="implementing-user-interface-for-local-agent">Implementing User interface for Local Agent</h2>
+
+<p>For local agent, you need extensive knowledge of WPF or XAML. You can go to the <code class="highlighter-rouge">ConnectionView.xaml</code> to implement 
+the credential user interface.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;Grid</span> <span class="na">Height=</span><span class="s">"328"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Grid.RowDefinitions&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"36*"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"50*"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"50*"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"50*"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"50*"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"50*"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;RowDefinition</span> <span class="na">Height=</span><span class="s">"85*"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Grid.RowDefinitions&gt;</span>
+    <span class="nt">&lt;Grid.ColumnDefinitions&gt;</span>
+        <span class="nt">&lt;ColumnDefinition/&gt;</span>
+        <span class="nt">&lt;ColumnDefinition</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Grid.ColumnDefinitions&gt;</span>
+
+    <span class="nt">&lt;Grid.Resources&gt;</span>
+        <span class="nt">&lt;Style</span> <span class="na">TargetType=</span><span class="s">"Button"</span> <span class="na">x:Key=</span><span class="s">"btnStyle"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"HorizontalAlignment"</span> <span class="na">Value=</span><span class="s">"Left"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"VerticalAlignment"</span> <span class="na">Value=</span><span class="s">"Top"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"FontSize"</span> <span class="na">Value=</span><span class="s">"10.667"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"FontFamily"</span> <span class="na">Value=</span><span class="s">"Segoe UI Semibold"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"HorizontalAlignment"</span> <span class="na">Value=</span><span class="s">"Left"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/Style&gt;</span>
+    <span class="nt">&lt;/Grid.Resources&gt;</span>
+
+    <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Vertical"</span>
+                <span class="na">Grid.Row=</span><span class="s">"2"</span> <span class="na">Grid.Column=</span><span class="s">"0"</span> <span class="na">Grid.ColumnSpan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Label</span>  <span class="na">Content=</span><span class="s">"Username(V2)/X-Auth-Client(V3)"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;TextBox</span> <span class="na">Text=</span><span class="s">"{Binding UserName,Mode=TwoWay}"</span>
+                <span class="na">ToolTip=</span><span class="s">"Enter username to access Bigcommerce API"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/StackPanel&gt;</span>
+    <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Vertical"</span>
+            <span class="na">Grid.Row=</span><span class="s">"1"</span> <span class="na">Grid.Column=</span><span class="s">"0"</span> <span class="na">Grid.ColumnSpan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Label</span>  <span class="na">Content=</span><span class="s">"API Path"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;TextBox</span> 
+            <span class="na">Text=</span><span class="s">"{Binding ApiPath,Mode=TwoWay}"</span>  
+            <span class="na">ToolTip=</span><span class="s">"Generally this will be your administration site url"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/StackPanel&gt;</span>
+    <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Vertical"</span>
+                <span class="na">Grid.Row=</span><span class="s">"3"</span> <span class="na">Grid.Column=</span><span class="s">"0"</span> <span class="na">Grid.ColumnSpan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Label</span>  <span class="na">Content=</span><span class="s">"API Token(V2)/X-Auth-Token(V3)"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;PasswordBox</span>  <span class="na">appseconnect:PasswordHelper.Attach=</span><span class="s">"True"</span> <span class="na">VerticalContentAlignment=</span><span class="s">"Center"</span> 
+                    <span class="na">appseconnect:PasswordHelper.Password=</span><span class="s">"{Binding ApiToken,Mode=TwoWay}"</span> 
+                    <span class="na">ToolTip=</span><span class="s">"Enter your API password"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/StackPanel&gt;</span>
+    <span class="nt">&lt;TextBlock</span> <span class="na">Grid.Row=</span><span class="s">"4"</span> <span class="na">Grid.Column=</span><span class="s">"0"</span> <span class="na">Grid.ColumnSpan=</span><span class="s">"2"</span> <span class="na">Text=</span><span class="s">"{Binding ConnectionStatus,Mode=TwoWay}"</span>
+            <span class="na">HorizontalAlignment=</span><span class="s">"Center"</span>
+            <span class="na">Foreground=</span><span class="s">"{Binding ForeColor}"</span>  <span class="nt">/&gt;</span>
+    <span class="nt">&lt;ProgressBar</span> <span class="na">IsIndeterminate=</span><span class="s">"True"</span> 
+                        <span class="na">Width=</span><span class="s">"180"</span>
+                        <span class="na">MinHeight=</span><span class="s">"10"</span>
+                        <span class="na">Foreground=</span><span class="s">"#FF0079C3"</span>
+                        <span class="na">VerticalAlignment=</span><span class="s">"Center"</span>
+                        <span class="na">Visibility=</span><span class="s">"{Binding ProgressBar}"</span>
+                        <span class="na">Grid.Row=</span><span class="s">"5"</span> <span class="na">Grid.ColumnSpan=</span><span class="s">"2"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span> <span class="na">Grid.Row=</span><span class="s">"6"</span> 
+            <span class="na">Grid.Column=</span><span class="s">"0"</span>  
+            <span class="na">Content=</span><span class="s">"Validate"</span> 
+            <span class="na">Command=</span><span class="s">"{Binding ValidateCommand}"</span> <span class="na">Width=</span><span class="s">"100"</span> <span class="na">Height=</span><span class="s">"20"</span> <span class="na">Margin=</span><span class="s">"57,0,0,0"</span> <span class="na">Style=</span><span class="s">"{StaticResource WindowButtonStyle}"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;Button</span> <span class="na">Grid.Row=</span><span class="s">"6"</span> 
+            <span class="na">Grid.Column=</span><span class="s">"1"</span>  
+            <span class="na">Content=</span><span class="s">"Save"</span> 
+            <span class="na">Command=</span><span class="s">"{Binding SaveCommand}"</span> <span class="na">Width=</span><span class="s">"100"</span> <span class="na">Height=</span><span class="s">"20"</span> <span class="na">Margin=</span><span class="s">"57,0,0,0"</span> <span class="na">Style=</span><span class="s">"{StaticResource WindowButtonStyle}"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/Grid&gt;</span>
+
+</code></pre></div></div>
+
+<p>In the above user interface, we have created a TextBox to take <code class="highlighter-rouge">APIPath</code>, a <code class="highlighter-rouge">PasswordBox</code> to take <code class="highlighter-rouge">APIToken</code> (APIToken will be hidden to the user while it is being typed on screen) and a
+<code class="highlighter-rouge">TextBox</code> to hold <code class="highlighter-rouge">UserName</code>. There are few other UI elements too viz, a ProgressBar and some buttons. These objects are bound using 
+a ViewModel.</p>
+
+<p>Now if we look at the ViewModel, It should inherit from <code class="highlighter-rouge">ObservableObjectGeneric&lt;className&gt;</code> such that the model
+could be correctly hooked to the on-premise agent.</p>
+
+<p>The implementation of properties inside the class would look like :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="kt">string</span> <span class="n">ApiPath</span>
+<span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">ApiPath</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">set</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">ApiPath</span> <span class="p">!=</span> <span class="k">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">ApiPath</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+            <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="s">"ApiPath"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="kt">string</span> <span class="n">ApiToken</span>
+<span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">ApiToken</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">set</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">ApiToken</span> <span class="p">!=</span> <span class="k">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">ApiToken</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+            <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="s">"ApiToken"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="kt">string</span> <span class="n">UserName</span>
+<span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">UserName</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">set</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">UserName</span> <span class="p">!=</span> <span class="k">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">.</span><span class="n">UserName</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+            <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="s">"UserName"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You can see these methods will hold the data from the model class. The _credentailInfo object represents the 
+model class which could be retrieved from the method <code class="highlighter-rouge">Initialize</code> for this class.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">internal</span> <span class="k">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">ApplicationUtil</span> <span class="n">applicationUtility</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">_applicationUtils</span> <span class="p">=</span> <span class="n">applicationUtility</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">returnDetails</span> <span class="p">=</span> <span class="n">applicationUtility</span><span class="p">.</span><span class="n">CredentialStore</span><span class="p">.</span><span class="nf">GetConnectionDetails</span><span class="p">();</span>
+    <span class="n">_credentialInfo</span> <span class="p">=</span> <span class="n">ObjectUtils</span><span class="p">.</span><span class="n">JsonDeserialize</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="n">returnDetails</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">_credentialInfo</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CredentialModel</span><span class="p">();</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As here in the above code, we have intentionally used <code class="highlighter-rouge">CredentialStore.GetConnectionDetails</code> and then Deserialized the 
+object to get the model. You can also use the <code class="highlighter-rouge">GetConnectionDetails&lt;CredentailModel&gt;</code> to directly get the object.</p>
+
+<p>Once the object is retrieved, you can use Save method to save the model to the application store.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">public</span> <span class="n">ICommand</span> <span class="n">SaveCommand</span>
+<span class="p">{</span>
+    <span class="k">get</span> 
+    <span class="p">{</span> 
+        <span class="k">this</span><span class="p">.</span><span class="n">_saveCommand</span> <span class="p">=</span> <span class="n">_saveCommand</span> <span class="p">??</span> <span class="k">new</span> <span class="nf">RelayCommand</span><span class="p">(</span><span class="n">p</span> <span class="p">=&gt;</span> <span class="nf">Save</span><span class="p">(),</span> <span class="k">null</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">_saveCommand</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">private</span> <span class="k">void</span> <span class="nf">Save</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">_applicationUtils</span><span class="p">.</span><span class="n">CredentialStore</span><span class="p">.</span><span class="n">SaveConnectionDetails</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>The method <code class="highlighter-rouge">this._applicationUtils.CredentialStore.SaveConnectionDetails</code> is used to save the data to 
+agent storage such that you can get the updated data while the integration points are being executed.</p>
+
+<h2 id="implementing-user-interface-for-cloud-agent">Implementing User interface for Cloud Agent</h2>
+
+<p>Cloud gives you a dynamic smart form to implement the credentail user interface. The cloud interface is a drag and drop designer which you can 
+directly go to the cloud portal to map the user interfaces correctly with that of the adapter code. To do this, you need to</p>
+
+<ul>
+  <li>Login to cloud portal</li>
+  <li>Open the App section and open the particular Application you want to design.</li>
+  <li>Open Credential button to open the dynamic UI popup.</li>
+  <li>Drag and drop fields on the design pane. You need to mention the property name on the ID of the dynamic field.
+<img src="/staticfiles/sdk-references/media/credential-user-interface.PNG" alt="Credential User Interface" /></li>
+  <li>Once the credential design is created, you can save it for future use.</li>
+</ul>
+
+<p>When the application is added by the end user, the end user will be provided with a separate pane where he can provide
+credentails such that it can connect to the application.</p>
+
 
                 
             </section>
@@ -1196,7 +1395,7 @@
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-21T00:00:00+05:30">September 21, 2018</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-03T00:00:00+05:30">January 03, 2010</time></div>
                 
                 
   
@@ -1212,11 +1411,15 @@
     
       
       
-      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a><span class="sep">, </span>
+      <a href="/" class="page__taxonomy-item" rel="tag"></a><span class="sep">, </span>
     
       
       
-      <a href="/nodes" class="page__taxonomy-item" rel="tag">nodes</a>
+      <a href="/" class="page__taxonomy-item" rel="tag"></a><span class="sep">, </span>
+    
+      
+      
+      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a>
     
     </span>
   </div>
@@ -1237,7 +1440,7 @@
     
       
       
-      <a href="/workflow" class="page__taxonomy-item" rel="tag">Workflow</a>
+      <a href="/sdk" class="page__taxonomy-item" rel="tag">SDK</a>
     
     </span>
   </p>
@@ -1251,13 +1454,13 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=POST+Node%20https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=How+to+design+an+interface+for+Credentials%20https://docs.appseconnect.com%2Fsdk%2FDesigning-and-Mapping-Credentials%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fsdk%2FDesigning-and-Mapping-Credentials%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fsdk%2FDesigning-and-Mapping-Credentials%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-post%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fsdk%2FDesigning-and-Mapping-Credentials%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -1710,15 +1913,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-splitter/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Splitter Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1728,15 +1929,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-sequencer/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Sequencer Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1746,15 +1945,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-rule/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Rule Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1764,15 +1961,13 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-merger/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Merge Node
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
                             
 
                             
@@ -1782,16 +1977,651 @@
                             
 
                             
-                            <li>
-                                <a href="/workflow/working-with-loops/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Loops
-                                </a>
-                            </li>
+
                             
                             
                             
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
+                             
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/sdk/deploying-the-connectivity/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Deploying
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/sdk/upgrading-and-reversioning-adapters/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Upgrading and Re-versioning
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/sdk/testing-and-uploading-adapter-to-appseconnect-cloud/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Postrequisites
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/sdk/Do's-&-Dont's-for-SDK/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Best practices
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/sdk/Development-Guidelines/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Development Guidelines
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                         </ul>
                     </div>
@@ -2088,8 +2918,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/workflow/working-with-post/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/workflow/working-with-post"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/sdk/Designing-and-Mapping-Credentials/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/sdk/Designing and Mapping Credentials"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
