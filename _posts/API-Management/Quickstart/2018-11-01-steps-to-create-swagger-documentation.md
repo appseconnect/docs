@@ -58,11 +58,11 @@ Once the Parameter Section gets expanded,  Click **TRY IT OUT** to execute the p
 11.  Now you can see the result given below, along with the HTTP Response code for success (200).
 ![swagger-response](/staticfiles/api-management/media/swagger-response.png)
 
-**ProTip:** Every-time, you open the SWAGGER window, you need to re-generate the username and password
+**ProTip:** Every-time, you open the SWAGGER window, you need to re-generate the username and password  
 {: .notice--info}.
 
 
 **ProTip:** Every-time, you execute the Proxy API in Swagger endpoint you can view both success and failure messages. 
 e.g: The HTTP Response code for success/failure will come like 200 OK, 202 Accepted, 
-302 Moved Temporarily, 204 No Content, 206 Partial Content etc
+302 Moved Temporarily, 204 No Content, 206 Partial Content etc.  
 {: .notice--info}.

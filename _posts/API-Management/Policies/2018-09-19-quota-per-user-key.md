@@ -11,9 +11,10 @@ menus:
 Throttling policy prevents an API usage spikes on per user basis, such that if the same API is 
 getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
 API rate limit can be set up by the developer for a specified time period and when the policy is
-triggered for a specific call, the caller will receive `429 Too Many Requests` as response status code.
+triggered for a specific call, the caller will receive `429 - Throttling Maximum sending rate exceeded` as response status code.
 
-**ProTip:** Policy can only be used once per API configuration.
+**ProTip:** Policy can only be used once per API configuration.  
+{: .notice--info}.
 
 ### Policy Statement
 
@@ -28,8 +29,9 @@ The rules and setup needs to be made accordingly.
 
 |Name|Description|Is Mandatory|Default Value|
 |-----------|--------------------|----------|----------|
-|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|Yes|Null|
-|Max Requests|Number of requests to be allowed during the specified timespan|Yes|Null|
+|Sequence|In which order of your policies applied, you want this policy to run|No|Null|
+|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|No|Empty|
+|Maximum no. of Requests|The maximum number of request, the user needs to prevent within the specified time|No|Empty|
 
 ### Policy Usage
 

@@ -1,16 +1,14 @@
 ---
-title: "Correct Assembly Version Extraction for Adapter Upload"
+title: "Version & Library Function Update"
 toc: true
 tag: developers
 category: "Connectors"
-
 menus: 
-    oledbtechnology:
-        title: "Reversioning"
-        weight: 8
-        category: "Database"
+    Connectors:
         icon: fa fa-wpexplorer
-        identifier: oledbtechnologyext
+        weight: 7
+        title: "Version & Library Function Update"
+        identifier: Connectorsversion
 ---
 
 This section of the document provides you the full details of using Assembly Version Extraction 
@@ -37,7 +35,10 @@ with any other dependency file of the particular application you are working on.
    and also you have the option to go for the one you require.  
 ![Save_AppResources](/staticfiles/connectors/media/technology-connector/Save_AppResources.png)
 7.  Now the selection of APPRESOURCE is complete, Click on SAVE.
+8.  Click `Update Adapters` for updating the Adapter in the Agent.
 
+**Protip:** For every new version of Adapters and updates in the Native resources functions, the above procedure is needed to be followed.
+{: .notice--info}
 
 **Protip:** The .dll, .pdb and other Dependant files needs to be uploaded only in a ZIP FOLDER. Also make sure that all the dependant files are added up in the folder.
 {: .notice--info}
