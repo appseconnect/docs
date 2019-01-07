@@ -230,7 +230,7 @@ parameter by executing the method.
 
 ### Hooking a Custom Processor
 
-By default, [as identified in the adapters](/sdk/Basic-Implementation), we call the [settings.GetCommandProcessor()](http://isdn.appseconnect.com/html/787CAB4C.htm) to get the processor specific to the request. For custom made action filter parsers, you can call 
+By default, [as identified in the adapters](/sdk/Implementing-adapter-basic-functionalities/), we call the [settings.GetCommandProcessor()](http://isdn.appseconnect.com/html/787CAB4C.htm) to get the processor specific to the request. For custom made action filter parsers, you can call 
 [`BuildRequest`](http://isdn.appseconnect.com/html/57E775B7.htm) to get an instance of the command processor on your code. 
 
 ```csharp

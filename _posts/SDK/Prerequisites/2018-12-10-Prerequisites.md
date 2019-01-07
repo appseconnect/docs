@@ -6,7 +6,7 @@ category: "SDK"
 menus: 
     sdk:
         title: "Prerequisite"
-        weight: 7
+        weight: 1
         icon: fa fa-file-word-o
         identifier: sdkprerequisite
 ---
