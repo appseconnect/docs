@@ -32,7 +32,7 @@ prerequisites. Here are some of them :
 5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Adapter-Cloud/)
 5. [Configuring / Importing Schemas and Actions](/getting-started/#importing-schemas-and-actions-of-an-application)
 
-After all these steps are done, make sure the environment is kept running and credentials are propery updated. 
+After all these steps are done, make sure the environment is kept running and credentials are properly updated. 
 
 ## Steps to create Proxy Api
 
@@ -44,12 +44,12 @@ depicting Proxy, select the section to navigate to it.
 details are important to create the face of the API. 
 
    * API Name - Enter the API Name
-   * Suffix - This signify the actual API Endpoint that needs to be specified. E.g: Filter, Delete, Fetcch.
+   * Suffix - This signify the actual API Endpoint that needs to be specified. E.g: Filter, Delete, Fetch.
    * Method - This signify the API Operations like GET, PUT, POST, DELETE.
    * State - This signify the API state weather it is released, obsolete or in WIP. By default, Released is set in state, you can choose per business
           requirement.
    * Version - This signify the API Version Number
-   * Version Append Type - This is set as'Path'
+   * Version Append Type - This is set as 'Path'
 
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do

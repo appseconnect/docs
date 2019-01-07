@@ -107,7 +107,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Implementing Adapter basic functionality viz, Pull, Push & Resync",
+      title: "Implementing Pull and Push functions",
       excerpt: "It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that...",
       categories: ["SDK"],
       tags: ["developers"],
@@ -153,7 +153,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Implementing Action filter Parser",
-      excerpt: "Action filters are special key-value data store for each integration points which provides functionality to have hierarchy and can invoke...",
+      excerpt: "Action filters are special hierarchical key-value data store for each integration points which provides functionality to have hierarchy and can...",
       categories: ["SDK"],
       tags: ["developers,reseller"],
       id: 15
@@ -1007,7 +1007,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Correct Assembly Version Extraction for Adapter Upload",
+      title: "Version & Library Function Update",
       excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1198,7 +1198,7 @@ var store = [
     
       
       {
-        "title": "Implementing Adapter basic functionality viz, Pull, Push & Resync",
+        "title": "Implementing Pull and Push functions",
         "url": "/sdk/Implementing-adapter-basic-functionalities/",
         "excerpt": "It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that...",
         "teaser":
@@ -1255,7 +1255,7 @@ var store = [
       {
         "title": "Implementing Action filter Parser",
         "url": "/sdk/Implementing-Actionfilter-Parsers/",
-        "excerpt": "Action filters are special key-value data store for each integration points which provides functionality to have hierarchy and can invoke...",
+        "excerpt": "Action filters are special hierarchical key-value data store for each integration points which provides functionality to have hierarchy and can...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2298,7 +2298,7 @@ var store = [
     
       
       {
-        "title": "Correct Assembly Version Extraction for Adapter Upload",
+        "title": "Version & Library Function Update",
         "url": "/connectors/Version-Extraction-For-Adapter-Upload/",
         "excerpt": "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
         "teaser":

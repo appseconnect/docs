@@ -14,7 +14,7 @@ menus:
 
 Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating a OLEDB database application in the APPSeCONNECT OP Agent.
 
-1. In the app config panel, configure the OLEDB App Confifuration Process.  
+1. In the app config panel, configure the OLEDB App Configuration Process.  
 ![OledbAdapter-OP](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP.png)
 2. The OLEDB configuration window, consists of click to Configure and connection String.  
 3. Select click to configure. Select your OLE Database provider.  
