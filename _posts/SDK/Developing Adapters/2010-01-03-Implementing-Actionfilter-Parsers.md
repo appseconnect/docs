@@ -240,3 +240,68 @@ var request = commandProcessor.PrepareCommand();
 ``` 
 
 The two lines above will let you create an Filter Processor inside your adapter code. 
+
+### Implementing a Converter
+
+Sometimes you want to pass the end result of the transformed response through an API such that you have a hook
+to convert the transformed response before pushing it to the application. To deal with such a scenario, you can pass 
+a [`ICustomConverter`](http://isdn.appseconnect.com/html/4434C816.htm) inside the `Initialize` section of the Adapter (Preferrably you would do it for Get Adapter),
+and update the Default Converter to your custom one. If you do that, after the transformation, you will get the Transformed response
+before you actually pass it to the other end of the application, and thus giving you a unique way to convert certain
+properties of the transformed response. 
+
+```csharp
+
+public class CustomFormatter : ICustomConverter
+{
+    private string _source;
+    public string Source
+    {
+        get
+        {
+            return this._source;
+        }
+        set
+        {
+            this._source = value;
+        }
+    }
+    public ReturnMessage<string> Format()
+    {
+        ReturnMessage<string> retMessage = new ReturnMessage<string>();
+        try
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(this.Source);
+            retMessage.Value = System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+            retMessage.SetSuccess("Reformatted source");
+        }
+        catch(Exception ex)
+        {
+            retMessage.AddException(ex);
+        }
+        return retMessage;
+    }
+ }
+
+```
+
+This is an implementation of Custom converter, which can leverage some of the pitfalls that you want to take 
+care before pusing the data to destination application. 
+
+To hook the new class you need to change the following : 
+
+```csharp
+//Initialize section of IAdapter
+public void Initialize(ApplicationContext context)
+{
+    this._context = context;
+    context.DefaultConverter = new CustomFormatter();
+}
+```
+Once yu hook this to your adapter, the adapter will be called late before the transformed response is pushed to the 
+destination adapter and thereby allowing you to change the content. 
+
+**Protip** 
+This hook is given to you when you cannot handle the certain section of Transformed output and you want to reformat the 
+data before use. It is highly recommended to avoid such scenarios. 
+{: .notice--info}
