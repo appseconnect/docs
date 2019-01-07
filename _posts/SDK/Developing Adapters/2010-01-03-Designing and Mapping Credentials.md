@@ -6,6 +6,7 @@ category: "SDK"
 menus:
     overviewsdkadapter: 
         icon: fa fa-gg
+        weight: 8
         title: "Designing Credential UI"
         identifier: designadapter    
 ---

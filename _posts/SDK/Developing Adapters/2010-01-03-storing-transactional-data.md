@@ -6,6 +6,7 @@ category: "SDK"
 menus:
     overviewsdkadapter: 
         icon: fa fa-gg
+        weight: 7
         title: "Using Storage"
         identifier: transactionsdk   
 ---

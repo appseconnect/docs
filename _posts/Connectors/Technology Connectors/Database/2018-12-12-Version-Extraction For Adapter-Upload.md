@@ -3,10 +3,11 @@ title: "Correct Assembly Version Extraction for Adapter Upload"
 toc: true
 tag: developers
 category: "Connectors"
-weight: 8
+
 menus: 
     oledbtechnology:
         title: "Reversioning"
+        weight: 8
         category: "Database"
         icon: fa fa-wpexplorer
         identifier: oledbtechnologyext
