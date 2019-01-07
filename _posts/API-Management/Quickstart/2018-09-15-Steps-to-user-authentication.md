@@ -5,11 +5,11 @@ tag: developers
 category: "API-Management"
 weight: 3
 menus: 
-    api: 
+    quickstartapi: 
         icon: fa fa-gg
-        category: "Steps to User Authentication"
+        category: "User Authentication"
         title: "Quickstart" 
-        identifier: quickstartapi
+        identifier: quickstartapiauth
 ---
 
 User Authentication is now done in the API Level to ensure Authenticated Approach when working with Proxy API,

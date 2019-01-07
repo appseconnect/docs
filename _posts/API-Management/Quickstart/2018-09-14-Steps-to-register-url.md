@@ -5,11 +5,11 @@ tag: developers
 category: "API-Management"
 weight: 2
 menus: 
-    api: 
+    quickstartapi: 
         icon: fa fa-gg
-        category: "Steps to Register URL"
+        category: "Register URL"
         title: "Quickstart" 
-        identifier: quickstartapi
+        identifier: quickstartapiregister
 ---
 
 ## Steps to Register URL
