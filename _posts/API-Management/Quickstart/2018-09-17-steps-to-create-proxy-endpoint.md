@@ -29,8 +29,8 @@ prerequisites. Here are some of them :
 2. [Choosing and Configuring Backend APPs](/getting-started/#choosing-application)
 3. [Connecting to your data sources](/getting-started/#creating-connection--executing-the-touchpoint)
 4. [Configuring Environments, installing / deploying Agent](/deployment/Deployment-Configuration/)
-5. [Feeding Credentials for applications and data sources](/getting-started/#appseconnect-schemaentity)
-5. [Configuring / Importing Schemas and Actions](/getting-started/#appseconnect-schemaentity)
+5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Adapter-Cloud/)
+5. [Configuring / Importing Schemas and Actions](/getting-started/#importing-schemas-and-actions-of-an-application)
 
 After all these steps are done, make sure the environment is kept running and credentials are propery updated. 
 
@@ -43,21 +43,23 @@ depicting Proxy, select the section to navigate to it.
 2. Put basic information, such as `API name`, `Description`, `URL Suffix`, `HTTP method` etc. These 
 details are important to create the face of the API. 
 
-* API Name - Enter the API Name
-* Suffix - This signify the actual API Endpoint that needs to be specified. E.g: Filter, Delete, Fetcch.
-* Method - This signify the API Operations like GET, PUT, POST, DELETE.
-* State - This signify the API state weather it is released, obsolete or in WIP. By default, Released is set in state, you can choose per business
-* requirement.
-* Version - This signify the API Version Number
-* Version Append Type - This is set as'Path'
+   * API Name - Enter the API Name
+   * Suffix - This signify the actual API Endpoint that needs to be specified. E.g: Filter, Delete, Fetcch.
+   * Method - This signify the API Operations like GET, PUT, POST, DELETE.
+   * State - This signify the API state weather it is released, obsolete or in WIP. By default, Released is set in state, you can choose per business
+          requirement.
+   * Version - This signify the API Version Number
+   * Version Append Type - This is set as'Path'
 
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
 not specify the version element in the API, you will face lot of challenges in future. 
 ![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.PNG)
+
 4. Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
 ![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.PNG)
+
 In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
 of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
 you can continue the wizard. For Policy Configuration, Click [here](/api-management/policies/)
@@ -69,9 +71,35 @@ from the drop down list. [Click here](/getting-started/#importing-schemas-and-ac
 7. The outboud policies are those which are applied after the backend is executed. Here also similar to the Inbound 
 policies, you are allowed to choose as many policies from the list as you want and configure each of them to continue 
 to the next screen.
-8. The next screen specifies the Response setup of the API. Here you are allowed to specify what response code the API 
+8. The next screen specifies the **Response setup** of the API. Here you are allowed to specify what response code the API 
 should return when there is a failure in execution or success in execution. You can also specify the response message 
 if you are not happy with our defualt messaging. 
+
+* HTTP Status Codes are the standard response codes that are provided by the internet server when a website or an API is called. 
+  These Codes helps in identifying the reason for the failure when called.
+
+**HTTP Response Codes present in AEC are:  
+200 - OK     
+201- Created    
+302- Moved Temporarily   
+207- Multi Status     
+301- Moved Temporarily     
+203- Non-Authoritative Information.     
+300- Multiple Choices   
+204- No-Content    
+206- Partial Content     
+102- Processing    
+205- Reset Content     
+202- Accepted**
+
+
+* By Default the user has 1 options each for Success and Failure status and can select the response codes 
+from the drop-down option depending upon the Response.
+![response-setup-Proxy1](/staticfiles/api-management/media/response-setup-Proxy1.PNG)
+* The user can also add Custom Responses from the `ADD RESPONSE RULE` option.
+![response-setup-Proxy2](/staticfiles/api-management/media/response-setup-Proxy2.PNG)
+* The Response statuses can also be changed or edited by clicking on the Configure options. The Configure window is displayed below.
+![response-setup-Proxy3](/staticfiles/api-management/media/response-setup-Proxy3.PNG)
 9. Each of the APIs created will show the URL and Http Method which needs to be used to execute it from the listing screen.
 
 **Note: For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily**
