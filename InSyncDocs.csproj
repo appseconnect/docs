@@ -841,9 +841,9 @@
     <None Include="_posts\Connectors\Custom Connectors\2018-12-06-overview-of-custom-connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\2018-12-07-Overview of technology connectors.md" />
     <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-10-Overview of OLEDB Adapter.md" />
-    <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-11-OLEDB Adapter Cloud.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-11-OLEDB-Credentials.md" />
     <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-12-Version-Extraction For Adapter-Upload.md" />
-    <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-12-OLEDB Adapter OnPremise.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Database\2018-12-12-OLEDB-using-filters.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\Authentication and Authorization.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\OAuth2.0.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\BasicAuthentication.md" />
@@ -862,6 +862,7 @@
     <None Include="_posts\Deployment\2018-12-12-upgradation and migration.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-overview-adapters.md" />
+    <None Include="_posts\SDK\Developing Adapters\2010-01-02-Implementing-event-driven-integration.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-02-Implementing-adapter-basic-functionalities.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Designing and Mapping Credentials.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-03-Developing AppResources.md" />

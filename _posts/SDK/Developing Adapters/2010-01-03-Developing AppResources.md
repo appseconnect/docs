@@ -6,6 +6,7 @@ category: "SDK"
 menus:
     overviewsdkadapter: 
         icon: fa fa-gg
+        weight: 3
         title: "Develop appresources"
         identifier: developappresource    
 ---

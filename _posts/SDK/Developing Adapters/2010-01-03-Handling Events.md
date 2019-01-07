@@ -6,6 +6,7 @@ category: "SDK"
 menus:
     overviewsdkadapter: 
         icon: fa fa-gg
+        weight: 9
         title: "Handling events"
         identifier: handlingeventssdk    
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Steps to define Static and dynamic criterias for an API"
+title: "Using parameters to an API"
 toc: true
 tag: developers
 category: "API-Management"
@@ -8,7 +8,7 @@ menus:
     quickstartapi:
         icon: fa fa-gg
         category: "Quickstart"
-        title: "AssignParameters to Action Filter API"
+        title: "Using parameters to an API"
         identifier: assignparameter-actionfilter
 ---
 
@@ -29,7 +29,7 @@ which changes the way in which the action is executed.
   action or an entire controller.
 
 
-## Enabling Query Options based on OData
+## Enabling Query Options 
 
 Web API supports the following OData query options:
 
@@ -46,7 +46,7 @@ Web API supports the following OData query options:
 
 1. Need to have access to the APPSeCONNECT Portal.
 2. Valid Credentials for the APPSeCONNECT Portal.
-3. The Application should be cloud supported. OLE DB is the only application that is being supported now.
+3. The Application should be cloud supported. For any application, if you have configured an endpoint, these filter criteria would work only if the backend application supports them.
 4. Schema needs to be defined with proper Actions (GET, PUT, POST, FILTER). 
 5. API Proxy needs to be Created. Steps for creating API Proxy is given [here](/api-management/steps-to-create-proxy-endpoint/). A valid API URL is required.
 
