@@ -217,9 +217,11 @@ implementation of ActionFilter parser.
 ```
 
 The above code will allow to generate the request URL for a REST based endpoint, by invoking the AppResource methods 
-directly during parsing. 
+directly during parsing. Every action filter processor needs to be implemented from [`IFilterCommandProcessor`](http://isdn.appseconnect.com/html/3DC976C.htm)
+which has a [`PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which will be called to get an output. For the above code, the output is generated as
+URL querystring, but for other custom parsers, you are free to generate a request structure for your application.
 
-You can see, the [`ActionFilter.PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which lets the adapter developer to generate the 
+You can see, the [`PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which lets the adapter developer to generate the 
 structure which lets adapter to execute a REST method. 
 
 In case of Action Filters, the platform automatically detects the methods that needs to be executed. So if you see the ActionParameterValue objects,

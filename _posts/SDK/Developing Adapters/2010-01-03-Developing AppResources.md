@@ -10,12 +10,12 @@ menus:
         title: "Develop appresources"
         identifier: developappresource    
 ---
-Application resources are special methods that can be added on the adapter code using the interface `IAppResources` which can 
+Application resources are special methods that can be added on the adapter code using the interface [`IAppResources`](http://isdn.appseconnect.com/html/10297E4C.htm) which can 
 be referenced in mapping or else in filters. An AppResource interface receives the `ApplicationContext` during its 
 initialization, which helps to invoke various methods on SDK or even call native methods directly from 
 adapter code. 
 
-Let us look at how the IAppResource class looks like : 
+Let us look at how the [`IAppResource`](http://isdn.appseconnect.com/html/3C4C3144.htm) class looks like : 
 
 ```csharp
  public class AppResource : IAppResource
@@ -48,7 +48,7 @@ Let us look at how the IAppResource class looks like :
 ```
 
 Here in the above code, you can see the AppResource class has an Initialize method which will be invoked from the application, 
-the object `ApplicationContext` received by the adapter can be used to invoke various functionalities of APPSeCONNECT. 
+the object [`ApplicationContext`](http://isdn.appseconnect.com/html/10297E4C.htm) received by the adapter can be used to invoke various functionalities of APPSeCONNECT. 
 
 Let us look at a sample implementation of an AppResource method. 
 
