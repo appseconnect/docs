@@ -114,9 +114,45 @@ the credential user interface.
 
 In the above user interface, we have created a TextBox to take `APIPath`, a `PasswordBox` to take `APIToken` (APIToken will be hidden to the user while it is being typed on screen) and a
 `TextBox` to hold `UserName`. There are few other UI elements too viz, a ProgressBar and some buttons. These objects are bound using 
-a ViewModel. 
+a ViewModel.  To implement the pluggability of the User Interface to APPSeCONNECT, go to the code-behind of the XAML file and 
+open the `xaml.cs` file and implement the class from [`IPageView`](http://isdn.appseconnect.com/html/84796C33.htm).
+The interface specifies one property [`PageTitle`](http://isdn.appseconnect.com/html/9FD97302.htm) and a method [`Initialize`](http://isdn.appseconnect.com/html/C8199D2.htm). The PageTitle method is used to specify a 
+caption for the credential User interface, and the Initilize is called whenever the UI is loaded. 
 
-Now if we look at the ViewModel, It should inherit from `ObservableObjectGeneric<className>` such that the model
+```csharp
+public partial class ConnectionView : System.Windows.Controls.UserControl, IPageView
+{
+    ConnectionViewModel viewModel = null;
+    public ConnectionView()
+    {
+        InitializeComponent();
+    }
+
+    public string PageTitle
+    {
+        get 
+        {
+            return "My Sample Application"; 
+        }
+    }
+
+    public void Initialize(ApplicationUtil applicationUtility)
+    {
+        viewModel = viewModel ?? new ConnectionViewModel();
+
+        viewModel.Initialize(applicationUtility);
+
+        //This will set the current page datacontext.
+        this.DataContext = viewModel;
+    }
+}
+```
+In the above code, you can see the ConnectView is the class, inherited from UserControl for the User Interface. You need to also implement the class from IPageView 
+from APPSeCONNECT SDK, such that you get the pluggability of the class to APPSeCONNECT agent. Each interface binds to a ViewModel. Here the ViewModel is created inside the Initialize method 
+and the DataContext is set inside the method. The Initialize also receives an [`ApplicationUtil`](http://isdn.appseconnect.com/html/3B3DFBC7.htm) object which can be used to perform 
+various utilities on the SDK. 
+
+Now if we look at the ViewModel, It should inherit from [`ObservableObjectGeneric<className>`](http://isdn.appseconnect.com/html/73742F9.htm) such that the model
 could be correctly hooked to the on-premise agent.
 
 The implementation of properties inside the class would look like : 
@@ -179,9 +215,9 @@ internal void Initialize(ApplicationUtil applicationUtility)
 ```
 
 As here in the above code, we have intentionally used `CredentialStore.GetConnectionDetails` and then Deserialized the 
-object to get the model. You can also use the `GetConnectionDetails<CredentailModel>` to directly get the object. 
+object to get the model. You can also use the [`GetConnectionDetails<CredentailModel>`](http://isdn.appseconnect.com/html/DFE5F9E8.htm) to directly get the object. 
 
-Once the object is retrieved, you can use Save method to save the model to the application store.
+Once the object is retrieved, you can use [`SaveConnectionDetails`](http://isdn.appseconnect.com/html/45B7DA82.htm) method to save the model to the application store.
 
 ```csharp
  public ICommand SaveCommand
@@ -199,8 +235,13 @@ private void Save()
 
 ```
 
-The method `this._applicationUtils.CredentialStore.SaveConnectionDetails` is used to save the data to 
+The method [`this._applicationUtils.CredentialStore.SaveConnectionDetails`](http://isdn.appseconnect.com/html/45B7DA82.htm) is used to save the data to 
 agent storage such that you can get the updated data while the integration points are being executed. 
+
+**protip** The APPSeCONNECT SDK always store the information by serializing the object to json representation. So you should specify 
+default constructor on the model class always and also if you see the default serialization is giving any issue, you can also store the credential by 
+serializing yourself. 
+{: .notice--info}.
 
 ## Implementing User interface for Cloud Agent
 
@@ -210,11 +251,21 @@ directly go to the cloud portal to map the user interfaces correctly with that o
 - Login to cloud portal
 - Open the App section and open the particular Application you want to design.
 - Open Credential button to open the dynamic UI popup.
-- Drag and drop fields on the design pane. You need to mention the property name on the ID of the dynamic field.
+- Drag and drop fields on the design pane. You need to mention the property name on the ID of the dynamic field.  
 ![Credential User Interface](/staticfiles/sdk-references/media/credential-user-interface.PNG)
 - Once the credential design is created, you can save it for future use. 
 
 When the application is added by the end user, the end user will be provided with a separate pane where he can provide
 credentails such that it can connect to the application. 
 
+## Implementing Cloud Credential functionalities
 
+When you deal with cloud interface, you cannot call a native method directly. So as to hook the interfacing of cloud interface 
+with the adapter, you need to a special interface `ICredential` which will allow to develop the interfacing of credentials from cloud interface. 
+
+##### Important methods 
+
+* `Validate(string configurationData)` : This method need to return success to indicate the configurationData is valid and can successfully connect to the destination application.
+* `PartialValidate(IDictionary<string, string> resource)` : This method is used based on tokenized implementation of Partial data required by the credential screen.
+
+Generally it is implemented by calling the normal `Validate` method. 

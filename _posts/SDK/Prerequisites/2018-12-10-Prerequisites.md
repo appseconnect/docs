@@ -58,16 +58,35 @@ APPSeCONNECT needs adapter to connect to a specific Application and Get and Push
 If you know all these you can follow the steps to create an Adapter : 
 
 * Open Visual Studio and Create new Class Library using your preferred language. 
-Lets name it as Insync.eConnect.FavApp (In your case, you can replace FavApp with your Application name) for our sample project.Click OK to create the project.
+Lets name it as Insync.eConnect.FavApp (In your case, you can replace FavApp with your Application name) for our sample project.Click OK to create the project.  
 ![Choose Project](/staticfiles/sdk-references/media/choose-project.png)
 * After the application is created, delete **"Class1.cs"** that is automatically selected. Just from the solution explorer, right click on the Class1.cs file and select "Remove".
-Right click on "References" and select **"Manage Nuget Packages"**.
+Right click on "References" and select **"Manage Nuget Packages"**.  
 ![Managenuget](/staticfiles/sdk-references/media/managenuget.png)
 * The Nuget Package manager will load, you can now type **"APPSeCONNECT API"** on the Search Online box on top and filter to our Adapter API.  
 * ![Appseconnect A P I](/staticfiles/sdk-references/media/appseconnectAPI.png)
 * Select **"Install"**. The Installer will create all the necessary files that are needed to create APPSeCONNECT Adapter.
 
-Now after you have the code ready, Go to View -> Task List from Menu and select Comments on the Box. It will show all the ToDo items you need to do to develop an adapter.  Follow the steps to remove the ToDo items with code such to work. 
-![Todos Adapter](/staticfiles/sdk-references/media/todos-adapter.png)
+Now after you have the code ready, Go to View -> Task List from Menu and select Comments on the Box. It will show all the ToDo items you need to do to develop an adapter.  Follow the steps to remove the ToDo items with code such to work.  
+![Todos Adapter](/staticfiles/sdk-references/media/todos-adapter.png)  
 Follow the instructions in ToDo and create the adapter. Let us know at support@appseconnect.com if you face any difficulties in developing or understanding a point. 
+
+### Understanding the folder structure
+
+Once you add the nuget package of APPSeCONNECT, you will find a number of files automatically created which will help in dealing with the various section of code. Let us define the different 
+folders such that it is easier to develop an adapter. 
+
+![Adapter Folder Structure](/staticfiles/sdk-references/media/adapter-folder-structure.PNG)
+
+When you look at the Solution Explorer of Visual Studio project after you add the APPSeCONNECT nuget package, you will see 
+files and folders like the one above. 
+
+1. core : The core folder represents the files which are directly related to the execution of the adapter. These are the mandatory files to create an adapter. The `Adapter.cs` is the implementation of [IAdapter](http://isdn.appseconnect.com/html/73508818.htm) and `AppResource.cs` is the implementation of [IAppResource](http://isdn.appseconnect.com/html/3C4C3144.htm). 
+2. model : The model folder indicates the data objects required to execute the adapter. The `CredentialModel` holds all the information about the Credential required to communicate with the application while the `DataModel` is used for transactional storages. You can create as many classes here to represent various models. Both the CredentialModel and DataModel should have a default constructor in place such that the object could be searialized and deserialized easily. 
+3. ConnectionView.xaml : The ConnectionView is the User interface built using XAML, which will be loaded by the Agent to input Credential for the application. 
+4. ConnectionViewModel : This is the ViewModel class associated with the ConnectionView.
+5. Readme.txt : A special help document which will help in developing adapter. 
+
+To deal with all these classes, you can go ahead with the [actual implementation](/sdk/Adapters). 
+
 

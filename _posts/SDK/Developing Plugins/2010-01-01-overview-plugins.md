@@ -9,7 +9,7 @@ menus:
         title: "Plugins"
         identifier: overviewsdkplugin            
 ---
-Plugins are a piece of software which lets to tightly couple with the platform to enhance the platform
+[Plugins](http://isdn.appseconnect.com/html/9B9A41E5.htm) are a piece of software which lets to tightly couple with the platform to enhance the platform
 and / or improve performance of the integration. As you know the default integration platform is sufficient
 to build any integration out of the box, but still we thought for advanced need, there should be separate hooks which an enterprise developer or team of 
 developers might need to build plugins on top of our components. The plugin is built using the SDK to enhance or change functionality of how the platform 

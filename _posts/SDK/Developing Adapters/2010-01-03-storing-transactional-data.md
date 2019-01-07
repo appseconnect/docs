@@ -82,11 +82,23 @@ public class SyncInfoDataTable : ObjectBase
 
 The model class represents one single row of a Table. First of all, to define a model, you must Inherit it from `ObjectBase`.
 
-The first thing to look at is the name of the Table. You can see we have tried to create a table named SyncInfo. The TableAttribute is used to annotate a model class with table attributes. 
-You can specify TableName and DataLimit for a table. The DataLimit property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest. 
+The first thing to look at is the name of the Table. You can see we have tried to create a table named SyncInfo. The [TableAttribute](http://isdn.appseconnect.com/html/D1DCF68E.htm) is used to annotate a model class with table attributes. 
+You can specify [Name](http://isdn.appseconnect.com/html/5F039121.htm) and [DataLimit](http://isdn.appseconnect.com/html/53EDA623.htm) for a table. The [DataLimit](http://isdn.appseconnect.com/html/53EDA623.htm) property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest. 
 
-The Properties on the other hand are annotated using `ColumnAttribute`. The Name of the Column needs to be unique for each table and there must be its data type defined. 
-You can also specify the DefaultValue for each column, such that if no data is passed in, the property will get a Default value. You can also specify various attributes to the property.
+The Properties on the other hand are annotated using [`ColumnAttribute`](http://isdn.appseconnect.com/html/72A02280.htm). The Name of the Column needs to be unique for each table and there must be its data type defined. 
+You can also specify the [DefaultValue](http://isdn.appseconnect.com/html/824D69BC.htm) for each column, such that if no data is passed in, the property will get a Default value. You can also specify various attributes to the property.
+Here are some of the important properties of ColumnAttribute. 
+
+- [CanAutoIncrement](http://isdn.appseconnect.com/html/BDF860A8.htm) : Allows the property to auto-increment.
+- [DefaultValue](http://isdn.appseconnect.com/html/824D69BC.htm) : Specifies the default value of the column when null is passed to it. 
+- [IsNullAllowed](http://isdn.appseconnect.com/html/43FDF167.htm) : Checks whether the field allows null. 
+- [IsPrimaryKey](http://isdn.appseconnect.com/html/A95EDEAF.htm) : Unique identifier of a particular record. 
+- [IsUnique](http://isdn.appseconnect.com/html/9F9E51AB.htm) : Unique value
+- [Length](http://isdn.appseconnect.com/html/D88BF61A.htm) : Restricts the number of characters allowed.
+- [Type](http://isdn.appseconnect.com/html/D77F5206.htm) : DataType of the field specified as [DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype)
+- [FractionLength](http://isdn.appseconnect.com/html/D4EAFC00.htm) : Precision for a particular fractional data. 
+
+
 
 ### Maintaining data for the objects
 
@@ -170,7 +182,7 @@ if (productDataSelectionResult.Status)
 }
 ``` 
 In the above code, you can see the AECPRODUCTDATA table records are being fetched using multiple filter conditions.
-The filter conditions are specified for each columns using object of `DatabaseFilter` type and when the Transaction is executed through the Execute method, 
+The filter conditions are specified for each columns using object of [`DatabaseFilter`](http://isdn.appseconnect.com/html/32CC8FA8.htm) type and when the Transaction is executed through the Execute method, 
 the data is retrieved from the database. 
 
 

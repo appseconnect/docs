@@ -5,7 +5,7 @@ tag: developers
 category: "SDK"
 menus: 
     sdkprerequisite:
-        title: "Best practices"
+        title: "Best-practices"
         weight: 8
         icon: fa fa-file-word-o
         identifier: sdkprerequisitebestpractices

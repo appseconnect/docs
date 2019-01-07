@@ -563,6 +563,7 @@
     <Content Include="staticfiles\root\media\SecuritySettings.png" />
     <Content Include="staticfiles\root\media\Trial_Form.png" />
     <Content Include="staticfiles\sdk-references\media\adapter-details.png" />
+    <Content Include="staticfiles\sdk-references\media\adapter-folder-structure.PNG" />
     <Content Include="staticfiles\sdk-references\media\appseconnectAPI.png" />
     <Content Include="staticfiles\sdk-references\media\attachtoprocesshandler.PNG" />
     <Content Include="staticfiles\sdk-references\media\choose-project.png" />
