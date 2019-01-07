@@ -30,7 +30,7 @@ The rules and setup needs to be made accordingly.
 |Name|Description|Is Mandatory|Default Value|
 |-----------|--------------------|----------|----------|
 |Sequence|In which order of your policies applied, you want this policy to run|No|Null|
-|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle|No|Empty|
+|Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle.The Time limit is defined in MINUTES|No|Empty|
 |Maximum no. of Requests|The maximum number of request, the user needs to prevent within the specified time|No|Empty|
 
 ### Policy Usage

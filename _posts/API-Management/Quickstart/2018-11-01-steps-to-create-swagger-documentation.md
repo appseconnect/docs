@@ -3,10 +3,10 @@ title: "Creating Swagger Documentation"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 6
 menus: 
     quickstartapi:
         icon: fa fa-gg
+        weight: 6
         category: "Quickstart"
         title: "Creating Swagger Documentation"
         identifier: quickstartswagger

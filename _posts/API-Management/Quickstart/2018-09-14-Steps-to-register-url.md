@@ -3,12 +3,12 @@ title: "Steps to Register URL"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 2
 menus: 
     quickstartapi: 
         icon: fa fa-gg
-        category: "Register URL"
-        title: "Quickstart" 
+        weight: 2
+        category: "Quickstart"
+        title: "Register URL" 
         identifier: quickstartapiregister
 ---
 

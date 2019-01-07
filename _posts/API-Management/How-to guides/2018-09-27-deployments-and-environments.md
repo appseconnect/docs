@@ -20,17 +20,12 @@ To Deploy an API, you need to make sure, all pre-requisites of an API developmen
 
 ## Pre-requisites for Deploying and Publish API's:  
 
-* Getting a new account for APPSeCONNECT 
-
-* Configuring your Environment 
-
-* Choosing Apps or Adding Apps 
-
-* Importing schemas and actions of an Application 
-
-* Feeding Credentials for applications and data sources 
-
-* Creating a Connection. 
+* [Getting a new account for APPSeCONNECT](/home/#appseconnect-platform---functional-menus) 
+* [Configuring Environments, installing / deploying Agent](/deployment/Deployment-Configuration/)
+* [Choosing and Configuring Backend APPs](/getting-started/#choosing-application)
+* [Configuring / Importing Schemas and Actions](/getting-started/#importing-schemas-and-actions-of-an-application)
+* [Feeding Credentials for applications and data sources](/connectors/OLEDB-Credentials/)
+* [Connecting to your data sources](/getting-started/#creating-connection--executing-the-touchpoint) 
 
 After all these steps are done, make sure the `environment is kept running` and `credentials are properly updated`. 
 Once confirmed, you can add new APIs, and do an `Update Configuration`, before executing it from Cloud. 

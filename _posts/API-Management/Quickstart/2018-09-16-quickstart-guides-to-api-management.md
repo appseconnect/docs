@@ -3,7 +3,7 @@ title: "Quickstart guides to create APIs"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 5
+weight: 2
 menus: 
     api: 
         icon: fa fa-gg

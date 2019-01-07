@@ -3,12 +3,12 @@ title: "Steps to User Authentication"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 3
 menus: 
     quickstartapi: 
         icon: fa fa-gg
-        category: "User Authentication"
-        title: "Quickstart" 
+        weight: 3
+        category: "Quickstart"
+        title: "User Authentication" 
         identifier: quickstartapiauth
 ---
 

@@ -836,6 +836,7 @@
     <None Include="_posts\apps-management\how-to-guides\2019-08-15-handling-schemas-on-apps.md" />
     <None Include="_posts\Connectors\2018-12-07-Overview of Connectors.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-01-Overview of Application Connectors.md" />
+    <None Include="_posts\Connectors\Application Connectors\2018-12-06-Priority.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-06-Shopify.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-07-Magento2.md" />
     <None Include="_posts\Connectors\Custom Connectors\2018-12-06-overview-of-custom-connectors.md" />

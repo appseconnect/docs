@@ -3,10 +3,10 @@ title: " Creating Webhook endpoint"
 toc: true
 tag: developers
 category: "API-Management"
-weight: 4
 menus: 
     quickstartapi: 
         icon: fa fa-gg
+        weight: 5
         category: "Quickstart"
         title: "Create webhook endpoint" 
         identifier: quickstartwebhook
@@ -37,10 +37,10 @@ prerequisites. Here are some of them :
 2. [Configuring your Enviornment](/deployment/Enviornment-Overview/)
 3. [Choosing Apps or Adding Apps](/getting-started/#choosing-application)
 4. [Importing schemas and actions of an Application]()
-5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Adapter-Cloud/)
+5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Credentials/)
 5. [Creating a Connection](/getting-started/#creating-connection--executing-the-touchpoint)
 
-After all these steps are done, make sure the environment is kept running and credentials are propery updated. 
+After all these steps are done, make sure the environment is kept running and credentials are properly updated. 
 
 ## Steps to create Webhook Endpoint
 

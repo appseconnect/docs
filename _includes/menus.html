@@ -7,7 +7,7 @@
     {% assign icon = "" %}
     {% endif %}
     <li class="menu-item-{{ loop.index }}" data-jstree='{"icon":"{{icon}}"}'>
-        <a href="{{ item.url }}" onclick="selectTab('{{ item.url }}');" title="Go to {{ item.title }}">{{ item.title }}</a>
+        <a onclick="selectTab('{{ item.url }}');" title="Go to {{ item.title }}">{{ item.title }}</a>
         {% if item.children %}
         {% assign menu = item.children %}
         {% include menus.html %}

@@ -28,6 +28,7 @@ The rules and setup needs to be made accordingly.
 |-----------|--------------------|----------|
 |Response Content type conversion|Represents the algorithm to be used for response content type conversion|Yes|
 |Select Response Conversion Type| Either XML or JSON|Yes|
+
 ### Policy Usage
 
 The policy can be applied only at `outbound` section.

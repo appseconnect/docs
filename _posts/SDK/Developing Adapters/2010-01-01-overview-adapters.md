@@ -32,6 +32,7 @@ The adapter development process consists of different areas :
 - [Handling events and creating notifications](/sdk/Handling-Events/)
 - [How to efficiently log in adapter.](/sdk/Logging-and-Tracking)
 - [Working with AppResources](/sdk/Developing-AppResources/)
+- [Working with Event based integration](/sdk/Implementing-event-driven-integration)
 - [Debugging and Testing Adapter code](/sdk/How-to-test-an-Adapter/)
 
 An adapter is the building block of data for any connector. It is plugged in directly to the appseconnect platform to connect and execute integration points. 

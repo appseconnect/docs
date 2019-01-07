@@ -19,12 +19,12 @@
 
 
 
-<title>Implementing Adapter basic functionality viz, Pull, Push &amp; Resync - APPSeCONNECT Product Docs</title>
+<title>Implementing Pull and Push functions - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement the adapter in such a way, so that the data is perfectly transferred from one application to another without compormisingperformance and also giving most of the flexibility for cloud integrations.">
+<meta name="description" content="It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement the adapter in such a way, so that the data is perfectly transferred from one application to another without compormisingperformance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connectorI hope you have installed the pre-requisites correctly on the system and you have all the prebuilt code ready on your visual studio.Also you need to make sure that you follow our best practices and guidelines provided for adapter development.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Implementing Adapter basic functionality viz, Pull, Push &amp; Resync">
+<meta property="og:title" content="Implementing Pull and Push functions">
 
 
   <link rel="canonical" href="http://localhost:4000/sdk/Implementing-adapter-basic-functionalities/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement the adapter in such a way, so that the data is perfectly transferred from one application to another without compormisingperformance and also giving most of the flexibility for cloud integrations.">
+  <meta property="og:description" content="It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement the adapter in such a way, so that the data is perfectly transferred from one application to another without compormisingperformance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connectorI hope you have installed the pre-requisites correctly on the system and you have all the prebuilt code ready on your visual studio.Also you need to make sure that you follow our best practices and guidelines provided for adapter development.">
 
 
 
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Implementing Adapter basic functionality viz, Pull, Push & Resync</li>
+      <li class="current">Implementing Pull and Push functions</li>
     
   
 </ol>-->
@@ -583,6 +583,100 @@
     </li>
     
     
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/connectors/Overview-of-Connectors/');" title="Go to Connectors">Connectors</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/connectors/Overview-of-Application-Connectors/');" title="Go to Application">Application</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2">Magento2</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify">Shopify</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/connectors/Priority/');" title="Go to Priority">Priority</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/connectors/Overview-of-technology-connectors/');" title="Go to Technology">Technology</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a onclick="selectTab('/connectors/Overview-of-OLEDB-Adapter/');" title="Go to Database">Database</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a onclick="selectTab('/connectors/OLEDB-Credentials/');" title="Go to Adding Credentials">Adding Credentials</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a onclick="selectTab('/connectors/OLEDB-using-filters/');" title="Go to Using Filters for Integration">Using Filters for Integration</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a onclick="selectTab('/connectors/overview-of-custom-connectors/');" title="Go to Custom">Custom</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a onclick="selectTab('/connectors/Version-Extraction-For-Adapter-Upload/');" title="Go to Version & Library Function Update">Version & Library Function Update</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a onclick="selectTab('/api-management/overview/');" title="Go to API Management">API Management</a>
         
@@ -606,25 +700,37 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/');" title="Go to Create webhook endpoint">Create webhook endpoint</a>
+        <a onclick="selectTab('/api-management/Steps-to-register-url/');" title="Go to Register URL">Register URL</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/api-management/steps-to-create-swagger-documentation/');" title="Go to Creating Swagger Documentation">Creating Swagger Documentation</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/api-management/steps-to-assign-parameter-per-actionfilter/');" title="Go to AssignParameters to Action Filter API">AssignParameters to Action Filter API</a>
+        <a onclick="selectTab('/api-management/Steps-to-user-authentication/');" title="Go to User Authentication">User Authentication</a>
         
     </li>
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
         <a onclick="selectTab('/api-management/steps-to-create-proxy-endpoint/');" title="Go to Create Proxy endpoint">Create Proxy endpoint</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/');" title="Go to Create webhook endpoint">Create webhook endpoint</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/steps-to-assign-parameter-per-actionfilter/');" title="Go to Using parameters to an API">Using parameters to an API</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/api-management/steps-to-create-swagger-documentation/');" title="Go to Creating Swagger Documentation">Creating Swagger Documentation</a>
         
     </li>
     
@@ -667,7 +773,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-cogs"}'>
-        <a onclick="selectTab('/api-management/response-content-format-Copy/');" title="Go to Response Content Format Transform Policy">Response Content Format Transform Policy</a>
+        <a onclick="selectTab('/api-management/response-content-format/');" title="Go to Response content type conversion policy">Response content type conversion policy</a>
         
     </li>
     
@@ -728,94 +834,6 @@
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
         <a onclick="selectTab('/api-management/faqs-api-management/');" title="Go to Frequently Asked questions">Frequently Asked questions</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Overview-of-Connectors/');" title="Go to Connectors">Connectors</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Overview-of-Application-Connectors/');" title="Go to Application">Application</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/connectors/Magento2/');" title="Go to Magento2">Magento2</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Shopify/');" title="Go to Shopify">Shopify</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/Overview-of-technology-connectors/');" title="Go to Technology">Technology</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a onclick="selectTab('/connectors/Overview-of-OLEDB-Adapter/');" title="Go to Database">Database</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a onclick="selectTab('/connectors/OLEDB-Adapter-OnPremise/');" title="Go to OnPremise">OnPremise</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a onclick="selectTab('/connectors/Version-Extraction-For-Adapter-Upload/');" title="Go to Reversioning">Reversioning</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a onclick="selectTab('/connectors/OLEDB-Adapter-Cloud/');" title="Go to Cloud">Cloud</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/connectors/overview-of-custom-connectors/');" title="Go to Custom">Custom</a>
         
     </li>
     
@@ -972,7 +990,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Designing-and-Mapping-Credentials/');" title="Go to Designing Credential UI">Designing Credential UI</a>
+        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
         
     </li>
     
@@ -984,13 +1002,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Handling-Events/');" title="Go to Handling events">Handling events</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/How-to-test-an-Adapter/');" title="Go to Testing">Testing</a>
+        <a onclick="selectTab('/sdk/Implementing-event-driven-integration/');" title="Go to Event-based Integration">Event-based Integration</a>
         
     </li>
     
@@ -1014,7 +1026,19 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
-        <a onclick="selectTab('/sdk/Implementing-adapter-basic-functionalities/');" title="Go to Basic Implementation">Basic Implementation</a>
+        <a onclick="selectTab('/sdk/Designing-and-Mapping-Credentials/');" title="Go to Designing Credential UI">Designing Credential UI</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/sdk/Handling-Events/');" title="Go to Handling events">Handling events</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-jstree='{"icon":"fa fa-gg"}'>
+        <a onclick="selectTab('/sdk/How-to-test-an-Adapter/');" title="Go to Testing">Testing</a>
         
     </li>
     
@@ -1064,7 +1088,7 @@
     
     
     <li class="menu-item-" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best practices">Best practices</a>
+        <a onclick="selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best-practices">Best-practices</a>
         
     </li>
     
@@ -1085,8 +1109,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Implementing Adapter basic functionality viz, Pull, Push &amp; Resync">
-        <meta itemprop="description" content="It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement the adapter in such a way, so that the data is perfectly transferred from one application to another without compormisingperformance and also giving most of the flexibility for cloud integrations.">
+        <meta itemprop="headline" content="Implementing Pull and Push functions">
+        <meta itemprop="description" content="It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement the adapter in such a way, so that the data is perfectly transferred from one application to another without compormisingperformance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connectorI hope you have installed the pre-requisites correctly on the system and you have all the prebuilt code ready on your visual studio.Also you need to make sure that you follow our best practices and guidelines provided for adapter development.">
         <meta itemprop="datePublished" content="January 02, 2010">
         
 
@@ -1114,7 +1138,7 @@
                 
                 
                 
-                <li class="current">Implementing Adapter basic functionality viz, Pull, Push & Resync</li>
+                <li class="current">Implementing Pull and Push functions</li>
                 
                 
             </ol>
@@ -1124,7 +1148,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Implementing Adapter basic functionality viz, Pull, Push &amp; Resync
+                <h1 class="page__title" itemprop="headline">Implementing Pull and Push functions
 </h1>
                 
                 
@@ -1155,7 +1179,7 @@
 
 
 
-  5 minute read
+  7 minute read
 </p>
                 
                 
@@ -1170,11 +1194,15 @@
                         <ul class="toc__menu">
   <li><a href="#implementing-the-iadapter-interface">Implementing the IAdapter interface</a>
     <ul>
-      <li><a href="#implementing-get-">Implementing GET :</a></li>
+      <li><a href="#implementing-get">Implementing GET</a></li>
       <li><a href="#implementing-post-">Implementing Post :</a></li>
     </ul>
   </li>
-  <li><a href="#handling-resync-data">Handling Resync Data</a></li>
+  <li><a href="#handling-resync-data">Handling Resync Data</a>
+    <ul>
+      <li><a href="#various-other-methods-in-iadapter-interface">Various other methods in IAdapter interface</a></li>
+    </ul>
+  </li>
 </ul>
                     </nav>
                 </aside>
@@ -1182,15 +1210,53 @@
                 <p>It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, 
 such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement 
 the adapter in such a way, so that the data is perfectly transferred from one application to another without compormising
-performance and also giving most of the flexibility for cloud integrations.</p>
+performance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connector
+I hope you have <a href="/sdk/Prerequisites/">installed the pre-requisites</a> correctly on the system and you have all the prebuilt code ready on your visual studio.
+Also you need to make sure that you follow our <a href="/sdk/Best-practices/">best practices</a> and <a href="/sdk/Development-Guidelines/">guidelines</a> provided for adapter development.</p>
 
 <h2 id="implementing-the-iadapter-interface">Implementing the IAdapter interface</h2>
 
-<p>An <code class="highlighter-rouge">IAdapter</code> interface is a hook to specify the code which will run to fetch or push data to and from from the application. 
-The main method that needs to be implemented while implementing IAdapter is the Execute, which provides you with 
-<code class="highlighter-rouge">OperationType</code> which lets you specify code that needs to be implemented to invoke Request to the application.</p>
+<p>An <a href="http://isdn.appseconnect.com/html/73508818.htm"><code class="highlighter-rouge">IAdapter</code></a> interface is a hook to specify the code which will run to fetch 
+or push data to and from from the application. 
+The main method that needs to be implemented while implementing 
+<a href="http://isdn.appseconnect.com/html/73508818.htm">IAdapter</a> is the 
+<a href="http://isdn.appseconnect.com/html/364EAD9A.htm"><code class="highlighter-rouge">Execute</code></a>, which provides you with 
+<a href="http://isdn.appseconnect.com/html/EBA2D728.htm"><code class="highlighter-rouge">ExecutionType</code></a> which lets you specify code that needs to be implemented to invoke Request to the application.</p>
 
-<h3 id="implementing-get-">Implementing GET :</h3>
+<p>An <a href="http://isdn.appseconnect.com/html/F675346E.htm">OperationType</a> specifies the type of the execution which you need to perform.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>OperationType</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>Adapter receives GET as ExecutionType when the adapter need to pull data from source application. Remember, during this operation, you will have to work with <a href="http://isdn.appseconnect.com/html/996C8CA9.htm"><code class="highlighter-rouge">ActionFilter</code></a> and you should not look for <a href="http://isdn.appseconnect.com/html/281D6BC4.htm">TransformedResponse</a>.</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>Adapter receives POST as ExecutionType when the adapter need to push data to the target application. The adapter receives the actual data in <a href="http://isdn.appseconnect.com/html/281D6BC4.htm"><code class="highlighter-rouge">TransformedResponse</code></a> as XML data and the target application need to push the same to the application end.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Protip:</strong> The basic function of an adapter method <code class="highlighter-rouge">Execute</code> is to pull/push data (convert the data to XML) and set it to APPSeCONNECT using <a href="http://isdn.appseconnect.com/html/2ECC6977.htm"><code class="highlighter-rouge">ReturnMessage&lt;string&gt;</code></a>
+{: .notice–info}.</p>
+
+<h3 id="implementing-get">Implementing GET</h3>
+
+<p>The GET execution of an adapter require to do the following steps :</p>
+
+<ul>
+  <li>Parse <code class="highlighter-rouge">ActionFilter</code> to generate the Request structure. An ActionFilter is a Hierarchical Key-Value pair data received from APPSeCONNECT cloud.</li>
+  <li>Get Credential to connect to the target application.</li>
+  <li>Fetch data from the target application and push it the APPSeCONNECT using the api <code class="highlighter-rouge">ReturnMessage.SetSuccess</code>.</li>
+</ul>
+
 <p>The Credential received by the interface will allow you to create the request body so as to create a communication with the end 
 application. Let us look at the code below :</p>
 
@@ -1247,12 +1313,13 @@ application. Let us look at the code below :</p>
 </code></pre></div></div>
 
 <p>In the above code you can see an implementation of adapter GET method. This piece of code will be executed when a workflow
-encounters a Get method. If you properly inspect the method, you can see, that the method receives an ExecutionSettings and also 
-it uses <code class="highlighter-rouge">_context</code> to get various data from APPSeCONNECT. The <code class="highlighter-rouge">_context</code> object is an object that lets you get objects 
-application wide. This object does not change between calls to the method and also represents the contextual reference of the 
+encounters a Get node. If you properly inspect the method, you can see, that the method receives an 
+<a href="http://isdn.appseconnect.com/html/BC65452C.htm"><code class="highlighter-rouge">ExecutionSettings</code></a> and also 
+it uses <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="highlighter-rouge">_context</code></a> to get various data from APPSeCONNECT. The <code class="highlighter-rouge">_context</code> is an object that lets you get data 
+application wide. This object does not change between calls to the adapter and also represents the contextual reference of the 
 process on the application.</p>
 
-<p>The line <code class="highlighter-rouge">this._context.Logger</code> gets the logger class, which helps you to write debug, status or information over <a href="">APPSeCONNECT 
+<p>The line <code class="highlighter-rouge">this._context.Logger</code> gets the logger class, which helps you to write debug, status or information over <a href="/sdk/logging-and-tracing/">APPSeCONNECT 
 logging system</a>.</p>
 
 <p>The next important consideration is the Credential object. You can call <code class="highlighter-rouge">this._context.GetConnectionDetails</code> to retrieve the 
@@ -1260,11 +1327,12 @@ credentials which is used to connect to the application. Remember, the credentia
 or cloud agent, and you need a model created as a class inside the project to access the deserialzied version of the object.</p>
 
 <p><strong>protip</strong>: You can also manually read / write json statements, using the overload <code class="highlighter-rouge">GetConnectionDetails</code> but it is always 
-preferrable to have a model class.</p>
+preferrable to have a model class.
+{: .notice–info}.</p>
 
 <p>The <code class="highlighter-rouge">settings.GetCommandProcessor(Protocol.REST)</code>allows the user to get an url generated from the Action filters 
 put in APPSeCONNECT cloud. We specifically generate the action filter parsers for REST and or SOAP requests, so if it does not 
-suit your need, you can easily <a href="">create an ActionFilter parser yourself</a>.</p>
+suit your need, you can easily <a href="/sdk/Implementing-Actionfilter-Parsers/">create an ActionFilter parser yourself</a>.</p>
 
 <p>Finally, the <code class="highlighter-rouge">interactAPI.InteractGetByPage</code> is an individual request to the application which helps in getting data from the application. 
 Once you get the data, you can assign keys to the Resync Bucket, such that the data that is been retrieved could be properly tracked by the 
@@ -1370,6 +1438,15 @@ data blocks to execute the resync. You can see, the InteractGet is called here t
 APPSeCONNECT. In case of POST request as well, you can use the settings.TransformedResponse to resync the data. To detect whether 
 the call to an adapter is for Resync or normal call, you can use the property <code class="highlighter-rouge">settings.CalledFrom</code>.</p>
 
+<h3 id="various-other-methods-in-iadapter-interface">Various other methods in IAdapter interface</h3>
+
+<p>There are some additional properties that an IAdapter interface hosts, which lets you process various part of data.</p>
+
+<ul>
+  <li><a href="http://isdn.appseconnect.com/html/81A29C5A.htm">Resource</a> : You needed to implement a property Resource. This is an implementation of <a href="http://isdn.appseconnect.com/html/3C4C3144.htm">IAppResource</a> inside the adpater such that APPSeCONNECT could call the methods. Remember, if you do not specify an object, the transformation in APPSeCONNECT could not call additional functions.</li>
+  <li><a href="http://isdn.appseconnect.com/html/E8F54FAE.htm">ValidateProcess</a>: This method is used to validate the execution data before actual processing. Feel free to put logic that identifies whether the data passed to the Execute or the Request structure is valid or not.</li>
+</ul>
+
                 
             </section>
 
@@ -1427,7 +1504,7 @@ the call to an adapter is for Resync or normal call, you can use the property <c
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Implementing+Adapter+basic+functionality+viz%2C+Pull%2C+Push+%26+Resync%20https://docs.appseconnect.com%2Fsdk%2FImplementing-adapter-basic-functionalities%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Implementing+Pull+and+Push+functions%20https://docs.appseconnect.com%2Fsdk%2FImplementing-adapter-basic-functionalities%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fsdk%2FImplementing-adapter-basic-functionalities%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -1455,6 +1532,38 @@ the call to an adapter is for Resync or normal call, you can use the property <c
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             
@@ -2392,6 +2501,14 @@ the call to an adapter is for Resync or normal call, you can use the property <c
                                     Development Guidelines
                                 </a>
                             </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
