@@ -55,7 +55,7 @@ Web API supports the following OData query options:
 You can define action parameters for anvarious opertaions of an API. Presently AEC API Management provides 
 assigning parameters to the following operations - `GET, PUT, POST & DELETE`.
 
-### Using Action Filter & Action Parameters for GET operation
+## Using Action Filter & Action Parameters for GET operation
 
 1.  In the APP section in the AEC Portal click on Schema for defining the Action (GET Operation).  
 ![ActionFilter-ActionParameter](/staticfiles/api-management/media/ActionFilter-ActionParameter.png)
@@ -73,7 +73,46 @@ This is also called as the Static Filters**
 as per the business requirement.
 {: .notice--info}
 
-### Using Action Parameters for PUT Operation
+## Using Action Parameter for SKIP and OrderBy for GET Operation
+
+**Using Skip**
+
+As a Prerequisite, Schema Attributes need to be set as Primary in the Portal. The pathway for enabling attribute as Primary is. 
+
+Login to the Portal - APP section - Schema of the APP(OLE DB) - View Attributes.
+
+![SKIP-PrimaryKey-Enabled](/staticfiles/api-management/media/SKIP-PrimaryKey-Enabled.png)  
+
+**Note: Making the `Attribute Primary` is Mandatory for the $skip operation.**
+
+1. Define the API Proxy with valid credentials [steps to do the same](/connectors/OLEDB-Credentials/), copy the generated URL for the GET operation.
+2. Select the Operation as GET in the POSTMAN Environment.
+3. Place the URL with the Query Parameter in the Postman Environment.
+![SKIPQuery-Postman](/staticfiles/api-management/media/SKIPQuery-Postman.png)  
+4. Authorize your Postman with the generated [authentication id](/api-management/Steps-to-user-authentication/) from the AEC Portal in the API section.
+5. Click on the Send option for running the Query Param. The data can be viewed below.
+![SKIPQuery-PostmanOutput](/staticfiles/api-management/media/SKIPQuery-PostmanOutput.png)  
+
+In the above screen, $skip = 25 signifies that the first 25 data which will be skipped, according to the attribute that is marked as Primary.
+
+**Using Skip with OrderBy**
+
+1. Define the API Proxy with valid credentials [steps to do the same](/connectors/OLEDB-Credentials/), copy the generated URL for the GET operation.
+2. Select the Operation as GET in the POSTMAN Environment.
+3. Place the URL with the Query Parameter in the Postman Environment.
+![SKIPQuery-OderBy](/staticfiles/api-management/media/SKIPQuery-OderBy.png)  
+4. Authorize your Postman with the generated [authentication id](/api-management/Steps-to-user-authentication/) from the AEC Portal in the API section.
+5. Click on the Send option for running the Query Param. The data can be viewed below.
+![SKIPQuery-OderByOutput](/staticfiles/api-management/media/SKIPQuery-OderByOutput.png)  
+
+In the above screen, $skip=25&Orderby eq 'city' signifies that the first 25 data(s) will be skipped according 
+to the Orderby condition that is City.
+
+**Protip:** If the attribute is primary enabled and also OrderBy is used, the Skip Operation will use 
+the ORDERBY condition for its process. 
+{: .notice--info}
+
+## Using Action Parameters for PUT Operation
 
 1. After defining the API Proxy with valid credentials against your database, copy the generated URL for the PUT operation.
 2. Select the Operation as PUT in the POSTMAN Environment. 
@@ -90,15 +129,15 @@ as per the business requirement.
 API the user does not have to authorize again except for the cases for Multiple API's**
 
 
-### Using Action Parameter for the POST Operation
+## Using Action Parameter for the POST Operation
 
 1. Copy the generated Proxy URL for the POST operation. Select the operation as POST in the Postman window.  
-![ActionParameter-PostOperation1](/staticfiles/api-management/media/ActionParameter-PostOperation1.png)
+![ActionParameter-PostOperation1](/staticfiles/api-management/media/ActionParameter-PostOperation1.png)  
 2. Place the URL in the POSTMAN along with the Query Params and click SEND.
 3. You can view the Results against the provided Parameter.  
 ![ActionParameter-PostOperation2](/staticfiles/api-management/media/ActionParameter-PostOperation2.png)
 
-### Using Action Parameter for the DELETE Operation
+## Using Action Parameter for the DELETE Operation
 
 1. Like Other operations, the URL generated for the DELETE operation needs to be dropped in the POSTMAN.
 2. Select the operation as DELETE.
