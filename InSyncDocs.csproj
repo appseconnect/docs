@@ -628,6 +628,7 @@
     <Content Include="staticfiles\connectors\media\technology-connector\BasicAuthentation-Validation.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter1.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\databaseschema-GetAction-OLEDB.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input2.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential.png" />
@@ -644,7 +645,13 @@
     <Content Include="staticfiles\connectors\media\technology-connector\Outh2.0Authentation-TokenGeneration.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Outh2.0Authentation-Validation.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Outh2.0Authentation.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\PostOperation-Action.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\PostOperation-Attribute.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\PostOperation-Schema.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\PutOperation-DatabaseSchema.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\PutOperation-PrimaryAttribute.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Save_AppResources.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\touchpoint-getoperationOLEDB.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\Agent-Icon.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\AgentLogin-Screen.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\AgentWizard.png" />

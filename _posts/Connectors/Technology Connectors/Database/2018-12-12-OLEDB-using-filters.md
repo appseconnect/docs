@@ -17,7 +17,7 @@ and steps on how to initialize these filters.
 
 ## Pre-requisites
 * Require Valid APPSeCONNECT account.
-* Create OLEDB Connection. [Steps to create a connection is given here]().
+* Create OLEDB Connection. [Steps to create a connection is given here](/getting-started/).
 * Create Touchpoints for the required connection.
 
 **Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged.**
@@ -65,6 +65,5 @@ Login to the Portal>APP section>Schema of the APP (OLE DB)>View Attributes.
 
 Once the above action configuration is set, you are now ready to run the integration process between the applications.
 
-**PROTIP:** Action filters will only be used for the GET Operation and not for POST and PUT.
-{: .notice--info}.
+**NOTE: Action filters will only be used for the GET Operation and not for POST and PUT**
 
