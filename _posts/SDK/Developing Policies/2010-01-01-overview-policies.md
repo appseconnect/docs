@@ -6,6 +6,7 @@ tag: developers
 menus:
     sdk: 
         icon: fa fa-gg
+        weight: 4
         title: "Policies"
         identifier: overviewsdkpolicies           
 ---

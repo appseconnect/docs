@@ -217,9 +217,11 @@ implementation of ActionFilter parser.
 ```
 
 The above code will allow to generate the request URL for a REST based endpoint, by invoking the AppResource methods 
-directly during parsing. 
+directly during parsing. Every action filter processor needs to be implemented from [`IFilterCommandProcessor`](http://isdn.appseconnect.com/html/3DC976C.htm)
+which has a [`PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which will be called to get an output. For the above code, the output is generated as
+URL querystring, but for other custom parsers, you are free to generate a request structure for your application.
 
-You can see, the [`ActionFilter.PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which lets the adapter developer to generate the 
+You can see, the [`PrepareCommand`](http://isdn.appseconnect.com/html/2CC1AD31.htm) method which lets the adapter developer to generate the 
 structure which lets adapter to execute a REST method. 
 
 In case of Action Filters, the platform automatically detects the methods that needs to be executed. So if you see the ActionParameterValue objects,
@@ -228,7 +230,7 @@ parameter by executing the method.
 
 ### Hooking a Custom Processor
 
-By default, [as identified in the adapters](/sdk/Basic-Implementation), we call the [settings.GetCommandProcessor()](http://isdn.appseconnect.com/html/787CAB4C.htm) to get the processor specific to the request. For custom made action filter parsers, you can call 
+By default, [as identified in the adapters](/sdk/Implementing-adapter-basic-functionalities/), we call the [settings.GetCommandProcessor()](http://isdn.appseconnect.com/html/787CAB4C.htm) to get the processor specific to the request. For custom made action filter parsers, you can call 
 [`BuildRequest`](http://isdn.appseconnect.com/html/57E775B7.htm) to get an instance of the command processor on your code. 
 
 ```csharp
@@ -238,3 +240,68 @@ var request = commandProcessor.PrepareCommand();
 ``` 
 
 The two lines above will let you create an Filter Processor inside your adapter code. 
+
+### Implementing a Converter
+
+Sometimes you want to pass the end result of the transformed response through an API such that you have a hook
+to convert the transformed response before pushing it to the application. To deal with such a scenario, you can pass 
+a [`ICustomConverter`](http://isdn.appseconnect.com/html/4434C816.htm) inside the `Initialize` section of the Adapter (Preferrably you would do it for Get Adapter),
+and update the Default Converter to your custom one. If you do that, after the transformation, you will get the Transformed response
+before you actually pass it to the other end of the application, and thus giving you a unique way to convert certain
+properties of the transformed response. 
+
+```csharp
+
+public class CustomFormatter : ICustomConverter
+{
+    private string _source;
+    public string Source
+    {
+        get
+        {
+            return this._source;
+        }
+        set
+        {
+            this._source = value;
+        }
+    }
+    public ReturnMessage<string> Format()
+    {
+        ReturnMessage<string> retMessage = new ReturnMessage<string>();
+        try
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(this.Source);
+            retMessage.Value = System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+            retMessage.SetSuccess("Reformatted source");
+        }
+        catch(Exception ex)
+        {
+            retMessage.AddException(ex);
+        }
+        return retMessage;
+    }
+ }
+
+```
+
+This is an implementation of Custom converter, which can leverage some of the pitfalls that you want to take 
+care before pusing the data to destination application. 
+
+To hook the new class you need to change the following : 
+
+```csharp
+//Initialize section of IAdapter
+public void Initialize(ApplicationContext context)
+{
+    this._context = context;
+    context.DefaultConverter = new CustomFormatter();
+}
+```
+Once yu hook this to your adapter, the adapter will be called late before the transformed response is pushed to the 
+destination adapter and thereby allowing you to change the content. 
+
+**Protip** 
+This hook is given to you when you cannot handle the certain section of Transformed output and you want to reformat the 
+data before use. It is highly recommended to avoid such scenarios. 
+{: .notice--info}

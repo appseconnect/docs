@@ -6,6 +6,7 @@ tag: developers
 menus:
     sdk: 
         icon: fa fa-gg
+        weight: 2
         title: "Adapters"
         identifier: overviewsdkadapter            
 ---

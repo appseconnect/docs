@@ -6,7 +6,7 @@ category: "SDK"
 menus: 
     sdkpostrequisite:
         title: "Upgrading"
-        weight: 7
+        weight: 8
         icon: fa fa-file-word-o
         identifier: sdkpostrequisiteupgrading
 ---
