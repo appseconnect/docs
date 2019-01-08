@@ -52,7 +52,7 @@ Web API supports the following OData query options:
 
 ## Steps to define Static and dynamic criterias for an API
 
-You can define action parameters for anvarious opertaions of an API. Presently AEC API Management provides 
+You can define action parameters for various operations of an API. Presently AEC API Management provides 
 assigning parameters to the following operations - `GET, PUT, POST & DELETE`.
 
 ## Using Action Filter & Action Parameters for GET operation
