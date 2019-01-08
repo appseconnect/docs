@@ -491,11 +491,16 @@
         var item = $($(this).attr("href"));
         if (item.length) { return item; }
     });
-    $("#sidebarMenu").on('changed.jstree', function (e, data) {
-        if (data.action == 'select_node') {
-            location.href = data.node.a_attr.href;
-        }
-    }).jstree();
+    $("#sidebarMenu")
+        .on('changed.jstree', function (e, data) {
+            if (data.action == 'select_node') {
+                location.href = data.node.a_attr.href;
+            }
+        })
+        .on('loaded.jstree', function () {
+            var node = $('#dashboardTree').jstree(true).find('[data-url="' + location.pathname +'"]');
+            $('#sidebarMenu').jstree('select_node', node.id); 
+        }).jstree();
     var onScrollCallback = function () {
         debugger;
         // Get container scroll position

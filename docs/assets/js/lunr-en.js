@@ -800,7 +800,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Creating Swagger Documentation",
+      title: "Create Swagger Documentation",
       excerpt: "Swagger is an Open Source Framework for the documentation of API. Swagger is a tools which enables you to generate,...",
       categories: ["API-Management"],
       tags: ["developers"],
@@ -1017,7 +1017,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Using Filters for Integration",
-      excerpt: "\n",
+      excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation. This section...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 111
@@ -2063,7 +2063,7 @@ var store = [
     
       
       {
-        "title": "Creating Swagger Documentation",
+        "title": "Create Swagger Documentation",
         "url": "/api-management/steps-to-create-swagger-documentation/",
         "excerpt": "Swagger is an Open Source Framework for the documentation of API. Swagger is a tools which enables you to generate,...",
         "teaser":
@@ -2329,7 +2329,7 @@ var store = [
       {
         "title": "Using Filters for Integration",
         "url": "/connectors/OLEDB-using-filters/",
-        "excerpt": "\n",
+        "excerpt": "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation. This section...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
