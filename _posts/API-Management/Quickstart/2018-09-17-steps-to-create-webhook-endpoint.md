@@ -34,9 +34,9 @@ As per requirement, before you start creating a new API Proxy, you need to make 
 prerequisites. Here are some of them : 
 
 1. [Getting a new account for APPSeCONNECT](/home/)
-2. [Configuring your Enviornment](/deployment/Enviornment-Overview/)
+2. [Configuring your Environment](/deployment/Enviornment-Overview/)
 3. [Choosing Apps or Adding Apps](/getting-started/#choosing-application)
-4. [Importing schemas and actions of an Application]()
+4. [Importing schemas and actions of an Application](/getting-started/)
 5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Credentials/)
 5. [Creating a Connection](/getting-started/#creating-connection--executing-the-touchpoint)
 
@@ -54,7 +54,7 @@ depicting Proxy, select the section to navigate to it.
 * Inside **APIManagementSection** you can see Webhooks and Proxy.`By default Webhook section will be
    shown`. You can see all your connections listed here.
 
-* If you do not have a registered URL with **APPSeCONNECT** you have to [Register a URL]() for your organization.
+* If you do not have a registered URL with **APPSeCONNECT** you have to [Register a URL](/api-management/Steps-to-register-url/) for your organization.
 
   ## Create A Real Time API :
 

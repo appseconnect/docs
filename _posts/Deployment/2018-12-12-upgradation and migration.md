@@ -27,14 +27,12 @@ The following window appears.
 
 ![MIgrationTool-Snapshot](/staticfiles/deployment/media/Migration/MIgrationTool-Snapshot.png)
 
-**NOTE** 
-             1) Select the checkbox of **Clear Connection** if you want to remove the existing connection credentials.
-
-           2) **Migrate All TimeStamp** will migrate all the data's including the Success, Failure, unprocessed, skipped that was present
-                in the Resync Buckets.
-
-           3) **Migrate Non-Success** TimeStamp will migrate only the data's that is Unprocessed, Skipped, Failure present in the
-                Resync Buckets. 
+**NOTE: 
+        1) Select the checkbox of `Clear Connection` if you want to remove the existing connection credentials.  
+        2) `Migrate All TimeStamp` will migrate all the data's including the Success, Failure, unprocessed, skipped that was present
+            in the Resync Buckets.  
+        3) `Migrate Non-Success TimeStamp` will migrate only the data's that is Unprocessed, Skipped, Failure present in the
+                Resync Buckets.**
             
 
 
@@ -52,6 +50,5 @@ The following window appears.
 
 * Follow **Update Configuration, Update Adapters,Update Value Map** from agent setting options.
 
-**Protip:** Doing this removes existing adapter data and configuration from your agent. Hence after Upgrading and opening Agent, you will see a blank page in the Agent.
-            Update your adapters and configuration before proceeding with any other processes for an agent 
-            {: .notice--info}.
+**Note: Doing this removes existing adapter data and configuration from your agent. Hence after Upgrading and opening Agent, you will see a blank page in the Agent.
+Update your adapters and configuration before proceeding with any other processes for an agent**

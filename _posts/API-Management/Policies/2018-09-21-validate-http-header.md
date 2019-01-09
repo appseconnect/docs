@@ -6,7 +6,7 @@ category: "API-Management"
 menus: 
     policies:
         icon: fa fa-cogs
-        title: "Invalidate Http Headers" 
+        title: "Validate Http Headers" 
 ---
 **Validate HTTP Header** policy inspects each HTTP Request whether the HTTP Request contains a particular 
 Request Header or a specified Header value matches with some predefined value. If the incoming request

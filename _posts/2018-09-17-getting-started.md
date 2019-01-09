@@ -41,18 +41,18 @@ In the Personal Info tab, you can edit your name, mobile number.
 * Click  **Change Avatar** to change your Profile picture.
 * Click **Change Password** to change the password and set your new password.
 * The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
-* The **Security Setting** enables you to handle all the security related settings like password expiry time set, account decativation and updating encryption policy. 
+* The **Security Setting** enables you to handle all the security related settings like password expiry time set, account deactivation and updating encryption policy. 
 
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
 
 
 # CONFIGURING APPSeCONNECT 
-This section gives the overall idea about chhosing application, configuring connection, ennviornment setup and execution of the sync process. Step by Step direction is given below:
+This section gives the overall idea about chhosing application, configuring connection, environment setup and execution of the sync process. Step by Step direction is given below:
 Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details.
 
 ## Choosing Application
 ##  Process of Choosing App 
-1. Choose App option enables you to choose app from the list of prebuilt apps on the portal.
+1. Choose App option enables you to choose app from the list of prepackaged apps on the portal.
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
 3. The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
@@ -105,9 +105,8 @@ The newly created app, can be viewed in the app listing section.
 ![CustomApp-Extension](/staticfiles/root/media/CustomApp-Extension.png)  
 8. The Upload adapter will allow either selecting generic adapter or upload adapter file specifically.
 
-**ProTip:**
-1. If the generic protocol is selected which already have an adapter specified, this section will show that adapter is already selected and only allow extension upload. 
-2. If the generic protocol does not have adapter uploaded, the upload adapter option will be enabled.
+**ProTip:** 1. If the generic protocol is selected which already have an adapter specified, this section will show that adapter is already selected and only allow extension upload. 
+            2. If the generic protocol does not have adapter uploaded, the upload adapter option will be enabled.
 {: .notice--info}
 
   * Select Adapter provides you the option to select Adapter from the list
@@ -132,9 +131,9 @@ The steps are given below:
 1. Go to My Apps section> Choose App> Create Technology App. Click on the drop-down icon and select Create Technology APP.
 ![TechnologyApp-Creation](/staticfiles/root/media/TechnologyApp-Creation.png)
 2. In the screen, Provide the **APP NAME and DESCRIPTION**, Choose the **Adapter Technology** and click SAVE.  
-![TechnologyAppCreationScreen2](/staticfiles/root/media/TechnologyAppCreationScreen2.png)
+![TechnologyApp-Creation-Screen2](/staticfiles/root/media/TechnologyApp-Creation-Screen2.png)
 3. Now you can view the technology application name, successfully added to your List of APPLICATIONS with a default Image. 
-![TechnologyAppCreationScreen3](/staticfiles/root/media/TechnologyAppCreationScreen3.png)
+![TechnologyApp-Creation-Screen3](/staticfiles/root/media/TechnologyApp-Creation-Screen3.png)
 4. You can edit and add image to your app anytime, by clicking on the VIEW button beside the application name.
 
 **Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FT. 
@@ -250,7 +249,7 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
  ![DashboardScreen](/staticfiles/root/media/DashboardScreen.PNG)
  2. Run the setup folder to install the Agent in the system.
  3. Open the installed Agent on your machine.
- 4. Login to the agent with your portal credentials.
+ 4. Login to the agent with your portal credentials.  
    ![Login1](/staticfiles/root/media/Login1.PNG)
  5. There are four icons as shown below:
 * The home icon shows the connections in the project.

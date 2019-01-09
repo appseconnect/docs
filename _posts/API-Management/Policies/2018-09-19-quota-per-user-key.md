@@ -13,23 +13,19 @@ getting somehow spammed, the policy will automatically detect it and update the 
 API rate limit can be set up by the developer for a specified time period and when the policy is
 triggered for a specific call, the caller will receive `429 - Throttling Maximum sending rate exceeded` as response status code.
 
-**ProTip:** Policy can only be used once per API configuration.  
-{: .notice--info}.
+**NOTE: Policy can only be used once per API configuration**   
 
 ### Policy Statement
 
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
 Below are the list of configurations required for this policy. 
-
-Sequence - The order of your policies applied/you want this policy to run.
-
 ![Ip Restrict Policy](/staticfiles/api-management/media/ip-restrict-policy.PNG)
 
 The rules and setup needs to be made accordingly. 
 
 |Name|Description|Is Mandatory|Default Value|
 |-----------|--------------------|----------|----------|
-|Sequence|In which order of your policies applied, you want this policy to run|No|Null|
+|Sequence|The order of your policies applied/you want this policy to run|No|Null|
 |Span of time|Represent the amount of timespan required after which the requests from that particular user will automatically throttle.The Time limit is defined in MINUTES|No|Empty|
 |Maximum no. of Requests|The maximum number of request, the user needs to prevent within the specified time|No|Empty|
 

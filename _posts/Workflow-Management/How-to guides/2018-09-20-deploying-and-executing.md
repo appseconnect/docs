@@ -1,5 +1,5 @@
 ---
-title: "Deploying a workflow and executing it"
+title: "Deploying & Executing workflows"
 toc: true
 tag: developers
 category: "Workflow" 
@@ -7,7 +7,7 @@ menus:
     workflow:
         icon: fa fa-link
         weight: 4
-        title: "Deploying and Executing" 
+        title: "Deploying & Executing workflows"
         identifier: deployworkflow 
 
 ---

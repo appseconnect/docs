@@ -21,8 +21,8 @@ of the workflow and the latest listing is visible on the upper section of the li
 
 ## Pre-Requisites of Listing of Snapshot for a Workflow
 
-1. All the Pre-requisites to workflow execution has to be met. [Clickhere](/workflow/steps-to-choose-your-workflow/)
-2. Agent should be Primary (as Unlicensed agents will malfunction due to the non- connectivity between SignalR & Agent)
+1. All the Pre-requisites to workflow execution has to be met. [Click here](/workflow/steps-to-create-your-first-workflow/)
+2. Agent should be Primary (as Unlicense agents will malfunction due to the non- connectivity between SignalR & Agent)
 3. Autosync of the Agent should be `ON` (To trigger the workflow in the agent)
 
 
@@ -31,7 +31,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 1. List of Snapshot is present on the upper section of the workflow screen as shown below:
 ![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.PNG)
 2. Click on the `Snapshot`button and the following execution of workflow data will be fetched.
-![workflowexe-snapshot](/staticfiles/workflow-management/media/workflowexe-snapshot.png)
+![workflowexe-snapshot](/staticfiles/workflow-management/media/workflowexe-snapshot.png)  
 The execution screen contains the following details of the workflow snapshot
 * Execution Timestamp: This indicates the date, start and end time of the workflow.
 * Time Taken: This is the time taken for executing the workflow.

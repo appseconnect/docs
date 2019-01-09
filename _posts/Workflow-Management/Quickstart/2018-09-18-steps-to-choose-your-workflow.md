@@ -20,8 +20,7 @@ An implementer can now be able to use the `CHOOSE WORKFLOW` feature in the APPSe
 * You can view existing workflows or can create workflow in your workflow panel.
 * Choose a pre-packaged  workflow, and a Connection specific request pops-up in case of multiple existing pre-packaged App Connection.
 
-## Steps to choosing Workflow in Organization
-
+## Steps to choosing Workflow in your workpanel
 1. Login to your APPSeCONNECT Portal with valid credentials.
 2. Click on the Workflow module and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in  your workflow panel. For a new user, you can
    [create a workflow](/workflow/steps-to-create-your-first-workflow/).
@@ -37,6 +36,6 @@ for which connection you want the workflow to get activated.
 6.  Click Save the Workflow gets added to the organisation workflow panel.
 
 **Protip:** On adding the base workflow in the organisation, the added workflow disappears from the Choose Workflow List. 
-   Deleting the workflow, the workflow name re-appears in the list
-  {: .notice--info}
+Deleting the workflow, the workflow name re-appears in the list
+{: .notice--info}
 

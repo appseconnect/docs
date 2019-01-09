@@ -17,16 +17,21 @@ and steps on how to initialize these filters.
 
 ## Pre-requisites
 * Require Valid APPSeCONNECT account.
-* Create OLEDB Connection. [Steps to create a connection is given here](/getting-started/).
+* Create OLEDB Connection & [validate the connection](/connectors/OLEDB-Credentials/).
 * Create Touchpoints for the required connection.
 
-**Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged.**
+**Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged**
 
 ## Operations
 
-### For GET Operation:
-1.	After creating touchpoint, click on the Filters icon on the touchpoint that is to be GET Operated.
-![Touchpoint Getoperation O L E D B](/staticfiles/connectors/media/technology-connector/touchpoint-getoperationOLEDB.png)
+### For GET Operation
+The GET Operation is for fetching data from OLEDB. The configuration for the GET Operation is needed to be done in the Schema level of the OLEDB Application. 
+The path way for configuring GET in Schema level is
+Login to the Portal -APP section-Schema of the APP (OLE DB).
+1.	A Schema is to be created (similar to the Table name) to which you have to add data. The Below Window shows the Schema for the OLEDB App.
+![Schema Get Operation O L E D B](/staticfiles/connectors/media/technology-connector/Schema-GetOperation-OLEDB.png)
+2.  Expand the Schema and Click on the `ADD ACTION` button. The Database Schema Window opens.
+![Database Schema Get Operation O L E D B](/staticfiles/connectors/media/technology-connector/DatabaseSchema-GetOperation-OLEDB.png)
 2.  In the Database Schema Window, The Action Name for the GET operation should be SELECT.
 3.	The Query section should be provided with the ACTION FILTER that is to be provided in the 
     SQL Syntax as shown below. Click on SAVE after specifying the Action Filter.
@@ -34,7 +39,7 @@ and steps on how to initialize these filters.
 
 **Note: Action Filters is needed to be given in SQL Syntax**
 
-### For POST Operation:
+### For POST Operation
 The POST Operation is for adding data to OLEDB. The configuration for the POST is to be done in the Schema level of the OLEDB Application. 
 The steps for configuring POST in Schema level is given below:
 

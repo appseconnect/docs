@@ -17,11 +17,11 @@ non-standard API endpoint, it might be dependent on some OnPremise environmental
 an Technology connect present in APPSeCONNECT platform, in all these scenarios, you are left with defining a completely new connect to the application
 yourself. 
 
-To start developing a custom connector, first thing you need is to [define an application on our portal](). Once your application is defined, you will need to [install the pre-requisites]() required
+To start developing a custom connector, first thing you need is to [define an application on our portal](/getting-started/). Once your application is defined, you will need to install the pre-requisites required
 to develop the connector. We provide standard [software development kit (SDK)](http://isdn.appseconnect.com/) which will help in developing the adapter.
 
 The adapter development requires specific understanding on .NET based standard languages like (C# or VB.NET) which is used to 
-[develop the adapter]() connecting to the data sources for the application. Once the adapter development is complete, you can upload the adapter file 
+[develop the adapter](/sdk/overview-adapters/) connecting to the data sources for the application. Once the adapter development is complete, you can upload the adapter file 
 along with all the dependent files to start the connection. In case your application is hosted over cloud, you might also need to 
 define Credential window using Credential designer such that you can define the credential for cloud hosted solution.
 
