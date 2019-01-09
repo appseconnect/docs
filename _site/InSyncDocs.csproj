@@ -641,6 +641,7 @@
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter1.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\databaseschema-GetAction-OLEDB.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\DatabaseSchema-GetOperation-OLEDB.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input2.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential.png" />
@@ -663,6 +664,7 @@
     <Content Include="staticfiles\connectors\media\technology-connector\PutOperation-DatabaseSchema.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\PutOperation-PrimaryAttribute.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Save_AppResources.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\Schema-GetOperation-OLEDB.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\touchpoint-getoperationOLEDB.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\Agent-Icon.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\AgentLogin-Screen.png" />

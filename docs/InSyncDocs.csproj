@@ -600,6 +600,7 @@
     <Content Include="staticfiles\api-management\media\ActionFilter-ActionParameter.png" />
     <Content Include="staticfiles\api-management\media\ActionFilter-ActionParameter1.png" />
     <Content Include="staticfiles\api-management\media\ActionFilter-ActionParameter2.png" />
+    <Content Include="staticfiles\api-management\media\ActionFilter-Edit.png" />
     <Content Include="staticfiles\api-management\media\ActionParameter-DeleteOperation1.png" />
     <Content Include="staticfiles\api-management\media\ActionParameter-DeleteOperation2.png" />
     <Content Include="staticfiles\api-management\media\ActionParameter-PostOperation1.png" />
@@ -616,6 +617,17 @@
     <Content Include="staticfiles\api-management\media\authentication-re-generation.png" />
     <Content Include="staticfiles\api-management\media\cors-policy.PNG" />
     <Content Include="staticfiles\api-management\media\execute-button-swagger.png" />
+    <Content Include="staticfiles\api-management\media\register-url-org1.PNG" />
+    <Content Include="staticfiles\api-management\media\response-setup-Proxy1.png" />
+    <Content Include="staticfiles\api-management\media\response-setup-Proxy2.png" />
+    <Content Include="staticfiles\api-management\media\response-setup-Proxy3.png" />
+    <Content Include="staticfiles\api-management\media\ResponseContent-TypeCoverionPolicy.png" />
+    <Content Include="staticfiles\api-management\media\SchemaAction-Edit.png" />
+    <Content Include="staticfiles\api-management\media\SKIP-PrimaryKey-Enabled.png" />
+    <Content Include="staticfiles\api-management\media\SKIPQuery-OderBy.png" />
+    <Content Include="staticfiles\api-management\media\SKIPQuery-OderByOutput.png" />
+    <Content Include="staticfiles\api-management\media\SKIPQuery-Postman.png" />
+    <Content Include="staticfiles\api-management\media\SKIPQuery-PostmanOutput.png" />
     <Content Include="staticfiles\api-management\media\swagger-authorization.png" />
     <Content Include="staticfiles\api-management\media\swagger-parameter-execution.png" />
     <Content Include="staticfiles\api-management\media\swagger-response.png" />
@@ -629,6 +641,7 @@
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter1.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\databaseschema-GetAction-OLEDB.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\DatabaseSchema-GetOperation-OLEDB.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential-Input2.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Oledb-Cloud-Credential.png" />
@@ -651,6 +664,7 @@
     <Content Include="staticfiles\connectors\media\technology-connector\PutOperation-DatabaseSchema.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\PutOperation-PrimaryAttribute.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\Save_AppResources.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\Schema-GetOperation-OLEDB.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\touchpoint-getoperationOLEDB.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\Agent-Icon.png" />
     <Content Include="staticfiles\deployment\media\AgentConfig\AgentLogin-Screen.png" />
@@ -1045,7 +1059,6 @@
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />
     <None Include="_posts\Workflow-Management\2018-10-11-faqs.md" />
     <None Include="_posts\Workflow-Management\2018-10-13-Troubleshooting.md" />
-    <None Include="_posts\Workflow-Management\How-to guides\2018-08-20-choosing-apps-for-integration.md" />
     <None Include="_posts\Workflow-Management\How-to guides\2018-09-20-deploying-and-executing.md" />
     <None Include="_posts\Workflow-Management\How-to guides\2018-09-20-list-of-snapshot.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-20-workflow-nodes-and-links.md" />

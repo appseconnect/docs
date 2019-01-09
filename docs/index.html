@@ -278,11 +278,11 @@
         
             <li><a href="/sdk" title="SDK"><span>SDK</span></a></li>
         
-            <li><a href="/workflow" title="Workflow"><span>Workflow</span></a></li>
-        
             <li><a href="/api-management" title="API-Management"><span>API-Management</span></a></li>
         
             <li><a href="/transformation" title="Transformation"><span>Transformation</span></a></li>
+        
+            <li><a href="/workflow" title="Workflow"><span>Workflow</span></a></li>
         
             <li><a href="/deployment" title="Deployment"><span>Deployment</span></a></li>
         
@@ -657,6 +657,8 @@
         }, function (request) {
             $('.page').html(request.responseText);
         });
+
+        return false;
     }
     function showMenu(o) {
 
