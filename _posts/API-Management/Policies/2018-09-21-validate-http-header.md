@@ -9,7 +9,7 @@ menus:
         title: "Validate Http Headers" 
 ---
 **Validate HTTP Header** policy inspects each HTTP Request whether the HTTP Request contains a particular 
-Request Header or a specified Header value matches with some predefined value. If the incoming request
+Request Header and the corresponding Header value. If the incoming request
 does not match with the criteria set by the policy configuration then the request is immediately 
 rejected.
 

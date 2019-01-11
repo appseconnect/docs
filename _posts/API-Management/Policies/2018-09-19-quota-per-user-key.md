@@ -8,12 +8,12 @@ menus:
         icon: fa fa-cogs
         title: "Throttling policy" 
 ---
-Throttling policy prevents an API usage spikes on per user basis, such that if the same API is 
+Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is 
 getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
 API rate limit can be set up by the developer for a specified time period and when the policy is
 triggered for a specific call, the caller will receive `429 - Throttling Maximum sending rate exceeded` as response status code.
 
-**NOTE: Policy can only be used once per API configuration**   
+**NOTE: a Policy can be applied more than once within an API but only once within an API version.**   
 
 ### Policy Statement
 

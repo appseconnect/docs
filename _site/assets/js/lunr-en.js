@@ -378,7 +378,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Throttling policy",
-      excerpt: "Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow...",
+      excerpt: "Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is getting...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 40
@@ -468,7 +468,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Validate http headers policy",
-      excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+      excerpt: "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header and the corresponding...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 50
@@ -1539,7 +1539,7 @@ var store = [
       {
         "title": "Throttling policy",
         "url": "/api-management/quota-per-user-key/",
-        "excerpt": "Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow...",
+        "excerpt": "Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is getting...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -1649,7 +1649,7 @@ var store = [
       {
         "title": "Validate http headers policy",
         "url": "/api-management/validate-http-header/",
-        "excerpt": "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header or a specified...",
+        "excerpt": "Validate HTTP Header policy inspects each HTTP Request whether the HTTP Request contains a particular Request Header and the corresponding...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
