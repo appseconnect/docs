@@ -1243,7 +1243,7 @@ the APIs on daily basis. It is important to protect your APIs from attacks.</p>
 
 <h3 id="appseconnect-api-management">APPSeCONNECT API Management</h3>
 
-<p>APPSeCONNECT being an <a href="/docs/architecture">API management platform</a> allows to create, manage, deploy, maintain APIs for an organization
+<p>APPSeCONNECT being an <a href="/api-management/architecture-design-runtime/">API management platform</a> allows to create, manage, deploy, maintain APIs for an organization
 such that the APIs can be easily tracked inside the organization. Let us look how to create or manage API management 
 inside APPSeCONNECT platform.</p>
 
@@ -1252,7 +1252,7 @@ inside APPSeCONNECT platform.</p>
 <p>To create an API at the first place, there are a number of things you require,</p>
 
 <ul>
-  <li>You need an Active <a href="/appseconnect/home/">APPSeCONNECT Account</a>. Go to Home Page for login details</li>
+  <li>You need an Active APPSeCONNECT Account. Go to <a href="/home/">Home Page</a> for login details</li>
   <li>You need to know all the data sources that are used for the APIs.</li>
   <li>You need to <a href="/api-management/choosing-backend-apps/">create or configure APPS</a> on the platform.</li>
 </ul>
@@ -1260,19 +1260,17 @@ inside APPSeCONNECT platform.</p>
 <h4 id="registering-an-url">Registering an URL</h4>
 
 <p>Once all the prerequisites are installed and configured correctly, the first thing that you need to do, is to register your 
-API endpoint URL. To register an url,</p>
+API endpoint URL. <a href="/api-management/Steps-to-register-url/">To register an url</a>,</p>
 
 <ol>
-  <li>Login to <a href="/appseconnect/home/">APPSeCONNECT Portal</a>. Go to Home Page for login details</li>
+  <li>Login to <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">APPSeCONNECT Portal</a>. Go to <a href="/home/">Home Page</a> for login details</li>
   <li>Go to API management from the sidebar.</li>
   <li>Select <code class="highlighter-rouge">Register URL</code>.</li>
-  <li>A popup window will open which will allow user to select a particular API <code class="highlighter-rouge">URL</code>(Uniform Resource Locator).</li>
+  <li>A popup window will open where you will provide the API <code class="highlighter-rouge">URL</code>(Uniform Resource Locator).
+<img src="/staticfiles/api-management/media/register-url-org.PNG" alt="Register Url Org" /></li>
 </ol>
 
-<p><img src="/staticfiles/api-management/media/register-url-org.PNG" alt="Register Url Org" /></p>
-
-<p>All the details get populated in the window. Select the License type from the drop down list</p>
-
+<p>Input the details in the window and Select the License type from the drop down list.</p>
 <ul>
   <li>Apache License 2.0 - The Apache License Version 2.0 requires security of the copyright notice and disclaimer.</li>
   <li>BSD 3-Clause Revised License - Prohibits others from using the name of the contributors to stimulate 
@@ -1287,39 +1285,37 @@ with the software which includes the BSD copyright notice in it.</li>
 
 <p>The registered base url for the organization will be at https://[registrationkey].appseconnectapi.com. Once a base url is registered
 for the organization, you are ready to implement your first API on the platform.</p>
+
+<p><strong>NOTE: <code class="highlighter-rouge">Register URL is unique</code> to an API and once you have registered the URL, the same URL cannot be registered again</strong></p>
 <ol>
-  <li>
-    <p>To create a new API, you have two option :</p>
-
-    <p>i. Create a Webhook Endpoint (Webhooks are generally POST URLs without Authentication)</p>
-
-    <p>ii. Create Proxy Endpoint</p>
-  </li>
+  <li>To create a new API, you have two option : 
+ i. Create a Webhook Endpoint (Webhooks are generally POST URLs without Authentication)
+ ii. Create Proxy Endpoint</li>
 </ol>
 
-<p>In this article we will look primarly on Proxy APIs, which allows to create a full fledged 
-API connecting to a specific backend application.</p>
+<p>In this article we will look primarly on Proxy APIs, which allows to create a full fledged API connecting to a specific backend application.</p>
 
 <h4 id="configuring-authentication-server">Configuring Authentication Server</h4>
 
 <p>To configure authentication server, click on <code class="highlighter-rouge">Authentication</code> button from top menu, a new popup
-appears which will allow you to generate Client Id and Client Secrets.</p>
+appears which will allow you to generate Client Id and Client Secrets.<br />
+<img src="/staticfiles/api-management/media/authentication-genarate-api-key.PNG" alt="Authentication Genarate Api Key" /></p>
 
-<p><img src="/staticfiles/api-management/media/authentication-genarate-api-key.PNG" alt="Authentication Genarate Api Key" /></p>
+<p>In the popup, you are supposed to select a particular user for which you want to generate Client ID &amp; Client Secret . 
+As per <code class="highlighter-rouge">Basic authentication standard</code> you are supposed to provide <code class="highlighter-rouge">Authorization</code> header to every request. 
+Each API will be validated to its users and a separate log will be created. 
+When authoirization is failed, it will return <code class="highlighter-rouge">401 Unauthorized error</code> response.</p>
 
-<p>In the popup, you are supposed to select a particular user for which you want to generate an API key. As per <code class="highlighter-rouge">Basic</code> authentication standard
-you are supposed to provide <code class="highlighter-rouge">Authorization</code> header to every request. Each API will be validated to its users and 
-a separate log will be created. When authoirization is failed, it will return <code class="highlighter-rouge">403 Forbidden</code> response.</p>
+<p>Currently, AEC API is supporting only <strong>Basic Authentication</strong>.</p>
 
 <h4 id="frontend-configuration">Frontend configuration</h4>
 
-<p>To create a new API, first you need to select <code class="highlighter-rouge">Create API</code> button from the Proxy screen. A new popup will open which will allow user to 
+<p>To create a new API, first you need to select <code class="highlighter-rouge">Create API</code> button from the <a href="/api-management/steps-to-create-proxy-endpoint/">Proxy screen</a>. A new popup will open which will allow user to 
 create a new API through a wizard.</p>
 
 <p>The Wizard starts with Basic Information screen which corresponds to the Frontend of the application. This section allows the organization to define
-the API url endpoint, the description, the HTTP Method, Versioning, etc.</p>
-
-<p><img src="/staticfiles/api-management/media/api-frontend-configuration.PNG" alt="Api Frontend Configuration" /></p>
+the API url endpoint, the description, the HTTP Method, Versioning, etc. 
+<img src="/staticfiles/api-management/media/api-frontend-configuration.PNG" alt="Api Frontend Configuration" /></p>
 
 <p>The URL generated for the API will be shown while data is created.</p>
 
@@ -1332,9 +1328,9 @@ of policies that can be applied to the <code class="highlighter-rouge">APPSeCONN
 <ul>
   <li><a href="/api-management/ip-restrict/">IP Restrict Policy</a></li>
   <li><a href="/api-management/quota-per-user-key/">Throttling</a></li>
-  <li><a href="/api-management/validate-http-header/">Invalidate HTTP Request Header Policy</a></li>
+  <li><a href="/api-management/validate-http-header/">Validate HTTP Request Header Policy</a></li>
   <li><a href="/api-management/compression-apply/">Compress Response Policy</a></li>
-  <li><a href="/api-management/response-content-format-Copy/">Response Content Format Transformation Policy</a></li>
+  <li><a href="/api-management/response-content-format/">Response Content Type Conversion Policy</a></li>
 </ul>
 
 <h4 id="configuring-backend">Configuring Backend</h4>
@@ -1343,8 +1339,8 @@ of policies that can be applied to the <code class="highlighter-rouge">APPSeCONN
 consider whether the proper data source is picked up or not. To consider picking up correct resource you have two options</p>
 
 <ul>
-  <li><a href="/docs/api">Choosing Backend Application from Pre-packaged Apps</a></li>
-  <li><a href="/docs/api">Creating new backend application connecting your data source</a></li>
+  <li><a href="/api-management/choosing-backend-apps/">Choosing Backend Application from Pre-packaged Apps</a></li>
+  <li><a href="/api-management/connecting-to-a-data-source/">Creating new backend application connecting your data source</a></li>
 </ul>
 
 <p>Once the backend is properly selected, you can pick it for your API.</p>
@@ -1352,8 +1348,8 @@ consider whether the proper data source is picked up or not. To consider picking
 <p><img src="/staticfiles/api-management/media/api-backend-configuration.PNG" alt="Api Backend Configuration" /></p>
 
 <p>When dealing with backends, it is also important to consider how you will put credentials for the application. To ensure you properly
-pick the credential make sure you have <a href="/api-management/deployments-and-environments/">configured the environments</a> correctly and also 
-provided credentials for the applications created.</p>
+pick the credential make sure you have <a href="/deployment/Deployment-Configuration/">configured the environments</a> correctly and also 
+provided <a href="/connectors/OLEDB-Credentials/">credentials for the applications</a> created.</p>
 
 <h3 id="response-configuration">Response Configuration</h3>
 
@@ -1374,7 +1370,7 @@ you decide the suitable APIs which suits your business need.</p>
 
 <p>Let us suppose you have a legacy database system that collects and collates data from various existing systems,
 and remains on a central location as archive providing various validation and data intellegence requirements. 
-<a href="/docs/">Read More</a></p>
+<a href="/api-management/deployments-and-environments/">Read More</a></p>
 
 <h3 id="proxy-for-existing-web-api">Proxy for existing Web API</h3>
 
@@ -1387,8 +1383,7 @@ to the backend services, generalize the filters and messages etc.
 
 <p>Files are sometimes less prone to be exposed to the Web as API. Since, if you expose the file
 to the external world, the consumers would tend to download or upload the whole file at go, and 
-you as a owner of the file would be having less power to change your content.
-<a href="/docs/">Read More</a></p>
+you as a owner of the file would be having less power to change your content.</p>
 
 
                 

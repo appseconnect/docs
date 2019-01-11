@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow spammed, the policy will automatically detect it and update the response accordingly. The API rate limit can be set up by the developer for a specified time period and when the policy istriggered for a specific call, the caller will receive 429 - Throttling Maximum sending rate exceeded as response status code.">
+<meta name="description" content="Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is getting somehow spammed, the policy will automatically detect it and update the response accordingly. The API rate limit can be set up by the developer for a specified time period and when the policy istriggered for a specific call, the caller will receive 429 - Throttling Maximum sending rate exceeded as response status code.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow spammed, the policy will automatically detect it and update the response accordingly. The API rate limit can be set up by the developer for a specified time period and when the policy istriggered for a specific call, the caller will receive 429 - Throttling Maximum sending rate exceeded as response status code.">
+  <meta property="og:description" content="Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is getting somehow spammed, the policy will automatically detect it and update the response accordingly. The API rate limit can be set up by the developer for a specified time period and when the policy istriggered for a specific call, the caller will receive 429 - Throttling Maximum sending rate exceeded as response status code.">
 
 
 
@@ -1079,7 +1079,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Throttling policy">
-        <meta itemprop="description" content="Throttling policy prevents an API usage spikes on per user basis, such that if the same API is getting somehow spammed, the policy will automatically detect it and update the response accordingly. The API rate limit can be set up by the developer for a specified time period and when the policy istriggered for a specific call, the caller will receive 429 - Throttling Maximum sending rate exceeded as response status code.">
+        <meta itemprop="description" content="Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is getting somehow spammed, the policy will automatically detect it and update the response accordingly. The API rate limit can be set up by the developer for a specified time period and when the policy istriggered for a specific call, the caller will receive 429 - Throttling Maximum sending rate exceeded as response status code.">
         <meta itemprop="datePublished" content="September 19, 2018">
         
 
@@ -1168,12 +1168,12 @@
                     </nav>
                 </aside>
                 
-                <p>Throttling policy prevents an API usage spikes on per user basis, such that if the same API is 
+                <p>Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is 
 getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
 API rate limit can be set up by the developer for a specified time period and when the policy is
 triggered for a specific call, the caller will receive <code class="highlighter-rouge">429 - Throttling Maximum sending rate exceeded</code> as response status code.</p>
 
-<p><strong>NOTE: Policy can only be used once per API configuration</strong></p>
+<p><strong>NOTE: a Policy can be applied more than once within an API but only once within an API version.</strong></p>
 
 <h3 id="policy-statement">Policy Statement</h3>
 
