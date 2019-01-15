@@ -18,16 +18,13 @@ Mapping in APPSeCONNECT is done so that a Source Application can communicate wit
 
 ## Mapping Levels
 
-Mapping is done at various level of Input Packet. Refer [here](/transformation/define-source-destination-transformation/)
-
+Mapping is done at various level of Input Packet. Refer [here](/transformation/define-source-destination-transformation/)  
 ### Mapping at Attribute Level
 
-The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.
-
+The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.  
 ![Attributelevel-Mapping](/staticfiles/transformation/media/Attributelevel-Mapping.png)
 
-The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.
-
+The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.  
 ![Attributelevel-AddCondition](/staticfiles/transformation/media/Attributelevel-AddCondition.png)
 
 **Note: The user can add conditions (Else-If & Else) inside an IF Node similarly as shown in the screen below, except for the FOR-EACH LOOP LEVEL.**
@@ -42,9 +39,8 @@ And for the Otherwise (ELSE)Node,the given clause will be carried out.
 
 Refer the screen given below:
 
-![Attributelevel-ConditionView](/staticfiles/transformation/media/Attributelevel-ConditionView.png)
-
-The User can also add Else-If and Else(Otherwise) and its clauses in the attribute Level. The following screen shows the Condition add for If-Else.
+![Attributelevel-ConditionView](/staticfiles/transformation/media/Attributelevel-ConditionView.png)  
+The User can also add Else-If and Else(Otherwise) and its clauses in the attribute Level. The following screen shows the Condition add for If-Else.  
 
 ![Attributelevel-Else](/staticfiles/transformation/media/Attributelevel-Else.png)
 
@@ -52,7 +48,7 @@ The User can also add Else-If and Else(Otherwise) and its clauses in the attribu
 
 ### Mapping at Loop Level
 
-The `If Mapping can be done at the For-Each Loop level`. Below is the screen which shows the **If Mapping** at the For-Each Loop Level.
+The `If Mapping can be done at the For-Each Loop level`. Below is the screen which shows the **If Mapping** at the For-Each Loop Level.  
 
 ![LoopLevel-Mapping](/staticfiles/transformation/media/LoopLevel-Mapping.png)
 
@@ -62,7 +58,7 @@ The `If Mapping can be done at the For-Each Loop level`. Below is the screen whi
 ### Mapping at Complex Object Level
 
 The user/implementer can work on the If-Else Mapping in the complex object level. 
-Below is the Screen which shows the If-Else Mapping at the complex object level.
+Below is the Screen which shows the If-Else Mapping at the complex object level.  
 
 ![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObject-Mapping.png)
 
@@ -70,10 +66,9 @@ Like other levels, the user can add Else-If and Otherwise and its conditions fro
 
 ### Mapping at Complex Object Collection  Level
 
-The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.
+The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.  
 
-![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-If-Mapping.png)
-
+![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-If-Mapping.png)  
 ![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-else-Mapping.png)
 
 ## UI Condition for Grouping Criteria
@@ -82,14 +77,13 @@ In the IF-Else Mapping, the user/implementer has the privilege to add numerous C
 An IF statement can have numerous conditions, APPSeCONNECT IF-ELSE Mapping can add numerous clauses or conditions. 
 Here the condition parameters can be grouped when required such that the proper grouping of the criteria could be maintained.
 
-Below is the screen that shows the grouping of the conditions of an object. 
+Below is the screen that shows the grouping of the conditions of an object.  
 ![grouping-condition](/staticfiles/transformation/media/grouping-condition.png)
 
-The User/Implementer can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions.
+The User/Implementer can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions.    
 ![grouping-condition-window](/staticfiles/transformation/media/grouping-condition-window.png)
 
-You can add multiple condition by click on the ADD NEW CLAUSE button. Click on the save icon to save the condition.
+You can add multiple condition by click on the ADD NEW CLAUSE button. Click on the save icon to save the condition.  
 
-Below is the Screen that displays the Added Conditions in group.
-
+Below is the Screen that displays the Added Conditions in group.  
 ![grouping-addcondition](/staticfiles/transformation/media/grouping-addcondition.png)
