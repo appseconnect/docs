@@ -26,7 +26,8 @@ Here the condition parameters can be grouped when required such that the proper 
 
 Below are the screens of the scenarios that displays the grouping of the conditions of an object. 
 
-**Scenario 1: Grouping of Conditions against the Country Code.**
+**Scenario 1: Grouping of Conditions against the Country Code.**  
+
 The User can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions 
 that is done for grouping the Country Codes.
 ![UIgrouping-countrycode](/staticfiles/transformation/media/UIgrouping-countrycode.png)
