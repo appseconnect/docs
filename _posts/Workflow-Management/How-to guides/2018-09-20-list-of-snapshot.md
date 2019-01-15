@@ -32,7 +32,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 1. List of Snapshot is present on the upper section of the workflow screen as shown below:
 ![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.PNG)
 2. Click on the `Snapshot`button and the following execution of workflow data will be fetched.
-![workflowexe-snapshot](/staticfiles/workflow-management/media/workflowexe-snapshot.png)
+![workflowexe-snapshot](/staticfiles/workflow-management/media/workflowexe-snapshot.png)  
 The execution screen contains the following details of the workflow snapshot
 * Execution Timestamp: This indicates the date, start and end time of the workflow.
 * Time Taken: This is the time taken for executing the workflow.

@@ -82,13 +82,13 @@ To run APPSeCONNECT, you need to make sure of few things :
 
 You should whitelist the following URLs from Network Firewall settings :
 
-[https://admin.appseconnect.com]()
+https://admin.appseconnect.com
 
-[https://cloud.appseconnect.com]()
+https://cloud.appseconnect.com
 
-[https://appsdrive.blob.core.windows.net/]()
+https://appsdrive.blob.core.windows.net/
 
-[https://services.appseconnet.com/]()
+https://services.appseconnet.com/
 
-**Protip:** We also require you to keep some of the Ports Open for APPSeCONNECT
+**Protip:** We also require you to keep some of the Ports Open for APPSeCONNECT  
 {: .notice--info}.

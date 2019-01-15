@@ -16,6 +16,11 @@ menus:
 
 Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure `If-Else Mapping`. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.
 
+## Pre-requisites for Mapping
+1. Login to the APPSeCONNECT Portal with valid credentials.
+2. Select the Application. [Click HERE](/getting-started/) to know more about selecting of Applications.
+3. Create a Connection. [Click HERE](/getting-started/) to know more.
+
 ## Mapping Levels
 
 Mapping is done at various level of Input Packet. Refer [here](/transformation/define-source-destination-transformation/)  
@@ -24,12 +29,13 @@ Mapping is done at various level of Input Packet. Refer [here](/transformation/d
 The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.  
 ![Attributelevel-Mapping](/staticfiles/transformation/media/Attributelevel-Mapping.png)
 
-The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.  
+The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.
+
 ![Attributelevel-AddCondition](/staticfiles/transformation/media/Attributelevel-AddCondition.png)
 
 **Note: The user can add conditions (Else-If & Else) inside an IF Node similarly as shown in the screen below, except for the FOR-EACH LOOP LEVEL.**
 
-* The above given mapping scenario,is explained below 
+* The above given mapping scenario is explained below 
 
 The Condition default-address/country-code='US' in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.
 

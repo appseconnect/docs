@@ -36,6 +36,6 @@ If you are creating **API proxy** for the `First Time`, you are being presented 
    Schema `OCRD` and Action `Insert`.
 
    If you want to know more about how you can import schema and actions for an app
-   [Click here](/app-management/handling-schemas-on-apps) 
+   [Click here](/getting-started/) 
 
 In this way,one can connect to a data source very easily.
