@@ -1,29 +1,30 @@
 ---
-title: "Listing of Snapshot for a Workflow for OP Agent"
+title: "Data-view process of workflow snapshot"
 toc: true
 tag: developers
 category: "Workflow"
 menus: 
     deployworkflow:
         icon: fa fa-link
-        title: "Listing of Snapshot" 
+        title: "Data-view of Snapshot" 
         identifier: snapshotworkflow 
 ---
 
-## List of Snapshots
-
-List of snapshot is a pictorial representation of the executed workflow at various node level. Here the user will
-get the snapshot view of the workflow whenever executed. This feature of the workflow is beneficial to the users 
-because they can now view the effective debugging at the node level in the user interface. 
+Snapshot in Workflow gives complete overview of the transactions made through it. A transaction in workflow means an an unique execution
+of the workflow at that instance. Every workflow might execute more than one integration, which depends on 
+logic defined on the workflow, dependencies specified, or even based on data volume. The snapshot gives a detailed overview
+of the data that is being transferred through workflow giving you a complete picture of the data transformed through
+the process. The snapshot gives tracing over the data transferred through integration. You can investigate the data packet, process
+logs and even the data logs for each process execution. 
 
 After a successful execution of workflow the user can see the snapshot listing on the multiple time execution 
 of the workflow and the latest listing is visible on the upper section of the list.
 
 ## Pre-Requisites of Listing of Snapshot for a Workflow
 
-1. All the Pre-requisites to workflow execution has to be met. [Click here](/workflow/steps-to-create-your-first-workflow/)
-2. Agent should be Primary (as Unlicense agents will malfunction due to the non- connectivity between SignalR & Agent)
-3. Autosync of the Agent should be `ON` (To trigger the workflow in the agent)
+1. All the [Pre-requisites](/workflow/steps-to-choose-your-workflow/) to workflow execution has to be met.
+2. Agent should be set as Primary (as unlicensed agents will be not connected to APPSeCONNECT cloud)
+3. Autosync of the Agent should be turned `ON`.
 
 
 ## Steps to executing list of snapshot for the workflow

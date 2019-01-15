@@ -87,6 +87,6 @@ files and folders like the one above.
 4. ConnectionViewModel : This is the ViewModel class associated with the ConnectionView.
 5. Readme.txt : A special help document which will help in developing adapter. 
 
-To deal with all these classes, you can go ahead with the [actual implementation](/sdk/Adapters). 
+To deal with all these classes, you can go ahead with the [actual implementation](/sdk/overview-adapters/). 
 
 

@@ -37,7 +37,7 @@ The SDK (Software development toolkit) provided to build custom solution are mai
 - [Policies](/sdk/overview-policies/) : These are separate set of policies which are used for any API built over APPSeCONNECT API Platform which lets you to hook between API request / response Pipeline. 
 
 
-To improve the delivery of robust and good code, it is important to consider [best practicies](/sdk/Development-Guidelines/) which we follow thoroughly for any development. We also encourage to 
+To improve the delivery of robust and good code, it is important to consider [best practicies](/sdk/Dos-and-Donts-for-SDK/) which we follow thoroughly for any development. We also encourage to 
 build an integration using the adapter to test or debug code written on adapter. 
 
 
