@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Mapping is done to initiate the transformation process successfully between the Source and the Destination apps. This document will help you to know the Source-Destination Mapping in APPSeCONNECT portal.">
+<meta name="description" content="Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the Transform section of the touchpoint. This document will help you to know about the Source-Destination Mapping in APPSeCONNECT portal.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Mapping is done to initiate the transformation process successfully between the Source and the Destination apps. This document will help you to know the Source-Destination Mapping in APPSeCONNECT portal.">
+  <meta property="og:description" content="Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the Transform section of the touchpoint. This document will help you to know about the Source-Destination Mapping in APPSeCONNECT portal.">
 
 
 
@@ -949,6 +949,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/transformation/grouping-of-condition/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/grouping-of-condition/" onclick="return selectTab('/transformation/grouping-of-condition/');" title="Go to Grouping of Conditions">Grouping of Conditions</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1079,7 +1085,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Basics of Source-Destination Mapping">
-        <meta itemprop="description" content="Mapping is done to initiate the transformation process successfully between the Source and the Destination apps. This document will help you to know the Source-Destination Mapping in APPSeCONNECT portal.">
+        <meta itemprop="description" content="Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the Transform section of the touchpoint. This document will help you to know about the Source-Destination Mapping in APPSeCONNECT portal.">
         <meta itemprop="datePublished" content="September 17, 2018">
         
 
@@ -1148,7 +1154,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1161,40 +1167,74 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#source---destination-mapping">Source - Destination Mapping</a></li>
+  <li><a href="#pre-requisites-for-source-and-destination-mapping">Pre-requisites for Source and Destination Mapping</a></li>
+  <li><a href="#source-destination-mapping">Source-Destination Mapping</a></li>
+  <li><a href="#steps-to-perform-the-source-destination-attribute-mapping">Steps to Perform the Source-Destination (Attribute) Mapping</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Mapping is done to initiate the transformation process successfully between the Source and the Destination apps. This document will help you to know the Source-Destination Mapping in APPSeCONNECT portal.</p>
+                <p>Mapping triggers the transformation process between the Source and the Destination Applications. 
+Source and destination schemas are mapped in the Transform section of the touchpoint. 
+This document will help you to know about the Source-Destination Mapping in APPSeCONNECT portal.</p>
 
-<h2 id="source---destination-mapping">Source - Destination Mapping</h2>
-
-<p>Source-Destination mapping is used to map the attributes of destination application with source application attributes.</p>
-
-<p><img src="/staticfiles/transformation/media/sourcedestination-mapping.png" alt="sourcedestination-mapping" /></p>
-
-<p>Mapping is done at various level of Input Packet.</p>
+<h2 id="pre-requisites-for-source-and-destination-mapping">Pre-requisites for Source and Destination Mapping</h2>
 
 <ol>
-  <li>
-    <p><strong>For-Each loop</strong> - This is used for execution on a block of code on each element in a collection of items. 
-It is useful to display each item in a collection of items till when the loop is defined.
-Under For-Each loop, Entities have been used and Variables are set under Entities.</p>
-  </li>
-  <li>
-    <p><strong>Complex Object Collection</strong> - This specify the mapping list within a complex object. This mainly includes the collection of complex object and attributes.</p>
-  </li>
-  <li>
-    <p><strong>Complex Object</strong> - Complex Objects are the objects which are highly structured and large in size (can also be small) of Variable Representation Length (VLR).</p>
-  </li>
-  <li>
-    <p><strong>Attributes</strong> - Each target system configuration constructs an “attribute map” which contains all the attributes known by the system.</p>
-  </li>
+  <li>Valid credentials for logging into the APPSeCONNECT Portal.</li>
+  <li><a href="/getting-started/">Choose APP</a> or <a href="/getting-started/">Create APP</a></li>
+  <li><a href="/getting-started/">Create Connection template</a> 
+The pathway for source-destination mapping section is provided <a href="/transformation/overview/">here</a>.</li>
 </ol>
 
-<p>Variables are defined by two types of scopes. One is <code class="highlighter-rouge">Root variable</code> which can be used by any entity. 
-Second is <code class="highlighter-rouge">Root Entry Variable</code> which is generally used under the scope of an entity.</p>
+<h2 id="source-destination-mapping">Source-Destination Mapping</h2>
+
+<p>Mapping of the attributes of destination application with source application attributes is implemented by the process known as 
+Source-Destination mapping.
+<img src="/staticfiles/transformation/media/sourcedestination-mapping.png" alt="sourcedestination-mapping" />
+Mapping Processes are initiated at various level of Input Packets</p>
+<ol>
+  <li><strong>For-Each loop</strong> - This is used for execution on a block of code on each element in a collection of items. 
+It is useful to display each item in a collection of items till when the loop is defined.
+Under For-Each loop, Entities have been used and Variables are set under Entities.</li>
+  <li><strong>Complex Object Collection</strong> - This specify the mapping list within a complex object. This mainly includes the collection of complex object and attributes.</li>
+  <li><strong>Complex Object</strong> - Complex Objects are the objects which are highly structured and large in size (can also be small) of Variable Representation Length (VLR).</li>
+  <li><strong>Attributes</strong> - Each target system configuration constructs an “attribute map” which contains all the attributes known by the system.</li>
+</ol>
+
+<p>Variables are defined by two types of scopes.</p>
+
+<ol>
+  <li><strong>Root Variable</strong> - Global variable which can used in any entity.</li>
+  <li><strong>Root Entry Variable</strong> - is a local Variable which is generally used under the scope of an entity.</li>
+</ol>
+
+<h2 id="steps-to-perform-the-source-destination-attribute-mapping">Steps to Perform the Source-Destination (Attribute) Mapping</h2>
+
+<ol>
+  <li>Log in with valid credentials in the AEC portal.</li>
+  <li>Choose any project and navigate to Connections- Choose a connection - View The Connection.
+<img src="/staticfiles/transformation/media/viewconnection-sourcedestination.png" alt="viewconnection-sourcedestination" /></li>
+  <li>The Touchpoints page will be viewed upon clicking the View the Connection button. Click on the Transform button.
+<img src="/staticfiles/transformation/media/transformbutton.png" alt="transformbutton" /></li>
+  <li>The Transformation Page opens up. Expand the For-Each Loop node for mapping the attributes. 
+ Click on the OPEN button provided beside every attribute.
+<img src="/staticfiles/transformation/media/transformation-page.png" alt="transformation-page" /></li>
+  <li>
+    <p>The Mapping window opens up.  In the Mapping Space, fields for mapping is needed to be provided. 
+The User can also click on the entities/attributes to get it on the box.
+<img src="/staticfiles/transformation/media/mapping-space.png" alt="mapping-space" /></p>
+  </li>
+  <li>Click on the Submit option after the mapping is done in that attribute. Similarly other attributes can also be mapped.</li>
+</ol>
+
+<p><strong>Note: If value mapping is required, select the options as required from the lookup type drop down option. 
+And click on its enable checkbox</strong></p>
+
+<p><strong>Note: The user can enable and disable the attribute mappings. The <code class="highlighter-rouge">Disabling Mapping</code> feature is not available for the 
+attributes with the primary key.</strong></p>
+
+<p>For more details on Attribute Mapping <a href="http://support.appseconnect.com/support/solutions/articles/4000112799">click here</a></p>
 
                 
             </section>
@@ -2177,6 +2217,14 @@ Second is <code class="highlighter-rouge">Root Entry Variable</code> which is ge
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -2347,6 +2395,17 @@ Second is <code class="highlighter-rouge">Root Entry Variable</code> which is ge
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/transformation/grouping-of-condition/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Grouping of Conditions
+                                </a>
+                            </li>
                             
                             
                             

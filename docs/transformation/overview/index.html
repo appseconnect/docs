@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="This document will guide you through the TRANSFORMATION functionality in APPSeCONNECT portal. TRANSFORMATION is the field where the corresponding to the schema are mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.">
+<meta name="description" content="This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="This document will guide you through the TRANSFORMATION functionality in APPSeCONNECT portal. TRANSFORMATION is the field where the corresponding to the schema are mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.">
+  <meta property="og:description" content="This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.">
 
 
 
@@ -949,6 +949,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/transformation/grouping-of-condition/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/grouping-of-condition/" onclick="return selectTab('/transformation/grouping-of-condition/');" title="Go to Grouping of Conditions">Grouping of Conditions</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1079,7 +1085,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Transformation">
-        <meta itemprop="description" content="This document will guide you through the TRANSFORMATION functionality in APPSeCONNECT portal. TRANSFORMATION is the field where the corresponding to the schema are mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.">
+        <meta itemprop="description" content="This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.">
         <meta itemprop="datePublished" content="September 17, 2018">
         
 
@@ -1161,98 +1167,101 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#what-is-transformation">What is Transformation</a></li>
-  <li><a href="#working-with-transformation">Working with Transformation</a></li>
+  <li><a href="#what-is-mapping">What is Mapping</a></li>
+  <li><a href="#pathway-to-transformation">Pathway to Transformation</a></li>
+  <li><a href="#structure-of-mapping">Structure of Mapping</a></li>
+  <li><a href="#process-of-transformation">Process of Transformation</a></li>
   <li><a href="#root-entity-variable">Root entity variable</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>This document will guide you through the TRANSFORMATION functionality in APPSeCONNECT portal. <code class="highlighter-rouge">TRANSFORMATION</code> is the field where the corresponding to the schema are mapped. 
+                <p>This document will help you to understand and work with the <code class="highlighter-rouge">MAPPING and TRANSFORMATION</code> functionality in APPSeCONNECT portal. 
+Primarily transformation is the field where the corresponding schemas are to be mapped. 
 This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.</p>
 
-<h2 id="what-is-transformation">What is Transformation</h2>
+<h2 id="what-is-mapping">What is Mapping</h2>
 
-<p>Every touchpoint has a resultant XSLT which converts the source XML format into the destination XML. 
-This XSLT is created under the Transformation field. If you check the XSLT code you would see that it has a root node
-which refers to the schema, the attributes which exist as child nodes which in turn can have further fields extending the branch.</p>
+<p>The transfer of information between the schemas is done by mapping the source and the destination schema for an attribute 
+in the touchpoint level. The attributes of the schema may vary for different applications. Mapping of a touchpoint is 
+required to define which attributes of the target schema correspond to those of the source schema.</p>
 
-<p>Thus the transformation has a hierarchical structure. Let us see the Transformation process with the
-<code class="highlighter-rouge">Business Partner Add touchpoint in the connection Magento2 to SAP</code></p>
+<p><a href="/transformation/define-source-destination-transformation/">Click here</a> to know more about the source and destination mapping.</p>
 
-<p>On expanding the Transformation we see the <code class="highlighter-rouge">For-Each Loop</code> there.
-<img src="/staticfiles/transformation/media/Transformation.png" alt="Transformation" /></p>
+<h2 id="pathway-to-transformation">Pathway to Transformation</h2>
 
-<h2 id="working-with-transformation">Working with Transformation</h2>
+<ol>
+  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
+  <li>Navigate to the ‘Connections’ Page in the APPSeCONNECT Portal.
+<img src="/staticfiles/transformation/media/connectionpageview-transformation.png" alt="connectionpageview-transformation" /></li>
+  <li>Click ‘View the connection’ button in the Connection which you have created.
+<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
+  <li>Navigate to any of the touchpoints where you want to implement the mapping.
+<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
+  <li>Click on the <code class="highlighter-rouge">Transform</code> button. The Transformation Window opens. 
+The Mapping of the Attributes are done at the <strong>transform</strong> level of the touchpoint.
+<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
+</ol>
 
-<p>For-Each-Loop works exactly like the For-Loop in general Programming language. Every time the touchpoint is run 
-you have data coming on from the source schema which requires to be transformed individually such that it matches 
-the format of the destination schema.</p>
+<p><strong>Note: This is the Mapping Screen of touchpoint <code class="highlighter-rouge">Invoice Add</code>. 
+The user can expand the Transformation node, to view the attributes present in the touchpoint.</strong></p>
 
-<p>For example: When a <strong>customer add</strong> touchpoint is executed, records of several customers are fetched from the source app. 
-So the same logic for transformation is required to be deployed several times over. Instead of writing the same
-transformation several times over a loop is set up.  Whenever there is a customer record that requires to be transformed
-the loop gets executed.</p>
+<p class="notice--info"><strong>Protip:</strong> The user can see the existing mapping for this touchpoint as it is Pre-Packaged. If the user clicks on any other touchpoint,
+for any other connection, the pathway and the structure of the Transformations mapping remains the same.</p>
 
-<p>The <code class="highlighter-rouge">for-each loop</code> requires us to define an X-path. The X-path is the course of nodes in the generated XSLT through which the loop would progress</p>
+<h2 id="structure-of-mapping">Structure of Mapping</h2>
 
-<p><img src="/staticfiles/transformation/media/For-Each-Loop.png" alt="For-Each-Loop" />
-For the for-each loop, you have provided the X-path as ‘//items/item’. Here the first / refers to the parent node, 
-the /items is the schema node and /item refers to each child node under the /items node, i.e. each schema item. 
-Thus, you are directing each schema item to the for-loop. By mapping the <em>for-each-loop</em> you are providing 
-the information as to which items must be executed.</p>
+<p>The user can view these fields listed on the Transform Page:</p>
+<ul>
+  <li>Transformation- Attributes corresponding to the schema are mapped in this field. The logic behind the Integration is implemented in the Transformation area such that the process proceeds uninterrupted.</li>
+  <li>Root Variable -Touchpoint Mapping requires root variables that stores the data which would be used later in the transformation process. Root variables can be used for different purposes. 
+The values that are returned from the complex XPath expression are stored by the Root Variable which can be use later in the Mapping Process.</li>
+  <li>Tracking - ‘Tracking’ is used to study the data synchronization from the source application to the destination application. ‘Tracking’ provides an opportunity to include more details within the source schema 
+items when they are being transferred to the destination schema.</li>
+  <li>Lookups - Lookups is the field where all the value mappings can be managed (add/delete/update) in the touchpoint level.</li>
+</ul>
 
-<p>If you expand the For-each loop, you can see <strong>oBusinessPartners</strong> and <strong>Condition</strong>.</p>
+<h2 id="process-of-transformation">Process of Transformation</h2>
 
-<p>oBusinessPartners is an object, that is used to send data to the target application. For different touchpoints
-we would see that the object is different. For the touchpoint Sales Order Add, the object is oOrders
-for Simple Product Add it is oItems and so on.</p>
+<p>The data coming from the source schema requires to be transformed individually such that it matches the format of the destination schema,
+everytime the touchpoint is synced.</p>
 
-<p>If you expand the object oBusinessPartners, you can see the several attributes listed under it. 
-Each attribute has separate information about the entity it belongs to.</p>
+<p>E.g: Suppose you are executing <code class="highlighter-rouge">Invoice Add</code> touchpoint, you can see that records of all the <code class="highlighter-rouge">Invoices</code> are 
+drew from the source app and for this case the similar execution process of transformation is deployed multiple
+ times. Here a loop is set relatively than writing the transformation logic multiple times, and this undergoes 
+execution whenever the touchpoint is synced in the For-Each Loop Node.<br />
+<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></p>
 
-<p>Each of these attributes will contain different information about the customer record. 
-BPAddresses will contain the addresses of the customer, BPPaymentMethods contains the payment methods 
-available to the customer, ContactEmployees contains the information about the contact persons of the 
-customer and so on.</p>
+<p>Expanding the <code class="highlighter-rouge">For-each loop</code> the user gets the view of the node <code class="highlighter-rouge">oInvoices</code>. <code class="highlighter-rouge">oInvoices</code> is an object that is used to send data to the target application.</p>
 
-<p>The highlighted fields are discussed below.</p>
+<p>Note: For different touchpoints the object is different. For the touchpoint <code class="highlighter-rouge">Sales Order Add</code> the object is <code class="highlighter-rouge">oOrders</code> for <code class="highlighter-rouge">Simple Product Add</code> it is <code class="highlighter-rouge">oItems</code> and so on.</p>
 
-<p>Different objects would have different attributes.</p>
+<p>On expanding the object <code class="highlighter-rouge">oInvoices</code> the user gets the view of the several attributes that are listed under it. 
+Each attribute has separate information about the entity that it belongs to.<br />
+Each of these attributes will contain different information about the customer record.</p>
 
-<p><img src="/staticfiles/transformation/media/DifferentObject-Attributes.png" alt="DifferentObject-Attributes" /></p>
+<p>For Example: <code class="highlighter-rouge">Document_Lines</code> will contain the details of the Product in terms of Quantity and Unit Price etc, 
+<code class="highlighter-rouge">DocumentsAdditionalExpenses</code> contains the Freight, Tax information etc of the product. 
+<img src="/staticfiles/transformation/media/process-of-transformation2.png" alt="process-of-transformation2" /></p>
 
-<p>If you go ahead and expand BusinessPartners you can see the following view</p>
+<p><strong>Note: Different objects in different touchpoints will have different attributes.<br />
+The structure remains the same on expanding the any other attributes of any other touchpoints.</strong></p>
 
-<p><img src="/staticfiles/transformation/media/Business-Partner.png" alt="Business-Partner" /></p>
+<p>Expanding the row, displays the destination attributes in the touchpoint level.
+<img src="/staticfiles/transformation/media/process-of-transformation3.png" alt="process-of-transformation3" /></p>
 
-<p>There are two elements listed under it Row and Variable. The row is the set of all fields that are a part of the attribute.
-Variable allows us to add a variable that could be used to store a value and use for this particular attribute.</p>
-
-<p>If we expand any other attribute, we can see that the structure is the same.</p>
-
-<p><img src="/staticfiles/transformation/media/Attribute-Structure.png" alt="Attribute-Structure" /></p>
-
-<p>If you click on the row, you can see the various fields that are a part of this attribute.</p>
-
-<p><img src="/staticfiles/transformation/media/Attribute-Fields.png" alt="Attribute-Fields" /></p>
-
-<p>Each of these fields is mapped with the corresponding fields of the source schema.</p>
+<p>All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.</p>
 
 <h2 id="root-entity-variable">Root entity variable</h2>
 
-<p>For a particular mapping, root entity refers to the schema/entity which it is used to map. 
-For example, for the object oBusinessPartners, the customer is the root entity.</p>
+<p>A root entity variable is a variable that is value specific to every iteration. 
+Every entity item has this variable declared with it such that it is present in every iteration and has a different 
+value for every schema item.</p>
 
-<p>A root entity variable is a variable that has a value specific to every iteration. 
-Every entity item has this variable declared with it such that it is present in every iteration 
-and has a different value for every schema item.</p>
+<p>Root Entity Variable can be used several times in different parts of the transformation process underlying in the touchpoint. 
+Its value however will be different for every iteration.</p>
 
-<p>It is interesting to note that the root entity variable can be used several times in different 
-parts of the transformation underlying in the touchpoint. Its value, however, will be different 
-for every iteration.</p>
-
-<p class="notice--info"><strong>Protip</strong> Query params and Root Entity variable are present in every object, irrespective of the touchpoint they belong to</p>
+<p class="notice--info"><strong>Protip</strong> Every Object has - Query params and Root Entity variable, whatever touchpoint they cater to</p>
 
 
                 
@@ -2236,6 +2245,14 @@ for every iteration.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -2406,6 +2423,17 @@ for every iteration.</p>
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/transformation/grouping-of-condition/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Grouping of Conditions
+                                </a>
+                            </li>
                             
                             
                             
