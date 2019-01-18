@@ -39,23 +39,14 @@ This is a basic workflow where the user can download customer from Shopify to SA
 * [Post](/workflow/working-with-post/)
 
 8. Workflow is created and then give a name to the untitled workflow (Workflow for Customer Downloading) and click on `SAVE` button to save the workflow.
-
- ![CustomerDownload_Simple](/staticfiles/workflow-management/media/CustomerDownload_Simple.png)
-            
+ ![CustomerDownload_Simple](/staticfiles/workflow-management/media/CustomerDownload_Simple.png)        
 9.  After creating the workflow deploy that in the Agent.
-
-10. Navigate to the Enviornment module and click on `Agent Setting` to check the connection is active or not .
-
+10. Navigate to the Environment module and click on `Agent Setting` to check the connection is active or not .
 11. Now go to the `Deploy Configuration` button to deploy the configuration. The success message will come.
-
 12. Login/signup to Shopify (App 1) and view the added Customer.
-
 13.  Now check  back to Workflow module and select the saved workflow.
-
 14. Then click on RUN button to run the workflow.
-
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
-
 16.  The user will go to SAP B1 (App 2) and click on Business Partner Master Data to fetch the downloaded customers. 
 
 

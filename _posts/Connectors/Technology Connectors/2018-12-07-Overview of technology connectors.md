@@ -22,7 +22,7 @@ within the application such that data can freely flow from the data source to th
 
 |Connector Name|Supported Protocol|Description|
 |---|---|---------|
-|[HTTP](/connectors/technology/overview-rest)|REST|Connects to any HTTP based RESTful API using standard authentication mechanisms support by the REST protocol|
+|HTTP|REST|Connects to any HTTP based RESTful API using standard authentication mechanisms support by the REST protocol|
 |Database|OLE Database|Connects to any database which supports OLE drivers. The protocol uses standard OLE drivers in the environment and supports a wide variety of databases|
 |File System|File|Connects to a disk folder or files, reads in different formats and connects the data to APPSeCONNECT. This connector is suitable in scenarios where you generate files in the file system both in network drive or in local machine|
 |FTP File System|FTP|Connects to a remote location using File transfer protocol to download or upload file to a folder structure.|

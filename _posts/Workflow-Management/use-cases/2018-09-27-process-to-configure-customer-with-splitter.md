@@ -30,7 +30,7 @@ Organization Creation & Connection Creation
 ### Basic Flow
 The user will execute the flow as given below.
 
-Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow-management/basic-workflow-customer-download/)
+Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow/basic-workflow-customer-download/)
 
 12. The user will now login/signup to Eccomerce (Shopify - App 1) and add customer 
 

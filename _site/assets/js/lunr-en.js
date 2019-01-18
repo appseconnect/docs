@@ -431,8 +431,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Listing of Snapshot for a Workflow for OP Agent",
-      excerpt: "List of Snapshots List of snapshot is a pictorial representation of the executed workflow at various node level. Here the...",
+      title: "Data-view process of workflow snapshot",
+      excerpt: "Snapshot in Workflow gives complete overview of the transactions made through it. A transaction in workflow means an an unique...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 46
@@ -1612,9 +1612,9 @@ var store = [
     
       
       {
-        "title": "Listing of Snapshot for a Workflow for OP Agent",
+        "title": "Data-view process of workflow snapshot",
         "url": "/workflow/list-of-snapshot/",
-        "excerpt": "List of Snapshots List of snapshot is a pictorial representation of the executed workflow at various node level. Here the...",
+        "excerpt": "Snapshot in Workflow gives complete overview of the transactions made through it. A transaction in workflow means an an unique...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2361,7 +2361,7 @@ var store = [
       
       {
         "title": "Best practices",
-        "url": "/sdk/Do's-&-Dont's-for-SDK/",
+        "url": "/sdk/Dos-and-Donts-for-SDK/",
         "excerpt": "Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT...",
         "teaser":
           

@@ -373,7 +373,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/list-of-snapshot/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Listing of Snapshot">Listing of Snapshot</a>
+        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Data-view of Snapshot">Data-view of Snapshot</a>
         
     </li>
     
@@ -983,8 +983,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/sdk/Do's-&-Dont's-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/sdk/Do's-&-Dont's-for-SDK/" onclick="return selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best-practices">Best-practices</a>
+    <li class="menu-item-" data-url="/sdk/Dos-and-Donts-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/sdk/Dos-and-Donts-for-SDK/" onclick="return selectTab('/sdk/Dos-and-Donts-for-SDK/');" title="Go to Best-practices">Best-practices</a>
         
     </li>
     
@@ -1177,6 +1177,7 @@
       <li><a href="#mapping-at-complex-object-collection--level">Mapping at Complex Object Collection  Level</a></li>
     </ul>
   </li>
+  <li><a href="#ui-condition-for-grouping-criteria">UI Condition for Grouping Criteria</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1195,14 +1196,14 @@
 <h2 id="mapping-levels">Mapping Levels</h2>
 
 <p>Mapping is done at various level of Input Packet. Refer <a href="/transformation/define-source-destination-transformation/">here</a></p>
-
 <h3 id="mapping-at-attribute-level">Mapping at Attribute Level</h3>
 
-<p>The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.
+<p>The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.<br />
 <img src="/staticfiles/transformation/media/Attributelevel-Mapping.png" alt="Attributelevel-Mapping" /></p>
 
-<p>The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.
-<img src="/staticfiles/transformation/media/Attributelevel-AddCondition.png" alt="Attributelevel-AddCondition" /></p>
+<p>The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.</p>
+
+<p><img src="/staticfiles/transformation/media/Attributelevel-AddCondition.png" alt="Attributelevel-AddCondition" /></p>
 
 <p><strong>Note: The user can add conditions (Else-If &amp; Else) inside an IF Node similarly as shown in the screen below, except for the FOR-EACH LOOP LEVEL.</strong></p>
 
@@ -1216,36 +1217,55 @@
 
 <p>And for the Otherwise (ELSE)Node,the given clause will be carried out.</p>
 
-<p>Refer the screen given below:
-<img src="/staticfiles/transformation/media/Attributelevel-ConditionView.png" alt="Attributelevel-ConditionView" /></p>
+<p>Refer the screen given below:</p>
 
-<p>The User can also add Else-If and Else(Otherwise) and its clauses in the attribute Level. The following screen shows the Condition add for If-Else.
-<img src="/staticfiles/transformation/media/Attributelevel-Else.png" alt="Attributelevel-Else" /></p>
+<p><img src="/staticfiles/transformation/media/Attributelevel-ConditionView.png" alt="Attributelevel-ConditionView" /><br />
+The User can also add Else-If and Else(Otherwise) and its clauses in the attribute Level. The following screen shows the Condition add for If-Else.</p>
+
+<p><img src="/staticfiles/transformation/media/Attributelevel-Else.png" alt="Attributelevel-Else" /></p>
 
 <p><strong>NOTE: The Add Condition window is for the condition marked in the Yellow Box</strong></p>
 
 <h3 id="mapping-at-loop-level">Mapping at Loop Level</h3>
 
-<p>The <code class="highlighter-rouge">If Mapping can be done at the For-Each Loop level</code>. Below is the screen which shows the <strong>If Mapping</strong> at the For-Each Loop Level.
-<img src="/staticfiles/transformation/media/LoopLevel-Mapping.png" alt="LoopLevel-Mapping" /></p>
+<p>The <code class="highlighter-rouge">If Mapping can be done at the For-Each Loop level</code>. Below is the screen which shows the <strong>If Mapping</strong> at the For-Each Loop Level.</p>
+
+<p><img src="/staticfiles/transformation/media/LoopLevel-Mapping.png" alt="LoopLevel-Mapping" /></p>
 
 <p class="notice--info"><strong>Protip</strong> In the For-Loop Level, only IF is used as this level is just for removing duplicate check and also removing junk data, for integration process</p>
 
 <h3 id="mapping-at-complex-object-level">Mapping at Complex Object Level</h3>
 
 <p>The user/implementer can work on the If-Else Mapping in the complex object level. 
-Below is the Screen which shows the If-Else Mapping at the complex object level.
-<img src="/staticfiles/transformation/media/ComplexObject-Mapping.png" alt="LoopLevel-Mapping" /></p>
+Below is the Screen which shows the If-Else Mapping at the complex object level.</p>
+
+<p><img src="/staticfiles/transformation/media/ComplexObject-Mapping.png" alt="LoopLevel-Mapping" /></p>
 
 <p>Like other levels, the user can add Else-If and Otherwise and its conditions from the drop down.</p>
 
 <h3 id="mapping-at-complex-object-collection--level">Mapping at Complex Object Collection  Level</h3>
 
-<p>The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.
-<img src="/staticfiles/transformation/media/ComplexObjectCollection-If-Mapping.png" alt="LoopLevel-Mapping" /></p>
+<p>The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.</p>
 
-<p><img src="/staticfiles/transformation/media/ComplexObjectCollection-else-Mapping.png" alt="LoopLevel-Mapping" /></p>
+<p><img src="/staticfiles/transformation/media/ComplexObjectCollection-If-Mapping.png" alt="LoopLevel-Mapping" /><br />
+<img src="/staticfiles/transformation/media/ComplexObjectCollection-else-Mapping.png" alt="LoopLevel-Mapping" /></p>
 
+<h2 id="ui-condition-for-grouping-criteria">UI Condition for Grouping Criteria</h2>
+
+<p>In the IF-Else Mapping, the user/implementer has the privilege to add numerous Condition at one go. 
+An IF statement can have numerous conditions, APPSeCONNECT IF-ELSE Mapping can add numerous clauses or conditions. 
+Here the condition parameters can be grouped when required such that the proper grouping of the criteria could be maintained.</p>
+
+<p>Below is the screen that shows the grouping of the conditions of an object.<br />
+<img src="/staticfiles/transformation/media/grouping-condition.png" alt="grouping-condition" /></p>
+
+<p>The User/Implementer can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions.  <br />
+<img src="/staticfiles/transformation/media/grouping-condition-window.png" alt="grouping-condition-window" /></p>
+
+<p>You can add multiple condition by click on the ADD NEW CLAUSE button. Click on the save icon to save the condition.</p>
+
+<p>Below is the Screen that displays the Added Conditions in group.<br />
+<img src="/staticfiles/transformation/media/grouping-addcondition.png" alt="grouping-addcondition" /></p>
 
                 
             </section>

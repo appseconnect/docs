@@ -21,7 +21,7 @@ Follow these steps to configure a APPSeCONNECT Proxy.
 
 1. [Create an account in APPSeCONNECT Portal](https://www.appseconnect.com/free-trial/)
 2. [Configure Environment for your project](/deployment/Deployment-Configuration/)
-3. [Choosing Back-end Apps](http://support.appseconnect.com/support/solutions/articles/4000112077-appseconnect-portal-add-edit-app-app-version)
+3. [Choosing Back-end Apps](/getting-started/)
 
 Afterwards, you have to register a URL for your organization.
 

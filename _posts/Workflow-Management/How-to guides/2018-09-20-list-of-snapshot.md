@@ -110,7 +110,7 @@ Below is the Screen for Webhook Log Bucket.
 
 **Scenario 6:**
 Email is another Action Node in workflow. Here, too you will only get the LOG BUCKET, generated. 
-Below, is the screen of Email Action Log Bucket generated.
+Below, is the screen of Email Action, Log Bucket generated.
 
 ![Email-snapshot](/staticfiles/workflow-management/media/Email-snapshot.png)
 

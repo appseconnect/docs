@@ -373,7 +373,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/list-of-snapshot/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Listing of Snapshot">Listing of Snapshot</a>
+        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Data-view of Snapshot">Data-view of Snapshot</a>
         
     </li>
     
@@ -983,8 +983,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/sdk/Do's-&-Dont's-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/sdk/Do's-&-Dont's-for-SDK/" onclick="return selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best-practices">Best-practices</a>
+    <li class="menu-item-" data-url="/sdk/Dos-and-Donts-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/sdk/Dos-and-Donts-for-SDK/" onclick="return selectTab('/sdk/Dos-and-Donts-for-SDK/');" title="Go to Best-practices">Best-practices</a>
         
     </li>
     
@@ -1192,20 +1192,10 @@
 <img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-DataLink3.png" alt="OledbAdapter-OP-DataLink3" /></li>
     </ul>
   </li>
-</ol>
-
-<p class="notice--info"><strong>Protip:</strong> It is mandatory to apply the allow saving password checkbox, else it will not allow login to the database which will cause failure while 
-Testing the Connection and Validation</p>
-
-<ol>
-  <li>
-    <p>Click on Test Connection. A success message pops up on successful connection.<br />
-<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-TestConnectionSuccess.png" alt="OledbAdapter-OP-TestConnectionSuccess" /></p>
-  </li>
-  <li>
-    <p>On successful connection, the connection string field on the App Configuration Window gets auto-generated.
-The Connection string comprises of the following elements.</p>
-  </li>
+  <li>Click on Test Connection. A success message pops up on successful connection.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-TestConnectionSuccess.png" alt="OledbAdapter-OP-TestConnectionSuccess" /></li>
+  <li>On successful connection, the connection string field on the App Configuration Window gets auto-generated.
+The Connection string comprises of the following elements.</li>
 </ol>
 
 <ul>
@@ -1214,17 +1204,16 @@ The Connection string comprises of the following elements.</p>
   <li>Persists Security Info - This is the authentication info displayed on enabling the password for saving.</li>
   <li>UserID - The Username or the UserID for the database server.</li>
   <li>Initial Catalog - It is the database name on the selected server.</li>
-  <li>DataSource - This is the name of the Database Server.</li>
+  <li>DataSource - This is the name of the Database Server.
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString.png" alt="OledbAdapter-OP-ConnectionString" />
+Click on Validate and Save.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString2.png" alt="OledbAdapter-OP-ConnectionString2" /></li>
 </ul>
 
-<p><img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString.png" alt="OledbAdapter-OP-ConnectionString" /></p>
-
-<ol>
-  <li>Click on Validate and Save.<br />
-<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString2.png" alt="OledbAdapter-OP-ConnectionString2" /></li>
-</ol>
-
 <p class="notice--info"><strong>Protip:</strong> Removing or erasing the generated connection string enables the click to configure button</p>
+
+<p class="notice--info"><strong>Protip:</strong> It is mandatory to apply the allow saving password checkbox, else it will not allow login to the database which will cause failure while 
+Testing the Connection and Validation</p>
 
 <h2 id="how-to-add-credentials-for-cloud-integration">How to add credentials for Cloud Integration</h2>
 
@@ -1234,36 +1223,17 @@ OLEDB database application in the APPSeCONNECT Cloud Portal.</p>
 
 <ol>
   <li>Go to the APP module of the AEC Portal. Click on the button beside the OLEDB Application name
- which you have created.</li>
-</ol>
-
-<p><img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud.png" alt="Oledb-Cloud" /></p>
-
-<ol>
-  <li>
-    <p>Click on the credential Button.</p>
-  </li>
-  <li>
-    <p>The Credential Page opens up. Click on the button to expand the node and then Click <code class="highlighter-rouge">ADD NEW CREDENTIAL</code>.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png" alt="Oledb-Cloud-Credential" /></p>
-
-<ol>
-  <li>Enter the Credential Name, Data Provider and the Connection String.</li>
-</ol>
-
-<p><img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png" alt="Oledb-Cloud-Credential-Input" /></p>
-
-<p><strong>Note:</strong> Data Provider is the Database Service Provider.</p>
-
-<ol>
+ which you have created.
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud.png" alt="Oledb-Cloud" /></li>
+  <li>Click on the credential Button.</li>
+  <li>The Credential Page opens up. Click on the button to expand the node and then Click <code class="highlighter-rouge">ADD NEW CREDENTIAL</code>.
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png" alt="Oledb-Cloud-Credential" /></li>
+  <li>Enter the Credential Name, Data Provider and the Connection String. 
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png" alt="Oledb-Cloud-Credential-Input" /></li>
   <li>Credential string is needed to be provided in this format always. 
-For instance: Provider=SQL<strong>**;Password=abcd</strong><strong>;Persist Security Info=True;User ID=salogin;Initial Catalog=jim;Data Source=SQL-SRV1</strong>***</li>
+For instance: Provider=SQL<strong>**;Password=abcd</strong><strong>;Persist Security Info=True;User ID=salogin;Initial Catalog=jim;Data Source=SQL-SRV1</strong>***
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input2.png" alt="Oledb-Cloud-Credential-Input2" /></li>
 </ol>
-
-<p><img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input2.png" alt="Oledb-Cloud-Credential-Input2" /></p>
 
 <p>Detailed description of the credential string is given below:</p>
 
@@ -1276,9 +1246,9 @@ For instance: Provider=SQL<strong>**;Password=abcd</strong><strong>;Persist Secu
   <li>DataSource - This is the name of the Database Server.</li>
 </ul>
 
-<ol>
-  <li>Input all the details &amp; Click SAVE.</li>
-</ol>
+<p>Input all the details &amp; Click SAVE.</p>
+
+<p><strong>Note:</strong> Data Provider is the Database Service Provider.</p>
 
                 
             </section>
