@@ -19,12 +19,12 @@
 
 
 
-<title>Implementing Event-driven integration - APPSeCONNECT Product Docs</title>
+<title>Best practices - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="An integration is generally scheduled at an interval or a specific time such that the data is pulled from the application only when the scheduler gets a trigger. Now, sometimes there isan better way to do an integration only when the application which needs to send data gives uswebhooks. A webhook is a feature in an application that allows the application to put an endpoint url which it triggers automatically when some transaction is made on the application end. Or moreprecisely, the application is expected to raise an event which the platform can subscribe for and when certain action is performed on the application it gets notification about the event.">
+<meta name="description" content="Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT platform.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Implementing Event-driven integration">
+<meta property="og:title" content="Best practices">
 
 
-  <link rel="canonical" href="http://localhost:4000/sdk/Implementing-event-driven-integration/">
-  <meta property="og:url" content="http://localhost:4000/sdk/Implementing-event-driven-integration/">
+  <link rel="canonical" href="http://localhost:4000/sdk/Dos-and-Donts-for-SDK/">
+  <meta property="og:url" content="http://localhost:4000/sdk/Dos-and-Donts-for-SDK/">
 
 
 
-  <meta property="og:description" content="An integration is generally scheduled at an interval or a specific time such that the data is pulled from the application only when the scheduler gets a trigger. Now, sometimes there isan better way to do an integration only when the application which needs to send data gives uswebhooks. A webhook is a feature in an application that allows the application to put an endpoint url which it triggers automatically when some transaction is made on the application end. Or moreprecisely, the application is expected to raise an event which the platform can subscribe for and when certain action is performed on the application it gets notification about the event.">
+  <meta property="og:description" content="Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT platform.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2010-01-02T00:00:00+05:30">
+  <meta property="article:published_time" content="2018-12-12T00:00:00+05:30">
 
 
 
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Implementing Event-driven integration</li>
+      <li class="current">Best practices</li>
     
   
 </ol>-->
@@ -1084,9 +1084,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Implementing Event-driven integration">
-        <meta itemprop="description" content="An integration is generally scheduled at an interval or a specific time such that the data is pulled from the application only when the scheduler gets a trigger. Now, sometimes there isan better way to do an integration only when the application which needs to send data gives uswebhooks. A webhook is a feature in an application that allows the application to put an endpoint url which it triggers automatically when some transaction is made on the application end. Or moreprecisely, the application is expected to raise an event which the platform can subscribe for and when certain action is performed on the application it gets notification about the event.">
-        <meta itemprop="datePublished" content="January 02, 2010">
+        <meta itemprop="headline" content="Best practices">
+        <meta itemprop="description" content="Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT platform.">
+        <meta itemprop="datePublished" content="December 12, 2018">
         
 
 
@@ -1113,7 +1113,7 @@
                 
                 
                 
-                <li class="current">Implementing Event-driven integration</li>
+                <li class="current">Best practices</li>
                 
                 
             </ol>
@@ -1123,7 +1123,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Implementing Event-driven integration
+                <h1 class="page__title" itemprop="headline">Best practices
 </h1>
                 
                 
@@ -1146,7 +1146,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-02T00:00:00+05:30">January 02, 2010</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-12-12T00:00:00+05:30">December 12, 2018</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1154,7 +1154,7 @@
 
 
 
-  3 minute read
+  1 minute read
 </p>
                 
                 
@@ -1167,138 +1167,38 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#webhooks">Webhooks</a></li>
-  <li><a href="#direct-call">Direct call</a></li>
-  <li><a href="#proxy-through-esb">Proxy through ESB</a></li>
-  <li><a href="#implementing-the-realtime-processor">Implementing the Realtime Processor</a></li>
+  <li><a href="#avoid-hard-coding-on-api-urls">Avoid hard-coding on API URLs</a></li>
+  <li><a href="#do-not-use-system-apis-inside-adapter-code">Do not use System APIs inside Adapter code</a></li>
+  <li><a href="#do-not-use-depricated-apis">Do not use depricated APIs</a></li>
+  <li><a href="#design-the-ui-as-to-improve-user-experience">Design the UI as to improve user experience</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>An integration is generally scheduled at an interval or a specific time such that the data 
-is pulled from the application only when the scheduler gets a trigger. Now, sometimes there is
-an better way to do an integration only when the application which needs to send data gives us
-webhooks. A webhook is a feature in an application that allows the application to put an endpoint 
-url which it triggers automatically when some transaction is made on the application end. Or more
-precisely, the application is expected to raise an event which the platform can subscribe for and 
-when certain action is performed on the application it gets notification about the event.</p>
+                <p>Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT platform.</p>
 
-<h3 id="webhooks">Webhooks</h3>
+<h3 id="avoid-hard-coding-on-api-urls">Avoid hard-coding on API URLs</h3>
 
-<p>APPSeCONNECT provides a number of ways to do an event driven programming which one can use to 
-subscribe the platform to get notifications. An integration in such a case will be based 
-on trigges on the application.</p>
+<p>It is highly recommended to avoid any hard-coding of an API URL. As adapter goes through various business integration processes, 
+keeping an hard - coded API base URL will lead to problems for future implementations.</p>
 
-<ul>
-  <li>Direct call</li>
-  <li>Proxy through ESB</li>
-</ul>
+<h3 id="do-not-use-system-apis-inside-adapter-code">Do not use System APIs inside Adapter code</h3>
 
-<p>Let us take a look on how different they are and how to implement the same in an adapter.</p>
+<p>As Adapter is developed using .NET Framework, you might want to invoke certain Environmental APIs directly inside your code. As 
+the adapter may run on various types of environment and there is no such functionality to ensure that environments 
+will be always equivalent for an adpater execution, dependency on environment, such as file system, local timestamp, 
+registry etc is highly discouraged.</p>
 
-<h3 id="direct-call">Direct call</h3>
+<h3 id="do-not-use-depricated-apis">Do not use depricated APIs</h3>
 
-<p>When you deal with webhooks, the thing that you need is an URL which you can subscribe to a particular 
-application to get notified. In case of APPSeCONNECT hybrid environment, you will get a free URL generated 
-on your local application, which you can pick up from any touchpoint and perform the webhook execution. For a direct call 
-execution, there should be a global ip associated, so network configuration is must.</p>
+<p>As APPSeCONNECT APIs are evolving day by day, we obsolete some of the existing APIs. Even for backward compatibility we generally
+still allow execution of those backdated APIs, but if you see a warning while compiling the adapter code in Visual Studio, it is highly 
+recommeded to change the code to avoid using the depricated APIs.</p>
 
-<h3 id="proxy-through-esb">Proxy through ESB</h3>
+<h3 id="design-the-ui-as-to-improve-user-experience">Design the UI as to improve user experience</h3>
 
-<p>If you enable proxy for a Webhook, the URL will be generated on our Cloud platform, which you can get 
-from the portal and execute the touchpoint. In this case, there is an Enterprise Service bus which takes care of messages
-and you do not need global and appseconnect provides an URL for the resource. In this case the application 
-stores the messages before processing it and hence it is safe.</p>
-
-<h3 id="implementing-the-realtime-processor">Implementing the Realtime Processor</h3>
-
-<p>To implement the functionality to work with Webhook touchpoints, you need to implement a class from <a href="http://isdn.appseconnect.com/html/71470DA4.htm"><code class="highlighter-rouge">IRealtimeProcessor</code></a>. Let us look
-how to implement a realtime interface for Adapter.</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="k">public</span> <span class="k">class</span> <span class="nc">RealtimeAdapter</span> <span class="p">:</span> <span class="n">IRealTimeProcessor</span>
-<span class="p">{</span>
-	<span class="k">private</span> <span class="n">AppResource</span> <span class="n">_resource</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
-	<span class="k">private</span> <span class="n">ApplicationContext</span> <span class="n">_context</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
-
-	<span class="k">public</span> <span class="nf">RealtimeAdapter</span><span class="p">()</span>
-	<span class="p">{</span>
-   
-	<span class="p">}</span>
-	
-	<span class="k">public</span> <span class="k">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">ApplicationContext</span> <span class="n">context</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="k">this</span><span class="p">.</span><span class="n">_context</span> <span class="p">=</span> <span class="n">context</span><span class="p">;</span>
-		<span class="k">this</span><span class="p">.</span><span class="n">_resource</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">AppResource</span><span class="p">(</span><span class="n">context</span><span class="p">);</span>
-	<span class="p">}</span>
-
-
-	<span class="k">public</span> <span class="n">RealtimeContext</span> <span class="n">Request</span>
-	<span class="p">{</span>
-		<span class="k">get</span><span class="p">;</span>
-		<span class="k">set</span><span class="p">;</span>
-	<span class="p">}</span>
-	
-	<span class="c1">/// &lt;summary&gt;</span>
-	<span class="c1">/// Generate response for realtime requests such that APIs or Webhook could receive a response</span>
-	<span class="c1">/// &lt;/summary&gt;</span>
-	<span class="c1">/// &lt;param name="settings"&gt;&lt;/param&gt;</span>
-	<span class="c1">/// &lt;returns&gt;&lt;/returns&gt;</span>
-	<span class="k">public</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="nf">Execute</span><span class="p">(</span><span class="n">RealtimeExecutionSettings</span> <span class="n">settings</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="kt">var</span> <span class="n">returnMessage</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">,</span> <span class="s">"Execution unsuccesful"</span><span class="p">);</span>
-		
-		<span class="k">try</span> 
-		<span class="p">{</span>
-		   <span class="kt">string</span> <span class="n">outputresponse</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-		   <span class="c1">//ToDo: Generate a response either by calling Get / Post Operation or completely rewrite and put it in outputresponse. </span>
-		   <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Response generated"</span><span class="p">,</span> <span class="n">outputresponse</span><span class="p">);</span>
-		<span class="p">}</span>
-		<span class="k">catch</span><span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
-		<span class="p">{</span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="n">Message</span> <span class="p">=</span> <span class="n">ex</span><span class="p">.</span><span class="n">Message</span><span class="p">;</span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="n">Exceptions</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">ex</span><span class="p">);</span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="s">"Exception Occured due to"</span> <span class="p">+</span> <span class="n">ex</span><span class="p">);</span>
-		<span class="p">}</span>
-		
-		<span class="k">return</span> <span class="n">returnMessage</span><span class="p">;</span>
-
-
-	<span class="p">}</span>
-	<span class="c1">/// &lt;summary&gt;</span>
-	<span class="c1">/// This function is written for validating a real time request</span>
-	<span class="c1">/// &lt;/summary&gt;</span>
-	<span class="c1">/// &lt;param name="settings"&gt;Setting data of a realtime request&lt;/param&gt;</span>
-	<span class="c1">/// &lt;returns&gt;Validation status&lt;/returns&gt;</span>
-	<span class="k">public</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;</span> <span class="nf">ValidateRequest</span><span class="p">(</span><span class="n">RealtimeExecutionSettings</span> <span class="n">settings</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="kt">var</span> <span class="n">returnMessage</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;();</span>
-		<span class="k">try</span>
-		<span class="p">{</span>
-			<span class="c1">//ToDo: Check and validate the request and return true if request is made from a valid source </span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Validated successfully"</span><span class="p">);</span>
-		<span class="p">}</span>
-		<span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
-		<span class="p">{</span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="n">Message</span> <span class="p">=</span> <span class="n">ex</span><span class="p">.</span><span class="n">Message</span><span class="p">;</span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="n">Exceptions</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">ex</span><span class="p">);</span>
-			<span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="s">"Exception Occured due to"</span> <span class="p">+</span> <span class="n">ex</span><span class="p">);</span>
-		<span class="p">}</span>
-		<span class="k">return</span> <span class="n">returnMessage</span><span class="p">;</span>
-	<span class="p">}</span> 
-<span class="p">}</span>
-
-</code></pre></div></div>
-
-<p>Here in the code, you can see we generally have to deal with two methods.</p>
-
-<ol>
-  <li><a href="http://isdn.appseconnect.com/html/FA557F0A.htm"><code class="highlighter-rouge">ValidateRequest</code></a>: For every request, the request first goes through this block. The block is to ensure all the functions of the API is working correctly and also the request is coming from a Valid request. The call also receives an <a href="http://isdn.appseconnect.com/html/5C4F78D3.htm"><code class="highlighter-rouge">Request</code></a> object whcih holds all the necessary information about the call, and also an object of <a href="http://isdn.appseconnect.com/html/EC529EA5.htm"><code class="highlighter-rouge">RealtimeExecutionSettings</code></a> for contextual settings. If the return message for the call is failure, the actual execution will not execute.</li>
-  <li><a href="http://isdn.appseconnect.com/html/451B9092.htm"><code class="highlighter-rouge">Execute</code></a>: This method receives the actual call to the request and the objective is to send response back to APPSeCONNECT. Once the Execute action is performed, the object is termed as valid and the transformation is performed and Post activity is performed for that operation.</li>
-</ol>
-
-<p><strong>protip</strong> As API is realtime, the idea of executing an API should not take long time, as this will create request timeout for certain requests
-{: .notice–info}.</p>
+<p>User experience is Key for Adapter users. So if you are building an adapter, it is highly encouraged
+to use best UX patterns while developing the UI.</p>
 
                 
             </section>
@@ -1306,7 +1206,7 @@ how to implement a realtime interface for Adapter.</p>
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-01-02T00:00:00+05:30">January 02, 2010</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-12-12T00:00:00+05:30">December 12, 2018</time></div>
                 
                 
   
@@ -1357,13 +1257,13 @@ how to implement a realtime interface for Adapter.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Implementing+Event-driven+integration%20https://docs.appseconnect.com%2Fsdk%2FImplementing-event-driven-integration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Best+practices%20https://docs.appseconnect.com%2Fsdk%2FDos-and-Donts-for-SDK%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fsdk%2FImplementing-event-driven-integration%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fsdk%2FDos-and-Donts-for-SDK%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fsdk%2FImplementing-event-driven-integration%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fsdk%2FDos-and-Donts-for-SDK%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fsdk%2FImplementing-event-driven-integration%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fsdk%2FDos-and-Donts-for-SDK%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -2331,15 +2231,6 @@ how to implement a realtime interface for Adapter.</p>
                             
                             
                             
-                            <li>
-                                <a href="/sdk/Dos-and-Donts-for-SDK/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Best practices
-                                </a>
-                            </li>
-                            
-                            
-                            
                             
                             
                             
@@ -2360,6 +2251,15 @@ how to implement a realtime interface for Adapter.</p>
                             
                             
                             
+                            
+                            
+                            
+                            <li>
+                                <a href="/sdk/Prerequisites/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Prerequisite
+                                </a>
+                            </li>
                             
                             
                             
@@ -2868,8 +2768,8 @@ how to implement a realtime interface for Adapter.</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/sdk/Implementing-event-driven-integration/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/sdk/Implementing-event-driven-integration"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/sdk/Dos-and-Donts-for-SDK/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/sdk/Dos-and-Donts-for-SDK"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

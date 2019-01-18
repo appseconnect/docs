@@ -373,7 +373,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/list-of-snapshot/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Listing of Snapshot">Listing of Snapshot</a>
+        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Data-view of Snapshot">Data-view of Snapshot</a>
         
     </li>
     
@@ -983,8 +983,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/sdk/Do's-&-Dont's-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/sdk/Do's-&-Dont's-for-SDK/" onclick="return selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best-practices">Best-practices</a>
+    <li class="menu-item-" data-url="/sdk/Dos-and-Donts-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/sdk/Dos-and-Donts-for-SDK/" onclick="return selectTab('/sdk/Dos-and-Donts-for-SDK/');" title="Go to Best-practices">Best-practices</a>
         
     </li>
     
@@ -1154,7 +1154,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1210,10 +1210,12 @@ to the other Application you are working with.</li>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
-<p>Show in Web has to be marked as “YES” as only those products will be granted for Inventory Update.</p>
+<p>While adding product from priority to shopify, ensure that <code class="highlighter-rouge">Show in web</code> is marked <code class="highlighter-rouge">Yes</code> or the option <code class="highlighter-rouge">Purchased Via Website</code> is enabled.</p>
 
 <p>Suppose you are updating inventory for 20 products but have not marked, show in web for those products, hence after integration your inventory will
 not get updated. It will only get updated when <code class="highlighter-rouge">Show in Web</code> is marked as “YES”.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/Troubleshoot-Priority.PNG" alt="Troubleshoot-Priority" /></p>
 <h2 id="attributes-and-actions">Attributes and Actions</h2>
 
 <p>While defining a connect to a particular API endpoint inPriority, you require clear understanding about the data requirements 
@@ -1251,6 +1253,9 @@ which you can easily plug and play while doing your integration.</p>
 </table>
 
 <p class="notice--info"><strong>Protip:</strong> You can do Inventory Update for products of last 24 hours.</p>
+<p class="notice--info"><strong>Protip:</strong> If a new touchpoint is created, you have to specify the ACTION 
+against the Schema for the business scenario as required or the user can utilize the pre-packaged touchpoints provided by APPSeCONNECT.</p>
+
 
                 
             </section>

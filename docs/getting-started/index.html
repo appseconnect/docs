@@ -363,7 +363,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/list-of-snapshot/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Listing of Snapshot">Listing of Snapshot</a>
+        <a href="/workflow/list-of-snapshot/" onclick="return selectTab('/workflow/list-of-snapshot/');" title="Go to Data-view of Snapshot">Data-view of Snapshot</a>
         
     </li>
     
@@ -973,8 +973,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/sdk/Do's-&-Dont's-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/sdk/Do's-&-Dont's-for-SDK/" onclick="return selectTab('/sdk/Do's-&-Dont's-for-SDK/');" title="Go to Best-practices">Best-practices</a>
+    <li class="menu-item-" data-url="/sdk/Dos-and-Donts-for-SDK/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/sdk/Dos-and-Donts-for-SDK/" onclick="return selectTab('/sdk/Dos-and-Donts-for-SDK/');" title="Go to Best-practices">Best-practices</a>
         
     </li>
     
@@ -1220,9 +1220,9 @@ Login to APPSeCONNECT - View <a href="/appseconnect/home/">Home Page</a> to get 
   <li>Choose App option enables you to choose app from the list of prepackaged apps on the portal.</li>
   <li>A dialog box appears where you will choose the application and version number from the drop down list. Click <strong>SAVE</strong> to save the app.
 <img src="/staticfiles/root/media/ChooseApp_Dialogbox1.png" alt="ChooseApp_Dialogbox1" /></li>
-  <li>The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
+  <li>The list of app you choose gets added and listed in the app section of the organization as shown below:
 <img src="/staticfiles/root/media/AppView.png" alt="AppView" /></li>
-  <li>Each app has four different component attached to it - <strong>Schema, Adapater, Extension, Functions &amp; Delete</strong>.
+  <li>Each app has four different component attached to it - <strong>Schema, Adapter, Extension, Functions &amp; Delete</strong>.
 <img src="/staticfiles/root/media/AppComponents.png" alt="AppComponents" /></li>
 </ol>
 
@@ -1314,7 +1314,7 @@ Description and the Adapter Technology for adding Specific App (a business requi
   <li>You can edit and add image to your app anytime, by clicking on the VIEW button beside the application name.</li>
 </ol>
 
-<p class="notice--info"><strong>Protip</strong> Currently we are using only these Technology Adapter - FILE, REST, OLEDB &amp; FT.</p>
+<p class="notice--info"><strong>Protip</strong> Currently we are using only these Technology Adapter - FILE, REST, OLEDB &amp; FTP.</p>
 
 <h3 id="appseconnect-schemaentity">APPSeCONNECT Schema/Entity</h3>
 
@@ -1342,10 +1342,10 @@ This section enables the user to view and add the Schema and its Actions.</p>
   <li>An application is needed to be select for defining the Schemas and its Actions.</li>
 </ol>
 
-<p><strong>Procedure:</strong></p>
+<p><strong>Process:</strong></p>
 <ol>
   <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
-  <li>Move into the APPS Page and Choose (link for choosing application) any application.</li>
+  <li>Move into the APPS Page and <a href="/getting-started/">Choose any application</a>.</li>
   <li>Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 <img src="/staticfiles/root/media/Select-Schema.PNG" alt="Select-Schema" /></li>
   <li>On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.
@@ -1354,7 +1354,7 @@ This section enables the user to view and add the Schema and its Actions.</p>
 <img src="/staticfiles/root/media/Add-Action.PNG" alt="Add-Action" /></li>
 </ol>
 
-<p class="notice--info"><strong>Protip:</strong> Default Schemas would only be present for the BASE APPS.</p>
+<p class="notice--info"><strong>Protip:</strong> Default Schemas would only be present for the Pre-packaged APPS.</p>
 
 <h3 id="adapter">Adapter</h3>
 <p>Adapters helps in integration with other applications easy. Adapter represents an interface between an APP and APPSeCONNECT. An adapter is a component which connects your app with APPSeCONNECT. 
@@ -1366,7 +1366,7 @@ There are few responsibilities of an adapter which are defined as under:</p>
   <li>Add additional business behavior with respect to the corresponding app.</li>
 </ul>
 
-<p>The Adapter is loaded dynamically by the <strong>Agent</strong> (create link) and calls some specific methods using a fixed contract defined as an interface.</p>
+<p>The Adapter is loaded dynamically by the <a href="/deployment/overview/">Agent</a> and calls some specific methods using a fixed contract defined as an interface.</p>
 
 <h3 id="extension">Extension</h3>
 <p>Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.</p>
