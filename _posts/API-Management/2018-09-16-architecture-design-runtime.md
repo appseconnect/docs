@@ -44,8 +44,8 @@ request pipeline and executes its code directly for every request.
 -  **Backend Gateway**: Backend gateway is the server component which hosts different micro-service containers that takes care of actual execution. The backend automatically
 detects the component which is capable of returning the data for a particular request and thereby can also route the request to a Hybrid connection queue which will
 be processed by On-premise agents.   
--  **Hybrid Connection Queue**: Hybrid Connection Queue is the service which hosts connection to all the onpremise agents and takes care of executing a particular request directly  
- to an on premise server. When a request is made to an OnPremise server, the server even though not having an Global public IP, can also generate response to the request.
+-  **Hybrid Connection Queue**: Hybrid Connection Queue is the service which hosts connection to all the onpremise agents and takes care of executing a particular request directly 
+   to an on premise server. When a request is made to an OnPremise server, the server even though not having an Global public IP, can also generate response to the request.
 -  **On Premise Application**: The On-premise tool also uses our APPSeCONNECT gateway to communicate with the apps. The gateway loads adapters and executes a particular request
 on premise, and proxies the same to our network. The on-premise gateway installation is a small tool which can connect to our internal services and proxy the data to 
 our servers. 

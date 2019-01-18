@@ -55,9 +55,9 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 1. Choose App option enables you to choose app from the list of prepackaged apps on the portal.
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
-3. The list of app you choose gets added and listed in the app section of the orgnaization as shown below:
+3. The list of app you choose gets added and listed in the app section of the organization as shown below:
 ![AppView](/staticfiles/root/media/AppView.png)
-4. Each app has four different component attached to it - **Schema, Adapater, Extension, Functions & Delete**.
+4. Each app has four different component attached to it - **Schema, Adapter, Extension, Functions & Delete**.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
 
 ## Create Application
@@ -136,7 +136,7 @@ The steps are given below:
 ![TechnologyApp-Creation-Screen3](/staticfiles/root/media/TechnologyApp-Creation-Screen3.png)
 4. You can edit and add image to your app anytime, by clicking on the VIEW button beside the application name.
 
-**Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FT. 
+**Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FTP. 
 {: .notice--info}
 
 ### APPSeCONNECT Schema/Entity
@@ -161,9 +161,9 @@ This section enables the user to view and add the Schema and its Actions.
 1. The User needs to have a valid AEC account.
 2. An application is needed to be select for defining the Schemas and its Actions.
 
-**Procedure:**
+**Process:**
 1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Move into the APPS Page and Choose (link for choosing application) any application. 
+2. Move into the APPS Page and [Choose any application](/getting-started/). 
 3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 ![Select-Schema](/staticfiles/root/media/Select-Schema.PNG)
 4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.
@@ -171,7 +171,7 @@ This section enables the user to view and add the Schema and its Actions.
 5. The Actions inside a schema can be viewed by clicking on the + sign. The ADD ACTION option is provided for Adding Actions inside a Schema.
 ![Add-Action](/staticfiles/root/media/Add-Action.PNG)
 
-**Protip:** Default Schemas would only be present for the BASE APPS.
+**Protip:** Default Schemas would only be present for the Pre-packaged APPS.
 {: .notice--info}
 
 ### Adapter
@@ -182,7 +182,7 @@ There are few responsibilities of an adapter which are defined as under:
 * Create Push and Pull method inside the adapter which can send and receive data to and from the application.
 * Add additional business behavior with respect to the corresponding app.
 
-The Adapter is loaded dynamically by the **Agent** (create link) and calls some specific methods using a fixed contract defined as an interface. 
+The Adapter is loaded dynamically by the [Agent](/deployment/overview/) and calls some specific methods using a fixed contract defined as an interface. 
 
 ### Extension
 Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.

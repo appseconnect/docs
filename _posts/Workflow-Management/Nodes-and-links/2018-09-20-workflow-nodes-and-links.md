@@ -28,6 +28,7 @@ Workflow in APPSeCONNECT is having a number of capabilities. Let us check what i
 - [Merge two or more data files into one or a batch of output.](/workflow/working-with-merger)
 - [Run an infinite sequence of executions.](/workflow/working-with-loops)
 - [Can set timeout between two executions.](/workflow/working-with-delay)
+- [Halting & Resuming a process](/workflow/working-with-halt-resume/)
 - [Sequence data inside applications](/workflow/working-with-sequencer)
 - [Take business decisions on data integration.](/workflow/working-with-rule)
 - [Split a data batch into multiple files.](/workflow/working-with-splitter)

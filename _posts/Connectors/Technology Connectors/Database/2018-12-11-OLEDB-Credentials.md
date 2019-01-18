@@ -27,14 +27,8 @@ Generic OLEDB Adapter is a software which provides OLEDB applications a leverage
 * Provide the Username and Password of the database server. Apply the Allow saving password checkbox. 
 * Select the database, from the dropdown option, present on that Server.  
 ![OledbAdapter-OP-DataLink3](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-DataLink3.png)
-
-**Protip:** It is mandatory to apply the allow saving password checkbox, else it will not allow login to the database which will cause failure while 
-Testing the Connection and Validation 
-{: .notice--info}
-
 6. Click on Test Connection. A success message pops up on successful connection.  
 ![OledbAdapter-OP-TestConnectionSuccess](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-TestConnectionSuccess.png)
-
 7. On successful connection, the connection string field on the App Configuration Window gets auto-generated.
 The Connection string comprises of the following elements.
 
@@ -44,14 +38,17 @@ The Connection string comprises of the following elements.
 * UserID - The Username or the UserID for the database server.
 * Initial Catalog - It is the database name on the selected server.	
 * DataSource - This is the name of the Database Server.
-
 ![OledbAdapter-OP-ConnectionString](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString.png)
-
-8. Click on Validate and Save.  
+Click on Validate and Save.  
 ![OledbAdapter-OP-ConnectionString2](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString2.png)
 
 **Protip:** Removing or erasing the generated connection string enables the click to configure button 
 {: .notice--info}
+
+**Protip:** It is mandatory to apply the allow saving password checkbox, else it will not allow login to the database which will cause failure while 
+Testing the Connection and Validation 
+{: .notice--info}
+
 
 ## How to add credentials for Cloud Integration
 
@@ -61,25 +58,14 @@ OLEDB database application in the APPSeCONNECT Cloud Portal.
 
 1. Go to the APP module of the AEC Portal. Click on the button beside the OLEDB Application name
  which you have created.
-
-
 ![Oledb-Cloud](/staticfiles/connectors/media/technology-connector/Oledb-Cloud.png)
-
 2. Click on the credential Button.
-
 3. The Credential Page opens up. Click on the button to expand the node and then Click `ADD NEW CREDENTIAL`.
-
 ![Oledb-Cloud-Credential](/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png)
-
 4.	Enter the Credential Name, Data Provider and the Connection String. 
-
 ![Oledb-Cloud-Credential-Input](/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png)
-
-**Note:** Data Provider is the Database Service Provider.
-
 5. Credential string is needed to be provided in this format always. 
 For instance: Provider=SQL****;Password=abcd****;Persist Security Info=True;User ID=salogin;Initial Catalog=jim;Data Source=SQL-SRV1*****
-
 ![Oledb-Cloud-Credential-Input2](/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input2.png)
 
 Detailed description of the credential string is given below:
@@ -91,5 +77,6 @@ Detailed description of the credential string is given below:
 -	Initial Catalog - It is the database name on the selected server.	
 -	DataSource - This is the name of the Database Server.
 
+Input all the details & Click SAVE.
 
-6. Input all the details & Click SAVE.
+**Note:** Data Provider is the Database Service Provider.

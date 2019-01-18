@@ -27,19 +27,12 @@ Organization Creation & Connection Creation
 ### Basic Flow  
 The user will execute the flow as given below.
 
-Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow-management/basic-workflow-customer-download/)
-
+Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow/basic-workflow-customer-download/)
 12. The user will now login/signup to SAP B1 (App 1) and update the stock. 
-
-
-13. The user will go back to Workflow module and select the saved workflow.
-
+13. The user will go back to Workflow module and select the saved workflow.  
 ![DelayWorkflow](/staticfiles/workflow-management/media/DelayWorkflow.png)
-
 14. The user will click on RUN button to run the workflow.
-
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
-
 16.  The user will go to Shopify (App 2) and can view the  stock updated in shopify. 
 
 
