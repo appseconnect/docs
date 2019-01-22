@@ -11,7 +11,7 @@ menus:
         identifier: mysqlplugin
 ---
 Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. 
-MySQL Plugin is now pre-packaged with AEC Agent. 
+MySQL Plugin is now pre-packaged with AEC Agent and can be installed directly. 
 This Document provides you the detailed knowhow on the installation process of MySQL Database ODBC Connector in your System.
 
 ## Prerequisites

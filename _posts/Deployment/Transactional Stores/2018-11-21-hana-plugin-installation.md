@@ -12,7 +12,7 @@ menus:
 ---
 
 Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. 
-HANA Plugin is now pre-packaged with AEC Agent. This section of the document provides you the detailed instructions on the process of installing the SAP HANA Database Plugin in your System 
+HANA Plugin is now pre-packaged with AEC Agent and can be installed directly. This section of the document provides you the detailed instructions on the process of installing the SAP HANA Database Plugin in your System 
 and how to use plugin in the adapter.
 
 ## Prerequisites

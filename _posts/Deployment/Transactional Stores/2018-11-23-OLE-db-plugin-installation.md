@@ -10,7 +10,9 @@ menus:
         weight: 9
         identifier: oleplugin
 ---
-Plugin for AEC Database of Agent to Support any DBMS at client side/client server such that AEC can support databases like MS SQL, Oracle, etc. for keeping the log and other transaction details. Please follow the below steps to install database plugin in AEC agent using plugin manager.
+Plugin for AEC Database of Agent to Support any DBMS at client side/client server such that AEC can support databases like MS SQL, Oracle, etc. for keeping the log 
+and other transaction details. Please follow the below steps to install database plugin in AEC agent using plugin manager.
+OLEDB Plugin is now pre-packaged with AEC Agent and can be installed directly
 
 1. Login to APPSeCONNECT agent using valid credentials
 2. Click on the Settings icon
