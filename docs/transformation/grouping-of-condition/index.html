@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-09-17T00:00:00+05:30">
+  <meta property="article:published_time" content="2018-09-18T00:00:00+05:30">
 
 
 
@@ -1086,7 +1086,7 @@
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Grouping of Conditions">
         <meta itemprop="description" content="What is Grouping of Conditions">
-        <meta itemprop="datePublished" content="September 17, 2018">
+        <meta itemprop="datePublished" content="September 18, 2018">
         
 
 
@@ -1146,7 +1146,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-18T00:00:00+05:30">September 18, 2018</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1186,54 +1186,50 @@ Here the condition parameters can be grouped when required such that the proper 
 
 <h2 id="grouping-of-conditions">Grouping of Conditions</h2>
 
-<p>Below are the screens of the scenarios that displays the grouping of the conditions of an object.</p>
+<p><strong>Scenario 1: Grouping of Conditions against the Country ID’s.</strong><br />
+The User can add multiple condition under an IF node. 
+Below is the Screen of the window with multiple conditions that is done for grouping the Country Ids.
+<img src="/staticfiles/transformation/media/Scenario1-GroupingCondition.png" alt="Scenario1-GroupingCondition" /></p>
 
-<p><strong>Scenario 1: Grouping of Conditions against the Country Code.</strong></p>
+<p>The condition is provided with 3 clauses whose values are provided with the grand_total (The Order Total) and 
+Country Id’s ‘US’ (United States) and ‘CAN’ (Canada).</p>
 
-<p>The User can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions 
-that is done for grouping the Country Codes.
-<img src="/staticfiles/transformation/media/UIgrouping-countrycode.png" alt="UIgrouping-countrycode" /></p>
+<p><strong>Note: Users can add multiple condition by clicking on the <code class="highlighter-rouge">ADD NEW CLAUSE</code> button and also can add Grouped Clauses by click on the + button. 
+Click on the Save icon after providing each Conditions</strong></p>
 
-<p>The condition is provided with 3 clauses whose values are provided with state codes FL (FLORIDA), NY (New York), 
-CA (California).</p>
+<p>Scenario Briefing - Suppose the user has a well settled business in North American Region but is able to deliver goods 
+or products only to some countries. Therefore, in such case the user can provide the conditional mapping as 
+<code class="highlighter-rouge">Only those orders will be accepted or confirmed whose Grand total or the Order Total is greater than 0 and 
+country codes provided are within their delivery range</code>. And if not <code class="highlighter-rouge">the orders will be synced 
+but will be kept on hold in the ERP for Reviewing</code></p>
 
-<p><strong>NOTE: Users can add multiple condition by clicking on the <code class="highlighter-rouge">ADD NEW CLAUSE</code> button. 
-Click on the Save icon after providing each Conditions.</strong></p>
+<p>The below screen shows the full grouped Conditions: 
+<img src="/staticfiles/transformation/media/Scenario1-GroupingCondition2.png" alt="Scenario1-GroupingCondition2" /></p>
 
-<p>Scenario Overview - If any order has the state code for FLORIDA or NEW YORK or California or any other State in US, 
-the IF Condition will be fulfilled and the Hard-Coded mapping for the Country Code value will be executed (ShipToCode = US). 
-The Below Screen shows the full grouped Conditions. 
-<img src="/staticfiles/transformation/media/UIgrouping-countrycode-fullgrouping.png" alt="UIgrouping-countrycode-fullgrouping" /><br />
-Note:US = United States.</p>
+<p><strong>Note:The Value <code class="highlighter-rouge">N</code> in the Otherwise (else) describes that the order needs to be kept on hold for Review.</strong></p>
 
-<p><strong>Scenario 2: Grouping of Condition for Discount.</strong></p>
+<p><strong>Scenario 2: Grouping of Condition for Discount Percentage</strong></p>
 
-<p>The User can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions 
-that is done for grouping the discount parameters.
-<img src="/staticfiles/transformation/media/UIgrouping-discount.png" alt="UIgrouping-discount" /><br />
-The condition is grouped with 2 clauses whose values are provided with greater_than 100 and less_than_equal 600 
-for the Attribute DocTotal (Order Total).</p>
+<p>The User can add multiple condition under an IF node. Below is the Screen of the window with multiple 
+conditions that is done for grouping the discount parameters.
+<img src="/staticfiles/transformation/media/Scenario2-GroupingCondition.png" alt="Scenario2-GroupingCondition" /></p>
 
-<p>Scenario Overview: Here the values for the given grouped conditions are the parameters for the discount that is to be 
-provided against the Order Total. If the Order Total lies between the given condition the hard-coded mapping value 
-DiscountPercent = 40 would be executed for the given parameter.
-The below screen shows the provided condition.
-<img src="/staticfiles/transformation/media/UIgrouping-discount-fullgrouping.png" alt="UIgrouping-discount-fullgrouping" /></p>
+<p><img src="/staticfiles/transformation/media/Scenario2-GroupingCondition2.png" alt="Scenario2-GroupingCondition2" /></p>
 
-<p><strong>Scenario 3: Grouping of Condition for Currencies in ComplexObjectCollection Level.</strong></p>
+<p>Scenario Briefing: Here the scenario is for applying discount percentage to specific group of orders where a 
+nested grouping of the If-Else Conditional Mapping is implemented at the attribute level.</p>
 
-<p>The below Condition grouping is done in the ComplexObjectCollection Level. The screen shows condition grouping for 
-the currencies.
-<img src="/staticfiles/transformation/media/UIgrouping-complexobjectcollection.png" alt="UIgrouping-complexobjectcollection" />
-The condition is provided with multiple clauses whose values are provided with the State Codes.
-NY- New York, FL-Florida,CA-California,AZ-Arizona, GA-Georgia.</p>
+<p>The condition in this scenario would be like:</p>
 
-<p>Scenario Overview: Here if the state codes for the orders are within the conditions that are provided then the 
-IF Node will be Executed whose hard-coded mapping is done against CURRENCY whose value is $
-The below screen shows the grouped condition for the Currency attribute.
-<img src="/staticfiles/transformation/media/UIgrouping-complexobjectcollection-fullgrouping.png" alt="UIgrouping-complexobjectcollection-fullgrouping" /></p>
+<p>** If the Grand total or the Order total is less than 100 the default Mapping would be carried out.
+** Else if the Order Total is greater than equal to 100 and less than equal to 600 than the provided discount percent would be executed. 
+** Otherwise, if the Order Total lies above 600 input the discount as required that needs to be executed.</p>
 
-<p><strong>Note: Currency Code $ = US Dollars.</strong></p>
+<p><strong>Note:./ As prefix for grand total is added for searching the attribute in the immediate Parent Node</strong></p>
+
+<p>The below screen that shows the provided condition.</p>
+
+<p><img src="/staticfiles/transformation/media/Scenario2-GroupingCondition3.png" alt="Scenario2-GroupingCondition3" /></p>
 
                 
             </section>
@@ -1241,7 +1237,7 @@ The below screen shows the grouped condition for the Currency attribute.
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-18T00:00:00+05:30">September 18, 2018</time></div>
                 
                 
   
