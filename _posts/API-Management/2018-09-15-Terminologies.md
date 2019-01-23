@@ -23,9 +23,6 @@ This article demonstrates the important terminologies that you need to consider 
 - **Swagger Endpoint** - To test a particular API, Swagger endpoint is helpful. Swagger gives a API testing environment which you can make use to generate documentation for the whole API stack.
 - **Inbound** - Inbound is mainly deals with the policies which are executed before the backend action is executed.
 - **Outbound** - Outbound policies are applied after the backend action is executed and output response is received to the API stack.
-- **Adapter** - To communicate to the external application, APPSeCONNECT requires an adpater which changes the language in which APPSeCONNECT understands the data to something which is understandable to the application. Adapter is developed using the [SDK](https://appseconnect.com/sdk) supported by APPSeCONNECT. 
+- **Adapter** - To communicate to the external application, APPSeCONNECT requires an adpater which changes the language in which APPSeCONNECT understands the data to something which is understandable to the application. Adapter is developed using the [SDK](/sdk/Overview-of-SDK/) supported by APPSeCONNECT. 
 - **Protocol** - A protocol or rule is a common set of transport pattern which is associated to an application. An adapter generally communicates with an application using the protocol defined by the application itself.
 - **Response setup** - Just like frontend setup, the Response setup is also an important aspect of each API. This section allows to define how the data needs to be returned from the API.
-
-
-There are a lot of other commonly used terms which you can find from the [reference section](/docs/faq).

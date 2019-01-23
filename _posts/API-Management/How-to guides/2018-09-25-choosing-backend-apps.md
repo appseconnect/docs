@@ -17,21 +17,18 @@ The heart of an API Proxy is Backend.**APPSeCONNECT** lets you connect to a data
 **Pre-Requisuties**
 
  1. [Getting a new account for APPSeCONNECT](https://www.appseconnect.com/free-trial/)
- 2. [Configure your Environment](/home/getting-started/)
-
+ 2. [Configure your Environment](/deployment/Deployment-Configuration/)
 
 * After that go to `App` section.
 
 ![Backend App How To](/staticfiles/api-management/media/BackendApp-How-to.PNG)
 
 You will find two options here.
-
- 1. Choose Apps.
- 2. Create App.
+ 1. Choose Apps
+ 2. Create App
  
 
 **Choose Apps** : With this option you get to choose apps which fall under the plan your organization has been subscribed to.
-
 ![Backend App How To](/staticfiles/api-management/media/BackendApp-How-to.PNG)
 
 
@@ -39,17 +36,17 @@ You will find two options here.
 to a remote data source.
 Upon clicking on Create App button,you are being introduced to APP Wizard.
 
-[Here is how you can create a custom App for your organization]()
+[Here is how you can create a custom App for your organization](/getting-started/)
 
 After saving your app, you need to build the data structure for your app.
 
-[Here is how you can create app schema, attributes and actions]()
+[Here is how you can create app schema, attributes and actions](/getting-started/#importing-schemas-and-actions-of-an-application)
 
-You also need to set up protocol and template for your app. [Here is how to do it]().
+You also need to set up protocol and template for your app.
 
 **For credentials**,if you have your environment set up as on-premise primary agent
 you need to give credential in your agent,otherwise for cloud Environment you can give 
-credential from App section. [Here is how to provide credentials for cloud agent]()
+credential from App section. [Here is how to provide credentials for cloud agent](/connectors/OLEDB-Credentials/)
 
 
 After this you are all set to choose app for your API proxy Backend section which you

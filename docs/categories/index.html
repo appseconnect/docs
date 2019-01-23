@@ -176,10 +176,6 @@
   <div id="searchFound" class="searchDefaultBox">
       <img src="/assets/images/search-img.png" alt="" />
       <h3>Search your Term...</h3>
-      <p>
-          Donec vulputate urna at tellus eleifend, at ornare mi porta. Curabitur et odio gravida,
-          commodo felis eget, consectetur eros. Nullam venenatis lacus placerat sagittis pharetra.
-      </p>
   </div>
   <div id="searchNotFound" class="searchDefaultBox hideBox">
       <img src="/assets/images/search-not-found.png" alt="" />
@@ -208,7 +204,7 @@
   </ul>
 </div> -->
 
-<div class="page__footer-copyright">&copy; 2018 APPSeCONNECT. <!--Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<div class="page__footer-copyright">&copy; 2019 APPSeCONNECT. <!--Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
 
           </footer>
         </div>
@@ -230,11 +226,16 @@
         var item = $($(this).attr("href"));
         if (item.length) { return item; }
     });
-    $("#sidebarMenu").on('changed.jstree', function (e, data) {
-        if (data.action == 'select_node') {
-            location.href = data.node.a_attr.href;
-        }
-    }).jstree();
+    $("#sidebarMenu")
+        .on('changed.jstree', function (e, data) {
+            if (data.action == 'select_node') {
+                location.href = data.node.a_attr.href;
+            }
+        })
+        .on('loaded.jstree', function () {
+            var node = $('#dashboardTree').jstree().find('[data-url="' + location.pathname +'"]');
+            $('#sidebarMenu').jstree('select_node', node.id); 
+        }).jstree();
     var onScrollCallback = function () {
         debugger;
         // Get container scroll position
@@ -377,7 +378,7 @@
             clearInterval(promise); 
         }
     }
-    function selectTab(url) {
+    function selectTab(url, e) {
         ajaxCall('.page', url, function (data, s, xhr) {
             menuItems = tocMenu.find("a");
             scrollItems = menuItems.map(function () {
@@ -391,6 +392,10 @@
         }, function (request) {
             $('.page').html(request.responseText);
         });
+		debugger;
+		e.stopImmediatePropagation();
+		e.preventDefault();
+        return false;
     }
     function showMenu(o) {
 

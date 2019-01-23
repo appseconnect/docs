@@ -6,6 +6,7 @@ category: "Workflow"
 menus: 
     workflow:
         title: "Terminology" 
+        weight: 1
         icon: fa fa-file-word-o
         identifier: workflowterminology
 ---

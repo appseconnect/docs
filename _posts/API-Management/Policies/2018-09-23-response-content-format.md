@@ -1,20 +1,33 @@
 ---
-title: "Response content format identification policy"
+title: "Response content type conversion policy"
 toc: true
 tag: developers
 category: "API-Management"
 menus: 
     policies:
         icon: fa fa-cogs
-        title: "Response Content Format Transform Policy" 
+        title: "Response content type conversion policy"
 ---
-**Reponse Content Format** policy inspects `Content-Type` for each HTTP request header and based upon the 
-identification,it modifies the response content. For example,if the incoming HTTP request contains 
-the `Content-Type` **XML** or **JSON** then the response content format would be converted to **XML** or **JSON** according to the 
-Request `Content-Type` header.
+**Reponses Content type conversion policy** is a type of outbound policy. 
+It can be configured for the output format such as XML or JSON. If the Response Conversion Type selected as 
+XML and backend application response will be converted to XML.
 
 **ProTip:** Policy can only be used once per API configuration.
 {: .notice--info}
+
+### Policy Statement
+
+Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. Below is the screen where you need to configure the Response Conversion Type (XML or JSON) 
+you want to deploy in the Response Content type conversion policy.
+
+![ResponseContent-TypeCoverionPolicy](/staticfiles/api-management/media/ResponseContent-TypeCoverionPolicy.PNG)
+
+The rules and setup needs to be made accordingly. 
+
+|Name|Description|Is Mandatory|
+|-----------|--------------------|----------|
+|Response Content type conversion|Represents the algorithm to be used for response content type conversion|Yes|
+|Select Response Conversion Type| Either XML or JSON|Yes|
 
 ### Policy Usage
 

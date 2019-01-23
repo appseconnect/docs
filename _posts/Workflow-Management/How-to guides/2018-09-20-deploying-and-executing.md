@@ -1,12 +1,13 @@
 ---
-title: "Deploying a workflow and executing it"
+title: "Deploying & Executing workflows"
 toc: true
 tag: developers
 category: "Workflow" 
 menus: 
     workflow:
         icon: fa fa-link
-        title: "Deploying and Executing" 
+        weight: 4
+        title: "Deploying & Executing workflows"
         identifier: deployworkflow 
 
 ---
@@ -20,12 +21,14 @@ runtime to debug and execute workflows.
 1. Start workflow and navigate to Workflow.
 2. Open the workflow you want to execute or debug.When you open the workflow screen, you will be first
 ported in edit mode. 
-3. Click on Play button to execute a workflow. 
-![Workflow Execution Step1](/staticfiles/workflow-management/media/workflow-execution-step1.png)
-**Protip: Make sure the environment you have configured for the application is running correctly. 
+3. Click on Play button to execute a workflow.   
+![Workflow Execution Step1](/staticfiles/workflow-management/media/workflow-execution-step1.png)  
+
+**Protip:** Make sure the environment you have configured for the application is running correctly. 
+ {: .notice--info}
 4. When you play a workflow, you will be able to see each step of the operation. The nodes will be automatically highlighted during execution of the work.
  - Operation is going on = yellow color
- - Operation successfully did = green color
+ - Operation successfully executed = green color
  - Operation failed = red color
 ![Workflow Execution Step2](/staticfiles/workflow-management/media/workflow-execution-step2.png)
 5. After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.  You can select a node to see a popup appear on the base of the workflow. 

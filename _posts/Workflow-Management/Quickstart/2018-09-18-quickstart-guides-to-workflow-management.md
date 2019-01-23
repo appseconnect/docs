@@ -3,10 +3,10 @@ title: "Quickstart guides to create Workflow"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 5
 menus: 
     workflow: 
         icon: fa fa-gg
+        weight: 3
         category: "Quickstart"
         title: "Quickstart" 
         identifier: quickstartworkflow

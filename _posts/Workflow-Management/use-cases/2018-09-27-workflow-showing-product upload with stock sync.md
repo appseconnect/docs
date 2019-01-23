@@ -27,7 +27,7 @@ Organization Creation & Connection Creation
 ### Basic Flow 
 The user will execute the flow as given below.
 
-Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow-management/basic-workflow-customer-download/)
+Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow/basic-workflow-customer-download/)
 
 12. User will login/signup to Shopify (App 1) and add/update the products. Similarly the user will log in to SAP B1 to  update stock 
 

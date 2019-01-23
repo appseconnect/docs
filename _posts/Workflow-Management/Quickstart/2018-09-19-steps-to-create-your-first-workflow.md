@@ -3,10 +3,10 @@ title: "Steps to create your first workflow"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 6
 menus: 
     quickstartworkflow:
         icon: fa fa-link
+        weight: 6
         title: "Steps to create your first workflow" 
         identifier: quickstartfirstworkflow
 ---
@@ -18,7 +18,7 @@ This section will guide you through workflow creation & configuration in simple 
 
 By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal. 
 
-In Workflow diagram panel there are some [Template Touchpoints]() provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
+In Workflow diagram panel there are some Template Touchpoints provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
 
 If you are new to Workflow, then go through the below steps to know more.
 
@@ -67,51 +67,40 @@ If you are new to Workflow, then go through the below steps to know more.
    ![Masterdata-Add](/staticfiles/workflow-management/media/Masterdata-Add.png)
 
 * Similarly, drag & drop more touchpoints to complete a cycle.
-
 * A list of different types of touchpoints will be generated
 
 ![Templates](/staticfiles/workflow-management/media/Templates.png)
-
-* Drag in the general touchpoint to the workflow creation area
-
+9. Drag in the general touchpoint to the workflow creation area  
 ![Adding-Touchpoint](/staticfiles/workflow-management/media/Adding-Touchpoint.png)
-
-* Once you’ve provided the details, click OK. The touchpoint will be added. Also Add an ‘End’ node
-
+10. Once you have provided the details, click OK. The touchpoint will be added. Also Add an 'End' node
 ![StartEnd-Node](/staticfiles/workflow-management/media/StartEnd-Node.png)
-
-* Connect the ‘Start’ Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
-
+11. Connect the 'Start' Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
 ![StartEnd-NodeConnected](/staticfiles/workflow-management/media/StartEnd-NodeConnected.png)
-
-Click on ‘Save’. The workflow is now ready to be executed.
-
-* After all the steps have been completed - Agent & Cloud Configuration, the workflow is ready to be run.
-
-    ![Runbutton](/staticfiles/workflow-management/media/Runbutton.png)
+12. Click on 'Save'. The workflow is now ready to be executed.  
+13. After all the steps have been completed - Agent & Cloud Configuration, the workflow is ready to be run.    
+![Runbutton](/staticfiles/workflow-management/media/Runbutton.png)
 
 NOTE - Initially the Run button will be in disabled state, you have to activate it following these steps:
 `Go to the APPSeCONNECT -> Settings Panel -> Check the Activate box`.
 
-9. Now Run it and this will open another form.
-
+9. Now Run it and this will open another form.  
  ![Workflow-Executed](/staticfiles/workflow-management/media/Workflow-Executed.png)
 
-10. In the above screen, you can see each step of the operation. 
-The circle segments of the nodes will change its color according to the operation
+10. In the above screen, you can see each step of the operation. The circle segments of the nodes will change its color according to the operation
 
 
-**Protip** Ongoing Operation= Yellow color
-        Successful Operation= Green color
-        Failed Operation  = Red color
-         {: .notice--info}
+**Protip** 
+           Ongoing Operation= Yellow color  
+           Successful Operation= Green color
+           Failed Operation  = Red color         
+{: .notice--info}
 
 11. You will view messages in each step.  You can check the workflow functionalities for the following nodes:
 
 ## Workflow Nodes
 
 * [Get](/workflow/working-with-get/)
-* [Spilter](/workflow/working-with-splitter/)
+* [Splitter](/workflow/working-with-splitter/)
 * [Merger](/workflow/working-with-merger/)
 * [Loop](/workflow/working-with-loops/)
 * [Halt Resume](/workflow/working-with-halt-resume/)

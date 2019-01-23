@@ -3,10 +3,10 @@ title: "Attribute Mapping of workflow"
 toc: true
 tag: developers
 category: "Workflow"
-weight: 7
 menus: 
     quickstartworkflow:
         icon: fa fa-link
+        weight: 7
         title: "Attribute Mapping of workflow" 
         identifier: quickstartfirstworkflow
 ---
@@ -26,8 +26,8 @@ You can search for a connection from the Search section. Hover the mouse on the 
 {: .notice--info}
 4. You will see a page like this. Refer to this document.  
 ![Attribute-Mapping3](/staticfiles/workflow-management/media/Attribute-Mapping3.png)  
-5. Choose Open Mapping, A pop-up will open.  
-![Attribute-Mapping4](/staticfiles/workflow-management/media/Attribute-Mapping4.png)  
+5. Choose Open Mapping, A pop-up will open.    
+![Attribute-Mapping4](/staticfiles/workflow-management/media/Attribute-Mapping4.jpg)  
 6. In the white box section, you have to write the fields for mapping. You can also click on the entities/attributes to get it on the box.If value mapping is required, check the box below and add some tips.
 Choose the value mapping type. Leaving a comment is optional.  
 7. You can now enable or disable attribute mapping. `Disable Mapping feature` is not available for the primary key.
