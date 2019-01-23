@@ -22,8 +22,8 @@ This node is used for decision making during workflow execution. A rule can be a
 
 The above scenario can be implementd by defining below rule. In this rule we have defined the rule criteria using the EvaluateOutputData token with the following expression `~{EvaluateOutputData("//dis:EmailAddress")}~ ` .
 
-![Rule Node](/staticfiles/workflow-management/media/Rule/RuleNode.PNG)
+![Rule Node](/staticfiles/workflow-management/media/Rule/RuleNode.png)
 
 Below image show the implementation of above scenario using the `RULE` node.
 
-![Rule Work Flow](/staticfiles/workflow-management/media/Rule/RuleWorkFlow.PNG)
+![Rule Work Flow](/staticfiles/workflow-management/media/Rule/RuleWorkFlow.png)

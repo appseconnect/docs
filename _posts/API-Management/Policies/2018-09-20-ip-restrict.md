@@ -19,7 +19,7 @@ the access for all other clients,this policy would provide exactly that configur
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
 Below are the list of configurations required for this policy.
 
-![I P Restrict Policy](/staticfiles/api-management/media/IPRestrictPolicy.PNG)
+![I P Restrict Policy](/staticfiles/api-management/media/IPRestrictPolicy.png)
 
 The rules and setup needs to be made accordingly. 
 

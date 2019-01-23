@@ -25,4 +25,4 @@ menus:
 
 The above mentioned scenario can be implemented using the below workflow.
 
-![Halt](/staticfiles/workflow-management/media/HaltResume/Halt.PNG)
+![Halt](/staticfiles/workflow-management/media/HaltResume/Halt.png)

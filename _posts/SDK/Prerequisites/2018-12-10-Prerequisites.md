@@ -76,7 +76,7 @@ Follow the instructions in ToDo and create the adapter. Let us know at support@a
 Once you add the nuget package of APPSeCONNECT, you will find a number of files automatically created which will help in dealing with the various section of code. Let us define the different 
 folders such that it is easier to develop an adapter. 
 
-![Adapter Folder Structure](/staticfiles/sdk-references/media/adapter-folder-structure.PNG)
+![Adapter Folder Structure](/staticfiles/sdk-references/media/adapter-folder-structure.png)
 
 When you look at the Solution Explorer of Visual Studio project after you add the APPSeCONNECT nuget package, you will see 
 files and folders like the one above. 

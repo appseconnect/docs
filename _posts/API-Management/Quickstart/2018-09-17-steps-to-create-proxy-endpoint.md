@@ -54,11 +54,11 @@ details are important to create the face of the API.
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
 not specify the version element in the API, you will face lot of challenges in future. 
-![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.PNG)
+![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.png)
 
 4. Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
-![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.PNG)
+![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.png)
 
 In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
 of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
@@ -66,7 +66,7 @@ you can continue the wizard. For Policy Configuration, Click [here](/api-managem
 
 5. The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API. 
-![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.PNG)  
+![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.png)  
 6. The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select `Schema Action`
 from the drop down list. [Click here](/getting-started/#importing-schemas-and-actions-of-an-application) to know more  
 7. The outbound policies are those which are applied after the backend is executed. Here also similar to the Inbound 
@@ -96,11 +96,11 @@ if you are not happy with our default messaging.
 
 * By Default the user has 1 options each for Success and Failure status and can select the response codes 
 from the drop-down option depending upon the Response.
-![response-setup-Proxy1](/staticfiles/api-management/media/response-setup-Proxy1.PNG)
+![response-setup-Proxy1](/staticfiles/api-management/media/response-setup-Proxy1.png)
 * The user can also add Custom Responses from the `ADD RESPONSE RULE` option.
-![response-setup-Proxy2](/staticfiles/api-management/media/response-setup-Proxy2.PNG)
+![response-setup-Proxy2](/staticfiles/api-management/media/response-setup-Proxy2.png)
 * The Response statuses can also be changed or edited by clicking on the Configure options. The Configure window is displayed below.
-![response-setup-Proxy3](/staticfiles/api-management/media/response-setup-Proxy3.PNG)  
+![response-setup-Proxy3](/staticfiles/api-management/media/response-setup-Proxy3.png)  
 
 9. Each of the APIs created will show the URL and Http Method which needs to be used to execute it from the listing screen.
 
@@ -108,14 +108,14 @@ from the drop-down option depending upon the Response.
 
 **Note:  For a Particular Proxy endpoint, users can have a multiple ACTIONS like `GET, PUT, POST, DELETE**
 
-![MultipleActions_OneProxy](/staticfiles/api-management/media/MultipleActions_OneProxy.PNG)  
+![MultipleActions_OneProxy](/staticfiles/api-management/media/MultipleActions_OneProxy.png)  
 
 ### Steps to follow while editing your proxy endpoint
 
 The Edit screen of proxy provides you a tree view which lets you edit individual section of the API, adding new sections,
 investigate policies or execute the documentation.
 
-![Proxy Api Edit Screen](/staticfiles/api-management/media/proxy-api-edit-screen.PNG)
+![Proxy Api Edit Screen](/staticfiles/api-management/media/proxy-api-edit-screen.png)
 
 The above screen provides information of a particular API in individual nodes. You can add new methods to an API,
 change versions, publish new version or add credential to the backend. 
@@ -130,8 +130,8 @@ This feature can be accessed in the Backend Node in the API Proxy.
 1.	In the API Proxy, click on the edit option for any proxy created.
 2.	Expand the nodes until Backend Services.
 3.  Click on the **edit symbol** for editing the Schema Action.
-![SchemaAction-Edit](/staticfiles/api-management/media/SchemaAction-Edit.PNG)
+![SchemaAction-Edit](/staticfiles/api-management/media/SchemaAction-Edit.png)
 4.  Mention the Action Name, Description and the Query and click on SAVE.
-![ActionFilter-Edit](/staticfiles/api-management/media/ActionFilter-Edit.PNG)
+![ActionFilter-Edit](/staticfiles/api-management/media/ActionFilter-Edit.png)
 
        

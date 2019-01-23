@@ -34,7 +34,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![Workflow-SalesOrderAdd](/staticfiles/workflow-management/media/Workflow-SalesOrderAdd.PNG)
+![Workflow-SalesOrderAdd](/staticfiles/workflow-management/media/Workflow-SalesOrderAdd.png)
 
 14. The user will click on RUN button to run the workflow.
 

@@ -253,7 +253,7 @@ directly go to the cloud portal to map the user interfaces correctly with that o
 - Open the App section and open the particular Application you want to design.
 - Open Credential button to open the dynamic UI popup.
 - Drag and drop fields on the design pane. You need to mention the property name on the ID of the dynamic field.  
-![Credential User Interface](/staticfiles/sdk-references/media/credential-user-interface.PNG)
+![Credential User Interface](/staticfiles/sdk-references/media/credential-user-interface.png)
 - Once the credential design is created, you can save it for future use. 
 
 When the application is added by the end user, the end user will be provided with a separate pane where he can provide
