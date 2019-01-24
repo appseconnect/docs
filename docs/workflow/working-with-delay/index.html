@@ -1191,7 +1191,7 @@
 
 <p>In the below example I want to upload stock from ERP to Shopify and for creating the example we are assuming that Shopify API accept one request per second then we can implement delay node with interval time of one secondlike the below picture.</p>
 
-<p><img src="/staticfiles/workflow-management/media/DelayNode/DelayNode.PNG" alt="Delay Node" /></p>
+<p><img src="/staticfiles/workflow-management/media/DelayNode/DelayNode.png" alt="Delay Node" /></p>
 
                 
             </section>
@@ -1917,7 +1917,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2068,6 +2067,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

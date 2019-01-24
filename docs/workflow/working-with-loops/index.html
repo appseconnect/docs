@@ -1182,11 +1182,11 @@
 
 <h3 id="self-loop-with-5-occurences">Self loop with 5 occurences.</h3>
 
-<p><img src="/staticfiles/workflow-management/media/Selfloop/No_ofTime.PNG" alt="No Of Time" /></p>
+<p><img src="/staticfiles/workflow-management/media/Selfloop/No_ofTime.png" alt="No Of Time" /></p>
 
 <p>Self loop with until data available option</p>
 
-<p><img src="/staticfiles/workflow-management/media/Selfloop/UntilData.PNG" alt="Until Data" /></p>
+<p><img src="/staticfiles/workflow-management/media/Selfloop/UntilData.png" alt="Until Data" /></p>
 
                 
             </section>
@@ -1920,7 +1920,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2071,6 +2070,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

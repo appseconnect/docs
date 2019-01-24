@@ -1200,7 +1200,7 @@
 <p>The user will execute the flow as given below</p>
 
 <h3 id="post-conditions">Post-conditions</h3>
-<p>The user can now retrieve the data in the standard executable format like JSON or XML from the required database/application/isolated network with no API</p>
+<p>The user can now retrieve the data in the standard executable format like JASON or XML from the required database/application/isolated network with no API</p>
 <h3 id="exception-courses">Exception courses</h3>
 <p>The user will get operational error thrown on the response message, if the get customer/get product data is failure.</p>
 <h3 id="frequency-of-use">Frequency of use</h3>
@@ -1796,7 +1796,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -1947,6 +1946,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

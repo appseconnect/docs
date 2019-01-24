@@ -1421,7 +1421,7 @@ directly go to the cloud portal to map the user interfaces correctly with that o
   <li>Open the App section and open the particular Application you want to design.</li>
   <li>Open Credential button to open the dynamic UI popup.</li>
   <li>Drag and drop fields on the design pane. You need to mention the property name on the ID of the dynamic field.<br />
-<img src="/staticfiles/sdk-references/media/credential-user-interface.PNG" alt="Credential User Interface" /></li>
+<img src="/staticfiles/sdk-references/media/credential-user-interface.png" alt="Credential User Interface" /></li>
   <li>Once the credential design is created, you can save it for future use.</li>
 </ul>
 
@@ -2829,7 +2829,6 @@ with the adapter, you need to a special interface <code class="highlighter-rouge
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2980,6 +2979,7 @@ with the adapter, you need to a special interface <code class="highlighter-rouge
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

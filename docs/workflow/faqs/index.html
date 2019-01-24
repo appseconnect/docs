@@ -1207,7 +1207,7 @@ The workflow management screen will allow you to search, filter, create and edit
 
 <p>Yes, you can schedule your workflow by clicking on the <strong>schedule option</strong> in your workflow Panel.</p>
 
-<p><img src="/staticfiles/workflow-management/media/snapshot-button.PNG" alt="snapshot-button" /></p>
+<p><img src="/staticfiles/workflow-management/media/snapshot-button.png" alt="snapshot-button" /></p>
 
 <p><strong>8. How can I add touchpoints in my workflow?</strong></p>
 
@@ -2612,7 +2612,6 @@ Workflow Screen.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2763,6 +2762,7 @@ Workflow Screen.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

@@ -1273,7 +1273,7 @@ API endpoint URL. <a href="/api-management/Steps-to-register-url/">To register a
   <li>Go to API management from the sidebar.</li>
   <li>Select <code class="highlighter-rouge">Register URL</code>.</li>
   <li>A popup window will open where you will provide the API <code class="highlighter-rouge">URL</code>(Uniform Resource Locator).
-<img src="/staticfiles/api-management/media/register-url-org.PNG" alt="Register Url Org" /></li>
+<img src="/staticfiles/api-management/media/register-url-org.png" alt="Register Url Org" /></li>
 </ol>
 
 <p>Input the details in the window and Select the License type from the drop down list.</p>
@@ -1305,7 +1305,7 @@ for the organization, you are ready to implement your first API on the platform.
 
 <p>To configure authentication server, click on <code class="highlighter-rouge">Authentication</code> button from top menu, a new popup
 appears which will allow you to generate Client Id and Client Secrets.<br />
-<img src="/staticfiles/api-management/media/authentication-genarate-api-key.PNG" alt="Authentication Genarate Api Key" /></p>
+<img src="/staticfiles/api-management/media/authentication-genarate-api-key.png" alt="Authentication Genarate Api Key" /></p>
 
 <p>In the popup, you are supposed to select a particular user for which you want to generate Client ID &amp; Client Secret . 
 As per <code class="highlighter-rouge">Basic authentication standard</code> you are supposed to provide <code class="highlighter-rouge">Authorization</code> header to every request. 
@@ -1321,7 +1321,7 @@ create a new API through a wizard.</p>
 
 <p>The Wizard starts with Basic Information screen which corresponds to the Frontend of the application. This section allows the organization to define
 the API url endpoint, the description, the HTTP Method, Versioning, etc. 
-<img src="/staticfiles/api-management/media/api-frontend-configuration.PNG" alt="Api Frontend Configuration" /></p>
+<img src="/staticfiles/api-management/media/api-frontend-configuration.png" alt="Api Frontend Configuration" /></p>
 
 <p>The URL generated for the API will be shown while data is created.</p>
 
@@ -1351,7 +1351,7 @@ consider whether the proper data source is picked up or not. To consider picking
 
 <p>Once the backend is properly selected, you can pick it for your API.</p>
 
-<p><img src="/staticfiles/api-management/media/api-backend-configuration.PNG" alt="Api Backend Configuration" /></p>
+<p><img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></p>
 
 <p>When dealing with backends, it is also important to consider how you will put credentials for the application. To ensure you properly
 pick the credential make sure you have <a href="/deployment/Deployment-Configuration/">configured the environments</a> correctly and also 
@@ -1362,7 +1362,7 @@ provided <a href="/connectors/OLEDB-Credentials/">credentials for the applicatio
 <p>Response configuration represents how the response is returned for the APIs. The API generally return in JSON or XML based on the 
 content type of the request. Once a request is made, you are allowed to identify the response from backend server and depending on
 either success or failure, you can customize your messages which will be returned. 
-<img src="/staticfiles/api-management/media/response-configure-api.PNG" alt="Response Configure Api" /></p>
+<img src="/staticfiles/api-management/media/response-configure-api.png" alt="Response Configure Api" /></p>
 
 <p>Here the response is configured using custom message.</p>
 
@@ -2771,7 +2771,6 @@ you as a owner of the file would be having less power to change your content.</p
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2922,6 +2921,7 @@ you as a owner of the file would be having less power to change your content.</p
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

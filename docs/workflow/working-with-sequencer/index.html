@@ -1416,7 +1416,7 @@ Sequence node have three components</p>
 </code></pre>
 <p>To sort the order data based on the creation date we have defined the sequencer node in this way.</p>
 
-<p><img src="/staticfiles/workflow-management/media/Sequencer/sequencer.PNG" alt="Sequencer" /></p>
+<p><img src="/staticfiles/workflow-management/media/Sequencer/sequencer.png" alt="Sequencer" /></p>
 
                 
             </section>
@@ -2150,7 +2150,6 @@ Sequence node have three components</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2301,6 +2300,7 @@ Sequence node have three components</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

@@ -1192,7 +1192,7 @@ appseconnect agent and use Visual Studio to debug the code.</p>
   <li>Now open the adapter code and use Debug -&gt; Attach to Process.</li>
   <li>A window will popup, where you need to select InSync.eConnect.AppStarter.exe.</li>
   <li>Now execute the touchpoint, and put a breakpoint on the code which is getting executed for Pull and Push operation. <br />
-<img src="/staticfiles/sdk-references/media/attachtoprocesshandler.PNG" alt="Attachtoprocesshandler" /></li>
+<img src="/staticfiles/sdk-references/media/attachtoprocesshandler.png" alt="Attachtoprocesshandler" /></li>
   <li>You can debug and step through your code to ensure proper working of the method.</li>
 </ol>
 
@@ -2585,7 +2585,6 @@ appseconnect agent and use Visual Studio to debug the code.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2736,6 +2735,7 @@ appseconnect agent and use Visual Studio to debug the code.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);
