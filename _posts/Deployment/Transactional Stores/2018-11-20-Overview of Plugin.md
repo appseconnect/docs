@@ -19,4 +19,7 @@ Currently, AEC Plugins are used in databases like OLE DB,
 SAP HANA and MYSQL which enables the database to communicate with
 APPSeCONNECT. 
 
-For detailed information on AEC Plugin developement, [Click here](/plugin/overview-plugins/)
+**Protip** AEC now provides prepackaged plugin with Agent. You can choose and Install the desired plugin.
+{: .notice--info}
+
+For detailed information on AEC Plugin developement, [Click here](/sdk/overview-plugins/)

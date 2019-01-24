@@ -76,20 +76,3 @@ The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is t
 
 ![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-If-Mapping.png)  
 ![LoopLevel-Mapping](/staticfiles/transformation/media/ComplexObjectCollection-else-Mapping.png)
-
-## UI Condition for Grouping Criteria
-
-In the IF-Else Mapping, the user/implementer has the privilege to add numerous Condition at one go. 
-An IF statement can have numerous conditions, APPSeCONNECT IF-ELSE Mapping can add numerous clauses or conditions. 
-Here the condition parameters can be grouped when required such that the proper grouping of the criteria could be maintained.
-
-Below is the screen that shows the grouping of the conditions of an object.  
-![grouping-condition](/staticfiles/transformation/media/grouping-condition.png)
-
-The User/Implementer can add multiple condition under an IF node. Below is the Screen of the window with multiple conditions.    
-![grouping-condition-window](/staticfiles/transformation/media/grouping-condition-window.png)
-
-You can add multiple condition by click on the ADD NEW CLAUSE button. Click on the save icon to save the condition.  
-
-Below is the Screen that displays the Added Conditions in group.  
-![grouping-addcondition](/staticfiles/transformation/media/grouping-addcondition.png)

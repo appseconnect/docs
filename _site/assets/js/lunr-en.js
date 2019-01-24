@@ -323,20 +323,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Grouping of Conditions",
-      excerpt: "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 34
-    });
-    
-  
-    idx.add({
       title: "Architecture",
       excerpt: "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 35
+      id: 34
     });
     
   
@@ -345,7 +336,7 @@ var idx = lunr(function () {
       excerpt: "Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 36
+      id: 35
     });
     
   
@@ -354,6 +345,15 @@ var idx = lunr(function () {
       excerpt: "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
       categories: [],
       tags: [],
+      id: 36
+    });
+    
+  
+    idx.add({
+      title: "Grouping of Conditions",
+      excerpt: "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
+      categories: ["Transformation"],
+      tags: ["developers"],
       id: 37
     });
     
@@ -1480,17 +1480,6 @@ var store = [
     
       
       {
-        "title": "Grouping of Conditions",
-        "url": "/transformation/grouping-of-condition/",
-        "excerpt": "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Architecture",
         "url": "/workflow/architecture-design-runtime/",
         "excerpt": "Workflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
@@ -1516,6 +1505,17 @@ var store = [
         "title": "Create Api Connecting To Api",
         "url": "/create-api-connecting-to-api/",
         "excerpt": "\ntitle: “Create API proxy existing API”\ntoc: true\ntag: developers\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Grouping of Conditions",
+        "url": "/transformation/grouping-of-condition/",
+        "excerpt": "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

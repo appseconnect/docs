@@ -22,7 +22,7 @@
             }
         })
         .on('loaded.jstree', function () {
-            var node = $('#dashboardTree').jstree(true).find('[data-url="' + location.pathname +'"]');
+            var node = $('#dashboardTree').jstree().find('[data-url="' + location.pathname +'"]');
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
@@ -166,7 +166,7 @@
             clearInterval(promise); 
         }
     }
-    function selectTab(url) {
+    function selectTab(url, e) {
         ajaxCall('.page', url, function (data, s, xhr) {
             menuItems = tocMenu.find("a");
             scrollItems = menuItems.map(function () {
@@ -181,7 +181,9 @@
         }, function (request) {
             $('.page').html(request.responseText);
         });
-
+		debugger;
+		e.stopImmediatePropagation();
+		e.preventDefault();
         return false;
     }
     function showMenu(o) {
