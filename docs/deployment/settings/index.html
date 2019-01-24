@@ -1190,7 +1190,7 @@ the customized tasks.</p>
 are given below.</li>
 </ol>
 
-<p><img src="/staticfiles/deployment/media/Setting/SettingPanel.PNG" alt="SettingPanel" /></p>
+<p><img src="/staticfiles/deployment/media/Setting/SettingPanel.png" alt="SettingPanel" /></p>
 
 <p>The Agent Setting Panel is divided into four components- <code class="highlighter-rouge">Activate Autosync, Resync Schedule, Diagnosis Mode, Log Target For, Severity level, Email Notification,
 Export Data to Cloud, Host Public URL</code>.</p>
@@ -1236,7 +1236,7 @@ These items will be again resynced from the resync bucket.</p>
 <p>As we wanted to enable automatic synchronization of data without manual intervention, we also support our customers to 
 configure autosync for failed items. To enable auto-sync for resync bucket, you can open Agent and go to settings.</p>
 
-<p><img src="/staticfiles/deployment/media/Setting/Resync-Schedule.PNG" alt="Resync-Schedule" /></p>
+<p><img src="/staticfiles/deployment/media/Setting/Resync-Schedule.png" alt="Resync-Schedule" /></p>
 
 <p>In the above panel, the resync is scheduled at 12:00 AM Hrs. night and will execute for 1 hrs from that time with 100 items taken in
 batch. Once Resync Schedule is activated the schedule will be taken care of.</p>
@@ -1259,7 +1259,7 @@ that entry will not be picked up again.</p>
 <p>This section enables to do the diagnostic mode checking of the output files ( both manual &amp; autosync) where the user gets the option to check
 the in memory data file dump for all the input, transformed and output data.</p>
 
-<p><img src="/staticfiles/deployment/media/Setting/DiagnosticMode.PNG" alt="DiagnosticMode" /></p>
+<p><img src="/staticfiles/deployment/media/Setting/DiagnosticMode.png" alt="DiagnosticMode" /></p>
 
 <p><strong>Agent Output Path - Manual File Path</strong></p>
 
@@ -1270,7 +1270,7 @@ the in memory data file dump for all the input, transformed and output data.</p>
 <p>AEC platform gives you the option to customize the type of logging APPSeCONNECT writes on your system. 
 There are three options that you can set for logging and based on the selection our Agent as well as the background service logs.</p>
 
-<p><img src="/staticfiles/deployment/media/Setting/LoggingSettings.PNG" alt="LoggingSettings" /></p>
+<p><img src="/staticfiles/deployment/media/Setting/LoggingSettings.png" alt="LoggingSettings" /></p>
 
 <p><strong>Log Target</strong> - The log target will give you option on what type of logs you want our agent to write. 
   Generally, it is recommended to have only Error logs in production.</p>
@@ -2676,7 +2676,6 @@ Once the data is uploaded, it can again be refreshed or downloaded from the clou
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2827,6 +2826,7 @@ Once the data is uploaded, it can again be refreshed or downloaded from the clou
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

@@ -30,7 +30,7 @@ following `XPATH` `//addresses` ,I have provided Batchsize as 2 abd Entity name 
 
 Filter node defination  will be like this
 
-![Merger](/staticfiles/workflow-management/media/Merger/Merger.PNG)
+![Merger](/staticfiles/workflow-management/media/Merger/Merger.png)
 
 Single data file contains below XML data
 

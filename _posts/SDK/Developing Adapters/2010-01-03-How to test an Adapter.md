@@ -21,7 +21,7 @@ appseconnect agent and use Visual Studio to debug the code.
 3. Now open the adapter code and use Debug -> Attach to Process.
 4. A window will popup, where you need to select InSync.eConnect.AppStarter.exe. 
 5. Now execute the touchpoint, and put a breakpoint on the code which is getting executed for Pull and Push operation.   
-![Attachtoprocesshandler](/staticfiles/sdk-references/media/attachtoprocesshandler.PNG)
+![Attachtoprocesshandler](/staticfiles/sdk-references/media/attachtoprocesshandler.png)
 6. You can debug and step through your code to ensure proper working of the method. 
 
 The debugger will allow you to debug, step - into, see local variables, or even use Intermediate Window from Visual Studio.

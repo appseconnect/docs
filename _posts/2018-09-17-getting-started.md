@@ -25,7 +25,7 @@ Let us dive in details about every section of customer profile information.
 4. Here you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address.
 5. In the `Summary section`, the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
-![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.PNG)
+![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.png)
 7. `My Feeds` section is for seeing your recent activities.
 By Clicking Projects, [Workflows](/workflow/overview/), you will be redirected to that particular pages respectively.
 
@@ -33,7 +33,7 @@ By Clicking Projects, [Workflows](/workflow/overview/), you will be redirected t
 {: .notice--info}
 
 
-![ChangeDetails](/staticfiles/root/media/ChangeDetails.PNG)
+![ChangeDetails](/staticfiles/root/media/ChangeDetails.png)
 
 
 In the Personal Info tab, you can edit your name, mobile number.
@@ -43,7 +43,7 @@ In the Personal Info tab, you can edit your name, mobile number.
 * The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
 * The **Security Setting** enables you to handle all the security related settings like password expiry time set, account deactivation and updating encryption policy. 
 
-![SecuritySettings](/staticfiles/root/media/SecuritySettings.PNG)
+![SecuritySettings](/staticfiles/root/media/SecuritySettings.png)
 
 
 # CONFIGURING APPSeCONNECT 
@@ -165,11 +165,11 @@ This section enables the user to view and add the Schema and its Actions.
 1. Login to the APPSeCONNECT Portal with valid credentials.
 2. Move into the APPS Page and [Choose any application](/getting-started/). 
 3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
-![Select-Schema](/staticfiles/root/media/Select-Schema.PNG)
+![Select-Schema](/staticfiles/root/media/Select-Schema.png)
 4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.
-![Add-Schema](/staticfiles/root/media/Add-Schema.PNG)
+![Add-Schema](/staticfiles/root/media/Add-Schema.png)
 5. The Actions inside a schema can be viewed by clicking on the + sign. The ADD ACTION option is provided for Adding Actions inside a Schema.
-![Add-Action](/staticfiles/root/media/Add-Action.PNG)
+![Add-Action](/staticfiles/root/media/Add-Action.png)
 
 **Protip:** Default Schemas would only be present for the Pre-packaged APPS.
 {: .notice--info}
@@ -246,17 +246,17 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 ### Environment setup of the on-premise agent:
 
  1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
- ![DashboardScreen](/staticfiles/root/media/DashboardScreen.PNG)
+ ![DashboardScreen](/staticfiles/root/media/DashboardScreen.png)
  2. Run the setup folder to install the Agent in the system.
  3. Open the installed Agent on your machine.
  4. Login to the agent with your portal credentials.  
-   ![Login1](/staticfiles/root/media/Login1.PNG)
+   ![Login1](/staticfiles/root/media/Login1.png)
  5. There are four icons as shown below:
 * The home icon shows the connections in the project.
 * The apps configuration icon (next to the home icon) shows the applications used for the connections which need to be configured for successful sync.
 * The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.
 * The last one is the Workflow option that displays the configured workflows in the project.
-  ![Connections](/staticfiles/root/media/Connections.PNG)
+  ![Connections](/staticfiles/root/media/Connections.png)
 
 ### Environment setup of the Cloud agent
 
@@ -266,9 +266,9 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 * The connection between the two applications should be cloud supported.
 
 1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).
-![App](/staticfiles/root/media/App.PNG)
+![App](/staticfiles/root/media/App.png)
 2. Go to the Connections page and assign the app's credential to the connection by choosing the configuration setup option as shown below.
-![Connection_New](/staticfiles/root/media/Connection_New.PNG)
+![Connection_New](/staticfiles/root/media/Connection_New.png)
 3. Click on the View the Connection icon and navigate to the touchpoints page.
 4. Click on the play button to run the sync process.
-![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.PNG)
+![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.png)

@@ -32,9 +32,9 @@ ported in edit mode.
  - Operation failed = red color
 ![Workflow Execution Step2](/staticfiles/workflow-management/media/workflow-execution-step2.png)
 5. After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.  You can select a node to see a popup appear on the base of the workflow. 
-![Data Inspector Files](/staticfiles/workflow-management/media/data-inspector-files.PNG)
+![Data Inspector Files](/staticfiles/workflow-management/media/data-inspector-files.png)
 6. Each node selection opens a new window from the bottom of the page which will allow you to inspect the process. 
-![Data Inspector Files](/staticfiles/workflow-management/media/data-inspector-files.PNG)
+![Data Inspector Files](/staticfiles/workflow-management/media/data-inspector-files.png)
 
 The data inspector watch window will allow the user to check the logs, data logs and the sync files.
 

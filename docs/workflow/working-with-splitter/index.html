@@ -1191,7 +1191,7 @@
 
 <p>For example I have a customer data which contains multiple customer data.I have defined a batch size of 1 in the splitter node, <code class="highlighter-rouge">XPATH</code> as <code class="highlighter-rouge">//Customer</code> and Entity name as <code class="highlighter-rouge">Envelops</code>. So after data passed through the Splitter node 20 individual data files will be created where each file contains a single customer data. The Splitter node defination will be like the below image</p>
 
-<p><img src="/staticfiles/workflow-management/media/Splitter/Splitter.PNG" alt="Splitter" /></p>
+<p><img src="/staticfiles/workflow-management/media/Splitter/Splitter.png" alt="Splitter" /></p>
 
 <p>Source XML which contains multiple customer data will be below</p>
 
@@ -2143,7 +2143,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2294,6 +2293,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

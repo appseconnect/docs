@@ -1192,7 +1192,7 @@
 
 <p>The above mentioned scenario can be implemented using the below workflow.</p>
 
-<p><img src="/staticfiles/workflow-management/media/HaltResume/Halt.PNG" alt="Halt" /></p>
+<p><img src="/staticfiles/workflow-management/media/HaltResume/Halt.png" alt="Halt" /></p>
 
                 
             </section>
@@ -1918,7 +1918,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2069,6 +2068,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

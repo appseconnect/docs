@@ -30,7 +30,7 @@ and Response setup of the API.
 ## Steps to Create Swagger Documentation:
 
 1. Go to **API** section from the left side menu.
-![api-swagger](/staticfiles/api-management/media/api-swagger.PNG)
+![api-swagger](/staticfiles/api-management/media/api-swagger.png)
 2. Inside **API ManagementSection** you can see `Webhooks` and `Proxy`.By default, Webhook section will be
   shown and you can see all your connections listed here. Click on **Proxy**. Here you can view the list of Proxy API created or you if you are a 
   first time user, you can create a New Proxy API. `Add New` button enables to create a new Proxy API. Refer [Create a Proxy API](/api-management/steps-to-create-proxy-endpoint/)

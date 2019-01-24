@@ -1215,7 +1215,7 @@ to the other Application you are working with.</li>
 <p>Suppose you are updating inventory for 20 products but have not marked, show in web for those products, hence after integration your inventory will
 not get updated. It will only get updated when <code class="highlighter-rouge">Show in Web</code> is marked as “YES”.</p>
 
-<p><img src="/staticfiles/connectors/media/application-connector/Troubleshoot-Priority.PNG" alt="Troubleshoot-Priority" /></p>
+<p><img src="/staticfiles/connectors/media/application-connector/Troubleshoot-Priority.png" alt="Troubleshoot-Priority" /></p>
 <h2 id="attributes-and-actions">Attributes and Actions</h2>
 
 <p>While defining a connect to a particular API endpoint inPriority, you require clear understanding about the data requirements 
@@ -2636,7 +2636,6 @@ against the Schema for the business scenario as required or the user can utilize
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2787,6 +2786,7 @@ against the Schema for the business scenario as required or the user can utilize
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

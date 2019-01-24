@@ -19,7 +19,7 @@ triggered for a specific call, the caller will receive `429 - Throttling Maximum
 
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
 Below are the list of configurations required for this policy. 
-![Ip Restrict Policy](/staticfiles/api-management/media/ip-restrict-policy.PNG)
+![Ip Restrict Policy](/staticfiles/api-management/media/ip-restrict-policy.png)
 
 The rules and setup needs to be made accordingly. 
 

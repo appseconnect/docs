@@ -1188,11 +1188,11 @@ and responded back to the application workspace.</p>
 
 <p>The highlighted node with red one is an implementation of <code class="highlighter-rouge">GET</code> node.</p>
 
-<p><img src="/staticfiles/workflow-management/media/GetNode/GetNode.PNG" alt="Get Node" /></p>
+<p><img src="/staticfiles/workflow-management/media/GetNode/GetNode.png" alt="Get Node" /></p>
 
 <p>Below picture depicts the action filter based on which action of <code class="highlighter-rouge">GET</code> node will be performed.Depending on APP the filter structure may changed.</p>
 
-<p><img src="/staticfiles/workflow-management/media/GetNode/ActionFilter.PNG" alt="Action Filter" /></p>
+<p><img src="/staticfiles/workflow-management/media/GetNode/ActionFilter.png" alt="Action Filter" /></p>
 
                 
             </section>
@@ -1918,7 +1918,6 @@ and responded back to the application workspace.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2069,6 +2068,7 @@ and responded back to the application workspace.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

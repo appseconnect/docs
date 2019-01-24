@@ -1180,7 +1180,7 @@
   Click on Register URL button. Upon clicking you will get a  popup like this.</li>
 </ol>
 
-<p><img src="/staticfiles/api-management/media/register-url-org.PNG" alt="Register Url Org" /></p>
+<p><img src="/staticfiles/api-management/media/register-url-org.png" alt="Register Url Org" /></p>
 
 <ol>
   <li>Activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
@@ -1191,7 +1191,7 @@
   After this,click on save button and your url would be saved.</p>
 
 <p>The Screen shows the license types configured while registering the URL.<br />
-<img src="/staticfiles/api-management/media/register-url-org1.PNG" alt="register-url-org1" /></p>
+<img src="/staticfiles/api-management/media/register-url-org1.png" alt="register-url-org1" /></p>
 
 <ul>
   <li>
@@ -2591,7 +2591,6 @@ If not done, then in case of loss of data loss may happen.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2742,6 +2741,7 @@ If not done, then in case of loss of data loss may happen.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

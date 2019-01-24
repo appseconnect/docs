@@ -1182,19 +1182,19 @@
 
 <p>If you are creating <strong>API proxy</strong> for the <code class="highlighter-rouge">First Time</code>, you are being presented with a Wizard like this.</p>
 
-<p><img src="/staticfiles/api-management/media/HowToConnectDataSource-Wizard.PNG" alt="How To Connect Data Source Wizard" /></p>
+<p><img src="/staticfiles/api-management/media/HowToConnectDataSource-Wizard.png" alt="How To Connect Data Source Wizard" /></p>
 
 <ul>
   <li>After Providing API Proxy Details and <code class="highlighter-rouge">Inbound Policy</code> details (if applicable) you will get to <strong>Backend Service</strong> tab.</li>
 </ul>
 
-<p><img src="/staticfiles/api-management/media/HowToConnectDataSource-selectapp.PNG" alt="How To Connect Data Source Selectapp" /></p>
+<p><img src="/staticfiles/api-management/media/HowToConnectDataSource-selectapp.png" alt="How To Connect Data Source Selectapp" /></p>
 
 <ul>
   <li>Here First you have to choose app to which you want to connect.</li>
 </ul>
 
-<p><img src="/staticfiles/api-management/media/HowToConnectDataSource-appandappversion.PNG" alt="How To Connect Data Source Appandappversion" /></p>
+<p><img src="/staticfiles/api-management/media/HowToConnectDataSource-appandappversion.png" alt="How To Connect Data Source Appandappversion" /></p>
 
 <ul>
   <li>
@@ -2602,7 +2602,6 @@ Schema <code class="highlighter-rouge">OCRD</code> and Action <code class="highl
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2753,6 +2752,7 @@ Schema <code class="highlighter-rouge">OCRD</code> and Action <code class="highl
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

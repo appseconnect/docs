@@ -1201,11 +1201,11 @@ and in <code class="highlighter-rouge">OP Agent</code>. This section of the docu
 
 <p>b.	Click on the Edit button on your project.</p>
 
-<p><img src="/staticfiles/deployment/media/AgentConfig/Edit-Organization.PNG" alt="Edit-Organization" /></p>
+<p><img src="/staticfiles/deployment/media/AgentConfig/Edit-Organization.png" alt="Edit-Organization" /></p>
 
 <p>c.	Enable the Check-Box for <strong>Cloud Hosting</strong> and click <strong>SAVE</strong>.</p>
 
-<p><img src="/staticfiles/deployment/media/AgentConfig/Edit-Organization1.PNG" alt="Edit-Organization1" /></p>
+<p><img src="/staticfiles/deployment/media/AgentConfig/Edit-Organization1.png" alt="Edit-Organization1" /></p>
 
 <p>d.	After enabling the organisation for Cloud Hosting, a new environment is to be created for CLOUD EXECUTION.</p>
 
@@ -2640,7 +2640,6 @@ sync panel checkbox in the Connections page.</li>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2791,6 +2790,7 @@ sync panel checkbox in the Connections page.</li>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

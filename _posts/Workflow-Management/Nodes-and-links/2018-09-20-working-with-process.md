@@ -21,8 +21,8 @@ menus:
 
 The highlighted node with red one is an implementation of `PROCESS` node.
 
- ![Process Node](/staticfiles/workflow-management/media/ProcessNode/ProcessNode.PNG)
+ ![Process Node](/staticfiles/workflow-management/media/ProcessNode/ProcessNode.png)
 
 Below picture is an example of mapping based on which data transformation will be performed by the `PROCESS` node.
 
-![Mapping](/staticfiles/workflow-management/media/ProcessNode/Mapping.PNG)
+![Mapping](/staticfiles/workflow-management/media/ProcessNode/Mapping.png)

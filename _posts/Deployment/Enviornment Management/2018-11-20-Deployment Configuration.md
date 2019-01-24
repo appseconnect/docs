@@ -26,11 +26,11 @@ a.	On the Dashboard of your cloud portal, click PROJECTS > Manage Projects.
 
 b.	Click on the Edit button on your project.
 
-![Edit-Organization](/staticfiles/deployment/media/AgentConfig/Edit-Organization.PNG)
+![Edit-Organization](/staticfiles/deployment/media/AgentConfig/Edit-Organization.png)
 
 c.	Enable the Check-Box for **Cloud Hosting** and click **SAVE**.
 
-![Edit-Organization1](/staticfiles/deployment/media/AgentConfig/Edit-Organization1.PNG)
+![Edit-Organization1](/staticfiles/deployment/media/AgentConfig/Edit-Organization1.png)
 
 d.	After enabling the organisation for Cloud Hosting, a new environment is to be created for CLOUD EXECUTION.
 

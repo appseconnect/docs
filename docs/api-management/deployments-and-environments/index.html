@@ -2590,7 +2590,6 @@ Once confirmed, you can add new APIs, and do an <code class="highlighter-rouge">
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2741,6 +2740,7 @@ Once confirmed, you can add new APIs, and do an <code class="highlighter-rouge">
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

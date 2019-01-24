@@ -1254,7 +1254,7 @@ Follow the instructions in ToDo and create the adapter. Let us know at support@a
 <p>Once you add the nuget package of APPSeCONNECT, you will find a number of files automatically created which will help in dealing with the various section of code. Let us define the different 
 folders such that it is easier to develop an adapter.</p>
 
-<p><img src="/staticfiles/sdk-references/media/adapter-folder-structure.PNG" alt="Adapter Folder Structure" /></p>
+<p><img src="/staticfiles/sdk-references/media/adapter-folder-structure.png" alt="Adapter Folder Structure" /></p>
 
 <p>When you look at the Solution Explorer of Visual Studio project after you add the APPSeCONNECT nuget package, you will see 
 files and folders like the one above.</p>
@@ -2649,7 +2649,6 @@ files and folders like the one above.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2800,6 +2799,7 @@ files and folders like the one above.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);
