@@ -1195,7 +1195,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 
 <ol>
   <li>List of Snapshot is present on the upper section of the workflow screen as shown below:
-<img src="/staticfiles/workflow-management/media/snapshot-button.PNG" alt="snapshot-button" /></li>
+<img src="/staticfiles/workflow-management/media/snapshot-button.png" alt="snapshot-button" /></li>
   <li>Click on the <code class="highlighter-rouge">Snapshot</code>button and the following execution of workflow data will be fetched.
 <img src="/staticfiles/workflow-management/media/workflowexe-snapshot.png" alt="workflowexe-snapshot" /><br />
 The execution screen contains the following details of the workflow snapshot
@@ -2664,7 +2664,6 @@ in single screen listing of snapshot.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2815,6 +2814,7 @@ in single screen listing of snapshot.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

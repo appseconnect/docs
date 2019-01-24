@@ -1184,7 +1184,7 @@ rejected.</p>
 <p>Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
 Below are the list of configurations required for this policy.</p>
 
-<p><img src="/staticfiles/api-management/media/ValidateHTTPHeaderPolicy.PNG" alt="Validate H T T P Header Policy" /></p>
+<p><img src="/staticfiles/api-management/media/ValidateHTTPHeaderPolicy.png" alt="Validate H T T P Header Policy" /></p>
 
 <p>The rules and setup needs to be made accordingly.</p>
 
@@ -2597,7 +2597,6 @@ Below are the list of configurations required for this policy.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2748,6 +2747,7 @@ Below are the list of configurations required for this policy.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

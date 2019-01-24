@@ -1228,11 +1228,11 @@ details are important to create the face of the API.</p>
     <p>The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
 not specify the version element in the API, you will face lot of challenges in future. 
-<img src="/staticfiles/api-management/media/api-frontend-configuration.PNG" alt="Api Frontend Configuration" /></p>
+<img src="/staticfiles/api-management/media/api-frontend-configuration.png" alt="Api Frontend Configuration" /></p>
   </li>
   <li>Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
-<img src="/staticfiles/api-management/media/inbound-policy-example.PNG" alt="Inbound Policy Example" /></li>
+<img src="/staticfiles/api-management/media/inbound-policy-example.png" alt="Inbound Policy Example" /></li>
 </ol>
 
 <p>In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
@@ -1242,7 +1242,7 @@ you can continue the wizard. For Policy Configuration, Click <a href="/api-manag
 <ol>
   <li>The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API. 
-<img src="/staticfiles/api-management/media/api-backend-configuration.PNG" alt="Api Backend Configuration" /></li>
+<img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></li>
   <li>The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select <code class="highlighter-rouge">Schema Action</code>
 from the drop down list. <a href="/getting-started/#importing-schemas-and-actions-of-an-application">Click here</a> to know more</li>
   <li>The outbound policies are those which are applied after the backend is executed. Here also similar to the Inbound 
@@ -1275,11 +1275,11 @@ These Codes helps in identifying the reason for the failure when called.</li>
 <ul>
   <li>By Default the user has 1 options each for Success and Failure status and can select the response codes 
 from the drop-down option depending upon the Response.
-<img src="/staticfiles/api-management/media/response-setup-Proxy1.PNG" alt="response-setup-Proxy1" /></li>
+<img src="/staticfiles/api-management/media/response-setup-Proxy1.png" alt="response-setup-Proxy1" /></li>
   <li>The user can also add Custom Responses from the <code class="highlighter-rouge">ADD RESPONSE RULE</code> option.
-<img src="/staticfiles/api-management/media/response-setup-Proxy2.PNG" alt="response-setup-Proxy2" /></li>
+<img src="/staticfiles/api-management/media/response-setup-Proxy2.png" alt="response-setup-Proxy2" /></li>
   <li>The Response statuses can also be changed or edited by clicking on the Configure options. The Configure window is displayed below.
-<img src="/staticfiles/api-management/media/response-setup-Proxy3.PNG" alt="response-setup-Proxy3" /></li>
+<img src="/staticfiles/api-management/media/response-setup-Proxy3.png" alt="response-setup-Proxy3" /></li>
 </ul>
 
 <ol>
@@ -1290,14 +1290,14 @@ from the drop-down option depending upon the Response.
 
 <p><strong>Note:  For a Particular Proxy endpoint, users can have a multiple ACTIONS like `GET, PUT, POST, DELETE</strong></p>
 
-<p><img src="/staticfiles/api-management/media/MultipleActions_OneProxy.PNG" alt="MultipleActions_OneProxy" /></p>
+<p><img src="/staticfiles/api-management/media/MultipleActions_OneProxy.png" alt="MultipleActions_OneProxy" /></p>
 
 <h3 id="steps-to-follow-while-editing-your-proxy-endpoint">Steps to follow while editing your proxy endpoint</h3>
 
 <p>The Edit screen of proxy provides you a tree view which lets you edit individual section of the API, adding new sections,
 investigate policies or execute the documentation.</p>
 
-<p><img src="/staticfiles/api-management/media/proxy-api-edit-screen.PNG" alt="Proxy Api Edit Screen" /></p>
+<p><img src="/staticfiles/api-management/media/proxy-api-edit-screen.png" alt="Proxy Api Edit Screen" /></p>
 
 <p>The above screen provides information of a particular API in individual nodes. You can add new methods to an API,
 change versions, publish new version or add credential to the backend.</p>
@@ -1313,9 +1313,9 @@ This feature can be accessed in the Backend Node in the API Proxy.</p>
   <li>In the API Proxy, click on the edit option for any proxy created.</li>
   <li>Expand the nodes until Backend Services.</li>
   <li>Click on the <strong>edit symbol</strong> for editing the Schema Action.
-<img src="/staticfiles/api-management/media/SchemaAction-Edit.PNG" alt="SchemaAction-Edit" /></li>
+<img src="/staticfiles/api-management/media/SchemaAction-Edit.png" alt="SchemaAction-Edit" /></li>
   <li>Mention the Action Name, Description and the Query and click on SAVE.
-<img src="/staticfiles/api-management/media/ActionFilter-Edit.PNG" alt="ActionFilter-Edit" /></li>
+<img src="/staticfiles/api-management/media/ActionFilter-Edit.png" alt="ActionFilter-Edit" /></li>
 </ol>
 
 
@@ -2698,7 +2698,6 @@ This feature can be accessed in the Backend Node in the API Proxy.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2849,6 +2848,7 @@ This feature can be accessed in the Backend Node in the API Proxy.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

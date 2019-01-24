@@ -1198,9 +1198,9 @@ ported in edit mode.</li>
     </ul>
   </li>
   <li>After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.  You can select a node to see a popup appear on the base of the workflow. 
-<img src="/staticfiles/workflow-management/media/data-inspector-files.PNG" alt="Data Inspector Files" /></li>
+<img src="/staticfiles/workflow-management/media/data-inspector-files.png" alt="Data Inspector Files" /></li>
   <li>Each node selection opens a new window from the bottom of the page which will allow you to inspect the process. 
-<img src="/staticfiles/workflow-management/media/data-inspector-files.PNG" alt="Data Inspector Files" /></li>
+<img src="/staticfiles/workflow-management/media/data-inspector-files.png" alt="Data Inspector Files" /></li>
 </ol>
 
 <p>The data inspector watch window will allow the user to check the logs, data logs and the sync files.</p>
@@ -2585,7 +2585,6 @@ ported in edit mode.</li>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2736,6 +2735,7 @@ ported in edit mode.</li>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

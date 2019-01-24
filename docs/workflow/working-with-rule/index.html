@@ -1186,11 +1186,11 @@
 
 <p>The above scenario can be implementd by defining below rule. In this rule we have defined the rule criteria using the EvaluateOutputData token with the following expression <code class="highlighter-rouge">~{EvaluateOutputData("//dis:EmailAddress")}~ </code> .</p>
 
-<p><img src="/staticfiles/workflow-management/media/Rule/RuleNode.PNG" alt="Rule Node" /></p>
+<p><img src="/staticfiles/workflow-management/media/Rule/RuleNode.png" alt="Rule Node" /></p>
 
 <p>Below image show the implementation of above scenario using the <code class="highlighter-rouge">RULE</code> node.</p>
 
-<p><img src="/staticfiles/workflow-management/media/Rule/RuleWorkFlow.PNG" alt="Rule Work Flow" /></p>
+<p><img src="/staticfiles/workflow-management/media/Rule/RuleWorkFlow.png" alt="Rule Work Flow" /></p>
 
                 
             </section>
@@ -1924,7 +1924,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2075,6 +2074,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

@@ -1190,13 +1190,13 @@
 
 <ul>
   <li>Go to <strong>API</strong> section from the left side menu.
-<img src="/staticfiles/api-management/media/Webhook-Introduction.PNG" alt="Webhook Introduction" /></li>
+<img src="/staticfiles/api-management/media/Webhook-Introduction.png" alt="Webhook Introduction" /></li>
   <li>Inside <strong>APIManagementSection</strong> you can see Webhooks and Proxy.By defeault,Webhook section will be
   shown.You can see all your connections listed here.</li>
   <li>
     <p>If you do not have a registered URL with <strong>APPSeCONNECT</strong> you have to Register a URL for your organization.Here is how to do it.
  Click on Register URL button. Upon clicking you will get a  popup like this.
-<img src="/staticfiles/api-management/media/register-url-org.PNG" alt="Register Url Org" /></p>
+<img src="/staticfiles/api-management/media/register-url-org.png" alt="Register Url Org" /></p>
   </li>
   <li>Please activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
 So the Base URL for the organization would be <code class="highlighter-rouge">veonconsulting.appseconnectapi.com</code>.</li>
@@ -2603,7 +2603,6 @@ So the Base URL for the organization would be <code class="highlighter-rouge">ve
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2754,6 +2753,7 @@ So the Base URL for the organization would be <code class="highlighter-rouge">ve
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

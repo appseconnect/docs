@@ -1238,7 +1238,7 @@
 
 <p>Filter node implementation will be like this. Based on the requirement we can have multiple filter condition using the add option.</p>
 
-<p><img src="/staticfiles/workflow-management/media/FilterNode/FilterNode.PNG" alt="Filter Node" /></p>
+<p><img src="/staticfiles/workflow-management/media/FilterNode/FilterNode.png" alt="Filter Node" /></p>
 
                 
             </section>
@@ -1964,7 +1964,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2115,6 +2114,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

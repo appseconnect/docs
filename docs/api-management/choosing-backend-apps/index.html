@@ -1185,7 +1185,7 @@
   <li>After that go to <code class="highlighter-rouge">App</code> section.</li>
 </ul>
 
-<p><img src="/staticfiles/api-management/media/BackendApp-How-to.PNG" alt="Backend App How To" /></p>
+<p><img src="/staticfiles/api-management/media/BackendApp-How-to.png" alt="Backend App How To" /></p>
 
 <p>You will find two options here.</p>
 <ol>
@@ -1194,7 +1194,7 @@
 </ol>
 
 <p><strong>Choose Apps</strong> : With this option you get to choose apps which fall under the plan your organization has been subscribed to.
-<img src="/staticfiles/api-management/media/BackendApp-How-to.PNG" alt="Backend App How To" /></p>
+<img src="/staticfiles/api-management/media/BackendApp-How-to.png" alt="Backend App How To" /></p>
 
 <p><strong>Create App</strong>: With this option you can create your own custom app as per your need to connect
 to a remote data source.
@@ -1215,7 +1215,7 @@ credential from App section. <a href="/connectors/OLEDB-Credentials/">Here is ho
 <p>After this you are all set to choose app for your API proxy Backend section which you
 can create from here.</p>
 
-<p><img src="/staticfiles/api-management/media/api-backend-configuration.PNG" alt="Api Backend Configuration" /></p>
+<p><img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></p>
 
 
                 
@@ -2597,7 +2597,6 @@ can create from here.</p>
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2748,6 +2747,7 @@ can create from here.</p>
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);

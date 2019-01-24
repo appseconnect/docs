@@ -1186,11 +1186,11 @@
 
 <p>The highlighted node with red one is an implementation of <code class="highlighter-rouge">PROCESS</code> node.</p>
 
-<p><img src="/staticfiles/workflow-management/media/ProcessNode/ProcessNode.PNG" alt="Process Node" /></p>
+<p><img src="/staticfiles/workflow-management/media/ProcessNode/ProcessNode.png" alt="Process Node" /></p>
 
 <p>Below picture is an example of mapping based on which data transformation will be performed by the <code class="highlighter-rouge">PROCESS</code> node.</p>
 
-<p><img src="/staticfiles/workflow-management/media/ProcessNode/Mapping.PNG" alt="Mapping" /></p>
+<p><img src="/staticfiles/workflow-management/media/ProcessNode/Mapping.png" alt="Mapping" /></p>
 
                 
             </section>
@@ -1916,7 +1916,6 @@
             $('#sidebarMenu').jstree('select_node', node.id); 
         }).jstree();
     var onScrollCallback = function () {
-        debugger;
         // Get container scroll position
         var fromTop = $(this).scrollTop();
 
@@ -2067,6 +2066,7 @@
             var title = $(data).find('title').html();
             $('.page').html($(data).find('.page').html()); 
             window.history.pushState({ url: url }, title, url);
+            $(window).scroll(onScrollCallback);
             console.log(url);
         }, function (request) {
             $('.page').html(request.responseText);
