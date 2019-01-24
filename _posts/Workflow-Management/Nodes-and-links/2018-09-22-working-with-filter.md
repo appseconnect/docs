@@ -73,4 +73,4 @@ Based on the above example my XML data for the customers is like this
 
 Filter node implementation will be like this. Based on the requirement we can have multiple filter condition using the add option.
 
-![Filter Node](/staticfiles/workflow-management/media/FilterNode/FilterNode.PNG)
+![Filter Node](/staticfiles/workflow-management/media/FilterNode/FilterNode.png)

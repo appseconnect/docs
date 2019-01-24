@@ -26,7 +26,7 @@ This node is used to split a data packet into smaller chunks for processing in s
 
 For example I have a customer data which contains multiple customer data.I have defined a batch size of 1 in the splitter node, `XPATH` as `//Customer` and Entity name as `Envelops`. So after data passed through the Splitter node 20 individual data files will be created where each file contains a single customer data. The Splitter node defination will be like the below image 
 
-![Splitter](/staticfiles/workflow-management/media/Splitter/Splitter.PNG)
+![Splitter](/staticfiles/workflow-management/media/Splitter/Splitter.png)
 
 Source XML which contains multiple customer data will be below 
 

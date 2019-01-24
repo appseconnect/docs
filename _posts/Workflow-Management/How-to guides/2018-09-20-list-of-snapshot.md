@@ -30,7 +30,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 ## Steps to executing list of snapshot for the workflow
 
 1. List of Snapshot is present on the upper section of the workflow screen as shown below:
-![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.PNG)
+![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.png)
 2. Click on the `Snapshot`button and the following execution of workflow data will be fetched.
 ![workflowexe-snapshot](/staticfiles/workflow-management/media/workflowexe-snapshot.png)  
 The execution screen contains the following details of the workflow snapshot

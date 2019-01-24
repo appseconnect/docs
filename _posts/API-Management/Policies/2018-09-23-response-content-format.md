@@ -20,7 +20,7 @@ XML and backend application response will be converted to XML.
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. Below is the screen where you need to configure the Response Conversion Type (XML or JSON) 
 you want to deploy in the Response Content type conversion policy.
 
-![ResponseContent-TypeCoverionPolicy](/staticfiles/api-management/media/ResponseContent-TypeCoverionPolicy.PNG)
+![ResponseContent-TypeCoverionPolicy](/staticfiles/api-management/media/ResponseContent-TypeCoverionPolicy.png)
 
 The rules and setup needs to be made accordingly. 
 

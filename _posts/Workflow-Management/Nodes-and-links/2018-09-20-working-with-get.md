@@ -24,8 +24,8 @@ and responded back to the application workspace.
 
 The highlighted node with red one is an implementation of `GET` node.
 
-![Get Node](/staticfiles/workflow-management/media/GetNode/GetNode.PNG)
+![Get Node](/staticfiles/workflow-management/media/GetNode/GetNode.png)
 
 Below picture depicts the action filter based on which action of `GET` node will be performed.Depending on APP the filter structure may changed.
 
-![Action Filter](/staticfiles/workflow-management/media/GetNode/ActionFilter.PNG)
+![Action Filter](/staticfiles/workflow-management/media/GetNode/ActionFilter.png)

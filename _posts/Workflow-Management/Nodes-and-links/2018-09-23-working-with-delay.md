@@ -25,4 +25,4 @@ Use `DELAY` node in scenarios like API rate limit,response time delay etc.
 
 In the below example I want to upload stock from ERP to Shopify and for creating the example we are assuming that Shopify API accept one request per second then we can implement delay node with interval time of one secondlike the below picture.
 
-![Delay Node](/staticfiles/workflow-management/media/DelayNode/DelayNode.PNG)
+![Delay Node](/staticfiles/workflow-management/media/DelayNode/DelayNode.png)

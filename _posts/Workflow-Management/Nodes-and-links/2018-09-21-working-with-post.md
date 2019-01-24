@@ -21,4 +21,4 @@ menus:
 
 The highlighted node with red one is an implementation of `POST` node.
 
-![Post](/staticfiles/workflow-management/media/POSTNode/Post.PNG)
+![Post](/staticfiles/workflow-management/media/POSTNode/Post.png)

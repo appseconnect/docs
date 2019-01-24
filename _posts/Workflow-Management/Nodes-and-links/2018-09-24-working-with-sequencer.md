@@ -254,4 +254,4 @@ For example if have a data chunk which contains multiple data in below XML forma
 ```
 To sort the order data based on the creation date we have defined the sequencer node in this way.
 
-![Sequencer](/staticfiles/workflow-management/media/Sequencer/sequencer.PNG)
+![Sequencer](/staticfiles/workflow-management/media/Sequencer/sequencer.png)
