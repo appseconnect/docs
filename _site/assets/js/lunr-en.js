@@ -549,7 +549,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "HALT/RESUME Node",
-      excerpt: "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
+      excerpt: "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 59
@@ -1757,7 +1757,7 @@ var store = [
       {
         "title": "HALT/RESUME Node",
         "url": "/workflow/working-with-halt-resume/",
-        "excerpt": "What is halt-resume node? HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
+        "excerpt": "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
