@@ -30,8 +30,9 @@ by the enduser. These connectors are mainly developed in generic manner taking i
 customizations might be needed for the organizations to support custom implementation or customizations made over the vanilla applications. 
 
 |Application|Application Type|Description|Versions|
-|---|--|------|---|
+|---|--|------|-----|
 |Magento|eCommerce|Magento is an ecommerce solution in Community or Enterprise variant which is supported by APPSeCONNECT platform| v1.0, v2.0|
 |Shopify|eCommerce|Shopify is a cloud based eCommerce solution which provides two variant, Shopify and Shopify Plus, both supported as pre-packaged solution in APPSeCONNECT|v1.0|
+|Priority|ERP|Priority is the first application in the ERP arena to support a single integrated solution for all your operational needs, supported as pre-packaged solution in APPSeCONNECT|v1.0|
 
 You can choose as many of the pre-packaged solution on the platform to connect between one another. 

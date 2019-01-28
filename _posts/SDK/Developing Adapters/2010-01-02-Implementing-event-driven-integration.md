@@ -130,5 +130,4 @@ Here in the code, you can see we generally have to deal with two methods.
 2. [`Execute`](http://isdn.appseconnect.com/html/451B9092.htm): This method receives the actual call to the request and the objective is to send response back to APPSeCONNECT. Once the Execute action is performed, the object is termed as valid and the transformation is performed and Post activity is performed for that operation. 
 
 
-**protip** As API is realtime, the idea of executing an API should not take long time, as this will create request timeout for certain requests
-{: .notice--info}.
+**NOTE: As API is realtime, the idea of executing an API should not take long time, as this will create request timeout for certain requests**

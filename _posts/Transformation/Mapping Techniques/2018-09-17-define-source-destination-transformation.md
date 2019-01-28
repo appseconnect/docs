@@ -26,7 +26,7 @@ The pathway for source-destination mapping section is provided [here](/transform
 
 Mapping of the attributes of destination application with source application attributes is implemented by the process known as 
 Source-Destination mapping.
-![sourcedestination-mapping](/staticfiles/transformation/media/sourcedestination-mapping.png)
+![sourcedestination-mapping](/staticfiles/Transformation/media/sourcedestination-mapping.png)
 Mapping Processes are initiated at various level of Input Packets
 1.	**For-Each loop** - This is used for execution on a block of code on each element in a collection of items. 
 It is useful to display each item in a collection of items till when the loop is defined.
@@ -44,15 +44,15 @@ Variables are defined by two types of scopes.
 
 1. Log in with valid credentials in the AEC portal.
 2. Choose any project and navigate to Connections- Choose a connection - View The Connection.
-![viewconnection-sourcedestination](/staticfiles/transformation/media/viewconnection-sourcedestination.png)
+![viewconnection-sourcedestination](/staticfiles/Transformation/media/viewconnection-sourcedestination.png)
 3. The Touchpoints page will be viewed upon clicking the View the Connection button. Click on the Transform button.
-![transformbutton](/staticfiles/transformation/media/transformbutton.png)
+![transformbutton](/staticfiles/Transformation/media/transformbutton.png)
 4. The Transformation Page opens up. Expand the For-Each Loop node for mapping the attributes. 
     Click on the OPEN button provided beside every attribute.
-![transformation-page](/staticfiles/transformation/media/transformation-page.png)
+![transformation-page](/staticfiles/Transformation/media/transformation-page.png)
 5. The Mapping window opens up.  In the Mapping Space, fields for mapping is needed to be provided. 
    The User can also click on the entities/attributes to get it on the box.
-![mapping-space](/staticfiles/transformation/media/mapping-space.png)
+![mapping-space](/staticfiles/Transformation/media/mapping-space.png)
 
 6. Click on the Submit option after the mapping is done in that attribute. Similarly other attributes can also be mapped.
 

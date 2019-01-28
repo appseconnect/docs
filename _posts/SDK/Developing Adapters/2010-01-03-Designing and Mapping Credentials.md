@@ -239,10 +239,10 @@ private void Save()
 The method [`this._applicationUtils.CredentialStore.SaveConnectionDetails`](http://isdn.appseconnect.com/html/45B7DA82.htm) is used to save the data to 
 agent storage such that you can get the updated data while the integration points are being executed. 
 
-**protip** The APPSeCONNECT SDK always store the information by serializing the object to json representation. So you should specify 
+**NOTE: The APPSeCONNECT SDK always store the information by serializing the object to json representation. So you should specify 
 default constructor on the model class always and also if you see the default serialization is giving any issue, you can also store the credential by 
-serializing yourself. 
-{: .notice--info}.
+serializing yourself****
+
 
 ## Implementing User interface for Cloud Agent
 
