@@ -36,8 +36,8 @@
 <meta property="og:title" content="How to design an interface for Credentials">
 
 
-  <link rel="canonical" href="//docs.appseconnect.com/sdk/Designing-and-Mapping-Credentials/">
-  <meta property="og:url" content="//docs.appseconnect.com/sdk/Designing-and-Mapping-Credentials/">
+  <link rel="canonical" href="http://localhost:4000/sdk/Designing-and-Mapping-Credentials/">
+  <meta property="og:url" content="http://localhost:4000/sdk/Designing-and-Mapping-Credentials/">
 
 
 
@@ -82,7 +82,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "APPSeCONNECT",
-      "url" : "//docs.appseconnect.com",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -158,7 +158,7 @@
   
     
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="//docs.appseconnect.com/" itemprop="item"><span itemprop="name">Home</span></a>
+        <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
         <meta itemprop="position" content="1" />
       </li>
       <span class="sep">/</span>
@@ -1097,7 +1097,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="//docs.appseconnect.com/" itemprop="item"><span itemprop="name">Home</span></a>
+                    <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1" />
                 </li>
                 <li class="sep">/</li>
@@ -1406,10 +1406,9 @@ object to get the model. You can also use the <a href="http://isdn.appseconnect.
 <p>The method <a href="http://isdn.appseconnect.com/html/45B7DA82.htm"><code class="highlighter-rouge">this._applicationUtils.CredentialStore.SaveConnectionDetails</code></a> is used to save the data to 
 agent storage such that you can get the updated data while the integration points are being executed.</p>
 
-<p><strong>protip</strong> The APPSeCONNECT SDK always store the information by serializing the object to json representation. So you should specify 
+<p><strong>NOTE: The APPSeCONNECT SDK always store the information by serializing the object to json representation. So you should specify 
 default constructor on the model class always and also if you see the default serialization is giving any issue, you can also store the credential by 
-serializing yourself. 
-{: .notice–info}.</p>
+serializing yourself</strong>**</p>
 
 <h2 id="implementing-user-interface-for-cloud-agent">Implementing User interface for Cloud Agent</h2>
 

@@ -36,8 +36,8 @@
 <meta property="og:title" content="Transformation">
 
 
-  <link rel="canonical" href="//docs.appseconnect.com/transformation/overview/">
-  <meta property="og:url" content="//docs.appseconnect.com/transformation/overview/">
+  <link rel="canonical" href="http://localhost:4000/transformation/overview/">
+  <meta property="og:url" content="http://localhost:4000/transformation/overview/">
 
 
 
@@ -82,7 +82,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "APPSeCONNECT",
-      "url" : "//docs.appseconnect.com",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -158,7 +158,7 @@
   
     
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="//docs.appseconnect.com/" itemprop="item"><span itemprop="name">Home</span></a>
+        <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
         <meta itemprop="position" content="1" />
       </li>
       <span class="sep">/</span>
@@ -1097,7 +1097,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="//docs.appseconnect.com/" itemprop="item"><span itemprop="name">Home</span></a>
+                    <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1" />
                 </li>
                 <li class="sep">/</li>
@@ -1193,14 +1193,14 @@ required to define which attributes of the target schema correspond to those of 
 <ol>
   <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
   <li>Navigate to the ‘Connections’ Page in the APPSeCONNECT Portal.
-<img src="/staticfiles/transformation/media/connectionpageview-transformation.png" alt="connectionpageview-transformation" /></li>
+<img src="/staticfiles/Transformation/media/connectionpageview-transformation.png" alt="connectionpageview-transformation" /></li>
   <li>Click ‘View the connection’ button in the Connection which you have created.
-<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
+<img src="/staticfiles/Transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
   <li>Navigate to any of the touchpoints where you want to implement the mapping.
-<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
+<img src="/staticfiles/Transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
   <li>Click on the <code class="highlighter-rouge">Transform</code> button. The Transformation Window opens. 
 The Mapping of the Attributes are done at the <strong>transform</strong> level of the touchpoint.
-<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
+<img src="/staticfiles/Transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
 </ol>
 
 <p><strong>Note: This is the Mapping Screen of touchpoint <code class="highlighter-rouge">Invoice Add</code>. 
@@ -1230,7 +1230,7 @@ everytime the touchpoint is synced.</p>
 drew from the source app and for this case the similar execution process of transformation is deployed multiple
  times. Here a loop is set relatively than writing the transformation logic multiple times, and this undergoes 
 execution whenever the touchpoint is synced in the For-Each Loop Node.<br />
-<img src="/staticfiles/transformation/media/process-of-transformation.png" alt="process-of-transformation" /></p>
+<img src="/staticfiles/Transformation/media/process-of-transformation.png" alt="process-of-transformation" /></p>
 
 <p>Expanding the <code class="highlighter-rouge">For-each loop</code> the user gets the view of the node <code class="highlighter-rouge">oInvoices</code>. <code class="highlighter-rouge">oInvoices</code> is an object that is used to send data to the target application.</p>
 
@@ -1242,13 +1242,13 @@ Each of these attributes will contain different information about the customer r
 
 <p>For Example: <code class="highlighter-rouge">Document_Lines</code> will contain the details of the Product in terms of Quantity and Unit Price etc, 
 <code class="highlighter-rouge">DocumentsAdditionalExpenses</code> contains the Freight, Tax information etc of the product. 
-<img src="/staticfiles/transformation/media/process-of-transformation2.png" alt="process-of-transformation2" /></p>
+<img src="/staticfiles/Transformation/media/process-of-transformation2.png" alt="process-of-transformation2" /></p>
 
 <p><strong>Note: Different objects in different touchpoints will have different attributes.<br />
 The structure remains the same on expanding the any other attributes of any other touchpoints.</strong></p>
 
 <p>Expanding the row, displays the destination attributes in the touchpoint level.
-<img src="/staticfiles/transformation/media/process-of-transformation3.png" alt="process-of-transformation3" /></p>
+<img src="/staticfiles/Transformation/media/process-of-transformation3.png" alt="process-of-transformation3" /></p>
 
 <p>All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.</p>
 
