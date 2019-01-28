@@ -1,4 +1,3 @@
-var nav = $('.sidebar__right,.page');
 var lastId;
 var tocMenu = $(".toc__menu");
 
@@ -20,9 +19,9 @@ $("#sidebarMenu")
         $('#sidebarMenu').jstree('select_node', node.id);
     }).jstree();
 var onScrollCallback = function () {
+    var nav = $('.sidebar__right,.page');
     // Get container scroll position
     var fromTop = $(this).scrollTop();
-
     if (fromTop > 136) {
         nav.addClass("f-nav");
     } else {
