@@ -22,7 +22,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 
 ## Pre-Requisites of Listing of Snapshot for a Workflow
 
-1. All the [Pre-requisites](/workflow/steps-to-choose-your-workflow/) to workflow execution has to be met.
+1. All the [Pre-requisites](/workflow/deploying-and-executing/) to workflow execution has to be met.
 2. Agent should be set as Primary (as unlicensed agents will be not connected to APPSeCONNECT cloud)
 3. Autosync of the Agent should be turned `ON`.
 

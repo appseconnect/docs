@@ -33,10 +33,10 @@ while executing the adapter code.
 
 The logs can be used extensively to ensure you dont require debugging to diagonize an issue. 
  
-**protip** As a professional, you need to understand that logger class is intelligent enough to automatically detect the 
+**NOTE** As a professional, you need to understand that logger class is intelligent enough to automatically detect the 
 serverity and type of logs being created. But if you want to specify the exact logging of the method
 you can use the overloads of [`Log`](http://isdn.appseconnect.com/html/8B9C0216.htm) method in [Logger](http://isdn.appseconnect.com/html/F5BC0481.htm) to specify the [`ErrorTypes`](http://isdn.appseconnect.com/html/CCEB8877.htm), [`MessageTypes`](http://isdn.appseconnect.com/html/34345FD6.htm) and [`Severitys`](http://isdn.appseconnect.com/html/42A720FA.htm). 
-{: .notice--info}.
+
 
 ### Best practices of writing logs
 
