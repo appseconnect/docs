@@ -28,7 +28,7 @@ Here the condition parameters can be grouped when required such that the proper 
 **Scenario 1: Grouping of Conditions against the Country ID's.**  
 The User can add multiple condition under an IF node. 
 Below is the Screen of the window with multiple conditions that is done for grouping the Country Ids.
-![Scenario1-GroupingCondition](/staticfiles/transformation/media/Scenario1-GroupingCondition.png)
+![Scenario1-GroupingCondition](/staticfiles/Transformation/media/Scenario1-GroupingCondition.png)
 
 The condition is provided with 3 clauses whose values are provided with the grand_total (The Order Total) and 
 Country Id's 'US' (United States) and 'CAN' (Canada).
@@ -43,7 +43,7 @@ country codes provided are within their delivery range`. And if not `the orders 
 but will be kept on hold in the ERP for Reviewing`
 
 The below screen shows the full grouped Conditions: 
-![Scenario1-GroupingCondition2](/staticfiles/transformation/media/Scenario1-GroupingCondition2.png)
+![Scenario1-GroupingCondition2](/staticfiles/Transformation/media/Scenario1-GroupingCondition2.png)
 
 **Note:The Value `N` in the Otherwise (else) describes that the order needs to be kept on hold for Review.**
 
@@ -51,9 +51,9 @@ The below screen shows the full grouped Conditions:
 
 The User can add multiple condition under an IF node. Below is the Screen of the window with multiple 
 conditions that is done for grouping the discount parameters.
-![Scenario2-GroupingCondition](/staticfiles/transformation/media/Scenario2-GroupingCondition.png)
+![Scenario2-GroupingCondition](/staticfiles/Transformation/media/Scenario2-GroupingCondition.png)
 
-![Scenario2-GroupingCondition2](/staticfiles/transformation/media/Scenario2-GroupingCondition2.png)
+![Scenario2-GroupingCondition2](/staticfiles/Transformation/media/Scenario2-GroupingCondition2.png)
 
 Scenario Briefing: Here the scenario is for applying discount percentage to specific group of orders where a 
 nested grouping of the If-Else Conditional Mapping is implemented at the attribute level. 
@@ -68,4 +68,4 @@ The condition in this scenario would be like:
 
 The below screen that shows the provided condition.
 
-![Scenario2-GroupingCondition3](/staticfiles/transformation/media/Scenario2-GroupingCondition3.png)
+![Scenario2-GroupingCondition3](/staticfiles/Transformation/media/Scenario2-GroupingCondition3.png)
