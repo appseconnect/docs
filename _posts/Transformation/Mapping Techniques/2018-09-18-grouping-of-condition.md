@@ -27,7 +27,7 @@ Here the condition parameters can be grouped when required such that the proper 
 
 **Scenario 1: Grouping of Conditions against the Country ID's.**  
 The User can add multiple condition under an IF node. 
-Below is the Screen of the window with multiple conditions that is done for grouping the Country Ids.
+Below is the Screen of the window with multiple conditions that is done for grouping the Country Ids.  
 ![Scenario1-GroupingCondition](/staticfiles/Transformation/media/Scenario1-GroupingCondition.png)
 
 The condition is provided with 3 clauses whose values are provided with the grand_total (The Order Total) and 
@@ -42,7 +42,7 @@ or products only to some countries. Therefore, in such case the user can provide
 country codes provided are within their delivery range`. And if not `the orders will be synced 
 but will be kept on hold in the ERP for Reviewing`
 
-The below screen shows the full grouped Conditions: 
+The below screen shows the full grouped Conditions:  
 ![Scenario1-GroupingCondition2](/staticfiles/Transformation/media/Scenario1-GroupingCondition2.png)
 
 **Note:The Value `N` in the Otherwise (else) describes that the order needs to be kept on hold for Review.**
@@ -50,8 +50,8 @@ The below screen shows the full grouped Conditions:
 **Scenario 2: Grouping of Condition for Discount Percentage**
 
 The User can add multiple condition under an IF node. Below is the Screen of the window with multiple 
-conditions that is done for grouping the discount parameters.
-![Scenario2-GroupingCondition](/staticfiles/Transformation/media/Scenario2-GroupingCondition.png)
+conditions that is done for grouping the discount parameters.  
+![Scenario2-GroupingCondition](/staticfiles/Transformation/media/Scenario2-GroupingCondition.png)  
 
 ![Scenario2-GroupingCondition2](/staticfiles/Transformation/media/Scenario2-GroupingCondition2.png)
 
@@ -66,6 +66,6 @@ The condition in this scenario would be like:
 
 **Note:./ As prefix for grand total is added for searching the attribute in the immediate Parent Node**
 
-The below screen that shows the provided condition.
+The below screen that shows the provided condition.  
 
 ![Scenario2-GroupingCondition3](/staticfiles/Transformation/media/Scenario2-GroupingCondition3.png)
