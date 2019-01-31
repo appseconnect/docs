@@ -604,6 +604,7 @@
     <None Include="_posts\Transformation\2018-09-17-overview.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2018-09-17-define-logic-over-destination-mapping.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2018-09-17-define-source-destination-transformation.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\2018-09-18-grouping-of-condition.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-architecture-design-runtime.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-overview.md" />
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />
