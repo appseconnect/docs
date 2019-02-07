@@ -1158,7 +1158,7 @@ var store = [
       
       {
         "title": "Workflow",
-        "url": "/listcourses/workflow",
+        "url": "/workflow-course/",
         "excerpt": "This course will help in developing initial platform understanding…\n",
         "teaser":
           
