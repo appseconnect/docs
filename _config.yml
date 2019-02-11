@@ -243,7 +243,7 @@ collections:
   category:
     output: true
   listcourses:
-    permalink: /:collection/:name
+    permalink: /sources/:collection/:name
     output: true
 # Defaults
 defaults:
