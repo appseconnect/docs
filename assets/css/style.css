@@ -152,6 +152,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a4f4', end
 .footerBottom ul li a i {color: #fff; line-height: 40px; text-align: center;}
 .footerBottom ul li a:hover { background:#339ef4;}
 form { margin: 0; padding: 0em; background-color: transparent; }
+.copyRightLeft a {text-decoration:none;}
 /* ---------------- End : Footer ----------------------- */
 leftSideBar {width:}
 leftSideBar ul li {font-size: 14px; color: #222;}
