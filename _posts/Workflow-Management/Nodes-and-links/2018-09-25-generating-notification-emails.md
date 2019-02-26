@@ -22,3 +22,65 @@ This node is used to send an email notification to a user during workflow execut
 | Subject  | Subject of the Email  |
 | Tokens  | Some predefined tokens used to build email body|
 | Body  | Email body |
+
+
+### Workflow showing Email Action
+
+**Application used Magento2 and SAPB1.**
+
+Here you can view a workflow with touchpoint `Invoice Add` and `Email` Action is used.
+![EmailAction](/staticfiles/workflow-management/media/Email/EmailAction.png)
+
+**Mail Tokens**
+
+Tokens: 
+1. Currently these are the tokens present in APPSeCONNECT as shown below. 
+
+![Emailtoken](/staticfiles/workflow-management/media/Email/Emailtoken.png)
+
+A. Source Input: ${SourceInputData}$
+Connects the corresponding Source Input datas with the Email Body.
+
+B. Tag: ${Tag}$
+Displays the corresponding data for the tag token.
+
+C.	Started At: ${StartTime}$
+Displays the Start Time of the integration, in the mail body.
+
+D.	EvaluateXPath: ${EvaluateXPath (“data”,”Path”)
+Provides the details, corresponding to the token EvaluateXPath.
+
+E.	Evaluate Output: ~{EvaluateOutputData(“Path”)}
+Provides the details, corresponding to the token EvaluateOutputData.
+
+F.	Ends At: ${EndTime}$
+Displays the End time of the integration, in the mail body.
+
+G.	CurrentTime: ${CurrentTime}$
+Shows the time, when the Execution operation were executed.
+
+H.	Source Output: ${SourceOutputData}$
+Provides the details, corresponding to the token Source Output.
+
+I. 	ExecuterType: ${ExecuterType}$
+Provides the details, corresponding to the token Executer Type.
+
+J.	EvaluateInput: ~{EvaluateInputData(“path”)} ~
+Connects the corresponding Evaluate Input token with the Email Body.
+
+K.	WorkflowName:
+
+2. Provides the details corresponding to the token Workflow Name.
+
+3. Users can implement this token in the Email Action by attaching it with Email Body.
+
+![Emailbody](/staticfiles/workflow-management/media/Email/Emailbody.png)
+
+### Troubleshooting Area 
+
+UDF needs to be created for the attribute U_InvoiceId in SAP B1 inside the table Marketing Documents.
+Pathway for UDF – Tools > Customization Tools > User – Defined Fields – Management > Marketing Documents > Title.
+
+**Note:** For the E-MAIL Action Node only the LOG BUCKET will be generated in the Process Snapshot View.
+
+

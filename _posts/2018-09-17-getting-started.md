@@ -6,8 +6,7 @@ menus:
     header:
         title: "Getting Started"
         icon: fa fa-play
-        weight: 2
-       
+        weight: 2       
 ---
 
 ## CUSTOMER PROFILE INFORMATION
@@ -23,7 +22,7 @@ Let us dive in details about every section of customer profile information.
 2. Click on your name, and you can view `My Profile` tab. 
 3. This section enables you to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
 4. Here you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address.
-5. In the `Summary section`, the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
+5. In the `Summary section` the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
 ![AssignedCompanies](/staticfiles/root/media/AssignedCompanies.png)
 7. `My Feeds` section is for seeing your recent activities.
@@ -147,11 +146,57 @@ The steps are given below:
 * Each schema has its own characteristics or attributes. For example, `customer id`, `address`, `phone number` are attributes to the `customer` entity. 
 * Each customer record in the database serves as an entity item.
 * The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.
-* If a customer is an entity, then the complete set of the various fields associated with it is called its schema.
+* If a customer is an entity then the complete set of the various fields associated with it is called its schema.
 
 Schema Image is given below:
 
 ![Schema](/staticfiles/root/media/Schema.png)
+
+### APPSeCONNECT Attributes
+
+In APPSeCONNECT, an attribute is a property or characteristic of a schema. If `customer` is a schema, 
+then `customer name, email, address` etc. are defined as attributes.  Before defining a schema you need to have a 
+proper understanding of the various data fetched via API so that you can define schema properly and provide the 
+required attributes.
+
+![attribute](/staticfiles/root/media/attribute.png)
+
+The attributes can be of various types.
+
+* String -  This type of variable is used when you want to store a string value.
+* Bool - This type of variable is used when you want to store a boolean value like true or false.
+* Date Time - This type of variable is used when you want to store a date time value.
+* Number - This type of variable is used when you want to store a numeric value.
+* Double - This type of variable is used when you want to store a floating point or double value.
+* ComplexObject - When you store an attribute as a collection of several child attributes it is a ComplexObject. For example, if `address` is an attribute,
+  then `Street line 1, Street line 2, City, Pin` would exist as child attributes thus making `address` a complex object.
+* ComplexObjectCollections - A ComplexObjectCollection may be defined as a collection of complex objects.
+
+Assume that a customer has two shipping addresses. The first address is based in Delaware and 
+the other in California. Each address contains the Street Name, Building name, PIN code etc. 
+Thus each address would be stored as a complex object attribute. Let the addresses be stored as 
+`address1` and `address2`. Now these addresses would be stored as child attributes to the 
+parent attribute `address`. Thus `address becomes a ComplexObjectCollection`.
+
+![complexobject-collection-attribute](/staticfiles/root/media/complexobject-collection-attribute.png)
+
+### Custom Attributes
+
+There might be business requirements to create Custom Fields during the creation of 
+mapping where the base mapping does not provide an attribute that you are looking for. 
+APPSeCONNECT allows you with a feature where you can add your own 
+custom attribute and map that with the data coming from the attribute at the other end.
+
+### Actions
+
+Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter. 
+
+For example, suppose you want to fetch customer(s) data from an eCommerce site and in APPSeCONNECT you define a Customer entity for that.
+Now for getting data we can define an action name called `GET`. When you define an action for an entity you need to provide certain information
+
+* Action Name: Name of the action. In some predefined application many adapter logics are written based on this data.
+* Action Description: This is the Description of the action. At the time of touchpoint creation actions are selected based on this description.
+* Action Filter & Resync Filter Details
 
 ### Importing Schemas and Actions of an Application
 The user can view the schemas and the action present or can also add schema and add action for each application. 

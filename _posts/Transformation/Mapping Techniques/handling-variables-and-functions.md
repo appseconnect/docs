@@ -8,6 +8,6 @@ menus:
         title: "Mapping"
         weight: 3
         icon: fa fa-file-word-o
-        identifier: transformationbasic
+        identifier: transformationhandling
 ---
 ibute Mapping [click here](http://support.appseconnect.com/support/solutions/articles/4000112799)

@@ -8,7 +8,7 @@ menus:
         title: "Mapping"
         weight: 3
         icon: fa fa-file-word-o
-        identifier: mappingcomponents
+        identifier: tmappingcomponents
 ---
 Mapping triggers the transformation process between the Source and the Destination Applications.
 Source and destination schemas are mapped in the Transform section of the touchpoint. 

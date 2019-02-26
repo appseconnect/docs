@@ -17,9 +17,17 @@ menus:
 Workflow showing task configuration with  splitter rule
 
 ### Brief Description 
- This workflow enables the user to add customer in Ecommerce (Shopify) and enable the execution and data sync between Eccomerce & ERP with [Splitter](/workflow/working-with-splitter/) node. The Get node will get all the data and the splitter property action will process the data as defined in filteration criteria. The filtered data will be processed, merged and get posted in the destination. `Rule` decision action can be applied for checking the success & Failure of this workflow execution.
+ 
+This workflow enables the user to add business partner (in Magento 2) and enable the execution and data sync between Magento 2 & SAP B1 with [Splitter](/workflow/working-with-splitter/) node. 
+The business partner touchpoint is used to fetch multiple customers, SPLITTER is used after GET Node and Merger is used after PROCESS. 
 
-This workflow allows task configuration with  data splitting.
+In this case the multiple customer would be fetched and will be split. A self-loop is implemented on PROCESS node which will be executed as per the number of datas present. MERGER will merge all the data in a batch of 2 and will post the data.
+
+For Example: 20 Business Partner will be merged into a batch of 2 which means it will be merged into 10 Packets. 
+Similarly if there are 4 data(s) they will be merged in to 2 and will be generating 2 Packets each.
+
+
+This workflow allows task configuration with data splitting.
  
 ### Actor
 Implementers, Developers, Partners  
@@ -32,7 +40,7 @@ The user will execute the flow as given below.
 
 Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow/basic-workflow-customer-download/)
 
-12. The user will now login/signup to Eccomerce (Shopify - App 1) and add customer 
+12. The user will now login/signup to Eccomerce (Magento 2 - App 1) and add business partner.
 
 13. The user will go back to Workflow module and select the saved workflow.
 
@@ -42,7 +50,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 
-16.  The user will go to SAP B1 (App 2) section to fetch the synced data from Shopify and view the customer details.
+16.  The user will go to SAP B1 (App 2) section to fetch the synced data from Magento 2 and view the customer details.
 
 
 ### Post-conditions

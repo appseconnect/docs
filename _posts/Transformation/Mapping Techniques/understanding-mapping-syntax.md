@@ -8,5 +8,5 @@ menus:
         title: "Mapping"
         weight: 3
         icon: fa fa-file-word-o
-        identifier: gettingstarted
+        identifier: transformgettingstarted
 ---

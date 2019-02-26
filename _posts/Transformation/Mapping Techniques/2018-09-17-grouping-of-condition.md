@@ -8,7 +8,7 @@ menus:
         title: "Grouping of Conditions"
         weight: 5
         icon: fa fa-file-word-o
-        identifier: transformationlogic
+        identifier: transformationgrouping
 ---
 
 ## What is Grouping of Conditions

@@ -62,4 +62,4 @@ And click on its enable checkbox**
 **Note: The user can enable and disable the attribute mappings. The `Disabling Mapping` feature is not available for the 
 attributes with the primary key.**
 
-For more details on Attribute Mapping [click here](http://support.appseconnect.com/support/solutions/articles/4000112799)
+For more details on Attribute Mapping [click here](steps-to-cutomize-prebuilt-mapping)

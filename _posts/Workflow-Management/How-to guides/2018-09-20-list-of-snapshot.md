@@ -120,3 +120,13 @@ Below, is the screen of Email Action, Log Bucket generated.
 **Protip** `Currently 7 days data` can be viewed in the List of Snapshot and by `default 10 snapshot view per screen` is available 
 in single screen listing of snapshot.
 {: .notice--info}
+
+**Scenario 7:**
+
+Decision is one of the process property in APPSeCONNECT workflow. Here the user will get to view the 
+Resync Bucket, Log Bucket, and the File.
+
+![decision-snapshot](/staticfiles/workflow-management/media/decision-snapshot.png)
+
+**Protip** The status column in the snapshot displays "Unprocessed" on its successful execution.
+{: .notice--info}
