@@ -1125,7 +1125,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Troubleshooting",
-      excerpt: "\n",
+      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 123
@@ -1134,7 +1134,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Types of Mapping",
-      excerpt: "\n",
+      excerpt: "APPSeCONNECT Mapping Types are given below: Hard Coded Mapping Field to Field Mapping Direct field mapping field Field mapping via...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 124
@@ -1151,11 +1151,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Understanding Components of Mapping",
+      excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 126
+    });
+    
+  
+    idx.add({
       title: "Understanding XML and Xpath",
       excerpt: "\n",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 126
+      id: 127
     });
     
   
@@ -2533,7 +2542,7 @@ var store = [
       {
         "title": "Troubleshooting",
         "url": "/transformation/troubleshooting/",
-        "excerpt": "\n",
+        "excerpt": "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2544,7 +2553,7 @@ var store = [
       {
         "title": "Types of Mapping",
         "url": "/transformation/types-of-mapping/",
-        "excerpt": "\n",
+        "excerpt": "APPSeCONNECT Mapping Types are given below: Hard Coded Mapping Field to Field Mapping Direct field mapping field Field mapping via...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2556,6 +2565,17 @@ var store = [
         "title": "Understanding Attribute Mapping",
         "url": "/transformation/understanding-attribute-mapping/",
         "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Understanding Components of Mapping",
+        "url": "/transformation/understanding-components-of-mapping/",
+        "excerpt": "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
