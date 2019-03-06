@@ -5,10 +5,10 @@ tag: developers
 category: "Transformation"
 menus: 
     transformation:        
-        title: "Troubleshooting"
-        weight: 17
+        title: "App Resources"
+        weight: 18
         icon: fa fa-wpexplorer
-        identifier: transformtroubleshooting
+        identifier: transformappresource
 ---
 
 

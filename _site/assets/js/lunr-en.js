@@ -512,11 +512,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "FILTER Node",
+      excerpt: "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
+      categories: ["Workflow"],
+      tags: ["developers","nodes"],
+      id: 55
+    });
+    
+  
+    idx.add({
       title: "Response content type conversion policy",
       excerpt: "Reponses Content type conversion policy is a type of outbound policy. It can be configured for the output format such...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 55
+      id: 56
     });
     
   
@@ -525,7 +534,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay node? DELAY node is used to delay or stop an execution flow for a specific period. For...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 56
+      id: 57
     });
     
   
@@ -534,7 +543,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 57
+      id: 58
     });
     
   
@@ -543,7 +552,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node? This node is used for decision making during workflow execution. A decision can be applied on...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 58
+      id: 59
     });
     
   
@@ -552,7 +561,7 @@ var idx = lunr(function () {
       excerpt: "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 59
+      id: 60
     });
     
   
@@ -561,7 +570,7 @@ var idx = lunr(function () {
       excerpt: "What is Loop Node? In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 60
+      id: 61
     });
     
   
@@ -570,7 +579,7 @@ var idx = lunr(function () {
       excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 61
+      id: 62
     });
     
   
@@ -579,7 +588,7 @@ var idx = lunr(function () {
       excerpt: "What is Sequencer Node? This node is used to order elements by a certain attribute. This node can be applied...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 62
+      id: 63
     });
     
   
@@ -588,7 +597,7 @@ var idx = lunr(function () {
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
-      id: 63
+      id: 64
     });
     
   
@@ -597,7 +606,7 @@ var idx = lunr(function () {
       excerpt: "API Proxies are API services which one can create to connect to a remote data source or multiple data sources....",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 64
+      id: 65
     });
     
   
@@ -606,7 +615,16 @@ var idx = lunr(function () {
       excerpt: "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 65
+      id: 66
+    });
+    
+  
+    idx.add({
+      title: "Sending Emails",
+      excerpt: "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example...",
+      categories: ["Workflow"],
+      tags: ["developers","actions"],
+      id: 67
     });
     
   
@@ -615,7 +633,7 @@ var idx = lunr(function () {
       excerpt: "Support Ticket Notification Using this node user can create a support ticket during workflow execution. For example, after data is...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 66
+      id: 68
     });
     
   
@@ -624,7 +642,7 @@ var idx = lunr(function () {
       excerpt: "Webhook Callback Action The concept of a WebHook is simple. A webhook occurs when something happens; it is a simple...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 67
+      id: 69
     });
     
   
@@ -633,7 +651,7 @@ var idx = lunr(function () {
       excerpt: "Storage Action Using this node user can store data in text file during workflow execution for future reference. Created file...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
-      id: 68
+      id: 70
     });
     
   
@@ -642,7 +660,7 @@ var idx = lunr(function () {
       excerpt: "In today’s world,organizations are having multiple data sources.With distrubuted architechture in place,these data sources are existing independently and scatteredly.It can...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
-      id: 69
+      id: 71
     });
     
   
@@ -651,7 +669,7 @@ var idx = lunr(function () {
       excerpt: "Deploying and publishing API is one of the primary concern after you have successfully configured an API on your API...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 70
+      id: 72
     });
     
   
@@ -660,7 +678,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Basic Workflow for Customer Downloading. Brief Description This is a basic workflow where the user can download...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 71
+      id: 73
     });
     
   
@@ -669,7 +687,7 @@ var idx = lunr(function () {
       excerpt: "Workflow Use Cases for specific business scenario Workflow signifies the definition, execution, and automation of business processes where tasks and...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 72
+      id: 74
     });
     
   
@@ -678,7 +696,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow with delay execution filter Brief Description This workflow enables the user to configure a task and...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 73
+      id: 75
     });
     
   
@@ -687,7 +705,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow showing task configuration with splitter rule Brief Description This workflow enables the user to add business...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 74
+      id: 76
     });
     
   
@@ -696,7 +714,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Creating a Workflow for sales order Brief Description This is a workflow where the user can add...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 75
+      id: 77
     });
     
   
@@ -705,7 +723,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation with data filteration Brief Description This workflow enables the user to add customer in Ecommerce...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 76
+      id: 78
     });
     
   
@@ -714,7 +732,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation with Product upload and stock synchronization-post task scenario Brief Description This workflow enables the user...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 77
+      id: 79
     });
     
   
@@ -723,7 +741,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow showing task configuration with acknowledgement data Brief Description This workflow enables the user to add payment...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 78
+      id: 80
     });
     
   
@@ -732,7 +750,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Workflow creation of sales cycle with post and post task inputs Brief Description This workflow enables the...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
-      id: 79
+      id: 81
     });
     
   
@@ -741,7 +759,7 @@ var idx = lunr(function () {
       excerpt: "This article demonstrates the important terminologies that you need to consider while using our Workflow system. Flow A flow or...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 80
+      id: 82
     });
     
   
@@ -750,7 +768,7 @@ var idx = lunr(function () {
       excerpt: "FAQ is the best way to address frequently asked questions about your business, of course. This section contains list of...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 81
+      id: 83
     });
     
   
@@ -759,7 +777,7 @@ var idx = lunr(function () {
       excerpt: "This topic describes common problems that can occur when you develop and test a workflow in AEC Portal. Given below...",
       categories: ["Workflow"],
       tags: ["developers"],
-      id: 82
+      id: 84
     });
     
   
@@ -768,7 +786,7 @@ var idx = lunr(function () {
       excerpt: "FAQ is the best way to address frequently asked questions about your business. This section contains list of questions and...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 83
+      id: 85
     });
     
   
@@ -777,7 +795,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name API to Quota Management Access Restriction Brief Description This is a api which the user can create...",
       categories: ["API-Management"],
       tags: ["developers","usecases"],
-      id: 84
+      id: 86
     });
     
   
@@ -786,7 +804,7 @@ var idx = lunr(function () {
       excerpt: "Swagger is an Open Source Framework for the documentation of API. Swagger is a tools which enables you to generate,...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 85
+      id: 87
     });
     
   
@@ -795,7 +813,7 @@ var idx = lunr(function () {
       excerpt: "The APPSeCONNECT Platform either for cloud or on-premise integration is a fully integrated solution that enables organizations to design, develop,...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 86
+      id: 88
     });
     
   
@@ -804,7 +822,7 @@ var idx = lunr(function () {
       excerpt: "This section lets you get started with the deploying processes and components to an environment for APPSeCONNECT. APPSeCONNECT Components for...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 87
+      id: 89
     });
     
   
@@ -813,7 +831,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the CLOUD PORTAL and in OP Agent....",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 88
+      id: 90
     });
     
   
@@ -822,7 +840,7 @@ var idx = lunr(function () {
       excerpt: "Environment is the area in the AEC portal where an user can configure and control the agents that are being...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 89
+      id: 91
     });
     
   
@@ -831,7 +849,7 @@ var idx = lunr(function () {
       excerpt: "A plugin is any kind of an addon or an extension software component that adds a specific feature to an...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 90
+      id: 92
     });
     
   
@@ -840,7 +858,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT is of Hybrid Architecture and the data can be integrated both from the CLOUD PORTAL as well as from...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 91
+      id: 93
     });
     
   
@@ -849,7 +867,7 @@ var idx = lunr(function () {
       excerpt: "Working with SAP HANA Database requires SAP HANA Plugin that needs to be installed in the agent. HANA Plugin is...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 92
+      id: 94
     });
     
   
@@ -858,7 +876,7 @@ var idx = lunr(function () {
       excerpt: "Working with MySQL Database requires MySQL Plugin that needs to be installed in the agent. MySQL Plugin is now pre-packaged...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 93
+      id: 95
     });
     
   
@@ -867,7 +885,7 @@ var idx = lunr(function () {
       excerpt: "Cross-Origin Resource Sharing (CORS) Policy is a mechanism which allows restriction to domain access. Domains configured by the User is...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 94
+      id: 96
     });
     
   
@@ -876,7 +894,7 @@ var idx = lunr(function () {
       excerpt: "Plugin for AEC Database of Agent to Support any DBMS at client side/client server such that AEC can support databases...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 95
+      id: 97
     });
     
   
@@ -885,7 +903,7 @@ var idx = lunr(function () {
       excerpt: "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 96
+      id: 98
     });
     
   
@@ -894,7 +912,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 97
+      id: 99
     });
     
   
@@ -903,7 +921,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 98
+      id: 100
     });
     
   
@@ -912,7 +930,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 99
+      id: 101
     });
     
   
@@ -921,7 +939,7 @@ var idx = lunr(function () {
       excerpt: "AEC Connectors acts like a bridge to create connection between applications that connects different data sources both on-premise or in...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 100
+      id: 102
     });
     
   
@@ -930,7 +948,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 101
+      id: 103
     });
     
   
@@ -939,7 +957,7 @@ var idx = lunr(function () {
       excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 102
+      id: 104
     });
     
   
@@ -948,7 +966,7 @@ var idx = lunr(function () {
       excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 103
+      id: 105
     });
     
   
@@ -957,7 +975,7 @@ var idx = lunr(function () {
       excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 104
+      id: 106
     });
     
   
@@ -966,7 +984,7 @@ var idx = lunr(function () {
       excerpt: "Adapter represents an interface between an APP and APPSeCONNECT. An adapter is the most important component which connects your app...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 105
+      id: 107
     });
     
   
@@ -975,7 +993,7 @@ var idx = lunr(function () {
       excerpt: "How to add credential for On-premise integration Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 106
+      id: 108
     });
     
   
@@ -984,7 +1002,7 @@ var idx = lunr(function () {
       excerpt: "While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent. Given...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 107
+      id: 109
     });
     
   
@@ -993,7 +1011,7 @@ var idx = lunr(function () {
       excerpt: "Pascal Case and CamelCase Pascal Casing - First character of all words are Upper Case and other characters are lower...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 108
+      id: 110
     });
     
   
@@ -1002,7 +1020,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation. This section...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 109
+      id: 111
     });
     
   
@@ -1011,7 +1029,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 110
+      id: 112
     });
     
   
@@ -1020,7 +1038,7 @@ var idx = lunr(function () {
       excerpt: "With every update AEC Agent need upgradation to a higher version without losing any data in the agent. This upgradation...",
       categories: ["Deployment"],
       tags: ["developers"],
-      id: 111
+      id: 113
     });
     
   
@@ -1029,7 +1047,7 @@ var idx = lunr(function () {
       excerpt: "Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 112
+      id: 114
     });
     
   
@@ -1038,7 +1056,7 @@ var idx = lunr(function () {
       excerpt: "An admin or an end-user can upload updated adapter to an existing app such that the adapter can be changed...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 113
+      id: 115
     });
     
   
@@ -1047,7 +1065,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Component Version Pattern contains four numbers, which convey the following information: Pattern- (1st-Number).(2nd-Number).(3rd-Number).(4th-Number) From left to right the numbers...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 114
+      id: 116
     });
     
   
@@ -1056,7 +1074,7 @@ var idx = lunr(function () {
       excerpt: "Environment section of APPSeCONNECT allows the user to deploy configurations and adapters. In case of APPSeCONNECT, you will automatically get...",
       categories: ["SDK"],
       tags: ["developers"],
-      id: 115
+      id: 117
     });
     
   
@@ -1065,7 +1083,7 @@ var idx = lunr(function () {
       excerpt: "This Document provides the details and the functionality aspect of the API components to define static and dynamic criterias for...",
       categories: ["API-Management"],
       tags: ["developers"],
-      id: 116
+      id: 118
     });
     
   
@@ -1074,7 +1092,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 117
+      id: 119
     });
     
   
@@ -1083,16 +1101,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 118
-    });
-    
-  
-    idx.add({
-      title: "Adding Account in Zoho",
-      excerpt: "Prerequisites Need to have a valid ZOHO CRM account. Need to have a customer for registering. Steps to add new...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 119
+      id: 120
     });
     
   
@@ -1101,7 +1110,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites for adding products: You need a valid Priority Account. Steps to Add Products in Priority: Login to the Priority...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 120
+      id: 121
     });
     
   
@@ -1110,16 +1119,34 @@ var idx = lunr(function () {
       excerpt: "Prerequisites for Updating Inventory Need to have a valid Priority Account. Need to have the product registered before updating the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 121
+      id: 122
     });
     
   
     idx.add({
-      title: "Getting Started",
-      excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
-      categories: ["Transformation"],
+      title: "Adding Product in Sage",
+      excerpt: "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
+      categories: ["Connectors"],
       tags: ["developers"],
-      id: 122
+      id: 123
+    });
+    
+  
+    idx.add({
+      title: "Updating Inventory in Sage300",
+      excerpt: "Prerequisites for Updating Inventory in SAGE300 Need a valid SAGE 300 account. Need the server access to SAGE 300. Need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 124
+    });
+    
+  
+    idx.add({
+      title: "Adding Account in Zoho",
+      excerpt: "Prerequisites Need to have a valid ZOHO CRM account. Need to have a customer for registering. Steps to add new...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 125
     });
     
   
@@ -1128,25 +1155,52 @@ var idx = lunr(function () {
       excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 123
+      id: 126
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting",
+      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 127
+    });
+    
+  
+    idx.add({
+      title: "Getting Started",
+      excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 128
     });
     
   
     idx.add({
       title: "Types of Mapping",
-      excerpt: "APPSeCONNECT Mapping Types are given below: Hard Coded Mapping Field to Field Mapping Direct field mapping field Field mapping via...",
+      excerpt: "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 124
+      id: 129
     });
     
   
     idx.add({
       title: "Understanding Attribute Mapping",
-      excerpt: "\n",
+      excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 125
+      id: 130
+    });
+    
+  
+    idx.add({
+      title: "Understanding XML and Xpath",
+      excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 131
     });
     
   
@@ -1155,16 +1209,151 @@ var idx = lunr(function () {
       excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 126
+      id: 132
     });
     
   
     idx.add({
-      title: "Understanding XML and Xpath",
+      title: "Steps to Customize Prebuilt Mapping/Attribute mapping",
+      excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 133
+    });
+    
+  
+    idx.add({
+      title: "Understanding Touchpoint Dependencies",
+      excerpt: "Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 134
+    });
+    
+  
+    idx.add({
+      title: "Getting Started with Mapping",
       excerpt: "\n",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 127
+      id: 135
+    });
+    
+  
+    idx.add({
+      title: "Advance Mapping through Custom Renderer",
+      excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 136
+    });
+    
+  
+    idx.add({
+      title: "Mapping from Schema 1 to Schema 2",
+      excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 137
+    });
+    
+  
+    idx.add({
+      title: "Enabling Tracking in Transformation",
+      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 138
+    });
+    
+  
+    idx.add({
+      title: "Handling Variables and Functions",
+      excerpt: "Use Case Name Handling Root Variables and Functions Brief Description Root Variables are the variables that stores the data that...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 139
+    });
+    
+  
+    idx.add({
+      title: "Using Lookups Mapping for Value Interchange",
+      excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 140
+    });
+    
+  
+    idx.add({
+      title: "Handling Delta - data",
+      excerpt: "\n",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 141
+    });
+    
+  
+    idx.add({
+      title: "Handling Dependent data",
+      excerpt: "\n",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 142
+    });
+    
+  
+    idx.add({
+      title: "Using library methods",
+      excerpt: "\n",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 143
+    });
+    
+  
+    idx.add({
+      title: "Working with Schema, Action & Filter ",
+      excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 144
+    });
+    
+  
+    idx.add({
+      title: "Uploading Plugins/Extensions",
+      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 145
+    });
+    
+  
+    idx.add({
+      title: "Adding Employee in BambooHR",
+      excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 146
+    });
+    
+  
+    idx.add({
+      title: "BambooHR",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 147
+    });
+    
+  
+    idx.add({
+      title: "SAP Business One",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 148
     });
     
   
@@ -1792,6 +1981,17 @@ var store = [
     
       
       {
+        "title": "FILTER Node",
+        "url": "/workflow/working-with-filter/",
+        "excerpt": "What is filter node? This node is used to fetch a subset of data from an original data packet based...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Response content type conversion policy",
         "url": "/api-management/response-content-format/",
         "excerpt": "Reponses Content type conversion policy is a type of outbound policy. It can be configured for the output format such...",
@@ -1905,6 +2105,17 @@ var store = [
         "title": "Workflow Actions",
         "url": "/workflow/generating-actions/",
         "excerpt": "Why do you need action? Workflow is capable of generating action by placing an action node directly on the workflow...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Sending Emails",
+        "url": "/workflow/generating-notification-emails/",
+        "excerpt": "Email Action Notification This node is used to send an email notification to a user during workflow execution. For example...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2244,7 +2455,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/connectors/Overview-of-Application-Connectors/",
+        "url": "/connectors/overview-of-application-connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
@@ -2255,7 +2466,7 @@ var store = [
       
       {
         "title": "Priority",
-        "url": "/connectors/Priority/",
+        "url": "/connectors/priority/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
         "teaser":
           
@@ -2266,7 +2477,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/Shopify/",
+        "url": "/connectors/shopify/",
         "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
@@ -2299,7 +2510,7 @@ var store = [
       
       {
         "title": "Magento2",
-        "url": "/connectors/Magento2/",
+        "url": "/connectors/magento2/",
         "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
         "teaser":
           
@@ -2475,7 +2686,7 @@ var store = [
       
       {
         "title": "Uniconta",
-        "url": "/connectors/Uniconta/",
+        "url": "/connectors/uniconta/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
         "teaser":
           
@@ -2486,7 +2697,7 @@ var store = [
       
       {
         "title": "ZohoCRMV2.0",
-        "url": "/connectors/ZohoCRMV2/",
+        "url": "/connectors/zohocrmv2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
         "teaser":
           
@@ -2496,19 +2707,8 @@ var store = [
     
       
       {
-        "title": "Adding Account in Zoho",
-        "url": "/connectors/Adding-Account-in-Zoho/",
-        "excerpt": "Prerequisites Need to have a valid ZOHO CRM account. Need to have a customer for registering. Steps to add new...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Adding Product in Priority",
-        "url": "/connectors/Adding-Product-in-Priority/",
+        "url": "/connectors/adding-product-in-priority/",
         "excerpt": "Prerequisites for adding products: You need a valid Priority Account. Steps to Add Products in Priority: Login to the Priority...",
         "teaser":
           
@@ -2519,7 +2719,7 @@ var store = [
       
       {
         "title": "Updating Inventory in Priority",
-        "url": "/connectors/Updating-Inventory-in-Priority/",
+        "url": "/connectors/updating-Inventory-in-priority/",
         "excerpt": "Prerequisites for Updating Inventory Need to have a valid Priority Account. Need to have the product registered before updating the...",
         "teaser":
           
@@ -2529,9 +2729,42 @@ var store = [
     
       
       {
-        "title": "Getting Started",
-        "url": "/transformation/getting-started-with-mapping/",
-        "excerpt": "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
+        "title": "Adding Product in Sage",
+        "url": "/connectors/adding-product-in-sage/",
+        "excerpt": "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Updating Inventory in Sage300",
+        "url": "/connectors/updating-Inventory-in-sage/",
+        "excerpt": "Prerequisites for Updating Inventory in SAGE300 Need a valid SAGE 300 account. Need the server access to SAGE 300. Need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Adding Account in Zoho",
+        "url": "/connectors/adding-account-in-zoho/",
+        "excerpt": "Prerequisites Need to have a valid ZOHO CRM account. Need to have a customer for registering. Steps to add new...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Troubleshooting",
+        "url": "/transformation/appresource-functions/",
+        "excerpt": "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2551,9 +2784,20 @@ var store = [
     
       
       {
+        "title": "Getting Started",
+        "url": "/transformation/getting-started-with-mapping/",
+        "excerpt": "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Types of Mapping",
         "url": "/transformation/types-of-mapping/",
-        "excerpt": "APPSeCONNECT Mapping Types are given below: Hard Coded Mapping Field to Field Mapping Direct field mapping field Field mapping via...",
+        "excerpt": "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2564,7 +2808,18 @@ var store = [
       {
         "title": "Understanding Attribute Mapping",
         "url": "/transformation/understanding-attribute-mapping/",
-        "excerpt": "\n",
+        "excerpt": "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Understanding XML and Xpath",
+        "url": "/transformation/understanding-xml-and-xpath/",
+        "excerpt": "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2584,9 +2839,174 @@ var store = [
     
       
       {
-        "title": "Understanding XML and Xpath",
-        "url": "/transformation/understanding-xml-and-xpath/",
+        "title": "Steps to Customize Prebuilt Mapping/Attribute mapping",
+        "url": "/transformation/steps-to-cutomize-prebuilt-mapping/",
+        "excerpt": "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Understanding Touchpoint Dependencies",
+        "url": "/transformation/understanding-touchpoint-dependencies/",
+        "excerpt": "Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Getting Started with Mapping",
+        "url": "/transformation/understanding-mapping-syntax/",
         "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Advance Mapping through Custom Renderer",
+        "url": "/transformation/advance-mapping-through-custom-renderer/",
+        "excerpt": "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Mapping from Schema 1 to Schema 2",
+        "url": "/transformation/creating-a-mapping-from-schema1-schema2/",
+        "excerpt": "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Enabling Tracking in Transformation",
+        "url": "/transformation/enable-tracking-fields/",
+        "excerpt": "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Handling Variables and Functions",
+        "url": "/transformation/handling-variables-and-functions/",
+        "excerpt": "Use Case Name Handling Root Variables and Functions Brief Description Root Variables are the variables that stores the data that...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Using Lookups Mapping for Value Interchange",
+        "url": "/transformation/using-lookups-for-value-exchange/",
+        "excerpt": "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Handling Delta - data",
+        "url": "/transformation/handling-delta-data/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Handling Dependent data",
+        "url": "/transformation/handling-dependent-data/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Using library methods",
+        "url": "/transformation/using-library-methods/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Working with Schema, Action & Filter ",
+        "url": "/transformation/working-with-schemas-action-filter/",
+        "excerpt": "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Uploading Plugins/Extensions",
+        "url": "/connectors/woocommerce-plugin-extension-upload/",
+        "excerpt": "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Adding Employee in BambooHR",
+        "url": "/connectors/adding-employee-bamboohr/",
+        "excerpt": "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "BambooHR",
+        "url": "/connectors/bamboohr/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAP Business One",
+        "url": "/connectors/sap-business-one/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
