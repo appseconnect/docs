@@ -1322,11 +1322,38 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Sage300",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 145
+    });
+    
+  
+    idx.add({
+      title: "Uploading Plugins or Extensions",
+      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 146
+    });
+    
+  
+    idx.add({
+      title: "WooCommerce",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 147
+    });
+    
+  
+    idx.add({
       title: "Adding Employee in BambooHR",
       excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 145
+      id: 148
     });
     
   
@@ -1335,7 +1362,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 146
+      id: 149
     });
     
   
@@ -1344,7 +1371,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 147
+      id: 150
     });
     
   
@@ -1353,7 +1380,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 148
+      id: 151
     });
     
   
@@ -1362,7 +1389,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 149
+      id: 152
     });
     
   
@@ -1371,16 +1398,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 150
-    });
-    
-  
-    idx.add({
-      title: null,
-      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
-      categories: [],
-      tags: null,
-      id: 151
+      id: 153
     });
     
   
@@ -2998,6 +3016,39 @@ var store = [
     
       
       {
+        "title": "Sage300",
+        "url": "/connectors/sage300/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Uploading Plugins or Extensions",
+        "url": "/connectors/woocommerce-pluginextension-upload/",
+        "excerpt": "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "WooCommerce",
+        "url": "/connectors/woocommerce/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Adding Employee in BambooHR",
         "url": "/connectors/adding-employee-bamboohr/",
         "excerpt": "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
@@ -3056,17 +3107,6 @@ var store = [
         "title": "Generic NAV 2015 Extension",
         "url": "/connectors/generic-nav2015-extension/",
         "excerpt": "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": null,
-        "url": "/2019-03-04-woocommerce-plugin-extension-upload/",
-        "excerpt": "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

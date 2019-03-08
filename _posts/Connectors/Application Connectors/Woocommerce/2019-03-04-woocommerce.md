@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Connectors"
 menus: 
-    applicationconnector :
+    applicationconnector:
         title: "WooCommerce"
         weight: 10
         icon: fa fa-file-word-o

@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Connectors"
 menus: 
-    woocommerceconnector
+    woocommerceconnector:
         title: "Uploading Plugins or Extensions"
         weight: 10
         icon: fa fa-file-word-o
