@@ -1124,7 +1124,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Adding Product in Sage",
+      title: "Adding Product in Sage300",
       excerpt: "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1322,11 +1322,29 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Uploading Plugins/Extensions",
-      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+      title: "Sage300",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 145
+    });
+    
+  
+    idx.add({
+      title: "Uploading Plugins or Extensions",
+      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 146
+    });
+    
+  
+    idx.add({
+      title: "WooCommerce",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 147
     });
     
   
@@ -1335,7 +1353,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 146
+      id: 148
     });
     
   
@@ -1344,7 +1362,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 147
+      id: 149
     });
     
   
@@ -1353,7 +1371,34 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 148
+      id: 150
+    });
+    
+  
+    idx.add({
+      title: "Dynamics NAV Business Central",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 151
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2009R2 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 152
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2015 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 153
     });
     
   
@@ -2729,7 +2774,7 @@ var store = [
     
       
       {
-        "title": "Adding Product in Sage",
+        "title": "Adding Product in Sage300",
         "url": "/connectors/adding-product-in-sage/",
         "excerpt": "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
         "teaser":
@@ -2971,9 +3016,31 @@ var store = [
     
       
       {
-        "title": "Uploading Plugins/Extensions",
-        "url": "/connectors/woocommerce-plugin-extension-upload/",
+        "title": "Sage300",
+        "url": "/connectors/sage300/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Uploading Plugins or Extensions",
+        "url": "/connectors/woocommerce-pluginextension-upload/",
         "excerpt": "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "WooCommerce",
+        "url": "/connectors/woocommerce/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3007,6 +3074,39 @@ var store = [
         "title": "SAP Business One",
         "url": "/connectors/sap-business-one/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Dynamics NAV Business Central",
+        "url": "/connectors/dynamicsnav-business-central/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Generic NAV 2009R2 Extension",
+        "url": "/connectors/generic-nav2009-R2-extension/",
+        "excerpt": "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Generic NAV 2015 Extension",
+        "url": "/connectors/generic-nav2015-extension/",
+        "excerpt": "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

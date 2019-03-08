@@ -655,6 +655,25 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/connectors/woocommerce/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/woocommerce/" onclick="selectTab('/connectors/woocommerce/', event);" title="Go to WooCommerce">WooCommerce</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/woocommerce-pluginextension-upload/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/woocommerce-pluginextension-upload/" onclick="selectTab('/connectors/woocommerce-pluginextension-upload/', event);" title="Go to Uploading Plugins or Extensions">Uploading Plugins or Extensions</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
         
@@ -671,6 +690,56 @@
     
     <li class="menu-item-" data-url="/connectors/adding-employee-bamboohr/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/adding-employee-bamboohr/" onclick="selectTab('/connectors/adding-employee-bamboohr/', event);" title="Go to Adding Employee in BambooHR">Adding Employee in BambooHR</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2009-R2-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2009-R2-extension/" onclick="selectTab('/connectors/generic-nav2009-R2-extension/', event);" title="Go to Generic NAV 2009R2 Extension">Generic NAV 2009R2 Extension</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/updating-Inventory-in-sage/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/updating-Inventory-in-sage/" onclick="selectTab('/connectors/updating-Inventory-in-sage/', event);" title="Go to Updating Inventory in Sage300">Updating Inventory in Sage300</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/adding-product-in-sage/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/adding-product-in-sage/" onclick="selectTab('/connectors/adding-product-in-sage/', event);" title="Go to Adding Product in Sage">Adding Product in Sage</a>
         
     </li>
     
@@ -1365,7 +1434,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -1462,6 +1531,21 @@ c.	Client Secret:  This is generated from the application site of ZOHO CRM</p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
+<p><strong>ISSUE 1:</strong>
+Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated,
+and if touchpoints do not sync, this basic issue resolves after removing the Temp and Cache files from the 
+portal and from your system. Therefore after clearing all this publish the touchpoints again along with 
+Update Configuration on the agent.</p>
+
+<p>For E.g. If the Source Application Not Found in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
+
+<p><strong>ISSUE 2:</strong></p>
+
+<p>For syncing Quotes or Quotation from ZOHO CRM to Uniconta, Lookup mapping is to be done for the field tax. 
+The values for the lookup are provided below.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/zohocrm-troubleshooting2.png" alt="zohocrm-troubleshooting2" /></p>
+
 <h2 id="attributes-and-actions">Attributes and Actions</h2>
 
 <p>While defining a connect to a particular API endpoint in Zoho CRM V2, you require clear understanding about the data requirements 
@@ -1493,10 +1577,41 @@ for you which you can easily plug and play while doing your integrations.In Zoho
       <td>post</td>
       <td>POST</td>
       <td>Products</td>
-      <td>Post products in ZOHO CRM from any source application.</td>
+      <td>Post products in ZOHO CRM from any source application</td>
+    </tr>
+    <tr>
+      <td>Products</td>
+      <td>products</td>
+      <td>GET</td>
+      <td>Products</td>
+      <td><a href="https://www.zoho.com/crm/help/products/create-products.html">Fetch the products from ZOHO CRM and post it in the destination application</a></td>
+    </tr>
+    <tr>
+      <td>Products</td>
+      <td>Quotes</td>
+      <td>GET</td>
+      <td>Quotes</td>
+      <td><a href="https://www.zoho.com/crm/help/quotes/create-quotes.html#Create">Fetch Sales Quotation from ZOHO CRM and post it to the destination application</a></td>
+    </tr>
+    <tr>
+      <td>Deals</td>
+      <td>Deals</td>
+      <td>GET</td>
+      <td>Deals</td>
+      <td><a href="https://www.zoho.com/crm/help/opportunities/create-opportunities.html#Create">Fetch Deals from ZOHO CRM and post it to the destination application</a></td>
     </tr>
   </tbody>
 </table>
+
+<p class="notice--info"><strong>Protip:</strong> Before creating Deals and Quotations, the user/implementer needs to have complete details of the Account
+and is mandatory without which, the sync for that deal and quote touchpoint will not be executed successfully.</p>
+
+<p>Steps to create account is given <a href="/connectors/adding-account-in-zoho/">here</a>.</p>
+
+<p class="notice--info"><strong>Protip:</strong> The Account associated with a deal will be synced only when the deal is at the stage CLOSED WON.</p>
+
+<p class="notice--info"><strong>Protip:</strong> In case of multiple deals, associated with a single account, the Account Details will be synced 
+only once.</p>
 
                 
             </section>
@@ -2727,8 +2842,81 @@ for you which you can easily plug and play while doing your integrations.In Zoho
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2015-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2015 Extension
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2009-R2-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2009R2 Extension
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/dynamicsnav-business-central/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Dynamics NAV Business Central
+                                </a>
+                            </li>
                             
                             
                             
@@ -2756,23 +2944,6 @@ for you which you can easily plug and play while doing your integrations.In Zoho
                             
                             
                             
-                            <li>
-                                <a href="/connectors/adding-employee-bamboohr/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Adding Employee in BambooHR
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/woocommerce-plugin-extension-upload/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Uploading Plugins/Extensions
-                                </a>
-                            </li>
                             
                             
                             
@@ -2816,12 +2987,6 @@ for you which you can easily plug and play while doing your integrations.In Zoho
                             
                             
                             
-                            <li>
-                                <a href="/connectors/adding-account-in-zoho/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Adding Account in Zoho
-                                </a>
-                            </li>
                             
                             
                             

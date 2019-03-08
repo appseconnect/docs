@@ -655,6 +655,25 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/connectors/woocommerce/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/woocommerce/" onclick="selectTab('/connectors/woocommerce/', event);" title="Go to WooCommerce">WooCommerce</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/woocommerce-pluginextension-upload/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/woocommerce-pluginextension-upload/" onclick="selectTab('/connectors/woocommerce-pluginextension-upload/', event);" title="Go to Uploading Plugins or Extensions">Uploading Plugins or Extensions</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
         
@@ -671,6 +690,56 @@
     
     <li class="menu-item-" data-url="/connectors/adding-employee-bamboohr/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/adding-employee-bamboohr/" onclick="selectTab('/connectors/adding-employee-bamboohr/', event);" title="Go to Adding Employee in BambooHR">Adding Employee in BambooHR</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2009-R2-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2009-R2-extension/" onclick="selectTab('/connectors/generic-nav2009-R2-extension/', event);" title="Go to Generic NAV 2009R2 Extension">Generic NAV 2009R2 Extension</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/updating-Inventory-in-sage/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/updating-Inventory-in-sage/" onclick="selectTab('/connectors/updating-Inventory-in-sage/', event);" title="Go to Updating Inventory in Sage300">Updating Inventory in Sage300</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/adding-product-in-sage/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/adding-product-in-sage/" onclick="selectTab('/connectors/adding-product-in-sage/', event);" title="Go to Adding Product in Sage">Adding Product in Sage</a>
         
     </li>
     
@@ -1365,7 +1434,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1408,17 +1477,46 @@ The node <code class="highlighter-rouge">PIN</code> exists as a child node of th
 <p>2) To access the node <code class="highlighter-rouge">PIN</code> of the node <code class="highlighter-rouge">billing</code>, we provide the following XPATH: address/billing/PIN</p>
 
 <ul>
-  <li>Direct field mapping field</li>
+  <li>Direct field mapping</li>
   <li>Field mapping via XPATH</li>
 </ul>
 
+<p><strong>3. Choose-when Mapping -</strong> Analogous to <code class="highlighter-rouge">if-then-else</code> statement, it is deployed when you want the value of a field 
+of the destination schema to be conditionally dependent on the value of the corresponding field of the source schema. 
+In other words, the value of the destination field would depend on the source field, such that for every different value
+ of the source field, there is a corresponding value for the destination field.</p>
+
+<p>Take the analogy of the <code class="highlighter-rouge">if-then-else</code> statement to understand this.</p>
+
+<p>Say, you want to set up the value of a variable <code class="highlighter-rouge">x</code> such that it depends on another variable <code class="highlighter-rouge">y</code>. If the value of <code class="highlighter-rouge">y</code> is 1, <code class="highlighter-rouge">x</code> will be 2, if <code class="highlighter-rouge">y</code> is 3,
+<code class="highlighter-rouge">x</code> will be <code class="highlighter-rouge">100</code> and so on.</p>
+
+<p>Similarly, consider the <code class="highlighter-rouge">customer entity</code> and you are transferring data from the source application to the destination application. 
+Suppose, you want the value of the <code class="highlighter-rouge">country</code> field from the source schema to be mapped with the same field of the destination schema. 
+However, you want to setup such that, if the country is <code class="highlighter-rouge">USA</code> in the source, in the destination it is 1. 
+But if it is <code class="highlighter-rouge">India</code>, at the destination it will be <code class="highlighter-rouge">2</code>. In such a case, we deploy <code class="highlighter-rouge">choose-when</code> mapping.</p>
+
+<p>The generalised structure of the <code class="highlighter-rouge">choose-when</code> condition is:</p>
+
+<p>[choose]</p>
+
+<p>[when] ( = = (condition))</p>
+
+<p>17</p>
+
+<p>[endwhen]</p>
+
+<p>[otherwise]</p>
+
+<p>13</p>
+
+<p>[endotherwise]</p>
+
+<p>[endchoose]</p>
+
+<p><strong>4. Function Mapping</strong> -</p>
+
 <ol>
-  <li>
-    <p>Choose-when Mapping</p>
-  </li>
-  <li>
-    <p>Function Mapping</p>
-  </li>
   <li>
     <p>Query Mapping</p>
   </li>
@@ -2660,8 +2758,58 @@ The node <code class="highlighter-rouge">PIN</code> exists as a child node of th
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             

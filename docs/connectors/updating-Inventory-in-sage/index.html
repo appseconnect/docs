@@ -655,6 +655,25 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/connectors/woocommerce/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/woocommerce/" onclick="selectTab('/connectors/woocommerce/', event);" title="Go to WooCommerce">WooCommerce</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/woocommerce-pluginextension-upload/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/woocommerce-pluginextension-upload/" onclick="selectTab('/connectors/woocommerce-pluginextension-upload/', event);" title="Go to Uploading Plugins or Extensions">Uploading Plugins or Extensions</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
         
@@ -671,6 +690,56 @@
     
     <li class="menu-item-" data-url="/connectors/adding-employee-bamboohr/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/adding-employee-bamboohr/" onclick="selectTab('/connectors/adding-employee-bamboohr/', event);" title="Go to Adding Employee in BambooHR">Adding Employee in BambooHR</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2009-R2-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2009-R2-extension/" onclick="selectTab('/connectors/generic-nav2009-R2-extension/', event);" title="Go to Generic NAV 2009R2 Extension">Generic NAV 2009R2 Extension</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/updating-Inventory-in-sage/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/updating-Inventory-in-sage/" onclick="selectTab('/connectors/updating-Inventory-in-sage/', event);" title="Go to Updating Inventory in Sage300">Updating Inventory in Sage300</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/adding-product-in-sage/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/adding-product-in-sage/" onclick="selectTab('/connectors/adding-product-in-sage/', event);" title="Go to Adding Product in Sage">Adding Product in Sage</a>
         
     </li>
     
@@ -1390,24 +1459,39 @@
                 <h2 id="prerequisites-for-updating-inventory-in-sage300">Prerequisites for Updating Inventory in SAGE300</h2>
 
 <ol>
-  <li>Need a valid SAGE 300 account.</li>
-  <li>Need the server access to SAGE 300.</li>
-  <li>Need to have the item present in the warehouses of inventory.</li>
+  <li>
+    <p>Need a valid SAGE 300 account.</p>
+  </li>
+  <li>
+    <p>Need the server access to SAGE 300.</p>
+  </li>
+  <li>
+    <p>Need to have the item present in the warehouses of inventory.</p>
+  </li>
 </ol>
 
 <h3 id="steps-to-update-inventory-in-sage300">Steps to Update Inventory in SAGE300</h3>
 
-<p>Login to the server for SAGE300.</p>
-
-<p>Open the SAGE 300 application and Navigate to <code class="highlighter-rouge">Inventory Control&gt; I/C Transaction &gt; Adjustments</code></p>
+<ol>
+  <li>
+    <p>Login to the cloud portal of SAGE300.</p>
+  </li>
+  <li>
+    <p>Open the SAGE 300 application and Navigate to <code class="highlighter-rouge">Inventory Control&gt; I/C Transaction &gt; Adjustments</code></p>
+  </li>
+</ol>
 
 <p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage1.png" alt="inventoryupdate-sage1" /></p>
 
-<p>The adjustments window opens. Click on the <code class="highlighter-rouge">Item Number tab</code> and SELECT an item from the list of the items, available.</p>
+<ol>
+  <li>The adjustments window opens. Click on the <code class="highlighter-rouge">Item Number tab</code> and SELECT an item from the list of the items, available.</li>
+</ol>
 
 <p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage2.png" alt="inventoryupdate-sage2" /></p>
 
-<p>Click on the <code class="highlighter-rouge">Adjustment Type</code> tab and select the adjustment as per the requirement. The drop down has these following options.</p>
+<ol>
+  <li>Click on the <code class="highlighter-rouge">Adjustment Type</code> tab and select the adjustment as per the requirement. The drop down has these following options.</li>
+</ol>
 
 <p>a.	Quantity Increase - For increasing the quantity in Inventory.</p>
 
@@ -1423,9 +1507,14 @@
 
 <p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage3.png" alt="inventoryupdate-sage3" /></p>
 
-<p>Select the warehouse in the Location tab where the inventory is to be updated.</p>
-
-<p>Provide the Quantity that is needed to be updated. Click on <code class="highlighter-rouge">Post and Save</code> button.</p>
+<ol>
+  <li>
+    <p>Select the warehouse in the Location tab where the inventory is to be updated.</p>
+  </li>
+  <li>
+    <p>Provide the Quantity that is needed to be updated. Click on <code class="highlighter-rouge">Post and Save</code> button.</p>
+  </li>
+</ol>
 
 <p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage4.png" alt="inventoryupdate-sage4" /></p>
 
@@ -1433,6 +1522,47 @@
 
 <p class="notice--info"><strong>Protip:</strong> The Post is to be click, when the user wants to post it to the ERP. Or-else Clicking on SAVE without posting will save the updated data 
 but the data will not be Posted in the ERP.</p>
+
+<ol>
+  <li>
+    <p>Now login to the server of SAGE 300 and open the application.</p>
+  </li>
+  <li>
+    <p>Navigate to Inventory Control &gt; I/C Items and Price lists &gt; Items Wizard. The item wizard window opens and click NEXT Button.</p>
+  </li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage5.png" alt="inventoryupdate-sage5" /></p>
+
+<ol>
+  <li>Select the item for which the inventory update was done in the portal and click NEXT button.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage6.png" alt="inventoryupdate-sage6" /></p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage7.png" alt="inventoryupdate-sage7" /></p>
+
+<p class="notice--info"><strong>Protip:</strong> The checkbox Serial Number and the Lot Number is needed to be enabled.</p>
+
+<ol>
+  <li>Select the Serial Number Mask from the Serial Numbers Page. Click on the field and select the Serial Number for the product.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage8.png" alt="inventoryupdate-sage8" /></p>
+
+<ol>
+  <li>Select the Lot Number Mask from the Lot Numbers Page. Click on the field and select the LOT, for the product. Click on Next button.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage9.png" alt="inventoryupdate-sage9" /></p>
+
+<ol>
+  <li>Click on Next button until the last page appears.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/inventoryupdate-sage10.png" alt="inventoryupdate-sage10" /></p>
+
+<p>This completes the process for <code class="highlighter-rouge">Updating Inventory in SAGE 300</code>.</p>
 
 
                 
@@ -2664,8 +2794,81 @@ but the data will not be Posted in the ERP.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2015-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2015 Extension
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2009-R2-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2009R2 Extension
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/dynamicsnav-business-central/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Dynamics NAV Business Central
+                                </a>
+                            </li>
                             
                             
                             
@@ -2693,23 +2896,6 @@ but the data will not be Posted in the ERP.</p>
                             
                             
                             
-                            <li>
-                                <a href="/connectors/adding-employee-bamboohr/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Adding Employee in BambooHR
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/woocommerce-plugin-extension-upload/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Uploading Plugins/Extensions
-                                </a>
-                            </li>
                             
                             
                             
@@ -2753,12 +2939,6 @@ but the data will not be Posted in the ERP.</p>
                             
                             
                             
-                            <li>
-                                <a href="/connectors/adding-account-in-zoho/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Adding Account in Zoho
-                                </a>
-                            </li>
                             
                             
                             
