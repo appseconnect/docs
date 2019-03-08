@@ -1,13 +1,14 @@
 ---
-title: "Adding Product in Sage"
+title: "Adding Product in Sage300"
 toc: true
 tag: developers
 category: "Connectors"
 menus: 
     sage300connector :
         title: "Adding Product in Sage"
+        weight: 15
         icon: fa fa-file-word-o
-        identifier: sageconnectoraddproduct
+        identifier: sage300connectoraddproduct
 ---
 
 ## Prerequisites for adding Product/Items in SAGE 300

@@ -6,9 +6,9 @@ category: "Connectors"
 menus: 
     applicationconnector :
         title: "WooCommerce"
-        weight: 11
+        weight: 10
         icon: fa fa-file-word-o
-        identifier: WooCommerceconnector
+        identifier: woocommerceconnector
 ---
 
 Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, 

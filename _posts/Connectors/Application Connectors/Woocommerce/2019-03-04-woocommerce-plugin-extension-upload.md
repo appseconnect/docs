@@ -1,14 +1,14 @@
 ---
-title: "Uploading Plugins/Extensions"
+title: "Uploading Plugins or Extensions"
 toc: true
 tag: developers
 category: "Connectors"
 menus: 
-    WooCommerceconnector :
-        title: "Uploading Plugins/Extensions"
-        weight: 12
+    woocommerceconnector
+        title: "Uploading Plugins or Extensions"
+        weight: 10
         icon: fa fa-file-word-o
-        identifier: woocommercepluginconnector
+        identifier: woocommerceconnectorplugin
 ---
 
 Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. 

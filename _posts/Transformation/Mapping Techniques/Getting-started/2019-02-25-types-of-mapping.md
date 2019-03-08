@@ -37,12 +37,44 @@ The node `PIN` exists as a child node of the parent node `shipping` and `billing
 
 2) To access the node `PIN` of the node `billing`, we provide the following XPATH: address/billing/PIN
 
-* Direct field mapping field
+* Direct field mapping 
 * Field mapping via XPATH
 
-3. Choose-when Mapping
+**3. Choose-when Mapping -** Analogous to `if-then-else` statement, it is deployed when you want the value of a field 
+of the destination schema to be conditionally dependent on the value of the corresponding field of the source schema. 
+In other words, the value of the destination field would depend on the source field, such that for every different value
+ of the source field, there is a corresponding value for the destination field.
 
-4. Function Mapping
+Take the analogy of the `if-then-else` statement to understand this.
+
+Say, you want to set up the value of a variable `x` such that it depends on another variable `y`. If the value of `y` is 1, `x` will be 2, if `y` is 3,
+`x` will be `100` and so on.
+
+Similarly, consider the `customer entity` and you are transferring data from the source application to the destination application. 
+Suppose, you want the value of the `country` field from the source schema to be mapped with the same field of the destination schema. 
+However, you want to setup such that, if the country is `USA` in the source, in the destination it is 1. 
+But if it is `India`, at the destination it will be `2`. In such a case, we deploy `choose-when` mapping.
+
+The generalised structure of the `choose-when` condition is:
+
+
+[choose]
+
+[when] ({{variable-name}} = = (condition))
+
+17
+
+[endwhen]
+
+[otherwise]
+
+13
+
+[endotherwise]
+
+[endchoose]
+
+**4. Function Mapping** - 
 
 5. Query Mapping 
 
