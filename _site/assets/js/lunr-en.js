@@ -1269,7 +1269,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Handling Variables and Functions",
-      excerpt: "Use Case Name Handling Root Variables and Functions Brief Description Root Variables are the variables that stores the data that...",
+      excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 139
@@ -1313,7 +1313,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Working with Schema, Action & Filter ",
+      title: "Working with Schema, Action & Filter",
       excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
       categories: ["Transformation"],
       tags: ["developers"],
@@ -2952,7 +2952,7 @@ var store = [
       {
         "title": "Handling Variables and Functions",
         "url": "/transformation/handling-variables-and-functions/",
-        "excerpt": "Use Case Name Handling Root Variables and Functions Brief Description Root Variables are the variables that stores the data that...",
+        "excerpt": "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3005,7 +3005,7 @@ var store = [
     
       
       {
-        "title": "Working with Schema, Action & Filter ",
+        "title": "Working with Schema, Action & Filter",
         "url": "/transformation/working-with-schemas-action-filter/",
         "excerpt": "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
         "teaser":

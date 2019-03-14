@@ -34,8 +34,6 @@ Organisation Creation & Connection Creation.
 
 **Note: In case of Custom Apps Touchpoints is needed to be created first for implementing Tracking.**
 
-![tracking1](/staticfiles/Transformation/media/tracking1.png)
-
 ## Basic Flow
 
 1. Navigate to the touchpoint after login, for which the Tracking is to be done.

@@ -90,8 +90,11 @@ b. ADD IF
 For the attributes which are mapped, options available is:
  
 a.	**Disable** -This option is for disabling the mapping, if not required.
+
 b.	**Open** - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.
+
 c.	**Clear** - This option clears out the existing mapping.
+
 d.	**Add If** - If-Else conditional mapping can be implemented, if clicked on this option. [Click here](/transformation/define-logic-over-destination-mapping/) to know more
 
 10.	Click on the **OPEN** option for implementing the attribute mapping. The User can view the Mapping window, below.
@@ -134,7 +137,6 @@ Here, Mapping is done in 2 stages:
 
 ![example-attributemapping1](/staticfiles/Transformation/media/example-attributemapping1.png)
 
-
 "GetCustomerCardCodeByEmailId" is the predefined custom function that is called to retrieve the SAP B1 CardCode value (Destination app) using Magento's API field customer_email (Source app) i.e. 
 
 ![example-attributemapping2](/staticfiles/Transformation/media/example-attributemapping2.png)
@@ -143,7 +145,7 @@ This above part of code suggests that when the email data result is blank then t
 
 **OCRD refers to the Orders Table and U_WBCUSTID refers to the web customer id**
 
-## How to do the above
+## Steps to Attribute Mapping
 
 1. Login to [portal.appseconnect.com](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!)
 

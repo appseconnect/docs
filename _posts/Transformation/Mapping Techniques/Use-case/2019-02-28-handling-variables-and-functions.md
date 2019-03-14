@@ -13,7 +13,7 @@ menus:
 
 ## Use Case Name
 
-Handling Root Variables and Functions
+Handling Variables and Functions
 
 ## Brief Description 
 Root Variables are the variables that stores the data that can be used in the later within 

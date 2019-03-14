@@ -66,7 +66,7 @@ of some of the pre-packaged API actions defined for you which you can easily plu
 
 |Endpoint|Action|Action Type|Schema|Description|
 |---|---|---|---|------|
-|ReadMultiple|ReadMultiple|GET|Page/webapplicationcontactdata|Fetch Accounts/customers from Business Central and post it to the destination application|
-|ReadMultiple|ReadMultiple|GET|Page/webapplicationproductdata|Fetch products from Business Central and post it to the destination application|
+|ReadMultiple|ReadMultiple|GET|Page/webapplicationcontactdata|[Fetch Accounts/customers from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-register-new-customers)|
+|ReadMultiple|ReadMultiple|GET|Page/webapplicationproductdata|[Fetch products from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-register-new-items)|
 |AECCustomerImport|AECCustomerImport|POST|AECCustomerXMLPort|Post customer from source application to Business Central|
 |AECSimpleProductImport|AECSimpleProductImport|POST|AECSimpleItemXmlPort|Post product from source application to Business Central|

@@ -70,6 +70,7 @@ child:: is axis
 child::book[1] is a location step.
 catalog, book and author are node.
 
+
 * Let's start with Axes
 
 1. child axis contains the children of context node. For example : /child::catalog/child::book
@@ -96,3 +97,4 @@ catalog, book and author are node.
  2. * instead of node(). 
  3. /catalog/book[2]/@id instead of /catalog/book[2]/attribute::id
  4. //author instead of /descendant-or-self::node()/child::author
+
