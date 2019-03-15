@@ -19,7 +19,7 @@
 
 
 
-<title>Working with Schema, Action &amp; Filter  - APPSeCONNECT Product Docs</title>
+<title>Working with Schema, Action &amp; Filter - APPSeCONNECT Product Docs</title>
 
 
 
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Working with Schema, Action & Filter </li>
+      <li class="current">Working with Schema, Action & Filter</li>
     
   
 </ol>-->
@@ -293,12 +293,6 @@
         
         
 <ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-url="/home/" data-jstree='{"icon":"fa fa-home"}'>
-        <a href="/home/" onclick="selectTab('/home/', event);" title="Go to Home">Home</a>
-        
-    </li>
     
     
     <li class="menu-item-" data-url="/getting-started/" data-jstree='{"icon":"fa fa-play"}'>
@@ -1122,7 +1116,7 @@
     
     
     <li class="menu-item-" data-url="/transformation/working-with-schemas-action-filter/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/working-with-schemas-action-filter/" onclick="selectTab('/transformation/working-with-schemas-action-filter/', event);" title="Go to Working with Schema, Action and Filter ">Working with Schema, Action and Filter </a>
+        <a href="/transformation/working-with-schemas-action-filter/" onclick="selectTab('/transformation/working-with-schemas-action-filter/', event);" title="Go to Working with Schema, Action and Filter">Working with Schema, Action and Filter</a>
         
     </li>
     
@@ -1357,6 +1351,25 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/rule/overview-of-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/overview-of-rule/" onclick="selectTab('/rule/overview-of-rule/', event);" title="Go to Rule">Rule</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/rule/choose-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/choose-rule/" onclick="selectTab('/rule/choose-rule/', event);" title="Go to Choosing & Activating Rule">Choosing & Activating Rule</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
 </ul>
 
     </nav>
@@ -1393,7 +1406,7 @@
                 
                 
                 
-                <li class="current">Working with Schema, Action & Filter </li>
+                <li class="current">Working with Schema, Action & Filter</li>
                 
                 
             </ol>
@@ -1448,8 +1461,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#knowing-schema-actions--filters">Knowing Schema, Actions &amp; Filters</a></li>
-  <li><a href="#importing-schemas-and-actions-of-an-application">Importing Schemas and Actions of an Application</a></li>
-  <li><a href="#steps-to-import-schema-and-actions-of-an-application">Steps to Import Schema and Actions of an application</a></li>
+  <li><a href="#steps-to-import-schemas-and-actions-of-an-application">Steps to Import Schemas and Actions of an Application</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1534,7 +1546,7 @@ key-value pair &amp; Complex filters as required.</p>
 
 <p><img src="/staticfiles/Transformation/media/actionfilter-example3.png" alt="actionfilter-example3" /></p>
 
-<h3 id="importing-schemas-and-actions-of-an-application">Importing Schemas and Actions of an Application</h3>
+<h3 id="steps-to-import-schemas-and-actions-of-an-application">Steps to Import Schemas and Actions of an Application</h3>
 
 <p>The steps to import schemas and actions of an application is given below:</p>
 
@@ -1545,54 +1557,29 @@ key-value pair &amp; Complex filters as required.</p>
   <li>An application is needed to select for defining the Schemas and its Actions.</li>
 </ol>
 
-<h3 id="steps-to-import-schema-and-actions-of-an-application">Steps to Import Schema and Actions of an application</h3>
+<p><strong>Importing Schemas and Actions of an application</strong></p>
 
 <ol>
   <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
-  <li>Go to APPS Page and <a href="">Choose any application</a></li>
+  <li>Go to APPS Page and <a href="/getting-started/#choosing-application">Choose any application</a></li>
   <li>Click on the + sign after adding the application and click on Schema 
-(Here MS Dynamics NAV has been choosen).</li>
+(Here MS Dynamics NAV has been choosen). 
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction1.png" alt="Importing-SchemaAction1" /></li>
+  <li>On the Schema Window the user can view the schemas present or can also add schemas present for the ADD Schema Option.
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction2.png" alt="Importing-SchemaAction2" /></li>
+  <li>The Actions inside a schema can be viewed by clicking on the + sign. 
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction3.png" alt="Importing-SchemaAction3" /></li>
+  <li>Click on the <code class="highlighter-rouge">ADD ACTION</code> button for providing Actions in the schema level. 
+Input the <strong>Action Name</strong> and the <strong>Action Description</strong>. The user can view the ACTION window below.
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction4.png" alt="Importing-SchemaAction4" /></li>
+  <li>Expand the nodes for viewing the Action Filters and the Resync Filters. Right Click on the Action Filter node to create its filters.
+<strong>NOTE: Save the Action Name and the Description before creating action filters.</strong>
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction5.png" alt="Importing-SchemaAction5" /></li>
+  <li>Edit the name of the Action Filter node and input the details in the fields REQUEST, OPERATOR, and the VALUE.</li>
+  <li>Similarly, for RESYNC Filter, Right Click to create its filter. Edit the Name, and input the details for the field REQUEST, OPERATOR and the VALUE.
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction6.png" alt="Importing-SchemaAction6" /></li>
+  <li>Once done with the configurations, click on the SAVE option.</li>
 </ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping1.png" alt="attributemapping1" /></p>
-
-<ol>
-  <li>
-    <p>On the Schema Window the user can view the schemas present or can also add schemas present for the ADD Schema Option.
-<img src="/staticfiles/Transformation/media/attributemapping2.png" alt="attributemapping2" /></p>
-  </li>
-  <li>
-    <p>The Actions inside a schema can be viewed by clicking on the + sign.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping3.png" alt="attributemapping3" /></p>
-
-<ol>
-  <li>
-    <p>Click on the <code class="highlighter-rouge">ADD ACTION</code> button for providing Actions in the schema level. 
-Input the Action Name and the Action Description. The user can view the ACTION window below.
-<img src="/staticfiles/Transformation/media/attributemapping4.png" alt="attributemapping4" /></p>
-  </li>
-  <li>
-    <p>Expand the nodes for viewing the Action Filters and the Resync Filters. Right Click on the Action Filter node to create its filters.</p>
-  </li>
-</ol>
-
-<p><strong>NOTE: Save the Action Name and the Description before creating action filters.</strong></p>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping5.png" alt="attributemapping5" /></p>
-
-<ol>
-  <li>
-    <p>Edit the name of the Action Filter node and input the details in the fields REQUEST, OPERATOR, and the VALUE.</p>
-  </li>
-  <li>
-    <p>Similarly, for RESYNC Filter, Right Click to create its filter. Edit the Name, and input the details for the field REQUEST, OPERATOR and the VALUE.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping6.png" alt="attributemapping6" /></p>
 
 <p class="notice--info"><strong>Protip:</strong> Default Schemas would only be present for the Pre-packaged APPS.</p>
 
@@ -1653,7 +1640,7 @@ Input the Action Name and the Action Description. The user can view the ACTION w
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Working+with+Schema%2C+Action+%26+Filter+%20https://docs.appseconnect.com%2Ftransformation%2Fworking-with-schemas-action-filter%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Working+with+Schema%2C+Action+%26+Filter%20https://docs.appseconnect.com%2Ftransformation%2Fworking-with-schemas-action-filter%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Ftransformation%2Fworking-with-schemas-action-filter%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -2865,8 +2852,20 @@ Input the Action Name and the Action Description. The user can view the ACTION w
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -2942,8 +2941,6 @@ Input the Action Name and the Action Description. The user can view the ACTION w
                                     Handling Variables and Functions
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

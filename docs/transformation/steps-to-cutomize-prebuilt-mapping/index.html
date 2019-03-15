@@ -295,12 +295,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/home/" data-jstree='{"icon":"fa fa-home"}'>
-        <a href="/home/" onclick="selectTab('/home/', event);" title="Go to Home">Home</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/getting-started/" data-jstree='{"icon":"fa fa-play"}'>
         <a href="/getting-started/" onclick="selectTab('/getting-started/', event);" title="Go to Getting Started">Getting Started</a>
         
@@ -1122,7 +1116,7 @@
     
     
     <li class="menu-item-" data-url="/transformation/working-with-schemas-action-filter/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/working-with-schemas-action-filter/" onclick="selectTab('/transformation/working-with-schemas-action-filter/', event);" title="Go to Working with Schema, Action and Filter ">Working with Schema, Action and Filter </a>
+        <a href="/transformation/working-with-schemas-action-filter/" onclick="selectTab('/transformation/working-with-schemas-action-filter/', event);" title="Go to Working with Schema, Action and Filter">Working with Schema, Action and Filter</a>
         
     </li>
     
@@ -1357,6 +1351,25 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/rule/overview-of-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/overview-of-rule/" onclick="selectTab('/rule/overview-of-rule/', event);" title="Go to Rule">Rule</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/rule/choose-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/choose-rule/" onclick="selectTab('/rule/choose-rule/', event);" title="Go to Choosing & Activating Rule">Choosing & Activating Rule</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
 </ul>
 
     </nav>
@@ -1434,7 +1447,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
                 
                 
@@ -1449,8 +1462,9 @@
                         <ul class="toc__menu">
   <li><a href="#prerequisites-for-working-with-mapping">Prerequisites for Working with Mapping</a></li>
   <li><a href="#implementing-attribute-mapping">Implementing Attribute Mapping</a></li>
+  <li><a href="#respect-hierarchical-rendering-on-mapping-state">Respect Hierarchical Rendering on Mapping state</a></li>
   <li><a href="#examples-of-attribute-mapping">Examples of Attribute Mapping</a></li>
-  <li><a href="#how-to-do-the-above">How to do the above</a></li>
+  <li><a href="#steps-to-attribute-mapping">Steps to Attribute Mapping</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1552,10 +1566,13 @@ b. ADD IF</p>
 
 <p>For the attributes which are mapped, options available is:</p>
 
-<p>a.	<strong>Disable</strong> -This option is for disabling the mapping, if not required.
-b.	<strong>Open</strong> - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.
-c.	<strong>Clear</strong> - This option clears out the existing mapping.
-d.	<strong>Add If</strong> - If-Else conditional mapping can be implemented, if clicked on this option. <a href="/transformation/define-logic-over-destination-mapping/">Click here</a> to know more</p>
+<p>a.	<strong>Disable</strong> -This option is for disabling the mapping, if not required.</p>
+
+<p>b.	<strong>Open</strong> - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.</p>
+
+<p>c.	<strong>Clear</strong> - This option clears out the existing mapping.</p>
+
+<p>d.	<strong>Add If</strong> - If-Else conditional mapping can be implemented, if clicked on this option. <a href="/transformation/define-logic-over-destination-mapping/">Click here</a> to know more</p>
 
 <ol>
   <li>Click on the <strong>OPEN</strong> option for implementing the attribute mapping. The User can view the Mapping window, below.</li>
@@ -1590,6 +1607,36 @@ later use similarly. <code class="highlighter-rouge">Comments field</code> is pr
 required later. The <code class="highlighter-rouge">Output Encoded</code> checkbox is for ensuring that the generated data is kept intact 
 irrespective of the XML standardisation.</p>
 
+<h2 id="respect-hierarchical-rendering-on-mapping-state">Respect Hierarchical Rendering on Mapping state</h2>
+
+<p>On disabling the mapping of the parent node, it disables all the child node such that when the XML is rendered, 
+only the enabled node will be rendered in the XML. This feature will help the user to implement
+the hierarchical rendering feature in the APPSeCONNECT Portal.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<p>Mapping should be done in the parent node for accessing the Enable/Disable feature.</p>
+
+<p><strong>Steps to implement hierarchical rendering on mapping</strong></p>
+
+<ol>
+  <li>Login the APPSeCONNECT Portal.</li>
+  <li>Navigate to the touchpoints area after <a href="/getting-started/#creating-connection--executing-the-touchpoint">creating a connection</a></li>
+  <li>Choose any touchpoint and click on the Transform button.</li>
+  <li>On <code class="highlighter-rouge">expanding the schema object</code>, all the <code class="highlighter-rouge">complex objects and the complex objects collection</code> are displayed.</li>
+  <li>On Hovering over the complex object collections and the complex objects, the three horizontal dots appear.</li>
+  <li>Click on the <code class="highlighter-rouge">OPEN</code> button for mapping the node. Click <code class="highlighter-rouge">SUBMIT</code> button for saving the mapping.</li>
+  <li>Hover the icon over the mapped complex object/complex object collection. The Disable option will appear.</li>
+  <li>Click the Disable option, the complex object/complex object collection and its child, sub-child, 
+all the nodes get disabled, present under it.</li>
+  <li>Now, if a child node is enabled from the list of disabled nodes, the child gets enabled, also its immediate parent gets enabled.</li>
+</ol>
+
+<p>Now if the immediate parent is also associated with a parent (a complex object/complex object collection), it also gets 
+enabled, rest all other child nodes on that tree, remains disabled.</p>
+
+<p class="notice--info"><strong>Protip:</strong> The Disabled node turns grey on disabling.</p>
+
 <h2 id="examples-of-attribute-mapping">Examples of Attribute Mapping</h2>
 
 <p>To better explain the usage of Attribute mapping, let’s take a quick look at an example of specific 
@@ -1615,7 +1662,7 @@ So, for that purpose Customer’s email which exists at both ends is considered 
 
 <p><strong>OCRD refers to the Orders Table and U_WBCUSTID refers to the web customer id</strong></p>
 
-<h2 id="how-to-do-the-above">How to do the above</h2>
+<h2 id="steps-to-attribute-mapping">Steps to Attribute Mapping</h2>
 
 <ol>
   <li>
@@ -2927,8 +2974,20 @@ So, for that purpose Customer’s email which exists at both ends is considered 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -2955,7 +3014,7 @@ So, for that purpose Customer’s email which exists at both ends is considered 
                             <li>
                                 <a href="/transformation/working-with-schemas-action-filter/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Schema, Action & Filter 
+                                    Working with Schema, Action & Filter
                                 </a>
                             </li>
                             
@@ -3002,8 +3061,6 @@ So, for that purpose Customer’s email which exists at both ends is considered 
                                     Using Lookups Mapping for Value Interchange
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

@@ -295,12 +295,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/home/" data-jstree='{"icon":"fa fa-home"}'>
-        <a href="/home/" onclick="selectTab('/home/', event);" title="Go to Home">Home</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/getting-started/" data-jstree='{"icon":"fa fa-play"}'>
         <a href="/getting-started/" onclick="selectTab('/getting-started/', event);" title="Go to Getting Started">Getting Started</a>
         
@@ -1122,7 +1116,7 @@
     
     
     <li class="menu-item-" data-url="/transformation/working-with-schemas-action-filter/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/working-with-schemas-action-filter/" onclick="selectTab('/transformation/working-with-schemas-action-filter/', event);" title="Go to Working with Schema, Action and Filter ">Working with Schema, Action and Filter </a>
+        <a href="/transformation/working-with-schemas-action-filter/" onclick="selectTab('/transformation/working-with-schemas-action-filter/', event);" title="Go to Working with Schema, Action and Filter">Working with Schema, Action and Filter</a>
         
     </li>
     
@@ -1357,6 +1351,25 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/rule/overview-of-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/overview-of-rule/" onclick="selectTab('/rule/overview-of-rule/', event);" title="Go to Rule">Rule</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/rule/choose-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/choose-rule/" onclick="selectTab('/rule/choose-rule/', event);" title="Go to Choosing & Activating Rule">Choosing & Activating Rule</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
 </ul>
 
     </nav>
@@ -1476,12 +1489,28 @@ Here you will find the detailed description on how to configure the agents for t
 <h2 id="configuring-the-priority-application-in-agent">Configuring the Priority Application in Agent</h2>
 
 <ol>
-  <li>After Publishing the Touchpoints. Update Configurations in the agent.</li>
-  <li>Now in the APP CONFIGURATIONS WINDOW of the agent, configure priority with valid Company URL, Username and Password.</li>
-  <li>After providing the credential click on Validate and SAVE.</li>
+  <li>Publish a Touchpoint, Update Adapters and Update Configuration in the agent..</li>
+  <li>In the app configuration panel of the agent, click on the + Button, beside the application Priority.
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter1.png" alt="priority-adapter1" /></li>
+  <li>On clicking the + button, the credential panel opens for the application Priority.
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter2.png" alt="priority-adapter2" /></li>
+  <li>Input the details in the fields:</li>
 </ol>
 
-<p>These are some of the basic Prerequisites that must be done before integrating any app with Shopify.</p>
+<p>a.	Company URL: The company URL of the priority this is being used.</p>
+
+<p>b.	Username: The username of the Priority ERP.</p>
+
+<p>c.	Password: The password of the ERP.</p>
+
+<p><strong>Note: These are the Mandatory fields that is required for validating the priority adapter in the agent</strong>
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter3.png" alt="priority-adapter3" /></p>
+<ol>
+  <li>Click on the Validate and the Save button once the credentials are provided.
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter4.png" alt="priority-adapter4" /></li>
+</ol>
+
+<p>Follow the above steps, the adapter for Priority can be configured in the APPSeCONNECT agent.</p>
 
 <h2 id="integration-techniques">Integration Techniques</h2>
 
@@ -2826,8 +2855,20 @@ against the Schema for the business scenario as required or the user can utilize
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -2883,8 +2924,6 @@ against the Schema for the business scenario as required or the user can utilize
                                     BambooHR
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             
