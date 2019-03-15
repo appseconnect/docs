@@ -97,6 +97,7 @@ c.	**Clear** - This option clears out the existing mapping.
 
 d.	**Add If** - If-Else conditional mapping can be implemented, if clicked on this option. [Click here](/transformation/define-logic-over-destination-mapping/) to know more
 
+
 10.	Click on the **OPEN** option for implementing the attribute mapping. The User can view the Mapping window, below.
 
 ![attributemapping5](/staticfiles/Transformation/media/attributemapping5.png)
@@ -118,6 +119,38 @@ d.	**Add If** - If-Else conditional mapping can be implemented, if clicked on th
 later use similarly. `Comments field` is providing comments specific to this attribute mapping that might be 
 required later. The `Output Encoded` checkbox is for ensuring that the generated data is kept intact 
 irrespective of the XML standardisation. 
+
+## Respect Hierarchical Rendering on Mapping state
+
+On disabling the mapping of the parent node, it disables all the child node such that when the XML is rendered, 
+only the enabled node will be rendered in the XML. This feature will help the user to implement
+the hierarchical rendering feature in the APPSeCONNECT Portal.
+
+**Prerequisites**
+
+Mapping should be done in the parent node for accessing the Enable/Disable feature.
+
+**Steps to implement hierarchical rendering on mapping**
+
+1.	Login the APPSeCONNECT Portal.
+2.	Navigate to the touchpoints area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
+3.	Choose any touchpoint and click on the Transform button.
+4.  On `expanding the schema object`, all the `complex objects and the complex objects collection` are displayed.
+5.  On Hovering over the complex object collections and the complex objects, the three horizontal dots appear. 
+6.  Click on the `OPEN` button for mapping the node. Click `SUBMIT` button for saving the mapping.
+6.	Hover the icon over the mapped complex object/complex object collection. The Disable option will appear.
+7.	Click the Disable option, the complex object/complex object collection and its child, sub-child, 
+    all the nodes get disabled, present under it.
+8.	Now, if a child node is enabled from the list of disabled nodes, the child gets enabled, also its immediate parent gets enabled.
+
+Now if the immediate parent is also associated with a parent (a complex object/complex object collection), it also gets 
+enabled, rest all other child nodes on that tree, remains disabled. 
+
+
+**Protip:** The Disabled node turns grey on disabling.
+{: .notice--info} 
+
+
 
 
 ## Examples of Attribute Mapping

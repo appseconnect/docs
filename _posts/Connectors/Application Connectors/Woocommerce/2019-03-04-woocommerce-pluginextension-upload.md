@@ -13,13 +13,11 @@ menus:
 
 Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. 
 This document demonstrates as how to upload and Install an uploaded Plugin.
-
 ## Prerequisite:
 1.	Need to have a valid WooCommerce account.
 2.	The APPSeCONNECT Plugin/Extension is needed to be present for uploading.
 
 **Note: The Plugin comes pre-packaged with APPSeCONNECT**
-
 ## Steps to Upload the Extension in WooCommerce 
 
 Go to: Dashboard > Plugins > Add New.

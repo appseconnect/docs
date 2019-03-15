@@ -47,7 +47,6 @@ To Know about Agent Configuration, [Click here](/deployment/Deployment-Configura
   icon to provide the application credentials in Agent.
 
 ![woocommerce-agent1](/staticfiles/connectors/media/application-connector/woocommerce-agent1.png)
-
 3. Provide the credentials for the Woocommerce application. To provide Woocommerce credentials follow the steps below:
 
 a. Login to the admin panel with valid credentials.
@@ -66,14 +65,11 @@ e. Enter your API details in the respective fields of AEC agent (API key corresp
 f. Username and password are the login credentials of your Woocommerce admin portal. For WooCommerce version 2.6 
    and above, you need to select "/wp-jason/wc/" (while for Woocommerce version 2.3.9 select "/wc-api/") 
    as the Base Url Endpoint.
-
 ![woocommerce-agent3](/staticfiles/connectors/media/application-connector/woocommerce-agent3.png)
-
 4. Click on the Validate button to validate your credentials. On successful validation, a success message will be generated 
    as "Connection Validate successfully".
 
 ![woocommerce-agent4](/staticfiles/connectors/media/application-connector/woocommerce-agent4.png)
-
 5. After successful validation, you can save your credentials by clicking on the Save button. 
    The success message will be generated as "Connection saved successfully".
 
