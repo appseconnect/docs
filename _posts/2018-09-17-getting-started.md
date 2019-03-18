@@ -71,7 +71,7 @@ Both the process of application creation is given below.
 The feature of custom app creation enables you to create a custom app with all the required credentials.
 The steps are shown below:
 
-1. Go to My Apps section> Choose App> Create Custom App. The following screen appears
+1. Go to My Apps section> Choose App> Create Custom App. The following screen appears  
 ![CustomAPP-Creation1](/staticfiles/root/media/CustomAPP-Creation1.png)
 2. In the Custom App Creation Screen the section are divided into - **App Details, Version Details, Protocol Setup & Adapter**
 ![CustomAPP-Creation2](/staticfiles/root/media/CustomAPP-Creation2.png)  
@@ -211,7 +211,7 @@ This section enables the user to view and add the Schema and its Actions.
 2. Move into the APPS Page and [Choose any application](/getting-started/). 
 3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 ![Select-Schema](/staticfiles/root/media/Select-Schema.png)
-4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.
+4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.  
 ![Add-Schema](/staticfiles/root/media/Add-Schema.png)
 5. The Actions inside a schema can be viewed by clicking on the + sign. The ADD ACTION option is provided for Adding Actions inside a Schema.
 ![Add-Action](/staticfiles/root/media/Add-Action.png)
@@ -257,19 +257,19 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 ![ConnectionDetails](/staticfiles/root/media/ConnectionDetails.png) 
 3. To find existing Connection, Click Search button. An existing connection opens up
 4. A typical connection has the following buttons attached to it.
-5. All the existing connection of the project will be displayed here. One can activate or deactivate connection by the toggle button. 
+5. All the existing connection of the project will be displayed here. One can activate or deactivate connection by the toggle button.   
 ![Search-Connection](/staticfiles/root/media/Search-Connection.png) 
 6. You  can create a new connection by clicking `Create Connection` button.
-7. The following page opens up where you have to input the new connection details.
+7. The following page opens up where you have to input the new connection details.  
 ![Create-NewConnection](/staticfiles/root/media/Create-NewConnection.png) 
-8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.
+8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.  
 ![CreateConnection1](/staticfiles/root/media/CreateConnection1.png)
 9. Activate default touchpoint button will be checked by default.
-Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.
+Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.  
 ![Select-Connection](/staticfiles/root/media/Select-Connection.png)
-10. On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.
+10. On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.  
 ![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)
-11. On selecting View connection, all the touchpoints of the connection will be displayed.
+11. On selecting View connection, all the touchpoints of the connection will be displayed.  
 ![Touchpoint-List](/staticfiles/root/media/Touchpoint-List.png)
 12. Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.
 
@@ -290,17 +290,17 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 
 ### Environment setup of the on-premise agent:
 
- 1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
+ 1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.  
  ![DashboardScreen](/staticfiles/root/media/DashboardScreen.png)
  2. Run the setup folder to install the Agent in the system.
  3. Open the installed Agent on your machine.
- 4. Login to the agent with your portal credentials.  
+ 4. Login to the agent with your portal credentials.    
    ![Login1](/staticfiles/root/media/Login1.png)
  5. There are four icons as shown below:
 * The home icon shows the connections in the project.
 * The apps configuration icon (next to the home icon) shows the applications used for the connections which need to be configured for successful sync.
 * The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.
-* The last one is the Workflow option that displays the configured workflows in the project.
+* The last one is the Workflow option that displays the configured workflows in the project.  
   ![Connections](/staticfiles/root/media/Connections.png)
 
 ### Environment setup of the Cloud agent
@@ -310,10 +310,30 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 * The two apps between which data has to be synced should be cloud supported. 
 * The connection between the two applications should be cloud supported.
 
-1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).
+1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).  
 ![App](/staticfiles/root/media/App.png)
-2. Go to the Connections page and assign the app's credential to the connection by choosing the configuration setup option as shown below.
+2. Go to the Connections page and assign the app's credential to the connection by choosing the configuration setup option as shown below.  
 ![Connection_New](/staticfiles/root/media/Connection_New.png)
 3. Click on the View the Connection icon and navigate to the touchpoints page.
-4. Click on the play button to run the sync process.
-![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.png)
+4. Click on the play button to run the sync process.  
+![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.png)  
+
+## Default Notification for Transactions
+
+As we go on improving and deploying the integration, a number of failures you might encounter. Some are based on
+incorrect logic which misses a particular data structure that needs improvement on the connector, or else some 
+related to application specific implementation issues. With APPSeCONNECT, we provide daily transaction reports 
+emailed to you by default, once you setup the connector and execute it on your profile. Even though you can 
+setup this section to send you multiple emails per day according to the schedule defined by you, you will get daily
+notification on the amount of transactions being performed through APPSeCONNECT. 
+
+**Setting up email notification**
+- If you have installed on - premise agent, open the agent console and select Settings panel to open settings section of agent.  
+![SettingPanel](/staticfiles/deployment/media/Setting/SettingPanel.png)
+- In the settings panel, you can open Scheduler for Email Notification. You would see the Email notification is by default checked and schedule for mail once at 12 AM is automatically setup. 
+- Click on the schedule section and add as many schedule you want. 
+[Add image]
+- Once setup, you can re-run the autosync to reset the settings. 
+
+**ProTip:** The report can be generated manually using the `Send Email Report Now` button and each request will reset the data to a particular time so that the report is consistent without duplicate entry.
+{: .notice--info}
