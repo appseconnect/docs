@@ -1196,7 +1196,7 @@
     
     
     <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods">Using library methods</a>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1220,12 +1220,6 @@
     
     <li class="menu-item-" data-url="/transformation/troubleshooting/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/troubleshooting/" onclick="selectTab('/transformation/troubleshooting/', event);" title="Go to Troubleshooting">Troubleshooting</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/appresource-functions/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/transformation/appresource-functions/" onclick="selectTab('/transformation/appresource-functions/', event);" title="Go to App Resources">App Resources</a>
         
     </li>
     
@@ -1360,6 +1354,18 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/rule/create-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Creation of Rule">Creation of Rule</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-misfire-event/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-misfire-event/" onclick="selectTab('/rule/preconfigured-rule-for-misfire-event/', event);" title="Go to Pre-Configured Rule for Misfire Event">Pre-Configured Rule for Misfire Event</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/choose-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/choose-rule/" onclick="selectTab('/rule/choose-rule/', event);" title="Go to Choosing & Activating Rule">Choosing & Activating Rule</a>
         
@@ -1488,83 +1494,44 @@ execution process of transformation is deployed multiple times.</p>
 
 <h2 id="implementing-attribute-mapping">Implementing Attribute Mapping</h2>
 
+<p>Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping. 
+<strong>Note:</strong> The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection.<br />
+<strong>Note:</strong> For the demonstration of touchpoint <code class="highlighter-rouge">Invoice Add</code> is used. 
+<img src="/staticfiles/Transformation/media/attributemapping.png" alt="attributemapping" /></p>
 <ol>
-  <li>Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping.</li>
-</ol>
-
-<p><strong>Note:</strong> The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection.</p>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping.png" alt="attributemapping" /></p>
-
-<p><strong>Note:</strong> For the demonstration the touchpoint <code class="highlighter-rouge">Invoice Add</code> is used.</p>
-
-<ol>
-  <li>
-    <p>Click on the Transform button on the touchpoint which you have selected.</p>
-  </li>
-  <li>
-    <p>Expand the transformation node for viewing the <code class="highlighter-rouge">Touchpoint Object, Complex Object collections, the Complex Object and the Attributes</code>.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping1.png" alt="attributemapping1" /></p>
-
-<ol>
+  <li>Click on the Transform button on the touchpoint which you have selected.</li>
+  <li>Expand the transformation node for viewing the <code class="highlighter-rouge">Touchpoint Object, Complex Object collections, the Complex Object and the Attributes</code>.
+<img src="/staticfiles/Transformation/media/attributemapping1.png" alt="attributemapping1" /></li>
   <li>Expanding the <code class="highlighter-rouge">For-each loop</code> the user gets the view of the node oInvoices. <code class="highlighter-rouge">oInvoices</code> is a touchpoint object 
   that is used to send data to the target application. The <code class="highlighter-rouge">For-Each Loop</code> is set relatively rather than writing the transformation logic multiple times and
-  this undergoes execution whenever the touchpoint is synced in the For-Each Loop Node.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping2.png" alt="attributemapping2" /></p>
-
-<ol>
-  <li>
-    <p>On expanding <code class="highlighter-rouge">oInvoices(Touchpoint Object)</code> the user gets the view of the several complex object collections 
+  this undergoes execution whenever the touchpoint is synced in the For-Each Loop Node.<br />
+<img src="/staticfiles/Transformation/media/attributemapping2.png" alt="attributemapping2" /></li>
+  <li>On expanding <code class="highlighter-rouge">oInvoices(Touchpoint Object)</code> the user gets the view of the several complex object collections 
 and the attributes that are listed under it. Each attribute has separate information about the entity that 
-it belongs to. Each of these attributes will contain different information about the customer record.</p>
-  </li>
-  <li>
-    <p>The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting</p>
-  </li>
+it belongs to. Each of these attributes will contain different information about the customer record.</li>
+  <li>The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting 
+<strong>Note:</strong> Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
+<strong>Note:</strong> For different touchpoints, the object is different. For the touchpoint Sales Order Add,
+the object is oOrders for Simple Product Add it is oItems and so on.
+<img src="/staticfiles/Transformation/media/attributemapping3.png" alt="attributemapping3" /></li>
 </ol>
-
-<p><strong>Note:</strong> Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.</p>
-
-<p><strong>Note:</strong> For different touchpoints, the object is different. For the touchpoint Sales Order Add,
-the object is oOrders for Simple Product Add it is oItems and so on.</p>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping3.png" alt="attributemapping3" /></p>
 
 <p class="notice--info"><strong>Protip:</strong> Document_Lines will contain the details of the Product in terms of Quantity and Unit Price etc., 
 DocumentsAdditionalExpenses contains the Freight, Tax information etc. of the product.</p>
 
-<p><strong>Note:</strong> Different objects in different touchpoints will have different attributes.</p>
-
-<ol>
-  <li>Expanding the <strong>row</strong> displays the destination attributes in the touchpoint level.
-All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping4.png" alt="attributemapping4" /></p>
-
-<ol>
-  <li>The user can create custom attributes, which is defined in project level. You can use the custom attributes only for a particular touchpoint.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping4b.png" alt="attributemapping4b" /></p>
-
-<p><strong>Note:</strong> The user can sort the order of attributes and variables in the mapping page by dragging and dropping the same 
-under its parent only if the mapping for the attribute has been done or if it is blank.</p>
-
-<ol>
-  <li>Clicking on any of the attributes displays an option (three horizontal dots) to open a drop-down.</li>
-</ol>
-
-<p>For the attributes which are not mapped, options available is: 
+<p><strong>Note:</strong> Different objects in different touchpoints will have different attributes. 
+Expanding the <strong>row</strong> displays the destination attributes in the touchpoint level.
+All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.
+<img src="/staticfiles/Transformation/media/attributemapping4.png" alt="attributemapping4" />
+The user can create custom attributes, which is defined in project level. You can use the custom attributes only for a particular touchpoint.
+<img src="/staticfiles/Transformation/media/attributemapping4b.png" alt="attributemapping4b" />
+<strong>Note:</strong> The user can sort the order of attributes and variables in the mapping page by dragging and dropping the same 
+under its parent only if the mapping for the attribute has been done or if it is blank.
+Clicking on any of the attributes displays an option (three horizontal dots) to open a drop-down.
+For the attributes which are not mapped, options available is: 
 a. OPEN 
-b. ADD IF</p>
-
-<p>For the attributes which are mapped, options available is:</p>
+b. ADD IF<br />
+For the attributes which are mapped, options available is:</p>
 
 <p>a.	<strong>Disable</strong> -This option is for disabling the mapping, if not required.</p>
 
@@ -1574,35 +1541,15 @@ b. ADD IF</p>
 
 <p>d.	<strong>Add If</strong> - If-Else conditional mapping can be implemented, if clicked on this option. <a href="/transformation/define-logic-over-destination-mapping/">Click here</a> to know more</p>
 
-<ol>
-  <li>Click on the <strong>OPEN</strong> option for implementing the attribute mapping. The User can view the Mapping window, below.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping5.png" alt="attributemapping5" /></p>
-
-<ol>
-  <li>
-    <p>The mapping window has multiple sections and fields. Expanding the nodes in the Source Field section displays the appresource functions 
-and the source attributes that is required for the mapping.</p>
-  </li>
-  <li>
-    <p>On expanding the touchpoint object node (in this case INVOICE ADD) displays all the source attributes.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping6.png" alt="attributemapping6" /></p>
-
-<ol>
-  <li>Expanding the node <code class="highlighter-rouge">FUNCTIONS</code> lists all the functions present under Generic Source, Destination and Cloud appresources.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/attributemapping7.png" alt="attributemapping7" /></p>
-
-<ol>
-  <li>Clicking on any of the functions, will display it in the mapping panel. Once the mapping is done, Click SUBMIT button for Enabling and Saving the mapping.</li>
-</ol>
-
-<p><strong>Note:</strong> The Tips field is for providing or noting down certain tips that might be required for the mapping for 
+<p>Click on the <strong>OPEN</strong> option for implementing the attribute mapping. The User can view the Mapping window, below.
+<img src="/staticfiles/Transformation/media/attributemapping5.png" alt="attributemapping5" />
+The mapping window has multiple sections and fields. Expanding the nodes in the Source Field section displays the appresource functions 
+and the source attributes that is required for the mapping. On expanding the touchpoint object node (in this case INVOICE ADD) displays all the source attributes.
+<img src="/staticfiles/Transformation/media/attributemapping6.png" alt="attributemapping6" />
+Expanding the node <code class="highlighter-rouge">FUNCTIONS</code> lists all the functions present under Generic Source, Destination and Cloud appresources. 
+<img src="/staticfiles/Transformation/media/attributemapping7.png" alt="attributemapping7" />
+Clicking on any of the functions, will display it in the mapping panel. Once the mapping is done, Click SUBMIT button for Enabling and Saving the mapping. 
+<strong>Note:</strong> The Tips field is for providing or noting down certain tips that might be required for the mapping for 
 later use similarly. <code class="highlighter-rouge">Comments field</code> is providing comments specific to this attribute mapping that might be 
 required later. The <code class="highlighter-rouge">Output Encoded</code> checkbox is for ensuring that the generated data is kept intact 
 irrespective of the XML standardisation.</p>
@@ -2982,8 +2929,20 @@ So, for that purpose Customer’s email which exists at both ends is considered 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -3025,7 +2984,7 @@ So, for that purpose Customer’s email which exists at both ends is considered 
                             <li>
                                 <a href="/transformation/using-library-methods/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Using library methods
+                                    Using library methods/AppResource Function
                                 </a>
                             </li>
                             
@@ -3061,8 +3020,6 @@ So, for that purpose Customer’s email which exists at both ends is considered 
                                     Using Lookups Mapping for Value Interchange
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

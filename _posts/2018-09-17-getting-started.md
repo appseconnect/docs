@@ -330,9 +330,9 @@ notification on the amount of transactions being performed through APPSeCONNECT.
 **Setting up email notification**
 - If you have installed on - premise agent, open the agent console and select Settings panel to open settings section of agent.  
 ![SettingPanel](/staticfiles/deployment/media/Setting/SettingPanel.png)
-- In the settings panel, you can open Scheduler for Email Notification. You would see the Email notification is by default checked and schedule for mail once at 12 AM is automatically setup. 
-- Click on the schedule section and add as many schedule you want. 
-[Add image]
+- In the settings panel, you can open Scheduler for Email Notification. You would see the Email notification is by default checked and schedule for mail once at 12 AM is automatically setup.   
+- Click on the schedule section and add as many schedule you want.   
+![email-schedule](/staticfiles/deployment/media/Setting/email-schedule.png)  
 - Once setup, you can re-run the autosync to reset the settings. 
 
 **Note:** The morning report is dependent on Auto - Sync service and hence to receive reports, you must keep auto-sync service active. 

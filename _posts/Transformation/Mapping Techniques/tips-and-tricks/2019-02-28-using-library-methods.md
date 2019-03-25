@@ -32,29 +32,35 @@ b.	Destinationlib Appresources – The appresource function of the destination a
 
 ## Prerequisites for working with AppResources
 
-[Click]() for knowing the common prerequisites.
+[Click](/transformation/basic-of-source-destination-mapping/#pre-requisites-for-source-and-destination-mapping) for knowing the common prerequisites.
 
-Need to upload the adapter for accessing the appresources. Click [here]()(Version & Library Function Update) to know more.
+Need to upload the adapter for accessing the appresources.[Click ](/connectors/Version-Extraction-For-Adapter-Upload/) to know more.
+
+Note: For an Application, The Library Function can also be viewed in the APPS Sections. 
+Navigate to APPS > Expand the Application Node > Functions. 
+All the Library Function for that Application can be viewed.
+
 
 ## Implementing the AppResources in Mapping
 
 1.	Login to the APPSeCONNECT Portal and Navigate to the Touchpoint area for the connection which is required for the 
     Transformation Process.  
  
-**Note:  Here the connection used is Magento2 – SAP Business One.**
+**Note:  Here the connection used is Magento2 – SAP Business One.**  
 2.	Click **transform button** in the touchpoint for which the transformation is to be done. 
-    [Click]() to know more about the Mapping (attribute mapping)  
+    [Click](/transformation/understanding-attribute-mapping/) to know more about the Mapping attribute mapping.  
 
-**Note: Here the Touchpoint used is Delivery Update Response.**
+**Note: Here the Touchpoint used is Delivery Update Response.**  
 3.	In the Mapping window of the attribute, expand the node Functions to view all the categories of the Appresources 
     [Generic, Source, Destination and the Cloud].  
-![app_resourcemapping1](/staticfiles/Transformation/media/app_resourcemapping1.png)
+![app_resourcemapping1](/staticfiles/Transformation/media/app_resourcemapping1.png)  
 4.	On Expanding the Generic Function Node, all the Generic Appresources can be viewed. Clicking on any of the function will be 
-    appear in the Mapping Panel.  
-![app_resourcemapping2](/staticfiles/Transformation/media/app_resourcemapping2.png)	
+    appear in the Mapping Panel.     
+![app_resourcemapping2](/staticfiles/Transformation/media/app_resourcemapping2.png)  
+	 
 5.	On Expanding the *Source Function Node (Native Function)* all the Native Appresources for the source function is viewed. 
-    Clicking on any of the function, will make it appear in the mapping Panel.  
-![app_resourcemapping3](/staticfiles/Transformation/media/app_resourcemapping3.png)	
+    Clicking on any of the function, will make it appear in the mapping Panel.    
+![app_resourcemapping3](/staticfiles/Transformation/media/app_resourcemapping3.png)	      
 6.	On Expanding the *Destination Function Node (Native Function)* all the Native Appresources for the 
     destination function is viewed. Clicking on any of the function, will make it appear in the mapping Panel.  
 ![app_resourcemapping4](/staticfiles/Transformation/media/app_resourcemapping4.png)	

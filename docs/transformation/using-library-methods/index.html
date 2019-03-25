@@ -19,12 +19,12 @@
 
 
 
-<title>Using library methods - APPSeCONNECT Product Docs</title>
+<title>Using library methods/AppResource Function - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="">
+<meta name="description" content="Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in C# inside the adapter) which is used for the data transformation from the source Application to the Destination Application. AppResources are library functions added to DLL. This Appresource functions are coded to perform a definite task.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Using library methods">
+<meta property="og:title" content="Using library methods/AppResource Function">
 
 
   <link rel="canonical" href="http://localhost:4000/transformation/using-library-methods/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in C# inside the adapter) which is used for the data transformation from the source Application to the Destination Application. AppResources are library functions added to DLL. This Appresource functions are coded to perform a definite task.">
 
 
 
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Using library methods</li>
+      <li class="current">Using library methods/AppResource Function</li>
     
   
 </ol>-->
@@ -1196,7 +1196,7 @@
     
     
     <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods">Using library methods</a>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1220,12 +1220,6 @@
     
     <li class="menu-item-" data-url="/transformation/troubleshooting/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/troubleshooting/" onclick="selectTab('/transformation/troubleshooting/', event);" title="Go to Troubleshooting">Troubleshooting</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/appresource-functions/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/transformation/appresource-functions/" onclick="selectTab('/transformation/appresource-functions/', event);" title="Go to App Resources">App Resources</a>
         
     </li>
     
@@ -1360,6 +1354,18 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/rule/create-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Creation of Rule">Creation of Rule</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-misfire-event/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-misfire-event/" onclick="selectTab('/rule/preconfigured-rule-for-misfire-event/', event);" title="Go to Pre-Configured Rule for Misfire Event">Pre-Configured Rule for Misfire Event</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/choose-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/choose-rule/" onclick="selectTab('/rule/choose-rule/', event);" title="Go to Choosing & Activating Rule">Choosing & Activating Rule</a>
         
@@ -1377,8 +1383,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Using library methods">
-        <meta itemprop="description" content="">
+        <meta itemprop="headline" content="Using library methods/AppResource Function">
+        <meta itemprop="description" content="Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in C# inside the adapter) which is used for the data transformation from the source Application to the Destination Application. AppResources are library functions added to DLL. This Appresource functions are coded to perform a definite task.">
         <meta itemprop="datePublished" content="February 28, 2019">
         
 
@@ -1406,7 +1412,7 @@
                 
                 
                 
-                <li class="current">Using library methods</li>
+                <li class="current">Using library methods/AppResource Function</li>
                 
                 
             </ol>
@@ -1416,7 +1422,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Using library methods
+                <h1 class="page__title" itemprop="headline">Using library methods/AppResource Function
 </h1>
                 
                 
@@ -1447,7 +1453,7 @@
 
 
 
-  less than 1 minute read
+  4 minute read
 </p>
                 
                 
@@ -1459,11 +1465,208 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#prerequisites-for-working-with-appresources">Prerequisites for working with AppResources</a></li>
+  <li><a href="#implementing-the-appresources-in-mapping">Implementing the AppResources in Mapping</a></li>
+  <li><a href="#appresource-function-name">AppResource Function Name</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <p>Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external 
+functions written in C# inside the adapter) which is used for the data transformation from the source Application to the Destination 
+Application. <code class="highlighter-rouge">AppResources are library functions added to DLL</code>. This Appresource functions are coded to perform a definite task.</p>
+
+<p>In APPSeCONNECT there are total 5 Appresource Functions:</p>
+
+<ol>
+  <li><strong>Native AppResources:</strong> - These Appresource are written with the adapter itself. When the Adapter is uploaded in the cloud, 
+these appresource function are uploaded with the adapter itself.</li>
+</ol>
+
+<p>a.	Sourcelib AppResources – The appresource functions of the source application is the Sourcelib appresources. 
+    These functions are referred by *sourcelib.**
+b.	Destinationlib Appresources – The appresource function of the destination application is the Destination Appresources. 
+    These functions are referred by *destinationlib.**</p>
+
+<ol>
+  <li>
+    <p><strong>Generic AppResources:</strong> – The generic appresources are the functions that have general defined task which are provided 
+by APPSeCONNECT itself. These functions are referred by *genericlib.**</p>
+  </li>
+  <li>
+    <p><strong>Cloud Appresources:</strong> The Cloud Appresources are the functions that are used when creating a touchpoint for a technology or custom app. 
+These functions are written with the cloud portal itself. The function of the cloud appresources are referred by *cloudResourcelib.**</p>
+  </li>
+</ol>
+
+<h2 id="prerequisites-for-working-with-appresources">Prerequisites for working with AppResources</h2>
+
+<p><a href="/transformation/basic-of-source-destination-mapping/#pre-requisites-for-source-and-destination-mapping">Click</a> for knowing the common prerequisites.</p>
+
+<p>Need to upload the adapter for accessing the appresources.<a href="/connectors/Version-Extraction-For-Adapter-Upload/">Click </a> to know more.</p>
+
+<p>Note: For an Application, The Library Function can also be viewed in the APPS Sections. 
+Navigate to APPS &gt; Expand the Application Node &gt; Functions. 
+All the Library Function for that Application can be viewed.</p>
+
+<h2 id="implementing-the-appresources-in-mapping">Implementing the AppResources in Mapping</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal and Navigate to the Touchpoint area for the connection which is required for the 
+Transformation Process.</li>
+</ol>
+
+<p><strong>Note:  Here the connection used is Magento2 – SAP Business One.</strong></p>
+<ol>
+  <li>Click <strong>transform button</strong> in the touchpoint for which the transformation is to be done. 
+<a href="/transformation/understanding-attribute-mapping/">Click</a> to know more about the Mapping attribute mapping.</li>
+</ol>
+
+<p><strong>Note: Here the Touchpoint used is Delivery Update Response.</strong></p>
+<ol>
+  <li>In the Mapping window of the attribute, expand the node Functions to view all the categories of the Appresources 
+[Generic, Source, Destination and the Cloud].<br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping1.png" alt="app_resourcemapping1" /></li>
+  <li>
+    <p>On Expanding the Generic Function Node, all the Generic Appresources can be viewed. Clicking on any of the function will be 
+appear in the Mapping Panel.   <br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping2.png" alt="app_resourcemapping2" /></p>
+  </li>
+  <li>On Expanding the <em>Source Function Node (Native Function)</em> all the Native Appresources for the source function is viewed. 
+Clicking on any of the function, will make it appear in the mapping Panel.  <br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping3.png" alt="app_resourcemapping3" /></li>
+  <li>On Expanding the <em>Destination Function Node (Native Function)</em> all the Native Appresources for the 
+destination function is viewed. Clicking on any of the function, will make it appear in the mapping Panel.<br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping4.png" alt="app_resourcemapping4" /></li>
+  <li>For Working with cloud appresource, the + (in Bold) button is needed to be clicked for creating the Cloud Resource.<br />
+The Cloud Appresource window opens.<br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping5.png" alt="app_resourcemapping5" /></li>
+  <li>The user can choose from the Code snippet template and language fundamentals templates also. The templates can be 
+added in the code panel by drag and drop. <br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping6.png" alt="app_resourcemapping6" /></li>
+  <li>The templates can be added in the code panel by Drag and Drop.</li>
+  <li>Code the Appresource and click on Validate and SAVE. Now expand the Cloud resource Node for viewing the created function. 
+Click any of the function, will make it appear in the mapping Panel.<br />
+<img src="/staticfiles/Transformation/media/app_resourcemapping7.png" alt="app_resourcemapping7" /></li>
+  <li>Once the mapping is done, click on the <em>Submit button</em> to save the mapping.</li>
+</ol>
+
+<h2 id="appresource-function-name">AppResource Function Name</h2>
+
+<p>APPSeCONNECT provides the flexibility to the users for customizing the pre-packaged touchpoints as per the business needs 
+or requirements by following APPSeCONNECT’s own syntax functions.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Application Name</th>
+      <th>Application Version</th>
+      <th>FunctionId</th>
+      <th>Function Name</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Salesforce</td>
+      <td>25</td>
+      <td>2207</td>
+      <td>GetContactPersons(AccountId)</td>
+      <td>Get contact persons associated with an account id from Salesforce</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>Salesforce</td>
+      <td>25</td>
+      <td>2208</td>
+      <td>GetAccountAdderesses(AccountId)</td>
+      <td>Get billTo and ShipTo addresses associated with an account id from Salesforce</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>Microsoft Dynamics NAV</td>
+      <td>≥ 2009R2 Generic</td>
+      <td>2214</td>
+      <td>GetStringValueFromCollection (pageService,collectionrootname,field1,value1,field2,value2,readfieldname,separatorbetweenstring,xnamespace)</td>
+      <td>Using this function we can get string values with separator from collection of fields</td>
+      <td>GetStringValueFromCollection(‘/Page/CommentList’, ‘CommentList’,’Table_Name’,’Item’, ‘No’,$itemNo,’Comment’,’new line’,’urn:microsoft-dynamics-schemas/page/commentlist’)</td>
+    </tr>
+    <tr>
+      <td>Microsoft Dynamics NAV</td>
+      <td>≥ 2009R2 Generic</td>
+      <td>2215</td>
+      <td>SetProductAndAdditionalAttribute(elementCollection,rootElement,uniqueChild,readoptionidfieldname,splitchar,stringkeys,stringvalues,nameSpace)</td>
+      <td>Using this function, we can set a collection of Product Attribute and Additional attribute</td>
+      <td>SetProductAndAdditionalAttribute($allAttribute,’Web_ProductAttribute_Page’,’AttributeName’,’AttributeOptionId’,’~’,concat(‘msrp’,’~’,’meta_title’),concat(‘1’,’~’,’magentometa title’),’urn:microsoft-dynamics-schemas/page/itemcard’)</td>
+    </tr>
+    <tr>
+      <td>Microsoft Dynamics NAV</td>
+      <td>≥ 2009R2 Generic</td>
+      <td>2216</td>
+      <td>GetNavValue(pageService,field1,value1,field2,value2,field3,value3,returnField)</td>
+      <td>Using this function we can get a field value of a Page</td>
+      <td>GetNavValue(‘/Page/webapplicationcustomerdata’,’ApplicationId’,’1’,’CustomerNo’,$customerNo,’’,’’,’WebCustomerId’)</td>
+    </tr>
+    <tr>
+      <td>SAP B1</td>
+      <td>≥ 8.8</td>
+      <td>2228</td>
+      <td>UpdateUserTableQurey(string tablename, string setfieldname, string setfieldvalue, string condfieldname, string condfieldvalue, string condfieldname2, string condfieldvalue2)</td>
+      <td>You can Update SAP B1 User Table Function</td>
+      <td>UpdateUserTableQurey(‘AECTRANDATA’, ‘U_SyncFlag’ ,’Y’, ‘U_KeyValue’, ‘Item001’, ‘U_ObjectCode’, ‘4’)</td>
+    </tr>
+    <tr>
+      <td>SAP B1</td>
+      <td>≥ 8.8</td>
+      <td>2229</td>
+      <td>SetCustomerAddressItems(XPathNavigator addressitem, string cardCode)</td>
+      <td>This function will return unique Address collection from Magento addresses and SAP B1 Addresses</td>
+      <td>SetCustomerAddressItems(MagentoAddressItems,SAPB1CardCode)</td>
+    </tr>
+    <tr>
+      <td>Shopify</td>
+      <td>1.0.0.0</td>
+      <td>2230</td>
+      <td>CheckShipment(stringorderid,stringisShippingExist)</td>
+      <td>This function is used for checking if an invoice/delivery is created for the order during partial invoice download</td>
+      <td>CheckShipment(‘10000001’, 1)</td>
+    </tr>
+    <tr>
+      <td>Shopify</td>
+      <td>1.0.0.0</td>
+      <td>2231</td>
+      <td>GetShippingTotal(decimaltotalPrice,decimaltotalTax,decimalitemsWithoutTax,stringshippingTotal)</td>
+      <td>This funtion is used for calculating total shipping price of an order</td>
+      <td>GetShippingTotal(totalPrice, totalTax,itemsWithoutTax,shippingTotal)</td>
+    </tr>
+    <tr>
+      <td>SAP B1</td>
+      <td>SAP B1 S/L 9.0</td>
+      <td>2245</td>
+      <td>getData(stringserviceName,stringactionParam,stringmethodName,boolvalue)</td>
+      <td>This function is used for getting data from SAP based on the action parameters passes</td>
+      <td>getData(serviceName, actionParam, methodName, value)</td>
+    </tr>
+    <tr>
+      <td>SAP B1</td>
+      <td>SAP B1 S/L 9.0</td>
+      <td>2246</td>
+      <td>getData(stringserviceName,stringactionParam,stringmethodName)</td>
+      <td>This function is used to get data from SAP B1 based on the action parameter passed</td>
+      <td>getData(serviceName, actionParam, methodName)</td>
+    </tr>
+    <tr>
+      <td>SAP B1</td>
+      <td>SAP B1 S/L 9.0</td>
+      <td>2253</td>
+      <td>ImageToString(stringimgpath)</td>
+      <td>Converts Image information at the path specified to base64 string</td>
+      <td>ImageToString(imgpath)</td>
+    </tr>
+  </tbody>
+</table>
 
                 
             </section>
@@ -1522,7 +1725,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Using+library+methods%20https://docs.appseconnect.com%2Ftransformation%2Fusing-library-methods%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Using+library+methods%2FAppResource+Function%20https://docs.appseconnect.com%2Ftransformation%2Fusing-library-methods%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Ftransformation%2Fusing-library-methods%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -2742,8 +2945,20 @@
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -2823,8 +3038,6 @@
                                     Handling Variables and Functions
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

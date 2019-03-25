@@ -1186,7 +1186,7 @@
     
     
     <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods">Using library methods</a>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1210,12 +1210,6 @@
     
     <li class="menu-item-" data-url="/transformation/troubleshooting/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/troubleshooting/" onclick="selectTab('/transformation/troubleshooting/', event);" title="Go to Troubleshooting">Troubleshooting</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/appresource-functions/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/transformation/appresource-functions/" onclick="selectTab('/transformation/appresource-functions/', event);" title="Go to App Resources">App Resources</a>
         
     </li>
     
@@ -1350,6 +1344,18 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/rule/create-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Creation of Rule">Creation of Rule</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-misfire-event/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-misfire-event/" onclick="selectTab('/rule/preconfigured-rule-for-misfire-event/', event);" title="Go to Pre-Configured Rule for Misfire Event">Pre-Configured Rule for Misfire Event</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/choose-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/choose-rule/" onclick="selectTab('/rule/choose-rule/', event);" title="Go to Choosing & Activating Rule">Choosing & Activating Rule</a>
         
@@ -1427,7 +1433,7 @@
 
 
 
-  14 minute read
+  15 minute read
 </p>
                 
                 
@@ -1466,6 +1472,7 @@
       <li><a href="#environment-setup-of-the-cloud-agent">Environment setup of the Cloud agent</a></li>
     </ul>
   </li>
+  <li><a href="#default-notification-for-transactions">Default Notification for Transactions</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1535,7 +1542,7 @@ Any App once added is assigned to a particular category.</p>
 The steps are shown below:</p>
 
 <ol>
-  <li>Go to My Apps section&gt; Choose App&gt; Create Custom App. The following screen appears
+  <li>Go to My Apps section&gt; Choose App&gt; Create Custom App. The following screen appears<br />
 <img src="/staticfiles/root/media/CustomAPP-Creation1.png" alt="CustomAPP-Creation1" /></li>
   <li>In the Custom App Creation Screen the section are divided into - <strong>App Details, Version Details, Protocol Setup &amp; Adapter</strong>
 <img src="/staticfiles/root/media/CustomAPP-Creation2.png" alt="CustomAPP-Creation2" /></li>
@@ -1694,7 +1701,7 @@ This section enables the user to view and add the Schema and its Actions.</p>
   <li>Move into the APPS Page and <a href="/getting-started/">Choose any application</a>.</li>
   <li>Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 <img src="/staticfiles/root/media/Select-Schema.png" alt="Select-Schema" /></li>
-  <li>On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.
+  <li>On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.<br />
 <img src="/staticfiles/root/media/Add-Schema.png" alt="Add-Schema" /></li>
   <li>The Actions inside a schema can be viewed by clicking on the + sign. The ADD ACTION option is provided for Adding Actions inside a Schema.
 <img src="/staticfiles/root/media/Add-Action.png" alt="Add-Action" /></li>
@@ -1744,19 +1751,19 @@ There are few responsibilities of an adapter which are defined as under:</p>
 <img src="/staticfiles/root/media/ConnectionDetails.png" alt="ConnectionDetails" /></li>
   <li>To find existing Connection, Click Search button. An existing connection opens up</li>
   <li>A typical connection has the following buttons attached to it.</li>
-  <li>All the existing connection of the project will be displayed here. One can activate or deactivate connection by the toggle button. 
+  <li>All the existing connection of the project will be displayed here. One can activate or deactivate connection by the toggle button. <br />
 <img src="/staticfiles/root/media/Search-Connection.png" alt="Search-Connection" /></li>
   <li>You  can create a new connection by clicking <code class="highlighter-rouge">Create Connection</code> button.</li>
-  <li>The following page opens up where you have to input the new connection details.
+  <li>The following page opens up where you have to input the new connection details.<br />
 <img src="/staticfiles/root/media/Create-NewConnection.png" alt="Create-NewConnection" /></li>
-  <li>If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.
+  <li>If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.<br />
 <img src="/staticfiles/root/media/CreateConnection1.png" alt="CreateConnection1" /></li>
   <li>Activate default touchpoint button will be checked by default.
-Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.
+Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.<br />
 <img src="/staticfiles/root/media/Select-Connection.png" alt="Select-Connection" /></li>
-  <li>On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.
+  <li>On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.<br />
 <img src="/staticfiles/root/media/Connection-Protocol.png" alt="Connection-Protocol" /></li>
-  <li>On selecting View connection, all the touchpoints of the connection will be displayed.
+  <li>On selecting View connection, all the touchpoints of the connection will be displayed.<br />
 <img src="/staticfiles/root/media/Touchpoint-List.png" alt="Touchpoint-List" /></li>
   <li>Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.</li>
 </ol>
@@ -1777,18 +1784,18 @@ To know more about Configuring Environment, <a href="/deployment/Deployment-Conf
 <h3 id="environment-setup-of-the-on-premise-agent">Environment setup of the on-premise agent:</h3>
 
 <ol>
-  <li>Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.
+  <li>Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.<br />
  <img src="/staticfiles/root/media/DashboardScreen.png" alt="DashboardScreen" /></li>
   <li>Run the setup folder to install the Agent in the system.</li>
   <li>Open the installed Agent on your machine.</li>
-  <li>Login to the agent with your portal credentials.<br />
+  <li>Login to the agent with your portal credentials.  <br />
    <img src="/staticfiles/root/media/Login1.png" alt="Login1" /></li>
   <li>There are four icons as shown below:
     <ul>
       <li>The home icon shows the connections in the project.</li>
       <li>The apps configuration icon (next to the home icon) shows the applications used for the connections which need to be configured for successful sync.</li>
       <li>The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.</li>
-      <li>The last one is the Workflow option that displays the configured workflows in the project.
+      <li>The last one is the Workflow option that displays the configured workflows in the project.<br />
 <img src="/staticfiles/root/media/Connections.png" alt="Connections" /></li>
     </ul>
   </li>
@@ -1804,14 +1811,37 @@ To know more about Configuring Environment, <a href="/deployment/Deployment-Conf
 </ul>
 
 <ol>
-  <li>Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).
+  <li>Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).<br />
 <img src="/staticfiles/root/media/App.png" alt="App" /></li>
-  <li>Go to the Connections page and assign the app’s credential to the connection by choosing the configuration setup option as shown below.
+  <li>Go to the Connections page and assign the app’s credential to the connection by choosing the configuration setup option as shown below.<br />
 <img src="/staticfiles/root/media/Connection_New.png" alt="Connection_New" /></li>
   <li>Click on the View the Connection icon and navigate to the touchpoints page.</li>
-  <li>Click on the play button to run the sync process.
+  <li>Click on the play button to run the sync process.<br />
 <img src="/staticfiles/root/media/Connection_Touchpoint.png" alt="Connection_Touchpoint" /></li>
 </ol>
+
+<h2 id="default-notification-for-transactions">Default Notification for Transactions</h2>
+
+<p>As we go on improving and deploying the integration, a number of failures you might encounter. Some are based on
+incorrect logic which misses a particular data structure that needs improvement on the connector, or else some 
+related to application specific implementation issues. With APPSeCONNECT, we provide daily transaction reports 
+emailed to you by default, once you setup the connector and execute it on your profile. Even though you can 
+setup this section to send you multiple emails per day according to the schedule defined by you, you will get daily
+notification on the amount of transactions being performed through APPSeCONNECT.</p>
+
+<p><strong>Setting up email notification</strong></p>
+<ul>
+  <li>If you have installed on - premise agent, open the agent console and select Settings panel to open settings section of agent.<br />
+<img src="/staticfiles/deployment/media/Setting/SettingPanel.png" alt="SettingPanel" /></li>
+  <li>In the settings panel, you can open Scheduler for Email Notification. You would see the Email notification is by default checked and schedule for mail once at 12 AM is automatically setup.</li>
+  <li>Click on the schedule section and add as many schedule you want. 
+[Add image]</li>
+  <li>Once setup, you can re-run the autosync to reset the settings.</li>
+</ul>
+
+<p><strong>Note:</strong> The morning report is dependent on Auto - Sync service and hence to receive reports, you must keep auto-sync service active.</p>
+
+<p class="notice--info"><strong>ProTip:</strong> The report can be generated manually using the <code class="highlighter-rouge">Send Email Report Now</code> button and each request will reset the data to a particular time so that the report is consistent without duplicate entry.</p>
 
                 
             </section>
@@ -3071,8 +3101,18 @@ To know more about Configuring Environment, <a href="/deployment/Deployment-Conf
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
