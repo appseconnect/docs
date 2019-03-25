@@ -23,18 +23,14 @@ then he can deploy hard-coded mapping.
 
 AN EXAMPLE: If you want the `Customer` schema of SAP B1 to fetch the value of the field `Country` directly from the country field of the source schema, 
 you can map the `country` field of both the schemas.
-
+![field-field-mapping](/staticfiles/Transformation/media/field-field-mapping.png)
 For this example, let us say, you wish to map the destination field `email` with the source field `email` of the schema `customer`. 
 These fields exist as nodes in the corresponding XML document. Then you can directly map the fields together, by providing the name 
-of the source field in the destination field.
-
-However if you wish to map the field `PIN` of the destination field, you cannot access the node directly. 
+of the source field in the destination field. However if you wish to map the field `PIN` of the destination field, you cannot access the node directly. 
 The node `PIN` exists as a child node of the parent node `shipping` and `billing` which in turn are child nodes to the node 
 `address`. 
 
-
 1) To access the node `PIN`, we provide the entire up to the node so that it can be accessed.
-
 2) To access the node `PIN` of the node `billing`, we provide the following XPATH: address/billing/PIN
 
 * Direct field mapping 
@@ -46,7 +42,6 @@ In other words, the value of the destination field would depend on the source fi
  of the source field, there is a corresponding value for the destination field.
 
 Take the analogy of the `if-then-else` statement to understand this.
-
 Say, you want to set up the value of a variable `x` such that it depends on another variable `y`. If the value of `y` is 1, `x` will be 2, if `y` is 3,
 `x` will be `100` and so on.
 
@@ -76,7 +71,17 @@ The generalised structure of the `choose-when` condition is:
 
 **4. Function Mapping** - 
 
-5. Query Mapping 
+**5. Query Mapping** - As the name suggests, Direct Query mapping is actually running a query in the source schema so as to store the resultant data from the query in the destination field.
+For example, when we run a SQL query we provide the name of the field whose result we require,the name of the table from where the data is to be fetched and the parameters, on the basis of which the results would be filtered.
+
+Structure of an SQL query is: select `name` from `student` where `rollno` = 1.
+`Name` is the output field, `student` is the schema and `rollno` is the parameter whose value we are checking to filter the data.
+We use a similar format when we wish to fetch data from the source or destination schema in APPSeCONNECT. 
+We provide the name of the desired field, the schema and the parameters in the query.
+
+The native AppResource function that we use for this purpose is 'sourcelib' or 'destinationlib' depending on from where we wish to receive the data.
+`Structure of a query in mapping is`
+destinationlib:GetUniqueId(",",",") where we provide the required field the schema and the parameters in order.
 
 6. Variable Mapping (Understanding Variables)
 

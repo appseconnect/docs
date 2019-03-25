@@ -909,7 +909,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Shopify",
-      excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 99
@@ -936,7 +936,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Magento2",
-      excerpt: "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Magento 2, providing...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 102
@@ -1151,20 +1151,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Troubleshooting",
-      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 126
-    });
-    
-  
-    idx.add({
       title: "Getting Started",
       excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 127
+      id: 126
     });
     
   
@@ -1173,7 +1164,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 128
+      id: 127
     });
     
   
@@ -1182,7 +1173,7 @@ var idx = lunr(function () {
       excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 129
+      id: 128
     });
     
   
@@ -1191,7 +1182,7 @@ var idx = lunr(function () {
       excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 130
+      id: 129
     });
     
   
@@ -1200,7 +1191,7 @@ var idx = lunr(function () {
       excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 131
+      id: 130
     });
     
   
@@ -1209,7 +1200,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 132
+      id: 131
     });
     
   
@@ -1218,7 +1209,7 @@ var idx = lunr(function () {
       excerpt: "Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 133
+      id: 132
     });
     
   
@@ -1227,7 +1218,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 134
+      id: 133
     });
     
   
@@ -1236,7 +1227,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 135
+      id: 134
     });
     
   
@@ -1245,7 +1236,7 @@ var idx = lunr(function () {
       excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 136
+      id: 135
     });
     
   
@@ -1254,7 +1245,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 137
+      id: 136
     });
     
   
@@ -1263,7 +1254,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 138
+      id: 137
     });
     
   
@@ -1272,7 +1263,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 139
+      id: 138
     });
     
   
@@ -1281,7 +1272,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 140
+      id: 139
     });
     
   
@@ -1290,16 +1281,16 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 141
+      id: 140
     });
     
   
     idx.add({
-      title: "Using library methods",
-      excerpt: "\n",
+      title: "Using library methods/AppResource Function",
+      excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 142
+      id: 141
     });
     
   
@@ -1308,7 +1299,7 @@ var idx = lunr(function () {
       excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 143
+      id: 142
     });
     
   
@@ -1317,7 +1308,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 144
+      id: 143
     });
     
   
@@ -1326,7 +1317,7 @@ var idx = lunr(function () {
       excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 145
+      id: 144
     });
     
   
@@ -1335,7 +1326,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 146
+      id: 145
     });
     
   
@@ -1344,7 +1335,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 147
+      id: 146
     });
     
   
@@ -1353,7 +1344,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 148
+      id: 147
     });
     
   
@@ -1362,7 +1353,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 149
+      id: 148
     });
     
   
@@ -1371,7 +1362,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 150
+      id: 149
     });
     
   
@@ -1380,7 +1371,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 151
+      id: 150
     });
     
   
@@ -1389,7 +1380,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 152
+      id: 151
     });
     
   
@@ -1398,16 +1389,34 @@ var idx = lunr(function () {
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 153
+      id: 152
     });
     
   
     idx.add({
       title: "Choosing & Activating Rule",
-      excerpt: "\n",
+      excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 153
+    });
+    
+  
+    idx.add({
+      title: "Creation of Rule",
+      excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
       id: 154
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Misfire Event",
+      excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 155
     });
     
   
@@ -2521,7 +2530,7 @@ var store = [
       {
         "title": "Shopify",
         "url": "/connectors/shopify/",
-        "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Shopify, such as...",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2554,7 +2563,7 @@ var store = [
       {
         "title": "Magento2",
         "url": "/connectors/magento2/",
-        "excerpt": "Application configuration is an intregal activity prior to the process of integration. If your choosen application is Magento 2, providing...",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Magento 2, providing...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2806,17 +2815,6 @@ var store = [
       
       {
         "title": "Troubleshooting",
-        "url": "/transformation/appresource-functions/",
-        "excerpt": "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Troubleshooting",
         "url": "/transformation/troubleshooting/",
         "excerpt": "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
         "teaser":
@@ -2992,9 +2990,9 @@ var store = [
     
       
       {
-        "title": "Using library methods",
+        "title": "Using library methods/AppResource Function",
         "url": "/transformation/using-library-methods/",
-        "excerpt": "\n",
+        "excerpt": "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3126,7 +3124,29 @@ var store = [
       {
         "title": "Choosing & Activating Rule",
         "url": "/rule/choose-rule/",
-        "excerpt": "\n",
+        "excerpt": "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Creation of Rule",
+        "url": "/rule/create-rule/",
+        "excerpt": "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Pre-Configured Rule for Misfire Event",
+        "url": "/rule/preconfigured-rule-for-misfire-event/",
+        "excerpt": "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

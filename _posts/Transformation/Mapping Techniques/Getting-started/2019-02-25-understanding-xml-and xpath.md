@@ -31,11 +31,8 @@ XPath was defined by the World Wide Web Consortium (W3C).
 
 * The XPath language is build on a tree representation of the XML document, and provides the ability to navigate around the tree,
 selecting nodes by a variety of criteria.
-
 * XPath has been adopted by a `number of XML processing libraries and tools`, many of which also offer CSS Selectors, another W3C standard, as a simpler alternative to XPath.
-
 * PATH expression result in object which can be of following types:
-
   1. Node-Set(Collection of nodes)
   2. String
   3. Boolean
@@ -43,7 +40,6 @@ selecting nodes by a variety of criteria.
 
 * Evaluation of an XPATH expression is done on the basis of the context of the 
   expression. An expression consist of -
-
   1. a node (called context node)
   2. Variable binding
   3. Two variables (one context position and another context size)
@@ -51,12 +47,10 @@ selecting nodes by a variety of criteria.
   5. Collection of namespaces for the context
 
 * Now XPATH expressions or location paths are of two types:
-
   1. Relative path
   2. Absolute path
 
 *  Location Steps are the ones that make up an XPATH Expression. It consists of
-
    1. Axis
    2. Node name (context node name)
    3. Predicate (optional)

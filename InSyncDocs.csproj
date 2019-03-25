@@ -315,6 +315,9 @@
     <Content Include="docs\rest\OAuth2.0\index.html" />
     <Content Include="docs\rest\Overview-of-GenericRest-Adapters\index.html" />
     <Content Include="docs\robots.txt" />
+    <Content Include="docs\rule\choose-rule\index.html" />
+    <Content Include="docs\rule\index.html" />
+    <Content Include="docs\rule\overview-of-rule\index.html" />
     <Content Include="docs\sdk\Debugging\index.html" />
     <Content Include="docs\sdk\deploying-the-connectivity\index.html" />
     <Content Include="docs\sdk\Designing-&amp;-Mapping-Credentials\index.html" />
@@ -347,6 +350,12 @@
     <Content Include="docs\sdk\What-is-a-Resourse\index.html" />
     <Content Include="docs\sdk\What-is-an-Adapter\index.html" />
     <Content Include="docs\sitemap.xml" />
+    <Content Include="docs\sources\listcourses\adapter.html" />
+    <Content Include="docs\sources\listcourses\environment.html" />
+    <Content Include="docs\sources\listcourses\platform.html" />
+    <Content Include="docs\sources\listcourses\rules.html" />
+    <Content Include="docs\sources\listcourses\touchpoint.html" />
+    <Content Include="docs\sources\workflow-course\index.html" />
     <Content Include="docs\staticfiles\api-management\media\ActionFilter-ActionParameter.png" />
     <Content Include="docs\staticfiles\api-management\media\ActionFilter-ActionParameter1.png" />
     <Content Include="docs\staticfiles\api-management\media\ActionFilter-ActionParameter2.png" />
@@ -2012,8 +2021,8 @@
     <None Include="_posts\Deployment\2018-12-12-upgradation and migration.md" />
     <None Include="_posts\Rule-Management\2019-03-14-overview-of-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-15-choose-rule.md" />
+    <None Include="_posts\Rule-Management\2019-03-15-preconfigured-rule-for-misfire-event.md" />
     <None Include="_posts\Rule-Management\2019-03-15-create-rule.md" />
-    <None Include="_posts\Rule-Management\type-of-rule.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-overview-adapters.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-02-Implementing-event-driven-integration.md" />
