@@ -335,5 +335,7 @@ notification on the amount of transactions being performed through APPSeCONNECT.
 [Add image]
 - Once setup, you can re-run the autosync to reset the settings. 
 
+**Note:** The morning report is dependent on Auto - Sync service and hence to receive reports, you must keep auto-sync service active. 
+
 **ProTip:** The report can be generated manually using the `Send Email Report Now` button and each request will reset the data to a particular time so that the report is consistent without duplicate entry.
 {: .notice--info}
