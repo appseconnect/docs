@@ -6,7 +6,7 @@ category: "Connectors"
 menus: 
     sage300connector :
         title: "Adding Product in Sage"
-        weight: 15
+        weight: 13
         icon: fa fa-file-word-o
         identifier: sage300connectoraddproduct
 ---

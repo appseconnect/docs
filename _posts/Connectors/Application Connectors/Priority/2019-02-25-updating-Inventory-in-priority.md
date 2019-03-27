@@ -6,6 +6,7 @@ category: "Connectors"
 menus: 
     priorityconnector :
         title: "Updating Inventory in Priority"
+        weight: 9
         icon: fa fa-file-word-o
         identifier: priorityconnectorinventory
 ---

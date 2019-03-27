@@ -1,4 +1,4 @@
----
+﻿---
 title: "SAP Business One"
 toc: true
 tag: developers
@@ -17,23 +17,21 @@ validating the agent.
 Here you will find the detailed description on how to configure the agents for the 
 application of SAP Business One, attributes and action, and the Troubleshooting issues.
 
+**Note: This document is for the SAP Business One version >=8.8**
+
 ## Prerequisites for SAP Business One Configuration
 
 1.	Select the application SAP Business One in the APPS section of the APPSeCONNECT Portal.
 2.	Create and publish a connection in the cloud portal.
-3.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent.
+3.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent.To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 
 **Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created**
-
-## Configure the Agent
-
-To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 
 ## Configure the SAP Business One Application in the Agent
 
 1. Open APPSeCONNECT Agent by providing correct credentials.
 
-2. In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPPSeCONNECT Cloud.
+2. In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPSeCONNECT Cloud.
 
 ![sapb1-agent1](/staticfiles/connectors/media/application-connector/sapb1-agent1.png)
 

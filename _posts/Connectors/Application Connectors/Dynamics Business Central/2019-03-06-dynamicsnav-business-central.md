@@ -20,30 +20,19 @@ Here you will find the detailed description on how to configure the agents for t
 
 1.	Select the application Microsoft Dynamics NAV (≥ 2009R2 Generic) in the APPS section of the APPSeCONNECT Portal.
 2.	Create and publish a connection in the cloud portal.
-3.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent.
+3.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent. To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 
 **Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created**
-
-## Configure the Agent
-
-To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 
 ## Configure the NAV Business Central Application in the Agent
 
 1. Login to your AEC Agent with your registered account credentials.
-
-2. Click on the settings button to view the Credentials page.  
-
+2. Click on the settings button to view the Credentials page.     
 ![nav-businesscentral1](/staticfiles/connectors/media/application-connector/nav-businesscentral1.png)
-
-3. Fill in the required details in the Credential Page
-
+3. Fill in the required details in the Credential Page     
 ![nav-businesscentral2](/staticfiles/connectors/media/application-connector/nav-businesscentral2.png)
-
 4. Click Save and Validate button. 
-
-5. The validation success message confirms that the application is configured in the agent.
-
+5. The validation success message confirms that the application is configured in the agent.     
 ![nav-businesscentral3](/staticfiles/connectors/media/application-connector/nav-businesscentral3.png)
 
 The above steps completes the process of configuring Agent with NAV credentials
@@ -66,7 +55,7 @@ of some of the pre-packaged API actions defined for you which you can easily plu
 
 |Endpoint|Action|Action Type|Schema|Description|
 |---|---|---|---|------|
-|ReadMultiple|ReadMultiple|GET|Page/webapplicationcontactdata|[Fetch Accounts/customers from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-register-new-customers)|
-|ReadMultiple|ReadMultiple|GET|Page/webapplicationproductdata|[Fetch products from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-register-new-items)|
-|AECCustomerImport|AECCustomerImport|POST|AECCustomerXMLPort|Post customer from source application to Business Central|
-|AECSimpleProductImport|AECSimpleProductImport|POST|AECSimpleItemXmlPort|Post product from source application to Business Central|
+|ReadMultiple|ReadMultiple|GET|[Page/webapplicationcontactdata](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=b23b6cb2-8d83-45ed-9920-0f975f165c1b&entityActionId=a75b6d7f-1a0f-4a39-8823-d658bb7dd445&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|[Fetch Accounts/customers from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-register-new-customers)|
+|ReadMultiple|ReadMultiple|GET|[Page/webapplicationproductdata](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=3daefc5c-d333-47a3-9d47-6ca271a296e6&entityActionId=2a65f957-51f6-4297-9624-1ca3aa2b6687&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|[Fetch products from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-register-new-items)|
+|AECCustomerImport|AECCustomerImport|POST|[AECCustomerXMLPort](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=2e83f28c-4b66-4e2b-b9e6-005ea75dea07&entityActionId=237255f9-652d-44bf-a4ec-f2c85b35f08e&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|Post customer from source application to Business Central|
+|AECSimpleProductImport|AECSimpleProductImport|POST|[AECSimpleItemXmlPort](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=ce524043-99ed-48e7-bd6e-46014ae88f98&entityActionId=3b8d3f26-2f6a-4a29-b48b-dd5526cd555e&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|Post product from source application to Business Central|

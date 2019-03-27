@@ -4,8 +4,8 @@ toc: true
 tag: developers
 category: "Transformation"
 menus: 
-    transformation:
-        title: "Use-case"
+    overviewusecase:
+        title: "Grouping of Conditions"
         weight: 14
         icon: fa fa-file-word-o
         identifier: transformationgrouping

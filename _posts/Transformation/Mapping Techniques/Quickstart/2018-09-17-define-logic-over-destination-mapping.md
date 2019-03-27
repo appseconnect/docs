@@ -5,7 +5,7 @@ tag: developers
 category: "Transformation"
 menus: 
     transformationbasic:
-        title: "If-Else"
+        title: "Steps to define logic over destination mapping"
         weight: 4
         icon: fa fa-file-word-o
         identifier: transformationlogicsourcedest
