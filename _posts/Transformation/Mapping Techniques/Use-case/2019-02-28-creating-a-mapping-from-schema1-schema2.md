@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Transformation"
 menus: 
-    transformationgrouping:
+    overviewusecase:
         title: "Mapping from Schema 1 to Schema 2"
         weight: 3
         icon: fa fa-file-word-o
@@ -37,9 +37,7 @@ Organisation Creation & Connection Creation.
 4.	Create the connection between the two apps.
 5.	OLEDB is a technology application so [Touchpoint is required to be created]().
 6.	Now the touchpoint is created. Navigate to the Transformation section for implementing the [attribute Mapping](/transformation/understanding-attribute-mapping/).
-
 ![schema1-schema2mapping](/staticfiles/Transformation/media/schema1-schema2mapping.png)
-
 7.	The above scenario defines, that the attribute **default_billing** of Magento 2 is here mapped with the source attribute **BPAddresses** of the app OLEDB for the easy transformation
     of the Schema that contains the address of the Business Partner.
 

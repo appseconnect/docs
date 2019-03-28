@@ -29,7 +29,7 @@ execution process of transformation is deployed multiple times.
 
 ## Implementing Attribute Mapping
 
-Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping. 
+Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping.       
 **Note:** The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection.  
 **Note:** For the demonstration of touchpoint `Invoice Add` is used. 
 ![attributemapping](/staticfiles/Transformation/media/attributemapping.png) 
@@ -43,8 +43,10 @@ Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do th
 5.	On expanding `oInvoices(Touchpoint Object)` the user gets the view of the several complex object collections 
     and the attributes that are listed under it. Each attribute has separate information about the entity that 
     it belongs to. Each of these attributes will contain different information about the customer record. 
-6.	The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting 
+6.	The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting.     
+
 **Note:** Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
+         
 **Note:** For different touchpoints, the object is different. For the touchpoint Sales Order Add,
 the object is oOrders for Simple Product Add it is oItems and so on.
 ![attributemapping3](/staticfiles/Transformation/media/attributemapping3.png)
@@ -61,10 +63,14 @@ The user can create custom attributes, which is defined in project level. You ca
 ![attributemapping4b](/staticfiles/Transformation/media/attributemapping4b.png)
 **Note:** The user can sort the order of attributes and variables in the mapping page by dragging and dropping the same 
 under its parent only if the mapping for the attribute has been done or if it is blank.
-Clicking on any of the attributes displays an option (three horizontal dots) to open a drop-down.
-For the attributes which are not mapped, options available is: 
+
+Clicking on any of the attributes displays an option (three horizontal dots) to open a drop-down.   
+For the attributes which are not mapped, options available is:   
+
 a. OPEN 
-b. ADD IF  
+
+b. ADD IF
+  
 For the attributes which are mapped, options available is:
  
 a.	**Disable** -This option is for disabling the mapping, if not required.
@@ -87,37 +93,6 @@ Clicking on any of the functions, will display it in the mapping panel. Once the
 later use similarly. `Comments field` is providing comments specific to this attribute mapping that might be 
 required later. The `Output Encoded` checkbox is for ensuring that the generated data is kept intact 
 irrespective of the XML standardisation. 
-
-## Respect Hierarchical Rendering on Mapping state
-
-On disabling the mapping of the parent node, it disables all the child node such that when the XML is rendered, 
-only the enabled node will be rendered in the XML. This feature will help the user to implement
-the hierarchical rendering feature in the APPSeCONNECT Portal.
-
-**Prerequisites**
-
-Mapping should be done in the parent node for accessing the Enable/Disable feature.
-
-**Steps to implement hierarchical rendering on mapping**
-
-1.	Login the APPSeCONNECT Portal.
-2.	Navigate to the touchpoints area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
-3.	Choose any touchpoint and click on the Transform button.
-4.  On `expanding the schema object`, all the `complex objects and the complex objects collection` are displayed.
-5.  On Hovering over the complex object collections and the complex objects, the three horizontal dots appear. 
-6.  Click on the `OPEN` button for mapping the node. Click `SUBMIT` button for saving the mapping.
-6.	Hover the icon over the mapped complex object/complex object collection. The Disable option will appear.
-7.	Click the Disable option, the complex object/complex object collection and its child, sub-child, 
-    all the nodes get disabled, present under it.
-8.	Now, if a child node is enabled from the list of disabled nodes, the child gets enabled, also its immediate parent gets enabled.
-
-Now if the immediate parent is also associated with a parent (a complex object/complex object collection), it also gets 
-enabled, rest all other child nodes on that tree, remains disabled. 
-
-
-**Protip:** The Disabled node turns grey on disabling.
-{: .notice--info} 
-
 
 ## Examples of Attribute Mapping
 

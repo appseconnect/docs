@@ -6,7 +6,7 @@ category: "Transformation"
 menus: 
     overviewusecase:
         title: "Grouping of Conditions"
-        weight: 14
+        weight: 3
         icon: fa fa-file-word-o
         identifier: transformationgrouping
 ---
