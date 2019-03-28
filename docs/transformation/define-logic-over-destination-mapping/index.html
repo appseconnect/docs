@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Steps to define logic over destination mapping">
+<meta name="description" content="Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure If-Else Mapping. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Steps to define logic over destination mapping">
+  <meta property="og:description" content="Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure If-Else Mapping. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.">
 
 
 
@@ -1121,12 +1121,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/hierarchical-rendering-on-mapping-state/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/hierarchical-rendering-on-mapping-state/" onclick="selectTab('/transformation/hierarchical-rendering-on-mapping-state/', event);" title="Go to Hierarchial Rendering on Mapping State">Hierarchial Rendering on Mapping State</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/transformation/define-logic-over-destination-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/define-logic-over-destination-mapping/" onclick="selectTab('/transformation/define-logic-over-destination-mapping/', event);" title="Go to Steps to define logic over destination mapping">Steps to define logic over destination mapping</a>
         
@@ -1152,12 +1146,10 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/transformation/grouping-of-condition/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/grouping-of-condition/" onclick="selectTab('/transformation/grouping-of-condition/', event);" title="Go to Grouping of Conditions">Grouping of Conditions</a>
+    <li class="menu-item-" data-url="/transformation/understanding-touchpoint-dependencies/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/understanding-touchpoint-dependencies/" onclick="selectTab('/transformation/understanding-touchpoint-dependencies/', event);" title="Go to Understanding Touchpoint Dependencies">Understanding Touchpoint Dependencies</a>
         
-        
-        
-<ul class="nav__items">
+    </li>
     
     
     <li class="menu-item-" data-url="/transformation/advance-mapping-through-custom-renderer/" data-jstree='{"icon":"fa fa-file-word-o"}'>
@@ -1184,19 +1176,14 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/transformation/grouping-of-condition/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/grouping-of-condition/" onclick="selectTab('/transformation/grouping-of-condition/', event);" title="Go to Grouping of Conditions">Grouping of Conditions</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/transformation/using-lookups-for-value-exchange/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/using-lookups-for-value-exchange/" onclick="selectTab('/transformation/using-lookups-for-value-exchange/', event);" title="Go to Using Lookups Mapping">Using Lookups Mapping</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/understanding-touchpoint-dependencies/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/understanding-touchpoint-dependencies/" onclick="selectTab('/transformation/understanding-touchpoint-dependencies/', event);" title="Go to Understanding Touchpoint Dependencies">Understanding Touchpoint Dependencies</a>
-        
-    </li>
-    
-</ul>
-
         
     </li>
     
@@ -1403,7 +1390,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Steps to define logic over destination mapping">
-        <meta itemprop="description" content="Steps to define logic over destination mapping">
+        <meta itemprop="description" content="Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure If-Else Mapping. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.">
         <meta itemprop="datePublished" content="September 17, 2018">
         
 
@@ -1472,7 +1459,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -1485,7 +1472,6 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#steps-to-define-logic-over-destination-mapping">Steps to define logic over destination mapping</a></li>
   <li><a href="#pre-requisites-for-mapping">Pre-requisites for Mapping</a></li>
   <li><a href="#mapping-levels">Mapping Levels</a>
     <ul>
@@ -1495,13 +1481,12 @@
       <li><a href="#mapping-at-complex-object-collection--level">Mapping at Complex Object Collection  Level</a></li>
     </ul>
   </li>
+  <li><a href="#respect-hierarchical-rendering-on-mapping-state">Respect Hierarchical Rendering on Mapping state</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <h2 id="steps-to-define-logic-over-destination-mapping">Steps to define logic over destination mapping</h2>
-
-<p>Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
+                <p>Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
 
 <h2 id="pre-requisites-for-mapping">Pre-requisites for Mapping</h2>
 <ol>
@@ -1566,6 +1551,40 @@ Below is the Screen which shows the If-Else Mapping at the complex object level.
 
 <p><img src="/staticfiles/Transformation/media/ComplexObjectCollection-If-Mapping.png" alt="LoopLevel-Mapping" /><br />
 <img src="/staticfiles/Transformation/media/ComplexObjectCollection-else-Mapping.png" alt="LoopLevel-Mapping" /></p>
+
+<h2 id="respect-hierarchical-rendering-on-mapping-state">Respect Hierarchical Rendering on Mapping state</h2>
+
+<p>On disabling the mapping of the parent node, it disables all the child node such that when the XML is rendered, 
+only the enabled node will be rendered in the XML. This feature will help the user to implement
+the hierarchical rendering feature in the APPSeCONNECT Portal.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<p>Mapping should be done in the parent node for accessing the Enable/Disable feature.</p>
+
+<p><strong>Steps to implement hierarchical rendering on mapping</strong></p>
+<ol>
+  <li>Login the APPSeCONNECT Portal.</li>
+  <li>Navigate to the touchpoints area after <a href="/getting-started/#creating-connection--executing-the-touchpoint">creating a connection</a></li>
+  <li>Choose any touchpoint and click on the Transform button.</li>
+  <li>On <code class="highlighter-rouge">expanding the schema object</code>, all the <code class="highlighter-rouge">complex objects and the complex objects collection</code> are displayed.
+<img src="/staticfiles/Transformation/media/hierarchial-rendering1.png" alt="hierarchial-rendering1" /></li>
+  <li>Hover the icon over the mapped complex object/complex object collection. The Disable option will appear. 
+<img src="/staticfiles/Transformation/media/hierarchial-rendering2.png" alt="hierarchial-rendering2" /></li>
+  <li>Click the Disable option, the complex object/complex object collection and its child, sub-child, 
+all the nodes get disabled, present under it.
+<img src="/staticfiles/Transformation/media/hierarchial-rendering3.png" alt="hierarchial-rendering3" /> 
+<img src="/staticfiles/Transformation/media/hierarchial-rendering4.png" alt="hierarchial-rendering4" /> 
+<strong>Note: The ROW Node remains white even on disabling. Its colour will only change if the row node is also mapped.</strong>
+<img src="/staticfiles/Transformation/media/hierarchial-rendering5.png" alt="hierarchial-rendering5" /></li>
+  <li>Now, if a child node is enabled from the list of disabled nodes, the child gets enabled, also its immediate parent gets enabled.
+<img src="/staticfiles/Transformation/media/hierarchial-rendering6.png" alt="hierarchial-rendering5" /> 
+Now if the immediate parent is also associated with a parent (a complex object/complex object collection), it also gets 
+enabled, rest all other child nodes on that tree, remains disabled.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> The Disabled node turns grey on disabling.</p>
+
 
                 
             </section>
@@ -2860,27 +2879,8 @@ Below is the Screen which shows the If-Else Mapping at the complex object level.
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/transformation/hierarchical-rendering-on-mapping-state/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Hierarchial Rendering on Mapping State
-                                </a>
-                            </li>
                             
                             
                             
@@ -2953,6 +2953,15 @@ Below is the Screen which shows the If-Else Mapping at the complex object level.
                             </li>
                             
                             
+                            
+                            
+                            
+                            <li>
+                                <a href="/transformation/using-lookups-for-value-exchange/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Using Lookups Mapping for Value Interchange
+                                </a>
+                            </li>
                             
                             
                             
