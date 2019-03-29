@@ -14,7 +14,7 @@ menus:
 ## Prerequisites
 
 1.	Need to have a valid ZOHO CRM account.
-2.	Need to have a customer for registering.
+
 
 ## Steps to add new Customer/Accounts in Priority
 

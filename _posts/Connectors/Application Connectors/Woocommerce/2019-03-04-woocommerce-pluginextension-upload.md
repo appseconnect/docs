@@ -35,3 +35,5 @@ Select the Uploaded plugin. Once Uploaded, Click Install Button.
 Once the plugin is Installed, Click Activate Button.
 
 ![woocommerce-pluginupload4](/staticfiles/connectors/media/application-connector/woocommerce-pluginupload4.png)
+
+This completes the installation and the activation of the AEC Plugin.

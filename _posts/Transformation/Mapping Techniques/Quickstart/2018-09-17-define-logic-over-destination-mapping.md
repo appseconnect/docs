@@ -5,14 +5,12 @@ tag: developers
 category: "Transformation"
 menus: 
     transformationbasic:
-        title: "If-Else"
+        title: "Steps to define logic over destination mapping"
         weight: 4
         icon: fa fa-file-word-o
         identifier: transformationlogicsourcedest
 ---
 
-
-## Steps to define logic over destination mapping
 
 Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure `If-Else Mapping`. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.
 
@@ -76,3 +74,36 @@ The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is t
 
 ![LoopLevel-Mapping](/staticfiles/Transformation/media/ComplexObjectCollection-If-Mapping.png)  
 ![LoopLevel-Mapping](/staticfiles/Transformation/media/ComplexObjectCollection-else-Mapping.png)
+
+## Respect Hierarchical Rendering on Mapping state
+
+On disabling the mapping of the parent node, it disables all the child node such that when the XML is rendered, 
+only the enabled node will be rendered in the XML. This feature will help the user to implement
+the hierarchical rendering feature in the APPSeCONNECT Portal.
+
+**Prerequisites**
+
+Mapping should be done in the parent node for accessing the Enable/Disable feature.
+
+**Steps to implement hierarchical rendering on mapping**
+1.	Login the APPSeCONNECT Portal.
+2.	Navigate to the touchpoints area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
+3.	Choose any touchpoint and click on the Transform button.
+4.  On `expanding the schema object`, all the `complex objects and the complex objects collection` are displayed.
+    ![hierarchial-rendering1](/staticfiles/Transformation/media/hierarchial-rendering1.png) 
+5.	Hover the icon over the mapped complex object/complex object collection. The Disable option will appear. 
+    ![hierarchial-rendering2](/staticfiles/Transformation/media/hierarchial-rendering2.png)    
+8.	Click the Disable option, the complex object/complex object collection and its child, sub-child, 
+    all the nodes get disabled, present under it.
+    ![hierarchial-rendering3](/staticfiles/Transformation/media/hierarchial-rendering3.png) 
+    ![hierarchial-rendering4](/staticfiles/Transformation/media/hierarchial-rendering4.png) 
+**Note: The ROW Node remains white even on disabling. Its colour will only change if the row node is also mapped.**
+    ![hierarchial-rendering5](/staticfiles/Transformation/media/hierarchial-rendering5.png) 
+9.	Now, if a child node is enabled from the list of disabled nodes, the child gets enabled, also its immediate parent gets enabled.
+    ![hierarchial-rendering5](/staticfiles/Transformation/media/hierarchial-rendering6.png) 
+Now if the immediate parent is also associated with a parent (a complex object/complex object collection), it also gets 
+enabled, rest all other child nodes on that tree, remains disabled. 
+
+**Protip:** The Disabled node turns grey on disabling.
+{: .notice--info} 
+

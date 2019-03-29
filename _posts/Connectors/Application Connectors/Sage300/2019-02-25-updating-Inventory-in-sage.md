@@ -6,7 +6,7 @@ category: "Connectors"
 menus: 
     sage300connector :
         title: "Updating Inventory in Sage300"
-        weight: 15
+        weight: 14
         icon: fa fa-file-word-o
         identifier: sage300connectoraddinventory
 ---

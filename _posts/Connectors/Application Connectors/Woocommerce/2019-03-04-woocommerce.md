@@ -15,66 +15,52 @@ Application configuration is an integral activity prior to the process of integr
 credentials need to be provided for validating the agent. Here you will find the detailed description on 
 how to configure the agents for the application of WooCommerce, Troubleshooting issues and the attributes and action.
 
+WooCommerce is a REST Application which supports both the BASIC & OAuth 1.0 authentication. The Adapter of the application WooCommerce
+provides the leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating
+the credential of the application WooCommerce.
+
 # Pre-requisites for WooCommerce Configuration 
 
-1.	Select the application WooCommerce in the APPS section of the APPSeCONNECT Portal.
-2.	Create and publish a connection in the cloud portal.
-3.  [Upload the AEC Plugin/Extension](/connectors/woocommerce-plugin-extension-upload/) in the WooCommerce Portal. 
-4.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent.
+1.	Valid APPSeCONNECT Portal credentials.
+2.	Select the Application WooCommerce in the APP section.
+3.	Create a connection for WooCommerce.
+4.	Publish a Touchpoint Update Adapters and Update Configuration in the agent.
 
-**Note: The Plugin comes pre-packaged with APPSeCONNECT.**
+**Note: Touchpoints are needed to be created if there are no pre-packaged touchpoints.**
 
-## Configure the Agent
+## Configuring the WooCommerce Adapter
 
-To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
+1.	In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce
+   ![woocommerce-adapter1](/staticfiles/connectors/media/application-connector/woocommerce-adapter1.png)
+2.  On clicking the + button, the credential panel opens for the application WooCommerce.
+   ![woocommerce-adapter2](/staticfiles/connectors/media/application-connector/woocommerce-adapter2.png)
+3.  The Base URL Endpoint has 2 options in the drop-down.  
+a.	/wp-json/wc/ - This is the newer version of the WooCommerce that support the    WordPress platform for WooCommerce. 
+The version for this WooCommerce version should be >=2.6  
+b.	/wc-api/ - This endpoint is for the older version of the WooCommerce platform. If the user platform is based on the older version, this end point is needed to be selected for agent validation.
+The version for this WooCommerce version should be <2.6   
+4. The API Version is the WooCommerce API Version. The user can have its WC Version by navigating to WooCommerce > Status > WooCommerce Version.
+![woocommerce-adapter3](/staticfiles/connectors/media/application-connector/woocommerce-adapter3.png)
+**Note: For more details about WC API versions, [click here](https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#introduction)**
+5.	The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.
+![woocommerce-adapter4](/staticfiles/connectors/media/application-connector/woocommerce-adapter4.png)
+6.  The Base URL is the WooCommerce Base URL. For Ex:http://templatebar.com/Individual/abcd/woocommerce  
+**Note: If the URL has HTTP, the authentication OAuth 1.0 is supported and if the URL has HTTPS, the BASIC Authentication is supported. 
+For both authentication process, the User Interface remains the same.**
+7.	The API Key and the API Secret is generated from the WooCommerce platform. Navigate to WooCommerce > Settings > Advanced > REST API > ADD Key 
+![woocommerce-adapter5](/staticfiles/connectors/media/application-connector/woocommerce-adapter5.png)
+8.	Provide the details in the field provided in the WC platform and click on the Generate API Key Button.
+a.	Description: This is the field for API Description.
+b.	User: This field is for specifying the User Type. The user should be as ADMIN 
+c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.
+![woocommerce-adapter6](/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png)
+9.	Input the generated API Key and the API Secret in the Agent.
+![woocommerce-adapter7](/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png)
+**Note: The Consumer Key is the API Key and the Consumer Secret is the API Secret.**
+10.	Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.
+![woocommerce-adapter8](/staticfiles/connectors/media/application-connector/woocommerce-adapter8.png)
 
-## Configure the WooCommerce Application in the Agent
-
-### Prerequisites for configuring AEC Agent for WooCommerce (version 2.6 and above)
-
-* SAP B1 adapter version >= 3.2.1.0 
-* Agent version 3.3.x.x and addon version >=3.2.1.0.
-* SAP B1  AppseConnect add-on must be installed to create required tables and UDOs (follow the support portal document).
-* Multiple Connection Store procedure must be implemented in SAP B1 (follow the support portal document).
-* Add EventTracer data  in 'AECEVENTTRACER'  (Administrator>Setup>General>AECEVENTTracer). Here you have to add Object for which you want to trace data to sync.
-
-**Follow the given steps to configure Agent for Woocommerce** 
-
-1. Login to your AEC Agent with your registered account credentials.
-
-2. After login, you can view the connections created in your APPSECONNECT cloud account. 
-  Here, APPSeCONNECT has created Woocommerce & SAP B1 connection. Click on the database 
-  icon to provide the application credentials in Agent.
-
-![woocommerce-agent1](/staticfiles/connectors/media/application-connector/woocommerce-agent1.png)
-3. Provide the credentials for the Woocommerce application. To provide Woocommerce credentials follow the steps below:
-
-a. Login to the admin panel with valid credentials.
-
-b. Go to Woocommerce >> Settings, present on the left of the dashboard page.
-
-c. Click on the API link that appears horizontally.
-
-d. Click on Keys or Apps 
-
-![woocommerce-agent2](/staticfiles/connectors/media/application-connector/woocommerce-agent2.png)
-
-e. Enter your API details in the respective fields of AEC agent (API key corresponds to the 
-   consumer key while the API secret corresponds to the consumer secret)
-
-f. Username and password are the login credentials of your Woocommerce admin portal. For WooCommerce version 2.6 
-   and above, you need to select "/wp-jason/wc/" (while for Woocommerce version 2.3.9 select "/wc-api/") 
-   as the Base Url Endpoint.
-![woocommerce-agent3](/staticfiles/connectors/media/application-connector/woocommerce-agent3.png)
-4. Click on the Validate button to validate your credentials. On successful validation, a success message will be generated 
-   as "Connection Validate successfully".
-
-![woocommerce-agent4](/staticfiles/connectors/media/application-connector/woocommerce-agent4.png)
-5. After successful validation, you can save your credentials by clicking on the Save button. 
-   The success message will be generated as "Connection saved successfully".
-
-![woocommerce-agent5](/staticfiles/connectors/media/application-connector/woocommerce-agent5.png)
-
+Following these steps, ends the process for validating agent for the application WooCommerce. 
 
 ## Troubleshooting
 
@@ -107,10 +93,10 @@ for you which you can easily plug and play while doing your integrations.
 |Endpoint|Action|Action Type|Schema|Description|
 |---|---|---|---|------|
 |customers|Customers|GET|[Customers](https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&entityId=61f33b9c-5087-4481-8e86-a8155be71c51&entityActionId=dde24ee9-0872-48f6-8593-8ca9ee6034f7&orgId=d21688a4-8967-48de-ae82-31dda565ec51)|[Fetch customers from WooCommerce and post it to the destination Application](https://learnwoo.com/woocommerce-create-new-user-account/)|
-|orders|Orders|GET|[Orders](https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&entityActionId=b50f33bd-7843-4e5d-a7e2-07ec2f696d46&orgId=d21688a4-8967-48de-ae82-31dda565ec51)|[Fetch the order from WooCommerce and post it to the destination Application](https://docs.woocommerce.com/document/managing-orders/)|
-|orders|ORDERS|POST|Orders|Post Invoices to WooCommerce from any Source Application|
-|products/productid|Products|PUT|Products|Update Inventory in WooCommerce from Source Application|
-|products|Products|POST|Products|Post products in WooCommerce from any Source Application|
+|orders|Orders|GET|[Orders](https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&entityActionId=b50f33bd-7843-4e5d-a7e2-07ec2f696d46&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|[Fetch the order from WooCommerce and post it to the destination Application](https://docs.woocommerce.com/document/managing-orders/)|
+|orders|ORDERS|POST|[Orders](https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&entityActionId=214fbbcb-91ab-417d-b576-f454517aee41&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|Post Invoices to WooCommerce from any Source Application|
+|products/productid|[Products](https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&entityId=fcb096e1-4372-4aaf-a24a-29a4a174d4a4&entityActionId=9991a38f-2b00-4c4c-8ede-41febe22aac1&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|PUT|Products|Update Inventory in WooCommerce from Source Application|
+|products|Products|POST|[Products](https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&entityId=fcb096e1-4372-4aaf-a24a-29a4a174d4a4&entityActionId=3ccaef9e-d9f0-41d0-ac2b-3f71ea9ede27&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False)|Post products in WooCommerce from any Source Application|
 
 **Protip:** Customers and Orders can be created and placed from the Front-End also. For Placing orders from front end, visit the E-Commerce store and follow the generic steps for placing orders and creating customers.
 this one.

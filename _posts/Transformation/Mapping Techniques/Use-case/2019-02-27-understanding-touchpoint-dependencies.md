@@ -4,9 +4,9 @@ toc: true
 tag: developers
 category: "Transformation"
 menus: 
-    transformationgrouping:
+    overviewusecase:
         title: "Understanding Touchpoint Dependencies"
-        weight: 14
+        weight: 3
         icon: fa fa-file-word-o
         identifier: touchpointdependency
 ---
@@ -62,21 +62,13 @@ For Eg: In case of the Order `add touchpoint` and the Guest` Customer Add touchp
 1.	Login to the APPSeCONNECT portal and Navigate to the touchpoints page.
 2.	Select the touchpoint which will be acting as the primary touchpoint (in this case, the touchpoint used is Invoice Add). 
     Click on the dependency icon in the touchpoint.
-
 ![touchpoint-dependency1](/staticfiles/Transformation/media/touchpoint-dependency1.png)
-
 3. The Dependency setup page opens up. On clicking the expand button, the node expands up to show the dependency touchpoints present. On clicking, 
     the PLUS Symbol (in BOLD), new node opens with the field present to setup the dependency.
-
 ![touchpoint-dependency2](/staticfiles/Transformation/media/touchpoint-dependency2.png)
-
 4. In the drop-down menu of the field EVENTS all the dependency tasks are displayed. Click on any of them for selecting the task.
-
 ![touchpoint-dependency3](/staticfiles/Transformation/media/touchpoint-dependency3.png)
-
 5. Select the related touchpoint from the drop-down list, for which the dependency is to be setup. And click on SAVE.
-
 ![touchpoint-dependency4](/staticfiles/Transformation/media/touchpoint-dependency4.png)
-
 6. Similarly other touchpoints can also have dependencies and in the similarly way the setup is to be done for 
    any other dependency task required.

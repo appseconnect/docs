@@ -6,6 +6,7 @@ category: "Connectors"
 menus: 
     priorityconnector :
         title: "Adding Product in Priority"
+        weight: 8
         icon: fa fa-file-word-o
         identifier: priorityconnectorproduct
 ---

@@ -31,9 +31,7 @@ By Clicking Projects, [Workflows](/workflow/overview/), you will be redirected t
 **ProTip:** If you click on Change Details tab, you can edit all details 
 {: .notice--info}
 
-
 ![ChangeDetails](/staticfiles/root/media/ChangeDetails.png)
-
 
 In the Personal Info tab, you can edit your name, mobile number.
 
@@ -41,7 +39,6 @@ In the Personal Info tab, you can edit your name, mobile number.
 * Click **Change Password** to change the password and set your new password.
 * The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
 * The **Security Setting** enables you to handle all the security related settings like password expiry time set, account deactivation and updating encryption policy. 
-
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.png)
 
 

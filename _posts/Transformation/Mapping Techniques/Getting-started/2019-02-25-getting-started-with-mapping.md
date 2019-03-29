@@ -12,11 +12,7 @@ menus:
 ---
 
 Getting started section of the mapping will help you to understand the main areas you should be familiar with 
-before starting doing the transformation process. 
-
-## What is Mapping
-
-`Mapping` triggers the transformation process between the Source and the Destination Applications. 
+before starting doing the transformation process. `Mapping` triggers the transformation process between the Source and the Destination Applications. 
 Source and destination schemas are mapped in the Transform section of the touchpoint. 
 
 It is important to note that a touchpoint caters to a particular schema or an entity. A touchpoint maps the source schema 
@@ -37,6 +33,7 @@ The basic structure of mapping contains three main fields:
 * Transformation
 * Root Variable
 * Tracking
+* Lookups
 
 ### Transformation
 
@@ -76,6 +73,11 @@ process even more user-friendly.
 For example, if you are transferring customer records from the source to the destination application, the on-premise agent would only 
 display the `source id`, which in this case, is the `customer id`. If you add more fields, say `customer name`, `customer phone` etc., 
 it would be easier for the user to understand the data that has been transferred.
+
+### Lookups 
+
+Lookups is the field where all the value mappings can be managed (add/delete/update) in the touchpoint level.
+[Click](/transformation/using-lookups-for-value-exchange/)to know more
 
 ## Basics of Attribute Mapping
 You need to understand the XML and XPath types along with Attribute Mapping
