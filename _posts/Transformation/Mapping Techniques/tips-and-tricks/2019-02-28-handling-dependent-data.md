@@ -6,7 +6,7 @@ category: "Transformation"
 menus: 
     transformtipsandtricks:
         title: "Handling Dependent data"
-        weight: 3
+        weight: 2
         icon: fa fa-file-word-o
         identifier: transformdependentdata
 ---

@@ -35,6 +35,8 @@ The basic structure of mapping contains three main fields:
 * Tracking
 * Lookups
 
+![structure-of-mapping](/staticfiles/Transformation/media/structure-of-mapping.png)
+
 ### Transformation
 
 This is the field where the attributes corresponding to the schema are mapped. This is 

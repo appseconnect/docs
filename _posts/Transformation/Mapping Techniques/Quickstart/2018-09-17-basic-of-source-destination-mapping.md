@@ -56,10 +56,10 @@ Variables are defined by two types of scopes.
 
 6. Click on the Submit option after the mapping is done in that attribute. Similarly other attributes can also be mapped.
 
-**Note: If value mapping is required, select the options as required from the lookup type drop down option. 
-And click on its enable checkbox**
+**Note: If lookup mapping is required, select the options as required from the lookup type drop down option. 
+And click on the checkbox**
 
 **Note: The user can enable and disable the attribute mappings. The `Disabling Mapping` feature is not available for the 
 attributes with the primary key.**
 
-For more details on Attribute Mapping [click here](steps-to-cutomize-prebuilt-mapping)
+For more details on Attribute Mapping [click here](/transformation/steps-to-cutomize-prebuilt-mapping/)
