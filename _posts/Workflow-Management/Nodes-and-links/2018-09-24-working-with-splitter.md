@@ -247,3 +247,40 @@ After splitting each data files will contains data in the below format
 </Envelops>
 
  ```
+
+### Troubleshooting
+
+`For providing the properties of Split and Merger, XPath for the packets is needed to be known.` 
+
+The Parent node for the items present in the XSLT is the `XPATH` that needs to be given in the Split and Merger Property.
+
+**Note:** Single forward Slash (For Eg: /Items) access all the sub nodes present inside it. 
+Double Forward Slash (For Eg: //Items) access all the nodes present inside it.
+
+The XPath provided also depends on the packets. If the Split Node is attached before PROCESS the xpath needs to provided 
+viewing the INPUT Packet and if the node is attached after the process, the XPath is needed to be provided
+viewing the Transform Packet.
+
+**Note:** The Property window for both the Split and Merger is same. 
+![TroubleshootingSplitter](/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter.png)
+
+The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown below:
+
+![TroubleshootingSplitter1](/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter1.png)
+
+The Entity field is the Parent nodes of the packet that would be split. The XPath are the child nodes of the Entity.
+
+![TroubleshootingSplitter2](/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter2.png)
+
+The XPath provided for the MERGER Node is shown below:
+
+![TroubleshootingSplitter3](/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter3.png)
+
+Similarly for the MERGER Property the ENTITY Field and the XPATH is needed to provide in the same way by
+viewing the corresponding packet (in this case, the TRANSFORM Packet). 
+
+![WorkflowSplitter](/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter4.png)
+
+**Protip:** The ENTITY and the XPATH is different for the INPUT Packet, TRANSFORM Packet, OUTPUT Packet and for 
+different Application.
+{: .notice--info}

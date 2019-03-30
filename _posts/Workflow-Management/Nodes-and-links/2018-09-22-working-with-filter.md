@@ -26,6 +26,7 @@ Use valid `XPATH` for filter condition in filter node.
 
 Based on the above example my XML data for the customers is like this 
 
+
 ``` XML
 <customers type="array">
   <customer>
@@ -74,3 +75,34 @@ Based on the above example my XML data for the customers is like this
 Filter node implementation will be like this. Based on the requirement we can have multiple filter condition using the add option.
 
 ![Filter Node](/staticfiles/workflow-management/media/FilterNode/FilterNode.png)
+
+**Applications Used for the scenario is: Magento2- SAP Business One**
+
+Scenario: 
+
+The Filter Property is executed where the property is used after the PROCESS Node. Each data fetched is Splited into 
+single packet and is filtered according to the provided condition.
+
+If the condition of the Filter Property is fulfilled and the data is accepted, if not the data fails. 
+
+**Filter Property Window**
+
+![FilterProperty-Window](/staticfiles/workflow-management/media/FilterNode/FilterProperty-Window.png)
+
+The Field in the property window is the XPath that needs to be provided for fulfilling the condition. The XPath is needed 
+to determine viewing the Input or the Transform Packets. If the Filter is used before the Process Node INPUT Packet 
+is needed to be viewed for the XPATH and if it is used after the process node the XPATH used will be according 
+to the Transform Packet.
+
+**Note: Multiple Filter Conditions can also be provided by clicking on the ADD Button.**
+
+**Execution Screen for the Filter Node:**
+
+![Filter-Workflow](/staticfiles/workflow-management/media/FilterNode/Filter-Workflow.png)
+
+### Troubleshooting 
+
+The XPath provided is case sensitive any small changes in the alphabets or of any cases
+ that doesnot match in the XSLT will result in error.
+
+

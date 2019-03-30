@@ -16,7 +16,8 @@ menus:
 Workflow  with delay execution filter
 
 ### Brief Description 
-This workflow enables the user to configure a task iand do the execution and data sync between two apps with delay filter. This worflow shows a scenario where stock update is getting executed with delay filter.
+This workflow enables the user to configure a task and do the execution and data sync between two apps with delay filter. 
+This worflow shows a scenario where stock update is getting executed with delay filter.
  
 ### Actor 
 Implementers, Developers, Partners     
