@@ -2057,10 +2057,13 @@
     <None Include="_posts\Transformation\Mapping Techniques\Quickstart\2019-02-25-understanding-components-of-mapping.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Quickstart\2019-02-27-steps-to-cutomize-prebuilt-mapping.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Quickstart\2019-03-01-working-with-schemas-action-filter.md" />
-    <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-delta-data.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-incremental-data.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-using-tips-and-tricks.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-dependent-data.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-using-library-methods.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-16-overview-usecase.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-17-grouping-of-condition.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-17-grouping-of-condition.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-27-understanding-touchpoint-dependencies.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-advance-mapping-through-custom-renderer.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-creating-a-mapping-from-schema1-schema2.md" />

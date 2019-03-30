@@ -1193,31 +1193,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-delta-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-delta-data/" onclick="selectTab('/transformation/handling-delta-data/', event);" title="Go to Tips-and-tricks">Tips-and-tricks</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/transformation/understanding-mapping-syntax/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/understanding-mapping-syntax/" onclick="selectTab('/transformation/understanding-mapping-syntax/', event);" title="Go to Understanding Mapping & Syntax">Understanding Mapping & Syntax</a>
         
@@ -1503,6 +1478,16 @@ To Know about Agent Configuration, <a href="/deployment/Deployment-Configuration
 <img src="/staticfiles/connectors/media/application-connector/sage300-agent2.png" alt="sage300-agent2" /></li>
 </ol>
 
+<p>a. 	Base URL: This the Base URL of the users SAGE Application.</p>
+
+<p>b.	User Name: The User Name of the application.</p>
+
+<p>c.	Password: This is the password of the application, which is being used by the user.</p>
+
+<p>d.	Tenant ID: <a href="https://developer.columbus.sage.com/docs/services/583d8bbc81f54615309d2bd9/operations/583d8bbe81f546041c0e4576">Click</a> For more details regarding the Tenant ID.</p>
+
+<p>e.	Company Name: This is the Company database name of the SAGE Application.</p>
+
 <p><strong>Note: If you have any Tenant ID put it into the specified field, otherwise giving Hyphen (-)is mandatory</strong></p>
 
 <p>You can get the Database ID of your organization from More &gt; Common Services &gt; Company Profile
@@ -1515,11 +1500,10 @@ please unblock the .dll and .pdb file from properties section</strong></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <p>ISSUE 1:
-Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated and if touchpoints do not sync. 
-This basic issue resolves after removing the Temp and Cache files from the portal and from your system. Therefore, after clearing all this 
-publish the touchpoints again along with Update Configuration on the agent.</p>
+Some of the basic troubleshooting issue happens even after accurate validation done and the touchpoints do not sync.</p>
 
-<p>For E.g. If the Source Application Not Found in the log file appears the probable cause is due to the presence of the Temp and Cache Files.</p>
+<p>“If touchpoints do not sync”, we need to do republish touchpoint and reset cache from portal.appseconnect.com and after that do update 
+configuration from APPSeCONNECT agent.</p>
 
 <p><strong>Note: For Integrating SAGE 300 with WooCommerce, <code class="highlighter-rouge">The APPSeCONNECT Extension</code> is needed to be <code class="highlighter-rouge">uploaded in WooCommerce</code>.</strong></p>
 
@@ -2867,14 +2851,6 @@ for you which you can easily plug and play while doing your integrations.</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -2940,8 +2916,6 @@ for you which you can easily plug and play while doing your integrations.</p>
                                     BambooHR
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

@@ -1277,7 +1277,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Handling Delta - data",
+      title: "Handling Dependent data",
       excerpt: "\n",
       categories: ["Transformation"],
       tags: ["developers"],
@@ -1286,20 +1286,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Handling Dependent data",
-      excerpt: "\n",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 141
-    });
-    
-  
-    idx.add({
       title: "Using library methods/AppResource Function",
       excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 142
+      id: 141
     });
     
   
@@ -1308,7 +1299,7 @@ var idx = lunr(function () {
       excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 143
+      id: 142
     });
     
   
@@ -1317,7 +1308,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 144
+      id: 143
     });
     
   
@@ -1326,7 +1317,7 @@ var idx = lunr(function () {
       excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 145
+      id: 144
     });
     
   
@@ -1335,7 +1326,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 146
+      id: 145
     });
     
   
@@ -1344,7 +1335,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 147
+      id: 146
     });
     
   
@@ -1353,7 +1344,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 148
+      id: 147
     });
     
   
@@ -1362,7 +1353,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 149
+      id: 148
     });
     
   
@@ -1371,7 +1362,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 150
+      id: 149
     });
     
   
@@ -1380,7 +1371,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 151
+      id: 150
     });
     
   
@@ -1389,7 +1380,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 152
+      id: 151
     });
     
   
@@ -1398,7 +1389,7 @@ var idx = lunr(function () {
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 153
+      id: 152
     });
     
   
@@ -1407,7 +1398,7 @@ var idx = lunr(function () {
       excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 154
+      id: 153
     });
     
   
@@ -1416,7 +1407,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 155
+      id: 154
     });
     
   
@@ -1425,7 +1416,7 @@ var idx = lunr(function () {
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 156
+      id: 155
     });
     
   
@@ -2980,17 +2971,6 @@ var store = [
         "title": "Using Lookups Mapping for Value Interchange",
         "url": "/transformation/using-lookups-for-value-exchange/",
         "excerpt": "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Handling Delta - data",
-        "url": "/transformation/handling-delta-data/",
-        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
