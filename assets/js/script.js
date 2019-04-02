@@ -167,6 +167,14 @@ function selectTab(url, e) {
             if (item.length) { return item; }
         });
         var title = $(data).find('title').html();
+        $(data).find('a:not([href^="https://"])').each(function () {
+            $(this).click(function (event) {
+                selectTab($(this).href(), event);
+            });
+        });
+        //remove all jsTree clicked
+        $('a.jstree-clicked').removeClass('jstree-clicked');
+        $(e.srcElement).addClass('jstree-clicked');
         $('.page').html($(data).find('.page').html());
         window.history.pushState({ url: url }, title, url);
         $("html, body").animate({ scrollTop: 0 }, "slow");

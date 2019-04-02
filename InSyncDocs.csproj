@@ -1952,7 +1952,7 @@
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-dynamicsnav-business-central.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-generic-nav2009 R2-extension.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-07-generic-nav2015-extension.md" />
-    <None Include="_posts\Connectors\Application Connectors\Magento2\2018-12-07-magento2.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\2018-12-07-Magento2.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2018-12-06-priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-25-adding-product-in-priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-25-updating-Inventory-in-priority.md" />
@@ -1960,7 +1960,7 @@
     <None Include="_posts\Connectors\Application Connectors\Sage300\2019-02-25-updating-Inventory-in-sage.md" />
     <None Include="_posts\Connectors\Application Connectors\Sage300\2019-03-04-sage300.md" />
     <None Include="_posts\Connectors\Application Connectors\SapB1\2019-03-05-sap-business-one.md" />
-    <None Include="_posts\Connectors\Application Connectors\Shopify\2018-12-06-shopify.md" />
+    <None Include="_posts\Connectors\Application Connectors\Shopify\2018-12-06-Shopify.md" />
     <None Include="_posts\Connectors\Application Connectors\Uniconta\2019-02-16-uniconta.md" />
     <None Include="_posts\Connectors\Application Connectors\Woocommerce\2019-03-04-woocommerce-pluginextension-upload.md" />
     <None Include="_posts\Connectors\Application Connectors\Woocommerce\2019-03-04-woocommerce.md" />
@@ -2045,7 +2045,6 @@
     <None Include="_posts\SDK\Troubleshooting\Debugging.md" />
     <None Include="_posts\SDK\Troubleshooting\Logs and File Structure.md" />
     <None Include="_posts\Transformation\2018-09-17-overview.md" />
-    <None Include="_posts\Transformation\Mapping Techniques\2019-02-25-appresource-functions.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2019-02-25-troubleshooting.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2019-02-28-understanding-mapping-syntax.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Getting-started\2019-02-25-getting-started-with-mapping.md" />
@@ -2060,7 +2059,8 @@
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-delta-data.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-dependent-data.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-using-library-methods.md" />
-    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-17-grouping-of-condition.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-16-overview-usecase.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-17-grouping-of-condition.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-27-understanding-touchpoint-dependencies.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-advance-mapping-through-custom-renderer.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-creating-a-mapping-from-schema1-schema2.md" />
