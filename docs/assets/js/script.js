@@ -166,23 +166,23 @@ function selectTab(url, e) {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
         });
-		 $(data).find('a:not([href^="https://"])').each(function () {
-            $(this).click(function (event) {
-                selectTab($(this).href(), event);
-            });
-        });
         var title = $(data).find('title').html();
         $(data).find('a:not([href^="https://"])').each(function () {
             $(this).click(function (event) {
                 selectTab($(this).href(), event);
             });
         });
-        //remove all jsTree clicked
-        $('a.jstree-clicked').removeClass('jstree-clicked');
-        $(e.srcElement).addClass('jstree-clicked');
+
         $('.page').html($(data).find('.page').html());
         window.history.pushState({ url: url }, title, url);
         $("html, body").animate({ scrollTop: 0 }, "slow");
+        //remove all jsTree clicked
+        $('a.jstree-clicked').removeClass('jstree-clicked');
+        if (e)
+            $(e.srcElement).addClass('jstree-clicked');
+        else {
+            $('a[href$="' + url + '"]').addClass('jstree-clicked');
+        }
         console.log(url);
     }, function (request) {
         $('.page').html(request.responseText);
