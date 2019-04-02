@@ -2047,7 +2047,6 @@
     <None Include="_posts\SDK\Troubleshooting\Debugging.md" />
     <None Include="_posts\SDK\Troubleshooting\Logs and File Structure.md" />
     <None Include="_posts\Transformation\2018-09-17-overview.md" />
-    <None Include="_posts\Transformation\Mapping Techniques\2019-02-25-appresource-functions.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2019-02-25-troubleshooting.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2019-02-28-understanding-mapping-syntax.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Getting-started\2019-02-25-getting-started-with-mapping.md" />
@@ -2064,7 +2063,6 @@
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-dependent-data.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-using-library-methods.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-16-overview-usecase.md" />
-    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-17-grouping-of-condition.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-17-grouping-of-condition.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-27-understanding-touchpoint-dependencies.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-advance-mapping-through-custom-renderer.md" />
