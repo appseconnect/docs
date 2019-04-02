@@ -2545,7 +2545,7 @@ var store = [
       
       {
         "title": "Priority",
-        "url": "/connectors/priority/",
+        "url": "/connectors/Priority/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
         "teaser":
           
@@ -2556,7 +2556,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/shopify/",
+        "url": "/connectors/Shopify/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
