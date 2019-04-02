@@ -587,8 +587,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/magento2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/magento2/" onclick="selectTab('/connectors/magento2/', event);" title="Go to Magento2">Magento2</a>
+    <li class="menu-item-" data-url="/connectors/Magento2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Magento2/" onclick="selectTab('/connectors/Magento2/', event);" title="Go to Magento2">Magento2</a>
         
     </li>
     
@@ -703,6 +703,12 @@
     
     <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2016-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2016-extension/" onclick="selectTab('/connectors/generic-nav2016-extension/', event);" title="Go to Generic NAV 2016 Extension">Generic NAV 2016 Extension</a>
         
     </li>
     
@@ -1193,22 +1199,28 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-delta-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-delta-data/" onclick="selectTab('/transformation/handling-delta-data/', event);" title="Go to Tips-and-tricks">Tips-and-tricks</a>
+    <li class="menu-item-" data-url="/transformation/using-tips-and-tricks/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-tips-and-tricks/" onclick="selectTab('/transformation/using-tips-and-tricks/', event);" title="Go to Using Tips & Tricks">Using Tips & Tricks</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
+    <li class="menu-item-" data-url="/transformation/handling-incremental-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-incremental-data/" onclick="selectTab('/transformation/handling-incremental-data/', event);" title="Go to Handling Incremental data">Handling Incremental data</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1459,7 +1471,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -1487,8 +1499,8 @@ then he can deploy hard-coded mapping.</p>
    its value from the source schema.</p>
 
 <p>AN EXAMPLE: If you want the <code class="highlighter-rouge">Customer</code> schema of SAP B1 to fetch the value of the field <code class="highlighter-rouge">Country</code> directly from the country field of the source schema, 
-you can map the <code class="highlighter-rouge">country</code> field of both the schemas.
-<img src="/staticfiles/Transformation/media/field-field-mapping.png" alt="field-field-mapping" />
+you can map the <code class="highlighter-rouge">country</code> field of both the schemas. <br />
+<img src="/staticfiles/Transformation/media/field-field-mapping.png" alt="field-field-mapping" />     <br />
 For this example, let us say, you wish to map the destination field <code class="highlighter-rouge">email</code> with the source field <code class="highlighter-rouge">email</code> of the schema <code class="highlighter-rouge">customer</code>. 
 These fields exist as nodes in the corresponding XML document. Then you can directly map the fields together, by providing the name 
 of the source field in the destination field. However if you wish to map the field <code class="highlighter-rouge">PIN</code> of the destination field, you cannot access the node directly. 
@@ -1537,6 +1549,18 @@ But if it is <code class="highlighter-rouge">India</code>, at the destination it
 
 <p><strong>4. Function Mapping</strong> -</p>
 
+<p>Prerequisite: Knowledge about <a href="">AppResource functions</a>.</p>
+
+<ul>
+  <li>AppResource functions can be deployed for facilitating the required data transformation between the source and destination application.</li>
+  <li>To use AppResource functions you only require to know the fields/variable you desire to map along with the name of the function.</li>
+  <li>To understand the utility of these functions let us look at the example below.
+Suppose when developing a particular touchpoint, you come to learn that, destination application accepts date time in a different from 
+what is sent by the source application. Let the accepted date time format be like “yyyy/MM/dd HH:mm:ss” and received format be like “dd-MM-yyyy”. To get around this dilemma, we use AppResource functions.</li>
+</ul>
+
+<p>Refer this <a href="https://www.youtube.com/watch?v=mwcLjXwu6fQ&amp;t=0s&amp;index=5&amp;list=PLSZUUcH5fP9_msXnLwdGp0Mb4Bu0i0g-y">link</a> to know in details about functional mapping.</p>
+
 <p><strong>5. Query Mapping</strong> - As the name suggests, Direct Query mapping is actually running a query in the source schema so as to store the resultant data from the query in the destination field.
 For example, when we run a SQL query we provide the name of the field whose result we require,the name of the table from where the data is to be fetched and the parameters, on the basis of which the results would be filtered.</p>
 
@@ -1549,14 +1573,9 @@ We provide the name of the desired field, the schema and the parameters in the q
 <code class="highlighter-rouge">Structure of a query in mapping is</code>
 destinationlib:GetUniqueId(“,”,”,”) where we provide the required field the schema and the parameters in order.</p>
 
-<ol>
-  <li>
-    <p>Variable Mapping (Understanding Variables)</p>
-  </li>
-  <li>
-    <p>Lookups Mapping</p>
-  </li>
-</ol>
+<p><strong>6. Variable Mapping</strong> - Click <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Variable Mapping</a> to know in details.</p>
+
+<p><strong>7. LookUp Mapping</strong> - Click <a href="/transformation/using-lookups-for-value-exchange/">Lookups Mapping</a> to know in details</p>
 
 
                 
@@ -2852,8 +2871,26 @@ destinationlib:GetUniqueId(“,”,”,”) where we provide the required field 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -2897,9 +2934,31 @@ destinationlib:GetUniqueId(“,”,”,”) where we provide the required field 
                             
                             
                             <li>
+                                <a href="/transformation/using-tips-and-tricks/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Using Tips & Tricks
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
                                 <a href="/transformation/using-library-methods/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     Using library methods/AppResource Function
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/transformation/handling-incremental-data/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Handling Incremental data
                                 </a>
                             </li>
                             
@@ -2915,26 +2974,6 @@ destinationlib:GetUniqueId(“,”,”,”) where we provide the required field 
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/transformation/handling-delta-data/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Handling Delta - data
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/transformation/using-lookups-for-value-exchange/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Using Lookups Mapping for Value Interchange
-                                </a>
-                            </li>
                             
                             
                             

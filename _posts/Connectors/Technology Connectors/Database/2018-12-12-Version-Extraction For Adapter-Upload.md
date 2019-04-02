@@ -38,7 +38,6 @@ with any other dependency file of the particular application you are working on.
 8.  Click `Update Adapters` for updating the Adapter in the Agent.
 
 **Protip:** For every new version of Adapters and updates in the Native resources functions, the above procedure is needed to be followed.
+The .dll, .pdb and other Dependant files needs to be uploaded only in a ZIP FOLDER. Also make sure that all the dependant files are added up in the folder.
 {: .notice--info}
 
-**Protip:** The .dll, .pdb and other Dependant files needs to be uploaded only in a ZIP FOLDER. Also make sure that all the dependant files are added up in the folder.
-{: .notice--info}

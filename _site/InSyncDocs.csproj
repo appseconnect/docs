@@ -1951,9 +1951,11 @@
     <None Include="_posts\Connectors\Application Connectors\Bamboohr\2019-03-05-bamboohr.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-dynamicsnav-business-central.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-generic-nav2009 R2-extension.md" />
+    <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-08-generic-nav2016-extension.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-07-generic-nav2015-extension.md" />
-    <None Include="_posts\Connectors\Application Connectors\Magento2\2018-12-07-magento2.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\2018-12-07-Magento2.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2018-12-06-priority.md" />
+    <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-24-adding-product-in-priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-25-adding-product-in-priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-25-updating-Inventory-in-priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Sage300\2019-02-25-adding-product-in-sage.md" />
@@ -2057,10 +2059,13 @@
     <None Include="_posts\Transformation\Mapping Techniques\Quickstart\2019-02-25-understanding-components-of-mapping.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Quickstart\2019-02-27-steps-to-cutomize-prebuilt-mapping.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Quickstart\2019-03-01-working-with-schemas-action-filter.md" />
-    <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-delta-data.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-incremental-data.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-using-tips-and-tricks.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-handling-dependent-data.md" />
     <None Include="_posts\Transformation\Mapping Techniques\tips-and-tricks\2019-02-28-using-library-methods.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-16-overview-usecase.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2018-09-17-grouping-of-condition.md" />
+    <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-17-grouping-of-condition.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-27-understanding-touchpoint-dependencies.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-advance-mapping-through-custom-renderer.md" />
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-creating-a-mapping-from-schema1-schema2.md" />

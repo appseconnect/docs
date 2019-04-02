@@ -587,8 +587,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/magento2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/magento2/" onclick="selectTab('/connectors/magento2/', event);" title="Go to Magento2">Magento2</a>
+    <li class="menu-item-" data-url="/connectors/Magento2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Magento2/" onclick="selectTab('/connectors/Magento2/', event);" title="Go to Magento2">Magento2</a>
         
     </li>
     
@@ -703,6 +703,12 @@
     
     <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2016-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2016-extension/" onclick="selectTab('/connectors/generic-nav2016-extension/', event);" title="Go to Generic NAV 2016 Extension">Generic NAV 2016 Extension</a>
         
     </li>
     
@@ -1193,22 +1199,28 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-delta-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-delta-data/" onclick="selectTab('/transformation/handling-delta-data/', event);" title="Go to Tips-and-tricks">Tips-and-tricks</a>
+    <li class="menu-item-" data-url="/transformation/using-tips-and-tricks/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-tips-and-tricks/" onclick="selectTab('/transformation/using-tips-and-tricks/', event);" title="Go to Using Tips & Tricks">Using Tips & Tricks</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
+    <li class="menu-item-" data-url="/transformation/handling-incremental-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-incremental-data/" onclick="selectTab('/transformation/handling-incremental-data/', event);" title="Go to Handling Incremental data">Handling Incremental data</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1552,7 +1564,9 @@ which you can easily plug and play while doing your integration.</p>
       <th>Action</th>
       <th>Action Type</th>
       <th>Schema</th>
-      <th>Description</th>
+      <th>UI Path</th>
+      <th>API Path</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -1562,6 +1576,8 @@ which you can easily plug and play while doing your integration.</p>
       <td>GET</td>
       <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=c831ec5b-88b5-4371-9e5d-94c23e24aec7&amp;entityId=5143da80-5685-4472-8c5c-3dec8dbe685f&amp;entityActionId=aa03d44e-2a6e-4507-a53a-bcfc3c238b66&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Logpart</a></td>
       <td><a href="/connectors/Updating-Inventory-in-Priority/">Get Updated Inventory from Priority</a></td>
+      <td><a href="https://prioritysoftware.github.io/restapi/modify/#Updating_a_Related_Entity">LOGPART</a></td>
+      <td> </td>
     </tr>
     <tr>
       <td>Logpart</td>
@@ -1569,6 +1585,8 @@ which you can easily plug and play while doing your integration.</p>
       <td>GET</td>
       <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=c831ec5b-88b5-4371-9e5d-94c23e24aec7&amp;entityId=5143da80-5685-4472-8c5c-3dec8dbe685f&amp;entityActionId=8db20e90-b5ad-401a-a674-cdc06e05cdc3&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Logpart</a></td>
       <td><a href="/connectors/Adding-Product-in-Priority/">Add Product in Priority</a></td>
+      <td><a href="https://prioritysoftware.github.io/restapi/request/#Requesting_an_Individual_Entity_by_ID">LOGPART</a></td>
+      <td> </td>
     </tr>
     <tr>
       <td>ORDERS</td>
@@ -1576,6 +1594,8 @@ which you can easily plug and play while doing your integration.</p>
       <td>POST</td>
       <td><a href="">ORDERS</a></td>
       <td>Post Order in Priority from the source application</td>
+      <td> </td>
+      <td><a href="">ORDERS</a></td>
     </tr>
     <tr>
       <td>CUSTOMERS</td>
@@ -1583,6 +1603,8 @@ which you can easily plug and play while doing your integration.</p>
       <td>POST</td>
       <td><a href="">CUSTOMERS</a></td>
       <td>Post Customer in Priority from the source application</td>
+      <td> </td>
+      <td><a href="">CUSTOMERS</a></td>
     </tr>
   </tbody>
 </table>
@@ -2886,6 +2908,22 @@ against the Schema for the business scenario as required or the user can utilize
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -2896,6 +2934,17 @@ against the Schema for the business scenario as required or the user can utilize
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2016-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2016 Extension
+                                </a>
+                            </li>
                             
                             
                             
@@ -2944,13 +2993,6 @@ against the Schema for the business scenario as required or the user can utilize
                             
                             
                             
-                            
-                            <li>
-                                <a href="/connectors/bamboohr/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    BambooHR
-                                </a>
-                            </li>
                             
                             
                             

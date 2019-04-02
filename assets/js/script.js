@@ -166,6 +166,11 @@ function selectTab(url, e) {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
         });
+		 $(data).find('a:not([href^="https://"])').each(function () {
+            $(this).click(function (event) {
+                selectTab($(this).href(), event);
+            });
+        });
         var title = $(data).find('title').html();
         $(data).find('a:not([href^="https://"])').each(function () {
             $(this).click(function (event) {

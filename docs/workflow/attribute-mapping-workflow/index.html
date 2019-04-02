@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed over data after reading this document.">
+<meta name="description" content="For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the Transform section of the touchpoint.A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with Workflow in APPSeCONNECT.Attribute Mapping needs to be implemented before integrating. This document will help the users to implement Attribute Mapping in APPSeCONNECT Workflow.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed over data after reading this document.">
+  <meta property="og:description" content="For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the Transform section of the touchpoint.A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with Workflow in APPSeCONNECT.Attribute Mapping needs to be implemented before integrating. This document will help the users to implement Attribute Mapping in APPSeCONNECT Workflow.">
 
 
 
@@ -587,8 +587,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/magento2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/magento2/" onclick="selectTab('/connectors/magento2/', event);" title="Go to Magento2">Magento2</a>
+    <li class="menu-item-" data-url="/connectors/Magento2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Magento2/" onclick="selectTab('/connectors/Magento2/', event);" title="Go to Magento2">Magento2</a>
         
     </li>
     
@@ -703,6 +703,12 @@
     
     <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2016-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2016-extension/" onclick="selectTab('/connectors/generic-nav2016-extension/', event);" title="Go to Generic NAV 2016 Extension">Generic NAV 2016 Extension</a>
         
     </li>
     
@@ -1193,22 +1199,28 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-delta-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-delta-data/" onclick="selectTab('/transformation/handling-delta-data/', event);" title="Go to Tips-and-tricks">Tips-and-tricks</a>
+    <li class="menu-item-" data-url="/transformation/using-tips-and-tricks/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-tips-and-tricks/" onclick="selectTab('/transformation/using-tips-and-tricks/', event);" title="Go to Using Tips & Tricks">Using Tips & Tricks</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
+    <li class="menu-item-" data-url="/transformation/handling-incremental-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-incremental-data/" onclick="selectTab('/transformation/handling-incremental-data/', event);" title="Go to Handling Incremental data">Handling Incremental data</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1390,7 +1402,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Attribute Mapping of workflow">
-        <meta itemprop="description" content="An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed over data after reading this document.">
+        <meta itemprop="description" content="For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the Transform section of the touchpoint.A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with Workflow in APPSeCONNECT.Attribute Mapping needs to be implemented before integrating. This document will help the users to implement Attribute Mapping in APPSeCONNECT Workflow.">
         <meta itemprop="datePublished" content="September 20, 2018">
         
 
@@ -1471,48 +1483,42 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#pre-requisites">Pre-requisites:</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                <p>An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed over data after reading this document.</p>
+                <p>For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the Transform section of the touchpoint.
+A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with Workflow in APPSeCONNECT.
+Attribute Mapping needs to be implemented before integrating. This document will help the users to implement Attribute Mapping in APPSeCONNECT Workflow.</p>
 
-<p>Please follow the steps written below:</p>
+<h2 id="pre-requisites">Pre-requisites:</h2>
+<ol>
+  <li>Need to have a valid APPSeCONNECT Account.</li>
+  <li>Select the Applications whose workflow is to be implemented.</li>
+  <li>Create a workflow or choose a pre-packaged workflow.</li>
+</ol>
+
+<p><a href="/workflow/steps-to-choose-your-workflow/">Click</a>to know more about choosing workflow.</p>
+
+<h1 id="steps-to-implement-attribute-mapping">Steps to Implement Attribute Mapping:</h1>
 
 <ol>
-  <li>Log in with valid credentials in the Cloud portal.</li>
-  <li>Choose any project and navigate to Connections -&gt; Choose a connection -&gt; View The Connection.</li>
+  <li>Login to the APPSeCONNECT Portal and select the apps from the APPS section, for implementing workflow.</li>
+  <li>Navigate to the Workflow Section in the portal and create or choose the workflow for the touchpoint that is to be implemented.
+<strong>Note: The Pre-packaged workflow is selected for the touchpoint Customer ADD from WooCommerce to Priority.</strong></li>
+  <li>Click on the Process Node in the Customer Add Touchpoint, the Mapping Actions appears at the Right-Hand side of the workflow panel.
+<strong>Note: For any touchpoint, clicking on the PROCESS Node of a touchpoint, displays the Mapping Actions in the Workflow Panel</strong></li>
+  <li>There are three Tabs present in the Mapping Actions.
+a.	Mapping: This implements the Attribute Mapping between the attributes.
+b.	Source Entity: This displays all the Source Appresource Functions.
+c.	Destination Entity: This displays all the Destination Appresource Functions.</li>
+  <li>For Implementing Attribute Mapping, click on the Mapping Tab. The Transform window opens. Expand the For-Each-Loop Node and Row, until the destination attributes are displayed.</li>
+  <li>For Attribute Mapping, click on the Open Button when hovered on an attribute. Implement the mapping, in the Mapping panel and click on the Submit Button.</li>
+  <li>For more Details and Information on Attribute Mapping<a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Click here</a></li>
 </ol>
 
-<p><img src="/staticfiles/workflow-management/media/Attribute-Mapping1.png" alt="Attribute-Mapping1" /><br />
-You can search for a connection from the Search section. Hover the mouse on the connection, click on View the Connection.</p>
-<ol class="notice--info">
-  <li>A new page will open where you can edit the touch points.<br />
-<img src="/staticfiles/workflow-management/media/Attribute-Mapping2.png" alt="Attribute-Mapping2" /><br />
-<strong>Protip</strong>Edit mapping will only be applicable for your custom touchpoint i.e. if you add any new touchpoint. Edit link will not be visible for Base touchpoints that get auto-created at the time of connection creation.</li>
-</ol>
-<ol>
-  <li>You will see a page like this. Refer to this document.<br />
-<img src="/staticfiles/workflow-management/media/Attribute-Mapping3.png" alt="Attribute-Mapping3" /></li>
-  <li>Choose Open Mapping, A pop-up will open.  <br />
-<img src="/staticfiles/workflow-management/media/Attribute-Mapping4.jpg" alt="Attribute-Mapping4" /></li>
-  <li>In the white box section, you have to write the fields for mapping. You can also click on the entities/attributes to get it on the box.If value mapping is required, check the box below and add some tips.
-Choose the value mapping type. Leaving a comment is optional.</li>
-  <li>You can now enable or disable attribute mapping. <code class="highlighter-rouge">Disable Mapping feature</code> is not available for the primary key.
-You can now Delete Custom attribute along with its mapping.</li>
-  <li>`The custom attribute’ is the attribute which is defined in project level. You can use the custom attributes only for a particular touchpoint.</li>
-  <li>You can sort the order of attributes and variables in the mapping page by dragging and dropping the same under its parent only if the mapping for the attribute has been provided.</li>
-  <li>In case of the complex object or complex object collection type of attributes, a blank mapping is required for its sorting.</li>
-  <li>Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.</li>
-  <li>You can create variable and condition by a pop-up in the attribute mapping section.
-    <ul>
-      <li>Source entity and destination entity can be mapped using drag and drop feature.</li>
-      <li>Destination entity will have drop down containing entity name and app resource and function.</li>
-      <li>New variables can be added to the (+) icon in the mapping section.</li>
-      <li>New conditions can be added to the (+) icon in the mapping section.</li>
-    </ul>
-  </li>
-</ol>
 
                 
             </section>
@@ -2807,8 +2813,28 @@ You can now Delete Custom attribute along with its mapping.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             

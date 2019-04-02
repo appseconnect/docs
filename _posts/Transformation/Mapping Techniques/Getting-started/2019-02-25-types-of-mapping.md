@@ -22,8 +22,8 @@ then he can deploy hard-coded mapping.
    its value from the source schema.
 
 AN EXAMPLE: If you want the `Customer` schema of SAP B1 to fetch the value of the field `Country` directly from the country field of the source schema, 
-you can map the `country` field of both the schemas.
-![field-field-mapping](/staticfiles/Transformation/media/field-field-mapping.png)
+you can map the `country` field of both the schemas.   
+![field-field-mapping](/staticfiles/Transformation/media/field-field-mapping.png)       
 For this example, let us say, you wish to map the destination field `email` with the source field `email` of the schema `customer`. 
 These fields exist as nodes in the corresponding XML document. Then you can directly map the fields together, by providing the name 
 of the source field in the destination field. However if you wish to map the field `PIN` of the destination field, you cannot access the node directly. 
@@ -71,6 +71,16 @@ The generalised structure of the `choose-when` condition is:
 
 **4. Function Mapping** - 
 
+Prerequisite: Knowledge about [AppResource functions]().
+
+* AppResource functions can be deployed for facilitating the required data transformation between the source and destination application.
+* To use AppResource functions you only require to know the fields/variable you desire to map along with the name of the function.
+* To understand the utility of these functions let us look at the example below.
+Suppose when developing a particular touchpoint, you come to learn that, destination application accepts date time in a different from 
+what is sent by the source application. Let the accepted date time format be like "yyyy/MM/dd HH:mm:ss" and received format be like "dd-MM-yyyy". To get around this dilemma, we use AppResource functions.
+
+Refer this [link](https://www.youtube.com/watch?v=mwcLjXwu6fQ&t=0s&index=5&list=PLSZUUcH5fP9_msXnLwdGp0Mb4Bu0i0g-y) to know in details about functional mapping. 
+
 **5. Query Mapping** - As the name suggests, Direct Query mapping is actually running a query in the source schema so as to store the resultant data from the query in the destination field.
 For example, when we run a SQL query we provide the name of the field whose result we require,the name of the table from where the data is to be fetched and the parameters, on the basis of which the results would be filtered.
 
@@ -83,8 +93,8 @@ The native AppResource function that we use for this purpose is 'sourcelib' or '
 `Structure of a query in mapping is`
 destinationlib:GetUniqueId(",",",") where we provide the required field the schema and the parameters in order.
 
-6. Variable Mapping (Understanding Variables)
+**6. Variable Mapping** - Click [Variable Mapping](/transformation/steps-to-cutomize-prebuilt-mapping/) to know in details.
 
-7. Lookups Mapping
+**7. LookUp Mapping** - Click [Lookups Mapping](/transformation/using-lookups-for-value-exchange/) to know in details
 
 

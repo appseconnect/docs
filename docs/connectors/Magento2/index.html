@@ -36,8 +36,8 @@
 <meta property="og:title" content="Magento2">
 
 
-  <link rel="canonical" href="http://localhost:4000/connectors/magento2/">
-  <meta property="og:url" content="http://localhost:4000/connectors/magento2/">
+  <link rel="canonical" href="http://localhost:4000/connectors/Magento2/">
+  <meta property="og:url" content="http://localhost:4000/connectors/Magento2/">
 
 
 
@@ -587,8 +587,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/magento2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/magento2/" onclick="selectTab('/connectors/magento2/', event);" title="Go to Magento2">Magento2</a>
+    <li class="menu-item-" data-url="/connectors/Magento2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Magento2/" onclick="selectTab('/connectors/Magento2/', event);" title="Go to Magento2">Magento2</a>
         
     </li>
     
@@ -703,6 +703,12 @@
     
     <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2016-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2016-extension/" onclick="selectTab('/connectors/generic-nav2016-extension/', event);" title="Go to Generic NAV 2016 Extension">Generic NAV 2016 Extension</a>
         
     </li>
     
@@ -1193,22 +1199,28 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-delta-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-delta-data/" onclick="selectTab('/transformation/handling-delta-data/', event);" title="Go to Tips-and-tricks">Tips-and-tricks</a>
+    <li class="menu-item-" data-url="/transformation/using-tips-and-tricks/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-tips-and-tricks/" onclick="selectTab('/transformation/using-tips-and-tricks/', event);" title="Go to Using Tips & Tricks">Using Tips & Tricks</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
+    <li class="menu-item-" data-url="/transformation/handling-incremental-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-incremental-data/" onclick="selectTab('/transformation/handling-incremental-data/', event);" title="Go to Handling Incremental data">Handling Incremental data</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
         
     </li>
     
@@ -1589,7 +1601,8 @@ integrations.</p>
       <th>Action</th>
       <th>Action Type</th>
       <th>Schema</th>
-      <th>Description</th>
+      <th>UI Help</th>
+      <th>API Help</th>
     </tr>
   </thead>
   <tbody>
@@ -1599,6 +1612,7 @@ integrations.</p>
       <td>Get</td>
       <td><a href="https://portal.appseconnect.com/AppEntity/BaseCreate?entityId=d5b93e08-37a6-4042-a86d-a5e096b0232c&amp;AppVersionId=c47be8ef-bef4-4cf3-972a-9a4aa912461b">Customer</a></td>
       <td>It will search customer from magento. You can specify filter criteria based on type of customer <code class="highlighter-rouge">customer_type</code> and /or <code class="highlighter-rouge">created_at</code> or <code class="highlighter-rouge">updated_at fields</code>. The API also supports limit filters. <a href="https://docs.magento.com/m2/ce/user_guide/customers/account-create.html">Click here</a></td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerCustomerRepositoryV1GetListGet">Search Customers</a></td>
     </tr>
     <tr>
       <td>customers/CustomerId/Password</td>
@@ -1606,6 +1620,7 @@ integrations.</p>
       <td>GET</td>
       <td>Customer</td>
       <td>It Checks if the password reset token is valid or invalid</td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#tag/customerscustomerIdpasswordresetLinkTokenresetPasswordLinkToken">CustomerResetPassword</a></td>
     </tr>
     <tr>
       <td>guest-carts/cartId</td>
@@ -1613,6 +1628,7 @@ integrations.</p>
       <td>PUT</td>
       <td>Guest-carts</td>
       <td>Add/Update the specified item in cart</td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/quoteGuestCartManagementV1AssignCustomerPut">guest-carts/cartId</a></td>
     </tr>
     <tr>
       <td>orders</td>
@@ -1620,6 +1636,7 @@ integrations.</p>
       <td>GET</td>
       <td>order</td>
       <td>Magento gives user the privelage to add Orders from the front end of the application as well as backend of the application.Login to Magento2.0 front end with the valid credentials of a contact person.Now select certain items and place an order as per requirement. After the order is successfully placed the order ID should be generated. <a href="https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html">This will get orders from Magento2 for posting in any destination application from the backend</a></td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-">order</a></td>
     </tr>
     <tr>
       <td>product</td>
@@ -1627,6 +1644,7 @@ integrations.</p>
       <td>POST</td>
       <td>product</td>
       <td>This will Create order in Magento 2 from Source Application</td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogProductRepositoryV1SavePost">product</a></td>
     </tr>
     <tr>
       <td>stockItem</td>
@@ -1634,6 +1652,7 @@ integrations.</p>
       <td>PUT</td>
       <td>stockItem</td>
       <td>This will update inventory in Magento2 from any source Application</td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/catalogInventoryStockRegistryV1UpdateStockItemBySkuPu">stockItem</a></td>
     </tr>
     <tr>
       <td>Customers/isEmailAvailable</td>
@@ -1641,6 +1660,7 @@ integrations.</p>
       <td>POST</td>
       <td>Customer</td>
       <td>Check if given email is associated with a customer account in given website</td>
+      <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerAccountManagementV1IsEmailAvailablePost">Customers/isEmailAvailable</a></td>
     </tr>
     <tr>
       <td>guest-carts/cartId</td>
@@ -1648,13 +1668,13 @@ integrations.</p>
       <td>DELETE</td>
       <td>Guest-carts</td>
       <td>To Remove items from the specified cart</td>
+      <td><a href="">guest-carts/cartId</a></td>
     </tr>
   </tbody>
 </table>
 
-<p class="notice--info"><strong>Protip:</strong> Working on SAP B1 and Magento 2 (B2C) needs a SAP B1 add-on and Magento B2C extension for its integration.</p>
-
-<p class="notice--info"><strong>Protip:</strong> Customers and Orders can be created and placed from the Front-End also. 
+<p class="notice--info"><strong>Protip:</strong> Working on SAP B1 and Magento 2 (B2C) needs a SAP B1 add-on and Magento B2C extension for its integration.
+Customers and Orders can be created and placed from the Front-End also. 
 For Placing orders from front end, visit the E-Commerce store and follow the generic steps for placing orders
 and creating customers.</p>
 
@@ -1716,13 +1736,13 @@ and creating customers.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Magento2%20https://docs.appseconnect.com%2Fconnectors%2Fmagento2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Magento2%20https://docs.appseconnect.com%2Fconnectors%2FMagento2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2Fmagento2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2FMagento2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2Fmagento2%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2FMagento2%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2Fmagento2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2FMagento2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -2952,6 +2972,22 @@ and creating customers.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -2962,6 +2998,17 @@ and creating customers.</p>
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2016-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2016 Extension
+                                </a>
+                            </li>
                             
                             
                             
@@ -3010,13 +3057,6 @@ and creating customers.</p>
                             
                             
                             
-                            
-                            <li>
-                                <a href="/connectors/bamboohr/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    BambooHR
-                                </a>
-                            </li>
                             
                             
                             
@@ -3414,8 +3454,8 @@ and creating customers.</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/connectors/magento2/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/connectors/magento2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/connectors/Magento2/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/connectors/Magento2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

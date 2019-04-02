@@ -18,15 +18,13 @@ In APPSeCONNECT there are total 5 Appresource Functions:
 
 1.	**Native AppResources:** - These Appresource are written with the adapter itself. When the Adapter is uploaded in the cloud, 
     these appresource function are uploaded with the adapter itself.  
-
-a.	Sourcelib AppResources – The appresource functions of the source application is the Sourcelib appresources. 
+a.	Sourcelib AppResources - The appresource functions of the source application is the Sourcelib appresources. 
     These functions are referred by *sourcelib.**
+
 b.	Destinationlib Appresources – The appresource function of the destination application is the Destination Appresources. 
     These functions are referred by *destinationlib.**
-
-2.	**Generic AppResources:** – The generic appresources are the functions that have general defined task which are provided 
+2.	**Generic AppResources:** - The generic appresources are the functions that have general defined task which are provided 
     by APPSeCONNECT itself. These functions are referred by *genericlib.**
-
 3.	**Cloud Appresources:** The Cloud Appresources are the functions that are used when creating a touchpoint for a technology or custom app. 
     These functions are written with the cloud portal itself. The function of the cloud appresources are referred by *cloudResourcelib.**
 
