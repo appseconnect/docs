@@ -587,20 +587,20 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/magento2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/magento2/" onclick="selectTab('/connectors/magento2/', event);" title="Go to Magento2">Magento2</a>
+    <li class="menu-item-" data-url="/connectors/Magento2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Magento2/" onclick="selectTab('/connectors/Magento2/', event);" title="Go to Magento2">Magento2</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/shopify/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/shopify/" onclick="selectTab('/connectors/shopify/', event);" title="Go to Shopify">Shopify</a>
+    <li class="menu-item-" data-url="/connectors/Shopify/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Shopify/" onclick="selectTab('/connectors/Shopify/', event);" title="Go to Shopify">Shopify</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/priority/" onclick="selectTab('/connectors/priority/', event);" title="Go to Priority">Priority</a>
+    <li class="menu-item-" data-url="/connectors/Priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Priority/" onclick="selectTab('/connectors/Priority/', event);" title="Go to Priority">Priority</a>
         
         
         
@@ -703,6 +703,12 @@
     
     <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2016-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2016-extension/" onclick="selectTab('/connectors/generic-nav2016-extension/', event);" title="Go to Generic NAV 2016 Extension">Generic NAV 2016 Extension</a>
         
     </li>
     
@@ -1193,6 +1199,37 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/transformation/using-tips-and-tricks/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-tips-and-tricks/" onclick="selectTab('/transformation/using-tips-and-tricks/', event);" title="Go to Using Tips & Tricks">Using Tips & Tricks</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/transformation/handling-incremental-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-incremental-data/" onclick="selectTab('/transformation/handling-incremental-data/', event);" title="Go to Handling Incremental data">Handling Incremental data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/transformation/understanding-mapping-syntax/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/understanding-mapping-syntax/" onclick="selectTab('/transformation/understanding-mapping-syntax/', event);" title="Go to Understanding Mapping & Syntax">Understanding Mapping & Syntax</a>
         
@@ -1462,23 +1499,18 @@ Application. <code class="highlighter-rouge">AppResources are library functions 
 
 <ol>
   <li><strong>Native AppResources:</strong> - These Appresource are written with the adapter itself. When the Adapter is uploaded in the cloud, 
-these appresource function are uploaded with the adapter itself.</li>
+these appresource function are uploaded with the adapter itself.<br />
+a.	Sourcelib AppResources - The appresource functions of the source application is the Sourcelib appresources. 
+These functions are referred by *sourcelib.**</li>
 </ol>
 
-<p>a.	Sourcelib AppResources - The appresource functions of the source application is the Sourcelib appresources. 
-    These functions are referred by *sourcelib.**
-b.	Destinationlib Appresources – The appresource function of the destination application is the Destination Appresources. 
+<p>b.	Destinationlib Appresources – The appresource function of the destination application is the Destination Appresources. 
     These functions are referred by *destinationlib.**</p>
-
 <ol>
-  <li>
-    <p><strong>Generic AppResources:</strong> - The generic appresources are the functions that have general defined task which are provided 
-by APPSeCONNECT itself. These functions are referred by *genericlib.**</p>
-  </li>
-  <li>
-    <p><strong>Cloud Appresources:</strong> The Cloud Appresources are the functions that are used when creating a touchpoint for a technology or custom app. 
-These functions are written with the cloud portal itself. The function of the cloud appresources are referred by *cloudResourcelib.**</p>
-  </li>
+  <li><strong>Generic AppResources:</strong> - The generic appresources are the functions that have general defined task which are provided 
+by APPSeCONNECT itself. These functions are referred by *genericlib.**</li>
+  <li><strong>Cloud Appresources:</strong> The Cloud Appresources are the functions that are used when creating a touchpoint for a technology or custom app. 
+These functions are written with the cloud portal itself. The function of the cloud appresources are referred by *cloudResourcelib.**</li>
 </ol>
 
 <h2 id="prerequisites-for-working-with-appresources">Prerequisites for working with AppResources</h2>
@@ -2934,8 +2966,34 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -2978,6 +3036,28 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
                             
                             
                             
+                            <li>
+                                <a href="/transformation/using-tips-and-tricks/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Using Tips & Tricks
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/transformation/handling-incremental-data/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Handling Incremental data
+                                </a>
+                            </li>
+                            
+                            
+                            
                             
                             
                             <li>
@@ -3001,24 +3081,6 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
                             
                             
                             
-                            
-                            <li>
-                                <a href="/transformation/handling-variables-and-functions/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Handling Variables and Functions
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/transformation/enable-tracking-fields/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Enabling Tracking in Transformation
-                                </a>
-                            </li>
                             
                             
                             

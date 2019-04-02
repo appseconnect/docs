@@ -1,11 +1,11 @@
 ---
-title: "Handling incremental data"
+title: "Handling Incremental data"
 toc: true
 tag: developers
 category: "Transformation"
 menus: 
     transformtipsandtricks:
-        title: "Handling incremental data"
+        title: "Handling Incremental data"
         weight: 1
         icon: fa fa-file-word-o
         identifier: handlingincrementaldata
@@ -23,9 +23,11 @@ or you start exceeding API limits, or the integration takes hours to run, that e
 
 The three strategies we will review are:
 
-* BEST: Extract by "Flag" Field Value
-* GOOD: Extract by Last Modified Date
-* LAST RESORT: Change Data Capture
+**BEST: Extract by "Flag" Field Value**   
+
+**GOOD: Extract by Last Modified Date**     
+
+**LAST RESORT: Change Data Capture**    
 
 BEST: Extract by "Flag" Field Value
 On completion of an integration successfully, records or data are extracted based on the value of some status or "flag" field. 
@@ -40,5 +42,5 @@ integration ran the last time, or the most recent record synced previously.
 
 LAST RESORT: Change Data Capture
 This option is, when, neither of the previous options are applicable. Here, the integration process must retain 
-the entire set of data from the last execution in a “cache” so that it can be compared with the current data set. 
+the entire set of data from the last execution in a "cache" so that it can be compared with the current data set. 
 Through this, Unique data can be identified in terms of Addition, Modification and Removal.

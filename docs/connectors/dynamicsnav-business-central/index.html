@@ -587,20 +587,20 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/magento2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/magento2/" onclick="selectTab('/connectors/magento2/', event);" title="Go to Magento2">Magento2</a>
+    <li class="menu-item-" data-url="/connectors/Magento2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Magento2/" onclick="selectTab('/connectors/Magento2/', event);" title="Go to Magento2">Magento2</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/shopify/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/shopify/" onclick="selectTab('/connectors/shopify/', event);" title="Go to Shopify">Shopify</a>
+    <li class="menu-item-" data-url="/connectors/Shopify/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Shopify/" onclick="selectTab('/connectors/Shopify/', event);" title="Go to Shopify">Shopify</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/priority/" onclick="selectTab('/connectors/priority/', event);" title="Go to Priority">Priority</a>
+    <li class="menu-item-" data-url="/connectors/Priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Priority/" onclick="selectTab('/connectors/Priority/', event);" title="Go to Priority">Priority</a>
         
         
         
@@ -703,6 +703,12 @@
     
     <li class="menu-item-" data-url="/connectors/generic-nav2015-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/generic-nav2015-extension/" onclick="selectTab('/connectors/generic-nav2015-extension/', event);" title="Go to Generic NAV 2015 Extension">Generic NAV 2015 Extension</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/generic-nav2016-extension/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/generic-nav2016-extension/" onclick="selectTab('/connectors/generic-nav2016-extension/', event);" title="Go to Generic NAV 2016 Extension">Generic NAV 2016 Extension</a>
         
     </li>
     
@@ -1193,6 +1199,37 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/transformation/using-tips-and-tricks/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-tips-and-tricks/" onclick="selectTab('/transformation/using-tips-and-tricks/', event);" title="Go to Using Tips & Tricks">Using Tips & Tricks</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/transformation/handling-incremental-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-incremental-data/" onclick="selectTab('/transformation/handling-incremental-data/', event);" title="Go to Handling Incremental data">Handling Incremental data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/handling-dependent-data/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/handling-dependent-data/" onclick="selectTab('/transformation/handling-dependent-data/', event);" title="Go to Handling Dependent data">Handling Dependent data</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/using-library-methods/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/using-library-methods/" onclick="selectTab('/transformation/using-library-methods/', event);" title="Go to Using library methods/AppResource Function">Using library methods/AppResource Function</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/transformation/understanding-mapping-syntax/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/transformation/understanding-mapping-syntax/" onclick="selectTab('/transformation/understanding-mapping-syntax/', event);" title="Go to Understanding Mapping & Syntax">Understanding Mapping & Syntax</a>
         
@@ -1434,7 +1471,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -1448,6 +1485,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites-for-nav-business-central-configuration">Prerequisites for NAV Business Central Configuration</a></li>
+  <li><a href="#populating-historical-data-in-aec-tables">Populating Historical Data in AEC Tables</a></li>
   <li><a href="#configure-the-nav-business-central-application-in-the-agent">Configure the NAV Business Central Application in the Agent</a></li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
   <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
@@ -1469,6 +1507,34 @@ Here you will find the detailed description on how to configure the agents for t
 </ol>
 
 <p><strong>Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created</strong></p>
+
+<p class="notice--info"><strong>ProTip:</strong> Before Implementing Integration with MS Dynamics NAV, the NAV Extension is needed to be installed. 
+Click Here to know about the Installation Process.</p>
+
+<h2 id="populating-historical-data-in-aec-tables">Populating Historical Data in AEC Tables</h2>
+
+<p>After Installing the NAV Extension, the old data are needed to be synced and should be reflected in the AEC Tables. 
+Therefore, these specific CodeUnit functions are needed to be called in the OnRun ().</p>
+
+<p><strong>CODE UNITS:</strong></p>
+
+<ol>
+  <li>
+    <p>AEC Customer Codeunit =  CopyExistingCustomerInAEC();
+Call this in OnRun() and save and then Run the CodeUnit</p>
+  </li>
+  <li>
+    <p>AEC Item Codeunit  =  CopyExistingItems();
+Call this in OnRun() and save and then Run the CodeUnit</p>
+  </li>
+  <li>
+    <p>AEC Contact = CopyExistingContactInAEC;</p>
+  </li>
+</ol>
+
+<p>Call this in OnRun() and save and then Run the CodeUnit.</p>
+
+<p><strong>Note: This should be done for all the Dynamics NAV Version.</strong></p>
 
 <h2 id="configure-the-nav-business-central-application-in-the-agent">Configure the NAV Business Central Application in the Agent</h2>
 
@@ -2827,6 +2893,30 @@ of some of the pre-packaged API actions defined for you which you can easily plu
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -2837,6 +2927,17 @@ of some of the pre-packaged API actions defined for you which you can easily plu
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/generic-nav2016-extension/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Generic NAV 2016 Extension
+                                </a>
+                            </li>
                             
                             
                             
@@ -2888,12 +2989,7 @@ of some of the pre-packaged API actions defined for you which you can easily plu
                             
                             
                             
-                            <li>
-                                <a href="/connectors/adding-employee-bamboohr/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Adding Employee in BambooHR
-                                </a>
-                            </li>
+                            
                             
                             
                             

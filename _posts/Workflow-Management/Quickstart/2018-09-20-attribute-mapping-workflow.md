@@ -11,33 +11,29 @@ menus:
         identifier: quickstartfirstworkflow
 ---
 
-An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed over data after reading this document.
+For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the Transform section of the touchpoint.
+A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with Workflow in APPSeCONNECT.
+Attribute Mapping needs to be implemented before integrating. This document will help the users to implement Attribute Mapping in APPSeCONNECT Workflow.
 
-Please follow the steps written below:
+## Pre-requisites:
+1.	Need to have a valid APPSeCONNECT Account.
+2.	Select the Applications whose workflow is to be implemented.
+3.	Create a workflow or choose a pre-packaged workflow.
 
-1. Log in with valid credentials in the Cloud portal.
-2. Choose any project and navigate to Connections -> Choose a connection -> View The Connection.
+[Click](/workflow/steps-to-choose-your-workflow/) to know more about choosing workflow.
 
-![Attribute-Mapping1](/staticfiles/workflow-management/media/Attribute-Mapping1.png)  
-You can search for a connection from the Search section. Hover the mouse on the connection, click on View the Connection.
-3. A new page will open where you can edit the touch points.  
-![Attribute-Mapping2](/staticfiles/workflow-management/media/Attribute-Mapping2.png)  
-**Protip**Edit mapping will only be applicable for your custom touchpoint i.e. if you add any new touchpoint. Edit link will not be visible for Base touchpoints that get auto-created at the time of connection creation.
-{: .notice--info}
-4. You will see a page like this. Refer to this document.  
-![Attribute-Mapping3](/staticfiles/workflow-management/media/Attribute-Mapping3.png)  
-5. Choose Open Mapping, A pop-up will open.    
-![Attribute-Mapping4](/staticfiles/workflow-management/media/Attribute-Mapping4.jpg)  
-6. In the white box section, you have to write the fields for mapping. You can also click on the entities/attributes to get it on the box.If value mapping is required, check the box below and add some tips.
-Choose the value mapping type. Leaving a comment is optional.  
-7. You can now enable or disable attribute mapping. `Disable Mapping feature` is not available for the primary key.
-You can now Delete Custom attribute along with its mapping.  
-8. `The custom attribute' is the attribute which is defined in project level. You can use the custom attributes only for a particular touchpoint.
-9. You can sort the order of attributes and variables in the mapping page by dragging and dropping the same under its parent only if the mapping for the attribute has been provided.
-10. In case of the complex object or complex object collection type of attributes, a blank mapping is required for its sorting.
-11. Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.  
-12. You can create variable and condition by a pop-up in the attribute mapping section.
-* Source entity and destination entity can be mapped using drag and drop feature. 
-* Destination entity will have drop down containing entity name and app resource and function. 
-* New variables can be added to the (+) icon in the mapping section. 
-* New conditions can be added to the (+) icon in the mapping section.
+# Steps to Implement Attribute Mapping:
+
+1.	Login to the APPSeCONNECT Portal and select the apps from the APPS section, for implementing workflow.
+2.	Navigate to the Workflow Section in the portal and create or choose the workflow for the touchpoint that is to be implemented.
+**Note: The Pre-packaged workflow is selected for the touchpoint Customer ADD from WooCommerce to Priority.**
+3.	Click on the Process Node in the Customer Add Touchpoint, the Mapping Actions appears at the Right-Hand side of the workflow panel.
+**Note: For any touchpoint, clicking on the PROCESS Node of a touchpoint, displays the Mapping Actions in the Workflow Panel**
+4.	There are three Tabs present in the Mapping Actions.
+a.	Mapping: This implements the Attribute Mapping between the attributes.
+b.	Source Entity: This displays all the Source Appresource Functions.
+c.	Destination Entity: This displays all the Destination Appresource Functions.
+5.	For Implementing Attribute Mapping, click on the Mapping Tab. The Transform window opens. Expand the For-Each-Loop Node and Row, until the destination attributes are displayed.
+6.  For Attribute Mapping, click on the Open Button when hovered on an attribute. Implement the mapping, in the Mapping panel and click on the Submit Button.
+7.  For more Details and Information on Attribute Mapping[Click here](/transformation/steps-to-cutomize-prebuilt-mapping/)
+

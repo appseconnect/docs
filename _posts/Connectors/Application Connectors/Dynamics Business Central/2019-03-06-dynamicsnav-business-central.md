@@ -24,6 +24,31 @@ Here you will find the detailed description on how to configure the agents for t
 
 **Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created**
 
+**ProTip:** Before Implementing Integration with MS Dynamics NAV, the NAV Extension is needed to be installed. 
+Click Here to know about the Installation Process.
+{: .notice--info}
+
+## Populating Historical Data in AEC Tables 
+
+After Installing the NAV Extension, the old data are needed to be synced and should be reflected in the AEC Tables. 
+Therefore, these specific CodeUnit functions are needed to be called in the OnRun ().
+
+**CODE UNITS:**
+
+1. AEC Customer Codeunit =  CopyExistingCustomerInAEC();
+   Call this in OnRun() and save and then Run the CodeUnit
+
+2. AEC Item Codeunit  =  CopyExistingItems();
+   Call this in OnRun() and save and then Run the CodeUnit
+
+3. AEC Contact = CopyExistingContactInAEC;
+
+Call this in OnRun() and save and then Run the CodeUnit.
+
+**Note: This should be done for all the Dynamics NAV Version.**
+
+
+
 ## Configure the NAV Business Central Application in the Agent
 
 1. Login to your AEC Agent with your registered account credentials.

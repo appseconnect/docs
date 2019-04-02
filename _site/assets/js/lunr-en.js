@@ -459,7 +459,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Attribute Mapping of workflow",
-      excerpt: "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
+      excerpt: "For every integration between the application, the business logic is required. Mapping triggers the process between the source and the...",
       categories: ["Workflow"],
       tags: ["developers"],
       id: 49
@@ -1278,10 +1278,19 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Handling Dependent data",
-      excerpt: "\n",
+      excerpt: "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 140
+    });
+    
+  
+    idx.add({
+      title: "Handling Incremental data",
+      excerpt: "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 141
     });
     
   
@@ -1290,7 +1299,16 @@ var idx = lunr(function () {
       excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 141
+      id: 142
+    });
+    
+  
+    idx.add({
+      title: "Using Tips & Tricks",
+      excerpt: "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 143
     });
     
   
@@ -1299,7 +1317,7 @@ var idx = lunr(function () {
       excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 142
+      id: 144
     });
     
   
@@ -1308,7 +1326,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 143
+      id: 145
     });
     
   
@@ -1317,7 +1335,7 @@ var idx = lunr(function () {
       excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 144
+      id: 146
     });
     
   
@@ -1326,7 +1344,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 145
+      id: 147
     });
     
   
@@ -1335,7 +1353,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 146
+      id: 148
     });
     
   
@@ -1344,7 +1362,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 147
+      id: 149
     });
     
   
@@ -1353,7 +1371,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 148
+      id: 150
     });
     
   
@@ -1362,7 +1380,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 149
+      id: 151
     });
     
   
@@ -1371,7 +1389,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 150
+      id: 152
     });
     
   
@@ -1380,7 +1398,16 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 151
+      id: 153
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2016 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 154
     });
     
   
@@ -1389,7 +1416,7 @@ var idx = lunr(function () {
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 152
+      id: 155
     });
     
   
@@ -1398,7 +1425,7 @@ var idx = lunr(function () {
       excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 153
+      id: 156
     });
     
   
@@ -1407,7 +1434,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 154
+      id: 157
     });
     
   
@@ -1416,7 +1443,7 @@ var idx = lunr(function () {
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 155
+      id: 158
     });
     
   
@@ -1980,7 +2007,7 @@ var store = [
       {
         "title": "Attribute Mapping of workflow",
         "url": "/workflow/attribute-mapping-workflow/",
-        "excerpt": "An implementer will be able to have a source to destination mapping, such that complex data transformation could be performed...",
+        "excerpt": "For every integration between the application, the business logic is required. Mapping triggers the process between the source and the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2518,7 +2545,7 @@ var store = [
       
       {
         "title": "Priority",
-        "url": "/connectors/priority/",
+        "url": "/connectors/Priority/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
         "teaser":
           
@@ -2529,7 +2556,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/shopify/",
+        "url": "/connectors/Shopify/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
@@ -2562,7 +2589,7 @@ var store = [
       
       {
         "title": "Magento2",
-        "url": "/connectors/magento2/",
+        "url": "/connectors/Magento2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Magento 2, providing...",
         "teaser":
           
@@ -2981,7 +3008,18 @@ var store = [
       {
         "title": "Handling Dependent data",
         "url": "/transformation/handling-dependent-data/",
-        "excerpt": "\n",
+        "excerpt": "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Handling Incremental data",
+        "url": "/transformation/handling-incremental-data/",
+        "excerpt": "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2993,6 +3031,17 @@ var store = [
         "title": "Using library methods/AppResource Function",
         "url": "/transformation/using-library-methods/",
         "excerpt": "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Using Tips & Tricks",
+        "url": "/transformation/using-tips-and-tricks/",
+        "excerpt": "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3103,6 +3152,17 @@ var store = [
         "title": "Generic NAV 2015 Extension",
         "url": "/connectors/generic-nav2015-extension/",
         "excerpt": "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Generic NAV 2016 Extension",
+        "url": "/connectors/generic-nav2016-extension/",
+        "excerpt": "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

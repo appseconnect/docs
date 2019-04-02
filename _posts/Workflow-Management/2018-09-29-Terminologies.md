@@ -24,8 +24,8 @@ As a user, if you want to perform some actions in your Workflow such as sending 
    - ***Email***: Sending Email notification to the user account which is currently logged in to the admin portal.
    - ***Support Ticket***: Raising a support ticket to the cloud automatically.
    - ***Webhook***: Webhook is used for sending some data(information) to an external application apart from the destination application with the help of an URL which would hit directly the web service of that external application.
-   - ***Archive Output***: This option will allow the user to save the processing file at certain state intact in a location at the remote server for future reference.
-
+   - ***Snapshot***: The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the process. 
+   
 ### Filters
 The filter is a special kind of data manipulation node, that uses criteria to produce a subset of data 
   collection from original data. These criteria are written using xpath of the parent file.
