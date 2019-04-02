@@ -22,7 +22,7 @@ Presently we have three type of Connectors:
 
 |Connector Type|Description|
 |---|---------|
-|Application Connector|An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios.|
-|Technology Connector|APPSeCONNECT comes with a number of technology connectors which can connect any data source having standard protocol based communication channel established.|
-|Custom Connector|APPSeCONNECT might require to develop the connectivity from scratch as it might be a scenario in your case where the application does not fall into any of the solutions we provide as pre-packaged. Your application might be having non-standard API endpoint|
+|[Application Connector](/connectors/overview-of-application-connectors/)|An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios.|
+|[Technology Connector](/connectors/Overview-of-technology-connectors/)|APPSeCONNECT comes with a number of technology connectors which can connect any data source having standard protocol based communication channel established.|
+|[Custom Connector](/connectors/overview-of-custom-connectors/)|APPSeCONNECT might require to develop the connectivity from scratch as it might be a scenario in your case where the application does not fall into any of the solutions we provide as pre-packaged. Your application might be having non-standard API endpoint|
 

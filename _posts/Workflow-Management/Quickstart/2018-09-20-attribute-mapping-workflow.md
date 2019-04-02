@@ -20,7 +20,7 @@ Attribute Mapping needs to be implemented before integrating. This document will
 2.	Select the Applications whose workflow is to be implemented.
 3.	Create a workflow or choose a pre-packaged workflow.
 
-[Click](/workflow/steps-to-choose-your-workflow/)to know more about choosing workflow.
+[Click](/workflow/steps-to-choose-your-workflow/) to know more about choosing workflow.
 
 # Steps to Implement Attribute Mapping:
 
