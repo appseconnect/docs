@@ -21,6 +21,3 @@ menus:
    rules can be edited and deleted as per the user requirements by clicking on the rules 
    and the delete button. 
 ![choose-rule4](/staticfiles/rules/media/choose-rule4.png) 
-
-**Protip:** A single rule is applicable for only one projects. 
-{: .notice--info}
