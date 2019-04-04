@@ -13,12 +13,12 @@ menus:
 Here you will get the step by step process to use NAV 2015 Extension as and when required
 in the data integration business scenario.
 
-**ProTip:** Before installation of INS2.04 Extension please keep a backup of the NAV Database.
+**ProTip:** Before installation of INS2.05 Extension please keep a backup of the NAV Database.
 {: .notice--info}
 
-## Installation of INS2.04 Extension for NAV2015
+## Installation of INS2.05 Extension for NAV2015
 
-Installation of INS2.04 has been divided into two tasks as given below:
+Installation of INS2.05 has been divided into two tasks as given below:
 
 **1. Importing of .fob files and web services XML file**
 

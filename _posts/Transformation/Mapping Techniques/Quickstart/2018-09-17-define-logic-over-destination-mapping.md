@@ -33,11 +33,11 @@ The user can add condition and attributes from the drop-down option for which th
 
 **Note: The user can add conditions (Else-If & Else) inside an IF Node similarly as shown in the screen below, except for the FOR-EACH LOOP LEVEL.**
 
-* The above given mapping scenario is explained below 
+*The above mapping scenario is explained below*
 
-The Condition default-address/country-code='US' in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.
+The Condition `default-address/country-code='US'` in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.
 
-The Condition default-address/country-code='IN' in the Else-If node describes that if the Country code in the Default Address is IN, the clause Country_Region_Code = GB is carried out.
+The Condition `default-address/country-code='IN'` in the Else-If node describes that if the Country code in the Default Address is IN, the clause Country_Region_Code = GB is carried out.
 
 And for the Otherwise (ELSE)Node,the given clause will be carried out.
 

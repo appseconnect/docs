@@ -73,7 +73,7 @@ The user can view the successful Tracking of the touchpoint for the connection M
 The user can view the error logs in the RESYNC Bucket of the agent (Cloud and OP), if the touchpoint fails to sync.
 
 ## Frequency of Use
-The user can implement rendering when required for any touchpoint.
+The user can implement tracking when required for any touchpoint.
 
 ## Assumptions 
 Not Applicable

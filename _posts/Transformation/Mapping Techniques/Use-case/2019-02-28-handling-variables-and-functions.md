@@ -32,11 +32,11 @@ Organisation Creation, Connection Creation & Touchpoint Creation
 2.	Select the touchpoint for which the Root Variable is to be created. And click on the Transform Button.
 3.	Click on the Option `ADD VARIABLE` present on the Transform Window.
 ![addvariable1](/staticfiles/Transformation/media/addvariable1.png)
-4.  Input the details Variable Name, Data Type and the Reference Entity.
-![addvariable2](/staticfiles/Transformation/media/addvariable2.png)
+4.  Input the details Variable Name, Data Type and the Reference Entity.               
+![addvariable2](/staticfiles/Transformation/media/addvariable2.png)        
 **Note: In this case Variable Name `ShipmentCode` is used whose Data Type is provided `String`. 
 Also for the `Data Type, Complex Object and Complex Object Collection` providing the XPATH is mandatory**
-5.	Fill the required details & click Save and Close. Now for Mapping the root variable with destination field, follow the [steps of Attribute Mapping](/transformation/understanding-attribute-mapping/)
+5.	Fill the required details & click Save and Close. Now for Mapping the root variable with destination field, follow the [steps of Attribute Mapping](/transformation/steps-to-cutomize-prebuilt-mapping/)
 6.	Select the variable for the `Mapping Variables` list and click on Submit.
 ![addvariable3](/staticfiles/Transformation/media/addvariable3.png)
 7.	Now for implementing the Source Mapping of the created Root Variable, Click on the Open button in the Root Variable section.

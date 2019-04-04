@@ -93,7 +93,7 @@ The steps to import schemas and actions of an application is given below:
 3.  Click on the + sign after adding the application and click on Schema 
     (Here MS Dynamics NAV has been choosen). 
 ![Importing-SchemaAction1](/staticfiles/Transformation/media/Importing-SchemaAction1.png)
-4. On the Schema Window the user can view the schemas present or can also add schemas present for the ADD Schema Option.
+4. On the Schema Window the user can view the list of schemas present or can also add schemas from the `ADD Schema` Option.
 ![Importing-SchemaAction2](/staticfiles/Transformation/media/Importing-SchemaAction2.png)
 5.	The Actions inside a schema can be viewed by clicking on the + sign. 
 ![Importing-SchemaAction3](/staticfiles/Transformation/media/Importing-SchemaAction3.png)

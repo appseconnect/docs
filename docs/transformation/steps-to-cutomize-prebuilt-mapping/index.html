@@ -624,14 +624,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+    <li class="menu-item-" data-url="/connectors/Uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Uniconta/" onclick="selectTab('/connectors/Uniconta/', event);" title="Go to Uniconta">Uniconta</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/zohocrmv2/" onclick="selectTab('/connectors/zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
+    <li class="menu-item-" data-url="/connectors/Zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Zohocrmv2/" onclick="selectTab('/connectors/Zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
         
         
         
@@ -668,8 +668,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One/" onclick="selectTab('/connectors/Sap-Business-One/', event);" title="Go to SAP Business One">SAP Business One</a>
         
     </li>
     
@@ -693,8 +693,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+    <li class="menu-item-" data-url="/connectors/Dynamicsnav-Business-Central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Dynamicsnav-Business-Central/" onclick="selectTab('/connectors/Dynamicsnav-Business-Central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
         
         
         
@@ -724,8 +724,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+    <li class="menu-item-" data-url="/connectors/Sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sage300/" onclick="selectTab('/connectors/Sage300/', event);" title="Go to Sage300">Sage300</a>
         
         
         
@@ -1512,14 +1512,13 @@ execution process of transformation is deployed multiple times.</p>
 <h2 id="implementing-attribute-mapping">Implementing Attribute Mapping</h2>
 
 <p>Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping.     <br />
-<strong>Note:</strong> The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection.<br />
-<strong>Note:</strong> For the demonstration of touchpoint <code class="highlighter-rouge">Invoice Add</code> is used. 
+<strong>Note: The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection. For the demonstration of touchpoint <code class="highlighter-rouge">Invoice Add</code> is used</strong>
 <img src="/staticfiles/Transformation/media/attributemapping.png" alt="attributemapping" /></p>
 <ol>
   <li>Click on the Transform button on the touchpoint which you have selected.</li>
   <li>Expand the transformation node for viewing the <code class="highlighter-rouge">Touchpoint Object, Complex Object collections, the Complex Object and the Attributes</code>.
 <img src="/staticfiles/Transformation/media/attributemapping1.png" alt="attributemapping1" /></li>
-  <li>Expanding the <code class="highlighter-rouge">For-each loop</code> the user gets the view of the node oInvoices. <code class="highlighter-rouge">oInvoices</code> is a touchpoint object 
+  <li>Expanding the <code class="highlighter-rouge">For-each loop</code> the user gets the view of the node oInvoices. <code class="highlighter-rouge">oInvoices</code> is a schema
   that is used to send data to the target application. The <code class="highlighter-rouge">For-Each Loop</code> is set relatively rather than writing the transformation logic multiple times and
   this undergoes execution whenever the touchpoint is synced in the For-Each Loop Node.<br />
 <img src="/staticfiles/Transformation/media/attributemapping2.png" alt="attributemapping2" /></li>
@@ -1529,16 +1528,14 @@ it belongs to. Each of these attributes will contain different information about
   <li>The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting.</li>
 </ol>
 
-<p><strong>Note:</strong> Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.</p>
-
-<p><strong>Note:</strong> For different touchpoints, the object is different. For the touchpoint Sales Order Add,
-the object is oOrders for Simple Product Add it is oItems and so on.
+<p><strong>Note: Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
+          For different touchpoints, the object is different. For the touchpoint Sales Order Add, the object is oOrders for Simple Product Add it is oItems and so on</strong>
 <img src="/staticfiles/Transformation/media/attributemapping3.png" alt="attributemapping3" /></p>
 
 <p class="notice--info"><strong>Protip:</strong> Document_Lines will contain the details of the Product in terms of Quantity and Unit Price etc., 
 DocumentsAdditionalExpenses contains the Freight, Tax information etc. of the product.</p>
 
-<p><strong>Note:</strong> Different objects in different touchpoints will have different attributes. 
+<p>Each object in different touchpoints will have different attributes. 
 Expanding the <strong>row</strong> displays the destination attributes in the touchpoint level.
 All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.
 <img src="/staticfiles/Transformation/media/attributemapping4.png" alt="attributemapping4" />

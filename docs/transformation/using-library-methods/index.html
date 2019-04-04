@@ -624,14 +624,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+    <li class="menu-item-" data-url="/connectors/Uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Uniconta/" onclick="selectTab('/connectors/Uniconta/', event);" title="Go to Uniconta">Uniconta</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/zohocrmv2/" onclick="selectTab('/connectors/zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
+    <li class="menu-item-" data-url="/connectors/Zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Zohocrmv2/" onclick="selectTab('/connectors/Zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
         
         
         
@@ -668,8 +668,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One/" onclick="selectTab('/connectors/Sap-Business-One/', event);" title="Go to SAP Business One">SAP Business One</a>
         
     </li>
     
@@ -693,8 +693,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+    <li class="menu-item-" data-url="/connectors/Dynamicsnav-Business-Central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Dynamicsnav-Business-Central/" onclick="selectTab('/connectors/Dynamicsnav-Business-Central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
         
         
         
@@ -724,8 +724,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+    <li class="menu-item-" data-url="/connectors/Sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sage300/" onclick="selectTab('/connectors/Sage300/', event);" title="Go to Sage300">Sage300</a>
         
         
         
@@ -1499,14 +1499,11 @@ Application. <code class="highlighter-rouge">AppResources are library functions 
 
 <ol>
   <li><strong>Native AppResources:</strong> - These Appresource are written with the adapter itself. When the Adapter is uploaded in the cloud, 
-these appresource function are uploaded with the adapter itself.<br />
-a.	Sourcelib AppResources - The appresource functions of the source application is the Sourcelib appresources. 
+these appresource function are uploaded with the adapter itself.</li>
+  <li><strong>Sourcelib AppResources</strong> - The appresource functions of the source application is the Sourcelib appresources. 
 These functions are referred by *sourcelib.**</li>
-</ol>
-
-<p>b.	Destinationlib Appresources – The appresource function of the destination application is the Destination Appresources. 
-    These functions are referred by *destinationlib.**</p>
-<ol>
+  <li><strong>Destinationlib Appresources</strong> – The appresource function of the destination application is the Destination Appresources. 
+These functions are referred by *destinationlib.**</li>
   <li><strong>Generic AppResources:</strong> - The generic appresources are the functions that have general defined task which are provided 
 by APPSeCONNECT itself. These functions are referred by *genericlib.**</li>
   <li><strong>Cloud Appresources:</strong> The Cloud Appresources are the functions that are used when creating a touchpoint for a technology or custom app. 
@@ -1527,17 +1524,11 @@ All the Library Function for that Application can be viewed.</p>
 
 <ol>
   <li>Login to the APPSeCONNECT Portal and Navigate to the Touchpoint area for the connection which is required for the 
-Transformation Process.</li>
-</ol>
-
-<p><strong>Note:  Here the connection used is Magento2 – SAP Business One.</strong></p>
-<ol>
+Transformation Process.<br />
+<strong>Note:  Here the connection used is Magento2 – SAP Business One.</strong></li>
   <li>Click <strong>transform button</strong> in the touchpoint for which the transformation is to be done. 
-<a href="/transformation/understanding-attribute-mapping/">Click</a> to know more about the Mapping attribute mapping.</li>
-</ol>
-
-<p><strong>Note: Here the Touchpoint used is Delivery Update Response.</strong></p>
-<ol>
+<a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Click</a> to know more about the Mapping attribute mapping.<br />
+<strong>Note: Here the Touchpoint used is Delivery Update Response.</strong></li>
   <li>In the Mapping window of the attribute, expand the node Functions to view all the categories of the Appresources 
 [Generic, Source, Destination and the Cloud].<br />
 <img src="/staticfiles/Transformation/media/app_resourcemapping1.png" alt="app_resourcemapping1" /></li>
@@ -1579,6 +1570,7 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
       <th>Function Name</th>
       <th>Description</th>
       <th>Example</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -1586,9 +1578,10 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
       <td>Salesforce</td>
       <td>25</td>
       <td>2207</td>
-      <td>GetContactPersons(AccountId)</td>
+      <td>GetContactPersons (AccountId)</td>
       <td>Get contact persons associated with an account id from Salesforce</td>
       <td>NULL</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Salesforce</td>
@@ -1597,30 +1590,34 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
       <td>GetAccountAdderesses(AccountId)</td>
       <td>Get billTo and ShipTo addresses associated with an account id from Salesforce</td>
       <td>NULL</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Microsoft Dynamics NAV</td>
       <td>≥ 2009R2 Generic</td>
       <td>2214</td>
-      <td>GetStringValueFromCollection (pageService,collectionrootname,field1,value1,field2,value2,readfieldname,separatorbetweenstring,xnamespace)</td>
-      <td>Using this function we can get string values with separator from collection of fields</td>
-      <td>GetStringValueFromCollection(‘/Page/CommentList’, ‘CommentList’,’Table_Name’,’Item’, ‘No’,$itemNo,’Comment’,’new line’,’urn:microsoft-dynamics-schemas/page/commentlist’)</td>
+      <td>GetStringValueFromCollection (pageService, collectionrootname, field1, value1, field2, value2, readfieldname, separatorbetweenstring, xnamespace)</td>
+      <td>Using this function we can get string values with separator</td>
+      <td>from collection of fields</td>
+      <td>GetStringValueFromCollection (‘/Page/CommentList’, ‘CommentList’,’Table_Name’,’Item’, ‘No’, $itemNo,’Comment’,’new line’,’urn:microsoft-dynamics-schemas/page/commentlist’)</td>
     </tr>
     <tr>
       <td>Microsoft Dynamics NAV</td>
       <td>≥ 2009R2 Generic</td>
       <td>2215</td>
-      <td>SetProductAndAdditionalAttribute(elementCollection,rootElement,uniqueChild,readoptionidfieldname,splitchar,stringkeys,stringvalues,nameSpace)</td>
+      <td>SetProductAndAdditionalAttribute (elementCollection, rootElement, uniqueChild, readoptionidfieldname, splitchar, stringkeys, stringvalues, nameSpace)</td>
       <td>Using this function, we can set a collection of Product Attribute and Additional attribute</td>
-      <td>SetProductAndAdditionalAttribute($allAttribute,’Web_ProductAttribute_Page’,’AttributeName’,’AttributeOptionId’,’~’,concat(‘msrp’,’~’,’meta_title’),concat(‘1’,’~’,’magentometa title’),’urn:microsoft-dynamics-schemas/page/itemcard’)</td>
+      <td>SetProductAndAdditionalAttribute ($allAttribute, ‘Web_ProductAttribute_Page’,’AttributeName’,’AttributeOptionId’,’~’,concat (‘msrp’,’~’,’meta_title’), concat(‘1’,’~’,’magentometa title’),’urn:microsoft-dynamics-schemas/page/itemcard’)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Microsoft Dynamics NAV</td>
       <td>≥ 2009R2 Generic</td>
       <td>2216</td>
-      <td>GetNavValue(pageService,field1,value1,field2,value2,field3,value3,returnField)</td>
+      <td>GetNavValue (pageService, field1, value1, field2, value2, field3, value3, returnField)</td>
       <td>Using this function we can get a field value of a Page</td>
       <td>GetNavValue(‘/Page/webapplicationcustomerdata’,’ApplicationId’,’1’,’CustomerNo’,$customerNo,’’,’’,’WebCustomerId’)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>SAP B1</td>
@@ -1629,6 +1626,7 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
       <td>UpdateUserTableQurey(string tablename, string setfieldname, string setfieldvalue, string condfieldname, string condfieldvalue, string condfieldname2, string condfieldvalue2)</td>
       <td>You can Update SAP B1 User Table Function</td>
       <td>UpdateUserTableQurey(‘AECTRANDATA’, ‘U_SyncFlag’ ,’Y’, ‘U_KeyValue’, ‘Item001’, ‘U_ObjectCode’, ‘4’)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>SAP B1</td>
@@ -1636,47 +1634,62 @@ or requirements by following APPSeCONNECT’s own syntax functions.</p>
       <td>2229</td>
       <td>SetCustomerAddressItems(XPathNavigator addressitem, string cardCode)</td>
       <td>This function will return unique Address collection from Magento addresses and SAP B1 Addresses</td>
-      <td>SetCustomerAddressItems(MagentoAddressItems,SAPB1CardCode)</td>
+      <td>SetCustomerAddressItems (MagentoAddressItems, SAPB1CardCode)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Shopify</td>
       <td>1.0.0.0</td>
       <td>2230</td>
-      <td>CheckShipment(stringorderid,stringisShippingExist)</td>
+      <td>CheckShipment (stringorderid, stringisShippingExist)</td>
       <td>This function is used for checking if an invoice/delivery is created for the order during partial invoice download</td>
       <td>CheckShipment(‘10000001’, 1)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Shopify</td>
       <td>1.0.0.0</td>
       <td>2231</td>
-      <td>GetShippingTotal(decimaltotalPrice,decimaltotalTax,decimalitemsWithoutTax,stringshippingTotal)</td>
+      <td>GetShippingTotal (decimaltotalPrice, decimaltotalTax, decimalitemsWithoutTax, stringshippingTotal)</td>
       <td>This funtion is used for calculating total shipping price of an order</td>
-      <td>GetShippingTotal(totalPrice, totalTax,itemsWithoutTax,shippingTotal)</td>
+      <td>GetShippingTotal(totalPrice, totalTax, itemsWithoutTax, shippingTotal)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>SAP B1</td>
       <td>SAP B1 S/L 9.0</td>
       <td>2245</td>
-      <td>getData(stringserviceName,stringactionParam,stringmethodName,boolvalue)</td>
+      <td>getData (stringserviceName, stringactionParam, stringmethodName, boolvalue)</td>
       <td>This function is used for getting data from SAP based on the action parameters passes</td>
-      <td>getData(serviceName, actionParam, methodName, value)</td>
+      <td>getData (serviceName, actionParam, methodName, value)</td>
+      <td> </td>
     </tr>
     <tr>
       <td>SAP B1</td>
       <td>SAP B1 S/L 9.0</td>
       <td>2246</td>
-      <td>getData(stringserviceName,stringactionParam,stringmethodName)</td>
-      <td>This function is used to get data from SAP B1 based on the action parameter passed</td>
-      <td>getData(serviceName, actionParam, methodName)</td>
+      <td>getData (stringserviceName, stringactionParam, stringmethodName)</td>
+      <td>This function is used to get data from SAP B1 based on the</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>action parameter passed</td>
+      <td>getData (serviceName, actionParam, methodName)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>SAP B1</td>
       <td>SAP B1 S/L 9.0</td>
       <td>2253</td>
-      <td>ImageToString(stringimgpath)</td>
+      <td>ImageToString (stringimgpath)</td>
       <td>Converts Image information at the path specified to base64 string</td>
-      <td>ImageToString(imgpath)</td>
+      <td>ImageToString (imgpath)</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>

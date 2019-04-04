@@ -31,15 +31,15 @@ customizations might be needed for the organizations to support custom implement
 
 |Application|Application Type|Description|Versions|
 |---|--|------|-----|
-|[Magento]|eCommerce|Magento is an ecommerce solution in Community or Enterprise variant which is supported by APPSeCONNECT platform| v1.0, v2.0|
-|Shopify|eCommerce|Shopify is a cloud based eCommerce solution which provides two variant, Shopify and Shopify Plus, both supported as pre-packaged solution in APPSeCONNECT|v1.0|
-|Priority|ERP|Priority is the first application in the ERP arena to support a single integrated solution for all your operational needs, supported as pre-packaged solution in APPSeCONNECT|v1.0|
-|Sage|ERP|Sage 300 is a cloud based ERP system which has only one version which comes as a pre-packaged application with APPSeCONNECT|SAGE300 2018|
-|WooCommerce|eCommerce|WooCommerce is an E-Commerce Platform which supports two versions of it, as it is one of the pre-packaged application of APPSeCONNECT. |v1.0|
-|Uniconta|ERP|Uniconta is a cloud based ERP System that comes a pre-packaged application with APPSeCONNECT|v1.0|
-|SAP Business One|ERP|SAP Business One is an ERP System which is supported by the APPSeCONNECT|>=v8.8 & SAP B1 S/L 9.0|
-|Bamboo HR|ERP|BambooHR is a cloud based Human Resource Platform which is one of the pre-packaged application of APPSeCONNECT|v1.0|
-|ZohoCRM|CRM|This is a cloud based CRM Application which is supported by APPSeCONNECT|v1.0 & v2.0|
-|MS Dynamics Business Central|ERP|This is an ERP System which comes as a pre-packaged application with APPSeCONNECT|≥ v2009R2 Generic|
+|[Magento](/connectors/Magento2/)|eCommerce|Magento is an ecommerce solution in Community or Enterprise variant which is supported by APPSeCONNECT platform| v1.0, v2.0|
+|[Shopify](/connectors/Shopify/)|eCommerce|Shopify is a cloud based eCommerce solution which provides two variant, Shopify and Shopify Plus, both supported as pre-packaged solution in APPSeCONNECT|v1.0|
+|[Priority](/connectors/Priority/)|ERP|Priority is the first application in the ERP arena to support a single integrated solution for all your operational needs, supported as pre-packaged solution in APPSeCONNECT|v1.0|
+|[Sage](/connectors/sage300/)|ERP|Sage 300 is a cloud based ERP system which has only one version which comes as a pre-packaged application with APPSeCONNECT|SAGE300 2018|
+|[WooCommerce](/connectors/woocommerce/)|eCommerce|WooCommerce is an E-Commerce Platform which supports two versions of it, as it is one of the pre-packaged application of APPSeCONNECT. |v1.0|
+|[Uniconta](/connectors/uniconta/)|ERP|Uniconta is a cloud based ERP System that comes a pre-packaged application with APPSeCONNECT|v1.0|
+|[SAP Business One](/connectors/sap-business-one/)|ERP|SAP Business One is an ERP System which is supported by the APPSeCONNECT|>=v8.8 & SAP B1 S/L 9.0|
+|[Bamboo HR](/connectors/bamboohr/)|ERP|BambooHR is a cloud based Human Resource Platform which is one of the pre-packaged application of APPSeCONNECT|v1.0|
+|[ZohoCRM](/connectors/zohocrmv2/)|CRM|This is a cloud based CRM Application which is supported by APPSeCONNECT|v1.0 & v2.0|
+|[MS Dynamics Business Central](/connectors/dynamicsnav-business-central/)|ERP|This is an ERP System which comes as a pre-packaged application with APPSeCONNECT|≥ v2009R2 Generic|
 
 You can choose as many of the pre-packaged solution on the platform to connect between one another. 

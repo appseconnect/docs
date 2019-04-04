@@ -110,12 +110,7 @@ The newly created app, can be viewed in the app listing section.
   * In case of  Upload Adapter, you must give File Name, File Title, Assembly Version and upload Adapter.
   
 **Protip**  App Name will take up to 30 characters and will not allow special character except underscore(_)and dot(.)  
-{: .notice--info}
-
-**ProTip:** The Adapter needs to be in Zip Format else will show an Error message. Selection of the adapter is restricted to only one 
-{: .notice--info}
-
-**ProTip:** The user can edit & delete the custom app & technology app  
+The Adapter needs to be in Zip Format else will show an Error message. Selection of the adapter is restricted to only one  The user can edit & delete the custom app & technology app  
 {: .notice--info}
 
 ### (b) Technology App Creation
@@ -275,7 +270,7 @@ On the Touchpoints page, there will be a Reverse button (only if applicable, for
 On clicking the Publish button, all the Touchpoints will be published under the connection. Once a connection has been published, only the Republish button will appear instead of Publish button
 {: .notice--warning}
 
-`Value Mapping` is an important function under touchpoint selection. 
+`Lookup Mapping` is an important function under touchpoint selection. 
 Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during [transformation](/transformation/overview/).
 Details of Value Mapping will come in subsequent section of the document.
 

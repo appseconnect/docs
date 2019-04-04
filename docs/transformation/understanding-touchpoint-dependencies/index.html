@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.Touchpoints are needed to be triggered in an order as each touchpoint’s serves each purpose.">
+<meta name="description" content="Use Case Name">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.Touchpoints are needed to be triggered in an order as each touchpoint’s serves each purpose.">
+  <meta property="og:description" content="Use Case Name">
 
 
 
@@ -624,14 +624,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+    <li class="menu-item-" data-url="/connectors/Uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Uniconta/" onclick="selectTab('/connectors/Uniconta/', event);" title="Go to Uniconta">Uniconta</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/zohocrmv2/" onclick="selectTab('/connectors/zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
+    <li class="menu-item-" data-url="/connectors/Zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Zohocrmv2/" onclick="selectTab('/connectors/Zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
         
         
         
@@ -668,8 +668,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One/" onclick="selectTab('/connectors/Sap-Business-One/', event);" title="Go to SAP Business One">SAP Business One</a>
         
     </li>
     
@@ -693,8 +693,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+    <li class="menu-item-" data-url="/connectors/Dynamicsnav-Business-Central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Dynamicsnav-Business-Central/" onclick="selectTab('/connectors/Dynamicsnav-Business-Central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
         
         
         
@@ -724,8 +724,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+    <li class="menu-item-" data-url="/connectors/Sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sage300/" onclick="selectTab('/connectors/Sage300/', event);" title="Go to Sage300">Sage300</a>
         
         
         
@@ -1402,7 +1402,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Understanding Touchpoint Dependencies">
-        <meta itemprop="description" content="Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.Touchpoints are needed to be triggered in an order as each touchpoint’s serves each purpose.">
+        <meta itemprop="description" content="Use Case Name">
         <meta itemprop="datePublished" content="February 27, 2019">
         
 
@@ -1484,24 +1484,40 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
+  <li><a href="#use-case-name">Use Case Name</a></li>
+  <li><a href="#brief-description">Brief Description</a></li>
+  <li><a href="#actors">Actors</a></li>
+  <li><a href="#preconditions">Preconditions</a></li>
   <li><a href="#touchpoint-dependencies">Touchpoint Dependencies</a></li>
-  <li><a href="#implementing-the-touchpoint-dependency">Implementing the Touchpoint Dependency</a>
-    <ul>
-      <li><a href="#prerequisites">Prerequisites</a></li>
-      <li><a href="#steps-to-implement-dependency">Steps to implement Dependency</a></li>
-    </ul>
-  </li>
+  <li><a href="#prerequisite">Prerequisite</a></li>
+  <li><a href="#basic-flow">Basic Flow</a></li>
+  <li><a href="#post-conditions">Post-Conditions</a></li>
+  <li><a href="#exception-courses">Exception Courses</a></li>
+  <li><a href="#frequency-of-use">Frequency of Use</a></li>
+  <li><a href="#assumptions">Assumptions</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.
+                <h2 id="use-case-name">Use Case Name</h2>
+
+<p>Touchpoint Dependency</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p>Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.
 Touchpoints are needed to be triggered in an order as each touchpoint’s serves each purpose.</p>
 
 <p>For Instance: Before triggering the touchpoint <code class="highlighter-rouge">INVOICE ADD, the touchpoint ORDER ADD</code> is needed to be triggered before and before triggering 
 order add, <code class="highlighter-rouge">CUSTOMER ADD or BUSINESS PARTNER ADD</code> is needed to be triggered.</p>
 
 <p>This is done to remove discrepancy with the customer records. So this raises a dependency factor among each of the touchpoint.</p>
+
+<h2 id="actors">Actors</h2>
+<p>Implementers, Developers, Partners.</p>
+
+<h2 id="preconditions">Preconditions</h2>
+<p>Organisation Creation &amp; Connection Creation.</p>
 
 <h2 id="touchpoint-dependencies">Touchpoint Dependencies</h2>
 
@@ -1532,9 +1548,7 @@ as the input of the related touchpoint. For e.g. order increment id of sales ord
 <p>For Eg: In case of the Order <code class="highlighter-rouge">add touchpoint</code> and the Guest<code class="highlighter-rouge"> Customer Add touchpoint</code>, the data fetched from the source of the primary touchpoint 
 (in this case, Order Add) acts as the source data for the related touchpoint, letting both the task to work without any discrepancy.</p>
 
-<h2 id="implementing-the-touchpoint-dependency">Implementing the Touchpoint Dependency</h2>
-
-<h3 id="prerequisites">Prerequisites</h3>
+<h2 id="prerequisite">Prerequisite</h2>
 
 <ol>
   <li>Need to have a valid APPSeCONNECT Account.</li>
@@ -1543,7 +1557,7 @@ as the input of the related touchpoint. For e.g. order increment id of sales ord
   <li>Make sure the touchpoints are active, before setting up the dependency.</li>
 </ol>
 
-<h3 id="steps-to-implement-dependency">Steps to implement Dependency</h3>
+<h2 id="basic-flow">Basic Flow</h2>
 
 <ol>
   <li>Login to the APPSeCONNECT portal and Navigate to the touchpoints page.</li>
@@ -1560,6 +1574,18 @@ Click on the dependency icon in the touchpoint.
   <li>Similarly other touchpoints can also have dependencies and in the similarly way the setup is to be done for 
 any other dependency task required.</li>
 </ol>
+
+<h2 id="post-conditions">Post-Conditions</h2>
+<p>The user can view the successful sync of the touchpoint Invoice Add as in this case.</p>
+
+<h2 id="exception-courses">Exception Courses</h2>
+<p>The user can view the error logs in the RESYNC Bucket of the agent (Cloud and OP), if the touchpoint fails to sync for any cases.</p>
+
+<h2 id="frequency-of-use">Frequency of Use</h2>
+<p>The user can sync the touchpoint whenever required.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+<p>Not Applicable</p>
 
                 
             </section>

@@ -94,7 +94,7 @@ The user can view the error logs in the RESYNC Bucket of the agent (Cloud and OP
 Click Here to know more (Mapping trouble shooting link).
 
 ## Frequency of Use
-The user can implement rendering when required for any touchpoint.
+The user can implement lookup mapping when required for any connection/touchpoint. [Cliok here](http://127.0.0.1:4000/transformation/troubleshooting/#troubleshooting-process-for-scenario-3) for lookup related troubleshooting.
 
 ## Assumptions
 Not Applicable
