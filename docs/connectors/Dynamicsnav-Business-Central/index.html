@@ -19,12 +19,12 @@
 
 
 
-<title>Overview of Workflows - APPSeCONNECT Product Docs</title>
+<title>Dynamics NAV Business Central - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Workflow is group of instructions to the integration service in APPSeCONNECT.">
+<meta name="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business Central, providing the credentials is essential for configuring the agent.Here you will find the detailed description on how to configure the agents for the application of Microsoft Dynamics Business Central, the Integration Techniques and the Troubleshooting issues.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Overview of Workflows">
+<meta property="og:title" content="Dynamics NAV Business Central">
 
 
-  <link rel="canonical" href="http://localhost:4000/workflow/overview/">
-  <meta property="og:url" content="http://localhost:4000/workflow/overview/">
+  <link rel="canonical" href="http://localhost:4000/connectors/Dynamicsnav-Business-Central/">
+  <meta property="og:url" content="http://localhost:4000/connectors/Dynamicsnav-Business-Central/">
 
 
 
-  <meta property="og:description" content="Workflow is group of instructions to the integration service in APPSeCONNECT.">
+  <meta property="og:description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business Central, providing the credentials is essential for configuring the agent.Here you will find the detailed description on how to configure the agents for the application of Microsoft Dynamics Business Central, the Integration Techniques and the Troubleshooting issues.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-09-17T00:00:00+05:30">
+  <meta property="article:published_time" content="2019-03-06T00:00:00+05:30">
 
 
 
@@ -166,7 +166,7 @@
     
       
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+        <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <span class="sep">/</span>
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Overview of Workflows</li>
+      <li class="current">Dynamics NAV Business Central</li>
     
   
 </ol>-->
@@ -1401,9 +1401,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Overview of Workflows">
-        <meta itemprop="description" content="Workflow is group of instructions to the integration service in APPSeCONNECT.">
-        <meta itemprop="datePublished" content="September 17, 2018">
+        <meta itemprop="headline" content="Dynamics NAV Business Central">
+        <meta itemprop="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business Central, providing the credentials is essential for configuring the agent.Here you will find the detailed description on how to configure the agents for the application of Microsoft Dynamics Business Central, the Integration Techniques and the Troubleshooting issues.">
+        <meta itemprop="datePublished" content="March 06, 2019">
         
 
 
@@ -1422,7 +1422,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+                    <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
                 <li class="sep">/</li>
@@ -1430,7 +1430,7 @@
                 
                 
                 
-                <li class="current">Overview of Workflows</li>
+                <li class="current">Dynamics NAV Business Central</li>
                 
                 
             </ol>
@@ -1440,7 +1440,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Overview of Workflows
+                <h1 class="page__title" itemprop="headline">Dynamics NAV Business Central
 </h1>
                 
                 
@@ -1463,7 +1463,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-06T00:00:00+05:30">March 06, 2019</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1484,137 +1484,134 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#benefits-of-using-workflow">Benefits of Using Workflow</a></li>
-  <li><a href="#elementsnodes-of-workflow">Elements/Nodes of Workflow</a></li>
-  <li><a href="#actions-of-workflow">Actions of Workflow</a></li>
-  <li><a href="#process-property-of-workflow">Process Property of Workflow</a></li>
-  <li><a href="#templates-of-workflow">Templates of Workflow</a>
-    <ul>
-      <li><a href="#working-with-workflow-in-appseconnect">Working with Workflow in APPSeCONNECT</a></li>
-      <li><a href="#search-functions-of-workflow">Search functions of Workflow</a></li>
-    </ul>
-  </li>
+  <li><a href="#prerequisites-for-nav-business-central-configuration">Prerequisites for NAV Business Central Configuration</a></li>
+  <li><a href="#populating-historical-data-in-aec-tables">Populating Historical Data in AEC Tables</a></li>
+  <li><a href="#configure-the-nav-business-central-application-in-the-agent">Configure the NAV Business Central Application in the Agent</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Workflow is group of instructions to the integration service in APPSeCONNECT.</p>
+                <p>Application configuration is an integral activity prior to the process of integration. If your chosen application is <code class="highlighter-rouge">Microsoft Dynamics Business Central</code>, providing the credentials is essential for configuring the agent.
+Here you will find the detailed description on how to configure the agents for the application of Microsoft Dynamics Business Central, the Integration Techniques and the Troubleshooting issues.</p>
 
-<p>APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is  a concept that describes how process in business divides work activities into distinct <em>roles, task, procedures and rules</em>.</p>
+<p><strong>Note: For Integrating with Microsoft Dynamics Business Central, the application Microsoft Dynamics NAV (≥ 2009R2 Generic) is needed to be selected in AEC Portal</strong></p>
 
-<p>The Workflow feature helps user to graphically organize, create and view the data flow of a process.The customers with the aid of workflow can now design integration anytime and anywhere with the help of cloud portal.</p>
-
-<p>Workflow enables to execute the orchestrated pattern of business activity with efficiency and optimality.</p>
-
-<h2 id="benefits-of-using-workflow">Benefits of Using Workflow</h2>
+<h2 id="prerequisites-for-nav-business-central-configuration">Prerequisites for NAV Business Central Configuration</h2>
 
 <ol>
-  <li>Visibilty &amp; Status Check of Business Scenario</li>
-  <li>Eliminates Manual work &amp; reduces human error</li>
-  <li>Enables quick decision making &amp; Learn from inefficiencies</li>
-  <li>Maintain &amp; Improve Quality</li>
-  <li>Modifying Step Order</li>
-  <li>Real time Reports</li>
+  <li>Select the application Microsoft Dynamics NAV (≥ 2009R2 Generic) in the APPS section of the APPSeCONNECT Portal.</li>
+  <li>Create and publish a connection in the cloud portal.</li>
+  <li>Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent. To Know about Agent Configuration, <a href="/deployment/Deployment-Configuration/">Click here</a></li>
 </ol>
 
-<h2 id="elementsnodes-of-workflow">Elements/Nodes of Workflow</h2>
+<p><strong>Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created</strong></p>
 
-<p>Given below is the list of elements you will use in workflow. Under Elements, all the elements such as GET, PROCESS, POST, etc will be listed<br />
-<img src="/staticfiles/workflow-management/media/ElementNode.png" alt="Element Node" /></p>
+<p class="notice--info"><strong>ProTip:</strong> Before Implementing Integration with MS Dynamics NAV, the NAV Extension is needed to be installed. 
+Click Here to know about the Installation Process.</p>
 
-<p>Elements of workflow:</p>
+<h2 id="populating-historical-data-in-aec-tables">Populating Historical Data in AEC Tables</h2>
 
-<ul>
-  <li><a href="/workflow/working-with-get/">Get</a></li>
-  <li><a href="/workflow/working-with-process/">Process</a></li>
-  <li><a href="/workflow/working-with-post/">Post</a></li>
-  <li><a href="/workflow/working-with-halt-resume/">Halt-Resume</a></li>
-  <li><a href="/workflow/working-with-delay/">Delay</a></li>
-</ul>
+<p>After Installing the NAV Extension, the old data are needed to be synced and should be reflected in the AEC Tables. 
+Therefore, these specific CodeUnit functions are needed to be called in the OnRun ().</p>
 
-<h2 id="actions-of-workflow">Actions of Workflow</h2>
-
-<p>Actions are used in Workflow to perform some operation with the data apart, from transferring them from source to destination. These Actions can include sending an email or raising an automated support ticket if Workflow encounters any execution failure etc. To achieve this in our admin Workflow panel you would see a separate section named Action.
-Currently APPSeCONNECT supports the following actions:</p>
-
-<ul>
-  <li><a href="/workflow/generating-notification-emails/">Email</a></li>
-  <li><a href="/workflow/generating-notification-support-ticket/">Ticket</a></li>
-  <li><a href="/workflow/generating-notification-webhooks/">Webhook</a></li>
-  <li><a href="/workflow/generating-storage-action/">Storage</a></li>
-</ul>
-
-<p class="notice--info"><strong>Protip</strong> These Actions can also have RULE as Parent and no child from action node will be allowed as these Actions are leaf nodes</p>
-
-<h2 id="process-property-of-workflow">Process Property of Workflow</h2>
-
-<ul>
-  <li><a href="/workflow/working-with-splitter/">Split</a></li>
-  <li><a href="/workflow/working-with-merger/">Merger</a></li>
-  <li><a href="/workflow/working-with-filter/">Filter</a></li>
-  <li><a href="/workflow/working-with-rule/">Rule</a></li>
-  <li><a href="/workflow/working-with-sequencer/">Sequencer</a></li>
-  <li><a href="">Touchpoint</a></li>
-</ul>
-
-<h2 id="templates-of-workflow">Templates of Workflow</h2>
-
-<ul>
-  <li>General Touchpoint</li>
-  <li>Post Touchpoint</li>
-  <li>Get Merge Touchpoint</li>
-  <li>Push Merge Touchpoint</li>
-  <li>Get Splitted Touchpoint</li>
-  <li>Push Splitted Touchpoint</li>
-</ul>
-
-<h3 id="working-with-workflow-in-appseconnect">Working with Workflow in APPSeCONNECT</h3>
-
-<p>APPSeCONNECT Workflows are the diagrammatic representations of a business process.</p>
-
-<p>Organizations use workflows to <code class="highlighter-rouge">coordinate tasks and synchronize data between systems,</code> with the ultimate goal of improving organizational efficiency, responsiveness and ease of use.</p>
-
-<p>The workflow management screen will allow to search, filter, create and edit workflows.</p>
-
-<p>An implementer can ensure that all the projects are listed on a single page showing its various status and allowing to change status by reading this document.</p>
+<p><strong>CODE UNITS:</strong></p>
 
 <ol>
-  <li>Log in to the APPSeCONNECT Portal</li>
-  <li>Now choose a <code class="highlighter-rouge">Project -&gt; Workflows</code> section under Account and a new page will open.
-  <img src="/staticfiles/workflow-management/media/Workflow.png" alt="Workflow" /></li>
-  <li>If you are a new user and no previous workflow is created or activated, this screen with the following message will appear.
-<img src="/staticfiles/workflow-management/media/NoWorkflow.png" alt="NoWorkflow" /></li>
-  <li>If you are an existing user who have used Workflows, the following screen will appear
-<img src="/staticfiles/workflow-management/media/Workflow_Landing.png" alt="Workflow_Landing" /></li>
-  <li>You can view maximum of 6 workflow designed in a workflow page, rest workflows can be scrolled through navigation pages.</li>
-  <li>APPSeCONNECT has two category of Workflows: <br />
- <strong>Project Specific Workflow/Organization Workflow</strong> -  This type of Workflow have two button <code class="highlighter-rouge">Edit</code> &amp; <code class="highlighter-rouge">Delete</code>and you have to activate it.  <br />
- <strong>Pre-Packaged Workflow/Base Workflow</strong> - This type of workflow has initially one button. Once you activate it, you will see that Workflow contains two buttons, one for Edit, another for Delete.</li>
-  <li>Every workflow has one switch, this will either take the  workflow to <code class="highlighter-rouge">Active state</code> or will go to <code class="highlighter-rouge">Inactive state</code>. If it’s in Inactive state, that workflow will not work on Agent’s App.<br />
- <img src="/staticfiles/workflow-management/media/Workflow_dialog.png" alt="Workflow_dialog" /></li>
+  <li>
+    <p>AEC Customer Codeunit =  CopyExistingCustomerInAEC();
+Call this in OnRun() and save and then Run the CodeUnit</p>
+  </li>
+  <li>
+    <p>AEC Item Codeunit  =  CopyExistingItems();
+Call this in OnRun() and save and then Run the CodeUnit</p>
+  </li>
+  <li>
+    <p>AEC Contact = CopyExistingContactInAEC;</p>
+  </li>
 </ol>
 
-<p>You will get <code class="highlighter-rouge">SEARCH</code> panel in the top of the workflow page.
- <img src="/staticfiles/workflow-management/media/Search_Workflow.png" alt="Search_Workflow" /></p>
+<p>Call this in OnRun() and save and then Run the CodeUnit.</p>
 
-<p class="notice--info"><strong>Protip</strong> Choose Project only, if you have multiple projects, else directly you are into your project.</p>
+<p><strong>Note: This should be done for all the Dynamics NAV Version.</strong></p>
 
-<h3 id="search-functions-of-workflow">Search functions of Workflow</h3>
+<h2 id="configure-the-nav-business-central-application-in-the-agent">Configure the NAV Business Central Application in the Agent</h2>
 
-<ul>
-  <li>Active - indicates that you want to search only for the active Workflows.</li>
-  <li>Inactive - indicates that you want to search only for the active Workflows.</li>
-  <li>All - indicates that you can search for every Workflow listed under your project.</li>
-</ul>
+<ol>
+  <li>Login to your AEC Agent with your registered account credentials.</li>
+  <li>Click on the settings button to view the Credentials page.   <br />
+<img src="/staticfiles/connectors/media/application-connector/nav-businesscentral1.png" alt="nav-businesscentral1" /></li>
+  <li>Fill in the required details in the Credential Page   <br />
+<img src="/staticfiles/connectors/media/application-connector/nav-businesscentral2.png" alt="nav-businesscentral2" /></li>
+  <li>Click Save and Validate button.</li>
+  <li>The validation success message confirms that the application is configured in the agent.   <br />
+<img src="/staticfiles/connectors/media/application-connector/nav-businesscentral3.png" alt="nav-businesscentral3" /></li>
+</ol>
 
-<p class="notice--info"><strong>Protip</strong> The search will work with <code class="highlighter-rouge">all types characters like special, alphanumeric</code>. <code class="highlighter-rouge">Partial search</code> also will happen. There is no need to combine the search and dropdown in the Search section</p>
+<p>The above steps completes the process of configuring Agent with NAV credentials</p>
 
-<p>If you type nothing and click on Search, all the Workflows listed under your project will show on the page.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
 
-<p>The above points explains the basic Workflow management in the portal.</p>
+<p><strong>ISSUE 1:  If the Source Application Not Found</strong>
+Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated, and if touchpoints do not sync, this basic issue
+resolves after removing the Temp and Cache files from the portal and from your system. Therefore, after clearing all this publish the touchpoints again along with Update Configuration on the agent.
+For E.g. If the Source Application Not Found in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
 
-<p>Detailed decription of <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a> &amp; <a href="/workflow/deploying-and-executing/">execution</a> is given in the subsequent sections.</p>
+<h2 id="attributes-and-actions">Attributes and Actions</h2>
 
+<p>While defining a connect to an API endpoint in Microsoft Dynamic Business Central, you require clear understanding about the 
+data requirements and endpoint configurations. You can refer to this document to find all the endpoint details of your 
+Microsoft Dynamic Business Central installation. To define the endpoint in APPSeCONNECT, you need Actions and Entities. 
+Actions are specifically targeted for an endpoint while schema is the data needed to execute the API. Here, is the list 
+of some of the pre-packaged API actions defined for you which you can easily plug and play while doing your integrations.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Action</th>
+      <th>Action Type</th>
+      <th>Schema</th>
+      <th>UI Path</th>
+      <th>API Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReadMultiple</td>
+      <td>ReadMultiple</td>
+      <td>GET</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&amp;entityId=b23b6cb2-8d83-45ed-9920-0f975f165c1b&amp;entityActionId=a75b6d7f-1a0f-4a39-8823-d658bb7dd445&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Page/webapplicationcontactdata</a></td>
+      <td><a href="https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-register-new-customers">Fetch Accounts/customers from Business Central and post it to the destination application</a></td>
+      <td><a href="https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_customer_get">ReadMultiple</a></td>
+    </tr>
+    <tr>
+      <td>ReadMultiple</td>
+      <td>ReadMultiple</td>
+      <td>GET</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&amp;entityId=3daefc5c-d333-47a3-9d47-6ca271a296e6&amp;entityActionId=2a65f957-51f6-4297-9624-1ca3aa2b6687&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Page/webapplicationproductdata</a></td>
+      <td><a href="https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-register-new-items">Fetch products from Business Central and post it to the destination application</a></td>
+      <td><a href="https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_item_get">ReadMultiple</a></td>
+    </tr>
+    <tr>
+      <td>AECCustomerImport</td>
+      <td>AECCustomerImport</td>
+      <td>POST</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&amp;entityId=2e83f28c-4b66-4e2b-b9e6-005ea75dea07&amp;entityActionId=237255f9-652d-44bf-a4ec-f2c85b35f08e&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">AECCustomerXMLPort</a></td>
+      <td>Post customer from source application to Business Central</td>
+      <td><a href="https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_create_customer">AECCustomerImport</a></td>
+    </tr>
+    <tr>
+      <td>AECSimpleProductImport</td>
+      <td>AECSimpleProductImport</td>
+      <td>POST</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&amp;entityId=ce524043-99ed-48e7-bd6e-46014ae88f98&amp;entityActionId=3b8d3f26-2f6a-4a29-b48b-dd5526cd555e&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">AECSimpleItemXmlPort</a></td>
+      <td>Post product from source application to Business Central</td>
+      <td><a href="https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_create_item">AECSimpleProductImport</a></td>
+    </tr>
+  </tbody>
+</table>
 
                 
             </section>
@@ -1622,7 +1619,7 @@ Currently APPSeCONNECT supports the following actions:</p>
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-06T00:00:00+05:30">March 06, 2019</time></div>
                 
                 
   
@@ -1659,7 +1656,7 @@ Currently APPSeCONNECT supports the following actions:</p>
     
       
       
-      <a href="/workflow" class="page__taxonomy-item" rel="tag">Workflow</a>
+      <a href="/connectors" class="page__taxonomy-item" rel="tag">Connectors</a>
     
     </span>
   </p>
@@ -1673,13 +1670,13 @@ Currently APPSeCONNECT supports the following actions:</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Overview+of+Workflows%20https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Dynamics+NAV+Business+Central%20https://docs.appseconnect.com%2Fconnectors%2FDynamicsnav-Business-Central%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2FDynamicsnav-Business-Central%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2FDynamicsnav-Business-Central%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2FDynamicsnav-Business-Central%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -2940,152 +2937,10 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                             <li>
-                                <a href="/workflow/Troubleshooting/" rel="permalink">
+                                <a href="/connectors/generic-nav2016-extension/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Troubleshooting of Workflows
+                                    Generic NAV 2016 Extension
                                 </a>
                             </li>
                             
@@ -3094,9 +2949,9 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             <li>
-                                <a href="/workflow/faqs/" rel="permalink">
+                                <a href="/connectors/generic-nav2015-extension/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Frequently asked questions
+                                    Generic NAV 2015 Extension
                                 </a>
                             </li>
                             
@@ -3105,9 +2960,22 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             <li>
-                                <a href="/workflow/Terminologies/" rel="permalink">
+                                <a href="/connectors/generic-nav2009-R2-extension/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Important Terminologies
+                                    Generic NAV 2009R2 Extension
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/Sap-Business-One/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    SAP Business One
                                 </a>
                             </li>
                             
@@ -3116,9 +2984,9 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             <li>
-                                <a href="/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/" rel="permalink">
+                                <a href="/connectors/bamboohr/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Workflow showing salescycle with post and post task inputs
+                                    BambooHR
                                 </a>
                             </li>
                             
@@ -3126,12 +2994,141 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             
-                            <li>
-                                <a href="/workflow/process-to-configure-a-task-with-acknowledgement/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                     Workflow execution with acknowledgement data
-                                </a>
-                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -3391,8 +3388,8 @@ Currently APPSeCONNECT supports the following actions:</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/workflow/overview/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/workflow/overview"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/connectors/Dynamicsnav-Business-Central/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/connectors/Dynamicsnav-Business-Central"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

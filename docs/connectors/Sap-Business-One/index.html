@@ -19,12 +19,12 @@
 
 
 
-<title>Overview of Workflows - APPSeCONNECT Product Docs</title>
+<title>SAP Business One - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Workflow is group of instructions to the integration service in APPSeCONNECT.">
+<meta name="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One, credentials need to be provided for validating the agent.Here you will find the detailed description on how to configure the agents for the application of SAP Business One, attributes and action, and the Troubleshooting issues.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Overview of Workflows">
+<meta property="og:title" content="SAP Business One">
 
 
-  <link rel="canonical" href="http://localhost:4000/workflow/overview/">
-  <meta property="og:url" content="http://localhost:4000/workflow/overview/">
+  <link rel="canonical" href="http://localhost:4000/connectors/Sap-Business-One/">
+  <meta property="og:url" content="http://localhost:4000/connectors/Sap-Business-One/">
 
 
 
-  <meta property="og:description" content="Workflow is group of instructions to the integration service in APPSeCONNECT.">
+  <meta property="og:description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One, credentials need to be provided for validating the agent.Here you will find the detailed description on how to configure the agents for the application of SAP Business One, attributes and action, and the Troubleshooting issues.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-09-17T00:00:00+05:30">
+  <meta property="article:published_time" content="2019-03-05T00:00:00+05:30">
 
 
 
@@ -166,7 +166,7 @@
     
       
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+        <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <span class="sep">/</span>
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Overview of Workflows</li>
+      <li class="current">SAP Business One</li>
     
   
 </ol>-->
@@ -1401,9 +1401,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Overview of Workflows">
-        <meta itemprop="description" content="Workflow is group of instructions to the integration service in APPSeCONNECT.">
-        <meta itemprop="datePublished" content="September 17, 2018">
+        <meta itemprop="headline" content="SAP Business One">
+        <meta itemprop="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One, credentials need to be provided for validating the agent.Here you will find the detailed description on how to configure the agents for the application of SAP Business One, attributes and action, and the Troubleshooting issues.">
+        <meta itemprop="datePublished" content="March 05, 2019">
         
 
 
@@ -1422,7 +1422,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="/workflow" itemprop="item"><span itemprop="name">Workflow</span></a>
+                    <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
                 <li class="sep">/</li>
@@ -1430,7 +1430,7 @@
                 
                 
                 
-                <li class="current">Overview of Workflows</li>
+                <li class="current">SAP Business One</li>
                 
                 
             </ol>
@@ -1440,7 +1440,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Overview of Workflows
+                <h1 class="page__title" itemprop="headline">SAP Business One
 </h1>
                 
                 
@@ -1463,7 +1463,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-05T00:00:00+05:30">March 05, 2019</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1484,137 +1484,145 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#benefits-of-using-workflow">Benefits of Using Workflow</a></li>
-  <li><a href="#elementsnodes-of-workflow">Elements/Nodes of Workflow</a></li>
-  <li><a href="#actions-of-workflow">Actions of Workflow</a></li>
-  <li><a href="#process-property-of-workflow">Process Property of Workflow</a></li>
-  <li><a href="#templates-of-workflow">Templates of Workflow</a>
-    <ul>
-      <li><a href="#working-with-workflow-in-appseconnect">Working with Workflow in APPSeCONNECT</a></li>
-      <li><a href="#search-functions-of-workflow">Search functions of Workflow</a></li>
-    </ul>
-  </li>
+  <li><a href="#prerequisites-for-sap-business-one-configuration">Prerequisites for SAP Business One Configuration</a></li>
+  <li><a href="#configure-the-sap-business-one-application-in-the-agent">Configure the SAP Business One Application in the Agent</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Workflow is group of instructions to the integration service in APPSeCONNECT.</p>
+                <p>Application configuration is an integral activity prior to the process of integration. 
+If your chosen application is SAP Business One, credentials need to be provided for 
+validating the agent.
+Here you will find the detailed description on how to configure the agents for the 
+application of SAP Business One, attributes and action, and the Troubleshooting issues.</p>
 
-<p>APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is  a concept that describes how process in business divides work activities into distinct <em>roles, task, procedures and rules</em>.</p>
+<p><strong>Note: This document is for the SAP Business One version &gt;=8.8</strong></p>
 
-<p>The Workflow feature helps user to graphically organize, create and view the data flow of a process.The customers with the aid of workflow can now design integration anytime and anywhere with the help of cloud portal.</p>
-
-<p>Workflow enables to execute the orchestrated pattern of business activity with efficiency and optimality.</p>
-
-<h2 id="benefits-of-using-workflow">Benefits of Using Workflow</h2>
-
-<ol>
-  <li>Visibilty &amp; Status Check of Business Scenario</li>
-  <li>Eliminates Manual work &amp; reduces human error</li>
-  <li>Enables quick decision making &amp; Learn from inefficiencies</li>
-  <li>Maintain &amp; Improve Quality</li>
-  <li>Modifying Step Order</li>
-  <li>Real time Reports</li>
-</ol>
-
-<h2 id="elementsnodes-of-workflow">Elements/Nodes of Workflow</h2>
-
-<p>Given below is the list of elements you will use in workflow. Under Elements, all the elements such as GET, PROCESS, POST, etc will be listed<br />
-<img src="/staticfiles/workflow-management/media/ElementNode.png" alt="Element Node" /></p>
-
-<p>Elements of workflow:</p>
-
-<ul>
-  <li><a href="/workflow/working-with-get/">Get</a></li>
-  <li><a href="/workflow/working-with-process/">Process</a></li>
-  <li><a href="/workflow/working-with-post/">Post</a></li>
-  <li><a href="/workflow/working-with-halt-resume/">Halt-Resume</a></li>
-  <li><a href="/workflow/working-with-delay/">Delay</a></li>
-</ul>
-
-<h2 id="actions-of-workflow">Actions of Workflow</h2>
-
-<p>Actions are used in Workflow to perform some operation with the data apart, from transferring them from source to destination. These Actions can include sending an email or raising an automated support ticket if Workflow encounters any execution failure etc. To achieve this in our admin Workflow panel you would see a separate section named Action.
-Currently APPSeCONNECT supports the following actions:</p>
-
-<ul>
-  <li><a href="/workflow/generating-notification-emails/">Email</a></li>
-  <li><a href="/workflow/generating-notification-support-ticket/">Ticket</a></li>
-  <li><a href="/workflow/generating-notification-webhooks/">Webhook</a></li>
-  <li><a href="/workflow/generating-storage-action/">Storage</a></li>
-</ul>
-
-<p class="notice--info"><strong>Protip</strong> These Actions can also have RULE as Parent and no child from action node will be allowed as these Actions are leaf nodes</p>
-
-<h2 id="process-property-of-workflow">Process Property of Workflow</h2>
-
-<ul>
-  <li><a href="/workflow/working-with-splitter/">Split</a></li>
-  <li><a href="/workflow/working-with-merger/">Merger</a></li>
-  <li><a href="/workflow/working-with-filter/">Filter</a></li>
-  <li><a href="/workflow/working-with-rule/">Rule</a></li>
-  <li><a href="/workflow/working-with-sequencer/">Sequencer</a></li>
-  <li><a href="">Touchpoint</a></li>
-</ul>
-
-<h2 id="templates-of-workflow">Templates of Workflow</h2>
-
-<ul>
-  <li>General Touchpoint</li>
-  <li>Post Touchpoint</li>
-  <li>Get Merge Touchpoint</li>
-  <li>Push Merge Touchpoint</li>
-  <li>Get Splitted Touchpoint</li>
-  <li>Push Splitted Touchpoint</li>
-</ul>
-
-<h3 id="working-with-workflow-in-appseconnect">Working with Workflow in APPSeCONNECT</h3>
-
-<p>APPSeCONNECT Workflows are the diagrammatic representations of a business process.</p>
-
-<p>Organizations use workflows to <code class="highlighter-rouge">coordinate tasks and synchronize data between systems,</code> with the ultimate goal of improving organizational efficiency, responsiveness and ease of use.</p>
-
-<p>The workflow management screen will allow to search, filter, create and edit workflows.</p>
-
-<p>An implementer can ensure that all the projects are listed on a single page showing its various status and allowing to change status by reading this document.</p>
+<h2 id="prerequisites-for-sap-business-one-configuration">Prerequisites for SAP Business One Configuration</h2>
 
 <ol>
-  <li>Log in to the APPSeCONNECT Portal</li>
-  <li>Now choose a <code class="highlighter-rouge">Project -&gt; Workflows</code> section under Account and a new page will open.
-  <img src="/staticfiles/workflow-management/media/Workflow.png" alt="Workflow" /></li>
-  <li>If you are a new user and no previous workflow is created or activated, this screen with the following message will appear.
-<img src="/staticfiles/workflow-management/media/NoWorkflow.png" alt="NoWorkflow" /></li>
-  <li>If you are an existing user who have used Workflows, the following screen will appear
-<img src="/staticfiles/workflow-management/media/Workflow_Landing.png" alt="Workflow_Landing" /></li>
-  <li>You can view maximum of 6 workflow designed in a workflow page, rest workflows can be scrolled through navigation pages.</li>
-  <li>APPSeCONNECT has two category of Workflows: <br />
- <strong>Project Specific Workflow/Organization Workflow</strong> -  This type of Workflow have two button <code class="highlighter-rouge">Edit</code> &amp; <code class="highlighter-rouge">Delete</code>and you have to activate it.  <br />
- <strong>Pre-Packaged Workflow/Base Workflow</strong> - This type of workflow has initially one button. Once you activate it, you will see that Workflow contains two buttons, one for Edit, another for Delete.</li>
-  <li>Every workflow has one switch, this will either take the  workflow to <code class="highlighter-rouge">Active state</code> or will go to <code class="highlighter-rouge">Inactive state</code>. If it’s in Inactive state, that workflow will not work on Agent’s App.<br />
- <img src="/staticfiles/workflow-management/media/Workflow_dialog.png" alt="Workflow_dialog" /></li>
+  <li>Select the application SAP Business One in the APPS section of the APPSeCONNECT Portal.</li>
+  <li>Create and publish a connection in the cloud portal.</li>
+  <li>Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent.To Know about Agent Configuration, <a href="/deployment/Deployment-Configuration/">Click here</a></li>
 </ol>
 
-<p>You will get <code class="highlighter-rouge">SEARCH</code> panel in the top of the workflow page.
- <img src="/staticfiles/workflow-management/media/Search_Workflow.png" alt="Search_Workflow" /></p>
+<p><strong>Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created</strong></p>
 
-<p class="notice--info"><strong>Protip</strong> Choose Project only, if you have multiple projects, else directly you are into your project.</p>
+<h2 id="configure-the-sap-business-one-application-in-the-agent">Configure the SAP Business One Application in the Agent</h2>
 
-<h3 id="search-functions-of-workflow">Search functions of Workflow</h3>
+<ol>
+  <li>
+    <p>Open APPSeCONNECT Agent by providing correct credentials.</p>
+  </li>
+  <li>
+    <p>In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPSeCONNECT Cloud.</p>
+  </li>
+</ol>
 
-<ul>
-  <li>Active - indicates that you want to search only for the active Workflows.</li>
-  <li>Inactive - indicates that you want to search only for the active Workflows.</li>
-  <li>All - indicates that you can search for every Workflow listed under your project.</li>
-</ul>
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent1.png" alt="sapb1-agent1" /></p>
 
-<p class="notice--info"><strong>Protip</strong> The search will work with <code class="highlighter-rouge">all types characters like special, alphanumeric</code>. <code class="highlighter-rouge">Partial search</code> also will happen. There is no need to combine the search and dropdown in the Search section</p>
+<ol>
+  <li>Click on the credentials icon to provide SAP B1 credentials to validate the connection.</li>
+</ol>
 
-<p>If you type nothing and click on Search, all the Workflows listed under your project will show on the page.</p>
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent2.png" alt="sapb1-agent2" /></p>
 
-<p>The above points explains the basic Workflow management in the portal.</p>
+<ol>
+  <li>Provide the credentials of SAP B1</li>
+</ol>
 
-<p>Detailed decription of <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a> &amp; <a href="/workflow/deploying-and-executing/">execution</a> is given in the subsequent sections.</p>
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent3.png" alt="sapb1-agent3" /></p>
 
+<p>Under SAP Event XML file path &amp; SAP Image file path, you need to create two folders respectively and link the path to it. 
+This path later needs to be provided in SAP B1 as well.</p>
+
+<p><strong>Follow the steps mentioned below, to provide SAP Event XML file path &amp; SAP Image file path in SAP B1</strong></p>
+
+<ol>
+  <li>Open SAP B1 after providing valid credentials.</li>
+  <li>Navigate through Administrator &gt; System Initialization &gt; General Settings.</li>
+  <li>A form will open. Select “Path” menu under it. Browse for SAP Event XML file path and Image path.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent4.png" alt="sapb1-agent4" /></p>
+
+<ol>
+  <li>After providing all the credentials. Click “Save” button.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent5.png" alt="sapb1-agent5" /></p>
+
+<p>A message “Connection Data Saved” will appear if all the credentials provided by you for SAP B1 is valid.</p>
+
+<ol>
+  <li>Click on the “Validate” button, to validate the connection.</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent6.png" alt="sapb1-agent6" /></p>
+
+<p>A message “Test Connection Successful” will appear if all the credentials provided by you for SAP B1 is valid. 
+In this way, you can configure the credentials of SAP B1.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p><strong>Issue 1: Source Application Data Not Found</strong></p>
+
+<p>“Source Application Data Not Found” even if Data is present is the Source Application.</p>
+
+<p>Some of the basic troubleshooting issue happens due to improper validations or even if it is 
+accurately validated and if touchpoints do not sync. This basic issue resolves after removing 
+the <code class="highlighter-rouge">Temp and Cache files</code> from the <code class="highlighter-rouge">portal</code> and from your <code class="highlighter-rouge">system</code>. Therefore after clearing all
+this, you need to publish the touchpoints again along with <strong>Update Configuration</strong> on the agent.</p>
+
+<p>For E.g. If the “Source Application Data Not Found” in the log file appears, the probable cause is due 
+to the presence of the Temp and Cache Files.</p>
+
+<p><strong>Issue 2: Syncing issues</strong></p>
+
+<p>While working with SAP B1 Integrations, SAP Business One DI Server ON/OFF is needed to be done for proper 
+syncing else data will not sync to SAP.</p>
+
+<h2 id="attributes-and-actions">Attributes and Actions</h2>
+
+<p>While defining a connect to an API endpoint in SAP Business One, you require clear understanding about the
+data requirements and endpoint configurations. You can refer to this document to find all the endpoint 
+details of your SAP Business One installation. To define the endpoint in APPSeCONNECT, you need Actions and Entities. 
+Actions are specifically targeted for an endpoint while schema is the data needed to execute the API. 
+Here, is the list of some of the pre-packaged API actions defined for you which you can easily plug and play 
+while doing your integrations.</p>
+
+<p>SAP Business One being a SOAP based application, it has objects that are used for pushing and pulling the data. 
+<a href="https://blogs.sap.com/2017/04/27/list-of-object-types/">Click here</a> to know about the <code class="highlighter-rouge">Object Code ID, its Primary Key and the related Table in SAP</code> that would be required for the Integration.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Action</th>
+      <th>Action Type</th>
+      <th>Schema</th>
+      <th>UI Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ExecuteSQL</td>
+      <td>ExecuteSQL</td>
+      <td>GET</td>
+      <td>oEmployeesInfo</td>
+      <td><a href="https://help.sap.com/doc/saphelp_sbo91/9.1/en-US/44/ac2bd0d8545af0e10000000a11466f/content.htm?no_cache=true">Fetch employee from SAP Business One to destination Application</a></td>
+    </tr>
+    <tr>
+      <td>AddObject</td>
+      <td>AddObject</td>
+      <td>POST</td>
+      <td>oEmployeesInfo</td>
+      <td>Post employees from Source Application to SAP Business One</td>
+    </tr>
+  </tbody>
+</table>
 
                 
             </section>
@@ -1622,7 +1630,7 @@ Currently APPSeCONNECT supports the following actions:</p>
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-05T00:00:00+05:30">March 05, 2019</time></div>
                 
                 
   
@@ -1659,7 +1667,7 @@ Currently APPSeCONNECT supports the following actions:</p>
     
       
       
-      <a href="/workflow" class="page__taxonomy-item" rel="tag">Workflow</a>
+      <a href="/connectors" class="page__taxonomy-item" rel="tag">Connectors</a>
     
     </span>
   </p>
@@ -1673,13 +1681,13 @@ Currently APPSeCONNECT supports the following actions:</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Overview+of+Workflows%20https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=SAP+Business+One%20https://docs.appseconnect.com%2Fconnectors%2FSap-Business-One%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2FSap-Business-One%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2FSap-Business-One%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fworkflow%2Foverview%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2FSap-Business-One%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -2940,152 +2948,10 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                             <li>
-                                <a href="/workflow/Troubleshooting/" rel="permalink">
+                                <a href="/connectors/generic-nav2016-extension/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Troubleshooting of Workflows
+                                    Generic NAV 2016 Extension
                                 </a>
                             </li>
                             
@@ -3094,9 +2960,9 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             <li>
-                                <a href="/workflow/faqs/" rel="permalink">
+                                <a href="/connectors/generic-nav2015-extension/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Frequently asked questions
+                                    Generic NAV 2015 Extension
                                 </a>
                             </li>
                             
@@ -3105,9 +2971,9 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             <li>
-                                <a href="/workflow/Terminologies/" rel="permalink">
+                                <a href="/connectors/generic-nav2009-R2-extension/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Important Terminologies
+                                    Generic NAV 2009R2 Extension
                                 </a>
                             </li>
                             
@@ -3116,22 +2982,164 @@ Currently APPSeCONNECT supports the following actions:</p>
                             
                             
                             <li>
-                                <a href="/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/" rel="permalink">
+                                <a href="/connectors/Dynamicsnav-Business-Central/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Workflow showing salescycle with post and post task inputs
+                                    Dynamics NAV Business Central
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
                             
                             
                             <li>
-                                <a href="/workflow/process-to-configure-a-task-with-acknowledgement/" rel="permalink">
+                                <a href="/connectors/bamboohr/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                     Workflow execution with acknowledgement data
+                                    BambooHR
                                 </a>
                             </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -3391,8 +3399,8 @@ Currently APPSeCONNECT supports the following actions:</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/workflow/overview/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/workflow/overview"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/connectors/Sap-Business-One/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/connectors/Sap-Business-One"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
