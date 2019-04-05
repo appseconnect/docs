@@ -95,7 +95,10 @@ Actions are specifically targeted for an endpoint while schema is the data neede
 Here, is the list of some of the pre-packaged API actions defined for you which you can easily plug and play 
 while doing your integrations.
 
-|Endpoint|Action|Action Type|Schema|UI Path|API Path|
+SAP Business One being a SOAP based application, it has objects that are used for pushing and pulling the data. 
+[Click here](https://blogs.sap.com/2017/04/27/list-of-object-types/) to know about the `Object Code ID, its Primary Key and the related Table in SAP` that would be required for the Integration. 
+
+|Endpoint|Action|Action Type|Schema|UI Path|
 |---|---|---|---|------|
 |ExecuteSQL|ExecuteSQL|GET|oEmployeesInfo|[Fetch employee from SAP Business One to destination Application](https://help.sap.com/doc/saphelp_sbo91/9.1/en-US/44/ac2bd0d8545af0e10000000a11466f/content.htm?no_cache=true)|
 |AddObject|AddObject|POST|oEmployeesInfo|Post employees from Source Application to SAP Business One|
