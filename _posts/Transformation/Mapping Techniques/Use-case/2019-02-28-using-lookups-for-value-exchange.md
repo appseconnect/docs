@@ -91,10 +91,10 @@ The user can view the successful sync of the touchpoints for the connection Mage
 
 ## Exception Courses
 The user can view the error logs in the RESYNC Bucket of the agent (Cloud and OP) if the touchpoint fails to sync for any LookUp Mapping cases. 
-Click Here to know more (Mapping trouble shooting link).
+[Click here](http://127.0.0.1:4000/transformation/troubleshooting/#troubleshooting-process-for-scenario-3) for lookup related troubleshooting.
 
 ## Frequency of Use
-The user can implement lookup mapping when required for any connection/touchpoint. [Cliok here](http://127.0.0.1:4000/transformation/troubleshooting/#troubleshooting-process-for-scenario-3) for lookup related troubleshooting.
+The user can implement lookup mapping when required for any connection/touchpoint. 
 
 ## Assumptions
 Not Applicable

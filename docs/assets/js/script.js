@@ -165,7 +165,7 @@ function selectTab(url, e) {
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
-        });
+        }); 
         var title = $(data).find('title').html();
         $(data).find('a:not([href^="https://"])').each(function () {
             $(this).click(function (event) {

@@ -10,7 +10,7 @@ menus:
 ---
 
 ## CUSTOMER PROFILE INFORMATION
-This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/appseconnect/home/).
+This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/getting-started/#my-profile).
 
 This section also enables you to change details like your *personal information, changing avatar, changing password, privacy setting and security setting*.
 
@@ -20,7 +20,7 @@ Let us dive in details about every section of customer profile information.
 
 1. Log in to the [APPSeCONNECT portal](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) with valid credentials.
 2. Click on your name, and you can view `My Profile` tab. 
-3. This section enables you to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
+3. This section enables you to edit your profile details. Here You will see two tabs - `Overview & Change Details page`.
 4. Here you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address.
 5. In the `Summary section` the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
