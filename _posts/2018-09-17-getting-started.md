@@ -10,7 +10,7 @@ menus:
 ---
 
 ## CUSTOMER PROFILE INFORMATION
-This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/appseconnect/home/).
+This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/getting-started/#my-profile).
 
 This section also enables you to change details like your *personal information, changing avatar, changing password, privacy setting and security setting*.
 
@@ -20,7 +20,7 @@ Let us dive in details about every section of customer profile information.
 
 1. Log in to the [APPSeCONNECT portal](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) with valid credentials.
 2. Click on your name, and you can view `My Profile` tab. 
-3. This section enables you to edit your profile details. Here You will see two tabs - *Overview & Change Details page*.
+3. This section enables you to edit your profile details. Here You will see two tabs - `Overview & Change Details page`.
 4. Here you can view your brief detail like your  name, your registered e-mail, your role, phone number and IP address.
 5. In the `Summary section` the count of projects you handle/under organization is shown. You can also see your expired project counts and trials according to your Role and access level, you can see the companies.
 6. `Assigned Companies` will be shown on User Role basis. In **My Company section**, only your company details will be there.
@@ -110,12 +110,7 @@ The newly created app, can be viewed in the app listing section.
   * In case of  Upload Adapter, you must give File Name, File Title, Assembly Version and upload Adapter.
   
 **Protip**  App Name will take up to 30 characters and will not allow special character except underscore(_)and dot(.)  
-{: .notice--info}
-
-**ProTip:** The Adapter needs to be in Zip Format else will show an Error message. Selection of the adapter is restricted to only one 
-{: .notice--info}
-
-**ProTip:** The user can edit & delete the custom app & technology app  
+The Adapter needs to be in Zip Format else will show an Error message. Selection of the adapter is restricted to only one  The user can edit & delete the custom app & technology app  
 {: .notice--info}
 
 ### (b) Technology App Creation
@@ -275,7 +270,7 @@ On the Touchpoints page, there will be a Reverse button (only if applicable, for
 On clicking the Publish button, all the Touchpoints will be published under the connection. Once a connection has been published, only the Republish button will appear instead of Publish button
 {: .notice--warning}
 
-`Value Mapping` is an important function under touchpoint selection. 
+`Lookup Mapping` is an important function under touchpoint selection. 
 Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during [transformation](/transformation/overview/).
 Details of Value Mapping will come in subsequent section of the document.
 

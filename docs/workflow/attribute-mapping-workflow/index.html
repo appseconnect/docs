@@ -624,14 +624,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+    <li class="menu-item-" data-url="/connectors/Uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Uniconta/" onclick="selectTab('/connectors/Uniconta/', event);" title="Go to Uniconta">Uniconta</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/zohocrmv2/" onclick="selectTab('/connectors/zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
+    <li class="menu-item-" data-url="/connectors/Zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Zohocrmv2/" onclick="selectTab('/connectors/Zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
         
         
         
@@ -668,8 +668,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sap-business-one/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sap-business-one/" onclick="selectTab('/connectors/sap-business-one/', event);" title="Go to SAP Business One">SAP Business One</a>
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One/" onclick="selectTab('/connectors/Sap-Business-One/', event);" title="Go to SAP Business One">SAP Business One</a>
         
     </li>
     
@@ -693,8 +693,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/dynamicsnav-business-central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/dynamicsnav-business-central/" onclick="selectTab('/connectors/dynamicsnav-business-central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
+    <li class="menu-item-" data-url="/connectors/Dynamicsnav-Business-Central/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Dynamicsnav-Business-Central/" onclick="selectTab('/connectors/Dynamicsnav-Business-Central/', event);" title="Go to Dynamics NAV Business Central">Dynamics NAV Business Central</a>
         
         
         
@@ -724,8 +724,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/sage300/" onclick="selectTab('/connectors/sage300/', event);" title="Go to Sage300">Sage300</a>
+    <li class="menu-item-" data-url="/connectors/Sage300/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sage300/" onclick="selectTab('/connectors/Sage300/', event);" title="Go to Sage300">Sage300</a>
         
         
         
@@ -1485,6 +1485,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#pre-requisites">Pre-requisites:</a></li>
+  <li><a href="#steps-to-implement-attribute-mapping">Steps to Implement Attribute Mapping:</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1502,20 +1503,24 @@ Attribute Mapping needs to be implemented before integrating. This document will
 
 <p><a href="/workflow/steps-to-choose-your-workflow/">Click</a> to know more about choosing workflow.</p>
 
-<h1 id="steps-to-implement-attribute-mapping">Steps to Implement Attribute Mapping:</h1>
+<h2 id="steps-to-implement-attribute-mapping">Steps to Implement Attribute Mapping:</h2>
 
 <ol>
   <li>Login to the APPSeCONNECT Portal and select the apps from the APPS section, for implementing workflow.</li>
   <li>Navigate to the Workflow Section in the portal and create or choose the workflow for the touchpoint that is to be implemented.
-<strong>Note: The Pre-packaged workflow is selected for the touchpoint Customer ADD from WooCommerce to Priority.</strong></li>
+<strong>Note: The Pre-packaged workflow is selected for the touchpoint Customer ADD from WooCommerce to Priority.</strong>
+ <img src="/staticfiles/workflow-management/media/Attribute-Mappingnew1.png" alt="Attribute-Mappingnew1" /></li>
   <li>Click on the Process Node in the Customer Add Touchpoint, the Mapping Actions appears at the Right-Hand side of the workflow panel.
+<img src="/staticfiles/workflow-management/media/Attribute-Mappingnew2.png" alt="Attribute-Mappingnew2" />
 <strong>Note: For any touchpoint, clicking on the PROCESS Node of a touchpoint, displays the Mapping Actions in the Workflow Panel</strong></li>
-  <li>There are three Tabs present in the Mapping Actions.
-a.	Mapping: This implements the Attribute Mapping between the attributes.
-b.	Source Entity: This displays all the Source Appresource Functions.
+  <li>There are three Tabs present in the Mapping Actions.             <br />
+a.	Mapping: This implements the Attribute Mapping between the attributes.                                 <br />
+b.	Source Entity: This displays all the Source Appresource Functions.                              <br />
 c.	Destination Entity: This displays all the Destination Appresource Functions.</li>
-  <li>For Implementing Attribute Mapping, click on the Mapping Tab. The Transform window opens. Expand the For-Each-Loop Node and Row, until the destination attributes are displayed.</li>
-  <li>For Attribute Mapping, click on the Open Button when hovered on an attribute. Implement the mapping, in the Mapping panel and click on the Submit Button.</li>
+  <li>For Implementing Attribute Mapping, click on the Mapping Tab. The Transform window opens. Expand the For-Each-Loop Node and Row, until the destination attributes are displayed.
+<img src="/staticfiles/workflow-management/media/Attribute-Mappingnew3.png" alt="Attribute-Mappingnew3" /></li>
+  <li>For Attribute Mapping, click on the Open Button when hovered on an attribute. Implement the mapping, in the Mapping panel and click on the Submit Button.
+<img src="/staticfiles/workflow-management/media/Attribute-Mappingnew4.png" alt="Attribute-Mappingnew4" /></li>
   <li>For more Details and Information on Attribute Mapping<a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Click here</a></li>
 </ol>
 

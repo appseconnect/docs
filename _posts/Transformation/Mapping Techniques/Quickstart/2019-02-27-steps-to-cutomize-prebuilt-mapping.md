@@ -30,13 +30,12 @@ execution process of transformation is deployed multiple times.
 ## Implementing Attribute Mapping
 
 Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping.       
-**Note:** The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection.  
-**Note:** For the demonstration of touchpoint `Invoice Add` is used. 
+**Note: The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection. For the demonstration of touchpoint `Invoice Add` is used**
 ![attributemapping](/staticfiles/Transformation/media/attributemapping.png) 
 2.	Click on the Transform button on the touchpoint which you have selected.   
 3.	Expand the transformation node for viewing the `Touchpoint Object, Complex Object collections, the Complex Object and the Attributes`.
 ![attributemapping1](/staticfiles/Transformation/media/attributemapping1.png)
-4. Expanding the `For-each loop` the user gets the view of the node oInvoices. `oInvoices` is a touchpoint object 
+4. Expanding the `For-each loop` the user gets the view of the node oInvoices. `oInvoices` is a schema
   that is used to send data to the target application. The `For-Each Loop` is set relatively rather than writing the transformation logic multiple times and
   this undergoes execution whenever the touchpoint is synced in the For-Each Loop Node.  
 ![attributemapping2](/staticfiles/Transformation/media/attributemapping2.png)
@@ -45,17 +44,15 @@ Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do th
     it belongs to. Each of these attributes will contain different information about the customer record. 
 6.	The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting.     
 
-**Note:** Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
-         
-**Note:** For different touchpoints, the object is different. For the touchpoint Sales Order Add,
-the object is oOrders for Simple Product Add it is oItems and so on.
+**Note: Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
+          For different touchpoints, the object is different. For the touchpoint Sales Order Add, the object is oOrders for Simple Product Add it is oItems and so on**
 ![attributemapping3](/staticfiles/Transformation/media/attributemapping3.png)
 
 **Protip:** Document_Lines will contain the details of the Product in terms of Quantity and Unit Price etc., 
 DocumentsAdditionalExpenses contains the Freight, Tax information etc. of the product.
 {: .notice--info} 
 
-**Note:** Different objects in different touchpoints will have different attributes. 
+Each object in different touchpoints will have different attributes. 
 Expanding the **row** displays the destination attributes in the touchpoint level.
 All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.
 ![attributemapping4](/staticfiles/Transformation/media/attributemapping4.png)

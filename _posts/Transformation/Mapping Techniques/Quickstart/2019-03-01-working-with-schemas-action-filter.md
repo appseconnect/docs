@@ -21,7 +21,7 @@ application. This section enables the user to view and add the Schema and its Ac
 
 Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter. 
 
-For example, suppose you want to fetch customer's data from an eCommerce site and in APPSeConnect you define a Customer entity for that, now for getting data we can define an action name, called 'GET'. 
+For example, suppose you want to fetch customer's data from an eCommerce site and in APPSeCONNECT you define a Customer entity for that, now for getting data we can define an action name, called 'GET'. 
 When you define an action for an entity you need to provide certain information
 
 * Action Name: Name of the action. In some predefined application, many adapter logics are written based on this data.
@@ -55,7 +55,7 @@ Conjunctions - And/Or [$Node1 + $Node2]
 
 **Error Filter**
 
-Error filters are the same as the action filters. They are written for syncing erroneous data which are present in APPSeConnect error log bucket or the resync bucket. Based on the logic implemented in adapter code you need to specify the error filter.
+Error filters are the same as the action filters. They are written for syncing erroneous data which are present in APPSeCONNECT error log bucket or the resync bucket. Based on the logic implemented in adapter code you need to specify the error filter.
 For explanation purpose, sample filter for SOAP API has been taken, where a hierarchical node structure is maintained for filtration.
 
 1. Create a new node
@@ -93,7 +93,7 @@ The steps to import schemas and actions of an application is given below:
 3.  Click on the + sign after adding the application and click on Schema 
     (Here MS Dynamics NAV has been choosen). 
 ![Importing-SchemaAction1](/staticfiles/Transformation/media/Importing-SchemaAction1.png)
-4. On the Schema Window the user can view the schemas present or can also add schemas present for the ADD Schema Option.
+4. On the Schema Window the user can view the list of schemas present or can also add schemas from the `ADD Schema` Option.
 ![Importing-SchemaAction2](/staticfiles/Transformation/media/Importing-SchemaAction2.png)
 5.	The Actions inside a schema can be viewed by clicking on the + sign. 
 ![Importing-SchemaAction3](/staticfiles/Transformation/media/Importing-SchemaAction3.png)
