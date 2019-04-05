@@ -2534,7 +2534,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/connectors/overview-of-application-connectors/",
+        "url": "/connectors/Overview-of-Application-Connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
