@@ -10,6 +10,11 @@ menus:
         icon: fa fa-file-word-o
         identifier: touchpointdependency
 ---
+## Use Case Name
+
+Touchpoint Dependency
+
+## Brief Description
 
 Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.
 Touchpoints are needed to be triggered in an order as each touchpoint's serves each purpose. 
@@ -18,6 +23,12 @@ For Instance: Before triggering the touchpoint `INVOICE ADD, the touchpoint ORDE
 order add, `CUSTOMER ADD or BUSINESS PARTNER ADD` is needed to be triggered. 
 
 This is done to remove discrepancy with the customer records. So this raises a dependency factor among each of the touchpoint.
+
+## Actors
+ Implementers, Developers, Partners.
+
+## Preconditions 
+Organisation Creation & Connection Creation.
 
 ## Touchpoint Dependencies
 
@@ -48,16 +59,14 @@ as the input of the related touchpoint. For e.g. order increment id of sales ord
 For Eg: In case of the Order `add touchpoint` and the Guest` Customer Add touchpoint`, the data fetched from the source of the primary touchpoint 
 (in this case, Order Add) acts as the source data for the related touchpoint, letting both the task to work without any discrepancy.
 
-## Implementing the Touchpoint Dependency
-
-### Prerequisites
+## Prerequisite
 
 1. Need to have a valid APPSeCONNECT Account.
 2. Create connection for which the dependency setup is to be done.
 3. Create Touchpoints if any of the application used is a custom app.
 4. Make sure the touchpoints are active, before setting up the dependency.
 
-### Steps to implement Dependency
+## Basic Flow
 
 1.	Login to the APPSeCONNECT portal and Navigate to the touchpoints page.
 2.	Select the touchpoint which will be acting as the primary touchpoint (in this case, the touchpoint used is Invoice Add). 
@@ -72,3 +81,15 @@ For Eg: In case of the Order `add touchpoint` and the Guest` Customer Add touchp
 ![touchpoint-dependency4](/staticfiles/Transformation/media/touchpoint-dependency4.png)
 6. Similarly other touchpoints can also have dependencies and in the similarly way the setup is to be done for 
    any other dependency task required.
+
+## Post-Conditions
+The user can view the successful sync of the touchpoint Invoice Add as in this case.
+
+## Exception Courses
+The user can view the error logs in the RESYNC Bucket of the agent (Cloud and OP), if the touchpoint fails to sync for any cases.
+
+## Frequency of Use
+The user can sync the touchpoint whenever required.
+
+## Assumptions
+Not Applicable

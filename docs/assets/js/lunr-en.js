@@ -566,8 +566,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Merge Node",
-      excerpt: "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
+      title: "Merger Node",
+      excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Workflow"],
       tags: ["developers","nodes"],
       id: 61
@@ -1215,7 +1215,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Understanding Touchpoint Dependencies",
-      excerpt: "Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of...",
+      excerpt: "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 133
@@ -2137,9 +2137,9 @@ var store = [
     
       
       {
-        "title": "Merge Node",
+        "title": "Merger Node",
         "url": "/workflow/working-with-merger/",
-        "excerpt": "What is Merge Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
+        "excerpt": "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2534,7 +2534,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/connectors/overview-of-application-connectors/",
+        "url": "/connectors/Overview-of-Application-Connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
@@ -2765,7 +2765,7 @@ var store = [
       
       {
         "title": "Uniconta",
-        "url": "/connectors/uniconta/",
+        "url": "/connectors/Uniconta/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
         "teaser":
           
@@ -2776,7 +2776,7 @@ var store = [
       
       {
         "title": "ZohoCRM V2.0",
-        "url": "/connectors/zohocrmv2/",
+        "url": "/connectors/Zohocrmv2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
         "teaser":
           
@@ -2931,7 +2931,7 @@ var store = [
       {
         "title": "Understanding Touchpoint Dependencies",
         "url": "/transformation/understanding-touchpoint-dependencies/",
-        "excerpt": "Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of...",
+        "excerpt": "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3062,7 +3062,7 @@ var store = [
       
       {
         "title": "Sage300",
-        "url": "/connectors/sage300/",
+        "url": "/connectors/Sage300/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
         "teaser":
           
@@ -3117,7 +3117,7 @@ var store = [
       
       {
         "title": "SAP Business One",
-        "url": "/connectors/sap-business-one/",
+        "url": "/connectors/Sap-Business-One/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
         "teaser":
           
@@ -3128,7 +3128,7 @@ var store = [
       
       {
         "title": "Dynamics NAV Business Central",
-        "url": "/connectors/dynamicsnav-business-central/",
+        "url": "/connectors/Dynamicsnav-Business-Central/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
         "teaser":
           
