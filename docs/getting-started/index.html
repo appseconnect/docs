@@ -1542,9 +1542,13 @@ Login to APPSeCONNECT - View <a href="/appseconnect/home/">Home Page</a> to get 
 <img src="/staticfiles/root/media/ChooseApp_Dialogbox1.png" alt="ChooseApp_Dialogbox1" /></li>
   <li>The list of app you choose gets added and listed in the app section of the organization as shown below:
 <img src="/staticfiles/root/media/AppView.png" alt="AppView" /></li>
-  <li>Each app has four different component attached to it - <strong>Schema, Adapter, Extension, Functions &amp; Delete</strong>.
+  <li>Each <code class="highlighter-rouge">OP supported app</code> has four different functionality attached to it - <strong>Schema, Adapters, Functions &amp; Delete</strong>.
 <img src="/staticfiles/root/media/AppComponents.png" alt="AppComponents" /></li>
+  <li>For <code class="highlighter-rouge">Cloud Supported Applications</code> the <code class="highlighter-rouge">Credential button</code> appears along with the other functionality that are attached.
+<img src="/staticfiles/root/media/Cloud-AppComponents.png" alt="Cloud-AppComponents" /></li>
 </ol>
+
+<p><a href="/connectors/Overview-of-Connectors/">Click</a>to view the configuration details of the Connectors.</p>
 
 <h2 id="create-application">Create Application</h2>
 
@@ -1639,7 +1643,7 @@ Description and the Adapter Technology for adding Specific App (a business requi
 
 <ul>
   <li>Data can be stored about such entities.</li>
-  <li>Each schema has its own characteristics or attributes. For example, <code class="highlighter-rouge">customer id</code>, <code class="highlighter-rouge">address</code>, <code class="highlighter-rouge">phone number</code> are attributes to the <code class="highlighter-rouge">customer</code> entity.</li>
+  <li>Each entity has its own characteristics or attributes. For example, <code class="highlighter-rouge">customer id</code>, <code class="highlighter-rouge">address</code>, <code class="highlighter-rouge">phone number</code> are attributes to the <code class="highlighter-rouge">customer</code> entity.</li>
   <li>Each customer record in the database serves as an entity item.</li>
   <li>The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.</li>
   <li>If a customer is an entity then the complete set of the various fields associated with it is called its schema.</li>
@@ -1773,8 +1777,13 @@ There are few responsibilities of an adapter which are defined as under:</p>
   <li>If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.<br />
 <img src="/staticfiles/root/media/CreateConnection1.png" alt="CreateConnection1" /></li>
   <li>Activate default touchpoint button will be checked by default.
-Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.<br />
-<img src="/staticfiles/root/media/Select-Connection.png" alt="Select-Connection" /></li>
+Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.</li>
+</ol>
+
+<p><strong>Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify the required version of the app.</strong></p>
+
+<p><img src="/staticfiles/root/media/Select-Connection.png" alt="Select-Connection" /></p>
+<ol>
   <li>On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.<br />
 <img src="/staticfiles/root/media/Connection-Protocol.png" alt="Connection-Protocol" /></li>
   <li>On selecting View connection, all the touchpoints of the connection will be displayed.<br />
