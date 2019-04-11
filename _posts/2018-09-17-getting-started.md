@@ -53,8 +53,12 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
 3. The list of app you choose gets added and listed in the app section of the organization as shown below:
 ![AppView](/staticfiles/root/media/AppView.png)
-4. Each app has four different component attached to it - **Schema, Adapter, Extension, Functions & Delete**.
+4. Each `OP supported app` has four different functionality attached to it - **Schema, Adapters, Functions & Delete**.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
+5. For `Cloud Supported Applications` the `Credential button` appears along with the other functionality that are attached.
+![Cloud-AppComponents](/staticfiles/root/media/Cloud-AppComponents.png)
+
+[Click](/connectors/Overview-of-Connectors/)to view the configuration details of the Connectors.
 
 ## Create Application
 
@@ -135,7 +139,7 @@ The steps are given below:
  An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
 
 * Data can be stored about such entities.
-* Each schema has its own characteristics or attributes. For example, `customer id`, `address`, `phone number` are attributes to the `customer` entity. 
+* Each entity has its own characteristics or attributes. For example, `customer id`, `address`, `phone number` are attributes to the `customer` entity. 
 * Each customer record in the database serves as an entity item.
 * The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.
 * If a customer is an entity then the complete set of the various fields associated with it is called its schema.
@@ -257,7 +261,10 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.  
 ![CreateConnection1](/staticfiles/root/media/CreateConnection1.png)
 9. Activate default touchpoint button will be checked by default.
-Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.  
+Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details. 
+
+**Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify the required version of the app.**
+
 ![Select-Connection](/staticfiles/root/media/Select-Connection.png)
 10. On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.  
 ![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)

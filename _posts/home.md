@@ -9,7 +9,8 @@ menus:
         weight: 1
         
 ---
-APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, Ecommerce or Marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the `APPSeCONNECT Cloud` while all the credentials remain intact in the systems own premise. 
+APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, Ecommerce or Marketplaces. 
+It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the `APPSeCONNECT Cloud` while all the credentials remain intact in the systems own premise. 
 
 APPSeCONNECT is a platform that support any third party independent software vendor to work and develop connectors. 
 APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
@@ -60,24 +61,28 @@ A Sneak-Peak to APPSeCONNECT Feature
 
 # APPSeCONNECT Architecture & Usability
 
+Hybrid integration permits on-premises applications to flawlessly integrate with On-Premises Applications and as well cloud-based applications.
+The Hybrid Integration Model also lets the Cloud Based Application to Integrate with similar Cloud Based Applications as well.  
+
 APPSeCONNECT is a generic platform which enables users to deploy, run, and succeed in their integration projects. Using APPSeCONNECT, the users can run their integration processes completely in the cloud without the need to procure any software or the set-up required to operate it.
 ![APPSeCONNECT-Architecture](/staticfiles/root/media/APPSeCONNECT-Architecture.png)
+
 Those who wish to deploy APPSeCONNECT platform, on-premise mode has the elasticity to run their integration processes by deploying the agent(s) behind the firewall, thereby obtaining greater control on where their data resides.
 APPSeCONNECT recognizes that many users need their integration processes to communicate with applications that operate behind corporate firewalls for various security and regulatory compliance reasons.
 APPSeCONNECT system architecture accommodates to both scenarios: `On cloud integration processes or On Premise behind corporate firewalls` to safeguard that corporate data does not get visible to the cloud.
 
 APPSeCONNECT comprises of mainly two components.
-* **Cloud/Web**
-* **Agent**
+**Cloud/Web**
+**Agent***
 
 It is a hybrid solution which can centralize your application(s) communication logic, business logic, and your custom data into configurable endpoints (also called as Touchpoints), which will eventually be downloaded to the APPSeCONNECT thin clients installed on your local server to transform your business data between applications
 
 The server is configured with pre-defined templates which can provide you with a ready-made one-click solution to map basic business requirements with all functional endpoints between apps, while APPSeCONNECT also gives you an option to customize both the pre-defined touchpoints and/or new touchpoints to map your own business processes.
 
-APPSeCONNECT comprises of mainly two components.
-
+APPSeCONNECT Implementation is also categoreized into two types.
 * **Cloud Implementation**
 * **Hybrid Implementation**
+
 
 # Trial Version Request - APPSeCONNECT
 ## Visitor's Free Request Trial
@@ -185,10 +190,17 @@ APPSeCONNECT support large number of apps and you can find and choose the app fr
 The organization-specific app screen page displays all the apps that are present in a specific organization. 
 
 Some of the predefined categories are : 
-1. ERP 
-2. ECommerce
-3. CRM
-4. Accounting, etc. 
+1. ERP – SAP Business One, Microsoft Dynamics NAV, Priority etc
+2. ECommerce – Magento, Shopify, WooCommerce etc.
+3. CRM – Zoho CRM, Dynamics 365 CRM, Sugar CRM etc.
+4. Accounting – HubSpot, Salesforce Marketing Cloud etc.
+
+Also, APPSeCONNECT supports both the Cloud and On Premise Based Application. Some of the examples are:
+
+1.	Cloud Based Applications – Shopify, WooCommerce, Zoho CRM, Magento
+2.	On Premise Application - MS Dynamics NAV, SAP Business One, Uniconta 
+3.	Both Cloud & On-Premise – SAP Business One
+
 
 One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - **Choose App & Add New App**.
 
