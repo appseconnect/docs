@@ -77,7 +77,7 @@ which will eventually be downloaded to the APPSeCONNECT thin clients installed o
 The server is configured with pre-defined templates which can provide you with a ready-made one-click solution to map basic business requirements with all functional endpoints between apps, 
 while APPSeCONNECT also gives you an option to customize both the pre-defined touchpoints and/or new touchpoints to map your own business processes.
 
-APPSeCONNECT Implementation is also categoreized into two types.
+APPSeCONNECT Implementation is also categorized into two types.
 
 * **Cloud Implementation**
 * **Hybrid Implementation**

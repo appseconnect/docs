@@ -1447,6 +1447,42 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Overview of Integration",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 159
+    });
+    
+  
+    idx.add({
+      title: "SAPB1-Magento2",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 160
+    });
+    
+  
+    idx.add({
+      title: "Business Partner Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 161
+    });
+    
+  
+    idx.add({
+      title: "Product Add",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 162
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -3207,6 +3243,50 @@ var store = [
         "title": "Pre-Configured Rule for Misfire Event",
         "url": "/rule/preconfigured-rule-for-misfire-event/",
         "excerpt": "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Integration",
+        "url": "/integration/overview/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAPB1-Magento2",
+        "url": "/integration/SAPB1-Magento2/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Business Partner Add",
+        "url": "/integration/business-partneradd/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Product Add",
+        "url": "/integration/productadd/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
