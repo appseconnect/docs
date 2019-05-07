@@ -269,4 +269,113 @@ with the adapter, you need to a special interface `ICredential` which will allow
 * `Validate(string configurationData)` : This method need to return success to indicate the configurationData is valid and can successfully connect to the destination application.
 * `PartialValidate(IDictionary<string, string> resource)` : This method is used based on tokenized implementation of Partial data required by the credential screen.
 
-Generally it is implemented by calling the normal `Validate` method. 
+Let us consider the code below : 
+```csharp
+public ReturnMessage<IDictionary<string, string>> PartialValidate(IDictionary<string, string> resource)
+        {
+            var result = new ReturnMessage<IDictionary<string, string>>();
+
+            try
+            {
+                if (resource != null)
+                {
+                    var credentialInfo = resource["ConfigData"];
+                    if (!string.IsNullOrWhiteSpace(credentialInfo))
+                    {
+                        this.credentialInfo = ObjectUtils.JsonDeserialize<CredentialModel>(credentialInfo);
+                        var step = resource["Step"];
+                        int stepValue = 0;
+                        if (!string.IsNullOrWhiteSpace(step))
+                            int.TryParse(step, out stepValue);
+                        if (stepValue == 0)
+                        {
+                            string authorizationUrl = string.Concat(this.credentialInfo.BaseUrl.Trim(), "oauth/authorize.php?response_type=code&client_id=", this.credentialInfo.ClientID.Trim(), "&scope=employee:all");
+                            resource["RequestUrl"] = authorizationUrl;
+                            resource["OpenBrowser"] = "true";
+                            resource["Step"] = (++stepValue).ToString();
+                            resource["CallBack"] = this.credentialInfo.RedirectUrl;
+                            resource["ConfigData"] = ObjectUtils.JsonSerializer<CredentialModel>(this.credentialInfo);
+                            result.SetSuccess("Success", resource);
+                        }
+                        else if (stepValue == 1)
+                        {
+                            var responseUrl = resource["ResponseUrl"];
+                            if (!string.IsNullOrWhiteSpace(responseUrl))
+                            {
+                                string[] urlParts = responseUrl.Split('/');
+
+                                foreach (string urlsPart in urlParts)
+                                {
+                                    if (urlsPart.Contains("code"))
+                                    {
+                                        this.tempToken = urlsPart.Split('=')[1];
+                                    }
+                                }
+                                var validateResult = this.ValidateToken();
+                                resource["OpenBrowser"] = "false";
+                                resource["ConfigData"] = ObjectUtils.JsonSerializer<CredentialModel>(this.credentialInfo);
+                                if (validateResult.Status)
+                                    result.SetSuccess(validateResult.Message, resource);
+                                else
+                                    result.SetError(validateResult.Message, resource);
+                            }
+                            else
+                                result.SetError("Response url not received", resource);
+                        }
+                    }
+                    else
+                        result.SetError("Configuration not found", resource);
+                }
+                else
+                {
+                    result.SetError("Resource Dictionary is null");
+                }
+            }
+            catch (Exception ex)
+            {
+                result.SetError(ex.ToString(), resource);
+            }
+            return result;
+        }
+		
+```
+The PartialValidate receives a Dictionary object, which is passed to create a contract between the cloud interface and the adapter.  When the object is passed with certain values, the cloud interface does certain task automatically. Let us look at some of the predefined properties. 
+
+|PropertyName|Description|
+|---|------|
+|ConfigData|While doing conversation from cloud interface, this property provides the credentials that are provided to the user. You generally make use of this properties to do the rest of the calls.|
+|OpenBrowser|This property allows the user to open a browser using an URL provided from the adapter|
+|CallBack|Callback ensures the url which will close the browser. When the callback is received, it will be put in `ResponseUrl` property.|
+|ResponseUrl|It is the url in the browser for which callback is received.|
+
+Here in the method we have also used a `Step` property to store intermediate steps during this partial validation. You can use any dynamic property inside these calls on the context to send and receive intermediate values. 
+
+The validate method on the other hand is a stateless method which receives the complete credential to check and validate whether the authentication is successful. We use a small API call to do the actual validation inside this method. For example, if you have a dummy API to return server time for an authenticatied user, you might want to call this API to see whether the call is successful or not. 
+
+```csharp
+public ReturnMessage<bool> Validate(string configurationData)
+        {
+            var result = new ReturnMessage<bool>();
+
+            try
+            {
+                this._credentialInfo = ObjectUtils.JsonDeserialize<CredentialModel>(configurationData);
+                if (this._credentialInfo != null)
+                {
+                    //ToDo: Call an API to see if _credentialInfo is valid.  
+                    result.SetSuccess("Validation successful");
+                }
+                else
+                {
+                    result.SetError("Credential is not valid.");
+                }
+            }
+            catch (Exception e)
+            {
+                result.SetError(e.ToString());
+            }
+
+            return result;
+        }
+```
+Here you should check the validity of the credential and return success or failure respectively. 

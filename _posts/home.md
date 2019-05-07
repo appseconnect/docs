@@ -64,8 +64,9 @@ A Sneak-Peak to APPSeCONNECT Feature
 Hybrid integration permits on-premises applications to flawlessly integrate with On-Premises Applications and as well cloud-based applications.
 The Hybrid Integration Model also lets the Cloud Based Application to Integrate with similar Cloud Based Applications as well.  
 
-APPSeCONNECT is a generic platform which enables users to deploy, run, and succeed in their integration projects. Using APPSeCONNECT, the users can run their integration processes completely in the cloud without the need to procure any software or the set-up required to operate it.
-![APPSeCONNECT-Architecture](/staticfiles/root/media/APPSeCONNECT-Architecture.png)
+APPSeCONNECT is a generic platform which enables users to deploy, run, and succeed in their integration projects. Using APPSeCONNECT, the users can run their integration processes completely in the cloud without the need to procure any software or the set-up required to operate it.  
+
+![APPSeCONNECT-Architecture](/staticfiles/root/media/APPSeCONNECT-Architecture.png)   
 
 Those who wish to deploy APPSeCONNECT platform, on-premise mode has the elasticity to run their integration processes by deploying the agent(s) behind the firewall, thereby obtaining greater control on where their data resides.
 APPSeCONNECT recognizes that many users need their integration processes to communicate with applications that operate behind corporate firewalls for various security and regulatory compliance reasons.
@@ -91,9 +92,9 @@ You can request a free trial version of APPSeCONNECT by visting the portal of AP
 The Free Trial selection option will only showcase the integration on vanilla systems.
 
 1. The Landing page of the APPSeCONNECT Portal gives the option to request for a [FREE TRIAL](https://www.appseconnect.com/free-trial/).
-2. Click the option Free Trial and the following screen appears
-![FreeTrial](/staticfiles/root/media/FreeTrial.png)
-3. A vistors request form for availing trial version opens up as shown below. Here the vistor can put their requirement details.
+2. Click the option Free Trial and the following screen appears                                        
+![FreeTrial](/staticfiles/root/media/FreeTrial.png)                
+3. A vistors request form for availing trial version opens up as shown below. Here the vistor can put their requirement details.                                              
 ![Trial_Form](/staticfiles/root/media/Trial_Form.png)
 4. The form requires the visitors to fill the basic contact details along with the application(s) selection criteria to choose from and the time required to buy the services.
 5. The visitors will complete the form Fill up and click on **Start Free Trial** button given at the end of the form.
@@ -134,7 +135,7 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
 
 Click on portal and this will take you the login page of  APPSeCONNECT Portal.
 
-![Customer_Login](/staticfiles/root/media/Customer_Login.png)
+![Customer_Login](/staticfiles/root/media/Customer_Login.png)                                   
 
 1. The login page has a username and password field. Enter the details there
 2. Login with your  valid email Id and password. Click on Sign In button
@@ -307,23 +308,23 @@ Here you will get the knowhow of APPSeCONNECT Notification and its functionality
 # Adding a Project in Recent Project Tab from Search Box
 
 1. You have logged in successfully as a user. Now  you will be able to search all projects from the search box and from there you will be able to add projects to your recent organization tab list. 
-2. Now the login page will be redirected to a homepage as shown below
+2. Now the login page will be redirected to a homepage as shown below                                       
 ![Dashboardview1](/staticfiles/root/media/Dashboardview1.png)
 3. If you are an existing user, you can search for projects using the search box.
-4. Enter keyword in the search field.
+4. Enter keyword in the search field.                          
 ![Search-Project](/staticfiles/root/media/Search-Project.png)
-5. Now click on Add button and Search field will come up.
+5. Now click on Add button and Search field will come up.                      
 ![Add-SearchProjects](/staticfiles/root/media/Add-SearchProjects.png)
 6.  There is a `cross` and `pin` button. 
 7. If you click on the cross button then already tagged project will be untagged from project tab.
-8. The pin will toggle on or off, where On means the project will not be removed automatically.
+8. The pin will toggle on or off, where On means the project will not be removed automatically.                                     
 ![Pinbar](/staticfiles/root/media/Pinbar.png)
 9. After the pin is in on state that project will go to the first option.
-10. If you minimize the browser size then all project will show the bread button.
-![Projects-View](/staticfiles/root/media/Projects-View.png)
-![Pinned-Projects](/staticfiles/root/media/Pinned-Projects.png)
-11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this. 
-![NewProject-Added](/staticfiles/root/media/NewProject-Added.png)
+10. If you minimize the browser size then all project will show the bread button.                         
+![Projects-View](/staticfiles/root/media/Projects-View.png)                                      
+![Pinned-Projects](/staticfiles/root/media/Pinned-Projects.png)                                             
+11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this.                       
+![NewProject-Added](/staticfiles/root/media/NewProject-Added.png)            
 
 **Protip** 
 - For a new user, Account menu will only be available. For an end user, Administration menu will not be available 

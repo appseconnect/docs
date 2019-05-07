@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="">
+<meta name="description" content="This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters  will drive you to the process of integration between the applications.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters  will drive you to the process of integration between the applications.">
 
 
 
@@ -825,6 +825,24 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/invoice-add/" onclick="selectTab('/integration/invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/productadd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/productadd/" onclick="selectTab('/integration/productadd/', event);" title="Go to Product Add">Product Add</a>
         
@@ -1440,7 +1458,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="SAPB1-Magento2">
-        <meta itemprop="description" content="">
+        <meta itemprop="description" content="This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters  will drive you to the process of integration between the applications.">
         <meta itemprop="datePublished" content="April 11, 2019">
         
 
@@ -1509,7 +1527,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -1521,11 +1539,81 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#prerequisites-of-integration">Prerequisites of Integration</a></li>
+  <li><a href="#list-of-master-data-processes">List of Master Data Processes</a></li>
+  <li><a href="#table-of-integration-scenarios-for-sapb1-magento2-application-is-given-below">Table of Integration scenarios for SAPB1-Magento2 Application is given below:</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <p>This section of the document will given you an overview of <strong>SAP B1- Magento 2</strong> Integration and the subsequent chapters  will drive 
+you to the process of integration between the applications.</p>
+
+<p>The basic pre-requisite and list of Master Data Processess for Integration is given below:</p>
+
+<h2 id="prerequisites-of-integration">Prerequisites of Integration</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal and select the app MAGENTO2 and SAP Business One (≥8.8).</li>
+  <li>Navigate to the connections module and <a href="/getting-started/#creating-connection--executing-the-touchpoint">create a connection</a> for both the selected applications.</li>
+  <li>Now navigate to the Workflow module, you can either <a href="/workflow/steps-to-create-your-first-workflow/">create a workflow</a> or 
+can <a href="/workflow/steps-to-choose-your-workflow/">choose a pre-packaged workflow</a>.</li>
+  <li>Before Integrating with <a href="/connectors/Sap-Business-One/">SAP Business One</a> and <a href="/connectors/Magento2/">Magento2</a>, all the master data needs to be synced. Master Data Sync is used 
+for synchronizing set of core information (viz. Websites, Product Category, Attribute set, and Tax Class etc.) from E-commerce database to SAP B1.</li>
+</ol>
+
+<h2 id="list-of-master-data-processes">List of Master Data Processes</h2>
+
+<p>a.	Master Data Add [Attributes/Attribute Sets/Attribute Options]: - All the information about the Attributes, Attribute Sets and Attribute Options in Magento will be synced into SAP B1.                     <br />
+c.	Master Data Add [Website List]: -  All the information about the Magento websites will be synced into SAP B1.            <br />
+d.	Master Data Add [Customer Groups]: - All the information about the Magento Customer Groups will be synced into SAP B1.              <br />
+e.	Master Data Add [Tax Class]: - All the information about the Magento Product Tax Class will be synced into SAP B1.        <br />
+f.	Master Data Add [Country]: - All the information about the Magento country will be synced.</p>
+
+<p>Once all the core information is synced, you can proceed with further integrations.</p>
+
+<p>You will also get detailed understanding of the <a href="/connectors/Sap-Business-One/">SAPB1</a> &amp; <a href="/connectors/Magento2/">Magento2</a> application agent configuration, endpoints, attibutes and actions required for integration.</p>
+
+<h2 id="table-of-integration-scenarios-for-sapb1-magento2-application-is-given-below">Table of Integration scenarios for SAPB1-Magento2 Application is given below:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Integration Areas</th>
+      <th>Source &amp; Destination Application</th>
+      <th>Dependencies for Integration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="">Business Partner Add</a></td>
+      <td>Magento2-SAPB1</td>
+      <td>Contact Person Update (Only for B2B Customers)</td>
+    </tr>
+    <tr>
+      <td><a href="">Product Add</a></td>
+      <td>SAPB1-Magento2</td>
+      <td>Product Response Sync</td>
+    </tr>
+    <tr>
+      <td><a href="">Inventory Update</a></td>
+      <td>SAPB1-Magento2</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="">Order Add</a></td>
+      <td>Magento2-SAPB1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="">Invoice Add</a></td>
+      <td>Magento2-SAPB1</td>
+      <td>Payment with cheque, Payment with Bank Transfer, Payment with Cash</td>
+    </tr>
+  </tbody>
+</table>
+
 
                 
             </section>
@@ -2868,6 +2956,30 @@
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -2887,6 +2999,39 @@
                             
                             
                             <li>
+                                <a href="/integration/order-add/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Order Add
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/integration/invoice-add/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Invoice Add
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/integration/inventoryupdate/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Inventory Update
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
                                 <a href="/integration/business-partneradd/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     Business Partner Add
@@ -2896,15 +3041,6 @@
                             
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/integration/overview/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Overview of Integration
-                                </a>
-                            </li>
                             
                             
                             

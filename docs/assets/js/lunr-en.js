@@ -1458,7 +1458,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "SAPB1-Magento2",
-      excerpt: "\n",
+      excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 160
@@ -1475,11 +1475,38 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Product Add",
-      excerpt: "\n",
+      title: "Inventory Update",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 162
+    });
+    
+  
+    idx.add({
+      title: "Invoice Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 163
+    });
+    
+  
+    idx.add({
+      title: "Order Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 164
+    });
+    
+  
+    idx.add({
+      title: "Product Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 165
     });
     
   
@@ -3264,7 +3291,7 @@ var store = [
       {
         "title": "SAPB1-Magento2",
         "url": "/integration/SAPB1-Magento2/",
-        "excerpt": "\n",
+        "excerpt": "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3284,9 +3311,42 @@ var store = [
     
       
       {
+        "title": "Inventory Update",
+        "url": "/integration/inventoryupdate/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Invoice Add",
+        "url": "/integration/invoice-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Order Add",
+        "url": "/integration/order-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Product Add",
         "url": "/integration/productadd/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

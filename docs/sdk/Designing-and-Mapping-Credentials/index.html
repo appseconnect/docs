@@ -825,6 +825,24 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/invoice-add/" onclick="selectTab('/integration/invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/productadd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/productadd/" onclick="selectTab('/integration/productadd/', event);" title="Go to Product Add">Product Add</a>
         
@@ -1517,7 +1535,7 @@
 
 
 
-  6 minute read
+  8 minute read
 </p>
                 
                 
@@ -1794,7 +1812,134 @@ with the adapter, you need to a special interface <code class="highlighter-rouge
   <li><code class="highlighter-rouge">PartialValidate(IDictionary&lt;string, string&gt; resource)</code> : This method is used based on tokenized implementation of Partial data required by the credential screen.</li>
 </ul>
 
-<p>Generally it is implemented by calling the normal <code class="highlighter-rouge">Validate</code> method.</p>
+<p>Let us consider the code below :</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="n">IDictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;&gt;</span> <span class="nf">PartialValidate</span><span class="p">(</span><span class="n">IDictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">resource</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="n">IDictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;&gt;();</span>
+
+            <span class="k">try</span>
+            <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">resource</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="kt">var</span> <span class="n">credentialInfo</span> <span class="p">=</span> <span class="n">resource</span><span class="p">[</span><span class="s">"ConfigData"</span><span class="p">];</span>
+                    <span class="k">if</span> <span class="p">(!</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">credentialInfo</span><span class="p">))</span>
+                    <span class="p">{</span>
+                        <span class="k">this</span><span class="p">.</span><span class="n">credentialInfo</span> <span class="p">=</span> <span class="n">ObjectUtils</span><span class="p">.</span><span class="n">JsonDeserialize</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="n">credentialInfo</span><span class="p">);</span>
+                        <span class="kt">var</span> <span class="n">step</span> <span class="p">=</span> <span class="n">resource</span><span class="p">[</span><span class="s">"Step"</span><span class="p">];</span>
+                        <span class="kt">int</span> <span class="n">stepValue</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+                        <span class="k">if</span> <span class="p">(!</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">step</span><span class="p">))</span>
+                            <span class="kt">int</span><span class="p">.</span><span class="nf">TryParse</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="k">out</span> <span class="n">stepValue</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">stepValue</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+                        <span class="p">{</span>
+                            <span class="kt">string</span> <span class="n">authorizationUrl</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="nf">Concat</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">credentialInfo</span><span class="p">.</span><span class="n">BaseUrl</span><span class="p">.</span><span class="nf">Trim</span><span class="p">(),</span> <span class="s">"oauth/authorize.php?response_type=code&amp;client_id="</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="n">credentialInfo</span><span class="p">.</span><span class="n">ClientID</span><span class="p">.</span><span class="nf">Trim</span><span class="p">(),</span> <span class="s">"&amp;scope=employee:all"</span><span class="p">);</span>
+                            <span class="n">resource</span><span class="p">[</span><span class="s">"RequestUrl"</span><span class="p">]</span> <span class="p">=</span> <span class="n">authorizationUrl</span><span class="p">;</span>
+                            <span class="n">resource</span><span class="p">[</span><span class="s">"OpenBrowser"</span><span class="p">]</span> <span class="p">=</span> <span class="s">"true"</span><span class="p">;</span>
+                            <span class="n">resource</span><span class="p">[</span><span class="s">"Step"</span><span class="p">]</span> <span class="p">=</span> <span class="p">(++</span><span class="n">stepValue</span><span class="p">).</span><span class="nf">ToString</span><span class="p">();</span>
+                            <span class="n">resource</span><span class="p">[</span><span class="s">"CallBack"</span><span class="p">]</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">credentialInfo</span><span class="p">.</span><span class="n">RedirectUrl</span><span class="p">;</span>
+                            <span class="n">resource</span><span class="p">[</span><span class="s">"ConfigData"</span><span class="p">]</span> <span class="p">=</span> <span class="n">ObjectUtils</span><span class="p">.</span><span class="n">JsonSerializer</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="k">this</span><span class="p">.</span><span class="n">credentialInfo</span><span class="p">);</span>
+                            <span class="n">result</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Success"</span><span class="p">,</span> <span class="n">resource</span><span class="p">);</span>
+                        <span class="p">}</span>
+                        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">stepValue</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span>
+                        <span class="p">{</span>
+                            <span class="kt">var</span> <span class="n">responseUrl</span> <span class="p">=</span> <span class="n">resource</span><span class="p">[</span><span class="s">"ResponseUrl"</span><span class="p">];</span>
+                            <span class="k">if</span> <span class="p">(!</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">responseUrl</span><span class="p">))</span>
+                            <span class="p">{</span>
+                                <span class="kt">string</span><span class="p">[]</span> <span class="n">urlParts</span> <span class="p">=</span> <span class="n">responseUrl</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="sc">'/'</span><span class="p">);</span>
+
+                                <span class="k">foreach</span> <span class="p">(</span><span class="kt">string</span> <span class="n">urlsPart</span> <span class="k">in</span> <span class="n">urlParts</span><span class="p">)</span>
+                                <span class="p">{</span>
+                                    <span class="k">if</span> <span class="p">(</span><span class="n">urlsPart</span><span class="p">.</span><span class="nf">Contains</span><span class="p">(</span><span class="s">"code"</span><span class="p">))</span>
+                                    <span class="p">{</span>
+                                        <span class="k">this</span><span class="p">.</span><span class="n">tempToken</span> <span class="p">=</span> <span class="n">urlsPart</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="sc">'='</span><span class="p">)[</span><span class="m">1</span><span class="p">];</span>
+                                    <span class="p">}</span>
+                                <span class="p">}</span>
+                                <span class="kt">var</span> <span class="n">validateResult</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">ValidateToken</span><span class="p">();</span>
+                                <span class="n">resource</span><span class="p">[</span><span class="s">"OpenBrowser"</span><span class="p">]</span> <span class="p">=</span> <span class="s">"false"</span><span class="p">;</span>
+                                <span class="n">resource</span><span class="p">[</span><span class="s">"ConfigData"</span><span class="p">]</span> <span class="p">=</span> <span class="n">ObjectUtils</span><span class="p">.</span><span class="n">JsonSerializer</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="k">this</span><span class="p">.</span><span class="n">credentialInfo</span><span class="p">);</span>
+                                <span class="k">if</span> <span class="p">(</span><span class="n">validateResult</span><span class="p">.</span><span class="n">Status</span><span class="p">)</span>
+                                    <span class="n">result</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="n">validateResult</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span> <span class="n">resource</span><span class="p">);</span>
+                                <span class="k">else</span>
+                                    <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="n">validateResult</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span> <span class="n">resource</span><span class="p">);</span>
+                            <span class="p">}</span>
+                            <span class="k">else</span>
+                                <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="s">"Response url not received"</span><span class="p">,</span> <span class="n">resource</span><span class="p">);</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                    <span class="k">else</span>
+                        <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="s">"Configuration not found"</span><span class="p">,</span> <span class="n">resource</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="k">else</span>
+                <span class="p">{</span>
+                    <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="s">"Resource Dictionary is null"</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="n">ex</span><span class="p">.</span><span class="nf">ToString</span><span class="p">(),</span> <span class="n">resource</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+        <span class="p">}</span>
+		
+</code></pre></div></div>
+<p>The PartialValidate receives a Dictionary object, which is passed to create a contract between the cloud interface and the adapter.  When the object is passed with certain values, the cloud interface does certain task automatically. Let us look at some of the predefined properties.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PropertyName</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ConfigData</td>
+      <td>While doing conversation from cloud interface, this property provides the credentials that are provided to the user. You generally make use of this properties to do the rest of the calls.</td>
+    </tr>
+    <tr>
+      <td>OpenBrowser</td>
+      <td>This property allows the user to open a browser using an URL provided from the adapter</td>
+    </tr>
+    <tr>
+      <td>CallBack</td>
+      <td>Callback ensures the url which will close the browser. When the callback is received, it will be put in <code class="highlighter-rouge">ResponseUrl</code> property.</td>
+    </tr>
+    <tr>
+      <td>ResponseUrl</td>
+      <td>It is the url in the browser for which callback is received.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here in the method we have also used a <code class="highlighter-rouge">Step</code> property to store intermediate steps during this partial validation. You can use any dynamic property inside these calls on the context to send and receive intermediate values.</p>
+
+<p>The validate method on the other hand is a stateless method which receives the complete credential to check and validate whether the authentication is successful. We use a small API call to do the actual validation inside this method. For example, if you have a dummy API to return server time for an authenticatied user, you might want to call this API to see whether the call is successful or not.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;</span> <span class="nf">Validate</span><span class="p">(</span><span class="kt">string</span> <span class="n">configurationData</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;();</span>
+
+            <span class="k">try</span>
+            <span class="p">{</span>
+                <span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span> <span class="p">=</span> <span class="n">ObjectUtils</span><span class="p">.</span><span class="n">JsonDeserialize</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="n">configurationData</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">_credentialInfo</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="c1">//ToDo: Call an API to see if _credentialInfo is valid.  </span>
+                    <span class="n">result</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Validation successful"</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="k">else</span>
+                <span class="p">{</span>
+                    <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="s">"Credential is not valid."</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">result</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="nf">ToString</span><span class="p">());</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+<p>Here you should check the validity of the credential and return success or failure respectively.</p>
 
                 
             </section>
@@ -3145,8 +3290,38 @@ with the adapter, you need to a special interface <code class="highlighter-rouge
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
