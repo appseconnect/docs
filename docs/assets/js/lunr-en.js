@@ -1447,6 +1447,69 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Overview of Integration",
+      excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 159
+    });
+    
+  
+    idx.add({
+      title: "SAPB1-Magento2",
+      excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 160
+    });
+    
+  
+    idx.add({
+      title: "Business Partner Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 161
+    });
+    
+  
+    idx.add({
+      title: "Inventory Update",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 162
+    });
+    
+  
+    idx.add({
+      title: "Invoice Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 163
+    });
+    
+  
+    idx.add({
+      title: "Order Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 164
+    });
+    
+  
+    idx.add({
+      title: "Product Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 165
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -3207,6 +3270,83 @@ var store = [
         "title": "Pre-Configured Rule for Misfire Event",
         "url": "/rule/preconfigured-rule-for-misfire-event/",
         "excerpt": "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Integration",
+        "url": "/integration/overview/",
+        "excerpt": "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAPB1-Magento2",
+        "url": "/integration/SAPB1-Magento2/",
+        "excerpt": "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Business Partner Add",
+        "url": "/integration/business-partneradd/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Inventory Update",
+        "url": "/integration/inventoryupdate/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Invoice Add",
+        "url": "/integration/invoice-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Order Add",
+        "url": "/integration/order-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Product Add",
+        "url": "/integration/productadd/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -9,7 +9,8 @@ menus:
         weight: 1
         
 ---
-APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, Ecommerce or Marketplaces. It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the `APPSeCONNECT Cloud` while all the credentials remain intact in the systems own premise. 
+APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, Ecommerce or Marketplaces. 
+It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the `APPSeCONNECT Cloud` while all the credentials remain intact in the systems own premise. 
 
 APPSeCONNECT is a platform that support any third party independent software vendor to work and develop connectors. 
 APPSeCONNECT installs an Agent on the system's own premises, which downloads all the configurations from cloud to use them for synchronization operations done on-premise. 
@@ -60,24 +61,29 @@ A Sneak-Peak to APPSeCONNECT Feature
 
 # APPSeCONNECT Architecture & Usability
 
-APPSeCONNECT is a generic platform which enables users to deploy, run, and succeed in their integration projects. Using APPSeCONNECT, the users can run their integration processes completely in the cloud without the need to procure any software or the set-up required to operate it.
-![APPSeCONNECT-Architecture](/staticfiles/root/media/APPSeCONNECT-Architecture.png)
+Hybrid integration permits on-premises applications to flawlessly integrate with On-Premises Applications and as well cloud-based applications.
+The Hybrid Integration Model also lets the Cloud Based Application to Integrate with similar Cloud Based Applications as well.  
+
+APPSeCONNECT is a generic platform which enables users to deploy, run, and succeed in their integration projects. Using APPSeCONNECT, the users can run their integration processes completely in the cloud without the need to procure any software or the set-up required to operate it.  
+
+![APPSeCONNECT-Architecture](/staticfiles/root/media/APPSeCONNECT-Architecture.png)   
+
 Those who wish to deploy APPSeCONNECT platform, on-premise mode has the elasticity to run their integration processes by deploying the agent(s) behind the firewall, thereby obtaining greater control on where their data resides.
 APPSeCONNECT recognizes that many users need their integration processes to communicate with applications that operate behind corporate firewalls for various security and regulatory compliance reasons.
 APPSeCONNECT system architecture accommodates to both scenarios: `On cloud integration processes or On Premise behind corporate firewalls` to safeguard that corporate data does not get visible to the cloud.
 
 APPSeCONNECT comprises of mainly two components.
-* **Cloud/Web**
-* **Agent**
+**Cloud/Web**
+**Agent***
 
 It is a hybrid solution which can centralize your application(s) communication logic, business logic, and your custom data into configurable endpoints (also called as Touchpoints), which will eventually be downloaded to the APPSeCONNECT thin clients installed on your local server to transform your business data between applications
 
 The server is configured with pre-defined templates which can provide you with a ready-made one-click solution to map basic business requirements with all functional endpoints between apps, while APPSeCONNECT also gives you an option to customize both the pre-defined touchpoints and/or new touchpoints to map your own business processes.
 
-APPSeCONNECT comprises of mainly two components.
-
+APPSeCONNECT Implementation is also categoreized into two types.
 * **Cloud Implementation**
 * **Hybrid Implementation**
+
 
 # Trial Version Request - APPSeCONNECT
 ## Visitor's Free Request Trial
@@ -86,9 +92,9 @@ You can request a free trial version of APPSeCONNECT by visting the portal of AP
 The Free Trial selection option will only showcase the integration on vanilla systems.
 
 1. The Landing page of the APPSeCONNECT Portal gives the option to request for a [FREE TRIAL](https://www.appseconnect.com/free-trial/).
-2. Click the option Free Trial and the following screen appears
-![FreeTrial](/staticfiles/root/media/FreeTrial.png)
-3. A vistors request form for availing trial version opens up as shown below. Here the vistor can put their requirement details.
+2. Click the option Free Trial and the following screen appears                                        
+![FreeTrial](/staticfiles/root/media/FreeTrial.png)                
+3. A vistors request form for availing trial version opens up as shown below. Here the vistor can put their requirement details.                                              
 ![Trial_Form](/staticfiles/root/media/Trial_Form.png)
 4. The form requires the visitors to fill the basic contact details along with the application(s) selection criteria to choose from and the time required to buy the services.
 5. The visitors will complete the form Fill up and click on **Start Free Trial** button given at the end of the form.
@@ -129,7 +135,7 @@ Once registered, make sure you are logged in to the APPSeCONNECT Community to vi
 
 Click on portal and this will take you the login page of  APPSeCONNECT Portal.
 
-![Customer_Login](/staticfiles/root/media/Customer_Login.png)
+![Customer_Login](/staticfiles/root/media/Customer_Login.png)                                   
 
 1. The login page has a username and password field. Enter the details there
 2. Login with your  valid email Id and password. Click on Sign In button
@@ -185,10 +191,17 @@ APPSeCONNECT support large number of apps and you can find and choose the app fr
 The organization-specific app screen page displays all the apps that are present in a specific organization. 
 
 Some of the predefined categories are : 
-1. ERP 
-2. ECommerce
-3. CRM
-4. Accounting, etc. 
+1. ERP – SAP Business One, Microsoft Dynamics NAV, Priority etc
+2. ECommerce – Magento, Shopify, WooCommerce etc.
+3. CRM – Zoho CRM, Dynamics 365 CRM, Sugar CRM etc.
+4. Accounting – HubSpot, Salesforce Marketing Cloud etc.
+
+Also, APPSeCONNECT supports both the Cloud and On Premise Based Application. Some of the examples are:
+
+1.	Cloud Based Applications – Shopify, WooCommerce, Zoho CRM, Magento
+2.	On Premise Application - MS Dynamics NAV, SAP Business One, Uniconta 
+3.	Both Cloud & On-Premise – SAP Business One
+
 
 One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - **Choose App & Add New App**.
 
@@ -295,23 +308,23 @@ Here you will get the knowhow of APPSeCONNECT Notification and its functionality
 # Adding a Project in Recent Project Tab from Search Box
 
 1. You have logged in successfully as a user. Now  you will be able to search all projects from the search box and from there you will be able to add projects to your recent organization tab list. 
-2. Now the login page will be redirected to a homepage as shown below
+2. Now the login page will be redirected to a homepage as shown below                                       
 ![Dashboardview1](/staticfiles/root/media/Dashboardview1.png)
 3. If you are an existing user, you can search for projects using the search box.
-4. Enter keyword in the search field.
+4. Enter keyword in the search field.                          
 ![Search-Project](/staticfiles/root/media/Search-Project.png)
-5. Now click on Add button and Search field will come up.
+5. Now click on Add button and Search field will come up.                      
 ![Add-SearchProjects](/staticfiles/root/media/Add-SearchProjects.png)
 6.  There is a `cross` and `pin` button. 
 7. If you click on the cross button then already tagged project will be untagged from project tab.
-8. The pin will toggle on or off, where On means the project will not be removed automatically.
+8. The pin will toggle on or off, where On means the project will not be removed automatically.                                     
 ![Pinbar](/staticfiles/root/media/Pinbar.png)
 9. After the pin is in on state that project will go to the first option.
-10. If you minimize the browser size then all project will show the bread button.
-![Projects-View](/staticfiles/root/media/Projects-View.png)
-![Pinned-Projects](/staticfiles/root/media/Pinned-Projects.png)
-11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this. 
-![NewProject-Added](/staticfiles/root/media/NewProject-Added.png)
+10. If you minimize the browser size then all project will show the bread button.                         
+![Projects-View](/staticfiles/root/media/Projects-View.png)                                      
+![Pinned-Projects](/staticfiles/root/media/Pinned-Projects.png)                                             
+11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this.                       
+![NewProject-Added](/staticfiles/root/media/NewProject-Added.png)            
 
 **Protip** 
 - For a new user, Account menu will only be available. For an end user, Administration menu will not be available 

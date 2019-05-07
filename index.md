@@ -22,10 +22,14 @@ Generally Data integration happens between:
 * Cloud to Cloud Applications: For e.g `Salesforce and Shopify`
 * Cloud to On-Premise / On-Premise to On-Premise Applications (Hybrid): For e.g `Salesforce and SAP Business One`
 
+
 # Hybrid Integration Model
 
-Hybrid integration permits on-premises applications to flawlessly integrate with cloud-based applications. Most businesses presently prefer connecting their existing custom and packaged solutions and create a single platform for new services. 
-APPSeCONNECT helps enterprises seamlessly connect applications both on-premises and in the cloud, allowing the development of hybrid architecture in which you have control over the data passed between specific applications.  
+Hybrid integration permits on-premises applications to flawlessly integrate with On-Premises Applications and as well cloud-based 
+applications. The Hybrid Integration Model also lets the Cloud Based Application to Integrate with similar Cloud Based 
+Applications as well.  Therefore, most businesses presently prefer connecting their existing custom and packaged solutions and 
+create a single platform for new services. APPSeCONNECT helps enterprises seamlessly connect applications both on-premises and 
+in the cloud, allowing the development of hybrid architecture in which you have control over the data passed between specific applications.
 
 # Why is Cloud Integration necessary?
 
@@ -33,16 +37,17 @@ APPSeCONNECT helps enterprises seamlessly connect applications both on-premises 
 * Totally Flexible Platform = Simple browser-based management that requires no additional on premise infrastructure
 * Scale up or down more Easily = Easy Scaling in terms of app count, user count or both
 
-
 # APPSeCONNECT as iPaaS
 
 APPSeCONNECT is a smart and robust integration platform (iPaaS) and benefits the end user with incredible features and provide solutions to meet the ever-changing business requirements. 
 `APPSeCONNECT as iPaaS - Save Time and Effort, Focus on Profitability & Boost Productivity`
 
 ## Save Time and Effort
-Seamlessly connect business-critical applications and save huge amount of time and effort by automating business processes
+Seamlessly connect business-critical applications and save huge amount of time and effort by automating business processes.
+
 ## Focus on Profitability
 Streamlined business processes lets you focus on what matters the most: increasing customer satisfaction, revenue, growth!
+
 ## Boost Productivity
 Eliminate the need for manual data entry, resulting reduced risk of errors, increased productivity, quality and a happier workforce
 
@@ -66,16 +71,20 @@ APPSeCONNECT comprises of mainly two components.
 * **Cloud/Web**
 * **Agent**
 
-It is a hybrid solution which can centralize your application(s) communication logic, business logic, and your custom data into configurable endpoints (also called as Touchpoints), which will eventually be downloaded to the APPSeCONNECT thin clients installed on your local server to transform your business data between applications
+It is a hybrid solution which can centralize your application(s) communication logic, business logic, and your custom data into configurable endpoints (also called as Touchpoints), 
+which will eventually be downloaded to the APPSeCONNECT thin clients installed on your local server to transform your business data between applications
 
-The server is configured with pre-defined templates which can provide you with a ready-made one-click solution to map basic business requirements with all functional endpoints between apps, while APPSeCONNECT also gives you an option to customize both the pre-defined touchpoints and/or new touchpoints to map your own business processes.
+The server is configured with pre-defined templates which can provide you with a ready-made one-click solution to map basic business requirements with all functional endpoints between apps, 
+while APPSeCONNECT also gives you an option to customize both the pre-defined touchpoints and/or new touchpoints to map your own business processes.
 
-APPSeCONNECT comprises of mainly two components.
+APPSeCONNECT Implementation is also categorized into two types.
 
 * **Cloud Implementation**
 * **Hybrid Implementation**
 
+
 # Trial Version Request - APPSeCONNECT
+
 ## Visitor's Free Request Trial
 You can request a free trial version of APPSeCONNECT by visting the portal of APPSeCONNECT  and clicking on [https://www.appseconnect.com/](https://www.appseconnect.com/).
 
@@ -114,11 +123,10 @@ You require to sign up for an account with APPSeCONNECT Community.
 
 5. You are now logged in to the APPSeCONNECT portal.
 
-6. To change the password, go to [getting-started](/appseconnect/getting-started/) and click on `My Profile- Change Details` to change your password.
+6. To change the password, go to [getting-started](/getting-started/) and click on `My Profile- Change Details` to change your password.
 
 **ProTip:** If a user cannot access the '/temporarypassword' sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.
 {: .notice--info}
-
 
 ## B. Existing Customer Logging Information
 Once registered, make sure you are logged in to the APPSeCONNECT Community to view and manage your support cases.
@@ -156,9 +164,7 @@ Dashboard is the default page which you can view after logging in to the APPSeCO
 4. List of today's to-do for that user who has logged in.
 5. Shortcut links for variously related menus.
 
-
 ![Dashboard](/staticfiles/root/media/Dashboard.png)
-
 
 Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.
 
@@ -173,28 +179,36 @@ You can see and track all the activities in form of recent feeds directly throug
 4. This is view only menu.
 
 **ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
-{: .notice--info} 
+{: .notice--info}
 
 # C. Choosing App
 
-APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. Any App once added is assigned to a particular category. 
+APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. 
+Any App once added is assigned to a particular category. 
+
 The organization-specific app screen page displays all the apps that are present in a specific organization. 
 
 Some of the predefined categories are : 
-1. ERP 
-2. ECommerce
-3. CRM
-4. Accounting, etc. 
+1. ERP - SAP Business One, Microsoft Dynamics NAV, Priority etc
+2. ECommerce - Magento, Shopify, WooCommerce etc.
+3. CRM - Zoho CRM, Dynamics 365 CRM, Sugar CRM etc.
+4. Accounting - HubSpot, Salesforce Marketing Cloud etc.
 
-One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - **Choose App & Add New App**.
+Also, APPSeCONNECT supports both the Cloud and On Premise Based Application. Some of the examples are:
 
-Go to [Getting Started](/appseconnect/getting-started/) section to view the details of App Selection  &  touchpoint execution.
+1.	Cloud Based Applications - Shopify, WooCommerce, Zoho CRM, Magento
+2.	On Premise Application - MS Dynamics NAV, SAP Business One, Uniconta 
+3.	Both Cloud & On-Premise - SAP Business One
+
+One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - [Choose App](/getting-started/) & [Add New App](/getting-started/)
+
+Go to [Getting Started](/getting-started/) section to view the details of App Selection  &  touchpoint execution.
 
 # D. Connections
 
 The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.
 
-Go to [Getting Started](/home/getting-started/) section to view the details of Creating Connection & Executing the touchpoint
+Go to [Getting Started](/getting-started/) section to view the details of Creating Connection & Executing the touchpoint
 
 # E. API's
 
@@ -285,7 +299,6 @@ Here you will get the knowhow of APPSeCONNECT Notification and its functionality
 1. The notification will display all the organization specific notices and important updates.
 2. The notification detail window will display the notification Description, Priority Level, Severity Level and the Notification expiry date.
 3. The notification expiry date might vary from notification to notification.
-
 
 
 # Adding a Project in Recent Project Tab from Search Box

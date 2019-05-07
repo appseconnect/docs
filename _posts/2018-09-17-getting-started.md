@@ -53,8 +53,12 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
 3. The list of app you choose gets added and listed in the app section of the organization as shown below:
 ![AppView](/staticfiles/root/media/AppView.png)
-4. Each app has four different component attached to it - **Schema, Adapter, Extension, Functions & Delete**.
+4. Each `OP supported app` has four different functionality attached to it - **Schema, Adapters, Functions & Delete**.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
+5. For `Cloud Supported Applications` the `Credential button` appears along with the other functionality that are attached.
+![Cloud-AppComponents](/staticfiles/root/media/Cloud-AppComponents.png)
+
+[Click](/connectors/Overview-of-Connectors/)to view the configuration details of the Connectors.
 
 ## Create Application
 
@@ -135,7 +139,7 @@ The steps are given below:
  An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
 
 * Data can be stored about such entities.
-* Each schema has its own characteristics or attributes. For example, `customer id`, `address`, `phone number` are attributes to the `customer` entity. 
+* Each entity has its own characteristics or attributes. For example, `customer id`, `address`, `phone number` are attributes to the `customer` entity. 
 * Each customer record in the database serves as an entity item.
 * The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.
 * If a customer is an entity then the complete set of the various fields associated with it is called its schema.
@@ -238,6 +242,106 @@ This button enables to delete selected app from the list.
 
 The process of Adding New App is present in the subsequent section of the module.
 
+## Creating Organisational Touchpoint
+
+For mapping the source Entity with the destination entity, for a particular action (like Customer Add, Invoice Add, Sales Order add), 
+touchpoints are executed which pulls and pushes the data from source to destination or vice-versa. With APPSeCONNECT, one can define or 
+create these touchpoints.
+
+This document will help the readers to implement the steps to create organisation touchpoints in portal. 
+
+### Prerequisites for Creating Touchpoint
+
+1.	Need to have valid Credentials for logging into the portal.
+2.	Select the apps and create the connection for which the touchpoint is to be created.
+3.	Identify the template where the touchpoint needs to be created (For Example: Shopify > Priority or Priority > Shopify).
+
+**Note:** APPSeCONNECT follows certain naming conventions, while a touchpoint is created and that is:
+
+{EntityName}: {Action Name} [Special Option/Protocol]
+
+Where:
+Entity Name = Destination (or Target) Applications Entity.
+
+Action Name can be:
+
+**Add: Adding a new item in the Target Application.
+
+Update: Update existing item in the Target Application.
+
+Sync: Add new or Update existing item as per the Item(s) existence in the target application.
+
+Delete: Delete / Remove an existing item from the target application.**
+
+[Special Option/Protocol] can be:
+1.	Guest Customer
+2.	Di API
+3.	Special Price.
+
+**For Example: Business Partner Add (Guest Customer), Master Data Add [Di API], Item Master Data Add [Simple Product]**
+
+### Steps to create an Organisational Touchpoint
+
+1.	Login to the APPSeCONNECT Portal and navigate to the Connections Page.
+2.	Select the Template where you want to create the touchpoint. Make sure the template is selected according to the transformation flow.
+3.	The Connection Page opens. Click on the `Add New Button` for creating the touchpoint.
+![create-touchpoint1](/staticfiles/root/media/create-touchpoint1.png) 
+4.  The Touchpoint Information Page opens. Fill-up the fields marked with a mandatory symbol (a red coloured asterix) and click on the Continue Button.
+* Name: The name should be the touchpoint name. Ensure that the APPSeCONNECT naming Convention is used for the touchpoint.
+* Group: Select the group type, whether it is `Transactional Touchpoint or Configurational`.       
+**Note: Enable the checkbox for Show in Agent or else, the touchpoint will not be appearing in the Agent even if the touchpoint is ready.**
+![create-touchpoint2](/staticfiles/root/media/create-touchpoint2.png) 
+5.	The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also [Add New Schema](/getting-started/#importing-schemas-and-actions-of-an-application) & [New Action](/getting-started/#importing-schemas-and-actions-of-an-application), by clicking on the respective buttons. Click on the Continue button.               
+**Note: The Schema and the Action should be selected according to the nature of the touchpoint. Suppose, the touchpoint is of Product Add, the Schema and the Action should be selected for the Product only.***
+![create-touchpoint3](/staticfiles/root/media/create-touchpoint3.png) 
+6.	The Target Setup page opens. Fill the mandatory fields - Schema, Action, Protocol, and Method. Similar, to the Source Setup here too `New Schema/New Action` can be added by clicking on the respective buttons. Click Continue Button.
+![create-touchpoint4](/staticfiles/root/media/create-touchpoint4.png) 
+7.  The Transformation/Mapping Page opens. [Click Here](/transformation/overview/) to know more about the Transformation Concept. Click Continue button.
+![create-touchpoint5](/staticfiles/root/media/create-touchpoint5.png) 
+8.  The summary page opens. This page displays the complete details provided for creating the touchpoint. Click  FINISH Button.
+![create-touchpoint6](/staticfiles/root/media/create-touchpoint6.png) 
+**Note: The Organisational Touchpoints can be edited anytime.**
+
+This completes the process of creating an organisational touchpoint. Navigate to the Touchpoint page. Click on the Choose Touchpoint option 
+and click the SELECT Button beside the created Touchpoint. The Touchpoint will be visible in the Touchpoints Page.
+![create-touchpoint7](/staticfiles/root/media/create-touchpoint7.png) 
+
+**Protip**  Once an organization specific touchpoint is created, it will appear on all the similar type connections 
+(in this case, it is created from Shopify to Priority, then this touchpoint will appear for any number of connections for the selected apps) 
+for that organization in the inactive state. Once the connection is activated, it will appear in the Agent. The organization specific 
+touchpoint is once created can only be used inside an organization.
+{: .notice--warning}
+
+## Choosing Touchpoint
+APPSeCONNECT is one such product which always tries keep its process simpler. Features are developed keeping 
+the usability in mind. `Choosing Touchpoint` feature enables the user to select touchpoint from a drop-down list. 
+
+### Prerequisites for Choosing Touchpoint
+
+1.	Need to have a valid APPSeCONNECT Account.
+2.	Choose the Application from the APPS Section.
+3.	Create a connection for the chosen application.
+
+### Steps to implement Choosing Touchpoint 
+
+1.	Login to the AEC Portal with valid credentials and Navigate to the connections page for creating a connection.
+2.	On creating the connection, enable the check box for activating the default touchpoints.         
+**Note: Default Touchpoints are the touchpoints that are available by default, as per the user requirement.**                                  
+On Enabling, all the default touchpoints will be activated for that connection.          
+3.	Click on View the Connection button to navigate to the touchpoint page.
+4.	On opening the touchpoint page, all the default touchpoints for that connection, are displayed in the page. 
+    Also, if any touchpoints are required apart from the default touchpoints, the user can select those from the Choose 
+    Touchpoint option.
+![choose-touchpoint1](/staticfiles/root/media/choose-touchpoint1.png) 
+5.	On clicking the Choose Touchpoint option, list of touchpoints drops down which has the option SELECT.
+![choose-touchpoint2](/staticfiles/root/media/choose-touchpoint2.png) 
+6.  The user can also search the touchpoints present in the list from the Find Touchpoints option. Click on the SELECT Button to activate the same. 
+    Here, the Product: Add touchpoint is Selected.              
+![choose-touchpoint3](/staticfiles/root/media/choose-touchpoint3.png)  
+                          
+![choose-touchpoint4](/staticfiles/root/media/choose-touchpoint4.png)                                    
+The above steps complete the process of Choosing Touchpoint.
+
 ## Creating Connection & Executing the touchpoint
 
 The Connection Page of the Cloud Portal is needed for creating connection between two different Applications. 
@@ -257,7 +361,10 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.  
 ![CreateConnection1](/staticfiles/root/media/CreateConnection1.png)
 9. Activate default touchpoint button will be checked by default.
-Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details.  
+Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details. 
+
+**Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify the required version of the app.**
+
 ![Select-Connection](/staticfiles/root/media/Select-Connection.png)
 10. On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.  
 ![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)
@@ -273,6 +380,35 @@ On clicking the Publish button, all the Touchpoints will be published under the 
 `Lookup Mapping` is an important function under touchpoint selection. 
 Value mapping is a concept which allows the implementer to configure value mapping specific to the application environment such that when the source value is processed, it will be transferred to the destination value automatically. The Value-Mapping is a way to map the special values which needed to be converted by the applications during [transformation](/transformation/overview/).
 Details of Value Mapping will come in subsequent section of the document.
+
+## Copy Connection
+
+This Feature enables the user to copy the connections that was previously created. This not only copies the connection but also 
+the Attribute Mapping and the Lookup Mapping. 
+
+This document helps the users to understand and implement the `Copy Connection` Feature.
+
+### Prerequisites for Copy Connection
+1.	Need to have a valid APPSeCONNECT Account.
+2.	A connection should be ready for it to be copied.
+
+### Steps to Implement Copy Connection 
+
+1.	Login to the APPSeCONNECT Portal and Navigate to the Connection Page.
+2.	[Create a connection](), if no connection is created. 
+3.	On the portal, click on the Drop-Down Button present on the Right Hand, Top-Side Corner of the screen, and select the 
+    `Copy Connection` option.
+ ![copy-connection1](/staticfiles/root/media/copy-connection1.png)
+4.	The Copy Connection window opens. Select the connection from the Drop-Down, which needs to be copied.
+ ![copy-connection2](/staticfiles/root/media/copy-connection2.png)
+
+ ![copy-connection3](/staticfiles/root/media/copy-connection3.png)
+5.	After selecting the connection, enter the connection name. There are two checkboxes here
+a.	Copy Reverse Connection - Enabling this, it copies the both sided connections. 
+b.	Copy Lookup Database - This enables to copy the [Lookup Mappings](/transformation/using-lookups-for-value-exchange/).
+6.	Click on the SAVE Button after the details are incorporated.
+
+**Note: The Copy Connection feature copies the [Attribute Mapping](/transformation/understanding-attribute-mapping/) too.** 
 
 
 ## Configuring Environment - Agent download / Cloud agent configuration
