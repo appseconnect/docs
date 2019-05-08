@@ -1510,6 +1510,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "SAPB1 Add-on 3.1.x Installation OR Upgrade",
+      excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 166
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -3347,6 +3356,17 @@ var store = [
         "title": "Product Add",
         "url": "/integration/productadd/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAPB1 Add-on 3.1.x Installation OR Upgrade",
+        "url": "/connectors/Sap-Business-Addon/",
+        "excerpt": "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
