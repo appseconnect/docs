@@ -1,5 +1,5 @@
 ﻿---
-title: "SAPB1 Add-on 3.1.x Installation OR Upgrade"
+title: "SAPB1 On-Premise Add-on 3.1.x Installation OR Upgrade"
 toc: true
 tag: developers
 category: "Connectors"
