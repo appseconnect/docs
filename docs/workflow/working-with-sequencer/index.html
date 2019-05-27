@@ -610,7 +610,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/deploying-and-executing/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Deploying & Executing workflows">Deploying & Executing workflows</a>
+        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Scheduling, Deploying & Executing workflows">Scheduling, Deploying & Executing workflows</a>
         
         
         
@@ -1544,7 +1544,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -1567,11 +1567,11 @@
 <p>This node is used to order elements by a certain attribute. This node can be applied to any collection of elements. For example, user have data of a collection of orders and I want to process the oldest orders first. User can add a <code class="highlighter-rouge">SEQUENCER</code> node to sort the order based on their creation date.After the data passed through the <code class="highlighter-rouge">SEQUENCER</code> node it will be arranged based on the <code class="highlighter-rouge">SEQUENCER</code> node logic.
 Sequence node have three components</p>
 
-<p>Element Path : Specify the element based on which data will be squenced.</p>
-
-<p>Collection Element Path : XPATH of the parent element under which the sequencer element present.</p>
-
-<p>Sort Order : Ascending or Descending order.</p>
+<ul>
+  <li>Element Path : Specify the element based on which data will be squenced.</li>
+  <li>Collection Element Path : XPATH of the parent element under which the sequencer element present.</li>
+  <li>Sort Order : Ascending or Descending order.</li>
+</ul>
 
 <p>For example if have a data chunk which contains multiple data in below XML format</p>
 <pre><code class="language-XML">&lt;orders&gt;
@@ -1802,7 +1802,44 @@ Sequence node have three components</p>
 </code></pre>
 <p>To sort the order data based on the creation date we have defined the sequencer node in this way.</p>
 
-<p><img src="/staticfiles/workflow-management/media/Sequencer/sequencer.png" alt="Sequencer" /></p>
+<h2 id="prerequisites-for-sequencer">Prerequisites for sequencer</h2>
+
+<ul>
+  <li>You must choose the project in which the user will be added.</li>
+  <li>Install the AEC OP Agent from the portal and login with the portal credentials. <a href="/deployment/Deployment-Configuration/">Click here</a> to know more about the agent setup and configuration.</li>
+  <li>Now Choose two generic app for integration &amp; <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a>.</li>
+  <li>Before executing the workflow for app integration, you should have a valid data in the source application</li>
+  <li>The connection or the workflow design should be designed in the Cloud Portal before implementing sequencer.</li>
+</ul>
+
+<h2 id="steps-to-follow-for-implementing-sequencer-in-workflow">Steps to follow for implementing Sequencer in Workflow</h2>
+
+<ol>
+  <li>Select Sequencer from the Process property, available on the left menu bar of the workflow design page.<br />
+<img src="/staticfiles/workflow-management/media/Sequencer/sequencer1.png" alt="sequencer1" /></li>
+  <li>Drag and Drop the sequencer node inside the Touchpoint group. On releasing the sequencer property 
+windows shows up.<br />
+  a.	Element Path<br />
+  b.	Collection Element Path <br />
+  c.	Sort Order: Ascending or Descending<br />
+<img src="/staticfiles/workflow-management/media/Sequencer/sequencer.png" alt="sequencer" /><br />
+<strong>Note: Both the Fields, Element Path &amp; Collection Element Path are the Mandatory Fields.</strong></li>
+  <li>The Element Path is the xpath of the data that needs to be sequenced and the collection element path should always be a substring of the element path.</li>
+  <li>The screen given below displays a demo (the scenario is discussed above) as how the fields should be provided.<br />
+<img src="/staticfiles/workflow-management/media/Sequencer/sequencer2.png" alt="sequencer2" /></li>
+  <li>On Successfully providing the path, click OK button.</li>
+  <li>If both the fields are same, an error message will be popping up with a message “Invalid Collection Element Path”.</li>
+</ol>
+
+<p><strong>Note:</strong></p>
+<ul>
+  <li>The Collection Element Path is always dependent on the Element Path.</li>
+  <li>On Successfully providing the path, click on the OK button.</li>
+  <li>Providing wrong Collection Element Path will display an error message.</li>
+  <li>Element path and collection path cannot be terminated by back or forward slash.</li>
+  <li>Sequencer will always be implemented inside the Touchpoint Group.</li>
+</ul>
+
 
                 
             </section>

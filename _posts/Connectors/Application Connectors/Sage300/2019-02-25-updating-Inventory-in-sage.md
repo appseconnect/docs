@@ -33,11 +33,11 @@ d.	Cost Decrease - For decreasing the cost in the inventory.
 e.	Both Increase - For Increasing both the cost and the Quantity.
 f.	Both Decrease - For Decreasing both the Cost and the Quantity.
 ![inventoryupdate-sage3](/staticfiles/connectors/media/application-connector/inventoryupdate-sage3.png)
-5. Select the warehouse in the Location tab where the inventory is to be updated.
+5. Select the warehouse in the Location tab where the inventory is to be updated.  
 **Note: The Quantity should be updated in the warehouse, where the item is created. Updating Inventory 
 in different warehouse, will not fetch the products when integrated even if the inventory is successfully
- updated in the ERP.**
-6. Provide the Quantity that is needed to be updated. Click on `Post and Save` button.
+ updated in the ERP.**   
+6. Provide the Quantity that is needed to be updated. Click on `Post and Save` button.    
 ![inventoryupdate-sage4](/staticfiles/connectors/media/application-connector/inventoryupdate-sage4.png)
 
 **Protip:** The Adjustment Date is the date, when the user is saving the updated quantity. The Posting Date is the date when the user wants to post the updated data in the ERP.

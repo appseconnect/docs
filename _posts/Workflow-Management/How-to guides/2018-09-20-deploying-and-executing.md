@@ -1,5 +1,5 @@
 ---
-title: "Deploying & Executing workflows"
+title: "Scheduling, Deploying & Executing workflows"
 toc: true
 tag: developers
 category: "Workflow" 
@@ -7,7 +7,7 @@ menus:
     workflow:
         icon: fa fa-link
         weight: 4
-        title: "Deploying & Executing workflows"
+        title: "Scheduling, Deploying & Executing workflows"
         identifier: deployworkflow 
 
 ---
@@ -16,25 +16,61 @@ integration flow of data between two or more applications. With APPSeCONNECT, yo
 execute and maintain business integrations. In this article we will see how you can use workflow
 runtime to debug and execute workflows.
 
-## Steps
+## Prerequisites
+* You must choose the project in which the user will be added.
+* Install the AEC OP Agent from the portal and login with the portal credentials. [Click here](/deployment/Deployment-Configuration/) to know more about the agent setup and configuration.
+* Now Choose two generic app for integration & [workflow creation](/workflow/steps-to-create-your-first-workflow/).
+* Before executing the workflow for app integration, you should have a valid data in the source application
+* The connection or the workflow design should be done in the Cloud Portal.
 
-1. Start workflow and navigate to Workflow.
+## Creating a Workflow
+
+[Click here](/workflow/steps-to-create-your-first-workflow/) to know more about creating or designing a workflow. The user can also select the workflow, from the [Choose workflow](/workflow/steps-to-choose-your-workflow/) button. 
+
+## Scheduling a Workflow
+
+1.	Navigate to the workflow design area and click on the Schedule button.
+![scheduling-workflow](/staticfiles/workflow-management/media/scheduling-workflow.png) 
+2.	The schedule window shows up. The windows have the following fields as displayed below:
+![scheduling-workflow2](/staticfiles/workflow-management/media/scheduling-workflow2.png)   
+a.	Sync type: This depicts whether the process is Auto or Manual.    
+b.	Repeat: This has three option in the drop-down Every Minute, Daily & Hourly.    
+c.	Repeat Interval: This determines the time gap between the sync processes.     
+d.	End: This field has two options.   
+* Never: If selected, the process will be an infinite loop until stopped.
+* End after a defined repetition: When selected this option, an additional field appears "End After" which
+  depicts the End Time Occurrence.
+3.	After Scheduling the workflow, click OK button.
+
+## Deploying a Workflow
+
+1. After creation and saving of the workflow, navigate to the Environments Tab. 
+![deploying-workflow](/staticfiles/workflow-management/media/deploying-workflow.png) 
+2. The Environment window shows up. Click on the Agent Settings button to confirm the connectivity of the agent with the portal. 
+The Pop up window shown below, confirms the connectivity.
+![deploying-workflow2](/staticfiles/workflow-management/media/deploying-workflow2.png) 
+3. After the confirmation of the connectivity, click on the Deploy Configuration button to deploy the workflow connection
+in the agent. The user can also click on the Update Configuration button in the OP Agent.
+**Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
+and Deploy Configuration should be clicked for the agent that is being used.**
+4. After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.
+
+## Executing the Workflow
+
+1. Start workflow and navigate to Workflow.      
 2. Open the workflow you want to execute or debug.When you open the workflow screen, you will be first
-ported in edit mode. 
-3. Click on Play button to execute a workflow.   
-![Workflow Execution Step1](/staticfiles/workflow-management/media/workflow-execution-step1.png)  
-
-**Protip:** Make sure the environment you have configured for the application is running correctly. 
- {: .notice--info}
+ported in edit mode.       
+3. Click on Play button to execute a workflow.         
+![workflow-execution-step1](/staticfiles/workflow-management/media/workflow-execution-step1.png)      
 4. When you play a workflow, you will be able to see each step of the operation. The nodes will be automatically highlighted during execution of the work.
  - Operation is going on = yellow color
  - Operation successfully executed = green color
- - Operation failed = red color
-![Workflow Execution Step2](/staticfiles/workflow-management/media/workflow-execution-step2.png)
-5. After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.  You can select a node to see a popup appear on the base of the workflow. 
-![Data Inspector Files](/staticfiles/workflow-management/media/data-inspector-files.png)
-6. Each node selection opens a new window from the bottom of the page which will allow you to inspect the process. 
-![Data Inspector Files](/staticfiles/workflow-management/media/data-inspector-files.png)
+ - Operation failed = red color  
+![workflow-execution-step2](/staticfiles/workflow-management/media/workflow-execution-step2.png)
+5. After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.  
+6. The complete execution process of the workflow can be viewed through the [process snapshot](/workflow/list-of-snapshot/).
 
-The data inspector watch window will allow the user to check the logs, data logs and the sync files.
+This ends the process of scheduling workflows.
 
+**Protip:** Make sure the environment you have configured for the application is running correctly. 
+ {: .notice--info}

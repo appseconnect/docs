@@ -610,7 +610,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/deploying-and-executing/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Deploying & Executing workflows">Deploying & Executing workflows</a>
+        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Scheduling, Deploying & Executing workflows">Scheduling, Deploying & Executing workflows</a>
         
         
         
@@ -1569,12 +1569,33 @@ to notify something to the someone or perform a special activity. In case of wor
 APPSeCONNECT, there is a number of actions that you can perform while executing the workflow.</p>
 
 <h3 id="actions-type-of-workflow">Actions Type of Workflow</h3>
-<p>|Action Name|Description|
-|—–|———-|
-|<a href="/workflow/generating-notification-emails/">Email Action</a>|Email action is used to send email notification from inside the workflow such that an email with proper data could be send to the intended users whenever it reaches the action|
-|<a href="/workflow/generating-notification-support-ticket/">Support Ticket Action</a>| A support ticket could be raised to APPSeCONNECT support team to notify them on a problem that occurred directly from within the workflow. A support ticket will be taken care of by APPSeCONNECT support team.|
-|<a href="/workflow/generating-storage-action/">Storage Action</a>|In certain scenario, you want to store or archive some data for later inspection, the storage action is used to store such data from the workflow for future inspection|
-|<a href="/workflow/generating-notification-webhooks/">Webhook Action</a>|Webhooks are special callback which your workflow can generate if a workflow encounters a webhook action. A webhook will require a callback url where it will post certain data which is being configured through workflow|</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/workflow/generating-notification-emails/">Email Action</a></td>
+      <td>Email action is used to send email notification from inside the workflow such that an email with proper data could be send to the intended users whenever it reaches the action.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/generating-notification-support-ticket/">Support Ticket Action</a></td>
+      <td>A support ticket could be raised to APPSeCONNECT support team to notify them on a problem that occurred directly from within the workflow. A support ticket will be taken care of by APPSeCONNECT support team.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/generating-storage-action/">Storage Action</a></td>
+      <td>In certain scenario, you want to store or archive some data for later inspection, the storage action is used to store such data from the workflow for future inspection.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/generating-notification-webhooks/">Webhook Action</a></td>
+      <td>Webhooks are special callback which your workflow can generate if a workflow encounters a webhook action. A webhook will require a callback url where it will post certain data which is being configured through workflow.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>These activities have some scope and limitations which are applied to ensure limiting critical resources.</p>
 

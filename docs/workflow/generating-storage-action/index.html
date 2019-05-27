@@ -610,7 +610,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/deploying-and-executing/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Deploying & Executing workflows">Deploying & Executing workflows</a>
+        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Scheduling, Deploying & Executing workflows">Scheduling, Deploying & Executing workflows</a>
         
         
         
@@ -1544,7 +1544,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -1558,13 +1558,46 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#storage-action">Storage Action</a></li>
+  <li><a href="#prerequisites-for-storage-action">Prerequisites for Storage Action</a></li>
+  <li><a href="#steps-to-follow-for-implementing-storage-in-workflow">Steps to follow for implementing Storage in Workflow</a></li>
 </ul>
                     </nav>
                 </aside>
                 
                 <h2 id="storage-action">Storage Action</h2>
 
-<p>Using this node user can store data in text file during workflow execution for future reference. Created file will be stored in Appseconnect agent folder. For example, if the user wants to store data which are failed through a rule node he can store that data.</p>
+<p>Using this node user can store data in text file during workflow execution for future reference. 
+Created file will be stored in Appseconnect agent folder. For example, if the user wants to store data which are 
+failed through a rule node he can store that data.</p>
+
+<h2 id="prerequisites-for-storage-action">Prerequisites for Storage Action</h2>
+<ul>
+  <li>You must choose the project in which the user will be added.</li>
+  <li>Install the AEC OP Agent from the portal and login with the portal credentials. <a href="/deployment/Deployment-Configuration/">Click here</a> to know more about the agent setup and configuration.</li>
+  <li>Now Choose two generic app for integration &amp; workflow creation.</li>
+  <li>Before executing the workflow for app integration, you should have a valid data in the source application</li>
+  <li>The connection or the workflow design should be designed in the Cloud Portal before implementing storage.</li>
+</ul>
+
+<h2 id="steps-to-follow-for-implementing-storage-in-workflow">Steps to follow for implementing Storage in Workflow</h2>
+
+<ol>
+  <li>Select Storage from the Actions, available on the left menu bar of the workflow design page.<br />
+<img src="/staticfiles/workflow-management/media/storageaction1.png" alt="storageaction1" /></li>
+  <li>Drag and Drop the Storage action in the Workflow Design window and attach the action with the node as required.<br />
+<img src="/staticfiles/workflow-management/media/storageaction2.png" alt="storageaction2" /><br />
+<strong>Note:</strong>
+    <ul>
+      <li>Here, the storage action is attached with the GET node, which will store all the data that are being fetched by the GET node.</li>
+      <li>Provide the Execution Order, if the node has multiple associations with any another node.</li>
+    </ul>
+  </li>
+  <li>The file that are hoarded, are stored in the APPSeCONNECT folder of the C: drive. 
+The default Pathway is C:\ProgramData\APPSeCONNECT</li>
+</ol>
+
+<p><strong>Note: this folder needs to be accessed manually for viewing the data.</strong></p>
+
 
                 
             </section>

@@ -123,7 +123,7 @@ Technology App Creation wizard provides a single screen where input details like
 Description and the Adapter Technology for adding Specific App (a business requirement) can be provided in one go.
 
 The steps are given below:
-1. Go to My Apps section> Choose App> Create Technology App. Click on the drop-down icon and select Create Technology APP.
+1. Go to My Apps section> Choose App> Create Technology App. Click on the drop-down icon and select Create Technology APP.  
 ![TechnologyApp-Creation](/staticfiles/root/media/TechnologyApp-Creation.png)
 2. In the screen, Provide the **APP NAME and DESCRIPTION**, Choose the **Adapter Technology** and click SAVE.  
 ![TechnologyApp-Creation-Screen2](/staticfiles/root/media/TechnologyApp-Creation-Screen2.png)

@@ -28,18 +28,11 @@ Organization Creation & Connection Creation
 The user will execute the flow as given below.
 
 Step 1 to 11 is similar to the execution flow of [basic workflow customer download](/workflow/basic-workflow-customer-download/)
-
 12. The user will now login/signup to Eccomerce (Shopify - App 1) and add sales order, delivery and Invoice. 
-
-
-13. The user will go back to Workflow module and select the saved workflow.
-
+13. The user will go back to Workflow module and select the saved workflow.  
 ![SalesCycle-Invoice-Delivery](/staticfiles/workflow-management/media/SalesCycle-Invoice-Delivery.png)
-
 14. The user will click on RUN button to run the workflow.
-
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
-
 16.  The user will go to SAP B1 (App 2) section to fetch the synced data - Sales Order will sync in Sales Order section, Invoice and delivery in invoice the delivery section. 
 
 ### Alternate Flows 

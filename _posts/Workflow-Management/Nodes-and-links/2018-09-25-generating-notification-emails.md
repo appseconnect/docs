@@ -39,7 +39,7 @@ Here you can view a workflow with touchpoint `Invoice Add` and `Email` Action is
 
 1. Currently these are the tokens present in APPSeCONNECT as shown below. 
 
-![Emailtoken](/staticfiles/workflow-management/media/Email/Emailtoken.png)
+![Emailtokens](/staticfiles/workflow-management/media/Email/Emailtokens.png)
 
 A. Source Input:${SourceInputData}$
 Connects the corresponding Source Input datas with the Email Body.

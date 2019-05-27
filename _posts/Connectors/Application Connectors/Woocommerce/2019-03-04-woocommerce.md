@@ -30,9 +30,9 @@ the credential of the application WooCommerce.
 
 ## Configuring the WooCommerce Adapter
 
-1.	In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce
+1.	In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce    
    ![woocommerce-adapter1](/staticfiles/connectors/media/application-connector/woocommerce-adapter1.png)
-2.  On clicking the + button, the credential panel opens for the application WooCommerce.
+2.  On clicking the + button, the credential panel opens for the application WooCommerce.    
    ![woocommerce-adapter2](/staticfiles/connectors/media/application-connector/woocommerce-adapter2.png)
 3.  The Base URL Endpoint has 2 options in the drop-down.  
 a.	/wp-json/wc/ - This is the newer version of the WooCommerce that support the    WordPress platform for WooCommerce. 
@@ -42,7 +42,7 @@ The version for this WooCommerce version should be <2.6
 4. The API Version is the WooCommerce API Version. The user can have its WC Version by navigating to WooCommerce > Status > WooCommerce Version.
 ![woocommerce-adapter3](/staticfiles/connectors/media/application-connector/woocommerce-adapter3.png)
 **Note: For more details about WC API versions, [click here](https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#introduction)**
-5.	The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.
+5.	The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.    
 ![woocommerce-adapter4](/staticfiles/connectors/media/application-connector/woocommerce-adapter4.png)
 6.  The Base URL is the WooCommerce Base URL. For Ex:http://templatebar.com/Individual/abcd/woocommerce  
 **Note: If the URL has HTTP, the authentication OAuth 1.0 is supported and if the URL has HTTPS, the BASIC Authentication is supported. 
@@ -50,14 +50,15 @@ For both authentication process, the User Interface remains the same.**
 7.	The API Key and the API Secret is generated from the WooCommerce platform. Navigate to WooCommerce > Settings > Advanced > REST API > ADD Key 
 ![woocommerce-adapter5](/staticfiles/connectors/media/application-connector/woocommerce-adapter5.png)
 8.	Provide the details in the field provided in the WC platform and click on the Generate API Key Button.
-a.	Description: This is the field for API Description.
-b.	User: This field is for specifying the User Type. The user should be as ADMIN 
-c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.
-![woocommerce-adapter6](/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png)
-9.	Input the generated API Key and the API Secret in the Agent.
-![woocommerce-adapter7](/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png)
-**Note: The Consumer Key is the API Key and the Consumer Secret is the API Secret.**
-10.	Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.
+
+a.	Description: This is the field for API Description.  
+b.	User: This field is for specifying the User Type. The user should be as ADMIN   
+c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.    
+![woocommerce-adapter6](/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png)  
+9.	Input the generated API Key and the API Secret in the Agent.    
+![woocommerce-adapter7](/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png)  
+**Note: The Consumer Key is the API Key and the Consumer Secret is the API Secret.**  
+10.	Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.      
 ![woocommerce-adapter8](/staticfiles/connectors/media/application-connector/woocommerce-adapter8.png)
 
 Following these steps, ends the process for validating agent for the application WooCommerce. 

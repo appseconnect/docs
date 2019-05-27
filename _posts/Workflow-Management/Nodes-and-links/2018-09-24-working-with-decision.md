@@ -43,7 +43,7 @@ The fields present in the decision screens are:
 3. The drop-down list has the operators which is for executing the decisions.
 4. Value -  This is the value corresponding to which the decision is to be taken.
 
-**Note: It is mandatory to enable the checkbox beside the KEY for evaluating the decision.**
+**Note: It is mandatory to enable the checkbox beside the KEY for evaluating the decision.**  
 ![decisionproperty1](/staticfiles/workflow-management/media/rule/decisionproperty1.png)
 
 **Execution screen for the DECISION Workflow**
@@ -68,7 +68,7 @@ Here the XPATH is the //BPAddresses/row/Country where
 BPAddresses is the Parent Node row is the child node of the Parent and the Country is the field 
 or the element upon which the decision is to be implemented on each data.
 
-The below image will help the reader to understand the concept in detail.
+The below image will help the reader to understand the concept in detail.  
 ![decision-xml](/staticfiles/workflow-management/media/rule/decision-xml.png)
 
 Similarly this process can be implemented for the other touchpoints. The concept for applying the key in the DECISION node will remain 

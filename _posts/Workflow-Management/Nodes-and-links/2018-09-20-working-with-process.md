@@ -19,10 +19,16 @@ menus:
 
 `PROCESS` node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data will be transformed base on touchpoint mapping logic.
 
-The highlighted node with red one is an implementation of `PROCESS` node.
+The highlighted node with red one is an implementation of `PROCESS` node.  
+ ![ProcessNode](/staticfiles/workflow-management/media/ProcessNode/ProcessNode.png)  
 
- ![Process Node](/staticfiles/workflow-management/media/ProcessNode/ProcessNode.png)
+**Note: On clicking the Process node, Mapping, Source Entity & Destination Entity button appears on the property action window.**
 
-Below picture is an example of mapping based on which data transformation will be performed by the `PROCESS` node.
+* Clicking on the Source Entity Tab will display all the Source Entity and the attributes present.
+* Clicking on the Destination Entity tab will display all the destination entity and the attributes present.  
+ ![ProcessNode2](/staticfiles/workflow-management/media/ProcessNode/ProcessNode2.png)  
 
+Below picture is an example of mapping based on which data transformation will be performed by the `PROCESS` node.  
 ![Mapping](/staticfiles/workflow-management/media/ProcessNode/Mapping.png)
+
+
