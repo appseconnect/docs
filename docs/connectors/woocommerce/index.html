@@ -610,7 +610,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/deploying-and-executing/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Deploying & Executing workflows">Deploying & Executing workflows</a>
+        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Scheduling, Deploying & Executing workflows">Scheduling, Deploying & Executing workflows</a>
         
         
         
@@ -1582,9 +1582,9 @@ the credential of the application WooCommerce.</p>
 <h2 id="configuring-the-woocommerce-adapter">Configuring the WooCommerce Adapter</h2>
 
 <ol>
-  <li>In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce
+  <li>In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce  <br />
    <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter1.png" alt="woocommerce-adapter1" /></li>
-  <li>On clicking the + button, the credential panel opens for the application WooCommerce.
+  <li>On clicking the + button, the credential panel opens for the application WooCommerce.  <br />
    <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter2.png" alt="woocommerce-adapter2" /></li>
   <li>The Base URL Endpoint has 2 options in the drop-down.<br />
 a.	/wp-json/wc/ - This is the newer version of the WooCommerce that support the    WordPress platform for WooCommerce. 
@@ -1594,22 +1594,25 @@ The version for this WooCommerce version should be &lt;2.6</li>
   <li>The API Version is the WooCommerce API Version. The user can have its WC Version by navigating to WooCommerce &gt; Status &gt; WooCommerce Version.
 <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter3.png" alt="woocommerce-adapter3" />
 <strong>Note: For more details about WC API versions, <a href="https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#introduction">click here</a></strong></li>
-  <li>The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.
+  <li>The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.  <br />
 <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter4.png" alt="woocommerce-adapter4" /></li>
   <li>The Base URL is the WooCommerce Base URL. For Ex:http://templatebar.com/Individual/abcd/woocommerce<br />
 <strong>Note: If the URL has HTTP, the authentication OAuth 1.0 is supported and if the URL has HTTPS, the BASIC Authentication is supported. 
 For both authentication process, the User Interface remains the same.</strong></li>
   <li>The API Key and the API Secret is generated from the WooCommerce platform. Navigate to WooCommerce &gt; Settings &gt; Advanced &gt; REST API &gt; ADD Key 
 <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter5.png" alt="woocommerce-adapter5" /></li>
-  <li>Provide the details in the field provided in the WC platform and click on the Generate API Key Button.
-a.	Description: This is the field for API Description.
-b.	User: This field is for specifying the User Type. The user should be as ADMIN 
-c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png" alt="woocommerce-adapter6" /></li>
-  <li>Input the generated API Key and the API Secret in the Agent.
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png" alt="woocommerce-adapter7" />
+  <li>Provide the details in the field provided in the WC platform and click on the Generate API Key Button.</li>
+</ol>
+
+<p>a.	Description: This is the field for API Description.<br />
+b.	User: This field is for specifying the User Type. The user should be as ADMIN <br />
+c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.  <br />
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png" alt="woocommerce-adapter6" /></p>
+<ol>
+  <li>Input the generated API Key and the API Secret in the Agent.  <br />
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png" alt="woocommerce-adapter7" /><br />
 <strong>Note: The Consumer Key is the API Key and the Consumer Secret is the API Secret.</strong></li>
-  <li>Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.
+  <li>Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.    <br />
 <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter8.png" alt="woocommerce-adapter8" /></li>
 </ol>
 

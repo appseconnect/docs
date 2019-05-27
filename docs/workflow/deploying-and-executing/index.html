@@ -19,7 +19,7 @@
 
 
 
-<title>Deploying &amp; Executing workflows - APPSeCONNECT Product Docs</title>
+<title>Scheduling, Deploying &amp; Executing workflows - APPSeCONNECT Product Docs</title>
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Deploying &amp; Executing workflows">
+<meta property="og:title" content="Scheduling, Deploying &amp; Executing workflows">
 
 
   <link rel="canonical" href="http://localhost:4000/workflow/deploying-and-executing/">
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Deploying & Executing workflows</li>
+      <li class="current">Scheduling, Deploying & Executing workflows</li>
     
   
 </ol>-->
@@ -610,7 +610,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/deploying-and-executing/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Deploying & Executing workflows">Deploying & Executing workflows</a>
+        <a href="/workflow/deploying-and-executing/" onclick="selectTab('/workflow/deploying-and-executing/', event);" title="Go to Scheduling, Deploying & Executing workflows">Scheduling, Deploying & Executing workflows</a>
         
         
         
@@ -1470,7 +1470,7 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Deploying &amp; Executing workflows">
+        <meta itemprop="headline" content="Scheduling, Deploying &amp; Executing workflows">
         <meta itemprop="description" content="Workflow in APPSeCONNECT provides integration solution which helps any business to executeintegration flow of data between two or more applications. With APPSeCONNECT, you can deploy, execute and maintain business integrations. In this article we will see how you can use workflowruntime to debug and execute workflows.">
         <meta itemprop="datePublished" content="September 20, 2018">
         
@@ -1499,7 +1499,7 @@
                 
                 
                 
-                <li class="current">Deploying & Executing workflows</li>
+                <li class="current">Scheduling, Deploying & Executing workflows</li>
                 
                 
             </ol>
@@ -1509,7 +1509,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Deploying &amp; Executing workflows
+                <h1 class="page__title" itemprop="headline">Scheduling, Deploying &amp; Executing workflows
 </h1>
                 
                 
@@ -1540,7 +1540,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1553,7 +1553,11 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#steps">Steps</a></li>
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#creating-a-workflow">Creating a Workflow</a></li>
+  <li><a href="#scheduling-a-workflow">Scheduling a Workflow</a></li>
+  <li><a href="#deploying-a-workflow">Deploying a Workflow</a></li>
+  <li><a href="#executing-the-workflow">Executing the Workflow</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1563,33 +1567,78 @@ integration flow of data between two or more applications. With APPSeCONNECT, yo
 execute and maintain business integrations. In this article we will see how you can use workflow
 runtime to debug and execute workflows.</p>
 
-<h2 id="steps">Steps</h2>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>You must choose the project in which the user will be added.</li>
+  <li>Install the AEC OP Agent from the portal and login with the portal credentials. <a href="/deployment/Deployment-Configuration/">Click here</a> to know more about the agent setup and configuration.</li>
+  <li>Now Choose two generic app for integration &amp; <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a>.</li>
+  <li>Before executing the workflow for app integration, you should have a valid data in the source application</li>
+  <li>The connection or the workflow design should be done in the Cloud Portal.</li>
+</ul>
+
+<h2 id="creating-a-workflow">Creating a Workflow</h2>
+
+<p><a href="/workflow/steps-to-create-your-first-workflow/">Click here</a> to know more about creating or designing a workflow. The user can also select the workflow, from the <a href="/workflow/steps-to-choose-your-workflow/">Choose workflow</a> button.</p>
+
+<h2 id="scheduling-a-workflow">Scheduling a Workflow</h2>
 
 <ol>
+  <li>Navigate to the workflow design area and click on the Schedule button.
+<img src="/staticfiles/workflow-management/media/scheduling-workflow.png" alt="scheduling-workflow" /></li>
+  <li>The schedule window shows up. The windows have the following fields as displayed below:
+<img src="/staticfiles/workflow-management/media/scheduling-workflow2.png" alt="scheduling-workflow2" /> <br />
+a.	Sync type: This depicts whether the process is Auto or Manual.  <br />
+b.	Repeat: This has three option in the drop-down Every Minute, Daily &amp; Hourly.  <br />
+c.	Repeat Interval: This determines the time gap between the sync processes.   <br />
+d.	End: This field has two options.
+    <ul>
+      <li>Never: If selected, the process will be an infinite loop until stopped.</li>
+      <li>End after a defined repetition: When selected this option, an additional field appears “End After” which
+depicts the End Time Occurrence.</li>
+    </ul>
+  </li>
+  <li>After Scheduling the workflow, click OK button.</li>
+</ol>
+
+<h2 id="deploying-a-workflow">Deploying a Workflow</h2>
+
+<ol>
+  <li>After creation and saving of the workflow, navigate to the Environments Tab. 
+<img src="/staticfiles/workflow-management/media/deploying-workflow.png" alt="deploying-workflow" /></li>
+  <li>The Environment window shows up. Click on the Agent Settings button to confirm the connectivity of the agent with the portal. 
+The Pop up window shown below, confirms the connectivity.
+<img src="/staticfiles/workflow-management/media/deploying-workflow2.png" alt="deploying-workflow2" /></li>
+  <li>After the confirmation of the connectivity, click on the Deploy Configuration button to deploy the workflow connection
+in the agent. The user can also click on the Update Configuration button in the OP Agent.
+<strong>Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
+and Deploy Configuration should be clicked for the agent that is being used.</strong></li>
+  <li>After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.</li>
+</ol>
+
+<h2 id="executing-the-workflow">Executing the Workflow</h2>
+
+<ol class="notice--info">
   <li>Start workflow and navigate to Workflow.</li>
   <li>Open the workflow you want to execute or debug.When you open the workflow screen, you will be first
 ported in edit mode.</li>
   <li>Click on Play button to execute a workflow. <br />
-<img src="/staticfiles/workflow-management/media/workflow-execution-step1.png" alt="Workflow Execution Step1" /></li>
+<img src="/staticfiles/workflow-management/media/workflow-execution-step1.png" alt="workflow-execution-step1" /><br />
+<strong>Protip:</strong> Make sure the environment you have configured for the application is running correctly.</li>
 </ol>
-
-<p class="notice--info"><strong>Protip:</strong> Make sure the environment you have configured for the application is running correctly.</p>
 <ol>
   <li>When you play a workflow, you will be able to see each step of the operation. The nodes will be automatically highlighted during execution of the work.
     <ul>
       <li>Operation is going on = yellow color</li>
       <li>Operation successfully executed = green color</li>
-      <li>Operation failed = red color
-<img src="/staticfiles/workflow-management/media/workflow-execution-step2.png" alt="Workflow Execution Step2" /></li>
+      <li>Operation failed = red color<br />
+<img src="/staticfiles/workflow-management/media/workflow-execution-step2.png" alt="workflow-execution-step2" /></li>
     </ul>
   </li>
-  <li>After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.  You can select a node to see a popup appear on the base of the workflow. 
-<img src="/staticfiles/workflow-management/media/data-inspector-files.png" alt="Data Inspector Files" /></li>
-  <li>Each node selection opens a new window from the bottom of the page which will allow you to inspect the process. 
-<img src="/staticfiles/workflow-management/media/data-inspector-files.png" alt="Data Inspector Files" /></li>
+  <li>After execution of workflow is complete, you can check each and every step of the workflow that is being executed on the platform.</li>
+  <li>The complete execution process of the workflow can be viewed through the <a href="/workflow/list-of-snapshot/">process snapshot</a>.</li>
 </ol>
 
-<p>The data inspector watch window will allow the user to check the logs, data logs and the sync files.</p>
+<p>This ends the process of scheduling workflows.</p>
 
 
                 
@@ -1649,7 +1698,7 @@ ported in edit mode.</li>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Deploying+%26+Executing+workflows%20https://docs.appseconnect.com%2Fworkflow%2Fdeploying-and-executing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Scheduling%2C+Deploying+%26+Executing+workflows%20https://docs.appseconnect.com%2Fworkflow%2Fdeploying-and-executing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Fdeploying-and-executing%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

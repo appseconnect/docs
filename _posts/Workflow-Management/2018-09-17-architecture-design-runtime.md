@@ -29,7 +29,7 @@ to your own on-premise environment and execute the business flow using our APPSe
 
 When the user triggers a workflow manually (or APPSeCONNECT Scheduler triggers it for you), the first thing 
 it tries to do, is to identify the environment(s) on which the workflow needs to be executed on. It can either
-execute itself on APPSeCONNECT cloud premise on an Hosted agent, or on-premise environment where the agent
+execute itself on APPSeCONNECT cloud premise on an hosted agent, or on-premise environment where the agent
 is installed. The workflow starts with `Start` node and execute each links to find the next node. 
 The nodes plays a vital role in a workflow determining what action it needs to execute, and passing or delegating
 activities to different workloads. 
@@ -41,6 +41,6 @@ adapters, execute stroage plugins, triggers notification, generate logs etc.
 If there is any cloud involvement from an on-premise execution or an on-premise dependency for a 
 cloud solution, it triggers the call automatically using Service Bus and executes the process. 
 
-The Repository services takes care of storage and snapshot of the workflow executions which one can investigate later.
+The repository services takes care of storage and snapshot of the workflow executions which one can investigate later.
 
 

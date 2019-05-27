@@ -413,7 +413,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Deploying & Executing workflows",
+      title: "Scheduling, Deploying & Executing workflows",
       excerpt: "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -2022,7 +2022,7 @@ var store = [
     
       
       {
-        "title": "Deploying & Executing workflows",
+        "title": "Scheduling, Deploying & Executing workflows",
         "url": "/workflow/deploying-and-executing/",
         "excerpt": "Workflow in APPSeCONNECT provides integration solution which helps any business to execute integration flow of data between two or more...",
         "teaser":

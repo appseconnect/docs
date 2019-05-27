@@ -91,9 +91,9 @@ You can request a free trial version of APPSeCONNECT by visting the portal of AP
 The Free Trial selection option will only showcase the integration on vanilla systems.
 
 1. The Landing page of the APPSeCONNECT Portal gives the option to request for a [FREE TRIAL](https://www.appseconnect.com/free-trial/).
-2. Click the option Free Trial and the following screen appears
+2. Click the option Free Trial and the following screen appears  
 ![FreeTrial](/staticfiles/root/media/FreeTrial.png)
-3. A vistors request form for availing trial version opens up as shown below. Here the vistor can put their requirement details.
+3. A vistors request form for availing trial version opens up as shown below. Here the vistor can put their requirement details.  
 ![Trial_Form](/staticfiles/root/media/Trial_Form.png)
 4. The form requires the visitors to fill the basic contact details along with the application(s) selection criteria to choose from and the time required to buy the services.
 5. The visitors will complete the form Fill up and click on **Start Free Trial** button given at the end of the form.
@@ -316,10 +316,10 @@ Here you will get the knowhow of APPSeCONNECT Notification and its functionality
 8. The pin will toggle on or off, where On means the project will not be removed automatically.
 ![Pinbar](/staticfiles/root/media/Pinbar.png)
 9. After the pin is in on state that project will go to the first option.
-10. If you minimize the browser size then all project will show the bread button.
-![Projects-View](/staticfiles/root/media/Projects-View.png)
+10. If you minimize the browser size then all project will show the bread button.  
+![Projects-View](/staticfiles/root/media/Projects-View.png)  
 ![Pinned-Projects](/staticfiles/root/media/Pinned-Projects.png)
-11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this. 
+11. Now `Add New` project, will be added to the left side of last accessed unpinned project like this.  
 ![NewProject-Added](/staticfiles/root/media/NewProject-Added.png)
 
 **Protip** 

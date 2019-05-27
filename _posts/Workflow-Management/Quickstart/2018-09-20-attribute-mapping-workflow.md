@@ -11,8 +11,8 @@ menus:
         identifier: quickstartfirstworkflow
 ---
 
-For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the Transform section of the touchpoint.
-A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with Workflow in APPSeCONNECT.
+For every integration between the application, the business logic is required. Mapping triggers the process between the source and the destination application. Source and destination schemas are mapped in the transform section of the touchpoint.
+A touchpoint maps the source schema for a particular action with the destination schema, thus facilitating the transfer of information between the schemas. While Working with `Workflow in APPSeCONNECT`
 Attribute Mapping needs to be implemented before integrating. This document will help the users to implement Attribute Mapping in APPSeCONNECT Workflow.
 
 ## Pre-requisites:
