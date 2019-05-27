@@ -57,13 +57,11 @@ and Deploy Configuration should be clicked for the agent that is being used.**
 
 ## Executing the Workflow
 
-1. Start workflow and navigate to Workflow.
+1. Start workflow and navigate to Workflow.      
 2. Open the workflow you want to execute or debug.When you open the workflow screen, you will be first
-ported in edit mode. 
-3. Click on Play button to execute a workflow.   
-![workflow-execution-step1](/staticfiles/workflow-management/media/workflow-execution-step1.png)  
-**Protip:** Make sure the environment you have configured for the application is running correctly. 
- {: .notice--info}
+ported in edit mode.       
+3. Click on Play button to execute a workflow.         
+![workflow-execution-step1](/staticfiles/workflow-management/media/workflow-execution-step1.png)      
 4. When you play a workflow, you will be able to see each step of the operation. The nodes will be automatically highlighted during execution of the work.
  - Operation is going on = yellow color
  - Operation successfully executed = green color
@@ -74,4 +72,5 @@ ported in edit mode.
 
 This ends the process of scheduling workflows.
 
-
+**Protip:** Make sure the environment you have configured for the application is running correctly. 
+ {: .notice--info}

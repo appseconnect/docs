@@ -22,9 +22,9 @@ menus:
 `GET` node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data from that particular Application is generated 
 and responded back to the application workspace. 
 
-The highlighted node with red one is an implementation of `GET` node.
+The highlighted node with red one is an implementation of `GET` node.  
 ![GetNode](/staticfiles/workflow-management/media/GetNode/GetNode.png)  
+**Note: On clicking the get node, the `filter` button appears. Clicking on it, will open the Action filter window.**    
+![GetNode1](/staticfiles/workflow-management/media/GetNode/GetNode1.png)    
 Below picture depicts the action filter based on which action of `GET` node will be performed.Depending on APP the filter structure may changed.
 ![Action Filter](/staticfiles/workflow-management/media/GetNode/ActionFilter.png)    
-**Note: On clicking the get node, the `filter` button appears. Clicking on it, will open the Action filter window.**  
-![GetNode1](/staticfiles/workflow-management/media/GetNode/GetNode1.png)

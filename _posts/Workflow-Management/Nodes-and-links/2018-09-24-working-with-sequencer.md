@@ -256,7 +256,7 @@ To sort the order data based on the creation date we have defined the sequencer 
 ## Prerequisites for sequencer
 
 * You must choose the project in which the user will be added.
-* Install the AEC OP Agent from the portal and login with the portal credentials. [Click here](/deployment/Deployment-Configuration/)to know more about the agent setup and configuration. 
+* Install the AEC OP Agent from the portal and login with the portal credentials. [Click here](/deployment/Deployment-Configuration/) to know more about the agent setup and configuration. 
 * Now Choose two generic app for integration & [workflow creation](/workflow/steps-to-create-your-first-workflow/).
 * Before executing the workflow for app integration, you should have a valid data in the source application
 * The connection or the workflow design should be designed in the Cloud Portal before implementing sequencer.
@@ -266,10 +266,10 @@ To sort the order data based on the creation date we have defined the sequencer 
 1. Select Sequencer from the Process property, available on the left menu bar of the workflow design page.  
 ![sequencer1](/staticfiles/workflow-management/media/Sequencer/sequencer1.png)
 2. Drag and Drop the sequencer node inside the Touchpoint group. On releasing the sequencer property 
-   windows shows up.
-  a.	Element Path
-  b.	Collection Element Path 
-  c.	Sort Order: Ascending or Descending
+   windows shows up.  
+  a.	Element Path  
+  b.	Collection Element Path   
+  c.	Sort Order: Ascending or Descending  
 ![sequencer](/staticfiles/workflow-management/media/Sequencer/sequencer.png)  
 **Note: Both the Fields, Element Path & Collection Element Path are the Mandatory Fields.**
 3.	The Element Path is the xpath of the data that needs to be sequenced and the collection element path should always be a substring of the element path.
