@@ -49,7 +49,7 @@ depicting Proxy, select the section to navigate to it.
 
 * Go to **API** section from the left side menu.
 
-![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.PNG)
+![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.png)
 
 * Inside **APIManagementSection** you can see Webhooks and Proxy.`By default Webhook section will be
    shown`. You can see all your connections listed here.
@@ -59,23 +59,23 @@ depicting Proxy, select the section to navigate to it.
   ## Create A Real Time API :
 
 1. Now under the desired connection,Expand the Connection,you will find **Create API** button like this.
-![Create A P I Webhook](/staticfiles/api-management/media/CreateAPI_webhook.PNG)
+![Create A P I Webhook](/staticfiles/api-management/media/CreateAPI_webhook.png)
 2. Upon clicking the button you will get introduced to a Wizard like this
-![Wizard A P I Basic](/staticfiles/api-management/media/Wizard-API-Basic.PNG)
+![Wizard A P I Basic](/staticfiles/api-management/media/Wizard-API-Basic.png)
 3. Provide basic information like API name,API help document url etc.
 4. Now provide Source App Configuration like Source Schema,Action,Protocol and Protocol Method.
-![Wizard A P I Source](/staticfiles/api-management/media/Wizard-API-Source.PNG)
+![Wizard A P I Source](/staticfiles/api-management/media/Wizard-API-Source.png)
 5. Thereafter provide Destination App Configuration like Destination Schema,Action,Protocol and Protocol Method.
-![Wizard A P I Destination](/staticfiles/api-management/media/Wizard-API-Destination.PNG)
+![Wizard A P I Destination](/staticfiles/api-management/media/Wizard-API-Destination.png)
 6. Then you have to configure mapping for transformation from source to destination
-![Wizard A P I Mapping](/staticfiles/api-management/media/Wizard-API-Mapping.PNG)
+![Wizard A P I Mapping](/staticfiles/api-management/media/Wizard-API-Mapping.png)
 7. After everything is done click on finish to Save your API.
-![Wizard A P I Summary](/staticfiles/api-management/media/Wizard-API-Summary.PNG)
+![Wizard A P I Summary](/staticfiles/api-management/media/Wizard-API-Summary.png)
 8. You will be re-directed to Webhook section afterwards.You can find your newly created Webhook API
  under the connection you created.
-![Webhook A P I Data](/staticfiles/api-management/media/Webhook-API-Data.PNG)
+![Webhook A P I Data](/staticfiles/api-management/media/Webhook-API-Data.png)
 9. Copy the URL and use it as a webhook endpoint in applications that support webhooks.
-![A P I Webhook Shopify](/staticfiles/api-management/media/API-Webhook-shopify.PNG) 
+![A P I Webhook Shopify](/staticfiles/api-management/media/API-Webhook-shopify.png) 
 
 Thus APPSeConnect provides you the platform to create Webhook API to fetch real time data and sync to other applications.    
 

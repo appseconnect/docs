@@ -18,7 +18,7 @@ rejected.
 Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
 Below are the list of configurations required for this policy.
 
-![Validate H T T P Header Policy](/staticfiles/api-management/media/ValidateHTTPHeaderPolicy.PNG)
+![Validate H T T P Header Policy](/staticfiles/api-management/media/ValidateHTTPHeaderPolicy.png)
 
 The rules and setup needs to be made accordingly. 
 

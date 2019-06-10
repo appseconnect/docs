@@ -37,9 +37,9 @@ The Connection string comprises of the following elements.
 * Persists Security Info - This is the authentication info displayed on enabling the password for saving.
 * UserID - The Username or the UserID for the database server.
 * Initial Catalog - It is the database name on the selected server.	
-* DataSource - This is the name of the Database Server.
-![OledbAdapter-OP-ConnectionString](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString.png)
-Click on Validate and Save.  
+* DataSource - This is the name of the Database Server.  
+![OledbAdapter-OP-ConnectionString](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString.png)  
+Click on Validate and Save.    
 ![OledbAdapter-OP-ConnectionString2](/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString2.png)
 
 **Protip:** Removing or erasing the generated connection string enables the click to configure button 

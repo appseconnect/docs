@@ -28,8 +28,10 @@ Implementers, Developers, Partners, End Customer's Technical Team
 ### Basic Flow
 The user will execute the flow as given below
 
+
+
 ### Post-conditions
-The user can now retrieve the data in the standard executable format like JSON or XML from the required database/application/isolated network with no API
+The user can now retrieve the data in the standard executable format like JASON or XML from the required database/application/isolated network with no API
 ### Exception courses 
 The user will get operational error thrown on the response message, if the get customer/get product data is failure.
 ### Frequency of use

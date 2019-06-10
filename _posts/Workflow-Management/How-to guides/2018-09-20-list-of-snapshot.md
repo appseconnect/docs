@@ -22,16 +22,16 @@ of the workflow and the latest listing is visible on the upper section of the li
 
 ## Pre-Requisites of Listing of Snapshot for a Workflow
 
-1. All the [Pre-requisites](/workflow/steps-to-choose-your-workflow/) to workflow execution has to be met.
+1. All the [Pre-requisites](/workflow/deploying-and-executing/) to workflow execution has to be met.
 2. Agent should be set as Primary (as unlicensed agents will be not connected to APPSeCONNECT cloud)
 3. Autosync of the Agent should be turned `ON`.
 
 
 ## Steps to executing list of snapshot for the workflow
 
-1. List of Snapshot is present on the upper section of the workflow screen as shown below:
-![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.PNG)
-2. Click on the `Snapshot`button and the following execution of workflow data will be fetched.
+1. List of Snapshot is present on the upper section of the workflow screen as shown below:  
+![snapshot-button](/staticfiles/workflow-management/media/snapshot-button.png)
+2. Click on the `Snapshot`button and the following execution of workflow data will be fetched.  
 ![workflowexe-snapshot](/staticfiles/workflow-management/media/workflowexe-snapshot.png)  
 The execution screen contains the following details of the workflow snapshot
 * Execution Timestamp: This indicates the date, start and end time of the workflow.
@@ -119,4 +119,14 @@ Below, is the screen of Email Action, Log Bucket generated.
 
 **Protip** `Currently 7 days data` can be viewed in the List of Snapshot and by `default 10 snapshot view per screen` is available 
 in single screen listing of snapshot.
+{: .notice--info}
+
+**Scenario 7:**
+
+Decision is one of the process property in APPSeCONNECT workflow. Here the user will get to view the 
+Resync Bucket, Log Bucket, and the File.
+
+![decision-snapshot](/staticfiles/workflow-management/media/decision-snapshot.png)
+
+**Protip** The status column in the snapshot displays "Unprocessed" on its successful execution.
 {: .notice--info}

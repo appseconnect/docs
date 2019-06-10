@@ -90,5 +90,4 @@ https://appsdrive.blob.core.windows.net/
 
 https://services.appseconnet.com/
 
-**Protip:** We also require you to keep some of the Ports Open for APPSeCONNECT  
-{: .notice--info}.
+**NOTE: We also require you to keep some of the Ports Open for APPSeCONNECT**      

@@ -17,7 +17,7 @@ menus:
 1. If you do not have a registered URL with **APPSeCONNECT** you have to Register a URL for your organization.Here is how to do it.
   Click on Register URL button. Upon clicking you will get a  popup like this.
 
-![Register Url Org](/staticfiles/api-management/media/register-url-org.PNG)
+![Register Url Org](/staticfiles/api-management/media/register-url-org.png)
 
 2. Activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
   So the Base URL for the organization would be `veonconsulting.appseconnectapi.com`.
@@ -26,7 +26,7 @@ menus:
   After this,click on save button and your url would be saved.
 
  The Screen shows the license types configured while registering the URL.  
-![register-url-org1](/staticfiles/api-management/media/register-url-org1.PNG)
+![register-url-org1](/staticfiles/api-management/media/register-url-org1.png)
 
 * Apache License 2.0: The Apache License, Version 2.0 requires security of the copyright notice and disclaimer.
 

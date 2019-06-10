@@ -15,7 +15,6 @@ menus:
 
 This section will guide you through workflow creation & configuration in simple steps.
 
-
 By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal. 
 
 In Workflow diagram panel there are some Template Touchpoints provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement. 
@@ -30,8 +29,6 @@ If you are new to Workflow, then go through the below steps to know more.
 * For execution of workflow using cloud agent you need to have `cloud to cloud connection`, `cloud agent` and `cloud supported app`.
 
 * Now Choose two generic app for integration & workflow creation.
-
-* Sample App chosen - Magento 2 & SAP B1
 
 * Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order. 
 
@@ -50,7 +47,7 @@ If you are new to Workflow, then go through the below steps to know more.
 
    ![WorkflowPage](/staticfiles/workflow-management/media/WorkflowPage.png)
 
-5. On the upper left corner you will get the `Create Workflow` button. Click on it and the following page appears where you can create the new workflow
+5. On the upper right corner you will get the `Create Workflow` button. Click on it and the following page appears where you can create the new workflow
 
    ![CreateWorkflow](/staticfiles/workflow-management/media/CreateWorkflow.png)
 
@@ -70,18 +67,20 @@ If you are new to Workflow, then go through the below steps to know more.
 * A list of different types of touchpoints will be generated
 
 ![Templates](/staticfiles/workflow-management/media/Templates.png)
-9. Drag in the general touchpoint to the workflow creation area  
+9. Drag in the general touchpoint to the workflow creation area    
 ![Adding-Touchpoint](/staticfiles/workflow-management/media/Adding-Touchpoint.png)
-10. Once you have provided the details, click OK. The touchpoint will be added. Also Add an 'End' node
+10. Once you have provided the details, click OK. The touchpoint will be added. Also Add an 'End' node.    
 ![StartEnd-Node](/staticfiles/workflow-management/media/StartEnd-Node.png)
-11. Connect the 'Start' Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.
+11. Connect the `Start` Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.  
 ![StartEnd-NodeConnected](/staticfiles/workflow-management/media/StartEnd-NodeConnected.png)
-12. Click on 'Save'. The workflow is now ready to be executed.  
-13. After all the steps have been completed - Agent & Cloud Configuration, the workflow is ready to be run.    
+12. Click on `Save`. The workflow is now ready to be executed.   
+13. After all the steps have been completed - [Agent & Cloud Configuration](/deployment/Deployment-Configuration/), the workflow is ready to be run.    
 ![Runbutton](/staticfiles/workflow-management/media/Runbutton.png)
 
-NOTE - Initially the Run button will be in disabled state, you have to activate it following these steps:
+**NOTE** - Initially the Run button will be in disabled state, you have to activate it following these steps:
 `Go to the APPSeCONNECT -> Settings Panel -> Check the Activate box`.
+
+If the RUN button is still in disabled state, you can do [Troubleshooting](/workflow/Troubleshooting/) to execute the same.
 
 9. Now Run it and this will open another form.  
  ![Workflow-Executed](/staticfiles/workflow-management/media/Workflow-Executed.png)

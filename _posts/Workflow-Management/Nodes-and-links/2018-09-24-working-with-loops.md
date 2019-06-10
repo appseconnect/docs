@@ -19,8 +19,8 @@ In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individ
 
 ### Self loop with 5 occurences.
 
-![No Of Time](/staticfiles/workflow-management/media/Selfloop/No_ofTime.PNG)
+![No Of Time](/staticfiles/workflow-management/media/Selfloop/No_ofTime.png)
 
 Self loop with until data available option
 
-![Until Data](/staticfiles/workflow-management/media/Selfloop/UntilData.PNG)
+![Until Data](/staticfiles/workflow-management/media/Selfloop/UntilData.png)

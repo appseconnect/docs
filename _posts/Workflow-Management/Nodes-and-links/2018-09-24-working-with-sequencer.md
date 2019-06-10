@@ -18,11 +18,9 @@ menus:
 This node is used to order elements by a certain attribute. This node can be applied to any collection of elements. For example, user have data of a collection of orders and I want to process the oldest orders first. User can add a `SEQUENCER` node to sort the order based on their creation date.After the data passed through the `SEQUENCER` node it will be arranged based on the `SEQUENCER` node logic.
 Sequence node have three components
 
-Element Path : Specify the element based on which data will be squenced.
-
-Collection Element Path : XPATH of the parent element under which the sequencer element present.
-
-Sort Order : Ascending or Descending order.
+* Element Path : Specify the element based on which data will be squenced.
+* Collection Element Path : XPATH of the parent element under which the sequencer element present.
+* Sort Order : Ascending or Descending order.
 
 For example if have a data chunk which contains multiple data in below XML format 
 ``` XML
@@ -254,4 +252,37 @@ For example if have a data chunk which contains multiple data in below XML forma
 ```
 To sort the order data based on the creation date we have defined the sequencer node in this way.
 
-![Sequencer](/staticfiles/workflow-management/media/Sequencer/sequencer.PNG)
+
+## Prerequisites for sequencer
+
+* You must choose the project in which the user will be added.
+* Install the AEC OP Agent from the portal and login with the portal credentials. [Click here](/deployment/Deployment-Configuration/) to know more about the agent setup and configuration. 
+* Now Choose two generic app for integration & [workflow creation](/workflow/steps-to-create-your-first-workflow/).
+* Before executing the workflow for app integration, you should have a valid data in the source application
+* The connection or the workflow design should be designed in the Cloud Portal before implementing sequencer.
+
+## Steps to follow for implementing Sequencer in Workflow
+
+1. Select Sequencer from the Process property, available on the left menu bar of the workflow design page.  
+![sequencer1](/staticfiles/workflow-management/media/Sequencer/sequencer1.png)
+2. Drag and Drop the sequencer node inside the Touchpoint group. On releasing the sequencer property 
+   windows shows up.  
+  a.	Element Path  
+  b.	Collection Element Path   
+  c.	Sort Order: Ascending or Descending  
+![sequencer](/staticfiles/workflow-management/media/Sequencer/sequencer.png)  
+**Note: Both the Fields, Element Path & Collection Element Path are the Mandatory Fields.**
+3.	The Element Path is the xpath of the data that needs to be sequenced and the collection element path should always be a substring of the element path.
+4.	The screen given below displays a demo (the scenario is discussed above) as how the fields should be provided.  
+![sequencer2](/staticfiles/workflow-management/media/Sequencer/sequencer2.png)
+5.	On Successfully providing the path, click OK button.
+6.	If both the fields are same, an error message will be popping up with a message "Invalid Collection Element Path".
+
+**Note:**
+* The Collection Element Path is always dependent on the Element Path.
+* On Successfully providing the path, click on the OK button.
+* Providing wrong Collection Element Path will display an error message.
+* Element path and collection path cannot be terminated by back or forward slash.
+* Sequencer will always be implemented inside the Touchpoint Group.
+
+
