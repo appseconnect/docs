@@ -17,6 +17,39 @@ menus:
 The user can view the schemas and the action present or can also add schema and add action for each 
 application. This section enables the user to view and add the Schema and its Actions.
 
+[Click here](/getting-started/#appseconnect-schemaentity) to know more about the Schemas.
+
+
+
+**Importing schemas in APPSeCONNECT portal**
+
+1.	Login to the APPSeCONNECT Portal with valid credentials.
+2.	Go to APPS Page and [Choose any application]()
+3.	Click on the + sign after adding the application and click on the Schema button
+Image
+4.	On the Schema Window the user can view the list of schemas present or can also add schemas from the ADD Schema 
+    Option and Import Schema Option. 
+Image
+5.	Clicking on the Import button, a Pop-up will appear where the user can import XML, JSON, WSDL (Web Services Description Language) 
+    file for the Schema.
+•	In JSON and XML format the user needs to choose the respective XML and JSON file saved locally, but in WSDL format the user needs to provide the WSDL file link for importing the schema
+•	For generic apps, WSDL option will not be available for import to any protocol other than SOAP.
+Image
+6. For the XML/JSON format, the user needs to upload the file that supports the respective formats. For XML, the user needs to 
+   upload XML file and for JSON, the JSON file needs to be uploaded.
+7.	The parent node of provided in the file is needed to be provided in the ELEMENT field.
+Image
+In this case, the parent is items, therefore the Element should be items.
+8.	Click on the Display button, to view all the complex object & complex object collection and its attributes. 
+    Expanding the complex object & complex object collection will display all the attributes present.
+Image
+**Note:** 
+•	The user must save each node individually. There is no way the user can save it on the whole.
+•	This process is same for both the XML and JSON formats.
+9.	For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.
+Image
+10.	Click on the SAVE button individually for the saving each of the nodes.
+
 **Actions**
 
 Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter. 
