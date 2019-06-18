@@ -35,7 +35,7 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 
 13. The user will go back to Workflow module and select the saved workflow.
 
-![Customer-DownloadFilter](/staticfiles/workflow-management/media/Customer-DownloadFilter.png)
+![customerdownload_filter](/staticfiles/workflow-management/media/customerdownload_filter.png)
 
 14. The user will click on RUN button to run the workflow.
 
