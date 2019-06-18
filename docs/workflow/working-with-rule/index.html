@@ -19,12 +19,12 @@
 
 
 
-<title>Architecture - APPSeCONNECT Product Docs</title>
+<title>Rule Node - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Workflow is a visual representation of a business process integration, which helps you as an userto orchestrate a business process in such a way so that you can modularize and control the complexityof business integration properly. A workflow, under the hood creates a micro-service architecturethat can run in cloud servers or on premise getting or pushing data directly to the applications in execution and generate both transactional and data logs. In this article, we will see how the architecture of APPSeCONNECT workflow is laid out such that we can understand the under the hood big picture of the workflow.">
+<meta name="description" content="What is Rule Node?This node is used for decision making during workflow execution. A rule can be applied on a single chunk of data based on the rule criteria defined in the rule definition. After data passed through role node there can be two scenarios either the data matched the rule definition or it fails and depending on success and a failure user can configure his/ her next processing steps. For example, a user wants to post a bunch of customer data from Shopify to SAP B1. After processing the Shopify data user can apply a rule along with a splitter node to check if a customer email address does not belong to a specific domain.If the rule satisfied then the data will be posted to SAP B1 otherwise we will store the data in our local storage.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Architecture">
+<meta property="og:title" content="Rule Node">
 
 
-  <link rel="canonical" href="http://localhost:4000/workflow/architecture-design-runtime/">
-  <meta property="og:url" content="http://localhost:4000/workflow/architecture-design-runtime/">
+  <link rel="canonical" href="http://localhost:4000/workflow/working-with-rule/">
+  <meta property="og:url" content="http://localhost:4000/workflow/working-with-rule/">
 
 
 
-  <meta property="og:description" content="Workflow is a visual representation of a business process integration, which helps you as an userto orchestrate a business process in such a way so that you can modularize and control the complexityof business integration properly. A workflow, under the hood creates a micro-service architecturethat can run in cloud servers or on premise getting or pushing data directly to the applications in execution and generate both transactional and data logs. In this article, we will see how the architecture of APPSeCONNECT workflow is laid out such that we can understand the under the hood big picture of the workflow.">
+  <meta property="og:description" content="What is Rule Node?This node is used for decision making during workflow execution. A rule can be applied on a single chunk of data based on the rule criteria defined in the rule definition. After data passed through role node there can be two scenarios either the data matched the rule definition or it fails and depending on success and a failure user can configure his/ her next processing steps. For example, a user wants to post a bunch of customer data from Shopify to SAP B1. After processing the Shopify data user can apply a rule along with a splitter node to check if a customer email address does not belong to a specific domain.If the rule satisfied then the data will be posted to SAP B1 otherwise we will store the data in our local storage.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-09-17T00:00:00+05:30">
+  <meta property="article:published_time" content="2018-09-24T00:00:00+05:30">
 
 
 
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">Architecture</li>
+      <li class="current">Rule Node</li>
     
   
 </ol>-->
@@ -1507,9 +1507,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Architecture">
-        <meta itemprop="description" content="Workflow is a visual representation of a business process integration, which helps you as an userto orchestrate a business process in such a way so that you can modularize and control the complexityof business integration properly. A workflow, under the hood creates a micro-service architecturethat can run in cloud servers or on premise getting or pushing data directly to the applications in execution and generate both transactional and data logs. In this article, we will see how the architecture of APPSeCONNECT workflow is laid out such that we can understand the under the hood big picture of the workflow.">
-        <meta itemprop="datePublished" content="September 17, 2018">
+        <meta itemprop="headline" content="Rule Node">
+        <meta itemprop="description" content="What is Rule Node?This node is used for decision making during workflow execution. A rule can be applied on a single chunk of data based on the rule criteria defined in the rule definition. After data passed through role node there can be two scenarios either the data matched the rule definition or it fails and depending on success and a failure user can configure his/ her next processing steps. For example, a user wants to post a bunch of customer data from Shopify to SAP B1. After processing the Shopify data user can apply a rule along with a splitter node to check if a customer email address does not belong to a specific domain.If the rule satisfied then the data will be posted to SAP B1 otherwise we will store the data in our local storage.">
+        <meta itemprop="datePublished" content="September 24, 2018">
         
 
 
@@ -1536,7 +1536,7 @@
                 
                 
                 
-                <li class="current">Architecture</li>
+                <li class="current">Rule Node</li>
                 
                 
             </ol>
@@ -1546,7 +1546,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Architecture
+                <h1 class="page__title" itemprop="headline">Rule Node
 </h1>
                 
                 
@@ -1562,14 +1562,18 @@
     
       
       
-      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a>
+      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/nodes" class="page__taxonomy-item" rel="tag">nodes</a>
     
     </span>
   </div>
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-24T00:00:00+05:30">September 24, 2018</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -1577,7 +1581,7 @@
 
 
 
-  1 minute read
+  less than 1 minute read
 </p>
                 
                 
@@ -1590,43 +1594,26 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#architecture">Architecture</a></li>
+  <li><a href="#what-is-rule-node">What is Rule Node?</a></li>
+  <li><a href="#working-principle">Working Principle</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Workflow is a visual representation of a business process integration, which helps you as an user
-to orchestrate a business process in such a way so that you can modularize and control the complexity
-of business integration properly. A workflow, under the hood creates a micro-service architecture
-that can run in cloud servers or on premise getting or pushing data directly to the applications 
-in execution and generate both transactional and data logs. In this article, we will see how the 
-architecture of APPSeCONNECT workflow is laid out such that we can understand the under the hood big 
-picture of the workflow.</p>
+                <h3 id="what-is-rule-node">What is Rule Node?</h3>
+<p>This node is used for decision making during workflow execution. A rule can be applied on a single chunk of data based on the rule criteria defined in the rule definition. After data passed through role node there can be two scenarios either the data matched the rule definition or it fails and depending on success and a failure user can configure his/ her next processing steps. For example, a user wants to post a bunch of customer data from Shopify to SAP B1. After processing the Shopify data user can apply a rule along with a splitter node to check if a customer email address does not belong to a specific domain.If the rule satisfied then the data will be posted to SAP B1 otherwise we will store the data in our local storage.</p>
 
-<h2 id="architecture">Architecture</h2>
+<h3 id="working-principle">Working Principle</h3>
 
-<p><img src="/staticfiles/workflow-management/media/appseconnect-workflow-architecture.png" alt="Workflow Architecture" /></p>
+<p><code class="highlighter-rouge">RULE</code> node in APPSeCONNECT workflow used for controlling decision based flow in a workflow .</p>
 
-<p>When an workflow is getting executed, there are a number of things that can happen. First, an execution 
-can happen on cloud directly on an hosted environment maintained by APPSeCONNECT, or it can genarate a call
-to your own on-premise environment and execute the business flow using our APPSeCONNECT integration tool.</p>
+<p>The above scenario can be implementd by defining below rule. In this rule we have defined the rule criteria using the EvaluateOutputData token with the following expression <code class="highlighter-rouge">~{EvaluateOutputData("//dis:EmailAddress")}~ </code> .</p>
 
-<p>When the user triggers a workflow manually (or APPSeCONNECT Scheduler triggers it for you), the first thing 
-it tries to do, is to identify the environment(s) on which the workflow needs to be executed on. It can either
-execute itself on APPSeCONNECT cloud premise on an hosted agent, or on-premise environment where the agent
-is installed. The workflow starts with <code class="highlighter-rouge">Start</code> node and execute each links to find the next node. 
-The nodes plays a vital role in a workflow determining what action it needs to execute, and passing or delegating
-activities to different workloads.</p>
+<p><img src="/staticfiles/workflow-management/media/Rule/RuleNode.PNG" alt="RuleNode" /></p>
 
-<p>The workflow engine takes care of each and every task or activity that needs to be executed on the platform. The 
-engine takes help of Adapter to call individual Applications to invoke Get or Post actions. The engine calls the 
-adapters, execute stroage plugins, triggers notification, generate logs etc.</p>
+<p>Below image show the implementation of above scenario using the <code class="highlighter-rouge">RULE</code> node.</p>
 
-<p>If there is any cloud involvement from an on-premise execution or an on-premise dependency for a 
-cloud solution, it triggers the call automatically using Service Bus and executes the process.</p>
-
-<p>The repository services takes care of storage and snapshot of the workflow executions which one can investigate later.</p>
-
+<p><img src="/staticfiles/workflow-management/media/Rule/RuleWorkFlow.PNG" alt="RuleWorkFlow" /></p>
 
                 
             </section>
@@ -1634,7 +1621,7 @@ cloud solution, it triggers the call automatically using Service Bus and execute
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-17T00:00:00+05:30">September 17, 2018</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-24T00:00:00+05:30">September 24, 2018</time></div>
                 
                 
   
@@ -1650,7 +1637,11 @@ cloud solution, it triggers the call automatically using Service Bus and execute
     
       
       
-      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a>
+      <a href="/developers" class="page__taxonomy-item" rel="tag">developers</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/nodes" class="page__taxonomy-item" rel="tag">nodes</a>
     
     </span>
   </div>
@@ -1685,13 +1676,13 @@ cloud solution, it triggers the call automatically using Service Bus and execute
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Architecture%20https://docs.appseconnect.com%2Fworkflow%2Farchitecture-design-runtime%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Rule+Node%20https://docs.appseconnect.com%2Fworkflow%2Fworking-with-rule%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Farchitecture-design-runtime%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-rule%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fworkflow%2Farchitecture-design-runtime%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-rule%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fworkflow%2Farchitecture-design-runtime%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fworkflow%2Fworking-with-rule%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -2496,405 +2487,15 @@ cloud solution, it triggers the call automatically using Service Bus and execute
                             
 
                             
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
+                            <li>
+                                <a href="/workflow/working-with-loops/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Working with Loops
+                                </a>
+                            </li>
                             
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
                             
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
                             
-
                             
 
                             
@@ -2969,36 +2570,40 @@ cloud solution, it triggers the call automatically using Service Bus and execute
 
                             
 
-                            
                             
                             
-
                             
 
                             
 
                             
+                            <li>
+                                <a href="/workflow/working-with-splitter/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Splitter Node
+                                </a>
+                            </li>
                             
                             
-
                             
-
                             
 
-                            
                             
                             
-
                             
 
                             
 
                             
+                            <li>
+                                <a href="/workflow/working-with-sequencer/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Sequencer Node
+                                </a>
+                            </li>
                             
                             
-
                             
-
                             
 
                             
@@ -3016,413 +2621,34 @@ cloud solution, it triggers the call automatically using Service Bus and execute
                             
 
                             
-
+                            <li>
+                                <a href="/workflow/working-with-merger/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Merger Node
+                                </a>
+                            </li>
                             
                             
-                            
-
                             
-
                             
 
                             
                             
-                            
-
                             
 
                             
 
                             
+                            <li>
+                                <a href="/workflow/working-with-halt-resume/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    HALT/RESUME Node
+                                </a>
+                            </li>
                             
                             
-
-                            
-
                             
-
                              
-                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/workflow/Troubleshooting/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Troubleshooting of Workflows
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/workflow/faqs/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Frequently asked questions
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/workflow/Terminologies/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Important Terminologies
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Workflow showing salescycle with post and post task inputs
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/workflow/process-to-configure-a-task-with-acknowledgement/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                     Workflow execution with acknowledgement data
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                             
                         </ul>
                     </div>
@@ -3533,8 +2759,8 @@ cloud solution, it triggers the call automatically using Service Bus and execute
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/workflow/architecture-design-runtime/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/workflow/architecture-design-runtime"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/workflow/working-with-rule/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/workflow/working-with-rule"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
