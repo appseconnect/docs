@@ -1,4 +1,4 @@
----
+﻿---
 title: "Understanding XML and Xpath"
 toc: true
 tag: developers
@@ -27,7 +27,23 @@ Several schema systems exist to aid in the definition of XML-based languages, wh
 
 XPath stands for `XML Path Language` which is a query language for selecting nodes from an XML document. 
 In addition, XPath may be used to compute values (e.g., strings, numbers, or Boolean values) from the content of an XML document. 
-XPath was defined by the World Wide Web Consortium (W3C).
+
+### Features of XPATH
+* Structure Definitions:
+XPath is used to characterize the parts of an XML Document i.e. element, attributes, text, namespace, processing-instruction, comment, and document nodes.
+
+* XPATH Path Expressions:
+XPATH path expressions targets specific nodes or values in an XML document. The XPATH expression syntax address the nodes in the hierarchical tree nature of an XML document.
+
+* XPATH Standard Functions: 
+XPath provides a library of standard functions to manipulate string values, numeric values, date and time comparison, node and QName manipulation, sequence manipulation, Boolean values etc.
+
+* XPath is a core component of XSLT:
+XPath is one of the major elements in XSLT standard and is must have knowledge in order to work with XSLT documents.
+
+* Path is W3C recommendation:
+XPath is an official recommendation of the World Wide Web Consortium (W3C). It defines a language to find information in an XML file.
+
 
 * The XPath language is build on a tree representation of the XML document, and provides the ability to navigate around the tree,
 selecting nodes by a variety of criteria.
@@ -37,6 +53,16 @@ selecting nodes by a variety of criteria.
   2. String
   3. Boolean
   4. Number(Double in .NET)
+
+* XPath defines seven types of nodes which can be the output of execution of the XPath expression.
+
+ 1. Root - Root element of the XML Document
+ 2. Element - Element Node
+ 3. Text - Text of an element Node
+ 4. Attribute - Attribute of an element node
+ 5. Comment - Comments on the XML Document 
+ 6. Processing Instruction - Processing instructions (PIs) allow documents to contain instructions for applications. PIs are not part of the character data of the document but MUST be passed through to the application. Syntax  for the PI is  <?target instructions?>
+ 7. Namespace - Namespace declarations make the elements of an XML document distinguishable and addressable when using an instance of an XPATH. Namespace prefixes provide a brief syntax for addressing namespaces.
 
 * Evaluation of an XPATH expression is done on the basis of the context of the 
   expression. An expression consist of -
@@ -54,6 +80,22 @@ selecting nodes by a variety of criteria.
    1. Axis
    2. Node name (context node name)
    3. Predicate (optional)
+
+
+**XPath uses a path expression to select node or a list of nodes from an XML document. Following is the list of useful paths and expression to select any node/ list of nodes from an XML document.**
+
+|Serial Number|Expression|Description|
+|---|---|---|
+|1.|node-name|Select all nodes with the given name "nodename"|
+|2.|/ (Forward Slash)|Selection starts from the root node|
+|3.|//|Selection starts from the current node that match the selection|
+|4.|.|Selects the current node|
+|5.|..|Selects the parent of the current node|
+|6.|@|Selects attributes|
+|7.|Item|Example – selects all the nodes with the name Item|
+|8.|Products/Item|Example - Example − Selects all Item elements that are children of Products|
+|9.|//Item|Selects all the Item elements no matter where they are in the document|
+|10.|I|This is an operator for computing two sets of nodes|
 
 To put it simply relative path consists of location step separated by "/", while absolute path begins with "/" (referred as root node) followed by optional location steps.
 
@@ -92,3 +134,40 @@ catalog, book and author are node.
  3. /catalog/book[2]/@id instead of /catalog/book[2]/attribute::id
  4. //author instead of /descendant-or-self::node()/child::author
 
+## Example to execute XPATH for an XML file
+
+### Scenario 1  
+
+![xapth1](/staticfiles/Transformation/media/xapth1.png)
+
+In the above XML provided, the node BPAddresses has multiple child nodes. To access the child *Street & AddressName*, 
+the syntax for the XPATH should be:
+
+XPATH Syntax:  
+`BusinessPartners/BPAddresses/AddressName | BusinessPartners/BPAddresses/Street`: The syntax accesses and displays the two element nodes, 
+simultaneously by computing two set of nodes.
+
+XPATH Result Screen:  
+![xapth2](/staticfiles/Transformation/media/xapth2.png)
+
+### Scenario 2  
+![xapth3](/staticfiles/Transformation/media/xapth3.png)
+
+In the above xml provided for this scenario, the parent node Bookstore, has multiple nodes with multiple elements with same node name. 
+
+1.	To access the elements of the book category = cooking, the syntax should be:
+
+XPATH Syntax:
+/bookstore/book[1] - Selects the first book element that is the child of the bookstore element
+
+XPATH Result Screen:    
+![xapth4](/staticfiles/Transformation/media/xapth4.png)
+
+2.	To access all the elements with the element name Author in the whole xml packet, the syntax should be:
+
+Syntax:
+bookstore//book/author – Selects all the books node that is the child of the Bookstore element and fetches every element with the 
+name “author” present in the xml packet.
+
+XPATH Result Screen:  
+![xapth5](/staticfiles/Transformation/media/xapth5.png)

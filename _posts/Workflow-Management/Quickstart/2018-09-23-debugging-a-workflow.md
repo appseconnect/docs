@@ -6,7 +6,7 @@ category: "Workflow"
 menus: 
     quickstartworkflow:
         icon: fa fa-link
-        weight: 8
+        weight: 10
         title: "Debugging workflows" 
         identifier: quickstartfirstworkflow
 ---

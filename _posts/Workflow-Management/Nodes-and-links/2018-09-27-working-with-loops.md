@@ -9,6 +9,7 @@ category: "Workflow"
 menus: 
     nodeandlinks:
         icon: fa fa-link
+        weight: 4
         title: "Working with Loops" 
         identifier: linkloops
 
