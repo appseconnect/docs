@@ -36,14 +36,13 @@ Organisation Creation, Connection Creation & Touchpoint Creation
 ![addvariable2](/staticfiles/Transformation/media/addvariable2.png)        
 **Note: In this case Variable Name `ShipmentCode` is used whose Data Type is provided `String`. 
 Also for the `Data Type, Complex Object and Complex Object Collection` providing the XPATH is mandatory**
-5.	Fill the required details & click Save and Close. Now for Mapping the root variable with destination field, follow the [steps of Attribute Mapping](/transformation/steps-to-cutomize-prebuilt-mapping/)
-6.	Select the variable for the `Mapping Variables` list and click on Submit.
-![addvariable3](/staticfiles/Transformation/media/addvariable3.png)
-7.	Now for implementing the Source Mapping of the created Root Variable, Click on the Open button in the Root Variable section.
-![addvariable4](/staticfiles/Transformation/media/addvariable4.png)
-8.	In the mapping window, expand the `Source Schema` to view the list of all the attributes present. 
-9.  Click the required attribute for which the variable is to be mapped. Once the mapping is done click on SUBMIT.
-![addvariable5](/staticfiles/Transformation/media/addvariable5.png)
+5.	Once the details are filled, click on Save and Close. 
+6.	For Mapping the variable, click on the Open button, which is visible beside the variable name, when hovered over.
+7.	Select the function from the `Functions List`  and click on the function as required (Taken [genericlib:getMapping(ObjectType,Value)] as an example)    
+**Note: The mapping can be executed with the functions as well as, with the source attributes. Implementing mapping only with the functions is not mandatory.**
+![addvariable_new](/staticfiles/Transformation/media/addvariable_new.png)   
+8. Now for implementing the mapping, input the required ObjectType and Value in the Function syntax. Click on the Submit Button, on completion of mapping.
+![addvariable_new2](/staticfiles/Transformation/media/addvariable_new2.png)   
 
 
 ## Post-Conditions
