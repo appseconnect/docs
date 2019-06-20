@@ -1178,6 +1178,18 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/transformation/types-of-mapping/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/transformation/types-of-mapping/" onclick="selectTab('/transformation/types-of-mapping/', event);" title="Go to Types of Mapping">Types of Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/types-of-variable/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/transformation/types-of-variable/" onclick="selectTab('/transformation/types-of-variable/', event);" title="Go to Types of Variable">Types of Variable</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/transformation/understanding-attribute-mapping/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/understanding-attribute-mapping/" onclick="selectTab('/transformation/understanding-attribute-mapping/', event);" title="Go to Understanding Attribute Mapping">Understanding Attribute Mapping</a>
         
@@ -1186,12 +1198,6 @@
     
     <li class="menu-item-" data-url="/transformation/understanding-xml-and-xpath/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/understanding-xml-and-xpath/" onclick="selectTab('/transformation/understanding-xml-and-xpath/', event);" title="Go to Understanding XML and Xpath">Understanding XML and Xpath</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/types-of-mapping/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/transformation/types-of-mapping/" onclick="selectTab('/transformation/types-of-mapping/', event);" title="Go to Types of Mapping">Types of Mapping</a>
         
     </li>
     
@@ -1495,6 +1501,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1625,76 +1637,43 @@
 <h2 id="scenario-1">Scenario 1</h2>
 
 <p>Error Occurred: Code undefined [OCRD.CardCode] 
-Touchpoint Used: Business Partner Add</p>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario1a.png" alt="troubleshooting-scenario1a" /></p>
+Touchpoint Used: Business Partner Add <br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario1a.png" alt="troubleshooting-scenario1a" /></p>
 
 <h3 id="troubleshooting-process-for-scenario-1">Troubleshooting Process for Scenario 1</h3>
 <ol>
   <li>The Transform packet generated is needed to be checked for this touchpoint. The User can view the Transform packet 
-for the above touchpoint and data below.</li>
+for the above touchpoint and data below. <br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario1b.png" alt="troubleshooting-scenario1b" /></li>
+  <li>The transform packet displays that the CardCode is not generated. For this issue the Mapping for the attribute CardCode is needed to be verified for the touchpoint Business Partner.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario1c.png" alt="troubleshooting-scenario1c" /></li>
+  <li>On viewing the mapping was found to have an error where the provided syntax was not completely closed which resulted in occurring the error.</li>
+  <li>Once the mapping is done, click on the Submit Button.</li>
+  <li>Reset Cache and Republish the touchpoint and Update Configuration on the Agent. Enable the 
+checkbox in the agent and click on the Resync Button.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario1d.png" alt="troubleshooting-scenario1d" /></li>
 </ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario1b.png" alt="troubleshooting-scenario1b" /></p>
-<ol>
-  <li>The transform packet displays that the CardCode is not generated. For this issue the Mapping<br />
-for the attribute CardCode is needed to be verified for the touchpoint Business Partner.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario1c.png" alt="troubleshooting-scenario1c" /></p>
-
-<ol>
-  <li>
-    <p>On viewing the mapping was found to have an error where the provided syntax was not completely closed which resulted in occurring the error.</p>
-  </li>
-  <li>
-    <p>Once the mapping is done, click on the Submit Button.</p>
-  </li>
-  <li>
-    <p>Reset Cache and Republish the touchpoint and Update Configuration on the Agent. Enable the 
-checkbox in the agent and click on the Resync Button.</p>
-  </li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario1d.png" alt="troubleshooting-scenario1d" /></p>
 
 <h2 id="scenario-2">Scenario 2</h2>
 
 <p>Error Occurred: Property <code class="highlighter-rouge">U_WBCUSTID of BusinessPartner</code> is invalid.
-Touchpoints Used: Business Partner Add.</p>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario2a.png" alt="troubleshooting-scenario2a" /></p>
+Touchpoints Used: Business Partner Add.  <br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario2a.png" alt="troubleshooting-scenario2a" /></p>
 <h3 id="troubleshooting-process-for-scenario-2">Troubleshooting Process for Scenario 2</h3>
 
 <ol>
-  <li>On reviewing the packets generated its viewed that the output packet generated displays the error.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario2b.png" alt="troubleshooting-scenario2b" /></p>
-
-<ol>
-  <li>As the output packet displays the error, the UDF Field is to be verified whether the UDF is created for the Attribute U_WBCUSTID.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario2c.png" alt="troubleshooting-scenario2c" /></p>
-
-<ol>
+  <li>On reviewing the packets generated its viewed that the output packet generated displays the error.  <br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario2b.png" alt="troubleshooting-scenario2b" /></li>
+  <li>As the output packet displays the error, the UDF Field is to be verified whether the UDF is created for the Attribute U_WBCUSTID. <br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario2c.png" alt="troubleshooting-scenario2c" /></li>
   <li>On checking the UDF for the attribute is absent and is needed to be created.</li>
-</ol>
-
-<p><strong>Note: While creating the UDF the title for the UDF should be of the same format (spelling and Letter Case) as that of the attribute title</strong></p>
-
-<p><strong>Note: For creating the UDF the field is to be created in the Business Partner Category</strong></p>
-
-<ol>
-  <li>Once the UDF is created, Restart the DI SERVER and Resync the failed data in the Resync Bucket.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario2d.png" alt="troubleshooting-scenario2d" /></p>
-
-<ol>
+  <li>Once the UDF is created, Restart the DI SERVER and Resync the failed data in the Resync Bucket. <br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario2d.png" alt="troubleshooting-scenario2d" /></li>
   <li>Similarly in this way, UDF’s to be created for other attributes or for any other touchpoint as required.</li>
 </ol>
+
+<p><strong>Note: While creating the UDF the title for the UDF should be of the same format (spelling and Letter Case) as that of the attribute title.
+For creating the UDF the field is to be created in the Business Partner Category</strong></p>
 
 <h2 id="scenario-3">Scenario 3</h2>
 
@@ -1706,51 +1685,34 @@ Touchpoint Used: ORDER Add (Magento 2 - SAP Business One)</p>
 <h3 id="troubleshooting-process-for-scenario-3">Troubleshooting Process for Scenario 3</h3>
 
 <ol>
-  <li>On reviewing the packets generated, it is viewed that the output packet generated, displays the error.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario3b.png" alt="troubleshooting-scenario3b" /></p>
-
-<ol>
+  <li>On reviewing the packets generated, it is viewed that the output packet generated, displays the error.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario3b.png" alt="troubleshooting-scenario3b" /></li>
   <li>As the error shows the tax code, the mapping for the attribute TaxCode under the schema, Document_Lines is reviewed.</li>
-  <li>The Lookup mapping for the connection is needed to be checked, if the attribute mapping is found to be OK.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario3c.png" alt="troubleshooting-scenario3c" /></p>
-<ol>
+  <li>The Lookup mapping for the connection is needed to be checked, if the attribute mapping is found to be OK.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario3c.png" alt="troubleshooting-scenario3c" /></li>
   <li>The above screen displays that the tax rate for the Source Value is inaccurate as the Tax Rate for Magento2 is 8.25.</li>
   <li>Once the mapping is edited, the value is saved. Reset Cache and Reset Publish the ORDER Touchpoint and Republish the Connection.</li>
-  <li>Update Lookup Tables and Update Configuration in the agent. Click on the the checkbox to enable the resync in the Resync Bucket</li>
+  <li>Update Lookup Tables and Update Configuration in the agent. Click on the the checkbox to enable the resync in the Resync Bucket
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario3d.png" alt="troubleshooting-scenario3d" /></li>
 </ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario3d.png" alt="troubleshooting-scenario3d" /></p>
 
 <h2 id="scenario-4">Scenario 4</h2>
 
-<p>Error: XSLT Validation error in Portal.</p>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario4a.png" alt="troubleshooting-scenario4a" /></p>
+<p>Error: XSLT Validation error in Portal.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario4a.png" alt="troubleshooting-scenario4a" /></p>
 
 <h3 id="troubleshooting-process-for-scenario-4">Troubleshooting Process for Scenario 4</h3>
 
 <ol>
   <li>On Validating the XSLT in the portal, the error location is displayed below along with the error cause.</li>
-  <li>The attribute for the error is identified in the mapping section.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario4b.png" alt="troubleshooting-scenario4b" /></p>
-
-<ol>
+  <li>The attribute for the error is identified in the mapping section.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario4b.png" alt="troubleshooting-scenario4b" /></li>
   <li>Being a compile time error, the [choose] provided in the mapping is not syntactically correct, resulting in the compilation error.</li>
-  <li>On correction the XSLT is validated again with the provided mapping.</li>
+  <li>On correction the XSLT is validated again with the provided mapping.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario4c.png" alt="troubleshooting-scenario4c" /></li>
+  <li>On validating the XSLT is successfully validated.<br />
+<img src="/staticfiles/Transformation/media/troubleshooting-scenario4d.png" alt="troubleshooting-scenario4d" /></li>
 </ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario4c.png" alt="troubleshooting-scenario4c" /></p>
-<ol>
-  <li>On validating the XSLT is successfully validated.</li>
-</ol>
-
-<p><img src="/staticfiles/Transformation/media/troubleshooting-scenario4d.png" alt="troubleshooting-scenario4d" /></p>
 
                 
             </section>
@@ -3165,8 +3127,26 @@ Touchpoint Used: ORDER Add (Magento 2 - SAP Business One)</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -3268,6 +3248,8 @@ Touchpoint Used: ORDER Add (Magento 2 - SAP Business One)</p>
                                     Handling Dependent data
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

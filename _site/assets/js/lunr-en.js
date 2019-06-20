@@ -1205,11 +1205,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Types of Variable",
+      excerpt: "Working with Variables in APPSeCONNECT To facilitate touchpoint mapping, variables stores the data that can be used later in the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 132
+    });
+    
+  
+    idx.add({
       title: "Understanding Attribute Mapping",
       excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 132
+      id: 133
     });
     
   
@@ -1218,7 +1227,7 @@ var idx = lunr(function () {
       excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 133
+      id: 134
     });
     
   
@@ -1227,7 +1236,7 @@ var idx = lunr(function () {
       excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 134
+      id: 135
     });
     
   
@@ -1236,7 +1245,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 135
+      id: 136
     });
     
   
@@ -1245,7 +1254,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 136
+      id: 137
     });
     
   
@@ -1254,7 +1263,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT has its own set of vocabulary or syntax, functions that help its users to customize the pre-defined touchpoints as...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 137
+      id: 138
     });
     
   
@@ -1263,7 +1272,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 138
+      id: 139
     });
     
   
@@ -1272,7 +1281,7 @@ var idx = lunr(function () {
       excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 139
+      id: 140
     });
     
   
@@ -1281,7 +1290,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 140
+      id: 141
     });
     
   
@@ -1290,7 +1299,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 141
+      id: 142
     });
     
   
@@ -1299,7 +1308,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Handling XPATH in Mapping Brief Description XPATH is an essential concept that is required when implementing mapping...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 142
+      id: 143
     });
     
   
@@ -1308,7 +1317,7 @@ var idx = lunr(function () {
       excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 143
+      id: 144
     });
     
   
@@ -1317,7 +1326,7 @@ var idx = lunr(function () {
       excerpt: "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 144
+      id: 145
     });
     
   
@@ -1326,7 +1335,7 @@ var idx = lunr(function () {
       excerpt: "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 145
+      id: 146
     });
     
   
@@ -1335,7 +1344,7 @@ var idx = lunr(function () {
       excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 146
+      id: 147
     });
     
   
@@ -1344,7 +1353,7 @@ var idx = lunr(function () {
       excerpt: "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 147
+      id: 148
     });
     
   
@@ -1353,7 +1362,7 @@ var idx = lunr(function () {
       excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
       categories: ["Transformation"],
       tags: ["developers"],
-      id: 148
+      id: 149
     });
     
   
@@ -1362,7 +1371,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 149
+      id: 150
     });
     
   
@@ -1371,7 +1380,7 @@ var idx = lunr(function () {
       excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 150
+      id: 151
     });
     
   
@@ -1380,7 +1389,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 151
+      id: 152
     });
     
   
@@ -1389,7 +1398,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 152
+      id: 153
     });
     
   
@@ -1398,7 +1407,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 153
+      id: 154
     });
     
   
@@ -1407,7 +1416,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 154
+      id: 155
     });
     
   
@@ -1416,7 +1425,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 155
+      id: 156
     });
     
   
@@ -1425,7 +1434,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 156
+      id: 157
     });
     
   
@@ -1434,7 +1443,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 157
+      id: 158
     });
     
   
@@ -1443,7 +1452,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 158
+      id: 159
     });
     
   
@@ -1452,7 +1461,7 @@ var idx = lunr(function () {
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 159
+      id: 160
     });
     
   
@@ -1461,7 +1470,7 @@ var idx = lunr(function () {
       excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 160
+      id: 161
     });
     
   
@@ -1470,7 +1479,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 161
+      id: 162
     });
     
   
@@ -1479,7 +1488,7 @@ var idx = lunr(function () {
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 162
+      id: 163
     });
     
   
@@ -1488,7 +1497,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 163
+      id: 164
     });
     
   
@@ -1497,7 +1506,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 164
+      id: 165
     });
     
   
@@ -1506,7 +1515,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 165
+      id: 166
     });
     
   
@@ -1515,7 +1524,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 166
+      id: 167
     });
     
   
@@ -1524,7 +1533,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 167
+      id: 168
     });
     
   
@@ -1533,7 +1542,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 168
+      id: 169
     });
     
   
@@ -1542,7 +1551,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 169
+      id: 170
     });
     
   
@@ -1551,7 +1560,7 @@ var idx = lunr(function () {
       excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 170
+      id: 171
     });
     
   
@@ -1560,7 +1569,16 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 171
+      id: 172
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Log Bucket",
+      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 173
     });
     
   
@@ -3035,6 +3053,17 @@ var store = [
     
       
       {
+        "title": "Types of Variable",
+        "url": "/transformation/types-of-variable/",
+        "excerpt": "Working with Variables in APPSeCONNECT To facilitate touchpoint mapping, variables stores the data that can be used later in the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Understanding Attribute Mapping",
         "url": "/transformation/understanding-attribute-mapping/",
         "excerpt": "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
@@ -3466,6 +3495,17 @@ var store = [
       {
         "title": "Pre-Configured Rule for Resync Bucket",
         "url": "/rule/preconfigured-rule-for-resync-bucket/",
+        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Pre-Configured Rule for Log Bucket",
+        "url": "/rule/preconfigured-rule-for-log-bucket/",
         "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
         "teaser":
           

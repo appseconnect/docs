@@ -17,7 +17,7 @@ application. This section enables the user to view and add the Schema and its Ac
 
 [Click here](/getting-started/#appseconnect-schemaentity) to know more about the Schemas.
 
-### Prerequisites
+### Prerequisites for adding schemas
 
 1.	The User needs to have a valid AEC account.
 2.	An application is needed to select for defining the Schemas and its Actions.
@@ -25,17 +25,19 @@ application. This section enables the user to view and add the Schema and its Ac
 ## Adding Schemas in APPSeCONNECT Portal
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
-2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)
+2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)  
 3.	Click on the + sign after adding the application and click on Schema (Here MS Dynamics NAV has been chosen).  
-![addingschema](/staticfiles/Transformation/media/addingschema.png)
+![addingschema](/staticfiles/Transformation/media/addingschema.png)  
 4. On the Schema Window the user can view the list of schemas present or can also add schemas from the ADD Schema Option.   
-![addingschema2](/staticfiles/Transformation/media/addingschema2.png)
+![addingschema2](/staticfiles/Transformation/media/addingschema2.png)  
 5. A pop-up window will appear with the following fields.    
 a.	Schema Name: This is a mandatory field and it needs to be provided with the schema name    
 b.	Schema Description: The description for the schema is needed to be given here.    
-c.	Schema Namespace: Differentiates between two similar schemas.     
-d.	Schema Namespace URL: Differentiates between two similar schemas using URL.      
-![addingschema3](/staticfiles/Transformation/media/addingschema3.png)
+c.	Schema Namespace: Differentiates between two similar schemas. Few apps (SAP, Quickbooks) use namespace to define the xml structure. XML namespaces are used for 
+    providing uniquely named elements and attributes in an XML document.       
+d.	Schema Namespace URL: Differentiates between two similar schemas using URL. These are usually defined in the API of an application during development 
+    and can be fetched as response data by using the actions of the application.        
+![addingschema3](/staticfiles/Transformation/media/addingschema3.png)  
 6.	Click on the create button for creating the schema.    
 
 ## Importing schemas in APPSeCONNECT portal
@@ -54,7 +56,7 @@ d.	Schema Namespace URL: Differentiates between two similar schemas using URL.
 ![importing-schema3](/staticfiles/Transformation/media/importing-schema3.png)
 6. For the XML/JSON format, the user needs to upload the file that supports the respective formats. For XML, the user needs to 
    upload XML file and for JSON, the JSON file needs to be uploaded.
-7.	The parent node of provided in the file is needed to be provided in the ELEMENT field.  
+7.	The parent node of the file is needed to be provided in the ELEMENT field.  
 ![importing-schema4](/staticfiles/Transformation/media/importing-schema4.png)  
 In this case, the parent is items, therefore the Element should be items.    
 ![importing-schema5](/staticfiles/Transformation/media/importing-schema5.png)
@@ -101,11 +103,23 @@ f.	Attribute Property: This section has 3 checkboxes -  Primary, Required, Attri
 10. Click SAVE button, after all the details has been made. 
 11.	Right Click on the created attribute in the node structure, for Renaming and Deleting the attribute.
 
+
+### Steps to Add Actions of an Application
+
+The steps to import schemas and actions of an application is given below:
+
+### Prerequisites for defining Action
+
+1.	The User needs to have a valid AEC account.
+2.	An application is needed to select for defining the Schemas and its Actions.
+
 ## Actions
 
-Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter. 
+Actions are nothing but defining certain tasks like getting data from an application or sending data to an application 
+based on certain conditions and these conditions are defined through an action filter. 
 
-For example, suppose you want to fetch customer's data from an eCommerce site and in APPSeCONNECT you define a Customer entity for that, now for getting data we can define an action name, called 'GET'. 
+For example, suppose you want to fetch customer's data from an eCommerce site and in APPSeCONNECT you define a Customer entity 
+for that, now for getting data we can define an action name, called 'GET'. 
 When you define an action for an entity you need to provide certain information
 
 * Action Name: Name of the action. In some predefined application, many adapter logics are written based on this data.
@@ -137,6 +151,10 @@ Conjunctions - And/Or [$Node1 + $Node2]
 
 ![actionfilter-image](/staticfiles/Transformation/media/actionfilter-image.png)
 
+**Note: Action Filters are also used for the POST operation only when working with File System Applications. 
+The destination position for storing the data in the file system application can be defined using the Action 
+filters for this POST operation**
+
 ## Resync Filter/Error Filter
 
 Error filters do acts like that of an action filter but is not same as the action filter. Error filters, identifies and fetches the errors occurred 
@@ -150,39 +168,8 @@ Error filters are the same as the action filters. They are written for syncing e
 For explanation purpose, sample filter for SOAP API has been taken, where a hierarchical node structure is maintained for filtration.
 
 
-### Steps to add Resync Filters
 
-1.	Log in to the cloud portal with valid credentials.
-2.	Navigate to connections and click on the Filters icon in the touchpoint for the connection you are working on. The filters window shows up.  
-![resync-filter](/staticfiles/Transformation/media/resync-filter.png) 
-3.  Create a new node  
-![actionfilter](/staticfiles/Transformation/media/actionfilter.png) 
-4. After creating a new node, you will be able to do the following things  
-    a) Create another node (as a child of the parent node).  
-    b) Rename the created node.  
-    c) Delete the created node.  
-3. As a sample filter for Order Add has been taken, you will get the information in a key-value pair. Fill in the details for the
-   key-value pair & Complex filters as required.    
-![actionfilter-example1](/staticfiles/Transformation/media/actionfilter-example1.png)  
-![actionfilter-example2](/staticfiles/Transformation/media/actionfilter-example2.png)  
-![actionfilter-example3](/staticfiles/Transformation/media/actionfilter-example3.png)  
-4. Click on the Save button to save the provided resync filters.
-
-**Note: Resync Filters can also be defined from the APP level. 
-Navigate to the APP section>select the APP>identify the schema and the action for the required operation>define the action filter.** 
-
-**Note:Action Filters needs to be defined only for the GET operation** 
-
-### Steps to Import Schemas and Actions of an Application
-
-The steps to import schemas and actions of an application is given below:
-
-### Prerequisites
-
-1.	The User needs to have a valid AEC account.
-2.	An application is needed to select for defining the Schemas and its Actions.
-
-## Importing Schemas and Actions of an application
+## Adding Actions in an application
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
 2.  Go to APPS Page and [Choose any application](/getting-started/#choosing-application )
@@ -206,3 +193,26 @@ The steps to import schemas and actions of an application is given below:
 
 **Protip:** Default Schemas would only be present for the Pre-packaged APPS.
 {: .notice--info}
+
+### Steps to add Resync Filters
+
+1.	Log in to the cloud portal with valid credentials.
+2.	Navigate to connections and click on the Filters icon in the touchpoint for the connection you are working on. The filters window shows up.  
+![resync-filter](/staticfiles/Transformation/media/resync-filter.png) 
+3.  Create a new node  
+![actionfilter](/staticfiles/Transformation/media/actionfilter.png) 
+4. After creating a new node, you will be able to do the following things  
+    a) Create another node (as a child of the parent node).  
+    b) Rename the created node.  
+    c) Delete the created node.  
+3. As a sample filter for Order Add has been taken, you will get the information in a key-value pair. Fill in the details for the
+   key-value pair & Complex filters as required.    
+![actionfilter-example1](/staticfiles/Transformation/media/actionfilter-example1.png)  
+![actionfilter-example2](/staticfiles/Transformation/media/actionfilter-example2.png)  
+![actionfilter-example3](/staticfiles/Transformation/media/actionfilter-example3.png)  
+4. Click on the Save button to save the provided resync filters.
+
+**Note: Resync Filters can also be defined from the APP level. 
+Navigate to the APP section>select the APP>identify the schema and the action for the required operation>define the action filter.** 
+
+**Note:Action Filters needs to be defined only for the GET operation** 

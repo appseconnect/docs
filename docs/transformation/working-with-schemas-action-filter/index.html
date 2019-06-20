@@ -1178,6 +1178,18 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/transformation/types-of-mapping/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/transformation/types-of-mapping/" onclick="selectTab('/transformation/types-of-mapping/', event);" title="Go to Types of Mapping">Types of Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/transformation/types-of-variable/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/transformation/types-of-variable/" onclick="selectTab('/transformation/types-of-variable/', event);" title="Go to Types of Variable">Types of Variable</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/transformation/understanding-attribute-mapping/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/understanding-attribute-mapping/" onclick="selectTab('/transformation/understanding-attribute-mapping/', event);" title="Go to Understanding Attribute Mapping">Understanding Attribute Mapping</a>
         
@@ -1186,12 +1198,6 @@
     
     <li class="menu-item-" data-url="/transformation/understanding-xml-and-xpath/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/transformation/understanding-xml-and-xpath/" onclick="selectTab('/transformation/understanding-xml-and-xpath/', event);" title="Go to Understanding XML and Xpath">Understanding XML and Xpath</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/transformation/types-of-mapping/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/transformation/types-of-mapping/" onclick="selectTab('/transformation/types-of-mapping/', event);" title="Go to Types of Mapping">Types of Mapping</a>
         
     </li>
     
@@ -1495,6 +1501,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1577,7 +1589,7 @@
 
 
 
-  8 minute read
+  9 minute read
 </p>
                 
                 
@@ -1591,10 +1603,10 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#knowing-schema-actions--filters">Knowing Schema, Actions &amp; Filters</a></li>
-  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#prerequisites-for-adding-schemas">Prerequisites for adding schemas</a></li>
+  <li><a href="#steps-to-add-actions-of-an-application">Steps to Add Actions of an Application</a></li>
+  <li><a href="#prerequisites-for-defining-action">Prerequisites for defining Action</a></li>
   <li><a href="#steps-to-add-resync-filters">Steps to add Resync Filters</a></li>
-  <li><a href="#steps-to-import-schemas-and-actions-of-an-application">Steps to Import Schemas and Actions of an Application</a></li>
-  <li><a href="#prerequisites-1">Prerequisites</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -1606,7 +1618,7 @@ application. This section enables the user to view and add the Schema and its Ac
 
 <p><a href="/getting-started/#appseconnect-schemaentity">Click here</a> to know more about the Schemas.</p>
 
-<h3 id="prerequisites">Prerequisites</h3>
+<h3 id="prerequisites-for-adding-schemas">Prerequisites for adding schemas</h3>
 
 <ol>
   <li>The User needs to have a valid AEC account.</li>
@@ -1625,8 +1637,10 @@ application. This section enables the user to view and add the Schema and its Ac
   <li>A pop-up window will appear with the following fields.  <br />
 a.	Schema Name: This is a mandatory field and it needs to be provided with the schema name  <br />
 b.	Schema Description: The description for the schema is needed to be given here.  <br />
-c.	Schema Namespace: Differentiates between two similar schemas.   <br />
-d.	Schema Namespace URL: Differentiates between two similar schemas using URL.    <br />
+c.	Schema Namespace: Differentiates between two similar schemas. Few apps (SAP, Quickbooks) use namespace to define the xml structure. XML namespaces are used for 
+ providing uniquely named elements and attributes in an XML document.     <br />
+d.	Schema Namespace URL: Differentiates between two similar schemas using URL. These are usually defined in the API of an application during development 
+ and can be fetched as response data by using the actions of the application.      <br />
 <img src="/staticfiles/Transformation/media/addingschema3.png" alt="addingschema3" /></li>
   <li>Click on the create button for creating the schema.</li>
 </ol>
@@ -1651,7 +1665,7 @@ file for the Schema.
   </li>
   <li>For the XML/JSON format, the user needs to upload the file that supports the respective formats. For XML, the user needs to 
 upload XML file and for JSON, the JSON file needs to be uploaded.</li>
-  <li>The parent node of provided in the file is needed to be provided in the ELEMENT field.<br />
+  <li>The parent node of the file is needed to be provided in the ELEMENT field.<br />
 <img src="/staticfiles/Transformation/media/importing-schema4.png" alt="importing-schema4" /><br />
 In this case, the parent is items, therefore the Element should be items.  <br />
 <img src="/staticfiles/Transformation/media/importing-schema5.png" alt="importing-schema5" /></li>
@@ -1704,11 +1718,24 @@ f.	Attribute Property: This section has 3 checkboxes -  Primary, Required, Attri
   <li>Right Click on the created attribute in the node structure, for Renaming and Deleting the attribute.</li>
 </ol>
 
+<h3 id="steps-to-add-actions-of-an-application">Steps to Add Actions of an Application</h3>
+
+<p>The steps to import schemas and actions of an application is given below:</p>
+
+<h3 id="prerequisites-for-defining-action">Prerequisites for defining Action</h3>
+
+<ol>
+  <li>The User needs to have a valid AEC account.</li>
+  <li>An application is needed to select for defining the Schemas and its Actions.</li>
+</ol>
+
 <h2 id="actions">Actions</h2>
 
-<p>Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter.</p>
+<p>Actions are nothing but defining certain tasks like getting data from an application or sending data to an application 
+based on certain conditions and these conditions are defined through an action filter.</p>
 
-<p>For example, suppose you want to fetch customer’s data from an eCommerce site and in APPSeCONNECT you define a Customer entity for that, now for getting data we can define an action name, called ‘GET’. 
+<p>For example, suppose you want to fetch customer’s data from an eCommerce site and in APPSeCONNECT you define a Customer entity 
+for that, now for getting data we can define an action name, called ‘GET’. 
 When you define an action for an entity you need to provide certain information</p>
 
 <ul>
@@ -1748,6 +1775,10 @@ executing touchpoint where that action filter used.</p>
 
 <p><img src="/staticfiles/Transformation/media/actionfilter-image.png" alt="actionfilter-image" /></p>
 
+<p><strong>Note: Action Filters are also used for the POST operation only when working with File System Applications. 
+The destination position for storing the data in the file system application can be defined using the Action 
+filters for this POST operation</strong></p>
+
 <h2 id="resync-filtererror-filter">Resync Filter/Error Filter</h2>
 
 <p>Error filters do acts like that of an action filter but is not same as the action filter. Error filters, identifies and fetches the errors occurred 
@@ -1759,6 +1790,32 @@ Resync Filters even for a REST Application if required.</p>
 
 <p>Error filters are the same as the action filters. They are written for syncing erroneous data which are present in APPSeCONNECT error log bucket or the resync bucket. Based on the logic implemented in adapter code you need to specify the error filter.
 For explanation purpose, sample filter for SOAP API has been taken, where a hierarchical node structure is maintained for filtration.</p>
+
+<h2 id="adding-actions-in-an-application">Adding Actions in an application</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
+  <li>Go to APPS Page and <a href="/getting-started/#choosing-application">Choose any application</a></li>
+  <li>Click on the + sign after adding the application and click on Schema 
+(Here MS Dynamics NAV has been choosen). <br />
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction1.png" alt="Importing-SchemaAction1" /></li>
+  <li>On the Schema Window the user can view the list of schemas present or can also add schemas from the <code class="highlighter-rouge">ADD Schema</code> Option.
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction2.png" alt="Importing-SchemaAction2" /></li>
+  <li>The Actions inside a schema can be viewed by clicking on the + sign. <br />
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction3.png" alt="Importing-SchemaAction3" /></li>
+  <li>Click <code class="highlighter-rouge">ADD ACTION</code> button for providing Actions in the schema level. 
+Input the <strong>Action Name</strong> and the <strong>Action Description</strong>. The user can view the ACTION window below.<br />
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction4.png" alt="Importing-SchemaAction4" /></li>
+  <li>Expand the nodes for viewing the Action Filters and the Resync Filters. Right Click on the Action Filter node to create its filters.<br />
+<strong>NOTE: Save the Action Name and the Description before creating action filters.</strong><br />
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction5.png" alt="Importing-SchemaAction5" /></li>
+  <li>Edit the name of the Action Filter node and input the details in the fields REQUEST, OPERATOR, and the VALUE.</li>
+  <li>Similarly, for RESYNC Filter, Right Click to create its filter. Edit the Name, and input the details for the field REQUEST, OPERATOR and the VALUE.<br />
+<img src="/staticfiles/Transformation/media/Importing-SchemaAction6.png" alt="Importing-SchemaAction6" /></li>
+  <li>Once done with the configurations, click on the SAVE option.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> Default Schemas would only be present for the Pre-packaged APPS.</p>
 
 <h3 id="steps-to-add-resync-filters">Steps to add Resync Filters</h3>
 
@@ -1784,43 +1841,6 @@ key-value pair &amp; Complex filters as required.  <br />
 Navigate to the APP section&gt;select the APP&gt;identify the schema and the action for the required operation&gt;define the action filter.</strong></p>
 
 <p><strong>Note:Action Filters needs to be defined only for the GET operation</strong></p>
-
-<h3 id="steps-to-import-schemas-and-actions-of-an-application">Steps to Import Schemas and Actions of an Application</h3>
-
-<p>The steps to import schemas and actions of an application is given below:</p>
-
-<h3 id="prerequisites-1">Prerequisites</h3>
-
-<ol>
-  <li>The User needs to have a valid AEC account.</li>
-  <li>An application is needed to select for defining the Schemas and its Actions.</li>
-</ol>
-
-<h2 id="importing-schemas-and-actions-of-an-application">Importing Schemas and Actions of an application</h2>
-
-<ol>
-  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
-  <li>Go to APPS Page and <a href="/getting-started/#choosing-application">Choose any application</a></li>
-  <li>Click on the + sign after adding the application and click on Schema 
-(Here MS Dynamics NAV has been choosen). <br />
-<img src="/staticfiles/Transformation/media/Importing-SchemaAction1.png" alt="Importing-SchemaAction1" /></li>
-  <li>On the Schema Window the user can view the list of schemas present or can also add schemas from the <code class="highlighter-rouge">ADD Schema</code> Option.
-<img src="/staticfiles/Transformation/media/Importing-SchemaAction2.png" alt="Importing-SchemaAction2" /></li>
-  <li>The Actions inside a schema can be viewed by clicking on the + sign. <br />
-<img src="/staticfiles/Transformation/media/Importing-SchemaAction3.png" alt="Importing-SchemaAction3" /></li>
-  <li>Click <code class="highlighter-rouge">ADD ACTION</code> button for providing Actions in the schema level. 
-Input the <strong>Action Name</strong> and the <strong>Action Description</strong>. The user can view the ACTION window below.<br />
-<img src="/staticfiles/Transformation/media/Importing-SchemaAction4.png" alt="Importing-SchemaAction4" /></li>
-  <li>Expand the nodes for viewing the Action Filters and the Resync Filters. Right Click on the Action Filter node to create its filters.<br />
-<strong>NOTE: Save the Action Name and the Description before creating action filters.</strong><br />
-<img src="/staticfiles/Transformation/media/Importing-SchemaAction5.png" alt="Importing-SchemaAction5" /></li>
-  <li>Edit the name of the Action Filter node and input the details in the fields REQUEST, OPERATOR, and the VALUE.</li>
-  <li>Similarly, for RESYNC Filter, Right Click to create its filter. Edit the Name, and input the details for the field REQUEST, OPERATOR and the VALUE.<br />
-<img src="/staticfiles/Transformation/media/Importing-SchemaAction6.png" alt="Importing-SchemaAction6" /></li>
-  <li>Once done with the configurations, click on the SAVE option.</li>
-</ol>
-
-<p class="notice--info"><strong>Protip:</strong> Default Schemas would only be present for the Pre-packaged APPS.</p>
 
                 
             </section>
@@ -3235,8 +3255,26 @@ Input the <strong>Action Name</strong> and the <strong>Action Description</stron
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -3340,6 +3378,8 @@ Input the <strong>Action Name</strong> and the <strong>Action Description</stron
                                     Using Lookups Mapping for Value Interchange
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

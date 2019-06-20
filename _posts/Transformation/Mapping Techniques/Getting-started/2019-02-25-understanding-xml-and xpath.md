@@ -6,6 +6,7 @@ category: "Transformation"
 menus: 
     mappinggettingstarted:        
         title: "Understanding XML and Xpath"
+        weight: 4
         icon: fa fa-wpexplorer
         identifier: understandingxmlxpath
 ---
