@@ -69,7 +69,8 @@ which is executed according to the position value present in the variable $Addre
 To avoid duplicate details for an item that has already been synced, Root Entity Variables is defined for restricting the duplicate details as well as to hold the new details of the product that is yet to be synced. 
 
 `Variable name used: $MaxDate`  
-`Variable Mapping defined: [sourcelib:WriteMaxDate({{../../items}},'item','yyyy-MM-dd H:mm:ss',{{position()}})]`  
+Variable Mapping defined   
+![image_rootentity_variable](/staticfiles/Transformation/media/image_rootentity_variable.png)      
 Variable Description: Using this function, the current date and time in the format yyyy-MM-dd H:mm:ss is triggered. 
 Here, Xpath is used where the complete packet is fetched based on the packet xpath provided, for that time and date and position.  
 

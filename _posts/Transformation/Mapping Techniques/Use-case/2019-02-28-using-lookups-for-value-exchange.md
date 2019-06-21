@@ -61,26 +61,27 @@ The screen for the Lookup is provided below:
 
 ## Steps to Implement Lookups:
 
-1.	Navigate to the touchpoint after login for which the Lookup Mapping is to be done.
+1.	Navigate to the touchpoint after login for which the Lookup Mapping is to be done.  
 **Note: The user can even implement the Lookup Mapping in the List of Touchpoints Page**
 2.	Click on the Transform button on the touchpoint you have selected. The user will now be able to view the Transform screen of that touchpoint.
 3.	Click on Lookups and you can view two options. Click on the ADD option to add new Lookup values. 
-    VIEW option will display the lookups provided for that touchpoint or the connection. 
-**Note: Lookups can also be added if clicked on the VIEW button**
+    VIEW option will display the lookups provided for that touchpoint or the connection.     
+**Note: Lookups can also be added if clicked on the VIEW button**  
 ![lookup2](/staticfiles/Transformation/media/lookup2.png)
 4.	The Lookup Box opens when clicked on the ADD button. The user can view all the fields that are required to map the 
     Lookup Types.
 5.	Select the Lookup types from the drop-down for which the Mapping is to be done. Currently there are numerous types 
-    that can be availed for value map. 
+    that can be availed for value map.       
 **Note: The type `Currency` is selected for the demonstration.**
 6.	Provide the input for field `Used For` which should be related to the lookup type.
-7.	Input the Source and Destination Value for which the Mapping is to be done. The user can view the screen below.
+7.	Input the Source and Destination Value for which the Mapping is to be done. The user can view the screen below.  
 ![lookup3](/staticfiles/Transformation/media/lookup3.png)
-8.  The user can add multiple Lookup types for its mapping. Click on the Enable checkbox once the values are provided.
-![lookup4](/staticfiles/Transformation/media/lookup4.png)
+8.  The user can add multiple Lookup types for its mapping. Click on the Enable checkbox once the values are provided.  
+![lookup4](/staticfiles/Transformation/media/lookup4.png)  
 **Note: The Destination Value USCA is a value in the Tax Codes of SAP B1 for which the rate is provided. By default, 
 the USCA is not present in the SAP B1, it needs to be created for enabling this mapping.**
-9.	Once the values are provided click on the SAVE icon beside the lookup or click on the SAVE ALL option.
+9.	Once the values are provided click on the SAVE icon beside the lookup or click on the SAVE ALL option.  
+
 **Note: After Providing and Saving the Values, click on the option `Reset Cache` and `Reset Publish` in the touchpoint and 
 Click on `Update Lookup Tables` and then `Update Configuration` in the agent for enabling the mapping.**
 
