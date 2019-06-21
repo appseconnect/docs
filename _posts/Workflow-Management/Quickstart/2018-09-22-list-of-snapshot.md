@@ -4,10 +4,11 @@ toc: true
 tag: developers
 category: "Workflow"
 menus: 
-    deployworkflow:
+    quickstartworkflow:
         icon: fa fa-link
+        weight: 9
         title: "Data-view of Snapshot" 
-        identifier: snapshotworkflow 
+        identifier: quickstartfirstworkflow
 ---
 
 Snapshot in Workflow gives complete overview of the transactions made through it. A transaction in workflow means an an unique execution
@@ -39,22 +40,25 @@ The execution screen contains the following details of the workflow snapshot
 * View button: This indicates the node level tree structure view of the workflow which shows the single execution 
   details at the node level.
 3. Click on the `View button`  against a snapshot list of the workflow you want to view. The following screen 
-appears. The screen above gives drill down node view of the workflow.
+appears. The screen above gives drill down node view of the workflow.  
 ![workflowprocess-shapshot](/staticfiles/workflow-management/media/workflowprocess-shapshot.png)
 4. Click on the Touchpoint (e.g: Sales Order Add/Business Partner Add) and this maximises and give details of nodes like
 Get, Halt, Resume,Process, Post etc. as shown below
 ![getoperation-resyncbucket](/staticfiles/workflow-management/media/getoperation-resyncbucket.png)
 5. Every node captures the following details as given below:
-* Resync Bucket - This shows the status of the resync bucket wrt to the node. By default, Resync bucket opens up wrt to 
-the selected node of the workflow. Resync Bucket gives information of the node being processed and it captures information 
-like source id, destination id, status of the execution, message and additional data.
+* Resync Bucket - Resync Bucket - This shows the status of the resync bucket wrt to the node. By default, 
+resync bucket opens up wrt to the selected node of the workflow. Resync Bucket gives information of the node
+being processed and it captures information like source id, destination id, Additional Data and Tries)
 * Log Bucket - This shows the logs specific to a node/loop. The errors will be displayed, if any.
 * File - This shows the XML File on our local systems,for the error will be shown directly in the FILE tab.  
-6. By default Resync bucket tab is selected. Click on log bucket tab to view the Log bucket of the processed node as shown below.
+6. By default Resync bucket tab is selected. Click on log bucket tab to view the Log bucket of the processed node as shown below.  
 ![Getoperation-logbucket](/staticfiles/workflow-management/media/Getoperation-logbucket.png)
-7. Click on File tab to view the XML File details.
+7. Click on File tab to view the XML File details.  
 ![getoperation-file](/staticfiles/workflow-management/media/getoperation-file.png)
-8. Here you can view the XML File with respect to the choosen node to sort out any errors in your local srver.
+8. Here you can view the output of the GET node in XML File.
+
+**NOTE: Destination Response data is viewable under file option of POST node**
+
 The process of execution of every node can be changed as per user requirement and some of them are explained below:
 
 **Scenario 1:**
@@ -83,8 +87,7 @@ In the below screen, you can see the DELAY element has been successfully execute
 
 **Scenario 3:**
 
-Here we are executing a workflow with a **Split-Process** Property. Here the execution is splitted into multiple process and you can see for each process,
-files are generated as shown in t he screen given below.
+Here we are executing a workflow with a **Split** Property. Here the output of the GET node is splitted into multiple file for load balancing.
 
 ![Split-Process-Snapshot](/staticfiles/workflow-management/media/Split-Process-Snapshot.png)
 
@@ -94,7 +97,7 @@ files are generated as shown in t he screen given below.
 
 **Scenario 4:**
 Here we are executing a workflow with **Merge Process** property. You can see the `Resync Bucket, Log Bucket and File` for each of the merged process. 
-In the Resync Bucket, you can view the Source ID, Status and the Message of the single merge process.
+In the Resync Bucket, you can view the Source ID, and the Message of the single merge process.  
 ![Mergeprocess-Snapshot](/staticfiles/workflow-management/media/Mergeprocess-Snapshot.png)
 
 **Protip** Execution of `Rule Process Property, Halt Node, Resume Element, Filter Element` will give similar node 
@@ -128,5 +131,3 @@ Resync Bucket, Log Bucket, and the File.
 
 ![decision-snapshot](/staticfiles/workflow-management/media/decision-snapshot.png)
 
-**Protip** The status column in the snapshot displays "Unprocessed" on its successful execution.
-{: .notice--info}

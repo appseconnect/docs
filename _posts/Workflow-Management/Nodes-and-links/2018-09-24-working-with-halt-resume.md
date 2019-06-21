@@ -6,7 +6,7 @@ tag:
         - nodes
 category: "Workflow"
 menus: 
-    nodeandlinks:
+    nodeselement:
         icon: fa fa-link
         title: "Working with Halt/Resume" 
         identifier: nodehalt

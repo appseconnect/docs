@@ -6,7 +6,7 @@ category: "Rule"
 menus: 
     overviewrule:
         title: "Creation of Rule"
-        weight: 14
+        weight: 15
         icon: fa fa-wpexplorer
         identifier: createrule
 ---

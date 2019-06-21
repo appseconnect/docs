@@ -6,6 +6,7 @@ category: "Transformation"
 menus: 
     mappinggettingstarted:        
         title: "Types of Mapping"
+        weight: 1
         icon: fa fa-wpexplorer
         identifier: typesofmapping
 ---

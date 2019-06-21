@@ -1,14 +1,14 @@
 ---
-title: "Scheduling, Deploying & Executing workflows"
+title: "Scheduling, Deploying, Publishing & Executing workflows"
 toc: true
 tag: developers
 category: "Workflow" 
 menus: 
-    workflow:
+    quickstartworkflow:
         icon: fa fa-link
-        weight: 4
-        title: "Scheduling, Deploying & Executing workflows"
-        identifier: deployworkflow 
+        weight: 8
+        title: "Scheduling, Deploying, Publishing & Executing workflows"
+        identifier: quickstartfirstworkflow
 
 ---
 Workflow in APPSeCONNECT provides integration solution which helps any business to execute
@@ -29,11 +29,11 @@ runtime to debug and execute workflows.
 
 ## Scheduling a Workflow
 
-1.	Navigate to the workflow design area and click on the Schedule button.
-![scheduling-workflow](/staticfiles/workflow-management/media/scheduling-workflow.png) 
-2.	The schedule window shows up. The windows have the following fields as displayed below:
-![scheduling-workflow2](/staticfiles/workflow-management/media/scheduling-workflow2.png)   
-a.	Sync type: This depicts whether the process is Auto or Manual.    
+1.	Navigate to the workflow design area and click on the Schedule button.  
+![scheduling-workflow](/staticfiles/workflow-management/media/scheduling-workflow.png)   
+2.	The schedule window shows up. The windows have the following fields as displayed below:  
+![scheduling-workflow2](/staticfiles/workflow-management/media/scheduling-workflow2.png)     
+a.	Sync type: This depicts whether the process is Auto or Manual.      
 b.	Repeat: This has three option in the drop-down Every Minute, Daily & Hourly.    
 c.	Repeat Interval: This determines the time gap between the sync processes.     
 d.	End: This field has two options.   
@@ -41,6 +41,19 @@ d.	End: This field has two options.
 * End after a defined repetition: When selected this option, an additional field appears "End After" which
   depicts the End Time Occurrence.
 3.	After Scheduling the workflow, click OK button.
+
+## Publishing a Workflow
+
+If you change attribute mapping in a workflow you need to publish the workflow before deploying. The steps to do the same
+is given below
+
+1.	After creating and saving the workflow, click `Reset Generate` Button followed by `Reset Publish`button.
+2.  Save and Refresh the window. 
+![publish-workflow](/staticfiles/workflow-management/media/publish-workflow.png)
+3. On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
+user made in the APPSeCONNECT cloud` and is `compiled to a single file stored on the server` which is 
+accessible from the APPSeCONNECT Agent.
+![publish-workflow2](/staticfiles/workflow-management/media/publish-workflow2.png) 
 
 ## Deploying a Workflow
 
@@ -54,6 +67,8 @@ in the agent. The user can also click on the Update Configuration button in the 
 **Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
 and Deploy Configuration should be clicked for the agent that is being used.**
 4. After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.
+
+
 
 ## Executing the Workflow
 

@@ -6,7 +6,7 @@ tag:
         - nodes
 category: "Workflow"
 menus: 
-    nodeandlinks:
+    nodesprocess:
         icon: fa fa-link
         title: "Working with Sequencer" 
         identifier: nodesequencer

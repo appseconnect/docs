@@ -6,7 +6,7 @@ category: "Rule"
 menus: 
     overviewrule:
         title: "Pre-Configured Rule for Misfire Event"
-        weight: 14
+        weight: 16
         icon: fa fa-wpexplorer
         identifier: preconfigurerule
 ---
