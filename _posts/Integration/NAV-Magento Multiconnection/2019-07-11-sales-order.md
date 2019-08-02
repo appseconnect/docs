@@ -1,11 +1,11 @@
 ---
-title: "Add Sales Order"
+title: "Add Sales Order Mage2 Multiconnection-NAV"
 toc: true
 tag: developers
 category: "Integration"
 menus: 
     navmagentointegration:
-        title: "Add Sales Order"
+        title: "Add Sales Order Mage2 Multiconnection-NAV"
         icon: fa fa-wpexplorer
         identifier: salesorderaddintegration
 ---

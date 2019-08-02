@@ -1,11 +1,11 @@
 ---
-title: "Inventory Update"
+title: "Inventory Update NAV-Mage2 Multiconnection"
 toc: true
 tag: developers
 category: "Integration"
 menus: 
     navmagentointegration:
-        title: "Inventory Update"
+        title: "Inventory Update NAV-Mage2 Multiconnection"
         icon: fa fa-wpexplorer
         identifier: inventoryupdateintegration
 ---

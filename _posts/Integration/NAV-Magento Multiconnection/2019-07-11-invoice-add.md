@@ -1,13 +1,13 @@
 ---
-title: " Add Invoice"
+title: "Add Invoice NAV-Mage2 Multiconnection"
 toc: true
 tag: developers
 category: "Integration"
 menus: 
     navmagentointegration:
-        title: " Add Invoice"
+        title: "Add Invoice NAV-Mage2 Multiconnection"
         icon: fa fa-wpexplorer
-        identifier: invoiceintegration
+        identifier: addinvoicenav-mage2
 ---
 
 Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for `Adding 

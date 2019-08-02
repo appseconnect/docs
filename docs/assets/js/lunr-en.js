@@ -1619,7 +1619,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Inventory Update",
+      title: "Inventory Update NAV-Mage2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1628,7 +1628,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: " Add Invoice",
+      title: "Add Invoice NAV-Mage2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1646,7 +1646,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Add Sales Order",
+      title: "Add Sales Order Mage2 Multiconnection-NAV",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1655,7 +1655,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Add Shipment",
+      title: "Add Shipment NAV-Mage2 MultiConnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -3676,7 +3676,7 @@ var store = [
     
       
       {
-        "title": "Inventory Update",
+        "title": "Inventory Update NAV-Mage2 Multiconnection",
         "url": "/integration/inventory-update/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
@@ -3687,8 +3687,8 @@ var store = [
     
       
       {
-        "title": " Add Invoice",
-        "url": "/integration/invoice/",
+        "title": "Add Invoice NAV-Mage2 Multiconnection",
+        "url": "/integration/invoice-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
@@ -3709,7 +3709,7 @@ var store = [
     
       
       {
-        "title": "Add Sales Order",
+        "title": "Add Sales Order Mage2 Multiconnection-NAV",
         "url": "/integration/sales-order/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
@@ -3720,7 +3720,7 @@ var store = [
     
       
       {
-        "title": "Add Shipment",
+        "title": "Add Shipment NAV-Mage2 MultiConnection",
         "url": "/integration/shipment/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
