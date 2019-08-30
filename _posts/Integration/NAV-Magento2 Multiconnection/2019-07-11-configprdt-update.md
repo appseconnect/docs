@@ -1,5 +1,5 @@
 ---
-title: "Configurable Product Update Nav-Mage2 MultiConnection"
+title: "Configurable Product Update Nav-Magento2 MultiConnection"
 toc: true
 tag: developers
 category: "Integration"
@@ -19,19 +19,20 @@ integration process can be executed through workflow for `Updating a Configurabl
 
 In this integration scenario, multiple connections have been made for Updating Configurable Products from Ms Dynamics NAV to Magento2 (along with multiple Magento websites from a single Magento admin). 
 
-As a pre-requisite, the user needs to create and sync the Simple Products first, followed by the sync process of adding Configurable Products. 
+As a pre-requisite, the user needs to create and sync the Simple Products (child items) first, followed by the sync process of adding Configurable Products. 
 [Click here](/simple-productadd/), to know more about creating simple products in MS Dynamics NAV. For knowing about the addition of Configurable items, [Click Here](/configproduct-add).
 
 For updating Configurable products from Ms Dynamics NAV to Magento2 (Multistore), these are the changes that could be performed for updating a configurable product.
 
-* Updates in Web Product Details CP Page: The user can update the WebAttributeSetId, the Web TaxClass Id,  WebDescription, WebShortDescription.
+* Updates in Web Product Details CP Page: The user can update the Web TaxClass Id,  WebDescription and WebShortDescription.
 * Updates in Web ProductWebsites Page: The user can change/update the WebSiteId of the product.
-* Updates in Web ProductAttribute Page: The user can modify/update the AttributeId and the AttributeOptionId
-* Updates in Web ProductCategory Page: The user be able to modify/update the CategoryId of the product in this page.
-* Updates in the Web Product Child Details Page: The user be able to modify/update the ChildItemNo and the PriceType.
-* The changes in the AEC Application Item list will be modifies as per the changes in the Web Product Details CP Page.
-* On completion of the process click on the OK button. The entire `ItemCard` for this Configurable product is given below.
+* Updates in Web ProductAttribute Page: No changes required in this section.AttributeOptionId is always blank in Configurable product.
+* Updates in Web ProductCategory Page: The user be able to modify/update the CategoryId of the product in this page. Also the `AttributeOptionId` is `always 
+  blank in Configurable product`.
+* Updates in the Web Product Child Details Page: The user be able to modify/update the ChildItem.
+* The changes in the AEC Application Item list will be modified as per the changes in the Web Product Details CP Page.
 
+On completion of the process click OK button. The entire `ItemCard` for this Configurable product is given below.
 ![confgprdctadd_navtomage2multi1](/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png) 
 
 ## LookUp Mapping
@@ -40,17 +41,23 @@ The Lookup mapping for Currency shall be required in case the business logic dea
 
 ## Attribute Mapping/Transformation
 
-The pre-packaged mappings will successfully sync data MS Dynamics NAV  to Magento2 (MultiStore). However, 
-for more informations related to mapping, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
+The pre-packaged mappings will successfully sync data MS Dynamics NAV  to Magento2 (MultiStore). 
+
+* The mapping changes required are: Disable the attributes named `Attribute_set_id` and `type_id`.
+* Rest mapping changes are similar to [Configurable product add](/integration/configproduct-add/#attribute-mappingtransformation)
+* The new complex object type variable named `getCustomAttributeOption` is added under the section `configurable_product_options`. 
+
+However, for more informations related to mapping, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
 
 ## Action Filters
 
 Add a node to the given pre-packaged order of the Action filter with two sub-nodes `Field` and `Criteria`.
 View the image below to define the Action Filters
 
-![confgprdctadd_navtomage2multi2](/staticfiles/integration/media/confgprdctadd_navtomage2multi2.png) 
+![configprdct_update_actionfilter1](/staticfiles/integration/media/configprdct_update_actionfilter1.png) 
 
-![confgprdctadd_navtomage2multi3](/staticfiles/integration/media/confgprdctadd_navtomage2multi3.png) 
+![configprdct_update_actionfilter2](/staticfiles/integration/media/configprdct_update_actionfilter2.png) 
+
 
 ## Executing the Workflow Integration
 

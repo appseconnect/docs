@@ -19,7 +19,8 @@ Ms Dynamics NAV to Magento2 (Multi-store).
 ![confgprdctadd_navtomage2multi-workflow](/staticfiles/integration/media/confgprdctadd_navtomage2multi-workflow.png)  
 In this integration scenario, multiple connections have been made for transformation of Configurable Products from Ms Dynamics NAV to Magento2 (along with multiple Magento websites from a single Magento admin). 
 
-As a pre-requisite, the user needs to create and sync the Simple Products first. [Click here](/integration/simple-productadd/), to know the process of creating simple products in MS Dynamics NAV. 
+As a pre-requisite, the user needs to create and sync the Simple Products first which you want to add as child items in your new configurable product. 
+[Click here](/integration/simple-productadd/), to know the process of creating simple products in MS Dynamics NAV. 
 
 * Login to the Ms Dynamics NAV Client and create a new item from the Items Page. 
 * Provide the details of the item say the Item No., Item description and the Unit of Measure.
@@ -27,15 +28,25 @@ As a pre-requisite, the user needs to create and sync the Simple Products first.
   and select the `ConnectionName, ApplicationName, WebAttributeSetId, WebTaxClassId` and enable the checkbox for `WebItemFlag`. 
   Also, select the `WebProductType` as Configurable from the dropdown.
 * Navigate to the **Web ProductWebsites Page** and select the `ConnectionName & the WebsiteID` from the Drop-down.
-* In the **Web ProductAttribute Page** select the `ConnectionName, AttributeID and the AttributeName` from the drop-down for the child product.  
+* In the **Web ProductAttribute Page** select the `ConnectionName, AttributeID  from the drop-down for the ConnectionName and the rest will be autopopulated.  
 ![confgprdctadd_navtomage2multi1](/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png)
 
-**Note: The `AttributeId` can be opted from the drop-down only when the `WebAttributeSetId` is selected from the Web Product Details CP page. The `AttributeOptionId` can be opted when the `AttributeId` is selected.**
+**Note: The `AttributeId` can be opted from the drop-down only when the `WebAttributeSetId` is selected from the Web Product Details CP page. 
+        The `AttributeOptionId` can be opted when the `AttributeId` is selected.** 
+        AttributeOptionId is always blank in Configurable product.
 * In the **WebProductChildDetails** page select the `ChildItemNo and the ConnectionName` from the drop-down options.
+**Note** : The `AttributeId` can be opted from the dropdown only when the `WebAttributeSetId` is selected from the Web Product Details CP page. 
+           The `AttributeOptionId` needs to be kept blank. `WebAttributeSetId` and `AttributeId` needs to be same as that the child items 
+           (which will be added in the section WebProductChildDetails of the Item card) of this new configurable product which is already been 
+           synced as simple products.
 * Navigate to the **WebProductCategorypage** and select the `CategoryId, CategoryName and the connection name` from the drop-down.
 * In the **AEC Application Item List** the details will be auto-populated as per the input provided in the Web Product Details CP page.
 * On completion of the process, click on the OK button. The entire `ItemCard` for this Configurable product is given below.
 ![confgprdctadd_navtomage2multi3](/staticfiles/integration/media/confgprdctadd_navtomage2multi3.png)
+
+**Note: The same product can be added to `multiple connection` by creating a new line in Web Product Details CP Page and choosing the 
+desired connection name. Further repeat the same steps as discussed above for the newly chosen connection. Also there is no need to create duplicate products 
+in nav to be synced in multiple magento that is we can sync the same item in nav to multiple magento urls.**
 
 ## LookUp Mapping
 
@@ -82,9 +93,10 @@ This Snapshot View displays the successful execution of the workflow.
 
 ## Post Condition
 
-The user can view the product synced in Magento2.
+* The user can view the product synced in Magento2.
 ![confgprdctadd_navtomage2multi13](/staticfiles/integration/media/confgprdctadd_navtomage2multi14.png)
-The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has 
+
+* The sync flag update & WebId from magento is returned in sync backThe user can also go to NAV and check if the WebID has returned and the WebSyncFlag has 
 been set to 'T' (True) from 'F' (False).
 ![confgprdctadd_navtomage2multi13](/staticfiles/integration/media/confgprdctadd_navtomage2multi15.png)
 

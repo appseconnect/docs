@@ -1,11 +1,11 @@
 ---
-title: "Customer Add NAV-Mage2 Multiconnection"
+title: "Customer Add NAV-Magento2 Multiconnection"
 toc: true
 tag: developers
 category: "Integration"
 menus: 
     navmagentointegration:
-        title: "Customer Add NAV-Mage2 Multiconnection"
+        title: "Customer Add NAV-Magento2 Multiconnection"
         icon: fa fa-wpexplorer
         identifier: custaddnavtomage2multi
 ---
@@ -38,7 +38,18 @@ N/A
 
 ## Attribute Mapping/Transformation
 
-The pre-packaged mappings will successfully sync data to Magento2 from MS Dynamics NAV. However for more informations 
+The pre-packaged mappings will successfully sync data to Magento2 from MS Dynamics NAV. 
+
+Given below is the attribute mapping for executing the touchpoint `Customer upload syncback` touchpoint.
+
+![mapping-navmage2multi-customeradd](/staticfiles/integration/media/mapping-navmage2multi-customeradd.png)
+
+![mapping-navmage2multi-customeradd2](/staticfiles/integration/media/mapping-navmage2multi-customeradd2.png)
+
+You need to provide mapping details to complex object collection - `ShipToAddressLines` and attribute `Code`. Also the 
+mapping details to the `root variables` need to be provided as shown in the above image.
+
+However for more informations 
 related to mapping, see Mapping & [Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/)
 
 ## Action Filter
@@ -70,13 +81,15 @@ This Snapshot View displays the successful execution of the workflow.
 
 ## Post Condition
 
-The user can view the customer (C00640 as 5738) synced in Magento2.
+* The user can view the customer (C00640 as 5738) synced in Magento2.
 
 ![custadd_navtomage2_image7](/staticfiles/integration/media/custadd_navtomage2_image7.png)  
 
-The user can also go to NAV and check if the WebCustomerid has returned and the WebSyncFlag has been set to 'T' (True) from 'F' (False).
+* The sync flag update & WebId from magento is returned in syncback. The user can also go to NAV and check if the WebCustomerid has returned and the WebSyncFlag has been set to 'T' (True) from 'F' (False).
 
 ![custadd_navtomage2_image8](/staticfiles/integration/media/custadd_navtomage2_image8.png)  
+
+**Note : A customer created in nav is unique for each connection that cannot be sync the same customer to multiple magneto urls.
 
 ## Frequency of use
 

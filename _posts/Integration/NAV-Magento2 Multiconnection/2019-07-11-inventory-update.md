@@ -20,7 +20,7 @@ integration process can be executed through workflow for adding Inventory for pr
 In this case, the quantity of the products is added by updating the inventory. Therefore, the above workflow 
 is designed to `Update the Inventory` of the products added in MS Dynamics NAV and will be posted to Magento2 (Multi-store).
 
-**Note: Before adding the inventory of the products, the user needs to make sure the products are created**
+**Note: Before adding the inventory of the products, the user needs to make sure the products are synced which needs to be updated**
 
 1.  For Updating or Adding Inventory in Dynamics NAV, navigate to the Product Item card-Item Journal.
 2.  In the Item Journal window, select the Item No. for whom the inventory is added.
@@ -82,10 +82,12 @@ This Snapshot View displays the successful execution of the workflow.
 
 ## Post Conditions
 
-The Inventory is successfully updated in Magento2 (Multi-store). The quantity can be viewed in the Magento Backend by navigating 
+* The Inventory is successfully updated in Magento2 (Multi-store). The quantity can be viewed in the Magento Backend by navigating 
 to Catalog - Products - View Product.
 
 ![nav-magemulti-inventory8](/staticfiles/integration/media/nav-magemulti-inventory8.png)
+
+* WebStockFlag must get to `T` from `F` after the sync is complete.
 
 ## Frequency of use
 

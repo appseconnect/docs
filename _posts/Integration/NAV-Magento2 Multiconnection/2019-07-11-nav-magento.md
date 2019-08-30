@@ -21,7 +21,7 @@ The basic pre-requisite and list of Master Data Processess for Integration is gi
 2.	Navigate to the connections module and [create a connection](/getting-started/#creating-connection--executing-the-touchpoint) for both the selected applications.	
 3.	Now navigate to the Workflow module, you can either [create a workflow](/workflow/steps-to-create-your-first-workflow/) or 
     can [choose a pre-packaged workflow](/workflow/steps-to-choose-your-workflow/).
-4.	Before Integrating with [Dynamics NAV Business Central](/connectors/Dynamicsnav-Business-Central/) and [Magento2](/connectors/Magento2/), all the master data needs to be synced. Master Data Sync is used 
+4.	Before Integrating with [Dynamics NAV]() and [Magento2](/connectors/Magento2/), all the master data needs to be synced. Master Data Sync is used 
     for synchronizing set of core information (viz. Websites, Product Category, Attribute set, and Tax Class etc.) from E-commerce database to SAP B1.
 
 ## List of Master Data Processes
@@ -31,7 +31,6 @@ c.	Master Data Add [Website List]: -  All the information about the Magento webs
 d.	Master Data Add [Category]: - All the information about the Magento Category will be synced into NAV.                
 e.	Master Data Add [Tax Class]: - All the information about the Magento Product Tax Class will be synced into NAV.         
             
-
 Once all the core information is synced, you can proceed with further integrations. 
 
 You will also get detailed understanding of the [NAV](/connectors/Dynamicsnav-Business-Central/) & [Magento2](/connectors/Magento2/) application agent configuration, endpoints, attibutes and actions required for integration.

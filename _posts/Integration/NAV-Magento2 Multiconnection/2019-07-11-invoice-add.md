@@ -16,8 +16,10 @@ Invoice` for the orders from Ms Dynamics NAV to Magento2 (Multi-store).
 ## Brief Description
 
 ![nav-magemulti-invoicewrkflw](/staticfiles/integration/media/nav-magemulti-invoicewrkflw.png)  
-In this case, the invoice of the orders placed are `added to Magento 2` by syncing the workflow for Invoice Add. The above workflow is designed to '
-GET invoice from MS Dynamics NAV and POST it to Magento 2.
+In this case, the invoice of the orders placed are `added to Magento 2` by syncing the workflow for Invoice Add. 
+Sales order must get synced from Magento2 to NAV before executing the workflow.
+
+The above workflow is designed to 'GET invoice from MS Dynamics NAV and POST it to Magento 2.
 
 **Note: The steps for adding Invoice in Ms Dynamics NAV are same as that of adding Shipments. [Click here](/integration/shipment/)to know the process of adding Invoice and Shipments to Ms Dynamics NAV.
 ![nav-magemulti-invoice1](/staticfiles/integration/media/nav-magemulti-invoice1.png)
@@ -49,7 +51,7 @@ View the image below to define the Action Filters.
 ![nav-magemulti-invoice5](/staticfiles/integration/media/nav-magemulti-invoice5.png)
 ## Integration Data Survey
 
-The user can survey the data by viewing the Processed Snapshot from the node level of the workflow.
+The user can survey the data by viewing the `Processed Snapshot` from the node level of the workflow.
 This Snapshot view displays the successful execution of the workflow.
 ![nav-magemulti-invoice6](/staticfiles/integration/media/nav-magemulti-invoice6.png)
 
