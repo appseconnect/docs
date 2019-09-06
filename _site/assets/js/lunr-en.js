@@ -1610,7 +1610,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Contact Person Add/ Update Mage2 multistore to NAV",
+      title: "Contact Person Add NAV to Magento 2(Multiconnection)",
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1619,8 +1619,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Add NAV-Magento2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      title: "Contact Person Add/ Update Mage2 multistore to NAV",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 178
@@ -1628,8 +1628,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Inventory Update NAV-Mage2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      title: "Customer Add Magento2-NAV Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 179
@@ -1637,7 +1637,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Add Invoice NAV-Mage2 Multiconnection",
+      title: "Customer Add NAV-Magento2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1646,8 +1646,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "NAV-Magento 2 Multiple Connection",
-      excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
+      title: "Inventory Update NAV-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 181
@@ -1655,7 +1655,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Add Sales Order Magento2 Multiconnection-NAV",
+      title: "Add Invoice NAV-Mage2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1664,8 +1664,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Add Shipment NAV-Mage2 MultiConnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      title: "NAV-Magento 2 Multiple Connection",
+      excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 183
@@ -1673,7 +1673,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: " Add Invoice",
+      title: "Add Sales Order Magento2 Multiconnection-NAV",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1682,7 +1682,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Simple Product Add Mage2 Multi to Nav",
+      title: "Add Shipment NAV-Mage2 MultiConnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1691,11 +1691,29 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: " Add Invoice",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 186
+    });
+    
+  
+    idx.add({
+      title: "Simple Product Add Mage2 Multi to Nav",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 187
+    });
+    
+  
+    idx.add({
       title: "Simple Product Add NAV to Mage2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 186
+      id: 188
     });
     
   
@@ -1704,16 +1722,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 187
-    });
-    
-  
-    idx.add({
-      title: "Creating / Importing Schemas on Apps",
-      excerpt: "\n",
-      categories: ["app-management"],
-      tags: ["developers"],
-      id: 188
+      id: 189
     });
     
   
@@ -3683,6 +3692,17 @@ var store = [
     
       
       {
+        "title": "Contact Person Add NAV to Magento 2(Multiconnection)",
+        "url": "/integration/contactperson-add/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Contact Person Add/ Update Mage2 multistore to NAV",
         "url": "/integration/contactperson-addupdate/",
         "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
@@ -3694,8 +3714,19 @@ var store = [
     
       
       {
+        "title": "Customer Add Magento2-NAV Multiconnection",
+        "url": "/integration/customeradd-mage2tonav/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Customer Add NAV-Magento2 Multiconnection",
-        "url": "/integration/customeradd/",
+        "url": "/integration/customeradd-navtomage2/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
@@ -3796,17 +3827,6 @@ var store = [
         "title": "Simple Product Update Nav-Mage2 MultiConnection",
         "url": "/integration/simpleprdct-update/",
         "excerpt": "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Creating / Importing Schemas on Apps",
-        "url": "/app-management/handling-schemas-on-apps/",
-        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

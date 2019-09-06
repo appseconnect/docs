@@ -21,7 +21,7 @@ Sales order must get synced from Magento2 to NAV before executing the workflow.
 
 The above workflow is designed to 'GET invoice from MS Dynamics NAV and POST it to Magento 2.
 
-**Note: The steps for adding Invoice in Ms Dynamics NAV are same as that of adding Shipments. [Click here](/integration/shipment/)to know the process of adding Invoice and Shipments to Ms Dynamics NAV.
+**Note:** The steps for adding Invoice in Ms Dynamics NAV are same as that of adding Shipments. [Click here](/integration/shipment/)to know the process of adding Invoice and Shipments to Ms Dynamics NAV.
 ![nav-magemulti-invoice1](/staticfiles/integration/media/nav-magemulti-invoice1.png)
 ## LookUp Mapping
 
