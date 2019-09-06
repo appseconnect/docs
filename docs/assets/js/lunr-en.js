@@ -1457,11 +1457,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Generic NAV 2017 MultiConnection Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2017 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 160
+    });
+    
+  
+    idx.add({
       title: "Rule",
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 160
+      id: 161
     });
     
   
@@ -1470,7 +1479,7 @@ var idx = lunr(function () {
       excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 161
+      id: 162
     });
     
   
@@ -1479,7 +1488,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 162
+      id: 163
     });
     
   
@@ -1488,7 +1497,7 @@ var idx = lunr(function () {
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 163
+      id: 164
     });
     
   
@@ -1497,7 +1506,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 164
+      id: 165
     });
     
   
@@ -1506,7 +1515,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 165
+      id: 166
     });
     
   
@@ -1515,7 +1524,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 166
+      id: 167
     });
     
   
@@ -1524,7 +1533,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 167
+      id: 168
     });
     
   
@@ -1533,7 +1542,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 168
+      id: 169
     });
     
   
@@ -1542,7 +1551,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 169
+      id: 170
     });
     
   
@@ -1551,7 +1560,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 170
+      id: 171
     });
     
   
@@ -1560,7 +1569,7 @@ var idx = lunr(function () {
       excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 171
+      id: 172
     });
     
   
@@ -1569,7 +1578,7 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 172
+      id: 173
     });
     
   
@@ -1578,7 +1587,142 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 173
+      id: 174
+    });
+    
+  
+    idx.add({
+      title: "Configurable Product Update Nav-Magento2 MultiConnection",
+      excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 175
+    });
+    
+  
+    idx.add({
+      title: "Configurable Product Add Nav-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 176
+    });
+    
+  
+    idx.add({
+      title: "Contact Person Add NAV to Magento 2(Multiconnection)",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 177
+    });
+    
+  
+    idx.add({
+      title: "Contact Person Add/ Update Mage2 multistore to NAV",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 178
+    });
+    
+  
+    idx.add({
+      title: "Customer Add Magento2-NAV Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 179
+    });
+    
+  
+    idx.add({
+      title: "Customer Add NAV-Magento2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 180
+    });
+    
+  
+    idx.add({
+      title: "Inventory Update NAV-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 181
+    });
+    
+  
+    idx.add({
+      title: "Add Invoice NAV-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 182
+    });
+    
+  
+    idx.add({
+      title: "NAV-Magento 2 Multiple Connection",
+      excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 183
+    });
+    
+  
+    idx.add({
+      title: "Add Sales Order Magento2 Multiconnection-NAV",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 184
+    });
+    
+  
+    idx.add({
+      title: "Add Shipment NAV-Mage2 MultiConnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 185
+    });
+    
+  
+    idx.add({
+      title: " Add Invoice",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 186
+    });
+    
+  
+    idx.add({
+      title: "Simple Product Add Mage2 Multi to Nav",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 187
+    });
+    
+  
+    idx.add({
+      title: "Simple Product Add NAV to Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 188
+    });
+    
+  
+    idx.add({
+      title: "Simple Product Update Nav-Mage2 MultiConnection",
+      excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 189
     });
     
   
@@ -3361,6 +3505,17 @@ var store = [
     
       
       {
+        "title": "Generic NAV 2017 MultiConnection Extension",
+        "url": "/connectors/generic-nav2017-mutliconnectionextension/",
+        "excerpt": "Here you will get the step by step process to use NAV 2017 Extension as and when required in the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Rule",
         "url": "/rule/overview-of-rule/",
         "excerpt": "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
@@ -3507,6 +3662,171 @@ var store = [
         "title": "Pre-Configured Rule for Log Bucket",
         "url": "/rule/preconfigured-rule-for-log-bucket/",
         "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Configurable Product Update Nav-Magento2 MultiConnection",
+        "url": "/integration/configprdt-update/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Configurable Product Add Nav-Mage2 Multiconnection",
+        "url": "/integration/configproduct-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Contact Person Add NAV to Magento 2(Multiconnection)",
+        "url": "/integration/contactperson-add/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Contact Person Add/ Update Mage2 multistore to NAV",
+        "url": "/integration/contactperson-addupdate/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Customer Add Magento2-NAV Multiconnection",
+        "url": "/integration/customeradd-mage2tonav/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Customer Add NAV-Magento2 Multiconnection",
+        "url": "/integration/customeradd-navtomage2/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Inventory Update NAV-Mage2 Multiconnection",
+        "url": "/integration/inventory-update/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Add Invoice NAV-Mage2 Multiconnection",
+        "url": "/integration/invoice-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "NAV-Magento 2 Multiple Connection",
+        "url": "/integration/nav-magento/",
+        "excerpt": "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Add Sales Order Magento2 Multiconnection-NAV",
+        "url": "/integration/sales-order/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Add Shipment NAV-Mage2 MultiConnection",
+        "url": "/integration/shipment/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": " Add Invoice",
+        "url": "/integration/simple-product-mage2tonav/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Simple Product Add Mage2 Multi to Nav",
+        "url": "/integration/simple-productadd-mage2tonav/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Simple Product Add NAV to Mage2 Multiconnection",
+        "url": "/integration/simple-productadd/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Simple Product Update Nav-Mage2 MultiConnection",
+        "url": "/integration/simpleprdct-update/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

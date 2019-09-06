@@ -35,9 +35,6 @@ Step 1 to 11 is similar to the execution flow of [basic workflow customer downlo
 15. The workflow gets executed and the user can view all the nodes and links getting highlighted.
 16.  The user will go to SAP B1 (App 2) section to fetch the synced data - Sales Order will sync in Sales Order section, Invoice and delivery in invoice the delivery section. 
 
-### Alternate Flows 
-NOT APPLICABLE 
-
 ### Post-conditions 
 The user can now see that the sales order, delivery to invoice gneration in available in ERP( SAP B1)
 
