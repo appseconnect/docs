@@ -971,8 +971,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of Technology Connectors",
-      excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
+      title: "Data Validation Failed - Cannot do shipment for Order",
+      excerpt: "You Received an error: Cannot do shipment for order Symptom Cause There might be a number of reasons for this...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 106
@@ -980,8 +980,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of OLEDB Adapters",
-      excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
+      title: "Data Missing Value Cannot Create Empty Shipment",
+      excerpt: "You Received an error: We cannot create an empty shipment Symptom Cause There might be a number of reasons for...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 107
@@ -989,425 +989,29 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Settings",
-      excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
-      categories: ["Deployment"],
+      title: "Data Validation Failed-Shipment Order",
+      excerpt: "You Received an error:Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX” Symptom Cause There might be...",
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 108
     });
     
   
     idx.add({
-      title: "Prerequisite",
-      excerpt: "Adapter represents an interface between an APP and APPSeCONNECT. An adapter is the most important component which connects your app...",
-      categories: ["SDK"],
+      title: "Data Missing - Order not exist",
+      excerpt: "You Received an error: # The order no longer exists Symptom Cause There might be a number of reasons for...",
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 109
     });
     
   
     idx.add({
-      title: "Adding Credentials",
-      excerpt: "How to add credential for On-premise integration Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
+      title: "Troubleshooting in Magento2",
+      excerpt: "\n",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 110
-    });
-    
-  
-    idx.add({
-      title: "Troubleshooting",
-      excerpt: "While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent. Given...",
-      categories: ["Deployment"],
-      tags: ["developers"],
-      id: 111
-    });
-    
-  
-    idx.add({
-      title: "Development Guidelines",
-      excerpt: "Pascal Case and CamelCase Pascal Casing - First character of all words are Upper Case and other characters are lower...",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 112
-    });
-    
-  
-    idx.add({
-      title: "Using Filters for Integration",
-      excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation. This section...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 113
-    });
-    
-  
-    idx.add({
-      title: "Version & Library Function Update",
-      excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 114
-    });
-    
-  
-    idx.add({
-      title: "Upgradation & Migration",
-      excerpt: "With every update AEC Agent need upgradation to a higher version without losing any data in the agent. This upgradation...",
-      categories: ["Deployment"],
-      tags: ["developers"],
-      id: 115
-    });
-    
-  
-    idx.add({
-      title: "Best practices",
-      excerpt: "Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT...",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 116
-    });
-    
-  
-    idx.add({
-      title: "Postrequisites",
-      excerpt: "An admin or an end-user can upload updated adapter to an existing app such that the adapter can be changed...",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 117
-    });
-    
-  
-    idx.add({
-      title: "Upgrading and Re-versioning",
-      excerpt: "APPSeCONNECT Component Version Pattern contains four numbers, which convey the following information: Pattern- (1st-Number).(2nd-Number).(3rd-Number).(4th-Number) From left to right the numbers...",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 118
-    });
-    
-  
-    idx.add({
-      title: "Deploying",
-      excerpt: "Environment section of APPSeCONNECT allows the user to deploy configurations and adapters. In case of APPSeCONNECT, you will automatically get...",
-      categories: ["SDK"],
-      tags: ["developers"],
-      id: 119
-    });
-    
-  
-    idx.add({
-      title: "Using parameters to an API",
-      excerpt: "This Document provides the details and the functionality aspect of the API components to define static and dynamic criterias for...",
-      categories: ["API-Management"],
-      tags: ["developers"],
-      id: 120
-    });
-    
-  
-    idx.add({
-      title: "Uniconta",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 121
-    });
-    
-  
-    idx.add({
-      title: "ZohoCRM V2.0",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 122
-    });
-    
-  
-    idx.add({
-      title: "Grouping of Conditions",
-      excerpt: "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 123
-    });
-    
-  
-    idx.add({
-      title: "Adding Product in Priority",
-      excerpt: "Prerequisites for adding products: You need a valid Priority Account. Steps to Add Products in Priority: Login to the Priority...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 124
-    });
-    
-  
-    idx.add({
-      title: "Updating Inventory in Priority",
-      excerpt: "Prerequisites for Updating Inventory Need to have a valid Priority Account. Need to have the product registered before updating the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 125
-    });
-    
-  
-    idx.add({
-      title: "Adding Product in Sage300",
-      excerpt: "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 126
-    });
-    
-  
-    idx.add({
-      title: "Updating Inventory in Sage300",
-      excerpt: "Prerequisites for Updating Inventory in SAGE300 Need a valid SAGE 300 account. Need the server access to SAGE 300. Need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 127
-    });
-    
-  
-    idx.add({
-      title: "Adding Account in Zoho",
-      excerpt: "Prerequisites Need to have a valid ZOHO CRM account. Steps to add new Customer/Accounts in Priority Login to the ZOHO...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 128
-    });
-    
-  
-    idx.add({
-      title: "Troubleshooting",
-      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 129
-    });
-    
-  
-    idx.add({
-      title: "Getting Started",
-      excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 130
-    });
-    
-  
-    idx.add({
-      title: "Types of Mapping",
-      excerpt: "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 131
-    });
-    
-  
-    idx.add({
-      title: "Types of Variable",
-      excerpt: "Working with Variables in APPSeCONNECT To facilitate touchpoint mapping, variables stores the data that can be used later in the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 132
-    });
-    
-  
-    idx.add({
-      title: "Understanding Attribute Mapping",
-      excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 133
-    });
-    
-  
-    idx.add({
-      title: "Understanding XML and Xpath",
-      excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 134
-    });
-    
-  
-    idx.add({
-      title: "Understanding Components of Mapping",
-      excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 135
-    });
-    
-  
-    idx.add({
-      title: "Steps to Customize Prebuilt Mapping/Attribute mapping",
-      excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 136
-    });
-    
-  
-    idx.add({
-      title: "Understanding Touchpoint Dependencies",
-      excerpt: "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 137
-    });
-    
-  
-    idx.add({
-      title: "Understanding Mapping & Syntax",
-      excerpt: "APPSeCONNECT has its own set of vocabulary or syntax, functions that help its users to customize the pre-defined touchpoints as...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 138
-    });
-    
-  
-    idx.add({
-      title: "Advance Mapping through Custom Renderer",
-      excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 139
-    });
-    
-  
-    idx.add({
-      title: "Mapping from Schema 1 to Schema 2",
-      excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 140
-    });
-    
-  
-    idx.add({
-      title: "Enabling Tracking in Transformation",
-      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 141
-    });
-    
-  
-    idx.add({
-      title: "Handling Variables and Functions",
-      excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 142
-    });
-    
-  
-    idx.add({
-      title: "Implementing Xpath in Mapping",
-      excerpt: "Use Case Name Handling XPATH in Mapping Brief Description XPATH is an essential concept that is required when implementing mapping...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 143
-    });
-    
-  
-    idx.add({
-      title: "Using Lookups Mapping for Value Interchange",
-      excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 144
-    });
-    
-  
-    idx.add({
-      title: "Handling Dependent data",
-      excerpt: "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 145
-    });
-    
-  
-    idx.add({
-      title: "Handling Incremental data",
-      excerpt: "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 146
-    });
-    
-  
-    idx.add({
-      title: "Using library methods/AppResource Function",
-      excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 147
-    });
-    
-  
-    idx.add({
-      title: "Using Tips & Tricks",
-      excerpt: "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 148
-    });
-    
-  
-    idx.add({
-      title: "Working with Schema, Action & Filter",
-      excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 149
-    });
-    
-  
-    idx.add({
-      title: "Sage300",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 150
-    });
-    
-  
-    idx.add({
-      title: "Uploading Plugins or Extensions",
-      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 151
-    });
-    
-  
-    idx.add({
-      title: "WooCommerce",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 152
-    });
-    
-  
-    idx.add({
-      title: "Adding Employee in BambooHR",
-      excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 153
-    });
-    
-  
-    idx.add({
-      title: "BambooHR",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 154
     });
     
   
@@ -1416,7 +1020,673 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
       categories: ["Connectors"],
       tags: ["developers"],
+      id: 111
+    });
+    
+  
+    idx.add({
+      title: "Access not granted",
+      excerpt: "You Received an error: Could not commit transaction Symptom Cause There might be a number of reasons for this error:...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 112
+    });
+    
+  
+    idx.add({
+      title: "Invalid Attribute",
+      excerpt: "You received error : Property ‘Attribute’ of ‘Entity’ is invalid Symptom During your sync operation, you receive an invalid property...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 113
+    });
+    
+  
+    idx.add({
+      title: "Inactive Data",
+      excerpt: "You received error : “XXX” Object “YYY” is inactive Symptom Cause Customer is inactive Resolution To resolve this issue, follow...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 114
+    });
+    
+  
+    idx.add({
+      title: "Inconsistent Data entry internal error occured",
+      excerpt: "You received error : Internal error (XXXX) occurred Symptom Cause Resolution To resolve this issue, follow the links below for...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 115
+    });
+    
+  
+    idx.add({
+      title: "Inconsistent Data entry already exists in the tables",
+      excerpt: "You received error : “XXX” This entry already exists in the following tables (YYY) Symptom Cause Repetition of existing data...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 116
+    });
+    
+  
+    idx.add({
+      title: "Invalid Data-Customer Record not found",
+      excerpt: "You received error : Customer record not found Symptom Cause a. Absence of customer data in SAP B1 through which...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 117
+    });
+    
+  
+    idx.add({
+      title: "Data Missing - Address, BankAccount,Payment",
+      excerpt: "You received error : “Fieldvalue” is missing Symptom Cause Resolution To resolve this issue, follow the links below for reference....",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 118
+    });
+    
+  
+    idx.add({
+      title: "Data too long",
+      excerpt: "You received error : CServiceData::SetPropertyValueString failed; Value too long in property ‘field’ of ‘attribute’ Symptom Cause There might be a...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 119
+    });
+    
+  
+    idx.add({
+      title: "SAPB1 Database deadlock",
+      excerpt: "You received error : XXXX- Internal error (YYYY) occurred Symptom During your sync operation, you receive WebOrderID already exist in...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 120
+    });
+    
+  
+    idx.add({
+      title: "Insufficient privilege",
+      excerpt: "You received error : Symptom Cause There might be a number of reasons for this error: Resolution To resolve this...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 121
+    });
+    
+  
+    idx.add({
+      title: "Data validation failed BP Code Assigned to BP",
+      excerpt: "You received error : Business partner code ‘XXX’ already assigned to a business partner; enter a unique business partner code...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 122
+    });
+    
+  
+    idx.add({
+      title: "Data validation failed - Posting data deviates from the defined range",
+      excerpt: "You received error : “XXX” Posting Date deviates from the defined range. To complete the operation, define the posting period...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 123
+    });
+    
+  
+    idx.add({
+      title: "Dependent data Inconsistency",
+      excerpt: "You received error : XXXX- This entry already exists in the following tables (YYYY) Symptom Cause Resolution To resolve this...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 124
+    });
+    
+  
+    idx.add({
+      title: "Duplicate Web Order",
+      excerpt: "You received error : WebOrderID ‘XXX’ already exist Symptom During your sync operation, you receive WebOrderID already exist in your...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 125
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting of SAP B1",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 126
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting Shopify Exceptions",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 127
+    });
+    
+  
+    idx.add({
+      title: "Column Not found",
+      excerpt: "You received error : Required parameter missing or invalid Symptom During your sync operation, you receive an invalid property on...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 128
+    });
+    
+  
+    idx.add({
+      title: "Shopify Data Application Exception while Parsing values",
+      excerpt: "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 129
+    });
+    
+  
+    idx.add({
+      title: "Shopify Data Application Exception Remote Server Error",
+      excerpt: "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 130
+    });
+    
+  
+    idx.add({
+      title: "Shopify Data Missing",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 131
+    });
+    
+  
+    idx.add({
+      title: "Shopify Data Validation Failed LineItem Error",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 132
+    });
+    
+  
+    idx.add({
+      title: "Shopify Data Validation Failed Multiple LineItem Error",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 133
+    });
+    
+  
+    idx.add({
+      title: "Data Validation Failed Order Already Fulfilled",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 134
+    });
+    
+  
+    idx.add({
+      title: "Shopify Data Validation Failed Order Cancelled",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 135
+    });
+    
+  
+    idx.add({
+      title: "Data validation failed order quantity",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 136
+    });
+    
+  
+    idx.add({
+      title: "Overview of Technology Connectors",
+      excerpt: "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 137
+    });
+    
+  
+    idx.add({
+      title: "Overview of OLEDB Adapters",
+      excerpt: "Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal....",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 138
+    });
+    
+  
+    idx.add({
+      title: "Settings",
+      excerpt: "Settings panel of AEC Agent enables to change the default settings after the initial setup and installation of the agent....",
+      categories: ["Deployment"],
+      tags: ["developers"],
+      id: 139
+    });
+    
+  
+    idx.add({
+      title: "Prerequisite",
+      excerpt: "Adapter represents an interface between an APP and APPSeCONNECT. An adapter is the most important component which connects your app...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 140
+    });
+    
+  
+    idx.add({
+      title: "Adding Credentials",
+      excerpt: "How to add credential for On-premise integration Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 141
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting",
+      excerpt: "While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent. Given...",
+      categories: ["Deployment"],
+      tags: ["developers"],
+      id: 142
+    });
+    
+  
+    idx.add({
+      title: "Development Guidelines",
+      excerpt: "Pascal Case and CamelCase Pascal Casing - First character of all words are Upper Case and other characters are lower...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 143
+    });
+    
+  
+    idx.add({
+      title: "Using Filters for Integration",
+      excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation. This section...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 144
+    });
+    
+  
+    idx.add({
+      title: "Version & Library Function Update",
+      excerpt: "This section of the document provides you the full details of using Assembly Version Extraction and the process of uploading...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 145
+    });
+    
+  
+    idx.add({
+      title: "Upgradation & Migration",
+      excerpt: "With every update AEC Agent need upgradation to a higher version without losing any data in the agent. This upgradation...",
+      categories: ["Deployment"],
+      tags: ["developers"],
+      id: 146
+    });
+    
+  
+    idx.add({
+      title: "Best practices",
+      excerpt: "Let us discuss some of the Do’s and Don’ts that one need to maintain while developing an Adapter in APPSeCONNECT...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 147
+    });
+    
+  
+    idx.add({
+      title: "Postrequisites",
+      excerpt: "An admin or an end-user can upload updated adapter to an existing app such that the adapter can be changed...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 148
+    });
+    
+  
+    idx.add({
+      title: "Upgrading and Re-versioning",
+      excerpt: "APPSeCONNECT Component Version Pattern contains four numbers, which convey the following information: Pattern- (1st-Number).(2nd-Number).(3rd-Number).(4th-Number) From left to right the numbers...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 149
+    });
+    
+  
+    idx.add({
+      title: "Deploying",
+      excerpt: "Environment section of APPSeCONNECT allows the user to deploy configurations and adapters. In case of APPSeCONNECT, you will automatically get...",
+      categories: ["SDK"],
+      tags: ["developers"],
+      id: 150
+    });
+    
+  
+    idx.add({
+      title: "Using parameters to an API",
+      excerpt: "This Document provides the details and the functionality aspect of the API components to define static and dynamic criterias for...",
+      categories: ["API-Management"],
+      tags: ["developers"],
+      id: 151
+    });
+    
+  
+    idx.add({
+      title: "Uniconta",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 152
+    });
+    
+  
+    idx.add({
+      title: "ZohoCRM V2.0",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 153
+    });
+    
+  
+    idx.add({
+      title: "Grouping of Conditions",
+      excerpt: "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 154
+    });
+    
+  
+    idx.add({
+      title: "Adding Product in Priority",
+      excerpt: "Prerequisites for adding products: You need a valid Priority Account. Steps to Add Products in Priority: Login to the Priority...",
+      categories: ["Connectors"],
+      tags: ["developers"],
       id: 155
+    });
+    
+  
+    idx.add({
+      title: "Updating Inventory in Priority",
+      excerpt: "Prerequisites for Updating Inventory Need to have a valid Priority Account. Need to have the product registered before updating the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 156
+    });
+    
+  
+    idx.add({
+      title: "Adding Product in Sage300",
+      excerpt: "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 157
+    });
+    
+  
+    idx.add({
+      title: "Updating Inventory in Sage300",
+      excerpt: "Prerequisites for Updating Inventory in SAGE300 Need a valid SAGE 300 account. Need the server access to SAGE 300. Need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 158
+    });
+    
+  
+    idx.add({
+      title: "Adding Account in Zoho",
+      excerpt: "Prerequisites Need to have a valid ZOHO CRM account. Steps to add new Customer/Accounts in Priority Login to the ZOHO...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 159
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting",
+      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 160
+    });
+    
+  
+    idx.add({
+      title: "Getting Started",
+      excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 161
+    });
+    
+  
+    idx.add({
+      title: "Types of Mapping",
+      excerpt: "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 162
+    });
+    
+  
+    idx.add({
+      title: "Types of Variable",
+      excerpt: "Working with Variables in APPSeCONNECT To facilitate touchpoint mapping, variables stores the data that can be used later in the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 163
+    });
+    
+  
+    idx.add({
+      title: "Understanding Attribute Mapping",
+      excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 164
+    });
+    
+  
+    idx.add({
+      title: "Understanding XML and Xpath",
+      excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 165
+    });
+    
+  
+    idx.add({
+      title: "Understanding Components of Mapping",
+      excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 166
+    });
+    
+  
+    idx.add({
+      title: "Steps to Customize Prebuilt Mapping/Attribute mapping",
+      excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 167
+    });
+    
+  
+    idx.add({
+      title: "Understanding Touchpoint Dependencies",
+      excerpt: "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 168
+    });
+    
+  
+    idx.add({
+      title: "Understanding Mapping & Syntax",
+      excerpt: "APPSeCONNECT has its own set of vocabulary or syntax, functions that help its users to customize the pre-defined touchpoints as...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 169
+    });
+    
+  
+    idx.add({
+      title: "Advance Mapping through Custom Renderer",
+      excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 170
+    });
+    
+  
+    idx.add({
+      title: "Mapping from Schema 1 to Schema 2",
+      excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 171
+    });
+    
+  
+    idx.add({
+      title: "Enabling Tracking in Transformation",
+      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 172
+    });
+    
+  
+    idx.add({
+      title: "Handling Variables and Functions",
+      excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 173
+    });
+    
+  
+    idx.add({
+      title: "Implementing Xpath in Mapping",
+      excerpt: "Use Case Name Handling XPATH in Mapping Brief Description XPATH is an essential concept that is required when implementing mapping...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 174
+    });
+    
+  
+    idx.add({
+      title: "Using Lookups Mapping for Value Interchange",
+      excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 175
+    });
+    
+  
+    idx.add({
+      title: "Handling Dependent data",
+      excerpt: "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 176
+    });
+    
+  
+    idx.add({
+      title: "Handling Incremental data",
+      excerpt: "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 177
+    });
+    
+  
+    idx.add({
+      title: "Using library methods/AppResource Function",
+      excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 178
+    });
+    
+  
+    idx.add({
+      title: "Using Tips & Tricks",
+      excerpt: "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 179
+    });
+    
+  
+    idx.add({
+      title: "Working with Schema, Action & Filter",
+      excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 180
+    });
+    
+  
+    idx.add({
+      title: "Sage300",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 181
+    });
+    
+  
+    idx.add({
+      title: "Uploading Plugins or Extensions",
+      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 182
+    });
+    
+  
+    idx.add({
+      title: "WooCommerce",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 183
+    });
+    
+  
+    idx.add({
+      title: "Adding Employee in BambooHR",
+      excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 184
+    });
+    
+  
+    idx.add({
+      title: "BambooHR",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 185
     });
     
   
@@ -1425,7 +1695,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 156
+      id: 186
     });
     
   
@@ -1434,7 +1704,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 157
+      id: 187
     });
     
   
@@ -1443,7 +1713,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 158
+      id: 188
     });
     
   
@@ -1452,7 +1722,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 159
+      id: 189
     });
     
   
@@ -1461,7 +1731,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2017 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 160
+      id: 190
     });
     
   
@@ -1470,7 +1740,7 @@ var idx = lunr(function () {
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 161
+      id: 191
     });
     
   
@@ -1479,7 +1749,7 @@ var idx = lunr(function () {
       excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 162
+      id: 192
     });
     
   
@@ -1488,7 +1758,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 163
+      id: 193
     });
     
   
@@ -1497,7 +1767,7 @@ var idx = lunr(function () {
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 164
+      id: 194
     });
     
   
@@ -1506,7 +1776,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 165
+      id: 195
     });
     
   
@@ -1515,7 +1785,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 166
+      id: 196
     });
     
   
@@ -1524,7 +1794,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 167
+      id: 197
     });
     
   
@@ -1533,7 +1803,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 168
+      id: 198
     });
     
   
@@ -1542,7 +1812,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 169
+      id: 199
     });
     
   
@@ -1551,7 +1821,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 170
+      id: 200
     });
     
   
@@ -1560,7 +1830,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 171
+      id: 201
     });
     
   
@@ -1569,7 +1839,7 @@ var idx = lunr(function () {
       excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 172
+      id: 202
     });
     
   
@@ -1578,7 +1848,7 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 173
+      id: 203
     });
     
   
@@ -1587,7 +1857,7 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 174
+      id: 204
     });
     
   
@@ -1596,7 +1866,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 175
+      id: 205
     });
     
   
@@ -1605,7 +1875,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 176
+      id: 206
     });
     
   
@@ -1614,7 +1884,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 177
+      id: 207
     });
     
   
@@ -1623,7 +1893,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 178
+      id: 208
     });
     
   
@@ -1632,7 +1902,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 179
+      id: 209
     });
     
   
@@ -1641,7 +1911,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 180
+      id: 210
     });
     
   
@@ -1650,7 +1920,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 181
+      id: 211
     });
     
   
@@ -1659,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 182
+      id: 212
     });
     
   
@@ -1668,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 183
+      id: 213
     });
     
   
@@ -1677,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 184
+      id: 214
     });
     
   
@@ -1686,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 185
+      id: 215
     });
     
   
@@ -1695,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 186
+      id: 216
     });
     
   
@@ -1704,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 187
+      id: 217
     });
     
   
@@ -1713,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 188
+      id: 218
     });
     
   
@@ -1722,7 +1992,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 189
+      id: 219
     });
     
   
@@ -2911,6 +3181,347 @@ var store = [
     
       
       {
+        "title": "Data Validation Failed - Cannot do shipment for Order",
+        "url": "/connectors/cannot-do-shipment/",
+        "excerpt": "You Received an error: Cannot do shipment for order Symptom Cause There might be a number of reasons for this...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data Missing Value Cannot Create Empty Shipment",
+        "url": "/connectors/empty-order/",
+        "excerpt": "You Received an error: We cannot create an empty shipment Symptom Cause There might be a number of reasons for...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data Validation Failed-Shipment Order",
+        "url": "/connectors/failed-internal-error/",
+        "excerpt": "You Received an error:Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX” Symptom Cause There might be...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data Missing - Order not exist",
+        "url": "/connectors/order-notexist/",
+        "excerpt": "You Received an error: # The order no longer exists Symptom Cause There might be a number of reasons for...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Troubleshooting in Magento2",
+        "url": "/connectors/troubleshooting/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAP Business One",
+        "url": "/connectors/Sap-Business-One/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Access not granted",
+        "url": "/connectors/accessnot-granted/",
+        "excerpt": "You Received an error: Could not commit transaction Symptom Cause There might be a number of reasons for this error:...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Invalid Attribute",
+        "url": "/connectors/column-not-valid/",
+        "excerpt": "You received error : Property ‘Attribute’ of ‘Entity’ is invalid Symptom During your sync operation, you receive an invalid property...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Inactive Data",
+        "url": "/connectors/data-inactive/",
+        "excerpt": "You received error : “XXX” Object “YYY” is inactive Symptom Cause Customer is inactive Resolution To resolve this issue, follow...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Inconsistent Data entry internal error occured",
+        "url": "/connectors/data-inconsistency-internal-error/",
+        "excerpt": "You received error : Internal error (XXXX) occurred Symptom Cause Resolution To resolve this issue, follow the links below for...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Inconsistent Data entry already exists in the tables",
+        "url": "/connectors/data-inconsistency/",
+        "excerpt": "You received error : “XXX” This entry already exists in the following tables (YYY) Symptom Cause Repetition of existing data...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Invalid Data-Customer Record not found",
+        "url": "/connectors/data-invalid-customer-record-notfound/",
+        "excerpt": "You received error : Customer record not found Symptom Cause a. Absence of customer data in SAP B1 through which...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data Missing - Address, BankAccount,Payment",
+        "url": "/connectors/data-missing-value/",
+        "excerpt": "You received error : “Fieldvalue” is missing Symptom Cause Resolution To resolve this issue, follow the links below for reference....",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data too long",
+        "url": "/connectors/data-toolong/",
+        "excerpt": "You received error : CServiceData::SetPropertyValueString failed; Value too long in property ‘field’ of ‘attribute’ Symptom Cause There might be a...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAPB1 Database deadlock",
+        "url": "/connectors/database-deadlock/",
+        "excerpt": "You received error : XXXX- Internal error (YYYY) occurred Symptom During your sync operation, you receive WebOrderID already exist in...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Insufficient privilege",
+        "url": "/connectors/datarelation-insufficient/",
+        "excerpt": "You received error : Symptom Cause There might be a number of reasons for this error: Resolution To resolve this...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data validation failed BP Code Assigned to BP",
+        "url": "/connectors/datavalidation-failed-businesspartnercode-assigned/",
+        "excerpt": "You received error : Business partner code ‘XXX’ already assigned to a business partner; enter a unique business partner code...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data validation failed - Posting data deviates from the defined range",
+        "url": "/connectors/datavalidation-failed/",
+        "excerpt": "You received error : “XXX” Posting Date deviates from the defined range. To complete the operation, define the posting period...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Dependent data Inconsistency",
+        "url": "/connectors/dependent-data-inconsistancy-in-sap-database/",
+        "excerpt": "You received error : XXXX- This entry already exists in the following tables (YYYY) Symptom Cause Resolution To resolve this...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Duplicate Web Order",
+        "url": "/connectors/duplicate-data/",
+        "excerpt": "You received error : WebOrderID ‘XXX’ already exist Symptom During your sync operation, you receive WebOrderID already exist in your...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Troubleshooting of SAP B1",
+        "url": "/connectors/troubleshooting-list/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Troubleshooting Shopify Exceptions",
+        "url": "/connectors/Shopify-troubleshooting/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Column Not found",
+        "url": "/connectors/column-not-found/",
+        "excerpt": "You received error : Required parameter missing or invalid Symptom During your sync operation, you receive an invalid property on...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shopify Data Application Exception while Parsing values",
+        "url": "/connectors/data-app-exception-parsingvalue/",
+        "excerpt": "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shopify Data Application Exception Remote Server Error",
+        "url": "/connectors/data-app-exception-remoteserver-error/",
+        "excerpt": "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shopify Data Missing",
+        "url": "/connectors/data-missing-value/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shopify Data Validation Failed LineItem Error",
+        "url": "/connectors/datavalidation-failed-lineitem-error/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shopify Data Validation Failed Multiple LineItem Error",
+        "url": "/connectors/datavalidation-failed-multiplelineitem-error/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data Validation Failed Order Already Fulfilled",
+        "url": "/connectors/datavalidation-failedorder-alreadyfulfilled/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shopify Data Validation Failed Order Cancelled",
+        "url": "/connectors/datavalidation-failedorder-cancelled/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Data validation failed order quantity",
+        "url": "/connectors/datavalidation-failedorder-quantity/",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Overview of Technology Connectors",
         "url": "/connectors/Overview-of-technology-connectors/",
         "excerpt": "Connectors are part of the communication bridge that connects different data sources both on-premise or in cloud (exposed to WWW)...",
@@ -3442,17 +4053,6 @@ var store = [
         "title": "BambooHR",
         "url": "/connectors/bamboohr/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "SAP Business One",
-        "url": "/connectors/Sap-Business-One/",
-        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

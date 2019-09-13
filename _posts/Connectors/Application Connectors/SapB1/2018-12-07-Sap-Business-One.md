@@ -3,7 +3,7 @@ title: "SAP Business One"
 toc: true
 tag: developers
 category: "Connectors"
-menus: 
+menus:
     applicationconnector :
         title: "SAP Business One"
         weight: 11
