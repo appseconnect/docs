@@ -1008,7 +1008,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Troubleshooting in Magento2",
-      excerpt: "\n",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 110
@@ -3227,7 +3227,7 @@ var store = [
       {
         "title": "Troubleshooting in Magento2",
         "url": "/connectors/troubleshooting/",
-        "excerpt": "\n",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

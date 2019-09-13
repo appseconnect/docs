@@ -1008,7 +1008,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Troubleshooting in Magento2",
-      excerpt: "\n",
+      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 110
@@ -1106,8 +1106,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Insufficient privilege",
-      excerpt: "You received error : Symptom Cause There might be a number of reasons for this error: Resolution To resolve this...",
+      title: "Insufficient privilege - Specify Valid Taxcode",
+      excerpt: "You received error : XXXXX - Specify valid tax code Symptom Cause There might be a number of reasons for...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 121
@@ -1178,7 +1178,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Shopify Data Application Exception while Parsing values",
+      title: "Data Application Exception while Parsing values",
       excerpt: "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1187,7 +1187,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Shopify Data Application Exception Remote Server Error",
+      title: "Data Application Exception Remote Server Error",
       excerpt: "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1196,7 +1196,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Shopify Data Missing",
+      title: "Data Missing",
       excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1205,7 +1205,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Shopify Data Validation Failed LineItem Error",
+      title: "Data Validation Failed LineItem Error",
       excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1214,7 +1214,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Shopify Data Validation Failed Multiple LineItem Error",
+      title: "Data Validation Failed Multiple LineItem Error",
       excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -1232,7 +1232,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Shopify Data Validation Failed Order Cancelled",
+      title: "Data Validation Failed Order Cancelled",
       excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
       categories: ["Connectors"],
       tags: ["developers"],
@@ -3227,7 +3227,7 @@ var store = [
       {
         "title": "Troubleshooting in Magento2",
         "url": "/connectors/troubleshooting/",
-        "excerpt": "\n",
+        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3346,9 +3346,9 @@ var store = [
     
       
       {
-        "title": "Insufficient privilege",
+        "title": "Insufficient privilege - Specify Valid Taxcode",
         "url": "/connectors/datarelation-insufficient/",
-        "excerpt": "You received error : Symptom Cause There might be a number of reasons for this error: Resolution To resolve this...",
+        "excerpt": "You received error : XXXXX - Specify valid tax code Symptom Cause There might be a number of reasons for...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3434,7 +3434,7 @@ var store = [
     
       
       {
-        "title": "Shopify Data Application Exception while Parsing values",
+        "title": "Data Application Exception while Parsing values",
         "url": "/connectors/data-app-exception-parsingvalue/",
         "excerpt": "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
         "teaser":
@@ -3445,7 +3445,7 @@ var store = [
     
       
       {
-        "title": "Shopify Data Application Exception Remote Server Error",
+        "title": "Data Application Exception Remote Server Error",
         "url": "/connectors/data-app-exception-remoteserver-error/",
         "excerpt": "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
         "teaser":
@@ -3456,7 +3456,7 @@ var store = [
     
       
       {
-        "title": "Shopify Data Missing",
+        "title": "Data Missing",
         "url": "/connectors/data-missing-value/",
         "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
         "teaser":
@@ -3467,7 +3467,7 @@ var store = [
     
       
       {
-        "title": "Shopify Data Validation Failed LineItem Error",
+        "title": "Data Validation Failed LineItem Error",
         "url": "/connectors/datavalidation-failed-lineitem-error/",
         "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
         "teaser":
@@ -3478,7 +3478,7 @@ var store = [
     
       
       {
-        "title": "Shopify Data Validation Failed Multiple LineItem Error",
+        "title": "Data Validation Failed Multiple LineItem Error",
         "url": "/connectors/datavalidation-failed-multiplelineitem-error/",
         "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
         "teaser":
@@ -3500,7 +3500,7 @@ var store = [
     
       
       {
-        "title": "Shopify Data Validation Failed Order Cancelled",
+        "title": "Data Validation Failed Order Cancelled",
         "url": "/connectors/datavalidation-failedorder-cancelled/",
         "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
         "teaser":
