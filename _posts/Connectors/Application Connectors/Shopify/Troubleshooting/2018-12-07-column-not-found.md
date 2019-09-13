@@ -22,8 +22,9 @@ invalid on target application, which is SAP B1.
 
 There is some instances where such error occurs
 
-* Attribute mapping missing
-* API modified
+* Invalid Attribute mapping exist in transformation
+* Attribute mapping is disabled
+* API Missing or Updated
 
 
 # Resolution
@@ -31,5 +32,5 @@ There is some instances where such error occurs
 To resolve this issue, follow the links below for reference. 
 
 [Attribute Mapping Required](/transformation/steps-to-cutomize-prebuilt-mapping/#implementing-attribute-mapping).
-[As per the destination value required you have to define a Value in source](/transformation/define-logic-over-destination-mapping/).
+[API Missing]().
 

@@ -16,7 +16,7 @@ to solve your problems in Magento2.
 
 Here is the list of Magento2 troubleshooting areas and the resolution steps to it.
 
-[Data Validation Failed - Cannot do shipment for Order]()    
-[Data Missing Value Cannot Create Empty Shipment]()    
-[Data Validation Failed-Shipment Order]()    
-[Data Missing - Order not exist]()    
+[Data Validation Failed - Cannot do shipment for Order](/connectors/cannot-do-shipment/)    
+[Data Missing Value- Cannot Create Empty Shipment](/connectors/empty-order/)    
+[Data Validation Failed-Shipment Order](/connectors/failed-internal-error/)    
+[Data Missing - Order not exist](/connectors/order-notexist/)    

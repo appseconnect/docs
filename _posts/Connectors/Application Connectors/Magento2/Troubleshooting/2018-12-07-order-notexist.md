@@ -14,10 +14,15 @@ menus:
 
 # Symptom
 
+During your sync operation, you receive an error which says 'Order no longer exist' 
+in the target application, which is Magento 2. 
 
 # Cause
 
 There might be a number of reasons for this error: 
+
+- Order is deleted in Magento while updating
+- Update Process is executed before order creation.
 
 
 
@@ -25,3 +30,5 @@ There might be a number of reasons for this error:
 
 To resolve this issue, follow the links below for reference. 
 
+- [How to Apply filteration in Application](/transformation/working-with-schemas-action-filter/#knowing-schema-actions--filters)  
+- [Order Creation in Magento](https://www.tutorialspoint.com/magento/create_magento_orders.htm)

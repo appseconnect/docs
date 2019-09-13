@@ -972,7 +972,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Validation Failed - Cannot do shipment for Order",
-      excerpt: "You Received an error: Cannot do shipment for order Symptom Cause There might be a number of reasons for this...",
+      excerpt: "You Received an error: Cannot do shipment for order Symptom During your sync operation, you receive an error which says...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 106
@@ -981,7 +981,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Missing Value Cannot Create Empty Shipment",
-      excerpt: "You Received an error: We cannot create an empty shipment Symptom Cause There might be a number of reasons for...",
+      excerpt: "You Received an error: We cannot create an empty shipment Symptom During your sync operation, you receive an error which...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 107
@@ -990,7 +990,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Validation Failed-Shipment Order",
-      excerpt: "You Received an error:Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX” Symptom Cause There might be...",
+      excerpt: "You Received an error:Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX” Symptom During your sync operation,...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 108
@@ -999,7 +999,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Missing - Order not exist",
-      excerpt: "You Received an error: # The order no longer exists Symptom Cause There might be a number of reasons for...",
+      excerpt: "You Received an error: # The order no longer exists Symptom During your sync operation, you receive an error which...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 109
@@ -1179,7 +1179,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Application Exception while Parsing values",
-      excerpt: "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+      excerpt: "You received error: Symptom Cause Value Mapping Unavailable or Missing from some fields Invalid Character in some attributes Data type...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 129
@@ -1188,7 +1188,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Application Exception Remote Server Error",
-      excerpt: "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+      excerpt: "You received error: Symptom Cause Data fieldsize exceeding the limits Packet size exceeding limit during or post transformation, hence packet...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 130
@@ -1205,8 +1205,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Data Validation Failed LineItem Error",
-      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      title: "Data Validation Failed Line Item `XXX` fulfilled",
+      excerpt: "You received error: Line Item XXX fulfilled\n\nSymptom\n\nCause\n\n  Order is already fulfilled and cannot be updated.\n  \n\n\n",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 132
@@ -3183,7 +3183,7 @@ var store = [
       {
         "title": "Data Validation Failed - Cannot do shipment for Order",
         "url": "/connectors/cannot-do-shipment/",
-        "excerpt": "You Received an error: Cannot do shipment for order Symptom Cause There might be a number of reasons for this...",
+        "excerpt": "You Received an error: Cannot do shipment for order Symptom During your sync operation, you receive an error which says...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3194,7 +3194,7 @@ var store = [
       {
         "title": "Data Missing Value Cannot Create Empty Shipment",
         "url": "/connectors/empty-order/",
-        "excerpt": "You Received an error: We cannot create an empty shipment Symptom Cause There might be a number of reasons for...",
+        "excerpt": "You Received an error: We cannot create an empty shipment Symptom During your sync operation, you receive an error which...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3205,7 +3205,7 @@ var store = [
       {
         "title": "Data Validation Failed-Shipment Order",
         "url": "/connectors/failed-internal-error/",
-        "excerpt": "You Received an error:Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX” Symptom Cause There might be...",
+        "excerpt": "You Received an error:Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX” Symptom During your sync operation,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3216,7 +3216,7 @@ var store = [
       {
         "title": "Data Missing - Order not exist",
         "url": "/connectors/order-notexist/",
-        "excerpt": "You Received an error: # The order no longer exists Symptom Cause There might be a number of reasons for...",
+        "excerpt": "You Received an error: # The order no longer exists Symptom During your sync operation, you receive an error which...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3436,7 +3436,7 @@ var store = [
       {
         "title": "Data Application Exception while Parsing values",
         "url": "/connectors/data-app-exception-parsingvalue/",
-        "excerpt": "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+        "excerpt": "You received error: Symptom Cause Value Mapping Unavailable or Missing from some fields Invalid Character in some attributes Data type...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3447,7 +3447,7 @@ var store = [
       {
         "title": "Data Application Exception Remote Server Error",
         "url": "/connectors/data-app-exception-remoteserver-error/",
-        "excerpt": "You received error:\n\nSymptom\n\nCause\nResolution\n\n",
+        "excerpt": "You received error: Symptom Cause Data fieldsize exceeding the limits Packet size exceeding limit during or post transformation, hence packet...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3467,9 +3467,9 @@ var store = [
     
       
       {
-        "title": "Data Validation Failed LineItem Error",
+        "title": "Data Validation Failed Line Item `XXX` fulfilled",
         "url": "/connectors/datavalidation-failed-lineitem-error/",
-        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "excerpt": "You received error: Line Item XXX fulfilled\n\nSymptom\n\nCause\n\n  Order is already fulfilled and cannot be updated.\n  \n\n\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

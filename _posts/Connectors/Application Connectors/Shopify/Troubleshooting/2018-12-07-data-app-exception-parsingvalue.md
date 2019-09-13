@@ -16,9 +16,16 @@ menus:
 # Symptom
 
 # Cause
+
+- Value Mapping Unavailable or Missing from some fields
+- Invalid Character in some attributes
+- Data type mismatch
+- 
 # Resolution
 
-
+[ValueMpping]()
+[Attribute Mapping]()
+[Action filter to check data type mismatch]()
 
 
 

@@ -408,7 +408,7 @@
     
     
     <li class="menu-item-" data-url="/connectors/datavalidation-failed-lineitem-error/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/datavalidation-failed-lineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-lineitem-error/', event);" title="Go to Data Validation Failed LineItem Error">Data Validation Failed LineItem Error</a>
+        <a href="/connectors/datavalidation-failed-lineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-lineitem-error/', event);" title="Go to Data Validation Failed LineItem `XXX` fulfilled">Data Validation Failed LineItem `XXX` fulfilled</a>
         
     </li>
     
@@ -1928,7 +1928,15 @@
 <h1 id="symptom">Symptom</h1>
 
 <h1 id="cause">Cause</h1>
+<ul>
+  <li>Data fieldsize exceeding the limits</li>
+  <li>Packet size exceeding limit during or post transformation, hence packet size must be reduced by applying split and merge filter.</li>
+</ul>
+
 <h1 id="resolution">Resolution</h1>
+
+<p><a href="">Checkdata fieldsize in Destination Application</a>
+<a href="">Workflow- Use of split and Merge filter</a></p>
 
 
                 

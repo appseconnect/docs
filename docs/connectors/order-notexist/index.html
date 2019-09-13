@@ -408,7 +408,7 @@
     
     
     <li class="menu-item-" data-url="/connectors/datavalidation-failed-lineitem-error/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/datavalidation-failed-lineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-lineitem-error/', event);" title="Go to Data Validation Failed LineItem Error">Data Validation Failed LineItem Error</a>
+        <a href="/connectors/datavalidation-failed-lineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-lineitem-error/', event);" title="Go to Data Validation Failed LineItem `XXX` fulfilled">Data Validation Failed LineItem `XXX` fulfilled</a>
         
     </li>
     
@@ -1927,14 +1927,26 @@
 
 <h1 id="symptom">Symptom</h1>
 
+<p>During your sync operation, you receive an error which says ‘Order no longer exist’ 
+in the target application, which is Magento 2.</p>
+
 <h1 id="cause">Cause</h1>
 
 <p>There might be a number of reasons for this error:</p>
+
+<ul>
+  <li>Order is deleted in Magento while updating</li>
+  <li>Update Process is executed before order creation.</li>
+</ul>
 
 <h1 id="resolution">Resolution</h1>
 
 <p>To resolve this issue, follow the links below for reference.</p>
 
+<ul>
+  <li><a href="/transformation/working-with-schemas-action-filter/#knowing-schema-actions--filters">How to Apply filteration in Application</a></li>
+  <li><a href="https://www.tutorialspoint.com/magento/create_magento_orders.htm">Order Creation in Magento</a></li>
+</ul>
 
                 
             </section>

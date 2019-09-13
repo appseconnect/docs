@@ -408,7 +408,7 @@
     
     
     <li class="menu-item-" data-url="/connectors/datavalidation-failed-lineitem-error/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/datavalidation-failed-lineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-lineitem-error/', event);" title="Go to Data Validation Failed LineItem Error">Data Validation Failed LineItem Error</a>
+        <a href="/connectors/datavalidation-failed-lineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-lineitem-error/', event);" title="Go to Data Validation Failed LineItem `XXX` fulfilled">Data Validation Failed LineItem `XXX` fulfilled</a>
         
     </li>
     
@@ -1927,13 +1927,21 @@
 
 <h1 id="symptom">Symptom</h1>
 
+<p>During your sync operation, you receive an error which says ‘Internal Error. Details are available in Magento log file. Report ID: webapi-“XXXX”’ 
+in the target application, which is Magento 2.</p>
+
 <h1 id="cause">Cause</h1>
 
-<p>There might be a number of reasons for this error:</p>
+<p>One of reasons for this error:</p>
+
+<ul>
+  <li>Unknown as Magento error logs are not returned from the source application.</li>
+</ul>
 
 <h1 id="resolution">Resolution</h1>
 
-<p>To resolve this issue, follow the links below for reference.</p>
+<p>To resolve this issue, follow the links below for reference. <br />
+<a href="https://magento.stackexchange.com/questions/261669/magento2-2-5-how-to-access-magento-log-file-for-web-api">How to check Internal Error. Details are available in Magento log file</a></p>
 
 
                 

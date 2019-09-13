@@ -17,7 +17,13 @@ menus:
 # Symptom
 
 # Cause
+- Data fieldsize exceeding the limits
+- Packet size exceeding limit during or post transformation, hence packet size must be reduced by applying split and merge filter. 
+
 # Resolution
+
+[Checkdata fieldsize in Destination Application]()
+[Workflow- Use of split and Merge filter]()
 
 
 
