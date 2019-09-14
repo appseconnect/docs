@@ -14,9 +14,15 @@ menus:
 
 # Symptom
 
+During your sync operation, you receive an error message showing data validation failed BP Code assigned to BP
+on target application, which is SAPB1 here. 
 
 # Cause
+
+- Duplicate data is mapped for the BP Code.
 
 
 # Resolution
 
+[Change integration to specify unique codes for each BP entity]()    
+[How to use duplicate data check in data mapping](/transformation/define-logic-over-destination-mapping/)

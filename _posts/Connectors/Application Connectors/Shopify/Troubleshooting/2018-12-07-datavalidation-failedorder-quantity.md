@@ -11,10 +11,24 @@ menus:
         identifier: shopifydatavalidation
 ---
 
-Data sync can produce errors. Here are some of the troubleshooting steps which you can follow 
-to solve your problems in Shopify
+# You received error: Order Quantity
 
-Here is the list of Shopify troubleshooting areas and the resolution steps to it.
+# Symptom
+
+During your sync operation, you receive an error showing, Failed Order Quantity
+on target application, which is Shopify here.
+
+# Cause
+
+There might be a number of reasons for this error: 
+
+* Inventory mismatch in both the source and target application.
+
+
+# Resolution
+
+- [Stock update in Shopify should be performed before order fullfillment through dependency in Integration](https://help.shopify.com/en/manual/products/add-update-products).
+- [Sales Cycle should be performed with Post and Post Task Input](/workflow/workflow-showing-salescycle-with-post-and-post-taskinput/)
 
 
 

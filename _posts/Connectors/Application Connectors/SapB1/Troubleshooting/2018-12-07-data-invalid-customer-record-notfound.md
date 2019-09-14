@@ -15,17 +15,17 @@ menus:
 
 # Symptom
 
+During your sync operation, you receive a message showing Customer record not found 
+on target application, which is SAPB1 here. 
 
 
 # Cause
 
-a.	Absence of customer data in SAP B1 through which the data filtration occurs from 
-source app  to destination app, which is SAP B1
+a.	Particular Object on the target app is disabled by the admin.
 
 
 # Resolution
 
 To resolve this issue, follow the links below for reference. 
+ - [How to use Action Filter](/getting-started/#importing-schemas-and-actions-of-an-application) 
 
- - check the proper presence of customer data 
- - Check the action filter of touch point 

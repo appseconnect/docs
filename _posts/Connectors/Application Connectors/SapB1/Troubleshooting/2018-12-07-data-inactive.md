@@ -14,14 +14,15 @@ menus:
 
 # Symptom
 
-
+During your sync operation, you receive an error showing "XXX" Object "YYY" is inactive. 
 
 # Cause
 
-- Customer is inactive 
+- Particular Object on the target application is disabled by the admin.
+
 
 # Resolution
 
 To resolve this issue, follow the links below for reference.   
 
-[mark customer as `active` (insert ss from s-da)]()
+[How to use Action Filter to filter out the inactive data ](/transformation/working-with-schemas-action-filter/)

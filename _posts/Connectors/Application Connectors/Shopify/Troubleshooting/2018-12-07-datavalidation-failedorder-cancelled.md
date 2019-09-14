@@ -11,10 +11,24 @@ menus:
         identifier: shopifydatavalidation
 ---
 
-Data sync can produce errors. Here are some of the troubleshooting steps which you can follow 
-to solve your problems in Shopify
+# You received error: Order Cancelled
 
-Here is the list of Shopify troubleshooting areas and the resolution steps to it.
+# Symptom
+
+During your sync operation, you receive an error showing, Order Cancelled
+on target application, which is Shopify here.
+
+# Cause
+
+There might be a number of reasons for this error: 
+
+* Mapping is invalid.
+* Action Filter is not used.
+
+# Resolution
+
+[Check the shopify API documentation on Order Cancelled](https://help.shopify.com/en/api/reference/orders/order)
+
 
 
 

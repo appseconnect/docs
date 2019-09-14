@@ -1026,7 +1026,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Access not granted",
-      excerpt: "You Received an error: Could not commit transaction Symptom Cause There might be a number of reasons for this error:...",
+      excerpt: "You Received an error: Could not commit transaction Symptom During your sync operation, you receive an invalid error showing Could...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 112
@@ -1044,7 +1044,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Inactive Data",
-      excerpt: "You received error : “XXX” Object “YYY” is inactive Symptom Cause Customer is inactive Resolution To resolve this issue, follow...",
+      excerpt: "You received error : “XXX” Object “YYY” is inactive Symptom During your sync operation, you receive an error showing “XXX”...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 114
@@ -1053,7 +1053,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Inconsistent Data entry internal error occured",
-      excerpt: "You received error : Internal error (XXXX) occurred Symptom Cause Resolution To resolve this issue, follow the links below for...",
+      excerpt: "You received error : Internal error (XXXX) occurred Symptom During your sync operation, you receive a message showing Internal error...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 115
@@ -1062,7 +1062,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Inconsistent Data entry already exists in the tables",
-      excerpt: "You received error : “XXX” This entry already exists in the following tables (YYY) Symptom Cause Repetition of existing data...",
+      excerpt: "You received error : (XXX) This entry already exists in the following tables (YYY) Symptom During your sync operation, you...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 116
@@ -1071,7 +1071,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Invalid Data-Customer Record not found",
-      excerpt: "You received error : Customer record not found Symptom Cause a. Absence of customer data in SAP B1 through which...",
+      excerpt: "You received error : Customer record not found Symptom During your sync operation, you receive a message showing Customer record...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 117
@@ -1080,7 +1080,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Missing - Address, BankAccount,Payment",
-      excerpt: "You received error : “Fieldvalue” is missing Symptom Cause Resolution To resolve this issue, follow the links below for reference....",
+      excerpt: "You received error : “Fieldvalue” is missing Symptom During your sync operation, you receive a message showing Field value is...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 118
@@ -1089,7 +1089,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data too long",
-      excerpt: "You received error : CServiceData::SetPropertyValueString failed; Value too long in property ‘field’ of ‘attribute’ Symptom Cause There might be a...",
+      excerpt: "You received error : CServiceData::SetPropertyValueString failed; Value too long in property ‘field’ of ‘attribute’ Symptom During your sync operation, you...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 119
@@ -1097,8 +1097,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "SAPB1 Database deadlock",
-      excerpt: "You received error : XXXX- Internal error (YYYY) occurred Symptom During your sync operation, you receive WebOrderID already exist in...",
+      title: "Database deadlock",
+      excerpt: "You received error : XXXX- Internal error (YYYY) occurred Symptom During your sync operation, you receive an error showing `XXXX-...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 120
@@ -1107,7 +1107,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Insufficient privilege - Specify Valid Taxcode",
-      excerpt: "You received error : XXXXX - Specify valid tax code Symptom Cause There might be a number of reasons for...",
+      excerpt: "You received error : XXXXX - Specify valid tax code Symptom During your sync operation, you receive an error message...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 121
@@ -1170,7 +1170,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Column Not found",
-      excerpt: "You received error : Required parameter missing or invalid Symptom During your sync operation, you receive an invalid property on...",
+      excerpt: "You received error : Required parameter missing or invalid Symptom During your sync operation, you receive an error showing, The...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 128
@@ -1179,7 +1179,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Application Exception while Parsing values",
-      excerpt: "You received error: Symptom Cause Value Mapping Unavailable or Missing from some fields Invalid Character in some attributes Data type...",
+      excerpt: "You received error: Unexpected character encountered while parsing value: &lt;. Path ‘’, line 0, position 0. Symptom During your sync...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 129
@@ -1188,7 +1188,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Application Exception Remote Server Error",
-      excerpt: "You received error: Symptom Cause Data fieldsize exceeding the limits Packet size exceeding limit during or post transformation, hence packet...",
+      excerpt: "You received error: The remote server returned an error: (XXX) Not Acceptable. Symptom During your sync operation, you receive an...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 130
@@ -1197,7 +1197,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Missing",
-      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      excerpt: "You received error: Not Found Symptom During your sync operation, you receive an error showing, not found on target application,...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 131
@@ -1206,7 +1206,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Validation Failed Line Item `XXX` fulfilled",
-      excerpt: "You received error: Line Item XXX fulfilled\n\nSymptom\n\nCause\n\n  Order is already fulfilled and cannot be updated.\n  \n\n\n",
+      excerpt: "You received error: Line Item XXX fulfilled Symptom During your sync operation, you receive an error showing, Line Item XXX...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 132
@@ -1214,8 +1214,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Data Validation Failed Multiple LineItem Error",
-      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      title: "Data Validation Failed Multiple LineItem Fulfilled",
+      excerpt: "You received error: Multiple Line Item XXX fulfilled Symptom During your sync operation, you receive an error showing, Multiple Line...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 133
@@ -1224,7 +1224,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Validation Failed Order Already Fulfilled",
-      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      excerpt: "You received error: Order Already Fulfilled Symptom During your sync operation, you receive an error showing, Order Already Fulfilled on...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 134
@@ -1233,7 +1233,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data Validation Failed Order Cancelled",
-      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      excerpt: "You received error: Order Cancelled Symptom During your sync operation, you receive an error showing, Order Cancelled on target application,...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 135
@@ -1242,7 +1242,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data validation failed order quantity",
-      excerpt: "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+      excerpt: "You received error: Order Quantity Symptom During your sync operation, you receive an error showing, Failed Order Quantity on target...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 136
@@ -3249,7 +3249,7 @@ var store = [
       {
         "title": "Access not granted",
         "url": "/connectors/accessnot-granted/",
-        "excerpt": "You Received an error: Could not commit transaction Symptom Cause There might be a number of reasons for this error:...",
+        "excerpt": "You Received an error: Could not commit transaction Symptom During your sync operation, you receive an invalid error showing Could...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3271,7 +3271,7 @@ var store = [
       {
         "title": "Inactive Data",
         "url": "/connectors/data-inactive/",
-        "excerpt": "You received error : “XXX” Object “YYY” is inactive Symptom Cause Customer is inactive Resolution To resolve this issue, follow...",
+        "excerpt": "You received error : “XXX” Object “YYY” is inactive Symptom During your sync operation, you receive an error showing “XXX”...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3282,7 +3282,7 @@ var store = [
       {
         "title": "Inconsistent Data entry internal error occured",
         "url": "/connectors/data-inconsistency-internal-error/",
-        "excerpt": "You received error : Internal error (XXXX) occurred Symptom Cause Resolution To resolve this issue, follow the links below for...",
+        "excerpt": "You received error : Internal error (XXXX) occurred Symptom During your sync operation, you receive a message showing Internal error...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3293,7 +3293,7 @@ var store = [
       {
         "title": "Inconsistent Data entry already exists in the tables",
         "url": "/connectors/data-inconsistency/",
-        "excerpt": "You received error : “XXX” This entry already exists in the following tables (YYY) Symptom Cause Repetition of existing data...",
+        "excerpt": "You received error : (XXX) This entry already exists in the following tables (YYY) Symptom During your sync operation, you...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3304,7 +3304,7 @@ var store = [
       {
         "title": "Invalid Data-Customer Record not found",
         "url": "/connectors/data-invalid-customer-record-notfound/",
-        "excerpt": "You received error : Customer record not found Symptom Cause a. Absence of customer data in SAP B1 through which...",
+        "excerpt": "You received error : Customer record not found Symptom During your sync operation, you receive a message showing Customer record...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3315,7 +3315,7 @@ var store = [
       {
         "title": "Data Missing - Address, BankAccount,Payment",
         "url": "/connectors/data-missing-value/",
-        "excerpt": "You received error : “Fieldvalue” is missing Symptom Cause Resolution To resolve this issue, follow the links below for reference....",
+        "excerpt": "You received error : “Fieldvalue” is missing Symptom During your sync operation, you receive a message showing Field value is...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3325,8 +3325,8 @@ var store = [
       
       {
         "title": "Data too long",
-        "url": "/connectors/data-toolong/",
-        "excerpt": "You received error : CServiceData::SetPropertyValueString failed; Value too long in property ‘field’ of ‘attribute’ Symptom Cause There might be a...",
+        "url": "/connectors/data-too-long/",
+        "excerpt": "You received error : CServiceData::SetPropertyValueString failed; Value too long in property ‘field’ of ‘attribute’ Symptom During your sync operation, you...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3335,9 +3335,9 @@ var store = [
     
       
       {
-        "title": "SAPB1 Database deadlock",
+        "title": "Database deadlock",
         "url": "/connectors/database-deadlock/",
-        "excerpt": "You received error : XXXX- Internal error (YYYY) occurred Symptom During your sync operation, you receive WebOrderID already exist in...",
+        "excerpt": "You received error : XXXX- Internal error (YYYY) occurred Symptom During your sync operation, you receive an error showing `XXXX-...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3348,7 +3348,7 @@ var store = [
       {
         "title": "Insufficient privilege - Specify Valid Taxcode",
         "url": "/connectors/datarelation-insufficient/",
-        "excerpt": "You received error : XXXXX - Specify valid tax code Symptom Cause There might be a number of reasons for...",
+        "excerpt": "You received error : XXXXX - Specify valid tax code Symptom During your sync operation, you receive an error message...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3425,7 +3425,7 @@ var store = [
       {
         "title": "Column Not found",
         "url": "/connectors/column-not-found/",
-        "excerpt": "You received error : Required parameter missing or invalid Symptom During your sync operation, you receive an invalid property on...",
+        "excerpt": "You received error : Required parameter missing or invalid Symptom During your sync operation, you receive an error showing, The...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3436,7 +3436,7 @@ var store = [
       {
         "title": "Data Application Exception while Parsing values",
         "url": "/connectors/data-app-exception-parsingvalue/",
-        "excerpt": "You received error: Symptom Cause Value Mapping Unavailable or Missing from some fields Invalid Character in some attributes Data type...",
+        "excerpt": "You received error: Unexpected character encountered while parsing value: &lt;. Path ‘’, line 0, position 0. Symptom During your sync...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3447,7 +3447,7 @@ var store = [
       {
         "title": "Data Application Exception Remote Server Error",
         "url": "/connectors/data-app-exception-remoteserver-error/",
-        "excerpt": "You received error: Symptom Cause Data fieldsize exceeding the limits Packet size exceeding limit during or post transformation, hence packet...",
+        "excerpt": "You received error: The remote server returned an error: (XXX) Not Acceptable. Symptom During your sync operation, you receive an...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3458,7 +3458,7 @@ var store = [
       {
         "title": "Data Missing",
         "url": "/connectors/data-missing-value/",
-        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "excerpt": "You received error: Not Found Symptom During your sync operation, you receive an error showing, not found on target application,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3469,7 +3469,7 @@ var store = [
       {
         "title": "Data Validation Failed Line Item `XXX` fulfilled",
         "url": "/connectors/datavalidation-failed-lineitem-error/",
-        "excerpt": "You received error: Line Item XXX fulfilled\n\nSymptom\n\nCause\n\n  Order is already fulfilled and cannot be updated.\n  \n\n\n",
+        "excerpt": "You received error: Line Item XXX fulfilled Symptom During your sync operation, you receive an error showing, Line Item XXX...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3478,9 +3478,9 @@ var store = [
     
       
       {
-        "title": "Data Validation Failed Multiple LineItem Error",
+        "title": "Data Validation Failed Multiple LineItem Fulfilled",
         "url": "/connectors/datavalidation-failed-multiplelineitem-error/",
-        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "excerpt": "You received error: Multiple Line Item XXX fulfilled Symptom During your sync operation, you receive an error showing, Multiple Line...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3491,7 +3491,7 @@ var store = [
       {
         "title": "Data Validation Failed Order Already Fulfilled",
         "url": "/connectors/datavalidation-failedorder-alreadyfulfilled/",
-        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "excerpt": "You received error: Order Already Fulfilled Symptom During your sync operation, you receive an error showing, Order Already Fulfilled on...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3502,7 +3502,7 @@ var store = [
       {
         "title": "Data Validation Failed Order Cancelled",
         "url": "/connectors/datavalidation-failedorder-cancelled/",
-        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "excerpt": "You received error: Order Cancelled Symptom During your sync operation, you receive an error showing, Order Cancelled on target application,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3513,7 +3513,7 @@ var store = [
       {
         "title": "Data validation failed order quantity",
         "url": "/connectors/datavalidation-failedorder-quantity/",
-        "excerpt": "Data sync can produce errors. Here are some of the troubleshooting steps which you can follow to solve your problems...",
+        "excerpt": "You received error: Order Quantity Symptom During your sync operation, you receive an error showing, Failed Order Quantity on target...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

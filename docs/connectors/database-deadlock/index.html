@@ -19,7 +19,7 @@
 
 
 
-<title>SAPB1 Database deadlock - APPSeCONNECT Product Docs</title>
+<title>Database deadlock - APPSeCONNECT Product Docs</title>
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="SAPB1 Database deadlock">
+<meta property="og:title" content="Database deadlock">
 
 
   <link rel="canonical" href="http://localhost:4000/connectors/database-deadlock/">
@@ -174,7 +174,7 @@
   
     
     
-      <li class="current">SAPB1 Database deadlock</li>
+      <li class="current">Database deadlock</li>
     
   
 </ol>-->
@@ -390,7 +390,7 @@
     
     
     <li class="menu-item-" data-url="/connectors/data-app-exception-parsingvalue/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/data-app-exception-parsingvalue/" onclick="selectTab('/connectors/data-app-exception-parsingvalue/', event);" title="Go to Data Exception while Parsing values">Data Exception while Parsing values</a>
+        <a href="/connectors/data-app-exception-parsingvalue/" onclick="selectTab('/connectors/data-app-exception-parsingvalue/', event);" title="Go to Data Application Exception while Parsing values">Data Application Exception while Parsing values</a>
         
     </li>
     
@@ -414,7 +414,7 @@
     
     
     <li class="menu-item-" data-url="/connectors/datavalidation-failed-multiplelineitem-error/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/datavalidation-failed-multiplelineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-multiplelineitem-error/', event);" title="Go to Data Validation Failed Multiple LineItem Error">Data Validation Failed Multiple LineItem Error</a>
+        <a href="/connectors/datavalidation-failed-multiplelineitem-error/" onclick="selectTab('/connectors/datavalidation-failed-multiplelineitem-error/', event);" title="Go to Data Validation Failed Multiple LineItem Fulfilled ">Data Validation Failed Multiple LineItem Fulfilled </a>
         
     </li>
     
@@ -580,14 +580,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/data-toolong/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/data-toolong/" onclick="selectTab('/connectors/data-toolong/', event);" title="Go to Data too long">Data too long</a>
+    <li class="menu-item-" data-url="/connectors/data-too-long/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/data-too-long/" onclick="selectTab('/connectors/data-too-long/', event);" title="Go to Data too long">Data too long</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/connectors/database-deadlock/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/database-deadlock/" onclick="selectTab('/connectors/database-deadlock/', event);" title="Go to SAPB1 Database deadlock">SAPB1 Database deadlock</a>
+        <a href="/connectors/database-deadlock/" onclick="selectTab('/connectors/database-deadlock/', event);" title="Go to Database deadlock">Database deadlock</a>
         
     </li>
     
@@ -1837,7 +1837,7 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="SAPB1 Database deadlock">
+        <meta itemprop="headline" content="Database deadlock">
         <meta itemprop="description" content="You received error : XXXX- Internal error (YYYY) occurred">
         <meta itemprop="datePublished" content="December 07, 2018">
         
@@ -1866,7 +1866,7 @@
                 
                 
                 
-                <li class="current">SAPB1 Database deadlock</li>
+                <li class="current">Database deadlock</li>
                 
                 
             </ol>
@@ -1876,7 +1876,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">SAPB1 Database deadlock
+                <h1 class="page__title" itemprop="headline">Database deadlock
 </h1>
                 
                 
@@ -1927,29 +1927,25 @@
 
 <h1 id="symptom">Symptom</h1>
 
-<p>During your sync operation, you receive <code class="highlighter-rouge">WebOrderID</code> already exist in your transactional logs. A <code class="highlighter-rouge">WebOrderId</code> keeps track of the source application’s identifier for further update.</p>
+<p>During your sync operation, you receive an error showing `XXXX- Internal error (YYYY) occurred</p>
 
 <h1 id="cause">Cause</h1>
 
 <p>There might be a number of reasons for this error:</p>
 
 <ul>
-  <li>Absence of freight mapping</li>
-  <li>Absence of item missing</li>
-  <li>Absence of customer data in SAP B1</li>
-  <li>DI server connectivity loss</li>
+  <li>Prerequisite schema missing</li>
+  <li>Data Source - Record Lock</li>
+  <li>Other process might block the sync.</li>
 </ul>
 
 <h1 id="resolution">Resolution</h1>
 
 <p>To resolve this issue, follow the links below for reference.</p>
-
 <ul>
-  <li>proper mapping of shipping type (expense code)</li>
-  <li>Check existence of item in SAP B1 (item master data item code)</li>
-  <li>Check customer data existence (business partner card code)</li>
-  <li>Check DI server connection</li>
+  <li><a href="/transformation/steps-to-cutomize-prebuilt-mapping/">How to do Schema mapping</a></li>
 </ul>
+
 
                 
             </section>
@@ -2008,7 +2004,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=SAPB1+Database+deadlock%20https://docs.appseconnect.com%2Fconnectors%2Fdatabase-deadlock%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Database+deadlock%20https://docs.appseconnect.com%2Fconnectors%2Fdatabase-deadlock%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2Fdatabase-deadlock%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

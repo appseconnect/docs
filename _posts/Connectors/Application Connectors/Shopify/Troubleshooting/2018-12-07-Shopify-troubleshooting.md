@@ -16,15 +16,15 @@ to solve your problems in Shopify
 
 Here is the list of Shopify troubleshooting areas and the resolution steps to it.
 
-[COLUMN NOT PRESENT]()  
-[DATAMISSING VALUE]()  
-[DATA APPLICATION EXCEPTION REMOTE SERVER ERROR]()  
-[DATA APPLICATION EXCEPTION WHILE PARSING VALUES]()  
-[DATAVALIDATION FAILED LINE ITEM ERROR]()  
-[DATAVALIDATION FAILED MULTIPLE LINE ITEM ERROR]()  
-[DATAVALIDATION FAILED ORDER ALREADY FULFILLED]()  
-[DATAVALIDATION FAILED FULFILLED QUATITY MUST BE LESS THAN OR EQUAL TO LINE ITEM QUANTITY]()  
-[DATAVALIDATION FAILED ORDER CANCELLED]()  
+[COLUMN NOT PRESENT](/connectors/column-not-found/)  
+[DATAMISSING VALUE](/connectors/data-missing-value/)  
+[DATA APPLICATION EXCEPTION REMOTE SERVER ERROR](/connectors/data-app-exception-remoteserver-error/)  
+[DATA APPLICATION EXCEPTION WHILE PARSING VALUES](/connectors/data-app-exception-parsingvalue/)  
+[DATAVALIDATION FAILED LINE ITEM ERROR](/connectors/datavalidation-failed-lineitem-error/)  
+[DATAVALIDATION FAILED MULTIPLE LINE ITEM ERROR](/connectors/datavalidation-failed-multiplelineitem-error/)  
+[DATAVALIDATION FAILED ORDER ALREADY FULFILLED](/connectors/datavalidation-failedorder-alreadyfulfilled/)  
+[DATAVALIDATION FAILED FULFILLED QUATITY MUST BE LESS THAN OR EQUAL TO LINE ITEM QUANTITY](/connectors/datavalidation-failedorder-quantity/)  
+[DATAVALIDATION FAILED ORDER CANCELLED](/connectors/datavalidation-failedorder-cancelled/)  
 
 
 

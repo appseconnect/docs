@@ -12,15 +12,22 @@ menus:
 ---
 
 
-
-
 # You received error: Line Item `XXX` fulfilled
 
 # Symptom
 
+During your sync operation, you receive an error showing, Line Item `XXX` fulfilled
+on target application, which is Shopify here.
+
+# Symptom
+
+There might be a number of reasons for this error: 
+
+* Order is already fulfilled and cannot be updated.
+
 # Cause
-- Order is already fulfilled and cannot be updated.
-- 
+
+[How to add and update Order in shopify](https://help.shopify.com/en/manual/sell-in-person/transactions/orders).  
 
 
 

@@ -16,11 +16,12 @@ menus:
 
 # Symptom
 
-During your sync operation, you receive an invalid property on an entity. The 'XXX' attribute of your Transformed file is 
-invalid on target application, which is SAP B1. 
+During your sync operation, you receive an error showing, The 'XXX' attribute of your Transformed file is missing or invalid
+on target application, which is Shopify here. 
+
 # Cause
 
-There is some instances where such error occurs
+There might be a number of reasons for this error: 
 
 * Invalid Attribute mapping exist in transformation
 * Attribute mapping is disabled
@@ -31,6 +32,7 @@ There is some instances where such error occurs
 
 To resolve this issue, follow the links below for reference. 
 
-[Attribute Mapping Required](/transformation/steps-to-cutomize-prebuilt-mapping/#implementing-attribute-mapping).
-[API Missing]().
+[How to do Attribute Mapping in AEC](/transformation/steps-to-cutomize-prebuilt-mapping/#implementing-attribute-mapping).  
+[How to Enable/Disable Attribute Mapping](/transformation/define-logic-over-destination-mapping/#respect-hierarchical-rendering-on-mapping-state)  
+[How to Add or Update API](/api-management/quickstart-guides-to-api-management/).
 

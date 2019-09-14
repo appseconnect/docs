@@ -11,10 +11,23 @@ menus:
         identifier: shopifydatamissing
 ---
 
-Data sync can produce errors. Here are some of the troubleshooting steps which you can follow 
-to solve your problems in Shopify
+# You received error: <errors>Not Found</errors>
 
-Here is the list of Shopify troubleshooting areas and the resolution steps to it.
+# Symptom
+
+During your sync operation, you receive an error showing, not found on target application, which is Shopify here. 
+
+# Cause
+
+There might be a number of reasons for this error: 
+
+- Dependent data missing.
+- Using Wrong URL which couldnot map with the action.(E.g: Accounts cant be fetched by GET Operation, and is fetching error message )
+
+# Resolution
+
+[]()  
+[]()  
 
 
 

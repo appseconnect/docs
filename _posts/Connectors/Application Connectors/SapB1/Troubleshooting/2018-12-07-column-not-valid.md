@@ -15,7 +15,7 @@ menus:
 # Symptom
 
 During your sync operation, you receive an invalid property on an entity. The 'XXX' attribute of your Transformed file is 
-invalid on target application, which is SAP B1. 
+invalid on target application, which is Shopify here. 
 
 # Cause
 

@@ -12,18 +12,24 @@ menus:
 ---
 
 
-# You received error:
+# You received error: The remote server returned an error: (XXX) Not Acceptable.
 
 # Symptom
 
+During your sync operation, you receive an error showing, Unexpected character encountered while parsing value
+on target application, which is Shopify here. 
+
 # Cause
+
+There might be a number of reasons for this error: 
+
 - Data fieldsize exceeding the limits
 - Packet size exceeding limit during or post transformation, hence packet size must be reduced by applying split and merge filter. 
 
 # Resolution
 
-[Checkdata fieldsize in Destination Application]()
-[Workflow- Use of split and Merge filter]()
+[Checkdata fieldsize in Destination Application]()  
+[Workflow- Use of split and Merge filter]()  
 
 
 

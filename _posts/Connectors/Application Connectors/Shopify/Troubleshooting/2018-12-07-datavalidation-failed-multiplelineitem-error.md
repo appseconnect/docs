@@ -1,5 +1,5 @@
 ---
-title: "Data Validation Failed Multiple LineItem Error"
+title: "Data Validation Failed Multiple LineItem Fulfilled"
 toc: true
 tag: developers
 category: "Connectors"
@@ -7,14 +7,26 @@ menus:
     shopifyconnectortroubleshooting:
         icon: fa fa-gg
         weight: 7
-        title: "Data Validation Failed Multiple LineItem Error"
+        title: "Data Validation Failed Multiple LineItem Fulfilled "
         identifier: shopifydatavalidation
 ---
 
-Data sync can produce errors. Here are some of the troubleshooting steps which you can follow 
-to solve your problems in Shopify
+# You received error: Multiple Line Item `XXX` fulfilled
 
-Here is the list of Shopify troubleshooting areas and the resolution steps to it.
+# Symptom
+
+During your sync operation, you receive an error showing, Multiple Line Item `XXX` fulfilled
+on target application, which is Shopify here.
+
+# Symptom
+
+There might be a number of reasons for this error: 
+
+* Order is already fulfilled and cannot be updated.
+
+# Cause
+
+[How to add and update Order in shopify](https://help.shopify.com/en/manual/sell-in-person/transactions/orders).  
 
 
 

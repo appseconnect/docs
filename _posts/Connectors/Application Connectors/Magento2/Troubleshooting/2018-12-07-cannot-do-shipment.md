@@ -27,6 +27,6 @@ There might be a number of reasons for this error:
 # Resolution
 
 To resolve this issue, follow the links below for reference.     
-[Define Action filter to filter out virtual product  from source product](/transformation/working-with-schemas-action-filter/#knowing-schema-actions--filters)
+[Define Action filter to filter out virtual product  from source product](/transformation/working-with-schemas-action-filter/#knowing-schema-actions--filters)  
 [Apply Condition in mapping or transformation](/transformation/define-logic-over-destination-mapping/#pre-requisites-for-mapping)
 

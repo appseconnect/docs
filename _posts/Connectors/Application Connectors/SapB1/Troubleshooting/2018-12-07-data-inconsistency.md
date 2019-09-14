@@ -10,17 +10,24 @@ menus:
         icon: fa fa-file-word-o
         identifier: sapb1troubleshootingdatainvalid
 ---
-# You received error : "XXX" This entry already exists in the following tables (YYY)
+# You received error : (XXX) This entry already exists in the following tables (YYY)
 
 # Symptom
 
+During your sync operation, you receive an invalid error showing (XXX)This entry already exists in the following tables (YYY)
+on target application, which is SAPB1 here. 
 
 
 # Cause
 
-- Repetition of existing data eg: business partner, items, orders with the same unique key 
+- Database Connectivity Failure
+- DI Server Issue
+- Credential Validation might not be proper 
 
 # Resolution
 
 To resolve this issue, follow the links below for reference.   
--Feature to restrict data duplication. Thus, check data before pushing into one platform to another 
+
+-[How to Check Credential Validation in SAPB1]()
+-[Restart the DI Server]()
+-[Contact System Admin]()
