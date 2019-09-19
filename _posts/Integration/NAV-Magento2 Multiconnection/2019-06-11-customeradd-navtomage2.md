@@ -89,7 +89,7 @@ This Snapshot View displays the successful execution of the workflow.
 
 ![custadd_navtomage2_image8](/staticfiles/integration/media/custadd_navtomage2_image8.png)  
 
-**Note : A customer created in nav is unique for each connection that cannot be sync the same customer to multiple magneto urls.
+**Note : A customer created in nav is unique for each connection that cannot be sync the same customer to multiple magneto urls.**
 
 ## Frequency of use
 

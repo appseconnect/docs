@@ -17,12 +17,13 @@ Invoice` for the orders from Ms Dynamics NAV to Magento2 (Multi-store).
 
 ![nav-magemulti-invoicewrkflw](/staticfiles/integration/media/nav-magemulti-invoicewrkflw.png)  
 In this case, the invoice of the orders placed are `added to Magento 2` by syncing the workflow for Invoice Add. 
-Sales order must get synced from Magento2 to NAV before executing the workflow.
+**Sales order must get synced from Magento2 to NAV before executing the workflow.**
 
-The above workflow is designed to 'GET invoice from MS Dynamics NAV and POST it to Magento 2.
+The above workflow is designed to 'GET invoice from MS Dynamics NAV and POST it to Magento 2`.
 
 **Note:** The steps for adding Invoice in Ms Dynamics NAV are same as that of adding Shipments. [Click here](/integration/shipment/)to know the process of adding Invoice and Shipments to Ms Dynamics NAV.
 ![nav-magemulti-invoice1](/staticfiles/integration/media/nav-magemulti-invoice1.png)
+
 ## LookUp Mapping
 
 No Lookup Mapping is required for adding invoice to Magento2.

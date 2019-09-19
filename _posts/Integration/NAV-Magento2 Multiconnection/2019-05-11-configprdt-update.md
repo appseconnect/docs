@@ -27,7 +27,7 @@ For updating Configurable products from Ms Dynamics NAV to Magento2 (Multistore)
 * Updates in Web Product Details CP Page: The user can update the Web TaxClass Id,  WebDescription and WebShortDescription.
 * Updates in Web ProductWebsites Page: The user can change/update the WebSiteId of the product.
 * Updates in Web ProductAttribute Page: No changes required in this section.AttributeOptionId is always blank in Configurable product.
-* Updates in Web ProductCategory Page: The user be able to modify/update the CategoryId of the product in this page. Also the `AttributeOptionId` is `always 
+* Updates in Web ProductCategory Page: The user will be able to modify/update the CategoryId of the product in this page. Also the `AttributeOptionId` is `always 
   blank in Configurable product`.
 * Updates in the Web Product Child Details Page: The user be able to modify/update the ChildItem.
 * The changes in the AEC Application Item list will be modified as per the changes in the Web Product Details CP Page.
@@ -82,8 +82,9 @@ This Snapshot View displays the successful execution of the workflow.
 The user can view the product synced in Magento2.
 
 ![confgprdctadd_navtomage2multi6](/staticfiles/integration/media/confgprdctadd_navtomage2multi6.png) 
+  
 
-The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to 'T' (True) from 'F' (False).
+The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to 'T' (True) from 'F' (False).    
 
 ![confgprdctadd_navtomage2multi7](/staticfiles/integration/media/confgprdctadd_navtomage2multi7.png) 
 

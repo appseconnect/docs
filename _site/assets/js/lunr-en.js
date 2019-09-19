@@ -1385,605 +1385,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Uniconta",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 152
-    });
-    
-  
-    idx.add({
-      title: "ZohoCRM V2.0",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 153
-    });
-    
-  
-    idx.add({
-      title: "Grouping of Conditions",
-      excerpt: "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 154
-    });
-    
-  
-    idx.add({
-      title: "Adding Product in Priority",
-      excerpt: "Prerequisites for adding products: You need a valid Priority Account. Steps to Add Products in Priority: Login to the Priority...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 155
-    });
-    
-  
-    idx.add({
-      title: "Updating Inventory in Priority",
-      excerpt: "Prerequisites for Updating Inventory Need to have a valid Priority Account. Need to have the product registered before updating the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 156
-    });
-    
-  
-    idx.add({
-      title: "Adding Product in Sage300",
-      excerpt: "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 157
-    });
-    
-  
-    idx.add({
-      title: "Updating Inventory in Sage300",
-      excerpt: "Prerequisites for Updating Inventory in SAGE300 Need a valid SAGE 300 account. Need the server access to SAGE 300. Need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 158
-    });
-    
-  
-    idx.add({
-      title: "Adding Account in Zoho",
-      excerpt: "Prerequisites Need to have a valid ZOHO CRM account. Steps to add new Customer/Accounts in Priority Login to the ZOHO...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 159
-    });
-    
-  
-    idx.add({
-      title: "Troubleshooting",
-      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 160
-    });
-    
-  
-    idx.add({
-      title: "Getting Started",
-      excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 161
-    });
-    
-  
-    idx.add({
-      title: "Types of Mapping",
-      excerpt: "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 162
-    });
-    
-  
-    idx.add({
-      title: "Types of Variable",
-      excerpt: "Working with Variables in APPSeCONNECT To facilitate touchpoint mapping, variables stores the data that can be used later in the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 163
-    });
-    
-  
-    idx.add({
-      title: "Understanding Attribute Mapping",
-      excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 164
-    });
-    
-  
-    idx.add({
-      title: "Understanding XML and Xpath",
-      excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 165
-    });
-    
-  
-    idx.add({
-      title: "Understanding Components of Mapping",
-      excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 166
-    });
-    
-  
-    idx.add({
-      title: "Steps to Customize Prebuilt Mapping/Attribute mapping",
-      excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 167
-    });
-    
-  
-    idx.add({
-      title: "Understanding Touchpoint Dependencies",
-      excerpt: "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 168
-    });
-    
-  
-    idx.add({
-      title: "Understanding Mapping & Syntax",
-      excerpt: "APPSeCONNECT has its own set of vocabulary or syntax, functions that help its users to customize the pre-defined touchpoints as...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 169
-    });
-    
-  
-    idx.add({
-      title: "Advance Mapping through Custom Renderer",
-      excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 170
-    });
-    
-  
-    idx.add({
-      title: "Mapping from Schema 1 to Schema 2",
-      excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 171
-    });
-    
-  
-    idx.add({
-      title: "Enabling Tracking in Transformation",
-      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 172
-    });
-    
-  
-    idx.add({
-      title: "Handling Variables and Functions",
-      excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 173
-    });
-    
-  
-    idx.add({
-      title: "Implementing Xpath in Mapping",
-      excerpt: "Use Case Name Handling XPATH in Mapping Brief Description XPATH is an essential concept that is required when implementing mapping...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 174
-    });
-    
-  
-    idx.add({
-      title: "Using Lookups Mapping for Value Interchange",
-      excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 175
-    });
-    
-  
-    idx.add({
-      title: "Handling Dependent data",
-      excerpt: "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 176
-    });
-    
-  
-    idx.add({
-      title: "Handling Incremental data",
-      excerpt: "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 177
-    });
-    
-  
-    idx.add({
-      title: "Using library methods/AppResource Function",
-      excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 178
-    });
-    
-  
-    idx.add({
-      title: "Using Tips & Tricks",
-      excerpt: "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 179
-    });
-    
-  
-    idx.add({
-      title: "Working with Schema, Action & Filter",
-      excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
-      categories: ["Transformation"],
-      tags: ["developers"],
-      id: 180
-    });
-    
-  
-    idx.add({
-      title: "Sage300",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 181
-    });
-    
-  
-    idx.add({
-      title: "Uploading Plugins or Extensions",
-      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 182
-    });
-    
-  
-    idx.add({
-      title: "WooCommerce",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 183
-    });
-    
-  
-    idx.add({
-      title: "Adding Employee in BambooHR",
-      excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 184
-    });
-    
-  
-    idx.add({
-      title: "BambooHR",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 185
-    });
-    
-  
-    idx.add({
-      title: "Dynamics NAV Business Central",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 186
-    });
-    
-  
-    idx.add({
-      title: "Generic NAV 2009R2 Extension",
-      excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 187
-    });
-    
-  
-    idx.add({
-      title: "Generic NAV 2015 Extension",
-      excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 188
-    });
-    
-  
-    idx.add({
-      title: "Generic NAV 2016 Extension",
-      excerpt: "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 189
-    });
-    
-  
-    idx.add({
-      title: "Generic NAV 2017 MultiConnection Extension",
-      excerpt: "Here you will get the step by step process to use NAV 2017 Extension as and when required in the...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 190
-    });
-    
-  
-    idx.add({
-      title: "Rule",
-      excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 191
-    });
-    
-  
-    idx.add({
-      title: "Choosing & Activating Rule",
-      excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 192
-    });
-    
-  
-    idx.add({
-      title: "Creation of Rule",
-      excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 193
-    });
-    
-  
-    idx.add({
-      title: "Pre-Configured Rule for Misfire Event",
-      excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 194
-    });
-    
-  
-    idx.add({
-      title: "Overview of Integration",
-      excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 195
-    });
-    
-  
-    idx.add({
-      title: "SAPB1-Magento2",
-      excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 196
-    });
-    
-  
-    idx.add({
-      title: "Business Partner Add",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 197
-    });
-    
-  
-    idx.add({
-      title: "Inventory Update",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 198
-    });
-    
-  
-    idx.add({
-      title: "Invoice Add",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 199
-    });
-    
-  
-    idx.add({
-      title: "Order Add",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 200
-    });
-    
-  
-    idx.add({
-      title: "Product Add",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 201
-    });
-    
-  
-    idx.add({
-      title: "SAPB1 On-Premise Add-on 3.1.x Installation OR Upgrade",
-      excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 202
-    });
-    
-  
-    idx.add({
-      title: "Pre-Configured Rule for Resync Bucket",
-      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 203
-    });
-    
-  
-    idx.add({
-      title: "Pre-Configured Rule for Log Bucket",
-      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 204
-    });
-    
-  
-    idx.add({
-      title: "Configurable Product Update Nav-Magento2 MultiConnection",
-      excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 205
-    });
-    
-  
-    idx.add({
-      title: "Configurable Product Add Nav-Mage2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 206
-    });
-    
-  
-    idx.add({
-      title: "Contact Person Add NAV to Magento 2(Multiconnection)",
-      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 207
-    });
-    
-  
-    idx.add({
-      title: "Contact Person Add/ Update Mage2 multistore to NAV",
-      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 208
-    });
-    
-  
-    idx.add({
-      title: "Customer Add Magento2-NAV Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 209
-    });
-    
-  
-    idx.add({
-      title: "Customer Add NAV-Magento2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 210
-    });
-    
-  
-    idx.add({
-      title: "Inventory Update NAV-Mage2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 211
-    });
-    
-  
-    idx.add({
-      title: "Add Invoice NAV-Mage2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 212
-    });
-    
-  
-    idx.add({
-      title: "NAV-Magento 2 Multiple Connection",
-      excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 213
-    });
-    
-  
-    idx.add({
-      title: "Add Sales Order Magento2 Multiconnection-NAV",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 214
-    });
-    
-  
-    idx.add({
-      title: "Add Shipment NAV-Mage2 MultiConnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 215
-    });
-    
-  
-    idx.add({
-      title: " Add Invoice",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 216
-    });
-    
-  
-    idx.add({
-      title: "Simple Product Add Mage2 Multi to Nav",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
-      tags: ["developers"],
-      id: 217
-    });
-    
-  
-    idx.add({
       title: "Simple Product Add NAV to Mage2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 218
+      id: 152
     });
     
   
@@ -1992,7 +1398,592 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 219
+      id: 153
+    });
+    
+  
+    idx.add({
+      title: "Uniconta",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 154
+    });
+    
+  
+    idx.add({
+      title: "ZohoCRM V2.0",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 155
+    });
+    
+  
+    idx.add({
+      title: "Grouping of Conditions",
+      excerpt: "What is Grouping of Conditions Mapping can have multiple condition that are interlinked or grouped. Scenario might require more than...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 156
+    });
+    
+  
+    idx.add({
+      title: "Adding Product in Priority",
+      excerpt: "Prerequisites for adding products: You need a valid Priority Account. Steps to Add Products in Priority: Login to the Priority...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 157
+    });
+    
+  
+    idx.add({
+      title: "Updating Inventory in Priority",
+      excerpt: "Prerequisites for Updating Inventory Need to have a valid Priority Account. Need to have the product registered before updating the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 158
+    });
+    
+  
+    idx.add({
+      title: "Adding Product in Sage300",
+      excerpt: "Prerequisites for adding Product/Items in SAGE 300 Need to have a valid SAGE 300 account. Steps to Add Product/Items in...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 159
+    });
+    
+  
+    idx.add({
+      title: "Updating Inventory in Sage300",
+      excerpt: "Prerequisites for Updating Inventory in SAGE300 Need a valid SAGE 300 account. Need the server access to SAGE 300. Need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 160
+    });
+    
+  
+    idx.add({
+      title: "Adding Account in Zoho",
+      excerpt: "Prerequisites Need to have a valid ZOHO CRM account. Steps to add new Customer/Accounts in Priority Login to the ZOHO...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 161
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting",
+      excerpt: "Prerequisites for Intergration Scenarios View the Generated Packet to know where the error occurred (GET or PROCESS or POST). View...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 162
+    });
+    
+  
+    idx.add({
+      title: "Getting Started",
+      excerpt: "Getting started section of the mapping will help you to understand the main areas you should be familiar with before...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 163
+    });
+    
+  
+    idx.add({
+      title: "Types of Mapping",
+      excerpt: "APPSeCONNECT Mapping Types are given below: 1. Hard Coded Mapping - Hardcoded mapping is implemented when it is required that...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 164
+    });
+    
+  
+    idx.add({
+      title: "Types of Variable",
+      excerpt: "Working with Variables in APPSeCONNECT To facilitate touchpoint mapping, variables stores the data that can be used later in the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 165
+    });
+    
+  
+    idx.add({
+      title: "Understanding Attribute Mapping",
+      excerpt: "Behind every application integration, there is a business logic. APPSeCONNECT stores this integration logic in the form of data. Attribute...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 166
+    });
+    
+  
+    idx.add({
+      title: "Understanding XML and Xpath",
+      excerpt: "Understanding XML XML stands for eXtensible Markup Language. XML was designed to store and transport data. It is a textual...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 167
+    });
+    
+  
+    idx.add({
+      title: "Understanding Components of Mapping",
+      excerpt: "Mapping triggers the transformation process between the Source and the Destination Applications. Source and destination schemas are mapped in the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 168
+    });
+    
+  
+    idx.add({
+      title: "Steps to Customize Prebuilt Mapping/Attribute mapping",
+      excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 169
+    });
+    
+  
+    idx.add({
+      title: "Understanding Touchpoint Dependencies",
+      excerpt: "Use Case Name Touchpoint Dependency Brief Description Touchpoints are the point of action which when triggered transfers informations between the...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 170
+    });
+    
+  
+    idx.add({
+      title: "Understanding Mapping & Syntax",
+      excerpt: "APPSeCONNECT has its own set of vocabulary or syntax, functions that help its users to customize the pre-defined touchpoints as...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 171
+    });
+    
+  
+    idx.add({
+      title: "Advance Mapping through Custom Renderer",
+      excerpt: "Use Case Name Advanced Mapping Through Renderer Brief Description This feature enables the user to alter the default XML structure...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 172
+    });
+    
+  
+    idx.add({
+      title: "Mapping from Schema 1 to Schema 2",
+      excerpt: "Use-Case Name Attribute Mapping with Schema 1 (OLEDB Technology APP) and Schema 2 (REST Application - Magento 2) Brief Description...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 173
+    });
+    
+  
+    idx.add({
+      title: "Enabling Tracking in Transformation",
+      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 174
+    });
+    
+  
+    idx.add({
+      title: "Handling Variables and Functions",
+      excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 175
+    });
+    
+  
+    idx.add({
+      title: "Implementing Xpath in Mapping",
+      excerpt: "Use Case Name Handling XPATH in Mapping Brief Description XPATH is an essential concept that is required when implementing mapping...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 176
+    });
+    
+  
+    idx.add({
+      title: "Using Lookups Mapping for Value Interchange",
+      excerpt: "Use Case Name Using Lookups Mapping for Value Interchange Brief Description Lookups Mapping is a feature in APPSeCONNECT which enables...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 177
+    });
+    
+  
+    idx.add({
+      title: "Handling Dependent data",
+      excerpt: "Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 178
+    });
+    
+  
+    idx.add({
+      title: "Handling Incremental data",
+      excerpt: "This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. An incremental (or...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 179
+    });
+    
+  
+    idx.add({
+      title: "Using library methods/AppResource Function",
+      excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external functions written in...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 180
+    });
+    
+  
+    idx.add({
+      title: "Using Tips & Tricks",
+      excerpt: "Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 181
+    });
+    
+  
+    idx.add({
+      title: "Working with Schema, Action & Filter",
+      excerpt: "Knowing Schema, Actions &amp; Filters The user can view the schemas and the action present or can also add schema...",
+      categories: ["Transformation"],
+      tags: ["developers"],
+      id: 182
+    });
+    
+  
+    idx.add({
+      title: "Sage300",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 183
+    });
+    
+  
+    idx.add({
+      title: "Uploading Plugins or Extensions",
+      excerpt: "Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. This document demonstrates as...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 184
+    });
+    
+  
+    idx.add({
+      title: "WooCommerce",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 185
+    });
+    
+  
+    idx.add({
+      title: "Adding Employee in BambooHR",
+      excerpt: "Prerequisites Need to have a valid account in BambooHR Steps to add a new employee in BambooHR Login to the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 186
+    });
+    
+  
+    idx.add({
+      title: "BambooHR",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 187
+    });
+    
+  
+    idx.add({
+      title: "Dynamics NAV Business Central",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 188
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2009R2 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 189
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2015 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 190
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2016 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 191
+    });
+    
+  
+    idx.add({
+      title: "Generic NAV 2017 MultiConnection Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2017 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 192
+    });
+    
+  
+    idx.add({
+      title: "Simple Product Add Mage2 Multi to Nav",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 193
+    });
+    
+  
+    idx.add({
+      title: "Rule",
+      excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 194
+    });
+    
+  
+    idx.add({
+      title: "Choosing & Activating Rule",
+      excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 195
+    });
+    
+  
+    idx.add({
+      title: "Creation of Rule",
+      excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 196
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Misfire Event",
+      excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 197
+    });
+    
+  
+    idx.add({
+      title: "Overview of Integration",
+      excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 198
+    });
+    
+  
+    idx.add({
+      title: "Configurable Product Add Nav-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 199
+    });
+    
+  
+    idx.add({
+      title: "SAPB1-Magento2",
+      excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 200
+    });
+    
+  
+    idx.add({
+      title: "Business Partner Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 201
+    });
+    
+  
+    idx.add({
+      title: "Inventory Update",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 202
+    });
+    
+  
+    idx.add({
+      title: "Invoice Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 203
+    });
+    
+  
+    idx.add({
+      title: "Order Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 204
+    });
+    
+  
+    idx.add({
+      title: "Product Add",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 205
+    });
+    
+  
+    idx.add({
+      title: "SAPB1 On-Premise Add-on 3.1.x Installation OR Upgrade",
+      excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 206
+    });
+    
+  
+    idx.add({
+      title: "Configurable Product Update Nav-Magento2 MultiConnection",
+      excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 207
+    });
+    
+  
+    idx.add({
+      title: "Customer Add Magento2-NAV Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 208
+    });
+    
+  
+    idx.add({
+      title: "Customer Add NAV-Magento2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 209
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Resync Bucket",
+      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 210
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Log Bucket",
+      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 211
+    });
+    
+  
+    idx.add({
+      title: "Contact Person Add NAV to Magento 2(Multiconnection)",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 212
+    });
+    
+  
+    idx.add({
+      title: "Contact Person Add/ Update Mage2 multistore to NAV",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 213
+    });
+    
+  
+    idx.add({
+      title: "Inventory Update NAV-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 214
+    });
+    
+  
+    idx.add({
+      title: "Add Invoice NAV-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 215
+    });
+    
+  
+    idx.add({
+      title: "NAV-Magento 2 Multiple Connection",
+      excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 216
+    });
+    
+  
+    idx.add({
+      title: "Add Sales Order Magento2 Multiconnection-NAV",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 217
+    });
+    
+  
+    idx.add({
+      title: "Add Shipment NAV-Mage2 MultiConnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 218
     });
     
   
@@ -3687,6 +3678,28 @@ var store = [
     
       
       {
+        "title": "Simple Product Add NAV to Mage2 Multiconnection",
+        "url": "/integration/simple-productadd/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Simple Product Update Nav-Mage2 MultiConnection",
+        "url": "/integration/simpleprdct-update/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Uniconta",
         "url": "/connectors/Uniconta/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
@@ -4116,6 +4129,17 @@ var store = [
     
       
       {
+        "title": "Simple Product Add Mage2 Multi to Nav",
+        "url": "/integration/simple-productadd-mage2tonav/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Rule",
         "url": "/rule/overview-of-rule/",
         "excerpt": "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
@@ -4163,6 +4187,17 @@ var store = [
         "title": "Overview of Integration",
         "url": "/integration/overview/",
         "excerpt": "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Configurable Product Add Nav-Mage2 Multiconnection",
+        "url": "/integration/configproduct-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4248,64 +4283,9 @@ var store = [
     
       
       {
-        "title": "Pre-Configured Rule for Resync Bucket",
-        "url": "/rule/preconfigured-rule-for-resync-bucket/",
-        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Pre-Configured Rule for Log Bucket",
-        "url": "/rule/preconfigured-rule-for-log-bucket/",
-        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Configurable Product Update Nav-Magento2 MultiConnection",
         "url": "/integration/configprdt-update/",
         "excerpt": "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Configurable Product Add Nav-Mage2 Multiconnection",
-        "url": "/integration/configproduct-add/",
-        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Contact Person Add NAV to Magento 2(Multiconnection)",
-        "url": "/integration/contactperson-add/",
-        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Contact Person Add/ Update Mage2 multistore to NAV",
-        "url": "/integration/contactperson-addupdate/",
-        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4328,6 +4308,50 @@ var store = [
         "title": "Customer Add NAV-Magento2 Multiconnection",
         "url": "/integration/customeradd-navtomage2/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Pre-Configured Rule for Resync Bucket",
+        "url": "/rule/preconfigured-rule-for-resync-bucket/",
+        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Pre-Configured Rule for Log Bucket",
+        "url": "/rule/preconfigured-rule-for-log-bucket/",
+        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Contact Person Add NAV to Magento 2(Multiconnection)",
+        "url": "/integration/contactperson-add/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Contact Person Add/ Update Mage2 multistore to NAV",
+        "url": "/integration/contactperson-addupdate/",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4383,50 +4407,6 @@ var store = [
         "title": "Add Shipment NAV-Mage2 MultiConnection",
         "url": "/integration/shipment/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": " Add Invoice",
-        "url": "/integration/simple-product-mage2tonav/",
-        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Simple Product Add Mage2 Multi to Nav",
-        "url": "/integration/simple-productadd-mage2tonav/",
-        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Simple Product Add NAV to Mage2 Multiconnection",
-        "url": "/integration/simple-productadd/",
-        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will enable the users understand how the...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Simple Product Update Nav-Mage2 MultiConnection",
-        "url": "/integration/simpleprdct-update/",
-        "excerpt": "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

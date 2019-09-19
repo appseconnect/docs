@@ -29,12 +29,12 @@ As a pre-requisite, the user needs to create and sync the Simple Products first 
   Also, select the `WebProductType` as Configurable from the dropdown.
 * Navigate to the **Web ProductWebsites Page** and select the `ConnectionName & the WebsiteID` from the Drop-down.
 * In the **Web ProductAttribute Page** select the `ConnectionName, AttributeID  from the drop-down for the ConnectionName and the rest will be autopopulated.  
-![confgprdctadd_navtomage2multi1](/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png)
+![confgprdctadd_navtomage2multi1](/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png)  
 
 **Note: The `AttributeId` can be opted from the drop-down only when the `WebAttributeSetId` is selected from the Web Product Details CP page. 
         The `AttributeOptionId` can be opted when the `AttributeId` is selected.** 
-        AttributeOptionId is always blank in Configurable product.
-* In the **WebProductChildDetails** page select the `ChildItemNo and the ConnectionName` from the drop-down options.
+        AttributeOptionId is always blank in Configurable product.  
+* In the **WebProductChildDetails** page select the `ChildItemNo and the ConnectionName` from the drop-down options.  
 **Note** : The `AttributeId` can be opted from the dropdown only when the `WebAttributeSetId` is selected from the Web Product Details CP page. 
            The `AttributeOptionId` needs to be kept blank. `WebAttributeSetId` and `AttributeId` needs to be same as that the child items 
            (which will be added in the section WebProductChildDetails of the Item card) of this new configurable product which is already been 
@@ -46,7 +46,7 @@ As a pre-requisite, the user needs to create and sync the Simple Products first 
 
 **Note: The same product can be added to `multiple connection` by creating a new line in Web Product Details CP Page and choosing the 
 desired connection name. Further repeat the same steps as discussed above for the newly chosen connection. Also there is no need to create duplicate products 
-in nav to be synced in multiple magento that is we can sync the same item in nav to multiple magento urls.**
+in NAV to be synced in multiple magento that is we can sync the same item in NAV  to multiple Magento urls.**
 
 ## LookUp Mapping
 
