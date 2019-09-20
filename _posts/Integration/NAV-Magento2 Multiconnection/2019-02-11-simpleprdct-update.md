@@ -77,6 +77,8 @@ The user can also go to NAV and check if the WebID has returned and the WebSyncF
 
 ![simpleprdctupdate_navmagemulti7](/staticfiles/integration/media/simpleprdctupdate_navmagemulti7.png) 
 
+**NOTE: After making changes in the item card, the sync flag changes from `T` to `F`**
+
 ## Frequency of use
 
 The user can execute the Integration through workflow as and when required.

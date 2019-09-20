@@ -24,6 +24,9 @@ In this integration scenario, multiple connections have been made for transforma
 * Input the details for multiple connections that can be selected from the drop downs of the 
 * Web Product Details CP Page - Select the `ConnectionName`, `ApplicationName`, `WebAttributeSetId` and enable the checkbox for `WebItemFlag`.
 ![simpleprdct_navmagemulti2](/staticfiles/integration/media/simpleprdct_navmagemulti2.png)
+
+**NOTE: The same product can be added to multiple connection by creating a new line in Web Product Details CP Page and choosing the desired connection name. Further repeat the same steps as discussed above for the newly chosen connection.**
+
 * Web Product Websites Page - The `ConnectionName` & the `WebsiteID` needs to be selected from the Drop-down.
 ![simpleprdct_navmagemulti3](/staticfiles/integration/media/simpleprdct_navmagemulti3.png)
 * Web ProductAttribute Page - Select the `ConnectionName`, `AttributeID` and the `AttributeOptionId` from the drop-down for the product that needs to be synced to Magento.  
@@ -38,6 +41,8 @@ The entire Item Card Page for the selected product (here - Schneider Circuit Bre
 ![simpleprdct_navmagemulti8](/staticfiles/integration/media/simpleprdct_navmagemulti8.png)
 
 Click OK button on creating the Item.
+
+**NOTE: There is no need to create duplicate products in NAV to be synced in Multiple Magento.**
 
 ## Lookup Mapping
 
@@ -82,12 +87,16 @@ This Snapshot View displays the successful execution of the workflow.
 
 ## Post Conditions
 
-The user can view the product (Schneider Circuit) synced in Magento2 (for the 1st  website).
+The user can view the product (Schneider Circuit) synced in Magento2 (for the 1st  website).  
 ![simpleprdct_navmagemulti 15](/staticfiles/integration/media/simpleprdct_navmagemulti15.png)
 The user can view the product (Schneider Circuit) synced in the 2nd   website of Magento2.
+
 ![simpleprdct_navmagemulti16](/staticfiles/integration/media/simpleprdct_navmagemulti16.png)
-The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to 'T' (True) from 'F' (False).
+
+The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to 'T' (True) from 'F' (False).  
 ![simpleprdct_navmagemulti17](/staticfiles/integration/media/simpleprdct_navmagemulti17.png)
+
+**The sync flag update & WebId from magento is returned in syncback**
 
 ## Frequency of Use
 The user can execute the Integration through workflow as and when required.

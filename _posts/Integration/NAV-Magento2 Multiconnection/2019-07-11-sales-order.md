@@ -11,7 +11,7 @@ menus:
 ---
 
 Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the 
-integration process can be executed through workflow for adding sales order Magento2 (Multi-store) to Ms Dynamics NAV. 
+integration process can be executed through workflow for adding sales order from Magento2 (Multi-store) to Ms Dynamics NAV. 
 This document provides the details like the configuration process, required lookup mapping for this workflow to achieve successful sync. 
 
 ## Brief Description
@@ -20,6 +20,8 @@ This document provides the details like the configuration process, required look
 
 In this case, the `Sales Orders are placed in Magento2 and are added to MS Dynamics NAV` by syncing the `workflow for Sales Order Add`. 
 The above workflow is designed to GET Sales Orders from Magento2 and POST it to Ms Dynamics NAV.
+
+*The Prerequisite: Sync the products and the customers which are used to make sales order.**
 
 **Note: The general procedures are needed to be followed when creating an order in an Ecommerce Website. 
 Orders can also be created from Magento2 backend. [Click here](https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html) 

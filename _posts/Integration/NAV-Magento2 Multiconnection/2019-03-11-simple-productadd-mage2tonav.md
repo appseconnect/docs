@@ -10,22 +10,23 @@ menus:
         identifier: simpleproductintegration
 ---
 
-Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding
+Executing the Process is a vital part when integrating any applications. 
+This Document will let the users to understand how the integration process can be executed through workflow for adding
 Simple Product from Magento2 (Multi-store) to Ms Dynamics NAV.	
 
 
 ## Brief Description
 
-Image
+![simpleprdct_mage2tonavworkflow](/staticfiles/integration/media/simpleprdct_mage2tonavworkflow.png)
 
 In this case, the Simple Products are created in Magento2 and are added to MS Dynamics NAV by syncing the workflow for Simple Products Add. 
 The above workflow is designed to GET Simple Products from Magento2 and POST it to Ms Dynamics NAV.
 
 Note:Simple Products can be created from Magento2 backend. [Click here](https://docs.magento.com/m2/ce/user_guide/catalog/product-create-simple.html) to know more about creating the Simple Products from the admin panel of Magento2.
 
-Here the Simple Products is created for a customer whose order consists of two products `Monte Carlo Men Blue Printed Shirt`.
+Here the Simple Products is created for a customer whose order consists of two products.
 
-Image
+![simpleprdct_add_mage2tonavscreen1](/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen1.png)
 
 ## Lookup Mapping
 
@@ -39,9 +40,10 @@ see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-preb
 ## Action Filters
 
 The Action filters required to fetch the products are given in the images below:
-Image
 
-Image
+![simpleprdct_add_mage2tonavscreen2](/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen2.png)
+
+![simpleprdct_add_mage2tonavscreen3](/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen3.png)
 
 ## Executing the Workflow Integration
 
@@ -51,20 +53,21 @@ Image
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 3.	Once the Execution is finished, click Resync Button in the agent.
 4.	The Resync Panel show the Success Result in the agent
-Image
+
+![simpleprdct_add_mage2tonavscreen4](/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen4.png)
 
 ## Integration Data Survey
 
 The user can survey the data by viewing the Processed Snapshot from the node level of the workflow.
 This Snapshot View displays the successful execution of the workflow.
 
-Image
+![simpleprdct_add_mage2tonavscreen5](/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen5.png)
 
 ## Post Conditions
 
 The user can view the Simple Product synced in magento2.
 
-Image
+![simpleprdct_add_mage2tonavscreen6](/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen6.png)
 
 ## Frequency of Use
 The user can execute the Integration through workflow as and when required.

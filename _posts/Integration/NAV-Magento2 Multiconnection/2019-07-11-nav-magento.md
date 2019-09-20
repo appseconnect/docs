@@ -13,6 +13,14 @@ menus:
 This section of the document will given you an overview of **NAV- Magento2 Mutliple Connection** Integration and the subsequent chapters  will drive 
 you to the process of integration between the applications.
 
+- Here multiple connections are required (i.e two atleast).
+- User require more than one licence of APPSeCONNECT. 
+- The unique thing is that though the whole process is similar to any single NAV-Magento connection, the basic requirement to 
+  achieve this feature is that you need to have minimum of two (more than one always) individual MAGENTO templatebar 
+  URL's and only one ERP that is NAV. 
+ - The total number of Templatebar URL you have, indicates the number of connections you need to 
+  create in your organization using this NAV-Magento 2 multiple connection template.
+
 The basic pre-requisite and list of Master Data Processess for Integration is given below: 
 
 ## Prerequisites of Integration
@@ -33,17 +41,27 @@ e.	Master Data Add [Tax Class]: - All the information about the Magento Product 
             
 Once all the core information is synced, you can proceed with further integrations. 
 
+**NOTE: These processes need to be completed for each and every connection.**
+
 You will also get detailed understanding of the [NAV](/connectors/Dynamicsnav-Business-Central/) & [Magento2](/connectors/Magento2/) application agent configuration, endpoints, attibutes and actions required for integration.
 
 ## Table of Integration scenarios for NAV-Magento (Multiple Connection) Application is given below:
 
 |Integration Areas|Source & Destination Application|Dependencies for Integration|
 |---|-------------|---|
-|[Simple Product Add](/integration/simple-productadd/)|NAV-Magento2 Multi-store|Product Response Sync|
-|[Inventory Update](/integration/inventory-update/)|NAV-Magento2 Multi-store|NA|
-|[ Invoice Add ](/integration/invoice/)|NAV-Magento2 Multi-store|Payment with cheque, Payment with Bank Transfer, Payment with Cash|
-|[Sales Order Add](/integration/sales-order/)|Magento2 Multi-store - NAV|NA|
-|[Shipment Add](/integration/shipment/)|NAV-Magento2 Multi-store|NA|
+|[Simple Product Add NAV- Mage2 Multiconnection](/integration/simple-productadd/)|NAV-Magento2 Multi-store|Product Response Sync|
+|[Simple Product Update NAV-Mage2 MultiConnection](/integration/simpleprdct-update/)|NAV-Magento2 Multi-store|NA|
+|[Simple Product Add Mage2- NAV Multiconnection](/integration/simple-productadd-mage2tonav/)|NAV-Magento2 Multi-store|NA|
+|[Configurable Product Add NAV- Mage2 Multiconnection](/integration/configproduct-add/)|NAV-Magento2 Multi-store|NA|
+|[Configurable Product Update NAV- Mage2 Multiconnection](/integration/configprdt-update/)|NAV-Magento2 Multi-store|NA|
+|[Customer Add Magento2-NAV Multiconnection](/integration/customeradd-mage2tonav/)|NAV-Magento2 Multi-store|NA|
+|[Customer Add NAV- Magento2 Multiconnection](/integration/customeradd-navtomage2/)|NAV-Magento2 Multi-store|NA|
+|[Contact Person Add NAV- Magento2 Multiconnection](/integration/contactperson-add/)|NAV-Magento2 Multi-store|NA|
+[Contact Person Add/Update Magento2- NAV Multiconnection](/integration/contactperson-addupdate/)|NAV-Magento2 Multi-store|NA|
+|[Inventory Update NAV- Magento2 Multiconnection](/integration/inventory-update/)|NAV-Magento2 Multi-store|NA|
+|[Invoice Add NAV- Magento2 Multiconnection](/integration/invoice-add/)|NAV-Magento2 Multi-store|Payment with cheque, Payment with Bank Transfer, Payment with Cash|
+|[Sales Order Add Magento2-NAV Multiconnection](/integration/sales-order/)|Magento2 Multi-store - NAV|NA|
+|[Shipment Add NAV- Magento2 Multiconnection](/integration/shipment/)|NAV-Magento2 Multi-store|NA|
 
 
 
