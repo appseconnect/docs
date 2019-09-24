@@ -1987,6 +1987,42 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Authentication & Authorization of Generic REST Adapters",
+      excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 219
+    });
+    
+  
+    idx.add({
+      title: "Basic Authentication ",
+      excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 220
+    });
+    
+  
+    idx.add({
+      title: "OAuth2.0 Authentication",
+      excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 221
+    });
+    
+  
+    idx.add({
+      title: "Overview of Generic Rest Adapters",
+      excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 222
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -4407,6 +4443,50 @@ var store = [
         "title": "Add Shipment NAV-Mage2 MultiConnection",
         "url": "/integration/shipment/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Authentication & Authorization of Generic REST Adapters",
+        "url": "/connectors/Authentication-and-Authorization/",
+        "excerpt": "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Basic Authentication ",
+        "url": "/connectors/BasicAuthentication/",
+        "excerpt": "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "OAuth2.0 Authentication",
+        "url": "/connectors/OAuth2.0/",
+        "excerpt": "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of Generic Rest Adapters",
+        "url": "/connectors/Overview-of-GenericRest-Adapters/",
+        "excerpt": "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

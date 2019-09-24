@@ -726,6 +726,37 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/connectors/Overview-of-GenericRest-Adapters/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/connectors/Overview-of-GenericRest-Adapters/" onclick="selectTab('/connectors/Overview-of-GenericRest-Adapters/', event);" title="Go to REST">REST</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/BasicAuthentication/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/BasicAuthentication/" onclick="selectTab('/connectors/BasicAuthentication/', event);" title="Go to Basic Authentication">Basic Authentication</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/OAuth2.0/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/OAuth2.0/" onclick="selectTab('/connectors/OAuth2.0/', event);" title="Go to OAuth2.0 Authentication">OAuth2.0 Authentication</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Authentication-and-Authorization/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Authentication-and-Authorization/" onclick="selectTab('/connectors/Authentication-and-Authorization/', event);" title="Go to Authentication of REST Adapters">Authentication of REST Adapters</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/Overview-of-OLEDB-Adapter/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/connectors/Overview-of-OLEDB-Adapter/" onclick="selectTab('/connectors/Overview-of-OLEDB-Adapter/', event);" title="Go to Database">Database</a>
         
@@ -1942,6 +1973,11 @@ In this integration scenario, multiple connections have been made for transforma
   <li>Input the details for multiple connections that can be selected from the drop downs of the</li>
   <li>Web Product Details CP Page - Select the <code class="highlighter-rouge">ConnectionName</code>, <code class="highlighter-rouge">ApplicationName</code>, <code class="highlighter-rouge">WebAttributeSetId</code> and enable the checkbox for <code class="highlighter-rouge">WebItemFlag</code>.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti2.png" alt="simpleprdct_navmagemulti2" /></li>
+</ul>
+
+<p><strong>NOTE: The same product can be added to multiple connection by creating a new line in Web Product Details CP Page and choosing the desired connection name. Further repeat the same steps as discussed above for the newly chosen connection.</strong></p>
+
+<ul>
   <li>Web Product Websites Page - The <code class="highlighter-rouge">ConnectionName</code> &amp; the <code class="highlighter-rouge">WebsiteID</code> needs to be selected from the Drop-down.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti3.png" alt="simpleprdct_navmagemulti3" /></li>
   <li>Web ProductAttribute Page - Select the <code class="highlighter-rouge">ConnectionName</code>, <code class="highlighter-rouge">AttributeID</code> and the <code class="highlighter-rouge">AttributeOptionId</code> from the drop-down for the product that needs to be synced to Magento.<br />
@@ -1957,6 +1993,8 @@ The entire Item Card Page for the selected product (here - Schneider Circuit Bre
 </ul>
 
 <p>Click OK button on creating the Item.</p>
+
+<p><strong>NOTE: There is no need to create duplicate products in NAV to be synced in Multiple Magento.</strong></p>
 
 <h2 id="lookup-mapping">Lookup Mapping</h2>
 
@@ -2003,12 +2041,16 @@ This Snapshot View displays the successful execution of the workflow.</p>
 
 <h2 id="post-conditions">Post Conditions</h2>
 
-<p>The user can view the product (Schneider Circuit) synced in Magento2 (for the 1st  website).
+<p>The user can view the product (Schneider Circuit) synced in Magento2 (for the 1st  website).<br />
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti15.png" alt="simpleprdct_navmagemulti 15" />
-The user can view the product (Schneider Circuit) synced in the 2nd   website of Magento2.
-<img src="/staticfiles/integration/media/simpleprdct_navmagemulti16.png" alt="simpleprdct_navmagemulti16" />
-The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to ‘T’ (True) from ‘F’ (False).
+The user can view the product (Schneider Circuit) synced in the 2nd   website of Magento2.</p>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_navmagemulti16.png" alt="simpleprdct_navmagemulti16" /></p>
+
+<p>The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to ‘T’ (True) from ‘F’ (False).<br />
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti17.png" alt="simpleprdct_navmagemulti17" /></p>
+
+<p><strong>The sync flag update &amp; WebId from magento is returned in syncback</strong></p>
 
 <h2 id="frequency-of-use">Frequency of Use</h2>
 <p>The user can execute the Integration through workflow as and when required.</p>
@@ -3805,8 +3847,48 @@ The user can also go to NAV and check if the WebID has returned and the WebSyncF
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             

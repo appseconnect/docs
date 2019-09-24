@@ -726,6 +726,37 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/connectors/Overview-of-GenericRest-Adapters/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/connectors/Overview-of-GenericRest-Adapters/" onclick="selectTab('/connectors/Overview-of-GenericRest-Adapters/', event);" title="Go to REST">REST</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/connectors/BasicAuthentication/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/BasicAuthentication/" onclick="selectTab('/connectors/BasicAuthentication/', event);" title="Go to Basic Authentication">Basic Authentication</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/OAuth2.0/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/OAuth2.0/" onclick="selectTab('/connectors/OAuth2.0/', event);" title="Go to OAuth2.0 Authentication">OAuth2.0 Authentication</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Authentication-and-Authorization/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Authentication-and-Authorization/" onclick="selectTab('/connectors/Authentication-and-Authorization/', event);" title="Go to Authentication of REST Adapters">Authentication of REST Adapters</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/Overview-of-OLEDB-Adapter/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/connectors/Overview-of-OLEDB-Adapter/" onclick="selectTab('/connectors/Overview-of-OLEDB-Adapter/', event);" title="Go to Database">Database</a>
         
@@ -1901,7 +1932,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1923,6 +1954,16 @@
                 
                 <p>This section of the document will given you an overview of <strong>NAV- Magento2 Mutliple Connection</strong> Integration and the subsequent chapters  will drive 
 you to the process of integration between the applications.</p>
+
+<ul>
+  <li>Here multiple connections are required (i.e two atleast).</li>
+  <li>User require more than one licence of APPSeCONNECT.</li>
+  <li>The unique thing is that though the whole process is similar to any single NAV-Magento connection, the basic requirement to 
+achieve this feature is that you need to have minimum of two (more than one always) individual MAGENTO templatebar 
+URL’s and only one ERP that is NAV.</li>
+  <li>The total number of Templatebar URL you have, indicates the number of connections you need to 
+  create in your organization using this NAV-Magento 2 multiple connection template.</li>
+</ul>
 
 <p>The basic pre-requisite and list of Master Data Processess for Integration is given below:</p>
 
@@ -1946,6 +1987,8 @@ e.	Master Data Add [Tax Class]: - All the information about the Magento Product 
 
 <p>Once all the core information is synced, you can proceed with further integrations.</p>
 
+<p><strong>NOTE: These processes need to be completed for each and every connection.</strong></p>
+
 <p>You will also get detailed understanding of the <a href="/connectors/Dynamicsnav-Business-Central/">NAV</a> &amp; <a href="/connectors/Magento2/">Magento2</a> application agent configuration, endpoints, attibutes and actions required for integration.</p>
 
 <h2 id="table-of-integration-scenarios-for-nav-magento-multiple-connection-application-is-given-below">Table of Integration scenarios for NAV-Magento (Multiple Connection) Application is given below:</h2>
@@ -1960,27 +2003,67 @@ e.	Master Data Add [Tax Class]: - All the information about the Magento Product 
   </thead>
   <tbody>
     <tr>
-      <td><a href="/integration/simple-productadd/">Simple Product Add</a></td>
+      <td><a href="/integration/simple-productadd/">Simple Product Add NAV- Mage2 Multiconnection</a></td>
       <td>NAV-Magento2 Multi-store</td>
       <td>Product Response Sync</td>
     </tr>
     <tr>
-      <td><a href="/integration/inventory-update/">Inventory Update</a></td>
+      <td><a href="/integration/simpleprdct-update/">Simple Product Update NAV-Mage2 MultiConnection</a></td>
       <td>NAV-Magento2 Multi-store</td>
       <td>NA</td>
     </tr>
     <tr>
-      <td><a href="/integration/invoice/"> Invoice Add </a></td>
+      <td><a href="/integration/simple-productadd-mage2tonav/">Simple Product Add Mage2- NAV Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/configproduct-add/">Configurable Product Add NAV- Mage2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/configprdt-update/">Configurable Product Update NAV- Mage2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/customeradd-mage2tonav/">Customer Add Magento2-NAV Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/customeradd-navtomage2/">Customer Add NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/contactperson-add/">Contact Person Add NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/contactperson-addupdate/">Contact Person Add/Update Magento2- NAV Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/inventory-update/">Inventory Update NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/invoice-add/">Invoice Add NAV- Magento2 Multiconnection</a></td>
       <td>NAV-Magento2 Multi-store</td>
       <td>Payment with cheque, Payment with Bank Transfer, Payment with Cash</td>
     </tr>
     <tr>
-      <td><a href="/integration/sales-order/">Sales Order Add</a></td>
+      <td><a href="/integration/sales-order/">Sales Order Add Magento2-NAV Multiconnection</a></td>
       <td>Magento2 Multi-store - NAV</td>
       <td>NA</td>
     </tr>
     <tr>
-      <td><a href="/integration/shipment/">Shipment Add</a></td>
+      <td><a href="/integration/shipment/">Shipment Add NAV- Magento2 Multiconnection</a></td>
       <td>NAV-Magento2 Multi-store</td>
       <td>NA</td>
     </tr>
@@ -3777,8 +3860,48 @@ e.	Master Data Add [Tax Class]: - All the information about the Magento Product 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
