@@ -13,44 +13,99 @@ menus:
 
 ### Knowing Schema, Actions & Filters
 
-
 The user can view the schemas and the action present or can also add schema and add action for each 
 application. This section enables the user to view and add the Schema and its Actions.
 
 [Click here](/getting-started/#appseconnect-schemaentity) to know more about the Schemas.
 
+**Prerequisites**
 
+1.	The User needs to have a valid AEC account.
+2.	An application is needed to select for defining the Schemas and its Actions.
 
-**Importing schemas in APPSeCONNECT portal**
+## Adding Schemas in APPSeCONNECT Portal
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
-2.	Go to APPS Page and [Choose any application]()
-3.	Click on the + sign after adding the application and click on the Schema button
-Image
+2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)
+3.	Click on the + sign after adding the application and click on Schema (Here MS Dynamics NAV has been chosen).  
+![addingschema](/staticfiles/Transformation/media/addingschema.png)
+4. On the Schema Window the user can view the list of schemas present or can also add schemas from the ADD Schema Option.   
+![addingschema2](/staticfiles/Transformation/media/addingschema2.png)
+5. A pop-up window will appear with the following fields.
+a.	Schema Name: This is a mandatory field and it needs to be provided with the schema name
+b.	Schema Description: The description for the schema is needed to be given here.
+c.	Schema Namespace: Differentiates between two similar schemas. 
+d.	Schema Namespace URL: Differentiates between two similar schemas using URL.  
+![addingschema3](/staticfiles/Transformation/media/addingschema3.png)
+6.	Click on the create button for creating the schema.
+
+## Importing schemas in APPSeCONNECT portal
+
+1.	Login to the APPSeCONNECT Portal with valid credentials.
+2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)
+3.	Click on the + sign after adding the application and click on the Schema button  
+![importing-schema](/staticfiles/Transformation/media/importing-schema.png)
 4.	On the Schema Window the user can view the list of schemas present or can also add schemas from the ADD Schema 
-    Option and Import Schema Option. 
-Image
+    Option and Import Schema Option.   
+![importing-schema2](/staticfiles/Transformation/media/importing-schema2.png)
 5.	Clicking on the Import button, a Pop-up will appear where the user can import XML, JSON, WSDL (Web Services Description Language) 
     file for the Schema.
 •	In JSON and XML format the user needs to choose the respective XML and JSON file saved locally, but in WSDL format the user needs to provide the WSDL file link for importing the schema
-•	For generic apps, WSDL option will not be available for import to any protocol other than SOAP.
-Image
+•	For generic apps, WSDL option will not be available for import to any protocol other than SOAP.  
+![importing-schema3](/staticfiles/Transformation/media/importing-schema3.png)
 6. For the XML/JSON format, the user needs to upload the file that supports the respective formats. For XML, the user needs to 
    upload XML file and for JSON, the JSON file needs to be uploaded.
-7.	The parent node of provided in the file is needed to be provided in the ELEMENT field.
-Image
-In this case, the parent is items, therefore the Element should be items.
+7.	The parent node of provided in the file is needed to be provided in the ELEMENT field.  
+![importing-schema4](/staticfiles/Transformation/media/importing-schema4.png)  
+In this case, the parent is items, therefore the Element should be items.    
+![importing-schema5](/staticfiles/Transformation/media/importing-schema5.png)
 8.	Click on the Display button, to view all the complex object & complex object collection and its attributes. 
     Expanding the complex object & complex object collection will display all the attributes present.
-Image
-**Note:** 
-•	The user must save each node individually. There is no way the user can save it on the whole.
+![importing-schema6](/staticfiles/Transformation/media/importing-schema6.png)  
+**Note:**   
+•	The user must save each node individually. There is no way the user can save it on the whole.  
 •	This process is same for both the XML and JSON formats.
-9.	For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.
-Image
+9.	For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.  
+![importing-schema7](/staticfiles/Transformation/media/importing-schema7.png)
 10.	Click on the SAVE button individually for the saving each of the nodes.
 
-**Actions**
+## Creating and Editing Schema Attributes
+
+[Click here](/getting-started/#appseconnect-attributes) to know more about the Schemas and its attributes.
+
+**Steps to create Schema attributes in APPSeCONNECT Portal** 
+
+1.	Login to the APPSeCONNECT Portal with valid credentials.
+2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)
+3.	Click on the + symbol after adding the application and click on the Schema button. The Schema Window Opens.
+4.	Click `View Attributes` button available beside every schema.  
+![adding-attribute](/staticfiles/Transformation/media/adding-attribute.png)
+5. The Schema Attributes window shows up. Click on Plus (+) button to expand the schema, for viewing the attributes.  
+![adding-attribute2](/staticfiles/Transformation/media/adding-attribute2.png)  
+ **Note: The fields Description, Namespace and Namespace URL cannot be edited after the creation of the schema.** 
+6.	On clicking any attributes, its property window will be displayed beside.  
+![adding-attribute3](/staticfiles/Transformation/media/adding-attribute3.png)  
+**Note: For Prepackaged attributes, the properties cannot be edited. However, the users can create their own attributes if required.**
+7.	Click on Plus symbol (In Bold) to add new attribute to that schema. A New Attribute will be available in the node.  
+![adding-attribute4](/staticfiles/Transformation/media/adding-attribute4.png)
+8. Click on `NewAttribute` to view the attribute properties that needs to be setup. The fields in the Property Window are:
+a.	Attribute Name: It is a mandatory field, used for providing name to the attribute
+b.	Data Type: Select the datatype from the drop-down as per the requirement. This is also a mandatory field.
+c.	Reference API: If any schema needs to be referred for the transformation, that can be referred by selecting the Schema Name from the drop-down as a reference Entity.  
+**Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.**
+d.	Tags: for providing specific tags to the attribute
+e.	Namespace Prefix: Prefix could be added for this attribute while working with namespaces.
+f.	Attribute Property: This section has 3 checkboxes -  Primary, Required, Attribute.  
+•	Primary: for allotting this attribute as the Primary Key.  
+•	Required: for making this attribute mandatory for the mapping purpose.  
+•	Attribute: To add attribute in the XSLT   
+9.	The user can view a toggle button below for allotting this attribute with the Active/Inactive status.    
+![adding-attribute5](/staticfiles/Transformation/media/adding-attribute5.png)  
+10. Click SAVE button, after all the details has been made. 
+11.	Right Click on the created attribute in the node structure, for Renaming and Deleting the attribute.
+
+
+## Actions
 
 Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter. 
 
@@ -124,17 +179,17 @@ The steps to import schemas and actions of an application is given below:
 1.	Login to the APPSeCONNECT Portal with valid credentials.
 2.  Go to APPS Page and [Choose any application](/getting-started/#choosing-application )
 3.  Click on the + sign after adding the application and click on Schema 
-    (Here MS Dynamics NAV has been choosen). 
+    (Here MS Dynamics NAV has been choosen).   
 ![Importing-SchemaAction1](/staticfiles/Transformation/media/Importing-SchemaAction1.png)
 4. On the Schema Window the user can view the list of schemas present or can also add schemas from the `ADD Schema` Option.
 ![Importing-SchemaAction2](/staticfiles/Transformation/media/Importing-SchemaAction2.png)
 5.	The Actions inside a schema can be viewed by clicking on the + sign. 
 ![Importing-SchemaAction3](/staticfiles/Transformation/media/Importing-SchemaAction3.png)
 6.	Click on the `ADD ACTION` button for providing Actions in the schema level. 
-    Input the **Action Name** and the **Action Description**. The user can view the ACTION window below.
+    Input the **Action Name** and the **Action Description**. The user can view the ACTION window below.  
 ![Importing-SchemaAction4](/staticfiles/Transformation/media/Importing-SchemaAction4.png)
-7. Expand the nodes for viewing the Action Filters and the Resync Filters. Right Click on the Action Filter node to create its filters.
-**NOTE: Save the Action Name and the Description before creating action filters.**
+7. Expand the nodes for viewing the Action Filters and the Resync Filters. Right Click on the Action Filter node to create its filters.  
+**NOTE: Save the Action Name and the Description before creating action filters.**  
 ![Importing-SchemaAction5](/staticfiles/Transformation/media/Importing-SchemaAction5.png)
 8.	Edit the name of the Action Filter node and input the details in the fields REQUEST, OPERATOR, and the VALUE.
 9.	Similarly, for RESYNC Filter, Right Click to create its filter. Edit the Name, and input the details for the field REQUEST, OPERATOR and the VALUE.

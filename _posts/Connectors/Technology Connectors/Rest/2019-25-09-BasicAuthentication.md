@@ -11,7 +11,8 @@ menus:
         title: "Basic Authentication"
         identifier: basicauthentication
 ---
-# Process to Configure Basic Authentication in Generic Rest Adapter
+## Process to Configure Basic Authentication in Generic Rest Adapter
+
 To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
 
 1. Login to APPSeCONNECT Portal and choose the desired application (Rest Supported Application).
