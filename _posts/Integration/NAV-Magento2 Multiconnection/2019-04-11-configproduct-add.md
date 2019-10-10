@@ -33,7 +33,9 @@ As a pre-requisite, the user needs to create and sync the Simple Products first 
 
 **Note: The `AttributeId` can be opted from the drop-down only when the `WebAttributeSetId` is selected from the Web Product Details CP page. 
         The `AttributeOptionId` can be opted when the `AttributeId` is selected.** 
-        AttributeOptionId is always blank in Configurable product.  
+        `AttributeOptionId` needs to be kept blank. `WebAttributeSetId` and `AttributeId` needs to be same as that the 
+        child items (which will be added in the section WebProductChildDetails of the Item card) of this new configurable 
+        product which are already been synced as simple products.
 * In the **WebProductChildDetails** page select the `ChildItemNo and the ConnectionName` from the drop-down options.  
 **Note** : The `AttributeId` can be opted from the dropdown only when the `WebAttributeSetId` is selected from the Web Product Details CP page. 
            The `AttributeOptionId` needs to be kept blank. `WebAttributeSetId` and `AttributeId` needs to be same as that the child items 

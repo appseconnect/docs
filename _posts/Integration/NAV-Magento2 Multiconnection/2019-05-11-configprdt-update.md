@@ -29,7 +29,7 @@ For updating Configurable products from Ms Dynamics NAV to Magento2 (Multistore)
 * Updates in Web ProductAttribute Page: No changes required in this section.AttributeOptionId is always blank in Configurable product.
 * Updates in Web ProductCategory Page: The user will be able to modify/update the CategoryId of the product in this page. Also the `AttributeOptionId` is `always 
   blank in Configurable product`.
-* Updates in the Web Product Child Details Page: The user be able to modify/update the ChildItem.
+* Updates in the Web Product Child Details Page: You can add new child items (belonging to the same Attribute set as that of the configurable) and remove the existing child item.
 * The changes in the AEC Application Item list will be modified as per the changes in the Web Product Details CP Page.
 
 On completion of the process click OK button. The entire `ItemCard` for this Configurable product is given below.
