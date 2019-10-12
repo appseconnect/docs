@@ -746,6 +746,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/connectors/Filters-for-Integration/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Filters-for-Integration/" onclick="selectTab('/connectors/Filters-for-Integration/', event);" title="Go to Using Filters for Integration">Using Filters for Integration</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/Authentication-and-Authorization/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/Authentication-and-Authorization/" onclick="selectTab('/connectors/Authentication-and-Authorization/', event);" title="Go to Authentication of REST Adapters">Authentication of REST Adapters</a>
         
@@ -846,6 +852,12 @@
     
     <li class="menu-item-" data-url="/workflow/attribute-mapping-workflow/" data-jstree='{"icon":"fa fa-link"}'>
         <a href="/workflow/attribute-mapping-workflow/" onclick="selectTab('/workflow/attribute-mapping-workflow/', event);" title="Go to Attribute Mapping of workflow">Attribute Mapping of workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/resuming%20workflows/resuming-workflows/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/resuming%20workflows/resuming-workflows/" onclick="selectTab('/resuming%20workflows/resuming-workflows/', event);" title="Go to Resuming Workflows">Resuming Workflows</a>
         
     </li>
     
@@ -1029,6 +1041,12 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/workflow/basic-workflow-customer-download/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/basic-workflow-customer-download/" onclick="selectTab('/workflow/basic-workflow-customer-download/', event);" title="Go to Basic Workflow for Customer Downloading">Basic Workflow for Customer Downloading</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/workflow/delay-execution-in-workflow/" data-jstree='{"icon":"fa fa-link"}'>
         <a href="/workflow/delay-execution-in-workflow/" onclick="selectTab('/workflow/delay-execution-in-workflow/', event);" title="Go to Workflow  with delay execution filter">Workflow  with delay execution filter</a>
         
@@ -1071,8 +1089,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/workflow/basic-workflow-customer-download/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/basic-workflow-customer-download/" onclick="selectTab('/workflow/basic-workflow-customer-download/', event);" title="Go to Basic Workflow for Customer Downloading">Basic Workflow for Customer Downloading</a>
+    <li class="menu-item-" data-url="/workflow/workflow-showing-resume-functionality/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Determining the functionality of Resuming Workflow">Determining the functionality of Resuming Workflow</a>
         
     </li>
     
@@ -1944,21 +1962,39 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#process-to-configure-oauth20-in-generic-rest-adapter">Process to Configure OAuth2.0 in Generic Rest Adapter</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                <h1 id="process-to-configure-oauth20-in-generic-rest-adapter">Process to Configure OAuth2.0 in Generic Rest Adapter</h1>
+                <h2 id="process-to-configure-oauth20-in-generic-rest-adapter">Process to Configure OAuth2.0 in Generic Rest Adapter</h2>
 
 <p>To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the steps given below:</p>
 
-<p>Login to APPSeCONNECT Portal and choose the desired application (Rest Supported Application).
-Create Connection between the application.</p>
+<ol>
+  <li><a href="https://docs.appseconnect.com/">Login to APPSeCONNECT Portal</a> and choose the desired application (Rest Supported Application).</li>
+  <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Technology Application</a> using generic rest adapter. Choose <code class="highlighter-rouge">REST</code> option while creating technology application for REST based protocol.</li>
+  <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Connection</a> between the application.</li>
+</ol>
 
-<p class="notice--info"><strong>Protip:</strong> Here you will get a connection for Hubspot (which supports OAUTH 2.0 for authentication) where you can view the validation
+<p class="notice--info"><strong>Protip:</strong> You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
+ Also you need to click <code class="highlighter-rouge">Configure Connector</code> button for creating connection as your desired connection is made of custom application.</p>
+
+<p class="notice--info"><strong>Protip:</strong> Here you will get a connection for lightspeed (which supports OAUTH 2.0 for authentication) where you can view the validation
 details as required</p>
-<p>Go to the App Configuration page on your OP Agent, provide the details after selecting OAUTH2.0 from Authentication Type.<br />
-Provide the Authentication Credential and the Base URL.</p>
+
+<p>Once the connection is created, Login to the agent.    <br />
+Go to the App Configuration page on your OP Agent, and Click on Update Configuration.<br />
+You can now view the chosen applications in your agent. Here <strong>LIGHTSPEED is OAUTH 2.0 supported Application</strong>,</p>
+
+<p><img src="/staticfiles/connectors/media/technology-connector/Rest-Outh2.0Authentation-Screen1.png" alt="Rest-Outh2.0Authentation-Screen1" /></p>
+
+<p><img src="/staticfiles/connectors/media/technology-connector/Rest-Outh2.0Authentation-Screen2.png" alt="Rest-Outh2.0Authentation-Screen2" /></p>
+
+<p><img src="/staticfiles/connectors/media/technology-connector/Rest-Outh2.0Authentation-Screen3.png" alt="Rest-Outh2.0Authentation-Screen3" /></p>
+
+<p>Provide the Authentication Credential and the Base URL.</p>
 
 <p>The Authentication fields for OAUTH 2.0 are:</p>
 <ul>
@@ -1975,12 +2011,17 @@ Provide the Authentication Credential and the Base URL.</p>
 <p class="notice--info"><strong>Protip:</strong> By default, SCOPE is an optional field in AEC Agent, but for some applications providing scope is mandatory, 
 you need to provide the SCOPE for those applications</p>
 
-<p>Here, we need to generate token which can be done by clicking <code class="highlighter-rouge">VALIDATE</code> button.<br />
-On clicking the Validate button, it will redirect you to the Application Specific Page where you need to login 
-with the credential that you have provided during the Account Creation.<br />
-Once, you have logged in, click on the Mail Service Provider. This will redirect you to blank page. <br />
-Make sure that you do not close the blank page. Once done, click on Generate Token on your OP agent.<br />
-Select the Content-Type as JSON. Click on Validate and SAVE.</p>
+<p>Here, we need to generate token which can be done by clicking <code class="highlighter-rouge">VALIDATE</code> button.</p>
+
+<p><img src="/staticfiles/connectors/media/technology-connector/Rest-Outh2.0Authentation-Screen4.png" alt="Rest-Outh2.0Authentation-Screen4" /></p>
+
+<ul>
+  <li>On clicking the Validate button, it will redirect you to the Application Specific Page where you need to login 
+with the credential that you have provided during the Account Creation.</li>
+  <li>Once, you have logged in, click on the Mail Service Provider. This will redirect you to blank page.</li>
+  <li>Make sure that you do not close the blank page. Once done, click on Generate Token on your OP agent.</li>
+  <li>Select the Content-Type as JSON. Click on Validate and SAVE.</li>
+</ul>
 
 <p class="notice--info"><strong>Protip:</strong>  Similarly, for the other Authorization Type for REST APPLICATION as well, we have similar process of integration</p>
 
@@ -3805,8 +3846,43 @@ Select the Content-Type as JSON. Click on Validate and SAVE.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/Filters-for-Integration/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Using Filters for Integration
+                                </a>
+                            </li>
                             
                             
                             
@@ -3908,12 +3984,7 @@ Select the Content-Type as JSON. Click on Validate and SAVE.</p>
                             
                             
                             
-                            <li>
-                                <a href="/connectors/generic-nav2017-mutliconnectionextension/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Generic NAV 2017 MultiConnection Extension
-                                </a>
-                            </li>
+                            
                             
                             
                             
