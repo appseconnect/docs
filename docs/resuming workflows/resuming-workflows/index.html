@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow. Scenario may happen that Workflow can stop accidently due to system dependencies. Therefore, in this case user initially had to restart the workflow.Workflow in APPSeCONNECT introduces the concept of Resuming Workflow wherein, when a workflow execution (executed through Autosync) gets stopped midway because of the system dependability, the user doesnt need to restart the workflow instead the workflow would resume from the node it stopped.">
+<meta name="description" content="Functionality of Resuming Workflows">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow. Scenario may happen that Workflow can stop accidently due to system dependencies. Therefore, in this case user initially had to restart the workflow.Workflow in APPSeCONNECT introduces the concept of Resuming Workflow wherein, when a workflow execution (executed through Autosync) gets stopped midway because of the system dependability, the user doesnt need to restart the workflow instead the workflow would resume from the node it stopped.">
+  <meta property="og:description" content="Functionality of Resuming Workflows">
 
 
 
@@ -1090,7 +1090,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/workflow-showing-resume-functionality/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Determining the functionality of Resuming Workflow">Determining the functionality of Resuming Workflow</a>
+        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Functionality of Resuming Workflow">Functionality of Resuming Workflow</a>
         
     </li>
     
@@ -1863,6 +1863,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-hourly-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-hourly-report/" onclick="selectTab('/rule/preconfigured-rule-for-hourly-report/', event);" title="Go to Pre-Configured Rule for Generation of Hourly Report">Pre-Configured Rule for Generation of Hourly Report</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
         
@@ -1881,7 +1887,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Resuming Workflows">
-        <meta itemprop="description" content="Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow. Scenario may happen that Workflow can stop accidently due to system dependencies. Therefore, in this case user initially had to restart the workflow.Workflow in APPSeCONNECT introduces the concept of Resuming Workflow wherein, when a workflow execution (executed through Autosync) gets stopped midway because of the system dependability, the user doesnt need to restart the workflow instead the workflow would resume from the node it stopped.">
+        <meta itemprop="description" content="Functionality of Resuming Workflows">
         <meta itemprop="datePublished" content="September 22, 2018">
         
 
@@ -1962,16 +1968,21 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#functionality-of-resuming-workflows">Functionality of Resuming Workflows</a></li>
+  <li><a href="#reasons-for-the-workflow-haltstoppage">Reasons for the workflow halt/stoppage</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                <p>Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow. 
+                <h2 id="functionality-of-resuming-workflows">Functionality of Resuming Workflows</h2>
+
+<p>Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow. 
 Scenario may happen that Workflow can stop accidently due to system dependencies. Therefore, in this case user initially had to restart the workflow.
 Workflow in APPSeCONNECT introduces the concept of Resuming Workflow wherein, when a workflow execution (executed through Autosync) gets stopped 
 midway because of the system dependability, the user doesnt need to restart the workflow instead the workflow would resume from the node it stopped.</p>
 
-<p><strong>The workflow may stop due to these possible situations:</strong></p>
+<h2 id="reasons-for-the-workflow-haltstoppage">Reasons for the workflow halt/stoppage</h2>
 
 <ol>
   <li>APPSeCONNECT has a threshold amount (15 number of workflows approx. can run together simultaneously), wherein the number of workflows 
@@ -1979,6 +1990,8 @@ above the threshold level will not be executed even after starting. Therefore th
   <li>On the execution of workflow, two system services of APPSeCONNECT are on process in the background, which when stopped will stop the execution 
 of the workflow.</li>
 </ol>
+
+<p>To know about the process of resuming workflows, <a href="/workflow/workflow-showing-resume-functionality/">Click here</a></p>
 
 
                 
@@ -3826,8 +3839,18 @@ of the workflow.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Process to Configure OAuth2.0 in Generic Rest Adapter">
+<meta name="description" content="Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Process to Configure OAuth2.0 in Generic Rest Adapter">
+  <meta property="og:description" content="Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise">
 
 
 
@@ -1090,7 +1090,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/workflow-showing-resume-functionality/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Determining the functionality of Resuming Workflow">Determining the functionality of Resuming Workflow</a>
+        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Functionality of Resuming Workflow">Functionality of Resuming Workflow</a>
         
     </li>
     
@@ -1863,6 +1863,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-hourly-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-hourly-report/" onclick="selectTab('/rule/preconfigured-rule-for-hourly-report/', event);" title="Go to Pre-Configured Rule for Generation of Hourly Report">Pre-Configured Rule for Generation of Hourly Report</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
         
@@ -1881,7 +1887,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="OAuth2.0 Authentication">
-        <meta itemprop="description" content="Process to Configure OAuth2.0 in Generic Rest Adapter">
+        <meta itemprop="description" content="Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise">
         <meta itemprop="datePublished" content="September 20, 2019">
         
 
@@ -1950,7 +1956,7 @@
 
 
 
-  1 minute read
+  4 minute read
 </p>
                 
                 
@@ -1963,12 +1969,13 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#process-to-configure-oauth20-in-generic-rest-adapter">Process to Configure OAuth2.0 in Generic Rest Adapter</a></li>
+  <li><a href="#process-to-configure-oauth20-in-generic-rest-adapter---on-premise">Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise</a></li>
+  <li><a href="#process-to-configure-oauth20-in-generic-rest-adapter---cloud">Process to Configure OAuth2.0 in Generic Rest Adapter - Cloud</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <h2 id="process-to-configure-oauth20-in-generic-rest-adapter">Process to Configure OAuth2.0 in Generic Rest Adapter</h2>
+                <h2 id="process-to-configure-oauth20-in-generic-rest-adapter---on-premise">Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise</h2>
 
 <p>To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the steps given below:</p>
 
@@ -2024,6 +2031,57 @@ with the credential that you have provided during the Account Creation.</li>
 </ul>
 
 <p class="notice--info"><strong>Protip:</strong>  Similarly, for the other Authorization Type for REST APPLICATION as well, we have similar process of integration</p>
+
+<h2 id="process-to-configure-oauth20-in-generic-rest-adapter---cloud">Process to Configure OAuth2.0 in Generic Rest Adapter - Cloud</h2>
+
+<p>Follow the steps given below to configure Oauth 2.0 in Generic Rest Adapter in Cloud Enviornment.</p>
+
+<ol>
+  <li><a href="https://docs.appseconnect.com/">Login to APPSeCONNECT Portal</a> and choose the desired application (Rest Supported Application).</li>
+  <li><a href="/getting-started/#b-technology-app-creation">Create Technology Application</a> using generic rest adapter. Choose <code class="highlighter-rouge">REST</code> option while creating technology application for REST based protocol.</li>
+  <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Connection</a> between the application.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
+ Also you need to click <code class="highlighter-rouge">Configure Connector</code> button for creating connection as your desired connection is made of custom application.</p>
+
+<p>Go to the <code class="highlighter-rouge">App section</code> of the portal  and you can view the selected application as shown below.
+<img src="/staticfiles/connectors/media/technology-connector/Rest-OAuth2-CloudCredential.png" alt="Rest-OAuth2-CloudCredential" />    <br />
+ Click Credential button for the choosen application and the following screen appears
+<img src="/staticfiles/connectors/media/technology-connector/Rest-OAuth2-CloudCredential2.png" alt="Rest-OAuth2-CloudCredential2" />  <br />
+<img src="/staticfiles/connectors/media/technology-connector/Rest-OAuth2-CloudCredential3.png" alt="Rest-OAuth2-CloudCredential3" />    <br />
+Here you need to enter the following details as shown:</p>
+<ul>
+  <li>Credential Name: Enter the Credential Name.</li>
+  <li>URL: This is the base URL, input the URL</li>
+  <li>Key &amp; Value: This is the content type section that includes the file format types like XML, JSON.
+Input the value from the drop down list of content type field.</li>
+  <li>Authorization: Select OAuth 2.0 from the drop down list.</li>
+  <li>Client Id: This is generated when the client logs into the Application. Input the Client Id.</li>
+  <li>Auth URL: This URL is generated along with the Client ID and Client Secret in the REST application itself. Input the Auth URL</li>
+  <li>Callback URL: This is the secondary URL required for data restoration.</li>
+  <li>Access Token URL: An Access Token is a credential that can be used by an application to access an API. They inform the API that the 
+bearer of the token has been authorized to access the API and perform specific actions specified by the scope that has been granted.</li>
+  <li>Client Secret: This field is also generated by the REST supported Application.</li>
+  <li>Scope (Optional)</li>
+  <li>Grant Type: This is the Authorization Code</li>
+  <li>Access Type (optional)</li>
+</ul>
+
+<p>Click Grant button, to authorize the application.</p>
+
+<p>You will get success message for Oauth2.0 saying <strong>Tokens Generated</strong> when both <code class="highlighter-rouge">Access and Refresh Tokens</code> are generated.</p>
+
+<p>Now this will take you to the login page of the application.</p>
+
+<p>Provide the login credentials. This will thereby allow you to access the application with a pop up message as shown below<br />
+<img src="/staticfiles/connectors/media/technology-connector/Oauth2-Rest-access_authorization.png" alt="Oauth2-Rest-access_authorization" /></p>
+
+<p>Click Save button, to Save the Credential.</p>
+
+<p>If the Authorization fails, you will get a failure message saying <strong>Failed to create tokens</strong></p>
+
+<p class="notice--info"><strong>Protip:</strong>  In Rest Based Integration for Cloud Connection Use Portal URL as Call back URL</p>
 
                 
             </section>
@@ -3870,6 +3928,14 @@ with the credential that you have provided during the Account Creation.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -3918,6 +3984,8 @@ with the credential that you have provided during the Account Creation.</li>
                                     Authentication & Authorization of Generic REST Adapters
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

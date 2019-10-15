@@ -3,7 +3,7 @@ title: "Authentication & Authorization of Generic REST Adapters"
 toc: true
 tag: developers
 category: "Connectors"
-weight: 7
+weight: 6
 menus: 
     resttechnology:
         icon: fa fa-gg
@@ -36,5 +36,4 @@ Rest Supported Authentication type details are given below:
 |---|---------|
 |[NoAuth Authentication]()|This authentication type disables the authorization check if the server processes are running on the local system. |
 |[Basic Authentication](/connectors/BasicAuthentication/)|This type deals with Basic HTTP Authentication consisting of a Username and Password.|
-|[OAuth 1.0 Authentication]()|This type of authentication enables websites or applications to access encrypted resources from a web service.|
 |[OAuth 2.0 Authentication](/connectors/OAuth2.0/)|This type of authentication is the industry-standard protocol for authorization. OAuth 2.0 focuses on providing specific authorization flows for web applications.|

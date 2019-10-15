@@ -504,7 +504,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Resuming Workflows",
-      excerpt: "Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow....",
+      excerpt: "Functionality of Resuming Workflows Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done...",
       categories: ["Resuming Workflows"],
       tags: ["developers"],
       id: 54
@@ -791,8 +791,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Determining the functionality of Resuming Workflow",
-      excerpt: "Basic Workflow Implementation for determining the functionality of Resuming Workflow Use Case Name Basic Workflow Implementation for determining Resumable Workflow...",
+      title: "Functionality of Resuming Workflow",
+      excerpt: "Use Case Name Basic Workflow Implementation for determining Resumable Workflow Brief Description This is a basic workflow implemented for the...",
       categories: ["Workflow"],
       tags: ["developers","usecases"],
       id: 86
@@ -1943,16 +1943,16 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Contact Person Add NAV to Magento 2(Multiconnection)",
-      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
+      title: "Pre-Configured Rule for Generation of Hourly Report",
+      excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
+      categories: ["Rule"],
       tags: ["developers"],
       id: 214
     });
     
   
     idx.add({
-      title: "Contact Person Add/ Update Mage2 multistore to NAV",
+      title: "Contact Person Add NAV to Magento 2(Multiconnection)",
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1961,8 +1961,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Inventory Update NAV-Mage2 Multiconnection",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      title: "Contact Person Add/ Update Mage2 multistore to NAV",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 216
@@ -1970,7 +1970,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Add Invoice NAV-Mage2 Multiconnection",
+      title: "Inventory Update NAV-Mage2 Multiconnection",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1979,11 +1979,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Add Invoice NAV-Mage2 Multiconnection",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 218
+    });
+    
+  
+    idx.add({
       title: "NAV-Magento 2 Multiple Connection",
       excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 218
+      id: 219
     });
     
   
@@ -1992,7 +2001,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 219
+      id: 220
     });
     
   
@@ -2001,7 +2010,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 220
+      id: 221
     });
     
   
@@ -2010,25 +2019,25 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 221
-    });
-    
-  
-    idx.add({
-      title: "Basic Authentication ",
-      excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
-      categories: ["Connectors"],
-      tags: ["developers"],
       id: 222
     });
     
   
     idx.add({
-      title: "OAuth2.0 Authentication",
-      excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
+      title: "Basic Authentication ",
+      excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 223
+    });
+    
+  
+    idx.add({
+      title: "OAuth2.0 Authentication",
+      excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 224
     });
     
   
@@ -2037,7 +2046,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 224
+      id: 225
     });
     
   
@@ -2046,7 +2055,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 225
+      id: 226
     });
     
   
@@ -2665,7 +2674,7 @@ var store = [
       {
         "title": "Resuming Workflows",
         "url": "/resuming%20workflows/resuming-workflows/",
-        "excerpt": "Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done by executing the workflow....",
+        "excerpt": "Functionality of Resuming Workflows Executing the process is a vital part when integrating any applications. With APPSeCONNECT, integrations are done...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3015,9 +3024,9 @@ var store = [
     
       
       {
-        "title": "Determining the functionality of Resuming Workflow",
+        "title": "Functionality of Resuming Workflow",
         "url": "/workflow/workflow-showing-resume-functionality/",
-        "excerpt": "Basic Workflow Implementation for determining the functionality of Resuming Workflow Use Case Name Basic Workflow Implementation for determining Resumable Workflow...",
+        "excerpt": "Use Case Name Basic Workflow Implementation for determining Resumable Workflow Brief Description This is a basic workflow implemented for the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4423,6 +4432,17 @@ var store = [
     
       
       {
+        "title": "Pre-Configured Rule for Generation of Hourly Report",
+        "url": "/rule/preconfigured-rule-for-hourly-report/",
+        "excerpt": "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Contact Person Add NAV to Magento 2(Multiconnection)",
         "url": "/integration/contactperson-add/",
         "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
@@ -4513,7 +4533,7 @@ var store = [
       {
         "title": "Basic Authentication ",
         "url": "/connectors/BasicAuthentication/",
-        "excerpt": "Process to Configure Basic Authentication in Generic Rest Adapter To configure the Basic Authentication Type for Generic Rest Adapter follow...",
+        "excerpt": "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4524,7 +4544,7 @@ var store = [
       {
         "title": "OAuth2.0 Authentication",
         "url": "/connectors/OAuth2.0/",
-        "excerpt": "Process to Configure OAuth2.0 in Generic Rest Adapter To configure the OAuth2.0 Authentication type for Generic Rest Adapter follow the...",
+        "excerpt": "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

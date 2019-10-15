@@ -29,7 +29,6 @@ The REST adapter supports a number of [authentication](/connectors/Authenticatio
 
 - [No Auth]()
 - [Basic Auth](/connectors/BasicAuthentication/)
-- [OAuth 1.0]()
 - [OAuth 2.0](/connectors/OAuth2.0/)
 
 ## Rest Protocol Supported Applications

@@ -15,10 +15,10 @@ Users can define Filters for integration scenario as per business requirements f
 This section of the document provide details of these filters and steps on how to initialize these filters.
 
 ## Pre-requisites
-Require Valid APPSeCONNECT account.
-1) Create REST based Connection & [validate the connection](/connectors/BasicAuthentication/).
-2) [Create Workflow](/workflow/steps-to-create-your-first-workflow/)
-3) [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint)for the required connection.
+Require Valid APPSeCONNECT account.  
+1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)
+2) [Create Workflow](/workflow/steps-to-create-your-first-workflow/)  
+3) [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) for the required connection  .
 
 **Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged**
 
@@ -71,6 +71,30 @@ Click on the Action Filter Tab, to define the action for the GET node.
 * Body - Not Applicable here.
 
 Now you have successfully defined the action filter for `GET Operation` supporting REST protocol.
+
+## Defining Error Filters for Get Operation
+
+Error filters are defined in GET Operations to resync any failed data during integration.
+
+1. Click resync filter, option to define error filter for GET Operation.
+2. The following screen appears
+![rest_get_errorfilter](/staticfiles/connectors/media/technology-connector/rest_get_errorfilter.png)   
+3. Select the HTTP method as - GET & Content Type - application/xml
+3. Now Go to the `Resource Path` option under Rest Schema to define the Error Filter as shown in the screen given below
+4. Enter the Key - This is the combination of the `endpoint name` and `$` which is the Record ID.
+5. Value field remains empty.
+6. Click Save once done.
+
+Under the parameter section, the value for `key` is available in respective application of API doccumentation. 
+If the relationship between key and value is not `=`, then the `value` must be declared in the `key`
+section itself and the `value` must be kept blank.
+
+Here in the example, the relationship between key and value is `>`, the 
+value for key is `createTime>~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~`
+
+![rest-resync-filter-parameters](/staticfiles/connectors/media/technology-connector/rest-resync-filter-parameters.png)   
+
+**Note: For any XML & JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:`customers/$.xml`**
 
 ### For POST Operation
 

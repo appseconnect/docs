@@ -32,6 +32,29 @@ The basic pre-requisite and list of Master Data Processess for Integration is gi
 4.	Before Integrating with [Dynamics NAV]() and [Magento2](/connectors/Magento2/), all the master data needs to be synced. Master Data Sync is used 
     for synchronizing set of core information (viz. Websites, Product Category, Attribute set, and Tax Class etc.) from E-commerce database to SAP B1.
 
+## List of Mandatory Tables with Connection ID & Connection Name fields
+
+* AEC Application Customer
+* AEC Application Item
+* AEC Order header details
+* AEC Contact Details
+* AEC Customer Details
+* AEC Ship to Address
+* AEC Shipment Invoice Sync
+* AEC Shipment Line
+* Web Product Website 
+* Web Product Attribute
+* Web Product Category
+* Web Product Details
+* Web Product Child details
+* All related Master Tables
+
+**Note: Web Product Details CP Page should be list type page**
+
+The view of Web Product Details CP Page is given below for quick reference
+
+![webproduct-detailpage](/staticfiles/integration/media/webproduct-detailpage.png)  
+
 ## List of Master Data Processes
 
 a.	Master Data Add [Attribute Sets/Attributes/Attribute Options]: - All the information about the Attribute Sets, Attributes and Attribute Options in Magento (multi webstore) will be synced into NAV.                       

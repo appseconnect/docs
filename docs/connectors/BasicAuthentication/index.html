@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Process to Configure Basic Authentication in Generic Rest AdapterTo configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:">
+<meta name="description" content="Process to Configure Basic Authentication in Generic Rest Adapter - On PremiseTo configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Process to Configure Basic Authentication in Generic Rest AdapterTo configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:">
+  <meta property="og:description" content="Process to Configure Basic Authentication in Generic Rest Adapter - On PremiseTo configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:">
 
 
 
@@ -1090,7 +1090,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/workflow-showing-resume-functionality/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Determining the functionality of Resuming Workflow">Determining the functionality of Resuming Workflow</a>
+        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Functionality of Resuming Workflow">Functionality of Resuming Workflow</a>
         
     </li>
     
@@ -1863,6 +1863,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-hourly-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-hourly-report/" onclick="selectTab('/rule/preconfigured-rule-for-hourly-report/', event);" title="Go to Pre-Configured Rule for Generation of Hourly Report">Pre-Configured Rule for Generation of Hourly Report</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
         
@@ -1881,7 +1887,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Basic Authentication">
-        <meta itemprop="description" content="Process to Configure Basic Authentication in Generic Rest AdapterTo configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:">
+        <meta itemprop="description" content="Process to Configure Basic Authentication in Generic Rest Adapter - On PremiseTo configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:">
         <meta itemprop="datePublished" content="September 20, 2019">
         
 
@@ -1950,7 +1956,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -1966,12 +1972,12 @@
                     </nav>
                 </aside>
                 
-                <h1 id="process-to-configure-basic-authentication-in-generic-rest-adapter">Process to Configure Basic Authentication in Generic Rest Adapter</h1>
+                <h1 id="process-to-configure-basic-authentication-in-generic-rest-adapter---on-premise">Process to Configure Basic Authentication in Generic Rest Adapter - On Premise</h1>
 <p>To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:</p>
 
 <ol>
   <li><a href="https://docs.appseconnect.com/">Login to APPSeCONNECT Portal</a> and choose the desired application (Rest Supported Application).</li>
-  <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Technology Application</a> using generic rest adapter. Choose <code class="highlighter-rouge">REST</code> option while creating technology application for REST based protocol.</li>
+  <li><a href="/getting-started/#b-technology-app-creation">Create Technology Application</a> using generic rest adapter. Choose <code class="highlighter-rouge">REST</code> option while creating technology application for REST based protocol.</li>
   <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Connection</a> between the application.</li>
 </ol>
 
@@ -1996,7 +2002,7 @@ You can now view the chosen applications in your agent. Here <strong>SHOPIFY is 
 <ul>
   <li>URL - The URL of the server to connect to. This can be an http or https address but must be URL encoded.</li>
   <li>Authentication - Identifies the secure login type.   <br />
-a) None — No login information in required.  <br />
+a) No Auth — No login information in required.  <br />
 b) Basic — Basic uses base64 encoding. Because user passwords are not encrypted and the target server is not authenticated, Basic is not a secure authentication.  <br />
 c) OAuth 2.0 - OAuth 2.0 is the industry-standard protocol for authorization. The OAuth 2.0 authorization framework enables a third-party
  application to obtain limited access to an HTTP service, either on behalf of a resource owner, or by allowing the third-party application to 
@@ -2050,6 +2056,42 @@ SAP B1 as another application) which is not based on REST API.</p>
 <p>After the validation, the workflows are published for integration between the REST application SHOPIFY and SAP B1.    <br />
 The touchpoint is executed for the Sync Process by clicking on the START SYNC NOW button.</p>
 
+<h1 id="process-to-configure-basic-authentication-in-generic-rest-adapter---cloud">Process to Configure Basic Authentication in Generic Rest Adapter - Cloud</h1>
+
+<p>Follow the steps given below to configure Basic Auth in Generic Rest Adapter in Cloud Enviornment.</p>
+
+<ol>
+  <li><a href="https://docs.appseconnect.com/">Login to APPSeCONNECT Portal</a> and choose the desired application (Rest Supported Application).</li>
+  <li><a href="/getting-started/#b-technology-app-creation">Create Technology Application</a> using generic rest adapter. Choose <code class="highlighter-rouge">REST</code> option while creating technology application for REST based protocol.</li>
+  <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Connection</a> between the application.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
+ Also you need to click <code class="highlighter-rouge">Configure Connector</code> button for creating connection as your desired connection is made of custom application.</p>
+
+<ol>
+  <li>Go to the <code class="highlighter-rouge">App section</code> of the portal  and you can view the selected application.</li>
+  <li>Click Credential button for the choosen application and the following screen appears</li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/technology-connector/Rest-Basic-CloudCredential.png" alt="Rest-Basic-CloudCredential" /></p>
+
+<p>Here you need to enter the following details as shown:</p>
+
+<ul>
+  <li>Credential Name: Enter the Credential Name.</li>
+  <li>URL: This is the base URL, input the URL</li>
+  <li>Key &amp; Value: This is the content type section that includes the file format types like XML, JSON.
+Input the value from the drop down list of content type field.</li>
+  <li>Authorization: Select OAuth 2.0 from the drop down list.</li>
+  <li>User Name: Enter the user name</li>
+  <li>Password: Enter the password</li>
+</ul>
+
+<ol>
+  <li>Click Save button.</li>
+  <li>The Rest based cloud credentials for Basic Authentication is saved successfully.</li>
+</ol>
 
                 
             </section>
@@ -3896,6 +3938,14 @@ The touchpoint is executed for the Sync Process by clicking on the START SYNC NO
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -3944,6 +3994,8 @@ The touchpoint is executed for the Sync Process by clicking on the START SYNC NO
                                     Authentication & Authorization of Generic REST Adapters
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

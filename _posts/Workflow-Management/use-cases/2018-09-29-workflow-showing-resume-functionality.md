@@ -1,5 +1,5 @@
 ---
-title: "Determining the functionality of Resuming Workflow"
+title: "Functionality of Resuming Workflow"
 toc: true
 tag: 
     - developers
@@ -8,11 +8,9 @@ category: "Workflow"
 menus: 
     workflowusecases:
         icon: fa fa-link
-        title: "Determining the functionality of Resuming Workflow"
+        title: "Functionality of Resuming Workflow"
         identifier: workflowusecase-resumingworkflows
 ---
-
-## Basic Workflow Implementation for determining the functionality of Resuming Workflow
 
 ### Use Case Name
 Basic Workflow Implementation for determining Resumable Workflow

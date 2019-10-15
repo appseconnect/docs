@@ -3,7 +3,7 @@ title: "Basic Authentication "
 toc: true
 tag: developers
 category: "Connectors"
-weight: 6
+weight: 7
 menus: 
     resttechnology:
         icon: fa fa-gg
@@ -11,11 +11,11 @@ menus:
         title: "Basic Authentication"
         identifier: basicauthentication
 ---
-# Process to Configure Basic Authentication in Generic Rest Adapter
+# Process to Configure Basic Authentication in Generic Rest Adapter - On Premise
 To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
 
 1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/) and choose the desired application (Rest Supported Application).  
-2. [Create Technology Application](/getting-started/#creating-connection--executing-the-touchpoint) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
+2. [Create Technology Application](/getting-started/#b-technology-app-creation) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting-started/#creating-connection--executing-the-touchpoint) between the application.  
  
 **Protip:** You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
@@ -41,7 +41,7 @@ The generic rest api screen contains the following fields:
  
 * URL - The URL of the server to connect to. This can be an http or https address but must be URL encoded.    
 * Authentication - Identifies the secure login type.     
-  a) None — No login information in required.    
+  a) No Auth — No login information in required.    
   b) Basic — Basic uses base64 encoding. Because user passwords are not encrypted and the target server is not authenticated, Basic is not a secure authentication.    
   c) OAuth 2.0 - OAuth 2.0 is the industry-standard protocol for authorization. The OAuth 2.0 authorization framework enables a third-party
    application to obtain limited access to an HTTP service, either on behalf of a resource owner, or by allowing the third-party application to 
@@ -86,3 +86,32 @@ SAP B1 as another application) which is not based on REST API.
 After the validation, the workflows are published for integration between the REST application SHOPIFY and SAP B1.      
 The touchpoint is executed for the Sync Process by clicking on the START SYNC NOW button.           
        
+# Process to Configure Basic Authentication in Generic Rest Adapter - Cloud
+
+Follow the steps given below to configure Basic Auth in Generic Rest Adapter in Cloud Enviornment.
+
+1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/) and choose the desired application (Rest Supported Application).  
+2. [Create Technology Application](/getting-started/#b-technology-app-creation) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
+3. [Create Connection](/getting-started/#creating-connection--executing-the-touchpoint) between the application.    
+
+**Protip:** You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
+ Also you need to click `Configure Connector` button for creating connection as your desired connection is made of custom application.   
+ {: .notice--info}    
+
+4. Go to the `App section` of the portal  and you can view the selected application.   
+5. Click Credential button for the choosen application and the following screen appears
+
+![Rest-Basic-CloudCredential](/staticfiles/connectors/media/technology-connector/Rest-Basic-CloudCredential.png)  
+
+Here you need to enter the following details as shown: 
+
+* Credential Name: Enter the Credential Name.
+* URL: This is the base URL, input the URL 
+* Key & Value: This is the content type section that includes the file format types like XML, JSON.
+  Input the value from the drop down list of content type field.
+* Authorization: Select OAuth 2.0 from the drop down list.
+* User Name: Enter the user name
+* Password: Enter the password
+
+6. Click Save button.   
+7. The Rest based cloud credentials for Basic Authentication is saved successfully.  

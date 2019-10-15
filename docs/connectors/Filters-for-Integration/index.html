@@ -1090,7 +1090,7 @@
     
     
     <li class="menu-item-" data-url="/workflow/workflow-showing-resume-functionality/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Determining the functionality of Resuming Workflow">Determining the functionality of Resuming Workflow</a>
+        <a href="/workflow/workflow-showing-resume-functionality/" onclick="selectTab('/workflow/workflow-showing-resume-functionality/', event);" title="Go to Functionality of Resuming Workflow">Functionality of Resuming Workflow</a>
         
     </li>
     
@@ -1863,6 +1863,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-hourly-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-hourly-report/" onclick="selectTab('/rule/preconfigured-rule-for-hourly-report/', event);" title="Go to Pre-Configured Rule for Generation of Hourly Report">Pre-Configured Rule for Generation of Hourly Report</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
         
@@ -1950,7 +1956,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -1967,6 +1973,10 @@
   <li><a href="#defining-action-filters">Defining Action Filters</a>
     <ul>
       <li><a href="#for-get-operation">For GET Operation</a></li>
+    </ul>
+  </li>
+  <li><a href="#defining-error-filters-for-get-operation">Defining Error Filters for Get Operation</a>
+    <ul>
       <li><a href="#for-post-operation">For POST Operation</a></li>
     </ul>
   </li>
@@ -1978,10 +1988,10 @@
 This section of the document provide details of these filters and steps on how to initialize these filters.</p>
 
 <h2 id="pre-requisites">Pre-requisites</h2>
-<p>Require Valid APPSeCONNECT account.
-1) Create REST based Connection &amp; <a href="/connectors/BasicAuthentication/">validate the connection</a>.
-2) <a href="/workflow/steps-to-create-your-first-workflow/">Create Workflow</a>
-3) <a href="/getting-started/#steps-to-create-an-organisational-touchpoint">Create Touchpoints</a>for the required connection.</p>
+<p>Require Valid APPSeCONNECT account.<br />
+1) Create REST based Connection &amp; validate the connection either for <a href="/connectors/BasicAuthentication/">Basic</a> or <a href="/connectors/OAuth2.0/">OAuth2.0</a>
+2) <a href="/workflow/steps-to-create-your-first-workflow/">Create Workflow</a><br />
+3) <a href="/getting-started/#steps-to-create-an-organisational-touchpoint">Create Touchpoints</a> for the required connection  .</p>
 
 <p><strong>Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged</strong></p>
 
@@ -2036,6 +2046,32 @@ Parameter has two section, insert the parameter type and parameter values here. 
 </ul>
 
 <p>Now you have successfully defined the action filter for <code class="highlighter-rouge">GET Operation</code> supporting REST protocol.</p>
+
+<h2 id="defining-error-filters-for-get-operation">Defining Error Filters for Get Operation</h2>
+
+<p>Error filters are defined in GET Operations to resync any failed data during integration.</p>
+
+<ol>
+  <li>Click resync filter, option to define error filter for GET Operation.</li>
+  <li>The following screen appears
+<img src="/staticfiles/connectors/media/technology-connector/rest_get_errorfilter.png" alt="rest_get_errorfilter" /></li>
+  <li>Select the HTTP method as - GET &amp; Content Type - application/xml</li>
+  <li>Now Go to the <code class="highlighter-rouge">Resource Path</code> option under Rest Schema to define the Error Filter as shown in the screen given below</li>
+  <li>Enter the Key - This is the combination of the <code class="highlighter-rouge">endpoint name</code> and <code class="highlighter-rouge">$</code> which is the Record ID.</li>
+  <li>Value field remains empty.</li>
+  <li>Click Save once done.</li>
+</ol>
+
+<p>Under the parameter section, the value for <code class="highlighter-rouge">key</code> is available in respective application of API doccumentation. 
+If the relationship between key and value is not <code class="highlighter-rouge">=</code>, then the <code class="highlighter-rouge">value</code> must be declared in the <code class="highlighter-rouge">key</code>
+section itself and the <code class="highlighter-rouge">value</code> must be kept blank.</p>
+
+<p>Here in the example, the relationship between key and value is <code class="highlighter-rouge">&gt;</code>, the 
+value for key is <code class="highlighter-rouge">createTime&gt;~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~</code></p>
+
+<p><img src="/staticfiles/connectors/media/technology-connector/rest-resync-filter-parameters.png" alt="rest-resync-filter-parameters" /></p>
+
+<p><strong>Note: For any XML &amp; JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:<code class="highlighter-rouge">customers/$.xml</code></strong></p>
 
 <h3 id="for-post-operation">For POST Operation</h3>
 
@@ -3905,6 +3941,14 @@ The HTTP Method willbe <code class="highlighter-rouge">POST</code> here.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -3953,6 +3997,8 @@ The HTTP Method willbe <code class="highlighter-rouge">POST</code> here.</p>
                                     Authentication & Authorization of Generic REST Adapters
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
