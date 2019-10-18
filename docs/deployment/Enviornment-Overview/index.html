@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="  Environment is the area in the AEC portal where an user can configure and control the agents that are being used for that organisation.">
+<meta name="description" content="APPSeCONNECT platform enables you to create and manage multiple deployment environment for your application integration needs.As an user, you will see all your environments in a single screen where you can identify each of environment, tear down one without affecting others, manage cloud environments etc Each environment shows its status, primarily if it is reachable or not, different machine details, deployed processes, and allows you to setup behaviours.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="  Environment is the area in the AEC portal where an user can configure and control the agents that are being used for that organisation.">
+  <meta property="og:description" content="APPSeCONNECT platform enables you to create and manage multiple deployment environment for your application integration needs.As an user, you will see all your environments in a single screen where you can identify each of environment, tear down one without affecting others, manage cloud environments etc Each environment shows its status, primarily if it is reachable or not, different machine details, deployed processes, and allows you to setup behaviours.">
 
 
 
@@ -1464,6 +1464,12 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/deployment/Enviornment-Management/" data-jstree='{"icon":"fa fa-cloud-download"}'>
+        <a href="/deployment/Enviornment-Management/" onclick="selectTab('/deployment/Enviornment-Management/', event);" title="Go to Environment Management">Environment Management</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/deployment/Deployment-Configuration/" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a href="/deployment/Deployment-Configuration/" onclick="selectTab('/deployment/Deployment-Configuration/', event);" title="Go to Deployment Configuration">Deployment Configuration</a>
         
@@ -1875,6 +1881,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-morning-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/rule/preconfigured-rule-for-morning-report/" onclick="selectTab('/rule/preconfigured-rule-for-morning-report/', event);" title="Go to Pre-Configured Rule for Morning Report">Pre-Configured Rule for Morning Report</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/preconfigured-rule-for-log-bucket/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/preconfigured-rule-for-log-bucket/" onclick="selectTab('/rule/preconfigured-rule-for-log-bucket/', event);" title="Go to Pre-Configured Rule for Log Bucket">Pre-Configured Rule for Log Bucket</a>
         
@@ -1893,7 +1905,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Environment Overview">
-        <meta itemprop="description" content="  Environment is the area in the AEC portal where an user can configure and control the agents that are being used for that organisation.">
+        <meta itemprop="description" content="APPSeCONNECT platform enables you to create and manage multiple deployment environment for your application integration needs.As an user, you will see all your environments in a single screen where you can identify each of environment, tear down one without affecting others, manage cloud environments etc Each environment shows its status, primarily if it is reachable or not, different machine details, deployed processes, and allows you to setup behaviours.">
         <meta itemprop="datePublished" content="November 20, 2018">
         
 
@@ -1980,14 +1992,16 @@
                     </nav>
                 </aside>
                 
-                <ul>
-  <li>
-    <p>Environment is the area in the AEC portal where an user can configure and control the agents that are being used for that organisation.</p>
-  </li>
-  <li>
-    <p>The Environment  in the AEC Portal supports two types of agents that is the On-Premise Agent
-and The Cloud Agent which are configured and created.</p>
-  </li>
+                <p>APPSeCONNECT platform enables you to create and manage multiple deployment environment for your application integration needs.<br />
+As an user, you will see all your environments in a single screen where you can identify each of environment, 
+tear down one without affecting others, manage cloud environments etc Each environment shows its status, primarily 
+if it is reachable or not, different machine details, deployed processes, and allows you to setup behaviours.</p>
+
+<p>This feature can be useful for following scenarios:</p>
+<ul>
+  <li>Tracking Properties - User can keep track of the count and status of agents that are running across multiple environments for their organization. In addition, it will allow the user to keep track of system status where the agents are connected, its resource utilization, finding logs etc.</li>
+  <li>Managing Projects - In this screen, user can also distribute workflows in multiple environments such that we can individually identify where processes are getting executed. One thing we need to keep in mind, credentials cannot be shared between environments. You can distribute your workloads into multiple environment only when you have independent applications running</li>
+  <li>Easy classification of test and production environment</li>
 </ul>
 
 <h2 id="hybrid-integration-and-cloud-integration">Hybrid Integration and Cloud Integration</h2>
@@ -2013,6 +2027,7 @@ Deploy Adapter</strong> and do agent specific settings from the Environment Sect
 </ul>
 
 <p>Refer to the <a href="/deployment/Deployment-Configuration/">Deployment Configuration</a> section to know about the Environment Overview.</p>
+
 
                 
             </section>
@@ -3875,8 +3890,26 @@ Deploy Adapter</strong> and do agent specific settings from the Environment Sect
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -4180,6 +4213,8 @@ Deploy Adapter</strong> and do agent specific settings from the Environment Sect
                                     MYSQL Plugin
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
