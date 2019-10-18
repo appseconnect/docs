@@ -11,7 +11,7 @@ menus:
         title: "Basic Authentication"
         identifier: basicauthentication
 ---
-# Process to Configure Basic Authentication in Generic Rest Adapter - On Premise
+## Process to Configure Basic Authentication in Generic Rest Adapter - On Premise
 To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
 
 1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/) and choose the desired application (Rest Supported Application).  
@@ -90,7 +90,7 @@ The touchpoint is executed for the Sync Process by clicking on the START SYNC NO
 
 Follow the steps given below to configure Basic Auth in Generic Rest Adapter in Cloud Enviornment.
 
-1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/) and choose the desired application (Rest Supported Application).  
+1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/)  
 2. [Create Technology Application](/getting-started/#b-technology-app-creation) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting-started/#creating-connection--executing-the-touchpoint) between the application.    
 
@@ -109,9 +109,8 @@ Here you need to enter the following details as shown:
 * URL: This is the base URL, input the URL 
 * Key & Value: This is the content type section that includes the file format types like XML, JSON.
   Input the value from the drop down list of content type field.
-* Authorization: Select OAuth 2.0 from the drop down list.
+* Authorization: Select Basic Auth from the drop down list.
 * User Name: Enter the user name
-* Password: Enter the password
+* Password: This is non- mandatory fields. Some apps only use api key as username and no password is required.
 
-6. Click Save button.   
-7. The Rest based cloud credentials for Basic Authentication is saved successfully.  
+Click Save button. The Reset based `Cloud Credentials` for `Basic Authentication` is saved successfully.  

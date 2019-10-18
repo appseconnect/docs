@@ -144,6 +144,8 @@ Click on portal and this will take you the login page of  APPSeCONNECT Portal.
 5. Click `Forgot Password` option to reset the password. A mail will be sent to your (user) account. You can reset the password by clicking on the link provided in the mail and set up a new password.
 
 
+
+
 ## APPSeCONNECT Platform - Functional Menus
 
 The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
