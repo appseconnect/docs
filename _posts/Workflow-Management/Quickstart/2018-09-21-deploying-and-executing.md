@@ -48,11 +48,21 @@ If you change attribute mapping in a workflow you need to publish the workflow b
 is given below
 
 1.	After creating and saving the workflow, click `Reset Generate` Button followed by `Reset Publish`button.
-2.  Save and Refresh the window. 
 ![publish-workflow](/staticfiles/workflow-management/media/publish-workflow.png)
-3. On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
+
+The Actions column on the right side of screen consist of buttons that configures and publish the touchpoint used in the workflow.
+
+a. Preview - This button previews the XSLT for the touchpoint used in the workflow  
+b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.  
+c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.  
+d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced.   
+   The portal view for the Resync Bucket is given below.
+![resync_button](/staticfiles/workflow-management/media/resync_button.png)
+
+ On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
 user made in the APPSeCONNECT cloud` and is `compiled to a single file stored on the server` which is 
 accessible from the APPSeCONNECT Agent.
+
 ![publish-workflow2](/staticfiles/workflow-management/media/publish-workflow2.png) 
 
 ## Deploying a Workflow

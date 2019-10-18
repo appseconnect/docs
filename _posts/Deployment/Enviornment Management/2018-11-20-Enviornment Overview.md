@@ -12,10 +12,16 @@ menus:
 ---
 
 
-* Environment is the area in the AEC portal where an user can configure and control the agents that are being used for that organisation. 
+APPSeCONNECT platform enables you to create and manage multiple deployment environment for your application integration needs.  
+As an user, you will see all your environments in a single screen where you can identify each of environment, 
+tear down one without affecting others, manage cloud environments etc Each environment shows its status, primarily 
+if it is reachable or not, different machine details, deployed processes, and allows you to setup behaviours.
 
-* The Environment  in the AEC Portal supports two types of agents that is the On-Premise Agent
-and The Cloud Agent which are configured and created. 
+This feature can be useful for following scenarios:
+* Tracking Properties - User can keep track of the count and status of agents that are running across multiple environments for their organization. In addition, it will allow the user to keep track of system status where the agents are connected, its resource utilization, finding logs etc.
+* Managing Projects - In this screen, user can also distribute workflows in multiple environments such that we can individually identify where processes are getting executed. One thing we need to keep in mind, credentials cannot be shared between environments. You can distribute your workloads into multiple environment only when you have independent applications running
+* Easy classification of test and production environment
+
 
 ## Hybrid Integration and Cloud Integration
 
@@ -29,3 +35,5 @@ and The Cloud Agent which are configured and created.
   Deploy Adapter** and do agent specific settings from the Environment Section in the Cloud AEC Portal.
 
 Refer to the [Deployment Configuration](/deployment/Deployment-Configuration/) section to know about the Environment Overview.
+
+

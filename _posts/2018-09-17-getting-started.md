@@ -130,6 +130,8 @@ The steps are given below:
 3. Now you can view the technology application name, successfully added to your List of APPLICATIONS with a default Image. 
 ![TechnologyApp-Creation-Screen3](/staticfiles/root/media/TechnologyApp-Creation-Screen3.png)
 4. You can edit and add image to your app anytime, by clicking on the VIEW button beside the application name.
+5. The Connection can be done with both technology applications or one prepackaged and one technology application as shown below.
+ ![TechnologyApp-Creation-Screen4](/staticfiles/root/media/TechnologyApp-Creation-Screen4.png)
 
 **Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FTP. 
 {: .notice--info}
