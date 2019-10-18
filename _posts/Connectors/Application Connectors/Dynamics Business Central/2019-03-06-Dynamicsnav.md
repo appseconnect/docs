@@ -49,7 +49,7 @@ Call this in OnRun() and save and then Run the CodeUnit.
 
 
 
-## Configure the NAV Business Central Application in the Agent
+## Configure the NAV Business Central Application in the Agent - SOAP BASED PROTOCOL
 
 1. Login to your AEC Agent with your registered account credentials.
 2. Click on the settings button to view the Credentials page.     
@@ -62,6 +62,24 @@ Call this in OnRun() and save and then Run the CodeUnit.
 
 The above steps completes the process of configuring Agent with NAV credentials
 
+## Configure the NAV Business Central Application in the Agent - REST BASED PROTOCOL
+
+1.	Login to your AEC Agent with your registered account credentials.
+**Note: Dynamics 365 Business Central uses REST based adapter with Basic Authentication.**
+
+2.	Click on the settings button to view the Credentials page. Fill in the required details in the Credential Page
+
+![nav-config-rest1](/staticfiles/connectors/media/application-connector/nav-config-rest1.png)
+
+Click Save and Validate button.
+
+![nav-config-rest2](/staticfiles/connectors/media/application-connector/nav-config-rest2.png)
+
+The validation success message confirms that the application is configured in the agent.
+
+The above steps completes the process of configuring Agent with NAV credentials.
+
+
 ## Troubleshooting
 
 **ISSUE 1:  If the Source Application Not Found**
@@ -70,7 +88,7 @@ resolves after removing the Temp and Cache files from the portal and from your s
 For E.g. If the Source Application Not Found in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.
 
 
-## Attributes and Actions
+## Attributes and Actions  - SOAP BASED
 
 While defining a connect to an API endpoint in Microsoft Dynamic Business Central, you require clear understanding about the 
 data requirements and endpoint configurations. You can refer to this document to find all the endpoint details of your 
@@ -84,3 +102,18 @@ of some of the pre-packaged API actions defined for you which you can easily plu
 |ReadMultiple|ReadMultiple|GET|[Page/webapplicationproductdata](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=3daefc5c-d333-47a3-9d47-6ca271a296e6&entityActionId=2a65f957-51f6-4297-9624-1ca3aa2b6687&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|[Fetch products from Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-register-new-items)|[ReadMultiple](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_item_get)|
 |AECCustomerImport|AECCustomerImport|POST|[AECCustomerXMLPort](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=2e83f28c-4b66-4e2b-b9e6-005ea75dea07&entityActionId=237255f9-652d-44bf-a4ec-f2c85b35f08e&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|Post customer from source application to Business Central|[AECCustomerImport](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_create_customer)|
 |AECSimpleProductImport|AECSimpleProductImport|POST|[AECSimpleItemXmlPort](https://portal.appseconnect.com/AppEntityAction?AppVersionId=d48dff47-0896-4474-9afa-a25977dea8ad&entityId=ce524043-99ed-48e7-bd6e-46014ae88f98&entityActionId=3b8d3f26-2f6a-4a29-b48b-dd5526cd555e&orgId=d21688a4-8967-48de-ae82-31dda565ec51&IsFromPopup=False )|Post product from source application to Business Central|[AECSimpleProductImport](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_create_item)|
+
+
+## Attributes and Actions - REST BASED
+
+While defining a connect to an API endpoint in Microsoft Dynamic Business Central, you require clear understanding about the 
+data requirements and endpoint configurations. You can refer to this document to find all the endpoint details of your 
+Microsoft Dynamic Business Central installation. To define the endpoint in APPSeCONNECT, you need Actions and Entities. 
+Actions are specifically targeted for an endpoint while schema is the data needed to execute the API. Here, is the list 
+of some of the pre-packaged API actions defined for you which you can easily plug and play while doing your integrations.
+
+|Endpoint|Action|Action Type|Schema|UI Path|API Path|
+|---|---|---|---|------|
+|Items|Items|GET|[Item](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2fAppEntityAction%3fAppVersionId%3d31679011-35aa-4171-ba65-2de9be5dc369%26entityId%3dc0b9777c-f821-4e52-86ad-03ba73cf5be4%26entityActionId%3dde375e83-4ac7-4f4a-b187-a0885133c986%26orgId%3d3728fb02-8d0c-4f2d-81eb-4cf27511bb6a%26IsFromPopup%3dFalse&AppVersionId=31679011-35aa-4171-ba65-2de9be5dc369&entityId=c0b9777c-f821-4e52-86ad-03ba73cf5be4&entityActionId=de375e83-4ac7-4f4a-b187-a0885133c986&orgId=3728fb02-8d0c-4f2d-81eb-4cf27511bb6a&IsFromPopup=False#!)|[Fetch items from Dynamics 365 Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-register-new-items)|[Items](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_item_get)|
+|Items|Items|GET|[Customer](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2fAppEntityAction%3fAppVersionId%3d31679011-35aa-4171-ba65-2de9be5dc369%26entityId%3d24a7ac46-846e-43ec-980b-9d577f2eacbc%26entityActionId%3d103c5670-780c-4ab0-8df8-cfbae66b4a5e%26orgId%3d3728fb02-8d0c-4f2d-81eb-4cf27511bb6a%26IsFromPopup%3dFalse&AppVersionId=31679011-35aa-4171-ba65-2de9be5dc369&entityId=24a7ac46-846e-43ec-980b-9d577f2eacbc&entityActionId=103c5670-780c-4ab0-8df8-cfbae66b4a5e&orgId=3728fb02-8d0c-4f2d-81eb-4cf27511bb6a&IsFromPopup=False#!)|[Fetch items from Dynamics 365 Business Central and post it to the destination application](https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-register-new-customers)|[Customer](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/api/dynamics_customer_get)|
+

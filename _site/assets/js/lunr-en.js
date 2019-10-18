@@ -1610,7 +1610,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Enabling Tracking in Transformation",
+      title: "Enabling Tracking data in Transformation",
       excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
       categories: ["Transformation"],
       tags: ["developers"],
@@ -1961,11 +1961,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Pre-Configured Rule for Morning Report",
-      excerpt: "Scenario Requirement of the Rule Hourly Report Rule Event used Token used Hourly Based Sync Report ~{ReSyncBucketWithinScheduledTime(“Error”,”Skipped”)}~ Event used Token...",
+      title: "APPSeCONNECT Data Purge Policy",
+      excerpt: "IT organizations mostly struggle with data volume that accumulates and increases the overhead of operational cost. Due to the sheer...",
       categories: ["Rule"],
       tags: ["developers"],
       id: 216
+    });
+    
+  
+    idx.add({
+      title: "Default Rule for Morning Report",
+      excerpt: "Requirement of the Rule APPSeCONNECT Morning Report updates the users about the data synchronization status for each connection, on daily...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 217
     });
     
   
@@ -1974,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 217
+      id: 218
     });
     
   
@@ -1983,7 +1992,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 218
+      id: 219
     });
     
   
@@ -1992,7 +2001,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 219
+      id: 220
     });
     
   
@@ -2001,7 +2010,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 220
+      id: 221
     });
     
   
@@ -2010,7 +2019,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 221
+      id: 222
     });
     
   
@@ -2019,7 +2028,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 222
+      id: 223
     });
     
   
@@ -2028,7 +2037,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 223
+      id: 224
     });
     
   
@@ -2037,7 +2046,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 224
+      id: 225
     });
     
   
@@ -2046,7 +2055,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 225
+      id: 226
     });
     
   
@@ -2055,7 +2064,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 226
+      id: 227
     });
     
   
@@ -2064,7 +2073,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 227
+      id: 228
     });
     
   
@@ -2073,7 +2082,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 228
+      id: 229
     });
     
   
@@ -2082,7 +2091,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 229
+      id: 230
     });
     
   
@@ -4052,7 +4061,7 @@ var store = [
     
       
       {
-        "title": "Enabling Tracking in Transformation",
+        "title": "Enabling Tracking data in Transformation",
         "url": "/transformation/enable-tracking-fields/",
         "excerpt": "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
         "teaser":
@@ -4207,7 +4216,7 @@ var store = [
       
       {
         "title": "Dynamics NAV Business Central",
-        "url": "/connectors/Dynamicsnav-Business-Central/",
+        "url": "/connectors/Dynamicsnav/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
         "teaser":
           
@@ -4481,9 +4490,20 @@ var store = [
     
       
       {
-        "title": "Pre-Configured Rule for Morning Report",
-        "url": "/rule/preconfigured-rule-for-morning-report/",
-        "excerpt": "Scenario Requirement of the Rule Hourly Report Rule Event used Token used Hourly Based Sync Report ~{ReSyncBucketWithinScheduledTime(“Error”,”Skipped”)}~ Event used Token...",
+        "title": "APPSeCONNECT Data Purge Policy",
+        "url": "/rule/data-purge-policy/",
+        "excerpt": "IT organizations mostly struggle with data volume that accumulates and increases the overhead of operational cost. Due to the sheer...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Default Rule for Morning Report",
+        "url": "/rule/default-rule-for-morning-report/",
+        "excerpt": "Requirement of the Rule APPSeCONNECT Morning Report updates the users about the data synchronization status for each connection, on daily...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
