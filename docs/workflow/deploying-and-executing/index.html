@@ -752,6 +752,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/connectors/Mapping-and-Transformation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Mapping-and-Transformation/" onclick="selectTab('/connectors/Mapping-and-Transformation/', event);" title="Go to Mapping and Transformation">Mapping and Transformation</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/Authentication-and-Authorization/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/Authentication-and-Authorization/" onclick="selectTab('/connectors/Authentication-and-Authorization/', event);" title="Go to Authentication of REST Adapters">Authentication of REST Adapters</a>
         
@@ -2023,14 +2029,24 @@ depicts the End Time Occurrence.</li>
 is given below</p>
 
 <ol>
-  <li>After creating and saving the workflow, click <code class="highlighter-rouge">Reset Generate</code> Button followed by <code class="highlighter-rouge">Reset Publish</code>button.</li>
-  <li>Save and Refresh the window. 
+  <li>After creating and saving the workflow, click <code class="highlighter-rouge">Reset Generate</code> Button followed by <code class="highlighter-rouge">Reset Publish</code>button.
 <img src="/staticfiles/workflow-management/media/publish-workflow.png" alt="publish-workflow" /></li>
-  <li>On refreshing, the Publish button appears. The Publish button <code class="highlighter-rouge">publishes every configuration that  the 
-user made in the APPSeCONNECT cloud</code> and is <code class="highlighter-rouge">compiled to a single file stored on the server</code> which is 
-accessible from the APPSeCONNECT Agent.
-<img src="/staticfiles/workflow-management/media/publish-workflow2.png" alt="publish-workflow2" /></li>
 </ol>
+
+<p>The Actions column on the right side of screen consist of buttons that configures and publish the touchpoint used in the workflow.</p>
+
+<p>a. Preview - This button previews the XSLT for the touchpoint used in the workflow<br />
+b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.<br />
+c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the <code class="highlighter-rouge">Reset Publish</code> is done.<br />
+d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. <br />
+   The portal view for the Resync Bucket is given below.
+<img src="/staticfiles/workflow-management/media/resync_button.png" alt="resync_button" /></p>
+
+<p>On refreshing, the Publish button appears. The Publish button <code class="highlighter-rouge">publishes every configuration that  the 
+user made in the APPSeCONNECT cloud</code> and is <code class="highlighter-rouge">compiled to a single file stored on the server</code> which is 
+accessible from the APPSeCONNECT Agent.</p>
+
+<p><img src="/staticfiles/workflow-management/media/publish-workflow2.png" alt="publish-workflow2" /></p>
 
 <h2 id="deploying-a-workflow">Deploying a Workflow</h2>
 
@@ -3924,8 +3940,18 @@ ported in edit mode.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

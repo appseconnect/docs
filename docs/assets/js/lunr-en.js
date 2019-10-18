@@ -2059,6 +2059,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Mapping and Transformation",
+      excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 227
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -4567,6 +4576,17 @@ var store = [
         "title": "Using Filters for Integration",
         "url": "/connectors/Filters-for-Integration/",
         "excerpt": "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Mapping and Transformation",
+        "url": "/connectors/Mapping-and-Transformation/",
+        "excerpt": "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

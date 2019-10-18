@@ -752,6 +752,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/connectors/Mapping-and-Transformation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Mapping-and-Transformation/" onclick="selectTab('/connectors/Mapping-and-Transformation/', event);" title="Go to Mapping and Transformation">Mapping and Transformation</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/Authentication-and-Authorization/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/Authentication-and-Authorization/" onclick="selectTab('/connectors/Authentication-and-Authorization/', event);" title="Go to Authentication of REST Adapters">Authentication of REST Adapters</a>
         
@@ -1968,11 +1974,13 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#process-to-configure-basic-authentication-in-generic-rest-adapter---on-premise">Process to Configure Basic Authentication in Generic Rest Adapter - On Premise</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                <h1 id="process-to-configure-basic-authentication-in-generic-rest-adapter---on-premise">Process to Configure Basic Authentication in Generic Rest Adapter - On Premise</h1>
+                <h2 id="process-to-configure-basic-authentication-in-generic-rest-adapter---on-premise">Process to Configure Basic Authentication in Generic Rest Adapter - On Premise</h2>
 <p>To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:</p>
 
 <ol>
@@ -2061,7 +2069,7 @@ The touchpoint is executed for the Sync Process by clicking on the START SYNC NO
 <p>Follow the steps given below to configure Basic Auth in Generic Rest Adapter in Cloud Enviornment.</p>
 
 <ol>
-  <li><a href="https://docs.appseconnect.com/">Login to APPSeCONNECT Portal</a> and choose the desired application (Rest Supported Application).</li>
+  <li><a href="https://docs.appseconnect.com/">Login to APPSeCONNECT Portal</a></li>
   <li><a href="/getting-started/#b-technology-app-creation">Create Technology Application</a> using generic rest adapter. Choose <code class="highlighter-rouge">REST</code> option while creating technology application for REST based protocol.</li>
   <li><a href="/getting-started/#creating-connection--executing-the-touchpoint">Create Connection</a> between the application.</li>
 </ol>
@@ -2083,15 +2091,12 @@ The touchpoint is executed for the Sync Process by clicking on the START SYNC NO
   <li>URL: This is the base URL, input the URL</li>
   <li>Key &amp; Value: This is the content type section that includes the file format types like XML, JSON.
 Input the value from the drop down list of content type field.</li>
-  <li>Authorization: Select OAuth 2.0 from the drop down list.</li>
+  <li>Authorization: Select Basic Auth from the drop down list.</li>
   <li>User Name: Enter the user name</li>
-  <li>Password: Enter the password</li>
+  <li>Password: This is non- mandatory fields. Some apps only use api key as username and no password is required.</li>
 </ul>
 
-<ol>
-  <li>Click Save button.</li>
-  <li>The Rest based cloud credentials for Basic Authentication is saved successfully.</li>
-</ol>
+<p>Click Save button. The Reset based <code class="highlighter-rouge">Cloud Credentials</code> for <code class="highlighter-rouge">Basic Authentication</code> is saved successfully.</p>
 
                 
             </section>
@@ -3946,8 +3951,27 @@ Input the value from the drop down list of content type field.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/Mapping-and-Transformation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Mapping and Transformation
+                                </a>
+                            </li>
                             
                             
                             
@@ -4022,15 +4046,6 @@ Input the value from the drop down list of content type field.</li>
                             
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/Sap-Business-Addon/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    SAPB1 On-Premise Add-on 3.1.x Installation OR Upgrade
-                                </a>
-                            </li>
                             
                             
                             
