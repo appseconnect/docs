@@ -14,7 +14,7 @@ menus:
 ## Process to Configure Basic Authentication in Generic Rest Adapter - On Premise
 To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
 
-1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/) and choose the desired application (Rest Supported Application).  
+1. [Login to APPSeCONNECT Portal](https://docs.appseconnect.com/) and go to the app section to choose the desired application (Rest Supported Application).  
 2. [Create Technology Application](/getting-started/#b-technology-app-creation) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting-started/#creating-connection--executing-the-touchpoint) between the application.  
  
@@ -101,7 +101,7 @@ Follow the steps given below to configure Basic Auth in Generic Rest Adapter in 
 4. Go to the `App section` of the portal  and you can view the selected application.   
 5. Click Credential button for the choosen application and the following screen appears
 
-![Rest-Basic-CloudCredential](/staticfiles/connectors/media/technology-connector/Rest-Basic-CloudCredential.png)  
+![basic-cloud-credential](/staticfiles/connectors/media/technology-connector/basic-cloud-credential.png)  
 
 Here you need to enter the following details as shown: 
 
