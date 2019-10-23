@@ -2216,6 +2216,11 @@
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-08-generic-nav2016-extension.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-07-generic-nav2015-extension.md" />
     <None Include="_posts\Connectors\Application Connectors\Magento2\2018-12-07-Magento2.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\Troubleshooting\cannot-do-shipment.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\Troubleshooting\empty-order.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\Troubleshooting\failed-internal-error.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\Troubleshooting\order-notexist.md" />
+    <None Include="_posts\Connectors\Application Connectors\Magento2\Troubleshooting\troubleshooting.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2018-12-06-Priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-24-adding-product-in-priority.md" />
     <None Include="_posts\Connectors\Application Connectors\Priority\2019-02-25-adding-product-in-priority.md" />
