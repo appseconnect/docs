@@ -65,6 +65,13 @@ accessible from the APPSeCONNECT Agent.
 
 ![publish-workflow2](/staticfiles/workflow-management/media/publish-workflow2.png) 
 
+After Publishing and Executing the workflow, the results are displayed in the resync bucket. 
+
+* The failed data in the resync bucket will be resynced using **autosync** if the workflow is scheduled. 
+* In manual mode, the users needs to select the failed data individually from the Resync Bucket for executing resync. 
+
+**NOTE:If you change attribute mapping in a workflow, the user needs to Reset Generate and Reset Publish the workflow before deploying**
+
 ## Deploying a Workflow
 
 1. After creation and saving of the workflow, navigate to the Environments Tab. 
@@ -77,8 +84,6 @@ in the agent. The user can also click on the Update Configuration button in the 
 **Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
 and Deploy Configuration should be clicked for the agent that is being used.**
 4. After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.
-
-
 
 ## Executing the Workflow
 
