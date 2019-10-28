@@ -3,10 +3,10 @@ title: "Mapping and Transformation"
 toc: true
 tag: developers
 category: "Connectors"
-weight: 7
 menus: 
     resttechnology:
         icon: fa fa-gg
+        weight: 11
         category: "Mapping and Transformation"
         title: "Mapping and Transformation"
         identifier: restfiltersmapping

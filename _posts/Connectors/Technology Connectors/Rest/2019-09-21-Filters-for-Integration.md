@@ -3,10 +3,10 @@ title: "Using Filters for Integration"
 toc: true
 tag: developers
 category: "Connectors"
-weight: 6
 menus: 
     resttechnology:
         icon: fa fa-gg
+        weight: 10
         category: "Using Filters for Integration"
         title: "Using Filters for Integration"
         identifier: restfilters

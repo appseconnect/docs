@@ -3,10 +3,10 @@ title: "Basic Authentication "
 toc: true
 tag: developers
 category: "Connectors"
-weight: 7
 menus: 
     resttechnology:
         icon: fa fa-gg
+        weight: 8
         category: "Basic Authentication"
         title: "Basic Authentication"
         identifier: basicauthentication

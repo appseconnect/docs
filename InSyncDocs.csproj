@@ -2268,7 +2268,7 @@
     <None Include="_posts\Connectors\Technology Connectors\Rest\2019-09-20-Overview of GenericRest-Adapters.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2019-09-21-Filters-for-Integration.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2019-09-21-Mapping-and-Transformation.md" />
-    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Enviornment-Management.md" />
+    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Environment-Management.md" />
     <None Include="_posts\home.md" />
     <None Include="_posts\2018-09-17-getting-started.md" />
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
@@ -2311,7 +2311,7 @@
     <None Include="_posts\Deployment\2018-11-20- overview.md" />
     <None Include="_posts\Deployment\2018-11-20-gettingstarted-with-deployment.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Deployment Configuration.md" />
-    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Enviornment Overview.md" />
+    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Environment Overview.md" />
     <None Include="_posts\Deployment\Enviornment Management\2018-11-21-Agent Blocking and Unblocking.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-21-hana-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-23-OLE-db-plugin-installation.md" />
