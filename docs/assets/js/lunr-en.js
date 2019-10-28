@@ -2890,7 +2890,7 @@ var store = [
       
       {
         "title": "Environment Overview",
-        "url": "/deployment/Enviornment-Overview/",
+        "url": "/deployment/Environment-Overview/",
         "excerpt": "APPSeCONNECT platform enables you to create and manage multiple deployment environment for your application integration needs. As an user, you...",
         "teaser":
           
@@ -2901,7 +2901,7 @@ var store = [
       
       {
         "title": "Environment Management",
-        "url": "/deployment/Enviornment-Management/",
+        "url": "/deployment/Environment-Management/",
         "excerpt": "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
         "teaser":
           

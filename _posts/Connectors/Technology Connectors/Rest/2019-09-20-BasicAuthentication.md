@@ -3,10 +3,10 @@ title: "Basic Authentication "
 toc: true
 tag: developers
 category: "Connectors"
-weight: 7
 menus: 
     resttechnology:
         icon: fa fa-gg
+        weight: 8
         category: "Basic Authentication"
         title: "Basic Authentication"
         identifier: basicauthentication
@@ -114,3 +114,8 @@ Here you need to enter the following details as shown:
 * Password: This is non- mandatory fields. Some apps only use api key as username and no password is required.
 
 Click Save button. The Reset based `Cloud Credentials` for `Basic Authentication` is saved successfully.  
+
+
+**Protip:**  By default, organisations will only be On-Premise enabled. Users of the organisation needs to  contact the APPSeCONNECT team 
+for enabling cloud hosted organisation so that users can integrate cloud application using the cloud agent.
+{: .notice--info}    
