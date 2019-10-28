@@ -368,9 +368,17 @@ Select the connection, provide the connection name and select the protocol. Clic
 **Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify the required version of the app.**
 
 ![Select-Connection](/staticfiles/root/media/Select-Connection.png)
-10. On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.  
+On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.  
 ![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)
-11. On selecting View connection, all the touchpoints of the connection will be displayed.  
+
+**Protip**
+Users need to enable the cloud support checkbox for enabling the cloud supported connection. 
+The checkbox for enabling cloud support will appear only when the chosen applications are cloud supported as shown below.
+{: .notice--warning}
+
+![cloudsupported-connection](/staticfiles/root/media/cloudsupported-connection.png)
+
+On selecting View connection, all the touchpoints of the connection will be displayed.  
 ![Touchpoint-List](/staticfiles/root/media/Touchpoint-List.png)
 12. Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.
 
@@ -436,16 +444,20 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 ### Environment setup of the Cloud agent
 
 **Pre-requisites:**
-* The project should be cloud supported.
+* The project should be [cloud supported](/deployment/Deployment-Configuration/#configuration-process-for-cloud). 
 * The two apps between which data has to be synced should be cloud supported. 
-* The connection between the two applications should be cloud supported.
+* The connection between the two applications should be [cloud supported](/getting-started/#creating-connection--executing-the-touchpoint).
 
 1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).  
 ![App](/staticfiles/root/media/App.png)
-2. Go to the Connections page and assign the app's credential to the connection by choosing the configuration setup option as shown below.  
+2. After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.  
 ![Connection_New](/staticfiles/root/media/Connection_New.png)
-3. Click on the View the Connection icon and navigate to the touchpoints page.
-4. Click on the play button to run the sync process.  
+3. Enable the assigned credential to the connection by choosing the configuration 
+![Connection_New2](/staticfiles/root/media/Connection_New2.png)
+4.Enable the toggle button on the connector.
+![Connection_New3](/staticfiles/root/media/Connection_New3.png)
+5. Click on the View the Connection icon and navigate to the touchpoints page.
+6. Click on the play button to run the sync process.  
 ![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.png)  
 
 ## Default Notification for Transactions

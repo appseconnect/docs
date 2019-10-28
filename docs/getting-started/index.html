@@ -2208,12 +2208,19 @@ Select the connection, provide the connection name and select the protocol. Clic
 
 <p><strong>Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify the required version of the app.</strong></p>
 
-<p><img src="/staticfiles/root/media/Select-Connection.png" alt="Select-Connection" /></p>
+<p><img src="/staticfiles/root/media/Select-Connection.png" alt="Select-Connection" />
+On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.<br />
+<img src="/staticfiles/root/media/Connection-Protocol.png" alt="Connection-Protocol" /></p>
+
+<p class="notice--warning"><strong>Protip</strong>
+Users need to enable the cloud support checkbox for enabling the cloud supported connection. 
+The checkbox for enabling cloud support will appear only when the chosen applications are cloud supported as shown below.</p>
+
+<p><img src="/staticfiles/root/media/cloudsupported-connection.png" alt="cloudsupported-connection" /></p>
+
+<p>On selecting View connection, all the touchpoints of the connection will be displayed.<br />
+<img src="/staticfiles/root/media/Touchpoint-List.png" alt="Touchpoint-List" /></p>
 <ol>
-  <li>On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.<br />
-<img src="/staticfiles/root/media/Connection-Protocol.png" alt="Connection-Protocol" /></li>
-  <li>On selecting View connection, all the touchpoints of the connection will be displayed.<br />
-<img src="/staticfiles/root/media/Touchpoint-List.png" alt="Touchpoint-List" /></li>
   <li>Once you Publish the touch-point it will be shown in the AEC Agent. From the second time onwards you will have Republish option.</li>
 </ol>
 
@@ -2289,16 +2296,20 @@ To know more about Configuring Environment, <a href="/deployment/Deployment-Conf
 
 <p><strong>Pre-requisites:</strong></p>
 <ul>
-  <li>The project should be cloud supported.</li>
+  <li>The project should be <a href="/deployment/Deployment-Configuration/#configuration-process-for-cloud">cloud supported</a>.</li>
   <li>The two apps between which data has to be synced should be cloud supported.</li>
-  <li>The connection between the two applications should be cloud supported.</li>
+  <li>The connection between the two applications should be <a href="/getting-started/#creating-connection--executing-the-touchpoint">cloud supported</a>.</li>
 </ul>
 
 <ol>
   <li>Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).<br />
 <img src="/staticfiles/root/media/App.png" alt="App" /></li>
-  <li>Go to the Connections page and assign the app’s credential to the connection by choosing the configuration setup option as shown below.<br />
+  <li>After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.<br />
 <img src="/staticfiles/root/media/Connection_New.png" alt="Connection_New" /></li>
+  <li>Enable the assigned credential to the connection by choosing the configuration 
+<img src="/staticfiles/root/media/Connection_New2.png" alt="Connection_New2" />
+4.Enable the toggle button on the connector.
+<img src="/staticfiles/root/media/Connection_New3.png" alt="Connection_New3" /></li>
   <li>Click on the View the Connection icon and navigate to the touchpoints page.</li>
   <li>Click on the play button to run the sync process.<br />
 <img src="/staticfiles/root/media/Connection_Touchpoint.png" alt="Connection_Touchpoint" /></li>

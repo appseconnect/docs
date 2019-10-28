@@ -51,13 +51,9 @@ If not done, then in case of loss of data loss may happen.
 
 Steps to troubleshoot the scenario:
 
-1. The User needs to [register the URL]() as given in the document. 
+1. The User needs to [register the URL](/api-management/Steps-to-register-url/) as given in the document. 
 2. Now Reset Config the connection, from Connection level and then publish the connection. 
 3. Update/Deploy the configuration and you will see all touchpoint links will be changed to the registered URL
 4. Following the above steps, the user can proceed with steps for Proxy. 
 
 **Note: The URL will be shown for every touchpoint in the Webhook section of API management.**
-
-
-
-Click Here link - https://docs.appseconnect.com/api-management/Steps-to-register-url/
