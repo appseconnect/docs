@@ -46,6 +46,13 @@ c.	Adding Cloud Environment - If your organization is cloud-enabled, you will ge
 
 ![Enviornment2](/staticfiles/deployment/media/RevampedEnv/Enviornment2.png)
 
+1.	Click on the + button to add a new cloud environment. The new cloud env setup window appears. 
+![Enviornmentnew1](/staticfiles/deployment/media/RevampedEnv/Enviornmentnew1.png)
+2.  Enter the cloud env details and click on the save button. 
+![Enviornmentnew2](/staticfiles/deployment/media/RevampedEnv/Enviornmentnew2.png)
+3.  On saving, the user gets the confirmation message for the successful creation of Cloud Environment.
+![Enviornmentnew3](/staticfiles/deployment/media/RevampedEnv/Enviornmentnew3.png)
+
 **Note: Only one cloud environment can be set as primary at a time.**
 
 Once the cloud environment is ready, you will get the active cloud agent in the listing and the 
