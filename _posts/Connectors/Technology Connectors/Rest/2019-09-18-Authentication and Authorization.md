@@ -3,7 +3,7 @@ title: "Authentication & Authorization of Generic REST Adapters"
 toc: true
 tag: developers
 category: "Connectors"
-weight: 5
+weight: 7
 menus: 
     resttechnology:
         icon: fa fa-gg
