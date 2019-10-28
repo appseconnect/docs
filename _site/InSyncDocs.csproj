@@ -2164,6 +2164,7 @@
     <None Include="assets\js\plugins\ajaxify\bower.json" />
     <None Include="assets\js\plugins\jstree\jstree.jquery.json" />
     <None Include="contributor.md" />
+    <None Include="deploy.cmd" />
     <None Include="docs\adapter.md" />
     <None Include="docs\aecdocs - Shortcut %282%29.lnk" />
     <None Include="docs\aecdocs - Shortcut.lnk" />
