@@ -22,28 +22,33 @@ status will be auto reflected in Portal Environment, after reactivating Autosync
 
 ## Accessing the Environment User Interface
 
-1.	Login to Portal
-2.	Go to your project
-3.	Click on Manage
-4.	Go to Environments
-
-![Enviornment1](/staticfiles/deployment/media/RevampedEnv/Enviornment1.png)
-
-Environment section in your project will give you a detailed overview about the number of Agent deployed in your network, whether they are 
-connected or not, or if there are any issues with the environment. The indicators present as a prefix to each environment enables you in 
-identifying whether the Agent is offline, indicated in red, or if it is up and running, it is indicated with green/blue.
+1.	Login to the APPSeCONNECT portal with valid credentials and navigate to the `Manage` section of your Project.
+2.	Click on the Environments button from the Manage drop-down.   
+![Enviornment1](/staticfiles/deployment/media/RevampedEnv/Enviornment1.png)  
+3. Environment section in your project will give you a detailed overview about the number of Agent deployed in your network, whether they are 
+connected or not.   
+4.	Agents that are deployed will have the indicators that displays whether the agent is active or inactive.  
+* RED indicator - Agent is either detached or inactive.
+* BLUE indicator - Agent is up and Running
 
 Let us have a look on some of the available features:
 
-**1.Environment Listing**
+### Environment Listing
 
-This section shows, the list of environments where the Agents deployments are done for the project/organization. 
+This section shows, the list of environments where the Agent deployments are done for the project/organization.
+Listed below are the functionalities that are displayed in the Environment Listed Page. 
 
-a.	View the Environment Status - Clear indicator to visualize that which Agents are active, and which are offline.
-b.	Grouping of environments - One can add multiple groups, depending on the environment they are working on whether production, or test, 
-    or if you want to group two or more environments region-wise. You can move an environment by dragging and dropping from one group to another.
-c.	Adding Cloud Environment - If your organization is cloud-enabled, you will get the option to create cloud environment.
+a.	Environment Status: Agent indicators to visualize the status of the Agents (Active/Inactive).
+b.	Grouping of environments:
+ * User can create multiple environment group for an organisation by click on the Add Group button.
+ * User can drag and drop every agent with respect to the groups (For Ex: Production or for testing or Region Wise). 
+ * User can also move the agents from one group to another.
 
+Image
+
+### Adding Cloud Environment 
+
+If your organization is cloud-enabled, you will get the option to create cloud environment.
 ![Enviornment2](/staticfiles/deployment/media/RevampedEnv/Enviornment2.png)
 
 1.	Click on the + button to add a new cloud environment. The new cloud env setup window appears. 
@@ -53,25 +58,24 @@ c.	Adding Cloud Environment - If your organization is cloud-enabled, you will ge
 3.  On saving, the user gets the confirmation message for the successful creation of Cloud Environment.
 ![Enviornmentnew3](/staticfiles/deployment/media/RevampedEnv/Enviornmentnew3.png)
 
-**Note: Only one cloud environment can be set as primary at a time.**
+**Note: (a) Only one cloud environment can be set as primary at a time.
+        (b) By default the agents are positioned in the group named Untitled.
+        (c) Each organisation can have only one cloud agent. User cannot create another cloud agent after creating one.
 
 Once the cloud environment is ready, you will get the active cloud agent in the listing and the 
 add indicator (as shown in above figure) will become inactive.
 
 ![Enviornment3](/staticfiles/deployment/media/RevampedEnv/Enviornment3.png)
 
-**2.Environment Details**
+### 2.Environment Details
 
-This section will give the detailed overview and settings control (privilege based), for the environment 
-that are running the current Agent.  
+This section will provide the detailed overview and settings control (privilege based) 
+for the environment that are running the current Agent.
 
-(a) New Agent - Users of new agent will be presented with following pages with respect to the selected environment:
-(b) Properties - The panel appears, when you select an active Agent environment from the environment listing of the project.
-
-![Enviornment4](/staticfiles/deployment/media/RevampedEnv/Enviornment4.png)
-
-This page will give live information about the current OP agent, including:
-
+a.	 Agent Listing (OP & Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.
+b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.  
+![Enviornment4](/staticfiles/deployment/media/RevampedEnv/Enviornment4.png)    
+This page will give live information about the current OP agent, including:  
 * Architecture in use
 * The latest agent deployment version for the selected environment
 * Agent last restart time is default 03:49 for all organizations who are using OP Agent.
@@ -82,9 +86,8 @@ This page will give live information about the current OP agent, including:
 * Agent Logs - These are the dynamic process logs and the notifications, from where one can keep track of Scheduler details, rule that are 
   scheduled and are under execution, service status etc.
 
-(c) Plugins - This page will only display the plugin details from OP Agent.
-(d) Settings - This page is only accessible to users who have the privilege to control the settings of OP.
-
+c. Plugins - This page will only display the plugin details from OP Agent.
+d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.
 ![Enviornment5](/staticfiles/deployment/media/RevampedEnv/Enviornment5.png)
 
 **Settings have three available sections for managing OP Agents:**
@@ -128,7 +131,7 @@ Cloud organizations can currently control the followings settings of their cloud
 
 ![Enviornment8](/staticfiles/deployment/media/RevampedEnv/Enviornment8.png)
 
-**3.Deleting Environment**
+### Deleting Environment
 
 You can now directly delete environments that are no longer in use from the listing itself. As soon as you perform delete from portal, 
 the OP Agent instance (active/inactive) gets auto-removed from the local environment and all the associated licenses will get removed. 
@@ -138,11 +141,11 @@ a new license will be generated against it.
 
 Steps:
 
-1) Login to Portal
-2) Go to your Project
-3) Go to Manage > Environments
-4) Select the environment which you want to delete from listing
-5)	Click on Delete
+1) Login to Portal.  
+2) Go to your Project  
+3) Go to Manage > Environments  
+4) Select the environment which you want to delete from listing  
+5)	Click on Delete  
 
 ![Enviornment9](/staticfiles/deployment/media/RevampedEnv/Enviornment9.png)
 
@@ -153,13 +156,12 @@ it remains in the list but will show as disconnected. Post detachment, if the us
 
 To unblock the environment, you must Attach that environment once again.
 
-NOTE:
-
+**NOTE:**
 * Activate Autosync is restarted/active.
 * Delete and Detach feature is currently not available in Cloud Agent.
-* Implementers and partners must note that once they login with one organization credentials in one system, they won't be able to further login with different organization 
-  credentials in the same system. [Ref: License Key Implementation document]
-* Multi-environment support in parallel for cloud and OP Agent is not in the scope of this release.
+* Implementers and partners must note that once they [login with one organization credentials](https://docs.appseconnect.com/) in one system, they won't be able to further login with different organization 
+  credentials in the same system
+
 
 
 

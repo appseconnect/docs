@@ -1765,7 +1765,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
                 
                 
@@ -1779,7 +1779,14 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#pre-requisites">Pre-requisites</a></li>
-  <li><a href="#accessing-the-environment-user-interface">Accessing the Environment User Interface</a></li>
+  <li><a href="#accessing-the-environment-user-interface">Accessing the Environment User Interface</a>
+    <ul>
+      <li><a href="#environment-listing">Environment Listing</a></li>
+      <li><a href="#adding-cloud-environment">Adding Cloud Environment</a></li>
+      <li><a href="#2environment-details">2.Environment Details</a></li>
+      <li><a href="#deleting-environment">Deleting Environment</a></li>
+    </ul>
+  </li>
 </ul>
                     </nav>
                 </aside>
@@ -1798,30 +1805,40 @@ status will be auto reflected in Portal Environment, after reactivating Autosync
 <h2 id="accessing-the-environment-user-interface">Accessing the Environment User Interface</h2>
 
 <ol>
-  <li>Login to Portal</li>
-  <li>Go to your project</li>
-  <li>Click on Manage</li>
-  <li>Go to Environments</li>
+  <li>Login to the APPSeCONNECT portal with valid credentials and navigate to the <code class="highlighter-rouge">Manage</code> section of your Project.</li>
+  <li>Click on the Environments button from the Manage drop-down. <br />
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment1.png" alt="Enviornment1" /></li>
+  <li>Environment section in your project will give you a detailed overview about the number of Agent deployed in your network, whether they are 
+connected or not.</li>
+  <li>Agents that are deployed will have the indicators that displays whether the agent is active or inactive.
+    <ul>
+      <li>RED indicator - Agent is either detached or inactive.</li>
+      <li>BLUE indicator - Agent is up and Running</li>
+    </ul>
+  </li>
 </ol>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment1.png" alt="Enviornment1" /></p>
-
-<p>Environment section in your project will give you a detailed overview about the number of Agent deployed in your network, whether they are 
-connected or not, or if there are any issues with the environment. The indicators present as a prefix to each environment enables you in 
-identifying whether the Agent is offline, indicated in red, or if it is up and running, it is indicated with green/blue.</p>
 
 <p>Let us have a look on some of the available features:</p>
 
-<p><strong>1.Environment Listing</strong></p>
+<h3 id="environment-listing">Environment Listing</h3>
 
-<p>This section shows, the list of environments where the Agents deployments are done for the project/organization.</p>
+<p>This section shows, the list of environments where the Agent deployments are done for the project/organization.
+Listed below are the functionalities that are displayed in the Environment Listed Page.</p>
 
-<p>a.	View the Environment Status - Clear indicator to visualize that which Agents are active, and which are offline.
-b.	Grouping of environments - One can add multiple groups, depending on the environment they are working on whether production, or test, 
-    or if you want to group two or more environments region-wise. You can move an environment by dragging and dropping from one group to another.
-c.	Adding Cloud Environment - If your organization is cloud-enabled, you will get the option to create cloud environment.</p>
+<p>a.	Environment Status: Agent indicators to visualize the status of the Agents (Active/Inactive).
+b.	Grouping of environments:</p>
+<ul>
+  <li>User can create multiple environment group for an organisation by click on the Add Group button.</li>
+  <li>User can drag and drop every agent with respect to the groups (For Ex: Production or for testing or Region Wise).</li>
+  <li>User can also move the agents from one group to another.</li>
+</ul>
 
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment2.png" alt="Enviornment2" /></p>
+<p>Image</p>
+
+<h3 id="adding-cloud-environment">Adding Cloud Environment</h3>
+
+<p>If your organization is cloud-enabled, you will get the option to create cloud environment.
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment2.png" alt="Enviornment2" /></p>
 
 <ol>
   <li>Click on the + button to add a new cloud environment. The new cloud env setup window appears. 
@@ -1832,25 +1849,24 @@ c.	Adding Cloud Environment - If your organization is cloud-enabled, you will ge
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornmentnew3.png" alt="Enviornmentnew3" /></li>
 </ol>
 
-<p><strong>Note: Only one cloud environment can be set as primary at a time.</strong></p>
+<p>**Note: (a) Only one cloud environment can be set as primary at a time.
+        (b) By default the agents are positioned in the group named Untitled.
+        (c) Each organisation can have only one cloud agent. User cannot create another cloud agent after creating one.</p>
 
 <p>Once the cloud environment is ready, you will get the active cloud agent in the listing and the 
 add indicator (as shown in above figure) will become inactive.</p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment3.png" alt="Enviornment3" /></p>
 
-<p><strong>2.Environment Details</strong></p>
+<h3 id="2environment-details">2.Environment Details</h3>
 
-<p>This section will give the detailed overview and settings control (privilege based), for the environment 
-that are running the current Agent.</p>
+<p>This section will provide the detailed overview and settings control (privilege based) 
+for the environment that are running the current Agent.</p>
 
-<p>(a) New Agent - Users of new agent will be presented with following pages with respect to the selected environment:
-(b) Properties - The panel appears, when you select an active Agent environment from the environment listing of the project.</p>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment4.png" alt="Enviornment4" /></p>
-
-<p>This page will give live information about the current OP agent, including:</p>
-
+<p>a.	 Agent Listing (OP &amp; Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.
+b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.<br />
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment4.png" alt="Enviornment4" />  <br />
+This page will give live information about the current OP agent, including:</p>
 <ul>
   <li>Architecture in use</li>
   <li>The latest agent deployment version for the selected environment</li>
@@ -1863,10 +1879,9 @@ that are running the current Agent.</p>
 scheduled and are under execution, service status etc.</li>
 </ul>
 
-<p>(c) Plugins - This page will only display the plugin details from OP Agent.
-(d) Settings - This page is only accessible to users who have the privilege to control the settings of OP.</p>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></p>
+<p>c. Plugins - This page will only display the plugin details from OP Agent.
+d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></p>
 
 <p><strong>Settings have three available sections for managing OP Agents:</strong></p>
 
@@ -1913,7 +1928,7 @@ scheduled and are under execution, service status etc.</li>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment8.png" alt="Enviornment8" /></p>
 
-<p><strong>3.Deleting Environment</strong></p>
+<h3 id="deleting-environment">Deleting Environment</h3>
 
 <p>You can now directly delete environments that are no longer in use from the listing itself. As soon as you perform delete from portal, 
 the OP Agent instance (active/inactive) gets auto-removed from the local environment and all the associated licenses will get removed.</p>
@@ -1923,10 +1938,10 @@ a new license will be generated against it.</p>
 
 <p>Steps:</p>
 
-<p>1) Login to Portal
-2) Go to your Project
-3) Go to Manage &gt; Environments
-4) Select the environment which you want to delete from listing
+<p>1) Login to Portal.<br />
+2) Go to your Project<br />
+3) Go to Manage &gt; Environments<br />
+4) Select the environment which you want to delete from listing<br />
 5)	Click on Delete</p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment9.png" alt="Enviornment9" /></p>
@@ -1938,14 +1953,12 @@ it remains in the list but will show as disconnected. Post detachment, if the us
 
 <p>To unblock the environment, you must Attach that environment once again.</p>
 
-<p>NOTE:</p>
-
+<p><strong>NOTE:</strong></p>
 <ul>
   <li>Activate Autosync is restarted/active.</li>
   <li>Delete and Detach feature is currently not available in Cloud Agent.</li>
-  <li>Implementers and partners must note that once they login with one organization credentials in one system, they won’t be able to further login with different organization 
-credentials in the same system. [Ref: License Key Implementation document]</li>
-  <li>Multi-environment support in parallel for cloud and OP Agent is not in the scope of this release.</li>
+  <li>Implementers and partners must note that once they <a href="https://docs.appseconnect.com/">login with one organization credentials</a> in one system, they won’t be able to further login with different organization 
+credentials in the same system</li>
 </ul>
 
 
