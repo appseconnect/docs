@@ -40,11 +40,10 @@ Listed below are the functionalities that are displayed in the Environment Liste
 
 a.	Environment Status: Agent indicators to visualize the status of the Agents (Active/Inactive).
 b.	Grouping of environments:
- * User can create multiple environment group for an organisation by click on the Add Group button.
- * User can drag and drop every agent with respect to the groups (For Ex: Production or for testing or Region Wise). 
- * User can also move the agents from one group to another.
-
-Image
+ * User can create multiple environment group for an organisation by click on the `Add Group` button.
+ * User can drag and drop every agent with respect to the groups (For Ex: Production or for testing or Region Wise).   
+ * User can also move the agents from one group to another.   
+![grouping-env](/staticfiles/deployment/media/RevampedEnv/grouping-env.png)    
 
 ### Adding Cloud Environment 
 
