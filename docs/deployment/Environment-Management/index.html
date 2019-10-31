@@ -1783,8 +1783,9 @@
     <ul>
       <li><a href="#environment-listing">Environment Listing</a></li>
       <li><a href="#adding-cloud-environment">Adding Cloud Environment</a></li>
-      <li><a href="#2environment-details">2.Environment Details</a></li>
+      <li><a href="#environment-details">Environment Details</a></li>
       <li><a href="#deleting-environment">Deleting Environment</a></li>
+      <li><a href="#detaching-and-attaching-environment">Detaching and Attaching Environment</a></li>
     </ul>
   </li>
 </ul>
@@ -1857,14 +1858,14 @@ add indicator (as shown in above figure) will become inactive.</p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment3.png" alt="Enviornment3" /></p>
 
-<h3 id="2environment-details">2.Environment Details</h3>
+<h3 id="environment-details">Environment Details</h3>
 
 <p>This section will provide the detailed overview and settings control (privilege based) 
 for the environment that are running the current Agent.</p>
 
-<p>a.	 Agent Listing (OP &amp; Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.
-b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.<br />
-<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment4.png" alt="Enviornment4" />  <br />
+<p>a.	 Agent Listing (OP &amp; Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.<br />
+b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.    <br />
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment4.png" alt="Enviornment4" />    <br />
 This page will give live information about the current OP agent, including:</p>
 <ul>
   <li>Architecture in use</li>
@@ -1878,8 +1879,8 @@ This page will give live information about the current OP agent, including:</p>
 scheduled and are under execution, service status etc.</li>
 </ul>
 
-<p>c. Plugins - This page will only display the plugin details from OP Agent.
-d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.
+<p>c. Plugins - This page will only display the plugin details from OP Agent.  <br />
+d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.  <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></p>
 
 <p><strong>Settings have three available sections for managing OP Agents:</strong></p>
@@ -1945,7 +1946,7 @@ a new license will be generated against it.</p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment9.png" alt="Enviornment9" /></p>
 
-<p><strong>4. Detaching and Attaching Environment</strong></p>
+<h3 id="detaching-and-attaching-environment">Detaching and Attaching Environment</h3>
 
 <p>Environment detachment is blocking the Agent from use in that specific environment. So, when you detach the selected environment from Portal, 
 it remains in the list but will show as disconnected. Post detachment, if the user tries to relogin, it will give <code class="highlighter-rouge">Agent is blocked</code> error.</p>
