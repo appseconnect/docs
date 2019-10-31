@@ -66,14 +66,14 @@ add indicator (as shown in above figure) will become inactive.
 
 ![Enviornment3](/staticfiles/deployment/media/RevampedEnv/Enviornment3.png)
 
-### 2.Environment Details
+### Environment Details
 
 This section will provide the detailed overview and settings control (privilege based) 
 for the environment that are running the current Agent.
 
-a.	 Agent Listing (OP & Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.
-b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.  
-![Enviornment4](/staticfiles/deployment/media/RevampedEnv/Enviornment4.png)    
+a.	 Agent Listing (OP & Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.  
+b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.      
+![Enviornment4](/staticfiles/deployment/media/RevampedEnv/Enviornment4.png)      
 This page will give live information about the current OP agent, including:  
 * Architecture in use
 * The latest agent deployment version for the selected environment
@@ -85,9 +85,9 @@ This page will give live information about the current OP agent, including:
 * Agent Logs - These are the dynamic process logs and the notifications, from where one can keep track of Scheduler details, rule that are 
   scheduled and are under execution, service status etc.
 
-c. Plugins - This page will only display the plugin details from OP Agent.
-d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.
-![Enviornment5](/staticfiles/deployment/media/RevampedEnv/Enviornment5.png)
+c. Plugins - This page will only display the plugin details from OP Agent.    
+d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.    
+![Enviornment5](/staticfiles/deployment/media/RevampedEnv/Enviornment5.png)  
 
 **Settings have three available sections for managing OP Agents:**
 
@@ -148,7 +148,7 @@ Steps:
 
 ![Enviornment9](/staticfiles/deployment/media/RevampedEnv/Enviornment9.png)
 
-**4. Detaching and Attaching Environment**
+### Detaching and Attaching Environment
 
 Environment detachment is blocking the Agent from use in that specific environment. So, when you detach the selected environment from Portal, 
 it remains in the list but will show as disconnected. Post detachment, if the user tries to relogin, it will give `Agent is blocked` error.
