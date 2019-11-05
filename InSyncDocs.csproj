@@ -2210,6 +2210,8 @@
     <None Include="_pages\tag-archive.md" />
     <None Include="_posts\.vs\slnx.sqlite" />
     <None Include="_posts\.vs\VSWorkspaceState.json" />
+    <None Include="_posts\License-Management\2018-09-17-rolling-window.md" />
+    <None Include="_posts\License-Management\2018-09-17-license-management.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-01-Overview-of-Application-Connectors.md" />
     <None Include="_posts\Connectors\Application Connectors\Bamboohr\2019-03-05-adding-employee-bamboohr .md" />
     <None Include="_posts\Connectors\Application Connectors\Bamboohr\2019-03-05-bamboohr.md" />

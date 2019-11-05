@@ -245,6 +245,25 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/license%20management/license-management/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/license%20management/license-management/" onclick="selectTab('/license%20management/license-management/', event);" title="Go to License Management">License Management</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/license%20management/rolling-window/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/license%20management/rolling-window/" onclick="selectTab('/license%20management/rolling-window/', event);" title="Go to Generating Temporary License for Organization">Generating Temporary License for Organization</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/connectors/Overview-of-Connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/Overview-of-Connectors/" onclick="selectTab('/connectors/Overview-of-Connectors/', event);" title="Go to Connectors">Connectors</a>
         
@@ -1679,12 +1698,7 @@
   <li><a href="#visitors-paid-request">Visitors Paid Request</a></li>
   <li><a href="#a-new-customer-logging-information">A. New Customer Logging Information</a></li>
   <li><a href="#b-existing-customer-logging-information">B. Existing Customer Logging Information</a></li>
-  <li><a href="#appseconnect-license-management">APPSeCONNECT License Management</a>
-    <ul>
-      <li><a href="#working-principle-for-license-management">Working Principle for License Management</a></li>
-      <li><a href="#usability-aspect-of-license-management">Usability Aspect of License Management</a></li>
-    </ul>
-  </li>
+  <li><a href="#appseconnect-license-management">APPSeCONNECT License Management</a></li>
   <li><a href="#appseconnect-platform---functional-menus">APPSeCONNECT Platform - Functional Menus</a></li>
   <li><a href="#rule-listing">Rule Listing</a></li>
   <li><a href="#steps-to-update-an-existing-user">Steps to update an existing user</a></li>
@@ -1858,46 +1872,8 @@ while APPSeCONNECT also gives you an option to customize both the pre-defined to
 
 <p>License key-based authentication approach is security enhancement for your on-premise and cloud integrations. 
 This mechanism authenticates users who tries to login to the integration client of APPSeCONNECT agent using 
-a revocable, secure and unique license or a security token that is provided by the server.</p>
-
-<h3 id="working-principle-for-license-management">Working Principle for License Management</h3>
-
-<ul>
-  <li>When registered users log in for the first time, the server verifies the authentication, and generates a licence key based on machine credentials.</li>
-  <li>APPSeCONNECT tags each local system with the licence key such that the same licence key cannot be used from different system.</li>
-  <li>License key will be revocable and traceable, i.e. it can be removed or revoked when the subscription gets expired and renewed further.</li>
-  <li>Each License key is generated considering the <code class="highlighter-rouge">Organization ID</code> and <code class="highlighter-rouge">MacID</code> which enhances the security of your application preventing 
-unauthorized access.</li>
-</ul>
-
-<h3 id="usability-aspect-of-license-management">Usability Aspect of License Management</h3>
-
-<ul>
-  <li>
-    <p>If the user who had access to the license key, leaves the organization. 
-Each connected organisation will have a separate key and it is simpler to track unauthorized connections.</p>
-  </li>
-  <li>
-    <p>License key implementation feature prohibits access to different organization from same environment 
-and this restriction is presently available from Agent 4.4 onwards.</p>
-  </li>
-</ul>
-
-<p><strong>Scenario: If user 1 from organization 1 have already logged in to an Agent environment, user 2 of organization 2 will not be able to 
-log in to the same Agent environment.</strong></p>
-
-<ul>
-  <li>Whenever a different organization user tries to login to same machine, they will get the following message:</li>
-</ul>
-
-<p><img src="/staticfiles/root/media/user-licensekey-failure.png" alt="user-licensekey-failure" /></p>
-
-<ul>
-  <li>On-behalf login for client by the superuser will be stopped in OP Agent.</li>
-</ul>
-
-<p><strong>NOTE:No implementer/partner/developer will be able to login separately for an organization which was available 
-  for all earlier Agent versions of 4.3 and lower.</strong></p>
+a revocable, secure and unique license or a security token that is provided by the server. 
+Read to know more about <a href="">License Management</a></p>
 
 <h2 id="appseconnect-platform---functional-menus">APPSeCONNECT Platform - Functional Menus</h2>
 
