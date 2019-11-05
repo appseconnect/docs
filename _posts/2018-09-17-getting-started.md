@@ -8,7 +8,6 @@ menus:
         icon: fa fa-play
         weight: 2       
 ---
-
 ## CUSTOMER PROFILE INFORMATION
 This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/getting-started/#my-profile).
 
