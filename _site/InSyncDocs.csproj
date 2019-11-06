@@ -2210,6 +2210,7 @@
     <None Include="_pages\tag-archive.md" />
     <None Include="_posts\.vs\slnx.sqlite" />
     <None Include="_posts\.vs\VSWorkspaceState.json" />
+    <None Include="_posts\Connectors\Application Connectors\Shipstation\2018-12-07-Shipstation.md" />
     <None Include="_posts\License-Management\2018-09-17-license-generation.md" />
     <None Include="_posts\License-Management\2018-09-17-license-management.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-01-Overview-of-Application-Connectors.md" />
