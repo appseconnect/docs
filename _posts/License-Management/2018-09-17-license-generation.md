@@ -20,7 +20,7 @@ As each OP Agent, for each organisation in APPSeCONNECT, are now registered usin
 using the `Organisation ID` & the `MAC ID` of the system thereby preventing other systems & users from logging in.
 
 Implementer/Developers requires to login to the client OP Agent for the purpose of implementing or debugging 
-client issues and features. Therefore, APPSeCONNECT provides the Rolling window feature for the Implementer 
+client issues and features. Therefore, APPSeCONNECT provides the temporary license key generation feature for the Partners
 and the Developers, such that they can login in the client environment for work purpose.
 
 ### Working principle for Generating Temporary License
@@ -30,7 +30,7 @@ which is needed to be accessed. The key will be valid for a limited time as sele
 implementers/developers can log in to client environment using their (implementers/developers) own agent credentials.
 
 **Note: Only an APPSeCONNECT user with Super-Admin access, will be able to generate the temporary License Key for 
-implementing Rolling Window.**
+Organizations.**
 
 ### Steps to Generate Temporary License
 
@@ -38,7 +38,7 @@ implementing Rolling Window.**
 ![rolling-window1](/staticfiles/licensekey/rolling-window1.png)   
 2.  Navigate to Projects > Manage Projects. The manage projects window appears.
 ![rolling-window2](/staticfiles/licensekey/rolling-window2.png) 
-3.  Search project, for which the Rolling window needs to be implemented and Click License tab.
+3.  Search project, for which temporary license key generation needs to be implemented and Click License tab.
 ![rolling-window3](/staticfiles/licensekey/rolling-window3.png) 
 4.  Select the TTL value from the drop-down option.
 ![rolling-window4](/staticfiles/licensekey/rolling-window4.png)        

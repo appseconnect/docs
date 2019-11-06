@@ -10,7 +10,6 @@ menus:
         weight: 2  
         identifier: LicenseManagement    
 ---
-
 ## APPSeCONNECT License Management
 
 License key-based authentication approach is security enhancement for your on-premise and cloud integrations. 
