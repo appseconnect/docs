@@ -34,16 +34,16 @@ To Know about Agent Configuration, [Click here](/deployment/Deployment-Configura
 
 ## Configuring the Shipstation Adapter
 
-1. In the App Configuration panel of the agent, click on the + button, beside the app Shipstation.  
-Image  
-2. On clicking the + button, the credential panel opens for the application Shipstation.   
-Image  
+1. In the App Configuration panel of the agent, click on the + button, beside the app Shipstation.      
+![shipstation1](/staticfiles/connectors/media/application-connector/shipstation1.png)    
+2. On clicking the + button, the credential panel opens for the application Shipstation.       
+![shipstation2](/staticfiles/connectors/media/application-connector/bamboo-agent2.png)    
 3. For generating the API Key and the API Secret, `navigate to Settings (the wrench icon) > Account > API Settings> Generate API Keys` in the Shipstation Portal. 
-   The API settings window opens.    
-Image  
-4. Provide the generated credentials in the agent and then click on`VALIDATE` and `SAVE` button.  
-Image  
-Following this process, the Shipstation application can be configured in the agent.
+   The API settings window opens.        
+![shipstation3](/staticfiles/connectors/media/application-connector/bamboo-agent3.png)    
+4. Provide the generated credentials in the agent and then click on`VALIDATE` and `SAVE` button.      
+![shipstation4](/staticfiles/connectors/media/application-connector/bamboo-agent4.png)     
+Following this process, the Shipstation application can be configured in the agent.  
  
 ## Troubleshooting
 

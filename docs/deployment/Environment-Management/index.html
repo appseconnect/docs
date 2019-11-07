@@ -1790,7 +1790,7 @@
 
 
 
-  6 minute read
+  8 minute read
 </p>
                 
                 
@@ -1808,9 +1808,15 @@
     <ul>
       <li><a href="#environment-listing">Environment Listing</a></li>
       <li><a href="#adding-cloud-environment">Adding Cloud Environment</a></li>
-      <li><a href="#environment-details">Environment Details</a></li>
+      <li><a href="#environment-details---on-premise-agent">Environment Details - On-Premise Agent</a></li>
+      <li><a href="#environment-details---cloud-agent">Environment Details - Cloud Agent</a></li>
       <li><a href="#deleting-environment">Deleting Environment</a></li>
       <li><a href="#detaching-and-attaching-environment">Detaching and Attaching Environment</a></li>
+    </ul>
+  </li>
+  <li><a href="#environment-view-for-old-agents">Environment View for Old Agents</a>
+    <ul>
+      <li><a href="#working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</a></li>
     </ul>
   </li>
 </ul>
@@ -1831,32 +1837,32 @@ status will be auto reflected in Portal Environment, after reactivating Autosync
 <h2 id="accessing-the-environment-user-interface">Accessing the Environment User Interface</h2>
 
 <ol>
-  <li>Login to the APPSeCONNECT portal with valid credentials and navigate to the <code class="highlighter-rouge">Manage</code> section of your Project.</li>
+  <li>Login to APPSeCONNECT portal with valid credentials &amp; navigate to the <code class="highlighter-rouge">Manage</code> section of your Project.</li>
   <li>Click on the Environments button from the Manage drop-down. <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment1.png" alt="Enviornment1" /></li>
-  <li>Environment section in your project will give you a detailed overview about the number of Agent deployed in your network, whether they are 
+  <li>Environment section in your project will give you a detailed overview about the number of Agent (both OP &amp; Cloud) deployed in your network, whether they are 
 connected or not.</li>
   <li>Agents that are deployed will have the indicators that displays whether the agent is active or inactive.
     <ul>
       <li>RED indicator - Agent is either detached or inactive.</li>
-      <li>BLUE indicator - Agent is up and Running</li>
+      <li>BLUE indicator - Agent is up and Running.</li>
     </ul>
   </li>
 </ol>
 
-<p>Let us have a look on some of the available features:</p>
+<p>Given below are the available features of Environment.</p>
 
 <h3 id="environment-listing">Environment Listing</h3>
 
 <p>This section shows, the list of environments where the Agent deployments are done for the project/organization.
 Listed below are the functionalities that are displayed in the Environment Listed Page.</p>
 
-<p>a.	Environment Status: Agent indicators to visualize the status of the Agents (Active/Inactive).
+<p>a.	Environment Status: Agent indicators to visualize the status of the Agents (Active/Inactive).      <br />
 b.	Grouping of environments:</p>
 <ul>
   <li>User can create multiple environment group for an organisation by click on the <code class="highlighter-rouge">Add Group</code> button.</li>
   <li>User can drag and drop every agent with respect to the groups (For Ex: Production or for testing or Region Wise).</li>
-  <li>User can also move the agents from one group to another. <br />
+  <li>User can also move the agents from one group to another.   <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/grouping-env.png" alt="grouping-env" /></li>
 </ul>
 
@@ -1874,22 +1880,22 @@ b.	Grouping of environments:</p>
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornmentnew3.png" alt="Enviornmentnew3" /></li>
 </ol>
 
-<p>**Note: (a) Only one cloud environment can be set as primary at a time.
-        (b) By default the agents are positioned in the group named Untitled.
-        (c) Each organisation can have only one cloud agent. User cannot create another cloud agent after creating one.</p>
+<p><strong>Note: (a) Only one cloud environment can be set as primary at a time.  <br />
+        (b) By default the agents are positioned in the group named Untitled.  <br />
+        (c) Each organisation can have only one cloud agent. User cannot create another cloud agent after creating one.</strong></p>
 
 <p>Once the cloud environment is ready, you will get the active cloud agent in the listing and the 
 add indicator (as shown in above figure) will become inactive.</p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment3.png" alt="Enviornment3" /></p>
 
-<h3 id="environment-details">Environment Details</h3>
+<h3 id="environment-details---on-premise-agent">Environment Details - On-Premise Agent</h3>
 
 <p>This section will provide the detailed overview and settings control (privilege based) 
-for the environment that are running the current Agent.</p>
+for the environment(On-Premise Agent) that are running the current Agent.</p>
 
-<p>a.	 Agent Listing (OP &amp; Cloud):  Users of new agent will be presented with following pages with respect to the selected environment.<br />
-b.	 Properties: The panel appears, when the user selects an active OP Agent from the environment listing of the project.    <br />
+<p>Users of new agent (On-Premise Agent) will get the following sub-tabs with respect to the selected environment.<br />
+a. <strong>Properties</strong>: The panel appears, when the user selects an active OP Agent from the environment listing of the project.    <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment4.png" alt="Enviornment4" />    <br />
 This page will give live information about the current OP agent, including:</p>
 <ul>
@@ -1904,8 +1910,8 @@ This page will give live information about the current OP agent, including:</p>
 scheduled and are under execution, service status etc.</li>
 </ul>
 
-<p>c. Plugins - This page will only display the plugin details from OP Agent.  <br />
-d. Settings - This page is only accessible to users who have the privilege to control the settings of OP.  <br />
+<p>b. <strong>Plugins</strong> - This page will only display the plugin details from OP Agent.  <br />
+c. <strong>Settings</strong> - This page is only accessible to users who have the privilege to control the settings of OP.  <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></p>
 
 <p><strong>Settings have three available sections for managing OP Agents:</strong></p>
@@ -1917,7 +1923,8 @@ d. Settings - This page is only accessible to users who have the privilege to co
 <p>2) Log Settings - You can control the way you want to view and store the log in OP Agent from portal now.</p>
 
 <ul>
-  <li>If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be stored in sql lite database and will be reflected in the log bucket.</li>
+  <li>If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be 
+stored in sql lite database and will be reflected in the log bucket.</li>
   <li>Set Target for - It will allow you to define the type of log that you want to view, whether Error, Infor or Status.</li>
   <li>Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.</li>
 </ul>
@@ -1927,31 +1934,29 @@ d. Settings - This page is only accessible to users who have the privilege to co
 
 <p>After saving the changes in settings, the updated information gets auto-reflected in OP Agent.</p>
 
-<p>a.	Old Agent - Users with earlier versions of Agent, will be presented with following page, when they select their environment:</p>
+<h3 id="environment-details---cloud-agent">Environment Details - Cloud Agent</h3>
 
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment6.png" alt="Enviornment6" /></p>
+<p>Cloud organizations can currently control the followings settings of their cloud agent from portal
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment7.png" alt="Enviornment7" /></p>
 
-<p>All the earlier features will be available as-is for the existing Agent users -</p>
-
+<p><strong>Autosync of Resync Settings</strong>
+Detailed field description:</p>
 <ul>
-  <li>Deploying configuration from Portal to Agent</li>
-  <li>Agent Settings (ref. above) can be added and modified from Portal, that will get reflected in OP Agent.</li>
-  <li>Blocking/Unblocking Agent from Portal.</li>
+  <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
+  <li>Start Time: This is a customizable field for the user. It defines the start time of the Resync Process.</li>
+  <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, <code class="highlighter-rouge">its configured as 0</code>.</li>
+  <li>Batch Size: This field states, the no of data in a batch to be resynced. The <code class="highlighter-rouge">Default value is 10</code> but the users are open to customize as per their requirement.</li>
 </ul>
 
-<p><strong>Note: For old agent, any changes even made in OP Agent will get reflected in Portal after restarting the Autosync service in OP.</strong></p>
-
-<p>b. Cloud Agent</p>
-
-<p>Cloud organizations can currently control the followings settings of their cloud agent from portal</p>
-
-<p><strong>Log Settings</strong></p>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment7.png" alt="Enviornment7" /></p>
-
-<p><strong>Autosync of Resync Settings</strong></p>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment8.png" alt="Enviornment8" /></p>
+<p><strong>Log Settings</strong>
+Detailed field description:</p>
+<ul>
+  <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
+  <li>Log in Database: The log fetched, would be stored in the database.</li>
+  <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
+  <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. 
+The severity level is categorized into <code class="highlighter-rouge">Medium, High &amp; Critical</code>.</li>
+</ul>
 
 <h3 id="deleting-environment">Deleting Environment</h3>
 
@@ -1982,9 +1987,64 @@ it remains in the list but will show as disconnected. Post detachment, if the us
 <ul>
   <li>Activate Autosync is restarted/active.</li>
   <li>Delete and Detach feature is currently not available in Cloud Agent.</li>
-  <li>Implementers and partners must note that once they <a href="https://docs.appseconnect.com/">login with one organization credentials</a> in one system, they won’t be able to further login with different organization 
+  <li>Implementers and partners must note that once they <a href="/license-management/#usability-aspect-of-license-management">login with one organization credentials</a> in one system, they won’t be able to further login with different organization 
 credentials in the same system</li>
 </ul>
+
+<h2 id="environment-view-for-old-agents">Environment View for Old Agents</h2>
+
+<p>APPSeCONNECT License management &amp; environment management is equipped with the full supportability of old agents. However, old agent users are 
+restricted from viewing the environment details which is available on for latest agents. Users need to update the old agent for viewing the 
+details of the environment.</p>
+
+<p>Old agent will support the complete functionality of the integration process. Old Agent user shall view the environment as given below:
+<img src="/staticfiles/deployment/media/RevampedEnv/old-environment1.png" alt="old-environment1" /></p>
+
+<p>The UI will have three buttons:</p>
+<ul>
+  <li>Deploy Configuration: Any changes or modifications made in the portal will be deployed to the OP agent for the sync process when deployed the configurations from the portal.</li>
+  <li>Agent Settings: This page has three tabs that configures the setting for the environment.<br />
+(a)Log Settings: Log settings captures the details of the Sync process.  <br />
+(b)Real Time Settings: Real Time settings is required when working with Real Time touchpoints using <a href="/api-management/steps-to-create-webhook-endpoint/">Webhooks</a> of the API Management.<br />
+(c)Resync Settings: Users can enable/disable the Autosync feature of the OP agent in the Resync Settings tab.</li>
+</ul>
+
+<h3 id="working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</h3>
+
+<p>Environments needs to be configured for the generation of the sync logs, autosync activation and Realtime settings configuration. Users need to 
+configure the panel accordingly for detailed output and process.</p>
+
+<p><img src="/staticfiles/deployment/media/RevampedEnv/old-environment2.png" alt="old-environment2" /></p>
+
+<p><strong>Note: (a) Agent status for old agents will be displayed in RED but will have the complete functionality of an Active Agent.<br />
+        (b) Users can detach/attach the agents for detaching/attaching the agent</strong>.</p>
+
+<p class="notice--info"><strong>ProTip:</strong> (1) Agent needs to be dissociated first from the portal, before reassigning the same license key. <br />
+            (2) APPSeCONNECT <a href="/license%20management/license-management/">License Management</a> is compatible even with older versions of the agent.</p>
+
+<p><strong>Log Settings:</strong> Log settings captures the severity details of the logs that are generated. User can filter accordingly as per severity basis of the logs. 
+The page captures the following operations:</p>
+<ul>
+  <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
+  <li>Log in Database: The log fetched, would be stored in the database.</li>
+  <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
+  <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High, Critical.</li>
+</ul>
+
+<p><strong>Note: It is recommended that users select all the three option for detailed information for the SET TARGET FOR and SEVERITY LEVEL option</strong>.</p>
+
+<p><img src="/staticfiles/deployment/media/RevampedEnv/old-environment3.png" alt="old-environment3" /></p>
+
+<p><strong>Real Time settings</strong> - Realtime settings is required when working with the Realtime Touchpoint in API Management. Configurations should be made only when working with the Webhook API(s) and the Real Time Touchpoints in 
+<a href="/api-management/overview/">APPSeCONNECT API Management</a>.
+Real Time settings has two field for the configurations:</p>
+<ul>
+  <li>Real Time Host Name: Users needs to enter the <a href="/api-management/Steps-to-register-url/">Register URL</a> of the Real Time Touchpoints.</li>
+  <li>Port: This is the Port number of the hosted URL.
+<img src="/staticfiles/deployment/media/RevampedEnv/old-environment4.png" alt="old-environment4" /></li>
+</ul>
+
+<p><strong>Resync Settings:</strong> This section of the page has a checkbox for the user to Enable/Disable the autosync from the portal.</p>
 
 
                 
