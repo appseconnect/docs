@@ -2155,9 +2155,9 @@
     <None Include="_posts\Deployment\2018-12-10- settings.md" />
     <None Include="_posts\Deployment\2018-11-20- overview.md" />
     <None Include="_posts\Deployment\2018-11-20-gettingstarted-with-deployment.md" />
-    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Deployment Configuration.md" />
-    <None Include="_posts\Deployment\Enviornment Management\2018-11-20-Enviornment Overview.md" />
-    <None Include="_posts\Deployment\Enviornment Management\2018-11-21-Agent Blocking and Unblocking.md" />
+    <None Include="_posts\Deployment\Environment Management\2018-11-20-Deployment Configuration.md" />
+    <None Include="_posts\Deployment\Environment Management\2018-11-20-Enviornment Overview.md" />
+    <None Include="_posts\Deployment\Environment Management\2018-11-21-Agent Blocking and Unblocking.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-21-hana-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-23-OLE-db-plugin-installation.md" />
     <None Include="_posts\Deployment\Transactional Stores\2018-11-22-MYSQL-plugin-installation.md" />

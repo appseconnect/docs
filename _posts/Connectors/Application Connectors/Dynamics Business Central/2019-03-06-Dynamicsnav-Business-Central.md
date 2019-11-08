@@ -1,11 +1,11 @@
 ﻿---
-title: "Dynamics NAV Business Central"
+title: "Dynamics NAV"
 toc: true
 tag: developers
 category: "Connectors"
 menus: 
     applicationconnector :
-        title: "Dynamics NAV Business Central"
+        title: "Dynamics NAV "
         weight: 14
         icon: fa fa-file-word-o
         identifier: navbusinesscentralconnector
@@ -16,7 +16,7 @@ Here you will find the detailed description on how to configure the agents for t
 
 **Note: For Integrating with Microsoft Dynamics Business Central, the application Microsoft Dynamics NAV (≥ 2009R2 Generic) is needed to be selected in AEC Portal**
 
-## Prerequisites for NAV Business Central Configuration 
+## Prerequisites for Dynamics NAV Configuration 
 
 1.	Select the application Microsoft Dynamics NAV (≥ 2009R2 Generic) in the APPS section of the APPSeCONNECT Portal.
 2.	Create and publish a connection in the cloud portal.
@@ -49,7 +49,7 @@ Call this in OnRun() and save and then Run the CodeUnit.
 
 
 
-## Configure the NAV Business Central Application in the Agent
+## Configure the Dynamics NAV in the Agent (SOAP BASED PROTOCOL)
 
 1. Login to your AEC Agent with your registered account credentials.
 2. Click on the settings button to view the Credentials page.     
@@ -61,6 +61,8 @@ Call this in OnRun() and save and then Run the CodeUnit.
 ![nav-businesscentral3](/staticfiles/connectors/media/application-connector/nav-businesscentral3.png)
 
 The above steps completes the process of configuring Agent with NAV credentials
+
+## Configure the Dynamics NAV in the Agent (REST BASED PROTOCOL)
 
 ## Troubleshooting
 
