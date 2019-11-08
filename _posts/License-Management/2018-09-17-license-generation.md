@@ -17,7 +17,7 @@ due to APPSeCONNECT License Management.
 As each OP Agent, for each organisation in APPSeCONNECT, are now registered using a License key which is generated 
 using the `Organisation ID` & the `MAC ID` of the system thereby preventing other systems & users from logging in.
 
-Implementer/Developers requires to login to the client OP Agent for the purpose of implementing or debugging 
+Partners/Developers requires to login to the client OP Agent for the purpose of implementing or debugging 
 client issues and features. Therefore, APPSeCONNECT provides the temporary license key generation feature for the Partners
 and the Developers, such that they can login in the client environment for work purpose.
 
@@ -25,7 +25,7 @@ and the Developers, such that they can login in the client environment for work 
 
 Super Admins of APPSeCONNECT will be able to generate a temporary License key from the portal, for any organisation, 
 which is needed to be accessed. The key will be valid for a limited time as selected from the portal. Using the generated key, 
-implementers/developers can log in to client environment using their (implementers/developers) own agent credentials.
+partners/developers can log in to client environment using their (partners/developers) own agent credentials.
 
 **Note: Only an APPSeCONNECT user with Super-Admin access, will be able to generate the temporary License Key for 
 Organizations.**
@@ -50,8 +50,8 @@ Organizations.**
 ![rolling-window7](/staticfiles/licensekey/rolling-window7.png) 
 
 **Note: (a)This feature of Generating Temporary License is solely for the Partners and the Developers.       
-        (b) On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent
-        (c) Feed will not generate any login details of the user with respect to generating tempoarry license key for an organization**
+        (b) On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent.      
+        (c) Feed will not generate any login details of the user with respect to generating tempoarry license key for an organization.**
 
 
 

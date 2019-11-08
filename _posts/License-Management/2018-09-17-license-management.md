@@ -23,14 +23,14 @@ a revocable, secure and unique license or a security token that is provided by t
 * License key will be revocable and traceable, i.e. it can be removed or revoked when the subscription gets expired and renewed further. 
 * Each License key is generated considering the Organization ID and MacID which enhances the security of your application preventing unauthorized access.
 * License Key is not dependable on Username and Password as the Auto-Sync services will remain active even if the password is changed. The License key once assigned, cannot be resigned again by changing the Username/Password.
-* The feature Rolling Window will provide the Implementers and Developers an access to client agent environment. Read to know more about [Rolling Window]().
+* The feature Rolling Window will provide Partners and Developers an access to client agent environment. Read to know more about [Rolling Window](/license%20management/license-generation/).
 * Multiple OP Agent instances can be set as primary after license key implementation. 
 * License Key once generated will stay valid till the time user subscription is valid. 
 * Multiple users of the organisation will now be able to login to same as well as different agent environments.
 * A user of an organization will not be able to login to the same environment, if that user is already been linked with any other organization. 
 * Every agent associated with an organisation, will have separate license key for each agent instances in each environment.
 
-**Note: (a) Agent needs to be dissociated first from the portal, before reassigning the same license key.
+**Note: (a) Agent needs to be dissociated first from the portal, before reassigning the same license key.    
         (b) APPSeCONNECT License Management is compatible even with older versions of the agent**
 
 ### Usability Aspect of License Management
