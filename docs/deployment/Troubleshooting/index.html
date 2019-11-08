@@ -646,6 +646,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/workflow/Advance-Workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/workflow/Advance-Workflow/" onclick="selectTab('/workflow/Advance-Workflow/', event);" title="Go to Advance Workflow">Advance Workflow</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/workflow/quickstart-guides-to-workflow-management/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/workflow/quickstart-guides-to-workflow-management/" onclick="selectTab('/workflow/quickstart-guides-to-workflow-management/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1790,7 +1796,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -1802,14 +1808,19 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#troubleshooting-scenario-1---the-error-systemnullreferenceexception-occurs-during-update-configuration">Troubleshooting Scenario 1 - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</a></li>
+  <li><a href="#troubleshooting-scenario-2---correctfilenotfound---while-configuring-an-application-in-the-op-agent">Troubleshooting Scenario 2 - CorrectFileNotFound - While Configuring an Application in the OP Agent</a></li>
+  <li><a href="#troubleshooting-scenario-3---nothing-to-post-to-sap---often-occurrs-while-integrating-with-sap">Troubleshooting Scenario 3 - Nothing to POST to SAP - Often occurrs while Integrating with SAP</a></li>
+  <li><a href="#troubleshooting-scenario-4---agent-is-disconnectedblocked">Troubleshooting Scenario 4 - Agent is Disconnected/Blocked</a></li>
+</ul>
                     </nav>
                 </aside>
                 
                 <p>While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent.
 Given below are common troubleshooting scenarios to ease the debugging areas.</p>
 
-<p><strong>Troubleshooting Scenario 1:</strong> - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</p>
+<h3 id="troubleshooting-scenario-1---the-error-systemnullreferenceexception-occurs-during-update-configuration">Troubleshooting Scenario 1 - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</h3>
 
 <p><img src="/staticfiles/deployment/media/Troubleshooting/SystemError-UpdateConfig.png" alt="SystemError-UpdateConfig" /></p>
 
@@ -1830,7 +1841,7 @@ Given below are common troubleshooting scenarios to ease the debugging areas.</p
 <p><strong>NOTE</strong> InSync.eConnect.NLogModule.dll is a system file, generated only during the agent installation. 
 Updating Adapters will not fetch this file back</p>
 
-<p><strong>Troubleshooting Scenario 2:</strong> - CorrectFileNotFound - While Configuring an Application in the OP Agent</p>
+<h3 id="troubleshooting-scenario-2---correctfilenotfound---while-configuring-an-application-in-the-op-agent">Troubleshooting Scenario 2 - CorrectFileNotFound - While Configuring an Application in the OP Agent</h3>
 
 <p><img src="/staticfiles/deployment/media/Troubleshooting/AppConfig-Error.png" alt="AppConfig-Error" /></p>
 
@@ -1850,8 +1861,8 @@ If the adapter file is missing, Click UPDATE ADAPTERS in the agent.</li>
   <li>Log Off and Exit the agent and Open again. Check your App Configuration Page.</li>
 </ul>
 
-<p><strong>Troubleshooting Scenario 3:</strong> - Nothing to POST to SAP - Often occurrs while Integrating with SAP 
-even if data is present in the Source Application.
+<h3 id="troubleshooting-scenario-3---nothing-to-post-to-sap---often-occurrs-while-integrating-with-sap">Troubleshooting Scenario 3 - Nothing to POST to SAP - Often occurrs while Integrating with SAP</h3>
+<p>even if data is present in the Source Application.<br />
 <img src="/staticfiles/deployment/media/Troubleshooting/TransactionLog-Error.png" alt="TransactionLog-Error" /></p>
 
 <p><strong>Solution</strong></p>
@@ -1860,6 +1871,31 @@ even if data is present in the Source Application.
   <li>Execute the integration again by deleting the TEMP and the CACHE files.</li>
   <li>Also switch OFF &amp; ON the DI server before executing with the Integration for the 2nd Time.</li>
 </ul>
+
+<h3 id="troubleshooting-scenario-4---agent-is-disconnectedblocked">Troubleshooting Scenario 4 - Agent is Disconnected/Blocked</h3>
+
+<p><img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png" alt="agent-disconnected" /></p>
+
+<p>When setting up the environment for the sync process, the environment for selected agent displays the message <code class="highlighter-rouge">Agent is Disconnected</code>. Also, while logging in to the OP agent, 
+it displays the message <code class="highlighter-rouge">Agent is Blocked</code>. This is due to the reason that the agent has been detached from the portal.<br />
+Steps to Troubleshoot:</p>
+
+<ul>
+  <li>Login to the portal and navigate to Manage &gt; Environment.</li>
+  <li>The <a href="/deployment/Environment-Management/">environment listing</a> page opens. Click over the environment which is disconnected and is needed to be connected.</li>
+  <li>Click on the Attach button visible at the top right corner of the page, to reactivate the environment</li>
+</ul>
+
+<p><img src="/staticfiles/deployment/media/Troubleshooting/troubleshooting-scenario4.png" alt="troubleshooting-scenario4" /></p>
+
+<ul>
+  <li>Upon attaching the environment from the portal, restart and login to the agent on your local system.</li>
+  <li>Navigate to the settings page of the agent and Activate the autosync. On activating the autosync, your environment will connect with the portal.</li>
+</ul>
+
+<p>Note: (a) Without activating the autosync or if the autosync is off, your environment in portal would remain as disconnected. Before troubleshooting this scenario verify, whether your Autosync is activated or not.  <br />
+      (b) Old agent users would get the message as <code class="highlighter-rouge">Your agent is deactivated</code>. Please contact the administrator while logging in to OP Agent. <br />
+          The steps to troubleshoot the error is common to this scenario. Old agent users could troubleshoot easily following the above given steps.</p>
 
                 
             </section>
@@ -1946,6 +1982,14 @@ even if data is present in the Source Application.
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             
@@ -3783,6 +3827,8 @@ even if data is present in the Source Application.
                                     HANA Plugin
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

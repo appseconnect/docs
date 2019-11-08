@@ -11,8 +11,6 @@ menus:
         identifier: templicense      
 ---
 
-## Generating Temporary License for Organization
-
 Partners & Developers or any other user (except the client) can now, no longer be able to login into the client environment, 
 due to APPSeCONNECT License Management. 
 
@@ -51,8 +49,9 @@ Organizations.**
 7.	Click on the login button after pasting the generated license key.  
 ![rolling-window7](/staticfiles/licensekey/rolling-window7.png) 
 
-**Note: (a)This feature of Generating Temporary License is solely for the Partners and the Developers. 
-        (b)On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent**
+**Note: (a)This feature of Generating Temporary License is solely for the Partners and the Developers.       
+        (b) On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent
+        (c) Feed will not generate any login details of the user with respect to generating tempoarry license key for an organization**
 
 
 

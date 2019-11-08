@@ -50,8 +50,9 @@ log in to the same Agent environment.**
 
 * On-behalf login for client by the superuser will be stopped in OP Agent.
  
-**NOTE:No implementer/partner/developer will be able to login separately for an organization which was available 
-  for all earlier Agent versions of 4.3 and lower.**
+**NOTE: No implementer/partner/developer will be able to login separately for an organization which was available 
+  for all earlier Agent versions of 4.3 and lower.However, the above Implementer/Developers can login using 
+  Temporary license (Link to the Rolling window document) key to access other organisation environments.**
 
 
 

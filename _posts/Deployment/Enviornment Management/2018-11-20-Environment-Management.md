@@ -150,6 +150,8 @@ Steps:
 Environment detachment is blocking the Agent from use in that specific environment. So, when you detach the selected environment from Portal, 
 it remains in the list but will show as disconnected. Post detachment, if the user tries to relogin, it will give `Agent is blocked` error.
 
+![agent-disconnected](/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png)
+
 To unblock the environment, you must Attach that environment once again.
 
 **NOTE:**
