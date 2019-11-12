@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Rule"
 menus: 
-    overviewrule:
+    defaultrule:
         title: "Default Rule for Morning Report"
         weight: 18
         icon: fa fa-wpexplorer

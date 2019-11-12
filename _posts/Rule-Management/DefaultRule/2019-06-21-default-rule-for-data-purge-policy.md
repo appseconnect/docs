@@ -1,11 +1,11 @@
 ---
-title: "APPSeCONNECT Data Purge Policy"
+title: "Default Rule for Data Purge Policy"
 toc: true
 tag: developers
 category: "Rule"
 menus: 
-    overviewrule:
-        title: "APPSeCONNECT Data Purge Policy"
+    defaultrule:
+        title: "Default Rule for Data Purge Policy"
         weight: 18
         icon: fa fa-wpexplorer
         identifier: datapurgepolicy

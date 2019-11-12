@@ -50,8 +50,8 @@ d.	Schema Namespace URL: Differentiates between two similar schemas using URL.
 ![importing-schema2](/staticfiles/Transformation/media/importing-schema2.png)
 5.	Clicking on the Import button, a Pop-up will appear where the user can import XML, JSON, WSDL (Web Services Description Language) 
     file for the Schema.
-•	In JSON and XML format the user needs to choose the respective XML and JSON file saved locally, but in WSDL format the user needs to provide the WSDL file link for importing the schema
-•	For generic apps, WSDL option will not be available for import to any protocol other than SOAP.  
+* In JSON and XML format the user needs to choose the respective XML and JSON file saved locally, but in WSDL format the user needs to provide the WSDL file link for importing the schema
+* For generic apps, WSDL option will not be available for import to any protocol other than SOAP.  
 ![importing-schema3](/staticfiles/Transformation/media/importing-schema3.png)
 6. For the XML/JSON format, the user needs to upload the file that supports the respective formats. For XML, the user needs to 
    upload XML file and for JSON, the JSON file needs to be uploaded.
@@ -63,8 +63,8 @@ In this case, the parent is items, therefore the Element should be items.
     Expanding the complex object & complex object collection will display all the attributes present.
 ![importing-schema6](/staticfiles/Transformation/media/importing-schema6.png)  
 **Note:**   
-•	The user must save each node individually. There is no way the user can save it on the whole.  
-•	This process is same for both the XML and JSON formats.
+(a) The user must save each node individually. There is no way the user can save it on the whole.  
+(b) This process is same for both the XML and JSON formats.
 9.	For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.  
 ![importing-schema7](/staticfiles/Transformation/media/importing-schema7.png)
 10.	Click on the SAVE button individually for the saving each of the nodes.
@@ -96,9 +96,9 @@ c.	Reference API: If any schema needs to be referred for the transformation, tha
 d.	Tags: for providing specific tags to the attribute
 e.	Namespace Prefix: Prefix could be added for this attribute while working with namespaces.
 f.	Attribute Property: This section has 3 checkboxes -  Primary, Required, Attribute.  
-•	Primary: for allotting this attribute as the Primary Key.  
-•	Required: for making this attribute mandatory for the mapping purpose.  
-•	Attribute: To add attribute in the XSLT   
+* Primary: for allotting this attribute as the Primary Key.  
+* Required: for making this attribute mandatory for the mapping purpose.  
+* Attribute: To add attribute in the XSLT   
 9.	The user can view a toggle button below for allotting this attribute with the Active/Inactive status.    
 ![adding-attribute5](/staticfiles/Transformation/media/adding-attribute5.png)  
 10. Click SAVE button, after all the details has been made. 
