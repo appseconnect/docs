@@ -46,7 +46,7 @@ appears. The screen above gives drill down node view of the workflow.
 Get, Halt, Resume,Process, Post etc. as shown below
 ![getoperation-resyncbucket](/staticfiles/workflow-management/media/getoperation-resyncbucket.png)
 5. Every node captures the following details as given below:
-* Resync Bucket - Resync Bucket - This shows the status of the resync bucket wrt to the node. By default, 
+* Resync Bucket - This shows the status of the resync bucket wrt to the node. By default, 
 resync bucket opens up wrt to the selected node of the workflow. Resync Bucket gives information of the node
 being processed and it captures information like source id, destination id, Additional Data and Tries)
 * Log Bucket - This shows the logs specific to a node/loop. The errors will be displayed, if any.

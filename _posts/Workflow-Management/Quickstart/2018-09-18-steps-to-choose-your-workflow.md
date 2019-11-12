@@ -35,6 +35,8 @@ for which connection you want the workflow to get activated.
 ![ChooseConnection-mutliple](/staticfiles/workflow-management/media/ChooseConnection-mutliple.png)
 6.  Click Save the Workflow gets added to the organisation workflow panel.
 
+**Note: Choose workflow or Pre-packaged workflows option will not be available for Custom or Technology applications**
+
 **Protip:** On adding the pre-packaged workflow in the organisation, the added workflow disappears from the Choose Workflow List. 
 Deleting the workflow, the workflow name re-appears in the list
 {: .notice--info}

@@ -63,8 +63,7 @@ If you are new to Workflow, then go through the below steps to know more.
 
    ![Masterdata-Add](/staticfiles/workflow-management/media/Masterdata-Add.png)
 
-* Similarly, drag & drop more touchpoints to complete a cycle.
-* A list of different types of touchpoints will be generated
+* Similarly, drag & drop more touchpoints to complete a cycle and generate different types of touchpoints.
 
 ![Templates](/staticfiles/workflow-management/media/Templates.png)
 9. Drag in the general touchpoint to the workflow creation area    
@@ -74,7 +73,7 @@ If you are new to Workflow, then go through the below steps to know more.
 11. Connect the `Start` Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.  
 ![StartEnd-NodeConnected](/staticfiles/workflow-management/media/StartEnd-NodeConnected.png)
 12. Click on `Save`. The workflow is now ready to be executed.   
-13. After all the steps have been completed - [Agent & Cloud Configuration](/deployment/Deployment-Configuration/), the workflow is ready to be run.    
+13. After all the steps have been completed - [Agent & Cloud Configuration](/deployment/Environment-Management/), the workflow is ready to be run.    
 ![Runbutton](/staticfiles/workflow-management/media/Runbutton.png)
 
 **NOTE** - Initially the Run button will be in disabled state, you have to activate it following these steps:

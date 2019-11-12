@@ -80,7 +80,7 @@ After Publishing and Executing the workflow, the results are displayed in the re
 The Pop up window shown below, confirms the connectivity.
 ![deploying-workflow2](/staticfiles/workflow-management/media/deploying-workflow2.png) 
 3. After the confirmation of the connectivity, click on the Deploy Configuration button to deploy the workflow connection
-in the agent. The user can also click on the Update Configuration button in the OP Agent.
+in the agent. The user can also click on the Update Configuration button in the OP Agent.  
 **Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
 and Deploy Configuration should be clicked for the agent that is being used.**
 4. After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.

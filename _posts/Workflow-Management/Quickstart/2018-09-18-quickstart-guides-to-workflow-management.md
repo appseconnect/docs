@@ -18,8 +18,18 @@ By reading this document an implementer would be able to design the first workfl
 
 To know in details, go through the given sections:
 
-[Attribute Mapping of workflow](/workflow/attribute-mapping-workflow/)
+|Workflow Usage|Description|
+|-----|----------|
+|[Steps to choose your workflow](/workflow/steps-to-choose-your-workflow/)  |This Feature lists you all the pre-packaged workflows.|
+|[Steps to create your first workflow](/workflow/steps-to-create-your-first-workflow/) |This section will guide you through workflow creation & configuration in simple steps.|
+|[Attribute Mapping of workflow](/workflow/attribute-mapping-workflow/)|While Working with Workflow `Attribute Mapping` needs to be implemented before integrating. |
+|[Resuming Workflows](/resuming%20workflows/resuming-workflows/)    |By Resuming Workflow wherein, when a workflow execution gets stopped midway,restart the workflowing is not required instead the workflow would resume from the node it stopped.|
+|[Scheduling, Deploying, Publishing & Executing workflows](/workflow/deploying-and-executing/)|With APPSeCONNECT Workflow, you can deploy, execute and maintain business integrations|    
+|[Data-view process of workflow snapshot](/workflow/list-of-snapshot/)   |The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the process. |
+|[Debugging a workflow](/workflow/debugging-a-workflow/)   |This helps you to investigate the workflow by executing one or more nodes directly within the workflow and inspect the data being fetched or passed to the actions.|
 
-[Steps to create your first workflow](/workflow/steps-to-create-your-first-workflow/)
+   
+  
+    
 
-[Debugging a workflow](/workflow/debugging-a-workflow/)
+ 
