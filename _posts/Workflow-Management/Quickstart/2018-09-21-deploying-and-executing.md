@@ -1,14 +1,14 @@
 ---
-title: "Scheduling, Deploying, Publishing & Executing workflows"
+title: "Scheduling, Deploying & Executing workflows"
 toc: true
 tag: developers
 category: "Workflow" 
 menus: 
-    quickstartworkflow:
+    workflow:
         icon: fa fa-link
-        weight: 8
-        title: "Scheduling, Deploying, Publishing & Executing workflows"
-        identifier: quickstartfirstworkflow
+        weight: 4
+        title: "Scheduling, Deploying & Executing workflows"
+        identifier: deployworkflow 
 
 ---
 Workflow in APPSeCONNECT provides integration solution which helps any business to execute
@@ -29,11 +29,11 @@ runtime to debug and execute workflows.
 
 ## Scheduling a Workflow
 
-1.	Navigate to the workflow design area and click on the Schedule button.  
-![scheduling-workflow](/staticfiles/workflow-management/media/scheduling-workflow.png)   
-2.	The schedule window shows up. The windows have the following fields as displayed below:  
-![scheduling-workflow2](/staticfiles/workflow-management/media/scheduling-workflow2.png)     
-a.	Sync type: This depicts whether the process is Auto or Manual.      
+1.	Navigate to the workflow design area and click on the Schedule button.
+![scheduling-workflow](/staticfiles/workflow-management/media/scheduling-workflow.png) 
+2.	The schedule window shows up. The windows have the following fields as displayed below:
+![scheduling-workflow2](/staticfiles/workflow-management/media/scheduling-workflow2.png)   
+a.	Sync type: This depicts whether the process is Auto or Manual.    
 b.	Repeat: This has three option in the drop-down Every Minute, Daily & Hourly.    
 c.	Repeat Interval: This determines the time gap between the sync processes.     
 d.	End: This field has two options.   
@@ -50,27 +50,18 @@ is given below
 1.	After creating and saving the workflow, click `Reset Generate` Button followed by `Reset Publish`button.
 ![publish-workflow](/staticfiles/workflow-management/media/publish-workflow.png)
 
-The Actions column on the right side of screen consist of buttons that configures and publish the touchpoint used in the workflow.
+2. The Actions column on the right side of screen consist of buttons that configures and publish the touchpoint used in the workflow.
 
-a. Preview - This button previews the XSLT for the touchpoint used in the workflow  
-b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.  
-c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.  
-d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced.   
-   The portal view for the Resync Bucket is given below.
+a. Preview - This button previews the XSLT for the touchpoint used in the workflow
+b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.
+c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.
+d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. The portal view for the Resync Bucket is given below.
 ![resync_button](/staticfiles/workflow-management/media/resync_button.png)
 
- On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
+3. On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
 user made in the APPSeCONNECT cloud` and is `compiled to a single file stored on the server` which is 
 accessible from the APPSeCONNECT Agent.
-
 ![publish-workflow2](/staticfiles/workflow-management/media/publish-workflow2.png) 
-
-After Publishing and Executing the workflow, the results are displayed in the resync bucket. 
-
-* The failed data in the resync bucket will be resynced using **autosync** if the workflow is scheduled. 
-* In manual mode, the users needs to select the failed data individually from the Resync Bucket for executing resync. 
-
-**NOTE:If you change attribute mapping in a workflow, the user needs to Reset Generate and Reset Publish the workflow before deploying**
 
 ## Deploying a Workflow
 
