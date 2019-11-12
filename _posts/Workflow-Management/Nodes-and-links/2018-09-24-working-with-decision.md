@@ -7,7 +7,7 @@ tag:
 category: "Workflow"
 
 menus: 
-    nodeandlinks:
+    nodesprocess:
         icon: fa fa-link
         title: "Working with Decision" 
         identifier: noderule

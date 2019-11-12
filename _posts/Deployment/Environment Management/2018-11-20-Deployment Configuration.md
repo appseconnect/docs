@@ -15,6 +15,11 @@ and in `OP Agent`. This section of the document will enable you to know and conf
 
 ## Cloud Agent Configuration
 
+**Protip** By default, organisations will only be On-Premise enabled. Users of the organisation needs to  
+contact the APPSeCONNECT team for enabling cloud hosted organisation so that users can integrate cloud application 
+using the cloud agent.
+{: .notice--info}
+
 ### Pre-requisites
 * The Organisation should be cloud Enabled.
 * The two applications between which data has to be synced should be cloud supported.

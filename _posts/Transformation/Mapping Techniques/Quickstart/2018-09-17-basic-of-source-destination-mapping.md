@@ -38,7 +38,7 @@ Under For-Each loop, Entities have been used and Variables are set under Entitie
 Variables are defined by two types of scopes. 
 
 1. **Root Variable** - Global variable which can used in any entity.
-2. **Root Entry Variable** - is a local Variable which is generally used under the scope of an entity.
+2. **Root Entity Variable** - is a local Variable which is generally used under the scope of an entity.
 
 ## Steps to Perform the Source-Destination (Attribute) Mapping
 

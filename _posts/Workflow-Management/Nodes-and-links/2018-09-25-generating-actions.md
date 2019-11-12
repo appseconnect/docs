@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     nodeandlinks:
         icon: fa fa-link
+        weight: 2
         title: "Actions" 
         identifier: nodesaction
 ---
