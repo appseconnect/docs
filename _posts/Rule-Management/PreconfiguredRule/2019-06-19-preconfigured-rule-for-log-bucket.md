@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Rule"
 menus: 
-    overviewrule:
+    preconfigurerule:
         title: "Pre-Configured Rule for Log Bucket"
         weight: 18
         icon: fa fa-wpexplorer

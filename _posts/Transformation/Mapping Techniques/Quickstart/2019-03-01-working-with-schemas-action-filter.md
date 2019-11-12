@@ -63,8 +63,8 @@ In this case, the parent is items, therefore the Element should be items.
     Expanding the complex object & complex object collection will display all the attributes present.
 ![importing-schema6](/staticfiles/Transformation/media/importing-schema6.png)  
 **Note:**   
- (a)The user must save each node individually. There is no way the user can save it on the whole.  
- (b) This process is same for both the XML and JSON formats.
+•	The user must save each node individually. There is no way the user can save it on the whole.  
+•	This process is same for both the XML and JSON formats.
 9.	For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.  
 ![importing-schema7](/staticfiles/Transformation/media/importing-schema7.png)
 10.	Click on the SAVE button individually for the saving each of the nodes.
