@@ -2608,7 +2608,6 @@
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-12-productadd.md" />
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-11-business-partneradd.md" />
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-11-SAPB1-Magento2.md" />
-    <None Include="_posts\Rule-Management\2019-03-14-overview-of-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-15-choose-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-18-preconfigured-rule-for-resync-bucket.md" />
     <None Include="_posts\Rule-Management\2019-03-19-preconfigured-rule-for-log-bucket.md" />
