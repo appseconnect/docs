@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     nodeselement:
         icon: fa fa-link
+        weight: 6
         title: "Working with Delay" 
         identifier: nodedelay
 ---

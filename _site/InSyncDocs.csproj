@@ -2845,7 +2845,10 @@
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />
     <None Include="_posts\Workflow-Management\2018-10-11-faqs.md" />
     <None Include="_posts\Workflow-Management\2018-10-13-Troubleshooting.md" />
-    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-25-generating-elements.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-generating-elements.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-26-process-property.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-27-working-with-loops.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\working-with-rule.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-21-deploying-and-executing.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-22-list-of-snapshot.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-20-workflow-nodes-and-links.md" />
@@ -2856,7 +2859,6 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-23-working-with-delay.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-working-with-decision.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-working-with-halt-resume.md" />
-    <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-working-with-loops.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-working-with-merger.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-working-with-sequencer.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\2018-09-24-working-with-splitter.md" />
@@ -2869,6 +2871,7 @@
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-18-steps-to-choose-your-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-19-steps-to-create-your-first-workflow.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-20-attribute-mapping-workflow.md" />
+    <None Include="_posts\Workflow-Management\Quickstart\2018-09-22-resuming-workflows.md" />
     <None Include="_posts\Workflow-Management\Quickstart\2018-09-23-debugging-a-workflow.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-27-basic-workflow-customer-download.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-27-common-use-cases-on-workflow-management.md" />
@@ -2879,6 +2882,7 @@
     <None Include="_posts\Workflow-Management\use-cases\2018-09-27-workflow-showing-product upload with stock sync.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-28-process-to-configure-a-task-with-acknowledgement.md" />
     <None Include="_posts\Workflow-Management\use-cases\2018-09-28-workflow-showing-salescycle-with-post and post taskinput.md" />
+    <None Include="_posts\Workflow-Management\use-cases\2018-09-29-workflow-showing-resume-functionality.md" />
     <None Include="_sass\minimal-mistakes\custom-style.scss" />
     <None Include="_site\aecdocs - Shortcut %282%29.lnk" />
     <None Include="_site\aecdocs - Shortcut.lnk" />

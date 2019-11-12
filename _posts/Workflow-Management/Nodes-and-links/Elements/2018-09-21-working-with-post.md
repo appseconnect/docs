@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     nodeselement:
         icon: fa fa-link
+        weight: 4
         title: "Working with Post" 
         identifier: nodepost
 ---

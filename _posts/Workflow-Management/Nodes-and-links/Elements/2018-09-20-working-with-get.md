@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     nodeselement:
         icon: fa fa-link
+        weight: 2
         title: "Working with Get" 
         identifier: nodeget 
 ---

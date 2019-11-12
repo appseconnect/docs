@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     nodeselement:
         icon: fa fa-link
+        weight: 5
         title: "Working with Halt/Resume" 
         identifier: nodehalt
 ---

@@ -24,7 +24,8 @@ As a user, if you want to perform some actions in your Workflow such as sending 
    - ***Email***: Sending Email notification to the user account which is currently logged in to the admin portal.
    - ***Support Ticket***: Raising a support ticket to the cloud automatically.
    - ***Webhook***: Webhook is used for sending some data(information) to an external application apart from the destination application with the help of an URL which would hit directly the web service of that external application.
-   - ***Snapshot***: The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the process. 
+   - ***Storage***: This node stores filtered data in a custom storage defined by the user.
+  
    
 ### Filters
 The filter is a special kind of data manipulation node, that uses criteria to produce a subset of data 

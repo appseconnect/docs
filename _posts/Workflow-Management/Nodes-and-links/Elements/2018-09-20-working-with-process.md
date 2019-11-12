@@ -8,6 +8,7 @@ category: "Workflow"
 menus: 
     nodeselement:
         icon: fa fa-link
+        weight: 3
         title: "Working with Process" 
         identifier: nodeprocess
 ---
