@@ -45,7 +45,7 @@ In the Personal Info tab, you can edit your name, mobile number.
 This section gives the overall idea about chhosing application, configuring connection, environment setup and execution of the sync process. Step by Step direction is given below:
 Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details.
 
-## Choosing Application
+
 ##  Process of Choosing App 
 1. Choose App option enables you to choose app from the list of prepackaged apps on the portal.
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
