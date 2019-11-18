@@ -265,10 +265,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214a73', end
 .learningtrailRight ul li a span {display:block; clear:both; width:100%; color:#2970b7; font-weight:bold; text-decoration:none; font-size:14px; line-height:24px; text-align:center;}
 .archive a {color: #3b3c3e !important;}
 body.layout--single a, body.layout--archive-taxonomy a, body.layout--archive-taxonomy a:visited, .notice--info a { text-decoration:none;}
-
-
-
-
+/* ------- Left and right bar changes 15-11-2019  ---------------*/
+.sidebar.sticky .jstree-default .jstree-anchor {height: auto;}
+.sidebar.sticky .jstree-anchor {white-space: pre-wrap;}
+#main .sidebar.sticky {overflow-y: auto;overflow-x: hidden;}
+.sidebar__right .toc {height: 350px;overflow-y: auto;}
 
 
 @media only screen and (max-width: 1336px) {
@@ -346,8 +347,9 @@ body.layout--single .sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh
 #cssmenu #menu-button:before { display: block; content: ''; position: absolute; height: 3px; width: 22px; border-top: 2px solid #ffffff; right: 20px; top: 26px;}
 .headerLogo { float: none; width: 270px; padding: 2px 10px 4px 0; border-right: 0; margin: 0 auto 10px;}
 }
+
 @media only screen and (max-width: 800px) {
-.footerPan {padding: 10px;}
+    .footerPan {padding: 10px;}
 .footerInn {width: 100%; text-align: center;}
 .footerInn ul li { width: auto; float: none; clear: none; display: inline-block;}
 .footerInn ul {padding: 0; overflow: hidden;}
