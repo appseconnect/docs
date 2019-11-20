@@ -12,7 +12,7 @@ menus:
         identifier: restfiltersmapping
 ---
  
-## Given below is the mapping details for Rest Adapter required for data Integration.
+Given below is the mapping details for Rest Adapter required for data Integration.
 
 ### Basic prerequisite for Mapping: 
 (A) Here the destination app has been configured using REST adapter and the destination App 
