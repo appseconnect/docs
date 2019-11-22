@@ -1529,20 +1529,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Dynamics NAV",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 168
-    });
-    
-  
-    idx.add({
       title: "Generic NAV 2009R2 Extension",
       excerpt: "Here you will get the step by step process to use NAV 2009R2 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 169
+      id: 168
     });
     
   
@@ -1551,7 +1542,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 170
+      id: 169
     });
     
   
@@ -1560,7 +1551,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2016 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 171
+      id: 170
     });
     
   
@@ -1569,7 +1560,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2017 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 172
+      id: 171
     });
     
   
@@ -1578,7 +1569,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 173
+      id: 172
     });
     
   
@@ -1587,7 +1578,7 @@ var idx = lunr(function () {
       excerpt: "If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 174
+      id: 173
     });
     
   
@@ -1596,7 +1587,7 @@ var idx = lunr(function () {
       excerpt: "Go to my rules and click on the Choose Rule option. Click on the Activate button, from the pre-packaged rules...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 175
+      id: 174
     });
     
   
@@ -1605,7 +1596,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 176
+      id: 175
     });
     
   
@@ -1614,7 +1605,7 @@ var idx = lunr(function () {
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 177
+      id: 176
     });
     
   
@@ -1623,7 +1614,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 178
+      id: 177
     });
     
   
@@ -1632,7 +1623,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 179
+      id: 178
     });
     
   
@@ -1641,7 +1632,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 180
+      id: 179
     });
     
   
@@ -1650,7 +1641,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 181
+      id: 180
     });
     
   
@@ -1659,7 +1650,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 182
+      id: 181
     });
     
   
@@ -1668,7 +1659,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 183
+      id: 182
     });
     
   
@@ -1677,7 +1668,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 184
+      id: 183
     });
     
   
@@ -1686,7 +1677,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 185
+      id: 184
     });
     
   
@@ -1695,7 +1686,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 186
+      id: 185
     });
     
   
@@ -1704,7 +1695,7 @@ var idx = lunr(function () {
       excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 187
+      id: 186
     });
     
   
@@ -1713,7 +1704,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 188
+      id: 187
     });
     
   
@@ -1722,7 +1713,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 189
+      id: 188
     });
     
   
@@ -1731,7 +1722,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 190
+      id: 189
     });
     
   
@@ -1740,13 +1731,22 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 191
+      id: 190
     });
     
   
     idx.add({
       title: "Pre-Configured Rule for Log Bucket",
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 191
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Generation of Hourly Report",
+      excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
       categories: ["Rule"],
       tags: ["developers"],
       id: 192
@@ -1772,20 +1772,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Pre-Configured Rule for Generation of Hourly Report",
-      excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 195
-    });
-    
-  
-    idx.add({
       title: "Default Rule for Data Purge Policy",
       excerpt: "IT organizations mostly struggle with data volume that accumulates and increases the overhead of operational cost. Due to the sheer...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 196
+      id: 195
     });
     
   
@@ -1794,7 +1785,7 @@ var idx = lunr(function () {
       excerpt: "Requirement of the Rule APPSeCONNECT Morning Report updates the users about the data synchronization status for each connection, on daily...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 197
+      id: 196
     });
     
   
@@ -1803,7 +1794,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 198
+      id: 197
     });
     
   
@@ -1812,7 +1803,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 199
+      id: 198
     });
     
   
@@ -1821,7 +1812,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 200
+      id: 199
     });
     
   
@@ -1830,7 +1821,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 201
+      id: 200
     });
     
   
@@ -1839,7 +1830,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 202
+      id: 201
     });
     
   
@@ -1848,7 +1839,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 203
+      id: 202
     });
     
   
@@ -1857,7 +1848,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 204
+      id: 203
     });
     
   
@@ -1866,7 +1857,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 205
+      id: 204
     });
     
   
@@ -1875,7 +1866,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 206
+      id: 205
     });
     
   
@@ -1884,7 +1875,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 207
+      id: 206
     });
     
   
@@ -1893,7 +1884,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 208
+      id: 207
     });
     
   
@@ -1902,7 +1893,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 209
+      id: 208
     });
     
   
@@ -1911,7 +1902,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 210
+      id: 209
     });
     
   
@@ -1920,7 +1911,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 211
+      id: 210
     });
     
   
@@ -3782,17 +3773,6 @@ var store = [
       {
         "title": "Dynamics NAV",
         "url": "/connectors/Dynamicsnav/",
-        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Dynamics NAV",
-        "url": "/connectors/dynamicsnav-business-central/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Microsoft Dynamics Business...",
         "teaser":
           

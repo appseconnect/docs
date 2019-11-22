@@ -867,7 +867,6 @@
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
     <None Include="_posts\apps-management\how-to-guides\handling-schemas-on-apps.md" />
-    <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-dynamicsnav-business-central.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-Dynamicsnav.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-09-generic-nav2017-mutliconnectionextension.md" />
     <None Include="_posts\Connectors\Application Connectors\Prestashop\Prestashop.md" />
@@ -876,7 +875,6 @@
     <None Include="_posts\Connectors\Application Connectors\Shipstation\2018-12-07-Shipstation.md" />
     <None Include="_posts\Connectors\Application Connectors\Woocommerce\2019-05-05-Sap-Business-Addon.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-20-Deployment Configuration.md" />
-    <None Include="_posts\Deployment\Environment Management\2018-11-20-Enviornment Overview.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-21-Agent Blocking and Unblocking.md" />
     <None Include="_posts\License-Management\2018-09-17-license-generation.md" />
     <None Include="_posts\License-Management\2018-09-17-license-management.md" />

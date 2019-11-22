@@ -4,8 +4,8 @@ toc: true
 tag: developers
 category: "Connectors"
 menus: 
-    applicationconnector :
-        title: "Dynamics NAV "
+    applicationconnector:
+        title: "Dynamics NAV"
         weight: 14
         icon: fa fa-file-word-o
         identifier: navbusinesscentralconnector
