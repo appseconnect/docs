@@ -9,4 +9,8 @@
   {% include /analytics-providers/custom.html %}
 {% endcase %}
 
+{% if site.analytics.crazyegg %}
+    {% include /analytics-providers/crazy-eggs.html %}
+{% endif %}
+
 {% endif %}
