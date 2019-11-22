@@ -1831,6 +1831,7 @@
     <Content Include="staticfiles\workflow-management\media\workflowprocess-shapshot.png" />
     <Content Include="staticfiles\workflow-management\media\WorkflowSplitter.png" />
     <Content Include="videos.html" />
+    <Content Include="_includes\analytics-providers\crazy-eggs.html" />
     <Content Include="_includes\analytics-providers\custom.html" />
     <Content Include="_includes\analytics-providers\google-universal.html" />
     <Content Include="_includes\analytics-providers\google.html" />
