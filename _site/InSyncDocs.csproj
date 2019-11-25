@@ -866,6 +866,7 @@
     <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\Advance-Workflow\2019-10-01-designing-executing-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-09-31-listing-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-09-30-overview-adv-workflow.md" />
     <None Include="_posts\apps-management\how-to-guides\handling-schemas-on-apps.md" />
