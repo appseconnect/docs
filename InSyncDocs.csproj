@@ -866,6 +866,9 @@
     <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\Advance-Workflow\2019-10-01-designing-executing-adv-workflow.md" />
+    <None Include="_posts\Advance-Workflow\2019-09-31-listing-adv-workflow.md" />
+    <None Include="_posts\Advance-Workflow\2019-09-30-overview-adv-workflow.md" />
     <None Include="_posts\apps-management\how-to-guides\handling-schemas-on-apps.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-Dynamicsnav.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-09-generic-nav2017-mutliconnectionextension.md" />
@@ -1065,7 +1068,6 @@
     <None Include="_posts\Transformation\Mapping Techniques\Use-case\2019-02-28-using-lookups-for-value-exchange.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-architecture-design-runtime.md" />
     <None Include="_posts\Workflow-Management\2018-09-17-overview.md" />
-    <None Include="_posts\Workflow-Management\2018-09-30-Advance-Workflow.md" />
     <None Include="_posts\Workflow-Management\2018-09-29-Terminologies.md" />
     <None Include="_posts\Workflow-Management\2018-10-11-faqs.md" />
     <None Include="_posts\Workflow-Management\2018-10-13-Troubleshooting.md" />
