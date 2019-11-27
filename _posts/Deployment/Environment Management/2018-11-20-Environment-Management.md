@@ -156,7 +156,7 @@ To unblock the environment, you must Attach that environment once again.
 
 **NOTE:**
 * Activate Autosync is restarted/active.
-* Delete and Detach feature is currently not available in Cloud Agent.
+* Delete and Detach feature is available both in On-Premise & Cloud Agent.
 * Implementers and partners must note that once they [login with one organization credentials](/license-management/#usability-aspect-of-license-management) in one system, they won't be able to further login with different organization 
   credentials in the same system
 
