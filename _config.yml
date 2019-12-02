@@ -76,10 +76,18 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-34675782-1
+    tracking_id          : UA-106094300-15
+  crazyegg:
+    url                  : 0089/9312.js
 
+footer_scripts           :
+  - /assets/js/plugins/jquery.fitvids.js
+  - /assets/js/plugins/jquery.greedy-navigation.js
+  - /assets/js/plugins/jquery.magnific-popup.js
+  - /assets/js/plugins/jquery.smooth-scroll.min.js
+  - /assets/js/main.min.js
 
 # Site Author
 author:
