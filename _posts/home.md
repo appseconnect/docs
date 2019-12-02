@@ -6,8 +6,7 @@ menus:
     header:
         title: Home
         icon: fa fa-home 
-        weight: 1
-        
+        weight: 1        
 ---
 APPSeCONNECT is provider of both hybrid and cloud hosted applications which can connect two or more applications irrespective of ERP, Ecommerce or Marketplaces. 
 It is called a hybrid solution because the platform gives a readymade end-to-end service which can be re-configured and downloaded from the `APPSeCONNECT Cloud` while all the credentials remain intact in the systems own premise. 

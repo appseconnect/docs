@@ -879,6 +879,13 @@
     <None Include="_posts\Connectors\Application Connectors\Woocommerce\2019-05-05-Sap-Business-Addon.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-20-Deployment Configuration.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-21-Agent Blocking and Unblocking.md" />
+    <None Include="_posts\Getting-Started\2018-09-17-overview.md" />
+    <None Include="_posts\Getting-Started\2018-09-22-configurations-for-integration.md" />
+    <None Include="_posts\Getting-Started\2018-09-21-configurations.md" />
+    <None Include="_posts\Getting-Started\2018-09-20-accessing-portal.md" />
+    <None Include="_posts\Getting-Started\2018-09-19-user-registration-license.md" />
+    <None Include="_posts\Getting-Started\2018-09-18-terminology.md" />
+    <None Include="_posts\Getting-Started\2018-09-16-getting-started.md" />
     <None Include="_posts\License-Management\2018-09-17-license-generation.md" />
     <None Include="_posts\License-Management\2018-09-17-license-management.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-01-Overview-of-Application-Connectors.md" />
@@ -944,7 +951,7 @@
     <None Include="_posts\Deployment\Environment Management\2018-11-20-Environment Overview.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-20-Environment-Management.md" />
     <None Include="_posts\home.md" />
-    <None Include="_posts\2018-09-17-getting-started.md" />
+    <None Include="_posts\getting-started.md" />
     <None Include="_posts\API-Management\2018-09-14-overview.md" />
     <None Include="_posts\API-Management\2018-09-15-Terminologies.md" />
     <None Include="_posts\API-Management\2018-09-16-architecture-design-runtime.md" />
