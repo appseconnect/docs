@@ -455,4 +455,398 @@ body.layout--single .sticky {top: 0; padding: 24px 15px 15px; height: calc(120vh
 
 
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+/* ------------- Start : Global  ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    display: block;
+    border: 0;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.spacer {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+.aec-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.layout--single .headerInn .aec-container {
+    max-width: 100%;
+}
+.aecButton {
+    color: #fff;
+    padding: 10px 30px;
+    background: #1670b7;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.aecButton:hover{
+    background: #fff;
+    color: #1670b7;
+}
+.aecButton:visited {
+    color: #fff;
+}
+.aecButton:hover:visited {
+    color: #1670b7;
+}
+.aecButton:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: top, left, right, bottom;
+    -moz-transition-property: top, left, right, bottom;
+    -ms-transition-property: top, left, right, bottom;
+    -o-transition-property: top, left, right, bottom;
+    transition-property: top, left, right, bottom;
+}  
+.aecButton:hover:before, .aecButton:focus:before{
+    -webkit-transition-delay: .1s; 
+    -moz-transition-delay: .1s; 
+    -ms-transition-delay: .1s; 
+    -o-transition-delay: .1s; 
+    transition-delay: .1s; 
+    border: #fff solid 3px;
+    bottom: -7px;
+    left: -7px;
+    top: -7px;
+    right: -7px;
+}
+/* ------------- End : Global  ------------- */
+/* ------------- Start : Banner  ------------- */
+.bannerPan {
+    clear: both;
+    background: #25282a;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    border:0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#25282a+1,000000+100 */
+    background: #25282a; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #25282a 1%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #25282a 1%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #25282a 1%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25282a', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-box-shadow: inset 0px 0px 23px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 23px -7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 23px -7px rgba(0,0,0,0.75);
+}
+.bannerPan h1 {
+    clear: both;
+    font: 400 60px/80px 'Oswald', sans-serif;
+    color: #fff;
+    padding: 0 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;   
+}
+.bannerPan h1 span {
+    color: #1c79b1;
+}
+/* Animation */
+.bannerPan h1 {
+    animation: animated-text 4s steps(40,end) 0s 1 normal both,
+    animated-cursor 60ms steps(40,end) infinite;
+}
+/* text animation */
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 840px;}
+}
+/* cursor animations */
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0,0,0,.0);}
+    to{border-right-color: transparent;}
+}
+.bannerPan p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    width: 70%;
+    margin: 0 auto 30px;
+}
+/* ------------- End : Banner  ------------- */
+/* ------------- Start : Main Content  ------------- */
+.contentPan {
+    clear: both;
+    padding: 60px 0;
+    background: #eff1f3;
+}
+.contentPan .aec-container .contentBox {
+    float: left;
+    background: #fff;
+    padding: 60px 20px 50px;
+    width: 30%;
+    margin: 0 5% 0 0;
+    text-align: center;
+    color: #3b3f45;
+    box-sizing: border-box;
+}
+.contentPan .aec-container .contentBox h2 {
+    clear: both;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 0 20px;
+    color: #3c424a;
+    font-weight: 400;
+}
+.contentPan .aec-container .contentBox p {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0 0 30px;
+    height: 180px;
+    overflow: hidden;
+}
+.contentPan .aec-container .contentBox:hover {
+    background: #1c79b1;
+    color: #fff;
+}
+.contentPan .aec-container .contentBox:hover h2 {
+    color: #fff;
+}
+.contentPan .aec-container .contentBox a {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 22px;
+}
+.contentPan .aec-container .contentBox:hover a {
+    background: #fff;
+    color: #1c79b1;
+}
+.contentPan .aec-container .contentBox.last-child {
+    margin: 0;
+}
+.contentBottomPan {
+    clear: both;
+    padding: 60px 0;
+    background: #1d232f; 
+}
+.contentBottonBox {    
+    float: left;
+    background: #343944;
+    padding:15px 15px 40px;
+    width: 30%;
+    margin: 0 5% 60px 0;
+    color: #fff;
+    min-height:325px;
+    box-sizing: border-box;
+    border-top: 8px solid #d52c82;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.75);
+}
+.contentBottonBox.mid-child {  
+    border-top: 8px solid #e38a40;
+}
+.contentBottonBox.last-child {  
+    margin: 0;
+    border-top: 8px solid #aa5fe6;
+}
+.contentBottonBox h2 { 
+    clear: both;
+    background: #3f444e;
+    font:400 30px/36px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+.contentBottonBox ul { 
+    list-style: none;
+    margin: 0;
+}
+.contentBottonBox ul li {
+    display: block;
+    clear: both; 
+}
+.contentBottonBox ul li a {
+    color: #a0abb1;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 0 0 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+.contentBottonBox ul li a:hover {
+    color: #1670b7;
+    margin: 0 0 0 10px;
+    transition: all 0.5s ease-in-out;
+}
+.contentBottonBox ul li a::before {
+    color: #aaaeb5;
+    content: "\f101";
+    margin-right: 10px;
+    font-family: "FontAwesome";
+}
+.questionBox {
+    padding: 15px 15px 15px 130px;
+    clear: both;
+    background: #343944;
+    color: #fff;
+    background: url("../images/icon.png") no-repeat 20px 50%  #343944;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.75);
+}
+.questionBox h2 {
+    font:400 30px/36px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 30px 0;
+    float: left;
+    width: auto;
+    margin:0;
+}
+.questionBox a {
+    float: right;
+    margin: 18px;
+}
+
+/* ------------- End : Main Content  ------------- */
+/* ------------- Start : Main Content  ------------- */
+.footer {
+    clear: both;
+    background: #151515;
+    padding: 30px 0;
+    border-top: 5px solid #0d1216;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+}
+.footer span {
+    color: #1670b7;
+}
+/* ------------- End : Main Content  ------------- */
+@media screen and (max-width: 990px) {
+.bannerPan h1 {
+    font: 400 40px/60px 'Oswald', sans-serif;
+}
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 600px;}
+}
+.contentPan .aec-container .contentBox, .contentBottomPan .aec-container .contentBottonBox {
+    float: none;
+    padding: 20px;
+    width: 90%;
+    margin: 0 5% 40px;
+    text-align: left;
+}
+.contentPan .aec-container .contentBox.last-child, .contentBottomPan .aec-container .contentBottonBox.last-child {
+    margin: 0 5% 40px;
+}
+.contentPan .aec-container .contentBox p {
+    margin: 0 0 20px;
+    height: auto;
+}
+.contentBottonBox ul li {
+    display: inline-block;
+    clear: none;
+}
+.contentBottonBox ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    transition: all 0s ease-in-out;
+    border: 0;
+    background: #1670b7;
+    float: left;
+    width: auto;
+    margin: 0 !important;
+}
+.contentBottonBox ul li a:hover {
+    margin: 5px;
+    background: #1670b7;
+    color: #fff;
+    transition: all 0s ease-in-out !important;
+}
+.questionBox {
+    padding:20px;
+    background-image: none;
+    margin: 0 5%;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.questionBox h2 {
+    padding: 20px 0 30px;
+    float: none;
+    width: auto;
+    clear: both;
+    text-align: center;
+}
+.questionBox a {
+    float: none;
+    margin: 0 auto 20px;
+}
+.contentPan {
+    padding: 60px 0 0;
+}
+}
+@media screen and (max-width: 600px) {
+    .bannerPan h1 {
+        font: 400 22px/50px 'Oswald', sans-serif;
+        padding: 0 0 10px;
+    }
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 300px;}
+    }
+    .bannerPan p {
+        font-size: 14px;
+    }
+    .aecButton {
+        font-size: 20   px;
+    }
+}
+
+
+
+
+
+
+
+
 
