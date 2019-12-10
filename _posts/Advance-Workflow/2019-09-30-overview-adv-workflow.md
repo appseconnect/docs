@@ -38,6 +38,6 @@ native-cloud platform.
 ## User Interface of Advanced Workflows
 The advance workflow will mainly consist of two main pages:
 
-(a) [Advance Workflow Listing]() - This the default landing page of the Advanced Workflow. Users can add and view the Workflow groups and folders.    
-(b) [Advance Workflow Designing & Executing]() - This page provides the functionality of  designing and executing the workflow. This page can be navigated through the Advance Workflow Listing page.   
+(a) [Advance Workflow Listing](/advance%20workflow/listing-adv-workflow/) - This the default landing page of the Advanced Workflow. Users can add and view the Workflow groups and folders.    
+(b) [Advance Workflow Designing & Executing](/advance%20workflow/designing-executing-adv-workflow/) - This page provides the functionality of  designing and executing the workflow. This page can be navigated through the Advance Workflow Listing page.   
 
