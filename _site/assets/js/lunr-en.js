@@ -1628,20 +1628,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "TokenList for Rules",
-      excerpt: "Here are the list of tokens required for rule creation in APPSeCONNECT RuleTokenName Syntax Description Type Applied On ReSyncBucketCountOlderThanHours ~{ReSyncBucketCountOlderThanHours(20)}~...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 179
-    });
-    
-  
-    idx.add({
       title: "Pre-Configured Rule for Misfire Event",
       excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 180
+      id: 179
     });
     
   
@@ -1650,7 +1641,7 @@ var idx = lunr(function () {
       excerpt: "Pre-configured rules are the rules that comes pre-packaged with your Account. Users/Implementers needs to choose the pre-configured rules from the...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 181
+      id: 180
     });
     
   
@@ -1659,7 +1650,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 182
+      id: 181
     });
     
   
@@ -1668,7 +1659,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 183
+      id: 182
     });
     
   
@@ -1677,7 +1668,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 184
+      id: 183
     });
     
   
@@ -1686,7 +1677,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 185
+      id: 184
     });
     
   
@@ -1695,7 +1686,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 186
+      id: 185
     });
     
   
@@ -1704,7 +1695,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 187
+      id: 186
     });
     
   
@@ -1713,7 +1704,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 188
+      id: 187
     });
     
   
@@ -1722,7 +1713,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 189
+      id: 188
     });
     
   
@@ -1731,7 +1722,7 @@ var idx = lunr(function () {
       excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 190
+      id: 189
     });
     
   
@@ -1740,7 +1731,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 191
+      id: 190
     });
     
   
@@ -1749,7 +1740,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 192
+      id: 191
     });
     
   
@@ -1758,7 +1749,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 193
+      id: 192
     });
     
   
@@ -1767,13 +1758,22 @@ var idx = lunr(function () {
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 194
+      id: 193
     });
     
   
     idx.add({
       title: "Pre-Configured Rule for Log Bucket",
       excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 194
+    });
+    
+  
+    idx.add({
+      title: "Pre-Configured Rule for Generation of Hourly Report",
+      excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
       categories: ["Rule"],
       tags: ["developers"],
       id: 195
@@ -1790,20 +1790,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Pre-Configured Rule for Generation of Hourly Report",
-      excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 197
-    });
-    
-  
-    idx.add({
       title: "Default Rule for Data Purge Policy",
       excerpt: "IT organizations mostly struggle with data volume that accumulates and increases the overhead of operational cost. Due to the sheer...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 198
+      id: 197
     });
     
   
@@ -1812,7 +1803,7 @@ var idx = lunr(function () {
       excerpt: "Requirement of the Rule APPSeCONNECT Morning Report updates the users about the data synchronization status for each connection, on daily...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 199
+      id: 198
     });
     
   
@@ -1821,7 +1812,7 @@ var idx = lunr(function () {
       excerpt: "Default rules are the rules that are predefined on APPSeCONNECT. User/Implementers cannot choose these rules and will not get any...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 200
+      id: 199
     });
     
   
@@ -1830,7 +1821,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 201
+      id: 200
     });
     
   
@@ -1839,7 +1830,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 202
+      id: 201
     });
     
   
@@ -1848,7 +1839,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 203
+      id: 202
     });
     
   
@@ -1857,7 +1848,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 204
+      id: 203
     });
     
   
@@ -1866,7 +1857,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 205
+      id: 204
     });
     
   
@@ -1875,7 +1866,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 206
+      id: 205
     });
     
   
@@ -1884,7 +1875,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 207
+      id: 206
     });
     
   
@@ -1893,7 +1884,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 208
+      id: 207
     });
     
   
@@ -1902,7 +1893,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 209
+      id: 208
     });
     
   
@@ -1911,7 +1902,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 210
+      id: 209
     });
     
   
@@ -1920,7 +1911,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 211
+      id: 210
     });
     
   
@@ -1929,7 +1920,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 212
+      id: 211
     });
     
   
@@ -1938,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 213
+      id: 212
     });
     
   
@@ -1947,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Advanced Workflow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 213
     });
     
   
@@ -1956,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 214
     });
     
   
@@ -1965,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 216
+      id: 215
     });
     
   
@@ -1974,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 217
+      id: 216
     });
     
   
@@ -1983,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 218
+      id: 217
     });
     
   
@@ -3967,17 +3958,6 @@ var store = [
         "title": "Create & Edit Rule",
         "url": "/rule/create-rule/",
         "excerpt": "APPSeCONNECT cloud portal provides you an option to list out a set of rules. To Add Rule, you must follow...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "TokenList for Rules",
-        "url": "/rule/tokenlist-rule/",
-        "excerpt": "Here are the list of tokens required for rule creation in APPSeCONNECT RuleTokenName Syntax Description Type Applied On ReSyncBucketCountOlderThanHours ~{ReSyncBucketCountOlderThanHours(20)}~...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
