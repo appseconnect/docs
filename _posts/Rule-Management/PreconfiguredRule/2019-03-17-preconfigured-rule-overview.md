@@ -11,3 +11,16 @@ menus:
         identifier: preconfigurerule
 ---
 
+Pre-configured rules are the rules that comes pre-packaged with your Account. Users/Implementers needs to choose the pre-configured rules from the 
+Choose Rule option available in the Rules section of the APPSeCONNECT portal. 
+
+Users/Implementers of APPSeCONNECT can activate these rules from the [Choose Rule](/rule/choose-rule/) section and can modify or configure as per the requirement of the user. 
+
+To know about editing the Rule [Click here](/rule/create-rule/)
+
+The rules that are preconfigured with APPSeCONNECT are given below:
+
+1.	[Pre-configured rule for Misfire Event](/rule/preconfigured-rule-for-misfire-event/)
+2.	[Pre-configured rule for Resync Bucket](/rule/preconfigured-rule-for-resync-bucket/)
+3.	[Pre-configured rule for generation of hourly report](/rule/preconfigured-rule-for-detailed-report/)
+4.	[Pre-configured rule for Log Bucket](/rule/preconfigured-rule-for-log-bucket/)

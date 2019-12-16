@@ -49,7 +49,7 @@ You require to sign up for an account with APPSeCONNECT Community.
 
 5. You are now logged in to the APPSeCONNECT portal.
 
-6. To change the password, go to [getting-started](/getting-started/) and click on `My Profile- Change Details` to change your password.
+6. To change the password, go to [Accessing Portal](/accessing%20portal/accessing-portal/) and click on `My Profile- Change Details` to change your password.
 
 **ProTip:** If a user cannot access the '/temporarypassword' sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.
 {: .notice--info}

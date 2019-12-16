@@ -16,12 +16,12 @@ Below is the list of modules that will guide the user with the usability of APPS
 
 |Modules|Details|
 |---|---|
-|Overview of APPSeCONNECT|This page provides the introduction to iPaaS and  talks about the architecture of the APPSeCONNECT platform|
-|Terminology|This page will provide some common terms that are used when working with APPSeCONNECT|
-|Registering with APPSeCONNECT|Details of the registering process and license would be available on this page. User will get the clear information as how to login to APPSeCONNECT|
-|Accessing APPSeCONNECT Portal|This page will talk about the dashboard and the customer profile information after logging in to the portal.|
-|Configuration|All the necessary generic steps and processes are discussed in this page when beginning with the integration|
-|Configuration for Integration|This page will provide the procedures related to the integration process. This page will talk about the prerequisites, necessary when beginning with the integration process|
+|[Overview of APPSeCONNECT](/getting%20started/overview/)|This page provides the introduction to iPaaS and  talks about the architecture of the APPSeCONNECT platform|
+|[Terminology](/getting%20started/terminology/)|This page will provide some common terms that are used when working with APPSeCONNECT|
+|[Registering with APPSeCONNECT](/getting%20started/user-registration-license/)|Details of the registering process and license would be available on this page. User will get the clear information as how to login to APPSeCONNECT|
+|[Accessing APPSeCONNECT Portal](/accessing%20portal/accessing-portal/)|This page will talk about the dashboard and the customer profile information after logging in to the portal.|
+|[Configurating APPSeCONNECT](/configuring%20appseconnect/configurations/)|All the necessary generic steps and processes are discussed in this page when beginning with the integration|
+|[Configuration for Integration](/getting%20started/configurations-for-integration/)|This page will provide the procedures related to the integration process. This page will talk about the prerequisites, necessary when beginning with the integration process|
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: " Creating Webhook endpoint"
+title: " Creating Webhook Endpoint"
 toc: true
 tag: developers
 category: "API-Management"
@@ -39,43 +39,63 @@ prerequisites. Here are some of them :
 4. [Importing schemas and actions of an Application](/getting-started/)
 5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Credentials/)
 5. [Creating a Connection](/getting-started/#creating-connection--executing-the-touchpoint)
+7. [Registering URL for API](/api-management/Steps-to-register-url/)
+8. [User Authenticate](/api-management/Steps-to-user-authentication/)
 
 After all these steps are done, make sure the environment is kept running and credentials are properly updated. 
 
-## Steps to create Webhook Endpoint
+**Note: Registering an URL is must when syncing data through Realtime Touchpoints (Webhook APIs). Real-Time touchpoints would be 
+executed only for the applications that supports Webhooks.**
 
-To start creating a Proxy API, login to APPSeCONNECT and move to API Management section. You will see sections 
-depicting Proxy, select the section to navigate to it.
+Few known examples of  applications that supports Webhooks are:
+* Shopify
+* 3DCart
+* WooCommerce
+* Zoho CRM 
+* BigCommerce
+* Salesforce
+* Prestashop
 
-* Go to **API** section from the left side menu.
+Before, integrating with Realtime Webhooks, user needs to know whether the used application supports Webhooks.
 
-![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.png)
+## Steps to Create Webhook Endpoint- Real Time API
 
-* Inside **APIManagementSection** you can see Webhooks and Proxy.`By default Webhook section will be
-   shown`. You can see all your connections listed here.
+For creating a Webhook Realtime API, login to APPSeCONNECT portal and follow the steps given below:
 
-* If you do not have a registered URL with **APPSeCONNECT** you have to [Register a URL](/api-management/Steps-to-register-url/) for your organization.
+* Navigate to API section of the APPSeCONNECT Portal available on the left side menu. Inside **APIManagementSection** you can see Webhooks 
+  and Proxy.`By default Webhook section will be shown`. You can see all your connections listed here.  
+![Webhook-Introduction](/staticfiles/api-management/media/Webhook-Introduction.png)  
 
-  ## Create A Real Time API :
+**Note:If you do not have a registered URL with **APPSeCONNECT** you have to [Register a URL](/api-management/Steps-to-register-url/) for 
+your organization.**
 
-1. Now under the desired connection,Expand the Connection,you will find **Create API** button like this.
-![Create A P I Webhook](/staticfiles/api-management/media/CreateAPI_webhook.png)
-2. Upon clicking the button you will get introduced to a Wizard like this
-![Wizard A P I Basic](/staticfiles/api-management/media/Wizard-API-Basic.png)
-3. Provide basic information like API name,API help document url etc.
+1. Now under the desired connection,Expand the Connection,you will find **Add New API** button like this.
+![CreateAPI_webhook](/staticfiles/api-management/media/CreateAPI_webhook.png)
+2. Upon clicking the button you will get introduced to a Wizard like this. Provide basic information like API name, 
+   API help document URL etc.
+![Wizard-API-Basic](/staticfiles/api-management/media/Wizard-API-Basic.png)
+
+**Note:It is mandatory for the user to enable the checkbox for `Show in Agent`, else user cannot view the touchpoint and run the sync process.**
 4. Now provide Source App Configuration like Source Schema,Action,Protocol and Protocol Method.
-![Wizard A P I Source](/staticfiles/api-management/media/Wizard-API-Source.png)
+![Wizard-API-Source](/staticfiles/api-management/media/Wizard-API-Source.png)
 5. Thereafter provide Destination App Configuration like Destination Schema,Action,Protocol and Protocol Method.
-![Wizard A P I Destination](/staticfiles/api-management/media/Wizard-API-Destination.png)
+![Wizard-API-Destination](/staticfiles/api-management/media/Wizard-API-Destination.png)
 6. Then you have to configure mapping for transformation from source to destination
-![Wizard A P I Mapping](/staticfiles/api-management/media/Wizard-API-Mapping.png)
+![Wizard-API-Mapping](/staticfiles/api-management/media/Wizard-API-Mapping.png)
 7. After everything is done click on finish to Save your API.
-![Wizard A P I Summary](/staticfiles/api-management/media/Wizard-API-Summary.png)
+![Wizard-API-Summary](/staticfiles/api-management/media/Wizard-API-Summary.png)
 8. You will be re-directed to Webhook section afterwards.You can find your newly created Webhook API
  under the connection you created.
-![Webhook A P I Data](/staticfiles/api-management/media/Webhook-API-Data.png)
+![Webhook-API-Data](/staticfiles/api-management/media/Webhook-API-Data.png)  
+9.	The Touchpoint will consist of two buttons:  
+* Bucket: This is the Resync bucket of the touchpoint. Any Data synced (Data that are Success, Failed, Unprocessed & Skipped) 
+  in OP will automatically reflect in the Resync Bucket of the Portal.
+* Log: This the Log Bucket of the Touch point and will display the logs, processed during the sync process.
+![webhook-resyncbucket](/staticfiles/api-management/media/webhook-resyncbucket.png) 
+
 9. Copy the URL and use it as a webhook endpoint in applications that support webhooks.
-![A P I Webhook Shopify](/staticfiles/api-management/media/API-Webhook-shopify.png) 
+![API-Webhook-shopify](/staticfiles/api-management/media/API-Webhook-shopify.png) 
 
 Thus APPSeConnect provides you the platform to create Webhook API to fetch real time data and sync to other applications.    
 
+**Note: Realtime Webhook API’s does not require any Actions & Action Filters for the sync process.**

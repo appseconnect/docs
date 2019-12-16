@@ -23,11 +23,11 @@ if created and its action associated with the rule, will be triggered automatica
 
 Presently rules are categorized into two types:
 
-1.	Pre-packaged Rules: These are prebuilt and prepackaged rules provided by the APPSeCONNECT and can be activated and used
-    by the user. To know more,read [Choose Rule Button](/rule/choose-rule/). 
+1.	Pre-Configured Rules: These are prebuilt and prepackaged rules provided by the APPSeCONNECT and can be activated and used
+    by the user. To know more,read [Choose Rule Button](/rule/choose-rule/).     
 2.	Default Rules: These rules are configured by the APPSeCONNECT itself, and will automatically be 
-    triggered if any events occurred according to its criteria. 
-    Few example are [Pre-Configured rules for misfire trigger](/rule/preconfigured-rule-for-misfire-event/).
+    triggered if any events occurred according to its criteria.   
+    Few example are [Defaut Rule for Morning Report](/rule/default-rule-for-morning-report/).  
 
 
 

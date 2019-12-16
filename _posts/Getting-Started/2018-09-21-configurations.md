@@ -16,14 +16,14 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 
 |Modules|Details|
 |---|---|
-|Choosing Applications/ Creating Applications |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
-|Configuring Schema and Entity|Every application has its schema and entity and for integrating with applications|
-|Configuring Attributes|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
-|Configuring Connector & Creating Connection|Before proceeding with the integration process, users need to configure the connector for creating the connection. |
-|Choosing Touchpoint/Workflow|After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc|
-|Transformation & Mapping|After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.|
-|Deploying connection/ Workflow|After the configurations are done, the touchpoint/Workflow needs to be deployed to the environment in which it is to be integrated|
-|Environment Configuration & setup |Users can setup the environment for the completion of the integration process|
+|[Choosing Applications/ Creating Applications](/configuring%20appseconnect/configurations/) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
+|[Configuring Schema and Entity](/configuring%20appseconnect/configurations/)|Every application has its schema and entity and for integrating with applications|
+|[Configuring Attributes](/configuring%20appseconnect/configurations/)|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
+|[Configuring Connector & Creating Connection](/getting%20started/configurations-for-integration/)|Before proceeding with the integration process, users need to configure the connector for creating the connection. |
+|[Choosing Touchpoint/Workflow](/getting%20started/configurations-for-integration/)|After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc|
+|[Transformation & Mapping](/transformation/overview/)|After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.|
+|[Deploying connection/ Workflow](/workflow/deploying-and-executing/)|After the configurations are done, the touchpoint/Workflow needs to be deployed to the environment in which it is to be integrated|
+|[Environment Configuration & setup](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration)|Users can setup the environment for the completion of the integration process|
 
 ##  Process of Choosing App 
 
@@ -68,21 +68,21 @@ The steps are shown below:
 
 Protocol setup will have two sections: 
  1. Either create new protocol on fly which will require them to create protocol file 
- 2. OR Select from the generic protocol. The generic protocol will generally have adapter assigned to it, 
-    if not the adapter needed to be uploaded to next screen.
+  OR 
+2. Select from the generic protocol. The generic protocol will generally have adapter assigned to it, if not the adapter needed to be uploaded to next screen.
 
 You can upload/create a Template File. (If you upload a file then it has to be in XSLT format else an error message will be shown).  
 ![CustomApp-AddNamespace](/staticfiles/root/media/CustomApp-AddNamespace.png)  
 In the Add Namespace portion, you can add new namespace by filling Prefix and URL field.
 The namespaces added to the template file will be applied to root node only during XSLT generation.  
-6. Click Continue button, it will direct to the Adapter page.Here you can `Upload Adapter or Select Adapter`.  
+Click Continue button, it will direct to the Adapter page.Here you can `Upload Adapter or Select Adapter`.  
 ![CustomApp-UploadAdapter](/staticfiles/root/media/CustomApp-UploadAdapter.png)
-7. Click Continue button, it will redirect you to the Credential section. After execution of all the steps mentioned above you have created a custom App successfully.
+Click Continue button, it will redirect you to the Credential section. After execution of all the steps mentioned above you have created a custom App successfully.
 The newly created app, can be viewed in the app listing section. 
 * You can also check the Checkbox in case it is a 3rd party adapter.
 * If you try to upload Extension, follow the steps in Adapter.  
 ![CustomApp-Extension](/staticfiles/root/media/CustomApp-Extension.png)  
-8. The Upload adapter will allow either selecting generic adapter or upload adapter file specifically.
+The Upload adapter will allow either selecting generic adapter or upload adapter file specifically.
 
 **ProTip:** 1. If the generic protocol is selected which already have an adapter specified, this section will show that adapter is already selected and only allow extension upload. 
             2. If the generic protocol does not have adapter uploaded, the upload adapter option will be enabled.
@@ -175,8 +175,8 @@ Now for getting data we can define an action name called `GET`. When you define 
 * Action Description: This is the Description of the action. At the time of touchpoint creation actions are selected based on this description.
 * Action Filter & Resync Filter Details
 
-### Importing Schemas and Actions of an Application
-The user can view the schemas and the action present or can also add schema and add action for each application. 
+### Adding Schemas and Actions of an Application
+The user can view the [schemas and the action](/transformation/working-with-schemas-action-filter/) present or can also add schema and add action for each application. 
 This section enables the user to view and add the Schema and its Actions.
 
 **Prerequisites:**
@@ -221,4 +221,4 @@ This button enables to delete selected app from the list.
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 {: .notice--info}
 
-The process of Adding New App is present in the subsequent section of the module.
+

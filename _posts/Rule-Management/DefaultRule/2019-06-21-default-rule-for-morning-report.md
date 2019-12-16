@@ -21,11 +21,14 @@ on daily basis. The main utility for this report is:
 2.	The report will have the following columns that will display the following details :
 
 
-|Column Name|Utlity Description |
+|Column Name|Utility Description |
 |---|---|
-|Success count|Will indicate the no. of items that got success in the last 24 hours|
-|Successful Retries count|Will indicate data that got success after resyncing the data which are older than 24 hours|
-|Failure Count|Will indicate the no. of items that fetched error or was failed during the sync process in the last 24 hours.|
+|Success|These are the Data which is successfully synced within the transaction period|
+|Successful Retries|These are the Data created older than transaction period which had failed due to errors and now is successfully retried within the transaction period|
+|Failure|These are the Data which are unsuccessful within or before the transaction period. |
+
+Transaction Period: Denotes the timespan of data transaction meant for report generation.
+To Cite an example, if the transaction period is from 3.12.2019 - 00.00hrs to 4.12.2019 23.59 hrs (Inclusive of 59th minute)
 
 ![morning-report](/staticfiles/rules/media/morning-report.png) 
 
