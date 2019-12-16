@@ -19,6 +19,7 @@ repository               : "appseconnect"
 teaser                   : "/assets/images/APPSeCONNECT-documentation.png"
 breadcrumbs              : true # false, false (default)
 words_per_minute         : 200
+community_baseurl        : "http://templatebar.com/Individual/abhisur/"
 comments:
   provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -88,6 +89,35 @@ footer_scripts           :
   - /assets/js/plugins/jquery.magnific-popup.js
   - /assets/js/plugins/jquery.smooth-scroll.min.js
   - /assets/js/main.min.js
+home_whatnew             :
+  - name: "Transformation Techniques"
+    url: /transformation/overview/
+  - name: "API Management"
+    url: /api-management/overview/
+  - name: "Deploying to On-premise Agent"
+    url: /deployment/Environment-Overview/
+  - name: "Upgrading Agent to Latest"
+    url: /deployment/upgradation-and-migration/
+home_using_guide         :
+  - name: "Getting Started"
+    url: /getting-started/
+  - name: "SDK Documentation"
+    url: /sdk/Overview-of-SDK/
+  - name: "License management"
+    url: /license%20management/license-management/
+  - name: "Alerts and Notifications"
+    url: /rule/overview-of-rule/
+home_other_links         :
+  - name: "Connecting to Magento 2.0"
+    url: /connectors/Magento2/
+  - name: "Connecting SAGE 300"
+    url: /connectors/Sage300/
+  - name: "Connecting REST Applications"
+    url: /connectors/Overview-of-GenericRest-Adapters/
+  - name: "Connecting a Database"
+    url: /connectors/Overview-of-OLEDB-Adapter/
+  - name: "Build a custom connector"
+    url: /connectors/overview-of-custom-connectors/
 
 # Site Author
 author:
