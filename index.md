@@ -26,7 +26,7 @@ permalink: /
             <h1>WELCOME TO <span>APPSeCONNECT</span> DOCS</h1>
             <div data-aos="fade-up">
                 <p>docs.appseconnect.com is the central hub of knowledge and information for APPSeCONNECT Documentation which is dedicated for end users, developers, partners and IT professionals. Feel free to check out our latest tutorials, e-Books, API references and code examples.</p>
-                <a href="/getting-started/" title="getting started" class="aecButton">Getting Started</a>
+                <a href="/getting%20started/getting-started/" title="getting started" class="aecButton">Getting Started</a>
             </div>
         </div>
     </div>

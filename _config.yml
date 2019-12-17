@@ -19,7 +19,7 @@ repository               : "appseconnect"
 teaser                   : "/assets/images/APPSeCONNECT-documentation.png"
 breadcrumbs              : true # false, false (default)
 words_per_minute         : 200
-community_baseurl        : "http://templatebar.com/Individual/abhisur/"
+community_baseurl        : "https://community.appseconnect.com/"
 comments:
   provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
