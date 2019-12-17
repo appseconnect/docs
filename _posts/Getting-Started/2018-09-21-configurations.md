@@ -16,12 +16,12 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 
 |Modules|Details|
 |---|---|
-|[Choosing Applications/ Creating Applications](/configuring%20appseconnect/configurations/) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
-|[Configuring Schema and Entity](/configuring%20appseconnect/configurations/)|Every application has its schema and entity and for integrating with applications|
-|[Configuring Attributes](/configuring%20appseconnect/configurations/)|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
-|[Configuring Connector & Creating Connection](/getting%20started/configurations-for-integration/)|Before proceeding with the integration process, users need to configure the connector for creating the connection. |
+|[Choosing Applications/ Creating Applications](/configuring%20appseconnect/configurations/#process-of-choosing-app) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
+|[Configuring Schema and Entity](/configuring%20appseconnect/configurations/#appseconnect-schemaentity)|Every application has its schema and entity and for integrating with applications|
+|[Configuring Attributes](/configuring%20appseconnect/configurations/#appseconnect-attributes)|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
+|[Configuring Connector & Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|Before proceeding with the integration process, users need to configure the connector for creating the connection. |
 |[Choosing Touchpoint/Workflow](/getting%20started/configurations-for-integration/)|After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc|
-|[Transformation & Mapping](/transformation/overview/)|After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.|
+|[Transformation & Mapping](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow)|After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.|
 |[Deploying connection/ Workflow](/workflow/deploying-and-executing/)|After the configurations are done, the touchpoint/Workflow needs to be deployed to the environment in which it is to be integrated|
 |[Environment Configuration & setup](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration)|Users can setup the environment for the completion of the integration process|
 

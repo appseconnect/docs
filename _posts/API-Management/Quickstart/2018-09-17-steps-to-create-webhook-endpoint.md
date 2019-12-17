@@ -31,7 +31,7 @@ Follow these steps to create a Webhook API with **APPSeCONECT**
 ## Prerequisites
 
 As per requirement, before you start creating a new API Proxy, you need to make sure you meet all the 
-prerequisites. Here are some of them : 
+prerequisites. Here are some of them: 
 
 1. [Getting a new account for APPSeCONNECT](/home/)
 2. [Configuring your Environment](/deployment/Enviornment-Overview/)
