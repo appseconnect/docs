@@ -1021,7 +1021,7 @@
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-11-SAPB1-Magento2.md" />
     <None Include="_posts\Rule-Management\2019-03-14-overview-of-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-15-choose-rule.md" />
-    <None Include="_posts\Rule-Management\2019-03-16-tokenlist-rule.md" />
+    <None Include="_posts\Rule-Management\tokenlist-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-17-preconfigured-rule-for-misfire-event.md" />
     <None Include="_posts\Rule-Management\2019-03-16-create-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-17-preconfigured-rule-for-misfire-event.md" />

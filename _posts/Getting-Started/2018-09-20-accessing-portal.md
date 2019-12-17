@@ -23,12 +23,12 @@ Let us walkthrough the Functional Menu for understanding the usage and need of e
 
 |Modules|Details|
 |---|---|
-|[Dashboard](/accessing%20portal/accessing-portal/#feeds)|This page will show the details of the organisation, user logged in into. Project Basic Information, Configuration Completion Details etc|
-|[App](/accessing%20portal/accessing-portal/#feeds)|This section allows the user to choose or create apps that are required for the organisation|
-|[Connections](/accessing%20portal/accessing-portal/#feeds)|Users of APPSeCONNECT will be able to configure and create connection depending upon the apps chosen|
-|[APIs](/accessing%20portal/accessing-portal/#feeds)|This section talks about the API Management with APPSeCONNECT|
-|[Workflows](/accessing%20portal/accessing-portal/#feeds)|User will be able to design and execute workflows as per the business process and requirement|
-|[Manage](/accessing%20portal/accessing-portal/#feeds)|This section provides a simplified view of the modules that required to manage the integration process|
+|Dashboard|This page will show the details of the organisation, user logged in into. Project Basic Information, Configuration Completion Details etc|
+|App|This section allows the user to choose or create apps that are required for the organisation|
+|Connections|Users of APPSeCONNECT will be able to configure and create connection depending upon the apps chosen|
+|APIs|This section talks about the API Management with APPSeCONNECT|
+|Workflows|User will be able to design and execute workflows as per the business process and requirement|
+|Manage|This section provides a simplified view of the modules that required to manage the integration process|
 
 ## A. Accessing Organization Dashboard 
 Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information- 
