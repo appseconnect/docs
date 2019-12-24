@@ -35,18 +35,18 @@ permalink: /
     <div class="contentPan">
         <div class="aec-container">
             <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
-                <h2>API Management</h2>
-                <p>Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage the idea of building your own APIs. The API, how simple it is, requires a big amount of ground work so as to ensure the API is properly utilized and secured.</p>
+                <h2>Overview of Generic Rest Adapters</h2>
+                <p>HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate with any application supporting standard REST protocol and standard authentication mechanisms...</p>
                 <a href="/api-management/overview/" title="Read more" class="aecButton">Read more</a>
             </div>
             <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
-                <h2>Workflows</h2>
-                <p>Workflow is group of instructions to the integration service in APPSeCONNECT. APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process.</p>
+                <h2>SDK Overview</h2>
+                <p>APPSeCONNECT is a generic platform that helps a developer as well as an integration consultant to work on specific application, connecting them to the platform or even integrate data for business need. The SDK (Software Development Kit) is open publicly...</p>
                 <a href="/workflow/overview/" title="Read more" class="aecButton">Read more</a>
             </div>
             <div class="contentBox last-child" data-aos="flip-left" data-aos-duration="1000">
                 <h2>Transformation</h2>
-                <p>This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped.</p>
+                <p>This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped...</p>
                 <a href="/transformation/overview/" title="Read more" class="aecButton">Read more</a>
             </div>
             <br class="spacer">
@@ -107,7 +107,7 @@ permalink: /
     </div>
     <!-- Main Body :: End -->
 	 <div class="footer">
-			<div class="aec-container">Copyright &copy; <span><a href="appseconnect.com/" target="_blank">APPSeCONNECT</a></span>. All Rights Reserved.</div>
+			<div class="copyrights"><a href="https://www.appseconnect.com/" title="APPSeCONNECT" target="_blank">APPSeCONNECT</a> is a product by InSync<br>&copy; 2019 <a href="https://insync.co.in/" title="InSync Tech-Fin Solutions Ltd" target="_blank">InSync Tech-Fin Solutions Ltd</a>. All rights reserved.</div>
 	 </div>
     {% if page.permalink <> "/" %}
 
