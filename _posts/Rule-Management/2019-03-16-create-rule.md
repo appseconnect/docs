@@ -1,11 +1,11 @@
 ---
-title: "Creation of Rule"
+title: "Create & Edit Rule"
 toc: true
 tag: developers
 category: "Rule"
 menus: 
     overviewrule:
-        title: "Creation of Rule"
+        title: "Create & Edit Rule"
         weight: 15
         icon: fa fa-wpexplorer
         identifier: createrule

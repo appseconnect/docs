@@ -26,32 +26,26 @@ permalink: /
             <h1>WELCOME TO <span>APPSeCONNECT</span> DOCS</h1>
             <div data-aos="fade-up">
                 <p>docs.appseconnect.com is the central hub of knowledge and information for APPSeCONNECT Documentation which is dedicated for end users, developers, partners and IT professionals. Feel free to check out our latest tutorials, e-Books, API references and code examples.</p>
-                <a href="/getting-started/" title="getting started" class="aecButton">Getting Started</a>
+                <a href="/getting%20started/getting-started/" title="getting started" class="aecButton">Getting Started</a>
             </div>
         </div>
     </div>
     <!-- Banner :: End -->
     <!-- Main Body :: Start -->
-    <div class="contentPan">
-        <div class="aec-container">
-            <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
-                <h2>Overview of Generic Rest Adapters</h2>
-                <p>HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate with any application supporting standard REST protocol and standard authentication mechanisms...</p>
-                <a href="/api-management/overview/" title="Read more" class="aecButton">Read more</a>
-            </div>
-            <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
-                <h2>SDK Overview</h2>
-                <p>APPSeCONNECT is a generic platform that helps a developer as well as an integration consultant to work on specific application, connecting them to the platform or even integrate data for business need. The SDK (Software Development Kit) is open publicly...</p>
-                <a href="/workflow/overview/" title="Read more" class="aecButton">Read more</a>
-            </div>
-            <div class="contentBox last-child" data-aos="flip-left" data-aos-duration="1000">
-                <h2>Transformation</h2>
-                <p>This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped...</p>
-                <a href="/transformation/overview/" title="Read more" class="aecButton">Read more</a>
-            </div>
-            <br class="spacer">
-        </div>
-    </div>
+	{% if site.home_banners %}
+		<div class="contentPan">
+			<div class="aec-container">
+				{% for file in site.home_banners %} 
+					<div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
+						<h2>{{file.name}}</h2>
+						<p>{{ file.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+						<a href="{{ file.url }}" title="Read more" class="aecButton">Read more</a>
+					</div>
+				{% endfor %} 
+				<br class="spacer">
+			</div>
+		</div>
+	{% endif %} 
     <div class="contentBottomPan">
         <div class="aec-container">
             <div class="contentBottonBox" data-aos="flip-down" data-aos-duration="1000">

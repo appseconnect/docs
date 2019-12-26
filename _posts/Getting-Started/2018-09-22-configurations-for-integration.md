@@ -47,11 +47,12 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 9. Activate default touchpoint button will be checked by default.
 Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details. 
 
-**Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify the required version of the app.**
+**Note: For Applications having multiple versions, the user can hover the cursor on the application image to identify 
+the required version of the app.**
 
-![Select-Connection](/staticfiles/root/media/Select-Connection.png)
-On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.  
-![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)
+![Select-Connection](/staticfiles/root/media/Select-Connection.png)  
+On selecting the connectors, the protocol will be displayed for it. One can select multiple protocols for a connection.    
+![Connection-Protocol](/staticfiles/root/media/Connection-Protocol.png)  
 
 **Protip**
 Users need to enable the cloud support checkbox for enabling the cloud supported connection. 
@@ -157,9 +158,8 @@ The field description is given below:
 * Help Document -  Users can add URL related to the document for this touchpoint
 * Status - Status remains as Released by default.
 * Sequence - This is to add dependency sequence to the touchpoint.
-* Description - This field is for adding descriptions to the touchpoint for briefing the behaviour of the touchpoint. (For Ex: Adding Bundle Product for Shopify to Priority.)
- 
-5.	The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also [Add New Schema](/getting-started/#importing-schemas-and-actions-of-an-application) & [New Action](/getting-started/#importing-schemas-and-actions-of-an-application), by clicking on the respective buttons. Click on the Continue button.               
+* Description - This field is for adding descriptions to the touchpoint for briefing the behaviour of the touchpoint. (For Ex: Adding Bundle Product for Shopify to Priority.)  
+5.	The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also [Add New Schema & New Action](/transformation/working-with-schemas-action-filter/), by clicking on the respective buttons. Click on the Continue button.               
 **Note: The Schema and the Action should be selected according to the nature of the touchpoint. Suppose, the touchpoint is of Product Add, the Schema and the Action should be selected for the Product only.***
 ![create-touchpoint3](/staticfiles/root/media/create-touchpoint3.png) 
 6.	The Target Setup page opens. Fill the mandatory fields - Schema, Action, Protocol, and Method. Similar, to the Source Setup here too `New Schema/New Action` can be added by clicking on the respective buttons. Click Continue Button.
@@ -219,6 +219,8 @@ The above steps complete the process of Choosing Touchpoint.
 APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and is configured on cloud and does the actual data synchronization with the help of other concerned adapters while the Cloud agent is a similar tool that performs the same function as the on-premise agent but is present on cloud itself. No server is required to configure or sync using the cloud agent.
 To know more about Configuring Environment, [Click here](/deployment/Deployment-Configuration/) 
 
+**NOTE: APPSeCONNECT Users with On-Premise Agent version 4.4.0.0 & above, please refer to this [environment configuration](/deployment/Environment-Management/)document**
+
 ### Environment setup of the on-premise agent:
 
  1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.  
@@ -239,18 +241,17 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 **Pre-requisites:**
 * The project should be [cloud supported](/deployment/Deployment-Configuration/#configuration-process-for-cloud). 
 * The two apps between which data has to be synced should be cloud supported. 
-* The connection between the two applications should be [cloud supported](/getting-started/#creating-connection--executing-the-touchpoint).
+* The connection between the two applications should be [cloud supported](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
 
 1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).  
 ![App](/staticfiles/root/media/App.png)
 2. After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.  
 ![Connection_New](/staticfiles/root/media/Connection_New.png)
 3. Enable the assigned credential to the connection by choosing the configuration 
-![Connection_New2](/staticfiles/root/media/Connection_New2.png)
-4.Enable the toggle button on the connector.
+![Connection_New2](/staticfiles/root/media/Connection_New2.png)  
+4.Enable the toggle button on the connector.  
 ![Connection_New3](/staticfiles/root/media/Connection_New3.png)
-5. Click on the View the Connection icon and navigate to the touchpoints page.
-6. Click on the play button to run the sync process.  
+5. Click on the View the Connection icon and navigate to the touchpoints page and then Click on the play button to run the sync process.  
 ![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.png)  
 
 ## Default Notification for Transactions

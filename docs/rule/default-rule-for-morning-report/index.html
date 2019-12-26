@@ -1192,7 +1192,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/steps-to-create-webhook-endpoint/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/steps-to-create-webhook-endpoint/" onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/', event);" title="Go to Create webhook endpoint">Create webhook endpoint</a>
+        <a href="/api-management/steps-to-create-webhook-endpoint/" onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/', event);" title="Go to Creating Realtime API using Webhook">Creating Realtime API using Webhook</a>
         
     </li>
     
@@ -1327,6 +1327,18 @@
     
     <li class="menu-item-" data-url="/advance%20workflow/listing-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/advance%20workflow/listing-adv-workflow/" onclick="selectTab('/advance%20workflow/listing-adv-workflow/', event);" title="Go to  Listing of Advance Workflow"> Listing of Advance Workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/advance%20workflow/deploying-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/advance%20workflow/deploying-adv-workflow/" onclick="selectTab('/advance%20workflow/deploying-adv-workflow/', event);" title="Go to Deploying Advance Workflow">Deploying Advance Workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/advance%20workflow/saving-and-restoring-revised-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/advance%20workflow/saving-and-restoring-revised-adv-workflow/" onclick="selectTab('/advance%20workflow/saving-and-restoring-revised-adv-workflow/', event);" title="Go to Saving & Restoring Revised Advance Workflow">Saving & Restoring Revised Advance Workflow</a>
         
     </li>
     
@@ -1764,7 +1776,7 @@
     
     
     <li class="menu-item-" data-url="/rule/create-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Creation of Rule">Creation of Rule</a>
+        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Create & Edit Rule">Create & Edit Rule</a>
         
     </li>
     
@@ -1802,12 +1814,6 @@
     
 </ul>
 
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-hourly-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/rule/preconfigured-rule-for-hourly-report/" onclick="selectTab('/rule/preconfigured-rule-for-hourly-report/', event);" title="Go to Pre-Configured Rule for Generation of Hourly Report">Pre-Configured Rule for Generation of Hourly Report</a>
         
     </li>
     
@@ -1957,24 +1963,27 @@ on daily basis. The main utility for this report is:</p>
   <thead>
     <tr>
       <th>Column Name</th>
-      <th>Utlity Description</th>
+      <th>Utility Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Success count</td>
-      <td>Will indicate the no. of items that got success in the last 24 hours</td>
+      <td>Success</td>
+      <td>These are the Data which is successfully synced within the transaction period</td>
     </tr>
     <tr>
-      <td>Successful Retries count</td>
-      <td>Will indicate data that got success after resyncing the data which are older than 24 hours</td>
+      <td>Successful Retries</td>
+      <td>These are the Data created older than transaction period which had failed due to errors and now is successfully retried within the transaction period</td>
     </tr>
     <tr>
-      <td>Failure Count</td>
-      <td>Will indicate the no. of items that fetched error or was failed during the sync process in the last 24 hours.</td>
+      <td>Failure</td>
+      <td>These are the Data which are unsuccessful within or before the transaction period.</td>
     </tr>
   </tbody>
 </table>
+
+<p>Transaction Period: Denotes the timespan of data transaction meant for report generation.
+To Cite an example, if the transaction period is from 3.12.2019 - 00.00hrs to 4.12.2019 23.59 hrs (Inclusive of 59th minute)</p>
 
 <p><img src="/staticfiles/rules/media/morning-report.png" alt="morning-report" /></p>
 
@@ -3768,8 +3777,20 @@ on daily basis. The main utility for this report is:</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -3854,13 +3875,11 @@ on daily basis. The main utility for this report is:</p>
                             
                             
                             <li>
-                                <a href="/rule/preconfigured-rule-for-hourly-report/" rel="permalink">
+                                <a href="/rule/preconfigured-rule-for-log-bucket/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Pre-Configured Rule for Generation of Hourly Report
+                                    Pre-Configured Rule for Log Bucket
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             

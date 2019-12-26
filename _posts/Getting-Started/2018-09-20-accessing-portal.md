@@ -30,7 +30,7 @@ Let us walkthrough the Functional Menu for understanding the usage and need of e
 |Workflows|User will be able to design and execute workflows as per the business process and requirement|
 |Manage|This section provides a simplified view of the modules that required to manage the integration process|
 
-# A. Accessing Organization Dashboard 
+## A. Accessing Organization Dashboard 
 Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information- 
 
 1. Basic organization information.
@@ -44,7 +44,7 @@ Dashboard is the default page which you can view after logging in to the APPSeCO
 
 Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.
 
-# B. Choosing App
+## B. Choosing App
 
 APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. 
 Any App once added is assigned to a particular category. 
@@ -63,30 +63,30 @@ Also, APPSeCONNECT supports both the Cloud and On Premise Based Application. Som
 2.	On Premise Application - MS Dynamics NAV, SAP Business One, Uniconta 
 3.	Both Cloud & On-Premise - SAP Business One
 
-One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - [Choose App](/getting-started/) & [Add New App](/getting-started/)
+One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - Choose App & Add New App
 
-Go to [Getting Started](/getting-started/) section to view the details of App Selection  &  touchpoint execution.
+You can do [App Selection](/configuring%20appseconnect/configurations/#process-of-choosing-app) & [touchpoint execution](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint) from here.
 
-# C. Connections
+## C. Connections
 
 The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.
 
-Go to [Getting Started](/getting-started/) section to view the details of Creating Connection & Executing the touchpoint
+You need to [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) & [Execute Touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
 
-# D. API's
+## D. API's
 
 `API Management` of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that the data can be easily accessed and maintained quickly without needing a separate development team. The API management platform provides an interface which any developer can access to create or configure services.
 
 To know more about API Management, [Click here](/api-management/overview/).
 
-# E. Workflows
+## E. Workflows
 
 `Workflow management` is group of instructions to the integration service in APPSeCONNECT.
 APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is a concept that describes how process in business divides work activities into distinct roles, task, procedures and rules.
 
 To know more about Workflow Management, [Click here](/workflow/overview/).
 
-# F. Manage
+## F. Manage
 
 This section provides a simplified view of the modules that required to manage the integration process. These are the modules that are available under the Manage section. 
 * Feeds 
@@ -150,7 +150,7 @@ The implementers and the partners would be able to see the tickets and resolve t
 ## Managing Customer Profile 
 
 
-This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and [feeds](/getting-started/#my-profile).
+This section enables you to quickly access your profile after [logging](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f) into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and feeds
 
 This section also enables you to change details like your *personal information, changing avatar, changing password, privacy setting and security setting*.
 
@@ -198,6 +198,7 @@ following actions:
 ![subscription3](/staticfiles/root/media/subscription3.png)
 4. Can apply for support packages based on the number of hours as per requirement
 ![subscription4](/staticfiles/root/media/subscription4.png)
+
 ### (c) Lock Screen
 
 Clicking on the lock screen will log off the user from the portal.

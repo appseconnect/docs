@@ -1192,7 +1192,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/steps-to-create-webhook-endpoint/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/steps-to-create-webhook-endpoint/" onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/', event);" title="Go to Create webhook endpoint">Create webhook endpoint</a>
+        <a href="/api-management/steps-to-create-webhook-endpoint/" onclick="selectTab('/api-management/steps-to-create-webhook-endpoint/', event);" title="Go to Creating Realtime API using Webhook">Creating Realtime API using Webhook</a>
         
     </li>
     
@@ -1327,6 +1327,18 @@
     
     <li class="menu-item-" data-url="/advance%20workflow/listing-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/advance%20workflow/listing-adv-workflow/" onclick="selectTab('/advance%20workflow/listing-adv-workflow/', event);" title="Go to  Listing of Advance Workflow"> Listing of Advance Workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/advance%20workflow/deploying-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/advance%20workflow/deploying-adv-workflow/" onclick="selectTab('/advance%20workflow/deploying-adv-workflow/', event);" title="Go to Deploying Advance Workflow">Deploying Advance Workflow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/advance%20workflow/saving-and-restoring-revised-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/advance%20workflow/saving-and-restoring-revised-adv-workflow/" onclick="selectTab('/advance%20workflow/saving-and-restoring-revised-adv-workflow/', event);" title="Go to Saving & Restoring Revised Advance Workflow">Saving & Restoring Revised Advance Workflow</a>
         
     </li>
     
@@ -1764,7 +1776,7 @@
     
     
     <li class="menu-item-" data-url="/rule/create-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Creation of Rule">Creation of Rule</a>
+        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Create & Edit Rule">Create & Edit Rule</a>
         
     </li>
     
@@ -1802,12 +1814,6 @@
     
 </ul>
 
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/rule/preconfigured-rule-for-hourly-report/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/rule/preconfigured-rule-for-hourly-report/" onclick="selectTab('/rule/preconfigured-rule-for-hourly-report/', event);" title="Go to Pre-Configured Rule for Generation of Hourly Report">Pre-Configured Rule for Generation of Hourly Report</a>
         
     </li>
     
@@ -1937,6 +1943,12 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
                         <ul class="toc__menu">
+  <li><a href="#a-accessing-organization-dashboard">A. Accessing Organization Dashboard</a></li>
+  <li><a href="#b-choosing-app">B. Choosing App</a></li>
+  <li><a href="#c-connections">C. Connections</a></li>
+  <li><a href="#d-apis">D. API’s</a></li>
+  <li><a href="#e-workflows">E. Workflows</a></li>
+  <li><a href="#f-manage">F. Manage</a></li>
   <li><a href="#feeds">Feeds</a></li>
   <li><a href="#rules">Rules</a></li>
   <li><a href="#environment">Environment</a></li>
@@ -2003,7 +2015,7 @@ The view of functional menu(s) is given below:</p>
   </tbody>
 </table>
 
-<h1 id="a-accessing-organization-dashboard">A. Accessing Organization Dashboard</h1>
+<h2 id="a-accessing-organization-dashboard">A. Accessing Organization Dashboard</h2>
 <p>Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information-</p>
 
 <ol>
@@ -2019,7 +2031,7 @@ The view of functional menu(s) is given below:</p>
 
 <p>Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.</p>
 
-<h1 id="b-choosing-app">B. Choosing App</h1>
+<h2 id="b-choosing-app">B. Choosing App</h2>
 
 <p>APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. 
 Any App once added is assigned to a particular category.</p>
@@ -2042,30 +2054,30 @@ Any App once added is assigned to a particular category.</p>
   <li>Both Cloud &amp; On-Premise - SAP Business One</li>
 </ol>
 
-<p>One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - <a href="/getting-started/">Choose App</a> &amp; <a href="/getting-started/">Add New App</a></p>
+<p>One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - Choose App &amp; Add New App</p>
 
-<p>Go to <a href="/getting-started/">Getting Started</a> section to view the details of App Selection  &amp;  touchpoint execution.</p>
+<p>You can do <a href="/configuring%20appseconnect/configurations/#process-of-choosing-app">App Selection</a> &amp; <a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">touchpoint execution</a> from here.</p>
 
-<h1 id="c-connections">C. Connections</h1>
+<h2 id="c-connections">C. Connections</h2>
 
 <p>The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.</p>
 
-<p>Go to <a href="/getting-started/">Getting Started</a> section to view the details of Creating Connection &amp; Executing the touchpoint</p>
+<p>You need to <a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Create Connection</a> &amp; <a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">Execute Touchpoint</a>.</p>
 
-<h1 id="d-apis">D. API’s</h1>
+<h2 id="d-apis">D. API’s</h2>
 
 <p><code class="highlighter-rouge">API Management</code> of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that the data can be easily accessed and maintained quickly without needing a separate development team. The API management platform provides an interface which any developer can access to create or configure services.</p>
 
 <p>To know more about API Management, <a href="/api-management/overview/">Click here</a>.</p>
 
-<h1 id="e-workflows">E. Workflows</h1>
+<h2 id="e-workflows">E. Workflows</h2>
 
 <p><code class="highlighter-rouge">Workflow management</code> is group of instructions to the integration service in APPSeCONNECT.
 APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is a concept that describes how process in business divides work activities into distinct roles, task, procedures and rules.</p>
 
 <p>To know more about Workflow Management, <a href="/workflow/overview/">Click here</a>.</p>
 
-<h1 id="f-manage">F. Manage</h1>
+<h2 id="f-manage">F. Manage</h2>
 
 <p>This section provides a simplified view of the modules that required to manage the integration process. These are the modules that are available under the Manage section.</p>
 <ul>
@@ -2129,7 +2141,7 @@ You can also define additional criteria for triggering the Rule and performing t
 
 <h2 id="managing-customer-profile">Managing Customer Profile</h2>
 
-<p>This section enables you to quickly access your profile after <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f">logging</a> into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and <a href="/getting-started/#my-profile">feeds</a>.</p>
+<p>This section enables you to quickly access your profile after <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f">logging</a> into the application. This is where you will get the overview of your organization including assigned companies under you, your organization details and feeds</p>
 
 <p>This section also enables you to change details like your <em>personal information, changing avatar, changing password, privacy setting and security setting</em>.</p>
 
@@ -2180,10 +2192,10 @@ following actions:</p>
   <li>Can view history of selected addons for the organisation. 
 <img src="/staticfiles/root/media/subscription3.png" alt="subscription3" /></li>
   <li>Can apply for support packages based on the number of hours as per requirement
-<img src="/staticfiles/root/media/subscription4.png" alt="subscription4" />
-    <h3 id="c-lock-screen">(c) Lock Screen</h3>
-  </li>
+<img src="/staticfiles/root/media/subscription4.png" alt="subscription4" /></li>
 </ol>
+
+<h3 id="c-lock-screen">(c) Lock Screen</h3>
 
 <p>Clicking on the lock screen will log off the user from the portal.</p>
 
@@ -4091,8 +4103,18 @@ user would be able to view the tools that are available for the organisation. Th
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
