@@ -89,6 +89,16 @@ footer_scripts           :
   - /assets/js/plugins/jquery.magnific-popup.js
   - /assets/js/plugins/jquery.smooth-scroll.min.js
   - /assets/js/main.min.js
+home_banners             :
+  - name: "REST API Connectivity"
+    excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate with any application supporting standard REST protocol and standard authentication mechanisms. This adapter is App-specific and is limited to certain apps which are developed using HTTP Protocol and REST Webservices."
+    url : /connectors/Overview-of-GenericRest-Adapters/
+  - name: "Mapping and Transformation"
+    excerpt: "This document will help you to understand and work with the MAPPING and TRANSFORMATION functionality in APPSeCONNECT portal. Primarily transformation is the field where the corresponding schemas are to be mapped. This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted."
+    url : /transformation/overview/
+  - name: "Developing Adapters"
+    excerpt: "APPSeCONNECT is a generic platform that helps a developer as well as an integration consultant to work on specific application, connecting them to the platform or even integrate data for business need. The SDK (Software Development Kit) is open publicly, which any potential developer can use to build a connect between an application or a protocol."
+    url : /sdk/Overview-of-SDK/
 home_whatnew             :
   - name: "Transformation Techniques"
     url: /transformation/overview/
