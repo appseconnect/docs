@@ -867,6 +867,8 @@
     <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\Advance-Workflow\2019-10-05-working-with-delay-node.md" />
+    <None Include="_posts\Advance-Workflow\2019-10-04-working-with-decision-node.md" />
     <None Include="_posts\Advance-Workflow\2019-10-03-saving-and-restoring-revised-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-10-01-designing-executing-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-10-02-deploying-adv-workflow.md" />
@@ -880,6 +882,7 @@
     <None Include="_posts\Connectors\Application Connectors\Salesforce\2018-12-07-Salesforce.md" />
     <None Include="_posts\Connectors\Application Connectors\Shipstation\2018-12-07-Shipstation.md" />
     <None Include="_posts\Connectors\Application Connectors\Woocommerce\2019-05-05-Sap-Business-Addon.md" />
+    <None Include="_posts\Connectors\Technology Connectors\Rest\2019-09-21-Troubleshooting-Rest.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-20-Deployment Configuration.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-21-Agent Blocking and Unblocking.md" />
     <None Include="_posts\Getting-Started\2018-09-17-overview.md" />
@@ -1023,7 +1026,7 @@
     <None Include="_posts\Rule-Management\2019-03-15-choose-rule.md" />
     <None Include="_posts\Rule-Management\tokenlist-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-17-preconfigured-rule-for-misfire-event.md" />
-    <None Include="_posts\Rule-Management\2019-03-16-create-rule.md" />
+    <None Include="_posts\Rule-Management\create-rule.md" />
     <None Include="_posts\Rule-Management\2019-03-17-preconfigured-rule-for-misfire-event.md" />
     <None Include="_posts\Rule-Management\2019-06-18-preconfigured-rule-for-resync-bucket.md" />
     <None Include="_posts\Rule-Management\2019-06-19-preconfigured-rule-for-log-bucket.md" />

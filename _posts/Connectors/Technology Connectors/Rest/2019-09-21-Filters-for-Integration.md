@@ -51,6 +51,30 @@ Here Lightspeed app has been taken and it supports OAuth 2.0 for Rest Protocol. 
 
 **NOTE: Defining Header and Parameter Varies from application to application. Some app might need both, some might just need Header/parameter**
 
+
+**Scenario description for Action filters for REST integration** 
+
+A complete URL in form of API is called for fetching the data from Source applications. The URL is nothing but acts as the target location 
+from which the data is needed to be fetched.
+
+Sample URL: 
+
+![rest_get_actionfilter_url](/staticfiles/connectors/media/technology-connector/rest_get_actionfilter_url.png) 
+
+This URL consists of three parts:  
+a) The Base URL : This is the basic URL of the application from where the data are fetched. This remains constant when used for any modules within the application.    
+b) EndPoint: Endpoint is the location that defines the module from where the data are fetched     
+c) Action Filter/Parameter: This is the parameter provided against the endpoint that defines which data are needed to be fetched.    
+
+Therefore, when defining the action and the action filter in APPSeCONNECT Portal, it is recommended to execute the URL in your 
+API development & testing platform. This provides the exact identification of the Action and the Action parameters.
+
+In the Sample URL provided the URL breakup would be as:
+
+1.	Base URL: https://api.lightspeed.com	
+2.	End Point: item
+3.	Action Parameter/Filter: createTime=> ~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~
+
 ![rest_get_actionfilter2](/staticfiles/connectors/media/technology-connector/rest_get_actionfilter2.png) 
 
 Click on the Action Filter Tab, to define the action for the GET node.
@@ -78,6 +102,9 @@ value for key is `createTime>~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~`
 
 **Note: For any XML & JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:`customers/$.xml`**
 
+Note: 
+* This scenario has been explained taking the application Lightspeed.
+* The time span a generic format for APPSeCONNECT, and has been detailed above in this document.
 
 
 ## Defining Error Filters for Get Operation
@@ -96,8 +123,6 @@ Error filters are defined in GET Operations to resync any failed data during int
 Under the parameter section, the value for `key` is available in respective application of API doccumentation. 
 If the relationship between key and value is not `=`, then the `value` must be declared in the `key`
 section itself and the `value` must be kept blank.
-
-
 
 ### For POST Operation
 

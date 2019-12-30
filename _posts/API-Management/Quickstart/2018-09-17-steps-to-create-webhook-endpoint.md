@@ -66,36 +66,68 @@ For creating a Webhook Realtime API, login to APPSeCONNECT portal and follow the
   and Proxy.`By default Webhook section will be shown`. You can see all your connections listed here.  
 ![Webhook-Introduction](/staticfiles/api-management/media/Webhook-Introduction.png)  
 
-**Note:If you do not have a registered URL with **APPSeCONNECT** you have to [Register a URL](/api-management/Steps-to-register-url/) for 
+**Note:If you do not have a registered URL with APPSeCONNECT you have to [Register a URL](/api-management/Steps-to-register-url/) for 
 your organization.**
 
 1. Now under the desired connection,Expand the Connection,you will find **Add New API** button like this.
 ![CreateAPI_webhook](/staticfiles/api-management/media/CreateAPI_webhook.png)
 2. Upon clicking the button you will get introduced to a Wizard like this. Provide basic information like API name, 
    API help document URL etc.
-![Wizard-API-Basic](/staticfiles/api-management/media/Wizard-API-Basic.png)
-
+![Wizard-API-Basic](/staticfiles/api-management/media/Wizard-API-Basic.png)  
 **Note:It is mandatory for the user to enable the checkbox for `Show in Agent`, else user cannot view the touchpoint and run the sync process.**
-4. Now provide Source App Configuration like Source Schema,Action,Protocol and Protocol Method.
+3. Now provide Source App Configuration like Source Schema,Action,Protocol and Protocol Method.
 ![Wizard-API-Source](/staticfiles/api-management/media/Wizard-API-Source.png)
-5. Thereafter provide Destination App Configuration like Destination Schema,Action,Protocol and Protocol Method.
+4. Thereafter provide Destination App Configuration like Destination Schema,Action,Protocol and Protocol Method.
 ![Wizard-API-Destination](/staticfiles/api-management/media/Wizard-API-Destination.png)
-6. Then you have to configure mapping for transformation from source to destination
+5. Then you have to configure mapping for transformation from source to destination
 ![Wizard-API-Mapping](/staticfiles/api-management/media/Wizard-API-Mapping.png)
-7. After everything is done click on finish to Save your API.
+6. After everything is done click on finish to Save your API.
 ![Wizard-API-Summary](/staticfiles/api-management/media/Wizard-API-Summary.png)
-8. You will be re-directed to Webhook section afterwards.You can find your newly created Webhook API
+7. You will be re-directed to Webhook section afterwards.You can find your newly created Webhook API
  under the connection you created.
 ![Webhook-API-Data](/staticfiles/api-management/media/Webhook-API-Data.png)  
-9.	The Touchpoint will consist of two buttons:  
+8.	The Touchpoint will consist of two buttons:  
 * Bucket: This is the Resync bucket of the touchpoint. Any Data synced (Data that are Success, Failed, Unprocessed & Skipped) 
   in OP will automatically reflect in the Resync Bucket of the Portal.
 * Log: This the Log Bucket of the Touch point and will display the logs, processed during the sync process.
-![webhook-resyncbucket](/staticfiles/api-management/media/webhook-resyncbucket.png) 
-
+![webhook-resyncbucket](/staticfiles/api-management/media/webhook-resyncbucket.png)   
 9. Copy the URL and use it as a webhook endpoint in applications that support webhooks.
+
+**Note: The Endpoint URL is divided into two parts: Domain Name (Register URL) & URL Endpoint. User can edit only the Endpoint 
+and not the domain name. For editing or changing the domain name, user needs to Register the URL again**
+
 ![API-Webhook-shopify](/staticfiles/api-management/media/API-Webhook-shopify.png) 
 
 Thus APPSeConnect provides you the platform to create Webhook API to fetch real time data and sync to other applications.    
 
 **Note: Realtime Webhook APIs does not require any Actions & Action Filters for the sync process.**
+
+## Executing Realtime API Touchpoints with APPSeCONNECT
+
+Executing Real-Time API Touchpoints is one of the primary steps after you have successfully configured a Realtime Webhook API 
+on your organisation. For the deployment, user needs to consider installing the on-premise agent, and configure it to be 
+active on Environment section of APPSeCONNECT.
+
+Steps to Deploy and Execute the Realtime APIs:
+
+1.	Login to the APPSeCONNECT Portal with valid credentials.
+2.	After creating the Realtime Webhook API/Touchpoint, from the API Section of the AEC Portal, reset cache and 
+    Publish the API to deploy the touchpoint to the agent. 
+3.	Publish the connection from the connections page.
+4.	Once, the API is deployed to the agent, login to the On-Premise agent and Update Configuration, before its execution.
+5.	Validate the applications used, before executing the sync process. If your Chosen application is pre-packaged, Click Here. 
+    You will be able to view the connectors & their steps to validate respective applications.
+6.	Enable the connection by clicking on the `Show in Sync Panel` checkbox for viewing the touchpoint  in the Sync panel 
+    of the On-Premise Agent.  
+![realtime-execution-integration1](/staticfiles/api-management/media/realtime-execution-integration1.png)   
+7. Navigate to the sync panel and execute the Real-Time Touchpoint that was configured through Autosync.
+![realtime-execution-integration2](/staticfiles/api-management/media/realtime-execution-integration2.png)   
+8.	Users can view the sync status, in the Resync Bucket of both the On-Premise Agent & in cloud portal. 
+9.	Click on the Bucket icon in portal, user can view the Resync bucket for the touchpoint. The Resync Bucket view (Portal view) 
+    for a Realtime Touchpoint is given below
+![realtime-execution-integration3.png](/staticfiles/api-management/media/realtime-execution-integration3.png) 
+
+Note: 
+
+* The touchpoint cannot be executed manually as sync button remains disabled. After Update Configuration, make sure you enable the Auto-sync option, as Realtime Touchpoints will only execute through AutoSync.
+* In-case of error, user cannot Resync any data.

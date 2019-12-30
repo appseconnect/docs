@@ -425,8 +425,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/shopify/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/shopify/" onclick="selectTab('/connectors/shopify/', event);" title="Go to Shopify">Shopify</a>
+    <li class="menu-item-" data-url="/connectors/Shopify/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Shopify/" onclick="selectTab('/connectors/Shopify/', event);" title="Go to Shopify">Shopify</a>
         
     </li>
     
@@ -641,6 +641,12 @@
     
     <li class="menu-item-" data-url="/connectors/Filters-for-Integration/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/Filters-for-Integration/" onclick="selectTab('/connectors/Filters-for-Integration/', event);" title="Go to Using Filters for Integration">Using Filters for Integration</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Troubleshooting-Rest/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Troubleshooting-Rest/" onclick="selectTab('/connectors/Troubleshooting-Rest/', event);" title="Go to Troubleshooting for Rest">Troubleshooting for Rest</a>
         
     </li>
     
@@ -1343,6 +1349,18 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/advance%20workflow/working-with-decision-node/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/advance%20workflow/working-with-decision-node/" onclick="selectTab('/advance%20workflow/working-with-decision-node/', event);" title="Go to Working with Decision Node">Working with Decision Node</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/advance%20workflow/working-with-delay-node/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/advance%20workflow/working-with-delay-node/" onclick="selectTab('/advance%20workflow/working-with-delay-node/', event);" title="Go to Working with Delay Node">Working with Delay Node</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/advance%20workflow/designing-executing-adv-workflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/advance%20workflow/designing-executing-adv-workflow/" onclick="selectTab('/advance%20workflow/designing-executing-adv-workflow/', event);" title="Go to Designing & Executing Advance Workflow">Designing & Executing Advance Workflow</a>
         
@@ -1775,12 +1793,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/rule/create-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/rule/create-rule/" onclick="selectTab('/rule/create-rule/', event);" title="Go to Create & Edit Rule">Create & Edit Rule</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/rule/preconfigured-rule-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/preconfigured-rule-overview/" onclick="selectTab('/rule/preconfigured-rule-overview/', event);" title="Go to Overview of Pre-Configured Rule">Overview of Pre-Configured Rule</a>
         
@@ -1930,7 +1942,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -1945,6 +1957,7 @@
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#steps-to-create-webhook-endpoint--real-time-api">Steps to Create Webhook Endpoint- Real Time API</a></li>
+  <li><a href="#executing-realtime-api-touchpoints-with-appseconnect">Executing Realtime API Touchpoints with APPSeCONNECT</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2010,19 +2023,16 @@ and Proxy.<code class="highlighter-rouge">By default Webhook section will be sho
 <img src="/staticfiles/api-management/media/Webhook-Introduction.png" alt="Webhook-Introduction" /></li>
 </ul>
 
-<p><strong>Note:If you do not have a registered URL with **APPSeCONNECT</strong> you have to <a href="/api-management/Steps-to-register-url/">Register a URL</a> for 
-your organization.**</p>
+<p><strong>Note:If you do not have a registered URL with APPSeCONNECT you have to <a href="/api-management/Steps-to-register-url/">Register a URL</a> for 
+your organization.</strong></p>
 
 <ol>
   <li>Now under the desired connection,Expand the Connection,you will find <strong>Add New API</strong> button like this.
 <img src="/staticfiles/api-management/media/CreateAPI_webhook.png" alt="CreateAPI_webhook" /></li>
   <li>Upon clicking the button you will get introduced to a Wizard like this. Provide basic information like API name, 
 API help document URL etc.
-<img src="/staticfiles/api-management/media/Wizard-API-Basic.png" alt="Wizard-API-Basic" /></li>
-</ol>
-
-<p><strong>Note:It is mandatory for the user to enable the checkbox for <code class="highlighter-rouge">Show in Agent</code>, else user cannot view the touchpoint and run the sync process.</strong></p>
-<ol>
+<img src="/staticfiles/api-management/media/Wizard-API-Basic.png" alt="Wizard-API-Basic" /><br />
+<strong>Note:It is mandatory for the user to enable the checkbox for <code class="highlighter-rouge">Show in Agent</code>, else user cannot view the touchpoint and run the sync process.</strong></li>
   <li>Now provide Source App Configuration like Source Schema,Action,Protocol and Protocol Method.
 <img src="/staticfiles/api-management/media/Wizard-API-Source.png" alt="Wizard-API-Source" /></li>
   <li>Thereafter provide Destination App Configuration like Destination Schema,Action,Protocol and Protocol Method.
@@ -2042,13 +2052,51 @@ in OP will automatically reflect in the Resync Bucket of the Portal.</li>
 <img src="/staticfiles/api-management/media/webhook-resyncbucket.png" alt="webhook-resyncbucket" /></li>
     </ul>
   </li>
-  <li>Copy the URL and use it as a webhook endpoint in applications that support webhooks.
-<img src="/staticfiles/api-management/media/API-Webhook-shopify.png" alt="API-Webhook-shopify" /></li>
+  <li>Copy the URL and use it as a webhook endpoint in applications that support webhooks.</li>
 </ol>
+
+<p><strong>Note: The Endpoint URL is divided into two parts: Domain Name (Register URL) &amp; URL Endpoint. User can edit only the Endpoint 
+and not the domain name. For editing or changing the domain name, user needs to Register the URL again</strong></p>
+
+<p><img src="/staticfiles/api-management/media/API-Webhook-shopify.png" alt="API-Webhook-shopify" /></p>
 
 <p>Thus APPSeConnect provides you the platform to create Webhook API to fetch real time data and sync to other applications.</p>
 
 <p><strong>Note: Realtime Webhook APIs does not require any Actions &amp; Action Filters for the sync process.</strong></p>
+
+<h2 id="executing-realtime-api-touchpoints-with-appseconnect">Executing Realtime API Touchpoints with APPSeCONNECT</h2>
+
+<p>Executing Real-Time API Touchpoints is one of the primary steps after you have successfully configured a Realtime Webhook API 
+on your organisation. For the deployment, user needs to consider installing the on-premise agent, and configure it to be 
+active on Environment section of APPSeCONNECT.</p>
+
+<p>Steps to Deploy and Execute the Realtime APIs:</p>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
+  <li>After creating the Realtime Webhook API/Touchpoint, from the API Section of the AEC Portal, reset cache and 
+Publish the API to deploy the touchpoint to the agent.</li>
+  <li>Publish the connection from the connections page.</li>
+  <li>Once, the API is deployed to the agent, login to the On-Premise agent and Update Configuration, before its execution.</li>
+  <li>Validate the applications used, before executing the sync process. If your Chosen application is pre-packaged, Click Here. 
+You will be able to view the connectors &amp; their steps to validate respective applications.</li>
+  <li>Enable the connection by clicking on the <code class="highlighter-rouge">Show in Sync Panel</code> checkbox for viewing the touchpoint  in the Sync panel 
+of the On-Premise Agent.<br />
+<img src="/staticfiles/api-management/media/realtime-execution-integration1.png" alt="realtime-execution-integration1" /></li>
+  <li>Navigate to the sync panel and execute the Real-Time Touchpoint that was configured through Autosync.
+<img src="/staticfiles/api-management/media/realtime-execution-integration2.png" alt="realtime-execution-integration2" /></li>
+  <li>Users can view the sync status, in the Resync Bucket of both the On-Premise Agent &amp; in cloud portal.</li>
+  <li>Click on the Bucket icon in portal, user can view the Resync bucket for the touchpoint. The Resync Bucket view (Portal view) 
+for a Realtime Touchpoint is given below
+<img src="/staticfiles/api-management/media/realtime-execution-integration3.png" alt="realtime-execution-integration3.png" /></li>
+</ol>
+
+<p>Note:</p>
+
+<ul>
+  <li>The touchpoint cannot be executed manually as sync button remains disabled. After Update Configuration, make sure you enable the Auto-sync option, as Realtime Touchpoints will only execute through AutoSync.</li>
+  <li>In-case of error, user cannot Resync any data.</li>
+</ul>
 
                 
             </section>
@@ -3839,8 +3887,28 @@ in OP will automatically reflect in the Resync Bucket of the Portal.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             

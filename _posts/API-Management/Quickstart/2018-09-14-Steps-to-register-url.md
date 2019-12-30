@@ -38,12 +38,11 @@ menus:
 
 ## Scenario of Registering URL 
 
-1: If the API Proxy or Webhook is to be executed on cloud, Registering the URL is must in such case.
+1: If the API Proxy or Webhook is to be executed on cloud, Registering the URL is must.
 
-2: If the user wants to keep its IP Public while running the webhook  from the OP agent. The URL is needed to be registered in order to enhance security in the transaction process. 
+2: Register URL is for enhancing security purpose
 
-3: Register URL is needed to be mandatorily done if the user has network issues. 
-If not done, then in case of loss of data loss may happen.
+3: Register URL is needed to be mandatorily done if the user has network issues. If not done, then in case of loss of data loss may happen.
 
 ## Troubleshooting
 
