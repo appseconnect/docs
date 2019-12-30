@@ -33,3 +33,4 @@ API for POST or GET operation, user can implement the delay node which will hold
 ![advance-delay2](/staticfiles/advance-workflow/media/advance-delay2.png) 
 5.	After specifying the time, click on the Save Button.
 After saving the configuration window, user needs to attach the node with the other nodes as per the delay position Get/Post.
+

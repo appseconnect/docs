@@ -867,6 +867,8 @@
     <None Include="_pages\index.md" />
     <None Include="_pages\category-archive.md" />
     <None Include="_pages\tag-archive.md" />
+    <None Include="_posts\Advance-Workflow\2019-10-05-working-with-delay-node.md" />
+    <None Include="_posts\Advance-Workflow\2019-10-04-working-with-decision-node.md" />
     <None Include="_posts\Advance-Workflow\2019-10-03-saving-and-restoring-revised-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-10-01-designing-executing-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-10-02-deploying-adv-workflow.md" />
