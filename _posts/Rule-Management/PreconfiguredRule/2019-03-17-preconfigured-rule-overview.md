@@ -16,8 +16,6 @@ Choose Rule option available in the Rules section of the APPSeCONNECT portal.
 
 Users/Implementers of APPSeCONNECT can activate these rules from the [Choose Rule](/rule/choose-rule/) section and can modify or configure as per the requirement of the user. 
 
-To know about editing the Rule [Click here](/rule/create-rule/)
-
 The rules that are preconfigured with APPSeCONNECT are given below:
 
 1.	[Pre-configured rule for Misfire Event](/rule/preconfigured-rule-for-misfire-event/)

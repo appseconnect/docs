@@ -24,8 +24,9 @@ on daily basis. The main utility for this report is:
 |Column Name|Utility Description |
 |---|---|
 |Success|These are the Data which is successfully synced within the transaction period|
-|Successful Retries|These are the Data created older than transaction period which had failed due to errors and now is successfully retried within the transaction period|
 |Failure|These are the Data which are unsuccessful within or before the transaction period. |
+
+**Note: Failed data that have been attempted with autosync of resync, for Success, the count would be displayed on the success column on the morning report for the next day.**
 
 Transaction Period: Denotes the timespan of data transaction meant for report generation.
 To Cite an example, if the transaction period is from 3.12.2019 - 00.00hrs to 4.12.2019 23.59 hrs (Inclusive of 59th minute)

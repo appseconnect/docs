@@ -31,18 +31,94 @@ Let us walkthrough the Functional Menu for understanding the usage and need of e
 |Manage|This section provides a simplified view of the modules that required to manage the integration process|
 
 ## A. Accessing Organization Dashboard 
-Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information- 
-
-1. Basic organization information.
-2. Subscription Detail of the user 
-3. Sync Errors of last 24 hours showing success sync & failure sync information
-3. Support tickets status - Pending/Open tickets.
-4. List of today's to-do for that user who has logged in.
-5. Shortcut links for variously related menus.
-
+Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. 
+The dashboard can be seen automatically when a Project has been chosen. 
+In this page you can see the snapshot of the project at a glance with respect to the activities of the user. 
 ![Dashboard](/staticfiles/root/media/Dashboard.png)
 
+The dashboard view captures the following information- 
+1.	Project Basic Information
+2.	Configuration Completion Details
+3.	Subscription Details
+4.	Execution Status
+5.	Execution Counts 
+6.	Sync Errors
+7.	Execution Logs
+
 Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.
+
+*1. Project Basic Information: This widget displays the basic information of the organisation.*  
+The details displayed in the widget are:
+a.	Project Name: Shows the organisation name.
+b.	Main Contact Person: Displays the contact detail (Email Id only) of the project holder.
+c.	Implementation contact: Displays the email id of the implementation team of the project.
+d.	Sales Contact: Shows the Email details of InSync Sales Team.
+e.	Support Contact: Displays the Email Id of the InSync Support Team.
+
+*2. Configuration Completion Details: This widget displays the configuration informations related to the organisation project. 
+This widget also has a progress bar that displays the progress status for the organisation.* 
+
+*3.Subscription Details: This widget will inform the user about the categories of applications subscribed for the organisation.* 
+
+ These are the following information that will be displayed in the widget.
+a.	Subscription Plan
+b.	Remaining Days
+c.	Subscription Expiry date
+d.	Application Categories Subscribed.
+
+The widget has the `View More` button, which redirects the user to the subscription page of the organisation.
+**Note: The above three widgets initiate in minimized form by default. Users need to expand the widgets to view the widget details.**
+ 
+ ![Subscription_Dashboard](/staticfiles/root/media/Subscription_Dashboard.png)
+
+*4.Execution Status: This widget displays the percentage of data synced and is categorised based on the status: Success, Skipped & Failure.*
+The percentage is displayed on a pie chart  irrespective of connections. Hovering over the section on the pie chart will display the exact 
+number of data based on the statuses. Users can minimize, maximize the widget by click on the respective button available on the top right 
+corner of the widget. 
+
+**Note: The close button remains in disabled state.** 
+
+ ![ExecutionStatus_Dashboard](/staticfiles/root/media/ExecutionStatus_Dashboard.png)
+
+*5. Execution Counts: This widget displays the data counters with respect to each connection in form of a Bar chart.*
+This widget displays the status of each connection based on:  Success, Skipped, Unprocessed & Failure.
+Users can minimize, maximize the widget by click on the respective button available on the top right corner of the widget.  
+Note: The close button remains in disabled state.
+![ExecutionCount_Dashboard.png](/staticfiles/root/media/ExecutionCount_Dashboard.png)
+
+*6.Sync Errors: This widget will display all the errors occurred, irrespective of the connections for the organisation.*
+For each error, the following details would be displayed.
+a.	The time of the error faced. 
+b.	Error Faced
+c.	The source id of the item.
+
+ ![Syncerror_Dashboard.png](/staticfiles/root/media/Syncerror_Dashboard.png)
+
+*Note: Only the latest 100 errors would display in the widget.* 
+
+Users can search the error based on the source id and the error name by click on the search icon available on the top right corner of the widget.
+Users can minimize, maximize the widget by click on the respective button available on the top right corner of the widget. 
+Note: The close button remains in disabled state.
+
+![Syncerror2_Dashboard.png](/staticfiles/root/media/Syncerror_Dashboard.png)
+
+*7. Execution Logs: This widget will display the execution logs of all the workflows & Realtime Time touchpoints executed through autosync.*
+Every log would display these following details:
+
+a.	Connection Name
+b.	Touchpoint/Workflow name
+c.	Start time of the Execution
+d.	Finishing Time
+e.	Time taken to execute
+
+![ExecutionLog_Dashboard.png](/staticfiles/root/media/ExecutionLog_Dashboard.png)
+
+Users can minimize, maximize the widget by click on the respective button available on the top right corner of the widget. 
+Note: 
+* The close button remains in disabled state.
+* Logs would be displayed only for autosync execution processes.  
+
+![ExecutionLog2_Dashboard.png](/staticfiles/root/media/ExecutionLog2_Dashboard.png)
 
 ## B. Choosing App
 

@@ -1942,7 +1942,7 @@
 
 
 
-  11 minute read
+  14 minute read
 </p>
                 
                 
@@ -2028,20 +2028,98 @@ The view of functional menu(s) is given below:</p>
 </table>
 
 <h2 id="a-accessing-organization-dashboard">A. Accessing Organization Dashboard</h2>
-<p>Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. The dashboard can be seen automatically when a Project has been chosen. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. The dashboard view captures the following information-</p>
+<p>Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. 
+The dashboard can be seen automatically when a Project has been chosen. 
+In this page you can see the snapshot of the project at a glance with respect to the activities of the user. 
+<img src="/staticfiles/root/media/Dashboard.png" alt="Dashboard" /></p>
 
+<p>The dashboard view captures the following information-</p>
 <ol>
-  <li>Basic organization information.</li>
-  <li>Subscription Detail of the user</li>
-  <li>Sync Errors of last 24 hours showing success sync &amp; failure sync information</li>
-  <li>Support tickets status - Pending/Open tickets.</li>
-  <li>List of today’s to-do for that user who has logged in.</li>
-  <li>Shortcut links for variously related menus.</li>
+  <li>Project Basic Information</li>
+  <li>Configuration Completion Details</li>
+  <li>Subscription Details</li>
+  <li>Execution Status</li>
+  <li>Execution Counts</li>
+  <li>Sync Errors</li>
+  <li>Execution Logs</li>
 </ol>
 
-<p><img src="/staticfiles/root/media/Dashboard.png" alt="Dashboard" /></p>
-
 <p>Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.</p>
+
+<p><em>1. Project Basic Information: This widget displays the basic information of the organisation.</em><br />
+The details displayed in the widget are:
+a.	Project Name: Shows the organisation name.
+b.	Main Contact Person: Displays the contact detail (Email Id only) of the project holder.
+c.	Implementation contact: Displays the email id of the implementation team of the project.
+d.	Sales Contact: Shows the Email details of InSync Sales Team.
+e.	Support Contact: Displays the Email Id of the InSync Support Team.</p>
+
+<p><em>2. Configuration Completion Details: This widget displays the configuration informations related to the organisation project. 
+This widget also has a progress bar that displays the progress status for the organisation.</em></p>
+
+<p><em>3.Subscription Details: This widget will inform the user about the categories of applications subscribed for the organisation.</em></p>
+
+<p>These are the following information that will be displayed in the widget.
+a.	Subscription Plan
+b.	Remaining Days
+c.	Subscription Expiry date
+d.	Application Categories Subscribed.</p>
+
+<p>The widget has the <code class="highlighter-rouge">View More</code> button, which redirects the user to the subscription page of the organisation.
+<strong>Note: The above three widgets initiate in minimized form by default. Users need to expand the widgets to view the widget details.</strong></p>
+
+<p><img src="/staticfiles/root/media/Subscription_Dashboard.png" alt="Subscription_Dashboard" /></p>
+
+<p><em>4.Execution Status: This widget displays the percentage of data synced and is categorised based on the status: Success, Skipped &amp; Failure.</em>
+The percentage is displayed on a pie chart  irrespective of connections. Hovering over the section on the pie chart will display the exact 
+number of data based on the statuses. Users can minimize, maximize the widget by click on the respective button available on the top right 
+corner of the widget.</p>
+
+<p><strong>Note: The close button remains in disabled state.</strong></p>
+
+<p><img src="/staticfiles/root/media/ExecutionStatus_Dashboard.png" alt="ExecutionStatus_Dashboard" /></p>
+
+<p><em>5. Execution Counts: This widget displays the data counters with respect to each connection in form of a Bar chart.</em>
+This widget displays the status of each connection based on:  Success, Skipped, Unprocessed &amp; Failure.
+Users can minimize, maximize the widget by click on the respective button available on the top right corner of the widget.<br />
+Note: The close button remains in disabled state.
+<img src="/staticfiles/root/media/ExecutionCount_Dashboard.png" alt="ExecutionCount_Dashboard.png" /></p>
+
+<p><em>6.Sync Errors: This widget will display all the errors occurred, irrespective of the connections for the organisation.</em>
+For each error, the following details would be displayed.
+a.	The time of the error faced. 
+b.	Error Faced
+c.	The source id of the item.</p>
+
+<p><img src="/staticfiles/root/media/Syncerror_Dashboard.png" alt="Syncerror_Dashboard.png" /></p>
+
+<p><em>Note: Only the latest 100 errors would display in the widget.</em></p>
+
+<p>Users can search the error based on the source id and the error name by click on the search icon available on the top right corner of the widget.
+Users can minimize, maximize the widget by click on the respective button available on the top right corner of the widget. 
+Note: The close button remains in disabled state.</p>
+
+<p><img src="/staticfiles/root/media/Syncerror_Dashboard.png" alt="Syncerror2_Dashboard.png" /></p>
+
+<p><em>7. Execution Logs: This widget will display the execution logs of all the workflows &amp; Realtime Time touchpoints executed through autosync.</em>
+Every log would display these following details:</p>
+
+<p>a.	Connection Name
+b.	Touchpoint/Workflow name
+c.	Start time of the Execution
+d.	Finishing Time
+e.	Time taken to execute</p>
+
+<p><img src="/staticfiles/root/media/ExecutionLog_Dashboard.png" alt="ExecutionLog_Dashboard.png" /></p>
+
+<p>Users can minimize, maximize the widget by click on the respective button available on the top right corner of the widget. 
+Note:</p>
+<ul>
+  <li>The close button remains in disabled state.</li>
+  <li>Logs would be displayed only for autosync execution processes.</li>
+</ul>
+
+<p><img src="/staticfiles/root/media/ExecutionLog2_Dashboard.png" alt="ExecutionLog2_Dashboard.png" /></p>
 
 <h2 id="b-choosing-app">B. Choosing App</h2>
 
