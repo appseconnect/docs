@@ -26,11 +26,12 @@ API for POST or GET operation, user can implement the delay node which will hold
 ## Steps to implement the Delay node in Advanced Workflow
 
 1.	Login to the APPSeCONNECT Portal and Navigate to the Advance Workflow Module.
-2.	Edit an existing workflow where the user needs to implement the workflow. User can also create a new workflow as per the requirement. Steps to create an advanced workflow is given here.
+2.	Edit an existing workflow where the user needs to implement the workflow. User can also [create a new workflow](/advance%20workflow/designing-executing-adv-workflow/) as per the requirement. 
 3.	Drag and the drop the Delay node from the Process Property folder. The Delay Node Configuration window opens.
 ![advance-delay1](/staticfiles/advance-workflow/media/advance-delay1.png) 
 4.	User needs to specify the time (in Seconds) for the defining the hold up time. 
 ![advance-delay2](/staticfiles/advance-workflow/media/advance-delay2.png) 
-5.	After specifying the time, click on the Save Button.
+5.	After specifying the time, click on the Save Button.  
+
 After saving the configuration window, user needs to attach the node with the other nodes as per the delay position Get/Post.
 

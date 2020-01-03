@@ -1942,7 +1942,7 @@
 
 
 
-  8 minute read
+  9 minute read
 </p>
                 
                 
@@ -2053,7 +2053,7 @@ This page will give live information about the current OP agent, including:</p>
 <ul>
   <li>Architecture in use</li>
   <li>The latest agent deployment version for the selected environment</li>
-  <li>Agent last restart time is default 03:49 for all organizations who are using OP Agent.</li>
+  <li>Agent last restart time is default 03:49 for all organizations who are using OP Agent. Later you can view the dynamic time of agent restart if restarted manually.</li>
   <li>APPSeCONNECT directory free space available</li>
   <li>CPU and Memory Usage display the dynamic data depending on the consumption rate.</li>
   <li>Agent Installation directory path</li>
@@ -2091,7 +2091,7 @@ stored in sql lite database and will be reflected in the log bucket.</li>
 <p>Cloud organizations can currently control the followings settings of their cloud agent from portal
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment7.png" alt="Enviornment7" /></p>
 
-<p><strong>Autosync of Resync Settings</strong>
+<p><strong>Retry Settings</strong>
 Detailed field description:</p>
 <ul>
   <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
@@ -2130,20 +2130,21 @@ a new license will be generated against it.</p>
 
 <h3 id="detaching-and-attaching-environment">Detaching and Attaching Environment</h3>
 
-<p>Environment detachment is blocking the Agent from use in that specific environment. So, when you detach the selected environment from Portal, 
-it remains in the list but will show as disconnected. Post detachment, if the user tries to relogin, it will give <code class="highlighter-rouge">Agent is blocked</code> error.</p>
+<p>Environment detachment is a functionality that blocks the Agent from use in that specific environment. 
+Therefore, when detaching the selected environment from Portal, it remains in the list but will be displayed 
+as Agent is Detached when clicked on it.</p>
+
+<p>Post detachment, if the user tries to re-login to the agent, it will display the message, Agent is Blocked.<br />
+<strong>Note: On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.</strong></p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png" alt="agent-disconnected" /></p>
 
-<p>To unblock the environment, you must Attach that environment once again.</p>
+<p>For unblocking the agent,  user/implementer needs to attach the agent by clicking on the Attach button.</p>
 
-<p><strong>NOTE:</strong></p>
-<ul>
-  <li>Activate Autosync is restarted/active.</li>
-  <li>Delete and Detach feature is available both in On-Premise &amp; Cloud Agent.</li>
-  <li>Implementers and partners must note that once they <a href="/license-management/#usability-aspect-of-license-management">login with one organization credentials</a> in one system, they won’t be able to further login with different organization 
-credentials in the same system</li>
-</ul>
+<p>Also, if the environment being attached, but the Auto-Sync is Off, then the user would view the Agent 
+is Disconnected page. User needs to enable the auto sync checkbox in the On-Premise agent for viewing 
+the Environment details. 
+<img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected1.png" alt="agent-disconnected1" /></p>
 
 <h2 id="environment-view-for-old-agents">Environment View for Old Agents</h2>
 
@@ -2198,7 +2199,7 @@ Real Time settings has two field for the configurations:</p>
 <img src="/staticfiles/deployment/media/RevampedEnv/old-environment4.png" alt="old-environment4" /></li>
 </ul>
 
-<p><strong>Resync Settings:</strong> This section of the page has a checkbox for the user to Enable/Disable the autosync from the portal.</p>
+<p><strong>Resync Settings:</strong> This section of the page has a checkbox for the user to Enable/Disable the autosync of resync</p>
 
 
                 

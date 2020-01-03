@@ -30,8 +30,9 @@ The page is mainly divided into 4 sections that are static for every workflow. T
 This panel allows the user to provide name to the workflow and edit the workflow name. Here you can view the revision history 
 saved previously. User/Implementers will be able to view the following buttons in the header panel.
 
-![advance-designing2](/staticfiles/advance-workflow/media/advance-designing2.png)
-
+![advance-designing2](/staticfiles/advance-workflow/media/advance-designing2.png)  
+Below the Workflow name, user get the option to add description to the workflow.  
+ 
 * Play button: The play button will available will allow the user to execute the designed workflow.
 * Tracker: Users will be able to view the status, messages, value of a node/object, Variables, XML Files, contextual data, etc. generated during the workflow execution process by clicking on the Show Tracker button.
 * Delete: Clicking on this button will delete the workflow. User will get a confirmation pop-up for the delete operation of the workflow. Click on yes in the pop-up will delete the workflow from associated group/folder.
