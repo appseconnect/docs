@@ -80,7 +80,7 @@ In the Sample URL provided the URL breakup would be as:
 Click on the Action Filter Tab, to define the action for the GET node.
 
 * Endpoint - Each endpoint is the location from which APIs can access the resources from the respective module of the application.This is a mandatory field, enter the endpoint 
-* Decsription - This field enables you to decsribe the endpoints. This is a mandatory field, enter the description
+* Description - This field enables you to decsribe the endpoints. This is a mandatory field, enter the description
 * HTTP Method - The HTTP verbs comprise a major portion of our `uniform interface` constraint and provide us the action counterpart to the noun-based resource. Here you need to select `GET` from the drop down list 
   for executing the GET Operation.
 * Content Type - The Content-Type entity header is used to indicate the media type of the resource. In responses, a Content-Type header tells the client what the 
@@ -102,9 +102,8 @@ value for key is `createTime>~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~`
 
 **Note: For any XML & JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:`customers/$.xml`**
 
-Note: 
-* This scenario has been explained taking the application Lightspeed.
-* The time span a generic format for APPSeCONNECT, and has been detailed above in this document.
+**Note: (A) This scenario has been explained taking the application Lightspeed.
+        (B) The time span a generic format for APPSeCONNECT, and has been detailed above in this document.**
 
 
 ## Defining Error Filters for Get Operation

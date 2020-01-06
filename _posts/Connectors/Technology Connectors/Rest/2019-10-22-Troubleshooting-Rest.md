@@ -6,7 +6,7 @@ category: "Connectors"
 menus: 
     resttechnology:
         icon: fa fa-gg
-        weight: 11
+        weight: 12
         category: "Troubleshooting for Rest"
         title: "Troubleshooting for Rest"
         identifier: restfiltersmapping

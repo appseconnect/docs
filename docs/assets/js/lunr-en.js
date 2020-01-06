@@ -1934,20 +1934,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Troubleshooting for Rest",
-      excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 213
-    });
-    
-  
-    idx.add({
       title: "Overview of Advance Workflow",
       excerpt: "APPSeCONNECT Advanced Workflow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 213
     });
     
   
@@ -1956,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 214
     });
     
   
@@ -1965,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 216
+      id: 215
     });
     
   
@@ -1974,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 217
+      id: 216
     });
     
   
@@ -1983,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 218
+      id: 217
     });
     
   
@@ -1992,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 219
+      id: 218
     });
     
   
@@ -2000,6 +1991,15 @@ var idx = lunr(function () {
       title: "Working with Delay Node",
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
+      tags: ["developers"],
+      id: 219
+    });
+    
+  
+    idx.add({
+      title: "Troubleshooting for Rest",
+      excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
+      categories: ["Connectors"],
       tags: ["developers"],
       id: 220
     });
@@ -4367,17 +4367,6 @@ var store = [
     
       
       {
-        "title": "Troubleshooting for Rest",
-        "url": "/connectors/Troubleshooting-Rest/",
-        "excerpt": "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Overview of Advance Workflow",
         "url": "/advance%20workflow/overview-adv-workflow/",
         "excerpt": "APPSeCONNECT Advanced Workflow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
@@ -4447,6 +4436,17 @@ var store = [
         "title": "Working with Delay Node",
         "url": "/advance%20workflow/working-with-delay-node/",
         "excerpt": "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Troubleshooting for Rest",
+        "url": "/connectors/Troubleshooting-Rest/",
+        "excerpt": "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

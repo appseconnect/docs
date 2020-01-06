@@ -125,9 +125,7 @@ Steps to Deploy and Execute the Realtime APIs:
 8.	Users can view the sync status, in the Resync Bucket of both the On-Premise Agent & in cloud portal. 
 9.	Click on the Bucket icon in portal, user can view the Resync bucket for the touchpoint. The Resync Bucket view (Portal view) 
     for a Realtime Touchpoint is given below
-![realtime-execution-integration3.png](/staticfiles/api-management/media/realtime-execution-integration3.png) 
+![realtime-execution-integration3](/staticfiles/api-management/media/realtime-execution-integration3.png) 
 
-Note: 
-
-* The touchpoint cannot be executed manually as sync button remains disabled. After Update Configuration, make sure you enable the Auto-sync option, as Realtime Touchpoints will only execute through AutoSync.
-* In-case of error, user cannot Resync any data.
+Note: * The touchpoint cannot be executed manually as sync button remains disabled. After Update Configuration, make sure you enable the Auto-sync option, as Realtime Touchpoints will only execute through AutoSync.
+      * In-case of error, user cannot Resync any data.
