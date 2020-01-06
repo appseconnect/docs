@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Rule"
 menus: 
-    overviewrule:
+    preconfigurerule:
         title: "Pre-Configured Rule for Generation of Hourly Report"
         weight: 18
         icon: fa fa-wpexplorer
