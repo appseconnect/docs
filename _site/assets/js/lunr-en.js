@@ -621,7 +621,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Workflow Elements",
-      excerpt: "Why do you need element? Element Type of Workflow |Action Name|Description| |—|——–| |Get|| |Process| | |Post|| |Halt-Resume|| |Delay| | These...",
+      excerpt: "Why do you need element? A Workflow is designed using elements that helps in integrating data graphically. Elements are generally...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 67
@@ -738,7 +738,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Process Property",
-      excerpt: "Why do you need process property?\n\nProcess Property of Workflow\n\n|Action Name|Description|\n|—|——–|\n\n",
+      excerpt: "Why do you need process property? In APPSeCONNECT Workflow, users/implementers get the extra privilege to add special properties for better...",
       categories: ["Workflow"],
       tags: ["developers","actions"],
       id: 80
@@ -1925,20 +1925,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of Advance Workflow",
-      excerpt: "APPSeCONNECT Advanced Workflow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
-      categories: ["Advance Workflow"],
-      tags: ["developers"],
-      id: 212
-    });
-    
-  
-    idx.add({
       title: " Listing of Advance Workflow",
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 213
+      id: 212
     });
     
   
@@ -1947,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 213
     });
     
   
@@ -1956,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 214
     });
     
   
@@ -1965,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 216
+      id: 215
     });
     
   
@@ -1974,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 217
+      id: 216
     });
     
   
@@ -1983,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 218
+      id: 217
     });
     
   
@@ -1992,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 219
+      id: 218
     });
     
   
@@ -2754,7 +2745,7 @@ var store = [
       {
         "title": "Workflow Elements",
         "url": "/workflow/generating-elements/",
-        "excerpt": "Why do you need element? Element Type of Workflow |Action Name|Description| |—|——–| |Get|| |Process| | |Post|| |Halt-Resume|| |Delay| | These...",
+        "excerpt": "Why do you need element? A Workflow is designed using elements that helps in integrating data graphically. Elements are generally...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2897,7 +2888,7 @@ var store = [
       {
         "title": "Process Property",
         "url": "/workflow/process-property/",
-        "excerpt": "Why do you need process property?\n\nProcess Property of Workflow\n\n|Action Name|Description|\n|—|——–|\n\n",
+        "excerpt": "Why do you need process property? In APPSeCONNECT Workflow, users/implementers get the extra privilege to add special properties for better...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4339,17 +4330,6 @@ var store = [
         "title": "Mapping and Transformation",
         "url": "/connectors/Mapping-and-Transformation/",
         "excerpt": "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Overview of Advance Workflow",
-        "url": "/advance%20workflow/overview-adv-workflow/",
-        "excerpt": "APPSeCONNECT Advanced Workflow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

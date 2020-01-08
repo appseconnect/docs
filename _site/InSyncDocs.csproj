@@ -884,7 +884,7 @@
     <None Include="_posts\Advance-Workflow\2019-09-31-designing-executing-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-10-02-deploying-adv-workflow.md" />
     <None Include="_posts\Advance-Workflow\2019-09-30-listing-adv-workflow.md" />
-    <None Include="_posts\Advance-Workflow\2019-09-29-overview-adv-workflow.md" />
+    <None Include="_posts\Advance-Workflow\overview-adv-workflow.md" />
     <None Include="_posts\apps-management\how-to-guides\handling-schemas-on-apps.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-06-Dynamicsnav.md" />
     <None Include="_posts\Connectors\Application Connectors\Dynamics Business Central\2019-03-09-generic-nav2017-mutliconnectionextension.md" />

@@ -185,7 +185,7 @@ This section enables the user to view and add the Schema and its Actions.
 
 **Process:**
 1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Move into the APPS Page and [Choose any application](/getting-started/). 
+2. Move into the APPS Page and [Choose any application](/configuring%20appseconnect/configurations/#process-of-choosing-app). 
 3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 ![Select-Schema](/staticfiles/root/media/Select-Schema.png)
 4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.  
