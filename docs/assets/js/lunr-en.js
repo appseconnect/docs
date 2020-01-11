@@ -1772,7 +1772,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Pre-Configured Rule for Generation of Hourly Report",
+      title: "Pre-Configured Rule for Detailed Sync Report",
       excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
       categories: ["Rule"],
       tags: ["developers"],
@@ -4151,8 +4151,8 @@ var store = [
     
       
       {
-        "title": "Pre-Configured Rule for Generation of Hourly Report",
-        "url": "/rule/preconfigured-rule-for-hourly-report/",
+        "title": "Pre-Configured Rule for Detailed Sync Report",
+        "url": "/rule/preconfigured-rule-for-detailed-sync-report/",
         "excerpt": "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
         "teaser":
           

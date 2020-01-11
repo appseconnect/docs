@@ -1,11 +1,11 @@
 ---
-title: "Pre-Configured Rule for Generation of Hourly Report"
+title: "Pre-Configured Rule for Detailed Sync Report"
 toc: true
 tag: developers
 category: "Rule"
 menus: 
     preconfigurerule:
-        title: "Pre-Configured Rule for Generation of Hourly Report"
+        title: "Pre-Configured Rule for Detailed Sync Report"
         weight: 18
         icon: fa fa-wpexplorer
         identifier: preconfigurerulelog
@@ -17,7 +17,8 @@ Workflows are scheduled for it to run as per the requirement. Workflows can eith
 Functionality is always efficient if the user gets a complete report of the sync process. This pre-packaged rule provides hourly 
 reports to the user related to the sync process. 
 
-Once activated, user will get timely notifications over email, stating the detailed sync errors that incurred during the time period. Default time interval is on hourly basis.
+Once activated, user will get timely notifications over email, stating the detailed sync errors that incurred during the time period. Default time interval is on hourly basis.  
+
 **Note: User is required to activate the rule for Detailed Sync Report from the choose rule 
 section. However, the user cannot edit and customize any of the fields of this rule.** 
 
