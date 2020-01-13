@@ -33,12 +33,12 @@ Follow these steps to create a Webhook API with **APPSeCONECT**
 As per requirement, before you start creating a new API Proxy, you need to make sure you meet all the 
 prerequisites. Here are some of them: 
 
-1. [Getting a new account for APPSeCONNECT](/home/)
-2. [Configuring your Environment](/deployment/Enviornment-Overview/)
-3. [Choosing Apps or Adding Apps](/getting-started/#choosing-application)
-4. [Importing schemas and actions of an Application](/getting-started/)
-5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Credentials/)
-5. [Creating a Connection](/getting-started/#creating-connection--executing-the-touchpoint)
+1. [Getting a new account for APPSeCONNECT](/getting%20started/user-registration-license/#visitors-paid-request)
+2. [Configuring your Environment](/deployment/overview/)
+3. [Choosing Apps or Adding Apps](/configuring%20appseconnect/configurations/)
+4. [Importing schemas and actions of an Application](/transformation/working-with-schemas-action-filter/)
+5. [Feeding Credentials for applications and data sources](/configuring%20appseconnect/configurations/)
+5. [Creating a Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)
 7. [Registering URL for API](/api-management/Steps-to-register-url/)
 8. [User Authenticate](/api-management/Steps-to-user-authentication/)
 

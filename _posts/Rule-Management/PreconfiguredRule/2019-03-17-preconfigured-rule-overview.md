@@ -20,5 +20,5 @@ The rules that are preconfigured with APPSeCONNECT are given below:
 
 1.	[Pre-configured rule for Misfire Event](/rule/preconfigured-rule-for-misfire-event/)
 2.	[Pre-configured rule for Resync Bucket](/rule/preconfigured-rule-for-resync-bucket/)
-3.	[Pre-configured rule for generation of hourly report](/rule/preconfigured-rule-for-detailed-report/)
+3.	[Pre-configured rule for generation of detailed sync report](/rule/preconfigured-rule-for-detailed-sync-report/)
 4.	[Pre-configured rule for Log Bucket](/rule/preconfigured-rule-for-log-bucket/)

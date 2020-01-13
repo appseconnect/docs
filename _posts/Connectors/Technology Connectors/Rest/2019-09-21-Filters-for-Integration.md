@@ -16,9 +16,9 @@ This section of the document provide details of these filters and steps on how t
 
 ## Pre-requisites
 Require Valid APPSeCONNECT account.  
-1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)
+1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)  
 2) [Create Workflow](/workflow/steps-to-create-your-first-workflow/)  
-3) [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) for the required connection  .
+3) [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) for the required connection  .
 
 **Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged**
 
@@ -33,11 +33,11 @@ As GET requests do not change the state of the resource, these are said to be sa
 multiple identical requests and produce the same result every time until another API (POST or PUT) 
 has changed the state of the resource on the server.
 
-[Login to the Portal](https://docs.appseconnect.com/).
+[Login to the Portal](/getting%20started/user-registration-license/).
 
-1 Go to the App Section and choose [Create the Technology App](/getting-started/#b-technology-app-creation) for creating REST based Application.
+1 Go to the App Section and choose [Create the Technology App](/configuring%20appseconnect/configurations/) for creating REST based Application.
 
-2 Now go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) directly 
+2 Now go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) directly 
 from  the workflow workarea itself for REST based application.
 
 ![rest-getnode-workflow](/staticfiles/connectors/media/technology-connector/rest-getnode-workflow.png) 
@@ -128,7 +128,7 @@ section itself and the `value` must be kept blank.
 The POST Operation is for adding data to REST. The configuration for the POST is to be done in the Schema level of the REST Application. 
 The steps for configuring POST in Schema level is given below:
 
-1. Go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) directly 
+1. Go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) directly 
 from  the workflow workarea itself for REST based application.
 
 ![rest_post_actionfilter](/staticfiles/connectors/media/technology-connector/rest_post_actionfilter.png) 
