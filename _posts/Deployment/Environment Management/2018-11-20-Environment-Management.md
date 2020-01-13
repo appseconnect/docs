@@ -58,7 +58,7 @@ If your organization is cloud-enabled, you will get the option to create cloud e
 ![Enviornmentnew3](/staticfiles/deployment/media/RevampedEnv/Enviornmentnew3.png)
 
 **Note: (a) Only one cloud environment can be set as primary at a time.    
-        (b) By default the agents are positioned in the group named Untitled.    
+        (b) By default the agents are positioned in the group named Home.    
         (c) Each organisation can have only one cloud agent. User cannot create another cloud agent after creating one.**    
 
 Once the cloud environment is ready, you will get the active cloud agent in the listing and the 
