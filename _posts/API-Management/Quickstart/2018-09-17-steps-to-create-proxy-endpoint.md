@@ -25,12 +25,12 @@ APPSeCONNECT Portal.
 As per requirement, before you start creating a new API Proxy, you need to make sure you meet all the 
 prerequisites. Here are some of them : 
 
-1. [Getting a new account for APPSeCONNECT](/home/#appseconnect-platform---functional-menus)
-2. [Choosing and Configuring Backend APPs](/getting-started/#choosing-application)
-3. [Connecting to your data sources](/getting-started/#creating-connection--executing-the-touchpoint)
-4. [Configuring Environments, installing / deploying Agent](/deployment/Deployment-Configuration/)
+1. [Getting a new account for APPSeCONNECT](/getting%20started/user-registration-license/)
+2. [Choosing and Configuring Backend APPs](/configuring%20appseconnect/configurations/#process-of-choosing-app)
+3. [Connecting to your data sources](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint)
+4. [Configuring Environments, installing / deploying Agent](/deployment/Environment-Management/)
 5. [Feeding Credentials for applications and data sources](/connectors/OLEDB-Credentials/)
-5. [Configuring / Importing Schemas and Actions](/getting-started/#importing-schemas-and-actions-of-an-application)
+5. [Configuring/Importing Schemas and Actions](/configuring%20appseconnect/configurations/#adding-schemas-and-actions-of-an-application)
 
 After all these steps are done, make sure the environment is kept running and credentials are properly updated. 
 

@@ -28,7 +28,7 @@ There might be a number of reasons for this error:
 
 # Resolution
 
-[ValueMpping](/transformation/using-lookups-for-value-exchange/)  
+[ValueMapping](/transformation/using-lookups-for-value-exchange/)  
 [How to do Attribute Mapping in AEC](/transformation/steps-to-cutomize-prebuilt-mapping/#implementing-attribute-mapping).
 [How to Use Action filter to check data type mismatch](/transformation/working-with-schemas-action-filter/)  
 

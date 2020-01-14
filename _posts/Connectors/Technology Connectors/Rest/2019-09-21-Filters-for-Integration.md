@@ -16,9 +16,9 @@ This section of the document provide details of these filters and steps on how t
 
 ## Pre-requisites
 Require Valid APPSeCONNECT account.  
-1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)
+1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)  
 2) [Create Workflow](/workflow/steps-to-create-your-first-workflow/)  
-3) [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) for the required connection  .
+3) [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) for the required connection  .
 
 **Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged**
 
@@ -33,11 +33,11 @@ As GET requests do not change the state of the resource, these are said to be sa
 multiple identical requests and produce the same result every time until another API (POST or PUT) 
 has changed the state of the resource on the server.
 
-[Login to the Portal](https://docs.appseconnect.com/).
+[Login to the Portal](/getting%20started/user-registration-license/).
 
-1 Go to the App Section and choose [Create the Technology App](/getting-started/#b-technology-app-creation) for creating REST based Application.
+1 Go to the App Section and choose [Create the Technology App](/configuring%20appseconnect/configurations/) for creating REST based Application.
 
-2 Now go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) directly 
+2 Now go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) directly 
 from  the workflow workarea itself for REST based application.
 
 ![rest-getnode-workflow](/staticfiles/connectors/media/technology-connector/rest-getnode-workflow.png) 
@@ -51,12 +51,36 @@ Here Lightspeed app has been taken and it supports OAuth 2.0 for Rest Protocol. 
 
 **NOTE: Defining Header and Parameter Varies from application to application. Some app might need both, some might just need Header/parameter**
 
+
+**Scenario description for Action filters for REST integration** 
+
+A complete URL in form of API is called for fetching the data from Source applications. The URL is nothing but acts as the target location 
+from which the data is needed to be fetched.
+
+Sample URL: 
+
+![rest_get_actionfilter_url](/staticfiles/connectors/media/technology-connector/rest_get_actionfilter_url.png) 
+
+This URL consists of three parts:  
+a) The Base URL : This is the basic URL of the application from where the data are fetched. This remains constant when used for any modules within the application.    
+b) EndPoint: Endpoint is the location that defines the module from where the data are fetched     
+c) Action Filter/Parameter: This is the parameter provided against the endpoint that defines which data are needed to be fetched.    
+
+Therefore, when defining the action and the action filter in APPSeCONNECT Portal, it is recommended to execute the URL in your 
+API development & testing platform. This provides the exact identification of the Action and the Action parameters.
+
+In the Sample URL provided the URL breakup would be as:
+
+1.	Base URL: https://api.lightspeed.com	
+2.	End Point: item
+3.	Action Parameter/Filter: createTime=> ~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~
+
 ![rest_get_actionfilter2](/staticfiles/connectors/media/technology-connector/rest_get_actionfilter2.png) 
 
 Click on the Action Filter Tab, to define the action for the GET node.
 
 * Endpoint - Each endpoint is the location from which APIs can access the resources from the respective module of the application.This is a mandatory field, enter the endpoint 
-* Decsription - This field enables you to decsribe the endpoints. This is a mandatory field, enter the description
+* Description - This field enables you to decsribe the endpoints. This is a mandatory field, enter the description
 * HTTP Method - The HTTP verbs comprise a major portion of our `uniform interface` constraint and provide us the action counterpart to the noun-based resource. Here you need to select `GET` from the drop down list 
   for executing the GET Operation.
 * Content Type - The Content-Type entity header is used to indicate the media type of the resource. In responses, a Content-Type header tells the client what the 
@@ -78,6 +102,8 @@ value for key is `createTime>~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~`
 
 **Note: For any XML & JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:`customers/$.xml`**
 
+**Note: (A) This scenario has been explained taking the application Lightspeed.
+        (B) The time span a generic format for APPSeCONNECT, and has been detailed above in this document.**
 
 
 ## Defining Error Filters for Get Operation
@@ -97,14 +123,12 @@ Under the parameter section, the value for `key` is available in respective appl
 If the relationship between key and value is not `=`, then the `value` must be declared in the `key`
 section itself and the `value` must be kept blank.
 
-
-
 ### For POST Operation
 
 The POST Operation is for adding data to REST. The configuration for the POST is to be done in the Schema level of the REST Application. 
 The steps for configuring POST in Schema level is given below:
 
-1. Go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting-started/#steps-to-create-an-organisational-touchpoint) directly 
+1. Go to the workflow section, [Create Workflow](/workflow/steps-to-create-your-first-workflow/) and you can [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) directly 
 from  the workflow workarea itself for REST based application.
 
 ![rest_post_actionfilter](/staticfiles/connectors/media/technology-connector/rest_post_actionfilter.png) 
