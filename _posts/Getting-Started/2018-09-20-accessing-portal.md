@@ -165,11 +165,11 @@ To know more about Workflow Management, [Click here](/workflow/overview/).
 ## F. Manage
 
 This section provides a simplified view of the modules that required to manage the integration process. These are the modules that are available under the Manage section. 
-* Feeds 
-* Rules 
-* Environments
-* Tickets 
-* Users (to do)
+* [Feeds](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#feeds) 
+* [Rules](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#rules) 
+* [Environments](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#environment) 
+* [Tickets](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#tickets) 
+* [User](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#users)
 
 ## Feeds
 
@@ -192,11 +192,11 @@ APPSeCONNECT Rule listing enables you to perform ACTIONS like (raising a support
 During Agent execution, if some events are encountered such as *Application Crash*, automatically the Rule which you have defined on Application Crash will be triggered and it will perform the associated Action with that Rule.
 You can also define additional criteria for triggering the Rule and performing the actions. 
 
-In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the Rule will be triggered.
+In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the [Rule](https://docs.appseconnect.com/rule/overview-of-rule/) will be triggered.
 
 ## Environment
 
-This page lists the devices that have access to the project that the customer is working on. For environment details, [Click here](/getting-started/)
+[Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
 
 
 ## Tickets
@@ -287,10 +287,9 @@ In the Personal Info tab, you can edit your name, mobile number.
 Users of APPSeCONNECT can manage their subscription addons from this section. Navigating to this panel, user can perform these 
 following actions: 
 
-1. User can view the organisation subscription plan and its expiry date.
-![subscription1](/staticfiles/root/media/subscription1.png)
-
-2. Select necessary addons and can update subscription.
+1. User can view the organisation subscription plan and its expiry date.  
+![subscription1](/staticfiles/root/media/subscription1.png)    
+2. Select necessary addons and can update subscription.  
 ![subscription2](/staticfiles/root/media/subscription2.png)
 3. Can view history of selected addons for the organisation. 
 ![subscription3](/staticfiles/root/media/subscription3.png)

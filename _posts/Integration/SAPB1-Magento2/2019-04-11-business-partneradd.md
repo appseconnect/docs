@@ -5,7 +5,8 @@ tag: developers
 category: "Integration"
 menus: 
     sapbmagentointegration:
-        icon: fa fa-wpexplorer            
+        icon: fa fa-wpexplorer  
+        weight: 2          
         title: "Business Partner Add"
         identifier: sapbmage2integration
 ---
@@ -174,4 +175,10 @@ The user can execute the Integration through workflow as and when required for d
 
 2.	All the Master data needs to be synced so to fetch the information from both ways. Skipping the process will not fetch any data from the 
    source application and no result will be shown in the resync bucket.
+
+3. CServiceData::SetPropertyValueString failed; Value too long in property `CardCode` of `BusinessPartner`  
+  ![troubleshooting-sapmage2](/staticfiles/integration/media/troubleshooting-sapmage2.png)
+
+Solution: The parameter passed in the mapping of the attribute CardCode is too long for it to execute the transformation process. 
+Users need to map the attribute with Short string value passed to the parameter. Users are suggested to provide 3-4 letter string value to the mapping. 
 
