@@ -459,7 +459,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Accessing Portal",
-      excerpt: "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional...",
+      excerpt: "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional...",
       categories: ["Accessing Portal"],
       tags: ["developers"],
       id: 49
@@ -2547,7 +2547,7 @@ var store = [
       {
         "title": "Accessing Portal",
         "url": "/accessing%20portal/accessing-portal/",
-        "excerpt": "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional...",
+        "excerpt": "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

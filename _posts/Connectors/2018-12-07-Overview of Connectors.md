@@ -17,8 +17,8 @@ connectors types which can connect any data source having standard protocol base
 established. The connectors are plug and play oriented and hence within APPSeCONNECT one can 
 easily add a technology connector and connect an App using popular technology. 
 
+## Type of Connectors
 
-Presently we have three type of Connectors:
 
 |Connector Type|Description|
 |---|---------|
