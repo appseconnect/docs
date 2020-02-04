@@ -12,19 +12,21 @@ menus:
 ---
 ## Configuring Connector while Creating Connection
 
-When working with organisational Applications (Custom Applications & Technology Applications), Connectors 
+When working with organisational Applications - [Custom Applications](/configuring%20appseconnect/configurations/#a-create-custom-app) & [Technology Applications](/configuring%20appseconnect/configurations/#b-technology-app-creation), Connectors 
 are not pre-packaged. Hence, the users need to configure the connector first before creating the connection.
 
 **Steps to configure the connector for Organisational Applications**
 
 1. Click create connection button. The screen for creating connection appears.
-2. Now Click `configure connector` button in the given screen.
-3. The screen for configuring the connector opens. 
+2. Now Click `configure connector` button in the given screen.  
+![Create-Connection1](/staticfiles/root/media/Create-Connection1.png)
+3. The screen for configuring the connector opens.   
+![Create-Connection2](/staticfiles/root/media/Create-Connection2.png)
 4. Enter the Application Name (Source and Destination) and their versions in the screen and 
-   Click `Add template` button.
+   Click `Add template` button.  
+![Create-Connection3](/staticfiles/root/media/Create-Connection3.png) 
 5. On adding the template, the connector will be visible in the connector page. Both side of the connector (A to B, B to A) will deployed on adding the template.
-6. Remove the word `Only` from the Protip before Copy Connection.
-7. Default Notifications for Transactions > Link can be added for morning report present in the Rule Section.
+
 
 ## Creating Connection & Executing the touchpoint
 
@@ -42,7 +44,7 @@ For Example, if you want to create a connection between SAP B1 to Magento 2, you
 6. You  can create a new connection by clicking `Create Connection` button.
 7. The following page opens up where you have to input the new connection details.  
 ![Create-NewConnection](/staticfiles/root/media/Create-NewConnection.png) 
-8. If the template is not created for the connection. You can create the connector by clicking on the Configure Connector button.  
+8. If the template is not created for the connection. You can create the connector by clicking on the [Configure Connector](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) button.  
 ![CreateConnection1](/staticfiles/root/media/CreateConnection1.png)
 9. Activate default touchpoint button will be checked by default.
 Select the connection, provide the connection name and select the protocol. Click on Save to save the connection details. 
@@ -230,18 +232,20 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
  4. Login to the agent with your portal credentials.    
    ![Login1](/staticfiles/root/media/Login1.png)
  5. There are four icons as shown below:
-* The home icon shows the connections in the project.
-* The apps configuration icon (next to the home icon) shows the applications used for the connections which need to be configured for successful sync.
+* The home icon shows the connections in the project'
+* The app configuration panel displays the applications that are selected in the portal for Integration. Credentials for each application adapters are provided in the `App Configuration panel` of the agent. View here know about providing [credentials to application adapters](/connectors/overview-of-application-connectors/).
 * The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.
-* The last one is the Workflow option that displays the configured workflows in the project.  
+* The last one is the [Workflow](/workflow/overview/) option that displays the configured workflows in the project.  
   ![Connections](/staticfiles/root/media/Connections.png)
 
 ### Environment setup of the Cloud agent
 
 **Pre-requisites:**
-* The project should be [cloud supported](/deployment/Deployment-Configuration/#configuration-process-for-cloud). 
-* The two apps between which data has to be synced should be cloud supported. 
-* The connection between the two applications should be [cloud supported](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
+ * The project should be [cloud supported](/deployment/Deployment-Configuration/#configuration-process-for-cloud). 
+ * The two apps between which data has to be synced should be cloud supported. 
+ * The connection between the two applications should be [cloud supported](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
+
+View for [creating a cloud agent](/deployment/Environment-Management/#adding-cloud-environment) for an organisation
 
 1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).  
 ![App](/staticfiles/root/media/App.png)
@@ -273,5 +277,3 @@ notification on the amount of transactions being performed through APPSeCONNECT.
 
 **Note:** The [morning report](/rule/default-rule-for-morning-report/) is dependent on Auto - Sync service and hence to receive reports, you must keep auto-sync service active. 
 
-**ProTip:** The report can be generated manually using the `Send Email Report Now` button and each request will reset the data to a particular time so that the report is consistent without duplicate entry.
-{: .notice--info}

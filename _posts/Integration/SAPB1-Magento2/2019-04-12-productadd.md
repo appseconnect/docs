@@ -5,7 +5,8 @@ tag: developers
 category: "Integration"
 menus: 
     sapbmagentointegration:
-        icon: fa fa-wpexplorer            
+        icon: fa fa-wpexplorer
+        weight: 3             
         title: "Product Add"
         identifier: sapbmage2integration
 ---
@@ -133,3 +134,13 @@ Magento response error details:{"message":"Invalid product data: %1","parameters
 4.  After all the changes done (in portal), Reset Generate and Reset Publish the Connection in the Portal and Update the Configuration in the Agent. 
 5.	And execute the Workflow again. Doing this, the user can successfully integrate this workflow. 
 
+**C. Error 3: Details** 
+
+Property ‘U_Object_Type’ of ‘Item’ is invalid. The Error is displayed when the dependency touchpoint is synced as post acknowledgement task. 
+![troubleshooting-productadd1-sapmage2](/staticfiles/integration/media/troubleshooting-productadd1-sapmage2.png)  
+1.	For troubleshooting this error, an UDF is needed to be created.
+2.	For creating the UDF, Navigate to Tools > Customization Tools > User - Define Fields - Management > Master Data > Items > Items.
+3.	Create the UDF as shown below:  
+![troubleshooting-productadd2-sapmage2](/staticfiles/integration/media/troubleshooting-productadd2-sapmage2.png)
+
+ Doing this, the user can successfully integrate this workflow. 

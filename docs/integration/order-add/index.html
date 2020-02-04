@@ -1283,20 +1283,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/invoice-add/" onclick="selectTab('/integration/invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+    <li class="menu-item-" data-url="/integration/business-partneradd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/business-partneradd/" onclick="selectTab('/integration/business-partneradd/', event);" title="Go to Business Partner Add">Business Partner Add</a>
         
     </li>
     
@@ -1307,8 +1295,20 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/business-partneradd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/business-partneradd/" onclick="selectTab('/integration/business-partneradd/', event);" title="Go to Business Partner Add">Business Partner Add</a>
+    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/sap-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sap-invoice-add/" onclick="selectTab('/integration/sap-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
         
     </li>
     
@@ -1887,7 +1887,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -1963,8 +1963,9 @@ The Mapping should be done as shown below.</p>
 To know more, see  <a href="/transformation/advance-mapping-through-custom-renderer/">Mapping &amp; Transformation Techniques</a>.</p>
 
 <p><strong>Mapping for the <code class="highlighter-rouge">ComplexObjectCollection</code> Documents</strong><br />
-<img src="/staticfiles/integration/media/orderadd-image4.png" alt="orderadd-image4" />
-<img src="/staticfiles/integration/media/orderadd-image5.png" alt="orderadd-image5" /></p>
+<img src="/staticfiles/integration/media/orderadd-image4.png" alt="orderadd-image4" /></p>
+
+<p><img src="/staticfiles/integration/media/orderadd-image5.png" alt="orderadd-image5" /></p>
 
 <p>a.	CardCode: This is mapped with the variable Customer Email Query for fetching the customer Email.
 b.	U_WEBORDID: This is mapped with Entity ID of Magento2.</p>
@@ -2019,6 +2020,33 @@ This Snapshot View displays the successful execution of the workflow. The Sales 
 please go through the Lookup mapping section in this document.</p>
 
 <p>Doing this, the user can successfully integrate this workflow.</p>
+
+<ol>
+  <li>Error: Value too long in property <code class="highlighter-rouge">TaxCode</code> of <code class="highlighter-rouge">DocumentLine</code>
+ <img src="/staticfiles/integration/media/troubleshooting-orderadd1-sapmage2.png" alt="troubleshooting-orderadd1-sapmage2" /></li>
+</ol>
+
+<p>Solution: Users need to verify the mapping for the attribute TaxCode of the complex object DocumentLine. 
+Users should also note that it might not always be the fault of the mentioned attribute. Any variables if called in its mapping should also be reviewed.</p>
+
+<ol>
+  <li>
+    <p>Customer Record Not Found<br />
+<img src="/staticfiles/integration/media/troubleshooting-orderadd2-sapmage2.png" alt="troubleshooting-orderadd2-sapmage2" /> <br />
+Solution: The error usually occurs when the Business Partner for the Order has not been synced or is not available in the
+destination application. Users need to sync the Business Partner before integrating the Order.</p>
+  </li>
+  <li>
+    <p>Invalid value [RDR12.StateS][line:0]
+<img src="/staticfiles/integration/media/troubleshooting-orderadd3-sapmage2.png" alt="troubleshooting-orderadd3-sapmage2" /> <br />
+Solution: For troubleshooting this issue, user is required to map the attributes ShipToState &amp; BillToState correctly 
+(if already mapped) available under the ComplexObject “AddressExtension”. Verify &amp; Rectify the XPATH provided 
+in the mapping (if already Mapped) with the input packets generated by APPSeCONNECT.</p>
+  </li>
+</ol>
+
+<p>Users are advised to Reset Cache and Reset Publish the workflow and Update Configuration in the agent before the 
+executing the Resync Process.</p>
 
                 
             </section>

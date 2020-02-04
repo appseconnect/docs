@@ -1283,20 +1283,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/invoice-add/" onclick="selectTab('/integration/invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+    <li class="menu-item-" data-url="/integration/business-partneradd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/business-partneradd/" onclick="selectTab('/integration/business-partneradd/', event);" title="Go to Business Partner Add">Business Partner Add</a>
         
     </li>
     
@@ -1307,8 +1295,20 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/business-partneradd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/business-partneradd/" onclick="selectTab('/integration/business-partneradd/', event);" title="Go to Business Partner Add">Business Partner Add</a>
+    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/sap-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sap-invoice-add/" onclick="selectTab('/integration/sap-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
         
     </li>
     
@@ -1887,7 +1887,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -1902,7 +1902,11 @@
                         <ul class="toc__menu">
   <li><a href="#visitors-free-request-trial">Visitor’s Free Request Trial</a></li>
   <li><a href="#visitors-paid-request">Visitors Paid Request</a></li>
-  <li><a href="#a-new-customer-logging-information">A. New Customer Logging Information</a></li>
+  <li><a href="#a-new-customer-logging-information">A. New Customer Logging Information</a>
+    <ul>
+      <li><a href="#steps-to-register-a-new-customer-with-appseconnect">Steps to register a new customer with APPSeCONNECT</a></li>
+    </ul>
+  </li>
   <li><a href="#b-existing-customer-logging-information">B. Existing Customer Logging Information</a></li>
   <li><a href="#c-appseconnect-license-management">C. APPSeCONNECT License Management</a></li>
 </ul>
@@ -1946,7 +1950,7 @@
 
 <ol>
   <li>
-    <p>The Implementation Team will do user activation.</p>
+    <p>The Team will do user activation.</p>
   </li>
   <li>
     <p>You will receive an activation mail in the provided email id with UserId &amp; Password (one time password) details.</p>
@@ -1966,6 +1970,33 @@
 </ol>
 
 <p class="notice--info"><strong>ProTip:</strong> If a user cannot access the ‘/temporarypassword’ sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.</p>
+
+<h3 id="steps-to-register-a-new-customer-with-appseconnect">Steps to register a new customer with APPSeCONNECT</h3>
+
+<ol>
+  <li>Visit www.appseconnect.com and click <code class="highlighter-rouge">Create an Account</code> button.<br />
+<img src="/staticfiles/root/media/newcustomer_registration1.png" alt="newcustomer_registration1" /></li>
+  <li>Fill up the mandatory details in the form.  <br />
+<img src="/staticfiles/root/media/newcustomer_registration2.png" alt="newcustomer_registration2" /></li>
+</ol>
+
+<p class="notice--info"><strong>ProTip:</strong> Customers needs to provide their business Email for registering with APPSeCONNECT.</p>
+
+<ol>
+  <li>Once the details are filled up, click <code class="highlighter-rouge">Get Started</code> button. User gets an Activation mail for the trial account in the provided mail id.  <br />
+<img src="/staticfiles/root/media/newcustomer_registration3.png" alt="newcustomer_registration3" /></li>
+  <li>Clicking on <code class="highlighter-rouge">Activation link</code> will activate the created account. User will now be able to login to the portal with the password provided in the activation mail.</li>
+  <li>Once logged, APPSeCONNECT portal would ask the user to change the password for security purpose.  <br />
+<img src="/staticfiles/root/media/newcustomer_registration4.png" alt="newcustomer_registration4" /></li>
+  <li>Once the changes are saved, user needs to re-login to the portal with the new password.</li>
+  <li>Once logged in, APPSeCONNECT would ask to accept the License Agreement. Users can opt for reading the details by clicking on the provided links.<br />
+<img src="/staticfiles/root/media/newcustomer_registration5.png" alt="newcustomer_registration5" /></li>
+  <li>Once accepted, the user would be able to view the account profile details. Click on organisation tab, and this will navigate the user to the <a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/#a-accessing-organization-dashboard">Organisation Dashboard</a>.</li>
+  <li>Here you can view the other <a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/">Organisation modules</a> available for every organisation.</li>
+</ol>
+
+<p><strong>Note: The newly created organisation will be a Trail Account by default, available only for 31days. However, SuperAdmins of APPSeCONNECT 
+can promote the newly created organisation to a fully-fledged organisation by upgrading the Organisation Status to Live.</strong></p>
 
 <h2 id="b-existing-customer-logging-information">B. Existing Customer Logging Information</h2>
 <p>Once registered, make sure you are logged in to the APPSeCONNECT Community to view and manage your support cases.</p>

@@ -11,15 +11,15 @@ menus:
         identifier: accessingportal
 ---
 
-The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
+The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
 Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.
 
-The set of functional menus are easy to navigate and ease the method of integration via our Portal.
-The view of functional menu(s) is given below:
+The set of functional modules are easy to navigate and ease the method of integration via our Portal.
+The view of functional module(s) is given below:
 
 ![FunctionalMenus](/staticfiles/root/media/FunctionalMenus.png)
 
-Let us walkthrough the Functional Menu for understanding the usage and need of each menu. 
+Let us walkthrough the Functional Modules for understanding the usage and need of each menu. 
 
 |Modules|Details|
 |---|---|
@@ -45,13 +45,14 @@ The dashboard view captures the following information-
 6.	Sync Errors
 7.	Execution Logs
 
-Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.
+Click the dashboard widgets to expand and view the related functionality of the widgets in details.
 
 *1. Project Basic Information: This widget displays the basic information of the organisation.*  
-The details displayed in the widget are:    
+The details displayed in the widget are:   
+ 
 a.	Project Name: Shows the organisation name.    
 b.	Main Contact Person: Displays the contact detail (Email Id only) of the project holder.    
-c.	Implementation contact: Displays the email id of the implementation team of the project.    
+c.	Implementation contact: Displays the email id of InSync implementation Team.    
 d.	Sales Contact: Shows the Email details of InSync Sales Team.    
 e.	Support Contact: Displays the Email Id of the InSync Support Team.    
 
@@ -60,19 +61,17 @@ This widget also has a progress bar that displays the progress status for the or
 
 *3.Subscription Details: This widget will inform the user about the categories of applications subscribed for the organisation.* 
 
- These are the following information that will be displayed in the widget.  
+These are the following information that will be displayed in the widget.  
 a.	Subscription Plan  
 b.	Remaining Days  
 c.	Subscription Expiry date  
 d.	Application Categories Subscribed.  
 
-The widget has the `View More` button, which redirects the user to the subscription page of the organisation.  
-
 **Note: The above three widgets initiate in minimized form by default. Users need to expand the widgets to view the widget details.**
  
  ![Subscription_Dashboard](/staticfiles/root/media/Subscription_Dashboard.png)
 
-*4.Execution Status: This widget displays the percentage of data synced and is categorised based on the status: Success, Skipped & Failure.*  
+*4.Execution Status: This widget displays the data synced wrt to an organization and is categorised based on the status: Success, Skipped & Failure.*  
 The percentage is displayed on a pie chart  irrespective of connections. Hovering over the section on the pie chart will display the exact 
 number of data based on the statuses. Users can minimize, maximize the widget by click on the respective button available on the top right 
 corner of the widget. 
@@ -166,11 +165,11 @@ To know more about Workflow Management, [Click here](/workflow/overview/).
 ## F. Manage
 
 This section provides a simplified view of the modules that required to manage the integration process. These are the modules that are available under the Manage section. 
-* Feeds 
-* Rules 
-* Environments
-* Tickets 
-* Users (to do)
+* [Feeds](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#feeds) 
+* [Rules](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#rules) 
+* [Environments](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#environment) 
+* [Tickets](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#tickets) 
+* [User](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#users)
 
 ## Feeds
 
@@ -193,11 +192,11 @@ APPSeCONNECT Rule listing enables you to perform ACTIONS like (raising a support
 During Agent execution, if some events are encountered such as *Application Crash*, automatically the Rule which you have defined on Application Crash will be triggered and it will perform the associated Action with that Rule.
 You can also define additional criteria for triggering the Rule and performing the actions. 
 
-In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the Rule will be triggered.
+In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the [Rule](https://docs.appseconnect.com/rule/overview-of-rule/) will be triggered.
 
 ## Environment
 
-This page lists the devices that have access to the project that the customer is working on. For environment details, [Click here](/getting-started/)
+[Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
 
 
 ## Tickets
@@ -223,6 +222,28 @@ The implementers and the partners would be able to see the tickets and resolve t
 
 (b) **Organisation Admin:** The access level of the customer is called the 'Organisation Admin'. He or she can add/ choose apps. Create connections and setup workflows but he or she cannot setup roles, regulate the control of users, or bring about any configurational changes.
 
+A company can have multiple user for an organisation in APPSeCONNECT project. Every project in APPSeCONNECT
+has a single user `organisation owner` by default, implementers/users of APPSeCONNECT can add multiple 
+users to an organisation for providing multiple access to its organisation users assigning different roles 
+to each.
+
+The roles that can be provided to each user are:  
+a.	Connection Manager  
+b.	Organization Admin  
+
+## Prerequisite for adding a User
+
+* There should be an organisation present with APPSeCONNECT.
+* User being added should not be a user for a different organisation. 
+
+## Steps to add USER to an organisation
+
+1. Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.
+2. By default, the interface would be of the tab Client Users. By default, APPSeCONNECT user would view the interface of the tab Client Users. 
+
+**Note: The tab Partners will not have any view unless an organization has any requirements for partners.**
+
+3.	For a fresh organisation, only the organisation owner will be displayed as the user in the user list. Click on the Add User button, to add more user to an organisation.
 
 ## Managing Customer Profile 
 
@@ -266,10 +287,9 @@ In the Personal Info tab, you can edit your name, mobile number.
 Users of APPSeCONNECT can manage their subscription addons from this section. Navigating to this panel, user can perform these 
 following actions: 
 
-1. User can view the organisation subscription plan and its expiry date.
-![subscription1](/staticfiles/root/media/subscription1.png)
-
-2. Select necessary addons and can update subscription.
+1. User can view the organisation subscription plan and its expiry date.  
+![subscription1](/staticfiles/root/media/subscription1.png)    
+2. Select necessary addons and can update subscription.  
 ![subscription2](/staticfiles/root/media/subscription2.png)
 3. Can view history of selected addons for the organisation. 
 ![subscription3](/staticfiles/root/media/subscription3.png)

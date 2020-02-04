@@ -459,7 +459,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Accessing Portal",
-      excerpt: "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional...",
+      excerpt: "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional...",
       categories: ["Accessing Portal"],
       tags: ["developers"],
       id: 49
@@ -549,7 +549,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Configuring for Integration",
-      excerpt: "Configuring Connector while Creating Connection When working with organisational Applications (Custom Applications &amp; Technology Applications), Connectors are not pre-packaged. Hence,...",
+      excerpt: "Configuring Connector while Creating Connection When working with organisational Applications - Custom Applications &amp; Technology Applications, Connectors are not pre-packaged....",
       categories: ["Getting Started"],
       tags: ["developers"],
       id: 59
@@ -1691,7 +1691,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Invoice Add",
+      title: "Order Add",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1700,7 +1700,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Order Add",
+      title: "Product Add",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -1709,7 +1709,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Product Add",
+      title: "Invoice Add",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2547,7 +2547,7 @@ var store = [
       {
         "title": "Accessing Portal",
         "url": "/accessing%20portal/accessing-portal/",
-        "excerpt": "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional...",
+        "excerpt": "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -2657,7 +2657,7 @@ var store = [
       {
         "title": "Configuring for Integration",
         "url": "/getting%20started/configurations-for-integration/",
-        "excerpt": "Configuring Connector while Creating Connection When working with organisational Applications (Custom Applications &amp; Technology Applications), Connectors are not pre-packaged. Hence,...",
+        "excerpt": "Configuring Connector while Creating Connection When working with organisational Applications - Custom Applications &amp; Technology Applications, Connectors are not pre-packaged....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4052,17 +4052,6 @@ var store = [
     
       
       {
-        "title": "Invoice Add",
-        "url": "/integration/invoice-add/",
-        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Order Add",
         "url": "/integration/order-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
@@ -4076,6 +4065,17 @@ var store = [
       {
         "title": "Product Add",
         "url": "/integration/productadd/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Invoice Add",
+        "url": "/integration/sap-invoice-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
