@@ -1027,7 +1027,7 @@
     <None Include="_posts\Integration\NAV-Magento2 Multiconnection\2019-07-11-nav-magento.md" />
     <None Include="_posts\Integration\NAV-Magento2 Multiconnection\2019-07-11-sales-order.md" />
     <None Include="_posts\Integration\NAV-Magento2 Multiconnection\2019-07-11-shipment.md" />
-    <None Include="_posts\Integration\SAPB1-Magento2\2019-04-12-invoice-add.md" />
+    <None Include="_posts\Integration\SAPB1-Magento2\2019-04-12-sap-invoice-add.md" />
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-12-order-add.md" />
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-12-inventoryupdate.md" />
     <None Include="_posts\Integration\SAPB1-Magento2\2019-04-12-productadd.md" />

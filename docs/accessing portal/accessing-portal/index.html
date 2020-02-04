@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The APPSeCONNECT portal page is easily accessible.Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.">
+<meta name="description" content="The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The APPSeCONNECT portal page is easily accessible.Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The APPSeCONNECT portal page is easily accessible.Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.">
+  <meta property="og:description" content="The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The APPSeCONNECT portal page is easily accessible.Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.">
 
 
 
@@ -1283,20 +1283,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/invoice-add/" onclick="selectTab('/integration/invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+    <li class="menu-item-" data-url="/integration/business-partneradd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/business-partneradd/" onclick="selectTab('/integration/business-partneradd/', event);" title="Go to Business Partner Add">Business Partner Add</a>
         
     </li>
     
@@ -1307,8 +1295,20 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/business-partneradd/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/business-partneradd/" onclick="selectTab('/integration/business-partneradd/', event);" title="Go to Business Partner Add">Business Partner Add</a>
+    <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/sap-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sap-invoice-add/" onclick="selectTab('/integration/sap-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
         
     </li>
     
@@ -1818,7 +1818,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Accessing Portal">
-        <meta itemprop="description" content="The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The APPSeCONNECT portal page is easily accessible.Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.">
+        <meta itemprop="description" content="The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The APPSeCONNECT portal page is easily accessible.Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.">
         <meta itemprop="datePublished" content="September 20, 2018">
         
 
@@ -1887,7 +1887,7 @@
 
 
 
-  14 minute read
+  15 minute read
 </p>
                 
                 
@@ -1911,6 +1911,8 @@
   <li><a href="#environment">Environment</a></li>
   <li><a href="#tickets">Tickets</a></li>
   <li><a href="#users">Users</a></li>
+  <li><a href="#prerequisite-for-adding-a-user">Prerequisite for adding a User</a></li>
+  <li><a href="#steps-to-add-user-to-an-organisation">Steps to add USER to an organisation</a></li>
   <li><a href="#managing-customer-profile">Managing Customer Profile</a>
     <ul>
       <li><a href="#a-my-profile">(a) My Profile</a></li>
@@ -1927,15 +1929,15 @@
                     </nav>
                 </aside>
                 
-                <p>The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT applications for integration, with the set of Functional menus. The <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">APPSeCONNECT portal page</a> is easily accessible.
+                <p>The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">APPSeCONNECT portal page</a> is easily accessible.
 Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.</p>
 
-<p>The set of functional menus are easy to navigate and ease the method of integration via our Portal.
-The view of functional menu(s) is given below:</p>
+<p>The set of functional modules are easy to navigate and ease the method of integration via our Portal.
+The view of functional module(s) is given below:</p>
 
 <p><img src="/staticfiles/root/media/FunctionalMenus.png" alt="FunctionalMenus" /></p>
 
-<p>Let us walkthrough the Functional Menu for understanding the usage and need of each menu.</p>
+<p>Let us walkthrough the Functional Modules for understanding the usage and need of each menu.</p>
 
 <table>
   <thead>
@@ -1989,13 +1991,14 @@ In this page you can see the snapshot of the project at a glance with respect to
   <li>Execution Logs</li>
 </ol>
 
-<p>Choose any of the dashboard panel and it will redirect you to the related functionality of the menu in details.</p>
+<p>Click the dashboard widgets to expand and view the related functionality of the widgets in details.</p>
 
 <p><em>1. Project Basic Information: This widget displays the basic information of the organisation.</em><br />
-The details displayed in the widget are:  <br />
-a.	Project Name: Shows the organisation name.  <br />
+The details displayed in the widget are:</p>
+
+<p>a.	Project Name: Shows the organisation name.  <br />
 b.	Main Contact Person: Displays the contact detail (Email Id only) of the project holder.  <br />
-c.	Implementation contact: Displays the email id of the implementation team of the project.  <br />
+c.	Implementation contact: Displays the email id of InSync implementation Team.  <br />
 d.	Sales Contact: Shows the Email details of InSync Sales Team.  <br />
 e.	Support Contact: Displays the Email Id of the InSync Support Team.</p>
 
@@ -2010,13 +2013,11 @@ b.	Remaining Days<br />
 c.	Subscription Expiry date<br />
 d.	Application Categories Subscribed.</p>
 
-<p>The widget has the <code class="highlighter-rouge">View More</code> button, which redirects the user to the subscription page of the organisation.</p>
-
 <p><strong>Note: The above three widgets initiate in minimized form by default. Users need to expand the widgets to view the widget details.</strong></p>
 
 <p><img src="/staticfiles/root/media/Subscription_Dashboard.png" alt="Subscription_Dashboard" /></p>
 
-<p><em>4.Execution Status: This widget displays the percentage of data synced and is categorised based on the status: Success, Skipped &amp; Failure.</em><br />
+<p><em>4.Execution Status: This widget displays the data synced wrt to an organization and is categorised based on the status: Success, Skipped &amp; Failure.</em><br />
 The percentage is displayed on a pie chart  irrespective of connections. Hovering over the section on the pie chart will display the exact 
 number of data based on the statuses. Users can minimize, maximize the widget by click on the respective button available on the top right 
 corner of the widget.</p>
@@ -2115,11 +2116,11 @@ APPSeCONNECT workflow application can be considered as a strong feature that use
 
 <p>This section provides a simplified view of the modules that required to manage the integration process. These are the modules that are available under the Manage section.</p>
 <ul>
-  <li>Feeds</li>
-  <li>Rules</li>
-  <li>Environments</li>
-  <li>Tickets</li>
-  <li>Users (to do)</li>
+  <li><a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/#feeds">Feeds</a></li>
+  <li><a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/#rules">Rules</a></li>
+  <li><a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/#environment">Environments</a></li>
+  <li><a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/#tickets">Tickets</a></li>
+  <li><a href="https://docs.appseconnect.com/accessing%20portal/accessing-portal/#users">User</a></li>
 </ul>
 
 <h2 id="feeds">Feeds</h2>
@@ -2143,11 +2144,11 @@ APPSeCONNECT workflow application can be considered as a strong feature that use
 <p>During Agent execution, if some events are encountered such as <em>Application Crash</em>, automatically the Rule which you have defined on Application Crash will be triggered and it will perform the associated Action with that Rule.
 You can also define additional criteria for triggering the Rule and performing the actions.</p>
 
-<p>In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the Rule will be triggered.</p>
+<p>In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the <a href="https://docs.appseconnect.com/rule/overview-of-rule/">Rule</a> will be triggered.</p>
 
 <h2 id="environment">Environment</h2>
 
-<p>This page lists the devices that have access to the project that the customer is working on. For environment details, <a href="/getting-started/">Click here</a></p>
+<p><a href="https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration">Environment</a> page lists the devices that have access to the project that the customer is working on.</p>
 
 <h2 id="tickets">Tickets</h2>
 
@@ -2172,6 +2173,35 @@ You can also define additional criteria for triggering the Rule and performing t
     been created by the Admin. He or she can edit the project and its status. An external implementer has access to specific projects.</p>
 
 <p>(b) <strong>Organisation Admin:</strong> The access level of the customer is called the ‘Organisation Admin’. He or she can add/ choose apps. Create connections and setup workflows but he or she cannot setup roles, regulate the control of users, or bring about any configurational changes.</p>
+
+<p>A company can have multiple user for an organisation in APPSeCONNECT project. Every project in APPSeCONNECT
+has a single user <code class="highlighter-rouge">organisation owner</code> by default, implementers/users of APPSeCONNECT can add multiple 
+users to an organisation for providing multiple access to its organisation users assigning different roles 
+to each.</p>
+
+<p>The roles that can be provided to each user are:<br />
+a.	Connection Manager<br />
+b.	Organization Admin</p>
+
+<h2 id="prerequisite-for-adding-a-user">Prerequisite for adding a User</h2>
+
+<ul>
+  <li>There should be an organisation present with APPSeCONNECT.</li>
+  <li>User being added should not be a user for a different organisation.</li>
+</ul>
+
+<h2 id="steps-to-add-user-to-an-organisation">Steps to add USER to an organisation</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.</li>
+  <li>By default, the interface would be of the tab Client Users. By default, APPSeCONNECT user would view the interface of the tab Client Users.</li>
+</ol>
+
+<p><strong>Note: The tab Partners will not have any view unless an organization has any requirements for partners.</strong></p>
+
+<ol>
+  <li>For a fresh organisation, only the organisation owner will be displayed as the user in the user list. Click on the Add User button, to add more user to an organisation.</li>
+</ol>
 
 <h2 id="managing-customer-profile">Managing Customer Profile</h2>
 
@@ -2217,11 +2247,9 @@ By Clicking Projects, <a href="/workflow/overview/">Workflows</a>, you will be r
 following actions:</p>
 
 <ol>
-  <li>
-    <p>User can view the organisation subscription plan and its expiry date.
-<img src="/staticfiles/root/media/subscription1.png" alt="subscription1" /></p>
-  </li>
-  <li>Select necessary addons and can update subscription.
+  <li>User can view the organisation subscription plan and its expiry date.<br />
+<img src="/staticfiles/root/media/subscription1.png" alt="subscription1" /></li>
+  <li>Select necessary addons and can update subscription.<br />
 <img src="/staticfiles/root/media/subscription2.png" alt="subscription2" /></li>
   <li>Can view history of selected addons for the organisation. 
 <img src="/staticfiles/root/media/subscription3.png" alt="subscription3" /></li>
