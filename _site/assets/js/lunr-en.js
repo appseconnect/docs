@@ -3239,7 +3239,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/Shopify/",
+        "url": "/connectors/shopify/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
