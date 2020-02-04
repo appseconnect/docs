@@ -118,7 +118,7 @@ The steps are given below:
 5. The Connection can be done with both technology applications or one prepackaged and one technology application as shown below.
  ![TechnologyApp-Creation-Screen4](/staticfiles/root/media/TechnologyApp-Creation-Screen4.png)
 
-View [Technology Apps](/connectors/Overview-of-technology-connectors/)section for more deatils.
+View [Technology Apps](/connectors/Overview-of-technology-connectors/) section for more details.
 
 **Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FTP. 
 {: .notice--info}
