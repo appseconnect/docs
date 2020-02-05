@@ -40,4 +40,4 @@ The REST adapter supports a number of [authentication](/connectors/Authenticatio
 |[Shopify](/connectors/Shopify/)|[Shopify API](https://help.shopify.com/en/api/reference)|
 |[Priority](/connectors/Priority/)|[Priority API](https://prioritysoftware.github.io/restapi/)|
 |[Zoho CRM](/connectors/Zohocrmv2/)|[Zoho CRM API](https://www.zoho.com/crm/developer/docs/api/overview.html)|
-|[Shipstation]()|[Shipstation API](https://shipstation.docs.apiary.io/#introduction/shipstation-api-requirements)|
+|[Shipstation](/connectors/Shipstation/)|[Shipstation API](https://shipstation.docs.apiary.io/#introduction/shipstation-api-requirements)|

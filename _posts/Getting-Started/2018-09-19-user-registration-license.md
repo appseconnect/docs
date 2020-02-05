@@ -39,7 +39,7 @@ The Free Trial selection option will only showcase the integration on vanilla sy
 
 You require to sign up for an account with APPSeCONNECT Community.
 
-1. The Implementation Team will do user activation.
+1. The Team will do user activation.
 
 2. You will receive an activation mail in the provided email id with UserId & Password (one time password) details. 
 
@@ -53,6 +53,30 @@ You require to sign up for an account with APPSeCONNECT Community.
 
 **ProTip:** If a user cannot access the '/temporarypassword' sent by APPSeCONNECT, for any reason, and Organization admin or any person resend activation link, the user will get only activation link. As the product APPSeCONNECT is GDPR complaint, password is not stored. So, to log in the user has to choose the forgot password section.
 {: .notice--info}
+
+### Steps to register a new customer with APPSeCONNECT
+
+1.	Visit www.appseconnect.com and click `Create an Account` button.  
+![newcustomer_registration1](/staticfiles/root/media/newcustomer_registration1.png)  
+2.  Fill up the mandatory details in the form.    
+![newcustomer_registration2](/staticfiles/root/media/newcustomer_registration2.png) 
+ 
+**ProTip:** Customers needs to provide their business Email for registering with APPSeCONNECT.
+{: .notice--info}  
+
+3.	Once the details are filled up, click `Get Started` button. User gets an Activation mail for the trial account in the provided mail id.    
+![newcustomer_registration3](/staticfiles/root/media/newcustomer_registration3.png)  
+4.	Clicking on `Activation link` will activate the created account. User will now be able to login to the portal with the password provided in the activation mail.  
+5.	Once logged, APPSeCONNECT portal would ask the user to change the password for security purpose.    
+![newcustomer_registration4](/staticfiles/root/media/newcustomer_registration4.png)  
+6.	Once the changes are saved, user needs to re-login to the portal with the new password.  
+7.	Once logged in, APPSeCONNECT would ask to accept the License Agreement. Users can opt for reading the details by clicking on the provided links.  
+![newcustomer_registration5](/staticfiles/root/media/newcustomer_registration5.png)  
+8.	Once accepted, the user would be able to view the account profile details. Click on organisation tab, and this will navigate the user to the [Organisation Dashboard](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#a-accessing-organization-dashboard).   
+9.	Here you can view the other [Organisation modules](https://docs.appseconnect.com/accessing%20portal/accessing-portal/) available for every organisation.  
+
+**Note: The newly created organisation will be a Trail Account by default, available only for 31days. However, SuperAdmins of APPSeCONNECT 
+can promote the newly created organisation to a fully-fledged organisation by upgrading the Organisation Status to Live.** 
 
 ## B. Existing Customer Logging Information
 Once registered, make sure you are logged in to the APPSeCONNECT Community to view and manage your support cases.

@@ -27,17 +27,23 @@ Login to APPSeCONNECT - View [Home Page](/appseconnect/home/) to get the details
 
 ##  Process of Choosing App 
 
-1. Choose App option enables you to choose app from the list of prepackaged apps on the portal.
+Choose App option enables the user to select applications from the list of pre-packaged apps on the portal. 
+User can also get an option for creating a Custom application or technology app. 
+
+1.	Clicking Choose App button, the user gets the view of the following window.
+ ![ChooseApp_Dialogbox](/staticfiles/root/media/ChooseApp_Dialogbox.png)
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
 3. The list of app you choose gets added and listed in the app section of the organization as shown below:
 ![AppView](/staticfiles/root/media/AppView.png)
 4. Each `OP supported app` has four different functionality attached to it - **Schema, Adapters, Functions & Delete**.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
-5. For `Cloud Supported Applications` the `Credential button` appears along with the other functionality that are attached.
+5. For [Cloud Supported Applications](/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration) the `Credential button` appears along with the other functionality that are attached.
 ![Cloud-AppComponents](/staticfiles/root/media/Cloud-AppComponents.png)
 
 [Click](/connectors/Overview-of-Connectors/)to view the configuration details of the Connectors.
+
+Here you can view the details of the respective buttons [Schema](/configuring%20appseconnect/configurations/#appseconnect-schemaentity),[Adapters](/configuring%20appseconnect/configurations/#adapter),[Function](/configuring%20appseconnect/configurations/#functions) & [Delete](/configuring%20appseconnect/configurations/#delete).
 
 ## Create Application
 
@@ -112,6 +118,8 @@ The steps are given below:
 5. The Connection can be done with both technology applications or one prepackaged and one technology application as shown below.
  ![TechnologyApp-Creation-Screen4](/staticfiles/root/media/TechnologyApp-Creation-Screen4.png)
 
+View [Technology Apps](/connectors/Overview-of-technology-connectors/) section for more details.
+
 **Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FTP. 
 {: .notice--info}
 
@@ -185,7 +193,7 @@ This section enables the user to view and add the Schema and its Actions.
 
 **Process:**
 1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Move into the APPS Page and [Choose any application](/getting-started/). 
+2. Move into the APPS Page and [Choose any application](/configuring%20appseconnect/configurations/#process-of-choosing-app). 
 3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 ![Select-Schema](/staticfiles/root/media/Select-Schema.png)
 4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.  
@@ -204,7 +212,7 @@ There are few responsibilities of an adapter which are defined as under:
 * Create Push and Pull method inside the adapter which can send and receive data to and from the application.
 * Add additional business behavior with respect to the corresponding app.
 
-The Adapter is loaded dynamically by the [Agent](/deployment/overview/) and calls some specific methods using a fixed contract defined as an interface. 
+The [Adapter](/connectors/Version-Extraction-For-Adapter-Upload/) is loaded dynamically by the [Agent](/deployment/overview/) and calls some specific methods using a fixed contract defined as an interface. 
 
 ### Extension
 Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.
@@ -215,6 +223,7 @@ The APPSeCONNECT expression methods are special transformation block used during
 * Native
 * Cloud App Resource
 
+Here you will get the details of [Appresource Functions](/transformation/using-library-methods/) of APPSeCONNECT
 ### Delete
 This button enables to delete selected app from the list.
 

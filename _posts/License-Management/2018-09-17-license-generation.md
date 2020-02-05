@@ -42,16 +42,18 @@ Organizations.**
 ![rolling-window4](/staticfiles/licensekey/rolling-window4.png)        
 **Note: TTL is the Time-to-Live value, which the defines the amount of time, the generated key remains active.**
 5.	Click on the generate key button. The temporary license key will be generated successfully, then Copy the generated key.
-![rolling-window5](/staticfiles/licensekey/rolling-window5.png) 
+![rolling-window5](/staticfiles/licensekey/rolling-window5.png)   
+**Note: The Active key would be displayed on top followed by the latest expired key. As multiple license key would be generated 
+for an organisation, therefore multiple active keys would be displayed in the dropdown.**        
 6.  Navigate to APPSeCONNECT OP Agent and paste the key in the Registration Key field, which can be viewed by 
-    pressing the CTRL+F10 button.  
+    pressing the CTRL+F10 button.      
 ![rolling-window6](/staticfiles/licensekey/rolling-window6.png) 
-7.	Click on the login button after pasting the generated license key.  
+7.	Click on the login button after pasting the generated license key.    
 ![rolling-window7](/staticfiles/licensekey/rolling-window7.png) 
 
 **Note: (a)This feature of Generating Temporary License is solely for the Partners and the Developers.       
         (b) On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent.      
-        (c) Feed will not generate any login details of the user with respect to generating tempoarry license key for an organization.**
+        (c) Feed will not generate any login details of the user with respect to generating temporary license key for an organization.**
 
 
 

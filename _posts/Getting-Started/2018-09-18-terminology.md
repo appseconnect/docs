@@ -14,6 +14,7 @@ menus:
 Users of APPSeCONNECT requires the knowledge of common terminologies that the user can come across, while working with the 
 integration process in APPSeCONNECT. Here are some of the common terminologies that user can frequently come across.
 
+## Table of the Terminology of APPSeCONNECT
 
 |Terms|Details|
 |---|---|

@@ -17,7 +17,7 @@ menus:
 1. If you do not have a registered URL with **APPSeCONNECT** you have to Register a URL for your organization.Here is how to do it.
   Click on Register URL button. Upon clicking you will get a  popup like this.
 
-![Register Url Org](/staticfiles/api-management/media/register-url-org.png)
+![register-url-org](/staticfiles/api-management/media/register-url-org.png)
 
 2. Activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
   So the Base URL for the organization would be `veonconsulting.appseconnectapi.com`.
@@ -38,12 +38,11 @@ menus:
 
 ## Scenario of Registering URL 
 
-1: If the API Proxy or Webhook is to be executed on cloud, Registering the URL is must in such case.
+1: If the API Proxy or Webhook is to be executed on cloud, Registering the URL is must.
 
-2: If the user wants to keep its IP Public while running the webhook  from the OP agent. The URL is needed to be registered in order to enhance security in the transaction process. 
+2: Register URL is for enhancing security purpose
 
-3: Register URL is needed to be mandatorily done if the user has network issues. 
-If not done, then in case of loss of data loss may happen.
+3: Register URL is needed to be mandatorily done if the user has network issues. If not done, then in case of loss of data loss may happen.
 
 ## Troubleshooting
 

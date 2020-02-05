@@ -5,7 +5,8 @@ tag: developers
 category: "Integration"
 menus: 
     sapbmagentointegration:
-        icon: fa fa-wpexplorer            
+        icon: fa fa-wpexplorer
+        weight: 4             
         title: "Inventory Update"
         identifier: sapbmage2integration
 ---
@@ -13,8 +14,9 @@ menus:
 Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for 
 adding Updating Inventory from `SAP Business One to Magento2`.
 
-## Brief Description
+**Note: Before proceeding with any integration configuration, users are advised to view the pre-requites of the [integration process](/integration/SAPB1-Magento2/).** 
 
+## Brief Description
 
 ![inventoryupdate_workflow](/staticfiles/integration/media/inventoryupdate_workflow.png)
 
@@ -103,4 +105,12 @@ a. Error: Details:
 ![update_inventory8](/staticfiles/integration/media/update_inventory8.png)
 
 Doing this, the user can successfully integrate this workflow. 
+
+b.	Log Bucket shows `Source Application Returned False` even when applications adapters are properly validated.
+![troubleshooting-inventory-sapmage2](/staticfiles/integration/media/troubleshooting-inventory-sapmage2.png)
+
+Solution: `Source Application Returned false` may not be the error, only for adapter validation. Users also needs to ensure that the action filter provided is correct. 
+
+As SAP Business One follows a Query based filter, Users are advised to run the query for action filter in the database first for ensuring that the query fetching the required data.
+
 
