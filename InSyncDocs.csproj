@@ -903,6 +903,11 @@
     <None Include="_posts\Getting-Started\2018-09-19-user-registration-license.md" />
     <None Include="_posts\Getting-Started\2018-09-18-terminology.md" />
     <None Include="_posts\Getting-Started\2018-09-16-getting-started.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\sales-orderadd.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\product-add.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\SAPB1-WooCommerce.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
+    <None Include="_posts\Security\GDPR.md" />
     <None Include="_posts\License-Management\2018-09-17-license-generation.md" />
     <None Include="_posts\License-Management\2018-09-17-license-management.md" />
     <None Include="_posts\Connectors\Application Connectors\2018-12-01-Overview-of-Application-Connectors.md" />
@@ -1072,6 +1077,7 @@
     <None Include="_posts\SDK\Prerequisites\2018-12-12-Dos-and-Donts-for-SDK.md" />
     <None Include="_posts\SDK\Troubleshooting\Debugging.md" />
     <None Include="_posts\SDK\Troubleshooting\Logs and File Structure.md" />
+    <None Include="_posts\Security\security.md" />
     <None Include="_posts\Transformation\2018-09-17-overview.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2019-02-25-troubleshooting.md" />
     <None Include="_posts\Transformation\Mapping Techniques\2019-02-28-understanding-mapping-syntax.md" />
@@ -1121,7 +1127,7 @@
     <None Include="_posts\Workflow-Management\Nodes-and-links\Process-Property\2018-09-24-working-with-sequencer.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\Process-Property\2018-09-24-working-with-splitter.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\Actions\2018-09-25-generating-actions.md" />
-    <None Include="_posts\Workflow-Management\Nodes-and-links\Actions\2018-09-25-generating-notification-emails.md" />
+    <None Include="_posts\Workflow-Management\Nodes-and-links\Actions\generating-notification-emails.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\Actions\2018-09-25-generating-notification-support-ticket.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\Actions\2018-09-25-generating-notification-webhooks.md" />
     <None Include="_posts\Workflow-Management\Nodes-and-links\Actions\2018-09-25-generating-storage-action.md" />

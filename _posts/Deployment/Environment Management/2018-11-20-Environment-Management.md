@@ -16,10 +16,6 @@ menus:
 * It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and older Agents can still communicate with server, we still ask users to upgrade to get full flavour of new features. 
 * You must have Environment Management privilege to perform actions on the Environment Settings panel. As an administrator of an organization, you can use the environment screens as you want, but if you are assigned as Standard user, you might only get read-only access to the screen. 
 
-**Note: Each project can have multiple Agent deployment setup in multiple environments. One or more users of an organization can login
-to each of these environments to manage their respective integrations. With the upgradation/installation the current Agent, the 
-status will be auto reflected in Portal Environment, after reactivating Autosync once.**
-
 ## Accessing the Environment User Interface
 
 1.	Login to APPSeCONNECT portal with valid credentials & navigate to the `Manage` section of your Project.

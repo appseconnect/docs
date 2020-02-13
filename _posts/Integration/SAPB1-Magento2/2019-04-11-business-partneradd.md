@@ -82,7 +82,7 @@ e.	U_WBCUSTGR: This maps the customer group id who can be a General Customer, or
 
 f.	U_Gender: This maps the gender of the customer.
 
-g.	U_WBCUSTID: This is the customer ID which is maintained in the UDF’s.
+g.	U_WBCUSTID: This is the customer ID which is maintained in the UDFs.
 
 h.	U_WEB_FLAG: This is mapped for maintaining the Updated Data.
 
