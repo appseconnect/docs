@@ -1937,36 +1937,28 @@ Troubleshooting issues.</p>
 ZOHO CRM V2 provides the leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating the
 credential of the application ZOHO CRM V2.</p>
 
-<ol>
-  <li>
-    <p>Go to App Configuration panel of the agent click on the + button, beside the app ZOHO CRM.<br />
+<p>Go to App Configuration panel of the agent click on the + button, beside the app ZOHO CRM.<br />
 <img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter1.png" alt="Zohocrmv2-Adapter1" /></p>
-  </li>
-  <li>
-    <p>On clicking the + button, the credential panel opens up for the application ZOHO CRM.<br />
+
+<p>The Adapter configurations will get downloaded automatically (within a timespan), and then you can proceed with credential authorization.
+<img src="/staticfiles/connectors/media/application-connector/zohocrm-configuration-downloads.png" alt="zohocrm-configuration-downloads" /></p>
+
+<p>Now the following window appears. On clicking the + button, the credential panel opens up for the application ZOHO CRM.<br />
 <img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter2.png" alt="Zohocrmv2-Adapter2" /></p>
-  </li>
-</ol>
 
-<ul>
-  <li>
-    <p>All the files will get downloaded automatically (within a timespan), and then you can proceed with 
-credential authorization.<br />
-The fields of the credential page are detailed below:  <br />
- a. Base URL: This is the base URL of the ZOHO CRM Application. This can be either in <code class="highlighter-rouge">.com format OR .in format</code>.</p>
+<p>The fields of the credential page are detailed below:  <br />
+   a. Base URL: This is the base URL of the ZOHO CRM Application.</p>
 
-    <p>b. Client ID: This generated from the application site of ZOHO CRM. If Base URL is in .com format or .in format, 
-    client ID should be generated from the same format as given in Base URL and vice versa.</p>
+<p>b. Client ID: This generated from the application site of ZOHO CRM. If Base URL is in <code class="highlighter-rouge">.com format or .in format or in other format</code>, 
+      client ID should be generated from the same format as given in Base URL and vice versa.</p>
 
-    <p>c. Client Secret:  This is generated from the application site of ZOHO CRM.</p>
-  </li>
-</ul>
+<p>c. Client Secret:  This is generated from the application site of ZOHO CRM.</p>
 
 <p><strong>Note: For more details <a href="https://www.zoho.com/crm/help/developer/api/register-client.html">click here</a>.  Follow the steps for generating the Client ID and Client Secret.</strong></p>
 
 <p>d. CallBack URL: Callback URLs are the URLs that Auth0 invokes after the authentication process.</p>
 
-<p><strong>Note: The Call Back URL/Authorized Redirect URL can be any link (For Eg:https://www.abcd.com or https://www.abcd.in)  but make sure the link is in the proper format of an URL along with https</strong></p>
+<p><strong>Note: The Call Back URL/Authorized Redirect URL can be any link (For Eg:https://www.abcd.com   but make sure the link is in the proper format of an URL along with https</strong></p>
 
 <p>e.   Scope: Scopes defines the specific actions applications can be allowed to do on a user behalf. <a href="https://www.zoho.com/crm/developer/docs/api/oauth-overview.html#scopes">Click</a>to get the ZOHO CRM v2 Scope.<br />
 Provide the details and click on the Authorize Button. The Zoho Login window opens up.<br />
