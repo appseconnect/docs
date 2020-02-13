@@ -36,8 +36,8 @@
 <meta property="og:title" content="ZohoCRM V2.0">
 
 
-  <link rel="canonical" href="http://localhost:4000/connectors/zohocrmv2/">
-  <meta property="og:url" content="http://localhost:4000/connectors/zohocrmv2/">
+  <link rel="canonical" href="http://localhost:4000/connectors/Zohocrmv2/">
+  <meta property="og:url" content="http://localhost:4000/connectors/Zohocrmv2/">
 
 
 
@@ -462,8 +462,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/zohocrmv2/" onclick="selectTab('/connectors/zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
+    <li class="menu-item-" data-url="/connectors/Zohocrmv2/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Zohocrmv2/" onclick="selectTab('/connectors/Zohocrmv2/', event);" title="Go to ZohoCRM V2.0">ZohoCRM V2.0</a>
         
         
         
@@ -843,12 +843,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/workflow/generating-notification-support-ticket/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/generating-notification-support-ticket/" onclick="selectTab('/workflow/generating-notification-support-ticket/', event);" title="Go to Support Tickets">Support Tickets</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/workflow/generating-notification-webhooks/" data-jstree='{"icon":"fa fa-link"}'>
         <a href="/workflow/generating-notification-webhooks/" onclick="selectTab('/workflow/generating-notification-webhooks/', event);" title="Go to Webhooks">Webhooks</a>
         
@@ -861,8 +855,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/workflow/generating-notification-emails/" data-jstree='{"icon":"fa fa-link"}'>
-        <a href="/workflow/generating-notification-emails/" onclick="selectTab('/workflow/generating-notification-emails/', event);" title="Go to Emails">Emails</a>
+    <li class="menu-item-" data-url="/workflow/generating-notification-support-ticket/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/workflow/generating-notification-support-ticket/" onclick="selectTab('/workflow/generating-notification-support-ticket/', event);" title="Go to Support Tickets">Support Tickets</a>
         
     </li>
     
@@ -1297,12 +1291,6 @@
     
     <li class="menu-item-" data-url="/integration/inventoryupdate/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/inventoryupdate/" onclick="selectTab('/integration/inventoryupdate/', event);" title="Go to Inventory Update">Inventory Update</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/integration/order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/order-add/" onclick="selectTab('/integration/order-add/', event);" title="Go to Order Add">Order Add</a>
         
     </li>
     
@@ -1887,7 +1875,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -1938,34 +1926,42 @@ credential of the application ZOHO CRM V2.</p>
     <p>On clicking the + button, the credential panel opens up for the application ZOHO CRM.<br />
 <img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter2.png" alt="Zohocrmv2-Adapter2" /></p>
   </li>
-  <li>
-    <p>The fields of the credential page are detailed below:</p>
-
-    <p>a.	Base URL: This is the base URL of the ZOHO CRM Application.</p>
-
-    <p>b.	Client ID: This generated from the application site of ZOHO CRM.</p>
-
-    <p>c.	Client Secret:  This is generated from the application site of ZOHO CRM</p>
-  </li>
 </ol>
+
+<ul>
+  <li>
+    <p>All the files will get downloaded automatically (within a timespan), and then you can proceed with 
+credential authorization.<br />
+The fields of the credential page are detailed below:  <br />
+ a. Base URL: This is the base URL of the ZOHO CRM Application. This can be either in <code class="highlighter-rouge">.com format OR .in format</code>.</p>
+
+    <p>b. Client ID: This generated from the application site of ZOHO CRM. If Base URL is in .com format or .in format, 
+    client ID should be generated from the same format as given in Base URL and vice versa.</p>
+
+    <p>c. Client Secret:  This is generated from the application site of ZOHO CRM.</p>
+  </li>
+</ul>
 
 <p><strong>Note: For more details <a href="https://www.zoho.com/crm/help/developer/api/register-client.html">click here</a>.  Follow the steps for generating the Client ID and Client Secret.</strong></p>
 
-<p>d.  CallBack URL: Callback URLs are the URLs that Auth0 invokes after the authentication process.</p>
+<p>d. CallBack URL: Callback URLs are the URLs that Auth0 invokes after the authentication process.</p>
 
-<p><strong>Note: The Call Back URL/Authorized Redirect URL can be any link (For Eg:https://www.abcd.com) but make sure the link is in the proper format of an URL along with https</strong></p>
+<p><strong>Note: The Call Back URL/Authorized Redirect URL can be any link (For Eg:https://www.abcd.com or https://www.abcd.in)  but make sure the link is in the proper format of an URL along with https</strong></p>
 
-<p>e.   Scope: Scopes defines the specific actions applications can be allowed to do on a user behalf. <a href="https://www.zoho.com/crm/help/developer/api/oauth-overview.html#plink5">Click</a> to get the ZOHO CRM v2 Scope.<br />
+<p>e.   Scope: Scopes defines the specific actions applications can be allowed to do on a user behalf. <a href="https://www.zoho.com/crm/developer/docs/api/oauth-overview.html#scopes">Click</a>to get the ZOHO CRM v2 Scope.<br />
 Provide the details and click on the Authorize Button. The Zoho Login window opens up.<br />
 <img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter3.png" alt="Zohocrmv2-Adapter3" /></p>
 
-<p><strong>Note:</strong> Click on the button <strong>Remind me Later</strong> for the authorizing the credentials. On clicking
- the <code class="highlighter-rouge">Remind me Later</code> button, a blank page opens. Make sure the blank page is not closed.</p>
+<p>f. Auth Url: After you receive your Client ID, enter the auth URL.</p>
 
-<p>Click on the Validate button (keeping the blank page, open) and Click on SAVE.    <br />
+<p>g: Access Token Url: A client-authorized key that lets the client access protected resources from Zoho. 
+    The client can make API requests using this access token for up to an hour after the creation of the token.Enter the Access Token URL</p>
+
+<p>Click Authorize button (keeping the blank page, open) and Click SAVE.    <br />
 <img src="/staticfiles/connectors/media/application-connector/zohocrm-validation.png" alt="zohocrm-validation" /></p>
 
-<p><strong>Note:</strong> Once, the credentials are validated, the user can close the Blank Window.</p>
+<p><strong>Note: Once, the credentials are validated, the user can close the Blank Window.</strong> 
+<strong>For Adapter version 4.4.1.0 (OP Agent) make sure, to use a compatible custom browser with respect to Internet Explorer</strong></p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
@@ -2105,13 +2101,13 @@ only once</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=ZohoCRM+V2.0%20https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=ZohoCRM+V2.0%20https://docs.appseconnect.com%2Fconnectors%2FZohocrmv2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2FZohocrmv2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2FZohocrmv2%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2FZohocrmv2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -2133,14 +2129,6 @@ only once</p>
                             
                             
                             
-                            
-                            
-                            
-
-                            
-
-                            
-
                             
                             
                             
@@ -4312,8 +4300,6 @@ only once</p>
                             
                             
                             
-                            
-                            
                         </ul>
                     </div>
                 </div>
@@ -4433,8 +4419,8 @@ only once</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/connectors/zohocrmv2/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/connectors/zohocrmv2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/connectors/Zohocrmv2/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/connectors/Zohocrmv2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
