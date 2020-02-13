@@ -903,10 +903,10 @@
     <None Include="_posts\Getting-Started\2018-09-19-user-registration-license.md" />
     <None Include="_posts\Getting-Started\2018-09-18-terminology.md" />
     <None Include="_posts\Getting-Started\2018-09-16-getting-started.md" />
-    <None Include="_posts\Integration\SAPB1-WooCommerce\2020-02-12-sales-orderadd.md" />
-    <None Include="_posts\Integration\SAPB1-WooCommerce\2020-02-11-product-add.md" />
-    <None Include="_posts\Integration\SAPB1-WooCommerce\2020-02-11-SAPB1-WooCommerce.md" />
-    <None Include="_posts\Integration\SAPB1-WooCommerce\2020-02-10-business-partneradd.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\sales-orderadd.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\product-add.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\SAPB1-WooCommerce.md" />
+    <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\Security\GDPR.md" />
     <None Include="_posts\License-Management\2018-09-17-license-generation.md" />
     <None Include="_posts\License-Management\2018-09-17-license-management.md" />
