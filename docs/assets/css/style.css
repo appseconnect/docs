@@ -330,8 +330,17 @@ body.layout--single .sidebar__right.f-nav {
 nav.toc ul.toc__menu li ul {
     margin: 0 0 0 15px;
 }
+
+.page table tr th, .page table tr td {
+    min-width: 110px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+
+
 @media only screen and (min-width: 64em) {
-    body.layout--single .sidebar.sticky {
+    body .layout--single .sidebar.sticky {
         opacity: 1;
         filter: alpha(opacity=100);
         margin: 0;
