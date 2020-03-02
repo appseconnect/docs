@@ -1934,11 +1934,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Overview of ProcessFlow",
+      excerpt: "Overview of APPSeCONNECT Process Flow APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 213
+    });
+    
+  
+    idx.add({
       title: "Deploying Advance Workflow",
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 213
+      id: 214
     });
     
   
@@ -1947,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 215
     });
     
   
@@ -1956,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 216
     });
     
   
@@ -1965,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 216
+      id: 217
     });
     
   
@@ -1974,7 +1983,16 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 217
+      id: 218
+    });
+    
+  
+    idx.add({
+      title: "ProcessFlow Listing Page",
+      excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 219
     });
     
   
@@ -4340,6 +4358,17 @@ var store = [
     
       
       {
+        "title": "Overview of ProcessFlow",
+        "url": "/processflow/overview-of-processflow/",
+        "excerpt": "Overview of APPSeCONNECT Process Flow APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Deploying Advance Workflow",
         "url": "/advance%20workflow/deploying-adv-workflow/",
         "excerpt": "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
@@ -4387,6 +4416,17 @@ var store = [
         "title": "Troubleshooting for Rest",
         "url": "/connectors/Troubleshooting-Rest/",
         "excerpt": "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "ProcessFlow Listing Page",
+        "url": "/processflow/processflow-listing-page/",
+        "excerpt": "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

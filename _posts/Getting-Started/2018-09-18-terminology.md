@@ -22,14 +22,17 @@ integration process in APPSeCONNECT. Here are some of the common terminologies t
 |Workflow|Workflow is a feature in APPSeCONNECT that helps user to graphically organize, create and view the data flow of a process for the Integration.|
 |Environment|Workflow is a feature in APPSeCONNECT that helps user to graphically organize, create and view the data flow of a process for the Integration.|
 |Adapters|In terms of APPSeCONNECT, an adapter is a piece of software component of an application, that helps APPSeCONNECT communicate to the respective application seamlessly.|
-|Deploy/Update Configuration|This is a step in the process of integration and used for reflecting and updating the changes and modification in the environment, that is done in your connection (workflow). Changes will not be reflected if the user doesnot Updates Configuration.|
 |Snapshot|Snapshot in workflow gives complete overview of the sync process that is implemented. Snapshot provide the users with the detailed results of the data  that was transferred through workflow|
 |Log Bucket |For every transaction, log is generated that is shown in the OP Agent and in Snapshot. These generated logs are shown in the Log bucket of the agent and Snapshot.|
-|Resync Bucket|The errors that have occurred during the sync process are displayed in the Resync bucket of the OP Agent and Cloud Agent|
+|Resync Bucket|The errors that have occurred during the sync process are displayed in the Resync bucket of the OP Agent and Cloud Agent.At an instance Resync bucket shows 1000 data.|
 |Resync|The errors generated during the sync process are available for another attempts. Any changes and rectification to the errors are made, user can either resync the data manually or can schedule the resync accordingly.|
 |Schema|The definition of an entity is called its schema. In other words, the structure of an entity is called its schema|
 |Actions|Actions r certain tasks like getting data from an application or sending data to an application based on some definite conditions|
 |Mapping|The transfer of the data between the schemas of the source and destination application is done through a process known as mapping|
+|Lookups|Lookups is a feature that enables the user to map values for certain fields. Click here to know more about Lookup Mapping|
+|Renderer|This a feature to define and format XML rules as needed while implementing Attribute Mapping|
+|Tracking|Tracking is a feature that enables the user to track and study fields that are being synchronised from Source application to Destination application|
+|Root Variable|These are global variables that can be used in any attributes of any Complex objects & Complex Objects Collections|
 |Attributes|In APPSeCONNECT an attribute is a property or characteristic of a schema. |
 |Connectors|For APPSeCONNECT connectors act like a bridge to create connection between applications that connects different data sources both on-premise or in cloud |
 |Technology Applications|APPSeCONNECT comes with a number of technology connectors which can connect any data source having standard protocol-based communication channel established|

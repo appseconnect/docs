@@ -1895,7 +1895,7 @@
 
 
 
-  8 minute read
+  10 minute read
 </p>
                 
                 
@@ -1967,11 +1967,26 @@ b.	Grouping of environments:</p>
 <img src="/staticfiles/deployment/media/RevampedEnv/grouping-env.png" alt="grouping-env" /></li>
 </ul>
 
+<p><strong>Note: (a) Users will not be able to create a folder with same name.
+        (b) Only the created folder can be deleted. The default <code class="highlighter-rouge">HOME</code> folder will not have the delete button.</strong></p>
+
+<h4 id="grouping-of-environments">Grouping of Environments</h4>
+
+<p>APPSeCONNECT Users can add multiple groups to their environment module by clicking on the <code class="highlighter-rouge">ADD Group</code> button.</p>
+
+<ol>
+  <li>Click on the Add Group button, user gets the window for entering the Group Name.  <br />
+<img src="/staticfiles/deployment/media/RevampedEnv/grouping-env1.png" alt="grouping-env1" /></li>
+  <li>Enter the name to the Environment group.<br />
+<img src="/staticfiles/deployment/media/RevampedEnv/grouping-env2.png" alt="grouping-env2" /></li>
+  <li>Click OK button. Here you can now view the created group in the Environment list. <br />
+<img src="/staticfiles/deployment/media/RevampedEnv/grouping-env3.png" alt="grouping-env3" /></li>
+</ol>
+
 <h3 id="adding-cloud-environment">Adding Cloud Environment</h3>
 
 <p>If your organization is cloud-enabled, you will get the option to create cloud environment.
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment2.png" alt="Enviornment2" /></p>
-
 <ol>
   <li>Click on the + button to add a new cloud environment. The new cloud env setup window appears. 
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornmentnew1.png" alt="Enviornmentnew1" /></li>
@@ -1986,16 +2001,14 @@ b.	Grouping of environments:</p>
         (c) Each organisation can have only one cloud agent. User cannot create another cloud agent after creating one.</strong></p>
 
 <p>Once the cloud environment is ready, you will get the active cloud agent in the listing and the 
-add indicator (as shown in above figure) will become inactive.</p>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment3.png" alt="Enviornment3" /></p>
+add indicator (as shown in above figure) will become inactive.<br />
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment3.png" alt="Enviornment3" /></p>
 
 <h3 id="environment-details---on-premise-agent">Environment Details - On-Premise Agent</h3>
 
 <p>This section will provide the detailed overview and settings control (privilege based) 
-for the environment(On-Premise Agent) that are running the current Agent.</p>
-
-<p>Users of new agent (On-Premise Agent) will get the following sub-tabs with respect to the selected environment.<br />
+for the environment(On-Premise Agent) that are running the current Agent.<br />
+Users of new agent (On-Premise Agent) will get the following sub-tabs with respect to the selected environment.<br />
 a. <strong>Properties</strong>: The panel appears, when the user selects an active OP Agent from the environment listing of the project.    <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment4.png" alt="Enviornment4" />    <br />
 This page will give live information about the current OP agent, including:</p>
@@ -2011,8 +2024,11 @@ This page will give live information about the current OP agent, including:</p>
 scheduled and are under execution, service status etc.</li>
 </ul>
 
-<p>b. <strong>Plugins</strong> - This page will only display the plugin details from OP Agent.  <br />
-c. <strong>Settings</strong> - This page is only accessible to users who have the privilege to control the settings of OP.  <br />
+<p><strong>Note: User can view the log files by double clicking on them.</strong></p>
+
+<p>b. <strong>Plugins</strong> - This page will only display the plugin details from OP Agent. 
+<img src="/staticfiles/deployment/media/RevampedEnv/Env_OP_Plugin_Image.png" alt="Env_OP_Plugin_Image" />   <br />
+c. <strong>Settings</strong> - This page is only accessible to users who have the privilege to control the settings of OP.    <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></p>
 
 <p><strong>Settings have three available sections for managing OP Agents:</strong></p>
@@ -2030,10 +2046,25 @@ stored in sql lite database and will be reflected in the log bucket.</li>
   <li>Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.</li>
 </ul>
 
-<p>3)	Diagnostic Settings - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
-    files will get available in Agent and service path as shown in the image.</p>
+<p>3) Real Time Settings - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
+   Users need to provide the Hostname and the Port for the RealTime Execution.</p>
+
+<p>4) Diagnostic Settings - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
+   files will get available in Agent and service path as shown in the image.</p>
+
+<p>Diagnostic Settings is provided with two output paths:</p>
+
+<p>a)	Agent Output Path: This path provides the details of the transformed files when triggered manually.       <br />
+b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.</p>
+
+<p><img src="/staticfiles/deployment/media/RevampedEnv/Diagnostic_Settings_OP.png" alt="Diagnostic_Settings_OP" /></p>
 
 <p>After saving the changes in settings, the updated information gets auto-reflected in OP Agent.</p>
+
+<p><strong>Note: (a) Any changes done and saved in the environment settings page of the portal, will get updated in the 
+            Settings section of the corresponding OP Agent and vice-versa.
+        (b) The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as 
+            keeping autosync activated keeps the Agent and the Portal connected.</strong></p>
 
 <h3 id="environment-details---cloud-agent">Environment Details - Cloud Agent</h3>
 
@@ -2062,9 +2093,8 @@ The severity level is categorized into <code class="highlighter-rouge">Medium, H
 <h3 id="deleting-environment">Deleting Environment</h3>
 
 <p>You can now directly delete environments that are no longer in use from the listing itself. As soon as you perform delete from portal, 
-the OP Agent instance (active/inactive) gets auto-removed from the local environment and all the associated licenses will get removed.</p>
-
-<p>All the services and sync operations will get stopped. If any new user or different project user logs in further to the same environment, 
+the OP Agent instance (active/inactive) gets auto-removed from the local environment and all the associated licenses will get removed. <br />
+All the services and sync operations will get stopped. If any new user or different project user logs in further to the same environment, 
 a new license will be generated against it.</p>
 
 <p>Steps:</p>
@@ -2073,9 +2103,14 @@ a new license will be generated against it.</p>
 2) Go to your Project<br />
 3) Go to Manage &gt; Environments<br />
 4) Select the environment which you want to delete from listing<br />
-5)	Click on Delete</p>
+5)Click on Delete. <br />
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment_Delete.png" alt="Enviornment_Delete" />   <br />
+ Once deleted, user get a successful message for the deletion of the environment. The environment gets removed from the environment list after the deletion process.</p>
 
 <p><img src="/staticfiles/deployment/media/RevampedEnv/Enviornment9.png" alt="Enviornment9" /></p>
+
+<p><strong>Note: If a user has relogged in to a deleted Agent from the portal, 
+the deleted agent now will be visible in attached mode in the portal.</strong></p>
 
 <h3 id="detaching-and-attaching-environment">Detaching and Attaching Environment</h3>
 
@@ -2084,9 +2119,10 @@ Therefore, when detaching the selected environment from Portal, it remains in th
 as Agent is Detached when clicked on it.</p>
 
 <p>Post detachment, if the user tries to re-login to the agent, it will display the message, Agent is Blocked.<br />
-<strong>Note: On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.</strong></p>
-
-<p><img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png" alt="agent-disconnected" /></p>
+<strong>Note: (a) On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.
+        (b) Detached Agents, needs to be reattached from the portal for further logging in to it.
+        (c) Users can anytime delete and detach/attach an inactive agent in the portal.</strong><br />
+<img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png" alt="agent-disconnected" /></p>
 
 <p>For unblocking the agent,  user/implementer needs to attach the agent by clicking on the Attach button.</p>
 
@@ -2112,6 +2148,8 @@ details of the environment.</p>
 (b)Real Time Settings: Real Time settings is required when working with Real Time touchpoints using <a href="/api-management/steps-to-create-webhook-endpoint/">Webhooks</a> of the API Management.<br />
 (c)Resync Settings: Users can enable/disable the Autosync feature of the OP agent in the Resync Settings tab.</li>
 </ul>
+
+<p><strong>Note: Old Agent in Detached mode, will not be able to deploy any configuration to the corresponding agent.</strong></p>
 
 <h3 id="working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</h3>
 
@@ -2148,7 +2186,7 @@ Real Time settings has two field for the configurations:</p>
 <img src="/staticfiles/deployment/media/RevampedEnv/old-environment4.png" alt="old-environment4" /></li>
 </ul>
 
-<p><strong>Resync Settings:</strong> This section of the page has a checkbox for the user to Enable/Disable the autosync of resync</p>
+<p><strong>Resync Settings:</strong> This section of the page has a checkbox for the user to Enable/Disable the autosync of resync.</p>
 
 
                 
@@ -3932,8 +3970,28 @@ Real Time settings has two field for the configurations:</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             

@@ -53,7 +53,8 @@ for an organisation, therefore multiple active keys would be displayed in the dr
 
 **Note: (a)This feature of Generating Temporary License is solely for the Partners and the Developers.       
         (b) On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent.      
-        (c) Feed will not generate any login details of the user with respect to generating temporary license key for an organization.**
+        (c) Feed will not generate any login details of the user with respect to generating temporary license key for an organization.
+        (d) While logging in using temporary license in the OP Agent, the checkbox for Saving Data Configuration remains disabled**
 
 
 

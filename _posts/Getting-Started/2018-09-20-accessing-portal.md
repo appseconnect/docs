@@ -173,7 +173,8 @@ This section provides a simplified view of the modules that required to manage t
 
 ## Feeds
 
-You can see and track all the activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. Traces of past activities of the user can be been viewed in the feed section.
+You can see and track the non-transactional activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. 
+Traces of past activities of the user can be been viewed in the feed section.
 
 1. Choose & Click on a Project.
 2. Click on **Feeds** menu.
