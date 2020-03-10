@@ -5,7 +5,7 @@ tag: developers
 category: "Getting Started"
 menus: 
     gettingstarted:
-        title: User Registration"
+        title: "User Registration"
         weight: 4
         icon: fa fa-wpexplorer
         identifier: userregistration
