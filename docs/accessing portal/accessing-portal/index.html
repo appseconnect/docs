@@ -386,25 +386,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/license%20management/license-management/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/license%20management/license-management/" onclick="selectTab('/license%20management/license-management/', event);" title="Go to License Management">License Management</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-url="/license%20management/license-generation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/license%20management/license-generation/" onclick="selectTab('/license%20management/license-generation/', event);" title="Go to Generating Temporary License for Organization">Generating Temporary License for Organization</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/connectors/Overview-of-Connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/connectors/Overview-of-Connectors/" onclick="selectTab('/connectors/Overview-of-Connectors/', event);" title="Go to Connectors">Connectors</a>
         
@@ -1738,6 +1719,18 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/security/security/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/security/security/" onclick="selectTab('/security/security/', event);" title="Go to APPSeCONNECT Data Security">APPSeCONNECT Data Security</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/gdpr/GDPR/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/gdpr/GDPR/" onclick="selectTab('/gdpr/GDPR/', event);" title="Go to Global Data Protection Regulations">Global Data Protection Regulations</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/rule/overview-of-rule/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/rule/overview-of-rule/" onclick="selectTab('/rule/overview-of-rule/', event);" title="Go to Rule">Rule</a>
         
@@ -1925,6 +1918,7 @@
     <ul>
       <li><a href="#a-my-profile">(a) My Profile</a></li>
       <li><a href="#b-my-subscription">(b) My Subscription</a></li>
+      <li><a href="#scenario-1updating-addons-for-generic-rest-applications">Scenario 1:Updating Addons for Generic REST Applications</a></li>
       <li><a href="#c-lock-screen">(c) Lock Screen</a></li>
       <li><a href="#dlog-out">(d)Log out</a></li>
       <li><a href="#bookmark-panel-section">Bookmark Panel section</a></li>
@@ -2258,12 +2252,24 @@ following actions:</p>
 <ol>
   <li>User can view the organisation subscription plan and its expiry date.<br />
 <img src="/staticfiles/root/media/subscription1.png" alt="subscription1" /></li>
-  <li>Select necessary addons and can update subscription.<br />
-<img src="/staticfiles/root/media/subscription2.png" alt="subscription2" /></li>
-  <li>Can view history of selected addons for the organisation. 
-<img src="/staticfiles/root/media/subscription3.png" alt="subscription3" /></li>
-  <li>Can apply for support packages based on the number of hours as per requirement
-<img src="/staticfiles/root/media/subscription4.png" alt="subscription4" /></li>
+  <li>Our Support team helps you in Selection of necessary addons and help you in updating subscription.<br />
+<img src="/staticfiles/root/media/subscription2.png" alt="subscription2" />
+Here you can view history of selected addons for the organisation and can apply for support packages 
+based on the number of hours as per requirement.</li>
+</ol>
+
+<p>For Pricing details <a href="https://www.appseconnect.com/pricing/">click here</a></p>
+
+<h3 id="scenario-1updating-addons-for-generic-rest-applications">Scenario 1:Updating Addons for Generic REST Applications</h3>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal and Navigate to the <a href="">My Subscription</a>.</li>
+  <li>For adding license addons to REST Based Applications you need to increase the Add On <code class="highlighter-rouge">Additional Custom Data Sources</code>.</li>
+  <li>You need to Update Subscription for the selected addon by clicking on the <code class="highlighter-rouge">Update Subscription</code> Button.</li>
+  <li>Now navigate to the On-Premise Agent. Do <code class="highlighter-rouge">Update Configuration</code> in the agent followed by <code class="highlighter-rouge">Update Adapters</code>.
+Image</li>
+  <li>After the completion of Update Adapters, Close &amp; Exit the On-Premise Agent from the taskbar.</li>
+  <li>Restart the On-Premise Agent to reflect the subscription for REST Based Adapters.</li>
 </ol>
 
 <h3 id="c-lock-screen">(c) Lock Screen</h3>

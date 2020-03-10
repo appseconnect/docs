@@ -1,11 +1,11 @@
 ---
-title: "User Registration & License Management"
+title: "User Registration"
 toc: true
 tag: developers
 category: "Getting Started"
 menus: 
     gettingstarted:
-        title: User Registration & License Management"
+        title: User Registration"
         weight: 4
         icon: fa fa-wpexplorer
         identifier: userregistration
@@ -91,9 +91,3 @@ Click on portal and this will take you the login page of  APPSeCONNECT Portal.
 4. Select `Remember Me` checkbox in the login page, If you want the system to remember your login email id after logging out from the account.
 5. Click `Forgot Password` option to reset the password. A mail will be sent to your (user) account. You can reset the password by clicking on the link provided in the mail and set up a new password.
 
-## C. APPSeCONNECT License Management
-
-License key-based authentication approach is security enhancement for your on-premise and cloud integrations. 
-This mechanism authenticates users who tries to login to the integration client of APPSeCONNECT agent using 
-a revocable, secure and unique license or a security token that is provided by the server. 
-Read to know more about [License Management](/license%20management/license-management/)
