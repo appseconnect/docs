@@ -15,6 +15,8 @@ menus:
 When working with organisational Applications - [Custom Applications](/configuring%20appseconnect/configurations/#a-create-custom-app) & [Technology Applications](/configuring%20appseconnect/configurations/#b-technology-app-creation), Connectors 
 are not pre-packaged. Hence, the users need to configure the connector first before creating the connection.
 
+**Note: The `Configure Connector` button would be available only when you `create a custom application` or a `technology application`**
+
 **Steps to configure the connector for Organisational Applications**
 
 1. Click create connection button. The screen for creating connection appears.

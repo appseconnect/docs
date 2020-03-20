@@ -441,7 +441,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Accessing Portal",
-      excerpt: "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional...",
+      excerpt: "Accessing Portal The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set...",
       categories: ["Accessing Portal"],
       tags: ["developers"],
       id: 47
@@ -1412,8 +1412,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Handling Variables and Functions",
-      excerpt: "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
+      title: "Defining and Mapping Variables with Functions",
+      excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 155
@@ -1916,20 +1916,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of ProcessFlow",
-      excerpt: "Overview of APPSeCONNECT Process Flow APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create...",
-      categories: ["Processflow"],
-      tags: ["developers"],
-      id: 211
-    });
-    
-  
-    idx.add({
       title: "Deploying Advance Workflow",
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 212
+      id: 211
     });
     
   
@@ -1938,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 213
+      id: 212
     });
     
   
@@ -1947,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 213
     });
     
   
@@ -1956,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 214
     });
     
   
@@ -1965,7 +1956,34 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
+      id: 215
+    });
+    
+  
+    idx.add({
+      title: "Data Security",
+      excerpt: "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
+      categories: ["Security"],
+      tags: ["developers"],
       id: 216
+    });
+    
+  
+    idx.add({
+      title: "Global Data Protection Regulations",
+      excerpt: "Given below is the list of GDPR (Global Data Protection Regulations) polies which our product imparts to the user for...",
+      categories: ["GDPR"],
+      tags: ["developers"],
+      id: 217
+    });
+    
+  
+    idx.add({
+      title: "Overview of ProcessFlow",
+      excerpt: "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 218
     });
     
   
@@ -1974,25 +1992,43 @@ var idx = lunr(function () {
       excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 217
-    });
-    
-  
-    idx.add({
-      title: "APPSeCONNECT Data Security",
-      excerpt: "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
-      categories: ["Security"],
-      tags: ["developers"],
-      id: 218
-    });
-    
-  
-    idx.add({
-      title: "Global Data Protection Regulations",
-      excerpt: "\n",
-      categories: ["GDPR"],
-      tags: ["developers"],
       id: 219
+    });
+    
+  
+    idx.add({
+      title: "Creating & Saving ProcessFlow",
+      excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 220
+    });
+    
+  
+    idx.add({
+      title: "Deploying, Executing & Undeploying ProcessFlow",
+      excerpt: "Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users, now need...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 221
+    });
+    
+  
+    idx.add({
+      title: "Generating Temporary License for Organization",
+      excerpt: "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
+      categories: ["License Management"],
+      tags: ["developers"],
+      id: 222
+    });
+    
+  
+    idx.add({
+      title: "License Management",
+      excerpt: "APPSeCONNECT License Management License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users...",
+      categories: ["License Management"],
+      tags: ["developers"],
+      id: 223
     });
     
   
@@ -2500,7 +2536,7 @@ var store = [
       
       {
         "title": "User Registration",
-        "url": "/getting%20started/user-registration-license/",
+        "url": "/getting%20started/user-registration/",
         "excerpt": "Visitor’s Free Request Trial You can request a free trial version of APPSeCONNECT by visting the portal of APPSeCONNECT and...",
         "teaser":
           
@@ -2534,7 +2570,7 @@ var store = [
       {
         "title": "Accessing Portal",
         "url": "/accessing%20portal/accessing-portal/",
-        "excerpt": "The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional...",
+        "excerpt": "Accessing Portal The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3720,9 +3756,9 @@ var store = [
     
       
       {
-        "title": "Handling Variables and Functions",
+        "title": "Defining and Mapping Variables with Functions",
         "url": "/transformation/handling-variables-and-functions/",
-        "excerpt": "Use Case Name Handling Variables and Functions Brief Description Root Variables are the variables that stores the data that can...",
+        "excerpt": "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3809,7 +3845,7 @@ var store = [
       
       {
         "title": "Sage300",
-        "url": "/connectors/sage300/",
+        "url": "/connectors/Sage300/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
         "teaser":
           
@@ -4336,17 +4372,6 @@ var store = [
     
       
       {
-        "title": "Overview of ProcessFlow",
-        "url": "/processflow/overview-of-processflow/",
-        "excerpt": "Overview of APPSeCONNECT Process Flow APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Deploying Advance Workflow",
         "url": "/advance%20workflow/deploying-adv-workflow/",
         "excerpt": "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
@@ -4402,18 +4427,7 @@ var store = [
     
       
       {
-        "title": "ProcessFlow Listing Page",
-        "url": "/processflow/processflow-listing-page/",
-        "excerpt": "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "APPSeCONNECT Data Security",
+        "title": "Data Security",
         "url": "/security/security/",
         "excerpt": "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
         "teaser":
@@ -4426,7 +4440,73 @@ var store = [
       {
         "title": "Global Data Protection Regulations",
         "url": "/gdpr/GDPR/",
-        "excerpt": "\n",
+        "excerpt": "Given below is the list of GDPR (Global Data Protection Regulations) polies which our product imparts to the user for...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview of ProcessFlow",
+        "url": "/processflow/overview-of-processflow/",
+        "excerpt": "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "ProcessFlow Listing Page",
+        "url": "/processflow/processflow-listing-page/",
+        "excerpt": "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Creating & Saving ProcessFlow",
+        "url": "/processflow/creating-and-designing-processflow/",
+        "excerpt": "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Deploying, Executing & Undeploying ProcessFlow",
+        "url": "/processflow/deploying-and-executing-processflow/",
+        "excerpt": "Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users, now need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Generating Temporary License for Organization",
+        "url": "/license%20management/license-generation/",
+        "excerpt": "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "License Management",
+        "url": "/license%20management/license-management/",
+        "excerpt": "APPSeCONNECT License Management License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

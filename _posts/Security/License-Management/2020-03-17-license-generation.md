@@ -4,10 +4,10 @@ toc: true
 tag: developers
 category: "License Management"
 menus: 
-    LicenseManagement:
+   security:
+        weight: 12
         title: "Generating Temporary License for Organization"
         icon: fa fa-gg
-        weight: 2
         identifier: templicense      
 ---
 

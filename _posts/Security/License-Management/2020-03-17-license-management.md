@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "License Management"
 menus: 
-    header:
+   security:
         title: "License Management"
         icon: fa fa-wpexplorer
         weight: 2  
