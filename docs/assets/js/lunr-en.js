@@ -1997,7 +1997,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Creating & Saving ProcessFlow",
+      title: "Designing ProcessFlow",
       excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
       categories: ["Processflow"],
       tags: ["developers"],
@@ -2006,11 +2006,38 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Creating ProcessFlow",
+      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 221
+    });
+    
+  
+    idx.add({
       title: "Deploying, Executing & Undeploying ProcessFlow",
       excerpt: "Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users, now need...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 221
+      id: 222
+    });
+    
+  
+    idx.add({
+      title: "Creating Lookup Repository Masterdata",
+      excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 223
+    });
+    
+  
+    idx.add({
+      title: "Export and Import Lookup",
+      excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 224
     });
     
   
@@ -2019,7 +2046,7 @@ var idx = lunr(function () {
       excerpt: "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 222
+      id: 225
     });
     
   
@@ -2028,7 +2055,16 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT License Management License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 223
+      id: 226
+    });
+    
+  
+    idx.add({
+      title: "Lookup in Processflow Mapping",
+      excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 227
     });
     
   
@@ -4471,9 +4507,20 @@ var store = [
     
       
       {
-        "title": "Creating & Saving ProcessFlow",
-        "url": "/processflow/creating-and-designing-processflow/",
+        "title": "Designing ProcessFlow",
+        "url": "/processflow/designer-processflow/",
         "excerpt": "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Creating ProcessFlow",
+        "url": "/processflow/creating-processflow/",
+        "excerpt": "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4485,6 +4532,28 @@ var store = [
         "title": "Deploying, Executing & Undeploying ProcessFlow",
         "url": "/processflow/deploying-and-executing-processflow/",
         "excerpt": "Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users, now need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Creating Lookup Repository Masterdata",
+        "url": "/processflow/Lookup-repository-masterdata/",
+        "excerpt": "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Export and Import Lookup",
+        "url": "/processflow/export-and-import-lookup/",
+        "excerpt": "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4507,6 +4576,17 @@ var store = [
         "title": "License Management",
         "url": "/license%20management/license-management/",
         "excerpt": "APPSeCONNECT License Management License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Lookup in Processflow Mapping",
+        "url": "/processflow/implementing-lookup-in-mapping/",
+        "excerpt": "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

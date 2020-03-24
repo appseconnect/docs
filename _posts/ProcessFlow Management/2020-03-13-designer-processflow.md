@@ -1,14 +1,14 @@
 ---
-title: "Creating & Saving ProcessFlow"
+title: "Designing ProcessFlow"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     processflow:
-        title: "Creating & Saving ProcessFlow"
-        weight: 3
+        title: "Designing ProcessFlow"
+        weight: 4
         icon: fa fa-file-word-o
-        identifier: creatingprocessflow
+        identifier: desiningprocessflow
 ---
 This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability of Process Flow Designer Page.
 

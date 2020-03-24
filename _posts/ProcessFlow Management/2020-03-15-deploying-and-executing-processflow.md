@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
     processflow:
         title: "Deploying, Executing & Undeploying ProcessFlow"
-        weight: 4
+        weight: 6
         icon: fa fa-file-word-o
         identifier: deployingprocessflow
 ---
