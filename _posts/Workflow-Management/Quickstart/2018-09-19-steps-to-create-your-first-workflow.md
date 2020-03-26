@@ -51,6 +51,10 @@ If you are new to Workflow, then go through the below steps to know more.
 
    ![CreateWorkflow](/staticfiles/workflow-management/media/CreateWorkflow.png)
 
+User needs to enter the `Name` and `Description` of the Workflow. 
+The name needs to be provided in the top left corner of the Workflow Design page and is then saved and viewable in right side panel.
+The Description is required to provide in the properties section available at the Right side of the page.
+
 6. To start the workflow, Drag & Drop the Start node from the ITEMS section, on the blank/grid section.
 
     ![Start](/staticfiles/workflow-management/media/Start.png)

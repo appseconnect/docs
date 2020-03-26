@@ -11,6 +11,8 @@ menus:
         identifier: accessingportal
 ---
 
+## Accessing Portal
+
 The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
 Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.
 
@@ -173,7 +175,8 @@ This section provides a simplified view of the modules that required to manage t
 
 ## Feeds
 
-You can see and track all the activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. Traces of past activities of the user can be been viewed in the feed section.
+You can see and track the non-transactional activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. 
+Traces of past activities of the user can be been viewed in the feed section.
 
 1. Choose & Click on a Project.
 2. Click on **Feeds** menu.
@@ -288,13 +291,21 @@ Users of APPSeCONNECT can manage their subscription addons from this section. Na
 following actions: 
 
 1. User can view the organisation subscription plan and its expiry date.  
-![subscription1](/staticfiles/root/media/subscription1.png)    
-2. Select necessary addons and can update subscription.  
-![subscription2](/staticfiles/root/media/subscription2.png)
-3. Can view history of selected addons for the organisation. 
-![subscription3](/staticfiles/root/media/subscription3.png)
-4. Can apply for support packages based on the number of hours as per requirement
-![subscription4](/staticfiles/root/media/subscription4.png)
+![subscription1](/staticfiles/root/media/subscription1.png)      
+2. Our Support team helps you in Selection of necessary addons and help you in updating subscription.  
+
+For Pricing details [click here](https://www.appseconnect.com/pricing/)
+
+### Scenario 1:Updating Addons for Generic REST Applications
+
+1.	Login to the APPSeCONNECT Portal and Navigate to the [My Subscription](/accessing%20portal/accessing-portal/#b-my-subscription). 
+2.	For adding license addons to REST Based Applications you need to increase the Add On `Additional Custom Data Sources`. 
+3.	You need to Update Subscription for the selected addon by clicking on the `Update Subscription` Button.
+4.  Now navigate to the On-Premise Agent. Do `Update Configuration` in the agent followed by `Update Adapters`.
+![UpdateSubscription_Rest](/staticfiles/root/media/UpdateSubscription_Rest.png)   
+5.	After the completion of Update Adapters, Close & Exit the On-Premise Agent from the taskbar.
+6.	Restart the On-Premise Agent to reflect the subscription for REST Based Adapters.
+
 
 ### (c) Lock Screen
 
@@ -363,8 +374,7 @@ user would be able to view the tools that are available for the organisation. Th
 1. [Login](https://portal.appseconnect.com/Account/Login#!) to APPSeCONNECT
 2. Now Search/find the appropriate organization you want to change details for. 
 3. Click on Users menu.
-4. Click on Edit link for an existing user.
-
+4. Click on Edit link for an existing user.    
 ![Usernode](/staticfiles/root/media/Usernode.png)
 
 In the edit user screen, you can change the username, email address, password etc for that particular user.

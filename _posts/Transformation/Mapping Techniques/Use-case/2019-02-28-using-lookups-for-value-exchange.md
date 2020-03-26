@@ -13,6 +13,7 @@ menus:
 
 ## Use Case Name
 Using Lookups Mapping for Value Interchange
+
 ## Brief Description
 
 Lookups Mapping is a feature in APPSeCONNECT which enables the user or implementer to provide a specific value to the application environment, such that when the source and destination application is integrated, 
@@ -58,6 +59,10 @@ The Lookups feature consist of multiple fields like Lookup Type, Used For, Sourc
 The screen for the Lookup is provided below:
 
 ![lookup1](/staticfiles/Transformation/media/lookup1.png)
+
+**Note: Users can also add the Lookups by importing the files. 
+Click on the Horizontal dots and select the option Import. Similarly by Clicking on Export,
+users can download the created list of the lookups.**
 
 ## Steps to Implement Lookups:
 

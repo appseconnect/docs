@@ -43,14 +43,14 @@ Users cannot modify any configuration to the rule.
 ## Rule Notification
 
 Users would receive the hourly report in the email id provided for the Organisation. The email would consist 
-of the sync report (for failed data) for the previous hour. 
+of the sync report (for failed during the execution process) for the previous hour. 
 
 **Note: 
         (a) In-case of no error, there wont be any mail sent.      
         (b) The organisations need to be in Go-Live status for the Hourly Report.      
         (c) Also, by default, the token for sending mails is set as ${orgEmails}$ which represents, that all users of the same organization will receive the notifications.       
            Users can provide the specific recipient email address directly to mail field 
-          for sending the notification to selective users.**
-
+           for sending the notification to selective users.
+        (d) This Report will only display the errors that are faced during the sync process of the last hour**
 
 
