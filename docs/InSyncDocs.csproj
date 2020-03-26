@@ -1068,6 +1068,7 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\creating-processflow.md" />
     <None Include="_posts\ProcessFlow Management\designer-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\mapper-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Lookup-repository-masterdata.md" />
     <None Include="_posts\ProcessFlow Management\implementing-lookup-in-mapping.md" />
     <None Include="_posts\ProcessFlow Management\export and import-lookup.md" />

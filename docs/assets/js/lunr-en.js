@@ -1521,7 +1521,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "BambooHR",
-      excerpt: "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
+      excerpt: "Application configuration is an essential activity before starting the process of integration. If your choosen application is Bamboo HR, such...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 167
@@ -3854,7 +3854,7 @@ var store = [
       {
         "title": "BambooHR",
         "url": "/connectors/bamboohr/",
-        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Bamboo HR, such...",
+        "excerpt": "Application configuration is an essential activity before starting the process of integration. If your choosen application is Bamboo HR, such...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
