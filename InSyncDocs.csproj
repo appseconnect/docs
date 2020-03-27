@@ -38,6 +38,7 @@
     <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
     <Folder Include="_posts\Connectors\Technology Connectors\File System\" />
+    <Folder Include="_posts\ProcessFlow Management\Mapper\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -1066,15 +1067,18 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\product-add.md" />
     <None Include="_posts\Integration\SAPB1-WooCommerce\SAPB1-WooCommerce.md" />
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
-    <None Include="_posts\ProcessFlow Management\creating-processflow.md" />
-    <None Include="_posts\ProcessFlow Management\designer-processflow.md" />
-    <None Include="_posts\ProcessFlow Management\mapper-processflow.md" />
-    <None Include="_posts\ProcessFlow Management\Lookup-repository-masterdata.md" />
-    <None Include="_posts\ProcessFlow Management\implementing-lookup-in-mapping.md" />
-    <None Include="_posts\ProcessFlow Management\export and import-lookup.md" />
-    <None Include="_posts\ProcessFlow Management\deploying-and-executing-processflow.md" />
-    <None Include="_posts\ProcessFlow Management\processflow-listing-page.md" />
-    <None Include="_posts\ProcessFlow Management\overview-of-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-16-creating-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-17-designer-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-18-snapshot-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-23-customising-attribute-mapping.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-22-namespace-mapper.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-22-mapper-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-21-Lookup-repository-masterdata.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-20-implementing-lookup-in-mapping.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-19-export and import-lookup.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-18-deploying-and-executing-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-15-processflow-listing-page.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-15-overview-of-processflow.md" />
     <None Include="_posts\Security\2020-03-06-GDPR.md" />
     <None Include="_posts\Security\License-Management\2020-03-17-license-generation.md" />
     <None Include="_posts\Security\License-Management\2020-03-17-license-management.md" />

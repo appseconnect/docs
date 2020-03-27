@@ -7,7 +7,7 @@ menus:
     header:
         title: "ProcessFlow"
         weight: 4
-        icon: fa fa-file-word-o
+        icon: fa fa-wpexplorer
         identifier: processflow
 ---
 
