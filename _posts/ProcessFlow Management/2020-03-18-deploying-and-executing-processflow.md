@@ -1,4 +1,4 @@
----
+﻿---
 title: "Deploying, Executing & Undeploying ProcessFlow"
 toc: true
 tag: developers
@@ -49,17 +49,17 @@ Provide the credentials in the App Configuration section of the On-Premise Agent
 ![Deploy Processflow6](../../staticfiles/processflow/media/deploy-processflow6.png)
 Click on the Refresh Connection button. You will get the latest credentials or updates to credentials made in the OP Agent. Click on the NEXT button.
 ![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png)
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher?e you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wher???e you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
+The screen navigates to the lookup section of the Wizard, wherḍḍḍe you are required to fix the lookups if provided while mapping the attributes.
 ![Deploy Processflow8](../../staticfiles/processflow/media/deploy-processflow8.png)
 The lookup section would be listed with all the lookups that are mapped in the mapper node. Click the button FIX to select the lookup type/table that is needed to deploy with the Process Flow.
 ![Deploy Processflow9](../../staticfiles/processflow/media/deploy-processflow9.png)
@@ -109,10 +109,10 @@ listing page.
 
 1. Go to [environment listing](/deployment/Environment-Management/) page.
 2. You can view the list of process flow from Choose the process flow you want to undeploy, and click on the Undeploy button.
-Image  
+![Processflow Undeploy1](../../staticfiles/processflow/media/processflow-undeploy1.PNG)   
 3. The deployed process flow automatically will gets undeployed and you can view the same in the 
 portal.
-
+![Processflow Undeploy2](../../staticfiles/processflow/media/processflow-undeploy2.png)  
 The undeployed process flow remains visible in the environment listing page but it gets completly
 detached from the agent. You can later deploy the undeployed process flow.
 

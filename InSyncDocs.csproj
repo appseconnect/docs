@@ -567,11 +567,17 @@
     <Content Include="staticfiles\processflow\media\processflow-rename1.png" />
     <Content Include="staticfiles\processflow\media\processflow-rename2.png" />
     <Content Include="staticfiles\processflow\media\processflow-rename3.png" />
+    <Content Include="staticfiles\processflow\media\processflow-undeploy1.PNG" />
+    <Content Include="staticfiles\processflow\media\processflow-undeploy2.png" />
     <Content Include="staticfiles\processflow\media\processflowlisting-page1.png" />
     <Content Include="staticfiles\processflow\media\processflowlisting-page2.png" />
     <Content Include="staticfiles\processflow\media\processflowlisting-page3.png" />
     <Content Include="staticfiles\processflow\media\processflowlisting-page4.png" />
     <Content Include="staticfiles\processflow\media\processflowlisting-page5.png" />
+    <Content Include="staticfiles\processflow\media\redeploy3.png" />
+    <Content Include="staticfiles\processflow\media\redeploy4.png" />
+    <Content Include="staticfiles\processflow\media\redeploy5.png" />
+    <Content Include="staticfiles\processflow\media\redeploy6.png" />
     <Content Include="staticfiles\processflow\media\reference-table1.png" />
     <Content Include="staticfiles\processflow\media\reference-table10.png" />
     <Content Include="staticfiles\processflow\media\reference-table11.png" />
@@ -1069,6 +1075,7 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-creating-processflow.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-17-designer-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-18-redeploying-processflow.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-18-snapshot-processflow.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-23-customising-attribute-mapping.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-22-namespace-mapper.md" />

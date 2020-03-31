@@ -2042,11 +2042,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Redeploying ProcessFlow",
+      excerpt: "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 225
+    });
+    
+  
+    idx.add({
       title: "Data view of Snapshot for ProcessFlow",
       excerpt: "\n",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 225
+      id: 226
     });
     
   
@@ -2055,7 +2064,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 226
+      id: 227
     });
     
   
@@ -2064,7 +2073,7 @@ var idx = lunr(function () {
       excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 227
+      id: 228
     });
     
   
@@ -2073,7 +2082,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 228
+      id: 229
     });
     
   
@@ -2082,7 +2091,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 229
+      id: 230
     });
     
   
@@ -2091,7 +2100,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 230
+      id: 231
     });
     
   
@@ -2100,7 +2109,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 231
+      id: 232
     });
     
   
@@ -4590,6 +4599,17 @@ var store = [
         "title": "Deploying, Executing & Undeploying ProcessFlow",
         "url": "/processflow/deploying-and-executing-processflow/",
         "excerpt": "Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users, now need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Redeploying ProcessFlow",
+        "url": "/processflow/redeploying-processflow/",
+        "excerpt": "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
