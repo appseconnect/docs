@@ -29,17 +29,18 @@ credential for the applications that is used in the Process Flows.
 ![Deploy Processflow1](../../staticfiles/processflow/media/deploy-processflow1.png)   
 3.  Click on the `edit button` available for the selected Process Flow, which will navigate the user to the 
     Process Flow Designing Page.  
-4.	Click on the deploy button in the Process Flow Designing Page.
- ![Deploy Processflow2](../../staticfiles/processflow/media/deploy-processflow2.png)  
+ ![Deploy Processflow2](../../staticfiles/processflow/media/deploy-processflow2.png) 
+4.	Click on the deploy button in the Process Flow Designing Page.  
+ **Note: You can view some explained steps on the Right Side of the Deploy Wizard in the How it 
+Works section, that will help you deploy your process flow successfully.**  
 5. The Deploy wizard opens on clicking the `Deploy` button. The deploy wizard is divided in to three sections.
-
 * Select Environment: You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.
 * Set up Connection: You need to select the credential for the applications selected in the process flow provided in the Agent.
 * Select lookups: You need to fix up the lookups mapped for the attribute in the mapper node.
-* Schedule: You need to configure the Manual/Auto execution of the Process Flow.  
+* Sync & Retry: You need to configure the Manual/Auto  & Retry execution of the Process Flow.  
 ![Deploy Processflow3](../../staticfiles/processflow/media/deploy-processflow3.png) 
 Now choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button.  
-
+You need to install the agent if you do not have an installed [Environment](). 
 As per the selected type of environment, you need to select an environment from the list of environments in the drop down. 
 Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.
 ![Deploy Processflow4](../../staticfiles/processflow/media/deploy-processflow4.png)   
@@ -48,18 +49,8 @@ The screen navigates to the Set-up connection section of the Deploy wizard. You 
 Provide the credentials in the App Configuration section of the On-Premise Agent. You can view the [pre-packaged applications](/connectors/Overview-of-Connectors/).
 ![Deploy Processflow6](../../staticfiles/processflow/media/deploy-processflow6.png)
 Click on the Refresh Connection button. You will get the latest credentials or updates to credentials made in the OP Agent. Click on the NEXT button.
-![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png)
+![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png) 
 The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-The screen navigates to the lookup section of the Wizard, wherḍḍḍe you are required to fix the lookups if provided while mapping the attributes.
 ![Deploy Processflow8](../../staticfiles/processflow/media/deploy-processflow8.png)
 The lookup section would be listed with all the lookups that are mapped in the mapper node. Click the button FIX to select the lookup type/table that is needed to deploy with the Process Flow.
 ![Deploy Processflow9](../../staticfiles/processflow/media/deploy-processflow9.png)
@@ -75,11 +66,34 @@ Expand the Collection and select the table that is required to be fixed for depl
 **Note: (a) Fixing the lookups is not a mandatory process, if required you can ignore the Select Lookups step.
         (b) User cannot navigate to the next section of the wizard without selecting the credentials the applications used.**  
 
-The screen navigates to the Schedule section of the deploy wizard. You can configure the Manual/Auto 
-execution of the Process Flow. 
+The screen navigates to the Sync and Retry section of the deploy wizard. 
+This section enables you to configure your process flow Sync and Re-try in either auto mode or in manual mode before 
+execution of the Process Flow here. By default, the sync type toggle button is selected in Manual Mode. 
 ![Deploy Processflow13](../../staticfiles/processflow/media/deploy-processflow13.png)
 
-After configuring the Schedule section, click Finish button. The Process Flow would be successfully 
+**Process to configure schedule Sync - Auto & Manual** 
+Select Frequency - There are three Options to choose - Every Day, Minute & Hour           
+(a) If the Frequency selected as `Everyday`, you need to provide Interval/Sync Daily 
+as shown below:  
+![Processflow Autosync1](../../staticfiles/processflow/media/processflow-autosync1.png)  
+(b) If frequency selected as Minute, you can provide input (Only 1-59).  
+You can select End Execution or Never.If you select End Execution, Execution of a process 
+flow will stop auto-sync after ‘N’ number of occurrences.    
+If you select Never, process flow will never stop execution.    
+![Processflow Autosync2](../../staticfiles/processflow/media/processflow-autosync2.png)  
+(c) If frequency selected as Hour, you can provide input (Only 1-23). You can select 
+End Execution or Never.If you select End Execution, Execution of a process 
+flow will stop auto-sync after ‘N’ number of occurrences.    
+If you select Never, process flow will never stop execution.
+![Processflow Autosync3](../../staticfiles/processflow/media/processflow-autosync3.png)
+
+### Process to configure Retry - Auto & Manual
+
+{NOTE TO GO}
+
+
+
+After configuring the, click Finish button. The Process Flow would be successfully 
 deployed. You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
 Downloading Process Flow Data, Downloading XSLT Files, Deployed etc. while deploying steps after 
 clicking the Finish button.  
@@ -109,10 +123,10 @@ listing page.
 
 1. Go to [environment listing](/deployment/Environment-Management/) page.
 2. You can view the list of process flow from Choose the process flow you want to undeploy, and click on the Undeploy button.
-![Processflow Undeploy1](../../staticfiles/processflow/media/processflow-undeploy1.PNG)   
-3. The deployed process flow automatically will gets undeployed and you can view the same in the 
-portal.
-![Processflow Undeploy2](../../staticfiles/processflow/media/processflow-undeploy2.png)  
+![Processflow Undeploy2](../../staticfiles/processflow/media/processflow-undeploy2.png)   
+3. You get a pop up message for undeploying process flow. Click `Yes` and the deployed process flow automatically will gets undeployed and you can view the same in the 
+portal. To cancel the step, click `No`.
+![processflow-undeploy1.PNG](../../staticfiles/processflow/media/processflow-undeploy1.PNG)  
 The undeployed process flow remains visible in the environment listing page but it gets completly
 detached from the agent. You can later deploy the undeployed process flow.
 

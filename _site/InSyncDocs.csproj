@@ -539,6 +539,9 @@
     <Content Include="staticfiles\processflow\media\process-createchild-folder4.png" />
     <Content Include="staticfiles\processflow\media\process-createchild-folder5.png" />
     <Content Include="staticfiles\processflow\media\process-createchild-folder6.png" />
+    <Content Include="staticfiles\processflow\media\processflow-autosync1.png" />
+    <Content Include="staticfiles\processflow\media\processflow-autosync2.png" />
+    <Content Include="staticfiles\processflow\media\processflow-autosync3.png" />
     <Content Include="staticfiles\processflow\media\processflow-delete1.png" />
     <Content Include="staticfiles\processflow\media\processflow-delete2.png" />
     <Content Include="staticfiles\processflow\media\processflow-delete3.png" />
