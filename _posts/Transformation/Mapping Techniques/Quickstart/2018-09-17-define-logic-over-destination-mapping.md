@@ -12,12 +12,6 @@ menus:
 ---
 
 
-Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure `If-Else Mapping`. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.
-
-## Pre-requisites for Mapping
-1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Select the Application. [Click HERE](/getting-started/) to know more about selecting of Applications.
-3. Create a Connection. [Click HERE](/getting-started/) to know more.
 
 ## Mapping Levels
 
@@ -105,5 +99,11 @@ Now if the immediate parent is also associated with a parent (a complex object/c
 enabled, rest all other child nodes on that tree, remains disabled. 
 
 **Protip:** The Disabled node turns grey on disabling.
-{: .notice--info} 
+{: .notice--info} Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure `If-Else Mapping`. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.
+
+## Pre-requisites for Mapping
+1. Login to the APPSeCONNECT Portal with valid credentials.
+2. Select the Application. [Click HERE](/getting-started/) to know more about selecting of Applications.
+3. Create a Connection. [Click HERE](/getting-started/) to know more.
+
 

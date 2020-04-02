@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure If-Else Mapping. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.">
+<meta name="description" content="Mapping Levels">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure If-Else Mapping. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.">
+  <meta property="og:description" content="Mapping Levels">
 
 
 
@@ -697,8 +697,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Salesforce/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Salesforce/" onclick="selectTab('/connectors/Salesforce/', event);" title="Go to Salesforce">Salesforce</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -715,8 +715,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Salesforce/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Salesforce/" onclick="selectTab('/connectors/Salesforce/', event);" title="Go to Salesforce">Salesforce</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -931,6 +937,12 @@
     
     <li class="menu-item-" data-url="/connectors/OAuth2.0/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/OAuth2.0/" onclick="selectTab('/connectors/OAuth2.0/', event);" title="Go to OAuth2.0 Authentication">OAuth2.0 Authentication</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/OAuth1.0/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/OAuth1.0/" onclick="selectTab('/connectors/OAuth1.0/', event);" title="Go to OAuth1.0 Authentication">OAuth1.0 Authentication</a>
         
     </li>
     
@@ -1384,6 +1396,12 @@
     
     <li class="menu-item-" data-url="/processflow/namespace-mapper/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/namespace-mapper/" onclick="selectTab('/processflow/namespace-mapper/', event);" title="Go to Namespace of Processflows">Namespace of Processflows</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/steps-to-define-logic-over-destination-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/steps-to-define-logic-over-destination-mapping/" onclick="selectTab('/processflow/steps-to-define-logic-over-destination-mapping/', event);" title="Go to Steps to Define logic over Destination Mapping of Processflow">Steps to Define logic over Destination Mapping of Processflow</a>
         
     </li>
     
@@ -1930,7 +1948,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Steps to define logic over destination mapping">
-        <meta itemprop="description" content="Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure If-Else Mapping. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.">
+        <meta itemprop="description" content="Mapping Levels">
         <meta itemprop="datePublished" content="September 17, 2018">
         
 
@@ -2012,7 +2030,6 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> </h4></header>
                         <ul class="toc__menu">
-  <li><a href="#pre-requisites-for-mapping">Pre-requisites for Mapping</a></li>
   <li><a href="#mapping-levels">Mapping Levels</a>
     <ul>
       <li><a href="#mapping-at-attribute-level">Mapping at Attribute Level</a></li>
@@ -2022,20 +2039,12 @@
     </ul>
   </li>
   <li><a href="#respect-hierarchical-rendering-on-mapping-state">Respect Hierarchical Rendering on Mapping state</a></li>
+  <li><a href="#pre-requisites-for-mapping">Pre-requisites for Mapping</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
-
-<h2 id="pre-requisites-for-mapping">Pre-requisites for Mapping</h2>
-<ol>
-  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
-  <li>Select the Application. <a href="/getting-started/">Click HERE</a> to know more about selecting of Applications.</li>
-  <li>Create a Connection. <a href="/getting-started/">Click HERE</a> to know more.</li>
-</ol>
-
-<h2 id="mapping-levels">Mapping Levels</h2>
+                <h2 id="mapping-levels">Mapping Levels</h2>
 
 <p>Mapping is done at various level of Input Packet. Refer <a href="/transformation/define-source-destination-transformation/">here</a></p>
 <h3 id="mapping-at-attribute-level">Mapping at Attribute Level</h3>
@@ -2121,7 +2130,15 @@ Now if the immediate parent is also associated with a parent (a complex object/c
 enabled, rest all other child nodes on that tree, remains disabled.</li>
 </ol>
 
-<p class="notice--info"><strong>Protip:</strong> The Disabled node turns grey on disabling.</p>
+<p><strong>Protip:</strong> The Disabled node turns grey on disabling.
+{: .notice–info} Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
+
+<h2 id="pre-requisites-for-mapping">Pre-requisites for Mapping</h2>
+<ol>
+  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
+  <li>Select the Application. <a href="/getting-started/">Click HERE</a> to know more about selecting of Applications.</li>
+  <li>Create a Connection. <a href="/getting-started/">Click HERE</a> to know more.</li>
+</ol>
 
 
                 
@@ -4023,8 +4040,38 @@ enabled, rest all other child nodes on that tree, remains disabled.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             

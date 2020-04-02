@@ -324,7 +324,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Steps to define logic over destination mapping",
-      excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
+      excerpt: "Mapping Levels Mapping is done at various level of Input Packet. Refer here Mapping at Attribute Level The user/implementer can...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 34
@@ -1862,11 +1862,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "OAuth1.0 Authentication",
+      excerpt: "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 205
+    });
+    
+  
+    idx.add({
       title: "OAuth2.0 Authentication",
       excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 205
+      id: 206
     });
     
   
@@ -1875,7 +1884,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 206
+      id: 207
     });
     
   
@@ -1884,7 +1893,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 207
+      id: 208
     });
     
   
@@ -1893,7 +1902,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 208
+      id: 209
     });
     
   
@@ -1902,7 +1911,7 @@ var idx = lunr(function () {
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 209
+      id: 210
     });
     
   
@@ -1911,7 +1920,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 210
+      id: 211
     });
     
   
@@ -1920,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 211
+      id: 212
     });
     
   
@@ -1929,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 212
+      id: 213
     });
     
   
@@ -1938,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 213
+      id: 214
     });
     
   
@@ -1947,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 215
     });
     
   
@@ -1956,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 215
+      id: 216
     });
     
   
@@ -1965,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
       categories: ["Security"],
       tags: ["developers"],
-      id: 216
+      id: 217
     });
     
   
@@ -1974,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "The list of GDPR (Global Data Protection Regulations) policies is given below which our product imparts to the user for...",
       categories: ["GDPR"],
       tags: ["developers"],
-      id: 217
+      id: 218
     });
     
   
@@ -1983,7 +1992,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 218
+      id: 219
     });
     
   
@@ -1992,7 +2001,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 219
+      id: 220
     });
     
   
@@ -2001,7 +2010,7 @@ var idx = lunr(function () {
       excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 220
+      id: 221
     });
     
   
@@ -2010,7 +2019,7 @@ var idx = lunr(function () {
       excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 221
+      id: 222
     });
     
   
@@ -2019,7 +2028,7 @@ var idx = lunr(function () {
       excerpt: "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 222
+      id: 223
     });
     
   
@@ -2028,7 +2037,7 @@ var idx = lunr(function () {
       excerpt: "License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users who tries to...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 223
+      id: 224
     });
     
   
@@ -2037,7 +2046,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users, now need...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 224
+      id: 225
     });
     
   
@@ -2046,7 +2055,7 @@ var idx = lunr(function () {
       excerpt: "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 225
+      id: 226
     });
     
   
@@ -2055,7 +2064,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 226
+      id: 227
     });
     
   
@@ -2064,7 +2073,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 227
+      id: 228
     });
     
   
@@ -2073,7 +2082,7 @@ var idx = lunr(function () {
       excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 228
+      id: 229
     });
     
   
@@ -2082,7 +2091,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 229
+      id: 230
     });
     
   
@@ -2091,7 +2100,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 230
+      id: 231
     });
     
   
@@ -2100,7 +2109,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 231
+      id: 232
     });
     
   
@@ -2109,7 +2118,25 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 232
+      id: 233
+    });
+    
+  
+    idx.add({
+      title: "Steps to Define logic over Destination Mapping of Processflow",
+      excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 234
+    });
+    
+  
+    idx.add({
+      title: "Lightspeed",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 235
     });
     
   
@@ -2508,7 +2535,7 @@ var store = [
       {
         "title": "Steps to define logic over destination mapping",
         "url": "/transformation/define-logic-over-destination-mapping/",
-        "excerpt": "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
+        "excerpt": "Mapping Levels Mapping is done at various level of Input Packet. Refer here Mapping at Attribute Level The user/implementer can...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4387,6 +4414,17 @@ var store = [
     
       
       {
+        "title": "OAuth1.0 Authentication",
+        "url": "/connectors/OAuth1.0/",
+        "excerpt": "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "OAuth2.0 Authentication",
         "url": "/connectors/OAuth2.0/",
         "excerpt": "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
@@ -4687,6 +4725,28 @@ var store = [
         "title": "Attribute Mapping of Processflows",
         "url": "/processflow/customising-attribute-mapping/",
         "excerpt": "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Steps to Define logic over Destination Mapping of Processflow",
+        "url": "/processflow/steps-to-define-logic-over-destination-mapping/",
+        "excerpt": "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Lightspeed",
+        "url": "/connectors/Lightspeed/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
