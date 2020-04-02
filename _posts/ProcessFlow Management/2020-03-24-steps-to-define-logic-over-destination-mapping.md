@@ -65,7 +65,7 @@ The `If Mapping can be done at the For-Each Loop level`. Below is the screen whi
 The user/implementer can work on the If-Else Mapping in the complex object level. 
 Below is the Screen which shows the If-Else Mapping at the complex object level.  
 
-![LoopLevel-Mapping](/staticfiles/Transformation/media/ComplexObject-Mapping.png)
+![ComplexObject-Mapping](/staticfiles/Transformation/media/ComplexObject-Mapping.png)
 
 Like other levels, the user can add Else-If and Otherwise and its conditions from the drop down. 
 
@@ -73,8 +73,8 @@ Like other levels, the user can add Else-If and Otherwise and its conditions fro
 
 The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.  
 
-![LoopLevel-Mapping](/staticfiles/Transformation/media/ComplexObjectCollection-If-Mapping.png)  
-![LoopLevel-Mapping](/staticfiles/Transformation/media/ComplexObjectCollection-else-Mapping.png)
+![ComplexObjectCollection-If-Mapping](/staticfiles/Transformation/media/ComplexObjectCollection-If-Mapping.png)  
+![ComplexObjectCollection-else-Mapping](/staticfiles/Transformation/media/ComplexObjectCollection-else-Mapping.png)
 
 ## Respect Hierarchical Rendering on Mapping state
 
