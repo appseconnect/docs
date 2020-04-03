@@ -12,146 +12,112 @@ menus:
 ---
 
 The data coming from the source schema requires to be transformed individually such that it matches the format 
-of the destination schema every time the touchpoint is synced.
+of the destination schema every time the processflow is synced.
 
-E.g: Suppose the user is executing `Invoice Add` touchpoi in this case
-the records of all the Invoices are drawn from the source app and for this case the similar 
-execution process of transformation is deployed multiple times. 
+E.g: Suppose the user is executing Invoice Add Process Flow in this case the records of all 
+the Invoices are drawn from the source app and for this case the similar execution process
+of transformation is deployed multiple times
 
 ## Prerequisites for Working with Mapping
 
-1.	Login to the Portal with valid credentials.
-2.	Select or create application for whose integration is to be done.
-3.	Create a Connection and Navigate to the touchpoint where the Mapping is to be done.
+* You need to have valid credentials of the portal.
+* You need to navigate to the [Process Flow listing page](/processflow/processflow-listing-page/) for creating or editing a Process Flow
+* You need [create a Process Flow](/processflow/creating-processflow/) or Edit an existing process flow for implementing Namespace in Mapper node. 
 
 **Protip:** In case of Custom Apps, Transformation or Mapping can be executed or implemented while creating processflow
 {: .notice--info}
 
-## Implementing Attribute Mapping
+## Processflow Creation & Attribute Mapping
 
-Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping.       
-**Note: The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection. For the demonstration of touchpoint `Invoice Add` is used**
-IMAGE
-2.	Click on the Transform button on the touchpoint which you have selected.   
-3.	Expand the transformation node for viewing the `Touchpoint Object, Complex Object collections, the Complex Object and the Attributes`.
-IMage
-4. Expanding the `For-each loop` the user gets the view of the node oInvoices. `oInvoices` is a schema
+1.	[Create a New Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for implementing Namespaces. You can view the [Process Flow Designer Page](/processflow/designer-processflow/). 
+Click on the Node Configuration Button of the Mapper node.       
+![Attributemapping Processflow1](../../staticfiles/processflow/media/mapper/attributemapping-processflow1.png)
+2. You can view the Transformation screen of the Process Flow. Expand the transformation 
+node for viewing the `Touchpoint Object, Complex Object collections, the Complex Object and the Attributes`.
+![Attributemapping Processflow2](../../staticfiles/processflow/media/mapper/attributemapping-processflow2.png)
+3. Expanding the `For-each loop` the user gets the view of the node oInvoices. `oInvoices` is a schema
   that is used to send data to the target application. The `For-Each Loop` is set relatively rather than writing the transformation logic multiple times and
-  this undergoes execution whenever the touchpoint is synced in the For-Each Loop Node.  
-Image
-5.	On expanding `oInvoices(Touchpoint Object)` the user gets the view of the several complex object collections 
-    and the attributes that are listed under it. Each attribute has separate information about the entity that 
-    it belongs to. Each of these attributes will contain different information about the customer record. 
-6.	The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting.     
-
-**Note: Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
-          For different touchpoints, the object is different. For the touchpoint Sales Order Add, the object is oOrders for Simple Product Add it is oItems and so on**
-IMage
-
-**Protip:** Document_Lines will contain the details of the Product in terms of Quantity and Unit Price etc., 
-DocumentsAdditionalExpenses contains the Freight, Tax information etc. of the product.
-{: .notice--info} 
-
-Each object in different touchpoints will have different attributes. 
-Expanding the **row** displays the destination attributes in the touchpoint level.
-All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.
-Image
-The user can create custom attributes, which is defined in project level. You can use the custom attributes only for a particular touchpoint.
-Image
-**Note:** The user can sort the order of attributes and variables in the mapping page by dragging and dropping the same 
-under its parent only if the mapping for the attribute has been done or if it is blank.
-
-Clicking on any of the attributes displays an option (three horizontal dots) to open a drop-down.   
-For the attributes which are not mapped, options available is:   
-
-a. OPEN 
-
-b. ADD IF
-  
+  this undergoes execution whenever the processflow is synced in the For-Each Loop Node.  
+![Attributemapping Processflow3](../../staticfiles/processflow/media/mapper/attributemapping-processflow3.png)
+4. You can create custom attributes, which is defined in Complex Object & Complex Object Collection level. 
+Click on the Add Attribute button available in the context menu.  
+![Attributemapping Processflow4](../../staticfiles/processflow/media/mapper/attributemapping-processflow4.png)
+5. You will be able to view the window for creating a new attribute. Following are the fields that would be available for creating the Attribute.
+* Attribute Type (Optional) - Defines the Active/inactive behaviour of the Attribute.
+* Attribute property (Optional) - Here, you can define the nature of the attribute by selecting the checkboxes. You can select multiple checkboxes at a time.
+* Attribute Name (Required) - You need to define the name of the attribute.
+* Data Type (Required) - You need to select the datatype of the attribute from the drop-down list.
+* Reference API (Optional) - This field gets activated when the datatype of the attribute is selected either as Complex Object or Complex Object Collection. Since, the mentioned datatypes are reference entity, therefore you need specify the Reference Schema from the drop-down list.
+* Tags (Optional) - You can specify special tags for the created attribute.
+* Namespace Prefix (Optional) - You can also specify Namespace Prefix for defining its unique nature.
+![Attributemapping Processflow5](../../staticfiles/processflow/media/mapper/attributemapping-processflow5.png)
+6. Provide the details and click on the SAVE button.
+![Attributemapping Processflow6](../../staticfiles/processflow/media/mapper/attributemapping-processflow6.png)
+7. You can successfully view the attribute under the complex object or Complex Object Collection that you have chosen while creating.
+![Attributemapping Processflow7](../../staticfiles/processflow/media/mapper/attributemapping-processflow7.png)
+8.	Click on the Ellipses (...) of the created Attribute you view the following options in the context menu. 
+For the attributes which are not mapped, options available is:
+a.  OPEN
+b.	Delete Attribute
+c.	Edit Attribute
+d.	Add If 
 For the attributes which are mapped, options available is:
- 
-a.	**Disable** -This option is for disabling the mapping, if not required.
+* Disable - This option is for disabling the mapping, if not required.
+* Open - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.
+* Clear - This option clears out the existing mapping.
+* Delete Attribute - Deletes the created Attribute.
+* Edit Attribute - Enables you to edit the attribute
+* Add If - If-Else conditional mapping can be implemented, if clicked on this option. 
+**Note: Pre-packaged attributes will not have the option for Delete and Edit.**
+9.	Click on the Edit Attribute button, you will get the following window.
+![Attributemapping Processflow8](../../staticfiles/processflow/media/mapper/attributemapping-processflow8.png)
+10. Edit the fields as per your requirement and click on the SAVE button.
+Following the above process, you can successfully create and edit an attribute.
 
-b.	**Open** - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.
+## Implementing Attribute Mapping
+1.	Click on the Node Configuration Button of the Mapper node.
+![Attributemapping Processflow9](../../staticfiles/processflow/media/mapper/attributemapping-processflow9.png) 
+2.	You can view the Transformation screen of the Process Flow. Expand the transformation node for viewing the Schema Object, Complex Object collections, the Complex Object and the Attributes.
+![Attributemapping Processflow10](../../staticfiles/processflow/media/mapper/attributemapping-processflow10.png) 
+3.	Expanding the For-each loop the you will get the view of the node oInvoices.
+ ![Attributemapping Processflow11](../../staticfiles/processflow/media/mapper/attributemapping-processflow11.png)
+4.	On expanding oInvoices (Schema Object) you will get the view of the several complex object collections and the attributes that are listed under it. 
+![Attributemapping Processflow12](../../staticfiles/processflow/media/mapper/attributemapping-processflow12.png) 
+**Note: Document_Lines will contain the details of the Product in terms of Quantity 
+and Unit Price etc., DocumentsAdditionalExpenses contains the Freight, Tax information etc.** of the product.
+5.	Expand the row to view the destination attributes. 
+![Attributemapping Processflow13](../../staticfiles/processflow/media/mapper/attributemapping-processflow13.png) 
+6.	Click on the Ellipses (...) button beside the attribute , you can view the following option in the context menu. 
+For the attributes which are not mapped, options available is:
+a.	 OPEN
+b.	 ADD IF
+For the attributes which are mapped, options available is:
+*	Disable -This option is for disabling the mapping, if not required.
+*	Open - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.
+*	Clear - This option clears out the existing mapping.
+*	Add If - If-Else conditional mapping can be implemented, if clicked on this option. Click here to know more
+Note: Custom Attributes create by you will have extra options in the context menu. Click Here (Attribute Creation) to know more about Custom Attributes.
+7.	Click on the Ellipses (...) button beside the attribute and select the option OPEN button from the Context menu. You will be able to view the Mapping window.
+ ![Attributemapping Processflow14](../../staticfiles/processflow/media/mapper/attributemapping-processflow14.png)
+8.	 The mapping window has multiple sections and fields. Expanding the nodes in the Source Field section displays the appresource functions and the source attributes that is required for the mapping. On expanding the Source Schema Object node (in this case invoice) displays all the source attributes.
+ ![Attributemapping Processflow15](../../staticfiles/processflow/media/mapper/attributemapping-processflow15.png)
+9.	Expanding the node FUNCTION, you can view all the functions listed under Generic Source, Destination and Cloud Appresources.
+![Attributemapping Processflow16](../../staticfiles/processflow/media/mapper/attributemapping-processflow16.png) 
+10.	Clicking on any of the functions, will display it in the mapping panel. Once the mapping is done, Click Save button for Enabling and Saving the mapping.
+**Note: The Tips field is for providing or noting down certain tips that might be required for the mapping for 
+later use similarly.Comments field is providing comments specific to this attribute mapping that might be 
+required later. The Output Encoded checkbox is for ensuring that the generated data is kept intact irrespective 
+of the XML standardisation.**
 
-c.	**Clear** - This option clears out the existing mapping.
+Following the above process, you can successfully map attributes in Process Flow Mapper Node.
 
-d.	**Add If** - If-Else conditional mapping can be implemented, if clicked on this option. [Click here](/transformation/define-logic-over-destination-mapping/) to know more
+## Implementing Attribute Sorting in Mapper Node
+1.	For any attributes that needs to be enabled for sorting, you at least need to save a blank mapping.
+2.	Attributes and variables with no mapping will neither be allowed to sort in the mapping tree, nor will it be displayed in the XSLT preview.
+3.	You can sort the order of attributes and variables in the mapping page by dragging and dropping the same under its parent only if the mapping for the attribute has been done or if it is blank.
+4.	You can view the attribute CardCode positioned below the attribute U_SC_QuoteId.
+![Attributemapping Processflow17](../../staticfiles/processflow/media/mapper/attributemapping-processflow17.png)
+5.	Here, you can view the attribute is sorted and is positioned on top.
+![Attributemapping Processflow18](../../staticfiles/processflow/media/mapper/attributemapping-processflow18.png)
+Therefore, you can successfully sort attributes by following in the above mentioned steps and conditions.
 
-Click on the **OPEN** option for implementing the attribute mapping. The User can view the Mapping window, below.
-Image
-The mapping window has multiple sections and fields. Expanding the nodes in the Source Field section displays the appresource functions 
-and the source attributes that is required for the mapping. On expanding the touchpoint object node (in this case INVOICE ADD) displays all the source attributes.
-Image
-Expanding the node `FUNCTIONS` lists all the functions present under Generic Source, Destination and Cloud appresources. 
-Image
-Clicking on any of the functions, will display it in the mapping panel. Once the mapping is done, Click SUBMIT button for Enabling and Saving the mapping. 
-**Note:** The Tips field is for providing or noting down certain tips that might be required for the mapping for 
-later use similarly. `Comments field` is providing comments specific to this attribute mapping that might be 
-required later. The `Output Encoded` checkbox is for ensuring that the generated data is kept intact 
-irrespective of the XML standardisation. 
-
-## Examples of Attribute Mapping
-
-To better explain the usage of Attribute mapping, let's take a quick look at an example of specific 
-attribute mapping against SAPB1 Card Code during Sales Order download from Magento to SAP B1.
-
-Example:
-
-Lets say for an integration (e.g. Magento-SAP B1), you want to run Sales Order Add touchpoint, 
-but there is no direct mapping in SAP B1 with the Card Code, as there is no such field in Magento. 
-So, for that purpose Customer's email which exists at both ends is considered as the primary key. 
-
-Now, to resolve the problem you can create a variable customerCardCode that can hold Customer email.
-
-Here, Mapping is done in 2 stages:
-
-![example-attributemapping1](/staticfiles/Transformation/media/example-attributemapping1.png)
-
-"GetCustomerCardCodeByEmailId" is the predefined custom function that is called to retrieve the SAP B1 CardCode value (Destination app) using Magento's API field customer_email (Source app) i.e. 
-
-![example-attributemapping2](/staticfiles/Transformation/media/example-attributemapping2.png)
-
-This above part of code suggests that when the email data result is blank then the CardCode will be displayed on the basis of customer's web id or else the card code will be shown as per the Customer's Email. 
-
-**OCRD refers to the Orders Table and U_WBCUSTID refers to the web customer id**
-
-## Steps to Attribute Mapping
-
-1. Login to [portal.appseconnect.com](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!)
-
-2. Go to connection and choose the connection you want to customize. (Here chosen is Magento to SAP B1 Connection)
-
-3. Open Touchpoint and select Transform. The mapping that is already created will open. 
-
-4. You can now see the set of mapping we defined in a particular connection with predefined logic. 
-
-5. For Mapping # 1 (as shown above), you have to declare the destination variable: **customerCardCode**
-
-6. After defining destination variable, it requires to be mapped with source API field which is then defined in the source declaration section.
-
-![example-attributemapping3](/staticfiles/Transformation/media/example-attributemapping3.png)
-
-In general, this method if already defined in the base or generic integration then they can be reused.
-
-Again if they are not defined or needs to be customized, then we can directly add them under Destination Methods as:
-
-![example-attributemapping4](/staticfiles/Transformation/media/example-attributemapping4.png)
-
-**The above process shows the way how you can define the Mapping#1.**
-
-In a similar way, one can proceed with defining the next mapping.
-
-**In Mapping # 2, CardCode is the pre-defined destination attributes, which you can directly fetch as**
-
-![example-attributemapping5](/staticfiles/Transformation/media/example-attributemapping5.png)
-
-For destination attribute, you have to define <choose><when> statement for multiple conditional states:
-
-![example-attributemapping6](/staticfiles/Transformation/media/example-attributemapping6.png)
-
-
-
-
-
- 

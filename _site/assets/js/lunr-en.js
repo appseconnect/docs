@@ -2105,8 +2105,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Namespace of Processflows",
-      excerpt: "\n",
+      title: "Steps to Define logic over Destination Mapping of Processflow",
+      excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 232
@@ -2123,11 +2123,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Steps to Define logic over Destination Mapping of Processflow",
-      excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
+      title: "Implementing Xpath in Processflow Mapping",
+      excerpt: "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 234
+    });
+    
+  
+    idx.add({
+      title: "Namespace of Processflows",
+      excerpt: "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 235
     });
     
   
@@ -2136,7 +2145,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 235
+      id: 236
     });
     
   
@@ -3359,7 +3368,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/shopify/",
+        "url": "/connectors/Shopify/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
@@ -3645,7 +3654,7 @@ var store = [
       
       {
         "title": "ZohoCRM V2.0",
-        "url": "/connectors/zohocrmv2/",
+        "url": "/connectors/Zohocrmv2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
         "teaser":
           
@@ -3953,7 +3962,7 @@ var store = [
       
       {
         "title": "Sage300",
-        "url": "/connectors/sage300/",
+        "url": "/connectors/Sage300/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
         "teaser":
           
@@ -4711,9 +4720,9 @@ var store = [
     
       
       {
-        "title": "Namespace of Processflows",
-        "url": "/processflow/namespace-mapper/",
-        "excerpt": "\n",
+        "title": "Steps to Define logic over Destination Mapping of Processflow",
+        "url": "/processflow/steps-to-define-logic-over-destination-mapping/",
+        "excerpt": "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4733,9 +4742,20 @@ var store = [
     
       
       {
-        "title": "Steps to Define logic over Destination Mapping of Processflow",
-        "url": "/processflow/steps-to-define-logic-over-destination-mapping/",
-        "excerpt": "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
+        "title": "Implementing Xpath in Processflow Mapping",
+        "url": "/processflow/xpath-in-processflow-mapping/",
+        "excerpt": "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Namespace of Processflows",
+        "url": "/processflow/namespace-mapper/",
+        "excerpt": "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

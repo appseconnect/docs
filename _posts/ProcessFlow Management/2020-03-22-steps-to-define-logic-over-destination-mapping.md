@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
     mapperprocessflow:
         title: "Steps to Define logic over Destination Mapping of Processflow"
-        weight: 4
+        weight: 3
         icon: fa fa-file-word-o
         identifier: destinationmappingprocessflow
 ---
@@ -15,8 +15,8 @@ Mapping in APPSeCONNECT is done so that a Source Application can communicate wit
 
 ## Pre-requisites for Mapping
 * Login to the APPSeCONNECT Portal with valid credentials.
-* Navigate to the [Process Flow Section](). Here You can view the [Process Flow Listing Page]().
-* [Create a New Process Flow]() or [Edit an existing Process Flow]() for defining logic over 
+* Navigate to the [Process Flow Section](/processflow/processflow-listing-page/). Here You can view the [Process Flow Listing Page]().
+* [Create a New Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for defining logic over 
 detination mapping. 
 
 ## Mapping Levels
@@ -88,8 +88,8 @@ Mapping should be done in the parent node for accessing the Enable/Disable featu
 
 **Steps to implement hierarchical rendering on mapping**
 1.	Login the APPSeCONNECT Portal.
-2.	Navigate to the touchpoints area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
-3.	Choose any touchpoint and click on the Transform button.
+2.	Navigate to the processflow area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
+3.	Click on the Mappernode and the transform section opens .
 4.  On `expanding the schema object`, all the `complex objects and the complex objects collection` are displayed.
     ![hierarchial-rendering1](/staticfiles/Transformation/media/hierarchial-rendering1.png) 
 5.	Hover the icon over the mapped complex object/complex object collection. The Disable option will appear. 

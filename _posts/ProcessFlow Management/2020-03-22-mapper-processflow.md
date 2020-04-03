@@ -60,8 +60,7 @@ For executing a sync process user needs to execute the following tasks in mapper
 * Creating & Mapping Root Variables and Root Entity Variable for fetching complex values.
 * Defining Namespaces
 * Mapping Attributes
-* Implementing If Condition in various level - Attribute Level, Complex Object Level, Complex Object Collection Level. [Existing Doc Reframing & updating.]
-* Mapping Lookups with Attributes
+* Implementing If Condition in various level - Attribute Level, Complex Object Level, Complex Object Collection Level. 
 * Enabling Tracking to trace the data corresponding to the attributes.
 
 

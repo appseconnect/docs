@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="">
+<meta name="description" content="Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements such that if two entity has the same name, declaring Namespace will provide a unique identification to the element where the namespace is declared.Declaring a namespace requires to provide a Prefix and an URI (U]niform Resource Identifiers) for identifying the work of the element declared. All the descendants with the element would be identified with the prefix provided. For more tutorials on Namespace, Visit Here.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements such that if two entity has the same name, declaring Namespace will provide a unique identification to the element where the namespace is declared.Declaring a namespace requires to provide a Prefix and an URI (U]niform Resource Identifiers) for identifying the work of the element declared. All the descendants with the element would be identified with the prefix provided. For more tutorials on Namespace, Visit Here.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-03-22T00:00:00+05:30">
+  <meta property="article:published_time" content="2020-03-25T00:00:00+05:30">
 
 
 
@@ -1394,12 +1394,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/namespace-mapper/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/namespace-mapper/" onclick="selectTab('/processflow/namespace-mapper/', event);" title="Go to Namespace of Processflows">Namespace of Processflows</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/steps-to-define-logic-over-destination-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/steps-to-define-logic-over-destination-mapping/" onclick="selectTab('/processflow/steps-to-define-logic-over-destination-mapping/', event);" title="Go to Steps to Define logic over Destination Mapping of Processflow">Steps to Define logic over Destination Mapping of Processflow</a>
         
@@ -1408,6 +1402,18 @@
     
     <li class="menu-item-" data-url="/processflow/customising-attribute-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/customising-attribute-mapping/" onclick="selectTab('/processflow/customising-attribute-mapping/', event);" title="Go to Attribute Mapping of Processflows">Attribute Mapping of Processflows</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/xpath-in-processflow-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/xpath-in-processflow-mapping/" onclick="selectTab('/processflow/xpath-in-processflow-mapping/', event);" title="Go to Implementing Xpath in Processflow Mapping">Implementing Xpath in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/namespace-mapper/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/namespace-mapper/" onclick="selectTab('/processflow/namespace-mapper/', event);" title="Go to Namespace of Processflows">Namespace of Processflows</a>
         
     </li>
     
@@ -1948,8 +1954,8 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Namespace of Processflows">
-        <meta itemprop="description" content="">
-        <meta itemprop="datePublished" content="March 22, 2020">
+        <meta itemprop="description" content="Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements such that if two entity has the same name, declaring Namespace will provide a unique identification to the element where the namespace is declared.Declaring a namespace requires to provide a Prefix and an URI (U]niform Resource Identifiers) for identifying the work of the element declared. All the descendants with the element would be identified with the prefix provided. For more tutorials on Namespace, Visit Here.">
+        <meta itemprop="datePublished" content="March 25, 2020">
         
 
 
@@ -2009,7 +2015,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-22T00:00:00+05:30">March 22, 2020</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-25T00:00:00+05:30">March 25, 2020</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2017,7 +2023,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -2028,12 +2034,54 @@
                 
                 <aside class="sidebar__right">
                     <nav class="toc">
-                        <header><h4 class="nav__title"><i class="fa fa-file-text"></i> </h4></header>
-                        
+                        <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
+                        <ul class="toc__menu">
+  <li><a href="#prerequisites-for-adding-namespace-in-portal">Prerequisites for adding Namespace in Portal</a></li>
+  <li><a href="#steps-to-define-namespace-in-mapper-node-of-process-flow">Steps to define Namespace in Mapper Node of Process Flow</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <p>Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements such that if two entity has the same name, declaring Namespace will provide a unique identification to the element where the namespace is declared.
+Declaring a namespace requires to provide a Prefix and an URI (U]niform Resource Identifiers) for identifying the work of the element declared. All the descendants with the element would be identified with the prefix provided. 
+For more tutorials on Namespace, <a href="https://www.w3schools.com/xml/xml_namespaces.asp">Visit Here</a>.</p>
+
+<h2 id="prerequisites-for-adding-namespace-in-portal">Prerequisites for adding Namespace in Portal</h2>
+
+<ul>
+  <li>You need to have valid credentials of the portal.</li>
+  <li>You need to navigate to the <a href="/processflow/processflow-listing-page/">Process Flow listing page</a> for creating or editing a Process Flow</li>
+  <li>You need to <a href="/processflow/creating-processflow/">create a Process Flow</a> or Edit an existing process flow for implementing Namespace in Mapper node.
+    <h2 id="steps-to-define-namespace-in-mapper-node-of-process-flow">Steps to define Namespace in Mapper Node of Process Flow</h2>
+  </li>
+</ul>
+
+<ol>
+  <li>Create a New Process Flow or Edit an existing Process Flow for implementing Namespaces. 
+You can view the Process Flow Designer Page. Click on the Node Configuration button for the Mapper node after link the application nodes for viewing the mapper window.
+ <img src="../../staticfiles/processflow/media/mapper/namespace1.png" alt="Namespace1" /></li>
+  <li>Expand the Transformation node to view the Namespace Button.
+ <img src="../../staticfiles/processflow/media/mapper/namespace2.png" alt="Namespace2" /></li>
+  <li>Click on the Ellipses(…) beside the Namespace button. You will be able to view the button Explore Namespaces.
+ <img src="../../staticfiles/processflow/media/mapper/namespace3.png" alt="Namespace3" /></li>
+  <li>You can view the Namespace window after clicking on the Explore Namespace button. Click on the New button. You can view the fields for entering Prefix &amp; URL appears.
+ <img src="../../staticfiles/processflow/media/mapper/namespace4.png" alt="Namespace4" /></li>
+  <li>Enter the Prefix &amp; the URL from providing a reference to namespace. On the Actions column you will be able to view button for SAVE and Delete. Click on the SAVE button.
+    <ul>
+      <li>Prefix: a name to the Namespace.</li>
+      <li>URL: A reference that provides a unique identity to the namespace.
+<img src="../../staticfiles/processflow/media/mapper/namespace5.png" alt="Namespace5" /></li>
+    </ul>
+  </li>
+  <li>Click on the Preview Button to view the XSLT file. You can view the namespace in the header region of the XSLT.
+<img src="../../staticfiles/processflow/media/mapper/namespace6.png" alt="Namespace6" /> <br />
+Note: The Preview button would be available as per your Organisation Role.</li>
+  <li>You can map attributes with namespace by providing the given syntax in the image below. Click here to know more about the mapping attributes. Click on the SAVE button after implementing the mapping.
+<img src="../../staticfiles/processflow/media/mapper/namespace7.png" alt="Namespace7" /></li>
+</ol>
+
+<p>Following the above the process, you can successfully create and define a namespace as per your requirement.</p>
+
 
                 
             </section>
@@ -2041,7 +2089,7 @@
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-22T00:00:00+05:30">March 22, 2020</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-25T00:00:00+05:30">March 25, 2020</time></div>
                 
                 
   
@@ -3958,8 +4006,18 @@
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -3968,9 +4026,9 @@
                             
                             
                             <li>
-                                <a href="/processflow/steps-to-define-logic-over-destination-mapping/" rel="permalink">
+                                <a href="/processflow/xpath-in-processflow-mapping/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Steps to Define logic over Destination Mapping of Processflow
+                                    Implementing Xpath in Processflow Mapping
                                 </a>
                             </li>
                             
@@ -3986,6 +4044,15 @@
                             </li>
                             
                             
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/steps-to-define-logic-over-destination-mapping/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Steps to Define logic over Destination Mapping of Processflow
+                                </a>
+                            </li>
                             
                             
                             
@@ -4010,15 +4077,6 @@
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/implementing-lookup-in-mapping/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Lookup in Processflow Mapping
-                                </a>
-                            </li>
                             
                             
                             
