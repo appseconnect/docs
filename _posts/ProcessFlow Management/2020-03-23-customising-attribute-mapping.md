@@ -27,13 +27,13 @@ of transformation is deployed multiple times
 **Protip:** In case of Custom Apps, Transformation or Mapping can be executed or implemented while creating processflow
 {: .notice--info}
 
-## Processflow Creation & Attribute Mapping
+## Steps to create Attribute in Processflow Mapper node
 
 1.	[Create a New Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for implementing Namespaces. You can view the [Process Flow Designer Page](/processflow/designer-processflow/). 
 Click on the Node Configuration Button of the Mapper node.       
 ![Attributemapping Processflow1](../../staticfiles/processflow/media/mapper/attributemapping-processflow1.png)
 2. You can view the Transformation screen of the Process Flow. Expand the transformation 
-node for viewing the `Touchpoint Object, Complex Object collections, the Complex Object and the Attributes`.
+node for viewing the `Schema Object, Complex Object collections, the Complex Object and the Attributes`.
 ![Attributemapping Processflow2](../../staticfiles/processflow/media/mapper/attributemapping-processflow2.png)
 3. Expanding the `For-each loop` the user gets the view of the node oInvoices. `oInvoices` is a schema
   that is used to send data to the target application. The `For-Each Loop` is set relatively rather than writing the transformation logic multiple times and
