@@ -1417,6 +1417,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/processflow/defining-variables-in-processflow-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/defining-variables-in-processflow-mapping/" onclick="selectTab('/processflow/defining-variables-in-processflow-mapping/', event);" title="Go to Defining variables in Processflow Mapping">Defining variables in Processflow Mapping</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1635,14 +1641,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/enable-tracking-fields/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/enable-tracking-fields/" onclick="selectTab('/transformation/enable-tracking-fields/', event);" title="Go to Enabling Tracking in Transformation">Enabling Tracking in Transformation</a>
+    <li class="menu-item-" data-url="/transformation/defining-variables-and-functions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/defining-variables-and-functions/" onclick="selectTab('/transformation/defining-variables-and-functions/', event);" title="Go to Defining and Mapping Variables with Functions">Defining and Mapping Variables with Functions</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-variables-and-functions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-variables-and-functions/" onclick="selectTab('/transformation/handling-variables-and-functions/', event);" title="Go to Defining and Mapping Variables with Functions">Defining and Mapping Variables with Functions</a>
+    <li class="menu-item-" data-url="/transformation/enable-tracking-fields/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/enable-tracking-fields/" onclick="selectTab('/transformation/enable-tracking-fields/', event);" title="Go to Enabling Tracking in Transformation">Enabling Tracking in Transformation</a>
         
     </li>
     
@@ -2023,7 +2029,7 @@
 
 
 
-  10 minute read
+  11 minute read
 </p>
                 
                 
@@ -2040,6 +2046,7 @@
   <li><a href="#accessing-the-environment-user-interface">Accessing the Environment User Interface</a>
     <ul>
       <li><a href="#environment-listing">Environment Listing</a></li>
+      <li><a href="#grouping-of-environments">Grouping of Environments</a></li>
       <li><a href="#adding-cloud-environment">Adding Cloud Environment</a></li>
       <li><a href="#environment-details---on-premise-agent">Environment Details - On-Premise Agent</a></li>
       <li><a href="#environment-details---cloud-agent">Environment Details - Cloud Agent</a></li>
@@ -2098,7 +2105,7 @@ b.	Grouping of environments:</p>
 <p><strong>Note: (a) Users will not be able to create a folder with same name.
         (b) Only the created folder can be deleted. The default <code class="highlighter-rouge">HOME</code> folder will not have the delete button.</strong></p>
 
-<h4 id="grouping-of-environments">Grouping of Environments</h4>
+<h3 id="grouping-of-environments">Grouping of Environments</h3>
 
 <p>APPSeCONNECT Users can add multiple groups to their environment module by clicking on the <code class="highlighter-rouge">ADD Group</code> button.</p>
 
@@ -2154,10 +2161,20 @@ scheduled and are under execution, service status etc.</li>
 
 <p><strong>Note: User can view the log files by double clicking on them.</strong></p>
 
-<p>b. <strong>Plugins</strong> - This page will only display the plugin details from OP Agent. 
+<p>b. <strong>Process Flows</strong>
+Click on the Process Flows tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.</p>
+<ul>
+  <li>Name of the Process Flow</li>
+  <li>Description of the Process Flow</li>
+  <li>Version of the Process Flow</li>
+  <li>The time of Deployment</li>
+  <li>Actions<br />
+<img src="../../../staticfiles/deployment/media/RevampedEnv/processflow_view.png" alt="Processflow View" /><br />
+c. <strong>Plugins</strong> - This page will only display the plugin details from OP Agent. 
 <img src="/staticfiles/deployment/media/RevampedEnv/Env_OP_Plugin_Image.png" alt="Env_OP_Plugin_Image" />   <br />
-c. <strong>Settings</strong> - This page is only accessible to users who have the privilege to control the settings of OP.    <br />
-<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></p>
+d. <strong>Settings</strong> - This page is only accessible to users who have the privilege to control the settings of OP.    <br />
+<img src="/staticfiles/deployment/media/RevampedEnv/Enviornment5.png" alt="Enviornment5" /></li>
+</ul>
 
 <p><strong>Settings have three available sections for managing OP Agents:</strong></p>
 
@@ -2217,6 +2234,14 @@ Detailed field description:</p>
   <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. 
 The severity level is categorized into <code class="highlighter-rouge">Medium, High &amp; Critical</code>.</li>
 </ul>
+
+<p><strong>Process Flow Tab</strong></p>
+
+<p>You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
+a.	Name of the Process Flow 
+b.	Description of the Process Flow 
+c.	Version of the Process Flow
+d.	The time of Deployment</p>
 
 <h3 id="deleting-environment">Deleting Environment</h3>
 
@@ -4248,8 +4273,18 @@ Real Time settings has two field for the configurations:</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

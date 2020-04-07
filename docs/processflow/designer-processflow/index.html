@@ -1417,6 +1417,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/processflow/defining-variables-in-processflow-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/defining-variables-in-processflow-mapping/" onclick="selectTab('/processflow/defining-variables-in-processflow-mapping/', event);" title="Go to Defining variables in Processflow Mapping">Defining variables in Processflow Mapping</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1635,14 +1641,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/enable-tracking-fields/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/enable-tracking-fields/" onclick="selectTab('/transformation/enable-tracking-fields/', event);" title="Go to Enabling Tracking in Transformation">Enabling Tracking in Transformation</a>
+    <li class="menu-item-" data-url="/transformation/defining-variables-and-functions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/defining-variables-and-functions/" onclick="selectTab('/transformation/defining-variables-and-functions/', event);" title="Go to Defining and Mapping Variables with Functions">Defining and Mapping Variables with Functions</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/transformation/handling-variables-and-functions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/transformation/handling-variables-and-functions/" onclick="selectTab('/transformation/handling-variables-and-functions/', event);" title="Go to Defining and Mapping Variables with Functions">Defining and Mapping Variables with Functions</a>
+    <li class="menu-item-" data-url="/transformation/enable-tracking-fields/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/transformation/enable-tracking-fields/" onclick="selectTab('/transformation/enable-tracking-fields/', event);" title="Go to Enabling Tracking in Transformation">Enabling Tracking in Transformation</a>
         
     </li>
     
@@ -2077,6 +2083,7 @@ Flow. The field for providing the Description to the process flow is an optional
 
 <ul>
   <li>Play button: The play button will allow you to execute the saved version of the process flow.</li>
+  <li>Tracker button: You can view the execution status and messages related to execution process in the Tracker Window.</li>
   <li>Delete button: The delete button will allow to delete the selected Nodes and link in the Process Flow. You will get a confirmation pop-up for the delete operation of the workflow.</li>
   <li>Zoom in: You can zoom in the Process Flows for better viewing purpose.</li>
   <li>Zoom out: You can zoom out the Process Flow for better user experience. Users can also resize the screen accordingly.</li>
@@ -2094,12 +2101,13 @@ Save: The save button allows you to save the following Process Flow for later us
 flow. Users can utilize any node based on the business requirement and can view the 
 following tabs and menus in the left panel of the page.</p>
 
-<p>1)	Start:  This node initiates the start of the execution of the Process Flow.
-2)	End: This node depicts the completion of the Process Flow.
-3)	Mapper: This node allows you to map the applications used in the Process flow. Click here to know more about the mapper node. (Link to mapper node document)
-4)	Apps: You can view all the Pre-packaged application selected &amp; created (Tech Apps/Custom Apps) in the Choose App section. On dragging the applications to the designer panel, the node configuration window would appear.
-5)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector. 
-6)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.
+<p>1)	Start:  This node initiates the start of the execution of the Process Flow.<br />
+2)	End: This node depicts the completion of the Process Flow.<br />
+3)	<a href="/processflow/mapper-processflow/">Mapper</a>: This node allows you to map the applications used in the Process flow.     <br />
+4)	<a href="/configuring%20appseconnect/configurations/#process-of-choosing-app">Apps</a>: You can view all the Pre-packaged application selected &amp; created. 
+On dragging the applications to the designer panel, the node configuration window would appear.    <br />
+5)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector. <br />
+6)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.<br />
 7)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.</p>
 
 <p><img src="../../staticfiles/processflow/media/create-processflow5.png" alt="Create Processflow5" /></p>
@@ -2107,13 +2115,13 @@ following tabs and menus in the left panel of the page.</p>
 <h2 id="process-flow-designer-view">Process Flow Designer View</h2>
 <p>Here you can design/create the Process Flow. Drag and drop the required nodes to the 
 designer panel for creating the process flow. Expanding the menu in the left panel, 
-you can view all the node that can applied for designing the Process Flow.</p>
+you can view all the node that can applied for designing the /configuring%20appseconnect/configurations/#process-of-choosing-app Flow.</p>
 
 <p><img src="../../staticfiles/processflow/media/create-processflow6.png" alt="Create Processflow6" /></p>
 
 <h2 id="process-flow-right-panel">Process Flow Right Panel</h2>
 <p>The right panel of the Process Flow Designer Page will have the following sections:<br />
-<img src="../../staticfiles/processflow/media/create-processflow6.png" alt="Create Processflow6" /></p>
+<img src="../../staticfiles/processflow/media/create-processflow7.PNG" alt="Create Processflow7" /></p>
 <ul>
   <li>Suggested Node: Here you will get suggestions of providing nodes that can be applied with the node dragged in the Process Flow designer panel.</li>
   <li>Real Time View: Here you would display the real-time view of the process flow.</li>
@@ -4050,6 +4058,14 @@ you can view all the node that can applied for designing the Process Flow.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4082,6 +4098,17 @@ you can view all the node that can applied for designing the Process Flow.</p>
                             
                             
                             <li>
+                                <a href="/processflow/defining-variables-in-processflow-mapping/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Defining variables in Processflow Mapping
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
                                 <a href="/processflow/customising-attribute-mapping/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     Attribute Mapping of Processflows
@@ -4100,15 +4127,6 @@ you can view all the node that can applied for designing the Process Flow.</p>
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/mapper-processflow/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Mapper of Processflows
-                                </a>
-                            </li>
                             
                             
                             

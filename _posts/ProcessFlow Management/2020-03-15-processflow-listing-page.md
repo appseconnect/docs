@@ -33,8 +33,8 @@ By default, an organisation would have the `Home & Trash` Folder.
 5. Click Delete button, the selected Process Flow is moved to the Trash folder.  
 ![processflowlisting-page3](/staticfiles/processflow/media/processflowlisting-page3.png)      
 6. The Process Flow listing page will have a NEW button on the top right corner  
-   of the page for creating a new process flow. Clicking on the NEW button, 
-   you will be navigated to the Process Flow Designer page.  
+   of the page for [creating a new process flow](/processflow/creating-processflow/). Clicking on the NEW button, 
+   you will be navigated to the [Process Flow Designer](/processflow/designer-processflow/)
 ![processflowlisting-page4](/staticfiles/processflow/media/processflowlisting-page4.png)   
 7. The FILTER button is available beside the new button. Click on the button, you can filter process flows using search functionality, from the list.    
 ![processflowlisting-page5](/staticfiles/processflow/media/processflowlisting-page5.png)   

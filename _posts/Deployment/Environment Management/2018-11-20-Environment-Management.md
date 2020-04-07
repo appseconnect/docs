@@ -44,7 +44,7 @@ b.	Grouping of environments:
 **Note: (a) Users will not be able to create a folder with same name.
         (b) Only the created folder can be deleted. The default `HOME` folder will not have the delete button.**
 
-#### Grouping of Environments      
+### Grouping of Environments      
 
 APPSeCONNECT Users can add multiple groups to their environment module by clicking on the `ADD Group` button.
 
@@ -94,9 +94,17 @@ This page will give live information about the current OP agent, including:
 
 **Note: User can view the log files by double clicking on them.** 
 
-b. **Plugins** - This page will only display the plugin details from OP Agent. 
+b. **Process Flows**
+Click on the Process Flows tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
+* Name of the Process Flow 
+* Description of the Process Flow 
+* Version of the Process Flow
+* The time of Deployment
+* Actions  
+![Processflow View](../../../staticfiles/deployment/media/RevampedEnv/processflow_view.png)  
+c. **Plugins** - This page will only display the plugin details from OP Agent. 
 ![Env_OP_Plugin_Image](/staticfiles/deployment/media/RevampedEnv/Env_OP_Plugin_Image.png)     
-c. **Settings** - This page is only accessible to users who have the privilege to control the settings of OP.      
+d. **Settings** - This page is only accessible to users who have the privilege to control the settings of OP.      
 ![Enviornment5](/staticfiles/deployment/media/RevampedEnv/Enviornment5.png)    
 
 **Settings have three available sections for managing OP Agents:**
@@ -151,6 +159,15 @@ Detailed field description:
 * Set target for: Users can filter the failed sync based on Error, Info and Status.
 * Severity Level: Users can filter the error logs based on the severity level of the errors generated. 
   The severity level is categorized into `Medium, High & Critical`. 
+
+**Process Flow Tab**
+ 
+You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
+a.	Name of the Process Flow 
+b.	Description of the Process Flow 
+c.	Version of the Process Flow
+d.	The time of Deployment
+
 
 ### Deleting Environment
 

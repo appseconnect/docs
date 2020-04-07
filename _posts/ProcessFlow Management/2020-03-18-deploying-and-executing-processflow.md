@@ -103,9 +103,9 @@ Once deployed, click on the Execute button in the Process Flow Designer page of 
 
 Following the above steps, you can successfully Deploy and Execute a Process Flow.
 
-## Deploying Process Flows to Environment
+### Deploying Process Flows to Environment
 
-1.	Navigate to the Environment section in the portal& click on the active environment. The details page of the active environmen  t opens
+1.	Navigate to the [Environment section](/deployment/Environment-Management/) in the portal& click on the active environment. The details page of the active environmen  t opens
 ![Deploy Processflow Env](../../staticfiles/processflow/media/deploy-processflow-env.png)  
 2.	Click on the Flows tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment.The following are the details that will displayed for deployed Process Flows.  
 a.	Name of the Process Flow
@@ -116,7 +116,7 @@ e.	Actions
 
 ![Deploy Processflow Env2](../../staticfiles/processflow/media/deploy-processflow-env2.png) 
 
-## Undeploy Process Flow from Environment
+### Undeploy Process Flow from Environment
 
 The deployed process flow (both executed/non-executed) can be undeployed from the environment
 listing page. 

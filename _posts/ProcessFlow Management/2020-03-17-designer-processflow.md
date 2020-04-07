@@ -40,6 +40,7 @@ Flow. The field for providing the Description to the process flow is an optional
 Details of the list of executable buttons are given below:
 
 * Play button: The play button will allow you to execute the saved version of the process flow. 
+* Tracker button: You can view the execution status and messages related to execution process in the Tracker Window.
 * Delete button: The delete button will allow to delete the selected Nodes and link in the Process Flow. You will get a confirmation pop-up for the delete operation of the workflow. 
 * Zoom in: You can zoom in the Process Flows for better viewing purpose.
 * Zoom out: You can zoom out the Process Flow for better user experience. Users can also resize the screen accordingly. 
@@ -54,27 +55,28 @@ You can view the Back to Process Flow button that will navigate you to the listi
 Here the users can add Process Flows nodes to the Process Flow designer panel. The nodes
  can be dragged and dropped in the design panel for configuring & designing the Process 
 flow. Users can utilize any node based on the business requirement and can view the 
-following tabs and menus in the left panel of the page.
+following tabs and menus in the left panel of the page.    
 
-1)	Start:  This node initiates the start of the execution of the Process Flow.
-2)	End: This node depicts the completion of the Process Flow.
-3)	Mapper: This node allows you to map the applications used in the Process flow. Click here to know more about the mapper node. (Link to mapper node document)
-4)	Apps: You can view all the Pre-packaged application selected & created (Tech Apps/Custom Apps) in the Choose App section. On dragging the applications to the designer panel, the node configuration window would appear.
-5)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector. 
-6)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.
-7)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.
+1)	Start:  This node initiates the start of the execution of the Process Flow.  
+2)	End: This node depicts the completion of the Process Flow.  
+3)	[Mapper](/processflow/mapper-processflow/): This node allows you to map the applications used in the Process flow.       
+4)	[Apps](/configuring%20appseconnect/configurations/#process-of-choosing-app): You can view all the Pre-packaged application selected & created. 
+On dragging the applications to the designer panel, the node configuration window would appear.      
+5)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector.   
+6)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.  
+7)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.  
 
 ![Create Processflow5](../../staticfiles/processflow/media/create-processflow5.png)
 
 ## Process Flow Designer View 
 Here you can design/create the Process Flow. Drag and drop the required nodes to the 
 designer panel for creating the process flow. Expanding the menu in the left panel, 
-you can view all the node that can applied for designing the Process Flow.
+you can view all the node that can applied for designing the /configuring%20appseconnect/configurations/#process-of-choosing-app Flow.
 
-![Create Processflow6](../../staticfiles/processflow/media/create-processflow6.png)
+![Create Processflow6](../../staticfiles/processflow/media/create-processflow6.png)  
 
 ## Process Flow Right Panel
 The right panel of the Process Flow Designer Page will have the following sections:  
-![Create Processflow6](../../staticfiles/processflow/media/create-processflow6.png)  
+![Create Processflow7](../../staticfiles/processflow/media/create-processflow7.PNG)  
 * Suggested Node: Here you will get suggestions of providing nodes that can be applied with the node dragged in the Process Flow designer panel.
 * Real Time View: Here you would display the real-time view of the process flow.

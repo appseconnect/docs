@@ -29,7 +29,7 @@ changes pertaining to redeloying a process flow.
 ### Prerequisites to deploy Process Flows
 
 1.	Should have valid credentials for logging in to the APPSeCONNECT portal.
-2.  A [deployed process]() flow should be available to make the changes for redeploying.
+2.  A [deployed process](/processflow/deploying-and-executing-processflow/) flow should be available to make the changes for redeploying.
 
 ### Steps to redeploy Process Flows to Environment
 1.	Login to the portal and navigate to the Process Flow module available on the left menu.  
@@ -41,7 +41,7 @@ changes pertaining to redeloying a process flow.
     and the remaining part is in disabled Mode. This means if your selected environment is 
    `On-Premise` then Hosted will be in diabled mode and vice-versa. Make sure to check the
     envirnonment is in conneced state.    
-[IMAGE ]  
+![Redeploy Processflow](../../staticfiles/processflow/media/redeploy-processflow.png) 
 **NOTE: If the environment is in disconnected state, you will get an error message -
 `Environment is not connected` and thus you cannot proceed with further deployment steps**    
 6. Click NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.

@@ -1403,8 +1403,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Enabling Tracking data in Transformation",
-      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
+      title: "Defining and Mapping Variables with Functions",
+      excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 154
@@ -1412,8 +1412,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Defining and Mapping Variables with Functions",
-      excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
+      title: "Enabling Tracking data in Transformation",
+      excerpt: "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
       categories: ["Transformation"],
       tags: ["developers"],
       id: 155
@@ -2123,11 +2123,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Defining variables in Processflow Mapping",
+      excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 234
+    });
+    
+  
+    idx.add({
       title: "Implementing Xpath in Processflow Mapping",
       excerpt: "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 234
+      id: 235
     });
     
   
@@ -2136,7 +2145,7 @@ var idx = lunr(function () {
       excerpt: "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 235
+      id: 236
     });
     
   
@@ -2145,7 +2154,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 236
+      id: 237
     });
     
   
@@ -3862,9 +3871,9 @@ var store = [
     
       
       {
-        "title": "Enabling Tracking data in Transformation",
-        "url": "/transformation/enable-tracking-fields/",
-        "excerpt": "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
+        "title": "Defining and Mapping Variables with Functions",
+        "url": "/transformation/defining-variables-and-functions/",
+        "excerpt": "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3873,9 +3882,9 @@ var store = [
     
       
       {
-        "title": "Defining and Mapping Variables with Functions",
-        "url": "/transformation/handling-variables-and-functions/",
-        "excerpt": "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
+        "title": "Enabling Tracking data in Transformation",
+        "url": "/transformation/enable-tracking-fields/",
+        "excerpt": "Use Case Name Enabling Tracking in transformation. Brief Description Tracking is a feature in APPSeCONNECT which lets the user view...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4734,6 +4743,17 @@ var store = [
         "title": "Attribute Mapping of Processflows",
         "url": "/processflow/customising-attribute-mapping/",
         "excerpt": "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Defining variables in Processflow Mapping",
+        "url": "/processflow/defining-variables-in-processflow-mapping/",
+        "excerpt": "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

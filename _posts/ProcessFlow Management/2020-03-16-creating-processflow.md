@@ -26,7 +26,7 @@ c.	Click on the new button for creating a new process flow.
 **Note: If the Folder is empty, you can view the button Create a Process Flow, that navigates 
 you to the Process Flow Designer Page.**    
 d.	You will be navigated to the [Process Flow Designer Page](/processflow/designer-processflow/).     
-![Create Basicprocessflow3](../../staticfiles/processflow/media/create-basicprocessflow3.png)    
+![Create Processflow3](../../staticfiles/processflow/media/create-processflow3.png)
 e.	Provide a Name and Description for the process flow in the process flow header panel.        
 ![Create Basicprocessflow4](../../staticfiles/processflow/media/create-basicprocessflow4.png)     
 f.	Drag the Start node that signifies the start process of the process flow.    
