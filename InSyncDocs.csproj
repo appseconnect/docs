@@ -1032,7 +1032,6 @@
     <Content Include="_layouts\compress.html" />
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\home.html" />
-    <Content Include="_layouts\index.html" />
     <Content Include="_layouts\inner.html" />
     <Content Include="_layouts\page.html" />
     <Content Include="_layouts\search.html" />
