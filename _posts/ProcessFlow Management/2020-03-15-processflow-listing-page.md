@@ -49,7 +49,7 @@ Home folder for the Process Flow listing page.
 in the drop down that would enable the user to create a child folder of the selected folder.
 ![Processflow Home2](../../staticfiles/processflow/media/processflow-home2.png)
 2. You can create multiple child folders under the Home Folder. Users can create maximum
-of 50 foldersfor process flow for an organization.
+of 50 folders for process flow for an organization.
 3. Click on the Home folder, the process flow listing page appears on the 
 Right side of  the page. Empty folder will have the view as given below.
 ![Processflow Home3](../../staticfiles/processflow/media/processflow-home3.png)
@@ -58,7 +58,7 @@ Right side of  the page. Empty folder will have the view as given below.
 ## Usability for the SUB/CHILD Folder
 
 * Every folder (except Trash) will have three horizontal dots (...) that will enable the you to create new child folders.
-* Every created folder will have the option create a New Child Folder, Rename & delete. 
+* Every created folder will have the option - `create a New Child Folder, Rename & delete`. 
 * Name of a folder cannot be same if created on same level. However, folder name can remain same if created on different level.
 
 ### Steps to create Child Folders in the listing page

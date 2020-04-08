@@ -2150,11 +2150,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Advance Mapping through Custom Renderer",
+      excerpt: "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 237
+    });
+    
+  
+    idx.add({
       title: "Lightspeed",
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 237
+      id: 238
     });
     
   
@@ -4776,6 +4785,17 @@ var store = [
         "title": "Namespace of Processflows",
         "url": "/processflow/namespace-mapper/",
         "excerpt": "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Advance Mapping through Custom Renderer",
+        "url": "/processflow/advance-mapping-render-processflow/",
+        "excerpt": "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

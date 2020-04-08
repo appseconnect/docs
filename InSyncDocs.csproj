@@ -339,6 +339,13 @@
     <Content Include="staticfiles\connectors\media\technology-connector\ChooseFiles_AddAdapter1.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\databaseschema-GetAction-OLEDB.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\DatabaseSchema-GetOperation-OLEDB.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud1.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud2.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud3.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud4.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud5.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud6.png" />
+    <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest-Cloud7.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest1.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest2.png" />
     <Content Include="staticfiles\connectors\media\technology-connector\OAuth1-Rest3.png" />
@@ -616,6 +623,11 @@
     <Content Include="staticfiles\processflow\media\mapper\namespace5.png" />
     <Content Include="staticfiles\processflow\media\mapper\namespace6.png" />
     <Content Include="staticfiles\processflow\media\mapper\namespace7.png" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_renderer1.png" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_renderer2.png" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_renderer3.png" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_renderer4.png" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_renderer5.png" />
     <Content Include="staticfiles\processflow\media\mapper\xpath-mapping-processflow1.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\xpath-mapping-processflow2.PNG" />
     <Content Include="staticfiles\processflow\media\process-createchild-folder1.png" />
@@ -1164,6 +1176,7 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\SAPB1-WooCommerce.md" />
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-24-defining-variables-in-processflow-mapping .md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-26-advance-mapping-render-processflow.md" />
     <None Include="_posts\ProcessFlow Management\enable-tracking-fields.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-creating-processflow.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-17-designer-processflow.md" />

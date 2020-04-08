@@ -19,11 +19,13 @@ This section enables the user to implement business scenarios by designing Proce
 * You will be redirected to Process Flow designer page where the you can design the business specific process flows.
 ![Create Processflow3](../../staticfiles/processflow/media/create-processflow3.png)
 
-* The page is divided into 4 sections that are static for every Process flow designing page. The following sections are:  
-** Process Flow Header panel  
-** Process Flow Left panel  
-** Process Flow Designer View  
-** Process Flow Right Panel  
+The page is divided into 4 sections that are static for every Process flow designing page. 
+The following sections are:  
+
+**Process Flow Header panel**  
+**Process Flow Left panel**  
+**Process Flow Designer View**  
+**Process Flow Right Panel**  
 
 ## Process Flow Header Panel
 
@@ -71,7 +73,7 @@ On dragging the applications to the designer panel, the node configuration windo
 ## Process Flow Designer View 
 Here you can design/create the Process Flow. Drag and drop the required nodes to the 
 designer panel for creating the process flow. Expanding the menu in the left panel, 
-you can view all the node that can applied for designing the /configuring%20appseconnect/configurations/#process-of-choosing-app Flow.
+you can view all the node that can applied for designing the process flow.
 
 ![Create Processflow6](../../staticfiles/processflow/media/create-processflow6.png)  
 

@@ -51,7 +51,7 @@ incase of new credentials added to the application will be visible in the drop d
 ![Redeploy3](../../staticfiles/processflow/media/redeploy3.png)
 8. Click `Refresh Connection` button. You will get the latest credentials or updates to credentials made in the OP Agent. 
 Now Click on the NEXT button.
-9. The screen navigates to the lookup section of the Wizard, where you can view the existing lookups implememted
+9. The screen navigates to the lookup section of the Wizard, where you can view the existing lookups implemented
  while mapping the attributes. During the redeployment of Process Flow, latest fixes will 
  be displayed with selected Reference Table with a green tick.
 ![Redeploy4](../../staticfiles/processflow/media/redeploy4.png)  
@@ -62,7 +62,7 @@ Now Click on the NEXT button.
   then during Redeployment process, the deleted lookup mapping will show as an unresolved 
   warning which the user may fix if desired.
 ![Redeploy5](../../staticfiles/processflow/media/redeploy5.png)  
-10. Click Next, The screen navigates to the [Sync & retry]()  section of the deploy wizard. You can choose or change the configuration from 
+10. Click Next, The screen navigates to the Sync & retry section of the deploy wizard. You can choose or change the configuration from 
 Manual/Auto for re-deploying the Process Flow.  
 ![Redeploy6](../../staticfiles/processflow/media/redeploy6.png)    
 11. After configuring the sync and retry section, click Finish button. 

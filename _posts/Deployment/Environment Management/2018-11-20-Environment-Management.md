@@ -10,7 +10,6 @@ menus:
         weight: 7
         
 ---
-
 ## Pre-requisites
 
 * It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and older Agents can still communicate with server, we still ask users to upgrade to get full flavour of new features. 

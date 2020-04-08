@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, corresponding to its field.Having independent repositories for lookups will help the users to create Lookup collections and manage them in separate tables as per their need. Each Repository Collection created will multiple have Reference Tables that will enable the users to store and manage the collection of Lookup References">
+<meta name="description" content="Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, correspondingto its field.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, corresponding to its field.Having independent repositories for lookups will help the users to create Lookup collections and manage them in separate tables as per their need. Each Repository Collection created will multiple have Reference Tables that will enable the users to store and manage the collection of Lookup References">
+  <meta property="og:description" content="Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, correspondingto its field.">
 
 
 
@@ -1423,6 +1423,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/processflow/advance-mapping-render-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/advance-mapping-render-processflow/" onclick="selectTab('/processflow/advance-mapping-render-processflow/', event);" title="Go to Advance Mapping through Custom Renderer">Advance Mapping through Custom Renderer</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -1960,7 +1966,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Creating Lookup Repository Masterdata">
-        <meta itemprop="description" content="Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, corresponding to its field.Having independent repositories for lookups will help the users to create Lookup collections and manage them in separate tables as per their need. Each Repository Collection created will multiple have Reference Tables that will enable the users to store and manage the collection of Lookup References">
+        <meta itemprop="description" content="Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, correspondingto its field.">
         <meta itemprop="datePublished" content="March 21, 2020">
         
 
@@ -2050,8 +2056,16 @@
                     </nav>
                 </aside>
                 
-                <p>Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups  enable the user to provide specific values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination application, corresponding to its field.
-Having independent repositories for lookups will help the users to create Lookup collections and manage them in separate tables as per their need. Each Repository Collection created will multiple have Reference Tables that will enable the users to store and manage the collection of Lookup References</p>
+                <p>Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables 
+for the organisation. Lookups  enable the user to provide specific values to the application 
+integration, such that when the source and destination application is integrated, the value in 
+source application can easily be integrated with its value in destination application, corresponding
+to its field.</p>
+
+<p>Having independent repositories for lookups will help the users to create Lookup collections 
+and manage them in separate tables as per their need. Each Repository Collection created will 
+multiple have Reference Tables that will enable the users to store and manage the collection 
+of Lookup References.</p>
 
 <h2 id="prerequisites-for-creation-of-lookup-repository-collections">Prerequisites for Creation of Lookup Repository Collections</h2>
 
@@ -2070,7 +2084,7 @@ Having independent repositories for lookups will help the users to create Lookup
 <img src="../../staticfiles/processflow/media/create-lookrepo3.png" alt="Create Lookrepo3" /></li>
   <li>Click SAVE button and you can now view the Repository Page. The created Repository Collection will be present in the tree.<br />
 <img src="../../staticfiles/processflow/media/create-lookrepo4.png" alt="Create Lookrepo4" /></li>
-  <li>You can create another Repository Collection by clicking the <code class="highlighter-rouge">New Repository</code> button.<br />
+  <li>You can create another Repository Collection by clicking the <code class="highlighter-rouge">New Collection</code> button.<br />
 <img src="../../staticfiles/processflow/media/create-lookrepo5.png" alt="Create Lookrepo5" /></li>
   <li>You will get the same view of the window as given in the previous steps.  <br />
 <img src="../../staticfiles/processflow/media/create-lookrepo6.png" alt="Create Lookrepo6" /></li>
@@ -2098,8 +2112,12 @@ Following the above process, you can successfully create a multiple Repository C
   <li>On clicking over the Ellipsis icon (…) beside every Repository Collection, user gets the 
 following option.<br />
 a.	Edit: You can Rename the collection by clicking Edit Button.<br />
-b.	Delete:You can delete the whole Repository Collection including the Tables inside it, by clicking on delete button.<br />
-c.	New Table: You can create a new table under the selected Repository Collection by clicking on new table.<br />
+b.	Delete:You can delete the whole Repository Collection including the Tables inside it, by clicking on delete button. <br />
+c.	<a href="/processflow/export-and-import-lookup/#steps-to-import-lookups-from-repository-collection">Import</a>: You can import an excel file for creating reference tables from your local system.<br />
+d.	<a href="/processflow/export-and-import-lookup/#steps-to-export-lookups-from-repository-collection">Export</a>: You can export the created lookups to your local system.  <br />
+e.	New Table: You can create a new table under the selected Repository Collection by clicking on new table.<br />
+f.  Clear All: You can clear all the data of the Repository Collection by clicking on this option. You will get a warning ,essage,
+click <code class="highlighter-rouge">Yes</code> to proceed, else click <code class="highlighter-rouge">No</code> to cancel.  <br />
 <img src="../../staticfiles/processflow/media/reference-table2.png" alt="Reference Table2" /></li>
   <li>Click <code class="highlighter-rouge">New Table</code> button and you will get the window for naming the table.
 <img src="../../staticfiles/processflow/media/reference-table3.png" alt="Reference Table3" /></li>
@@ -2113,7 +2131,9 @@ c.	New Table: You can create a new table under the selected Repository Collectio
 a.	Source: Need to provide the source value. <br />
 b.	Destination: Need to provide the destination value.<br />
 c.	Comments: You can provide short descriptions for identifying the lookups workaround.    <br />
-<img src="../../staticfiles/processflow/media/reference-table7.png" alt="Reference Table7" /></li>
+<img src="../../staticfiles/processflow/media/reference-table7.png" alt="Reference Table7" /><br />
+<strong>The Source and the Destination is a mandatory field for saving the lookup.</strong>
+<strong>Maximum length for entering the Values in Source &amp; Destination field is of 100 Characters</strong></li>
   <li>Click Save and you can view the lookup created under the selected Reference Table. 
 The Reference Table page of the selected table will list all the lookups created in the form of Table Rows.
 The page will display these columns.<br />
@@ -2126,15 +2146,22 @@ c.	Comments  <br />
   <li>You will get a Delete option, when clicked on the Ellipsis icon (…) beside each table rows.<br />
 <img src="../../staticfiles/processflow/media/reference-table10.png" alt="Reference Table10" /></li>
   <li>User can create multiple lookup rows by clicking on the Add New button available on the top right of the page.
-Although User cannot create multiple Lookup Table Rows with same Source values under a single Reference Table.**
-<img src="../../staticfiles/processflow/media/reference-table11.png" alt="Reference Table11" /></li>
-  <li>You can filter rows by implementing search. The search function will filter options available with the selected Reference Table.
+Although User cannot create multiple Lookup Table Rows with same Source values under a single Reference Table.
+<img src="../../staticfiles/processflow/media/reference-table11.png" alt="Reference Table11" />  <br />
+<strong>Note: User cannot create multiple Lookup Table Rows with same Source values under a 
+single Reference Table.</strong></li>
+  <li>You can filter rows by implementing search. The search function 
+will filter options available with the selected Reference Table.<br />
 <img src="../../staticfiles/processflow/media/reference-table12.png" alt="Reference Table12" /></li>
-  <li>You can perform multiple action in the Repository Collection level. Click on the Ellipsis icon (…) user can view the following options.
-a.	Edit: Enables you to rename the Repository Collection
-b.	Delete: Deletes the Repository collection including all the created tables inside it.
-c.	New Table: Enables you to create a new table inside the selected collection. The process for creation remains same as given in the previous steps.
-d.	Clear All: Clears all the Reference Tables present inside the Repository Collection.<br />
+  <li>You can perform multiple action in the Repository Collection level. 
+Click on the Ellipsis icon (…) user can view the following options.<br />
+a.	Edit: Enables you to rename the Repository Collection<br />
+b.	Delete: Deletes the Repository collection including all the created tables inside it. 
+c.	<a href="/processflow/export-and-import-lookup/#steps-to-import-lookups-from-repository-collection">Import</a>: You can import an excel file for creating reference tables from your local system. 
+d.	<a href="/processflow/export-and-import-lookup/#steps-to-export-lookups-from-repository-collection">Export</a>: You can export the created lookups to your local system. <br />
+e.	New Table: Enables you to create a new table inside the selected collection. 
+The process for creation remains same as given in the previous steps.<br />
+d.	Clear All: Clears all the Reference Tables present inside the Repository Collection.  <br />
 <img src="../../staticfiles/processflow/media/reference-table13.png" alt="Reference Table13" /></li>
 </ol>
 
@@ -4083,10 +4110,29 @@ d.	Clear All: Clears all the Reference Tables present inside the Repository Coll
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/advance-mapping-render-processflow/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Advance Mapping through Custom Renderer
+                                </a>
+                            </li>
                             
                             
                             
@@ -4133,15 +4179,6 @@ d.	Clear All: Clears all the Reference Tables present inside the Repository Coll
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/steps-to-define-logic-over-destination-mapping/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Steps to Define logic over Destination Mapping of Processflow
-                                </a>
-                            </li>
                             
                             
                             
