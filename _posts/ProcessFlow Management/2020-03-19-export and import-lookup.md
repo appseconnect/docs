@@ -76,12 +76,12 @@ Following the above steps, users can successfully export Reference Tables from R
 ![Export Importlookup6](../../staticfiles/processflow/media/export-importlookup6.png)  
 6.	On clicking the Yes button, the records get uploaded in the selected Repository Collection. On expanding the selected node, you can view the uploaded records.
  ![Export Importlookup7](../../staticfiles/processflow/media/export-importlookup7.png)  
-**The column Type is the name of the Reference Table in portal.Importing a file
- from a Reference Table will upload all the records only for the selected table. 
- Users need to click the Ellipsis button for the selected table, for viewing the 
- Import button. The steps for Importing remains the same as provided above.
- Duplicate records will not be imported from the file if already exists for
- Repository Collection or Reference Tables.** 
+**(a)The column Type is the name of the Reference Table in portal.
+  (b) Importing a file from a Reference Table will upload all the records only for the selected table. 
+  Users need to click the Ellipsis button for the selected table, for viewing the 
+  Import button. The steps for Importing remains the same as provided above.
+  (c) Duplicate records will not be imported from the file if already exists for
+   Repository Collection or Reference Tables.** 
 
 Following the above steps, you can successfully Import a Lookup Record for a Repository Collection.
  

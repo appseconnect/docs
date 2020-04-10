@@ -15,20 +15,20 @@ Once the Collection and the Reference tables are created, users can implement th
 
 ## Prerequisites for mapping Lookups
 * You need to have valid credentials for login into the portal.
-* You need to have the Reference tables and Collection created.
+* You need to have the [Reference tables and Collection](/processflow/Lookup-repository-masterdata/) created.
 * You need to have the process flow created along with the mapper node.
 
 ## Steps to implement lookup in attribute mapping
-1.	Login to the portal and navigate to the process flow section. The process flow listing page opens. Click here to know more about the Process flow listing page. (Link to the listing page).
+1.	Login to the portal and navigate to the process flow section. The process flow [listing page](/processflow/creating-processflow/) opens. 
 ![Lookup Mapping1](../../staticfiles/processflow/media/lookup-mapping1.png)   
-2.	Create a process flow or edit a created process flow. The Process Flow Designer page opens.    
+2.	[Create a process flow](/processflow/creating-processflow/) or edit a created process flow in the Process Flow [Designer page](/processflow/designer-processflow/) opens.    
 ![Lookup Mapping2](../../staticfiles/processflow/media/lookup-mapping2.png)    
 3.	Click on the Configuration node button of the mapper node.  
 ![Lookup Mapping3](../../staticfiles/processflow/media/lookup-mapping3.png)   
 4.	You can view the mapper page after clicking on the mapper configuration button.    
 ![Lookup Mapping4](../../staticfiles/processflow/media/lookup-mapping4.png)   
 5.	Expand the transformation nodes and click on the ellipses button (...) of the attribute where you want to implement the mapping. 
-view here for [structure of mapping]().   
+view here for [structure of mapping](/transformation/getting-started-with-mapping/#structure-of-mapping).   
 ![Lookup Mapping New](../../staticfiles/processflow/media/lookup-mapping-new.png)  
 6.	Open the selected attribute and hardcode the syntax for mapping the lookup. You can map the 
 lookup using two syntax formats. The syntax is given below for your reference.    
@@ -41,7 +41,7 @@ For ex: if your reference table name is Country & attribute name country_id ther
 ![Lookup Mapping5](../../staticfiles/processflow/media/lookup-mapping5.png)   
     
 **Note: You will get the function by expanding the function node available at the left-hand side 
-of the mapping page. Expand Function > Ge![Lookup Mapping5](../../staticfiles/processflow/media/lookup-mapping5.png)neric Function & click over the getMapping function.**
+of the mapping page. Expand Function > Generic Function & click over the getMapping function.** 
 
 **Syntax 2: Using lookup syntax**   
 
