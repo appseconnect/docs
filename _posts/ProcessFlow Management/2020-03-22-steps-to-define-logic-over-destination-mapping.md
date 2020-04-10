@@ -15,7 +15,7 @@ Mapping in APPSeCONNECT is done so that a Source Application can communicate wit
 
 ## Pre-requisites for Mapping
 * Login to the APPSeCONNECT Portal with valid credentials.
-* Navigate to the [Process Flow Section](/processflow/processflow-listing-page/). Here You can view the [Process Flow Listing Page]().
+* Navigate to the [Process Flow Section](/processflow/overview-of-processflow/). Here You can view the [Process Flow Listing Page](/processflow/processflow-listing-page/).
 * [Create a New Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for defining logic over 
 detination mapping. 
 
@@ -25,7 +25,7 @@ Mapping is done at various level of Input Packet.
 
 ### Mapping at Attribute Level
 
-Go to the process flow [designer page]() and open the process flow
+Go to the process flow [designer page](/processflow/designer-processflow/) and open the process flow
 ![Logicover Destinationmapping1](../../staticfiles/processflow/media/mapper/logicover-destinationmapping1.PNG)
 Click on the mapper node to define mapping at various level.The mapper node expands and the following screen appears as shown below
 ![Logicover Destinationmapping2](../../staticfiles/processflow/media/mapper/logicover-destinationmapping2.PNG)
@@ -88,10 +88,10 @@ Mapping should be done in the parent node for accessing the Enable/Disable featu
 
 **Steps to implement hierarchical rendering on mapping**
 1.	Login the APPSeCONNECT Portal.
-2.	Navigate to the processflow area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
+2.	Navigate to the processflow area to create or edit an existing process flow.
 3.	Click on the Mappernode and the transform section opens .
 4.  On `expanding the schema object`, all the `complex objects and the complex objects collection` are displayed.
-    ![hierarchial-rendering1](/staticfiles/Transformation/media/hierarchial-rendering1.png) 
+   ![Hierarchial Rendering Processflow](../../staticfiles/processflow/media/mapper/hierarchial-rendering-processflow.PNG)
 5.	Hover the icon over the mapped complex object/complex object collection. The Disable option will appear. 
     ![hierarchial-rendering2](/staticfiles/Transformation/media/hierarchial-rendering2.png)    
 8.	Click the Disable option, the complex object/complex object collection and its child, sub-child, 

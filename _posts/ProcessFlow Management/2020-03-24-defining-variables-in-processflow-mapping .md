@@ -42,23 +42,22 @@ For Mapping the variable, click on the Open button, which is visible beside the 
 Select the function from the `Functions List`  and click on the function as required (Taken [genericlib:getMapping(ObjectType,Value)] as an example)    
 **Note: The mapping can be executed with the functions as well as, with the source attributes. Implementing mapping only with the functions is not mandatory.**
 
-![addvariable_new](/staticfiles/Transformation/media/addvariable_new.png)   
+![Addvariable New](../../staticfiles/processflow/media/mapper/addvariable_new.png)
 Now for implementing the mapping, input the required ObjectType and Value in the Function syntax. Click on the Submit Button, on completion of mapping.  
-![addvariable_new2](/staticfiles/Transformation/media/addvariable_new2.png)   
+![Addvariable New1](../../staticfiles/processflow/media/mapper/addvariable_new1.png)
 
 The user can view the successful sync of the processflow for which the Variables was created
-
 
 ## Delete variable
 The user can delete the Variables whenever required, any-time after its creation by clicking on `delete variable`.
 button. Hardcorded variables cant be deleted.  
-![delete-variable](../../../../staticfiles/Transformation/media/delete-variable.png)
+![Delete Variable](../../staticfiles/Transformation/media/delete-variable.png)
 
 ## Edit Varibale
 
 The user can edit the variables defined any-time after its creation by clicking on `edit variable` button.
 Hardcorded variables cant be edited.  
-![edit-variable](../../../../_site/staticfiles/Transformation/media/edit-variable.png)
+![Edit Variable](../../staticfiles/Transformation/media/edit-variable.png)
 
 
 

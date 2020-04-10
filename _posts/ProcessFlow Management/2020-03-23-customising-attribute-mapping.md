@@ -104,6 +104,7 @@ Note: Custom Attributes create by you will have extra options in the context men
 9.	Expanding the node FUNCTION, you can view all the functions listed under Generic Source, Destination and Cloud Appresources.
 ![Attributemapping Processflow16](../../staticfiles/processflow/media/mapper/attributemapping-processflow16.png) 
 10.	Clicking on any of the functions, will display it in the mapping panel. Once the mapping is done, Click Save button for Enabling and Saving the mapping.
+
 **Note: The Tips field is for providing or noting down certain tips that might be required for the mapping for 
 later use similarly.Comments field is providing comments specific to this attribute mapping that might be 
 required later. The Output Encoded checkbox is for ensuring that the generated data is kept intact irrespective 

@@ -34,7 +34,7 @@ The format for the lookups is given below with an example:
 * Source: The Source value of the lookup type needs to be provided.
 * Destination: The destination value of the lookup type needs to be provided.
 
-Users can Import & Export lookups both from the [Repository Collection & Reference Table]()
+Users can Import & Export lookups both from the [Repository Collection & Reference Table](/processflow/Lookup-repository-masterdata/)
 
 ## Prerequisites for Importing and Exporting the Lookups
 * Should have an organisation created with APPSeCONNECT.

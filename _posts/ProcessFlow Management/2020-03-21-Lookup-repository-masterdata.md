@@ -104,10 +104,10 @@ will filter options available with the selected Reference Table.
 13.	You can perform multiple action in the Repository Collection level. 
 Click on the Ellipsis icon (...) user can view the following options.  
 a.	Edit: Enables you to rename the Repository Collection  
-b.	Delete: Deletes the Repository collection including all the created tables inside it. 
-c.	[Import](/processflow/export-and-import-lookup/#steps-to-import-lookups-from-repository-collection): You can import an excel file for creating reference tables from your local system. 
-d.	[Export](/processflow/export-and-import-lookup/#steps-to-export-lookups-from-repository-collection): You can export the created lookups to your local system.   
-e.	New Table: Enables you to create a new table inside the selected collection. 
+b.	Delete: Deletes the Repository collection including all the created tables inside it.     
+c.	[Import](/processflow/export-and-import-lookup/#steps-to-import-lookups-from-repository-collection): You can import an excel file for creating reference tables from your local system.     
+d.	[Export](/processflow/export-and-import-lookup/#steps-to-export-lookups-from-repository-collection): You can export the created lookups to your local system.       
+e.	New Table: Enables you to create a new table inside the selected collection.     
 The process for creation remains same as given in the previous steps.  
 d.	Clear All: Clears all the Reference Tables present inside the Repository Collection.    
 ![Reference Table13](../../staticfiles/processflow/media/reference-table13.png)     

@@ -11,9 +11,9 @@ menus:
         identifier: namespaceprocessflow
 ---
 
-Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements such that if two entity has the same name, declaring Namespace will provide a unique identification to the element where the namespace is declared.
+[Namespace](https://www.w3schools.com/xml/xml_namespaces.asp) is a technique that defines a set of unique names within an XML file, consisting of several XML elements such that if two entity has the same name, declaring Namespace will provide a unique identification to the element where the namespace is declared.
 Declaring a namespace requires to provide a Prefix and an URI (U]niform Resource Identifiers) for identifying the work of the element declared. All the descendants with the element would be identified with the prefix provided. 
-For more tutorials on Namespace, [Visit Here](https://www.w3schools.com/xml/xml_namespaces.asp).
+
 
 ## Prerequisites for adding Namespace in Portal
 

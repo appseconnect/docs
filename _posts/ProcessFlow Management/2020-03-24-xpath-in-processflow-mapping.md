@@ -11,8 +11,8 @@ menus:
         identifier: xpathnmappingprocessflow
 ---
 
-XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access 
-nodes in a hierarchical structure as represented in the XML file. [Click here](/transformation/understanding-xml-and-xpath/) to know more about XPATH.
+[XPATH](/transformation/understanding-xml-and-xpath/) is an essential concept that is required when implementing mapping and transformations. XPATH access 
+nodes in a hierarchical structure as represented in the XML file. 
 
 ## Pre-requisites for implementing Xpath in Mapping
 * Login to the APPSeCONNECT Portal with valid credentials.

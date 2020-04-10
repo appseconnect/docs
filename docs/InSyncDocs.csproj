@@ -588,6 +588,8 @@
     <Content Include="staticfiles\processflow\media\lookup-mapping6.png" />
     <Content Include="staticfiles\processflow\media\lookup-mapping7.png" />
     <Content Include="staticfiles\processflow\media\lookup-mapping8.png" />
+    <Content Include="staticfiles\processflow\media\mapper\addvariable_new.png" />
+    <Content Include="staticfiles\processflow\media\mapper\addvariable_new1.png" />
     <Content Include="staticfiles\processflow\media\mapper\addvariable_processflow.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\addvariable_processflow1.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\addvariable_processflow2.PNG" />
@@ -611,6 +613,7 @@
     <Content Include="staticfiles\processflow\media\mapper\attributemapping-processflow8.png" />
     <Content Include="staticfiles\processflow\media\mapper\attributemapping-processflow9.png" />
     <Content Include="staticfiles\processflow\media\mapper\create-basicprocessflow1.png" />
+    <Content Include="staticfiles\processflow\media\mapper\hierarchial-rendering-processflow.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\logicover-destinationmapping1.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\logicover-destinationmapping2.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\logicover-destinationmapping3.PNG" />
