@@ -334,7 +334,7 @@ nav.toc ul.toc__menu li ul {
 .page table tr th, .page table tr td {
     min-width: 110px;
     overflow-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 
