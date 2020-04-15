@@ -1363,7 +1363,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot for ProcessFlow">Data view of Snapshot for ProcessFlow</a>
+        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
         
     </li>
     
@@ -2035,7 +2035,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
                 
                 
@@ -2050,6 +2050,7 @@
                         <ul class="toc__menu">
   <li><a href="#prerequisites-to-deploy-process-flows">Prerequisites to deploy Process Flows</a></li>
   <li><a href="#steps-to-deploy-process-flows-to-environment">Steps to deploy Process Flows to Environment</a></li>
+  <li><a href="#process-to-configure-schedule-sync---auto--manual">Process to configure schedule Sync - Auto &amp; Manual</a></li>
   <li><a href="#process-to-configure-retry---auto--manual">Process to configure Retry - Auto &amp; Manual</a></li>
   <li><a href="#deploying-process-flows-to-environment">Deploying Process Flows to Environment</a></li>
   <li><a href="#undeploy-process-flow-from-environment">Undeploy Process Flow from Environment</a></li>
@@ -2124,8 +2125,8 @@ This section enables you to configure your process flow Sync and Re-try in eithe
 execution of the Process Flow here. By default, the sync type toggle button is selected in Manual Mode. 
 <img src="../../staticfiles/processflow/media/deploy-processflow13.png" alt="Deploy Processflow13" /></p>
 
-<p><strong>Process to configure schedule Sync - Auto &amp; Manual</strong>   <br />
-Select Frequency - There are three Options to choose from-  Every Day, Minute &amp; Hour           <br />
+<h3 id="process-to-configure-schedule-sync---auto--manual">Process to configure schedule Sync - Auto &amp; Manual</h3>
+<p>Select Frequency - There are three Options to choose from-  Every Day, Minute &amp; Hour           <br />
 (a) If the Frequency selected as <code class="highlighter-rouge">Everyday</code>, you need to provide Interval/Sync Daily 
 as shown below:  <br />
 <img src="../../staticfiles/processflow/media/processflow-autosync1.png" alt="Processflow Autosync1" /><br />
@@ -2154,22 +2155,47 @@ Once deployed, click on the Execute button in the Process Flow Designer page of 
 
 <p>Following the above steps, you can successfully Deploy and Execute a Process Flow.</p>
 
+<h2 id="executing-a-deployed-process-flow">Executing a deployed Process Flow</h2>
+<p>Execution of a Process flow is a vital process for transforming data from one application to another. The basic prerequisites for executing a process flow is given below:
+Prerequisites:</p>
+<ul>
+  <li>You need to create a process flow. Steps to create a process flow is given here.</li>
+  <li>You need to deploy the created process flow or an existing process that needs to be executed. Follow the above steps to know about the process of deploying.</li>
+  <li>Environment should be active for the process flow to execute successfully.</li>
+</ul>
+
+<h2 id="steps-to-execute-a-process-flow">Steps to execute a Process Flow</h2>
+
+<ol>
+  <li>Once deployed, you need to click on the Execute button in the Process Flow Designer page.
+<img src="../../staticfiles/processflow/media/deploy-tracker1.png" alt="Deploy Tracker1" /></li>
+  <li>The tracker window opens on clicking the EXECUTE button. The Tracker window displays the node specific execution logs and messages as the Process Flows enters from one node to another.
+<img src="../../staticfiles/processflow/media/deploy-tracker2.png" alt="Deploy Tracker2" /></li>
+  <li>You can view each step of the operation. Nodes in the process flow will change its colour according to the operation.
+    <ul>
+      <li>On-Going Operation: Yellow</li>
+      <li>Failed Operation: Red</li>
+      <li>Successful Operation: Green</li>
+    </ul>
+  </li>
+  <li>You can view the node specific snapshot for the Process Flow results. Click here to know more about viewing Snapshots.
+<img src="../../staticfiles/processflow/media/deploy-tracker3.png" alt="Deploy Tracker3" /></li>
+</ol>
+
 <h3 id="deploying-process-flows-to-environment">Deploying Process Flows to Environment</h3>
 
 <ol>
   <li>Navigate to the <a href="/deployment/Environment-Management/">Environment section</a> in the portal &amp; click on the active environment. The details page of the active environment opens
 <img src="../../staticfiles/processflow/media/deploy-processflow-env.png" alt="Deploy Processflow Env" /></li>
   <li>Click on the Process Flows tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment.
-The following are the details that will displayed for deployed Process Flows.</li>
-</ol>
-
-<p>a.	Name of the Process Flow<br />
+The following are the details that will displayed for deployed Process Flows.  <br />
+a.	Name of the Process Flow<br />
 b.	Description of the Process Flow  <br />
 c.	Version of the Process Flow<br />
 d.	The time of Deployment  <br />
-e.	Actions</p>
-
-<p><img src="../../staticfiles/processflow/media/deploy-processflow-env2.png" alt="Deploy Processflow Env2" /></p>
+e.	Actions      <br />
+<img src="../../staticfiles/processflow/media/deploy-processflow-env2.png" alt="Deploy Processflow Env2" /></li>
+</ol>
 
 <h3 id="undeploy-process-flow-from-environment">Undeploy Process Flow from Environment</h3>
 

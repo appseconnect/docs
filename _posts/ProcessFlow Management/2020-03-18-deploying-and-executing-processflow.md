@@ -70,7 +70,7 @@ This section enables you to configure your process flow Sync and Re-try in eithe
 execution of the Process Flow here. By default, the sync type toggle button is selected in Manual Mode. 
 ![Deploy Processflow13](../../staticfiles/processflow/media/deploy-processflow13.png)
 
-**Process to configure schedule Sync - Auto & Manual**     
+### Process to configure schedule Sync - Auto & Manual   
 Select Frequency - There are three Options to choose from-  Every Day, Minute & Hour             
 (a) If the Frequency selected as `Everyday`, you need to provide Interval/Sync Daily 
 as shown below:    
@@ -102,19 +102,37 @@ Once deployed, click on the Execute button in the Process Flow Designer page of 
 
 Following the above steps, you can successfully Deploy and Execute a Process Flow.
 
+## Executing a deployed Process Flow
+Execution of a Process flow is a vital process for transforming data from one application to another. The basic prerequisites for executing a process flow is given below:
+Prerequisites:
+* You need to create a process flow. Steps to create a process flow is given here.
+* You need to deploy the created process flow or an existing process that needs to be executed. Follow the above steps to know about the process of deploying.
+* Environment should be active for the process flow to execute successfully.
+
+## Steps to execute a Process Flow
+
+1.	Once deployed, you need to click on the Execute button in the Process Flow Designer page.
+![Deploy Tracker1](../../staticfiles/processflow/media/deploy-tracker1.png)  
+2.	The tracker window opens on clicking the EXECUTE button. The Tracker window displays the node specific execution logs and messages as the Process Flows enters from one node to another.
+![Deploy Tracker2](../../staticfiles/processflow/media/deploy-tracker2.png)  
+3.	You can view each step of the operation. Nodes in the process flow will change its colour according to the operation. 
+  * On-Going Operation: Yellow      
+  * Failed Operation: Red       
+  * Successful Operation: Green      
+4.	You can view the node specific snapshot for the Process Flow results. Click here to know more about viewing Snapshots.
+![Deploy Tracker3](../../staticfiles/processflow/media/deploy-tracker3.png)  
+
 ### Deploying Process Flows to Environment
 
 1.	Navigate to the [Environment section](/deployment/Environment-Management/) in the portal & click on the active environment. The details page of the active environment opens
-![Deploy Processflow Env](../../staticfiles/processflow/media/deploy-processflow-env.png)  
+![Deploy Processflow Env](../../staticfiles/processflow/media/deploy-processflow-env.png)    
 2.	Click on the Process Flows tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment.
-The following are the details that will displayed for deployed Process Flows.  
-  
+The following are the details that will displayed for deployed Process Flows.    
 a.	Name of the Process Flow  
 b.	Description of the Process Flow    
 c.	Version of the Process Flow  
 d.	The time of Deployment    
-e.	Actions      
-
+e.	Actions        
 ![Deploy Processflow Env2](../../staticfiles/processflow/media/deploy-processflow-env2.png) 
 
 ### Undeploy Process Flow from Environment

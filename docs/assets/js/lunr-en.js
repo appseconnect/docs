@@ -2060,8 +2060,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Data view of Snapshot for ProcessFlow",
-      excerpt: "\n",
+      title: "Data view of Snapshot",
+      excerpt: "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 227
@@ -4683,9 +4683,9 @@ var store = [
     
       
       {
-        "title": "Data view of Snapshot for ProcessFlow",
+        "title": "Data view of Snapshot",
         "url": "/processflow/snapshot-processflow/",
-        "excerpt": "\n",
+        "excerpt": "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
