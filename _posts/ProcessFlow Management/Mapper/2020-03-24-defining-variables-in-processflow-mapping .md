@@ -1,11 +1,11 @@
 ---
-title: "Defining variables in Processflow Mapping"
+title: "Defining variables in Mapping"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     mapperprocessflow:
-        title: "Defining variables in Processflow Mapping"
+        title: "Defining variables in Mapping"
         weight: 6
         icon: fa fa-file-word-o
         identifier: xpathnmappingprocessflow

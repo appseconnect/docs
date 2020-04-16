@@ -1,11 +1,11 @@
 ---
-title: "Creating ProcessFlow"
+title: "Steps to Create a ProcessFlow"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    processflow:
-        title: "Creating ProcessFlow"
+   quickstartprocessflow:
+        title: "Steps to Create a ProcessFlow"
         weight: 5
         icon: fa fa-file-word-o
         identifier: creatingprocessflow

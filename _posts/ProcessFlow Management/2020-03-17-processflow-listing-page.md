@@ -1,14 +1,14 @@
 ---
-title: "ProcessFlow Listing Page"
+title: "Organising Process Flow"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     processflow:
-        title: "ProcessFlow Listing Page"
-        weight: 3
+        title: "Organising Process Flow"
+        weight: 4
         icon: fa fa-file-word-o
-        identifier: listingprocessflow
+        identifier: organising processflow
 ---
 
 This section provides the option of creating folders for organizing the Process Flows with respect to the business 

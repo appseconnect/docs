@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    processflow:
+    quickstartprocessflow:
         title: "Data view of Snapshot"
         weight: 6
         icon: fa fa-file-word-o

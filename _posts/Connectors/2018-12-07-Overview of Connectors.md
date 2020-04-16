@@ -6,7 +6,7 @@ category: "Connectors"
 menus: 
     header:
         title: "Connectors"
-        weight: 3
+        weight: 2
         icon: fa fa-file-word-o
         identifier: Connectors
 ---

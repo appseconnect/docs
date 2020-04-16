@@ -1,11 +1,11 @@
 ---
-title: "Implementing Xpath in Processflow Mapping"
+title: "Implementing Xpath in Mapping"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     mapperprocessflow:
-        title: "Implementing Xpath in Processflow Mapping"
+        title: "Implementing Xpath in Mapping"
         weight: 5
         icon: fa fa-file-word-o
         identifier: xpathnmappingprocessflow

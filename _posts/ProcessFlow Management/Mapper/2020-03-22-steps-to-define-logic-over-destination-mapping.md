@@ -1,11 +1,11 @@
 ---
-title: "Steps to Define logic over Destination Mapping of Processflow"
+title: "Steps to Define logic over Destination Mapping"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     mapperprocessflow:
-        title: "Steps to Define logic over Destination Mapping of Processflow"
+        title: "Steps to Define logic over Destination Mapping"
         weight: 3
         icon: fa fa-file-word-o
         identifier: destinationmappingprocessflow

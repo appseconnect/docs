@@ -1,11 +1,11 @@
 ---
-title: "Namespace of Processflows"
+title: "Defining & Implementing Namespace"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     mapperprocessflow:
-        title: "Namespace of Processflows"
+        title: "Defining & Implementing Namespace"
         weight: 6
         icon: fa fa-file-word-o
         identifier: namespaceprocessflow

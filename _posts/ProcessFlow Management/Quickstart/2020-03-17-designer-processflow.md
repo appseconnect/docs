@@ -1,11 +1,11 @@
 ---
-title: "Designing ProcessFlow"
+title: "Designer"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    processflow:
-        title: "Designing ProcessFlow"
+   quickstartprocessflow:
+        title: "Designer"
         weight: 4
         icon: fa fa-file-word-o
         identifier: desiningprocessflow

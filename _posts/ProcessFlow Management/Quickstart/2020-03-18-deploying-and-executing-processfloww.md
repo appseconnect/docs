@@ -1,18 +1,17 @@
 ﻿---
-title: "Deploying, Executing & Undeploying ProcessFlow"
+title: "Deploy, Execute & Undeploy"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    processflow:
-        title: "Deploying, Executing & Undeploying ProcessFlow"
-        weight: 6
+   quickstartprocessflow:
+        title: "Deploy, Execute & Undeploy"
+        weight: 5
         icon: fa fa-file-word-o
-        identifier: deployingprocessflow
+        identifier: deployprocessflow
 ---
 
-
-Created/Edited Process Flows needs to be deployed to the environment in order to execute the integration process. 
+Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. 
 Users, now need not have to update configuration every time for deploying every change made in the process flows. 
 `DEPLOY` button enables the user to automatically deploy the changes in the environment as well as assign the 
 credential for the applications that is used in the Process Flows.
@@ -73,7 +72,8 @@ execution of the Process Flow here. By default, the sync type toggle button is s
 ### Process to configure schedule Sync - Auto & Manual   
 Select Frequency - There are three Options to choose from-  Every Day, Minute & Hour             
 (a) If the Frequency selected as `Everyday`, you need to provide Interval/Sync Daily 
-as shown below:    
+as shown below: 
+
 ![Processflow Autosync1](../../staticfiles/processflow/media/processflow-autosync1.png)  
 (b) If frequency selected as Minute, you can provide input (Only 1-59).  
 You can select End Execution or Never.If you select End Execution, Execution of a process 
@@ -89,8 +89,6 @@ If you select Never, process flow will never stop execution.
 ### Process to configure Retry - Auto & Manual
 
 {NOTE TO GO}
-
-
 
 After configuring the, click Finish button. The Process Flow would be successfully 
 deployed. You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
@@ -119,7 +117,7 @@ Prerequisites:
   * On-Going Operation: Yellow      
   * Failed Operation: Red       
   * Successful Operation: Green      
-4.	You can view the node specific snapshot for the Process Flow results. Click here to know more about viewing Snapshots.
+4.	You can [view the node specific snapshot]() for the Process Flow results. 
 ![Deploy Tracker3](../../staticfiles/processflow/media/deploy-tracker3.png)  
 
 ### Deploying Process Flows to Environment
@@ -149,8 +147,7 @@ portal. To cancel the step, click `No`.
 The undeployed process flow remains visible in the environment listing page but it gets completly
 detached from the agent. You can later deploy the undeployed process flow.
 
-
-### Impact of Undeploying Processflow from On- Premise Agent 
+### Impact of Undeploying Processflow from On-Premise Agent 
 
 * This deletes process flow data, link and nodes.
 * Deletes Process Flow database.

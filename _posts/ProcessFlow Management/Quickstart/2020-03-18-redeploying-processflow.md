@@ -1,11 +1,11 @@
 ---
-title: "Redeploying ProcessFlow"
+title: "Redeploy"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    processflow:
-        title: "Redeploying ProcessFlow"
+    quickstartprocessflow:
+        title: "Redeploy"
         weight: 6
         icon: fa fa-file-word-o
         identifier: redeployprocessflow
