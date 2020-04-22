@@ -1,6 +1,6 @@
 var lastId;
 var tocMenu = $(".toc__menu");
-
+var isTreeSelection = false;
 // All list items
 var menuItems = tocMenu.find("a");
 // Anchors corresponding to menu items
@@ -10,13 +10,26 @@ var scrollItems = menuItems.map(function () {
 });
 $("#sidebarMenu")
     .on('changed.jstree', function (e, data) {
-        if (data.action == 'select_node') {
-            location.href = data.node.a_attr.href;
+        if (data.action == 'select_node' && !isTreeSelection) {
+            location.href = data.node.a_attr.href; 
         }
     })
     .on('loaded.jstree', function () {
-        var node = $('#dashboardTree').jstree().find('[data-url="' + location.pathname + '"]');
-        $('#sidebarMenu').jstree('select_node', node.id);
+
+        var instance = $('#sidebarMenu').jstree(true);
+        m = instance._model.data;
+
+        for (var i in m) {
+            if (m.hasOwnProperty(i) && i !== '#' && m[i].a_attr.href && m[i].a_attr.href === location.pathname) {
+                isTreeSelection = true;
+                instance.select_node(i);
+                break;
+            }
+        }
+
+        //var node = $('#sidebarMenu').find('[data-url="' + location.pathname + '"]');
+        //isTreeSelection = true;
+        //$('#sidebarMenu').jstree('select_node', node.attr('id'));
     }).jstree();
 var onScrollCallback = function () {
     var nav = $('.sidebar__right,.page');
@@ -48,7 +61,7 @@ var onScrollCallback = function () {
     }
 
 };
-$(window).scroll(onScrollCallback);
+
 
 $(document).ready(function () {
 
@@ -62,6 +75,7 @@ $(document).ready(function () {
             menu.addClass('open');
         }
     });
+    $(window).scroll(onScrollCallback);
 });
 window.onpopstate = function (e) {
     if (e.srcElement.location.hash.startsWith('#')) {
@@ -165,7 +179,7 @@ function selectTab(url, e) {
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
-        }); 
+        });
         var title = $(data).find('title').html();
         $(data).find('a:not([href^="https://"])').each(function () {
             $(this).click(function (event) {
@@ -184,6 +198,15 @@ function selectTab(url, e) {
             $('a[href$="' + url + '"]').addClass('jstree-clicked');
         }
         console.log(url);
+        tocMenu = $(".toc__menu");
+        menuItems = tocMenu.find("a");
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+        });
+
+        $(window).scroll(onScrollCallback);
     }, function (request) {
         $('.page').html(request.responseText);
     });

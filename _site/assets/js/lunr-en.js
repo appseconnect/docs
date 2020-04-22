@@ -3436,7 +3436,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/connectors/overview-of-application-connectors/",
+        "url": "/connectors/Overview-of-Application-Connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
@@ -3447,7 +3447,7 @@ var store = [
       
       {
         "title": "Priority",
-        "url": "/connectors/priority/",
+        "url": "/connectors/Priority/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
         "teaser":
           
@@ -3458,7 +3458,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/Shopify/",
+        "url": "/connectors/shopify/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
@@ -3491,7 +3491,7 @@ var store = [
       
       {
         "title": "Magento2",
-        "url": "/connectors/magento2/",
+        "url": "/connectors/Magento2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Magento 2, providing...",
         "teaser":
           
@@ -3733,7 +3733,7 @@ var store = [
       
       {
         "title": "Uniconta",
-        "url": "/connectors/uniconta/",
+        "url": "/connectors/Uniconta/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Uniconta credentials need...",
         "teaser":
           
@@ -3744,7 +3744,7 @@ var store = [
       
       {
         "title": "ZohoCRM V2.0",
-        "url": "/connectors/Zohocrmv2/",
+        "url": "/connectors/zohocrmv2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
         "teaser":
           
@@ -4052,7 +4052,7 @@ var store = [
       
       {
         "title": "Sage300",
-        "url": "/connectors/Sage300/",
+        "url": "/connectors/sage300/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
         "teaser":
           
