@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
     quickstartprocessflow:
         title: "Redeploy"
-        weight: 6
+        weight: 9
         icon: fa fa-file-word-o
         identifier: redeployprocessflow
 ---

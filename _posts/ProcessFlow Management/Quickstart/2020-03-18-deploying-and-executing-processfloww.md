@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
    quickstartprocessflow:
         title: "Deploy, Execute & Undeploy"
-        weight: 5
+        weight: 6
         icon: fa fa-file-word-o
         identifier: deployprocessflow
 ---
@@ -88,7 +88,8 @@ If you select Never, process flow will never stop execution.
 
 ### Process to configure Retry - Auto & Manual
 
-{NOTE TO GO}
+Configure the settings for deploying the process flow and navigate to the [Sync & Retry 
+section]() of deploy wizard. 
 
 After configuring the, click Finish button. The Process Flow would be successfully 
 deployed. You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 

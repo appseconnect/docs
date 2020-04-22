@@ -681,6 +681,16 @@
     <Content Include="staticfiles\processflow\media\processflow-rename1.png" />
     <Content Include="staticfiles\processflow\media\processflow-rename2.png" />
     <Content Include="staticfiles\processflow\media\processflow-rename3.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry1.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry10.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry2.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry3.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry4.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry5.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry6.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry7.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry8.png" />
+    <Content Include="staticfiles\processflow\media\processflow-retry9.png" />
     <Content Include="staticfiles\processflow\media\processflow-undeploy1.PNG" />
     <Content Include="staticfiles\processflow\media\processflow-undeploy2.png" />
     <Content Include="staticfiles\processflow\media\processflowlisting-page1.png" />
@@ -1220,9 +1230,10 @@
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-processflow-app.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-working-with-Post.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-04-16-working-with-mapper.md" />
+    <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-retry-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-deploying-and-executing-processfloww.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-17-creating-processflow.md" />
-    <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-17-designer-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-16-designer-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-redeploying-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-snapshot-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-24-xpath-in-processflow-mapping.md" />
@@ -1233,7 +1244,6 @@
     <None Include="_posts\ProcessFlow Management\2020-03-21-Lookup-repository-masterdata.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-20-implementing-lookup-in-mapping.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-19-export and import-lookup.md" />
-    <None Include="_posts\ProcessFlow Management\Quickstart\deploying-and-executing-processflow.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-17-processflow-listing-page.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-15-overview-of-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-15-Quickstart-guide-to-processflow.md" />

@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
     quickstartprocessflow:
         title: "Data view of Snapshot"
-        weight: 6
+        weight: 8
         icon: fa fa-file-word-o
         identifier: snapshotprocessflow
 ---

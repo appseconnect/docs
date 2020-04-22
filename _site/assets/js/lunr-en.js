@@ -2024,8 +2024,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Organising Process Flow",
-      excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+      title: "Designer",
+      excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 223
@@ -2033,8 +2033,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Steps to Create a ProcessFlow",
-      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
+      title: "Organising Process Flow",
+      excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 224
@@ -2042,8 +2042,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Designer",
-      excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+      title: "Steps to Create a ProcessFlow",
+      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 225
@@ -2087,11 +2087,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Retrying a Process Flow",
+      excerpt: "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 230
+    });
+    
+  
+    idx.add({
       title: "Data view of Snapshot",
       excerpt: "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 230
+      id: 231
     });
     
   
@@ -2100,7 +2109,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 231
+      id: 232
     });
     
   
@@ -2109,7 +2118,7 @@ var idx = lunr(function () {
       excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 232
+      id: 233
     });
     
   
@@ -2118,7 +2127,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 233
+      id: 234
     });
     
   
@@ -2127,7 +2136,7 @@ var idx = lunr(function () {
       excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 234
+      id: 235
     });
     
   
@@ -2136,7 +2145,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 235
+      id: 236
     });
     
   
@@ -2145,7 +2154,7 @@ var idx = lunr(function () {
       excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 236
+      id: 237
     });
     
   
@@ -2154,7 +2163,7 @@ var idx = lunr(function () {
       excerpt: "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 237
+      id: 238
     });
     
   
@@ -2163,7 +2172,7 @@ var idx = lunr(function () {
       excerpt: "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 238
+      id: 239
     });
     
   
@@ -2172,7 +2181,7 @@ var idx = lunr(function () {
       excerpt: "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 239
+      id: 240
     });
     
   
@@ -2181,7 +2190,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 240
+      id: 241
     });
     
   
@@ -2190,7 +2199,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 241
+      id: 242
     });
     
   
@@ -2199,7 +2208,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 242
+      id: 243
     });
     
   
@@ -2208,7 +2217,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need APPS? For transforming data from one application to another you need to drag Application nodes to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 243
+      id: 244
     });
     
   
@@ -2217,7 +2226,7 @@ var idx = lunr(function () {
       excerpt: "What is Get Node? GET node is used for getting data from an application by using their API Endpoints provided...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 244
+      id: 245
     });
     
   
@@ -2226,7 +2235,7 @@ var idx = lunr(function () {
       excerpt: "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 245
+      id: 246
     });
     
   
@@ -4702,6 +4711,17 @@ var store = [
     
       
       {
+        "title": "Designer",
+        "url": "/processflow/designer-processflow/",
+        "excerpt": "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Organising Process Flow",
         "url": "/processflow/processflow-listing-page/",
         "excerpt": "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
@@ -4716,17 +4736,6 @@ var store = [
         "title": "Steps to Create a ProcessFlow",
         "url": "/processflow/creating-processflow/",
         "excerpt": "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Designer",
-        "url": "/processflow/designer-processflow/",
-        "excerpt": "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4771,6 +4780,17 @@ var store = [
         "title": "Redeploy",
         "url": "/processflow/redeploying-processflow/",
         "excerpt": "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Retrying a Process Flow",
+        "url": "/processflow/retry-processflow/",
+        "excerpt": "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
