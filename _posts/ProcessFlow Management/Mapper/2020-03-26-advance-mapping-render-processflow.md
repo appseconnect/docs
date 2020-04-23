@@ -34,7 +34,7 @@ procedure easy and adaptable to the environment.
 ![Processflow Renderer4](../../staticfiles/processflow/media/mapper/processflow_renderer4.png)  
 **Rendering will only be implemented, if the provided expression is supporting the XML standard. 
 Structure that does not represents XML structure will display error while saving.**
-5.	Navigate to the Schema whose attribute you need to map. Click here for more details on Attribute Mapping.
+5.	Navigate to the Schema whose [attribute](/processflow/customising-attribute-mapping/) you need to map. 
 6.	Open the Attribute to view the mapping window where you need to implement the Renderer. Enable the Checkbox for Choose Renderer & Select the created Renderer from the drop-down. 
 ![Processflow Renderer5](../../staticfiles/processflow/media/mapper/processflow_renderer5.png)  
 7.	Once the renderer is enabled and selected, click on the SAVE button.

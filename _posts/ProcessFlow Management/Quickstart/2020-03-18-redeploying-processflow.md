@@ -29,7 +29,7 @@ changes pertaining to redeloying a process flow.
 ### Prerequisites to deploy Process Flows
 
 1.	Should have valid credentials for logging in to the APPSeCONNECT portal.
-2.  A [deployed process](/processflow/deploying-and-executing-processflow/) flow should be available to make the changes for redeploying.
+2.  A [deployed process](/processflow/deploying-and-executing-processfloww/) flow should be available to make the changes for redeploying.
 
 ### Steps to redeploy Process Flows to Environment
 1.	Login to the portal and navigate to the Process Flow module available on the left menu.  

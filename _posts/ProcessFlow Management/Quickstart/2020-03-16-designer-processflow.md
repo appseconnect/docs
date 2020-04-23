@@ -12,7 +12,7 @@ menus:
 ---
 This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability of Process Flow Designer Page.
 
-* Click on the Create a Process Flow button on any folder in the listing page.
+* Click on the [Create a Process Flow](/processflow/creating-processflow/) button on any folder in the listing page.
  ![Create Processflow1](../../staticfiles/processflow/media/create-processflow1.png) 
 * The button Create a Process Flow will only appear when the selected folder is empty. Folder with a created process flow listed will have a NEW button that will redirect the user to the Process Flow Designer Page. 
 ![Create Processflow2](../../staticfiles/processflow/media/create-processflow2.png) 
@@ -62,7 +62,7 @@ following tabs and menus in the left panel of the page.
 1)	Start:  This node initiates the start of the execution of the Process Flow.  
 2)	End: This node depicts the completion of the Process Flow.  
 3)	[Mapper](/processflow/working-with-mapper/): This node allows you to map the applications used in the Process flow.       
-4)	[Apps](/configuring%20appseconnect/configurations/#process-of-choosing-app): You can view all the Pre-packaged application selected & created. 
+4)	[Apps](/processflow/processflow-app/): You can view all the Pre-packaged application selected & created. 
 On dragging the applications to the designer panel, the node configuration window would appear.      
 5)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector.   
 6)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.  

@@ -19,8 +19,8 @@ credential for the applications that is used in the Process Flows.
 ### Prerequisites to deploy Process Flows
 
 1.	Should have valid credentials for logging in to the APPSeCONNECT portal.
-2.	APPS should be chosen from the apps section, for proceeding with the design of Process Flows.
-3.	The designed Process Flow should be saved before deploying it to the environment.
+2.	[APPS](/processflow/processflow-app/) should be chosen from the apps section, for proceeding with the design of Process Flows.
+3.	The [designed](/processflow/designer-processflow/) Process Flow should be saved before deploying it to the environment.
 
 ### Steps to deploy Process Flows to Environment
 1.	Login to the portal and navigate to the Process Flow module available on the left menu.  
@@ -89,7 +89,7 @@ If you select Never, process flow will never stop execution.
 ### Process to configure Retry - Auto & Manual
 
 Configure the settings for deploying the process flow and navigate to the [Sync & Retry 
-section]() of deploy wizard. 
+section](/processflow/retry-processflow/) of deploy wizard. 
 
 After configuring the, click Finish button. The Process Flow would be successfully 
 deployed. You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
@@ -118,7 +118,7 @@ Prerequisites:
   * On-Going Operation: Yellow      
   * Failed Operation: Red       
   * Successful Operation: Green      
-4.	You can [view the node specific snapshot]() for the Process Flow results. 
+4.	You can [view the node specific snapshot](/processflow/snapshot-processflow/) for the Process Flow results. 
 ![Deploy Tracker3](../../staticfiles/processflow/media/deploy-tracker3.png)  
 
 ### Deploying Process Flows to Environment

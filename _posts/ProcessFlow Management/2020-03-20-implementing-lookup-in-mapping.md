@@ -19,7 +19,7 @@ Once the Collection and the Reference tables are created, users can implement th
 * You need to have the process flow created along with the mapper node.
 
 ## Steps to implement lookup in attribute mapping
-1.	Login to the portal and navigate to the process flow section. The process flow [listing page](/processflow/creating-processflow/) opens. 
+1.	Login to the portal and navigate to the process flow section. The process flow [listing page](/processflow/processflow-listing-page/) opens. 
 ![Lookup Mapping1](../../staticfiles/processflow/media/lookup-mapping1.png)   
 2.	[Create a process flow](/processflow/creating-processflow/) or edit a created process flow in the Process Flow [Designer page](/processflow/designer-processflow/) opens.    
 ![Lookup Mapping2](../../staticfiles/processflow/media/lookup-mapping2.png)    

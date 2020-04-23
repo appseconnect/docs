@@ -18,7 +18,7 @@ Given below is the list of elements you will be able to use in APPSeCONNECT Proc
 
 2.	GET Node: This node fetches the data from the source application for the sync purpose. You need to enable the APP dragged for operating GET node by selecting the Node Type as GET in the Node Configuration window of the dragged application.
 
-3.	Mapper Node: This node transforms the data to the destination application by applying field mappings of source and destination application. For more details on mapper node Click Here
+3.	[Mapper Node](/processflow/working-with-mapper/): This node transforms the data to the destination application by applying field mappings of source and destination application.
 
 4.	POST Node: This node dumps the transformed data to the destination application after the transformation process is completed. You need to enable the destination application as POST node by selecting the Node Type as POST in the Node Configuration window of the dragged destination application.
 

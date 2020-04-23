@@ -16,18 +16,18 @@ After a successful execution, you can view the snapshot listing on the multiple 
 
 ## Pre-requisites for viewing Snapshot
 * You should have valid credentials to the portal.
-* You need to [create a Process Flow] for generating a snapshot. 
+* You need to [create a Process Flow](/processflow/creating-processflow/) for generating a snapshot. 
 * The environment where the process flow needs to be executed should be active.
-* The [created Process Flow] needs to be deployed to the environment successfully.  
-* You need to [execute the Process Flow] () for generation of the Snapshot.
+* The created Process Flow needs to be [deployed](/processflow/deploying-and-executing-processfloww/) to the environment successfully.  
+* You need to execute the Process Flow for generation of the Snapshot.
 
 ## Steps to view the Process Flow Snapshot
 To view the snapshot of a Process Flow that has been executed, you need to follow the 
 prerequisites. Given below are the steps that will help you view Snapshot of a Process Flow that is executed.
 
-1.	Login to the Portal and Navigate to the Process Flow Section and view the [listing page]().   
+1.	Login to the Portal and Navigate to the Process Flow Section and view the [listing page](/processflow/processflow-listing-page/).   
 ![Snapshot1](../../staticfiles/processflow/media/snapshot1.png)  
-2.	[Create a new Process Flow]() or Edit an existing Process Flow for [Deploying and Executing]() the sync process.  
+2.	[Create a new Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for [Deploying and Executing](/processflow/deploying-and-executing-processfloww/) the sync process.  
 **Note: You need to have the OP Environment active mandatorily for deploying the Process Flow to an OP Agent.**   
 3.	Navigate to the Manage > [Environment]() for view the Snapshot of the executed Process Flow.   
 **Note: You need have the environment active for viewing the details page, Click here if you need to troubleshoot a detached or a disconnected agent.**  

@@ -19,7 +19,7 @@ nodes to the designer panel for operating as source application and destination 
 
 ## Type of Elements in APPSeCONNECT Process Flow
 |Element|Description|  
-|--------|----------------|  
+|--------|----------------------------------------------------------------------------------|  
 |[GET](/processflow/working-with-GET/)|GET node is used for fetching data from the source application by using the API provided by the application|
 |[MAPPER](/processflow/working-with-mapper/)|Mapper node is used to map the attributes and the entities of both source and destination applications|
 |[POST](/processflow/working-with-POST/)|POST node is used for pushing data to an application based on the API provided by the destination application|

@@ -21,7 +21,7 @@ To know in details, go through the given sections:
 |Processflow Usage|Description|
 |------------------|----------------|
 |[Designer](/processflow/designer-processflow/)|This section enables the user to implement business scenarios by designing Process Flows|
-|[create processflow](/processflow/creating-processflow/)|This section of the documentation will guide the user with the process of Creating & Saving new process flows|
-|[deploy & execute]()|Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process|
-|[redeploy](/processflow/redeploying-processflow/)|Redeploying processflow functionality allows you to re-deploy an existing Process Flows |
-|[snapshot view](/processflow/snapshot-processflow/)|Snapshot in Process Flow gives complete overview of the transactions that was executed|
+|[Create Processflow](/processflow/creating-processflow/)|This section of the documentation will guide the user with the process of Creating & Saving new process flows|
+|[Deploy & Execute](/processflow/deploying-and-executing-processfloww/)|Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process|
+|[Redeploy](/processflow/redeploying-processflow/)|Redeploying processflow functionality allows you to re-deploy an existing Process Flows |
+|[Snapshot view](/processflow/snapshot-processflow/)|Snapshot in Process Flow gives complete overview of the transactions that was executed|

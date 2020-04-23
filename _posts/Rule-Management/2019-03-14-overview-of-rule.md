@@ -11,7 +11,7 @@ menus:
         identifier: overviewrule
 ---
 
-If the user wants to perform some ACTIONS (raising a support ticket or sending an email) based on the type 
+If the user wants to perform some ACTIONS based on the type 
 of events encountered during agent execution such as - Execution Failure, Application Crash, Execution Start, 
 execution end, that can be done using APPSeCONNECT Rules. 
 
