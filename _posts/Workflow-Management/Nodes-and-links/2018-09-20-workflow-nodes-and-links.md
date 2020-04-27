@@ -30,11 +30,10 @@ Workflow in APPSeCONNECT is having a number of capabilities. Let us check what i
 - [Can set timeout between two executions.](/workflow/working-with-delay)
 - [Halting & Resuming a process](/workflow/working-with-halt-resume/)
 - [Sequence data inside applications](/workflow/working-with-sequencer)
-- [Take business decisions on data integration.](/workflow/working-with-rule)
 - [Split a data batch into multiple files.](/workflow/working-with-splitter)
 - [Generate notifications.](/workflow/generating-actions)
   - [Webhook based notification](/workflow/generating-notification-webhooks)
-  - [Email notification](/workflow/generating-notification-emails)
+  - Email notification
   - [Support ticket notifications](/workflow/generating-notification-support-ticket)
   - [Storing files](/workflow/generating-storage-action)
 
