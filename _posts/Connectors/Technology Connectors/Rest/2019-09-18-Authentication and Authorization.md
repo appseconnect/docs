@@ -1,5 +1,5 @@
 ---
-title: "Authentication & Authorization of Generic REST Adapters"
+title: "Authentication & Authorization of REST Adapters"
 toc: true
 tag: developers
 category: "Connectors"
@@ -11,7 +11,7 @@ menus:
         title: "Authentication of REST Adapters"
         identifier: authentication
 ---
-APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs.
+APPSeCONNECT REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs.
 
 **COMMUNICATION BETWEEN CLIENT AND SERVER IN REST ADAPTER**
 
@@ -19,7 +19,7 @@ In the REST architecture, clients send requests to retrieve resources, and serve
 to these requests. Given below is the process to make requests and send responses.
 
 
-The generic rest api authentication types for AEC presently are:
+The rest api authentication types for AEC presently are:
 
   a) **No Auth** - No login information in required.
 

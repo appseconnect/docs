@@ -11,11 +11,11 @@ menus:
         title: "Basic Authentication"
         identifier: basicauthentication
 ---
-## Process to Configure Basic Authentication in Generic Rest Adapter - On Premise
-To configure the Basic Authentication Type for Generic Rest Adapter follow the steps given below:
+## Process to Configure Basic Authentication in Rest Adapter - On Premise
+To configure the Basic Authentication Type for Rest Adapter follow the steps given below:
 
 1. [Login to APPSeCONNECT Portal](/getting%20started/user-registration-license/) and go to the app section to choose the desired application (Rest Supported Application).  
-2. [Create Technology Application](/configuring%20appseconnect/configurations/) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
+2. [Create Technology Application](/configuring%20appseconnect/configurations/) using rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) between the application.  
  
 **Protip:** You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
@@ -37,7 +37,7 @@ Click on the + icon beside the shopify app and the following screen appears.
 
 ![Rest-BasicAuthentation-Image2](/staticfiles/connectors/media/technology-connector/Rest-BasicAuthentation-Image2.png).
 
-The generic rest api screen contains the following fields:   
+The Rest api screen contains the following fields:   
  
 * URL - The URL of the server to connect to. This can be an http or https address but must be URL encoded.    
 * Authentication - Identifies the secure login type.     
@@ -86,12 +86,12 @@ SAP B1 as another application) which is not based on REST API.
 After the validation, the workflows are published for integration between the REST application SHOPIFY and SAP B1.      
 The touchpoint is executed for the Sync Process by clicking on the START SYNC NOW button.           
        
-# Process to Configure Basic Authentication in Generic Rest Adapter - Cloud
+# Process to Configure Basic Authentication in Rest Adapter - Cloud
 
-Follow the steps given below to configure Basic Auth in Generic Rest Adapter in Cloud Enviornment.
+Follow the steps given below to configure Basic Auth in Rest Adapter in Cloud Enviornment.
 
 1. [Login to APPSeCONNECT Portal](/getting%20started/user-registration-license/)  
-2. [Create Technology Application](/configuring%20appseconnect/configurations/) using generic rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
+2. [Create Technology Application](/configuring%20appseconnect/configurations/) using rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) between the application.    
 
 **Protip:** You can use either both technology app or one tech app and one prepackaged app while creating a connection. 

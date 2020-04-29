@@ -1,5 +1,5 @@
 ---
-title: "Overview of Generic Rest Adapters"
+title: "Overview of Rest Adapters"
 toc: true
 tag: developers
 category: "Connectors"

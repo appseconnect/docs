@@ -1844,8 +1844,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Authentication & Authorization of Generic REST Adapters",
-      excerpt: "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
+      title: "Authentication & Authorization of REST Adapters",
+      excerpt: "APPSeCONNECT REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND SERVER...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 203
@@ -1854,7 +1854,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Basic Authentication ",
-      excerpt: "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
+      excerpt: "Process to Configure Basic Authentication in Rest Adapter - On Premise To configure the Basic Authentication Type for Rest Adapter...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 204
@@ -1862,8 +1862,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "OAuth1.0 Authentication",
-      excerpt: "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
+      title: "OAuth2.0 Authentication",
+      excerpt: "Process to Configure OAuth2.0 Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Rest Adapter follow the...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 205
@@ -1871,20 +1871,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "OAuth2.0 Authentication",
-      excerpt: "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
-      categories: ["Connectors"],
-      tags: ["developers"],
-      id: 206
-    });
-    
-  
-    idx.add({
-      title: "Overview of Generic Rest Adapters",
+      title: "Overview of Rest Adapters",
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 207
+      id: 206
     });
     
   
@@ -1893,7 +1884,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 208
+      id: 207
     });
     
   
@@ -1902,7 +1893,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 209
+      id: 208
     });
     
   
@@ -1911,7 +1902,7 @@ var idx = lunr(function () {
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 210
+      id: 209
     });
     
   
@@ -1920,7 +1911,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 211
+      id: 210
     });
     
   
@@ -1929,7 +1920,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 212
+      id: 211
     });
     
   
@@ -1938,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 213
+      id: 212
     });
     
   
@@ -1947,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 213
     });
     
   
@@ -1956,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 214
     });
     
   
@@ -1965,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 216
+      id: 215
     });
     
   
@@ -1974,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
       categories: ["Security"],
       tags: ["developers"],
-      id: 217
+      id: 216
     });
     
   
@@ -1983,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "The list of GDPR (Global Data Protection Regulations) policies is given below which our product imparts to the user for...",
       categories: ["GDPR"],
       tags: ["developers"],
-      id: 218
+      id: 217
     });
     
   
@@ -1992,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 219
+      id: 218
     });
     
   
@@ -2001,7 +1992,7 @@ var idx = lunr(function () {
       excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 220
+      id: 219
     });
     
   
@@ -2010,7 +2001,7 @@ var idx = lunr(function () {
       excerpt: "Processflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 221
+      id: 220
     });
     
   
@@ -2019,7 +2010,7 @@ var idx = lunr(function () {
       excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 222
+      id: 221
     });
     
   
@@ -2028,7 +2019,7 @@ var idx = lunr(function () {
       excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 223
+      id: 222
     });
     
   
@@ -2037,7 +2028,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 224
+      id: 223
     });
     
   
@@ -2046,7 +2037,7 @@ var idx = lunr(function () {
       excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 225
+      id: 224
     });
     
   
@@ -2055,7 +2046,7 @@ var idx = lunr(function () {
       excerpt: "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 226
+      id: 225
     });
     
   
@@ -2064,7 +2055,7 @@ var idx = lunr(function () {
       excerpt: "License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users who tries to...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 227
+      id: 226
     });
     
   
@@ -2073,7 +2064,7 @@ var idx = lunr(function () {
       excerpt: "Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users,...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 228
+      id: 227
     });
     
   
@@ -2082,7 +2073,7 @@ var idx = lunr(function () {
       excerpt: "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 229
+      id: 228
     });
     
   
@@ -2091,7 +2082,7 @@ var idx = lunr(function () {
       excerpt: "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 230
+      id: 229
     });
     
   
@@ -2100,7 +2091,7 @@ var idx = lunr(function () {
       excerpt: "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 231
+      id: 230
     });
     
   
@@ -2109,7 +2100,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 232
+      id: 231
     });
     
   
@@ -2118,7 +2109,7 @@ var idx = lunr(function () {
       excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 233
+      id: 232
     });
     
   
@@ -2127,7 +2118,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 234
+      id: 233
     });
     
   
@@ -2136,7 +2127,7 @@ var idx = lunr(function () {
       excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 235
+      id: 234
     });
     
   
@@ -2145,7 +2136,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 236
+      id: 235
     });
     
   
@@ -2154,7 +2145,7 @@ var idx = lunr(function () {
       excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 237
+      id: 236
     });
     
   
@@ -2163,7 +2154,7 @@ var idx = lunr(function () {
       excerpt: "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 238
+      id: 237
     });
     
   
@@ -2172,7 +2163,7 @@ var idx = lunr(function () {
       excerpt: "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 239
+      id: 238
     });
     
   
@@ -2181,7 +2172,7 @@ var idx = lunr(function () {
       excerpt: "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 240
+      id: 239
     });
     
   
@@ -2190,7 +2181,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 241
+      id: 240
     });
     
   
@@ -2199,7 +2190,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 242
+      id: 241
     });
     
   
@@ -2208,7 +2199,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 243
+      id: 242
     });
     
   
@@ -2217,7 +2208,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need APPS? For transforming data from one application to another you need to drag Application nodes to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 244
+      id: 243
     });
     
   
@@ -2226,7 +2217,7 @@ var idx = lunr(function () {
       excerpt: "What is Get Node? GET node is used for getting data from an application by using their API Endpoints provided...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 245
+      id: 244
     });
     
   
@@ -2235,6 +2226,15 @@ var idx = lunr(function () {
       excerpt: "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
       categories: ["Processflow"],
       tags: ["developers"],
+      id: 245
+    });
+    
+  
+    idx.add({
+      title: null,
+      excerpt: "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
+      categories: [],
+      tags: null,
       id: 246
     });
     
@@ -4491,9 +4491,9 @@ var store = [
     
       
       {
-        "title": "Authentication & Authorization of Generic REST Adapters",
+        "title": "Authentication & Authorization of REST Adapters",
         "url": "/connectors/Authentication-and-Authorization/",
-        "excerpt": "APPSeCONNECT Generic REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND...",
+        "excerpt": "APPSeCONNECT REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND SERVER...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4504,18 +4504,7 @@ var store = [
       {
         "title": "Basic Authentication ",
         "url": "/connectors/BasicAuthentication/",
-        "excerpt": "Process to Configure Basic Authentication in Generic Rest Adapter - On Premise To configure the Basic Authentication Type for Generic...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "OAuth1.0 Authentication",
-        "url": "/connectors/OAuth1.0/",
-        "excerpt": "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
+        "excerpt": "Process to Configure Basic Authentication in Rest Adapter - On Premise To configure the Basic Authentication Type for Rest Adapter...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4526,7 +4515,7 @@ var store = [
       {
         "title": "OAuth2.0 Authentication",
         "url": "/connectors/OAuth2.0/",
-        "excerpt": "Process to Configure OAuth2.0 in Generic Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Generic Rest...",
+        "excerpt": "Process to Configure OAuth2.0 Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Rest Adapter follow the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4535,7 +4524,7 @@ var store = [
     
       
       {
-        "title": "Overview of Generic Rest Adapters",
+        "title": "Overview of Rest Adapters",
         "url": "/connectors/Overview-of-GenericRest-Adapters/",
         "excerpt": "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
         "teaser":
@@ -4967,6 +4956,17 @@ var store = [
         "title": "Working with POST",
         "url": "/processflow/working-with-POST/",
         "excerpt": "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": null,
+        "url": "/2019-09-20-OAuth1.0/",
+        "excerpt": "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
