@@ -54,26 +54,23 @@ details are important to create the face of the API.
 3. The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
 of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
 not specify the version element in the API, you will face lot of challenges in future. 
-![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.png)
-
+![Api Frontend Configuration](/staticfiles/api-management/media/api-frontend-configuration.png)  
 4. Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
-![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.png)
-
-In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each
+![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.png)  
+In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each  
 of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
-you can continue the wizard. For Policy Configuration, Click [here](/api-management/policies/)  
-
+you can continue the wizard. For Policy Configuration, Click [here](/api-management/policies/)    
 5. The next screen is where you specify the backend. This section is very important because this section
-provides the actual data source for that particular API. 
-![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.png)  
+provides the actual data source for that particular API.   
+![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.png)    
 6. The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select `Schema Action`
-from the drop down list. [Click here](/getting-started/#importing-schemas-and-actions-of-an-application) to know more  
+from the drop down list. [Click here](/configuring%20appseconnect/configurations/#adding-schemas-and-actions-of-an-application) to know more    
 7. The outbound policies are those which are applied after the backend is executed. Here also similar to the Inbound 
 policies, you are allowed to choose as many policies from the list as you want and configure each of them to continue 
-to the next screen.  
+to the next screen.    
 8. The next screen specifies the **Response setup** of the API. Here you are allowed to specify what response code the API 
-should return when there is a failure in execution or success in execution. You can also specify the response message 
+should return when there is a failure in execution or success in execution. You can also specify the response message   
 if you are not happy with our default messaging. 
 
 * HTTP Status Codes are the standard response codes that are provided by the internet server when a website or an API is called. 
