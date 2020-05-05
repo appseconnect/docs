@@ -1228,7 +1228,7 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
-    <None Include="_posts\ProcessFlow Management\2020-03-19-cloud-appresource-functions.md" />
+    <None Include="_posts\ProcessFlow Management\Mapper\2020-05-05-cloud-appresource-functions.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-19-protocol-implementation.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-24-defining-variables-in-processflow-mapping .md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-26-advance-mapping-render-processflow.md" />

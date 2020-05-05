@@ -4,9 +4,9 @@ toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    processflow:
+    mapperprocessflow:
         title: "Cloud Appresource Functions"
-        weight: 10
+        weight: 8
         icon: fa fa-file-word-o
         identifier: cloudappresource
 ---
