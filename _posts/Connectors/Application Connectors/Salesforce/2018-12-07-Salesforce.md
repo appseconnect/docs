@@ -23,8 +23,8 @@ application Salesforce.
 # Pre-requisites for Salesforce Configuration 
 
 * Valid APPSeCONNECT Portal credentials.
-* Select the Application Salesforce in the APP section.
-* Create connection for Salesforce.
+* Select the Application Salesforce in the [APP section](/configuring%20appseconnect/configurations/#process-of-choosing-app).
+* [Create connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for Salesforce.
 * Publish any Touchpoint, Update Adapters and Update Configuration in the agent.
 
 ## Configure the Agent
