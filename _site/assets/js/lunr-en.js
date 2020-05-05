@@ -1601,20 +1601,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Pre-Configured Rule for Misfire Event",
-      excerpt: "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 176
-    });
-    
-  
-    idx.add({
       title: "Overview of Pre-Configured Rule",
       excerpt: "Pre-configured rules are the rules that comes pre-packaged with your Account. Users/Implementers needs to choose the pre-configured rules from the...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 177
+      id: 176
     });
     
   
@@ -1623,7 +1614,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 178
+      id: 177
     });
     
   
@@ -1632,7 +1623,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 179
+      id: 178
     });
     
   
@@ -1641,7 +1632,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAP B1- Magento 2 Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 180
+      id: 179
     });
     
   
@@ -1650,7 +1641,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 181
+      id: 180
     });
     
   
@@ -1659,7 +1650,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 182
+      id: 181
     });
     
   
@@ -1668,7 +1659,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 183
+      id: 182
     });
     
   
@@ -1677,7 +1668,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 184
+      id: 183
     });
     
   
@@ -1686,7 +1677,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 185
+      id: 184
     });
     
   
@@ -1695,7 +1686,7 @@ var idx = lunr(function () {
       excerpt: "This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 186
+      id: 185
     });
     
   
@@ -1704,7 +1695,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 187
+      id: 186
     });
     
   
@@ -1713,7 +1704,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 188
+      id: 187
     });
     
   
@@ -1722,25 +1713,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 189
-    });
-    
-  
-    idx.add({
-      title: "Pre-Configured Rule for Resync Bucket",
-      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 190
-    });
-    
-  
-    idx.add({
-      title: "Pre-Configured Rule for Log Bucket",
-      excerpt: "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 191
+      id: 188
     });
     
   
@@ -1749,16 +1722,7 @@ var idx = lunr(function () {
       excerpt: "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 192
-    });
-    
-  
-    idx.add({
-      title: "Default Rule for Data Purge Policy",
-      excerpt: "IT organizations mostly struggle with data volume that accumulates and increases the overhead of operational cost. Due to the sheer...",
-      categories: ["Rule"],
-      tags: ["developers"],
-      id: 193
+      id: 189
     });
     
   
@@ -1767,7 +1731,7 @@ var idx = lunr(function () {
       excerpt: "Requirement of the Rule APPSeCONNECT Morning Report updates the users about the data synchronization status for each connection, on daily...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 194
+      id: 190
     });
     
   
@@ -1776,7 +1740,7 @@ var idx = lunr(function () {
       excerpt: "Default rules are the rules that are predefined on APPSeCONNECT. User/Implementers cannot choose these rules and will not get any...",
       categories: ["Rule"],
       tags: ["developers"],
-      id: 195
+      id: 191
     });
     
   
@@ -1785,7 +1749,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 196
+      id: 192
     });
     
   
@@ -1794,7 +1758,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 197
+      id: 193
     });
     
   
@@ -1803,7 +1767,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 198
+      id: 194
     });
     
   
@@ -1812,7 +1776,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 199
+      id: 195
     });
     
   
@@ -1821,7 +1785,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of NAV- Magento2 Mutliple Connection Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 200
+      id: 196
     });
     
   
@@ -1830,7 +1794,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 201
+      id: 197
     });
     
   
@@ -1839,7 +1803,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 202
+      id: 198
     });
     
   
@@ -1848,7 +1812,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND SERVER...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 203
+      id: 199
     });
     
   
@@ -1857,7 +1821,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Rest Adapter - On Premise To configure the Basic Authentication Type for Rest Adapter...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 204
+      id: 200
     });
     
   
@@ -1866,7 +1830,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 205
+      id: 201
     });
     
   
@@ -1875,7 +1839,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Rest Adapter follow the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 206
+      id: 202
     });
     
   
@@ -1884,7 +1848,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 207
+      id: 203
     });
     
   
@@ -1893,7 +1857,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 208
+      id: 204
     });
     
   
@@ -1902,7 +1866,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 209
+      id: 205
     });
     
   
@@ -1911,7 +1875,7 @@ var idx = lunr(function () {
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 210
+      id: 206
     });
     
   
@@ -1920,7 +1884,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 211
+      id: 207
     });
     
   
@@ -1929,7 +1893,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 212
+      id: 208
     });
     
   
@@ -1938,7 +1902,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 213
+      id: 209
     });
     
   
@@ -1947,7 +1911,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 214
+      id: 210
     });
     
   
@@ -1956,7 +1920,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 215
+      id: 211
     });
     
   
@@ -1965,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 216
+      id: 212
     });
     
   
@@ -1974,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
       categories: ["Security"],
       tags: ["developers"],
-      id: 217
+      id: 213
     });
     
   
@@ -1983,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "The list of GDPR (Global Data Protection Regulations) policies is given below which our product imparts to the user for...",
       categories: ["GDPR"],
       tags: ["developers"],
-      id: 218
+      id: 214
     });
     
   
@@ -1992,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 219
+      id: 215
     });
     
   
@@ -2001,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 220
+      id: 216
     });
     
   
@@ -2010,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "Processflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 221
+      id: 217
     });
     
   
@@ -2019,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 222
+      id: 218
     });
     
   
@@ -2028,7 +1992,7 @@ var idx = lunr(function () {
       excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 223
+      id: 219
     });
     
   
@@ -2037,7 +2001,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 224
+      id: 220
     });
     
   
@@ -2046,7 +2010,7 @@ var idx = lunr(function () {
       excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 225
+      id: 221
     });
     
   
@@ -2055,7 +2019,7 @@ var idx = lunr(function () {
       excerpt: "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 226
+      id: 222
     });
     
   
@@ -2064,7 +2028,7 @@ var idx = lunr(function () {
       excerpt: "License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users who tries to...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 227
+      id: 223
     });
     
   
@@ -2073,7 +2037,7 @@ var idx = lunr(function () {
       excerpt: "Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users,...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 228
+      id: 224
     });
     
   
@@ -2082,7 +2046,7 @@ var idx = lunr(function () {
       excerpt: "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 229
+      id: 225
     });
     
   
@@ -2091,7 +2055,7 @@ var idx = lunr(function () {
       excerpt: "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 230
+      id: 226
     });
     
   
@@ -2100,16 +2064,7 @@ var idx = lunr(function () {
       excerpt: "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 231
-    });
-    
-  
-    idx.add({
-      title: "Cloud Appresource Functions",
-      excerpt: "\n",
-      categories: ["Processflow"],
-      tags: ["developers"],
-      id: 232
+      id: 227
     });
     
   
@@ -2118,7 +2073,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 233
+      id: 228
     });
     
   
@@ -2127,7 +2082,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 234
+      id: 229
     });
     
   
@@ -2136,7 +2091,7 @@ var idx = lunr(function () {
       excerpt: "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 235
+      id: 230
     });
     
   
@@ -2145,7 +2100,7 @@ var idx = lunr(function () {
       excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 236
+      id: 231
     });
     
   
@@ -2154,7 +2109,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 237
+      id: 232
     });
     
   
@@ -2163,7 +2118,7 @@ var idx = lunr(function () {
       excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 238
+      id: 233
     });
     
   
@@ -2172,7 +2127,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 239
+      id: 234
     });
     
   
@@ -2181,7 +2136,7 @@ var idx = lunr(function () {
       excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 240
+      id: 235
     });
     
   
@@ -2190,7 +2145,7 @@ var idx = lunr(function () {
       excerpt: "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 241
+      id: 236
     });
     
   
@@ -2199,7 +2154,7 @@ var idx = lunr(function () {
       excerpt: "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 242
+      id: 237
     });
     
   
@@ -2208,7 +2163,7 @@ var idx = lunr(function () {
       excerpt: "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 243
+      id: 238
     });
     
   
@@ -2217,7 +2172,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 244
+      id: 239
     });
     
   
@@ -2226,7 +2181,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 245
+      id: 240
     });
     
   
@@ -2235,7 +2190,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 246
+      id: 241
     });
     
   
@@ -2244,7 +2199,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need APPS? For transforming data from one application to another you need to drag Application nodes to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 247
+      id: 242
     });
     
   
@@ -2253,7 +2208,7 @@ var idx = lunr(function () {
       excerpt: "What is Get Node? GET node is used for getting data from an application by using their API Endpoints provided...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 248
+      id: 243
     });
     
   
@@ -2262,7 +2217,7 @@ var idx = lunr(function () {
       excerpt: "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 249
+      id: 244
     });
     
   
@@ -2271,7 +2226,16 @@ var idx = lunr(function () {
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 250
+      id: 245
+    });
+    
+  
+    idx.add({
+      title: "Cloud Appresource Functions",
+      excerpt: "\n",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 246
     });
     
   
@@ -2280,7 +2244,7 @@ var idx = lunr(function () {
       excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 251
+      id: 247
     });
     
   
@@ -4239,17 +4203,6 @@ var store = [
     
       
       {
-        "title": "Pre-Configured Rule for Misfire Event",
-        "url": "/rule/preconfigured-rule-for-misfire-event/",
-        "excerpt": "SCENARIO A workflow has been scheduled for it to run in every minute. It has been noticed that, it is...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Overview of Pre-Configured Rule",
         "url": "/rule/preconfigured-rule-overview/",
         "excerpt": "Pre-configured rules are the rules that comes pre-packaged with your Account. Users/Implementers needs to choose the pre-configured rules from the...",
@@ -4393,42 +4346,9 @@ var store = [
     
       
       {
-        "title": "Pre-Configured Rule for Resync Bucket",
-        "url": "/rule/preconfigured-rule-for-resync-bucket/",
-        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Pre-Configured Rule for Log Bucket",
-        "url": "/rule/preconfigured-rule-for-log-bucket/",
-        "excerpt": "Rules are a definite task, configured to perform Actions based on the type of events encountered during or after execution...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Pre-Configured Rule for Detailed Sync Report",
         "url": "/rule/preconfigured-rule-for-detailed-sync-report/",
         "excerpt": "Scenario Workflows are scheduled for it to run as per the requirement. Workflows can either have the result as Success...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Default Rule for Data Purge Policy",
-        "url": "/rule/default-rule-for-data-purge-policy/",
-        "excerpt": "IT organizations mostly struggle with data volume that accumulates and increases the overhead of operational cost. Due to the sheer...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4855,17 +4775,6 @@ var store = [
     
       
       {
-        "title": "Cloud Appresource Functions",
-        "url": "/processflow/cloud-appresource-functions/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Export and Import Lookup",
         "url": "/processflow/export-and-import-lookup/",
         "excerpt": "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
@@ -5056,6 +4965,17 @@ var store = [
         "title": "Splitter Node",
         "url": "/processflow/working-with-processflow-splitter/",
         "excerpt": "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Cloud Appresource Functions",
+        "url": "/processflow/cloud-appresource-functions/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
