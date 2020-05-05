@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Rule"
 menus: 
-    preconfigurerule:
+    defaultrule:
         title: "Pre-Configured Rule for Misfire Event"
         weight: 16
         icon: fa fa-wpexplorer

@@ -16,7 +16,7 @@ In today's world,organizations are having multiple data sources.With distrubuted
 
 By designing and building an API,one can connect to any data source,be it a Database or any REST API or a SOAP based API and thus can easily manage all these data sources.
 
-Here is how one can connect to a data source.
+## Steps to connect to a data source.
 
 If you are creating **API proxy** for the `First Time`, you are being presented with a Wizard like this.
 
@@ -36,6 +36,6 @@ If you are creating **API proxy** for the `First Time`, you are being presented 
    Schema `OCRD` and Action `Insert`.
 
    If you want to know more about how you can import schema and actions for an app
-   [Click here](/getting-started/) 
+   [Click here](/transformation/working-with-schemas-action-filter/) 
 
 In this way,one can connect to a data source very easily.

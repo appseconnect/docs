@@ -16,9 +16,6 @@ Choose Rule option available in the Rules section of the APPSeCONNECT portal.
 
 Users/Implementers of APPSeCONNECT can activate these rules from the [Choose Rule](/rule/choose-rule/) section and can modify or configure as per the requirement of the user. 
 
-The rules that are preconfigured with APPSeCONNECT are given below:
+The rule that is preconfigured with APPSeCONNECT are given below:
 
-1.	[Pre-configured rule for Misfire Event](/rule/preconfigured-rule-for-misfire-event/)
-2.	[Pre-configured rule for Resync Bucket](/rule/preconfigured-rule-for-resync-bucket/)
-3.	[Pre-configured rule for generation of detailed sync report](/rule/preconfigured-rule-for-detailed-sync-report/)
-4.	[Pre-configured rule for Log Bucket](/rule/preconfigured-rule-for-log-bucket/)
+1.	[Pre-configured rule for generation of detailed sync report](/rule/preconfigured-rule-for-detailed-sync-report/)

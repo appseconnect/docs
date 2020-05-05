@@ -107,7 +107,7 @@ from the drop-down option depending upon the Response.
 
 ![MultipleActions_OneProxy](/staticfiles/api-management/media/MultipleActions_OneProxy.png)  
 
-### Steps to follow while editing your proxy endpoint
+### Steps to edit your proxy endpoint
 
 The Edit screen of proxy provides you a tree view which lets you edit individual section of the API, adding new sections,
 investigate policies or execute the documentation.

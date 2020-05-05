@@ -36,11 +36,11 @@ You will find two options here.
 to a remote data source.
 Upon clicking on Create App button,you are being introduced to APP Wizard.
 
-[Here is how you can create a custom App for your organization](/getting-started/)
+[Here is how you can create a custom App for your organization](/configuring%20appseconnect/configurations/#a-create-custom-a)
 
 After saving your app, you need to build the data structure for your app.
 
-[Here is how you can create app schema, attributes and actions](/getting-started/#importing-schemas-and-actions-of-an-application)
+[Here is how you can create app schema, attributes and actions](/configuring%20appseconnect/configurations/)
 
 You also need to set up protocol and template for your app.
 

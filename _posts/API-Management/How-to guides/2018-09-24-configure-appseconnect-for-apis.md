@@ -15,13 +15,13 @@ menus:
 ---
 APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.
 
-##### Configuring APPSeConnect For APIs : 
+## Configuring APPSeConnect For APIs 
 
 Follow these steps to configure a APPSeCONNECT Proxy.
 
 1. [Create an account in APPSeCONNECT Portal](https://www.appseconnect.com/free-trial/)
 2. [Configure Environment for your project](/deployment/Deployment-Configuration/)
-3. [Choosing Back-end Apps](/getting-started/)
+3. [Choosing Back-end Apps](/api-management/choosing-backend-apps/)
 
 Afterwards, you have to register a URL for your organization.
 

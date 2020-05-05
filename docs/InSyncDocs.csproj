@@ -641,6 +641,8 @@
     <Content Include="staticfiles\processflow\media\mapper\processflow_renderer3.png" />
     <Content Include="staticfiles\processflow\media\mapper\processflow_renderer4.png" />
     <Content Include="staticfiles\processflow\media\mapper\processflow_renderer5.png" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_splitter2.PNG" />
+    <Content Include="staticfiles\processflow\media\mapper\processflow_splitter_properties.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\xpath-mapping-processflow1.PNG" />
     <Content Include="staticfiles\processflow\media\mapper\xpath-mapping-processflow2.PNG" />
     <Content Include="staticfiles\processflow\media\process flow-architecture-01.png" />
@@ -1226,9 +1228,13 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-19-cloud-appresource-functions.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-19-protocol-implementation.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-24-defining-variables-in-processflow-mapping .md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-26-advance-mapping-render-processflow.md" />
     <None Include="_posts\ProcessFlow Management\enable-tracking-fields.md" />
+    <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-05-05-working-with-processflow-merger.md" />
+    <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-05-04-working-with-processflow-splitter.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-15-processflow-nodes-and-links.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-working-with-get.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-processflow-app.md" />
@@ -1239,6 +1245,7 @@
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-17-creating-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-16-designer-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-redeploying-processflow.md" />
+    <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-19-delete-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-snapshot-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-24-xpath-in-processflow-mapping.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-22-steps-to-define-logic-over-destination-mapping.md" />
@@ -1395,10 +1402,10 @@
     <None Include="_posts\Rule-Management\DefaultRule\2019-06-21-default-rule-for-data-purge-policy.md" />
     <None Include="_posts\Rule-Management\DefaultRule\2019-06-21-default-rule-for-morning-report.md" />
     <None Include="_posts\Rule-Management\DefaultRule\2019-06-21-default-rule-overview.md" />
-    <None Include="_posts\Rule-Management\PreconfiguredRule\2019-03-17-preconfigured-rule-for-misfire-event.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\2019-03-17-preconfigured-rule-for-misfire-event.md" />
     <None Include="_posts\Rule-Management\PreconfiguredRule\2019-03-17-preconfigured-rule-overview.md" />
-    <None Include="_posts\Rule-Management\PreconfiguredRule\2019-06-18-preconfigured-rule-for-resync-bucket.md" />
-    <None Include="_posts\Rule-Management\PreconfiguredRule\2019-06-19-preconfigured-rule-for-log-bucket.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\2019-06-18-preconfigured-rule-for-resync-bucket.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\2019-06-19-preconfigured-rule-for-log-bucket.md" />
     <None Include="_posts\Rule-Management\PreconfiguredRule\2019-06-20-preconfigured-rule-for-detailed-sync-report.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-overview-adapters.md" />

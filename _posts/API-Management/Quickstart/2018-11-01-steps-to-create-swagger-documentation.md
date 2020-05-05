@@ -27,7 +27,7 @@ The Proxy API section will guide the user to create a new API, Provide Basic Inf
 backend services (The backend needs to be configured correctly by specifying the Application, Schema, and Action), The outboud policies,
 and Response setup of the API.  
 
-## Steps to Create Swagger Documentation:
+## Steps to Create Swagger Documentation
 
 1. Go to **API** section from the left side menu.
 ![api-swagger](/staticfiles/api-management/media/api-swagger.png)

@@ -15,6 +15,7 @@ menus:
 User Authentication is now done in the API Level to ensure Authenticated Approach when working with Proxy API,
 Swagger Documentation and Applying Action Parameters to Action Filter.
 
+## Steps to User Authentication 
 
 1. Go to APPSeCONNECT Portal> API> Proxy> Click on the AUTHENTICATION button(Top Right Corner) on the APPSeCONNECT Cloud Portal.  
 ![authentication-proxy](/staticfiles/api-management/media/authentication-proxy.png)

@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Rule"
 menus: 
-    preconfigurerule:
+    defaultrule:
         title: "Pre-Configured Rule for Resync Bucket"
         weight: 17
         icon: fa fa-wpexplorer

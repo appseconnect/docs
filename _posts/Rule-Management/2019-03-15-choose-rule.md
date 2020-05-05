@@ -16,7 +16,7 @@ token configurations and as schedule. The records captured are generated and sen
 to the user such that the user can successfully track the issues and take action 
 accordingly. 
 
-Below are the steps given for activating Pre-Configured rule.   
+## Steps for activating Pre-Configured rule.   
 1. Login to the portal & Navigate to the Manage > Rules. You can view the Rules Interface. Click on the Choose Rule button.  
 2. On clicking choose rule button, you get a slider menu with list of rules that can be activated. You can view all the pre-configured rules in the list. Click on the **Activate** button.  
 ![choose-rule1](/staticfiles/rules/media/choose-rule1.png)    
