@@ -15,7 +15,7 @@ menus:
 
 ## Mapping Levels
 
-Mapping is done at various level of Input Packet. Refer [here](/transformation/define-source-destination-transformation/)  
+Mapping is done at various level of Input Packet. Refer [here](/transformation/basic-of-source-destination-mapping/#source-destination-mapping)  
 ### Mapping at Attribute Level
 
 The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.  
@@ -81,7 +81,7 @@ Mapping should be done in the parent node for accessing the Enable/Disable featu
 
 **Steps to implement hierarchical rendering on mapping**
 1.	Login the APPSeCONNECT Portal.
-2.	Navigate to the touchpoints area after [creating a connection](/getting-started/#creating-connection--executing-the-touchpoint) 
+2.	Navigate to the touchpoints area after [creating a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) 
 3.	Choose any touchpoint and click on the Transform button.
 4.  On `expanding the schema object`, all the `complex objects and the complex objects collection` are displayed.
     ![hierarchial-rendering1](/staticfiles/Transformation/media/hierarchial-rendering1.png) 
@@ -103,7 +103,7 @@ enabled, rest all other child nodes on that tree, remains disabled.
 
 ## Pre-requisites for Mapping
 1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Select the Application. [Click HERE](/getting-started/) to know more about selecting of Applications.
-3. Create a Connection. [Click HERE](/getting-started/) to know more.
+2. Select the Application. [Click HERE](/configuring%20appseconnect/configurations/#process-of-choosing-app) to know more about selecting of Applications.
+3. Create a Connection. [Click HERE](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) to know more.
 
 

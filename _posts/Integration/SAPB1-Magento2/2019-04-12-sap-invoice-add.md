@@ -21,7 +21,7 @@ of the [integration process](/integration/SAPB1-Magento2/).**
 
 1.	[SAP Business One Add-On](/connectors/Sap-Business-Addon/) for APPSeCONNECT is required to be installed. 
 2.	Login to the APPSeCONNECT Portal and [choose the app](/configuring%20appseconnect/configurations/#process-of-choosing-app) MAGENTO2 and SAP Business One (≥8.8) from the APPS Section. 
-3.	Navigate to the connections module and [create a connection](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint) for the selected applications.	
+3.	Navigate to the connections module and [create a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for the selected applications.	
 4.	Now navigate to the Workflow module. You can either [create a workflow](/workflow/steps-to-create-your-first-workflow/) or can choose a pre-packaged workflow from the [Choose Workflow](/workflow/steps-to-choose-your-workflow/) Option.
 5.	Before Integrating with SAP Business One and Magento2 all the master data needs to be synced. Master Data Sync is used for synchronizing set of core information (viz. Websites, Product Category, Attribute set, and Tax Class etc.) from Magento2 to SAP B1.
 
@@ -46,7 +46,7 @@ Click here (will navigate to the Order Add Document) to know about the [Lookup M
 ## Attribute Mapping/Transformation
 
 Following the Provided Mapping, the user can sync the Order Add Workflow from Magento2 to SAP Business One. 
-To know more, see  [Mapping & Transformation Techniques](/transformation/overview-usecase/).
+To know more, see  [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
 
 1.	**Mapping for the `ComplexObject Document_Lines`**
 

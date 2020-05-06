@@ -80,7 +80,7 @@ View the image below to define the Action Filters.
 
 ## Integration Data Survey
 
-The user can survey the data by viewing the [Processed Snapshot]() from the node level of the workflow.
+The user can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/) from the node level of the workflow.
 This Snapshot View displays the successful execution of the workflow.
 
 ![simpleprdct_navmagemulti14](/staticfiles/integration/media/simpleprdct_navmagemulti14.png)

@@ -18,8 +18,8 @@ This document will help you to know about the Source-Destination Mapping in APPS
 ## Pre-requisites for Source and Destination Mapping
 
 1.	Valid credentials for logging into the APPSeCONNECT Portal.
-2.	[Choose APP](/getting-started/) or [Create APP](/getting-started/)
-3.	[Create Connection template](/getting-started/) 
+2.	[Choose APP](/configuring%20appseconnect/configurations/#process-of-choosing-app) or [Create APP](/configuring%20appseconnect/configurations/#create-application)
+3.	[Create Connection template](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) 
 The pathway for source-destination mapping section is provided [here](/transformation/overview/).
 
 ## Source-Destination Mapping

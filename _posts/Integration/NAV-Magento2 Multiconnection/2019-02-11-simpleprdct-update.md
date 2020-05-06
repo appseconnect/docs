@@ -20,7 +20,7 @@ how the integration process can be executed through workflow for Updating a `Sim
 
 In this integration scenario, multiple connections have been made for Updating Simple Products from Ms Dynamics NAV to Magento2 (along with multiple Magento websites from a single Magento admin). 
 
-As a pre-requisite, the user needs to create and sync the Simple Products first. [Click here](/simple-productadd/), to know more about creating simple products in MS Dynamics NAV.
+As a pre-requisite, the user needs to create and sync the Simple Products first. [Click here](/integration/simple-productadd/#brief-description), to know more about creating simple products in MS Dynamics NAV.
 For updating Simple Products from Ms Dynamics NAV to Magento2 (Multistore), these are the changes that could be performed for updating a configurable product.
 
 * Updates in Web Product Details CP Page: The user can update the WebAttributeSetId, the Web TaxClass Id,  WebDescription, WebShortDescription.

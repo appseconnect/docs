@@ -18,10 +18,10 @@ The basic pre-requisite and list of Master Data Processess for Integration is gi
 ## Prerequisites of Integration
 
 1.	Login to the APPSeCONNECT Portal and [choose the app](/configuring%20appseconnect/configurations/#process-of-choosing-app) MAGENTO2 and SAP Business One (≥8.8)
-2.	Navigate to the connections module and [create a connection](/getting-started/#creating-connection--executing-the-touchpoint) for both the selected applications.	
+2.	Navigate to the connections module and [create a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for both the selected applications.	
 3.	Now navigate to the Workflow module, you can either [create a workflow](/workflow/steps-to-create-your-first-workflow/) or 
     can [choose a pre-packaged workflow](/workflow/steps-to-choose-your-workflow/).
-4.	Before Integrating with [SAP Business One](/connectors/Sap-Business-One/) and [Magento2](/connectors/Magento2/), all the master data needs to be synced. Master Data Sync is used 
+4.	Before Integrating with [SAP Business One](/connectors/Sap-Business-One/) and [Magento2](/connectors/magento2/), all the master data needs to be synced. Master Data Sync is used 
     for synchronizing set of core information (viz. Websites, Product Category, Attribute set, and Tax Class etc.) from E-commerce database to SAP B1. Users need to make sure the [environment](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) is configured accordingly. 
 5. Install [SAP Addon](/connectors/Sap-Business-Addon/) for integration.
 
@@ -36,7 +36,7 @@ h.  Master Data Add [Category]: - All the information about the Magento product 
 
 Once all the core information is synced, you can proceed with further integrations. 
 
-You will also get detailed understanding of the [SAPB1](/connectors/Sap-Business-One/) & [Magento2](/connectors/Magento2/) application agent configuration, endpoints, attibutes and actions required for integration.
+You will also get detailed understanding of the [SAPB1](/connectors/Sap-Business-One/) & [Magento2](/connectors/magento2/) application agent configuration, endpoints, attibutes and actions required for integration.
 
 ## Table of Integration scenarios for SAPB1-Magento2 Application is given below:
 
