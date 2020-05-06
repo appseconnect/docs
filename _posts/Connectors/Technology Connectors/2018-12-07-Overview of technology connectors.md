@@ -16,14 +16,14 @@ technology connectors which can connect any data source having standard protocol
 established. The connectors are plug and play oriented and hence within APPSeCONNECT one can 
 easily add a technology connector and connect an App using popular technology. 
 
-APPSeCONNECT allows custom development of connectors. As these technology connectors are more inclined towards
+APPSeCONNECT allows custom development of connectors. As these [technology connectors](/configuring%20appseconnect/configurations/#b-technology-app-creation) are more inclined towards
 own custom made applications or custom data sources, the connection need to be implemented correctly 
 within the application such that data can freely flow from the data source to the other end of the application. 
 
 |Connector Name|Supported Protocol|Description|
 |---|---|---------|
-|HTTP|REST|Connects to any HTTP based RESTful API using standard authentication mechanisms support by the REST protocol|
-|Database|OLE Database|Connects to any database which supports OLE drivers. The protocol uses standard OLE drivers in the environment and supports a wide variety of databases|
+|HTTP|[REST](/connectors/Overview-of-GenericRest-Adapters/)|Connects to any HTTP based RESTful API using standard authentication mechanisms support by the REST protocol|
+|Database|[OLE Database](/connectors/Overview-of-OLEDB-Adapter/)|Connects to any database which supports OLE drivers. The protocol uses standard OLE drivers in the environment and supports a wide variety of databases|
 |File System|File|Connects to a disk folder or files, reads in different formats and connects the data to APPSeCONNECT. This connector is suitable in scenarios where you generate files in the file system both in network drive or in local machine|
 |FTP File System|FTP|Connects to a remote location using File transfer protocol to download or upload file to a folder structure.|
   

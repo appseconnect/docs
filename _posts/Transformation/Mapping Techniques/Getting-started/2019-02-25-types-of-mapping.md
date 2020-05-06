@@ -72,7 +72,7 @@ The generalised structure of the `choose-when` condition is:
 
 **4. Function Mapping** - 
 
-Prerequisite: Knowledge about [AppResource functions]().
+Prerequisite: Knowledge about [AppResource functions](/transformation/using-library-methods/).
 
 * AppResource functions can be deployed for facilitating the required data transformation between the source and destination application.
 * To use AppResource functions you only require to know the fields/variable you desire to map along with the name of the function.
@@ -94,7 +94,7 @@ The native AppResource function that we use for this purpose is 'sourcelib' or '
 `Structure of a query in mapping is`
 destinationlib:GetUniqueId(",",",") where we provide the required field the schema and the parameters in order.
 
-**6. Variable Mapping** - Click [Variable Mapping](/transformation/steps-to-cutomize-prebuilt-mapping/) to know in details.
+**6. Variable Mapping** - Click [Variable Mapping](/transformation/defining-variables-and-functions/) to know in details.
 
 **7. LookUp Mapping** - Click [Lookups Mapping](/transformation/using-lookups-for-value-exchange/) to know in details
 

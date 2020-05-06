@@ -14,8 +14,8 @@ menus:
 ## Process to Configure Basic Authentication in Rest Adapter - On Premise
 To configure the Basic Authentication Type for Rest Adapter follow the steps given below:
 
-1. [Login to APPSeCONNECT Portal](/getting%20started/user-registration-license/) and go to the app section to choose the desired application (Rest Supported Application).  
-2. [Create Technology Application](/configuring%20appseconnect/configurations/) using rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
+1. Login to APPSeCONNECT Portal and go to the app section to choose the desired application (Rest Supported Application).  
+2. [Create Technology Application](/configuring%20appseconnect/configurations/#b-technology-app-creation) using rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) between the application.  
  
 **Protip:** You can use either both technology app or one tech app and one prepackaged app while creating a connection. 
@@ -90,8 +90,8 @@ The touchpoint is executed for the Sync Process by clicking on the START SYNC NO
 
 Follow the steps given below to configure Basic Auth in Rest Adapter in Cloud Enviornment.
 
-1. [Login to APPSeCONNECT Portal](/getting%20started/user-registration-license/)  
-2. [Create Technology Application](/configuring%20appseconnect/configurations/) using rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
+1. Login to APPSeCONNECT Portal  
+2. [Create Technology Application](/configuring%20appseconnect/configurations/#b-technology-app-creation) using rest adapter. Choose `REST` option while creating technology application for REST based protocol.  
 3. [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) between the application.    
 
 **Protip:** You can use either both technology app or one tech app and one prepackaged app while creating a connection. 

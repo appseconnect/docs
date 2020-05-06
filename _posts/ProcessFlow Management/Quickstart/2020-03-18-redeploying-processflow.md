@@ -42,8 +42,10 @@ changes pertaining to redeloying a process flow.
    `On-Premise` then Hosted will be in diabled mode and vice-versa. Make sure to check the
     envirnonment is in conneced state.    
 ![Redeploy Processflow](../../staticfiles/processflow/media/redeploy-processflow.png) 
+
 **NOTE: If the environment is in disconnected state, you will get an error message -
 `Environment is not connected` and thus you cannot proceed with further deployment steps**    
+
 6. Click NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.
 7. The screen navigates to the Set-up connection section of the Deploy wizard. Select the credential from the drop down, 
 for the respective application used in the Process Flow.Previously chosen credentials will be selected if exists in the process flow,

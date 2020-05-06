@@ -84,7 +84,7 @@ public class SyncInfoDataTable : ObjectBase
 The model class represents one single row of a Table. First of all, to define a model, you must Inherit it from `ObjectBase`.
 
 The first thing to look at is the name of the Table. You can see we have tried to create a table named SyncInfo. The [TableAttribute](http://isdn.appseconnect.com/html/D1DCF68E.htm) is used to annotate a model class with table attributes. 
-You can specify [Name](http://isdn.appseconnect.com/html/5F039121.htm) and [DataLimit](http://isdn.appseconnect.com/html/53EDA623.htm) for a table. The [DataLimit](http://isdn.appseconnect.com/html/53EDA623.htm) property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest. 
+You can specify [Name](http://isdn.appseconnect.com/html/5F039121.htm) and [DataLimit](http://isdn.appseconnect.com/html/53EDA623.htm) for a table. The DataLimit property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest. 
 
 The Properties on the other hand are annotated using [`ColumnAttribute`](http://isdn.appseconnect.com/html/72A02280.htm). The Name of the Column needs to be unique for each table and there must be its data type defined. 
 You can also specify the [DefaultValue](http://isdn.appseconnect.com/html/824D69BC.htm) for each column, such that if no data is passed in, the property will get a Default value. You can also specify various attributes to the property.

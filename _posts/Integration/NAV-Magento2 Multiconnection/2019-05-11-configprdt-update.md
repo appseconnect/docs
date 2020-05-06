@@ -20,7 +20,7 @@ integration process can be executed through workflow for `Updating a Configurabl
 In this integration scenario, multiple connections have been made for Updating Configurable Products from Ms Dynamics NAV to Magento2 (along with multiple Magento websites from a single Magento admin). 
 
 As a pre-requisite, the user needs to create and sync the Simple Products (child items) first, followed by the sync process of adding Configurable Products. 
-[Click here](/simple-productadd/), to know more about creating simple products in MS Dynamics NAV. For knowing about the addition of Configurable items, [Click Here](/configproduct-add).
+[Click here](/integration/simple-productadd/), to know more about creating simple products in MS Dynamics NAV. For knowing about the addition of Configurable items, [Click Here](/integration/configproduct-add/).
 
 For updating Configurable products from Ms Dynamics NAV to Magento2 (Multistore), these are the changes that could be performed for updating a configurable product.
 
