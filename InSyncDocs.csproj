@@ -109,9 +109,6 @@
     <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
     <Content Include="assets\js\_main.js" />
     <Content Include="banner.js" />
-    <Content Include="bin\Debug\staticfiles\Transformation\media\process-of-transformation.png" />
-    <Content Include="bin\Debug\staticfiles\Transformation\media\process-of-transformation2.png" />
-    <Content Include="bin\Debug\staticfiles\Transformation\media\process-of-transformation3.png" />
     <Content Include="courses.html" />
     <Content Include="favicon.ico" />
     <Content Include="feed.xml" />
