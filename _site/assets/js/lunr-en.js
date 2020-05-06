@@ -2267,11 +2267,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Cloud Appresource Functions",
+      excerpt: "\n",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 250
+    });
+    
+  
+    idx.add({
       title: "Merger Node",
       excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 250
+      id: 251
     });
     
   
@@ -3494,7 +3503,7 @@ var store = [
       
       {
         "title": "Shopify",
-        "url": "/connectors/Shopify/",
+        "url": "/connectors/shopify/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your choosen application is Shopify, such as...",
         "teaser":
           
@@ -3780,7 +3789,7 @@ var store = [
       
       {
         "title": "ZohoCRM V2.0",
-        "url": "/connectors/Zohocrmv2/",
+        "url": "/connectors/zohocrmv2/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need...",
         "teaser":
           
@@ -4088,7 +4097,7 @@ var store = [
       
       {
         "title": "Sage300",
-        "url": "/connectors/Sage300/",
+        "url": "/connectors/sage300/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAGE 300, credentials...",
         "teaser":
           
@@ -5036,6 +5045,17 @@ var store = [
         "title": "Splitter Node",
         "url": "/processflow/working-with-processflow-splitter/",
         "excerpt": "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Cloud Appresource Functions",
+        "url": "/processflow/cloud-appresource-functions/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

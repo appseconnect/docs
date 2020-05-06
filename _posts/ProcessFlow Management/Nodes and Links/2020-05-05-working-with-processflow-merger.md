@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Merger Node" 
+        title: "Working with Merger" 
         identifier: mergerprocesflow
 ---
 ### What is Merger Node?
@@ -20,7 +20,7 @@ This node is used to merge smaller data chunks into a single data packet. Like a
 
 ### Working Principle
 
-`MERGER` node in APPSeCONNECT workflow used to take smaller data packets and merge them into single data packet.
+`MERGER` node in APPSeCONNECT processflow used to take smaller data packets and merge them into single data packet.
 
 For example: If there are 20 files or data chunks each of which contains a customer data with the below XML format. All the files will be merge them into single file in a batch size of 2. So, in the XPATH section the values are provided as following:
  `XPATH = //BusinessPartners`, Batch Size = 2 and the Entity name = `Envelope`.
