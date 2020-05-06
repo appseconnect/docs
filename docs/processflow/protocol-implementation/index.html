@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="">
+<meta name="description" content="Protocol Implementation for Applications in Process Flow.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Protocol Implementation for Applications in Process Flow.">
 
 
 
@@ -2058,7 +2058,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Protocol Implementation for Applications">
-        <meta itemprop="description" content="">
+        <meta itemprop="description" content="Protocol Implementation for Applications in Process Flow.">
         <meta itemprop="datePublished" content="March 19, 2020">
         
 
@@ -2127,7 +2127,7 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2139,11 +2139,105 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#prerequisites-for-protocol-implementation-in-process-flow">Prerequisites for Protocol Implementation in Process Flow:</a></li>
+  <li><a href="#steps-to-setup-protocol-in-process-flow">Steps to setup Protocol in Process Flow:</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <h1 id="protocol-implementation-for-applications-in-process-flow">Protocol Implementation for Applications in Process Flow.</h1>
+
+<p>Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One is a SOAP based but follows multiple sub protocols for communicating with other applications with respect to data transfer.</p>
+
+<p>Irrespective of data, SAP Business One follows these sub protocols.</p>
+
+<p>For Eg:</p>
+
+<ul>
+  <li>For creating master data in SAP Business One, you need work with the protocol <strong>DI Server Service</strong>.</li>
+  <li>For creating general transactional data like Business Partner, Products etc. you need to work with the protocol <strong>DI Server Object</strong>.</li>
+</ul>
+
+<p>SAP Business One follows two more protocols <strong>DI API</strong> &amp; <strong>FTP</strong> for other purposes as well with respect to data. As an user, for integrating data you need to understand the protocol structure of the application you are working with, before implementing protocols in APPSeCONNECT Process Flow.</p>
+
+<p><strong><em>Note</em></strong>: <em>You can anytime view the differences of these protocols in XSLT preview of Mapper Node.</em></p>
+
+<h2 id="prerequisites-for-protocol-implementation-in-process-flow">Prerequisites for Protocol Implementation in Process Flow:</h2>
+
+<ol>
+  <li>
+    <p>You need to have basic knowledge of the protocol used by the application selected by you.</p>
+  </li>
+  <li>
+    <p>You need to design a Process Flow before implementing Protocol. <a href="/processflow/creating-processflow/">Click Here</a> for the steps to design a process flow.</p>
+  </li>
+  <li>
+    <p>Protocol implementation is done only for the application in POST operation. Therefore you need to design the Process flow with you application in destination.</p>
+  </li>
+</ol>
+
+<h2 id="steps-to-setup-protocol-in-process-flow">Steps to setup Protocol in Process Flow:</h2>
+
+<p><strong><em>Note</em></strong>: <em>Here we will demonstrate you with the steps to implement and setup Protocol keeping SAP business One in Destination. The flow remains the same if you are working with other application as well apart of SAP Business One</em>.</p>
+
+<ol>
+  <li>
+    <p>Login to the Portal and Navigate to the <a href="/processflow/overview-of-processflow/">Process Flow</a> section. Click on the new button to <a href="/processflow/creating-processflow/">create a new Process Flow</a>.</p>
+  </li>
+  <li>
+    <p>Design the process flow keeping the selected application in Destination (In this case SAP Business One).</p>
+  </li>
+  <li>
+    <p>On dragging the <a href="/processflow/working-with-POST/">destination application</a>, the Node Configuration Window opens.</p>
+  </li>
+</ol>
+
+<p>[Image]</p>
+
+<ol>
+  <li>You need to select the <strong>Protocols</strong> from the drop-down. The protocols would be displayed as per the App version selected. For SAP Business One (version &gt;= 8.8), you will get the following protocols.</li>
+</ol>
+
+<p>[Image]</p>
+
+<ol>
+  <li>
+    <p>Click on the SAVE button after all the mandatory fields are filled up.</p>
+  </li>
+  <li>
+    <p>Link up the Node and Save the Process Flow. Click on the Node configuration Button of the <a href="/processflow/working-with-mapper/">Mapper Node</a>. The Mapper Window opens.</p>
+  </li>
+  <li>
+    <p>Click on the <strong>Preview</strong> button to view the generated XSLT with respect to the chosen protocol.</p>
+  </li>
+  <li>
+    <p>When the Protocol is selected as <strong>DI API</strong> you get the following XSLT Preview.</p>
+  </li>
+</ol>
+
+<p>[Image]</p>
+
+<ol>
+  <li>When the Protocol is selected as <strong>DI Server Object</strong>, you get the following XSLT Preview.</li>
+</ol>
+
+<p>[Image]</p>
+
+<ol>
+  <li>When the Protocol is selected as <strong>DI Server Service</strong>, you get the following XSLT Preview</li>
+</ol>
+
+<p>[Image]</p>
+
+<ol>
+  <li>When the protocol is selected as <strong>FTP</strong>, you get the the following XSLT Preview.</li>
+</ol>
+
+<p>[Image]</p>
+
+<p>Following the above process you can successfully select a protocol for an application performing POST operation.</p>
+
 
                 
             </section>

@@ -2115,7 +2115,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Protocol Implementation for Applications",
-      excerpt: "\n",
+      excerpt: "Protocol Implementation for Applications in Process Flow. Applications are built with protocols for making them communicate with network resources and...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 233
@@ -2268,7 +2268,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Cloud Appresource Functions",
-      excerpt: "\n",
+      excerpt: "Cloud Appresource Functions for Process Flow Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 250
@@ -4868,7 +4868,7 @@ var store = [
       {
         "title": "Protocol Implementation for Applications",
         "url": "/processflow/protocol-implementation/",
-        "excerpt": "\n",
+        "excerpt": "Protocol Implementation for Applications in Process Flow. Applications are built with protocols for making them communicate with network resources and...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5055,7 +5055,7 @@ var store = [
       {
         "title": "Cloud Appresource Functions",
         "url": "/processflow/cloud-appresource-functions/",
-        "excerpt": "\n",
+        "excerpt": "Cloud Appresource Functions for Process Flow Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

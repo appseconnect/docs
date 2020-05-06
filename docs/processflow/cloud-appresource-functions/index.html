@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="">
+<meta name="description" content="Cloud Appresource Functions for Process Flow">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Cloud Appresource Functions for Process Flow">
 
 
 
@@ -2058,7 +2058,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Cloud Appresource Functions">
-        <meta itemprop="description" content="">
+        <meta itemprop="description" content="Cloud Appresource Functions for Process Flow">
         <meta itemprop="datePublished" content="May 05, 2020">
         
 
@@ -2127,7 +2127,7 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2139,11 +2139,103 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#prerequisites-to-implement-cloud-appresource">Prerequisites to Implement Cloud Appresource:</a></li>
+  <li><a href="#steps-to-implement-cloud-appresource-functions-for-process-flow">Steps to Implement Cloud Appresource Functions for Process Flow:</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <h1 id="cloud-appresource-functions-for-process-flow">Cloud Appresource Functions for Process Flow</h1>
+
+<p>Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which is used for the data transformation from the source Application to the Destination Application. Appresources are library functions added to the DLL files. This Appresource functions are coded to perform a definite task. This document will help you to implement Cloud Appresource Function in Process Flow.</p>
+
+<h2 id="prerequisites-to-implement-cloud-appresource">Prerequisites to Implement Cloud Appresource:</h2>
+
+<ol>
+  <li>You need to have valid credentials to the Portal.</li>
+  <li>You need to have a defined Process Flow or you need to create a new Process Flow. (Link to Process Flow Creation Document)</li>
+  <li>You need to have the mapper node attached and saved with both Source and Destination App.</li>
+</ol>
+
+<h2 id="steps-to-implement-cloud-appresource-functions-for-process-flow">Steps to Implement Cloud Appresource Functions for Process Flow:</h2>
+
+<ol>
+  <li>Create a new Process flow or open an existing Process Flow for which you need to implement Cloud Appresource.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-1.png" alt="cloud1" /></p>
+
+<ol>
+  <li>Click on the Node Configuration Icon for the Mapper Node. The Mapper/Transformation window for that Process flow opens. Expand the <a href="/transformation/getting-started-with-mapping/#structure-of-mapping">transformation node</a>.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-2.png" alt="cloud2" /></p>
+
+<ol>
+  <li><strong>Open</strong> the attribute for which you need to implement and map the Cloud Appresource. Expand the Functions node to view the <strong>Cloud Appresource Sub-Node</strong>.</li>
+</ol>
+
+<p><img src="staticfiles\processflow\media\mapper\cloudappresource-3.png" alt="cloud3" /></p>
+
+<ol>
+  <li>For creating a new Cloud Appresource function, you need click the <strong>Blue coloured ADD (Plus Symbol) icon</strong>. The Cloud Appresource Interface opens.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-4.png" alt="cloud4" /></p>
+
+<ol>
+  <li>Provide the <strong>Description</strong> and <strong>Example</strong> to the cloud resource mapping for easy  user reference as why and how the cloud appresource is needed to be implemented.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-5.png" alt="cloud5" /></p>
+
+<ol>
+  <li>The user can choose from the <strong>Code snippet template</strong> and <strong>language fundamentals templates</strong> also. The templates can be added in the code panel by drag and drop.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-6.png" alt="cloud6" /></p>
+
+<ol>
+  <li>Code the Appresource and click on <strong>Validate</strong>. In case of error, validator will provide the area of the cause in the error message as shown below.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-7.png" alt="cloud7" /></p>
+
+<ol>
+  <li>
+    <p>Once validated successfully, Close the Code validator screen &amp; click on the <strong>SAVE</strong> button.</p>
+  </li>
+  <li>
+    <p>Expand the Cloud appresource Node for viewing the created function. Clicking on any of the function, will make it appear in the mapping Panel. You can also click on the <strong>edit button</strong> available beside the function name in the tree node, for making changes in the created Appresource function.</p>
+  </li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\mapper\cloudappresource-8.png" alt="cloud8" /></p>
+
+<ol>
+  <li>Once the mapping is done, click on the <strong>Save button</strong> to save the mapping.</li>
+</ol>
+
+<p>Following the process, you can successfully create &amp; define a Process Flow.</p>
+
+<p><strong><em>Note:</em></strong></p>
+
+<ul>
+  <li>
+    <p>Cloud Appresource functions can be created from Process Flow Mapper Node level &amp; from <a href="/accessing%20portal/accessing-portal/#b-choosing-app">App level</a>.</p>
+  </li>
+  <li>
+    <p>You need to define Cloud Appresource every-time while working with Mapper node for a new Process Flow</p>
+  </li>
+  <li>
+    <p>Also, you need to define the Cloud Appresource every-time while working with Multiple Mapper nodes.</p>
+  </li>
+  <li>
+    <p>Cloud Appresource created &amp; defined in App level of your organisation will be available when the app is used in the Process Flow, you need not have to create &amp; define a new function.</p>
+  </li>
+</ul>
+
 
                 
             </section>

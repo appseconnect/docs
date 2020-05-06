@@ -2232,7 +2232,7 @@ you want them as reference data for future transactions. In such cases, Transact
 <p>The model class represents one single row of a Table. First of all, to define a model, you must Inherit it from <code class="highlighter-rouge">ObjectBase</code>.</p>
 
 <p>The first thing to look at is the name of the Table. You can see we have tried to create a table named SyncInfo. The <a href="http://isdn.appseconnect.com/html/D1DCF68E.htm">TableAttribute</a> is used to annotate a model class with table attributes. 
-You can specify <a href="http://isdn.appseconnect.com/html/5F039121.htm">Name</a> and <a href="http://isdn.appseconnect.com/html/53EDA623.htm">DataLimit</a> for a table. The <a href="http://isdn.appseconnect.com/html/53EDA623.htm">DataLimit</a> property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest.</p>
+You can specify <a href="http://isdn.appseconnect.com/html/5F039121.htm">Name</a> and <a href="http://isdn.appseconnect.com/html/53EDA623.htm">DataLimit</a> for a table. The DataLimit property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest.</p>
 
 <p>The Properties on the other hand are annotated using <a href="http://isdn.appseconnect.com/html/72A02280.htm"><code class="highlighter-rouge">ColumnAttribute</code></a>. The Name of the Column needs to be unique for each table and there must be its data type defined. 
 You can also specify the <a href="http://isdn.appseconnect.com/html/824D69BC.htm">DefaultValue</a> for each column, such that if no data is passed in, the property will get a Default value. You can also specify various attributes to the property.
