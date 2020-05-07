@@ -1255,6 +1255,10 @@
     <None Include="_posts\ProcessFlow Management\2020-03-17-processflow-listing-page.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-15-overview-of-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-15-Quickstart-guide-to-processflow.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-misfire-event.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-resync-bucket.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-log-bucket.md" />
+    <None Include="_posts\Rule-Management\DefaultRule\default-rule-for-data-purge-policy.md" />
     <None Include="_posts\Security\2020-03-06-GDPR.md" />
     <None Include="_posts\Security\License-Management\2020-03-17-license-generation.md" />
     <None Include="_posts\Security\License-Management\2020-03-17-license-management.md" />
@@ -1396,13 +1400,9 @@
     <None Include="_posts\Rule-Management\2019-06-19-preconfigured-rule-for-log-bucket.md" />
     <None Include="_posts\Rule-Management\2019-06-21-data-purge-policy.md" />
     <None Include="_posts\Rule-Management\2019-06-21-default-rule-for-morning-report.md" />
-    <None Include="_posts\Rule-Management\DefaultRule\default-rule-for-data-purge-policy.md" />
     <None Include="_posts\Rule-Management\DefaultRule\2019-06-21-default-rule-for-morning-report.md" />
     <None Include="_posts\Rule-Management\DefaultRule\2019-06-21-default-rule-overview.md" />
-    <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-misfire-event.md" />
     <None Include="_posts\Rule-Management\PreconfiguredRule\2019-03-17-preconfigured-rule-overview.md" />
-    <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-resync-bucket.md" />
-    <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-log-bucket.md" />
     <None Include="_posts\Rule-Management\PreconfiguredRule\2019-06-20-preconfigured-rule-for-detailed-sync-report.md" />
     <None Include="_posts\SDK\2010-01-01-Overview of SDK.md" />
     <None Include="_posts\SDK\Developing Adapters\2010-01-01-overview-adapters.md" />
