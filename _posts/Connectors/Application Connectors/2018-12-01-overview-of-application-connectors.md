@@ -40,6 +40,6 @@ customizations might be needed for the organizations to support custom implement
 |[SAP Business One](/connectors/sap-business-one/)|ERP|SAP Business One is an ERP System which is supported by the APPSeCONNECT|>=v8.8 & SAP B1 S/L 9.0|
 |[Bamboo HR](/connectors/bamboohr/)|ERP|BambooHR is a cloud based Human Resource Platform which is one of the pre-packaged application of APPSeCONNECT|v1.0|
 |[ZohoCRM](/connectors/zohocrmv2/)|CRM|This is a cloud based CRM Application which is supported by APPSeCONNECT|v1.0 & v2.0|
-|[MS Dynamics NAV Business Central](/connectors/Dynamicsnav/)|ERP|This is an ERP System which comes as a pre-packaged application with APPSeCONNECT|≥ v2009R2 Generic|
+|[MS Dynamics Business Central](/connectors/dynamicsnav-business-central/)|ERP|This is an ERP System which comes as a pre-packaged application with APPSeCONNECT|≥ v2009R2 Generic|
 
 You can choose as many of the pre-packaged solution on the platform to connect between one another. 
