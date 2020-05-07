@@ -109,9 +109,6 @@
     <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
     <Content Include="assets\js\_main.js" />
     <Content Include="banner.js" />
-    <Content Include="bin\Debug\staticfiles\Transformation\media\process-of-transformation.png" />
-    <Content Include="bin\Debug\staticfiles\Transformation\media\process-of-transformation2.png" />
-    <Content Include="bin\Debug\staticfiles\Transformation\media\process-of-transformation3.png" />
     <Content Include="courses.html" />
     <Content Include="favicon.ico" />
     <Content Include="feed.xml" />
@@ -1228,13 +1225,13 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
-    <None Include="_posts\ProcessFlow Management\Mapper\2020-05-05-cloud-appresource-functions.md" />
-    <None Include="_posts\ProcessFlow Management\2020-03-19-protocol-implementation.md" />
+    <None Include="_posts\ProcessFlow Management\Mapper\cloud-appresource-functions.md" />
+    <None Include="_posts\ProcessFlow Management\protocol-implementation.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-24-defining-variables-in-processflow-mapping .md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-03-26-advance-mapping-render-processflow.md" />
     <None Include="_posts\ProcessFlow Management\enable-tracking-fields.md" />
-    <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-05-05-working-with-processflow-merger.md" />
-    <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-05-04-working-with-processflow-splitter.md" />
+    <None Include="_posts\ProcessFlow Management\Nodes and Links\working-with-processflow-merger.md" />
+    <None Include="_posts\ProcessFlow Management\Nodes and Links\working-with-processflow-splitter.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-15-processflow-nodes-and-links.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-working-with-get.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-processflow-app.md" />
