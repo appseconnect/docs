@@ -29,7 +29,7 @@ In this case, the quantity of the products is added by updating the inventory. T
 
 ![update_inventory1](/staticfiles/integration/media/update_inventory1.png)
 
-**Note: Click on the links for knowing the agent validation process in [Magento2](/connectors/Magento2/) and [SAP Business One](/connectors/Sap-Business-One/).**
+**Note: Click on the links for knowing the agent validation process in [Magento2](/connectors/magento2/) and [SAP Business One](/connectors/Sap-Business-One/).**
 
 ## Lookup Mapping
 
@@ -39,7 +39,7 @@ Not Required
 ## Attribute Mapping/Transformation
 
 Following the Provided Mapping, the user can sync the Simple Product Add from SAP Business One to Magento2. 
-To know more, see  [Mapping & Transformation Techniques](/transformation/advance-mapping-through-custom-renderer/).
+To know more, see  [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
 
 **Mapping for the `Inventory Update`**
 

@@ -16,7 +16,7 @@ This section of the document provide details of these filters and steps on how t
 
 ## Pre-requisites
 Require Valid APPSeCONNECT account.  
-1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)  
+1) Create REST based Connection & validate the connection either for [Basic](/connectors/BasicAuthentication/) or [OAuth2.0](/connectors/OAuth2.0/)
 2) [Create Workflow](/workflow/steps-to-create-your-first-workflow/)  
 3) [Create Touchpoints](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow) for the required connection  .
 

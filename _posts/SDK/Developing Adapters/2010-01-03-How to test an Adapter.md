@@ -16,7 +16,7 @@ appseconnect agent and use Visual Studio to debug the code.
 
 ## Steps to debug an adapter
 
-1. To start debugging the adapter, first you need to [configure](/home/) appseconnect portal taking your application into account. 
+1. To start debugging the adapter, first you need to [configure](https://docs.appseconnect.com/getting%20started/getting-started/) appseconnect portal taking your application into account. 
 2. Once the agent is installed on your premise you can [configure](/deployment/Deployment-Configuration/) the onpremise agent with credentails such that you can execute a process. 
 3. Now open the adapter code and use Debug -> Attach to Process.
 4. A window will popup, where you need to select InSync.eConnect.AppStarter.exe. 

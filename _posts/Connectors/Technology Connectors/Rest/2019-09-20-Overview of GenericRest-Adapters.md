@@ -1,5 +1,5 @@
 ---
-title: "Overview of Generic Rest Adapters"
+title: "Overview of Rest Adapters"
 toc: true
 tag: developers
 category: "Connectors"
@@ -27,8 +27,9 @@ application such that the application can fetch or send data to and fro to the a
 
 The REST adapter supports a number of [authentication](/connectors/Authentication-and-Authorization/) modules. 
 
-- [No Auth]()
+- No Auth
 - [Basic Auth](/connectors/BasicAuthentication/)
+- OAuth 1.0
 - [OAuth 2.0](/connectors/OAuth2.0/)
 
 ## Rest Protocol Supported Applications
@@ -36,7 +37,7 @@ The REST adapter supports a number of [authentication](/connectors/Authenticatio
 |Rest Supported Application Name|Rest API|  
 |---|---------|  
 |[Magento 2](/connectors/Magento2/)|[Magento API](https://devdocs.magento.com/guides/v2.3/get-started/rest_front.html)|
-|[Lightspeed]()|[Lightspeed API](https://retail-support.lightspeedhq.com/hc/en-us/articles/229129268-Understanding-the-API)|
+|[Lightspeed](/connectors/Lightspeed/)|[Lightspeed API](https://retail-support.lightspeedhq.com/hc/en-us/articles/229129268-Understanding-the-API)|
 |[Shopify](/connectors/Shopify/)|[Shopify API](https://help.shopify.com/en/api/reference)|
 |[Priority](/connectors/Priority/)|[Priority API](https://prioritysoftware.github.io/restapi/)|
 |[Zoho CRM](/connectors/Zohocrmv2/)|[Zoho CRM API](https://www.zoho.com/crm/developer/docs/api/overview.html)|
