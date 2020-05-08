@@ -35,6 +35,7 @@ Click New button in listing page.
 4. Now you can view the `DELETE` button which will be available next to `SAVE` button.    
 
 ![pfdelete3](\staticfiles\processflow\media\pfdelete3.png)
+
 5. You can delete a process flow just after saving by clicking on the `Delete` button. A pop up will appear 
 to run the process of deletion as shown below.  
 

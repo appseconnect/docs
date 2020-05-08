@@ -99,9 +99,12 @@ Follow the steps given below to configure Basic Auth in Rest Adapter in Cloud En
  {: .notice--info}    
 
 4. Go to the `App section` of the portal  and you can view the selected application.   
-5. Click Credential button for the choosen application and the following screen appears
+5. Click Credential button for the choosen application and the following screen appears. Click on the **`Add new Credential`** button.
 
 ![basic-cloud-credential](/staticfiles/connectors/media/technology-connector/basic-cloud-credential.png)  
+
+**Note:** If you don't have  a cloud environment created on your organisation, You will be getting this message **`Please create an cloud environment to Grant the credentials`** on clicking the **Add new Credential** button. 
+To know more about creating Cloud Environment, [Click Here](/deployment/Environment-Management/#adding-cloud-environment)
 
 Here you need to enter the following details as shown: 
 
