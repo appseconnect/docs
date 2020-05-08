@@ -62,6 +62,10 @@ OLEDB database application in the APPSeCONNECT Cloud Portal.
 2. Click on the credential Button.
 3. The Credential Page opens up. Click on the button to expand the node and then Click `ADD NEW CREDENTIAL`.
 ![Oledb-Cloud-Credential](/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png)
+
+**Note:** If you don't have  a cloud environment created on your organisation, You will be getting this message **`Please create an cloud environment to Grant the credentials`** on clicking the **Add new Credential** button. To know more about creating Cloud Environment, 
+[Click Here](/deployment/Environment-Management/#adding-cloud-environment)
+
 4.	Enter the Credential Name, Data Provider and the Connection String. 
 ![Oledb-Cloud-Credential-Input](/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png)
 5. Credential string is needed to be provided in this format always. 
