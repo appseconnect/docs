@@ -23,7 +23,7 @@ button is available in the [designer section](/processflow/designer-processflow/
 1. Login to the Portal and navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 Click New button in listing page.   
 
-![pfdelete1](\staticfiles\processflow\media\pfdelete1.png)
+![testimage](\staticfiles\processflow\media\testimage.png)
 
 2. You are now in the [designer](/processflow/designer-processflow/) section.  
 
