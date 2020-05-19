@@ -10,7 +10,7 @@ menus:
         icon: fa fa-file-word-o
         identifier: deleteprocessflow
 ---
-Deletinggggg option enables you to delete a process flow once you have designed it,
+Deleting option enables you to delete a process flow once you have designed it,
 [deployed](/processflow/deploying-and-executing-processfloww/) it or executed it. Deletion is an easy process for the user and this 
 button is available in the [designer section](/processflow/designer-processflow/) of the portal.
 
@@ -23,7 +23,7 @@ button is available in the [designer section](/processflow/designer-processflow/
 1. Login to the Portal and navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 Click New button in listing page.   
 
-![testimage](\staticfiles\processflow\media\testimage.png)
+![pfdelete1](\staticfiles\processflow\media\pfdelete1.png)
 
 2. You are now in the [designer](/processflow/designer-processflow/) section.  
 
