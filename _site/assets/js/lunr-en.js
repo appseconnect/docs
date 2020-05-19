@@ -1953,7 +1953,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Overview of ProcessFlow",
-      excerpt: "APPSeCONNECT Processsssss Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+      excerpt: "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 215
@@ -4634,7 +4634,7 @@ var store = [
       {
         "title": "Overview of ProcessFlow",
         "url": "/processflow/overview-of-processflow/",
-        "excerpt": "APPSeCONNECT Processsssss Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+        "excerpt": "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
