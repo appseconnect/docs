@@ -11,8 +11,7 @@ menus:
         identifier: processflow
 ---
 
-
-APPSeCONNECT Process Flowsss suite features an extensive interface that provide the ability to easily create digital maps 
+APPSeCONNECT Process Flows suite features an extensive interface that provide the ability to easily create digital maps 
 to make out robust process flows. The drag-and-drop interface is easy to use by any citizen integrator. With the aid of 
 Process Flow feature, users can now graphically organize, create and view the data flow of a process thereby enabling 
 customers to design integration anytime and anywhere with the help of our cloud portal. Thus, Process Flow supports 
