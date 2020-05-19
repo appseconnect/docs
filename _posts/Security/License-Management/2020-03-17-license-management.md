@@ -51,7 +51,7 @@ log in to the same Agent environment.**
  
 **NOTE: No implementer/partner/developer will be able to login separately for an organization which was available 
   for all earlier Agent versions of 4.3 and lower.However, the above Implementer/Developers can login using 
-  Temporary license (Link to the Rolling window document) key to access other organisation environments.**
+  [Temporary license](/license%20management/license-generation/) key to access other organisation environments.**
 
 
 
