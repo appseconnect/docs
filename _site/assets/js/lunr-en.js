@@ -2079,7 +2079,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Delete Processflow",
-      excerpt: "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+      excerpt: "Deletinggggg option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 229
@@ -4788,7 +4788,7 @@ var store = [
       {
         "title": "Delete Processflow",
         "url": "/processflow/delete-processflow/",
-        "excerpt": "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+        "excerpt": "Deletinggggg option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
