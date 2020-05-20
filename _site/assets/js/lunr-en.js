@@ -2079,7 +2079,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Delete Processflow",
-      excerpt: "Deletinggggg option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+      excerpt: "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 229
@@ -2240,11 +2240,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Sage300-Magento2",
+      title: "Sage300-Magento2 B2C",
       excerpt: "\n",
       categories: ["Integration"],
       tags: ["developers"],
       id: 247
+    });
+    
+  
+    idx.add({
+      title: "Customer Add",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 248
     });
     
   
@@ -4788,7 +4797,7 @@ var store = [
       {
         "title": "Delete Processflow",
         "url": "/processflow/delete-processflow/",
-        "excerpt": "Deletinggggg option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+        "excerpt": "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4984,8 +4993,19 @@ var store = [
     
       
       {
-        "title": "Sage300-Magento2",
+        "title": "Sage300-Magento2 B2C",
         "url": "/integration/sage300-magento2/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Customer Add",
+        "url": "/integration/customer-add/",
         "excerpt": "\n",
         "teaser":
           
