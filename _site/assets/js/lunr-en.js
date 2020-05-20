@@ -2240,11 +2240,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Sage300-Magento2",
+      title: "Sage300-Magento2 B2C",
       excerpt: "\n",
       categories: ["Integration"],
       tags: ["developers"],
       id: 247
+    });
+    
+  
+    idx.add({
+      title: "Customer Add",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 248
     });
     
   
@@ -4984,8 +4993,19 @@ var store = [
     
       
       {
-        "title": "Sage300-Magento2",
+        "title": "Sage300-Magento2 B2C",
         "url": "/integration/sage300-magento2/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Customer Add",
+        "url": "/integration/customer-add/",
         "excerpt": "\n",
         "teaser":
           
