@@ -2122,7 +2122,7 @@
 
 
 
-  4 minute read
+  6 minute read
 </p>
                 
                 
@@ -2191,8 +2191,85 @@ the Integration Techniques and the Troubleshooting issues.</p>
 <h2 id="steps-to-configure-magento2-credential-in-op-agent-with-access-token">Steps to Configure Magento2 Credential in OP Agent with Access Token:</h2>
 
 <ol>
-  <li>In the App Configurational Panel of the agent, Click on the + button beside the app Magento2.</li>
+  <li>
+    <p>In the App Configurational Panel of the agent, Click on the + button beside the app Magento2.</p>
+  </li>
+  <li>
+    <p>You can view the fields for validating the Magento2 adapter. The following are the fields for validating the adapter.</p>
+
+    <p>a.	<strong>API Path:</strong> You need to provide the Base URL of your Magento2 store admin. <a href="/connectors/magento2/#get-the-api-path">Click Here</a> to know about the API Path in Magento2.</p>
+
+    <p>b.	<strong>Username:</strong> You need to provide the Username of your Magento2 store.</p>
+
+    <p>c.	<strong>Password:</strong> You need to provide the Password of your Magento2 store.</p>
+
+    <p>d.	<strong>Integration Access Token:</strong> This the access token generated on your Magento 2.</p>
+  </li>
 </ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat1.png" alt="magentoat1" /></p>
+
+<ol>
+  <li>For generating the Integration Access token, login to the Magento2 Admin and Navigate to <code class="highlighter-rouge">System &gt; Extensions &gt; Integration.</code></li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat2.png" alt="magentoat2" /></p>
+
+<ol>
+  <li>Click on the <code class="highlighter-rouge">Add New Integration button</code>, in the Integration window.</li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat3.png" alt="magentoat3" /></p>
+
+<ol>
+  <li>Provide the <strong>Name</strong> (name of integration) and your current store <strong>password</strong> in the respective field.</li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat4.png" alt="magentoat4" /></p>
+
+<ol>
+  <li>
+    <p>Click on the API tab and choose the Resource Access. You can select either of the two options provided, ALL &amp; Custom. Once the resource access is provided, click on the SAVE button.</p>
+
+    <p>a.	<strong>ALL:</strong> Selecting this will provide the access to all the resources of your Magento 2 platform.</p>
+
+    <p>b.	<strong>Custom:</strong> You can select only those resources for which you want to provide the resource access. You can select the modules from the tree provided below.</p>
+  </li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat5.png" alt="magentoat5" /></p>
+
+<ol>
+  <li>On saving, you can view a list menu, where you can view the name of the configuration you provided. Click on the <strong>Activate</strong> button available in the list menu.</li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat6.png" alt="magentoat6" /></p>
+
+<ol>
+  <li>Click on the <strong>Allow</strong> button to allow the generation of the tokens.</li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat7.png" alt="magentoat7" /></p>
+
+<ol>
+  <li>You can view the generated tokens after clicking the allow button.</li>
+</ol>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat8.png" alt="magentoat8" /></p>
+
+<ol>
+  <li>Copy the generated Access Token and paste it in the OP Agent. Click on the SAVE button, followed by VALIDATE.</li>
+</ol>
+
+<p><em><strong>Note:</strong> <strong>It is mandatory to enable the checkbox for Integration Access Token, while validating the Provided Token.</strong></em></p>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat9.png" alt="magentoat9" /></p>
+
+<p><em><strong>Note:</strong> Working with Integration Access Token, you can skip providing the username and password as the token validates with the API link provided.</em></p>
+
+<p><img src="staticfiles\connectors\media\application-connector\magentoat10.png" alt="magentoat10" /></p>
+
+<p>Following the above steps you can successfully validate your Magento2 adapter using Integration Access Token.</p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
