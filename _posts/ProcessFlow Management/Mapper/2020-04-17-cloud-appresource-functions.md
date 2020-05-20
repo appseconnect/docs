@@ -26,7 +26,7 @@ Appresource Functions are the functions in APPSeCONNECT that are written in the 
 2. Click on the Node Configuration Icon for the Mapper Node. The Mapper/Transformation window for that Process flow opens. Expand the [transformation node](/transformation/getting-started-with-mapping/#structure-of-mapping).  
 ![cloud2](\staticfiles\processflow\media\mapper\cloudappresource-2.png)  
 3. **Open** the attribute for which you need to implement and map the Cloud Appresource. Expand the Functions node to view the **Cloud Appresource Sub-Node**.
-![cloud3](staticfiles\processflow\media\mapper\cloudappresource-3.png)  
+![cloud3](\staticfiles\processflow\media\mapper\cloudappresource-3.png)  
 4. For creating a new Cloud Appresource function, you need click the **Blue coloured ADD (Plus Symbol) icon**. The Cloud Appresource Interface opens.
 ![cloud4](\staticfiles\processflow\media\mapper\cloudappresource-4.png)  
 5. Provide the **Description** and **Example** to the cloud resource mapping for easy  user reference as why and how the cloud appresource is needed to be implemented.

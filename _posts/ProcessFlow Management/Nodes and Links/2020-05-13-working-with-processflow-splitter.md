@@ -13,8 +13,10 @@ menus:
 
 ### What is Splitter Node?
 
-This node is used to split a data packet into smaller chunks for processing in small batches. There are three components in a splitter node of a processflow
+This node is used to split a data packet into smaller chunks for processing in small batches. There are four components in a splitter node of a processflow
 as shown below. 
+
+**Node Description** : Here, you can provide a short description for the splitter node.
 
 **BatchSize**: Here you need to specify the number  of data to be present in each splitted data of the output file of the spiltter node.
 For example, suppose you have a data packet which contains 10 customer data and you applied a splitter 
@@ -32,7 +34,7 @@ breaking them into  smaller chunks go to the next process of transformation in t
 For example: if a packet contains 20 customer data. A batch size of 1 is defined in the splitter node,where XPATH  is  //items/item and Entity name as response/items. 
 So, after data passed through the Splitter node 20 individual XML data files will be created as output file where each file contains a single customer data.
 
-![Processflow Splitter Properties](../../../staticfiles/processflow/media/mapper/processflow_splitter_properties.PNG)
+![Processflow Splitter Properties](\staticfiles\processflow\media\splitter1.PNG)
 `For providing the properties of Split and Merger, XPath for the packets is needed to be known.` 
 
 The Parent node for the items present in the XSLT is the `XPATH` that needs to be given in the Split and Merger Property.
