@@ -1155,6 +1155,30 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/integration/customer-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/customer-update/" onclick="selectTab('/integration/customer-update/', event);" title="Go to Customer Update">Customer Update</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
@@ -2143,8 +2167,10 @@
                 
                 <h3 id="what-is-splitter-node">What is Splitter Node?</h3>
 
-<p>This node is used to split a data packet into smaller chunks for processing in small batches. There are three components in a splitter node of a processflow
+<p>This node is used to split a data packet into smaller chunks for processing in small batches. There are four components in a splitter node of a processflow
 as shown below.</p>
+
+<p><strong>Node Description</strong> : Here, you can provide a short description for the splitter node.</p>
 
 <p><strong>BatchSize</strong>: Here you need to specify the number  of data to be present in each splitted data of the output file of the spiltter node.
 For example, suppose you have a data packet which contains 10 customer data and you applied a splitter 
@@ -2162,7 +2188,7 @@ breaking them into  smaller chunks go to the next process of transformation in t
 <p>For example: if a packet contains 20 customer data. A batch size of 1 is defined in the splitter node,where XPATH  is  //items/item and Entity name as response/items. 
 So, after data passed through the Splitter node 20 individual XML data files will be created as output file where each file contains a single customer data.</p>
 
-<p><img src="../../../staticfiles/processflow/media/mapper/processflow_splitter_properties.PNG" alt="Processflow Splitter Properties" />
+<p><img src="\staticfiles\processflow\media\splitter1.PNG" alt="Processflow Splitter Properties" />
 <code class="highlighter-rouge">For providing the properties of Split and Merger, XPath for the packets is needed to be known.</code></p>
 
 <p>The Parent node for the items present in the XSLT is the <code class="highlighter-rouge">XPATH</code> that needs to be given in the Split and Merger Property.</p>
@@ -4212,8 +4238,48 @@ different Application.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
