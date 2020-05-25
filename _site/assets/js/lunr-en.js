@@ -2241,7 +2241,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Sage300-Magento2 B2C",
-      excerpt: "\n",
+      excerpt: "This section of the document will given you an overview of SAGE 300 - Magento 2 Integration and the subsequent...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 247
@@ -2249,8 +2249,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Add",
-      excerpt: "\n",
+      title: "Customer Add from Magento2 to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 248
@@ -2258,8 +2258,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Update",
-      excerpt: "\n",
+      title: "Customer Update from Magento2 to SAGE300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 249
@@ -2267,8 +2267,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "I/C Product Add",
-      excerpt: "\n",
+      title: "I/C Product Add from SAGE300 to Magento2",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 250
@@ -2276,8 +2276,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Sales Order Add",
-      excerpt: "\n",
+      title: "Sales Order Add from Magento 2 to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 251
@@ -2285,8 +2285,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "I/C Inventory Update",
-      excerpt: "\n",
+      title: "I/C Inventory Update from SAGE 300 to Magento2",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 252
@@ -5031,7 +5031,7 @@ var store = [
       {
         "title": "Sage300-Magento2 B2C",
         "url": "/integration/sage300-magento2/",
-        "excerpt": "\n",
+        "excerpt": "This section of the document will given you an overview of SAGE 300 - Magento 2 Integration and the subsequent...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5040,9 +5040,9 @@ var store = [
     
       
       {
-        "title": "Customer Add",
+        "title": "Customer Add from Magento2 to SAGE 300",
         "url": "/integration/customer-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5051,9 +5051,9 @@ var store = [
     
       
       {
-        "title": "Customer Update",
+        "title": "Customer Update from Magento2 to SAGE300",
         "url": "/integration/customer-update/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5062,9 +5062,9 @@ var store = [
     
       
       {
-        "title": "I/C Product Add",
+        "title": "I/C Product Add from SAGE300 to Magento2",
         "url": "/integration/ic-product-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5073,9 +5073,9 @@ var store = [
     
       
       {
-        "title": "Sales Order Add",
+        "title": "Sales Order Add from Magento 2 to SAGE 300",
         "url": "/integration/sales-order-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5084,9 +5084,9 @@ var store = [
     
       
       {
-        "title": "I/C Inventory Update",
+        "title": "I/C Inventory Update from SAGE 300 to Magento2",
         "url": "/integration/ic-inventory-update/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

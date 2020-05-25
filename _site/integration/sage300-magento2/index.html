@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="">
+<meta name="description" content="This section of the document will given you an overview of SAGE 300 - Magento 2 Integration and the subsequent chapters  will drive you to the process of integration between the applications.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="This section of the document will given you an overview of SAGE 300 - Magento 2 Integration and the subsequent chapters  will drive you to the process of integration between the applications.">
 
 
 
@@ -1156,31 +1156,31 @@
     
     
     <li class="menu-item-" data-url="/integration/customer-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/customer-update/" onclick="selectTab('/integration/customer-update/', event);" title="Go to Customer Update">Customer Update</a>
+        <a href="/integration/customer-update/" onclick="selectTab('/integration/customer-update/', event);" title="Go to Customer Update from Magento2 to SAGE300">Customer Update from Magento2 to SAGE300</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add from SAGE300 to Magento2">I/C Product Add from SAGE300 to Magento2</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add from Magento 2 to SAGE 300">Sales Order Add from Magento 2 to SAGE 300</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
+        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update from SAGE 300 to Magento2">I/C Inventory Update from SAGE 300 to Magento2</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
+        <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add from Magento2 to SAGE 300">Customer Add from Magento2 to SAGE 300</a>
         
     </li>
     
@@ -2077,7 +2077,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Sage300-Magento2 B2C">
-        <meta itemprop="description" content="">
+        <meta itemprop="description" content="This section of the document will given you an overview of SAGE 300 - Magento 2 Integration and the subsequent chapters  will drive you to the process of integration between the applications.">
         <meta itemprop="datePublished" content="May 15, 2020">
         
 
@@ -2158,11 +2158,63 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#table-of-integration-scenarios-for-sage300-magento2-application-is-given-below">Table of Integration scenarios for SAGE300-Magento2 Application is given below:</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <p>This section of the document will given you an overview of <strong>SAGE 300 - Magento 2</strong> Integration and the subsequent chapters  will drive 
+you to the process of integration between the applications.</p>
+
+<p>The basic pre-requisite for Integration is given below:</p>
+
+<p>•	You need to have valid credentials of APPSeCONNECT.
+•	You need to choose the application from the <a href="/configuring%20appseconnect/configurations/#process-of-choosing-app">Choose App</a> list
+•	You need to <a href="/workflow/steps-to-create-your-first-workflow/">design</a> or <a href="/workflow/steps-to-choose-your-workflow/">Choose the workflow</a> before integrating SAGE 300 &amp; Magento 2.
+•	You need <a href="/workflow/deploying-and-executing/">publish and deploy</a> the workflow prior to the integration.
+•	You need to validate the adapters for <a href="/connectors/sage300/">SAGE300</a> &amp; <a href="/connectors/magento2/">Magento 2</a> in the On-Premise Agent.</p>
+
+<h2 id="table-of-integration-scenarios-for-sage300-magento2-application-is-given-below">Table of Integration scenarios for SAGE300-Magento2 Application is given below:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Integration Areas</th>
+      <th>Source &amp; Destination Application</th>
+      <th>Dependencies for Integration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/integration/customer-add/">Customer Add</a></td>
+      <td>Magento2-SAGE300</td>
+      <td>Address Add (Only for B2C Customers)</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/customer-update/">Customer Update</a></td>
+      <td>Magento2-SAGE300</td>
+      <td>Address Update (Only for B2C customers)</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/ic-product-add/">I/C Product Add</a></td>
+      <td>SAGE300-Magento2</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/ic-inventory-update/">I/C Inventory Add</a></td>
+      <td>SAGE300-Magento2</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/sales-order-add/">Sales Order Add</a></td>
+      <td>NA</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Following the above list, you can successfully integrate each entity of the Sales Cycle for SAGE300 &amp; Magento2.</p>
 
                 
             </section>
@@ -4233,7 +4285,7 @@
                             <li>
                                 <a href="/integration/ic-inventory-update/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Inventory Update
+                                    I/C Inventory Update from SAGE 300 to Magento2
                                 </a>
                             </li>
                             
@@ -4244,7 +4296,7 @@
                             <li>
                                 <a href="/integration/sales-order-add/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Sales Order Add
+                                    Sales Order Add from Magento 2 to SAGE 300
                                 </a>
                             </li>
                             
@@ -4255,7 +4307,7 @@
                             <li>
                                 <a href="/integration/ic-product-add/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Product Add
+                                    I/C Product Add from SAGE300 to Magento2
                                 </a>
                             </li>
                             
@@ -4266,7 +4318,7 @@
                             <li>
                                 <a href="/integration/customer-update/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Customer Update
+                                    Customer Update from Magento2 to SAGE300
                                 </a>
                             </li>
                             
@@ -4277,7 +4329,7 @@
                             <li>
                                 <a href="/integration/customer-add/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Customer Add
+                                    Customer Add from Magento2 to SAGE 300
                                 </a>
                             </li>
                             
