@@ -2257,6 +2257,42 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Customer Update",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 249
+    });
+    
+  
+    idx.add({
+      title: "I/C Product Add",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 250
+    });
+    
+  
+    idx.add({
+      title: "Sales Order Add",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 251
+    });
+    
+  
+    idx.add({
+      title: "I/C Inventory Update",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 252
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5006,6 +5042,50 @@ var store = [
       {
         "title": "Customer Add",
         "url": "/integration/customer-add/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Customer Update",
+        "url": "/integration/customer-update/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "I/C Product Add",
+        "url": "/integration/ic-product-add/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Sales Order Add",
+        "url": "/integration/sales-order-add/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "I/C Inventory Update",
+        "url": "/integration/ic-inventory-update/",
         "excerpt": "\n",
         "teaser":
           
