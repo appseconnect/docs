@@ -55,7 +55,7 @@ d. The order must be present in both the application for whose shipment is gener
 
 7. Click on the `POST` Button. 
 
-Here, in this case the Shipment generated for the SAGE Order ID is `Placeholder`.
+Here, in this case the Shipment generated for the SAGE Order ID is `318209`.
 
 ## Lookup Mapping: 
 
