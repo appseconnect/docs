@@ -2293,6 +2293,24 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Invoice  Add from SAGE 300 to Magento2",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 253
+    });
+    
+  
+    idx.add({
+      title: "Shipment Add from SAGE 300 to Magento2",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 254
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5087,6 +5105,28 @@ var store = [
         "title": "I/C Inventory Update from SAGE 300 to Magento2",
         "url": "/integration/ic-inventory-update/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Invoice  Add from SAGE 300 to Magento2",
+        "url": "/integration/ic-invoice-add/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Shipment Add from SAGE 300 to Magento2",
+        "url": "/integration/ic-shipment-add/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

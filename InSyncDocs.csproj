@@ -1222,6 +1222,8 @@
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-20-customer-add.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-15-sage300-magento2.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-22-sales-order-add.md" />
+    <None Include="_posts\Integration\SAGE300-Magento2\2020-05-23-ic-shipment-add.md" />
+    <None Include="_posts\Integration\SAGE300-Magento2\2020-05-23-ic-invoice-add.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-23-ic-inventory-update.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-22-ic-product-add.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-21-customer-update.md" />
