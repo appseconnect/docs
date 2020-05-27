@@ -5,7 +5,7 @@ tag: developers
 category: "Integration"
 menus: 
     sagemagentointegration:
-        title: "I/C Inventory Update from SAGE 300 to Magento2"
+        title: "I/C Inventory Update"
         icon: fa fa-wpexplorer
         identifier: sage300magentoinventoryupdate
 ---
@@ -50,8 +50,8 @@ c. qty: Maps the field with the field of SAGE 300 that transforms the quantity o
 3.	Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.
 
 ![invupdate4](\staticfiles\integration\Sage300-Magento\invupdate4.png)
- 
-4.	The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
+
+4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
 ![invupdate5](\staticfiles\integration\Sage300-Magento\invupdate5.png)
  
