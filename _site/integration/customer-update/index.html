@@ -1156,43 +1156,43 @@
     
     
     <li class="menu-item-" data-url="/integration/customer-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/customer-update/" onclick="selectTab('/integration/customer-update/', event);" title="Go to Customer Update from Magento2 to SAGE300">Customer Update from Magento2 to SAGE300</a>
+        <a href="/integration/customer-update/" onclick="selectTab('/integration/customer-update/', event);" title="Go to Customer Update">Customer Update</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add from SAGE300 to Magento2">I/C Product Add from SAGE300 to Magento2</a>
+        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add from Magento 2 to SAGE 300">Sales Order Add from Magento 2 to SAGE 300</a>
+        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update from SAGE 300 to Magento2">I/C Inventory Update from SAGE 300 to Magento2</a>
+        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/ic-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice  Add from SAGE 300 to Magento2">Invoice  Add from SAGE 300 to Magento2</a>
+        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-shipment-add/" onclick="selectTab('/integration/ic-shipment-add/', event);" title="Go to Shipment Add from SAGE 300 to Magento2">Shipment Add from SAGE 300 to Magento2</a>
+        <a href="/integration/ic-shipment-add/" onclick="selectTab('/integration/ic-shipment-add/', event);" title="Go to Shipment Add">Shipment Add</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add from Magento2 to SAGE 300">Customer Add from Magento2 to SAGE 300</a>
+        <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
     </li>
     
@@ -2188,8 +2188,9 @@
 
 <p><img src="\staticfiles\integration\Sage300-Magento\custupdate1.png" alt="custupdate1" /></p>
 
-<p>Here, the workflow for Customer Update is used for syncing updated customers from <a href="/connectors/Magento2/">Magento2</a> to <a href="/connectors/sage300/">SAGE 300</a>. A <a href="/transformation/handling-dependent-data/">Post-Task</a>  Address Update is also attached for syncing updated customer address to SAGE 300. A workflow is designed and executed with the Customer Update touchpoint where Customers are being added to SAGE 300 from Magento2. 
-<strong>Note:</strong> Here, we have updated the name of the Customer id <code class="highlighter-rouge">MA57</code> to <code class="highlighter-rouge">Lawrence Innes Thomas</code> from <code class="highlighter-rouge">Lawrence K Innes</code>. For reference view <a href="/integration/customer-add/">Customer Add</a>.</p>
+<p>Here, the workflow for Customer Update is used for syncing updated customers from <a href="/connectors/Magento2/">Magento2</a> to <a href="/connectors/sage300/">SAGE 300</a>. A <a href="/transformation/handling-dependent-data/">Post-Task</a>  Address Update is also attached for syncing updated customer address to SAGE 300. A workflow is designed and executed with the Customer Update touchpoint where Customers are being added to SAGE 300 from Magento2.</p>
+
+<p><strong>Note:</strong> Here, we have updated the name of the Customer id <code class="highlighter-rouge">MA57</code> to <code class="highlighter-rouge">Lawrence Innes Thomas</code> from <code class="highlighter-rouge">Lawrence K Innes</code>. For reference view <a href="/integration/customer-add/">Customer Add</a>.</p>
 
 <p><strong>Basic Prerequisite for Updating Customers:</strong>
 •	You need to have the customer added in SAGE 300 before updating any existing customer detail.</p>
@@ -2205,19 +2206,31 @@ Mapping for the Complex Object Collection <code class="highlighter-rouge">Custom
 
 <p><img src="\staticfiles\integration\Sage300-Magento\custupdate2.png" alt="custupdate2" /></p>
 
-<p>a.	<strong>Customer Number:</strong> Here, the customer id is mapped with the id in Magento2.
-b.	<strong>Customer Name:</strong> The customer name field of SAGE 300 is mapped with the customer name field of Magento for transforming the name of the customer with respect to id mapped above.
-c.	<strong>Group Code:</strong> Map the customer group code whose Lookup is initialized.
-d.	<strong>Tax Group:</strong> Map the tax group whose lookup is initialized.
-e.	<strong>AddressLine1:</strong> Mapping the address field of SAGE 300 with Magento 2
-f.	<strong>AddressLine2:</strong> Mapping the address field of SAGE 300 with Magento 2
-g.	<strong>City:</strong> Mapping the field City of Sage 300 with the field in Magento2
-h.	<strong>StateProvince:</strong> Mapping the field of the State (Part of Address Detail) of the customer with the field in Magento 2.
-i.	<strong>ZipPostalCode:</strong>  Mapping field of Zip postal code of SAGE 300 with the field in Magento 2.
-j.	<strong>Country:</strong> Mapping the field Country with the field in Magento 2
-k.	<strong>Email:</strong> Mapping the Email with the field in Magento 2
-l.	<strong>PhoneNumber:</strong> Mapping the contact number of the customer with field in Magento 2
-m.	<strong>UploadURL:</strong> This field define the Route to SAGE 300 for data storage.</p>
+<p>a.	<strong>Customer Number:</strong> Here, the customer id is mapped with the id in Magento2.</p>
+
+<p>b.	<strong>Customer Name:</strong> The customer name field of SAGE 300 is mapped with the customer name field of Magento for transforming the name of the customer with respect to id mapped above.</p>
+
+<p>c.	<strong>Group Code:</strong> Map the customer group code whose Lookup is initialized.</p>
+
+<p>d.	<strong>Tax Group:</strong> Map the tax group whose lookup is initialized.</p>
+
+<p>e.	<strong>AddressLine1:</strong> Mapping the address field of SAGE 300 with Magento 2</p>
+
+<p>f.	<strong>AddressLine2:</strong> Mapping the address field of SAGE 300 with Magento 2</p>
+
+<p>g.	<strong>City:</strong> Mapping the field City of Sage 300 with the field in Magento2</p>
+
+<p>h.	<strong>StateProvince:</strong> Mapping the field of the State (Part of Address Detail) of the customer with the field in Magento 2.</p>
+
+<p>i.	<strong>ZipPostalCode:</strong>  Mapping field of Zip postal code of SAGE 300 with the field in Magento 2.</p>
+
+<p>j.	<strong>Country:</strong> Mapping the field Country with the field in Magento 2</p>
+
+<p>k.	<strong>Email:</strong> Mapping the Email with the field in Magento 2</p>
+
+<p>l.	<strong>PhoneNumber:</strong> Mapping the contact number of the customer with field in Magento 2</p>
+
+<p>m.	<strong>UploadURL:</strong> This field define the Route to SAGE 300 for data storage.</p>
 
 <p><strong>Note:</strong> After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration button in the Agent.</p>
 
@@ -4353,7 +4366,7 @@ Here you can view the data <code class="highlighter-rouge">MA57</code> successfu
                             <li>
                                 <a href="/integration/ic-invoice-add/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Invoice  Add from SAGE 300 to Magento2
+                                    Invoice Add from SAGE 300 to Magento2
                                 </a>
                             </li>
                             

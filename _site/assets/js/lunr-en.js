@@ -2294,7 +2294,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Invoice  Add from SAGE 300 to Magento2",
+      title: "Invoice Add from SAGE 300 to Magento2",
       excerpt: "\n",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2304,7 +2304,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Shipment Add from SAGE 300 to Magento2",
-      excerpt: "\n",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 254
@@ -5113,7 +5113,7 @@ var store = [
     
       
       {
-        "title": "Invoice  Add from SAGE 300 to Magento2",
+        "title": "Invoice Add from SAGE 300 to Magento2",
         "url": "/integration/ic-invoice-add/",
         "excerpt": "\n",
         "teaser":
@@ -5126,7 +5126,7 @@ var store = [
       {
         "title": "Shipment Add from SAGE 300 to Magento2",
         "url": "/integration/ic-shipment-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
