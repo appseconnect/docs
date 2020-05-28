@@ -5,7 +5,7 @@ tag: developers
 category: "Integration"
 menus: 
     sagemagentointegration:
-        title:  "I/C Product Add from SAGE300 to Magento2"
+        title:  "I/C Product Add"
         icon: fa fa-wpexplorer
         identifier: sage300magentoproductadd
 ---

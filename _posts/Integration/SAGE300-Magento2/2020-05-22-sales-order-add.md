@@ -5,7 +5,7 @@ tag: developers
 category: "Integration"
 menus: 
     sagemagentointegration:
-        title: "Sales Order Add from Magento 2 to SAGE 300"
+        title: "Sales Order Add"
         icon: fa fa-wpexplorer
         identifier: sage300magentosalesadd
 ---
