@@ -2232,7 +2232,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Merger Node",
-      excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
+      excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet, in order...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 246
@@ -5038,7 +5038,7 @@ var store = [
       {
         "title": "Merger Node",
         "url": "/processflow/working-with-processflow-merger/",
-        "excerpt": "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
+        "excerpt": "What is Merger Node? This node is used to merge smaller data chunks into a single data packet, in order...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

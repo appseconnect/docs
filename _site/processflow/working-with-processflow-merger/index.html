@@ -2179,22 +2179,36 @@
                 
                 <h3 id="what-is-merger-node">What is Merger Node?</h3>
 
-<p>This node is used to merge smaller data chunks into a single data packet. Like a <code class="highlighter-rouge">SPLITTER</code> node, it also has Four components Node Description, XPath, Entity Name and Batch size. For example, you have specified a batch size of 10 in a <code class="highlighter-rouge">MERGER</code> node then it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
+<p>This node is used to merge smaller data chunks into a single data packet, in order to avoid
+multiple hits to the application. The Merger Node combines multiple XML documents into a single element.</p>
 
-<p><strong>Node Description:</strong> Here, you need to provide a description to the merger node.</p>
+<p><strong>Prerequisites: All input documents should have the same set of schema and attributes. Input document has to be in XML format</strong></p>
 
-<p><strong>Entityname</strong> : Here specify the name which will act as a root element under which data will be merged.</p>
+<p>Like a <code class="highlighter-rouge">SPLITTER</code> node, it also has Four Components Node - Description, XPath, Entity Name
+and Batch size. For example, you have specified a batch size of 10 in a <code class="highlighter-rouge">MERGER</code> node then 
+it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
 
-<p><strong>XPath</strong> : Here user need to specify a XPath based on which data will be fetched from each data file for merging.</p>
+<p>Merger Node Input file -  can have one or more document input.
+Merger Node Output file - can have one or more document output.</p>
 
-<p><strong>Batch Size</strong> : Here, you need to define the size of the batch as how many should be merger to form a single packet. For example: You have 20 data that need to be mergered and if the batch size is provided as 10 therefore, merger node will form 2 packets which will contain 10 data in each packet merged.</p>
+<ul>
+  <li><strong>Node Description:</strong> Here, you need to provide a description to the merger node.</li>
+  <li><strong>Entityname</strong> : Here specify the name which will act as a root element under which data will be merged.</li>
+  <li><strong>XPath</strong> : Here user need to specify a XPath based on which data will be fetched from each data file for merging.</li>
+  <li><strong>Batch Size</strong> : Here, you need to define the size of the batch as how many should be 
+merger to form a single packet. For example: You have 20 data that need to be merged 
+and if the batch size is provided as 10 therefore, merger node will form 2 packets 
+which will contain 10 data in each packet merged.</li>
+</ul>
 
 <h3 id="working-principle">Working Principle</h3>
 
 <p><code class="highlighter-rouge">MERGER</code> node in APPSeCONNECT processflow used to take smaller data packets and merge them into single data packet.</p>
 
-<p>For example: If there are 20 files or data chunks each of which contains a customer data with the below XML format. All the files will be merge them into single file in a batch size of 2. So, in the XPATH section the values are provided as following:
- <code class="highlighter-rouge">XPATH = //BusinessPartners</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">Envelope</code>.</p>
+<p>For example: If there are 20 files or data chunks each of which contains a customer data 
+with the below XML format. All the files will be merged into single file in a batch 
+size of 2. So, in the XPATH section the values are provided as following:
+ <code class="highlighter-rouge">XPATH = //env:Envelop</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">mergedRoot</code>.</p>
 
 <p><img src="\staticfiles\processflow\media\merger1.PNG" alt="Merger1" /></p>
 
