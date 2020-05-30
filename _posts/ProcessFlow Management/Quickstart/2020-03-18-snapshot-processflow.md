@@ -21,6 +21,8 @@ After a successful execution, you can view the snapshot listing on the multiple 
 * The created Process Flow needs to be [deployed](/processflow/deploying-and-executing-processfloww/) to the environment successfully.  
 * You need to execute the Process Flow for generation of the Snapshot.
 
+ **Note:** You can only view the successday for every instance of generated snapshots. Failed data will be display in the [Retry Window](/processflow/retry-processflow/). 
+
 ## Steps to view the Process Flow Snapshot
 To view the snapshot of a Process Flow that has been executed, you need to follow the 
 prerequisites. Given below are the steps that will help you view Snapshot of a Process Flow that is executed.
@@ -114,5 +116,8 @@ c.	Click on the Activity Log tab of the Post node. You will be able to view the 
 ![Snapshot21](../../staticfiles/processflow/media/snapshot21.png)    
 d.	Click on the Transaction File tab of the Post node. You will be able to view the Output files generated after its execution for the POST node.  
  ![Snapshot22](../../staticfiles/processflow/media/snapshot22.png)    
+
+ **Note:** You can only view the successday for every instance of generated snapshots. Failed data will be display in the [Retry Window](/processflow/retry-processflow/). 
+
 Following the above steps, you can successfully view the snapshot of an executed Process Flow.
 

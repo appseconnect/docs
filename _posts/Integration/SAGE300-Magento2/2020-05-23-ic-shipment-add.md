@@ -44,7 +44,6 @@ d. The order must be present in both the application for whose shipment is gener
 
 5. In the Order Line, make sure `Quantity Shipped` value equals the `Quantity Backorder` value. By default, the value for `Quantity Shipped`remains `0`. After adjusting, the value for `Quantity Backorder` becomes `0`.
 
-
 ![shipadd5](\staticfiles\integration\Sage300-Magento\shipadd5.PNG)
 
 6. Expand the Shipment Details and provide the `Shipment Tracking Number`.
@@ -55,6 +54,8 @@ d. The order must be present in both the application for whose shipment is gener
 
 7. Click on the `POST` Button. 
 
+[Click Here](http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/ShippingOrdersAndItems.htm) to know more about the adding Shipments.
+
 Here, in this case the Shipment generated for the SAGE Order ID is `318209`.
 
 ## Lookup Mapping: 
@@ -63,7 +64,7 @@ N/A
 
 ## Attribute Mapping/Transformation:
 
-Following the Provided Mapping, user can successfully sync the Order Add Workflow from Magento2 to SAGE 300. To know more, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
+Following the Provided Mapping, user can successfully sync the Workflow for adding Shipment from Magento2 to SAGE 300. To know more, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
 
 Mapping for the complex object collection `entity`.
 
