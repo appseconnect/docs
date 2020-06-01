@@ -56,3 +56,6 @@ The XPath provided for the MERGER Node is shown below:
 
 ![Merger4](/staticfiles/workflow-management/media/Merger/Merger4.png)
 
+
+**1.Business Scenario - Destination Application is **    
+
