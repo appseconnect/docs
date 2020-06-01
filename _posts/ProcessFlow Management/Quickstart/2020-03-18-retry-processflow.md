@@ -54,7 +54,12 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 ![Processflow Retry5](../../../staticfiles/processflow/media/processflow-retry5.png)    
 11.	Click Ellipses button (...) available beside the Process Flow that you have executed. You can view the Retry button available in the context menu.  
 ![Processflow Retry6](../../../staticfiles/processflow/media/processflow-retry6.png)    
-12.	The Resync Bucket of the Retry Window opens. You can view the Name of the Process Flow, Environment Name and the Description of the Process Flow, in the header panel of the Retry Window  
+12.	The Resync Bucket of the Retry Window opens. You can view the following details in the Rety Window:
+- Name: You will be able to view the name of the Process Flow in the Header Panel.
+- Environment Name: You will be able to view the Environment Name, on which the PF is deployed.
+- Description: You can also view the description of the Process Flow.
+- Resync Button: You can manually Resync the failed data by selecting the record and clickin on the Resync Button.
+- Filter Button: You can also filter the failed records by click on the Filter icon.
 ![Processflow Retry7](../../../staticfiles/processflow/media/processflow-retry7.png)    
 13.	You can filter the data in the list using the contents of the Source ID by click on the filter icon.
 ![Processflow Retry8](../../../staticfiles/processflow/media/processflow-retry8.png)    
@@ -66,7 +71,10 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 * Tries: You would be viewing number of tries that has been attempted to resync a failed data. 
  ![Processflow Retry9](../../../staticfiles/processflow/media/processflow-retry9.png)    
 **Note: For Auto-Retry, each data will be Retried 4 times excluding the main execution.**
-15.	You can also Resync the failed data manually, after auto-retry has made its attempts, by selecting the check boxes and clicking on the RESYNC button.  
+15.	You can also Resync the failed data manually, after auto-retry has made its attempts, by selecting the check boxes and clicking on the **RESYNC** button. 
+
+**Note:** You can either select all the data by enabling the checkbox beside `Node Name` or you can individually select checkbox, for executing the Resync Process for selective data. 
+
 ![Processflow Retry10](../../../staticfiles/processflow/media/processflow-retry10.png)    
 
 Following the above process, you can successfully implement Auto-Retry and view the data in the Resync Bucket of the Auto-Retry window.
