@@ -1180,7 +1180,7 @@
     
     
     <li class="menu-item-" data-url="/integration/ic-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
+        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice  Add">Invoice  Add</a>
         
     </li>
     
@@ -1505,36 +1505,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-app/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/processflow-app/" onclick="selectTab('/processflow/processflow-app/', event);" title="Go to APP">APP</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-GET/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-GET/" onclick="selectTab('/processflow/working-with-GET/', event);" title="Go to Working with GET">Working with GET</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/working-with-mapper/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-mapper/" onclick="selectTab('/processflow/working-with-mapper/', event);" title="Go to Working with Mapper">Working with Mapper</a>
         
@@ -1586,6 +1556,48 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-app/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/processflow-app/" onclick="selectTab('/processflow/processflow-app/', event);" title="Go to Processflow APP">Processflow APP</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-GET/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-GET/" onclick="selectTab('/processflow/working-with-GET/', event);" title="Go to Working with GET">Working with GET</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
         
     </li>
     
@@ -2158,7 +2170,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2193,6 +2205,8 @@ After a successful execution, you can view the snapshot listing on the multiple 
   <li>The created Process Flow needs to be <a href="/processflow/deploying-and-executing-processfloww/">deployed</a> to the environment successfully.</li>
   <li>You need to execute the Process Flow for generation of the Snapshot.</li>
 </ul>
+
+<p><strong>Note:</strong> You can only view the successday for every instance of generated snapshots. Failed data will be display in the <a href="/processflow/retry-processflow/">Retry Window</a>.</p>
 
 <h2 id="steps-to-view-the-process-flow-snapshot">Steps to view the Process Flow Snapshot</h2>
 <p>To view the snapshot of a Process Flow that has been executed, you need to follow the 
@@ -2300,11 +2314,14 @@ b.	Click on the Data log tab of the Post node. You will be able to view all the 
 c.	Click on the Activity Log tab of the Post node. You will be able to view the execution logs of POST node.<br />
 <img src="../../staticfiles/processflow/media/snapshot21.png" alt="Snapshot21" />  <br />
 d.	Click on the Transaction File tab of the Post node. You will be able to view the Output files generated after its execution for the POST node.<br />
- <img src="../../staticfiles/processflow/media/snapshot22.png" alt="Snapshot22" />  <br />
-Following the above steps, you can successfully view the snapshot of an executed Process Flow.</li>
+ <img src="../../staticfiles/processflow/media/snapshot22.png" alt="Snapshot22" /></li>
     </ol>
   </li>
 </ul>
+
+<p><strong>Note:</strong> You can only view the successday for every instance of generated snapshots. Failed data will be display in the <a href="/processflow/retry-processflow/">Retry Window</a>.</p>
+
+<p>Following the above steps, you can successfully view the snapshot of an executed Process Flow.</p>
 
 
                 
@@ -4382,6 +4399,22 @@ Following the above steps, you can successfully view the snapshot of an executed
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4400,6 +4433,17 @@ Following the above steps, you can successfully view the snapshot of an executed
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-processflow-selfloop/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Selfloop
+                                </a>
+                            </li>
                             
                             
                             
@@ -4448,13 +4492,6 @@ Following the above steps, you can successfully view the snapshot of an executed
                             
                             
                             
-                            
-                            <li>
-                                <a href="/processflow/working-with-GET/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with GET
-                                </a>
-                            </li>
                             
                             
                             

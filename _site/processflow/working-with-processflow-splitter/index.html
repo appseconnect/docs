@@ -1180,7 +1180,7 @@
     
     
     <li class="menu-item-" data-url="/integration/ic-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
+        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice  Add">Invoice  Add</a>
         
     </li>
     
@@ -1505,36 +1505,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-app/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/processflow-app/" onclick="selectTab('/processflow/processflow-app/', event);" title="Go to APP">APP</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-GET/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-GET/" onclick="selectTab('/processflow/working-with-GET/', event);" title="Go to Working with GET">Working with GET</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/working-with-mapper/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-mapper/" onclick="selectTab('/processflow/working-with-mapper/', event);" title="Go to Working with Mapper">Working with Mapper</a>
         
@@ -1586,6 +1556,48 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-app/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/processflow-app/" onclick="selectTab('/processflow/processflow-app/', event);" title="Go to Processflow APP">Processflow APP</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-GET/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-GET/" onclick="selectTab('/processflow/working-with-GET/', event);" title="Go to Working with GET">Working with GET</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
         
     </li>
     
@@ -2158,7 +2170,7 @@
 
 
 
-  4 minute read
+  3 minute read
 </p>
                 
                 
@@ -2220,15 +2232,18 @@ node the XPath is needed to be provided viewing the Transform Packet.</p>
 
 <p>The Entity field is the Parent nodes of the packet that would be split. The XPath are the child nodes of the Entity.</p>
 
-<p><img src="/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter2.png" alt="TroubleshootingSplitter2" /><br />
-[PLACEHOLDER]</p>
+<p><img src="/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter2.png" alt="TroubleshootingSplitter2" /></p>
 
-<p><strong>1.Business Scenario - Low Server Response in Destination Application</strong></p>
-
-<p><code class="highlighter-rouge">Application used for the scenario is: Magento2 and SAP B1</code>.</p>
+<p><code class="highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1</code>.</p>
 
 <p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown below:
 <img src="../../../staticfiles/processflow/media/mapper/processflow_splitter2.PNG" alt="Processflow Splitter2" /></p>
+
+<p>1) Go to Processflow section &amp; <a href="">Design</a> a Processflow.
+2) The Processflow is designed as shown in the above screen.
+3) Here</p>
+
+<p><strong>1.Business Scenario - Low Server Response in Destination Application</strong></p>
 
 <ol>
   <li>Here we have designed a process flow with splitter node. The splitter node is attached
@@ -2239,25 +2254,10 @@ data due to low server response.</li>
 window for data packet generation in smaller chunks.</li>
   <li>Now Self loop is added to the mapper node, which enables to run the execution until all data are
 available from the source application, and it enables to stop any data loss due to splitter node.</li>
-  <li>The data packets are thus tarnsformed and posted in multiple output packets in destnation
+  <li>The data packets are thus transformed and posted in multiple output packets in destination
 application, thereby enabling a smooth sync process of huge data into splitted data packeets 
 with low server response capability.</li>
 </ol>
-
-<p><strong>2. Business Scenario -  Applications with API request throttling</strong></p>
-
-<p>Throttles indicate a temporary state, and are used to control the data that clients can access through an API. 
-When a throttle is triggered, you can disconnect a user or just reduce the response rate. There are certain applications (e.g. amazon, shipstation etc.) with the problem of API
-Request throttling. These applications generates throttling after a certain point of time, hence
-it becomes cumbersome to sync huge data at a once through these API.</p>
-
-<p>Here splitter node can be implemented before destination application where the single 
-transformed file can be splitted into multiple small data packets to override the API throttling
-issues of destination applications.</p>
-
-<p>Here you need to add the splitter node after mapper node and before destination application node, using
-a self loof (to combat data loss). The splitted data packets will be now be easily posted to the destination
-application with each API instance created for the respective data packets without throttling.</p>
 
 <p class="notice--info"><strong>Protip:</strong> The ENTITY and the XPATH is different for the INPUT Packet, TRANSFORM Packet, OUTPUT Packet and for 
 different Application.</p>
@@ -4337,6 +4337,22 @@ different Application.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4355,6 +4371,17 @@ different Application.</p>
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-processflow-selfloop/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Selfloop
+                                </a>
+                            </li>
                             
                             
                             
@@ -4405,13 +4432,6 @@ different Application.</p>
                             
                             
                             
-                            
-                            <li>
-                                <a href="/processflow/processflow-app/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    APP
-                                </a>
-                            </li>
                             
                             
                             

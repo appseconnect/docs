@@ -1180,7 +1180,7 @@
     
     
     <li class="menu-item-" data-url="/integration/ic-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
+        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice  Add">Invoice  Add</a>
         
     </li>
     
@@ -1505,36 +1505,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-app/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/processflow-app/" onclick="selectTab('/processflow/processflow-app/', event);" title="Go to APP">APP</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-GET/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-GET/" onclick="selectTab('/processflow/working-with-GET/', event);" title="Go to Working with GET">Working with GET</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/working-with-mapper/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-mapper/" onclick="selectTab('/processflow/working-with-mapper/', event);" title="Go to Working with Mapper">Working with Mapper</a>
         
@@ -1586,6 +1556,48 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-app/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/processflow-app/" onclick="selectTab('/processflow/processflow-app/', event);" title="Go to Processflow APP">Processflow APP</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-GET/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-GET/" onclick="selectTab('/processflow/working-with-GET/', event);" title="Go to Working with GET">Working with GET</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
         
     </li>
     
@@ -2223,6 +2235,21 @@ size of 2. So, in the XPATH section the values are provided as following:
 <p><img src="\staticfiles\processflow\media\merger2.PNG" alt="Merger2" /></p>
 
 <p><img src="/staticfiles/workflow-management/media/Merger/Merger4.png" alt="Merger4" /></p>
+
+<p><strong>1. Business Scenario -  Applications with API request throttling</strong></p>
+
+<p>Throttles indicate a temporary state, and are used to control the data that clients can access through an API. 
+When a throttle is triggered, you can disconnect a user or just reduce the response rate. There are certain applications (e.g. amazon, shipstation etc.) with the problem of API
+Request throttling. These applications generates throttling after a certain point of time, hence
+it becomes cumbersome to sync huge data at a once through these API.</p>
+
+<p>Here splitter node can be implemented before destination application where the single 
+transformed file can be splitted into multiple small data packets to override the API throttling
+issues of destination applications.</p>
+
+<p>Here you need to add the splitter node after mapper node and before destination application node, using
+a self loof (to combat data loss). The splitted data packets will be now be easily posted to the destination
+application with each API instance created for the respective data packets without throttling.</p>
 
 
                 
@@ -4300,6 +4327,22 @@ size of 2. So, in the XPATH section the values are provided as following:
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4318,6 +4361,17 @@ size of 2. So, in the XPATH section the values are provided as following:
                             
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-processflow-selfloop/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Selfloop
+                                </a>
+                            </li>
                             
                             
                             
@@ -4368,13 +4422,6 @@ size of 2. So, in the XPATH section the values are provided as following:
                             
                             
                             
-                            
-                            <li>
-                                <a href="/processflow/processflow-app/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    APP
-                                </a>
-                            </li>
                             
                             
                             

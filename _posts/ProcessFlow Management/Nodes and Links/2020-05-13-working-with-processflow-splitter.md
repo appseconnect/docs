@@ -53,15 +53,17 @@ node the XPath is needed to be provided viewing the Transform Packet.
 The Entity field is the Parent nodes of the packet that would be split. The XPath are the child nodes of the Entity.
 
 ![TroubleshootingSplitter2](/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter2.png)  
-[PLACEHOLDER]  
 
-**1.Business Scenario - Low Server Response in Destination Application**    
-
-`Application used for the scenario is: Magento2 and SAP B1`.
-
+`Application used for the Processflow Execution is: Magento2 and SAP B1`.
 
 The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown below:
 ![Processflow Splitter2](../../../staticfiles/processflow/media/mapper/processflow_splitter2.PNG)
+
+1) Go to Processflow section & [Design]() a Processflow.
+2) The Processflow is designed as shown in the above screen.
+3) Here 
+
+**1.Business Scenario - Low Server Response in Destination Application**    
 
 1. Here we have designed a process flow with splitter node. The splitter node is attached
 just after Source Application (E.g: Magento2) which is fetching a huge number of data but the
@@ -71,25 +73,9 @@ data due to low server response.
 window for data packet generation in smaller chunks.
 3. Now Self loop is added to the mapper node, which enables to run the execution until all data are
 available from the source application, and it enables to stop any data loss due to splitter node.
-4. The data packets are thus tarnsformed and posted in multiple output packets in destnation
+4. The data packets are thus transformed and posted in multiple output packets in destination
 application, thereby enabling a smooth sync process of huge data into splitted data packeets 
 with low server response capability.
-
-
-**2. Business Scenario -  Applications with API request throttling**   
-
-Throttles indicate a temporary state, and are used to control the data that clients can access through an API. 
-When a throttle is triggered, you can disconnect a user or just reduce the response rate. There are certain applications (e.g. amazon, shipstation etc.) with the problem of API
-Request throttling. These applications generates throttling after a certain point of time, hence
-it becomes cumbersome to sync huge data at a once through these API.
-
-Here splitter node can be implemented before destination application where the single 
-transformed file can be splitted into multiple small data packets to override the API throttling
-issues of destination applications.
-
-Here you need to add the splitter node after mapper node and before destination application node, using
-a self loof (to combat data loss). The splitted data packets will be now be easily posted to the destination
-application with each API instance created for the respective data packets without throttling.
 
 
 **Protip:** The ENTITY and the XPATH is different for the INPUT Packet, TRANSFORM Packet, OUTPUT Packet and for 
