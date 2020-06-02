@@ -2170,7 +2170,7 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2184,6 +2184,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#what-is-loop-node">What is Loop node</a></li>
+  <li><a href="#working-principle">Working Principle</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2191,13 +2192,74 @@
                 <h3 id="what-is-loop-node">What is Loop node</h3>
 
 <p>In APPSeCONNECT Processflow using a Self-loop, we can repeatedly execute an individual node 
-without affecting the other nodes that are linked with it. If we draw a self-loop in GET 
-element in Workflow it will ask for the n.o of times it will be executed. Lets take a 
+without affecting the other nodes that are linked with it. Lets take an example - If we draw a self-loop in GET 
+element in Processflow it will ask for the no. of times it will be executed. Lets take a 
 scenario where the source application associated can fetch 10 records at a time 
-but I want to fetch a minimum of 50 unsynced data at a time if it is available. Here I can
-implement a self-loop with 5 occurrences.If I want to fetch all unsynced data then we can 
-choose the until data available option.</p>
+but the user wants to fetch a minimum of 50 unsynced data at a time if it is available. Here user can
+implement a self-loop with 5 occurrences. Self loop enables the user to 
+iterate a node execution as per the configuration.</p>
 
+<p>Self-loop is an interesting functionality as it can be used in a node to iterate as per configuration. 
+Presently three option is available to configure self-loop:</p>
+
+<ul>
+  <li>Until data available: This option allows a self loop execution over a Node where self-loop will continue to execute until data available in the source app or node.</li>
+  <li>Number of occurrences: This option allows Number of iterations on node over which self-loop implemented will execute.<br />
+<strong>User can set Maximum 999, to iterate the occurrence</strong></li>
+  <li>Timespan: This option allows the User to define the duration for which the self-loop will iterate the node over which it defined. <br />
+<strong>User can set Maximum upto  24 hrs, 59 mints, 59 seconds, to iterate the occurrence</strong></li>
+</ul>
+
+<p>Self loop execution on a node can be achieved by choosing any one of the options. 
+Although the availability of data is always the prime criteria for executing the self-loop.</p>
+
+<h3 id="working-principle">Working Principle</h3>
+<p>[INSERT SELF LOOP LINK VIEW IMAGE]</p>
+
+<p>Self Loop Execution on the nodes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Node</th>
+      <th>Requirements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Get Node</td>
+      <td>Fetching Large Number of data in smaller batches, self-loop configuration over get node will iterate for the option chosen in the configuration</td>
+    </tr>
+    <tr>
+      <td>Merger Node</td>
+      <td>Scenarios where splitter node is the predecessor node of Mapper node, self-loop over Mapper will iterate until splitter output available</td>
+    </tr>
+    <tr>
+      <td>Post Node</td>
+      <td>Scenarios where splitter or Merger node is the predecessor node of POST node, self-loop over post node will iterate until splitter or Merger output available</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="highlighter-rouge">Self-loop Configuration - Until data available</code> <br />
+<code class="highlighter-rouge">Self-loop Configuration - Number of Occurence</code><br />
+<code class="highlighter-rouge">Self-loop Configuration - For a Timespan</code></p>
+
+<ol>
+  <li>Select and choose the option <code class="highlighter-rouge">Time Span</code> radio button. The following 
+screen appears. <br />
+[SCREENSHOT]</li>
+  <li>Now you get the option to input the duration for which the Self Loop will be executed.
+You have the option for the Time-Span in Hours, Minutes &amp; Seconds. Enter the duration as per your requirement.
+(a) Hours: The value range of hours is from 1-24<br />
+(b) Minutes: The value range of minutes is from 1-60<br />
+(c) Seconds: The value range of seconds is from 1-60<br />
+[SCREENSHOT]</li>
+  <li>Now provide the Description of the Self-loop configuration in the Description field. 
+Description is a mandatory field.<br />
+<strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
+  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability</strong></li>
+</ol>
 
                 
             </section>

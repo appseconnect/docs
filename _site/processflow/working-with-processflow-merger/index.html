@@ -2196,9 +2196,9 @@ multiple hits to the application. The Merger Node combines multiple XML document
 
 <p><strong>Prerequisites: All input documents should have the same set of schema and attributes. Input document has to be in XML format</strong></p>
 
-<p>Like a <code class="highlighter-rouge">SPLITTER</code> node, it also has Four Components Node - Description, XPath, Entity Name
-and Batch size. For example, you have specified a batch size of 10 in a <code class="highlighter-rouge">MERGER</code> node then 
-it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
+<p>Like a <code class="highlighter-rouge">SPLITTER</code> node, <code class="highlighter-rouge">Merger</code>node also has Four Components Node - Description, XPath, Entity Name
+and Batch size. For example, you have specified a batch size of <code class="highlighter-rouge">N</code> in a <code class="highlighter-rouge">MERGER</code> node then 
+it will take <code class="highlighter-rouge">N</code> data packets where each packet contains a chunk of data and merge them into a single data packet (here N= Batchsize Number).</p>
 
 <p>Merger Node Input file -  can have one or more document input.
 Merger Node Output file - can have one or more document output.</p>
@@ -2208,7 +2208,7 @@ Merger Node Output file - can have one or more document output.</p>
   <li><strong>Entityname</strong> : Here specify the name which will act as a root element under which data will be merged.</li>
   <li><strong>XPath</strong> : Here user need to specify a XPath based on which data will be fetched from each data file for merging.</li>
   <li><strong>Batch Size</strong> : Here, you need to define the size of the batch as how many should be 
-merger to form a single packet. For example: You have 20 data that need to be merged 
+merged to form packets. For example: You have 20 data that need to be merged 
 and if the batch size is provided as 10 therefore, merger node will form 2 packets 
 which will contain 10 data in each packet merged.</li>
 </ul>
@@ -2223,7 +2223,7 @@ should be 1-999.</strong></p>
 <p>For example: If there are 20 files or data chunks each of which contains a customer data 
 with the below XML format. All the files will be merged into single file in a batch 
 size of 2. So, in the XPATH section the values are provided as following:
- <code class="highlighter-rouge">XPATH = //env:Envelop</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">mergedRoot</code>.</p>
+ <code class="highlighter-rouge">XPATH = //env:Envelope</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">mergedRoot</code>.</p>
 
 <p><img src="\staticfiles\processflow\media\merger1.PNG" alt="Merger1" /></p>
 
@@ -2232,24 +2232,24 @@ size of 2. So, in the XPATH section the values are provided as following:
 
 <p>The XPath provided for the MERGER Node is shown below:</p>
 
-<p><img src="\staticfiles\processflow\media\merger2.PNG" alt="Merger2" /></p>
-
 <p><img src="/staticfiles/workflow-management/media/Merger/Merger4.png" alt="Merger4" /></p>
+
+<p><img src="\staticfiles\processflow\media\merger2.PNG" alt="Merger2" /></p>
 
 <p><strong>1. Business Scenario -  Applications with API request throttling</strong></p>
 
 <p>Throttles indicate a temporary state, and are used to control the data that clients can access through an API. 
 When a throttle is triggered, you can disconnect a user or just reduce the response rate. There are certain applications (e.g. amazon, shipstation etc.) with the problem of API
 Request throttling. These applications generates throttling after a certain point of time, hence
-it becomes cumbersome to sync huge data at a once through these API.</p>
+it becomes cumbersome to sync data continously through these API’s.</p>
 
-<p>Here splitter node can be implemented before destination application where the single 
-transformed file can be splitted into multiple small data packets to override the API throttling
+<p>Here merger node can be implemented before destination application where the multiple 
+files can be merged into one or more data packets to override the API throttling
 issues of destination applications.</p>
 
-<p>Here you need to add the splitter node after mapper node and before destination application node, using
+<p>Here you need to add the merger node after mapper node and before destination application node, using
 a self loof (to combat data loss). The splitted data packets will be now be easily posted to the destination
-application with each API instance created for the respective data packets without throttling.</p>
+application for the respective data packets without API throttling.</p>
 
 
                 
