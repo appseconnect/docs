@@ -1180,7 +1180,7 @@
     
     
     <li class="menu-item-" data-url="/integration/ic-invoice-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice Add">Invoice Add</a>
+        <a href="/integration/ic-invoice-add/" onclick="selectTab('/integration/ic-invoice-add/', event);" title="Go to Invoice  Add">Invoice  Add</a>
         
     </li>
     
@@ -2158,7 +2158,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -2229,8 +2229,16 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
   </li>
   <li>Click Ellipses button (…) available beside the Process Flow that you have executed. You can view the Retry button available in the context menu.<br />
 <img src="../../../staticfiles/processflow/media/processflow-retry6.png" alt="Processflow Retry6" /></li>
-  <li>The Resync Bucket of the Retry Window opens. You can view the Name of the Process Flow, Environment Name and the Description of the Process Flow, in the header panel of the Retry Window<br />
+  <li>The Resync Bucket of the Retry Window opens. You can view the following details in the Rety Window:
+    <ul>
+      <li>Name: You will be able to view the name of the Process Flow in the Header Panel.</li>
+      <li>Environment Name: You will be able to view the Environment Name, on which the PF is deployed.</li>
+      <li>Description: You can also view the description of the Process Flow.</li>
+      <li>Resync Button: You can manually Resync the failed data by selecting the record and clickin on the Resync Button.</li>
+      <li>Filter Button: You can also filter the failed records by click on the Filter icon.
 <img src="../../../staticfiles/processflow/media/processflow-retry7.png" alt="Processflow Retry7" /></li>
+    </ul>
+  </li>
   <li>You can filter the data in the list using the contents of the Source ID by click on the filter icon.
 <img src="../../../staticfiles/processflow/media/processflow-retry8.png" alt="Processflow Retry8" /></li>
   <li>You can view the list of the Failed items along with the following set of informations.
@@ -2244,9 +2252,12 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 <strong>Note: For Auto-Retry, each data will be Retried 4 times excluding the main execution.</strong></li>
     </ul>
   </li>
-  <li>You can also Resync the failed data manually, after auto-retry has made its attempts, by selecting the check boxes and clicking on the RESYNC button.<br />
-<img src="../../../staticfiles/processflow/media/processflow-retry10.png" alt="Processflow Retry10" /></li>
+  <li>You can also Resync the failed data manually, after auto-retry has made its attempts, by selecting the check boxes and clicking on the <strong>RESYNC</strong> button.</li>
 </ol>
+
+<p><strong>Note:</strong> You can either select all the data by enabling the checkbox beside <code class="highlighter-rouge">Node Name</code> or you can individually select checkbox, for executing the Resync Process for selective data.</p>
+
+<p><img src="../../../staticfiles/processflow/media/processflow-retry10.png" alt="Processflow Retry10" /></p>
 
 <p>Following the above process, you can successfully implement Auto-Retry and view the data in the Resync Bucket of the Auto-Retry window.</p>
 

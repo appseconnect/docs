@@ -57,5 +57,20 @@ The XPath provided for the MERGER Node is shown below:
 ![Merger4](/staticfiles/workflow-management/media/Merger/Merger4.png)
 
 
-**1.Business Scenario - Destination Application is **    
+
+**1. Business Scenario -  Applications with API request throttling**   
+
+Throttles indicate a temporary state, and are used to control the data that clients can access through an API. 
+When a throttle is triggered, you can disconnect a user or just reduce the response rate. There are certain applications (e.g. amazon, shipstation etc.) with the problem of API
+Request throttling. These applications generates throttling after a certain point of time, hence
+it becomes cumbersome to sync huge data at a once through these API.
+
+Here splitter node can be implemented before destination application where the single 
+transformed file can be splitted into multiple small data packets to override the API throttling
+issues of destination applications.
+
+Here you need to add the splitter node after mapper node and before destination application node, using
+a self loof (to combat data loss). The splitted data packets will be now be easily posted to the destination
+application with each API instance created for the respective data packets without throttling.
+
 

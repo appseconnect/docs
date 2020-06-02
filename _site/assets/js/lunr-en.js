@@ -2294,8 +2294,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Invoice Add from SAGE 300 to Magento2",
-      excerpt: "\n",
+      title: "Invoice  Add from SAGE 300 to Magento2",
+      excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 253
@@ -5113,9 +5113,9 @@ var store = [
     
       
       {
-        "title": "Invoice Add from SAGE 300 to Magento2",
+        "title": "Invoice  Add from SAGE 300 to Magento2",
         "url": "/integration/ic-invoice-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
