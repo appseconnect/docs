@@ -17,9 +17,9 @@ multiple hits to the application. The Merger Node combines multiple XML document
  
 **Prerequisites: All input documents should have the same set of schema and attributes. Input document has to be in XML format**
 
-Like a `SPLITTER` node, it also has Four Components Node - Description, XPath, Entity Name
-and Batch size. For example, you have specified a batch size of 10 in a `MERGER` node then 
-it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.
+Like a `SPLITTER` node, `Merger`node also has Four Components Node - Description, XPath, Entity Name
+and Batch size. For example, you have specified a batch size of `N` in a `MERGER` node then 
+it will take `N` data packets where each packet contains a chunk of data and merge them into a single data packet (here N= Batchsize Number).
 
 Merger Node Input file -  can have one or more document input.
 Merger Node Output file - can have one or more document output.
@@ -28,7 +28,7 @@ Merger Node Output file - can have one or more document output.
 - **Entityname** : Here specify the name which will act as a root element under which data will be merged.
 - **XPath** : Here user need to specify a XPath based on which data will be fetched from each data file for merging.
 - **Batch Size** : Here, you need to define the size of the batch as how many should be 
-merger to form a single packet. For example: You have 20 data that need to be merged 
+merged to form packets. For example: You have 20 data that need to be merged 
 and if the batch size is provided as 10 therefore, merger node will form 2 packets 
 which will contain 10 data in each packet merged. 
 
@@ -43,7 +43,7 @@ should be 1-999.**
 For example: If there are 20 files or data chunks each of which contains a customer data 
 with the below XML format. All the files will be merged into single file in a batch 
 size of 2. So, in the XPATH section the values are provided as following:
- `XPATH = //env:Envelop`, Batch Size = 2 and the Entity name = `mergedRoot`.
+ `XPATH = //env:Envelope`, Batch Size = 2 and the Entity name = `mergedRoot`.
 
 ![Merger1](\staticfiles\processflow\media\merger1.PNG)
 
@@ -52,25 +52,23 @@ The concept of identifying the merger property is like that of the splitter prop
 
 The XPath provided for the MERGER Node is shown below:
 
-![Merger2](\staticfiles\processflow\media\merger2.PNG)
-
 ![Merger4](/staticfiles/workflow-management/media/Merger/Merger4.png)
 
-
+![Merger2](\staticfiles\processflow\media\merger2.PNG)
 
 **1. Business Scenario -  Applications with API request throttling**   
 
 Throttles indicate a temporary state, and are used to control the data that clients can access through an API. 
 When a throttle is triggered, you can disconnect a user or just reduce the response rate. There are certain applications (e.g. amazon, shipstation etc.) with the problem of API
 Request throttling. These applications generates throttling after a certain point of time, hence
-it becomes cumbersome to sync huge data at a once through these API.
+it becomes cumbersome to sync data continously through these API's.
 
-Here splitter node can be implemented before destination application where the single 
-transformed file can be splitted into multiple small data packets to override the API throttling
+Here merger node can be implemented before destination application where the multiple 
+files can be merged into one or more data packets to override the API throttling
 issues of destination applications.
 
-Here you need to add the splitter node after mapper node and before destination application node, using
+Here you need to add the merger node after mapper node and before destination application node, using
 a self loof (to combat data loss). The splitted data packets will be now be easily posted to the destination
-application with each API instance created for the respective data packets without throttling.
+application for the respective data packets without API throttling.
 
 

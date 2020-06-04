@@ -56,17 +56,28 @@ The Entity field is the Parent nodes of the packet that would be split. The XPat
 
 `Application used for the Processflow Execution is: Magento2 and SAP B1`.
 
-The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown below:
+The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:
 ![Processflow Splitter2](../../../staticfiles/processflow/media/mapper/processflow_splitter2.PNG)
 
-1) Go to Processflow section & [Design]() a Processflow.
-2) The Processflow is designed as shown in the above screen.
-3) Here 
+1) Go to Processflow section & [Design](/processflow/designer-processflow/) a Processflow.  
+2) The Processflow is designed as shown in the above section of the screen.  
+3) Here the `splitter` node is used after  getting customer data from Magento,
+and splitting it into multiple output packets for posting in destination application.  
+4) [Deploy](/processflow/deploying-and-executing-processfloww/) the Process flow. After successful deployment, to your environment, [Execute](/processflow/deploying-and-executing-processfloww/) the Processflow.  
+5) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
+to view the detailed node by node snapshot data of the processflow.    
+6) Click on the Splitter node to get the snapshot dataview of the splitted files.  
+![splitternode2](../../../staticfiles/processflow/media/mapper/splitternode2.png)   
+Here you can see the data log file of snapshot with one file, containing `Four customer records`.  
+7) Now click on the `Transactional Log` to view the splitted data.  
+![splitternode3](../../../staticfiles/processflow/media/mapper/splitternode3.png)     
+Here you can view four splitted files each containing `one customer record` for further processing and 
+posting in destination application.  
 
-**1.Business Scenario - Low Server Response in Destination Application**    
+### Business Scenario - Low Server Response in Destination Application   
 
-1. Here we have designed a process flow with splitter node. The splitter node is attached
-just after Source Application (E.g: Magento2) which is fetching a huge number of data but the
+1. Here you designe a process flow with splitter node. The splitter node is attached
+ after Source Application (E.g: Magento2) which is fetching a huge number of data but the
 destination application (E.g: SAP B1) is unable to sync the single data packet with huge number of 
 data due to low server response.
 2. We are adding the splitter node after the source application and defining a batch size in splitter node

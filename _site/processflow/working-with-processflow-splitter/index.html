@@ -2185,6 +2185,7 @@
                         <ul class="toc__menu">
   <li><a href="#what-is-splitter-node">What is Splitter Node?</a></li>
   <li><a href="#working-principle">Working Principle</a></li>
+  <li><a href="#business-scenario---low-server-response-in-destination-application">Business Scenario - Low Server Response in Destination Application</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2236,18 +2237,29 @@ node the XPath is needed to be provided viewing the Transform Packet.</p>
 
 <p><code class="highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1</code>.</p>
 
-<p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown below:
+<p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:
 <img src="../../../staticfiles/processflow/media/mapper/processflow_splitter2.PNG" alt="Processflow Splitter2" /></p>
 
-<p>1) Go to Processflow section &amp; <a href="">Design</a> a Processflow.
-2) The Processflow is designed as shown in the above screen.
-3) Here</p>
+<p>1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.<br />
+2) The Processflow is designed as shown in the above section of the screen.<br />
+3) Here the <code class="highlighter-rouge">splitter</code> node is used after  getting customer data from Magento,
+and splitting it into multiple output packets for posting in destination application.<br />
+4) <a href="/processflow/deploying-and-executing-processfloww/">Deploy</a> the Process flow. After successful deployment, to your environment, <a href="/processflow/deploying-and-executing-processfloww/">Execute</a> the Processflow.<br />
+5) Go to <a href="/deployment/Environment-Management/">Environment</a>section of the portal, select the process flow from the listing section and click <a href="/processflow/snapshot-processflow/">View Snapshot</a>
+to view the detailed node by node snapshot data of the processflow.  <br />
+6) Click on the Splitter node to get the snapshot dataview of the splitted files.<br />
+<img src="../../../staticfiles/processflow/media/mapper/splitternode2.png" alt="splitternode2" /> <br />
+Here you can see the data log file of snapshot with one file, containing <code class="highlighter-rouge">Four customer records</code>.<br />
+7) Now click on the <code class="highlighter-rouge">Transactional Log</code> to view the splitted data.<br />
+<img src="../../../staticfiles/processflow/media/mapper/splitternode3.png" alt="splitternode3" />   <br />
+Here you can view four splitted files each containing <code class="highlighter-rouge">one customer record</code> for further processing and 
+posting in destination application.</p>
 
-<p><strong>1.Business Scenario - Low Server Response in Destination Application</strong></p>
+<h3 id="business-scenario---low-server-response-in-destination-application">Business Scenario - Low Server Response in Destination Application</h3>
 
 <ol>
-  <li>Here we have designed a process flow with splitter node. The splitter node is attached
-just after Source Application (E.g: Magento2) which is fetching a huge number of data but the
+  <li>Here you designe a process flow with splitter node. The splitter node is attached
+ after Source Application (E.g: Magento2) which is fetching a huge number of data but the
 destination application (E.g: SAP B1) is unable to sync the single data packet with huge number of 
 data due to low server response.</li>
   <li>We are adding the splitter node after the source application and defining a batch size in splitter node
