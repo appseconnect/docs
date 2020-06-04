@@ -49,6 +49,8 @@ Get, Halt, Resume,Process, Post etc. as shown below
 * Resync Bucket - This shows the status of the resync bucket wrt to the node. By default, 
 resync bucket opens up wrt to the selected node of the workflow. Resync Bucket gives information of the node
 being processed and it captures information like source id, destination id, Additional Data and Tries)
+
+**Note: Resync Bucket for Workflow Snapshot will display only 10 data at an instance. However, if you have 1000 data after the execution is over, you will be able to view all the data by scrolling through the pages.**
 * Log Bucket - This shows the logs specific to a node/loop. The errors will be displayed, if any.
 * File - This shows the XML File on our local systems,for the error will be shown directly in the FILE tab.  
 6. By default Resync bucket tab is selected. Click on log bucket tab to view the Log bucket of the processed node as shown below.  
