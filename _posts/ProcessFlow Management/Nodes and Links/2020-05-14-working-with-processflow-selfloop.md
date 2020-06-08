@@ -96,7 +96,7 @@ and execute a sync operation successfully to the destination application.
 Example for Execution:  Start node-> Get Node(SELF LOOP)-> Mapper -> Post
 
 **(B) Using self loop in the source application & destination application - When both the Source Application & destination application
- is unable to sync bulk records at a single execution.**  
+ is unable to sync bulk records at a single execution.**    
 One of the key elements for integration is processing and exchange of large amounts of data. 
 To ensure that these scenarios are executed without any issues, especially related to memory, 
 you can use the Self-Loop option in Processflow Integration in APPSeCONNECT. You can easily use this 
