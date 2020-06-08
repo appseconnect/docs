@@ -2176,7 +2176,7 @@
 
 
 
-  2 minute read
+  5 minute read
 </p>
                 
                 
@@ -2192,6 +2192,9 @@
   <li><a href="#prerequisites">Prerequisites</a>
     <ul>
       <li><a href="#adding-schemas-in-an-application-node-of-process-flow">Adding Schemas in an Application node of Process flow</a></li>
+      <li><a href="#importing-schemas-in-an-application-node-of-process-flow">Importing Schemas in an Application node of Process flow</a></li>
+      <li><a href="#editing-deleting--renaming-schemas-in-an-application-node-of-process-flow">Editing. Deleting &amp; Renaming Schemas in an Application node of Process flow</a></li>
+      <li><a href="#adding-attribute-to-a-schema">Adding Attribute to a Schema</a></li>
     </ul>
   </li>
 </ul>
@@ -2222,17 +2225,79 @@ within a process flow for easy execution.</p>
   <li>Action: The action based on the selected schema would be available. If no Action is present you have to create Action from <code class="highlighter-rouge">Manage Action</code> option present under the Schema field.</li>
   <li>Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.  <br />
 4) In the node configuration window, go to the Schema field. If the list of Schema is available select from 
-the list of schema. And if<code class="highlighter-rouge"> No schema</code> is available for the given application node, click <code class="highlighter-rouge">Manage Schema</code> option.
-5) The following window appears with message on display for the user to Add Schema or Import Schema
-6) Click on the option <strong>Add Schema</strong> and the add schema form opens up
-7) Enter the details of adding Schema and Click Save option
- a. Schema Name: This is a mandatory field and it needs to be provided with the schema name<br />
- b. Schema Description: The description for the schema is needed to be given here. 
- c. Schema Namespace: Differentiates between two similar schemas. 
- d. Schema Namespace URL: Differentiates between two similar schemas using URL.
-8) The newly added Schema gets listed in teh left side pane.</li>
+the list of schema. And if<code class="highlighter-rouge"> No schema</code> is available for the given application node, click <code class="highlighter-rouge">Manage Schema</code> option.<br />
+5) The following window appears with message on display for the user to Add Schema or Import Schema<br />
+6) Click on the option <strong>Add Schema</strong> and the add schema form opens up<br />
+7) Enter the details of adding Schema and Click <code class="highlighter-rouge">Save</code> button 
+ a. Schema Name: This is a mandatory field and it needs to be provided with the schema name  <br />
+ b. Schema Description: The description for the schema is needed to be given here <br />
+ c. Schema Namespace: Differentiates between two similar schemas <br />
+ d. Schema Namespace URL: Differentiates between two similar schemas using URL<br />
+8) The newly created Schema is added and gets listed in the left side pane.</li>
 </ul>
 
+<h3 id="importing-schemas-in-an-application-node-of-process-flow">Importing Schemas in an Application node of Process flow</h3>
+
+<p>1) On the Schema Window the user can view the list of schemas present or can also Import Schema Option.<br />
+2) Clicking on <code class="highlighter-rouge">Import Schema</code> option the Form opens up. Here you can import Schema in three formats -</p>
+<ul>
+  <li>XML</li>
+  <li>JSON</li>
+  <li>WSDL (Web Services Description Language) file for the Schema.   <br />
+3) In <code class="highlighter-rouge">JSON and XML</code> format you need to choose the respective XML and JSON file saved locally, but in <code class="highlighter-rouge">WSDL</code> format the user needs to provide the WSDL file link for importing the schema.<br />
+4) For generic apps, WSDL option will not be available for importing to any protocol other than SOAP.<br />
+5) For the XML/JSON format, the user needs to upload the file that supports the respective formats. 
+For XML, the user needs to upload XML file and for JSON, the JSON file needs to be uploaded.    <br />
+6) The parent node of the provided XML file is needed to be provided in the ELEMENT field.<br />
+<code class="highlighter-rouge">In this case, the parent is items, therefore the Element should be items.</code>   <br />
+6) Click on Render button, to view all the complex object &amp; complex object collection and its attributes.   <br />
+Expanding the complex object &amp; complex object collection will display all the attributes present.<br />
+7) If parsing errors are encountered during the Rendering process, the same will be displayed 
+to the Users.     <br />
+8) A confirmation message will be displayed after the Schema is imported successfully. 
+On saving the selected Schema along with the Attributes will be added into the Organization. 
+You can view the Imported Schema gets added in the listing section on the left side pane
+of the window.<br />
+9) Once Created, the Schema will be displayed on the left side of the pane.  <br />
+10) The <code class="highlighter-rouge">Attribute</code> and <code class="highlighter-rouge">Action</code> Folders will be automatically created under each Schema.  <br />
+11) For every Schema, the Context Menu will have the following options
+<code class="highlighter-rouge">Add Attribute</code>, <code class="highlighter-rouge">Edit Schema</code>, <code class="highlighter-rouge">Delete Schema</code> and <code class="highlighter-rouge">Rename Schema</code>.</li>
+</ul>
+
+<p><strong>Note: 
+(a)The user must save each node individually. There is no way the user can save it on the whole.
+This process is same for both the XML and JSON formats.
+(b)For WSDL format, the URL File should be provided for extracting the complex object &amp; complex object collection.
+Click on the SAVE button individually for the saving each of the nodes.
+(c) Users will also be able to view the newly added Schema by navigating to the Portal -&gt; App section.</strong></p>
+
+<h3 id="editing-deleting--renaming-schemas-in-an-application-node-of-process-flow">Editing. Deleting &amp; Renaming Schemas in an Application node of Process flow</h3>
+
+<h3 id="adding-attribute-to-a-schema">Adding Attribute to a Schema</h3>
+
+<p>1) The Schema context menu has the option to - ADD Attribute to the schema.<br />
+2) Click on Add Attribute to add attribute to the schema. The Add Attribute form opens up. 
+The fields in the Attriburte Property Window are: <br />
+a. Attribute Name: It is a mandatory field, used for providing name to the attribute 
+b. Data Type: Select the datatype from the drop-down as per the requirement. This is also a mandatory field. <br />
+c. Reference API: If any schema needs to be referred for the transformation, that can be referred by selecting 
+the Schema Name from the drop-down as a reference Entity.  <br />
+d. Tags: for providing specific tags to the attribute<br />
+e. Namespace Prefix: Prefix could be added for this attribute while working with namespaces.<br />
+f. Attribute Scope: Select the Scope - Organization Level or ProcessFlow Level
+f. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute.</p>
+<ul>
+  <li>Primary: for allotting this attribute as the Primary Key.</li>
+  <li>Required: for making this attribute mandatory for the mapping purpose.</li>
+  <li>Attribute: To add attribute in the XSLT
+3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
+appears on the window stating the attribute is created successfully.
+4) The newly created attribute gets added just below the Schema on the left side panel.  <br />
+4) Click on the created attribute in the node structure, for Renaming and Deleting 
+the attribute.</li>
+</ul>
+
+<p><strong>Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.</strong></p>
 
                 
             </section>

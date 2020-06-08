@@ -2176,7 +2176,7 @@
 
 
 
-  4 minute read
+  6 minute read
 </p>
                 
                 
@@ -2189,7 +2189,11 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#what-is-decision-node">What is Decision Node?</a></li>
+  <li><a href="#what-is-decision-node">What is Decision Node?</a>
+    <ul>
+      <li><a href="#understanding-conditions">Understanding conditions:</a></li>
+    </ul>
+  </li>
   <li><a href="#prerequisites">Prerequisites:</a></li>
   <li><a href="#working-principle">Working Principle:</a></li>
   <li><a href="#business-specific-scenarios-for-decision">Business Specific Scenarios for Decision:</a></li>
@@ -2201,11 +2205,15 @@
 
 <p>In Business, you may not have time for redundant data or data which is of no use to the business. Your Business can be Country specific or certain sets of customer specific and therefore you may not require data which are not oriented to you business. Therefore, in such case you may need to deal with data that are redundant.</p>
 
-<p>APPSeCONNECT Process Flow is enabled with a decision node that will not execute the data that does not fulfills your criteria.</p>
+<p>APPSeCONNECT Process Flow is enabled with a decision node that will not execute the data that does not fulfills your decision criteria. The below image will help you design a process flow with the Decision Node.</p>
 
-<p>For Eg: A decision key is applied on a single chunk of data based on the decision criteria defined in the decision node configuration window that only those orders will be synced whose Shipping Address is of <code class="highlighter-rouge">US</code> (You may only have the option to ship data in <code class="highlighter-rouge">US</code>).</p>
+<p><img src="\staticfiles\processflow\media\pfdecision1.PNG" alt="PFdecision1" /></p>
 
-<p>In such cases, only those data would be passed through the Decision node, which satisfies the condition, which makes it easy you to extract redundant orders.</p>
+<h3 id="understanding-conditions">Understanding conditions:</h3>
+
+<p><code class="highlighter-rouge">For Ex:</code> A Gateway condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.</p>
+
+<p>The set of data that fulfils this Gateway condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the Gateway condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.</p>
 
 <p>The following are the fields that you will get on dragging the Decision Node in the Process Flow Designer Panel.</p>
 
@@ -2221,13 +2229,40 @@
 
     <ul>
       <li>
-        <p>Decision on <strong>Attribute</strong>: Applying Decision on <strong>attribute</strong> allows the node to decide the condition over the value passed through the attribute.</p>
+        <p>Decision on <strong>Attribute</strong>:</p>
+
+        <p>Applying Decision on <strong>attribute</strong> allows the node to decide the condition over the value passed through the attribute.</p>
+
+        <p>As all data for an Entity (For Ex: Order, Business Partner etc ) are transfered through packets which are further made up of attributes, you can implement your business flow by applying condition on required attribute. If decision node meets up the condition expression provided, the data will be passed.</p>
       </li>
       <li>
-        <p>Decision on <strong>Generic Function</strong>: Generic Functions of APPSeCONNECT allows you to extract transaction values. Applying Decision on Generic Appresource Function will execute the condition over the provided function and will allow the node based on the provided condition. <a href="/transformation/using-library-methods/">Click Here</a> for more details on Appresource Functions.</p>
+        <p>Decision on <strong>Generic Function</strong>:</p>
+
+        <p>APPSeCONNECT Generic Functions allows you to extract internal transactional values or modify the values based upon the functions that are used and requirements.</p>
+
+        <p>Applying Decision on Generic Appresource Function will execute the condition over the provided function and will allow the node based on the provided condition. <a href="/transformation/using-library-methods/">Click Here</a> for more details on Appresource Functions.</p>
+
+        <p><code class="highlighter-rouge">For Ex: {gen:IsDate()}</code></p>
+
+        <p><em><strong>Note: You need to provide the namespace prefix for generic function <code class="highlighter-rouge">gen:xyz()</code> when decision key evaluates a generic function.</strong></em></p>
       </li>
       <li>
-        <p>Decision on <strong>Cloud Appresource Function</strong>:  Cloud Appresource are the functions that are defined in the Cloud portal itself. Applying Decision on Cloud Appresource function will allow the node to execute the condition on the provided Cloud Appresource Function. <a href="/processflow/cloud-appresource-functions/">Click Here</a> to know more about Process Flow cloud appresource function.</p>
+        <p>Decision on <strong>Cloud Appresource Function</strong>:</p>
+
+        <p>Cloud Appresource are the functions that are defined in the Cloud portal itself for extracting specific values through function for the attribute mapped with the defined function.</p>
+
+        <p>Applying Decision on Cloud Appresource function will allow the node to execute the condition on the provided Cloud Appresource Function and checks for the value recieved from the function and value provided in the Decision Node. On successful evaluation of the condition, data passed thorugh the condition moves to the next node. <a href="/processflow/cloud-appresource-functions/">Click Here</a> to know more about Process Flow cloud appresource function.</p>
+
+        <p><code class="highlighter-rouge">For Ex: {cloud:timeinstance(string)}</code></p>
+
+        <p><em><strong>Note: You need to provide the namespace prefix for generic function <code class="highlighter-rouge">cloud:xyz()</code> when decision key evaluates a generic function.</strong></em></p>
+      </li>
+      <li>
+        <p>Decision on <strong>Static Values:</strong></p>
+
+        <p>Static Values are any random values that can be provided in the Decision key for allowing condition check in the Process Flow. Any value that is provided in Decision Key with or without conjunction can be a Static Value. Static Values can be provided to check and verify whether the node successfully execution the decision nodes.</p>
+
+        <p>In Business Perspective, any decision key if provided be it the generic function or Attibute value extraction though XPATH or a cloud appresource function provided in Decision Key will be considered as a static Value.</p>
       </li>
     </ul>
   </li>
@@ -2253,13 +2288,12 @@
   </li>
 </ul>
 
-<p><img src="" alt="PFdecision1" /></p>
-
 <h2 id="prerequisites">Prerequisites:</h2>
 
 <ul>
   <li>You need to have valid credentials of the portal.</li>
   <li>You need to <a href="/processflow/creating-processflow/">create a Process Flow</a> or need to have an existing Process Flow developed.</li>
+  <li>When working with Cloud Appresource function in Decision Node, you need to define the function before implementing the decision criteria. <a href="/processflow/cloud-appresource-functions/">Click Here</a> to know more about Process Flow cloud appresource function.</li>
 </ul>
 
 <h2 id="working-principle">Working Principle:</h2>
@@ -2268,12 +2302,20 @@
   <li>Drag the decision node in the designer panel from the Process Property menu. The Decision Node Configuration Window opens.</li>
 </ol>
 
-<p><img src="" alt="PFdecision2" /></p>
+<p><img src="\staticfiles\processflow\media\pfdecision2.PNG" alt="PFdecision2" /></p>
 
 <ol>
   <li>
     <p>You can view the above mentioned fields. Enter the name &amp; node description.</p>
   </li>
+  <li>
+    <p>Click on the <strong>Add Criteria</strong> button. You can view the fields for providing the condition.</p>
+  </li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\pfdecision3.PNG" alt="PFdecision3" /></p>
+
+<ol>
   <li>
     <p>You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.</p>
 
@@ -2282,7 +2324,7 @@
     <p><strong>Description:</strong> You may have your Business Model stating, only those orders  shall be shipped whose Country is <strong><code class="highlighter-rouge">US</code> (United States)</strong> &amp; Region Code is <strong><code class="highlighter-rouge">NY</code> (New York)</strong> &amp; the Email Id of the customer shall contain <code class="highlighter-rouge">gmail.com</code>. Therefore, you may not require to sync orders that has the shipping address of states other than <code class="highlighter-rouge">NY</code> or of some other email domain. Therefore, implementing such decision, your decision KEY should be provided with XPATH that searches for the COUNTRY &amp; State &amp; customer_email in the Input Packet. In this Scenario, the configuration should be.</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">//items//item//shipping/country_id</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items//item//shipping/country_id}</code></li>
       <li>
         <p><strong>Operator:</strong> <code class="highlighter-rouge">Equals to</code></p>
       </li>
@@ -2292,7 +2334,7 @@
     <p>&amp;</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">//items/item//shipping/region_code</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items/item//shipping/region_code}</code></li>
       <li><strong>Operator:</strong> <code class="highlighter-rouge">Equals to</code></li>
       <li><strong>Value:</strong> <code class="highlighter-rouge">NY</code></li>
     </ul>
@@ -2300,22 +2342,33 @@
     <p>&amp;</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">//items/items/customer_email</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items/items/customer_email}</code></li>
       <li><strong>Operator:</strong> <code class="highlighter-rouge">Contains</code></li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">gmail.com</code></li>
+      <li><strong>Value:</strong> <code class="highlighter-rouge">xyz.com</code></li>
     </ul>
   </li>
 </ol>
 
-<p><em><strong>Note: You need to click the button <code class="highlighter-rouge">Add Criteria</code> for providing multiple condition with conjunctions. Also, you need to enable the toggle button for activating the conditions.</strong></em></p>
+<p><em><strong>Note:</strong></em></p>
+<ul>
+  <li>
+    <p><em><strong>You need to click the button <code class="highlighter-rouge">Add Criteria</code> for providing multiple condition with conjunctions. Also, you need to enable the toggle button for activating the conditions.</strong></em></p>
+  </li>
+  <li>
+    <p><em><strong>Providing the Curly Brackets ({}) are mandatory when entering the decision key</strong></em></p>
+  </li>
+  <li>
+    <p><em><strong>If the Decision key is Generic Function you need tp provide the syntax with the Namespace Prefic for the function. If it is a Cloud appresource function, you need to provide the</strong></em></p>
+  </li>
+</ul>
 
-<p><img src="" alt="PFdecision3" /></p>
+<p><img src="\staticfiles\processflow\media\pfdecision4.PNG" alt="PFdecision4" /></p>
 
 <ol>
   <li>Once the decision criteria is provided, you can view the final expression in the Preview URL.</li>
 </ol>
 
-<p><img src="" alt="PFdecision4" /></p>
+<p><img src="" alt="PFdecision5" /></p>
 
 <ol>
   <li>
@@ -2326,13 +2379,13 @@
   </li>
 </ol>
 
-<p><img src="" alt="PFdecision5" /></p>
+<p><img src="" alt="PFdecision6" /></p>
 
 <ol>
   <li>After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about Process Flow Snapshots.</li>
 </ol>
 
-<p><img src="" alt="PFdecision6" /></p>
+<p><img src="" alt="PFdecision7" /></p>
 
 <p>Following the above process you can successfully implement Decision for a Process Flow.</p>
 
@@ -2341,51 +2394,59 @@
 <table>
   <thead>
     <tr>
+      <th>Decision Applied On</th>
       <th>Decision Criteria</th>
       <th>Operator Used</th>
       <th>Value</th>
       <th>Decision Description</th>
-      <th>Decision Applied On</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">//items//item//state_code</code></td>
-      <td><code class="highlighter-rouge">=</code></td>
-      <td><code class="highlighter-rouge">CAL</code> (California)</td>
-      <td>Only those orders shall be accepted whose state provided in the address is <code class="highlighter-rouge">CAL</code></td>
       <td>Attribute</td>
+      <td><code class="highlighter-rouge">{//items//item//state_code}</code></td>
+      <td><code class="highlighter-rouge">=</code></td>
+      <td><code class="highlighter-rouge">CAL</code></td>
+      <td>Only those orders shall be accepted whose state provided in the address is <code class="highlighter-rouge">CAL</code> (CAlifornia)</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">getMapping('TAX',//items/items//extension_attributes/applied_taxes/item/code)</code> AND <code class="highlighter-rouge">//items//item//shipping/country_id</code></td>
+      <td>Conjunction of Generic Function &amp; Attribute</td>
+      <td><code class="highlighter-rouge">{getMapping('TAX',//items/items//</code> <br /> <code class="highlighter-rouge">extension_attributes/</code> <br /> <code class="highlighter-rouge">applied_taxes/item/code) </code> AND <code class="highlighter-rouge">//items//item//</code> <br /> <code class="highlighter-rouge">shipping/country_id}</code></td>
       <td><code class="highlighter-rouge">contains</code> &amp; <code class="highlighter-rouge">=</code></td>
       <td><code class="highlighter-rouge">SVAT</code> &amp; <code class="highlighter-rouge">CA</code></td>
-      <td>this decision states that only those orders shall be accepted whose Tax code contains SVAT &amp; Country code is <code class="highlighter-rouge">CA</code> (CANADA)</td>
-      <td>Generic Function &amp; Attribute</td>
+      <td>This decision states that only those orders shall be accepted whose Tax code contains SVAT &amp; Country code is <code class="highlighter-rouge">CA</code> (CANADA)</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">IsDate()</code></td>
+      <td>Generic function</td>
+      <td><code class="highlighter-rouge">{IsDate()}</code></td>
       <td><code class="highlighter-rouge">=</code></td>
       <td><code class="highlighter-rouge">2020-06-01</code></td>
       <td>This condition states that only those data shall qualify the decision whose date equals to the provided value</td>
-      <td>Generic function</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">cloudResourcelib:timeinstance(string)</code></td>
+      <td>Cloud Appresource</td>
+      <td><code class="highlighter-rouge">{cloud:timeinstance(string)}</code></td>
       <td><code class="highlighter-rouge">&lt;=</code></td>
       <td><code class="highlighter-rouge">01062020</code></td>
       <td>Here, a cloud Appresource function is defined and is provided in decision key where the condition checks that only those data would be accepted whose data, returned, is less than the value provide</td>
-      <td>Cloud Appresource</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">cloudResourcelib:timeinstance(string)</code> AND <code class="highlighter-rouge">cloudResourcelib:timeinstance(string)</code></td>
-      <td><code class="highlighter-rouge">&gt;=</code> &amp; <code class="highlighter-rouge">&lt;=</code></td>
-      <td><code class="highlighter-rouge">02022020</code> &amp; <code class="highlighter-rouge">04062020</code></td>
-      <td>Here, a conjuction of a cloud appresource function is implemented to accept only those data whose value is greater than equal to <code class="highlighter-rouge">02022020</code> and less than equal to <code class="highlighter-rouge">04062020</code></td>
       <td>Conjunction of Cloud Appresource Function</td>
+      <td><code class="highlighter-rouge">{cloud:timeinstance(string)}</code> AND <code class="highlighter-rouge">{cloud:timeinstance(string)}</code></td>
+      <td><code class="highlighter-rouge">&gt;=</code> &amp; <code class="highlighter-rouge">&lt;=</code></td>
+      <td><code class="highlighter-rouge">02022020</code> &amp; <br /> <code class="highlighter-rouge">04062020</code></td>
+      <td>Here, a conjuction of a cloud appresource function is implemented to accept only those data whose value is greater than equal to <code class="highlighter-rouge">02022020</code> and less than equal to <code class="highlighter-rouge">04062020</code></td>
+    </tr>
+    <tr>
+      <td>Generic Function</td>
+      <td><code class="highlighter-rouge">{gen:FormatDate(</code>05-06-2020<code class="highlighter-rouge">,</code>dd-mm-yyyy<code class="highlighter-rouge">}</code></td>
+      <td><code class="highlighter-rouge">contains</code></td>
+      <td><code class="highlighter-rouge">{gen:FormatDate</code> <br /> <code class="highlighter-rouge">(</code>2020-06-05<code class="highlighter-rouge">,</code>yyyy-mm-dd<code class="highlighter-rouge">}</code></td>
+      <td>Here, the generic function is implemented on both Decision Key &amp; Value to compare and decide where the incoming date contains the provided format.</td>
     </tr>
   </tbody>
 </table>
+
 
                 
             </section>
