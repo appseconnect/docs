@@ -2211,9 +2211,9 @@
 
 <h3 id="understanding-conditions">Understanding conditions:</h3>
 
-<p><code class="highlighter-rouge">For Ex:</code> A Gateway condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.</p>
+<p><code class="highlighter-rouge">For Ex:</code> A Decision condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.</p>
 
-<p>The set of data that fulfils this Gateway condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the Gateway condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.</p>
+<p>The set of data that fulfils this condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the decision condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.</p>
 
 <p>The following are the fields that you will get on dragging the Decision Node in the Process Flow Designer Panel.</p>
 
@@ -2326,7 +2326,7 @@
     <ul>
       <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items//item//shipping/country_id}</code></li>
       <li>
-        <p><strong>Operator:</strong> <code class="highlighter-rouge">Equals to</code></p>
+        <p><strong>Operator:</strong> <code class="highlighter-rouge">=</code></p>
       </li>
       <li><strong>Value:</strong> <code class="highlighter-rouge">US</code></li>
     </ul>
@@ -2335,7 +2335,7 @@
 
     <ul>
       <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items/item//shipping/region_code}</code></li>
-      <li><strong>Operator:</strong> <code class="highlighter-rouge">Equals to</code></li>
+      <li><strong>Operator:</strong> <code class="highlighter-rouge">=</code></li>
       <li><strong>Value:</strong> <code class="highlighter-rouge">NY</code></li>
     </ul>
 
