@@ -21,9 +21,9 @@ APPSeCONNECT Process Flow is enabled with a decision node that will not execute 
 
 ### Understanding conditions:
 
-`For Ex:` A Gateway condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.
+`For Ex:` A Decision condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.
 
-The set of data that fulfils this Gateway condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the Gateway condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.
+The set of data that fulfils this condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the decision condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.
 
 The following are the fields that you will get on dragging the Decision Node in the Process Flow Designer Panel.
 
@@ -106,14 +106,14 @@ _**Note:** You can only provide those Appresource Functions (both Cloud & Generi
     **Description:** You may have your Business Model stating, only those orders  shall be shipped whose Country is **`US` (United States)** & Region Code is **`NY` (New York)** & the Email Id of the customer shall contain `gmail.com`. Therefore, you may not require to sync orders that has the shipping address of states other than `NY` or of some other email domain. Therefore, implementing such decision, your decision KEY should be provided with XPATH that searches for the COUNTRY & State & customer_email in the Input Packet. In this Scenario, the configuration should be.
 
     - **Decision Key:** `{//items//item//shipping/country_id}`
-    - **Operator:** `Equals to`
+    - **Operator:** `=`
 
     - **Value:** `US`
 
     & 
 
     - **Decision Key:** `{//items/item//shipping/region_code}`
-    - **Operator:** `Equals to`
+    - **Operator:** `=`
     - **Value:** `NY`
 
     & 
