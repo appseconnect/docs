@@ -64,7 +64,12 @@ You require to sign up for an account with APPSeCONNECT Community.
 **ProTip:** Customers needs to provide their business Email for registering with APPSeCONNECT.
 {: .notice--info}  
 
-3.	Once the details are filled up, click `Get Started` button. User gets an Activation mail for the trial account in the provided mail id.    
+3.	Once the details are filled up, click `Get Started` button. User gets an Activation mail for the trial account in the provided mail id. With the activation mail, you will also recieve the links of the following for better assistance.
+- Link for Customer Stories that will allow you to know the product efficiency in Market.
+- Link for the On-Demand Webinars that will provide you informations regarding APPSeCONNECT.
+- Link Technical & Conceptual Details will provide you with the opportunity to learn technical built up and concept of APPSeCONNECT.
+- Link for APPSeCONNECT Documentations will help you with the usability aspect throughout APPSeCONNECT.
+- Link for APPSeCONNECT Community will enable you to stay connect with the APPSeCONNECT Community for quick support and discussions.
 ![newcustomer_registration3](/staticfiles/root/media/newcustomer_registration3.png)  
 4.	Clicking on `Activation link` will activate the created account. User will now be able to login to the portal with the password provided in the activation mail.  
 5.	Once logged, APPSeCONNECT portal would ask the user to change the password for security purpose.    

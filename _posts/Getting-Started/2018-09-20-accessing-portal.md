@@ -292,7 +292,18 @@ following actions:
 
 1. User can view the organisation subscription plan and its expiry date.  
 ![subscription1](/staticfiles/root/media/subscription1.png)      
-2. Our Support team helps you in Selection of necessary addons and help you in updating subscription.  
+
+2. Our Support team helps you in Selection of necessary addons and help you in updating subscription.
+
+_**Note:** On Expiry of your organisation you will not be able to perform the following functionalities
+
+- You will not be able to perform the sync process of new data either through Auto-Sync or Manual Sync.
+
+- You will not be able to login either on the platform or the OP Agent.
+
+- No [Morning Report](/rule/default-rule-for-morning-report/) and the [Detailed Sync Report](/rule/preconfigured-rule-for-detailed-sync-report/) will be sent if your organisation has expired.
+
+- On renewal of your subscription, new data will be taken for the sync process from following day onwards according to the expiry date.
 
 For Pricing details [click here](https://www.appseconnect.com/pricing/)
 

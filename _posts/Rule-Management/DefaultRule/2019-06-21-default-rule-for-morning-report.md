@@ -38,6 +38,7 @@ To Cite an example, if the transaction period is from 3.12.2019 - 00.00hrs to 4.
 * Default Rule for Morning Report will get auto-activated for cloud agent users without deploying/updating configuration.
 * For OP Agent, the default Rule for Morning Report will get auto-activated for new organization users, after activating and logging in to their Agent.
 * Existing Organisations with OP Agent environment, needs to the update/deploy the configurations for activating the rule.
+* You will not recieve the Morning Report if the subscription of your organisation has expired.
 
 
 
