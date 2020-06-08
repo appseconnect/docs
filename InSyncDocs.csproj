@@ -1247,6 +1247,7 @@
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-processflow-app.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-04-16-working-with-Post.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-04-16-working-with-mapper.md" />
+    <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-15-adding-schema-actions.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-retry-processflow.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-18-deploying-and-executing-processfloww.md" />
     <None Include="_posts\ProcessFlow Management\Quickstart\2020-03-17-creating-processflow.md" />

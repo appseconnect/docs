@@ -12,7 +12,6 @@ menus:
 ---
 ### What is Loop node
 
-
 In APPSeCONNECT Processflow using a Self-loop, we can repeatedly execute an individual node 
 without affecting the other nodes that are linked with it. Lets take an example - If we draw a self-loop in GET 
 element in Processflow it will ask for the no. of times it will be executed. Lets take a 
@@ -20,7 +19,6 @@ scenario where the source application associated can fetch 10 records at a time
 but the user wants to fetch a minimum of 50 unsynced data at a time if it is available. Here user can
 implement a self-loop with 5 occurrences. Self loop enables the user to 
 iterate a node execution as per the configuration.
-
 
 Self-loop is an interesting functionality as it can be used in a node to iterate as per configuration. 
 Presently three option is available to configure self-loop: 
@@ -31,8 +29,9 @@ Presently three option is available to configure self-loop:
 - Timespan: This option allows the User to define the duration for which the self-loop will iterate the node over which it defined.   
 **User can set Maximum upto  24 hrs, 59 mints, 59 seconds, to iterate the occurrence**
 
-Self loop execution on a node can be achieved by choosing any one of the options. 
-Although the availability of data is always the prime criteria for executing the self-loop.
+You can execute a Self loop by choosing any one one of the three given options. 
+Although the availability of data is always the prime criteria for executing the 
+self-loop.
 
 ### Working Principle
 [INSERT SELF LOOP LINK VIEW IMAGE]
@@ -49,16 +48,44 @@ Self Loop Execution on the nodes:
 `Self-loop Configuration - Number of Occurence`  
 `Self-loop Configuration - For a Timespan`  
 
-1. Select and choose the option `Time Span` radio button. The following 
+**A. Choosing Self Loop Configuration - Number of Occurence**
+
+1. In the self loop node, Select and choose the option `Number of Occurence` radio button. The following 
+screen appears.   
+[SCREENSHOT]
+2. Here you have to provide the value for the no. of times the Self Loop will be executed over the node.  
+(a) The input value of no. of times/occurence should be an integer number.  
+(b) The value range is between 1 to 999 (min to max value).
+3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.  
+4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
+   by you or until data availability. 
+
+**B. Choosing Self Loop Configuration - For a Timespan**
+1. In the self loop node, Select and choose the option `Time Span` radio button. The following 
 screen appears.   
 [SCREENSHOT]
 2. Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the duration as per your requirement.
+You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the duration as per your requirement.  
 (a) Hours: The value range of hours is from 1-24  
 (b) Minutes: The value range of minutes is from 1-60  
-(c) Seconds: The value range of seconds is from 1-60  
+(c) Seconds: The value crange of seconds is from 1-60  
 [SCREENSHOT]  
-3. Now provide the Description of the Self-loop configuration in the Description field. 
-Description is a mandatory field.  
+3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.
+4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
+   by you or until data availability.  
+
+**C. Choosing Self Loop Configuration - Until data available**
+
 **(a)Maximum no. of characters allowed in the Description Field will be Max.  
-  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability** 
+  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as
+   defined by the user or until data availability.  
+  (c)Data availability is the first condition for execution of the self-loop, irrespective
+  of the options choosen  for execution.** 
+
+Business Scenarios for Self loop Usabilty & Execution:
+
+**(A) Using self loop in Get node, when the source application is unable to fetch more than
+a limited number of records at a single execution.**
+
+(B)
+

@@ -1456,6 +1456,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Adding and Managing - Schema & Actions">Adding and Managing - Schema & Actions</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/creating-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/creating-processflow/" onclick="selectTab('/processflow/creating-processflow/', event);" title="Go to Steps to Create a ProcessFlow">Steps to Create a ProcessFlow</a>
         
@@ -2170,7 +2176,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -2210,8 +2216,9 @@ Presently three option is available to configure self-loop:</p>
 <strong>User can set Maximum upto  24 hrs, 59 mints, 59 seconds, to iterate the occurrence</strong></li>
 </ul>
 
-<p>Self loop execution on a node can be achieved by choosing any one of the options. 
-Although the availability of data is always the prime criteria for executing the self-loop.</p>
+<p>You can execute a Self loop by choosing any one one of the three given options. 
+Although the availability of data is always the prime criteria for executing the 
+self-loop.</p>
 
 <h3 id="working-principle">Working Principle</h3>
 <p>[INSERT SELF LOOP LINK VIEW IMAGE]</p>
@@ -2245,21 +2252,51 @@ Although the availability of data is always the prime criteria for executing the
 <code class="highlighter-rouge">Self-loop Configuration - Number of Occurence</code><br />
 <code class="highlighter-rouge">Self-loop Configuration - For a Timespan</code></p>
 
+<p><strong>A. Choosing Self Loop Configuration - Number of Occurence</strong></p>
+
 <ol>
-  <li>Select and choose the option <code class="highlighter-rouge">Time Span</code> radio button. The following 
+  <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Number of Occurence</code> radio button. The following 
+screen appears. <br />
+[SCREENSHOT]</li>
+  <li>Here you have to provide the value for the no. of times the Self Loop will be executed over the node.<br />
+(a) The input value of no. of times/occurence should be an integer number.<br />
+(b) The value range is between 1 to 999 (min to max value).</li>
+  <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
+  <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
+by you or until data availability.</li>
+</ol>
+
+<p><strong>B. Choosing Self Loop Configuration - For a Timespan</strong></p>
+<ol>
+  <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Time Span</code> radio button. The following 
 screen appears. <br />
 [SCREENSHOT]</li>
   <li>Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Span in Hours, Minutes &amp; Seconds. Enter the duration as per your requirement.
+You have the option for the Time-Span in Hours, Minutes &amp; Seconds. Enter the duration as per your requirement.<br />
 (a) Hours: The value range of hours is from 1-24<br />
 (b) Minutes: The value range of minutes is from 1-60<br />
-(c) Seconds: The value range of seconds is from 1-60<br />
+(c) Seconds: The value crange of seconds is from 1-60<br />
 [SCREENSHOT]</li>
-  <li>Now provide the Description of the Self-loop configuration in the Description field. 
-Description is a mandatory field.<br />
-<strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
-  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability</strong></li>
+  <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
+  <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
+by you or until data availability.</li>
 </ol>
+
+<p><strong>C. Choosing Self Loop Configuration - Until data available</strong></p>
+
+<p><strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
+  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as
+   defined by the user or until data availability.<br />
+  (c)Data availability is the first condition for execution of the self-loop, irrespective
+  of the options choosen  for execution.</strong></p>
+
+<p>Business Scenarios for Self loop Usabilty &amp; Execution:</p>
+
+<p><strong>(A) Using self loop in Get node, when the source application is unable to fetch more than
+a limited number of records at a single execution.</strong></p>
+
+<p>(B)</p>
+
 
                 
             </section>
@@ -4352,6 +4389,14 @@ Description is a mandatory field.<br />
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4427,6 +4472,8 @@ Description is a mandatory field.<br />
                                     Working with GET
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
