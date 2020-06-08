@@ -2176,7 +2176,7 @@
 
 
 
-  3 minute read
+  5 minute read
 </p>
                 
                 
@@ -2191,6 +2191,7 @@
                         <ul class="toc__menu">
   <li><a href="#what-is-loop-node">What is Loop node</a></li>
   <li><a href="#working-principle">Working Principle</a></li>
+  <li><a href="#business-scenarios-for-self-loop-usabilty">Business Scenarios for Self loop Usabilty</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2290,13 +2291,37 @@ by you or until data availability.</li>
   (c)Data availability is the first condition for execution of the self-loop, irrespective
   of the options choosen  for execution.</strong></p>
 
-<p>Business Scenarios for Self loop Usabilty &amp; Execution:</p>
+<h3 id="business-scenarios-for-self-loop-usabilty">Business Scenarios for Self loop Usabilty</h3>
 
-<p><strong>(A) Using self loop in Get node, when the source application is unable to fetch more than
-a limited number of records at a single execution.</strong></p>
+<p><strong>(A) Using self loop in the source application - Leverage Application Capabilities to accept multiple 
+records in a single request/execution.</strong></p>
 
-<p>(B)</p>
+<p>Here to repeat actions until a condition gets met, you can create a <code class="highlighter-rouge">Self-loop</code>. Here you have to apply Self loop 
+in the Source application. This will first run all the actions inside the loop, and then checks the condition or state. 
+If the condition is met, the loop stops. Otherwise, the loop repeats to extract the bulk data’s (unsynced) till all are
+fetched. Thus with the aid of Self loop user can fetch bulk data (with the defined configuration in the self loop)
+and execute a sync operation successfully to the destination application.</p>
 
+<p>Example for Execution:  Start node-&gt; Get Node(SELF LOOP)-&gt; Mapper -&gt; Post</p>
+
+<p><strong>(B) Using self loop in the source application &amp; destination application - When both the Source Application &amp; destination application
+ is unable to sync bulk records at a single execution.</strong>
+One of the key elements for integration is processing and exchange of large amounts of data. 
+To ensure that these scenarios are executed without any issues, especially related to memory, 
+you can use the Self-Loop option in Processflow Integration in APPSeCONNECT. You can easily use this 
+Selp loop in both the source and destination application in the Integration Process and invoke 
+that process flow is executed and bulk data is synced using a Self Loop. This Process incorporates splitter node
+for splitting bulk data into chunks of data for reducing data load in destination application.</p>
+
+<p>Example for Execution:  Start node-&gt; Get Node(SELF LOOP)-&gt; Mapper -&gt; Split-&gt; Post (SELF LOOP)</p>
+
+<p><strong>(C)Using self loop during data transformation - Data Loss Prevention For Processing number of input packets from 
+Source Application to Destination Application</strong></p>
+
+<p>Data loss Prevention for multiple input packets received during tansformation can be achieved by applying
+Self Loop on the mapper node thus enabling to post all the data packets received during transformation.</p>
+
+<p>Example for Execution:  Start node-&gt; Get Node-&gt; Split-&gt; Mapper (SELF LOOP)-&gt; Post</p>
 
                 
             </section>

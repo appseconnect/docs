@@ -2239,16 +2239,23 @@ Get, Halt, Resume,Process, Post etc. as shown below
       <li>Resync Bucket - This shows the status of the resync bucket wrt to the node. By default, 
 resync bucket opens up wrt to the selected node of the workflow. Resync Bucket gives information of the node
 being processed and it captures information like source id, destination id, Additional Data and Tries)</li>
-      <li>Log Bucket - This shows the logs specific to a node/loop. The errors will be displayed, if any.</li>
-      <li>File - This shows the XML File on our local systems,for the error will be shown directly in the FILE tab.</li>
     </ul>
   </li>
-  <li>By default Resync bucket tab is selected. Click on log bucket tab to view the Log bucket of the processed node as shown below.<br />
-<img src="/staticfiles/workflow-management/media/Getoperation-logbucket.png" alt="Getoperation-logbucket" /></li>
-  <li>Click on File tab to view the XML File details.<br />
-<img src="/staticfiles/workflow-management/media/getoperation-file.png" alt="getoperation-file" /></li>
-  <li>Here you can view the output of the GET node in XML File.</li>
 </ol>
+
+<p><strong>Note: Resync Bucket for Workflow Snapshot will display only 10 data at an instance. However, if you have 1000 data after the execution is over, you will be able to view all the data by scrolling through the pages.</strong></p>
+<ul>
+  <li>Log Bucket - This shows the logs specific to a node/loop. The errors will be displayed, if any.</li>
+  <li>File - This shows the XML File on our local systems,for the error will be shown directly in the FILE tab.
+    <ol>
+      <li>By default Resync bucket tab is selected. Click on log bucket tab to view the Log bucket of the processed node as shown below.<br />
+<img src="/staticfiles/workflow-management/media/Getoperation-logbucket.png" alt="Getoperation-logbucket" /></li>
+      <li>Click on File tab to view the XML File details.<br />
+<img src="/staticfiles/workflow-management/media/getoperation-file.png" alt="getoperation-file" /></li>
+      <li>Here you can view the output of the GET node in XML File.</li>
+    </ol>
+  </li>
+</ul>
 
 <p><strong>NOTE: Destination Response data is viewable under file option of POST node</strong></p>
 

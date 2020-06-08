@@ -603,7 +603,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Decision Node",
-      excerpt: "\n",
+      excerpt: "What is Decision Node? In Business, you may not have time for redundant data or data which is of no...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 65
@@ -3074,7 +3074,7 @@ var store = [
       {
         "title": "Decision Node",
         "url": "/processflow/working-with-decision/",
-        "excerpt": "\n",
+        "excerpt": "What is Decision Node? In Business, you may not have time for redundant data or data which is of no...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -82,10 +82,34 @@ You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the dur
   (c)Data availability is the first condition for execution of the self-loop, irrespective
   of the options choosen  for execution.** 
 
-Business Scenarios for Self loop Usabilty & Execution:
+### Business Scenarios for Self loop Usabilty 
 
-**(A) Using self loop in Get node, when the source application is unable to fetch more than
-a limited number of records at a single execution.**
+**(A) Using self loop in the source application - Leverage Application Capabilities to accept multiple 
+records in a single request/execution.**
 
-(B)
+Here to repeat actions until a condition gets met, you can create a `Self-loop`. Here you have to apply Self loop 
+in the Source application. This will first run all the actions inside the loop, and then checks the condition or state. 
+If the condition is met, the loop stops. Otherwise, the loop repeats to extract the bulk data's (unsynced) till all are
+fetched. Thus with the aid of Self loop user can fetch bulk data (with the defined configuration in the self loop)
+and execute a sync operation successfully to the destination application.
 
+Example for Execution:  Start node-> Get Node(SELF LOOP)-> Mapper -> Post
+
+**(B) Using self loop in the source application & destination application - When both the Source Application & destination application
+ is unable to sync bulk records at a single execution.**  
+One of the key elements for integration is processing and exchange of large amounts of data. 
+To ensure that these scenarios are executed without any issues, especially related to memory, 
+you can use the Self-Loop option in Processflow Integration in APPSeCONNECT. You can easily use this 
+Selp loop in both the source and destination application in the Integration Process and invoke 
+that process flow is executed and bulk data is synced using a Self Loop. This Process incorporates splitter node
+for splitting bulk data into chunks of data for reducing data load in destination application.
+
+Example for Execution:  Start node-> Get Node(SELF LOOP)-> Mapper -> Split-> Post (SELF LOOP)
+
+**(C)Using self loop during data transformation - Data Loss Prevention For Processing number of input packets from 
+Source Application to Destination Application**
+
+Data loss Prevention for multiple input packets received during tansformation can be achieved by applying
+Self Loop on the mapper node thus enabling to post all the data packets received during transformation.
+
+Example for Execution:  Start node-> Get Node-> Split-> Mapper (SELF LOOP)-> Post
