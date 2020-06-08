@@ -76,6 +76,28 @@ You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the dur
 
 **C. Choosing Self Loop Configuration - Until data available**
 
+1.	Link up the self-loop in the node where you need the loop to perform. The node configuration page opens.
+
+[Image]
+
+2.	Select the check box against the option **Until Data Available**. You will not have to provide any additional details as in **Self-Loop for Time Span** & **Self-Loop for Number of Occurrence**.
+
+**Note:** 
+
+- On selecting this option, Self-Loop will execute its execution until all the Data are received for that single instance. 
+
+- Self-Loop: Until Data Available will display only one iteration when checked for the Snapshot.
+
+- Self-Loop:Until Data Availble will stop its execution when there is no further data availble send from its predecessor node or from the data Source.
+
+- Self-loop over GET node will not be executed during the `RETRY` process if the GET node is connected to the START node as its predecessor node.
+
+[Image]
+
+3. Enter the Description of the self-loop node configuration window.
+
+4. Self loop over these nodes GET/MAPPER/POST will be executed until all the data are fetched from the predecessor node.
+
 **(a)Maximum no. of characters allowed in the Description Field will be Max.  
   (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as
    defined by the user or until data availability.  
