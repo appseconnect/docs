@@ -95,7 +95,7 @@ You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the dur
 [Image]
 
 3. Enter the Description of the self-loop node configuration window.
-
+    
 4. Self loop over these nodes GET/MAPPER/POST will be executed until all the data are fetched from the predecessor node.
 
 **(a)Maximum no. of characters allowed in the Description Field will be Max.  

@@ -64,12 +64,10 @@ next 10 snapshots that has been executed in the past.**
 (a) Data Log - Displays the identity of the data for each node executed. The id is displayed based on the Primary key of that node. 
 (b) Activity Log – This tab will display the execution logs of each node.  
 * Transaction file – Displays the data packets generated after executing the selected node.  
-8.	On the Right Panel, you can view the list of snapshot files based on Execution Time & Status. Click on the file, to view the nodes executed.
+8.	On the Right Panel, you can view the list of snapshot files based on Execution Time & Status. Clicking on any of the instance, you can view the node specific details of the execution for that instance.
 The latest snapshot will be listed first.
-![Snapshot7](../../staticfiles/processflow/media/snapshot7.png) 
-9.	You can view the nodes that were executed in the Snapshot in Nodes column available on the Right Side of the Panel.
-![Snapshot8](../../staticfiles/processflow/media/snapshot8.png)  
-10.	Click on the Start Node. You can view the following data in the Right panel of the screen. You can only view the Activity logs Tab for the Start node. 
+![Snapshot7](../../staticfiles/processflow/media/snapshot7.png)   
+9.	Click on the Start Node. You can view the following data in the Right panel of the screen. You can only view the Activity logs Tab for the Start node. 
 ![Snapshot9](../../staticfiles/processflow/media/snapshot9.png)  
 You can also view the UTC time of its execution.  
  **Note: The selected node would be displayed with the font colour blue.**
