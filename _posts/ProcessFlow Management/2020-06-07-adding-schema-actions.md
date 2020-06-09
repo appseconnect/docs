@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Processflow"
 menus: 
-    quickstartprocessflow:     
+    processflow:     
         title: "Adding and Managing - Schema & Actions"
         weight: 4
         icon: fa fa-file-word-o
