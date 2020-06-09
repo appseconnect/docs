@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
     processflow:     
         title: "Adding and Managing - Schema & Actions"
-        weight: 4
+        weight: 6
         icon: fa fa-file-word-o
         identifier: schemaactionprocessflow
 ---
