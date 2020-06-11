@@ -2339,8 +2339,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Working with Variables",
-      excerpt: "\n",
+      title: "Working with Capture Variables",
+      excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 258
@@ -5204,9 +5204,9 @@ var store = [
     
       
       {
-        "title": "Working with Variables",
+        "title": "Working with Capture Variables",
         "url": "/processflow/working-with-variable/",
-        "excerpt": "\n",
+        "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

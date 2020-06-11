@@ -20,6 +20,22 @@ within a process flow for easy execution.
 - An application node  is needed for defining the Schemas and its Actions.
 
 
+## Listing of Schemas and Attributes
+
+Process flow allows a defined tree view listing structure for managing and viewing
+defined Schema, Attributes and Actions associated with it. 
+* The Schemas are arranged in a same level hierarchy whereas
+* The attributes and actions associated with the schema is arranged in the second level 
+hierarchy.
+* Newly created attribute is arranged under Attribute node.
+* The Action Filters and Retry Filters associated with an action are arranged in 
+the third level hieararchy under attributes
+
+Thus listing view gives a clear synopisis to the user regarding the Schema access and 
+Management in the interface. Any Changes done to the Schema and Attributes from the Portal, 
+App section will be displayed in this section.
+
+
 ### Adding Schemas in an Application node of Process flow 
 
 1) Go to [designer section]() and [create a process]() flow.  
@@ -71,34 +87,80 @@ of the window.
 
 **Note: 
 (a)The user must save each node individually. There is no way the user can save it on the whole.
-This process is same for both the XML and JSON formats.
+This process is same for both the XML and JSON formats.  
 (b)For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.
-Click on the SAVE button individually for the saving each of the nodes.
-(c) Users will also be able to view the newly added Schema by navigating to the Portal -> App section.** 
+Click on the SAVE button individually for the saving each of the nodes.  
+(c) Users will also be able to view the newly added Schema by navigating to the Portal, App section.**   
 
 ### Editing. Deleting & Renaming Schemas in an Application node of Process flow 
+
+(A) To `Edit Schema`, do the following steps: 
+1) Go to Processflow [designer]() section and drag the app node for which you want to edit schema.
+2) Now click on the app node, and under schema field click Manage Schema.
+3) You will be redirected to the `Manage Schema and Action` pop-up.
+4) In the `Manage Schema and Action` window, you will be able to edit any existing Schema by click on the Schema
+context menu and do the changes.
+
+(B) To `Delete Schema`, do the following steps:
+
+1) Go to Processflow [designer]() section and drag the app node for which you want to deleted schema.
+2) Now click on the app node, and under schema field click Manage Schema.
+3) You will be redirected to the `Manage Schema and Action` pop-up.
+4) In the `Manage Schema and Action` window, you will be able to delete any existing Schema by click on the Schema
+context menu and clicking on Delete Schema Option.
+
+(C) To `Rename Schema`, do the following steps:
+
+1) Go to Processflow [designer]() section and drag the app node for which you want to rename schema.
+2) Now click on the app node, and under schema field click Manage Schema.
+3) You will be redirected to the `Manage Schema and Action` pop-up.
+4) In the `Manage Schema and Action` window, you will be able to rename any existing Schema by click on the Schema
+context menu and clicking on Rename Schema Option.
+
+**NOTE: (a) Once a Process Flow has been saved in an Environment you will be
+unable to Rename the Schema, Delete the Schema.  
+(b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.  
+(c) YOU will be able to edit the `Description`, via `Edit Schema` option.**
 
 ### Adding Attribute to a Schema
 
 1) The Schema context menu has the option to - ADD Attribute to the schema.  
 2) Click on Add Attribute to add attribute to the schema. The Add Attribute form opens up. 
 The fields in the Attriburte Property Window are:   
-a. Attribute Name: It is a mandatory field, used for providing name to the attribute 
-b. Data Type: Select the datatype from the drop-down as per the requirement. This is also a mandatory field.   
+a. Attribute Name: It is a mandatory field, used for providing name to the attribute. 
+   * The Attribute Name field will allow a `maximum of 100 characters`.  
+   * In the Attribute Name field space and special characters will not be allowed.    
+b. Data Type: Select the datatype from the drop-down as per the requirement. This is also a mandatory field.    
+ *String  
+ * Boolean  
+ * DateTime  
+ * Number  
+ * ComplexObject  
+ * ComplexObjectCollection  
+ * Double   
 c. Reference API: If any schema needs to be referred for the transformation, that can be referred by selecting 
-the Schema Name from the drop-down as a reference Entity.    
-d. Tags: for providing specific tags to the attribute  
+the Schema Name from the drop-down as a reference Entity. The Reference API field will be displayed if the Attribute Data Type is `ComplexObject` or `ComplexObjectCollection`.        
+d. Tags: Used  providing specific tags to the attribute.  
 e. Namespace Prefix: Prefix could be added for this attribute while working with namespaces.  
-f. Attribute Scope: Select the Scope - Organization Level or ProcessFlow Level
-f. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute. 
-* Primary: for allotting this attribute as the Primary Key.
-* Required: for making this attribute mandatory for the mapping purpose.
-* Attribute: To add attribute in the XSLT
+f. Attribute Scope: Select the Scope - Organization Level or ProcessFlow Level. This is a mandatory field
+select as per your business requirement.Attributes with scope `Organization` will be added at the Organization
+ level whereas Attributes with scope `Local` will be added at the Process Flow level. 
+g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute.   
+* Primary: For allotting this attribute as the Primary Key.  
+* Required: For making this attribute mandatory for the mapping purpose.  
+* Attribute:To add attribute in the XSLT
+**Only one Attribute can be set as `Primary Attribute` within a Schema.**
 3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
 appears on the window stating the attribute is created successfully.
 4) The newly created attribute gets added just below the Schema on the left side panel.    
-4) Click on the created attribute in the node structure, for Renaming and Deleting 
+5) Click on the created attribute in the node structure, for Renaming and Deleting 
 the attribute.  
 
-
 **Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.**
+
+### Editing. Deleting & Renaming Attribute in an Application node of Process flow 
+
+
+### Adding Action
+
+### Adding Action Filter & Retry Filter

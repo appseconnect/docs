@@ -19,12 +19,12 @@
 
 
 
-<title>Working with Variables - APPSeCONNECT Product Docs</title>
+<title>Working with Capture Variables - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="">
+<meta name="description" content="APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of the Process Flow or in any other Process Flows designed within your organisationVariables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Working with Variables">
+<meta property="og:title" content="Working with Capture Variables">
 
 
   <link rel="canonical" href="http://localhost:4000/processflow/working-with-variable/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of the Process Flow or in any other Process Flows designed within your organisationVariables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Working with Variables</li>
+      <li class="current">Working with Capture Variables</li>
     
   
 </ol>-->
@@ -1620,7 +1620,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/working-with-variable/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/working-with-variable/" onclick="selectTab('/processflow/working-with-variable/', event);" title="Go to Working with Variables">Working with Variables</a>
+        <a href="/processflow/working-with-variable/" onclick="selectTab('/processflow/working-with-variable/', event);" title="Go to Working with Capture Variables">Working with Capture Variables</a>
         
     </li>
     
@@ -2112,8 +2112,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Working with Variables">
-        <meta itemprop="description" content="">
+        <meta itemprop="headline" content="Working with Capture Variables">
+        <meta itemprop="description" content="APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of the Process Flow or in any other Process Flows designed within your organisationVariables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.">
         <meta itemprop="datePublished" content="June 09, 2020">
         
 
@@ -2141,7 +2141,7 @@
                 
                 
                 
-                <li class="current">Working with Variables</li>
+                <li class="current">Working with Capture Variables</li>
                 
                 
             </ol>
@@ -2151,7 +2151,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Working with Variables
+                <h1 class="page__title" itemprop="headline">Working with Capture Variables
 </h1>
                 
                 
@@ -2182,7 +2182,7 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2194,11 +2194,83 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#prerequisites">Prerequisites</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <p>APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of the Process Flow or in any other Process Flows designed within your organisation
+Variables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, 
+instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.</p>
+
+<p>For Eg: You have a create a variable having the name <code class="highlighter-rouge">XYZ</code> with data type <code class="highlighter-rouge">String</code> and have associated an XPATH expression <code class="highlighter-rouge">//items/item/cusomer_id</code>. 
+Once defined, upon calling the variable, it will execute the expression associated with the variable.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li>You need to have valid credentials to your organisation.</li>
+  <li>You need to design a new Process Flow or you need to have an existing Process Flow created.</li>
+  <li>The variable name should be unique irrespective of the scope used.</li>
+  <li>You need to provide the values for the mandatory fields in the GENERAL Tab of the Node Configuration Window before creating a Variable.</li>
+</ul>
+
+<h2 id="creating--saving-variable">Creating &amp; Saving Variable</h2>
+
+<p>Creating Variables in Processflow is easier and can be done directly by dragging the app node
+in the <a href="">designer section</a>.</p>
+
+<p>1) The node configuration window appears and it has two main sections</p>
+<ul>
+  <li>General</li>
+  <li>Properties<br />
+2) Enter the required details in the General Section (link will be given) of the node configuration window.
+3) Now Click on Properties Section and the following screen appears. Enter the required details</li>
+</ul>
+
+<p>Variable Name (Mandatory field): The user has to provide the name of the Variable.
+Data Type (Mandatory field): Users will be able to select the Data type from the dropdown list.</p>
+
+<h2 id="editing-variable">Editing Variable</h2>
+
+<h2 id="deleting-variable">Deleting Variable</h2>
+
+<h2 id="listing-of-variables">Listing of Variables</h2>
+
+<p>Once you have defined and saved the Variable, you will be able to view the list of the variables created. Follow the steps to view the list of variables.</p>
+
+<p>A. Click on the <code class="highlighter-rouge">VIEW LIST</code> button in the <strong>Create Variable</strong> window after defining and saving the variable.</p>
+
+<p>[Image]</p>
+
+<p>B. You will be able to view the list of variables in Properties Tab. You can view all the variables that has been created on that node.</p>
+
+<p>C. You will be able to view these following details in the Variable List.</p>
+
+<ul>
+  <li>
+    <p><strong>Variable Name</strong> - You can view the name provided while defining the variable.</p>
+  </li>
+  <li>
+    <p><strong>Data Type</strong> - The datatype used while defining will be displayed</p>
+  </li>
+  <li>
+    <p><strong>Default Value / Expressions</strong> - need clarity</p>
+  </li>
+</ul>
+
+<p>D. On hovering over the name, you can view the scope of the variables defined.</p>
+
+<p>Following the above process you can successfully view the Variable list.</p>
+
+<h2 id="capture-variables-utility">Capture Variables Utility:</h2>
+
+<p>This part of the document will list few scenarios that will help you understand Capture Variables:</p>
+
+<p>| Variable Name | Datatype | Expression | Default Value |Scope| Utility
+|——–|————-|———|———|——-|—–|</p>
+
 
                 
             </section>
@@ -2255,7 +2327,7 @@
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Working+with+Variables%20https://docs.appseconnect.com%2Fprocessflow%2Fworking-with-variable%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Working+with+Capture+Variables%20https://docs.appseconnect.com%2Fprocessflow%2Fworking-with-variable%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Fworking-with-variable%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
