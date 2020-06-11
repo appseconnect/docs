@@ -55,7 +55,28 @@ Following the above process you can successfully view the Variable list.
 
 This part of the document will list few scenarios that will help you understand Capture Variables:
 
-| Variable Name | Datatype | Expression | Default Value |Scope| Utility
-|--------|-------------|---------|---------|-------|-----|
+| Variable Name | Datatype | Expression | Default Value |Scope| Utility|
+|--------|-------------|-------------|---------|-------|-----|
+| custxp | string | `//items//item/` <br/> `cust_id` | - |  ProcessFlow or Node | Here, the variable is created with the name `$custxp` and is provided with an xpath expression. When ever the variable is called within the scope, the expression provided in the variable will be executed. |
+| countryval | string | - | ProcessFlow or Node |`"NY"` | Here, a variable is created `$countryval` that stores a static value of sting type. On implementing the variable within the scope, the variable will execute the static value when the variable is called during execution.|
+| Email | string | `//items//item/ ` <br/> `email_id` | abcd.com|ProcessFlow or Node|Here, the variable is created and is provided with both Expression and a default Value. On implementing the Variable, if the expression fails to execute its operation, the variable would replace it with the default value provided.|
+|TaxationCode| Double | - | 8.253 | ProcessFlow or Node | Here, the variable is of the datatype `Double` is provided with default value. On implementing, the variable will be executed the default double provided while defining.|
 
+## Demonstrating Capture Variable Creation:
+
+1. Open a Process Flow and drag the application node where you want to define the capture variable. The node configuration window opens.
+
+[Image]
+
+2. Input the required details in the general tab. Click on the **Properties tab** in the Node Configuration Window.
+
+3. You will able to view the `create Variable` window. Input the details of the variable and click on the save button.
+
+[Image]
+
+4. Follow the above listing process to view the variable lists. Click on the close button.
+
+[Image]
+
+Following the above process you can successfully define a Capture Variable.
 

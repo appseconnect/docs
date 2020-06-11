@@ -14,13 +14,13 @@ menus:
 While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent.
 Given below are common troubleshooting scenarios to ease the debugging areas. 
 
-### Troubleshooting Scenario 1 - Agent is Disconnected/Blocked  
+### Scenario 1 - Agent is Disconnected/Blocked  
 ![agent-disconnected](/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png)  
 
 When setting up the environment for the sync process, the environment for selected agent displays the message `Agent is Disconnected`. Also, while logging in to the OP agent, 
 it displays the message `Agent is Blocked`. This is due to the reason that the agent has been detached from the portal.  
 
-**Solution** 
+**Troubleshooting for Scenario 1:** 
 
 * Login to the portal and navigate to Manage > Environment.
 * The [environment listing](/deployment/Environment-Management/) page opens. Click over the environment which is disconnected and is needed to be connected.
@@ -35,11 +35,11 @@ Note: (a) Without activating the autosync or if the autosync is off, your enviro
       (b) Old agent users would get the message as `Your agent is deactivated`. Please contact the administrator while logging in to OP Agent.   
           The steps to troubleshoot the error is common to this scenario. Old agent users could troubleshoot easily following the above given steps.   
 
-### Troubleshooting Scenario 2 - CorrectFileNotFound - While Configuring an Application in the OP Agent
+### Scenario 2 - CorrectFileNotFound - While Configuring an Application in the OP Agent
 
 ![AppConfig-Error](/staticfiles/deployment/media/Troubleshooting/AppConfig-Error.png)
 
-**Solution**
+**Troubleshooting for Scenario 2:**
 
 * Check the Adapters folder inside the APPSeCONNECT system folder. Now Check for the Application Adapter (.dll file) present or not. 
 If the adapter file is missing, Click UPDATE ADAPTERS in the agent.
@@ -51,19 +51,19 @@ If the adapter file is missing, Click UPDATE ADAPTERS in the agent.
 * Delete the .dll from the Adapters folder and paste the copied .dll file back in to the adapters folder.
 * Log Off and Exit the agent and Open again. Check your App Configuration Page.  
 
-### Troubleshooting Scenario 3 - Nothing to POST to SAP(Often occurrs while Integrating with SAP even if data is present in the Source Application)  
+### Scenario 3 - Nothing to POST to SAP(Often occurrs while Integrating with SAP even if data is present in the Source Application)  
 ![TransactionLog-Error](/staticfiles/deployment/media/Troubleshooting/TransactionLog-Error.png)  
 
-**Solution**
+**Troubleshooting for Scenario 3**
 
 * Execute the integration again by deleting the TEMP and the CACHE files. 
 * Also switch OFF & ON the DI server before executing with the Integration for the 2nd Time.
 
-### Troubleshooting Scenario 4 - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.
+### Scenario 4 - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.
 
 ![SystemError-UpdateConfig](/staticfiles/deployment/media/Troubleshooting/SystemError-UpdateConfig.png)
 
-**Solution**
+**Troubleshooting for Scenario 3**
 
 * Log Off and Exit your agent from your Taskbar. Close the Autosync Process from the Task Manager. 
 
