@@ -34,7 +34,7 @@ Although the availability of data is always the prime criteria for executing the
 self-loop.
 
 ### Working Principle
-[INSERT SELF LOOP LINK VIEW IMAGE]
+![PF_selfloop1](\staticfiles\processflow\media\pfselfloop1.PNG)
 
 Self Loop Execution on the nodes:
 
@@ -48,37 +48,10 @@ Self Loop Execution on the nodes:
 `Self-loop Configuration - Number of Occurence`  
 `Self-loop Configuration - For a Timespan`  
 
-**A. Choosing Self Loop Configuration - Number of Occurence**
-
-1. In the self loop node, Select and choose the option `Number of Occurence` radio button. The following 
-screen appears.   
-[SCREENSHOT]
-2. Here you have to provide the value for the no. of times the Self Loop will be executed over the node.  
-(a) The input value of no. of times/occurence should be an integer number.  
-(b) The value range is between 1 to 999 (min to max value).
-3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.  
-4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
-   by you or until data availability. 
-
-**B. Choosing Self Loop Configuration - For a Timespan**
-1. In the self loop node, Select and choose the option `Time Span` radio button. The following 
-screen appears.   
-[SCREENSHOT]
-2. Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the duration as per your requirement.  
-(a) Hours: The value range of hours is from 1-24  
-(b) Minutes: The value range of minutes is from 1-60  
-(c) Seconds: The value crange of seconds is from 1-60  
-[SCREENSHOT]  
-3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.
-4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
-   by you or until data availability.  
-
-**C. Choosing Self Loop Configuration - Until data available**
+**A. Choosing Self Loop Configuration - Until data available**
 
 1.	Link up the self-loop in the node where you need the loop to perform. The node configuration page opens.
 
-[Image]
 
 2.	Select the check box against the option **Until Data Available**. You will not have to provide any additional details as in **Self-Loop for Time Span** & **Self-Loop for Number of Occurrence**.
 
@@ -92,17 +65,71 @@ You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the dur
 
 - Self-loop over GET node will not be executed during the `RETRY` process if the GET node is connected to the START node as its predecessor node.
 
-[Image]
+![PF_selfloop2](\staticfiles\processflow\media\pfselfloop2.PNG)
 
 3. Enter the Description of the self-loop node configuration window.
     
 4. Self loop over these nodes GET/MAPPER/POST will be executed until all the data are fetched from the predecessor node.
 
-**(a)Maximum no. of characters allowed in the Description Field will be Max.  
-  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as
-   defined by the user or until data availability.  
-  (c)Data availability is the first condition for execution of the self-loop, irrespective
-  of the options choosen  for execution.** 
+
+**B. Choosing Self Loop Configuration - Number of Occurence**
+
+1. In the self loop node, Select and choose the option `Number of Occurence` radio button. The following 
+screen appears.   
+![PF_selfloop3](\staticfiles\processflow\media\pfselfloop3.PNG)
+2. Here you have to provide the value for the no. of times the Self Loop will be executed over the node.  
+(a) The input value of no. of times/occurence should be an integer number.  
+(b) The value range is between 1 to 999 (min to max value).
+3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.  
+4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
+   by you or until data availability. 
+
+**C. Choosing Self Loop Configuration - For a Timespan**
+1. In the self loop node, Select and choose the option `Time Span` radio button. The following 
+screen appears.   
+![PF_selfloop4](\staticfiles\processflow\media\pfselfloop4.PNG)
+2. Now you get the option to input the duration for which the Self Loop will be executed.
+You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the duration as per your requirement.  
+(a) Hours: The value range of hours is from 1-24  
+(b) Minutes: The value range of minutes is from 1-60  
+(c) Seconds: The value crange of seconds is from 1-60  
+![PF_selfloop5](\staticfiles\processflow\media\pfselfloop5.PNG)  
+3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.
+4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
+   by you or until data availability.  
+
+
+_**Note:**_ 
+
+_**(a)Maximum no. of characters allowed in the Description Field will be Max.  
+(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
+(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_ 
+
+### Execution flow for Self loop:
+
+1. [Design the Process Flow](/processflow/creating-processflow/) and self link the node where you want to implement the Self-loop.
+
+Note: In this case, self-loop is applied on GET node.
+
+![PF_selfloop6](\staticfiles\processflow\media\pfselfloop6.PNG)
+
+2. On linking the GET node with self loop, the self loop configuration window opens. Select the execution order of the Self-Loop as `Number of Occurences`.
+
+![PF_selfloop7](\staticfiles\processflow\media\pfselfloop7.PNG)
+
+3. Save and [Deploy the Process Flow](/processflow/deploying-and-executing-processfloww/) to deploy all the configurations to the environment.
+
+4. You need to execute the Process Flow after the deployment process.
+
+Note: Your process flow will automatically be executed if your sync type is set to Auto mode.
+
+5. Navigate to `Manage > Environment`. Click on the **Process FLow tab** for the environment where you have deployed the Process Flow and check for the [Process Flow Snapshot](/processflow/snapshot-processflow/) 
+
+![PF_selfloop8](\staticfiles\processflow\media\pfselfloop8.PNG)
+
+**Note: snapshot will generate as per Iteration based on the number of instances the self loop executed. For Eg: If Self loop executed twice, snapshot will display two iterations for it.**
+
+Following the process you can successfully execute a Process Flow with Self-Loop.
 
 ### Business Scenarios for Self loop Usabilty 
 
