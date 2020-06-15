@@ -103,24 +103,18 @@ _**Note:** You can only provide those Appresource Functions (both Cloud & Generi
 
     **Scenario:** Implementing Decision on Attribute.
 
-    **Description:** You may have your Business Model stating, only those orders  shall be shipped whose Country is **`US` (United States)** & Region Code is **`NY` (New York)** & the Email Id of the customer shall contain `gmail.com`. Therefore, you may not require to sync orders that has the shipping address of states other than `NY` or of some other email domain. Therefore, implementing such decision, your decision KEY should be provided with XPATH that searches for the COUNTRY & State & customer_email in the Input Packet. In this Scenario, the configuration should be.
+    **Description:** In this case, the scenario is implemented with fact keeping in mind that only those customers shall be accepted to sync to destination application, who belongs to the Country either having the country code of `INDIA` or the country code of `United States`. The condition will be executed on the provided xpath and will accept only those data on the next node that matches the provided condition.
 
-    - **Decision Key:** `{//items//item//shipping/country_id}`
+    - **Decision Key:** `{//addresses//item/country_id}`
     - **Operator:** `=`
 
-    - **Value:** `US`
+    - **Value:** `IN`
 
-    & 
+    OR
 
-    - **Decision Key:** `{//items/item//shipping/region_code}`
+    - **Decision Key:** `{//addresses//item/country_id}`
     - **Operator:** `=`
     - **Value:** `NY`
-
-    & 
-
-    - **Decision Key:** `{//items/items/customer_email}`
-    - **Operator:** `Contains`
-    - **Value:** `xyz.com`
 
 _**Note:**_ 
  - _**You need to click the button `Add Criteria` for providing multiple condition with conjunctions. Also, you need to enable the toggle button for activating the conditions.**_
@@ -129,21 +123,20 @@ _**Note:**_
 
  - _**If the Decision key is Generic Function you need tp provide the syntax with the Namespace Prefic for the function. If it is a Cloud appresource function, you need to provide the**_
 
- ![PFdecision4](\staticfiles\processflow\media\pfdecision4.PNG)
-
-4. Once the decision criteria is provided, you can view the final expression in the Preview URL.
-
-![PFdecision5]()
+![PFdecision4](\staticfiles\processflow\media\pfdecision4.PNG)
 
 5. Enable the Toggle buttons for the criteria and click on the SAVE button.
 
 6. Once all the configuration are made for the Process Flow. [Deploy and Execute](/processflow/deploying-and-executing-processfloww/) the Process Flow.
 
-![PFdecision6]()
+7. After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about Process Flow Snapshots. The **Activity Log** against the `Decision node` in snapshot will display you the status of the condition.
 
-7. After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about Process Flow Snapshots.
+![PFdecision5](\staticfiles\processflow\media\pfdecision5.PNG)
 
-![PFdecision7]()
+**Note:** 
+
+**- The tabs `Data log` for the Decision Node will display list the data that entered the Decision Node.
+- The tab `Transaction File` will display you the INPUT file available in the GET node.**
 
 Following the above process you can successfully implement Decision for a Process Flow.
 

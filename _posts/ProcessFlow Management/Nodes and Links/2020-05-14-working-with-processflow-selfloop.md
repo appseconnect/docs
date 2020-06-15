@@ -123,7 +123,7 @@ Note: In this case, self-loop is applied on GET node.
 
 Note: Your process flow will automatically be executed if your sync type is set to Auto mode.
 
-5. Navigate to `Manage > Environment`. Click on the **Process FLow tab** for the environment where you have deployed the Process Flow and check for the [Process Flow Snapshot](/processflow/snapshot-processflow/) 
+5. Navigate to `Manage > Environment`. Click on the **Process FLow tab** for the environment where you have deployed the Process Flow and check for the [Process Flow Snapshot.](/processflow/snapshot-processflow/)
 
 ![PF_selfloop8](\staticfiles\processflow\media\pfselfloop8.PNG)
 
