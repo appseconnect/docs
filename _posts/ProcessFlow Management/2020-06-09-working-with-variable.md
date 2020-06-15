@@ -29,19 +29,34 @@ Once defined, upon calling the variable, it will execute the expression associat
 Creating Variables in Processflow is easier and can be done directly by dragging the app node
 in the [designer section]().
 
-1) The node configuration window appears and it has two main sections
+1. The node configuration window appears. You can view two tabs in the node configuration window.
 * General  
 * Properties  
-2) Enter the required details in the General Section (link will be given) of the node configuration window.
-3) Now Click on Properties Section and the following screen appears. Enter the required details
+2. Enter the required details in the General Section (link will be given) of the node configuration window.
+3. Now Click on Properties Section and the following screen appears.
+[Image]
+4. You need to provide the following details in the **Properties Tab**.
+- Variable Name (Mandatory Field): This is field where you need to provide the name of the variable.
+- Data Type (Mandatory Field) : Here, you need to select the type of variable that you require. You can select the data type from the drop down. You will be getting the following options in the drop down: `String`,`Bool`,`DateTime`,`Number`,`ComplexObject`,'ComplexObject',`Double`.
+- Expression (Non-Mandatory Field): You can provide a either an Xpath or a function expression for it to store against the variable.
+- Default Value (Non-Mandatory Field): You can also store a default value against the variable such that if expression provided results invalid, the default value can be initiated during the execution process of the variable.
+- Scope (Need to be sure): The variable can be executed depending upon the scope defined. The Scope of the variable can be defined within the following type.
+    - Process Flow: This is the Global variable that can be used in any Process Flows with the organisation.
+    - Node: This is the Local Variable and can be used only in the node where it is defined within that Process Flow.
 
-Variable Name (Mandatory field): The user has to provide the name of the Variable.
-Data Type (Mandatory field): Users will be able to select the Data type from the dropdown list.
+[Image]
 
+5. You will also be able to view the following toggle button in the `Create Variable` page.
+- Is Persistant:
+- Mutable:
+- Is Env Specific:
+- Is Encrypted: 
 
-## Editing Variable
+6. Once all the necessary details are provided. Click on the SAVE button. 
 
-## Deleting Variable
+[Image]
+
+7. On clicking the `View List` button, you can view all the created variable for the node in a list view.
 
 ## Listing of Variables 
 
@@ -64,6 +79,10 @@ C. You will be able to view these following details in the Variable List.
 D. On hovering over the name, you can view the scope of the variables defined.
 
 Following the above process you can successfully view the Variable list.
+
+## Editing Variable
+
+## Deleting Variable
 
 ## Capture Variables Utility:
 
