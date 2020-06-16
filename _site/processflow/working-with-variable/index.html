@@ -1406,7 +1406,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/faqs-api-management/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to Frequently Asked questions">Frequently Asked questions</a>
+        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to FAQs">FAQs</a>
         
     </li>
     
@@ -2188,7 +2188,7 @@
 
 
 
-  2 minute read
+  5 minute read
 </p>
                 
                 
@@ -2210,7 +2210,7 @@
 Variables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, 
 instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.</p>
 
-<p>For Eg: You have a create a variable having the name <code class="highlighter-rouge">XYZ</code> with data type <code class="highlighter-rouge">String</code> and have associated an XPATH expression <code class="highlighter-rouge">//items/item/cusomer_id</code>. 
+<p>For Eg: You have a create a variable having the name <code class="highlighter-rouge">XYZ</code> with data type <code class="highlighter-rouge">String</code> and have associated an XPATH expression <code class="highlighter-rouge">//items/item/customer_id</code>. 
 Once defined, upon calling the variable, it will execute the expression associated with the variable.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
@@ -2227,20 +2227,62 @@ Once defined, upon calling the variable, it will execute the expression associat
 <p>Creating Variables in Processflow is easier and can be done directly by dragging the app node
 in the <a href="">designer section</a>.</p>
 
-<p>1) The node configuration window appears and it has two main sections</p>
+<ol>
+  <li>
+    <p>Select an application node and drag the node to the designer panel where you want to define the Capture Variable.</p>
+  </li>
+  <li>The node configuration window appears. You can view two tabs in the node configuration window.
+    <ul>
+      <li>General</li>
+      <li>Properties</li>
+    </ul>
+  </li>
+  <li>
+    <p>Enter the required details in the General Section (link will be given) of the node configuration window.</p>
+  </li>
+  <li>Now Click on Properties Section and the following screen appears.</li>
+</ol>
+
+<p>[Image]</p>
+
+<ol>
+  <li>You need to provide the following details in the <strong>Properties Tab</strong>:</li>
+</ol>
+
 <ul>
-  <li>General</li>
-  <li>Properties<br />
-2) Enter the required details in the General Section (link will be given) of the node configuration window.
-3) Now Click on Properties Section and the following screen appears. Enter the required details</li>
+  <li><strong>Variable Name (Mandatory Field):</strong> This is field where you need to provide the name of the variable.</li>
+  <li><strong>Data Type (Mandatory Field):</strong> Here, you need to select the type of variable that you require. You can select the data type from the drop down. You will be getting the following options in the drop down: <code class="highlighter-rouge">String</code>,<code class="highlighter-rouge">Bool</code>,<code class="highlighter-rouge">DateTime</code>,<code class="highlighter-rouge">Number</code>,<code class="highlighter-rouge">ComplexObject</code>,<code class="highlighter-rouge">ComplexObject</code>,<code class="highlighter-rouge">Double</code>.</li>
+  <li><strong>Expression (Non-Mandatory Field):</strong> You can provide a either an Xpath or a function expression for it to store against the variable.</li>
+  <li><strong>Default Value (Non-Mandatory Field):</strong> You can also store a default value against the variable such that if expression provided results invalid, the default value can be initiated during the execution process of the variable.</li>
+  <li><strong>Scope (Need to be sure):</strong> The variable can be executed depending upon the scope defined. The Scope of the variable can be defined within the following type.
+    <ul>
+      <li><strong>Process Flow:</strong> This is the Global variable that can be used in any Process Flows with the organisation.</li>
+      <li><strong>Node:</strong> This is the Local Variable and can be used only in the node where it is defined within that Process Flow.</li>
+    </ul>
+  </li>
 </ul>
 
-<p>Variable Name (Mandatory field): The user has to provide the name of the Variable.
-Data Type (Mandatory field): Users will be able to select the Data type from the dropdown list.</p>
+<p>[Image]</p>
 
-<h2 id="editing-variable">Editing Variable</h2>
+<ol>
+  <li>You will also be able to view the following toggle button in the <code class="highlighter-rouge">Create Variable</code> page.
+    <ul>
+      <li><strong>Is Persistant:</strong> On Enabling this toggle button, the value after the execution will be remembered across subsequent executions.</li>
+      <li><strong>Mutable:</strong></li>
+      <li><strong>Is Env Specific:</strong> You can limit the usage of the variable to Environment specific. On enabling the toggle button, you can select the variable for it to deploy while deploying the Process Flow. By default, the button would be toggled off.</li>
+      <li><strong>Is Encrypted:</strong> Enabling this toggle will encrypt the output of variable in the database.</li>
+    </ul>
+  </li>
+  <li>Once all the necessary details are provided. Click on the SAVE button.</li>
+</ol>
 
-<h2 id="deleting-variable">Deleting Variable</h2>
+<p>[Image]</p>
+
+<ol>
+  <li>On clicking the <code class="highlighter-rouge">View List</code> button, you can view all the created variable for the node in a list view.</li>
+</ol>
+
+<p>Following the above process you can successfully Define &amp; Save a Capture Variable.</p>
 
 <h2 id="listing-of-variables">Listing of Variables</h2>
 
@@ -2270,13 +2312,90 @@ Data Type (Mandatory field): Users will be able to select the Data type from the
 
 <p>Following the above process you can successfully view the Variable list.</p>
 
+<h2 id="editing-variable">Editing Variable</h2>
+
+<p>Editing Variable is equally easy as creating and saving a variable. The process to edit a variable is given below:</p>
+
+<p>A. Open the Application Node Configuration Window where you have defined the variable.</p>
+
+<p>B. Click on the properties Tab. You can view the Variable listing page.</p>
+
+<p>[Image]</p>
+
+<p>C. Click on the Ellipses icon (Three horizontal Dots) on the actions column beside the variable. You’ll get two options from the drop down.</p>
+<ul>
+  <li>Edit: Enables you Edit the variable.</li>
+  <li>Delete: Delete the created Variable.</li>
+</ul>
+
+<p>D. Click on the EDIT button. You can view the <code class="highlighter-rouge">Create Variable</code> page. Modify the changes that you are required to and click on the SAVE button.</p>
+
+<p><strong>Note:</strong> You can modify any properties associated with the variable.</p>
+
+<p>[Image]</p>
+
+<h2 id="deleting-variable">Deleting Variable</h2>
+
+<p>A. Click on the Ellipses button beside the Variable, in the variable listing page.</p>
+
+<p>B. Click on the Delete button available on the drop down window. <em>(Will there be any confirmation message?)</em></p>
+
+<p>[Image]</p>
+
+<p>C. Your variable gets deleted from the list.</p>
+
+<p><em><strong>Note:</strong> You cannot delete a Variable that is currently in use for execution and will be provided with an error while doing so.</em></p>
+
 <h2 id="capture-variables-utility">Capture Variables Utility:</h2>
 
 <p>This part of the document will list few scenarios that will help you understand Capture Variables:</p>
 
-<p>| Variable Name | Datatype | Expression | Default Value |Scope| Utility
-|——–|————-|———|———|——-|—–|</p>
-
+<table>
+  <thead>
+    <tr>
+      <th>Variable Name</th>
+      <th>Datatype</th>
+      <th>Expression</th>
+      <th>Default Value</th>
+      <th>Scope</th>
+      <th>Utility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>custxp</td>
+      <td>string</td>
+      <td><code class="highlighter-rouge">//items//item/</code> <br /> <code class="highlighter-rouge">cust_id</code></td>
+      <td>-</td>
+      <td>ProcessFlow or Node</td>
+      <td>Here, the variable is created with the name <code class="highlighter-rouge">$custxp</code> and is provided with an xpath expression. When ever the variable is called within the scope, the expression provided in the variable will be executed.</td>
+    </tr>
+    <tr>
+      <td>countryval</td>
+      <td>string</td>
+      <td>-</td>
+      <td>ProcessFlow or Node</td>
+      <td><code class="highlighter-rouge">"NY"</code></td>
+      <td>Here, a variable is created <code class="highlighter-rouge">$countryval</code> that stores a static value of sting type. On implementing the variable within the scope, the variable will execute the static value when the variable is called during execution.</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>string</td>
+      <td><code class="highlighter-rouge">//items//item/ </code> <br /> <code class="highlighter-rouge">email_id</code></td>
+      <td>abcd.com</td>
+      <td>ProcessFlow or Node</td>
+      <td>Here, the variable is created and is provided with both Expression and a default Value. On implementing the Variable, if the expression fails to execute its operation, the variable would replace it with the default value provided.</td>
+    </tr>
+    <tr>
+      <td>TaxationCode</td>
+      <td>Double</td>
+      <td>-</td>
+      <td>8.253</td>
+      <td>ProcessFlow or Node</td>
+      <td>Here, the variable is of the datatype <code class="highlighter-rouge">Double</code> is provided with default value. On implementing, the variable will be executed the default double provided while defining.</td>
+    </tr>
+  </tbody>
+</table>
 
                 
             </section>

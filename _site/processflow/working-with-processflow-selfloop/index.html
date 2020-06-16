@@ -1406,7 +1406,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/faqs-api-management/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to Frequently Asked questions">Frequently Asked questions</a>
+        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to FAQs">FAQs</a>
         
     </li>
     
@@ -2188,7 +2188,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
                 
                 
@@ -2203,6 +2203,7 @@
                         <ul class="toc__menu">
   <li><a href="#what-is-loop-node">What is Loop node</a></li>
   <li><a href="#working-principle">Working Principle</a></li>
+  <li><a href="#execution-flow-for-self-loop">Execution flow for Self loop:</a></li>
   <li><a href="#business-scenarios-for-self-loop-usabilty">Business Scenarios for Self loop Usabilty</a></li>
 </ul>
                     </nav>
@@ -2234,7 +2235,7 @@ Although the availability of data is always the prime criteria for executing the
 self-loop.</p>
 
 <h3 id="working-principle">Working Principle</h3>
-<p>[INSERT SELF LOOP LINK VIEW IMAGE]</p>
+<p><img src="\staticfiles\processflow\media\pfselfloop1.PNG" alt="PF_selfloop1" /></p>
 
 <p>Self Loop Execution on the nodes:</p>
 
@@ -2265,46 +2266,15 @@ self-loop.</p>
 <code class="highlighter-rouge">Self-loop Configuration - Number of Occurence</code><br />
 <code class="highlighter-rouge">Self-loop Configuration - For a Timespan</code></p>
 
-<p><strong>A. Choosing Self Loop Configuration - Number of Occurence</strong></p>
+<p><strong>A. Choosing Self Loop Configuration - Until data available</strong></p>
 
 <ol>
-  <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Number of Occurence</code> radio button. The following 
-screen appears. <br />
-[SCREENSHOT]</li>
-  <li>Here you have to provide the value for the no. of times the Self Loop will be executed over the node.<br />
-(a) The input value of no. of times/occurence should be an integer number.<br />
-(b) The value range is between 1 to 999 (min to max value).</li>
-  <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
-  <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
-by you or until data availability.</li>
-</ol>
-
-<p><strong>B. Choosing Self Loop Configuration - For Time Out</strong></p>
-<ol>
-  <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Time Span</code> radio button. The following 
-screen appears. <br />
-[SCREENSHOT]</li>
-  <li>Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Span in Hours, Minutes &amp; Seconds. Enter the duration as per your requirement.<br />
-(a) Hours: The value range of hours is from 1-24<br />
-(b) Minutes: The value range of minutes is from 1-60<br />
-(c) Seconds: The value crange of seconds is from 1-60<br />
-[SCREENSHOT]</li>
-  <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
-  <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
-by you or until data availability.</li>
-</ol>
-
-<p><strong>C. Choosing Self Loop Configuration - Until data available</strong></p>
-
-<ol>
-  <li>Link up the self-loop in the node where you need the loop to perform. The node configuration page opens.</li>
-</ol>
-
-<p>[Image]</p>
-
-<ol>
-  <li>Select the check box against the option <strong>Until Data Available</strong>. You will not have to provide any additional details as in <strong>Self-Loop for Time Span</strong> &amp; <strong>Self-Loop for Number of Occurrence</strong>.</li>
+  <li>
+    <p>Link up the self-loop in the node where you need the loop to perform. The node configuration page opens.</p>
+  </li>
+  <li>
+    <p>Select the check box against the option <strong>Until Data Available</strong>. You will not have to provide any additional details as in <strong>Self-Loop for Time Span</strong> &amp; <strong>Self-Loop for Number of Occurrence</strong>.</p>
+  </li>
 </ol>
 
 <p><strong>Note:</strong></p>
@@ -2324,7 +2294,7 @@ by you or until data availability.</li>
   </li>
 </ul>
 
-<p>[Image]</p>
+<p><img src="\staticfiles\processflow\media\pfselfloop2.PNG" alt="PF_selfloop2" /></p>
 
 <ol>
   <li>
@@ -2335,11 +2305,96 @@ by you or until data availability.</li>
   </li>
 </ol>
 
-<p><strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
-  (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as
-   defined by the user or until data availability.<br />
-  (c)Data availability is the first condition for execution of the self-loop, irrespective
-  of the options choosen  for execution.</strong></p>
+<p><strong>B. Choosing Self Loop Configuration - Number of Occurence</strong></p>
+
+<ol>
+  <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Number of Occurence</code> radio button. The following 
+screen appears. <br />
+<img src="\staticfiles\processflow\media\pfselfloop3.PNG" alt="PF_selfloop3" /></li>
+  <li>Here you have to provide the value for the no. of times the Self Loop will be executed over the node.<br />
+(a) The input value of no. of times/occurence should be an integer number.<br />
+(b) The value range is between 1 to 999 (min to max value).</li>
+  <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
+  <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
+by you or until data availability.</li>
+</ol>
+
+<p>«««&lt; HEAD
+<strong>B. Choosing Self Loop Configuration - For Time Out</strong>
+=======
+<strong>C. Choosing Self Loop Configuration - For a Timespan</strong></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>23e822c9f8598c825354576eb12842589ed1e911</p>
+              <ol>
+                <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Time Span</code> radio button. The following 
+screen appears. <br />
+<img src="\staticfiles\processflow\media\pfselfloop4.PNG" alt="PF_selfloop4" /></li>
+                <li>Now you get the option to input the duration for which the Self Loop will be executed.
+You have the option for the Time-Span in Hours, Minutes &amp; Seconds. Enter the duration as per your requirement.<br />
+(a) Hours: The value range of hours is from 1-24<br />
+(b) Minutes: The value range of minutes is from 1-60<br />
+(c) Seconds: The value crange of seconds is from 1-60<br />
+<img src="\staticfiles\processflow\media\pfselfloop5.PNG" alt="PF_selfloop5" /></li>
+                <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
+                <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
+by you or until data availability.</li>
+              </ol>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p><em><strong>Note:</strong></em></p>
+
+<p><em><strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
+(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.<br />
+(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.</strong></em></p>
+
+<h3 id="execution-flow-for-self-loop">Execution flow for Self loop:</h3>
+
+<ol>
+  <li><a href="/processflow/creating-processflow/">Design the Process Flow</a> and self link the node where you want to implement the Self-loop.</li>
+</ol>
+
+<p>Note: In this case, self-loop is applied on GET node.</p>
+
+<p><img src="\staticfiles\processflow\media\pfselfloop6.PNG" alt="PF_selfloop6" /></p>
+
+<ol>
+  <li>On linking the GET node with self loop, the self loop configuration window opens. Select the execution order of the Self-Loop as <code class="highlighter-rouge">Number of Occurences</code>.</li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\pfselfloop7.PNG" alt="PF_selfloop7" /></p>
+
+<ol>
+  <li>
+    <p>Save and <a href="/processflow/deploying-and-executing-processfloww/">Deploy the Process Flow</a> to deploy all the configurations to the environment.</p>
+  </li>
+  <li>
+    <p>You need to execute the Process Flow after the deployment process.</p>
+  </li>
+</ol>
+
+<p>Note: Your process flow will automatically be executed if your sync type is set to Auto mode.</p>
+
+<ol>
+  <li>Navigate to <code class="highlighter-rouge">Manage &gt; Environment</code>. Click on the <strong>Process FLow tab</strong> for the environment where you have deployed the Process Flow and check for the <a href="/processflow/snapshot-processflow/">Process Flow Snapshot.</a></li>
+</ol>
+
+<p><img src="\staticfiles\processflow\media\pfselfloop8.PNG" alt="PF_selfloop8" /></p>
+
+<p><strong>Note: snapshot will generate as per Iteration based on the number of instances the self loop executed. For Eg: If Self loop executed twice, snapshot will display two iterations for it.</strong></p>
+
+<p>Following the process you can successfully execute a Process Flow with Self-Loop.</p>
 
 <p>NOTES: For <code class="highlighter-rouge">Until data available</code> - Extra iteration will be displayed</p>
 

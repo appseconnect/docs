@@ -1406,7 +1406,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/faqs-api-management/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to Frequently Asked questions">Frequently Asked questions</a>
+        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to FAQs">FAQs</a>
         
     </li>
     
@@ -2200,19 +2200,23 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#scenario-1-workflow-created-although-run-button-disabled">Scenario 1: Workflow Created although Run Button Disabled.</a></li>
+  <li><a href="#scenario-2-workflow-is-executed-but-nothing-is-posted-in-the-destination-application">Scenario 2: Workflow is executed, but nothing is posted in the Destination Application</a></li>
+  <li><a href="#scenario-3-transformation-failed-and-skipped-further-synchronization">Scenario 3: Transformation Failed and skipped further synchronization</a></li>
+</ul>
                     </nav>
                 </aside>
                 
                 <p>This topic describes common problems that can occur when you develop and test a workflow in AEC Portal. Given below are few common trouble shooting
 solution for your needs.</p>
 
-<p><strong>Troubleshoot Category 1: Workflow Created although Run Button Disabled</strong></p>
+<h3 id="scenario-1-workflow-created-although-run-button-disabled">Scenario 1: Workflow Created although Run Button Disabled.</h3>
 
 <p>You have created the Workflow as per business need, although attimes you may witness a very common issue 
 and that is the <code class="highlighter-rouge">RUN button is disabled</code>.</p>
 
-<p><strong>Solution:</strong></p>
+<p><strong>Troubleshooting for Scenario 1:</strong></p>
 
 <ol>
   <li>
@@ -2231,9 +2235,9 @@ If there is no error, the SYNC is successful.</p>
   </li>
 </ol>
 
-<p><strong>Troubleshoot Category 2: Workflow is executed, but nothing is posted in the Destination Application</strong></p>
+<h3 id="scenario-2-workflow-is-executed-but-nothing-is-posted-in-the-destination-application">Scenario 2: Workflow is executed, but nothing is posted in the Destination Application</h3>
 
-<p><strong>Solution:</strong></p>
+<p><strong>Troubleshooting for Scenario 2</strong></p>
 
 <ol>
   <li>
@@ -2260,9 +2264,9 @@ properly made.</p>
   </li>
 </ol>
 
-<p><strong>Troubleshoot Category 3: Transformation Failed and skipped further synchronization</strong></p>
+<h3 id="scenario-3-transformation-failed-and-skipped-further-synchronization">Scenario 3: Transformation Failed and skipped further synchronization</h3>
 
-<p><strong>Solution:</strong></p>
+<p><strong>Troubleshooting for Scenario 3</strong></p>
 
 <ol>
   <li>

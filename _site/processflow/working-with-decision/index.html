@@ -1406,7 +1406,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/faqs-api-management/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to Frequently Asked questions">Frequently Asked questions</a>
+        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to FAQs">FAQs</a>
         
     </li>
     
@@ -2333,30 +2333,22 @@
 
     <p><strong>Scenario:</strong> Implementing Decision on Attribute.</p>
 
-    <p><strong>Description:</strong> You may have your Business Model stating, only those orders  shall be shipped whose Country is <strong><code class="highlighter-rouge">US</code> (United States)</strong> &amp; Region Code is <strong><code class="highlighter-rouge">NY</code> (New York)</strong> &amp; the Email Id of the customer shall contain <code class="highlighter-rouge">gmail.com</code>. Therefore, you may not require to sync orders that has the shipping address of states other than <code class="highlighter-rouge">NY</code> or of some other email domain. Therefore, implementing such decision, your decision KEY should be provided with XPATH that searches for the COUNTRY &amp; State &amp; customer_email in the Input Packet. In this Scenario, the configuration should be.</p>
+    <p><strong>Description:</strong> In this case, the scenario is implemented with fact keeping in mind that only those customers shall be accepted to sync to destination application, who belongs to the Country either having the country code of <code class="highlighter-rouge">INDIA</code> or the country code of <code class="highlighter-rouge">United States</code>. The condition will be executed on the provided xpath and will accept only those data on the next node that matches the provided condition.</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items//item//shipping/country_id}</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//addresses//item/country_id}</code></li>
       <li>
         <p><strong>Operator:</strong> <code class="highlighter-rouge">=</code></p>
       </li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">US</code></li>
+      <li><strong>Value:</strong> <code class="highlighter-rouge">IN</code></li>
     </ul>
 
-    <p>&amp;</p>
+    <p>OR</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items/item//shipping/region_code}</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//addresses//item/country_id}</code></li>
       <li><strong>Operator:</strong> <code class="highlighter-rouge">=</code></li>
       <li><strong>Value:</strong> <code class="highlighter-rouge">NY</code></li>
-    </ul>
-
-    <p>&amp;</p>
-
-    <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//items/items/customer_email}</code></li>
-      <li><strong>Operator:</strong> <code class="highlighter-rouge">Contains</code></li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">xyz.com</code></li>
     </ul>
   </li>
 </ol>
@@ -2377,27 +2369,25 @@
 <p><img src="\staticfiles\processflow\media\pfdecision4.PNG" alt="PFdecision4" /></p>
 
 <ol>
-  <li>Once the decision criteria is provided, you can view the final expression in the Preview URL.</li>
-</ol>
-
-<p><img src="" alt="PFdecision5" /></p>
-
-<ol>
   <li>
     <p>Enable the Toggle buttons for the criteria and click on the SAVE button.</p>
   </li>
   <li>
     <p>Once all the configuration are made for the Process Flow. <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute</a> the Process Flow.</p>
   </li>
+  <li>
+    <p>After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about Process Flow Snapshots. The <strong>Activity Log</strong> against the <code class="highlighter-rouge">Decision node</code> in snapshot will display you the status of the condition.</p>
+  </li>
 </ol>
 
-<p><img src="" alt="PFdecision6" /></p>
+<p><img src="\staticfiles\processflow\media\pfdecision5.PNG" alt="PFdecision5" /></p>
 
-<ol>
-  <li>After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about Process Flow Snapshots.</li>
-</ol>
+<p><strong>Note:</strong></p>
 
-<p><img src="" alt="PFdecision7" /></p>
+<p>**- The tabs <code class="highlighter-rouge">Data log</code> for the Decision Node will display list the data that entered the Decision Node.</p>
+<ul>
+  <li>The tab <code class="highlighter-rouge">Transaction File</code> will display you the INPUT file available in the GET node.**</li>
+</ul>
 
 <p>Following the above process you can successfully implement Decision for a Process Flow.</p>
 
