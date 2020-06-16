@@ -56,7 +56,7 @@ The Entity field is the Parent nodes of the packet that would be split. The XPat
 
 `Application used for the Processflow Execution is: Magento2 and SAP B1`.
 
-The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:    
+The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:      
 [PLACEHOLDER]     
 1) Go to Processflow section & [Design](/processflow/designer-processflow/) a Processflow.  
 2) The Processflow is designed as shown in the above section of the screen.  
@@ -69,22 +69,18 @@ and posted in the destination application, to avoid any data loss.
 to view the detailed node by node snapshot data of the processflow.    
 7) Click on the Splitter node to get the snapshot dataview of the splitted files.      
 [PLACEHOLDER]    
-Here you can see the data log file of snapshot with one file, containing `Two customer records`.  
+Here you can see the data log file of snapshot with two file, containing `One customer records` each.  
 8) Now click on the `Transactional Log` to view the splitted data.    
  [PLACEHOLDER]      
 Here you can view two splitted files are created each containing `one customer record` for further processing and 
-posting in destination application. 
-9) Click on the Transactional files on the splitter node to view the details.  
+posting in destination application.   
+9) Now Click on `Mapper node` and you can view two iterations are created for two files
+which are processed.Every Iteration has - Data Log, Activity Files & Transactional Files where you can view
+the file details   
 [PLACEHOLDER]   
-10) Now Click on `Mapper node` and you can view two iterations are created for two files
-which are processed.  
-[PLACEHOLDER] 
-11) Every Iteration has - Data Log, Activity Files & Transactional Files where you can view
-the file details  
-[PLACEHOLDER] 
-12) Click on the destination application node present under every iteration to view the
+10) Click on the destination application node present under every iteration to view the
 file posting status - Success/Failure.    
-[PLACEHOLDER] 
+[PLACEHOLDER]   
 
 Thus, the above processflow is executed with the splitter node and you can also 
 view the iteration wise node execution created with self loop.

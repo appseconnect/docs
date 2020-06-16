@@ -60,7 +60,7 @@ screen appears.
 4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
    by you or until data availability. 
 
-**B. Choosing Self Loop Configuration - For a Timespan**
+**B. Choosing Self Loop Configuration - For Time Out**
 1. In the self loop node, Select and choose the option `Time Span` radio button. The following 
 screen appears.   
 [SCREENSHOT]
@@ -103,6 +103,9 @@ You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the dur
    defined by the user or until data availability.  
   (c)Data availability is the first condition for execution of the self-loop, irrespective
   of the options choosen  for execution.** 
+
+NOTES: For `Until data available` - Extra iteration will be displayed
+
 
 ### Business Scenarios for Self loop Usabilty 
 
