@@ -14,7 +14,7 @@ APPSeCONNECT Process Flow allows you to create variables that captures certain v
 Variables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, 
 instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.
 
-For Eg: You have a create a variable having the name `XYZ` with data type `String` and have associated an XPATH expression `//items/item/cusomer_id`. 
+For Eg: You have a create a variable having the name `XYZ` with data type `String` and have associated an XPATH expression `//items/item/customer_id`. 
 Once defined, upon calling the variable, it will execute the expression associated with the variable.
 
 ### Prerequisites
