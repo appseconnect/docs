@@ -7,7 +7,7 @@ menus:
     api:
         weight: 2
         icon: fa fa-gg
-        title: "Frequently Asked questions" 
+        title: "FAQs" 
         identifier: apifaqs 
 ---
 `FAQ` is the best way to address frequently asked questions about your business. This section contains list of questions and answers pertaining to a particular subject especially one giving basic information for users of a website. 

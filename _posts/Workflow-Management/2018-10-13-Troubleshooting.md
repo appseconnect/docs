@@ -14,12 +14,12 @@ menus:
 This topic describes common problems that can occur when you develop and test a workflow in AEC Portal. Given below are few common trouble shooting
 solution for your needs.
 
-**Troubleshoot Category 1: Workflow Created although Run Button Disabled**
+### Scenario 1: Workflow Created although Run Button Disabled.
 
 You have created the Workflow as per business need, although attimes you may witness a very common issue 
 and that is the `RUN button is disabled`. 
 
-**Solution:**
+**Troubleshooting for Scenario 1:**
 
 1. Make the workflow Active by Clicking `Active/InActive Checkbox` thereafter check the Touchpoint for the workflow is published on Cloud and Synced in the agent.
    The Runbutton should be working now.
@@ -31,9 +31,9 @@ and that is the `RUN button is disabled`.
 4.  Now Run the Workflow and check for `Data Sync Log` in `Agent's Workflow Panel`and also check `data transaction LOG` for any errors or error messages. 
     If there is no error, the SYNC is successful.
 
-**Troubleshoot Category 2: Workflow is executed, but nothing is posted in the Destination Application**
+### Scenario 2: Workflow is executed, but nothing is posted in the Destination Application
 
-**Solution:**
+**Troubleshooting for Scenario 2**
 
 1. After workflow execution, if nothing is posted in the destination application, go to agent and check the transactional
    logs under workflow panel. Double click on the error received and a window will appear.
@@ -50,9 +50,9 @@ and that is the `RUN button is disabled`.
 destination application are not validated properly, or any of the applications prerequisite hasn't
 properly made.
 
-**Troubleshoot Category 3: Transformation Failed and skipped further synchronization**
+### Scenario 3: Transformation Failed and skipped further synchronization
 
-**Solution:**
+**Troubleshooting for Scenario 3**
 
 1. This is the situation where you have done integration but transformation failed and skipped further synchronization.
 Similarly, as of the previous one, select and copy the error code and check for the packets (input, Transform, output) in the given path

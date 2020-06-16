@@ -36,15 +36,13 @@ prerequisites. Given below are the steps that will help you view Snapshot of a P
 ![Snapshot2](../../staticfiles/processflow/media/snapshot2.png)  
 4.	Click Process Flows Tab. You can view the list of all the deployed process flows. Following are the details that will display for each deployed Process Flows.
 * Name of the Process Flow 
-* Description of the Process Flow 
-* Version of the Process Flow
 * The time of Deployment
-* Actions   
+* Actions
 ![Snapshot3](../../staticfiles/processflow/media/snapshot3.png)  
 5.	Click Ellipses button (…) available beside the Process Flow that you have executed. You can view the option `View Snapshot` in the context menu.  
 **Note: The button View Snapshot will be in Disabled State if any Process Flow has not been executed after deploying.**  
 ![Snapshot4](../../staticfiles/processflow/media/snapshot4.png)  
-6.	Click View Snapshot button to view the Snapshot File.    
+6.	Click View Snapshot button to view the Snapshot.    
 ![Snapshot5](../../staticfiles/processflow/media/snapshot5.png)  
 7.	The Snapshot will display the following details of the Process Flow.  
 ![Snapshot6](../../staticfiles/processflow/media/snapshot6.png)  
@@ -79,12 +77,13 @@ The key for denoting the node execution status is:
 * Red – Denotes with a cross icon for failed execution of the node.
  
 You can view the Node specific view of the Snapshot in the scenarios given below:
-1. `Scenario: Get Node`    
+
+### 1. Scenario: Get Node    
 
 a. Click on the Get Node. You can view the snapshot results for all the three tabs – Data Log, Activity Log & Transaction File.  
-![Snapshot11](../../staticfiles/processflow/media/snapshot10.png)  
+  
 b.	Click on the Data log tab of the GET node. You will be able to view all the data that are fetched from the Source Application. 
-![Snapshot12](../../staticfiles/processflow/media/snapshot11.png)  
+![Snapshot11](../../staticfiles/processflow/media/snapshot10.png)
 Following are the details that would be displayed for each data in Data Log.  
 * SourceId - The is the primary field for representing the data, synced. It can either be an Email id or Data Id or the Data name, depending on the entity of the Application.
 * DestinationId - GET Node will not generate in Destination ID in Snapshot. 
@@ -95,19 +94,22 @@ Following are the details that would be displayed for each data in Data Log.
 c.	Click on the Activity Log tab of the GET node. You will be able to view the execution log of that node  
 ![Snapshot13](../../staticfiles/processflow/media/snapshot13.png)
 d.	Click on the Transaction File tab of the GET node. You will be able to view the input files generated after its execution. 
-![Snapshot14](../../staticfiles/processflow/media/snapshot14.png)      
-2.	`Scenario: Mapper Node`   
+![Snapshot14](../../staticfiles/processflow/media/snapshot14.png)    
+
+### 2.	Scenario: Mapper Node 
+
 a.	Click on the Mapper Node. You can view the snapshot results for all the three tabs – Data Log, Activity Log & Transaction File.     
-![Snapshot15](../../staticfiles/processflow/media/snapshot15.png)  
+
 b.	Click on the Data log tab of the Mapper node. You will be able to view all the data that are fetched from the Source Application    
 ![Snapshot16](../../staticfiles/processflow/media/snapshot16.png)  
 c.	Click on the Activity Log tab of the Mapper node. You will be able to view the execution log of that node    
 ![Snapshot17](../../staticfiles/processflow/media/snapshot17.png)  
 d.	Click on the Transaction File tab of the Mapper node. You will be able to view the input files generated after its execution.      
 ![Snapshot18](../../staticfiles/processflow/media/snapshot18.png)   
-3.	`Scenario: Post Node`  
-a.	Click on the Post Node. You can view the snapshot results for all the three tabs – Data Log, Activity Log & Transaction File.  
-![Snapshot19](../../staticfiles/processflow/media/snapshot19.png)  
+
+### 3. Scenario: Post Node 
+
+a.	Click on the Post Node. You can view the snapshot results for all the three tabs – Data Log, Activity Log & Transaction File.
 b.	Click on the Data log tab of the Post node. You will be able to view all the data that are fetched from the Source Application.  
 ![Snapshot20](../../staticfiles/processflow/media/snapshot20.png)  
 c.	Click on the Activity Log tab of the Post node. You will be able to view the execution logs of POST node.  
