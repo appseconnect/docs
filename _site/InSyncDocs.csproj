@@ -1233,6 +1233,7 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
+    <None Include="_posts\ProcessFlow Management\2020-03-22-adding-schema-actions.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-04-17-cloud-appresource-functions.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2018-09-24-working-with-decision.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-05-14-working-with-processflow-selfloop.md" />

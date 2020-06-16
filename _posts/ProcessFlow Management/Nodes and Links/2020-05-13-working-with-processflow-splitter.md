@@ -56,23 +56,38 @@ The Entity field is the Parent nodes of the packet that would be split. The XPat
 
 `Application used for the Processflow Execution is: Magento2 and SAP B1`.
 
-The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:
-![Processflow Splitter2](../../../staticfiles/processflow/media/mapper/processflow_splitter2.PNG)
-
+The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:    
+[PLACEHOLDER]     
 1) Go to Processflow section & [Design](/processflow/designer-processflow/) a Processflow.  
 2) The Processflow is designed as shown in the above section of the screen.  
 3) Here the `splitter` node is used after  getting customer data from Magento,
 and splitting it into multiple output packets for posting in destination application.  
-4) [Deploy](/processflow/deploying-and-executing-processfloww/) the Process flow. After successful deployment, to your environment, [Execute](/processflow/deploying-and-executing-processfloww/) the Processflow.  
-5) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
+4) You have to add [Self loop](/processflow/working-with-processflow-selfloop/) in the mapper node so that all the splitted files are executed
+and posted in the destination application, to avoid any data loss.   
+5) Now [Deploy](/processflow/deploying-and-executing-processfloww/) the Process flow. After successful deployment, to your environment, [Execute](/processflow/deploying-and-executing-processfloww/) the Processflow.  
+6) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
 to view the detailed node by node snapshot data of the processflow.    
-6) Click on the Splitter node to get the snapshot dataview of the splitted files.  
-![splitternode2](../../../staticfiles/processflow/media/mapper/splitternode2.png)   
-Here you can see the data log file of snapshot with one file, containing `Four customer records`.  
-7) Now click on the `Transactional Log` to view the splitted data.  
-![splitternode3](../../../staticfiles/processflow/media/mapper/splitternode3.png)     
-Here you can view four splitted files each containing `one customer record` for further processing and 
-posting in destination application.  
+7) Click on the Splitter node to get the snapshot dataview of the splitted files.      
+[PLACEHOLDER]    
+Here you can see the data log file of snapshot with one file, containing `Two customer records`.  
+8) Now click on the `Transactional Log` to view the splitted data.    
+ [PLACEHOLDER]      
+Here you can view two splitted files are created each containing `one customer record` for further processing and 
+posting in destination application. 
+9) Click on the Transactional files on the splitter node to view the details.  
+[PLACEHOLDER]   
+10) Now Click on `Mapper node` and you can view two iterations are created for two files
+which are processed.  
+[PLACEHOLDER] 
+11) Every Iteration has - Data Log, Activity Files & Transactional Files where you can view
+the file details  
+[PLACEHOLDER] 
+12) Click on the destination application node present under every iteration to view the
+file posting status - Success/Failure.    
+[PLACEHOLDER] 
+
+Thus, the above processflow is executed with the splitter node and you can also 
+view the iteration wise node execution created with self loop.
 
 ### Business Scenario - Low Server Response in Destination Application   
 

@@ -73,8 +73,8 @@ the list of schema. And if` No schema` is available for the given application no
 
 ### Editing. Deleting & Renaming Schemas in an Application node of Process flow 
 
-(A) To `Edit Schema`, do the following steps:   
-
+(A) To `Edit Schema`, do the following steps:
+     
 1) Go to Processflow [designer]() section and drag the app node for which you want to edit schema.    
 2) Now click on the app node, and under schema field click Manage Schema.    
 3) You will be redirected to the `Manage Schema and Action` pop-up.    
@@ -91,8 +91,8 @@ context menu and do the changes.
 context menu and clicking on Rename Schema Option.    
 
 **NOTE: (a) Once a Process Flow has been saved in an Environment you will be
-unable to Rename the Schema, Delete the Schema.      
-(b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.    
+unable to Rename the Schema, Delete the Schema.  
+(b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.  
 (c) You will be able to edit the `Description`, via `Edit Schema` option.**
 
 ### Adding Attribute to a Schema
@@ -122,12 +122,12 @@ g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attrib
 * Primary: For allotting this attribute as the Primary Key.  
 * Required: For making this attribute mandatory for the mapping purpose.  
 * Attribute:To add attribute in the XSLT    
-**Only one Attribute can be set as `Primary Attribute` within a Schema.**     
+**Only one Attribute can be set as `Primary Attribute` within a Schema.**  
 3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
-appears on the window stating the attribute is created successfully.    
-4) The newly created attribute gets added just below the Schema on the left side panel.        
+appears on the window stating the attribute is created successfully.
+4) The newly created attribute gets added just below the Schema on the left side panel.    
 5) Click on the created attribute in the node structure, for Renaming and Deleting 
-the attribute.        
+the attribute.  
 
 **Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.**
 
@@ -138,25 +138,22 @@ the attribute.
 1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).  
 You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
 
-2) Changes done to an existing Attribute (local attribute) will be reflected within that specific Process Flow only.  
-3) Changes done to an existing Attribute (local attribute) will not affect other Process Flows using the same Schema and Attribute.  
-4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.  
-5) Primary set Attributes (local attributes)cannot be deleted.    
+2) Changes done to an existing Attribute (local attribute) will be reflected within that specific Process Flow only.
+3) Changes done to an existing Attribute (local attribute) will not affect other Process Flows using the same Schema and Attribute.
+4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.
+5) Primary set Attributes (local attributes)cannot be deleted.
 
 #### (b) Editing Attribute within Organization Scope (global attribute)
 On deleting an Attribute from the Manage Schema section, it will not be visible in new Process Flow.
 
-(B) To `Delete Schema`, do the following steps:  
+(B) To `Delete Schema`, do the following steps:
 
-1) Go to Processflow [designer]() section and drag the app node for which you want to deleted schema.  
-2) Now click on the app node, and under schema field click Manage Schema.  
-3) You will be redirected to the `Manage Schema and Action` pop-up.  
-4) In the `Manage Schema and Action` window, you will be able to delete any existing Schema by click on the Schema.  
-Context menu and clicking on Delete Schema Option.          
+1) Go to Processflow [designer]() section and drag the app node for which you want to deleted schema.
+2) Now click on the app node, and under schema field click Manage Schema.
+3) You will be redirected to the `Manage Schema and Action` pop-up.
+4) In the `Manage Schema and Action` window, you will be able to delete any existing Schema by click on the Schema
+context menu and clicking on Delete Schema Option.
 
-#### Deleting Attribute  
+#### Deleting Attribute
 
-Once a Process Flow has been saved (For both Organization and Process Flow Scope)
-Users will be able to delete the Attribute(s) used in Mapping.
 
-####   
