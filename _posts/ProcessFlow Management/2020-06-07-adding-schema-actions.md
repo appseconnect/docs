@@ -11,12 +11,14 @@ menus:
         identifier: schemaactionprocessflow
 ---
 
-The user can view the schemas and the action present in an app and can also add schema and add action for each application node. 
-This section enables the user to view and add the Schema and its Actions of an aplication in the Process Flow and managing the same
-within a process flow for easy execution.
+The user can view the schemas and the action present in an app and can also add schema and add action for application node used in processflow. 
+This section enables the user to view, add the Schema, Attributes and the Actions of an application in the Process Flow and managing the same
+within a process flow for easy execution. The added schema and its component from the application node will
+be visible from the APP Section of the portal as well. 
 
 ## Prerequisites
-- The User needs to have a valid AEC account.
+- The User should have a valid APPSeCONNECT account.
+- APPSeCONNECT should be up and running
 - An application node  is needed for defining the Schemas and its Actions.
 
 
@@ -24,23 +26,32 @@ within a process flow for easy execution.
 
 Process flow allows a defined tree view listing structure for managing and viewing
 defined Schema, Attributes and Actions associated with it. 
-* The Schemas are arranged in a same level hierarchy whereas
-* The attributes and actions associated with the schema is arranged in the second level 
+
+To view the listing of Schemas and Attribute,  navigate to the following section:   
+(a) Go to Portal and click on Process Flow module  
+(b) Go to [desiger]() section and Drag the required App Node  
+(c) Go to Node Configuration and Click on Manage Schema.   
+(d) A window opens up and here you can view the listing of all the Schema and Attribute(s) of the Application 
+will be displayed in the Tree view on the left pane. 
+
+* The Schemas are arranged in a same level hierarchy whereas the attributes and actions associated with the schema is arranged in the second level 
 hierarchy.
 * Newly created attribute is arranged under Attribute node.
 * The Action Filters and Retry Filters associated with an action are arranged in 
 the third level hieararchy under attributes
 
+**NOTE: Any Changes done to the Schema and Attributes from the Portal->> App module 
+will be displayed in this section.**
+
 Thus listing view gives a clear synopisis to the user regarding the Schema access and 
-Management in the interface. Any Changes done to the Schema and Attributes from the Portal, 
-App section will be displayed in this section.
+Managementfrom the processflow node configuration level. 
 
 
 ### Adding Schemas in an Application node of Process flow 
 
 1) Go to [designer section]() and [create a process]() flow.  
-2) Drag the application node and the following window appears.  
-3) The following are the fields available in the Node Configuration Slider:  
+2) Drag the application node and the following  Node Configuration window appears.  
+3) The field Description is gven below for the Node Configuration section:  
 * Node Description: This denotes the description of the node.  
 * Node Type: This denotes the type of action that the node needs to perform GET or POST   
 * App Version: This denotes the version of the Application. You need to select the version of the application you need for the integration.  
@@ -59,68 +70,30 @@ the list of schema. And if` No schema` is available for the given application no
  d. Schema Namespace URL: Differentiates between two similar schemas using URL  
 8) The newly created Schema is added and gets listed in the left side pane.  
 
-### Importing Schemas in an Application node of Process flow 
-
-1) On the Schema Window the user can view the list of schemas present or can also Import Schema Option.  
-2) Clicking on `Import Schema` option the Form opens up. Here you can import Schema in three formats -  
-* XML 
-* JSON
-* WSDL (Web Services Description Language) file for the Schema.     
-3) In `JSON and XML` format you need to choose the respective XML and JSON file saved locally, but in `WSDL` format the user needs to provide the WSDL file link for importing the schema.  
-4) For generic apps, WSDL option will not be available for importing to any protocol other than SOAP.  
-5) For the XML/JSON format, the user needs to upload the file that supports the respective formats. 
-For XML, the user needs to upload XML file and for JSON, the JSON file needs to be uploaded.      
-6) The parent node of the provided XML file is needed to be provided in the ELEMENT field.  
-`In this case, the parent is items, therefore the Element should be items.`     
-6) Click on Render button, to view all the complex object & complex object collection and its attributes.     
-Expanding the complex object & complex object collection will display all the attributes present.  
-7) If parsing errors are encountered during the Rendering process, the same will be displayed 
-to the Users.       
-8) A confirmation message will be displayed after the Schema is imported successfully. 
-On saving the selected Schema along with the Attributes will be added into the Organization. 
-You can view the Imported Schema gets added in the listing section on the left side pane
-of the window.  
-9) Once Created, the Schema will be displayed on the left side of the pane.    
-10) The `Attribute` and `Action` Folders will be automatically created under each Schema.    
-11) For every Schema, the Context Menu will have the following options
-`Add Attribute`, `Edit Schema`, `Delete Schema` and `Rename Schema`.    
-
-**Note: 
-(a)The user must save each node individually. There is no way the user can save it on the whole.
-This process is same for both the XML and JSON formats.  
-(b)For WSDL format, the URL File should be provided for extracting the complex object & complex object collection.
-Click on the SAVE button individually for the saving each of the nodes.  
-(c) Users will also be able to view the newly added Schema by navigating to the Portal, App section.**   
 
 ### Editing. Deleting & Renaming Schemas in an Application node of Process flow 
 
-(A) To `Edit Schema`, do the following steps: 
-1) Go to Processflow [designer]() section and drag the app node for which you want to edit schema.
-2) Now click on the app node, and under schema field click Manage Schema.
-3) You will be redirected to the `Manage Schema and Action` pop-up.
+(A) To `Edit Schema`, do the following steps:   
+
+1) Go to Processflow [designer]() section and drag the app node for which you want to edit schema.    
+2) Now click on the app node, and under schema field click Manage Schema.    
+3) You will be redirected to the `Manage Schema and Action` pop-up.    
 4) In the `Manage Schema and Action` window, you will be able to edit any existing Schema by click on the Schema
-context menu and do the changes.
+context menu and do the changes.    
 
-(B) To `Delete Schema`, do the following steps:
 
-1) Go to Processflow [designer]() section and drag the app node for which you want to deleted schema.
-2) Now click on the app node, and under schema field click Manage Schema.
-3) You will be redirected to the `Manage Schema and Action` pop-up.
-4) In the `Manage Schema and Action` window, you will be able to delete any existing Schema by click on the Schema
-context menu and clicking on Delete Schema Option.
+(C) To `Rename Schema`, do the following steps:    
 
-(C) To `Rename Schema`, do the following steps:
-
-1) Go to Processflow [designer]() section and drag the app node for which you want to rename schema.
-2) Now click on the app node, and under schema field click Manage Schema.
-3) You will be redirected to the `Manage Schema and Action` pop-up.
+1) Go to Processflow [designer]() section and drag the app node for which you want to rename schema.    
+2) Now click on the app node, and under schema field click Manage Schema.    
+3) You will be redirected to the `Manage Schema and Action` pop-up.    
 4) In the `Manage Schema and Action` window, you will be able to rename any existing Schema by click on the Schema
-context menu and clicking on Rename Schema Option.
+context menu and clicking on Rename Schema Option.    
 
 **NOTE: (a) Once a Process Flow has been saved in an Environment you will be
-unable to Rename the Schema, Delete the Schema.  
-(b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.  
-(c) YOU will be able to edit the `Description`, via `Edit Schema` option.**
+unable to Rename the Schema, Delete the Schema.      
+(b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.    
+(c) You will be able to edit the `Description`, via `Edit Schema` option.**
 
 ### Adding Attribute to a Schema
 
@@ -148,19 +121,42 @@ select as per your business requirement.Attributes with scope `Organization` wil
 g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute.   
 * Primary: For allotting this attribute as the Primary Key.  
 * Required: For making this attribute mandatory for the mapping purpose.  
-* Attribute:To add attribute in the XSLT
-**Only one Attribute can be set as `Primary Attribute` within a Schema.**
+* Attribute:To add attribute in the XSLT    
+**Only one Attribute can be set as `Primary Attribute` within a Schema.**     
 3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
-appears on the window stating the attribute is created successfully.
-4) The newly created attribute gets added just below the Schema on the left side panel.    
+appears on the window stating the attribute is created successfully.    
+4) The newly created attribute gets added just below the Schema on the left side panel.        
 5) Click on the created attribute in the node structure, for Renaming and Deleting 
-the attribute.  
+the attribute.        
 
 **Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.**
 
 ### Editing. Deleting & Renaming Attribute in an Application node of Process flow 
 
+#### (a) Editing Attribute within a  Process Flow Scope (local attribute)
 
-### Adding Action
+1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).  
+You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
 
-### Adding Action Filter & Retry Filter
+2) Changes done to an existing Attribute (local attribute) will be reflected within that specific Process Flow only.  
+3) Changes done to an existing Attribute (local attribute) will not affect other Process Flows using the same Schema and Attribute.  
+4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.  
+5) Primary set Attributes (local attributes)cannot be deleted.    
+
+#### (b) Editing Attribute within Organization Scope (global attribute)
+On deleting an Attribute from the Manage Schema section, it will not be visible in new Process Flow.
+
+(B) To `Delete Schema`, do the following steps:  
+
+1) Go to Processflow [designer]() section and drag the app node for which you want to deleted schema.  
+2) Now click on the app node, and under schema field click Manage Schema.  
+3) You will be redirected to the `Manage Schema and Action` pop-up.  
+4) In the `Manage Schema and Action` window, you will be able to delete any existing Schema by click on the Schema.  
+Context menu and clicking on Delete Schema Option.          
+
+#### Deleting Attribute  
+
+Once a Process Flow has been saved (For both Organization and Process Flow Scope)
+Users will be able to delete the Attribute(s) used in Mapping.
+
+####   

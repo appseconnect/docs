@@ -50,27 +50,15 @@ Self Loop Execution on the nodes:
 
 **A. Choosing Self Loop Configuration - Until data available**
 
-1.	Link up the self-loop in the node where you need the loop to perform. The node configuration page opens.
-
-
-2.	Select the check box against the option **Until Data Available**. You will not have to provide any additional details as in **Self-Loop for Time Span** & **Self-Loop for Number of Occurrence**.
-
-**Note:** 
-
-- On selecting this option, Self-Loop will execute its execution until all the Data are received for that single instance. 
-
-- Self-Loop: Until Data Available will display only one iteration when checked for the Snapshot.
-
-- Self-Loop:Until Data Availble will stop its execution when there is no further data availble send from its predecessor node or from the data Source.
-
-- Self-loop over GET node will not be executed during the `RETRY` process if the GET node is connected to the START node as its predecessor node.
-
-![PF_selfloop2](\staticfiles\processflow\media\pfselfloop2.PNG)
-
-3. Enter the Description of the self-loop node configuration window.
-    
-4. Self loop over these nodes GET/MAPPER/POST will be executed until all the data are fetched from the predecessor node.
-
+1.	Link up the self-loop in the node where you need the loop to perform. The node configuration page opens.    
+2.	Select the check box against the option **Until Data Available**. You will not have to provide any additional details as in **Self-Loop for Time Span** & **Self-Loop for Number of Occurrence**.     
+- On selecting this option, Self-Loop will execute its execution until all the Data are received for that single instance.     
+- Self-Loop: Until Data Available will display only one iteration when checked for the Snapshot.    
+- Self-Loop:Until Data Availble will stop its execution when there is no further data availble send from its predecessor node or from the data Source.  
+- Self-loop over GET node will not be executed during the `RETRY` process if the GET node is connected to the START node as its predecessor node.  
+![PF_selfloop2](\staticfiles\processflow\media\pfselfloop2.PNG)  
+3. Enter the Description of the self-loop node configuration window.        
+4. Self loop over these nodes GET/MAPPER/POST will be executed until all the data are fetched from the predecessor node.  
 
 **B. Choosing Self Loop Configuration - Number of Occurence**
 
@@ -84,12 +72,12 @@ screen appears.
 4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
    by you or until data availability. 
 
-**C. Choosing Self Loop Configuration - For a Timespan**
-1. In the self loop node, Select and choose the option `Time Span` radio button. The following 
+**C. Choosing Self Loop Configuration - For  Timeout**
+1. In the self loop node, Select and choose the option `Time Out` radio button. The following 
 screen appears.   
 ![PF_selfloop4](\staticfiles\processflow\media\pfselfloop4.PNG)
 2. Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the duration as per your requirement.  
+You have the option for the Time-Out in Hours, Minutes & Seconds. Enter the duration as per your requirement.  
 (a) Hours: The value range of hours is from 1-24  
 (b) Minutes: The value range of minutes is from 1-60  
 (c) Seconds: The value crange of seconds is from 1-60  
@@ -99,37 +87,34 @@ You have the option for the Time-Span in Hours, Minutes & Seconds. Enter the dur
    by you or until data availability.  
 
 
-_**Note:**_ 
 
 _**(a)Maximum no. of characters allowed in the Description Field will be Max.  
 (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
 (c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_ 
 
+
+
 ### Execution flow for Self loop:
 
-1. [Design the Process Flow](/processflow/creating-processflow/) and self link the node where you want to implement the Self-loop.
-
-Note: In this case, self-loop is applied on GET node.
-
-![PF_selfloop6](\staticfiles\processflow\media\pfselfloop6.PNG)
-
+1. [Design the Process Flow](/processflow/creating-processflow/) and self link the node where you want to implement the Self-loop.In this case, self-loop is applied on GET node.
+![PF_selfloop6](\staticfiles\processflow\media\pfselfloop6.PNG)  
 2. On linking the GET node with self loop, the self loop configuration window opens. Select the execution order of the Self-Loop as `Number of Occurences`.
-
 ![PF_selfloop7](\staticfiles\processflow\media\pfselfloop7.PNG)
-
 3. Save and [Deploy the Process Flow](/processflow/deploying-and-executing-processfloww/) to deploy all the configurations to the environment.
-
 4. You need to execute the Process Flow after the deployment process.
-
-Note: Your process flow will automatically be executed if your sync type is set to Auto mode.
-
-5. Navigate to `Manage > Environment`. Click on the **Process FLow tab** for the environment where you have deployed the Process Flow and check for the [Process Flow Snapshot.](/processflow/snapshot-processflow/)
-
-![PF_selfloop8](\staticfiles\processflow\media\pfselfloop8.PNG)
-
-**Note: snapshot will generate as per Iteration based on the number of instances the self loop executed. For Eg: If Self loop executed twice, snapshot will display two iterations for it.**
+**Your process flow will automatically be executed if your sync type is set to Auto mode.**
+5. Navigate to `Manage > Environment`. Click on the **Process FLow tab** for the environment where you have deployed the Process Flow and check for the 
+[Process Flow Snapshot.](/processflow/snapshot-processflow/)  
+![PF_selfloop8](\staticfiles\processflow\media\pfselfloop8.PNG)  
 
 Following the process you can successfully execute a Process Flow with Self-Loop.
+
+**NOTE:   
+(a) Until data available - Extra iteration will be displayed  
+(b) Number of occurrence * batch size <= number of data available in source - Extra iteration will not be displayed  
+(c) Number of occurrence * batch size > number of data available in source - Extra iteration will be displayed  
+(d) For time out if data available till that time - Extra iteration will not be displayed  
+(e) For time out if data all data fetched before the time set - Extra iteration will be displayed**
 
 ### Business Scenarios for Self loop Usabilty 
 

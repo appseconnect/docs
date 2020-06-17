@@ -1406,7 +1406,7 @@
     
     
     <li class="menu-item-" data-url="/api-management/faqs-api-management/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to Frequently Asked questions">Frequently Asked questions</a>
+        <a href="/api-management/faqs-api-management/" onclick="selectTab('/api-management/faqs-api-management/', event);" title="Go to FAQs">FAQs</a>
         
     </li>
     
@@ -1603,6 +1603,12 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Adding and Managing - Schema & Actions">Adding and Managing - Schema & Actions</a>
         
     </li>
     
@@ -2182,7 +2188,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -2249,23 +2255,34 @@ node the XPath is needed to be provided viewing the Transform Packet.</p>
 
 <p><code class="highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1</code>.</p>
 
-<p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:
-<img src="../../../staticfiles/processflow/media/mapper/processflow_splitter2.PNG" alt="Processflow Splitter2" /></p>
-
-<p>1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.<br />
+<p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:    <br />
+[PLACEHOLDER]   <br />
+1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.<br />
 2) The Processflow is designed as shown in the above section of the screen.<br />
 3) Here the <code class="highlighter-rouge">splitter</code> node is used after  getting customer data from Magento,
 and splitting it into multiple output packets for posting in destination application.<br />
-4) <a href="/processflow/deploying-and-executing-processfloww/">Deploy</a> the Process flow. After successful deployment, to your environment, <a href="/processflow/deploying-and-executing-processfloww/">Execute</a> the Processflow.<br />
-5) Go to <a href="/deployment/Environment-Management/">Environment</a>section of the portal, select the process flow from the listing section and click <a href="/processflow/snapshot-processflow/">View Snapshot</a>
+4) You have to add <a href="/processflow/working-with-processflow-selfloop/">Self loop</a> in the mapper node so that all the splitted files are executed
+and posted in the destination application, to avoid any data loss. <br />
+5) Now <a href="/processflow/deploying-and-executing-processfloww/">Deploy</a> the Process flow. After successful deployment, to your environment, <a href="/processflow/deploying-and-executing-processfloww/">Execute</a> the Processflow.<br />
+6) Go to <a href="/deployment/Environment-Management/">Environment</a>section of the portal, select the process flow from the listing section and click <a href="/processflow/snapshot-processflow/">View Snapshot</a>
 to view the detailed node by node snapshot data of the processflow.  <br />
-6) Click on the Splitter node to get the snapshot dataview of the splitted files.<br />
-<img src="../../../staticfiles/processflow/media/mapper/splitternode2.png" alt="splitternode2" /> <br />
-Here you can see the data log file of snapshot with one file, containing <code class="highlighter-rouge">Four customer records</code>.<br />
-7) Now click on the <code class="highlighter-rouge">Transactional Log</code> to view the splitted data.<br />
-<img src="../../../staticfiles/processflow/media/mapper/splitternode3.png" alt="splitternode3" />   <br />
-Here you can view four splitted files each containing <code class="highlighter-rouge">one customer record</code> for further processing and 
-posting in destination application.</p>
+7) Click on the Splitter node to get the snapshot dataview of the splitted files.    <br />
+[PLACEHOLDER]  <br />
+Here you can see the data log file of snapshot with two file, containing <code class="highlighter-rouge">One customer records</code> each.<br />
+8) Now click on the <code class="highlighter-rouge">Transactional Log</code> to view the splitted data.  <br />
+ [PLACEHOLDER]    <br />
+Here you can view two splitted files are created each containing <code class="highlighter-rouge">one customer record</code> for further processing and 
+posting in destination application. <br />
+9) Now Click on <code class="highlighter-rouge">Mapper node</code> and you can view two iterations are created for two files
+which are processed.Every Iteration has - Data Log, Activity Files &amp; Transactional Files where you can view
+the file details <br />
+[PLACEHOLDER] <br />
+10) Click on the destination application node present under every iteration to view the
+file posting status - Success/Failure.  <br />
+[PLACEHOLDER]</p>
+
+<p>Thus, the above processflow is executed with the splitter node and you can also 
+view the iteration wise node execution created with self loop.</p>
 
 <h3 id="business-scenario---low-server-response-in-destination-application">Business Scenario - Low Server Response in Destination Application</h3>
 
@@ -4393,6 +4410,14 @@ different Application.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4468,6 +4493,8 @@ different Application.</p>
                                     Cloud Appresource Functions
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
