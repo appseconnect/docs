@@ -369,14 +369,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/configuring%20appseconnect/configurations/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/configuring%20appseconnect/configurations/" onclick="selectTab('/configuring%20appseconnect/configurations/', event);" title="Go to Configuring APPSeCONNECT">Configuring APPSeCONNECT</a>
+    <li class="menu-item-" data-url="/working%20with%20apps/configurations/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/working%20with%20apps/configurations/" onclick="selectTab('/working%20with%20apps/configurations/', event);" title="Go to Working with APPS">Working with APPS</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/getting%20started/configurations-for-integration/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/getting%20started/configurations-for-integration/" onclick="selectTab('/getting%20started/configurations-for-integration/', event);" title="Go to Configuring for Integration">Configuring for Integration</a>
+        <a href="/getting%20started/configurations-for-integration/" onclick="selectTab('/getting%20started/configurations-for-integration/', event);" title="Go to Configuring Connectors for Integration">Configuring Connectors for Integration</a>
         
     </li>
     
@@ -2331,24 +2331,24 @@
   <li>
     <p>You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.</p>
 
-    <p><strong>Scenario:</strong> Implementing Decision on Attribute.</p>
+    <p><strong>Scenario:</strong> Implementing Decision as Static.</p>
 
-    <p><strong>Description:</strong> In this case, the scenario is implemented with fact keeping in mind that only those customers shall be accepted to sync to destination application, who belongs to the Country either having the country code of <code class="highlighter-rouge">INDIA</code> or the country code of <code class="highlighter-rouge">United States</code>. The condition will be executed on the provided xpath and will accept only those data on the next node that matches the provided condition.</p>
+    <p><strong>Description:</strong> In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields <code class="highlighter-rouge">Decision Key</code> &amp; <code class="highlighter-rouge">Value</code> is equal, the data will be passed as success.</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//addresses//item/country_id}</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">20</code></li>
       <li>
         <p><strong>Operator:</strong> <code class="highlighter-rouge">=</code></p>
       </li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">IN</code></li>
+      <li><strong>Value:</strong> <code class="highlighter-rouge">20</code></li>
     </ul>
 
-    <p>OR</p>
+    <p>AND</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">{//addresses//item/country_id}</code></li>
+      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">40</code></li>
       <li><strong>Operator:</strong> <code class="highlighter-rouge">=</code></li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">NY</code></li>
+      <li><strong>Value:</strong> <code class="highlighter-rouge">40</code></li>
     </ul>
   </li>
 </ol>

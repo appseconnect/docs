@@ -16,7 +16,7 @@ This section enables the user to view, add the Schema, Attributes and the Action
 within a process flow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
 
-## Prerequisites
+## Prerequisitesss
 - The User should have a valid APPSeCONNECT account.
 - APPSeCONNECT should be up and running
 - An application node  is needed for defining the Schemas and its Actions.
@@ -29,11 +29,11 @@ defined Schema, Attributes and Actions associated with it.
 
 To view the listing of Schemas and Attribute,  navigate to the following section:   
 (a) Go to Portal and click on Process Flow module  
-(b) Go to [desiger]() section and Drag the required App Node  
-(c) Go to Node Configuration and Click on Manage Schema.   
+(b) Go to [desiger](/processflow/designer-processflow/) section and Drag the required App Node  
+(c) The Node Configuration window opens. Go to General tab and Click `Manage Schema`.   
 (d) A window opens up and here you can view the listing of all the Schema and Attribute(s) of the Application 
 will be displayed in the Tree view on the left pane. 
-
+[PLACEHOLDER]
 * The Schemas are arranged in a same level hierarchy whereas the attributes and actions associated with the schema is arranged in the second level 
 hierarchy.
 * Newly created attribute is arranged under Attribute node.
@@ -49,7 +49,7 @@ Managementfrom the processflow node configuration level.
 
 ### Adding Schemas in an Application node of Process flow 
 
-1) Go to [designer section]() and [create a process]() flow.  
+1) Go to [designer section](/processflow/designer-processflow/) and [create a process](/processflow/creating-processflow/) flow.  
 2) Drag the application node and the following  Node Configuration window appears.  
 3) The field Description is gven below for the Node Configuration section:  
 * Node Description: This denotes the description of the node.  
@@ -61,35 +61,30 @@ Managementfrom the processflow node configuration level.
 * Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.    
 4) In the node configuration window, go to the Schema field. If the list of Schema is available select from 
 the list of schema. And if` No schema` is available for the given application node, click `Manage Schema` option.  
-5) The following window appears with message on display for the user to Add Schema or Import Schema  
-6) Click on the option **Add Schema** and the add schema form opens up  
+5) The following window appears with message on display for the user to `Add Schema` & `Import Schema`  
+6) Click on the option **Add Schema** and the add schema window opens up  
+[PLACEHOLDER]
 7) Enter the details of adding Schema and Click `Save` button 
  a. Schema Name: This is a mandatory field and it needs to be provided with the schema name    
  b. Schema Description: The description for the schema is needed to be given here   
  c. Schema Namespace: Differentiates between two similar schemas   
  d. Schema Namespace URL: Differentiates between two similar schemas using URL  
+[PLACEHOLDER]
 8) The newly created Schema is added and gets listed in the left side pane.  
 
-
-### Editing. Deleting & Renaming Schemas in an Application node of Process flow 
+### Editing & Deleting Schemas in an Application node of Process flow 
 
 (A) To `Edit Schema`, do the following steps:
      
-1) Go to Processflow [designer]() section and drag the app node for which you want to edit schema.    
-2) Now click on the app node, and under schema field click Manage Schema.    
+1) Go to Processflow [designer](/processflow/designer-processflow/) section and drag the app node for which you want to edit schema.    
+2) Follow the path - Node Configuration window -> General Tab -> Schema-> Manage Schema
 3) You will be redirected to the `Manage Schema and Action` pop-up.    
-4) In the `Manage Schema and Action` window, you will be able to edit any existing Schema by click on the Schema
-context menu and do the changes.    
-
-
-(C) To `Rename Schema`, do the following steps:    
-
-1) Go to Processflow [designer]() section and drag the app node for which you want to rename schema.    
-2) Now click on the app node, and under schema field click Manage Schema.    
-3) You will be redirected to the `Manage Schema and Action` pop-up.    
-4) In the `Manage Schema and Action` window, you will be able to rename any existing Schema by click on the Schema
-context menu and clicking on Rename Schema Option.    
-
+4) In the `Manage Schema and Action` window, you will be able to edit any existing Schema by clicking on the Schema
+context menu and do the changes.
+[PLACEHOLDER]    
+5) The `Schema Name` is uneditable, rest other fields are editable like Schema Description, Namespace &
+Namespace URL.
+  
 **NOTE: (a) Once a Process Flow has been saved in an Environment you will be
 unable to Rename the Schema, Delete the Schema.  
 (b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.  
@@ -97,14 +92,15 @@ unable to Rename the Schema, Delete the Schema.
 
 ### Adding Attribute to a Schema
 
-1) The Schema context menu has the option to - ADD Attribute to the schema.  
-2) Click on Add Attribute to add attribute to the schema. The Add Attribute form opens up. 
+1) The Schema context menu has the option to `ADD Attribute` to the schema.  
+2) Click `Add Attribute` to add attribute to the schema. The Add Attribute form opens up.
+[PLACEHOLDER] 
 The fields in the Attriburte Property Window are:   
 a. Attribute Name: It is a mandatory field, used for providing name to the attribute. 
    * The Attribute Name field will allow a `maximum of 100 characters`.  
    * In the Attribute Name field space and special characters will not be allowed.    
 b. Data Type: Select the datatype from the drop-down as per the requirement. This is also a mandatory field.    
- *String  
+ * String  
  * Boolean  
  * DateTime  
  * Number  
@@ -125,6 +121,7 @@ g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attrib
 **Only one Attribute can be set as `Primary Attribute` within a Schema.**  
 3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
 appears on the window stating the attribute is created successfully.
+[PLACEHOLDER]
 4) The newly created attribute gets added just below the Schema on the left side panel.    
 5) Click on the created attribute in the node structure, for Renaming and Deleting 
 the attribute.  
