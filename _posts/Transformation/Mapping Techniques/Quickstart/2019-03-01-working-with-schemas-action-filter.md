@@ -11,7 +11,7 @@ menus:
         identifier: transformationactionsschemas
 ---
 
-### Knowing Schema, Actions & Filters
+## Knowing Schema, Actions & Filters
 
 The user can view the schemas and the action present or can also add schema and add action for each 
 application. This section enables the user to view and add the Schema and its Actions.
@@ -23,7 +23,7 @@ application. This section enables the user to view and add the Schema and its Ac
 1.	The User needs to have a valid AEC account.
 2.	An application is needed to select for defining the Schemas and its Actions.
 
-## Adding Schemas in APPSeCONNECT Portal
+### Adding Schemas in APPSeCONNECT Portal
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
 2.	Go to APPS Page and [Choose any application](/configuring%20appseconnect/configurations/#process-of-choosing-app)
@@ -39,7 +39,7 @@ d.	Schema Namespace URL: Differentiates between two similar schemas using URL.
 ![addingschema3](/staticfiles/Transformation/media/addingschema3.png)
 6.	Click on the create button for creating the schema.
 
-## Importing schemas in APPSeCONNECT portal
+### Importing schemas in APPSeCONNECT portal
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
 2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)
@@ -69,11 +69,11 @@ In this case, the parent is items, therefore the Element should be items.
 ![importing-schema7](/staticfiles/Transformation/media/importing-schema7.png)
 10.	Click on the SAVE button individually for the saving each of the nodes.
 
-## Creating and Editing Schema Attributes
+### Creating and Editing Schema Attributes
 
 [Click here](/getting-started/#appseconnect-attributes) to know more about the Schemas and its attributes.
 
-**Steps to create Schema attributes in APPSeCONNECT Portal** 
+### Steps to create Schema attributes in APPSeCONNECT Portal.
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
 2.	Go to APPS Page and [Choose any application](/getting-started/#process-of-choosing-app)
