@@ -16,6 +16,7 @@ process. You have to Login to APPSeCONNECT- To View the `Connection` details pag
 
 |Modules|Details|
 |---|---|
+|[Searching Connections](/getting%20started/configurations-for-integration/#search-connection)|Search functionality enables the user to search the connections from the list of existing connection|
 |[Configuring Connector while Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|The Configure Connector button would be available only when you create a custom application or a technology application|
 |[Creating Connection & Executing the touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint)|To create a connection between applications, you have to come to this page & create the connection. You will also see the existing connection for a particular organization on this page|
 |[Copy Connection](/getting%20started/configurations-for-integration/#copy-connection)|This Feature enables the user to copy the connections that was previously created.|
@@ -25,11 +26,19 @@ process. You have to Login to APPSeCONNECT- To View the `Connection` details pag
 |[Configuring Environment](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration)|This section of the document deals with configuring environment both for OP & Cloud|
 |[Default Notification for Transactions](/getting%20started/configurations-for-integration/#default-notification-for-transactions)|With APPSeCONNECT, we provide daily transaction reports emailed to you by default, once you setup the connector and execute it on your profile|
 
+## Search Connection
+
+You can also filter your connection list through the SEARCH option. You can perform the SEARCH operation as per the following criteria.  
+	1) Search using Connection Name: You can search the connection using the connection name provided.  
+	2) Search using Application Name: You can search the connection as per the application name used in the connection.  
+	3) Search using Connection Status: You can filter your connections as per the status of the connection, Active/Inactive.  
+![connectionsearch](/staticfiles/root/media/connectionsearch.png)
+
 ## Configuring Connector while Creating Connection
 
 When working with organisational Applications - [Custom Applications](/configuring%20appseconnect/configurations/#a-create-custom-app) & [Technology Applications](/configuring%20appseconnect/configurations/#b-technology-app-creation), Connectors 
 are not pre-packaged. Hence, the users need to configure the connector first before creating the connection.
-
+  
 **Note: The `Configure Connector` button would be available only when you `create a custom application` or a `technology application`**
 
 **Steps to configure the connector for Organisational Applications**
@@ -124,8 +133,8 @@ b.	Copy Lookup Database - This enables to copy the [Lookup Mappings](/transforma
 ## Editing Touchpoint
 
 1. Editing feature enables the user to edit an exisiting touchpoint.
-2. Click on Edit button in the Conenction you want to edit and the following window appears
-![edit-connection-tp](../../staticfiles/connectors/media/application-connector/edit-connection-tp.png)
+2. Click on Edit button in the Connection you want to edit and the following window appears  
+![edit-connection-tp](/staticfiles/root/media/edit-connection-tp.png)    
 3. The Edit Connection window enables you to edit the following fields:
    * Connection Name: This is an editable field. 
    * Protocols for the selected app: This section is also editable. The user can change the protocols of the selected app.
