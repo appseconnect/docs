@@ -1,15 +1,30 @@
 ---
-title: "Configuring for Integration"
+title: "Configuring Connectors for Integration"
 toc: true
 tag: developers
 category: "Getting Started"
 menus: 
     gettingstarted:
-        title: "Configuring for Integration"
+        title: "Configuring Connectors for Integration"
         weight: 7
         icon: fa fa-wpexplorer
         identifier: configuringintegration
 ---
+This section gives the overall idea about configuring connection, 
+touchpoint creation, lookup addition, environment setup and execution of the sync 
+process. You have to Login to APPSeCONNECT- To View the `Connection` details page.
+
+|Modules|Details|
+|---|---|
+|[Configuring Connector while Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|The Configure Connector button would be available only when you create a custom application or a technology application|
+|[Creating Connection & Executing the touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint)|To create a connection between applications, you have to come to this page & create the connection. You will also see the existing connection for a particular organization on this page|
+|[Copy Connection](/getting%20started/configurations-for-integration/#copy-connection)|This Feature enables the user to copy the connections that was previously created.|
+|[Editing Touchpoint]()|This section of the document helps the user to implement the steps to edit touchpoints in portal.|
+|[Creating Organisation Touchpoint/ Workflow](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow)|This document helps the user to implement the steps to create organisation touchpoints in portal.|
+|[Choosing Touchpoint & Workflow](/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow)|Choosing Touchpoint feature enables the user to select touchpoint from a drop-down list.|
+|[Configuring Environment](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration)|This section of the document deals with configuring environment both for OP & Cloud|
+|[Default Notification for Transactions](/getting%20started/configurations-for-integration/#default-notification-for-transactions)|With APPSeCONNECT, we provide daily transaction reports emailed to you by default, once you setup the connector and execute it on your profile|
+
 ## Configuring Connector while Creating Connection
 
 When working with organisational Applications - [Custom Applications](/configuring%20appseconnect/configurations/#a-create-custom-app) & [Technology Applications](/configuring%20appseconnect/configurations/#b-technology-app-creation), Connectors 
@@ -106,6 +121,19 @@ b.	Copy Lookup Database - This enables to copy the [Lookup Mappings](/transforma
 
 **Note: The Copy Connection feature copies the [Attribute Mapping](/transformation/understanding-attribute-mapping/) too.** 
 
+## Editing Touchpoint
+
+1. Editing feature enables the user to edit an exisiting touchpoint.
+2. Click on Edit button in the Conenction you want to edit and the following window appears
+
+3. The Edit Connection window enables you to edit the following fields:
+   * Connection Name: This is an editable field. 
+   * Protocols for the selected app: This section is also editable. The user can change the protocols of the selected app.
+   * Cloud Hosting enabling or disabling: This section enables you to switch to cloud hosting and vice versa as required.
+   
+4. Following the above proces helps you to edit an existig touchpoint.
+
+After editing the connection, you need to deploy the connection to the environment for execution.
 
 ## Creating Organisation Touchpoint/ Workflow
 

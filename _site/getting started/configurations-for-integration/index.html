@@ -19,12 +19,12 @@
 
 
 
-<title>Configuring for Integration - APPSeCONNECT Product Docs</title>
+<title>Configuring Connectors for Integration - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Configuring Connector while Creating Connection">
+<meta name="description" content="This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync process. You have to Login to APPSeCONNECT- To View the Connection details page.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Configuring for Integration">
+<meta property="og:title" content="Configuring Connectors for Integration">
 
 
   <link rel="canonical" href="http://localhost:4000/getting%20started/configurations-for-integration/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Configuring Connector while Creating Connection">
+  <meta property="og:description" content="This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync process. You have to Login to APPSeCONNECT- To View the Connection details page.">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Configuring for Integration</li>
+      <li class="current">Configuring Connectors for Integration</li>
     
   
 </ol>-->
@@ -376,7 +376,7 @@
     
     
     <li class="menu-item-" data-url="/getting%20started/configurations-for-integration/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/getting%20started/configurations-for-integration/" onclick="selectTab('/getting%20started/configurations-for-integration/', event);" title="Go to Configuring for Integration">Configuring for Integration</a>
+        <a href="/getting%20started/configurations-for-integration/" onclick="selectTab('/getting%20started/configurations-for-integration/', event);" title="Go to Configuring Connectors for Integration">Configuring Connectors for Integration</a>
         
     </li>
     
@@ -2118,8 +2118,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Configuring for Integration">
-        <meta itemprop="description" content="Configuring Connector while Creating Connection">
+        <meta itemprop="headline" content="Configuring Connectors for Integration">
+        <meta itemprop="description" content="This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync process. You have to Login to APPSeCONNECT- To View the Connection details page.">
         <meta itemprop="datePublished" content="September 22, 2018">
         
 
@@ -2147,7 +2147,7 @@
                 
                 
                 
-                <li class="current">Configuring for Integration</li>
+                <li class="current">Configuring Connectors for Integration</li>
                 
                 
             </ol>
@@ -2157,7 +2157,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Configuring for Integration
+                <h1 class="page__title" itemprop="headline">Configuring Connectors for Integration
 </h1>
                 
                 
@@ -2188,7 +2188,7 @@
 
 
 
-  11 minute read
+  13 minute read
 </p>
                 
                 
@@ -2209,6 +2209,7 @@
       <li><a href="#steps-to-implement-copy-connection">Steps to Implement Copy Connection</a></li>
     </ul>
   </li>
+  <li><a href="#editing-touchpoint">Editing Touchpoint</a></li>
   <li><a href="#creating-organisation-touchpoint-workflow">Creating Organisation Touchpoint/ Workflow</a>
     <ul>
       <li><a href="#prerequisites-for-creating-touchpoint-workflow">Prerequisites for Creating Touchpoint/ Workflow</a></li>
@@ -2232,7 +2233,54 @@
                     </nav>
                 </aside>
                 
-                <h2 id="configuring-connector-while-creating-connection">Configuring Connector while Creating Connection</h2>
+                <p>This section gives the overall idea about configuring connection, 
+touchpoint creation, lookup addition, environment setup and execution of the sync 
+process. You have to Login to APPSeCONNECT- To View the <code class="highlighter-rouge">Connection</code> details page.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modules</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Configuring Connector while Creating Connection</a></td>
+      <td>The Configure Connector button would be available only when you create a custom application or a technology application</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">Creating Connection &amp; Executing the touchpoint</a></td>
+      <td>To create a connection between applications, you have to come to this page &amp; create the connection. You will also see the existing connection for a particular organization on this page</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#copy-connection">Copy Connection</a></td>
+      <td>This Feature enables the user to copy the connections that was previously created.</td>
+    </tr>
+    <tr>
+      <td><a href="">Editing Touchpoint</a></td>
+      <td>This section of the document helps the user to implement the steps to edit touchpoints in portal.</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow">Creating Organisation Touchpoint/ Workflow</a></td>
+      <td>This document helps the user to implement the steps to create organisation touchpoints in portal.</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow">Choosing Touchpoint &amp; Workflow</a></td>
+      <td>Choosing Touchpoint feature enables the user to select touchpoint from a drop-down list.</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration">Configuring Environment</a></td>
+      <td>This section of the document deals with configuring environment both for OP &amp; Cloud</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#default-notification-for-transactions">Default Notification for Transactions</a></td>
+      <td>With APPSeCONNECT, we provide daily transaction reports emailed to you by default, once you setup the connector and execute it on your profile</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="configuring-connector-while-creating-connection">Configuring Connector while Creating Connection</h2>
 
 <p>When working with organisational Applications - <a href="/configuring%20appseconnect/configurations/#a-create-custom-app">Custom Applications</a> &amp; <a href="/configuring%20appseconnect/configurations/#b-technology-app-creation">Technology Applications</a>, Connectors 
 are not pre-packaged. Hence, the users need to configure the connector first before creating the connection.</p>
@@ -2332,6 +2380,25 @@ b.	Copy Lookup Database - This enables to copy the <a href="/transformation/usin
 </ol>
 
 <p><strong>Note: The Copy Connection feature copies the <a href="/transformation/understanding-attribute-mapping/">Attribute Mapping</a> too.</strong></p>
+
+<h2 id="editing-touchpoint">Editing Touchpoint</h2>
+
+<ol>
+  <li>Editing feature enables the user to edit an exisiting touchpoint.</li>
+  <li>
+    <p>Click on Edit button in the Conenction you want to edit and the following window appears</p>
+  </li>
+  <li>The Edit Connection window enables you to edit the following fields:
+    <ul>
+      <li>Connection Name: This is an editable field.</li>
+      <li>Protocols for the selected app: This section is also editable. The user can change the protocols of the selected app.</li>
+      <li>Cloud Hosting enabling or disabling: This section enables you to switch to cloud hosting and vice versa as required.</li>
+    </ul>
+  </li>
+  <li>Following the above proces helps you to edit an existig touchpoint.</li>
+</ol>
+
+<p>After editing the connection, you need to deploy the connection to the environment for execution.</p>
 
 <h2 id="creating-organisation-touchpoint-workflow">Creating Organisation Touchpoint/ Workflow</h2>
 
@@ -2589,7 +2656,7 @@ notification on the amount of transactions being performed through APPSeCONNECT.
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Configuring+for+Integration%20https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations-for-integration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Configuring+Connectors+for+Integration%20https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations-for-integration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations-for-integration%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

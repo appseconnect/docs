@@ -530,8 +530,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Configuring for Integration",
-      excerpt: "Configuring Connector while Creating Connection When working with organisational Applications - Custom Applications &amp; Technology Applications, Connectors are not pre-packaged....",
+      title: "Configuring Connectors for Integration",
+      excerpt: "This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync...",
       categories: ["Getting Started"],
       tags: ["developers"],
       id: 57
@@ -3002,9 +3002,9 @@ var store = [
     
       
       {
-        "title": "Configuring for Integration",
+        "title": "Configuring Connectors for Integration",
         "url": "/getting%20started/configurations-for-integration/",
-        "excerpt": "Configuring Connector while Creating Connection When working with organisational Applications - Custom Applications &amp; Technology Applications, Connectors are not pre-packaged....",
+        "excerpt": "This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
