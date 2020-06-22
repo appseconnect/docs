@@ -125,12 +125,11 @@ b.	Copy Lookup Database - This enables to copy the [Lookup Mappings](/transforma
 
 1. Editing feature enables the user to edit an exisiting touchpoint.
 2. Click on Edit button in the Conenction you want to edit and the following window appears
-
+![edit-connection-tp](../../staticfiles/connectors/media/application-connector/edit-connection-tp.png)
 3. The Edit Connection window enables you to edit the following fields:
    * Connection Name: This is an editable field. 
    * Protocols for the selected app: This section is also editable. The user can change the protocols of the selected app.
-   * Cloud Hosting enabling or disabling: This section enables you to switch to cloud hosting and vice versa as required.
-   
+   * Cloud Hosting enabling or disabling: This section enables you to switch to cloud hosting and vice versa as required.    
 4. Following the above proces helps you to edit an existig touchpoint.
 
 After editing the connection, you need to deploy the connection to the environment for execution.
