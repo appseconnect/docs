@@ -2,10 +2,10 @@
 title: "Configuring APPSeCONNECT"
 toc: true
 tag: developers
-category: "Configuring APPSeCONNECT"
+category: "Working with APPS"
 menus: 
     gettingstarted:
-        title: "Configuring APPSeCONNECT"
+        title: "Working with APPS"
         weight: 6
         icon: fa fa-wpexplorer
         identifier: configuringaec
@@ -14,11 +14,17 @@ menus:
 This section gives the overall idea about choosing application, configuring connection, environment setup and execution of the sync process. Step by Step direction is given below:
 Login to APPSeCONNECT - View [Home Page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) to get the details.
 
-|Modules|Details|
+|Sections|Details|
 |---|---|
-|[Choosing Applications/ Creating Applications](/configuring%20appseconnect/configurations/#process-of-choosing-app) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
-|[Configuring Schema and Entity](/configuring%20appseconnect/configurations/#appseconnect-schemaentity)|Every application has its schema and entity and for integrating with applications|
-|[Configuring Attributes](/configuring%20appseconnect/configurations/#appseconnect-attributes)|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
+|[Choosing Applications](/configuring%20appseconnect/configurations/#process-of-choosing-app) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
+|[Creating Applications](/configuring%20appseconnect/configurations/#create-application) | You can successfully create custom or technology based applications as per requirement. Follow the steps given here tp create custom or a technology app.|
+|[Understanding Schema and Entity](/configuring%20appseconnect/configurations/#appseconnect-schemaentity)|Every application has its schema and entity and for integrating with applications|
+|[Understanding Attributes](/configuring%20appseconnect/configurations/#appseconnect-attributes)|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
+|[Working with Schemas, Attributes & Actions](/transformation/working-with-schemas-action-filter/)|Every Entity is transformed after configuring its proper Schema, attributes and its actions. Follow the steps if you need to create Schema, its attributes and actions.|
+|[Providing Cloud Credentials](/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration)|Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.|
+|[Adapters](/configuring%20appseconnect/configurations/#adapter)| On expanding each applications, you get to see the button adapters that informs you about the latest adapter available for your selected application. You will also get to know about the process to add adapter on your organisation.|
+|[Functions](/configuring%20appseconnect/configurations/#functions)| This section will help with the functions that are available for your chosen application. You can also create more Cloud Appresource functions.|
+|[Protocols](/configuring%20appseconnect/configurations/#protocols)| This section will help to work with protocols for the technology and custom created applications with in an organisation.|
 |[Configuring Connector & Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|Before proceeding with the integration process, users need to configure the connector for creating the connection. |
 |[Choosing Touchpoint/Workflow](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow)|After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc|
 |[Transformation & Mapping](/transformation/overview/)|After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.|
@@ -40,6 +46,7 @@ User can also get an option for creating a Custom application or technology app.
 ![AppComponents](/staticfiles/root/media/AppComponents.png)
 5. For [Cloud Supported Applications](/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration) the `Credential button` appears along with the other functionality that are attached.
 ![Cloud-AppComponents](/staticfiles/root/media/Cloud-AppComponents.png)
+6. Once the applications are successfully added, you can filter the applications by its name using the `SEARCH` functionality.
 
 [Click](/connectors/Overview-of-Connectors/)to view the configuration details of the Connectors.
 
@@ -123,7 +130,7 @@ View [Technology Apps](/connectors/Overview-of-technology-connectors/) section f
 **Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FTP. 
 {: .notice--info}
 
-### APPSeCONNECT Schema/Entity
+### Understanding Schema/Entity
  
  An entity is defined as an object that has a real-world existence. An entity can be a single thing, person, place, or object. For an e-commerce website, Customer, Order, Invoice etc are entities.
 
@@ -137,7 +144,7 @@ Schema Image is given below:
 
 ![Schema](/staticfiles/root/media/Schema.png)
 
-### APPSeCONNECT Attributes
+### Understanding Schema Attributes
 
 In APPSeCONNECT, an attribute is a property or characteristic of a schema. If `customer` is a schema, 
 then `customer name, email, address` etc. are defined as attributes.  Before defining a schema you need to have a 
@@ -165,14 +172,14 @@ parent attribute `address`. Thus `address becomes a ComplexObjectCollection`.
 
 ![complexobject-collection-attribute](/staticfiles/root/media/complexobject-collection-attribute.png)
 
-### Custom Attributes
+### Understanding Custom Attributes
 
 There might be business requirements to create Custom Fields during the creation of 
 mapping where the base mapping does not provide an attribute that you are looking for. 
 APPSeCONNECT allows you with a feature where you can add your own 
 custom attribute and map that with the data coming from the attribute at the other end.
 
-### Actions
+### Understanding Actions
 
 Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter. 
 
@@ -183,9 +190,9 @@ Now for getting data we can define an action name called `GET`. When you define 
 * Action Description: This is the Description of the action. At the time of touchpoint creation actions are selected based on this description.
 * Action Filter & Resync Filter Details
 
-### Adding Schemas and Actions of an Application
-The user can view the [schemas and the action](/transformation/working-with-schemas-action-filter/) present or can also add schema and add action for each application. 
-This section enables the user to view and add the Schema and its Actions.
+### Understanding Schemas and Actions of an Application
+The user can view the schemas and the action present or can also add schema and add action for each application. 
+This section enables the user to view and add the Schema and its Actions. [Click Here](/transformation/working-with-schemas-action-filter/) to know more about the process to add Schemas, attributes & Actions.
 
 **Prerequisites:**
 1. The User needs to have a valid AEC account.
@@ -212,7 +219,7 @@ There are few responsibilities of an adapter which are defined as under:
 * Create Push and Pull method inside the adapter which can send and receive data to and from the application.
 * Add additional business behavior with respect to the corresponding app.
 
-The [Adapter](/connectors/Version-Extraction-For-Adapter-Upload/) is loaded dynamically by the [Agent](/deployment/overview/) and calls some specific methods using a fixed contract defined as an interface. 
+The Adapter is loaded dynamically by the [Agent](/deployment/overview/) and calls some specific methods using a fixed contract defined as an interface. [Click Here](/connectors/Version-Extraction-For-Adapter-Upload/) to know about the steps to Add adapter for an application in an organisation.
 
 ### Extension
 Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.
@@ -224,8 +231,61 @@ The APPSeCONNECT expression methods are special transformation block used during
 * Cloud App Resource
 
 Here you will get the details of [Appresource Functions](/transformation/using-library-methods/) of APPSeCONNECT
+
 ### Delete
-This button enables to delete selected app from the list.
+Clicking on the `Delete` button will remove the application from your application list. However, can anytime choose the deleted application from the `Choose App` list.
+
+_**Note:** You will be restricted from deleting the application that is already in use._
+
+### Protocol
+
+This section is only available for the custom application and technology application. Follow the instructions below to create Protocol Methods for your application.
+
+**Prerequisites:**
+
+- You need to have valid credentials to the portal.
+- You need to create a [custom app](/configuring%20appseconnect/configurations/#a-create-custom-app) or a [Technology app](/configuring%20appseconnect/configurations/#b-technology-app-creation) to access the protocol section.
+
+**Steps to work with Protocol Methods:**
+
+Protocol Add screen is for creating or updating the existing protocol. An user will be able to add more protocols to the existing app such that the same can be used for implementer's connections. So, to Add or Update protocol you must follow the steps written below:
+
+1. Navigate to the app section and expand the node of the created custom or tech app to view the `Protocol` button.
+
+![Protocoladd1](\staticfiles\root\media\protocoladd1.png)
+
+2. You can view the window that lists the prepackaged protocols if any. Click on the **Add Protocol** button.
+
+![Protocoladd2](\staticfiles\root\media\protocoladd2.png)
+
+3. The Protocol add window opens. You will get the following fields in the window. Click on the SAVE button after providing the inputs.
+    - Protocol Name (Mandatory Field).
+    - Checkbox for parallel execution
+    - Checkbox for default execution
+
+![Protocoladd3](\staticfiles\root\media\protocoladd3.png)
+
+4. You can successfully view the created protocol in your window. Expand the node and click on the `Add Method` button.
+
+![Protocoladd4](\staticfiles\root\media\protocoladd4.png)
+
+5. On the method window, you to provide the name of the protocol `method` and the token from the drop down. Once selected click on the SAVE button.
+
+![Protocoladd5](\staticfiles\root\media\protocoladd5.png)
+
+Following the above process, you can successfully create a protocol for an Technology or a Custom app.
+
+**Note:** 
+
+- Each protocol can have protocol methods under them. You can create more than one method for a protocol. 
+- Multiple methods can be added to a protocol, each of which allows XSLT Templates. 
+- Protocol template can be defined. 
+- Protocol delete will not work if the same protocol is used in a touchpoint.
+
+
+
+
+
 
 **ProTip:** Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won't process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time. 
 {: .notice--info}
