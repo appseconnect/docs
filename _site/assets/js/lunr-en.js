@@ -494,9 +494,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Configuring APPSeCONNECT",
+      title: "Working with Apps",
       excerpt: "This section gives the overall idea about choosing application, configuring connection, environment setup and execution of the sync process. Step...",
-      categories: ["Working with APPS"],
+      categories: ["Getting Started"],
       tags: ["developers"],
       id: 53
     });
@@ -2958,8 +2958,8 @@ var store = [
     
       
       {
-        "title": "Configuring APPSeCONNECT",
-        "url": "/working%20with%20apps/configurations/",
+        "title": "Working with Apps",
+        "url": "/getting%20started/configurations/",
         "excerpt": "This section gives the overall idea about choosing application, configuring connection, environment setup and execution of the sync process. Step...",
         "teaser":
           
