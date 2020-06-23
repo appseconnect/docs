@@ -2202,6 +2202,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#process-of-choosing-app">Process of Choosing App</a></li>
+  <li><a href="#searching-applications">Searching Applications:</a></li>
   <li><a href="#create-application">Create Application</a>
     <ul>
       <li><a href="#a-create-custom-app">(a) Create Custom App</a></li>
@@ -2214,8 +2215,8 @@
       <li><a href="#adapter">Adapter</a></li>
       <li><a href="#extension">Extension</a></li>
       <li><a href="#functions">Functions</a></li>
-      <li><a href="#delete">Delete</a></li>
       <li><a href="#protocol">Protocol</a></li>
+      <li><a href="#delete">Delete</a></li>
     </ul>
   </li>
 </ul>
@@ -2234,19 +2235,27 @@ Login to APPSeCONNECT - View <a href="https://portal.appseconnect.com/Account/Lo
   </thead>
   <tbody>
     <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#process-of-choosing-app">Choosing Applications</a></td>
+      <td><a href="/getting%20started/configurations/#process-of-choosing-app">Choosing Applications</a></td>
       <td>User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process</td>
     </tr>
     <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#create-application">Creating Applications</a></td>
-      <td>You can successfully create custom or technology based applications as per requirement. Follow the steps given here tp create custom or a technology app.</td>
+      <td><a href="/getting%20started/configurations/#searching-applications">Searching Application</a></td>
+      <td>You can filter all your added applications by searching application. Visit the section to know more about searching application.</td>
     </tr>
     <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#appseconnect-schemaentity">Understanding Schema and Entity</a></td>
+      <td><a href="/getting%20started/configurations/#create-application">Creating Applications</a></td>
+      <td>You can successfully create custom or technology based applications as per requirement. Follow the steps given here tp create custom or a technology app. For Custom and Technology application, you can delete the application by selecting the delete option from the VIEW drop-down.</td>
+    </tr>
+    <tr>
+      <td><a href="/connectors/OLEDB-Credentials/">Providing Cloud Credentials</a></td>
+      <td>Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations/#understanding-schemaentity">Understanding Schema and Entity</a></td>
       <td>Every application has its schema and entity and for integrating with applications</td>
     </tr>
     <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#appseconnect-attributes">Understanding Attributes</a></td>
+      <td><a href="/getting%20started/configurations/#understanding-custom-attributes">Understanding Attributes</a></td>
       <td>Every schema has its attributes that are needed to be mapped with the destination application for the sync process</td>
     </tr>
     <tr>
@@ -2254,40 +2263,20 @@ Login to APPSeCONNECT - View <a href="https://portal.appseconnect.com/Account/Lo
       <td>Every Entity is transformed after configuring its proper Schema, attributes and its actions. Follow the steps if you need to create Schema, its attributes and actions.</td>
     </tr>
     <tr>
-      <td><a href="/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration">Providing Cloud Credentials</a></td>
-      <td>Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.</td>
-    </tr>
-    <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#adapter">Adapters</a></td>
+      <td><a href="/connectors/Version-Extraction-For-Adapter-Upload/">Adapters</a></td>
       <td>On expanding each applications, you get to see the button adapters that informs you about the latest adapter available for your selected application. You will also get to know about the process to add adapter on your organisation.</td>
     </tr>
     <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#functions">Functions</a></td>
+      <td><a href="/transformation/using-library-methods/">Functions</a></td>
       <td>This section will help with the functions that are available for your chosen application. You can also create more Cloud Appresource functions.</td>
     </tr>
     <tr>
-      <td><a href="/configuring%20appseconnect/configurations/#protocols">Protocols</a></td>
+      <td><a href="/getting%20started/configurations/#protocol">Protocols</a></td>
       <td>This section will help to work with protocols for the technology and custom created applications with in an organisation.</td>
     </tr>
     <tr>
-      <td><a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Configuring Connector &amp; Creating Connection</a></td>
-      <td>Before proceeding with the integration process, users need to configure the connector for creating the connection.</td>
-    </tr>
-    <tr>
-      <td><a href="/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow">Choosing Touchpoint/Workflow</a></td>
-      <td>After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc</td>
-    </tr>
-    <tr>
-      <td><a href="/transformation/overview/">Transformation &amp; Mapping</a></td>
-      <td>After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.</td>
-    </tr>
-    <tr>
-      <td><a href="/workflow/deploying-and-executing/">Deploying connection/ Workflow</a></td>
-      <td>After the configurations are done, the touchpoint/Workflow needs to be deployed to the environment in which it is to be integrated</td>
-    </tr>
-    <tr>
-      <td><a href="/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration">Environment Configuration &amp; setup</a></td>
-      <td>Users can setup the environment for the completion of the integration process</td>
+      <td><a href="/getting%20started/configurations/#delete">Delete</a></td>
+      <td>You can easily delete your selected applications by clicking on the delete button. Visit the section to know more about the delete functionality.</td>
     </tr>
   </tbody>
 </table>
@@ -2308,12 +2297,22 @@ User can also get an option for creating a Custom application or technology app.
 <img src="/staticfiles/root/media/AppComponents.png" alt="AppComponents" /></li>
   <li>For <a href="/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration">Cloud Supported Applications</a> the <code class="highlighter-rouge">Credential button</code> appears along with the other functionality that are attached.
 <img src="/staticfiles/root/media/Cloud-AppComponents.png" alt="Cloud-AppComponents" /></li>
-  <li>Once the applications are successfully added, you can filter the applications by its name using the <code class="highlighter-rouge">SEARCH</code> functionality.</li>
 </ol>
 
 <p><a href="/connectors/Overview-of-Connectors/">Click</a>to view the configuration details of the Connectors.</p>
 
 <p>Here you can view the details of the respective buttons <a href="/configuring%20appseconnect/configurations/#appseconnect-schemaentity">Schema</a>,<a href="/configuring%20appseconnect/configurations/#adapter">Adapters</a>,<a href="/configuring%20appseconnect/configurations/#functions">Function</a> &amp; <a href="/configuring%20appseconnect/configurations/#delete">Delete</a>.</p>
+
+<h2 id="searching-applications">Searching Applications:</h2>
+
+<p>You can eaily filter all your added applications by the SEARCH functionality. You can filter your applications as per the process given below:</p>
+
+<ul>
+  <li>Search by Name: You can search your applications by typing its name on the search box.</li>
+  <li>Search by Category: You can also search your application by selecting the category of your application. For Eg: Marketing, ERP, POS, Human Resource etc.</li>
+</ul>
+
+<p><img src="\staticfiles\root\media\appsearch.png" alt="Appsearch" /></p>
 
 <h2 id="create-application">Create Application</h2>
 
@@ -2471,7 +2470,9 @@ Now for getting data we can define an action name called <code class="highlighte
 
 <h3 id="understanding-schemas-and-actions-of-an-application">Understanding Schemas and Actions of an Application</h3>
 <p>The user can view the schemas and the action present or can also add schema and add action for each application. 
-This section enables the user to view and add the Schema and its Actions. <a href="/transformation/working-with-schemas-action-filter/">Click Here</a> to know more about the process to add Schemas, attributes &amp; Actions.</p>
+This section enables the user to view and add the Schema and its Actions.</p>
+
+<p><em><strong><a href="/transformation/working-with-schemas-action-filter/">Click</a> to know more about the process to add Schemas, attributes &amp; Actions.</strong></em></p>
 
 <p><strong>Prerequisites:</strong></p>
 <ol>
@@ -2494,8 +2495,9 @@ This section enables the user to view and add the Schema and its Actions. <a hre
 <p class="notice--info"><strong>Protip:</strong> Default Schemas would only be present for the Pre-packaged APPS.</p>
 
 <h3 id="adapter">Adapter</h3>
-<p>Adapters helps in integration with other applications easy. Adapter represents an interface between an APP and APPSeCONNECT. An adapter is a component which connects your app with APPSeCONNECT. 
-There are few responsibilities of an adapter which are defined as under:</p>
+<p>Adapters helps in integration with other applications easy. Adapter represents an interface between an APP and APPSeCONNECT. An adapter is a component which connects your app with APPSeCONNECT. <a href="/connectors/Version-Extraction-For-Adapter-Upload/">Click</a> to know about the steps to Add adapter for an application in an organisation.</p>
+
+<p>There are few responsibilities of an adapter which are defined as under:</p>
 
 <ul>
   <li>Create a credentials view which allows connecting to the respective APP where you want to connect.</li>
@@ -2503,7 +2505,7 @@ There are few responsibilities of an adapter which are defined as under:</p>
   <li>Add additional business behavior with respect to the corresponding app.</li>
 </ul>
 
-<p>The Adapter is loaded dynamically by the <a href="/deployment/overview/">Agent</a> and calls some specific methods using a fixed contract defined as an interface. <a href="/connectors/Version-Extraction-For-Adapter-Upload/">Click Here</a> to know about the steps to Add adapter for an application in an organisation.</p>
+<p>The Adapter is loaded dynamically by the <a href="/deployment/overview/">Agent</a> and calls some specific methods using a fixed contract defined as an interface.</p>
 
 <h3 id="extension">Extension</h3>
 <p>Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.</p>
@@ -2516,12 +2518,9 @@ There are few responsibilities of an adapter which are defined as under:</p>
   <li>Cloud App Resource</li>
 </ul>
 
+<p><img src="\staticfiles\root\media\appfunctions.png" alt="Appfunctions" /></p>
+
 <p>Here you will get the details of <a href="/transformation/using-library-methods/">Appresource Functions</a> of APPSeCONNECT</p>
-
-<h3 id="delete">Delete</h3>
-<p>Clicking on the <code class="highlighter-rouge">Delete</code> button will remove the application from your application list. However, can anytime choose the deleted application from the <code class="highlighter-rouge">Choose App</code> list.</p>
-
-<p><em><strong>Note:</strong> You will be restricted from deleting the application that is already in use.</em></p>
 
 <h3 id="protocol">Protocol</h3>
 
@@ -2584,6 +2583,11 @@ There are few responsibilities of an adapter which are defined as under:</p>
   <li>Protocol template can be defined.</li>
   <li>Protocol delete will not work if the same protocol is used in a touchpoint.</li>
 </ul>
+
+<h3 id="delete">Delete</h3>
+<p>Clicking on the <code class="highlighter-rouge">Delete</code> button will remove the application from your application list. However, can anytime choose the deleted application from the <code class="highlighter-rouge">Choose App</code> list. Also for custom and technology application, you can delete the applications for the drop-down availble beside the <code class="highlighter-rouge">VIEW</code> button.</p>
+
+<p><em><strong>Note:</strong> You will be restricted from deleting the any application that is already in use.</em></p>
 
 <p class="notice--info"><strong>ProTip:</strong> Please choose the category correctly because depending on your choice, you might be allowed to add Connectors. This portal do not support connectors between Apps in the same group (As that won’t process any business requirement). For instance, migration jobs from SAP B1 to SAP ECC will not be supported at this time.</p>
 

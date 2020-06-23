@@ -1116,7 +1116,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Adding Credentials",
-      excerpt: "How to add credential for On-premise integration Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
+      excerpt: "How to add credentials for Cloud Integration: Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
       categories: ["Connectors"],
       tags: ["developers"],
       id: 122
@@ -3719,7 +3719,7 @@ var store = [
       {
         "title": "Adding Credentials",
         "url": "/connectors/OLEDB-Credentials/",
-        "excerpt": "How to add credential for On-premise integration Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
+        "excerpt": "How to add credentials for Cloud Integration: Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

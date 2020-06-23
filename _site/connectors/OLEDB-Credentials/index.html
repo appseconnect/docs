@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="How to add credential for On-premise integration">
+<meta name="description" content="How to add credentials for Cloud Integration:">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="How to add credential for On-premise integration">
+  <meta property="og:description" content="How to add credentials for Cloud Integration:">
 
 
 
@@ -2119,7 +2119,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Adding Credentials">
-        <meta itemprop="description" content="How to add credential for On-premise integration">
+        <meta itemprop="description" content="How to add credentials for Cloud Integration:">
         <meta itemprop="datePublished" content="December 11, 2018">
         
 
@@ -2201,13 +2201,54 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
+  <li><a href="#how-to-add-credentials-for-cloud-integration">How to add credentials for Cloud Integration:</a></li>
   <li><a href="#how-to-add-credential-for-on-premise-integration">How to add credential for On-premise integration</a></li>
-  <li><a href="#how-to-add-credentials-for-cloud-integration">How to add credentials for Cloud Integration</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <h2 id="how-to-add-credential-for-on-premise-integration">How to add credential for On-premise integration</h2>
+                <h2 id="how-to-add-credentials-for-cloud-integration">How to add credentials for Cloud Integration:</h2>
+
+<p>Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate 
+and adapt with the AEC Portal. This Document provides you the detailed process of validating a 
+OLEDB database application in the APPSeCONNECT Cloud Portal.</p>
+
+<ol>
+  <li>Go to the APP module of the AEC Portal. Click on the button beside the OLEDB Application name
+ which you have created.
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud.png" alt="Oledb-Cloud" /></li>
+  <li>Click on the credential Button.</li>
+  <li>The Credential Page opens up. Click on the button to expand the node and then Click <code class="highlighter-rouge">ADD NEW CREDENTIAL</code>.
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png" alt="Oledb-Cloud-Credential" /></li>
+</ol>
+
+<p><strong>Note:</strong> If you don’t have  a cloud environment created on your organisation, You will be getting this message <strong><code class="highlighter-rouge">Please create an cloud environment to Grant the credentials</code></strong> on clicking the <strong>Add new Credential</strong> button. To know more about creating Cloud Environment, 
+<a href="/deployment/Environment-Management/#adding-cloud-environment">Click Here</a></p>
+
+<ol>
+  <li>Enter the Credential Name, Data Provider and the Connection String. 
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png" alt="Oledb-Cloud-Credential-Input" /></li>
+  <li>Credential string is needed to be provided in this format always. 
+For instance: Provider=SQL<strong>**;Password=abcd</strong><strong>;Persist Security Info=True;User ID=salogin;Initial Catalog=jim;Data Source=SQL-SRV1</strong>***
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input2.png" alt="Oledb-Cloud-Credential-Input2" /></li>
+</ol>
+
+<p>Detailed description of the credential string is given below:</p>
+
+<ul>
+  <li>Provider - This is your database server provider.</li>
+  <li>Password - The password is of the database server</li>
+  <li>Persists Security Info - This is the authentication info displayed on enabling the password for saving.</li>
+  <li>UserID - The Username or the UserID for the database server.</li>
+  <li>Initial Catalog - It is the database name on the selected server.</li>
+  <li>DataSource - This is the name of the Database Server.</li>
+</ul>
+
+<p>Input all the details &amp; Click SAVE.</p>
+
+<p><strong>Note:</strong> Data Provider is the Database Service Provider.</p>
+
+<h2 id="how-to-add-credential-for-on-premise-integration">How to add credential for On-premise integration</h2>
 
 <p>Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating a OLEDB database application in the APPSeCONNECT OP Agent.</p>
 
@@ -2249,46 +2290,6 @@ Click on Validate and Save.  <br />
 <p class="notice--info"><strong>Protip:</strong> It is mandatory to apply the allow saving password checkbox, else it will not allow login to the database which will cause failure while 
 Testing the Connection and Validation</p>
 
-<h2 id="how-to-add-credentials-for-cloud-integration">How to add credentials for Cloud Integration</h2>
-
-<p>Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate 
-and adapt with the AEC Portal. This Document provides you the detailed process of validating a 
-OLEDB database application in the APPSeCONNECT Cloud Portal.</p>
-
-<ol>
-  <li>Go to the APP module of the AEC Portal. Click on the button beside the OLEDB Application name
- which you have created.
-<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud.png" alt="Oledb-Cloud" /></li>
-  <li>Click on the credential Button.</li>
-  <li>The Credential Page opens up. Click on the button to expand the node and then Click <code class="highlighter-rouge">ADD NEW CREDENTIAL</code>.
-<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png" alt="Oledb-Cloud-Credential" /></li>
-</ol>
-
-<p><strong>Note:</strong> If you don’t have  a cloud environment created on your organisation, You will be getting this message <strong><code class="highlighter-rouge">Please create an cloud environment to Grant the credentials</code></strong> on clicking the <strong>Add new Credential</strong> button. To know more about creating Cloud Environment, 
-<a href="/deployment/Environment-Management/#adding-cloud-environment">Click Here</a></p>
-
-<ol>
-  <li>Enter the Credential Name, Data Provider and the Connection String. 
-<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png" alt="Oledb-Cloud-Credential-Input" /></li>
-  <li>Credential string is needed to be provided in this format always. 
-For instance: Provider=SQL<strong>**;Password=abcd</strong><strong>;Persist Security Info=True;User ID=salogin;Initial Catalog=jim;Data Source=SQL-SRV1</strong>***
-<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input2.png" alt="Oledb-Cloud-Credential-Input2" /></li>
-</ol>
-
-<p>Detailed description of the credential string is given below:</p>
-
-<ul>
-  <li>Provider - This is your database server provider.</li>
-  <li>Password - The password is of the database server</li>
-  <li>Persists Security Info - This is the authentication info displayed on enabling the password for saving.</li>
-  <li>UserID - The Username or the UserID for the database server.</li>
-  <li>Initial Catalog - It is the database name on the selected server.</li>
-  <li>DataSource - This is the name of the Database Server.</li>
-</ul>
-
-<p>Input all the details &amp; Click SAVE.</p>
-
-<p><strong>Note:</strong> Data Provider is the Database Service Provider.</p>
 
                 
             </section>
