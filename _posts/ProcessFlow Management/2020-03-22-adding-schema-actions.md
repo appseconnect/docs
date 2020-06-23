@@ -11,7 +11,7 @@ menus:
         identifier: schemaactionprocessflow
 ---
 
-The user can view the schemas and the action present in an app and can also add schema and add action for application node used in processflow. 
+The user can view the schemasss and the action present in an app and can also add schema and add action for application node used in processflow. 
 This section enables the user to view, add the Schema, Attributes and the Actions of an application in the Process Flow and managing the same
 within a process flow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
@@ -33,7 +33,7 @@ To view the listing of Schemas and Attribute,  navigate to the following section
 (c) The Node Configuration window opens. Go to General tab and Click `Manage Schema`.   
 (d) A window opens up and here you can view the listing of all the Schema and Attribute(s) of the Application 
 will be displayed in the Tree view on the left pane. 
-[PLACEHOLDER]
+![pf-schema-listingview](/staticfiles/processflow/media/pf-schema-listingview.png)
 * The Schemas are arranged in a same level hierarchy whereas the attributes and actions associated with the schema is arranged in the second level 
 hierarchy.
 * Newly created attribute is arranged under Attribute node.
@@ -63,13 +63,13 @@ Managementfrom the processflow node configuration level.
 the list of schema. And if` No schema` is available for the given application node, click `Manage Schema` option.  
 5) The following window appears with message on display for the user to `Add Schema` & `Import Schema`  
 6) Click on the option **Add Schema** and the add schema window opens up  
-[PLACEHOLDER]
+![pf-addschema1](/staticfiles/processflow/media/pf-addschema1.png)
 7) Enter the details of adding Schema and Click `Save` button 
  a. Schema Name: This is a mandatory field and it needs to be provided with the schema name    
  b. Schema Description: The description for the schema is needed to be given here   
  c. Schema Namespace: Differentiates between two similar schemas   
  d. Schema Namespace URL: Differentiates between two similar schemas using URL  
-[PLACEHOLDER]
+ ![pf-addschema2](/staticfiles/processflow/media/pf-addschema2.png)
 8) The newly created Schema is added and gets listed in the left side pane.  
 
 ### Editing & Deleting Schemas in an Application node of Process flow 

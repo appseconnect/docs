@@ -20,7 +20,7 @@ process. You have to Login to APPSeCONNECT- To View the `Connection` details pag
 |[Configuring Connector while Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|The Configure Connector button would be available only when you create a custom application or a technology application.Before proceeding with the integration process, users need to configure the connector for creating the connection.|
 |[Creating Connection & Executing the touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint)|To create a connection between applications, you have to come to this page & create the connection. You will also see the existing connection for a particular organization on this page|
 |[Copy Connection](/getting%20started/configurations-for-integration/#copy-connection)|This Feature enables the user to copy the connections that was previously created.|
-|[Editing Touchpoint](/getting%20started/configurations-for-integration/#editing-touchpoint)|This section of the document helps the user to implement the steps to edit touchpoints in portal.|
+|[Editing Connection](/getting%20started/configurations-for-integration/#editing-touchpoint)|This section of the document helps the user to implement the steps to edit touchpoints in portal.|
 |[Creating Organisation Touchpoint/ Workflow](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow)|This document helps the user to implement the steps to create organisation touchpoints in portal.|
 |[Choosing Touchpoint/Workflow](/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow)|After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc.|
 |[Lookups](/transformation/using-lookups-for-value-exchange/)|Lookup Mapping is an integral part of data synchronization between two independent applications|
@@ -118,7 +118,7 @@ This document helps the users to understand and implement the `Copy Connection` 
 ### Steps to Implement Copy Connection 
 
 1.	Login to the APPSeCONNECT Portal and Navigate to the Connection Page.
-2.	[Create a connection](), if no connection is created. 
+2.	[Create a connection](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint), if no connection is created. 
 3.	On the portal, click on the Drop-Down Button present on the Right Hand, Top-Side Corner of the screen, and select the 
     `Copy Connection` option.
  ![copy-connection1](/staticfiles/root/media/copy-connection1.png)
@@ -132,7 +132,7 @@ b.	Copy Lookup Database - This enables to copy the [Lookup Mappings](/transforma
 
 **Note: The Copy Connection feature copies the [Attribute Mapping](/transformation/understanding-attribute-mapping/) too.** 
 
-## Editing Touchpoint
+## Editing Connection
 
 1. Editing feature enables the user to edit an exisiting touchpoint.
 2. Click on Edit button in the Connection you want to edit and the following window appears  
@@ -226,15 +226,15 @@ touchpoint is once created can only be used inside an organization.
 Navigate to Workflow > Create Workflow > Drag a template and click on the Create a Touchpoint button available 
 in the template wizard. The flow remains the same as stated above.**
 
-## Choosing Touchpoint & Workflow
+## Choosing Touchpoint/ Workflow
 APPSeCONNECT is one such product which always tries keep its process simpler. Features are developed keeping 
 the usability in mind. `Choosing Touchpoint` feature enables the user to select touchpoint from a drop-down list. 
 
 ### Prerequisites for Choosing Touchpoint
 
 1.	Need to have a valid APPSeCONNECT Account.
-2.	Choose the Application from the APPS Section.
-3.	Create a connection for the chosen application.
+2.	[Choose the Application](/getting%20started/configurations/#process-of-choosing-app) from the APPS Section.
+3.	[Create a connection](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint) for the chosen application.
 
 ### Steps to implement Choosing Touchpoint/Workflow 
 

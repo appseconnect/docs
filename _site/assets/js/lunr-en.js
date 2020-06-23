@@ -2115,7 +2115,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Adding and Managing - Schema & Actions",
-      excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
+      excerpt: "The user can view the schemasss and the action present in an app and can also add schema and add...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 233
@@ -4940,7 +4940,7 @@ var store = [
       {
         "title": "Adding and Managing - Schema & Actions",
         "url": "/processflow/adding-schema-actions/",
-        "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
+        "excerpt": "The user can view the schemasss and the action present in an app and can also add schema and add...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
