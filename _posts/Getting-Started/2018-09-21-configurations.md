@@ -1,11 +1,11 @@
 ---
-title: "Configuring APPSeCONNECT"
+title: "Working with Apps"
 toc: true
 tag: developers
-category: "Working with APPS"
+category: "Getting Started"
 menus: 
     gettingstarted:
-        title: "Working with APPS"
+        title: "Working with Apps"
         weight: 6
         icon: fa fa-wpexplorer
         identifier: configuringaec
