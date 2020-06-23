@@ -1231,6 +1231,12 @@
     <None Include="_posts\Integration\SAPB1-WooCommerce\product-add.md" />
     <None Include="_posts\Integration\SAPB1-WooCommerce\SAPB1-WooCommerce.md" />
     <None Include="_posts\Integration\SAPB1-WooCommerce\business-partneradd.md" />
+    <None Include="_posts\Integration\Shopify-Sage300\2020-05-15-shopify-sage300.md" />
+    <None Include="_posts\Integration\Shopify-Sage300\2020-05-20-customer-add.md" />
+    <None Include="_posts\Integration\Shopify-Sage300\2020-05-22-ic-product-add.md" />
+    <None Include="_posts\Integration\Shopify-Sage300\2020-05-22-sales-order-add.md" />
+    <None Include="_posts\Integration\Shopify-Sage300\2020-05-23-ic-inventory-update.md" />
+    <None Include="_posts\Integration\Shopify-Sage300\2020-05-23-ic-shipment-add.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-22-adding-schema-actions.md" />
