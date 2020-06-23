@@ -1,11 +1,11 @@
 ---
-title: "Configuring Connectors for Integration"
+title: "Configuring Connectors"
 toc: true
 tag: developers
 category: "Getting Started"
 menus: 
     gettingstarted:
-        title: "Configuring Connectors for Integration"
+        title: "Configuring Connectors"
         weight: 7
         icon: fa fa-wpexplorer
         identifier: configuringintegration
@@ -17,14 +17,16 @@ process. You have to Login to APPSeCONNECT- To View the `Connection` details pag
 |Modules|Details|
 |---|---|
 |[Searching Connections](/getting%20started/configurations-for-integration/#search-connection)|Search functionality enables the user to search the connections from the list of existing connection|
-|[Configuring Connector while Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|The Configure Connector button would be available only when you create a custom application or a technology application|
+|[Configuring Connector while Creating Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)|The Configure Connector button would be available only when you create a custom application or a technology application.Before proceeding with the integration process, users need to configure the connector for creating the connection.|
 |[Creating Connection & Executing the touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint)|To create a connection between applications, you have to come to this page & create the connection. You will also see the existing connection for a particular organization on this page|
 |[Copy Connection](/getting%20started/configurations-for-integration/#copy-connection)|This Feature enables the user to copy the connections that was previously created.|
-|[Editing Touchpoint]()|This section of the document helps the user to implement the steps to edit touchpoints in portal.|
+|[Editing Touchpoint](/getting%20started/configurations-for-integration/#editing-touchpoint)|This section of the document helps the user to implement the steps to edit touchpoints in portal.|
 |[Creating Organisation Touchpoint/ Workflow](/getting%20started/configurations-for-integration/#creating-organisation-touchpoint-workflow)|This document helps the user to implement the steps to create organisation touchpoints in portal.|
-|[Choosing Touchpoint & Workflow](/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow)|Choosing Touchpoint feature enables the user to select touchpoint from a drop-down list.|
-|[Configuring Environment](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration)|This section of the document deals with configuring environment both for OP & Cloud|
-|[Default Notification for Transactions](/getting%20started/configurations-for-integration/#default-notification-for-transactions)|With APPSeCONNECT, we provide daily transaction reports emailed to you by default, once you setup the connector and execute it on your profile|
+|[Choosing Touchpoint/Workflow](/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow)|After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc.|
+|[Lookups](/transformation/using-lookups-for-value-exchange/)|Lookup Mapping is an integral part of data synchronization between two independent applications|
+|[Transformation & Mapping](/transformation/overview/)|After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.|
+|[Deploying connection/ Workflow](/workflow/deploying-and-executing/)|After the configurations are done, the touchpoint/Workflow needs to be deployed to the environment in which it is to be integrated|
+|[Environment Configuration & setup](/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration)|Users can setup the environment for the completion of the integration process|
 
 ## Search Connection
 
@@ -253,6 +255,11 @@ On Enabling, all the default touchpoints will be activated for that connection.
                           
 ![choose-touchpoint4](/staticfiles/root/media/choose-touchpoint4.png)                                    
 The above steps complete the process of Choosing Touchpoint.
+
+## Reverse Touchpoint
+
+This functionality helps in reversing the source and destination application (vise-versa) per requirement.
+Reverse Touchpoint helps in reversing the touchpoints as and when required.
 
 ## Configuring Environment - Agent download / Cloud agent configuration
 

@@ -530,7 +530,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Configuring Connectors for Integration",
+      title: "Configuring Connectors",
       excerpt: "This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync...",
       categories: ["Getting Started"],
       tags: ["developers"],
@@ -3002,7 +3002,7 @@ var store = [
     
       
       {
-        "title": "Configuring Connectors for Integration",
+        "title": "Configuring Connectors",
         "url": "/getting%20started/configurations-for-integration/",
         "excerpt": "This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync...",
         "teaser":

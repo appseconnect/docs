@@ -19,7 +19,7 @@
 
 
 
-<title>Configuring Connectors for Integration - APPSeCONNECT Product Docs</title>
+<title>Configuring Connectors - APPSeCONNECT Product Docs</title>
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Configuring Connectors for Integration">
+<meta property="og:title" content="Configuring Connectors">
 
 
   <link rel="canonical" href="http://localhost:4000/getting%20started/configurations-for-integration/">
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Configuring Connectors for Integration</li>
+      <li class="current">Configuring Connectors</li>
     
   
 </ol>-->
@@ -376,7 +376,7 @@
     
     
     <li class="menu-item-" data-url="/getting%20started/configurations-for-integration/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/getting%20started/configurations-for-integration/" onclick="selectTab('/getting%20started/configurations-for-integration/', event);" title="Go to Configuring Connectors for Integration">Configuring Connectors for Integration</a>
+        <a href="/getting%20started/configurations-for-integration/" onclick="selectTab('/getting%20started/configurations-for-integration/', event);" title="Go to Configuring Connectors">Configuring Connectors</a>
         
     </li>
     
@@ -2118,7 +2118,7 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Configuring Connectors for Integration">
+        <meta itemprop="headline" content="Configuring Connectors">
         <meta itemprop="description" content="This section gives the overall idea about configuring connection, touchpoint creation, lookup addition, environment setup and execution of the sync process. You have to Login to APPSeCONNECT- To View the Connection details page.">
         <meta itemprop="datePublished" content="September 22, 2018">
         
@@ -2147,7 +2147,7 @@
                 
                 
                 
-                <li class="current">Configuring Connectors for Integration</li>
+                <li class="current">Configuring Connectors</li>
                 
                 
             </ol>
@@ -2157,7 +2157,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Configuring Connectors for Integration
+                <h1 class="page__title" itemprop="headline">Configuring Connectors
 </h1>
                 
                 
@@ -2188,7 +2188,7 @@
 
 
 
-  13 minute read
+  14 minute read
 </p>
                 
                 
@@ -2223,6 +2223,7 @@
       <li><a href="#steps-to-implement-choosing-touchpointworkflow">Steps to implement Choosing Touchpoint/Workflow</a></li>
     </ul>
   </li>
+  <li><a href="#reverse-touchpoint">Reverse Touchpoint</a></li>
   <li><a href="#configuring-environment---agent-download--cloud-agent-configuration">Configuring Environment - Agent download / Cloud agent configuration</a>
     <ul>
       <li><a href="#environment-setup-of-the-on-premise-agent">Environment setup of the on-premise agent:</a></li>
@@ -2252,7 +2253,7 @@ process. You have to Login to APPSeCONNECT- To View the <code class="highlighter
     </tr>
     <tr>
       <td><a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Configuring Connector while Creating Connection</a></td>
-      <td>The Configure Connector button would be available only when you create a custom application or a technology application</td>
+      <td>The Configure Connector button would be available only when you create a custom application or a technology application.Before proceeding with the integration process, users need to configure the connector for creating the connection.</td>
     </tr>
     <tr>
       <td><a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">Creating Connection &amp; Executing the touchpoint</a></td>
@@ -2263,7 +2264,7 @@ process. You have to Login to APPSeCONNECT- To View the <code class="highlighter
       <td>This Feature enables the user to copy the connections that was previously created.</td>
     </tr>
     <tr>
-      <td><a href="">Editing Touchpoint</a></td>
+      <td><a href="/getting%20started/configurations-for-integration/#editing-touchpoint">Editing Touchpoint</a></td>
       <td>This section of the document helps the user to implement the steps to edit touchpoints in portal.</td>
     </tr>
     <tr>
@@ -2271,16 +2272,24 @@ process. You have to Login to APPSeCONNECT- To View the <code class="highlighter
       <td>This document helps the user to implement the steps to create organisation touchpoints in portal.</td>
     </tr>
     <tr>
-      <td><a href="/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow">Choosing Touchpoint &amp; Workflow</a></td>
-      <td>Choosing Touchpoint feature enables the user to select touchpoint from a drop-down list.</td>
+      <td><a href="/getting%20started/configurations-for-integration/#choosing-touchpoint--workflow">Choosing Touchpoint/Workflow</a></td>
+      <td>After the creation of the connection, users need to choose the touchpoint/ Workflow for the object that needs to integrate. For E.g. Business Partner Add, Sales Order Add. etc.</td>
     </tr>
     <tr>
-      <td><a href="/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration">Configuring Environment</a></td>
-      <td>This section of the document deals with configuring environment both for OP &amp; Cloud</td>
+      <td><a href="/transformation/using-lookups-for-value-exchange/">Lookups</a></td>
+      <td>Lookup Mapping is an integral part of data synchronization between two independent applications</td>
     </tr>
     <tr>
-      <td><a href="/getting%20started/configurations-for-integration/#default-notification-for-transactions">Default Notification for Transactions</a></td>
-      <td>With APPSeCONNECT, we provide daily transaction reports emailed to you by default, once you setup the connector and execute it on your profile</td>
+      <td><a href="/transformation/overview/">Transformation &amp; Mapping</a></td>
+      <td>After choosing touchpoint, user needs to map the attributes with the attributes of the destination application.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/deploying-and-executing/">Deploying connection/ Workflow</a></td>
+      <td>After the configurations are done, the touchpoint/Workflow needs to be deployed to the environment in which it is to be integrated</td>
+    </tr>
+    <tr>
+      <td><a href="/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration">Environment Configuration &amp; setup</a></td>
+      <td>Users can setup the environment for the completion of the integration process</td>
     </tr>
   </tbody>
 </table>
@@ -2540,6 +2549,11 @@ Here, the Product: Add touchpoint is Selected.            <br />
 <p><img src="/staticfiles/root/media/choose-touchpoint4.png" alt="choose-touchpoint4" />                                  <br />
 The above steps complete the process of Choosing Touchpoint.</p>
 
+<h2 id="reverse-touchpoint">Reverse Touchpoint</h2>
+
+<p>This functionality helps in reversing the source and destination application (vise-versa) per requirement.
+Reverse Touchpoint helps in reversing the touchpoints as and when required.</p>
+
 <h2 id="configuring-environment---agent-download--cloud-agent-configuration">Configuring Environment - Agent download / Cloud agent configuration</h2>
 
 <p>APPSeCONNECT On-Premise Agent is a hybrid tool that sits on your own server and is configured on cloud and does the actual data synchronization with the help of other concerned adapters while the Cloud agent is a similar tool that performs the same function as the on-premise agent but is present on cloud itself. No server is required to configure or sync using the cloud agent.
@@ -2668,7 +2682,7 @@ notification on the amount of transactions being performed through APPSeCONNECT.
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Configuring+Connectors+for+Integration%20https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations-for-integration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Configuring+Connectors%20https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations-for-integration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations-for-integration%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
