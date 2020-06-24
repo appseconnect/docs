@@ -469,8 +469,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/priority/" onclick="selectTab('/connectors/priority/', event);" title="Go to Priority">Priority</a>
+    <li class="menu-item-" data-url="/connectors/Priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Priority/" onclick="selectTab('/connectors/Priority/', event);" title="Go to Priority">Priority</a>
         
         
         
@@ -2386,6 +2386,8 @@ click the Finish button. Following the above steps, you can successfully Deploy 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Fredeploying-processflow%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
+            
+            <div id="disqus_thread"></div>
 
             
 
@@ -5056,6 +5058,14 @@ click the Finish button. Following the above steps, you can successfully Deploy 
 
 
         
+        <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+        
     </article>
 </div>
 
@@ -5163,18 +5173,19 @@ click the Finish button. Following the above steps, you can successfully Deploy 
 
 
     
-  <script>
+<script id="dsq-count-scr" src="https://docs-appseconnect-com-1.disqus.com/count.js" async></script>
+<script>
     var disqus_config = function () {
-      this.page.url = "/processflow/redeploying-processflow/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/processflow/redeploying-processflow/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/processflow/redeploying-processflow"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
-      s.src = 'https://appseconnect-docs.disqus.com/embed.js';
+      s.src = 'https://docs-appseconnect-com-1.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-  </script>
+</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
