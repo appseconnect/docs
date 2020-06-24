@@ -7,5 +7,5 @@ menus:
    shopifysageintegration
         title: "Customer Add"
         icon: fa fa-wpexplorer
-        identifier: shopifysageintegration
+        identifier: shopifysagecustadd
 ---

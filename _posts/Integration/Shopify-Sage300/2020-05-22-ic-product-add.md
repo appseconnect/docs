@@ -1,5 +1,5 @@
 ﻿---
-title: "I/C Product Add from Shopify - SAGE300"
+title: "I/C Product Add"
 toc: true
 tag: developers
 category: "Integration"

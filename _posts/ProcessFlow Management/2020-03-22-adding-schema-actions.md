@@ -33,7 +33,7 @@ To view the listing of Schemas and Attribute,  navigate to the following section
 (c) The Node Configuration window opens. Go to General tab and Click `Manage Schema`.   
 (d) A window opens up and here you can view the listing of all the Schema and Attribute(s) of the Application 
 will be displayed in the Tree view on the left pane. 
-![pf-schema-listingview](/staticfiles/processflow/media/pf-schema-listingview.png)
+![Processflow Schema Listing](../../staticfiles/processflow/media/processflow-schema-listing.png)
 * The Schemas are arranged in a same level hierarchy whereas the attributes and actions associated with the schema is arranged in the second level 
 hierarchy.
 * Newly created attribute is arranged under Attribute node.

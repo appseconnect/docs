@@ -7,5 +7,5 @@ menus:
    shopifysageintegration
         title: "Sales Order Add"
         icon: fa fa-wpexplorer
-        identifier: sage300magentosalesadd
+        identifier: sage300magentosalesorder
 ---

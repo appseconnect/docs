@@ -7,5 +7,5 @@ menus:
     shopifysageintegration
         title: "I/C Inventory Update from Shopify SAGE 300"
         icon: fa fa-wpexplorer
-        identifier: shopifysage300inventoryupdate
+        identifier: shopifysage300inventory
 ---
