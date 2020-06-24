@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Integration"
 menus: 
-   shopifysageintegration
+   shopifysageintegration:
         title: "Customer Add"
         icon: fa fa-wpexplorer
         identifier: shopifysagecustadd

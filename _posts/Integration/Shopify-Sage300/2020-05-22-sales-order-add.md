@@ -4,7 +4,7 @@ toc: true
 tag: developers
 category: "Integration"
 menus: 
-   shopifysageintegration
+   shopifysageintegration:
         title: "Sales Order Add"
         icon: fa fa-wpexplorer
         identifier: sage300magentosalesorder
