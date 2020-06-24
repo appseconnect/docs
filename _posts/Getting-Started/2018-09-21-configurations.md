@@ -19,7 +19,7 @@ Login to APPSeCONNECT - View [Home Page](https://portal.appseconnect.com/Account
 |[Choosing Applications](/getting%20started/configurations/#process-of-choosing-app) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
 |[Searching Application](/getting%20started/configurations/#searching-applications)| You can filter all your added applications by searching application. Visit the section to know more about searching application.| 
 |[Creating Applications](/getting%20started/configurations/#create-application) | You can successfully create custom or technology based applications as per requirement. Follow the steps given here tp create custom or a technology app. For Custom and Technology application, you can delete the application by selecting the delete option from the VIEW drop-down.|
-|[Providing Cloud Credentials](/connectors/OLEDB-Credentials/)|Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.|
+|[Providing Credentials](/connectors/OLEDB-Credentials/)|Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.|
 |[Understanding Schema and Entity](/getting%20started/configurations/#understanding-schemaentity)|Every application has its schema and entity and for integrating with applications|
 |[Understanding Attributes](/getting%20started/configurations/#understanding-custom-attributes)|Every schema has its attributes that are needed to be mapped with the destination application for the sync process|
 |[Working with Schemas, Attributes & Actions](/transformation/working-with-schemas-action-filter/)|Every Entity is transformed after configuring its proper Schema, attributes and its actions. Follow the steps if you need to create Schema, its attributes and actions.|
@@ -134,6 +134,20 @@ View [Technology Apps](/connectors/Overview-of-technology-connectors/) section f
 
 **Protip** Currently we are using only these Technology Adapter - FILE, REST, OLEDB & FTP. 
 {: .notice--info}
+
+### Viewing & Editing Custom & Technology Applications:
+
+1. Once your application is created, you can view the following interface of you Custom/Technology App. You can view a `VIEW` button beside your created application.
+
+![customview1](\staticfiles\root\media\customview1.png)
+
+2. Click on the view button, you will able to edit the following details as provided in the screen below.
+
+![customview2](\staticfiles\root\media\customview2.png)
+
+3. You can also delete the created application if required by click on the delete button available under the drop-down of the `VIEW` button.
+
+**Note: You cannot delete the application if it is associated with any connection.**
 
 ### Understanding Schema/Entity
  
