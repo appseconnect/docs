@@ -2376,7 +2376,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: null,
-      excerpt: "\n",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: [],
       tags: null,
       id: 262
@@ -5313,7 +5313,7 @@ var store = [
       {
         "title": null,
         "url": "/2020-05-20-customer-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

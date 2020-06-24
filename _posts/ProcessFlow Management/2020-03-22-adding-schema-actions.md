@@ -62,14 +62,14 @@ Managementfrom the processflow node configuration level.
 4) In the node configuration window, go to the Schema field. If the list of Schema is available select from 
 the list of schema. And if` No schema` is available for the given application node, click `Manage Schema` option.  
 5) The following window appears with message on display for the user to `Add Schema` & `Import Schema`  
-6) Click on the option **Add Schema** and the add schema window opens up  
-![pf-addschema1](/staticfiles/processflow/media/pf-addschema1.png)
+6) Click on the option **Add Schema** and the add schema window opens  
+![Pf Addschema1](../../staticfiles/processflow/media/pf-addschema1.png)  
 7) Enter the details of adding Schema and Click `Save` button 
  a. Schema Name: This is a mandatory field and it needs to be provided with the schema name    
  b. Schema Description: The description for the schema is needed to be given here   
  c. Schema Namespace: Differentiates between two similar schemas   
  d. Schema Namespace URL: Differentiates between two similar schemas using URL  
- ![pf-addschema2](/staticfiles/processflow/media/pf-addschema2.png)
+ ![Pf Addschema2](../../staticfiles/processflow/media/pf-addschema2.png)
 8) The newly created Schema is added and gets listed in the left side pane.  
 
 ### Editing & Deleting Schemas in an Application node of Process flow 
@@ -81,7 +81,7 @@ the list of schema. And if` No schema` is available for the given application no
 3) You will be redirected to the `Manage Schema and Action` pop-up.    
 4) In the `Manage Schema and Action` window, you will be able to edit any existing Schema by clicking on the Schema
 context menu and do the changes.
-[PLACEHOLDER]    
+![Pf Editschema](../../staticfiles/processflow/media/pf-editschema.png)   
 5) The `Schema Name` is uneditable, rest other fields are editable like Schema Description, Namespace &
 Namespace URL.
   
@@ -93,8 +93,8 @@ unable to Rename the Schema, Delete the Schema.
 ### Adding Attribute to a Schema
 
 1) The Schema context menu has the option to `ADD Attribute` to the schema.  
-2) Click `Add Attribute` to add attribute to the schema. The Add Attribute form opens up.
-[PLACEHOLDER] 
+2) Click `Add Attribute` to add attribute to the schema. The Add Attribute form opens up.  
+![Pf Addattribute](../../staticfiles/processflow/media/pf-addattribute.png)  
 The fields in the Attriburte Property Window are:   
 a. Attribute Name: It is a mandatory field, used for providing name to the attribute. 
    * The Attribute Name field will allow a `maximum of 100 characters`.  
@@ -120,8 +120,8 @@ g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attrib
 * Attribute:To add attribute in the XSLT    
 **Only one Attribute can be set as `Primary Attribute` within a Schema.**  
 3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
-appears on the window stating the attribute is created successfully.
-[PLACEHOLDER]
+appears on the window stating the attribute is created successfully.  
+![Pf Addattribute2](../../staticfiles/processflow/media/pf-addattribute2.png)  
 4) The newly created attribute gets added just below the Schema on the left side panel.    
 5) Click on the created attribute in the node structure, for Renaming and Deleting 
 the attribute.  
@@ -132,9 +132,8 @@ the attribute.
 
 #### (a) Editing Attribute within a  Process Flow Scope (local attribute)
 
-1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).  
+1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).    
 You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
-
 2) Changes done to an existing Attribute (local attribute) will be reflected within that specific Process Flow only.
 3) Changes done to an existing Attribute (local attribute) will not affect other Process Flows using the same Schema and Attribute.
 4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.

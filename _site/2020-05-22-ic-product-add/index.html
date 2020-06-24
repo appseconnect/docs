@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-06-24T11:45:10+05:30">
+  <meta property="article:published_time" content="2020-06-24T12:34:39+05:30">
 
 
 
@@ -2146,7 +2146,7 @@
                 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-24T11:45:10+05:30">June 24, 2020</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-24T12:34:39+05:30">June 24, 2020</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2154,7 +2154,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -2163,7 +2163,64 @@
 
             <section class="page__content" itemprop="text">
                 
-                <p>Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding Products/items from SAGE  300 to Magento2.</p>
+                <p>Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding Products/items from SAGE  300 to Shopify.</p>
+
+<h2 id="brief-description">Brief Description:</h2>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\productadd1.PNG" alt="productadd1" /></p>
+
+<p>In this case, the Workflow for Adding Products/Items, is used for adding simple product from SAGE 300 to Shopify. Here, a workflow is created where all the Simple Products are fetched form SAGE 300 and are posted to Shopify.</p>
+
+<p>As a prerequisite, you need to have the products created in SAGE 300. <a href="/connectors/adding-product-in-sage/">Click</a> to know about the steps to create products in SAGE 300.</p>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\productadd2.PNG" alt="productadd2" /></p>
+
+<p>Here, we have created a product <strong>Seinheiser Double Bass Headset</strong> with the Item ID <code class="highlighter-rouge">A2ST12</code></p>
+
+<h2 id="lookup-mapping">Lookup Mapping:</h2>
+
+<p>Not Required but every business processes are unique may require lookup mapping. In such cases, <a href="/transformation/using-lookups-for-value-exchange/">click</a> to know more about Lookup Mapping.</p>
+
+<p><strong>Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow.</a> After Republishing, click on the Update Configuration button in the Agent.</strong></p>
+
+<h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
+
+<ol>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</p>
+  </li>
+  <li>
+    <p>Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.</p>
+  </li>
+</ol>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\productadd3.PNG" alt="productadd3" /></p>
+
+<ol>
+  <li>The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/deploying-and-executing/#executing-the-workflow">Click Here</a>.</li>
+</ol>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\productadd4.PNG" alt="productadd4" /></p>
+
+<h2 id="integration-data-survey">Integration Data Survey:</h2>
+
+<p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\productadd5.PNG" alt="productadd5" /></p>
+
+<p>Here, you can view the product <code class="highlighter-rouge">A2ST12</code> got successfully synced to Shopify.</p>
+
+<h2 id="post-conditions">Post Conditions:</h2>
+<p>You can view the data sync in Shopify by navigating to <code class="highlighter-rouge">Products &gt; All Products</code> page.</p>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\productadd6.PNG" alt="productadd6" /></p>
+
+<h2 id="frequency-of-use">Frequency of Use:</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
 
                 
             </section>
@@ -2171,7 +2228,7 @@
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-24T11:45:10+05:30">June 24, 2020</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-24T12:34:39+05:30">June 24, 2020</time></div>
                 
                 
 
