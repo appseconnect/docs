@@ -2348,11 +2348,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Ic Shipment Add",
+      excerpt: "\ntitle: “Shipment Add”\ntoc: true\ntag: developers\ncategory: “Integration”\nmenus: \n    shopifysageintegration\n        title: “Shipment Add”\n        icon: fa fa-wpexplorer\n        identifier: shopifysage300shipment\n",
+      categories: [],
+      tags: [],
+      id: 259
+    });
+    
+  
+    idx.add({
       title: "Adding and Managing - Schema & Actions",
       excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 259
+      id: 260
     });
     
   
@@ -2361,22 +2370,13 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 260
-    });
-    
-  
-    idx.add({
-      title: null,
-      excerpt: "\n",
-      categories: [],
-      tags: null,
       id: 261
     });
     
   
     idx.add({
       title: null,
-      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      excerpt: "\n",
       categories: [],
       tags: null,
       id: 262
@@ -2385,7 +2385,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: null,
-      excerpt: "\n",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: [],
       tags: null,
       id: 263
@@ -5278,6 +5278,17 @@ var store = [
     
       
       {
+        "title": "Ic Shipment Add",
+        "url": "/ic-shipment-add/",
+        "excerpt": "\ntitle: “Shipment Add”\ntoc: true\ntag: developers\ncategory: “Integration”\nmenus: \n    shopifysageintegration\n        title: “Shipment Add”\n        icon: fa fa-wpexplorer\n        identifier: shopifysage300shipment\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Adding and Managing - Schema & Actions",
         "url": "/processflow/adding-schema-actions/",
         "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
@@ -5335,17 +5346,6 @@ var store = [
       {
         "title": null,
         "url": "/2020-05-23-ic-inventory-update/",
-        "excerpt": "\n",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": null,
-        "url": "/2020-05-23-ic-shipment-add/",
         "excerpt": "\n",
         "teaser":
           
