@@ -457,6 +457,8 @@
     <Content Include="staticfiles\deployment\media\Troubleshooting\Error-UpdateAdapter.png" />
     <Content Include="staticfiles\deployment\media\Troubleshooting\SystemError-UpdateConfig.png" />
     <Content Include="staticfiles\deployment\media\Troubleshooting\TransactionLog-Error.png" />
+    <Content Include="staticfiles\deployment\media\Troubleshooting\troubleshooting-scenario4.png" />
+    <Content Include="staticfiles\deployment\media\Troubleshooting\troublshooting-syncdata.PNG" />
     <Content Include="staticfiles\generic-restadapter\Connectioncreation-restadapter.png.jpg" />
     <Content Include="staticfiles\generic-restadapter\ConnectionPage1.png" />
     <Content Include="staticfiles\generic-restadapter\RestApi_authentication.png" />
