@@ -3620,7 +3620,7 @@ var store = [
       
       {
         "title": "Priority",
-        "url": "/connectors/Priority/",
+        "url": "/connectors/priority/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
         "teaser":
           
