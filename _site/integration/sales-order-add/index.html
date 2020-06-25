@@ -19,12 +19,12 @@
 
 
 
-<title>Sales Order Add from Magento 2 to SAGE 300 - APPSeCONNECT Product Docs</title>
+<title>Sales Order Add from Shopify to SAGE 300 - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Magento2 to SAGE 300.">
+<meta name="description" content="">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Sales Order Add from Magento 2 to SAGE 300">
+<meta property="og:title" content="Sales Order Add from Shopify to SAGE 300">
 
 
   <link rel="canonical" href="http://localhost:4000/integration/sales-order-add/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Magento2 to SAGE 300.">
+  <meta property="og:description" content="">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Sales Order Add from Magento 2 to SAGE 300</li>
+      <li class="current">Sales Order Add from Shopify to SAGE 300</li>
     
   
 </ol>-->
@@ -2155,8 +2155,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Sales Order Add from Magento 2 to SAGE 300">
-        <meta itemprop="description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Magento2 to SAGE 300.">
+        <meta itemprop="headline" content="Sales Order Add from Shopify to SAGE 300">
+        <meta itemprop="description" content="">
         <meta itemprop="datePublished" content="May 22, 2020">
         
 
@@ -2184,7 +2184,7 @@
                 
                 
                 
-                <li class="current">Sales Order Add from Magento 2 to SAGE 300</li>
+                <li class="current">Sales Order Add from Shopify to SAGE 300</li>
                 
                 
             </ol>
@@ -2194,7 +2194,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Sales Order Add from Magento 2 to SAGE 300
+                <h1 class="page__title" itemprop="headline">Sales Order Add from Shopify to SAGE 300
 </h1>
                 
                 
@@ -2225,7 +2225,7 @@
 
 
 
-  2 minute read
+  less than 1 minute read
 </p>
                 
                 
@@ -2237,108 +2237,11 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        <ul class="toc__menu">
-  <li><a href="#brief-description">Brief Description</a></li>
-  <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
-  <li><a href="#attribute-mappingtransformation">Attribute Mapping/Transformation:</a></li>
-  <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
-  <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
-  <li><a href="#post-conditions">Post Conditions:</a></li>
-  <li><a href="#frequency-of-use">Frequency of Use:</a></li>
-</ul>
+                        
                     </nav>
                 </aside>
                 
-                <p>Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Magento2 to SAGE 300.</p>
-
-<h2 id="brief-description">Brief Description</h2>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd1.png" alt="orderadd1" /></p>
-
-<p>A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Magento2 for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. <a href="https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html">Click here</a> to know more about generating Sales Orders in Magento2.</p>
-
-<p>Here, an Order is placed for the customer Mr. Brandon P Summers, against the product iPhone 11 Max Pro.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd2.png" alt="orderadd2" /></p>
-
-<h2 id="lookup-mapping">Lookup Mapping:</h2>
-
-<p>For integrating, Sales Orders from Magento 2 to Sage 300, you need to add lookups for Frieght &amp; Tax Code.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd3.png" alt="orderadd3" /></p>
-
-<p>After placing the lookups for the connections, Publish the Connection, Update Lookup Tables in Agent followed by Update Configuration.</p>
-
-<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation:</h2>
-
-<p>Following the Provided Mapping,  user can successfully sync the Order Add Workflow from Magento2 to SAGE 300. To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
-
-<p>Mapping for the ComplexObjectCollection <code class="highlighter-rouge">OEOrders</code>:</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd4.png" alt="orderadd4" /></p>
-
-<p>a. Order Number: Maps the field of the Order Id of Magento2.</p>
-
-<p>b. Customer Number: Maps the customer ID of the placed order.</p>
-
-<p>c. Bill to Name: Maps the name of the customer against whom the order is placed.</p>
-
-<p>d. Bill to address: Maps the address of the customer whose order is placed.</p>
-
-<p>e. Bill to City: Maps the field City with the field of Magento 2.</p>
-
-<p>f. Bill to country: Maps the field Country with field of Magento 2.</p>
-
-<p>g. Tax Group: Maps the Tax group allocated to the user in lookup tables.</p>
-
-<p>f. Upload URL: Maps the target location of the sync process.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd5.png" alt="orderadd5" /></p>
-
-<p><strong>Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow.</a> After Republishing, click on the Update Configuration button in the Agent.</strong></p>
-
-<h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
-
-<ol>
-  <li>
-    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
-  </li>
-  <li>
-    <p>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</p>
-  </li>
-  <li>
-    <p>Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.</p>
-  </li>
-</ol>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd6.png" alt="orderadd6" /></p>
-
-<ol>
-  <li>The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/deploying-and-executing/#executing-the-workflow">Click Here</a>.</li>
-</ol>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd7.png" alt="orderadd7" /></p>
-
-<h2 id="integration-data-survey">Integration Data Survey:</h2>
-
-<p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd8.png" alt="orderadd8" /></p>
-
-<p>Here, you can view the Order <code class="highlighter-rouge">28</code> got successfully synced to SAGE 300.</p>
-
-<h2 id="post-conditions">Post Conditions:</h2>
-<p>You can view the data sync in SAGE 300 by navigating to <code class="highlighter-rouge">Order Entry &gt; O/E transactions &gt; Order Entry </code>. Search the Order post with the order number, and you ccan view the order details.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd9.png" alt="orderadd9" /></p>
-
-<p>Here, you can view the order for the customer Mr Brandon P Summers in SAGE 300, with the complete order details.</p>
-
-<h2 id="frequency-of-use">Frequency of Use:</h2>
-
-<p>The user can execute the Integration through workflow as and when required.</p>
-
-<p>Following the above procedures, you can successfully sync Sales Orders from Magento2 to SAGE 300.</p>
+                
 
                 
             </section>
@@ -2395,7 +2298,7 @@
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Sales+Order+Add+from+Magento+2+to+SAGE+300%20https://docs.appseconnect.com%2Fintegration%2Fsales-order-add%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Sales+Order+Add+from+Shopify+to+SAGE+300%20https://docs.appseconnect.com%2Fintegration%2Fsales-order-add%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fintegration%2Fsales-order-add%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

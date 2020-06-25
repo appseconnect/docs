@@ -19,12 +19,12 @@
 
 
 
-<title>Customer Add from Magento2 to SAGE 300 - APPSeCONNECT Product Docs</title>
+<title>Customer Add from Shopify to SAGE 300 - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Magento2 to SAGE  300.">
+<meta name="description" content="Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Shopify to SAGE  300.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Customer Add from Magento2 to SAGE 300">
+<meta property="og:title" content="Customer Add from Shopify to SAGE 300">
 
 
   <link rel="canonical" href="http://localhost:4000/integration/customer-add/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Magento2 to SAGE  300.">
+  <meta property="og:description" content="Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Shopify to SAGE  300.">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Customer Add from Magento2 to SAGE 300</li>
+      <li class="current">Customer Add from Shopify to SAGE 300</li>
     
   
 </ol>-->
@@ -2155,8 +2155,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Customer Add from Magento2 to SAGE 300">
-        <meta itemprop="description" content="Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Magento2 to SAGE  300.">
+        <meta itemprop="headline" content="Customer Add from Shopify to SAGE 300">
+        <meta itemprop="description" content="Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Shopify to SAGE  300.">
         <meta itemprop="datePublished" content="May 20, 2020">
         
 
@@ -2184,7 +2184,7 @@
                 
                 
                 
-                <li class="current">Customer Add from Magento2 to SAGE 300</li>
+                <li class="current">Customer Add from Shopify to SAGE 300</li>
                 
                 
             </ol>
@@ -2194,7 +2194,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Customer Add from Magento2 to SAGE 300
+                <h1 class="page__title" itemprop="headline">Customer Add from Shopify to SAGE 300
 </h1>
                 
                 
@@ -2225,7 +2225,7 @@
 
 
 
-  3 minute read
+  1 minute read
 </p>
                 
                 
@@ -2240,7 +2240,6 @@
                         <ul class="toc__menu">
   <li><a href="#brief-description">Brief Description:</a></li>
   <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
-  <li><a href="#attribute-mapping">Attribute Mapping:</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
@@ -2250,85 +2249,55 @@
                     </nav>
                 </aside>
                 
-                <p>Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Magento2 to SAGE  300.</p>
+                <p>Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Shopify to SAGE  300.</p>
 
 <h2 id="brief-description">Brief Description:</h2>
 
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd1.png" alt="custadd1" /></p>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd1.PNG" alt="custadd1" /></p>
 
-<p>Here, the Touchpoint Customer is used for syncing multiples customers from <a href="/connectors/Magento2/">Magento2</a> to <a href="/connectors/sage300/">SAGE 300</a>. A <a href="/transformation/handling-dependent-data/">Post-Task</a> Address Add is also attached for syncing customer address to SAGE 300. A workflow is designed and executed with the Customer Add touchpoint where Customers are being added to SAGE 300 from Magento2. The customer is created in Magento 2 and is synced to the SAGE 300.</p>
+<p>Here, the Workflow is used for syncing multiple customers from <a href="/connectors/shopify/">Shopify</a> to <a href="/connectors/sage300/">SAGE 300</a>. A workflow is designed and executed with the Customer Add General touchpoint where Customers are being added to SAGE 300 from Shopify. The customer is created in the shopify platform and is synced to SAGE 300.</p>
 
-<p>Login to Magento 2 Application and <a href="https://docs.magento.com/m2/ce/user_guide/customers/account-create.html">add customers</a> in Magento2.</p>
+<p>Login to your Shopify platform and <a href="https://help.shopify.com/en/manual/customers/manage-customers#add-customers">add customers</a> in Shopify.</p>
 
 <h2 id="lookup-mapping">Lookup Mapping:</h2>
 
-<p>For posting newly added customer to SAGE 300 from Magento, you need to add Lookup for Customer Group &amp; Tax. For this integration of Customer, mapping lookups for the group code of Customer &amp; Tax is mandatory.</p>
+<p>For posting newly added customer to SAGE 300 from Shopify, you need to add Lookup for <code class="highlighter-rouge">Customer Group</code>, <code class="highlighter-rouge">Tax</code> &amp; <code class="highlighter-rouge">Website</code>. For this integration of Customer, mapping lookups for the group code of Customer, Tax &amp; website is mandatory.</p>
 
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd2.png" alt="custadd2" /></p>
-
-<h2 id="attribute-mapping">Attribute Mapping:</h2>
-
-<p>The mapping provided below will enable the user to sync the Customers from Magento2 to SAGE 300. To know more, see <a href="/transformation/overview-usecase/">Mapping &amp; Transformation Techniques.</a></p>
-
-<p>Mapping for the Complex Object Collection <code class="highlighter-rouge">Customers</code> for Customer Add Touchpoint:</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd3.png" alt="custadd3" /></p>
-
-<p>a.	<strong>Customer Number:</strong> Here, the customer id is mapped with the id in Magento2.</p>
-
-<p>b.	<strong>Customer Name:</strong> The customer name field of SAGE 300 is mapped with the customer name field of Magento for transforming the name of the customer with respect to id mapped above.</p>
-
-<p>c.	<strong>Group Code:</strong> Map the customer group code whose Lookup is initialized.</p>
-
-<p>d.	<strong>Tax Group:</strong> Map the tax group whose lookup is initialized.</p>
-
-<p>e.	<strong>AddressLine1:</strong> Mapping the address field of SAGE 300 with Magento 2</p>
-
-<p>f.	<strong>AddressLine2:</strong> Mapping the address field of SAGE 300 with Magento 2</p>
-
-<p>g.	<strong>City:</strong> Mapping the field City of Sage 300 with the field in Magento2</p>
-
-<p>h.	<strong>StateProvince:</strong> Mapping the field of the State (Part of Address Detail) of the customer with the field in Magento 2.</p>
-
-<p>i.	<strong>ZipPostalCode:</strong>  Mapping field of Zip postal code of SAGE 300 with the field in Magento 2.</p>
-
-<p>j.	<strong>Country:</strong> Mapping the field Country with the field in Magento 2</p>
-
-<p>k.	<strong>Email:</strong> Mapping the Email with the field in Magento 2</p>
-
-<p>l.	<strong>PhoneNumber:</strong> Mapping the contact number of the customer with field in Magento 2</p>
-
-<p>m.	<strong>UploadURL:</strong> This field define the Route to SAGE 300 for data storage.</p>
-
-<p><strong>Note</strong>: After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow design panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration button in the Agent.</p>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd2.PNG" alt="custadd2" /></p>
 
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
 <ol>
-  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</li>
-  <li>Navigate to the Workflow Panel in the agent and click on the <strong>Start Sync Button</strong> for executing the Process.</li>
-  <li>Once the Execution is finished, click on the <strong>Resync Button</strong> (Highlighted Below) in the agent.</li>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the <strong>Start Sync Button</strong> for executing the Process.</p>
+  </li>
+  <li>
+    <p>Once the Execution is finished, click on the <strong>Resync Button</strong> (Highlighted Below) in the agent.</p>
+  </li>
 </ol>
 
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd4.png" alt="custadd4" /></p>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd3.PNG" alt="custadd3" /></p>
 
 <ol>
   <li>The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation">Click Here</a>.</li>
 </ol>
 
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd5.png" alt="custadd5" /></p>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd4.PNG" alt="custadd4" /></p>
 
 <h2 id="integration-data-survey">Integration Data Survey:</h2>
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow.</p>
 
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd6.png" alt="custadd6" /></p>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd5.PNG" alt="custadd5" /></p>
 
 <h2 id="post-conditions">Post Conditions:</h2>
 <p>You can view the data sync in SAGE 300 by viewing the <code class="highlighter-rouge">Accounts Receivable &gt; A/R Customers.</code>
-Here you can view the data <strong>MA57</strong> successfully synced in SAGE 300.</p>
+Here you can view the data <strong>BLANK</strong> successfully synced in SAGE 300.</p>
 
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd7.png" alt="custadd7" /></p>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd6.PNG" alt="custadd6" /></p>
 
 <h2 id="frequency-of-use">Frequency of Use:</h2>
 
@@ -2342,8 +2311,7 @@ Here you can view the data <strong>MA57</strong> successfully synced in SAGE 300
 
 <p><strong>Resolution:</strong> You may have faced this error because of a lookup which has not been successfully transformed. Verify in the transform file whether the value of lookup mapped attribute is transformed or not. If not, you need to rectify your mapping, or you need to add new lookup table for this connection.</p>
 
-<p>Following the above procedures, you can successfully sync customer from Magento 2 to SAGE 300.</p>
-
+<p>Following the above procedures, you can successfully sync customers from Shopify to SAGE 300.</p>
 
                 
             </section>
@@ -2400,7 +2368,7 @@ Here you can view the data <strong>MA57</strong> successfully synced in SAGE 300
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Customer+Add+from+Magento2+to+SAGE+300%20https://docs.appseconnect.com%2Fintegration%2Fcustomer-add%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Customer+Add+from+Shopify+to+SAGE+300%20https://docs.appseconnect.com%2Fintegration%2Fcustomer-add%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fintegration%2Fcustomer-add%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
