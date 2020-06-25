@@ -183,6 +183,7 @@ Traces of past activities of the user can be been viewed in the feed section.
 3. Here you can only see your activities in your logged in profile.
 4. Feeds Page has search criteria, so that you can filter the feed using topic keyword filters like "touchpoint", "masterdata" etc.
 4. This is view only menu.
+5. Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.
 
 **ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
 {: .notice--info}

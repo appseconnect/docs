@@ -42,6 +42,11 @@ d.	End: This field has two options.
   depicts the End Time Occurrence.
 3.	After Scheduling the workflow, click OK button.
 
+**Protip:** Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.
+ {: .notice--info}
+
+![Feed Sync Schedule](../../../staticfiles/workflow-management/media/feed-sync-schedule.PNG)
+
 ## Publishing a Workflow
 
 If you change attribute mapping in a workflow you need to publish the workflow before deploying. The steps to do the same

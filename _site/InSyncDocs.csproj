@@ -1052,6 +1052,7 @@
     <Content Include="staticfiles\workflow-management\media\DelayWorkflow.png" />
     <Content Include="staticfiles\workflow-management\media\ElementNode.png" />
     <Content Include="staticfiles\workflow-management\media\Email-snapshot.png" />
+    <Content Include="staticfiles\workflow-management\media\feed-sync-schedule.PNG" />
     <Content Include="staticfiles\workflow-management\media\FilterNode\FilterNode.png" />
     <Content Include="staticfiles\workflow-management\media\GetNode\ActionFilter.png" />
     <Content Include="staticfiles\workflow-management\media\GetNode\GetNode.png" />
