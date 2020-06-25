@@ -119,6 +119,8 @@ layout: inner
             </footer>
 
             {% if page.share %}{% include social-share.html %}{% endif %}
+            
+            <div id="disqus_thread"></div>
 
             {% include post_pagination.html %}
         </div>
@@ -192,7 +194,7 @@ layout: inner
         {% endcomment %}
 
 
-        {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+        {% if page.comments %}
         {% include comments.html %}
         {% endif %}
     </article>
