@@ -14,7 +14,7 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 **Note: Before proceeding with this integration you need to integrate [Product Add](/integration/ic-product-add/) from SAGE 300 to MAGENTO 2**
 
-## Brief Description  
+## Brief Description:
 ![invupdate1](\staticfiles\integration\Sage300-Magento\invupdate1.png)
 
 Inventory update is used to integrate the quantity of products synced to magento 2 from SAGE 300. Updates made in the quantity need to be manages in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inveotry in SAGE 300. 

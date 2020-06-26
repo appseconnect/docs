@@ -12,7 +12,7 @@ menus:
 
 Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Magento2 to SAGE 300.
 
-## Brief Description:
+## Brief Description
 
 ![orderadd1](\staticfiles\integration\Sage300-Magento\orderadd1.png)
 

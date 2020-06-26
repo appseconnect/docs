@@ -12,7 +12,7 @@ menus:
 
 Executing the process is a vital part when integrating any applications. This section of the document will let the users understand how the integration for the adding **Invoice** can be executed using a workflow from SAGE 300 to Magento2.
 
-## Brief Description
+## Brief Description:
 
 ![invadd1](\staticfiles\integration\Sage300-Magento\invadd1.PNG)
 
