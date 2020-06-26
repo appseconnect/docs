@@ -2367,7 +2367,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "I/C Inventory Update from Shopify SAGE 300",
-      excerpt: "\n",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 261
@@ -5293,7 +5293,7 @@ var store = [
       {
         "title": "I/C Inventory Update from Shopify SAGE 300",
         "url": "/integration/ic-inventory-update/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
