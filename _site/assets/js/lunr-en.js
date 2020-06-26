@@ -2331,7 +2331,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Sales Order Add from Shopify to SAGE 300",
-      excerpt: "\n",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 257
@@ -5249,7 +5249,7 @@ var store = [
       {
         "title": "Sales Order Add from Shopify to SAGE 300",
         "url": "/integration/sales-order-add/",
-        "excerpt": "\n",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
