@@ -57,6 +57,9 @@ Here you can view the data `MA57` successfully updated in SAGE 300.
 
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 Following the above procedures, you can successfully sync updated details of a customer from Magento 2 to SAGE 300.
 
 

@@ -70,5 +70,8 @@ You can view the data sync in Magento 2 by navigating to `Catalog > Products.`
 ## Frequency of Use:
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 Following the above procedures, you can successfully sync the updated inventory from SAGE 300 to Magento2.
 

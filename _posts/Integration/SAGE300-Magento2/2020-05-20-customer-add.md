@@ -91,6 +91,9 @@ Here you can view the data **MA57** successfully synced in SAGE 300.
 
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 ## Troubleshooting:
 
 1.	**Remote Server returned an error: (409) Conflict.**

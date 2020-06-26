@@ -111,4 +111,7 @@ You can view the data sync inMagento by navigating to `Order Shipments tab` avai
 
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 Following the above procedures, you can successfully sync Shipments from SAGE 300 to Magento2.

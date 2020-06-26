@@ -7,5 +7,5 @@ menus:
     shopifysageintegration:
         title: "Shipment Add from Shopify to SAGE 300"
         icon: fa fa-wpexplorer
-        identifier: shopifysage300integration
+        identifier: shopifysage300shipmentadd
 ---
