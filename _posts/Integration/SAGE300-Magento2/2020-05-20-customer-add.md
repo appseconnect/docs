@@ -12,7 +12,7 @@ menus:
 
 Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Magento2 to SAGE  300.
 
-## Brief Description
+## Brief Description:
 
 ![custadd1](\staticfiles\integration\Sage300-Magento\custadd1.png)
 
