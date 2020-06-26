@@ -7,7 +7,7 @@ menus:
    shopifysageintegration:
         title: "Customer Add"
         icon: fa fa-wpexplorer
-        identifier: shopifysagecustadd
+        identifier: shopifysagecustomeradd
 ---
 Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Shopify to SAGE  300.
 
@@ -54,6 +54,9 @@ Here you can view the data **BLANK** successfully synced in SAGE 300.
 ## Frequency of Use:
 
 The user can execute the Integration through workflow as and when required. 
+
+## Limitations:
+NA
 
 ## Troubleshooting:
 

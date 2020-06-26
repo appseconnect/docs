@@ -91,4 +91,7 @@ Here, you can view the order for the customer Mr Brandon P Summers in SAGE 300, 
 
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 Following the above procedures, you can successfully sync Sales Orders from Magento2 to SAGE 300.

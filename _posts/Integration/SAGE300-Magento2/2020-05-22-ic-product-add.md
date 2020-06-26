@@ -76,6 +76,9 @@ You can view the data sync in Magento 2 by navigating to `Catalog > Products.`
 
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 Following the above procedures, you can successfully sync Products from SAGE 300 to Magento2.
 
 

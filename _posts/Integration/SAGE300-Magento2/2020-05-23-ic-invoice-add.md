@@ -80,6 +80,9 @@ You can view the data synced in Magento by navigating to `Order Invoices tab` av
 
 The user can execute the Integration through workflow as and when required. 
 
+## Limitations:
+NA
+
 Following the above procedures, you can successfully sync Invoices from SAGE 300 to Magento2.
 
 
