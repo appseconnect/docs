@@ -2238,13 +2238,12 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#brief-description">Brief Description</a>
+  <li><a href="#brief-description">Brief Description:</a>
     <ul>
       <li><a href="#steps-generate-invoice-for-the-order-synced-to-sage-300-from-magento-2">Steps generate Invoice for the order synced to SAGE 300 from Magento 2.</a></li>
     </ul>
   </li>
-  <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
-  <li><a href="#attribute-mappingtransformation">Attribute Mapping/Transformation:</a></li>
+  <li><a href="#lookup-mapping">Lookup Mapping</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
@@ -2255,7 +2254,7 @@
                 
                 <p>Executing the process is a vital part when integrating any applications. This section of the document will let the users understand how the integration for the adding <strong>Invoice</strong> can be executed using a workflow from SAGE 300 to Magento2.</p>
 
-<h2 id="brief-description">Brief Description</h2>
+<h2 id="brief-description">Brief Description:</h2>
 
 <p><img src="\staticfiles\integration\Sage300-Magento\invadd1.PNG" alt="invadd1" /></p>
 
@@ -2297,25 +2296,9 @@
 
 <p><img src="\staticfiles\integration\Sage300-Magento\invadd3.PNG" alt="invadd3" /></p>
 
-<h2 id="lookup-mapping">Lookup Mapping:</h2>
+<h2 id="lookup-mapping">Lookup Mapping</h2>
 
 <p>N/A</p>
-
-<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation:</h2>
-
-<p>Following the Provided Mapping, user can successfully sync the Invoice Add Workflow from SAGE 300 to Magento2. To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
-
-<p>Mapping for the complex object collection <code class="highlighter-rouge">entity</code>.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\invadd4.PNG" alt="invadd4" /></p>
-
-<p>a. order_item_id: Maps the id of the order against the generated shipment.</p>
-
-<p>b. quantity: maps the quantity shipped.</p>
-
-<p>c. UploadURL: Maps the target location of Magento2.</p>
-
-<p>d. SourceKey: maps the shipment document id provided in SAGE 300.</p>
 
 <p><strong>Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow.</a> After Republishing, click on the Update Configuration button in the Agent.</strong></p>
 
