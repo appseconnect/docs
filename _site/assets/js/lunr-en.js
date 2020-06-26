@@ -2285,7 +2285,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Add from Shopify to SAGE 300",
+      title: "Customer Add from Magento2 to SAGE 300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2294,7 +2294,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Update from Magento2 to SAGE300",
+      title: "Customer Add from Shopify to SAGE 300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2303,7 +2303,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "I/C Product Add from SAGE300 to Magento2",
+      title: "Customer Update from Magento2 to SAGE300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2312,11 +2312,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "I/C Product Add from SAGE300 to Magento2",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 255
+    });
+    
+  
+    idx.add({
       title: "Sales Order Add from Magento 2 to SAGE 300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 255
+      id: 256
     });
     
   
@@ -2325,7 +2334,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 256
+      id: 257
     });
     
   
@@ -2334,7 +2343,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 257
+      id: 258
     });
     
   
@@ -2343,7 +2352,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 258
+      id: 259
     });
     
   
@@ -2352,7 +2361,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 259
+      id: 260
     });
     
   
@@ -2361,7 +2370,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 260
+      id: 261
     });
     
   
@@ -2370,7 +2379,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 261
+      id: 262
     });
     
   
@@ -2379,7 +2388,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 262
+      id: 263
     });
     
   
@@ -2388,7 +2397,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemasss and the action present in an app and can also add schema and add...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 263
+      id: 264
     });
     
   
@@ -2397,7 +2406,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 264
+      id: 265
     });
     
   
@@ -5173,6 +5182,17 @@ var store = [
         "title": "Shopify-Sage300",
         "url": "/integration/shopify-sage300/",
         "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Customer Add from Magento2 to SAGE 300",
+        "url": "/integration/customer-add-(2)/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
