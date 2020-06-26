@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="">
+<meta name="description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Updating Inventory from SAGE 300 to Shopify.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Updating Inventory from SAGE 300 to Shopify.">
 
 
 
@@ -2156,7 +2156,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="I/C Inventory Update from Shopify SAGE 300">
-        <meta itemprop="description" content="">
+        <meta itemprop="description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Updating Inventory from SAGE 300 to Shopify.">
         <meta itemprop="datePublished" content="May 23, 2020">
         
 
@@ -2225,7 +2225,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -2237,11 +2237,72 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        
+                        <ul class="toc__menu">
+  <li><a href="#brief-description">Brief Description:</a></li>
+  <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
+  <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
+  <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
+  <li><a href="#post-conditions">Post Conditions:</a></li>
+  <li><a href="#frequency-of-use">Frequency of Use:</a></li>
+</ul>
                     </nav>
                 </aside>
                 
-                
+                <p>Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Updating Inventory from SAGE 300 to Shopify.</p>
+
+<p><strong>Note: Before proceeding with this integration you need to integrate I/C Product Add from SAGE 300 to Shopify</strong></p>
+
+<h2 id="brief-description">Brief Description:</h2>
+<p><img src="\staticfiles\integration\SAGE300-Shopify\invupdate1.PNG" alt="Invupdate1" /></p>
+
+<p>Inventory update is used to integrate the quantity of products synced to Shopify from SAGE 300. Updates made in the quantity need to be managed in the Ecommerce platform better management of the products in terms of quantity available. <a href="/connectors/sage300/">Click here</a> to view the steps on how to Update Inventory in SAGE 300.</p>
+
+<p><img src="" alt="Invupdate2" /></p>
+
+<h2 id="lookup-mapping">Lookup Mapping:</h2>
+
+<p>For posting newly added quantity to Shopify from SAGE 300, you need to add Lookup for <code class="highlighter-rouge">Inventory Location</code>. For this integration, mapping lookups for inventory location is mandatory.</p>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\invupdate3.PNG" alt="Invupdate3" /></p>
+
+<p><strong><em>Note:</em></strong> <em>After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the <code class="highlighter-rouge">Update Configuration</code> button followed by <code class="highlighter-rouge">Update Lookup Tables</code> in the Agent.</em></p>
+
+<h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
+
+<ol>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</p>
+  </li>
+  <li>
+    <p>Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.</p>
+  </li>
+</ol>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\invupdate4.PNG" alt="Invupdate4" /></p>
+
+<ol>
+  <li>The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/deploying-and-executing/#executing-the-workflow">Click Here</a>.</li>
+</ol>
+
+<p><img src="" alt="Invupdate5" /></p>
+
+<h2 id="integration-data-survey">Integration Data Survey:</h2>
+
+<p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
+
+<p><img src="" alt="Invupdate6" /></p>
+
+<h2 id="post-conditions">Post Conditions:</h2>
+
+<p>You can view the quantity synced in Shopify by navigating to <code class="highlighter-rouge">Products &gt; All Products</code> page.</p>
+
+<p><img src="" alt="Invupdate7" /></p>
+
+<h2 id="frequency-of-use">Frequency of Use:</h2>
+<p>The user can execute the Integration through workflow as and when required.</p>
 
                 
             </section>
