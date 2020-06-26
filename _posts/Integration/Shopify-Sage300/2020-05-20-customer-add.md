@@ -31,11 +31,7 @@ For posting newly added customer to SAGE 300 from Shopify, you need to add Looku
 
 2.	Navigate to the Workflow Panel in the agent and click on the **Start Sync Button** for executing the Process.
 
-3.	Once the Execution is finished, click on the **Resync Button** (Highlighted Below) in the agent.
-
-![custadd3](\staticfiles\integration\SAGE300-Shopify\custadd3.PNG)
-
-4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
+3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
 
 ![custadd4](\staticfiles\integration\SAGE300-Shopify\custadd4.PNG)
 
