@@ -1656,12 +1656,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Adding and Managing - Schema & Actions">Adding and Managing - Schema & Actions</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Lookup-repository-masterdata/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/Lookup-repository-masterdata/" onclick="selectTab('/processflow/Lookup-repository-masterdata/', event);" title="Go to Creating Lookup Repository Masterdata">Creating Lookup Repository Masterdata</a>
         
@@ -2327,6 +2321,8 @@ nodes to the designer panel for operating as source application and destination 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Fprocessflow-app%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
+            
+            <div id="disqus_thread"></div>
 
             
 
@@ -2346,14 +2342,6 @@ nodes to the designer panel for operating as source application and destination 
                             
                             
                             
-                            
-                            
-                            
-
-                            
-
-                            
-
                             
                             
                             
@@ -4995,8 +4983,6 @@ nodes to the designer panel for operating as source application and destination 
                             
                             
                             
-                            
-                            
                         </ul>
                     </div>
                 </div>
@@ -5006,6 +4992,14 @@ nodes to the designer panel for operating as source application and destination 
         
 
 
+        
+        <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
         
     </article>
 </div>
@@ -5114,9 +5108,10 @@ nodes to the designer panel for operating as source application and destination 
 
 
     
-  <script>
+<script id="dsq-count-scr" src="https://appseconnect-docs.disqus.com/count.js" async></script>
+<script>
     var disqus_config = function () {
-      this.page.url = "/processflow/processflow-app/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/processflow/processflow-app/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/processflow/processflow-app"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -5125,7 +5120,7 @@ nodes to the designer panel for operating as source application and destination 
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-  </script>
+</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 

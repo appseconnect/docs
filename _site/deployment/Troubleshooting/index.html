@@ -1656,12 +1656,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Adding and Managing - Schema & Actions">Adding and Managing - Schema & Actions</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Lookup-repository-masterdata/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/Lookup-repository-masterdata/" onclick="selectTab('/processflow/Lookup-repository-masterdata/', event);" title="Go to Creating Lookup Repository Masterdata">Creating Lookup Repository Masterdata</a>
         
@@ -2244,10 +2238,11 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#scenario-1---agent-is-disconnectedblocked">Scenario 1 - Agent is Disconnected/Blocked</a></li>
-  <li><a href="#scenario-2---correctfilenotfound---while-configuring-an-application-in-the-op-agent">Scenario 2 - CorrectFileNotFound - While Configuring an Application in the OP Agent</a></li>
-  <li><a href="#scenario-3---nothing-to-post-to-sapoften-occurrs-while-integrating-with-sap-even-if-data-is-present-in-the-source-application">Scenario 3 - Nothing to POST to SAP(Often occurrs while Integrating with SAP even if data is present in the Source Application)</a></li>
-  <li><a href="#scenario-4---the-error-systemnullreferenceexception-occurs-during-update-configuration">Scenario 4 - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</a></li>
+  <li><a href="#troubleshooting--agent-is-disconnectedblocked">Troubleshooting:  Agent is Disconnected/Blocked</a></li>
+  <li><a href="#troubleshooting-correctfilenotfound---while-configuring-an-application-in-the-op-agent">Troubleshooting: CorrectFileNotFound - While Configuring an Application in the OP Agent</a></li>
+  <li><a href="#troubleshooting-nothing-to-post-to-sapoften-occurrs-while-integrating-with-sap-even-if-data-is-present-in-the-source-application">Troubleshooting: Nothing to POST to SAP(Often occurrs while Integrating with SAP even if data is present in the Source Application)</a></li>
+  <li><a href="#troubleshooting-the-error-systemnullreferenceexception-occurs-during-update-configuration">Troubleshooting: The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</a></li>
+  <li><a href="#troubleshooting-agent-upgraded-data-are-syncing-but-the-view-is-unavailable-in-the-sync-bucket">Troubleshooting: Agent Upgraded, Data are syncing but the view is unavailable in the Sync Bucket</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2255,13 +2250,13 @@
                 <p>While executing the integration process on the OP Agent, you may face Techno-Functionality errors common to executing the agent.
 Given below are common troubleshooting scenarios to ease the debugging areas.</p>
 
-<h3 id="scenario-1---agent-is-disconnectedblocked">Scenario 1 - Agent is Disconnected/Blocked</h3>
+<h3 id="troubleshooting--agent-is-disconnectedblocked">Troubleshooting:  Agent is Disconnected/Blocked</h3>
 <p><img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png" alt="agent-disconnected" /></p>
 
 <p>When setting up the environment for the sync process, the environment for selected agent displays the message <code class="highlighter-rouge">Agent is Disconnected</code>. Also, while logging in to the OP agent, 
 it displays the message <code class="highlighter-rouge">Agent is Blocked</code>. This is due to the reason that the agent has been detached from the portal.</p>
 
-<p><strong>Troubleshooting for Scenario 1:</strong></p>
+<p><strong>Steps to Troubleshooting:</strong></p>
 
 <ul>
   <li>Login to the portal and navigate to Manage &gt; Environment.</li>
@@ -2280,11 +2275,11 @@ it displays the message <code class="highlighter-rouge">Agent is Blocked</code>.
       (b) Old agent users would get the message as <code class="highlighter-rouge">Your agent is deactivated</code>. Please contact the administrator while logging in to OP Agent. <br />
           The steps to troubleshoot the error is common to this scenario. Old agent users could troubleshoot easily following the above given steps.</p>
 
-<h3 id="scenario-2---correctfilenotfound---while-configuring-an-application-in-the-op-agent">Scenario 2 - CorrectFileNotFound - While Configuring an Application in the OP Agent</h3>
+<h3 id="troubleshooting-correctfilenotfound---while-configuring-an-application-in-the-op-agent">Troubleshooting: CorrectFileNotFound - While Configuring an Application in the OP Agent</h3>
 
 <p><img src="/staticfiles/deployment/media/Troubleshooting/AppConfig-Error.png" alt="AppConfig-Error" /></p>
 
-<p><strong>Troubleshooting for Scenario 2:</strong></p>
+<p><strong>Steps to Troubleshooting:</strong></p>
 
 <ul>
   <li>Check the Adapters folder inside the APPSeCONNECT system folder. Now Check for the Application Adapter (.dll file) present or not. 
@@ -2300,21 +2295,21 @@ If the adapter file is missing, Click UPDATE ADAPTERS in the agent.</li>
   <li>Log Off and Exit the agent and Open again. Check your App Configuration Page.</li>
 </ul>
 
-<h3 id="scenario-3---nothing-to-post-to-sapoften-occurrs-while-integrating-with-sap-even-if-data-is-present-in-the-source-application">Scenario 3 - Nothing to POST to SAP(Often occurrs while Integrating with SAP even if data is present in the Source Application)</h3>
+<h3 id="troubleshooting-nothing-to-post-to-sapoften-occurrs-while-integrating-with-sap-even-if-data-is-present-in-the-source-application">Troubleshooting: Nothing to POST to SAP(Often occurrs while Integrating with SAP even if data is present in the Source Application)</h3>
 <p><img src="/staticfiles/deployment/media/Troubleshooting/TransactionLog-Error.png" alt="TransactionLog-Error" /></p>
 
-<p><strong>Troubleshooting for Scenario 3</strong></p>
+<p><strong>Steps to Troubleshooting:</strong></p>
 
 <ul>
   <li>Execute the integration again by deleting the TEMP and the CACHE files.</li>
   <li>Also switch OFF &amp; ON the DI server before executing with the Integration for the 2nd Time.</li>
 </ul>
 
-<h3 id="scenario-4---the-error-systemnullreferenceexception-occurs-during-update-configuration">Scenario 4 - The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</h3>
+<h3 id="troubleshooting-the-error-systemnullreferenceexception-occurs-during-update-configuration">Troubleshooting: The error System.NullReferenceException, occurs during UPDATE CONFIGURATION.</h3>
 
 <p><img src="/staticfiles/deployment/media/Troubleshooting/SystemError-UpdateConfig.png" alt="SystemError-UpdateConfig" /></p>
 
-<p><strong>Troubleshooting for Scenario 3</strong></p>
+<p><strong>Steps to Troubleshooting:</strong></p>
 
 <ul>
   <li>Log Off and Exit your agent from your Taskbar. Close the Autosync Process from the Task Manager.</li>
@@ -2330,6 +2325,27 @@ If the adapter file is missing, Click UPDATE ADAPTERS in the agent.</li>
 
 <p><strong>NOTE: InSync.eConnect.NLogModule.dll is a system file, generated only during the agent installation. 
 Updating Adapters will not fetch this file back.</strong></p>
+
+<h3 id="troubleshooting-agent-upgraded-data-are-syncing-but-the-view-is-unavailable-in-the-sync-bucket">Troubleshooting: Agent Upgraded, Data are syncing but the view is unavailable in the Sync Bucket</h3>
+
+<p>The sync bucket is showing blank, although data has been synced.</p>
+
+<p><img src="../../staticfiles/deployment/media/Troubleshooting/troublshooting-syncdata.PNG" alt="Troublshooting Syncdata" /></p>
+
+<p><strong>Steps to Troubleshooting:</strong></p>
+<ul>
+  <li>Upgrade the Agent Version (In case of both Cloud &amp; OP)</li>
+  <li>Open the <a href="/deployment/upgradation-and-migration/">Migration</a> tool</li>
+  <li>Choose the option <code class="highlighter-rouge">Migrate All Timestamp</code>  <br />
+<img src="/staticfiles/deployment/media/Migration/MIgrationTool-Snapshot.png" alt="MIgrationTool-Snapshot" /></li>
+  <li>Run the Migration Tool</li>
+  <li>Enable Environment</li>
+  <li>Now sync data and you will be able to view the data in the sync bucket.</li>
+</ul>
+
+<p><strong>NOTE: Choosing <code class="highlighter-rouge">Migrate All Timestamp</code> will take time depending on the volume of your data,
+so plan it according to the business requirement</strong></p>
+
 
                 
             </section>
@@ -2395,6 +2411,8 @@ Updating Adapters will not fetch this file back.</strong></p>
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fdeployment%2FTroubleshooting%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
+            
+            <div id="disqus_thread"></div>
 
             
 
@@ -4486,18 +4504,8 @@ Updating Adapters will not fetch this file back.</strong></p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
                             
                             
                             
@@ -5075,6 +5083,14 @@ Updating Adapters will not fetch this file back.</strong></p>
 
 
         
+        <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+        
     </article>
 </div>
 
@@ -5182,9 +5198,10 @@ Updating Adapters will not fetch this file back.</strong></p>
 
 
     
-  <script>
+<script id="dsq-count-scr" src="https://appseconnect-docs.disqus.com/count.js" async></script>
+<script>
     var disqus_config = function () {
-      this.page.url = "/deployment/Troubleshooting/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/deployment/Troubleshooting/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/deployment/Troubleshooting"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -5193,7 +5210,7 @@ Updating Adapters will not fetch this file back.</strong></p>
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-  </script>
+</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 

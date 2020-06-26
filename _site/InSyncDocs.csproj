@@ -457,6 +457,8 @@
     <Content Include="staticfiles\deployment\media\Troubleshooting\Error-UpdateAdapter.png" />
     <Content Include="staticfiles\deployment\media\Troubleshooting\SystemError-UpdateConfig.png" />
     <Content Include="staticfiles\deployment\media\Troubleshooting\TransactionLog-Error.png" />
+    <Content Include="staticfiles\deployment\media\Troubleshooting\troubleshooting-scenario4.png" />
+    <Content Include="staticfiles\deployment\media\Troubleshooting\troublshooting-syncdata.PNG" />
     <Content Include="staticfiles\generic-restadapter\Connectioncreation-restadapter.png.jpg" />
     <Content Include="staticfiles\generic-restadapter\ConnectionPage1.png" />
     <Content Include="staticfiles\generic-restadapter\RestApi_authentication.png" />
@@ -553,6 +555,8 @@
     <Content Include="staticfiles\processflow\media\delete_processflow1.PNG" />
     <Content Include="staticfiles\processflow\media\delete_processflow3.PNG" />
     <Content Include="staticfiles\processflow\media\delete_processflow4.PNG" />
+    <Content Include="staticfiles\processflow\media\deleting-schema.PNG" />
+    <Content Include="staticfiles\processflow\media\deleting-schema2.png" />
     <Content Include="staticfiles\processflow\media\deploy-processflow-env.png" />
     <Content Include="staticfiles\processflow\media\deploy-processflow-env2.png" />
     <Content Include="staticfiles\processflow\media\deploy-processflow1.png" />
@@ -615,6 +619,14 @@
     <Content Include="staticfiles\processflow\media\mapper\attributemapping-processflow7.png" />
     <Content Include="staticfiles\processflow\media\mapper\attributemapping-processflow8.png" />
     <Content Include="staticfiles\processflow\media\mapper\attributemapping-processflow9.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-1.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-2.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-3.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-4.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-5.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-6.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-7.png" />
+    <Content Include="staticfiles\processflow\media\mapper\cloudappresource-8.png" />
     <Content Include="staticfiles\processflow\media\mapper\create-basicprocessflow1.png" />
     <Content Include="staticfiles\processflow\media\mapper\getnode1.png" />
     <Content Include="staticfiles\processflow\media\mapper\getnode2.png" />
@@ -1040,6 +1052,7 @@
     <Content Include="staticfiles\workflow-management\media\DelayWorkflow.png" />
     <Content Include="staticfiles\workflow-management\media\ElementNode.png" />
     <Content Include="staticfiles\workflow-management\media\Email-snapshot.png" />
+    <Content Include="staticfiles\workflow-management\media\feed-sync-schedule.PNG" />
     <Content Include="staticfiles\workflow-management\media\FilterNode\FilterNode.png" />
     <Content Include="staticfiles\workflow-management\media\GetNode\ActionFilter.png" />
     <Content Include="staticfiles\workflow-management\media\GetNode\GetNode.png" />
@@ -1288,7 +1301,9 @@
     <None Include="_posts\Integration\Shopify-Sage300\2020-05-23-ic-shipment-add.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
-    <None Include="_posts\ProcessFlow Management\2020-03-22-adding-schema-actions.md" />
+    <None Include="_posts\ProcessFlow Management\adding-schema-actions.md" />
+    <None Include="_posts\ProcessFlow Management\2020-06-07-adding-schema-actions.md" />
+    <None Include="_posts\ProcessFlow Management\2020-06-09-working-with-variable.md" />
     <None Include="_posts\ProcessFlow Management\Mapper\2020-04-17-cloud-appresource-functions.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2018-09-24-working-with-decision.md" />
     <None Include="_posts\ProcessFlow Management\Nodes and Links\2020-05-14-working-with-processflow-selfloop.md" />

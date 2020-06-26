@@ -1656,12 +1656,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Adding and Managing - Schema & Actions">Adding and Managing - Schema & Actions</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Lookup-repository-masterdata/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/Lookup-repository-masterdata/" onclick="selectTab('/processflow/Lookup-repository-masterdata/', event);" title="Go to Creating Lookup Repository Masterdata">Creating Lookup Repository Masterdata</a>
         
@@ -2304,8 +2298,9 @@ b.	Grouping of environments:</p>
 <img src="/staticfiles/deployment/media/RevampedEnv/grouping-env.png" alt="grouping-env" /></li>
 </ul>
 
-<p><strong>Note: (a) Users will not be able to create a folder with same name.
-        (b) Only the created folder can be deleted. The default <code class="highlighter-rouge">HOME</code> folder will not have the delete button.</strong></p>
+<p><strong>Note:(a) Users will not be able to create a folder with same name.<br />
+        (b) Only the created folder can be deleted. The default <code class="highlighter-rouge">HOME</code> folder will not have the delete button.
+        (c) User will not be able to create and save any folder in listing page without naming the folder</strong></p>
 
 <h3 id="grouping-of-environments">Grouping of Environments</h3>
 
@@ -2608,6 +2603,8 @@ Real Time settings has two field for the configurations:</p>
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fdeployment%2FEnvironment-Management%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
+            
+            <div id="disqus_thread"></div>
 
             
 
@@ -4699,18 +4696,8 @@ Real Time settings has two field for the configurations:</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
                             
                             
                             
@@ -5288,6 +5275,14 @@ Real Time settings has two field for the configurations:</p>
 
 
         
+        <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+        
     </article>
 </div>
 
@@ -5395,9 +5390,10 @@ Real Time settings has two field for the configurations:</p>
 
 
     
-  <script>
+<script id="dsq-count-scr" src="https://appseconnect-docs.disqus.com/count.js" async></script>
+<script>
     var disqus_config = function () {
-      this.page.url = "/deployment/Environment-Management/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/deployment/Environment-Management/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/deployment/Environment-Management"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -5406,7 +5402,7 @@ Real Time settings has two field for the configurations:</p>
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-  </script>
+</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 

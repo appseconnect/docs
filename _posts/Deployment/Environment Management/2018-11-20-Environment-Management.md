@@ -40,8 +40,9 @@ b.	Grouping of environments:
  * User can also move the agents from one group to another.     
 ![grouping-env](/staticfiles/deployment/media/RevampedEnv/grouping-env.png)
 
-**Note: (a) Users will not be able to create a folder with same name.
-        (b) Only the created folder can be deleted. The default `HOME` folder will not have the delete button.**
+**Note:(a) Users will not be able to create a folder with same name.  
+        (b) Only the created folder can be deleted. The default `HOME` folder will not have the delete button.
+        (c) User will not be able to create and save any folder in listing page without naming the folder**
 
 ### Grouping of Environments      
 

@@ -1656,12 +1656,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Adding and Managing - Schema & Actions">Adding and Managing - Schema & Actions</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Lookup-repository-masterdata/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/Lookup-repository-masterdata/" onclick="selectTab('/processflow/Lookup-repository-masterdata/', event);" title="Go to Creating Lookup Repository Masterdata">Creating Lookup Repository Masterdata</a>
         
@@ -2250,6 +2244,7 @@
     <ul>
       <li><a href="#a-create-custom-app">(a) Create Custom App</a></li>
       <li><a href="#b-technology-app-creation">(b) Technology App Creation</a></li>
+      <li><a href="#viewing--editing-custom--technology-applications">Viewing &amp; Editing Custom &amp; Technology Applications:</a></li>
       <li><a href="#understanding-schemaentity">Understanding Schema/Entity</a></li>
       <li><a href="#understanding-schema-attributes">Understanding Schema Attributes</a></li>
       <li><a href="#understanding-custom-attributes">Understanding Custom Attributes</a></li>
@@ -2290,7 +2285,7 @@ Login to APPSeCONNECT - View <a href="https://portal.appseconnect.com/Account/Lo
       <td>You can successfully create custom or technology based applications as per requirement. Follow the steps given here tp create custom or a technology app. For Custom and Technology application, you can delete the application by selecting the delete option from the VIEW drop-down.</td>
     </tr>
     <tr>
-      <td><a href="/connectors/OLEDB-Credentials/">Providing Cloud Credentials</a></td>
+      <td><a href="/connectors/OLEDB-Credentials/">Providing Credentials</a></td>
       <td>Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.</td>
     </tr>
     <tr>
@@ -2444,6 +2439,26 @@ Description and the Adapter Technology for adding Specific App (a business requi
 <p>View <a href="/connectors/Overview-of-technology-connectors/">Technology Apps</a> section for more details.</p>
 
 <p class="notice--info"><strong>Protip</strong> Currently we are using only these Technology Adapter - FILE, REST, OLEDB &amp; FTP.</p>
+
+<h3 id="viewing--editing-custom--technology-applications">Viewing &amp; Editing Custom &amp; Technology Applications:</h3>
+
+<ol>
+  <li>Once your application is created, you can view the following interface of you Custom/Technology App. You can view a <code class="highlighter-rouge">VIEW</code> button beside your created application.</li>
+</ol>
+
+<p><img src="\staticfiles\root\media\customview1.png" alt="customview1" /></p>
+
+<ol>
+  <li>Click on the view button, you will able to edit the following details as provided in the screen below.</li>
+</ol>
+
+<p><img src="\staticfiles\root\media\customview2.png" alt="customview2" /></p>
+
+<ol>
+  <li>You can also delete the created application if required by click on the delete button available under the drop-down of the <code class="highlighter-rouge">VIEW</code> button.</li>
+</ol>
+
+<p><strong>Note: You cannot delete the application if it is associated with any connection.</strong></p>
 
 <h3 id="understanding-schemaentity">Understanding Schema/Entity</h3>
 
@@ -2699,6 +2714,8 @@ This section enables the user to view and add the Schema and its Actions.</p>
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fgetting%2520started%2Fconfigurations%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
+            
+            <div id="disqus_thread"></div>
 
             
 
@@ -4790,18 +4807,8 @@ This section enables the user to view and add the Schema and its Actions.</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
-                            
-                            
                             
                             
                             
@@ -5379,6 +5386,14 @@ This section enables the user to view and add the Schema and its Actions.</p>
 
 
         
+        <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+        
     </article>
 </div>
 
@@ -5486,9 +5501,10 @@ This section enables the user to view and add the Schema and its Actions.</p>
 
 
     
-  <script>
+<script id="dsq-count-scr" src="https://appseconnect-docs.disqus.com/count.js" async></script>
+<script>
     var disqus_config = function () {
-      this.page.url = "/getting%20started/configurations/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/getting%20started/configurations/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/getting%20started/configurations"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -5497,7 +5513,7 @@ This section enables the user to view and add the Schema and its Actions.</p>
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-  </script>
+</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
