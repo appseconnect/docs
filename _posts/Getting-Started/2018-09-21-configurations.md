@@ -16,8 +16,8 @@ Login to APPSeCONNECT - View [Home Page](https://portal.appseconnect.com/Account
 
 |Sections|Details|
 |---|---|
-|[Choosing Applications](/getting%20started/configurations/#process-of-choosing-app) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
 |[Searching Application](/getting%20started/configurations/#searching-applications)| You can filter all your added applications by searching application. Visit the section to know more about searching application.| 
+|[Choosing Applications](/getting%20started/configurations/#process-of-choosing-app) |User needs to choose the applications as per the requirement of the user. This is the very first step while proceeding with the integration process|
 |[Creating Applications](/getting%20started/configurations/#create-application) | You can successfully create custom or technology based applications as per requirement. Follow the steps given here tp create custom or a technology app. For Custom and Technology application, you can delete the application by selecting the delete option from the VIEW drop-down.|
 |[Providing Credentials](/connectors/OLEDB-Credentials/)|Working with cloud integration, you need to provide credentials on the cloud platform. This section will only be available for those application that supports cloud technology. Follow the process to know and understand the process to provide credentials on cloud.|
 |[Understanding Schema and Entity](/getting%20started/configurations/#understanding-schemaentity)|Every application has its schema and entity and for integrating with applications|
@@ -27,6 +27,15 @@ Login to APPSeCONNECT - View [Home Page](https://portal.appseconnect.com/Account
 |[Functions](/transformation/using-library-methods/)| This section will help with the functions that are available for your chosen application. You can also create more Cloud Appresource functions.|
 |[Protocols](/getting%20started/configurations/#protocol)| This section will help to work with protocols for the technology and custom created applications with in an organisation.|
 |[Delete](/getting%20started/configurations/#delete)| You can easily delete your selected applications by clicking on the delete button. Visit the section to know more about the delete functionality.|
+
+## Searching Applications: 
+
+You can eaily filter all your added applications by the SEARCH functionality. You can filter your applications as per the process given below:
+
+- Search by Name: You can search your applications by typing its name on the search box.
+- Search by Category: You can also search your application by selecting the category of your application. For Eg: Marketing, ERP, POS, Human Resource etc.
+
+![Appsearch](\staticfiles\root\media\appsearch.png)
 
 ##  Process of Choosing App 
 
@@ -48,14 +57,6 @@ User can also get an option for creating a Custom application or technology app.
 
 Here you can view the details of the respective buttons [Schema](/configuring%20appseconnect/configurations/#appseconnect-schemaentity),[Adapters](/configuring%20appseconnect/configurations/#adapter),[Function](/configuring%20appseconnect/configurations/#functions) & [Delete](/configuring%20appseconnect/configurations/#delete).
 
-## Searching Applications: 
-
-You can eaily filter all your added applications by the SEARCH functionality. You can filter your applications as per the process given below:
-
-- Search by Name: You can search your applications by typing its name on the search box.
-- Search by Category: You can also search your application by selecting the category of your application. For Eg: Marketing, ERP, POS, Human Resource etc.
-
-![Appsearch](\staticfiles\root\media\appsearch.png)
 
 ## Create Application
 

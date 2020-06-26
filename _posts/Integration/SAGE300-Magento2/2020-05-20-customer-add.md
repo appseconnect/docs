@@ -20,7 +20,7 @@ Here, the Touchpoint Customer is used for syncing multiples customers from [Mage
 
 Login to Magento 2 Application and [add customers](https://docs.magento.com/m2/ce/user_guide/customers/account-create.html) in Magento2.
 
-## Lookup Mapping: 
+## Lookup Mapping 
 
 For posting newly added customer to SAGE 300 from Magento, you need to add Lookup for Customer Group & Tax. For this integration of Customer, mapping lookups for the group code of Customer & Tax is mandatory.
 

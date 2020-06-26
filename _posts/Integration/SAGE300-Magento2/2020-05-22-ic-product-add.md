@@ -11,7 +11,7 @@ menus:
 ---
 Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding Products/items from SAGE  300 to Magento2.
 
-## Brief Description:
+## Brief Description
 
 ![productadd1](\staticfiles\integration\Sage300-Magento\productadd1.png)
 

@@ -45,25 +45,9 @@ d. The order must be present in both the application for whose Invoice is genera
 
 ![invadd3](\staticfiles\integration\Sage300-Magento\invadd3.PNG)
 
-## Lookup Mapping: 
+## Lookup Mapping 
 
 N/A
-
-## Attribute Mapping/Transformation:
-
-Following the Provided Mapping, user can successfully sync the Invoice Add Workflow from SAGE 300 to Magento2. To know more, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
-
-Mapping for the complex object collection `entity`.
-
-![invadd4](\staticfiles\integration\Sage300-Magento\invadd4.PNG)
-
-a. order_item_id: Maps the id of the order against the generated shipment.
-
-b. quantity: maps the quantity shipped.
-
-c. UploadURL: Maps the target location of Magento2.
-
-d. SourceKey: maps the shipment document id provided in SAGE 300.
 
 **Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow.](/workflow/deploying-and-executing/#publishing-a-workflow) After Republishing, click on the Update Configuration button in the Agent.**
 
