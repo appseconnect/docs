@@ -31,14 +31,10 @@ Same as [Customer Add](/integration/customer-add/).
 ## Executing the Integration using Workflow:
 
 1.	Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. [Click here](/workflow/deploying-and-executing/) to know more about the deploying process of a workflow.
+
 2.	Navigate to the Workflow Panel in the agent and click on the **Start Sync Button** for executing the Process.
-3.	Once the Execution is finished, click on the **Resync Button** (Highlighted Below) in the agent.
 
-![custupdate3](\staticfiles\integration\Sage300-Magento\custupdate3.png)
-
-4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
-
-![custupdate4](\staticfiles\integration\Sage300-Magento\custupdate4.png)
+3. You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
 
 ## Integration Data Survey:
 

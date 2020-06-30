@@ -2,7 +2,7 @@
 title: "Sales Order Add from Shopify to SAGE 300"
 toc: true
 tag: developers
-category: "Integration"
+category: "Integration/Sage-Shopify"
 menus: 
    shopifysageintegration:
         title: "Sales Order Add"
@@ -13,19 +13,19 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 ## Brief Description
 
-![orderadd1]()
+![orderadd1](\staticfiles\integration\SAGE300-Shopify\orderadd1.PNG)
 
 A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Shopify for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. [Click here](https://help.shopify.com/en/manual/orders/create-orders) to know more about generating Sales Orders in Shopify.
 
 Here, an Order is placed for the customer Lonnie K Croker, against the product Seinhieser Double Bass Headset.
 
-![orderadd2]()
+![orderadd2](\staticfiles\integration\SAGE300-Shopify\orderadd2.PNG)
 
 ## Lookup Mapping:
 
 For integrating, Sales Orders from Shopify to Sage 300, you need to add lookups for Frieght & Tax Code.
 
-![orderadd3]()
+![orderadd3](\staticfiles\integration\SAGE300-Shopify\orderadd3.PNG)
 
 **Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow.](/workflow/deploying-and-executing/#publishing-a-workflow) After Republishing, click on the Update Configuration button followed by Update Lookup Tables in the On-Premise Agent.**
 
@@ -35,22 +35,20 @@ For integrating, Sales Orders from Shopify to Sage 300, you need to add lookups 
 
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 
-3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
-
-![orderadd4]()
+3.  You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
 ## Integration Data Survey:
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![orderadd5]()
+![orderadd5](\staticfiles\integration\SAGE300-Shopify\orderadd5.PNG)
 
-Here, you can view the Order `PlaceHolder` got successfully synced to SAGE 300.
+Here, you can view the Order for the customer `Lonnie K Croker` got successfully synced to SAGE 300.
 
 ## Post Conditions:
 You can view the data sync in SAGE 300 by navigating to `Order Entry > O/E transactions > Order Entry `. Search the Order post with the order number, and you ccan view the order details.
 
-![orderadd6]()
+![orderadd6](\staticfiles\integration\SAGE300-Shopify\orderadd6.PNG)
 
 Here, you can view the order for the customer Lonnie K Croker in SAGE 300, with the complete order details.
 

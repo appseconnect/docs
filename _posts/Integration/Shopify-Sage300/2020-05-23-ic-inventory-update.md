@@ -2,7 +2,7 @@
 title: "I/C Inventory Update from Shopify SAGE 300"
 toc: true
 tag: developers
-category: "Integration"
+category: "Integration/Sage-Shopify"
 menus: 
     shopifysageintegration:
         title: "I/C Inventory Update from Shopify SAGE 300"
@@ -34,14 +34,8 @@ For posting newly added quantity to Shopify from SAGE 300, you need to add Looku
 
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 
-3.	Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.
+3.	You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
-![Invupdate4](\staticfiles\integration\SAGE300-Shopify\invupdate4.PNG)
-
-4.	The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
-
-![Invupdate5]()
- 
 ## Integration Data Survey:
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
@@ -51,8 +45,6 @@ You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-sn
 ## Post Conditions:
 
 You can view the quantity synced in Shopify by navigating to `Products > All Products` page.
-
-![Invupdate7]()
 
 ## Frequency of Use:
 The user can execute the Integration through workflow as and when required. 

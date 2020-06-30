@@ -25,7 +25,7 @@ SAP Business One follows two more protocols **DI API** & **FTP** for other purpo
 
 **_Note_**: _You can anytime view the differences of these protocols in XSLT preview of Mapper Node._
 
-## Prerequisites for Protocol Implementation in Process Flow:
+## Prerequisites for Protocol Implementation in Process Flow
 
 1. You need to have basic knowledge of the protocol used by the application selected by you.
 
@@ -43,12 +43,11 @@ SAP Business One follows two more protocols **DI API** & **FTP** for other purpo
 
 3. On dragging the [destination application](/processflow/working-with-POST/), the Node Configuration Window opens. 
 
-[Image]
+![protocol1]()
 
 4. You need to select the **Protocols** from the drop-down. The protocols would be displayed as per the App version selected. For SAP Business One (version >= 8.8), you will get the following protocols. 
 
-[Image]
-
+![protocol2]()
 5. Click on the SAVE button after all the mandatory fields are filled up. 
 
 6. Link up the Node and Save the Process Flow. Click on the Node configuration Button of the [Mapper Node](/processflow/working-with-mapper/). The Mapper Window opens.
@@ -57,19 +56,19 @@ SAP Business One follows two more protocols **DI API** & **FTP** for other purpo
 
 8. When the Protocol is selected as **DI API** you get the following XSLT Preview.
 
-[Image]
+![protocol3]()
 
 9. When the Protocol is selected as **DI Server Object**, you get the following XSLT Preview.
 
-[Image]
+![protocol4]()
 
 10. When the Protocol is selected as **DI Server Service**, you get the following XSLT Preview
 
-[Image]
+![protocol5]()
 
 11. When the protocol is selected as **FTP**, you get the the following XSLT Preview.
 
-[Image]
+![protocol6]()
 
 Following the above process you can successfully select a protocol for an application performing POST operation.
 
