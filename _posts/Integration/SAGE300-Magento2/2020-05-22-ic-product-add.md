@@ -27,23 +27,7 @@ Here, we have created a product iPhone 11 Max Pro with the Item ID `01-ST1-B.`
 
 Not Required but every business processes are unique may require lookup mapping. In such cases, [click here](/transformation/using-lookups-for-value-exchange/) to know more about Lookup Mapping.
 
-## Attribute Mapping/Transformation:
-
-The mapping provided below will enable the user to sync the IC Products from SAGE 300 to Magento 2. To know more, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/)
-
-Mapping for the Complex Object Collection **`Product`** for Customer Add Touchpoint:
-
-![productadd3](\staticfiles\integration\Sage300-Magento\productadd3.png)
-
-1. sku: Maps the field of Item in SAGE 300
-2. name: Maps the Description of the Item with SAGE 300
-3. price: Maps the price of the item with SAGE 300
-4. attribute_set_id: Maps the id of attribute set as an optional field for creating the item.
-5. type_id: Maps the Item type
-6. UploadURL: Maps the target location of the sync process
-7. weight: Maps the weight of the item.
-
-**Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow.](/workflow/deploying-and-executing/#publishing-a-workflow) After Republishing, click on the Update Configuration button in the Agent.**
+**Note:** After mapping changes is done, `Reset Generate` and `Reset Publish` the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow](/workflow/deploying-and-executing/#publishing-a-workflow). After Republishing, click on the Update Configuration and Update Lookup Tables button in the Agent.
 
 ## Executing the Integration using Workflow:
 
@@ -58,9 +42,6 @@ Mapping for the Complex Object Collection **`Product`** for Customer Add Touchpo
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![productadd6](\staticfiles\integration\Sage300-Magento\productadd6.png)
-
-Here, you can view the product `01-ST1-B` got successfully synced to Magento 2.
 
 ## Post Conditions:
 You can view the data sync in Magento 2 by navigating to `Catalog > Products.`
