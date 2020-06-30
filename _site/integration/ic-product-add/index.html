@@ -2225,7 +2225,7 @@
 
 
 
-  2 minute read
+  1 minute read
 </p>
                 
                 
@@ -2240,7 +2240,6 @@
                         <ul class="toc__menu">
   <li><a href="#brief-description">Brief Description:</a></li>
   <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
-  <li><a href="#attribute-mappingtransformation">Attribute Mapping/Transformation:</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
@@ -2268,25 +2267,7 @@
 
 <p>Not Required but every business processes are unique may require lookup mapping. In such cases, <a href="/transformation/using-lookups-for-value-exchange/">click here</a> to know more about Lookup Mapping.</p>
 
-<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation:</h2>
-
-<p>The mapping provided below will enable the user to sync the IC Products from SAGE 300 to Magento 2. To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a></p>
-
-<p>Mapping for the Complex Object Collection <strong><code class="highlighter-rouge">Product</code></strong> for Customer Add Touchpoint:</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\productadd3.png" alt="productadd3" /></p>
-
-<ol>
-  <li>sku: Maps the field of Item in SAGE 300</li>
-  <li>name: Maps the Description of the Item with SAGE 300</li>
-  <li>price: Maps the price of the item with SAGE 300</li>
-  <li>attribute_set_id: Maps the id of attribute set as an optional field for creating the item.</li>
-  <li>type_id: Maps the Item type</li>
-  <li>UploadURL: Maps the target location of the sync process</li>
-  <li>weight: Maps the weight of the item.</li>
-</ol>
-
-<p><strong>Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow.</a> After Republishing, click on the Update Configuration button in the Agent.</strong></p>
+<p><strong>Note:</strong> After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration and Update Lookup Tables button in the Agent.</p>
 
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
@@ -2305,10 +2286,6 @@
 <h2 id="integration-data-survey">Integration Data Survey:</h2>
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\productadd6.png" alt="productadd6" /></p>
-
-<p>Here, you can view the product <code class="highlighter-rouge">01-ST1-B</code> got successfully synced to Magento 2.</p>
 
 <h2 id="post-conditions">Post Conditions:</h2>
 <p>You can view the data sync in Magento 2 by navigating to <code class="highlighter-rouge">Catalog &gt; Products.</code></p>

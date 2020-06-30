@@ -2225,7 +2225,7 @@
 
 
 
-  3 minute read
+  2 minute read
 </p>
                 
                 
@@ -2240,7 +2240,6 @@
                         <ul class="toc__menu">
   <li><a href="#brief-description">Brief Description:</a></li>
   <li><a href="#lookup-mapping">Lookup Mapping</a></li>
-  <li><a href="#attribute-mapping">Attribute Mapping:</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
@@ -2267,41 +2266,7 @@
 
 <p><img src="\staticfiles\integration\Sage300-Magento\custadd2.png" alt="custadd2" /></p>
 
-<h2 id="attribute-mapping">Attribute Mapping:</h2>
-
-<p>The mapping provided below will enable the user to sync the Customers from Magento2 to SAGE 300. To know more, see <a href="/transformation/overview-usecase/">Mapping &amp; Transformation Techniques.</a></p>
-
-<p>Mapping for the Complex Object Collection <code class="highlighter-rouge">Customers</code> for Customer Add Touchpoint:</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd3.png" alt="custadd3" /></p>
-
-<p>a.	<strong>Customer Number:</strong> Here, the customer id is mapped with the id in Magento2.</p>
-
-<p>b.	<strong>Customer Name:</strong> The customer name field of SAGE 300 is mapped with the customer name field of Magento for transforming the name of the customer with respect to id mapped above.</p>
-
-<p>c.	<strong>Group Code:</strong> Map the customer group code whose Lookup is initialized.</p>
-
-<p>d.	<strong>Tax Group:</strong> Map the tax group whose lookup is initialized.</p>
-
-<p>e.	<strong>AddressLine1:</strong> Mapping the address field of SAGE 300 with Magento 2</p>
-
-<p>f.	<strong>AddressLine2:</strong> Mapping the address field of SAGE 300 with Magento 2</p>
-
-<p>g.	<strong>City:</strong> Mapping the field City of Sage 300 with the field in Magento2</p>
-
-<p>h.	<strong>StateProvince:</strong> Mapping the field of the State (Part of Address Detail) of the customer with the field in Magento 2.</p>
-
-<p>i.	<strong>ZipPostalCode:</strong>  Mapping field of Zip postal code of SAGE 300 with the field in Magento 2.</p>
-
-<p>j.	<strong>Country:</strong> Mapping the field Country with the field in Magento 2</p>
-
-<p>k.	<strong>Email:</strong> Mapping the Email with the field in Magento 2</p>
-
-<p>l.	<strong>PhoneNumber:</strong> Mapping the contact number of the customer with field in Magento 2</p>
-
-<p>m.	<strong>UploadURL:</strong> This field define the Route to SAGE 300 for data storage.</p>
-
-<p><strong>Note</strong>: After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow design panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration button in the Agent.</p>
+<p><strong>Note</strong>: After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow design panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration followed by the Update Lookup Tables button in the Agent.</p>
 
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
@@ -2320,8 +2285,6 @@
 <h2 id="integration-data-survey">Integration Data Survey:</h2>
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\custadd6.png" alt="custadd6" /></p>
 
 <h2 id="post-conditions">Post Conditions:</h2>
 <p>You can view the data sync in SAGE 300 by viewing the <code class="highlighter-rouge">Accounts Receivable &gt; A/R Customers.</code>

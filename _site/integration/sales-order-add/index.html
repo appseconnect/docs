@@ -2225,7 +2225,7 @@
 
 
 
-  2 minute read
+  1 minute read
 </p>
                 
                 
@@ -2240,7 +2240,6 @@
                         <ul class="toc__menu">
   <li><a href="#brief-description">Brief Description</a></li>
   <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
-  <li><a href="#attribute-mappingtransformation">Attribute Mapping/Transformation:</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
@@ -2270,34 +2269,6 @@
 
 <p>After placing the lookups for the connections, Publish the Connection, Update Lookup Tables in Agent followed by Update Configuration.</p>
 
-<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation:</h2>
-
-<p>Following the Provided Mapping,  user can successfully sync the Order Add Workflow from Magento2 to SAGE 300. To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
-
-<p>Mapping for the ComplexObjectCollection <code class="highlighter-rouge">OEOrders</code>:</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd4.png" alt="orderadd4" /></p>
-
-<p>a. Order Number: Maps the field of the Order Id of Magento2.</p>
-
-<p>b. Customer Number: Maps the customer ID of the placed order.</p>
-
-<p>c. Bill to Name: Maps the name of the customer against whom the order is placed.</p>
-
-<p>d. Bill to address: Maps the address of the customer whose order is placed.</p>
-
-<p>e. Bill to City: Maps the field City with the field of Magento 2.</p>
-
-<p>f. Bill to country: Maps the field Country with field of Magento 2.</p>
-
-<p>g. Tax Group: Maps the Tax group allocated to the user in lookup tables.</p>
-
-<p>f. Upload URL: Maps the target location of the sync process.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd5.png" alt="orderadd5" /></p>
-
-<p><strong>Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow.</a> After Republishing, click on the Update Configuration button in the Agent.</strong></p>
-
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
 <ol>
@@ -2322,8 +2293,6 @@
 
 <h2 id="post-conditions">Post Conditions:</h2>
 <p>You can view the data sync in SAGE 300 by navigating to <code class="highlighter-rouge">Order Entry &gt; O/E transactions &gt; Order Entry </code>. Search the Order post with the order number, and you ccan view the order details.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\orderadd9.png" alt="orderadd9" /></p>
 
 <p>Here, you can view the order for the customer Mr Brandon P Summers in SAGE 300, with the complete order details.</p>
 

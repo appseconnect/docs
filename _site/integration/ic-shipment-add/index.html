@@ -2244,7 +2244,6 @@
     </ul>
   </li>
   <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
-  <li><a href="#attribute-mappingtransformation">Attribute Mapping/Transformation:</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
@@ -2321,25 +2320,7 @@
 
 <p>N/A</p>
 
-<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation:</h2>
-
-<p>Following the Provided Mapping, user can successfully sync the Workflow for adding Shipment from Magento2 to SAGE 300. To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
-
-<p>Mapping for the complex object collection <code class="highlighter-rouge">entity</code>.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\shipadd7.PNG" alt="shipadd7" /></p>
-
-<p>a. order_item_id: Maps the id of the order against the generated shipment.</p>
-
-<p>b. quantity: maps the quantity shipped.</p>
-
-<p>c. UploadURL: Maps the target location of Magento2.</p>
-
-<p>d. track_number: maps the shipment tracking number provided while generating the shipment in SAGE 300</p>
-
-<p>e. SourceKey: maps the shipment document id provided in SAGE 300.</p>
-
-<p><strong>Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow.</a> After Republishing, click on the Update Configuration button in the Agent.</strong></p>
+<p><strong>Note:</strong> After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration button in the Agent.</p>
 
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
@@ -2351,17 +2332,13 @@
     <p>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</p>
   </li>
   <li>
-    <p>The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/deploying-and-executing/#executing-the-workflow">Click Here</a>.</p>
+    <p>You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/deploying-and-executing/#executing-the-workflow">Click Here</a>.</p>
   </li>
 </ol>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\shipadd9.PNG" alt="shipadd9" /></p>
 
 <h2 id="integration-data-survey">Integration Data Survey:</h2>
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\shipadd10.PNG" alt="shipadd10" /></p>
 
 <h2 id="post-conditions">Post Conditions:</h2>
 <p>You can view the data sync inMagento by navigating to <code class="highlighter-rouge">Order Shipments tab</code> available in the <code class="highlighter-rouge">Order Details Page</code> of the customer.</p>
