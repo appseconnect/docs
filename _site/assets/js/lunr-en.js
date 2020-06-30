@@ -2268,7 +2268,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Shopify-Sage300",
-      excerpt: "\n",
+      excerpt: "This section of the document will given you an overview of SAGE 300 - Shopify Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
       id: 250
@@ -2287,7 +2287,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Customer Add from Shopify to SAGE 300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 252
     });
@@ -2323,7 +2323,7 @@ var idx = lunr(function () {
     idx.add({
       title: "I/C Product Add",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 256
     });
@@ -2332,7 +2332,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Sales Order Add from Shopify to SAGE 300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 257
     });
@@ -2368,7 +2368,7 @@ var idx = lunr(function () {
     idx.add({
       title: "I/C Inventory Update from Shopify SAGE 300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
-      categories: ["Integration"],
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 261
     });
@@ -2376,8 +2376,8 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Shipment Add from Shopify to SAGE 300",
-      excerpt: "\n",
-      categories: ["Integration"],
+      excerpt: "Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the...",
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 262
     });
@@ -5172,7 +5172,7 @@ var store = [
       {
         "title": "Shopify-Sage300",
         "url": "/integration/shopify-sage300/",
-        "excerpt": "\n",
+        "excerpt": "This section of the document will given you an overview of SAGE 300 - Shopify Integration and the subsequent chapters...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5193,7 +5193,7 @@ var store = [
       
       {
         "title": "Customer Add from Shopify to SAGE 300",
-        "url": "/integration/customer-add/",
+        "url": "/integration/sage-shopify/customer-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
@@ -5237,7 +5237,7 @@ var store = [
       
       {
         "title": "I/C Product Add",
-        "url": "/integration/ic-product-add/",
+        "url": "/integration/sage-shopify/ic-product-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
@@ -5248,7 +5248,7 @@ var store = [
       
       {
         "title": "Sales Order Add from Shopify to SAGE 300",
-        "url": "/integration/sales-order-add/",
+        "url": "/integration/sage-shopify/sales-order-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
@@ -5292,7 +5292,7 @@ var store = [
       
       {
         "title": "I/C Inventory Update from Shopify SAGE 300",
-        "url": "/integration/ic-inventory-update/",
+        "url": "/integration/sage-shopify/ic-inventory-update/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
         "teaser":
           
@@ -5303,8 +5303,8 @@ var store = [
       
       {
         "title": "Shipment Add from Shopify to SAGE 300",
-        "url": "/integration/ic-shipment-add/",
-        "excerpt": "\n",
+        "url": "/integration/sage-shopify/ic-shipment-add/",
+        "excerpt": "Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
