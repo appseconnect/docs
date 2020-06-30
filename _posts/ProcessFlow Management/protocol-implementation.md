@@ -10,8 +10,6 @@ menus:
         icon: fa fa-file-word-o
         identifier: protocolimplementation
 ---
-# Protocol Implementation for Applications in Process Flow.
-
 Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One is a SOAP based but follows multiple sub protocols for communicating with other applications with respect to data transfer. 
 
 Irrespective of data, SAP Business One follows these sub protocols. 
@@ -41,13 +39,19 @@ SAP Business One follows two more protocols **DI API** & **FTP** for other purpo
 
 2. Design the process flow keeping the selected application in Destination (In this case SAP Business One).
 
-3. On dragging the [destination application](/processflow/working-with-POST/), the Node Configuration Window opens. 
+3. On dragging the [destination application](/processflow/working-with-POST/) (SAP Business One in this case), the Node Configuration Window opens. 
 
-![protocol1]()
+![protocol1](\staticfiles\processflow\media\protocol1.PNG)
 
 4. You need to select the **Protocols** from the drop-down. The protocols would be displayed as per the App version selected. For SAP Business One (version >= 8.8), you will get the following protocols. 
 
-![protocol2]()
+- **Di API:** Used for operating any type of data using SAP Business One API.
+- **Di Server Object:** Used for operating general transactional data like Business Partner, Products etc.
+- **Di Server Service:** Used for creating master data in SAP Business One, you need work with the protocol **DI Server Service**.
+- **FTP:** Used for operating any type of data using File System.
+
+![protocol2](\staticfiles\processflow\media\protocol2.PNG)
+
 5. Click on the SAVE button after all the mandatory fields are filled up. 
 
 6. Link up the Node and Save the Process Flow. Click on the Node configuration Button of the [Mapper Node](/processflow/working-with-mapper/). The Mapper Window opens.
@@ -56,19 +60,21 @@ SAP Business One follows two more protocols **DI API** & **FTP** for other purpo
 
 8. When the Protocol is selected as **DI API** you get the following XSLT Preview.
 
-![protocol3]()
+![protocol3](\staticfiles\processflow\media\protocol3.PNG)
 
 9. When the Protocol is selected as **DI Server Object**, you get the following XSLT Preview.
 
-![protocol4]()
+![protocol4](\staticfiles\processflow\media\protocol4.PNG)
 
 10. When the Protocol is selected as **DI Server Service**, you get the following XSLT Preview
 
-![protocol5]()
+![protocol5](\staticfiles\processflow\media\protocol5.PNG)
 
 11. When the protocol is selected as **FTP**, you get the the following XSLT Preview.
 
-![protocol6]()
+![protocol6](\staticfiles\processflow\media\protocol6.PNG)
+
+**_Note:_** _The XSLT format and structure for the protocols `DI API` & `FTP` remains same.
 
 Following the above process you can successfully select a protocol for an application performing POST operation.
 
