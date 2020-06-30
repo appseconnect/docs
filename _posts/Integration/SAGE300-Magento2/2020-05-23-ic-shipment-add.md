@@ -62,25 +62,8 @@ Here, in this case the Shipment generated for the SAGE Order ID is `318209`.
 
 N/A
 
-## Attribute Mapping/Transformation:
+**Note:** After mapping changes is done, `Reset Generate` and `Reset Publish` the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow](/workflow/deploying-and-executing/#publishing-a-workflow). After Republishing, click on the Update Configuration button in the Agent.
 
-Following the Provided Mapping, user can successfully sync the Workflow for adding Shipment from Magento2 to SAGE 300. To know more, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
-
-Mapping for the complex object collection `entity`.
-
-![shipadd7](\staticfiles\integration\Sage300-Magento\shipadd7.PNG)
-
-a. order_item_id: Maps the id of the order against the generated shipment.
-
-b. quantity: maps the quantity shipped.
-
-c. UploadURL: Maps the target location of Magento2.
-
-d. track_number: maps the shipment tracking number provided while generating the shipment in SAGE 300
-
-e. SourceKey: maps the shipment document id provided in SAGE 300.
-
-**Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow.](/workflow/deploying-and-executing/#publishing-a-workflow) After Republishing, click on the Update Configuration button in the Agent.**
 
 ## Executing the Integration using Workflow:
 
@@ -88,15 +71,12 @@ e. SourceKey: maps the shipment document id provided in SAGE 300.
 
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 
-3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
-
-![shipadd9](\staticfiles\integration\Sage300-Magento\shipadd9.PNG)
+3. You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
 ## Integration Data Survey:
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![shipadd10](\staticfiles\integration\Sage300-Magento\shipadd10.PNG)
 
 ## Post Conditions:
 You can view the data sync inMagento by navigating to `Order Shipments tab` available in the `Order Details Page` of the customer.

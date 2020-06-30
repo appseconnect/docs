@@ -23,23 +23,7 @@ Inventory update is used to integrate the quantity of products synced to magento
 
 ## Lookup Mapping:
 
-Not Required. However, every business processes are unique may require to map lookups for some cases. [Click Here](/transformation/using-lookups-for-value-exchange/) to know more about Lookup Mapping
-
-## Attribute Mapping/Transformation:
-
-Following the Provided Mapping, the user can sync the Updated inventory from SAGE 300 to Magento2. To know more, see [Mapping & Transformation Techniques.](/transformation/steps-to-cutomize-prebuilt-mapping/)
-
-Mapping for the Complex Object collection `stockitem`.
-
-![invupdate3](\staticfiles\integration\Sage300-Magento\invupdate3.png)
-
-a. ItemId: Maps the id of the Product that needs to be updated.
-
-b. ProductId: Maps the id of the Product that needs to be updated.
-
-c. qty: Maps the field with the field of SAGE 300 that transforms the quantity of the product.
-
-**_Note:_** _After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow](/workflow/deploying-and-executing/#publishing-a-workflow). After Republishing, click on the Update Configuration button in the Agent._
+Not Required. However, every business processes are unique may require to map lookups for some cases. [Click Here](/transformation/using-lookups-for-value-exchange/) to know more about Lookup Mapping.
 
 ## Executing the Integration using Workflow:
 
@@ -53,7 +37,7 @@ c. qty: Maps the field with the field of SAGE 300 that transforms the quantity o
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![invupdate6](\staticfiles\integration\Sage300-Magento\invupdate6.png)
+
 
 ## Post Conditions:
 

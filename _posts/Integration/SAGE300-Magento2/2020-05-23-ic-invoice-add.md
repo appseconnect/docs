@@ -59,12 +59,11 @@ N/A
 
 3. You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
-
 ## Integration Data Survey:
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![invadd7](\staticfiles\integration\Sage300-Magento\invadd7.PNG)
+
 
 ## Post Conditions:
 You can view the data synced in Magento by navigating to `Order Invoices tab` available in the `Order Details Page` of the customer.

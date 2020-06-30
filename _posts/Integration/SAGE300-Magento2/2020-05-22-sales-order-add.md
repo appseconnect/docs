@@ -30,34 +30,6 @@ For integrating, Sales Orders from Magento 2 to Sage 300, you need to add lookup
 
 After placing the lookups for the connections, Publish the Connection, Update Lookup Tables in Agent followed by Update Configuration.
 
-## Attribute Mapping/Transformation:
-
-Following the Provided Mapping,  user can successfully sync the Order Add Workflow from Magento2 to SAGE 300. To know more, see [Mapping & Transformation Techniques](/transformation/steps-to-cutomize-prebuilt-mapping/).
-
-Mapping for the ComplexObjectCollection `OEOrders`:
-
-![orderadd4](\staticfiles\integration\Sage300-Magento\orderadd4.png)
-
-a. Order Number: Maps the field of the Order Id of Magento2.
-
-b. Customer Number: Maps the customer ID of the placed order.
-
-c. Bill to Name: Maps the name of the customer against whom the order is placed.
-
-d. Bill to address: Maps the address of the customer whose order is placed.
-
-e. Bill to City: Maps the field City with the field of Magento 2.
-
-f. Bill to country: Maps the field Country with field of Magento 2.
-
-g. Tax Group: Maps the Tax group allocated to the user in lookup tables.
-
-f. Upload URL: Maps the target location of the sync process.
-
-![orderadd5](\staticfiles\integration\Sage300-Magento\orderadd5.png)
-
-**Note: After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow.](/workflow/deploying-and-executing/#publishing-a-workflow) After Republishing, click on the Update Configuration button in the Agent.**
-
 ## Executing the Integration using Workflow:
 
 1.	Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. [Click here](/workflow/deploying-and-executing/) to know more about the deploying process of a workflow.
@@ -78,7 +50,7 @@ Here, you can view the Order `28` got successfully synced to SAGE 300.
 ## Post Conditions:
 You can view the data sync in SAGE 300 by navigating to `Order Entry > O/E transactions > Order Entry `. Search the Order post with the order number, and you ccan view the order details.
 
-![orderadd9](\staticfiles\integration\Sage300-Magento\orderadd9.png)
+
 
 Here, you can view the order for the customer Mr Brandon P Summers in SAGE 300, with the complete order details.
 

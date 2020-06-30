@@ -26,7 +26,7 @@ Here, the workflow for Customer Update is used for syncing updated customers fro
 
 Same as [Customer Add](/integration/customer-add/).
 
-**Note:** After mapping changes is done, `Reset Generate` and `Reset Publish` the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow](/workflow/deploying-and-executing/#publishing-a-workflow). After Republishing, click on the Update Configuration button in the Agent.
+**Note:** After mapping changes is done, `Reset Generate` and `Reset Publish` the Touchpoint from the workflow panel. Refresh the Page and [Publish the workflow](/workflow/deploying-and-executing/#publishing-a-workflow). After Republishing, click on the Update Configuration and Update Lookup Tables button in the Agent.
 
 ## Executing the Integration using Workflow:
 
@@ -40,7 +40,7 @@ Same as [Customer Add](/integration/customer-add/).
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/) from the node level of the workflow.
 
-![custupdate5](\staticfiles\integration\Sage300-Magento\custupdate5.png)
+
 
 ## Post Conditions:
 
