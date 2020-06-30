@@ -2,7 +2,7 @@
 title: "I/C Product Add"
 toc: true
 tag: developers
-category: "Integration"
+category: "Integration/Sage-Shopify"
 menus: 
     shopifysageintegration:
         title:  "I/C Product Add"
@@ -35,9 +35,8 @@ Not Required but every business processes are unique may require lookup mapping.
 
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 
-3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
+3.  You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
-![productadd4](\staticfiles\integration\SAGE300-Shopify\productadd4.PNG)
 
 ## Integration Data Survey:
 

@@ -47,13 +47,7 @@ c. qty: Maps the field with the field of SAGE 300 that transforms the quantity o
 
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 
-3.	Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.
-
-![invupdate4](\staticfiles\integration\Sage300-Magento\invupdate4.png)
-
-4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
-
-![invupdate5](\staticfiles\integration\Sage300-Magento\invupdate5.png)
+3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
  
 ## Integration Data Survey:
 

@@ -66,14 +66,10 @@ m.	**UploadURL:** This field define the Route to SAGE 300 for data storage.
 ## Executing the Integration using Workflow:
 
 1.	Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. [Click here](/workflow/deploying-and-executing/) to know more about the deploying process of a workflow.
+
 2.	Navigate to the Workflow Panel in the agent and click on the **Start Sync Button** for executing the Process.
-3.	Once the Execution is finished, click on the **Resync Button** (Highlighted Below) in the agent.
 
-![custadd4](\staticfiles\integration\Sage300-Magento\custadd4.png)
-
-4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
-
-![custadd5](\staticfiles\integration\Sage300-Magento\custadd5.png)
+3. You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
 
 ## Integration Data Survey:
 

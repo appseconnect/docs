@@ -51,13 +51,8 @@ Mapping for the Complex Object Collection **`Product`** for Customer Add Touchpo
 
 2.	Navigate to the Workflow Panel in the agent and click on the **Start Sync Button** for executing the Process.
 
-3.	Once the Execution is finished, click on the **Resync Button** (Highlighted Below) in the agent.
+3. You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
-![productadd4](\staticfiles\integration\Sage300-Magento\productadd4.png)
-
-4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
-
-![productadd5](\staticfiles\integration\Sage300-Magento\productadd5.png)
 
 ## Integration Data Survey:
 

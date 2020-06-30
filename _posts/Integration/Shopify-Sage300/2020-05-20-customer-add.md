@@ -2,7 +2,7 @@
 title: "Customer Add from Shopify to SAGE 300"
 toc: true
 tag: developers
-category: "Integration"
+category: "Integration/Sage-Shopify"
 menus: 
    shopifysageintegration:
         title: "Customer Add"
@@ -27,13 +27,12 @@ For posting newly added customer to SAGE 300 from Shopify, you need to add Looku
 
 ## Executing the Integration using Workflow:
 
-1.	Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. [Click here](/workflow/deploying-and-executing/) to know more about the deploying process of a workflow.
+1. Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. [Click here](/workflow/deploying-and-executing/) to know more about the deploying process of a workflow.
 
-2.	Navigate to the Workflow Panel in the agent and click on the **Start Sync Button** for executing the Process.
+2. Navigate to the Workflow Panel in the agent and click on the **Start Sync Button** for executing the Process.
 
-3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
+3. You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation).
 
-![custadd4](\staticfiles\integration\SAGE300-Shopify\custadd4.PNG)
 
 ## Integration Data Survey:
 

@@ -88,11 +88,7 @@ e. SourceKey: maps the shipment document id provided in SAGE 300.
 
 2.	Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.
 
-3.	Once the Execution is finished, click on the Resync Button (Highlighted Below) in the agent.
-
-![shipadd8](\staticfiles\integration\Sage300-Magento\shipadd8.PNG)
-
-4. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
+3. The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details [Click Here](/workflow/deploying-and-executing/#executing-the-workflow).
 
 ![shipadd9](\staticfiles\integration\Sage300-Magento\shipadd9.PNG)
 
