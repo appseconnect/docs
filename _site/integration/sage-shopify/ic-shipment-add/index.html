@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-05-23T00:00:00+05:30">
+  <meta property="article:published_time" content="2020-05-24T00:00:00+05:30">
 
 
 
@@ -369,12 +369,6 @@
     
     <li class="menu-item-" data-url="/getting%20started/user-registration/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/getting%20started/user-registration/" onclick="selectTab('/getting%20started/user-registration/', event);" title="Go to User Registration">User Registration</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/accessing%20portal/accessing-portal/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/accessing%20portal/accessing-portal/" onclick="selectTab('/accessing%20portal/accessing-portal/', event);" title="Go to Accessing APPSeCONNECT Portal">Accessing APPSeCONNECT Portal</a>
         
     </li>
     
@@ -1177,14 +1171,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
+    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
@@ -1226,14 +1220,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sage-shopify/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/sales-order-add/" onclick="selectTab('/integration/sage-shopify/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/sales-order-add/" onclick="selectTab('/integration/sage-shopify/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
@@ -2173,7 +2167,7 @@
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Shipment Add from Shopify to SAGE 300">
         <meta itemprop="description" content="Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the users understand how the integration for the adding Shipments can be executed using a workflow from SAGE 300 to Shopify.">
-        <meta itemprop="datePublished" content="May 23, 2020">
+        <meta itemprop="datePublished" content="May 24, 2020">
         
 
 
@@ -2243,7 +2237,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-23T00:00:00+05:30">May 23, 2020</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-24T00:00:00+05:30">May 24, 2020</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2301,8 +2295,6 @@
 
 <p>Here, in this case the Shipment generated for the SAGE Order ID is <code class="highlighter-rouge">350465</code>.</p>
 
-<p><img src="\staticfiles\integration\SAGE300-Shopify\shipadd2.PNG" alt="shipadd2" /></p>
-
 <h2 id="lookup-mapping">Lookup Mapping:</h2>
 
 <p>For posting newly added quantity to Shopify from SAGE 300, you need to add Lookup for <code class="highlighter-rouge">Inventory Location</code>. For this integration, mapping lookups for inventory location is mandatory.</p>
@@ -2329,12 +2321,8 @@
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
 
-<p><img src="\staticfiles\integration\SAGE300-Shopify\shipadd5.PNG" alt="shipadd5" /></p>
-
 <h2 id="post-conditions">Post Conditions:</h2>
 <p>You can view the data sync in Shopify by navigating to  the <code class="highlighter-rouge">Order Details Page</code> of the customer. The order tag gets the <strong>Fulfilled</strong> status on successful <code class="highlighter-rouge">shipment</code> of all the items.</p>
-
-<p>![shipadd6]\staticfiles\integration\SAGE300-Shopify\shipadd6.PNG()</p>
 
 <p><strong>Note:</strong> If the shipment is synced for partial items and partial quantities, the order status will be as <code class="highlighter-rouge">Partially Fulfilled</code> even if the sync status is successful.</p>
 
@@ -2354,7 +2342,7 @@
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-23T00:00:00+05:30">May 23, 2020</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-24T00:00:00+05:30">May 24, 2020</time></div>
                 
                 
   
@@ -4505,14 +4493,6 @@
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -4523,17 +4503,6 @@
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/integration/sage-shopify/ic-inventory-update/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Inventory Update from Shopify SAGE 300
-                                </a>
-                            </li>
                             
                             
                             
@@ -4557,13 +4526,24 @@
                             
                             
                             <li>
-                                <a href="/integration/sage-shopify/ic-product-add/" rel="permalink">
+                                <a href="/integration/sage-shopify/ic-inventory-update/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Product Add
+                                    I/C Inventory Update from Shopify SAGE 300
                                 </a>
                             </li>
                             
                             
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/integration/sage-shopify/ic-product-add/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    I/C Product Add from SAGE 300 to Shopify
+                                </a>
+                            </li>
                             
                             
                             
@@ -4579,8 +4559,6 @@
                                     Customer Add from Shopify to SAGE 300
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             
