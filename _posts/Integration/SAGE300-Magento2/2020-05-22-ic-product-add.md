@@ -19,10 +19,6 @@ In this case, the Workflow for Adding Products/Items, is used for adding simple 
 
 As a prerequisite, you need to have the products created in SAGE 300. [Click here](/connectors/adding-product-in-sage/) to know about the steps to create products in SAGE 300.
 
-![productadd2](\staticfiles\integration\Sage300-Magento\productadd2.png)
-
-Here, we have created a product iPhone 11 Max Pro with the Item ID `01-ST1-B.`
-
 ## Lookup Mapping:
 
 Not Required but every business processes are unique may require lookup mapping. In such cases, [click here](/transformation/using-lookups-for-value-exchange/) to know more about Lookup Mapping.
@@ -42,11 +38,8 @@ Not Required but every business processes are unique may require lookup mapping.
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-
 ## Post Conditions:
 You can view the data sync in Magento 2 by navigating to `Catalog > Products.`
-
-![productadd7](\staticfiles\integration\Sage300-Magento\productadd7.png)
 
 ## Frequency of Use:
 

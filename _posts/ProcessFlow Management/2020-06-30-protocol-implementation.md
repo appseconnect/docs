@@ -74,7 +74,7 @@ SAP Business One follows two more protocols **DI API** & **FTP** for other purpo
 
 ![protocol6](\staticfiles\processflow\media\protocol6.PNG)
 
-**_Note:_** _The XSLT format and structure for the protocols `DI API` & `FTP` remains same.
+**_Note:_** _The XSLT format and structure for the protocols `DI API` & `FTP` remains same._
 
 Following the above process you can successfully select a protocol for an application performing POST operation.
 

@@ -41,12 +41,9 @@ For posting newly added customer to SAGE 300 from Magento, you need to add Looku
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/) from the node level of the workflow.
 
 
-
 ## Post Conditions:
 You can view the data sync in SAGE 300 by viewing the `Accounts Receivable > A/R Customers.`
-Here you can view the data **MA57** successfully synced in SAGE 300.
 
-![custadd7](\staticfiles\integration\Sage300-Magento\custadd7.png)
 
 ## Frequency of Use:
 

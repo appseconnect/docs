@@ -31,7 +31,6 @@ d. The order must be present in both the application for whose shipment is gener
 
 Here, in this case the Shipment generated for the SAGE Order ID is `350465`.
 
-![shipadd2](\staticfiles\integration\SAGE300-Shopify\shipadd2.PNG)
 
 ## Lookup Mapping:
 
@@ -53,12 +52,9 @@ For posting newly added quantity to Shopify from SAGE 300, you need to add Looku
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![shipadd5](\staticfiles\integration\SAGE300-Shopify\shipadd5.PNG)
 
 ## Post Conditions:
 You can view the data sync in Shopify by navigating to  the `Order Details Page` of the customer. The order tag gets the **Fulfilled** status on successful `shipment` of all the items.
-
-![shipadd6]\staticfiles\integration\SAGE300-Shopify\shipadd6.PNG()
 
 **Note:** If the shipment is synced for partial items and partial quantities, the order status will be as `Partially Fulfilled` even if the sync status is successful.
 

@@ -26,34 +26,6 @@ c. The Product shall be available in the both the application. [Click here](/int
 
 d. The order must be present in both the application for whose shipment is generated. [Click Here](/integration/sales-order-add/) to integrate Sales Order from Magento 2 to SAGE 300.
 
-### Steps generate Shipment for the order synced to SAGE 300 from Magento 2.
-
-1. Navigate to `Order Entry > OE Transactions > Order Entry`. Order Entry Window Opens.
-
-![shipadd2](\staticfiles\integration\Sage300-Magento\shipadd2.PNG)
-
-2. Open the Order with the Order ID generated. The Order Entry opens.
-
-![shipadd3](\staticfiles\integration\Sage300-Magento\shipadd3.PNG)
-
-3. Click on the Totals Tab and enable the checkbox for `Create Invoice`.
-
-![Shipadd4](\staticfiles\integration\Sage300-Magento\shipadd4.PNG)
-
-4. Provide a Shipment number and navigate back to the Order Tab. 
-
-5. In the Order Line, make sure `Quantity Shipped` value equals the `Quantity Backorder` value. By default, the value for `Quantity Shipped`remains `0`. After adjusting, the value for `Quantity Backorder` becomes `0`.
-
-![shipadd5](\staticfiles\integration\Sage300-Magento\shipadd5.PNG)
-
-6. Expand the Shipment Details and provide the `Shipment Tracking Number`.
-
-![shipadd6](\staticfiles\integration\Sage300-Magento\shipadd6.PNG)
-
-**_Note: You must provide the shipment tracking number for successful integration._**
-
-7. Click on the `POST` Button. 
-
 [Click Here](http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/ShippingOrdersAndItems.htm) to know more about the adding Shipments.
 
 Here, in this case the Shipment generated for the SAGE Order ID is `318209`.
@@ -76,7 +48,6 @@ N/A
 ## Integration Data Survey:
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
-
 
 ## Post Conditions:
 You can view the data sync inMagento by navigating to `Order Shipments tab` available in the `Order Details Page` of the customer.

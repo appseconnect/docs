@@ -17,9 +17,7 @@ Executing the Process is a vital part when integrating any applications. This Do
 ## Brief Description:
 ![invupdate1](\staticfiles\integration\Sage300-Magento\invupdate1.png)
 
-Inventory update is used to integrate the quantity of products synced to magento 2 from SAGE 300. Updates made in the quantity need to be manages in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inveotry in SAGE 300. 
-
-![invupdate2](\staticfiles\integration\Sage300-Magento\invupdate2.png)
+Inventory update is used to integrate the quantity of products synced to magento 2 from SAGE 300. Updates made in the quantity need to be manages in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inventory in SAGE 300. 
 
 ## Lookup Mapping:
 
@@ -37,13 +35,9 @@ Not Required. However, every business processes are unique may require to map lo
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-
-
 ## Post Conditions:
 
 You can view the data sync in Magento 2 by navigating to `Catalog > Products.`
-
-![invupdate7](\staticfiles\integration\Sage300-Magento\invupdate7.png)
 
 ## Frequency of Use:
 The user can execute the Integration through workflow as and when required. 
