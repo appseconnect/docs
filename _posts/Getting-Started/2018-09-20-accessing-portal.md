@@ -248,6 +248,27 @@ b.	Organization Admin
 **Note: The tab Partners will not have any view unless an organization has any requirements for partners.**
 
 3.	For a fresh organisation, only the organisation owner will be displayed as the user in the user list. Click on the Add User button, to add more user to an organisation.
+![Useradd1](\staticfiles\root\media\useradd1.PNG)
+
+4. On clicking the button Add User, a sliding window opens with a form for adding a new user to the organisation.
+![Useradd2](\staticfiles\root\media\useradd2.PNG)
+
+5. Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
+![Useradd3](\staticfiles\root\media\useradd3.PNG)
+
+6. Once all the mandatory fields are filled up, click on the Save button. The created user would be should in the list of users along with a success message.
+![Useradd4](\staticfiles\root\media\useradd4.PNG)
+
+7. The created user will have the following keys available for any modification. The list is provided below:
+    - Edit User: Only the details of the created user can be modified except the role.
+    - Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
+    - Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
+    - Change Role: Here, the default user can change the role for the created user
+
+**Note:** 
+    •	All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
+    •	Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
+    •	Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
 
 ## Managing Customer Profile 
 

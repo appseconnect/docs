@@ -28,22 +28,7 @@ c. The Product shall be available in the both the application. [Click here](/int
 
 d. The order must be present in both the application for whose Invoice is generated. [Click Here](/integration/sales-order-add/) to integrate Sales Order from Magento 2 to SAGE 300.
 
-### Steps generate Invoice for the order synced to SAGE 300 from Magento 2.
-
-- Follow the steps for generating the [Shipment](/integration/ic-shipment-add/).
-
-- Once you have completed the steps of creating Shipment, Click on the `Shipment Entry` tab.
-
-![invadd2](\staticfiles\integration\Sage300-Magento\invadd2.PNG)
-
--  Provide the `Shipment Number` provided while creating the shipment. The Shipment Entry Opens. 
-
--  Enable the checkbox for `Create Invoice` and click on the POST button. Your Invoice gets generated automatically by SAGE 300. You'll be provided with an Invoice Number after document creation.
-
 [Click Here](http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/InvoicingShipments.htm) to know more about the adding Invoice.
-
-
-![invadd3](\staticfiles\integration\Sage300-Magento\invadd3.PNG)
 
 ## Lookup Mapping 
 
@@ -62,8 +47,6 @@ N/A
 ## Integration Data Survey:
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
-
-
 
 ## Post Conditions:
 You can view the data synced in Magento by navigating to `Order Invoices tab` available in the `Order Details Page` of the customer.

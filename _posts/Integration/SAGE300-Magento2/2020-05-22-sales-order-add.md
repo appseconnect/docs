@@ -18,9 +18,6 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Magento2 for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. [Click here](https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html) to know more about generating Sales Orders in Magento2.
 
-Here, an Order is placed for the customer Mr. Brandon P Summers, against the product iPhone 11 Max Pro.
-
-![orderadd2](\staticfiles\integration\Sage300-Magento\orderadd2.png)
 
 ## Lookup Mapping:
 
@@ -43,16 +40,8 @@ After placing the lookups for the connections, Publish the Connection, Update Lo
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![orderadd8](\staticfiles\integration\Sage300-Magento\orderadd8.png)
-
-Here, you can view the Order `28` got successfully synced to SAGE 300.
-
 ## Post Conditions:
 You can view the data sync in SAGE 300 by navigating to `Order Entry > O/E transactions > Order Entry `. Search the Order post with the order number, and you ccan view the order details.
-
-
-
-Here, you can view the order for the customer Mr Brandon P Summers in SAGE 300, with the complete order details.
 
 ## Frequency of Use:
 

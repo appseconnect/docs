@@ -1,5 +1,5 @@
 ﻿---
-title: "I/C Product Add"
+title: "I/C Product Add from SAGE 300 to Shopify"
 toc: true
 tag: developers
 category: "Integration/Sage-Shopify"
@@ -54,3 +54,8 @@ You can view the data sync in Shopify by navigating to `Products > All Products`
 ## Frequency of Use:
 
 The user can execute the Integration through workflow as and when required. 
+
+## Limitations:
+NA
+
+Following the above procedures, you can successfully sync Products from SAGE 300 to Shopify.

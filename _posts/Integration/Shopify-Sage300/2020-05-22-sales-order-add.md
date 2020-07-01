@@ -19,8 +19,6 @@ A sales cycle is incomplete without placing orders for any products. Sales Order
 
 Here, an Order is placed for the customer Lonnie K Croker, against the product Seinhieser Double Bass Headset.
 
-![orderadd2](\staticfiles\integration\SAGE300-Shopify\orderadd2.PNG)
-
 ## Lookup Mapping:
 
 For integrating, Sales Orders from Shopify to Sage 300, you need to add lookups for Frieght & Tax Code.
@@ -41,17 +39,14 @@ For integrating, Sales Orders from Shopify to Sage 300, you need to add lookups 
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/)  from the node level of the workflow.
 
-![orderadd5](\staticfiles\integration\SAGE300-Shopify\orderadd5.PNG)
-
-Here, you can view the Order for the customer `Lonnie K Croker` got successfully synced to SAGE 300.
-
 ## Post Conditions:
-You can view the data sync in SAGE 300 by navigating to `Order Entry > O/E transactions > Order Entry `. Search the Order post with the order number, and you ccan view the order details.
-
-![orderadd6](\staticfiles\integration\SAGE300-Shopify\orderadd6.PNG)
-
-Here, you can view the order for the customer Lonnie K Croker in SAGE 300, with the complete order details.
+You can view the data sync in SAGE 300 by navigating to `Order Entry > O/E transactions > Order Entry`. Search the Order post with the order number, and you can view the order details.
 
 ## Frequency of Use:
 
 The user can execute the Integration through workflow as and when required. 
+
+## Limitations:
+NA
+
+Following the above procedures, you can successfully sync customers from Shopify to SAGE 300.
