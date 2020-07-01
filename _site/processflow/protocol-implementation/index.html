@@ -19,12 +19,12 @@
 
 
 
-<title>ZohoCRM V2.0 - APPSeCONNECT Product Docs</title>
+<title>Protocol Implementation for Applications - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need to be provided for validating the agent. Here you will find the detailed description on how to configure the agents for the application of Uniconta, Adapter Configuration, Attributes and action and the Troubleshooting issues.">
+<meta name="description" content="Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One is a SOAP based but follows multiple sub protocols for communicating with other applications with respect to data transfer.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="ZohoCRM V2.0">
+<meta property="og:title" content="Protocol Implementation for Applications">
 
 
-  <link rel="canonical" href="http://localhost:4000/connectors/zohocrmv2/">
-  <meta property="og:url" content="http://localhost:4000/connectors/zohocrmv2/">
+  <link rel="canonical" href="http://localhost:4000/processflow/protocol-implementation/">
+  <meta property="og:url" content="http://localhost:4000/processflow/protocol-implementation/">
 
 
 
-  <meta property="og:description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need to be provided for validating the agent. Here you will find the detailed description on how to configure the agents for the application of Uniconta, Adapter Configuration, Attributes and action and the Troubleshooting issues.">
+  <meta property="og:description" content="Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One is a SOAP based but follows multiple sub protocols for communicating with other applications with respect to data transfer.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2019-02-17T00:00:00+05:30">
+  <meta property="article:published_time" content="2020-06-30T00:00:00+05:30">
 
 
 
@@ -206,7 +206,7 @@
     
       
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
+        <a href="/processflow" itemprop="item"><span itemprop="name">Processflow</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <span class="sep">/</span>
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">ZohoCRM V2.0</li>
+      <li class="current">Protocol Implementation for Applications</li>
     
   
 </ol>-->
@@ -2161,9 +2161,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="ZohoCRM V2.0">
-        <meta itemprop="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is ZohoCRMV2 credentials need to be provided for validating the agent. Here you will find the detailed description on how to configure the agents for the application of Uniconta, Adapter Configuration, Attributes and action and the Troubleshooting issues.">
-        <meta itemprop="datePublished" content="February 17, 2019">
+        <meta itemprop="headline" content="Protocol Implementation for Applications">
+        <meta itemprop="description" content="Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One is a SOAP based but follows multiple sub protocols for communicating with other applications with respect to data transfer.">
+        <meta itemprop="datePublished" content="June 30, 2020">
         
 
 
@@ -2182,7 +2182,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
+                    <a href="/processflow" itemprop="item"><span itemprop="name">Processflow</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
                 <li class="sep">/</li>
@@ -2190,7 +2190,7 @@
                 
                 
                 
-                <li class="current">ZohoCRM V2.0</li>
+                <li class="current">Protocol Implementation for Applications</li>
                 
                 
             </ol>
@@ -2200,7 +2200,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">ZohoCRM V2.0
+                <h1 class="page__title" itemprop="headline">Protocol Implementation for Applications
 </h1>
                 
                 
@@ -2223,7 +2223,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-17T00:00:00+05:30">February 17, 2019</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-30T00:00:00+05:30">June 30, 2020</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2231,7 +2231,7 @@
 
 
 
-  4 minute read
+  2 minute read
 </p>
                 
                 
@@ -2244,152 +2244,111 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#configure-the-zoho-crm-application-in-the-agent">Configure the Zoho CRM Application in the Agent</a></li>
-  <li><a href="#troubleshooting">Troubleshooting</a></li>
-  <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
+  <li><a href="#prerequisites-for-protocol-implementation-in-process-flow">Prerequisites for Protocol Implementation in Process Flow</a></li>
+  <li><a href="#steps-to-setup-protocol-in-process-flow">Steps to setup Protocol in Process Flow:</a></li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Application configuration is an integral activity prior to the process of integration. If your chosen application 
-is ZohoCRMV2 credentials need to be provided for validating the agent. Here you will find the detailed description 
-on how to configure the agents for the application of Uniconta, Adapter Configuration, Attributes and action and the 
-Troubleshooting issues.</p>
+                <p>Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One is a SOAP based but follows multiple sub protocols for communicating with other applications with respect to data transfer.</p>
 
-<h1 id="pre-requisites-for-zoho-crm-v20-configuration">Pre-requisites for Zoho CRM V2.0 Configuration</h1>
+<p>Irrespective of data, SAP Business One follows these sub protocols.</p>
+
+<p>For Eg:</p>
+
+<ul>
+  <li>For creating master data in SAP Business One, you need work with the protocol <strong>DI Server Service</strong>.</li>
+  <li>For creating general transactional data like Business Partner, Products etc. you need to work with the protocol <strong>DI Server Object</strong>.</li>
+</ul>
+
+<p>SAP Business One follows two more protocols <strong>DI API</strong> &amp; <strong>FTP</strong> for other purposes as well with respect to data. As an user, for integrating data you need to understand the protocol structure of the application you are working with, before implementing protocols in APPSeCONNECT Process Flow.</p>
+
+<p><strong><em>Note</em></strong>: <em>You can anytime view the differences of these protocols in XSLT preview of Mapper Node.</em></p>
+
+<h2 id="prerequisites-for-protocol-implementation-in-process-flow">Prerequisites for Protocol Implementation in Process Flow</h2>
 
 <ol>
-  <li>Valid APPSeCONNECT Portal credentials.</li>
-  <li>Select the Application ZOHO CRM in the APP section.</li>
-  <li>Create a connection for ZOHO CRM.</li>
-  <li>Publish a Touchpoint, Update Adapters and Update Configuration in the agent.To Know about Agent Configuration, <a href="/deployment/Deployment-Configuration/">Click here</a></li>
+  <li>
+    <p>You need to have basic knowledge of the protocol used by the application selected by you.</p>
+  </li>
+  <li>
+    <p>You need to design a Process Flow before implementing Protocol. <a href="/processflow/creating-processflow/">Click Here</a> for the steps to design a process flow.</p>
+  </li>
+  <li>
+    <p>Protocol implementation is done only for the application in POST operation. Therefore you need to design the Process flow with you application in destination.</p>
+  </li>
 </ol>
 
-<p><strong>Note:</strong> The version for the app ZOHO CRM should be V2.</p>
+<h2 id="steps-to-setup-protocol-in-process-flow">Steps to setup Protocol in Process Flow:</h2>
 
-<h2 id="configure-the-zoho-crm-application-in-the-agent">Configure the Zoho CRM Application in the Agent</h2>
+<p><strong><em>Note</em></strong>: <em>Here we will demonstrate you with the steps to implement and setup Protocol keeping SAP business One in Destination. The flow remains the same if you are working with other application as well apart of SAP Business One</em>.</p>
 
-<p>ZOHO CRM is a REST Application which supports the OAuth2.0 authentication. The Adapter of the application 
-ZOHO CRM V2 provides the leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating the
-credential of the application ZOHO CRM V2.</p>
+<ol>
+  <li>
+    <p>Login to the Portal and Navigate to the <a href="/processflow/overview-of-processflow/">Process Flow</a> section. Click on the new button to <a href="/processflow/creating-processflow/">create a new Process Flow</a>.</p>
+  </li>
+  <li>
+    <p>Design the process flow keeping the selected application in Destination (In this case SAP Business One).</p>
+  </li>
+  <li>
+    <p>On dragging the <a href="/processflow/working-with-POST/">destination application</a> (SAP Business One in this case), the Node Configuration Window opens.</p>
+  </li>
+</ol>
 
-<p>Go to App Configuration panel of the agent click on the + button, beside the app ZOHO CRM.<br />
-<img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter1.png" alt="Zohocrmv2-Adapter1" /></p>
+<p><img src="\staticfiles\processflow\media\protocol1.PNG" alt="protocol1" /></p>
 
-<p>The Adapter configurations will get downloaded automatically (within a timespan), and then you can proceed with credential authorization.
-<img src="/staticfiles/connectors/media/application-connector/zohocrm-configuration-downloads.png" alt="zohocrm-configuration-downloads" /></p>
+<ol>
+  <li>You need to select the <strong>Protocols</strong> from the drop-down. The protocols would be displayed as per the App version selected. For SAP Business One (version &gt;= 8.8), you will get the following protocols.</li>
+</ol>
 
-<p>Now the following window appears. On clicking the + button, the credential panel opens up for the application ZOHO CRM.<br />
-<img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter2.png" alt="Zohocrmv2-Adapter2" /></p>
+<ul>
+  <li><strong>Di API:</strong> Used for operating any type of data using SAP Business One API.</li>
+  <li><strong>Di Server Object:</strong> Used for operating general transactional data like Business Partner, Products etc.</li>
+  <li><strong>Di Server Service:</strong> Used for creating master data in SAP Business One, you need work with the protocol <strong>DI Server Service</strong>.</li>
+  <li><strong>FTP:</strong> Used for operating any type of data using File System.</li>
+</ul>
 
-<p>The fields of the credential page are detailed below:  <br />
-   a. Base URL: This is the base URL of the ZOHO CRM Application.</p>
+<p><img src="\staticfiles\processflow\media\protocol2.PNG" alt="protocol2" /></p>
 
-<p>b. Client ID: This generated from the application site of ZOHO CRM. If Base URL is in <code class="highlighter-rouge">.com format or .in format or in other format</code>, 
-      client ID should be generated from the same format as given in Base URL and vice versa.</p>
+<ol>
+  <li>
+    <p>Click on the SAVE button after all the mandatory fields are filled up.</p>
+  </li>
+  <li>
+    <p>Link up the Node and Save the Process Flow. Click on the Node configuration Button of the <a href="/processflow/working-with-mapper/">Mapper Node</a>. The Mapper Window opens.</p>
+  </li>
+  <li>
+    <p>Click on the <strong>Preview</strong> button to view the generated XSLT with respect to the chosen protocol.</p>
+  </li>
+  <li>
+    <p>When the Protocol is selected as <strong>DI API</strong> you get the following XSLT Preview.</p>
+  </li>
+</ol>
 
-<p>c. Client Secret:  This is generated from the application site of ZOHO CRM.</p>
+<p><img src="\staticfiles\processflow\media\protocol3.PNG" alt="protocol3" /></p>
 
-<p><strong>Note: For more details <a href="https://www.zoho.com/crm/help/developer/api/register-client.html">click here</a>.  Follow the steps for generating the Client ID and Client Secret.</strong></p>
+<ol>
+  <li>When the Protocol is selected as <strong>DI Server Object</strong>, you get the following XSLT Preview.</li>
+</ol>
 
-<p>d. CallBack URL: Callback URLs are the URLs that Auth0 invokes after the authentication process.</p>
+<p><img src="\staticfiles\processflow\media\protocol4.PNG" alt="protocol4" /></p>
 
-<p><strong>Note: The Call Back URL/Authorized Redirect URL can be any link (For Eg:https://www.abcd.com ) but make sure the link is in the proper format of an URL along with https</strong></p>
+<ol>
+  <li>When the Protocol is selected as <strong>DI Server Service</strong>, you get the following XSLT Preview</li>
+</ol>
 
-<p>e.   Scope: Scopes defines the specific actions applications can be allowed to do on a user behalf. <a href="https://www.zoho.com/crm/developer/docs/api/oauth-overview.html#scopes">Click</a>to get the ZOHO CRM v2 Scope.<br />
-Provide the details and click on the Authorize Button. The Zoho Login window opens up.<br />
-<img src="/staticfiles/connectors/media/application-connector/Zohocrmv2-Adapter3.png" alt="Zohocrmv2-Adapter3" />
- f. Auth Url: After you receive your Client ID, enter the auth URL.</p>
+<p><img src="\staticfiles\processflow\media\protocol5.PNG" alt="protocol5" /></p>
 
-<p>g: Access Token Url: A client-authorized key that lets the client access protected resources from Zoho. 
-    The client can make API requests using this access token for up to an hour after the creation of the token.Enter the Access Token URL</p>
+<ol>
+  <li>When the protocol is selected as <strong>FTP</strong>, you get the the following XSLT Preview.</li>
+</ol>
 
-<p>Click Authorize button (keeping the blank page, open) and Click SAVE.    <br />
-<img src="/staticfiles/connectors/media/application-connector/zohocrm-validation.png" alt="zohocrm-validation" /></p>
+<p><img src="\staticfiles\processflow\media\protocol6.PNG" alt="protocol6" /></p>
 
-<p><strong>Note: Once, the credentials are validated, the user can close the Blank Window.</strong> 
-<strong>For Adapter version 4.4.1.0 (OP Agent) make sure, to use a compatible custom browser with respect to Internet Explorer</strong></p>
+<p><strong><em>Note:</em></strong> _The XSLT format and structure for the protocols <code class="highlighter-rouge">DI API</code> &amp; <code class="highlighter-rouge">FTP</code> remains same.</p>
 
-<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Following the above process you can successfully select a protocol for an application performing POST operation.</p>
 
-<p><strong>ISSUE 1:</strong>
-Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated,
-and if touchpoints do not sync, this basic issue resolves after removing the Temp and Cache files from the 
-portal and from your system. Therefore after clearing all this publish the touchpoints again along with 
-Update Configuration on the agent.</p>
-
-<p>For E.g. If the Source Application Not Found in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
-
-<p><strong>ISSUE 2:</strong></p>
-
-<p>For syncing Quotes or Quotation from ZOHO CRM to Uniconta, Lookup mapping is to be done for the field tax. 
-The values for the lookup are provided below.</p>
-
-<p><img src="/staticfiles/connectors/media/application-connector/zohocrm-troubleshooting2.png" alt="zohocrm-troubleshooting2" /></p>
-
-<h2 id="attributes-and-actions">Attributes and Actions</h2>
-
-<p>While defining a connect to a particular API endpoint in Zoho CRM V2, you require clear understanding about the data requirements 
-and endpoint configurations. You can refer to this document to find all the endpoint details of your Zoho CRM V2 installation. 
-To define the endpoint in APPSeCONNECT, you need Actions and Entities. Actions are specifically targeted for a particular 
-endpoint while schema is the data needed to execute the API. Here, is the list of some of the pre-packaged API actions defined 
-for you which you can easily plug and play while doing your integrations.In Zoho CRM Customer is known as <code class="highlighter-rouge">Account</code>.</p>
-
-<p>Note: <a href="https://www.zoho.com/crm/help/developer/api/get-records.html">Click Here</a> for knowing the  API Path for the GET Operation and For accessing the API of POST Operation, <a href="https://www.zoho.com/crm/help/developer/api/insert-records.html">Click Here</a>.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Endpoint</th>
-      <th>Action</th>
-      <th>Action Type</th>
-      <th>Schema</th>
-      <th>UI Path</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Account</td>
-      <td>accounts</td>
-      <td>GET</td>
-      <td>Account</td>
-      <td><a href="/connectors/Adding-Account-in-Zoho/">Fetch accounts/customers from ZOHO CRM</a></td>
-    </tr>
-    <tr>
-      <td>Products</td>
-      <td>post</td>
-      <td>POST</td>
-      <td>Products</td>
-      <td>Post products in ZOHO CRM from any source application</td>
-    </tr>
-    <tr>
-      <td>Products</td>
-      <td>products</td>
-      <td>GET</td>
-      <td>Products</td>
-      <td><a href="https://www.zoho.com/crm/help/products/create-products.html">Fetch the products from ZOHO CRM and post it in the destination application</a></td>
-    </tr>
-    <tr>
-      <td>Quotes</td>
-      <td>Quotes</td>
-      <td>GET</td>
-      <td>Quotes</td>
-      <td><a href="https://www.zoho.com/crm/help/quotes/create-quotes.html#Create">Fetch Sales Quotation from ZOHO CRM and post it to the destination application</a></td>
-    </tr>
-    <tr>
-      <td>Deals</td>
-      <td>Deals</td>
-      <td>GET</td>
-      <td>Deals</td>
-      <td><a href="https://www.zoho.com/crm/help/opportunities/create-opportunities.html#Create">Fetch Deals from ZOHO CRM and post it to the destination application</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p class="notice--info"><strong>Protip:</strong> Before creating Deals and Quotations, the user/implementer needs to have complete details of the Account
-and is mandatory without which, the sync for that deal and quote touchpoint will not be executed successfully. The Account associated 
-with a deal will be synced only when the deal is at the stage CLOSED WON.In case of multiple deals, associated with a single account, the Account Details will be synced 
-only once</p>
 
                 
             </section>
@@ -2397,7 +2356,7 @@ only once</p>
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-17T00:00:00+05:30">February 17, 2019</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-30T00:00:00+05:30">June 30, 2020</time></div>
                 
                 
   
@@ -2434,7 +2393,7 @@ only once</p>
     
       
       
-      <a href="/connectors" class="page__taxonomy-item" rel="tag">Connectors</a>
+      <a href="/processflow" class="page__taxonomy-item" rel="tag">Processflow</a>
     
     </span>
   </p>
@@ -2446,13 +2405,13 @@ only once</p>
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=ZohoCRM+V2.0%20https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Protocol+Implementation+for+Applications%20https://docs.appseconnect.com%2Fprocessflow%2Fprotocol-implementation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Fprotocol-implementation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fprocessflow%2Fprotocol-implementation%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2Fzohocrmv2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Fprotocol-implementation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
             
@@ -4565,23 +4524,23 @@ only once</p>
                             
                             
                             
+                            <li>
+                                <a href="/processflow/working-with-variable/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Working with Capture Variables
+                                </a>
+                            </li>
                             
                             
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+                            <li>
+                                <a href="/processflow/adding-schema-actions/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Adding and Managing - Schema & Actions
+                                </a>
+                            </li>
                             
                             
                             
@@ -4616,9 +4575,31 @@ only once</p>
                             
                             
                             <li>
-                                <a href="/connectors/Lightspeed/" rel="permalink">
+                                <a href="/processflow/working-with-processflow-selfloop/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Lightspeed
+                                    Selfloop
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-processflow-merger/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Merger Node
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-processflow-splitter/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Splitter Node
                                 </a>
                             </li>
                             
@@ -4676,12 +4657,6 @@ only once</p>
                             
                             
                             
-                            <li>
-                                <a href="/connectors/Troubleshooting-Rest/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Troubleshooting for Rest
-                                </a>
-                            </li>
                             
                             
                             
@@ -4699,34 +4674,18 @@ only once</p>
                             
                             
                             
-                            <li>
-                                <a href="/connectors/Mapping-and-Transformation/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Mapping and Transformation
-                                </a>
-                            </li>
                             
                             
                             
                             
                             
-                            <li>
-                                <a href="/connectors/Filters-for-Integration/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Using Filters for Integration
-                                </a>
-                            </li>
                             
                             
                             
                             
                             
-                            <li>
-                                <a href="/connectors/Overview-of-GenericRest-Adapters/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Overview of Rest Adapters
-                                </a>
-                            </li>
+                            
+                            
                             
                             
                             
@@ -5255,8 +5214,8 @@ only once</p>
 <script id="dsq-count-scr" src="https://docs-appseconnect-com.disqus.com/count.js" async></script>
 <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/connectors/zohocrmv2/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/connectors/zohocrmv2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "http://localhost:4000/processflow/protocol-implementation/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/processflow/protocol-implementation"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
