@@ -1203,39 +1203,39 @@
     
     
     <li class="menu-item-" data-url="/integration/shopify-sage300/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/shopify-sage300/" onclick="selectTab('/integration/shopify-sage300/', event);" title="Go to Shopify-Sage300">Shopify-Sage300</a>
+        <a href="/integration/shopify-sage300/" onclick="selectTab('/integration/shopify-sage300/', event);" title="Go to Shopify-Sage300 B2C">Shopify-Sage300 B2C</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/integration/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/sales-order-add/" onclick="selectTab('/integration/sage-shopify/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-shipment-add/" onclick="selectTab('/integration/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/customer-add/" onclick="selectTab('/integration/sage-shopify/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
     </li>
     
@@ -1676,6 +1676,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/protocol-implementation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/protocol-implementation/" onclick="selectTab('/processflow/protocol-implementation/', event);" title="Go to Protocol Implementation for Applications">Protocol Implementation for Applications</a>
         
     </li>
     
@@ -2225,7 +2231,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -2243,24 +2249,52 @@
                 
                 <p>Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use the following nodes for designing and executing Process Flows for sync purpose:</p>
 
-<ol>
-  <li>
-    <p>Start Node: This node initiates the start process of the Process Flow execution. You cannot SAVE or execute a Process Flow without a Start Node.</p>
-  </li>
-  <li>
-    <p>GET Node: This node fetches the data from the source application for the sync purpose. You need to enable the APP dragged for operating GET node by selecting the Node Type as GET in the Node Configuration window of the dragged application.</p>
-  </li>
-  <li>
-    <p><a href="/processflow/working-with-mapper/">Mapper Node</a>: This node transforms the data to the destination application by applying field mappings of source and destination application.</p>
-  </li>
-  <li>
-    <p>POST Node: This node dumps the transformed data to the destination application after the transformation process is completed. You need to enable the destination application as POST node by selecting the Node Type as POST in the Node Configuration window of the dragged destination application.</p>
-  </li>
-  <li>
-    <p>End Node: This node signifies the completion of the sync process. You may or may not use the End node to design Process Flows.
-<img src="../../../staticfiles/processflow/media/mapper/nodes_overview.png" alt="Nodes Overview" /></p>
-  </li>
-</ol>
+<table>
+  <thead>
+    <tr>
+      <th>Processflow Nodes</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Start Node</td>
+      <td>This node initiates the start process of the Process Flow execution. You cannot SAVE or execute a Process Flow without a Start Node.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-GET/">GET Node</a></td>
+      <td>This node fetches the data from the source application for the sync purpose. You need to enable the APP dragged for operating GET node by selecting the Node Type as GET in the Node Configuration window of the dragged application.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-mapper/">Mapper Node</a></td>
+      <td>This node transforms the data to the destination application by applying field mappings of source and destination application.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-POST/">POST Node</a></td>
+      <td>This node dumps the transformed data to the destination application after the transformation process is completed. You need to enable the destination application as POST node by selecting the Node Type as POST in the Node Configuration window of the dragged destination application.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-processflow-splitter/">Splitter Node</a></td>
+      <td>Splitter Node in Process Flow will split the incoming data into small packets such that the execution load of bulk data can be minimized during the execution process.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-processflow-merger/">Merger Node</a></td>
+      <td>Merger Node in Process Flow will merge multiple data into batches as per the input provided by the user.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-processflow-selfloop/">Self loop</a></td>
+      <td>This enables the user to apply self-loop on a node such that on execution, the self-loop will iterate until all data is available from its predecessor node.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-decision/">Decision Node</a></td>
+      <td>This node enables you to apply condition checks for filtering redundant data</td>
+    </tr>
+    <tr>
+      <td>End Node</td>
+      <td>This node signifies the completion of the sync process. You may or may not use the End node to design Process Flows.</td>
+    </tr>
+  </tbody>
+</table>
 
                 
             </section>
@@ -4419,8 +4453,27 @@
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/protocol-implementation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Protocol Implementation for Applications
+                                </a>
+                            </li>
                             
                             
                             
@@ -4495,15 +4548,6 @@
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-processflow-splitter/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Splitter Node
-                                </a>
-                            </li>
                             
                             
                             

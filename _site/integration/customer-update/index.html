@@ -1203,39 +1203,39 @@
     
     
     <li class="menu-item-" data-url="/integration/shopify-sage300/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/shopify-sage300/" onclick="selectTab('/integration/shopify-sage300/', event);" title="Go to Shopify-Sage300">Shopify-Sage300</a>
+        <a href="/integration/shopify-sage300/" onclick="selectTab('/integration/shopify-sage300/', event);" title="Go to Shopify-Sage300 B2C">Shopify-Sage300 B2C</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/integration/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-product-add/" onclick="selectTab('/integration/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/sales-order-add/" onclick="selectTab('/integration/sage-shopify/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-shipment-add/" onclick="selectTab('/integration/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/customer-add/" onclick="selectTab('/integration/sage-shopify/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
     </li>
     
@@ -1676,6 +1676,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/protocol-implementation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/protocol-implementation/" onclick="selectTab('/processflow/protocol-implementation/', event);" title="Go to Protocol Implementation for Applications">Protocol Implementation for Applications</a>
         
     </li>
     
@@ -2266,29 +2272,25 @@
 
 <p>Same as <a href="/integration/customer-add/">Customer Add</a>.</p>
 
-<p><strong>Note:</strong> After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration button in the Agent.</p>
+<p><strong>Note:</strong> After mapping changes is done, <code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the Update Configuration and Update Lookup Tables button in the Agent.</p>
 
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
 <ol>
-  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</li>
-  <li>Navigate to the Workflow Panel in the agent and click on the <strong>Start Sync Button</strong> for executing the Process.</li>
-  <li>Once the Execution is finished, click on the <strong>Resync Button</strong> (Highlighted Below) in the agent.</li>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the <strong>Start Sync Button</strong> for executing the Process.</p>
+  </li>
+  <li>
+    <p>You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation">Click Here</a>.</p>
+  </li>
 </ol>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\custupdate3.png" alt="custupdate3" /></p>
-
-<ol>
-  <li>The Resync Panel shows the Success Result in the agent. The User can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation">Click Here</a>.</li>
-</ol>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\custupdate4.png" alt="custupdate4" /></p>
 
 <h2 id="integration-data-survey">Integration Data Survey:</h2>
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow.</p>
-
-<p><img src="\staticfiles\integration\Sage300-Magento\custupdate5.png" alt="custupdate5" /></p>
 
 <h2 id="post-conditions">Post Conditions:</h2>
 
@@ -4464,6 +4466,14 @@ Here you can view the data <code class="highlighter-rouge">MA57</code> successfu
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4475,23 +4485,7 @@ Here you can view the data <code class="highlighter-rouge">MA57</code> successfu
                             
                             
                             
-                            <li>
-                                <a href="/integration/ic-shipment-add/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Shipment Add from Shopify to SAGE 300
-                                </a>
-                            </li>
                             
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/integration/ic-inventory-update/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Inventory Update from Shopify SAGE 300
-                                </a>
-                            </li>
                             
                             
                             
@@ -4533,6 +4527,24 @@ Here you can view the data <code class="highlighter-rouge">MA57</code> successfu
                             
                             
                             
+                            
+                            <li>
+                                <a href="/integration/sales-order-add/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Sales Order Add from Magento 2 to SAGE 300
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/integration/ic-product-add/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    I/C Product Add from SAGE300 to Magento2
+                                </a>
+                            </li>
                             
                             
                             

@@ -57,11 +57,15 @@ is given below
 
 2. The Actions column on the right side of screen consist of buttons that configures and publish the touchpoint used in the workflow.
 
-a. Preview - This button previews the XSLT for the touchpoint used in the workflow
-b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.
-c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.
-d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. The portal view for the Resync Bucket is given below.
+a. Preview - This button previews the XSLT for the touchpoint used in the workflow.  
+b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.  
+c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.  
+d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. The portal view for the Resync Bucket is given below.  
 ![resync_button](/staticfiles/workflow-management/media/resync_button.png)
+
+* You will get the view of all data synced - Success, Failed, Unprocessed.
+* Now to resync the failed data, select one data or more and click on `Resync` button.
+* You can view the resync execution status as message/progress bar below the pop up window.
 
 3. On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
 user made in the APPSeCONNECT cloud` and is `compiled to a single file stored on the server` which is 

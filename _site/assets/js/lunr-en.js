@@ -2401,6 +2401,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Protocol Implementation for Applications",
+      excerpt: "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 265
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5327,6 +5336,17 @@ var store = [
         "title": "Working with Capture Variables",
         "url": "/processflow/working-with-variable/",
         "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Protocol Implementation for Applications",
+        "url": "/processflow/protocol-implementation/",
+        "excerpt": "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
