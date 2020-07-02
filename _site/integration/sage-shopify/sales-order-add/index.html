@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-05-22T00:00:00+05:30">
+  <meta property="article:published_time" content="2020-05-23T00:00:00+05:30">
 
 
 
@@ -369,12 +369,6 @@
     
     <li class="menu-item-" data-url="/getting%20started/user-registration/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/getting%20started/user-registration/" onclick="selectTab('/getting%20started/user-registration/', event);" title="Go to User Registration">User Registration</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/accessing%20portal/accessing-portal/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/accessing%20portal/accessing-portal/" onclick="selectTab('/accessing%20portal/accessing-portal/', event);" title="Go to Accessing APPSeCONNECT Portal">Accessing APPSeCONNECT Portal</a>
         
     </li>
     
@@ -1177,14 +1171,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/ic-inventory-update/" onclick="selectTab('/integration/ic-inventory-update/', event);" title="Go to I/C Inventory Update">I/C Inventory Update</a>
+    <li class="menu-item-" data-url="/integration/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sales-order-add/" onclick="selectTab('/integration/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
@@ -1226,14 +1220,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sage-shopify/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/sales-order-add/" onclick="selectTab('/integration/sage-shopify/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+    <li class="menu-item-" data-url="/integration/sage-shopify/sales-order-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/sales-order-add/" onclick="selectTab('/integration/sage-shopify/sales-order-add/', event);" title="Go to Sales Order Add">Sales Order Add</a>
         
     </li>
     
@@ -2173,7 +2167,7 @@
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Sales Order Add from Shopify to SAGE 300">
         <meta itemprop="description" content="Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Shopify to SAGE 300.">
-        <meta itemprop="datePublished" content="May 22, 2020">
+        <meta itemprop="datePublished" content="May 23, 2020">
         
 
 
@@ -2243,7 +2237,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-22T00:00:00+05:30">May 22, 2020</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-23T00:00:00+05:30">May 23, 2020</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2270,6 +2264,7 @@
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
   <li><a href="#post-conditions">Post Conditions:</a></li>
   <li><a href="#frequency-of-use">Frequency of Use:</a></li>
+  <li><a href="#limitations">Limitations:</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2283,8 +2278,6 @@
 <p>A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Shopify for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. <a href="https://help.shopify.com/en/manual/orders/create-orders">Click here</a> to know more about generating Sales Orders in Shopify.</p>
 
 <p>Here, an Order is placed for the customer Lonnie K Croker, against the product Seinhieser Double Bass Headset.</p>
-
-<p><img src="\staticfiles\integration\SAGE300-Shopify\orderadd2.PNG" alt="orderadd2" /></p>
 
 <h2 id="lookup-mapping">Lookup Mapping:</h2>
 
@@ -2312,20 +2305,17 @@
 
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
 
-<p><img src="\staticfiles\integration\SAGE300-Shopify\orderadd5.PNG" alt="orderadd5" /></p>
-
-<p>Here, you can view the Order for the customer <code class="highlighter-rouge">Lonnie K Croker</code> got successfully synced to SAGE 300.</p>
-
 <h2 id="post-conditions">Post Conditions:</h2>
-<p>You can view the data sync in SAGE 300 by navigating to <code class="highlighter-rouge">Order Entry &gt; O/E transactions &gt; Order Entry </code>. Search the Order post with the order number, and you ccan view the order details.</p>
-
-<p><img src="\staticfiles\integration\SAGE300-Shopify\orderadd6.PNG" alt="orderadd6" /></p>
-
-<p>Here, you can view the order for the customer Lonnie K Croker in SAGE 300, with the complete order details.</p>
+<p>You can view the data sync in SAGE 300 by navigating to <code class="highlighter-rouge">Order Entry &gt; O/E transactions &gt; Order Entry</code>. Search the Order post with the order number, and you can view the order details.</p>
 
 <h2 id="frequency-of-use">Frequency of Use:</h2>
 
 <p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="limitations">Limitations:</h2>
+<p>NA</p>
+
+<p>Following the above procedures, you can successfully sync customers from Shopify to SAGE 300.</p>
 
                 
             </section>
@@ -2333,7 +2323,7 @@
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-22T00:00:00+05:30">May 22, 2020</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-23T00:00:00+05:30">May 23, 2020</time></div>
                 
                 
   
@@ -4484,16 +4474,12 @@
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -4516,6 +4502,10 @@
                             
                             
                             
+                            
+                            
+                            
+                            
                             <li>
                                 <a href="/integration/sage-shopify/ic-inventory-update/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
@@ -4529,20 +4519,12 @@
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
-                            
                             <li>
                                 <a href="/integration/sage-shopify/ic-product-add/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Product Add
+                                    I/C Product Add from SAGE 300 to Shopify
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             
@@ -4558,8 +4540,6 @@
                                     Customer Add from Shopify to SAGE 300
                                 </a>
                             </li>
-                            
-                            
                             
                             
                             
