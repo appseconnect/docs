@@ -21,7 +21,7 @@ application of SAP Business One, attributes and action, and the Troubleshooting 
 
 ## Prerequisites for SAP Business One Configuration
 
-1.	Select the application SAP Business One in the [APPS](/configuring%20appseconnect/configurations/#process-of-choosing-app) section of the APPSeCONNECT Portal.
+1.	Select the application SAP Business One in the [APPS](/getting%20started/configurations/#process-of-choosing-app) section of the APPSeCONNECT Portal.
 2.	Create and publish a [connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) in the cloud portal.
 3.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent.To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 

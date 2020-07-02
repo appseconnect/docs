@@ -17,7 +17,7 @@ The basic pre-requisite and list of Master Data Processess for Integration is gi
 
 ## Prerequisites of Integration
 
-1.	Login to the APPSeCONNECT Portal and [choose the app](/configuring%20appseconnect/configurations/#process-of-choosing-app) MAGENTO2 and SAP Business One (≥8.8)
+1.	Login to the APPSeCONNECT Portal and [choose the app](/getting%20started/configurations/#process-of-choosing-app) MAGENTO2 and SAP Business One (≥8.8)
 2.	Navigate to the connections module and [create a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for both the selected applications.	
 3.	Now navigate to the Workflow module, you can either [create a workflow](/workflow/steps-to-create-your-first-workflow/) or 
     can [choose a pre-packaged workflow](/workflow/steps-to-choose-your-workflow/).

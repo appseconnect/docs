@@ -57,9 +57,10 @@ The Entity field is the Parent nodes of the packet that would be split. The XPat
 `Application used for the Processflow Execution is: Magento2 and SAP B1`.
 
 The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:      
-[PLACEHOLDER]     
+
 1) Go to Processflow section & [Design](/processflow/designer-processflow/) a Processflow.  
-2) The Processflow is designed as shown in the above section of the screen.  
+2) The Processflow is designed as shown in the screen below.
+![splitflow1](\staticfiles\processflow\media\splitflow1.PNG)
 3) Here the `splitter` node is used after  getting customer data from Magento,
 and splitting it into multiple output packets for posting in destination application.  
 4) You have to add [Self loop](/processflow/working-with-processflow-selfloop/) in the mapper node so that all the splitted files are executed
@@ -68,19 +69,22 @@ and posted in the destination application, to avoid any data loss.
 6) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
 to view the detailed node by node snapshot data of the processflow.    
 7) Click on the Splitter node to get the snapshot dataview of the splitted files.      
-[PLACEHOLDER]    
+![splitflow2](\staticfiles\processflow\media\splitflow2.PNG)    
 Here you can see the data log file of snapshot with two file, containing `One customer records` each.  
 8) Now click on the `Transactional Log` to view the splitted data.    
- [PLACEHOLDER]      
+ ![splitflow3](\staticfiles\processflow\media\splitflow3.PNG)      
 Here you can view two splitted files are created each containing `one customer record` for further processing and 
 posting in destination application.   
 9) Now Click on `Mapper node` and you can view two iterations are created for two files
-which are processed.Every Iteration has - Data Log, Activity Files & Transactional Files where you can view
-the file details   
-[PLACEHOLDER]   
+which are processed. Every Iteration has - Data Log, Activity Files & Transactional Files where you can view
+the file details.
+   
 10) Click on the destination application node present under every iteration to view the
 file posting status - Success/Failure.    
-[PLACEHOLDER]   
+![splitflow4](\staticfiles\processflow\media\splitflow4.PNG)
+
+**Note: Since Self Loop configuration was set as `Until Data Available`, you will be generated with an extra iteration. For more details related to Self-Loop, [Click Here](/processflow/working-with-processflow-selfloop/).**
+
 
 Thus, the above processflow is executed with the splitter node and you can also 
 view the iteration wise node execution created with self loop.

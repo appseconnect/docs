@@ -13,7 +13,7 @@ Executing the Process is a vital part when integrating any applications. This se
 
 ## Brief Description:
 
-![custadd1](\staticfiles\integration\SAGE300-Shopify\custadd1.PNG)
+
 
 Here, the Workflow is used for syncing multiple customers from [Shopify](/connectors/shopify/) to [SAGE 300](/connectors/sage300/). A workflow is designed and executed with the Customer Add General touchpoint where Customers are being added to SAGE 300 from Shopify. The customer is created in the shopify platform and is synced to SAGE 300.
 
@@ -38,13 +38,8 @@ For posting newly added customer to SAGE 300 from Shopify, you need to add Looku
 
 You can survey the data by viewing the [Processed Snapshot](/workflow/list-of-snapshot/) from the node level of the workflow.
 
-![custadd5](\staticfiles\integration\SAGE300-Shopify\custadd5.PNG)
-
 ## Post Conditions:
-You can view the data sync in SAGE 300 by viewing the `Accounts Receivable > A/R Customers.`
-Here you can view the data **BLANK** successfully synced in SAGE 300.
-
-![custadd6](\staticfiles\integration\SAGE300-Shopify\custadd6.PNG)
+You can view the data sync in SAGE 300 by viewing the `Accounts Receivable > A/R Customers.` successfully.
 
 ## Frequency of Use:
 

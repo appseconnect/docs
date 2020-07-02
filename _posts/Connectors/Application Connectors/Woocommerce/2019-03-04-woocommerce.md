@@ -22,7 +22,7 @@ the credential of the application WooCommerce.
 # Pre-requisites for WooCommerce Configuration 
 
 1.	Valid APPSeCONNECT Portal credentials.
-2.	Select the Application WooCommerce in the [APP](/configuring%20appseconnect/configurations/#process-of-choosing-app) section.
+2.	Select the Application WooCommerce in the [APP](/getting%20started/configurations/#process-of-choosing-app) section.
 3.	[Create a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for WooCommerce.
 4.	Publish a Touchpoint Update Adapters and Update Configuration in the agent.
 

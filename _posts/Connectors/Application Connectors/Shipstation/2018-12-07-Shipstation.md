@@ -23,7 +23,7 @@ credential of the application Shipstation.
 # Pre-requisites of Shipstation Configuration 
 
 * Valid APPSeCONNECT Portal credentials.
-* Select the Application Shipstation in the [APP section](/configuring%20appseconnect/configurations/#process-of-choosing-app).
+* Select the Application Shipstation in the [APP section](/getting%20started/configurations/#process-of-choosing-app).
 * [Create connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for Shipstation.
 * Publish Touchpoint, Update Adapters and Update Configuration in the agent.
 

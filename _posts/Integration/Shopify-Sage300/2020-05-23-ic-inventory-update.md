@@ -13,8 +13,7 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 **Note: Before proceeding with this integration you need to integrate I/C Product Add from SAGE 300 to Shopify**
 
-## Brief Description:  
-![Invupdate1](\staticfiles\integration\SAGE300-Shopify\invupdate1.PNG)
+## Brief Description:
 
 Inventory update is used to integrate the quantity of products synced to Shopify from SAGE 300. Updates made in the quantity need to be managed in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inventory in SAGE 300. 
 

@@ -13,8 +13,6 @@ Executing the Process is a vital part when integrating any applications. This se
 
 ## Brief Description:
 
-![productadd1](\staticfiles\integration\Sage300-Magento\productadd1.png)
-
 In this case, the Workflow for Adding Products/Items, is used for adding simple product from SAGE 300 to Magento2. Here, a workflow is created where all the Simple Products are fetched form SAGE 300 and are posted to Magento2.
 
 As a prerequisite, you need to have the products created in SAGE 300. [Click here](/connectors/adding-product-in-sage/) to know about the steps to create products in SAGE 300.

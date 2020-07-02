@@ -12,9 +12,7 @@ menus:
 
 Executing the process is a vital part when integrating any applications. This section of the document will let the users understand how the integration for the adding **Shipments** can be executed using a workflow from SAGE 300 to Magento2. 
 
-## Brief Description
-
-![shipadd1](\staticfiles\integration\Sage300-Magento\shipadd1.PNG)
+## Brief Description:
 
 Before executing the sync process you need to create workflow for adding shipments from SAGE 300 - Magento 2. The prerequisites for this integration is listed below:
 

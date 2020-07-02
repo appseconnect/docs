@@ -11,9 +11,7 @@ menus:
 ---
 Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the users understand how the integration for the adding **Shipments** can be executed using a workflow from SAGE 300 to Shopify. 
 
-## Brief Description
-
-![shipadd1](\staticfiles\integration\SAGE300-Shopify\shipadd1.PNG)
+## Brief Description:
 
 Before executing the sync process you need to create workflow for adding shipments from SAGE 300 - Shopify. The prerequisites for this integration is listed below:
 
