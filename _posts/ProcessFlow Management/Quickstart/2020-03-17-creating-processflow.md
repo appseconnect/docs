@@ -46,12 +46,15 @@ i.	The following are the fields available in the Node Configuration Slider
 * Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.    
  ![Create Basicprocessflow7](../../staticfiles/processflow/media/create-basicprocessflow7.png)    
 j.	Once all the details are the provided click Save button.       
-k.	Drag the [mapper](/processflow/working-with-mapper/) node and the destination application in the design panel. The Node configuration slider opens when the destination application is dragged.  
+k.	Drag the [mapper](/processflow/working-with-mapper/) node and the destination application in the design panel. You need to save the fully created Process flow for opening the Mapper Node Configuration Window, after linking all the nodes from START to END.
+
 l.	Provide the node configuration details for the destination application and click save button.  
 ![Create Basicprocessflow8](../../staticfiles/processflow/media/create-basicprocessflow8.png)     
 **Note: The Node type for the destination applications is selected as POST as data would be posted to the destination application from Source.**    
 m.	Join the dragged node from Start to End. On joining the mapper node & the destination application, the transformation window opens. The user can perform the mapping for the applications      
 ![Create Basicprocessflow9](../../staticfiles/processflow/media/create-basicprocessflow9.png)    
+**Note: You need to save the fully created Process flow for opening the Mapper Node Configuration Window, after linking all the nodes from START to END.**
+
 n.	You can edit the mapping anytime by click over the node configuration button, available on the [Mapper](/processflow/working-with-mapper/) Node. Clicking on the cross button will delete the node from the designer panel.      
 ![Create Basicprocessflow10](../../staticfiles/processflow/media/create-basicprocessflow10.png)   
 **Note: Every node has a node configuration button (except Start & End), the configuration window opens when clicked on that button.**    

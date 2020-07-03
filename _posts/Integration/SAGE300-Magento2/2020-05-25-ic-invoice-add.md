@@ -14,8 +14,6 @@ Executing the process is a vital part when integrating any applications. This se
 
 ## Brief Description:
 
-![invadd1](\staticfiles\integration\Sage300-Magento\invadd1.PNG)
-
 Before executing the sync process you need to create workflow for adding Invoice from SAGE 300 - Magento 2. The Invoices are created for the Order synced in SAGE 300 from Magento 2. The invoices are generated in SAGE 300 will be synced to Magento 2 in the Customers account who placed the order.
 
 The prerequisites for this integration is listed below:

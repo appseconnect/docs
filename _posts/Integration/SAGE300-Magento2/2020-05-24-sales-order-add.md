@@ -14,8 +14,6 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 ## Brief Description
 
-![orderadd1](\staticfiles\integration\Sage300-Magento\orderadd1.png)
-
 A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Magento2 for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. [Click here](https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html) to know more about generating Sales Orders in Magento2.
 
 

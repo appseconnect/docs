@@ -54,7 +54,38 @@ The XPath provided for the MERGER Node is shown below:
 
 ![Merger4](/staticfiles/workflow-management/media/Merger/Merger4.png)
 
-![Merger2](\staticfiles\processflow\media\merger2.PNG)
+## Application used for the Processflow Execution is: Magento2 and SAP B1.
+
+   
+1) Go to Processflow section & [Design](/processflow/designer-processflow/) a Processflow.  
+
+![mergerflow1](\staticfiles\processflow\media\mergeflow1.PNG)
+
+2) The Processflow is designed as shown in the above section of the screen.  
+
+4) You have to add [Self loop](/processflow/working-with-processflow-selfloop/) in the destination node so that all the merged files are posted in the destination application, without any data loss.  
+
+5) Add the Merger node after mapper such that all the incoming files can be merged in a batch of 2.
+
+5) Now [Deploy](/processflow/deploying-and-executing-processfloww/) the Process flow. After successful deployment, to your environment, [Execute](/processflow/deploying-and-executing-processfloww/) the Processflow. 
+
+6) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
+to view the detailed node by node snapshot data of the processflow.    
+
+7) Click on the merger node to get the snapshot dataview of the merged files.      
+![mergeflow2](\staticfiles\processflow\media\mergeflow2.PNG)    
+
+8) Now click on the **Transactional File** tab to view both the merged files.  
+ ![mergeflow3](\staticfiles\processflow\media\mergeflow3.PNG)      
+Here you can view **TWO** transactional files, containing `two customer records` in file **ONE** and a single customer record in file **TWO** as total number of data count was **three**. 
+  
+9) Expand the destination node to view the sync result of the iteration.
+![mergeflow4](\staticfiles\processflow\media\mergeflow4.PNG)
+ 
+Thus, the above processflow is executed with the Merger node and you can also 
+view the iteration wise node execution created with self loop.
+
+**Note: Since Self Loop configuration was set as `Until Data Available`, you will be generated with an extra iteration. For more details related to Self-Loop, [Click Here](/processflow/working-with-processflow-selfloop/).**
 
 **1. Business Scenario -  Applications with API request throttling**   
 

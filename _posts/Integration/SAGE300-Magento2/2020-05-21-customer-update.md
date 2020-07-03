@@ -11,9 +11,7 @@ menus:
 ---
 Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for updating existing customers details from Magento2 to SAGE  300.
 
-## Brief Description
-
-![custupdate1](\staticfiles\integration\Sage300-Magento\custupdate1.png)
+## Brief Description:
 
 Here, the workflow for Customer Update is used for syncing updated customers from [Magento2](/connectors/Magento2/) to [SAGE 300](/connectors/sage300/). A [Post-Task](/transformation/handling-dependent-data/)  Address Update is also attached for syncing updated customer address to SAGE 300. A workflow is designed and executed with the Customer Update touchpoint where Customers are being added to SAGE 300 from Magento2. 
 

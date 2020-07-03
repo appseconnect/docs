@@ -25,7 +25,7 @@ adjustments can be implemented easily in the portal with zero code requirements.
 
 ## List of Pre-packaged Application Connectors
 
-APPSeCONNECT as a platform supports a wide range of [pre-packaged connectors](/configuring%20appseconnect/configurations/#process-of-choosing-app), which can be easily plugged and played 
+APPSeCONNECT as a platform supports a wide range of [pre-packaged connectors](/getting%20started/configurations/#process-of-choosing-app), which can be easily plugged and played 
 by the enduser. These connectors are mainly developed in generic manner taking in account on Vanilla system application. Some 
 customizations might be needed for the organizations to support custom implementation or customizations made over the vanilla applications. 
 

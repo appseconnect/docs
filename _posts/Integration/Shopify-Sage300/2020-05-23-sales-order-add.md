@@ -11,9 +11,7 @@ menus:
 ---
 Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for adding Sales Orders from Shopify to SAGE 300.
 
-## Brief Description
-
-![orderadd1](\staticfiles\integration\SAGE300-Shopify\orderadd1.PNG)
+## Brief Description:
 
 A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Shopify for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. [Click here](https://help.shopify.com/en/manual/orders/create-orders) to know more about generating Sales Orders in Shopify.
 

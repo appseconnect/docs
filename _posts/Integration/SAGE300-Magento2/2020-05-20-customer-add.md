@@ -14,9 +14,7 @@ Executing the Process is a vital part when integrating any applications. This se
 
 ## Brief Description:
 
-![custadd1](\staticfiles\integration\Sage300-Magento\custadd1.png)
-
-Here, the Touchpoint Customer is used for syncing multiples customers from [Magento2](/connectors/Magento2/) to [SAGE 300](/connectors/sage300/). A [Post-Task](/transformation/handling-dependent-data/) Address Add is also attached for syncing customer address to SAGE 300. A workflow is designed and executed with the Customer Add touchpoint where Customers are being added to SAGE 300 from Magento2. The customer is created in Magento 2 and is synced to the SAGE 300.
+Here, the Customer is used for syncing multiples customers from [Magento2](/connectors/Magento2/) to [SAGE 300](/connectors/sage300/). A [Post-Task](/transformation/handling-dependent-data/) Address Add is also attached for syncing customer address to SAGE 300. A workflow is designed and executed with the Customer Add touchpoint where Customers are being added to SAGE 300 from Magento2. The customer is created in Magento 2 and is synced to the SAGE 300.
 
 Login to Magento 2 Application and [add customers](https://docs.magento.com/m2/ce/user_guide/customers/account-create.html) in Magento2.
 
