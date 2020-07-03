@@ -419,8 +419,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/overview-of-application-connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/overview-of-application-connectors/" onclick="selectTab('/connectors/overview-of-application-connectors/', event);" title="Go to Application">Application</a>
+    <li class="menu-item-" data-url="/connectors/Overview-of-Application-Connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Overview-of-Application-Connectors/" onclick="selectTab('/connectors/Overview-of-Application-Connectors/', event);" title="Go to Application">Application</a>
         
         
         
@@ -2225,7 +2225,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2283,6 +2283,8 @@
         <p>Applying Decision on <strong>attribute</strong> allows the node to decide the condition over the value passed through the attribute.</p>
 
         <p>As all data for an Entity (For Ex: Order, Business Partner etc ) are transfered through packets which are further made up of attributes, you can implement your business flow by applying condition on required attribute. If decision node meets up the condition expression provided, the data will be passed.</p>
+
+        <p>_ <strong>Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.</strong>_</p>
       </li>
       <li>
         <p>Decision on <strong>Generic Function</strong>:</p>

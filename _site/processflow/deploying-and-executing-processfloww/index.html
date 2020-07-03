@@ -419,8 +419,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/overview-of-application-connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/overview-of-application-connectors/" onclick="selectTab('/connectors/overview-of-application-connectors/', event);" title="Go to Application">Application</a>
+    <li class="menu-item-" data-url="/connectors/Overview-of-Application-Connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Overview-of-Application-Connectors/" onclick="selectTab('/connectors/Overview-of-Application-Connectors/', event);" title="Go to Application">Application</a>
         
         
         
@@ -2262,6 +2262,7 @@ credential for the applications that is used in the Process Flows.</p>
   <li>Should have valid credentials for logging in to the APPSeCONNECT portal.</li>
   <li><a href="/processflow/processflow-app/">APPS</a> should be chosen from the apps section, for proceeding with the design of Process Flows.</li>
   <li>The <a href="/processflow/designer-processflow/">designed</a> Process Flow should be saved before deploying it to the environment.</li>
+  <li>If you are deploying the process flow to the On-Premise environment, you need to check the <code class="highlighter-rouge">Enable Environment</code> checkbox in the Agent Settings as Active.</li>
 </ol>
 
 <h3 id="steps-to-deploy-process-flows-to-environment">Steps to deploy Process Flows to Environment</h3>
@@ -2283,7 +2284,7 @@ Works section, that will help you deploy your process flow successfully.</strong
       <li>Sync &amp; Retry: You need to configure the Manual/Auto  &amp; Retry execution of the Process Flow.<br />
 <img src="../../staticfiles/processflow/media/deploy-processflow3.png" alt="Deploy Processflow3" /> 
 (a) Now choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button.</li>
-      <li>You need to install the agent if you do not have an installed <a href="/deployment/Environment-Management/">Environment</a>.</li>
+      <li>You need to install the agent if you do not have an installed <a href="/deployment/Deployment-Configuration/#on-premise-agent-configuration">Environment</a>. For more Enviroment related details, <a href="/deployment/Environment-Management/">Click Here</a>.</li>
       <li>As per the selected type of environment, you need to select an environment from the list of environments in the drop down. 
 (b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.
 <img src="../../staticfiles/processflow/media/deploy-processflow4.png" alt="Deploy Processflow4" /> <br />
