@@ -54,7 +54,7 @@ The XPath provided for the MERGER Node is shown below:
 
 ![Merger4](/staticfiles/workflow-management/media/Merger/Merger4.png)
 
-## Application used for the Processflow Execution is: Magento2 and SAP B1.
+`Application used for the Processflow Execution is: Magento2 and SAP B1.`
 
    
 1) Go to Processflow section & [Design](/processflow/designer-processflow/) a Processflow.  
