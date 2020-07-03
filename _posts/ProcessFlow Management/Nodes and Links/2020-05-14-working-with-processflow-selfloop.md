@@ -87,7 +87,6 @@ You have the option for the Time-Out in Hours, Minutes & Seconds. Enter the dura
    by you or until data availability.  
 
 
-
 _**(a)Maximum no. of characters allowed in the Description Field will be Max.  
 (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
 (c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_ 

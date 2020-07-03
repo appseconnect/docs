@@ -419,8 +419,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/overview-of-application-connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/overview-of-application-connectors/" onclick="selectTab('/connectors/overview-of-application-connectors/', event);" title="Go to Application">Application</a>
+    <li class="menu-item-" data-url="/connectors/Overview-of-Application-Connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Overview-of-Application-Connectors/" onclick="selectTab('/connectors/Overview-of-Application-Connectors/', event);" title="Go to Application">Application</a>
         
         
         
@@ -1656,12 +1656,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-variable/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/working-with-variable/" onclick="selectTab('/processflow/working-with-variable/', event);" title="Go to Working with Capture Variables">Working with Capture Variables</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/export-and-import-lookup/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/export-and-import-lookup/" onclick="selectTab('/processflow/export-and-import-lookup/', event);" title="Go to Export and Import Lookup">Export and Import Lookup</a>
         
@@ -2292,10 +2286,11 @@ node the XPath is needed to be provided viewing the Transform Packet.</p>
 
 <p><code class="highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1</code>.</p>
 
-<p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:    <br />
-[PLACEHOLDER]   <br />
-1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.<br />
-2) The Processflow is designed as shown in the above section of the screen.<br />
+<p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:</p>
+
+<p>1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.<br />
+2) The Processflow is designed as shown in the screen below.
+<img src="\staticfiles\processflow\media\splitflow1.PNG" alt="splitflow1" />
 3) Here the <code class="highlighter-rouge">splitter</code> node is used after  getting customer data from Magento,
 and splitting it into multiple output packets for posting in destination application.<br />
 4) You have to add <a href="/processflow/working-with-processflow-selfloop/">Self loop</a> in the mapper node so that all the splitted files are executed
@@ -2304,19 +2299,21 @@ and posted in the destination application, to avoid any data loss. <br />
 6) Go to <a href="/deployment/Environment-Management/">Environment</a>section of the portal, select the process flow from the listing section and click <a href="/processflow/snapshot-processflow/">View Snapshot</a>
 to view the detailed node by node snapshot data of the processflow.  <br />
 7) Click on the Splitter node to get the snapshot dataview of the splitted files.    <br />
-[PLACEHOLDER]  <br />
+<img src="\staticfiles\processflow\media\splitflow2.PNG" alt="splitflow2" />  <br />
 Here you can see the data log file of snapshot with two file, containing <code class="highlighter-rouge">One customer records</code> each.<br />
 8) Now click on the <code class="highlighter-rouge">Transactional Log</code> to view the splitted data.  <br />
- [PLACEHOLDER]    <br />
+ <img src="\staticfiles\processflow\media\splitflow3.PNG" alt="splitflow3" />    <br />
 Here you can view two splitted files are created each containing <code class="highlighter-rouge">one customer record</code> for further processing and 
 posting in destination application. <br />
 9) Now Click on <code class="highlighter-rouge">Mapper node</code> and you can view two iterations are created for two files
-which are processed.Every Iteration has - Data Log, Activity Files &amp; Transactional Files where you can view
-the file details <br />
-[PLACEHOLDER] <br />
-10) Click on the destination application node present under every iteration to view the
+which are processed. Every Iteration has - Data Log, Activity Files &amp; Transactional Files where you can view
+the file details.</p>
+
+<p>10) Click on the destination application node present under every iteration to view the
 file posting status - Success/Failure.  <br />
-[PLACEHOLDER]</p>
+<img src="\staticfiles\processflow\media\splitflow4.PNG" alt="splitflow4" /></p>
+
+<p><strong>Note: Since Self Loop configuration was set as <code class="highlighter-rouge">Until Data Available</code>, you will be generated with an extra iteration. For more details related to Self-Loop, <a href="/processflow/working-with-processflow-selfloop/">Click Here</a>.</strong></p>
 
 <p>Thus, the above processflow is executed with the splitter node and you can also 
 view the iteration wise node execution created with self loop.</p>
@@ -4489,14 +4486,6 @@ different Application.</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -4508,17 +4497,6 @@ different Application.</p>
                                 <a href="/processflow/protocol-implementation/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     Protocol Implementation for Applications
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-variable/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Capture Variables
                                 </a>
                             </li>
                             
@@ -4586,6 +4564,15 @@ different Application.</p>
                             
                             
                             
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/cloud-appresource-functions/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Cloud Appresource Functions
+                                </a>
+                            </li>
                             
                             
                             

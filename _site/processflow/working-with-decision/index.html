@@ -419,8 +419,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/overview-of-application-connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/overview-of-application-connectors/" onclick="selectTab('/connectors/overview-of-application-connectors/', event);" title="Go to Application">Application</a>
+    <li class="menu-item-" data-url="/connectors/Overview-of-Application-Connectors/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Overview-of-Application-Connectors/" onclick="selectTab('/connectors/Overview-of-Application-Connectors/', event);" title="Go to Application">Application</a>
         
         
         
@@ -1656,12 +1656,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-variable/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/working-with-variable/" onclick="selectTab('/processflow/working-with-variable/', event);" title="Go to Working with Capture Variables">Working with Capture Variables</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/export-and-import-lookup/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/export-and-import-lookup/" onclick="selectTab('/processflow/export-and-import-lookup/', event);" title="Go to Export and Import Lookup">Export and Import Lookup</a>
         
@@ -2225,7 +2219,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2283,6 +2277,8 @@
         <p>Applying Decision on <strong>attribute</strong> allows the node to decide the condition over the value passed through the attribute.</p>
 
         <p>As all data for an Entity (For Ex: Order, Business Partner etc ) are transfered through packets which are further made up of attributes, you can implement your business flow by applying condition on required attribute. If decision node meets up the condition expression provided, the data will be passed.</p>
+
+        <p>_ <strong>Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.</strong>_</p>
       </li>
       <li>
         <p>Decision on <strong>Generic Function</strong>:</p>
@@ -4636,14 +4632,6 @@
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -4655,17 +4643,6 @@
                                 <a href="/processflow/protocol-implementation/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     Protocol Implementation for Applications
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-variable/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Capture Variables
                                 </a>
                             </li>
                             
@@ -4731,6 +4708,15 @@
                             </li>
                             
                             
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-processflow-splitter/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Splitter Node
+                                </a>
+                            </li>
                             
                             
                             
