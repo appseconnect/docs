@@ -2375,20 +2375,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Adding and Managing - Schema & Actions",
-      excerpt: "The user can view the schemasss and the action present in an app and can also add schema and add...",
-      categories: ["Processflow"],
-      tags: ["developers"],
-      id: 262
-    });
-    
-  
-    idx.add({
       title: "Protocol Implementation for Applications",
       excerpt: "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 263
+      id: 262
     });
     
   
@@ -5285,17 +5276,6 @@ var store = [
         "title": "Shipment Add from SAGE 300 to Magento2",
         "url": "/integration/ic-shipment-add/",
         "excerpt": "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Adding and Managing - Schema & Actions",
-        "url": "/processflow/adding-schema-actions/",
-        "excerpt": "The user can view the schemasss and the action present in an app and can also add schema and add...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
