@@ -56,7 +56,7 @@ a.	Project Name: Shows the organisation name.
 b.	Main Contact Person: Displays the contact detail (Email Id only) of the project holder.    
 c.	Implementation contact: Displays the email id of InSync implementation Team.    
 d.	Sales Contact: Shows the Email details of InSync Sales Team.    
-e.	Support Contact: Displays the Email Id of the InSync Support Team.    
+e.	Support Contact: Displays the Email Id of the InSync Support Team.   
 
 *2. Configuration Completion Details: This widget displays the configuration informations related to the organisation project. 
 This widget also has a progress bar that displays the progress status for the organisation.* 
@@ -266,9 +266,9 @@ b.	Organization Admin
     - Change Role: Here, the default user can change the role for the created user
 
 **Note:** 
-    •	All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
-    •	Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
-    •	Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
+    * All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
+    * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
+    * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
 
 ## Managing Customer Profile 
 
@@ -447,3 +447,10 @@ After completion, click save to save data. Now use the email id and password to 
 * Only projects where the user has access can be added.
 
 For example: Let say you have logged in the portal with a user who doesn't have permission more than two projects (e.g-solera) now if you would search with any keyword related "solera"  it would not come in the search list like
+
+
+
+
+
+
+

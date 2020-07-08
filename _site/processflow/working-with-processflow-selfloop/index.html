@@ -363,6 +363,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/accessing%20portal/accessing-portal/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/accessing%20portal/accessing-portal/" onclick="selectTab('/accessing%20portal/accessing-portal/', event);" title="Go to Accessing APPSeCONNECT Portal">Accessing APPSeCONNECT Portal</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/getting%20started/configurations/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/getting%20started/configurations/" onclick="selectTab('/getting%20started/configurations/', event);" title="Go to Working with Apps">Working with Apps</a>
         
@@ -1205,13 +1211,13 @@
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add from SAGE 300 to Shopify">I/C Product Add from SAGE 300 to Shopify</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from SAGE 300 to Shopify">I/C Inventory Update from SAGE 300 to Shopify</a>
         
     </li>
     
@@ -1223,7 +1229,7 @@
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
+        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from SAGE 300 to Shopify">Shipment Add from SAGE 300 to Shopify</a>
         
     </li>
     
@@ -2213,7 +2219,7 @@
 
 
 
-  6 minute read
+  5 minute read
 </p>
                 
                 
@@ -2251,8 +2257,6 @@ Presently three option is available to configure self-loop:</p>
   <li>Until data available: This option allows a self loop execution over a Node where self-loop will continue to execute until data available in the source app or node.</li>
   <li>Number of occurrences: This option allows Number of iterations on node over which self-loop implemented will execute.<br />
 <strong>User can set Maximum 999, to iterate the occurrence</strong></li>
-  <li>Timespan: This option allows the User to define the duration for which the self-loop will iterate the node over which it defined. <br />
-<strong>User can set Maximum upto  24 hrs, 59 mints, 59 seconds, to iterate the occurrence</strong></li>
 </ul>
 
 <p>You can execute a Self loop by choosing any one one of the three given options. 
@@ -2288,8 +2292,7 @@ self-loop.</p>
 </table>
 
 <p><code class="highlighter-rouge">Self-loop Configuration - Until data available</code> <br />
-<code class="highlighter-rouge">Self-loop Configuration - Number of Occurence</code><br />
-<code class="highlighter-rouge">Self-loop Configuration - For a Timespan</code></p>
+<code class="highlighter-rouge">Self-loop Configuration - Number of Occurence</code></p>
 
 <p><strong>A. Choosing Self Loop Configuration - Until data available</strong></p>
 
@@ -2322,22 +2325,6 @@ screen appears. <br />
 by you or until data availability.</li>
 </ol>
 
-<p><strong>C. Choosing Self Loop Configuration - For  Timeout</strong></p>
-<ol>
-  <li>In the self loop node, Select and choose the option <code class="highlighter-rouge">Time Out</code> radio button. The following 
-screen appears. <br />
-<img src="\staticfiles\processflow\media\pfselfloop4.PNG" alt="PF_selfloop4" /></li>
-  <li>Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Out in Hours, Minutes &amp; Seconds. Enter the duration as per your requirement.<br />
-(a) Hours: The value range of hours is from 1-24<br />
-(b) Minutes: The value range of minutes is from 1-60<br />
-(c) Seconds: The value crange of seconds is from 1-60<br />
-<img src="\staticfiles\processflow\media\pfselfloop5.PNG" alt="PF_selfloop5" /></li>
-  <li>Now provide the Description of the Self-loop configuration in the Description field which is mandatory.</li>
-  <li>Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
-by you or until data availability.</li>
-</ol>
-
 <p><em><strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
 (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.<br />
 (c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.</strong></em></p>
@@ -2359,12 +2346,10 @@ by you or until data availability.</li>
 
 <p>Following the process you can successfully execute a Process Flow with Self-Loop.</p>
 
-<p><strong>NOTE: <br />
+<p>**NOTE: <br />
 (a) Until data available - Extra iteration will be displayed<br />
 (b) Number of occurrence * batch size &lt;= number of data available in source - Extra iteration will not be displayed<br />
-(c) Number of occurrence * batch size &gt; number of data available in source - Extra iteration will be displayed<br />
-(d) For time out if data available till that time - Extra iteration will not be displayed<br />
-(e) For time out if data all data fetched before the time set - Extra iteration will be displayed</strong></p>
+(c) Number of occurrence * batch size &gt; number of data available in source - Extra iteration will be displayed</p>
 
 <h3 id="business-scenarios-for-self-loop-usabilty">Business Scenarios for Self loop Usabilty</h3>
 
@@ -4539,6 +4524,14 @@ Self Loop on the mapper node thus enabling to post all the data packets received
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4626,6 +4619,8 @@ Self Loop on the mapper node thus enabling to post all the data packets received
                                     Working with POST
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

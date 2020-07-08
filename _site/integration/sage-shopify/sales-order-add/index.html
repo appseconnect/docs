@@ -373,6 +373,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/accessing%20portal/accessing-portal/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/accessing%20portal/accessing-portal/" onclick="selectTab('/accessing%20portal/accessing-portal/', event);" title="Go to Accessing APPSeCONNECT Portal">Accessing APPSeCONNECT Portal</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/getting%20started/configurations/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/getting%20started/configurations/" onclick="selectTab('/getting%20started/configurations/', event);" title="Go to Working with Apps">Working with Apps</a>
         
@@ -1215,13 +1221,13 @@
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add from SAGE 300 to Shopify">I/C Product Add from SAGE 300 to Shopify</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from SAGE 300 to Shopify">I/C Inventory Update from SAGE 300 to Shopify</a>
         
     </li>
     
@@ -1233,7 +1239,7 @@
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
+        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from SAGE 300 to Shopify">Shipment Add from SAGE 300 to Shopify</a>
         
     </li>
     
@@ -2246,7 +2252,11 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#brief-description">Brief Description:</a></li>
+  <li><a href="#brief-description">Brief Description:</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites:</a></li>
+    </ul>
+  </li>
   <li><a href="#lookup-mapping">Lookup Mapping:</a></li>
   <li><a href="#executing-the-integration-using-workflow">Executing the Integration using Workflow:</a></li>
   <li><a href="#integration-data-survey">Integration Data Survey:</a></li>
@@ -2264,6 +2274,12 @@
 <p>A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Shopify for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. <a href="https://help.shopify.com/en/manual/orders/create-orders">Click here</a> to know more about generating Sales Orders in Shopify.</p>
 
 <p>Here, an Order is placed for the customer Lonnie K Croker, against the product Seinhieser Double Bass Headset.</p>
+
+<h3 id="prerequisites">Prerequisites:</h3>
+
+<ul>
+  <li>You need to <a href="/workflow/steps-to-choose-your-workflow/">Choose your Workflow</a> or you can <a href="/workflow/steps-to-create-your-first-workflow/">create/design a new workflow</a> as per your need.</li>
+</ul>
 
 <h2 id="lookup-mapping">Lookup Mapping:</h2>
 
@@ -4444,6 +4460,14 @@
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4460,7 +4484,7 @@
                             <li>
                                 <a href="/integration/sage-shopify/ic-shipment-add/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Shipment Add from Shopify to SAGE 300
+                                    Shipment Add from SAGE 300 to Shopify
                                 </a>
                             </li>
                             
@@ -4475,7 +4499,7 @@
                             <li>
                                 <a href="/integration/sage-shopify/ic-inventory-update/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    I/C Inventory Update from Shopify SAGE 300
+                                    I/C Inventory Update from SAGE 300 to Shopify
                                 </a>
                             </li>
                             
@@ -4506,6 +4530,8 @@
                                     Customer Add from Shopify to SAGE 300
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

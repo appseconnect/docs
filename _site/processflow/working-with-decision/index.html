@@ -363,6 +363,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/accessing%20portal/accessing-portal/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/accessing%20portal/accessing-portal/" onclick="selectTab('/accessing%20portal/accessing-portal/', event);" title="Go to Accessing APPSeCONNECT Portal">Accessing APPSeCONNECT Portal</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/getting%20started/configurations/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/getting%20started/configurations/" onclick="selectTab('/getting%20started/configurations/', event);" title="Go to Working with Apps">Working with Apps</a>
         
@@ -1205,13 +1211,13 @@
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add">I/C Product Add</a>
+        <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add from SAGE 300 to Shopify">I/C Product Add from SAGE 300 to Shopify</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-inventory-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from Shopify SAGE 300">I/C Inventory Update from Shopify SAGE 300</a>
+        <a href="/integration/sage-shopify/ic-inventory-update/" onclick="selectTab('/integration/sage-shopify/ic-inventory-update/', event);" title="Go to I/C Inventory Update from SAGE 300 to Shopify">I/C Inventory Update from SAGE 300 to Shopify</a>
         
     </li>
     
@@ -1223,7 +1229,7 @@
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-shipment-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from Shopify to SAGE 300">Shipment Add from Shopify to SAGE 300</a>
+        <a href="/integration/sage-shopify/ic-shipment-add/" onclick="selectTab('/integration/sage-shopify/ic-shipment-add/', event);" title="Go to Shipment Add from SAGE 300 to Shopify">Shipment Add from SAGE 300 to Shopify</a>
         
     </li>
     
@@ -2213,7 +2219,7 @@
 
 
 
-  7 minute read
+  5 minute read
 </p>
                 
                 
@@ -2273,28 +2279,6 @@
         <p>As all data for an Entity (For Ex: Order, Business Partner etc ) are transfered through packets which are further made up of attributes, you can implement your business flow by applying condition on required attribute. If decision node meets up the condition expression provided, the data will be passed.</p>
 
         <p>_ <strong>Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.</strong>_</p>
-      </li>
-      <li>
-        <p>Decision on <strong>Generic Function</strong>:</p>
-
-        <p>APPSeCONNECT Generic Functions allows you to extract internal transactional values or modify the values based upon the functions that are used and requirements.</p>
-
-        <p>Applying Decision on Generic Appresource Function will execute the condition over the provided function and will allow the node based on the provided condition. <a href="/transformation/using-library-methods/">Click Here</a> for more details on Appresource Functions.</p>
-
-        <p><code class="highlighter-rouge">For Ex: {gen:IsDate()}</code></p>
-
-        <p><em><strong>Note: You need to provide the namespace prefix for generic function <code class="highlighter-rouge">gen:xyz()</code> when decision key evaluates a generic function.</strong></em></p>
-      </li>
-      <li>
-        <p>Decision on <strong>Cloud Appresource Function</strong>:</p>
-
-        <p>Cloud Appresource are the functions that are defined in the Cloud portal itself for extracting specific values through function for the attribute mapped with the defined function.</p>
-
-        <p>Applying Decision on Cloud Appresource function will allow the node to execute the condition on the provided Cloud Appresource Function and checks for the value recieved from the function and value provided in the Decision Node. On successful evaluation of the condition, data passed thorugh the condition moves to the next node. <a href="/processflow/cloud-appresource-functions/">Click Here</a> to know more about Process Flow cloud appresource function.</p>
-
-        <p><code class="highlighter-rouge">For Ex: {cloud:timeinstance(string)}</code></p>
-
-        <p><em><strong>Note: You need to provide the namespace prefix for generic function <code class="highlighter-rouge">cloud:xyz()</code> when decision key evaluates a generic function.</strong></em></p>
       </li>
       <li>
         <p>Decision on <strong>Static Values:</strong></p>
@@ -2437,41 +2421,6 @@
       <td><code class="highlighter-rouge">=</code></td>
       <td><code class="highlighter-rouge">CAL</code></td>
       <td>Only those orders shall be accepted whose state provided in the address is <code class="highlighter-rouge">CAL</code> (CAlifornia)</td>
-    </tr>
-    <tr>
-      <td>Conjunction of Generic Function &amp; Attribute</td>
-      <td><code class="highlighter-rouge">{getMapping('TAX',//items/items//</code> <br /> <code class="highlighter-rouge">extension_attributes/</code> <br /> <code class="highlighter-rouge">applied_taxes/item/code) </code> AND <code class="highlighter-rouge">//items//item//</code> <br /> <code class="highlighter-rouge">shipping/country_id}</code></td>
-      <td><code class="highlighter-rouge">contains</code> &amp; <code class="highlighter-rouge">=</code></td>
-      <td><code class="highlighter-rouge">SVAT</code> &amp; <code class="highlighter-rouge">CA</code></td>
-      <td>This decision states that only those orders shall be accepted whose Tax code contains SVAT &amp; Country code is <code class="highlighter-rouge">CA</code> (CANADA)</td>
-    </tr>
-    <tr>
-      <td>Generic function</td>
-      <td><code class="highlighter-rouge">{IsDate()}</code></td>
-      <td><code class="highlighter-rouge">=</code></td>
-      <td><code class="highlighter-rouge">2020-06-01</code></td>
-      <td>This condition states that only those data shall qualify the decision whose date equals to the provided value</td>
-    </tr>
-    <tr>
-      <td>Cloud Appresource</td>
-      <td><code class="highlighter-rouge">{cloud:timeinstance(string)}</code></td>
-      <td><code class="highlighter-rouge">&lt;=</code></td>
-      <td><code class="highlighter-rouge">01062020</code></td>
-      <td>Here, a cloud Appresource function is defined and is provided in decision key where the condition checks that only those data would be accepted whose data, returned, is less than the value provide</td>
-    </tr>
-    <tr>
-      <td>Conjunction of Cloud Appresource Function</td>
-      <td><code class="highlighter-rouge">{cloud:timeinstance(string)}</code> AND <code class="highlighter-rouge">{cloud:timeinstance(string)}</code></td>
-      <td><code class="highlighter-rouge">&gt;=</code> &amp; <code class="highlighter-rouge">&lt;=</code></td>
-      <td><code class="highlighter-rouge">02022020</code> &amp; <br /> <code class="highlighter-rouge">04062020</code></td>
-      <td>Here, a conjuction of a cloud appresource function is implemented to accept only those data whose value is greater than equal to <code class="highlighter-rouge">02022020</code> and less than equal to <code class="highlighter-rouge">04062020</code></td>
-    </tr>
-    <tr>
-      <td>Generic Function</td>
-      <td><code class="highlighter-rouge">{gen:FormatDate(</code>05-06-2020<code class="highlighter-rouge">,</code>dd-mm-yyyy<code class="highlighter-rouge">}</code></td>
-      <td><code class="highlighter-rouge">contains</code></td>
-      <td><code class="highlighter-rouge">{gen:FormatDate</code> <br /> <code class="highlighter-rouge">(</code>2020-06-05<code class="highlighter-rouge">,</code>yyyy-mm-dd<code class="highlighter-rouge">}</code></td>
-      <td>Here, the generic function is implemented on both Decision Key &amp; Value to compare and decide where the incoming date contains the provided format.</td>
     </tr>
   </tbody>
 </table>
@@ -4618,6 +4567,14 @@
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4703,6 +4660,8 @@
                                     Cloud Appresource Functions
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
