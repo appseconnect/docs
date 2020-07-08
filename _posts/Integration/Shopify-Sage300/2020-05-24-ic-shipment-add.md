@@ -1,11 +1,11 @@
 ﻿---
-title: "Shipment Add from Shopify to SAGE 300"
+title: "Shipment Add from SAGE 300 to Shopify"
 toc: true
 tag: developers
 category: "Integration/Sage-Shopify"
 menus: 
     shopifysageintegration:
-        title: "Shipment Add from Shopify to SAGE 300"
+        title: "Shipment Add from SAGE 300 to Shopify"
         icon: fa fa-wpexplorer
         identifier: shopifysage300shipmentadd
 ---

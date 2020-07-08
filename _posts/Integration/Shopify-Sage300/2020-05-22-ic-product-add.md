@@ -5,7 +5,7 @@ tag: developers
 category: "Integration/Sage-Shopify"
 menus: 
     shopifysageintegration:
-        title:  "I/C Product Add"
+        title:  "I/C Product Add from SAGE 300 to Shopify"
         icon: fa fa-wpexplorer
         identifier: shopifysageproductadd
 ---
