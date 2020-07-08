@@ -18,6 +18,10 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 Inventory update is used to integrate the quantity of products synced to magento 2 from SAGE 300. Updates made in the quantity need to be manages in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inventory in SAGE 300. 
 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+- You need to have the [products added](/integration/ic-product-add/) in Magento 2 from SAGE 300 before updating Inventory.
+
 ## Lookup Mapping:
 
 Not Required. However, every business processes are unique may require to map lookups for some cases. [Click Here](/transformation/using-lookups-for-value-exchange/) to know more about Lookup Mapping.

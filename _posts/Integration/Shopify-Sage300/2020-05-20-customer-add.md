@@ -13,11 +13,13 @@ Executing the Process is a vital part when integrating any applications. This se
 
 ## Brief Description:
 
-
-
 Here, the Workflow is used for syncing multiple customers from [Shopify](/connectors/shopify/) to [SAGE 300](/connectors/sage300/). A workflow is designed and executed with the Customer Add General touchpoint where Customers are being added to SAGE 300 from Shopify. The customer is created in the shopify platform and is synced to SAGE 300.
 
 Login to your Shopify platform and [add customers](https://help.shopify.com/en/manual/customers/manage-customers#add-customers) in Shopify.
+
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
 
 ## Lookup Mapping: 
 

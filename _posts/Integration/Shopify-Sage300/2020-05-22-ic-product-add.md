@@ -15,9 +15,15 @@ Executing the Process is a vital part when integrating any applications. This se
 
 In this case, the Workflow for Adding Products/Items, is used for adding simple product from SAGE 300 to Shopify. Here, a workflow is created where all the Simple Products are fetched form SAGE 300 and are posted to Shopify.
 
-As a prerequisite, you need to have the products created in SAGE 300. [Click](/connectors/adding-product-in-sage/) to know about the steps to create products in SAGE 300.
+you need to have the products created in SAGE 300. [Click](/connectors/adding-product-in-sage/) to know about the steps to create products in SAGE 300.
 
-Here, we have created a product **Seinheiser Double Bass Headset** with the Item ID `A2ST12`
+Here, we have created a product **Seinheiser Double Bass Headset** with the Item ID `A2ST12`.
+
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+- You need to have the products created in SAGE 300. [Click](/connectors/adding-product-in-sage/) to know about the steps to create products in SAGE 300.
+
 
 ## Lookup Mapping:
 

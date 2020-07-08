@@ -15,8 +15,10 @@ Executing the Process is a vital part when integrating any applications. This se
 
 Here, the workflow for Customer Update is used for syncing updated customers from [Magento2](/connectors/Magento2/) to [SAGE 300](/connectors/sage300/). A [Post-Task](/transformation/handling-dependent-data/)  Address Update is also attached for syncing updated customer address to SAGE 300. A workflow is designed and executed with the Customer Update touchpoint where Customers are being added to SAGE 300 from Magento2. 
 
-**Basic Prerequisite for Updating Customers:**
-•	You need to have the customer added in SAGE 300 before updating any existing customer detail.
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+- You need to have the [customer added](/integration/customer-add/) in SAGE 300 from Magento 2, before updating any existing customer detail.
 
 ## Lookup Mapping: 
 

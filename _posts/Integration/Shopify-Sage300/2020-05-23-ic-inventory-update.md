@@ -17,6 +17,11 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 Inventory update is used to integrate the quantity of products synced to Shopify from SAGE 300. Updates made in the quantity need to be managed in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inventory in SAGE 300. 
 
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+- You need to have the products integrated in Shopify from SAGE 300 before updating Inventory.
+
 ## Lookup Mapping:
 
 For posting newly added quantity to Shopify from SAGE 300, you need to add Lookup for `Inventory Location`. For this integration, mapping lookups for inventory location is mandatory.

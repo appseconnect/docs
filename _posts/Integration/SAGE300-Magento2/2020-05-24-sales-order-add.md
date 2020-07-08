@@ -16,6 +16,9 @@ Executing the Process is a vital part when integrating any applications. This Do
 
 A sales cycle is incomplete without placing orders for any products. Sales Orders generated in Magento2 for a customer against a product needs to be transformed to SAGE 300 for keeping well managed records of the sales cycle. [Click here](https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html) to know more about generating Sales Orders in Magento2.
 
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
 
 ## Lookup Mapping:
 

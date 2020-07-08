@@ -41,27 +41,6 @@ The following are the fields that you will get on dragging the Decision Node in 
 
        _ **Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.**_
 
-    - Decision on **Generic Function**: 
-    
-        APPSeCONNECT Generic Functions allows you to extract internal transactional values or modify the values based upon the functions that are used and requirements. 
-        
-        Applying Decision on Generic Appresource Function will execute the condition over the provided function and will allow the node based on the provided condition. [Click Here](/transformation/using-library-methods/) for more details on Appresource Functions.
-
-        `For Ex: {gen:IsDate()}`
-
-         _**Note: You need to provide the namespace prefix for generic function `gen:xyz()` when decision key evaluates a generic function.**_
-
-
-    - Decision on **Cloud Appresource Function**:  
-    
-        Cloud Appresource are the functions that are defined in the Cloud portal itself for extracting specific values through function for the attribute mapped with the defined function.
-        
-        Applying Decision on Cloud Appresource function will allow the node to execute the condition on the provided Cloud Appresource Function and checks for the value recieved from the function and value provided in the Decision Node. On successful evaluation of the condition, data passed thorugh the condition moves to the next node. [Click Here](/processflow/cloud-appresource-functions/) to know more about Process Flow cloud appresource function.
-
-        `For Ex: {cloud:timeinstance(string)}`
-
-         _**Note: You need to provide the namespace prefix for generic function `cloud:xyz()` when decision key evaluates a generic function.**_
-
     - Decision on **Static Values:**
 
         Static Values are any random values that can be provided in the Decision key for allowing condition check in the Process Flow. Any value that is provided in Decision Key with or without conjunction can be a Static Value. Static Values can be provided to check and verify whether the node successfully execution the decision nodes. 
@@ -89,7 +68,6 @@ _**Note:** You can only provide those Appresource Functions (both Cloud & Generi
 - When working with Cloud Appresource function in Decision Node, you need to define the function before implementing the decision criteria. [Click Here](/processflow/cloud-appresource-functions/) to know more about Process Flow cloud appresource function.
 
 ## Working Principle:
-
 
 1.  Drag the decision node in the designer panel from the Process Property menu. The Decision Node Configuration Window opens.
 
@@ -148,11 +126,6 @@ Following the above process you can successfully implement Decision for a Proces
 | Decision Applied On | Decision Criteria | Operator Used |Value| Decision Description |
 |----|-------------|---------|---------|-------|
 | Attribute | `{//items//item//state_code}` | `=` | `CAL` | Only those orders shall be accepted whose state provided in the address is `CAL` (CAlifornia) |  
-| Conjunction of Generic Function & Attribute |`{getMapping('TAX',//items/items//` <br/> `extension_attributes/` <br/> `applied_taxes/item/code) ` AND `//items//item//` <br/> `shipping/country_id}`| `contains` & `=`|`SVAT` & `CA` | This decision states that only those orders shall be accepted whose Tax code contains SVAT & Country code is `CA` (CANADA) |
-| Generic function |`{IsDate()}`| `=` | `2020-06-01`| This condition states that only those data shall qualify the decision whose date equals to the provided value|
-|Cloud Appresource|`{cloud:timeinstance(string)}`| `<=`|`01062020`|Here, a cloud Appresource function is defined and is provided in decision key where the condition checks that only those data would be accepted whose data, returned, is less than the value provide|
-|Conjunction of Cloud Appresource Function|`{cloud:timeinstance(string)}` AND `{cloud:timeinstance(string)}`| `>=` & `<=`|`02022020` & <br/> `04062020`|Here, a conjuction of a cloud appresource function is implemented to accept only those data whose value is greater than equal to `02022020` and less than equal to `04062020`|
-| Generic Function | `{gen:FormatDate(`05-06-2020`,`dd-mm-yyyy`}`| `contains`| `{gen:FormatDate` <br/> `(`2020-06-05`,`yyyy-mm-dd`}`| Here, the generic function is implemented on both Decision Key & Value to compare and decide where the incoming date contains the provided format.|  
     
 
 

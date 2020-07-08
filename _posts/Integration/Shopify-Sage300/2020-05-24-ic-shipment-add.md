@@ -23,6 +23,11 @@ c. The Product shall be available in the both the application. [Click here]() to
 
 d. The order must be present in both the application for whose shipment is generated. [Click Here]() to integrate Sales Order from Shopify to SAGE 300.
 
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+
+
 ### Steps generate Shipment for the order synced to SAGE 300 from Shopify.
 
 [Click Here](http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/ShippingOrdersAndItems.htm) to know more about the adding Shipments.

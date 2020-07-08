@@ -16,15 +16,18 @@ Executing the process is a vital part when integrating any applications. This se
 
 Before executing the sync process you need to create workflow for adding Invoice from SAGE 300 - Magento 2. The Invoices are created for the Order synced in SAGE 300 from Magento 2. The invoices are generated in SAGE 300 will be synced to Magento 2 in the Customers account who placed the order.
 
-The prerequisites for this integration is listed below:
 
-a. You need to successfully validate the application credentials for [Magento 2](/connectors/magento2/) & [SAGE 300](/connectors/sage300/)  
+### Prerequisites:
 
-b. The customer whose invoice shall be synced should be availble in both the application. [Click Here](/integration/customer-add/) for integrating customer add.
+a. You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
 
-c. The Product shall be available in the both the application. [Click here](/integration/ic-product-add/) to integrate IC Product from SAGE 300 to Magento 2.
+b. You need to successfully validate the application credentials for [Magento 2](/connectors/magento2/) & [SAGE 300](/connectors/sage300/)  
 
-d. The order must be present in both the application for whose Invoice is generated. [Click Here](/integration/sales-order-add/) to integrate Sales Order from Magento 2 to SAGE 300.
+c. The customer whose invoice shall be synced should be availble in both the application. [Click Here](/integration/customer-add/) for integrating customer add.
+
+d. The Product shall be available in the both the application. [Click here](/integration/ic-product-add/) to integrate IC Product from SAGE 300 to Magento 2.
+
+e. The order must be present in both the application for whose Invoice is generated. [Click Here](/integration/sales-order-add/) to integrate Sales Order from Magento 2 to SAGE 300.
 
 [Click Here](http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/InvoicingShipments.htm) to know more about the adding Invoice.
 
