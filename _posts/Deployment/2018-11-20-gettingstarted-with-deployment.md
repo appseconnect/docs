@@ -90,4 +90,18 @@ https://appsdrive.blob.core.windows.net/
 
 https://services.appseconnet.com/
 
-**NOTE: We also require you to keep some of the Ports Open for APPSeCONNECT**      
+## Hostnames and URLs of APPSeCONNECT
+
+In addtion to secured connectivity, APPSeCONNECT requires a number of [URLS and Ports](https://community.appseconnect.com/hostnames-and-urls-for-appseconnect/) for deploying
+it on your environment for seemless connection between the agent and our cloud portal. 
+
+
+**NOTE: We also require you to keep some of the Ports Open for APPSeCONNECT**     
+
+**ProTip:** In any circumstance if you see OP Agent is in disabled state after meeting all the installation
+criteria, ensure to check that FIPS (Federal Information Processing Standard) is disabled in that system/machine to enable the OP Agent.
+{: .notice--info}
+
+**Steps to FIPS Disablement is given in this [link](https://kb.fortinet.com/kb/documentLink.do?externalID=FD41274)**
+
+ 

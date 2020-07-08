@@ -41,7 +41,7 @@ to prevent you missing a mandatory Lookup Mapping required as per our rule-book.
 
 ## Preconditions
 
-1.	Organisation Creation & Connection Creation.
+1.	[Organisation Creation]() & [Connection Creation](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
 2.	The user needs to know the value of the field in their corresponding application for implementing the mapping.
 
 ## Basic Flow
@@ -59,6 +59,13 @@ The Lookups feature consist of multiple fields like Lookup Type, Used For, Sourc
 The screen for the Lookup is provided below:
 
 ![lookup1](/staticfiles/Transformation/media/lookup1.png)
+
+(a) Add New - This button enables to add new lookuptype and value to a connection.
+(b) Save All - This button enables to save all the defined lookup/lookups.
+(c) Delete - This button enables to delete selected lookup/lookups. This also gives the option to 
+purge lookups. 
+(d) Import Lookup -
+(e) Export Lookup - 
 
 **Note: Users can also add the Lookups by importing the files. 
 Click on the Horizontal dots and select the option Import. Similarly by Clicking on Export,

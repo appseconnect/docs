@@ -13,7 +13,7 @@ menus:
 
 ## Accessing Portal
 
-The APPSeCONNECT portal is the web-based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
+The APPSeCONNECT portal is the webbased interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
 Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.
 
 The set of functional modules are easy to navigate and ease the method of integration via our Portal.
@@ -56,7 +56,7 @@ a.	Project Name: Shows the organisation name.
 b.	Main Contact Person: Displays the contact detail (Email Id only) of the project holder.    
 c.	Implementation contact: Displays the email id of InSync implementation Team.    
 d.	Sales Contact: Shows the Email details of InSync Sales Team.    
-e.	Support Contact: Displays the Email Id of the InSync Support Team.    
+e.	Support Contact: Displays the Email Id of the InSync Support Team.   
 
 *2. Configuration Completion Details: This widget displays the configuration informations related to the organisation project. 
 This widget also has a progress bar that displays the progress status for the organisation.* 
@@ -183,6 +183,7 @@ Traces of past activities of the user can be been viewed in the feed section.
 3. Here you can only see your activities in your logged in profile.
 4. Feeds Page has search criteria, so that you can filter the feed using topic keyword filters like "touchpoint", "masterdata" etc.
 4. This is view only menu.
+5. Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.
 
 **ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
 {: .notice--info}
@@ -247,6 +248,27 @@ b.	Organization Admin
 **Note: The tab Partners will not have any view unless an organization has any requirements for partners.**
 
 3.	For a fresh organisation, only the organisation owner will be displayed as the user in the user list. Click on the Add User button, to add more user to an organisation.
+![Useradd1](\staticfiles\root\media\useradd1.PNG)
+
+4. On clicking the button Add User, a sliding window opens with a form for adding a new user to the organisation.
+![Useradd2](\staticfiles\root\media\useradd2.PNG)
+
+5. Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
+![Useradd3](\staticfiles\root\media\useradd3.PNG)
+
+6. Once all the mandatory fields are filled up, click on the Save button. The created user would be should in the list of users along with a success message.
+![Useradd4](\staticfiles\root\media\useradd4.PNG)
+
+7. The created user will have the following keys available for any modification. The list is provided below:
+    - Edit User: Only the details of the created user can be modified except the role.
+    - Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
+    - Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
+    - Change Role: Here, the default user can change the role for the created user
+
+**Note:** 
+    * All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
+    * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
+    * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
 
 ## Managing Customer Profile 
 
@@ -292,7 +314,18 @@ following actions:
 
 1. User can view the organisation subscription plan and its expiry date.  
 ![subscription1](/staticfiles/root/media/subscription1.png)      
-2. Our Support team helps you in Selection of necessary addons and help you in updating subscription.  
+
+2. Our Support team helps you in Selection of necessary addons and help you in updating subscription.
+
+_**Note:** On Expiry of your organisation you will not be able to perform the following functionalities
+
+- You will not be able to perform the sync process of new data either through Auto-Sync or Manual Sync.
+
+- You will not be able to login either on the platform or the OP Agent.
+
+- No [Morning Report](/rule/default-rule-for-morning-report/) and the [Detailed Sync Report](/rule/preconfigured-rule-for-detailed-sync-report/) will be sent if your organisation has expired.
+
+- On renewal of your subscription, new data will be taken for the sync process from following day onwards according to the expiry date.
 
 For Pricing details [click here](https://www.appseconnect.com/pricing/)
 
@@ -414,3 +447,10 @@ After completion, click save to save data. Now use the email id and password to 
 * Only projects where the user has access can be added.
 
 For example: Let say you have logged in the portal with a user who doesn't have permission more than two projects (e.g-solera) now if you would search with any keyword related "solera"  it would not come in the search list like
+
+
+
+
+
+
+

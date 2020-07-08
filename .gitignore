@@ -244,10 +244,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /martinbuberl.github.io
-/_layouts
-/_pages/about
-/_site/about
-/_site/martinbuberl.github.io
-/_site/handling permission/What-is-a-Permission
-/_site/assets
-/_site
+

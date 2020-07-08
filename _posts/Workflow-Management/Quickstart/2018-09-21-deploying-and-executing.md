@@ -42,6 +42,11 @@ d.	End: This field has two options.
   depicts the End Time Occurrence.
 3.	After Scheduling the workflow, click OK button.
 
+**Protip:** Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.
+ {: .notice--info}
+
+![Feed Sync Schedule](../../../staticfiles/workflow-management/media/feed-sync-schedule.PNG)
+
 ## Publishing a Workflow
 
 If you change attribute mapping in a workflow you need to publish the workflow before deploying. The steps to do the same
@@ -52,11 +57,15 @@ is given below
 
 2. The Actions column on the right side of screen consist of buttons that configures and publish the touchpoint used in the workflow.
 
-a. Preview - This button previews the XSLT for the touchpoint used in the workflow
-b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.
-c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.
-d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. The portal view for the Resync Bucket is given below.
+a. Preview - This button previews the XSLT for the touchpoint used in the workflow.  
+b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.  
+c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the `Reset Publish` is done.  
+d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. The portal view for the Resync Bucket is given below.  
 ![resync_button](/staticfiles/workflow-management/media/resync_button.png)
+
+* You will get the view of all data synced - Success, Failed, Unprocessed.
+* Now to resync the failed data, select one data or more and click on `Resync` button.
+* You can view the resync execution status as message/progress bar below the pop up window.
 
 3. On refreshing, the Publish button appears. The Publish button `publishes every configuration that  the 
 user made in the APPSeCONNECT cloud` and is `compiled to a single file stored on the server` which is 

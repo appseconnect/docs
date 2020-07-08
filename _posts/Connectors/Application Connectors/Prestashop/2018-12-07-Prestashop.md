@@ -22,7 +22,7 @@ application Prestashop.
 # Pre-requisites for Prestashop Configuration 
 
 * Valid APPSeCONNECT Portal credentials.
-* Select the Application Prestashop in the [APP section](/configuring%20appseconnect/configurations/#process-of-choosing-app).
+* Select the Application Prestashop in the [APP section](/getting%20started/configurations/#process-of-choosing-app).
 * [Create connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for Prestashop.
 * Publish any Touchpoint, Update Adapters and Update Configuration in the agent.
 

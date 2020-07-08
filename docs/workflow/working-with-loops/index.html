@@ -1147,6 +1147,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/integration/sage300-magento2/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage300-magento2/" onclick="selectTab('/integration/sage300-magento2/', event);" title="Go to Sage300-Magento2">Sage300-Magento2</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/SAPB1-Magento2/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/SAPB1-Magento2/" onclick="selectTab('/integration/SAPB1-Magento2/', event);" title="Go to SAPB1-Magento2">SAPB1-Magento2</a>
         
@@ -1468,6 +1474,18 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-mapper/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-mapper/" onclick="selectTab('/processflow/working-with-mapper/', event);" title="Go to Working with Mapper">Working with Mapper</a>
         
@@ -1508,6 +1526,12 @@
     
     <li class="menu-item-" data-url="/processflow/advance-mapping-render-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/advance-mapping-render-processflow/" onclick="selectTab('/processflow/advance-mapping-render-processflow/', event);" title="Go to Advance Mapping through Custom Renderer">Advance Mapping through Custom Renderer</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/cloud-appresource-functions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/cloud-appresource-functions/" onclick="selectTab('/processflow/cloud-appresource-functions/', event);" title="Go to Cloud Appresource Functions">Cloud Appresource Functions</a>
         
     </li>
     
@@ -2089,7 +2113,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
                 
                 
@@ -2118,6 +2142,27 @@
 <p>Self loop with until data available option</p>
 
 <p><img src="/staticfiles/workflow-management/media/Selfloop/UntilData.png" alt="Until Data" /></p>
+
+<h2 id="self-loop-scenarios">Self Loop Scenarios:</h2>
+
+<p><strong>Case 1: When Self loop applied in GET Node</strong></p>
+
+<p><strong>Description:</strong> You may have a scenario to fetch data for a specific input, which signifies if your input value is 5, the self-loop on get would be executed 5 times. 
+If your input value is 2, the self-loop would be executed twice.</p>
+
+<p><img src="staticfiles\workflow-management\media\Selfloop\selfloop_case1.png" alt="selfloop_case1" /></p>
+
+<p><strong>Case 2: When Self loop applied in POST Node</strong></p>
+
+<p><strong>Description:</strong> You may have a business scenario where you are splitting the transformed data as 1 single packets, and then posting it to destination application. Therefore, if Self Loop on POST node is not applied, only a single data after a splitter would be posted. 
+Applying self-loop will fetch data until available after splitting.</p>
+
+<p>For Example: you may have Splitted a transform packet in a batch of 1, which contains 10 data. Therefore, after splitting, it will generate 10 packets for 10 different data. 
+If self-loop on POST node is configured as Until Available, self-loop on post will execute until all the data are fetched after split.</p>
+
+<p><img src="staticfiles\workflow-management\media\Selfloop\selfloop_case2.png" alt="selfloop_case2" /></p>
+
+<p><strong><em>Note: Adding self-loop is not mandatory after splitter or merger node, however it is self-loop is recommended seriously to minimize the loss of data by a great margin in such cases.</em></strong></p>
 
                 
             </section>
@@ -2206,6 +2251,38 @@
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             

@@ -57,5 +57,34 @@ for an organisation, therefore multiple active keys would be displayed in the dr
         (d) While logging in using temporary license in the OP Agent, the checkbox for Saving Data Configuration remains disabled**
 
 
+## Scenario of License Key Validation Failure while generating License Key
 
+Four different scenarios are mentioned within:
+ 
+1. If you are using your existing licence key for the same MAC ID whereas you MAC Name has been renamed.
+In this scenario the user will face license key validation failure because in order to 
+generate License key, we use both Computer name + Machine ID and unique id generated 
+for the organization. Each license uniquely identifies a particular machine. You cannot 
+license a machine with a license generated from another machine. In this case, your 
+license will say invalid.   
+2. You have copied the installed folder and files from C: ProgramData folder to another machine.  
+3. You have installed new network adapters which changes MAC ID of network interface.    
+4. You have changed the Computer name of the machine.  
+
+##  Workaround for License Key Validation Failure
+
+Follow the steps given below for the above scenarios:-
+
+1. Go to Portal, Login and select Manage - Environment.
+2. You will see all the environments you are connected to.
+3. Click on the environment where you have installed Agent.
+4. Click on Delete to delete the environment.
+5. Go to On-premise environment and Login again.
+6. Open Settings and Check - Enable Environment.
+
+After the environment is enabled again, you will see everything is working correctly. 
+If you still do not see the agent to be connected from Cloud, please go to Portal, 
+revisit Environment section and click on Attach button to reattach a deleted environment.
+
+ 
 

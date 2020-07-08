@@ -1953,7 +1953,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Overview of ProcessFlow",
-      excerpt: "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+      excerpt: "APPSeCONNECT Processsssss Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 215
@@ -2209,6 +2209,42 @@ var idx = lunr(function () {
       categories: ["Processflow"],
       tags: ["developers"],
       id: 243
+    });
+    
+  
+    idx.add({
+      title: "Cloud Appresource Functions",
+      excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which is used for the data transformation...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 244
+    });
+    
+  
+    idx.add({
+      title: "Splitter Node",
+      excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 245
+    });
+    
+  
+    idx.add({
+      title: "Merger Node",
+      excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 246
+    });
+    
+  
+    idx.add({
+      title: "Sage300-Magento2",
+      excerpt: "\n",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 247
     });
     
   
@@ -4598,7 +4634,7 @@ var store = [
       {
         "title": "Overview of ProcessFlow",
         "url": "/processflow/overview-of-processflow/",
-        "excerpt": "APPSeCONNECT Process Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+        "excerpt": "APPSeCONNECT Processsssss Flow suite features an extensive interface that provide the ability to easily create digital maps to make out...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -4907,6 +4943,50 @@ var store = [
         "title": "Working with POST",
         "url": "/processflow/working-with-POST/",
         "excerpt": "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Cloud Appresource Functions",
+        "url": "/processflow/cloud-appresource-functions/",
+        "excerpt": "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which is used for the data transformation...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Splitter Node",
+        "url": "/processflow/working-with-processflow-splitter/",
+        "excerpt": "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Merger Node",
+        "url": "/processflow/working-with-processflow-merger/",
+        "excerpt": "What is Merger Node? This node is used to merge smaller data chunks into a single data packet. Like a...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Sage300-Magento2",
+        "url": "/integration/sage300-magento2/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

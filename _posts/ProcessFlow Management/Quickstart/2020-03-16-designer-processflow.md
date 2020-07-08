@@ -59,14 +59,15 @@ Here the users can add Process Flows nodes to the Process Flow designer panel. T
 flow. Users can utilize any node based on the business requirement and can view the 
 following tabs and menus in the left panel of the page.    
 
-1)	Start:  This node initiates the start of the execution of the Process Flow.  
-2)	End: This node depicts the completion of the Process Flow.  
-3)	[Mapper](/processflow/working-with-mapper/): This node allows you to map the applications used in the Process flow.       
-4)	[Apps](/processflow/processflow-app/): You can view all the Pre-packaged application selected & created. 
+1)	Search: You will be able to search any Nodes & Apps related to Process Flow. You will be filtered with the results based on the alphabets you type.
+2)  Start:  This node initiates the start of the execution of the Process Flow.
+3)	End: This node depicts the completion of the Process Flow.  
+4)	[Mapper](/processflow/working-with-mapper/): This node allows you to map the applications used in the Process flow.       
+5)	[Apps](/processflow/processflow-app/): You can view all the Pre-packaged application selected & created. 
 On dragging the applications to the designer panel, the node configuration window would appear.      
-5)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector.   
-6)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.  
-7)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.  
+6)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector.   
+7)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.  
+8)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.  
 
 ![Create Processflow5](../../staticfiles/processflow/media/create-processflow5.png)
 

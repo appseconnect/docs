@@ -22,7 +22,7 @@ application Lightspeed.
 
 # Pre-requisites for Lightspeed Configuration  
 1.	You need to have valid credentials of the portal.
-2.	You need to [choose the Lightspeed](/configuring%20appseconnect/configurations/#process-of-choosing-app) Application from the APP section. 
+2.	You need to [choose the Lightspeed](/getting%20started/configurations/#process-of-choosing-app) Application from the APP section. 
 3.	[Create a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection)with Lightspeed. 
 4.	Publish the workflow and the connection in the portal. Update Configuration & Update Adapter to deploy the configurations made in Portal to the On-Premise Agent.
 **Exit and Restart the On-Premise Agent after Updating Adapters.**
@@ -79,9 +79,21 @@ registered.**
 While defining a connection to an API endpoint in Lightspeed, you require clear understanding about the data requirements and endpoint configurations. You can refer to this document to find all the endpoint details of your Lightspeed Application.
 To define the endpoint in APPSeCONNECT, you need Actions and Entities. Actions are specifically targeted for an endpoint while schema is the data needed to execute the API. Here, is the list of some of the pre-packaged API actions defined for you which you can easily plug and play while doing your integrations.
 
-|Endpoint|Action|Action Type|Schema|API Help|
-|---|---|---|---|------||Customer|Customer|GET|Customer|[Fetch Customer from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Customer/#get-all-customers)||Customer|Post/Customers|POST|Customer|[Adding Customers to Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Customer/#post-create-a-customer)||Item|Item|GET|Item|[Fetching Items from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Item/#get-all-items) ||Item|Post/Item|POST|Item|[Adding Items to Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Item/#post-create-an-item)||Image|Image|GET|Image|[Fetching Images of Items from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Image/)||Sale|Sale|GET|Sale|[Fetching Sales or fulfillments from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Sale/#get-all-sales)||Sale|POST/Sales|Post|Sale|[Adding Orders/Sales to Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Sale/#post-create-a-sale)|
-				 
-
+
+|Endpoint|Action|Action Type|Schema|API Help|
+|---|---|---|---|------|
+|Customer|Customer|GET|Customer|[Fetch Customer from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Customer/#get-all-customers)|
+|Customer|Post/Customers|POST|Customer|[Adding Customers to Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Customer/#post-create-a-customer)|
+|Item|Item|GET|Item|[Fetching Items from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Item/#get-all-items) |
+|Item|Post/Item|POST|Item|[Adding Items to Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Item/#post-create-an-item)|
+|Image|Image|GET|Image|[Fetching Images of Items from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Image/)|
+|Sale|Sale|GET|Sale|[Fetching Sales or fulfillments from Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Sale/#get-all-sales)|
+|Sale|POST/Sales|Post|Sale|[Adding Orders/Sales to Lightspeed](https://developers.lightspeedhq.com/retail/endpoints/Sale/#post-create-a-sale)|
+
+
+				 
+
+
+
 
 

@@ -21,6 +21,7 @@ credential for the applications that is used in the Process Flows.
 1.	Should have valid credentials for logging in to the APPSeCONNECT portal.
 2.	[APPS](/processflow/processflow-app/) should be chosen from the apps section, for proceeding with the design of Process Flows.
 3.	The [designed](/processflow/designer-processflow/) Process Flow should be saved before deploying it to the environment.
+4.  If you are deploying the process flow to the On-Premise environment, you need to check the `Enable Environment` checkbox in the Agent Settings as Active. 
 
 ### Steps to deploy Process Flows to Environment
 1.	Login to the portal and navigate to the Process Flow module available on the left menu.  
@@ -39,7 +40,7 @@ Works section, that will help you deploy your process flow successfully.**
 * Sync & Retry: You need to configure the Manual/Auto  & Retry execution of the Process Flow.  
 ![Deploy Processflow3](../../staticfiles/processflow/media/deploy-processflow3.png) 
 (a) Now choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button.  
-* You need to install the agent if you do not have an installed [Environment](/deployment/Environment-Management/). 
+* You need to install the agent if you do not have an installed [Environment](/deployment/Deployment-Configuration/#on-premise-agent-configuration). For more Enviroment related details, [Click Here](/deployment/Environment-Management/).
 * As per the selected type of environment, you need to select an environment from the list of environments in the drop down. 
 (b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.
 ![Deploy Processflow4](../../staticfiles/processflow/media/deploy-processflow4.png)   
@@ -101,7 +102,7 @@ Once deployed, click on the Execute button in the Process Flow Designer page of 
 
 Following the above steps, you can successfully Deploy and Execute a Process Flow.
 
-## Executing a deployed Process Flow
+### Executing Deployed Process Flow
 Execution of a Process flow is a vital process for transforming data from one application to another. The basic prerequisites for executing a process flow is given below:
 Prerequisites:
 * You need to create a process flow. Steps to create a process flow is given here.
