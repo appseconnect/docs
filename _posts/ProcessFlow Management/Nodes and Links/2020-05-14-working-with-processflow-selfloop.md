@@ -26,8 +26,7 @@ Presently three option is available to configure self-loop:
 - Until data available: This option allows a self loop execution over a Node where self-loop will continue to execute until data available in the source app or node.
 - Number of occurrences: This option allows Number of iterations on node over which self-loop implemented will execute.  
 **User can set Maximum 999, to iterate the occurrence** 
-- Timespan: This option allows the User to define the duration for which the self-loop will iterate the node over which it defined.   
-**User can set Maximum upto  24 hrs, 59 mints, 59 seconds, to iterate the occurrence**
+
 
 You can execute a Self loop by choosing any one one of the three given options. 
 Although the availability of data is always the prime criteria for executing the 
@@ -46,7 +45,6 @@ Self Loop Execution on the nodes:
 
 `Self-loop Configuration - Until data available`   
 `Self-loop Configuration - Number of Occurence`  
-`Self-loop Configuration - For a Timespan`  
 
 **A. Choosing Self Loop Configuration - Until data available**
 
@@ -72,26 +70,9 @@ screen appears.
 4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
    by you or until data availability. 
 
-**C. Choosing Self Loop Configuration - For  Timeout**
-1. In the self loop node, Select and choose the option `Time Out` radio button. The following 
-screen appears.   
-![PF_selfloop4](\staticfiles\processflow\media\pfselfloop4.PNG)
-2. Now you get the option to input the duration for which the Self Loop will be executed.
-You have the option for the Time-Out in Hours, Minutes & Seconds. Enter the duration as per your requirement.  
-(a) Hours: The value range of hours is from 1-24  
-(b) Minutes: The value range of minutes is from 1-60  
-(c) Seconds: The value crange of seconds is from 1-60  
-![PF_selfloop5](\staticfiles\processflow\media\pfselfloop5.PNG)  
-3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.
-4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the given timespan defined 
-   by you or until data availability.  
-
-
 _**(a)Maximum no. of characters allowed in the Description Field will be Max.  
 (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
 (c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_ 
-
-
 
 ### Execution flow for Self loop:
 
@@ -112,8 +93,7 @@ Following the process you can successfully execute a Process Flow with Self-Loop
 (a) Until data available - Extra iteration will be displayed  
 (b) Number of occurrence * batch size <= number of data available in source - Extra iteration will not be displayed  
 (c) Number of occurrence * batch size > number of data available in source - Extra iteration will be displayed  
-(d) For time out if data available till that time - Extra iteration will not be displayed  
-(e) For time out if data all data fetched before the time set - Extra iteration will be displayed**
+
 
 ### Business Scenarios for Self loop Usabilty 
 

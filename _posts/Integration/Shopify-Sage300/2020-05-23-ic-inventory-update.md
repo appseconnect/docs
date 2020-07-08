@@ -1,11 +1,11 @@
 ﻿---
-title: "I/C Inventory Update from Shopify SAGE 300"
+title: "I/C Inventory Update from SAGE 300 to Shopify"
 toc: true
 tag: developers
 category: "Integration/Sage-Shopify"
 menus: 
     shopifysageintegration:
-        title: "I/C Inventory Update from Shopify SAGE 300"
+        title: "I/C Inventory Update from SAGE 300 to Shopify"
         icon: fa fa-wpexplorer
         identifier: shopifysage300inventory
 ---
@@ -16,6 +16,11 @@ Executing the Process is a vital part when integrating any applications. This Do
 ## Brief Description:
 
 Inventory update is used to integrate the quantity of products synced to Shopify from SAGE 300. Updates made in the quantity need to be managed in the Ecommerce platform better management of the products in terms of quantity available. [Click here](/connectors/sage300/) to view the steps on how to Update Inventory in SAGE 300. 
+
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+- You need to have the products integrated in Shopify from SAGE 300 before updating Inventory.
 
 ## Lookup Mapping:
 

@@ -17,6 +17,10 @@ A sales cycle is incomplete without placing orders for any products. Sales Order
 
 Here, an Order is placed for the customer Lonnie K Croker, against the product Seinhieser Double Bass Headset.
 
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+
 ## Lookup Mapping:
 
 For integrating, Sales Orders from Shopify to Sage 300, you need to add lookups for Frieght & Tax Code.

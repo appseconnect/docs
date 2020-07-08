@@ -1,11 +1,11 @@
 ﻿---
-title: "Shipment Add from Shopify to SAGE 300"
+title: "Shipment Add from SAGE 300 to Shopify"
 toc: true
 tag: developers
 category: "Integration/Sage-Shopify"
 menus: 
     shopifysageintegration:
-        title: "Shipment Add from Shopify to SAGE 300"
+        title: "Shipment Add from SAGE 300 to Shopify"
         icon: fa fa-wpexplorer
         identifier: shopifysage300shipmentadd
 ---
@@ -22,6 +22,11 @@ b. The customer whose shipment shall be synced should be availble in both the ap
 c. The Product shall be available in the both the application. [Click here]() to integrate IC Product from SAGE 300 to Shopify.
 
 d. The order must be present in both the application for whose shipment is generated. [Click Here]() to integrate Sales Order from Shopify to SAGE 300.
+
+### Prerequisites: 
+
+- You need to [Choose your Workflow](/workflow/steps-to-choose-your-workflow/) or you can [create/design a new workflow](/workflow/steps-to-create-your-first-workflow/) as per your need.
+
 
 ### Steps generate Shipment for the order synced to SAGE 300 from Shopify.
 
