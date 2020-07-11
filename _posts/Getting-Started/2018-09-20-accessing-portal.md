@@ -178,12 +178,16 @@ This section provides a simplified view of the modules that required to manage t
 You can see and track the non-transactional activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. 
 Traces of past activities of the user can be been viewed in the feed section.
 
-1. Choose & Click on a Project.
-2. Click on **Feeds** menu.
-3. Here you can only see your activities in your logged in profile.
-4. Feeds Page has search criteria, so that you can filter the feed using topic keyword filters like "touchpoint", "masterdata" etc.
-4. This is view only menu.
-5. Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.
+1. Login to your Organsiation.
+2. Navigate to Manage > Feeds.
+3. Here you can only see your non- transactional activities in your logged in profile.
+![feeds1](\staticfiles\root\media\feeds1.PNG)
+4. You can filter your search on the Feeds Page only by using keywords like `workflow`, `Rule`, `Account` etc.
+5. For each feeds on the page, you will be provided with a hashtag that will define the activity area.
+![feeds2](\staticfiles\root\media\feeds1.PNG)
+6. On clicking over the hashtags, you will be listed with all the feeds whose activity was on that area.
+
+**Note: Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.**
 
 **ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
 {: .notice--info}
