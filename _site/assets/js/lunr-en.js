@@ -234,7 +234,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guides to create APIs",
-      excerpt: "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
+      excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 24
@@ -594,7 +594,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Configuring APPSeCONNECT for API Hosting",
-      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
+      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
       id: 64
@@ -2392,6 +2392,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Release Notes",
+      excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
+      categories: ["ReleaseNotes"],
+      tags: ["developers"],
+      id: 264
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -2677,7 +2686,7 @@ var store = [
       {
         "title": "Quickstart guides to create APIs",
         "url": "/api-management/quickstart-guides-to-api-management/",
-        "excerpt": "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
+        "excerpt": "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3117,7 +3126,7 @@ var store = [
       {
         "title": "Configuring APPSeCONNECT for API Hosting",
         "url": "/api-management/configure-appseconnect-for-apis/",
-        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
+        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3600,7 +3609,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/connectors/Overview-of-Application-Connectors/",
+        "url": "/connectors/overview-of-application-connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
@@ -5307,6 +5316,17 @@ var store = [
         "title": "Protocol Implementation for Applications",
         "url": "/processflow/protocol-implementation/",
         "excerpt": "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Release Notes",
+        "url": "/releasenotes/releasenote/",
+        "excerpt": "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
