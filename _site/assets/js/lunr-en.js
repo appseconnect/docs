@@ -1656,7 +1656,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Release Notes",
-      excerpt: "\n",
+      excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
       categories: ["ReleaseNotes"],
       tags: ["developers"],
       id: 182
@@ -4424,7 +4424,7 @@ var store = [
       {
         "title": "Release Notes",
         "url": "/releasenotes/overview/",
-        "excerpt": "\n",
+        "excerpt": "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
