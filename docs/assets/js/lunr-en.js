@@ -234,7 +234,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guides to create APIs",
-      excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
+      excerpt: "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 24
@@ -594,7 +594,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Configuring APPSeCONNECT for API Hosting",
-      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
+      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
       id: 64
@@ -2677,7 +2677,7 @@ var store = [
       {
         "title": "Quickstart guides to create APIs",
         "url": "/api-management/quickstart-guides-to-api-management/",
-        "excerpt": "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
+        "excerpt": "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3117,7 +3117,7 @@ var store = [
       {
         "title": "Configuring APPSeCONNECT for API Hosting",
         "url": "/api-management/configure-appseconnect-for-apis/",
-        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
+        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
