@@ -214,7 +214,7 @@ Fix:
 * Priority adapter was not able to generate Output packet after data gets posted in Priority
 With this release, the output packet is getting generated as expected after data posting.  
  
-### Release Component Versioning Details
+## Release Component Versioning Details
 
 |Area|Component|Version|
 |---|---|----|

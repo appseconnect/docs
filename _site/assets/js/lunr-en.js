@@ -2402,7 +2402,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "2020 Release Notes",
+      title: "2020",
       excerpt: "\n",
       categories: ["ReleaseNotes"],
       tags: ["developers"],
@@ -5353,7 +5353,7 @@ var store = [
     
       
       {
-        "title": "2020 Release Notes",
+        "title": "2020",
         "url": "/releasenotes/yearly/",
         "excerpt": "\n",
         "teaser":
