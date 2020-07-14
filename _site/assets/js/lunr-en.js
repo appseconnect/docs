@@ -2393,20 +2393,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview",
-      excerpt: "Discover whats going on in APPSeCONNECT! Look at our most recent features and updates from APPSeCONNECT! Here are the Release...",
-      categories: ["ReleaseNotes"],
-      tags: ["developers"],
-      id: 264
-    });
-    
-  
-    idx.add({
       title: "2020",
       excerpt: "\n",
       categories: ["ReleaseNotes"],
       tags: ["developers"],
-      id: 265
+      id: 264
     });
     
   
@@ -2415,6 +2406,15 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
       categories: ["ReleaseNotes"],
       tags: ["developers"],
+      id: 265
+    });
+    
+  
+    idx.add({
+      title: null,
+      excerpt: "Discover whats going on in APPSeCONNECT! Look at our most recent features and updates from APPSeCONNECT! Here are the Release...",
+      categories: [],
+      tags: null,
       id: 266
     });
     
@@ -5342,17 +5342,6 @@ var store = [
     
       
       {
-        "title": "Overview",
-        "url": "/releasenotes/overview-release/",
-        "excerpt": "Discover whats going on in APPSeCONNECT! Look at our most recent features and updates from APPSeCONNECT! Here are the Release...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "2020",
         "url": "/releasenotes/yearly/",
         "excerpt": "\n",
@@ -5367,6 +5356,17 @@ var store = [
         "title": "Release Notes",
         "url": "/releasenotes/releasenote/",
         "excerpt": "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": null,
+        "url": "/2020-07-14-overview-release/",
+        "excerpt": "Discover whats going on in APPSeCONNECT! Look at our most recent features and updates from APPSeCONNECT! Here are the Release...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
