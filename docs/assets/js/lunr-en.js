@@ -2392,6 +2392,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Release Notes",
+      excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
+      categories: ["ReleaseNotes"],
+      tags: ["developers"],
+      id: 264
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -3600,7 +3609,7 @@ var store = [
       
       {
         "title": "Overview of Application Connectors",
-        "url": "/connectors/Overview-of-Application-Connectors/",
+        "url": "/connectors/overview-of-application-connectors/",
         "excerpt": "An Application connectors are Pre-built optimized solution developed by APPSeCONNECT backend developer team and tested in real-life scenarios. If you...",
         "teaser":
           
@@ -5307,6 +5316,17 @@ var store = [
         "title": "Protocol Implementation for Applications",
         "url": "/processflow/protocol-implementation/",
         "excerpt": "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Release Notes",
+        "url": "/releasenotes/releasenote/",
+        "excerpt": "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
