@@ -2394,10 +2394,28 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Release Notes",
-      excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
-      categories: ["ReleaseNotes"],
+      excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
+      categories: ["AEC ReleaseNotes"],
       tags: ["developers"],
       id: 264
+    });
+    
+  
+    idx.add({
+      title: "2020",
+      excerpt: "This section will give you detailed decsription of 2020 releases.\n\nPresently the enlisted section is  Q2 Version 4.7.0\n",
+      categories: ["AEC ReleaseNotes"],
+      tags: ["developers"],
+      id: 265
+    });
+    
+  
+    idx.add({
+      title: "Q2 Version 4.7.0",
+      excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
+      categories: ["AEC ReleaseNotes"],
+      tags: ["developers"],
+      id: 266
     });
     
   
@@ -5325,7 +5343,29 @@ var store = [
       
       {
         "title": "Release Notes",
-        "url": "/releasenotes/releasenote/",
+        "url": "/aec%20releasenotes/overview-release/",
+        "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "2020",
+        "url": "/aec%20releasenotes/yearly/",
+        "excerpt": "This section will give you detailed decsription of 2020 releases.\n\nPresently the enlisted section is  Q2 Version 4.7.0\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Q2 Version 4.7.0",
+        "url": "/aec%20releasenotes/releasenote/",
         "excerpt": "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
         "teaser":
           
