@@ -1655,9 +1655,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Overview of Integration",
-      excerpt: "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
-      categories: ["Integration"],
+      title: "Release Notes",
+      excerpt: "\n",
+      categories: ["ReleaseNotes"],
       tags: ["developers"],
       id: 182
     });
@@ -4422,9 +4422,9 @@ var store = [
     
       
       {
-        "title": "Overview of Integration",
-        "url": "/integration/overview/",
-        "excerpt": "APPSeCONNECT provides a single integration platform through which one can connect various Business Applications like ERP system, CRM, Accounting Applications,...",
+        "title": "Release Notes",
+        "url": "/releasenotes/overview/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
