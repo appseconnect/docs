@@ -4,11 +4,11 @@ toc: true
 tag: developers
 category: "ReleaseNotes"
 menus: 
-    header:
+    TwentyTwentyRelease:
         title: "Release Notes"
         weight: 1
         icon: fa fa-wpexplorer
-        identifier: releasenotes
+        identifier: TwentytwentyQ2Release
 ---
 Product Release Version: 4.7.0   
 We are pleased to present APPSeCONNECT 4.7.0   
@@ -21,23 +21,24 @@ along with the newly introduced Process flow and download the latest version of
 `APPSeCONNECT AGENTS, PLUGINS, ADAPTERS`. The following section shows the list related 
 to APPSeCONNECT integration and Adapter development, as on July 2020 release.   
 
-## (A) New Features and Enhancements
 
-###  1.  Process Flow Management (Beta Version Release)  
+(A) New Features and Enhancements
+
+**1.  Process Flow Management (Beta Version Release)**  
 We have Introduced APPSeCONNECT Process Flow suite in our 2020 Q1 release which 
 features an extensive interface that provide the ability to easily create 
 business requirements designs   to make out robust process flows simple for 
 catering your business requirements.   
 
 We added more features for the users in 
-this release which includes � `Self loop, Splitter Node, Merger Node, Decision Node, 
+this release which includes `Self loop, Splitter Node, Merger Node, Decision Node, 
 Unassign Lookup, Auto Retry` and many more. These features are exciting and helps 
 you to easily plug and play with data during an integration using process flow.     
 
 Highlights of the process flow management functionalities are mentioned   below:  
-Designer 
+ 
 
-#### Designer
+## Design
 
 In the designer area of Process flow, we have come up with the following features
 
@@ -56,8 +57,8 @@ You can now manage huge volume of data in process flow with the availability of 
 
 **(c) Merger Node for Managing Multiple Records**  
  You can now manage collection of records in order   
-�	To Merge multiple records.  
-�	To reduce number of hits into successive nodes.  
+* To Merge multiple records.  
+* To reduce number of hits into successive nodes.  
 
 **(d) Decision Node for Controlled Execution** 
 
@@ -66,7 +67,7 @@ You can now use decision node in Process flow
 * To control execution path based on IF-ELSE criteria. 
 * To evaluate the condition using Static Value /Generic Functions/ Attribute.
 
-#### Deploy
+## Deploy
 
 **(a) Lookup Repository Deployment**
 
@@ -102,7 +103,7 @@ With this release, users can execute a workflow, enabling Self loop with values 
 Therefore, you can run the self-loop multiple times per your business requirements.
 
 
-#### Manage 
+## Manage 
 
 **(a) Snapshot Operation for Hosted Environment** 
 
@@ -134,7 +135,9 @@ Fix:
  
 With this release, this issue has been resolved as Ticket View has been upgraded and streamlined and users can view organization specific tickets only.
 
-## (B) New Integrations
+## Other Areas
+
+**(B) New Integrations**
 
 Given below are the integration areas for business process automation  
 
@@ -159,7 +162,7 @@ This feature syncs data from Sage 300 to Magento 2 B2C and vice versa so that sy
 
 This feature syncs data from Sage 300 to Shopify B2C and vice versa so that sync requirements between the applications are met. 
 
-(b) Here the following components will be synced successfully from Shopify to Sage 300 with all details.
+(a) Here the following components will be synced successfully from Shopify to Sage 300 with all details.
 
 * Customer Add
 * Customer Update
@@ -172,28 +175,28 @@ This feature syncs data from Sage 300 to Shopify B2C and vice versa so that sync
 * Inventory Control (IC) Product Add 
 * Inventory Update
 
-## (C) Adapter & Plugins
+**(C) Adapter & Plugins**   
 These are the Adapters which has been enhanced in this release:
 
-### (a)	Enhanced Lightspeed Adapter   
+**(a)	Enhanced Lightspeed Adapter**   
  Enhanced version of Lightspeed adapter presents you with the following features
 * Custom browsing Supported - Lightspeed adapter latest version supports custom browsing thereby enabling dependency download automatically.  
 * Lightspeed app validation in agent, provides dependency download.
 
-### (b)	Enhanced Zoho CRM Adapter 
+**(b)	Enhanced Zoho CRM Adapter** 
 Enhanced version of Zoho CRM is enabled with the following bug fix with 
 Fix:
-* Shopify Credentials Base URL is getting replaced by Zoho CRM URL.
+* Shopify Credentials Base URL is getting replaced by Zoho CRM URL.    
 With this release, the updated Zoho CRM adapter version allows saving credentials, and these should not be replaced by other app's credentials during integration process.
 
-### (c)	Enhanced Magento 2 Adapter
+**(c)	Enhanced Magento 2 Adapter**
 Enhanced adapter for the application Magento 2  presents you with the following feature
 * Single Token Authentication       
 o	Users can now validate Magento 2 enhanced adapters using Integration Access Token generated on the Magento2 Platform.   
 o	The single access token can be used in all API calls made on behalf of the integration, thereby reducing the API hits.   
 o	This provides the flexibility of providing access to only those modules that are required for the Integration Process.  
 
-### (d)	Enhanced Sage Adapter
+**(d)	Enhanced Sage Adapter**  
 Enhanced Sage Adapter is now enabled with the following bug fixes which includes optimized codes.
 Fix:  
 * Order Syncing fetching 409 conflict error and not giving error info in the log bucket.
@@ -211,7 +214,7 @@ Fix:
 * Priority adapter was not able to generate Output packet after data gets posted in Priority
 With this release, the output packet is getting generated as expected after data posting.  
  
-### (E) Release Component Versioning Details
+### Release Component Versioning Details
 
 |Area|Component|Version|
 |---|---|----|

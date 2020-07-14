@@ -2393,11 +2393,29 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Overview",
+      excerpt: "Discover whats going on in APPSeCONNECT! Look at our most recent features and updates from APPSeCONNECT! Here are the Release...",
+      categories: ["ReleaseNotes"],
+      tags: ["developers"],
+      id: 264
+    });
+    
+  
+    idx.add({
+      title: "2020 Release Notes",
+      excerpt: "\n",
+      categories: ["ReleaseNotes"],
+      tags: ["developers"],
+      id: 265
+    });
+    
+  
+    idx.add({
       title: "Release Notes",
       excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
       categories: ["ReleaseNotes"],
       tags: ["developers"],
-      id: 264
+      id: 266
     });
     
   
@@ -5316,6 +5334,28 @@ var store = [
         "title": "Protocol Implementation for Applications",
         "url": "/processflow/protocol-implementation/",
         "excerpt": "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Overview",
+        "url": "/releasenotes/overview-release/",
+        "excerpt": "Discover whats going on in APPSeCONNECT! Look at our most recent features and updates from APPSeCONNECT! Here are the Release...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "2020 Release Notes",
+        "url": "/releasenotes/yearly/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
