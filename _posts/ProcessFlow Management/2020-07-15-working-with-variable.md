@@ -24,7 +24,7 @@ Once defined, upon calling the variable, it will execute the expression associat
 - The variable name should be unique irrespective of the scope used.
 - You need to provide the values for the mandatory fields in the GENERAL Tab of the Node Configuration Window before creating a Variable.
 
-## Creating & Saving Variable
+### Creating Variable
 
 Creating Variables in Processflow is easier and can be done directly by dragging the app node
 in the [designer section](/processflow/designer-processflow/).
@@ -67,7 +67,7 @@ in the [designer section](/processflow/designer-processflow/).
 
 Following the above process you can successfully Define & Save a Capture Variable.
 
-## Listing of Variables 
+### Listing of Variables 
 
 Once you have defined and saved the Variable, you will be able to view the list of the variables created. Follow the steps to view the list of variables.
 
@@ -81,15 +81,19 @@ C. You will be able to view these following details in the Variable List.
 
 - **Variable Name** - You can view the name provided while defining the variable.
 
-- **Data Type** - The datatype used while defining will be displayed
+- **Expressions** - You can view the expression used on the varibale will be displayed.
 
-- **Default Value / Expressions** - need clarity
+- **Data Type** - You can view the datatype used while defining will be displayed.
+
+- **Scope** - You can view the scope of the variable defined will be displayed.
+
+- **Actions** - You can view and perform the following operations from actions: `Edit` & `Delete`.
 
 D. On hovering over the name, you can view the scope of the variables defined.
 
 Following the above process you can successfully view the Variable list.
 
-## Editing Variable
+### Editing Variable
 
 Editing Variable is equally easy as creating and saving a variable. The process to edit a variable is given below:
 
@@ -99,7 +103,7 @@ B. Click on the properties Tab. You can view the Variable listing page.
 
 ![var5](\staticfiles\processflow\media\var5.png)
 
-C. Click on the Ellipses icon (Three horizontal Dots) on the actions column beside the variable. You'll get two options from the drop down.
+C. Click on the Ellipses icon (Three horizontal Dots) on the **actions** column beside the variable. You'll get two options from the drop down.
 - Edit: Enables you Edit the variable.
 - Delete: Delete the created Variable.
 
@@ -107,7 +111,7 @@ D. Click on the EDIT button. You can view the `Create Variable` page. Modify the
 
 **Note:** You can modify any properties associated with the variable.
 
-## Deleting Variable
+### Deleting Variable
 
 A. Click on the Ellipses button beside the Variable, in the variable listing page.
 
@@ -123,7 +127,7 @@ C. Your variable gets deleted from the list.
 
 _**Note:** You cannot delete a Variable that is currently in use for execution and will be provided with an error while doing so._
 
-## Execution Flow using Capture Variable
+### Execution Flow using Capture Variable
 
 1) [Design the Process Flow](/processflow/creating-processflow/) and Open the **Node Configuration Window** for the application implementing [GET operation](/processflow/working-with-GET/). The node configuration window opens.
 
@@ -131,7 +135,7 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 ![var8](\staticfiles\processflow\media\var8.png)
 
-3) Click on the **Create** Button in the Properties Window.
+3) Click on the [**Create**](/processflow/working-with-variable/#creating-variable) Button in the Properties Window.
 
 4) The Variable creation page opens. Enter the required details and click on the save button.
 
@@ -143,29 +147,29 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 7) You can now successfully [deploy and execute](/processflow/deploying-and-executing-processfloww/) the Process Flow.
 
-8) You can view the snapshot of the process flow.
+8) You can view the [snapshot](/processflow/snapshot-processflow/) of the process flow.
 
-![var12]()
+![var12](\staticfiles\processflow\media\var12.png)
 
-9) Click on the `File Tab` of GET node to view all the files after the last of date.
+9) Click on the [`File Tab` of GET node](/processflow/snapshot-processflow/#1-scenario-get-node) to view all the files with fetched with created date after the value provided in the variable.
 
-![var13]()
+![var13](\staticfiles\processflow\media\var13.png)
 
 **Note:**
 
 - Generic Function for `Lastof` has been used for fetching the all data after the LastOf value provided. After an instance the of execution, the generic function will store the `created_date` value of the last data such that on the next execution, all the data after the `LastOf date` will be fetched.
 - You need to provide `~ (tilt icon)` when providing Generic function in the `Expression` field.
-- Using of the `$` symbol to for denoting the variable usage is mandatory.
+- Using of the `$` symbol along with the Curly Braces `{}` is mandatory for denoting the variable usage is mandatory.
 - Variables with datatype `ComplexObect` & `ComplexObjectCollection` cannot be implemented on Action Filter.
 
-## Capture Variables Utility:
+### Capture Variables Utility:
 
 This part of the document will list few scenarios that will help you understand Capture Variables:
 
 | Variable Name | Datatype | Expression | Default Value |Scope| Utility|
 |--------|-------------|-------------|---------|-------|-----|
 | custxp | string | `{//items//item/` <br/> `cust_id}` | - |  ProcessFlow or Node | Here, the variable is created with the name `$custxp` and is provided with an xpath expression. When ever the variable is called within the scope, the expression provided in the variable will be executed. |
-| countryval | string | `{//items//item/` <br/> `country_id}` | ProcessFlow or Node |`"NY"` | Here, a variable is created `$countryval` that stores a static value of sting type. On the applying the variable on Action Filter of GET node, the variable will execute the expression provided and fetch only those data, that matched the value provided in the variable.|
+| countryval | string | `{//items//item/` <br/> `country_id}` | ProcessFlow or Node |`"NY"` | Here, a variable is created `${countryval}` that stores a static value of sting type. On the applying the variable on Action Filter of GET node, the variable will execute the expression provided and fetch only those data, that matched the value provided in the variable.|
 | Email | Bool | `{//items//item/ ` <br/> `email_id}` | True |ProcessFlow or Node|Here, the variable is created of the data type Boolean and is provided with both Expression and a default Value. On implementing the Variable on Action Filter for GET operation will fetch only those data that contains the email.|
 | IsGuest | Bool | `{//items//item/ ` <br/> `country_id}`| True| ProcessFlow or Node|Here, the variable is created of the data type Boolean and is provided with both Expression and a default Value. On implementing the Variable on Action Filter for GET operation will fetch only those data that contains the value TRUE against the attribute country id.|
 |TotalSpent| Double | `{//customers/customer` <br/> `/total-spent}`  | 55.55 | ProcessFlow or Node | Here, the variable is of the datatype `Double` is provided with default value. On implementing the variable in the action filter of Shopify operating GET, all the data whose `total-spent` value equals the variable default value will be fetched.|
