@@ -11,8 +11,7 @@ menus:
         identifier: TwentytwentyQ2Release
 ---
 Product Release Version: 4.7.0   
-We are pleased to present APPSeCONNECT 4.7.0   
-Patch code and the release notes were published and last revised in July 2020. 
+Release notes were published and last revised in July 2020. 
 Updates in this release include New Feature Development & Enhancements, UI Enhancements, 
 Integration Enhancements, Adapters & Plugin Development.
      
