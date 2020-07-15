@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.">
+<meta name="description" content="APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of the module will help you with the How to Guides for Connecting External Sources, Deploy to Environments and configuring applications.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.">
+  <meta property="og:description" content="APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of the module will help you with the How to Guides for Connecting External Sources, Deploy to Environments and configuring applications.">
 
 
 
@@ -1437,8 +1437,20 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Actions">Managing - Schema & Actions</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/Lookup-repository-masterdata/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/Lookup-repository-masterdata/" onclick="selectTab('/processflow/Lookup-repository-masterdata/', event);" title="Go to Creating Lookup Repository Masterdata">Creating Lookup Repository Masterdata</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-variable/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/working-with-variable/" onclick="selectTab('/processflow/working-with-variable/', event);" title="Go to Working with Capture Variables">Working with Capture Variables</a>
         
     </li>
     
@@ -1449,14 +1461,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/protocol-implementation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/protocol-implementation/" onclick="selectTab('/processflow/protocol-implementation/', event);" title="Go to Protocol Implementation for Applications">Protocol Implementation for Applications</a>
+    <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+    <li class="menu-item-" data-url="/processflow/protocol-implementation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/protocol-implementation/" onclick="selectTab('/processflow/protocol-implementation/', event);" title="Go to Protocol Implementation for Applications">Protocol Implementation for Applications</a>
         
     </li>
     
@@ -1626,6 +1638,12 @@
         
         
 <ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/integration/sage-shopify/customer-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/customer-update/" onclick="selectTab('/integration/sage-shopify/customer-update/', event);" title="Go to Customer Update">Customer Update</a>
+        
+    </li>
     
     
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
@@ -2182,7 +2200,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Configuring APPSeCONNECT for API Hosting">
-        <meta itemprop="description" content="APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.">
+        <meta itemprop="description" content="APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of the module will help you with the How to Guides for Connecting External Sources, Deploy to Environments and configuring applications.">
         <meta itemprop="datePublished" content="September 24, 2018">
         
 
@@ -2255,7 +2273,7 @@
 
 
 
-  1 minute read
+  less than 1 minute read
 </p>
                 
                 
@@ -2267,43 +2285,34 @@
                 <aside class="sidebar__right">
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
-                        <ul class="toc__menu">
-  <li><a href="#configuring-appseconnect-for-apis">Configuring APPSeConnect For APIs</a></li>
-</ul>
+                        
                     </nav>
                 </aside>
                 
-                <p>APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.</p>
+                <p>APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of the module will help you with the How to Guides for Connecting External Sources, Deploy to Environments and configuring applications.</p>
 
-<h2 id="configuring-appseconnect-for-apis">Configuring APPSeConnect For APIs</h2>
-
-<p>Follow these steps to configure a APPSeCONNECT Proxy.</p>
-
-<ol>
-  <li><a href="https://www.appseconnect.com/free-trial/">Create an account in APPSeCONNECT Portal</a></li>
-  <li><a href="/deployment/Deployment-Configuration/">Configure Environment for your project</a></li>
-  <li><a href="/api-management/choosing-backend-apps/">Choosing Back-end Apps</a></li>
-</ol>
-
-<p>Afterwards, you have to register a URL for your organization.</p>
-
-<ul>
-  <li>Go to <strong>API</strong> section from the left side menu.
-<img src="/staticfiles/api-management/media/Webhook-Introduction.png" alt="Webhook Introduction" /></li>
-  <li>Inside <strong>APIManagementSection</strong> you can see Webhooks and Proxy.By defeault,Webhook section will be
-  shown.You can see all your connections listed here.</li>
-  <li>
-    <p>If you do not have a registered URL with <strong>APPSeCONNECT</strong> you have to Register a URL for your organization.Here is how to do it.
- Click on Register URL button. Upon clicking you will get a  popup like this.
-<img src="/staticfiles/api-management/media/register-url-org.png" alt="Register Url Org" /></p>
-  </li>
-  <li>Please activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
-So the Base URL for the organization would be <code class="highlighter-rouge">veonconsulting.appseconnectapi.com</code>.</li>
-  <li>Provide the Description for your API Stack,title and Terms and Condition Documents URL.</li>
-  <li>Afterwards choose a Software licensing for API consumption and usage as per your convinience.</li>
-</ul>
-
-<p>After this you are all set to create an API proxy.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Sections</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/api-management/connecting-to-a-data-source/">Connecting to External Sources</a></td>
+      <td>This will guide with the functionality of connecting on or more data sources with an API proxy.</td>
+    </tr>
+    <tr>
+      <td><a href="/api-management/deployments-and-environments/">Deploy to Environments</a></td>
+      <td>This section of the document will guide you with the steps of deploying your API’s to On-Premise Agent.</td>
+    </tr>
+    <tr>
+      <td><a href="/api-management/choosing-backend-apps/">/api-management/choosing-backend-apps/</a></td>
+      <td>API Proxies are API services that connects you to a remote data source or multiple data sources. This section will guide with the configurations related to the selection of applications.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p><a href="/api-management/steps-to-create-proxy-endpoint">To get started on how to create a proxy follow this article.</a></p>
 
@@ -2398,6 +2407,30 @@ So the Base URL for the organization would be <code class="highlighter-rouge">ve
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             
@@ -4498,6 +4531,12 @@ So the Base URL for the organization would be <code class="highlighter-rouge">ve
 
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
