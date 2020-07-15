@@ -134,9 +134,13 @@ the attribute.
 
 1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).    
 You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
+
 2) Changes done to an existing Attribute will be reflected within that specific Process Flow only.
+
 3) Changes done to an existing Attribute will not affect other Process Flows using the same Schema and Attribute.
+
 4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.
+
 5) Primary set Attributes (local attributes)cannot be deleted.
 
 #### (b) Editing Attribute within Organization Scope (global attribute)
