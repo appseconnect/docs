@@ -61,7 +61,7 @@ in the [designer section](/processflow/designer-processflow/).
 
 **Note: The field for Default Value remains disabled if the datatype is selected as  `ComplexObject` or `ComplexObjectCollection`.**
 
-![var3]()\staticfiles\processflow\media\var3.png
+![var3](\staticfiles\processflow\media\var3.png)
 
 8. On clicking the `View List` button, you can view all the created variable for the node in a list view.
 
