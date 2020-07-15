@@ -61,8 +61,8 @@ Prerequisites for Creating Lookup Reference Tables
 following option.  
 a.	Edit: You can Rename the collection by clicking Edit Button.  
 b.	Delete:You can delete the whole Repository Collection including the Tables inside it, by clicking on delete button.   
-c.	[Import](/processflow/export-and-import-lookup/#steps-to-import-lookups-from-repository-collection): You can import an excel file for creating reference tables from your local system.  
-d.	[Export](/processflow/export-and-import-lookup/#steps-to-export-lookups-from-repository-collection): You can export the created lookups to your local system.    
+c.	**[Import](/processflow/export-and-import-lookup/#steps-to-import-lookups-from-repository-collection): You can import an excel file for creating reference tables from your local system.**  
+d.	**[Export](/processflow/export-and-import-lookup/#steps-to-export-lookups-from-repository-collection): You can export the created lookups to your local system.**    
 e.	New Table: You can create a new table under the selected Repository Collection by clicking on new table.  
 f.  Clear All: You can clear all the data of the Repository Collection by clicking on this option. You will get a warning ,essage,
 click `Yes` to proceed, else click `No` to cancel.    

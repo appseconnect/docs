@@ -58,9 +58,11 @@ not specify the version element in the API, you will face lot of challenges in f
 4. Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
 to specify policies which will be executed before the execution of Backend Action.
 ![Inbound Policy Example](/staticfiles/api-management/media/inbound-policy-example.png)  
-In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each  
-of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
-you can continue the wizard. For Policy Configuration, Click [here](/api-management/policies/)    
+
+**Protip** In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each of the [policies](/api-management/policies/) applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
+you can continue the wizard. For Policy Configuration, Click [here](/api-management/policies/).
+{: .notice--info}
+
 5. The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API.   
 ![Api Backend Configuration](/staticfiles/api-management/media/api-backend-configuration.png)    
