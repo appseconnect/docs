@@ -1,11 +1,11 @@
 ﻿---
-title: "Q2 Version 4.7.0"
+title: "Q2 Release Version 4.7.0"
 toc: true
 tag: developers
-category: "AEC ReleaseNotes"
+category: "ReleaseNotes" 
 menus: 
     TwentyTwentyRelease:
-        title: "Q2 Version 4.7.0"
+        title: "Q2 Release Version 4.7.0"
         weight: 3
         icon: fa fa-wpexplorer
         identifier: TwentytwentyQ2Release
@@ -13,118 +13,114 @@ menus:
 Product Release Version: 4.7.0   
 Release notes were published and last revised in July 2020. 
 Updates in this release include New Feature Development & Enhancements, UI Enhancements, 
-Integration Enhancements, Adapters & Plugin Development.
+Integration Enhancements & Adapters Enhancements.
      
 Log in to the portal to access the latest version of Workflow, Environment, etc. 
-along with the newly introduced Process flow and download the latest version of 
-`APPSeCONNECT AGENTS, PLUGINS, ADAPTERS`. The following section shows the list related 
-to APPSeCONNECT integration and Adapter development, as on July 2020 release.   
+along with the newly introduced Process flow and download the updated version of 
+`APPSeCONNECT AGENT`. The following section list the updates on APPSeCONNECT, as on July 2020 release.  
 
-
-**(A) New Features and Enhancements**
-
-**1.  Process Flow Management (Beta Version Release)**  
-We have Introduced APPSeCONNECT Process Flow suite in our 2020 Q1 release which 
-features an extensive interface that provide the ability to easily create 
-business requirements designs   to make out robust process flows simple for 
-catering your business requirements.   
-
-We added more features for the users in 
-this release which includes `Self loop, Splitter Node, Merger Node, Decision Node, 
-Unassign Lookup, Auto Retry` and many more. These features are exciting and helps 
-you to easily plug and play with data during an integration using process flow.     
-
-Highlights of the process flow management functionalities are mentioned   below:  
- 
-
+**Highlights of the release features are mentioned below**.
 ## Design
 
-In the designer area of Process flow, we have come up with the following features
+We have Introduced APPSeCONNECT Process Flow suite (Beta Version Release) in our 2020 Q1 release which 
+features an extensive interface to create robust process flows catering to your business requirements.   
 
-**(a) Self-loop for Iterating in Loop Variable**  
+We added more features for the users in  this release which includes `Self loop, Splitter Node, Merger Node, Decision Node, 
+Unassign Lookup, Auto Retry` and many more. These features are useful and helps 
+you to plug and play with data during an integration using process flow.     
 
-You now have the flexibility to use loop in a node to iterate as per configuration. Presently you will get two options to configure self-loop. 
-* Until data available - To iterate over a node and continue to execute until data is available in that node.
-* Number of occurrences - To choose number of iterations on node over for [self-loop](/processflow/working-with-processflow-selfloop/) execution.  The maximum limit you can set for the iteration is 999.
+#### New Features 
+ 
+**Self-loop to Iterate a Node**  
 
-**(b) Splitter Node for Load Balancing in Nodes**
+You now have the flexibility to use self-loop in a node to iterate as per configuration and two options are available for that 
+* Until data available - To iterate a node and continue to execute until data is available from source node/source application.
+* Number of occurrences - To choose number of iterations, a node will execute. You can set the maximum limit of 999 for [self-loop](/processflow/working-with-processflow-selfloop/) execution. 
 
-You can now manage huge volume of data in process flow with the availability of Splitter node
+**Splitter Node for PayLoad**
+
+You can use splitter node in process flow 
 * To [Split](/processflow/working-with-processflow-splitter/) large volume of data.
 * To process and validate each data individually.
 * To reduce the load to successive node.
 
-**(c) Merger Node for Managing Multiple Records**  
+**Merger Node for Managing Multiple Records**  
  You can now manage collection of records in order   
 * To [Merge](/processflow/working-with-processflow-merger/) multiple records.  
 * To reduce number of hits into successive nodes.  
 
-**(d) Decision Node for Controlled Execution** 
+**Decision Node for Controlled Execution** 
 
 You can now use [decision](/processflow/working-with-decision/) node in Process flow   
 * To carry out an execution based on the condition tables.
 * To control execution path based on IF-ELSE criteria. 
 * To evaluate the condition using Static Value /Generic Functions/ Attribute.
 
-## Deploy
-
-**(a) Lookup Repository Deployment**
-
-You can now manage and create Lookup types in form of tables for the organisation.
-
-* To unfix & unassign the lookup warnings in the [Deployment](/processflow/deploying-and-executing-processfloww/) Wizard for quick implementation of changes with respect to execution
-* To deploy [Reference tables](/processflow/Lookup-repository-masterdata/) such that the lookup mapping used for the attributes syncs correct data to destination application
-
-**(b) Support for Auto Retry for Failed Transaction**   
-You will now get Auto retry feature in Processflow
-* To sync failed data during execution. 
-* To set re-sync into either Manual or Automatic mode on defined Schedule.
-
-**(c)  Custom Appresource Functions for Mapping Requirements**  
-You will now get Custom Appresource function in Process flow, where you can create AppreSource and use in all your [mapping](/processflow/working-with-mapper/) requirements. 
-
-* To share and reuse the custom Appresource function, you get the flexibility to create it in app level. 
-* To restrict reusing of the custom Appresource function, you can define within the specific mapper node.
-
+#### Enhancements
 
 **Workflow Snapshot**   
-Fix Given:      
-      For Workflow (Cloud Agent Execution) Snapshot generation is happening for huge data sync, however the POST node was blank.    
+Fix:      
+      For Workflow (Hosted Agent) Snapshot generation is happening for huge data sync, however the POST node was blank.    
       
 With this release, users can view the [workflow](/workflow/overview/) POST node with accurate data of execution for both success and failed data.    
 
 **Workflow Self Loop Iteration**
 
-Fix Given:   
+Fix:   
       Workflow with Self Loop allowed only '2' in the corresponding field to execute the self-loop  
       
 With this release, users can execute a workflow, enabling Self loop with values ranging from `1 to 99`. 
 Therefore, you can run the self-loop multiple times per your business requirements.
 
+## Deploy
+
+#### New features
+
+**Lookup Repository to Manage Static Data**
+
+You can manage your [Reference tables](/processflow/Lookup-repository-masterdata/) in look up repository to maintain static data, required for integation.
+
+* To unassign the lookup reference in the [Deployment](/processflow/deploying-and-executing-processfloww/) Wizard for quick implementation of changes.
+
+**Auto Retry for Syncing Failed Data**   
+You will now get Auto retry feature in Processflow
+* To sync failed data during execution. 
+* To set re-sync into either Manual or Automatic mode on defined Schedule.
+
+**Custom Appresource Functions for Mapping Requirements**  
+You can now create Custom defined Appresource function in Process flow, to address your [mapping](/processflow/working-with-mapper/) requirements. 
+
+* To reuse the custom Appresource function, you can create it in app level. 
+* To restrict reusing of the custom Appresource function, you can define within the specific mapper node.
+
 
 ## Manage 
 
-**(a) Snapshot Operation for Hosted Environment** 
+#### New Feature
 
-APPSeCONNECT now provides the user with snapshot data view for Hosted Environment.  
+**Snapshot View for Hosted Environment** 
 
-To view node specific data for hosted environment during integration process.
+APPSeCONNECT now provides the user with snapshot view for Hosted Environment.  
 
+* To get complete view of integration process after execution.
+* To Resync Data the failed data directly. 
+
+#### Enhancements 
 **Feeds Message Display**   
-Fix Given:     
+Fix:     
 
 * Wrong message is getting updated in the feeds after updating the schedule interval of a workflow from the OP Agent from Auto to Manual.    
 With this release, users will now get proper message updated in the feeds after scheduling the time interval of workflow from Auto mode 
 to Manual in the OP Agent.      
 
-Fix Given:  
+Fix:  
 
 * Changes made in the schedule interval of the on Premise workflow is not displayed properly  
 With this release, Users will now get Updated feeds with proper messages after scheduling the time interval of workflow from On Premise  Agent.
 
 **New User Registration Email Activation**  
 
-Fix Given: 
+Fix: 
 
 * Broken Hyperlinks was present in the New User Registration Email, which was taking into erroneous page.      
 
@@ -132,22 +128,22 @@ Fix Given:
 
 **View of Support Ticket**    
 
-Fix Given:
+Fix:
 
 * All tickets were visible irrespective of the customer or Organization.
  
 With this release, this issue has been resolved as Ticket View has been upgraded and streamlined and users can view organization specific tickets only.
 
-## Other Areas
+## Connector
 
-**(B) New Integrations**
+#### New Integrations
 
 Given below are the integration areas for business process automation  
 
-**(1) Sage 300 to Magento 2 B2C**  
+**Sage 300 to Magento 2 B2C**  
 This feature syncs data from [Sage 300 to Magento 2 B2C](/integration/sage300-magento2/) and vice versa so that sync requirements between the applications are met. 
 
-(a) Here the following components will be synced successfully from Sage 300 to Magento 2 B2C with all details.  
+ Here the following components will be synced successfully from Sage 300 to Magento 2 B2C with all details.  
 
 * Invoice Add  
 * Delivery/Shipment Add  
@@ -155,72 +151,74 @@ This feature syncs data from [Sage 300 to Magento 2 B2C](/integration/sage300-ma
 * Inventory Update  
 
 
-(b) Here the following components will be synced successfully from Magento 2 B2C to Sage 300 with all details.  
+Here the following components will be synced successfully from Magento 2 B2C to Sage 300 with all details.  
 
 * Customer Add 
 * Customer Update  
 * Sales Order  
 
-**(2) Sage 300 to Shopify B2C**
+**Sage 300 to Shopify B2C**
 
 This feature syncs data from [Sage 300 to Shopify B2C](/integration/shopify-sage300/) and vice versa so that sync requirements between the applications are met. 
 
-(a) Here the following components will be synced successfully from Shopify to Sage 300 with all details.
+Here the following components will be synced successfully from Shopify to Sage 300 with all details.
 
 * Customer Add
 * Customer Update
 * Sales Order
 
 
-(b) Here the following components will be synced successfully from Sage 300 to Shopify with all details.  
+Here the following components will be synced successfully from Sage 300 to Shopify with all details.  
 
 * Delivery/Shipment Add 
 * Inventory Control (IC) Product Add 
 * Inventory Update
 
-**(C) Adapter & Plugins**   
-These are the Adapters which has been enhanced in this release:
+#### Adapter  
+These are the Adapters details which has been enhanced in this release
 
-**(1)	Enhanced Lightspeed Adapter**     
- Enhanced version of [Lightspeed](/connectors/Lightspeed/) adapter presents you with the following features
+**Enhanced Lightspeed Adapter**     
+ Enhanced version of [Lightspeed](/connectors/Lightspeed/) adapter presents you the following features
 * Custom browsing Supported - Lightspeed adapter latest version supports custom browsing thereby enabling dependency download automatically.  
 * Lightspeed app validation in agent, provides dependency download.
 
-**(2)	Enhanced Zoho CRM Adapter**   
-Enhanced version of Zoho CRM is enabled with the following bug fix with 
-Fix:
-* Shopify Credentials Base URL is getting replaced by Zoho CRM URL.    
-With this release, the updated [Zoho CRM](/connectors/zohocrmv2/) adapter version allows saving credentials, and these should not be replaced by other app's credentials during integration process.
+**Enhanced Zoho CRM Adapter**   
+Enhanced version of [Zoho CRM](/connectors/zohocrmv2/)Adapter is enabled with the fix given below
 
-**(3)	Enhanced Magento 2 Adapter**  
-Enhanced adapter for the application [Magento 2](/connectors/magento2/)  presents you with the following feature
+Fix:
+* Shopify Credentials Base URL is getting replaced by Zoho CRM URL.      
+With this release, the updated Zoho CRM adapter version allows saving credentials, and these should not be replaced by other app's credentials during integration process.
+
+**Enhanced Magento 2 Adapter**  
+Enhanced version of [Magento 2](/connectors/magento2/) Adapter presents you with the following feature
 * Single Token Authentication       
 o	Users can now validate Magento 2 enhanced adapters using Integration Access Token generated on the Magento2 Platform.   
 o	The single access token can be used in all API calls made on behalf of the integration, thereby reducing the API hits.   
 o	This provides the flexibility of providing access to only those modules that are required for the Integration Process.  
 
-**(4)	Enhanced Sage Adapter**             
-Enhanced [Sage](/connectors/sage300/) Adapter is now enabled with the following bug fixes which includes optimized codes.
-Fix Given:  
-* Order Syncing fetching 409 conflict error and not giving error info in the log bucket.  
-With this release, users will be able to view Log information which will be traceable to resolve the issue.
+**Enhanced Sage Adapter**             
+Enhanced version of [Sage](/connectors/sage300/) Adapter is now enabled with the following fixes which includes optimized codes.
 
-Fix Given:  
-* For successful Data sync log is throwing incorrect error log information 
-With this release, users will be able to view Log with valid information as expected
+Fix:  
+* Order Syncing fetching 409 conflict error and was not showing error info in the log bucket.    
+With this release, users will be able to view Log information which will be traceable to resolve the issue.   
 
-Fix Given:  
-*  Deleted primary address details in Shopify is still visible as primary ship to address record in Sage 300.    
-With this release, Primary Ship to Address details delete issue has been resolved with the upgraded version.
+Fix:  
+* For successful Data sync log is throwing incorrect error log information  
+With this release, users will be able to view Log with valid information as expected.     
+
+Fix:  
+*  Deleted primary address details in Shopify is still visible as primary ship to address record in Sage 300.      
+With this release, Primary Ship to Address details delete issue has been resolved with the upgraded version.  
 
 **(e)	Enhanced Priority Adapter**    
-Enhanced adapter for the application [Priority](/connectors/priority/) is now enabled with the given bug fix.  
+Enhanced [Priority](/connectors/priority/) Adapter is now enabled with the given bug fix.    
 
-Fix Given: 
-* Priority adapter was not able to generate Output packet after data gets posted in Priority  
+Fix: 
+* Priority adapter was not able to generate Output packet after data gets posted in the application.  
 With this release, the output packet is getting generated as expected after data posting.  
  
-## Release Component Versioning Details
+## Component Versioning Details
 
 |Area|Component|Version|
 |---|---|----|
@@ -235,4 +233,6 @@ With this release, the output packet is getting generated as expected after data
 |Portal|WebAPI|4.7.0|
 
 As always for any support, please [mail us](support@appseconnect.com).
+
+
 
