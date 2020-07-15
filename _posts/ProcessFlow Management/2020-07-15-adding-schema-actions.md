@@ -16,7 +16,7 @@ This section enables the user to view, add the Schema, Attributes and the Action
 within a process flow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
 
-## Prerequisitesss
+## Prerequisites
 - The User should have a valid APPSeCONNECT account.
 - APPSeCONNECT should be up and running
 - An application node  is needed for defining the Schemas and its Actions.
