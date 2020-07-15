@@ -2,7 +2,7 @@
 title: "Release Notes"
 toc: true
 tag: developers
-category: "AEC ReleaseNotes"
+category: "ReleaseNotes" 
 menus: 
     header:
         title: "ReleaseNotes" 

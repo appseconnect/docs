@@ -2,7 +2,7 @@
 title: "Q2 Release Version 4.7.0"
 toc: true
 tag: developers
-category: "AEC ReleaseNotes"
+category: "ReleaseNotes" 
 menus: 
     TwentyTwentyRelease:
         title: "Q2 Release Version 4.7.0"
@@ -13,30 +13,24 @@ menus:
 Product Release Version: 4.7.0   
 Release notes were published and last revised in July 2020. 
 Updates in this release include New Feature Development & Enhancements, UI Enhancements, 
-Integration Enhancements, Adapters Development.
+Integration Enhancements & Adapters Enhancements.
      
 Log in to the portal to access the latest version of Workflow, Environment, etc. 
 along with the newly introduced Process flow and download the updated version of 
-`APPSeCONNECT AGENT`. The following section list the updates on APPSeCONNECT, as on July 2020 release.   
+`APPSeCONNECT AGENT`. The following section list the updates on APPSeCONNECT, as on July 2020 release.  
 
-
-**New Features and Enhancements**
-
+**Highlights of the release features are mentioned below**.
 ## Design
 
 We have Introduced APPSeCONNECT Process Flow suite (Beta Version Release) in our 2020 Q1 release which 
-features an extensive interface that provide the ability to easily create 
-business requirements designs to make out robust process flows simple for 
-catering your business requirements.   
+features an extensive interface to create robust process flows catering to your business requirements.   
 
 We added more features for the users in  this release which includes `Self loop, Splitter Node, Merger Node, Decision Node, 
-Unassign Lookup, Auto Retry` and many more. These features are exciting and helps 
-you to easily plug and play with data during an integration using process flow.     
+Unassign Lookup, Auto Retry` and many more. These features are useful and helps 
+you to plug and play with data during an integration using process flow.     
 
-Highlights of the process flow management functionalities are mentioned below:  
+#### New Features 
  
-In the designer area of Process flow, we have come up with the following features
-
 **Self-loop to Iterate a Node**  
 
 You now have the flexibility to use self-loop in a node to iterate as per configuration and two options are available for that 
@@ -62,7 +56,7 @@ You can now use [decision](/processflow/working-with-decision/) node in Process 
 * To control execution path based on IF-ELSE criteria. 
 * To evaluate the condition using Static Value /Generic Functions/ Attribute.
 
-### Enhancements
+#### Enhancements
 
 **Workflow Snapshot**   
 Fix:      
@@ -80,9 +74,9 @@ Therefore, you can run the self-loop multiple times per your business requiremen
 
 ## Deploy
 
-New features
-  
-**Lookup Repository to Manange Static Data**
+#### New features
+
+**Lookup Repository to Manage Static Data**
 
 You can manage your [Reference tables](/processflow/Lookup-repository-masterdata/) in look up repository to maintain static data, required for integation.
 
@@ -102,7 +96,7 @@ You can now create Custom defined Appresource function in Process flow, to addre
 
 ## Manage 
 
-**New Feature**
+#### New Feature
 
 **Snapshot View for Hosted Environment** 
 
@@ -111,7 +105,7 @@ APPSeCONNECT now provides the user with snapshot view for Hosted Environment.
 * To get complete view of integration process after execution.
 * To Resync Data the failed data directly. 
 
-**Enhancements**  
+#### Enhancements 
 **Feeds Message Display**   
 Fix:     
 
@@ -142,14 +136,14 @@ With this release, this issue has been resolved as Ticket View has been upgraded
 
 ## Connector
 
-**New Integrations**
+#### New Integrations
 
 Given below are the integration areas for business process automation  
 
 **Sage 300 to Magento 2 B2C**  
 This feature syncs data from [Sage 300 to Magento 2 B2C](/integration/sage300-magento2/) and vice versa so that sync requirements between the applications are met. 
 
-(a) Here the following components will be synced successfully from Sage 300 to Magento 2 B2C with all details.  
+ Here the following components will be synced successfully from Sage 300 to Magento 2 B2C with all details.  
 
 * Invoice Add  
 * Delivery/Shipment Add  
@@ -157,7 +151,7 @@ This feature syncs data from [Sage 300 to Magento 2 B2C](/integration/sage300-ma
 * Inventory Update  
 
 
-(b) Here the following components will be synced successfully from Magento 2 B2C to Sage 300 with all details.  
+Here the following components will be synced successfully from Magento 2 B2C to Sage 300 with all details.  
 
 * Customer Add 
 * Customer Update  
@@ -167,64 +161,64 @@ This feature syncs data from [Sage 300 to Magento 2 B2C](/integration/sage300-ma
 
 This feature syncs data from [Sage 300 to Shopify B2C](/integration/shopify-sage300/) and vice versa so that sync requirements between the applications are met. 
 
-(a) Here the following components will be synced successfully from Shopify to Sage 300 with all details.
+Here the following components will be synced successfully from Shopify to Sage 300 with all details.
 
 * Customer Add
 * Customer Update
 * Sales Order
 
 
-(b) Here the following components will be synced successfully from Sage 300 to Shopify with all details.  
+Here the following components will be synced successfully from Sage 300 to Shopify with all details.  
 
 * Delivery/Shipment Add 
 * Inventory Control (IC) Product Add 
 * Inventory Update
 
-**Adapter**   
-These are the Adapters which has been enhanced in this release:
+#### Adapter  
+These are the Adapters details which has been enhanced in this release
 
 **Enhanced Lightspeed Adapter**     
- Enhanced version of [Lightspeed](/connectors/Lightspeed/) adapter presents you with the following features
+ Enhanced version of [Lightspeed](/connectors/Lightspeed/) adapter presents you the following features
 * Custom browsing Supported - Lightspeed adapter latest version supports custom browsing thereby enabling dependency download automatically.  
 * Lightspeed app validation in agent, provides dependency download.
 
 **Enhanced Zoho CRM Adapter**   
-Enhanced version of Zoho CRM is enabled with the following fix 
+Enhanced version of [Zoho CRM](/connectors/zohocrmv2/)Adapter is enabled with the fix given below
 
 Fix:
 * Shopify Credentials Base URL is getting replaced by Zoho CRM URL.      
-With this release, the updated [Zoho CRM](/connectors/zohocrmv2/) adapter version allows saving credentials, and these should not be replaced by other app's credentials during integration process.
+With this release, the updated Zoho CRM adapter version allows saving credentials, and these should not be replaced by other app's credentials during integration process.
 
 **Enhanced Magento 2 Adapter**  
-Enhanced adapter for the application [Magento 2](/connectors/magento2/)  presents you with the following feature
+Enhanced version of [Magento 2](/connectors/magento2/) Adapter presents you with the following feature
 * Single Token Authentication       
 o	Users can now validate Magento 2 enhanced adapters using Integration Access Token generated on the Magento2 Platform.   
 o	The single access token can be used in all API calls made on behalf of the integration, thereby reducing the API hits.   
 o	This provides the flexibility of providing access to only those modules that are required for the Integration Process.  
 
 **Enhanced Sage Adapter**             
-Enhanced [Sage](/connectors/sage300/) Adapter is now enabled with the following fixes which includes optimized codes.
+Enhanced version of [Sage](/connectors/sage300/) Adapter is now enabled with the following fixes which includes optimized codes.
 
 Fix:  
-* Order Syncing fetching 409 conflict error and not giving error info in the log bucket.  
-With this release, users will be able to view Log information which will be traceable to resolve the issue.
+* Order Syncing fetching 409 conflict error and was not showing error info in the log bucket.    
+With this release, users will be able to view Log information which will be traceable to resolve the issue.   
 
-Fix Given:  
-* For successful Data sync log is throwing incorrect error log information 
-With this release, users will be able to view Log with valid information as expected
+Fix:  
+* For successful Data sync log is throwing incorrect error log information  
+With this release, users will be able to view Log with valid information as expected.     
 
-Fix Given:  
-*  Deleted primary address details in Shopify is still visible as primary ship to address record in Sage 300.    
-With this release, Primary Ship to Address details delete issue has been resolved with the upgraded version.
+Fix:  
+*  Deleted primary address details in Shopify is still visible as primary ship to address record in Sage 300.      
+With this release, Primary Ship to Address details delete issue has been resolved with the upgraded version.  
 
 **(e)	Enhanced Priority Adapter**    
-Enhanced adapter for the application [Priority](/connectors/priority/) is now enabled with the given bug fix.  
+Enhanced [Priority](/connectors/priority/) Adapter is now enabled with the given bug fix.    
 
-Fix Given: 
-* Priority adapter was not able to generate Output packet after data gets posted in Priority  
+Fix: 
+* Priority adapter was not able to generate Output packet after data gets posted in the application.  
 With this release, the output packet is getting generated as expected after data posting.  
  
-## Release Component Versioning Details
+## Component Versioning Details
 
 |Area|Component|Version|
 |---|---|----|
@@ -239,4 +233,6 @@ With this release, the output packet is getting generated as expected after data
 |Portal|WebAPI|4.7.0|
 
 As always for any support, please [mail us](support@appseconnect.com).
+
+
 

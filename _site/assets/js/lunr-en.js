@@ -234,7 +234,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guides to create APIs",
-      excerpt: "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
+      excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 24
@@ -594,7 +594,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Configuring APPSeCONNECT for API Hosting",
-      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
+      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
       id: 64
@@ -2395,7 +2395,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Release Notes",
       excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
-      categories: ["AEC ReleaseNotes"],
+      categories: ["ReleaseNotes"],
       tags: ["developers"],
       id: 264
     });
@@ -2403,8 +2403,8 @@ var idx = lunr(function () {
   
     idx.add({
       title: "2020",
-      excerpt: "This section will give you detailed decsription of 2020 releases.\n\nPresently the enlisted section is  Q2 Version 4.7.0\n",
-      categories: ["AEC ReleaseNotes"],
+      excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0. Previous Release...",
+      categories: ["ReleaseNotes"],
       tags: ["developers"],
       id: 265
     });
@@ -2413,27 +2413,9 @@ var idx = lunr(function () {
     idx.add({
       title: "Q2 Release Version 4.7.0",
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
-      categories: ["AEC ReleaseNotes"],
+      categories: ["ReleaseNotes"],
       tags: ["developers"],
       id: 266
-    });
-    
-  
-    idx.add({
-      title: "Managing - Schema & Actions",
-      excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
-      categories: ["Processflow"],
-      tags: ["developers"],
-      id: 267
-    });
-    
-  
-    idx.add({
-      title: "Working with Capture Variables",
-      excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
-      categories: ["Processflow"],
-      tags: ["developers"],
-      id: 268
     });
     
   
@@ -2722,7 +2704,7 @@ var store = [
       {
         "title": "Quickstart guides to create APIs",
         "url": "/api-management/quickstart-guides-to-api-management/",
-        "excerpt": "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
+        "excerpt": "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3162,7 +3144,7 @@ var store = [
       {
         "title": "Configuring APPSeCONNECT for API Hosting",
         "url": "/api-management/configure-appseconnect-for-apis/",
-        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
+        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5361,7 +5343,7 @@ var store = [
       
       {
         "title": "Release Notes",
-        "url": "/aec%20releasenotes/overview-release/",
+        "url": "/releasenotes/overview-release/",
         "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
         "teaser":
           
@@ -5372,8 +5354,8 @@ var store = [
       
       {
         "title": "2020",
-        "url": "/aec%20releasenotes/yearly/",
-        "excerpt": "This section will give you detailed decsription of 2020 releases.\n\nPresently the enlisted section is  Q2 Version 4.7.0\n",
+        "url": "/releasenotes/releasedetails/",
+        "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0. Previous Release...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5383,30 +5365,8 @@ var store = [
       
       {
         "title": "Q2 Release Version 4.7.0",
-        "url": "/aec%20releasenotes/releasenote/",
+        "url": "/releasenotes/releasenote/",
         "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Managing - Schema & Actions",
-        "url": "/processflow/adding-schema-actions/",
-        "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Working with Capture Variables",
-        "url": "/processflow/working-with-variable/",
-        "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
