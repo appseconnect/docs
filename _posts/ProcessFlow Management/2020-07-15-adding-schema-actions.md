@@ -1,11 +1,11 @@
 ---
-title: "Adding and Managing - Schema & Actions"
+title: "Managing - Schema & Actions"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     processflow:     
-        title: "Adding and Managing - Schema & Actions"
+        title: "Managing - Schema & Actions"
         weight: 6
         icon: fa fa-file-word-o
         identifier: schemaactionprocessflow

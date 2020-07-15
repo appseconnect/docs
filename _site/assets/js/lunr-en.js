@@ -2411,11 +2411,29 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Q2 Version 4.7.0",
-      excerpt: "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
+      title: "Q2 Release Version 4.7.0",
+      excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["AEC ReleaseNotes"],
       tags: ["developers"],
       id: 266
+    });
+    
+  
+    idx.add({
+      title: "Managing - Schema & Actions",
+      excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 267
+    });
+    
+  
+    idx.add({
+      title: "Working with Capture Variables",
+      excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 268
     });
     
   
@@ -5364,9 +5382,31 @@ var store = [
     
       
       {
-        "title": "Q2 Version 4.7.0",
+        "title": "Q2 Release Version 4.7.0",
         "url": "/aec%20releasenotes/releasenote/",
-        "excerpt": "Product Release Version: 4.7.0 We are pleased to present APPSeCONNECT 4.7.0 Patch code and the release notes were published and...",
+        "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Managing - Schema & Actions",
+        "url": "/processflow/adding-schema-actions/",
+        "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Working with Capture Variables",
+        "url": "/processflow/working-with-variable/",
+        "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
