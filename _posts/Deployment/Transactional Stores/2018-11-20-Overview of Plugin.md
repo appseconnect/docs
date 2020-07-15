@@ -19,6 +19,14 @@ Currently, AEC Plugins are used in databases like OLE DB,
 SAP HANA and MYSQL which enables the database to communicate with
 APPSeCONNECT. 
 
+Listed are the following Plugins that are used in APPSeCONNECT.
+
+|Plugins|Details|
+|---|---|
+|[MySQL](/deployment/MYSQL-plugin-installation/)|This Document provides you the detailed knowhow on the installation process of MySQL Database ODBC Connector in your System.|
+|[HANA](/deployment/hana-plugin-installation/)|This section of the document provides you the detailed instructions on the process of installing the SAP HANA Database Plugin in your System and how to use plugin in the adapter.|
+|[OLE](/deployment/OLE-db-plugin-installation/)| This section of the document provides you with the detailed instructions for using OLEDB Plugin.|
+
 **Protip** AEC now provides prepackaged plugin with Agent. You can choose and Install the desired plugin.
 {: .notice--info}
 
