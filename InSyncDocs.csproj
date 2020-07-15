@@ -1281,6 +1281,7 @@
     <None Include="_posts\Getting-Started\2018-09-19-user-registration.md" />
     <None Include="_posts\Getting-Started\2018-09-18-terminology.md" />
     <None Include="_posts\Getting-Started\2018-09-16-getting-started.md" />
+    <None Include="_posts\Getting-Started\release-note.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-20-customer-add.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-15-sage300-magento2.md" />
     <None Include="_posts\Integration\SAGE300-Magento2\2020-05-22-sales-order-add.md" />
