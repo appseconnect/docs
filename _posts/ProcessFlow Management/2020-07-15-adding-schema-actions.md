@@ -11,7 +11,7 @@ menus:
         identifier: schemaactionprocessflow
 ---
 
-The user can view the schemasss and the action present in an app and can also add schema and add action for application node used in processflow. 
+The user can view the schemas and the action present in an app and can also add schema and add action for application node used in processflow. 
 This section enables the user to view, add the Schema, Attributes and the Actions of an application in the Process Flow and managing the same
 within a process flow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
@@ -19,7 +19,7 @@ be visible from the APP Section of the portal as well.
 ## Prerequisites
 - The User should have a valid APPSeCONNECT account.
 - APPSeCONNECT should be up and running
-- An application node  is needed for defining the Schemas and its Actions.
+- An application node  is needed for defining the Schemas and Actions.
 
 
 ## Listing of Schemas and Attributes
@@ -134,8 +134,8 @@ the attribute.
 
 1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).    
 You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
-2) Changes done to an existing Attribute (local attribute) will be reflected within that specific Process Flow only.
-3) Changes done to an existing Attribute (local attribute) will not affect other Process Flows using the same Schema and Attribute.
+2) Changes done to an existing Attribute will be reflected within that specific Process Flow only.
+3) Changes done to an existing Attribute will not affect other Process Flows using the same Schema and Attribute.
 4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.
 5) Primary set Attributes (local attributes)cannot be deleted.
 
@@ -144,7 +144,7 @@ On deleting an Attribute from the Manage Schema section, it will not be visible 
 
 (B) To `Delete Schema`, do the following steps:
 
-1) Go to Processflow [designer]() section and drag the app node for which you want to deleted schema.
+1) Go to Processflow [designer](/processflow/designer-processflow/) section and drag the app node for which you want to deleted schema.
 2) Now click on the app node, and under schema field click Manage Schema.
 3) You will be redirected to the `Manage Schema and Action` pop-up.
 4) In the `Manage Schema and Action` window, you will be able to delete any existing Schema by click on the Schema
@@ -152,4 +152,11 @@ context menu and clicking on Delete Schema Option.
 
 #### Deleting Attribute
 
+If you have saved the Process Flow (both for Organization and Process Flow Scope)
+you will be able to delete the Attribute(s) used in Mapping.
+
+**Note: For saved processflow for both organization and PF scope, 
+        Data Type of the Attribute(s) cannot be changed used in Mapping.
+        Reference API of an Attribute cannot be changed . 
+        Primary property of Attribute(s) can be changed/updated**
 
