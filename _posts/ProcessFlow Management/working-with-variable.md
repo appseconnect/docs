@@ -48,7 +48,7 @@ in the [designer section](/processflow/designer-processflow/).
 - **Expression (Non-Mandatory Field):** You can provide a either an Xpath or a function expression for it to store against the variable.
 - **Default Value (Non-Mandatory Field):** You can also store a default value against the variable such that if expression provided results invalid, the default value can be initiated during the execution process of the variable.
 - **Scope (Need to be sure):** The variable can be executed depending upon the scope defined. The Scope of the variable can be defined within the following type.
-    - **Process Flow:** This is the Global variable that can be used in any Process Flows with the organisation.
+    - **Process Flow:** This is the Global variable that can be used in the Process Flows under any nodes.
     - **Node:** This is the Local Variable and can be used only in the node where it is defined within that Process Flow.
 
 ![var2](\staticfiles\processflow\media\var2.png)
