@@ -13,7 +13,7 @@ menus:
 
 This section will give you detailed decsription of 2020 releases.
 
-Presently the enlisted section is  [Q2 Version 4.7.0](/aec%20releasenotes/releasenote/).
+Presently the enlisted section is  [Q2 Version 4.7.0](/releasenotes/releasenote/).
 
 Previous Release Details are given in the following list:
 
@@ -24,5 +24,5 @@ Previous Release Details are given in the following list:
 [Product Release Version: 4.2.0](https://www.appseconnect.com/release-notes/#420)           
 [Product Release Version: 4.1.0](https://www.appseconnect.com/release-notes/#410)       
 
-Very soon, the archived release notes will beavailable here.   
+Very soon, the archived release notes will be available here.   
 Till then, you can discover [release notes](https://www.appseconnect.com/release-notes/) here.

@@ -15,6 +15,6 @@ Discover whats going on in APPSeCONNECT.
 Look at our most recent features and updates from APPSeCONNECT.
 
 Here are the Release notes containing data about new features, enhancements, known issues, and bug fixes of each release.   
-We recommend that you consistently visit the release notes to find out about our [updates](/aec%20releasenotes/releasenote/).
+We recommend that you consistently visit the release notes to find out about our [updates](/releasenotes/releasenote/).
 
 You can discover [release notes](https://www.appseconnect.com/release-notes/) for all quarters. 
