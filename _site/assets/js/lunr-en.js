@@ -2404,7 +2404,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Release Notes",
       excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
-      categories: ["ReleaseNotes"],
+      categories: ["release-notes"],
       tags: ["developers"],
       id: 265
     });
@@ -2413,7 +2413,7 @@ var idx = lunr(function () {
     idx.add({
       title: "2020",
       excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0. Previous Release...",
-      categories: ["ReleaseNotes"],
+      categories: ["release-notes"],
       tags: ["developers"],
       id: 266
     });
@@ -2422,7 +2422,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Q2 Release Version 4.7.0",
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
-      categories: ["ReleaseNotes"],
+      categories: ["release-notes"],
       tags: ["developers"],
       id: 267
     });
@@ -5381,7 +5381,7 @@ var store = [
       
       {
         "title": "Release Notes",
-        "url": "/releasenotes/overview-release/",
+        "url": "/release-notes/overview/",
         "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
         "teaser":
           
@@ -5392,7 +5392,7 @@ var store = [
       
       {
         "title": "2020",
-        "url": "/releasenotes/releasedetails/",
+        "url": "/release-notes/2020/",
         "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0. Previous Release...",
         "teaser":
           
@@ -5403,7 +5403,7 @@ var store = [
       
       {
         "title": "Q2 Release Version 4.7.0",
-        "url": "/releasenotes/releasenote/",
+        "url": "/release-notes/Q2/",
         "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
         "teaser":
           
