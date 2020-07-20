@@ -337,24 +337,24 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/aec%20releasenotes/overview-release/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/aec%20releasenotes/overview-release/" onclick="selectTab('/aec%20releasenotes/overview-release/', event);" title="Go to ReleaseNotes">ReleaseNotes</a>
+    <li class="menu-item-" data-url="/releasenotes/overview-release/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/releasenotes/overview-release/" onclick="selectTab('/releasenotes/overview-release/', event);" title="Go to ReleaseNotes">ReleaseNotes</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/aec%20releasenotes/yearly/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/aec%20releasenotes/yearly/" onclick="selectTab('/aec%20releasenotes/yearly/', event);" title="Go to 2020">2020</a>
+    <li class="menu-item-" data-url="/releasenotes/releasedetails/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/releasenotes/releasedetails/" onclick="selectTab('/releasenotes/releasedetails/', event);" title="Go to 2020">2020</a>
         
         
         
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/aec%20releasenotes/releasenote/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/aec%20releasenotes/releasenote/" onclick="selectTab('/aec%20releasenotes/releasenote/', event);" title="Go to Q2 Release Version 4.7.0">Q2 Release Version 4.7.0</a>
+    <li class="menu-item-" data-url="/releasenotes/releasenote/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/releasenotes/releasenote/" onclick="selectTab('/releasenotes/releasenote/', event);" title="Go to Q2 Release Version 4.7.0">Q2 Release Version 4.7.0</a>
         
     </li>
     
@@ -1640,6 +1640,12 @@
 <ul class="nav__items">
     
     
+    <li class="menu-item-" data-url="/integration/sage-shopify/customer-update/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/sage-shopify/customer-update/" onclick="selectTab('/integration/sage-shopify/customer-update/', event);" title="Go to Customer Update">Customer Update</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/sage-shopify/ic-product-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/sage-shopify/ic-product-add/" onclick="selectTab('/integration/sage-shopify/ic-product-add/', event);" title="Go to I/C Product Add from SAGE 300 to Shopify">I/C Product Add from SAGE 300 to Shopify</a>
         
@@ -2277,6 +2283,12 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#creating-variable">Creating Variable</a></li>
+  <li><a href="#listing-of-variables">Listing of Variables</a></li>
+  <li><a href="#editing-variable">Editing Variable</a></li>
+  <li><a href="#deleting-variable">Deleting Variable</a></li>
+  <li><a href="#execution-flow-using-capture-variable">Execution Flow using Capture Variable</a></li>
+  <li><a href="#capture-variables-utility">Capture Variables Utility:</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2297,7 +2309,7 @@ Once defined, upon calling the variable, it will execute the expression associat
   <li>You need to provide the values for the mandatory fields in the GENERAL Tab of the Node Configuration Window before creating a Variable.</li>
 </ul>
 
-<h2 id="creating--saving-variable">Creating &amp; Saving Variable</h2>
+<h3 id="creating-variable">Creating Variable</h3>
 
 <p>Creating Variables in Processflow is easier and can be done directly by dragging the app node
 in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
@@ -2359,7 +2371,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p>Following the above process you can successfully Define &amp; Save a Capture Variable.</p>
 
-<h2 id="listing-of-variables">Listing of Variables</h2>
+<h3 id="listing-of-variables">Listing of Variables</h3>
 
 <p>Once you have defined and saved the Variable, you will be able to view the list of the variables created. Follow the steps to view the list of variables.</p>
 
@@ -2376,10 +2388,16 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
     <p><strong>Variable Name</strong> - You can view the name provided while defining the variable.</p>
   </li>
   <li>
-    <p><strong>Data Type</strong> - The datatype used while defining will be displayed</p>
+    <p><strong>Expressions</strong> - You can view the expression used on the varibale will be displayed.</p>
   </li>
   <li>
-    <p><strong>Default Value / Expressions</strong> - need clarity</p>
+    <p><strong>Data Type</strong> - You can view the datatype used while defining will be displayed.</p>
+  </li>
+  <li>
+    <p><strong>Scope</strong> - You can view the scope of the variable defined will be displayed.</p>
+  </li>
+  <li>
+    <p><strong>Actions</strong> - You can view and perform the following operations from actions: <code class="highlighter-rouge">Edit</code> &amp; <code class="highlighter-rouge">Delete</code>.</p>
   </li>
 </ul>
 
@@ -2387,7 +2405,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p>Following the above process you can successfully view the Variable list.</p>
 
-<h2 id="editing-variable">Editing Variable</h2>
+<h3 id="editing-variable">Editing Variable</h3>
 
 <p>Editing Variable is equally easy as creating and saving a variable. The process to edit a variable is given below:</p>
 
@@ -2397,7 +2415,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p><img src="\staticfiles\processflow\media\var5.png" alt="var5" /></p>
 
-<p>C. Click on the Ellipses icon (Three horizontal Dots) on the actions column beside the variable. You’ll get two options from the drop down.</p>
+<p>C. Click on the Ellipses icon (Three horizontal Dots) on the <strong>actions</strong> column beside the variable. You’ll get two options from the drop down.</p>
 <ul>
   <li>Edit: Enables you Edit the variable.</li>
   <li>Delete: Delete the created Variable.</li>
@@ -2407,7 +2425,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p><strong>Note:</strong> You can modify any properties associated with the variable.</p>
 
-<h2 id="deleting-variable">Deleting Variable</h2>
+<h3 id="deleting-variable">Deleting Variable</h3>
 
 <p>A. Click on the Ellipses button beside the Variable, in the variable listing page.</p>
 
@@ -2423,7 +2441,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p><em><strong>Note:</strong> You cannot delete a Variable that is currently in use for execution and will be provided with an error while doing so.</em></p>
 
-<h2 id="execution-flow-using-capture-variable">Execution Flow using Capture Variable</h2>
+<h3 id="execution-flow-using-capture-variable">Execution Flow using Capture Variable</h3>
 
 <p>1) <a href="/processflow/creating-processflow/">Design the Process Flow</a> and Open the <strong>Node Configuration Window</strong> for the application implementing <a href="/processflow/working-with-GET/">GET operation</a>. The node configuration window opens.</p>
 
@@ -2431,7 +2449,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p><img src="\staticfiles\processflow\media\var8.png" alt="var8" /></p>
 
-<p>3) Click on the <strong>Create</strong> Button in the Properties Window.</p>
+<p>3) Click on the <a href="/processflow/working-with-variable/#creating-variable"><strong>Create</strong></a> Button in the Properties Window.</p>
 
 <p>4) The Variable creation page opens. Enter the required details and click on the save button.</p>
 
@@ -2443,24 +2461,24 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
 <p>7) You can now successfully <a href="/processflow/deploying-and-executing-processfloww/">deploy and execute</a> the Process Flow.</p>
 
-<p>8) You can view the snapshot of the process flow.</p>
+<p>8) You can view the <a href="/processflow/snapshot-processflow/">snapshot</a> of the process flow.</p>
 
-<p><img src="" alt="var12" /></p>
+<p><img src="\staticfiles\processflow\media\var12.png" alt="var12" /></p>
 
-<p>9) Click on the <code class="highlighter-rouge">File Tab</code> of GET node to view all the files after the last of date.</p>
+<p>9) Click on the <a href="/processflow/snapshot-processflow/#1-scenario-get-node"><code class="highlighter-rouge">File Tab</code> of GET node</a> to view all the files with fetched with created date after the value provided in the variable.</p>
 
-<p><img src="" alt="var13" /></p>
+<p><img src="\staticfiles\processflow\media\var13.png" alt="var13" /></p>
 
 <p><strong>Note:</strong></p>
 
 <ul>
   <li>Generic Function for <code class="highlighter-rouge">Lastof</code> has been used for fetching the all data after the LastOf value provided. After an instance the of execution, the generic function will store the <code class="highlighter-rouge">created_date</code> value of the last data such that on the next execution, all the data after the <code class="highlighter-rouge">LastOf date</code> will be fetched.</li>
   <li>You need to provide <code class="highlighter-rouge">~ (tilt icon)</code> when providing Generic function in the <code class="highlighter-rouge">Expression</code> field.</li>
-  <li>Using of the <code class="highlighter-rouge">$</code> symbol to for denoting the variable usage is mandatory.</li>
+  <li>Using of the <code class="highlighter-rouge">$</code> symbol along with the Curly Braces <code class="highlighter-rouge">{}</code> is mandatory for denoting the variable usage is mandatory.</li>
   <li>Variables with datatype <code class="highlighter-rouge">ComplexObect</code> &amp; <code class="highlighter-rouge">ComplexObjectCollection</code> cannot be implemented on Action Filter.</li>
 </ul>
 
-<h2 id="capture-variables-utility">Capture Variables Utility:</h2>
+<h3 id="capture-variables-utility">Capture Variables Utility:</h3>
 
 <p>This part of the document will list few scenarios that will help you understand Capture Variables:</p>
 
@@ -2490,7 +2508,7 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
       <td><code class="highlighter-rouge">{//items//item/</code> <br /> <code class="highlighter-rouge">country_id}</code></td>
       <td>ProcessFlow or Node</td>
       <td><code class="highlighter-rouge">"NY"</code></td>
-      <td>Here, a variable is created <code class="highlighter-rouge">$countryval</code> that stores a static value of sting type. On the applying the variable on Action Filter of GET node, the variable will execute the expression provided and fetch only those data, that matched the value provided in the variable.</td>
+      <td>Here, a variable is created <code class="highlighter-rouge">${countryval}</code> that stores a static value of sting type. On the applying the variable on Action Filter of GET node, the variable will execute the expression provided and fetch only those data, that matched the value provided in the variable.</td>
     </tr>
     <tr>
       <td>Email</td>
@@ -4748,6 +4766,14 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4780,6 +4806,8 @@ in the <a href="/processflow/designer-processflow/">designer section</a>.</p>
                                     Protocol Implementation for Applications
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
