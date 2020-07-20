@@ -5365,7 +5365,7 @@ var store = [
       
       {
         "title": "Q2 Release Version 4.7.0",
-        "url": "/release-notes/Q2/",
+        "url": "/release-notes/2020-Q2/",
         "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
         "teaser":
           
