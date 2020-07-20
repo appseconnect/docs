@@ -22,7 +22,7 @@ APPSeCONNECT, there is a number of actions that you can perform while executing 
 
 |Action Name|Description|
 |---|--------|
-|[Email Action]|Email action is used to send email notification from inside the workflow such that an email with proper data could be send to the intended users whenever it reaches the action.|
+|Email Action|Email action is used to send email notification from inside the workflow such that an email with proper data could be send to the intended users whenever it reaches the action.|
 |[Support Ticket Action](/workflow/generating-notification-support-ticket/)| A support ticket could be raised to APPSeCONNECT support team to notify them on a problem that occurred directly from within the workflow. A support ticket will be taken care of by APPSeCONNECT support team.|
 |[Storage Action](/workflow/generating-storage-action/)|In certain scenario, you want to store or archive some data for later inspection, the storage action is used to store such data from the workflow for future inspection.|
 |[Webhook Action](/workflow/generating-notification-webhooks/)|Webhooks are special callback which your workflow can generate if a workflow encounters a webhook action. A webhook will require a callback url where it will post certain data which is being configured through workflow.|
