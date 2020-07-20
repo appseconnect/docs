@@ -17,6 +17,15 @@ updates business data to all the applications that needs to be affected. Workflo
 each and every functions and business process, take decisions, invoke notifications etc. In this article, we cover how to use workflow
 in efficient way to update business data from one application to another. 
 
+## Templates of Workflow
+
+* General Touchpoint - Dragging this, migrates the general touchpoint of a connection with all the three nodes GET, Process & POST.
+* Post Touchpoint - Dragging a POST touchpoint, provides the user with a selection of the connection template for which the will get a POST operated touching point having the nodes, `PROCESS & POST`.
+* Get Merge Touchpoint - Dragging a Get-Merge touchpoint, provides the user with the [Property configuration of Merger Node](/workflow/working-with-merger/) followed by the selection of the connection template for which the template will be having the `GET, MERGER, Process, POST` nodes.
+* Push Merge Touchpoint - Dragging a Push-Merge touchpoint, provides the user with the [Property configuration of Merger Node](/workflow/working-with-merger/) followed by the selection of the connection template for which the template will be having the `GET, Process, Merger, POST` nodes.
+* Get Splitted Touchpoint - Dragging a Get-splitted touchpoint, provides the user with the [Property configuration of Splitter Node](/workflow/working-with-splitter/) followed by the selection of the connection template for which the template will be having the `GET, Splitter, Process, POST` nodes.
+* Push Splitted Touchpoint - Dragging a Push-Splitted touchpoint, provides the user with the [Property configuration of Splitter Node](/workflow/working-with-splitter/) followed by the selection of the connection template for which the template will be having the `GET, Process, Splitter, POST` nodes.
+
 ## Workflow major capabilities
 
 Workflow in APPSeCONNECT is having a number of capabilities. Let us check what it can do : 
