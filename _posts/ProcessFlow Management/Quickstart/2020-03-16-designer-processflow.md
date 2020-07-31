@@ -63,7 +63,9 @@ following tabs and menus in the left panel of the page.
 2)  Start:  This node initiates the start of the execution of the Process Flow.
 3)	End: This node depicts the completion of the Process Flow.  
 4)	[Mapper](/processflow/working-with-mapper/): This node allows you to map the applications used in the Process flow.       
-5)	[Apps](/processflow/processflow-app/): You can view all the Pre-packaged application selected & created. 
+5)	[Apps](/processflow/processflow-app/): You can view two tabs on expanding **Apps**: `Pre-prackaged apps` & `My Apps`. 
+    **- Pre-packaged Apps:** You will be able to view all the pre-packaged apps available for your organisation as per the plan.
+    **- My Apps:** You can view all the custom and the technology apps created in your organisation.
 On dragging the applications to the designer panel, the node configuration window would appear.      
 6)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector.   
 7)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.  

@@ -5,7 +5,7 @@ tag: developers
 category: "Integration"
 menus: 
     navmagentointegration:
-        title: "Contact Person Add/ Update Mage2 multistore to NAV"
+        title: "Contact Person Add NAV to Magento 2(Multiconnection)"
         icon: fa fa-wpexplorer
         identifier: configproductupdate
 ---
@@ -22,7 +22,7 @@ Create and sync the customer for which the contact person needs to be added.
 ![contactperson-nav-mage2_workflow](/staticfiles/integration/media/contactperson-nav-mage2_workflow.png)
 
 In this integration scenario, you can see multiple connections have been configured to make the sync process. Here Contact person are added in NAV (multi-webstore) and is synced with MS Dynamics NAV per connection wise.
-Click here (link to customer add Magento-NAV) to know more about the sync process of adding customers to Ms Dynamics NAV.
+[Click here](/integration/customeradd-mage2tonav/) to know more about the sync process of adding customers to Ms Dynamics NAV.
 
 Here, in this scenario, a contact person has been added for a customer in MS Dynamics Nav and will be synced to Mage 2 through Workflow.
 

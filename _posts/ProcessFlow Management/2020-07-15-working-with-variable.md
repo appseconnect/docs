@@ -29,41 +29,48 @@ Once defined, upon calling the variable, it will execute the expression associat
 Creating Variables in Processflow is easier and can be done directly by dragging the app node
 in the [designer section](/processflow/designer-processflow/).
 
-1. Select an application node and drag the node to the designer panel where you want to define the Capture Variable.
+1) Select an application node and drag the node to the designer panel where you want to define the Capture Variable.
 
-2. The node configuration window appears. You can view two tabs in the node configuration window.
+2) The node configuration window appears. You can view two tabs in the node configuration window.
 * General  
 * Properties  
 
-3. Enter the required details in the General Section (link will be given) of the node configuration window.
+3) Enter the required details in the General Section (link will be given) of the node configuration window.
 
-4. Now Click on Properties Section and the screen for variable list appears. Click on the `CREATE` button.
+4) Now Click on Properties Section and the screen for variable list appears. Click on the `CREATE` button.
 
 ![var1](\staticfiles\processflow\media\var1.png)
 
-5. You need to provide the following details in the **Properties Tab**:
+5) You need to provide the following details in the **Properties Tab**:
 
 - **Variable Name (Mandatory Field):** This is field where you need to provide the name of the variable.
 - **Data Type (Mandatory Field):** Here, you need to select the type of variable that you require. You can select the data type from the drop down. You will be getting the following options in the drop down: `String`,`Bool`,`DateTime`,`Number`,`ComplexObject`,`ComplexObject`,`Double`.
 - **Expression (Non-Mandatory Field):** You can provide a either an Xpath or a function expression for it to store against the variable.
 - **Default Value (Non-Mandatory Field):** You can also store a default value against the variable such that if expression provided results invalid, the default value can be initiated during the execution process of the variable.
-- **Scope (Need to be sure):** The variable can be executed depending upon the scope defined. The Scope of the variable can be defined within the following type.
+- **Scope:** The variable can be executed depending upon the scope defined. The Scope of the variable can be defined within the following type.
     - **Process Flow:** This is the Global variable that can be used in the Process Flows under any nodes.
     - **Node:** This is the Local Variable and can be used only in the node where it is defined within that Process Flow.
 
 ![var2](\staticfiles\processflow\media\var2.png)
 
-6. You will also be able to view the following toggle button in the `Create Variable` page.
+6) You will also be able to view the following toggle button in the `Create Variable` page.
 - **Is Persistant:** On Enabling this toggle button, the value after the execution will be remembered across subsequent executions.
 - **Is Encrypted:** Enabling this toggle will encrypt the output of variable in the database.
 
-7. Once all the necessary details are provided. Click on the **SAVE** or **SAVE & CLOSE** button. 
-
-**Note: The field for Default Value remains disabled if the datatype is selected as  `ComplexObject` or `ComplexObjectCollection`.**
+7) Once all the necessary details are provided. Click on the **SAVE** or **SAVE & CLOSE** button. 
 
 ![var3](\staticfiles\processflow\media\var3.png)
 
-8. On clicking the `View List` button, you can view all the created variable for the node in a list view.
+8) On clicking the `View List` button, you can view all the created variable for the node in a list view.
+
+**Note:** 
+
+**- Variables with datatype `ComplexObect` & `ComplexObjectCollection` cannot be implemented on Action Filter.**
+**- The field `Default Value` remains disabled if the datatype is selected as  `ComplexObject` or `ComplexObjectCollection`.**
+**- When providing the default value for the data type **DateTime**, the value needs to be provided in ISO format.**
+**- The default value for **DateTime** datatype should be in UTC time.**
+**- By default, the toggle buttons will be set to `NO`.**
+**- Variable Name should not have any blank spaces in between. You will restricted from saving the variable in such cases.
 
 Following the above process you can successfully Define & Save a Capture Variable.
 
@@ -91,6 +98,8 @@ C. You will be able to view these following details in the Variable List.
 
 D. On hovering over the name, you can view the scope of the variables defined.
 
+E. Clicking on the filter icon, you can search a variable from the variable list by providing its name.
+
 Following the above process you can successfully view the Variable list.
 
 ### Editing Variable
@@ -109,7 +118,7 @@ C. Click on the Ellipses icon (Three horizontal Dots) on the **actions** column 
 
 D. Click on the EDIT button. You can view the `Create Variable` page. Modify the changes that you are required to and click on the SAVE button.
 
-**Note:** You can modify any properties associated with the variable.
+**Note:** You cannot modify the fields **datatype** & **Is Encrypted** toggle button when editing.
 
 ### Deleting Variable
 
@@ -119,11 +128,11 @@ B. Click on the Delete button available on the drop down window.
 
 ![var6](\staticfiles\processflow\media\var6.png)
 
-C. You'll be getting a confirmation message for the deletion process
+C. You'll be getting a confirmation message for the deletion process.
 
 ![var7](\staticfiles\processflow\media\var7.png)
 
-C. Your variable gets deleted from the list.
+D. Your variable gets deleted from the list.
 
 _**Note:** You cannot delete a Variable that is currently in use for execution and will be provided with an error while doing so._
 
@@ -139,6 +148,8 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 4) The Variable creation page opens. Enter the required details and click on the save button.
 
+![var9](\staticfiles\processflow\media\var3.png)
+
 5) Navigate to the General tab and click on the **Configure Action Filter** button. Expand the Action filer node and click on the `created_at`. 
 
 6) Enter the Variable name in the `Value` field and click on the save button.
@@ -151,16 +162,21 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 ![var12](\staticfiles\processflow\media\var12.png)
 
-9) Click on the [`File Tab` of GET node](/processflow/snapshot-processflow/#1-scenario-get-node) to view all the files with fetched with created date after the value provided in the variable.
+9) Click on the [`File Tab` of GET node](/processflow/snapshot-processflow/#1-scenario-get-node) to view all the files fetched after the date that is provided in the variable.
 
 ![var13](\staticfiles\processflow\media\var13.png)
+
+10) You can also view the Activity Logs of GET Node in the snapshot for viewing the variable implementation logs.
+
+![var14](\staticfiles\processflow\media\var14.png)
 
 **Note:**
 
 - Generic Function for `Lastof` has been used for fetching the all data after the LastOf value provided. After an instance the of execution, the generic function will store the `created_date` value of the last data such that on the next execution, all the data after the `LastOf date` will be fetched.
-- You need to provide `~ (tilt icon)` when providing Generic function in the `Expression` field.
-- Using of the `$` symbol along with the Curly Braces `{}` is mandatory for denoting the variable usage is mandatory.
+- You need to provide `~ (tilt icon)` when providing Generic function in the `Expression` field both at front and back.
+- Using of the `$` symbol along with the Curly Braces `{}` is mandatory for identifying the variable usage.
 - Variables with datatype `ComplexObect` & `ComplexObjectCollection` cannot be implemented on Action Filter.
+- You will be provided with a Error Message in the **Activity Logs**, if the provided variable is syntactically wrong or has failed to execute.
 
 ### Capture Variables Utility:
 
