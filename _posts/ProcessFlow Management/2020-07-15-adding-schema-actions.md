@@ -1,18 +1,18 @@
 ---
-title: "Managing - Schema & Actions"
+title: "Managing - Schema & Attributes"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     processflow:     
-        title: "Managing - Schema & Actions"
+        title: "Managing - Schema & Attribute"
         weight: 6
         icon: fa fa-file-word-o
         identifier: schemaactionprocessflow
 ---
 
-The user can view the schemas and the action present in an app and can also add schema and add action for application node used in processflow. 
-This section enables the user to view, add the Schema, Attributes and the Actions of an application in the Process Flow and managing the same
+The user can view the schemas  present in an app and can also add schema and import schemas and attributes for application node used in processflow. 
+This section enables the user to view, add the Schema, Attributes of an application in the Process Flow and managing the same
 within a process flow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
 
