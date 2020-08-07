@@ -2412,10 +2412,19 @@ var idx = lunr(function () {
   
     idx.add({
       title: "2020",
-      excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
+      excerpt: "This section will give you detailed description of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 266
+    });
+    
+  
+    idx.add({
+      title: "2020-Q2 Version 1.0 Hotfix Release Note",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 267
     });
     
   
@@ -2424,16 +2433,16 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 267
+      id: 268
     });
     
   
     idx.add({
-      title: "Managing - Schema & Actions",
-      excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
+      title: "Managing - Schema & Attributes",
+      excerpt: "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 268
+      id: 269
     });
     
   
@@ -2442,7 +2451,43 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 269
+      id: 270
+    });
+    
+  
+    idx.add({
+      title: "Delay Node",
+      excerpt: "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 271
+    });
+    
+  
+    idx.add({
+      title: "Technology App creation Within Process Flow",
+      excerpt: "Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 272
+    });
+    
+  
+    idx.add({
+      title: "Link Order Sequencing",
+      excerpt: "Link Ordering of Nodes for Sequential Execution Process Flow being the advanced sync flow feature of APPSeCONNECT, allows you to...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 273
+    });
+    
+  
+    idx.add({
+      title: "Managing - Action, Action Filters & Error Filters",
+      excerpt: "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 274
     });
     
   
@@ -5393,7 +5438,18 @@ var store = [
       {
         "title": "2020",
         "url": "/release-notes/2020/",
-        "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
+        "excerpt": "This section will give you detailed description of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "2020-Q2 Version 1.0 Hotfix Release Note",
+        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5413,9 +5469,9 @@ var store = [
     
       
       {
-        "title": "Managing - Schema & Actions",
+        "title": "Managing - Schema & Attributes",
         "url": "/processflow/adding-schema-actions/",
-        "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
+        "excerpt": "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5427,6 +5483,50 @@ var store = [
         "title": "Working with Capture Variables",
         "url": "/processflow/working-with-variable/",
         "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Delay Node",
+        "url": "/processflow/working-with-processflow-delay/",
+        "excerpt": "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Technology App creation Within Process Flow",
+        "url": "/processflow/technology-app-creation-using-processflow/",
+        "excerpt": "Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Link Order Sequencing",
+        "url": "/processflow/link-order-sequencing/",
+        "excerpt": "Link Ordering of Nodes for Sequential Execution Process Flow being the advanced sync flow feature of APPSeCONNECT, allows you to...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Managing - Action, Action Filters & Error Filters",
+        "url": "/processflow/manage-actions-actionfilters-errorfilters/",
+        "excerpt": "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
