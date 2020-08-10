@@ -58,19 +58,13 @@ Thus listing view gives a clear synopisis to the user regarding the Schema acces
 
 3) The field Description is gven below for the Node Configuration section:  
 
-    * Node Description: This denotes the description of the node.  
-
-    * Node Type: This denotes the type of action that the node needs to perform GET or POST.
-
-    * App Version: This denotes the version of the Application. You need to select the version of the application you need for the integration.
-
-    * Protocol: The protocols would be listed for the application that is selected.
-
-    * Schema: The schemas for the selected application and protocol would be listed in the drop-down. If no Schema is present you have to create a Schema from `Manage Schema` option present under the Schema field.
-
-    * Action: The action based on the selected schema would be available. If no Action is present you have to create Action from `Manage Action` option present under the Schema field.
-
-    * Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.    
+* Node Description: This denotes the description of the node.  
+* Node Type: This denotes the type of action that the node needs to perform GET or POST.
+* App Version: This denotes the version of the Application. You need to select the version of the application you need for the integration.
+* Protocol: The protocols would be listed for the application that is selected.
+* Schema: The schemas for the selected application and protocol would be listed in the drop-down. If no Schema is present you have to create a Schema from `Manage Schema` option present under the Schema field.
+* Action: The action based on the selected schema would be available. If no Action is present you have to create Action from `Manage Action` option present under the Schema field.
+* Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.    
 
 4) In the node configuration window, go to the Schema field. If the list of Schema is available select from 
 the list of schema. And if `No schema` is available for the given application node, click `Manage Schema` option.  
@@ -83,15 +77,12 @@ the list of schema. And if `No schema` is available for the given application no
 
 7) Enter the details of adding Schema and Click `Save` button.
 
-    * Schema Name: This is a mandatory field and it needs to be provided with the schema name    
+* Schema Name: This is a mandatory field and it needs to be provided with the schema name    
+* Schema Description: The description for the schema is needed to be given here  
+* Schema Namespace: Differentiates between two similar schemas   
+* Schema Namespace URL: Differentiates between two similar schemas using URL.
 
-    * Schema Description: The description for the schema is needed to be given here  
-
-    * Schema Namespace: Differentiates between two similar schemas   
-
-    * Schema Namespace URL: Differentiates between two similar schemas using URL.
-
-    ![Pf Addschema2](../../staticfiles/processflow/media/pf-addschema2.png)
+![Pf Addschema2](../../staticfiles/processflow/media/pf-addschema2.png)
 
 8) The newly created Schema is added and gets listed in the left side pane.  
 
@@ -116,15 +107,15 @@ Process Flow allows you to import schemas that helps to create schemas and attri
 
 4) You will be able to view the `Three Radio buttons` that specifies the type of file you need to upload for importing.
 
-    - Selecting **XML** - On selecting the import type as XML, you will be able to view the following fields.
+- Selecting **XML** - On selecting the import type as XML, you will be able to view the following fields.
     
         - Choose File: You will be able to select the XML files from your local system for importing the schemas.
         - Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.
         - Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
 
     ![pf_importschema2](\staticfiles\processflow\media\pf_importschema2.PNG)
-
-    - Selecting **Json** - On selecting the import type as Json, you will be able to view the following fields.
+    
+- Selecting **Json** - On selecting the import type as Json, you will be able to view the following fields.
 
         - Choose File: You will be able to select the Json files from your local system for importing the schemas.
         - Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.

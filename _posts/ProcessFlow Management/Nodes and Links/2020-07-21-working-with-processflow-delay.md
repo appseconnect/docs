@@ -31,7 +31,7 @@ Dragging the Delay node in the Designer panel, you can view the following fields
         - You need to provide a static value, that will define the duration of the delay time.
         - Click on the SAVE button after providing the value.
 
-![delay2](\staticfiles\processflow\media\delay2.PNG)
+    ![delay2](\staticfiles\processflow\media\delay2.PNG)
 
     - Delay on **Dynamic Time:**
         - On selecting the checkbox for `Dynamic Time`, you will be provided with a field `Define your function`.
