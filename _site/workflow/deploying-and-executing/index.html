@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2371,7 +2377,7 @@ is given below</p>
 
 <ol>
   <li>
-    <p>After creating and saving the workflow, click <code class="highlighter-rouge">Reset Generate</code> Button followed by <code class="highlighter-rouge">Reset Publish</code>button.
+    <p>After creating and saving the workflow, click <code class="language-plaintext highlighter-rouge">Reset Generate</code> Button followed by <code class="language-plaintext highlighter-rouge">Reset Publish</code>button.
 <img src="/staticfiles/workflow-management/media/publish-workflow.png" alt="publish-workflow" /></p>
   </li>
   <li>
@@ -2381,19 +2387,19 @@ is given below</p>
 
 <p>a. Preview - This button previews the XSLT for the touchpoint used in the workflow.<br />
 b. Reset Publish - This button publishes the configuration of the touchpoint that is used in the workflow.<br />
-c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the <code class="highlighter-rouge">Reset Publish</code> is done.<br />
+c. Reset Generate - This button generates the configuration for the touchpoint. After generating the configuration, the <code class="language-plaintext highlighter-rouge">Reset Publish</code> is done.<br />
 d. Resync Bucket - APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. The portal view for the Resync Bucket is given below.<br />
 <img src="/staticfiles/workflow-management/media/resync_button.png" alt="resync_button" /></p>
 
 <ul>
   <li>You will get the view of all data synced - Success, Failed, Unprocessed.</li>
-  <li>Now to resync the failed data, select one data or more and click on <code class="highlighter-rouge">Resync</code> button.</li>
+  <li>Now to resync the failed data, select one data or more and click on <code class="language-plaintext highlighter-rouge">Resync</code> button.</li>
   <li>You can view the resync execution status as message/progress bar below the pop up window.</li>
 </ul>
 
 <ol>
-  <li>On refreshing, the Publish button appears. The Publish button <code class="highlighter-rouge">publishes every configuration that  the 
-user made in the APPSeCONNECT cloud</code> and is <code class="highlighter-rouge">compiled to a single file stored on the server</code> which is 
+  <li>On refreshing, the Publish button appears. The Publish button <code class="language-plaintext highlighter-rouge">publishes every configuration that  the 
+user made in the APPSeCONNECT cloud</code> and is <code class="language-plaintext highlighter-rouge">compiled to a single file stored on the server</code> which is 
 accessible from the APPSeCONNECT Agent.
 <img src="/staticfiles/workflow-management/media/publish-workflow2.png" alt="publish-workflow2" /></li>
 </ol>
@@ -4674,8 +4680,18 @@ ported in edit mode.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2326,9 +2332,9 @@ supports the request data without root element.</p>
 <p>Omit Root: This attribute needs to be added to the transformation section when you need to remove any root tag 
 from the transform packet as that root variable is not accepted by the destination application.</p>
 
-<p><code class="highlighter-rouge">Attribute name: OmitRoot</code>
-<code class="highlighter-rouge">Type: string</code><br />
-<code class="highlighter-rouge">Mapping: True</code></p>
+<p><code class="language-plaintext highlighter-rouge">Attribute name: OmitRoot</code>
+<code class="language-plaintext highlighter-rouge">Type: string</code><br />
+<code class="language-plaintext highlighter-rouge">Mapping: True</code></p>
 
 <p><strong>NOTE: After the sync process, the output packet is checked and we find that the root tag has been removed.</strong></p>
 
@@ -2338,9 +2344,9 @@ from the transform packet as that root variable is not accepted by the destinati
 This root variable fetch the date and time of the latest data record created in the Source app and store it so that whenever 
 the sync is executed after the first sync, it does not fetch the old records everytime. This ensures quick sync process.</p>
 
-<p><code class="highlighter-rouge">Root variable name: maxDate</code>  <br />
-<code class="highlighter-rouge">Type: String</code>  <br />
-<code class="highlighter-rouge">Mapping: [sourcelib:WriteMaxDate(..,'{parent tag for each individual record}','{tag which as the value of the date &amp; time when the record got created /updated}','1')]</code></p>
+<p><code class="language-plaintext highlighter-rouge">Root variable name: maxDate</code>  <br />
+<code class="language-plaintext highlighter-rouge">Type: String</code>  <br />
+<code class="language-plaintext highlighter-rouge">Mapping: [sourcelib:WriteMaxDate(..,'{parent tag for each individual record}','{tag which as the value of the date &amp; time when the record got created /updated}','1')]</code></p>
 
 <p>Example: [sourcelib:WriteMaxDate(..,’Customer’,’createTime’,’1’)]</p>
 
@@ -4582,8 +4588,18 @@ the sync is executed after the first sync, it does not fetch the old records eve
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

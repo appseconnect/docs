@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2358,12 +2364,12 @@ from  the workflow workarea itself for REST based application.</p>
 
 <p><img src="/staticfiles/connectors/media/technology-connector/rest-getnode-workflow.png" alt="rest-getnode-workflow" /></p>
 
-<p>3 Here you have to define action filters for the REST based connection by clicking on the <code class="highlighter-rouge">GET</code> node of the workflow. 
-  View the right side panel and click <code class="highlighter-rouge">Filter</code> button. The following screen appears.</p>
+<p>3 Here you have to define action filters for the REST based connection by clicking on the <code class="language-plaintext highlighter-rouge">GET</code> node of the workflow. 
+  View the right side panel and click <code class="language-plaintext highlighter-rouge">Filter</code> button. The following screen appears.</p>
 
 <p><img src="/staticfiles/connectors/media/technology-connector/rest_get_actionfilter.png" alt="rest_get_actionfilter" /></p>
 
-<p>Here Lightspeed app has been taken and it supports OAuth 2.0 for Rest Protocol. hence you need to define both <code class="highlighter-rouge">Header</code> and <code class="highlighter-rouge">Parameter</code> here</p>
+<p>Here Lightspeed app has been taken and it supports OAuth 2.0 for Rest Protocol. hence you need to define both <code class="language-plaintext highlighter-rouge">Header</code> and <code class="language-plaintext highlighter-rouge">Parameter</code> here</p>
 
 <p><strong>NOTE: Defining Header and Parameter Varies from application to application. Some app might need both, some might just need Header/parameter</strong></p>
 
@@ -2399,10 +2405,10 @@ API development &amp; testing platform. This provides the exact identification o
 <ul>
   <li>Endpoint - Each endpoint is the location from which APIs can access the resources from the respective module of the application.This is a mandatory field, enter the endpoint</li>
   <li>Description - This field enables you to decsribe the endpoints. This is a mandatory field, enter the description</li>
-  <li>HTTP Method - The HTTP verbs comprise a major portion of our <code class="highlighter-rouge">uniform interface</code> constraint and provide us the action counterpart to the noun-based resource. Here you need to select <code class="highlighter-rouge">GET</code> from the drop down list 
+  <li>HTTP Method - The HTTP verbs comprise a major portion of our <code class="language-plaintext highlighter-rouge">uniform interface</code> constraint and provide us the action counterpart to the noun-based resource. Here you need to select <code class="language-plaintext highlighter-rouge">GET</code> from the drop down list 
 for executing the GET Operation.</li>
   <li>Content Type - The Content-Type entity header is used to indicate the media type of the resource. In responses, a Content-Type header tells the client what the 
-content type of the returned content actually isSelect from the drop down list. This is of  two types <code class="highlighter-rouge">application/xml</code> and <code class="highlighter-rouge">application/json</code></li>
+content type of the returned content actually isSelect from the drop down list. This is of  two types <code class="language-plaintext highlighter-rouge">application/xml</code> and <code class="language-plaintext highlighter-rouge">application/json</code></li>
   <li>Header - Use the headers to provide information about the entity or other resource that you are requesting. Each app has its own REST API supports its own set of  HTTP headers.
 Header has two section, insert the header type and header values here. Add button enables to add more header fields, if required.</li>
   <li>Parameter - The rest parameter syntax allows us to represent an indefinite number of arguments as an array. 
@@ -2412,14 +2418,14 @@ Parameter has two section, insert the parameter type and parameter values here. 
   <li>Body - Not Applicable here.</li>
 </ul>
 
-<p>Now you have successfully defined the action filter for <code class="highlighter-rouge">GET Operation</code> supporting REST protocol.</p>
+<p>Now you have successfully defined the action filter for <code class="language-plaintext highlighter-rouge">GET Operation</code> supporting REST protocol.</p>
 
-<p>Here in the example, the relationship between key and value is <code class="highlighter-rouge">&gt;</code>, the 
-value for key is <code class="highlighter-rouge">createTime&gt;~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~</code></p>
+<p>Here in the example, the relationship between key and value is <code class="language-plaintext highlighter-rouge">&gt;</code>, the 
+value for key is <code class="language-plaintext highlighter-rouge">createTime&gt;~{ReadDate('yyyy-MM-ddTHH:mm:ssK','0')}~</code></p>
 
 <p><img src="/staticfiles/connectors/media/technology-connector/rest-resync-filter-parameters.png" alt="rest-resync-filter-parameters" /></p>
 
-<p><strong>Note: For any XML &amp; JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:<code class="highlighter-rouge">customers/$.xml</code></strong></p>
+<p><strong>Note: For any XML &amp; JSON extension in the endpoint name, use $ before the extension while inserting the key, e.g:<code class="language-plaintext highlighter-rouge">customers/$.xml</code></strong></p>
 
 <p><strong>Note: (A) This scenario has been explained taking the application Lightspeed.
         (B) The time span a generic format for APPSeCONNECT, and has been detailed above in this document.</strong></p>
@@ -2433,15 +2439,15 @@ value for key is <code class="highlighter-rouge">createTime&gt;~{ReadDate('yyyy-
   <li>The following screen appears
 <img src="/staticfiles/connectors/media/technology-connector/rest_get_errorfilter.png" alt="rest_get_errorfilter" /></li>
   <li>Select the HTTP method as - GET &amp; Content Type - application/xml</li>
-  <li>Now Go to the <code class="highlighter-rouge">Resource Path</code> option under Rest Schema to define the Error Filter as shown in the screen given below</li>
-  <li>Enter the Key - This is the combination of the <code class="highlighter-rouge">endpoint name</code> and <code class="highlighter-rouge">$</code> which is the Record ID.</li>
+  <li>Now Go to the <code class="language-plaintext highlighter-rouge">Resource Path</code> option under Rest Schema to define the Error Filter as shown in the screen given below</li>
+  <li>Enter the Key - This is the combination of the <code class="language-plaintext highlighter-rouge">endpoint name</code> and <code class="language-plaintext highlighter-rouge">$</code> which is the Record ID.</li>
   <li>Value field remains empty.</li>
   <li>Click Save once done.</li>
 </ol>
 
-<p>Under the parameter section, the value for <code class="highlighter-rouge">key</code> is available in respective application of API doccumentation. 
-If the relationship between key and value is not <code class="highlighter-rouge">=</code>, then the <code class="highlighter-rouge">value</code> must be declared in the <code class="highlighter-rouge">key</code>
-section itself and the <code class="highlighter-rouge">value</code> must be kept blank.</p>
+<p>Under the parameter section, the value for <code class="language-plaintext highlighter-rouge">key</code> is available in respective application of API doccumentation. 
+If the relationship between key and value is not <code class="language-plaintext highlighter-rouge">=</code>, then the <code class="language-plaintext highlighter-rouge">value</code> must be declared in the <code class="language-plaintext highlighter-rouge">key</code>
+section itself and the <code class="language-plaintext highlighter-rouge">value</code> must be kept blank.</p>
 
 <h3 id="for-post-operation">For POST Operation</h3>
 
@@ -2456,12 +2462,12 @@ from  the workflow workarea itself for REST based application.</li>
 <p><img src="/staticfiles/connectors/media/technology-connector/rest_post_actionfilter.png" alt="rest_post_actionfilter" /></p>
 
 <p>3 Here you have to define action filters for the REST based connection by clicking on the node (POST) of the workflow. 
-  View the right side panel and click <code class="highlighter-rouge">Action</code> button. The following screen appears.</p>
+  View the right side panel and click <code class="language-plaintext highlighter-rouge">Action</code> button. The following screen appears.</p>
 
 <p><img src="/staticfiles/connectors/media/technology-connector/rest_post_actionfilter2.png" alt="rest_post_actionfilter2" /></p>
 
 <p>Enter all the required field like - Endpoint, Description, HTTP Method, Content type and Header value for the Post Operation.
-The HTTP Method willbe <code class="highlighter-rouge">POST</code> here.</p>
+The HTTP Method willbe <code class="language-plaintext highlighter-rouge">POST</code> here.</p>
 
 <p>The above steps complete the process of defining filters for integration in REST.</p>
 
@@ -4703,8 +4709,18 @@ The HTTP Method willbe <code class="highlighter-rouge">POST</code> here.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

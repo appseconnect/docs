@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2416,9 +2422,9 @@ User can also get an option for creating a Custom application or technology app.
 <img src="/staticfiles/root/media/ChooseApp_Dialogbox1.png" alt="ChooseApp_Dialogbox1" /></li>
   <li>The list of app you choose gets added and listed in the app section of the organization as shown below:
 <img src="/staticfiles/root/media/AppView.png" alt="AppView" /></li>
-  <li>Each <code class="highlighter-rouge">OP supported app</code> has four different functionality attached to it - <strong>Schema, Adapters, Functions &amp; Delete</strong>.
+  <li>Each <code class="language-plaintext highlighter-rouge">OP supported app</code> has four different functionality attached to it - <strong>Schema, Adapters, Functions &amp; Delete</strong>.
 <img src="/staticfiles/root/media/AppComponents.png" alt="AppComponents" /></li>
-  <li>For <a href="/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration">Cloud Supported Applications</a> the <code class="highlighter-rouge">Credential button</code> appears along with the other functionality that are attached.
+  <li>For <a href="/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration">Cloud Supported Applications</a> the <code class="language-plaintext highlighter-rouge">Credential button</code> appears along with the other functionality that are attached.
 <img src="/staticfiles/root/media/Cloud-AppComponents.png" alt="Cloud-AppComponents" /></li>
 </ol>
 
@@ -2428,7 +2434,7 @@ User can also get an option for creating a Custom application or technology app.
 
 <h2 id="create-application">Create Application</h2>
 
-<p>APPSeCONNECT provides an option to Create <code class="highlighter-rouge">Custom application</code> and <code class="highlighter-rouge">Technology application</code> (as per requirements) for the users.
+<p>APPSeCONNECT provides an option to Create <code class="language-plaintext highlighter-rouge">Custom application</code> and <code class="language-plaintext highlighter-rouge">Technology application</code> (as per requirements) for the users.
 Any App once added is assigned to a particular category.</p>
 
 <p>Both the process of application creation is given below.</p>
@@ -2469,7 +2475,7 @@ The version screen will allow specifying the version number,version description,
 <img src="/staticfiles/root/media/CustomApp-AddNamespace.png" alt="CustomApp-AddNamespace" /><br />
 In the Add Namespace portion, you can add new namespace by filling Prefix and URL field.
 The namespaces added to the template file will be applied to root node only during XSLT generation.<br />
-Click Continue button, it will direct to the Adapter page.Here you can <code class="highlighter-rouge">Upload Adapter or Select Adapter</code>.<br />
+Click Continue button, it will direct to the Adapter page.Here you can <code class="language-plaintext highlighter-rouge">Upload Adapter or Select Adapter</code>.<br />
 <img src="/staticfiles/root/media/CustomApp-UploadAdapter.png" alt="CustomApp-UploadAdapter" />
 Click Continue button, it will redirect you to the Credential section. After execution of all the steps mentioned above you have created a custom App successfully.
 The newly created app, can be viewed in the app listing section.</p>
@@ -2517,7 +2523,7 @@ Description and the Adapter Technology for adding Specific App (a business requi
 <h3 id="viewing--editing-custom--technology-applications">Viewing &amp; Editing Custom &amp; Technology Applications:</h3>
 
 <ol>
-  <li>Once your application is created, you can view the following interface of you Custom/Technology App. You can view a <code class="highlighter-rouge">VIEW</code> button beside your created application.</li>
+  <li>Once your application is created, you can view the following interface of you Custom/Technology App. You can view a <code class="language-plaintext highlighter-rouge">VIEW</code> button beside your created application.</li>
 </ol>
 
 <p><img src="\staticfiles\root\media\customview1.png" alt="customview1" /></p>
@@ -2529,7 +2535,7 @@ Description and the Adapter Technology for adding Specific App (a business requi
 <p><img src="\staticfiles\root\media\customview2.png" alt="customview2" /></p>
 
 <ol>
-  <li>You can also delete the created application if required by click on the delete button available under the drop-down of the <code class="highlighter-rouge">VIEW</code> button.</li>
+  <li>You can also delete the created application if required by click on the delete button available under the drop-down of the <code class="language-plaintext highlighter-rouge">VIEW</code> button.</li>
 </ol>
 
 <p><strong>Note: You cannot delete the application if it is associated with any connection.</strong></p>
@@ -2540,7 +2546,7 @@ Description and the Adapter Technology for adding Specific App (a business requi
 
 <ul>
   <li>Data can be stored about such entities.</li>
-  <li>Each entity has its own characteristics or attributes. For example, <code class="highlighter-rouge">customer id</code>, <code class="highlighter-rouge">address</code>, <code class="highlighter-rouge">phone number</code> are attributes to the <code class="highlighter-rouge">customer</code> entity.</li>
+  <li>Each entity has its own characteristics or attributes. For example, <code class="language-plaintext highlighter-rouge">customer id</code>, <code class="language-plaintext highlighter-rouge">address</code>, <code class="language-plaintext highlighter-rouge">phone number</code> are attributes to the <code class="language-plaintext highlighter-rouge">customer</code> entity.</li>
   <li>Each customer record in the database serves as an entity item.</li>
   <li>The definition of an entity is called its schema. In other words, the structure of an entity is called its schema.</li>
   <li>If a customer is an entity then the complete set of the various fields associated with it is called its schema.</li>
@@ -2552,8 +2558,8 @@ Description and the Adapter Technology for adding Specific App (a business requi
 
 <h3 id="understanding-schema-attributes">Understanding Schema Attributes</h3>
 
-<p>In APPSeCONNECT, an attribute is a property or characteristic of a schema. If <code class="highlighter-rouge">customer</code> is a schema, 
-then <code class="highlighter-rouge">customer name, email, address</code> etc. are defined as attributes.  Before defining a schema you need to have a 
+<p>In APPSeCONNECT, an attribute is a property or characteristic of a schema. If <code class="language-plaintext highlighter-rouge">customer</code> is a schema, 
+then <code class="language-plaintext highlighter-rouge">customer name, email, address</code> etc. are defined as attributes.  Before defining a schema you need to have a 
 proper understanding of the various data fetched via API so that you can define schema properly and provide the 
 required attributes.</p>
 
@@ -2567,16 +2573,16 @@ required attributes.</p>
   <li>Date Time - This type of variable is used when you want to store a date time value.</li>
   <li>Number - This type of variable is used when you want to store a numeric value.</li>
   <li>Double - This type of variable is used when you want to store a floating point or double value.</li>
-  <li>ComplexObject - When you store an attribute as a collection of several child attributes it is a ComplexObject. For example, if <code class="highlighter-rouge">address</code> is an attribute,
-then <code class="highlighter-rouge">Street line 1, Street line 2, City, Pin</code> would exist as child attributes thus making <code class="highlighter-rouge">address</code> a complex object.</li>
+  <li>ComplexObject - When you store an attribute as a collection of several child attributes it is a ComplexObject. For example, if <code class="language-plaintext highlighter-rouge">address</code> is an attribute,
+then <code class="language-plaintext highlighter-rouge">Street line 1, Street line 2, City, Pin</code> would exist as child attributes thus making <code class="language-plaintext highlighter-rouge">address</code> a complex object.</li>
   <li>ComplexObjectCollections - A ComplexObjectCollection may be defined as a collection of complex objects.</li>
 </ul>
 
 <p>Assume that a customer has two shipping addresses. The first address is based in Delaware and 
 the other in California. Each address contains the Street Name, Building name, PIN code etc. 
 Thus each address would be stored as a complex object attribute. Let the addresses be stored as 
-<code class="highlighter-rouge">address1</code> and <code class="highlighter-rouge">address2</code>. Now these addresses would be stored as child attributes to the 
-parent attribute <code class="highlighter-rouge">address</code>. Thus <code class="highlighter-rouge">address becomes a ComplexObjectCollection</code>.</p>
+<code class="language-plaintext highlighter-rouge">address1</code> and <code class="language-plaintext highlighter-rouge">address2</code>. Now these addresses would be stored as child attributes to the 
+parent attribute <code class="language-plaintext highlighter-rouge">address</code>. Thus <code class="language-plaintext highlighter-rouge">address becomes a ComplexObjectCollection</code>.</p>
 
 <p><img src="/staticfiles/root/media/complexobject-collection-attribute.png" alt="complexobject-collection-attribute" /></p>
 
@@ -2592,7 +2598,7 @@ custom attribute and map that with the data coming from the attribute at the oth
 <p>Actions are nothing but defining certain tasks like getting data from an application or sending data to an application based on certain conditions and these conditions are defined through an action filter.</p>
 
 <p>For example, suppose you want to fetch customer(s) data from an eCommerce site and in APPSeCONNECT you define a Customer entity for that.
-Now for getting data we can define an action name called <code class="highlighter-rouge">GET</code>. When you define an action for an entity you need to provide certain information</p>
+Now for getting data we can define an action name called <code class="language-plaintext highlighter-rouge">GET</code>. When you define an action for an entity you need to provide certain information</p>
 
 <ul>
   <li>Action Name: Name of the action. In some predefined application many adapter logics are written based on this data.</li>
@@ -2643,7 +2649,7 @@ This section enables the user to view and add the Schema and its Actions.</p>
 <p>Extensions, on the other hand, are the applications which add an extra feature into the E-commerce/ERP platforms making them capable to work with the APPSeCONNECT agent. When an app supports extension, it enables customization.</p>
 
 <h3 id="functions">Functions</h3>
-<p>The APPSeCONNECT expression methods are special transformation block used during <code class="highlighter-rouge">mapping</code>. The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:</p>
+<p>The APPSeCONNECT expression methods are special transformation block used during <code class="language-plaintext highlighter-rouge">mapping</code>. The platform provides a bunch of helper functionalities which can be used during mapping/action filters/rules etc. These functions can either be provided through the platform, or you can write one as an independent Software Vendor. The three different types are as follows:</p>
 <ul>
   <li>Generic</li>
   <li>Native</li>
@@ -2670,7 +2676,7 @@ This section enables the user to view and add the Schema and its Actions.</p>
 <p>Protocol Add screen is for creating or updating the existing protocol. An user will be able to add more protocols to the existing app such that the same can be used for implementer’s connections. So, to Add or Update protocol you must follow the steps written below:</p>
 
 <ol>
-  <li>Navigate to the app section and expand the node of the created custom or tech app to view the <code class="highlighter-rouge">Protocol</code> button.</li>
+  <li>Navigate to the app section and expand the node of the created custom or tech app to view the <code class="language-plaintext highlighter-rouge">Protocol</code> button.</li>
 </ol>
 
 <p><img src="\staticfiles\root\media\protocoladd1.png" alt="Protocoladd1" /></p>
@@ -2694,13 +2700,13 @@ This section enables the user to view and add the Schema and its Actions.</p>
 <p><img src="\staticfiles\root\media\protocoladd3.png" alt="Protocoladd3" /></p>
 
 <ol>
-  <li>You can successfully view the created protocol in your window. Expand the node and click on the <code class="highlighter-rouge">Add Method</code> button.</li>
+  <li>You can successfully view the created protocol in your window. Expand the node and click on the <code class="language-plaintext highlighter-rouge">Add Method</code> button.</li>
 </ol>
 
 <p><img src="\staticfiles\root\media\protocoladd4.png" alt="Protocoladd4" /></p>
 
 <ol>
-  <li>On the method window, you to provide the name of the protocol <code class="highlighter-rouge">method</code> and the token from the drop down. Once selected click on the SAVE button.</li>
+  <li>On the method window, you to provide the name of the protocol <code class="language-plaintext highlighter-rouge">method</code> and the token from the drop down. Once selected click on the SAVE button.</li>
 </ol>
 
 <p><img src="\staticfiles\root\media\protocoladd5.png" alt="Protocoladd5" /></p>
@@ -2717,7 +2723,7 @@ This section enables the user to view and add the Schema and its Actions.</p>
 </ul>
 
 <h3 id="delete">Delete</h3>
-<p>Clicking on the <code class="highlighter-rouge">Delete</code> button will remove the application from your application list. However, can anytime choose the deleted application from the <code class="highlighter-rouge">Choose App</code> list. Also for custom and technology application, you can delete the applications for the drop-down availble beside the <code class="highlighter-rouge">VIEW</code> button.</p>
+<p>Clicking on the <code class="language-plaintext highlighter-rouge">Delete</code> button will remove the application from your application list. However, can anytime choose the deleted application from the <code class="language-plaintext highlighter-rouge">Choose App</code> list. Also for custom and technology application, you can delete the applications for the drop-down availble beside the <code class="language-plaintext highlighter-rouge">VIEW</code> button.</p>
 
 <p><em><strong>Note:</strong> You will be restricted from deleting the any application that is already in use.</em></p>
 
@@ -4961,8 +4967,18 @@ This section enables the user to view and add the Schema and its Actions.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

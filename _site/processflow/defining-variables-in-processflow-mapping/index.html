@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2322,7 +2328,7 @@
                 <p>Here you will understand the process of defining <a href="/transformation/types-of-variable/">Variables</a> (any variables that stores the data that can be used later within 
 the process of transformation) and then mapping of variables during transformation phase.</p>
 
-<p>Here The flow is explained using <code class="highlighter-rouge">Root Variable</code> for a processflow. <br />
+<p>Here The flow is explained using <code class="language-plaintext highlighter-rouge">Root Variable</code> for a processflow. <br />
 <strong>NOTE- The process of defining the variables remain same for any type of variable.</strong></p>
 
 <h2 id="prerequisites-for-adding-variables-in-processflow-mapping">Prerequisites for adding Variables in Processflow Mapping</h2>
@@ -2336,18 +2342,18 @@ the process of transformation) and then mapping of variables during transformati
   <li>Select the processflow for which the Root Variable is to be created. Click on the Node 
 Configuration button for the Mapper node after linking the application nodes for viewing the mapper window.
 <img src="../../staticfiles/processflow/media/mapper/addvariable_processflow.PNG" alt="Addvariable Processflow" /></li>
-  <li>Click on the Option <code class="highlighter-rouge">ADD VARIABLE</code> present on the Transform Window.
+  <li>Click on the Option <code class="language-plaintext highlighter-rouge">ADD VARIABLE</code> present on the Transform Window.
 <img src="../../staticfiles/processflow/media/mapper/addvariable_processflow1.PNG" alt="Addvariable Processflow1" /></li>
   <li>Input the details Variable Name, Data Type and the Reference Entity.             <br />
 <img src="../../staticfiles/processflow/media/mapper/addvariable_processflow2.PNG" alt="Addvariable Processflow2" />    <br />
-(a) In this case Variable Name <code class="highlighter-rouge">ShipmentCode</code> is used whose Data Type is provided <code class="highlighter-rouge">String</code>. The flow remains same for the 
+(a) In this case Variable Name <code class="language-plaintext highlighter-rouge">ShipmentCode</code> is used whose Data Type is provided <code class="language-plaintext highlighter-rouge">String</code>. The flow remains same for the 
 Data type-  Bool, Datetime, Number and Double.<br />
-(b) Whereas for the <code class="highlighter-rouge">Data Type - Complex Object, Complex Object Collection and Double</code> providing the XPATH is mandatory as
+(b) Whereas for the <code class="language-plaintext highlighter-rouge">Data Type - Complex Object, Complex Object Collection and Double</code> providing the XPATH is mandatory as
 shown below<br />
 <img src="../../staticfiles/processflow/media/mapper/addvariable_processflow3.PNG" alt="Addvariable Processflow3" /> 
 Once the details are filled, click Save and Close. 
 For Mapping the variable, click on the Open button, which is visible beside the variable name, when hovered over.
-Select the function from the <code class="highlighter-rouge">Functions List</code>  and click on the function as required (Taken [genericlib:getMapping(ObjectType,Value)] as an example)  <br />
+Select the function from the <code class="language-plaintext highlighter-rouge">Functions List</code>  and click on the function as required (Taken [genericlib:getMapping(ObjectType,Value)] as an example)  <br />
 <strong>Note: The mapping can be executed with the functions as well as, with the source attributes. Implementing mapping only with the functions is not mandatory.</strong></li>
 </ol>
 
@@ -2358,13 +2364,13 @@ Now for implementing the mapping, input the required ObjectType and Value in the
 <p>The user can view the successful sync of the processflow for which the Variables was created</p>
 
 <h2 id="delete-variable">Delete variable</h2>
-<p>The user can delete the Variables whenever required, any-time after its creation by clicking on <code class="highlighter-rouge">delete variable</code>.
+<p>The user can delete the Variables whenever required, any-time after its creation by clicking on <code class="language-plaintext highlighter-rouge">delete variable</code>.
 button. Hardcorded variables cant be deleted.<br />
 <img src="../../staticfiles/Transformation/media/delete-variable.png" alt="Delete Variable" /></p>
 
 <h2 id="edit-varibale">Edit Varibale</h2>
 
-<p>The user can edit the variables defined any-time after its creation by clicking on <code class="highlighter-rouge">edit variable</code> button.
+<p>The user can edit the variables defined any-time after its creation by clicking on <code class="language-plaintext highlighter-rouge">edit variable</code> button.
 Hardcorded variables cant be edited.<br />
 <img src="../../staticfiles/Transformation/media/edit-variable.png" alt="Edit Variable" /></p>
 
@@ -4606,8 +4612,27 @@ Hardcorded variables cant be edited.<br />
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-Halt-Resume/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Halt-Resume Node
+                                </a>
+                            </li>
                             
                             
                             
@@ -4654,15 +4679,6 @@ Hardcorded variables cant be edited.<br />
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-variable/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Capture Variables
-                                </a>
-                            </li>
                             
                             
                             

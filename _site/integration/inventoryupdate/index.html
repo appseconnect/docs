@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2325,7 +2331,7 @@
                 </aside>
                 
                 <p>Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for 
-adding Updating Inventory from <code class="highlighter-rouge">SAP Business One to Magento2</code>.</p>
+adding Updating Inventory from <code class="language-plaintext highlighter-rouge">SAP Business One to Magento2</code>.</p>
 
 <p><strong>Note: Before proceeding with any integration configuration, users are advised to view the pre-requites of the <a href="/integration/SAPB1-Magento2/">integration process</a>.</strong></p>
 
@@ -2336,7 +2342,7 @@ adding Updating Inventory from <code class="highlighter-rouge">SAP Business One 
 <p>In this case, the quantity of the products is added by updating the inventory. Therefore, the above workflow is designed to Update the Inventory of the products added in SAP Business One and will posted to Magento2.</p>
 
 <ol>
-  <li>For Updating the Inventory in SAP Business One client an item needs to be created first. After creating the item, <code class="highlighter-rouge">Navigate to Modules &gt; Inventory &gt; Inventory Transactions &gt; Goods Receipt</code>.</li>
+  <li>For Updating the Inventory in SAP Business One client an item needs to be created first. After creating the item, <code class="language-plaintext highlighter-rouge">Navigate to Modules &gt; Inventory &gt; Inventory Transactions &gt; Goods Receipt</code>.</li>
   <li>In the Good Receipt dialogue box, click on the Item No. field and select the item whose inventory needs to update.</li>
   <li>Click on the Quantity field for the selected item and enter the quantity that needs to be updated. Click on the Add Button after doing so.</li>
   <li>After updating the Inventory, the user can check the InStock status of the product from the Item Master Data Module.</li>
@@ -2355,7 +2361,7 @@ adding Updating Inventory from <code class="highlighter-rouge">SAP Business One 
 <p>Following the Provided Mapping, the user can sync the Simple Product Add from SAP Business One to Magento2. 
 To know more, see  <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
 
-<p><strong>Mapping for the <code class="highlighter-rouge">Inventory Update</code></strong></p>
+<p><strong>Mapping for the <code class="language-plaintext highlighter-rouge">Inventory Update</code></strong></p>
 
 <ol>
   <li>Mapping for the ComplexObjectCollection stockItem
@@ -2367,7 +2373,7 @@ b.	productid - This is also mapped with the WebID of the product present in SAP 
 c.	qty – This attribute is mapped with the quantity OnHand present in the SAP Business One.                           <br />
 d.	UploadURL – This defines the route to the Magento2.</p>
 
-<p><strong>Mapping of the <code class="highlighter-rouge">Root Variable</code></strong></p>
+<p><strong>Mapping of the <code class="language-plaintext highlighter-rouge">Root Variable</code></strong></p>
 
 <p><img src="/staticfiles/integration/media/update_inventory3.png" alt="update_inventory3" /></p>
 
@@ -2377,8 +2383,8 @@ c. $executesql: This is also a pre-packaged variable which is mapped to call the
 d. $itemUDFsku: This is a string type variable created to map with the itemCode present in SAP Business One.                                       <br />
 e. $Replacesku: This variable is mapped to maintain the SKU in database.</p>
 
-<p><strong>Note: After the mapping changes<code class="highlighter-rouge">Reset Generate</code> and <code class="highlighter-rouge">Reset Publish</code> the Touchpoint. After Republishing, 
- Click on the <code class="highlighter-rouge">Update Configuration</code> button in the Agent.</strong></p>
+<p><strong>Note: After the mapping changes<code class="language-plaintext highlighter-rouge">Reset Generate</code> and <code class="language-plaintext highlighter-rouge">Reset Publish</code> the Touchpoint. After Republishing, 
+ Click on the <code class="language-plaintext highlighter-rouge">Update Configuration</code> button in the Agent.</strong></p>
 
 <h2 id="executing-the-workflow-integration">Executing the Workflow Integration</h2>
 
@@ -2388,7 +2394,7 @@ e. $Replacesku: This variable is mapped to maintain the SKU in database.</p>
   <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
   <li>Click Run button in the workflow panel in the cloud portal.
 <img src="/staticfiles/integration/media/update_inventory4.png" alt="update_inventory4" /></li>
-  <li>Once the Execution is finished, click <code class="highlighter-rouge">Resync Button</code> in the agent. The Resync Panel shows the Success Result in the agent. 
+  <li>Once the Execution is finished, click <code class="language-plaintext highlighter-rouge">Resync Button</code> in the agent. The Resync Panel shows the Success Result in the agent. 
 <img src="/staticfiles/integration/media/update_inventory5.png" alt="update_inventory5" /></li>
   <li>The User can also trigger or <a href="/workflow/deploying-and-executing/">deploy the workflow</a> from the cloud Portal by clicking on the run button.</li>
 </ol>
@@ -2425,10 +2431,10 @@ This Snapshot View displays the successful execution of the workflow. The Invent
 
 <p>Doing this, the user can successfully integrate this workflow.</p>
 
-<p>b.	Log Bucket shows <code class="highlighter-rouge">Source Application Returned False</code> even when applications adapters are properly validated.
+<p>b.	Log Bucket shows <code class="language-plaintext highlighter-rouge">Source Application Returned False</code> even when applications adapters are properly validated.
 <img src="/staticfiles/integration/media/troubleshooting-inventory-sapmage2.png" alt="troubleshooting-inventory-sapmage2" /></p>
 
-<p>Solution: <code class="highlighter-rouge">Source Application Returned false</code> may not be the error, only for adapter validation. Users also needs to ensure that the action filter provided is correct.</p>
+<p>Solution: <code class="language-plaintext highlighter-rouge">Source Application Returned false</code> may not be the error, only for adapter validation. Users also needs to ensure that the action filter provided is correct.</p>
 
 <p>As SAP Business One follows a Query based filter, Users are advised to run the query for action filter in the database first for ensuring that the query fetching the required data.</p>
 
@@ -4670,8 +4676,18 @@ This Snapshot View displays the successful execution of the workflow. The Invent
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

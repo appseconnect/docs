@@ -2491,6 +2491,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Halt-Resume Node",
+      excerpt: "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 275
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5527,6 +5536,17 @@ var store = [
         "title": "Managing - Action, Action Filters & Error Filters",
         "url": "/processflow/manage-actions-actionfilters-errorfilters/",
         "excerpt": "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Halt-Resume Node",
+        "url": "/processflow/working-with-Halt-Resume/",
+        "excerpt": "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

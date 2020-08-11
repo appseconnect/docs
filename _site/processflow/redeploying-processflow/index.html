@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2352,13 +2358,13 @@ changes pertaining to redeloying a process flow.</p>
   <li>The deploy wizard appears where you can redeploy the process flow by making any changes.</li>
   <li>You can view the Environment section is already selected (remains same as chosen earlier)
 and the remaining part is in disabled Mode. This means if your selected environment is 
-   <code class="highlighter-rouge">On-Premise</code> then Hosted will be in diabled mode and vice-versa. Make sure to check the
+   <code class="language-plaintext highlighter-rouge">On-Premise</code> then Hosted will be in diabled mode and vice-versa. Make sure to check the
 envirnonment is in conneced state.  <br />
 <img src="../../staticfiles/processflow/media/redeploy-processflow.png" alt="Redeploy Processflow" /></li>
 </ol>
 
 <p><strong>NOTE: If the environment is in disconnected state, you will get an error message -
-<code class="highlighter-rouge">Environment is not connected</code> and thus you cannot proceed with further deployment steps</strong></p>
+<code class="language-plaintext highlighter-rouge">Environment is not connected</code> and thus you cannot proceed with further deployment steps</strong></p>
 
 <ol>
   <li>Click NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.</li>
@@ -2366,16 +2372,16 @@ envirnonment is in conneced state.  <br />
 for the respective application used in the Process Flow.Previously chosen credentials will be selected if exists in the process flow,
 incase of new credentials added to the application will be visible in the drop down list. Choose the credential as required. <br />
 <img src="../../staticfiles/processflow/media/redeploy3.png" alt="Redeploy3" /></li>
-  <li>Click <code class="highlighter-rouge">Refresh Connection</code> button. You will get the latest credentials or updates to credentials made in the OP Agent. 
+  <li>Click <code class="language-plaintext highlighter-rouge">Refresh Connection</code> button. You will get the latest credentials or updates to credentials made in the OP Agent. 
 Now Click on the NEXT button.</li>
   <li>The screen navigates to the lookup section of the Wizard, where you can view the existing lookups implemented
  while mapping the attributes. During the redeployment of Process Flow, latest fixes will 
  be displayed with selected Reference Table with a green tick.
 <img src="../../staticfiles/processflow/media/redeploy4.png" alt="Redeploy4" />
     <ul>
-      <li>User will have option to re-assigned preassigned <code class="highlighter-rouge">Reference Table</code>.</li>
+      <li>User will have option to re-assigned preassigned <code class="language-plaintext highlighter-rouge">Reference Table</code>.</li>
       <li>User will have option to assigned fix unfixed warnings.</li>
-      <li>If a <code class="highlighter-rouge">Reference Table</code> has already been selected during a Process Flow deployment 
+      <li>If a <code class="language-plaintext highlighter-rouge">Reference Table</code> has already been selected during a Process Flow deployment 
 and then the Lookup Mapping or the Reference Table is deleted (from the Lookup Repositories), 
 then during Redeployment process, the deleted lookup mapping will show as an unresolved 
 warning which the user may fix if desired.
@@ -4633,8 +4639,27 @@ click the Finish button. Following the above steps, you can successfully Deploy 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-Halt-Resume/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Halt-Resume Node
+                                </a>
+                            </li>
                             
                             
                             
@@ -4681,15 +4706,6 @@ click the Finish button. Following the above steps, you can successfully Deploy 
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-variable/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Capture Variables
-                                </a>
-                            </li>
                             
                             
                             

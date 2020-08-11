@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2299,7 +2305,7 @@
 
 
 
-  11 minute read
+  10 minute read
 </p>
                 
                 
@@ -2350,7 +2356,7 @@ defined Schema, Attributes and Actions associated with it.</p>
 
 <p>(b) Go to <a href="/processflow/designer-processflow/">desiger</a> section and Drag the required App Node.</p>
 
-<p>(c) The Node Configuration window opens. Go to General tab and Click <code class="highlighter-rouge">Manage Schema</code>.</p>
+<p>(c) The Node Configuration window opens. Go to General tab and Click <code class="language-plaintext highlighter-rouge">Manage Schema</code>.</p>
 
 <p>(d) A window opens up and here you can view the listing of all the Schema and Attribute(s) of the Application will be displayed in the Tree view on the left pane.</p>
 
@@ -2380,42 +2386,35 @@ defined Schema, Attributes and Actions associated with it.</p>
 
 <p>3) The field Description is gven below for the Node Configuration section:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Node Description: This denotes the description of the node.  
-
-* Node Type: This denotes the type of action that the node needs to perform GET or POST.
-
-* App Version: This denotes the version of the Application. You need to select the version of the application you need for the integration.
-
-* Protocol: The protocols would be listed for the application that is selected.
-
-* Schema: The schemas for the selected application and protocol would be listed in the drop-down. If no Schema is present you have to create a Schema from `Manage Schema` option present under the Schema field.
-
-* Action: The action based on the selected schema would be available. If no Action is present you have to create Action from `Manage Action` option present under the Schema field.
-
-* Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.    
-</code></pre></div></div>
+<ul>
+  <li>Node Description: This denotes the description of the node.</li>
+  <li>Node Type: This denotes the type of action that the node needs to perform GET or POST.</li>
+  <li>App Version: This denotes the version of the Application. You need to select the version of the application you need for the integration.</li>
+  <li>Protocol: The protocols would be listed for the application that is selected.</li>
+  <li>Schema: The schemas for the selected application and protocol would be listed in the drop-down. If no Schema is present you have to create a Schema from <code class="language-plaintext highlighter-rouge">Manage Schema</code> option present under the Schema field.</li>
+  <li>Action: The action based on the selected schema would be available. If no Action is present you have to create Action from <code class="language-plaintext highlighter-rouge">Manage Action</code> option present under the Schema field.</li>
+  <li>Credential: You need to click the button Add, beside Credential to add token in the list. Select the Credential Token added for storing the credential provided for the application in the OP Agent.</li>
+</ul>
 
 <p>4) In the node configuration window, go to the Schema field. If the list of Schema is available select from 
-the list of schema. And if <code class="highlighter-rouge">No schema</code> is available for the given application node, click <code class="highlighter-rouge">Manage Schema</code> option.</p>
+the list of schema. And if <code class="language-plaintext highlighter-rouge">No schema</code> is available for the given application node, click <code class="language-plaintext highlighter-rouge">Manage Schema</code> option.</p>
 
-<p>5) The following window appears with message on display for the user to <code class="highlighter-rouge">Add Schema</code> &amp; <code class="highlighter-rouge">Import Schema</code></p>
+<p>5) The following window appears with message on display for the user to <code class="language-plaintext highlighter-rouge">Add Schema</code> &amp; <code class="language-plaintext highlighter-rouge">Import Schema</code></p>
 
 <p>6) Click on the option <strong>Add Schema</strong> and the add schema window opens</p>
 
 <p><img src="../../staticfiles/processflow/media/pf-addschema1.png" alt="Pf Addschema1" /></p>
 
-<p>7) Enter the details of adding Schema and Click <code class="highlighter-rouge">Save</code> button.</p>
+<p>7) Enter the details of adding Schema and Click <code class="language-plaintext highlighter-rouge">Save</code> button.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Schema Name: This is a mandatory field and it needs to be provided with the schema name    
+<ul>
+  <li>Schema Name: This is a mandatory field and it needs to be provided with the schema name</li>
+  <li>Schema Description: The description for the schema is needed to be given here</li>
+  <li>Schema Namespace: Differentiates between two similar schemas</li>
+  <li>Schema Namespace URL: Differentiates between two similar schemas using URL.</li>
+</ul>
 
-* Schema Description: The description for the schema is needed to be given here  
-
-* Schema Namespace: Differentiates between two similar schemas   
-
-* Schema Namespace URL: Differentiates between two similar schemas using URL.
-
-![Pf Addschema2](../../staticfiles/processflow/media/pf-addschema2.png)
-</code></pre></div></div>
+<p><img src="../../staticfiles/processflow/media/pf-addschema2.png" alt="Pf Addschema2" /></p>
 
 <p>8) The newly created Schema is added and gets listed in the left side pane.</p>
 
@@ -2440,31 +2439,43 @@ the list of schema. And if <code class="highlighter-rouge">No schema</code> is a
 
 <p><img src="\staticfiles\processflow\media\pf_importschema1.PNG" alt="pf_importschema1" /></p>
 
-<p>4) You will be able to view the <code class="highlighter-rouge">Three Radio buttons</code> that specifies the type of file you need to upload for importing.</p>
+<p>4) You will be able to view the <code class="language-plaintext highlighter-rouge">Three Radio buttons</code> that specifies the type of file you need to upload for importing.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Selecting **XML** - On selecting the import type as XML, you will be able to view the following fields.
+<ul>
+  <li>
+    <p>Selecting <strong>XML</strong> - On selecting the import type as XML, you will be able to view the following fields.</p>
 
-    - Choose File: You will be able to select the XML files from your local system for importing the schemas.
-    - Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.
-    - Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - Choose File: You will be able to select the XML files from your local system for importing the schemas.
+  - Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.
+  - Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
+</code></pre></div>    </div>
 
-![pf_importschema2](\staticfiles\processflow\media\pf_importschema2.PNG)
+    <p><img src="\staticfiles\processflow\media\pf_importschema2.PNG" alt="pf_importschema2" /></p>
+  </li>
+  <li>
+    <p>Selecting <strong>Json</strong> - On selecting the import type as Json, you will be able to view the following fields.</p>
 
-- Selecting **Json** - On selecting the import type as Json, you will be able to view the following fields.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - Choose File: You will be able to select the Json files from your local system for importing the schemas.
+  - Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.
+  - Render: Clicking on the Render button, the functionality would traverse your entire JSON file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
+</code></pre></div>    </div>
 
-    - Choose File: You will be able to select the Json files from your local system for importing the schemas.
-    - Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.
-    - Render: Clicking on the Render button, the functionality would traverse your entire JSON file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
+    <p><img src="\staticfiles\processflow\media\pf_importschema3.PNG" alt="pf_importschema3" /></p>
 
-![pf_importschema3](\staticfiles\processflow\media\pf_importschema3.PNG)
+    <ul>
+      <li>
+        <p>Selecting <strong>WSDL</strong> - WSDL is the Web Services Description language. On selecting the Radio button for WSDL, you will be able to view the following fields.</p>
 
-- Selecting **WSDL** - WSDL is the Web Services Description language. On selecting the Radio button for WSDL, you will be able to view the following fields.
+        <ul>
+          <li>File URL: You will be able to provide the URL for importing the schemas for your application.</li>
+          <li>Render: Clicking on the Render button, the functionality would traverse your entire WSDL file and will list you all the Schema complex Objects and Complex Object Collections based upon the file.</li>
+        </ul>
+      </li>
+    </ul>
 
-    - File URL: You will be able to provide the URL for importing the schemas for your application.
-    - Render: Clicking on the Render button, the functionality would traverse your entire WSDL file and will list you all the Schema complex Objects and Complex Object Collections based upon the file.
-
-![pf_importschema4](\staticfiles\processflow\media\pf_importschema4.PNG)
-</code></pre></div></div>
+    <p><img src="\staticfiles\processflow\media\pf_importschema4.PNG" alt="pf_importschema4" /></p>
+  </li>
+</ul>
 
 <p>5) Select the import type as per your requirement, upload the document as per the selected format and click on the Render Button. (Here, we have selected the XML type)</p>
 
@@ -2496,31 +2507,31 @@ the list of schema. And if <code class="highlighter-rouge">No schema</code> is a
 
 <h3 id="editing--deleting-schemas-in-an-application-node-of-process-flow">Editing &amp; Deleting Schemas in an Application node of Process flow</h3>
 
-<p>(A) To <code class="highlighter-rouge">Edit Schema</code>, do the following steps:</p>
+<p>(A) To <code class="language-plaintext highlighter-rouge">Edit Schema</code>, do the following steps:</p>
 
 <p>1) Go to Processflow <a href="/processflow/designer-processflow/">designer</a> section and drag the app node for which you want to edit schema.  <br />
 2) Follow the path - Node Configuration window -&gt; General Tab -&gt; Schema-&gt; Manage Schema
-3) You will be redirected to the <code class="highlighter-rouge">Manage Schema and Action</code> pop-up.  <br />
-4) In the <code class="highlighter-rouge">Manage Schema and Action</code> window, you will be able to edit any existing Schema by clicking on the Schema
+3) You will be redirected to the <code class="language-plaintext highlighter-rouge">Manage Schema and Action</code> pop-up.  <br />
+4) In the <code class="language-plaintext highlighter-rouge">Manage Schema and Action</code> window, you will be able to edit any existing Schema by clicking on the Schema
 context menu and do the changes.
 <img src="../../staticfiles/processflow/media/pf-editschema.png" alt="Pf Editschema" /> <br />
-5) The <code class="highlighter-rouge">Schema Name</code> is uneditable, rest other fields are editable like Schema Description, Namespace &amp;
+5) The <code class="language-plaintext highlighter-rouge">Schema Name</code> is uneditable, rest other fields are editable like Schema Description, Namespace &amp;
 Namespace URL.</p>
 
 <p><strong>NOTE: (a) Once a Process Flow has been saved in an Environment you will be
 unable to Rename the Schema, Delete the Schema.<br />
-(b) You will be able to add/edit the <code class="highlighter-rouge">Namespace</code>, and <code class="highlighter-rouge">Namespace URL</code> values provided in the Schema.<br />
-(c) You will be able to edit the <code class="highlighter-rouge">Description</code>, via <code class="highlighter-rouge">Edit Schema</code> option.</strong></p>
+(b) You will be able to add/edit the <code class="language-plaintext highlighter-rouge">Namespace</code>, and <code class="language-plaintext highlighter-rouge">Namespace URL</code> values provided in the Schema.<br />
+(c) You will be able to edit the <code class="language-plaintext highlighter-rouge">Description</code>, via <code class="language-plaintext highlighter-rouge">Edit Schema</code> option.</strong></p>
 
 <h3 id="adding-attribute-to-a-schema">Adding Attribute to a Schema</h3>
 
-<p>1) The Schema context menu has the option to <code class="highlighter-rouge">ADD Attribute</code> to the schema.<br />
-2) Click <code class="highlighter-rouge">Add Attribute</code> to add attribute to the schema. The Add Attribute form opens up.<br />
+<p>1) The Schema context menu has the option to <code class="language-plaintext highlighter-rouge">ADD Attribute</code> to the schema.<br />
+2) Click <code class="language-plaintext highlighter-rouge">Add Attribute</code> to add attribute to the schema. The Add Attribute form opens up.<br />
 <img src="../../staticfiles/processflow/media/pf-addattribute.png" alt="Pf Addattribute" /><br />
 The fields in the Attriburte Property Window are: <br />
 a. Attribute Name: It is a mandatory field, used for providing name to the attribute.</p>
 <ul>
-  <li>The Attribute Name field will allow a <code class="highlighter-rouge">maximum of 100 characters</code>.</li>
+  <li>The Attribute Name field will allow a <code class="language-plaintext highlighter-rouge">maximum of 100 characters</code>.</li>
   <li>In the Attribute Name field space and special characters will not be allowed.  <br />
 b. Data Type: Select the datatype from the drop-down as per the requirement. This is also a mandatory field.</li>
   <li>String</li>
@@ -2531,17 +2542,17 @@ b. Data Type: Select the datatype from the drop-down as per the requirement. Thi
   <li>ComplexObjectCollection</li>
   <li>Double <br />
 c. Reference API: If any schema needs to be referred for the transformation, that can be referred by selecting 
-the Schema Name from the drop-down as a reference Entity. The Reference API field will be displayed if the Attribute Data Type is <code class="highlighter-rouge">ComplexObject</code> or <code class="highlighter-rouge">ComplexObjectCollection</code>.      <br />
+the Schema Name from the drop-down as a reference Entity. The Reference API field will be displayed if the Attribute Data Type is <code class="language-plaintext highlighter-rouge">ComplexObject</code> or <code class="language-plaintext highlighter-rouge">ComplexObjectCollection</code>.      <br />
 d. Tags: Used  providing specific tags to the attribute.<br />
 e. Namespace Prefix: Prefix could be added for this attribute while working with namespaces.<br />
 f. Attribute Scope: Select the Scope - Organization Level or ProcessFlow Level. This is a mandatory field
-select as per your business requirement.Attributes with scope <code class="highlighter-rouge">Organization</code> will be added at the Organization
- level whereas Attributes with scope <code class="highlighter-rouge">Local</code> will be added at the Process Flow level. 
+select as per your business requirement.Attributes with scope <code class="language-plaintext highlighter-rouge">Organization</code> will be added at the Organization
+ level whereas Attributes with scope <code class="language-plaintext highlighter-rouge">Local</code> will be added at the Process Flow level. 
 g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute.</li>
   <li>Primary: For allotting this attribute as the Primary Key.</li>
   <li>Required: For making this attribute mandatory for the mapping purpose.</li>
   <li>Attribute:To add attribute in the XSLT  <br />
-<strong>Only one Attribute can be set as <code class="highlighter-rouge">Primary Attribute</code> within a Schema.</strong><br />
+<strong>Only one Attribute can be set as <code class="language-plaintext highlighter-rouge">Primary Attribute</code> within a Schema.</strong><br />
 3) Click SAVE button, after all the details has been made. A confirmation message of attribute creation
 appears on the window stating the attribute is created successfully.<br />
 <img src="../../staticfiles/processflow/media/pf-addattribute2.png" alt="Pf Addattribute2" /><br />
@@ -2570,12 +2581,12 @@ You can check the same by navigating to the App section of the portal, where the
 <h4 id="b-editing-attribute-within-organization-scope-global-attribute">(b) Editing Attribute within Organization Scope (global attribute)</h4>
 <p>On deleting an Attribute from the Manage Schema section, it will not be visible in new Process Flow.</p>
 
-<p>(B) To <code class="highlighter-rouge">Delete Schema</code>, do the following steps:</p>
+<p>(B) To <code class="language-plaintext highlighter-rouge">Delete Schema</code>, do the following steps:</p>
 
 <p>1) Go to Processflow <a href="/processflow/designer-processflow/">designer</a> section and drag the app node for which you want to deleted schema.
 2) Now click on the app node, and under schema field click Manage Schema.
-3) You will be redirected to the <code class="highlighter-rouge">Manage Schema and Action</code> pop-up.
-4) In the <code class="highlighter-rouge">Manage Schema and Action</code> window, you will be able to delete any existing Schema by click on the Schema
+3) You will be redirected to the <code class="language-plaintext highlighter-rouge">Manage Schema and Action</code> pop-up.
+4) In the <code class="language-plaintext highlighter-rouge">Manage Schema and Action</code> window, you will be able to delete any existing Schema by click on the Schema
 context menu and clicking on Delete Schema Option.</p>
 
 <h4 id="deleting-attribute">Deleting Attribute</h4>
@@ -4826,8 +4837,27 @@ you will be able to delete the Attribute(s) used in Mapping.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-Halt-Resume/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Halt-Resume Node
+                                </a>
+                            </li>
                             
                             
                             
@@ -4874,15 +4904,6 @@ you will be able to delete the Attribute(s) used in Mapping.</p>
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-variable/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Capture Variables
-                                </a>
-                            </li>
                             
                             
                             

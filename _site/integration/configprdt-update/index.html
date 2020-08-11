@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2326,7 +2332,7 @@
                 </aside>
                 
                 <p>Executing the process is a vital part when integrating any applications. This Document will let the users to understand how the 
-integration process can be executed through workflow for <code class="highlighter-rouge">Updating a Configurable Product</code> from Ms Dynamics NAV to Magento2 (Multi-store).</p>
+integration process can be executed through workflow for <code class="language-plaintext highlighter-rouge">Updating a Configurable Product</code> from Ms Dynamics NAV to Magento2 (Multi-store).</p>
 
 <h2 id="brief-description">Brief Description</h2>
 
@@ -2343,13 +2349,13 @@ integration process can be executed through workflow for <code class="highlighte
   <li>Updates in Web Product Details CP Page: The user can update the Web TaxClass Id,  WebDescription and WebShortDescription.</li>
   <li>Updates in Web ProductWebsites Page: The user can change/update the WebSiteId of the product.</li>
   <li>Updates in Web ProductAttribute Page: No changes required in this section.AttributeOptionId is always blank in Configurable product.</li>
-  <li>Updates in Web ProductCategory Page: The user will be able to modify/update the CategoryId of the product in this page. Also the <code class="highlighter-rouge">AttributeOptionId</code> is <code class="highlighter-rouge">always 
+  <li>Updates in Web ProductCategory Page: The user will be able to modify/update the CategoryId of the product in this page. Also the <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> is <code class="language-plaintext highlighter-rouge">always 
 blank in Configurable product</code>.</li>
   <li>Updates in the Web Product Child Details Page: You can add new child items (belonging to the same Attribute set as that of the configurable) and remove the existing child item.</li>
   <li>The changes in the AEC Application Item list will be modified as per the changes in the Web Product Details CP Page.</li>
 </ul>
 
-<p>On completion of the process click OK button. The entire <code class="highlighter-rouge">ItemCard</code> for this Configurable product is given below.
+<p>On completion of the process click OK button. The entire <code class="language-plaintext highlighter-rouge">ItemCard</code> for this Configurable product is given below.
 <img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png" alt="confgprdctadd_navtomage2multi1" /></p>
 
 <h2 id="lookup-mapping">LookUp Mapping</h2>
@@ -2361,16 +2367,16 @@ blank in Configurable product</code>.</li>
 <p>The pre-packaged mappings will successfully sync data MS Dynamics NAV  to Magento2 (MultiStore).</p>
 
 <ul>
-  <li>The mapping changes required are: Disable the attributes named <code class="highlighter-rouge">Attribute_set_id</code> and <code class="highlighter-rouge">type_id</code>.</li>
+  <li>The mapping changes required are: Disable the attributes named <code class="language-plaintext highlighter-rouge">Attribute_set_id</code> and <code class="language-plaintext highlighter-rouge">type_id</code>.</li>
   <li>Rest mapping changes are similar to <a href="/integration/configproduct-add/#attribute-mappingtransformation">Configurable product add</a></li>
-  <li>The new complex object type variable named <code class="highlighter-rouge">getCustomAttributeOption</code> is added under the section <code class="highlighter-rouge">configurable_product_options</code>.</li>
+  <li>The new complex object type variable named <code class="language-plaintext highlighter-rouge">getCustomAttributeOption</code> is added under the section <code class="language-plaintext highlighter-rouge">configurable_product_options</code>.</li>
 </ul>
 
 <p>However, for more informations related to mapping, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
 
 <h2 id="action-filters">Action Filters</h2>
 
-<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="highlighter-rouge">Field</code> and <code class="highlighter-rouge">Criteria</code>.
+<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="language-plaintext highlighter-rouge">Field</code> and <code class="language-plaintext highlighter-rouge">Criteria</code>.
 View the image below to define the Action Filters</p>
 
 <p><img src="/staticfiles/integration/media/configprdct_update_actionfilter1.png" alt="configprdct_update_actionfilter1" /></p>
@@ -4652,8 +4658,18 @@ This Snapshot View displays the successful execution of the workflow.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

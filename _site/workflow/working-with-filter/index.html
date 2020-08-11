@@ -1353,8 +1353,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1426,20 +1426,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
@@ -1450,8 +1438,26 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-delay/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-delay/" onclick="selectTab('/processflow/working-with-processflow-delay/', event);" title="Go to Working with Delay">Working with Delay</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -2326,15 +2332,15 @@
                 
                 <h3 id="what-is-filter-node">What is filter node?</h3>
 
-<p>This node is used to fetch a subset of data from an original data packet based on the criteria specified in the <code class="highlighter-rouge">FILTER</code> node. A user can specify multiple criteria in the <code class="highlighter-rouge">Filter</code> node and data will be filter based on the specified criteria. Criteria expressions are specified using XPath.For example, a user is fetching data packet with a certain number of a customer from which he only wants to process verified customers only. A user can implement a <code class="highlighter-rouge">FILTER</code> node by specifying a XPath and from that data packet, only those data will flow to the next node which will match the filter condition.</p>
+<p>This node is used to fetch a subset of data from an original data packet based on the criteria specified in the <code class="language-plaintext highlighter-rouge">FILTER</code> node. A user can specify multiple criteria in the <code class="language-plaintext highlighter-rouge">Filter</code> node and data will be filter based on the specified criteria. Criteria expressions are specified using XPath.For example, a user is fetching data packet with a certain number of a customer from which he only wants to process verified customers only. A user can implement a <code class="language-plaintext highlighter-rouge">FILTER</code> node by specifying a XPath and from that data packet, only those data will flow to the next node which will match the filter condition.</p>
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="highlighter-rouge">FILTER</code> node in APPSeCONNECT workflow used for bulk data filteration.</p>
+<p><code class="language-plaintext highlighter-rouge">FILTER</code> node in APPSeCONNECT workflow used for bulk data filteration.</p>
 
 <h3 id="tip">Tip</h3>
 
-<p>Use valid <code class="highlighter-rouge">XPATH</code> for filter condition in filter node.</p>
+<p>Use valid <code class="language-plaintext highlighter-rouge">XPATH</code> for filter condition in filter node.</p>
 
 <p>Based on the above example my XML data for the customers is like this</p>
 
@@ -2505,6 +2511,14 @@ to the Transform Packet.</p>
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             
