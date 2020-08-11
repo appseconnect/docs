@@ -2294,16 +2294,16 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Update from Magento2 to SAGE300",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
+      title: "Customer Update from Shopify to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users integrate updated customers...",
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 253
     });
     
   
     idx.add({
-      title: "I/C Product Add from SAGE300 to Magento2",
+      title: "Customer Update from Magento2 to SAGE300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2312,11 +2312,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "I/C Product Add from SAGE300 to Magento2",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 255
+    });
+    
+  
+    idx.add({
       title: "I/C Product Add from SAGE 300 to Shopify",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 255
+      id: 256
     });
     
   
@@ -2325,7 +2334,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 256
+      id: 257
     });
     
   
@@ -2334,7 +2343,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 257
+      id: 258
     });
     
   
@@ -2343,7 +2352,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 258
+      id: 259
     });
     
   
@@ -2352,7 +2361,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 259
+      id: 260
     });
     
   
@@ -2361,7 +2370,7 @@ var idx = lunr(function () {
       excerpt: "Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 260
+      id: 261
     });
     
   
@@ -2370,7 +2379,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 261
+      id: 262
     });
     
   
@@ -2379,7 +2388,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 262
+      id: 263
     });
     
   
@@ -2388,34 +2397,34 @@ var idx = lunr(function () {
       excerpt: "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 263
+      id: 264
     });
     
   
     idx.add({
       title: "Release Notes",
       excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
-      categories: ["AEC ReleaseNotes"],
-      tags: ["developers"],
-      id: 264
-    });
-    
-  
-    idx.add({
-      title: "2020",
-      excerpt: "This section will give you detailed decsription of 2020 releases.\n\nPresently the enlisted section is  Q2 Version 4.7.0\n",
-      categories: ["AEC ReleaseNotes"],
+      categories: ["release-notes"],
       tags: ["developers"],
       id: 265
     });
     
   
     idx.add({
-      title: "Q2 Release Version 4.7.0",
-      excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
-      categories: ["AEC ReleaseNotes"],
+      title: "2020",
+      excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
+      categories: ["release-notes"],
       tags: ["developers"],
       id: 266
+    });
+    
+  
+    idx.add({
+      title: "Q2 Release Version 4.7.0",
+      excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 267
     });
     
   
@@ -2424,7 +2433,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 267
+      id: 268
     });
     
   
@@ -2433,7 +2442,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 268
+      id: 269
     });
     
   
@@ -5239,6 +5248,17 @@ var store = [
     
       
       {
+        "title": "Customer Update from Shopify to SAGE 300",
+        "url": "/integration/sage-shopify/customer-update/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This document will let the users integrate updated customers...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Customer Update from Magento2 to SAGE300",
         "url": "/integration/customer-update/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
@@ -5361,7 +5381,7 @@ var store = [
       
       {
         "title": "Release Notes",
-        "url": "/aec%20releasenotes/overview-release/",
+        "url": "/release-notes/overview/",
         "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
         "teaser":
           
@@ -5372,8 +5392,8 @@ var store = [
       
       {
         "title": "2020",
-        "url": "/aec%20releasenotes/yearly/",
-        "excerpt": "This section will give you detailed decsription of 2020 releases.\n\nPresently the enlisted section is  Q2 Version 4.7.0\n",
+        "url": "/release-notes/2020/",
+        "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5383,7 +5403,7 @@ var store = [
       
       {
         "title": "Q2 Release Version 4.7.0",
-        "url": "/aec%20releasenotes/releasenote/",
+        "url": "/release-notes/2020-Q2/",
         "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
         "teaser":
           
