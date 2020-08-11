@@ -2420,11 +2420,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "2020-Q2 Version 1.0 Hotfix Release",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 267
+    });
+    
+  
+    idx.add({
       title: "Q2 Release Version 4.7.0",
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 267
+      id: 268
     });
     
   
@@ -2433,7 +2442,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 268
+      id: 269
     });
     
   
@@ -2442,7 +2451,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 269
+      id: 270
     });
     
   
@@ -5394,6 +5403,17 @@ var store = [
         "title": "2020",
         "url": "/release-notes/2020/",
         "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "2020-Q2 Version 1.0 Hotfix Release",
+        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
