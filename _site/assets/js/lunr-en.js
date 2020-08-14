@@ -2500,6 +2500,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Process Flow Packaging",
+      excerpt: "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 276
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5547,6 +5556,17 @@ var store = [
         "title": "Halt-Resume Node",
         "url": "/processflow/working-with-Halt-Resume/",
         "excerpt": "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Process Flow Packaging",
+        "url": "/processflow/processflow-packaging/",
+        "excerpt": "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -37,13 +37,13 @@ The steps to create a **Technology Application** is provided below.
 
 3) On dragging the technology specific template, the technology configuration window opens. You will be able to view the following fields.
 
-    - Name: Enter the name of the application 
-    - Enter Description: You can provide a small description for the application.
-    - App Version (Mandatory Field): You need to provide the version of the application used.
-    - Version Definition (Mandatory Field): You need to provide a short definition for the application version.
-    - Choose Picture: You can upload the app specific logo for identifying your application by clicking on the **Choose Picture** button. This logo will be viewed where the application is in use.
-    - Category: You can select the type of application based upon the categories such as Marketing, Huma Resource, Ecommerce, ERP, Accounting etc.
-    - Status: This defines the status of the application, by default, it will be selected as Released. 
+- Name: Enter the name of the application 
+- Enter Description: You can provide a small description for the application.
+- App Version (Mandatory Field): You need to provide the version of the application used.
+- Version Definition (Mandatory Field): You need to provide a short definition for the application version.
+- Choose Picture: You can upload the app specific logo for identifying your application by clicking on the **Choose Picture** button. This logo will be viewed where the application is in use.
+- Category: You can select the type of application based upon the categories such as Marketing, Huma Resource, Ecommerce, ERP, Accounting etc.
+- Status: This defines the status of the application, by default, it will be selected as Released. 
 
 ![techapp2](\staticfiles\processflow\media\techapp2.png)
 

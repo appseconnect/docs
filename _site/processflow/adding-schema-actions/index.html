@@ -1304,14 +1304,20 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/technology-app-creation-using-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/technology-app-creation-using-processflow/" onclick="selectTab('/processflow/technology-app-creation-using-processflow/', event);" title="Go to Technology App creation">Technology App creation</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1322,14 +1328,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/delete-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/delete-processflow/" onclick="selectTab('/processflow/delete-processflow/', event);" title="Go to Delete Processflow">Delete Processflow</a>
+    <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
+    <li class="menu-item-" data-url="/processflow/delete-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/delete-processflow/" onclick="selectTab('/processflow/delete-processflow/', event);" title="Go to Delete Processflow">Delete Processflow</a>
         
     </li>
     
@@ -2442,40 +2448,39 @@ the list of schema. And if <code class="language-plaintext highlighter-rouge">No
 <p>4) You will be able to view the <code class="language-plaintext highlighter-rouge">Three Radio buttons</code> that specifies the type of file you need to upload for importing.</p>
 
 <ul>
-  <li>
-    <p>Selecting <strong>XML</strong> - On selecting the import type as XML, you will be able to view the following fields.</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - Choose File: You will be able to select the XML files from your local system for importing the schemas.
-  - Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.
-  - Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
-</code></pre></div>    </div>
-
-    <p><img src="\staticfiles\processflow\media\pf_importschema2.PNG" alt="pf_importschema2" /></p>
-  </li>
-  <li>
-    <p>Selecting <strong>Json</strong> - On selecting the import type as Json, you will be able to view the following fields.</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - Choose File: You will be able to select the Json files from your local system for importing the schemas.
-  - Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.
-  - Render: Clicking on the Render button, the functionality would traverse your entire JSON file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
-</code></pre></div>    </div>
-
-    <p><img src="\staticfiles\processflow\media\pf_importschema3.PNG" alt="pf_importschema3" /></p>
-
+  <li>Selecting <strong>XML</strong> - On selecting the import type as XML, you will be able to view the following fields.
     <ul>
-      <li>
-        <p>Selecting <strong>WSDL</strong> - WSDL is the Web Services Description language. On selecting the Radio button for WSDL, you will be able to view the following fields.</p>
-
-        <ul>
-          <li>File URL: You will be able to provide the URL for importing the schemas for your application.</li>
-          <li>Render: Clicking on the Render button, the functionality would traverse your entire WSDL file and will list you all the Schema complex Objects and Complex Object Collections based upon the file.</li>
-        </ul>
-      </li>
+      <li>Choose File: You will be able to select the XML files from your local system for importing the schemas.</li>
+      <li>Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.</li>
+      <li>Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.</li>
     </ul>
-
-    <p><img src="\staticfiles\processflow\media\pf_importschema4.PNG" alt="pf_importschema4" /></p>
   </li>
 </ul>
+
+<p><img src="\staticfiles\processflow\media\pf_importschema2.PNG" alt="pf_importschema2" /></p>
+
+<ul>
+  <li>Selecting <strong>Json</strong> - On selecting the import type as Json, you will be able to view the following fields.
+    <ul>
+      <li>Choose File: You will be able to select the Json files from your local system for importing the schemas.</li>
+      <li>Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.</li>
+      <li>Render: Clicking on the Render button, the functionality would traverse your entire JSON file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\pf_importschema3.PNG" alt="pf_importschema3" /></p>
+
+<ul>
+  <li>Selecting <strong>WSDL</strong> - WSDL is the Web Services Description language. On selecting the Radio button for WSDL, you will be able to view the following fields.
+    <ul>
+      <li>File URL: You will be able to provide the URL for importing the schemas for your application.</li>
+      <li>Render: Clicking on the Render button, the functionality would traverse your entire WSDL file and will list you all the Schema complex Objects and Complex Object Collections based upon the file.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\pf_importschema4.PNG" alt="pf_importschema4" /></p>
 
 <p>5) Select the import type as per your requirement, upload the document as per the selected format and click on the Render Button. (Here, we have selected the XML type)</p>
 
@@ -4845,8 +4850,27 @@ you will be able to delete the Attribute(s) used in Mapping.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-packaging/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Process Flow Packaging
+                                </a>
+                            </li>
                             
                             
                             
@@ -4893,15 +4917,6 @@ you will be able to delete the Attribute(s) used in Mapping.</p>
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-processflow-delay/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Delay Node
-                                </a>
-                            </li>
                             
                             
                             

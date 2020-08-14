@@ -108,27 +108,24 @@ Process Flow allows you to import schemas that helps to create schemas and attri
 4) You will be able to view the `Three Radio buttons` that specifies the type of file you need to upload for importing.
 
 - Selecting **XML** - On selecting the import type as XML, you will be able to view the following fields.
-    
-        - Choose File: You will be able to select the XML files from your local system for importing the schemas.
-        - Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.
-        - Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
+    - Choose File: You will be able to select the XML files from your local system for importing the schemas.
+    - Element Name: You need to provide the parent Element name through which the XML file shall be traversed. Your file will not be traversed if you provide a wrong element name.
+    - Render: Clicking on the Render button, the functionality would traverse your entire XML file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
 
-    ![pf_importschema2](\staticfiles\processflow\media\pf_importschema2.PNG)
-    
-- Selecting **Json** - On selecting the import type as Json, you will be able to view the following fields.
+![pf_importschema2](\staticfiles\processflow\media\pf_importschema2.PNG)
 
-        - Choose File: You will be able to select the Json files from your local system for importing the schemas.
-        - Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.
-        - Render: Clicking on the Render button, the functionality would traverse your entire JSON file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
+-  Selecting **Json** - On selecting the import type as Json, you will be able to view the following fields.
+    - Choose File: You will be able to select the Json files from your local system for importing the schemas.
+    - Element Name: You need to provide the parent Element name through which the JSON file shall be traversed. Your file will not be traversed if you provide a wrong element name.
+    - Render: Clicking on the Render button, the functionality would traverse your entire JSON file as per the Element Name provided and will list you all the Schema complex Objects and Complex Object Collections ased upon the file.
 
-    ![pf_importschema3](\staticfiles\processflow\media\pf_importschema3.PNG)
+![pf_importschema3](\staticfiles\processflow\media\pf_importschema3.PNG)
 
-    - Selecting **WSDL** - WSDL is the Web Services Description language. On selecting the Radio button for WSDL, you will be able to view the following fields.
+- Selecting **WSDL** - WSDL is the Web Services Description language. On selecting the Radio button for WSDL, you will be able to view the following fields.
+    - File URL: You will be able to provide the URL for importing the schemas for your application.
+    - Render: Clicking on the Render button, the functionality would traverse your entire WSDL file and will list you all the Schema complex Objects and Complex Object Collections based upon the file.
 
-        - File URL: You will be able to provide the URL for importing the schemas for your application.
-        - Render: Clicking on the Render button, the functionality would traverse your entire WSDL file and will list you all the Schema complex Objects and Complex Object Collections based upon the file.
-
-    ![pf_importschema4](\staticfiles\processflow\media\pf_importschema4.PNG)
+![pf_importschema4](\staticfiles\processflow\media\pf_importschema4.PNG)
 
 5) Select the import type as per your requirement, upload the document as per the selected format and click on the Render Button. (Here, we have selected the XML type)
 

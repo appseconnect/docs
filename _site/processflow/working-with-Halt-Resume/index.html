@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="What is halt-resume nodeHALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current node and process flow transferred to another node. After completing the transferred flow when the workflow engine will find a RESUME node then the halted process will start again. For example, we are executing order download process through a workflow but before completing the orders to the destination app we want to run the customer download process and after customer download process completes we want to resume order download process in this scenario we can use Halt-Resume node. You can apply halt node after the getting data for order download for halting the order download process and transferring the flow to customer download process, next after customer download process completes we can apply a resume node to resume the order download process.">
+<meta name="description" content="What is halt-resume nodeHALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current node and process flow transferred to another node. After completing the transferred flow the Process Flow engine will find the RESUME node of the corresspoding HALT, which will initiate the resume process.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="What is halt-resume nodeHALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current node and process flow transferred to another node. After completing the transferred flow when the workflow engine will find a RESUME node then the halted process will start again. For example, we are executing order download process through a workflow but before completing the orders to the destination app we want to run the customer download process and after customer download process completes we want to resume order download process in this scenario we can use Halt-Resume node. You can apply halt node after the getting data for order download for halting the order download process and transferring the flow to customer download process, next after customer download process completes we can apply a resume node to resume the order download process.">
+  <meta property="og:description" content="What is halt-resume nodeHALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current node and process flow transferred to another node. After completing the transferred flow the Process Flow engine will find the RESUME node of the corresspoding HALT, which will initiate the resume process.">
 
 
 
@@ -1304,14 +1304,20 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/technology-app-creation-using-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/technology-app-creation-using-processflow/" onclick="selectTab('/processflow/technology-app-creation-using-processflow/', event);" title="Go to Technology App creation">Technology App creation</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1322,14 +1328,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/delete-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/delete-processflow/" onclick="selectTab('/processflow/delete-processflow/', event);" title="Go to Delete Processflow">Delete Processflow</a>
+    <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
+    <li class="menu-item-" data-url="/processflow/delete-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/delete-processflow/" onclick="selectTab('/processflow/delete-processflow/', event);" title="Go to Delete Processflow">Delete Processflow</a>
         
     </li>
     
@@ -2236,7 +2242,7 @@
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Halt-Resume Node">
-        <meta itemprop="description" content="What is halt-resume nodeHALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current node and process flow transferred to another node. After completing the transferred flow when the workflow engine will find a RESUME node then the halted process will start again. For example, we are executing order download process through a workflow but before completing the orders to the destination app we want to run the customer download process and after customer download process completes we want to resume order download process in this scenario we can use Halt-Resume node. You can apply halt node after the getting data for order download for halting the order download process and transferring the flow to customer download process, next after customer download process completes we can apply a resume node to resume the order download process.">
+        <meta itemprop="description" content="What is halt-resume nodeHALT and RESUME nodes are used in a combination. We implement HALT node to halt the execution of the current node and process flow transferred to another node. After completing the transferred flow the Process Flow engine will find the RESUME node of the corresspoding HALT, which will initiate the resume process.">
         <meta itemprop="datePublished" content="August 08, 2020">
         
 
@@ -2305,7 +2311,7 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2319,6 +2325,10 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#what-is-halt-resume-node">What is halt-resume node</a></li>
+  <li><a href="#understanding-conditions">Understanding conditions:</a></li>
+  <li><a href="#prerequisites">Prerequisites:</a></li>
+  <li><a href="#working-principle">Working Principle:</a></li>
+  <li><a href="#business-scenarios-for-halt-resume">Business scenarios for Halt-Resume:</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2326,9 +2336,61 @@
                 <h2 id="what-is-halt-resume-node">What is halt-resume node</h2>
 <p>HALT and RESUME nodes are used in a combination. 
 We implement HALT node to halt the execution of the current node and process flow transferred to another node. 
-After completing the transferred flow when the workflow engine will find a RESUME node then the halted process will start again. 
-For example, we are executing order download process through a workflow but before completing the orders to the destination app we want to run the customer download process and after customer download process completes we want to resume order download process in this scenario we can use Halt-Resume node. 
-You can apply halt node after the getting data for order download for halting the order download process and transferring the flow to customer download process, next after customer download process completes we can apply a resume node to resume the order download process.</p>
+After completing the transferred flow the Process Flow engine will find the RESUME node of the corresspoding HALT, which will initiate the resume process.</p>
+
+<h2 id="understanding-conditions">Understanding conditions:</h2>
+
+<ul>
+  <li>Halt Resume is a paired node and while dragging the node to the designer, both Halt and Resume get dragged as well.</li>
+  <li>You will not have any node configuration window for Halt Resume Nodes</li>
+  <li>The flow remains halted until, <strong>resume node</strong> encounters the flow.</li>
+  <li>You can add multiple Halt Resume nodes in a flow and each pair of Halt Resume nodes is distinguished using multiple colour combinations.</li>
+  <li>On deleting the Halt Node, the corresponding Resume node gets deleted as well.</li>
+  <li>You can connect Resume node with an another Resume Node, but you cannot connect a HALT with an another HALT.</li>
+</ul>
+
+<h2 id="prerequisites">Prerequisites:</h2>
+
+<ul>
+  <li>You need to have valid credentials of the portal.</li>
+  <li>You need to <a href="/processflow/creating-processflow/">create a Process Flow</a> or need to have an existing Process Flow developed.</li>
+  <li>You can implement <a href="/processflow/working-with-processflow-selfloop/">Self Loop</a> over Halt Resume.</li>
+</ul>
+
+<h2 id="working-principle">Working Principle:</h2>
+
+<p>1) Drag the Halt node to the designer from Process Property menu. The corresponding Resume node gets dragged as well.</p>
+
+<p>2) Join the links with each node as per your scenario and SAVE the process flow.</p>
+
+<p><img src="\staticfiles\processflow\media\pf_haltresume1.PNG" alt="pf_haltresume1" /></p>
+
+<p>3) <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute the Process flow</a> after covering all other configurations.</p>
+
+<p>The above flow is based on the scenario provided below. Listed below are some of the scenarios that will help you implement business specific process flows using Halt-Resume node.</p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li>On deleting the Halt Node, the corresponding Resume node gets deleted as well.</li>
+  <li>The output of the HALT node can only be connected to a GET node.</li>
+  <li>The output of the Resume node can  be connected to any GET, MAPPER, POST &amp; Decision Node.</li>
+  <li>Neither HALT nor Resume can be implemented with Self-Loop.</li>
+</ul>
+
+<h2 id="business-scenarios-for-halt-resume">Business scenarios for Halt-Resume:</h2>
+
+<p>A) Suppose, you are executing order download process through a Process Flow but before completing the orders to the destination app you want to run the customer download process and after customer download process completes, you want the resume order download process.</p>
+
+<p>In this scenario we can use Halt-Resume node where you apply halt node after the getting data for order download the further process of order download is halted and is transferred to the customer download process, next after customer download process completes we can apply a resume node to resume the halted process of order download</p>
+
+<p><img src="\staticfiles\processflow\media\pf_haltresume1.PNG" alt="pf_haltresume2" /></p>
+
+<p>B) Suppose, you are executing a sales cycle for the application Shopify &amp; SAGE 300. Before completing the upload process of the Invoice, the order needs to be downloaded first and before downloading the orders, you need to download the customers.</p>
+
+<p>In this scenario, we use multiple Halt-Resume nodes in a single process flow where you apply the HALT after getting the invoices from SAGE 300, followed by applying an another HALT after getting the orders. The flow transfer to the download process of the customers from shopify. After the download process of the customers, the Resume corresponding to the HALT of Order Download process is implemented to RESUME the order download process followed by implementing the RESUME of the HALT, corresponding to the Invoice upload process.</p>
+
+<p><img src="\staticfiles\processflow\media\pf_haltresume3.PNG" alt="pf_haltresume3" /></p>
 
                 
             </section>
@@ -4575,8 +4637,27 @@ You can apply halt node after the getting data for order download for halting th
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-packaging/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Process Flow Packaging
+                                </a>
+                            </li>
                             
                             
                             
@@ -4625,15 +4706,6 @@ You can apply halt node after the getting data for order download for halting th
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-variable/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Working with Capture Variables
-                                </a>
-                            </li>
                             
                             
                             
