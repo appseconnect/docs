@@ -20,7 +20,7 @@ in a different organisation. This document will help you to create a new package
 - You need to have valid credential to the portal.
 - You need to have the Process Flow created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
 
-## Steps to create a Package
+## Creating Process flow Packages:
 
 1) Navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 
@@ -48,14 +48,45 @@ By default, the [Home Folder](/processflow/processflow-listing-page/#usability-f
 - **Version** - Will display the process flow version.
 - **Image** -  This will let you view all the logos of the application implemented inside the process flow. Process Flow Exceeding 4 Applications inside will have a carousel slider in the image column to let you view all the applications in use.
 
-Select the process flows by enabling the checkboxes beside the process flow names. You will be able to view the **Selected Process Flows** table above, along with the same details. Click on the **Continue** button.
+Select the process flows by enabling the checkboxes beside the process flow names. You will be able to view the **Selected Process Flows** table above, along with the same details. 
 
 ![package4](\staticfiles\processflow\media\package4.PNG)
 
-6) You can now view the **Configuration** section. You need to provide the following details.
+6) Click on the **Continue** button. You can now view the **Configuration** section. You need to provide the following details. The following details will be available in this section.
 
+- **Package Name** - You need to enter the name of the package. The name should be less than 100 characters.
+- **Package Description** - You will be provided with a platform to enter a description to the package. There is no limitation to the description based on the number of characters.
+- **Version** - You can provide a version to the package. The version should be greater than or equal to 3 decimal places. You will be provided with an example, beneath the field.
+- **Package Documentation** - This is a markdown editor and you need to add the related documentation or links for reference. You can also preview the provided document or link by clicking on the preview button. You need to use `Markdown Syntaxes` for documenting.
+
+![package5](\staticfiles\processflow\media\package5.PNG)
+
+7) Click on the Continue button. You will be navigated to the **Preview** section. You will be able to view all the related details you provided in the previous steps.
+
+![package6](\staticfiles\processflow\media\package6.PNG)
+
+8) Click on the **Create** button to the create the package.
+
+Following the above process, you can successfully create a process flow package.
 
 ## Listing Packages:
+
+Once you have created your process flow Package, you can successfully view the package lists in the process flow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.
+
+1) Navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
+
+2) Expand the package library node. You will be able to view the folder **My Packages**. 
+
+3) Click on the My packages folder. You will be able to view the "My Packages" listing page. The following information will be displayed in the listing page.
+
+- **Package Name** - You will be able to view the names of the packages listed in the "Package Name" column.
+- **Package Description** - You will be able to view the package description provided while creating the package.
+- **Apps** - You can view all the applications used in the process flows containing in the package in a corousel slider.
+- **Actions** - Clicking on the Ellipses (Three horizontal dots) on the action column, you can view the following two options: **Edit** & **View**.
+
+![package7](\staticfiles\processflow\media\package7.PNG)
+
+Following the above process you can successfully view the list of the packages.
 
 ## Viewing Packages:
 
