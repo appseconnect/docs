@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/sources/listcourses/adapter</loc>
-<lastmod>2020-07-20T17:26:14+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/sources/listcourses/environment</loc>
-<lastmod>2020-07-20T17:26:14+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/sources/listcourses/platform</loc>
-<lastmod>2020-07-20T17:26:14+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/sources/listcourses/rules</loc>
-<lastmod>2020-07-20T17:26:14+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/sources/listcourses/touchpoint</loc>
-<lastmod>2020-07-20T17:26:14+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/sources/workflow-course/</loc>
-<lastmod>2020-07-20T17:26:14+05:30</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/sdk/Overview-of-SDK/</loc>
 <lastmod>2010-01-01T00:00:00+05:30</lastmod>
 </url>
