@@ -101,3 +101,5 @@ return types are as under :
 The `CallAPI` method is used to execute an API to the application.
 
 Once the method is returning a value, you can put the data in a variable on mapping section and iterate the data over. 
+
+**Note : Do not call save credential from app resource file.**
