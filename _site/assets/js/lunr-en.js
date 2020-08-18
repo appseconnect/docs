@@ -2509,6 +2509,24 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Package Installation",
+      excerpt: "\n",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 277
+    });
+    
+  
+    idx.add({
+      title: "Package Sharing",
+      excerpt: "\n",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 278
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5567,6 +5585,28 @@ var store = [
         "title": "Process Flow Packaging",
         "url": "/processflow/processflow-packaging/",
         "excerpt": "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Package Installation",
+        "url": "/processflow/processflow-package-installation/",
+        "excerpt": "\n",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Package Sharing",
+        "url": "/processflow/processflow-package-sharing/",
+        "excerpt": "\n",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
