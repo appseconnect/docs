@@ -2520,19 +2520,19 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Package Installation",
-      excerpt: "\n",
+      excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 277
+      id: 278
     });
     
   
     idx.add({
       title: "Package Sharing",
-      excerpt: "\n",
+      excerpt: "Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 278
+      id: 279
     });
     
   
@@ -5615,7 +5615,7 @@ var store = [
       {
         "title": "Package Installation",
         "url": "/processflow/processflow-package-installation/",
-        "excerpt": "\n",
+        "excerpt": "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5626,7 +5626,7 @@ var store = [
       {
         "title": "Package Sharing",
         "url": "/processflow/processflow-package-sharing/",
-        "excerpt": "\n",
+        "excerpt": "Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
