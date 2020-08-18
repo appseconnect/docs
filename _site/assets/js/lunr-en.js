@@ -2402,11 +2402,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "2020-Q2 Version 1.0 Hotfix Release Note",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 265
+    });
+    
+  
+    idx.add({
       title: "Release Notes",
       excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 265
+      id: 266
     });
     
   
@@ -2415,7 +2424,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed description of 2020 releases. Presently the enlisted section is Q2 Version 4.7.0 Previous Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 266
+      id: 267
     });
     
   
@@ -2424,7 +2433,7 @@ var idx = lunr(function () {
       excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 267
+      id: 268
     });
     
   
@@ -2433,7 +2442,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 268
+      id: 269
     });
     
   
@@ -2442,7 +2451,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 269
+      id: 270
     });
     
   
@@ -2451,7 +2460,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 270
+      id: 271
     });
     
   
@@ -2460,7 +2469,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 271
+      id: 272
     });
     
   
@@ -2469,7 +2478,7 @@ var idx = lunr(function () {
       excerpt: "Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 272
+      id: 273
     });
     
   
@@ -2478,7 +2487,7 @@ var idx = lunr(function () {
       excerpt: "Link Ordering of Nodes for Sequential Execution Process Flow being the advanced sync flow feature of APPSeCONNECT, allows you to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 273
+      id: 274
     });
     
   
@@ -2487,7 +2496,7 @@ var idx = lunr(function () {
       excerpt: "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 274
+      id: 275
     });
     
   
@@ -2496,7 +2505,7 @@ var idx = lunr(function () {
       excerpt: "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 275
+      id: 276
     });
     
   
@@ -2505,7 +2514,7 @@ var idx = lunr(function () {
       excerpt: "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 276
+      id: 277
     });
     
   
@@ -5435,6 +5444,17 @@ var store = [
         "title": "Protocol Implementation for Applications",
         "url": "/processflow/protocol-implementation/",
         "excerpt": "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "2020-Q2 Version 1.0 Hotfix Release Note",
+        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
