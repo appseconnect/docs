@@ -1310,14 +1310,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/technology-app-creation-using-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/technology-app-creation-using-processflow/" onclick="selectTab('/processflow/technology-app-creation-using-processflow/', event);" title="Go to Technology App creation">Technology App creation</a>
+    <li class="menu-item-" data-url="/processflow/processflow-package-installation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-installation/" onclick="selectTab('/processflow/processflow-package-installation/', event);" title="Go to Package Installation">Package Installation</a>
         
     </li>
     
@@ -1328,20 +1322,38 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/technology-app-creation-using-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/technology-app-creation-using-processflow/" onclick="selectTab('/processflow/technology-app-creation-using-processflow/', event);" title="Go to Technology App creation">Technology App creation</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
+    <li class="menu-item-" data-url="/processflow/delete-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/delete-processflow/" onclick="selectTab('/processflow/delete-processflow/', event);" title="Go to Delete Processflow">Delete Processflow</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/delete-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/delete-processflow/" onclick="selectTab('/processflow/delete-processflow/', event);" title="Go to Delete Processflow">Delete Processflow</a>
+    <li class="menu-item-" data-url="/processflow/snapshot-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/snapshot-processflow/" onclick="selectTab('/processflow/snapshot-processflow/', event);" title="Go to Data view of Snapshot">Data view of Snapshot</a>
         
     </li>
     
@@ -2331,7 +2343,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#creating-process-flow-packages">Creating Process flow Packages:</a></li>
+  <li><a href="#creating-packages">Creating Packages:</a></li>
   <li><a href="#listing-packages">Listing Packages:</a></li>
   <li><a href="#viewing-packages">Viewing Packages:</a></li>
   <li><a href="#editing-packages">Editing Packages:</a></li>
@@ -2350,7 +2362,7 @@ in a different organisation. This document will help you to create a new package
   <li>You need to have the Process Flow created. Steps to create new process flow is given <a href="/processflow/creating-processflow/">here</a></li>
 </ul>
 
-<h2 id="creating-process-flow-packages">Creating Process flow Packages:</h2>
+<h2 id="creating-packages">Creating Packages:</h2>
 
 <p>1) Navigate to the Process Flow module. The <a href="/processflow/processflow-listing-page/">Process Flow listing</a> page appears.</p>
 
@@ -2363,9 +2375,9 @@ in a different organisation. This document will help you to create a new package
 <p>3) Click on the <strong>Click Here</strong> button to create a new package. The package creation window appears. The package creation window comprises of three sections.</p>
 
 <ul>
-  <li><strong>Choose Process Flows</strong> - Here, you will be asked to select the process flow from the list below. The selected process flow will be displayed in the upper table as you select.</li>
+  <li><strong>Choose Process Flows</strong> - Here, you are required to select the process flows from the list below. The selected process flow will be displayed in the upper table as you select.</li>
   <li><strong>Configuration</strong> - This page will let to provide details to the package like <strong>Package Name</strong>, <strong>Package Description</strong>, <strong>Version</strong>, <strong>Package Documentation</strong>.</li>
-  <li><strong>preview</strong> - This will preview you all the details you have provided in the earlier steps.</li>
+  <li><strong>Preview</strong> - This will preview you all the details you have provided in the earlier steps.</li>
 </ul>
 
 <p><img src="\staticfiles\processflow\media\package3.PNG" alt="package3" /></p>
@@ -4691,8 +4703,46 @@ By default, the <a href="/processflow/processflow-listing-page/#usability-for-th
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-package-sharing/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Package Sharing
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-package-installation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Package Installation
+                                </a>
+                            </li>
                             
                             
                             
@@ -4732,24 +4782,6 @@ By default, the <a href="/processflow/processflow-listing-page/#usability-for-th
                             
                             
                             
-                            
-                            <li>
-                                <a href="/processflow/technology-app-creation-using-processflow/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Technology App creation Within Process Flow
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/working-with-processflow-delay/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Delay Node
-                                </a>
-                            </li>
                             
                             
                             

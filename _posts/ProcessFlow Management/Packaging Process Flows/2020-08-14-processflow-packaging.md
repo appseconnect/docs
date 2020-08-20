@@ -20,7 +20,7 @@ in a different organisation. This document will help you to create a new package
 - You need to have valid credential to the portal.
 - You need to have the Process Flow created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
 
-## Creating Process flow Packages:
+## Creating Packages:
 
 1) Navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 
@@ -32,9 +32,9 @@ in a different organisation. This document will help you to create a new package
 
 3) Click on the **Click Here** button to create a new package. The package creation window appears. The package creation window comprises of three sections.
 
-- **Choose Process Flows** - Here, you will be asked to select the process flow from the list below. The selected process flow will be displayed in the upper table as you select.
+- **Choose Process Flows** - Here, you are required to select the process flows from the list below. The selected process flow will be displayed in the upper table as you select.
 - **Configuration** - This page will let to provide details to the package like **Package Name**, **Package Description**, **Version**, **Package Documentation**.
-- **preview** - This will preview you all the details you have provided in the earlier steps.
+- **Preview** - This will preview you all the details you have provided in the earlier steps.
 
 ![package3](\staticfiles\processflow\media\package3.PNG)
 
