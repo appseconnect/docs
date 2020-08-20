@@ -2354,10 +2354,10 @@ nodes in a hierarchical structure as represented in the XML file.</p>
 <img src="../../staticfiles/processflow/media/mapper/xpath-mapping-processflow1.PNG" alt="Xpath Mapping Processflow1" /></li>
   <li>Expand the Transform node till the Complex Objects and the ComplexObjectsCollections are visible.<br />
 <strong>Note: In this case the processflow Business Partner add is used for the connection Magento2 and SAP B1.</strong></li>
-  <li>In the ComplexObject <code class="language-plaintext highlighter-rouge">BPAddresses</code>, XPATH has been provided for mapping the attribute Street.<br />
+  <li>In the ComplexObject <code class="highlighter-rouge">BPAddresses</code>, XPATH has been provided for mapping the attribute Street.<br />
 <img src="../../staticfiles/processflow/media/mapper/xpath-mapping-processflow2.PNG" alt="Xpath Mapping Processflow2" /><br />
 <strong>Note: The XPATH should be provided based upon the INPUT packet generated after the sync process. As a prerequisite, the processflow should be deployed and executed for viewing the XML nodes structure hierarchy.</strong></li>
-  <li>The XPATH mapped is <code class="language-plaintext highlighter-rouge">{ {street/item[1]} }</code>. [1] indicates the first position instance of the node item under 
+  <li>The XPATH mapped is <code class="highlighter-rouge">{ {street/item[1]} }</code>. [1] indicates the first position instance of the node item under 
 the element street shall be accessed.</li>
   <li>For easy know-how, view the input packet provided below.
 <img src="/staticfiles/Transformation/media/xpath-usecase2.png" alt="xpath-usecase2" /></li>

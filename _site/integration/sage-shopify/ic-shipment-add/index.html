@@ -2390,15 +2390,15 @@
 
 <p><a href="http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/ShippingOrdersAndItems.htm">Click Here</a> to know more about the adding Shipments.</p>
 
-<p>Here, in this case the Shipment generated for the SAGE Order ID is <code class="language-plaintext highlighter-rouge">350465</code>.</p>
+<p>Here, in this case the Shipment generated for the SAGE Order ID is <code class="highlighter-rouge">350465</code>.</p>
 
 <h2 id="lookup-mapping">Lookup Mapping:</h2>
 
-<p>For posting newly added quantity to Shopify from SAGE 300, you need to add Lookup for <code class="language-plaintext highlighter-rouge">Inventory Location</code>. For this integration, mapping lookups for inventory location is mandatory.</p>
+<p>For posting newly added quantity to Shopify from SAGE 300, you need to add Lookup for <code class="highlighter-rouge">Inventory Location</code>. For this integration, mapping lookups for inventory location is mandatory.</p>
 
 <p><img src="\staticfiles\integration\SAGE300-Shopify\invupdate3.PNG" alt="shipadd3" /></p>
 
-<p><strong><em>Note:</em></strong> <em>After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the <code class="language-plaintext highlighter-rouge">Update Configuration</code> button followed by <code class="language-plaintext highlighter-rouge">Update Lookup Tables</code> in the Agent.</em></p>
+<p><strong><em>Note:</em></strong> <em>After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the <code class="highlighter-rouge">Update Configuration</code> button followed by <code class="highlighter-rouge">Update Lookup Tables</code> in the Agent.</em></p>
 
 <h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
 
@@ -2419,9 +2419,9 @@
 <p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
 
 <h2 id="post-conditions">Post Conditions:</h2>
-<p>You can view the data sync in Shopify by navigating to  the <code class="language-plaintext highlighter-rouge">Order Details Page</code> of the customer. The order tag gets the <strong>Fulfilled</strong> status on successful <code class="language-plaintext highlighter-rouge">shipment</code> of all the items.</p>
+<p>You can view the data sync in Shopify by navigating to  the <code class="highlighter-rouge">Order Details Page</code> of the customer. The order tag gets the <strong>Fulfilled</strong> status on successful <code class="highlighter-rouge">shipment</code> of all the items.</p>
 
-<p><strong>Note:</strong> If the shipment is synced for partial items and partial quantities, the order status will be as <code class="language-plaintext highlighter-rouge">Partially Fulfilled</code> even if the sync status is successful.</p>
+<p><strong>Note:</strong> If the shipment is synced for partial items and partial quantities, the order status will be as <code class="highlighter-rouge">Partially Fulfilled</code> even if the sync status is successful.</p>
 
 <h2 id="frequency-of-use">Frequency of Use:</h2>
 

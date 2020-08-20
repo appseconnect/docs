@@ -2350,18 +2350,18 @@
 
 <h3 id="understanding-conditions">Understanding conditions</h3>
 
-<p>Delay node can be implemented anywhere within a process flow, and the configuration for implementing delay can be provided using <code class="language-plaintext highlighter-rouge">Static Time</code> or by using a <code class="language-plaintext highlighter-rouge">Dynamic Time</code>.
+<p>Delay node can be implemented anywhere within a process flow, and the configuration for implementing delay can be provided using <code class="highlighter-rouge">Static Time</code> or by using a <code class="highlighter-rouge">Dynamic Time</code>.
 Dragging the Delay node in the Designer panel, you can view the following fields for configuring Delay.</p>
 
 <ul>
   <li><strong>Description of Node:</strong> Here, you can provide a short description for the Delay Node.</li>
   <li>
-    <p><strong>Wait Time:</strong> This field initiates the delay process. You can either provide a <code class="language-plaintext highlighter-rouge">Static Time</code> or <code class="language-plaintext highlighter-rouge">Dynamic Time</code>.</p>
+    <p><strong>Wait Time:</strong> This field initiates the delay process. You can either provide a <code class="highlighter-rouge">Static Time</code> or <code class="highlighter-rouge">Dynamic Time</code>.</p>
 
     <ul>
       <li>Delay on <strong>Static Time:</strong>
         <ul>
-          <li>On selecting the checkbox for Static Time, you will be provided with a field <code class="language-plaintext highlighter-rouge">Enter Value</code>.</li>
+          <li>On selecting the checkbox for Static Time, you will be provided with a field <code class="highlighter-rouge">Enter Value</code>.</li>
           <li>The field is defined with placeholder text as per the time format - <strong>hr (hours), min (minutes), sec (seconds), and ms (milliseconds).</strong></li>
           <li>You need to provide a static value, that will define the duration of the delay time.</li>
           <li>Click on the SAVE button after providing the value.</li>
@@ -2374,7 +2374,7 @@ Dragging the Delay node in the Designer panel, you can view the following fields
     <ul>
       <li>Delay on <strong>Dynamic Time:</strong>
         <ul>
-          <li>On selecting the checkbox for <code class="language-plaintext highlighter-rouge">Dynamic Time</code>, you will be provided with a field <code class="language-plaintext highlighter-rouge">Define your function</code>.</li>
+          <li>On selecting the checkbox for <code class="highlighter-rouge">Dynamic Time</code>, you will be provided with a field <code class="highlighter-rouge">Define your function</code>.</li>
           <li>You need to provide a generic expression with proper syntax for initiating the duration of the delay time.</li>
           <li>Click on the SAVE button after providing the value.</li>
         </ul>
@@ -2389,7 +2389,7 @@ Dragging the Delay node in the Designer panel, you can view the following fields
 
 <p><strong>- For Static Time, the time format should be provided as hr (hours), min (minutes), sec (seconds), and ms (milliseconds).</strong>
 **- For Dynamic Time, you need to provide the expression using proper syntax.
-**- You need to provide <code class="language-plaintext highlighter-rouge">~ (tilt icon)</code> along with the curly braces <code class="language-plaintext highlighter-rouge">{}</code> both at the front and back when providing the generic function. For Ex: <code class="language-plaintext highlighter-rouge">~{gen:GetContextualData(Variable Name)}~</code></p>
+**- You need to provide <code class="highlighter-rouge">~ (tilt icon)</code> along with the curly braces <code class="highlighter-rouge">{}</code> both at the front and back when providing the generic function. For Ex: <code class="highlighter-rouge">~{gen:GetContextualData(Variable Name)}~</code></p>
 
 <h3 id="prerequisities">Prerequisities</h3>
 
@@ -2404,7 +2404,7 @@ Dragging the Delay node in the Designer panel, you can view the following fields
 
 <p>1) Drag the Delay node in the <a href="/processflow/designer-processflow/">designer panel</a> of the Process Flow. The node configuration window for Delay node opens.</p>
 
-<p>2) You can view the above mentioned fields. Enter the Node Description and select the desired checkbox for <code class="language-plaintext highlighter-rouge">Wait Time</code>.</p>
+<p>2) You can view the above mentioned fields. Enter the Node Description and select the desired checkbox for <code class="highlighter-rouge">Wait Time</code>.</p>
 
 <p>3) Enter the static value and click on the SAVE button. Save the process flow for storing the changes.</p>
 
@@ -2418,17 +2418,17 @@ Dragging the Delay node in the Designer panel, you can view the following fields
 
 <p><img src="\staticfiles\processflow\media\delay5.PNG" alt="delay5" /></p>
 
-<p><strong>Note: The above flow for delay node was configured with <code class="language-plaintext highlighter-rouge">Static Time</code>.</strong></p>
+<p><strong>Note: The above flow for delay node was configured with <code class="highlighter-rouge">Static Time</code>.</strong></p>
 
 <h2 id="implementation-scenarios-for-delay-node">Implementation scenarios for Delay Node:</h2>
 
 <p><strong>(A) Implementing Delay using Generic Function:</strong></p>
 
-<p>Currently, for implementing Delay using Generic Function, you will have to create a <a href="/processflow/working-with-variable/#creating-variable">Variable</a> of <strong>String</strong> datatype with default value provided as: <code class="language-plaintext highlighter-rouge">Hour=00;Min=00;Sec=00;Millisec=00</code>. The scope of the variable should be <code class="language-plaintext highlighter-rouge">Process Flow</code> (Global Variable) so as to use the variable in Delay Node.</p>
+<p>Currently, for implementing Delay using Generic Function, you will have to create a <a href="/processflow/working-with-variable/#creating-variable">Variable</a> of <strong>String</strong> datatype with default value provided as: <code class="highlighter-rouge">Hour=00;Min=00;Sec=00;Millisec=00</code>. The scope of the variable should be <code class="highlighter-rouge">Process Flow</code> (Global Variable) so as to use the variable in Delay Node.</p>
 
 <p><img src="\staticfiles\processflow\media\delay6.PNG" alt="delay6" /></p>
 
-<p>Navigating back to the node configuration window for Delay Node, on selecting the <strong>WaitTime</strong> checkbox as <strong>Dynamic Time</strong>, you will be required to provide the generic function for operating the delay. Enter the generic function <code class="language-plaintext highlighter-rouge">~~{gen:GetContextualDataObject(' VariableName ')}~</code> with the variable name passed in its parameter. 
+<p>Navigating back to the node configuration window for Delay Node, on selecting the <strong>WaitTime</strong> checkbox as <strong>Dynamic Time</strong>, you will be required to provide the generic function for operating the delay. Enter the generic function <code class="highlighter-rouge">~~{gen:GetContextualDataObject(' VariableName ')}~</code> with the variable name passed in its parameter. 
 Deploy and Execute the Process Flow for implementing the Delay.</p>
 
 <p><img src="\staticfiles\processflow\media\delay7.PNG" alt="delay7" /></p>
