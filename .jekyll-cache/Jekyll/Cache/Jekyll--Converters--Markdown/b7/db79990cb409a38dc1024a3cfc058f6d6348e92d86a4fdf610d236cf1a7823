@@ -1,0 +1,70 @@
+I"‹<p>Users can <code class="language-plaintext highlighter-rouge">define Filters for integration scenario</code> as per business requirements for the GET,
+POST and PUT operation. This section of the document provide details of these filters 
+and steps on how to initialize these filters.</p>
+
+<h2 id="pre-requisites">Pre-requisites</h2>
+<ul>
+  <li>Require Valid APPSeCONNECT account.</li>
+  <li>Create OLEDB Connection &amp; <a href="/connectors/OLEDB-Credentials/">validate the connection</a>.</li>
+  <li>Create Touchpoints for the required connection.</li>
+</ul>
+
+<p><strong>Note: If you have taken Pre-packaged apps and its connection templates, Touchpoints will also come pre-packaged</strong></p>
+
+<h2 id="operations">Operations</h2>
+
+<h3 id="for-get-operation">For GET Operation</h3>
+<p>The GET Operation is for fetching data from OLEDB. The configuration for the GET Operation is needed to be done in the Schema level of the OLEDB Application. 
+The path way for configuring GET in Schema level is
+Login to the Portal -APP section-Schema of the APP (OLE DB).</p>
+<ol>
+  <li>A Schema is to be created (similar to the Table name) to which you have to add data. The Below Window shows the Schema for the OLEDB App.
+<img src="/staticfiles/connectors/media/technology-connector/Schema-GetOperation-OLEDB.png" alt="Schema Get Operation O L E D B" /></li>
+  <li>Expand the Schema and Click on the <code class="language-plaintext highlighter-rouge">ADD ACTION</code> button. The Database Schema Window opens.
+<img src="/staticfiles/connectors/media/technology-connector/DatabaseSchema-GetOperation-OLEDB.png" alt="Database Schema Get Operation O L E D B" /></li>
+  <li>In the Database Schema Window, The Action Name for the GET operation should be SELECT.</li>
+  <li>The Query section should be provided with the ACTION FILTER that is to be provided in the 
+SQL Syntax as shown below. Click on SAVE after specifying the Action Filter.
+<img src="/staticfiles/connectors/media/technology-connector/databaseschema-GetAction-OLEDB.png" alt="Databaseschema Get Action O L E D B" /></li>
+</ol>
+
+<p><strong>Note: Action Filters is needed to be given in SQL Syntax</strong></p>
+
+<h3 id="for-post-operation">For POST Operation</h3>
+<p>The POST Operation is for adding data to OLEDB. The configuration for the POST is to be done in the Schema level of the OLEDB Application. 
+The steps for configuring POST in Schema level is given below:</p>
+
+<p>Login to the Portal&gt;APP section&gt;Schema of the APP (OLE DB).</p>
+
+<ol>
+  <li>A Schema is to be created whose name should be the Table name to which the data is to be added. 
+The window given below shows the Schema for the OLEDB App.
+<img src="/staticfiles/connectors/media/technology-connector/PostOperation-Schema.png" alt="Post Operation Schema" /></li>
+  <li>Provide the Attribute names in the Schema level which will be the column names of the table.</li>
+  <li>The below window shows all the column names of the table. The user can also add new attributes by 
+clicking on the + button provided beside the Schema name.
+<img src="/staticfiles/connectors/media/technology-connector/PostOperation-Attribute.png" alt="Post Operation Attribute" /></li>
+  <li>Create a <code class="language-plaintext highlighter-rouge">New Action</code> whose <code class="language-plaintext highlighter-rouge">Action Name should be POST</code>
+<img src="/staticfiles/connectors/media/technology-connector/PostOperation-Action.png" alt="Post Operation Action" />
+<strong>Note: For POST operation, no Action filters is required.</strong></li>
+</ol>
+
+<h3 id="for-put-operation">For PUT Operation</h3>
+
+<p>As a Pre-requisite for PUT operation Schema Attributes should be made as a primary property. 
+The pathway for enabling attribute as Primary Property is.</p>
+
+<p>Login to the Portal&gt;APP section&gt;Schema of the APP (OLE DB)&gt;View Attributes.
+<img src="/staticfiles/connectors/media/technology-connector/PutOperation-PrimaryAttribute.png" alt="Put Operation Primary Attribute" /></p>
+<ol>
+  <li>Once the Attribute is enabled as primary map (Source and Destination Mapping) the primary attribute in the touchpoint level. Here the mapping should be done in the touchpoint that is using the PUT Operation.</li>
+  <li>Create a new action in the Schema Level for the operation PUT.</li>
+  <li>Specify the Action Name as PUT and click on SAVE.
+<img src="/staticfiles/connectors/media/technology-connector/PutOperation-DatabaseSchema.png" alt="Put Operation Database Schema" /></li>
+</ol>
+
+<p>Once the above action configuration is set, you are now ready to run the integration process between the applications.</p>
+
+<p><strong>NOTE: Action filters will only be used for the GET Operation and not for POST and PUT</strong></p>
+
+:ET

@@ -1,0 +1,279 @@
+I"�8<h3 id="what-is-sequencer-node">What is Sequencer Node?</h3>
+
+<p>This node is used to order elements by a certain attribute. This node can be applied to any collection of elements. For example, user have data of a collection of orders and I want to process the oldest orders first. User can add a <code class="language-plaintext highlighter-rouge">SEQUENCER</code> node to sort the order based on their creation date.After the data passed through the <code class="language-plaintext highlighter-rouge">SEQUENCER</code> node it will be arranged based on the <code class="language-plaintext highlighter-rouge">SEQUENCER</code> node logic.
+Sequence node have three components</p>
+
+<ul>
+  <li>Element Path : Specify the element based on which data will be squenced.</li>
+  <li>Collection Element Path : XPATH of the parent element under which the sequencer element present.</li>
+  <li>Sort Order : Ascending or Descending order.</li>
+</ul>
+
+<p>For example if have a data chunk which contains multiple data in below XML format</p>
+<pre><code class="language-XML">&lt;orders&gt;
+&lt;order&gt;
+  &lt;id type="integer"&gt;574534287440&lt;/id&gt;
+  &lt;email&gt;chup@yopmail.com&lt;/email&gt;
+  &lt;closed-at type="dateTime" nil="true"/&gt;
+  &lt;created-at type="dateTime"&gt;2018-09-27T18:47:21+05:30&lt;/created-at&gt;
+  &lt;updated-at type="dateTime"&gt;2018-09-28T15:40:09+05:30&lt;/updated-at&gt;
+  &lt;number type="integer"&gt;884&lt;/number&gt;
+  &lt;note&gt;&lt;/note&gt;
+  &lt;token&gt;ca61ad1d7e3aa31e1c52cf17db70716b&lt;/token&gt;
+  &lt;gateway nil="true"/&gt;
+  &lt;test type="boolean"&gt;false&lt;/test&gt;
+  &lt;total-price type="decimal"&gt;0.00&lt;/total-price&gt;
+  &lt;subtotal-price type="decimal"&gt;0.00&lt;/subtotal-price&gt;
+  &lt;total-weight type="integer"&gt;0&lt;/total-weight&gt;
+  &lt;total-tax type="decimal"&gt;0.00&lt;/total-tax&gt;
+  &lt;taxes-included type="boolean"&gt;false&lt;/taxes-included&gt;
+  &lt;currency&gt;USD&lt;/currency&gt;
+  &lt;financial-status&gt;paid&lt;/financial-status&gt;
+  &lt;confirmed type="boolean"&gt;true&lt;/confirmed&gt;
+  &lt;total-discounts type="decimal"&gt;0.00&lt;/total-discounts&gt;
+  &lt;total-line-items-price type="decimal"&gt;0.00&lt;/total-line-items-price&gt;
+  &lt;cart-token nil="true"/&gt;
+  &lt;buyer-accepts-marketing type="boolean"&gt;false&lt;/buyer-accepts-marketing&gt;
+  &lt;name&gt;#1884&lt;/name&gt;
+  &lt;referring-site nil="true"/&gt;
+  &lt;landing-site nil="true"/&gt;
+  &lt;cancelled-at type="dateTime" nil="true"/&gt;
+  &lt;cancel-reason nil="true"/&gt;
+  &lt;line-items type="array"&gt;
+    &lt;line-item&gt;
+      &lt;id type="integer"&gt;1419142168656&lt;/id&gt;
+      &lt;variant-id type="integer"&gt;12814680621136&lt;/variant-id&gt;
+      &lt;title&gt;Samsung Galaxy S6&lt;/title&gt;
+      &lt;quantity type="integer"&gt;1&lt;/quantity&gt;
+      &lt;price type="decimal"&gt;0.00&lt;/price&gt;
+      &lt;sku&gt;P-181&lt;/sku&gt;
+      &lt;variant-title nil="true"/&gt;
+      &lt;vendor&gt;Demo-store&lt;/vendor&gt;
+      &lt;fulfillment-service&gt;manual&lt;/fulfillment-service&gt;
+      &lt;product-id type="integer"&gt;1520606937168&lt;/product-id&gt;
+      &lt;requires-shipping type="boolean"&gt;true&lt;/requires-shipping&gt;
+      &lt;taxable type="boolean"&gt;true&lt;/taxable&gt;
+      &lt;gift-card type="boolean"&gt;false&lt;/gift-card&gt;
+      &lt;name&gt;Samsung Galaxy S6&lt;/name&gt;
+      &lt;variant-inventory-management&gt;shopify&lt;/variant-inventory-management&gt;
+      &lt;properties type="array"&gt;
+      &lt;/properties&gt;
+      &lt;product-exists type="boolean"&gt;true&lt;/product-exists&gt;
+      &lt;fulfillable-quantity type="integer"&gt;0&lt;/fulfillable-quantity&gt;
+      &lt;grams type="integer"&gt;0&lt;/grams&gt;
+      &lt;total-discount&gt;0.00&lt;/total-discount&gt;
+      &lt;fulfillment-status&gt;fulfilled&lt;/fulfillment-status&gt;
+      &lt;discount-allocations type="array"/&gt;
+      &lt;tax-lines type="array"&gt;
+        &lt;tax-line&gt;
+          &lt;title&gt;CGST&lt;/title&gt;
+          &lt;price type="decimal"&gt;0.00&lt;/price&gt;
+          &lt;rate type="float"&gt;0.2&lt;/rate&gt;
+        &lt;/tax-line&gt;
+      &lt;/tax-lines&gt;
+    &lt;/line-item&gt;
+  &lt;/line-items&gt;
+  &lt;shipping-lines type="array"/&gt;
+  &lt;billing-address type="Address"&gt;
+    &lt;first-name&gt;DD&lt;/first-name&gt;
+    &lt;address1&gt;Kolkata&lt;/address1&gt;
+    &lt;phone&gt;09000000000&lt;/phone&gt;
+    &lt;city&gt;Kolkata&lt;/city&gt;
+    &lt;zip&gt;700000&lt;/zip&gt;
+    &lt;province&gt;West Bengal&lt;/province&gt;
+    &lt;country&gt;India&lt;/country&gt;
+    &lt;last-name&gt;chup&lt;/last-name&gt;
+    &lt;address2 nil="true"/&gt;
+    &lt;company&gt;Honda F1&lt;/company&gt;
+    &lt;latitude type="float" nil="true"/&gt;
+    &lt;longitude type="float" nil="true"/&gt;
+    &lt;name&gt;DD chup&lt;/name&gt;
+    &lt;country-code&gt;IN&lt;/country-code&gt;
+    &lt;province-code&gt;WB&lt;/province-code&gt;
+  &lt;/billing-address&gt;
+  &lt;shipping-address type="Address"&gt;
+    &lt;first-name&gt;DD&lt;/first-name&gt;
+    &lt;address1&gt;Kolkata&lt;/address1&gt;
+    &lt;phone&gt;09000000000&lt;/phone&gt;
+    &lt;city&gt;Kolkata&lt;/city&gt;
+    &lt;zip&gt;700000&lt;/zip&gt;
+    &lt;province&gt;West Bengal&lt;/province&gt;
+    &lt;country&gt;India&lt;/country&gt;
+    &lt;last-name&gt;chup&lt;/last-name&gt;
+    &lt;address2 nil="true"/&gt;
+    &lt;company&gt;Honda F1&lt;/company&gt;
+    &lt;latitude type="float" nil="true"/&gt;
+    &lt;longitude type="float" nil="true"/&gt;
+    &lt;name&gt;DD chup&lt;/name&gt;
+    &lt;country-code&gt;IN&lt;/country-code&gt;
+    &lt;province-code&gt;WB&lt;/province-code&gt;
+  &lt;/shipping-address&gt;
+  &lt;customer&gt;
+    &lt;id type="integer"&gt;692949483600&lt;/id&gt;
+    &lt;email&gt;chup@yopmail.com&lt;/email&gt;
+    &lt;accepts-marketing type="boolean"&gt;false&lt;/accepts-marketing&gt;
+    &lt;created-at type="dateTime"&gt;2018-09-26T15:56:09+05:30&lt;/created-at&gt;
+    &lt;updated-at type="dateTime"&gt;2018-09-27T18:47:22+05:30&lt;/updated-at&gt;
+    &lt;first-name&gt;DD&lt;/first-name&gt;
+    &lt;last-name&gt;chup&lt;/last-name&gt;
+    &lt;orders-count type="integer"&gt;3&lt;/orders-count&gt;
+    &lt;state&gt;disabled&lt;/state&gt;
+    &lt;total-spent type="decimal"&gt;0.00&lt;/total-spent&gt;
+    &lt;last-order-id type="integer"&gt;574534287440&lt;/last-order-id&gt;
+    &lt;note&gt;&lt;/note&gt;
+  &lt;/customer&gt;
+&lt;/order&gt;
+&lt;order&gt;
+  &lt;id type="integer"&gt;573948395600&lt;/id&gt;
+  &lt;email&gt;chup@yopmail.com&lt;/email&gt;
+  &lt;closed-at type="dateTime" nil="true"/&gt;
+  &lt;created-at type="dateTime"&gt;2018-09-26T17:29:58+05:30&lt;/created-at&gt;
+  &lt;updated-at type="dateTime"&gt;2018-09-26T17:29:58+05:30&lt;/updated-at&gt;
+  &lt;test type="boolean"&gt;false&lt;/test&gt;
+  &lt;total-price type="decimal"&gt;0.00&lt;/total-price&gt;
+  &lt;subtotal-price type="decimal"&gt;0.00&lt;/subtotal-price&gt;
+  &lt;total-weight type="integer"&gt;0&lt;/total-weight&gt;
+  &lt;total-tax type="decimal"&gt;0.00&lt;/total-tax&gt;
+  &lt;taxes-included type="boolean"&gt;false&lt;/taxes-included&gt;
+  &lt;currency&gt;USD&lt;/currency&gt;
+  &lt;financial-status&gt;paid&lt;/financial-status&gt;
+  &lt;confirmed type="boolean"&gt;true&lt;/confirmed&gt;
+  &lt;total-discounts type="decimal"&gt;0.00&lt;/total-discounts&gt;
+  &lt;total-line-items-price type="decimal"&gt;0.00&lt;/total-line-items-price&gt;
+  &lt;cart-token nil="true"/&gt;
+  &lt;buyer-accepts-marketing type="boolean"&gt;false&lt;/buyer-accepts-marketing&gt;
+  &lt;name&gt;#1883&lt;/name&gt;
+  &lt;line-items type="array"&gt;
+    &lt;line-item&gt;
+      &lt;id type="integer"&gt;1418137927760&lt;/id&gt;
+      &lt;variant-id type="integer"&gt;12814680621136&lt;/variant-id&gt;
+      &lt;title&gt;Samsung Galaxy S6&lt;/title&gt;
+      &lt;quantity type="integer"&gt;1&lt;/quantity&gt;
+      &lt;price type="decimal"&gt;0.00&lt;/price&gt;
+      &lt;sku&gt;P-181&lt;/sku&gt;
+      &lt;variant-title nil="true"/&gt;
+      &lt;vendor&gt;Demo-store&lt;/vendor&gt;
+      &lt;fulfillment-service&gt;manual&lt;/fulfillment-service&gt;
+      &lt;product-id type="integer"&gt;1520606937168&lt;/product-id&gt;
+      &lt;requires-shipping type="boolean"&gt;true&lt;/requires-shipping&gt;
+      &lt;taxable type="boolean"&gt;true&lt;/taxable&gt;
+      &lt;gift-card type="boolean"&gt;false&lt;/gift-card&gt;
+      &lt;name&gt;Samsung Galaxy S6&lt;/name&gt;
+      &lt;variant-inventory-management&gt;shopify&lt;/variant-inventory-management&gt;
+      &lt;properties type="array"&gt;
+      &lt;/properties&gt;
+      &lt;product-exists type="boolean"&gt;true&lt;/product-exists&gt;
+      &lt;fulfillable-quantity type="integer"&gt;1&lt;/fulfillable-quantity&gt;
+      &lt;grams type="integer"&gt;0&lt;/grams&gt;
+      &lt;total-discount&gt;0.00&lt;/total-discount&gt;
+      &lt;fulfillment-status nil="true"/&gt;
+      &lt;discount-allocations type="array"/&gt;
+      &lt;tax-lines type="array"&gt;
+        &lt;tax-line&gt;
+          &lt;title&gt;CGST&lt;/title&gt;
+          &lt;price type="decimal"&gt;0.00&lt;/price&gt;
+          &lt;rate type="float"&gt;0.2&lt;/rate&gt;
+        &lt;/tax-line&gt;
+      &lt;/tax-lines&gt;
+    &lt;/line-item&gt;
+  &lt;/line-items&gt;
+  &lt;billing-address type="Address"&gt;
+    &lt;first-name&gt;DD&lt;/first-name&gt;
+    &lt;address1&gt;Kolkata&lt;/address1&gt;
+    &lt;phone&gt;09000000000&lt;/phone&gt;
+    &lt;city&gt;Kolkata&lt;/city&gt;
+    &lt;zip&gt;700000&lt;/zip&gt;
+    &lt;province&gt;West Bengal&lt;/province&gt;
+    &lt;country&gt;India&lt;/country&gt;
+    &lt;last-name&gt;chup&lt;/last-name&gt;
+    &lt;address2 nil="true"/&gt;
+    &lt;company&gt;Honda F1&lt;/company&gt;
+    &lt;latitude type="float" nil="true"/&gt;
+    &lt;longitude type="float" nil="true"/&gt;
+    &lt;name&gt;DD chup&lt;/name&gt;
+    &lt;country-code&gt;IN&lt;/country-code&gt;
+    &lt;province-code&gt;WB&lt;/province-code&gt;
+  &lt;/billing-address&gt;
+  &lt;shipping-address type="Address"&gt;
+    &lt;first-name&gt;DD&lt;/first-name&gt;
+    &lt;address1&gt;Kolkata&lt;/address1&gt;
+    &lt;phone&gt;09000000000&lt;/phone&gt;
+    &lt;city&gt;Kolkata&lt;/city&gt;
+    &lt;zip&gt;700000&lt;/zip&gt;
+    &lt;province&gt;West Bengal&lt;/province&gt;
+    &lt;country&gt;India&lt;/country&gt;
+    &lt;last-name&gt;chup&lt;/last-name&gt;
+    &lt;address2 nil="true"/&gt;
+    &lt;company&gt;Honda F1&lt;/company&gt;
+    &lt;latitude type="float" nil="true"/&gt;
+    &lt;longitude type="float" nil="true"/&gt;
+    &lt;name&gt;DD chup&lt;/name&gt;
+    &lt;country-code&gt;IN&lt;/country-code&gt;
+    &lt;province-code&gt;WB&lt;/province-code&gt;
+  &lt;/shipping-address&gt;
+  &lt;fulfillments type="array"/&gt;
+  &lt;refunds type="array"/&gt;
+  &lt;customer&gt;
+    &lt;id type="integer"&gt;692949483600&lt;/id&gt;
+    &lt;email&gt;chup@yopmail.com&lt;/email&gt;
+    &lt;accepts-marketing type="boolean"&gt;false&lt;/accepts-marketing&gt;
+    &lt;created-at type="dateTime"&gt;2018-09-26T15:56:09+05:30&lt;/created-at&gt;
+    &lt;updated-at type="dateTime"&gt;2018-09-27T18:47:22+05:30&lt;/updated-at&gt;
+    &lt;first-name&gt;DD&lt;/first-name&gt;
+    &lt;last-name&gt;chup&lt;/last-name&gt;
+    &lt;orders-count type="integer"&gt;3&lt;/orders-count&gt;
+    &lt;state&gt;disabled&lt;/state&gt;
+    &lt;total-spent type="decimal"&gt;0.00&lt;/total-spent&gt;
+    &lt;last-order-id type="integer"&gt;574534287440&lt;/last-order-id&gt;
+    &lt;note&gt;&lt;/note&gt;
+    &lt;verified-email type="boolean"&gt;true&lt;/verified-email&gt;
+    &lt;multipass-identifier nil="true"/&gt;
+    &lt;tax-exempt type="boolean"&gt;false&lt;/tax-exempt&gt;
+    &lt;phone&gt;+918798545220&lt;/phone&gt;
+    &lt;tags&gt;&lt;/tags&gt;
+    &lt;last-order-name&gt;#1884&lt;/last-order-name&gt; 
+  &lt;/customer&gt;
+&lt;/order&gt;
+&lt;/orders&gt;
+</code></pre>
+<p>To sort the order data based on the creation date we have defined the sequencer node in this way.</p>
+
+<h2 id="prerequisites-for-sequencer">Prerequisites for sequencer</h2>
+
+<ul>
+  <li>You must choose the project in which the user will be added.</li>
+  <li>Install the AEC OP Agent from the portal and login with the portal credentials. <a href="/deployment/Deployment-Configuration/">Click here</a> to know more about the agent setup and configuration.</li>
+  <li>Now Choose two generic app for integration &amp; <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a>.</li>
+  <li>Before executing the workflow for app integration, you should have a valid data in the source application</li>
+  <li>The connection or the workflow design should be designed in the Cloud Portal before implementing sequencer.</li>
+</ul>
+
+<h2 id="steps-to-follow-for-implementing-sequencer-in-workflow">Steps to follow for implementing Sequencer in Workflow</h2>
+
+<ol>
+  <li>Select Sequencer from the Process property, available on the left menu bar of the workflow design page.<br />
+<img src="/staticfiles/workflow-management/media/Sequencer/sequencer1.png" alt="sequencer1" /></li>
+  <li>Drag and Drop the sequencer node inside the Touchpoint group. On releasing the sequencer property 
+windows shows up.<br />
+  a.	Element Path<br />
+  b.	Collection Element Path <br />
+  c.	Sort Order: Ascending or Descending<br />
+<img src="/staticfiles/workflow-management/media/Sequencer/sequencer.png" alt="sequencer" /><br />
+<strong>Note: Both the Fields, Element Path &amp; Collection Element Path are the Mandatory Fields.</strong></li>
+  <li>The Element Path is the xpath of the data that needs to be sequenced and the collection element path should always be a substring of the element path.</li>
+  <li>The screen given below displays a demo (the scenario is discussed above) as how the fields should be provided.<br />
+<img src="/staticfiles/workflow-management/media/Sequencer/sequencer2.png" alt="sequencer2" /></li>
+  <li>On Successfully providing the path, click OK button.</li>
+  <li>If both the fields are same, an error message will be popping up with a message “Invalid Collection Element Path”.</li>
+</ol>
+
+<p><strong>Note:</strong></p>
+<ul>
+  <li>The Collection Element Path is always dependent on the Element Path.</li>
+  <li>On Successfully providing the path, click on the OK button.</li>
+  <li>Providing wrong Collection Element Path will display an error message.</li>
+  <li>Element path and collection path cannot be terminated by back or forward slash.</li>
+  <li>Sequencer will always be implemented inside the Touchpoint Group.</li>
+</ul>
+
+:ET

@@ -1,0 +1,174 @@
+I"�&<p>This Document provides the details and the functionality aspect of the API components to define static and dynamic criterias for an API 
+along with the brief demonstration about it. Here you will find the overview and steps needed to carry out this API component.</p>
+
+<h2 id="understanding-action-filters">Understanding Action Filters</h2>
+
+<p>An action filter is an attribute that you can apply to a controller action – or an entire controller – 
+which changes the way in which the action is executed.</p>
+
+<ul>
+  <li>AEC API includes filters to add logic before or after action method executes.</li>
+  <li>
+    <p>Filters can be used to provide cross-cutting features such as logging, 
+performance measurement,exception handling, authentication and authorization.</p>
+  </li>
+  <li>An action filter is an attribute which can be applied most to either an individual controller
+action or an entire controller.</li>
+</ul>
+
+<h2 id="enabling-query-options">Enabling Query Options</h2>
+
+<p>Web API supports the following query options:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$select</td>
+      <td>Selects which properties to include in the response.</td>
+    </tr>
+    <tr>
+      <td>$filter</td>
+      <td>Filters the results based on a Boolean condition.</td>
+    </tr>
+    <tr>
+      <td>$skip</td>
+      <td>Skips the first n results.</td>
+    </tr>
+    <tr>
+      <td>$top</td>
+      <td>Returns only the first n the results.</td>
+    </tr>
+    <tr>
+      <td>$orderby</td>
+      <td>Sorts the results</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="notice--info"><strong>Protip:</strong> Microsoft SQL Server uses some reserved words for defining, manipulating and accessing databases. 
+If Table Names in SQL Queries or any other object Name in SQL Queries are equivalent to these reserved words, the resultant value might be an error. 
+In such cases, the object names those are equivalent should be written in 2nd brackets or ‘{}’. 
+All the Reserved Words that are used in SQL is given in this <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/reserved-keywords-transact-sql?view=sql-server-2017">link</a>.</p>
+
+<h2 id="pre-requisites-for-assigning-parameter-to-action-filter">Pre-requisites for Assigning Parameter to Action Filter</h2>
+
+<ol>
+  <li>Need to have access to the APPSeCONNECT Portal.</li>
+  <li>Valid Credentials for the APPSeCONNECT Portal.</li>
+  <li>The Application should be cloud supported. For any application, if you have configured an endpoint, these filter criteria would work only if the backend application supports them.</li>
+  <li>Schema needs to be defined with proper Actions (GET, PUT, POST, FILTER).</li>
+  <li>API Proxy needs to be Created. Steps for creating API Proxy is given <a href="/api-management/steps-to-create-proxy-endpoint/">here</a>. A valid API URL is required.</li>
+</ol>
+
+<h2 id="steps-to-define-static-and-dynamic-criterias-for-an-api">Steps to define Static and dynamic criterias for an API</h2>
+
+<p>You can define action parameters for various operations of an API. Presently AEC API Management provides 
+assigning parameters to the following operations - <code class="language-plaintext highlighter-rouge">GET, PUT, POST &amp; DELETE</code>.</p>
+
+<h2 id="using-action-filter--action-parameters-for-get-operation">Using Action Filter &amp; Action Parameters for GET operation</h2>
+
+<ol>
+  <li>In the APP section in the AEC Portal click on Schema for defining the Action (GET Operation).<br />
+<img src="/staticfiles/api-management/media/ActionFilter-ActionParameter.png" alt="ActionFilter-ActionParameter" /></li>
+  <li>
+    <p>The Action is now created. Provide the Action Filter against the Action by clicking on the Edit Option
+(in this case its only GET Operation)<br />
+<img src="/staticfiles/api-management/media/ActionFilter-ActionParameter1.png" alt="ActionFilter-ActionParameter1" /><br />
+<img src="/staticfiles/api-management/media/ActionFilter-ActionParameter2.png" alt="ActionFilter-ActionParameter2" /></p>
+  </li>
+  <li>Click on SAVE.</li>
+</ol>
+
+<p><strong>NOTE:The action filter is provided only for the GET Operation for fetching the data from the source Application. 
+This is also called as the Static Filters</strong></p>
+
+<p class="notice--info"><strong>Protip:</strong> The user can add mutliple operation under a single API Proxy or can create seperate operation for different API
+as per the business requirement.</p>
+
+<h2 id="using-action-parameter-for-skip-and-orderby-for-get-operation">Using Action Parameter for SKIP and OrderBy for GET Operation</h2>
+
+<p><strong>Using Skip</strong></p>
+
+<p>As a Prerequisite, Schema Attributes need to be set as Primary in the Portal. The pathway for enabling attribute as Primary is.</p>
+
+<p>Login to the Portal - Go to APP section - Go to Schema of the APP - View Attributes.</p>
+
+<p><img src="/staticfiles/api-management/media/SKIP-PrimaryKey-Enabled.png" alt="SKIP-PrimaryKey-Enabled" /></p>
+
+<p><strong>Note: Making the <code class="language-plaintext highlighter-rouge">Attribute Primary</code> is Mandatory for the $skip operation.</strong></p>
+
+<ol>
+  <li>Define the API Proxy with valid credentials <a href="/connectors/OLEDB-Credentials/">steps to do the same</a>, copy the generated URL for the GET operation.</li>
+  <li>Select the Operation as GET in the HTTP Client Environment.</li>
+  <li>Place the URL with the Query Parameter in the HTTP Client Environment.
+<img src="/staticfiles/api-management/media/SKIPQuery-Postman.png" alt="SKIPQuery-Postman" /></li>
+  <li>Authorize your HTTP Client with the generated <a href="/api-management/Steps-to-user-authentication/">authentication id</a> from the AEC Portal in the API section.</li>
+  <li>Click on the Send option for running the Query Param. The data can be viewed below.
+<img src="/staticfiles/api-management/media/SKIPQuery-PostmanOutput.png" alt="SKIPQuery-PostmanOutput" /></li>
+</ol>
+
+<p>In the above screen, $skip = 25 signifies that the first 25 data which will be skipped, according to the attribute that is marked as Primary.</p>
+
+<p><strong>Using Skip with OrderBy</strong></p>
+
+<ol>
+  <li>Define the API Proxy with valid credentials <a href="/connectors/OLEDB-Credentials/">steps to do the same</a>, copy the generated URL for the GET operation.</li>
+  <li>Select the Operation as GET in the HTTP Client Environment.</li>
+  <li>Place the URL with the Query Parameter in the HTTP Client Environment.
+<img src="/staticfiles/api-management/media/SKIPQuery-OderBy.png" alt="SKIPQuery-OderBy" /></li>
+  <li>Authorize your HTTP Clientwith the generated <a href="/api-management/Steps-to-user-authentication/">authentication id</a> from the AEC Portal in the API section.</li>
+  <li>Click on the Send option for running the Query Param. The data can be viewed below.
+<img src="/staticfiles/api-management/media/SKIPQuery-OderByOutput.png" alt="SKIPQuery-OderByOutput" /></li>
+</ol>
+
+<p>In the above screen, $skip=25&amp;Orderby eq ‘city’ signifies that the first 25 data(s) will be skipped according 
+to the Orderby condition that is City.</p>
+
+<p class="notice--info"><strong>Protip:</strong> If the attribute is primary enabled and also OrderBy is used, the Skip Operation will use 
+the ORDERBY condition for its process.</p>
+
+<h2 id="using-action-parameters-for-put-operation">Using Action Parameters for PUT Operation</h2>
+
+<ol>
+  <li>After defining the API Proxy with valid credentials against your database, copy the generated URL for the PUT operation.</li>
+  <li>Select the Operation as PUT in the HTTP Client Environment. 
+<img src="/staticfiles/api-management/media/ActionParameter-PutOperation1.png" alt="ActionParameter-PutOperation1" /></li>
+  <li>Place the URL in HTTP Client  Development Environment. <br />
+<img src="/staticfiles/api-management/media/ActionParameter-PutOperation2.png" alt="ActionParameter-PutOperation2" /></li>
+  <li>Authorize your HTTP Client with the generated authentication id from the AEC Portal in the API section.
+<img src="/staticfiles/api-management/media/ActionParameter-PutOperation3.png" alt="ActionParameter-PutOperation3" /></li>
+  <li>Click on the Send option for running the Query Param.
+<img src="/staticfiles/api-management/media/ActionParameter-PutOperation4.png" alt="ActionParameter-PutOperation4" /></li>
+</ol>
+
+<p><strong>Note:Any API Development Environment can be used for this process. Once Authorized for an 
+API the user does not have to authorize again except for the cases for Multiple API’s</strong></p>
+
+<h2 id="using-action-parameter-for-the-post-operation">Using Action Parameter for the POST Operation</h2>
+
+<ol>
+  <li>Copy the generated Proxy URL for the POST operation. Select the operation as POST in the HTTP Client window.<br />
+<img src="/staticfiles/api-management/media/ActionParameter-PostOperation1.png" alt="ActionParameter-PostOperation1" /></li>
+  <li>Place the URL in the HTTP Client along with the Query Params and click SEND.</li>
+  <li>You can view the Results against the provided Parameter.<br />
+<img src="/staticfiles/api-management/media/ActionParameter-PostOperation2.png" alt="ActionParameter-PostOperation2" /></li>
+</ol>
+
+<h2 id="using-action-parameter-for-the-delete-operation">Using Action Parameter for the DELETE Operation</h2>
+
+<ol>
+  <li>Like Other operations, the URL generated for the DELETE operation needs to be dropped in the HTTP Client.</li>
+  <li>Select the operation as DELETE.
+<img src="/staticfiles/api-management/media/ActionParameter-DeleteOperation1.png" alt="ActionParameter-DeleteOperation1" /></li>
+  <li>Provide the Query Params and click on SEND.  <br />
+<img src="/staticfiles/api-management/media/ActionParameter-DeleteOperation2.png" alt="ActionParameter-DeleteOperation2" /></li>
+</ol>
+
+<p><strong>Note: Applying the DELETE Operation will delete the data from the database corresponding to the Query Param.</strong></p>
+:ET

@@ -1,0 +1,81 @@
+I"<p>Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the client environment, 
+due to APPSeCONNECT License Management.</p>
+
+<p>As each OP Agent, for each organisation in APPSeCONNECT, are now registered using a License key which is generated 
+using the <code class="language-plaintext highlighter-rouge">Organisation ID</code> &amp; the <code class="language-plaintext highlighter-rouge">MAC ID</code> of the system thereby preventing other systems &amp; users from logging in.</p>
+
+<p>Partners/Developers requires to login to the client OP Agent for the purpose of implementing or debugging 
+client issues and features. Therefore, APPSeCONNECT provides the temporary license key generation feature for the Partners
+and the Developers, such that they can login in the client environment for work purpose.</p>
+
+<h3 id="working-principle-for-generating-temporary-license">Working principle for Generating Temporary License</h3>
+
+<p>Super Admins of APPSeCONNECT will be able to generate a temporary License key from the portal, for any organisation, 
+which is needed to be accessed. The key will be valid for a limited time as selected from the portal. Using the generated key, 
+partners/developers can log in to client environment using their (partners/developers) own agent credentials.</p>
+
+<p><strong>Note: Only an APPSeCONNECT user with Super-Admin access, will be able to generate the temporary License Key for 
+Organizations.</strong></p>
+
+<h3 id="steps-to-generate-temporary-license">Steps to Generate Temporary License</h3>
+
+<ol>
+  <li>Login to APPSeCONNECT Portal with SuperAdmin credentials. Click Home Button.
+<img src="/staticfiles/licensekey/rolling-window1.png" alt="rolling-window1" /></li>
+  <li>Navigate to Projects &gt; Manage Projects. The manage projects window appears.
+<img src="/staticfiles/licensekey/rolling-window2.png" alt="rolling-window2" /></li>
+  <li>Search project, for which temporary license key generation needs to be implemented and Click License tab.
+<img src="/staticfiles/licensekey/rolling-window3.png" alt="rolling-window3" /></li>
+  <li>Select the TTL value from the drop-down option.
+<img src="/staticfiles/licensekey/rolling-window4.png" alt="rolling-window4" />      <br />
+<strong>Note: TTL is the Time-to-Live value, which the defines the amount of time, the generated key remains active.</strong></li>
+  <li>Click on the generate key button. The temporary license key will be generated successfully, then Copy the generated key.
+<img src="/staticfiles/licensekey/rolling-window5.png" alt="rolling-window5" /> <br />
+<strong>Note: The Active key would be displayed on top followed by the latest expired key. As multiple license key would be generated 
+for an organisation, therefore multiple active keys would be displayed in the dropdown.</strong></li>
+  <li>Navigate to APPSeCONNECT OP Agent and paste the key in the Registration Key field, which can be viewed by 
+pressing the CTRL+F10 button.    <br />
+<img src="/staticfiles/licensekey/rolling-window6.png" alt="rolling-window6" /></li>
+  <li>Click on the login button after pasting the generated license key.  <br />
+<img src="/staticfiles/licensekey/rolling-window7.png" alt="rolling-window7" /></li>
+</ol>
+
+<p><strong>Note: (a)This feature of Generating Temporary License is solely for the Partners and the Developers.     <br />
+        (b) On expiration of the license key, the environment will no longer be accessible to the concerned Partner/Developer and would be auto-logged out from the agent.    <br />
+        (c) Feed will not generate any login details of the user with respect to generating temporary license key for an organization.
+        (d) While logging in using temporary license in the OP Agent, the checkbox for Saving Data Configuration remains disabled</strong></p>
+
+<h2 id="scenario-of-license-key-validation-failure-while-generating-license-key">Scenario of License Key Validation Failure while generating License Key</h2>
+
+<p>Four different scenarios are mentioned within:</p>
+
+<ol>
+  <li>If you are using your existing licence key for the same MAC ID whereas you MAC Name has been renamed.
+In this scenario the user will face license key validation failure because in order to 
+generate License key, we use both Computer name + Machine ID and unique id generated 
+for the organization. Each license uniquely identifies a particular machine. You cannot 
+license a machine with a license generated from another machine. In this case, your 
+license will say invalid.</li>
+  <li>You have copied the installed folder and files from C: ProgramData folder to another machine.</li>
+  <li>You have installed new network adapters which changes MAC ID of network interface.</li>
+  <li>You have changed the Computer name of the machine.</li>
+</ol>
+
+<h2 id="workaround-for-license-key-validation-failure">Workaround for License Key Validation Failure</h2>
+
+<p>Follow the steps given below for the above scenarios:-</p>
+
+<ol>
+  <li>Go to Portal, Login and select Manage - Environment.</li>
+  <li>You will see all the environments you are connected to.</li>
+  <li>Click on the environment where you have installed Agent.</li>
+  <li>Click on Delete to delete the environment.</li>
+  <li>Go to On-premise environment and Login again.</li>
+  <li>Open Settings and Check - Enable Environment.</li>
+</ol>
+
+<p>After the environment is enabled again, you will see everything is working correctly. 
+If you still do not see the agent to be connected from Cloud, please go to Portal, 
+revisit Environment section and click on Attach button to reattach a deleted environment.</p>
+
+:ET

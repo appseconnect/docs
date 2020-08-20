@@ -1,0 +1,109 @@
+I"�<p>Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how the integration process can be executed through workflow for 
+adding Updating Inventory from <code class="language-plaintext highlighter-rouge">SAP Business One to Magento2</code>.</p>
+
+<p><strong>Note: Before proceeding with any integration configuration, users are advised to view the pre-requites of the <a href="/integration/SAPB1-Magento2/">integration process</a>.</strong></p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p><img src="/staticfiles/integration/media/inventoryupdate_workflow.png" alt="inventoryupdate_workflow" /></p>
+
+<p>In this case, the quantity of the products is added by updating the inventory. Therefore, the above workflow is designed to Update the Inventory of the products added in SAP Business One and will posted to Magento2.</p>
+
+<ol>
+  <li>For Updating the Inventory in SAP Business One client an item needs to be created first. After creating the item, <code class="language-plaintext highlighter-rouge">Navigate to Modules &gt; Inventory &gt; Inventory Transactions &gt; Goods Receipt</code>.</li>
+  <li>In the Good Receipt dialogue box, click on the Item No. field and select the item whose inventory needs to update.</li>
+  <li>Click on the Quantity field for the selected item and enter the quantity that needs to be updated. Click on the Add Button after doing so.</li>
+  <li>After updating the Inventory, the user can check the InStock status of the product from the Item Master Data Module.</li>
+</ol>
+
+<p><img src="/staticfiles/integration/media/update_inventory1.png" alt="update_inventory1" /></p>
+
+<p><strong>Note: Click on the links for knowing the agent validation process in <a href="/connectors/magento2/">Magento2</a> and <a href="/connectors/Sap-Business-One/">SAP Business One</a>.</strong></p>
+
+<h2 id="lookup-mapping">Lookup Mapping</h2>
+
+<p>Not Required</p>
+
+<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation</h2>
+
+<p>Following the Provided Mapping, the user can sync the Simple Product Add from SAP Business One to Magento2. 
+To know more, see  <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
+
+<p><strong>Mapping for the <code class="language-plaintext highlighter-rouge">Inventory Update</code></strong></p>
+
+<ol>
+  <li>Mapping for the ComplexObjectCollection stockItem
+<img src="/staticfiles/integration/media/update_inventory2.png" alt="update_inventory2" /></li>
+</ol>
+
+<p>a.	Itemid – This is mapped with the WebID of the product present in SAP Business One.                       <br />
+b.	productid - This is also mapped with the WebID of the product present in SAP Business One.                            <br />
+c.	qty – This attribute is mapped with the quantity OnHand present in the SAP Business One.                           <br />
+d.	UploadURL – This defines the route to the Magento2.</p>
+
+<p><strong>Mapping of the <code class="language-plaintext highlighter-rouge">Root Variable</code></strong></p>
+
+<p><img src="/staticfiles/integration/media/update_inventory3.png" alt="update_inventory3" /></p>
+
+<p>a. $seperator: This variable is a pre-packaged variable mapped with a single quote.                            <br />
+b. $executequery: This variable is mapped to execute the given query in SAP Business One database.                                             <br />
+c. $executesql: This is also a pre-packaged variable which is mapped to call the variable $executequery.                                                    <br />
+d. $itemUDFsku: This is a string type variable created to map with the itemCode present in SAP Business One.                                       <br />
+e. $Replacesku: This variable is mapped to maintain the SKU in database.</p>
+
+<p><strong>Note: After the mapping changes<code class="language-plaintext highlighter-rouge">Reset Generate</code> and <code class="language-plaintext highlighter-rouge">Reset Publish</code> the Touchpoint. After Republishing, 
+ Click on the <code class="language-plaintext highlighter-rouge">Update Configuration</code> button in the Agent.</strong></p>
+
+<h2 id="executing-the-workflow-integration">Executing the Workflow Integration</h2>
+
+<p><strong>Note: Before integrating with Magento2 and SAP Business One, make sure all the Master Data Touchpoints are synced.</strong></p>
+
+<ol>
+  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
+  <li>Click Run button in the workflow panel in the cloud portal.
+<img src="/staticfiles/integration/media/update_inventory4.png" alt="update_inventory4" /></li>
+  <li>Once the Execution is finished, click <code class="language-plaintext highlighter-rouge">Resync Button</code> in the agent. The Resync Panel shows the Success Result in the agent. 
+<img src="/staticfiles/integration/media/update_inventory5.png" alt="update_inventory5" /></li>
+  <li>The User can also trigger or <a href="/workflow/deploying-and-executing/">deploy the workflow</a> from the cloud Portal by clicking on the run button.</li>
+</ol>
+
+<h2 id="integration-data-survey">Integration Data Survey</h2>
+
+<p>The user can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow. 
+<img src="/staticfiles/integration/media/update_inventory6.png" alt="update_inventory6" />
+This Snapshot View displays the successful execution of the workflow. The Inventory with the product source id 2999 is successfully synced in Magento2.</p>
+
+<h2 id="post-conditions">Post-Conditions</h2>
+
+<p>The user can view the Quantity of the product synced in the Magento2 by navigating to Catalog -&gt;Products.
+<img src="/staticfiles/integration/media/update_inventory7.png" alt="update_inventory7" /></p>
+
+<h2 id="frequency-of-use">Frequency of Use</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>a. Error: Details:</p>
+
+<p>{“message”:“Request does not match any route”.}</p>
+
+<ol>
+  <li>For troubleshooting this error, Navigate to the transform section in the portal.</li>
+  <li>The mapping for the UploadURL needs to be altered. Read the Attribute Mapping/Transformation portion of this document to know about the mapping of the UploadURL.</li>
+  <li>Also, verify that the U_WebID of the Product is present in the UDF that is created in SAP Business One Client.</li>
+  <li>To view the U_WebID of the Product, Navigate to Modules -&gt; Inventory -&gt; Item Master Data -&gt; Choose the Product -&gt; CTRL + Shift + U.</li>
+</ol>
+
+<p><img src="/staticfiles/integration/media/update_inventory8.png" alt="update_inventory8" /></p>
+
+<p>Doing this, the user can successfully integrate this workflow.</p>
+
+<p>b.	Log Bucket shows <code class="language-plaintext highlighter-rouge">Source Application Returned False</code> even when applications adapters are properly validated.
+<img src="/staticfiles/integration/media/troubleshooting-inventory-sapmage2.png" alt="troubleshooting-inventory-sapmage2" /></p>
+
+<p>Solution: <code class="language-plaintext highlighter-rouge">Source Application Returned false</code> may not be the error, only for adapter validation. Users also needs to ensure that the action filter provided is correct.</p>
+
+<p>As SAP Business One follows a Query based filter, Users are advised to run the query for action filter in the database first for ensuring that the query fetching the required data.</p>
+
+:ET

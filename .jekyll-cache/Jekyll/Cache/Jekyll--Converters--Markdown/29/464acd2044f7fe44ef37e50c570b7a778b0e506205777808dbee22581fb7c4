@@ -1,0 +1,55 @@
+I"k<p>Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the sync process.</p>
+
+<h2 id="prerequisites-for-mapping-lookups">Prerequisites for mapping Lookups</h2>
+<ul>
+  <li>You need to have valid credentials for login into the portal.</li>
+  <li>You need to have the <a href="/processflow/Lookup-repository-masterdata/">Reference tables and Collection</a> created.</li>
+  <li>You need to have the process flow created along with the mapper node.</li>
+</ul>
+
+<h2 id="steps-to-implement-lookup-in-attribute-mapping">Steps to implement lookup in attribute mapping</h2>
+<ol>
+  <li>Login to the portal and navigate to the process flow section. The process flow <a href="/processflow/processflow-listing-page/">listing page</a> opens. 
+<img src="../../staticfiles/processflow/media/lookup-mapping1.png" alt="Lookup Mapping1" /></li>
+  <li><a href="/processflow/creating-processflow/">Create a process flow</a> or edit a created process flow in the Process Flow <a href="/processflow/designer-processflow/">Designer page</a> opens.  <br />
+<img src="../../staticfiles/processflow/media/lookup-mapping2.png" alt="Lookup Mapping2" /></li>
+  <li>Click on the Configuration node button of the mapper node.<br />
+<img src="../../staticfiles/processflow/media/lookup-mapping3.png" alt="Lookup Mapping3" /></li>
+  <li>You can view the mapper page after clicking on the mapper configuration button.  <br />
+<img src="../../staticfiles/processflow/media/lookup-mapping4.png" alt="Lookup Mapping4" /></li>
+  <li>Expand the transformation nodes and click on the ellipses button (…) of the attribute where you want to implement the mapping. 
+view here for <a href="/transformation/getting-started-with-mapping/#structure-of-mapping">structure of mapping</a>. <br />
+<img src="../../staticfiles/processflow/media/lookup-mapping-new.png" alt="Lookup Mapping New" /></li>
+  <li>Open the selected attribute and hardcode the syntax for mapping the lookup. You can map the 
+lookup using two syntax formats. The syntax is given below for your reference.</li>
+</ol>
+
+<p><strong>Syntax 1:Using getMapping syntax</strong></p>
+
+<p><img src="../../staticfiles/processflow/media/lookup-mapping-new1.png" alt="Lookup Mapping New1" />      <br />
+Where ObjectType is the Reference Table Name &amp; Value is the Source Attribute Name.      <br />
+For ex: if your reference table name is Country &amp; attribute name country_id therefore the syntax will be.
+<img src="../../staticfiles/processflow/media/lookup-mapping5.png" alt="Lookup Mapping5" /></p>
+
+<p><strong>Note: You will get the function by expanding the function node available at the left-hand side 
+of the mapping page. Expand Function &gt; Generic Function &amp; click over the getMapping function.</strong></p>
+
+<p><strong>Syntax 2: Using lookup syntax</strong></p>
+
+<p><img src="../../staticfiles/processflow/media/lookup-mapping-new2.png" alt="Lookup Mapping New2" /></p>
+
+<p>The above syntax is a hardcoded syntax. You can code the syntax as given above for implementing the mapping.
+For Ex: if your reference table name is Country &amp; attribute name country_id therefore the syntax will be.
+ <img src="../../staticfiles/processflow/media/lookup-mapping6.png" alt="Lookup Mapping6" />  <br />
+<strong>Note: You cannot select this function from the function nodes. Implementing this function needs to be done as hardcoded.</strong></p>
+
+<p>On successfully implementing the mapping in the mapping space, you get a confirmation pop up for mapping the lookup. The screen is given below. Click on the Yes, do it button.
+<img src="../../staticfiles/processflow/media/lookup-mapping7.png" alt="Lookup Mapping7" /><br />
+<strong>Note: You would not get this confirmation message when the mapping implemented is not syntactically correct.</strong></p>
+
+<p>After finishing the mapping click <code class="language-plaintext highlighter-rouge">Submit</code> button to save the mapping implemented. <br />
+<img src="../../staticfiles/processflow/media/lookup-mapping8.png" alt="Lookup Mapping8" /></p>
+
+<p>Following the above steps, you can successfully implement the mapping of the Lookups for  attributes.</p>
+
+:ET

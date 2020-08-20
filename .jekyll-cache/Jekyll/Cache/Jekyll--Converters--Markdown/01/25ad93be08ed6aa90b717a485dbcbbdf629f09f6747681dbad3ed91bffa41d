@@ -1,0 +1,54 @@
+I"z<h3 id="use-case-name">Use Case Name</h3>
+<p>Creating a Workflow for sales order</p>
+
+<h3 id="brief-description">Brief Description</h3>
+<p>This is a workflow where the user can add sales order in Eccommece (Shopify) and execute the  workflow to sync the sales order in the ERP (SAPB1)</p>
+
+<h3 id="actor">Actor</h3>
+<p>Implementers, Developers, Partners</p>
+
+<h3 id="preconditions">Preconditions</h3>
+<p>Organization Creation &amp; Connection Creation</p>
+
+<h3 id="basic-flow">Basic Flow</h3>
+
+<p>The user will execute the flow as given below.</p>
+
+<p>Step 1 to 11 is similar to the execution flow of <a href="/workflow/basic-workflow-customer-download/">basic workflow customer download</a></p>
+
+<ol>
+  <li>
+    <p>The user will now login/signup to Eccomerce (Shopify - App 1) and add sales order.</p>
+  </li>
+  <li>
+    <p>The user will go back to Workflow module and select the saved workflow.</p>
+  </li>
+</ol>
+
+<p><img src="/staticfiles/workflow-management/media/Workflow-SalesOrderAdd.png" alt="Workflow-SalesOrderAdd" /></p>
+
+<ol>
+  <li>
+    <p>The user will click on RUN button to run the workflow.</p>
+  </li>
+  <li>
+    <p>The workflow gets executed and the user can view all the nodes and links getting highlighted.</p>
+  </li>
+  <li>
+    <p>The user will go to SAP B1 (App 2)  to fetch the synced data - Sales Order will sync in Sales Order section.</p>
+  </li>
+</ol>
+
+<h3 id="post-conditions">Post-conditions</h3>
+<p>The user can now see that the sales order is  available in ERP( SAP B1)</p>
+
+<h3 id="exception-courses">Exception courses</h3>
+<p>The user will get resync bucket error log in the agent and in the workflow section also, if the sales order sync is failure.</p>
+
+<h3 id="frequency-of-use">Frequency of use</h3>
+<p>The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.</p>
+
+<h3 id="assumptions">Assumptions</h3>
+<p>NOT APPLICABLE</p>
+
+:ET

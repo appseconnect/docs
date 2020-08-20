@@ -1,0 +1,45 @@
+I"C<p><strong>Reponses Content type conversion policy</strong> is a type of outbound policy. 
+It can be configured for the output format such as XML or JSON. If the Response Conversion Type selected as 
+XML and backend application response will be converted to XML.</p>
+
+<p class="notice--info"><strong>ProTip:</strong> Policy can only be used once per API configuration.</p>
+
+<h3 id="policy-statement">Policy Statement</h3>
+
+<p>Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. Below is the screen where you need to configure the Response Conversion Type (XML or JSON) 
+you want to deploy in the Response Content type conversion policy.</p>
+
+<p><img src="/staticfiles/api-management/media/ResponseContent-TypeCoverionPolicy.png" alt="ResponseContent-TypeCoverionPolicy" /></p>
+
+<p>The rules and setup needs to be made accordingly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Is Mandatory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Response Content type conversion</td>
+      <td>Represents the algorithm to be used for response content type conversion</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Select Response Conversion Type</td>
+      <td>Either XML or JSON</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="policy-usage">Policy Usage</h3>
+
+<p>The policy can be applied only at <code class="language-plaintext highlighter-rouge">outbound</code> section.</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>Currently the policy can be applied at API Version Scope only.</p>
+:ET

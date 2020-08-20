@@ -1,0 +1,32 @@
+I"Õ	<h3 id="what-is-loop-node">What is Loop Node?</h3>
+<p>In APPSeCONNECT Workflow using a Self-loop, we can repeatedly execute an individual node without affecting the other nodes that are linked with it. If we draw a self-loop in GET element in Workflow it will ask for the no of times it will be executed. Letâ€™s take a scenario where touchpoint associated with the GET node can fetch 10 records at a time but I want to fetch a minimum of 50 unsynced data at a time if it is available. Here I can implement a self-loop with 5 occurrences.If I want to fetch all unsynced data then we can choose the until data available option.</p>
+
+<h3 id="self-loop-with-5-occurences">Self loop with 5 occurences.</h3>
+
+<p><img src="/staticfiles/workflow-management/media/Selfloop/No_ofTime.png" alt="No Of Time" /></p>
+
+<p>Self loop with until data available option</p>
+
+<p><img src="/staticfiles/workflow-management/media/Selfloop/UntilData.png" alt="Until Data" /></p>
+
+<h2 id="self-loop-scenarios">Self Loop Scenarios:</h2>
+
+<p><strong>Case 1: When Self loop applied in GET Node</strong></p>
+
+<p><strong>Description:</strong> You may have a scenario to fetch data for a specific input, which signifies if your input value is 5, the self-loop on get would be executed 5 times. 
+If your input value is 2, the self-loop would be executed twice.</p>
+
+<p><img src="\staticfiles\workflow-management\media\Selfloop\selfloop_case1.png" alt="selfloop_case1" /></p>
+
+<p><strong>Case 2: When Self loop applied in POST Node</strong></p>
+
+<p><strong>Description:</strong> You may have a business scenario where you are splitting the transformed data as 1 single packets, and then posting it to destination application. Therefore, if Self Loop on POST node is not applied, only a single data after a splitter would be posted. 
+Applying self-loop will fetch data until available after splitting.</p>
+
+<p>For Example: you may have Splitted a transform packet in a batch of 1, which contains 10 data. Therefore, after splitting, it will generate 10 packets for 10 different data. 
+If self-loop on POST node is configured as Until Available, self-loop on post will execute until all the data are fetched after split.</p>
+
+<p><img src="\staticfiles\workflow-management\media\Selfloop\selfloop_case2.png" alt="selfloop_case2" /></p>
+
+<p><strong><em>Note: Adding self-loop is not mandatory after splitter or merger node, however it is self-loop is recommended seriously to minimize the loss of data by a great margin in such cases.</em></strong></p>
+:ET

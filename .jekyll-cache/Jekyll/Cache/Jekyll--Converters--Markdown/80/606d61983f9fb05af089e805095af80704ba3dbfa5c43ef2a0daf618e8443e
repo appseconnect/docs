@@ -1,0 +1,144 @@
+I"æ<p>This section of the document will given you an overview of <strong>NAV- Magento2 Mutliple Connection</strong> Integration and the subsequent chapters  will drive 
+you to the process of integration between the applications.</p>
+
+<ul>
+  <li>Here multiple connections are required (i.e two atleast).</li>
+  <li>User require more than one licence of APPSeCONNECT.</li>
+  <li>The unique thing is that though the whole process is similar to any single NAV-Magento connection, the basic requirement to 
+achieve this feature is that you need to have minimum of two (more than one always) individual MAGENTO templatebar 
+URLâ€™s and only one ERP that is NAV.</li>
+  <li>The total number of Templatebar URL you have, indicates the number of connections you need to 
+  create in your organization using this NAV-Magento 2 multiple connection template.</li>
+</ul>
+
+<p>The basic pre-requisite and list of Master Data Processess for Integration is given below:</p>
+
+<h2 id="prerequisites-of-integration">Prerequisites of Integration</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal and select the app MAGENTO (with mutiple webstore) and NAV 2017.</li>
+  <li>Navigate to the connections module and <a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">create a connection</a> for both the selected applications.</li>
+  <li>Now navigate to the Workflow module, you can either <a href="/workflow/steps-to-create-your-first-workflow/">create a workflow</a> or 
+can <a href="/workflow/steps-to-choose-your-workflow/">choose a pre-packaged workflow</a>.</li>
+  <li>Before Integrating with <a href="/connectors/Dynamicsnav/">Dynamics NAV</a> and <a href="/connectors/magento2/">Magento2</a>, all the master data needs to be synced. Master Data Sync is used 
+for synchronizing set of core information (viz. Websites, Product Category, Attribute set, and Tax Class etc.) from E-commerce database to SAP B1.</li>
+</ol>
+
+<h2 id="list-of-mandatory-tables-with-connection-id--connection-name-fields">List of Mandatory Tables with Connection ID &amp; Connection Name fields</h2>
+
+<ul>
+  <li>AEC Application Customer</li>
+  <li>AEC Application Item</li>
+  <li>AEC Order header details</li>
+  <li>AEC Contact Details</li>
+  <li>AEC Customer Details</li>
+  <li>AEC Ship to Address</li>
+  <li>AEC Shipment Invoice Sync</li>
+  <li>AEC Shipment Line</li>
+  <li>Web Product Website</li>
+  <li>Web Product Attribute</li>
+  <li>Web Product Category</li>
+  <li>Web Product Details</li>
+  <li>Web Product Child details</li>
+  <li>All related Master Tables</li>
+</ul>
+
+<p><strong>Note: Web Product Details CP Page should be list type page</strong></p>
+
+<p>The view of Web Product Details CP Page is given below for quick reference</p>
+
+<p><img src="/staticfiles/integration/media/webproduct-detailpage.png" alt="webproduct-detailpage" /></p>
+
+<h2 id="list-of-master-data-processes">List of Master Data Processes</h2>
+
+<p>a.	Master Data Add [Attribute Sets/Attributes/Attribute Options]: - All the information about the Attribute Sets, Attributes and Attribute Options in Magento (multi webstore) will be synced into NAV.                     <br />
+c.	Master Data Add [Website List]: -  All the information about the Magento websites will be synced into NAV.            <br />
+d.	Master Data Add [Category]: - All the information about the Magento Category will be synced into NAV.              <br />
+e.	Master Data Add [Tax Class]: - All the information about the Magento Product Tax Class will be synced into NAV.</p>
+
+<p>Once all the core information is synced, you can proceed with further integrations.</p>
+
+<p><strong>NOTE: These processes need to be completed for each and every connection.</strong></p>
+
+<p>You will also get detailed understanding of the <a href="/connectors/Dynamicsnav/">NAV</a> &amp; <a href="/connectors/magento2/">Magento2</a> application agent configuration, endpoints, attibutes and actions required for integration.</p>
+
+<h2 id="table-of-integration-scenarios-for-nav-magento-multiple-connection-application-is-given-below">Table of Integration scenarios for NAV-Magento (Multiple Connection) Application is given below:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Integration Areas</th>
+      <th>Source &amp; Destination Application</th>
+      <th>Dependencies for Integration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/integration/simple-productadd/">Simple Product Add NAV- Mage2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>Product Response Sync</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/simpleprdct-update/">Simple Product Update NAV-Mage2 MultiConnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/simple-productadd-mage2tonav/">Simple Product Add Mage2- NAV Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/configproduct-add/">Configurable Product Add NAV- Mage2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/configprdt-update/">Configurable Product Update NAV- Mage2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/customeradd-mage2tonav/">Customer Add Magento2-NAV Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/customeradd-navtomage2/">Customer Add NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/contactperson-add/">Contact Person Add NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/contactperson-addupdate/">Contact Person Add/Update Magento2- NAV Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/inventory-update/">Inventory Update NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/invoice-add/">Invoice Add NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>Payment with cheque, Payment with Bank Transfer, Payment with Cash</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/sales-order/">Sales Order Add Magento2-NAV Multiconnection</a></td>
+      <td>Magento2 Multi-store - NAV</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><a href="/integration/shipment/">Shipment Add NAV- Magento2 Multiconnection</a></td>
+      <td>NAV-Magento2 Multi-store</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

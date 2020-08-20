@@ -1,0 +1,48 @@
+I"Ú<p>API Proxies are API services which one can create to connect to a remote data source or multiple data sources.</p>
+
+<p>The heart of an API Proxy is Backend.<strong>APPSeCONNECT</strong> lets you connect to a data source by choosing and configuring the Backend App.</p>
+
+<p><strong>Pre-Requisuties</strong></p>
+
+<ol>
+  <li><a href="https://www.appseconnect.com/free-trial/">Getting a new account for APPSeCONNECT</a></li>
+  <li><a href="/deployment/Deployment-Configuration/">Configure your Environment</a></li>
+</ol>
+
+<ul>
+  <li>After that go to <code class="language-plaintext highlighter-rouge">App</code> section.</li>
+</ul>
+
+<p><img src="/staticfiles/api-management/media/BackendApp-How-to.png" alt="Backend App How To" /></p>
+
+<p>You will find two options here.</p>
+<ol>
+  <li>Choose Apps</li>
+  <li>Create App</li>
+</ol>
+
+<p><strong>Choose Apps</strong> : With this option you get to choose apps which fall under the plan your organization has been subscribed to.
+<img src="/staticfiles/api-management/media/BackendApp-How-to.png" alt="Backend App How To" /></p>
+
+<p><strong>Create App</strong>: With this option you can create your own custom app as per your need to connect
+to a remote data source.
+Upon clicking on Create App button,you are being introduced to APP Wizard.</p>
+
+<p><a href="/configuring%20appseconnect/configurations/#a-create-custom-a">Here is how you can create a custom App for your organization</a></p>
+
+<p>After saving your app, you need to build the data structure for your app.</p>
+
+<p><a href="/configuring%20appseconnect/configurations/">Here is how you can create app schema, attributes and actions</a></p>
+
+<p>You also need to set up protocol and template for your app.</p>
+
+<p><strong>For credentials</strong>,if you have your environment set up as on-premise primary agent
+you need to give credential in your agent,otherwise for cloud Environment you can give 
+credential from App section. <a href="/connectors/OLEDB-Credentials/">Here is how to provide credentials for cloud agent</a></p>
+
+<p>After this you are all set to choose app for your API proxy Backend section which you
+can create from here.</p>
+
+<p><img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></p>
+
+:ET

@@ -1,0 +1,84 @@
+I"Ý<p>Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple other applications or a single application. Process Flow is a Robust feature of APPSeCONNECT, where you can implement your business processes by customizing the nodes as per your requirement.
+With Process Flow, you can now create your customized technology application supporting the below mentioned protocols from your <a href="/processflow/designer-processflow/">Designer Page of Process Flow</a>.</p>
+
+<p>1) File
+2) REST
+3) SOAP
+4) OLEDB
+5) FTP</p>
+
+<p>The steps to create a <strong>Technology Application</strong> is provided below.</p>
+
+<h2 id="prerequisites-for-technology-app-creation">Prerequisites for Technology App creation:</h2>
+
+<ul>
+  <li>You need to have valid credentials of the portal.</li>
+  <li>You need to create the app in the <a href="/processflow/designer-processflow/">designer page</a> , before creating the Process Flow.</li>
+</ul>
+
+<h2 id="steps-to-create-technology-based-application">Steps to create Technology based Application:</h2>
+
+<p>1) Navigate to the <a href="/processflow/designer-processflow/">Process Flow designer page</a> and expand the <strong>Flow Connect</strong> menu, in the <a href="/processflow/designer-processflow/#process-flow-left-panel">Left panel</a> of the designer page.</p>
+
+<p><img src="\staticfiles\processflow\media\techapp1.png" alt="techapp1" /></p>
+
+<p>2) Drag any desired technology protocols to the designer panel for creating the application. The technology should be selected based on the protocol, your application supports. For REST based, you need to drag the REST config template, for SOAP based you need to select SOAP config template.</p>
+
+<p>3) On dragging the technology specific template, the technology configuration window opens. You will be able to view the following fields.</p>
+
+<ul>
+  <li>Name: Enter the name of the application</li>
+  <li>Enter Description: You can provide a small description for the application.</li>
+  <li>App Version (Mandatory Field): You need to provide the version of the application used.</li>
+  <li>Version Definition (Mandatory Field): You need to provide a short definition for the application version.</li>
+  <li>Choose Picture: You can upload the app specific logo for identifying your application by clicking on the <strong>Choose Picture</strong> button. This logo will be viewed where the application is in use.</li>
+  <li>Category: You can select the type of application based upon the categories such as Marketing, Huma Resource, Ecommerce, ERP, Accounting etc.</li>
+  <li>Status: This defines the status of the application, by default, it will be selected as Released.</li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\techapp2.png" alt="techapp2" /></p>
+
+<p>4) Enter the details for the above mentioned fields and click on the <strong>Save &amp; Continue</strong> button.</p>
+
+<p><img src="\staticfiles\processflow\media\techapp3.png" alt="techapp3" /></p>
+
+<p>5) The Node Configuration Window opens automatically for the created technology application.</p>
+
+<p><img src="\staticfiles\processflow\media\techapp4.png" alt="techapp4" /></p>
+
+<p>6) Enter the details of the Node Configuration Window for the created application, for specifying the node configuration. Click on the SAVE button.</p>
+
+<p><img src="\staticfiles\processflow\media\techapp5.png" alt="techapp5" /></p>
+
+<p><strong>Note:</strong>
+    - You cannot edit the created app from the process flow section. However you can anytime edit your application by navigating to APPS &gt; Search your App. Click on the View button for editing your created app.
+    - You cannot create applications with the same name in your organisation.
+    - You cannot provide special characters in the <strong>App Name</strong> field.</p>
+
+<p>Following the above process, you can successfully create a technology application.</p>
+
+<h3 id="reuse-of-the-created-technology-app">Reuse of the created Technology App:</h3>
+
+<p>You may require to reuse the same created techology app in the same process flow or in a different Process flow. Follow the below steps to add the same technology app created previously.</p>
+
+<p>1) Open the process flow where you are required to reuse the app. You need to <a href="/processflow/creating-processflow/#steps-to-create-a-process-flows">create a new process flow</a>, incase, you need to reuse the app in a new process flow.</p>
+
+<p>2) Expand the APPS menu in the <a href="/processflow/designer-processflow/#process-flow-left-panel">left panel of the designer page</a>. You can view two tabs upon its expansion: <code class="language-plaintext highlighter-rouge">Pre-Packaged App</code> &amp; <code class="language-plaintext highlighter-rouge">My APPS</code>.</p>
+
+<p><img src="\staticfiles\processflow\media\techapp6.png" alt="techapp6" /></p>
+
+<p>3) Click on the <strong>My Apps</strong> tab. You can view all the custom and the technology apps, you have created for your organisation.</p>
+
+<p><img src="\staticfiles\processflow\media\techapp7.png" alt="techapp7" /></p>
+
+<p>4) Select the app from the <strong>My Apps</strong> list and drag it on the <a href="/processflow/designer-processflow/#process-flow-designer-view">designer panel</a>. The node configuration window opens for the dragged app.</p>
+
+<p>5) Enter the details in the Node configuration window and click on the save button.</p>
+
+<p><strong>Note:</strong>
+    - <a href="/processflow/adding-schema-actions/">Click here</a> to know more about the process to create Schemas and Actions for the created technology app.
+    - The <a href="/processflow/deploying-and-executing-processfloww/">process to deploy and execute the process flows</a> remains the same for Technology applications
+    - You can also view the <a href="/processflow/snapshot-processflow/">process flow snapshots</a>, similar to as that of the prepackaged apps.</p>
+
+<p class="notice--info"><strong>Protip:</strong> For more details related to the technology app, <a href="/connectors/Overview-of-technology-connectors/">click here</a>.</p>
+:ET

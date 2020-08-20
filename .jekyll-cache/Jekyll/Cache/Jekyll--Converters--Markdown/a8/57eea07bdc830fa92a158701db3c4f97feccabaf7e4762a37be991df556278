@@ -1,0 +1,79 @@
+I"5<p>This article explains the add­on setup procedure in SAP B1 to facilitate SAP B1 integration with other applications using APPSeCONNECT.</p>
+
+<p><strong>Note: If you have an older version of APPSeCONNECT Add-on then you need to uninstall that first and then install it.</strong></p>
+
+<h3 id="part-a-installation-of-appseconnect-on-premise-add-on-3x-in-sap-b1">Part A: Installation of APPSeCONNECT On-premise Add-on 3.x in SAP B1:</h3>
+
+<p>Steps to install the Add-On in the required company of SAP B1 is as follows -</p>
+
+<ul>
+  <li>Make sure that the installation folder of SAP B1 Add-on has read/write permission.</li>
+  <li>Go to the following path in SAP B1: Administration -&gt; Add-Ons -&gt; Add-On Administration</li>
+  <li>Click on Register Add-On button to start the installation of the APPSeCONNECT Add-on. The following screen will appear.</li>
+</ul>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon1.png" alt="sapb1-addon1" /></p>
+
+<ul>
+  <li>Select the path for “.ard” file (in the sandbox/server) in the Registration Data File section as highlighted above. (Select the proper path to install the Add-on)</li>
+  <li>Check  “Install as part of Registration” checkbox and then click on the OK button.</li>
+</ul>
+
+<p>The following window will appear -</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon2.png" alt="sapb1-addon2" /></p>
+
+<ul>
+  <li>Click on the Next button to complete the installation of the Add-On in the SAP B1 Company.</li>
+</ul>
+
+<h3 id="part-b--configuring-the-appseconnect-add-on-in-sap-b1-company">Part B:  Configuring the APPSeCONNECT Add-On in SAP B1 Company:</h3>
+
+<ul>
+  <li>Select the status of Add-On as Automatic/Manual/Mandatory/Disable from “Default Group” as per your requirement.</li>
+</ul>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon3.png" alt="sapb1-addon3" /></p>
+
+<ul>
+  <li>Click on the User Preferences tab of the Add-On Administration window.</li>
+  <li>Assign your desired preferences.</li>
+</ul>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon4.png" alt="sapb1-addon4" /></p>
+
+<ul>
+  <li>Click on the Update button.</li>
+  <li>Now refresh and re-login into your SAP B1 Company</li>
+</ul>
+
+<h3 id="part-c--starting-and-stopping-the-appseconnect-add-on-in-sap-b1-client">Part C:  Starting and Stopping the APPSeCONNECT Add-On in SAP B1 Client:</h3>
+
+<p>If the User Preference for the Add-on is set to Manual for you then the following steps are required to start it.
+<strong>Administration -&gt; Add-Ons -&gt; Add-On Manager -&gt; Installed Add-Ons and start the Add-On.</strong></p>
+
+<p>Alternatively, it should get started automatically if the User Preference for the Add-on is set to <code class="language-plaintext highlighter-rouge">Automatic</code>.</p>
+
+<p><strong>Note: Whether it is manual or automatic, the add-on will be installed on the clients on its first run in both the cases.</strong></p>
+
+<p>After successful connection, the status of the APPSeCONNECT Add-On will be updated to Connected.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon5.png" alt="sapb1-addon5" /></p>
+
+<ul>
+  <li>Check the followings to ensure the Add-On is installed and working successfully.</li>
+  <li>Check whether Web Item Master Data has been created properly under the Inventory module of SAP B1 as shown below or not.</li>
+</ul>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon6.png" alt="sapb1-addon6" /></p>
+
+<p>Check whether the following field Connection to support multiple connections 
+(connect multiple e-commerce with a single SAP B1 company) feature is created or not.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/sapb1-addon7.png" alt="sapb1-addon7" /></p>
+
+<ul>
+  <li>Ensure that all the UDFs have been created properly in SAP B1. Refer to the document User Defined Fields in APPSeCONNECT Add-On for the same.</li>
+  <li>Once the Add-on is installed successfully and confirmed as explained above, deploy the stored procedure 3.x to complete this process.</li>
+</ul>
+:ET

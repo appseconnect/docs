@@ -1,0 +1,18 @@
+I"œ<p>User Authentication is now done in the API Level to ensure Authenticated Approach when working with Proxy API,
+Swagger Documentation and Applying Action Parameters to Action Filter.</p>
+
+<h2 id="steps-to-user-authentication">Steps to User Authentication</h2>
+
+<ol>
+  <li>Go to APPSeCONNECT Portal&gt; API&gt; Proxy&gt; Click on the AUTHENTICATION button(Top Right Corner) on the APPSeCONNECT Cloud Portal.<br />
+<img src="/staticfiles/api-management/media/authentication-proxy.png" alt="authentication-proxy" /></li>
+</ol>
+
+<p>2.The following screen appears. Select your User Organisation from the drop-down menu and it will automatically 
+generate the Username and Password. <br />
+<img src="/staticfiles/api-management/media/authentication-re-generation.png" alt="authentication-re-generation" /></p>
+
+<ol>
+  <li>Click on the Re-generate button to regenerate the authentication details as and when required.</li>
+</ol>
+:ET

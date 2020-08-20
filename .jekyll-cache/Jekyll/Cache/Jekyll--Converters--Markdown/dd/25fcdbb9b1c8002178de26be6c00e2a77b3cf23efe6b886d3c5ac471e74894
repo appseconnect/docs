@@ -1,0 +1,29 @@
+I"<h2 id="what-is-delay-node">What is Delay Node</h2>
+
+<p>DELAY node is used to delay or stop an execution flow for a specific period (in terms of seconds). 
+For example: If the user has an API which accepts only one request per second. So before calling the 
+API for POST or GET operation, user can implement the delay node which will hold up the execution of 
+<code class="language-plaintext highlighter-rouge">GET or POST</code> node for the specified amount of time.</p>
+
+<h2 id="prerequisites-for-implementing-delay-node">Prerequisites for Implementing Delay Node</h2>
+
+<ol>
+  <li>User needs to have valid credentials of APPSeCONNECT Portal.</li>
+  <li>Needs to <a href="/advance%20workflow/designing-executing-adv-workflow/">Advanced Workflow</a> before implementing Delay.</li>
+</ol>
+
+<h2 id="steps-to-implement-the-delay-node-in-advanced-workflow">Steps to implement the Delay node in Advanced Workflow</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT Portal and Navigate to the Advance Workflow Module.</li>
+  <li>Edit an existing workflow where the user needs to implement the workflow. User can also <a href="/advance%20workflow/designing-executing-adv-workflow/">create a new workflow</a> as per the requirement.</li>
+  <li>Drag and the drop the Delay node from the Process Property folder. The Delay Node Configuration window opens.
+<img src="/staticfiles/advance-workflow/media/advance-delay1.png" alt="advance-delay1" /></li>
+  <li>User needs to specify the time (in Seconds) for the defining the hold up time. 
+<img src="/staticfiles/advance-workflow/media/advance-delay2.png" alt="advance-delay2" /></li>
+  <li>After specifying the time, click on the Save Button.</li>
+</ol>
+
+<p>After saving the configuration window, user needs to attach the node with the other nodes as per the delay position Get/Post.</p>
+
+:ET

@@ -1,0 +1,29 @@
+I"Â<p>Integrating with WooCommerce, requires an APPSeCONNECT Plugin/Extension to be uploaded and installed in the WooCommerce Website. 
+This document demonstrates as how to upload and Install an uploaded Plugin.</p>
+<h2 id="prerequisite">Prerequisite:</h2>
+<ol>
+  <li>Need to have a valid WooCommerce account.</li>
+  <li>The APPSeCONNECT Plugin/Extension is needed to be present for uploading.</li>
+</ol>
+
+<p><strong>Note: The Plugin comes pre-packaged with APPSeCONNECT</strong></p>
+<h2 id="steps-to-upload-the-extension-in-woocommerce">Steps to Upload the Extension in WooCommerce</h2>
+
+<p>Go to: Dashboard &gt; Plugins &gt; Add New.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/woocommerce-pluginupload1.png" alt="woocommerce-pluginupload1" /></p>
+
+<p>Click on the Upload Plugin button. Choose the AEC Plugin to be uploaded.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/woocommerce-pluginupload2.png" alt="woocommerce-pluginupload2" /></p>
+
+<p>Select the Uploaded plugin. Once Uploaded, Click Install Button.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/woocommerce-pluginupload3.png" alt="woocommerce-pluginupload3" /></p>
+
+<p>Once the plugin is Installed, Click Activate Button.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/woocommerce-pluginupload4.png" alt="woocommerce-pluginupload4" /></p>
+
+<p>This completes the installation and the activation of the AEC Plugin.</p>
+:ET

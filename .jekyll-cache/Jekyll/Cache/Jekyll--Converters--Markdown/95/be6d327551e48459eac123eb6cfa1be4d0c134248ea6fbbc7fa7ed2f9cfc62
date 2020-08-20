@@ -1,0 +1,24 @@
+I"Û<h3 id="use-case-name">Use Case Name</h3>
+<p>API to Quota Management Access Restriction</p>
+
+<h3 id="brief-description">Brief Description</h3>
+<p>This is a api which the user can create to limit the access of backend resources (database) which have limited infrastructure.</p>
+
+<h3 id="actor">Actor</h3>
+<p>Implementers, Developers, Partners, End Customerâ€™s Technical Team</p>
+
+<h3 id="preconditions">Preconditions</h3>
+<p>Organization Creation, Registration of Organizartion URL with APPSeCONNECT &amp; Authentication for API</p>
+
+<h3 id="basic-flow">Basic Flow</h3>
+<p>The user will execute the flow as given below</p>
+
+<h3 id="post-conditions">Post-conditions</h3>
+<p>The user can now retrieve the data in the standard executable format like JASON or XML from the required database/application/isolated network with no API</p>
+<h3 id="exception-courses">Exception courses</h3>
+<p>The user will get operational error thrown on the response message, if the get customer/get product data is failure.</p>
+<h3 id="frequency-of-use">Frequency of use</h3>
+<p>The user can create the api and use as and when required.</p>
+<h3 id="assumptions">Assumptions</h3>
+<p>To Run this functionality, it is assumed that the supported app is configured.</p>
+:ET

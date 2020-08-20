@@ -1,0 +1,55 @@
+I"<p>Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is 
+getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
+API rate limit can be set up by the developer for a specified time period and when the policy is
+triggered for a specific call, the caller will receive <code class="language-plaintext highlighter-rouge">429 - Throttling Maximum sending rate exceeded</code> as response status code.</p>
+
+<p><strong>NOTE: a Policy can be applied more than once within an API but only once within an API version.</strong></p>
+
+<h3 id="policy-statement">Policy Statement</h3>
+
+<p>Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
+Below are the list of configurations required for this policy. 
+<img src="/staticfiles/api-management/media/ip-restrict-policy.png" alt="Ip Restrict Policy" /></p>
+
+<p>The rules and setup needs to be made accordingly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Is Mandatory</th>
+      <th>Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence</td>
+      <td>The order of your policies applied/you want this policy to run</td>
+      <td>No</td>
+      <td>Null</td>
+    </tr>
+    <tr>
+      <td>Span of time</td>
+      <td>Represent the amount of timespan required after which the requests from that particular user will automatically throttle.The Time limit is defined in MINUTES</td>
+      <td>No</td>
+      <td>Empty</td>
+    </tr>
+    <tr>
+      <td>Maximum no. of Requests</td>
+      <td>The maximum number of request, the user needs to prevent within the specified time</td>
+      <td>No</td>
+      <td>Empty</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="policy-usage">Policy Usage</h3>
+
+<p>The policy can be applied only at <code class="language-plaintext highlighter-rouge">inbound</code> section.</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>Currently the policy can be applied at API Version Scope only.</p>
+
+:ET

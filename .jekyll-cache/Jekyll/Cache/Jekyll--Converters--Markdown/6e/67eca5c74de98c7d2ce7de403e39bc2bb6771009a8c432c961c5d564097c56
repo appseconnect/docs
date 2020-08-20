@@ -1,0 +1,90 @@
+I";<p>Executing the process is a vital part when integrating any applications. This Document will let the users to understand how the 
+integration process can be executed through workflow for <code class="language-plaintext highlighter-rouge">Updating a Configurable Product</code> from Ms Dynamics NAV to Magento2 (Multi-store).</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p><img src="/staticfiles/integration/media/confgprdctupdate_navtomage2multi-workflow.png" alt="confgprdctupdate_navtomage2multi-workflow" /></p>
+
+<p>In this integration scenario, multiple connections have been made for Updating Configurable Products from Ms Dynamics NAV to Magento2 (along with multiple Magento websites from a single Magento admin).</p>
+
+<p>As a pre-requisite, the user needs to create and sync the Simple Products (child items) first, followed by the sync process of adding Configurable Products. 
+<a href="/integration/simple-productadd/">Click here</a>, to know more about creating simple products in MS Dynamics NAV. For knowing about the addition of Configurable items, <a href="/integration/configproduct-add/">Click Here</a>.</p>
+
+<p>For updating Configurable products from Ms Dynamics NAV to Magento2 (Multistore), these are the changes that could be performed for updating a configurable product.</p>
+
+<ul>
+  <li>Updates in Web Product Details CP Page: The user can update the Web TaxClass Id,  WebDescription and WebShortDescription.</li>
+  <li>Updates in Web ProductWebsites Page: The user can change/update the WebSiteId of the product.</li>
+  <li>Updates in Web ProductAttribute Page: No changes required in this section.AttributeOptionId is always blank in Configurable product.</li>
+  <li>Updates in Web ProductCategory Page: The user will be able to modify/update the CategoryId of the product in this page. Also the <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> is <code class="language-plaintext highlighter-rouge">always 
+blank in Configurable product</code>.</li>
+  <li>Updates in the Web Product Child Details Page: You can add new child items (belonging to the same Attribute set as that of the configurable) and remove the existing child item.</li>
+  <li>The changes in the AEC Application Item list will be modified as per the changes in the Web Product Details CP Page.</li>
+</ul>
+
+<p>On completion of the process click OK button. The entire <code class="language-plaintext highlighter-rouge">ItemCard</code> for this Configurable product is given below.
+<img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png" alt="confgprdctadd_navtomage2multi1" /></p>
+
+<h2 id="lookup-mapping">LookUp Mapping</h2>
+
+<p>The Lookup mapping for Currency shall be required in case the business logic deals with multiple currencies.</p>
+
+<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation</h2>
+
+<p>The pre-packaged mappings will successfully sync data MS Dynamics NAV  to Magento2 (MultiStore).</p>
+
+<ul>
+  <li>The mapping changes required are: Disable the attributes named <code class="language-plaintext highlighter-rouge">Attribute_set_id</code> and <code class="language-plaintext highlighter-rouge">type_id</code>.</li>
+  <li>Rest mapping changes are similar to <a href="/integration/configproduct-add/#attribute-mappingtransformation">Configurable product add</a></li>
+  <li>The new complex object type variable named <code class="language-plaintext highlighter-rouge">getCustomAttributeOption</code> is added under the section <code class="language-plaintext highlighter-rouge">configurable_product_options</code>.</li>
+</ul>
+
+<p>However, for more informations related to mapping, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
+
+<h2 id="action-filters">Action Filters</h2>
+
+<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="language-plaintext highlighter-rouge">Field</code> and <code class="language-plaintext highlighter-rouge">Criteria</code>.
+View the image below to define the Action Filters</p>
+
+<p><img src="/staticfiles/integration/media/configprdct_update_actionfilter1.png" alt="configprdct_update_actionfilter1" /></p>
+
+<p><img src="/staticfiles/integration/media/configprdct_update_actionfilter2.png" alt="configprdct_update_actionfilter2" /></p>
+
+<h2 id="executing-the-workflow-integration">Executing the Workflow Integration</h2>
+
+<p><strong>Note: Before integrating with Magento2 and MS Dynamics NAV , make sure all the Master Data Touchpoints are synced.</strong></p>
+
+<ol>
+  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
+  <li>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</li>
+  <li>Once the Execution is finished, click Resync Button in the agent.</li>
+  <li>The Resync Panel show the Success Result in the agent.</li>
+</ol>
+
+<p><img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi4.png" alt="confgprdctadd_navtomage2multi4" /></p>
+
+<h2 id="integration-data-survey">Integration Data Survey</h2>
+
+<p>The user can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow.
+This Snapshot View displays the successful execution of the workflow.</p>
+
+<p><img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi5.png" alt="confgprdctadd_navtomage2multi5" /></p>
+
+<h2 id="post-conditions">Post Conditions</h2>
+
+<p>The user can view the product synced in Magento2.</p>
+
+<p><img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi6.png" alt="confgprdctadd_navtomage2multi6" /></p>
+
+<p>The user can also go to NAV and check if the WebID has returned and the WebSyncFlag has been set to ‘T’ (True) from ‘F’ (False).</p>
+
+<p><img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi7.png" alt="confgprdctadd_navtomage2multi7" /></p>
+
+<h2 id="frequency-of-use">Frequency of use</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>N/A</p>
+:ET

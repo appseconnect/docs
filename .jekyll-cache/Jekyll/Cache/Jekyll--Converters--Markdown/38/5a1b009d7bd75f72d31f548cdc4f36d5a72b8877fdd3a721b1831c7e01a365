@@ -1,0 +1,58 @@
+I"*<p>The APPSeCONNECT Platform either for cloud or on-premise integration is a fully integrated solution that enables 
+organizations to design, develop, deploy, manage - connectivity apps, APIs and microservices within 
+the infrastructure provided and supported.</p>
+
+<p>Deployment involves <code class="language-plaintext highlighter-rouge">set of procedures where you move your processes and deployable components</code> 
+into a runtime environment. The Deployment section of this document lets you manage active deployments 
+and create new deployments. A deployment consists of a some package that has been deployed to a specified environment.</p>
+
+<p>Steps to deployment of Agent is discussed in the subsequent sections of the user guide.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sections</th>
+      <th>Details</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/deployment/gettingstarted-with-deployment/#system-requirement-for-agent-installation">System Requirement for Agent Installation, URL &amp; Port Info</a></td>
+      <td>Before the agent setup and installation, you need to know the requirements. This document will list with system requirements for Agent Installation and URL &amp; Port Infos.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/deployment/Deployment-Configuration/">Installing &amp; setting up of Agents </a></td>
+      <td>This section of the document will help you with the installations of both the Cloud and On-Premise Agent.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/deployment/Environment-Management/">Working with Environments</a></td>
+      <td>This document will help with the <code class="language-plaintext highlighter-rouge">Environment details page</code> of portal. Once you have installed your agent, you can view this image in the enviroment section of the portal.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/deployment/Environment-Management/#detaching-and-attaching-environment">Detaching and Attaching of Agents</a></td>
+      <td>This document will help you with the detaching and attaching events for your Agents in the Environments page.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/deployment/settings/">Settings in Agent</a></td>
+      <td>This document helps you with the settings page of the On-Premise Agent.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/deployment/Overview-of-Plugin/">Transactional Stores</a></td>
+      <td>This document will help you with the Plugins of APPSeCONNECT.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/deployment/upgradation-and-migration/">Updating &amp; Migrating an Agent</a></td>
+      <td>This document will help you with the Upgradation and Migration of the On-Premise Agents.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

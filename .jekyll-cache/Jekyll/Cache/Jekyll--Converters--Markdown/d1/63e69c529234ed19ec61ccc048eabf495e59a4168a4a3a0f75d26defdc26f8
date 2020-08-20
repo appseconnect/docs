@@ -1,0 +1,125 @@
+I"Š!<p>Getting started with APIs isnt always easy, there are tons of documents and techniques that can be used to leverage the idea of building your own
+APIs. The API, how simple it is, requires a big amount of ground work so as to ensure the API is properly utilized 
+and secured. The API needs to be properly organized, maintained and well documented, such that the API could be consumed correctly.</p>
+
+<h1 id="what-is-an-api">What is an API?</h1>
+
+<p>API or Application Programming Interface is defined as a software term that allows two applications to talk to each other, send 
+messages, request for a resource modification etc. API is used to create a bridge between the two application 
+using a set of protocol that the two application mutually understand.</p>
+
+<p>In modern day world, API is sometimes used interchangebly with Web APIs which means an interface that gives a web url or web based endpoint
+which can be called anytime using proper HTTP verbs (GET, PUT, POST, PATCH etc.) to perform operation on a particular resource or a batch of 
+resources.</p>
+
+<h1 id="what-is-api-management">What is API Management?</h1>
+
+<p>API Management of <code class="language-plaintext highlighter-rouge">APPSeCONNECT</code> helps an organization to create, maintain and publish APIs for their various data sources 
+such that the data can be easily accessed and maintained quickly without needing 
+a separate development team. The API management platform provides an interface which any developer can 
+access to create or configure services.</p>
+
+<p>Companies today want to make their various data sources to be available through web so that these data sources and services can be consumed by apps running on mobile or desktops. 
+For instance, a company can provide APIs to announce product pricing such that when any change is made to 
+the prices, the API automatically gets an update and notifies the API consumers easily.</p>
+
+<p>API management provides core competencies which will allow developers or implementers to publish, 
+protect and secure API gateway which follows industry standard protocol <code class="language-plaintext highlighter-rouge">Representational State Transfer</code> (REST) to ensure 
+the API can be consumed easily from 3rd party applications. This article provides an overview of common scenarios
+that involve API Management. It also gives a brief overview of the main components used in the API 
+program.</p>
+
+<h2 id="what-is-restful-api">What is RESTFul API?</h2>
+
+<p>One of the most popular protocol that is prevalent in the market today is REST or RESTFul APIs. The REST is 
+named as Representational State Transfer is very easy to understand and fully utilizes all the advantages of 
+HTTP (Hyper Text Transport Protocol). This means as an API consumer, there is no need to install additional 
+software or tools to consume such APIs.</p>
+
+<p>REST as a protocol gives lot of flexibility to the consumers. It is not tied directly to a particular resource 
+or methods, and hence it can handle multiple types of calls, can return a number of data 
+formats, and even can change the data scheme. Hence, we can say, REST uses correct implementation of Hypermedia.</p>
+
+<h2 id="planning-your-api">Planning your API</h2>
+
+<p>Planning an API and designing it before actually implementing it on any API stack is sometimes important. Most of the steps
+should be performed while designing and planning an API such that the API after developed and 
+being consumed by a large number of consumers are less changed and / or revised.</p>
+
+<p>By many means, building an API is just like designing and architecting a new house. You can say, 
+that you need to build a house just like the one you point to, but without any blueprint or proper
+desing and prepanning, it is high chance that the house would eventually look very different than 
+one you have been intended for.  It is important that you create solid foundation of your API, just 
+as you would do it for your house. You should understnad what your API should be able to do, and how 
+it should work, how its scope could be and what are the things you want to hide from external users.</p>
+
+<h2 id="how-to-design-api-endpoint-security">How to design API endpoint security</h2>
+
+<p>Security is another important element for any application or service, especially when it is exposed through
+www (or World Wide Web). There will be eventually a hundred or thousands of applications making calls to
+the APIs on daily basis. It is important to protect your APIs from attacks.</p>
+
+<h2 id="frontend-configuration">Frontend configuration</h2>
+
+<p>To create a new API, first you need to select <code class="language-plaintext highlighter-rouge">Create API</code> button from the <a href="/api-management/steps-to-create-proxy-endpoint/">Proxy screen</a>. A new popup will open which will allow user to 
+create a new API through a wizard.</p>
+
+<p>The Wizard starts with Basic Information screen which corresponds to the Frontend of the application. This section allows the organization to define
+the API url endpoint, the description, the HTTP Method, Versioning, etc. 
+<img src="/staticfiles/api-management/media/api-frontend-configuration.png" alt="Api Frontend Configuration" /></p>
+
+<p>The URL generated for the API will be shown while data is created.</p>
+
+<h2 id="configuring-backend">Configuring Backend</h2>
+
+<p>Backend is the main data source of an application. When configuring the data source, primarily, you need to first
+consider whether the proper data source is picked up or not. To consider picking up correct resource you have two options</p>
+
+<ul>
+  <li><a href="/api-management/choosing-backend-apps/">Choosing Backend Application from Pre-packaged Apps</a></li>
+  <li><a href="/api-management/connecting-to-a-data-source/">Creating new backend application connecting your data source</a></li>
+</ul>
+
+<p>Once the backend is properly selected, you can pick it for your API.</p>
+
+<p><img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></p>
+
+<p>When dealing with backends, it is also important to consider how you will put credentials for the application. To ensure you properly
+pick the credential make sure you have <a href="/deployment/Deployment-Configuration/">configured the environments</a> correctly and also 
+provided <a href="/connectors/OLEDB-Credentials/">credentials for the applications</a> created.</p>
+
+<h2 id="response-configuration">Response Configuration</h2>
+
+<p>Response configuration represents how the response is returned for the APIs. The API generally return in JSON or XML based on the 
+content type of the request. Once a request is made, you are allowed to identify the response from backend server and depending on
+either success or failure, you can customize your messages which will be returned. 
+<img src="/staticfiles/api-management/media/response-configure-api.png" alt="Response Configure Api" /></p>
+
+<p>Here the response is configured using custom message.</p>
+
+<h2 id="some-real-world-api-use-cases">Some real world API use cases</h2>
+
+<p>As it is always important to look at some of the use cases of APIs such that as a business personnel, you can 
+easily understand the proper utilization of an API Management system and also which can help 
+you decide the suitable APIs which suits your business need.</p>
+
+<h2 id="api-connecting-on-premise-data-source">API Connecting on premise data source</h2>
+
+<p>Let us suppose you have a legacy database system that collects and collates data from various existing systems,
+and remains on a central location as archive providing various validation and data intellegence requirements. 
+<a href="/api-management/deployments-and-environments/">Read More</a></p>
+
+<h2 id="proxy-for-existing-web-api">Proxy for existing Web API</h2>
+
+<p>Proxies help to build an additional layer in between the existing APIs and the server such that you can put a layer 
+on the API gateway which will keep track of API requests, manage your own standard authentication, provide custom interfacing
+to the backend services, generalize the filters and messages etc. 
+<a href="/api-management/steps-to-create-proxy-endpoint/">Read More</a></p>
+
+<h2 id="api-connecting-to-a-static-file">API connecting to a static file</h2>
+
+<p>Files are sometimes less prone to be exposed to the Web as API. Since, if you expose the file
+to the external world, the consumers would tend to download or upload the whole file at go, and 
+you as a owner of the file would be having less power to change your content.</p>
+
+:ET

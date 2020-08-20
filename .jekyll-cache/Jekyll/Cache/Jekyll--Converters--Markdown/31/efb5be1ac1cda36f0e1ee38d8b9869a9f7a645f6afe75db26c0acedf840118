@@ -1,0 +1,62 @@
+I"�<p>Mapping triggers the transformation process between the Source and the Destination Applications. 
+Source and destination schemas are mapped in the Transform section of the touchpoint. 
+This document will help you to know about the Source-Destination Mapping in APPSeCONNECT portal.</p>
+
+<h2 id="pre-requisites-for-source-and-destination-mapping">Pre-requisites for Source and Destination Mapping</h2>
+
+<ol>
+  <li>Valid credentials for logging into the APPSeCONNECT Portal.</li>
+  <li><a href="/getting%20started/configurations/#process-of-choosing-app">Choose APP</a> or <a href="/getting%20started/configurations/#create-application">Create APP</a></li>
+  <li><a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Create Connection template</a> 
+The pathway for source-destination mapping section is provided <a href="/transformation/overview/">here</a>.</li>
+</ol>
+
+<h2 id="source-destination-mapping">Source-Destination Mapping</h2>
+
+<p>Mapping of the attributes of destination application with source application attributes is implemented by the process known as 
+Source-Destination mapping.<br />
+<img src="/staticfiles/Transformation/media/sourcedestination-mapping.png" alt="sourcedestination-mapping" />
+Mapping Processes are initiated at various level of Input Packets</p>
+<ol>
+  <li><strong>For-Each loop</strong> - This is used for execution on a block of code on each element in a collection of items. 
+It is useful to display each item in a collection of items till when the loop is defined.
+Under For-Each loop, Entities have been used and Variables are set under Entities.</li>
+  <li><strong>Complex Object Collection</strong> - This specify the mapping list within a complex object. This mainly includes the collection of complex object and attributes.</li>
+  <li><strong>Complex Object</strong> - Complex Objects are the objects which are highly structured and large in size (can also be small) of Variable Representation Length (VLR).</li>
+  <li><strong>Attributes</strong> - Each target system configuration constructs an “attribute map” which contains all the attributes known by the system.</li>
+</ol>
+
+<p>Variables are defined by two types of scopes.</p>
+
+<ol>
+  <li><strong>Root Variable</strong> - Global variable which can used in any entity.</li>
+  <li><strong>Root Entity Variable</strong> - is a local Variable which is generally used under the scope of an entity.</li>
+</ol>
+
+<h2 id="steps-to-perform-the-source-destination-attribute-mapping">Steps to Perform the Source-Destination (Attribute) Mapping</h2>
+
+<ol>
+  <li>Log in with valid credentials in the AEC portal.</li>
+  <li>Choose any project and navigate to Connections- Choose a connection - View The Connection.<br />
+<img src="/staticfiles/Transformation/media/viewconnection-sourcedestination.png" alt="viewconnection-sourcedestination" /></li>
+  <li>The Touchpoints page will be viewed upon clicking the View the Connection button. Click on the Transform button.<br />
+<img src="/staticfiles/Transformation/media/transformbutton.png" alt="transformbutton" /></li>
+  <li>The Transformation Page opens up. Expand the For-Each Loop node for mapping the attributes. 
+ Click on the OPEN button provided beside every attribute.<br />
+<img src="/staticfiles/Transformation/media/transformation-page.png" alt="transformation-page" /></li>
+  <li>
+    <p>The Mapping window opens up.  In the Mapping Space, fields for mapping is needed to be provided. 
+The User can also click on the entities/attributes to get it on the box.<br />
+<img src="/staticfiles/Transformation/media/mapping-space.png" alt="mapping-space" /></p>
+  </li>
+  <li>Click on the Submit option after the mapping is done in that attribute. Similarly other attributes can also be mapped.</li>
+</ol>
+
+<p><strong>Note: If lookup mapping is required, select the options as required from the lookup type drop down option. 
+And click on the checkbox</strong></p>
+
+<p><strong>Note: The user can enable and disable the attribute mappings. The <code class="language-plaintext highlighter-rouge">Disabling Mapping</code> feature is not available for the 
+attributes with the primary key.</strong></p>
+
+<p>For more details on Attribute Mapping <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">click here</a></p>
+:ET

@@ -1,0 +1,12 @@
+I"W<p>Default rules are the rules that are predefined on APPSeCONNECT. User/Implementers cannot choose these rules and 
+will not get any view of these rules as they are implemented in backend of APPSeCONNECT. As and when required, these 
+rules would be deployed automatically.</p>
+
+<p>These are the default rules that are defined in APPSeCONNECT backend.</p>
+
+<p>a.	<a href="/rule/default-rule-for-morning-report/">Default Rule for Morning Report</a>  <br />
+b.	<a href="/rule/default-rule-for-data-purge-policy/">Default Rule for Data Purge Policy</a>  <br />
+c.  <a href="/rule/preconfigured-rule-for-misfire-event/">Pre-configured rule for Misfire Event</a>
+d.	<a href="/rule/preconfigured-rule-for-resync-bucket/">Pre-configured rule for Resync Bucket</a>
+e.  <a href="/rule/preconfigured-rule-for-log-bucket/">Pre-configured rule for Log Bucket</a></p>
+:ET

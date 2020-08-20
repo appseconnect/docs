@@ -1,0 +1,160 @@
+I"-<p>APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes 
+with the utmost security. The application maintains security at its core, which means any communication from any of 
+our infrastructure always follow a centralized security system which encrypts data and uses protected plug for 
+communication. The stringent data security ensures that all your data is secure at rest as well as in motion. 
+We never expose data to a third-party vendor without consent, and you would be always informed about who are 
+opening what part of data, thereby permitting you to do your business with ease without the second thought of security 
+issue.</p>
+
+<h2 id="application--platform-security">Application &amp; Platform Security</h2>
+<p>APPSeCONNECT is a platform which does integration between two or more incongruent applications. The mechanisms that 
+are involved to do the integration are APPSeCONNECT Web, APPSeCONNECT API and APPSeCONNECT Agent.</p>
+
+<p>APPSeCONNECT Web gives you user interface to interact with the platform, which exposes your project through a 
+web browser. We ensure every communication between you and the platform is communicated through an encrypted 
+secure socket connection and data integrity is maintained.</p>
+
+<ul>
+  <li>The certificates used to encrypt the transport layer is encrypted using SHA256RSA (which enhances security of the application).</li>
+  <li>The connectivity is forced to TLS 1.2 (this is presently the most secured transport layer security).</li>
+  <li>The web application is developed and safeguarded from XSS hacks using SQL Injection techniques.</li>
+</ul>
+
+<p>APPSeCONNECT API layer provides all the security measures that are mentioned for web. Additionally, it ensures only valid systems can access data from the APIs. The licensing system of APPSeCONNECT, activates a machine or an 
+IP address to the API, and only requests from a valid machine is accepted.</p>
+
+<p>APPSeCONNECT Agent is a tool and is a background service which runs as per your configuration running on schedule, 
+either automatically or manually, and syncing data between applications. This tool is either installed in your server 
+or you can host it through our cloud to start executing the sync operation.</p>
+
+<h2 id="on-premise-data-communication">On Premise Data Communication</h2>
+
+<p>On premise data communication via APPSeCONNECT Agent is required when you do not want to expose your application 
+credentials to anyone, and you want all your transactions are isolated to your own network.  In this case, the agent 
+downloads all the configurations made in the platform which does the actual sync through APPSeCONNECT API and installs
+it on your system.</p>
+
+<p>Our component always stores the data in encrypted format on your local machine ensuring highest security for the
+sensitive and transactional data. When the data is transferred to our data centers, all files and integration 
+scans for automatic detection of viruses and malwares.</p>
+
+<p>On-premise data communication can be of two types:</p>
+
+<h2 id="1-communication-between-application-with-appseconnect">1. Communication between Application with APPSeCONNECT</h2>
+
+<p>Your network will communicate with application through APPSeCONNECT using standard protocol defined by the 
+application vendor. E.g.: Magento 2.0 uses OAuth 2.0 as standard security protocol as data communication, 
+here APPSeCONNECT leverages the same technique to communicate data inflow and outflow. Our component always 
+stores the data in encrypted format on your local machine ensuring highest security for the data transfer.</p>
+
+<p>The encryption algorithm which is used to store the data is Triple DES algorithm with 256-bit private key. 
+We do not move any transactional data to our APPSeCONNECT Cloud or any sensitive credentials to our system. 
+Hence, no amount of security protocol is violated.</p>
+
+<h2 id="2-communication-between-appseconnect-to-appseconnect-cloud">2. Communication between APPSeCONNECT to APPSeCONNECT Cloud</h2>
+
+<p>The Agent can respond to any configurational changes and can retain that application configuration until the next 
+change.  Once installed and logged in to APPSeCONNECT Agent, it will automatically download all the configurations 
+after update configuration, giving you the option to see all the activated touchpoints (or workflow) from the cloud. 
+If there is any further configuration change after logging into Agent, user needs <code class="language-plaintext highlighter-rouge">Update Configuration</code> again which 
+is an Agent feature to manually update the Agent with current configuration changes.</p>
+
+<p>The transactional databases are occasionally backed up in a location at an interval to ensure the data is safe from 
+disaster and you can retrieve the last state back when needed.</p>
+
+<h2 id="architecture-of-on-premise-data-communication">Architecture of On-Premise Data Communication</h2>
+
+<p><img src="/staticfiles/licensekey/aec-data-communication.png" alt="aec-data-communication" /></p>
+
+<p>No inbound firewall ports need to be open for the OP Agent to communicate with the data centre for both the applications 
+(Source and Destination). The agent transfers data to and from the application in communication directly from the 
+on-premise network. This means, APIs are called directly using an adapter built for that particular app.</p>
+
+<p>It follows the standards defined by the application to push data and does not have any footprint on APPSeCONNECT cloud.
+This feature of APPSeCONNECT agent ensures security on your own network.</p>
+
+<p>For on-premise agent, we only transfer configurational data from our server, which itself does not hold any 
+transactional or sensitive information. The AEC Engine after doing the necessary transformation passes the 
+data through Storage (Encrypted API) and then to Application 2.</p>
+
+<p>The AEC Engine always initiates the connection, the data centre never pushes data to the Agent. When the Agent initiates a connection, 
+it uses SSL handshake to authenticate the data centre before transmitting data.</p>
+
+<p>All outbound communication is performed using the secured HTTP port 443. The Agent uses the digital certificate 
+automatically created during APPSeCONNECT registration (see Password Encryption Security below).</p>
+
+<p>AEC Engine communicates with <code class="language-plaintext highlighter-rouge">AEC Storage and Microservices</code> via API Layer which is 256 bits encrypted by a private security key of an organization.<br />
+Organization based private key is used to encrypt data on-premise at rest, such that the data becomes unreadable and unencryptable.</p>
+
+<h2 id="types-of-data-storage-in-op-agent">Types of data storage in OP agent</h2>
+
+<ul>
+  <li>Configuration of AEC Server</li>
+  <li>Application Credential</li>
+  <li>Application Data</li>
+  <li>Transactional Configuration</li>
+</ul>
+
+<h2 id="cloud-data-communication">Cloud Data Communication</h2>
+
+<p>Data transferred from our cloud platform is also secured inside our server firewalls. The servers cannot be accessed 
+from outside of our network and the firewall only allows communications from our public facing applications.</p>
+
+<h2 id="what-is-cloud-agent">What is Cloud Agent</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Cloud Agent</code> is a tool that executes all the sync process in cloud. All the background services which runs as per the 
+configuration done are executed in cloud. User is required to create and enable the cloud agent in the environment 
+section of the portal for utilizing the functionality of the cloud agent. Cloud Agent works only for the cloud 
+supported applications.</p>
+
+<h2 id="how-cloud-agent-works-with-aec">How Cloud Agent works with AEC</h2>
+
+<p>Cloud Agent interacts with AEC in a very secure way so that your data credibility remains intact and secure throughout
+ your business transactions. AEC Engine interacts with the applications database and storage using IP Based Filtering
+and thereby the API interacts with AEC Portal via Firewall for high security mechanism.</p>
+
+<p><img src="/staticfiles/licensekey/aec-data-communication2.png" alt="aec-data-communication2" /></p>
+
+<ul>
+  <li>IP Based Filtering: It uses a strict filtering process where no one from outside world/ unauthorised parties can penetrate. It will be only accessed by our server components on cloud agent.</li>
+  <li>Microservice Engine: When the user (clients) requests any action in the portal, it triggers one or multiple microservices through an API Layer which is itself firewalled and follows IP Based Filters 
+to fetch the data ensuring high security of your data from outside world/ unauthorised parties.</li>
+  <li>Secure Transactional Data Storage - The transactional data stored in data vaults are stored and accessed using secured communication layer. These data are exposed using a key which is 
+accessible only through our application server.</li>
+</ul>
+
+<h2 id="password-encryption-security">Password Encryption Security</h2>
+
+<p>When an APPSeCONNECT user registers for an account, the platform generates a temporary password 
+and sent to the registered email for activation. The password generated from our server is hashed and stored. 
+The password is encrypted and stored for the account. Only the account owner can decrypt with the password 
+needed to unlock the account. When an agent is deployed, we generate a license key using the credentials supplied 
+to the agent. A key uniquely identifies a machine and is stored on the system for any communication. 
+[Link to license management]</p>
+
+<p>Password Encryption Security is categorised into two major sections:</p>
+
+<ul>
+  <li>Platform Security Password</li>
+  <li>Application Security Password</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Platform Security Password: Required during Registration</code></p>
+
+<p>(a) Password is stored in md5 hash.<br />
+(b) When user authenticates their own password, it is automatically converted to md5 hash (during registration) and stored in AEC Database. 
+    This format is irreversible to the actual password, hence providing users with full password security. Here only the user can decrypt 
+    with the password needed to unlock their password to access the account.<br />
+(c) If the user forgets password, they can do reset password to set new password.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Application Security Password: Required during Build and Deployment</code></p>
+
+<p>(a)	In every organization, we generate key which is used to encrypt data/credential for that organization. The credentials are stored in a vault which can be opened only by that key.<br />
+(b)	We use <code class="language-plaintext highlighter-rouge">triple DES</code> cryptographic algorithm to encrypt your application credentials using the private key generated for the organization.<br />
+(c)	The key size is of 256 bits.<br />
+(d)	During application communication the AEC Agent internally uses the private key to decrypt the credentials.</p>
+
+<h2 id="hostnames-and-urls-of-appseconnect">Hostnames and URLs of APPSeCONNECT</h2>
+
+<p>In addtion to secured connectivity, APPSeCONNECT requires a number of URLS and Ports for deploying it on your environment for seemless connection between the agent and our cloud portal. <a href="https://community.appseconnect.com/hostnames-and-urls-for-appseconnect/">Click</a> to view the list of host URLs and ports.</p>
+:ET

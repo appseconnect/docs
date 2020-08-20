@@ -1,0 +1,18 @@
+I" <ul class="toc__menu">
+  <li><a href="#installation-of-ins206-extension-for-nav2017">Installation of INS2.06 Extension for NAV2017</a></li>
+  <li><a href="#list-of-webservices-used-in-nav-multiconnection">List of Webservices used in Nav multiconnection</a></li>
+  <li><a href="#importing-of-fob-files-and-web-services-xml-file">Importing of .fob files and web services XML file</a></li>
+  <li><a href="#manual-changes-in-base-pages">Manual changes in Base Pages</a>
+    <ul>
+      <li><a href="#changes-in-customer-card-page">Changes in Customer Card Page</a></li>
+      <li><a href="#changes-in-item-card-page">Changes in Item Card Page</a></li>
+    </ul>
+  </li>
+  <li><a href="#changes-in-sales-order-page">Changes in Sales Order Page</a></li>
+  <li><a href="#changes-in-ship-to-address-page">Changes in Ship-to Address Page</a></li>
+  <li><a href="#changes-in-contact-card-page">Changes in Contact Card Page</a></li>
+  <li><a href="#changes-in-contact-alt-address-card-page">Changes in Contact Alt. Address Card Page</a></li>
+  <li><a href="#managing-variants-in-aec-extension">Managing Variants in AEC Extension</a></li>
+  <li><a href="#troubleshoot">Troubleshoot</a></li>
+</ul>
+:ET

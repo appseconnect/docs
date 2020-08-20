@@ -1,0 +1,58 @@
+I"Ï<p>Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes which you need to perform your daily activities. The workflow management screen will allow you to search, filter, create, edit workflows.</p>
+
+<p>By reading this document an implementer would be able to design the first workflow for an organization and will execute it from the web portal also. The debugging functionality is also explained in the coming section of the module.</p>
+
+<p>To know in details, go through the given sections:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Workflow Usage</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/workflow/steps-to-choose-your-workflow/">Steps to choose your workflow</a></td>
+      <td>This Feature lists you all the pre-packaged workflows.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/steps-to-create-your-first-workflow/">Steps to create your first workflow</a></td>
+      <td>This section will guide you through workflow creation &amp; configuration in simple steps.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/attribute-mapping-workflow/">Attribute Mapping of workflow</a></td>
+      <td>While Working with Workflow <code class="language-plaintext highlighter-rouge">Attribute Mapping</code> needs to be implemented before integrating.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/workflow-nodes-and-links/">Workflow Nodes and Links</a></td>
+      <td>This document will helps you with the <code class="language-plaintext highlighter-rouge">Element Nodes, Actions Nodes, Process Property Nodes &amp; Self-Loop Link.</code></td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/deploying-and-executing/">Scheduling, Deploying, Publishing &amp; Executing workflows</a></td>
+      <td>With APPSeCONNECT Workflow, you can deploy, execute and maintain business integrations</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/list-of-snapshot/">Data-view process of workflow snapshot</a></td>
+      <td>The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the process.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/common-use-cases-on-workflow-management/">Workflow Usecases</a></td>
+      <td>This will help you with business specific scenarios for implementing Workflows.</td>
+    </tr>
+    <tr>
+      <td><a href="/resuming%20workflows/resuming-workflows/">Resuming Workflows</a></td>
+      <td>By Resuming Workflow wherein, when a workflow execution gets stopped midway,restart the workflowing is not required instead the workflow would resume from the node it stopped.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/debugging-a-workflow/">Debugging a workflow</a></td>
+      <td>This helps you to investigate the workflow by executing one or more nodes directly within the workflow and inspect the data being fetched or passed to the actions.</td>
+    </tr>
+    <tr>
+      <td><a href="/workflow/Troubleshooting/">Workflow Troubleshooting</a></td>
+      <td>This section of the document helps you with troubleshooting of various common scenarion that you can come across.</td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

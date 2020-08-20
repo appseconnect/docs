@@ -1,0 +1,4 @@
+I"<p><strong>Reponses Content type conversion policy</strong> is a type of outbound policy. 
+It can be configured for the output format such as XML or JSON. If the Response Conversion Type selected as 
+XML and backend application response will be converted to XML.</p>
+:ET

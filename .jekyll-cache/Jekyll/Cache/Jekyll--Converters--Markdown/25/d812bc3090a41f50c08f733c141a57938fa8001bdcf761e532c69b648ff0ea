@@ -1,0 +1,54 @@
+I"<h2 id="what-is-decision-node">What is Decision Node</h2>
+
+<p>Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or decisions. 
+A decision can be applied on a single chunk of data based on the decision criteria defined in the decision definition window. 
+After data passed through role node there can be two scenarios either the data matched the decision definition, or it fails 
+and depending on success and failure user can configure his/ her next processing steps.</p>
+
+<p>For example, a user wants to post a bunch of customer data from Shopify to SAP B1. After processing the Shopify data user can
+apply a decision along with a splitter node to check if a customer email address does not belong to a specific domain. 
+If the decision is satisfied, then the data will be posted to SAP B1 otherwise we will store the data in our local storage.</p>
+
+<h2 id="prerequisites-for-implementing-decision-node">Prerequisites for Implementing Decision Node</h2>
+
+<ol>
+  <li>User needs to have valid credentials of APPSeCONNECT Portal.</li>
+  <li>Needs to create an <a href="/advance%20workflow/designing-executing-adv-workflow/">Advanced Workflow</a> before implementing Decision.</li>
+</ol>
+
+<h2 id="steps-to-implement-decision-node-in-advanced-workflow">Steps to implement Decision Node in Advanced Workflow</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT portal and Navigate to the Advance Workflow Module of APPSeCONNECT.</li>
+  <li>Create a workflow or edit an existing workflow. The Create &amp; Edit page opens.</li>
+  <li>Drag and drop the Decision node to the design section, from the Process Property drop-down.</li>
+  <li>On releasing the node, the Decision node configuration window opens.<br />
+<img src="/staticfiles/advance-workflow/media/advance-decision1.png" alt="advance-decision1" /></li>
+  <li>The decision node has two radio buttons for providing the decision criteria:
+    <ul>
+      <li>Select a Decision: All the decisions created or defined previously within the current organisation would be present in the drop-down.</li>
+      <li>Create Decision: Enable its radio button, user/implementer would be able to create a new decision criterion.</li>
+    </ul>
+  </li>
+  <li>User/Implementers can either select either of the two options. On enabling the radio button for create decision, users will be able to 
+define the decision criterion.
+<img src="/staticfiles/advance-workflow/media/advance-decision2.png" alt="advance-decision2" /></li>
+  <li>Enter the name for the criteria and click on the Add criteria Button. The fields for entering the criteria appears. The fields are:
+    <ul>
+      <li>Key : Specifies the tokens for implementing the decision.</li>
+      <li>Select: These are the operators for implementing the decision operation. User/Implementer needs to select the operators from the down, for execution the decision node conceptually.</li>
+      <li>Value: Specify the value for the decision that needs to be implemented.<br />
+<img src="/staticfiles/advance-workflow/media/advance-decision3.png" alt="advance-decision3" /> 
+<strong>Note: By Pressing the button <code class="language-plaintext highlighter-rouge">e</code> on the field <code class="language-plaintext highlighter-rouge">Key</code>, user/implementer can view all the tokens that are available for implementing decision to workflow.</strong></li>
+    </ul>
+  </li>
+  <li>Select the token from the list that appears and enter the respective value to the fields as per requirements.<br />
+<img src="/staticfiles/advance-workflow/media/advance-decision3.png" alt="advance-decision4" /></li>
+  <li>Once the criterions are provided, click on the SAVE Button.
+After saving the configuration window for Decision, user needs to attach the node with the other nodes as per the decision position with 
+respect to GET or POST.</li>
+</ol>
+
+<p><strong>Note: When adding decision from the <code class="language-plaintext highlighter-rouge">Select a Decision</code> drop-down, user doesnot need to specify any tokens, the previously implemented token will be in use.</strong></p>
+
+:ET

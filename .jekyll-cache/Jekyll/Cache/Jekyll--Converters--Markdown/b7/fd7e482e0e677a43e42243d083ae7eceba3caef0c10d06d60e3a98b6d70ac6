@@ -1,0 +1,3 @@
+I"ù<h3 id="what-is-process-node">What is Process Node?</h3>
+<p><code class="language-plaintext highlighter-rouge">PROCESS</code> node is used for transforming data from one format to another format based on the mapping logic specified for that touchpoint. When we drag a process node in the workflow we need to select a touchpoint. For example, we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP), so for adding data to SAP B1, we need to convert Shopify data to SAP B1 format. <code class="language-plaintext highlighter-rouge">PROCESS</code> node will do that work depending on the transformation logic written in the touchpoint.</p>
+:ET

@@ -1,0 +1,55 @@
+I"í	<h2 id="prerequisites-for-adding-productitems-in-sage-300">Prerequisites for adding Product/Items in SAGE 300</h2>
+
+<ol>
+  <li>Need to have a valid SAGE 300 account.</li>
+</ol>
+
+<h2 id="steps-to-add-productitems-in-sage-300">Steps to Add Product/Items in SAGE 300</h2>
+
+<ol>
+  <li>
+    <p>Login to the cloud portal of the application SAGE 300.</p>
+  </li>
+  <li>
+    <p>Navigate to <code class="language-plaintext highlighter-rouge">Inventory Control &gt; I/C Items and Price Lists &gt;Items</code>.</p>
+  </li>
+  <li>
+    <p>The Items Page opens. Hover the cursor beside the field Item Number and click on the Add/Edit Button.</p>
+  </li>
+</ol>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage1.png" alt="productadd-sage1" /></p>
+
+<p>The Construct Item Number window opens. Click Search Button.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage2.png" alt="productadd-sage2" /></p>
+
+<p>The Select Structure Code window opens. Select any structure code from the given list and double click on it.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage3.png" alt="productadd-sage3" /></p>
+
+<p>On the Value tab, click on the search button. Select any segment code for the window that opens 
+and click on the Select button. For rest Segment Name, Segment Value is to be selected.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage4.png" alt="productadd-sage4" /></p>
+
+<p><strong>Note: The Structure Code and Segment provided should be unique else new items will not be created</strong></p>
+
+<p>Provide the Item Description, Category and the Account Set Code, in the Items Window.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage5.png" alt="productadd-sage5" /></p>
+
+<p>Click on the Units Tab. Click on the Add Line option and provide the field.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage6.png" alt="productadd-sage6" /></p>
+
+<p><strong>Note: The conversion Factor in the Units tab, must be 1</strong></p>
+
+<p><strong>Note: Enabling the checkbox is mandatory and the Stocking Unit of Measure field should be marked YES</strong></p>
+
+<p>In the Taxes tab, enable the checkbox for the taxes present. Now Click Operation Fields.</p>
+
+<p>Enable the Checkbox for Price in the optional fields and click SAVE button.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/productadd-sage7.png" alt="productadd-sage7" /></p>
+:ET

@@ -1,0 +1,114 @@
+I"6<h2 id="use-case-name">Use Case Name</h2>
+<p>Using Lookups Mapping for Value Interchange</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p>Lookups Mapping is a feature in APPSeCONNECT which enables the user or implementer to provide a specific value to the application environment, such that when the source and destination application is integrated, 
+the value in source application can easily be integrated with its value in destination application, corresponding to its field.</p>
+
+<p>For Instance: Order placed in Magento2 has the currency value<code class="language-plaintext highlighter-rouge">$</code> but SAP B1 supports the value <code class="language-plaintext highlighter-rouge">USD</code> for the field CURRENCY. Though the meaning would be same, but applications will not support such instances. 
+Therefore in these cases Lookups mapping needs to be implemented where the both values of the field can be integrated error free.</p>
+
+<p>Lookup Mapping is an integral part of data synchronization between two independent applications.</p>
+
+<ul>
+  <li>
+    <p>APPSeCONNECT offers you the flexibility to do the mapping of attribute values such that value from one application can be easily converted to the other one.</p>
+  </li>
+  <li>
+    <p>Lookup will ensure that you can configure each and every discrete value of one application to pass appropriately to another.</p>
+  </li>
+  <li>
+    <p>Any Lookup done in APPSeCONNECT Cloud will get automatically gets replaced by our On-Premise Agent during actual synchronization.</p>
+  </li>
+  <li>
+    <p>The <strong>Update Lookup</strong> tables option of Agent will enable you to update the mapping database cache.</p>
+  </li>
+</ul>
+
+<p>APPSeCONNECT also provides a default alert feature to remind you of doing mandatory Lookup Mappings in our Cloud portal 
+to prevent you missing a mandatory Lookup Mapping required as per our rule-book.</p>
+
+<h2 id="actors">Actors</h2>
+
+<p>Implementers, Developers, Partners.</p>
+
+<h2 id="preconditions">Preconditions</h2>
+
+<ol>
+  <li><a href="">Organisation Creation</a> &amp; <a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">Connection Creation</a>.</li>
+  <li>The user needs to know the value of the field in their corresponding application for implementing the mapping.</li>
+</ol>
+
+<h2 id="basic-flow">Basic Flow</h2>
+
+<p>Lookups Mapping can be done either from the touchpoint level or connection level. The UI remains the same for both 
+the options.</p>
+
+<p>The Lookups feature consist of multiple fields like Lookup Type, Used For, Source Value &amp; Destination Value.</p>
+
+<ol>
+  <li>Lookup Type: This element contains the field for which the mapping is to be done. The fields can be selected from the drop-down option.</li>
+  <li>Used For: This field is a description for the mapping. The input can be anything related to the field that is being used.</li>
+  <li>Source Value: This field will have the source value which is application specific.</li>
+  <li>Destination Value: This field will have the destination value which is also application specific.</li>
+</ol>
+
+<p>The screen for the Lookup is provided below:</p>
+
+<p><img src="/staticfiles/Transformation/media/lookup1.png" alt="lookup1" /></p>
+
+<p>(a) Add New - This button enables to add new lookuptype and value to a connection.
+(b) Save All - This button enables to save all the defined lookup/lookups.
+(c) Delete - This button enables to delete selected lookup/lookups. This also gives the option to 
+purge lookups. 
+(d) Import Lookup -
+(e) Export Lookup -</p>
+
+<p><strong>Note: Users can also add the Lookups by importing the files. 
+Click on the Horizontal dots and select the option Import. Similarly by Clicking on Export,
+users can download the created list of the lookups.</strong></p>
+
+<h2 id="steps-to-implement-lookups">Steps to Implement Lookups:</h2>
+
+<ol>
+  <li>Navigate to the touchpoint after login for which the Lookup Mapping is to be done.<br />
+<strong>Note: The user can even implement the Lookup Mapping in the List of Touchpoints Page</strong></li>
+  <li>Click on the Transform button on the touchpoint you have selected. The user will now be able to view the Transform screen of that touchpoint.</li>
+  <li>Click on Lookups and you can view two options. Click on the ADD option to add new Lookup values. 
+VIEW option will display the lookups provided for that touchpoint or the connection.   <br />
+<strong>Note: Lookups can also be added if clicked on the VIEW button</strong><br />
+<img src="/staticfiles/Transformation/media/lookup2.png" alt="lookup2" /></li>
+  <li>The Lookup Box opens when clicked on the ADD button. The user can view all the fields that are required to map the 
+Lookup Types.</li>
+  <li>Select the Lookup types from the drop-down for which the Mapping is to be done. Currently there are numerous types 
+that can be availed for value map.     <br />
+<strong>Note: The type <code class="language-plaintext highlighter-rouge">Currency</code> is selected for the demonstration.</strong></li>
+  <li>Provide the input for field <code class="language-plaintext highlighter-rouge">Used For</code> which should be related to the lookup type.</li>
+  <li>Input the Source and Destination Value for which the Mapping is to be done. The user can view the screen below.<br />
+<img src="/staticfiles/Transformation/media/lookup3.png" alt="lookup3" /></li>
+  <li>The user can add multiple Lookup types for its mapping. Click on the Enable checkbox once the values are provided.<br />
+<img src="/staticfiles/Transformation/media/lookup4.png" alt="lookup4" /><br />
+<strong>Note: The Destination Value USCA is a value in the Tax Codes of SAP B1 for which the rate is provided. By default, 
+the USCA is not present in the SAP B1, it needs to be created for enabling this mapping.</strong></li>
+  <li>Once the values are provided click on the SAVE icon beside the lookup or click on the SAVE ALL option.</li>
+</ol>
+
+<p><strong>Note: After Providing and Saving the Values, click on the option <code class="language-plaintext highlighter-rouge">Reset Cache</code> and <code class="language-plaintext highlighter-rouge">Reset Publish</code> in the touchpoint and 
+Click on <code class="language-plaintext highlighter-rouge">Update Lookup Tables</code> and then <code class="language-plaintext highlighter-rouge">Update Configuration</code> in the agent for enabling the mapping.</strong></p>
+
+<p><img src="/staticfiles/Transformation/media/lookup5.png" alt="lookup5" /></p>
+
+<h2 id="post-conditions">Post-Conditions</h2>
+<p>The user can view the successful sync of the touchpoints for the connection Magento2 and SAP Business One.</p>
+
+<h2 id="exception-courses">Exception Courses</h2>
+<p>The user can view the error logs in the RESYNC Bucket of the agent (Cloud and OP) if the touchpoint fails to sync for any LookUp Mapping cases. 
+<a href="/transformation/troubleshooting/#troubleshooting-process-for-scenario-3">Click here</a> for lookup related troubleshooting.</p>
+
+<h2 id="frequency-of-use">Frequency of Use</h2>
+<p>The user can implement lookup mapping when required for any connection/touchpoint.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+<p>Not Applicable</p>
+:ET

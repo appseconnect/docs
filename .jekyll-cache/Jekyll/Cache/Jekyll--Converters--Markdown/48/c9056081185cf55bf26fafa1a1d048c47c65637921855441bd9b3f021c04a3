@@ -1,0 +1,6 @@
+I"<p>Policies are hooks to an API which you can punch at differnt levels of execution. They are powerful capabilities to an API publisher
+that can impose some change in behavior of an API. Policies are collection of statements which are execued sequentially
+on the request or response of an API. They are applied either before execution of actual action (stated as InBound policies) or 
+after the actual action has been executed (termed as Outbound Policies). Some policies can change the Http Pipeline of an API execution 
+altogether.</p>
+:ET

@@ -1,0 +1,32 @@
+I";
+<p>This section of the document provides you the full details of using Assembly Version Extraction 
+and the process of uploading the Native Resources by uploading adapters.</p>
+
+<p>The native resource functions of the applications are needed to be uploaded in the cloud for the 
+mapping process. Earlier you had to do it manually by writing down all the native functions in 
+the cloud which displayed errors while sync.</p>
+
+<p>Now we simply need to upload a zip folder which will contain the .dll and the .pdb file along 
+with any other dependency file of the particular application you are working on.</p>
+
+<ol>
+  <li>Add the APP on the Cloud Portal, click on the <strong>+ button</strong> beside the Application name which you have created.</li>
+  <li>Click on the Adapter button  from the menulist. The ADAPTER window appears, Click on <code class="language-plaintext highlighter-rouge">ADD ADAPTER</code>.<br />
+<img src="/staticfiles/connectors/media/technology-connector/AddAdapter.png" alt="AddAdapter" /></li>
+  <li>The following window opens. You can upload the ZIP FOLDER from <code class="language-plaintext highlighter-rouge">CHOOSE FILE</code> option.<br />
+<img src="/staticfiles/connectors/media/technology-connector/ChooseFiles_AddAdapter.png" alt="ChooseFiles_AddAdapter" /></li>
+  <li>All the field details would be automatically filled up after the ZIP folder is chosen.<br />
+<img src="/staticfiles/connectors/media/technology-connector/ChooseFiles_AddAdapter1.png" alt="ChooseFiles_AddAdapter1" /></li>
+  <li>Upload the ZIP Folder. Then the APPRESOURCES window opens where you can select the appresources.<br />
+<img src="/staticfiles/connectors/media/technology-connector/AppResources_AddAdapter.png" alt="AppResources_AddAdapter" /></li>
+  <li>You have the options for selecting all the appresources (by selecting the Check-Box beside the Title “Function Name”) 
+and also you have the option to go for the one you require.<br />
+<img src="/staticfiles/connectors/media/technology-connector/Save_AppResources.png" alt="Save_AppResources" /></li>
+  <li>Now the selection of APPRESOURCE is complete, Click on SAVE.</li>
+  <li>Click <code class="language-plaintext highlighter-rouge">Update Adapters</code> for updating the Adapter in the Agent.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> For every new version of Adapters and updates in the Native resources functions, the above procedure is needed to be followed.
+The .dll, .pdb and other Dependant files needs to be uploaded only in a ZIP FOLDER. Also make sure that all the dependant files are added up in the folder.</p>
+
+:ET

@@ -1,0 +1,5 @@
+I"„<h2 id="what-is-halt-resume-node">What is halt-resume node</h2>
+<p>HALT and RESUME nodes are used in a combination. 
+We implement HALT node to halt the execution of the current node and process flow transferred to another node. 
+After completing the transferred flow the Process Flow engine will find the RESUME node of the corresspoding HALT, which will initiate the resume process.</p>
+:ET

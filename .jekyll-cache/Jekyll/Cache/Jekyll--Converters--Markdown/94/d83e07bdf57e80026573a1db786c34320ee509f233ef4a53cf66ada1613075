@@ -1,0 +1,20 @@
+I"-<ul class="toc__menu">
+  <li><a href="#pre-requisites">Pre-requisites</a></li>
+  <li><a href="#accessing-the-environment-user-interface">Accessing the Environment User Interface</a>
+    <ul>
+      <li><a href="#environment-listing">Environment Listing</a></li>
+      <li><a href="#grouping-of-environments">Grouping of Environments</a></li>
+      <li><a href="#adding-cloud-environment">Adding Cloud Environment</a></li>
+      <li><a href="#environment-details---on-premise-agent">Environment Details - On-Premise Agent</a></li>
+      <li><a href="#environment-details---cloud-agent">Environment Details - Cloud Agent</a></li>
+      <li><a href="#deleting-environment">Deleting Environment</a></li>
+      <li><a href="#detaching-and-attaching-environment">Detaching and Attaching Environment</a></li>
+    </ul>
+  </li>
+  <li><a href="#environment-view-for-old-agents">Environment View for Old Agents</a>
+    <ul>
+      <li><a href="#working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

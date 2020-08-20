@@ -1,0 +1,122 @@
+I"�<p>Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as generating the Company URL for Priority, 
+valid credentials need to be provided for validating the agent.
+Here you will find the detailed description on how to configure the agents for the application of Shopify, attributes and action, and the Troubleshooting issues.</p>
+
+<h2 id="pre-requisites-for-priority-configuration">Pre-requisites for Priority Configuration:</h2>
+
+<ol>
+  <li>Must have a valid Priority Account.</li>
+  <li>Login to AEC Agents with the valid credentials.To Know about Agent Configuration, <a href="/deployment/Deployment-Configuration/">Click here</a></li>
+  <li>Add a connection Template for Priority and publish a touchpoint.</li>
+</ol>
+
+<h2 id="configuring-the-priority-application-in-agent">Configuring the Priority Application in Agent</h2>
+
+<ol>
+  <li>Publish a Touchpoint, Update Adapters and Update Configuration in the agent..</li>
+  <li>In the app configuration panel of the agent, click on the + Button, beside the application Priority.<br />
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter1.png" alt="priority-adapter1" /></li>
+  <li>On clicking the + button, the credential panel opens for the application Priority.<br />
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter2.png" alt="priority-adapter2" /></li>
+  <li>Input the details in the fields:</li>
+</ol>
+
+<p>a.	Company URL: The company URL of the priority this is being used.</p>
+
+<p>b.	Username: The username of the Priority ERP.</p>
+
+<p>c.	Password: The password of the ERP.</p>
+
+<p><strong>Note: These are the Mandatory fields that is required for validating the priority adapter in the agent</strong><br />
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter3.png" alt="priority-adapter3" /></p>
+<ol>
+  <li>Click on the Validate and the Save button once the credentials are provided.<br />
+<img src="/staticfiles/connectors/media/application-connector/priority-adapter4.png" alt="priority-adapter4" /></li>
+</ol>
+
+<p>Follow the above steps, the adapter for Priority can be configured in the APPSeCONNECT agent.</p>
+
+<h2 id="integration-techniques">Integration Techniques</h2>
+
+<p>For Integration process, you need to execute the necessary touchpoint in your connection as required while syncing.</p>
+
+<ol>
+  <li>For an Instance: Suppose you need to add Product created in Priority to the application you need. 
+Therefore, the Product Add Touchpoint is needed to publish, for syncing the customer from Priority 
+to the other Application you are working with.</li>
+</ol>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>While adding product from priority to shopify, ensure that <code class="language-plaintext highlighter-rouge">Show in web</code> is marked <code class="language-plaintext highlighter-rouge">Yes</code> or the option <code class="language-plaintext highlighter-rouge">Purchased Via Website</code> is enabled.</p>
+
+<p>Suppose you are updating inventory for 20 products but have not marked, show in web for those products, hence after integration your inventory will
+not get updated. It will only get updated when <code class="language-plaintext highlighter-rouge">Show in Web</code> is marked as “YES”.</p>
+
+<p><img src="/staticfiles/connectors/media/application-connector/Troubleshoot-Priority.png" alt="Troubleshoot-Priority" /></p>
+<h2 id="attributes-and-actions">Attributes and Actions</h2>
+
+<p>While defining a connect to a particular API endpoint inPriority, you require clear understanding about the data requirements 
+and endpoint configurations. You can refer to this document to find all the endpoint details of your Priority installation. 
+To define the endpoint in APPSeCONNECT, you need to define Actions and Entities. Actions are specifically targeted for a particular 
+endpoint while schema is the data needed to execute the API. Here is the list of some of the prepackaged API actions defined for you 
+which you can easily plug and play while doing your integration.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Action</th>
+      <th>Action Type</th>
+      <th>Schema</th>
+      <th>UI Path</th>
+      <th>API Path</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logpart</td>
+      <td>Get Updated Inventory</td>
+      <td>GET</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=c831ec5b-88b5-4371-9e5d-94c23e24aec7&amp;entityId=5143da80-5685-4472-8c5c-3dec8dbe685f&amp;entityActionId=aa03d44e-2a6e-4507-a53a-bcfc3c238b66&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Logpart</a></td>
+      <td><a href="/connectors/Updating-Inventory-in-Priority/">Get Updated Inventory from Priority</a></td>
+      <td><a href="https://prioritysoftware.github.io/restapi/modify/#Updating_a_Related_Entity">LOGPART</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Logpart</td>
+      <td>Add Product</td>
+      <td>GET</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=c831ec5b-88b5-4371-9e5d-94c23e24aec7&amp;entityId=5143da80-5685-4472-8c5c-3dec8dbe685f&amp;entityActionId=8db20e90-b5ad-401a-a674-cdc06e05cdc3&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Logpart</a></td>
+      <td><a href="/connectors/Adding-Product-in-Priority/">Add Product in Priority</a></td>
+      <td><a href="https://prioritysoftware.github.io/restapi/request/#Requesting_an_Individual_Entity_by_ID">LOGPART</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ORDERS</td>
+      <td>POST</td>
+      <td>POST</td>
+      <td><a href="">ORDERS</a></td>
+      <td>Post Order in Priority from the source application</td>
+      <td> </td>
+      <td><a href="https://prioritysoftware.github.io/restapi/modify/#Inserting_a_Related_Entity">ORDERS</a></td>
+    </tr>
+    <tr>
+      <td>CUSTOMERS</td>
+      <td>CUSTOMERS</td>
+      <td>POST</td>
+      <td><a href="">CUSTOMERS</a></td>
+      <td>Post Customer in Priority from the source application</td>
+      <td> </td>
+      <td><a href="https://prioritysoftware.github.io/restapi/modify/">CUSTOMERS</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="notice--info"><strong>Protip:</strong> You can do Inventory Update for products of last 24 hours.</p>
+
+<p class="notice--info"><strong>Protip:</strong> If a new touchpoint is created, you have to specify the ACTION 
+against the Schema for the business scenario as required or the user can utilize the pre-packaged touchpoints provided by APPSeCONNECT.</p>
+
+:ET

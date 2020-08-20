@@ -1,0 +1,150 @@
+I"�(<p>The data coming from the source schema requires to be transformed individually such that it matches the format 
+of the destination schema every time the touchpoint is synced.</p>
+
+<p>E.g: Suppose the user is executing <code class="language-plaintext highlighter-rouge">Invoice Add</code> touchpoint in this case
+the records of all the Invoices are drawn from the source app and for this case the similar 
+execution process of transformation is deployed multiple times.</p>
+
+<h2 id="prerequisites-for-working-with-mapping">Prerequisites for Working with Mapping</h2>
+
+<ol>
+  <li>Login to the Portal with valid credentials.</li>
+  <li>Select or create application for whose integration is to be done.</li>
+  <li>Create a Connection and Navigate to the touchpoint where the Mapping is to be done.</li>
+</ol>
+
+<p class="notice--info"><strong>Protip:</strong> In case of Custom Apps, Transformation or Mapping can be executed or implemented while creating touchpoint</p>
+
+<h2 id="implementing-attribute-mapping">Implementing Attribute Mapping</h2>
+
+<p>Login to APPSeCONNECT and Navigate to the touchpoint for which you need to do the mapping.     <br />
+<strong>Note: The Edit Touchpoint Button will be available only for the custom touchpoint created for that connection. For the demonstration of touchpoint <code class="language-plaintext highlighter-rouge">Invoice Add</code> is used</strong>
+<img src="/staticfiles/Transformation/media/attributemapping.png" alt="attributemapping" /></p>
+<ol>
+  <li>Click on the Transform button on the touchpoint which you have selected.</li>
+  <li>Expand the transformation node for viewing the <code class="language-plaintext highlighter-rouge">Touchpoint Object, Complex Object collections, the Complex Object and the Attributes</code>.
+<img src="/staticfiles/Transformation/media/attributemapping1.png" alt="attributemapping1" /></li>
+  <li>Expanding the <code class="language-plaintext highlighter-rouge">For-each loop</code> the user gets the view of the node oInvoices. <code class="language-plaintext highlighter-rouge">oInvoices</code> is a schema
+  that is used to send data to the target application. The <code class="language-plaintext highlighter-rouge">For-Each Loop</code> is set relatively rather than writing the transformation logic multiple times and
+  this undergoes execution whenever the touchpoint is synced in the For-Each Loop Node.<br />
+<img src="/staticfiles/Transformation/media/attributemapping2.png" alt="attributemapping2" /></li>
+  <li>On expanding <code class="language-plaintext highlighter-rouge">oInvoices(Touchpoint Object)</code> the user gets the view of the several complex object collections 
+and the attributes that are listed under it. Each attribute has separate information about the entity that 
+it belongs to. Each of these attributes will contain different information about the customer record.</li>
+  <li>The complex objects and the complex object collection type of attributes require a blank mapping (null value) for sorting.</li>
+</ol>
+
+<p><strong>Note: Attributes and variables with no mapping will neither be allowed to sort in the mapping tree nor will it be displayed in the XSLT preview.
+          For different touchpoints, the object is different. For the touchpoint Sales Order Add, the object is oOrders for Simple Product Add it is oItems and so on</strong>
+<img src="/staticfiles/Transformation/media/attributemapping3.png" alt="attributemapping3" /></p>
+
+<p class="notice--info"><strong>Protip:</strong> Document_Lines will contain the details of the Product in terms of Quantity and Unit Price etc., 
+DocumentsAdditionalExpenses contains the Freight, Tax information etc. of the product.</p>
+
+<p>Each object in different touchpoints will have different attributes. 
+Expanding the <strong>row</strong> displays the destination attributes in the touchpoint level.
+All fields or attributes present in the touchpoint are mapped with the corresponding fields of the source schema.
+<img src="/staticfiles/Transformation/media/attributemapping4.png" alt="attributemapping4" />
+The user can create custom attributes, which is defined in project level. You can use the custom attributes only for a particular touchpoint.
+<img src="/staticfiles/Transformation/media/attributemapping4b.png" alt="attributemapping4b" />
+<strong>Note:</strong> The user can sort the order of attributes and variables in the mapping page by dragging and dropping the same 
+under its parent only if the mapping for the attribute has been done or if it is blank.</p>
+
+<p>Clicking on any of the attributes displays an option (three horizontal dots) to open a drop-down. <br />
+For the attributes which are not mapped, options available is:</p>
+
+<p>a. OPEN</p>
+
+<p>b. ADD IF</p>
+
+<p>For the attributes which are mapped, options available is:</p>
+
+<p>a.	<strong>Disable</strong> -This option is for disabling the mapping, if not required.</p>
+
+<p>b.	<strong>Open</strong> - The mapping window will open, if clicked on Open. Here, you can either map or edit an existing mapping.</p>
+
+<p>c.	<strong>Clear</strong> - This option clears out the existing mapping.</p>
+
+<p>d.	<strong>Add If</strong> - If-Else conditional mapping can be implemented, if clicked on this option. <a href="/transformation/define-logic-over-destination-mapping/">Click here</a> to know more</p>
+
+<p>Click on the <strong>OPEN</strong> option for implementing the attribute mapping. The User can view the Mapping window, below.
+<img src="/staticfiles/Transformation/media/attributemapping5.png" alt="attributemapping5" />
+The mapping window has multiple sections and fields. Expanding the nodes in the Source Field section displays the appresource functions 
+and the source attributes that is required for the mapping. On expanding the touchpoint object node (in this case INVOICE ADD) displays all the source attributes.
+<img src="/staticfiles/Transformation/media/attributemapping6.png" alt="attributemapping6" />
+Expanding the node <code class="language-plaintext highlighter-rouge">FUNCTIONS</code> lists all the functions present under Generic Source, Destination and Cloud appresources. 
+<img src="/staticfiles/Transformation/media/attributemapping7.png" alt="attributemapping7" />
+Clicking on any of the functions, will display it in the mapping panel. Once the mapping is done, Click SUBMIT button for Enabling and Saving the mapping. 
+<strong>Note:</strong> The Tips field is for providing or noting down certain tips that might be required for the mapping for 
+later use similarly. <code class="language-plaintext highlighter-rouge">Comments field</code> is providing comments specific to this attribute mapping that might be 
+required later. The <code class="language-plaintext highlighter-rouge">Output Encoded</code> checkbox is for ensuring that the generated data is kept intact 
+irrespective of the XML standardisation.</p>
+
+<h2 id="examples-of-attribute-mapping">Examples of Attribute Mapping</h2>
+
+<p>To better explain the usage of Attribute mapping, let’s take a quick look at an example of specific 
+attribute mapping against SAPB1 Card Code during Sales Order download from Magento to SAP B1.</p>
+
+<p>Example:</p>
+
+<p>Lets say for an integration (e.g. Magento-SAP B1), you want to run Sales Order Add touchpoint, 
+but there is no direct mapping in SAP B1 with the Card Code, as there is no such field in Magento. 
+So, for that purpose Customer’s email which exists at both ends is considered as the primary key.</p>
+
+<p>Now, to resolve the problem you can create a variable customerCardCode that can hold Customer email.</p>
+
+<p>Here, Mapping is done in 2 stages:</p>
+
+<p><img src="/staticfiles/Transformation/media/example-attributemapping1.png" alt="example-attributemapping1" /></p>
+
+<p>“GetCustomerCardCodeByEmailId” is the predefined custom function that is called to retrieve the SAP B1 CardCode value (Destination app) using Magento’s API field customer_email (Source app) i.e.</p>
+
+<p><img src="/staticfiles/Transformation/media/example-attributemapping2.png" alt="example-attributemapping2" /></p>
+
+<p>This above part of code suggests that when the email data result is blank then the CardCode will be displayed on the basis of customer’s web id or else the card code will be shown as per the Customer’s Email.</p>
+
+<p><strong>OCRD refers to the Orders Table and U_WBCUSTID refers to the web customer id</strong></p>
+
+<h2 id="steps-to-attribute-mapping">Steps to Attribute Mapping</h2>
+
+<ol>
+  <li>
+    <p>Login to <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">portal.appseconnect.com</a></p>
+  </li>
+  <li>
+    <p>Go to connection and choose the connection you want to customize. (Here chosen is Magento to SAP B1 Connection)</p>
+  </li>
+  <li>
+    <p>Open Touchpoint and select Transform. The mapping that is already created will open.</p>
+  </li>
+  <li>
+    <p>You can now see the set of mapping we defined in a particular connection with predefined logic.</p>
+  </li>
+  <li>
+    <p>For Mapping # 1 (as shown above), you have to declare the destination variable: <strong>customerCardCode</strong></p>
+  </li>
+  <li>
+    <p>After defining destination variable, it requires to be mapped with source API field which is then defined in the source declaration section.</p>
+  </li>
+</ol>
+
+<p><img src="/staticfiles/Transformation/media/example-attributemapping3.png" alt="example-attributemapping3" /></p>
+
+<p>In general, this method if already defined in the base or generic integration then they can be reused.</p>
+
+<p>Again if they are not defined or needs to be customized, then we can directly add them under Destination Methods as:</p>
+
+<p><img src="/staticfiles/Transformation/media/example-attributemapping4.png" alt="example-attributemapping4" /></p>
+
+<p><strong>The above process shows the way how you can define the Mapping#1.</strong></p>
+
+<p>In a similar way, one can proceed with defining the next mapping.</p>
+
+<p><strong>In Mapping # 2, CardCode is the pre-defined destination attributes, which you can directly fetch as</strong></p>
+
+<p><img src="/staticfiles/Transformation/media/example-attributemapping5.png" alt="example-attributemapping5" /></p>
+
+<p>For destination attribute, you have to define <choose><when> statement for multiple conditional states:</when></choose></p>
+
+<p><img src="/staticfiles/Transformation/media/example-attributemapping6.png" alt="example-attributemapping6" /></p>
+:ET

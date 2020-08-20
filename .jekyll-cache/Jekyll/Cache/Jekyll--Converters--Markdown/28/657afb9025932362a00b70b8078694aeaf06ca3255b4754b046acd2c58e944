@@ -1,0 +1,38 @@
+I"�	<p>Deploying and publishing API is one of the primary concern after you have successfully configured 
+an API on your API stack. There are various deployment options available on APPSeCONNECT which will 
+help you to run an API either on your own Premise or on Cloud dependening on the availability of data. For on premise 
+deployments, you need to consider installing our <a href="/deployment/Deployment-Configuration/">on-premise agent</a>, and configure it to be active 
+on Environment section of APPSeCONNECT.</p>
+
+<p>To Deploy an API, you need to make sure, all pre-requisites of an API development is met.</p>
+
+<h2 id="pre-requisites-for-deploying-and-publish-apis">Pre-requisites for Deploying and Publish API’s:</h2>
+
+<ul>
+  <li><a href="/getting%20started/user-registration/">Getting a new account for APPSeCONNECT</a></li>
+  <li><a href="/deployment/Deployment-Configuration/">Configuring Environments, installing / deploying Agent</a></li>
+  <li><a href="/api-management/choosing-backend-apps/">Choosing and Configuring Backend APPs</a></li>
+  <li><a href="/transformation/working-with-schemas-action-filter/">Configuring / Importing Schemas and Actions</a></li>
+  <li><a href="/connectors/OLEDB-Credentials/">Feeding Credentials for applications and data sources</a></li>
+  <li><a href="/api-management/connecting-to-a-data-source/">Connecting to your data sources</a></li>
+</ul>
+
+<p>After all these steps are done, make sure the <code class="language-plaintext highlighter-rouge">environment is kept running</code> and <code class="language-plaintext highlighter-rouge">credentials are properly updated</code>. 
+Once confirmed, you can add new APIs, and do an <code class="language-plaintext highlighter-rouge">Update Configuration</code>, before executing it from Cloud.</p>
+
+<p>You can use <a href="/api-management/steps-to-create-swagger-documentation/">Swagger endpoint URL</a>to call the APIs from APPSeCONNECT portal itself.</p>
+
+<h2 id="steps-to-deploy-and-publish-apis">Steps to Deploy and publish API’s</h2>
+
+<ol>
+  <li>
+    <p>Login to the APPSeCONNECT Portal with valid credentials.</p>
+  </li>
+  <li>
+    <p>Create a new a Proxy API from the API Section of the AEC Portal. Steps to create proxy API is <a href="/api-management/steps-to-create-proxy-endpoint/">given here</a>.</p>
+  </li>
+  <li>
+    <p>Once, the API is created, login to the agent and Update Configuration, before executing it from the cloud.</p>
+  </li>
+</ol>
+:ET

@@ -1,0 +1,151 @@
+I"W)<p>Executing the Process is a vital part when integrating any applications. This Document will let the users to understand 
+how the integration process can be executed through workflow for adding Simple Product from SAP Business One to Magento2.</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p><img src="/staticfiles/integration/media/workflow-productadd4.png" alt="workflow-productadd4" /></p>
+
+<p>In this case, the <code class="language-plaintext highlighter-rouge">Product Add Workflow</code> is used for adding simple product from SAP Business One to Magento2. 
+Here, a workflow is created where all the Simple Products are fetched form SAP Business One and are posted to Magento2.</p>
+
+<p>Login to SAP Business One Client Application. Item add need to be inserted through <a href="https://help.sap.com/saphelp_sbo900/helpdata/en/45/2365ca9e152b31e10000000a1553f7/content.htm?no_cache=true">web item master data</a>.</p>
+
+<p><img src="/staticfiles/integration/media/productadd_SapB1.png" alt="productadd_SapB1" /></p>
+
+<h2 id="lookup-mapping">Lookup Mapping</h2>
+
+<p>The lookup Mapping for the PriceLists is needed to be done if there is a different Pricelist other than the default value 1.
+For Example: If the PriceLists selected as 3, the destination value too is needed to be mapped.</p>
+
+<p><img src="/staticfiles/integration/media/lookupmapping-productadd-sapb1.png" alt="lookupmapping-productadd-sapb1" /></p>
+
+<p>On mapping the lookups, the attribute mapping for Price field is needed to be altered. The mapping should be:
+<img src="/staticfiles/integration/media/lookupmapping2-productadd-sapb1.png" alt="lookupmapping2-productadd-sapb1" /></p>
+
+<p>Simultaneously, a variable is needed to be created as the variable <code class="language-plaintext highlighter-rouge">$priceListValue</code> that is used in the mapping above is not declared.
+Therefore, in the Root Variable section, add <code class="language-plaintext highlighter-rouge">a new Variable</code> with the name <code class="language-plaintext highlighter-rouge">$priceListValue</code> whose datatype should be string. <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Click here</a> to know how to add a new Root Variable.</p>
+
+<p>On its creation, click on the Open Variable Button to initialize the lookup. For mapping variable:</p>
+
+<ol>
+  <li>Select the function getMapping(ObjectType,Value) from the Generic Functions.</li>
+  <li>The ObjectType is the Lookup Type (PriceListWebsite) and the Value is the mapping of the attribute Price ($itemDetailsRead//dis:ItemPrices//dis:ItemPrice/dis:PriceList).</li>
+</ol>
+
+<p><img src="/staticfiles/integration/media/lookupmapping3-productadd-sapb1.png" alt="lookupmapping3-productadd-sapb1" /></p>
+
+<p><strong>Note: Objects/Variables with string datatypes should be provided in single quotes.</strong></p>
+
+<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation</h2>
+
+<p>Following the Provided Mapping, the user can sync the Simple Product Add from SAP Business One to Magento2. 
+To know more, see  <a href="/transformation/overview-usecase/">Mapping &amp; Transformation Techniques</a>.</p>
+
+<p><strong>Mapping for the ‘Simple Product add Touchpoint’</strong></p>
+
+<ol>
+  <li>
+    <p>Mapping for the <code class="language-plaintext highlighter-rouge">ComplexObjectCollection</code> Product.
+<img src="/staticfiles/integration/media/attributemapping-productadd1.png" alt="attributemapping-productadd1" />
+a.	Id: Here the itemID is being mapped with the destination attribute U_WebID.                                                                           <br />
+b.	sku: Here the product SKU is being mapped with the ItemCode attribute in Magento2.                                                              <br />
+c.	name: Here the name is being mapped with the ItemName attribute in Magento2.                                                                  <br />
+d.	price: This maps with the pricelist in Magento2.                                                                <br />
+e.	Attribute_set_id: This field maps with the attribute set of the product in Magento2                                                       <br />
+f.	type_id: This maps the type of product.</p>
+  </li>
+  <li>
+    <p>Mapping for the ComplexObject <code class="language-plaintext highlighter-rouge">custom_attributes</code>.
+<img src="/staticfiles/integration/media/attributemapping-productadd2.png" alt="attributemapping-productadd2" /></p>
+  </li>
+</ol>
+
+<p>a.	custom_attributes: This is an XPath provided to execute a loop for accessing the attribute_code. Through the Custom Attributes, details like description, short description, tax_class_id, color are also transformed.                                                           <br />
+b.	attribute_code: This maps the attribute code in the magento2.                                                                              <br />
+c.	value: Performs a loop for getting value of the short description.</p>
+
+<ol>
+  <li>Mapping for the ComplexObject <code class="language-plaintext highlighter-rouge">product_links </code>
+<img src="/staticfiles/integration/media/attributemapping-productadd3.png" alt="attributemapping-productadd3" /></li>
+</ol>
+
+<p>a. 	product_links: Xpath has been provided to implement loop for getting the details of the product.
+b.	sku: This maps the products SKU with the item code of the product in Magento2.
+c.	link_type: This fetches the Cross sell and Upsell Type.
+d.	linked_product_type: This maps the SKU of the linked product in Magento2.</p>
+
+<h2 id="executing-the-workflow-integration">Executing the Workflow Integration</h2>
+
+<p><strong>Note: Before integrating with Magento2 and SAP Business One, make sure all the Master Data Touchpoints are synced.</strong></p>
+
+<ol>
+  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
+  <li>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process. 
+<img src="/staticfiles/integration/media/workflow-productadd.png" alt="workflow-productadd" /></li>
+  <li>Once the Execution is finished, click <code class="language-plaintext highlighter-rouge">Resync Button</code> (highlighted in the image) in the agent.</li>
+  <li>The Resync Panel show the Success Result in the agent. 
+<img src="/staticfiles/integration/media/workflow-productadd2.png" alt="workflow-productadd2" /></li>
+</ol>
+
+<h2 id="integration-data-survey">Integration Data Survey</h2>
+
+<p>The user can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.<br />
+This Snapshot View displays the successful execution of the workflow. The Simple Product with the source id 0555 is successfully synced to SKU 0555 
+in Magento2.
+<img src="/staticfiles/integration/media/workflow-productadd3.png" alt="workflow-productadd3" /></p>
+
+<h2 id="post-conditions">Post-Conditions</h2>
+
+<p>The user can view the product synced in the Magento2 by navigating to Catalog-&gt;Products
+<img src="/staticfiles/integration/media/productadd-postcondition.png" alt="productadd-postcondition" /></p>
+
+<h2 id="frequency-of-use">Frequency of Use</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p><strong>a. Error 1:</strong></p>
+
+<p>Exception occurred during transformation of Task f3e67347-adcf-48a5: XsltException : System.Xml.Xsl.XslTransformException: 
+An error occurred during a call to extension function ‘Custom Attributes’. See InnerException for a complete description of the error. —&gt; 
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.</p>
+
+<p><img src="/staticfiles/integration/media/troubleshooting-productadd1.png" alt="troubleshooting-productadd1" /></p>
+
+<ol>
+  <li>For troubleshooting this error, Navigate to the Transformation page of the workflow in the portal.</li>
+  <li>Analyze all the attributes, viewing whether its in the Activated Stage.</li>
+  <li>Also, the Root Variable $webitemdetail has a User Defined Object (UDO) initialized naming SBOeConnect_UDO. Verify that the UDO has been successfully activated in the SAP Business One Client.</li>
+  <li>For Activating the UDO, Navigate to Tools &gt; Object Registration Wizard &gt; Next &gt; Update an existing Object &gt; select SBOeConnect_UDO &gt; 
+  click on next until Finish.                                 <br />
+<img src="/staticfiles/integration/media/troubleshooting-productadd2.png" alt="troubleshooting-productadd2" /></li>
+  <li>After all the changes done both in the portal and SAP Business One client, Reset Generate and Reset Publish the Connection in the Portal and Update the Configuration in the Agent.</li>
+</ol>
+
+<p><strong>b. Error 2:</strong></p>
+
+<p>Magento response error details:{“message”:”Invalid product data: %1”,”parameters”:[“Invalid attribute set entity type”]}
+<img src="/staticfiles/integration/media/troubleshooting-productadd3.png" alt="troubleshooting-productadd3" /></p>
+
+<ol>
+  <li>For troubleshooting this error, Navigate to the Transformation section for the Product Add touchpoint in the Workflow, and verify the mapping for the attribute attribute_set_id .</li>
+  <li>Open the mapping for the attribute and rectify the error as required.</li>
+  <li>Click on the Submit button, once the mapping is done.</li>
+  <li>After all the changes done (in portal), Reset Generate and Reset Publish the Connection in the Portal and Update the Configuration in the Agent.</li>
+  <li>And execute the Workflow again. Doing this, the user can successfully integrate this workflow.</li>
+</ol>
+
+<p><strong>C. Error 3: Details</strong></p>
+
+<p>Property ‘U_Object_Type’ of ‘Item’ is invalid. The Error is displayed when the dependency touchpoint is synced as post acknowledgement task. 
+<img src="/staticfiles/integration/media/troubleshooting-productadd1-sapmage2.png" alt="troubleshooting-productadd1-sapmage2" /></p>
+<ol>
+  <li>For troubleshooting this error, an UDF is needed to be created.</li>
+  <li>For creating the UDF, Navigate to Tools &gt; Customization Tools &gt; User - Define Fields - Management &gt; Master Data &gt; Items &gt; Items.</li>
+  <li>Create the UDF as shown below:<br />
+<img src="/staticfiles/integration/media/troubleshooting-productadd2-sapmage2.png" alt="troubleshooting-productadd2-sapmage2" /></li>
+</ol>
+
+<p>Doing this, the user can successfully integrate this workflow.</p>
+:ET

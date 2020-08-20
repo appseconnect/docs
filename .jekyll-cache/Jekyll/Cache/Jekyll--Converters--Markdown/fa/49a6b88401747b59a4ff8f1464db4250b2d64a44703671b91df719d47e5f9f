@@ -1,0 +1,94 @@
+I"ß&<p>Application resources are special methods that can be added on the adapter code using the interface <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">IAppResources</code></a> which can 
+be referenced in mapping or else in filters. An AppResource interface receives the <code class="language-plaintext highlighter-rouge">ApplicationContext</code> during its 
+initialization, which helps to invoke various methods on SDK or even call native methods directly from 
+adapter code.</p>
+
+<p>Let us look at how the <a href="http://isdn.appseconnect.com/html/3C4C3144.htm"><code class="language-plaintext highlighter-rouge">IAppResource</code></a> class looks like :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">public</span> <span class="k">class</span> <span class="nc">AppResource</span> <span class="p">:</span> <span class="n">IAppResource</span>
+<span class="p">{</span>
+
+    <span class="k">private</span> <span class="n">ApplicationContext</span> <span class="n">_context</span><span class="p">;</span>
+    <span class="k">private</span> <span class="n">CredentialModel</span> <span class="n">CredentialObject</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="c1">/// &lt;summary&gt;</span>
+    <span class="c1">/// Default Constructor called by Agent. It will call Initialize to pass Application context</span>
+    <span class="c1">/// &lt;/summary&gt;</span>
+    <span class="c1">/// &lt;remarks&gt;Do not use this method while creating object of AppResource inside the adapter, as you will find ApplicationContext to null&lt;/remarks&gt;</span>
+    <span class="k">public</span> <span class="nf">AppResource</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+
+    <span class="err">#</span> <span class="n">region</span> <span class="n">IAppResource</span> <span class="n">Implementation</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">ApplicationContext</span> <span class="n">context</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// first step is to try and get the Credential. If succesful, we store it in object cache, so that every function does not need to get it.</span>
+        <span class="kt">var</span> <span class="n">credential</span> <span class="p">=</span> <span class="n">context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">CredentialStore</span><span class="p">.</span><span class="nf">GetConnectionDetails</span><span class="p">();</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">credential</span><span class="p">.</span><span class="n">Status</span><span class="p">)</span> <span class="c1">// this indicates that credentails are already saved in configuration, and we can get its value</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">CredentialObject</span> <span class="p">=</span> <span class="n">ObjectUtils</span><span class="p">.</span><span class="n">JsonDeserialize</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;(</span><span class="n">credential</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
+
+        <span class="c1">//We store the context for future use.</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">_context</span> <span class="p">=</span> <span class="n">context</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="err">#</span> <span class="n">endregion</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here in the above code, you can see the AppResource class has an Initialize method which will be invoked from the application, 
+the object <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">ApplicationContext</code></a> received by the adapter can be used to invoke various functionalities of APPSeCONNECT.</p>
+
+<p>Let us look at a sample implementation of an AppResource method.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">/// &lt;summary&gt;</span>
+<span class="c1">/// Get customer address from Bigcommerce</span>
+<span class="c1">/// &lt;/summary&gt;</span>
+<span class="c1">/// &lt;param name="id"&gt;Customer is for which data will be fetched&lt;/param&gt;</span>
+<span class="c1">/// &lt;returns&gt;Address data for a particular customer&lt;/returns&gt;</span>
+<span class="k">public</span> <span class="n">XPathNavigator</span> <span class="nf">GetCustomerAddress</span><span class="p">(</span><span class="kt">string</span> <span class="n">id</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">XmlDocument</span> <span class="n">soapEnvelopeSession</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">XmlDocument</span><span class="p">();</span>
+    <span class="n">XElement</span> <span class="n">elemment</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+    <span class="kt">string</span> <span class="n">responseData</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+    <span class="k">try</span>
+    <span class="p">{</span>
+
+        <span class="kt">string</span> <span class="n">addressurl</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="nf">Concat</span><span class="p">(</span><span class="s">"customers/"</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="s">"/addresses.xml"</span><span class="p">);</span>
+        <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;</span> <span class="n">response</span> <span class="p">=</span> <span class="nf">CallAPI</span><span class="p">(</span><span class="n">addressurl</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">Value</span> <span class="p">==</span> <span class="k">false</span> <span class="p">||</span> <span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrEmpty</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">Message</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="n">responseData</span> <span class="p">=</span> <span class="s">"&lt;addresses&gt;&lt;/addresses&gt;"</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">responseData</span> <span class="p">=</span> <span class="n">response</span><span class="p">.</span><span class="n">Message</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">soapEnvelopeSession</span><span class="p">.</span><span class="nf">LoadXml</span><span class="p">(</span><span class="n">responseData</span><span class="p">);</span>
+        <span class="kt">string</span> <span class="n">str</span> <span class="p">=</span> <span class="n">soapEnvelopeSession</span><span class="p">.</span><span class="n">InnerXml</span><span class="p">;</span>
+        <span class="n">elemment</span> <span class="p">=</span> <span class="n">XElement</span><span class="p">.</span><span class="nf">Parse</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">Logger</span><span class="p">.</span><span class="nf">ErrorLog</span><span class="p">(</span><span class="n">ex</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">elemment</span><span class="p">.</span><span class="nf">CreateNavigator</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The method <code class="language-plaintext highlighter-rouge">GetCustomerAddress</code> is specially designed to invoke <code class="language-plaintext highlighter-rouge">\customers</code> API such that when required the 
+mapping can invoke the method to dynamically invoke a separate API while transformation. You can see the 
+return type of the method is <code class="language-plaintext highlighter-rouge">XPathNavigator</code>. As the method can be used directly from Mapping the allowed method 
+return types are as under :</p>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=netframework-4.7.2">XPathNavigator</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnodeiterator?view=netframework-4.7.2">XPathNodeIterator</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string">String</a></li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">CallAPI</code> method is used to execute an API to the application.</p>
+
+<p>Once the method is returning a value, you can put the data in a variable on mapping section and iterate the data over.</p>
+
+<p><strong>Note : Do not call save credential from app resource file.</strong></p>
+:ET

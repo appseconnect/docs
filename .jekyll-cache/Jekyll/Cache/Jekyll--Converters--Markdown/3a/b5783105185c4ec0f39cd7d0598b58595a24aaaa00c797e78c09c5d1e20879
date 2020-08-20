@@ -1,0 +1,4 @@
+I"B<p>Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an execution of the business flow at that instance. Every Process Flow will be able execute more than one integration, which depends on logic defined on the designed Process Flow, dependencies specified, or even based on data volume.
+The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the sync process. The snapshot gives tracing over the data transferred through integration. You can investigate the Data Log, Transaction files &amp; the Activity Log for each process execution.
+After a successful execution, you can view the snapshot listing on the multiple time execution of the Process Flow.</p>
+:ET

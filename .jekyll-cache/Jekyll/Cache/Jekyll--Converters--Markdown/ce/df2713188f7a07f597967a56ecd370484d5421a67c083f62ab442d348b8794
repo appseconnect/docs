@@ -1,0 +1,12 @@
+I"¿<ul class="toc__menu">
+  <li><a href="#working-with-variables-in-appseconnect">Working with Variables in APPSeCONNECT</a></li>
+  <li><a href="#scenario-explanation-of-each-types-of-variables-as-per-the-connection-sap-business-one-and-magento2">Scenario explanation of each types of variables as per the connection SAP Business One and Magento2</a>
+    <ul>
+      <li><a href="#scenario-explanation-for-root-variable">Scenario explanation for Root Variable:</a></li>
+      <li><a href="#scenario-explanation-for-variable">Scenario Explanation for Variable:</a></li>
+      <li><a href="#scenario-explanation-for-root-entity-variable-duplicate-data-check-using-timestamp">Scenario Explanation for Root Entity Variable: (Duplicate Data Check using Timestamp)</a></li>
+      <li><a href="#scenario-explanation-for-root-entity-variable-custom-conflict-bucket">Scenario Explanation for Root Entity Variable: (Custom Conflict Bucket)</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

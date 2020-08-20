@@ -1,0 +1,33 @@
+I"¿<ul class="toc__menu">
+  <li><a href="#search-connection">Search Connection</a></li>
+  <li><a href="#configuring-connector-while-creating-connection">Configuring Connector while Creating Connection</a></li>
+  <li><a href="#creating-connection--executing-the-touchpoint">Creating Connection &amp; Executing the touchpoint</a></li>
+  <li><a href="#copy-connection">Copy Connection</a>
+    <ul>
+      <li><a href="#prerequisites-for-copy-connection">Prerequisites for Copy Connection</a></li>
+      <li><a href="#steps-to-implement-copy-connection">Steps to Implement Copy Connection</a></li>
+    </ul>
+  </li>
+  <li><a href="#editing-connection">Editing Connection</a></li>
+  <li><a href="#creating-organisation-touchpoint-workflow">Creating Organisation Touchpoint/ Workflow</a>
+    <ul>
+      <li><a href="#prerequisites-for-creating-touchpoint-workflow">Prerequisites for Creating Touchpoint/ Workflow</a></li>
+      <li><a href="#steps-to-create-an-organisational-touchpoint-workflow">Steps to create an Organisational Touchpoint/ Workflow</a></li>
+    </ul>
+  </li>
+  <li><a href="#choosing-touchpoint-workflow">Choosing Touchpoint/ Workflow</a>
+    <ul>
+      <li><a href="#prerequisites-for-choosing-touchpoint">Prerequisites for Choosing Touchpoint</a></li>
+      <li><a href="#steps-to-implement-choosing-touchpointworkflow">Steps to implement Choosing Touchpoint/Workflow</a></li>
+    </ul>
+  </li>
+  <li><a href="#reverse-touchpoint">Reverse Touchpoint</a></li>
+  <li><a href="#configuring-environment---agent-download--cloud-agent-configuration">Configuring Environment - Agent download / Cloud agent configuration</a>
+    <ul>
+      <li><a href="#environment-setup-of-the-on-premise-agent">Environment setup of the on-premise agent:</a></li>
+      <li><a href="#environment-setup-of-the-cloud-agent">Environment setup of the Cloud agent</a></li>
+    </ul>
+  </li>
+  <li><a href="#default-notification-for-transactions">Default Notification for Transactions</a></li>
+</ul>
+:ET

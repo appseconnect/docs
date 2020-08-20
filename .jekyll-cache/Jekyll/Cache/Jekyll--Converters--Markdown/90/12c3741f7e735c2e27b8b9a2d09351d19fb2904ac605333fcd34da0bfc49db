@@ -1,0 +1,122 @@
+I"�<p>Settings panel of AEC Agent enables to change the default settings after the initial setup and installation 
+of the agent. Although an advanced user can use different settings options that is provided inbuilt with the AEC Agent to perform
+the customized tasks.</p>
+
+<p>Here you will get detailed description on the use of settings panel to edit some of the default behavior of APPSeCONNECT Agent.</p>
+
+<ol>
+  <li>To access the Agent <code class="language-plaintext highlighter-rouge">Setting</code> login to the AEC Agent</li>
+  <li>Now Click settings icon on top and select “Settings” from the menu.</li>
+  <li>The Setting Screen will appear. Here you can make all the settings related changes and the options
+are given below.</li>
+</ol>
+
+<p><img src="/staticfiles/deployment/media/Setting/SettingPanel.png" alt="SettingPanel" /></p>
+
+<p>The Agent Setting Panel is divided into four components- <code class="language-plaintext highlighter-rouge">Enable Environment, Resync Schedule, Diagnosis Mode, Log Target For, Severity level,
+Export Data to Cloud, Host Public URL</code>.</p>
+
+<h2 id="enable-environment">Enable Environment</h2>
+
+<p>Enabling the checkbox for <strong>Enable Environment</strong> enables to Activates background service installed on-premise.</p>
+
+<p>The APPSeCONNECT agent installs a separate service to do the actual sync. The process is installed on your system to ensure that the sync remains active even though you log in or accidentally close our agent application. Settings have an option to <strong>“Activate / Deactivate”</strong> the environment service. When the checkbox “Enable Environment” is unchecked, the respective service will be turned off. We also give you option to kill the service from UI if the service cannot be stopped normally.</p>
+
+<p>Enable Environment defines the interval between two processes.</p>
+
+<p>**Note: Deactivating the checkbox will, disconnect the Agent with the Portal. You cannot deploy any changes from <a href="/processflow/deploying-and-executing-processfloww/">Process Flow</a> if your Enabled Environment checbox is disabled.</p>
+
+<p class="notice--info"><strong>Protip:</strong> It is highly recommended not to stop a service by any means unless you want to restart your server. 
+The Autosync service is capable of restarting itself if it crashes by any means.</p>
+
+<h2 id="resync-schedule">Resync Schedule</h2>
+
+<p>APPSeCONNECT uses Resync Bucket to keep track of all the items that are getting synced. Due to continuous huge data operations 
+on APPSeCONNECT Agent, it is very important to keep track of all data that is being transferred from one application to another. 
+You do the same using your Resync bucket, but if your transaction is not within the limit of human activity, it will be hard 
+to track all the failed or skipped items as well.</p>
+
+<p>There are mainly four states that an item can go through from Resync Bucket. This is meant for on-premise Agent.</p>
+
+<ul>
+  <li>
+    <p>Unprocessed: This state is when the item is not synched and also the Transformation is not performed correctly.</p>
+  </li>
+  <li>
+    <p>Success: These items went through the entire process and succeeded through the push operations.</p>
+  </li>
+  <li>
+    <p>Skipped: These items are forcefully skipped by the adapter, hence our agent will not allow you to sync them again.</p>
+  </li>
+  <li>
+    <p>Failed: These items are failed at the point of an instant when it wanted to sync. 
+These items will be again resynced from the resync bucket.</p>
+  </li>
+</ul>
+
+<p>Now based on the volume of sync, sometimes data in resync bucket can also grow considerably.</p>
+
+<p>As we wanted to enable automatic synchronization of data without manual intervention, we also support our customers to 
+configure autosync for failed items. To enable auto-sync for resync bucket, you can open Agent and go to settings.</p>
+
+<p><img src="/staticfiles/deployment/media/Setting/Resync-Schedule.png" alt="Resync-Schedule" /></p>
+
+<p>In the above panel, the resync is scheduled at 12:00 AM Hrs. night and will execute for 1 hrs from that time with 100 items taken in
+batch. Once Resync Schedule is activated the schedule will be taken care of.</p>
+
+<p><strong>NOTE</strong></p>
+
+<p>1) Resync bucket is used only from AutoSync service and will only pick up those which are configured in automatic mode.</p>
+
+<p>2) Resync for each individual entry will try for 3 times (1 for the sync  + 3 retries), so when Tries = 4, you can expect 
+that entry will not be picked up again.</p>
+
+<p>3) During Auto - Resync, our normal sync process will be on pause and will resume when the resync operation is complete.</p>
+
+<p>4) Resync will terminate automatically when all tries have already been performed and no data available for resync.</p>
+
+<p>5) After termination, the normal autosync process will resume</p>
+
+<h2 id="diagnosis-mode">Diagnosis Mode</h2>
+
+<p>This section enables to do the diagnostic mode checking of the output files ( both manual &amp; autosync) where the user gets the option to check
+the in memory data file dump for all the input, transformed and output data.</p>
+
+<p><img src="/staticfiles/deployment/media/Setting/DiagnosticMode.png" alt="DiagnosticMode" /></p>
+
+<p><strong>Agent Output Path - Manual File Path</strong></p>
+
+<p><strong>Service Output Path - Autosync File Path</strong></p>
+
+<h2 id="enhanced-logging-settings-option">Enhanced Logging settings option.</h2>
+
+<p>AEC platform gives you the option to customize the type of logging APPSeCONNECT writes on your system. 
+There are three options that you can set for logging and based on the selection our Agent as well as the background service logs.</p>
+
+<p><img src="/staticfiles/deployment/media/Setting/LoggingSettings.png" alt="LoggingSettings" /></p>
+
+<p><strong>Log Target</strong> - The log target will give you option on what type of logs you want our agent to write. 
+  Generally, it is recommended to have only Error logs in production.</p>
+
+<p><strong>Severity Level</strong> - Severity will give you the option to set how much severe logs will it write. Generally, it is recommended to have Critical and high logs.</p>
+
+<p><strong>Log in Database</strong> - APPSeCONNECT by default logs in the database, but if you choose not to log there, you can uncheck the checkbox, and it will log the same
+  in a text file for each process. Remember, when you opt out for log in a database, you can also turn off “Log in detail” checkbox so that APPSeCONNECT 
+  does not write technical details of every log.</p>
+
+<p><strong>Protip</strong>: It is highly recommended not to turn on all settings in the production environment. 
+  Writing logs have a considerable amount of CPU utilization and hence turning on all logs
+  might cause high I/O and CPU utilization and can degrade the sync performance {: .notice–info}</p>
+
+<h2 id="securing-data-in-cloud-and-sending-email-notification">Securing data in cloud and Sending Email notification</h2>
+
+<p>This section will enable the user to set options on how the security measures would our Agent take when there is a problem with the system.<br />
+The Export data to the cloud will give you the option to store data as well as configurations to the cloud on your own separate vault. 
+Once the data is uploaded, it can again be refreshed or downloaded from the cloud when required.</p>
+
+<p>The second option will allow you to put any email id and send the daily report of sync status immediately.</p>
+
+<h2 id="host-public-url">Host Public URL</h2>
+
+<p>This is a public URL of the organization, required for Real time Touchpoint Execution.</p>
+:ET

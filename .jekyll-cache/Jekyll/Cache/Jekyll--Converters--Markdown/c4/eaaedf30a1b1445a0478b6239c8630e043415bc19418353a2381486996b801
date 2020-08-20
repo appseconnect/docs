@@ -1,0 +1,5 @@
+I"<p>Application resources are special methods that can be added on the adapter code using the interface <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">IAppResources</code></a> which can 
+be referenced in mapping or else in filters. An AppResource interface receives the <code class="language-plaintext highlighter-rouge">ApplicationContext</code> during its 
+initialization, which helps to invoke various methods on SDK or even call native methods directly from 
+adapter code.</p>
+:ET
