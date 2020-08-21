@@ -1311,7 +1311,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-package-installation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-installation/" onclick="selectTab('/processflow/processflow-package-installation/', event);" title="Go to Package Installation">Package Installation</a>
+        <a href="/processflow/processflow-package-installation/" onclick="selectTab('/processflow/processflow-package-installation/', event);" title="Go to Shared Package Installation">Shared Package Installation</a>
         
     </li>
     
@@ -2329,7 +2329,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -2346,7 +2346,12 @@
   <li><a href="#creating-a-workflow">Creating a Workflow</a></li>
   <li><a href="#scheduling-a-workflow">Scheduling a Workflow</a></li>
   <li><a href="#publishing-a-workflow">Publishing a Workflow</a></li>
-  <li><a href="#deploying-a-workflow">Deploying a Workflow</a></li>
+  <li><a href="#deploying-a-workflow">Deploying a Workflow</a>
+    <ul>
+      <li><a href="#deploying-in-op-agent">Deploying in OP Agent</a></li>
+      <li><a href="#deploying-in-cloud-agent">Deploying in Cloud Agent</a></li>
+    </ul>
+  </li>
   <li><a href="#executing-the-workflow">Executing the Workflow</a></li>
 </ul>
                     </nav>
@@ -2361,9 +2366,10 @@ runtime to debug and execute workflows.</p>
 <ul>
   <li>You must choose the project in which the user will be added.</li>
   <li>Install the AEC OP Agent from the portal and login with the portal credentials. <a href="/deployment/Deployment-Configuration/">Click here</a> to know more about the agent setup and configuration.</li>
-  <li>Now Choose two generic app for integration &amp; <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a>.</li>
+  <li>Now Choose any two application for integration &amp; <a href="/workflow/steps-to-create-your-first-workflow/">workflow creation</a>.</li>
   <li>Before executing the workflow for app integration, you should have a valid data in the source application</li>
   <li>The connection or the workflow design should be done in the Cloud Portal.</li>
+  <li>The environment should be set as <strong>PRIMARY</strong> by enabling the checkbox beside the <a href="/deployment/Environment-Management/#accessing-the-environment-user-interface">Environment</a> name. The workflow will be deployed only to the environment which will be set as primary.</li>
 </ul>
 
 <h2 id="creating-a-workflow">Creating a Workflow</h2>
@@ -2430,18 +2436,21 @@ accessible from the APPSeCONNECT Agent.
 
 <h2 id="deploying-a-workflow">Deploying a Workflow</h2>
 
-<ol>
-  <li>After creation and saving of the workflow, navigate to the Environments Tab. 
-<img src="/staticfiles/workflow-management/media/deploying-workflow.png" alt="deploying-workflow" /></li>
-  <li>The Environment window shows up. Click on the Agent Settings button to confirm the connectivity of the agent with the portal. 
-The Pop up window shown below, confirms the connectivity.
-<img src="/staticfiles/workflow-management/media/deploying-workflow2.png" alt="deploying-workflow2" /></li>
-  <li>After the confirmation of the connectivity, click on the Deploy Configuration button to deploy the workflow connection
-in the agent. The user can also click on the Update Configuration button in the OP Agent.<br />
-<strong>Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
-and Deploy Configuration should be clicked for the agent that is being used.</strong></li>
-  <li>After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.</li>
-</ol>
+<p>The procedures for deploying workflow as per the chosen environment is given below:</p>
+
+<h3 id="deploying-in-op-agent">Deploying in OP Agent</h3>
+
+<p>1) After successfully <a href="/workflow/deploying-and-executing/#publishing-a-workflow">publishing</a> the workflow, you need to click on the <strong>Update Configuration</strong> button, to deploy the changes in the OP AGENT. As a prerequisite, the required environment needs to be set as primary from the <a href="/deployment/Environment-Management/">environment</a> section.</p>
+
+<p><img src="\staticfiles\workflow-management\media\deployop1.PNG" alt="deployop1" /></p>
+
+<p>2) Once the configuration are updated, you can view your workflow deployed in the <a href="/deployment/Deployment-Configuration/#configuration-process-for-op">Workflow Panel</a></p>
+
+<p><strong>Note:</strong> Before Updating Configuration, you need to uncheck the Enable Environment button.</p>
+
+<h3 id="deploying-in-cloud-agent">Deploying in Cloud Agent</h3>
+
+<p>After successfully publishing the workflow, you need run and execute the workflow. As a prerequisite, you need to enable the Cloud Environment as primary by checking the checkbox in the <a href="/workflow/deploying-and-executing/#executing-the-workflow">environment section</a> before <a href="/workflow/deploying-and-executing/#publishing-a-workflow">publishing</a> the workflow.</p>
 
 <h2 id="executing-the-workflow">Executing the Workflow</h2>
 
@@ -4744,8 +4753,18 @@ ported in edit mode.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
