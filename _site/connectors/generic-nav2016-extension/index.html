@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2386,13 +2386,13 @@ in the data integration business scenario.</p>
 
 <p>2) There is two option to import extension WebServices from XML file and they are provided below:</p>
 
-<p>a) Run <code class="highlighter-rouge">AEC WebServices Import</code> xmlport. An import popup will appear. Specify a direction value import and click OK button. 
+<p>a) Run <code class="language-plaintext highlighter-rouge">AEC WebServices Import</code> xmlport. An import popup will appear. Specify a direction value import and click OK button. 
    Another popup will be shown where you need to select the Webservices of the XML file.</p>
 
-<p>b) Run-<code class="highlighter-rouge">ins import codeunit</code> where we have called <code class="highlighter-rouge">AECWebServiceImport function</code> with a <code class="highlighter-rouge">parameter datafilepath</code>. 
+<p>b) Run-<code class="language-plaintext highlighter-rouge">ins import codeunit</code> where we have called <code class="language-plaintext highlighter-rouge">AECWebServiceImport function</code> with a <code class="language-plaintext highlighter-rouge">parameter datafilepath</code>. 
   This datafilepath is webservices of XML file path. You will be provided with XML file in extension build. 
   You need to be changed function parameter path value as per your webservice XML file location. 
-  This will insert data in Dynamics NAV <code class="highlighter-rouge">Web Service</code> table.</p>
+  This will insert data in Dynamics NAV <code class="language-plaintext highlighter-rouge">Web Service</code> table.</p>
 
 <h2 id="manual-changes-in-base-pages">Manual changes in Base Pages</h2>
 
@@ -2405,9 +2405,9 @@ in the data integration business scenario.</p>
 
 <h3 id="changes-in-customer-card-page">Changes in Customer Card Page</h3>
 
-<p>a)  We have added our Extension page <code class="highlighter-rouge">AEC Customer Page</code> (33064472) as a part type with the name <code class="highlighter-rouge">WebCustomer Details</code>. 
+<p>a)  We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Customer Page</code> (33064472) as a part type with the name <code class="language-plaintext highlighter-rouge">WebCustomer Details</code>. 
     After the creation of the WebCustomerDetails, click on the property button. The WebCustomerDetails property window opens.
-   <code class="highlighter-rouge">AEC Customer Page</code> SubpageLink field is <code class="highlighter-rouge">No.</code> and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+   <code class="language-plaintext highlighter-rouge">AEC Customer Page</code> SubpageLink field is <code class="language-plaintext highlighter-rouge">No.</code> and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/customercard-page-nav2016.png" alt="customercard-page-nav2016" /></p>
 
@@ -2457,9 +2457,9 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>b) We have added our Extension page <code class="highlighter-rouge">AEC Application Customer List</code> (33064474) as a part type with the name <code class="highlighter-rouge">AEC Application Customer List</code>. 
- Click on Property button and Application Customer Detail page appears. Page AEC Application Customer List SubPage Link field is <code class="highlighter-rouge">CustomerNo</code> 
- and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>b) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Application Customer List</code> (33064474) as a part type with the name <code class="language-plaintext highlighter-rouge">AEC Application Customer List</code>. 
+ Click on Property button and Application Customer Detail page appears. Page AEC Application Customer List SubPage Link field is <code class="language-plaintext highlighter-rouge">CustomerNo</code> 
+ and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/aecapplication-customerlist-nav2016.png" alt="aecapplication-customerlist-nav2016" /></p>
 
@@ -2517,8 +2517,8 @@ in the data integration business scenario.</p>
 
 <h3 id="changes-in-item-card-page">Changes in Item Card Page</h3>
 
-<p>a) We have added our Extension page <code class="highlighter-rouge">Web Product Details Page</code> (33064469) as a part type with name <code class="highlighter-rouge">WebProductDetails</code>. Click on Property button and Web Product Details window appears.
-   Page Web Product Details Page SubPageLink field is <code class="highlighter-rouge">ItemNo.</code> and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>a) We have added our Extension page <code class="language-plaintext highlighter-rouge">Web Product Details Page</code> (33064469) as a part type with name <code class="language-plaintext highlighter-rouge">WebProductDetails</code>. Click on Property button and Web Product Details window appears.
+   Page Web Product Details Page SubPageLink field is <code class="language-plaintext highlighter-rouge">ItemNo.</code> and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/itemcard-nav2016.png" alt="itemcard-nav2016" /></p>
 
@@ -2568,8 +2568,8 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>b) We have added our Extension page <code class="highlighter-rouge">Web ProductWebsites Page</code> (33064466) as a part type with name <code class="highlighter-rouge">ProductWebSites</code>. Click on Property button and the ProductWebSites window appears.<br />
-   Page Web ProductWebsites Page SubPageLink field is <code class="highlighter-rouge">ItemNo.</code> and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>b) We have added our Extension page <code class="language-plaintext highlighter-rouge">Web ProductWebsites Page</code> (33064466) as a part type with name <code class="language-plaintext highlighter-rouge">ProductWebSites</code>. Click on Property button and the ProductWebSites window appears.<br />
+   Page Web ProductWebsites Page SubPageLink field is <code class="language-plaintext highlighter-rouge">ItemNo.</code> and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/webproduct-websitepage-nav2016.png" alt="webproduct-websitepage-nav2016" /></p>
 
@@ -2619,9 +2619,9 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>c) We have added our Extension page <code class="highlighter-rouge">Web ProductAttribute Page</code> (33064467) as a part type with name <code class="highlighter-rouge">ProductAttributes</code>. 
-   Click on Property button and the ProductAttribute window appears. Page Web ProductAttribute Page SubPageLink field is <code class="highlighter-rouge">ItemNo</code> 
-   and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>c) We have added our Extension page <code class="language-plaintext highlighter-rouge">Web ProductAttribute Page</code> (33064467) as a part type with name <code class="language-plaintext highlighter-rouge">ProductAttributes</code>. 
+   Click on Property button and the ProductAttribute window appears. Page Web ProductAttribute Page SubPageLink field is <code class="language-plaintext highlighter-rouge">ItemNo</code> 
+   and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/webproduct-attributepage-nav2016.png" alt="webproduct-attributepage-nav2016" /></p>
 
@@ -2671,9 +2671,9 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>d) We have added our Extension page <code class="highlighter-rouge">Web ProductCategory Page</code> (33064468) as a part type with name <code class="highlighter-rouge">ProductCategories</code>. 
-   Click on Property button and the ProductCategory window appears. Page Web ProductCategory Page SubPageLink field is <code class="highlighter-rouge">ItemNo</code> 
-   and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>d) We have added our Extension page <code class="language-plaintext highlighter-rouge">Web ProductCategory Page</code> (33064468) as a part type with name <code class="language-plaintext highlighter-rouge">ProductCategories</code>. 
+   Click on Property button and the ProductCategory window appears. Page Web ProductCategory Page SubPageLink field is <code class="language-plaintext highlighter-rouge">ItemNo</code> 
+   and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/webproduct-categorypage-nav2016.png" alt="webproduct-categorypage-nav2016" /></p>
 
@@ -2723,8 +2723,8 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>e) We have added our Extension page <code class="highlighter-rouge">Web Product Child Details</code> (33064471) as a part type with name <code class="highlighter-rouge">ProductChild</code>. Click on Property button and the Product Child window appears.
-   Page Web Product Child Details SubPageLink field is <code class="highlighter-rouge">ItemNo</code> and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>e) We have added our Extension page <code class="language-plaintext highlighter-rouge">Web Product Child Details</code> (33064471) as a part type with name <code class="language-plaintext highlighter-rouge">ProductChild</code>. Click on Property button and the Product Child window appears.
+   Page Web Product Child Details SubPageLink field is <code class="language-plaintext highlighter-rouge">ItemNo</code> and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/webproduct-childdetails-nav2016.png" alt="webproduct-childdetails-nav2016" /></p>
 
@@ -2774,9 +2774,9 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>f) We have added our Extension page <code class="highlighter-rouge">AEC Application Item List</code> (33064475) as a part type with the name <code class="highlighter-rouge">ProductApplicationData</code>.
-     Click on Property button and the Product application data window appears. Page AEC Application Item List SubPageLink field is <code class="highlighter-rouge">ItemNo</code> 
-     and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>f) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Application Item List</code> (33064475) as a part type with the name <code class="language-plaintext highlighter-rouge">ProductApplicationData</code>.
+     Click on Property button and the Product application data window appears. Page AEC Application Item List SubPageLink field is <code class="language-plaintext highlighter-rouge">ItemNo</code> 
+     and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/aec-application-itemlist-nav2016.png" alt="aec-application-itemlist-nav2016" /></p>
 
@@ -2828,9 +2828,9 @@ in the data integration business scenario.</p>
 
 <h2 id="changes-in-sales-order-page">Changes in Sales Order Page</h2>
 
-<p>a) We have added our Extension page <code class="highlighter-rouge">AEC Order Header Details</code> (33064476) as a part type with name <code class="highlighter-rouge">WebOrder Header Details</code>. 
-   Click on Property button and the weborder header details window appears. Page AEC Order Header Details SubPageLink field is <code class="highlighter-rouge">OrderNo</code> 
-   and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>a) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Order Header Details</code> (33064476) as a part type with name <code class="language-plaintext highlighter-rouge">WebOrder Header Details</code>. 
+   Click on Property button and the weborder header details window appears. Page AEC Order Header Details SubPageLink field is <code class="language-plaintext highlighter-rouge">OrderNo</code> 
+   and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/sales-orderpage-nav2016.png" alt="sales-orderpage-nav2016" /></p>
 
@@ -2880,9 +2880,9 @@ in the data integration business scenario.</p>
   </tbody>
 </table>
 
-<p>b) We have added our Extension page <code class="highlighter-rouge">AEC Order Line Details</code> (33064477) as a part type with name <code class="highlighter-rouge">WebOrder Line Details</code>. 
-   Click on Property button and the weborder line details window appears. Page AEC Order Line Details SubPageLink field is <code class="highlighter-rouge">OrderNo</code> 
-   and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<p>b) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Order Line Details</code> (33064477) as a part type with name <code class="language-plaintext highlighter-rouge">WebOrder Line Details</code>. 
+   Click on Property button and the weborder line details window appears. Page AEC Order Line Details SubPageLink field is <code class="language-plaintext highlighter-rouge">OrderNo</code> 
+   and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/orderline-detailspage-nav2016.png" alt="orderline-detailspage-nav2016" /></p>
 
@@ -2932,9 +2932,9 @@ in the data integration business scenario.</p>
 
 <h2 id="changes-in-ship-to-address-page">Changes in Ship-to Address Page</h2>
 
-<p>a) We have added our Extension page <code class="highlighter-rouge">AEC Ship-To Address Cart Part</code> (33064478) as a part type with name <code class="highlighter-rouge">WebDetails</code>. 
-Click on Property button and the webdetail window appears. Page AEC Ship-To Address  SubPageLink field is <code class="highlighter-rouge">CustomerNo and </code>Code<code class="highlighter-rouge"> 
-and base page SubPageLink field is </code>CustomerNo and <code class="highlighter-rouge">Code</code></p>
+<p>a) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Ship-To Address Cart Part</code> (33064478) as a part type with name <code class="language-plaintext highlighter-rouge">WebDetails</code>. 
+Click on Property button and the webdetail window appears. Page AEC Ship-To Address  SubPageLink field is <code class="language-plaintext highlighter-rouge">CustomerNo and </code>Code<code class="language-plaintext highlighter-rouge"> 
+and base page SubPageLink field is </code>CustomerNo and <code class="language-plaintext highlighter-rouge">Code</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/ship-to-addresspage-nav2016.png" alt="ship-to-addresspage-nav2016" /></p>
 
@@ -3010,9 +3010,9 @@ and base page SubPageLink field is </code>CustomerNo and <code class="highlighte
 
 <h2 id="changes-in-contact-card-page">Changes in Contact Card Page</h2>
 
-<p>a) We have added our Extension page <code class="highlighter-rouge">AEC Contact Details CardPart</code> (33064481) as a part type with name <code class="highlighter-rouge">AEC Contact Details CardPart</code>. 
+<p>a) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Contact Details CardPart</code> (33064481) as a part type with name <code class="language-plaintext highlighter-rouge">AEC Contact Details CardPart</code>. 
  Click on Property button and the AEC Contact Details CardPart window appears.Page AEC Contact Details CardPart SubPageLink field is 
-<code class="highlighter-rouge">No</code> and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+<code class="language-plaintext highlighter-rouge">No</code> and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/contact-card-nav2016.png" alt="contact-card-nav2016" /></p>
 
@@ -3060,9 +3060,9 @@ and base page SubPageLink field is </code>CustomerNo and <code class="highlighte
   </tbody>
 </table>
 
-<p>b) We have added our Extension page <code class="highlighter-rouge">AEC Application Contact LP</code> (33064482) as a part type with the name <code class="highlighter-rouge">AEC Application Contact List</code>. 
+<p>b) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Application Contact LP</code> (33064482) as a part type with the name <code class="language-plaintext highlighter-rouge">AEC Application Contact List</code>. 
    Click on Property button and the AEC Application Contact List window appears. Page AEC Application Contact LP 
-   SubPageLink field is <code class="highlighter-rouge">CustomerNo</code> and base page SubPageLink field is <code class="highlighter-rouge">No.</code></p>
+   SubPageLink field is <code class="language-plaintext highlighter-rouge">CustomerNo</code> and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">No.</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/contactLP-nav2016.png" alt="contactLP-nav2016" /></p>
 
@@ -3112,9 +3112,9 @@ and base page SubPageLink field is </code>CustomerNo and <code class="highlighte
 
 <h2 id="changes-in-contact-alt-address-card-page">Changes in Contact Alt. Address Card Page</h2>
 
-<p>a) We have added our Extension page <code class="highlighter-rouge">AEC Contact Address CardPart</code> (33064483) as a part type with the name <code class="highlighter-rouge">AEC Contact Address CardPart</code>. 
-  Click on Property button and the AEC Contact Address CardPart window appears. Page AEC Contact Address CardPart SubPageLink field is <code class="highlighter-rouge">ContactNo and Code</code>
-  and base page SubPageLink field is <code class="highlighter-rouge">Contact No. and Code</code></p>
+<p>a) We have added our Extension page <code class="language-plaintext highlighter-rouge">AEC Contact Address CardPart</code> (33064483) as a part type with the name <code class="language-plaintext highlighter-rouge">AEC Contact Address CardPart</code>. 
+  Click on Property button and the AEC Contact Address CardPart window appears. Page AEC Contact Address CardPart SubPageLink field is <code class="language-plaintext highlighter-rouge">ContactNo and Code</code>
+  and base page SubPageLink field is <code class="language-plaintext highlighter-rouge">Contact No. and Code</code></p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/contact-alt-addresscard-page-nav2016.png" alt="contact-alt-addresscard-page-nav2016" /></p>
 
@@ -3162,7 +3162,7 @@ and base page SubPageLink field is </code>CustomerNo and <code class="highlighte
   </tbody>
 </table>
 
-<p>b) Add a base table (Contact Alt. Address) field <code class="highlighter-rouge">Contact No.</code> with the name <code class="highlighter-rouge">Contact_No</code>.</p>
+<p>b) Add a base table (Contact Alt. Address) field <code class="language-plaintext highlighter-rouge">Contact No.</code> with the name <code class="language-plaintext highlighter-rouge">Contact_No</code>.</p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/navextension/manualchange-contactalt2.png" alt="manualchange-contactalt2" /></p>
 

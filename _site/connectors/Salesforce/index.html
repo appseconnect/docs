@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2397,14 +2397,14 @@ As this URL is used for some OAuth flows to pass an access token, the URL must u
 
 <ul>
   <li>
-    <p>Provide the details, click SAVE button. Now you will get the following window with the Consumer Key and Consumer Secret generated. To view the Consumer Secret, press <code class="highlighter-rouge">Click to Reveal</code> button.
+    <p>Provide the details, click SAVE button. Now you will get the following window with the Consumer Key and Consumer Secret generated. To view the Consumer Secret, press <code class="language-plaintext highlighter-rouge">Click to Reveal</code> button.
 <img src="/staticfiles/connectors/media/application-connector/salesforce6.png" alt="salesforce6" /> 
 <strong>Note:It takes 15-20 mins to reflect the Oauth2.0 settings in the Salesforce portal. Once it reflects, you can copy the generated credentials for validation process.</strong></p>
   </li>
   <li>On the Profile icon, click settings button to generate the Security Token.    <br />
 <img src="/staticfiles/connectors/media/application-connector/salesforce7.png" alt="salesforce7" /></li>
   <li>
-    <p>From the <code class="highlighter-rouge">My Personal Information</code> dropdown, Click on Reset My Security Token.  <br />
+    <p>From the <code class="language-plaintext highlighter-rouge">My Personal Information</code> dropdown, Click on Reset My Security Token.  <br />
 <img src="/staticfiles/connectors/media/application-connector/salesforce8.png" alt="salesforce8" />   <br />
 <strong>Note: The Security Token would be sent to the Email that was provided while creating the Salesforce Account.</strong></p>
   </li>
@@ -2417,13 +2417,13 @@ Following this process, the Salesforce application can be configured in the agen
 
 <p><strong>ISSUE 1:Source Application Data Not Found</strong></p>
 
-<p><code class="highlighter-rouge">Source Application Data Not Found</code> even if Data is present is the Source Application.</p>
+<p><code class="language-plaintext highlighter-rouge">Source Application Data Not Found</code> even if Data is present is the Source Application.</p>
 
 <p>Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated and if touchpoints
 do not sync. This basic issue resolves after removing the Temp and Cache files from the portal and from your system. Therefore, 
 after clearing all this, you need to publish the touchpoints again along with Update Configuration on the agent.</p>
 
-<p>For E.g. If the <code class="highlighter-rouge">Source Application Data Not Found</code> in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
+<p>For E.g. If the <code class="language-plaintext highlighter-rouge">Source Application Data Not Found</code> in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
 
 <p><strong>Note: Integration between SAP B1 and Salesforce requires UDT &amp; UDF creations</strong></p>
 <h2 id="attributes-and-actions">Attributes and Actions</h2>

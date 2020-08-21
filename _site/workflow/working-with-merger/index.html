@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2354,7 +2354,7 @@
                 
                 <h3 id="what-is-merger-node">What is Merger Node?</h3>
 
-<p>This node is used to merge smaller data chunks into a single data packet. Like a <code class="highlighter-rouge">SPLITTER</code> node, it also has three components XPath, Entity Name and Batch size. For example, you have specified a batch size of 10 in a <code class="highlighter-rouge">MERGER</code> node then it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
+<p>This node is used to merge smaller data chunks into a single data packet. Like a <code class="language-plaintext highlighter-rouge">SPLITTER</code> node, it also has three components XPath, Entity Name and Batch size. For example, you have specified a batch size of 10 in a <code class="language-plaintext highlighter-rouge">MERGER</code> node then it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
 
 <p><strong>Entityname</strong> : Here specify the name which will act as a root element under which data will be merged.</p>
 
@@ -2362,10 +2362,10 @@
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="highlighter-rouge">MERGER</code> node in APPSeCONNECT workflow used to take smaller data packets and merge them into single data packet.</p>
+<p><code class="language-plaintext highlighter-rouge">MERGER</code> node in APPSeCONNECT workflow used to take smaller data packets and merge them into single data packet.</p>
 
 <p>For example: If there are 20 files or data chunks each of which contains a customer data with the below XML format. All the files will be merge them into single file in a batch size of 2. So, in the XPATH section the values are provided as following:
- <code class="highlighter-rouge">XPATH = //BusinessPartners</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">Envelope</code>.</p>
+ <code class="language-plaintext highlighter-rouge">XPATH = //BusinessPartners</code>, Batch Size = 2 and the Entity name = <code class="language-plaintext highlighter-rouge">Envelope</code>.</p>
 
 <p><img src="/staticfiles/workflow-management/media/Merger/Merger2.png" alt="Merger2" /></p>
 

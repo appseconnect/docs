@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2364,7 +2364,7 @@
 <p>Lookups Mapping is a feature in APPSeCONNECT which enables the user or implementer to provide a specific value to the application environment, such that when the source and destination application is integrated, 
 the value in source application can easily be integrated with its value in destination application, corresponding to its field.</p>
 
-<p>For Instance: Order placed in Magento2 has the currency value<code class="highlighter-rouge">$</code> but SAP B1 supports the value <code class="highlighter-rouge">USD</code> for the field CURRENCY. Though the meaning would be same, but applications will not support such instances. 
+<p>For Instance: Order placed in Magento2 has the currency value<code class="language-plaintext highlighter-rouge">$</code> but SAP B1 supports the value <code class="language-plaintext highlighter-rouge">USD</code> for the field CURRENCY. Though the meaning would be same, but applications will not support such instances. 
 Therefore in these cases Lookups mapping needs to be implemented where the both values of the field can be integrated error free.</p>
 
 <p>Lookup Mapping is an integral part of data synchronization between two independent applications.</p>
@@ -2441,8 +2441,8 @@ VIEW option will display the lookups provided for that touchpoint or the connect
 Lookup Types.</li>
   <li>Select the Lookup types from the drop-down for which the Mapping is to be done. Currently there are numerous types 
 that can be availed for value map.     <br />
-<strong>Note: The type <code class="highlighter-rouge">Currency</code> is selected for the demonstration.</strong></li>
-  <li>Provide the input for field <code class="highlighter-rouge">Used For</code> which should be related to the lookup type.</li>
+<strong>Note: The type <code class="language-plaintext highlighter-rouge">Currency</code> is selected for the demonstration.</strong></li>
+  <li>Provide the input for field <code class="language-plaintext highlighter-rouge">Used For</code> which should be related to the lookup type.</li>
   <li>Input the Source and Destination Value for which the Mapping is to be done. The user can view the screen below.<br />
 <img src="/staticfiles/Transformation/media/lookup3.png" alt="lookup3" /></li>
   <li>The user can add multiple Lookup types for its mapping. Click on the Enable checkbox once the values are provided.<br />
@@ -2452,8 +2452,8 @@ the USCA is not present in the SAP B1, it needs to be created for enabling this 
   <li>Once the values are provided click on the SAVE icon beside the lookup or click on the SAVE ALL option.</li>
 </ol>
 
-<p><strong>Note: After Providing and Saving the Values, click on the option <code class="highlighter-rouge">Reset Cache</code> and <code class="highlighter-rouge">Reset Publish</code> in the touchpoint and 
-Click on <code class="highlighter-rouge">Update Lookup Tables</code> and then <code class="highlighter-rouge">Update Configuration</code> in the agent for enabling the mapping.</strong></p>
+<p><strong>Note: After Providing and Saving the Values, click on the option <code class="language-plaintext highlighter-rouge">Reset Cache</code> and <code class="language-plaintext highlighter-rouge">Reset Publish</code> in the touchpoint and 
+Click on <code class="language-plaintext highlighter-rouge">Update Lookup Tables</code> and then <code class="language-plaintext highlighter-rouge">Update Configuration</code> in the agent for enabling the mapping.</strong></p>
 
 <p><img src="/staticfiles/Transformation/media/lookup5.png" alt="lookup5" /></p>
 

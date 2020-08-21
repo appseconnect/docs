@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2372,9 +2372,9 @@
 
 <p><em>The above mapping scenario is explained below</em></p>
 
-<p>The Condition <code class="highlighter-rouge">default-address/country-code='US'</code> in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.</p>
+<p>The Condition <code class="language-plaintext highlighter-rouge">default-address/country-code='US'</code> in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.</p>
 
-<p>The Condition <code class="highlighter-rouge">default-address/country-code='IN'</code> in the Else-If node describes that if the Country code in the Default Address is IN, the clause Country_Region_Code = GB is carried out.</p>
+<p>The Condition <code class="language-plaintext highlighter-rouge">default-address/country-code='IN'</code> in the Else-If node describes that if the Country code in the Default Address is IN, the clause Country_Region_Code = GB is carried out.</p>
 
 <p>And for the Otherwise (ELSE)Node,the given clause will be carried out.</p>
 
@@ -2389,7 +2389,7 @@ The User can also add Else-If and Else(Otherwise) and its clauses in the attribu
 
 <h3 id="mapping-at-loop-level">Mapping at Loop Level</h3>
 
-<p>The <code class="highlighter-rouge">If Mapping can be done at the For-Each Loop level</code>. Below is the screen which shows the <strong>If Mapping</strong> at the For-Each Loop Level.</p>
+<p>The <code class="language-plaintext highlighter-rouge">If Mapping can be done at the For-Each Loop level</code>. Below is the screen which shows the <strong>If Mapping</strong> at the For-Each Loop Level.</p>
 
 <p><img src="/staticfiles/Transformation/media/LoopLevel-Mapping.png" alt="LoopLevel-Mapping" /></p>
 
@@ -2426,7 +2426,7 @@ the hierarchical rendering feature in the APPSeCONNECT Portal.</p>
   <li>Login the APPSeCONNECT Portal.</li>
   <li>Navigate to the touchpoints area after <a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">creating a connection</a></li>
   <li>Choose any touchpoint and click on the Transform button.</li>
-  <li>On <code class="highlighter-rouge">expanding the schema object</code>, all the <code class="highlighter-rouge">complex objects and the complex objects collection</code> are displayed.
+  <li>On <code class="language-plaintext highlighter-rouge">expanding the schema object</code>, all the <code class="language-plaintext highlighter-rouge">complex objects and the complex objects collection</code> are displayed.
 <img src="/staticfiles/Transformation/media/hierarchial-rendering1.png" alt="hierarchial-rendering1" /></li>
   <li>Hover the icon over the mapped complex object/complex object collection. The Disable option will appear. 
 <img src="/staticfiles/Transformation/media/hierarchial-rendering2.png" alt="hierarchial-rendering2" /></li>
@@ -2443,7 +2443,7 @@ enabled, rest all other child nodes on that tree, remains disabled.</li>
 </ol>
 
 <p><strong>Protip:</strong> The Disabled node turns grey on disabling.
-{: .notice–info} Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
+{: .notice–info} Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="language-plaintext highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
 
 <h2 id="pre-requisites-for-mapping">Pre-requisites for Mapping</h2>
 <ol>

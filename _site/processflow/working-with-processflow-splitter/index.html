@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2372,16 +2372,16 @@ for processing.</li>
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="highlighter-rouge">SPLITTER</code> node in APPSeCONNECT processflow is used for splitting large volume of data received as input files and 
+<p><code class="language-plaintext highlighter-rouge">SPLITTER</code> node in APPSeCONNECT processflow is used for splitting large volume of data received as input files and 
 breaking them into  smaller chunks go to the next process of transformation in the processflow .</p>
 
 <p>For example: If a packet contains 20 customer data. A batch size of 1 is defined in the splitter node,where XPATH  is  //items/item and Entity name as response/items. 
 So, after data passed through the Splitter node 20 individual XML data files will be created as output file where each file contains a single customer data.</p>
 
 <p><img src="\staticfiles\processflow\media\splitter1.PNG" alt="Processflow Splitter Properties" />   <br />
-<code class="highlighter-rouge">For providing the properties of Split/ Merger, XPath for the packets is needed to be known.</code></p>
+<code class="language-plaintext highlighter-rouge">For providing the properties of Split/ Merger, XPath for the packets is needed to be known.</code></p>
 
-<p>The Parent node for the items present in the XSLT is the <code class="highlighter-rouge">XPATH</code> that needs to be given in the Split and Merger Property.</p>
+<p>The Parent node for the items present in the XSLT is the <code class="language-plaintext highlighter-rouge">XPATH</code> that needs to be given in the Split and Merger Property.</p>
 
 <p><strong>Note: Single forward Slash (For Eg: /Items) access all the sub nodes present inside it. 
 Double Forward Slash (For Eg: //Items) access all the nodes present inside it.</strong></p>
@@ -2394,14 +2394,14 @@ node the XPath is needed to be provided viewing the Transform Packet.</p>
 
 <p><img src="/staticfiles/workflow-management/media/Splitter/TroubleshootingSplitter2.png" alt="TroubleshootingSplitter2" /></p>
 
-<p><code class="highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1</code>.</p>
 
 <p>The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:</p>
 
 <p>1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.<br />
 2) The Processflow is designed as shown in the screen below.
 <img src="\staticfiles\processflow\media\splitflow1.PNG" alt="splitflow1" />
-3) Here the <code class="highlighter-rouge">splitter</code> node is used after  getting customer data from Magento,
+3) Here the <code class="language-plaintext highlighter-rouge">splitter</code> node is used after  getting customer data from Magento,
 and splitting it into multiple output packets for posting in destination application.<br />
 4) You have to add <a href="/processflow/working-with-processflow-selfloop/">Self loop</a> in the mapper node so that all the splitted files are executed
 and posted in the destination application, to avoid any data loss. <br />
@@ -2410,12 +2410,12 @@ and posted in the destination application, to avoid any data loss. <br />
 to view the detailed node by node snapshot data of the processflow.  <br />
 7) Click on the Splitter node to get the snapshot dataview of the splitted files.    <br />
 <img src="\staticfiles\processflow\media\splitflow2.PNG" alt="splitflow2" />  <br />
-Here you can see the data log file of snapshot with two file, containing <code class="highlighter-rouge">One customer records</code> each.<br />
-8) Now click on the <code class="highlighter-rouge">Transactional Log</code> to view the splitted data.  <br />
+Here you can see the data log file of snapshot with two file, containing <code class="language-plaintext highlighter-rouge">One customer records</code> each.<br />
+8) Now click on the <code class="language-plaintext highlighter-rouge">Transactional Log</code> to view the splitted data.  <br />
  <img src="\staticfiles\processflow\media\splitflow3.PNG" alt="splitflow3" />    <br />
-Here you can view two splitted files are created each containing <code class="highlighter-rouge">one customer record</code> for further processing and 
+Here you can view two splitted files are created each containing <code class="language-plaintext highlighter-rouge">one customer record</code> for further processing and 
 posting in destination application. <br />
-9) Now Click on <code class="highlighter-rouge">Mapper node</code> and you can view two iterations are created for two files
+9) Now Click on <code class="language-plaintext highlighter-rouge">Mapper node</code> and you can view two iterations are created for two files
 which are processed. Every Iteration has - Data Log, Activity Files &amp; Transactional Files where you can view
 the file details.</p>
 
@@ -2423,7 +2423,7 @@ the file details.</p>
 file posting status - Success/Failure.  <br />
 <img src="\staticfiles\processflow\media\splitflow4.PNG" alt="splitflow4" /></p>
 
-<p><strong>Note: Since Self Loop configuration was set as <code class="highlighter-rouge">Until Data Available</code>, you will be generated with an extra iteration. For more details related to Self-Loop, <a href="/processflow/working-with-processflow-selfloop/">Click Here</a>.</strong></p>
+<p><strong>Note: Since Self Loop configuration was set as <code class="language-plaintext highlighter-rouge">Until Data Available</code>, you will be generated with an extra iteration. For more details related to Self-Loop, <a href="/processflow/working-with-processflow-selfloop/">Click Here</a>.</strong></p>
 
 <p>Thus, the above processflow is executed with the splitter node and you can also 
 view the iteration wise node execution created with self loop.</p>

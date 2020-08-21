@@ -1316,20 +1316,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
+    <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
         
     </li>
     
@@ -1342,6 +1336,12 @@
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-package-sharing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-package-sharing/" onclick="selectTab('/processflow/processflow-package-sharing/', event);" title="Go to Package Sharing">Package Sharing</a>
         
     </li>
     
@@ -2364,7 +2364,7 @@
 
 <h3 id="understanding-conditions">Understanding conditions:</h3>
 
-<p><code class="highlighter-rouge">For Ex:</code> A Decision condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.</p>
+<p><code class="language-plaintext highlighter-rouge">For Ex:</code> A Decision condition is implemented where the operation evaluates and extracts the errored data and routes to a flow where the data are process for correction.</p>
 
 <p>The set of data that fulfils this condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the decision condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.</p>
 
@@ -2378,7 +2378,7 @@
     <p><strong>Decision Name:</strong> Here, you can provide a short name that will help identify the purpose of the Decision Node when working later.</p>
   </li>
   <li>
-    <p><strong>Decision Key:</strong> This is the actual field which decides the execution process of the decision node. Your <code class="highlighter-rouge">Decision Key</code> can be applied in these following areas:</p>
+    <p><strong>Decision Key:</strong> This is the actual field which decides the execution process of the decision node. Your <code class="language-plaintext highlighter-rouge">Decision Key</code> can be applied in these following areas:</p>
 
     <ul>
       <li>
@@ -2411,7 +2411,7 @@
     <p><strong>Value:</strong> Here, you need to provide the value for the KEY provided.</p>
   </li>
   <li>
-    <p><strong>Add Criteria:</strong> You can also add multiple combined conditions &amp; conjunctions using <code class="highlighter-rouge">AND</code> <code class="highlighter-rouge">OR</code>.</p>
+    <p><strong>Add Criteria:</strong> You can also add multiple combined conditions &amp; conjunctions using <code class="language-plaintext highlighter-rouge">AND</code> <code class="language-plaintext highlighter-rouge">OR</code>.</p>
   </li>
   <li>
     <p><strong>Toggle button:</strong> You will be able to activate multiple conditions by activating/deactivating the toggle button.</p>
@@ -2454,22 +2454,22 @@
 
     <p><strong>Scenario:</strong> Implementing Decision as Static.</p>
 
-    <p><strong>Description:</strong> In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields <code class="highlighter-rouge">Decision Key</code> &amp; <code class="highlighter-rouge">Value</code> is equal, the data will be passed as success.</p>
+    <p><strong>Description:</strong> In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields <code class="language-plaintext highlighter-rouge">Decision Key</code> &amp; <code class="language-plaintext highlighter-rouge">Value</code> is equal, the data will be passed as success.</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">20</code></li>
+      <li><strong>Decision Key:</strong> <code class="language-plaintext highlighter-rouge">20</code></li>
       <li>
-        <p><strong>Operator:</strong> <code class="highlighter-rouge">=</code></p>
+        <p><strong>Operator:</strong> <code class="language-plaintext highlighter-rouge">=</code></p>
       </li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">20</code></li>
+      <li><strong>Value:</strong> <code class="language-plaintext highlighter-rouge">20</code></li>
     </ul>
 
     <p>AND</p>
 
     <ul>
-      <li><strong>Decision Key:</strong> <code class="highlighter-rouge">40</code></li>
-      <li><strong>Operator:</strong> <code class="highlighter-rouge">=</code></li>
-      <li><strong>Value:</strong> <code class="highlighter-rouge">40</code></li>
+      <li><strong>Decision Key:</strong> <code class="language-plaintext highlighter-rouge">40</code></li>
+      <li><strong>Operator:</strong> <code class="language-plaintext highlighter-rouge">=</code></li>
+      <li><strong>Value:</strong> <code class="language-plaintext highlighter-rouge">40</code></li>
     </ul>
   </li>
 </ol>
@@ -2477,7 +2477,7 @@
 <p><em><strong>Note:</strong></em></p>
 <ul>
   <li>
-    <p><em><strong>You need to click the button <code class="highlighter-rouge">Add Criteria</code> for providing multiple condition with conjunctions. Also, you need to enable the toggle button for activating the conditions.</strong></em></p>
+    <p><em><strong>You need to click the button <code class="language-plaintext highlighter-rouge">Add Criteria</code> for providing multiple condition with conjunctions. Also, you need to enable the toggle button for activating the conditions.</strong></em></p>
   </li>
   <li>
     <p><em><strong>Providing the Curly Brackets ({}) are mandatory when entering the decision key</strong></em></p>
@@ -2497,7 +2497,7 @@
     <p>Once all the configuration are made for the Process Flow. <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute</a> the Process Flow.</p>
   </li>
   <li>
-    <p>After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about Process Flow Snapshots. The <strong>Activity Log</strong> against the <code class="highlighter-rouge">Decision node</code> in snapshot will display you the status of the condition.</p>
+    <p>After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about Process Flow Snapshots. The <strong>Activity Log</strong> against the <code class="language-plaintext highlighter-rouge">Decision node</code> in snapshot will display you the status of the condition.</p>
   </li>
 </ol>
 
@@ -2505,9 +2505,9 @@
 
 <p><strong>Note:</strong></p>
 
-<p>**- The tabs <code class="highlighter-rouge">Data log</code> for the Decision Node will display list the data that entered the Decision Node.</p>
+<p>**- The tabs <code class="language-plaintext highlighter-rouge">Data log</code> for the Decision Node will display list the data that entered the Decision Node.</p>
 <ul>
-  <li>The tab <code class="highlighter-rouge">Transaction File</code> will display you the INPUT file available in the GET node.**</li>
+  <li>The tab <code class="language-plaintext highlighter-rouge">Transaction File</code> will display you the INPUT file available in the GET node.**</li>
 </ul>
 
 <p>Following the above process you can successfully implement Decision for a Process Flow.</p>
@@ -2527,10 +2527,10 @@
   <tbody>
     <tr>
       <td>Attribute</td>
-      <td><code class="highlighter-rouge">{//items//item//state_code}</code></td>
-      <td><code class="highlighter-rouge">=</code></td>
-      <td><code class="highlighter-rouge">CAL</code></td>
-      <td>Only those orders shall be accepted whose state provided in the address is <code class="highlighter-rouge">CAL</code> (CAlifornia)</td>
+      <td><code class="language-plaintext highlighter-rouge">{//items//item//state_code}</code></td>
+      <td><code class="language-plaintext highlighter-rouge">=</code></td>
+      <td><code class="language-plaintext highlighter-rouge">CAL</code></td>
+      <td>Only those orders shall be accepted whose state provided in the address is <code class="language-plaintext highlighter-rouge">CAL</code> (CAlifornia)</td>
     </tr>
   </tbody>
 </table>

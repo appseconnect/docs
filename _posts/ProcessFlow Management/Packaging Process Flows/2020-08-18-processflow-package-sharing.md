@@ -6,7 +6,7 @@ category: "Processflow"
 menus: 
    quickstartprocessflow:
         title: "Package Sharing"
-        weight: 6
+        weight: 7
         icon: fa fa-file-word-o
         identifier: packagesharingprocessflow
 ---
