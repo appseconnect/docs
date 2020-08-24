@@ -69,7 +69,7 @@ Select the process flows by enabling the checkboxes beside the process flow name
 
 Following the above process, you can successfully create a process flow package.
 
-## Listing Packages:
+## Listing Packages
 
 Once you have created your process flow Package, you can successfully view the package lists in the process flow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.
 
@@ -101,15 +101,15 @@ three specific tabs namely - Description, Documentation, Process Flow.
 The `View Package` window offers you with the following package information  
 
 **Package Name** - Package name information was provided during Package creation.   
-**Version** -  Version information was provided during Package creation.  
-**Created by** - This indicates the Organization name of the user who created the Package.  
+**Version** -  Version information was provided during Package creation    
+**Created by** - This indicates the Organization name of the user who created the Package.      
 
 The tab details are mentioned below:  
 **Description Tab** - This section provides you the package description along with the view of application
 used in the packages. Here you can also view the package name and date.  
-**Documentation Tab**- This section provides you the documentation of the process flows.
+**Documentation Tab**- This section provides you the documentation of the process flows.  
 **Processflow Tab**- This section enlist the list of process flow included in the package.
-![package-processflow](\staticfiles\processflow\media\package-processflow.png)
+![package-processflow](\staticfiles\processflow\media\package-processflow.png)  
 In the Processflow Tab  `Search` option is provided where you can search the required 
 processflows by providing the processflow names.  
 
@@ -118,22 +118,25 @@ processflows by providing the processflow names.
 This section enbles you to edit package information as per your business requirement which you have 
 created. You can edit any Package available in Package Library section.
 
-1. For editing packages go to ProcessFlow Menu -> Package Library section-> My Packages.
-2. Now to edit a  Package, click Edit option of the Contextual menu of that Package.
-![package-edit-view](\staticfiles\processflow\media\package-edit-view.png)    
-3. This will open the `Edit Package` window.  
-![package-edit](\staticfiles\processflow\media\package-edit.png)    
-4. In the `Edit Package Details` window, here you will be able to edit the following fields:
-(a) Package Name - Here you can edit the package name
-(b) Package Description - Here you can edit the Package Description
+1. For editing packages go to ProcessFlow Menu -> Package Library section-> My Packages.    
+2. Now to edit a  Package, click Edit option of the Contextual menu of that Package.    
+![package-edit-view](\staticfiles\processflow\media\package-edit-view.png)        
+3. This will open the `Edit Package` window.      
+![package-edit](\staticfiles\processflow\media\package-edit.png)       
+4. In the `Edit Package Details` window, here you will be able to edit the following fields      
+(a) Package Name - Here you can edit the package name      
+(b) Package Description - Here you can edit the Package Description      
 (c) Package Documentation - Here you can edit the package documentation and all the associated functionality
-   of the documentation.
+   of the documentation.      
 
 After doing the changes, the User will be able to save the changes by clicking on the Save button.
-If the user clicks on the Cancel button, the changes will not be saved.
-**Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.
-(b) Preview option is available in the editor to view the changes.
-(c) In Edit mode, you will not be able to view or edit the Process Flow(s) present in a Package**
+If the user clicks on the Cancel button, the changes will not be saved.      
+
+**Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.         
+(b) Preview option is available in the editor to view the changes.      
+(c) In Edit mode, you will not be able to view or edit the Process Flow(s) present in a Package**          
+
+
 
 
 
