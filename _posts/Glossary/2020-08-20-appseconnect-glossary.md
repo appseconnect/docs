@@ -6,7 +6,7 @@ category: "Glossary"
 menus: 
    Glossary:
         title: "APPSeCONNECT Glossary"
-        weight: 6
+        weight: 2
         icon: fa fa-file-word-o
         identifier: aecglossary
 ---
@@ -161,7 +161,7 @@ Touchpoints that gets auto-published by default after connection creation.
 
 ### Deactivate Plan
 
-Pricing Plan Deactivation process is done to deactivate the user's current subscribed plan. Once deactivated, the user will not be authorized to log in to the APPSeCONNECT account until he/she sends the request for further subscription/activation.
+Pricing Plan Deactivation process is done to deactivate the users current subscribed plan. Once deactivated, the user will not be authorized to log in to the APPSeCONNECT account until he/she sends the request for further subscription/activation.
 
 
 
