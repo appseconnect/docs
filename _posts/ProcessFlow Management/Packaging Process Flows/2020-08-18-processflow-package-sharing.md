@@ -43,7 +43,7 @@ The `Right Pane` will have two sections:
 - **List of Packages** - You will listed with all the packages available on your organisation.
 - **Selected packages** - This will list all the packages, selected for sharing
 
-5) On the Choose Package section, you will be listed with all the packages that are created on your organisation, under the **List of Packages** section. The following details will be present in the list of packages section.
+6) On the "Choose Package" step, you will be listed with all the packages that are created on your organisation, under the **List of Packages** section. The following details will be present in the list of packages section.
 
 - **Name** : The package name will be displayed.
 - **Description** : The package description will be displayed.
@@ -54,7 +54,37 @@ Beside the package name, you will have checkboxes that will allow you to select 
 
 ![packageshare4]()
 
-6) Enabling the checkboxes, the packages selected will be displayed in the **Selected Packages** section on your right side.
-
+7) Enabling the checkboxes, the packages selected will be displayed in the **Selected Packages** section on your right side. You can also remove the packages from Selected Packages, if you chosen mistakenly by unchecking the checkbox in the list of packages section.
+Once the packages are selected, click on the **Continue** button. 
 ![packageshare5]()
+
+8) You will be navigated to the **Select Organisation** step, where you will be able to search and select the individual organisation with whom you want to share the package.
+
+![packageshare6]()
+
+9) The search box in the **Select Organisation from list** will enable you to look for the required organisation. You can type the name of the organisation or the associated Email Address. Based on the input the suggestion will be provided in the list.
+
+![packageshare7]()
+
+10) As multiple organisation may have same name, therefore, you can provide multiple criteria's in the search box separated by providing **SPACE** between the two criteria. 
+
+![packageshare8]()
+
+11) You need to click on the organisation name to select. On its selection, you will be able to view the selected organisation in the **Selected Organisation to share** section.
+You can remove the selected organisation, by clicking on the **CLOSE** `X` button beside the organisation in the  **Selected Organisation to share** section.
+
+![packageshare9]()
+
+12) Once the organisation is selected, click on the share button. You will be getting a confirmation message on successful sharing.
+![packageshare10]()
+
+13) You can confirm the sharing by navigating to **My Packages** listing page under PACKAGE LIBRARY node. You will be able to view the **Shared icon** beside the packages you have shared.
+
+![packageshare11]()
+
+Following the above process, you can successfully share packages from your organisatio to multiple other organisation.
+
+**Note:**
+- You can select multiple organisation for sharing.
+- Each search criteria will be taken as individual TAGS, and can be removed by the user if needed.
 

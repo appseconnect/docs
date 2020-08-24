@@ -2519,7 +2519,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Package Installation",
+      title: "Viewing and Installing Shared Packages",
       excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
       categories: ["Processflow"],
       tags: ["developers"],
@@ -2533,6 +2533,15 @@ var idx = lunr(function () {
       categories: ["Processflow"],
       tags: ["developers"],
       id: 279
+    });
+    
+  
+    idx.add({
+      title: "APPSeCONNECT Glossary",
+      excerpt: "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
+      categories: ["Glossary"],
+      tags: ["developers"],
+      id: 280
     });
     
   
@@ -5613,7 +5622,7 @@ var store = [
     
       
       {
-        "title": "Package Installation",
+        "title": "Viewing and Installing Shared Packages",
         "url": "/processflow/processflow-package-installation/",
         "excerpt": "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
         "teaser":
@@ -5627,6 +5636,17 @@ var store = [
         "title": "Package Sharing",
         "url": "/processflow/processflow-package-sharing/",
         "excerpt": "Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "APPSeCONNECT Glossary",
+        "url": "/glossary/appseconnect-glossary/",
+        "excerpt": "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
