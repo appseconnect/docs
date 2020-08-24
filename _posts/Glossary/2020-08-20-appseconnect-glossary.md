@@ -14,7 +14,6 @@ menus:
 APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP Business One, SAP ERP, MS Dynamics NAV, etc.) with front-end eCommerce websites, CRM, and Marketplace stores.
 
 
-
 ### API
 
 (Application Programming Interface)
