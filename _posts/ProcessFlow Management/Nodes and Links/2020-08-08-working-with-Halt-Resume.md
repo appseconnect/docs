@@ -44,6 +44,10 @@ After completing the transferred flow the Process Flow engine will find the RESU
 
 The above flow is based on the scenario provided below. Listed below are some of the scenarios that will help you implement business specific process flows using Halt-Resume node. 
 
+4) [Snapshot](/processflow/snapshot-processflow/) will provide you with the clear details of the sync process executed using Halt and Resume.
+
+![pf_haltresumesnapshot](\staticfiles\processflow\media\pf_haltresumesnapshot.PNG)
+
 **Note:**
 
 - On deleting the Halt Node, the corresponding Resume node gets deleted as well.

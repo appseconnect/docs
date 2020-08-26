@@ -48,7 +48,6 @@ The `Right Pane` will have two sections:
 
 - **Name** : The package name will be displayed.
 - **Description** : The package description will be displayed.
-- **Apps used** : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
 - **Filter Icon** : This will enable you to search packages based on the name as a keyword.
 
 Beside the package name, you will have checkboxes that will allow you to select the packages for sharing.
@@ -67,17 +66,17 @@ Once the packages are selected, click on the **Continue** button.
 
 10) You need to click on the organisation name to select. On its selection, you will be able to view the selected organisation in the **Selected Organisation to share** section.
 You can remove the selected organisation, by clicking on the **CLOSE** `X` button beside the organisation in the  **Selected Organisation to share** section. Once the organisation is selected, click on the share button. You will be getting a confirmation message and confirmation mail regarding the successful sharing.
-+
 ![packageshare9](\staticfiles\processflow\media\packageshare9.PNG)
 
 11) You can confirm the sharing by navigating to **My Packages** listing page under PACKAGE LIBRARY node. You will be able to view the **Shared icon** beside the packages you have shared.
 
 ![packageshare11](\staticfiles\processflow\media\packageshare11.PNG)
 
-Following the above process, you can successfully share packages from your organisatio to multiple other organisation.
+Following the above process, you can successfully share packages from your organisation to multiple other organisation.
 
 **Note:**
 - You can select multiple organisation for sharing.
+- You can share your created packages on your organisation for creating a COPY of the process flows for future use.
 - As multiple organisation may have same name, therefore, you can provide multiple criteria's in the search box separated by providing **SPACE** between the two criteria. 
 - Each search criteria will be taken as individual TAGS, and can be removed by the user if needed.
 
