@@ -2554,6 +2554,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Company Add from Magento2 to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 282
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5667,6 +5676,17 @@ var store = [
         "title": "Glossary",
         "url": "/glossary/glossary/",
         "excerpt": "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Company Add from Magento2 to SAGE 300",
+        "url": "/integration/company-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

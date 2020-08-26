@@ -1235,6 +1235,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/integration/company-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/company-add/" onclick="selectTab('/integration/company-add/', event);" title="Go to Company Add">Company Add</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
@@ -2348,7 +2354,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
                 
                 
@@ -2363,7 +2369,7 @@
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#creating-packages">Creating Packages:</a></li>
-  <li><a href="#listing-packages">Listing Packages</a></li>
+  <li><a href="#listing-packages">Listing Packages:</a></li>
   <li><a href="#viewing-packages">Viewing Packages</a></li>
   <li><a href="#editing-packages">Editing Packages</a></li>
 </ul>
@@ -2436,7 +2442,9 @@ By default, the <a href="/processflow/processflow-listing-page/#usability-for-th
 
 <p>Following the above process, you can successfully create a process flow package.</p>
 
-<h2 id="listing-packages">Listing Packages</h2>
+<p><strong>Note: Any changes made to the original process flow, the modifications will not reflect in the packaged versions. You need to create a new package for packaging the modified process flows.</strong></p>
+
+<h2 id="listing-packages">Listing Packages:</h2>
 
 <p>Once you have created your process flow Package, you can successfully view the package lists in the process flow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.</p>
 
@@ -2470,15 +2478,15 @@ three specific tabs namely - Description, Documentation, Process Flow.
 <p>The <code class="language-plaintext highlighter-rouge">View Package</code> window offers you with the following package information</p>
 
 <p><strong>Package Name</strong> - Package name information was provided during Package creation. <br />
-<strong>Version</strong> -  Version information was provided during Package creation  <br />
+<strong>Version</strong> -  Version information was provided during Package creation.<br />
 <strong>Created by</strong> - This indicates the Organization name of the user who created the Package.</p>
 
 <p>The tab details are mentioned below:<br />
 <strong>Description Tab</strong> - This section provides you the package description along with the view of application
 used in the packages. Here you can also view the package name and date.<br />
-<strong>Documentation Tab</strong>- This section provides you the documentation of the process flows.<br />
+<strong>Documentation Tab</strong>- This section provides you the documentation of the process flows.
 <strong>Processflow Tab</strong>- This section enlist the list of process flow included in the package.
-<img src="\staticfiles\processflow\media\package-processflow.png" alt="package-processflow" /><br />
+<img src="\staticfiles\processflow\media\package-processflow.png" alt="package-processflow" />
 In the Processflow Tab  <code class="language-plaintext highlighter-rouge">Search</code> option is provided where you can search the required 
 processflows by providing the processflow names.</p>
 
@@ -2489,22 +2497,21 @@ created. You can edit any Package available in Package Library section.</p>
 
 <ol>
   <li>For editing packages go to ProcessFlow Menu -&gt; Package Library section-&gt; My Packages.</li>
-  <li>Now to edit a  Package, click Edit option of the Contextual menu of that Package.  <br />
+  <li>Now to edit a  Package, click Edit option of the Contextual menu of that Package.
 <img src="\staticfiles\processflow\media\package-edit-view.png" alt="package-edit-view" /></li>
-  <li>This will open the <code class="language-plaintext highlighter-rouge">Edit Package</code> window.    <br />
+  <li>This will open the <code class="language-plaintext highlighter-rouge">Edit Package</code> window.<br />
 <img src="\staticfiles\processflow\media\package-edit.png" alt="package-edit" /></li>
-  <li>In the <code class="language-plaintext highlighter-rouge">Edit Package Details</code> window, here you will be able to edit the following fields    <br />
-(a) Package Name - Here you can edit the package name    <br />
-(b) Package Description - Here you can edit the Package Description    <br />
+  <li>In the <code class="language-plaintext highlighter-rouge">Edit Package Details</code> window, here you will be able to edit the following fields:
+(a) Package Name - Here you can edit the package name
+(b) Package Description - Here you can edit the Package Description
 (c) Package Documentation - Here you can edit the package documentation and all the associated functionality
 of the documentation.</li>
 </ol>
 
 <p>After doing the changes, the User will be able to save the changes by clicking on the Save button.
-If the user clicks on the Cancel button, the changes will not be saved.</p>
-
-<p><strong>Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.       <br />
-(b) Preview option is available in the editor to view the changes.    <br />
+If the user clicks on the Cancel button, the changes will not be saved.
+<strong>Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.
+(b) Preview option is available in the editor to view the changes.
 (c) In Edit mode, you will not be able to view or edit the Process Flow(s) present in a Package</strong></p>
 
 
@@ -4801,8 +4808,18 @@ If the user clicks on the Cancel button, the changes will not be saved.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
