@@ -1681,6 +1681,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/integration/company-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/company-add/" onclick="selectTab('/integration/company-add/', event);" title="Go to Company Add">Company Add</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
@@ -2398,9 +2404,29 @@ The Authentication fields for OAUTH 2.0 are:</p>
 <p class="notice--info"><strong>Protip:</strong> By default, <strong>SCOPE</strong> , <strong>Access Type</strong> , <strong>STATE</strong> is an optional field in AEC Agent, but for some applications providing the optional field can be mandatory, 
 you need to provide the SCOPE for those applications</p>
 
-<p>Here, we need to generate token which can be done by clicking <code class="language-plaintext highlighter-rouge">GENERATE TOKEN</code> button.</p>
+<ol>
+  <li>Here, we need to generate token which can be done by clicking <code class="language-plaintext highlighter-rouge">GENERATE TOKEN</code> button.</li>
+</ol>
 
 <p><img src="\staticfiles\connectors\media\technology-connector\restoauth2_5.PNG" alt="restoauth2_5" /></p>
+
+<ol>
+  <li>A custom browser opens for validating and generating token for your chosen application. (In this case, ZohoBooks is being validated.)</li>
+</ol>
+
+<p><img src="\staticfiles\connectors\media\technology-connector\custombrowser1.png" alt="custombrowse1" /></p>
+
+<ol>
+  <li>Provide your application credentials until the login page of <code class="language-plaintext highlighter-rouge">portal.appseconnect.com</code> opens.</li>
+</ol>
+
+<p><img src="\staticfiles\connectors\media\technology-connector\custombrowser2.png" alt="custombrowse2" /></p>
+
+<ol>
+  <li>Keeping the browser opened, validate your credentials on your On-Premise Agent by clicking on the VALIDATE button.</li>
+</ol>
+
+<p><img src="\staticfiles\connectors\media\technology-connector\custombrowser3.png" alt="custombrowser3" /></p>
 
 <ul>
   <li>The above validation process is done taking  the credentials of ZOHOBOOKS.</li>
@@ -4761,8 +4787,18 @@ integrate cloud application using the cloud agent.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

@@ -69,6 +69,8 @@ Select the process flows by enabling the checkboxes beside the process flow name
 
 Following the above process, you can successfully create a process flow package.
 
+**Note: Any changes made to the original process flow, the modifications will not reflect in the packaged versions. You need to create a new package for packaging the modified process flows.**
+
 ## Listing Packages:
 
 Once you have created your process flow Package, you can successfully view the package lists in the process flow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.

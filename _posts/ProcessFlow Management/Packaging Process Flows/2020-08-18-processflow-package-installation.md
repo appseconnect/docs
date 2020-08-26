@@ -107,6 +107,7 @@ Following the above process, you can successfully install the shared packages an
 
 **Note:**
 
+- Installation is mandatory to use packaged Process Flows.
 - All the node configurations and mapping done in process flow will be shared when sharing the package to other organisation. 
 - Modifications made in the process flows in source organisation _after the sharing_ , the changes will not reflect once the package is shared to an another organisation.
 - As Process flow doesn't stores any credentials, you will not have to worry about credentials vulnerability.

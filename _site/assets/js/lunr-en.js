@@ -2545,6 +2545,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Company Add from Magento2 to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 281
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5647,6 +5656,17 @@ var store = [
         "title": "APPSeCONNECT Glossary",
         "url": "/glossary/appseconnect-glossary/",
         "excerpt": "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Company Add from Magento2 to SAGE 300",
+        "url": "/integration/company-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
