@@ -1,0 +1,29 @@
+I"¥<p>APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of the module will help you with the How to Guides for Connecting External Sources, Deploy to Environments and configuring applications.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sections</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/api-management/connecting-to-a-data-source/">Connecting to External Sources</a></td>
+      <td>This will guide with the functionality of connecting on or more data sources with an API proxy.</td>
+    </tr>
+    <tr>
+      <td><a href="/api-management/deployments-and-environments/">Deploy to Environments</a></td>
+      <td>This section of the document will guide you with the steps of deploying your APIâ€™s to On-Premise Agent.</td>
+    </tr>
+    <tr>
+      <td><a href="/api-management/choosing-backend-apps/">/api-management/choosing-backend-apps/</a></td>
+      <td>API Proxies are API services that connects you to a remote data source or multiple data sources. This section will guide with the configurations related to the selection of applications.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="/api-management/steps-to-create-proxy-endpoint">To get started on how to create a proxy follow this article.</a></p>
+
+<p><a href="/api-management/steps-to-create-webhook-endpoint">If you want to create a Webhook follow this article.</a></p>
+:ET

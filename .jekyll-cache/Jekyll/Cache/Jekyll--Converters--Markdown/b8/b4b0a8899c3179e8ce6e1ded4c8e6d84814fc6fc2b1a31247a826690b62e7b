@@ -1,0 +1,22 @@
+I"ü<ul class="toc__menu">
+  <li><a href="#searching-applications">Searching Applications:</a></li>
+  <li><a href="#process-of-choosing-app">Process of Choosing App</a></li>
+  <li><a href="#create-application">Create Application</a>
+    <ul>
+      <li><a href="#a-create-custom-app">(a) Create Custom App</a></li>
+      <li><a href="#b-technology-app-creation">(b) Technology App Creation</a></li>
+      <li><a href="#viewing--editing-custom--technology-applications">Viewing &amp; Editing Custom &amp; Technology Applications:</a></li>
+      <li><a href="#understanding-schemaentity">Understanding Schema/Entity</a></li>
+      <li><a href="#understanding-schema-attributes">Understanding Schema Attributes</a></li>
+      <li><a href="#understanding-custom-attributes">Understanding Custom Attributes</a></li>
+      <li><a href="#understanding-actions">Understanding Actions</a></li>
+      <li><a href="#understanding-schemas-and-actions-of-an-application">Understanding Schemas and Actions of an Application</a></li>
+      <li><a href="#adapter">Adapter</a></li>
+      <li><a href="#extension">Extension</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#protocol">Protocol</a></li>
+      <li><a href="#delete">Delete</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

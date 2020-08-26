@@ -1,0 +1,67 @@
+I"‡<p>Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the users understand how the integration for the adding <strong>Shipments</strong> can be executed using a workflow from SAGE 300 to Shopify.</p>
+
+<h2 id="brief-description">Brief Description:</h2>
+
+<p>Before executing the sync process you need to create workflow for adding shipments from SAGE 300 - Shopify. The prerequisites for this integration is listed below:</p>
+
+<p>a. You need to successfully validate the applications for <a href="/connectors/shopify/">Shopify</a> &amp; <a href="/connectors/sage300/">SAGE 300</a></p>
+
+<p>b. The customer whose shipment shall be synced should be availble in both the application. <a href="">Click Here</a> for integrating customer add.</p>
+
+<p>c. The Product shall be available in the both the application. <a href="">Click here</a> to integrate IC Product from SAGE 300 to Shopify.</p>
+
+<p>d. The order must be present in both the application for whose shipment is generated. <a href="">Click Here</a> to integrate Sales Order from Shopify to SAGE 300.</p>
+
+<h3 id="prerequisites">Prerequisites:</h3>
+
+<ul>
+  <li>You need to <a href="/workflow/steps-to-choose-your-workflow/">Choose your Workflow</a> or you can <a href="/workflow/steps-to-create-your-first-workflow/">create/design a new workflow</a> as per your need.</li>
+</ul>
+
+<h3 id="steps-generate-shipment-for-the-order-synced-to-sage-300-from-shopify">Steps generate Shipment for the order synced to SAGE 300 from Shopify.</h3>
+
+<p><a href="http://help.sage300.com/en-us/2017/web/Subsystems/OE/Content/Transactions/ShipmentsAndInvoices/ShippingOrdersAndItems.htm">Click Here</a> to know more about the adding Shipments.</p>
+
+<p>Here, in this case the Shipment generated for the SAGE Order ID is <code class="language-plaintext highlighter-rouge">350465</code>.</p>
+
+<h2 id="lookup-mapping">Lookup Mapping:</h2>
+
+<p>For posting newly added quantity to Shopify from SAGE 300, you need to add Lookup for <code class="language-plaintext highlighter-rouge">Inventory Location</code>. For this integration, mapping lookups for inventory location is mandatory.</p>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\invupdate3.PNG" alt="shipadd3" /></p>
+
+<p><strong><em>Note:</em></strong> <em>After mapping changes is done, Reset Generate and Reset Publish the Touchpoint from the workflow panel. Refresh the Page and <a href="/workflow/deploying-and-executing/#publishing-a-workflow">Publish the workflow</a>. After Republishing, click on the <code class="language-plaintext highlighter-rouge">Update Configuration</code> button followed by <code class="language-plaintext highlighter-rouge">Update Lookup Tables</code> in the Agent.</em></p>
+
+<h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
+
+<ol>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</p>
+  </li>
+  <li>
+    <p>You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/deploying-and-executing/#executing-the-workflow">Click Here</a>.</p>
+  </li>
+</ol>
+
+<h2 id="integration-data-survey">Integration Data Survey:</h2>
+
+<p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>  from the node level of the workflow.</p>
+
+<h2 id="post-conditions">Post Conditions:</h2>
+<p>You can view the data sync in Shopify by navigating to  the <code class="language-plaintext highlighter-rouge">Order Details Page</code> of the customer. The order tag gets the <strong>Fulfilled</strong> status on successful <code class="language-plaintext highlighter-rouge">shipment</code> of all the items.</p>
+
+<p><strong>Note:</strong> If the shipment is synced for partial items and partial quantities, the order status will be as <code class="language-plaintext highlighter-rouge">Partially Fulfilled</code> even if the sync status is successful.</p>
+
+<h2 id="frequency-of-use">Frequency of Use:</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="limitations">Limitations:</h2>
+
+<p>On executing the sync process using the workflow for adding shipment to shopify from sage 300, only 100 data would be called in a single instance.</p>
+
+<p>Following the above procedures, you can successfully sync Shipments from SAGE 300 to SHopify.</p>
+:ET

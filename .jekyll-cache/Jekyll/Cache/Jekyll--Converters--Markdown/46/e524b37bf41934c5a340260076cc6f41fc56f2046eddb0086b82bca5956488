@@ -1,0 +1,44 @@
+I"¥<p><strong>Validate HTTP Header</strong> policy inspects each HTTP Request whether the HTTP Request contains a particular 
+Request Header and the corresponding Header value. If the incoming request
+does not match with the criteria set by the policy configuration then the request is immediately 
+rejected.</p>
+
+<h3 id="policy-statement">Policy Statement</h3>
+
+<p>Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
+Below are the list of configurations required for this policy.</p>
+
+<p><img src="/staticfiles/api-management/media/ValidateHTTPHeaderPolicy.png" alt="Validate H T T P Header Policy" /></p>
+
+<p>The rules and setup needs to be made accordingly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Is Mandatory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Header Name</td>
+      <td>Indicates the Header Name to inspect in each HTTP Request whether the header exists or not</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Header Value</td>
+      <td>Header value to be checked for the specified Header Name</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="policy-usage">Policy Usage</h3>
+
+<p>The policy can be applied only at <code class="language-plaintext highlighter-rouge">inbound</code> section.</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>Currently the policy can be applied at API Version Scope only.</p>
+:ET

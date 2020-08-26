@@ -1,0 +1,29 @@
+I"9<p>Transformation is one vital concept when it comes to integrating applications. Errors can make the Integration process go wrong and may also have redundant data. Therefore, its always feasible to have some tips and tricks when handling these vital concepts.
+This section of the document provides few tips and tricks which can be helpful in implementing 
+the Mapping Process.</p>
+
+<h1 id="tables-of-the-tips-and-tricks">Tables of the Tips and Tricks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tips and Tricks</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/transformation/handling-incremental-data/">Handling Incremental Data</a></td>
+      <td>This provides you the technique for reducing redundant data when implementing the integration</td>
+    </tr>
+    <tr>
+      <td><a href="/transformation/handling-dependent-data/">Handling Dependant Data</a></td>
+      <td>This document describes about Data dependency which is a concept that requires the data which are mutually dependent on one another to be kept in sync</td>
+    </tr>
+    <tr>
+      <td><a href="/transformation/using-library-methods/">Using Library methods/Appresource Function</a></td>
+      <td>This document describes about mapping the Library function when implementing the integration</td>
+    </tr>
+  </tbody>
+</table>
+:ET

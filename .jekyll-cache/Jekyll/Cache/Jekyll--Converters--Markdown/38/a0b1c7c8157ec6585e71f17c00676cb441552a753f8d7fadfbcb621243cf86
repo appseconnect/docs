@@ -1,0 +1,38 @@
+I"c	<p>Once you are shared with packages from other organisation, you need to install the packages before working with the process flows inside it.
+This document will enable you to install incoming packages from other organisation and execute the process flow inside it.</p>
+
+<h2 id="prerequisites">prerequisites</h2>
+
+<ul>
+  <li>You need to have valid credential to the portal.</li>
+  <li>You need to have packages shared with you from other organisation. For more details on how to share packages, <a href="/processflow/processflow-packaging/">click here</a>.</li>
+</ul>
+
+<h2 id="installing-packages">Installing Packages</h2>
+
+<p>1) Navigate to the Process Flow module, to view the <a href="/processflow/processflow-listing-page/">process flow listing</a> page.</p>
+
+<p>2) Expand the <strong>Package Library</strong> node to view the folder <strong>Shared With Me</strong>. The listing page of the <code class="language-plaintext highlighter-rouge">Shared with me</code> folder will be displayed along with the list of the packages that are shared with you from an another organisation.The following details will be availble in its listing page:</p>
+<ul>
+  <li><strong>Name</strong> - The package name will be displayed.</li>
+  <li><strong>Package Description</strong> - The package description will be displayed.</li>
+  <li><strong>Apps</strong> - The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.</li>
+  <li><strong>Actions</strong> - You can choose and perform the following functions when clicked on the ellipses. The following options will be available in its contextual menu: <strong>View</strong> , <strong>Install</strong> and <strong>Delete</strong></li>
+</ul>
+
+<p><img src="" alt="packageinstall1" /></p>
+
+<p>3) There are TWO ways to install the packages.</p>
+
+<ul>
+  <li><strong>Install under Actions column:</strong> 
+You can install the packages directly by clicking on the install button available in the contextual menu of actions column. You can view a <strong>loader</strong> that will denote you with the installation progress.</li>
+</ul>
+
+<p><img src="" alt="packageinstall2" /></p>
+
+<ul>
+  <li><strong>Install after View Packages:</strong>
+Click on the <code class="language-plaintext highlighter-rouge">View</code> button in the contextual menu of the actions column will</li>
+</ul>
+:ET

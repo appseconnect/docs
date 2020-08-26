@@ -1,0 +1,12 @@
+I"5<ul class="toc__menu">
+  <li><a href="#pre-requisites-for-viewing-snapshot">Pre-requisites for viewing Snapshot</a></li>
+  <li><a href="#steps-to-view-the-process-flow-snapshot">Steps to view the Process Flow Snapshot</a>
+    <ul>
+      <li><a href="#node-specific-snapshot-view">Node Specific Snapshot View</a></li>
+      <li><a href="#1-scenario-get-node">1. Scenario: Get Node</a></li>
+      <li><a href="#2-scenario-mapper-node">2.	Scenario: Mapper Node</a></li>
+      <li><a href="#3-scenario-post-node">3. Scenario: Post Node</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

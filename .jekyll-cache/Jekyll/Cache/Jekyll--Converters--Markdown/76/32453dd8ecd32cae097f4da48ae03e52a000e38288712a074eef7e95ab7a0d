@@ -1,0 +1,4 @@
+I"<p>APPSeCONNECT adapter development SDK allows one to implement and create user interface for credentials. In case of OnPremise 
+agent, you need to implement the user interface using XAML syntax, while for Cloud interface, a dynamic designer is 
+used to implement the credential UI.</p>
+:ET

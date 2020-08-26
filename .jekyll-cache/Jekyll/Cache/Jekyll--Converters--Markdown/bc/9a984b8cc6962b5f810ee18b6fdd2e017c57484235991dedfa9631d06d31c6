@@ -1,0 +1,37 @@
+I"²<p>Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes which you need to perform your daily activities. The workflow management screen will allow you to search, filter, create, edit workflows.</p>
+
+<p>By reading this document an implementer would be able to design the first processslow for an organization and will execute it from the web portal also.</p>
+
+<p>To know in details, go through the given sections:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Processflow Usage</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/processflow/designer-processflow/">Designer</a></td>
+      <td>This section enables the user to implement business scenarios by designing Process Flows</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/creating-processflow/">Create Processflow</a></td>
+      <td>This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/deploying-and-executing-processfloww/">Deploy &amp; Execute</a></td>
+      <td>Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/redeploying-processflow/">Redeploy</a></td>
+      <td>Redeploying processflow functionality allows you to re-deploy an existing Process Flows</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/snapshot-processflow/">Snapshot view</a></td>
+      <td>Snapshot in Process Flow gives complete overview of the transactions that was executed</td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,4 @@
+I"Ç<p>Appresource Functions are the functions in APPSeCONNECT that are written in the adapter (APPSeCONNECT supports calling external 
+functions written in C# inside the adapter) which is used for the data transformation from the source Application to the Destination 
+Application. <code class="language-plaintext highlighter-rouge">AppResources are library functions added to DLL</code>. This Appresource functions are coded to perform a definite task.</p>
+:ET

@@ -1,0 +1,54 @@
+I"›<p>Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was to share with other organisations. As we encourage the concept of Citizen Integrators, so package sharing is an idea concept of sharing process with one organisation to another.
+Sharing packages will not only save time, but will also reduce the efforts of creating, designing and mapping process flows that is already created in some other organisation.
+This document will enable you to initate sharing packages from one organisation to another.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>You need to have valid credential to the portal.</li>
+  <li>You need to have the Process Flows created. Steps to create new process flow is given <a href="/processflow/creating-processflow/">here</a></li>
+  <li>You should have the packages created on your organisation. Steps to create new packages is given <a href="/processflow/processflow-packaging/#creating-packages">here</a>.</li>
+  <li>The packages created will be listed on the <a href="/processflow/processflow-packaging/#listing-packages">package listing</a> page</li>
+</ul>
+
+<h2 id="steps-to-share-packages-to-organisations">Steps to Share Packages to Organisations</h2>
+
+<p>1) Navigate to the Process Flow module, to view the <a href="/processflow/processflow-listing-page/">process flow listing</a> page.</p>
+
+<p>2) Expand the <strong>Package Library</strong> node and click on <strong>My Packages</strong>. The <a href="/processflow/processflow-packaging/#listing-packages">package listing</a> page opens.</p>
+
+<p><img src="" alt="packageshare1" /></p>
+
+<p>3) Click on the <strong>Package</strong> drop-down on the package listing page. You will be able to view two options: <strong>CREATE</strong> and <strong>SHARE</strong>. Click on the Share button.</p>
+
+<p><img src="" alt="packageshare2" /></p>
+
+<p>4) The Package Sharing windows opens. The package sharing window consists of the two sections: <strong>Choose Package</strong> and <strong>Select Organisation</strong>.</p>
+
+<p><img src="" alt="packageshare3" /></p>
+
+<p>5) The Choose package window is divided mainly into two parts: Left Pane and Right Pane. The <code class="language-plaintext highlighter-rouge">Left Pane</code> will list all the folders under <strong>Package Library</strong>.
+The <code class="language-plaintext highlighter-rouge">Right Pane</code> will have two sections:</p>
+<ul>
+  <li><strong>List of Packages</strong> - You will listed with all the packages available on your organisation.</li>
+  <li><strong>Selected packages</strong> - This will list all the packages, selected for sharing</li>
+</ul>
+
+<p>5) On the Choose Package section, you will be listed with all the packages that are created on your organisation, under the <strong>List of Packages</strong> section. The following details will be present in the list of packages section.</p>
+
+<ul>
+  <li><strong>Name</strong> : The package name will be displayed.</li>
+  <li><strong>Description</strong> : The package description will be displayed.</li>
+  <li><strong>Apps used</strong> : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.</li>
+  <li><strong>Filter Icon</strong> : This will enable you to search packages based on the name as a keyword.</li>
+</ul>
+
+<p>Beside the package name, you will have checkboxes that will allow you to select the packages for sharing.</p>
+
+<p><img src="" alt="packageshare4" /></p>
+
+<p>6) Enabling the checkboxes, the packages selected will be displayed in the <strong>Selected Packages</strong> section on your right side.</p>
+
+<p><img src="" alt="packageshare5" /></p>
+
+:ET

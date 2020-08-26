@@ -1,0 +1,12 @@
+I"<ul class="toc__menu">
+  <li><a href="#use-case-name">Use Case Name</a></li>
+  <li><a href="#brief-description">Brief Description</a></li>
+  <li><a href="#actor">Actor</a></li>
+  <li><a href="#preconditions">Preconditions</a></li>
+  <li><a href="#basic-flow">Basic Flow</a></li>
+  <li><a href="#post-conditions">Post-conditions</a></li>
+  <li><a href="#exception-courses">Exception courses</a></li>
+  <li><a href="#frequency-of-use">Frequency of use</a></li>
+  <li><a href="#assumptions">Assumptions</a></li>
+</ul>
+:ET

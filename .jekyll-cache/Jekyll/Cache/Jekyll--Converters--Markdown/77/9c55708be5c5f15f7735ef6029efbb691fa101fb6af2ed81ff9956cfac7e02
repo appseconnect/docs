@@ -1,0 +1,4 @@
+I""<p>APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of the Process Flow or in any other Process Flows designed within your organisation
+Variables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, 
+instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.</p>
+:ET

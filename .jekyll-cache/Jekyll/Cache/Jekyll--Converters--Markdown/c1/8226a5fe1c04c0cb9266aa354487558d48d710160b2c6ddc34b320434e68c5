@@ -1,0 +1,97 @@
+I"<h2 id="use-case-name">Use Case Name</h2>
+
+<p>Enabling Tracking in transformation.</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p>Tracking is a feature in APPSeCONNECT which lets the user view and track all those elements (Child Elements under a parent attribute in XML) 
+in the Resync Bucket of the agent (Cloud &amp; OP) which gets synced. This is done by defining the tracking in the cloud portal against the 
+touchpoint for whose tracking, one needs to view.</p>
+
+<p>For Instance: The user wants to track the GENDER of all the data in the Resync Bucket of the Agent. For this, the Tracking Feature is made use which enables 
+user to view the corresponding results as required.</p>
+
+<h2 id="actors">Actors</h2>
+
+<p>Implementers, Developers, Partners.</p>
+
+<h2 id="preconditions">Preconditions</h2>
+
+<p>Organisation Creation &amp; Connection Creation.</p>
+
+<p><strong>Note: In case of Custom Apps Touchpoints is needed to be created first for implementing Tracking.</strong></p>
+
+<h2 id="basic-flow">Basic Flow</h2>
+
+<ol>
+  <li>Navigate to the touchpoint after login, for which the Tracking is to be done.</li>
+  <li>Click on the Transform button on the touchpoint you have selected. The user will now be able to view 
+ the Transform screen of that touchpoint.<br />
+<strong>Note: In this case the touchpoint Business Partner add is used for the connection Magento2 and SAP B1.</strong></li>
+  <li>Click on the option <code class="language-plaintext highlighter-rouge">ADD</code>. The tracking configuration window opens up.
+<img src="/staticfiles/Transformation/media/trackingdata1-new.png" alt="trackingdata1-new" /></li>
+</ol>
+
+<p><strong>Note: The user can even Delete all the configured tracked data by clicking on the DELETE ALL button.</strong></p>
+
+<ol>
+  <li>The three sections of the Tracking Data feature will be visible.
+    <ul>
+      <li><strong>Source Tree</strong>: Contains all the elements (Child Elements) for which the tracking is to be done.</li>
+      <li><strong>Tracking Details</strong>: This is the area where the Tracking is initiated. Tracking Details consists of the 
+field Header, Data Type, Expression Path, and a Check Box. 
+<img src="/staticfiles/Transformation/media/trackingdata2-new.png" alt="trackingdata2-new" /></li>
+    </ul>
+  </li>
+  <li>Expand the Customer node, in the <code class="language-plaintext highlighter-rouge">Source Tree</code> to get the view of all the elements whose 
+ tracking can be done. 
+<img src="/staticfiles/Transformation/media/trackingdata3-new.png" alt="trackingdata3-new" /></li>
+</ol>
+
+<p>The Tracking Details are having the following fields:</p>
+<ul>
+  <li>Header: It will display the column name of the Tracking Data in the Resync Bucket of the Touchpoint.</li>
+  <li>Data Type: - This field is to display the data type of the Tracking Data to be created.</li>
+  <li>Expression Path: - User can provide the mapping expression in this field. The output of this mapping expression will be displayed in the Tracking Data column in the Resync Bucket of the touchpoint.</li>
+  <li>Is Visible: - This option is for controlling the visibility of the Tracking Data in the Resync Bucket of the Touchpoint.</li>
+</ul>
+
+<ol>
+  <li>Clicking on any of the elements from the node, will automatically fill up the fields in the Tracking Section.</li>
+</ol>
+
+<p><strong>Note: By default, the Is Visible checkbox will be unchecked, the user needs to enable the checkbox for making it 
+appear in the agent</strong></p>
+
+<ol>
+  <li>Now Click SAVE, the following screen appears
+<img src="/staticfiles/Transformation/media/trackingdata4-new.png" alt="trackingdata4-new" /></li>
+</ol>
+
+<p><strong>Note: One can either SAVE the Tracking element or can select the SAVE and Close option.     <br />
+The Save and Close option will save that element and will close the Tracking window. 
+The SAVE option will provide you the opportunity to add multiple elements for tracking</strong></p>
+
+<p><strong>Note:In the similar Procedure elements can be added for tracking for different Touchpoints too</strong></p>
+
+<ol>
+  <li>The corresponding window shows the impact in the Resync bucket of the agent.
+<img src="/staticfiles/Transformation/media/trackingdata5-new.png" alt="trackingdata5-new" /></li>
+</ol>
+
+<p><strong>Note: Currently, tracking data is reflected only in the OP agent and the Cloud Agent. Workflow Snapshot doesnot 
+reflect the Tracking Feature</strong></p>
+
+<h2 id="post-conditions">Post-Conditions</h2>
+<p>The user can view the successful Tracking of the touchpoint for the connection Magento2 and SAP Business One. in the resync bucket of the agent.</p>
+
+<h2 id="exception-courses">Exception Courses</h2>
+
+<p>NA</p>
+
+<h2 id="frequency-of-use">Frequency of Use</h2>
+<p>The user can implement tracking when required for any touchpoint.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+<p>Not Applicable</p>
+:ET

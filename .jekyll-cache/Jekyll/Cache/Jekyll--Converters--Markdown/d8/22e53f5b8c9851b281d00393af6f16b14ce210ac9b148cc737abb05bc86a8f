@@ -1,0 +1,12 @@
+I"R<ul class="toc__menu">
+  <li><a href="#understanding-action-filters">Understanding Action Filters</a></li>
+  <li><a href="#enabling-query-options">Enabling Query Options</a></li>
+  <li><a href="#pre-requisites-for-assigning-parameter-to-action-filter">Pre-requisites for Assigning Parameter to Action Filter</a></li>
+  <li><a href="#steps-to-define-static-and-dynamic-criterias-for-an-api">Steps to define Static and dynamic criterias for an API</a></li>
+  <li><a href="#using-action-filter--action-parameters-for-get-operation">Using Action Filter &amp; Action Parameters for GET operation</a></li>
+  <li><a href="#using-action-parameter-for-skip-and-orderby-for-get-operation">Using Action Parameter for SKIP and OrderBy for GET Operation</a></li>
+  <li><a href="#using-action-parameters-for-put-operation">Using Action Parameters for PUT Operation</a></li>
+  <li><a href="#using-action-parameter-for-the-post-operation">Using Action Parameter for the POST Operation</a></li>
+  <li><a href="#using-action-parameter-for-the-delete-operation">Using Action Parameter for the DELETE Operation</a></li>
+</ul>
+:ET

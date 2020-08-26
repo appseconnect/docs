@@ -1,0 +1,23 @@
+I"Ø<p>Behind every application integration, there is a business logic. APPSeCONNECT stores this integration 
+logic in the form of data. Attribute mappings form the main part of transforming data from one format 
+to another format.</p>
+
+<p>In the following topics, we will guide you through the process of different types of mapping and how they 
+are important in performing tasks such as customizations and alterations with the change in business requirement.</p>
+
+<p>Few more things to know before doing attribute mapping and they are given below:</p>
+
+<ul>
+  <li>
+    <p><a href="/transformation/understanding-xml-and-xpath/">Undertanding XML &amp; XPATH</a></p>
+  </li>
+  <li>
+    <p><a href="/transformation/working-with-schemas-action-filter/">Working with Schema Attribute &amp; Action</a></p>
+  </li>
+  <li>
+    <p><a href="/transformation/types-of-mapping/">Types of Mapping</a></p>
+  </li>
+</ul>
+
+<p>To understand the process of attribute mapping, click <a href="">here</a></p>
+:ET

@@ -1,0 +1,16 @@
+I"Å<h3 id="what-is-get-node">What is Get Node?</h3>
+
+<p><code class="language-plaintext highlighter-rouge">GET</code> node is used for getting data from an application by using the API provided by the application. When we drag a <code class="language-plaintext highlighter-rouge">GET</code> node in the workflow we need to select a touchpoint. For example we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP). If we add a <code class="language-plaintext highlighter-rouge">GET</code> node in the workflow based on this touchpoint then <code class="language-plaintext highlighter-rouge">GET</code> node will fetch data from Shopify based on the action criteria defined in that touchpoint.</p>
+
+<h3 id="working-principle">Working Principle</h3>
+
+<p><code class="language-plaintext highlighter-rouge">GET</code> node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data from that particular Application is generated 
+and responded back to the application workspace.</p>
+
+<p>The highlighted node with red one is an implementation of <code class="language-plaintext highlighter-rouge">GET</code> node.<br />
+<img src="/staticfiles/workflow-management/media/GetNode/GetNode.png" alt="GetNode" /><br />
+<strong>Note: On clicking the get node, the <code class="language-plaintext highlighter-rouge">filter</code> button appears. Clicking on it, will open the Action filter window.</strong>  <br />
+<img src="/staticfiles/workflow-management/media/GetNode/GetNode1.png" alt="GetNode1" />  <br />
+Below picture depicts the action filter based on which action of <code class="language-plaintext highlighter-rouge">GET</code> node will be performed.Depending on APP the filter structure may changed.
+<img src="/staticfiles/workflow-management/media/GetNode/ActionFilter.png" alt="Action Filter" /></p>
+:ET

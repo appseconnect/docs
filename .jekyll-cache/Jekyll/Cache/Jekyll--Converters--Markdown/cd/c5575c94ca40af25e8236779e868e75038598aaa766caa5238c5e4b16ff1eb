@@ -1,0 +1,143 @@
+I"w(<p>Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, 
+credentials need to be provided for validating the agent. Here you will find the detailed description on 
+how to configure the agents for the application of WooCommerce, Troubleshooting issues and the attributes and action.</p>
+
+<p>WooCommerce is a REST Application which supports both the BASIC &amp; OAuth 1.0 authentication. The Adapter of the application WooCommerce
+provides the leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating
+the credential of the application WooCommerce.</p>
+
+<h1 id="pre-requisites-for-woocommerce-configuration">Pre-requisites for WooCommerce Configuration</h1>
+
+<ol>
+  <li>Valid APPSeCONNECT Portal credentials.</li>
+  <li>Select the Application WooCommerce in the <a href="/getting%20started/configurations/#process-of-choosing-app">APP</a> section.</li>
+  <li><a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Create a connection</a> for WooCommerce.</li>
+  <li>Publish a Touchpoint Update Adapters and Update Configuration in the agent.</li>
+</ol>
+
+<p><strong>Note: Touchpoints are needed to be created if there are no pre-packaged touchpoints.</strong></p>
+
+<h2 id="configuring-the-woocommerce-adapter">Configuring the WooCommerce Adapter</h2>
+
+<ol>
+  <li>In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce  <br />
+   <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter1.png" alt="woocommerce-adapter1" /></li>
+  <li>On clicking the + button, the credential panel opens for the application WooCommerce.  <br />
+   <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter2.png" alt="woocommerce-adapter2" /></li>
+  <li>The Base URL Endpoint has 2 options in the drop-down.<br />
+a.	/wp-json/wc/ - This is the newer version of the WooCommerce that support the    WordPress platform for WooCommerce. 
+The version for this WooCommerce version should be &gt;=2.6<br />
+b.	/wc-api/ - This endpoint is for the older version of the WooCommerce platform. If the user platform is based on the older version, this end point is needed to be selected for agent validation.
+The version for this WooCommerce version should be &lt;2.6</li>
+  <li>The API Version is the WooCommerce API Version. The user can have its WC Version by navigating to WooCommerce &gt; Status &gt; WooCommerce Version.
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter3.png" alt="woocommerce-adapter3" />
+<strong>Note: For more details about WC API versions, <a href="https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#introduction">click here</a></strong></li>
+  <li>The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.  <br />
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter4.png" alt="woocommerce-adapter4" /></li>
+  <li>The Base URL is the WooCommerce Base URL. For Ex:http://templatebar.com/Individual/abcd/woocommerce<br />
+<strong>Note: If the URL has HTTP, the authentication OAuth 1.0 is supported and if the URL has HTTPS, the BASIC Authentication is supported. 
+For both authentication process, the User Interface remains the same.</strong></li>
+  <li>The API Key and the API Secret is generated from the WooCommerce platform. Navigate to WooCommerce &gt; Settings &gt; Advanced &gt; REST API &gt; ADD Key 
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter5.png" alt="woocommerce-adapter5" /></li>
+  <li>Provide the details in the field provided in the WC platform and click on the Generate API Key Button.</li>
+</ol>
+
+<p>a.	Description: This is the field for API Description.<br />
+b.	User: This field is for specifying the User Type. The user should be as ADMIN <br />
+c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.  <br />
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png" alt="woocommerce-adapter6" /></p>
+<ol>
+  <li>Input the generated API Key and the API Secret in the Agent.  <br />
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png" alt="woocommerce-adapter7" /><br />
+<strong>Note: The Consumer Key is the API Key and the Consumer Secret is the API Secret.</strong></li>
+  <li>Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.    <br />
+<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter8.png" alt="woocommerce-adapter8" /></li>
+</ol>
+
+<p>Following these steps, ends the process for validating agent for the application WooCommerce.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p><strong>ISSUE 1:  If the Source Application Not Found</strong>
+Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated, and if touchpoints do not sync, this basic issue
+resolves after removing the Temp and Cache files from the portal and from your system. Therefore, after clearing all this publish the touchpoints again along with Update Configuration on the agent.
+For E.g. If the Source Application Not Found in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
+
+<p><strong>ISSUE 2: Plugin Installation Issue</strong></p>
+
+<p>On Syncing Customer Add touchpoint from WooCommerce to any destination application, it is noted that only 
+First 10 customers created, successfully synced, but it fails or shows no result in the resync bucket 
+when the 11th customer is synced.</p>
+
+<p>This is due to the plugin that might not have been installed. The process of uploading the plugin is provided 
+in the prerequisite section of this page.</p>
+
+<p><strong>Note: It is the feature in WooCommerce that without the AEC plugin, more than 10 customers will not sync</strong></p>
+
+<h2 id="attributes-and-actions">Attributes and Actions</h2>
+
+<p>While defining a connect to an API endpoint in WooCommerce, you require clear understanding about the data requirements 
+and endpoint configurations. You can refer to this document to find all the endpoint details of your WooCommerce installation.</p>
+
+<p>To define the endpoint in APPSeCONNECT, you need Actions and Entities. Actions are specifically targeted for an endpoint 
+while schema is the data needed to execute the API. Here, is the list of some of the pre-packaged API actions defined 
+for you which you can easily plug and play while doing your integrations.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Action</th>
+      <th>Action Type</th>
+      <th>Schema</th>
+      <th>UI Path</th>
+      <th>API Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>customers</td>
+      <td>Customers</td>
+      <td>GET</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=61f33b9c-5087-4481-8e86-a8155be71c51&amp;entityActionId=dde24ee9-0872-48f6-8593-8ca9ee6034f7&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51">Customers</a></td>
+      <td><a href="https://learnwoo.com/woocommerce-create-new-user-account/">Fetch customers from WooCommerce and post it to the destination Application</a></td>
+      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#retrieve-a-customer">customers</a></td>
+    </tr>
+    <tr>
+      <td>orders</td>
+      <td>Orders</td>
+      <td>GET</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&amp;entityActionId=b50f33bd-7843-4e5d-a7e2-07ec2f696d46&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Orders</a></td>
+      <td><a href="https://docs.woocommerce.com/document/managing-orders/">Fetch the order from WooCommerce and post it to the destination Application</a></td>
+      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#retrieve-an-order">orders</a></td>
+    </tr>
+    <tr>
+      <td>orders</td>
+      <td>ORDERS</td>
+      <td>POST</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&amp;entityActionId=214fbbcb-91ab-417d-b576-f454517aee41&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Orders</a></td>
+      <td>Post Invoices to WooCommerce from any Source Application</td>
+      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#create-an-order">orders</a></td>
+    </tr>
+    <tr>
+      <td>products/productid</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=fcb096e1-4372-4aaf-a24a-29a4a174d4a4&amp;entityActionId=9991a38f-2b00-4c4c-8ede-41febe22aac1&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Products</a></td>
+      <td>PUT</td>
+      <td>Products</td>
+      <td>Update Inventory in WooCommerce from Source Application</td>
+      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#update-a-product">products/productid</a></td>
+    </tr>
+    <tr>
+      <td>products</td>
+      <td>Products</td>
+      <td>POST</td>
+      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=fcb096e1-4372-4aaf-a24a-29a4a174d4a4&amp;entityActionId=3ccaef9e-d9f0-41d0-ac2b-3f71ea9ede27&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Products</a></td>
+      <td>Post products in WooCommerce from any Source Application</td>
+      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#create-a-product">products</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="notice--info"><strong>Protip:</strong> Customers and Orders can be created and placed from the Front-End also. For Placing orders from front end, visit the E-Commerce store and follow the generic steps for placing orders and creating customers.
+this one.</p>
+:ET

@@ -1,0 +1,13 @@
+I"H<p>APPSeCONNECT has its own set of vocabulary or syntax, functions that help its users to customize the pre-defined touchpoints as per the business requirement.</p>
+
+<p>This following section covers the basic syntaxes and the generic functions along with the expressions and examples that should be adhered to while manipulating the touchpoint:</p>
+
+<ol>
+  <li>Basic Syntax &amp; Generic Functions in APPSeCONNECT</li>
+  <li>File Structures (Input, Transformed, Output XML) after applying the syntaxes and generic function.</li>
+</ol>
+
+<p><strong>Note: File Structure will help you in understanding the kind of input or real expression that you can supply 
+for mapping, and transformation you can expect from the expression. Usage of the specific generic function, 
+as defined,  depends on the application you are integrating.</strong></p>
+:ET

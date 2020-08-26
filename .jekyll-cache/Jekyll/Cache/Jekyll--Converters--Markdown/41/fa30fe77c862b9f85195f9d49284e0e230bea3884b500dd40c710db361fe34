@@ -1,0 +1,8 @@
+I"4<p>Data dependency is a concept which requires the data which are mutually dependent on one another to be kept in sync. 
+As dependent data is always required to be transferred during the primary data synchronization, these data is somewhat
+ inseparable to make any meaningful data on the business application. For instance, let us suppose, a reference of one
+ particular data is present inside another process, such that you need the data to be available in first place to complete
+ this operation, in such case, we manage the data synchronization so that the dependent data is synched before doing
+ the dependent data sync. While defining business process integration, you need to identify dependencies between APIs
+ and processes correctly to create workflow such that the data between application can feely flow.</p>
+:ET

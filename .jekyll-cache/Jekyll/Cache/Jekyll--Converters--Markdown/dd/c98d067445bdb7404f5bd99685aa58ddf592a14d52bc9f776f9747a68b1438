@@ -1,0 +1,84 @@
+I"u<h2 id="how-to-add-credentials-for-cloud-integration">How to add credentials for Cloud Integration:</h2>
+
+<p>Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate 
+and adapt with the AEC Portal. This Document provides you the detailed process of validating a 
+OLEDB database application in the APPSeCONNECT Cloud Portal.</p>
+
+<ol>
+  <li>Go to the APP module of the AEC Portal. Click on the button beside the OLEDB Application name
+ which you have created.
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud.png" alt="Oledb-Cloud" /></li>
+  <li>Click on the credential Button.</li>
+  <li>The Credential Page opens up. Click on the button to expand the node and then Click <code class="language-plaintext highlighter-rouge">ADD NEW CREDENTIAL</code>.
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential.png" alt="Oledb-Cloud-Credential" /></li>
+</ol>
+
+<p><strong>Note:</strong> If you don’t have  a cloud environment created on your organisation, You will be getting this message <strong><code class="language-plaintext highlighter-rouge">Please create an cloud environment to Grant the credentials</code></strong> on clicking the <strong>Add new Credential</strong> button. To know more about creating Cloud Environment, 
+<a href="/deployment/Environment-Management/#adding-cloud-environment">Click Here</a></p>
+
+<ol>
+  <li>Enter the Credential Name, Data Provider and the Connection String. 
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input.png" alt="Oledb-Cloud-Credential-Input" /></li>
+  <li>Credential string is needed to be provided in this format always. 
+For instance: Provider=SQL<strong>**;Password=abcd</strong><strong>;Persist Security Info=True;User ID=salogin;Initial Catalog=jim;Data Source=SQL-SRV1</strong>***
+<img src="/staticfiles/connectors/media/technology-connector/Oledb-Cloud-Credential-Input2.png" alt="Oledb-Cloud-Credential-Input2" /></li>
+</ol>
+
+<p>Detailed description of the credential string is given below:</p>
+
+<ul>
+  <li>Provider - This is your database server provider.</li>
+  <li>Password - The password is of the database server</li>
+  <li>Persists Security Info - This is the authentication info displayed on enabling the password for saving.</li>
+  <li>UserID - The Username or the UserID for the database server.</li>
+  <li>Initial Catalog - It is the database name on the selected server.</li>
+  <li>DataSource - This is the name of the Database Server.</li>
+</ul>
+
+<p>Input all the details &amp; Click SAVE.</p>
+
+<p><strong>Note:</strong> Data Provider is the Database Service Provider.</p>
+
+<h2 id="how-to-add-credential-for-on-premise-integration">How to add credential for On-premise integration</h2>
+
+<p>Generic OLEDB Adapter is a software which provides OLEDB applications a leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating a OLEDB database application in the APPSeCONNECT OP Agent.</p>
+
+<ol>
+  <li>In the app config panel, configure the OLEDB App Configuration Process.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP.png" alt="OledbAdapter-OP" /></li>
+  <li>The OLEDB configuration window, consists of click to Configure and connection String.</li>
+  <li>Select click to configure. Select your OLE Database provider.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-DataLink.png" alt="OledbAdapter-OP-DataLink" /></li>
+  <li>The Data link Property Window appears.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-DataLink2.png" alt="OledbAdapter-OP-DataLink2" /></li>
+  <li>Select or enter the Server Name from the dropdown option.
+    <ul>
+      <li>Provide the Username and Password of the database server. Apply the Allow saving password checkbox.</li>
+      <li>Select the database, from the dropdown option, present on that Server.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-DataLink3.png" alt="OledbAdapter-OP-DataLink3" /></li>
+    </ul>
+  </li>
+  <li>Click on Test Connection. A success message pops up on successful connection.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-TestConnectionSuccess.png" alt="OledbAdapter-OP-TestConnectionSuccess" /></li>
+  <li>On successful connection, the connection string field on the App Configuration Window gets auto-generated.
+The Connection string comprises of the following elements.</li>
+</ol>
+
+<ul>
+  <li>Provider - This is your database server provider.</li>
+  <li>Password - The password is of the database server</li>
+  <li>Persists Security Info - This is the authentication info displayed on enabling the password for saving.</li>
+  <li>UserID - The Username or the UserID for the database server.</li>
+  <li>Initial Catalog - It is the database name on the selected server.</li>
+  <li>DataSource - This is the name of the Database Server.<br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString.png" alt="OledbAdapter-OP-ConnectionString" /><br />
+Click on Validate and Save.  <br />
+<img src="/staticfiles/connectors/media/technology-connector/OledbAdapter-OP-ConnectionString2.png" alt="OledbAdapter-OP-ConnectionString2" /></li>
+</ul>
+
+<p class="notice--info"><strong>Protip:</strong> Removing or erasing the generated connection string enables the click to configure button</p>
+
+<p class="notice--info"><strong>Protip:</strong> It is mandatory to apply the allow saving password checkbox, else it will not allow login to the database which will cause failure while 
+Testing the Connection and Validation</p>
+
+:ET

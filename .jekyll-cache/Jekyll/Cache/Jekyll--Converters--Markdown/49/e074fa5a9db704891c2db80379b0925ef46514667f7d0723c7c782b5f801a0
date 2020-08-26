@@ -1,0 +1,184 @@
+I"*X<p>Adapter supports a number of storages which you can make use of to perform various tasks. For an adapter developer,
+it is sometimes becoming important to store mapping or related data inside the application so as to ensure the future 
+data transfer executes smoothly. Some store transactional mapping data which is used to validate duplicate data, while 
+some store operational data which are required very often to execute individual integration points. Some data are required 
+for each transactional validation while some are used to gain performance. In this article we will 
+understand how once can make use of APPSeCONNECT transactional store to store/retrieve data.</p>
+
+<h2 id="integration-storage">Integration Storage</h2>
+
+<p>Integration storages are sandboxed storage points which are normally key-value collections which are loaded 
+for an integration point only. Hence integration storage data are separate for each executions.</p>
+
+<p>These storages are very fast, in-memory and also sandboxed to a particular integration point.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">// To Store a data</span>
+ <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="nf">SetData</span><span class="p">(</span><span class="s">"StorageKey"</span><span class="p">,</span> <span class="k">value</span><span class="p">);</span>
+ <span class="c1">// To retrieve the same data</span>
+ <span class="kt">var</span> <span class="n">data</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="nf">GetData</span><span class="p">(</span><span class="s">"StorageKey"</span><span class="p">);</span>
+</code></pre></div></div>
+<p>In the above code, you are storing a string value for a particular key namely <code class="language-plaintext highlighter-rouge">StorageKey</code>, the data of which can 
+be retrieved using <code class="language-plaintext highlighter-rouge">GetData</code> method again. The <code class="language-plaintext highlighter-rouge">_context</code>  represents an instance of <code class="language-plaintext highlighter-rouge">ApplicationContext</code> which one
+can get from <code class="language-plaintext highlighter-rouge">Initialize</code> method of <code class="language-plaintext highlighter-rouge">IAdapter</code> or <code class="language-plaintext highlighter-rouge">IAppResource</code> implementation.</p>
+
+<p>The integration storage are best to store incremental or transaction related data that is atomic to a particular 
+transaction only and you are sure those data is not needed from any other integration point.</p>
+
+<h2 id="credential-storage">Credential storage</h2>
+
+<p>A special storage location is exposed to the adapter developer which lets the developer store sensitive information
+from adapter. The storage is once per application, so you need to be super careful on storing any value. Ideally, the 
+credential storage is mapped to an individual authentication credential data, and you should never use this data 
+for transactional storage purposes.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// To Store a data</span>
+<span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">CredentialStore</span><span class="p">.</span><span class="n">SaveConnectionDetails</span><span class="p">&lt;</span><span class="n">Model</span><span class="p">&gt;(</span><span class="n">data</span><span class="p">);</span>
+<span class="c1">// To retrieve the same data</span>
+<span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">CredentialStore</span><span class="p">.</span><span class="n">GetConnectionDetails</span><span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;();</span>
+</code></pre></div></div>
+
+<h2 id="database-storage">Database Storage</h2>
+
+<p>Sometimes you want to share the information between integration points and the data stored through adapter 
+you want them as reference data for future transactions. In such cases, Transactional storage comes very handy.</p>
+
+<p>To deal with Transactional store, you first need to consider two things:</p>
+
+<ul>
+  <li>Creating the Data objects</li>
+  <li>Maintaining data for the objects</li>
+</ul>
+
+<h3 id="creating-the-data-objects">Creating the Data objects</h3>
+
+<p>The adapter API requires a model to create an object on transactional storage. Let us take an example on how you can create a data model.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">/// &lt;summary&gt;</span>
+<span class="c1">/// Generate table based on rows defined here</span>
+<span class="c1">/// &lt;/summary&gt;</span>
+<span class="p">[</span><span class="nf">Table</span><span class="p">(</span><span class="n">Name</span> <span class="p">=</span> <span class="s">"SyncInfo"</span><span class="p">)]</span> <span class="c1">// represents Table name</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SyncInfoDataTable</span> <span class="p">:</span> <span class="n">ObjectBase</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="nf">Column</span><span class="p">(</span><span class="n">Name</span> <span class="p">=</span> <span class="s">"Id"</span><span class="p">,</span> <span class="n">IsPrimaryKey</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span> <span class="n">Type</span> <span class="p">=</span> <span class="n">DbType</span><span class="p">.</span><span class="n">String</span><span class="p">,</span> <span class="n">Length</span> <span class="p">=</span> <span class="m">100</span><span class="p">)]</span> <span class="c1">//represents columns</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">[</span><span class="nf">Column</span><span class="p">(</span><span class="n">CanAutoIncrement</span> <span class="p">=</span><span class="k">true</span><span class="p">,</span> <span class="n">DefaultValue</span> <span class="p">=</span><span class="s">"&lt;-Null-&gt;"</span><span class="p">,</span><span class="n">IsNullAllowed</span> <span class="p">=</span><span class="k">true</span><span class="p">,</span> <span class="n">Name</span> <span class="p">=</span><span class="s">"Value"</span><span class="p">,</span> <span class="n">Type</span> <span class="p">=</span> <span class="n">DbType</span><span class="p">.</span><span class="n">String</span><span class="p">)]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ValueProperty</span><span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The model class represents one single row of a Table. First of all, to define a model, you must Inherit it from <code class="language-plaintext highlighter-rouge">ObjectBase</code>.</p>
+
+<p>The first thing to look at is the name of the Table. You can see we have tried to create a table named SyncInfo. The <a href="http://isdn.appseconnect.com/html/D1DCF68E.htm">TableAttribute</a> is used to annotate a model class with table attributes. 
+You can specify <a href="http://isdn.appseconnect.com/html/5F039121.htm">Name</a> and <a href="http://isdn.appseconnect.com/html/53EDA623.htm">DataLimit</a> for a table. The DataLimit property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest.</p>
+
+<p>The Properties on the other hand are annotated using <a href="http://isdn.appseconnect.com/html/72A02280.htm"><code class="language-plaintext highlighter-rouge">ColumnAttribute</code></a>. The Name of the Column needs to be unique for each table and there must be its data type defined. 
+You can also specify the <a href="http://isdn.appseconnect.com/html/824D69BC.htm">DefaultValue</a> for each column, such that if no data is passed in, the property will get a Default value. You can also specify various attributes to the property.
+Here are some of the important properties of ColumnAttribute.</p>
+
+<ul>
+  <li><a href="http://isdn.appseconnect.com/html/BDF860A8.htm">CanAutoIncrement</a> : Allows the property to auto-increment.</li>
+  <li><a href="http://isdn.appseconnect.com/html/824D69BC.htm">DefaultValue</a> : Specifies the default value of the column when null is passed to it.</li>
+  <li><a href="http://isdn.appseconnect.com/html/43FDF167.htm">IsNullAllowed</a> : Checks whether the field allows null.</li>
+  <li><a href="http://isdn.appseconnect.com/html/A95EDEAF.htm">IsPrimaryKey</a> : Unique identifier of a particular record.</li>
+  <li><a href="http://isdn.appseconnect.com/html/9F9E51AB.htm">IsUnique</a> : Unique value</li>
+  <li><a href="http://isdn.appseconnect.com/html/D88BF61A.htm">Length</a> : Restricts the number of characters allowed.</li>
+  <li><a href="http://isdn.appseconnect.com/html/D77F5206.htm">Type</a> : DataType of the field specified as <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype">DbType</a></li>
+  <li><a href="http://isdn.appseconnect.com/html/D4EAFC00.htm">FractionLength</a> : Precision for a particular fractional data.</li>
+</ul>
+
+<h3 id="maintaining-data-for-the-objects">Maintaining data for the objects</h3>
+
+<p>To create or update or even delete the data, you can use the existing APIs on SDK. Let us look at the code below :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">utils</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">;</span>
+<span class="kt">var</span> <span class="n">storagePlugin</span> <span class="p">=</span> <span class="n">utils</span><span class="p">.</span><span class="n">TransactionalDataStore</span><span class="p">.</span><span class="n">ConnectionManager</span><span class="p">;</span>
+<span class="c1">//To create a table</span>
+<span class="kt">var</span> <span class="n">inputParamAecSyncData</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DatabaseInputParameter</span><span class="p">&lt;</span><span class="n">SyncInfoDataTable</span><span class="p">&gt;(</span><span class="n">DatabaseOperation</span><span class="p">.</span><span class="n">CREATETABLE</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">Object</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">SyncInfoDataTable</span><span class="p">()</span>
+<span class="p">};</span>
+<span class="kt">var</span> <span class="n">creationResult</span> <span class="p">=</span> <span class="n">storagePlugin</span><span class="p">.</span><span class="n">Execute</span><span class="p">&lt;</span><span class="n">DatabaseInputParameter</span><span class="p">&lt;</span><span class="n">SyncInfoDataTable</span><span class="p">&gt;,</span> <span class="n">SyncInfoDataTable</span><span class="p">&gt;(</span><span class="n">inputParamAecSyncData</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="n">creationResult</span><span class="p">.</span><span class="n">Status</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">//Successfully created table.</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the above code, we have executed the transaction to create a table based on a model. We need to ensure that the table is created only once, so it is recommended to CreateTable inside Credential object storage event or
+inside <code class="language-plaintext highlighter-rouge">Initialize</code> block of Adapter.</p>
+
+<p>Similar to this, you can use any operation based on the object model. For instance, if you require to store a data, you can use the following code :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kt">var</span> <span class="n">data_syncData</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DatabaseInputParameter</span><span class="p">&lt;</span><span class="n">SyncInfoDataTable</span><span class="p">&gt;(</span><span class="n">DatabaseOperation</span><span class="p">.</span><span class="n">INSERT</span><span class="p">);</span>
+ <span class="kt">var</span> <span class="n">syncInfo</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">SyncInfoDataTable</span><span class="p">()</span>
+ <span class="p">{</span>
+   <span class="n">ValueProperty</span> <span class="p">=</span> <span class="s">"DefaultText"</span>
+ <span class="p">};</span>
+ <span class="kt">var</span> <span class="n">insertResult</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">TransactionalDataStore</span><span class="p">.</span><span class="n">ConnectionManager</span><span class="p">.</span><span class="n">Execute</span><span class="p">&lt;</span><span class="n">DatabaseInputParameter</span><span class="p">&lt;</span><span class="n">SyncInfoDataTable</span><span class="p">&gt;,</span> <span class="n">SyncInfoDataTable</span><span class="p">&gt;(</span><span class="n">syncInfo</span><span class="p">);</span>
+ <span class="k">if</span><span class="p">(</span><span class="n">insertResult</span><span class="p">.</span><span class="n">Status</span><span class="p">)</span>
+ <span class="p">{</span>
+    <span class="c1">// Successfully inserted data</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+<p>Similarly, you can use various operations like Update, Delete, Select, Truncate etc.</p>
+
+<p>To select a data from a particular table, you can specify various filters. Let us look into how to do that.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kt">var</span> <span class="n">data_prodData</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DatabaseInputParameter</span><span class="p">&lt;</span><span class="n">AECPRODUCTDATA</span><span class="p">&gt;(</span><span class="n">DatabaseOperation</span><span class="p">.</span><span class="n">SELECT</span><span class="p">);</span>
+<span class="n">data_prodData</span><span class="p">.</span><span class="nf">AddFilters</span><span class="p">(</span><span class="k">new</span> <span class="n">DatabaseFilter</span><span class="p">[]</span>
+    <span class="p">{</span>
+        <span class="k">new</span> <span class="nf">DatabaseFilter</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">DbType</span><span class="p">.</span><span class="n">String</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">FieldName</span> <span class="p">=</span> <span class="n">fieldName</span><span class="p">,</span>
+            <span class="n">Operator</span> <span class="p">=</span> <span class="n">OperatorType</span><span class="p">.</span><span class="n">EQUALS</span><span class="p">,</span>
+            <span class="n">Value</span> <span class="p">=</span> <span class="n">fieldValue</span>
+        <span class="p">},</span>
+        <span class="k">new</span> <span class="nf">DatabaseFilter</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">DbType</span><span class="p">.</span><span class="n">String</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Logical</span> <span class="p">=</span> <span class="n">LogicalOperatorType</span><span class="p">.</span><span class="n">AND</span><span class="p">,</span>
+            <span class="n">FieldName</span> <span class="p">=</span> <span class="s">"ConnectionId"</span><span class="p">,</span>
+            <span class="n">Operator</span> <span class="p">=</span> <span class="n">OperatorType</span><span class="p">.</span><span class="n">EQUALS</span><span class="p">,</span>
+            <span class="n">Value</span> <span class="p">=</span> <span class="n">connectionId</span><span class="p">,</span>
+            <span class="n">GroupStart</span> <span class="p">=</span> <span class="k">true</span>
+        <span class="p">},</span>
+        <span class="k">new</span> <span class="nf">DatabaseFilter</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">DbType</span><span class="p">.</span><span class="n">String</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Logical</span> <span class="p">=</span> <span class="n">LogicalOperatorType</span><span class="p">.</span><span class="n">AND</span><span class="p">,</span>
+            <span class="n">FieldName</span> <span class="p">=</span> <span class="s">"ConnectionId"</span><span class="p">,</span>
+            <span class="n">Operator</span> <span class="p">=</span> <span class="n">OperatorType</span><span class="p">.</span><span class="n">EQUALS</span><span class="p">,</span>
+            <span class="n">Value</span> <span class="p">=</span> <span class="n">reverseConnectionId</span><span class="p">,</span>
+            <span class="n">GroupEnd</span> <span class="p">=</span> <span class="k">true</span>
+        <span class="p">},</span>
+        <span class="k">new</span> <span class="nf">DatabaseFilter</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">DbType</span><span class="p">.</span><span class="n">String</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">FieldName</span> <span class="p">=</span> <span class="s">"ObjectType"</span><span class="p">,</span>
+            <span class="n">Operator</span> <span class="p">=</span> <span class="n">OperatorType</span><span class="p">.</span><span class="n">EQUALS</span><span class="p">,</span>
+            <span class="n">Value</span> <span class="p">=</span> <span class="n">objectName</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="kt">var</span> <span class="n">productDataSelectionResult</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">TransactionalDataStore</span><span class="p">.</span><span class="n">ConnectionManager</span><span class="p">.</span><span class="n">Execute</span><span class="p">&lt;</span><span class="n">DatabaseInputParameter</span><span class="p">&lt;</span><span class="n">AECPRODUCTDATA</span><span class="p">&gt;,</span> <span class="n">AECPRODUCTDATA</span><span class="p">&gt;(</span><span class="n">data_prodData</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">productDataSelectionResult</span><span class="p">.</span><span class="n">Status</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">aecSyncDataObject</span> <span class="p">=</span> <span class="n">productDataResult</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+     
+<span class="p">}</span>
+</code></pre></div></div>
+<p>In the above code, you can see the AECPRODUCTDATA table records are being fetched using multiple filter conditions.
+The filter conditions are specified for each columns using object of <a href="http://isdn.appseconnect.com/html/32CC8FA8.htm"><code class="language-plaintext highlighter-rouge">DatabaseFilter</code></a> type and when the Transaction is executed through the Execute method, 
+the data is retrieved from the database.</p>
+
+<h2 id="file-storage">File Storage</h2>
+
+<p>Even though it is discouraged, but you can still use file system to store isolated storage of files from your adapter. The adapter file system is exposed to an
+separate secure location, sandboxed from the external world. The files created in the adapter will be separately located on 
+APPSeCONNECT secure location and you can use various functionalities while accessing the files.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">FileStore</span><span class="p">.</span><span class="nf">WriteString</span><span class="p">(</span><span class="s">"a.txt"</span><span class="p">,</span> <span class="s">"data"</span><span class="p">);</span>
+<span class="kt">var</span> <span class="n">strFile</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">FileStore</span><span class="p">.</span><span class="nf">GetFileString</span><span class="p">(</span><span class="s">"a.txt"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The first line of the API will create a file in the file system inside APPSeCONNECT and name it as a.txt, which can 
+be retrieved back using GetFileString and the fileName specified at a later stage. In addition to these, the FileStorage utility 
+provides various functionalities which will help in accessing file / folder system on local drive as Isolated storage.</p>
+:ET

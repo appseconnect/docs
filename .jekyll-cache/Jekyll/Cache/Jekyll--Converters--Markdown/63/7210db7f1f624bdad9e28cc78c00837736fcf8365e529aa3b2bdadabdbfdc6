@@ -1,0 +1,66 @@
+I"<p>Executing the Process is a vital part when integrating any applications. 
+This Document will let the users to understand how the integration process can be executed through workflow for adding
+Simple Product from Magento2 (Multi-store) to Ms Dynamics NAV.</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_mage2tonavworkflow.png" alt="simpleprdct_mage2tonavworkflow" /></p>
+
+<p>In this case, the Simple Products are created in Magento2 and are added to MS Dynamics NAV by syncing the workflow for Simple Products Add. 
+The above workflow is designed to GET Simple Products from Magento2 and POST it to Ms Dynamics NAV.</p>
+
+<p>Note:Simple Products can be created from Magento2 backend. <a href="https://docs.magento.com/m2/ce/user_guide/catalog/product-create-simple.html">Click here</a> to know more about creating the Simple Products from the admin panel of Magento2.</p>
+
+<p>Here the Simple Products is created for a customer whose order consists of two products.</p>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen1.png" alt="simpleprdct_add_mage2tonavscreen1" /></p>
+
+<h2 id="lookup-mapping">Lookup Mapping</h2>
+
+<p>The Lookup mapping for Currency shall be required in case the business logic deals with multiple currencies.</p>
+
+<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation</h2>
+
+<p>The pre-packaged mappings will successfully sync data to Magento2 from MS Dynamics NAV. However for more informations related to mapping, 
+see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
+
+<h2 id="action-filters">Action Filters</h2>
+
+<p>The Action filters required to fetch the products are given in the images below:</p>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen2.png" alt="simpleprdct_add_mage2tonavscreen2" /></p>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen3.png" alt="simpleprdct_add_mage2tonavscreen3" /></p>
+
+<h2 id="executing-the-workflow-integration">Executing the Workflow Integration</h2>
+
+<p><strong>Note: Before integrating with Magento2 and MS Dynamics NAV, make sure all the Master Data Touchpoints are synced.</strong></p>
+
+<ol>
+  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
+  <li>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</li>
+  <li>Once the Execution is finished, click Resync Button in the agent.</li>
+  <li>The Resync Panel show the Success Result in the agent</li>
+</ol>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen4.png" alt="simpleprdct_add_mage2tonavscreen4" /></p>
+
+<h2 id="integration-data-survey">Integration Data Survey</h2>
+
+<p>The user can survey the data by viewing the Processed Snapshot from the node level of the workflow.
+This Snapshot View displays the successful execution of the workflow.</p>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen5.png" alt="simpleprdct_add_mage2tonavscreen5" /></p>
+
+<h2 id="post-conditions">Post Conditions</h2>
+
+<p>The user can view the Simple Product synced in magento2.</p>
+
+<p><img src="/staticfiles/integration/media/simpleprdct_add_mage2tonavscreen6.png" alt="simpleprdct_add_mage2tonavscreen6" /></p>
+
+<h2 id="frequency-of-use">Frequency of Use</h2>
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+:ET

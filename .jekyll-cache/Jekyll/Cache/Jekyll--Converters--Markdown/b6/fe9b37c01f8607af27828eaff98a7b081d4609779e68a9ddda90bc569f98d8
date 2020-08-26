@@ -1,0 +1,61 @@
+I"/<p>Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process.<br />
+Users of APPSeCONNECT, now need not have to update configuration every time for deploying every change made in the workflow.</p>
+
+<p>Clicking on the DEPLOY button will automatically deploy the changes in the environment as well as assign the credential for 
+the applications that is used in the workflow.</p>
+
+<h2 id="prerequisites-to-deploy-advanced-workflow">Prerequisites to Deploy Advanced Workflow</h2>
+
+<ol>
+  <li>Should have valid credentials for logging in to the APPSeCONNECT portal.</li>
+  <li>APPS should be chosen from the apps section, for proceeding with the design of advance workflow.</li>
+  <li>The designed advance workflow should be saved before deploying it to the environment.</li>
+</ol>
+
+<h2 id="steps-to-deploy-advanced-workflow-to-environment">Steps to deploy Advanced Workflow to Environment</h2>
+
+<ol>
+  <li>Login to the APPSeCONNECT portal and navigate to the Advance Workflow module available on the left menu.</li>
+  <li>If the workflow is already designed and was saved, click on the edit button available for the workflow, 
+which will navigate the user to the Workflow Designing &amp; executing page.
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy1.png" alt="advance-workflow-deploy1" /></li>
+  <li>Click on deploy button in the <strong>Workflow Designing</strong> &amp; <strong>Executing Page</strong>.
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy2.png" alt="advance-workflow-deploy2" /></li>
+  <li>The Deploy wizard opens on clicking the Deploy button.
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy3.png" alt="advance-workflow-deploy3" /></li>
+  <li>User needs to select the type of environment (Cloud or On-Premise) by selecting the proper Radio button.</li>
+  <li>As per the selected type of environment, user needs to select an environment from the list of environments 
+   in the drop down. Click NEXT button.
+For E.g. If the user selects On-Premise, the drop down will contain all the installed environments for your organisation.
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy4.png" alt="advance-workflow-deploy4" /></li>
+  <li>The screen navigates to the <strong>Set-up connection</strong> section of the Deploy wizard. User needs to select the credential 
+from the drop down, for the respective application used in the workflow. Click NEXT button.
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy5.png" alt="advance-workflow-deploy5" /></li>
+  <li>Clicking on the applications, user gets a Refresh Connection button that refreshes the credentials added in 
+the OP agent.   <br />
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy8.png" alt="advance-workflow-deploy8" />
+<strong>Note: The button appears only when the workflow is being deployed to the OP Agent.</strong></li>
+  <li>The screen navigates to the <strong>Schedule and Deploy</strong> section of the deploy wizard. User can configure the Manual/Auto 
+execution of the workflow and the Auto retry of the failed items. 
+<img src="/staticfiles/advance-workflow/media/advance-workflow-deploy6.png" alt="advance-workflow-deploy6" /></li>
+</ol>
+
+<p><strong>Note: Auto-Retry feature is the autosync of resync and is applicable for the data that have failed during the execution 
+of the sync process. User can configure the Automatic Retry of Advanced workflows accordingly.</strong></p>
+
+<p>After configuring the Schedule and Deploy section, click Finish button. The workflow would be successfully deployed.
+Navigate to the Environment section in the portal, click on the respective environments, user can view the deployed advanced workflows in the Environment Details Page.</p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li>Users can deploy workflows from the Advanced Workflow listing page too. The view and the flow will remain the same if deployed from the <em>Adv. Workflow listing page</em>.</li>
+  <li>Deploying of workflow has no dependability on <a href="/advance%20workflow/saving-and-restoring-revised-adv-workflow/">revision of the workflow</a>, which means restoring a workflow from revision will not save any deployment history.</li>
+  <li>Users can deploy multiple advanced workflows from the listing page, by selecting the checkbox of the workflows and clicking on the Selected Workflow Deploy button, provided the workflows are deployed to one single environment at a time.</li>
+  <li>Presently Advanced Workflows will only be deployed on a single environment.</li>
+  <li>To deploy multiple advanced workflows to different environments, users need to repeat the steps of deploying multiple workflows again.</li>
+</ul>
+
+<p><img src="/staticfiles/advance-workflow/media/advance-workflow-deploy7.png" alt="advance-workflow-deploy7" /></p>
+
+:ET

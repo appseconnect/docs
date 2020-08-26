@@ -1,0 +1,18 @@
+I"m<p>Adapter development is a common practice, and one of the most challenging thing to do is to debug an adapter 
+before you finally publish it to the APPSeCONNECT cloud. To debug an adapter, you need to install 
+appseconnect agent and use Visual Studio to debug the code.</p>
+
+<h2 id="steps-to-debug-an-adapter">Steps to debug an adapter</h2>
+
+<ol>
+  <li>To start debugging the adapter, first you need to <a href="https://docs.appseconnect.com/getting%20started/getting-started/">configure</a> appseconnect portal taking your application into account.</li>
+  <li>Once the agent is installed on your premise you can <a href="/deployment/Deployment-Configuration/">configure</a> the onpremise agent with credentails such that you can execute a process.</li>
+  <li>Now open the adapter code and use Debug -&gt; Attach to Process.</li>
+  <li>A window will popup, where you need to select InSync.eConnect.AppStarter.exe.</li>
+  <li>Now execute the touchpoint, and put a breakpoint on the code which is getting executed for Pull and Push operation. <br />
+<img src="/staticfiles/sdk-references/media/attachtoprocesshandler.png" alt="Attachtoprocesshandler" /></li>
+  <li>You can debug and step through your code to ensure proper working of the method.</li>
+</ol>
+
+<p>The debugger will allow you to debug, step - into, see local variables, or even use Intermediate Window from Visual Studio.</p>
+:ET

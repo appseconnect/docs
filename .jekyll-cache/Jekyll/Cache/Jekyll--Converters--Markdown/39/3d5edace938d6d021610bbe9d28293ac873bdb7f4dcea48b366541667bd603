@@ -1,0 +1,51 @@
+I"R<p>Executing the Process is a vital part when integrating any applications. This document will let the users integrate updated customers from Shopify to SAGE 300.</p>
+
+<h2 id="brief-description">Brief Description:</h2>
+
+<p>Here, the workflow for Customer Update is used for integrating updated customers from <a href="/connectors/shopify/">Shopify</a> to <a href="/connectors/sage300/">SAGE 300</a>. A Post-Task <strong>Address Update</strong> is also attached for syncing updated customer address to SAGE 300.</p>
+
+<h3 id="prerequisites">Prerequisites:</h3>
+
+<ul>
+  <li>You need to <a href="/workflow/steps-to-choose-your-workflow/">Choose your Workflow</a> or you can <a href="/workflow/steps-to-create-your-first-workflow/">create/design a new workflow</a> as per your need.</li>
+  <li>You need to have the <a href="/integration/sage-shopify/customer-add/">customer added</a> in SAGE 300 from Shopify, before updating any existing customer detail.</li>
+</ul>
+
+<h2 id="value-mapping">Value Mapping:</h2>
+
+<p>Same as <a href="/integration/sage-shopify/customer-add/">Customer Add</a></p>
+
+<p>Note: After the changes in mapping is done, <strong>Reset Generate</strong> and <strong>Reset Publish</strong> from the workflow panel. Refresh the Page and <strong>Publish</strong> the workflow. After Republishing, click on the <strong>Update Configuration</strong> and <strong>Update Lookup Tables</strong> button in the Agent.</p>
+
+<h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
+
+<ol>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the <strong>Start Sync Button</strong> for executing the Process.</p>
+  </li>
+  <li>
+    <p>You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation">Click Here</a>.</p>
+  </li>
+</ol>
+
+<h2 id="integration-data-survey">Integration Data Survey:</h2>
+
+<p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow.</p>
+
+<h2 id="post-conditions">Post Conditions:</h2>
+
+<p>You can view the data sync in SAGE 300 by viewing the <code class="language-plaintext highlighter-rouge">Accounts Receivable &gt; A/R Customers</code>.</p>
+
+<h2 id="frequency-of-use">Frequency of Use:</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="limitations">Limitations:</h2>
+<p>NA</p>
+
+<p>Following the above procedures, you can successfully sync updated details of a customer from Shopify to SAGE 300.</p>
+
+:ET

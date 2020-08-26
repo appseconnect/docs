@@ -1,0 +1,240 @@
+I"�n<p>It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, 
+such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement 
+the adapter in such a way, so that the data is perfectly transferred from one application to another without compormising
+performance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connector
+I hope you have <a href="/sdk/Prerequisites/">installed the pre-requisites</a> correctly on the system and you have all the prebuilt code ready on your visual studio.
+Also you need to make sure that you follow our <a href="/sdk/Best-practices/">best practices</a> and <a href="/sdk/Development-Guidelines/">guidelines</a> provided for adapter development.</p>
+
+<h2 id="implementing-the-iadapter-interface">Implementing the IAdapter interface</h2>
+
+<p>An <a href="http://isdn.appseconnect.com/html/73508818.htm"><code class="language-plaintext highlighter-rouge">IAdapter</code></a> interface is a hook to specify the code which will run to fetch 
+or push data to and from from the application. 
+The main method that needs to be implemented while implementing 
+<a href="http://isdn.appseconnect.com/html/73508818.htm">IAdapter</a> is the 
+<a href="http://isdn.appseconnect.com/html/364EAD9A.htm"><code class="language-plaintext highlighter-rouge">Execute</code></a>, which provides you with 
+<a href="http://isdn.appseconnect.com/html/EBA2D728.htm"><code class="language-plaintext highlighter-rouge">ExecutionType</code></a> which lets you specify code that needs to be implemented to invoke Request to the application.</p>
+
+<p>An <a href="http://isdn.appseconnect.com/html/F675346E.htm">OperationType</a> specifies the type of the execution which you need to perform.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>OperationType</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>Adapter receives GET as ExecutionType when the adapter need to pull data from source application. Remember, during this operation, you will have to work with <a href="http://isdn.appseconnect.com/html/996C8CA9.htm"><code class="language-plaintext highlighter-rouge">ActionFilter</code></a> and you should not look for <a href="http://isdn.appseconnect.com/html/281D6BC4.htm">TransformedResponse</a>.</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>Adapter receives POST as ExecutionType when the adapter need to push data to the target application. The adapter receives the actual data in <a href="http://isdn.appseconnect.com/html/281D6BC4.htm"><code class="language-plaintext highlighter-rouge">TransformedResponse</code></a> as XML data and the target application need to push the same to the application end.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Protip:</strong> The basic function of an adapter method <code class="language-plaintext highlighter-rouge">Execute</code> is to pull/push data (convert the data to XML) and set it to APPSeCONNECT using <a href="http://isdn.appseconnect.com/html/2ECC6977.htm"><code class="language-plaintext highlighter-rouge">ReturnMessage&lt;string&gt;</code></a>
+{: .notice–info}.</p>
+
+<h3 id="implementing-get">Implementing GET</h3>
+
+<p>The GET execution of an adapter require to do the following steps :</p>
+
+<ul>
+  <li>Parse <code class="language-plaintext highlighter-rouge">ActionFilter</code> to generate the Request structure. An ActionFilter is a Hierarchical Key-Value pair data received from APPSeCONNECT cloud.</li>
+  <li>Get Credential to connect to the target application.</li>
+  <li>Fetch data from the target application and push it the APPSeCONNECT using the api <code class="language-plaintext highlighter-rouge">ReturnMessage.SetSuccess</code>.</li>
+</ul>
+
+<p>The Credential received by the interface will allow you to create the request body so as to create a communication with the end 
+application. Let us look at the code below :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">private</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="nf">ExecuteGetOperation</span><span class="p">(</span><span class="n">ExecutionSettings</span> <span class="n">settings</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">returnMessage</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+    <span class="kt">var</span> <span class="n">returnAPIData</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;();</span>
+
+    <span class="kt">var</span> <span class="n">logger</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">Logger</span><span class="p">;</span> <span class="c1">// Gets a logger instance</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">StatusLog</span><span class="p">(</span><span class="s">"Trying to pull data from application"</span><span class="p">,</span> <span class="s">"Inside Adapter GET"</span><span class="p">);</span>
+
+    <span class="kt">string</span> <span class="n">responseData</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+    <span class="kt">string</span> <span class="n">requestData</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+    <span class="k">try</span>
+    <span class="p">{</span>
+
+        <span class="kt">var</span> <span class="n">credentials</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">GetConnectionDetails</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;();</span>
+        <span class="n">WebServicesUtility</span> <span class="n">interactAPI</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">WebServicesUtility</span><span class="p">();</span>
+      
+        <span class="kt">var</span> <span class="n">commandProcessor</span> <span class="p">=</span> <span class="n">settings</span><span class="p">.</span><span class="nf">GetCommandProcessor</span><span class="p">(</span><span class="n">Protocol</span><span class="p">.</span><span class="n">REST</span><span class="p">);</span>
+        <span class="n">requestData</span> <span class="p">=</span> <span class="n">commandProcessor</span><span class="p">.</span><span class="nf">PrepareCommand</span><span class="p">();</span>
+       
+        <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">CalledFrom</span> <span class="p">!=</span> <span class="n">CallerType</span><span class="p">.</span><span class="n">ReSync</span><span class="p">)</span> <span class="c1">//Represents a normal call</span>
+        <span class="p">{</span>
+            <span class="n">returnAPIData</span> <span class="p">=</span> <span class="n">interactAPI</span><span class="p">.</span><span class="nf">InteractGetByPage</span><span class="p">(</span><span class="n">requestData</span><span class="p">,</span> <span class="n">credentials</span><span class="p">,</span> <span class="n">settings</span><span class="p">.</span><span class="n">EntityName</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(!</span><span class="n">returnAPIData</span><span class="p">.</span><span class="n">Value</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="n">returnAPIData</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="nf">AssignPrimaryKeys</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">returnAPIData</span><span class="p">,</span> <span class="n">credentials</span><span class="p">);</span>
+                <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Data fetched successfully from Bigcommerce"</span><span class="p">,</span> <span class="n">returnAPIData</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+                <span class="n">resource</span><span class="p">.</span><span class="nf">WriteMaxCreateDate</span><span class="p">(</span><span class="n">returnAPIData</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span> <span class="s">"date_created"</span><span class="p">,</span> <span class="n">settings</span><span class="p">.</span><span class="n">EntityName</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        
+    <span class="p">}</span>
+
+    <span class="k">catch</span> <span class="p">(</span><span class="n">WebException</span> <span class="n">ex</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">returnMessage</span><span class="p">.</span><span class="nf">AddException</span><span class="p">(</span><span class="n">ex</span><span class="p">);</span>
+        <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetError</span><span class="p">(</span><span class="n">ex</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">returnMessage</span><span class="p">.</span><span class="nf">AddException</span><span class="p">(</span><span class="n">ex</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">returnMessage</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>In the above code you can see an implementation of adapter GET method. This piece of code will be executed when a workflow
+encounters a Get node. If you properly inspect the method, you can see, that the method receives an 
+<a href="http://isdn.appseconnect.com/html/BC65452C.htm"><code class="language-plaintext highlighter-rouge">ExecutionSettings</code></a> and also 
+it uses <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">_context</code></a> to get various data from APPSeCONNECT. The <code class="language-plaintext highlighter-rouge">_context</code> is an object that lets you get data 
+application wide. This object does not change between calls to the adapter and also represents the contextual reference of the 
+process on the application.</p>
+
+<p>The line <code class="language-plaintext highlighter-rouge">this._context.Logger</code> gets the logger class, which helps you to write debug, status or information over <a href="/sdk/logging-and-tracing/">APPSeCONNECT 
+logging system</a>.</p>
+
+<p>The next important consideration is the Credential object. You can call <code class="language-plaintext highlighter-rouge">this._context.GetConnectionDetails</code> to retrieve the 
+credentials which is used to connect to the application. Remember, the credentials are generally put by the customer on the local 
+or cloud agent, and you need a model created as a class inside the project to access the deserialzied version of the object.</p>
+
+<p><strong>protip</strong>: You can also manually read / write json statements, using the overload <code class="language-plaintext highlighter-rouge">GetConnectionDetails</code> but it is always 
+preferrable to have a model class.
+{: .notice–info}.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">settings.GetCommandProcessor(Protocol.REST)</code>allows the user to get an url generated from the Action filters 
+put in APPSeCONNECT cloud. We specifically generate the action filter parsers for REST and or SOAP requests, so if it does not 
+suit your need, you can easily <a href="/sdk/Implementing-Actionfilter-Parsers/">create an ActionFilter parser yourself</a>.</p>
+
+<p>Finally, the <code class="language-plaintext highlighter-rouge">interactAPI.InteractGetByPage</code> is an individual request to the application which helps in getting data from the application. 
+Once you get the data, you can assign keys to the Resync Bucket, such that the data that is been retrieved could be properly tracked by the 
+application. If you have defined Primary Keys for the schema in use, the data will be automatically created for you from 
+APPSeCONNECT.</p>
+
+<p>Once you retrieve the document correctly, you can pass the document to APPSeCONNECT using <code class="language-plaintext highlighter-rouge">returnMessage.SetSuccess</code> method.
+Remember, you should always communicate with APPSeCONNECT in XML data formats, so if the format is something else, like JSON or 
+CSV etc., you need to convert it to XML before passing it to APPSeCONNECT.</p>
+
+<h3 id="implementing-post-">Implementing Post :</h3>
+
+<p>Unlike GET, POST will receive the transformed response in the adapter using our SDK, which one needs to push directly 
+to the application and set the response to appseconnect back.  Let us look at the code below :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">private</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="nf">ExecutePostOperation</span><span class="p">(</span><span class="n">ExecutionSettings</span> <span class="n">settings</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">returnMessage</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ReturnMessage</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+    <span class="kt">var</span> <span class="n">logger</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">ApplicationUtility</span><span class="p">.</span><span class="n">Logger</span><span class="p">;</span>
+    <span class="kt">string</span> <span class="n">entityName</span> <span class="p">=</span> <span class="n">settings</span><span class="p">.</span><span class="n">EntityName</span><span class="p">;</span> <span class="c1">//returns the main entity name</span>
+    <span class="kt">string</span> <span class="n">actionName</span> <span class="p">=</span> <span class="n">settings</span><span class="p">.</span><span class="n">ActionName</span><span class="p">;</span> <span class="c1">//returns the main action name</span>
+    <span class="kt">var</span> <span class="n">credential</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="n">GetConnectionDetails</span><span class="p">&lt;</span><span class="n">CredentialModel</span><span class="p">&gt;();</span>
+
+    <span class="kt">string</span> <span class="n">responseData</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">StatusLog</span><span class="p">(</span><span class="s">"Trying to push data from application"</span><span class="p">,</span> <span class="s">"Inside Adapter POST"</span><span class="p">);</span>
+    <span class="n">WebServicesUtility</span> <span class="n">interactAPI</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">WebServicesUtility</span><span class="p">();</span>
+    <span class="kt">var</span> <span class="n">requestData</span> <span class="p">=</span> <span class="n">settings</span><span class="p">.</span><span class="n">TransformedResponse</span><span class="p">;</span>
+
+    <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">XElement</span><span class="p">&gt;</span> <span class="n">elements</span> <span class="p">=</span> <span class="n">XElement</span><span class="p">.</span><span class="nf">Parse</span><span class="p">(</span><span class="n">requestData</span><span class="p">).</span><span class="nf">Elements</span><span class="p">();</span>
+    <span class="n">XmlDocument</span> <span class="n">nodes</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">XmlDocument</span><span class="p">();</span>
+    <span class="n">nodes</span><span class="p">.</span><span class="nf">LoadXml</span><span class="p">(</span><span class="n">requestData</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">envelopesNode</span> <span class="p">=</span> <span class="n">nodes</span><span class="p">[</span><span class="s">"Envelops"</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">envelopesNode</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">logger</span><span class="p">.</span><span class="nf">StatusLog</span><span class="p">(</span><span class="s">"No data found to push in Bigcommerce"</span><span class="p">);</span>
+        <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"No data found to push in Bigcommerce"</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">returnMessage</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">var</span> <span class="n">outputs</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">XElement</span><span class="p">(</span><span class="s">"Envelopes"</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">dataIndex</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="n">XElement</span> <span class="n">element</span> <span class="k">in</span> <span class="n">elements</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">string</span> <span class="n">destinationKey</span> <span class="p">=</span> <span class="s">"successfully"</span><span class="p">;</span>
+        <span class="kt">var</span> <span class="n">httpResponse</span> <span class="p">=</span> <span class="n">interactAPI</span><span class="p">.</span><span class="nf">InteractPush</span><span class="p">(</span><span class="n">element</span><span class="p">.</span><span class="nf">ToString</span><span class="p">(),</span> <span class="n">actionName</span><span class="p">,</span> <span class="n">credential</span><span class="p">,</span> <span class="n">settings</span><span class="p">,</span> <span class="n">returnMessage</span><span class="p">);</span>
+        <span class="k">try</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">httpResponse</span><span class="p">.</span><span class="n">Message</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+            <span class="p">{</span> 
+                <span class="n">outputs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">XElement</span><span class="p">.</span><span class="nf">Parse</span><span class="p">(</span><span class="n">httpResponse</span><span class="p">.</span><span class="n">Message</span><span class="p">));</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="n">logger</span><span class="p">.</span><span class="nf">ErrorLog</span><span class="p">(</span><span class="s">"Failed to Push in BigCommerce"</span><span class="p">);</span>
+                <span class="n">settings</span><span class="p">.</span><span class="nf">AssignErrorEntity</span><span class="p">(</span><span class="n">dataIndex</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">""</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">logger</span><span class="p">.</span><span class="nf">ErrorLog</span><span class="p">(</span><span class="s">"Exception Occured at parsing response"</span><span class="p">,</span> <span class="n">ex</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="n">settings</span><span class="p">.</span><span class="nf">AssignErrorEntity</span><span class="p">(</span><span class="n">dataIndex</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="s">""</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">dataIndex</span><span class="p">++;</span>
+
+    <span class="p">}</span>
+    <span class="n">returnMessage</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="nf">Concat</span><span class="p">(</span><span class="n">outputs</span><span class="p">);</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">InfoLog</span><span class="p">(</span><span class="s">"Data push operation completed successfully"</span><span class="p">,</span> <span class="s">"Push operation completed"</span><span class="p">);</span>
+    <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Data push operation completed successfully"</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">returnMessage</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+</code></pre></div></div>
+<p>If you inspect the code above, similar to the one in GET, the POST API also receives the ApplicationContext as well as ExecutionSettings inside it. 
+You can clearly get Credential again using the same API, and use the same to communicate with the application. Once you receive the credential, you can use
+<code class="language-plaintext highlighter-rouge">settings.TransformedResponse</code> to get the XML generated from APPSeCONNECT, which you need to push to the Application and get response.
+In the above code, you can see the API does not support a batch operation, and hence the request is being split in chunks 
+and each xml is requested separately.</p>
+
+<p>The output of the response is returned back using <code class="language-plaintext highlighter-rouge">returnMessage.SetSuccess</code> which can be used in the workflow for future use.</p>
+
+<h2 id="handling-resync-data">Handling Resync Data</h2>
+
+<p>Resync in case of APPSeCONNECT are special data mentioned through adapter, which are required to resync an errornous data from the application itself. As 
+an adapter developer, you need to take care of Resync while implementing the adapter code. In case of Resync call, an individual 
+request is made to the application (generally using the primary key field) and the data is then retrieved or resynced using the 
+request structure. Let us see how the resync code looks like :</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">entity</span> <span class="k">in</span> <span class="n">settings</span><span class="p">.</span><span class="n">EntityData</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">commandProcessor</span> <span class="p">=</span> <span class="n">settings</span><span class="p">.</span><span class="nf">GetCommandProcessor</span><span class="p">(</span><span class="n">Protocol</span><span class="p">.</span><span class="n">REST</span><span class="p">);</span>
+    <span class="n">requestData</span> <span class="p">=</span> <span class="n">commandProcessor</span><span class="p">.</span><span class="nf">PrepareCommand</span><span class="p">();</span>
+    <span class="kt">string</span> <span class="n">entityCode</span> <span class="p">=</span> <span class="n">entity</span><span class="p">.</span><span class="n">SourceCode</span><span class="p">;</span>
+    <span class="n">requestData</span> <span class="p">=</span> <span class="n">requestData</span><span class="p">.</span><span class="nf">TrimEnd</span><span class="p">(</span><span class="sc">'?'</span><span class="p">);</span>
+    <span class="n">requestData</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="nf">Concat</span><span class="p">(</span><span class="n">requestData</span><span class="p">,</span> <span class="s">"/"</span><span class="p">,</span> <span class="n">entityCode</span><span class="p">);</span>
+    <span class="n">returnAPIData</span> <span class="p">=</span> <span class="n">interactAPI</span><span class="p">.</span><span class="nf">InteractGet</span><span class="p">(</span><span class="n">requestData</span><span class="p">,</span> <span class="n">credentials</span><span class="p">,</span> <span class="n">settings</span><span class="p">.</span><span class="n">EntityName</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Records pulled for resync entities "</span><span class="p">,</span> <span class="n">returnAPIData</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Here in case of the code above, the resync data is sent using the object <code class="language-plaintext highlighter-rouge">settings.EntityData</code>. You can loop through the 
+data blocks to execute the resync. You can see, the InteractGet is called here to resync the requestData passed in from 
+APPSeCONNECT. In case of POST request as well, you can use the settings.TransformedResponse to resync the data. To detect whether 
+the call to an adapter is for Resync or normal call, you can use the property <code class="language-plaintext highlighter-rouge">settings.CalledFrom</code>.</p>
+
+<h3 id="various-other-methods-in-iadapter-interface">Various other methods in IAdapter interface</h3>
+
+<p>There are some additional properties that an IAdapter interface hosts, which lets you process various part of data.</p>
+
+<ul>
+  <li><a href="http://isdn.appseconnect.com/html/81A29C5A.htm">Resource</a> : You needed to implement a property Resource. This is an implementation of <a href="http://isdn.appseconnect.com/html/3C4C3144.htm">IAppResource</a> inside the adpater such that APPSeCONNECT could call the methods. Remember, if you do not specify an object, the transformation in APPSeCONNECT could not call additional functions.</li>
+  <li><a href="http://isdn.appseconnect.com/html/E8F54FAE.htm">ValidateProcess</a>: This method is used to validate the execution data before actual processing. Feel free to put logic that identifies whether the data passed to the Execute or the Request structure is valid or not.</li>
+</ul>
+:ET

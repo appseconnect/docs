@@ -1,0 +1,96 @@
+I"r<p>Executing the Process is a vital part when integrating any applications. This document will let the users to understand how 
+the integration process can be executed through workflow for adding Customers from 
+Magento2 (Multi-store) to Ms Dynamics NAV.</p>
+
+<h2 id="brief-description">Brief Description</h2>
+
+<p><img src="/staticfiles/integration/media/addcustomer-workflow-mage2tonav.png" alt="addcustomer-workflow-mage2tonav" /></p>
+
+<p>Here the Customer who registers in Magento2 are added to MS Dynamics NAV by executing the workflow for customer add. 
+The above workflow is designed to GET customers from Magento2 and POST it to MS Dynamics NAV.</p>
+
+<p>Login to Magento 2 Application. <a href="https://docs.magento.com/m2/ce/user_guide/customers/account-create.html">Click here</a> to know 
+more about the process of adding customers in Magento2.</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav1.png" alt="addcustomer-mage2tonav1" /></p>
+
+<h2 id="lookup-mapping">LookUp Mapping</h2>
+
+<p>N/A</p>
+
+<h2 id="attribute-mappingtransformation">Attribute Mapping/Transformation</h2>
+
+<p>Following the Provided Mapping, the user can sync Customer Add from Magento2 to Dynamics NAV. 
+To know more, see  <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a></p>
+
+<p>Mapping for the Transformations of <code class="language-plaintext highlighter-rouge">Customer Add Touchpoint</code>.</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav2.png" alt="addcustomer-mage2tonav2" /></p>
+
+<p><strong>(1) For Integrating B2B customer to MS Dynamics NAV</strong></p>
+
+<p>The same workflow will integrate the B2B customers in Ms Dynamics NAV but as a prerequisite for this scenario, 
+the user needs to go through the following steps &amp; mapping process.</p>
+
+<ul>
+  <li>
+    <p>The user needs to create an attribute named <code class="language-plaintext highlighter-rouge">B2B</code> with the datatype <code class="language-plaintext highlighter-rouge">String</code>.<br />
+<img src="/staticfiles/integration/media/addcustomer-mage2tonav3.png" alt="addcustomer-mage2tonav3" /></p>
+  </li>
+  <li>The user needs to apply an <code class="language-plaintext highlighter-rouge">IF condition</code> on B2B. The steps to create condition in attribute level are <a href="/transformation/define-logic-over-destination-mapping/#mapping-at-attribute-level">given here</a>.</li>
+  <li>The clauses for the IF condition should be provided as given below:<br />
+<img src="/staticfiles/integration/media/addcustomer-mage2tonav4.png" alt="addcustomer-mage2tonav4" /></li>
+</ul>
+
+<p>Mapping for attribute is given below:</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav5.png" alt="addcustomer-mage2tonav5" /></p>
+
+<p>Mapping for Root Variable:</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav6.png" alt="addcustomer-mage2tonav6" /></p>
+
+<p><strong>Note: These are the mappings that user needs to do manually, the other mappings are pre-packaged.</strong></p>
+
+<h2 id="action-filter">Action Filter</h2>
+
+<p>The Action filters required to fetch customers are given in the image below:</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav7.png" alt="addcustomer-mage2tonav7" /></p>
+
+<h2 id="executing-the-workflow-integration">Executing the Workflow Integration</h2>
+
+<p><strong>Note: Before integrating with Magento2 and MS Dynamics NAV make sure all the Master Data Touchpoints are synced</strong></p>
+
+<ol>
+  <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
+  <li>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</li>
+  <li>Once the Execution is finished click Resync Button in the agent.</li>
+  <li>The Resync Panel show the Success Result in the agent.</li>
+</ol>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav8.png" alt="addcustomer-mage2tonav8" /></p>
+
+<h2 id="integration-data-survey">Integration Data Survey</h2>
+
+<p>The user can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a>from the node level of the workflow.
+This Snapshot View displays the successful execution of the workflow.</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav9.png" alt="addcustomer-mage2tonav9" /></p>
+
+<h2 id="post-condition">Post Condition</h2>
+
+<p>The user can view the customer synced in Ms Dynamics NAV in the customer card page.</p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav10.png" alt="addcustomer-mage2tonav10" /></p>
+
+<p><img src="/staticfiles/integration/media/addcustomer-mage2tonav11.png" alt="addcustomer-mage2tonav11" /></p>
+
+<h2 id="frequency-of-use">Frequency of use</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>N/A</p>
+:ET

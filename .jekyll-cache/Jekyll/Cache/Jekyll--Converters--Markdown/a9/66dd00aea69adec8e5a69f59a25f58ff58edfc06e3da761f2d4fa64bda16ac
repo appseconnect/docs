@@ -1,0 +1,7 @@
+I"t<p>APPSeCONNECT requires connectivity to the application such that it can retrieve or send data to the application or data sources. In addition to pre-packaged connectors, which are readymade and easy to use, we also support 
+technology connectors, which are developed taking in mind on standard protocol based adapters for custom applications. But in certain scenarios you might want to develop this connectivity 
+from scratch as it might be a scenario in your case where the application does not fall into any of the solutions we provide as pre-packaged. Your application might be having 
+non-standard API endpoint, it might be dependent on some OnPremise environmental resources or even your service might not have 
+an Technology connect present in APPSeCONNECT platform, in all these scenarios, you are left with defining a completely new connect to the application
+yourself.</p>
+:ET

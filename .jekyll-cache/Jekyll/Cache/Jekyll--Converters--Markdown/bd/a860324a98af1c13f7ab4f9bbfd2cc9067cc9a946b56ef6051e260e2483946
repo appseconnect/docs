@@ -1,0 +1,38 @@
+I"<p><strong>Compression Policy</strong> compresses the response coming from the backend and thus can help to increase the performance of websites.
+As per configurations, it chooses the right algorithm to compress the content.So after execution of the backend action if the response 
+is not compressed then this policy will create a compressed response.</p>
+
+<h3 id="policy-statement">Policy Statement</h3>
+
+<p>Each policy requires certain configuration, which will allow to configure the policy for a particular API endpoint. 
+Below are the list of configurations required for this policy.</p>
+
+<p><img src="/staticfiles/api-management/media/CompressionPolicy.png" alt="Compression Policy" /></p>
+
+<p>The rules and setup needs to be made accordingly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Is Mandatory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Compression Type</td>
+      <td>Represents the algorithm to be used for compression</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="policy-usage">Policy Usage</h3>
+
+<p>The policy can be applied only at <code class="language-plaintext highlighter-rouge">outbound</code> section.</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>Currently the policy can be applied at API Version Scope only.</p>
+:ET

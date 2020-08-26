@@ -1,0 +1,96 @@
+I"…<p>Users of APPSeCONNECT requires the knowledge of common terminologies that the user can come across, while working with the 
+integration process in APPSeCONNECT. Here are some of the common terminologies that user can frequently come across.</p>
+
+<h2 id="table-of-the-terminology-of-appseconnect">Table of the Terminology of APPSeCONNECT</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Terms</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Agent</td>
+      <td>APPSeCONNECT agent is a tool that runs for implementing the sync process for your project. You can either use the agent environment as a cloud hosted or can be hosted locally on your server as On-Premise.</td>
+    </tr>
+    <tr>
+      <td>Workflow</td>
+      <td>Workflow is a feature in APPSeCONNECT that helps user to graphically organize, create and view the data flow of a process for the Integration.</td>
+    </tr>
+    <tr>
+      <td>Environment</td>
+      <td>Workflow is a feature in APPSeCONNECT that helps user to graphically organize, create and view the data flow of a process for the Integration.</td>
+    </tr>
+    <tr>
+      <td>Adapters</td>
+      <td>In terms of APPSeCONNECT, an adapter is a piece of software component of an application, that helps APPSeCONNECT communicate to the respective application seamlessly.</td>
+    </tr>
+    <tr>
+      <td>Snapshot</td>
+      <td>Snapshot in workflow gives complete overview of the sync process that is implemented. Snapshot provide the users with the detailed results of the data  that was transferred through workflow</td>
+    </tr>
+    <tr>
+      <td>Log Bucket</td>
+      <td>For every transaction, log is generated that is shown in the OP Agent and in Snapshot. These generated logs are shown in the Log bucket of the agent and Snapshot.</td>
+    </tr>
+    <tr>
+      <td>Resync Bucket</td>
+      <td>The errors that have occurred during the sync process are displayed in the Resync bucket of the OP Agent and Cloud Agent.At an instance Resync bucket shows 1000 data.</td>
+    </tr>
+    <tr>
+      <td>Resync</td>
+      <td>The errors generated during the sync process are available for another attempts. Any changes and rectification to the errors are made, user can either resync the data manually or can schedule the resync accordingly.</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>The definition of an entity is called its schema. In other words, the structure of an entity is called its schema</td>
+    </tr>
+    <tr>
+      <td>Actions</td>
+      <td>Actions r certain tasks like getting data from an application or sending data to an application based on some definite conditions</td>
+    </tr>
+    <tr>
+      <td>Mapping</td>
+      <td>The transfer of the data between the schemas of the source and destination application is done through a process known as mapping</td>
+    </tr>
+    <tr>
+      <td>Lookups</td>
+      <td>Lookups is a feature that enables the user to map values for certain fields. Click here to know more about Lookup Mapping</td>
+    </tr>
+    <tr>
+      <td>Renderer</td>
+      <td>This a feature to define and format XML rules as needed while implementing Attribute Mapping</td>
+    </tr>
+    <tr>
+      <td>Tracking</td>
+      <td>Tracking is a feature that enables the user to track and study fields that are being synchronised from Source application to Destination application</td>
+    </tr>
+    <tr>
+      <td>Root Variable</td>
+      <td>These are global variables that can be used in any attributes of any Complex objects &amp; Complex Objects Collections</td>
+    </tr>
+    <tr>
+      <td>Attributes</td>
+      <td>In APPSeCONNECT an attribute is a property or characteristic of a schema.</td>
+    </tr>
+    <tr>
+      <td>Connectors</td>
+      <td>For APPSeCONNECT connectors act like a bridge to create connection between applications that connects different data sources both on-premise or in cloud</td>
+    </tr>
+    <tr>
+      <td>Technology Applications</td>
+      <td>APPSeCONNECT comes with a number of technology connectors which can connect any data source having standard protocol-based communication channel established</td>
+    </tr>
+    <tr>
+      <td>License Management</td>
+      <td>License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users who tries to login to the integration client of APPSeCONNECT agent using a revocable, secure and unique license or a security token that is provided by the server</td>
+    </tr>
+    <tr>
+      <td>Rules</td>
+      <td>Users of APPSeCONNECT can implement special actions known as rules based on events encountered by during the execution of the integration.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

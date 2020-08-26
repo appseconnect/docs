@@ -1,0 +1,51 @@
+I"!<h3 id="use-case-name">Use Case Name</h3>
+<p>Basic Workflow for Customer Downloading.</p>
+
+<h3 id="brief-description">Brief Description</h3>
+<p>This is a basic workflow where the user can download customer from Shopify to SAP B1 with the execution of this basic and easy to use workflow through our portal .</p>
+
+<h3 id="actor">Actor</h3>
+<p>Implementers, Developers, Partners</p>
+
+<h3 id="preconditions">Preconditions</h3>
+<p>Organization Creation &amp; Connection Creation</p>
+
+<h3 id="basic-flow">Basic Flow</h3>
+<p>The user will execute the flow as given below</p>
+
+<ol>
+  <li>The user will select the Start node, where the workflow execution will begin</li>
+  <li>Go to template section and select General Touchpoint.</li>
+  <li>You will get <code class="language-plaintext highlighter-rouge">Adding Touchpoint</code>button. Input the Touchpoint from the drop down list.</li>
+  <li>Now select Customer Download Touchpoint and click OK button</li>
+  <li>The Customer Download touchpint appears in the grid pane.</li>
+  <li>Now link the Start node with the touchpoint.Drag the link to the touchpoint</li>
+  <li>The touchpoint has three group nodes -
+    <ul>
+      <li><a href="/workflow/working-with-get/">Get</a></li>
+      <li><a href="/workflow/working-with-process/">Process</a></li>
+      <li><a href="/workflow/working-with-post/">Post</a></li>
+    </ul>
+  </li>
+  <li>Workflow is created and then give a name to the untitled workflow (Workflow for Customer Downloading) and click on <code class="language-plaintext highlighter-rouge">SAVE</code> button to save the workflow.
+ <img src="/staticfiles/workflow-management/media/CustomerDownload_Simple.png" alt="CustomerDownload_Simple" /></li>
+  <li>After creating the workflow deploy that in the Agent.</li>
+  <li>Navigate to the Environment module and click on <code class="language-plaintext highlighter-rouge">Agent Setting</code> to check the connection is active or not .</li>
+  <li>Now go to the <code class="language-plaintext highlighter-rouge">Deploy Configuration</code> button to deploy the configuration. The success message will come.</li>
+  <li>Login/signup to Shopify (App 1) and view the added Customer.</li>
+  <li>Now check  back to Workflow module and select the saved workflow.</li>
+  <li>Then click on RUN button to run the workflow.</li>
+  <li>The workflow gets executed and the user can view all the nodes and links getting highlighted.</li>
+  <li>The user will go to SAP B1 (App 2) and click on Business Partner Master Data to fetch the downloaded customers.</li>
+</ol>
+
+<h3 id="post-conditions">Post-conditions</h3>
+<p>The user can now see that the Customer download is successful and can be fetched in SAP B1.</p>
+<h3 id="exception-courses">Exception courses</h3>
+<p>The user will get resync bucket error log in the agent and in the workflow section also, if the customer download is failure.</p>
+<h3 id="frequency-of-use">Frequency of use</h3>
+<p>The user can execute the workflow as and when required. Scheduler can be used for scheduling the workflow.</p>
+<h3 id="assumptions">Assumptions</h3>
+<p>NOT APPLICABLE</p>
+
+:ET

@@ -1,0 +1,138 @@
+I"#<p>Proxies are the full REST (Representational State Transfer) services which allows to create proxy
+over a set of existing data source. As applications in real world are diverse in nature, it is the 
+ask of every consumers to have a uniform API layer in place which will allow the external consumers 
+to have same kind of API system in place in spite of having varied range of Application APIs. As the name
+proxy suggests, it is just a wrapper over an existing data source or APIs, thereby providing time
+tested layers to handle <code class="language-plaintext highlighter-rouge">Authentication</code>, <code class="language-plaintext highlighter-rouge">Policies</code> and also <code class="language-plaintext highlighter-rouge">Documentation</code>. In this article
+we will see how can we develop a proxy API over a set of existing service and execute the same through
+APPSeCONNECT Portal.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>As per requirement, before you start creating a new API Proxy, you need to make sure you meet all the 
+prerequisites. Here are some of them :</p>
+
+<ol>
+  <li><a href="/getting%20started/user-registration-license/">Getting a new account for APPSeCONNECT</a></li>
+  <li><a href="/configuring%20appseconnect/configurations/#process-of-choosing-app">Choosing and Configuring Backend APPs</a></li>
+  <li><a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">Connecting to your data sources</a></li>
+  <li><a href="/deployment/Environment-Management/">Configuring Environments, installing / deploying Agent</a></li>
+  <li><a href="/connectors/OLEDB-Credentials/">Feeding Credentials for applications and data sources</a></li>
+  <li><a href="/configuring%20appseconnect/configurations/#adding-schemas-and-actions-of-an-application">Configuring/Importing Schemas and Actions</a></li>
+</ol>
+
+<p>After all these steps are done, make sure the environment is kept running and credentials are properly updated.</p>
+
+<h2 id="steps-to-create-proxy-api">Steps to create Proxy Api</h2>
+
+<p>To start creating a Proxy API, login to APPSeCONNECT and move to API Management section. You will see sections 
+depicting Proxy, select the section to navigate to it.</p>
+
+<ol>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Add New</code> button to create a new API.</li>
+  <li>
+    <p>Put basic information, such as <code class="language-plaintext highlighter-rouge">API name</code>, <code class="language-plaintext highlighter-rouge">Description</code>, <code class="language-plaintext highlighter-rouge">URL Suffix</code>, <code class="language-plaintext highlighter-rouge">HTTP method</code> etc. These 
+details are important to create the face of the API.</p>
+
+    <ul>
+      <li>API Name - Enter the API Name</li>
+      <li>Suffix - This signify the actual API Endpoint that needs to be specified. E.g: Filter, Delete, Fetch.</li>
+      <li>Method - This signify the API Operations like GET, PUT, POST, DELETE.</li>
+      <li>State - This signify the API state weather it is released, obsolete or in WIP. By default, Released is set in state, you can choose per business
+     requirement.</li>
+      <li>Version - This signify the API Version Number</li>
+      <li>Version Append Type - This is set as ‘Path’</li>
+    </ul>
+  </li>
+  <li>The Frontend of the API also requires you to mention Versioning of the API such that the initial version 
+of the API can be considered. The API version is important as maintainance of API is a challenge, and if you do
+not specify the version element in the API, you will face lot of challenges in future. 
+<img src="/staticfiles/api-management/media/api-frontend-configuration.png" alt="Api Frontend Configuration" /></li>
+  <li>Once all the data is provided on the screen, move to the next screen. The next screen lets the user 
+to specify policies which will be executed before the execution of Backend Action.
+<img src="/staticfiles/api-management/media/inbound-policy-example.png" alt="Inbound Policy Example" /></li>
+</ol>
+
+<p class="notice--info"><strong>Protip</strong> In the figure above, you can see, you can add more and more policies from the screen to be applied to an API. Each of the <a href="/api-management/policies/">policies</a> applied here needs to be cofigured with specific data. Once all the policies are configured correctly,
+you can continue the wizard. For Policy Configuration, Click <a href="/api-management/policies/">here</a>.</p>
+
+<ol>
+  <li>The next screen is where you specify the backend. This section is very important because this section
+provides the actual data source for that particular API. <br />
+<img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></li>
+  <li>The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select <code class="language-plaintext highlighter-rouge">Schema Action</code>
+from the drop down list. <a href="/configuring%20appseconnect/configurations/#adding-schemas-and-actions-of-an-application">Click here</a> to know more</li>
+  <li>The outbound policies are those which are applied after the backend is executed. Here also similar to the Inbound 
+policies, you are allowed to choose as many policies from the list as you want and configure each of them to continue 
+to the next screen.</li>
+  <li>The next screen specifies the <strong>Response setup</strong> of the API. Here you are allowed to specify what response code the API 
+should return when there is a failure in execution or success in execution. You can also specify the response message <br />
+if you are not happy with our default messaging.</li>
+</ol>
+
+<ul>
+  <li>HTTP Status Codes are the standard response codes that are provided by the internet server when a website or an API is called. 
+These Codes helps in identifying the reason for the failure when called.</li>
+</ul>
+
+<p><strong>HTTP Response Codes present in AEC are:<br />
+200 - OK   <br />
+201- Created  <br />
+302- Moved Temporarily <br />
+207- Multi Status   <br />
+301- Moved Temporarily   <br />
+203- Non-Authoritative Information.   <br />
+300- Multiple Choices <br />
+204- No-Content  <br />
+206- Partial Content   <br />
+102- Processing  <br />
+205- Reset Content   <br />
+202- Accepted</strong></p>
+
+<ul>
+  <li>By Default the user has 1 options each for Success and Failure status and can select the response codes 
+from the drop-down option depending upon the Response.
+<img src="/staticfiles/api-management/media/response-setup-Proxy1.png" alt="response-setup-Proxy1" /></li>
+  <li>The user can also add Custom Responses from the <code class="language-plaintext highlighter-rouge">ADD RESPONSE RULE</code> option.
+<img src="/staticfiles/api-management/media/response-setup-Proxy2.png" alt="response-setup-Proxy2" /></li>
+  <li>The Response statuses can also be changed or edited by clicking on the Configure options. The Configure window is displayed below.
+<img src="/staticfiles/api-management/media/response-setup-Proxy3.png" alt="response-setup-Proxy3" /></li>
+</ul>
+
+<ol>
+  <li>Each of the APIs created will show the URL and Http Method which needs to be used to execute it from the listing screen.</li>
+</ol>
+
+<p><strong>Note: For simplicity, APPSeCONNECT Requires the API provider to specify a default version mandatorily</strong></p>
+
+<p><strong>Note:  For a Particular Proxy endpoint, users can have a multiple ACTIONS like `GET, PUT, POST, DELETE</strong></p>
+
+<p><img src="/staticfiles/api-management/media/MultipleActions_OneProxy.png" alt="MultipleActions_OneProxy" /></p>
+
+<h3 id="steps-to-edit-your-proxy-endpoint">Steps to edit your proxy endpoint</h3>
+
+<p>The Edit screen of proxy provides you a tree view which lets you edit individual section of the API, adding new sections,
+investigate policies or execute the documentation.</p>
+
+<p><img src="/staticfiles/api-management/media/proxy-api-edit-screen.png" alt="Proxy Api Edit Screen" /></p>
+
+<p>The above screen provides information of a particular API in individual nodes. You can add new methods to an API,
+change versions, publish new version or add credential to the backend.</p>
+
+<h3 id="editing-action-filter-in-api">Editing Action filter in API</h3>
+
+<p>Schema Actions can now be created and edited in the API Level by editing the API Proxy. 
+This feature can be accessed in the Backend Node in the API Proxy.</p>
+
+<p><strong>Steps to do the same</strong></p>
+
+<ol>
+  <li>In the API Proxy, click on the edit option for any proxy created.</li>
+  <li>Expand the nodes until Backend Services.</li>
+  <li>Click on the <strong>edit symbol</strong> for editing the Schema Action.
+<img src="/staticfiles/api-management/media/SchemaAction-Edit.png" alt="SchemaAction-Edit" /></li>
+  <li>Mention the Action Name, Description and the Query and click on SAVE.
+<img src="/staticfiles/api-management/media/ActionFilter-Edit.png" alt="ActionFilter-Edit" /></li>
+</ol>
+
+:ET

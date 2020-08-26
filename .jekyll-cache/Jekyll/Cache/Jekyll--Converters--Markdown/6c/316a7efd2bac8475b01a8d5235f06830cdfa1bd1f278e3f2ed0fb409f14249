@@ -1,0 +1,58 @@
+I"<p>Executing the Process is a vital part when integrating any applications. This section of the document will let the users understand how the integration process can be executed through workflow for adding customers from Shopify to SAGE  300.</p>
+
+<h2 id="brief-description">Brief Description:</h2>
+
+<p>Here, the Workflow is used for syncing multiple customers from <a href="/connectors/shopify/">Shopify</a> to <a href="/connectors/sage300/">SAGE 300</a>. A workflow is designed and executed with the Customer Add General touchpoint where Customers are being added to SAGE 300 from Shopify. The customer is created in the shopify platform and is synced to SAGE 300.</p>
+
+<p>Login to your Shopify platform and <a href="https://help.shopify.com/en/manual/customers/manage-customers#add-customers">add customers</a> in Shopify.</p>
+
+<h3 id="prerequisites">Prerequisites:</h3>
+
+<ul>
+  <li>You need to <a href="/workflow/steps-to-choose-your-workflow/">Choose your Workflow</a> or you can <a href="/workflow/steps-to-create-your-first-workflow/">create/design a new workflow</a> as per your need.</li>
+</ul>
+
+<h2 id="lookup-mapping">Lookup Mapping:</h2>
+
+<p>For posting newly added customer to SAGE 300 from Shopify, you need to add Lookup for <code class="language-plaintext highlighter-rouge">Customer Group</code>, <code class="language-plaintext highlighter-rouge">Tax</code> &amp; <code class="language-plaintext highlighter-rouge">Website</code>. For this integration of Customer, mapping lookups for the group code of Customer, Tax &amp; website is mandatory.</p>
+
+<p><img src="\staticfiles\integration\SAGE300-Shopify\custadd2.PNG" alt="custadd2" /></p>
+
+<h2 id="executing-the-integration-using-workflow">Executing the Integration using Workflow:</h2>
+
+<ol>
+  <li>
+    <p>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent. <a href="/workflow/deploying-and-executing/">Click here</a> to know more about the deploying process of a workflow.</p>
+  </li>
+  <li>
+    <p>Navigate to the Workflow Panel in the agent and click on the <strong>Start Sync Button</strong> for executing the Process.</p>
+  </li>
+  <li>
+    <p>You can also trigger or deploy the workflow from the cloud Portal by clicking on the run button. For more details <a href="/workflow/steps-to-create-your-first-workflow/#steps-to-workflow-creation">Click Here</a>.</p>
+  </li>
+</ol>
+
+<h2 id="integration-data-survey">Integration Data Survey:</h2>
+
+<p>You can survey the data by viewing the <a href="/workflow/list-of-snapshot/">Processed Snapshot</a> from the node level of the workflow.</p>
+
+<h2 id="post-conditions">Post Conditions:</h2>
+<p>You can view the data sync in SAGE 300 by viewing the <code class="language-plaintext highlighter-rouge">Accounts Receivable &gt; A/R Customers.</code> successfully.</p>
+
+<h2 id="frequency-of-use">Frequency of Use:</h2>
+
+<p>The user can execute the Integration through workflow as and when required.</p>
+
+<h2 id="limitations">Limitations:</h2>
+<p>NA</p>
+
+<h2 id="troubleshooting">Troubleshooting:</h2>
+
+<ol>
+  <li><strong>Remote Server returned an error: (409) Conflict.</strong></li>
+</ol>
+
+<p><strong>Resolution:</strong> You may have faced this error because of a lookup which has not been successfully transformed. Verify in the transform file whether the value of lookup mapped attribute is transformed or not. If not, you need to rectify your mapping, or you need to add new lookup table for this connection.</p>
+
+<p>Following the above procedures, you can successfully sync customers from Shopify to SAGE 300.</p>
+:ET

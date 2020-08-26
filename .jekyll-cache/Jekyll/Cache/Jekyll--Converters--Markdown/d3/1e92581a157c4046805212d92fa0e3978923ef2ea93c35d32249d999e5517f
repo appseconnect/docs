@@ -1,0 +1,25 @@
+I"ç<h2 id="prerequisites-for-updating-inventory">Prerequisites for Updating Inventory</h2>
+
+<ol>
+  <li>Need to have a valid Priority Account.</li>
+  <li>Need to have the product registered before updating the inventory.</li>
+</ol>
+
+<h2 id="steps-to-update-inventory-in-priority">Steps to update inventory in priority</h2>
+
+<ol>
+  <li>Login to the Priority Portal with valid credentials.</li>
+  <li>Navigate to the menu and click on the Inventory button.
+<img src="/staticfiles/connectors/media/application-connector/UpdateInventory-Priority1.png" alt="UpdateInventory-Priority1" /></li>
+  <li>Navigate to Warehouse Control&gt;Inventory Count&gt;Inventory Count.<br />
+<img src="/staticfiles/connectors/media/application-connector/UpdateInventory-Priority2.png" alt="UpdateInventory-Priority2" /></li>
+  <li>The Inventory Count Window appears, input the Part Number of the product for which the inventory is to be updated.
+<img src="/staticfiles/connectors/media/application-connector/UpdateInventory-Priority3.png" alt="UpdateInventory-Priority3" /></li>
+  <li>Input the Quantity of the Product in the column Counted Quantity.
+<img src="/staticfiles/connectors/media/application-connector/UpdateInventory-Priority4.png" alt="UpdateInventory-Priority4" /></li>
+  <li>Once Updated, Enable the Approved checkbox to reflect the changes in the item. Close the Inventory Count Window after it is enabled. 
+<img src="/staticfiles/connectors/media/application-connector/UpdateInventory-Priority5.png" alt="UpdateInventory-Priority5" /></li>
+</ol>
+
+<p><strong>NOTE: For any ERP, Inventory Update can be done from Sales Order &amp; Purchase Order (e.g. Good Receiving Voucher)</strong></p>
+:ET

@@ -1,0 +1,11 @@
+I"3<ul class="toc__menu">
+  <li><a href="#pre-requisites-for-shopify--configuration">Pre-Requisites for Shopify  Configuration</a>
+    <ul>
+      <li><a href="#creation-of-private-app-is-essential-to-generate-the-api-key">Creation of Private APP is essential to generate the API Key</a></li>
+    </ul>
+  </li>
+  <li><a href="#configure-the-shopify-application-in-the-agent">Configure the Shopify Application in the Agent</a></li>
+  <li><a href="#integration-techniques">Integration Techniques</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+:ET

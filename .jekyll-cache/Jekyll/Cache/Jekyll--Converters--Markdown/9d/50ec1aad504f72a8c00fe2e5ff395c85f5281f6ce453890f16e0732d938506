@@ -1,0 +1,63 @@
+I"×<p><code class="language-plaintext highlighter-rouge">FAQ</code> is the best way to address frequently asked questions about your business, of course. This section contains list of questions and answers pertaining to a particular subject, especially one giving basic information for users of a website.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Workflow</code> FAQ will help you to get instant solution to basic problems you may face as a first time user or as an user. For FAQ <a href="https://www.appseconnect.com/faqs/what-is-appseconnect-workflow/">Click here</a></p>
+
+<p><strong>1. What is a Workflow?</strong></p>
+
+<p>A Workflow is the diagrammatical representation of the whole integration process that takes place on your agent. 
+The workflow management screen will allow you to search, filter, create and edit workflows.</p>
+
+<p><a href="/workflow/overview/">Overview of Workflows</a></p>
+
+<p><strong>2.	 How do I Create a workflow?</strong></p>
+
+<p>You will get the steps for creating your first workflow in the given link. 
+<a href="/workflow/steps-to-create-your-first-workflow/">Steps to create your first workflow</a></p>
+
+<p><strong>3.	Where can I create the Workflow?</strong></p>
+
+<p>You can create the workflow only in the APPSeCONNECT cloud portal.</p>
+
+<p><strong>4.	Is it necessary to create a connection before creating a workflow?</strong></p>
+
+<p>Yes, it is absolutely necessary to create the connection between the application you need to work on, before creating the workflow.</p>
+
+<p><strong>5.	How do I make the workflow active?</strong></p>
+
+<p>In the workflow page, you will get  a <code class="language-plaintext highlighter-rouge">button of Active/Inactive</code> checkbox to make your workflow Active or Inactive.</p>
+
+<p><strong>6.	My workflow is not being displayed in the Agent?</strong></p>
+
+<p>The steps for troubleshooting the workflow is given in the link below. 
+<strong>LINK</strong></p>
+
+<p><strong>7.	Can I Schedule my workflow?</strong></p>
+
+<p>Yes, you can schedule your workflow by clicking on the <strong>schedule option</strong> in your workflow Panel.</p>
+
+<p><img src="/staticfiles/workflow-management/media/snapshot-button.png" alt="snapshot-button" /></p>
+
+<p><strong>8. How can I add touchpoints in my workflow?</strong></p>
+
+<p>You can add your Touchpoints from the Template Menu present on the left hand side of your 
+Workflow Screen.</p>
+
+<p><strong>9.	Is it necessary to add the START node in Workflow?</strong></p>
+
+<p>Yes it is necessary to add START node in the workflow, else you cannot execute a Workflow without the START Node.</p>
+
+<p><strong>10.	Why the RUN Button of my workflow is not active even my workflow is fully active and saved?</strong></p>
+
+<p>The steps for troubleshooting the workflow is provided in the link below. If still the problem persists, please Raise a Ticket.</p>
+
+<p><strong>11. Can I Re-edit the workflow?</strong></p>
+
+<p>Yes, you can Edit/RE-edit the workflow anytime you want.</p>
+
+<p><strong>12.	What are the Pre-Requisites before working with workflow?</strong></p>
+
+<p>You will get all the necessary pre-requisite information(s) about workflow in the below link.</p>
+
+<p><a href="/workflow/steps-to-create-your-first-workflow/">Steps to create your first workflow</a></p>
+
+:ET
