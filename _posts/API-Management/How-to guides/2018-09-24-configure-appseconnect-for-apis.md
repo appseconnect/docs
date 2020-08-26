@@ -13,32 +13,14 @@ menus:
         title: "How to guides" 
         identifier: howtoapi 
 ---
-APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently.
+APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of the module will help you with the How to Guides for Connecting External Sources, Deploy to Environments and configuring applications.
 
-## Configuring APPSeConnect For APIs 
+|Sections|Details|
+|---|---|
+| [Connecting to External Sources](/api-management/connecting-to-a-data-source/)| This will guide with the functionality of connecting on or more data sources with an API proxy.|
+| [Deploy to Environments](/api-management/deployments-and-environments/)| This section of the document will guide you with the steps of deploying your API's to On-Premise Agent.|
+| [/api-management/choosing-backend-apps/](/api-management/choosing-backend-apps/)|API Proxies are API services that connects you to a remote data source or multiple data sources. This section will guide with the configurations related to the selection of applications.|
 
-Follow these steps to configure a APPSeCONNECT Proxy.
-
-1. [Create an account in APPSeCONNECT Portal](https://www.appseconnect.com/free-trial/)
-2. [Configure Environment for your project](/deployment/Deployment-Configuration/)
-3. [Choosing Back-end Apps](/api-management/choosing-backend-apps/)
-
-Afterwards, you have to register a URL for your organization.
-
-* Go to **API** section from the left side menu.
-![Webhook Introduction](/staticfiles/api-management/media/Webhook-Introduction.png)
-*  Inside **APIManagementSection** you can see Webhooks and Proxy.By defeault,Webhook section will be
-  shown.You can see all your connections listed here.
-* If you do not have a registered URL with **APPSeCONNECT** you have to Register a URL for your organization.Here is how to do it.
-   Click on Register URL button. Upon clicking you will get a  popup like this.
-![Register Url Org](/staticfiles/api-management/media/register-url-org.png)
-
-* Please activate the Cloud hosting enabled. And provide a unique name in Register Url for your organization.For example,veonconsulting.
-  So the Base URL for the organization would be `veonconsulting.appseconnectapi.com`.
-* Provide the Description for your API Stack,title and Terms and Condition Documents URL.
-* Afterwards choose a Software licensing for API consumption and usage as per your convinience.
-
-After this you are all set to create an API proxy. 
 
 [To get started on how to create a proxy follow this article.](/api-management/steps-to-create-proxy-endpoint)
 
