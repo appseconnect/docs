@@ -2546,9 +2546,9 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Company Add from Magento2 to SAGE 300",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
+      title: "Glossary",
+      excerpt: "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
+      categories: ["Glossary"],
       tags: ["developers"],
       id: 281
     });
@@ -5664,9 +5664,9 @@ var store = [
     
       
       {
-        "title": "Company Add from Magento2 to SAGE 300",
-        "url": "/integration/company-add/",
-        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+        "title": "Glossary",
+        "url": "/glossary/glossary/",
+        "excerpt": "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
