@@ -2528,20 +2528,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "2020-Q2 Version 1.0 Hotfix Release",
-      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
-      categories: ["release-notes"],
-      tags: ["developers"],
-      id: 279
-    });
-    
-  
-    idx.add({
       title: "Q2 Release Version 4.7.0",
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 280
+      id: 279
     });
     
   
@@ -2550,7 +2541,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 281
+      id: 280
     });
     
   
@@ -2559,7 +2550,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 282
+      id: 281
     });
     
   
@@ -5643,17 +5634,6 @@ var store = [
         "title": "APPSeCONNECT 2020 Release",
         "url": "/release-notes/2020/",
         "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections are Q2 Version 4.7.0 &amp; Q2...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "2020-Q2 Version 1.0 Hotfix Release",
-        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
-        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
