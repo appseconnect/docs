@@ -69,6 +69,10 @@
 <lastmod>2017-06-14T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/release-notes/2017/</loc>
+<lastmod>2017-07-14T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/release-notes/2018-Q1/</loc>
 <lastmod>2018-06-14T00:00:00+05:30</lastmod>
 </url>
@@ -1094,6 +1098,14 @@
 </url>
 <url>
 <loc>http://localhost:4000/release-notes/overview/</loc>
+<lastmod>2020-07-14T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/release-notes/2020-Q2-V1.0-Hotfix/</loc>
+<lastmod>2020-07-14T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/release-notes/2020-Q2-V2.0-Hotfix/</loc>
 <lastmod>2020-07-14T00:00:00+05:30</lastmod>
 </url>
 <url>
