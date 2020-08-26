@@ -270,7 +270,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Quickstart guides to create APIs",
-      excerpt: "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
+      excerpt: "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
       categories: ["API-Management"],
       tags: ["developers"],
       id: 28
@@ -630,7 +630,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Configuring APPSeCONNECT for API Hosting",
-      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
+      excerpt: "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
       categories: ["API-Management"],
       tags: ["developers","implementation"],
       id: 68
@@ -2375,16 +2375,16 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Customer Update from Magento2 to SAGE300",
-      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
-      categories: ["Integration"],
+      title: "Customer Update from Shopify to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users integrate updated customers...",
+      categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
       id: 262
     });
     
   
     idx.add({
-      title: "I/C Product Add from SAGE300 to Magento2",
+      title: "Customer Update from Magento2 to SAGE300",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
@@ -2393,11 +2393,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "I/C Product Add from SAGE300 to Magento2",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 264
+    });
+    
+  
+    idx.add({
       title: "I/C Product Add from SAGE 300 to Shopify",
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 264
+      id: 265
     });
     
   
@@ -2406,7 +2415,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 265
+      id: 266
     });
     
   
@@ -2415,7 +2424,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 266
+      id: 267
     });
     
   
@@ -2424,7 +2433,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 267
+      id: 268
     });
     
   
@@ -2433,7 +2442,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 268
+      id: 269
     });
     
   
@@ -2442,7 +2451,7 @@ var idx = lunr(function () {
       excerpt: "Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 269
+      id: 270
     });
     
   
@@ -2451,7 +2460,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 270
+      id: 271
     });
     
   
@@ -2460,7 +2469,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 271
+      id: 272
     });
     
   
@@ -2469,7 +2478,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.6.0 Release notes were published and last revised in May 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 272
+      id: 273
     });
     
   
@@ -2478,7 +2487,7 @@ var idx = lunr(function () {
       excerpt: "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 273
+      id: 274
     });
     
   
@@ -2487,7 +2496,7 @@ var idx = lunr(function () {
       excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 274
+      id: 275
     });
     
   
@@ -2496,7 +2505,7 @@ var idx = lunr(function () {
       excerpt: "This document highlights the details of V1.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 275
+      id: 276
     });
     
   
@@ -2505,7 +2514,7 @@ var idx = lunr(function () {
       excerpt: "This document highlights the details of V2.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 276
+      id: 277
     });
     
   
@@ -2514,7 +2523,16 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections are Q2 Version 4.7.0 &amp; Q2...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 277
+      id: 278
+    });
+    
+  
+    idx.add({
+      title: "2020-Q2 Version 1.0 Hotfix Release",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 279
     });
     
   
@@ -2523,7 +2541,25 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 278
+      id: 280
+    });
+    
+  
+    idx.add({
+      title: "Managing - Schema & Actions",
+      excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 281
+    });
+    
+  
+    idx.add({
+      title: "Working with Capture Variables",
+      excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 282
     });
     
   
@@ -2856,7 +2892,7 @@ var store = [
       {
         "title": "Quickstart guides to create APIs",
         "url": "/api-management/quickstart-guides-to-api-management/",
-        "excerpt": "API Management of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that...",
+        "excerpt": "APPSeCONNECT API Management APPSeCONNECT being an API management platform allows to create, manage, deploy, maintain APIs for an organization such...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3296,7 +3332,7 @@ var store = [
       {
         "title": "Configuring APPSeCONNECT for API Hosting",
         "url": "/api-management/configure-appseconnect-for-apis/",
-        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. Configuring APPSeConnect For...",
+        "excerpt": "APPSeCONNECT is a platform which allows hosting of APIs such that the hosted APIs could run independently. This section of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5428,6 +5464,17 @@ var store = [
     
       
       {
+        "title": "Customer Update from Shopify to SAGE 300",
+        "url": "/integration/sage-shopify/customer-update/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This document will let the users integrate updated customers...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Customer Update from Magento2 to SAGE300",
         "url": "/integration/customer-update/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
@@ -5604,9 +5651,42 @@ var store = [
     
       
       {
+        "title": "2020-Q2 Version 1.0 Hotfix Release",
+        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Q2 Release Version 4.7.0",
         "url": "/release-notes/2020-Q2/",
         "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Managing - Schema & Actions",
+        "url": "/processflow/adding-schema-actions/",
+        "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Working with Capture Variables",
+        "url": "/processflow/working-with-variable/",
+        "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
