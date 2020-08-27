@@ -1049,6 +1049,10 @@
 <lastmod>2020-05-20T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/integration/sage-shopify/customer-update/</loc>
+<lastmod>2020-05-20T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/integration/customer-update/</loc>
 <lastmod>2020-05-21T00:00:00+05:30</lastmod>
 </url>
@@ -1115,6 +1119,14 @@
 <url>
 <loc>http://localhost:4000/release-notes/2020-Q2/</loc>
 <lastmod>2020-07-14T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/processflow/adding-schema-actions/</loc>
+<lastmod>2020-07-15T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/processflow/working-with-variable/</loc>
+<lastmod>2020-07-15T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/CONTRIBUTING/</loc>
