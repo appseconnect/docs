@@ -187,7 +187,9 @@ You will be able to view the saved template for that schema and the action. The 
 **Note:**
 
 **- Each action of a schema can have only one created template.**
+
 **- You cannot modify the template when viewed from the [Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) section.**
+
 **- You can also `view` , `edit` and `delete` the saved template from the [APPS](/getting%20started/configurations/) section.**
 
 
