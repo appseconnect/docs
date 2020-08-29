@@ -2554,6 +2554,24 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "APPSeCONNECT Glossary",
+      excerpt: "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
+      categories: ["Glossary"],
+      tags: ["developers"],
+      id: 282
+    });
+    
+  
+    idx.add({
+      title: "Glossary",
+      excerpt: "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
+      categories: ["Glossary"],
+      tags: ["developers"],
+      id: 283
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5667,6 +5685,28 @@ var store = [
         "title": "Working with Capture Variables",
         "url": "/processflow/working-with-variable/",
         "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "APPSeCONNECT Glossary",
+        "url": "/glossary/appseconnect-glossary/",
+        "excerpt": "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Glossary",
+        "url": "/glossary/glossary/",
+        "excerpt": "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

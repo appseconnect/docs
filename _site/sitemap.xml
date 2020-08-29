@@ -1129,6 +1129,14 @@
 <lastmod>2020-07-15T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/glossary/appseconnect-glossary/</loc>
+<lastmod>2020-08-20T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/glossary/glossary/</loc>
+<lastmod>2020-08-24T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/CONTRIBUTING/</loc>
 </url>
 <url>
@@ -1214,6 +1222,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/integration-sage-shopify/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/glossary/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/courses.html</loc>
