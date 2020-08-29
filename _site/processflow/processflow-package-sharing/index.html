@@ -1235,6 +1235,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/integration/company-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/integration/company-add/" onclick="selectTab('/integration/company-add/', event);" title="Go to Company Add">Company Add</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/integration/customer-add/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/integration/customer-add/" onclick="selectTab('/integration/customer-add/', event);" title="Go to Customer Add">Customer Add</a>
         
@@ -2386,21 +2392,22 @@ This document will enable you to initate sharing packages from one organisation 
 
 <p>2) Expand the <strong>Package Library</strong> node and click on <strong>My Packages</strong>. The <a href="/processflow/processflow-packaging/#listing-packages">package listing</a> page opens.</p>
 
-<p><img src="" alt="packageshare1" /></p>
+<p><img src="\staticfiles\processflow\media\packageshare1.PNG" alt="packageshare1" /></p>
 
-<p>3) Click on the <strong>Package</strong> drop-down on the package listing page. You will be able to view two options: <strong>CREATE</strong> and <strong>SHARE</strong>. Click on the Share button.</p>
+<p>3) Click on the <strong>Package</strong> drop-down on the package listing page. You will be able to view two options: <strong>SHARE</strong> and <strong>NEW</strong>. Click on the Share button.</p>
 
-<p><img src="" alt="packageshare2" /></p>
+<p><img src="\staticfiles\processflow\media\packageshare2.PNG" alt="packageshare2" /></p>
 
 <p>4) The Package Sharing windows opens. The package sharing window consists of the two sections: <strong>Choose Package</strong> and <strong>Select Organisation</strong>.</p>
 
-<p><img src="" alt="packageshare3" /></p>
+<p><img src="\staticfiles\processflow\media\packageshare3.PNG" alt="packageshare3" /></p>
 
-<p>5) The Choose package window is divided mainly into two parts: Left Pane and Right Pane. The <code class="highlighter-rouge">Left Pane</code> will list all the folders under <strong>Package Library</strong>.
-The <code class="highlighter-rouge">Right Pane</code> will have two sections:</p>
+<p>5) The Choose package window is divided mainly into two parts: Left Pane and Right Pane. The <code class="language-plaintext highlighter-rouge">Left Pane</code> will list all the folders under <strong>Package Library</strong>.
+The <code class="language-plaintext highlighter-rouge">Right Pane</code> will have two sections:</p>
 <ul>
-  <li><strong>List of Packages</strong> - You will listed with all the packages available on your organisation.</li>
-  <li><strong>Selected packages</strong> - This will list all the packages, selected for sharing</li>
+  <li><strong>Folder Path</strong> - You will be provided with the Package Library node. On expanding, you can view the My Packages folder from which you can select the required packages.</li>
+  <li><strong>Package List</strong> - You will listed with all the packages available on your organisation. At a time, you will be able to view 3 packages. However, can navigate to the other pages by using the pagination below.</li>
+  <li><strong>Selected packages</strong> - This will list all the packages, selected for sharing.</li>
 </ul>
 
 <p>6) On the “Choose Package” step, you will be listed with all the packages that are created on your organisation, under the <strong>List of Packages</strong> section. The following details will be present in the list of packages section.</p>
@@ -2408,47 +2415,38 @@ The <code class="highlighter-rouge">Right Pane</code> will have two sections:</p
 <ul>
   <li><strong>Name</strong> : The package name will be displayed.</li>
   <li><strong>Description</strong> : The package description will be displayed.</li>
-  <li><strong>Apps used</strong> : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.</li>
   <li><strong>Filter Icon</strong> : This will enable you to search packages based on the name as a keyword.</li>
 </ul>
 
 <p>Beside the package name, you will have checkboxes that will allow you to select the packages for sharing.</p>
 
-<p><img src="" alt="packageshare4" /></p>
-
-<p>7) Enabling the checkboxes, the packages selected will be displayed in the <strong>Selected Packages</strong> section on your right side. You can also remove the packages from Selected Packages, if you chosen mistakenly by unchecking the checkbox in the list of packages section.
+<p>7) Enabling the checkboxes, the packages selected will be displayed in the <strong>Selected Packages</strong> section on your right side. You can also remove the packages from Selected Packages, if you have chosen mistakenly, by unchecking the checkbox in the list of packages section.
 Once the packages are selected, click on the <strong>Continue</strong> button. 
-<img src="" alt="packageshare5" /></p>
+<img src="\staticfiles\processflow\media\packageshare5.PNG" alt="packageshare5" /></p>
 
 <p>8) You will be navigated to the <strong>Select Organisation</strong> step, where you will be able to search and select the individual organisation with whom you want to share the package.</p>
 
-<p><img src="" alt="packageshare6" /></p>
+<p><img src="\staticfiles\processflow\media\packageshare6.PNG" alt="packageshare6" /></p>
 
 <p>9) The search box in the <strong>Select Organisation from list</strong> will enable you to look for the required organisation. You can type the name of the organisation or the associated Email Address. Based on the input the suggestion will be provided in the list.</p>
 
-<p><img src="" alt="packageshare7" /></p>
+<p><img src="\staticfiles\processflow\media\packageshare7.PNG" alt="packageshare7" /></p>
 
-<p>10) As multiple organisation may have same name, therefore, you can provide multiple criteria’s in the search box separated by providing <strong>SPACE</strong> between the two criteria.</p>
+<p>10) You need to click on the organisation name to select. On its selection, you will be able to view the selected organisation in the <strong>Selected Organisation to share</strong> section.
+You can remove the selected organisation, by clicking on the <strong>CLOSE</strong> <code class="language-plaintext highlighter-rouge">X</code> button beside the organisation in the  <strong>Selected Organisation to share</strong> section. Once the organisation is selected, click on the share button. You will be getting a confirmation message and confirmation mail regarding the successful sharing.
+<img src="\staticfiles\processflow\media\packageshare9.PNG" alt="packageshare9" /></p>
 
-<p><img src="" alt="packageshare8" /></p>
+<p>11) You can confirm the sharing by navigating to <strong>My Packages</strong> listing page under PACKAGE LIBRARY node. You will be able to view the <strong>Shared icon</strong> beside the packages you have shared.</p>
 
-<p>11) You need to click on the organisation name to select. On its selection, you will be able to view the selected organisation in the <strong>Selected Organisation to share</strong> section.
-You can remove the selected organisation, by clicking on the <strong>CLOSE</strong> <code class="highlighter-rouge">X</code> button beside the organisation in the  <strong>Selected Organisation to share</strong> section.</p>
+<p><img src="\staticfiles\processflow\media\packageshare11.PNG" alt="packageshare11" /></p>
 
-<p><img src="" alt="packageshare9" /></p>
-
-<p>12) Once the organisation is selected, click on the share button. You will be getting a confirmation message on successful sharing.
-<img src="" alt="packageshare10" /></p>
-
-<p>13) You can confirm the sharing by navigating to <strong>My Packages</strong> listing page under PACKAGE LIBRARY node. You will be able to view the <strong>Shared icon</strong> beside the packages you have shared.</p>
-
-<p><img src="" alt="packageshare11" /></p>
-
-<p>Following the above process, you can successfully share packages from your organisatio to multiple other organisation.</p>
+<p>Following the above process, you can successfully share packages from your organisation to multiple other organisation.</p>
 
 <p><strong>Note:</strong></p>
 <ul>
   <li>You can select multiple organisation for sharing.</li>
+  <li>You can share your created packages on your organisation for creating a COPY of the process flows for future use.</li>
+  <li>As multiple organisation may have same name, therefore, you can provide multiple criteria’s in the search box separated by providing <strong>SPACE</strong> between the two criteria.</li>
   <li>Each search criteria will be taken as individual TAGS, and can be removed by the user if needed.</li>
 </ul>
 
@@ -4746,8 +4744,18 @@ You can remove the selected organisation, by clicking on the <strong>CLOSE</stro
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
