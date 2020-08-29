@@ -162,4 +162,32 @@ Following the above process, you can successfully implement Retry filter for an 
 
 1) Drag the application node for whose Action filter/Retry filter you need to create as a template.
 
-2) You need to navigate to the Node Configuration window > Manag Schema > 
+2) You need to navigate to the Node Configuration window > Select Action > configure filter.
+
+3) The Configure Filter opens. Expand the nodes until `Action filter` & `Retry Filter` appears. 
+
+4) Click on the **CREATE** button as per the options selected, either ACTION FILTER or RETRY FILTER. The create window opens as per the selected choice (The window remains same for both Action Filter and Retry Filter). 
+**Here we have chosen ACTION FILTER**.
+
+![savetemplate1]()
+
+4) Provide the details in the fields and click on the SAVE icon beside the filter column. After saving the column, you get the option of **SAVE AS TEMPLATE**.
+
+![savetemplate2]()
+
+5) Click on the **Save as Template** button to save the provided Action Filter as a template. 
+You can reuse this saved template on any other nodes of any Process Flow in your organisation, 
+provided the **application node** , **Schema** & the **Action** remains the same.
+
+6) You can view the saved for the schema and action by navigating to **[Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) > your selected Schema Entity > The Action in which you have created the Template > Click on the Action filter.**
+You will be able to view the saved template for that schema and the action. The template will not be editable in the Manage schema window.
+
+![savetemplate3]()
+
+**Note:**
+
+**- Each action of a schema can have only one created template.**
+**- You cannot modify the template when viewed from the [Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) section.**
+**- You can also `view` , `edit` and `delete` the saved template from the [APPS](/getting%20started/configurations/) section.**
+
+
