@@ -2563,6 +2563,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "ZohoBooks",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 283
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5687,6 +5696,17 @@ var store = [
         "title": "Company Add from Magento2 to SAGE 300",
         "url": "/integration/company-add/",
         "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "ZohoBooks",
+        "url": "/connectors/zohobooks/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

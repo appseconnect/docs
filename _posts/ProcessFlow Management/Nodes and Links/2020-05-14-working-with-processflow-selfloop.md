@@ -34,7 +34,6 @@ self-loop.
 
 **_Note: You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution._**
 
-
 ### Working Principle
 ![PF_selfloop1](\staticfiles\processflow\media\pfselfloop1.PNG)
 

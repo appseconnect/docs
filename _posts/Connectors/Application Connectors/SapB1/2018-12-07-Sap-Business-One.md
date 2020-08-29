@@ -29,17 +29,17 @@ application of SAP Business One, attributes and action, and the Troubleshooting 
 
 ## Configure the SAP Business One Application in the Agent
 
-1. Open APPSeCONNECT Agent by providing correct credentials.
+1) Open APPSeCONNECT Agent by providing correct credentials.
 
-2. In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPSeCONNECT Cloud.
+2) In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPSeCONNECT Cloud.
 
 ![sapb1-agent1](/staticfiles/connectors/media/application-connector/sapb1-agent1.png)
 
-3. Click on the credentials icon to provide SAP B1 credentials to validate the connection.
+3) Click on the credentials icon to provide SAP B1 credentials to validate the connection.
 
 ![sapb1-agent2](/staticfiles/connectors/media/application-connector/sapb1-agent2.png)
 
-4. Provide the credentials of SAP B1
+4) Provide the credentials of SAP B1
 
 ![sapb1-agent3](/staticfiles/connectors/media/application-connector/sapb1-agent3.png)
 
@@ -48,24 +48,64 @@ This path later needs to be provided in SAP B1 as well.
 
 **Follow the steps mentioned below, to provide SAP Event XML file path & SAP Image file path in SAP B1**
 
-1. Open SAP B1 after providing valid credentials.
-2. Navigate through Administrator > System Initialization > General Settings.
-3. A form will open. Select "Path" menu under it. Browse for SAP Event XML file path and Image path.
+-  Open SAP B1 after providing valid credentials.
+-  Navigate through Administrator > System Initialization > General Settings.
+-  A form will open. Select "Path" menu under it. Browse for SAP Event XML file path and Image path.
 
 ![sapb1-agent4](/staticfiles/connectors/media/application-connector/sapb1-agent4.png)
 
-5. After providing all the credentials. Click "Save" button.
+5) After providing all the credentials. Click "Save" button.
 
 ![sapb1-agent5](/staticfiles/connectors/media/application-connector/sapb1-agent5.png)
 
 A message "Connection Data Saved" will appear if all the credentials provided by you for SAP B1 is valid.
 
-6. Click on the "Validate" button, to validate the connection.
+6) Click on the "Validate" button, to validate the connection.
 
 ![sapb1-agent6](/staticfiles/connectors/media/application-connector/sapb1-agent6.png)
 
 A message "Test Connection Successful" will appear if all the credentials provided by you for SAP B1 is valid. 
 In this way, you can configure the credentials of SAP B1.
+
+### Custom Database Type Selection:
+
+By default, the field for `Database Type` list the following types in its drop-down and they are:
+- Hana Database
+- Microsoft SQL Server 2000
+- Microsoft SQL Server 2005
+- Microsoft SQL Server 2008
+- Microsoft SQL Server 2014
+- Microsoft SQL Server 2016
+- Microsoft SQL Server 2017
+- Microsoft SQL Server 2019
+
+SAP DIS adapter gives you the flexibility to create and support Custom database on its drop-down as per your requirement. Follow the below procedure to create custom database type.
+
+1) Navigate to the APPSeCONNECT Folder, where your APPSeCONNECT OP Agent is downloaded.
+
+2) Navigate to APPSeCONNECT > Adapter > BoDataServerTypes. 
+
+3) Open the file **BoDataServerTypes** with NOTEPAD, available inside the **Adapter** folder. You can view the XML structure that defines all the default database types.
+
+![sapdbtype1](\staticfiles\connectors\media\application-connector\sapdbtype1.PNG)
+
+4) At the bottom of the file, add the syntax for adding a new database type.
+
+![sapdbtype2](\staticfiles\connectors\media\application-connector\sapdbtype2.PNG)
+
+While Adding make sure, the On-Premise Agent is closed & and Enable Environment is off.
+
+5) The file would look as given below.
+
+![sapdbtype3](\staticfiles\connectors\media\application-connector\sapdbtype3.PNG)
+
+7) Restart your On-Premise Agent and check for the database type drop-down list. You should have the the added database type in the list.
+
+![sapdbtype4](\staticfiles\connectors\media\application-connector\sapdbtype4.PNG)
+
+Following the above process, you can successfully add your custom database type for your application SAP DIS.
+
+**Note:** Adding custom database type requires ADMINISTRATOR permission. Incase, your system user profile does not have the admin permission, you need to manually provide the admin permission both in the **ADAPTER** folder and the **BoDataServerTypes** file.
 
 ## Troubleshooting
 

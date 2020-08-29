@@ -86,7 +86,7 @@ a. **Properties**: The panel appears, when the user selects an active OP Agent f
 This page will give live information about the current OP agent, including:  
 * Architecture in use
 * The latest agent deployment version for the selected environment
-* Agent last restart time is default 03:49 for all organizations who are using OP Agent. Later you can view the dynamic time of agent restart if restarted manually.  
+* Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually.  
 * APPSeCONNECT directory free space available
 * CPU and Memory Usage display the dynamic data depending on the consumption rate.
 * Agent Installation directory path
