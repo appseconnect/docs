@@ -32,6 +32,9 @@ You can execute a Self loop by choosing any one one of the three given options.
 Although the availability of data is always the prime criteria for executing the 
 self-loop.
 
+**_Note: You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution._**
+
+
 ### Working Principle
 ![PF_selfloop1](\staticfiles\processflow\media\pfselfloop1.PNG)
 
@@ -72,7 +75,8 @@ screen appears.
 
 _**(a)Maximum no. of characters allowed in the Description Field will be Max.  
 (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
-(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_ 
+(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.
+(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution.**_
 
 ### Execution flow for Self loop:
 
