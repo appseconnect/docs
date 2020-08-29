@@ -2381,13 +2381,13 @@ does not belong to a specific domain.If the decision is satisfied then the data 
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="language-plaintext highlighter-rouge">DECISION</code> node in APPSeCONNECT workflow is used for controlling decision based flow in a workflow .</p>
+<p><code class="highlighter-rouge">DECISION</code> node in APPSeCONNECT workflow is used for controlling decision based flow in a workflow .</p>
 
 <p><strong>Application used for the scenario is: Magento2 and SAP B1.</strong></p>
 
 <p>The Business Partner Touchpoint is used, where the DECISION node is implemented after the PROCESS Operation. 
-Here a condition is implemented that <code class="language-plaintext highlighter-rouge">if the country of the Business Partner is US</code>, the data will be 
-accepted else if the <code class="language-plaintext highlighter-rouge">Business Partner is from different country</code> the <code class="language-plaintext highlighter-rouge">decision will be a failure</code>.<br />
+Here a condition is implemented that <code class="highlighter-rouge">if the country of the Business Partner is US</code>, the data will be 
+accepted else if the <code class="highlighter-rouge">Business Partner is from different country</code> the <code class="highlighter-rouge">decision will be a failure</code>.<br />
 On the Failure an Email Action is setup which will be triggered only when a Business Partner has failed 
 to meet the condition of the decision.</p>
 

@@ -2385,8 +2385,8 @@
 <p>Touchpoints are the point of action which when triggered transfers informations between the schema/entities. This happens when the attributes of the source entity are mapped with the attributes of the destination entity of that touchpoint.
 Touchpoints are needed to be triggered in an order as each touchpoint’s serves each purpose.</p>
 
-<p>For Instance: Before triggering the touchpoint <code class="language-plaintext highlighter-rouge">INVOICE ADD, the touchpoint ORDER ADD</code> is needed to be triggered before and before triggering 
-order add, <code class="language-plaintext highlighter-rouge">CUSTOMER ADD or BUSINESS PARTNER ADD</code> is needed to be triggered.</p>
+<p>For Instance: Before triggering the touchpoint <code class="highlighter-rouge">INVOICE ADD, the touchpoint ORDER ADD</code> is needed to be triggered before and before triggering 
+order add, <code class="highlighter-rouge">CUSTOMER ADD or BUSINESS PARTNER ADD</code> is needed to be triggered.</p>
 
 <p>This is done to remove discrepancy with the customer records. So this raises a dependency factor among each of the touchpoint.</p>
 
@@ -2409,7 +2409,7 @@ order add, <code class="language-plaintext highlighter-rouge">CUSTOMER ADD or BU
    for getting the related data from the source application in order to execute the related touchpoint. 
    The primary touchpoint will resume immediately after the related touchpoint executes.</p>
 
-<p>For Instance: Suppose before executing the touchpoint <code class="language-plaintext highlighter-rouge">ORDER ADD</code> an <code class="language-plaintext highlighter-rouge">In-Process</code> Task is executed for the touchpoint 
+<p>For Instance: Suppose before executing the touchpoint <code class="highlighter-rouge">ORDER ADD</code> an <code class="highlighter-rouge">In-Process</code> Task is executed for the touchpoint 
 Business Partner Add where, all the orders will be fetched but will be halted for the related touchpoint to get synced. 
 This is done to reduce the discrepancy with the data alignment. Like if the Business Partner Touchpoint is synced
 all the customer would be fetched, and after a minute the ORDER ADD touchpoint is synced now the discrepancy might happen 
@@ -2422,7 +2422,7 @@ as the input of the related touchpoint. For e.g. order increment id of sales ord
 <p><strong>5.Post-Input Task:</strong> This kind of dependency is implemented when the data fetched from the primary touchpoint serves as the source data of 
    the related touchpoint.</p>
 
-<p>For Eg: In case of the Order <code class="language-plaintext highlighter-rouge">add touchpoint</code> and the Guest<code class="language-plaintext highlighter-rouge"> Customer Add touchpoint</code>, the data fetched from the source of the primary touchpoint 
+<p>For Eg: In case of the Order <code class="highlighter-rouge">add touchpoint</code> and the Guest<code class="highlighter-rouge"> Customer Add touchpoint</code>, the data fetched from the source of the primary touchpoint 
 (in this case, Order Add) acts as the source data for the related touchpoint, letting both the task to work without any discrepancy.</p>
 
 <h2 id="prerequisite">Prerequisite</h2>

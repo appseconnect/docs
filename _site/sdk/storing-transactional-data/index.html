@@ -2401,9 +2401,9 @@ for an integration point only. Hence integration storage data are separate for e
  <span class="c1">// To retrieve the same data</span>
  <span class="kt">var</span> <span class="n">data</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">_context</span><span class="p">.</span><span class="nf">GetData</span><span class="p">(</span><span class="s">"StorageKey"</span><span class="p">);</span>
 </code></pre></div></div>
-<p>In the above code, you are storing a string value for a particular key namely <code class="language-plaintext highlighter-rouge">StorageKey</code>, the data of which can 
-be retrieved using <code class="language-plaintext highlighter-rouge">GetData</code> method again. The <code class="language-plaintext highlighter-rouge">_context</code>  represents an instance of <code class="language-plaintext highlighter-rouge">ApplicationContext</code> which one
-can get from <code class="language-plaintext highlighter-rouge">Initialize</code> method of <code class="language-plaintext highlighter-rouge">IAdapter</code> or <code class="language-plaintext highlighter-rouge">IAppResource</code> implementation.</p>
+<p>In the above code, you are storing a string value for a particular key namely <code class="highlighter-rouge">StorageKey</code>, the data of which can 
+be retrieved using <code class="highlighter-rouge">GetData</code> method again. The <code class="highlighter-rouge">_context</code>  represents an instance of <code class="highlighter-rouge">ApplicationContext</code> which one
+can get from <code class="highlighter-rouge">Initialize</code> method of <code class="highlighter-rouge">IAdapter</code> or <code class="highlighter-rouge">IAppResource</code> implementation.</p>
 
 <p>The integration storage are best to store incremental or transaction related data that is atomic to a particular 
 transaction only and you are sure those data is not needed from any other integration point.</p>
@@ -2450,12 +2450,12 @@ you want them as reference data for future transactions. In such cases, Transact
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>The model class represents one single row of a Table. First of all, to define a model, you must Inherit it from <code class="language-plaintext highlighter-rouge">ObjectBase</code>.</p>
+<p>The model class represents one single row of a Table. First of all, to define a model, you must Inherit it from <code class="highlighter-rouge">ObjectBase</code>.</p>
 
 <p>The first thing to look at is the name of the Table. You can see we have tried to create a table named SyncInfo. The <a href="http://isdn.appseconnect.com/html/D1DCF68E.htm">TableAttribute</a> is used to annotate a model class with table attributes. 
 You can specify <a href="http://isdn.appseconnect.com/html/5F039121.htm">Name</a> and <a href="http://isdn.appseconnect.com/html/53EDA623.htm">DataLimit</a> for a table. The DataLimit property will ensure that any rows greater than predefined value will automatically delete the rows which are oldest.</p>
 
-<p>The Properties on the other hand are annotated using <a href="http://isdn.appseconnect.com/html/72A02280.htm"><code class="language-plaintext highlighter-rouge">ColumnAttribute</code></a>. The Name of the Column needs to be unique for each table and there must be its data type defined. 
+<p>The Properties on the other hand are annotated using <a href="http://isdn.appseconnect.com/html/72A02280.htm"><code class="highlighter-rouge">ColumnAttribute</code></a>. The Name of the Column needs to be unique for each table and there must be its data type defined. 
 You can also specify the <a href="http://isdn.appseconnect.com/html/824D69BC.htm">DefaultValue</a> for each column, such that if no data is passed in, the property will get a Default value. You can also specify various attributes to the property.
 Here are some of the important properties of ColumnAttribute.</p>
 
@@ -2489,7 +2489,7 @@ Here are some of the important properties of ColumnAttribute.</p>
 </code></pre></div></div>
 
 <p>In the above code, we have executed the transaction to create a table based on a model. We need to ensure that the table is created only once, so it is recommended to CreateTable inside Credential object storage event or
-inside <code class="language-plaintext highlighter-rouge">Initialize</code> block of Adapter.</p>
+inside <code class="highlighter-rouge">Initialize</code> block of Adapter.</p>
 
 <p>Similar to this, you can use any operation based on the object model. For instance, if you require to store a data, you can use the following code :</p>
 
@@ -2549,7 +2549,7 @@ inside <code class="language-plaintext highlighter-rouge">Initialize</code> bloc
 <span class="p">}</span>
 </code></pre></div></div>
 <p>In the above code, you can see the AECPRODUCTDATA table records are being fetched using multiple filter conditions.
-The filter conditions are specified for each columns using object of <a href="http://isdn.appseconnect.com/html/32CC8FA8.htm"><code class="language-plaintext highlighter-rouge">DatabaseFilter</code></a> type and when the Transaction is executed through the Execute method, 
+The filter conditions are specified for each columns using object of <a href="http://isdn.appseconnect.com/html/32CC8FA8.htm"><code class="highlighter-rouge">DatabaseFilter</code></a> type and when the Transaction is executed through the Execute method, 
 the data is retrieved from the database.</p>
 
 <h2 id="file-storage">File Storage</h2>

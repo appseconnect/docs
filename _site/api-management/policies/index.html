@@ -2382,8 +2382,8 @@ altogether.</p>
 <img src="/staticfiles/api-management/media/api-policy-pipeline.png" alt="Api Policy Pipeline" /></p>
 
 <p>In the above image, it is eminent that when a request is received to the API gateway, it goes through the pipeline 
-first to authentication through user registry, then execute <code class="language-plaintext highlighter-rouge">Inbound</code> policies, next it executes the backend action 
-to generate the response in XML format, executes the <code class="language-plaintext highlighter-rouge">Outbound</code> policies and finally returns the response 
+first to authentication through user registry, then execute <code class="highlighter-rouge">Inbound</code> policies, next it executes the backend action 
+to generate the response in XML format, executes the <code class="highlighter-rouge">Outbound</code> policies and finally returns the response 
 back to the caller.</p>
 
 <p><strong>Note: Policies execute in sequential order, you can change the sequence anytime just to ensure the 
@@ -2392,11 +2392,11 @@ policies are configured correctly</strong></p>
 <p>The policies are of two types:</p>
 
 <h2 id="inbound-policy">Inbound Policy</h2>
-<p>If the policies are applied before executing the actual action in the backend, the policy is termed as <code class="language-plaintext highlighter-rouge">Inbound</code> policy.</p>
+<p>If the policies are applied before executing the actual action in the backend, the policy is termed as <code class="highlighter-rouge">Inbound</code> policy.</p>
 
 <h2 id="outbound-policy">Outbound Policy</h2>
 <p>If a policy is applied after the execution of backend action and the response result set is already generated, 
-the policy is termed as <code class="language-plaintext highlighter-rouge">Outbound</code> policy.</p>
+the policy is termed as <code class="highlighter-rouge">Outbound</code> policy.</p>
 
 <h2 id="policy-references">Policy References</h2>
 
@@ -2414,35 +2414,35 @@ the policy is termed as <code class="language-plaintext highlighter-rouge">Outbo
     <tr>
       <td><a href="/api-management/quota-per-user-key/">Throttling Policy</a></td>
       <td>Throttling applies to certain user such that after a fixed number of calls, the API will automatically throttle. <a href="/api-management/quota-per-user-key/">Read More</a></td>
-      <td><code class="language-plaintext highlighter-rouge">Inbound</code></td>
+      <td><code class="highlighter-rouge">Inbound</code></td>
       <td>No</td>
       <td>Operation</td>
     </tr>
     <tr>
       <td><a href="/api-management/ip-restrict/">IP Restrict Policy</a></td>
       <td>Allows the user to provide IP range which will automatically restrict calls<a href="/api-management/ip-restrict/">Read More</a></td>
-      <td><code class="language-plaintext highlighter-rouge">Inbound</code></td>
+      <td><code class="highlighter-rouge">Inbound</code></td>
       <td>No</td>
       <td>Operation</td>
     </tr>
     <tr>
       <td><a href="/api-management/validate-http-header/">ValidateHttpHeader Policy</a></td>
       <td>Validates a fixed header on a request <a href="/api-management/validate-http-header/">ReadMore</a></td>
-      <td><code class="language-plaintext highlighter-rouge">Inbound</code></td>
+      <td><code class="highlighter-rouge">Inbound</code></td>
       <td>No</td>
       <td>Operation</td>
     </tr>
     <tr>
       <td><a href="/api-management/compression-apply/">Compression Policy</a></td>
       <td>Allows compressed response when browser accepts compression <a href="/api-management/compression-apply/">Read More</a></td>
-      <td><code class="language-plaintext highlighter-rouge">Outbound</code></td>
+      <td><code class="highlighter-rouge">Outbound</code></td>
       <td>No</td>
       <td>Operation</td>
     </tr>
     <tr>
       <td><a href="/api-management/response-content-format/">ResponseFormatConversion Policy</a></td>
       <td>Replies data in format requested <a href="/api-management/response-content-format/">Read More</a></td>
-      <td><code class="language-plaintext highlighter-rouge">Outbound</code></td>
+      <td><code class="highlighter-rouge">Outbound</code></td>
       <td>No</td>
       <td>Operation</td>
     </tr>
@@ -2464,12 +2464,12 @@ the policy is termed as <code class="language-plaintext highlighter-rouge">Outbo
   <tbody>
     <tr>
       <td>Operation</td>
-      <td>Applies to leaf level of an API, for example, when <code class="language-plaintext highlighter-rouge">Customer</code> is an API, Operation is <code class="language-plaintext highlighter-rouge">GET</code> of a Customer.</td>
+      <td>Applies to leaf level of an API, for example, when <code class="highlighter-rouge">Customer</code> is an API, Operation is <code class="highlighter-rouge">GET</code> of a Customer.</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>API</td>
-      <td>Applies to a particular API and automatically override all <code class="language-plaintext highlighter-rouge">Operation</code> of the API</td>
+      <td>Applies to a particular API and automatically override all <code class="highlighter-rouge">Operation</code> of the API</td>
       <td>Yes</td>
     </tr>
     <tr>
@@ -2485,9 +2485,9 @@ the policy is termed as <code class="language-plaintext highlighter-rouge">Outbo
   </tbody>
 </table>
 
-<p>Once <code class="language-plaintext highlighter-rouge">Inbound</code>specifies the scope of the policy to be applied before execution of main data source and <code class="language-plaintext highlighter-rouge">Outbound</code>specifies it after the execution of main data source.</p>
+<p>Once <code class="highlighter-rouge">Inbound</code>specifies the scope of the policy to be applied before execution of main data source and <code class="highlighter-rouge">Outbound</code>specifies it after the execution of main data source.</p>
 
-<p><strong>NOTE: Do not validate a request in <code class="language-plaintext highlighter-rouge">Outbound</code> scope, as it will always consume your resources and response time will be increased.</strong></p>
+<p><strong>NOTE: Do not validate a request in <code class="highlighter-rouge">Outbound</code> scope, as it will always consume your resources and response time will be increased.</strong></p>
 
                 
             </section>
