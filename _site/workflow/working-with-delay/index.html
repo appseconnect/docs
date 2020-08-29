@@ -2386,16 +2386,16 @@
                 </aside>
                 
                 <h3 id="what-is-delay-node">What is Delay node?</h3>
-<p><code class="language-plaintext highlighter-rouge">DELAY</code> node is used to delay or stop an execution flow for a specific period. 
-For example I have an API which accepts only one request per second. So before calling the API for <code class="language-plaintext highlighter-rouge">POST</code> or <code class="language-plaintext highlighter-rouge">GET</code> operation, I can put a delay node which will delay the execution of <code class="language-plaintext highlighter-rouge">GET</code> or <code class="language-plaintext highlighter-rouge">POST</code> node for the specified amount of time.</p>
+<p><code class="highlighter-rouge">DELAY</code> node is used to delay or stop an execution flow for a specific period. 
+For example I have an API which accepts only one request per second. So before calling the API for <code class="highlighter-rouge">POST</code> or <code class="highlighter-rouge">GET</code> operation, I can put a delay node which will delay the execution of <code class="highlighter-rouge">GET</code> or <code class="highlighter-rouge">POST</code> node for the specified amount of time.</p>
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="language-plaintext highlighter-rouge">DELAY</code> node in APPSeCONNECT workflow used to delay the execution of a node.</p>
+<p><code class="highlighter-rouge">DELAY</code> node in APPSeCONNECT workflow used to delay the execution of a node.</p>
 
 <h3 id="scenario-1">Scenario 1</h3>
 
-<p>Use <code class="language-plaintext highlighter-rouge">DELAY</code> node in scenarios like API rate limit,response time delay etc.</p>
+<p>Use <code class="highlighter-rouge">DELAY</code> node in scenarios like API rate limit,response time delay etc.</p>
 
 <p>In the below example I want to upload stock from ERP to Shopify and for creating the example we are assuming that Shopify API accept one request per second then we can implement delay node with interval time of one secondlike the below picture.</p>
 
@@ -2405,7 +2405,7 @@ For example I have an API which accepts only one request per second. So before c
 
 <p><strong>Application Used for the scenario is: Magento 2 and SAP B1</strong></p>
 
-<p>The Delay node has been implemented using the touchpoint <code class="language-plaintext highlighter-rouge">ORDER ADD</code> where the <code class="language-plaintext highlighter-rouge">DELAY</code> node is used after <code class="language-plaintext highlighter-rouge">GET operation</code> and is Delayed for 20 seconds. 
+<p>The Delay node has been implemented using the touchpoint <code class="highlighter-rouge">ORDER ADD</code> where the <code class="highlighter-rouge">DELAY</code> node is used after <code class="highlighter-rouge">GET operation</code> and is Delayed for 20 seconds. 
 While executing DELAY the orders that was placed within the specified time, will also be fetched for the sync Process</p>
 
 

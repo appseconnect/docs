@@ -2386,9 +2386,9 @@ multiple hits to the application. The Merger Node combines multiple XML document
 
 <p><strong>Prerequisites: All input documents should have the same set of schema and attributes. Input document has to be in XML format</strong></p>
 
-<p>Like a <code class="language-plaintext highlighter-rouge">SPLITTER</code> node, <code class="language-plaintext highlighter-rouge">Merger</code>node also has Four Components Node - Description, XPath, Entity Name
-and Batch size. For example, you have specified a batch size of <code class="language-plaintext highlighter-rouge">N</code> in a <code class="language-plaintext highlighter-rouge">MERGER</code> node then 
-it will take <code class="language-plaintext highlighter-rouge">N</code> data packets where each packet contains a chunk of data and merge them into a single data packet (here N= Batchsize Number).</p>
+<p>Like a <code class="highlighter-rouge">SPLITTER</code> node, <code class="highlighter-rouge">Merger</code>node also has Four Components Node - Description, XPath, Entity Name
+and Batch size. For example, you have specified a batch size of <code class="highlighter-rouge">N</code> in a <code class="highlighter-rouge">MERGER</code> node then 
+it will take <code class="highlighter-rouge">N</code> data packets where each packet contains a chunk of data and merge them into a single data packet (here N= Batchsize Number).</p>
 
 <p>Merger Node Input file -  can have one or more document input.
 Merger Node Output file - can have one or more document output.</p>
@@ -2408,12 +2408,12 @@ should be 1-999.</strong></p>
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="language-plaintext highlighter-rouge">MERGER</code> node in APPSeCONNECT processflow used to take smaller data packets and merge them into single data packet.</p>
+<p><code class="highlighter-rouge">MERGER</code> node in APPSeCONNECT processflow used to take smaller data packets and merge them into single data packet.</p>
 
 <p>For example: If there are 20 files or data chunks each of which contains a customer data 
 with the below XML format. All the files will be merged into single file in a batch 
 size of 2. So, in the XPATH section the values are provided as following:
- <code class="language-plaintext highlighter-rouge">XPATH = //env:Envelope</code>, Batch Size = 2 and the Entity name = <code class="language-plaintext highlighter-rouge">mergedRoot</code>.</p>
+ <code class="highlighter-rouge">XPATH = //env:Envelope</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">mergedRoot</code>.</p>
 
 <p><img src="\staticfiles\processflow\media\merger1.PNG" alt="Merger1" /></p>
 
@@ -2424,7 +2424,7 @@ size of 2. So, in the XPATH section the values are provided as following:
 
 <p><img src="/staticfiles/workflow-management/media/Merger/Merger4.png" alt="Merger4" /></p>
 
-<p><code class="language-plaintext highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1.</code></p>
+<p><code class="highlighter-rouge">Application used for the Processflow Execution is: Magento2 and SAP B1.</code></p>
 
 <p>1) Go to Processflow section &amp; <a href="/processflow/designer-processflow/">Design</a> a Processflow.</p>
 
@@ -2446,7 +2446,7 @@ to view the detailed node by node snapshot data of the processflow.</p>
 
 <p>8) Now click on the <strong>Transactional File</strong> tab to view both the merged files.<br />
  <img src="\staticfiles\processflow\media\mergeflow3.PNG" alt="mergeflow3" />    <br />
-Here you can view <strong>TWO</strong> transactional files, containing <code class="language-plaintext highlighter-rouge">two customer records</code> in file <strong>ONE</strong> and a single customer record in file <strong>TWO</strong> as total number of data count was <strong>three</strong>.</p>
+Here you can view <strong>TWO</strong> transactional files, containing <code class="highlighter-rouge">two customer records</code> in file <strong>ONE</strong> and a single customer record in file <strong>TWO</strong> as total number of data count was <strong>three</strong>.</p>
 
 <p>9) Expand the destination node to view the sync result of the iteration.
 <img src="\staticfiles\processflow\media\mergeflow4.PNG" alt="mergeflow4" /></p>
@@ -2454,7 +2454,7 @@ Here you can view <strong>TWO</strong> transactional files, containing <code cla
 <p>Thus, the above processflow is executed with the Merger node and you can also 
 view the iteration wise node execution created with self loop.</p>
 
-<p><strong>Note: Since Self Loop configuration was set as <code class="language-plaintext highlighter-rouge">Until Data Available</code>, you will be generated with an extra iteration. For more details related to Self-Loop, <a href="/processflow/working-with-processflow-selfloop/">Click Here</a>.</strong></p>
+<p><strong>Note: Since Self Loop configuration was set as <code class="highlighter-rouge">Until Data Available</code>, you will be generated with an extra iteration. For more details related to Self-Loop, <a href="/processflow/working-with-processflow-selfloop/">Click Here</a>.</strong></p>
 
 <p><strong>1. Business Scenario -  Applications with API request throttling</strong></p>
 

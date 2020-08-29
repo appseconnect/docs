@@ -2387,22 +2387,22 @@
                 
                 <h3 id="what-is-halt-resume-node">What is halt-resume node</h3>
 
-<p><code class="language-plaintext highlighter-rouge">HALT</code> and <code class="language-plaintext highlighter-rouge">RESUME</code> nodes are used in a combination. We implement <code class="language-plaintext highlighter-rouge">HALT</code> node to halt the execution 
+<p><code class="highlighter-rouge">HALT</code> and <code class="highlighter-rouge">RESUME</code> nodes are used in a combination. We implement <code class="highlighter-rouge">HALT</code> node to halt the execution 
 of the current node and process flow transferred to another node.After completing the transferred flow 
-when the workflow engine will find a <code class="language-plaintext highlighter-rouge">RESUME</code> node then the halted process will start again. For example,
+when the workflow engine will find a <code class="highlighter-rouge">RESUME</code> node then the halted process will start again. For example,
  we are executing order download process through a workflow but before completing the orders to the destination
  app we want to run the customer download process and after customer download process completes we want to resume order
- download process in this scenario we can use <code class="language-plaintext highlighter-rouge">Halt-Resume</code> node. You can apply halt node after the getting data
+ download process in this scenario we can use <code class="highlighter-rouge">Halt-Resume</code> node. You can apply halt node after the getting data
  for order download for halting the order download process and transferring the flow to customer download process, 
 next after customer download process completes we can apply a resume node to resume the order download process.</p>
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="language-plaintext highlighter-rouge">HALT</code> node in APPSeCONNECT workflow used to halt a process and <code class="language-plaintext highlighter-rouge">RESUME</code> node is used to resume the halted process.</p>
+<p><code class="highlighter-rouge">HALT</code> node in APPSeCONNECT workflow used to halt a process and <code class="highlighter-rouge">RESUME</code> node is used to resume the halted process.</p>
 
 <h3 id="tip">Tip</h3>
 
-<p><code class="language-plaintext highlighter-rouge">HALT</code> will always link to a Group which has “Get” and only to a Group not to a node.<code class="language-plaintext highlighter-rouge">RESUME</code>  will always come from a Group.</p>
+<p><code class="highlighter-rouge">HALT</code> will always link to a Group which has “Get” and only to a Group not to a node.<code class="highlighter-rouge">RESUME</code>  will always come from a Group.</p>
 
 <p>The above mentioned scenario can be implemented using the below workflow.</p>
 
@@ -2418,11 +2418,11 @@ next after customer download process completes we can apply a resume node to res
 
 <ol>
   <li>
-    <p>As shown in the above workflow screen, for executing the Touchpoint <code class="language-plaintext highlighter-rouge">Sales Order</code> Value Mapping for <code class="language-plaintext highlighter-rouge">Freight</code> and <code class="language-plaintext highlighter-rouge">Tax code</code> had to be done in the Lookups section 
+    <p>As shown in the above workflow screen, for executing the Touchpoint <code class="highlighter-rouge">Sales Order</code> Value Mapping for <code class="highlighter-rouge">Freight</code> and <code class="highlighter-rouge">Tax code</code> had to be done in the Lookups section 
 of the Portal and also Freight Setup had to be done in SAP.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Updated Agent</code> (On-Premise) is needed to be used for the sync even if it is being executed from the cloud portal.</p>
+    <p><code class="highlighter-rouge">Updated Agent</code> (On-Premise) is needed to be used for the sync even if it is being executed from the cloud portal.</p>
   </li>
 </ol>
 

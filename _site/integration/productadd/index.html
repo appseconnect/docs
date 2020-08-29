@@ -2392,7 +2392,7 @@ how the integration process can be executed through workflow for adding Simple P
 
 <p><img src="/staticfiles/integration/media/workflow-productadd4.png" alt="workflow-productadd4" /></p>
 
-<p>In this case, the <code class="language-plaintext highlighter-rouge">Product Add Workflow</code> is used for adding simple product from SAP Business One to Magento2. 
+<p>In this case, the <code class="highlighter-rouge">Product Add Workflow</code> is used for adding simple product from SAP Business One to Magento2. 
 Here, a workflow is created where all the Simple Products are fetched form SAP Business One and are posted to Magento2.</p>
 
 <p>Login to SAP Business One Client Application. Item add need to be inserted through <a href="https://help.sap.com/saphelp_sbo900/helpdata/en/45/2365ca9e152b31e10000000a1553f7/content.htm?no_cache=true">web item master data</a>.</p>
@@ -2409,8 +2409,8 @@ For Example: If the PriceLists selected as 3, the destination value too is neede
 <p>On mapping the lookups, the attribute mapping for Price field is needed to be altered. The mapping should be:
 <img src="/staticfiles/integration/media/lookupmapping2-productadd-sapb1.png" alt="lookupmapping2-productadd-sapb1" /></p>
 
-<p>Simultaneously, a variable is needed to be created as the variable <code class="language-plaintext highlighter-rouge">$priceListValue</code> that is used in the mapping above is not declared.
-Therefore, in the Root Variable section, add <code class="language-plaintext highlighter-rouge">a new Variable</code> with the name <code class="language-plaintext highlighter-rouge">$priceListValue</code> whose datatype should be string. <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Click here</a> to know how to add a new Root Variable.</p>
+<p>Simultaneously, a variable is needed to be created as the variable <code class="highlighter-rouge">$priceListValue</code> that is used in the mapping above is not declared.
+Therefore, in the Root Variable section, add <code class="highlighter-rouge">a new Variable</code> with the name <code class="highlighter-rouge">$priceListValue</code> whose datatype should be string. <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Click here</a> to know how to add a new Root Variable.</p>
 
 <p>On its creation, click on the Open Variable Button to initialize the lookup. For mapping variable:</p>
 
@@ -2432,7 +2432,7 @@ To know more, see  <a href="/transformation/overview-usecase/">Mapping &amp; Tra
 
 <ol>
   <li>
-    <p>Mapping for the <code class="language-plaintext highlighter-rouge">ComplexObjectCollection</code> Product.
+    <p>Mapping for the <code class="highlighter-rouge">ComplexObjectCollection</code> Product.
 <img src="/staticfiles/integration/media/attributemapping-productadd1.png" alt="attributemapping-productadd1" />
 a.	Id: Here the itemID is being mapped with the destination attribute U_WebID.                                                                           <br />
 b.	sku: Here the product SKU is being mapped with the ItemCode attribute in Magento2.                                                              <br />
@@ -2442,7 +2442,7 @@ e.	Attribute_set_id: This field maps with the attribute set of the product in Ma
 f.	type_id: This maps the type of product.</p>
   </li>
   <li>
-    <p>Mapping for the ComplexObject <code class="language-plaintext highlighter-rouge">custom_attributes</code>.
+    <p>Mapping for the ComplexObject <code class="highlighter-rouge">custom_attributes</code>.
 <img src="/staticfiles/integration/media/attributemapping-productadd2.png" alt="attributemapping-productadd2" /></p>
   </li>
 </ol>
@@ -2452,7 +2452,7 @@ b.	attribute_code: This maps the attribute code in the magento2.                
 c.	value: Performs a loop for getting value of the short description.</p>
 
 <ol>
-  <li>Mapping for the ComplexObject <code class="language-plaintext highlighter-rouge">product_links </code>
+  <li>Mapping for the ComplexObject <code class="highlighter-rouge">product_links </code>
 <img src="/staticfiles/integration/media/attributemapping-productadd3.png" alt="attributemapping-productadd3" /></li>
 </ol>
 
@@ -2469,7 +2469,7 @@ d.	linked_product_type: This maps the SKU of the linked product in Magento2.</p>
   <li>Once the workflow is designed, Update the Configuration in agent for deploying the workflow in the agent.</li>
   <li>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process. 
 <img src="/staticfiles/integration/media/workflow-productadd.png" alt="workflow-productadd" /></li>
-  <li>Once the Execution is finished, click <code class="language-plaintext highlighter-rouge">Resync Button</code> (highlighted in the image) in the agent.</li>
+  <li>Once the Execution is finished, click <code class="highlighter-rouge">Resync Button</code> (highlighted in the image) in the agent.</li>
   <li>The Resync Panel show the Success Result in the agent. 
 <img src="/staticfiles/integration/media/workflow-productadd2.png" alt="workflow-productadd2" /></li>
 </ol>

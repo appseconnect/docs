@@ -2408,7 +2408,7 @@ tenant for the request and channelize the request to appropriate servers which i
 all incoming requests and load balance the incoming requests.</li>
   <li><strong>Authentication Server</strong>: Authentication server is a special server that can reject or approve an incoming request based on the authentication key or session
 provided to it. As API provider you can configure the authentication server correctly enabling the users to generate authentication token which needs to be passed 
-for every request to get a valid response. In case authentication is unsuccessful the server will respond as <code class="language-plaintext highlighter-rouge">403 Forbidden</code> error message.</li>
+for every request to get a valid response. In case authentication is unsuccessful the server will respond as <code class="highlighter-rouge">403 Forbidden</code> error message.</li>
   <li><strong>Policy Server</strong>: Policy server are a set of pluggable module which are applied to a set of APIs, in such a way so that it hooks automatically to the 
 request pipeline and executes its code directly for every request.</li>
   <li><strong>Backend Gateway</strong>: Backend gateway is the server component which hosts different micro-service containers that takes care of actual execution. The backend automatically
