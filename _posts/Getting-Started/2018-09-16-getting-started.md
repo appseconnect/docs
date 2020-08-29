@@ -6,7 +6,7 @@ category: "Getting Started"
 menus: 
     header:
         title: "Getting Started"
-        weight: 2
+        weight: 1
         icon: fa fa-wpexplorer
         identifier: gettingstarted
 ---
