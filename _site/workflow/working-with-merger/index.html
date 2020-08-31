@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2385,7 +2391,7 @@
                 
                 <h3 id="what-is-merger-node">What is Merger Node?</h3>
 
-<p>This node is used to merge smaller data chunks into a single data packet. Like a <code class="highlighter-rouge">SPLITTER</code> node, it also has three components XPath, Entity Name and Batch size. For example, you have specified a batch size of 10 in a <code class="highlighter-rouge">MERGER</code> node then it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
+<p>This node is used to merge smaller data chunks into a single data packet. Like a <code class="language-plaintext highlighter-rouge">SPLITTER</code> node, it also has three components XPath, Entity Name and Batch size. For example, you have specified a batch size of 10 in a <code class="language-plaintext highlighter-rouge">MERGER</code> node then it will take 10 data packets where each packet contains a chunk of data and merge them into a single data packet.</p>
 
 <p><strong>Entityname</strong> : Here specify the name which will act as a root element under which data will be merged.</p>
 
@@ -2393,10 +2399,10 @@
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="highlighter-rouge">MERGER</code> node in APPSeCONNECT workflow used to take smaller data packets and merge them into single data packet.</p>
+<p><code class="language-plaintext highlighter-rouge">MERGER</code> node in APPSeCONNECT workflow used to take smaller data packets and merge them into single data packet.</p>
 
 <p>For example: If there are 20 files or data chunks each of which contains a customer data with the below XML format. All the files will be merge them into single file in a batch size of 2. So, in the XPATH section the values are provided as following:
- <code class="highlighter-rouge">XPATH = //BusinessPartners</code>, Batch Size = 2 and the Entity name = <code class="highlighter-rouge">Envelope</code>.</p>
+ <code class="language-plaintext highlighter-rouge">XPATH = //BusinessPartners</code>, Batch Size = 2 and the Entity name = <code class="language-plaintext highlighter-rouge">Envelope</code>.</p>
 
 <p><img src="/staticfiles/workflow-management/media/Merger/Merger2.png" alt="Merger2" /></p>
 
@@ -2499,6 +2505,14 @@
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             

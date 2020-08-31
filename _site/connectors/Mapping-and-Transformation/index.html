@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2387,9 +2393,9 @@ supports the request data without root element.</p>
 <p>Omit Root: This attribute needs to be added to the transformation section when you need to remove any root tag 
 from the transform packet as that root variable is not accepted by the destination application.</p>
 
-<p><code class="highlighter-rouge">Attribute name: OmitRoot</code>
-<code class="highlighter-rouge">Type: string</code><br />
-<code class="highlighter-rouge">Mapping: True</code></p>
+<p><code class="language-plaintext highlighter-rouge">Attribute name: OmitRoot</code>
+<code class="language-plaintext highlighter-rouge">Type: string</code><br />
+<code class="language-plaintext highlighter-rouge">Mapping: True</code></p>
 
 <p><strong>NOTE: After the sync process, the output packet is checked and we find that the root tag has been removed.</strong></p>
 
@@ -2399,9 +2405,9 @@ from the transform packet as that root variable is not accepted by the destinati
 This root variable fetch the date and time of the latest data record created in the Source app and store it so that whenever 
 the sync is executed after the first sync, it does not fetch the old records everytime. This ensures quick sync process.</p>
 
-<p><code class="highlighter-rouge">Root variable name: maxDate</code>  <br />
-<code class="highlighter-rouge">Type: String</code>  <br />
-<code class="highlighter-rouge">Mapping: [sourcelib:WriteMaxDate(..,'{parent tag for each individual record}','{tag which as the value of the date &amp; time when the record got created /updated}','1')]</code></p>
+<p><code class="language-plaintext highlighter-rouge">Root variable name: maxDate</code>  <br />
+<code class="language-plaintext highlighter-rouge">Type: String</code>  <br />
+<code class="language-plaintext highlighter-rouge">Mapping: [sourcelib:WriteMaxDate(..,'{parent tag for each individual record}','{tag which as the value of the date &amp; time when the record got created /updated}','1')]</code></p>
 
 <p>Example: [sourcelib:WriteMaxDate(..,’Customer’,’createTime’,’1’)]</p>
 
@@ -4715,8 +4721,18 @@ the sync is executed after the first sync, it does not fetch the old records eve
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

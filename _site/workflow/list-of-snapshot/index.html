@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2394,7 +2400,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 <ol>
   <li>All the <a href="/workflow/deploying-and-executing/">Pre-requisites</a> to workflow execution has to be met.</li>
   <li>Agent should be set as Primary (as unlicensed agents will be not connected to APPSeCONNECT cloud)</li>
-  <li>Autosync of the Agent should be turned <code class="highlighter-rouge">ON</code>.</li>
+  <li>Autosync of the Agent should be turned <code class="language-plaintext highlighter-rouge">ON</code>.</li>
 </ol>
 
 <h2 id="steps-to-executing-list-of-snapshot-for-the-workflow">Steps to executing list of snapshot for the workflow</h2>
@@ -2402,7 +2408,7 @@ of the workflow and the latest listing is visible on the upper section of the li
 <ol>
   <li>List of Snapshot is present on the upper section of the workflow screen as shown below:<br />
 <img src="/staticfiles/workflow-management/media/snapshot-button.png" alt="snapshot-button" /></li>
-  <li>Click on the <code class="highlighter-rouge">Snapshot</code>button and the following execution of workflow data will be fetched.<br />
+  <li>Click on the <code class="language-plaintext highlighter-rouge">Snapshot</code>button and the following execution of workflow data will be fetched.<br />
 <img src="/staticfiles/workflow-management/media/workflowexe-snapshot.png" alt="workflowexe-snapshot" /><br />
 The execution screen contains the following details of the workflow snapshot
     <ul>
@@ -2412,7 +2418,7 @@ The execution screen contains the following details of the workflow snapshot
 details at the node level.</li>
     </ul>
   </li>
-  <li>Click on the <code class="highlighter-rouge">View button</code>  against a snapshot list of the workflow you want to view. The following screen 
+  <li>Click on the <code class="language-plaintext highlighter-rouge">View button</code>  against a snapshot list of the workflow you want to view. The following screen 
 appears. The screen above gives drill down node view of the workflow.<br />
 <img src="/staticfiles/workflow-management/media/workflowprocess-shapshot.png" alt="workflowprocess-shapshot" /></li>
   <li>Click on the Touchpoint (e.g: Sales Order Add/Business Partner Add) and this maximises and give details of nodes like
@@ -2447,7 +2453,7 @@ being processed and it captures information like source id, destination id, Addi
 
 <p><strong>Scenario 1:</strong></p>
 
-<p>For <strong>POST</strong> node while, you can see that the resync bucket shows the message as <code class="highlighter-rouge">Success/Failure</code>depending on the workflow 
+<p>For <strong>POST</strong> node while, you can see that the resync bucket shows the message as <code class="language-plaintext highlighter-rouge">Success/Failure</code>depending on the workflow 
 execution.</p>
 
 <p><img src="/staticfiles/workflow-management/media/postoperation-resyncbucket.png" alt="postoperation-resyncbucket" /></p>
@@ -2457,7 +2463,7 @@ execution.</p>
 <p><strong>Scenario 2:</strong></p>
 
 <p>Here we are executing a workflow with a <strong>DELAY</strong> element, where we are delaying the process by 10 seconds.
-In the screen given below, you can see the Touchpoint <code class="highlighter-rouge">Product ADD</code> (with Variants) has failed and you can view the log bucket with errors.</p>
+In the screen given below, you can see the Touchpoint <code class="language-plaintext highlighter-rouge">Product ADD</code> (with Variants) has failed and you can view the log bucket with errors.</p>
 
 <p><img src="/staticfiles/workflow-management/media/delayelement-process-snapshot.png" alt="delayelement-process-snapshot" /></p>
 
@@ -2476,11 +2482,11 @@ In the screen given below, you can see the Touchpoint <code class="highlighter-r
 <p class="notice--info"><strong>Protip</strong> For each split individual files are generated. You can double click on each of them to view the XML code inside.</p>
 
 <p><strong>Scenario 4:</strong>
-Here we are executing a workflow with <strong>Merge Process</strong> property. You can see the <code class="highlighter-rouge">Resync Bucket, Log Bucket and File</code> for each of the merged process. 
+Here we are executing a workflow with <strong>Merge Process</strong> property. You can see the <code class="language-plaintext highlighter-rouge">Resync Bucket, Log Bucket and File</code> for each of the merged process. 
 In the Resync Bucket, you can view the Source ID, and the Message of the single merge process.<br />
 <img src="/staticfiles/workflow-management/media/Mergeprocess-Snapshot.png" alt="Mergeprocess-Snapshot" /></p>
 
-<p class="notice--info"><strong>Protip</strong> Execution of <code class="highlighter-rouge">Rule Process Property, Halt Node, Resume Element, Filter Element</code> will give similar node 
+<p class="notice--info"><strong>Protip</strong> Execution of <code class="language-plaintext highlighter-rouge">Rule Process Property, Halt Node, Resume Element, Filter Element</code> will give similar node 
 level view as explained above</p>
 
 <p><strong>Scenario 5:</strong>
@@ -2497,7 +2503,7 @@ Below, is the screen of Email Action, Log Bucket generated.</p>
 
 <p class="notice--info"><strong>Protip</strong> For all the ACTION NODES, you will only get the View of the Log Bucket.</p>
 
-<p class="notice--info"><strong>Protip</strong> <code class="highlighter-rouge">Currently 7 days data</code> can be viewed in the List of Snapshot and by <code class="highlighter-rouge">default 10 snapshot view per screen</code> is available 
+<p class="notice--info"><strong>Protip</strong> <code class="language-plaintext highlighter-rouge">Currently 7 days data</code> can be viewed in the List of Snapshot and by <code class="language-plaintext highlighter-rouge">default 10 snapshot view per screen</code> is available 
 in single screen listing of snapshot.</p>
 
 <p><strong>Scenario 7:</strong></p>
@@ -4817,8 +4823,18 @@ Resync Bucket, Log Bucket, and the File.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

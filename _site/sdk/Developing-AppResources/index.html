@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2384,12 +2390,12 @@
                     </nav>
                 </aside>
                 
-                <p>Application resources are special methods that can be added on the adapter code using the interface <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="highlighter-rouge">IAppResources</code></a> which can 
-be referenced in mapping or else in filters. An AppResource interface receives the <code class="highlighter-rouge">ApplicationContext</code> during its 
+                <p>Application resources are special methods that can be added on the adapter code using the interface <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">IAppResources</code></a> which can 
+be referenced in mapping or else in filters. An AppResource interface receives the <code class="language-plaintext highlighter-rouge">ApplicationContext</code> during its 
 initialization, which helps to invoke various methods on SDK or even call native methods directly from 
 adapter code.</p>
 
-<p>Let us look at how the <a href="http://isdn.appseconnect.com/html/3C4C3144.htm"><code class="highlighter-rouge">IAppResource</code></a> class looks like :</p>
+<p>Let us look at how the <a href="http://isdn.appseconnect.com/html/3C4C3144.htm"><code class="language-plaintext highlighter-rouge">IAppResource</code></a> class looks like :</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">public</span> <span class="k">class</span> <span class="nc">AppResource</span> <span class="p">:</span> <span class="n">IAppResource</span>
 <span class="p">{</span>
@@ -2421,7 +2427,7 @@ adapter code.</p>
 </code></pre></div></div>
 
 <p>Here in the above code, you can see the AppResource class has an Initialize method which will be invoked from the application, 
-the object <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="highlighter-rouge">ApplicationContext</code></a> received by the adapter can be used to invoke various functionalities of APPSeCONNECT.</p>
+the object <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">ApplicationContext</code></a> received by the adapter can be used to invoke various functionalities of APPSeCONNECT.</p>
 
 <p>Let us look at a sample implementation of an AppResource method.</p>
 
@@ -2461,9 +2467,9 @@ the object <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class=
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>The method <code class="highlighter-rouge">GetCustomerAddress</code> is specially designed to invoke <code class="highlighter-rouge">\customers</code> API such that when required the 
+<p>The method <code class="language-plaintext highlighter-rouge">GetCustomerAddress</code> is specially designed to invoke <code class="language-plaintext highlighter-rouge">\customers</code> API such that when required the 
 mapping can invoke the method to dynamically invoke a separate API while transformation. You can see the 
-return type of the method is <code class="highlighter-rouge">XPathNavigator</code>. As the method can be used directly from Mapping the allowed method 
+return type of the method is <code class="language-plaintext highlighter-rouge">XPathNavigator</code>. As the method can be used directly from Mapping the allowed method 
 return types are as under :</p>
 
 <ul>
@@ -2472,7 +2478,7 @@ return types are as under :</p>
   <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string">String</a></li>
 </ul>
 
-<p>The <code class="highlighter-rouge">CallAPI</code> method is used to execute an API to the application.</p>
+<p>The <code class="language-plaintext highlighter-rouge">CallAPI</code> method is used to execute an API to the application.</p>
 
 <p>Once the method is returning a value, you can put the data in a variable on mapping section and iterate the data over.</p>
 
@@ -4795,8 +4801,18 @@ return types are as under :</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

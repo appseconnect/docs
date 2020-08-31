@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2394,7 +2400,7 @@ This document provides the details like the configuration process, required look
 
 <p><img src="/staticfiles/integration/media/nav-magemulti-salesorder-wrkflw.png" alt="nav-magemulti-salesorder-wrkflw" /></p>
 
-<p>In this case, the <code class="highlighter-rouge">Sales Orders are placed in Magento2 and are added to MS Dynamics NAV</code> by syncing the <code class="highlighter-rouge">workflow for Sales Order Add</code>. 
+<p>In this case, the <code class="language-plaintext highlighter-rouge">Sales Orders are placed in Magento2 and are added to MS Dynamics NAV</code> by syncing the <code class="language-plaintext highlighter-rouge">workflow for Sales Order Add</code>. 
 The above workflow is designed to GET Sales Orders from Magento2 and POST it to Ms Dynamics NAV.</p>
 
 <p>*The Prerequisite: Sync the products and the customers which are used to make sales order.**</p>
@@ -2403,20 +2409,20 @@ The above workflow is designed to GET Sales Orders from Magento2 and POST it to 
 Orders can also be created from Magento2 backend. <a href="https://docs.magento.com/m2/ce/user_guide/customers/customer-account-create-order.html">Click here</a> 
 to know more about creating the order from the admin panel of Magento2.</strong></p>
 
-<p>Here the Sales Order is created for a customer whose order consists of two products <code class="highlighter-rouge">Red Velvet Cake</code> and <code class="highlighter-rouge">Id Cards</code>.
+<p>Here the Sales Order is created for a customer whose order consists of two products <code class="language-plaintext highlighter-rouge">Red Velvet Cake</code> and <code class="language-plaintext highlighter-rouge">Id Cards</code>.
 <img src="/staticfiles/integration/media/nav-magemulti-salesorder1.png" alt="nav-magemulti-salesorder1" /></p>
 
 <h2 id="lookup-mapping">LookUp Mapping</h2>
 
 <p>Lookup Mappings should be implemented when working with Sales Order. Below are the given lookup mapping values.</p>
 
-<p>The Lookup mapping for Look up type - <code class="highlighter-rouge">Discount Group, Freight and Tax</code> is required to be done for Sales Order sync. The lookup mapping
+<p>The Lookup mapping for Look up type - <code class="language-plaintext highlighter-rouge">Discount Group, Freight and Tax</code> is required to be done for Sales Order sync. The lookup mapping
 screen is given below:</p>
 
 <p><img src="/staticfiles/integration/media/nav-magemulti-salesorder2.png" alt="nav-magemulti-salesorder2" /></p>
 
 <ul>
-  <li>Look Up Mapping for Discount Group - Use the term <code class="highlighter-rouge">discount</code> to get the respective lookup mapping for discount of source and application.</li>
+  <li>Look Up Mapping for Discount Group - Use the term <code class="language-plaintext highlighter-rouge">discount</code> to get the respective lookup mapping for discount of source and application.</li>
   <li>Look Up Mapping for Freight - Go to Sales Order- click on Lines Panel, for freight, change item and choose the value against the number.</li>
   <li>Look Up Mapping for Tax - Go to Sales Order- click on Lines Panel, Search GL Account and choose the desired account name. A number will come,
 map the tax with that number.</li>
@@ -2428,7 +2434,7 @@ map the tax with that number.</li>
 
 <p>Following the Provided Mapping, the user can sync the Sales Order from Magento2 (Multi-store) to Ms Dynamics NAV. To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
 
-<p><strong>Note: Mapping for the Transformation for <code class="highlighter-rouge">Order add Touchpoint</code></strong></p>
+<p><strong>Note: Mapping for the Transformation for <code class="language-plaintext highlighter-rouge">Order add Touchpoint</code></strong></p>
 
 <p><img src="/staticfiles/integration/media/nav-magemulti-salesorder4.png" alt="nav-magemulti-salesorder4" /></p>
 
@@ -4786,8 +4792,18 @@ This Snapshot View displays the successful execution of the workflow.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

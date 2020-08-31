@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2397,12 +2403,12 @@ Also you need to make sure that you follow our <a href="/sdk/Best-practices/">be
 
 <h2 id="implementing-the-iadapter-interface">Implementing the IAdapter interface</h2>
 
-<p>An <a href="http://isdn.appseconnect.com/html/73508818.htm"><code class="highlighter-rouge">IAdapter</code></a> interface is a hook to specify the code which will run to fetch 
+<p>An <a href="http://isdn.appseconnect.com/html/73508818.htm"><code class="language-plaintext highlighter-rouge">IAdapter</code></a> interface is a hook to specify the code which will run to fetch 
 or push data to and from from the application. 
 The main method that needs to be implemented while implementing 
 <a href="http://isdn.appseconnect.com/html/73508818.htm">IAdapter</a> is the 
-<a href="http://isdn.appseconnect.com/html/364EAD9A.htm"><code class="highlighter-rouge">Execute</code></a>, which provides you with 
-<a href="http://isdn.appseconnect.com/html/EBA2D728.htm"><code class="highlighter-rouge">ExecutionType</code></a> which lets you specify code that needs to be implemented to invoke Request to the application.</p>
+<a href="http://isdn.appseconnect.com/html/364EAD9A.htm"><code class="language-plaintext highlighter-rouge">Execute</code></a>, which provides you with 
+<a href="http://isdn.appseconnect.com/html/EBA2D728.htm"><code class="language-plaintext highlighter-rouge">ExecutionType</code></a> which lets you specify code that needs to be implemented to invoke Request to the application.</p>
 
 <p>An <a href="http://isdn.appseconnect.com/html/F675346E.htm">OperationType</a> specifies the type of the execution which you need to perform.</p>
 
@@ -2416,16 +2422,16 @@ The main method that needs to be implemented while implementing
   <tbody>
     <tr>
       <td>GET</td>
-      <td>Adapter receives GET as ExecutionType when the adapter need to pull data from source application. Remember, during this operation, you will have to work with <a href="http://isdn.appseconnect.com/html/996C8CA9.htm"><code class="highlighter-rouge">ActionFilter</code></a> and you should not look for <a href="http://isdn.appseconnect.com/html/281D6BC4.htm">TransformedResponse</a>.</td>
+      <td>Adapter receives GET as ExecutionType when the adapter need to pull data from source application. Remember, during this operation, you will have to work with <a href="http://isdn.appseconnect.com/html/996C8CA9.htm"><code class="language-plaintext highlighter-rouge">ActionFilter</code></a> and you should not look for <a href="http://isdn.appseconnect.com/html/281D6BC4.htm">TransformedResponse</a>.</td>
     </tr>
     <tr>
       <td>POST</td>
-      <td>Adapter receives POST as ExecutionType when the adapter need to push data to the target application. The adapter receives the actual data in <a href="http://isdn.appseconnect.com/html/281D6BC4.htm"><code class="highlighter-rouge">TransformedResponse</code></a> as XML data and the target application need to push the same to the application end.</td>
+      <td>Adapter receives POST as ExecutionType when the adapter need to push data to the target application. The adapter receives the actual data in <a href="http://isdn.appseconnect.com/html/281D6BC4.htm"><code class="language-plaintext highlighter-rouge">TransformedResponse</code></a> as XML data and the target application need to push the same to the application end.</td>
     </tr>
   </tbody>
 </table>
 
-<p><strong>Protip:</strong> The basic function of an adapter method <code class="highlighter-rouge">Execute</code> is to pull/push data (convert the data to XML) and set it to APPSeCONNECT using <a href="http://isdn.appseconnect.com/html/2ECC6977.htm"><code class="highlighter-rouge">ReturnMessage&lt;string&gt;</code></a>
+<p><strong>Protip:</strong> The basic function of an adapter method <code class="language-plaintext highlighter-rouge">Execute</code> is to pull/push data (convert the data to XML) and set it to APPSeCONNECT using <a href="http://isdn.appseconnect.com/html/2ECC6977.htm"><code class="language-plaintext highlighter-rouge">ReturnMessage&lt;string&gt;</code></a>
 {: .notice–info}.</p>
 
 <h3 id="implementing-get">Implementing GET</h3>
@@ -2433,9 +2439,9 @@ The main method that needs to be implemented while implementing
 <p>The GET execution of an adapter require to do the following steps :</p>
 
 <ul>
-  <li>Parse <code class="highlighter-rouge">ActionFilter</code> to generate the Request structure. An ActionFilter is a Hierarchical Key-Value pair data received from APPSeCONNECT cloud.</li>
+  <li>Parse <code class="language-plaintext highlighter-rouge">ActionFilter</code> to generate the Request structure. An ActionFilter is a Hierarchical Key-Value pair data received from APPSeCONNECT cloud.</li>
   <li>Get Credential to connect to the target application.</li>
-  <li>Fetch data from the target application and push it the APPSeCONNECT using the api <code class="highlighter-rouge">ReturnMessage.SetSuccess</code>.</li>
+  <li>Fetch data from the target application and push it the APPSeCONNECT using the api <code class="language-plaintext highlighter-rouge">ReturnMessage.SetSuccess</code>.</li>
 </ul>
 
 <p>The Credential received by the interface will allow you to create the request body so as to create a communication with the end 
@@ -2495,32 +2501,32 @@ application. Let us look at the code below :</p>
 
 <p>In the above code you can see an implementation of adapter GET method. This piece of code will be executed when a workflow
 encounters a Get node. If you properly inspect the method, you can see, that the method receives an 
-<a href="http://isdn.appseconnect.com/html/BC65452C.htm"><code class="highlighter-rouge">ExecutionSettings</code></a> and also 
-it uses <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="highlighter-rouge">_context</code></a> to get various data from APPSeCONNECT. The <code class="highlighter-rouge">_context</code> is an object that lets you get data 
+<a href="http://isdn.appseconnect.com/html/BC65452C.htm"><code class="language-plaintext highlighter-rouge">ExecutionSettings</code></a> and also 
+it uses <a href="http://isdn.appseconnect.com/html/10297E4C.htm"><code class="language-plaintext highlighter-rouge">_context</code></a> to get various data from APPSeCONNECT. The <code class="language-plaintext highlighter-rouge">_context</code> is an object that lets you get data 
 application wide. This object does not change between calls to the adapter and also represents the contextual reference of the 
 process on the application.</p>
 
-<p>The line <code class="highlighter-rouge">this._context.Logger</code> gets the logger class, which helps you to write debug, status or information over <a href="/sdk/logging-and-tracing/">APPSeCONNECT 
+<p>The line <code class="language-plaintext highlighter-rouge">this._context.Logger</code> gets the logger class, which helps you to write debug, status or information over <a href="/sdk/logging-and-tracing/">APPSeCONNECT 
 logging system</a>.</p>
 
-<p>The next important consideration is the Credential object. You can call <code class="highlighter-rouge">this._context.GetConnectionDetails</code> to retrieve the 
+<p>The next important consideration is the Credential object. You can call <code class="language-plaintext highlighter-rouge">this._context.GetConnectionDetails</code> to retrieve the 
 credentials which is used to connect to the application. Remember, the credentials are generally put by the customer on the local 
 or cloud agent, and you need a model created as a class inside the project to access the deserialzied version of the object.</p>
 
-<p><strong>protip</strong>: You can also manually read / write json statements, using the overload <code class="highlighter-rouge">GetConnectionDetails</code> but it is always 
+<p><strong>protip</strong>: You can also manually read / write json statements, using the overload <code class="language-plaintext highlighter-rouge">GetConnectionDetails</code> but it is always 
 preferrable to have a model class.
 {: .notice–info}.</p>
 
-<p>The <code class="highlighter-rouge">settings.GetCommandProcessor(Protocol.REST)</code>allows the user to get an url generated from the Action filters 
+<p>The <code class="language-plaintext highlighter-rouge">settings.GetCommandProcessor(Protocol.REST)</code>allows the user to get an url generated from the Action filters 
 put in APPSeCONNECT cloud. We specifically generate the action filter parsers for REST and or SOAP requests, so if it does not 
 suit your need, you can easily <a href="/sdk/Implementing-Actionfilter-Parsers/">create an ActionFilter parser yourself</a>.</p>
 
-<p>Finally, the <code class="highlighter-rouge">interactAPI.InteractGetByPage</code> is an individual request to the application which helps in getting data from the application. 
+<p>Finally, the <code class="language-plaintext highlighter-rouge">interactAPI.InteractGetByPage</code> is an individual request to the application which helps in getting data from the application. 
 Once you get the data, you can assign keys to the Resync Bucket, such that the data that is been retrieved could be properly tracked by the 
 application. If you have defined Primary Keys for the schema in use, the data will be automatically created for you from 
 APPSeCONNECT.</p>
 
-<p>Once you retrieve the document correctly, you can pass the document to APPSeCONNECT using <code class="highlighter-rouge">returnMessage.SetSuccess</code> method.
+<p>Once you retrieve the document correctly, you can pass the document to APPSeCONNECT using <code class="language-plaintext highlighter-rouge">returnMessage.SetSuccess</code> method.
 Remember, you should always communicate with APPSeCONNECT in XML data formats, so if the format is something else, like JSON or 
 CSV etc., you need to convert it to XML before passing it to APPSeCONNECT.</p>
 
@@ -2590,11 +2596,11 @@ to the application and set the response to appseconnect back.  Let us look at th
 </code></pre></div></div>
 <p>If you inspect the code above, similar to the one in GET, the POST API also receives the ApplicationContext as well as ExecutionSettings inside it. 
 You can clearly get Credential again using the same API, and use the same to communicate with the application. Once you receive the credential, you can use
-<code class="highlighter-rouge">settings.TransformedResponse</code> to get the XML generated from APPSeCONNECT, which you need to push to the Application and get response.
+<code class="language-plaintext highlighter-rouge">settings.TransformedResponse</code> to get the XML generated from APPSeCONNECT, which you need to push to the Application and get response.
 In the above code, you can see the API does not support a batch operation, and hence the request is being split in chunks 
 and each xml is requested separately.</p>
 
-<p>The output of the response is returned back using <code class="highlighter-rouge">returnMessage.SetSuccess</code> which can be used in the workflow for future use.</p>
+<p>The output of the response is returned back using <code class="language-plaintext highlighter-rouge">returnMessage.SetSuccess</code> which can be used in the workflow for future use.</p>
 
 <h2 id="handling-resync-data">Handling Resync Data</h2>
 
@@ -2614,10 +2620,10 @@ request structure. Let us see how the resync code looks like :</p>
 <span class="p">}</span>
 <span class="n">returnMessage</span><span class="p">.</span><span class="nf">SetSuccess</span><span class="p">(</span><span class="s">"Records pulled for resync entities "</span><span class="p">,</span> <span class="n">returnAPIData</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
 </code></pre></div></div>
-<p>Here in case of the code above, the resync data is sent using the object <code class="highlighter-rouge">settings.EntityData</code>. You can loop through the 
+<p>Here in case of the code above, the resync data is sent using the object <code class="language-plaintext highlighter-rouge">settings.EntityData</code>. You can loop through the 
 data blocks to execute the resync. You can see, the InteractGet is called here to resync the requestData passed in from 
 APPSeCONNECT. In case of POST request as well, you can use the settings.TransformedResponse to resync the data. To detect whether 
-the call to an adapter is for Resync or normal call, you can use the property <code class="highlighter-rouge">settings.CalledFrom</code>.</p>
+the call to an adapter is for Resync or normal call, you can use the property <code class="language-plaintext highlighter-rouge">settings.CalledFrom</code>.</p>
 
 <h3 id="various-other-methods-in-iadapter-interface">Various other methods in IAdapter interface</h3>
 
@@ -4937,8 +4943,18 @@ the call to an adapter is for Resync or normal call, you can use the property <c
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2389,8 +2395,8 @@ Given below are common troubleshooting scenarios to ease the debugging areas.</p
 <h3 id="troubleshooting--agent-is-disconnectedblocked">Troubleshooting:  Agent is Disconnected/Blocked</h3>
 <p><img src="/staticfiles/deployment/media/RevampedEnv/agent-disconnected.png" alt="agent-disconnected" /></p>
 
-<p>When setting up the environment for the sync process, the environment for selected agent displays the message <code class="highlighter-rouge">Agent is Disconnected</code>. Also, while logging in to the OP agent, 
-it displays the message <code class="highlighter-rouge">Agent is Blocked</code>. This is due to the reason that the agent has been detached from the portal.</p>
+<p>When setting up the environment for the sync process, the environment for selected agent displays the message <code class="language-plaintext highlighter-rouge">Agent is Disconnected</code>. Also, while logging in to the OP agent, 
+it displays the message <code class="language-plaintext highlighter-rouge">Agent is Blocked</code>. This is due to the reason that the agent has been detached from the portal.</p>
 
 <p><strong>Steps to Troubleshooting:</strong></p>
 
@@ -2408,7 +2414,7 @@ it displays the message <code class="highlighter-rouge">Agent is Blocked</code>.
 </ul>
 
 <p>Note: (a) Without activating the autosync or if the autosync is off, your environment in portal would remain as disconnected. Before troubleshooting this scenario verify, whether your Autosync is activated or not.  <br />
-      (b) Old agent users would get the message as <code class="highlighter-rouge">Your agent is deactivated</code>. Please contact the administrator while logging in to OP Agent. <br />
+      (b) Old agent users would get the message as <code class="language-plaintext highlighter-rouge">Your agent is deactivated</code>. Please contact the administrator while logging in to OP Agent. <br />
           The steps to troubleshoot the error is common to this scenario. Old agent users could troubleshoot easily following the above given steps.</p>
 
 <h3 id="troubleshooting-correctfilenotfound---while-configuring-an-application-in-the-op-agent">Troubleshooting: CorrectFileNotFound - While Configuring an Application in the OP Agent</h3>
@@ -2472,14 +2478,14 @@ Updating Adapters will not fetch this file back.</strong></p>
 <ul>
   <li>Upgrade the Agent Version (In case of both Cloud &amp; OP)</li>
   <li>Open the <a href="/deployment/upgradation-and-migration/">Migration</a> tool</li>
-  <li>Choose the option <code class="highlighter-rouge">Migrate All Timestamp</code>  <br />
+  <li>Choose the option <code class="language-plaintext highlighter-rouge">Migrate All Timestamp</code>  <br />
 <img src="/staticfiles/deployment/media/Migration/MIgrationTool-Snapshot.png" alt="MIgrationTool-Snapshot" /></li>
   <li>Run the Migration Tool</li>
   <li>Enable Environment</li>
   <li>Now sync data and you will be able to view the data in the sync bucket.</li>
 </ul>
 
-<p><strong>NOTE: Choosing <code class="highlighter-rouge">Migrate All Timestamp</code> will take time depending on the volume of your data,
+<p><strong>NOTE: Choosing <code class="language-plaintext highlighter-rouge">Migrate All Timestamp</code> will take time depending on the volume of your data,
 so plan it according to the business requirement</strong></p>
 
 <h3 id="troubleshooting-user-cannot-login-into-the-agent-no-error-is-displayed-in-the-agent-login-section-and-gives-blank-response">Troubleshooting: User cannot Login into the Agent, No error is displayed in the Agent Login section and gives blank Response.</h3>
@@ -4804,8 +4810,18 @@ so plan it according to the business requirement</strong></p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

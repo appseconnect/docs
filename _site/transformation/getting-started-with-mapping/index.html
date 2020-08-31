@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2387,7 +2393,7 @@
                 </aside>
                 
                 <p>Getting started section of the mapping will help you to understand the main areas you should be familiar with 
-before starting doing the transformation process. <code class="highlighter-rouge">Mapping</code> triggers the transformation process between the Source and the Destination Applications. 
+before starting doing the transformation process. <code class="language-plaintext highlighter-rouge">Mapping</code> triggers the transformation process between the Source and the Destination Applications. 
 Source and destination schemas are mapped in the Transform section of the touchpoint.</p>
 
 <p>It is important to note that a touchpoint caters to a particular schema or an entity. A touchpoint maps the source schema 
@@ -2399,7 +2405,7 @@ different format than the destination application. To resolve the issues that ma
 In this effort, you write the logic that facilitates this transformation. Attribute mapping thus forms the main part of 
 transforming data from one format to another.</p>
 
-<p>This document will help you to know about the <code class="highlighter-rouge">different types of Mapping</code> done in APPSeCONNECT portal for easy
+<p>This document will help you to know about the <code class="language-plaintext highlighter-rouge">different types of Mapping</code> done in APPSeCONNECT portal for easy
 data transformation and smooth data integration between the applications.</p>
 
 <h2 id="structure-of-mapping">Structure of Mapping</h2>
@@ -2436,7 +2442,7 @@ in this section.</p>
 
 <h3 id="tracking">Tracking</h3>
 
-<p>As the name suggests,<code class="highlighter-rouge">tracking</code> may be used to study the data synchronization from the source application to the destination application. 
+<p>As the name suggests,<code class="language-plaintext highlighter-rouge">tracking</code> may be used to study the data synchronization from the source application to the destination application. 
 Tracking provides an opportunity to include more details with the source schema items when they are being 
 transferred to the destination schema.</p>
 
@@ -2445,12 +2451,12 @@ bucket along with the status of the sync. The data belongs to a schema and thus,
 has a schema id. The re-sync bucket only enlists each entity item by their entity id.</p>
 
 <p>If you require to include more attributes to the schema item while tracking, 
-this can be done by adding the desired <code class="highlighter-rouge">attribute to Tracking</code>. The user can thus 
+this can be done by adding the desired <code class="language-plaintext highlighter-rouge">attribute to Tracking</code>. The user can thus 
 have a better understanding of the information being transferred, thus making the sync 
 process even more user-friendly.</p>
 
 <p>For example, if you are transferring customer records from the source to the destination application, the on-premise agent would only 
-display the <code class="highlighter-rouge">source id</code>, which in this case, is the <code class="highlighter-rouge">customer id</code>. If you add more fields, say <code class="highlighter-rouge">customer name</code>, <code class="highlighter-rouge">customer phone</code> etc., 
+display the <code class="language-plaintext highlighter-rouge">source id</code>, which in this case, is the <code class="language-plaintext highlighter-rouge">customer id</code>. If you add more fields, say <code class="language-plaintext highlighter-rouge">customer name</code>, <code class="language-plaintext highlighter-rouge">customer phone</code> etc., 
 it would be easier for the user to understand the data that has been transferred.</p>
 
 <h3 id="lookups">Lookups</h3>
@@ -4784,8 +4790,18 @@ process. This section will also elaborate on the APPSeCONNECT Mapping types.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

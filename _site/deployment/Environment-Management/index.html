@@ -1375,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1462,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1588,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2404,7 +2410,7 @@
 <h2 id="accessing-the-environment-user-interface">Accessing the Environment User Interface</h2>
 
 <ol>
-  <li>Login to APPSeCONNECT portal with valid credentials &amp; navigate to the <code class="highlighter-rouge">Manage</code> section of your Project.</li>
+  <li>Login to APPSeCONNECT portal with valid credentials &amp; navigate to the <code class="language-plaintext highlighter-rouge">Manage</code> section of your Project.</li>
   <li>Click on the Environments button from the Manage drop-down. <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/Enviornment1.png" alt="Enviornment1" /></li>
   <li>Environment section in your project will give you a detailed overview about the number of Agent (both OP &amp; Cloud) deployed in your network, whether they are 
@@ -2427,21 +2433,21 @@ Listed below are the functionalities that are displayed in the Environment Liste
 <p>a.	Environment Status: Agent indicators to visualize the status of the Agents (Active/Inactive).      <br />
 b.	Grouping of environments:</p>
 <ul>
-  <li>User can create multiple environment group for an organisation by click on the <code class="highlighter-rouge">Add Group</code> button.</li>
+  <li>User can create multiple environment group for an organisation by click on the <code class="language-plaintext highlighter-rouge">Add Group</code> button.</li>
   <li>User can drag and drop every agent with respect to the groups (For Ex: Production or for testing or Region Wise).</li>
   <li>User can also move the agents from one group to another.   <br />
 <img src="/staticfiles/deployment/media/RevampedEnv/grouping-env.png" alt="grouping-env" /></li>
 </ul>
 
 <p><strong>Note:(a) Users will not be able to create a folder with same name.  <br />
-        (b) Only the created folder can be deleted. The default <code class="highlighter-rouge">HOME</code> folder will not have the delete button.<br />
+        (b) Only the created folder can be deleted. The default <code class="language-plaintext highlighter-rouge">HOME</code> folder will not have the delete button.<br />
         (c) User will not be able to create and save any folder in listing page without naming the folder
         (d) User cannot create any blank folder and Save in the environment listing page. An error message
          will get displayed, if no name has been provided to the newly created folder</strong></p>
 
 <h3 id="grouping-of-environments">Grouping of Environments</h3>
 
-<p>APPSeCONNECT Users can add multiple groups to their environment module by clicking on the <code class="highlighter-rouge">ADD Group</code> button.</p>
+<p>APPSeCONNECT Users can add multiple groups to their environment module by clicking on the <code class="language-plaintext highlighter-rouge">ADD Group</code> button.</p>
 
 <ol>
   <li>Click on the Add Group button, user gets the window for entering the Group Name.  <br />
@@ -2555,8 +2561,8 @@ Detailed field description:</p>
 <ul>
   <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
   <li>Start Time: This is a customizable field for the user. It defines the start time of the Resync Process.</li>
-  <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, <code class="highlighter-rouge">its configured as 0</code>.</li>
-  <li>Batch Size: This field states, the no of data in a batch to be resynced. The <code class="highlighter-rouge">Default value is 10</code> but the users are open to customize as per their requirement.</li>
+  <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, <code class="language-plaintext highlighter-rouge">its configured as 0</code>.</li>
+  <li>Batch Size: This field states, the no of data in a batch to be resynced. The <code class="language-plaintext highlighter-rouge">Default value is 10</code> but the users are open to customize as per their requirement.</li>
 </ul>
 
 <p><strong>Log Settings</strong>
@@ -2566,7 +2572,7 @@ Detailed field description:</p>
   <li>Log in Database: The log fetched, would be stored in the database.</li>
   <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
   <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. 
-The severity level is categorized into <code class="highlighter-rouge">Medium, High &amp; Critical</code>.</li>
+The severity level is categorized into <code class="language-plaintext highlighter-rouge">Medium, High &amp; Critical</code>.</li>
 </ul>
 
 <p><strong>Process Flow Tab</strong></p>
@@ -4985,8 +4991,18 @@ Real Time settings has two field for the configurations:</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

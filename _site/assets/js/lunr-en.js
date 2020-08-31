@@ -2572,6 +2572,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Packaging Overview",
+      excerpt: "Process Flow Packaging Overview: Zipping up of multiple files in packages makes it easy to reuse and share with different...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 284
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5707,6 +5716,17 @@ var store = [
         "title": "ZohoBooks",
         "url": "/connectors/zohobooks/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Packaging Overview",
+        "url": "/processflow/processflow-packaging-overview/",
+        "excerpt": "Process Flow Packaging Overview: Zipping up of multiple files in packages makes it easy to reuse and share with different...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
