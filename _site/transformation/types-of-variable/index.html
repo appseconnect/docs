@@ -477,8 +477,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -501,8 +501,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -540,6 +540,12 @@
     
     <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/zohobooks/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/zohobooks/" onclick="selectTab('/connectors/zohobooks/', event);" title="Go to ZohoBooks">ZohoBooks</a>
         
     </li>
     
@@ -1369,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1456,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1582,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2383,7 +2395,7 @@
                 <h2 id="working-with-variables-in-appseconnect">Working with Variables in APPSeCONNECT</h2>
 
 <p>To facilitate touchpoint mapping, variables stores the data that can be used later in the transformation process. 
-In AEC, variables are of 3 types - <code class="highlighter-rouge">Root Variables, Root Entity Variables, Variables</code></p>
+In AEC, variables are of 3 types - <code class="language-plaintext highlighter-rouge">Root Variables, Root Entity Variables, Variables</code></p>
 
 <p><strong>1.	Root Variables</strong></p>
 <ul>
@@ -2404,19 +2416,19 @@ which this variable is defined.</li>
   <li>Root Entity Variables can be used under any entity within the touchpoint.</li>
 </ul>
 
-<h2 id="scenario-explanation-of-each-types-of-variables-as-per-the-connection-sap-business-one-and-magento2">Scenario explanation of each types of variables as per the connection <code class="highlighter-rouge">SAP Business One and Magento2</code></h2>
+<h2 id="scenario-explanation-of-each-types-of-variables-as-per-the-connection-sap-business-one-and-magento2">Scenario explanation of each types of variables as per the connection <code class="language-plaintext highlighter-rouge">SAP Business One and Magento2</code></h2>
 
 <h3 id="scenario-explanation-for-root-variable">Scenario explanation for Root Variable:</h3>
 
-<p>While integrating two applications for adding <code class="highlighter-rouge">Business Partners</code> from <code class="highlighter-rouge">Magento 2 to SAP Business One</code>, the mapping for the variable is done to hold the addresses of 
-each business partners for every iteration.  Here the Root Variable is mapped in the ComplexObject <code class="highlighter-rouge">BPAddresses</code> in the form of an XPATH, which when called, 
+<p>While integrating two applications for adding <code class="language-plaintext highlighter-rouge">Business Partners</code> from <code class="language-plaintext highlighter-rouge">Magento 2 to SAP Business One</code>, the mapping for the variable is done to hold the addresses of 
+each business partners for every iteration.  Here the Root Variable is mapped in the ComplexObject <code class="language-plaintext highlighter-rouge">BPAddresses</code> in the form of an XPATH, which when called, 
 implements the other attributes of that complex object based on the address of the business partner, stored in the variable.</p>
 
-<p><code class="highlighter-rouge">Variable name used:$CustomerAddresses</code> <br />
+<p><code class="language-plaintext highlighter-rouge">Variable name used:$CustomerAddresses</code> <br />
 Variable Mapping defined: [sourcelib:SetCustomerAddressItems()]   <br />
 Variable Description: This a Root variable which holds the addresses of the customers that are fetched using the Source function SetCustomerAddressItems().</p>
 
-<p><code class="highlighter-rouge">Variable used in: BPAdresseses(Complex Object)</code><br />
+<p><code class="language-plaintext highlighter-rouge">Variable used in: BPAdresseses(Complex Object)</code><br />
 Xpath syntax provided for BPAdresses<br />
 <img src="/staticfiles/Transformation/media/image_rootvariable.png" alt="image_rootvariable" /></p>
 
@@ -2428,12 +2440,12 @@ called in the complexobject mapping in the form of xpath, to access all the node
 Assuming, the iteration position value is being hold in a variable. The variable is then called in an attribute, which is present under the same entity as that of the variable. 
 The mapping is done for the attribute along with the variable for implementing the mapping.</p>
 
-<p><code class="highlighter-rouge">Variable initialized in the ComplexObject: BPAddresses &gt; row</code><br />
-<code class="highlighter-rouge">Variable name used: $addressposition </code>  <br />
+<p><code class="language-plaintext highlighter-rouge">Variable initialized in the ComplexObject: BPAddresses &gt; row</code><br />
+<code class="language-plaintext highlighter-rouge">Variable name used: $addressposition </code>  <br />
 Variable Mapping defined <br />
 <img src="/staticfiles/Transformation/media/image_variable.png" alt="image_variable" />     <br />
 Variable Description: This variable, holds the position of the execution order.  <br />
-<code class="highlighter-rouge">Variable used in: Attribute name (AddressName)</code>   <br />
+<code class="language-plaintext highlighter-rouge">Variable used in: Attribute name (AddressName)</code>   <br />
 Xpath provided for the attribute <br />
 <img src="/staticfiles/Transformation/media/image_variable2.png" alt="image_variable2" />    <br />
 Mapping Description: The variable AddressNames is called which directly accesses the names under the node Items, 
@@ -2442,7 +2454,7 @@ which is executed according to the position value present in the variable $Addre
 <h3 id="scenario-explanation-for-root-entity-variable-duplicate-data-check-using-timestamp">Scenario Explanation for Root Entity Variable: (Duplicate Data Check using Timestamp)</h3>
 <p>To avoid duplicate details for an item that has already been synced, Root Entity Variables is defined for restricting the duplicate details as well as to hold the new details of the product that is yet to be synced.</p>
 
-<p><code class="highlighter-rouge">Variable name used: $MaxDate</code><br />
+<p><code class="language-plaintext highlighter-rouge">Variable name used: $MaxDate</code><br />
 Variable Mapping defined <br />
 <img src="/staticfiles/Transformation/media/image_rootentity_variable.png" alt="image_rootentity_variable" />    <br />
 Variable Description: Using this function, the current date and time in the format yyyy-MM-dd H:mm:ss is triggered. 
@@ -4759,8 +4771,28 @@ For Resolving this issue, Root Entity Variables are used.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             

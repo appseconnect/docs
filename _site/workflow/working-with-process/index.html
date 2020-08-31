@@ -477,8 +477,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -501,8 +501,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -540,6 +540,12 @@
     
     <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/zohobooks/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/zohobooks/" onclick="selectTab('/connectors/zohobooks/', event);" title="Go to ZohoBooks">ZohoBooks</a>
         
     </li>
     
@@ -1369,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1456,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1582,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2378,13 +2390,13 @@
                 </aside>
                 
                 <h3 id="what-is-process-node">What is Process Node?</h3>
-<p><code class="highlighter-rouge">PROCESS</code> node is used for transforming data from one format to another format based on the mapping logic specified for that touchpoint. When we drag a process node in the workflow we need to select a touchpoint. For example, we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP), so for adding data to SAP B1, we need to convert Shopify data to SAP B1 format. <code class="highlighter-rouge">PROCESS</code> node will do that work depending on the transformation logic written in the touchpoint.</p>
+<p><code class="language-plaintext highlighter-rouge">PROCESS</code> node is used for transforming data from one format to another format based on the mapping logic specified for that touchpoint. When we drag a process node in the workflow we need to select a touchpoint. For example, we have a touchpoint which will add a customer from Shopify (ECommerce) to Sap B1 (ERP), so for adding data to SAP B1, we need to convert Shopify data to SAP B1 format. <code class="language-plaintext highlighter-rouge">PROCESS</code> node will do that work depending on the transformation logic written in the touchpoint.</p>
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="highlighter-rouge">PROCESS</code> node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data will be transformed base on touchpoint mapping logic.</p>
+<p><code class="language-plaintext highlighter-rouge">PROCESS</code> node in APPSeCONNECT workflow is tied to a particular connection and a touchpoint activated in that connection, such that when the node is executed the data will be transformed base on touchpoint mapping logic.</p>
 
-<p>The highlighted node with red one is an implementation of <code class="highlighter-rouge">PROCESS</code> node.<br />
+<p>The highlighted node with red one is an implementation of <code class="language-plaintext highlighter-rouge">PROCESS</code> node.<br />
  <img src="/staticfiles/workflow-management/media/ProcessNode/ProcessNode.png" alt="ProcessNode" /></p>
 
 <p><strong>Note: On clicking the Process node, Mapping, Source Entity &amp; Destination Entity button appears on the property action window.</strong></p>
@@ -2395,7 +2407,7 @@
  <img src="/staticfiles/workflow-management/media/ProcessNode/ProcessNode2.png" alt="ProcessNode2" /></li>
 </ul>
 
-<p>Below picture is an example of mapping based on which data transformation will be performed by the <code class="highlighter-rouge">PROCESS</code> node.<br />
+<p>Below picture is an example of mapping based on which data transformation will be performed by the <code class="language-plaintext highlighter-rouge">PROCESS</code> node.<br />
 <img src="/staticfiles/workflow-management/media/ProcessNode/Mapping.png" alt="Mapping" /></p>
 
 
@@ -2488,6 +2500,22 @@
                             
                             
                             
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                             
                             
                             

@@ -42,7 +42,8 @@ Works section, that will help you deploy your process flow successfully.**
 (a) Now choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button.  
 * You need to install the agent if you do not have an installed [Environment](/deployment/Deployment-Configuration/#on-premise-agent-configuration). For more Enviroment related details, [Click Here](/deployment/Environment-Management/).
 * As per the selected type of environment, you need to select an environment from the list of environments in the drop down. 
-(b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded.
+
+(b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment.
 ![Deploy Processflow4](../../staticfiles/processflow/media/deploy-processflow4.png)   
 (c) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow.   
  ![Deploy Processflow5](../../staticfiles/processflow/media/deploy-processflow5.png)

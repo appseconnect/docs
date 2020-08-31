@@ -477,8 +477,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -501,8 +501,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -540,6 +540,12 @@
     
     <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/zohobooks/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/zohobooks/" onclick="selectTab('/connectors/zohobooks/', event);" title="Go to ZohoBooks">ZohoBooks</a>
         
     </li>
     
@@ -1369,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1456,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1582,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2376,7 +2388,7 @@
                     </nav>
                 </aside>
                 
-                <p>This document will help you to understand and work with the <code class="highlighter-rouge">MAPPING and TRANSFORMATION</code> functionality in APPSeCONNECT portal. 
+                <p>This document will help you to understand and work with the <code class="language-plaintext highlighter-rouge">MAPPING and TRANSFORMATION</code> functionality in APPSeCONNECT portal. 
 Primarily transformation is the field where the corresponding schemas are to be mapped. 
 This is also the place where the logic behind the transformation is implemented such that the integration proceeds uninterrupted.</p>
 
@@ -2397,13 +2409,13 @@ required to define which attributes of the target schema correspond to those of 
   <li>Click ‘View the connection’ button in the Connection which you have created.
 <img src="/staticfiles/Transformation/media/view-connection-transformation.png" alt="view-connection-transformation" /></li>
   <li>Navigate to any of the touchpoints where you want to implement the mapping.</li>
-  <li>Click on the <code class="highlighter-rouge">Transform</code> button. The Transformation Window opens.<br />
+  <li>Click on the <code class="language-plaintext highlighter-rouge">Transform</code> button. The Transformation Window opens.<br />
  <img src="../../staticfiles/Transformation/media/transform-button.png" alt="transform Button" /></li>
   <li>The Mapping of the Attributes are done at the <strong>transform</strong> level of the touchpoint.
 <img src="/staticfiles/Transformation/media/process-of-transformation.png" alt="process-of-transformation" /></li>
 </ol>
 
-<p><strong>Note: This is the Mapping Screen of touchpoint <code class="highlighter-rouge">Invoice Add</code>. 
+<p><strong>Note: This is the Mapping Screen of touchpoint <code class="language-plaintext highlighter-rouge">Invoice Add</code>. 
 The user can expand the Transformation node, to view the attributes present in the touchpoint.</strong></p>
 
 <p class="notice--info"><strong>Protip:</strong> The user can see the existing mapping for this touchpoint as it is Pre-Packaged. If the user clicks on any other touchpoint,
@@ -2418,22 +2430,22 @@ for any other connection, the pathway and the structure of the Transformations m
 <p>The data coming from the source schema requires to be transformed individually such that it matches the format of the destination schema,
 everytime the touchpoint is synced.</p>
 
-<p>E.g: Suppose you are executing <code class="highlighter-rouge">Invoice Add</code> touchpoint, you can see that records of all the <code class="highlighter-rouge">Invoices</code> are 
+<p>E.g: Suppose you are executing <code class="language-plaintext highlighter-rouge">Invoice Add</code> touchpoint, you can see that records of all the <code class="language-plaintext highlighter-rouge">Invoices</code> are 
 drew from the source app and for this case the similar execution process of transformation is deployed multiple
  times. Here a loop is set relatively than writing the transformation logic multiple times, and this undergoes 
 execution whenever the touchpoint is synced in the For-Each Loop Node.<br />
 <img src="/staticfiles/Transformation/media/process-of-transformation.png" alt="process-of-transformation" /></p>
 
-<p>Expanding the <code class="highlighter-rouge">For-each loop</code> the user gets the view of the node <code class="highlighter-rouge">oInvoices</code>. <code class="highlighter-rouge">oInvoices</code> is an object that is used to send data to the target application.</p>
+<p>Expanding the <code class="language-plaintext highlighter-rouge">For-each loop</code> the user gets the view of the node <code class="language-plaintext highlighter-rouge">oInvoices</code>. <code class="language-plaintext highlighter-rouge">oInvoices</code> is an object that is used to send data to the target application.</p>
 
-<p>Note: For different touchpoints the object is different. For the touchpoint <code class="highlighter-rouge">Sales Order Add</code> the object is <code class="highlighter-rouge">oOrders</code> for <code class="highlighter-rouge">Simple Product Add</code> it is <code class="highlighter-rouge">oItems</code> and so on.</p>
+<p>Note: For different touchpoints the object is different. For the touchpoint <code class="language-plaintext highlighter-rouge">Sales Order Add</code> the object is <code class="language-plaintext highlighter-rouge">oOrders</code> for <code class="language-plaintext highlighter-rouge">Simple Product Add</code> it is <code class="language-plaintext highlighter-rouge">oItems</code> and so on.</p>
 
-<p>On expanding the object <code class="highlighter-rouge">oInvoices</code> the user gets the view of the several attributes that are listed under it. 
+<p>On expanding the object <code class="language-plaintext highlighter-rouge">oInvoices</code> the user gets the view of the several attributes that are listed under it. 
 Each attribute has separate information about the entity that it belongs to.<br />
 Each of these attributes will contain different information about the customer record.</p>
 
-<p>For Example: <code class="highlighter-rouge">Document_Lines</code> will contain the details of the Product in terms of Quantity and Unit Price etc, 
-<code class="highlighter-rouge">DocumentsAdditionalExpenses</code> contains the Freight, Tax information etc of the product. 
+<p>For Example: <code class="language-plaintext highlighter-rouge">Document_Lines</code> will contain the details of the Product in terms of Quantity and Unit Price etc, 
+<code class="language-plaintext highlighter-rouge">DocumentsAdditionalExpenses</code> contains the Freight, Tax information etc of the product. 
 <img src="/staticfiles/Transformation/media/process-of-transformation2.png" alt="process-of-transformation2" /></p>
 
 <p><strong>Note: Different objects in different touchpoints will have different attributes</strong></p>
@@ -4756,8 +4768,28 @@ Its value however will be different for every iteration.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             

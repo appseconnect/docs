@@ -477,8 +477,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -501,8 +501,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -540,6 +540,12 @@
     
     <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/zohobooks/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/zohobooks/" onclick="selectTab('/connectors/zohobooks/', event);" title="Go to ZohoBooks">ZohoBooks</a>
         
     </li>
     
@@ -1369,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1456,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1582,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2383,7 +2395,7 @@ over a set of existing data source. As applications in real world are diverse in
 ask of every consumers to have a uniform API layer in place which will allow the external consumers 
 to have same kind of API system in place in spite of having varied range of Application APIs. As the name
 proxy suggests, it is just a wrapper over an existing data source or APIs, thereby providing time
-tested layers to handle <code class="highlighter-rouge">Authentication</code>, <code class="highlighter-rouge">Policies</code> and also <code class="highlighter-rouge">Documentation</code>. In this article
+tested layers to handle <code class="language-plaintext highlighter-rouge">Authentication</code>, <code class="language-plaintext highlighter-rouge">Policies</code> and also <code class="language-plaintext highlighter-rouge">Documentation</code>. In this article
 we will see how can we develop a proxy API over a set of existing service and execute the same through
 APPSeCONNECT Portal.</p>
 
@@ -2409,9 +2421,9 @@ prerequisites. Here are some of them :</p>
 depicting Proxy, select the section to navigate to it.</p>
 
 <ol>
-  <li>Click on <code class="highlighter-rouge">Add New</code> button to create a new API.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Add New</code> button to create a new API.</li>
   <li>
-    <p>Put basic information, such as <code class="highlighter-rouge">API name</code>, <code class="highlighter-rouge">Description</code>, <code class="highlighter-rouge">URL Suffix</code>, <code class="highlighter-rouge">HTTP method</code> etc. These 
+    <p>Put basic information, such as <code class="language-plaintext highlighter-rouge">API name</code>, <code class="language-plaintext highlighter-rouge">Description</code>, <code class="language-plaintext highlighter-rouge">URL Suffix</code>, <code class="language-plaintext highlighter-rouge">HTTP method</code> etc. These 
 details are important to create the face of the API.</p>
 
     <ul>
@@ -2440,7 +2452,7 @@ you can continue the wizard. For Policy Configuration, Click <a href="/api-manag
   <li>The next screen is where you specify the backend. This section is very important because this section
 provides the actual data source for that particular API. <br />
 <img src="/staticfiles/api-management/media/api-backend-configuration.png" alt="Api Backend Configuration" /></li>
-  <li>The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select <code class="highlighter-rouge">Schema Action</code>
+  <li>The backend needs to be configured correctly by specifying the Application, Schema, and Action. Select <code class="language-plaintext highlighter-rouge">Schema Action</code>
 from the drop down list. <a href="/configuring%20appseconnect/configurations/#adding-schemas-and-actions-of-an-application">Click here</a> to know more</li>
   <li>The outbound policies are those which are applied after the backend is executed. Here also similar to the Inbound 
 policies, you are allowed to choose as many policies from the list as you want and configure each of them to continue 
@@ -2473,7 +2485,7 @@ These Codes helps in identifying the reason for the failure when called.</li>
   <li>By Default the user has 1 options each for Success and Failure status and can select the response codes 
 from the drop-down option depending upon the Response.
 <img src="/staticfiles/api-management/media/response-setup-Proxy1.png" alt="response-setup-Proxy1" /></li>
-  <li>The user can also add Custom Responses from the <code class="highlighter-rouge">ADD RESPONSE RULE</code> option.
+  <li>The user can also add Custom Responses from the <code class="language-plaintext highlighter-rouge">ADD RESPONSE RULE</code> option.
 <img src="/staticfiles/api-management/media/response-setup-Proxy2.png" alt="response-setup-Proxy2" /></li>
   <li>The Response statuses can also be changed or edited by clicking on the Configure options. The Configure window is displayed below.
 <img src="/staticfiles/api-management/media/response-setup-Proxy3.png" alt="response-setup-Proxy3" /></li>
@@ -4817,8 +4829,28 @@ This feature can be accessed in the Backend Node in the API Proxy.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             

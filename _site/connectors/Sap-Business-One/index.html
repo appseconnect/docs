@@ -477,8 +477,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -501,8 +501,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -540,6 +540,12 @@
     
     <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/zohobooks/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/zohobooks/" onclick="selectTab('/connectors/zohobooks/', event);" title="Go to ZohoBooks">ZohoBooks</a>
         
     </li>
     
@@ -1369,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1456,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1582,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2354,7 +2366,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -2368,7 +2380,11 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites-for-sap-business-one-configuration">Prerequisites for SAP Business One Configuration</a></li>
-  <li><a href="#configure-the-sap-business-one-application-in-the-agent">Configure the SAP Business One Application in the Agent</a></li>
+  <li><a href="#configure-the-sap-business-one-application-in-the-agent">Configure the SAP Business One Application in the Agent</a>
+    <ul>
+      <li><a href="#custom-database-type-selection">Custom Database Type Selection:</a></li>
+    </ul>
+  </li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
   <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
 </ul>
@@ -2395,26 +2411,17 @@ application of SAP Business One, attributes and action, and the Troubleshooting 
 
 <h2 id="configure-the-sap-business-one-application-in-the-agent">Configure the SAP Business One Application in the Agent</h2>
 
-<ol>
-  <li>
-    <p>Open APPSeCONNECT Agent by providing correct credentials.</p>
-  </li>
-  <li>
-    <p>In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPSeCONNECT Cloud.</p>
-  </li>
-</ol>
+<p>1) Open APPSeCONNECT Agent by providing correct credentials.</p>
+
+<p>2) In the connection page of APPSeCONNECT Agent, you will see the connection is created in APPSeCONNECT Cloud.</p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent1.png" alt="sapb1-agent1" /></p>
 
-<ol>
-  <li>Click on the credentials icon to provide SAP B1 credentials to validate the connection.</li>
-</ol>
+<p>3) Click on the credentials icon to provide SAP B1 credentials to validate the connection.</p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent2.png" alt="sapb1-agent2" /></p>
 
-<ol>
-  <li>Provide the credentials of SAP B1</li>
-</ol>
+<p>4) Provide the credentials of SAP B1</p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent3.png" alt="sapb1-agent3" /></p>
 
@@ -2423,30 +2430,68 @@ This path later needs to be provided in SAP B1 as well.</p>
 
 <p><strong>Follow the steps mentioned below, to provide SAP Event XML file path &amp; SAP Image file path in SAP B1</strong></p>
 
-<ol>
+<ul>
   <li>Open SAP B1 after providing valid credentials.</li>
   <li>Navigate through Administrator &gt; System Initialization &gt; General Settings.</li>
   <li>A form will open. Select “Path” menu under it. Browse for SAP Event XML file path and Image path.</li>
-</ol>
+</ul>
 
 <p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent4.png" alt="sapb1-agent4" /></p>
 
-<ol>
-  <li>After providing all the credentials. Click “Save” button.</li>
-</ol>
+<p>5) After providing all the credentials. Click “Save” button.</p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent5.png" alt="sapb1-agent5" /></p>
 
 <p>A message “Connection Data Saved” will appear if all the credentials provided by you for SAP B1 is valid.</p>
 
-<ol>
-  <li>Click on the “Validate” button, to validate the connection.</li>
-</ol>
+<p>6) Click on the “Validate” button, to validate the connection.</p>
 
 <p><img src="/staticfiles/connectors/media/application-connector/sapb1-agent6.png" alt="sapb1-agent6" /></p>
 
 <p>A message “Test Connection Successful” will appear if all the credentials provided by you for SAP B1 is valid. 
 In this way, you can configure the credentials of SAP B1.</p>
+
+<h3 id="custom-database-type-selection">Custom Database Type Selection:</h3>
+
+<p>By default, the field for <code class="language-plaintext highlighter-rouge">Database Type</code> list the following types in its drop-down and they are:</p>
+<ul>
+  <li>Hana Database</li>
+  <li>Microsoft SQL Server 2000</li>
+  <li>Microsoft SQL Server 2005</li>
+  <li>Microsoft SQL Server 2008</li>
+  <li>Microsoft SQL Server 2014</li>
+  <li>Microsoft SQL Server 2016</li>
+  <li>Microsoft SQL Server 2017</li>
+  <li>Microsoft SQL Server 2019</li>
+</ul>
+
+<p>SAP DIS adapter gives you the flexibility to create and support Custom database on its drop-down as per your requirement. Follow the below procedure to create custom database type.</p>
+
+<p>1) Navigate to the APPSeCONNECT Folder, where your APPSeCONNECT OP Agent is downloaded.</p>
+
+<p>2) Navigate to APPSeCONNECT &gt; Adapter &gt; BoDataServerTypes.</p>
+
+<p>3) Open the file <strong>BoDataServerTypes</strong> with NOTEPAD, available inside the <strong>Adapter</strong> folder. You can view the XML structure that defines all the default database types.</p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\sapdbtype1.PNG" alt="sapdbtype1" /></p>
+
+<p>4) At the bottom of the file, add the syntax for adding a new database type.</p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\sapdbtype2.PNG" alt="sapdbtype2" /></p>
+
+<p>While Adding make sure, the On-Premise Agent is closed &amp; and Enable Environment is off.</p>
+
+<p>5) The file would look as given below.</p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\sapdbtype3.PNG" alt="sapdbtype3" /></p>
+
+<p>7) Restart your On-Premise Agent and check for the database type drop-down list. You should have the the added database type in the list.</p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\sapdbtype4.PNG" alt="sapdbtype4" /></p>
+
+<p>Following the above process, you can successfully add your custom database type for your application SAP DIS.</p>
+
+<p><strong>Note:</strong> Adding custom database type requires ADMINISTRATOR permission. Incase, your system user profile does not have the admin permission, you need to manually provide the admin permission both in the <strong>ADAPTER</strong> folder and the <strong>BoDataServerTypes</strong> file.</p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
@@ -2456,7 +2501,7 @@ In this way, you can configure the credentials of SAP B1.</p>
 
 <p>Some of the basic troubleshooting issue happens due to improper validations or even if it is 
 accurately validated and if touchpoints do not sync. This basic issue resolves after removing 
-the <code class="highlighter-rouge">Temp and Cache files</code> from the <code class="highlighter-rouge">portal</code> and from your <code class="highlighter-rouge">system</code>. Therefore after clearing all
+the <code class="language-plaintext highlighter-rouge">Temp and Cache files</code> from the <code class="language-plaintext highlighter-rouge">portal</code> and from your <code class="language-plaintext highlighter-rouge">system</code>. Therefore after clearing all
 this, you need to publish the touchpoints again along with <strong>Update Configuration</strong> on the agent.</p>
 
 <p>For E.g. If the “Source Application Data Not Found” in the log file appears, the probable cause is due 
@@ -2477,7 +2522,7 @@ Here, is the list of some of the pre-packaged API actions defined for you which 
 while doing your integrations.</p>
 
 <p>SAP Business One being a SOAP based application, it has objects that are used for pushing and pulling the data. 
-<a href="https://blogs.sap.com/2017/04/27/list-of-object-types/">Click here</a> to know about the <code class="highlighter-rouge">Object Code ID, its Primary Key and the related Table in SAP</code> that would be required for the Integration.</p>
+<a href="https://blogs.sap.com/2017/04/27/list-of-object-types/">Click here</a> to know about the <code class="language-plaintext highlighter-rouge">Object Code ID, its Primary Key and the related Table in SAP</code> that would be required for the Integration.</p>
 
 <table>
   <thead>
@@ -4819,8 +4864,37 @@ while doing your integrations.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/zohobooks/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    ZohoBooks
+                                </a>
+                            </li>
                             
                             
                             
@@ -5015,15 +5089,6 @@ while doing your integrations.</p>
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/Overview-of-GenericRest-Adapters/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Overview of Rest Adapters
-                                </a>
-                            </li>
                             
                             
                             

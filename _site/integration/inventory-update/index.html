@@ -477,8 +477,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -501,8 +501,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -540,6 +540,12 @@
     
     <li class="menu-item-" data-url="/connectors/uniconta/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/connectors/uniconta/" onclick="selectTab('/connectors/uniconta/', event);" title="Go to Uniconta">Uniconta</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/zohobooks/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/zohobooks/" onclick="selectTab('/connectors/zohobooks/', event);" title="Go to ZohoBooks">ZohoBooks</a>
         
     </li>
     
@@ -1369,12 +1375,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1456,6 +1456,18 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-packaging-overview/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/processflow/processflow-packaging-overview/" onclick="selectTab('/processflow/processflow-packaging-overview/', event);" title="Go to Packages">Packages</a>
         
     </li>
     
@@ -1582,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
@@ -2389,7 +2401,7 @@ integration process can be executed through workflow for adding Inventory for pr
 <p><img src="/staticfiles/integration/media/nav-magemulti-inventoryworflow.png" alt="nav-magemulti-inventoryworflow" /></p>
 
 <p>In this case, the quantity of the products is added by updating the inventory. Therefore, the above workflow 
-is designed to <code class="highlighter-rouge">Update the Inventory</code> of the products added in MS Dynamics NAV and will be posted to Magento2 (Multi-store).</p>
+is designed to <code class="language-plaintext highlighter-rouge">Update the Inventory</code> of the products added in MS Dynamics NAV and will be posted to Magento2 (Multi-store).</p>
 
 <p><strong>Note: Before adding the inventory of the products, the user needs to make sure the products are synced which needs to be updated</strong></p>
 
@@ -2421,12 +2433,12 @@ is designed to <code class="highlighter-rouge">Update the Inventory</code> of th
 
 <p><img src="/staticfiles/integration/media/nav-magemulti-inventory-mapping.png" alt="nav-magemulti-inventory-mapping" /></p>
 
-<p><strong>Note: The blank mapping is required for the Root Variable <code class="highlighter-rouge">UpdateSyncFlag</code> in case of <code class="highlighter-rouge">Inventory Add sync</code> for multiple 
+<p><strong>Note: The blank mapping is required for the Root Variable <code class="language-plaintext highlighter-rouge">UpdateSyncFlag</code> in case of <code class="language-plaintext highlighter-rouge">Inventory Add sync</code> for multiple 
 connection from Dynamics NAV to Magento2.</strong></p>
 
 <h2 id="action-filters">Action Filters</h2>
 
-<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="highlighter-rouge">Field</code> and <code class="highlighter-rouge">Criteria</code>
+<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="language-plaintext highlighter-rouge">Field</code> and <code class="language-plaintext highlighter-rouge">Criteria</code>
 View the image below to define the Action Filters</p>
 
 <p><img src="/staticfiles/integration/media/nav-magemulti-inventory4.png" alt="nav-magemulti-inventory4" /></p>
@@ -2452,7 +2464,7 @@ View the image below to define the Action Filters</p>
 
 <h2 id="integration-data-survey">Integration Data Survey</h2>
 
-<p>The user can survey the data by viewing the <code class="highlighter-rouge">Processed Snapshot</code> from the node level of the workflow.
+<p>The user can survey the data by viewing the <code class="language-plaintext highlighter-rouge">Processed Snapshot</code> from the node level of the workflow.
 This Snapshot View displays the successful execution of the workflow.</p>
 
 <p><img src="/staticfiles/integration/media/nav-magemulti-inventory7.png" alt="nav-magemulti-inventory7" /></p>
@@ -2467,7 +2479,7 @@ to Catalog - Products - View Product.</li>
 <p><img src="/staticfiles/integration/media/nav-magemulti-inventory8.png" alt="nav-magemulti-inventory8" /></p>
 
 <ul>
-  <li>WebStockFlag must get to <code class="highlighter-rouge">T</code> from <code class="highlighter-rouge">F</code> after the sync is complete.</li>
+  <li>WebStockFlag must get to <code class="language-plaintext highlighter-rouge">T</code> from <code class="language-plaintext highlighter-rouge">F</code> after the sync is complete.</li>
 </ul>
 
 <h2 id="frequency-of-use">Frequency of use</h2>
@@ -4780,8 +4792,28 @@ to Catalog - Products - View Product.</li>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
                             
                             
                             
