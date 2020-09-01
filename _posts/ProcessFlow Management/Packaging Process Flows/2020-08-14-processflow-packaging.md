@@ -114,7 +114,7 @@ The tab details are mentioned below:
 used in the packages. Here you can also view the package name and date.  
 **Documentation Tab**- This section provides you the documentation of the process flows.
 **Processflow Tab**- This section enlist the list of process flow included in the package.
-![package-processflow](\staticfiles\processflow\media\package-processflow.png)
+
 In the Processflow Tab  `Search` option is provided where you can search the required 
 processflows by providing the processflow names.  
 
