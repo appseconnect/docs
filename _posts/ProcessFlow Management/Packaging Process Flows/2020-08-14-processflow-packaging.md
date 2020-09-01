@@ -96,7 +96,7 @@ Now you have done creating your packages, and you can view the packages listed u
 To View a specific Package,  click View option available on the Contextual menu of the Package.
 ![package-edit-view](\staticfiles\processflow\media\package-edit-view.png)
 
-The following window appears where you can view the package details along with 
+The following pop up appears where you can view the package details along with 
 three specific tabs namely - Description, Documentation, Process Flow.
 ![package-view-detail](\staticfiles\processflow\media\package-view-detail.png)
 
@@ -104,14 +104,17 @@ The `View Package` window offers you with the following package information
 
 **Package Name** - Package name information was provided during Package creation.   
 **Version** -  Version information was provided during Package creation.  
-**Created by** - This indicates the Organization name of the user who created the Package.  
+**Created by** - This indicates the Organization name of the user who created the Package.   
+**Install** - This button enables to install the package. You can install the package from `My Package -> View Package-> Install` option & Also 
+from `Shared with Me -> Package-> Install` section. [View here](/processflow/processflow-package-installation/) 
+for installation details
 
 The tab details are mentioned below:  
 **Description Tab** - This section provides you the package description along with the view of application
 used in the packages. Here you can also view the package name and date.  
 **Documentation Tab**- This section provides you the documentation of the process flows.
 **Processflow Tab**- This section enlist the list of process flow included in the package.
-![package-processflow](\staticfiles\processflow\media\package-processflow.png)
+
 In the Processflow Tab  `Search` option is provided where you can search the required 
 processflows by providing the processflow names.  
 
@@ -132,10 +135,11 @@ created. You can edit any Package available in Package Library section.
    of the documentation.
 
 After doing the changes, the User will be able to save the changes by clicking on the Save button.
-If the user clicks on the Cancel button, the changes will not be saved.
-**Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.
-(b) Preview option is available in the editor to view the changes.
-(c) In Edit mode, you will not be able to view or edit the Process Flow(s) present in a Package**
+If the user clicks on the Cancel button, the changes will not be saved.  
+
+**Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.  
+(b) Preview option is available in the editor to view the changes.  
+(c) In Edit mode, you will not be able to view or edit the Process Flow(s) present in a Package**  
 
 
 
