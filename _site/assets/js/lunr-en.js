@@ -368,7 +368,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to create Workflow",
+      title: "Quickstart to Workflows",
       excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -3029,7 +3029,7 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to create Workflow",
+        "title": "Quickstart to Workflows",
         "url": "/workflow/quickstart-guides-to-workflow-management/",
         "excerpt": "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
