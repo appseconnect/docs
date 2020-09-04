@@ -127,7 +127,71 @@ This section of the document will allow you to view and understand the details o
 
 ![opdetails1]()
 
-2) 
+2) Click on the **Properties** tab, you will able to view the live architectural details of your On-Premise environment. The follwoing details will be displayed.
+
+* Architecture in use
+* The latest agent deployment version for the selected environment
+* Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually.  
+* APPSeCONNECT directory free space available
+* CPU and Memory Usage display the dynamic data depending on the consumption rate.
+* Agent Installation directory path
+* Date of Agent Installation
+* Agent Logs - These are the dynamic process logs and the notifications, from where one can keep track of Scheduler details, rule that are scheduled and are under execution, service status etc.  
+
+**Note: User can view the log files by double clicking on them.** 
+
+3) Click on the **Process Flows** tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
+
+- **Process Flow Name:** The name of the process flow, deployed, will be displayed.
+- **Deployed At:** The last deployment of the process flow will be displayed.
+- **No. of tries:** You will be able to view the count of the number of retries performed.
+- **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
+- **Actions** The following actions can be formed for each process flows: **[Last Deployment Log]()** , **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** , **[View Snapshot](/processflow/snapshot-processflow/)** and **[Retry](/processflow/retry-processflow/)**
+
+![opdetails2]()
+
+4) Click on the **PLUGINS** tab. You will be able to view the all the plugins available on your On-Premise environment. The following plugins will be listed: **[MySQL](/deployment/MYSQL-plugin-installation/)** , **[OLEDB](/deployment/OLE-db-plugin-installation/)** , **[HANA](/deployment/hana-plugin-installation/)** and **SQLite**.
+
+![opdetails3]()
+
+5) Clicking on the **Settings** tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.
+
+![opdetails4]()
+
+**`Settings` have three available sections for managing OP Agents:**
+
+1) Retry Setting - One can schedule resync of failed integrations, where you can provide the start time, 
+   no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
+   you must activate Retry transaction.
+
+2) Log Settings - You can control the way you want to view and store the log in OP Agent from portal now.
+
+* If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be 
+  stored in sql lite database and will be reflected in the log bucket.
+* Set Target for - It will allow you to define the type of log that you want to view, whether Error, Infor or Status.
+* Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.
+
+3) Real Time Settings - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
+   Users need to provide the Hostname and the Port for the RealTime Execution.    
+
+4) Diagnostic Settings - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
+   files will get available in Agent and service path as shown in the image.  
+
+Diagnostic Settings is provided with two output paths:
+
+a)	Agent Output Path: This path provides the details of the transformed files when triggered manually.         
+b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.       
+
+![opdetails5]()    
+(Image of Realtime settings & Diagnostics Settings)
+
+After saving the changes in settings, the updated information gets auto-reflected in OP Agent. 
+
+**Note:**
+
+**- Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.**
+
+**- The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.**
 
 
 ### Grouping of On-Premise Environments

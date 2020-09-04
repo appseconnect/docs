@@ -2378,7 +2378,7 @@
 
 
 
-  4 minute read
+  8 minute read
 </p>
                 
                 
@@ -2465,9 +2465,11 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
 
 <p><strong>Note:</strong></p>
 
-<p><strong>- Every organisation can have only one Hosted environment created.</strong>
-<strong>- You cannot rename the name of the created hosted environment.</strong>
-<strong>- You cannot group environments in folders in the HOSTED section.</strong></p>
+<p><strong>- Every organisation can have only one Hosted environment created.</strong></p>
+
+<p><strong>- You cannot rename the name of the created hosted environment.</strong></p>
+
+<p><strong>- You cannot group environments in folders in the HOSTED section.</strong></p>
 
 <h3 id="hosted-environment-details-page">Hosted Environment Details page</h3>
 
@@ -2536,7 +2538,77 @@ The following are the details that will displayed for deployed Process Flows.</p
 
 <p><img src="" alt="opdetails1" /></p>
 
-<p>2)</p>
+<p>2) Click on the <strong>Properties</strong> tab, you will able to view the live architectural details of your On-Premise environment. The follwoing details will be displayed.</p>
+
+<ul>
+  <li>Architecture in use</li>
+  <li>The latest agent deployment version for the selected environment</li>
+  <li>Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually.</li>
+  <li>APPSeCONNECT directory free space available</li>
+  <li>CPU and Memory Usage display the dynamic data depending on the consumption rate.</li>
+  <li>Agent Installation directory path</li>
+  <li>Date of Agent Installation</li>
+  <li>Agent Logs - These are the dynamic process logs and the notifications, from where one can keep track of Scheduler details, rule that are scheduled and are under execution, service status etc.</li>
+</ul>
+
+<p><strong>Note: User can view the log files by double clicking on them.</strong></p>
+
+<p>3) Click on the <strong>Process Flows</strong> tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.</p>
+
+<ul>
+  <li><strong>Process Flow Name:</strong> The name of the process flow, deployed, will be displayed.</li>
+  <li><strong>Deployed At:</strong> The last deployment of the process flow will be displayed.</li>
+  <li><strong>No. of tries:</strong> You will be able to view the count of the number of retries performed.</li>
+  <li><strong>Status</strong> The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.</li>
+  <li><strong>Actions</strong> The following actions can be formed for each process flows: <strong><a href="">Last Deployment Log</a></strong> , <strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> , <strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong> and <strong><a href="/processflow/retry-processflow/">Retry</a></strong></li>
+</ul>
+
+<p><img src="" alt="opdetails2" /></p>
+
+<p>4) Click on the <strong>PLUGINS</strong> tab. You will be able to view the all the plugins available on your On-Premise environment. The following plugins will be listed: <strong><a href="/deployment/MYSQL-plugin-installation/">MySQL</a></strong> , <strong><a href="/deployment/OLE-db-plugin-installation/">OLEDB</a></strong> , <strong><a href="/deployment/hana-plugin-installation/">HANA</a></strong> and <strong>SQLite</strong>.</p>
+
+<p><img src="" alt="opdetails3" /></p>
+
+<p>5) Clicking on the <strong>Settings</strong> tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.</p>
+
+<p><img src="" alt="opdetails4" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Settings</code> have three available sections for managing OP Agents:</strong></p>
+
+<p>1) Retry Setting - One can schedule resync of failed integrations, where you can provide the start time, 
+   no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
+   you must activate Retry transaction.</p>
+
+<p>2) Log Settings - You can control the way you want to view and store the log in OP Agent from portal now.</p>
+
+<ul>
+  <li>If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be 
+stored in sql lite database and will be reflected in the log bucket.</li>
+  <li>Set Target for - It will allow you to define the type of log that you want to view, whether Error, Infor or Status.</li>
+  <li>Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.</li>
+</ul>
+
+<p>3) Real Time Settings - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
+   Users need to provide the Hostname and the Port for the RealTime Execution.</p>
+
+<p>4) Diagnostic Settings - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
+   files will get available in Agent and service path as shown in the image.</p>
+
+<p>Diagnostic Settings is provided with two output paths:</p>
+
+<p>a)	Agent Output Path: This path provides the details of the transformed files when triggered manually.       <br />
+b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.</p>
+
+<p><img src="" alt="opdetails5" />  <br />
+(Image of Realtime settings &amp; Diagnostics Settings)</p>
+
+<p>After saving the changes in settings, the updated information gets auto-reflected in OP Agent.</p>
+
+<p><strong>Note:</strong></p>
+
+<p><strong>- Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.</strong></p>
+
+<p><strong>- The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.</strong></p>
 
 <h3 id="grouping-of-on-premise-environments">Grouping of On-Premise Environments</h3>
 <p>This section of the document will allow you to Group multiple OP environment in folders. Follow the process below to create folders for grouping.</p>
