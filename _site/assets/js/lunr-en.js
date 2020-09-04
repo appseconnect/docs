@@ -2556,7 +2556,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "APPSeCONNECT 2020 Release",
-      excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections are Q2 Version 4.7.0 &amp; Q2...",
+      excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections under 2020 Release is given under...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 282
@@ -5830,7 +5830,7 @@ var store = [
       {
         "title": "APPSeCONNECT 2020 Release",
         "url": "/release-notes/2020/",
-        "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections are Q2 Version 4.7.0 &amp; Q2...",
+        "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections under 2020 Release is given under...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
