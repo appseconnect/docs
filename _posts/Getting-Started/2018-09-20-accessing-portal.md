@@ -397,11 +397,11 @@ Here you will get the knowhow of APPSeCONNECT Notification and its functionality
 
 ### Downloads Section
 
-User would be able to download APPSeCONNECT specific tools from this section. Clicking on the Downloads tab, 
+User would be able to download and install APPSeCONNECT specific tools from this section. Clicking on the Downloads tab, 
 user would be able to view the tools that are available for the organisation. The tools that would be available are:
 
-* APPSeCONNECT On-Premise Agent
-* APPSeCONNECT Plugins
+* [APPSeCONNECT On-Premise Agent](/deployment/Deployment-Configuration/)
+* [APPSeCONNECT Plugins](/deployment/Overview-of-Plugin/)
 * APPSeCONNECT Debugger
 * Application specific Add-Ons
 

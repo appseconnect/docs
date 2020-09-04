@@ -89,7 +89,7 @@ The procedures for deploying workflow as per the chosen environment is given bel
 
 ### Deploying in Cloud Agent
 
-After successfully publishing the workflow, you need run and execute the workflow. As a prerequisite, you need to enable the Cloud Environment as primary by checking the checkbox in the [environment section](/workflow/deploying-and-executing/#executing-the-workflow) before [publishing](/workflow/deploying-and-executing/#publishing-a-workflow) the workflow.
+After successfully publishing the workflow, you need run and execute the workflow. As a prerequisite, you need to enable the Cloud Environment as primary by checking the checkbox in the [environment section](/deployment/Environment-Management/) before [publishing](/workflow/deploying-and-executing/#publishing-a-workflow) the workflow.
 
 ## Executing the Workflow
 

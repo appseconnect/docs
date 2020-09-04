@@ -2581,6 +2581,24 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Easy Environment Management",
+      excerpt: "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
+      categories: ["Deployment"],
+      tags: ["developers"],
+      id: 285
+    });
+    
+  
+    idx.add({
+      title: "Revamped Merger Node",
+      excerpt: "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 286
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5727,6 +5745,28 @@ var store = [
         "title": "Packaging Overview",
         "url": "/processflow/processflow-packaging-overview/",
         "excerpt": "Process Flow Packaging Overview: Zipping up of multiple files in packages makes it easy to reuse and share with different...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Easy Environment Management",
+        "url": "/deployment/Easy-Environment-Management/",
+        "excerpt": "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Revamped Merger Node",
+        "url": "/processflow/working-with-revamped-merger/",
+        "excerpt": "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
