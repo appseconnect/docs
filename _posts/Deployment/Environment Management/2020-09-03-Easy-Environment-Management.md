@@ -195,20 +195,113 @@ After saving the changes in settings, the updated information gets auto-reflecte
 
 
 ### Grouping of On-Premise Environments
-This section of the document will allow you to Group multiple OP environment in folders. Follow the process below to create folders for grouping.
+This section of the document will allow you to Group multiple OP environments in folders. Grouping is initiated to manage and the arrangement of multiple similar elements for distinguishing its exact purpose. In APPSeCONNECT, for On-Premise environments
+, you can group environments in folders as per your requirement. You can view all your created folders on expanding the On-Premise section.
+Follow the process below to create folders for grouping.
 
+1) Navigate to Manage > Environments. Click on the Ellipses (Three Horizontal Dots) beside the On-Premise Node to view the option **Create Folder**.
 
+![opfolder1]()
 
+2) You get the window for providing the name of the folder. The folder would be created with the provided name under the On-Premise section.
+
+![opfolder2]()
+
+3) Expand the On-Premise node, to view your created Folder. Clicking on the folder, you will view following page.
+
+![opfolder3]()
+
+4) You can Drag and drop the OP environments for easy arrangements.
+
+![opfolder4]()
+
+5) You can perform the following functionalities within a created folder. Click on the Ellipses beside the created folder to view these following option in the context menu.
+
+- **Add Folder:** You can add a sub folder to your created folder for micro management of the On-Premise environments.
+- **Rename:** You can anytime RENAME your created folder as per the need of yours.
+- **Delete** In case the folder is not required, you will be able to delete the created folders anytime.
+
+![opfolder3]()
+
+** You can delete your created folders anytime. On its deletion, all the  On-Premise Enviroments under that folder will be unparented and will shift under the main On-Premise folder.**
+
+Following the above process you can easily create and group your On Premise Environments.
+
+**Note:**
+
+- You can create to max upto two level when creating folders exculding the main **On-Premise**: On Premise > Folder 1 > Sub folder 1.
+- You cannot create Folders, Sub-Folders with same name in your organisation. Each name provided for any folders or sub-folders should be unique.
+
+ 
 ## Manage Control of Environments
 
-This section of the document will allow you to manage the control of your environments be it the **HOSTED** or **On-Premise**
+Managing Control over an Environment is an eesential requirement that depicts which environment is set as PRIMARY. As Workflow are deployed only to the environments which are set as PRIMARY.
+Therefore, users needs to manage control of their environment. This section of the document will allow you to manage the control of your environments be it the **HOSTED** or **On-Premise**
 
+1) Navigate to Manage > Environments and click on the environment which you are required to control. 
+
+2) You get to view the Environment Details Page of your selected environment (either [HOSTED](/deployment/Easy-Environment-Management/#hosted-environment-details-page) or [On-Premise](/deployment/Easy-Environment-Management/#on-premise-environment-details-page))
+In this case, On-Premise environment is selected.
+
+![controlenv1]()
+
+3) You are required to click on the checkbox available in the Top-Right corner of the details page. Enabling the checkbox will allow you to control the selected environment.
+
+![controlenv2]()
+
+4) On enabling, you can confirm your current control status in the environment page itself.
+
+![controlenv3]()
+
+Following the above steps, you can successfully control environments for your organisation.
+
+**Note:**
+
+- The steps to control an HOSTED environment is same as that mentioned in the above steps.
+- You cannot control multiple environments at the same time for an organisation.
+- You 
 
 
 ## Detaching & Deleting the Environments
 
+Environment detachment is a functionality that blocks the Agent from use in that specific environment. 
 This section of the document will allow to attach/detach your environments. You can also DELETE you environments. The processes are given below.
 
+### Attach/Detach of Environments
+
+1) To detach your environment, you need to click on the ellipses (Three horizontal dots) beside the environment name that needs to be detached.
+
+![detach1]()
+
+2) On detaching the selected environment from Portal, it remains in the list but will be displayed as **Agent is Detached** when clicked on it.
+
+![detach2]()
+
+3) Post detachment, if the user tries to re-login to the On-Premise environment, it will display the message, **Agent is Blocked.**
+
+![detach3]()
+
+**Note:**
+**- On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.**
+**- Detached Agents, needs to be reattached from the portal for further logging in to it.**
+**- Users can anytime delete and detach/attach an inactive agent in the portal.** 
+
+### Deleting Environments
+
+You can now directly delete environments that are no longer in use from the listing itself. As soon as you perform delete from portal, the OP Agent instance (active/inactive) gets auto-removed from the local environment and all the associated licenses will get removed.
+
+All the services and sync operations will get stopped. If any new user or different project user logs in further to the same environment, a new license will be generated against it. Follow the below steps to delete an environment (On-Premise or HOSTED).
+
+1) Navigate to Manage > Environments.
+
+2) Click on the ellipses of the environment (On-Premise or HOSTED) which you want to delete. Click on the DELETE button in the context menu that appears.
+
+![delete1]()
+
+3) Once deleted, user get a successful message for the deletion of the environment. The environment gets removed from the environment list after the deletion process.
+
+**Note: If a user has relogged in to a deleted Agent from the portal, 
+the deleted agent now will be visible in attached mode in the portal.**
 
 
 
