@@ -2378,7 +2378,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2399,7 +2399,7 @@
   </li>
   <li><a href="#adding-action-filters">Adding Action Filters</a></li>
   <li><a href="#adding-retry-filters">Adding Retry Filters</a></li>
-  <li><a href="#saving-a-template-filter">Saving a Template Filter</a></li>
+  <li><a href="#saving-and-creating-from-a-template-filter">Saving and creating from a Template Filter</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2523,10 +2523,9 @@ Every Schema is an entity that requires to multiple actions to perform multiple 
 
 <p><img src="\staticfiles\processflow\media\action_filter4.png" alt="actionfilter4" /></p>
 
-<p>6) Provide the following details to configure the action filter.</p>
+<p>6) You get the option to provide your filter for TWO sections. Either on <strong>HEADER</strong> and <strong>BODY</strong>. As per you application API, you can provide the following details to configure the action filter.</p>
 
 <ul>
-  <li>Request Type: Select the request type as per your requirement: <strong>Header</strong> or <strong>Body</strong>.</li>
   <li>Key: This is the filter key that will define the key to filter.</li>
   <li>Operator: You need to select the type of operator needed for the execution of the action filter.</li>
   <li>Value: You need to provide the value to the filter that will be executed to GET or POST data.</li>
@@ -2536,11 +2535,11 @@ Every Schema is an entity that requires to multiple actions to perform multiple 
 
 <p><img src="\staticfiles\processflow\media\action_filter5.png" alt="actionfilter5" /></p>
 
-<p>7) To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the <strong>ADD CRITERIA</strong> button to add conjuction on the same level as of the elder sibling filter.</p>
+<p>7) You can also append multiple filters by clicking on the <strong>APPEND</strong> button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.</p>
 
-<p><img src="\staticfiles\processflow\media\action_filter6.png" alt="actionfilter6" /></p>
+<p>8) You can also save the filter as a template by clicking on <strong>SAVE AS TEMPLATE</strong> for reusing it on a different Process Flow for the same application within the same organisation. For more details on TEMPLATE, <a href="/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter">Click Here</a>.</p>
 
-<p>8) You can also save the filter as a template by clicking on <strong>SAVE AS TEMPLATE</strong> for reusing it on a different Process Flow for the same application within the same organisation. For more details on TEMPLATE, <a href="">Click Here</a>.</p>
+<p><strong>Note:</strong> You need to save the elder sibling before applying conjuction on same level or below level.</p>
 
 <h2 id="adding-retry-filters">Adding Retry Filters</h2>
 
@@ -2562,12 +2561,11 @@ Every Schema is an entity that requires to multiple actions to perform multiple 
 
 <p><img src="\staticfiles\processflow\media\error_filter4.PNG" alt="errorfilter4" /></p>
 
-<p>6) Provide the following details to configure the error filter.</p>
+<p>6) You get the option to provide your retry filter for TWO sections. Either on <strong>HEADER</strong> and <strong>BODY</strong>. As per you application API, you can provide the following details to configure the retry filter. Provide the following details to configure the retry filter.</p>
 
 <ul>
-  <li>Request Type: Select the request type as per your requirement: <strong>Header</strong> or <strong>Body</strong>.</li>
   <li>Key: This is the filter key that will define the key to filter.</li>
-  <li>Operator: You need to select the type of operator needed for the execution of the error filter.</li>
+  <li>Operator: You need to select the type of operator needed for the execution of the action filter.</li>
   <li>Value: You need to provide the value to the filter that will be executed to GET or POST data.</li>
 </ul>
 
@@ -2575,7 +2573,7 @@ Every Schema is an entity that requires to multiple actions to perform multiple 
 
 <p>Following the above process, you can successfully implement Retry filter for an action.</p>
 
-<h2 id="saving-a-template-filter">Saving a Template Filter</h2>
+<h2 id="saving-and-creating-from-a-template-filter">Saving and creating from a Template Filter</h2>
 
 <p>1) Drag the application node for whose Action filter/Retry filter you need to create as a template.</p>
 
@@ -2586,11 +2584,9 @@ Every Schema is an entity that requires to multiple actions to perform multiple 
 <p>4) Click on the <strong>CREATE</strong> button as per the options selected, either ACTION FILTER or RETRY FILTER. The create window opens as per the selected choice (The window remains same for both Action Filter and Retry Filter). 
 <strong>Here we have chosen ACTION FILTER</strong>.</p>
 
-<p><img src="" alt="savetemplate1" /></p>
-
 <p>4) Provide the details in the fields and click on the SAVE icon beside the filter column. After saving the column, you get the option of <strong>SAVE AS TEMPLATE</strong>.</p>
 
-<p><img src="" alt="savetemplate2" /></p>
+<p><img src="\staticfiles\processflow\media\savetemplate1.PNG" alt="savetemplate1" /></p>
 
 <p>5) Click on the <strong>Save as Template</strong> button to save the provided Action Filter as a template. 
 You can reuse this saved template on any other nodes of any Process Flow in your organisation, 
@@ -2599,9 +2595,25 @@ provided the <strong>application node</strong> , <strong>Schema</strong> &amp; t
 <p>6) You can view the saved for the schema and action by navigating to <strong><a href="/processflow/adding-schema-actions/#listing-of-schemas-and-attributes">Manage Schema</a> &gt; your selected Schema Entity &gt; The Action in which you have created the Template &gt; Click on the Action filter.</strong>
 You will be able to view the saved template for that schema and the action. The template will not be editable in the Manage schema window.</p>
 
-<p><img src="" alt="savetemplate3" /></p>
+<p>7) To create filter from a saved template, navigate to Node Config window -&gt;  Select Schema -&gt; Select Action -&gt; Configure filter. Expand the Schema node until Action Filter, Retry Filter appears.</p>
+
+<p>8) Click on the Ellipses beside your chosen option (Action Filter, Retry Filter) and select the option <strong>Create from template</strong> from the context menu.</p>
+
+<p><img src="\staticfiles\processflow\media\createtemplate1.PNG" alt="createtemplate1" /></p>
+
+<p>9) On clicking <strong>Create from template</strong> you get a confirmation message. Click on the YES button.</p>
+
+<p><img src="\staticfiles\processflow\media\createtemplate2.PNG" alt="createtemplate2" /></p>
+
+<p>10) The saved template opens. You can anytime edit the action filter placed in the template as per your requirement. The updates made will not change in the template that is saved.</p>
+
+<p><img src="\staticfiles\processflow\media\createtemplate3.PNG" alt="createtemplate3" /></p>
+
+<p>Following the above process you can successfully SAVE and create filter from template.</p>
 
 <p><strong>Note:</strong></p>
+
+<p><strong>-The steps to remains when working with Retry filer.</strong></p>
 
 <p><strong>- Each action of a schema can have only one created template.</strong></p>
 

@@ -2378,7 +2378,7 @@
 
 
 
-  12 minute read
+  14 minute read
 </p>
                 
                 
@@ -2392,12 +2392,6 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#pre-requisites">Pre-requisites</a></li>
-  <li><a href="#hosted">Hosted</a>
-    <ul>
-      <li><a href="#create-hosted-environment">Create Hosted Environment</a></li>
-      <li><a href="#hosted-environment-details-page">Hosted Environment Details page</a></li>
-    </ul>
-  </li>
   <li><a href="#on-premise">On-Premise</a>
     <ul>
       <li><a href="#on-premise-environment-details-page">On-Premise Environment Details page</a></li>
@@ -2405,10 +2399,21 @@
     </ul>
   </li>
   <li><a href="#manage-control-of-environments">Manage Control of Environments</a></li>
+  <li><a href="#hosted">Hosted</a>
+    <ul>
+      <li><a href="#create-hosted-environment">Create Hosted Environment</a></li>
+      <li><a href="#hosted-environment-details-page">Hosted Environment Details page</a></li>
+    </ul>
+  </li>
   <li><a href="#detaching--deleting-the-environments">Detaching &amp; Deleting the Environments</a>
     <ul>
       <li><a href="#attachdetach-of-environments">Attach/Detach of Environments</a></li>
       <li><a href="#deleting-environments">Deleting Environments</a></li>
+    </ul>
+  </li>
+  <li><a href="#environment-view-for-old-agents">Environment View for Old Agents</a>
+    <ul>
+      <li><a href="#working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</a></li>
     </ul>
   </li>
 </ul>
@@ -2423,105 +2428,9 @@
   <li>By default, on landing up on the environment page, you will be selected with the hosted section. Scroll below to view more details on the Hosted section.</li>
 </ul>
 
-<h2 id="hosted">Hosted</h2>
-
-<p>By default, you will be on the Hosted section, when landing in the environment page. This section will enable you to create an hosted (Cloud)
-environment. You can view all the related environment details in its <a href="/Easy-Environment-Management/#hosted-environment-details-page">Environment Details page</a></p>
-
-<p>1) If you do not have the support of the Hosted (cloud) environment, you will get the following view.</p>
-
-<p><img src="" alt="hostedenv1" /></p>
-
-<p>To enable your organisation with cloud support, <a href="/deployment/Deployment-Configuration/#configuration-process-for-cloud">Click here.</a></p>
-
-<p>2) If you have the support of Hosted (cloud) environment on your organisation, yet, you don’t have a Hosted environment created, you will get the following view.</p>
-
-<p><img src="" alt="hostedenv2" /></p>
-
-<p><a href="/deployment/Easy-Environment-Management/#create-hosted-environment">Click here</a> to know more about Hosted Environment creation.</p>
-
-<h3 id="create-hosted-environment">Create Hosted Environment</h3>
-
-<p>This section of the document will help you to create the Hosted (cloud) environment on your organisation, provided your organisation has to be 
-Cloud supported. To enable your organisation with cloud support, <a href="/deployment/Deployment-Configuration/#configuration-process-for-cloud">Click here.</a></p>
-
-<p>1) Navigate to Manage &gt; Environment. You will be selected with the hosted section by default.</p>
-
-<p>2) You will get the following view if you do not have the hosted (cloud) environment created. Click on the <strong>CREATE</strong> button.</p>
-
-<p><img src="" alt="hostedcreate1" /></p>
-
-<p>3) Your Hosted environment will be created automatically. You will be provided with a confirmation message on its successful creation.</p>
-
-<p><img src="" alt="hostedcreate2" /></p>
-
-<p>4) You can view the created environment in the listing, by expanding the Hosted Node. By default, the name of hosted environment will created as <strong>My-Hosted-Environment</strong>.</p>
-
-<p><img src="" alt="hostedcreate3" /></p>
-
-<p>5) Clicking on the created environment, you will be able to view the details page consisting of the following tabs:</p>
-
-<ul>
-  <li>Settings -&gt; You can modify and update the environment setting from this tab</li>
-  <li>Process Flow -&gt; You will be able to view all the deployed process flows, related snapshots, retry, undeploy etc.</li>
-</ul>
-
-<p>For more details on the Environment Details page, <a href="/deployment/Easy-Environment-Management/#hosted-environment-details-page">Click Here</a></p>
-
-<p><strong>Note:</strong></p>
-
-<p><strong>- Every organisation can have only one Hosted environment created.</strong></p>
-
-<p><strong>- You cannot rename the name of the created hosted environment.</strong></p>
-
-<p><strong>- You cannot group environments in folders in the HOSTED section.</strong></p>
-
-<h3 id="hosted-environment-details-page">Hosted Environment Details page</h3>
-
-<p>You will be able to view this page only when you have you hosted environment created. Clickin on the Hosted environment, you can view the details page.</p>
-
-<p><img src="" alt="hosteddetails1" /></p>
-
-<p>1) Clicking on the Hosted environment, will provide you with TWO tabs: <strong>Settings</strong> and <strong>Process Flows</strong>.</p>
-
-<p>2) You will be able to view the following section when clicked on the <strong>Settings</strong> tab.</p>
-<ul>
-  <li><strong>Retry Settings:</strong> - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
-    <ul>
-      <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
-      <li>Start Time: This is a customizable field for the user. It defines the start time of the Resync Process.</li>
-      <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, its configured as 0.</li>
-      <li>Batch Size: This field states, the no of data in a batch to be resynced. The Default value is 10 but the users are open to customize as per their requirement.</li>
-    </ul>
-  </li>
-  <li><strong>Log Settings:</strong> You can control the way you want to view and store the logs for every execution on you hosted environment.
-    <ul>
-      <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
-      <li>Log in Database: The log fetched, would be stored in the database.</li>
-      <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
-      <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High &amp; Critical.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><img src="" alt="hosteddetails2" /></p>
-
-<p>3) Clicking on the <strong>Process Flow Tab</strong> You can view all the Process Flow those are deployed on that environment. 
-The following are the details that will displayed for deployed Process Flows.</p>
-<ul>
-  <li>Name of the Process Flow</li>
-  <li>Description of the Process Flow</li>
-  <li>Version of the Process Flow</li>
-  <li>The time of Deployment</li>
-</ul>
-
-<p><img src="" alt="hosteddetails3" /></p>
-
-<p>Following the above process, you can easily view and update the details of the Hosted agent.</p>
-
 <h2 id="on-premise">On-Premise</h2>
 
-<p>This section will allow you to know about the On-Premise environments that will be installed on your local server for executing the sync processes.</p>
+<p>By default, you will be on the On-Premise section, when landing in the environment page. This section will allow you to know about the On-Premise environments that will be installed on your local server for executing the sync processes.</p>
 
 <p>1) If you are a new user and if you do not have any On-Premise Environment installed, you would get the following view.</p>
 
@@ -2684,8 +2593,102 @@ In this case, On-Premise environment is selected.</p>
 <ul>
   <li>The steps to control an HOSTED environment is same as that mentioned in the above steps.</li>
   <li>You cannot control multiple environments at the same time for an organisation.</li>
-  <li>You</li>
 </ul>
+
+<h2 id="hosted">Hosted</h2>
+
+<p>This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its <a href="/Easy-Environment-Management/#hosted-environment-details-page">Environment Details page</a></p>
+
+<p>1) If you do not have the support of the Hosted (cloud) environment, you will get the following view.</p>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\hostedenv1.PNG" alt="hostedenv1" /></p>
+
+<p>To enable your organisation with cloud support, <a href="/deployment/Deployment-Configuration/#configuration-process-for-cloud">Click here.</a></p>
+
+<p>2) If you have the support of Hosted (cloud) environment on your organisation, yet, you don’t have a Hosted environment created, you will get the following view.</p>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\hostedenv2.PNG" alt="hostedenv2" /></p>
+
+<p><a href="/deployment/Easy-Environment-Management/#create-hosted-environment">Click here</a> to know more about Hosted Environment creation.</p>
+
+<h3 id="create-hosted-environment">Create Hosted Environment</h3>
+
+<p>This section of the document will help you to create the Hosted (cloud) environment on your organisation, provided your organisation has to be 
+Cloud supported. To enable your organisation with cloud support, <a href="/deployment/Deployment-Configuration/#configuration-process-for-cloud">Click here.</a></p>
+
+<p>1) Navigate to Manage &gt; Environment. The Environment page opens.</p>
+
+<p>2) You will get the following view if you do not have the hosted (cloud) environment created. Click on the <strong>Click Here</strong> button.</p>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\hostedcreate1.PNG" alt="hostedcreate1" /></p>
+
+<p>3) Your Hosted environment will be created automatically. You will be provided with a confirmation message on its successful creation.</p>
+
+<p><img src="" alt="hostedcreate2" /></p>
+
+<p>4) You can view the created environment in the listing, by expanding the Hosted Node. By default, the name of hosted environment will created as <strong>My-Hosted-Environment</strong>.</p>
+
+<p><img src="" alt="hostedcreate3" /></p>
+
+<p>5) Clicking on the created environment, you will be able to view the details page consisting of the following tabs:</p>
+
+<ul>
+  <li>Settings -&gt; You can modify and update the environment setting from this tab</li>
+  <li>Process Flow -&gt; You will be able to view all the deployed process flows, related snapshots, retry, undeploy etc.</li>
+</ul>
+
+<p>For more details on the Environment Details page, <a href="/deployment/Easy-Environment-Management/#hosted-environment-details-page">Click Here</a></p>
+
+<p><strong>Note:</strong></p>
+
+<p><strong>- Every organisation can have only one Hosted environment created.</strong></p>
+
+<p><strong>- You cannot rename the name of the created hosted environment.</strong></p>
+
+<p><strong>- You cannot group environments in folders in the HOSTED section.</strong></p>
+
+<h3 id="hosted-environment-details-page">Hosted Environment Details page</h3>
+
+<p>You will be able to view this page only when you have you hosted environment created. Clickin on the Hosted environment, you can view the details page.</p>
+
+<p><img src="" alt="hosteddetails1" /></p>
+
+<p>1) Clicking on the Hosted environment, will provide you with TWO tabs: <strong>Settings</strong> and <strong>Process Flows</strong>.</p>
+
+<p>2) You will be able to view the following section when clicked on the <strong>Settings</strong> tab.</p>
+<ul>
+  <li><strong>Retry Settings:</strong> - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
+    <ul>
+      <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
+      <li>Start Time: This is a customizable field for the user. It defines the start time of the Resync Process.</li>
+      <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, its configured as 0.</li>
+      <li>Batch Size: This field states, the no of data in a batch to be resynced. The Default value is 10 but the users are open to customize as per their requirement.</li>
+    </ul>
+  </li>
+  <li><strong>Log Settings:</strong> You can control the way you want to view and store the logs for every execution on you hosted environment.
+    <ul>
+      <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
+      <li>Log in Database: The log fetched, would be stored in the database.</li>
+      <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
+      <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High &amp; Critical.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="" alt="hosteddetails2" /></p>
+
+<p>3) Clicking on the <strong>Process Flow Tab</strong> You can view all the Process Flow those are deployed on that environment. 
+The following are the details that will displayed for deployed Process Flows.</p>
+<ul>
+  <li>Name of the Process Flow</li>
+  <li>Description of the Process Flow</li>
+  <li>Version of the Process Flow</li>
+  <li>The time of Deployment</li>
+</ul>
+
+<p><img src="" alt="hosteddetails3" /></p>
+
+<p>Following the above process, you can easily view and update the details of the Hosted agent.</p>
 
 <h2 id="detaching--deleting-the-environments">Detaching &amp; Deleting the Environments</h2>
 
@@ -2727,6 +2730,63 @@ This section of the document will allow to attach/detach your environments. You 
 
 <p><strong>Note: If a user has relogged in to a deleted Agent from the portal, 
 the deleted agent now will be visible in attached mode in the portal.</strong></p>
+
+<h2 id="environment-view-for-old-agents">Environment View for Old Agents</h2>
+
+<p>APPSeCONNECT License management &amp; environment management is equipped with the full supportability of old agents. However, old agent users are 
+restricted from viewing the environment details which is available on for latest agents. Users need to update the old agent for viewing the 
+details of the environment.</p>
+
+<p>Old agent will support the complete functionality of the integration process. Old Agent user shall view the environment as given below:
+<img src="/staticfiles/deployment/media/RevampedEnv/old-environment1.png" alt="old-environment1" /></p>
+
+<p>The UI will have three buttons:</p>
+<ul>
+  <li>Deploy Configuration: Any changes or modifications made in the portal will be deployed to the OP agent for the sync process when deployed the configurations from the portal.</li>
+  <li>Agent Settings: This page has three tabs that configures the setting for the environment.<br />
+(a)Log Settings: Log settings captures the details of the Sync process.  <br />
+(b)Real Time Settings: Real Time settings is required when working with Real Time touchpoints using <a href="/api-management/steps-to-create-webhook-endpoint/">Webhooks</a> of the API Management.<br />
+(c)Resync Settings: Users can enable/disable the Autosync feature of the OP agent in the Resync Settings tab.</li>
+</ul>
+
+<p><strong>Note: Old Agent in Detached mode, will not be able to deploy any configuration to the corresponding agent.</strong></p>
+
+<h3 id="working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</h3>
+
+<p>Environments needs to be configured for the generation of the sync logs, autosync activation and Realtime settings configuration. Users need to 
+configure the panel accordingly for detailed output and process.</p>
+
+<p><img src="/staticfiles/deployment/media/RevampedEnv/old-environment2.png" alt="old-environment2" /></p>
+
+<p><strong>Note: (a) Agent status for old agents will be displayed in RED but will have the complete functionality of an Active Agent.<br />
+        (b) Users can detach/attach the agents for detaching/attaching the agent</strong>.</p>
+
+<p class="notice--info"><strong>ProTip:</strong> (1) Agent needs to be dissociated first from the portal, before reassigning the same license key. <br />
+            (2) APPSeCONNECT <a href="/license%20management/license-management/">License Management</a> is compatible even with older versions of the agent.</p>
+
+<p><strong>Log Settings:</strong> Log settings captures the severity details of the logs that are generated. User can filter accordingly as per severity basis of the logs. 
+The page captures the following operations:</p>
+<ul>
+  <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
+  <li>Log in Database: The log fetched, would be stored in the database.</li>
+  <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
+  <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High, Critical.</li>
+</ul>
+
+<p><strong>Note: It is recommended that users select all the three option for detailed information for the SET TARGET FOR and SEVERITY LEVEL option</strong>.</p>
+
+<p><img src="/staticfiles/deployment/media/RevampedEnv/old-environment3.png" alt="old-environment3" /></p>
+
+<p><strong>Real Time settings</strong> - Realtime settings is required when working with the Realtime Touchpoint in API Management. Configurations should be made only when working with the Webhook API(s) and the Real Time Touchpoints in 
+<a href="/api-management/overview/">APPSeCONNECT API Management</a>.
+Real Time settings has two field for the configurations:</p>
+<ul>
+  <li>Real Time Host Name: Users needs to enter the <a href="/api-management/Steps-to-register-url/">Register URL</a> of the Real Time Touchpoints.</li>
+  <li>Port: This is the Port number of the hosted URL.
+<img src="/staticfiles/deployment/media/RevampedEnv/old-environment4.png" alt="old-environment4" /></li>
+</ul>
+
+<p><strong>Resync Settings:</strong> This section of the page has a checkbox for the user to Enable/Disable the autosync of resync.</p>
 
 
                 
