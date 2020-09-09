@@ -48,7 +48,7 @@ The `Right Pane` will have two sections:
 
 - **Package Name** : The package name will be displayed.
 - **Package Description** : The package description will be displayed.
-- **Apps ** : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
+- **Apps** : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
 - **Filter Icon** : This will enable you to search packages based on the name as a keyword.
 
 Beside the package name, you will have checkboxes that will allow you to select the packages for sharing.
