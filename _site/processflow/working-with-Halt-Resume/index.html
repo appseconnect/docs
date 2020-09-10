@@ -2378,7 +2378,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -2426,6 +2426,9 @@ After completing the transferred flow the Process Flow engine will find the RESU
 
 <h2 id="working-principle">Working Principle:</h2>
 
+<p>In the below Process Flow, we have implemented threee processes of a business. Magento2 being the source app GETS all <strong>ORDERS</strong> from source. The flow is at <strong>HALT(PURPLE)</strong>. Keeping the first flow at halt, Magento2 fetches all CUSTOMER data and syncs to the destination application (in this case Dynamics NAV).
+The flow is at <strong>HALT(GREEN)</strong> again. Magento2 will now fetch all the products and post it to Dynamics NAV. The HALT(GREEN) resumes followed by the HALT(Purple). Once all the halted processes are resumed, the first process where Magento2 fetched the <strong>ORDERS</strong>, now resumes and syncs its data to Dynamics NAV.</p>
+
 <p>1) Drag the Halt node to the designer from Process Property menu. The corresponding Resume node gets dragged as well.</p>
 
 <p>2) Join the links with each node as per your scenario and SAVE the process flow.</p>
@@ -2434,7 +2437,7 @@ After completing the transferred flow the Process Flow engine will find the RESU
 
 <p>3) <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute the Process flow</a> after covering all other configurations.</p>
 
-<p>The above flow is based on the scenario provided below. Listed below are some of the scenarios that will help you implement business specific process flows using Halt-Resume node.</p>
+<p>The flow is based on the scenario explained above. Listed below are some of the scenarios that will help you implement business specific process flows using Halt-Resume node.</p>
 
 <p>4) <a href="/processflow/snapshot-processflow/">Snapshot</a> will provide you with the clear details of the sync process executed using Halt and Resume.</p>
 

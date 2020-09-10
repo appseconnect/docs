@@ -53,7 +53,7 @@ This document will enable you to view and install incoming packages from other o
 - **Last Modified** - You will be able to view the last modified date and time, worked on the remote organisation.
 - **Apps Used** - Applications used inside the process flows in the package, will be listed. **(Image needs to change)**
 
-![viewsharedpack5](\staticfiles\processflow\media\viewsharedpack5.PNG)
+![viewsharedpack5](\staticfiles\processflow\media\viewsharedpack4.PNG)
 
 7) Clicking on the Documentation tab, you can view the documentation. The box will display the required documentation that was provide while creating the package.
 
@@ -61,7 +61,7 @@ This document will enable you to view and install incoming packages from other o
 
 8) Clicking on the Process Flow tab, you will be able to view the following details of the Process Flows bundled with the package.
 - **Name** - You can view the names of the process flow bundled within the package.
-- **Decription** - The description of the Process Flows.
+- **Description** - The description of the Process Flows.
 - **Created On** - The creation date of the Process flows will be listed beside the process flow description.
 
 ![viewsharedpack7](\staticfiles\processflow\media\viewsharedpack7.PNG)
