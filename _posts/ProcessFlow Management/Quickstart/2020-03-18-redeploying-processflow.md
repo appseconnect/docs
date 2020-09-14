@@ -11,7 +11,6 @@ menus:
         identifier: redeployprocessflow
 ---
 
-
 Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed)
 to the  same environment in order to make any changes and execute the integration process.
 Users, can redeploy the changes made in the Process Flows and there can be various types of 
@@ -72,9 +71,17 @@ The Process Flow would be successfully re-deployed.
 
 You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
 Downloading Process Flow Data, Downloading XSLT Files, Deployed etc. while re-deploying. 
-click the Finish button. Following the above steps, you can successfully Deploy and Execute a Process Flow.
+click the Finish button. Following the above steps, you can successfully Deploy and Execute 
+a Process Flow.
 
 Following the above steps, you can successfully Redeploy and Execute a Process Flow.
+
+**NOTE: (a) You can redeploy a Process Flow by clicking `Deploy` button in the designer. 
+(b) Before redeployment starts, the agent will take a backup of the previously deployed 
+XSLT of the specific Process Flow, Process Flow database, along with dependent data. 
+(c) If redeployment of the Process Flow fails, the agent will automatically restore backed up configuration 
+after pending time outs. 
+(d) After successful deployment, the deploy button will get enabled** 
 
 
 
