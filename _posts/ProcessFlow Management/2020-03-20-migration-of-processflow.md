@@ -23,7 +23,6 @@ flows easily and continue your business integration .
 
 ## Prerequisites for migrating workflows to Processflow  
 * You need to have valid credentials for login into the portal.
-* Your Portal should be up and running
 * You need to have workflows designed/executed for migration to process flows.
 * Ensure the workflows are in active state before migrating.
 * Inactive workflows are not migrated.
