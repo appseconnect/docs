@@ -1600,14 +1600,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
@@ -1638,6 +1638,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/migration-of-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/migration-of-processflow/" onclick="selectTab('/processflow/migration-of-processflow/', event);" title="Go to Migration of Workflow to Processflow">Migration of Workflow to Processflow</a>
         
     </li>
     
@@ -2378,7 +2384,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -2470,9 +2476,17 @@ The Process Flow would be successfully re-deployed.</li>
 
 <p>You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
 Downloading Process Flow Data, Downloading XSLT Files, Deployed etc. while re-deploying. 
-click the Finish button. Following the above steps, you can successfully Deploy and Execute a Process Flow.</p>
+click the Finish button. Following the above steps, you can successfully Deploy and Execute 
+a Process Flow.</p>
 
 <p>Following the above steps, you can successfully Redeploy and Execute a Process Flow.</p>
+
+<p><strong>NOTE: (a) You can redeploy a Process Flow by clicking <code class="language-plaintext highlighter-rouge">Deploy</code> button in the designer. 
+(b) Before redeployment starts, the agent will take a backup of the previously deployed 
+XSLT of the specific Process Flow, Process Flow database, along with dependent data. 
+(c) If redeployment of the Process Flow fails, the agent will automatically restore backed up configuration 
+after pending time outs. 
+(d) After successful deployment, the deploy button will get enabled</strong></p>
 
 
                 
@@ -4808,6 +4822,14 @@ click the Finish button. Following the above steps, you can successfully Deploy 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -4875,6 +4897,8 @@ click the Finish button. Following the above steps, you can successfully Deploy 
                                     Process Flow Packaging
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             

@@ -30,6 +30,7 @@ This document will enable you to view and install incoming packages from other o
 3)The following details will be availble in its listing page:
 - **Name** - The package name will be displayed.
 - **Package Description** - The package description will be displayed.
+- **Apps** - The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
 - **Actions** - You can choose and perform the following functions when clicked on the ellipses. The following options will be available in its contextual menu: **View** , **Install** and **Delete**
 
 ![viewsharedpack2](\staticfiles\processflow\media\viewsharedpack2.PNG)
@@ -50,8 +51,9 @@ This document will enable you to view and install incoming packages from other o
 6) Clicking on the **DESCRIPTION** tab, you can view the following details:
 - The brief description provided while the creating the package will be displayed in the description box
 - **Last Modified** - You will be able to view the last modified date and time, worked on the remote organisation.
+- **Apps Used** - Applications used inside the process flows in the package, will be listed. **(Image needs to change)**
 
-![viewsharedpack5](\staticfiles\processflow\media\viewsharedpack5.PNG)
+![viewsharedpack5](\staticfiles\processflow\media\viewsharedpack4.PNG)
 
 7) Clicking on the Documentation tab, you can view the documentation. The box will display the required documentation that was provide while creating the package.
 
@@ -59,7 +61,7 @@ This document will enable you to view and install incoming packages from other o
 
 8) Clicking on the Process Flow tab, you will be able to view the following details of the Process Flows bundled with the package.
 - **Name** - You can view the names of the process flow bundled within the package.
-- **Decription** - The description of the Process Flows.
+- **Description** - The description of the Process Flows.
 - **Created On** - The creation date of the Process flows will be listed beside the process flow description.
 
 ![viewsharedpack7](\staticfiles\processflow\media\viewsharedpack7.PNG)
@@ -79,7 +81,7 @@ You can install the packages directly by clicking on the install button availabl
 
 - **Install from View Packages:**
 On clicking the `VIEW` button in the contextual menu of the actions column, it will navigate you to the `VIEW` window.
-Click on the **Install** button to install the package shared with you. 
+Click on the **Install** button to install the package shared with you. **(Image needs to change)**
 
 ![packageinstall3](\staticfiles\processflow\media\packageinstall3.PNG)
 
@@ -104,5 +106,5 @@ Following the above process, you can successfully install the shared packages an
 - All the node configurations and mapping done in process flow will be shared when sharing the package to other organisation. 
 - Modifications made in the process flows in source organisation _after the sharing_ , the changes will not reflect once the package is shared to an another organisation.
 - As Process flow doesn't stores any credentials, you will not have to worry about credentials vulnerability.
-- Process Flows that are shared, if deleted from the folder **Installed Process Flow**, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored to the folder from where it got deleted.
-- Sub-folders under **Installed Process Flow** if deleted, the entire folder along with the process flows inside, will move to TRASH. However, you can anytime restore those deleted sub-folders from TRASH. The process flows inside will also be restored back under the folder "Installed Process Flow" from where it got deleted.
+- Process Flows that are shared, if deleted from the folder **Installed Process Flow**, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the **Process Flow** folder.
+- You cannot delete the Installed folders.

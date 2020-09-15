@@ -1559,14 +1559,20 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
+    <li class="menu-item-" data-url="/processflow/working-with-revamped-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-revamped-merger/" onclick="selectTab('/processflow/working-with-revamped-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
         
     </li>
     
@@ -1843,6 +1849,12 @@
     
     <li class="menu-item-" data-url="/deployment/Environment-Management/" data-jstree='{"icon":"fa fa-cloud-download"}'>
         <a href="/deployment/Environment-Management/" onclick="selectTab('/deployment/Environment-Management/', event);" title="Go to Environment Management">Environment Management</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/deployment/Easy-Environment-Management/" data-jstree='{"icon":"fa fa-cloud-download"}'>
+        <a href="/deployment/Easy-Environment-Management/" onclick="selectTab('/deployment/Easy-Environment-Management/', event);" title="Go to Easy Environment Management">Easy Environment Management</a>
         
     </li>
     
@@ -2414,6 +2426,7 @@ This document will enable you to view and install incoming packages from other o
 <ul>
   <li><strong>Name</strong> - The package name will be displayed.</li>
   <li><strong>Package Description</strong> - The package description will be displayed.</li>
+  <li><strong>Apps</strong> - The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.</li>
   <li><strong>Actions</strong> - You can choose and perform the following functions when clicked on the ellipses. The following options will be available in its contextual menu: <strong>View</strong> , <strong>Install</strong> and <strong>Delete</strong></li>
 </ul>
 
@@ -2438,9 +2451,10 @@ This document will enable you to view and install incoming packages from other o
 <ul>
   <li>The brief description provided while the creating the package will be displayed in the description box</li>
   <li><strong>Last Modified</strong> - You will be able to view the last modified date and time, worked on the remote organisation.</li>
+  <li><strong>Apps Used</strong> - Applications used inside the process flows in the package, will be listed. <strong>(Image needs to change)</strong></li>
 </ul>
 
-<p><img src="\staticfiles\processflow\media\viewsharedpack5.PNG" alt="viewsharedpack5" /></p>
+<p><img src="\staticfiles\processflow\media\viewsharedpack4.PNG" alt="viewsharedpack5" /></p>
 
 <p>7) Clicking on the Documentation tab, you can view the documentation. The box will display the required documentation that was provide while creating the package.</p>
 
@@ -2449,7 +2463,7 @@ This document will enable you to view and install incoming packages from other o
 <p>8) Clicking on the Process Flow tab, you will be able to view the following details of the Process Flows bundled with the package.</p>
 <ul>
   <li><strong>Name</strong> - You can view the names of the process flow bundled within the package.</li>
-  <li><strong>Decription</strong> - The description of the Process Flows.</li>
+  <li><strong>Description</strong> - The description of the Process Flows.</li>
   <li><strong>Created On</strong> - The creation date of the Process flows will be listed beside the process flow description.</li>
 </ul>
 
@@ -2473,7 +2487,7 @@ You can install the packages directly by clicking on the install button availabl
 <ul>
   <li><strong>Install from View Packages:</strong>
 On clicking the <code class="language-plaintext highlighter-rouge">VIEW</code> button in the contextual menu of the actions column, it will navigate you to the <code class="language-plaintext highlighter-rouge">VIEW</code> window.
-Click on the <strong>Install</strong> button to install the package shared with you.</li>
+Click on the <strong>Install</strong> button to install the package shared with you. <strong>(Image needs to change)</strong></li>
 </ul>
 
 <p><img src="\staticfiles\processflow\media\packageinstall3.PNG" alt="packageinstall3" /></p>
@@ -2500,8 +2514,8 @@ Click on the <strong>Install</strong> button to install the package shared with 
   <li>All the node configurations and mapping done in process flow will be shared when sharing the package to other organisation.</li>
   <li>Modifications made in the process flows in source organisation <em>after the sharing</em> , the changes will not reflect once the package is shared to an another organisation.</li>
   <li>As Process flow doesn’t stores any credentials, you will not have to worry about credentials vulnerability.</li>
-  <li>Process Flows that are shared, if deleted from the folder <strong>Installed Process Flow</strong>, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored to the folder from where it got deleted.</li>
-  <li>Sub-folders under <strong>Installed Process Flow</strong> if deleted, the entire folder along with the process flows inside, will move to TRASH. However, you can anytime restore those deleted sub-folders from TRASH. The process flows inside will also be restored back under the folder “Installed Process Flow” from where it got deleted.</li>
+  <li>Process Flows that are shared, if deleted from the folder <strong>Installed Process Flow</strong>, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the <strong>Process Flow</strong> folder.</li>
+  <li>You cannot delete the Installed folders.</li>
 </ul>
 
                 
@@ -4829,8 +4843,37 @@ Click on the <strong>Install</strong> button to install the package shared with 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/working-with-revamped-merger/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Revamped Merger Node
+                                </a>
+                            </li>
+                            
+                            
                             
                             
                             
@@ -4887,15 +4930,6 @@ Click on the <strong>Install</strong> button to install the package shared with 
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/manage-actions-actionfilters-errorfilters/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Managing - Action, Action Filters & Error Filters
-                                </a>
-                            </li>
                             
                             
                             

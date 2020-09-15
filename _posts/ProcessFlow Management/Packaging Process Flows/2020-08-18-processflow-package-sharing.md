@@ -44,10 +44,11 @@ The `Right Pane` will have two sections:
 - **Package List** - You will listed with all the packages available on your organisation. At a time, you will be able to view 3 packages. However, can navigate to the other pages by using the pagination below.
 - **Selected packages** - This will list all the packages, selected for sharing.
 
-6) On the "Choose Package" step, you will be listed with all the packages that are created on your organisation, under the **List of Packages** section. The following details will be present in the list of packages section.
+6) On the "Choose Package" step, you will be listed with all the packages that are created on your organisation, under the **Package List** section. The following details will be present in the package list section.
 
-- **Name** : The package name will be displayed.
-- **Description** : The package description will be displayed.
+- **Package Name** : The package name will be displayed.
+- **Package Description** : The package description will be displayed.
+- **Apps** : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
 - **Filter Icon** : This will enable you to search packages based on the name as a keyword.
 
 Beside the package name, you will have checkboxes that will allow you to select the packages for sharing.

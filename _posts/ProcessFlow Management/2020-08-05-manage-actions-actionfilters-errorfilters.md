@@ -110,9 +110,8 @@ Following the above process, you can successfully Edit, Delete & Rename an exist
 
 ![actionfilter4](\staticfiles\processflow\media\action_filter4.png)
 
-6) Provide the following details to configure the action filter.
-
-- Request Type: Select the request type as per your requirement: **Header** or **Body**.
+6) You get the option to provide your filter for TWO sections. Either on **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the action filter.
+ 
 - Key: This is the filter key that will define the key to filter.
 - Operator: You need to select the type of operator needed for the execution of the action filter.
 - Value: You need to provide the value to the filter that will be executed to GET or POST data.
@@ -121,11 +120,11 @@ Click on the SAVE icon beside the filter to save the current sibling.
 
 ![actionfilter5](\staticfiles\processflow\media\action_filter5.png)
 
-7) To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the **ADD CRITERIA** button to add conjuction on the same level as of the elder sibling filter.
+7) You can also append multiple filters by clicking on the **APPEND** button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.
 
-![actionfilter6](\staticfiles\processflow\media\action_filter6.png)
+8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different Process Flow for the same application within the same organisation. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
 
-8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different Process Flow for the same application within the same organisation. For more details on TEMPLATE, [Click Here]().
+**Note:** You need to save the elder sibling before applying conjuction on same level or below level.
 
 ## Adding Retry Filters
 
@@ -147,18 +146,17 @@ Click on the SAVE icon beside the filter to save the current sibling.
 
 ![errorfilter4](\staticfiles\processflow\media\error_filter4.PNG)
 
-6) Provide the following details to configure the error filter.
+6) You get the option to provide your retry filter for TWO sections. Either on **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the retry filter. Provide the following details to configure the retry filter.
 
-- Request Type: Select the request type as per your requirement: **Header** or **Body**.
 - Key: This is the filter key that will define the key to filter.
-- Operator: You need to select the type of operator needed for the execution of the error filter.
+- Operator: You need to select the type of operator needed for the execution of the action filter.
 - Value: You need to provide the value to the filter that will be executed to GET or POST data.
 
 Click on the SAVE icon beside the filter to save the current sibling. To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the **ADD CRITERIA** button to add conjuction on the same level as of the elder sibling filter.
 
 Following the above process, you can successfully implement Retry filter for an action.
 
-## Saving a Template Filter
+## Saving and creating from a Template Filter
 
 1) Drag the application node for whose Action filter/Retry filter you need to create as a template.
 
@@ -169,11 +167,9 @@ Following the above process, you can successfully implement Retry filter for an 
 4) Click on the **CREATE** button as per the options selected, either ACTION FILTER or RETRY FILTER. The create window opens as per the selected choice (The window remains same for both Action Filter and Retry Filter). 
 **Here we have chosen ACTION FILTER**.
 
-![savetemplate1]()
-
 4) Provide the details in the fields and click on the SAVE icon beside the filter column. After saving the column, you get the option of **SAVE AS TEMPLATE**.
 
-![savetemplate2]()
+![savetemplate1](\staticfiles\processflow\media\savetemplate1.PNG)
 
 5) Click on the **Save as Template** button to save the provided Action Filter as a template. 
 You can reuse this saved template on any other nodes of any Process Flow in your organisation, 
@@ -182,9 +178,26 @@ provided the **application node** , **Schema** & the **Action** remains the same
 6) You can view the saved for the schema and action by navigating to **[Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) > your selected Schema Entity > The Action in which you have created the Template > Click on the Action filter.**
 You will be able to view the saved template for that schema and the action. The template will not be editable in the Manage schema window.
 
-![savetemplate3]()
+7) To create filter from a saved template, navigate to Node Config window ->  Select Schema -> Select Action -> Configure filter. Expand the Schema node until Action Filter, Retry Filter appears.
+
+8) Click on the Ellipses beside your chosen option (Action Filter, Retry Filter) and select the option **Create from template** from the context menu.
+
+![createtemplate1](\staticfiles\processflow\media\createtemplate1.PNG)
+
+9) On clicking **Create from template** you get a confirmation message. Click on the YES button.
+
+![createtemplate2](\staticfiles\processflow\media\createtemplate2.PNG)
+
+10) The saved template opens. You can anytime edit the action filter placed in the template as per your requirement. The updates made will not change in the template that is saved.
+
+![createtemplate3](\staticfiles\processflow\media\createtemplate3.PNG)
+
+Following the above process you can successfully SAVE and create filter from template.
+
 
 **Note:**
+
+**-The steps to remains when working with Retry filer.**
 
 **- Each action of a schema can have only one created template.**
 

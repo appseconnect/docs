@@ -91,8 +91,15 @@ for you which you can easily plug and play while doing your integrations. In Zoh
 
 Note: [Click Here](https://www.zoho.com/books/api/v3/#multidc) to know more about the ZohoBooks API Documentation.
 
-|Endpoint|Action|Action Type|Schema|UI Path|
+|Endpoint|Action|Action Type|Schema|API Path|
 |---|---|---|---|------|
+|contacts|contacts|GET|contacts|[Fetch Contacts from ZohoBooks](https://www.zoho.com/books/api/v3/#Contacts_Get_Contact)|
+|contacts|contacts|POST|contacts|[Create a new contact in Zohobooks](https://www.zoho.com/books/api/v3/#Contacts_Create_a_Contact)|
+|salesorders|salesorders|GET|salesorders|[Fetch salesorders from zohobooks](https://www.zoho.com/books/api/v3/#Sales-Order_Get_a_sales_order)|
+|salesorders|salesorders|POST|salesorders|[Create a new salesorder from zohobooks](https://www.zoho.com/books/api/v3/#Sales-Order_Create_a_sales_order)|
+|POST/items|POST/items|POST|POST/items|[Create a new item](https://www.zoho.com/books/api/v3/#Items_Create_an_Item)|
+|invoices|invoices|GET|invoices|[Fetch invoices from Zohobooks](https://www.zoho.com/books/api/v3/#Invoices_Get_an_invoice)|
+|invoices|invoices|POST|invoices|[Create new invoices from Zohobooks](https://www.zoho.com/books/api/v3/#Invoices_Create_an_invoice)|
 
 
 

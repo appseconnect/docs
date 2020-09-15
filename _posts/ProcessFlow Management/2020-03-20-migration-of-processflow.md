@@ -21,7 +21,7 @@ organization to Processflows in a  hasselfree way and thus aid you to migrate th
 flows easily and continue your business integration .
 
 
-## Prerequisites for mapping Lookups
+## Prerequisites for migrating workflows to Processflow  
 * You need to have valid credentials for login into the portal.
 * Your Portal should be up and running
 * You need to have workflows designed/executed for migration to process flows.
