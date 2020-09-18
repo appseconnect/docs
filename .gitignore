@@ -246,6 +246,8 @@ ModelManifest.xml
 /martinbuberl.github.io
 Gemfile
 Gemfile.lock
+/_site/
+_site/
 
 
 /.jekyll-cache/Jekyll/Cache

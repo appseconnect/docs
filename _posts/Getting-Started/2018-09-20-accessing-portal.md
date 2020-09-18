@@ -13,7 +13,7 @@ menus:
 
 ## Accessing Portal
 
-The APPSeCONNECT portal is the webbased interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
+The APPSeCONNECT portal is the web based interface where you can access APPSeCONNECT application for integration, with the set of Functional modules. The [APPSeCONNECT portal page](https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!) is easily accessible.
 Once you have logged in, some elements of the APPSeCONNECT portal are common to all apps, accessible via the left side panel of the page. Of note, these also includes accessing your account, where you can update your information as well as changing your password.
 
 The set of functional modules are easy to navigate and ease the method of integration via our Portal.
@@ -25,10 +25,10 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 
 |Modules|Details|
 |---|---|
-|Dashboard|This page will show the details of the organisation, user logged in into. Project Basic Information, Configuration Completion Details etc|
-|App|This section allows the user to choose or create apps that are required for the organisation|
-|Connections|Users of APPSeCONNECT will be able to configure and create connection depending upon the apps chosen|
-|APIs|This section talks about the API Management with APPSeCONNECT|
+|[Home]()|This page will allow the users to get a kickstart with the APPSeCONNECT portal.|
+|[Designer]()|This section will allow the user to design the business flows using Workflows or Process Flows|
+|[Deploy]()|This section will let the users working with the Environment deployed|
+|[Manage]()|This section will allow the users to manage their apps, connections, rules|
 |Workflows|User will be able to design and execute workflows as per the business process and requirement|
 |Manage|This section provides a simplified view of the modules that required to manage the integration process|
 
@@ -246,24 +246,27 @@ b.	Organization Admin
 
 ## Steps to add USER to an organisation
 
-1. Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.
-2. By default, the interface would be of the tab Client Users. By default, APPSeCONNECT user would view the interface of the tab Client Users. 
+1) Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.
+2) By default, the interface would be of the tab Client Users. By default, APPSeCONNECT user would view the interface of the tab Client Users. 
 
 **Note: The tab Partners will not have any view unless an organization has any requirements for partners.**
 
-3.	For a fresh organisation, only the organisation owner will be displayed as the user in the user list. Click on the Add User button, to add more user to an organisation.
+3)	For a fresh organisation, only the organisation owner will be displayed as the user in the user list. Click on the Add User button, to add more user to an organisation.
 ![Useradd1](\staticfiles\root\media\useradd1.PNG)
 
-4. On clicking the button Add User, a sliding window opens with a form for adding a new user to the organisation.
+4) On clicking the button Add User, a sliding window opens with a form for adding a new user to the organisation.
 ![Useradd2](\staticfiles\root\media\useradd2.PNG)
 
-5. Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
+5) Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
 ![Useradd3](\staticfiles\root\media\useradd3.PNG)
 
-6. Once all the mandatory fields are filled up, click on the Save button. The created user would be should in the list of users along with a success message.
+6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message.
 ![Useradd4](\staticfiles\root\media\useradd4.PNG)
 
-7. The created user will have the following keys available for any modification. The list is provided below:
+7) The created user gets an Activation Mail. You need to click on the Activation Link to activate your user account.
+![Useradd5](\staticfiles\root\media\useradd5.PNG)
+
+8) The created user will have the following keys available for any modification. The list is provided below:
     - Edit User: Only the details of the created user can be modified except the role.
     - Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
     - Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.

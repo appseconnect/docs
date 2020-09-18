@@ -46,7 +46,8 @@ Self Loop Execution on the nodes:
 |Post Node|Scenarios where splitter or Merger node is the predecessor node of POST node, self-loop over post node will iterate until splitter or Merger output available|
 
 `Self-loop Configuration - Until data available`   
-`Self-loop Configuration - Number of Occurence`  
+`Self-loop Configuration - Number of Occurence` 
+`Self-loop Configuration - For Time Out`
 
 **A. Choosing Self Loop Configuration - Until data available**
 
@@ -71,6 +72,20 @@ screen appears.
 3. Now provide the Description of the Self-loop configuration in the Description field which is mandatory.  
 4. Self-loop execution over the GET/MAPPER/POST node will be executed as per the number of occurence defined 
    by you or until data availability. 
+
+**C. Choosing Self Loop Configuration - For Time Out**
+
+1) In the self loop node, Select and choose the option `For Time Out` radio button. The following 
+screen appears.
+![PF_selfloop4](\staticfiles\processflow\media\pfselfloop5.PNG)
+
+2) Here you have to provide the value for the **Time Out**. 
+
+3) Select the timespan of the loop from the drop. You will get these options: **Hours** , **Minutes** & **Seconds**.
+By default, you will be selected with HOURS.
+
+4) Self-loop execution over the GET/MAPPER/POST node will be executed as per the **TIME OUT** time provided.
+
 
 _**(a)Maximum no. of characters allowed in the Description Field will be Max.  
 (b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
