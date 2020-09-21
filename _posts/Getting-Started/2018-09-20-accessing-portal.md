@@ -28,11 +28,42 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 |[Home]()|This page will allow the users to get a kickstart with the APPSeCONNECT portal.|
 |[Designer]()|This section will allow the user to design the business flows using Workflows or Process Flows|
 |[Deploy]()|This section will let the users working with the Environment deployed|
-|[Manage]()|This section will allow the users to manage their apps, connections, rules|
-|Workflows|User will be able to design and execute workflows as per the business process and requirement|
-|Manage|This section provides a simplified view of the modules that required to manage the integration process|
+|[Manage]()|This section will allow the users to manage their Apps, Connections, Rules, Repositories, APIs, Feeds, Monitoring etc.|
+|[Help]()|This section will allow the user to get help and learn about the usability of the features. User can easily connect to the Documentation and Community resource from HELP.|
 
-## A. Accessing Organization Dashboard 
+
+## HOME
+
+## Designer
+
+This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
+Workflows and Process Flows. Below are the gyst that provides you with the informations of Workflow and Process Flow.
+
+### Workflows
+
+`Workflow management` is group of instructions to the integration service in APPSeCONNECT.
+APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is a concept that describes how process in business divides work activities into distinct roles, task, procedures and rules.
+
+To know more about Workflow Management, [Click here](/workflow/overview/).
+
+### Process Flow
+
+
+## Deploy
+
+This section will allow you to work with your **ENVIRONMENTS** either On-Premise or Hosted. You can perform multiple deployment functionalities that will help you setting up your environments.
+
+### Environment
+
+[Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
+
+
+## Manage
+
+This section will allow you to manage the applications, connection, rules and other modules of APPSeCONNECT. Below are the modules
+that will be available to you under the **MANAGE** section.
+
+### Monitoring
 Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. 
 The dashboard can be seen automatically when a Project has been chosen. 
 In this page you can see the snapshot of the project at a glance with respect to the activities of the user. 
@@ -122,98 +153,7 @@ Users can minimize, maximize the widget by click on the respective button availa
 
 ![ExecutionLog2_Dashboard.png](/staticfiles/root/media/ExecutionLog2_Dashboard.png)
 
-## B. Choosing App
-
-APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. 
-Any App once added is assigned to a particular category.   
-
-The organization-specific app screen page displays all the apps that are present in a specific organization.   
-
-Some of the predefined categories are :   
-1. ERP - SAP Business One, Microsoft Dynamics NAV, Priority etc.    
-2. ECommerce - Magento, Shopify, WooCommerce etc.  
-3. CRM - Zoho CRM, Dynamics 365 CRM, Sugar CRM etc.  
-4. Accounting - HubSpot, Salesforce Marketing Cloud etc.  
-
-Also, APPSeCONNECT supports both the Cloud and On Premise Based Application. Some of the examples are:  
-
-1.	Cloud Based Applications - Shopify, WooCommerce, Zoho CRM, Magento  
-2.	On Premise Application - MS Dynamics NAV, SAP Business One, Uniconta   
-3.	Both Cloud & On-Premise - SAP Business One  
-
-One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - Choose App & Add New App
-
-You can do [App Selection](/configuring%20appseconnect/configurations/#process-of-choosing-app) & [touchpoint execution](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint) from here.
-
-## C. Connections
-
-The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.
-
-You need to [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) & [Execute Touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
-
-## D. API's
-
-`API Management` of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that the data can be easily accessed and maintained quickly without needing a separate development team. The API management platform provides an interface which any developer can access to create or configure services.
-
-To know more about API Management, [Click here](/api-management/overview/).
-
-## E. Workflows
-
-`Workflow management` is group of instructions to the integration service in APPSeCONNECT.
-APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is a concept that describes how process in business divides work activities into distinct roles, task, procedures and rules.
-
-To know more about Workflow Management, [Click here](/workflow/overview/).
-
-## F. Manage
-
-This section provides a simplified view of the modules that required to manage the integration process. These are the modules that are available under the Manage section. 
-* [Feeds](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#feeds) 
-* [Rules](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#rules) 
-* [Environments](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#environment) 
-* [Tickets](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#tickets) 
-* [User](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#users)
-
-## Feeds
-
-You can see and track the non-transactional activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. 
-Traces of past activities of the user can be been viewed in the feed section.
-
-1. Login to your Organsiation.
-2. Navigate to Manage > Feeds.
-3. Here you can only see your non- transactional activities in your logged in profile.
-![feeds1](\staticfiles\root\media\feeds1.PNG)
-4. You can filter your search on the Feeds Page only by using keywords like `workflow`, `Rule`, `Account` etc.
-5. For each feeds on the page, you will be provided with a hashtag that will define the activity area.
-![feeds2](\staticfiles\root\media\feeds1.PNG)
-6. On clicking over the hashtags, you will be listed with all the feeds whose activity was on that area.
-
-**Note: Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.**
-
-**ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
-{: .notice--info}
-
-## Rules
-
-
-APPSeCONNECT Rule listing enables you to perform ACTIONS like (raising a support ticket or sending an email) based on the type of events encountered during agent execution such as - `Execution Failure, Execution Start, Execution End`, via Rule Engine. 
-
-During Agent execution, if some events are encountered such as *Application Crash*, automatically the Rule which you have defined on Application Crash will be triggered and it will perform the associated Action with that Rule.
-You can also define additional criteria for triggering the Rule and performing the actions. 
-
-In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the [Rule](https://docs.appseconnect.com/rule/overview-of-rule/) will be triggered.
-
-## Environment
-
-[Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
-
-
-## Tickets
-
-APPSeCONNECT support tickets are meant of clients who can place a ticket and set priority level while facing any problem while working on APPSeCONNECT.and you need to resolve it as early as possible. 
-
-The implementers and the partners would be able to see the tickets and resolve them.
-
-## Users
+### Users
 
  Users is one of the main feature of APPSeCONNECT portal as this control over the access that a user has. Depending on the role of the user, the menu panel of the portal is customized such that the user can use the functionalities depending on the role allotted to him.
 
@@ -239,12 +179,12 @@ The roles that can be provided to each user are:
 a.	Connection Manager  
 b.	Organization Admin  
 
-## Prerequisite for adding a User
+#### Prerequisite for adding a User
 
 * There should be an organisation present with APPSeCONNECT.
 * User being added should not be a user for a different organisation. 
 
-## Steps to add USER to an organisation
+#### Steps to add USER to an organisation
 
 1) Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.
 2) By default, the interface would be of the tab Client Users. By default, APPSeCONNECT user would view the interface of the tab Client Users. 
@@ -276,6 +216,91 @@ b.	Organization Admin
     * All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
     * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
     * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
+
+### Repositories
+
+Repositories provides you with the ability to create  and manage lookup types in form of tables. Lookups enable the user to provide specific 
+values to the application integration, such that when the source and destination application is integrated, the value in source application can easily be integrated with its value in destination 
+application, corresponding to its field.
+
+For more details on Repositories, [Click Here](/processflow/Lookup-repository-masterdata/)
+
+![Create Lookrepo1](../../staticfiles/processflow/media/create-lookrepo1.png)
+
+### APPS 
+
+APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. 
+Any App once added is assigned to a particular category.   
+
+The organization-specific app screen page displays all the apps that are present in a specific organization.   
+
+Some of the predefined categories are :   
+1. ERP - SAP Business One, Microsoft Dynamics NAV, Priority etc.    
+2. ECommerce - Magento, Shopify, WooCommerce etc.  
+3. CRM - Zoho CRM, Dynamics 365 CRM, Sugar CRM etc.  
+4. Accounting - HubSpot, Salesforce Marketing Cloud etc.  
+
+Also, APPSeCONNECT supports both the Cloud and On Premise Based Application. Some of the examples are:  
+
+1.	Cloud Based Applications - Shopify, WooCommerce, Zoho CRM, Magento  
+2.	On Premise Application - MS Dynamics NAV, SAP Business One, Uniconta   
+3.	Both Cloud & On-Premise - SAP Business One  
+
+One has to search for the organization in the search box and the organization will open up. Go to the App menu. Here you will get two option - Choose App & Add New App
+
+You can do [App Selection](/configuring%20appseconnect/configurations/#process-of-choosing-app) & [touchpoint execution](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint) from here.
+
+### Connections
+
+The Connection Page of the Portal enables creating the connection between two different Applications.  You can also view the existing connection for a particular organization on this page.
+
+You need to [Create Connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) & [Execute Touchpoint](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint).
+
+### APIs
+
+`API Management` of APPSeCONNECT helps an organization to create, maintain and publish APIs for their various data sources such that the data can be easily accessed and maintained quickly without needing a separate development team. The API management platform provides an interface which any developer can access to create or configure services.
+
+To know more about API Management, [Click here](/api-management/overview/).
+
+### Feeds
+
+You can see and track the non-transactional activities in form of recent feeds directly through the APPSeCONNECT portal after logging into your account. 
+Traces of past activities of the user can be been viewed in the feed section.
+
+1. Login to your Organsiation.
+2. Navigate to Manage > Feeds.
+3. Here you can only see your non- transactional activities in your logged in profile.
+![feeds1](\staticfiles\root\media\feeds1.PNG)
+4. You can filter your search on the Feeds Page only by using keywords like `workflow`, `Rule`, `Account` etc.
+5. For each feeds on the page, you will be provided with a hashtag that will define the activity area.
+![feeds2](\staticfiles\root\media\feeds1.PNG)
+6. On clicking over the hashtags, you will be listed with all the feeds whose activity was on that area.
+
+**Note: Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.**
+
+**ProTip:** If you are a superadmin, any change(s) in the organization(s) done by you will be reflected in your feed section and the similar change will also get reflected in the specific organization feed section. 
+{: .notice--info}
+
+### Rules
+
+
+APPSeCONNECT Rule listing enables you to perform ACTIONS like (raising a support ticket or sending an email) based on the type of events encountered during agent execution such as - `Execution Failure, Execution Start, Execution End`, via Rule Engine. 
+
+During Agent execution, if some events are encountered such as *Application Crash*, automatically the Rule which you have defined on Application Crash will be triggered and it will perform the associated Action with that Rule.
+You can also define additional criteria for triggering the Rule and performing the actions. 
+
+In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the [Rule](https://docs.appseconnect.com/rule/overview-of-rule/) will be triggered.
+
+## Tickets
+
+APPSeCONNECT support tickets are meant of clients who can place a ticket and set priority level while facing any problem while working on APPSeCONNECT.and you need to resolve it as early as possible. 
+
+The implementers and the partners would be able to see the tickets and resolve them.
+
+
+## Help
+
+
 
 ## Managing Customer Profile 
 
