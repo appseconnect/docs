@@ -1,0 +1,32 @@
+I"Ù<h2 id="process-flow-packaging-overview">Process Flow Packaging Overview:</h2>
+
+<p>Zipping up of multiple files in packages makes it easy to reuse and share with different users. 
+Huge set of files can easily be zipped and packaged for sharing making collaborations easy.
+Process Flow is an advanced concept and with its latest packaging technique, you can easily bundle multiple process flows within packages 
+and can share with different organisation users which diminishes the time for creating mapping an identical process flow in a different organisation.</p>
+
+<h2 id="for-more-details-on-packaging-please-visit-the-below-sections">For more details on packaging, please visit the below sections:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modules</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/processflow/processflow-packaging/">Process Flow Packaging</a></td>
+      <td>Lets you understand the steps to create &amp; edit packages. Youâ€™ll get more details on Package listing and View Packages</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/processflow-package-sharing/">Package Sharing</a></td>
+      <td>Enables you to share the created packages from one organisation to another.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/processflow-package-installation/">Package Installation</a></td>
+      <td>Enables you to view and install the incoming packages shared from remote organisations.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

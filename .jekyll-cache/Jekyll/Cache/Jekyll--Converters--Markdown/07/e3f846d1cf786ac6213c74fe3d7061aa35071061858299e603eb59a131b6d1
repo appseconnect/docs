@@ -1,0 +1,122 @@
+I"�<h1 id="introduction">Introduction</h1>
+
+<p>This section will guide you through workflow creation &amp; configuration in simple steps.</p>
+
+<p>By reading this section of the document an implementer would be able to design the workflow for an organization and will execute it from the web portal.</p>
+
+<p>In Workflow diagram panel there are some Template Touchpoints provided. A user can use these touchpoints to manipulate the Touchpoint execution as per their requirement.</p>
+
+<p>If you are new to Workflow, then go through the below steps to know more.</p>
+
+<h2 id="pre-requisites">Pre-Requisites</h2>
+
+<ul>
+  <li>
+    <p>You have to choose the project in which the user will be added.</p>
+  </li>
+  <li>
+    <p>For execution of workflow using cloud agent you need to have <code class="language-plaintext highlighter-rouge">cloud to cloud connection</code>, <code class="language-plaintext highlighter-rouge">cloud agent</code> and <code class="language-plaintext highlighter-rouge">cloud supported app</code>.</p>
+  </li>
+  <li>
+    <p>Now Choose two generic app for integration &amp; workflow creation.</p>
+  </li>
+  <li>
+    <p>Before executing the workflow for app integration, you should have a valid order on Magento 2 this means it should have valid items, Business Partner, and Sales Order.</p>
+  </li>
+  <li>
+    <p>The connection should be done in the Cloud.</p>
+  </li>
+  <li>
+    <p>When designing workflows, you may come across Nodes and Elements, or you may like get some Usecase examples that would help you build a workflow. Visit this section <a href="/workflow/quickstart-guides-to-workflow-management/">Quickstart</a> to get more highlights on <strong>Workflow Nodes and Links</strong> , <strong>Scheduling and Deploying a Workflow</strong> , <strong>Workflow Snapshots</strong> , <strong>Usecases</strong> etc.</p>
+  </li>
+</ul>
+
+<h2 id="steps-to-workflow-creation">Steps to workflow creation</h2>
+
+<ol>
+  <li>
+    <p>Logging in to the Portal, choose <code class="language-plaintext highlighter-rouge">Workflows</code> section under Account and a new page will open.</p>
+  </li>
+  <li>
+    <p>Refer the  steps
+<a href="/workflow/overview/">Working with Workflow in APPSeCONNECT</a></p>
+  </li>
+  <li>
+    <p>Choose one project.</p>
+  </li>
+  <li>
+    <p>Go to Workflows section under Account and a new page will  open up.</p>
+
+    <p><img src="/staticfiles/workflow-management/media/WorkflowPage.png" alt="WorkflowPage" /></p>
+  </li>
+  <li>
+    <p>On the upper right corner you will get the <code class="language-plaintext highlighter-rouge">Create Workflow</code> button. Click on it and the following page appears where you can create the new workflow</p>
+
+    <p><img src="/staticfiles/workflow-management/media/CreateWorkflow.png" alt="CreateWorkflow" /></p>
+  </li>
+</ol>
+
+<p>User needs to enter the <code class="language-plaintext highlighter-rouge">Name</code> and <code class="language-plaintext highlighter-rouge">Description</code> of the Workflow. 
+The name needs to be provided in the top left corner of the Workflow Design page and is then saved and viewable in right side panel.
+The Description is required to provide in the properties section available at the Right side of the page.</p>
+
+<ol>
+  <li>
+    <p>To start the workflow, Drag &amp; Drop the Start node from the ITEMS section, on the blank/grid section.</p>
+
+    <p><img src="/staticfiles/workflow-management/media/Start.png" alt="Start" /></p>
+  </li>
+  <li>
+    <p>Click the (+) sign beside Templates section, a list will open. Now select General Touchpoint and then drag it to the grid/blank panel.</p>
+
+    <p><img src="/staticfiles/workflow-management/media/AddTouchpoint.png" alt="AddTouchpoint" /></p>
+  </li>
+  <li>
+    <p>You have to select a connection and a touchpoint from the drop-down list of <code class="language-plaintext highlighter-rouge">Select Connection</code> and <code class="language-plaintext highlighter-rouge">Select Touchpoint</code>. Now click OK button, to confirm.The following screen appears</p>
+
+    <p><img src="/staticfiles/workflow-management/media/Masterdata-Add.png" alt="Masterdata-Add" /></p>
+  </li>
+</ol>
+
+<ul>
+  <li>Similarly, drag &amp; drop more touchpoints to complete a cycle and generate different types of touchpoints.</li>
+</ul>
+
+<p><img src="/staticfiles/workflow-management/media/Templates.png" alt="Templates" /></p>
+<ol>
+  <li>Drag in the general touchpoint to the workflow creation area  <br />
+<img src="/staticfiles/workflow-management/media/Adding-Touchpoint.png" alt="Adding-Touchpoint" /></li>
+  <li>Once you have provided the details, click OK. The touchpoint will be added. Also Add an ‘End’ node.  <br />
+<img src="/staticfiles/workflow-management/media/StartEnd-Node.png" alt="StartEnd-Node" /></li>
+  <li>Connect the <code class="language-plaintext highlighter-rouge">Start</code> Node with the starting point of the touchpoint. Also Connect the End node with the touchpoint.<br />
+<img src="/staticfiles/workflow-management/media/StartEnd-NodeConnected.png" alt="StartEnd-NodeConnected" /></li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Save</code>. The workflow is now ready to be executed.</li>
+  <li>After all the steps have been completed - <a href="/deployment/Environment-Management/">Agent &amp; Cloud Configuration</a>, the workflow is ready to be run.  <br />
+<img src="/staticfiles/workflow-management/media/Runbutton.png" alt="Runbutton" /></li>
+</ol>
+
+<p><strong>NOTE</strong> - Initially the Run button will be in disabled state, you have to activate it following these steps:
+<code class="language-plaintext highlighter-rouge">Go to the APPSeCONNECT -&gt; Settings Panel -&gt; Check the Activate box</code>.</p>
+
+<p>If the RUN button is still in disabled state, you can do <a href="/workflow/Troubleshooting/">Troubleshooting</a> to execute the same.</p>
+
+<ol>
+  <li>
+    <p>Now Run it and this will open another form.<br />
+ <img src="/staticfiles/workflow-management/media/Workflow-Executed.png" alt="Workflow-Executed" /></p>
+  </li>
+  <li>
+    <p>In the above screen, you can see each step of the operation. The circle segments of the nodes will change its color according to the operation</p>
+  </li>
+</ol>
+
+<p class="notice--info"><strong>Protip</strong> 
+           Ongoing Operation= Yellow color<br />
+           Successful Operation= Green color
+           Failed Operation  = Red color</p>
+
+<p><em><strong>Note:</strong> When designing workflows, you may come across Nodes and Elements, or you may like get some Usecase examples that would help you build a workflow. Visit this section <a href="/workflow/quickstart-guides-to-workflow-management/">Quickstart</a> to get more highlights on <strong>Workflow Nodes and Links</strong> , <strong>Scheduling and Deploying a Workflow</strong> , <strong>Workflow Snapshots</strong> , <strong>Usecases</strong> etc.</em></p>
+
+<p class="notice--info"><strong>Protip</strong> For execution of workflow using cloud agent you need to have cloud to cloud connection, cloud agent and cloud supported app.</p>
+
+:ET

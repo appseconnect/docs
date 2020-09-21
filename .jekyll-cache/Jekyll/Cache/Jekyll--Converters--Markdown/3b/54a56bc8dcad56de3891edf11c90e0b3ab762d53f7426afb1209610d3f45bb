@@ -1,0 +1,61 @@
+I"Q<p>APPSeCONNECT Process Flows suite features an extensive interface for the users. 
+With the aid of Process Flow feature, users can now graphically organize, create and 
+view the data flow of a process thereby enabling customers to design integration anytime 
+and anywhere with the help of our cloud portal.</p>
+
+<p>So now we are providing the flexibilty to migrate the existing workflows from your 
+organization to Processflows in a  hasselfree way and thus aid you continue your business integration .
+with the advanced graphical interface of processflow.</p>
+
+<h2 id="benefits-of-migration-to-processflows">Benefits of Migration to Processflows</h2>
+
+<p>1) Processflows are touchpoint independent and you get the flexibilty to
+select application in the interface and continue with the operation.</p>
+
+<p>2) CUSTOMIZE AND EXTEND BEST PRACTICES</p>
+<ul>
+  <li>Build customized business-related flows and templates to use it across departments for best practices.
+3) STREAMLINE AND AUTOMATE COMPLEX BUSINESS PROCESSES</li>
+  <li>Provide expertise and team collaboration to sell more effectively.</li>
+  <li>Enables quick decision making &amp; Learn from inefficiencies</li>
+  <li>Eliminates Manual work &amp; reduces human error</li>
+</ul>
+
+<p>4) Quick &amp; Easy Deployment at one go <br />
+5) Bundling of Processflows (Packaging) are available which can be
+shared across organisation. 
+7) Enhanced Check features for Unfinished Deployment &amp; Redeployment.</p>
+
+<h2 id="prerequisites-for-migrating-workflows-to-processflow">Prerequisites for Migrating Workflows to Processflow</h2>
+<ul>
+  <li>You need to have valid credentials for login into the portal.</li>
+  <li>You need to have workflows designed/executed for migration to process flows.</li>
+  <li>Ensure the workflows are in active state before migrating.</li>
+  <li>Inactive workflows are not migrated.</li>
+</ul>
+
+<h2 id="steps-to-migrate-workflows-to-processflow">Steps to Migrate Workflows to Processflow</h2>
+<ol>
+  <li>The first step to migrate your workflow to process flow is to share your Organisation Id with the implementer.</li>
+  <li>Ensure the workflows are in active state before migrating.  <br />
+<img src="\staticfiles\processflow\media\migratedpf-active-wf.PNG" alt="migratedpf-active-wf" /></li>
+  <li>Once your workflow is migrated to processflow you can view them under Processflow»Migrated-Workflow
+folder, under Processflow listing page.    <br />
+<img src="\staticfiles\processflow\media\migrated-pf-listing.PNG" alt="migrated-pf-listing" /></li>
+  <li>Click on the folder to view your migrated workflows to processflow, enlisted there.</li>
+  <li>You can Edit/Delete the migrated processflows, by clicking on Action menu.
+<img src="\staticfiles\processflow\media\edit-migratedpf.PNG" alt="edit-migratedpf" /></li>
+  <li>Now this migrated workflow will behave similar to the processflow and you can 
+edit the Processflow from teh <a href="/processflow/designer-processflow/">designer</a> section and carry on with the <a href="/processflow/deploying-and-executing-processfloww/">deployment</a> process.</li>
+  <li>The migrated workflow to process flow should contain all the mapping data’s as provided in workflow</li>
+  <li>You can make any mapping/configurational changes in the migrated processflow per requirement.</li>
+  <li>You can also rename the migrated processflow in the designer section.</li>
+</ol>
+
+<p><strong>NOTE: (a)  Suppose your Organisation has ten workflows, and you want to migrate four workflows out of all.
+In this instance, you need to make those four workflows active and rest six needs to be in inactive
+mode. Else either ten workflows (if active state is enabled) will get migrated to processflows. Or if none of the 
+workflows are in active stage, they won’t get migrated.<br />
+(b) Presently there is no migration support for Workflows implemented with Webhooks, Email &amp; Filter Node</strong></p>
+
+:ET
