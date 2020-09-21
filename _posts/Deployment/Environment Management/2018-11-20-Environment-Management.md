@@ -142,39 +142,15 @@ Follow the process below to create folders for grouping.
 
 ![opfolder5](\staticfiles\deployment\media\EasyEnv\opfolder5.PNG)
 
-** You can delete your created folders anytime. On its deletion, all the  On-Premise Enviroments under that folder will be unparented and will shift under the main On-Premise folder.**
+** You can delete your created folders anytime. On its deletion, all the  On-Premise Enviroments under that folder will be unparented and will shift under the main On-Premise folder. All the child folders under it will also get deleted.**
 
 Following the above process you can easily create and group your On Premise Environments.
 
 **Note:**
 
-- You can create to max upto two level when creating folders exculding the main **On-Premise**: On Premise > Folder 1 > Sub folder 1.
+- You can create to max upto any level when creating folders exculding the main **On-Premise**: On Premise > Folder 1 > Sub folder 1 > Sub folder 2 > Sub folder 3 .......
 - You cannot create Folders, Sub-Folders with same name in your organisation. Each name provided for any folders or sub-folders should be unique.
 
-## Manage Control of Environments
-
-Managing Control over an Environment is an eesential requirement that depicts which environment is set as PRIMARY. As Workflow are deployed only to the environments which are set as PRIMARY.
-Therefore, users needs to manage control of their environment. This section of the document will allow you to manage the control of your environments be it the **HOSTED** or **On-Premise**
-
-1) Navigate to Manage > Environments and click on the environment which you are required to control. 
-
-2) You get to view the Environment Details Page of your selected environment (either [HOSTED](/deployment/Easy-Environment-Management/#hosted-environment-details-page) or [On-Premise](/deployment/Easy-Environment-Management/#on-premise-environment-details-page))
-In this case, On-Premise environment is selected.
-
-3) You are required to click on the checkbox available in the Top-Right corner of the details page. Enabling the checkbox will allow you to control the selected environment.
-
-![controlenv1](\staticfiles\deployment\media\EasyEnv\controlenv1.PNG)
-
-4) On enabling, you can confirm your current control status in the environment page itself.
-
-![controlenv2](\staticfiles\deployment\media\EasyEnv\controlenv2.PNG)
-
-Following the above steps, you can successfully control environments for your organisation.
-
-**Note:**
-
-- The steps to control an HOSTED environment is same as that mentioned in the above steps.
-- You cannot control multiple environments at the same time for an organisation.
 
 ## Hosted 
 
@@ -232,9 +208,9 @@ For more details on the Environment Details page, [Click Here](/deployment/Easy-
 
 ### Hosted Environment Details page
 
-You will be able to view this page only when you have you hosted environment created. Clickin on the Hosted environment, you can view the details page.
+You will be able to view this page only when you have your hosted environment created. Clicking on the Hosted environment, you can view the details page.
 
-![hosteddetails1]()
+![hosteddetails1](\staticfiles\deployment\media\EasyEnv\hosteddetails1.PNG)
 
 1) Clicking on the Hosted environment, will provide you with TWO tabs: **Settings** and **Process Flows**.
 
@@ -266,6 +242,32 @@ The following are the details that will displayed for deployed Process Flows.
 
 Following the above process, you can easily view and update the details of the Hosted agent.
 
+## Manage Control of Environments
+
+Managing Control over an Environment is an eesential requirement that depicts which environment is set as PRIMARY. As Workflow are deployed only to the environments which are set as PRIMARY.
+Therefore, users needs to manage control of their environment. This section of the document will allow you to manage the control of your environments be it the **HOSTED** or **On-Premise**
+
+1) Navigate to Manage > Environments and click on the environment which you are required to control. 
+
+2) You get to view the Environment Details Page of your selected environment (either [HOSTED](/deployment/Easy-Environment-Management/#hosted-environment-details-page) or [On-Premise](/deployment/Easy-Environment-Management/#on-premise-environment-details-page))
+In this case, On-Premise environment is selected.
+
+3) You are required to click on the checkbox available in the Top-Right corner of the details page. Enabling the checkbox will allow you to control the selected environment.
+
+![controlenv1](\staticfiles\deployment\media\EasyEnv\controlenv1.PNG)
+
+4) On enabling, you can confirm your current control status in the environment page itself.
+
+![controlenv2](\staticfiles\deployment\media\EasyEnv\controlenv2.PNG)
+
+Following the above steps, you can successfully control environments for your organisation.
+
+**Note:**
+
+- The steps to control an HOSTED environment is same as that mentioned in the above steps.
+- You cannot control multiple environments at the same time for an organisation.
+
+
 ## Detaching & Deleting the Environments
 
 Environment detachment is a functionality that blocks the Agent from use in that specific environment. 
@@ -273,17 +275,21 @@ This section of the document will allow to attach/detach your environments. You 
 
 ### Attach/Detach of Environments
 
-1) To detach your environment, you need to click on the ellipses (Three horizontal dots) beside the environment name that needs to be detached.
+1) To detach your environment, you need to click on the ellipses (Three horizontal dots) beside the environment name that needs to be detached. Click on the **DETACH** option in the available in the contextual menu.
 
-![detach1]()
+![detach1](\staticfiles\deployment\media\EasyEnv\detach1.PNG)
 
-2) On detaching the selected environment from Portal, it remains in the list but will be displayed as **Agent is Detached** when clicked on it.
+2) On detaching the selected environment from Portal, it remains in the list but will be displayed as **Agent is Disconnected** when clicked on it and the status symbol beside the environment would turn **RED**.
 
-![detach2]()
+![detach2](\staticfiles\deployment\media\EasyEnv\detach2.PNG)
 
 3) Post detachment, if the user tries to re-login to the On-Premise environment, it will display the message, **Agent is Blocked.**
 
-![detach3]()
+![detach3](\staticfiles\deployment\media\EasyEnv\detach3.PNG)
+
+4) You can anytime re-attach your On-Premise environment by clicking on the **ATTACH** button in the contextual menu.
+
+![detach4](\staticfiles\deployment\media\EasyEnv\detach4.PNG)
 
 **Note:**
 **- On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.**

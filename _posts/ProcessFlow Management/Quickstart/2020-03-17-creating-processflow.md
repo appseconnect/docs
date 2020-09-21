@@ -70,3 +70,5 @@ Following the above steps, you can successfully create a basic process flow. How
 However, you will get a confirmation message when implementing the same. You view the message in the below screen.**
 
 ![mappingerase1](\staticfiles\processflow\media\mappingerase1.PNG)
+
+**Your mapping will also disappear if change the selected SCHEMA in the application nodes**

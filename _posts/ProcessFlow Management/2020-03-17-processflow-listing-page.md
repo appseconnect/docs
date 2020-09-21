@@ -17,7 +17,7 @@ flows in folder structure such that user can maintain an easy usability as per t
 
 The folder list would available on the left pane of the page. 
 
-By default, an organisation would have the `Home & Trash` Folder.
+By default, an organisation would have the following folders created `Process Flow , Installed Process Flow , Package Library , Trash` Folder.
 
 ## Process flow listing for each folder
 

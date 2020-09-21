@@ -1,5 +1,5 @@
 ---
-title: "Revamped Merger Node"
+title: "Merger Node"
 toc: true
 tag: developers
 category: "Processflow"
@@ -30,21 +30,15 @@ Merger Node Output file - can have one or more document as output. However, it m
 
 ![mergerconfig1](\staticfiles\processflow\media\mergerconfig1.PNG)
 
-For example: You have THIRTY records(Data) in TEN Documents. Where each **inocming document** contains THREE records.
-The `Wait for no. of documents` in the Merger node configuration window is configured as THREE. Therefore, merger node will combine the first THREE incoming documents set into ONE and will post it to the successor node.
-Merger node will again execute and will combine the next THREE sets and post as an another single document. The cycle will continue again and combine the next THREE set in the same way.
-At the end, MERGER node will have only 1 document in hand, will be sent to the successor node as a single document. The below sheet will give you a graphical representation of the above described scenario.
-
-
-A. Contains first three documents with 9 records.
-B. Contains the next three documents with the next 9 records
-C. Contains the next three documents with the next 9 records
-D. Contains the last Document with the last three records.
+For example: You have **eighteen** records(Data) in EIGHTEEN different Documents. Where each **incoming document** contains ONE records.
+The `Wait for no. of documents` in the Merger node configuration window is configured as TWO. Therefore, merger node will combine the first TWO incoming documents set into ONE and will post it to the successor node.
+Merger node will again execute and will combine the next TWO sets and post as an another single document. The cycle will continue again and combine the next TWO set in the same way.
+The below sheet will give you a graphical representation of the above described scenario.
 
 ![mergedoc1](\staticfiles\processflow\media\mergedoc1.png)
 
 **Note: The `Wait for no. of documents` should not allow 0 as input and the range of batch size value 
-should be 1-999.** [need clarity]
+should be 1-999.** 
 
 ## Working Principle
 
@@ -74,15 +68,19 @@ The XPath provided for the MERGER Node is shown below:
 6) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
 to view the detailed node by node snapshot data of the processflow.    
 
-7) Click on the merger node to get the snapshot dataview of the merged files.      
-![mergeflow2]()    
+7) Click on the `Transaction files` of splitter node to view the incoming files for merger node.
+![mergeflow2](\staticfiles\processflow\media\mergeflow2.PNG)
 
-8) Now click on the **Transactional File** tab to view both the merged files.  
- ![mergeflow3]()      
-Here you can view **TWO** transactional files, containing `two customer records` in file **ONE** and a single customer record in file **TWO** as total number of data count was **three**. 
+7) Click on the merger node to get the snapshot dataview of the merged files.      
+![mergeflow3](\staticfiles\processflow\media\mergeflow3.PNG)    
+
+8) Now click on the **Transaction File** tab to view both the merged files for the merger node.  
+ ![mergeflow4](\staticfiles\processflow\media\mergeflow4.PNG)      
+Here you can view **TWO** transactional files, containing `two customer records` in file **ONE**. 
   
 9) Expand the destination node to view the sync result of the iteration.
-![mergeflow4]()
+![mergeflow5](\staticfiles\processflow\media\mergeflow5.PNG)
+Here, the sync result is shown only for the iteration 1.
  
 Thus, the above processflow is executed with the Merger node and you can also 
 view the iteration wise node execution created with self loop.
