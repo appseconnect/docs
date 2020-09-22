@@ -1565,12 +1565,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
         
@@ -1600,14 +1594,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
@@ -1638,6 +1632,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/migration-of-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/migration-of-processflow/" onclick="selectTab('/processflow/migration-of-processflow/', event);" title="Go to Migration of Workflow to Processflow">Migration of Workflow to Processflow</a>
         
     </li>
     
@@ -2447,7 +2447,8 @@ self-loop.</p>
 </table>
 
 <p><code class="language-plaintext highlighter-rouge">Self-loop Configuration - Until data available</code> <br />
-<code class="language-plaintext highlighter-rouge">Self-loop Configuration - Number of Occurence</code></p>
+<code class="language-plaintext highlighter-rouge">Self-loop Configuration - Number of Occurence</code> 
+<code class="language-plaintext highlighter-rouge">Self-loop Configuration - For Time Out</code></p>
 
 <p><strong>A. Choosing Self Loop Configuration - Until data available</strong></p>
 
@@ -2480,10 +2481,26 @@ screen appears. <br />
 by you or until data availability.</li>
 </ol>
 
-<p><em><strong>(a)Maximum no. of characters allowed in the Description Field will be Max.<br />
-(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.<br />
-(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.
-(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. <a href="/processflow/redeploying-processflow/">Redeploy</a> the process flow to get the data as per the updated configuration after execution.</strong></em></p>
+<p><strong>C. Choosing Self Loop Configuration - For Time Out</strong></p>
+
+<p>1) In the self loop node, Select and choose the option <code class="language-plaintext highlighter-rouge">For Time Out</code> radio button. The following 
+screen appears.
+<img src="\staticfiles\processflow\media\pfselfloop5.PNG" alt="PF_selfloop4" /></p>
+
+<p>2) Here you have to provide the value for the <strong>Time Out</strong>.</p>
+
+<p>3) Select the timespan of the loop from the drop. You will get these options: <strong>Hours</strong> , <strong>Minutes</strong> &amp; <strong>Seconds</strong>.
+By default, you will be selected with HOURS.</p>
+
+<p>4) Self-loop execution over the GET/MAPPER/POST node will be executed as per the <strong>TIME OUT</strong> time provided.</p>
+
+<p><em><strong>(a)Maximum no. of characters allowed in the Description Field will be Max.</strong></em></p>
+
+<p><em><strong>(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.</strong></em></p>
+
+<p><em><strong>(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.</strong></em></p>
+
+<p><em><strong>(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. <a href="/processflow/redeploying-processflow/">Redeploy</a> the process flow to get the data as per the updated configuration after execution.</strong></em></p>
 
 <h3 id="execution-flow-for-self-loop">Execution flow for Self loop:</h3>
 
@@ -4874,7 +4891,7 @@ Self Loop on the mapper node thus enabling to post all the data packets received
                             <li>
                                 <a href="/processflow/working-with-revamped-merger/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Revamped Merger Node
+                                    Merger Node
                                 </a>
                             </li>
                             

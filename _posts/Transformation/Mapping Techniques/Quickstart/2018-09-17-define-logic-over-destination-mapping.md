@@ -103,7 +103,7 @@ enabled, rest all other child nodes on that tree, remains disabled.
 
 ## Pre-requisites for Mapping
 1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Select the Application. [Click HERE](/configuring%20appseconnect/configurations/#process-of-choosing-app) to know more about selecting of Applications.
+2. Select the Application. [Click HERE](/getting%20started/configurations/#process-of-choosing-app) to know more about selecting of Applications.
 3. Create a Connection. [Click HERE](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) to know more.
 
 

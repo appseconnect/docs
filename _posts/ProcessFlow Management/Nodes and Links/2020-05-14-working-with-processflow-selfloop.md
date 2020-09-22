@@ -87,10 +87,13 @@ By default, you will be selected with HOURS.
 4) Self-loop execution over the GET/MAPPER/POST node will be executed as per the **TIME OUT** time provided.
 
 
-_**(a)Maximum no. of characters allowed in the Description Field will be Max.  
-(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.  
-(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.
-(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution.**_
+_**(a)Maximum no. of characters allowed in the Description Field will be Max.**_  
+
+_**(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration as defined by the user or until data availability.**_  
+
+_**(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_
+
+_**(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution.**_
 
 ### Execution flow for Self loop:
 

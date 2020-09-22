@@ -42,7 +42,7 @@ You can eaily filter all your added applications by the SEARCH functionality. Yo
 Choose App option enables the user to select applications from the list of pre-packaged apps on the portal. 
 User can also get an option for creating a Custom application or technology app. 
 
-1.	Clicking Choose App button, the user gets the view of the following window.
+1.	Naviagte to Manage > App. Clicking Choose App button, the user gets the view of the following window.
  ![ChooseApp_Dialogbox](/staticfiles/root/media/ChooseApp_Dialogbox.png)
 2. A dialog box appears where you will choose the application and version number from the drop down list. Click **SAVE** to save the app.
 ![ChooseApp_Dialogbox1](/staticfiles/root/media/ChooseApp_Dialogbox1.png)
@@ -70,7 +70,7 @@ Both the process of application creation is given below.
 The feature of custom app creation enables you to create a custom app with all the required credentials.
 The steps are shown below:
 
-1. Go to My Apps section> Choose App> Create Custom App. The following screen appears  
+1. Go to Manage > Apps > Choose App> Create Custom App. The following screen appears  
 ![CustomAPP-Creation1](/staticfiles/root/media/CustomAPP-Creation1.png)
 2. In the Custom App Creation Screen the section are divided into - **App Details, Version Details, Protocol Setup & Adapter**
 ![CustomAPP-Creation2](/staticfiles/root/media/CustomAPP-Creation2.png)  
@@ -121,7 +121,7 @@ Technology App Creation wizard provides a single screen where input details like
 Description and the Adapter Technology for adding Specific App (a business requirement) can be provided in one go.
 
 The steps are given below:
-1. Go to My Apps section> Choose App> Create Technology App. Click on the drop-down icon and select Create Technology APP.  
+1. Go to Manage > Apps > Choose App> Create Technology App. Click on the drop-down icon and select Create Technology APP.  
 ![TechnologyApp-Creation](/staticfiles/root/media/TechnologyApp-Creation.png)
 2. In the screen, Provide the **APP NAME and DESCRIPTION**, Choose the **Adapter Technology** and click SAVE.  
 ![TechnologyApp-Creation-Screen2](/staticfiles/root/media/TechnologyApp-Creation-Screen2.png)
@@ -222,7 +222,7 @@ _**[Click](/transformation/working-with-schemas-action-filter/) to know more abo
 
 **Process:**
 1. Login to the APPSeCONNECT Portal with valid credentials.
-2. Move into the APPS Page and [Choose any application](/configuring%20appseconnect/configurations/#process-of-choosing-app). 
+2. Move into Manage > APPS Page and [Choose any application](/configuring%20appseconnect/configurations/#process-of-choosing-app). 
 3. Click on the + sign after adding the application and click on Schema.(In this case, MS Dynamics NAV has been taken for the instance).
 ![Select-Schema](/staticfiles/root/media/Select-Schema.png)
 4. On the Schema Window, the user can view the schemas present or can also add schemas present for the ADD Schema Option.  
@@ -270,26 +270,26 @@ This section is only available for the custom application and technology applica
 
 Protocol Add screen is for creating or updating the existing protocol. An user will be able to add more protocols to the existing app such that the same can be used for implementer's connections. So, to Add or Update protocol you must follow the steps written below:
 
-1. Navigate to the app section and expand the node of the created custom or tech app to view the `Protocol` button.
+1) Navigate to the app section and expand the node of the created custom or tech app to view the `Protocol` button.
 
 ![Protocoladd1](\staticfiles\root\media\protocoladd1.png)
 
-2. You can view the window that lists the prepackaged protocols if any. Click on the **Add Protocol** button.
+2) You can view the window that lists the prepackaged protocols if any. Click on the **Add Protocol** button.
 
 ![Protocoladd2](\staticfiles\root\media\protocoladd2.png)
 
-3. The Protocol add window opens. You will get the following fields in the window. Click on the SAVE button after providing the inputs.
+3) The Protocol add window opens. You will get the following fields in the window. Click on the SAVE button after providing the inputs.
     - Protocol Name (Mandatory Field).
     - Checkbox for parallel execution
     - Checkbox for default execution
 
 ![Protocoladd3](\staticfiles\root\media\protocoladd3.png)
 
-4. You can successfully view the created protocol in your window. Expand the node and click on the `Add Method` button.
+4) You can successfully view the created protocol in your window. Expand the node and click on the `Add Method` button.
 
 ![Protocoladd4](\staticfiles\root\media\protocoladd4.png)
 
-5. On the method window, you to provide the name of the protocol `method` and the token from the drop down. Once selected click on the SAVE button.
+5) On the method window, you to provide the name of the protocol `method` and the token from the drop down. Once selected click on the SAVE button.
 
 ![Protocoladd5](\staticfiles\root\media\protocoladd5.png)
 

@@ -46,7 +46,7 @@ If you are new to Workflow, then go through the below steps to know more.
 
 3. Choose one project.
 
-4. Go to Workflows section under Account and a new page will  open up.
+4. Go to Workflows section under **Designer** and a new page will open up.
 
    ![WorkflowPage](/staticfiles/workflow-management/media/WorkflowPage.png)
 
