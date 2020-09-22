@@ -18,7 +18,7 @@ This section of the documentation will guide the user with the process of Creati
 2.	Applications should be chosen from the apps section, for proceeding with the design of Process Flows.
 
 ## Steps to create a Process Flows
-1)	Login to the Portal and navigate to the Process Flow module. The Process Flow listing page appears.
+1)	Login to the Portal and navigate to the **Designer > Process Flow** module. The Process Flow listing page appears.
 ![Create Basicprocessflow1](../../staticfiles/processflow/media/create-basicprocessflow1.png)     
 2)	Click on the folder where you want to create your process flows on the [listing page](/processflow/processflow-listing-page/)      
 3)	Click on the new button for creating a new process flow.  

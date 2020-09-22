@@ -31,9 +31,8 @@ prerequisites. Given below are the steps that will help you view Snapshot of a P
 ![Snapshot1](../../staticfiles/processflow/media/snapshot1.png)  
 2.	[Create a new Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for [Deploying and Executing](/processflow/deploying-and-executing-processfloww/) the sync process.  
 **Note: You need to have the OP Environment active mandatorily for deploying the Process Flow to an OP Agent.**   
-3.	Navigate to the Manage > [Environment]() for view the Snapshot of the executed Process Flow.   
+3.	Navigate to the Deploy > [Environment](/deployment/Environment-Management/) for view the Snapshot of the executed Process Flow.   
 **Note: You need have the environment active for viewing the details page, Click here if you need to troubleshoot a detached or a disconnected agent.**  
-![Snapshot2](../../staticfiles/processflow/media/snapshot2.png)  
 4.	Click Process Flows Tab. You can view the list of all the deployed process flows. Following are the details that will display for each deployed Process Flows.
 * Name of the Process Flow 
 * The time of Deployment

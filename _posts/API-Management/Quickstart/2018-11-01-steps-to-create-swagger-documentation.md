@@ -29,7 +29,7 @@ and Response setup of the API.
 
 ## Steps to Create Swagger Documentation
 
-1. Go to **API** section from the left side menu.
+1. Navigate to **Manage > API**.
 ![api-swagger](/staticfiles/api-management/media/api-swagger.png)
 2. Inside **API ManagementSection** you can see `Webhooks` and `Proxy`.By default, Webhook section will be
   shown and you can see all your connections listed here. Click on **Proxy**. Here you can view the list of Proxy API created or you if you are a 
@@ -42,7 +42,7 @@ Here you will view the `Organization Information, Base URL, Proxy API URL, Schem
 
 5. Select the Schema as HTTP from the drop down list and now you have to activate the `Authorize` button. 
  for Authorizing the SWAGGER which asks for a Username and Password.
-6. Go to **APPSeCONNECT Portal> API> Proxy> Click on the `AUTHENTICATION` button**(Top Right Corner) on the APPSeCONNECT Cloud Portal.
+6. Go to **APPSeCONNECT Portal> Manage > API> Proxy> Click on the `AUTHENTICATION` button**(Top Right Corner) on the APPSeCONNECT Cloud Portal.
 ![authentication-proxy](/staticfiles/api-management/media/authentication-proxy.png)
 7. The following screen appears. Select your User Organisation from the drop-down menu and it will automatically generate the 
  Username and Password. Click on the Re-generate button to regenerate the authentication details as and when required.
