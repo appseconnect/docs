@@ -927,7 +927,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Environment Management",
-      excerpt: "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
+      excerpt: "Pre-requisites To visit the ENVIRONMENT page in portal, navigate to Deploy &gt; Environments. It is recommended that user should upgrade/install...",
       categories: ["Deployment"],
       tags: ["developers"],
       id: 101
@@ -3731,7 +3731,7 @@ var store = [
       {
         "title": "Environment Management",
         "url": "/deployment/Environment-Management/",
-        "excerpt": "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
+        "excerpt": "Pre-requisites To visit the ENVIRONMENT page in portal, navigate to Deploy &gt; Environments. It is recommended that user should upgrade/install...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
