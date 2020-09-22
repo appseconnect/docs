@@ -19,7 +19,7 @@
 
 
 
-<title>Revamped Merger Node - APPSeCONNECT Product Docs</title>
+<title>Merger Node - APPSeCONNECT Product Docs</title>
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Revamped Merger Node">
+<meta property="og:title" content="Merger Node">
 
 
   <link rel="canonical" href="http://localhost:4000/processflow/working-with-revamped-merger/">
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Revamped Merger Node</li>
+      <li class="current">Merger Node</li>
     
   
 </ol>-->
@@ -361,6 +361,12 @@
     
     <li class="menu-item-" data-url="/release-notes/2020-Q2/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/release-notes/2020-Q2/" onclick="selectTab('/release-notes/2020-Q2/', event);" title="Go to Q2 V 4.7.0">Q2 V 4.7.0</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/release-notes/2020-Q3/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/release-notes/2020-Q3/" onclick="selectTab('/release-notes/2020-Q3/', event);" title="Go to Q2 V 4.7.0">Q2 V 4.7.0</a>
         
     </li>
     
@@ -1565,12 +1571,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-merger/" onclick="selectTab('/processflow/working-with-processflow-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/working-with-processflow-selfloop/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-processflow-selfloop/" onclick="selectTab('/processflow/working-with-processflow-selfloop/', event);" title="Go to Working with Selfloop">Working with Selfloop</a>
         
@@ -1600,14 +1600,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
+    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/adding-schema-actions/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/adding-schema-actions/" onclick="selectTab('/processflow/adding-schema-actions/', event);" title="Go to Managing - Schema & Attribute">Managing - Schema & Attribute</a>
+    <li class="menu-item-" data-url="/processflow/manage-actions-actionfilters-errorfilters/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/manage-actions-actionfilters-errorfilters/" onclick="selectTab('/processflow/manage-actions-actionfilters-errorfilters/', event);" title="Go to Managing - Action, Action Filters & Error Filters">Managing - Action, Action Filters & Error Filters</a>
         
     </li>
     
@@ -1638,6 +1638,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/migration-of-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/migration-of-processflow/" onclick="selectTab('/processflow/migration-of-processflow/', event);" title="Go to Migration of Workflow to Processflow">Migration of Workflow to Processflow</a>
         
     </li>
     
@@ -2302,7 +2308,7 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Revamped Merger Node">
+        <meta itemprop="headline" content="Merger Node">
         <meta itemprop="description" content="What is Merger Node?">
         <meta itemprop="datePublished" content="September 03, 2020">
         
@@ -2331,7 +2337,7 @@
                 
                 
                 
-                <li class="current">Revamped Merger Node</li>
+                <li class="current">Merger Node</li>
                 
                 
             </ol>
@@ -2341,7 +2347,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Revamped Merger Node
+                <h1 class="page__title" itemprop="headline">Merger Node
 </h1>
                 
                 
@@ -2413,20 +2419,15 @@ Merger Node Output file - can have one or more document as output. However, it m
 
 <p><img src="\staticfiles\processflow\media\mergerconfig1.PNG" alt="mergerconfig1" /></p>
 
-<p>For example: You have THIRTY records(Data) in TEN Documents. Where each <strong>inocming document</strong> contains THREE records.
-The <code class="language-plaintext highlighter-rouge">Wait for no. of documents</code> in the Merger node configuration window is configured as THREE. Therefore, merger node will combine the first THREE incoming documents set into ONE and will post it to the successor node.
-Merger node will again execute and will combine the next THREE sets and post as an another single document. The cycle will continue again and combine the next THREE set in the same way.
-At the end, MERGER node will have only 1 document in hand, will be sent to the successor node as a single document. The below sheet will give you a graphical representation of the above described scenario.</p>
-
-<p>A. Contains first three documents with 9 records.
-B. Contains the next three documents with the next 9 records
-C. Contains the next three documents with the next 9 records
-D. Contains the last Document with the last three records.</p>
+<p>For example: You have <strong>eighteen</strong> records(Data) in EIGHTEEN different Documents. Where each <strong>incoming document</strong> contains ONE records.
+The <code class="language-plaintext highlighter-rouge">Wait for no. of documents</code> in the Merger node configuration window is configured as TWO. Therefore, merger node will combine the first TWO incoming documents set into ONE and will post it to the successor node.
+Merger node will again execute and will combine the next TWO sets and post as an another single document. The cycle will continue again and combine the next TWO set in the same way.
+The below sheet will give you a graphical representation of the above described scenario.</p>
 
 <p><img src="\staticfiles\processflow\media\mergedoc1.png" alt="mergedoc1" /></p>
 
 <p><strong>Note: The <code class="language-plaintext highlighter-rouge">Wait for no. of documents</code> should not allow 0 as input and the range of batch size value 
-should be 1-999.</strong> [need clarity]</p>
+should be 1-999.</strong></p>
 
 <h2 id="working-principle">Working Principle</h2>
 
@@ -2455,15 +2456,19 @@ If the Merger node is placed after the Mapper Node, the XPATH should be as per t
 <p>6) Go to <a href="/deployment/Environment-Management/">Environment</a>section of the portal, select the process flow from the listing section and click <a href="/processflow/snapshot-processflow/">View Snapshot</a>
 to view the detailed node by node snapshot data of the processflow.</p>
 
-<p>7) Click on the merger node to get the snapshot dataview of the merged files.    <br />
-<img src="" alt="mergeflow2" /></p>
+<p>7) Click on the <code class="language-plaintext highlighter-rouge">Transaction files</code> of splitter node to view the incoming files for merger node.
+<img src="\staticfiles\processflow\media\mergeflow2.PNG" alt="mergeflow2" /></p>
 
-<p>8) Now click on the <strong>Transactional File</strong> tab to view both the merged files.<br />
- <img src="" alt="mergeflow3" />    <br />
-Here you can view <strong>TWO</strong> transactional files, containing <code class="language-plaintext highlighter-rouge">two customer records</code> in file <strong>ONE</strong> and a single customer record in file <strong>TWO</strong> as total number of data count was <strong>three</strong>.</p>
+<p>7) Click on the merger node to get the snapshot dataview of the merged files.    <br />
+<img src="\staticfiles\processflow\media\mergeflow3.PNG" alt="mergeflow3" /></p>
+
+<p>8) Now click on the <strong>Transaction File</strong> tab to view both the merged files for the merger node.<br />
+ <img src="\staticfiles\processflow\media\mergeflow4.PNG" alt="mergeflow4" />    <br />
+Here you can view <strong>TWO</strong> transactional files, containing <code class="language-plaintext highlighter-rouge">two customer records</code> in file <strong>ONE</strong>.</p>
 
 <p>9) Expand the destination node to view the sync result of the iteration.
-<img src="" alt="mergeflow4" /></p>
+<img src="\staticfiles\processflow\media\mergeflow5.PNG" alt="mergeflow5" />
+Here, the sync result is shown only for the iteration 1.</p>
 
 <p>Thus, the above processflow is executed with the Merger node and you can also 
 view the iteration wise node execution created with self loop.</p>
@@ -2540,7 +2545,7 @@ application for the respective data packets without API throttling.</p>
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Revamped+Merger+Node%20https://docs.appseconnect.com%2Fprocessflow%2Fworking-with-revamped-merger%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Merger+Node%20https://docs.appseconnect.com%2Fprocessflow%2Fworking-with-revamped-merger%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Fworking-with-revamped-merger%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -4810,8 +4815,18 @@ application for the respective data packets without API throttling.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
