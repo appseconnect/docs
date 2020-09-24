@@ -2402,7 +2402,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "2020-Q2 Version 1.0 Hotfix Release Note",
+      title: "2020-Q2 Version 1.0 Hotfix Release",
       excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
       categories: ["release-notes"],
       tags: ["developers"],
@@ -5533,7 +5533,7 @@ var store = [
     
       
       {
-        "title": "2020-Q2 Version 1.0 Hotfix Release Note",
+        "title": "2020-Q2 Version 1.0 Hotfix Release",
         "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
         "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":

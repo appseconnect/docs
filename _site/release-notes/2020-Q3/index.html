@@ -372,7 +372,7 @@
     
     
     <li class="menu-item-" data-url="/release-notes/2020-Q2-V1.0-Hotfix/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q2-V1.0-Hotfix/" onclick="selectTab('/release-notes/2020-Q2-V1.0-Hotfix/', event);" title="Go to Q2 V1.0 Hotfix Release Note">Q2 V1.0 Hotfix Release Note</a>
+        <a href="/release-notes/2020-Q2-V1.0-Hotfix/" onclick="selectTab('/release-notes/2020-Q2-V1.0-Hotfix/', event);" title="Go to Q2 V1.0 Hotfix Release">Q2 V1.0 Hotfix Release</a>
         
     </li>
     
@@ -2378,7 +2378,7 @@
 
 
 
-  1 minute read
+  4 minute read
 </p>
                 
                 
@@ -2421,16 +2421,116 @@ robust process flows catering to your business requirements.</p>
 you to plug and play with data during an integration using process flow.</p>
 
 <h4 id="new-features">New Features</h4>
+<p><strong>Self-loop to Iterate a Node</strong><br />
+You have the flexibility to use self-loop in a node to iterate as per configuration 
+We have added another interesting configuration  and modification of self loop.</p>
+
+<ul>
+  <li>For Time Out-  To iterate a node and continue to execute, as per the TIME OUT time provided by the user.</li>
+  <li>Modify Self-loop - To modify an existing self loop, for making any configurational changes.</li>
+</ul>
+
+<p><strong>Halt-Resume to run together multiple dependented flow</strong> <br />
+You can now use halt- resume in a processflow</p>
+<ul>
+  <li>To halt a flow &amp; execute dependent flow first</li>
+  <li>To resume the halted flow when the dependent flow is complete</li>
+</ul>
+
+<p><strong>Delay Node to rate limit the data flow</strong><br />
+You can now use delay node in a processflow</p>
+
+<ul>
+  <li>To delay the execution process by setting - Static time or Dynamic time.</li>
+  <li>To delay using Static time, you need to set the static amount of time.</li>
+  <li>To delay using Dynamic time, you need to set the waiting time with output of a generic function.</li>
+</ul>
+
+<p><strong>Easy Creation &amp; Managing Technology App</strong> <br />
+You can Manage technology app (REST/FTP/OLEDB/Database) from the designer section of 
+the process flow.</p>
+<ul>
+  <li>To easily create technology app from the designer section.</li>
+  <li>To configure the technology app from the designer section.</li>
+  <li>To edit the technology app per requirement.</li>
+</ul>
+
+<p><strong>Robust Package Creation for using bundled Processflows</strong> <br />
+You can now create robust packages of processflows which helps you</p>
+<ul>
+  <li>To zip multiple processflows and multiple folders</li>
+  <li>To arrange and create packages in a listing view for easy usability.</li>
+  <li>To view &amp; edit the created packages easily in your organization.</li>
+</ul>
+
+<p><strong>Multiple Oganization Level Package Sharing &amp; Installation</strong>  <br />
+You now get the flexibilty of predefined package sharing across organizations and perform
+integration activity in the shared packages and enables you to . You gets t Viewing, Installing &amp; Removing those
+shared packages and his helps you</p>
+
+<ul>
+  <li>To easily share packages in a click of a button.</li>
+  <li>To reuse the existing packages across organization and easy installation.</li>
+  <li>To distinctively view the list of Shared packages under <code class="language-plaintext highlighter-rouge">shared with me</code> section &amp;  <code class="language-plaintext highlighter-rouge">My packages</code> section separetly in your organization.</li>
+  <li>To extract the shared packages and install in package folder name structure in the package listing section.</li>
+  <li>To view, install and delete shared pacakges per your requirement.</li>
+</ul>
+
+<p><strong>Capturing Variables for Better Control on Process Flow</strong> <br />
+You can now create Variables for storing data within a Process Flow 
+designed for your organisation and this helps you</p>
+
+<ul>
+  <li>To capture variable of type - Boolean/String/Number/Complex Object/Complex Object Collection/
+Date Time &amp; Double.</li>
+  <li>To easily deploy the Variables in the Action Filter of application node.</li>
+</ul>
+
+<p><strong>Revamped Merger Node for Managing Multiple Records</strong>
+You can now manage bundle of records in order</p>
+<ul>
+  <li>To merge multiple records</li>
+  <li>To reduce number of hits into successive nodes</li>
+</ul>
+
+<p><strong>Configuring App Master in Process Flow</strong></p>
+
+<p>You can configure application master in order</p>
+<ul>
+  <li>To create &amp; manage schemas, entity, actions &amp; filters</li>
+  <li>To import schema &amp; attributes from local server</li>
+  <li>To manage hierarchial listing of schema &amp; attributes</li>
+</ul>
+
+<p><strong>Link execution order for Managing multiple Execution</strong>
+You can now manage multiple execution of  flows and this enables you</p>
+<ul>
+  <li>To create and manage complex flows easily.</li>
+  <li>To manage the sequence without unlinking the nodes.</li>
+  <li>To alter the sequence of execution without creating a new processflow</li>
+</ul>
+
+<p><strong>Validate Designed Process Flow</strong>
+You now have the flexibility to delete existing node links</p>
+<ul>
+  <li>To make alterations in a Processflow, without deleting existing mapping.</li>
+  <li>This will not be applicable when an application node/Schema is changed.</li>
+</ul>
 
 <h4 id="enhancements">Enhancements</h4>
 
 <h2 id="deploy">Deploy</h2>
+<p><strong>Process Flow deployment &amp; Undeploy</strong></p>
+
+<p>Migration of Process Flow
+Hosted Environment</p>
 
 <h4 id="new-features-1">New features</h4>
 
 <h2 id="manage">Manage</h2>
 
 <h4 id="new-feature">New Feature</h4>
+<p>Environment Management</p>
 
 <h4 id="enhancements-1">Enhancements</h4>
 
@@ -2439,6 +2539,10 @@ you to plug and play with data during an integration using process flow.</p>
 <h4 id="new-integrations">New Integrations</h4>
 
 <h4 id="adapter">Adapter</h4>
+
+<p>Generic Rest Adapter - Custom browser
+Enhancement of Database implementation in Shopify Adapter
+Enhancement of Shopify Adapter for optimize code</p>
 
 <h2 id="component-versioning-details">Component Versioning Details</h2>
 
@@ -4923,7 +5027,7 @@ you to plug and play with data during an integration using process flow.</p>
                             <li>
                                 <a href="/release-notes/2020-Q2-V1.0-Hotfix/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    2020-Q2 Version 1.0 Hotfix Release Note
+                                    2020-Q2 Version 1.0 Hotfix Release
                                 </a>
                             </li>
                             
