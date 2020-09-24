@@ -25,8 +25,7 @@ credential for the applications that is used in the Process Flows.
 
 ### Steps to deploy Process Flows to Environment
 1.	Login to the portal and navigate to the Process Flow module available on the left menu.  
-2.  Choose the Process Flow which is already designed and was saved or you can [create a process flow](/processflow/creating-processflow/)   
-![Deploy Processflow1](../../staticfiles/processflow/media/deploy-processflow1.png)   
+2.  Choose the Process Flow which is already designed and was saved or you can [create a process flow](/processflow/creating-processflow/)     
 3.  Click on the `edit button` available for the selected Process Flow, which will navigate the user to the 
     Process Flow Designing Page.  
  ![Deploy Processflow2](../../staticfiles/processflow/media/deploy-processflow2.png) 

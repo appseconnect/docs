@@ -2521,7 +2521,7 @@ Click <code class="language-plaintext highlighter-rouge">Add template</code> but
 
 <ol>
   <li>Login to portal with the valid details of a user.</li>
-  <li>Navigate to the following path: Choose a Project -&gt; Connection 
+  <li>Navigate to the following path: Manage -&gt; Connection 
 <img src="/staticfiles/root/media/ConnectionDetails.png" alt="ConnectionDetails" /></li>
   <li>To find existing Connection, Click Search button. An existing connection opens up</li>
   <li>A typical connection has the following buttons attached to it.</li>
@@ -2577,7 +2577,7 @@ the Attribute Mapping and the Lookup Mapping.</p>
 <h3 id="steps-to-implement-copy-connection">Steps to Implement Copy Connection</h3>
 
 <ol>
-  <li>Login to the APPSeCONNECT Portal and Navigate to the Connection Page.</li>
+  <li>Login to the APPSeCONNECT Portal and Navigate to the <strong>Connection</strong> Page under <strong>MANAGE</strong>.</li>
   <li><a href="/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint">Create a connection</a>, if no connection is created.</li>
   <li>On the portal, click on the Drop-Down Button present on the Right Hand, Top-Side Corner of the screen, and select the 
 <code class="language-plaintext highlighter-rouge">Copy Connection</code> option.
@@ -2655,20 +2655,17 @@ Entity Name = Destination (or Target) Applications Entity.</p>
 
 <h3 id="steps-to-create-an-organisational-touchpoint-workflow">Steps to create an Organisational Touchpoint/ Workflow</h3>
 
-<ol>
-  <li>Login to the APPSeCONNECT Portal and navigate to the Connections Page.</li>
-  <li>Select the Template where you want to create the touchpoint. Make sure the template is selected according to the transformation flow.</li>
-  <li>The Connection Page opens. Click on the <code class="language-plaintext highlighter-rouge">Add New Button</code> for creating the touchpoint.
-<img src="/staticfiles/root/media/create-touchpoint1.png" alt="create-touchpoint1" /></li>
-  <li>The Touchpoint Information Page opens. Fill-up the fields marked with a mandatory symbol (a red coloured asterix) and click on the Continue Button.
-    <ul>
-      <li>Name: The name should be the touchpoint name. Ensure that the APPSeCONNECT naming Convention is used for the touchpoint.</li>
-      <li>Group: Select the group type, whether it is <code class="language-plaintext highlighter-rouge">Transactional Touchpoint or Configurational</code>.     <br />
+<p>1)	Login to the APPSeCONNECT Portal and navigate to the Connections Page under MANAGE.
+2)	Select the Template where you want to create the touchpoint. Make sure the template is selected according to the transformation flow.
+3)	The Connection Page opens. Click on the <code class="language-plaintext highlighter-rouge">Add New Button</code> for creating the touchpoint.
+<img src="/staticfiles/root/media/create-touchpoint1.png" alt="create-touchpoint1" /> 
+4)  The Touchpoint Information Page opens. Fill-up the fields marked with a mandatory symbol (a red coloured asterix) and click on the Continue Button.</p>
+<ul>
+  <li>Name: The name should be the touchpoint name. Ensure that the APPSeCONNECT naming Convention is used for the touchpoint.</li>
+  <li>Group: Select the group type, whether it is <code class="language-plaintext highlighter-rouge">Transactional Touchpoint or Configurational</code>.     <br />
 <strong>Note: Enable the checkbox for Show in Agent or else, the touchpoint will not be appearing in the Agent even if the touchpoint is ready.</strong>
 <img src="/staticfiles/root/media/create-touchpoint2.png" alt="create-touchpoint2" /></li>
-    </ul>
-  </li>
-</ol>
+</ul>
 
 <p>The field description is given below:</p>
 <ul>
@@ -2676,20 +2673,17 @@ Entity Name = Destination (or Target) Applications Entity.</p>
   <li>Help Document -  Users can add URL related to the document for this touchpoint</li>
   <li>Status - Status remains as Released by default.</li>
   <li>Sequence - This is to add dependency sequence to the touchpoint.</li>
-  <li>Description - This field is for adding descriptions to the touchpoint for briefing the behaviour of the touchpoint. (For Ex: Adding Bundle Product for Shopify to Priority.)
-    <ol>
-      <li>The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also <a href="/transformation/working-with-schemas-action-filter/">Add New Schema &amp; New Action</a>, by clicking on the respective buttons. Click on the Continue button.             <br />
+  <li>Description - This field is for adding descriptions to the touchpoint for briefing the behaviour of the touchpoint. (For Ex: Adding Bundle Product for Shopify to Priority.)<br />
+5)	The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also <a href="/transformation/working-with-schemas-action-filter/">Add New Schema &amp; New Action</a>, by clicking on the respective buttons. Click on the Continue button.             <br />
 <strong>Note: The Schema and the Action should be selected according to the nature of the touchpoint. Suppose, the touchpoint is of Product Add, the Schema and the Action should be selected for the Product only.</strong>*
-<img src="/staticfiles/root/media/create-touchpoint3.png" alt="create-touchpoint3" /></li>
-      <li>The Target Setup page opens. Fill the mandatory fields - Schema, Action, Protocol, and Method. Similar, to the Source Setup here too <code class="language-plaintext highlighter-rouge">New Schema/New Action</code> can be added by clicking on the respective buttons. Click Continue Button.
-<img src="/staticfiles/root/media/create-touchpoint4.png" alt="create-touchpoint4" /></li>
-      <li>The Transformation/Mapping Page opens. <a href="/transformation/overview/">Click Here</a> to know more about the Transformation Concept. Click Continue button.
-<img src="/staticfiles/root/media/create-touchpoint5.png" alt="create-touchpoint5" /></li>
-      <li>The summary page opens. This page displays the complete details provided for creating the touchpoint. Click  FINISH Button.
+<img src="/staticfiles/root/media/create-touchpoint3.png" alt="create-touchpoint3" /> 
+6)	The Target Setup page opens. Fill the mandatory fields - Schema, Action, Protocol, and Method. Similar, to the Source Setup here too <code class="language-plaintext highlighter-rouge">New Schema/New Action</code> can be added by clicking on the respective buttons. Click Continue Button.
+<img src="/staticfiles/root/media/create-touchpoint4.png" alt="create-touchpoint4" /> 
+7)  The Transformation/Mapping Page opens. <a href="/transformation/overview/">Click Here</a> to know more about the Transformation Concept. Click Continue button.
+<img src="/staticfiles/root/media/create-touchpoint5.png" alt="create-touchpoint5" /> 
+8)  The summary page opens. This page displays the complete details provided for creating the touchpoint. Click  FINISH Button.
 <img src="/staticfiles/root/media/create-touchpoint6.png" alt="create-touchpoint6" /> 
 <strong>Note: Only the Transformation module of the Touchpoint can be edited anytime. Users cannot change or modify Touchpoint Information, Source Setup and the Target Setup of the touchpoint.</strong></li>
-    </ol>
-  </li>
 </ul>
 
 <p>This completes the process of creating an organisational touchpoint. Navigate to the Touchpoint page. Click on the Choose Touchpoint option 
@@ -2736,8 +2730,9 @@ Here, the Product: Add touchpoint is Selected.            <br />
 <img src="/staticfiles/root/media/choose-touchpoint3.png" alt="choose-touchpoint3" /></li>
 </ol>
 
-<p><img src="/staticfiles/root/media/choose-touchpoint4.png" alt="choose-touchpoint4" />                                  <br />
-The above steps complete the process of Choosing Touchpoint.</p>
+<p>The above steps complete the process of Choosing Touchpoint.</p>
+
+<p><img src="/staticfiles/root/media/choose-touchpoint4.png" alt="choose-touchpoint4" /></p>
 
 <h2 id="reverse-touchpoint">Reverse Touchpoint</h2>
 
@@ -2754,22 +2749,23 @@ To know more about Configuring Environment, <a href="/deployment/Deployment-Conf
 <h3 id="environment-setup-of-the-on-premise-agent">Environment setup of the on-premise agent:</h3>
 
 <ol>
-  <li>Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.<br />
- <img src="/staticfiles/root/media/DashboardScreen.png" alt="DashboardScreen" /></li>
+  <li>Login to the portal and download the Agent from the Downloads section as shown below.<br />
+<img src="/staticfiles/root/media/DashboardScreen.png" alt="DashboardScreen" />
+You can also download the agent from the <a href="/deployment/Environment-Management/">Environment</a> page</li>
   <li>Run the setup folder to install the Agent in the system.</li>
   <li>Open the installed Agent on your machine.</li>
   <li>Login to the agent with your portal credentials.  <br />
-   <img src="/staticfiles/root/media/Login1.png" alt="Login1" /></li>
-  <li>There are four icons as shown below:
-    <ul>
-      <li>The home icon shows the connections in the project’</li>
-      <li>The app configuration panel displays the applications that are selected in the portal for Integration. Credentials for each application adapters are provided in the <code class="language-plaintext highlighter-rouge">App Configuration panel</code> of the agent. View here know about providing <a href="/connectors/overview-of-application-connectors/">credentials to application adapters</a>.</li>
-      <li>The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.</li>
-      <li>The last one is the <a href="/workflow/overview/">Workflow</a> option that displays the configured workflows in the project.<br />
-<img src="/staticfiles/root/media/Connections.png" alt="Connections" /></li>
-    </ul>
-  </li>
+<img src="/staticfiles/root/media/Login1.png" alt="Login1" /></li>
+  <li>There are four icons as shown below:</li>
 </ol>
+
+<ul>
+  <li>The home icon shows the connections in the project’</li>
+  <li>The app configuration panel displays the applications that are selected in the portal for Integration. Credentials for each application adapters are provided in the <code class="language-plaintext highlighter-rouge">App Configuration panel</code> of the agent. View here know about providing <a href="/connectors/overview-of-application-connectors/">credentials to application adapters</a>.</li>
+  <li>The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.</li>
+  <li>The last one is the <a href="/workflow/overview/">Workflow</a> option that displays the configured workflows in the project.<br />
+<img src="/staticfiles/root/media/Connections.png" alt="Connections" /></li>
+</ul>
 
 <h3 id="environment-setup-of-the-cloud-agent">Environment setup of the Cloud agent</h3>
 
@@ -2782,18 +2778,16 @@ To know more about Configuring Environment, <a href="/deployment/Deployment-Conf
 
 <p>View for <a href="/deployment/Environment-Management/#adding-cloud-environment">creating a cloud agent</a> for an organisation</p>
 
-<ol>
-  <li>Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).<br />
-<img src="/staticfiles/root/media/App.png" alt="App" /></li>
-  <li>After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.<br />
-<img src="/staticfiles/root/media/Connection_New.png" alt="Connection_New" /></li>
-  <li>Enable the assigned credential to the connection by choosing the configuration 
+<p>1) Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).<br />
+<img src="/staticfiles/root/media/App.png" alt="App" />
+2) After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.<br />
+<img src="/staticfiles/root/media/Connection_New.png" alt="Connection_New" />
+3) Enable the assigned credential to the connection by choosing the configuration 
 <img src="/staticfiles/root/media/Connection_New2.png" alt="Connection_New2" /><br />
-4.Enable the toggle button on the connector.<br />
-<img src="/staticfiles/root/media/Connection_New3.png" alt="Connection_New3" /></li>
-  <li>Click on the View the Connection icon and navigate to the touchpoints page and then Click on the play button to run the sync process.<br />
-<img src="/staticfiles/root/media/Connection_Touchpoint.png" alt="Connection_Touchpoint" /></li>
-</ol>
+4) Enable the toggle button on the connector.<br />
+<img src="/staticfiles/root/media/Connection_New3.png" alt="Connection_New3" />
+5) Click on the View the Connection icon and navigate to the touchpoints page and then Click on the play button to run the sync process.<br />
+<img src="/staticfiles/root/media/Connection_Touchpoint.png" alt="Connection_Touchpoint" /></p>
 
 <h2 id="default-notification-for-transactions">Default Notification for Transactions</h2>
 

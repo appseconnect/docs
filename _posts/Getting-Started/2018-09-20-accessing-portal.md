@@ -25,19 +25,27 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 
 |Modules|Details|
 |---|---|
-|[Home]()|This page will allow the users to get a kickstart with the APPSeCONNECT portal.|
-|[Designer]()|This section will allow the user to design the business flows using Workflows or Process Flows|
-|[Deploy]()|This section will let the users working with the Environment deployed|
-|[Manage]()|This section will allow the users to manage their Apps, Connections, Rules, Repositories, APIs, Feeds, Monitoring etc.|
-|[Help]()|This section will allow the user to get help and learn about the usability of the features. User can easily connect to the Documentation and Community resource from HELP.|
+|[Home](/accessing%20portal/accessing-portal/#home)|This page will allow the users to get a kickstart with the APPSeCONNECT portal.|
+|[Designer](/accessing%20portal/accessing-portal/#designer)|This section will allow the user to design the business flows using Workflows or Process Flows|
+|[Deploy](/accessing%20portal/accessing-portal/#deploy)|This section will let the users working with the Environment deployed|
+|[Manage](/accessing%20portal/accessing-portal/#manage)|This section will allow the users to manage their Apps, Connections, Rules, Repositories, APIs, Feeds, Monitoring etc.|
+|[Help](/accessing%20portal/accessing-portal/#help)|This section will allow the user to get help and learn about the usability of the features. User can easily connect to the Documentation and Community resource from HELP.|
 
 
 ## HOME
 
+This section will allow you to take off with the intergation features of the APPSeCONNECT Portal. You will have the option either to design your [Process Flows](/processflow/overview-of-processflow/) from scratch as per your unique business process 
+or you can even select a pre-packaged template that will enable to adjust and edit the pre-designed templates as per your business process.
+The HOME page will provide you with the PLAN details for your organisation . YOu will be provided with the count for the Number of Projects and Packages available on your organisation.
+
+![Home1]()
+
 ## Designer
 
 This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
-Workflows and Process Flows. Below are the gyst that provides you with the informations of Workflow and Process Flow.
+Workflows and Process Flows. Below are the gist that provides you with the informations of Workflow and Process Flow.
+
+![Designer1](\staticfiles\root\media\designer1.PNG)
 
 ### Workflows
 
@@ -46,22 +54,30 @@ APPSeCONNECT workflow application can be considered as a strong feature that use
 
 To know more about Workflow Management, [Click here](/workflow/overview/).
 
-### Process Flow
+### Process Flows
 
+`Process Flows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
+Process Flow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, Process Flow is enables with a Packaging system that enables the user to zip design process flows into packages
+that enables you to share and install in other organisations.
+
+To know more about the Process Flows, [Click Here](/processflow/overview-of-processflow/)
 
 ## Deploy
 
 This section will allow you to work with your **ENVIRONMENTS** either On-Premise or Hosted. You can perform multiple deployment functionalities that will help you setting up your environments.
 
+![Deploy1](\staticfiles\root\media\deploy1.PNG)
+
 ### Environment
 
 [Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
-
 
 ## Manage
 
 This section will allow you to manage the applications, connection, rules and other modules of APPSeCONNECT. Below are the modules
 that will be available to you under the **MANAGE** section.
+
+![manage1](\staticfiles\root\media\manage1.PNG)
 
 ### Monitoring
 Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. 
@@ -102,7 +118,7 @@ d.	Application Categories Subscribed.
 
 **Note: The above three widgets initiate in minimized form by default. Users need to expand the widgets to view the widget details.**
  
- ![Subscription_Dashboard](/staticfiles/root/media/Subscription_Dashboard.png)
+![Subscription_Dashboard](/staticfiles/root/media/Subscription_Dashboard.png)
 
 *4.Execution Status: This widget displays the data synced wrt to an organization and is categorised based on the status: Success, Skipped & Failure.*  
 The percentage is displayed on a pie chart  irrespective of connections. Hovering over the section on the pie chart will display the exact 
@@ -111,7 +127,7 @@ corner of the widget.
 
 **Note: The close button remains in disabled state.** 
 
- ![ExecutionStatus_Dashboard](/staticfiles/root/media/ExecutionStatus_Dashboard.png)
+![ExecutionStatus_Dashboard](/staticfiles/root/media/ExecutionStatus_Dashboard.png)
 
 *5. Execution Counts: This widget displays the data counters with respect to each connection in form of a Bar chart.*
 This widget displays the status of each connection based on:  Success, Skipped, Unprocessed & Failure.
@@ -217,6 +233,20 @@ b.	Organization Admin
     * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
     * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
 
+#### Steps to update an existing user
+
+1. [Login](https://portal.appseconnect.com/Account/Login#!) to APPSeCONNECT
+2. Now Search/find the appropriate organization you want to change details for. 
+3. Click on Users menu.
+4. Click on Edit link for an existing user.    
+![Usernode](/staticfiles/root/media/Usernode.png)
+
+In the edit user screen, you can change the username, email address, password etc for that particular user.
+
+![InviteUser](/staticfiles/root/media/InviteUser.png)
+
+After completion, click save to save data. Now use the email id and password to login to cloud or agent.
+
 ### Repositories
 
 Repositories provides you with the ability to create  and manage lookup types in form of tables. Lookups enable the user to provide specific 
@@ -227,7 +257,7 @@ For more details on Repositories, [Click Here](/processflow/Lookup-repository-ma
 
 ![Create Lookrepo1](../../staticfiles/processflow/media/create-lookrepo1.png)
 
-### APPS 
+### App
 
 APPSeCONNECT support large number of apps and you can find and choose the app from the prebuilt list. If you cannot find your App on the list, you might want to try out our App creation page to add a new App to our database. 
 Any App once added is assigned to a particular category.   
@@ -273,7 +303,7 @@ Traces of past activities of the user can be been viewed in the feed section.
 ![feeds1](\staticfiles\root\media\feeds1.PNG)
 4. You can filter your search on the Feeds Page only by using keywords like `workflow`, `Rule`, `Account` etc.
 5. For each feeds on the page, you will be provided with a hashtag that will define the activity area.
-![feeds2](\staticfiles\root\media\feeds1.PNG)
+![feeds2](\staticfiles\root\media\feeds2.PNG)
 6. On clicking over the hashtags, you will be listed with all the feeds whose activity was on that area.
 
 **Note: Whenever you schedule a workflow a message will get updated in the feeds after scheduling the time interval of workflow form the OP Agent.**
@@ -283,7 +313,6 @@ Traces of past activities of the user can be been viewed in the feed section.
 
 ### Rules
 
-
 APPSeCONNECT Rule listing enables you to perform ACTIONS like (raising a support ticket or sending an email) based on the type of events encountered during agent execution such as - `Execution Failure, Execution Start, Execution End`, via Rule Engine. 
 
 During Agent execution, if some events are encountered such as *Application Crash*, automatically the Rule which you have defined on Application Crash will be triggered and it will perform the associated Action with that Rule.
@@ -291,7 +320,7 @@ You can also define additional criteria for triggering the Rule and performing t
 
 In that case whenever the event will occur it will also check if the additional criteria are matched or not. If the additional criteria are matched then only the [Rule](https://docs.appseconnect.com/rule/overview-of-rule/) will be triggered.
 
-## Tickets
+### Tickets
 
 APPSeCONNECT support tickets are meant of clients who can place a ticket and set priority level while facing any problem while working on APPSeCONNECT.and you need to resolve it as early as possible. 
 
@@ -299,6 +328,14 @@ The implementers and the partners would be able to see the tickets and resolve t
 
 
 ## Help
+
+This section will assist and connect the user with APPSeCONNECT Docs and Community for reference and instant support. Users can anytime navigate to the [Documentation portal](https://docs.appseconnect.com/) for usability assists and reference.
+Users can also connect with our [Community Portal](https://community.appseconnect.com/) for instant help and support for APPSeCONNECT. Having connected with our community portal enables you to stay in connect with latest discussions and solutions.
+Common helps and reference support documents is also provided to the user when navigating to the HELP section. Incase of major support, you can anytime raise [TICKETS](https://appseconnect.freshdesk.com/) for to avail our In-House Customer Support.
+
+Users can aslo study and view the latest updates and Hotfixes provided for APPSeCONNECT. You can anytime visit the latest Release Notes in the **What's New** section of the HELP page that keeps you updated with our every releases and updates.
+
+![Help1]()
 
 
 
@@ -349,7 +386,7 @@ following actions:
 
 2. Our Support team helps you in Selection of necessary addons and help you in updating subscription.
 
-_**Note:** On Expiry of your organisation you will not be able to perform the following functionalities
+_**Note: On Expiry of your organisation you will not be able to perform the following functionalities**_
 
 - You will not be able to perform the sync process of new data either through Auto-Sync or Manual Sync.
 
@@ -361,7 +398,7 @@ _**Note:** On Expiry of your organisation you will not be able to perform the fo
 
 For Pricing details [click here](https://www.appseconnect.com/pricing/)
 
-### Scenario 1:Updating Addons for Generic REST Applications
+#### Scenario 1: Updating Addons for Generic REST Applications
 
 1.	Login to the APPSeCONNECT Portal and Navigate to the [My Subscription](/accessing%20portal/accessing-portal/#b-my-subscription). 
 2.	For adding license addons to REST Based Applications you need to increase the Add On `Additional Custom Data Sources`. 
@@ -381,7 +418,7 @@ Clicking on the lock screen will log off the user from the portal.
 
 Click on the logout button will logout the user from the portal.
 
-### Bookmark Panel section
+## Bookmark Panel section
 
 ![bookmark1](/staticfiles/root/media/bookmark1.png)
 
@@ -391,12 +428,12 @@ b. Notifications: For viewing portal specific notification.
 c. Downloads: For downloading APPSeCONNECT tools like Agent, Plugins, Addons etc.      
 d. Full Screen: Users can also view the portal in full screen mode by clicking on the full screen button.     
  
-*Steps to create portal specific Bookmark*
-1. Clicking on the bookmarks link, user gets the option to Create Bookmark.   
+### Steps to create portal specific Bookmark
+1) Clicking on the bookmarks link, user gets the option to Create Bookmark.   
 ![bookmark2](/staticfiles/root/media/bookmark2.png)   
-2. User needs to name the bookmark which is to be created.  
+2) User needs to name the bookmark which is to be created.  
 ![bookmark3](/staticfiles/root/media/bookmark3.png)   
-3. Users can view the saved bookmarks by clicking on the bookmarks drop-down.   
+3) Users can view the saved bookmarks by clicking on the bookmarks drop-down.   
 ![bookmark4](/staticfiles/root/media/bookmark4.png)   
 
 
@@ -434,21 +471,9 @@ user would be able to view the tools that are available for the organisation. Th
 * Application specific Add-Ons
 
 ![download](/staticfiles/root/media/download.png)  
-## Steps to update an existing user
 
-1. [Login](https://portal.appseconnect.com/Account/Login#!) to APPSeCONNECT
-2. Now Search/find the appropriate organization you want to change details for. 
-3. Click on Users menu.
-4. Click on Edit link for an existing user.    
-![Usernode](/staticfiles/root/media/Usernode.png)
 
-In the edit user screen, you can change the username, email address, password etc for that particular user.
-
-![InviteUser](/staticfiles/root/media/InviteUser.png)
-
-After completion, click save to save data. Now use the email id and password to login to cloud or agent.
-
-# Adding a Project in Recent Project Tab from Search Box
+## Adding a Project in Recent Project Tab from Search Box
 
 1. You have logged in successfully as a user. Now  you will be able to search all projects from the search box and from there you will be able to add projects to your recent organization tab list. 
 2. Now the login page will be redirected to a homepage as shown below                                       

@@ -12,6 +12,7 @@ menus:
 ---
 ## Pre-requisites
 
+* To visit the ENVIRONMENT page in portal, navigate to **Deploy > Environments.**
 * It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and older Agents can still communicate with server, we still ask users to upgrade to get full flavour of new features. 
 * You must have Environment Management privilege to perform actions on the Environment Settings panel.
 * By default, on landing up on the environment page, you will be selected with the hosted section. Scroll below to view more details on the Hosted section.
@@ -142,7 +143,7 @@ Follow the process below to create folders for grouping.
 
 ![opfolder5](\staticfiles\deployment\media\EasyEnv\opfolder5.PNG)
 
-** You can delete your created folders anytime. On its deletion, all the  On-Premise Enviroments under that folder will be unparented and will shift under the main On-Premise folder. All the child folders under it will also get deleted.**
+**You can delete your created folders anytime. On its deletion, all the  On-Premise Enviroments under that folder will be unparented and will shift under the main On-Premise folder. All the child folders under it will also get deleted.**
 
 Following the above process you can easily create and group your On Premise Environments.
 

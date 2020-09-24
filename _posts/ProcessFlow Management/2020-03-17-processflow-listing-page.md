@@ -15,13 +15,14 @@ This section provides the option of creating folders for organizing the Process 
 requirements for any organizations. Process Flow listing section helps users to organize & manage all the process 
 flows in folder structure such that user can maintain an easy usability as per the requirement. 
 
-The folder list would available on the left pane of the page. 
-
+Navigate to the Designer > Process Flows. The Process Flow listing page appears. The list of the folders in the listing page would available on the left pane of the page. 
 By default, an organisation would have the following folders created `Process Flow , Installed Process Flow , Package Library , Trash` Folder.
+
+![listingpageoverview](\staticfiles\processflow\media\listingoverviewscreen.png)
 
 ## Process flow listing for each folder
 
-1. Click on the Home folder or any other folder. The listing page for the selected folder is displayed on the right side of the page.  
+1. Click on the Process Flow folder or any other folder. The listing page for the selected folder is displayed on the right side of the page.  
 ![processflowlisting-page1](/staticfiles/processflow/media/processflowlisting-page1.png)    
 2. The Process flow listing page will list all the process flows that are created in the selected folder.  
 3. For each process flows, the following details will be displayed.  
@@ -36,10 +37,9 @@ By default, an organisation would have the following folders created `Process Fl
    of the page for [creating a new process flow](/processflow/creating-processflow/). Clicking on the NEW button, 
    you will be navigated to the [Process Flow Designer](/processflow/designer-processflow/)
 ![processflowlisting-page4](/staticfiles/processflow/media/processflowlisting-page4.png)   
-7. The FILTER button is available beside the new button. Click on the button, you can filter process flows using search functionality, from the list.    
-![processflowlisting-page5](/staticfiles/processflow/media/processflowlisting-page5.png)   
+7. The FILTER button is available beside the new button. Click on the button, you can filter process flows using search functionality, from the list.      
 
-## Usability for the HOME Folder
+## Usability for the Process Flow Folder
 
 On visiting the Process Flow listing page, you can view the Home folder. This 
 is a default folder and every organisation within APPSeCONNECT would contain the 
@@ -52,7 +52,7 @@ in the drop down that would enable the user to create a child folder of the sele
 of 50 folders for process flow for an organization.
 3. Click on the Home folder, the process flow listing page appears on the 
 Right side of  the page. Empty folder will have the view as given below.
-![Processflow Home3](../../staticfiles/processflow/media/processflow-home3.png)
+![Processflow Home3](../../staticfiles/processflow/media/processflow-home1.png)
 4. Now Click on [Create a Process Flow](/processflow/creating-and-designing-processflow/) button, the Process Flow Designer page opens.
 
 ## Usability for the SUB/CHILD Folder
@@ -65,7 +65,7 @@ Right side of  the page. Empty folder will have the view as given below.
 
 Every folder (except Trash) will have ellipsis (...) that will enable the user to create new child folders.  
 a.	Click on the ellipsis (...)of the home folder, you can view a NEW button.  
-![Process Createchild Folder1](../../staticfiles/processflow/media/process-createchild-folder1.png) 
+![Process Createchild Folder1](../../staticfiles/processflow/media/processflow-home2.png) 
 b.	Click the new button, you will get the window for adding a new child folder.   
 ![Process Createchild Folder2](../../staticfiles/processflow/media/process-createchild-folder2.png)  
 c.	Enter the name for the folder and click on the save button. You get  a success message.  
@@ -101,19 +101,19 @@ The default folders (Home & Trash) cannot be renamed or deleted.**
 
 ## Steps to Delete a Created Folder
 
-You can delete any created folders by choosing the option delete, available in the 
+1) You can delete any created folders by choosing the option delete, available in the 
 drop-down of the selected folder.  
 ![processflow-listing9](/staticfiles/processflow/media/processflow-listing9.png)         
-2. On clicking the delete button, user gets a confirmation message for the deletion process.  
+2) On clicking the delete button, user gets a confirmation message for the deletion process.  
 Click Yes button will delete the selected folder.  
 ![processflow-listing10](/staticfiles/processflow/media/processflow-listing10.png)        
-3. Clicking `yes` button, will delete all its child folders & the process flow present inside it.
+3) Clicking `yes` button, will delete all its child folders & the process flow present inside it.
 The deleted folders will be shifted to the `Trash folder` once deleted from the group level.  
 ![processflow-listing11](/staticfiles/processflow/media/processflow-listing11.png)    
-4. Folders can even be deleted permanently from the Trash folder, by clicking on the delete button 
+4) Folders can even be deleted permanently from the Trash folder, by clicking on the delete button 
 for the selected folder under Trash. User gets a Confirmation message for deleting permanently.  
 ![processflow-listing12](/staticfiles/processflow/media/processflow-listing12.png)     
-5. Clicking on the Yes button will delete the folder, its process flows and Child folders permanently.     
+5) Clicking on the Yes button will delete the folder, its process flows and Child folders permanently.     
 
 ## Usability for the Trash Folder 
 

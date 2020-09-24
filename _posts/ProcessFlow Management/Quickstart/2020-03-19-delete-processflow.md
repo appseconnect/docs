@@ -22,7 +22,6 @@ button is available in the [designer section](/processflow/designer-processflow/
 
 1. Login to the Portal and navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 Click New button in listing page.      
-![pfdelete1](\staticfiles\processflow\media\pfdelete1.png)  
 2. You are now in the [designer](/processflow/designer-processflow/) section.    
 3. [Create](/processflow/creating-processflow/) a Process Flow. Once you have created the process flow, click `SAVE` button on the right area of top pane.
 **When a user is creating a new Process Flow for the first time, only `SAVE` button will be available.**      
@@ -46,11 +45,11 @@ the process flow from the environment.
 
 The above steps will aid the deletion of processflow and User will be redirected to the Process Flow [Listing page](/processflow/processflow-listing-page/).   
 
-Users also get the option to delete a process from the listing page. If the process flow is deployed in an environment, you will be unable to perform the 
+- Users also get the option to delete a process from the listing page. If the process flow is deployed in an environment, you will be unable to perform the 
 delete operation as shown below.  
 ![pfdelete9](\staticfiles\processflow\media\pfdelete9.png)    
 
-Undeployed process flows can be deleted from the listing page by clicking on the delete button as shown below.  
+- Undeployed process flows can be deleted from the listing page by clicking on the delete button as shown below.  
 ![pfdelete10](\staticfiles\processflow\media\pfdelete10.png)    
 
 The deleted process flow moves to trash folder.
