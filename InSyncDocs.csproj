@@ -38,6 +38,7 @@
     <Folder Include="_posts\apps-management\quickstart-guides\" />
     <Folder Include="_posts\Best-practices\" />
     <Folder Include="_posts\Connectors\Technology Connectors\File System\" />
+    <Folder Include="_site\release-notes\2020-Q3\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -1259,7 +1260,6 @@
     <Content Include="_site\processflow\processflow-listing-page\index.html" />
     <Content Include="_site\release-notes\2020-Q2-V1.0-Hotfix\index.html" />
     <Content Include="_site\release-notes\2020-Q2\index.html" />
-    <Content Include="_site\release-notes\2020-Q3\index.html" />
     <Content Include="_site\release-notes\2020\index.html" />
     <Content Include="_site\staticfiles\Transformation\media\edit-variable.png" />
     <Content Include="_site\staticfiles\Transformation\media\process-of-transformation.png" />
