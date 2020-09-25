@@ -4,9 +4,9 @@ toc: true
 tag: developers
 category: "Processflow"
 menus: 
-   quickstartprocessflow:
+   packagesoverview:
         title: "Process Flow Packaging"
-        weight: 6
+        weight: 1
         icon: fa fa-file-word-o
         identifier: packageprocessflow
 ---
@@ -20,7 +20,7 @@ in a different organisation. This document will help you to create a new package
 - You need to have valid credential to the portal.
 - You need to have the Process Flow created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
 
-## Creating Packages:
+## Creating Packages
 
 1) Navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 
@@ -71,7 +71,7 @@ Following the above process, you can successfully create a process flow package.
 
 **Note: Any changes made to the original process flow, the modifications will not reflect in the packaged versions. You need to create a new package for packaging the modified process flows.**
 
-## Listing Packages:
+## Listing Packages
 
 Once you have created your process flow Package, you can successfully view the package lists in the process flow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.
 

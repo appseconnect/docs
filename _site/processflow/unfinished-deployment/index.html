@@ -19,12 +19,12 @@
 
 
 
-<title>WooCommerce - APPSeCONNECT Product Docs</title>
+<title>Unfinished Deployment - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need to be provided for validating the agent. Here you will find the detailed description on how to configure the agents for the application of WooCommerce, Troubleshooting issues and the attributes and action.">
+<meta name="description" content="Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of unfinished deployment in the portal itself, and carrry on smoothly the functionality of redeployment of those undeployed process flows.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="WooCommerce">
+<meta property="og:title" content="Unfinished Deployment">
 
 
-  <link rel="canonical" href="http://localhost:4000/connectors/woocommerce/">
-  <meta property="og:url" content="http://localhost:4000/connectors/woocommerce/">
+  <link rel="canonical" href="http://localhost:4000/processflow/unfinished-deployment/">
+  <meta property="og:url" content="http://localhost:4000/processflow/unfinished-deployment/">
 
 
 
-  <meta property="og:description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need to be provided for validating the agent. Here you will find the detailed description on how to configure the agents for the application of WooCommerce, Troubleshooting issues and the attributes and action.">
+  <meta property="og:description" content="Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of unfinished deployment in the portal itself, and carrry on smoothly the functionality of redeployment of those undeployed process flows.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2019-03-04T00:00:00+05:30">
+  <meta property="article:published_time" content="2020-09-09T00:00:00+05:30">
 
 
 
@@ -206,7 +206,7 @@
     
       
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
+        <a href="/processflow" itemprop="item"><span itemprop="name">Processflow</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <span class="sep">/</span>
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">WooCommerce</li>
+      <li class="current">Unfinished Deployment</li>
     
   
 </ol>-->
@@ -2321,9 +2321,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="WooCommerce">
-        <meta itemprop="description" content="Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, credentials need to be provided for validating the agent. Here you will find the detailed description on how to configure the agents for the application of WooCommerce, Troubleshooting issues and the attributes and action.">
-        <meta itemprop="datePublished" content="March 04, 2019">
+        <meta itemprop="headline" content="Unfinished Deployment">
+        <meta itemprop="description" content="Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of unfinished deployment in the portal itself, and carrry on smoothly the functionality of redeployment of those undeployed process flows.">
+        <meta itemprop="datePublished" content="September 09, 2020">
         
 
 
@@ -2342,7 +2342,7 @@
                 
                 
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="/connectors" itemprop="item"><span itemprop="name">Connectors</span></a>
+                    <a href="/processflow" itemprop="item"><span itemprop="name">Processflow</span></a>
                     <meta itemprop="position" content="2" />
                 </li>
                 <li class="sep">/</li>
@@ -2350,7 +2350,7 @@
                 
                 
                 
-                <li class="current">WooCommerce</li>
+                <li class="current">Unfinished Deployment</li>
                 
                 
             </ol>
@@ -2360,7 +2360,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">WooCommerce
+                <h1 class="page__title" itemprop="headline">Unfinished Deployment
 </h1>
                 
                 
@@ -2383,7 +2383,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-04T00:00:00+05:30">March 04, 2019</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-09-09T00:00:00+05:30">September 09, 2020</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2391,7 +2391,7 @@
 
 
 
-  4 minute read
+  3 minute read
 </p>
                 
                 
@@ -2404,155 +2404,134 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#configuring-the-woocommerce-adapter">Configuring the WooCommerce Adapter</a></li>
-  <li><a href="#troubleshooting">Troubleshooting</a></li>
-  <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
+  <li><a href="#causes-for-unfinished-deployment-of-process-flow">Causes for Unfinished Deployment of Process Flow</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#steps-to-redeploy-process-flows-to-environment">Steps to redeploy Process Flows to Environment</a></li>
+    </ul>
+  </li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Application configuration is an integral activity prior to the process of integration. If your chosen application is WooCommerce, 
-credentials need to be provided for validating the agent. Here you will find the detailed description on 
-how to configure the agents for the application of WooCommerce, Troubleshooting issues and the attributes and action.</p>
+                <p>Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn 
+aids you to check the status of unfinished deployment in the portal itself, and carrry on smoothly the functionality of 
+<a href="/processflow/redeploying-processflow/">redeployment</a> of those undeployed process flows.</p>
 
-<p>WooCommerce is a REST Application which supports both the BASIC &amp; OAuth 1.0 authentication. The Adapter of the application WooCommerce
-provides the leverage to communicate and adapt with the AEC Portal. This section provides you the detailed process of validating
-the credential of the application WooCommerce.</p>
+<h2 id="causes-for-unfinished-deployment-of-process-flow">Causes for Unfinished Deployment of Process Flow</h2>
 
-<h1 id="pre-requisites-for-woocommerce-configuration">Pre-requisites for WooCommerce Configuration</h1>
+<p>1) Background Services Interrupted
+2) API Service Down
+2) Cloud Agent Services Down<br />
+3) Autosync Stopped working during deployment.</p>
 
-<ol>
-  <li>Valid APPSeCONNECT Portal credentials.</li>
-  <li>Select the Application WooCommerce in the <a href="/getting%20started/configurations/#process-of-choosing-app">APP</a> section.</li>
-  <li><a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Create a connection</a> for WooCommerce.</li>
-  <li>Publish a Touchpoint Update Adapters and Update Configuration in the agent.</li>
-</ol>
-
-<p><strong>Note: Touchpoints are needed to be created if there are no pre-packaged touchpoints.</strong></p>
-
-<h2 id="configuring-the-woocommerce-adapter">Configuring the WooCommerce Adapter</h2>
+<h3 id="prerequisites">Prerequisites</h3>
 
 <ol>
-  <li>In the App Configuration panel of the agent, click on the + button, beside the app WooCommerce  <br />
-   <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter1.png" alt="woocommerce-adapter1" /></li>
-  <li>On clicking the + button, the credential panel opens for the application WooCommerce.  <br />
-   <img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter2.png" alt="woocommerce-adapter2" /></li>
-  <li>The Base URL Endpoint has 2 options in the drop-down.<br />
-a.	/wp-json/wc/ - This is the newer version of the WooCommerce that support the    WordPress platform for WooCommerce. 
-The version for this WooCommerce version should be &gt;=2.6<br />
-b.	/wc-api/ - This endpoint is for the older version of the WooCommerce platform. If the user platform is based on the older version, this end point is needed to be selected for agent validation.
-The version for this WooCommerce version should be &lt;2.6</li>
-  <li>The API Version is the WooCommerce API Version. The user can have its WC Version by navigating to WooCommerce &gt; Status &gt; WooCommerce Version.
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter3.png" alt="woocommerce-adapter3" />
-<strong>Note: For more details about WC API versions, <a href="https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#introduction">click here</a></strong></li>
-  <li>The check-box fields are the HTTP Headers that needs to be enabled if the http headers are required.  <br />
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter4.png" alt="woocommerce-adapter4" /></li>
-  <li>The Base URL is the WooCommerce Base URL. For Ex:http://templatebar.com/Individual/abcd/woocommerce<br />
-<strong>Note: If the URL has HTTP, the authentication OAuth 1.0 is supported and if the URL has HTTPS, the BASIC Authentication is supported. 
-For both authentication process, the User Interface remains the same.</strong></li>
-  <li>The API Key and the API Secret is generated from the WooCommerce platform. Navigate to WooCommerce &gt; Settings &gt; Advanced &gt; REST API &gt; ADD Key 
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter5.png" alt="woocommerce-adapter5" /></li>
-  <li>Provide the details in the field provided in the WC platform and click on the Generate API Key Button.</li>
+  <li>Should have valid credentials for logging in to the APPSeCONNECT portal.</li>
+  <li>A <a href="/processflow/designer-processflow/">Designed Process</a> flow with source and destination application node configurations done.</li>
+  <li>A <a href="/processflow/deploying-and-executing-processfloww/">deployed process flow</a> should be available to make the changes for redeploying.</li>
+  <li>Enable Environment should be checked in the Agent.</li>
 </ol>
 
-<p>a.	Description: This is the field for API Description.<br />
-b.	User: This field is for specifying the User Type. The user should be as ADMIN <br />
-c.	Permissions: This is a drop-down field; the permission should be selected as Read/Write for providing the permission for GET and CREATE operations.  <br />
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter6.png" alt="woocommerce-adapter6" /></p>
+<h3 id="steps-to-redeploy-process-flows-to-environment">Steps to redeploy Process Flows to Environment</h3>
 <ol>
-  <li>Input the generated API Key and the API Secret in the Agent.  <br />
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter7.png" alt="woocommerce-adapter7" /><br />
-<strong>Note: The Consumer Key is the API Key and the Consumer Secret is the API Secret.</strong></li>
-  <li>Input the WooCommerce Username and Password in the Agent and click on the Validate and SAVE button.    <br />
-<img src="/staticfiles/connectors/media/application-connector/woocommerce-adapter8.png" alt="woocommerce-adapter8" /></li>
+  <li>Login to the portal and navigate to the <a href="/processflow/overview-of-processflow/">Process Flow</a> module available on the left menu.</li>
+  <li>Choose the Process Flow to be deployed to make any redeployment or do deploy a designed configured processflow.</li>
+  <li>Click on the deploy button in the Process Flow <a href="/processflow/designer-processflow/">Designing Page</a>. 
+IMAGE</li>
+  <li>
+    <p>The deploy wizard opens up and the consecutive steps to <a href="/processflow/deploying-and-executing-processfloww/">deployment</a> starts.</p>
+  </li>
+  <li>Deployment wizard takes you to the Processflow Designer page. The Tracker window opens automatically.</li>
+  <li>
+    <ol>
+      <li>During the process of deployment, if the background service is interuppted/API Service gets down, the 
+ deployment process goes into unfinished state. Now the user can view status of unfinished deployments 
+ in the <a href="">environment</a> section of the portal.</li>
+    </ol>
+  </li>
+  <li>During Processflow deployment user will be able to see the status in the tracking window. 
+ and the <code class="language-plaintext highlighter-rouge">Deploy</code> button remains in disabled state.</li>
 </ol>
 
-<p>Following these steps, ends the process for validating agent for the application WooCommerce.</p>
+<p><strong>NOTE: (a) <code class="language-plaintext highlighter-rouge">Deploy</code> button always remains disabled- Till the completion of  Process Flow deployment or Process Flow deployment state remains Pending 
+in <a href="/deployment/Environment-Management/">environment</a> section.<br />
+(b) <code class="language-plaintext highlighter-rouge">Execute</code> button always remain disabled -  Till the completion of  Process Flow deployment or Process Flow deployment state remains Pending 
+in <a href="/deployment/Environment-Management/">environment</a> section.</strong></p>
 
-<h2 id="troubleshooting">Troubleshooting</h2>
+<ol>
+  <li>
+    <p>After Deployment, You can view the <a href="/deployment/Environment-Management/">Environment section</a>. Here you can  view the deployed process flow under the
+Processflow tab. All-Status of the deployment should be updated from agent through API.  <br />
+IMAGE</p>
+  </li>
+  <li>
+    <p>You can view the <code class="language-plaintext highlighter-rouge">deployment log</code> in Environment section, of the selected process flow under Action . This helps
+to track the last deployment logs at any time and also, when the process flow gets tracker
+ window is closed.</p>
+  </li>
+</ol>
 
-<p><strong>ISSUE 1:  If the Source Application Not Found</strong>
-Some of the basic troubleshooting issue happens due to improper validations or even if it is accurately validated, and if touchpoints do not sync, this basic issue
-resolves after removing the Temp and Cache files from the portal and from your system. Therefore, after clearing all this publish the touchpoints again along with Update Configuration on the agent.
-For E.g. If the Source Application Not Found in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
+<p><strong>To carry out the steps on unfinished deployment of process flow, you have to check the environment section of the portal.</strong></p>
 
-<p><strong>ISSUE 2: Plugin Installation Issue</strong></p>
+<ol>
+  <li>
+    <p>In the environment section, you can view three columns under Process Flow tab -  <code class="language-plaintext highlighter-rouge">Number of tries</code>, <code class="language-plaintext highlighter-rouge">Status</code>, 
+&amp;  <code class="language-plaintext highlighter-rouge">Deployment Log</code>.</p>
+  </li>
+  <li>
+    <p>The deployment status of a processflow is vsible under <code class="language-plaintext highlighter-rouge">Status</code> section. 
+You can view the following deployment status</p>
+  </li>
+</ol>
 
-<p>On Syncing Customer Add touchpoint from WooCommerce to any destination application, it is noted that only 
-First 10 customers created, successfully synced, but it fails or shows no result in the resync bucket 
-when the 11th customer is synced.</p>
+<p>(a) Successful - Here the Deployment is executed successfully without any error.</p>
 
-<p>This is due to the plugin that might not have been installed. The process of uploading the plugin is provided 
-in the prerequisite section of this page.</p>
+<p>(b) Pending - Here the deployment process started but remains incomplete.</p>
 
-<p><strong>Note: It is the feature in WooCommerce that without the AEC plugin, more than 10 customers will not sync</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Pending time out</code>  is configurable from <a href="">environment</a> <em>settings</em> in the portal.</li>
+  <li>Here the Time out for Pending is in a range within 5 mint to 60 mints. Default Pending time out 
+for the field will be 5 mints.</li>
+  <li>During the deployment process, if the disconnected agent from cloud gets reconnected
+ within the time range of pending time out, then the agent will automatically retry the pending 
+ steps of deployment and will complete the deployment process.</li>
+  <li>In the pending state of deployment - Resync, Un-deploy context menu will be unavailable.</li>
+  <li>Pending state will show -  Deployment Started: (time), Pending timeout: 10 mint, 
+Wait till :(start time+Pending timeout).</li>
+  <li>You can edit a Process flow if the Process Flow deployment status is in <code class="language-plaintext highlighter-rouge">Pending</code> state.</li>
+</ul>
 
-<h2 id="attributes-and-actions">Attributes and Actions</h2>
+<p>(c) Unsuccessful - If the Deployment is incomplete and have not reached the finishing step. 
+You can try to redeploy the processflow from unsuccessful status.</p>
 
-<p>While defining a connect to an API endpoint in WooCommerce, you require clear understanding about the data requirements 
-and endpoint configurations. You can refer to this document to find all the endpoint details of your WooCommerce installation.</p>
+<p><strong>Note: If pending time out gets over and deployment not completed within the timeout frame, 
+it will show <code class="language-plaintext highlighter-rouge">Unsuccessful</code> status.</strong></p>
 
-<p>To define the endpoint in APPSeCONNECT, you need Actions and Entities. Actions are specifically targeted for an endpoint 
-while schema is the data needed to execute the API. Here, is the list of some of the pre-packaged API actions defined 
-for you which you can easily plug and play while doing your integrations.</p>
+<ol>
+  <li>
+    <p>You can view the <code class="language-plaintext highlighter-rouge">n</code> number of try  under <code class="language-plaintext highlighter-rouge">Number of tries</code> column you did to 
+deploy specific Process Flow to the selected environment.  Once deployed successfully, 
+the number of tries reset to zero.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Deployment Log</code>- column will have a link that will open the Deployment Log window. 
+The window will show the last deployment log that shows in the Tracker window.</p>
+  </li>
+</ol>
 
-<table>
-  <thead>
-    <tr>
-      <th>Endpoint</th>
-      <th>Action</th>
-      <th>Action Type</th>
-      <th>Schema</th>
-      <th>UI Path</th>
-      <th>API Path</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>customers</td>
-      <td>Customers</td>
-      <td>GET</td>
-      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=61f33b9c-5087-4481-8e86-a8155be71c51&amp;entityActionId=dde24ee9-0872-48f6-8593-8ca9ee6034f7&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51">Customers</a></td>
-      <td><a href="https://learnwoo.com/woocommerce-create-new-user-account/">Fetch customers from WooCommerce and post it to the destination Application</a></td>
-      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#retrieve-a-customer">customers</a></td>
-    </tr>
-    <tr>
-      <td>orders</td>
-      <td>Orders</td>
-      <td>GET</td>
-      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&amp;entityActionId=b50f33bd-7843-4e5d-a7e2-07ec2f696d46&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Orders</a></td>
-      <td><a href="https://docs.woocommerce.com/document/managing-orders/">Fetch the order from WooCommerce and post it to the destination Application</a></td>
-      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#retrieve-an-order">orders</a></td>
-    </tr>
-    <tr>
-      <td>orders</td>
-      <td>ORDERS</td>
-      <td>POST</td>
-      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=eecd4a6e-257e-4561-8f6d-c9ae13334ee4&amp;entityActionId=214fbbcb-91ab-417d-b576-f454517aee41&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Orders</a></td>
-      <td>Post Invoices to WooCommerce from any Source Application</td>
-      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#create-an-order">orders</a></td>
-    </tr>
-    <tr>
-      <td>products/productid</td>
-      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=fcb096e1-4372-4aaf-a24a-29a4a174d4a4&amp;entityActionId=9991a38f-2b00-4c4c-8ede-41febe22aac1&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Products</a></td>
-      <td>PUT</td>
-      <td>Products</td>
-      <td>Update Inventory in WooCommerce from Source Application</td>
-      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#update-a-product">products/productid</a></td>
-    </tr>
-    <tr>
-      <td>products</td>
-      <td>Products</td>
-      <td>POST</td>
-      <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=cbc4737b-e610-4beb-835c-da5f59e6a5e2&amp;entityId=fcb096e1-4372-4aaf-a24a-29a4a174d4a4&amp;entityActionId=3ccaef9e-d9f0-41d0-ac2b-3f71ea9ede27&amp;orgId=d21688a4-8967-48de-ae82-31dda565ec51&amp;IsFromPopup=False">Products</a></td>
-      <td>Post products in WooCommerce from any Source Application</td>
-      <td><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/#create-a-product">products</a></td>
-    </tr>
-  </tbody>
-</table>
+<p>Users will be able to un-deploy any process flow that has the status of <code class="language-plaintext highlighter-rouge">Successful or Unsuccessful</code>.</p>
 
-<p class="notice--info"><strong>Protip:</strong> Customers and Orders can be created and placed from the Front-End also. For Placing orders from front end, visit the E-Commerce store and follow the generic steps for placing orders and creating customers.
-this one.</p>
+<p>Thus the above given steps enable you to work with unfinished deployment of Processflow and <a href="">redeploy</a>
+it to your organization.</p>
+
+<p><strong>Note:Before redeploying, the agent will take backup of the previously 
+deployed XSLT of the specific Process Flow and process Flow database, along with dependent data. 
+If redeployment of the Process Flow fails, the agent will automatically restore backed up 
+configuration after pending time outs. Then after successful deployment, the deploy button
+will get enabled</strong></p>
+
 
                 
             </section>
@@ -2560,7 +2539,7 @@ this one.</p>
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-04T00:00:00+05:30">March 04, 2019</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-09-09T00:00:00+05:30">September 09, 2020</time></div>
                 
                 
   
@@ -2597,7 +2576,7 @@ this one.</p>
     
       
       
-      <a href="/connectors" class="page__taxonomy-item" rel="tag">Connectors</a>
+      <a href="/processflow" class="page__taxonomy-item" rel="tag">Processflow</a>
     
     </span>
   </p>
@@ -2609,13 +2588,13 @@ this one.</p>
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=WooCommerce%20https://docs.appseconnect.com%2Fconnectors%2Fwoocommerce%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Unfinished+Deployment%20https://docs.appseconnect.com%2Fprocessflow%2Funfinished-deployment%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fconnectors%2Fwoocommerce%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Funfinished-deployment%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fconnectors%2Fwoocommerce%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fprocessflow%2Funfinished-deployment%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fconnectors%2Fwoocommerce%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Funfinished-deployment%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
             
@@ -4906,14 +4885,62 @@ this one.</p>
                             
                             
                             
+                            <li>
+                                <a href="/processflow/working-with-revamped-merger/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Merger Node
+                                </a>
+                            </li>
+                            
                             
                             
                             
                             
                             <li>
-                                <a href="/connectors/zohobooks/" rel="permalink">
+                                <a href="/processflow/processflow-packaging-overview/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    ZohoBooks
+                                    Packaging Overview
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-package-sharing/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Package Sharing
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-package-installation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Viewing and Installing Shared Packages
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/processflow-packaging/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Process Flow Packaging
                                 </a>
                             </li>
                             
@@ -5005,12 +5032,6 @@ this one.</p>
                             
                             
                             
-                            <li>
-                                <a href="/connectors/Lightspeed/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Lightspeed
-                                </a>
-                            </li>
                             
                             
                             
@@ -5066,48 +5087,6 @@ this one.</p>
                             
                             
                             
-                            
-                            
-                            <li>
-                                <a href="/connectors/Troubleshooting-Rest/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Troubleshooting for Rest
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/Mapping-and-Transformation/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Mapping and Transformation
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/Filters-for-Integration/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Using Filters for Integration
-                                </a>
-                            </li>
                             
                             
                             
@@ -5638,8 +5617,8 @@ this one.</p>
 <script id="dsq-count-scr" src="https://docs-appseconnect-com.disqus.com/count.js" async></script>
 <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/connectors/woocommerce/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/connectors/woocommerce"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "http://localhost:4000/processflow/unfinished-deployment/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/processflow/unfinished-deployment"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

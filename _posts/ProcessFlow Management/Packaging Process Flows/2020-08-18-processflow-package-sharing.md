@@ -4,11 +4,11 @@ toc: true
 tag: developers
 category: "Processflow"
 menus: 
-   quickstartprocessflow:
+   packagesoverview:
         title: "Package Sharing"
-        weight: 7
+        weight: 3
         icon: fa fa-file-word-o
-        identifier: packagesharingprocessflow
+        identifier: packagesharing
 ---
 
 Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was to share with other organisations. As we encourage the concept of Citizen Integrators, so package sharing is an idea concept of sharing process with one organisation to another.
@@ -28,15 +28,15 @@ This document will enable you to initate sharing packages from one organisation 
 
 2) Expand the **Package Library** node and click on **My Packages**. The [package listing](/processflow/processflow-packaging/#listing-packages) page opens.
 
-![packageshare1](\staticfiles\processflow\media\packageshare1.PNG)
+![packageshare1](\staticfiles\processflow\media\packageshare1.PNG)  
 
 3) Click on the **Package** drop-down on the package listing page. You will be able to view two options: **SHARE** and **NEW**. Click on the Share button.
 
-![packageshare2](\staticfiles\processflow\media\packageshare2.PNG)
+![packageshare2](\staticfiles\processflow\media\packageshare2.PNG)  
 
 4) The Package Sharing windows opens. The package sharing window consists of the two sections: **Choose Package** and **Select Organisation**.
 
-![packageshare3](\staticfiles\processflow\media\packageshare3.PNG)
+![packageshare3](\staticfiles\processflow\media\packageshare3.PNG)  
 
 5) The Choose package window is divided mainly into two parts: Left Pane and Right Pane. The `Left Pane` will list all the folders under **Package Library**.
 The `Right Pane` will have two sections:

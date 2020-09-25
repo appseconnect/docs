@@ -2574,7 +2574,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Packaging Overview",
-      excerpt: "Process Flow Packaging Overview: Zipping up of multiple files in packages makes it easy to reuse and share with different...",
+      excerpt: "Zipping up of multiple files in packages makes it easy to reuse and share with different users. Huge set of...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 284
@@ -2591,11 +2591,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Unfinished Deployment",
+      excerpt: "Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 286
+    });
+    
+  
+    idx.add({
       title: "Q3 Release Version 4.7.0",
       excerpt: "Product Release Version: Release notes were published and last revised in September 2020. Updates in this release include New Feature...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 286
+      id: 287
     });
     
   
@@ -5744,7 +5753,7 @@ var store = [
       {
         "title": "Packaging Overview",
         "url": "/processflow/processflow-packaging-overview/",
-        "excerpt": "Process Flow Packaging Overview: Zipping up of multiple files in packages makes it easy to reuse and share with different...",
+        "excerpt": "Zipping up of multiple files in packages makes it easy to reuse and share with different users. Huge set of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5756,6 +5765,17 @@ var store = [
         "title": "Merger Node",
         "url": "/processflow/working-with-revamped-merger/",
         "excerpt": "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Unfinished Deployment",
+        "url": "/processflow/unfinished-deployment/",
+        "excerpt": "Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

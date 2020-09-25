@@ -4,11 +4,11 @@ toc: true
 tag: developers
 category: "Processflow"
 menus: 
-   quickstartprocessflow:
+   packagesoverview:
         title: "Shared Package Installation"
-        weight: 6
+        weight: 2
         icon: fa fa-file-word-o
-        identifier: packageinstallationprocessflow
+        identifier: viewingpackageinstallation
 ---
 
 Once you are shared with packages from other organisation, you need to install the packages before working with the process flows inside it.
@@ -19,7 +19,7 @@ This document will enable you to view and install incoming packages from other o
 - You need to have valid credential to the portal.
 - You need to have packages shared with you from other organisation. For more details on how to share packages, [click here](/processflow/processflow-packaging/).
 
-## Viewing Shared Packages:
+## Viewing Shared Packages
 
 1) Navigate to the Process Flow module, to view the [process flow listing](/processflow/processflow-listing-page/) page. 
 
@@ -100,11 +100,10 @@ Click on the **Install** button to install the package shared with you. **(Image
 Following the above process, you can successfully install the shared packages and execute the shared process flows within those packages.
 
 **Note:**
-
 - Installation is mandatory to use packaged Process Flows.
 - You cannot rename an installed folder after the installing the package. You will only get the `rename` option if the package that is being installed is having the `same name` under the folder `Installed Process Flows`.
 - All the node configurations and mapping done in process flow will be shared when sharing the package to other organisation. 
 - Modifications made in the process flows in source organisation _after the sharing_ , the changes will not reflect once the package is shared to an another organisation.
 - As Process flow doesn't stores any credentials, you will not have to worry about credentials vulnerability.
 - Process Flows that are shared, if deleted from the folder **Installed Process Flow**, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the **Process Flow** folder.
-- You cannot delete the Installed folders.
+- You cannot delete the Installed folders
