@@ -483,8 +483,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -507,8 +507,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -609,6 +609,12 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One-Service-Layer/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One-Service-Layer/" onclick="selectTab('/connectors/Sap-Business-One-Service-Layer/', event);" title="Go to SAP Business One Service Layer">SAP Business One Service Layer</a>
         
     </li>
     
@@ -2438,6 +2444,7 @@
 <ul>
   <li>To visit the ENVIRONMENT page in portal, navigate to <strong>Deploy &gt; Environments.</strong></li>
   <li>It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and older Agents can still communicate with server, we still ask users to upgrade to get full flavour of new features.</li>
+  <li>Users having On Premise agents upto <strong>4.3.0.12</strong> will be considered as Old Agents. Users having On Premise agent version <strong>4.4.0.0 and more</strong> will be considered as new agents.</li>
   <li>You must have Environment Management privilege to perform actions on the Environment Settings panel.</li>
   <li>By default, on landing up on the environment page, you will be selected with the hosted section. Scroll below to view more details on the Hosted section.</li>
   <li>Enviroments that are available on your organisation, will have the indicators that displays whether the agents are active or inactive for an On-Premise agent.
@@ -2459,13 +2466,13 @@
 
 <p>However, clicking the <strong>DOWNLOAD</strong> button will start the download process the On-Premise environment. <a href="/deployment/Deployment-Configuration/#on-premise-agent-configuration">Click Here</a> to know more about its installation process.</p>
 
-<p>2) If you already have the On-Premise agents installed, you will be getting the following view. <a href="/deployment/Easy-Environment-Management/#on-premise-environment-details-page">Click Here</a> to know more about the On-Premise environment details page.</p>
+<p>2) If you already have the On-Premise agents installed, you will be getting the following view. <a href="/deployment/Environment-Management/#on-premise-environment-details-page">Click Here</a> to know more about the On-Premise environment details page.</p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\openv2.PNG" alt="openv2" /></p>
 
 <p>To upgrade the On-Premise agent to the latest version, you will be required to download the latest agent. For more details on upgrading to the latest agent, <a href="/deployment/upgradation-and-migration/">Click Here</a>.</p>
 
-<p><strong>Note: To upgrade the On-Premise agent to the latest version, you will be required to download the latest agent. For more details on upgrading to the latest agent, <a href="/deployment/upgradation-and-migration/">Click Here</a>.You cannot start your On-Premise agent with running the Migration Tool, while upgrading to the latest on-Premise Environment.</strong></p>
+<p><strong>Note: To upgrade the On-Premise agent to the latest version, you will be required to download the latest agent. For more details on upgrading to the latest agent, <a href="/deployment/upgradation-and-migration/">Click Here</a>.</strong></p>
 
 <h3 id="on-premise-environment-details-page">On-Premise Environment Details page</h3>
 
@@ -2480,7 +2487,7 @@
 <ul>
   <li>Architecture in use</li>
   <li>The latest agent deployment version for the selected environment</li>
-  <li>Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually.</li>
+  <li>Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually. The time that would be displayed will be your browser time.</li>
   <li>APPSeCONNECT directory free space available</li>
   <li>CPU and Memory Usage display the dynamic data depending on the consumption rate.</li>
   <li>Agent Installation directory path</li>
@@ -2510,7 +2517,7 @@
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\opdetails4.PNG" alt="opdetails4" /></p>
 
-<p><strong><code class="language-plaintext highlighter-rouge">Settings</code> have three available sections for managing OP Agents:</strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">Settings</code> have four available sections for managing OP Agents:</strong></p>
 
 <p>1) Retry Setting - One can schedule resync of failed integrations, where you can provide the start time, 
    no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
@@ -2536,16 +2543,20 @@ stored in sql lite database and will be reflected in the log bucket.</li>
 <p>a)	Agent Output Path: This path provides the details of the transformed files when triggered manually.       <br />
 b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.</p>
 
-<p><img src="\staticfiles\deployment\media\EasyEnv\opdetails5.PNG" alt="opdetails5" />  <br />
-(Image of Realtime settings &amp; Diagnostics Settings)</p>
+<p><img src="\staticfiles\deployment\media\EasyEnv\opdetails5.PNG" alt="opdetails5" /></p>
 
 <p>After saving the changes in settings, the updated information gets auto-reflected in OP Agent.</p>
 
 <p><strong>Note:</strong></p>
 
-<p><strong>- Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.</strong></p>
-
-<p><strong>- The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.</strong></p>
+<ul>
+  <li>
+    <p><strong>Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.</strong></p>
+  </li>
+  <li>
+    <p><strong>The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.</strong></p>
+  </li>
+</ul>
 
 <h3 id="grouping-of-on-premise-environments">Grouping of On-Premise Environments</h3>
 <p>This section of the document will allow you to Group multiple OP environments in folders. Grouping is initiated to manage and the arrangement of multiple similar elements for distinguishing its exact purpose. In APPSeCONNECT, for On-Premise environments
@@ -2591,7 +2602,7 @@ Follow the process below to create folders for grouping.</p>
 
 <h2 id="hosted">Hosted</h2>
 
-<p>This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its <a href="/Easy-Environment-Management/#hosted-environment-details-page">Environment Details page</a></p>
+<p>This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its <a href="/deployment/Environment-Management/#create-hosted-environment">Environment Details page</a></p>
 
 <p>1) If you do not have the support of the Hosted (cloud) environment, you will get the following view.</p>
 
@@ -2603,7 +2614,7 @@ Follow the process below to create folders for grouping.</p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\hostedenv2.PNG" alt="hostedenv2" /></p>
 
-<p><a href="/deployment/Easy-Environment-Management/#create-hosted-environment">Click here</a> to know more about Hosted Environment creation.</p>
+<p><a href="/deployment/Environment-Management/#create-hosted-environment">Click here</a> to know more about Hosted Environment creation.</p>
 
 <p><strong>Note:</strong> There can be scenarios where you may have an hosted environment present, yet clicking on the HOSTED section it displays <strong>Your organisation is not cloud enabled</strong> and
 your Hosted agent will be in <strong>GREYED form</strong> and clicking on the environment, will also display <strong>Your organisation is not cloud enabled</strong>. For such cases, you will have to enable
@@ -2639,11 +2650,17 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
 
 <p><strong>Note:</strong></p>
 
-<p><strong>- Every organisation can have only one Hosted environment created.</strong></p>
-
-<p><strong>- You cannot rename the name of the created hosted environment.</strong></p>
-
-<p><strong>- You cannot group environments in folders in the HOSTED section.</strong></p>
+<ul>
+  <li>
+    <p><strong>Every organisation can have only one Hosted environment created.</strong></p>
+  </li>
+  <li>
+    <p><strong>You cannot rename the name of the created hosted environment.</strong></p>
+  </li>
+  <li>
+    <p><strong>You cannot group environments in folders in the HOSTED section.</strong></p>
+  </li>
+</ul>
 
 <h3 id="hosted-environment-details-page">Hosted Environment Details page</h3>
 
@@ -2739,10 +2756,13 @@ This section of the document will allow to attach/detach your environments. You 
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\detach4.PNG" alt="detach4" /></p>
 
-<p><strong>Note:</strong>
-<strong>- On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.</strong>
-<strong>- Detached Agents, needs to be reattached from the portal for further logging in to it.</strong>
-<strong>- Users can anytime delete and detach/attach an inactive agent in the portal.</strong></p>
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li><strong>On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.</strong></li>
+  <li><strong>Detached Agents, needs to be reattached from the portal for further logging in to it.</strong></li>
+  <li><strong>Users can anytime delete and detach/attach an inactive agent in the portal.</strong></li>
+</ul>
 
 <h3 id="deleting-environments">Deleting Environments</h3>
 
@@ -2773,6 +2793,8 @@ details of the environment.</p>
 
 <p>Old agent will support the complete functionality of the integration process. Old Agent user shall view the environment as given below:
 <img src="/staticfiles/deployment/media/RevampedEnv/old-environment1.png" alt="old-environment1" /></p>
+
+<p><em><strong>Note: Users having On Premise agents upto **4.3.0.12</strong> will be considered as Old Agents.**</em></p>
 
 <p>The UI will have three buttons:</p>
 <ul>
@@ -5164,8 +5186,18 @@ Real Time settings has two field for the configurations:</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

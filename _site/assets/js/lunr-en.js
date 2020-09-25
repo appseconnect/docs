@@ -2608,6 +2608,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "SAP Business One Service Layer",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 288
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -5787,6 +5796,17 @@ var store = [
         "title": "Q3 Release Version 4.7.0",
         "url": "/release-notes/2020-Q3/",
         "excerpt": "Product Release Version: Release notes were published and last revised in September 2020. Updates in this release include New Feature...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAP Business One Service Layer",
+        "url": "/connectors/Sap-Business-One-Service-Layer/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -483,8 +483,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -507,8 +507,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -609,6 +609,12 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One-Service-Layer/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One-Service-Layer/" onclick="selectTab('/connectors/Sap-Business-One-Service-Layer/', event);" title="Go to SAP Business One Service Layer">SAP Business One Service Layer</a>
         
     </li>
     
@@ -2391,7 +2397,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -2446,17 +2452,18 @@ Flow. The field for providing the Description to the process flow is an optional
 
 <ul>
   <li>Play button: The play button will allow you to execute the saved version of the process flow.</li>
-  <li>Tracker button: You can view the execution status and messages related to execution process in the Tracker Window.</li>
+  <li>Tracker button: You can view the execution status and messages related to execution process in the Tracker Window. The deployment and execution logs will be displayed in the tracker window.</li>
   <li>Delete button: The delete button will allow to delete the selected Nodes and link in the Process Flow. You will get a confirmation pop-up for the delete operation of the workflow.</li>
   <li>Zoom in: You can zoom in the Process Flows for better viewing purpose.</li>
   <li>Zoom out: You can zoom out the Process Flow for better user experience. Users can also resize the screen accordingly.</li>
+  <li>Link Order: YOu can sequence your execution order of your process flow. On clicking the <a href="/processflow/link-order-sequencing/">Link Order</a> button, the order sequence window configuration window opens.</li>
+  <li>To view the screen in full screen mode, click the Button for Full Screen.</li>
+  <li>You will have the option adjust the screen resolution to 100%, 50% &amp; 25% &amp; Fit to Screen as per the need.</li>
+  <li>Save: The save button allows you to save the following Process Flow for later use. You can edit the Process Flows anytime by clicking the edit button available in the Process Flow listing Page.</li>
+  <li>Delete: You can view this button beside the <strong>SAVE</strong> button that will allow you to <a href="/processflow/delete-processflow/">delete</a> the complete process flow.</li>
 </ul>
 
-<p>To view the screen in full screen mode, click the Button for Full Screen.
-You can also adjust the screen resolution to 100%, 50% &amp; 25% &amp; Fit to Screen as per the need.
-Save: The save button allows you to save the following Process Flow for later use. You can edit the Process Flows anytime by clicking the edit button available in the Process Flow listing Page.</p>
-
-<p>You can view the Back to Process Flow button that will navigate you to the listing page.</p>
+<p>You can view the <strong>Back to Process Flow</strong> button that will navigate you to the <a href="/processflow/processflow-listing-page/">listing page</a>.</p>
 
 <h2 id="process-flow-left-panel">Process Flow Left Panel</h2>
 <p>Here the users can add Process Flows nodes to the Process Flow designer panel. The nodes
@@ -2468,11 +2475,15 @@ following tabs and menus in the left panel of the page.</p>
 2)  Start:  This node initiates the start of the execution of the Process Flow.
 3)	End: This node depicts the completion of the Process Flow.<br />
 4)	<a href="/processflow/working-with-mapper/">Mapper</a>: This node allows you to map the applications used in the Process flow.     <br />
-5)	<a href="/processflow/processflow-app/">Apps</a>: You can view two tabs on expanding <strong>Apps</strong>: <code class="language-plaintext highlighter-rouge">Pre-prackaged apps</code> &amp; <code class="language-plaintext highlighter-rouge">My Apps</code>. 
-    <strong>- Pre-packaged Apps:</strong> You will be able to view all the pre-packaged apps available for your organisation as per the plan.
-    <strong>- My Apps:</strong> You can view all the custom and the technology apps created in your organisation.
-On dragging the applications to the designer panel, the node configuration window would appear.    <br />
-6)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector. <br />
+5)	<a href="/processflow/processflow-app/">Apps</a>: You can view two tabs on expanding <strong>Apps</strong>: <code class="language-plaintext highlighter-rouge">Pre-prackaged apps</code> &amp; <code class="language-plaintext highlighter-rouge">My Apps</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- **Pre-packaged Apps:** You will be able to view all the pre-packaged apps available for your organisation as per the plan.
+- **My Apps:** You can view all the custom and the technology apps created in your organisation.
+</code></pre></div></div>
+
+<p>On dragging the applications to the designer panel, the node configuration window would appear.</p>
+
+<p>6)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector. <br />
 7)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.<br />
 8)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.</p>
 
@@ -4834,8 +4845,18 @@ you can view all the node that can applied for designing the process flow.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             

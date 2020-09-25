@@ -483,8 +483,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -507,8 +507,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -609,6 +609,12 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One-Service-Layer/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One-Service-Layer/" onclick="selectTab('/connectors/Sap-Business-One-Service-Layer/', event);" title="Go to SAP Business One Service Layer">SAP Business One Service Layer</a>
         
     </li>
     
@@ -2391,7 +2397,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
                 
                 
@@ -2404,16 +2410,18 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#process-flow-listing-for-each-folder">Process flow listing for each folder</a></li>
-  <li><a href="#usability-for-the-process-flow-folder">Usability for the Process Flow Folder</a></li>
-  <li><a href="#usability-for-the-subchild-folder">Usability for the SUB/CHILD Folder</a>
+  <li><a href="#process-flow-listing-page">Process flow listing Page</a></li>
+  <li><a href="#process-flow-folder">Process Flow Folder</a>
     <ul>
+      <li><a href="#usability-for-the-subchild-folder">Usability for the SUB/CHILD Folder</a></li>
       <li><a href="#steps-to-create-child-folders-in-the-listing-page">Steps to create Child Folders in the listing page</a></li>
+      <li><a href="#steps-to-rename-a-created-folder">Steps to Rename a Created Folder</a></li>
+      <li><a href="#steps-to-delete-a-created-folder">Steps to Delete a Created Folder</a></li>
     </ul>
   </li>
-  <li><a href="#steps-to-rename-a-created-folder">Steps to Rename a Created Folder</a></li>
-  <li><a href="#steps-to-delete-a-created-folder">Steps to Delete a Created Folder</a></li>
-  <li><a href="#usability-for-the-trash-folder">Usability for the Trash Folder</a></li>
+  <li><a href="#installed-process-flows-folder">Installed Process Flows folder</a></li>
+  <li><a href="#package-library-folder">Package Library folder</a></li>
+  <li><a href="#trash-folder">Trash Folder</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2427,7 +2435,7 @@ By default, an organisation would have the following folders created <code class
 
 <p><img src="\staticfiles\processflow\media\listingoverviewscreen.png" alt="listingpageoverview" /></p>
 
-<h2 id="process-flow-listing-for-each-folder">Process flow listing for each folder</h2>
+<h2 id="process-flow-listing-page">Process flow listing Page</h2>
 
 <ol>
   <li>Click on the Process Flow folder or any other folder. The listing page for the selected folder is displayed on the right side of the page.<br />
@@ -2440,7 +2448,7 @@ By default, an organisation would have the following folders created <code class
       <li>Action: Clicking the three horizontal dots against each process flow, user gets the options to Edit &amp; Delete the exiting Process Flow.</li>
     </ul>
   </li>
-  <li>Click Edit Button, the Designer page opens for the selected Process Flow for editing. <br />
+  <li>Click Edit Button, the <strong><a href="/processflow/designer-processflow/">Designer page</a></strong> opens for the selected Process Flow for editing. <br />
 <img src="/staticfiles/processflow/media/processflowlisting-page2.png" alt="processflowlisting-page2" /></li>
   <li>Click Delete button, the selected Process Flow is moved to the Trash folder.<br />
 <img src="/staticfiles/processflow/media/processflowlisting-page3.png" alt="processflowlisting-page3" /></li>
@@ -2451,7 +2459,7 @@ you will be navigated to the <a href="/processflow/designer-processflow/">Proces
   <li>The FILTER button is available beside the new button. Click on the button, you can filter process flows using search functionality, from the list.</li>
 </ol>
 
-<h2 id="usability-for-the-process-flow-folder">Usability for the Process Flow Folder</h2>
+<h2 id="process-flow-folder">Process Flow Folder</h2>
 
 <p>On visiting the Process Flow listing page, you can view the Home folder. This 
 is a default folder and every organisation within APPSeCONNECT would contain the 
@@ -2469,7 +2477,7 @@ Right side of  the page. Empty folder will have the view as given below.
   <li>Now Click on <a href="/processflow/creating-and-designing-processflow/">Create a Process Flow</a> button, the Process Flow Designer page opens.</li>
 </ol>
 
-<h2 id="usability-for-the-subchild-folder">Usability for the SUB/CHILD Folder</h2>
+<h3 id="usability-for-the-subchild-folder">Usability for the SUB/CHILD Folder</h3>
 
 <ul>
   <li>Every folder (except Trash) will have three horizontal dots (…) that will enable the you to create new child folders.</li>
@@ -2500,7 +2508,7 @@ h.	Folders on deleting would be moved to Trash with a toaster message for succes
 Name of a folder cannot be same if created on same level. However, folder name can 
 remain same if created on different level.</strong></p>
 
-<h2 id="steps-to-rename-a-created-folder">Steps to Rename a Created Folder</h2>
+<h3 id="steps-to-rename-a-created-folder">Steps to Rename a Created Folder</h3>
 
 <ol>
   <li>You can rename a created folder by choosing the option Rename available under
@@ -2516,7 +2524,7 @@ be available in the Process Flow List.  <br />
 <p><strong>The functionality for renaming is available only for the folders that are created by the user.
 The default folders (Home &amp; Trash) cannot be renamed or deleted.</strong></p>
 
-<h2 id="steps-to-delete-a-created-folder">Steps to Delete a Created Folder</h2>
+<h3 id="steps-to-delete-a-created-folder">Steps to Delete a Created Folder</h3>
 
 <p>1) You can delete any created folders by choosing the option delete, available in the 
 drop-down of the selected folder.<br />
@@ -2532,7 +2540,28 @@ for the selected folder under Trash. User gets a Confirmation message for deleti
 <img src="/staticfiles/processflow/media/processflow-listing12.png" alt="processflow-listing12" />   <br />
 5) Clicking on the Yes button will delete the folder, its process flows and Child folders permanently.</p>
 
-<h2 id="usability-for-the-trash-folder">Usability for the Trash Folder</h2>
+<h2 id="installed-process-flows-folder">Installed Process Flows folder</h2>
+
+<p>This folder will store the incoming installed packages shared to your organisation. Incoming Packages when installed will be available in the <strong>Installed Process Flow</strong> folder.
+The folder will have sub folders created while installing packages, with the same name as that of the installed package.</p>
+
+<p>To know more on Installed Process Flows, <a href="/processflow/processflow-package-installation/">Click Here</a></p>
+
+<h2 id="package-library-folder">Package Library folder</h2>
+
+<p>This folder will list you with two Sub-Folders: <strong>My Packages</strong> &amp; <strong>Shared With Me</strong>. Clicking on the <strong>Package Library</strong>, you will be shown the summary of packages you have create and shared in both the Sub-folders.</p>
+
+<p>The Sub-Folders will enable you to perform the following functionalities:</p>
+
+<p>1) My Packages: This folder will allow you to Create, Share and View packages created by you on your organisation.</p>
+
+<p>2) Shared With Me: This folder will allow you to view, installed all incoming packages that are shared with you.</p>
+
+<p>To know more on packaging of process flows, <a href="/processflow/processflow-packaging-overview/">Click Here</a></p>
+
+<p><img src="\staticfiles\processflow\media\sharedlistingpage1.PNG" alt="sharedlistingpage1" /></p>
+
+<h2 id="trash-folder">Trash Folder</h2>
 
 <p>a. You can view the Home &amp; Trash folder in the Process Flow Listing Page. Both the Home &amp; the Trash Folder would be available on the same hierarchy level.   <br />
 b.	On the listing page, you will be able to view the Trash folder that contains all the deleted folders      <br />
@@ -2541,8 +2570,8 @@ c.	Click on the Ellipsis (…) beside the Trash folder, you  can view the button
 d.	Click on the button Empty Trash Folder, you will get a confirmation message. Click on the yes button for deleting all the folder and process flows permanently.<br />
  <img src="../../staticfiles/processflow/media/trashfolder2.png" alt="Trashfolder2" /></p>
 
-<p><strong>Note: You cannot create any child folders under Trash.
-      Default Folders can neither be Renamed nor Deleted.</strong></p>
+<p><strong>Note: You cannot create any child folders under Trash. Default Folders can neither be Renamed nor Deleted.</strong></p>
+
 
                 
             </section>
@@ -4885,8 +4914,18 @@ d.	Click on the button Empty Trash Folder, you will get a confirmation message. 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
