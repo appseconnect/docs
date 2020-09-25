@@ -22,7 +22,6 @@ aids you to check the status of unfinished deployment in the portal itself, and 
 2) Cloud Agent Services Down  
 3) Autosync Stopped working during deployment.
 
-
 ### Prerequisites 
 
 1.	Should have valid credentials for logging in to the APPSeCONNECT portal.
@@ -65,11 +64,11 @@ to track the last deployment logs at any time and also, when the process flow ge
 11. The deployment status of a processflow is vsible under `Status` section. 
 You can view the following deployment status 
 
-(a) Successful – Here the Deployment is executed successfully without any error. 
+(a) Successful - Here the Deployment is executed successfully without any error. 
 
-(b) Pending – Here the deployment process started but remains incomplete.  
+(b) Pending - Here the deployment process started but remains incomplete.  
   
- * `Pending time out`  is configurable from [environment]() *settings* in the portal.   
+ * `Pending time out`  is configurable from [environment](/deployment/Environment-Management/) *settings* in the portal.   
  * Here the Time out for Pending is in a range within 5 mint to 60 mints. Default Pending time out 
    for the field will be 5 mints.
  * During the deployment process, if the disconnected agent from cloud gets reconnected
