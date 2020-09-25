@@ -29,7 +29,7 @@ defined Schema, Attributes and Actions associated with it.
 
 To view the listing of Schemas and Attribute,  navigate to the following section:   
 
-(a) Go to Portal and click on Process Flow module.
+(a) Go to Portal and Navigate to **Designer > Process Flow** module.
 
 (b) Go to [desiger](/processflow/designer-processflow/) section and Drag the required App Node.
 

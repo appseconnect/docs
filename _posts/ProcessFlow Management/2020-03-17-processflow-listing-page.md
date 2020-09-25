@@ -29,7 +29,7 @@ By default, an organisation would have the following folders created `Process Fl
 * Name: Displays the name of the process flows.  
 * Description: Displays the description of the Process Flows.   
 * Action: Clicking the three horizontal dots against each process flow, user gets the options to Edit & Delete the exiting Process Flow.     
-4. Click Edit Button, the Designer page opens for the selected Process Flow for editing.   
+4. Click Edit Button, the **[Designer page](/processflow/designer-processflow/)** opens for the selected Process Flow for editing.   
 ![processflowlisting-page2](/staticfiles/processflow/media/processflowlisting-page2.png)       
 5. Click Delete button, the selected Process Flow is moved to the Trash folder.  
 ![processflowlisting-page3](/staticfiles/processflow/media/processflowlisting-page3.png)      
@@ -115,6 +115,24 @@ for the selected folder under Trash. User gets a Confirmation message for deleti
 ![processflow-listing12](/staticfiles/processflow/media/processflow-listing12.png)     
 5) Clicking on the Yes button will delete the folder, its process flows and Child folders permanently.     
 
+## Usability of Installed Process Flows folder
+
+This folder will store the incoming installed packages shared to your organisation. Incoming Packages when installed will be available in the **Installed Process Flow** folder.
+The folder will have sub folders created while installing packages, with the same name as that of the installed package. 
+
+To know more on Installed Process Flows, [Click Here](/processflow/processflow-package-installation/)
+
+## Usability of Package Library folder
+
+This folder will list you with two Sub-Folders: **My Packages** & **Shared With Me**. Clicking on the **Package Library**, you will be shown the summary of packages you have create and shared in both the Sub-folders.
+The Sub-Folders will enable you to perform the following functionalities:
+1) My Packages: This folder will allow you to Create, Share and View packages created by you on your organisation.
+2) Shared With Me: This folder will allow you to view, installed all incoming packages that are shared with you.
+
+To know more on packaging of process flows, [Click Here](/processflow/processflow-packaging-overview/)
+
+![sharedlistingpage1](\staticfiles\processflow\media\sharedlistingpage1.PNG)
+
 ## Usability for the Trash Folder 
 
 a. You can view the Home & Trash folder in the Process Flow Listing Page. Both the Home & the Trash Folder would be available on the same hierarchy level.     
@@ -124,5 +142,6 @@ c.	Click on the Ellipsis (...) beside the Trash folder, you  can view the button
 d.	Click on the button Empty Trash Folder, you will get a confirmation message. Click on the yes button for deleting all the folder and process flows permanently.  
  ![Trashfolder2](../../staticfiles/processflow/media/trashfolder2.png)
 
-**Note: You cannot create any child folders under Trash.
-      Default Folders can neither be Renamed nor Deleted.** 
+**Note: You cannot create any child folders under Trash. Default Folders can neither be Renamed nor Deleted.** 
+
+

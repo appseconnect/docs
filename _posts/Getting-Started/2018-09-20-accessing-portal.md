@@ -38,7 +38,7 @@ This section will allow you to take off with the intergation features of the APP
 or you can even select a pre-packaged template that will enable to adjust and edit the pre-designed templates as per your business process.
 The HOME page will provide you with the PLAN details for your organisation . YOu will be provided with the count for the Number of Projects and Packages available on your organisation.
 
-![Home1]()
+![Home1](\staticfiles\root\media\home1.PNG)
 
 ## Designer
 
@@ -333,10 +333,11 @@ This section will assist and connect the user with APPSeCONNECT Docs and Communi
 Users can also connect with our [Community Portal](https://community.appseconnect.com/) for instant help and support for APPSeCONNECT. Having connected with our community portal enables you to stay in connect with latest discussions and solutions.
 Common helps and reference support documents is also provided to the user when navigating to the HELP section. Incase of major support, you can anytime raise [TICKETS](https://appseconnect.freshdesk.com/) for to avail our In-House Customer Support.
 
+![Help1](\staticfiles\root\media\help1.PNG)
+
 Users can aslo study and view the latest updates and Hotfixes provided for APPSeCONNECT. You can anytime visit the latest Release Notes in the **What's New** section of the HELP page that keeps you updated with our every releases and updates.
 
-![Help1]()
-
+![Help2](\staticfiles\root\media\help2.PNG)
 
 
 ## Managing Customer Profile 

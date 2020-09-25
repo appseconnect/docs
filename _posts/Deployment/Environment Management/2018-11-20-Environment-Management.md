@@ -14,6 +14,7 @@ menus:
 
 * To visit the ENVIRONMENT page in portal, navigate to **Deploy > Environments.**
 * It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and older Agents can still communicate with server, we still ask users to upgrade to get full flavour of new features. 
+* Users having On Premise agents upto **4.3.0.12** will be considered as Old Agents. Users having On Premise agent version **4.4.0.0 and more** will be considered as new agents. 
 * You must have Environment Management privilege to perform actions on the Environment Settings panel.
 * By default, on landing up on the environment page, you will be selected with the hosted section. Scroll below to view more details on the Hosted section.
 * Enviroments that are available on your organisation, will have the indicators that displays whether the agents are active or inactive for an On-Premise agent.
@@ -31,13 +32,13 @@ By default, you will be on the On-Premise section, when landing in the environme
 
 However, clicking the **DOWNLOAD** button will start the download process the On-Premise environment. [Click Here](/deployment/Deployment-Configuration/#on-premise-agent-configuration) to know more about its installation process.
 
-2) If you already have the On-Premise agents installed, you will be getting the following view. [Click Here](/deployment/Easy-Environment-Management/#on-premise-environment-details-page) to know more about the On-Premise environment details page.
+2) If you already have the On-Premise agents installed, you will be getting the following view. [Click Here](/deployment/Environment-Management/#on-premise-environment-details-page) to know more about the On-Premise environment details page.
 
 ![openv2](\staticfiles\deployment\media\EasyEnv\openv2.PNG)
 
 To upgrade the On-Premise agent to the latest version, you will be required to download the latest agent. For more details on upgrading to the latest agent, [Click Here](/deployment/upgradation-and-migration/).
 
-**Note: To upgrade the On-Premise agent to the latest version, you will be required to download the latest agent. For more details on upgrading to the latest agent, [Click Here](/deployment/upgradation-and-migration/).You cannot start your On-Premise agent with running the Migration Tool, while upgrading to the latest on-Premise Environment.**
+**Note: To upgrade the On-Premise agent to the latest version, you will be required to download the latest agent. For more details on upgrading to the latest agent, [Click Here](/deployment/upgradation-and-migration/).**
 
 ### On-Premise Environment Details page
 
@@ -51,7 +52,7 @@ This section of the document will allow you to view and understand the details o
 
 * Architecture in use
 * The latest agent deployment version for the selected environment
-* Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually.  
+* Agent last restart time is default 03:49 for all organizations who are using OP Agent. On its restart, the Enable Environment(Autosync) should also restart automatically. However, you can view a dynamic time of agent restart if restarted manually. The time that would be displayed will be your browser time. 
 * APPSeCONNECT directory free space available
 * CPU and Memory Usage display the dynamic data depending on the consumption rate.
 * Agent Installation directory path
@@ -78,7 +79,7 @@ This section of the document will allow you to view and understand the details o
 
 ![opdetails4](\staticfiles\deployment\media\EasyEnv\opdetails4.PNG)
 
-**`Settings` have three available sections for managing OP Agents:**
+**`Settings` have four available sections for managing OP Agents:**
 
 1) Retry Setting - One can schedule resync of failed integrations, where you can provide the start time, 
    no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
@@ -103,15 +104,15 @@ a)	Agent Output Path: This path provides the details of the transformed files wh
 b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.       
 
 ![opdetails5](\staticfiles\deployment\media\EasyEnv\opdetails5.PNG)    
-(Image of Realtime settings & Diagnostics Settings)
+
 
 After saving the changes in settings, the updated information gets auto-reflected in OP Agent. 
 
 **Note:**
 
-**- Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.**
+- **Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.**
 
-**- The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.**
+- **The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.**
 
 
 ### Grouping of On-Premise Environments
@@ -155,7 +156,7 @@ Following the above process you can easily create and group your On Premise Envi
 
 ## Hosted 
 
-This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its [Environment Details page](/Easy-Environment-Management/#hosted-environment-details-page)
+This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its [Environment Details page](/deployment/Environment-Management/#create-hosted-environment)
 
 1) If you do not have the support of the Hosted (cloud) environment, you will get the following view. 
 
@@ -167,7 +168,7 @@ To enable your organisation with cloud support, [Click here.](/deployment/Deploy
 
 ![hostedenv2](\staticfiles\deployment\media\EasyEnv\hostedenv2.PNG)
 
-[Click here](/deployment/Easy-Environment-Management/#create-hosted-environment) to know more about Hosted Environment creation. 
+[Click here](/deployment/Environment-Management/#create-hosted-environment) to know more about Hosted Environment creation. 
 
 **Note:** There can be scenarios where you may have an hosted environment present, yet clicking on the HOSTED section it displays **Your organisation is not cloud enabled** and
 your Hosted agent will be in **GREYED form** and clicking on the environment, will also display **Your organisation is not cloud enabled**. For such cases, you will have to enable
@@ -201,11 +202,11 @@ For more details on the Environment Details page, [Click Here](/deployment/Easy-
 
 **Note:**
 
-**- Every organisation can have only one Hosted environment created.**
+- **Every organisation can have only one Hosted environment created.**
 
-**- You cannot rename the name of the created hosted environment.**
+- **You cannot rename the name of the created hosted environment.**
 
-**- You cannot group environments in folders in the HOSTED section.**
+- **You cannot group environments in folders in the HOSTED section.**
 
 ### Hosted Environment Details page
 
@@ -293,9 +294,10 @@ This section of the document will allow to attach/detach your environments. You 
 ![detach4](\staticfiles\deployment\media\EasyEnv\detach4.PNG)
 
 **Note:**
-**- On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.**
-**- Detached Agents, needs to be reattached from the portal for further logging in to it.**
-**- Users can anytime delete and detach/attach an inactive agent in the portal.** 
+
+- **On detaching the Agent from portal, the On-Premise Agent automatically gets shut down.**
+- **Detached Agents, needs to be reattached from the portal for further logging in to it.**
+- **Users can anytime delete and detach/attach an inactive agent in the portal.** 
 
 ### Deleting Environments
 
@@ -326,6 +328,8 @@ details of the environment.
 
 Old agent will support the complete functionality of the integration process. Old Agent user shall view the environment as given below:
 ![old-environment1](/staticfiles/deployment/media/RevampedEnv/old-environment1.png)
+
+_**Note: Users having On Premise agents upto **4.3.0.12** will be considered as Old Agents.**_
 
 The UI will have three buttons:
 * Deploy Configuration: Any changes or modifications made in the portal will be deployed to the OP agent for the sync process when deployed the configurations from the portal. 
