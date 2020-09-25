@@ -6,7 +6,7 @@ category: "Rule"
 menus: 
     header:
         title: "Rule"
-        weight: 13
+        weight: 12
         icon: fa fa-wpexplorer
         identifier: overviewrule
 ---
