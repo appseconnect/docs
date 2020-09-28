@@ -2397,7 +2397,7 @@
 
 
 
-  6 minute read
+  8 minute read
 </p>
                 
                 
@@ -2411,14 +2411,26 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites-to-deploy-process-flows">Prerequisites to deploy Process Flows</a></li>
-  <li><a href="#steps-to-deploy-process-flows-to-environment">Steps to deploy Process Flows to Environment</a></li>
-  <li><a href="#process-to-configure-schedule-sync---auto--manual">Process to configure schedule Sync - Auto &amp; Manual</a></li>
-  <li><a href="#process-to-configure-retry---auto--manual">Process to configure Retry - Auto &amp; Manual</a></li>
-  <li><a href="#executing-deployed-process-flow">Executing Deployed Process Flow</a></li>
-  <li><a href="#deploying-process-flows-to-environment">Deploying Process Flows to Environment</a></li>
-  <li><a href="#undeploy-process-flow-from-environment">Undeploy Process Flow from Environment</a></li>
-  <li><a href="#impact-of-undeploying-processflow-from-on-premise-agent">Impact of Undeploying Processflow from On-Premise Agent</a></li>
-  <li><a href="#impact-of-undeploying-processflow-from-cloud-agent">Impact of Undeploying Processflow from Cloud Agent</a></li>
+  <li><a href="#steps-to-deploy-process-flows-to-environment">Steps to deploy Process Flows to Environment</a>
+    <ul>
+      <li><a href="#select-environment">Select Environment</a></li>
+      <li><a href="#set-up-connection">Set up Connection</a></li>
+      <li><a href="#select-lookups">Select Lookups</a></li>
+      <li><a href="#sync-and-retry">Sync and Retry</a></li>
+    </ul>
+  </li>
+  <li><a href="#executing-deployed-process-flow">Executing Deployed Process Flow</a>
+    <ul>
+      <li><a href="#steps-to-execute-a-process-flow">Steps to execute a Process Flow</a></li>
+    </ul>
+  </li>
+  <li><a href="#deployed-process-flows-in-environment">Deployed Process Flows in Environment</a></li>
+  <li><a href="#undeploy-process-flow-from-environment">Undeploy Process Flow from Environment</a>
+    <ul>
+      <li><a href="#impact-of-undeploying-processflow-from-on-premise-agent">Impact of Undeploying Processflow from On-Premise Agent</a></li>
+      <li><a href="#impact-of-undeploying-processflow-from-cloud-agent">Impact of Undeploying Processflow from Cloud Agent</a></li>
+    </ul>
+  </li>
 </ul>
                     </nav>
                 </aside>
@@ -2428,102 +2440,158 @@ Users, now need not have to update configuration every time for deploying every 
 <code class="language-plaintext highlighter-rouge">DEPLOY</code> button enables the user to automatically deploy the changes in the environment as well as assign the 
 credential for the applications that is used in the Process Flows.</p>
 
-<h3 id="prerequisites-to-deploy-process-flows">Prerequisites to deploy Process Flows</h3>
+<h2 id="prerequisites-to-deploy-process-flows">Prerequisites to deploy Process Flows</h2>
 
-<ol>
-  <li>Should have valid credentials for logging in to the APPSeCONNECT portal.</li>
-  <li><a href="/processflow/processflow-app/">APPS</a> should be chosen from the apps section, for proceeding with the design of Process Flows.</li>
-  <li>The <a href="/processflow/designer-processflow/">designed</a> Process Flow should be saved before deploying it to the environment.</li>
-  <li>If you are deploying the process flow to the On-Premise environment, you need to check the <code class="language-plaintext highlighter-rouge">Enable Environment</code> checkbox in the Agent Settings as Active.</li>
-</ol>
+<p>1)	Should have valid credentials for logging in to the APPSeCONNECT portal.</p>
 
-<h3 id="steps-to-deploy-process-flows-to-environment">Steps to deploy Process Flows to Environment</h3>
-<ol>
-  <li>Login to the portal and navigate to the Process Flow module available on the left menu.</li>
-  <li>Choose the Process Flow which is already designed and was saved or you can <a href="/processflow/creating-processflow/">create a process flow</a></li>
-  <li>Click on the <code class="language-plaintext highlighter-rouge">edit button</code> available for the selected Process Flow, which will navigate the user to the 
-Process Flow Designing Page.<br />
- <img src="../../staticfiles/processflow/media/deploy-processflow2.png" alt="Deploy Processflow2" /></li>
-  <li>Click on the <code class="language-plaintext highlighter-rouge">deploy button</code> in the Process Flow Designing Page.<br />
- <strong>Note: You can view some explained steps on the Right Side of the Deploy Wizard in the How it 
-Works section, that will help you deploy your process flow successfully.</strong></li>
-  <li>The Deploy wizard opens on clicking the <code class="language-plaintext highlighter-rouge">Deploy</code> button. The deploy wizard is divided in to three sections.
-    <ul>
-      <li>Select Environment: You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.</li>
-      <li>Set up Connection: You need to select the credential for the applications selected in the process flow provided in the Agent.</li>
-      <li>Select lookups: You need to fix up the lookups mapped for the attribute in the mapper node.</li>
-      <li>Sync &amp; Retry: You need to configure the Manual/Auto  &amp; Retry execution of the Process Flow.<br />
-<img src="../../staticfiles/processflow/media/deploy-processflow3.png" alt="Deploy Processflow3" /> 
-(a) Now choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button.</li>
-      <li>You need to install the agent if you do not have an installed <a href="/deployment/Deployment-Configuration/#on-premise-agent-configuration">Environment</a>. For more Enviroment related details, <a href="/deployment/Environment-Management/">Click Here</a>.</li>
-      <li>As per the selected type of environment, you need to select an environment from the list of environments in the drop down.</li>
-    </ul>
-  </li>
-</ol>
+<p>2)	<a href="/processflow/processflow-app/">APPS</a> should be chosen from the apps section, for proceeding with the design of Process Flows.</p>
 
-<p>(b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment.
-<img src="../../staticfiles/processflow/media/deploy-processflow4.png" alt="Deploy Processflow4" /> <br />
-(c) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. <br />
- <img src="../../staticfiles/processflow/media/deploy-processflow5.png" alt="Deploy Processflow5" />
-(d)Provide the credentials in the App Configuration section of the On-Premise Agent. You can view the <a href="/connectors/Overview-of-Connectors/">pre-packaged applications</a>.
-<img src="../../staticfiles/processflow/media/deploy-processflow6.png" alt="Deploy Processflow6" />
-(e) Click  the <code class="language-plaintext highlighter-rouge">Refresh Connection button</code>. You will get the latest credentials or updates to credentials made in the OP Agent. Click on the NEXT button.
-<img src="../../staticfiles/processflow/media/deploy-processflow7.png" alt="Deploy Processflow7" /> 
-(f) The screen navigates to the lookup section of the Wizard, wherḍe you are required to fix the lookups if provided while mapping the attributes.
-<img src="../../staticfiles/processflow/media/deploy-processflow8.png" alt="Deploy Processflow8" /></p>
+<p>3)	The <a href="/processflow/designer-processflow/">designed</a> Process Flow should be saved before deploying it to the environment.</p>
+
+<p>4)  If you are deploying the process flow to the On-Premise environment, you need to check the <code class="language-plaintext highlighter-rouge">Enable Environment</code> checkbox in the Agent Settings as Active.</p>
+
+<h2 id="steps-to-deploy-process-flows-to-environment">Steps to deploy Process Flows to Environment</h2>
+<p>1)	Login to the portal and navigate to the Process Flow module available on the left menu.</p>
+
+<p>2)  Choose the Process Flow which is already designed and was saved or you can <a href="/processflow/creating-processflow/">create a process flow</a></p>
+
+<p>3)  Click on the <code class="language-plaintext highlighter-rouge">edit button</code> available for the selected Process Flow, which will navigate the user to the Process Flow Designing Page.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow2.png" alt="Deploy Processflow2" /></p>
+
+<p>4)	Click on the <code class="language-plaintext highlighter-rouge">deploy button</code> in the Process Flow Designing Page.</p>
+
+<p><strong>Note: You can view some explained steps on the Right Side of the Deploy Wizard in the How it 
+Works section, that will also help you deploy your process flow successfully.</strong></p>
+
+<p>5) The Deploy wizard opens on clicking the <code class="language-plaintext highlighter-rouge">Deploy</code> button. The deploy wizard is divided in to three sections.</p>
+
 <ul>
-  <li>The lookup section would be listed with all the lookups that are mapped in the mapper node. Click the button FIX to select the lookup type/table that is needed to deploy with the Process Flow.
-<img src="../../staticfiles/processflow/media/deploy-processflow9.png" alt="Deploy Processflow9" /></li>
-  <li>Click the fix button. You can view all the Repository Collection and the Reference Table available. Click here to know about <a href="">Repositories</a>.  <br />
-<img src="../../staticfiles/processflow/media/deploy-processflow10.png" alt="Deploy Processflow10" />
-*Expand the Collection and select the table that is required to be fixed for deploying the lookup.
-<img src="../../staticfiles/processflow/media/deploy-processflow11.png" alt="Deploy Processflow11" />
-<strong>Note: (a) Here, the lookup is implemented for Country, therefore we select the table country for fixing the lookup mapping.
-      (b) You can select only one table at a time.</strong></li>
-  <li>Click on the Done button. You can view a tick icon beside the button FIX. 
-<img src="../../staticfiles/processflow/media/deploy-processflow12.png" alt="Deploy Processflow12" />
-<strong>Note: (a) Fixing the lookups is not a mandatory process, if required you can ignore the Select Lookups step.
-     (b) User cannot navigate to the next section of the wizard without selecting the credentials the applications used.</strong></li>
+  <li>Select Environment: You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.</li>
+  <li>Set up Connection: You need to select the credential for the applications selected in the process flow provided in the Agent.</li>
+  <li>Select lookups: You need to fix up the lookups mapped for the attribute in the mapper node.</li>
+  <li>Sync &amp; Retry: You need to configure the Manual/Auto  &amp; Retry execution of the Process Flow.</li>
 </ul>
 
-<p>(g) The screen navigates to the Sync and Retry section of the deploy wizard. 
-This section enables you to configure your process flow Sync and Re-try in either auto mode or in manual mode before 
+<p><img src="../../staticfiles/processflow/media/deploy-processflow3.png" alt="Deploy Processflow3" /></p>
+
+<h3 id="select-environment">Select Environment</h3>
+<p>This section will let you define and select the environment where you want to deploy your designed Process Flow: <strong>HOSTED</strong> or <strong>On-Premise</strong>.</p>
+
+<p>(a)  Choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button.</p>
+<ul>
+  <li>Incase, no options available in the drop-down for <strong>Hosted environment</strong>, you will have to create your <a href="/deployment/Environment-Management/#hosted">HOSTED environment</a>.</li>
+  <li>If your chosen radio button is <strong>On Premise</strong> and if you don’t get any options in the drop-down, you will have to activate the <strong>Enable Environment</strong> button on your <a href="/deployment/settings/#enable-environment">Agent Settings</a>. Click on the REFRESH button to get the environment in the drop down.</li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\pfdeploycloud1.PNG" alt="pfdeploycloud" /></p>
+
+<ul>
+  <li>You need to install the agent if you do not have an installed <a href="/deployment/Deployment-Configuration/#on-premise-agent-configuration">Environment</a>.</li>
+</ul>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow4.png" alt="Deploy Processflow4" /></p>
+
+<ul>
+  <li>For more Environment related details, <a href="/deployment/Environment-Management/">Click Here</a>.</li>
+  <li>As per the selected type of environment, you need to select an environment from the list of environments in the drop down.</li>
+</ul>
+
+<p>(b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment. The screen navigates to the <strong>Set up Connection</strong> section.</p>
+
+<h3 id="set-up-connection">Set up Connection</h3>
+
+<p>(a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow5.png" alt="Deploy Processflow5" /></p>
+
+<p>(b)Provide the credentials in the App Configuration section of the On-Premise Agent. You can view the <a href="/connectors/Overview-of-Connectors/">pre-packaged applications</a>.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow6.png" alt="Deploy Processflow6" /></p>
+
+<p>(c) Click  the <code class="language-plaintext highlighter-rouge">Refresh Connection button</code>. You will get the latest credentials or updates to credentials made in the OP Agent. Click on the NEXT button. The screen navigates to the <strong>Select Lookups Section</strong></p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow7.png" alt="Deploy Processflow7" /></p>
+
+<p><em><strong>Note: You cannot navigate to the next section of the wizard without selecting the credentials the applications used.</strong></em></p>
+
+<h3 id="select-lookups">Select Lookups</h3>
+
+<p>This section will let you work with assigning of lookups mapped in the mapper node. If you are dont have any lookups mapped, you can click on the NEXT button as <strong>SELECT LOOKUPS</strong> is not a mandatory step.
+Follow the steps below if you are required to fix and assign lookups.</p>
+
+<p>(a) The screen navigates to the lookup section of the Wizard, where you are required to fix the lookups if provided while mapping the attributes.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow8.png" alt="Deploy Processflow8" /></p>
+
+<p>(b) The lookup section would be listed with all the lookups that are mapped in the mapper node. Click the button FIX to select the lookup type/table that is needed to deploy with the Process Flow.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow9.png" alt="Deploy Processflow9" /></p>
+
+<p>(c) Click the fix button. You can view all the Repository Collection and the Reference Table available. Click here to know about <a href="">Repositories</a>.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow10.png" alt="Deploy Processflow10" /></p>
+
+<p>(d) Expand the Collection and select the table that is required to be fixed for deploying the lookup.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow11.png" alt="Deploy Processflow11" /></p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li><strong>Here, the lookup is implemented for Country, therefore we select the table country for fixing the lookup mapping.</strong></li>
+  <li><strong>You can select only one table at a time.</strong></li>
+</ul>
+
+<p>(e) Click on the Done button. You can view a tick icon beside the button FIX.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow12.png" alt="Deploy Processflow12" /></p>
+
+<p>(f) The screen navigates to the Sync and Retry section of the deploy wizard after clicking on the NEXT button.</p>
+
+<h3 id="sync-and-retry">Sync and Retry</h3>
+
+<p>This section enables you to configure your process flow Sync and Re-try in either auto mode or in manual mode before 
 execution of the Process Flow here. By default, the sync type toggle button is selected in Manual Mode. 
 <img src="../../staticfiles/processflow/media/deploy-processflow13.png" alt="Deploy Processflow13" /></p>
 
-<h3 id="process-to-configure-schedule-sync---auto--manual">Process to configure schedule Sync - Auto &amp; Manual</h3>
+<h4 id="process-to-configure-sync-process---manual-mode">Process to configure Sync Process - Manual Mode</h4>
+<p>By toggling the <strong>Select Sync</strong> Toggle to Manual, your Process Flow will be configured to manual mode of execution. You will not have to configure any details for manual mode of sync process.</p>
+
+<h4 id="process-to-configure-sync-process---auto-mode">Process to configure Sync Process - Auto Mode</h4>
 <p>Select Frequency - There are three Options to choose from-  Every Day, Minute &amp; Hour           <br />
 (a) If the Frequency selected as <code class="language-plaintext highlighter-rouge">Everyday</code>, you need to provide Interval/Sync Daily 
 as shown below:</p>
 
-<p><img src="../../staticfiles/processflow/media/processflow-autosync1.png" alt="Processflow Autosync1" /><br />
-(b) If frequency selected as Minute, you can provide input (Only 1-59).<br />
-You can select End Execution or Never.If you select End Execution, Execution of a process 
+<p><img src="../../staticfiles/processflow/media/processflow-autosync1.png" alt="Processflow Autosync1" /></p>
+
+<p>(b) If frequency selected as Minute, you can provide input (Only 1-59). You can select End Execution or Never.If you select End Execution, Execution of a process 
 flow will stop auto-sync after ‘N’ number of occurrences.  <br />
-If you select Never, process flow will never stop execution.  <br />
-<img src="../../staticfiles/processflow/media/processflow-autosync2.png" alt="Processflow Autosync2" /><br />
-(c) If frequency selected as Hour, you can provide input (Only 1-23). You can select 
+If your selected option is <strong>NEVER</strong>, process flow will never stop execution.  <br />
+<img src="../../staticfiles/processflow/media/processflow-autosync2.png" alt="Processflow Autosync2" /></p>
+
+<p>(c) If frequency selected as Hour, you can provide input (Only 1-23). You can select 
 End Execution or Never.If you select End Execution, Execution of a process 
 flow will stop auto-sync after ‘N’ number of occurrences.  <br />
-If you select Never, process flow will never stop execution.
+If your selected option is <strong>Never</strong>, process flow will never stop execution.
 <img src="../../staticfiles/processflow/media/processflow-autosync3.png" alt="Processflow Autosync3" /></p>
 
-<h3 id="process-to-configure-retry---auto--manual">Process to configure Retry - Auto &amp; Manual</h3>
+<h4 id="process-to-configure-retry---auto--manual">Process to configure Retry - Auto &amp; Manual</h4>
+<p>Retry setting can also be configured either in AUTO Mode or MANUAL mode. Enabling the Toggle button to <strong>Manual</strong> will allow the user to perform RETRY manually.
+To know more about configuring RETRY in AUTO mode, navigate to the <a href="/processflow/retry-processflow/">Sync &amp; Retry section</a> of deploy wizard.</p>
 
-<p>Configure the settings for deploying the process flow and navigate to the <a href="/processflow/retry-processflow/">Sync &amp; Retry 
-section</a> of deploy wizard.</p>
+<p>(a) After configuring, click Finish button. The Tracker Window opens and you can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
+Downloading Process Flow Data, Downloading XSLT Files, Deployed etc.</p>
 
-<p>After configuring the, click Finish button. The Process Flow would be successfully 
-deployed. You can view these messages Process Flow Publish Started, Process Flow Publish Completed, 
-Downloading Process Flow Data, Downloading XSLT Files, Deployed etc. while deploying steps after 
-clicking the Finish button.<br />
-<img src="../../staticfiles/processflow/media/deploy-processflow14.png" alt="Deploy Processflow14" />
-Once deployed, click on the Execute button in the Process Flow Designer page of the Process Flow.<br />
-<img src="../../staticfiles/processflow/media/deploy-processflow15.png" alt="Deploy Processflow15" /></p>
+<p><img src="../../staticfiles/processflow/media/deploy-processflow14.png" alt="Deploy Processflow14" /></p>
+
+<p>(b) Once deployed, click on the Execute button in the Process Flow Designer page of the Process Flow.</p>
+
+<p><img src="../../staticfiles/processflow/media/deploy-processflow15.png" alt="Deploy Processflow15" /></p>
 
 <p>Following the above steps, you can successfully Deploy and Execute a Process Flow.</p>
 
-<h3 id="executing-deployed-process-flow">Executing Deployed Process Flow</h3>
+<h2 id="executing-deployed-process-flow">Executing Deployed Process Flow</h2>
 <p>Execution of a Process flow is a vital process for transforming data from one application to another. The basic prerequisites for executing a process flow is given below:
 Prerequisites:</p>
 <ul>
@@ -2532,7 +2600,7 @@ Prerequisites:</p>
   <li>Environment should be active for the process flow to execute successfully.</li>
 </ul>
 
-<h2 id="steps-to-execute-a-process-flow">Steps to execute a Process Flow</h2>
+<h3 id="steps-to-execute-a-process-flow">Steps to execute a Process Flow</h3>
 
 <ol>
   <li>Once deployed, you need to click on the Execute button in the Process Flow Designer page.
@@ -2550,7 +2618,7 @@ Prerequisites:</p>
 <img src="../../staticfiles/processflow/media/deploy-tracker3.png" alt="Deploy Tracker3" /></li>
 </ol>
 
-<h3 id="deploying-process-flows-to-environment">Deploying Process Flows to Environment</h3>
+<h2 id="deployed-process-flows-in-environment">Deployed Process Flows in Environment</h2>
 
 <ol>
   <li>Navigate to the <a href="/deployment/Environment-Management/">Environment section</a> in the portal &amp; click on the active environment. The details page of the active environment opens
@@ -2565,7 +2633,7 @@ e.	Actions      <br />
 <img src="../../staticfiles/processflow/media/deploy-processflow-env2.png" alt="Deploy Processflow Env2" /></li>
 </ol>
 
-<h3 id="undeploy-process-flow-from-environment">Undeploy Process Flow from Environment</h3>
+<h2 id="undeploy-process-flow-from-environment">Undeploy Process Flow from Environment</h2>
 
 <p>The deployed process flow (both executed/non-executed) can be undeployed from the environment
 listing page.</p>

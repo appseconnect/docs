@@ -38,7 +38,7 @@ UNINTERRUPTEDLY IMPROVE PRODUCTIVITY
 Navigate to the Designer > Process Flows. The Process Flow listing page appears. The list of the folders in the listing page would available on the left pane of the page. 
 By default, an organisation would have the following folders created `Process Flow , Installed Process Flow , Package Library , Trash` Folder.
 
-**To know more about the functionalities of the Process Flow Listing page, [Click Here](/processflow/processflow-listing-page/)
+**To know more about the functionalities of the Process Flow Listing page, [Click Here](/processflow/processflow-listing-page/)**
 
 ![listingpageoverview](\staticfiles\processflow\media\listingoverviewscreen.png)
 

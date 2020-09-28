@@ -15,7 +15,7 @@ This section provides the option of creating folders for organizing the Process 
 requirements for any organizations. Process Flow listing section helps users to organize & manage all the process 
 flows in folder structure such that user can maintain an easy usability as per the requirement. 
 
-**To know more about the modules that would help creating process from the Process Flow Listing Page, Navigate to the [Quickstart](/processflow/Quickstart-guide-to-processflow/) section.**
+**To know more about the modules that would help creating Process Flows from the Process Flow Listing Page, Navigate to the [Quickstart](/processflow/Quickstart-guide-to-processflow/) section.**
 
 ## Process flow listing Page
 

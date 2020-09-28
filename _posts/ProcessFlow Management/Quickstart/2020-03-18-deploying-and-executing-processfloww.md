@@ -19,8 +19,11 @@ credential for the applications that is used in the Process Flows.
 ## Prerequisites to deploy Process Flows
 
 1)	Should have valid credentials for logging in to the APPSeCONNECT portal.
+
 2)	[APPS](/processflow/processflow-app/) should be chosen from the apps section, for proceeding with the design of Process Flows.
+
 3)	The [designed](/processflow/designer-processflow/) Process Flow should be saved before deploying it to the environment.
+
 4)  If you are deploying the process flow to the On-Premise environment, you need to check the `Enable Environment` checkbox in the Agent Settings as Active. 
 
 ## Steps to deploy Process Flows to Environment
@@ -47,18 +50,20 @@ Works section, that will also help you deploy your process flow successfully.**
 ![Deploy Processflow3](../../staticfiles/processflow/media/deploy-processflow3.png) 
 
 ### Select Environment
-This sectio will let you define and select the environment where you want to deploy your designed Process Flow: **HOSTED** or **On-Premise**.
+This section will let you define and select the environment where you want to deploy your designed Process Flow: **HOSTED** or **On-Premise**.
 
-(a)  Choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button. Incase, no options available in the drop-down for **Hosted environment**, you will have to create your [HOSTED environment](/deployment/Environment-Management/#hosted). 
-If your chosen radio button is **On Premise** and if you don't get any options in the drop-down, you will have to activate the **Enable Environment** button on your [Agent Settings](/deployment/settings/#enable-environment). Click on the REFRESH button to get the environment in the drop down.
+(a)  Choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button. 
+- Incase, no options available in the drop-down for **Hosted environment**, you will have to create your [HOSTED environment](/deployment/Environment-Management/#hosted). 
+- If your chosen radio button is **On Premise** and if you don't get any options in the drop-down, you will have to activate the **Enable Environment** button on your [Agent Settings](/deployment/settings/#enable-environment). Click on the REFRESH button to get the environment in the drop down.
 
 ![pfdeploycloud](\staticfiles\processflow\media\pfdeploycloud1.PNG)
 
-* You need to install the agent if you do not have an installed [Environment](/deployment/Deployment-Configuration/#on-premise-agent-configuration).
-* For more Enviroment related details, [Click Here](/deployment/Environment-Management/). 
-* As per the selected type of environment, you need to select an environment from the list of environments in the drop down. 
+* You need to install the agent if you do not have an installed [Environment](/deployment/Deployment-Configuration/#on-premise-agent-configuration). 
 
 ![Deploy Processflow4](../../staticfiles/processflow/media/deploy-processflow4.png) 
+
+* For more Environment related details, [Click Here](/deployment/Environment-Management/). 
+* As per the selected type of environment, you need to select an environment from the list of environments in the drop down.
 
 (b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment. The screen navigates to the **Set up Connection** section.
 
