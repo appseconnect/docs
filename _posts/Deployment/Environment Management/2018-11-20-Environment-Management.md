@@ -156,7 +156,7 @@ Following the above process you can easily create and group your On Premise Envi
 
 ## Hosted 
 
-This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its [Environment Details page](/deployment/Environment-Management/#create-hosted-environment)
+This section will enable you to create an hosted (Cloud) environment. You can view all the related environment details in its [Environment Details page](/deployment/Environment-Management/#hosted-environment-details-page)
 
 1) If you do not have the support of the Hosted (cloud) environment, you will get the following view. 
 

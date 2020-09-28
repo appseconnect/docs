@@ -33,11 +33,19 @@ UNINTERRUPTEDLY IMPROVE PRODUCTIVITY
 * Process Flow lets end users and admins model and maintain business processes using a visual graphical tool without coding.
 * It encapsulates complex and multistep flows to automate and streamline business processes.
 
+## Navigating to Process Flows
+
+Navigate to the Designer > Process Flows. The Process Flow listing page appears. The list of the folders in the listing page would available on the left pane of the page. 
+By default, an organisation would have the following folders created `Process Flow , Installed Process Flow , Package Library , Trash` Folder.
+
+**To know more about the functionalities of the Process Flow Listing page, [Click Here](/processflow/processflow-listing-page/)
+
+![listingpageoverview](\staticfiles\processflow\media\listingoverviewscreen.png)
+
 ## Process Flow modules
 
 |Modules| Description|  
-|-------|-----------------------------------------------------|  
-|[Process Flow Listing Page](/processflow/processflow-listing-page/) | This the default landing page of the Process Flow Module. Users can add and view the Process Flow folders and all the created Process Flows|         
+|-------|-----------------------------------------------------|           
 |[Process Flow Designer Page](/processflow/designer-processflow/) | This page will let the users, create new process flows for their business processes|      
 |[Creating Process Flow](/processflow/creating-processflow/) |This section of the documentation will guide the user with the process of Creating & Saving new process flows|          
 |[Deploying and Excecuting Process Flow](/processflow/deploying-and-executing-processfloww/) | This section enables the user to deploy the new or saved process flow to the environment in order to execute the integration process|          
