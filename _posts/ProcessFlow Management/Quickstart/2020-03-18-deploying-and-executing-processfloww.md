@@ -71,7 +71,7 @@ The section will allow you to map the credential tokens selected in the app node
 
 _**Note: You cannot navigate to the next section of the wizard without selecting the credentials the applications used.**_  
 
-#### Set up Connection - On-Premise
+#### Set up Connection: On-Premise
   
 (a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
 
@@ -85,7 +85,7 @@ _**Note: You cannot navigate to the next section of the wizard without selecting
 
 ![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png) 
 
-#### Set up Connection - Hosted
+#### Set up Connection: Hosted
 
 (a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
 
@@ -100,10 +100,6 @@ _**Note: You cannot navigate to the next section of the wizard without selecting
 ![deployhostedcred3](\staticfiles\processflow\media\deployhostedcred3.PNG)
 
 (d) Clicking on the NEXT button will allow you to navigate to the [Select Lookups](/processflow/deploying-and-executing-processfloww/#select-lookups) section
-
-
-**Note: If your chosen environment types is selected as **HOSTED**
-
 
 
 ### Select Lookups
