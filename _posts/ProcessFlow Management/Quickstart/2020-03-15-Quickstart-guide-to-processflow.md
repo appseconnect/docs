@@ -1,5 +1,5 @@
 ---
-title: "Quickstart guides to create ProcessFlow"
+title: "Quickstart guides to Process Flow"
 toc: true
 tag: developers
 category: "Processflow"
@@ -12,9 +12,9 @@ menus:
         identifier: quickstartprocessflow
 ---
 
-Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes which you need to perform your daily activities. The workflow management screen will allow you to search, filter, create, edit workflows. 
+Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes which you need to perform your daily activities. The [Process Flow Listing](/processflow/processflow-listing-page/) page will allow you to search, filter, create, edit Process Flows. 
 
-By reading this document an implementer would be able to design the first processslow for an organization and will execute it from the web portal also. 
+By reading this document an implementer would be able to design the first process flow for an organization and will execute it from the web portal also. 
 
 To know in details, go through the given sections:
 

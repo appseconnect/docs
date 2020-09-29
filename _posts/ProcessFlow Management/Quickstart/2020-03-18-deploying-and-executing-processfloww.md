@@ -31,21 +31,19 @@ credential for the applications that is used in the Process Flows.
 
 2)  Choose the Process Flow which is already designed and was saved or you can [create a process flow](/processflow/creating-processflow/)    
 
-3)  Click on the `edit button` available for the selected Process Flow, which will navigate the user to the Process Flow Designing Page.  
+3)  Click on the `edit button` available for the selected Process Flow, which will navigate the user to the Process Flow Designing Page. Click on the `deploy button` in the Process Flow Designing Page.  
 
 ![Deploy Processflow2](../../staticfiles/processflow/media/deploy-processflow2.png) 
 
-4)	Click on the `deploy button` in the Process Flow Designing Page.  
+4) The Deploy wizard opens on clicking the `Deploy` button. The deploy wizard is divided in to three sections.
+
+- **[Select Environment](/processflow/deploying-and-executing-processfloww/#select-environment) :** You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.
+- **[Set up Connection](/processflow/deploying-and-executing-processfloww/#set-up-connection) :** You need to select the credential for the applications selected in the process flow provided in the Agent.
+- **[Select lookups](/processflow/deploying-and-executing-processfloww/#select-lookups) :** You need to fix up the lookups mapped for the attribute in the mapper node.
+- **[Sync & Retry](/processflow/deploying-and-executing-processfloww/#sync-and-retry) :** You need to configure the Manual/Auto  & Retry execution of the Process Flow.
 
 **Note: You can view some explained steps on the Right Side of the Deploy Wizard in the How it 
-Works section, that will also help you deploy your process flow successfully.**  
-
-5) The Deploy wizard opens on clicking the `Deploy` button. The deploy wizard is divided in to three sections.
-
-* Select Environment: You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.
-* Set up Connection: You need to select the credential for the applications selected in the process flow provided in the Agent.
-* Select lookups: You need to fix up the lookups mapped for the attribute in the mapper node.
-* Sync & Retry: You need to configure the Manual/Auto  & Retry execution of the Process Flow.
+Works section, that will also help you deploy your process flow successfully.** 
 
 ![Deploy Processflow3](../../staticfiles/processflow/media/deploy-processflow3.png) 
 
@@ -68,6 +66,12 @@ This section will let you define and select the environment where you want to de
 (b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment. The screen navigates to the **Set up Connection** section.
 
 ### Set up Connection
+
+The section will allow you to map the credential tokens selected in the app node configuration window with the credentials provided in your agent.
+
+_**Note: You cannot navigate to the next section of the wizard without selecting the credentials the applications used.**_  
+
+#### Set up Connection - On-Premise
   
 (a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
 
@@ -81,7 +85,26 @@ This section will let you define and select the environment where you want to de
 
 ![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png) 
 
-_**Note: You cannot navigate to the next section of the wizard without selecting the credentials the applications used.**_  
+#### Set up Connection - Hosted
+
+(a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
+
+![deployhostedcred1](\staticfiles\processflow\media\deployhostedcred1.PNG)
+
+(b) If you do not have any credentials in the drop down, click on the `+` button. 
+
+![deployhostedcred2](\staticfiles\processflow\media\deployhostedcred2.PNG)
+
+(c) The credential page opens for providing the [cloud credentials](/connectors/OLEDB-Credentials/#how-to-add-credentials-for-cloud-integration) for that application. You can provide your application credentials or can modify an existing one.
+
+![deployhostedcred3](\staticfiles\processflow\media\deployhostedcred3.PNG)
+
+(d) Clicking on the NEXT button will allow you to navigate to the [Select Lookups](/processflow/deploying-and-executing-processfloww/#select-lookups) section
+
+
+**Note: If your chosen environment types is selected as **HOSTED**
+
+
 
 ### Select Lookups
 

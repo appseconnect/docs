@@ -22,7 +22,7 @@ in a different organisation. This document will help you to create a new package
 
 ## Creating Packages
 
-1) Navigate to the ** Designer > Process Flow**. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
+1) Navigate to the **Designer > Process Flow**. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 
 ![package1](\staticfiles\processflow\media\package1.PNG)
 
