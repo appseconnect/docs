@@ -32,3 +32,4 @@ To know in details, go through the given sections:
 |[Redeploy](/processflow/redeploying-processflow/)|Redeploying processflow functionality allows you to re-deploy an existing Process Flows |
 |[Snapshot view](/processflow/snapshot-processflow/)|Snapshot in Process Flow gives complete overview of the transactions that was executed|
 |[Retry Process Flow](/processflow/retry-processflow/)|This document will help you with the details of configuring the RESYNC feature of APPSeCONNECT which helps to perform Retries for failed data.|
+|[Process Flow Packaging](/processflow/processflow-packaging-overview/)| This will enable you to create and install packages containing process flows. You can share your created packages to other organisation when required also you will be able to install incoming packages shared to you.|

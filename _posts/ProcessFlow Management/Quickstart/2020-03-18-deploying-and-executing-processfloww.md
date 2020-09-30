@@ -16,7 +16,7 @@ Users, now need not have to update configuration every time for deploying every 
 `DEPLOY` button enables the user to automatically deploy the changes in the environment as well as assign the 
 credential for the applications that is used in the Process Flows.
 
-## Prerequisites to deploy Process Flows
+## Prerequisites 
 
 1)	Should have valid credentials for logging in to the APPSeCONNECT portal.
 
@@ -26,7 +26,8 @@ credential for the applications that is used in the Process Flows.
 
 4)  If you are deploying the process flow to the On-Premise environment, you need to check the `Enable Environment` checkbox in the Agent Settings as Active. 
 
-## Steps to deploy Process Flows to Environment
+## Deploying Process Flows to Environment
+
 1)	Login to the portal and navigate to the Process Flow module available on the left menu. 
 
 2)  Choose the Process Flow which is already designed and was saved or you can [create a process flow](/processflow/creating-processflow/)    
@@ -37,55 +38,37 @@ credential for the applications that is used in the Process Flows.
 
 4) The Deploy wizard opens on clicking the `Deploy` button. The deploy wizard is divided in to three sections.
 
-- **[Select Environment](/processflow/deploying-and-executing-processfloww/#select-environment) :** You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.
-- **[Set up Connection](/processflow/deploying-and-executing-processfloww/#set-up-connection) :** You need to select the credential for the applications selected in the process flow provided in the Agent.
-- **[Select lookups](/processflow/deploying-and-executing-processfloww/#select-lookups) :** You need to fix up the lookups mapped for the attribute in the mapper node.
-- **[Sync & Retry](/processflow/deploying-and-executing-processfloww/#sync-and-retry) :** You need to configure the Manual/Auto  & Retry execution of the Process Flow.
+- **Select Environment:** You need to select the type of environment (Cloud or On-Premise) for deploying the process flow.
+- **Set up Connection:** You need to select the credential for the applications selected in the process flow provided in the Agent.
+- **Select lookups:** You need to fix up the lookups mapped for the attribute in the mapper node.
+- **Sync & Retry:** You need to configure the Manual/Auto  & Retry execution of the Process Flow.
 
 **Note: You can view some explained steps on the Right Side of the Deploy Wizard in the How it 
 Works section, that will also help you deploy your process flow successfully.** 
 
 ![Deploy Processflow3](../../staticfiles/processflow/media/deploy-processflow3.png) 
 
-### Select Environment
-This section will let you define and select the environment where you want to deploy your designed Process Flow: **HOSTED** or **On-Premise**.
+## Deploy Process Flows: HOSTED
+This section will allow you to deploy Process Flows, if you want to deploy your designed process flows in **Hosted Environment.**
 
-(a)  Choose the type of environment (Cloud or On-Premise) by selecting the proper Radio button. 
-- Incase, no options available in the drop-down for **Hosted environment**, you will have to create your [HOSTED environment](/deployment/Environment-Management/#hosted). 
-- If your chosen radio button is **On Premise** and if you don't get any options in the drop-down, you will have to activate the **Enable Environment** button on your [Agent Settings](/deployment/settings/#enable-environment). Click on the REFRESH button to get the environment in the drop down.
+### Select Environment: Hosted
+This section will let you define and select the environment where you want to deploy your designed Process Flow.
+
+(a)  Choose the type of environment as **HOSTED** by selecting its Radio button. - Incase, no options available in the drop-down for **Hosted environment**, you will have to create your [HOSTED environment](/deployment/Environment-Management/#hosted). 
 
 ![pfdeploycloud](\staticfiles\processflow\media\pfdeploycloud1.PNG)
 
-* You need to install the agent if you do not have an installed [Environment](/deployment/Deployment-Configuration/#on-premise-agent-configuration). 
-
-![Deploy Processflow4](../../staticfiles/processflow/media/deploy-processflow4.png) 
-
 * For more Environment related details, [Click Here](/deployment/Environment-Management/). 
-* As per the selected type of environment, you need to select an environment from the list of environments in the drop down.
 
-(b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment. The screen navigates to the **Set up Connection** section.
+(b) Select your Hosted agent from the drop down and click on the NEXT button. The screen moves **Set Up connection** section.
 
-### Set up Connection
+![pfdeploycloud2](\staticfiles\processflow\media\pfdeploycloud2.PNG)
+
+### Set up Connection: Hosted
 
 The section will allow you to map the credential tokens selected in the app node configuration window with the credentials provided in your agent.
 
 _**Note: You cannot navigate to the next section of the wizard without selecting the credentials the applications used.**_  
-
-#### Set up Connection: On-Premise
-  
-(a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
-
-![Deploy Processflow5](../../staticfiles/processflow/media/deploy-processflow5.png)
-
-(b)Provide the credentials in the App Configuration section of the On-Premise Agent. You can view the [pre-packaged applications](/connectors/Overview-of-Connectors/).
-
-![Deploy Processflow6](../../staticfiles/processflow/media/deploy-processflow6.png)
-
-(c) Click  the `Refresh Connection button`. You will get the latest credentials or updates to credentials made in the OP Agent. Click on the NEXT button. The screen navigates to the **Select Lookups Section**
-
-![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png) 
-
-#### Set up Connection: Hosted
 
 (a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
 
@@ -101,11 +84,56 @@ _**Note: You cannot navigate to the next section of the wizard without selecting
 
 (d) Clicking on the NEXT button will allow you to navigate to the [Select Lookups](/processflow/deploying-and-executing-processfloww/#select-lookups) section
 
+### Select Lookups: Hosted
 
-### Select Lookups
+This section will allow you fix, unfix the lookups mapped in the mapper node. The operations in this section is same as that of On Premise, to know more about the steps, [Click Here]().
 
-This section will let you work with assigning of lookups mapped in the mapper node. If you are dont have any lookups mapped, you can click on the NEXT button as **SELECT LOOKUPS** is not a mandatory step.
+### Sync and Retry: Hosted
+
+This section enables you to configure your process flow Sync and Re-try either in **auto mode** or **manual mode** before 
+execution of the Process Flow. The operations in this section is same as that of On Premise, to know more about the steps, [Click Here]()
+
+
+## Deploy Process Flows: On Premise
+
+This section will allow you to deploy process flow to your On-Premise Environments.
+
+### Select Environment: On Premise
+
+(a)  Choose the type of environment as **On Premise** by selecting its Radio button. If you don't get any options in the drop-down, you will have to activate the **Enable Environment** button on your [Agent Settings](/deployment/settings/#enable-environment). Click on the REFRESH button to get the environment in the drop down.
+
+* You need to install the agent if you do not have an installed [Environment](/deployment/Deployment-Configuration/#on-premise-agent-configuration). 
+
+![Deploy Processflow4](../../staticfiles/processflow/media/deploy-processflow4.png) 
+
+* For more Environment related details, [Click Here](/deployment/Environment-Management/). 
+
+(b) Click on the NEXT button, the selected apps and its adapters in the designed Process Flow would get downloaded. The latest adapters set for your application, gets downloaded on your selected On-Premise Environment. The screen navigates to the **Set up Connection** section.
+
+### Set up Connection: On-Premise
+
+The section will allow you to map the credential tokens selected in the app node configuration window with the credentials provided in your agent.
+
+_**Note: You cannot navigate to the next section of the wizard without selecting the credentials the applications used.**_  
+  
+(a) The screen navigates to the Set-up connection section of the Deploy wizard. You need to select the credential from the drop down, for the respective application used in the Process Flow. 
+
+![Deploy Processflow5](../../staticfiles/processflow/media/deploy-processflow5.png)
+
+(b)Provide the credentials in the App Configuration section of the On-Premise Agent. You can view the [pre-packaged applications](/connectors/Overview-of-Connectors/).
+
+![Deploy Processflow6](../../staticfiles/processflow/media/deploy-processflow6.png)
+
+(c) Click  the `Refresh Connection button`. You will get the latest credentials or updates to credentials made in the OP Agent. Click on the NEXT button. The screen navigates to the **Select Lookups Section**
+
+![Deploy Processflow7](../../staticfiles/processflow/media/deploy-processflow7.png) 
+
+### Select Lookups: On Premise
+
+This section will let you work with assigning of lookups mapped in the mapper node. If you dont have any lookups mapped, you can click on the NEXT button as **SELECT LOOKUPS** is not a mandatory step.
 Follow the steps below if you are required to fix and assign lookups.
+
+**The below steps are same, if you are deploying your process flow on your **HOSTED** environment.**
 
 (a) The screen navigates to the lookup section of the Wizard, where you are required to fix the lookups if provided while mapping the attributes.
 
@@ -134,10 +162,13 @@ Follow the steps below if you are required to fix and assign lookups.
 
 (f) The screen navigates to the Sync and Retry section of the deploy wizard after clicking on the NEXT button.
 
-### Sync and Retry
+### Sync and Retry: On Premise
 
-This section enables you to configure your process flow Sync and Re-try in either auto mode or in manual mode before 
+This section enables you to configure your process flow Sync and Re-try either in **auto mode** or **manual mode** before 
 execution of the Process Flow here. By default, the sync type toggle button is selected in Manual Mode. 
+
+**The below steps are same, if you are deploying your process flow on your **HOSTED** environment.**
+
 ![Deploy Processflow13](../../staticfiles/processflow/media/deploy-processflow13.png)
 
 #### Process to configure Sync Process - Manual Mode

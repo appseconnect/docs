@@ -34,58 +34,12 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 
 ## HOME
 
-This section will allow you to take off with the intergation features of the APPSeCONNECT Portal. You will have the option either to design your [Process Flows](/processflow/overview-of-processflow/) from scratch as per your unique business process 
-or you can even select a pre-packaged template that will enable to adjust and edit the pre-designed templates as per your business process.
-The HOME page will provide you with the PLAN details for your organisation . YOu will be provided with the count for the Number of Projects and Packages available on your organisation.
+**For Older users, the old DASHBOARD page is the new HOME page of the APPSeCONNECT portal**
 
-![Home1](\staticfiles\root\media\home1.PNG)
-
-## Designer
-
-This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
-Workflows and Process Flows. Below are the gist that provides you with the informations of Workflow and Process Flow.
-
-![Designer1](\staticfiles\root\media\designer1.PNG)
-
-### Workflows
-
-`Workflow management` is group of instructions to the integration service in APPSeCONNECT.
-APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is a concept that describes how process in business divides work activities into distinct roles, task, procedures and rules.
-
-To know more about Workflow Management, [Click here](/workflow/overview/).
-
-### Process Flows
-
-`Process Flows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
-Process Flow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, Process Flow is enables with a Packaging system that enables the user to zip design process flows into packages
-that enables you to share and install in other organisations.
-
-To know more about the Process Flows, [Click Here](/processflow/overview-of-processflow/)
-
-## Deploy
-
-This section will allow you to work with your **ENVIRONMENTS** either On-Premise or Hosted. You can perform multiple deployment functionalities that will help you setting up your environments.
-
-![Deploy1](\staticfiles\root\media\deploy1.PNG)
-
-### Environment
-
-[Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
-
-## Manage
-
-This section will allow you to manage the applications, connection, rules and other modules of APPSeCONNECT. Below are the modules
-that will be available to you under the **MANAGE** section.
-
-![manage1](\staticfiles\root\media\manage1.PNG)
-
-### Monitoring
-Dashboard is the default page which you can view after logging in to the APPSeCONNECT portal. 
-The dashboard can be seen automatically when a Project has been chosen. 
-In this page you can see the snapshot of the project at a glance with respect to the activities of the user. 
+The **Home page** is the default page which you can view after logging in to the APPSeCONNECT portal. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. 
 ![Dashboard](/staticfiles/root/media/Dashboard.png)
 
-The dashboard view captures the following information- 
+The Home page view captures the following information- 
 1.	Project Basic Information
 2.	Configuration Completion Details
 3.	Subscription Details
@@ -94,7 +48,7 @@ The dashboard view captures the following information-
 6.	Sync Errors
 7.	Execution Logs
 
-Click the dashboard widgets to expand and view the related functionality of the widgets in details.
+Click on the widgets to expand and view the related functionality of the widgets in details.
 
 *1. Project Basic Information: This widget displays the basic information of the organisation.*  
 The details displayed in the widget are:   
@@ -168,6 +122,46 @@ Users can minimize, maximize the widget by click on the respective button availa
        (b)Logs would be displayed only for autosync execution processes** 
 
 ![ExecutionLog2_Dashboard.png](/staticfiles/root/media/ExecutionLog2_Dashboard.png)
+
+## Designer
+
+This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
+Workflows and Process Flows. Below are the gist that provides you with the informations of Workflow and Process Flow.
+
+![Designer1](\staticfiles\root\media\designer1.PNG)
+
+### Workflows
+
+`Workflow management` is group of instructions to the integration service in APPSeCONNECT.
+APPSeCONNECT workflow application can be considered as a strong feature that uses the software to either partially or entirely automate a complex business process. Workflow is a concept that describes how process in business divides work activities into distinct roles, task, procedures and rules.
+
+To know more about Workflow Management, [Click here](/workflow/overview/).
+
+### Process Flows
+
+`Process Flows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
+Process Flow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, Process Flow is enables with a Packaging system that enables the user to zip design process flows into packages
+that enables you to share and install in other organisations.
+
+To know more about the Process Flows, [Click Here](/processflow/overview-of-processflow/)
+
+## Deploy
+
+This section will allow you to work with your **ENVIRONMENTS** either On-Premise or Hosted. You can perform multiple deployment functionalities that will help you setting up your environments.
+
+![Deploy1](\staticfiles\root\media\deploy1.PNG)
+
+### Environment
+
+[Environment](https://docs.appseconnect.com/getting%20started/configurations-for-integration/#configuring-environment---agent-download--cloud-agent-configuration) page lists the devices that have access to the project that the customer is working on. 
+
+## Manage
+
+This section will allow you to manage the applications, connection, rules and other modules of APPSeCONNECT. Below are the modules
+that will be available to you under the **MANAGE** section.
+
+![manage1](\staticfiles\root\media\manage1.PNG)
+
 
 ### Users
 

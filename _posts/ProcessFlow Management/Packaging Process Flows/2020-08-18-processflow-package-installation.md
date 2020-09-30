@@ -81,7 +81,7 @@ You can install the packages directly by clicking on the install button availabl
 
 - **Install from View Packages:**
 On clicking the `VIEW` button in the contextual menu of the actions column, it will navigate you to the `VIEW` window.
-Click on the **Install** button to install the package shared with you. **(Image needs to change)**
+Click on the **Install** button to install the package shared with you.
 
 ![packageinstall3](\staticfiles\processflow\media\packageinstall3.PNG)
 
