@@ -42,13 +42,15 @@ To upgrade the On-Premise agent to the latest version, you will be required to d
 
 ### On-Premise Environment Details page
 
-This section of the document will allow you to view and understand the details of your On Premise environment.
+This section of the document will allow you to view and understand the details of your On Premise environments.
 
 1) Click on the OP environment. You will be able to view the following tabs: **Properties** , **Process Flows**, **Plugins** , **Settings**. By default the properties tab will be displayed.
 
 ![opdetails1](\staticfiles\deployment\media\EasyEnv\opdetails1.PNG)
 
-2) Click on the **Properties** tab, you will able to view the live architectural details of your On-Premise environment. The follwoing details will be displayed.
+#### Properties Tab
+
+1) Click on the **Properties** tab, you will able to view the live architectural details of your On-Premise environment. The follwoing details will be displayed.
 
 * Architecture in use
 * The latest agent deployment version for the selected environment
@@ -61,7 +63,11 @@ This section of the document will allow you to view and understand the details o
 
 **Note: User can view the log files by double clicking on them.** 
 
-3) Click on the **Process Flows** tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
+![prop1](\staticfiles\deployment\media\EasyEnv\prop1.PNG)
+
+#### Process Flow Tab
+
+1) Click on the **Process Flows** tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
 
 - **Process Flow Name:** The name of the process flow, deployed, will be displayed.
 - **Deployed At:** The last deployment of the process flow will be displayed.
@@ -71,31 +77,41 @@ This section of the document will allow you to view and understand the details o
 
 ![opdetails2](\staticfiles\deployment\media\EasyEnv\opdetails2.PNG)
 
-4) Click on the **PLUGINS** tab. You will be able to view the all the plugins available on your On-Premise environment. The following plugins will be listed: **[MySQL](/deployment/MYSQL-plugin-installation/)** , **[OLEDB](/deployment/OLE-db-plugin-installation/)** , **[HANA](/deployment/hana-plugin-installation/)** and **SQLite**.
+#### Plugins Tab
+
+1) Click on the **PLUGINS** tab. You will be able to view the all the plugins available on your On-Premise environment. The following plugins will be listed: **[MySQL](/deployment/MYSQL-plugin-installation/)** , **[OLEDB](/deployment/OLE-db-plugin-installation/)** , **[HANA](/deployment/hana-plugin-installation/)** and **SQLite**.
 
 ![opdetails3](\staticfiles\deployment\media\EasyEnv\opdetails3.PNG)
 
-5) Clicking on the **Setting** tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.
+#### Setting Tab
+
+1) Clicking on the **Setting** tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.
 
 ![opdetails4](\staticfiles\deployment\media\EasyEnv\opdetails4.PNG)
 
-**`Settings` have four available sections for managing OP Agents:**
+**Settings have FOUR available sections for managing OP Agents:**
 
-1) Retry Setting - One can schedule resync of failed integrations, where you can provide the start time, 
+2) **Retry Setting** - One can schedule resync of failed integrations, where you can provide the start time, 
    no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
    you must activate Retry transaction.
 
-2) Log Settings - You can control the way you want to view and store the log in OP Agent from portal now.
+3) **Log Settings** - You can control the way you want to view and store the log in OP Agent from portal now.
 
 * If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be 
   stored in sql lite database and will be reflected in the log bucket.
 * Set Target for - It will allow you to define the type of log that you want to view, whether Error, Infor or Status.
 * Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.
 
-3) Real Time Settings - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
+4) **Real Time Settings** - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
    Users need to provide the Hostname and the Port for the RealTime Execution.    
 
-4) Diagnostic Settings - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
+5) **Pending Timeout Settings** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
+The default time period of the **Frequency of Pending Timeout** field is **5 mins**. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.
+
+![pendingtimeout1](\staticfiles\deployment\media\EasyEnv\pendingtimeout1.PNG)
+
+
+5) **Diagnostic Settings** - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
    files will get available in Agent and service path as shown in the image.  
 
 Diagnostic Settings is provided with two output paths:
@@ -104,7 +120,6 @@ a)	Agent Output Path: This path provides the details of the transformed files wh
 b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.       
 
 ![opdetails5](\staticfiles\deployment\media\EasyEnv\opdetails5.PNG)    
-
 
 After saving the changes in settings, the updated information gets auto-reflected in OP Agent. 
 
@@ -210,7 +225,7 @@ For more details on the Environment Details page, [Click Here](/deployment/Easy-
 
 ### Hosted Environment Details page
 
-You will be able to view this page only when you have your hosted environment created. Clicking on the Hosted environment, you can view the details page.
+You will be able to view this page only when you have your hosted environment created. Clicking on the Hosted environment, you can view the details page. For **My Hosted Environment**, you will not have the **Properties Tab** as provided for an On-Premise Environment.
 
 ![hosteddetails1](\staticfiles\deployment\media\EasyEnv\hosteddetails1.PNG)
 
@@ -228,6 +243,9 @@ You will be able to view this page only when you have your hosted environment cr
     - Log in Database: The log fetched, would be stored in the database.
     - Set target for: Users can filter the failed sync based on Error, Info and Status.
     - Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High & Critical. 
+    
+   - **Pending Timeout Settings** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
+    The default time period of the **Frequency of Pending Timeout** field is **5 mins**. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.
 
 ![hosteddetails2](\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG)
 

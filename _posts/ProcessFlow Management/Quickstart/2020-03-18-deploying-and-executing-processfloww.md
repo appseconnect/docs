@@ -48,7 +48,7 @@ Works section, that will also help you deploy your process flow successfully.**
 
 ![Deploy Processflow3](../../staticfiles/processflow/media/deploy-processflow3.png) 
 
-## Deploy Process Flows: HOSTED
+## Deploy Process Flows: Hosted Environment
 This section will allow you to deploy Process Flows, if you want to deploy your designed process flows in **Hosted Environment.**
 
 ### Select Environment: Hosted
@@ -86,15 +86,18 @@ _**Note: You cannot navigate to the next section of the wizard without selecting
 
 ### Select Lookups: Hosted
 
-This section will allow you fix, unfix the lookups mapped in the mapper node. The operations in this section is same as that of On Premise, to know more about the steps, [Click Here]().
+This section will allow you to fix, unfix the lookups mapped in the mapper node. The operations in this section is same as that of On Premise, to know more about the steps, [Click Here](/processflow/deploying-and-executing-processfloww/#select-lookups-on-premise).
+
+![Deploy Processflow8](../../staticfiles/processflow/media/deploy-processflow8.png)
 
 ### Sync and Retry: Hosted
 
 This section enables you to configure your process flow Sync and Re-try either in **auto mode** or **manual mode** before 
-execution of the Process Flow. The operations in this section is same as that of On Premise, to know more about the steps, [Click Here]()
+execution of the Process Flow. The operations in this section is same as that of On Premise, to know more about the steps, [Click Here](/processflow/deploying-and-executing-processfloww/#sync-and-retry-on-premise)
 
+![Deploy Processflow13](../../staticfiles/processflow/media/deploy-processflow13.png)
 
-## Deploy Process Flows: On Premise
+## Deploy Process Flows: On Premise Environment
 
 This section will allow you to deploy process flow to your On-Premise Environments.
 
