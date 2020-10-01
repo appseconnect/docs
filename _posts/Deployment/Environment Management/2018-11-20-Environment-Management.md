@@ -73,7 +73,11 @@ This section of the document will allow you to view and understand the details o
 - **Deployed At:** The last deployment of the process flow will be displayed.
 - **No. of tries:** You will be able to view the count of the number of retries performed.
 - **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
-- **Actions** The following actions can be formed for each process flows: **Last Deployment Log** , **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** , **[View Snapshot](/processflow/snapshot-processflow/)** and **[Retry](/processflow/retry-processflow/)**
+- **Actions** The following actions can be formed for each process flows: 
+    - **Last Deployment Log** - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.
+    - **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** - This will enable you to undeploy a deployed process flow.
+    - **[View Snapshot](/processflow/snapshot-processflow/)**  - This will enable you view the snapshot for a process flow that is executed.
+    - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
 
 ![opdetails2](\staticfiles\deployment\media\EasyEnv\opdetails2.PNG)
 
@@ -255,7 +259,11 @@ The following are the details that will displayed for deployed Process Flows.
 - **Deployed At:** The last deployment of the process flow will be displayed.
 - **No. of tries:** You will be able to view the count of the number of retries performed.
 - **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
-- **Actions** The following actions can be formed for each process flows: **Last Deployment Log** , **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** , **[View Snapshot](/processflow/snapshot-processflow/)** and **[Retry](/processflow/retry-processflow/)**
+- **Actions** The following actions can be formed for each process flows: 
+    - **Last Deployment Log** - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.
+    - **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** - This will enable you to undeploy a deployed process flow.
+    - **[View Snapshot](/processflow/snapshot-processflow/)**  - This will enable you view the snapshot for a process flow that is executed.
+    - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
 
 
 ![hosteddetails3](\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG)

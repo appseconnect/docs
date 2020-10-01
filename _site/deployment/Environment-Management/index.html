@@ -2397,7 +2397,7 @@
 
 
 
-  16 minute read
+  18 minute read
 </p>
                 
                 
@@ -2476,13 +2476,15 @@
 
 <h3 id="on-premise-environment-details-page">On-Premise Environment Details page</h3>
 
-<p>This section of the document will allow you to view and understand the details of your On Premise environment.</p>
+<p>This section of the document will allow you to view and understand the details of your On Premise environments.</p>
 
 <p>1) Click on the OP environment. You will be able to view the following tabs: <strong>Properties</strong> , <strong>Process Flows</strong>, <strong>Plugins</strong> , <strong>Settings</strong>. By default the properties tab will be displayed.</p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\opdetails1.PNG" alt="opdetails1" /></p>
 
-<p>2) Click on the <strong>Properties</strong> tab, you will able to view the live architectural details of your On-Premise environment. The follwoing details will be displayed.</p>
+<h4 id="properties-tab">Properties Tab</h4>
+
+<p>1) Click on the <strong>Properties</strong> tab, you will able to view the live architectural details of your On-Premise environment. The follwoing details will be displayed.</p>
 
 <ul>
   <li>Architecture in use</li>
@@ -2497,33 +2499,48 @@
 
 <p><strong>Note: User can view the log files by double clicking on them.</strong></p>
 
-<p>3) Click on the <strong>Process Flows</strong> tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.</p>
+<p><img src="\staticfiles\deployment\media\EasyEnv\prop1.PNG" alt="prop1" /></p>
+
+<h4 id="process-flow-tab">Process Flow Tab</h4>
+
+<p>1) Click on the <strong>Process Flows</strong> tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.</p>
 
 <ul>
   <li><strong>Process Flow Name:</strong> The name of the process flow, deployed, will be displayed.</li>
   <li><strong>Deployed At:</strong> The last deployment of the process flow will be displayed.</li>
   <li><strong>No. of tries:</strong> You will be able to view the count of the number of retries performed.</li>
   <li><strong>Status</strong> The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.</li>
-  <li><strong>Actions</strong> The following actions can be formed for each process flows: <strong>Last Deployment Log</strong> , <strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> , <strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong> and <strong><a href="/processflow/retry-processflow/">Retry</a></strong></li>
+  <li><strong>Actions</strong> The following actions can be formed for each process flows:
+    <ul>
+      <li><strong>Last Deployment Log</strong> - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.</li>
+      <li><strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> - This will enable you to undeploy a deployed process flow.</li>
+      <li><strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong>  - This will enable you view the snapshot for a process flow that is executed.</li>
+      <li><strong><a href="/processflow/retry-processflow/">Retry</a></strong> - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in <strong>Auto or Manual</strong> mode from this Retry Window.</li>
+    </ul>
+  </li>
 </ul>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\opdetails2.PNG" alt="opdetails2" /></p>
 
-<p>4) Click on the <strong>PLUGINS</strong> tab. You will be able to view the all the plugins available on your On-Premise environment. The following plugins will be listed: <strong><a href="/deployment/MYSQL-plugin-installation/">MySQL</a></strong> , <strong><a href="/deployment/OLE-db-plugin-installation/">OLEDB</a></strong> , <strong><a href="/deployment/hana-plugin-installation/">HANA</a></strong> and <strong>SQLite</strong>.</p>
+<h4 id="plugins-tab">Plugins Tab</h4>
+
+<p>1) Click on the <strong>PLUGINS</strong> tab. You will be able to view the all the plugins available on your On-Premise environment. The following plugins will be listed: <strong><a href="/deployment/MYSQL-plugin-installation/">MySQL</a></strong> , <strong><a href="/deployment/OLE-db-plugin-installation/">OLEDB</a></strong> , <strong><a href="/deployment/hana-plugin-installation/">HANA</a></strong> and <strong>SQLite</strong>.</p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\opdetails3.PNG" alt="opdetails3" /></p>
 
-<p>5) Clicking on the <strong>Setting</strong> tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.</p>
+<h4 id="setting-tab">Setting Tab</h4>
+
+<p>1) Clicking on the <strong>Setting</strong> tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.</p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\opdetails4.PNG" alt="opdetails4" /></p>
 
-<p><strong><code class="language-plaintext highlighter-rouge">Settings</code> have four available sections for managing OP Agents:</strong></p>
+<p><strong>Settings have FOUR available sections for managing OP Agents:</strong></p>
 
-<p>1) Retry Setting - One can schedule resync of failed integrations, where you can provide the start time, 
+<p>2) <strong>Retry Setting</strong> - One can schedule resync of failed integrations, where you can provide the start time, 
    no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
    you must activate Retry transaction.</p>
 
-<p>2) Log Settings - You can control the way you want to view and store the log in OP Agent from portal now.</p>
+<p>3) <strong>Log Settings</strong> - You can control the way you want to view and store the log in OP Agent from portal now.</p>
 
 <ul>
   <li>If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be 
@@ -2532,10 +2549,15 @@ stored in sql lite database and will be reflected in the log bucket.</li>
   <li>Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.</li>
 </ul>
 
-<p>3) Real Time Settings - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
+<p>4) <strong>Real Time Settings</strong> - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
    Users need to provide the Hostname and the Port for the RealTime Execution.</p>
 
-<p>4) Diagnostic Settings - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
+<p>5) <strong>Pending Timeout Settings</strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.
+The default time period of the <strong>Frequency of Pending Timeout</strong> field is <strong>5 mins</strong>. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.</p>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\pendingtimeout1.PNG" alt="pendingtimeout1" /></p>
+
+<p>5) <strong>Diagnostic Settings</strong> - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
    files will get available in Agent and service path as shown in the image.</p>
 
 <p>Diagnostic Settings is provided with two output paths:</p>
@@ -2664,7 +2686,7 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
 
 <h3 id="hosted-environment-details-page">Hosted Environment Details page</h3>
 
-<p>You will be able to view this page only when you have your hosted environment created. Clicking on the Hosted environment, you can view the details page.</p>
+<p>You will be able to view this page only when you have your hosted environment created. Clicking on the Hosted environment, you can view the details page. For <strong>My Hosted Environment</strong>, you will not have the <strong>Properties Tab</strong> as provided for an On-Premise Environment.</p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails1.PNG" alt="hosteddetails1" /></p>
 
@@ -2685,7 +2707,11 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
       <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
       <li>Log in Database: The log fetched, would be stored in the database.</li>
       <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
-      <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High &amp; Critical.</li>
+      <li>
+        <p>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High &amp; Critical.</p>
+      </li>
+      <li><strong>Pending Timeout Settings</strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.
+  The default time period of the <strong>Frequency of Pending Timeout</strong> field is <strong>5 mins</strong>. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.</li>
     </ul>
   </li>
 </ul>
@@ -2699,7 +2725,14 @@ The following are the details that will displayed for deployed Process Flows.</p
   <li><strong>Deployed At:</strong> The last deployment of the process flow will be displayed.</li>
   <li><strong>No. of tries:</strong> You will be able to view the count of the number of retries performed.</li>
   <li><strong>Status</strong> The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.</li>
-  <li><strong>Actions</strong> The following actions can be formed for each process flows: <strong>Last Deployment Log</strong> , <strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> , <strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong> and <strong><a href="/processflow/retry-processflow/">Retry</a></strong></li>
+  <li><strong>Actions</strong> The following actions can be formed for each process flows:
+    <ul>
+      <li><strong>Last Deployment Log</strong> - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.</li>
+      <li><strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> - This will enable you to undeploy a deployed process flow.</li>
+      <li><strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong>  - This will enable you view the snapshot for a process flow that is executed.</li>
+      <li><strong><a href="/processflow/retry-processflow/">Retry</a></strong> - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in <strong>Auto or Manual</strong> mode from this Retry Window.</li>
+    </ul>
+  </li>
 </ul>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG" alt="hosteddetails3" /></p>
