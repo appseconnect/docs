@@ -2397,7 +2397,7 @@
 
 
 
-  18 minute read
+  19 minute read
 </p>
                 
                 
@@ -2430,6 +2430,7 @@
       <li><a href="#deleting-environments">Deleting Environments</a></li>
     </ul>
   </li>
+  <li><a href="#last-deployment-log">Last Deployment Log</a></li>
   <li><a href="#environment-view-for-old-agents">Environment View for Old Agents</a>
     <ul>
       <li><a href="#working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</a></li>
@@ -2454,6 +2455,7 @@
     </ul>
   </li>
   <li>The will be no colour indicators for an Hosted Agent.</li>
+  <li>The view for the <strong><a href="/deployment/Environment-Management/#last-deployment-log">Last Deployment Log</a></strong> is same for both Hosted and On-Premise environment.</li>
 </ul>
 
 <h2 id="on-premise">On-Premise</h2>
@@ -2512,7 +2514,7 @@
   <li><strong>Status</strong> The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.</li>
   <li><strong>Actions</strong> The following actions can be formed for each process flows:
     <ul>
-      <li><strong>Last Deployment Log</strong> - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.</li>
+      <li><strong><a href="/deployment/Environment-Management/#last-deployment-log">Last Deployment Log</a></strong> - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.</li>
       <li><strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> - This will enable you to undeploy a deployed process flow.</li>
       <li><strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong>  - This will enable you view the snapshot for a process flow that is executed.</li>
       <li><strong><a href="/processflow/retry-processflow/">Retry</a></strong> - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in <strong>Auto or Manual</strong> mode from this Retry Window.</li>
@@ -2727,7 +2729,7 @@ The following are the details that will displayed for deployed Process Flows.</p
   <li><strong>Status</strong> The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.</li>
   <li><strong>Actions</strong> The following actions can be formed for each process flows:
     <ul>
-      <li><strong>Last Deployment Log</strong> - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.</li>
+      <li><strong><a href="/deployment/Environment-Management/#last-deployment-log">Last Deployment Log</a></strong> - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.</li>
       <li><strong><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a></strong> - This will enable you to undeploy a deployed process flow.</li>
       <li><strong><a href="/processflow/snapshot-processflow/">View Snapshot</a></strong>  - This will enable you view the snapshot for a process flow that is executed.</li>
       <li><strong><a href="/processflow/retry-processflow/">Retry</a></strong> - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in <strong>Auto or Manual</strong> mode from this Retry Window.</li>
@@ -2817,6 +2819,34 @@ This section of the document will allow to attach/detach your environments. You 
 
 <p><strong>Note: If a user has relogged in to a deleted Agent from the portal, 
 the deleted agent now will be visible in attached mode in the portal.</strong></p>
+
+<h2 id="last-deployment-log">Last Deployment Log</h2>
+
+<p>This feature will store and will enable the user to view the stored deployment logs of the Process Flows, which was previously deployed. Clicking on the <strong>Last Deployment Log</strong> button, you can view the following details.</p>
+<ul>
+  <li>
+    <p><strong>Process Flow Name</strong> - The Process Flow name will be displayed whose <strong>Last deployment log</strong> window is opened.</p>
+  </li>
+  <li>
+    <p><strong>Environment Name</strong> - You will be displayed with the environment to which the process flow is deployed. The window of the <strong>Last Deployment Log</strong> will remain the same</p>
+  </li>
+  <li>
+    <p><strong>Deployment Status</strong> - The status of the Deployment will be displayed to the user. The status can either <strong>Successful</strong>, <strong>Unsuccessful</strong> or <strong>Pending</strong>. For more details on unfinished deployments, <a href="/processflow/unfinished-deployment/">Click Here</a></p>
+  </li>
+  <li>
+    <p><strong>Deployment Start Time</strong> - This will display you the Start Time of the deployment process.</p>
+  </li>
+  <li>
+    <p><strong>Deployment End Time</strong> - This will display you the End Time of the deployment process.</p>
+  </li>
+  <li>
+    <p><strong>Last Deployment Log</strong> - This section will display you the deployment logs, deployed previously.</p>
+  </li>
+</ul>
+
+<p><strong>Note: The view for the Last Deployment Log is same for both Hosted and On-Premise environment.</strong></p>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\lastdeploylogs1.PNG" alt="lastdeploylogs" /></p>
 
 <h2 id="environment-view-for-old-agents">Environment View for Old Agents</h2>
 

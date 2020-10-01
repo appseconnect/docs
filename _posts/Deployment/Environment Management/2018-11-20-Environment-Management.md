@@ -21,6 +21,7 @@ menus:
     - RED indicator - Agent is either detached or inactive.
     - BLUE indicator - Agent is up and Running.
 * The will be no colour indicators for an Hosted Agent.
+* The view for the **[Last Deployment Log](/deployment/Environment-Management/#last-deployment-log)** is same for both Hosted and On-Premise environment.
 
 ## On-Premise
 
@@ -74,7 +75,7 @@ This section of the document will allow you to view and understand the details o
 - **No. of tries:** You will be able to view the count of the number of retries performed.
 - **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
 - **Actions** The following actions can be formed for each process flows: 
-    - **[Last Deployment Log]()** - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.
+    - **[Last Deployment Log](/deployment/Environment-Management/#last-deployment-log)** - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.
     - **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** - This will enable you to undeploy a deployed process flow.
     - **[View Snapshot](/processflow/snapshot-processflow/)**  - This will enable you view the snapshot for a process flow that is executed.
     - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
@@ -261,7 +262,7 @@ The following are the details that will displayed for deployed Process Flows.
 - **No. of tries:** You will be able to view the count of the number of retries performed.
 - **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
 - **Actions** The following actions can be formed for each process flows: 
-    - **[Last Deployment Log]()** - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.
+    - **[Last Deployment Log](/deployment/Environment-Management/#last-deployment-log)** - This will store and enble you to view the log details of the Process Flow Deployment process, deployed previously. If a new deployment is done, the last deployment log will now store the latest logs until any further deployment is done for that process flow.
     - **[Undeploy](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment)** - This will enable you to undeploy a deployed process flow.
     - **[View Snapshot](/processflow/snapshot-processflow/)**  - This will enable you view the snapshot for a process flow that is executed.
     - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
@@ -348,13 +349,21 @@ All the services and sync operations will get stopped. If any new user or differ
 the deleted agent now will be visible in attached mode in the portal.**
 
 ## Last Deployment Log
+
 This feature will store and will enable the user to view the stored deployment logs of the Process Flows, which was previously deployed. Clicking on the **Last Deployment Log** button, you can view the following details.
-    - **Process Flow Name** - The Process Flow name will be displayed whose **Last deployment log** window is opened. 
-    - **Environment Name** - You will be displayed with the environment to which the process flow is deployed. The window of the **Last Deployment Log** will remain the same 
-    - **Deployment Status** - The status of the Deployment will be displayed to the user. The status can either **Successful**, **Unsuccessful** or **Pending**. For more details on unfinished deployments, [Click Here](/processflow/unfinished-deployment/) 
-    - **Deployment Start Time** - This will display you the Start Time of the deployment process.
-    - **Deployment End Time** - This will display you the End Time of the deployment process.
-    - **Last Deployment Log** - This section will display you the deployment logs, deployed previously.
+- **Process Flow Name** - The Process Flow name will be displayed whose **Last deployment log** window is opened. 
+
+- **Environment Name** - You will be displayed with the environment to which the process flow is deployed. The window of the **Last Deployment Log** will remain the same 
+
+- **Deployment Status** - The status of the Deployment will be displayed to the user. The status can either **Successful**, **Unsuccessful** or **Pending**. For more details on unfinished deployments, [Click Here](/processflow/unfinished-deployment/) 
+
+- **Deployment Start Time** - This will display you the Start Time of the deployment process.
+
+- **Deployment End Time** - This will display you the End Time of the deployment process.
+
+- **Last Deployment Log** - This section will display you the deployment logs, deployed previously.
+
+**Note: The view for the Last Deployment Log is same for both Hosted and On-Premise environment.**
 
 ![lastdeploylogs](\staticfiles\deployment\media\EasyEnv\lastdeploylogs1.PNG)
 
