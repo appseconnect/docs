@@ -20,6 +20,8 @@ in a different organisation. This document will help you to create a new package
 - You need to have valid credential to the portal.
 - You need to have the Process Flow created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
 - You cannot create package out of a [Shared package](/processflow/processflow-package-sharing/), for the process flows that are [installed](/processflow/processflow-package-installation/) on your organisation.
+- You can select your process flows only from the [Process Flow folder](/processflow/processflow-listing-page/#process-flow-folder) and its sub-folder.
+- You can add as many process flows for creating a package. There is no specified limit when adding process flows, while creating package.
 
 ## Creating Packages
 

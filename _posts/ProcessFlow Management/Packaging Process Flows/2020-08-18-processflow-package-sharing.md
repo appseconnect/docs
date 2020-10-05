@@ -20,7 +20,10 @@ This document will enable you to initate sharing packages from one organisation 
 - You need to have valid credential to the portal.
 - You need to have the Process Flows created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
 - You should have the packages created on your organisation. Steps to create new packages is given [here](/processflow/processflow-packaging/#creating-packages).
-- The packages created will be listed on the [package listing](/processflow/processflow-packaging/#listing-packages) page
+- The packages created will be listed on the [package listing](/processflow/processflow-packaging/#listing-packages) page.
+- You cannot reshare a shared package to an another organisation.
+- You can share your created packages to multiple organisations at one go.
+- Both the users of the source organisation and recipient organisation, will recieve the emails on its successful sharing.
 
 ## Share Packages to Organisations
 
