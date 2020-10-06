@@ -1989,7 +1989,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Important Terminology",
-      excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
+      excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Process Flow Folder It is...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 219
@@ -5047,7 +5047,7 @@ var store = [
       {
         "title": "Important Terminology",
         "url": "/processflow/Terminology/",
-        "excerpt": "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
+        "excerpt": "This document demonstrates the important terminologies that you need to consider while using Process Flows Process Flow Folder It is...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -25,15 +25,14 @@ in a different organisation. This document will help you to create a new package
 
 ## Creating Packages
 
-1) Navigate to the **Designer > Process Flow**. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
 
-![package1](\staticfiles\processflow\media\package1.PNG)
 
 2) Expand the Package Library node to view **My Packages**. Clicking on My Packages, you will be able to view the following screen. Click on the **Click Here** button to create a new package. 
 
 ![package2](\staticfiles\processflow\media\package2.PNG)
 
-3) If you already have packages created, you can create new packages by clicking on the **CREATE** button as shown below.
+3) If you already have packages created, you can create new packages by clicking on the **CREATE** button as shown below. You can also view the [**SHARE**](/processflow/processflow-package-sharing/) button beside `CREATE` that will enable you to share the your created packages.
+The filter button, will allow you to search and filter your existing packages based on the input provided in search box.
 
 ![package](\staticfiles\processflow\media\package.PNG)
 

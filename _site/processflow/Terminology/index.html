@@ -2397,7 +2397,7 @@
 
 
 
-  3 minute read
+  4 minute read
 </p>
                 
                 
@@ -2410,12 +2410,14 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#home-folder">Home Folder</a></li>
+  <li><a href="#process-flow-folder">Process Flow Folder</a></li>
   <li><a href="#trash-folder">Trash Folder</a></li>
   <li><a href="#deploy">Deploy</a></li>
   <li><a href="#hosted-environment">Hosted Environment</a></li>
   <li><a href="#tracker">Tracker</a></li>
   <li><a href="#apps">APPS</a></li>
+  <li><a href="#manage-schema">Manage Schema</a></li>
+  <li><a href="#manage-actions">Manage Actions</a></li>
   <li><a href="#links">Links</a></li>
   <li><a href="#nodes">Nodes</a></li>
   <li><a href="#flow-connect">Flow Connect</a></li>
@@ -2433,19 +2435,20 @@
                 
                 <p>This document demonstrates the important terminologies that you need to consider while using Process Flows</p>
 
-<h3 id="home-folder">Home Folder</h3>
-<p>It is a default folder available in the listing page. You can create child folder from the Home folders for managing and organising Process Flows.</p>
+<h3 id="process-flow-folder">Process Flow Folder</h3>
+<p>It is one the default folders available in the <a href="/processflow/processflow-listing-page/#process-flow-folder">listing page</a>. You can create child folders from the Process Flow folders for managing and organising Process Flows.</p>
 
 <h3 id="trash-folder">Trash Folder</h3>
-<p>This is the second default folder available in the Process Flow Listing Page. Any folders or Process flow 
-that are deleted from Home level or Folder level will move to the TRASH folder.</p>
+<p>The Trash folder is also available in the Process Flow Listing Page. Any folders or Process flow 
+that are deleted from Process Flow folder level or Sub-Folder level will move to the TRASH folder. For more details on the Trash Folder, <a href="/processflow/processflow-listing-page/#trash-folder">Click Here.</a></p>
 
 <h3 id="deploy">Deploy</h3>
 <p>Any designed Process Flow needs to undergo the steps for deployment before the execution process. 
-Deploy button will allow you to deploy configurations to the environment for execution.</p>
+Deploy button will allow you to deploy configurations to the environment for execution. <a href="/processflow/deploying-and-executing-processfloww/#deploying-process-flows-to-environment">Click Here</a> to know more on the Deployment process of the Process Flows.
+You can deploy your process flow either on the <a href="/processflow/deploying-and-executing-processfloww/#deploy-process-flows-hosted-environment">Hosted Environment</a> or <a href="/processflow/deploying-and-executing-processfloww/#deploy-process-flows-on-premise-environment">On-Premise Environment</a>.</p>
 
 <h3 id="hosted-environment">Hosted Environment</h3>
-<p>This the Cloud Agent of APPSeCONNECT that will enable the user to execute Process Flows using the cloud technology of APPSeCONNECT.</p>
+<p>This the Cloud Agent of APPSeCONNECT that will enable the user to execute Process Flows using the cloud technology of APPSeCONNECT. For more details on Hosted Environment, <a href="/deployment/Environment-Management/#hosted">Click Here</a></p>
 
 <h3 id="tracker">Tracker</h3>
 <p>This button will allow the user view node specific execution messages while the process flow executes in Manual Mode. Tracker window automatically open when clicked on the execute button.</p>
@@ -2455,6 +2458,14 @@ Deploy button will allow you to deploy configurations to the environment for exe
 You can view all the Pre-packaged, custom and Tech applications that has been provided or created on your 
 organisation.</p>
 
+<h3 id="manage-schema">Manage Schema</h3>
+<p>This section will allow you to manage the all the schemas and the attributes of your chosen application dragged to the process flow designer. You can anytime add/import, application specific schemas and manage them accordingly.
+For more details related to Manage Schema, <a href="/processflow/adding-schema-actions/">Click Here</a></p>
+
+<h3 id="manage-actions">Manage Actions</h3>
+<p><a href="/processflow/manage-actions-actionfilters-errorfilters/">Manage Actions</a> will allow you to add and create Actions and its related filters, required while fetching data from source application. 
+You can also create filter templates both for Action Filters and Retry Filters.</p>
+
 <h3 id="links">Links</h3>
 <p>Links are termed as connection to two or more nodes demarking the flow of data from one node to another. 
 In certain step, a link can also point to itself, which is termed as self-loop, this kind of loops will indicate a continuous flow of execution of a single node and triggering the data back to the flow.</p>
@@ -2463,44 +2474,48 @@ In certain step, a link can also point to itself, which is termed as self-loop, 
 <p>Nodes are associated with a particular action which uses specific configuration depending on the 
 node selected. Each node in APPSeCONNECT Process Flow is tied to a connection, such that when the node 
 is executed the data from that particular Application is generated and responded back to the application 
-workspace. Every node in Process Flow has a node configuration button that will enable you to make configurational settings to the respective nodes.</p>
+workspace. Every node in Process Flow has a node configuration button that will enable you to make configurational settings to the respective nodes. 
+To know more about the node availble for Process Flow, <a href="/processflow/processflow-nodes-and-links/">Click Here.</a></p>
 
 <h3 id="flow-connect">Flow Connect</h3>
-<p>The menu will enable you to add &amp; create custom application nodes like Connector, FTP, File, Database, REST.</p>
+<p>The menu will enable you to add &amp; create custom application nodes like Connector, FTP, File, Database, REST. You can anytime create your Technology Application with the <a href="/processflow/designer-processflow/">Process Flow Designer</a>.
+Yo know more about the Technology App Creation, <a href="/processflow/technology-app-creation-using-processflow/">Click Here</a>.</p>
 
 <h3 id="mapper-node">Mapper Node</h3>
 <p>For transforming data from one application to another, you need to add the mapper node for transforming 
 the Source file to Destination file. Mapper Node in Process Flow does this job for you by implement
  mapping and transformations.</p>
 
+<p>For more details on the Mapper Node, <a href="/processflow/working-with-mapper/">Click Here</a></p>
+
 <h3 id="redeploy">Redeploy</h3>
-<p>Redeploy is a concept in Process flow that will allow the user to make changes to any node configurations 
+<p><a href="/processflow/redeploying-processflow/">Redeploy</a> is a concept in Process flow that will allow the user to make changes to any node configurations 
 after deploying for the first time. You will not be able to change the environment when redeploying for 
 next instances.</p>
 
 <h3 id="undeploy">Undeploy</h3>
-<p>Undeploy in Process flow will enable you to remove a deployed as well as an executed process flow from 
+<p><a href="/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment">Undeploy</a> in Process flow will enable you to remove a deployed as well as an executed process flow from 
 the associated environment.</p>
 
 <h3 id="process-flow-snapshot">Process Flow Snapshot</h3>
-<p>Snapshot in Process Flows will provide you with node specific execution status that would give you a 
+<p><a href="/processflow/snapshot-processflow/">Snapshot in Process Flows</a> will provide you with node specific execution status that would give you a 
 clear message on every data that are fetched, transformed and successfully synced.</p>
 
 <h3 id="process-flow-retry">Process Flow Retry</h3>
 <p>In real-time execution, data might fail to sync to destination application for various reasons like 
 network connectivity, transformation error etc. These failed data will be available for Resync, 
-both in Auto and Manual mode, such that no data lost while executing.</p>
+both in Auto and Manual mode, such that no data lost while executing. <a href="/processflow/retry-processflow/">Click Here</a> to know more on Process Flow Retry.</p>
 
 <h3 id="repositories">Repositories</h3>
-<p>Repositories in APPSeCONNECT will allow you to create master data tables for maintaining &amp; storing lookups 
+<p><a href="/processflow/Lookup-repository-masterdata/">Repositories in APPSeCONNECT</a> will allow you to create master data tables for maintaining &amp; storing lookups 
 based on lookup types (Tax, Freight, Country etc)  that are required for providing specific value to fields.</p>
 
 <h3 id="repository-collection">Repository Collection</h3>
 <p>This is the master data bucket where you can store and manage multiple lookups and lookup tables. 
-You can create multiple repository collection in an organisation.</p>
+You can create multiple repository collection in an organisation. <a href="/processflow/Lookup-repository-masterdata/#steps-to-create-repository-collections">Click Here</a> to know more about the steps to create Repository Collections.</p>
 
 <h3 id="reference-tables">Reference Tables</h3>
-<p>Reference Table are the Lookup tables that gives an easy user experience to store 
+<p><a href="/processflow/Lookup-repository-masterdata/#reference-tables">Reference Tables</a> are the Lookup tables that gives an easy user experience to store 
 and manage lookups of similar types. A collection can have multiple Reference Tables and 
 can used as per need.</p>
 

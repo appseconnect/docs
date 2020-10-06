@@ -23,5 +23,6 @@ Given below is the list of elements you will be able to use in APPSeCONNECT Proc
 |[Splitter Node](/processflow/working-with-processflow-splitter/)|Splitter Node in Process Flow will split the incoming data into small packets such that the execution load of bulk data can be minimized during the execution process.|
 |[Merger Node](/processflow/working-with-revamped-merger/)|Merger Node in Process Flow will merge multiple data into batches as per the input provided by the user.  |
 |[Self loop](/processflow/working-with-processflow-selfloop/)|This enables the user to apply self-loop on a node such that on execution, the self-loop will iterate until all data is available from its predecessor node.|
+|[Delay Node](/processflow/working-with-processflow-delay/)| This node will enable you to hold the execution flow for a specific period, so as to fetch more incoming requests from the Predecessor Node. Delay node can be implemented anywhere within a process flow, and the configuration for implementing delay can be provided using Static Time or by using a Dynamic Time.|
 |[Decision Node](/processflow/working-with-decision/)|This node enables you to apply condition checks for filtering redundant data|
 |End Node| This node signifies the completion of the sync process. You may or may not use the End node to design Process Flows.|

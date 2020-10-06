@@ -25,7 +25,7 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 
 |Modules|Details|
 |---|---|
-|[Home](/accessing%20portal/accessing-portal/#home)|This page will allow the users to get a kickstart with the APPSeCONNECT portal.|
+|[Home](/accessing%20portal/accessing-portal/#home)|This page will show the details of the organisation, user logged in into. Project Basic Information, Configuration Completion Details etc.|
 |[Designer](/accessing%20portal/accessing-portal/#designer)|This section will allow the user to design the business flows using Workflows or Process Flows|
 |[Deploy](/accessing%20portal/accessing-portal/#deploy)|This section will let the users working with the Environment deployed|
 |[Manage](/accessing%20portal/accessing-portal/#manage)|This section will allow the users to manage their Apps, Connections, Rules, Repositories, APIs, Feeds, Monitoring etc.|
