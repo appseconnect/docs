@@ -2266,62 +2266,6 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/release-notes/2020/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020/" onclick="selectTab('/release-notes/2020/', event);" title="Go to 2020">2020</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-url="/release-notes/2020-Q2-V1.0-Hotfix/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q2-V1.0-Hotfix/" onclick="selectTab('/release-notes/2020-Q2-V1.0-Hotfix/', event);" title="Go to Q2 V1.0 Hotfix Release Note">Q2 V1.0 Hotfix Release Note</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/release-notes/2020-Q2/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q2/" onclick="selectTab('/release-notes/2020-Q2/', event);" title="Go to Q2 V 4.7.0">Q2 V 4.7.0</a>
-        
-        
-        
-<ul class="nav__items">
-    
-    
-    <li class="menu-item-" data-url="/release-notes/2020-Q2-V2.0-Hotfix/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q2-V2.0-Hotfix/" onclick="selectTab('/release-notes/2020-Q2-V2.0-Hotfix/', event);" title="Go to Q2 V2.0 Hotfix Release Note">Q2 V2.0 Hotfix Release Note</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/release-notes/2020-Q2-V1.0-Hotfix/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q2-V1.0-Hotfix/" onclick="selectTab('/release-notes/2020-Q2-V1.0-Hotfix/', event);" title="Go to Q2 V1.0 Hotfix Release Note">Q2 V1.0 Hotfix Release Note</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/release-notes/2020-Q3/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q3/" onclick="selectTab('/release-notes/2020-Q3/', event);" title="Go to Q3 V 4.8.0">Q3 V 4.8.0</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/release-notes/2020-Q1/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
-        <a href="/release-notes/2020-Q1/" onclick="selectTab('/release-notes/2020-Q1/', event);" title="Go to Q1 V 4.6.0">Q1 V 4.6.0</a>
-        
-    </li>
-    
-</ul>
-
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/release-notes/2019/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/release-notes/2019/" onclick="selectTab('/release-notes/2019/', event);" title="Go to 2019">2019</a>
         
@@ -2708,7 +2652,7 @@ You can now create robust packages of Processflows which helps you</p>
 
 <p><strong>Multiple Oganization Level Package Sharing &amp; Installation</strong>  <br />
 You now get the flexibilty of predefined package sharing across organizations and perform
-integration activity in the shared packages and enables you</p>
+integration activity in the shared packages and thus enables you</p>
 
 <ul>
   <li>To easily share packages in a click of a button.</li>
@@ -2757,10 +2701,11 @@ You can now manage multiple execution of  Processflows and this enables you</p>
 <p><strong>Workflow Execution with Cloud App Resource Function</strong>  <br />
 Fix:</p>
 <ul>
-  <li>Workflow displaying failed Transformation logs, while mapped with Cloud App Resource Function.           <br />
-With this release users will able to design the Cloud App Resource function enabled workflow, and can sync data 
-from source app to destination app succesfully.</li>
+  <li>Workflow snapshot displaying failed Transformation logs, while mapped with Cloud App Resource Function.</li>
 </ul>
+
+<p>With this release users will able to design the Cloud App Resource function enabled workflow, and can sync data 
+from source app to destination app succesfully.</p>
 
 <p><strong>Workflow Snapshot File Tab</strong>  <br />
 Fix:</p>
@@ -2806,15 +2751,13 @@ APPSeCONNECT can now intelligently track the deployment &amp; Undeployment of th
   <li>To effectively manage Retrying Error Data</li>
 </ul>
 
-<h4 id="enhancements-2">Enhancements</h4>
-
 <h2 id="connector">Connector</h2>
 
 <h4 id="new-integrations">New Integrations</h4>
 
 <p>Given below are the integration areas for business process automation.</p>
 
-<p><strong>Magento 2.0 B2B to Sage 300</strong>
+<p><strong>Magento 2.0 B2B to Sage 300</strong><br />
 This feature syncs data from Magento 2.0 B2B to Sage 300 and vice versa 
 so that sync requirements between the applications are met.</p>
 
@@ -2848,11 +2791,10 @@ with all details.</p>
   <li>Default Custom limit is configured to 20.</li>
 </ul>
 
-<p><strong>Enhanced Magento 2.0 Adapter</strong>  <br />
+<p><strong>Enhanced Magento 2.0 Adapter</strong>    <br />
 Enhanced version of Magento 2 Adapter  is enabled with the fix given below</p>
 
 <p>Fix:</p>
-
 <ul>
   <li>Magento adapter resync issue for shipments occuring, as resync api for Magneto is
 different from others api &amp; filters.</li>
@@ -2870,27 +2812,28 @@ During Push operation to Magento as “Reference to an object not set to an obje
 <p>With this release, users will be able to view the error details clearly as
 ErrorLog(logger,”Upload URL is not defined in Mapping section. Can not be pushed to Magento2”, “Please define UploadURL from the attribte mapping to resolve the error”);</p>
 
-<p><strong>Enhanced Generic Rest Adapter</strong>
+<p><strong>Enhanced Generic Rest Adapter</strong><br />
 Enhanced version of Generic Rest adapter presents you the following features</p>
 
 <p>Custom browsing Support for Token Generation - Generic Rest adapter latest version supports 
 Custom browsing thereby enabling OAuth 2.0 Token Generation.</p>
 
-<p>Fix:                  <br />
-REST Adapter Destination App after sync for Status code 204,
-was displaying  unprocessed status in Resync bucket.</p>
+<p>Fix:</p>
+<ul>
+  <li>REST Adapter Destination App after sync for Status code 204,
+was displaying  unprocessed status in Resync bucket.</li>
+</ul>
 
 <p>With this release, resync bucket will now return the success message for the Status Code 204 for Rest based application.</p>
 
-<p><strong>Enhanced Shopify Adapter</strong> 
+<p><strong>Enhanced Shopify Adapter</strong>   <br />
 The enhanced version of  SHOPIFY adapter will provide you the following feature</p>
 
 <p>Improved Output Packet Generation - Shopify Adapter will create Output Packet
 irrespective of Primary Key configuration in Source Application.</p>
 
-<p><strong>Enhanced ZohoBook Adapter</strong>
+<p><strong>Enhanced ZohoBook Adapter</strong>  <br />
 The enhanced version of ZohoBook adapter will provide you the following feature</p>
-
 <ul>
   <li>OAuth 2.0 Support for On-Premise - Users will now get Oauth 2.0 authentication 
 process when validating with ZohoBook.</li>
@@ -2901,9 +2844,11 @@ custom browsing thereby enabling OAuth 2.0 Token Generation.</li>
 <h4 id="extension">Extension</h4>
 
 <p><strong>Nav Extension</strong><br />
-Fix:<br />
-During import of the items in NAV into AEC tables, the data is getting created in the table
-but it is also creating one blank line in the web item details table.</p>
+Fix:</p>
+<ul>
+  <li>During import of the items in NAV into AEC tables, the data is getting created in the table
+but it is also creating one blank line in the web item details table.</li>
+</ul>
 
 <p>With this release, the 0 value line is removed and, all the data gets populated.</p>
 
@@ -5550,22 +5495,6 @@ but it is also creating one blank line in the web item details table.</p>
 
                             
 
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            
-
                              
                              
                             
@@ -5649,10 +5578,6 @@ but it is also creating one blank line in the web item details table.</p>
                                     Q4 Release Version 3.3.0
                                 </a>
                             </li>
-                            
-                            
-                            
-                            
                             
                             
                             

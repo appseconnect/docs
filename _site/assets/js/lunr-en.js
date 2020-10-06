@@ -2528,38 +2528,11 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "2020-Q2 Version 1.0 Hotfix Release Note",
-      excerpt: "This document highlights the details of V1.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
-      categories: ["release-notes"],
-      tags: ["developers"],
-      id: 279
-    });
-    
-  
-    idx.add({
-      title: "2020-Q2 Version 2.0 Hotfix Release Note",
-      excerpt: "This document highlights the details of V2.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
-      categories: ["release-notes"],
-      tags: ["developers"],
-      id: 280
-    });
-    
-  
-    idx.add({
       title: "Release Notes",
       excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 281
-    });
-    
-  
-    idx.add({
-      title: "APPSeCONNECT 2020 Release",
-      excerpt: "This section will give you detailed description of 2020 releases. Presently the enlisted sections under 2020 Release is given under...",
-      categories: ["release-notes"],
-      tags: ["developers"],
-      id: 282
+      id: 279
     });
     
   
@@ -2568,7 +2541,16 @@ var idx = lunr(function () {
       excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 283
+      id: 280
+    });
+    
+  
+    idx.add({
+      title: "2020-Q2 Version 2.0 Hotfix Release Note",
+      excerpt: "This document highlights the details of V2.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 281
     });
     
   
@@ -2577,7 +2559,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 284
+      id: 282
     });
     
   
@@ -2586,7 +2568,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 285
+      id: 283
     });
     
   
@@ -2595,7 +2577,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 286
+      id: 284
     });
     
   
@@ -2604,7 +2586,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 287
+      id: 285
     });
     
   
@@ -2613,7 +2595,7 @@ var idx = lunr(function () {
       excerpt: "Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 288
+      id: 286
     });
     
   
@@ -2622,7 +2604,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2014 releases. Product Release Version: 2.1.0 Product Release Version: 2.0.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 289
+      id: 287
     });
     
   
@@ -2631,7 +2613,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2015 releases. Product Release Version: 2.5.0 Product Release Version: 2.4.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 290
+      id: 288
     });
     
   
@@ -2640,7 +2622,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2016 releases. Product Release Version: 3.3.0 Product Release Version: 3.2.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 291
+      id: 289
     });
     
   
@@ -2649,7 +2631,7 @@ var idx = lunr(function () {
       excerpt: "Link Ordering of Nodes for Sequential Execution Process Flow being the advanced sync flow feature of APPSeCONNECT, allows you to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 292
+      id: 290
     });
     
   
@@ -2658,7 +2640,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.0.0 Release notes were published and last revised in April 2016. We started the new year with...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 293
+      id: 291
     });
     
   
@@ -2667,7 +2649,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.1.0 As per our schedule, we are trying to continuously improve our platform with newer features. We...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 294
+      id: 292
     });
     
   
@@ -2676,7 +2658,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.2.0 APPSeCONNECT being the only integration platform to support end to end business process provider, we are...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 295
+      id: 293
     });
     
   
@@ -2685,7 +2667,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.3.0 APPSeCONNECT focusses on delivering more and more flexibility, power and ease to its users. We try...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 296
+      id: 294
     });
     
   
@@ -2694,7 +2676,7 @@ var idx = lunr(function () {
       excerpt: "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 297
+      id: 295
     });
     
   
@@ -2703,7 +2685,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.2.0 During the first quarter of 2015 product cycle, we wanted to give you some interesting features....",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 298
+      id: 296
     });
     
   
@@ -2712,7 +2694,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.3.0 This release mainly focusses on providing a number of new features which our users thought to...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 299
+      id: 297
     });
     
   
@@ -2721,7 +2703,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.4.0 This release mainly focusses on enhancing the APPSeCONNECT usage by providing more automation from base and...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 300
+      id: 298
     });
     
   
@@ -2730,7 +2712,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.5.0 Bug bash release focusses mainly on removing bugs from the product and enhancing the already existing...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 301
+      id: 299
     });
     
   
@@ -2739,7 +2721,7 @@ var idx = lunr(function () {
       excerpt: "What is halt-resume node HALT and RESUME nodes are used in a combination. We implement HALT node to halt the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 302
+      id: 300
     });
     
   
@@ -2748,7 +2730,7 @@ var idx = lunr(function () {
       excerpt: "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 303
+      id: 301
     });
     
   
@@ -2757,7 +2739,7 @@ var idx = lunr(function () {
       excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 304
+      id: 302
     });
     
   
@@ -2766,7 +2748,7 @@ var idx = lunr(function () {
       excerpt: "Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 305
+      id: 303
     });
     
   
@@ -2775,7 +2757,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
       categories: ["Glossary"],
       tags: ["developers"],
-      id: 306
+      id: 304
     });
     
   
@@ -2784,7 +2766,7 @@ var idx = lunr(function () {
       excerpt: "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
       categories: ["Glossary"],
       tags: ["developers"],
-      id: 307
+      id: 305
     });
     
   
@@ -2793,7 +2775,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 308
+      id: 306
     });
     
   
@@ -2802,7 +2784,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 309
+      id: 307
     });
     
   
@@ -2811,7 +2793,7 @@ var idx = lunr(function () {
       excerpt: "Process Flow Packaging Overview: Zipping up of multiple files in packages makes it easy to reuse and share with different...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 310
+      id: 308
     });
     
   
@@ -2820,7 +2802,7 @@ var idx = lunr(function () {
       excerpt: "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 311
+      id: 309
     });
     
   
@@ -2829,7 +2811,7 @@ var idx = lunr(function () {
       excerpt: "Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 312
+      id: 310
     });
     
   
@@ -2838,7 +2820,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 313
+      id: 311
     });
     
   
@@ -5930,28 +5912,6 @@ var store = [
     
       
       {
-        "title": "2020-Q2 Version 1.0 Hotfix Release Note",
-        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
-        "excerpt": "This document highlights the details of V1.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "2020-Q2 Version 2.0 Hotfix Release Note",
-        "url": "/release-notes/2020-Q2-V2.0-Hotfix/",
-        "excerpt": "This document highlights the details of V2.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Release Notes",
         "url": "/release-notes/overview/",
         "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
@@ -5963,9 +5923,9 @@ var store = [
     
       
       {
-        "title": "APPSeCONNECT 2020 Release",
-        "url": "/release-notes/2020/",
-        "excerpt": "This section will give you detailed description of 2020 releases. Presently the enlisted sections under 2020 Release is given under...",
+        "title": "2020-Q2 Version 1.0 Hotfix Release Note",
+        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5974,9 +5934,9 @@ var store = [
     
       
       {
-        "title": "2020-Q2 Version 1.0 Hotfix Release Note",
-        "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
-        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
+        "title": "2020-Q2 Version 2.0 Hotfix Release Note",
+        "url": "/release-notes/2020-Q2-V2.0-Hotfix/",
+        "excerpt": "This document highlights the details of V2.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
