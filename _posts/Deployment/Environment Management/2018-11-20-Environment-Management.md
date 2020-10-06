@@ -95,11 +95,11 @@ This section of the document will allow you to view and understand the details o
 
 **Settings have FIVE available sections for managing OP Agents:**
 
-- [**Retry Setting**]()
-- [**Log Settings**]()
-- [**Real Time Settings**]()   
-- [**Pending Timeout Settings**]() 
-- [**Diagnostic Settings**]()   
+- [**Retry Setting**](/deployment/Environment-Management/#retry-setting)
+- [**Log Settings**](/deployment/Environment-Management/#log-settings)
+- [**Real Time Settings**](/deployment/Environment-Management/#real-time-settings)   
+- [**Pending Timeout Settings**](/deployment/Environment-Management/#pending-timeout-settings) 
+- [**Diagnostic Settings**](/deployment/Environment-Management/#diagnostic-settings)   
 
 ![opdetails4](\staticfiles\deployment\media\EasyEnv\opdetails4.PNG)
 
@@ -213,11 +213,11 @@ You will be able to view this page only when you have your hosted environment cr
 
 1) Clicking on the Hosted environment, will provide you with TWO tabs: **Settings** and **Process Flows**.
 
-2) You will be able to view the following section when clicked on the [**Settings**]() tab. You can view the following settings panel in the page.
+2) You will be able to view the following section when clicked on the [**Settings**](/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise) tab. You can view the following settings panel in the page.
 
-- **[Retry Settings]():** - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
-- **[Log Settings]():** You can control the way you want to view and store the logs for every execution on you hosted environment.
-- **[Pending Timeout Settings]()** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
+- **[Retry Settings](/deployment/Environment-Management/#retry-setting):** - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
+- **[Log Settings](/deployment/Environment-Management/#log-settings):** You can control the way you want to view and store the logs for every execution on you hosted environment.
+- **[Pending Timeout Settings](/deployment/Environment-Management/#pending-timeout-settings)** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
    
 ![hosteddetails2](\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG)
 
@@ -241,6 +241,8 @@ Following the above process, you can easily view and update the details of the H
 ## SETTINGS tab on Details Page: Hosted & On-Premise
 Configurations for the **SETTINGS** tab remains same for both **[On-Premise](/deployment/Environment-Management/#on-premise-environment-details-page)** & **[Hosted](/deployment/Environment-Management/#hosted-environment-details-page)** Environment details page.
 The following configuration can be applied on the SETTINGS page for either of the chosen environment: On-Premise or Hosted.
+
+**Note: For [Hosted Agents Settings](/deployment/Environment-Management/#hosted-environment-details-page), only Three Settings are available - Retry, Log & Prending Timeout Settings.** 
 
 ### Retry Setting 
 - One can schedule resync of failed integrations, where you can provide the start time, no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
@@ -279,6 +281,8 @@ a)	Agent Output Path: This path provides the details of the transformed files wh
 b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.       
 
 ![opdetails5](\staticfiles\deployment\media\EasyEnv\opdetails5.PNG)
+
+**Note: For [Hosted Agents Settings](/deployment/Environment-Management/#hosted-environment-details-page), only Three Settings are available - Retry, Log & Prending Timeout Settings.** 
 
 ## Manage Control of Environments
 

@@ -2423,6 +2423,15 @@
       <li><a href="#hosted-environment-details-page">Hosted Environment Details page</a></li>
     </ul>
   </li>
+  <li><a href="#settings-tab-on-details-page-hosted--on-premise">SETTINGS tab on Details Page: Hosted &amp; On-Premise</a>
+    <ul>
+      <li><a href="#retry-setting">Retry Setting</a></li>
+      <li><a href="#log-settings">Log Settings</a></li>
+      <li><a href="#real-time-settings">Real Time Settings</a></li>
+      <li><a href="#pending-timeout-settings">Pending Timeout Settings</a></li>
+      <li><a href="#diagnostic-settings">Diagnostic Settings</a></li>
+    </ul>
+  </li>
   <li><a href="#manage-control-of-environments">Manage Control of Environments</a></li>
   <li><a href="#detaching--deleting-the-environments">Detaching &amp; Deleting the Environments</a>
     <ul>
@@ -2534,42 +2543,19 @@
 
 <p>1) Clicking on the <strong>Setting</strong> tabs, you get the following view. This page is only accessible to users who has the privilege to control the settings of On Premise environment.</p>
 
-<p><img src="\staticfiles\deployment\media\EasyEnv\opdetails4.PNG" alt="opdetails4" /></p>
-
-<p><strong>Settings have FOUR available sections for managing OP Agents:</strong></p>
-
-<p>2) <strong>Retry Setting</strong> - One can schedule resync of failed integrations, where you can provide the start time, 
-   no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
-   you must activate Retry transaction.</p>
-
-<p>3) <strong>Log Settings</strong> - You can control the way you want to view and store the log in OP Agent from portal now.</p>
+<p><strong>Settings have FIVE available sections for managing OP Agents:</strong></p>
 
 <ul>
-  <li>If Log in detail is set, then the log will be reflected in .txt files and stored in the same way. If Log in Database is set, then the log will be 
-stored in sql lite database and will be reflected in the log bucket.</li>
-  <li>Set Target for - It will allow you to define the type of log that you want to view, whether Error, Infor or Status.</li>
-  <li>Severity Level - Each log has its own severity level. You can set the type - Critical, High, Medium, depending on the log, you want to view.</li>
+  <li><a href="/deployment/Environment-Management/#retry-setting"><strong>Retry Setting</strong></a></li>
+  <li><a href="/deployment/Environment-Management/#log-settings"><strong>Log Settings</strong></a></li>
+  <li><a href="/deployment/Environment-Management/#real-time-settings"><strong>Real Time Settings</strong></a></li>
+  <li><a href="/deployment/Environment-Management/#pending-timeout-settings"><strong>Pending Timeout Settings</strong></a></li>
+  <li><a href="/deployment/Environment-Management/#diagnostic-settings"><strong>Diagnostic Settings</strong></a></li>
 </ul>
 
-<p>4) <strong>Real Time Settings</strong> - Users can provide the Realtime details when working with APPSeCONNECT API Management. 
-   Users need to provide the Hostname and the Port for the RealTime Execution.</p>
+<p><img src="\staticfiles\deployment\media\EasyEnv\opdetails4.PNG" alt="opdetails4" /></p>
 
-<p>5) <strong>Pending Timeout Settings</strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.
-The default time period of the <strong>Frequency of Pending Timeout</strong> field is <strong>5 mins</strong>. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.</p>
-
-<p><img src="\staticfiles\deployment\media\EasyEnv\pendingtimeout1.PNG" alt="pendingtimeout1" /></p>
-
-<p>5) <strong>Diagnostic Settings</strong> - You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
-   files will get available in Agent and service path as shown in the image.</p>
-
-<p>Diagnostic Settings is provided with two output paths:</p>
-
-<p>a)	Agent Output Path: This path provides the details of the transformed files when triggered manually.       <br />
-b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.</p>
-
-<p><img src="\staticfiles\deployment\media\EasyEnv\opdetails5.PNG" alt="opdetails5" /></p>
-
-<p>After saving the changes in settings, the updated information gets auto-reflected in OP Agent.</p>
+<p><strong>After saving the changes in settings, the updated information gets auto-reflected in OP Agent.</strong></p>
 
 <p><strong>Note:</strong></p>
 
@@ -2694,28 +2680,12 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
 
 <p>1) Clicking on the Hosted environment, will provide you with TWO tabs: <strong>Settings</strong> and <strong>Process Flows</strong>.</p>
 
-<p>2) You will be able to view the following section when clicked on the <strong>Settings</strong> tab.</p>
+<p>2) You will be able to view the following section when clicked on the <a href="/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise"><strong>Settings</strong></a> tab. You can view the following settings panel in the page.</p>
+
 <ul>
-  <li><strong>Retry Settings:</strong> - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
-    <ul>
-      <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
-      <li>Start Time: This is a customizable field for the user. It defines the start time of the Resync Process.</li>
-      <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, its configured as 0.</li>
-      <li>Batch Size: This field states, the no of data in a batch to be resynced. The Default value is 10 but the users are open to customize as per their requirement.</li>
-    </ul>
-  </li>
-  <li><strong>Log Settings:</strong> You can control the way you want to view and store the logs for every execution on you hosted environment.
-    <ul>
-      <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
-      <li>Log in Database: The log fetched, would be stored in the database.</li>
-      <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
-      <li>
-        <p>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High &amp; Critical.</p>
-      </li>
-      <li><strong>Pending Timeout Settings</strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.
-  The default time period of the <strong>Frequency of Pending Timeout</strong> field is <strong>5 mins</strong>. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.</li>
-    </ul>
-  </li>
+  <li><strong><a href="/deployment/Environment-Management/#retry-setting">Retry Settings</a>:</strong> - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.</li>
+  <li><strong><a href="/deployment/Environment-Management/#log-settings">Log Settings</a>:</strong> You can control the way you want to view and store the logs for every execution on you hosted environment.</li>
+  <li><strong><a href="/deployment/Environment-Management/#pending-timeout-settings">Pending Timeout Settings</a></strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.</li>
 </ul>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG" alt="hosteddetails2" /></p>
@@ -2740,6 +2710,67 @@ The following are the details that will displayed for deployed Process Flows.</p
 <p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG" alt="hosteddetails3" /></p>
 
 <p>Following the above process, you can easily view and update the details of the Hosted agent.</p>
+
+<h2 id="settings-tab-on-details-page-hosted--on-premise">SETTINGS tab on Details Page: Hosted &amp; On-Premise</h2>
+<p>Configurations for the <strong>SETTINGS</strong> tab remains same for both <strong><a href="/deployment/Environment-Management/#on-premise-environment-details-page">On-Premise</a></strong> &amp; <strong><a href="/deployment/Environment-Management/#hosted-environment-details-page">Hosted</a></strong> Environment details page.
+The following configuration can be applied on the SETTINGS page for either of the chosen environment: On-Premise or Hosted.</p>
+
+<p><strong>Note: For <a href="/deployment/Environment-Management/#hosted-environment-details-page">Hosted Agents Settings</a>, only Three Settings are available - Retry, Log &amp; Prending Timeout Settings.</strong></p>
+
+<h3 id="retry-setting">Retry Setting</h3>
+<ul>
+  <li>One can schedule resync of failed integrations, where you can provide the start time, no. of iterations and batch size for each resync. Default frequency is daily. To make the resync schedule active,
+you must activate Retry transaction. The followign configuration can be made in the Retry Settings Panel.
+    <ul>
+      <li>Frequency: This is a static field and is for the schedule period for the Resync to happen. By default, its configured as Daily.</li>
+      <li>Start Time: This is a customizable field for the user. It defines the start time of the Resync Process.</li>
+      <li>Execute For: This a time span as for how long the Resync process will occur. The span is processed in hours and users can customize it as per their requirement. By default, its configured as 0.</li>
+      <li>Batch Size: This field states, the no of data in a batch to be resynced. The Default value is 10 but the users are open to customize as per their requirement.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="log-settings">Log Settings</h3>
+
+<ul>
+  <li>You can control the way you want to view and store the log in OP Agent from portal now. The following configurations can be performed in the Log Settings Panel.
+    <ul>
+      <li>Log in Detail: Detailed log would be fetched as per the sync is processed.</li>
+      <li>Log in Database: The log fetched, would be stored in the database.</li>
+      <li>Set target for: Users can filter the failed sync based on Error, Info and Status.</li>
+      <li>Severity Level: Users can filter the error logs based on the severity level of the errors generated. The severity level is categorized into Medium, High &amp; Critical.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="real-time-settings">Real Time Settings</h3>
+<ul>
+  <li>Users can provide the Realtime details when working with APPSeCONNECT API Management. Users need to provide the Hostname and the Port for the RealTime Execution.</li>
+</ul>
+
+<h3 id="pending-timeout-settings">Pending Timeout Settings</h3>
+
+<ul>
+  <li>Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.
+The default time period of the <strong>Frequency of Pending Timeout</strong> field is <strong>5 mins</strong>. Users can configure upto 60 mins. You cannot provide the Timeout time less than 5mins.</li>
+</ul>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\pendingtimeout1.PNG" alt="pendingtimeout1" /></p>
+
+<h3 id="diagnostic-settings">Diagnostic Settings</h3>
+<ul>
+  <li>You can turn the Diagnostic mode on, from portal itself. Once the its active, all the transaction and process 
+files will get available in Agent and service path as shown in the image.</li>
+</ul>
+
+<p>Diagnostic Settings is provided with two output paths:</p>
+
+<p>a)	Agent Output Path: This path provides the details of the transformed files when triggered manually.       <br />
+b)	Service Output Path: Service path provides the details of the transformed files when triggered through Autosync.</p>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\opdetails5.PNG" alt="opdetails5" /></p>
+
+<p><strong>Note: For <a href="/deployment/Environment-Management/#hosted-environment-details-page">Hosted Agents Settings</a>, only Three Settings are available - Retry, Log &amp; Prending Timeout Settings.</strong></p>
 
 <h2 id="manage-control-of-environments">Manage Control of Environments</h2>
 

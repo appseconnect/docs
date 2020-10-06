@@ -1970,7 +1970,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to Process Flow",
+      title: "Quickstart guides to Designing Process Flow",
       excerpt: "Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business...",
       categories: ["Processflow"],
       tags: ["developers"],
@@ -5023,7 +5023,7 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to Process Flow",
+        "title": "Quickstart guides to Designing Process Flow",
         "url": "/processflow/Quickstart-guide-to-processflow/",
         "excerpt": "Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business...",
         "teaser":

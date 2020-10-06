@@ -25,18 +25,16 @@ in a different organisation. This document will help you to create a new package
 
 ## Creating Packages
 
-
-
-2) Expand the Package Library node to view **My Packages**. Clicking on My Packages, you will be able to view the following screen. Click on the **Click Here** button to create a new package. 
+1) Expand the Package Library node to view **My Packages**. Clicking on My Packages, you will be able to view the following screen. Click on the **Click Here** button to create a new package. 
 
 ![package2](\staticfiles\processflow\media\package2.PNG)
 
-3) If you already have packages created, you can create new packages by clicking on the **CREATE** button as shown below. You can also view the [**SHARE**](/processflow/processflow-package-sharing/) button beside `CREATE` that will enable you to share the your created packages.
+2) If you already have packages created, you can create new packages by clicking on the **CREATE** button as shown below. You can also view the [**SHARE**](/processflow/processflow-package-sharing/) button beside `CREATE` that will enable you to share the your created packages.
 The filter button, will allow you to search and filter your existing packages based on the input provided in search box.
 
 ![package](\staticfiles\processflow\media\package.PNG)
 
-4) The package creation window appears. The package creation window comprises of three sections.
+3) The package creation window appears. The package creation window comprises of three sections.
 
 - **Choose Process Flows** - Here, you are required to select the process flows from the list below. The selected process flow will be displayed in the upper table as you select.
 - **Configuration** - This page will let to provide details to the package like **Package Name**, **Package Description**, **Version**, **Package Documentation**.
