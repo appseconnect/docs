@@ -19,18 +19,22 @@ in a different organisation. This document will help you to create a new package
 
 - You need to have valid credential to the portal.
 - You need to have the Process Flow created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
+- You cannot create package out of a [Shared package](/processflow/processflow-package-sharing/), for the process flows that are [installed](/processflow/processflow-package-installation/) on your organisation.
+- You can select your process flows only from the [Process Flow folder](/processflow/processflow-listing-page/#process-flow-folder) and its sub-folder.
+- You can add as many process flows for creating a package. There is no specified limit when adding process flows, while creating package.
 
 ## Creating Packages
 
-1) Navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
-
-![package1](\staticfiles\processflow\media\package1.PNG)
-
-2) Expand the Package Library node to view **My Packages**. Clicking on My Packages, you will be able to view the following screen. 
+1) Expand the Package Library node to view **My Packages**. Clicking on My Packages, you will be able to view the following screen. Click on the **Click Here** button to create a new package. 
 
 ![package2](\staticfiles\processflow\media\package2.PNG)
 
-3) Click on the **Click Here** button to create a new package. The package creation window appears. The package creation window comprises of three sections.
+2) If you already have packages created, you can create new packages by clicking on the **CREATE** button as shown below. You can also view the [**SHARE**](/processflow/processflow-package-sharing/) button beside `CREATE` that will enable you to share the your created packages.
+The filter button, will allow you to search and filter your existing packages based on the input provided in search box.
+
+![package](\staticfiles\processflow\media\package.PNG)
+
+3) The package creation window appears. The package creation window comprises of three sections.
 
 - **Choose Process Flows** - Here, you are required to select the process flows from the list below. The selected process flow will be displayed in the upper table as you select.
 - **Configuration** - This page will let to provide details to the package like **Package Name**, **Package Description**, **Version**, **Package Documentation**.
@@ -38,10 +42,14 @@ in a different organisation. This document will help you to create a new package
 
 ![package3](\staticfiles\processflow\media\package3.PNG)
 
-4) In the Choose Process Flows section, you will be able to view the folder path, that will enable you to select process flow from your process flow folders.
+### Choose Process Flows 
+
+This section will allow you to choose the process flows from the [Process Flow folder](/processflow/processflow-listing-page/#process-flow-folder) or from its sub-folder.
+
+1) In the Choose Process Flows section, you will be able to view the folder path, that will enable you to select process flow from your process flow folders.
 By default, the [Home Folder](/processflow/processflow-listing-page/#usability-for-the-home-folder) will be selected in the **Folder Path** and all the process flow under **HOME** folder will be listed in the below table for the selection process.
 
-5) The **Process Flow** table below, will enable you to select the process flows for packaging. The following details will be displayed in the table.
+2) The **Process Flow** table below, will enable you to select the process flows for packaging. The following details will be displayed in the table.
 
 - **Name** - Name of the Process Flows
 - **Description** - Will display you the process flow description.
@@ -52,20 +60,33 @@ Select the process flows by enabling the checkboxes beside the process flow name
 
 ![package4](\staticfiles\processflow\media\package4.PNG)
 
-6) Click on the **Continue** button. You can now view the **Configuration** section. You need to provide the following details. The following details will be available in this section.
+3) Click on the **Continue** button. The **Configure** section appears on the package creation window.
+
+### Configurations
+
+This section will allow you to configure the details of the packages required.
+
+1) You can now view the **Configuration** section. You need to provide the following details. The following details will be available in this section.
+
+![package5](\staticfiles\processflow\media\package5.PNG)
 
 - **Package Name** - You need to enter the name of the package. The name should be less than 100 characters.
 - **Package Description** - You will be provided with a platform to enter a description to the package. There is no limitation to the description based on the number of characters.
 - **Version** - You can provide a version to the package. The version should be greater than or equal to 3 decimal places. You will be provided with an example, beneath the field.
-- **Package Documentation** - This is a markdown editor and you need to add the related documentation or links for reference. You can also preview the provided document or link by clicking on the preview button. You need to use `Markdown Syntaxes` for documenting.
+- **Package Documentation** - This is a markdown editor and you need to add the related documentation or links for reference. You can also preview the provided document or link by clicking on its **preview** button. You need to use `Markdown Syntaxes` for documenting.
 
-![package5](\staticfiles\processflow\media\package5.PNG)
+![packagedocpreview](\staticfiles\processflow\media\packagedocpreview.PNG)
 
-7) Click on the Continue button. You will be navigated to the **Preview** section. You will be able to view all the related details you provided in the previous steps.
+2) Click on the Continue button after providing all the manadatory details of the package 
+
+### Preview
+This section will display all the configuration provided in the earlier steps as a final preview.
+
+1) You will be navigated to the **Preview** section. You will be able to view all the related details you provided in the previous steps.
 
 ![package6](\staticfiles\processflow\media\package6.PNG)
 
-8) Click on the **Create** button to the create the package.
+2) Click on the **Create** button to the create the package.
 
 Following the above process, you can successfully create a process flow package.
 

@@ -14,8 +14,9 @@ menus:
 This section of the documentation will guide the user with the process of Creating & Saving new process flows. The steps for implementing the same is provided below:
 
 ## Prerequisites for Creating a Process Flows
-1.	Should have valid credentials for logging in to the APPSeCONNECT portal.
-2.	Applications should be chosen from the apps section, for proceeding with the design of Process Flows.
+1. Should have valid credentials for logging in to the APPSeCONNECT portal.
+2. Applications should be chosen from the apps section, for proceeding with the design of Process Flows.
+3. You can also create a Package out of the your create Process Flow for sharing it to your other organisations. [Click Here](/processflow/processflow-packaging-overview/) to know more about Process Flow Packaging.
 
 ## Steps to create a Process Flows
 1)	Login to the Portal and navigate to the **Designer > Process Flow** module. The Process Flow listing page appears.
@@ -65,6 +66,8 @@ you to the Process Flow Designer Page.**
 ![Create Basicprocessflow12](../../staticfiles/processflow/media/create-basicprocessflow12.png)   
 
 Following the above steps, you can successfully create a basic process flow. However, business process will require other nodes for designing as per the requirement.  
+
+You can also create a Package out of the your create Process Flow for sharing it to your other organisations. [Click Here](/processflow/processflow-packaging-overview/) to know more about Process Flow Packaging.
 
 **Note: Unlinking of the nodes will now not erase the mapping made inside the mapper node. If a different application is dragged and linked with the existing GET or Destination node, it will remove the existing mapping when saving the Process Flow.  
 However, you will get a confirmation message when implementing the same. You view the message in the below screen.**

@@ -18,6 +18,11 @@ This document will enable you to view and install incoming packages from other o
 
 - You need to have valid credential to the portal.
 - You need to have packages shared with you from other organisation. For more details on how to share packages, [click here](/processflow/processflow-packaging/).
+- Installation is mandatory to use packaged Process Flows.
+- You will have TWO ways to install packages - **[Install from Actions column](/processflow/processflow-package-installation/#install-from-actions-column)** & **[Install from View Packages](/processflow/processflow-package-installation/#install-from-view-packages)**. For more details, [Click Here](/processflow/processflow-package-installation/#installing-packages)
+- You cannot re-install an installed package.
+- All the installed packages, its related process flows will be available in the [Install Process Flow](/processflow/processflow-listing-page/#installed-process-flows-folder) folder. A sub folder will be created same as that of the Package Name.
+- Process Flows that are shared, if deleted from the folder **Installed Process Flow**, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the **Process Flow** folder.
 
 ## Viewing Shared Packages
 
@@ -51,7 +56,7 @@ This document will enable you to view and install incoming packages from other o
 6) Clicking on the **DESCRIPTION** tab, you can view the following details:
 - The brief description provided while the creating the package will be displayed in the description box
 - **Last Modified** - You will be able to view the last modified date and time, worked on the remote organisation.
-- **Apps Used** - Applications used inside the process flows in the package, will be listed. **(Image needs to change)**
+- **Apps Used** - Applications used inside the process flows in the package, will be listed.
 
 ![viewsharedpack5](\staticfiles\processflow\media\viewsharedpack4.PNG)
 
@@ -74,14 +79,14 @@ This document will enable you to view and install incoming packages from other o
 
 3) There are TWO ways to install the packages. 
 
-- **Install from Actions column:** 
+### Install from Actions column:
 You can install the packages directly by clicking on the install button available in the contextual menu of actions column. You can view a **loader** that will denote you with the installation progress.
 
 ![packageinstall2](\staticfiles\processflow\media\packageinstall2.PNG)
 
-- **Install from View Packages:**
+### Install from View Packages:
 On clicking the `VIEW` button in the contextual menu of the actions column, it will navigate you to the `VIEW` window.
-Click on the **Install** button to install the package shared with you. **(Image needs to change)**
+Click on the **Install** button to install the package shared with you.
 
 ![packageinstall3](\staticfiles\processflow\media\packageinstall3.PNG)
 
@@ -106,4 +111,3 @@ Following the above process, you can successfully install the shared packages an
 - Modifications made in the process flows in source organisation _after the sharing_ , the changes will not reflect once the package is shared to an another organisation.
 - As Process flow doesn't stores any credentials, you will not have to worry about credentials vulnerability.
 - Process Flows that are shared, if deleted from the folder **Installed Process Flow**, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the **Process Flow** folder.
-- You cannot delete the Installed folders

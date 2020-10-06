@@ -1970,8 +1970,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to create ProcessFlow",
-      excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+      title: "Quickstart guides to Designing Process Flow",
+      excerpt: "Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 217
@@ -1989,7 +1989,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Important Terminology",
-      excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
+      excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Process Flow Folder It is...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 219
@@ -2587,6 +2587,15 @@ var idx = lunr(function () {
       categories: ["release-notes"],
       tags: ["developers"],
       id: 285
+    });
+    
+  
+    idx.add({
+      title: "SAP Business One Service Layer",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 288
     });
     
   
@@ -4996,9 +5005,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to create ProcessFlow",
+        "title": "Quickstart guides to Designing Process Flow",
         "url": "/processflow/Quickstart-guide-to-processflow/",
-        "excerpt": "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+        "excerpt": "Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5020,7 +5029,7 @@ var store = [
       {
         "title": "Important Terminology",
         "url": "/processflow/Terminology/",
-        "excerpt": "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
+        "excerpt": "This document demonstrates the important terminologies that you need to consider while using Process Flows Process Flow Folder It is...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5747,6 +5756,17 @@ var store = [
         "title": "Q3 Release Version 4.7.0",
         "url": "/release-notes/2020-Q3/",
         "excerpt": "Product Release Version: Release notes were published and last revised in September 2020. Updates in this release include New Feature...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAP Business One Service Layer",
+        "url": "/connectors/Sap-Business-One-Service-Layer/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

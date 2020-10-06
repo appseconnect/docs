@@ -25,7 +25,7 @@ using the cloud agent.
 * The two applications between which data has to be synced should be cloud supported.
 * The connection made for the two applications should be cloud supported.
 
-### Configuration Process for Cloud
+### Enabling Organisations for Cloud Support:
 
 a.	On the Dashboard of your cloud portal, click PROJECTS > Manage Projects.
 
@@ -39,18 +39,7 @@ c.	Enable the Check-Box for **Cloud Hosting** and click **SAVE**.
 
 d.	After enabling the organisation for Cloud Hosting, a new environment is to be created for CLOUD EXECUTION.
 
-e.	In the Environment section of the cloud portal, Click on **CREATE NEW ENVIRONMENT**.
-
-f.	Create New Environment window opens up. Input the **Environment Name, the Type of Agent, and the Error Types**.
-
-g.	Click on SAVE. Now you can view the Agent in the Environment Window.
-
-h.	The Agent is in Blocked state by default. To unblock the agent, click UNBLOCK option.
-
-i.	You need to make agent active by clicking on the **Active/Inactive** check box. 
-
-j.  Once the agent is active, it will be considered as a Primary Agent.
-
+e.	In the Environment section of the cloud portal, Click on the **HOSTED** button. [Click Here](/deployment/Environment-Management/#create-hosted-environment) to know more on creating a Cloud Environment.
 
 ## On-Premise Agent Configuration: 
 
@@ -59,8 +48,8 @@ j.  Once the agent is active, it will be considered as a Primary Agent.
 1.	The user needs to have an account in the APPSeCONNECT Portal.
 2.	The implementer/user needs to have a valid user name and password for accessing the APPSeCONNECT Portal.
 
-### Configuration Process for OP
-a.	Login to the portal. From the Dashboard section, download the Agent from the Downloads menu as shown below.
+### Installing Process of an On Premise Agent:
+a.	Login to the portal. Download the Agent from the [Downloads menu](/accessing%20portal/accessing-portal/#downloads-section) as shown below.
 
 b.	Run the SETUP FILE (as administrator). The Setup wizard opens.
 

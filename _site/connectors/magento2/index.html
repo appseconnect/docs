@@ -483,8 +483,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -507,8 +507,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -609,6 +609,12 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One-Service-Layer/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One-Service-Layer/" onclick="selectTab('/connectors/Sap-Business-One-Service-Layer/', event);" title="Go to SAP Business One Service Layer">SAP Business One Service Layer</a>
         
     </li>
     
@@ -1468,8 +1474,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1541,14 +1547,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-revamped-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-revamped-merger/" onclick="selectTab('/processflow/working-with-revamped-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
+    <li class="menu-item-" data-url="/processflow/working-with-revamped-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-revamped-merger/" onclick="selectTab('/processflow/working-with-revamped-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
         
     </li>
     
@@ -1567,6 +1573,12 @@
     
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -1645,6 +1657,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/migration-of-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/migration-of-processflow/" onclick="selectTab('/processflow/migration-of-processflow/', event);" title="Go to Migration of Workflow to Processflow">Migration of Workflow to Processflow</a>
         
     </li>
     
@@ -2379,7 +2397,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2398,6 +2416,7 @@
   <li><a href="#steps-to-configure-magento2-credential-in-op-agent-with-access-token">Steps to Configure Magento2 Credential in OP Agent with Access Token:</a></li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
   <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
+  <li><a href="#custom-filter-implementation-for-data-fetch-using-magento2">Custom Filter implementation for Data fetch using Magento2</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2664,6 +2683,24 @@ integrations.</p>
     </tr>
   </tbody>
 </table>
+
+<h2 id="custom-filter-implementation-for-data-fetch-using-magento2">Custom Filter implementation for Data fetch using Magento2</h2>
+
+<p>API hits can be tammed using custom filters on its actions. You will be able to fetch specific data as per your filter. With APPSeCONNECT, you will have the option to implement custom 
+Action Filters that will enable you to fetch specific data as required. You need to implement your filter on three specific areas including the data filter. The filter should be provided as per the same syntax provided in the images: <code class="language-plaintext highlighter-rouge">nf{searchCriteria[body]}nf</code></p>
+
+<p>1) Filter on Page Size: This is for implementing pagination for displaying maximum data on multiple pages as per your configuration. 
+The number of pages required for implementing the pagination needs to be provided in the field <code class="language-plaintext highlighter-rouge">VALUE</code>.</p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\customfiltermage1.png" alt="customfiltermage1" /></p>
+
+<p>2) Filter on Field: This is for implementing and fetching the data as per the API request. This implements the API request for Magento2. The configuration <strong>created_at</strong> needs to be given the field <code class="language-plaintext highlighter-rouge">VALUE</code></p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\customfiltermage2.png" alt="customfiltermage2" /></p>
+
+<p>3) Filter on Direction: This defines as how the data should be displayed in the bucket, <strong>Ascending or  Descending</strong>. For ascending, you need to implement <code class="language-plaintext highlighter-rouge">asc</code> in the field <code class="language-plaintext highlighter-rouge">value</code>. For descending, you need to implement <code class="language-plaintext highlighter-rouge">desc</code> in the field <code class="language-plaintext highlighter-rouge">value</code>.</p>
+
+<p><img src="\staticfiles\connectors\media\application-connector\customfiltermage3.png" alt="customfiltermage2" /></p>
 
 <p class="notice--info"><strong>Protip:</strong> Working on SAP B1 and Magento 2 (B2C) needs a SAP B1 add-on and Magento B2C extension for its integration.
 Customers and Orders can be created and placed from the Front-End also. 
@@ -4996,8 +5033,43 @@ and creating customers.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/connectors/Sap-Business-One-Service-Layer/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    SAP Business One Service Layer
+                                </a>
+                            </li>
                             
                             
                             
@@ -5017,6 +5089,8 @@ and creating customers.</p>
                                     ZohoBooks
                                 </a>
                             </li>
+                            
+                            
                             
                             
                             
@@ -5165,6 +5239,8 @@ and creating customers.</p>
                             
                             
                             
+                            
+                            
                             <li>
                                 <a href="/connectors/Troubleshooting-Rest/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
@@ -5196,15 +5272,6 @@ and creating customers.</p>
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/connectors/Filters-for-Integration/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Using Filters for Integration
-                                </a>
-                            </li>
                             
                             
                             

@@ -483,8 +483,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
+    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
         
     </li>
     
@@ -507,8 +507,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/Shipstation/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/connectors/Shipstation/" onclick="selectTab('/connectors/Shipstation/', event);" title="Go to Shipstation">Shipstation</a>
+    <li class="menu-item-" data-url="/connectors/Lightspeed/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/connectors/Lightspeed/" onclick="selectTab('/connectors/Lightspeed/', event);" title="Go to Lightspeed">Lightspeed</a>
         
     </li>
     
@@ -609,6 +609,12 @@
     
 </ul>
 
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/connectors/Sap-Business-One-Service-Layer/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Sap-Business-One-Service-Layer/" onclick="selectTab('/connectors/Sap-Business-One-Service-Layer/', event);" title="Go to SAP Business One Service Layer">SAP Business One Service Layer</a>
         
     </li>
     
@@ -1468,8 +1474,8 @@
 <ul class="nav__items">
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
+    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
         
     </li>
     
@@ -1541,14 +1547,14 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-revamped-merger/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-revamped-merger/" onclick="selectTab('/processflow/working-with-revamped-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
+    <li class="menu-item-" data-url="/processflow/working-with-POST/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-POST/" onclick="selectTab('/processflow/working-with-POST/', event);" title="Go to Working with POST">Working with POST</a>
         
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/working-with-processflow-splitter/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-processflow-splitter/" onclick="selectTab('/processflow/working-with-processflow-splitter/', event);" title="Go to Working with Splitter">Working with Splitter</a>
+    <li class="menu-item-" data-url="/processflow/working-with-revamped-merger/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-revamped-merger/" onclick="selectTab('/processflow/working-with-revamped-merger/', event);" title="Go to Working with Merger">Working with Merger</a>
         
     </li>
     
@@ -1567,6 +1573,12 @@
     
     <li class="menu-item-" data-url="/processflow/working-with-decision/" data-jstree='{"icon":"fa fa-gg"}'>
         <a href="/processflow/working-with-decision/" onclick="selectTab('/processflow/working-with-decision/', event);" title="Go to Working with Decision">Working with Decision</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/working-with-Halt-Resume/" data-jstree='{"icon":"fa fa-gg"}'>
+        <a href="/processflow/working-with-Halt-Resume/" onclick="selectTab('/processflow/working-with-Halt-Resume/', event);" title="Go to Working with HaltResume">Working with HaltResume</a>
         
     </li>
     
@@ -1645,6 +1657,12 @@
     
     <li class="menu-item-" data-url="/processflow/implementing-lookup-in-mapping/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/implementing-lookup-in-mapping/" onclick="selectTab('/processflow/implementing-lookup-in-mapping/', event);" title="Go to Lookup in Processflow Mapping">Lookup in Processflow Mapping</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/migration-of-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/migration-of-processflow/" onclick="selectTab('/processflow/migration-of-processflow/', event);" title="Go to Migration of Workflow to Processflow">Migration of Workflow to Processflow</a>
         
     </li>
     
@@ -2379,7 +2397,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2393,7 +2411,13 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#creating-packages">Creating Packages</a></li>
+  <li><a href="#creating-packages">Creating Packages</a>
+    <ul>
+      <li><a href="#choose-process-flows">Choose Process Flows</a></li>
+      <li><a href="#configurations">Configurations</a></li>
+      <li><a href="#preview">Preview</a></li>
+    </ul>
+  </li>
   <li><a href="#listing-packages">Listing Packages</a></li>
   <li><a href="#viewing-packages">Viewing Packages</a></li>
   <li><a href="#editing-packages">Editing Packages</a></li>
@@ -2410,19 +2434,23 @@ in a different organisation. This document will help you to create a new package
 <ul>
   <li>You need to have valid credential to the portal.</li>
   <li>You need to have the Process Flow created. Steps to create new process flow is given <a href="/processflow/creating-processflow/">here</a></li>
+  <li>You cannot create package out of a <a href="/processflow/processflow-package-sharing/">Shared package</a>, for the process flows that are <a href="/processflow/processflow-package-installation/">installed</a> on your organisation.</li>
+  <li>You can select your process flows only from the <a href="/processflow/processflow-listing-page/#process-flow-folder">Process Flow folder</a> and its sub-folder.</li>
+  <li>You can add as many process flows for creating a package. There is no specified limit when adding process flows, while creating package.</li>
 </ul>
 
 <h2 id="creating-packages">Creating Packages</h2>
 
-<p>1) Navigate to the Process Flow module. The <a href="/processflow/processflow-listing-page/">Process Flow listing</a> page appears.</p>
-
-<p><img src="\staticfiles\processflow\media\package1.PNG" alt="package1" /></p>
-
-<p>2) Expand the Package Library node to view <strong>My Packages</strong>. Clicking on My Packages, you will be able to view the following screen.</p>
+<p>1) Expand the Package Library node to view <strong>My Packages</strong>. Clicking on My Packages, you will be able to view the following screen. Click on the <strong>Click Here</strong> button to create a new package.</p>
 
 <p><img src="\staticfiles\processflow\media\package2.PNG" alt="package2" /></p>
 
-<p>3) Click on the <strong>Click Here</strong> button to create a new package. The package creation window appears. The package creation window comprises of three sections.</p>
+<p>2) If you already have packages created, you can create new packages by clicking on the <strong>CREATE</strong> button as shown below. You can also view the <a href="/processflow/processflow-package-sharing/"><strong>SHARE</strong></a> button beside <code class="language-plaintext highlighter-rouge">CREATE</code> that will enable you to share the your created packages.
+The filter button, will allow you to search and filter your existing packages based on the input provided in search box.</p>
+
+<p><img src="\staticfiles\processflow\media\package.PNG" alt="package" /></p>
+
+<p>3) The package creation window appears. The package creation window comprises of three sections.</p>
 
 <ul>
   <li><strong>Choose Process Flows</strong> - Here, you are required to select the process flows from the list below. The selected process flow will be displayed in the upper table as you select.</li>
@@ -2432,10 +2460,14 @@ in a different organisation. This document will help you to create a new package
 
 <p><img src="\staticfiles\processflow\media\package3.PNG" alt="package3" /></p>
 
-<p>4) In the Choose Process Flows section, you will be able to view the folder path, that will enable you to select process flow from your process flow folders.
+<h3 id="choose-process-flows">Choose Process Flows</h3>
+
+<p>This section will allow you to choose the process flows from the <a href="/processflow/processflow-listing-page/#process-flow-folder">Process Flow folder</a> or from its sub-folder.</p>
+
+<p>1) In the Choose Process Flows section, you will be able to view the folder path, that will enable you to select process flow from your process flow folders.
 By default, the <a href="/processflow/processflow-listing-page/#usability-for-the-home-folder">Home Folder</a> will be selected in the <strong>Folder Path</strong> and all the process flow under <strong>HOME</strong> folder will be listed in the below table for the selection process.</p>
 
-<p>5) The <strong>Process Flow</strong> table below, will enable you to select the process flows for packaging. The following details will be displayed in the table.</p>
+<p>2) The <strong>Process Flow</strong> table below, will enable you to select the process flows for packaging. The following details will be displayed in the table.</p>
 
 <ul>
   <li><strong>Name</strong> - Name of the Process Flows</li>
@@ -2448,22 +2480,35 @@ By default, the <a href="/processflow/processflow-listing-page/#usability-for-th
 
 <p><img src="\staticfiles\processflow\media\package4.PNG" alt="package4" /></p>
 
-<p>6) Click on the <strong>Continue</strong> button. You can now view the <strong>Configuration</strong> section. You need to provide the following details. The following details will be available in this section.</p>
+<p>3) Click on the <strong>Continue</strong> button. The <strong>Configure</strong> section appears on the package creation window.</p>
+
+<h3 id="configurations">Configurations</h3>
+
+<p>This section will allow you to configure the details of the packages required.</p>
+
+<p>1) You can now view the <strong>Configuration</strong> section. You need to provide the following details. The following details will be available in this section.</p>
+
+<p><img src="\staticfiles\processflow\media\package5.PNG" alt="package5" /></p>
 
 <ul>
   <li><strong>Package Name</strong> - You need to enter the name of the package. The name should be less than 100 characters.</li>
   <li><strong>Package Description</strong> - You will be provided with a platform to enter a description to the package. There is no limitation to the description based on the number of characters.</li>
   <li><strong>Version</strong> - You can provide a version to the package. The version should be greater than or equal to 3 decimal places. You will be provided with an example, beneath the field.</li>
-  <li><strong>Package Documentation</strong> - This is a markdown editor and you need to add the related documentation or links for reference. You can also preview the provided document or link by clicking on the preview button. You need to use <code class="language-plaintext highlighter-rouge">Markdown Syntaxes</code> for documenting.</li>
+  <li><strong>Package Documentation</strong> - This is a markdown editor and you need to add the related documentation or links for reference. You can also preview the provided document or link by clicking on its <strong>preview</strong> button. You need to use <code class="language-plaintext highlighter-rouge">Markdown Syntaxes</code> for documenting.</li>
 </ul>
 
-<p><img src="\staticfiles\processflow\media\package5.PNG" alt="package5" /></p>
+<p><img src="\staticfiles\processflow\media\packagedocpreview.PNG" alt="packagedocpreview" /></p>
 
-<p>7) Click on the Continue button. You will be navigated to the <strong>Preview</strong> section. You will be able to view all the related details you provided in the previous steps.</p>
+<p>2) Click on the Continue button after providing all the manadatory details of the package</p>
+
+<h3 id="preview">Preview</h3>
+<p>This section will display all the configuration provided in the earlier steps as a final preview.</p>
+
+<p>1) You will be navigated to the <strong>Preview</strong> section. You will be able to view all the related details you provided in the previous steps.</p>
 
 <p><img src="\staticfiles\processflow\media\package6.PNG" alt="package6" /></p>
 
-<p>8) Click on the <strong>Create</strong> button to the create the package.</p>
+<p>2) Click on the <strong>Create</strong> button to the create the package.</p>
 
 <p>Following the above process, you can successfully create a process flow package.</p>
 
@@ -4869,8 +4914,34 @@ If the user clicks on the Cancel button, the changes will not be saved.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
                             
                             
                             
@@ -4936,6 +5007,10 @@ If the user clicks on the Cancel button, the changes will not be saved.</p>
                                     Viewing and Installing Shared Packages
                                 </a>
                             </li>
+                            
+                            
+                            
+                            
                             
                             
                             

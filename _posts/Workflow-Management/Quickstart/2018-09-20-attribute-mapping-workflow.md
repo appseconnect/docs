@@ -24,7 +24,7 @@ Attribute Mapping needs to be implemented before integrating. This document will
 
 ## Steps to Implement Attribute Mapping:
 
-1.	Login to the APPSeCONNECT Portal and select the apps from the APPS section, for implementing workflow.
+1.	Login to the APPSeCONNECT Portal and navigate to **Manage > Apps** to select the application , for implementing workflow.
 2.	Navigate to the Workflow Section in the portal and create or choose the workflow for the touchpoint that is to be implemented.
 **Note: The Pre-packaged workflow is selected for the touchpoint Customer ADD from WooCommerce to Priority.**
  ![Attribute-Mappingnew1](/staticfiles/workflow-management/media/Attribute-Mappingnew1.png)
