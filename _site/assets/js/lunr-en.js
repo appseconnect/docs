@@ -2595,7 +2595,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 288
+      id: 286
     });
     
   
