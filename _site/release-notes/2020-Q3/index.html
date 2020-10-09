@@ -2666,19 +2666,19 @@ robust Processflows catering to your business requirements.</p>
 
 <h4 id="new-features">New Features</h4>
 <p><strong>Self-loop to Iterate a Node</strong><br />
-You have the flexibility to use self-loop in a node to iterate as per configuration 
-We have added some interesting features.</p>
+You have the flexibility to use <a href="/processflow/working-with-processflow-selfloop/">self-loop</a> in a node to iterate as per configuration</p>
 
 <ul>
-  <li>For Time Out-  To iterate a node and continue to execute, as per the TIME OUT time provided by the user.</li>
-  <li>Modify Self-loop - To modify an existing self loop, for making any configurational changes.</li>
+  <li>To execute the node multiple times.   ​</li>
+  <li>To Trigger individual node execution for quick processing.​</li>
+  <li>Self-loop could be based on time / no. of iteration / no. of data available.</li>
 </ul>
 
 <p><strong>Delay Node to rate limit the data flow</strong><br />
 You can now use delay node in a Processflow</p>
 
 <ul>
-  <li>To delay the execution process by setting - Static time or Dynamic time.</li>
+  <li>To <a href="/processflow/working-with-processflow-delay/">delay</a> the execution process by setting - Static time or Dynamic time.</li>
   <li>To delay using Static time, you need to set the static amount of time.</li>
   <li>To delay using Dynamic time, you need to set the waiting time with output of a generic function.</li>
 </ul>
@@ -2687,64 +2687,44 @@ You can now use delay node in a Processflow</p>
 You can Manage technology app (REST) from the designer section of 
 the Processflow.</p>
 <ul>
-  <li>To easily create technology app from the designer section.</li>
+  <li>To easily create <a href="/processflow/technology-app-creation-using-processflow/">technology app</a> from the designer section.</li>
   <li>To configure the technology app from the designer section.</li>
   <li>To edit the technology app per requirement.</li>
 </ul>
 
-<p><strong>Robust Package Creation for distributing bundled Processflows</strong> <br />
-You can now create robust packages of Processflows which helps you</p>
-<ul>
-  <li>To bundle multiple Processflows in a folder.</li>
-  <li>To arrange and create packages in a listing view for easy usability.</li>
-  <li>To view &amp; edit the created packages easily in your organization.</li>
-</ul>
-
-<p><strong>Multiple Oganization Level Package Sharing &amp; Installation</strong>  <br />
-You now get the flexibilty of predefined package sharing across organizations and perform
-integration activity in the shared packages and thus enables you</p>
-
-<ul>
-  <li>To easily share packages in a click of a button.</li>
-  <li>To reuse the existing packages across organization and easy installation.</li>
-  <li>To distinctively view the list of Shared packages under <code class="language-plaintext highlighter-rouge">shared with me</code> section &amp;  <code class="language-plaintext highlighter-rouge">My packages</code> 
-section separetly in your organization.</li>
-  <li>To extract the shared packages and install in package folder name structure in the package listing section.</li>
-  <li>To view, install and delete shared pacakges per your requirement</li>
-</ul>
-
 <p><strong>Capturing Variables for Better Control on Process Flow</strong> <br />
-You can now create Variables for storing data within a Processflow 
+You can now <a href="/processflow/working-with-variable/">create Variables</a> for storing data within a Processflow 
 designed for your organisation and this helps you</p>
+
 <ul>
-  <li>To capture variable of type - Boolean/String/Number/Complex Object/Complex Object Collection/
-Date Time &amp; Double.</li>
-  <li>To resuse the value of variable within the processflow.</li>
-  <li>To easily deploy the Variables in the Action Filter of application node.</li>
+  <li>To Capture &amp; Store intermediate values within a process flow. </li>
+  <li>To use the stored data in filters</li>
+  <li>Variables could be persistent or not based on requirement.​</li>
 </ul>
 
 <p><strong>Revamped Merger Node for Managing Multiple Records</strong><br />
 You can now manage bundle of records in order</p>
 <ul>
-  <li>To merge defined number of records</li>
+  <li>To <a href="/processflow/working-with-revamped-merger/">merge</a> defined number of records</li>
   <li>To reduce number of hits into successive nodes.</li>
 </ul>
 
-<p><strong>Managing App Master from Designer</strong></p>
+<p><strong>Managing Schema &amp; Actions from Designer</strong></p>
 
 <p>You can configure &amp; manage application master in order</p>
 <ul>
   <li>To create &amp; modify schemas, entity, actions &amp; filters</li>
-  <li>To import schema &amp; attributes</li>
+  <li>To import <a href="/processflow/adding-schema-actions/">schema</a> from various data sources.</li>
+  <li>To Support attribute scope both global as well as local.​</li>
   <li>To manage hierarchial listing of schema &amp; attributes</li>
 </ul>
 
-<p><strong>Link execution order for Managing Multiple Execution</strong><br />
+<p><strong>Linking &amp; Reordering for Managing Multiple Execution</strong><br />
 You can now manage multiple execution of  Processflows and this enables you</p>
 <ul>
-  <li>To create and manage complex Processflows easily.</li>
+  <li>To easily <a href="/processflow/link-order-sequencing/">manage linking</a> nodes through drag drop</li>
   <li>To manage the sequence without unlinking the nodes.</li>
-  <li>To alter the sequence of node execution within a Processflow.</li>
+  <li>To Reorder the Execution order.​</li>
 </ul>
 
 <h4 id="enhancements">Enhancements</h4>
@@ -2768,13 +2748,19 @@ Fix:</p>
 <h2 id="deploy">Deploy</h2>
 <h4 id="new-features-1">New features</h4>
 
-<p><strong>Systematic Tracking of Deployment &amp; Undeployment</strong>  <br />
-APPSeCONNECT can now intelligently track the deployment &amp; Undeployment of the Processflow in order</p>
-
+<p><strong>Systematic Tracking &amp; Managing Deployment</strong>  <br />
+APPSeCONNECT can now intelligently track the deployment &amp; <a href="/processflow/unfinished-deployment/">Undeployment</a> of the Processflow in order</p>
 <ul>
-  <li>To conviniently monitor &amp; restore failed deployments automatically.</li>
-  <li>To display deployment status in Environment section</li>
-  <li>To check the last deployment log from the Environment Section</li>
+  <li>To Re-deploy failed data automatically or manually.</li>
+  <li>To display deployment status in Environment section.</li>
+  <li>To Completely track through logs for every deployment​.</li>
+</ul>
+
+<p><strong>Scheduling of Processflow​</strong>  <br />
+You can now able</p>
+<ul>
+  <li>To Configure ProcessFlow specific <a href="/processflow/deploying-and-executing-processfloww/#sync-and-retry-on-premise">scheduling</a>.   ​</li>
+  <li>To Configure ProcessFlow specific failed data auto-fix scheduling.</li>
 </ul>
 
 <h4 id="enhancements-1">Enhancements</h4>
@@ -2793,12 +2779,36 @@ APPSeCONNECT can now intelligently track the deployment &amp; Undeployment of th
 <h4 id="new-feature">New Feature</h4>
 <p><strong>Easy Environment Management for deployments &amp; settings</strong></p>
 
-<p>You will now get more flexibilty in environment management in order</p>
+<p>You will now get more flexibilty in <a href="/deployment/Environment-Management/">environment management</a> in order</p>
 
 <ul>
   <li>To get the segregated view of Hosted &amp; On Premise Agent</li>
   <li>To easily carry on with Deployment, Redeployment &amp; SnapshotView of executions</li>
   <li>To effectively manage Retrying Error Data</li>
+</ul>
+
+<p><strong>Copy ProcessFlow</strong>​<br />
+You will now get the option to</p>
+<ul>
+  <li>To <a href="">Copy</a> an existing ProcessFlow.​</li>
+  <li>To Deploy the copied ProcessFlow into another environment</li>
+</ul>
+
+<p><strong>Robust Package Creation for distributing bundled Processflows</strong> <br />
+You can now create robust packages of Processflows which helps you</p>
+<ul>
+  <li>To bundle multiple Processflows in a folder.</li>
+  <li>To arrange and <a href="/processflow/processflow-packaging/">create packages</a> in a listing view for easy usability.</li>
+  <li>To view &amp; edit the created packages easily in your organization.</li>
+</ul>
+
+<p><strong>Multiple Oganization Level Package Sharing &amp; Installation</strong>  <br />
+You now get the flexibilty of <a href="/processflow/processflow-package-sharing/">package sharing</a> across organizations which enables you</p>
+
+<ul>
+  <li>To reuse the existing packages across organization.</li>
+  <li>To extract &amp; easy <a href="/processflow/processflow-package-installation/">installation</a> of the shared packages.</li>
+  <li>To reinstall the package in the same organization. </li>
 </ul>
 
 <h2 id="connector">Connector</h2>
