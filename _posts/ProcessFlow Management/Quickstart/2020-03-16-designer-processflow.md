@@ -42,16 +42,17 @@ Flow. The field for providing the Description to the process flow is an optional
 Details of the list of executable buttons are given below:
 
 * Play button: The play button will allow you to execute the saved version of the process flow. 
-* Tracker button: You can view the execution status and messages related to execution process in the Tracker Window.
+* Tracker button: You can view the execution status and messages related to execution process in the Tracker Window. The deployment and execution logs will be displayed in the tracker window.
 * Delete button: The delete button will allow to delete the selected Nodes and link in the Process Flow. You will get a confirmation pop-up for the delete operation of the workflow. 
 * Zoom in: You can zoom in the Process Flows for better viewing purpose.
 * Zoom out: You can zoom out the Process Flow for better user experience. Users can also resize the screen accordingly. 
+* Link Order: YOu can sequence your execution order of your process flow. On clicking the [Link Order](/processflow/link-order-sequencing/) button, the order sequence window configuration window opens.
+* To view the screen in full screen mode, click the Button for Full Screen.
+* You will have the option adjust the screen resolution to 100%, 50% & 25% & Fit to Screen as per the need.
+* Save: The save button allows you to save the following Process Flow for later use. You can edit the Process Flows anytime by clicking the edit button available in the Process Flow listing Page.
+* Delete: You can view this button beside the **SAVE** button that will allow you to [delete](/processflow/delete-processflow/) the complete process flow.
 
-To view the screen in full screen mode, click the Button for Full Screen.
-You can also adjust the screen resolution to 100%, 50% & 25% & Fit to Screen as per the need.
-Save: The save button allows you to save the following Process Flow for later use. You can edit the Process Flows anytime by clicking the edit button available in the Process Flow listing Page.
-
-You can view the Back to Process Flow button that will navigate you to the listing page. 
+You can view the **Back to Process Flow** button that will navigate you to the [listing page](/processflow/processflow-listing-page/). 
 
 ## Process Flow Left Panel
 Here the users can add Process Flows nodes to the Process Flow designer panel. The nodes
@@ -64,9 +65,12 @@ following tabs and menus in the left panel of the page.
 3)	End: This node depicts the completion of the Process Flow.  
 4)	[Mapper](/processflow/working-with-mapper/): This node allows you to map the applications used in the Process flow.       
 5)	[Apps](/processflow/processflow-app/): You can view two tabs on expanding **Apps**: `Pre-prackaged apps` & `My Apps`. 
-    **- Pre-packaged Apps:** You will be able to view all the pre-packaged apps available for your organisation as per the plan.
-    **- My Apps:** You can view all the custom and the technology apps created in your organisation.
-On dragging the applications to the designer panel, the node configuration window would appear.      
+
+    - **Pre-packaged Apps:** You will be able to view all the pre-packaged apps available for your organisation as per the plan.
+    - **My Apps:** You can view all the custom and the technology apps created in your organisation.
+
+On dragging the applications to the designer panel, the node configuration window would appear.     
+
 6)	Flow Connect: You can view the following connector nodes upon expanding: FTP, Database, REST, Connector.   
 7)	Flow Logic: Here you can view all the process property nodes namely halt, resume etc required to implement the customer business process.  
 8)	Notifications Expanding this menu, you can view all the nodes for implementing actions within a Process Flow.  

@@ -35,7 +35,7 @@ in the [designer section](/processflow/designer-processflow/).
 * General  
 * Properties  
 
-3) Enter the required details in the General Section (link will be given) of the node configuration window.
+3) Enter the required details in the [General Section](/processflow/creating-processflow/#steps-to-create-a-process-flows) of the node configuration window.
 
 4) Now Click on Properties Section and the screen for variable list appears. Click on the `CREATE` button.
 
@@ -65,12 +65,17 @@ in the [designer section](/processflow/designer-processflow/).
 
 **Note:** 
 
-**- Variables with datatype `ComplexObect` & `ComplexObjectCollection` cannot be implemented on Action Filter.**
-**- The field `Default Value` remains disabled if the datatype is selected as  `ComplexObject` or `ComplexObjectCollection`.**
-**- When providing the default value for the data type **DateTime**, the value needs to be provided in ISO format.**
-**- The default value for **DateTime** datatype should be in UTC time.**
-**- By default, the toggle buttons will be set to `NO`.**
-**- Variable Name should not have any blank spaces in between. You will restricted from saving the variable in such cases.
+- **Variables with datatype `ComplexObect` & `ComplexObjectCollection` cannot be implemented on Action Filter.**
+
+- **The field `Default Value` remains disabled if the datatype is selected as  `ComplexObject` or `ComplexObjectCollection`.**
+
+- **When providing the default value for the data type **DateTime**, the value needs to be provided in ISO format.**
+
+- **The default value for **DateTime** datatype should be in UTC time.**
+
+- **By default, the toggle buttons will be set to `NO`.**
+
+- **Variable Name should not have any blank spaces in between. You will restricted from saving the variable in such cases.
 
 Following the above process you can successfully Define & Save a Capture Variable.
 
