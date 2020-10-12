@@ -2824,6 +2824,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Reinstalling Packages",
+      excerpt: "Compressed files are needed to be unzipped before working on them. In similar process, Process Flow Packages are needed to...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 312
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -6267,6 +6276,17 @@ var store = [
         "title": "SAP Business One Service Layer",
         "url": "/connectors/Sap-Business-One-Service-Layer/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Reinstalling Packages",
+        "url": "/processflow/processflow-package-reinstallation/",
+        "excerpt": "Compressed files are needed to be unzipped before working on them. In similar process, Process Flow Packages are needed to...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
