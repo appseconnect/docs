@@ -12,8 +12,8 @@ menus:
 ---
 
 The user can view the schemas  present in an app and can also add schema and import schemas and attributes for application node used in processflow. 
-This section enables the user to view, add the Schema, Attributes of an application in the Process Flow and managing the same
-within a process flow for easy execution. The added schema and its component from the application node will
+This section enables the user to view, add the Schema, Attributes of an application in the processflow and managing the same
+within a processflow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
 
 ## Prerequisites
@@ -24,12 +24,12 @@ be visible from the APP Section of the portal as well.
 
 ## Listing of Schemas and Attributes
 
-Process flow allows a defined tree view listing structure for managing and viewing
+processflow allows a defined tree view listing structure for managing and viewing
 defined Schema, Attributes and Actions associated with it. 
 
 To view the listing of Schemas and Attribute,  navigate to the following section:   
 
-(a) Go to Portal and Navigate to **Designer > Process Flow** module.
+(a) Go to Portal and Navigate to **Designer > processflow** module.
 
 (b) Go to [desiger](/processflow/designer-processflow/) section and Drag the required App Node.
 
@@ -50,7 +50,7 @@ To view the listing of Schemas and Attribute,  navigate to the following section
 Thus listing view gives a clear synopisis to the user regarding the Schema access and Management from the processflow node configuration level. 
 
 
-## Adding Schemas in an Application node of Process flow 
+## Adding Schemas in an Application node of processflow 
 
 1) Go to [designer section](/processflow/designer-processflow/) and [create a process](/processflow/creating-processflow/) flow. 
 
@@ -89,7 +89,7 @@ the list of schema. And if `No schema` is available for the given application no
 Thus, following the above process you can successfully add schemas for your application.
 
 ## Importing Schemas & Attributes
-Process Flow allows you to import schemas that helps to create schemas and attributes instantly. You can upload the schema files of your application based on the formats listed below:
+processflow allows you to import schemas that helps to create schemas and attributes instantly. You can upload the schema files of your application based on the formats listed below:
 
 - XML - The functionality traverses and renders through the file when uploaded for the Json format.
 - Json - The functionality traverses and renders through the file when uploaded in Json format.
@@ -97,7 +97,7 @@ Process Flow allows you to import schemas that helps to create schemas and attri
     
 ### Steps to import schemas and attributes
 
-1) Navigate to Process Flows in portal and open the process flow where you want to import the schema. If you are required to create a new process flow, [Click Here](/processflow/creating-processflow/).
+1) Navigate to processflows in portal and open the processflow where you want to import the schema. If you are required to create a new processflow, [Click Here](/processflow/creating-processflow/).
 
 2) Open the Node configuration window for the application whose schema you need to import. Click on the **Manage Schema** Button.
 
@@ -137,7 +137,7 @@ Process Flow allows you to import schemas that helps to create schemas and attri
 
 ![pf_importschema6](\staticfiles\processflow\media\pf_importschema6.PNG)
 
-8) On clicking the SAVE button, all the rendered schemas will be displayed on the [Schema listing](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) page of your app. Whenever you drag or reuse the app for a different process flow, you can view all the saved schemas, in the [Schema listing](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) page.
+8) On clicking the SAVE button, all the rendered schemas will be displayed on the [Schema listing](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) page of your app. Whenever you drag or reuse the app for a different processflow, you can view all the saved schemas, in the [Schema listing](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) page.
 
 **Note:**
 
@@ -150,7 +150,7 @@ Process Flow allows you to import schemas that helps to create schemas and attri
 Thus, following the above process you can successfully add schemas, by importing the complex objects and complex object collections as schemas for your application.
 
 
-### Editing & Deleting Schemas in an Application node of Process flow 
+### Editing & Deleting Schemas in an Application node of processflow 
 
 (A) To `Edit Schema`, do the following steps:
      
@@ -163,7 +163,7 @@ context menu and do the changes.
 5) The `Schema Name` is uneditable, rest other fields are editable like Schema Description, Namespace &
 Namespace URL.
   
-**NOTE: (a) Once a Process Flow has been saved in an Environment you will be
+**NOTE: (a) Once a processflow has been saved in an Environment you will be
 unable to Rename the Schema, Delete the Schema.  
 (b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.  
 (c) You will be able to edit the `Description`, via `Edit Schema` option.**
@@ -191,7 +191,7 @@ d. Tags: Used  providing specific tags to the attribute.
 e. Namespace Prefix: Prefix could be added for this attribute while working with namespaces.  
 f. Attribute Scope: Select the Scope - Organization Level or ProcessFlow Level. This is a mandatory field
 select as per your business requirement.Attributes with scope `Organization` will be added at the Organization
- level whereas Attributes with scope `Local` will be added at the Process Flow level. 
+ level whereas Attributes with scope `Local` will be added at the processflow level. 
 g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute.   
 * Primary: For allotting this attribute as the Primary Key.  
 * Required: For making this attribute mandatory for the mapping purpose.  
@@ -206,23 +206,23 @@ the attribute.
 
 **Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.**
 
-### Editing. Deleting & Renaming Attribute in an Application node of Process flow 
+### Editing. Deleting & Renaming Attribute in an Application node of processflow 
 
-#### (a) Editing Attribute within a  Process Flow Scope (local attribute)
+#### (a) Editing Attribute within a  processflow Scope (local attribute)
 
 1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).    
 You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
 
-2) Changes done to an existing Attribute will be reflected within that specific Process Flow only.
+2) Changes done to an existing Attribute will be reflected within that specific processflow only.
 
-3) Changes done to an existing Attribute will not affect other Process Flows using the same Schema and Attribute.
+3) Changes done to an existing Attribute will not affect other processflows using the same Schema and Attribute.
 
 4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.
 
 5) Primary set Attributes (local attributes)cannot be deleted.
 
 #### (b) Editing Attribute within Organization Scope (global attribute)
-On deleting an Attribute from the Manage Schema section, it will not be visible in new Process Flow.
+On deleting an Attribute from the Manage Schema section, it will not be visible in new processflow.
 
 (B) To `Delete Schema`, do the following steps:
 
@@ -234,7 +234,7 @@ context menu and clicking on Delete Schema Option.
 
 #### Deleting Attribute
 
-If you have saved the Process Flow (both for Organization and Process Flow Scope)
+If you have saved the processflow (both for Organization and processflow Scope)
 you will be able to delete the Attribute(s) used in Mapping.
 
 **Note: For saved processflow for both organization and PF scope, 

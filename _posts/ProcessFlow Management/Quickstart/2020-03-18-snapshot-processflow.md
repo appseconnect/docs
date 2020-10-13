@@ -10,45 +10,45 @@ menus:
         icon: fa fa-file-word-o
         identifier: snapshotprocessflow
 ---
-Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an execution of the business flow at that instance. Every Process Flow will be able execute more than one integration, which depends on logic defined on the designed Process Flow, dependencies specified, or even based on data volume.
+Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of the business flow at that instance. Every processflow will be able execute more than one integration, which depends on logic defined on the designed processflow, dependencies specified, or even based on data volume.
 The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the sync process. The snapshot gives tracing over the data transferred through integration. You can investigate the Data Log, Transaction files & the Activity Log for each process execution.
-After a successful execution, you can view the snapshot listing on the multiple time execution of the Process Flow.
+After a successful execution, you can view the snapshot listing on the multiple time execution of the processflow.
 
 ## Pre-requisites for viewing Snapshot
 * You should have valid credentials to the portal.
-* You need to [create a Process Flow](/processflow/creating-processflow/) for generating a snapshot. 
-* The environment where the process flow needs to be executed should be active.
-* The created Process Flow needs to be [deployed](/processflow/deploying-and-executing-processfloww/) to the environment successfully.  
-* You need to execute the Process Flow for generation of the Snapshot.
+* You need to [create a processflow](/processflow/creating-processflow/) for generating a snapshot. 
+* The environment where the processflow needs to be executed should be active.
+* The created processflow needs to be [deployed](/processflow/deploying-and-executing-processfloww/) to the environment successfully.  
+* You need to execute the processflow for generation of the Snapshot.
 
  **Note:** You can only view the successday for every instance of generated snapshots. Failed data will be display in the [Retry Window](/processflow/retry-processflow/). 
 
-## Steps to view the Process Flow Snapshot
-To view the snapshot of a Process Flow that has been executed, you need to follow the 
-prerequisites. Given below are the steps that will help you view Snapshot of a Process Flow that is executed.
+## Steps to view the processflow Snapshot
+To view the snapshot of a processflow that has been executed, you need to follow the 
+prerequisites. Given below are the steps that will help you view Snapshot of a processflow that is executed.
 
-1.	Login to the Portal and Navigate to the Process Flow Section and view the [listing page](/processflow/processflow-listing-page/).   
+1.	Login to the Portal and Navigate to the processflow Section and view the [listing page](/processflow/processflow-listing-page/).   
 ![Snapshot1](../../staticfiles/processflow/media/snapshot1.png)  
-2.	[Create a new Process Flow](/processflow/creating-processflow/) or Edit an existing Process Flow for [Deploying and Executing](/processflow/deploying-and-executing-processfloww/) the sync process.  
-**Note: You need to have the OP Environment active mandatorily for deploying the Process Flow to an OP Agent.**   
-3.	Navigate to the Deploy > [Environment](/deployment/Environment-Management/) for view the Snapshot of the executed Process Flow.   
+2.	[Create a new processflow](/processflow/creating-processflow/) or Edit an existing processflow for [Deploying and Executing](/processflow/deploying-and-executing-processfloww/) the sync process.  
+**Note: You need to have the OP Environment active mandatorily for deploying the processflow to an OP Agent.**   
+3.	Navigate to the Deploy > [Environment](/deployment/Environment-Management/) for view the Snapshot of the executed processflow.   
 **Note: You need have the environment active for viewing the details page, Click here if you need to troubleshoot a detached or a disconnected agent.**  
-4.	Click Process Flows Tab. You can view the list of all the deployed process flows. Following are the details that will display for each deployed Process Flows.
-* Name of the Process Flow 
+4.	Click processflows Tab. You can view the list of all the deployed processflows. Following are the details that will display for each deployed processflows.
+* Name of the processflow 
 * The time of Deployment
 * Actions
 ![Snapshot3](../../staticfiles/processflow/media/snapshot3.png)  
-5.	Click Ellipses button (…) available beside the Process Flow that you have executed. You can view the option `View Snapshot` in the context menu.  
-**Note: The button View Snapshot will be in Disabled State if any Process Flow has not been executed after deploying.**  
+5.	Click Ellipses button (…) available beside the processflow that you have executed. You can view the option `View Snapshot` in the context menu.  
+**Note: The button View Snapshot will be in Disabled State if any processflow has not been executed after deploying.**  
 ![Snapshot4](../../staticfiles/processflow/media/snapshot4.png)  
 6.	Click View Snapshot button to view the Snapshot.    
 ![Snapshot5](../../staticfiles/processflow/media/snapshot5.png)  
-7.	The Snapshot will display the following details of the Process Flow.  
+7.	The Snapshot will display the following details of the processflow.  
 ![Snapshot6](../../staticfiles/processflow/media/snapshot6.png)  
-* Process Flow Name - Displays the name of the Process Flow on the left corner of Title bar of the Snapshot pop-up window. 
-* Environment Name - Displays the environment name on which the Process Flow is executed.
-**Note: You need to hover over the Process Flow Name & Environment Name to view the name if it exceeds 100 characters.**
-* Document Icon – You can view the description of the Process Flow by click the Document Icon beside the Process Flow Name.   
+* processflow Name - Displays the name of the processflow on the left corner of Title bar of the Snapshot pop-up window. 
+* Environment Name - Displays the environment name on which the processflow is executed.
+**Note: You need to hover over the processflow Name & Environment Name to view the name if it exceeds 100 characters.**
+* Document Icon – You can view the description of the processflow by click the Document Icon beside the processflow Name.   
 * Execution Time & Status: Show all the Snapshot files with respect to the execution Time & execution Status. You can view the files on the Left side of the Pop-up window. For every Execution Time & Status,  you can view the following details.    
 (a) Serial Number   
 (b) UTC Time of its execution   
@@ -56,7 +56,7 @@ prerequisites. Given below are the steps that will help you view Snapshot of a P
 (d) Status of the execution process    
 **Note: You can view 10 snapshots at a time based and status however you can click on the More button to view the 
 next 10 snapshots that has been executed in the past.**
-* Nodes Panel: You can view the nodes that were executed in the process flow. Clicking on individual Execution Time and Status files (available on the left), will display all the nodes that were executed for that execution time. 
+* Nodes Panel: You can view the nodes that were executed in the processflow. Clicking on individual Execution Time and Status files (available on the left), will display all the nodes that were executed for that execution time. 
 * Node Details Panel: This panel will display the node specific execution details: The Following tabs will be available for each node.
 (a) Data Log - Displays the identity of the data for each node executed. The id is displayed based on the Primary key of that node. 
 (b) Activity Log – This tab will display the execution logs of each node.  
@@ -118,5 +118,5 @@ d.	Click on the Transaction File tab of the Post node. You will be able to view 
 
  **Note:** You can only view the successday for every instance of generated snapshots. Failed data will be display in the [Retry Window](/processflow/retry-processflow/). 
 
-Following the above steps, you can successfully view the snapshot of an executed Process Flow.
+Following the above steps, you can successfully view the snapshot of an executed processflow.
 

@@ -1473,7 +1473,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising ProcessFlow">Organising ProcessFlow</a>
         
     </li>
     
@@ -1517,7 +1517,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a processflow">Retrying a processflow</a>
         
     </li>
     
@@ -1682,7 +1682,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Processflow Packaging">Processflow Packaging</a>
         
     </li>
     
@@ -2659,7 +2659,7 @@
 
 <h3 id="understanding-conditions">Understanding conditions</h3>
 
-<p>Delay node can be implemented anywhere within a process flow, and the configuration for implementing delay can be provided using <code class="language-plaintext highlighter-rouge">Static Time</code> or by using a <code class="language-plaintext highlighter-rouge">Dynamic Time</code>.
+<p>Delay node can be implemented anywhere within a processflow, and the configuration for implementing delay can be provided using <code class="language-plaintext highlighter-rouge">Static Time</code> or by using a <code class="language-plaintext highlighter-rouge">Dynamic Time</code>.
 Dragging the Delay node in the Designer panel, you can view the following fields for configuring Delay.</p>
 
 <ul>
@@ -2704,24 +2704,24 @@ Dragging the Delay node in the Designer panel, you can view the following fields
 
 <ul>
   <li>You need to have valid credentials of the portal.</li>
-  <li>You need to <a href="/processflow/creating-processflow/">create a Process Flow</a> or need to have an existing Process Flow developed.</li>
+  <li>You need to <a href="/processflow/creating-processflow/">create a processflow</a> or need to have an existing processflow developed.</li>
   <li>You cannot implement Self-loop over Delay node.</li>
   <li>You cannot implement Delay on a node where self-loop is linked.</li>
 </ul>
 
 <h2 id="working-principle">Working Principle</h2>
 
-<p>1) Drag the Delay node in the <a href="/processflow/designer-processflow/">designer panel</a> of the Process Flow. The node configuration window for Delay node opens.</p>
+<p>1) Drag the Delay node in the <a href="/processflow/designer-processflow/">designer panel</a> of the processflow. The node configuration window for Delay node opens.</p>
 
 <p>2) You can view the above mentioned fields. Enter the Node Description and select the desired checkbox for <code class="language-plaintext highlighter-rouge">Wait Time</code>.</p>
 
-<p>3) Enter the static value and click on the SAVE button. Save the process flow for storing the changes.</p>
+<p>3) Enter the static value and click on the SAVE button. Save the processflow for storing the changes.</p>
 
 <p><img src="\staticfiles\processflow\media\delay4.PNG" alt="delay4" /></p>
 
-<p>4) <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute the Process flow</a> after covering all other configurations.</p>
+<p>4) <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute the processflow</a> after covering all other configurations.</p>
 
-<p>5) Navigate to Environment section to view the <a href="/processflow/snapshot-processflow/">snapshot</a> for the deployed process flow.</p>
+<p>5) Navigate to Environment section to view the <a href="/processflow/snapshot-processflow/">snapshot</a> for the deployed processflow.</p>
 
 <p>6) Click on the Delay node in the snapshot to view the Data Log, Activity Log and Transaction File.</p>
 
@@ -2733,12 +2733,12 @@ Dragging the Delay node in the Designer panel, you can view the following fields
 
 <p><strong>(A) Implementing Delay using Generic Function:</strong></p>
 
-<p>Currently, for implementing Delay using Generic Function, you will have to create a <a href="/processflow/working-with-variable/#creating-variable">Variable</a> of <strong>String</strong> datatype with default value provided as: <code class="language-plaintext highlighter-rouge">Hour=00;Min=00;Sec=00;Millisec=00</code>. The scope of the variable should be <code class="language-plaintext highlighter-rouge">Process Flow</code> (Global Variable) so as to use the variable in Delay Node.</p>
+<p>Currently, for implementing Delay using Generic Function, you will have to create a <a href="/processflow/working-with-variable/#creating-variable">Variable</a> of <strong>String</strong> datatype with default value provided as: <code class="language-plaintext highlighter-rouge">Hour=00;Min=00;Sec=00;Millisec=00</code>. The scope of the variable should be <code class="language-plaintext highlighter-rouge">processflow</code> (Global Variable) so as to use the variable in Delay Node.</p>
 
 <p><img src="\staticfiles\processflow\media\delay6.PNG" alt="delay6" /></p>
 
 <p>Navigating back to the node configuration window for Delay Node, on selecting the <strong>WaitTime</strong> checkbox as <strong>Dynamic Time</strong>, you will be required to provide the generic function for operating the delay. Enter the generic function <code class="language-plaintext highlighter-rouge">~~{gen:GetContextualDataObject(' VariableName ')}~</code> with the variable name passed in its parameter. 
-Deploy and Execute the Process Flow for implementing the Delay.</p>
+Deploy and Execute the processflow for implementing the Delay.</p>
 
 <p><img src="\staticfiles\processflow\media\delay7.PNG" alt="delay7" /></p>
 

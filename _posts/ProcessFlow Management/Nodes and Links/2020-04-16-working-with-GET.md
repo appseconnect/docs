@@ -14,7 +14,7 @@ menus:
 
 ## What is Get Node?
 
-GET node is used for getting data from an application by using their API Endpoints provided by the application. When you drag an application node in the Process Flow Designer Panel, the node configuration window opens. You specify the following details and click on the SAVE button.
+GET node is used for getting data from an application by using their API Endpoints provided by the application. When you drag an application node in the processflow Designer Panel, the node configuration window opens. You specify the following details and click on the SAVE button.
 * Node Description: This denotes the description of the node.
 * Node Type: This denotes the type of action that the node needs to perform GET or POST.
 * App Version: This denotes the version of the Application. You need to select the version of the application you need for the integration.
@@ -28,7 +28,7 @@ Node Type as `GET`.
 
 ## Working Principle for GET node
 
-1. GET node in APPSeCONNECT Process Flow is linked with the Start node such that when the process flow execution is triggered, the GET node is executed first which fetches data from the source application for the transformation process.
+1. GET node in APPSeCONNECT processflow is linked with the Start node such that when the processflow execution is triggered, the GET node is executed first which fetches data from the source application for the transformation process.
 2. Click on the Node Configuration icon to open the Node configuration window for the selected application node.
 ![Getnode1](../../../staticfiles/processflow/media/mapper/getnode1.png)  
 3. Select the node type as GET in the Node Configuration window and click the save button.

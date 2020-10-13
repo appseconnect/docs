@@ -1473,7 +1473,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising ProcessFlow">Organising ProcessFlow</a>
         
     </li>
     
@@ -1517,7 +1517,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a processflow">Retrying a processflow</a>
         
     </li>
     
@@ -1682,7 +1682,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Processflow Packaging">Processflow Packaging</a>
         
     </li>
     
@@ -2639,8 +2639,8 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#prerequisites-for-protocol-implementation-in-process-flow">Prerequisites for Protocol Implementation in Process Flow</a></li>
-  <li><a href="#steps-to-setup-protocol-in-process-flow">Steps to setup Protocol in Process Flow:</a></li>
+  <li><a href="#prerequisites-for-protocol-implementation-in-processflow">Prerequisites for Protocol Implementation in processflow</a></li>
+  <li><a href="#steps-to-setup-protocol-in-processflow">Steps to setup Protocol in processflow:</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2656,34 +2656,34 @@
   <li>For creating general transactional data like Business Partner, Products etc. you need to work with the protocol <strong>DI Server Object</strong>.</li>
 </ul>
 
-<p>SAP Business One follows two more protocols <strong>DI API</strong> &amp; <strong>FTP</strong> for other purposes as well with respect to data. As an user, for integrating data you need to understand the protocol structure of the application you are working with, before implementing protocols in APPSeCONNECT Process Flow.</p>
+<p>SAP Business One follows two more protocols <strong>DI API</strong> &amp; <strong>FTP</strong> for other purposes as well with respect to data. As an user, for integrating data you need to understand the protocol structure of the application you are working with, before implementing protocols in APPSeCONNECT processflow.</p>
 
 <p><strong><em>Note</em></strong>: <em>You can anytime view the differences of these protocols in XSLT preview of Mapper Node.</em></p>
 
-<h2 id="prerequisites-for-protocol-implementation-in-process-flow">Prerequisites for Protocol Implementation in Process Flow</h2>
+<h2 id="prerequisites-for-protocol-implementation-in-processflow">Prerequisites for Protocol Implementation in processflow</h2>
 
 <ol>
   <li>
     <p>You need to have basic knowledge of the protocol used by the application selected by you.</p>
   </li>
   <li>
-    <p>You need to design a Process Flow before implementing Protocol. <a href="/processflow/creating-processflow/">Click Here</a> for the steps to design a process flow.</p>
+    <p>You need to design a processflow before implementing Protocol. <a href="/processflow/creating-processflow/">Click Here</a> for the steps to design a processflow.</p>
   </li>
   <li>
-    <p>Protocol implementation is done only for the application in POST operation. Therefore you need to design the Process flow with you application in destination.</p>
+    <p>Protocol implementation is done only for the application in POST operation. Therefore you need to design the processflow with you application in destination.</p>
   </li>
 </ol>
 
-<h2 id="steps-to-setup-protocol-in-process-flow">Steps to setup Protocol in Process Flow:</h2>
+<h2 id="steps-to-setup-protocol-in-processflow">Steps to setup Protocol in processflow:</h2>
 
 <p><strong><em>Note</em></strong>: <em>Here we will demonstrate you with the steps to implement and setup Protocol keeping SAP business One in Destination. The flow remains the same if you are working with other application as well apart of SAP Business One</em>.</p>
 
 <ol>
   <li>
-    <p>Login to the Portal and Navigate to the <a href="/processflow/overview-of-processflow/">Process Flow</a> section. Click on the new button to <a href="/processflow/creating-processflow/">create a new Process Flow</a>.</p>
+    <p>Login to the Portal and Navigate to the <a href="/processflow/overview-of-processflow/">processflow</a> section. Click on the new button to <a href="/processflow/creating-processflow/">create a new processflow</a>.</p>
   </li>
   <li>
-    <p>Design the process flow keeping the selected application in Destination (In this case SAP Business One).</p>
+    <p>Design the processflow keeping the selected application in Destination (In this case SAP Business One).</p>
   </li>
   <li>
     <p>On dragging the <a href="/processflow/working-with-POST/">destination application</a> (SAP Business One in this case), the Node Configuration Window opens.</p>
@@ -2710,7 +2710,7 @@
     <p>Click on the SAVE button after all the mandatory fields are filled up.</p>
   </li>
   <li>
-    <p>Link up the Node and Save the Process Flow. Click on the Node configuration Button of the <a href="/processflow/working-with-mapper/">Mapper Node</a>. The Mapper Window opens.</p>
+    <p>Link up the Node and Save the processflow. Click on the Node configuration Button of the <a href="/processflow/working-with-mapper/">Mapper Node</a>. The Mapper Window opens.</p>
   </li>
   <li>
     <p>Click on the <strong>Preview</strong> button to view the generated XSLT with respect to the chosen protocol.</p>

@@ -15,7 +15,7 @@ menus:
 
 In Business, you may not have time for redundant data or data which is of no use to the business. Your Business can be Country specific or certain sets of customer specific and therefore you may not require data which are not oriented to you business. Therefore, in such case you may need to deal with data that are redundant. 
 
-APPSeCONNECT Process Flow is enabled with a decision node that will not execute the data that does not fulfills your decision criteria. The below image will help you design a process flow with the Decision Node.
+APPSeCONNECT processflow is enabled with a decision node that will not execute the data that does not fulfills your decision criteria. The below image will help you design a processflow with the Decision Node.
 
 ![PFdecision1](\staticfiles\processflow\media\pfdecision1.PNG)
 
@@ -25,7 +25,7 @@ APPSeCONNECT Process Flow is enabled with a decision node that will not execute 
 
 The set of data that fulfils this condition, are marked as passed and is posted to the respective application. These Routing conditions can be applied in other scenarios as well where the decision condition filters data related to other specific mapping scenarios or data with different response code from its source API. These condition checks can alter as per your business requirement.
 
-The following are the fields that you will get on dragging the Decision Node in the Process Flow Designer Panel.
+The following are the fields that you will get on dragging the Decision Node in the processflow Designer Panel.
 
 - **Node Description:** Here, you can provide a short description for the Decision Node.
 
@@ -43,12 +43,12 @@ The following are the fields that you will get on dragging the Decision Node in 
 
     - Decision on **Static Values:**
 
-        Static Values are any random values that can be provided in the Decision key for allowing condition check in the Process Flow. Any value that is provided in Decision Key with or without conjunction can be a Static Value. Static Values can be provided to check and verify whether the node successfully execution the decision nodes. 
+        Static Values are any random values that can be provided in the Decision key for allowing condition check in the processflow. Any value that is provided in Decision Key with or without conjunction can be a Static Value. Static Values can be provided to check and verify whether the node successfully execution the decision nodes. 
 
         In Business Perspective, any decision key if provided be it the generic function or Attibute value extraction though XPATH or a cloud appresource function provided in Decision Key will be considered as a static Value.
 
 
-_**Note:** You can only provide those Appresource Functions (both Cloud & Generic) as Decision Key which are defined either in Process Flow Level or Organisation level or APPSeCONNECT level._
+_**Note:** You can only provide those Appresource Functions (both Cloud & Generic) as Decision Key which are defined either in processflow Level or Organisation level or APPSeCONNECT level._
 
 - **Operator:** You will be provided with a list of operators thats will enable the key to take the decision.
 
@@ -64,8 +64,8 @@ _**Note:** You can only provide those Appresource Functions (both Cloud & Generi
 ## Prerequisites:
 
 - You need to have valid credentials of the portal.
-- You need to [create a Process Flow](/processflow/creating-processflow/) or need to have an existing Process Flow developed.
-- When working with Cloud Appresource function in Decision Node, you need to define the function before implementing the decision criteria. [Click Here](/processflow/cloud-appresource-functions/) to know more about Process Flow cloud appresource function.
+- You need to [create a processflow](/processflow/creating-processflow/) or need to have an existing processflow developed.
+- When working with Cloud Appresource function in Decision Node, you need to define the function before implementing the decision criteria. [Click Here](/processflow/cloud-appresource-functions/) to know more about processflow cloud appresource function.
 
 ## Working Principle:
 
@@ -107,9 +107,9 @@ _**Note:**_
 
 5. Enable the Toggle buttons for the criteria and click on the SAVE button.
 
-6. Once all the configuration are made for the Process Flow. [Deploy and Execute](/processflow/deploying-and-executing-processfloww/) the Process Flow.
+6. Once all the configuration are made for the processflow. [Deploy and Execute](/processflow/deploying-and-executing-processfloww/) the processflow.
 
-7. After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about Process Flow Snapshots. The **Activity Log** against the `Decision node` in snapshot will display you the status of the condition.
+7. After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about processflow Snapshots. The **Activity Log** against the `Decision node` in snapshot will display you the status of the condition.
 
 ![PFdecision5](\staticfiles\processflow\media\pfdecision5.PNG)
 
@@ -118,7 +118,7 @@ _**Note:**_
 **- The tabs `Data log` for the Decision Node will display list the data that entered the Decision Node.
 - The tab `Transaction File` will display you the INPUT file available in the GET node.**
 
-Following the above process you can successfully implement Decision for a Process Flow.
+Following the above process you can successfully implement Decision for a processflow.
 
 
 ## Business Specific Scenarios for Decision:

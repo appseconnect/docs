@@ -14,7 +14,7 @@ menus:
 Actions are certain tasks like getting data from an application or sending data to an application based on specific API filter conditions known as Action Filters.
 Every Schema is an entity that requires to multiple actions to perform multiple operations as per the transaction happening. For Eg: GET, POST, PUT, DELETE etc. 
 
-This section of the document will enable the user to create actions, action filter and error filters under a created schema, when working with process flow.
+This section of the document will enable the user to create actions, action filter and error filters under a created schema, when working with processflow.
 
 ## Prerequisites
 - The User should have a valid APPSeCONNECT account.
@@ -27,7 +27,7 @@ This section of the document will enable the user to create actions, action filt
 
 ## Adding a New Action
 
-1) Navigate to the Process Flow and the drag the application node for which the Actions are to be made. The Node configuration window of the app node opens.
+1) Navigate to the processflow and the drag the application node for which the Actions are to be made. The Node configuration window of the app node opens.
 
 2) Enter all the mandatory fields and click on the save button.
 
@@ -122,7 +122,7 @@ Click on the SAVE icon beside the filter to save the current sibling.
 
 7) You can also append multiple filters by clicking on the **APPEND** button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.
 
-8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different Process Flow for the same application within the same organisation. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
+8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different processflow for the same application within the same organisation. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
 
 **Note:** You need to save the elder sibling before applying conjuction on same level or below level.
 
@@ -172,7 +172,7 @@ Following the above process, you can successfully implement Retry filter for an 
 ![savetemplate1](\staticfiles\processflow\media\savetemplate1.PNG)
 
 5) Click on the **Save as Template** button to save the provided Action Filter as a template. 
-You can reuse this saved template on any other nodes of any Process Flow in your organisation, 
+You can reuse this saved template on any other nodes of any processflow in your organisation, 
 provided the **application node** , **Schema** & the **Action** remains the same.
 
 6) You can view the saved for the schema and action by navigating to **[Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) > your selected Schema Entity > The Action in which you have created the Template > Click on the Action filter.**

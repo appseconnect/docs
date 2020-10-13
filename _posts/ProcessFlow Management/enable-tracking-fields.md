@@ -14,7 +14,7 @@ menus:
 
 Tracking is a feature in APPSeCONNECT which lets the user view and track all those elements (Child Elements under a parent attribute in XML) 
 in the Resync Bucket of the agent (Cloud & OP) which gets synced. This is done by defining the tracking in the cloud portal against the 
-process flow for whose tracking, one needs to view.
+processflow for whose tracking, one needs to view.
 
 The user wants to track the GENDER of all the data in the Resync Bucket of the Agent. For this, the Tracking Feature is made use which enables 
 user to view the corresponding results as required. 

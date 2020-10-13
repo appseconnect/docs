@@ -26,7 +26,7 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 |Modules|Details|
 |---|---|
 |[Home](/accessing%20portal/accessing-portal/#home)|This page will show the details of the organisation, user logged in into. Project Basic Information, Configuration Completion Details etc.|
-|[Designer](/accessing%20portal/accessing-portal/#designer)|This section will allow the user to design the business flows using Workflows or Process Flows|
+|[Designer](/accessing%20portal/accessing-portal/#designer)|This section will allow the user to design the business flows using Workflows or Processflows|
 |[Deploy](/accessing%20portal/accessing-portal/#deploy)|This section will let the users working with the Environment deployed|
 |[Manage](/accessing%20portal/accessing-portal/#manage)|This section will allow the users to manage their Apps, Connections, Rules, Repositories, APIs, Feeds, Monitoring etc.|
 |[Help](/accessing%20portal/accessing-portal/#help)|This section will allow the user to get help and learn about the usability of the features. User can easily connect to the Documentation and Community resource from HELP.|
@@ -126,7 +126,7 @@ Users can minimize, maximize the widget by click on the respective button availa
 ## Designer
 
 This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
-Workflows and Process Flows. Below are the gist that provides you with the informations of Workflow and Process Flow.
+Workflows and Processflows. Below are the gist that provides you with the informations of Workflow and processflow.
 
 ![Designer1](\staticfiles\root\media\designer1.PNG)
 
@@ -137,13 +137,13 @@ APPSeCONNECT workflow application can be considered as a strong feature that use
 
 To know more about Workflow Management, [Click here](/workflow/overview/).
 
-### Process Flows
+### Processflows
 
-`Process Flows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
-Process Flow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, Process Flow is enables with a Packaging system that enables the user to zip design process flows into packages
+`Processflows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
+processflow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, processflow is enables with a Packaging system that enables the user to zip design Processflows into packages
 that enables you to share and install in other organisations.
 
-To know more about the Process Flows, [Click Here](/processflow/overview-of-processflow/)
+To know more about the Processflows, [Click Here](/processflow/overview-of-processflow/)
 
 ## Deploy
 

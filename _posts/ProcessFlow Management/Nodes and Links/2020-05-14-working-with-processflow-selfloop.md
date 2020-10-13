@@ -32,7 +32,7 @@ You can execute a Self loop by choosing any one one of the three given options.
 Although the availability of data is always the prime criteria for executing the 
 self-loop.
 
-**_Note: You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution._**
+**_Note: You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the processflow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the processflow to get the data as per the updated configuration after execution._**
 
 ### Working Principle
 ![PF_selfloop1](\staticfiles\processflow\media\pfselfloop1.PNG)
@@ -93,22 +93,22 @@ _**(b)Self-loop over the GET/MAPPER/POST node will be iterated for the duration 
 
 _**(c)Data availability is the first condition for execution of the self-loop, irrespective of the options choosen  for execution.**_
 
-_**(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the Process Flow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the process flow to get the data as per the updated configuration after execution.**_
+_**(d)You can anytime update the self loop configuration, by clicking on the DOT over the self loop link. You need to SAVE the processflow after the saving the updated node configuration of the self loop. [Redeploy](/processflow/redeploying-processflow/) the processflow to get the data as per the updated configuration after execution.**_
 
 ### Execution flow for Self loop:
 
-1. [Design the Process Flow](/processflow/creating-processflow/) and self link the node where you want to implement the Self-loop.In this case, self-loop is applied on GET node.
+1. [Design the processflow](/processflow/creating-processflow/) and self link the node where you want to implement the Self-loop.In this case, self-loop is applied on GET node.
 ![PF_selfloop6](\staticfiles\processflow\media\pfselfloop6.PNG)  
 2. On linking the GET node with self loop, the self loop configuration window opens. Select the execution order of the Self-Loop as `Number of Occurences`.
 ![PF_selfloop7](\staticfiles\processflow\media\pfselfloop7.PNG)
-3. Save and [Deploy the Process Flow](/processflow/deploying-and-executing-processfloww/) to deploy all the configurations to the environment.
-4. You need to execute the Process Flow after the deployment process.
-**Your process flow will automatically be executed if your sync type is set to Auto mode.**
-5. Navigate to `Manage > Environment`. Click on the **Process FLow tab** for the environment where you have deployed the Process Flow and check for the 
-[Process Flow Snapshot.](/processflow/snapshot-processflow/)  
+3. Save and [Deploy the processflow](/processflow/deploying-and-executing-processfloww/) to deploy all the configurations to the environment.
+4. You need to execute the processflow after the deployment process.
+**Your processflow will automatically be executed if your sync type is set to Auto mode.**
+5. Navigate to `Manage > Environment`. Click on the **processflow tab** for the environment where you have deployed the processflow and check for the 
+[processflow Snapshot.](/processflow/snapshot-processflow/)  
 ![PF_selfloop8](\staticfiles\processflow\media\pfselfloop8.PNG)  
 
-Following the process you can successfully execute a Process Flow with Self-Loop.
+Following the process you can successfully execute a processflow with Self-Loop.
 
 **NOTE:   
 (a) Until data available - Extra iteration will be displayed  
@@ -135,7 +135,7 @@ One of the key elements for integration is processing and exchange of large amou
 To ensure that these scenarios are executed without any issues, especially related to memory, 
 you can use the Self-Loop option in Processflow Integration in APPSeCONNECT. You can easily use this 
 Selp loop in both the source and destination application in the Integration Process and invoke 
-that process flow is executed and bulk data is synced using a Self Loop. This Process incorporates splitter node
+that processflow is executed and bulk data is synced using a Self Loop. This Process incorporates splitter node
 for splitting bulk data into chunks of data for reducing data load in destination application.
 
 Example for Execution:  Start node-> Get Node(SELF LOOP)-> Mapper -> Split-> Post (SELF LOOP)

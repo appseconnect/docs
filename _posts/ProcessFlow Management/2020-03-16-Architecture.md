@@ -21,7 +21,7 @@ picture of the processflow.
 ## Architecture
 
 
-![Process Flow Architecture 01](../../staticfiles/processflow/media/process flow-architecture-01.png)  
+![processflow Architecture 01](../../staticfiles/processflow/media/processflow-architecture-01.png)  
 
 When a processflow is getting executed, there are a number of things that can happen. First, an execution 
 can happen on cloud directly on an hosted environment maintained by APPSeCONNECT, or it can generate a call

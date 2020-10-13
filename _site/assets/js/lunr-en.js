@@ -2052,7 +2052,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Overview of ProcessFlow",
-      excerpt: "APPSeCONNECT Process Flows suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+      excerpt: "APPSeCONNECT processflows suite features an extensive interface that provide the ability to easily create digital maps to make out robust...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 226
@@ -2060,8 +2060,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to Designing Process Flow",
-      excerpt: "Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business...",
+      title: "Quickstart guides to Designing processflow",
+      excerpt: "processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 227
@@ -2079,7 +2079,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Important Terminology",
-      excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Process Flow Folder It is...",
+      excerpt: "This document demonstrates the important terminologies that you need to consider while using ProcessFlows ProcessFlow Folder It is one the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 229
@@ -2088,7 +2088,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Designer",
-      excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+      excerpt: "This section enables the user to implement business scenarios by designing processflows. Here user would get the detailed usability of...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 230
@@ -2096,8 +2096,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Organising Process Flow",
-      excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+      title: "Organising ProcessFlow",
+      excerpt: "This section provides the option of creating folders for organizing the ProcessFlows with respect to the business requirements for any...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 231
@@ -2106,7 +2106,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Steps to Create a ProcessFlow",
-      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
+      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new processflows. The steps...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 232
@@ -2133,7 +2133,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Deploy, Execute & Undeploy",
-      excerpt: "Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users,...",
+      excerpt: "Created or Edited processflows needs to be deployed to the environment in order to execute the integration process. Users, now...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 235
@@ -2142,7 +2142,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Redeploy",
-      excerpt: "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
+      excerpt: "Redeploying processflow functionality allows you to re-deploy an existing processflows (deployed/deployed and executed) to the same environment in order to...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 236
@@ -2150,8 +2150,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Retrying a Process Flow",
-      excerpt: "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
+      title: "Retrying a processflow",
+      excerpt: "Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 237
@@ -2160,7 +2160,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Data view of Snapshot",
-      excerpt: "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
+      excerpt: "Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 238
@@ -2178,7 +2178,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Delete Processflow",
-      excerpt: "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+      excerpt: "Deleting option enables you to delete a processflow once you have designed it, deployed it or executed it. Deletion is...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 240
@@ -2268,7 +2268,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Nodes and Link overview",
-      excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
+      excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT processflow. You can use the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 250
@@ -2574,7 +2574,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Working with Capture Variables",
-      excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+      excerpt: "APPSeCONNECT processflow allows you to create variables that captures certain values that can be reused in any part of the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 284
@@ -2591,8 +2591,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Technology App creation Within Process Flow",
-      excerpt: "Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to...",
+      title: "Technology App creation Within processflow",
+      excerpt: "processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 286
@@ -2628,7 +2628,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Link Order Sequencing",
-      excerpt: "Link Ordering of Nodes for Sequential Execution Process Flow being the advanced sync flow feature of APPSeCONNECT, allows you to...",
+      excerpt: "Link Ordering of Nodes for Sequential Execution processflow being the advanced sync flow feature of APPSeCONNECT, allows you to create...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 290
@@ -2717,8 +2717,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Process Flow Packaging",
-      excerpt: "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
+      title: "Processflow Packaging",
+      excerpt: "Processflow Packaging is a concept of zipping multiple ProcessFlows or Processflow folders from one organisation to another. Processflow being the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 300
@@ -2726,8 +2726,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Viewing, Installing & Re-Installing Process Flow Packages",
-      excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
+      title: "Viewing, Installing & Re-Installing processflow Packages",
+      excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the Processflows...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 301
@@ -2736,7 +2736,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Package Sharing",
-      excerpt: "Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was...",
+      excerpt: "Packaging of processflows have enabled the users to zip multiple processflows. The main goal to create packages was to share...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 302
@@ -2826,7 +2826,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Copy Processflow",
-      excerpt: "Process Flows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial...",
+      excerpt: "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 312
@@ -5340,7 +5340,7 @@ var store = [
       {
         "title": "Overview of ProcessFlow",
         "url": "/processflow/overview-of-processflow/",
-        "excerpt": "APPSeCONNECT Process Flows suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+        "excerpt": "APPSeCONNECT processflows suite features an extensive interface that provide the ability to easily create digital maps to make out robust...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5349,9 +5349,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to Designing Process Flow",
+        "title": "Quickstart guides to Designing processflow",
         "url": "/processflow/Quickstart-guide-to-processflow/",
-        "excerpt": "Process Flows are the diagrammatic representation of a business process. As an organization, you can have a number of business...",
+        "excerpt": "processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5373,7 +5373,7 @@ var store = [
       {
         "title": "Important Terminology",
         "url": "/processflow/Terminology/",
-        "excerpt": "This document demonstrates the important terminologies that you need to consider while using Process Flows Process Flow Folder It is...",
+        "excerpt": "This document demonstrates the important terminologies that you need to consider while using ProcessFlows ProcessFlow Folder It is one the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5384,7 +5384,7 @@ var store = [
       {
         "title": "Designer",
         "url": "/processflow/designer-processflow/",
-        "excerpt": "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+        "excerpt": "This section enables the user to implement business scenarios by designing processflows. Here user would get the detailed usability of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5393,9 +5393,9 @@ var store = [
     
       
       {
-        "title": "Organising Process Flow",
+        "title": "Organising ProcessFlow",
         "url": "/processflow/processflow-listing-page/",
-        "excerpt": "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+        "excerpt": "This section provides the option of creating folders for organizing the ProcessFlows with respect to the business requirements for any...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5406,7 +5406,7 @@ var store = [
       {
         "title": "Steps to Create a ProcessFlow",
         "url": "/processflow/creating-processflow/",
-        "excerpt": "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
+        "excerpt": "This section of the documentation will guide the user with the process of Creating &amp; Saving new processflows. The steps...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5439,7 +5439,7 @@ var store = [
       {
         "title": "Deploy, Execute & Undeploy",
         "url": "/processflow/deploying-and-executing-processfloww/",
-        "excerpt": "Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users,...",
+        "excerpt": "Created or Edited processflows needs to be deployed to the environment in order to execute the integration process. Users, now...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5450,7 +5450,7 @@ var store = [
       {
         "title": "Redeploy",
         "url": "/processflow/redeploying-processflow/",
-        "excerpt": "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
+        "excerpt": "Redeploying processflow functionality allows you to re-deploy an existing processflows (deployed/deployed and executed) to the same environment in order to...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5459,9 +5459,9 @@ var store = [
     
       
       {
-        "title": "Retrying a Process Flow",
+        "title": "Retrying a processflow",
         "url": "/processflow/retry-processflow/",
-        "excerpt": "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
+        "excerpt": "Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5472,7 +5472,7 @@ var store = [
       {
         "title": "Data view of Snapshot",
         "url": "/processflow/snapshot-processflow/",
-        "excerpt": "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
+        "excerpt": "Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5494,7 +5494,7 @@ var store = [
       {
         "title": "Delete Processflow",
         "url": "/processflow/delete-processflow/",
-        "excerpt": "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+        "excerpt": "Deleting option enables you to delete a processflow once you have designed it, deployed it or executed it. Deletion is...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5604,7 +5604,7 @@ var store = [
       {
         "title": "Nodes and Link overview",
         "url": "/processflow/processflow-nodes-and-links/",
-        "excerpt": "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
+        "excerpt": "Given below is the list of elements you will be able to use in APPSeCONNECT processflow. You can use the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5978,7 +5978,7 @@ var store = [
       {
         "title": "Working with Capture Variables",
         "url": "/processflow/working-with-variable/",
-        "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+        "excerpt": "APPSeCONNECT processflow allows you to create variables that captures certain values that can be reused in any part of the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5998,9 +5998,9 @@ var store = [
     
       
       {
-        "title": "Technology App creation Within Process Flow",
+        "title": "Technology App creation Within processflow",
         "url": "/processflow/technology-app-creation-using-processflow/",
-        "excerpt": "Process Flow is the advanced sync flow feature that will enable you sync node specific data from an application to...",
+        "excerpt": "processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6044,7 +6044,7 @@ var store = [
       {
         "title": "Link Order Sequencing",
         "url": "/processflow/link-order-sequencing/",
-        "excerpt": "Link Ordering of Nodes for Sequential Execution Process Flow being the advanced sync flow feature of APPSeCONNECT, allows you to...",
+        "excerpt": "Link Ordering of Nodes for Sequential Execution processflow being the advanced sync flow feature of APPSeCONNECT, allows you to create...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6152,9 +6152,9 @@ var store = [
     
       
       {
-        "title": "Process Flow Packaging",
+        "title": "Processflow Packaging",
         "url": "/processflow/processflow-packaging/",
-        "excerpt": "Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another....",
+        "excerpt": "Processflow Packaging is a concept of zipping multiple ProcessFlows or Processflow folders from one organisation to another. Processflow being the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6163,9 +6163,9 @@ var store = [
     
       
       {
-        "title": "Viewing, Installing & Re-Installing Process Flow Packages",
+        "title": "Viewing, Installing & Re-Installing processflow Packages",
         "url": "/processflow/processflow-package-installation/",
-        "excerpt": "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
+        "excerpt": "Once you are shared with packages from other organisation, you need to install the packages before working with the Processflows...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6176,7 +6176,7 @@ var store = [
       {
         "title": "Package Sharing",
         "url": "/processflow/processflow-package-sharing/",
-        "excerpt": "Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was...",
+        "excerpt": "Packaging of processflows have enabled the users to zip multiple processflows. The main goal to create packages was to share...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6286,7 +6286,7 @@ var store = [
       {
         "title": "Copy Processflow",
         "url": "/processflow/copy-processflow/",
-        "excerpt": "Process Flows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial...",
+        "excerpt": "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

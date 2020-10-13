@@ -11,14 +11,14 @@ menus:
         identifier: packagesharing
 ---
 
-Packaging of process flows have enabled the users to zip multiple process flows. The main goal to create packages was to share with other organisations. As we encourage the concept of Citizen Integrators, so package sharing is an idea concept of sharing process with one organisation to another.
-Sharing packages will not only save time, but will also reduce the efforts of creating, designing and mapping process flows that is already created in some other organisation.
+Packaging of processflows have enabled the users to zip multiple processflows. The main goal to create packages was to share with other organisations. As we encourage the concept of Citizen Integrators, so package sharing is an idea concept of sharing process with one organisation to another.
+Sharing packages will not only save time, but will also reduce the efforts of creating, designing and mapping processflows that is already created in some other organisation.
 This document will enable you to initate sharing packages from one organisation to another.
 
 ## Prerequisites
 
 - You need to have valid credential to the portal.
-- You need to have the Process Flows created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
+- You need to have the processflows created. Steps to create new processflow is given [here](/processflow/creating-processflow/)
 - You should have the packages created on your organisation. Steps to create new packages is given [here](/processflow/processflow-packaging/#creating-packages).
 - The packages created will be listed on the [package listing](/processflow/processflow-packaging/#listing-packages) page.
 - You cannot reshare a shared package to an another organisation.
@@ -27,7 +27,7 @@ This document will enable you to initate sharing packages from one organisation 
 
 ## Share Packages to Organisations
 
-1) Navigate to the Process Flow module, to view the [process flow listing](/processflow/processflow-listing-page/) page. 
+1) Navigate to the processflow module, to view the [processflow listing](/processflow/processflow-listing-page/) page. 
 
 2) Expand the **Package Library** node and click on **My Packages**. The [package listing](/processflow/processflow-packaging/#listing-packages) page opens.
 
@@ -55,7 +55,7 @@ The `Right Pane` will have two sections:
 
 - **Package Name** : The package name will be displayed.
 - **Package Description** : The package description will be displayed.
-- **Apps** : The apps used in the process flows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
+- **Apps** : The apps used in the processflows inside the packages will be listed in a corousel form. You can slide the corousel to view all the application used.
 - **Filter Icon** : This will enable you to search packages based on the name as a keyword.
 
 Beside the package name, you will have checkboxes that will allow you to select the packages for sharing.
@@ -88,7 +88,7 @@ Following the above process, you can successfully share packages from your organ
 
 **Note:**
 - You can select multiple organisation for sharing.
-- You can share your created packages on your organisation for creating a COPY of the process flows for future use.
+- You can share your created packages on your organisation for creating a COPY of the processflows for future use.
 - As multiple organisation may have same name, therefore, you can provide multiple criteria's in the search box separated by providing **SPACE** between the two criteria. 
 - Each search criteria will be taken as individual TAGS, and can be removed by the user if needed.
 

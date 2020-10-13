@@ -10,9 +10,9 @@ menus:
         icon: fa fa-file-word-o
         identifier: variablesprocessflow
 ---
-APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of the Process Flow or in any other Process Flows designed within your organisation
-Variables are used to store data so that it can be used within a Node or the Process Flow. With Capture Variables you will not have to provide expressions and generic function multiple times, 
-instead you can define a capture variable with the required expression and deploy it anywhere within the Process Flow or any other Process Flow.
+APPSeCONNECT processflow allows you to create variables that captures certain values that can be reused in any part of the processflow or in any other processflows designed within your organisation
+Variables are used to store data so that it can be used within a Node or the processflow. With Capture Variables you will not have to provide expressions and generic function multiple times, 
+instead you can define a capture variable with the required expression and deploy it anywhere within the processflow or any other processflow.
 
 For Eg: You have a create a variable having the name `XYZ` with data type `String` and have associated an XPATH expression `//items/item/customer_id`. 
 Once defined, upon calling the variable, it will execute the expression associated with the variable.
@@ -20,7 +20,7 @@ Once defined, upon calling the variable, it will execute the expression associat
 ### Prerequisites
 
 - You need to have valid credentials to your organisation.
-- You need to design a new Process Flow or you need to have an existing Process Flow created.
+- You need to design a new processflow or you need to have an existing processflow created.
 - The variable name should be unique irrespective of the scope used.
 - You need to provide the values for the mandatory fields in the GENERAL Tab of the Node Configuration Window before creating a Variable.
 
@@ -48,8 +48,8 @@ in the [designer section](/processflow/designer-processflow/).
 - **Expression (Non-Mandatory Field):** You can provide a either an Xpath or a function expression for it to store against the variable.
 - **Default Value (Non-Mandatory Field):** You can also store a default value against the variable such that if expression provided results invalid, the default value can be initiated during the execution process of the variable.
 - **Scope:** The variable can be executed depending upon the scope defined. The Scope of the variable can be defined within the following type.
-    - **Process Flow:** This is the Global variable that can be used in the Process Flows under any nodes.
-    - **Node:** This is the Local Variable and can be used only in the node where it is defined within that Process Flow.
+    - **processflow:** This is the Global variable that can be used in the processflows under any nodes.
+    - **Node:** This is the Local Variable and can be used only in the node where it is defined within that processflow.
 
 ![var2](\staticfiles\processflow\media\var2.png)
 
@@ -143,7 +143,7 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 ### Execution Flow using Capture Variable
 
-1) [Design the Process Flow](/processflow/creating-processflow/) and Open the **Node Configuration Window** for the application implementing [GET operation](/processflow/working-with-GET/). The node configuration window opens.
+1) [Design the processflow](/processflow/creating-processflow/) and Open the **Node Configuration Window** for the application implementing [GET operation](/processflow/working-with-GET/). The node configuration window opens.
 
 2) Enter the required fields in the **General Tab** of the Node Configuration Window of the application implementing GET operation. Click on the **Properties** Tab.
 
@@ -161,9 +161,9 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 ![var11](\staticfiles\processflow\media\var11.png)
 
-7) You can now successfully [deploy and execute](/processflow/deploying-and-executing-processfloww/) the Process Flow.
+7) You can now successfully [deploy and execute](/processflow/deploying-and-executing-processfloww/) the processflow.
 
-8) You can view the [snapshot](/processflow/snapshot-processflow/) of the process flow.
+8) You can view the [snapshot](/processflow/snapshot-processflow/) of the processflow.
 
 ![var12](\staticfiles\processflow\media\var12.png)
 
@@ -194,8 +194,8 @@ This part of the document will list few scenarios that will help you understand 
 | Email | Bool | `{//items//item/ ` <br/> `email_id}` | True |ProcessFlow or Node|Here, the variable is created of the data type Boolean and is provided with both Expression and a default Value. On implementing the Variable on Action Filter for GET operation will fetch only those data that contains the email.|
 | IsGuest | Bool | `{//items//item/ ` <br/> `country_id}`| True| ProcessFlow or Node|Here, the variable is created of the data type Boolean and is provided with both Expression and a default Value. On implementing the Variable on Action Filter for GET operation will fetch only those data that contains the value TRUE against the attribute country id.|
 |TotalSpent| Double | `{//customers/customer` <br/> `/total-spent}`  | 55.55 | ProcessFlow or Node | Here, the variable is of the datatype `Double` is provided with default value. On implementing the variable in the action filter of Shopify operating GET, all the data whose `total-spent` value equals the variable default value will be fetched.|
-|Frieght| Double | `{//items//item` <br/> `//addresses/frieght}` | 6.25 |Process flow or Node| Here, the variable frieght is declared with an expression and a default Value. On implementing the Action filter Operating GET for Magento2, all the data with friegh value 6.25 will be fetched.|
-|LastData| DateTime | `~{gen:LastOf(//items` <br/> `/item/created_at)}~`|2020-07-08 06:31:35|Process flow or Node | Here, generic function is used as an expression and default value is provided as a Date Time  value which signifies that, the last record fetched will be upto the provided DateTime.|
-|FirstData| DateTime | `{//items/item/` <br/> `created_at}`|2020-07-06 04:45:35 |Process flow or Node|Here, the expression and value used will fetch a specific data that matches the given value, when the variable is used in the action filter.|
-|ZipCode|Number|`~{gen:FirstOf(` <br/> `//customers/` <br/> `/customer//` <br/> `addresses/zip)}~`|10001|Process flow or Node|Here, the variable is created with a generic function is provided  as an expression. The variable is implemented on the action filter of Shopify GET node that will fetch all the customers who zip code contains 10001.|
-|GrpCode|Number|`~{gen:FirstOf(` <br/> `//items//item/` <br> `group_code)}~`| 1 |Process flow or Node| Here, the variable is created with a generic function as an expression. The variable is implemented on the action filter of Magento2 GET node that well fetch all the data whose Group Code matches the value provided in the variable.|
+|Frieght| Double | `{//items//item` <br/> `//addresses/frieght}` | 6.25 |processflow or Node| Here, the variable frieght is declared with an expression and a default Value. On implementing the Action filter Operating GET for Magento2, all the data with friegh value 6.25 will be fetched.|
+|LastData| DateTime | `~{gen:LastOf(//items` <br/> `/item/created_at)}~`|2020-07-08 06:31:35|processflow or Node | Here, generic function is used as an expression and default value is provided as a Date Time  value which signifies that, the last record fetched will be upto the provided DateTime.|
+|FirstData| DateTime | `{//items/item/` <br/> `created_at}`|2020-07-06 04:45:35 |processflow or Node|Here, the expression and value used will fetch a specific data that matches the given value, when the variable is used in the action filter.|
+|ZipCode|Number|`~{gen:FirstOf(` <br/> `//customers/` <br/> `/customer//` <br/> `addresses/zip)}~`|10001|processflow or Node|Here, the variable is created with a generic function is provided  as an expression. The variable is implemented on the action filter of Shopify GET node that will fetch all the customers who zip code contains 10001.|
+|GrpCode|Number|`~{gen:FirstOf(` <br/> `//items//item/` <br> `group_code)}~`| 1 |processflow or Node| Here, the variable is created with a generic function as an expression. The variable is implemented on the action filter of Magento2 GET node that well fetch all the data whose Group Code matches the value provided in the variable.|
