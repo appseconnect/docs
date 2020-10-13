@@ -19,7 +19,7 @@
 
 
 
-<title>Viewing and Installing Shared Packages - APPSeCONNECT Product Docs</title>
+<title>Viewing, Installing &amp; Re-Installing Process Flow Packages - APPSeCONNECT Product Docs</title>
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Viewing and Installing Shared Packages">
+<meta property="og:title" content="Viewing, Installing &amp; Re-Installing Process Flow Packages">
 
 
   <link rel="canonical" href="http://localhost:4000/processflow/processflow-package-installation/">
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Viewing and Installing Shared Packages</li>
+      <li class="current">Viewing, Installing & Re-Installing Process Flow Packages</li>
     
   
 </ol>-->
@@ -1534,6 +1534,12 @@
     </li>
     
     
+    <li class="menu-item-" data-url="/processflow/copy-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/copy-processflow/" onclick="selectTab('/processflow/copy-processflow/', event);" title="Go to Copy Processflow">Copy Processflow</a>
+        
+    </li>
+    
+    
     <li class="menu-item-" data-url="/processflow/unfinished-deployment/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/unfinished-deployment/" onclick="selectTab('/processflow/unfinished-deployment/', event);" title="Go to Unfinished Deployment">Unfinished Deployment</a>
         
@@ -1681,14 +1687,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-package-reinstallation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-reinstallation/" onclick="selectTab('/processflow/processflow-package-reinstallation/', event);" title="Go to Reinstalling Shared Packages">Reinstalling Shared Packages</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/processflow-package-installation/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-package-installation/" onclick="selectTab('/processflow/processflow-package-installation/', event);" title="Go to Shared Package Installation">Shared Package Installation</a>
+        <a href="/processflow/processflow-package-installation/" onclick="selectTab('/processflow/processflow-package-installation/', event);" title="Go to Package Installation & Reinstallation">Package Installation & Reinstallation</a>
         
     </li>
     
@@ -2556,7 +2556,7 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Viewing and Installing Shared Packages">
+        <meta itemprop="headline" content="Viewing, Installing &amp; Re-Installing Process Flow Packages">
         <meta itemprop="description" content="Once you are shared with packages from other organisation, you need to install the packages before working with the process flows inside it.This document will enable you to view and install incoming packages from other organisation and execute the process flow inside it.">
         <meta itemprop="datePublished" content="August 18, 2020">
         
@@ -2585,7 +2585,7 @@
                 
                 
                 
-                <li class="current">Viewing and Installing Shared Packages</li>
+                <li class="current">Viewing, Installing & Re-Installing Process Flow Packages</li>
                 
                 
             </ol>
@@ -2595,7 +2595,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Viewing and Installing Shared Packages
+                <h1 class="page__title" itemprop="headline">Viewing, Installing &amp; Re-Installing Process Flow Packages
 </h1>
                 
                 
@@ -2626,7 +2626,7 @@
 
 
 
-  5 minute read
+  7 minute read
 </p>
                 
                 
@@ -2647,6 +2647,9 @@
       <li><a href="#install-from-view-packages">Install from View Packages:</a></li>
     </ul>
   </li>
+  <li><a href="#reinstalling-packages">Reinstalling Packages</a></li>
+  <li><a href="#viewing-installed-packages-from-installed-process-flow-folder">Viewing Installed Packages from Installed Process Flow Folder</a></li>
+  <li><a href="#renaming-the-installed-package-folders">Renaming the Installed Package Folders:</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2661,7 +2664,6 @@ This document will enable you to view and install incoming packages from other o
   <li>You need to have packages shared with you from other organisation. For more details on how to share packages, <a href="/processflow/processflow-packaging/">click here</a>.</li>
   <li>Installation is mandatory to use packaged Process Flows.</li>
   <li>You will have TWO ways to install packages - <strong><a href="/processflow/processflow-package-installation/#install-from-actions-column">Install from Actions column</a></strong> &amp; <strong><a href="/processflow/processflow-package-installation/#install-from-view-packages">Install from View Packages</a></strong>. For more details, <a href="/processflow/processflow-package-installation/#installing-packages">Click Here</a></li>
-  <li>You cannot re-install an installed package.</li>
   <li>All the installed packages, its related process flows will be available in the <a href="/processflow/processflow-listing-page/#installed-process-flows-folder">Install Process Flow</a> folder. A sub folder will be created same as that of the Package Name.</li>
   <li>Process Flows that are shared, if deleted from the folder <strong>Installed Process Flow</strong>, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the <strong>Process Flow</strong> folder.</li>
 </ul>
@@ -2754,14 +2756,89 @@ Click on the <strong>Install</strong> button to install the package shared with 
 
 <p>Following the above process, you can successfully install the shared packages and execute the shared process flows within those packages.</p>
 
+<h2 id="reinstalling-packages">Reinstalling Packages</h2>
+
+<p>This section will guide you with the reinstallation of the packages on your organisation. The <a href="/processflow/processflow-package-installation/#prerequisites">Prerequisites</a> for the reinstallation process, is same as that of installing a package for the first time.</p>
+
+<p>1) To reinstall the package, navigate to My Packages and choose the folder for which the package needs to be reinstalled.</p>
+<ul>
+  <li>Packages created on your organisation will be available on <strong>My Packages</strong> folder.</li>
+  <li>Packages that are shared with you will be available on <strong>Shared With Me</strong> folder.</li>
+</ul>
+
+<p>2) The process to reinstall Packages remains same as that of installing packages. You can reinstall your Packages in two ways as mentioned while <a href="/processflow/processflow-package-installation/#installing-packages">installing Packages</a> for the first time.</p>
+
+<ul>
+  <li><a href="/processflow/processflow-package-installation/#install-from-actions-column">Install from Actions Column</a></li>
+  <li><a href="/processflow/processflow-package-installation/#install-from-view-packages">Install from View Packages</a></li>
+</ul>
+
+<p>3) Click on the install button against the package that you need to reinstall.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall3.PNG" alt="reinstall3" /></p>
+
+<p>4) You will be getting a confirmation message informing <strong>Seems like you have already installed “Your Package Name”. Are you sure you want to reinstall “Your Package Name”.</strong></p>
+<ul>
+  <li>Yes: Your package will be reinstalled</li>
+  <li>No: The reinstallation process will be declined.</li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\reinstall4.PNG" alt="reinstall4" /></p>
+
+<p>5) On accepting the confirmation option, your package will be reinstalled. You can view the loaded screen of the installation process. 
+As reinstalling will create the sub-folder having the same name as that of the package, which is already available in prior.
+By default, you will be provided with the “Package Name (n)” where <strong>n</strong> stands for sequence number of the installation of the package is reinstalled. However you can anytime <a href="/processflow/processflow-package-reinstallation/#renaming-the-installed-packages">rename</a> the <code class="language-plaintext highlighter-rouge">Third Level Sub-Folders</code> inside <strong>Installed Process Flows</strong> as per your choice.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall2.PNG" alt="reinstall2" /></p>
+
+<p>Following the above process you can successfully Reinstall your packages.</p>
+
+<h2 id="viewing-installed-packages-from-installed-process-flow-folder">Viewing Installed Packages from Installed Process Flow Folder</h2>
+
+<p>1) Navigate to Designer &gt; Process Flow &gt; <a href="/processflow/processflow-packaging-overview/">Package Library</a> to view the details of the packages available on your organisation.</p>
+
+<p>2) On installing, you will be created with a <strong>Sub Folder with the same name as that of the package</strong> inside <strong><a href="/processflow/processflow-listing-page/#installed-process-flows-folder">Installed Process Flows</a></strong> folder. 
+Clicking on the Sub folder will provide you with the details of the number of Process Flows available on that sub-folder.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall1.PNG" alt="reinstall1" /></p>
+
+<p>3) Expanding the created Sub folder, you can view multiple <strong>sub-folders on a level below</strong>. This folder will contain the Process Flows that were packaged within.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall5.PNG" alt="reinstall5" /></p>
+
+<p>4) The multiple sub folders are the reinstalled packages that are available on that level of the tree.</p>
+
+<p>Following the above steps you can successfully view Installed Packages from the Installed Process Flow folder.</p>
+
+<h2 id="renaming-the-installed-package-folders">Renaming the Installed Package Folders:</h2>
+
+<p>You will be able to rename you installed packages any time. This section will enable you to Rename the installed packages.</p>
+
+<p>1) All the Installed packages are listed within the Default Folder <a href="/processflow/processflow-listing-page/#installed-process-flows-folder">Installed Process Flows</a>. Only Sub-folders in the third level <code class="language-plaintext highlighter-rouge">(Installed Process Flows &gt; Package Name (Parent Folder) &gt; Package Name (Subfolders having the package Process Flows))</code> will be allowed to RENAME.</p>
+
+<p>2) Clicking on the Ellipses of the third level subfolders, you will be available with RENAME option. The Rename box appears.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall6.png" alt="Reinstall6" /></p>
+
+<p>3) Provide the name and click on the SAVE button.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall7.png" alt="reinstall7" /></p>
+
+<p>4) On saving, you can view the changes inside the <a href="/processflow/processflow-listing-page/#installed-process-flows-folder">Installed Process Flows</a> tree.</p>
+
+<p><img src="\staticfiles\processflow\media\reinstall8.png" alt="reinstall8" /></p>
+
+<p>Following the above process you can successfully RENAME the installed package folders</p>
+
 <p><strong>Note:</strong></p>
 <ul>
   <li>Installation is mandatory to use packaged Process Flows.</li>
-  <li>You cannot rename an installed folder after the installing the package. You will only get the <code class="language-plaintext highlighter-rouge">rename</code> option if the package that is being installed is having the <code class="language-plaintext highlighter-rouge">same name</code> under the folder <code class="language-plaintext highlighter-rouge">Installed Process Flows</code>.</li>
   <li>All the node configurations and mapping done in process flow will be shared when sharing the package to other organisation.</li>
   <li>Modifications made in the process flows in source organisation <em>after the sharing</em> , the changes will not reflect once the package is shared to an another organisation.</li>
   <li>As Process flow doesn’t stores any credentials, you will not have to worry about credentials vulnerability.</li>
   <li>Process Flows that are shared, if deleted from the folder <strong>Installed Process Flow</strong>, will move to the TRASH folder. However, you can anytime restore those process flows from TRASH. The process flows will be restored in the <strong>Process Flow</strong> folder.</li>
+  <li>You cannot rename with a same name in the same tree level.</li>
+  <li>You cannot delete any installed package folders.</li>
 </ul>
 
                 
@@ -2819,7 +2896,7 @@ Click on the <strong>Install</strong> button to install the package shared with 
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Viewing+and+Installing+Shared+Packages%20https://docs.appseconnect.com%2Fprocessflow%2Fprocessflow-package-installation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Viewing%2C+Installing+%26+Re-Installing+Process+Flow+Packages%20https://docs.appseconnect.com%2Fprocessflow%2Fprocessflow-package-installation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Fprocessflow-package-installation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -5361,9 +5438,9 @@ Click on the <strong>Install</strong> button to install the package shared with 
                             
                             
                             <li>
-                                <a href="/processflow/processflow-package-reinstallation/" rel="permalink">
+                                <a href="/processflow/copy-processflow/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Reinstalling Packages
+                                    Copy Processflow
                                 </a>
                             </li>
                             

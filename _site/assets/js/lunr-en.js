@@ -2726,7 +2726,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Viewing and Installing Shared Packages",
+      title: "Viewing, Installing & Re-Installing Process Flow Packages",
       excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
       categories: ["Processflow"],
       tags: ["developers"],
@@ -2825,8 +2825,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Reinstalling Packages",
-      excerpt: "Compressed files are needed to be unzipped before working on them. In similar process, Process Flow Packages are needed to...",
+      title: "Copy Processflow",
+      excerpt: "Process Flows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 312
@@ -6163,7 +6163,7 @@ var store = [
     
       
       {
-        "title": "Viewing and Installing Shared Packages",
+        "title": "Viewing, Installing & Re-Installing Process Flow Packages",
         "url": "/processflow/processflow-package-installation/",
         "excerpt": "Once you are shared with packages from other organisation, you need to install the packages before working with the process...",
         "teaser":
@@ -6284,9 +6284,9 @@ var store = [
     
       
       {
-        "title": "Reinstalling Packages",
-        "url": "/processflow/processflow-package-reinstallation/",
-        "excerpt": "Compressed files are needed to be unzipped before working on them. In similar process, Process Flow Packages are needed to...",
+        "title": "Copy Processflow",
+        "url": "/processflow/copy-processflow/",
+        "excerpt": "Process Flows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
