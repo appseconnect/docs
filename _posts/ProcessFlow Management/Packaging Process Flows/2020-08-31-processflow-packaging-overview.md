@@ -33,11 +33,10 @@ different organisation.
 
 ![sharedlistingpage1](\staticfiles\processflow\media\sharedlistingpage1.PNG)
 
-
 ## For more details on packaging, please visit the below sections:
 
 |Modules|Description|
 |------------------|----------------|
 | [processflow Packaging](/processflow/processflow-packaging/) | Lets you understand the steps to create & edit packages. You'll get more details on Package listing and View Packages|
 | [Package Sharing](/processflow/processflow-package-sharing/) | Enables you to share the created packages from one organisation to another.|
-| [Package Installation](/processflow/processflow-package-installation/) | Enables you to view and install the incoming packages shared from remote organisations.|
+| [Package Installation & Reinstallation](/processflow/processflow-package-installation/) | Enables you to view and install/Reinstall the incoming packages shared from remote organisations.|

@@ -2529,7 +2529,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Release Notes",
-      excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
+      excerpt: "Discover whats going on in APPSeCONNECT. Explore the most recent features and updates and learn more about the product enhancements,...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 279
@@ -5923,7 +5923,7 @@ var store = [
       {
         "title": "Release Notes",
         "url": "/release-notes/overview/",
-        "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
+        "excerpt": "Discover whats going on in APPSeCONNECT. Explore the most recent features and updates and learn more about the product enhancements,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

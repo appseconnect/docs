@@ -47,12 +47,13 @@ By default, an organisation would have the following folders created `processflo
 |Modules| Description|  
 |-------|-----------------------------------------------------|           
 |[processflow Designer Page](/processflow/designer-processflow/) | This page will let the users, create new processflows for their business processes|      
-|[Creating processflow](/processflow/creating-processflow/) |This section of the documentation will guide the user with the process of Creating & Saving new processflows|          
+|[Creating processflow](/processflow/creating-processflow/) |This section of the documentation will guide the user with the process of Creating & Saving new processflows|   
+|[Copy ProcessFlows](/processflow/copy-processflow/)|This will enable you to copy your designed processflows for creating and storing a backup file of your configured processflow.|
 |[Deploying and Excecuting processflow](/processflow/deploying-and-executing-processfloww/) | This section enables the user to deploy the new or saved processflow to the environment in order to execute the integration process|          
 |[Undeploying processflow](/processflow/deploying-and-executing-processfloww/#undeploy-process-flow-from-environment) | This section enables the user to undeploy a deployed process from the environment|    
 |[Redeploying processflow](/processflow/redeploying-processflow/) | Redeploying processflow functionality allows you to re-deploy an existing processflows (deployed/deployed and executed) to the same environment in order to make any changes and execute the integration process|      
 |[Snapshot processflow](/processflow/snapshot-processflow/) | This section of the documentation will guide the user about viewing snapshot of the created processflow|    
-|[processflow Packaging](/processflow/processflow-packaging-overview/)| This will enable you to create and install packages containing processflows. You can share your created packages to other organisation when required also you will be able to install incoming packages shared to you.|
+|[processflow Packaging](/processflow/processflow-packaging-overview/)| This will enable you to create and install & Reinstall packages containing processflows. You can share your created packages to other organisation when required also you will be able to install incoming packages shared to you.|
 |[Export & Import Lookup](/processflow/export-and-import-lookup/) | Repositories in APPSeCONNECT has been implemented with the feature of Import & Export of Reference tables that reduces the manual work of the table creation|        
 |[Implemeting Lookup in Mapping](/processflow/implementing-lookup-in-mapping/) | Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the sync process|   
 |[Creating Lookup Repository Master Data](/processflow/Lookup-repository-masterdata/) | Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation|        
