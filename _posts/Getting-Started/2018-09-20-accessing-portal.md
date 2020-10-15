@@ -210,29 +210,32 @@ b.	Organization Admin
 5) Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
 ![Useradd3](\staticfiles\root\media\useradd3.PNG)
 
-6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message.
+6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message. The created user will have the following keys available for any modification. The list is provided below:
+
+- Edit User: Only the details of the created user can be modified except the role.
+
+- Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
+
+- Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
+
+- Change Role: Here, the default user can change the role for the created user
+
 ![Useradd4](\staticfiles\root\media\useradd4.PNG)
 
 7) The created user gets an Activation Mail. You need to click on the Activation Link to activate your user account.
 ![Useradd5](\staticfiles\root\media\useradd5.PNG)
 
-8) The created user will have the following keys available for any modification. The list is provided below:
+8) Once activated, login to your account with the provided credential provided in the Activation Mail.
 
-    - Edit User: Only the details of the created user can be modified except the role.
-
-    - Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
-
-    - Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
-
-    - Change Role: Here, the default user can change the role for the created user
+![Useradd6](\staticfiles\root\media\useradd6.PNG)
 
 **Note:** 
 
-    * All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
+* All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
 
-    * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
+* Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
 
-    * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
+* Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
 
 #### Steps to update an existing user
 

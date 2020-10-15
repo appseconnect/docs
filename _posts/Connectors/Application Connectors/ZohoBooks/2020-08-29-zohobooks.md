@@ -19,8 +19,8 @@ Troubleshooting issues.
 # Pre-requisites for Zoho CRM V2.0 Configuration 
 
 1.	Valid APPSeCONNECT Portal credentials.
-2.	Select the Application ZOHOBOOKS in the APP section.
-3.	Create a connection for ZOHOBOOKS.
+2.	Select the Application ZOHOBOOKS in the [APP](/getting%20started/configurations/#process-of-choosing-app) section.
+3.	[Create a connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) for ZOHOBOOKS.
 4.	Publish a Touchpoint, Update Adapters and Update Configuration in the agent.To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 
 ## Configure the ZohoBooks Application in the Agent

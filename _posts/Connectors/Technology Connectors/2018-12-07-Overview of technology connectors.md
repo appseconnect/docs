@@ -20,6 +20,8 @@ APPSeCONNECT allows custom development of connectors. As these [technology conne
 own custom made applications or custom data sources, the connection need to be implemented correctly 
 within the application such that data can freely flow from the data source to the other end of the application. 
 
+With the introduction of [ProcessFlows](/processflow/overview-of-processflow/), you can now create your **Technology applications** for the ProcessFlow designer page itself. [Click Here](/processflow/technology-app-creation-using-processflow/) to know more on tech app creation from ProcessFlows.
+
 |Connector Name|Supported Protocol|Description|
 |---|---|---------|
 |HTTP|[REST](/connectors/Overview-of-GenericRest-Adapters/)|Connects to any HTTP based RESTful API using standard authentication mechanisms support by the REST protocol|
