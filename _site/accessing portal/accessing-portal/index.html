@@ -1473,7 +1473,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising Process Flow">Organising Process Flow</a>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising ProcessFlow">Organising ProcessFlow</a>
         
     </li>
     
@@ -1517,7 +1517,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a Process Flow">Retrying a Process Flow</a>
+        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a processflow">Retrying a processflow</a>
         
     </li>
     
@@ -1682,7 +1682,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/processflow-packaging/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Process Flow Packaging">Process Flow Packaging</a>
+        <a href="/processflow/processflow-packaging/" onclick="selectTab('/processflow/processflow-packaging/', event);" title="Go to Processflow Packaging">Processflow Packaging</a>
         
     </li>
     
@@ -2644,7 +2644,7 @@
   <li><a href="#designer">Designer</a>
     <ul>
       <li><a href="#workflows">Workflows</a></li>
-      <li><a href="#process-flows">Process Flows</a></li>
+      <li><a href="#processflows">Processflows</a></li>
     </ul>
   </li>
   <li><a href="#deploy">Deploy</a>
@@ -2711,7 +2711,7 @@ The view of functional module(s) is given below:</p>
     </tr>
     <tr>
       <td><a href="/accessing%20portal/accessing-portal/#designer">Designer</a></td>
-      <td>This section will allow the user to design the business flows using Workflows or Process Flows</td>
+      <td>This section will allow the user to design the business flows using Workflows or Processflows</td>
     </tr>
     <tr>
       <td><a href="/accessing%20portal/accessing-portal/#deploy">Deploy</a></td>
@@ -2824,7 +2824,7 @@ e.	Time taken to execute</p>
 <h2 id="designer">Designer</h2>
 
 <p>This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
-Workflows and Process Flows. Below are the gist that provides you with the informations of Workflow and Process Flow.</p>
+Workflows and Processflows. Below are the gist that provides you with the informations of Workflow and processflow.</p>
 
 <p><img src="\staticfiles\root\media\designer1.PNG" alt="Designer1" /></p>
 
@@ -2835,13 +2835,13 @@ APPSeCONNECT workflow application can be considered as a strong feature that use
 
 <p>To know more about Workflow Management, <a href="/workflow/overview/">Click here</a>.</p>
 
-<h3 id="process-flows">Process Flows</h3>
+<h3 id="processflows">Processflows</h3>
 
-<p><code class="language-plaintext highlighter-rouge">Process Flows</code> are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
-Process Flow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, Process Flow is enables with a Packaging system that enables the user to zip design process flows into packages
+<p><code class="language-plaintext highlighter-rouge">Processflows</code> are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
+processflow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, processflow is enables with a Packaging system that enables the user to zip design Processflows into packages
 that enables you to share and install in other organisations.</p>
 
-<p>To know more about the Process Flows, <a href="/processflow/overview-of-processflow/">Click Here</a></p>
+<p>To know more about the Processflows, <a href="/processflow/overview-of-processflow/">Click Here</a></p>
 
 <h2 id="deploy">Deploy</h2>
 
@@ -2910,22 +2910,45 @@ b.	Organization Admin</p>
 <p>5) Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
 <img src="\staticfiles\root\media\useradd3.PNG" alt="Useradd3" /></p>
 
-<p>6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message.
-<img src="\staticfiles\root\media\useradd4.PNG" alt="Useradd4" /></p>
+<p>6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message. The created user will have the following keys available for any modification. The list is provided below:</p>
+
+<ul>
+  <li>
+    <p>Edit User: Only the details of the created user can be modified except the role.</p>
+  </li>
+  <li>
+    <p>Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.</p>
+  </li>
+  <li>
+    <p>Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.</p>
+  </li>
+  <li>
+    <p>Change Role: Here, the default user can change the role for the created user</p>
+  </li>
+</ul>
+
+<p><img src="\staticfiles\root\media\useradd4.PNG" alt="Useradd4" /></p>
 
 <p>7) The created user gets an Activation Mail. You need to click on the Activation Link to activate your user account.
 <img src="\staticfiles\root\media\useradd5.PNG" alt="Useradd5" /></p>
 
-<p>8) The created user will have the following keys available for any modification. The list is provided below:
-    - Edit User: Only the details of the created user can be modified except the role.
-    - Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
-    - Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
-    - Change Role: Here, the default user can change the role for the created user</p>
+<p>8) Once activated, login to your account with the provided credential provided in the Activation Mail.</p>
 
-<p><strong>Note:</strong> 
-    * All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
-    * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
-    * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation.</p>
+<p><img src="\staticfiles\root\media\useradd6.PNG" alt="Useradd6" /></p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li>
+    <p>All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.</p>
+  </li>
+  <li>
+    <p>Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).</p>
+  </li>
+  <li>
+    <p>Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation.</p>
+  </li>
+</ul>
 
 <h4 id="steps-to-update-an-existing-user">Steps to update an existing user</h4>
 

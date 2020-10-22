@@ -1,27 +1,27 @@
 ---
-title: "Process Flow Packaging"
+title: "Processflow Packaging"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
    packagesoverview:
-        title: "Process Flow Packaging"
+        title: "Processflow Packaging"
         weight: 1
         icon: fa fa-file-word-o
         identifier: packageprocessflow
 ---
 
-Process Flow Packaging is a concept of zipping multiple process flows or process Flow folders from one organisation to another. 
-Process Flow being the advanced version of workflows, now enables you to select process flows and develop a package out of it, which can be shared and have the option to install
+Processflow Packaging is a concept of zipping multiple ProcessFlows or Processflow folders from one organisation to another. 
+Processflow being the advanced version of workflows, now enables you to select ProcessFlows and develop a package out of it, which can be shared and have the option to install
 in a different organisation. This document will help you to create a new package.
 
 ## Prerequisites
 
 - You need to have valid credential to the portal.
-- You need to have the Process Flow created. Steps to create new process flow is given [here](/processflow/creating-processflow/)
-- You cannot create package out of a [Shared package](/processflow/processflow-package-sharing/), for the process flows that are [installed](/processflow/processflow-package-installation/) on your organisation.
-- You can select your process flows only from the [Process Flow folder](/processflow/processflow-listing-page/#process-flow-folder) and its sub-folder.
-- You can add as many process flows for creating a package. There is no specified limit when adding process flows, while creating package.
+- You need to have the Processflow created. Steps to create new Processflow is given [here](/processflow/creating-processflow/)
+- You cannot create package out of a [Shared package](/processflow/processflow-package-sharing/), for the ProcessFlows that are [installed](/processflow/processflow-package-installation/) on your organisation.
+- You can select your ProcessFlows only from the [Processflow folder](/processflow/processflow-listing-page/#process-flow-folder) and its sub-folder.
+- You can add as many ProcessFlows for creating a package. There is no specified limit when adding ProcessFlows, while creating package.
 
 ## Creating Packages
 
@@ -36,27 +36,27 @@ The filter button, will allow you to search and filter your existing packages ba
 
 3) The package creation window appears. The package creation window comprises of three sections.
 
-- **Choose Process Flows** - Here, you are required to select the process flows from the list below. The selected process flow will be displayed in the upper table as you select.
+- **Choose ProcessFlows** - Here, you are required to select the ProcessFlows from the list below. The selected Processflow will be displayed in the upper table as you select.
 - **Configuration** - This page will let to provide details to the package like **Package Name**, **Package Description**, **Version**, **Package Documentation**.
 - **Preview** - This will preview you all the details you have provided in the earlier steps.
 
 ![package3](\staticfiles\processflow\media\package3.PNG)
 
-### Choose Process Flows 
+### Choose ProcessFlows 
 
-This section will allow you to choose the process flows from the [Process Flow folder](/processflow/processflow-listing-page/#process-flow-folder) or from its sub-folder.
+This section will allow you to choose the ProcessFlows from the [Processflow folder](/processflow/processflow-listing-page/#process-flow-folder) or from its sub-folder.
 
-1) In the Choose Process Flows section, you will be able to view the folder path, that will enable you to select process flow from your process flow folders.
-By default, the [Home Folder](/processflow/processflow-listing-page/#usability-for-the-home-folder) will be selected in the **Folder Path** and all the process flow under **HOME** folder will be listed in the below table for the selection process.
+1) In the Choose ProcessFlows section, you will be able to view the folder path, that will enable you to select Processflow from your Processflow folders.
+By default, the [Home Folder](/processflow/processflow-listing-page/#usability-for-the-home-folder) will be selected in the **Folder Path** and all the Processflow under **HOME** folder will be listed in the below table for the selection process.
 
-2) The **Process Flow** table below, will enable you to select the process flows for packaging. The following details will be displayed in the table.
+2) The **Processflow** table below, will enable you to select the ProcessFlows for packaging. The following details will be displayed in the table.
 
-- **Name** - Name of the Process Flows
-- **Description** - Will display you the process flow description.
-- **Version** - Will display the process flow version.
-- **Image** -  This will let you view all the logos of the application implemented inside the process flow. Process Flow Exceeding 4 Applications inside will have a carousel slider in the image column to let you view all the applications in use.
+- **Name** - Name of the ProcessFlows
+- **Description** - Will display you the Processflow description.
+- **Version** - Will display the Processflow version.
+- **Image** -  This will let you view all the logos of the application implemented inside the Processflow. Processflow Exceeding 4 Applications inside will have a carousel slider in the image column to let you view all the applications in use.
 
-Select the process flows by enabling the checkboxes beside the process flow names. You will be able to view the **Selected Process Flows** table above, along with the same details. 
+Select the ProcessFlows by enabling the checkboxes beside the Processflow names. You will be able to view the **Selected ProcessFlows** table above, along with the same details. 
 
 ![package4](\staticfiles\processflow\media\package4.PNG)
 
@@ -88,15 +88,15 @@ This section will display all the configuration provided in the earlier steps as
 
 2) Click on the **Create** button to the create the package.
 
-Following the above process, you can successfully create a process flow package.
+Following the above process, you can successfully create a Processflow package.
 
-**Note: Any changes made to the original process flow, the modifications will not reflect in the packaged versions. You need to create a new package for packaging the modified process flows.**
+**Note: Any changes made to the original Processflow, the modifications will not reflect in the packaged versions. You need to create a new package for packaging the modified ProcessFlows.**
 
 ## Listing Packages
 
-Once you have created your process flow Package, you can successfully view the package lists in the process flow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.
+Once you have created your Processflow Package, you can successfully view the package lists in the Processflow listing page of your organisation. As a prerequisite, you need to have your packages created on your organisation.
 
-1) Navigate to the Process Flow module. The [Process Flow listing](/processflow/processflow-listing-page/) page appears.
+1) Navigate to the Processflow module. The [Processflow listing](/processflow/processflow-listing-page/) page appears.
 
 2) Expand the package library node. You will be able to view the folder **My Packages**. 
 
@@ -104,7 +104,7 @@ Once you have created your process flow Package, you can successfully view the p
 
 - **Package Name** - You will be able to view the names of the packages listed in the "Package Name" column.
 - **Package Description** - You will be able to view the package description provided while creating the package.
-- **Apps** - You can view all the applications used in the process flows containing in the package in a corousel slider.
+- **Apps** - You can view all the applications used in the ProcessFlows containing in the package in a corousel slider.
 - **Actions** - Clicking on the Ellipses (Three horizontal dots) on the action column, you can view the following two options: **Edit** & **View**.
 
 ![package7](\staticfiles\processflow\media\package7.PNG)
@@ -118,7 +118,7 @@ To View a specific Package,  click View option available on the Contextual menu 
 ![package-edit-view](\staticfiles\processflow\media\package-edit-view.png)
 
 The following pop up appears where you can view the package details along with 
-three specific tabs namely - Description, Documentation, Process Flow.
+three specific tabs namely - Description, Documentation, Processflow.
 ![packageview_package_final](\staticfiles\processflow\media\packageview_package_final.png)
 
 The `View Package` window offers you with the following package information  
@@ -133,8 +133,8 @@ for installation details
 The tab details are mentioned below:    
 **Description Tab** - This section provides you the package description along with the view of application
 used in the packages. Here you can also view the last modified package date and time.       
-**Documentation Tab**- This section provides you the documentation of the process flows.        
-**Processflow Tab**- This section enlist the list of process flow included in the package.      
+**Documentation Tab**- This section provides you the documentation of the ProcessFlows.        
+**Processflow Tab**- This section enlist the list of Processflow included in the package.      
 
 In the Processflow Tab  `Search` option is provided where you can search the required 
 processflows by providing the processflow names.  
@@ -160,7 +160,7 @@ If the user clicks on the Cancel button, the changes will not be saved.
 
 **Note: (a) You will be able to view the Package Documentation within the Editor, during Edit mode.  
 (b) Preview option is available in the editor to view the changes.  
-(c) In Edit mode, you will not be able to view or edit the Process Flow(s) present in a Package**  
+(c) In Edit mode, you will not be able to view or edit the Processflow(s) present in a Package**  
 
 
 

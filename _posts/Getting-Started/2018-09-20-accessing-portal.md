@@ -26,7 +26,7 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 |Modules|Details|
 |---|---|
 |[Home](/accessing%20portal/accessing-portal/#home)|This page will show the details of the organisation, user logged in into. Project Basic Information, Configuration Completion Details etc.|
-|[Designer](/accessing%20portal/accessing-portal/#designer)|This section will allow the user to design the business flows using Workflows or Process Flows|
+|[Designer](/accessing%20portal/accessing-portal/#designer)|This section will allow the user to design the business flows using Workflows or Processflows|
 |[Deploy](/accessing%20portal/accessing-portal/#deploy)|This section will let the users working with the Environment deployed|
 |[Manage](/accessing%20portal/accessing-portal/#manage)|This section will allow the users to manage their Apps, Connections, Rules, Repositories, APIs, Feeds, Monitoring etc.|
 |[Help](/accessing%20portal/accessing-portal/#help)|This section will allow the user to get help and learn about the usability of the features. User can easily connect to the Documentation and Community resource from HELP.|
@@ -126,7 +126,7 @@ Users can minimize, maximize the widget by click on the respective button availa
 ## Designer
 
 This section will enable the user to design their business specific integration flows using their selected packages. You can easily create and design your integration flows using 
-Workflows and Process Flows. Below are the gist that provides you with the informations of Workflow and Process Flow.
+Workflows and Processflows. Below are the gist that provides you with the informations of Workflow and processflow.
 
 ![Designer1](\staticfiles\root\media\designer1.PNG)
 
@@ -137,13 +137,13 @@ APPSeCONNECT workflow application can be considered as a strong feature that use
 
 To know more about Workflow Management, [Click here](/workflow/overview/).
 
-### Process Flows
+### Processflows
 
-`Process Flows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
-Process Flow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, Process Flow is enables with a Packaging system that enables the user to zip design process flows into packages
+`Processflows` are the advanced workflows that enables you to design node specific flows which brings the ability to cater unique business process.
+processflow is enabled with an advanced monitoring system that provides you with every detailed logs for troubleshooting purpose for each of your failed deployments and syncs. Also, processflow is enables with a Packaging system that enables the user to zip design Processflows into packages
 that enables you to share and install in other organisations.
 
-To know more about the Process Flows, [Click Here](/processflow/overview-of-processflow/)
+To know more about the Processflows, [Click Here](/processflow/overview-of-processflow/)
 
 ## Deploy
 
@@ -210,22 +210,32 @@ b.	Organization Admin
 5) Input the details and assign the role to the user that is being added. Specify the Role for the user that is being added. 
 ![Useradd3](\staticfiles\root\media\useradd3.PNG)
 
-6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message.
+6) Once all the mandatory fields are filled up, click on the Save button. The created user should be in the list of users along with a success message. The created user will have the following keys available for any modification. The list is provided below:
+
+- Edit User: Only the details of the created user can be modified except the role.
+
+- Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
+
+- Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
+
+- Change Role: Here, the default user can change the role for the created user
+
 ![Useradd4](\staticfiles\root\media\useradd4.PNG)
 
 7) The created user gets an Activation Mail. You need to click on the Activation Link to activate your user account.
 ![Useradd5](\staticfiles\root\media\useradd5.PNG)
 
-8) The created user will have the following keys available for any modification. The list is provided below:
-    - Edit User: Only the details of the created user can be modified except the role.
-    - Revoke Permission: The delete button is for revoking the user from further use. The organisation owner and the Super Admin can only revoke the permission of an added user.
-    - Resend Activation Mail: User can resend the activation mail, if required. This button will be available only until the user has activated the account. Once activated, this button will not be visible.
-    - Change Role: Here, the default user can change the role for the created user
+8) Once activated, login to your account with the provided credential provided in the Activation Mail.
+
+![Useradd6](\staticfiles\root\media\useradd6.PNG)
 
 **Note:** 
-    * All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
-    * Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
-    * Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
+
+* All the modification for the created user would be done by the organisation owner. The created user cannot modify any details.
+
+* Also, the organisation owner cannot modify any roles for its own user profile except the general details (exclusive of the email field).
+
+* Once a user is added to an organisation, the same email id provided previously cannot be used to for adding as a user for a different organisation. 
 
 #### Steps to update an existing user
 

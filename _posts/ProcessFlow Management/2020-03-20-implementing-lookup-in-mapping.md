@@ -16,12 +16,12 @@ Once the Collection and the Reference tables are created, users can implement th
 ## Prerequisites for mapping Lookups
 * You need to have valid credentials for login into the portal.
 * You need to have the [Reference tables and Collection](/processflow/Lookup-repository-masterdata/) created.
-* You need to have the process flow created along with the mapper node.
+* You need to have the processflow created along with the mapper node.
 
 ## Steps to implement lookup in attribute mapping
-1.	Login to the portal and navigate to the process flow section. The process flow [listing page](/processflow/processflow-listing-page/) opens. 
+1.	Login to the portal and navigate to the processflow section. The processflow [listing page](/processflow/processflow-listing-page/) opens. 
 ![Lookup Mapping1](../../staticfiles/processflow/media/lookup-mapping1.png)   
-2.	[Create a process flow](/processflow/creating-processflow/) or edit a created process flow in the Process Flow [Designer page](/processflow/designer-processflow/) opens.    
+2.	[Create a processflow](/processflow/creating-processflow/) or edit a created processflow in the processflow [Designer page](/processflow/designer-processflow/) opens.    
 ![Lookup Mapping2](../../staticfiles/processflow/media/lookup-mapping2.png)    
 3.	Click on the Configuration node button of the mapper node.  
 ![Lookup Mapping3](../../staticfiles/processflow/media/lookup-mapping3.png)   
