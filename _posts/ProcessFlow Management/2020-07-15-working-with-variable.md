@@ -155,7 +155,7 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 ![var9](\staticfiles\processflow\media\var3.png)
 
-5) Navigate to the General tab and click on the **Configure Action Filter** button. Expand the Action filer node and click on the `created_at`. 
+5) Navigate to the General tab and click on the **Configure Filter** button. Expand the Action filer node and click on the `created_at`. To know more about Actions & Action Filters, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/)
 
 6) Enter the Variable name in the `Value` field and click on the save button.
 

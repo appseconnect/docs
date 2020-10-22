@@ -19,9 +19,8 @@ This document will enable you to view and install incoming packages from other o
 - You need to have valid credential to the portal.
 - You need to have packages shared with you from other organisation. For more details on how to share packages, [click here](/processflow/processflow-packaging/).
 - Installation is mandatory to use packaged Processflows.
-- You will have TWO ways to install packages - **[Install from Actions column](/processflow/processflow-package-installation/#install-from-actions-column)** & **[Install from View Packages](/processflow/processflow-package-installation/#install-from-view-packages)**. For more details, [Click Here](/processflow/processflow-package-installation/#installing-packages)
-- All the installed packages, its related Processflows will be available in the [Install processflow](/processflow/processflow-listing-page/#installed-process-flows-folder) folder. A sub folder will be created same as that of the Package Name.
-- Processflows that are shared, if deleted from the folder **Installed processflow**, will move to the TRASH folder. However, you can anytime restore those Processflows from TRASH. The Processflows will be restored in the **processflow** folder.
+- You will have TWO ways to install/Reinstall your packages - **[Install from Actions column](/processflow/processflow-package-installation/#install-from-actions-column)** & **[Install from View Packages](/processflow/processflow-package-installation/#install-from-view-packages)**. For more details, [Click Here](/processflow/processflow-package-installation/#installing-packages)
+- All the installed/reinstalled packages, its related Processflows will be available in the [Install processflow](/processflow/processflow-listing-page/#installed-process-flows-folder) folder. A sub folder will be created same as that of the Package Name.
 
 ## Viewing Shared Packages
 
@@ -102,6 +101,9 @@ Click on the **Install** button to install the package shared with you.
 7) Once installed, you can successfully [deploy and execute](/processflow/deploying-and-executing-processfloww/) the shared Processflows on your organisation. 
 
 Following the above process, you can successfully install the shared packages and execute the shared Processflows within those packages.
+
+**Note:**
+- While installing the package for the first time, if a **different package with same name already exists**, you will get to rename the package before the first installation.
 
 ## Reinstalling Packages
 

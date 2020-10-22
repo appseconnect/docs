@@ -35,8 +35,6 @@ The `Wait for no. of documents` in the Merger node configuration window is confi
 Merger node will again execute and will combine the next TWO sets and post as an another single document. The cycle will continue again and combine the next TWO set in the same way.
 The below sheet will give you a graphical representation of the above described scenario.
 
-![mergedoc1](\staticfiles\processflow\media\mergedoc1.png)
-
 **Note: The `Wait for no. of documents` should not allow 0 as input and the range of batch size value 
 should be 1-999.** 
 
