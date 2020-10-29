@@ -2685,7 +2685,7 @@
 
         <p>As all data for an Entity (For Ex: Order, Business Partner etc ) are transfered through packets which are further made up of attributes, you can implement your business flow by applying condition on required attribute. If decision node meets up the condition expression provided, the data will be passed.</p>
 
-        <p><strong>Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.</strong></p>
+        <p>_ <strong>Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.</strong>_</p>
       </li>
       <li>
         <p>Decision on <strong>Static Values:</strong></p>
@@ -2728,33 +2728,48 @@
 
 <h2 id="working-principle">Working Principle:</h2>
 
-<p>1)  Drag the decision node in the designer panel from the Process Property menu. The Decision Node Configuration Window opens.</p>
+<ol>
+  <li>Drag the decision node in the designer panel from the Process Property menu. The Decision Node Configuration Window opens.</li>
+</ol>
 
 <p><img src="\staticfiles\processflow\media\pfdecision2.PNG" alt="PFdecision2" /></p>
 
-<p>2)  You can view the above mentioned fields. Enter the name &amp; node description.</p>
-
-<p>3) Click on the <strong>Add Criteria</strong> button. You can view the fields for providing the condition.</p>
+<ol>
+  <li>
+    <p>You can view the above mentioned fields. Enter the name &amp; node description.</p>
+  </li>
+  <li>
+    <p>Click on the <strong>Add Criteria</strong> button. You can view the fields for providing the condition.</p>
+  </li>
+</ol>
 
 <p><img src="\staticfiles\processflow\media\pfdecision3.PNG" alt="PFdecision3" /></p>
 
-<p>4) You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.</p>
+<ol>
+  <li>
+    <p>You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**Scenario:** Implementing Decision as Static.
+    <p><strong>Scenario:</strong> Implementing Decision as Static.</p>
 
-**Description:** In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields `Decision Key` &amp; `Value` is equal, the data will be passed as success.
+    <p><strong>Description:</strong> In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields <code class="language-plaintext highlighter-rouge">Decision Key</code> &amp; <code class="language-plaintext highlighter-rouge">Value</code> is equal, the data will be passed as success.</p>
 
-- **Decision Key:** `20`
-- **Operator:** `=`
+    <ul>
+      <li><strong>Decision Key:</strong> <code class="language-plaintext highlighter-rouge">20</code></li>
+      <li>
+        <p><strong>Operator:</strong> <code class="language-plaintext highlighter-rouge">=</code></p>
+      </li>
+      <li><strong>Value:</strong> <code class="language-plaintext highlighter-rouge">20</code></li>
+    </ul>
 
-- **Value:** `20`
+    <p>AND</p>
 
-AND
-
-- **Decision Key:** `40`
-- **Operator:** `=`
-- **Value:** `40`
-</code></pre></div></div>
+    <ul>
+      <li><strong>Decision Key:</strong> <code class="language-plaintext highlighter-rouge">40</code></li>
+      <li><strong>Operator:</strong> <code class="language-plaintext highlighter-rouge">=</code></li>
+      <li><strong>Value:</strong> <code class="language-plaintext highlighter-rouge">40</code></li>
+    </ul>
+  </li>
+</ol>
 
 <p><em><strong>Note:</strong></em></p>
 <ul>
@@ -2771,19 +2786,25 @@ AND
 
 <p><img src="\staticfiles\processflow\media\pfdecision4.PNG" alt="PFdecision4" /></p>
 
-<p>5) Enable the Toggle buttons for the criteria and click on the SAVE button.</p>
-
-<p>6) Once all the configuration are made for the processflow. <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute</a> the processflow.</p>
-
-<p>7) After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about processflow Snapshots. The <strong>Activity Log</strong> against the <code class="language-plaintext highlighter-rouge">Decision node</code> in snapshot will display you the status of the condition.</p>
+<ol>
+  <li>
+    <p>Enable the Toggle buttons for the criteria and click on the SAVE button.</p>
+  </li>
+  <li>
+    <p>Once all the configuration are made for the processflow. <a href="/processflow/deploying-and-executing-processfloww/">Deploy and Execute</a> the processflow.</p>
+  </li>
+  <li>
+    <p>After completion of the execution, you successfully view the snapshot for the Decision Node. <a href="/processflow/snapshot-processflow/">Click Here</a> to know more about processflow Snapshots. The <strong>Activity Log</strong> against the <code class="language-plaintext highlighter-rouge">Decision node</code> in snapshot will display you the status of the condition.</p>
+  </li>
+</ol>
 
 <p><img src="\staticfiles\processflow\media\pfdecision5.PNG" alt="PFdecision5" /></p>
 
 <p><strong>Note:</strong></p>
 
+<p>**- The tabs <code class="language-plaintext highlighter-rouge">Data log</code> for the Decision Node will display list the data that entered the Decision Node.</p>
 <ul>
-  <li>The tabs <code class="language-plaintext highlighter-rouge">Data log</code> for the Decision Node will display list the data that entered the Decision Node.</li>
-  <li>The tab <code class="language-plaintext highlighter-rouge">Transaction File</code> will display you the INPUT file available in the GET node.</li>
+  <li>The tab <code class="language-plaintext highlighter-rouge">Transaction File</code> will display you the INPUT file available in the GET node.**</li>
 </ul>
 
 <p>Following the above process you can successfully implement Decision for a processflow.</p>
