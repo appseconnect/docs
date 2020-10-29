@@ -43,8 +43,10 @@ Dragging the Delay node in the Designer panel, you can view the following fields
 **Note:**
 
 **- For Static Time, the time format should be provided as hr (hours), min (minutes), sec (seconds), and ms (milliseconds).**
-**- For Dynamic Time, you need to provide the expression using proper syntax.
-**- You need to provide `~ (tilt icon)` along with the curly braces `{}` both at the front and back when providing the generic function. For Ex: `~{gen:GetContextualData(Variable Name)}~`
+
+**- For Dynamic Time, you need to provide the expression using proper syntax.**
+
+**- You need to provide `~ (tilt icon)` along with the curly braces `{}` both at the front and back when providing the generic function. For Ex: `~{gen:GetContextualData(Variable Name)}~`**
 
 ### Prerequisities
 

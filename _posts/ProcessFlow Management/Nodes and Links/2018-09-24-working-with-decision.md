@@ -39,7 +39,7 @@ The following are the fields that you will get on dragging the Decision Node in 
     
         As all data for an Entity (For Ex: Order, Business Partner etc ) are transfered through packets which are further made up of attributes, you can implement your business flow by applying condition on required attribute. If decision node meets up the condition expression provided, the data will be passed.
 
-       _ **Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.**_
+       **Note: On applying decision on attribute using Xpath, the condition will be traversed only for the first data in the whole packet. You can implement splitter node  after GET such that every packet are splitted into single packet, for implementing decision on each data after transformation.**
 
     - Decision on **Static Values:**
 
@@ -69,17 +69,17 @@ _**Note:** You can only provide those Appresource Functions (both Cloud & Generi
 
 ## Working Principle:
 
-1.  Drag the decision node in the designer panel from the Process Property menu. The Decision Node Configuration Window opens.
+1)  Drag the decision node in the designer panel from the Process Property menu. The Decision Node Configuration Window opens.
 
 ![PFdecision2](\staticfiles\processflow\media\pfdecision2.PNG)
 
-2.  You can view the above mentioned fields. Enter the name & node description. 
+2)  You can view the above mentioned fields. Enter the name & node description. 
 
-3. Click on the **Add Criteria** button. You can view the fields for providing the condition.
+3) Click on the **Add Criteria** button. You can view the fields for providing the condition.
 
 ![PFdecision3](\staticfiles\processflow\media\pfdecision3.PNG)
 
-3. You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.
+4) You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.
 
     **Scenario:** Implementing Decision as Static.
 
@@ -105,18 +105,18 @@ _**Note:**_
 
 ![PFdecision4](\staticfiles\processflow\media\pfdecision4.PNG)
 
-5. Enable the Toggle buttons for the criteria and click on the SAVE button.
+5) Enable the Toggle buttons for the criteria and click on the SAVE button.
 
-6. Once all the configuration are made for the processflow. [Deploy and Execute](/processflow/deploying-and-executing-processfloww/) the processflow.
+6) Once all the configuration are made for the processflow. [Deploy and Execute](/processflow/deploying-and-executing-processfloww/) the processflow.
 
-7. After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about processflow Snapshots. The **Activity Log** against the `Decision node` in snapshot will display you the status of the condition.
+7) After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about processflow Snapshots. The **Activity Log** against the `Decision node` in snapshot will display you the status of the condition.
 
 ![PFdecision5](\staticfiles\processflow\media\pfdecision5.PNG)
 
 **Note:** 
 
-**- The tabs `Data log` for the Decision Node will display list the data that entered the Decision Node.
-- The tab `Transaction File` will display you the INPUT file available in the GET node.**
+- The tabs `Data log` for the Decision Node will display list the data that entered the Decision Node.
+- The tab `Transaction File` will display you the INPUT file available in the GET node.
 
 Following the above process you can successfully implement Decision for a processflow.
 

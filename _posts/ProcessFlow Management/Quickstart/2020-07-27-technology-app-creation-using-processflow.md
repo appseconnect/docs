@@ -86,9 +86,11 @@ You may require to reuse the same created techology app in the same processflow 
 5) Enter the details in the Node configuration window and click on the save button.
 
 **Note:**
-    - [Click here](/processflow/adding-schema-actions/) to know more about the process to create Schemas and Actions for the created technology app.
-    - The [process to deploy and execute the processflows](/processflow/deploying-and-executing-processfloww/) remains the same for Technology applications
-    - You can also view the [processflow snapshots](/processflow/snapshot-processflow/), similar to as that of the prepackaged apps.
+- [Click here](/processflow/adding-schema-actions/) to know more about the process to create Schemas and Actions for the created technology app.
+
+- The [process to deploy and execute the processflows](/processflow/deploying-and-executing-processfloww/) remains the same for Technology applications
+
+- You can also view the [processflow snapshots](/processflow/snapshot-processflow/), similar to as that of the prepackaged apps.
     
 **Protip:** For more details related to the technology app, [click here](/connectors/Overview-of-technology-connectors/).
  {: .notice--info}
