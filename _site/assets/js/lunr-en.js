@@ -2060,8 +2060,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to Designing processflow",
-      excerpt: "processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+      title: "Quickstart to Designing processflow",
+      excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 227
@@ -5349,9 +5349,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to Designing processflow",
+        "title": "Quickstart to Designing processflow",
         "url": "/processflow/Quickstart-guide-to-processflow/",
-        "excerpt": "processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+        "excerpt": "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

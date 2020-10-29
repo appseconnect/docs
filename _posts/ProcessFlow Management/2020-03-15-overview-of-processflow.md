@@ -18,7 +18,7 @@ customers to design integration anytime and anywhere with the help of our cloud 
 tailored business rules, email templates, automation flows and monitoring process. You can now build and deploy 
 processflows, from simple to sophisticated, through a modern, native-cloud platform.
 
-## Benefits of using processflows
+## Benefits of using Processflows
 
 STREAMLINE AND AUTOMATE COMPLEX BUSINESS PROCESSES
 * Provide expertise and team collaboration to sell more effectively.
@@ -30,10 +30,10 @@ CUSTOMIZE AND EXTEND BEST PRACTICES
 * Zero coding experience needed; build and share complex flows using visual designer
 
 UNINTERRUPTEDLY IMPROVE PRODUCTIVITY
-* processflow lets end users and admins model and maintain business processes using a visual graphical tool without coding.
+* Processflow lets end users and admins model and maintain business processes using a visual graphical tool without coding.
 * It encapsulates complex and multistep flows to automate and streamline business processes.
 
-## Navigating to processflows
+## Navigating to Processflows
 
 Navigate to the Designer > processflows. The processflow listing page appears. The list of the folders in the listing page would available on the left pane of the page. 
 By default, an organisation would have the following folders created `processflow , Installed processflow , Package Library , Trash` Folder.
@@ -42,7 +42,7 @@ By default, an organisation would have the following folders created `processflo
 
 ![listingpageoverview](\staticfiles\processflow\media\listingoverviewscreen.png)
 
-## processflow modules
+## Processflow Modules
 
 |Modules| Description|  
 |-------|-----------------------------------------------------|           

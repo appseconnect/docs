@@ -1,5 +1,5 @@
 ---
-title: "Quickstart guides to Designing processflow"
+title: "Quickstart to Designing processflow"
 toc: true
 tag: developers
 category: "Processflow"
@@ -12,7 +12,7 @@ menus:
         identifier: quickstartprocessflow
 ---
 
-processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes which you need to perform your daily activities. The [processflow Listing](/processflow/processflow-listing-page/) page will allow you to search, filter, create, edit processflows. 
+Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes which you need to perform your daily activities. The [processflow Listing](/processflow/processflow-listing-page/) page will allow you to search, filter, create, edit processflows. 
 
 By reading this document an implementer would be able to design the first processflow for an organization and will execute it from the web portal also. 
 
@@ -33,4 +33,4 @@ To know in details, go through the given sections:
 |[Redeploy](/processflow/redeploying-processflow/)|Redeploying processflow functionality allows you to re-deploy an existing processflows |
 |[Snapshot view](/processflow/snapshot-processflow/)|Snapshot in processflow gives complete overview of the transactions that was executed|
 |[Retry processflow](/processflow/retry-processflow/)|This document will help you with the details of configuring the RESYNC feature of APPSeCONNECT which helps to perform Retries for failed data.|
-|[processflow Packaging](/processflow/processflow-packaging-overview/)| This will enable you to create, install and Reinstall packages containing processflows. You can share your created packages to other organisation when required also you will be able to install incoming packages shared to you.|
+|[Processflow Packaging](/processflow/processflow-packaging-overview/)| This will enable you to create, install and Reinstall packages containing processflows. You can share your created packages to other organisation when required also you will be able to install incoming packages shared to you.|
