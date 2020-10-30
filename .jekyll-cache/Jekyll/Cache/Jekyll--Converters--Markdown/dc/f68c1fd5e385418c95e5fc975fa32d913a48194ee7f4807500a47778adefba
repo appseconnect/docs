@@ -1,7 +1,0 @@
-I"><h3 id="what-is-decision-node">What is Decision Node?</h3>
-<p>This node is used for decision making during workflow execution. 
-A decision can be applied on a single chunk of data based on the decision criteria defined in the decision definition. 
-After data passed through role node there can be two scenarios either the data matched the decision definition or it fails and depending on success and failure user can configure his/ her next processing steps. 
-For example a user want to post a bunch of customer data from Shopify to SAP B1. After processing the Shopify data user can apply a decision along with a splitter node to check if a customer email address 
-does not belong to a specific domain.If the decision is satisfied then the data will be posted to SAP B1 otherwise we will store the data in our local storage.</p>
-:ET

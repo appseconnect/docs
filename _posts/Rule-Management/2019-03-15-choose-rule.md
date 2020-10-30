@@ -33,6 +33,7 @@ Following the above process, you can choose a pre-congfigured rule successfully
         (c) For now, you can only the view the rule [_DetailedSyncReport_](https://docs.appseconnect.com/rule/preconfigured-rule-for-detailed-sync-report/) in the list**.
 
 
+You can also view [Overview of Pre-Configured Rule](/rule/preconfigured-rule-overview/) & [Overview of Default Rule](/rule/default-rule-overview/)
 
 
 

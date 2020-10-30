@@ -63,7 +63,7 @@ The Connection Page of the Cloud Portal is needed for creating connection betwee
 For Example, if you want to create a connection between SAP B1 to Magento 2, you have to come to this page & create the connection. You will also see the existing connection for a particular organization on this page.
 
 1. Login to portal with the valid details of a user.
-2. Navigate to the following path: Choose a Project -> Connection 
+2. Navigate to the following path: Manage -> Connection 
 ![ConnectionDetails](/staticfiles/root/media/ConnectionDetails.png) 
 3. To find existing Connection, Click Search button. An existing connection opens up
 4. A typical connection has the following buttons attached to it.
@@ -117,7 +117,7 @@ This document helps the users to understand and implement the `Copy Connection` 
 
 ### Steps to Implement Copy Connection 
 
-1.	Login to the APPSeCONNECT Portal and Navigate to the Connection Page.
+1.	Login to the APPSeCONNECT Portal and Navigate to the **Connection** Page under **MANAGE**.
 2.	[Create a connection](/getting%20started/configurations-for-integration/#creating-connection--executing-the-touchpoint), if no connection is created. 
 3.	On the portal, click on the Drop-Down Button present on the Right Hand, Top-Side Corner of the screen, and select the 
     `Copy Connection` option.
@@ -185,11 +185,11 @@ Delete: Delete / Remove an existing item from the target application.**
 
 ### Steps to create an Organisational Touchpoint/ Workflow
 
-1.	Login to the APPSeCONNECT Portal and navigate to the Connections Page.
-2.	Select the Template where you want to create the touchpoint. Make sure the template is selected according to the transformation flow.
-3.	The Connection Page opens. Click on the `Add New Button` for creating the touchpoint.
+1)	Login to the APPSeCONNECT Portal and navigate to the Connections Page under MANAGE.
+2)	Select the Template where you want to create the touchpoint. Make sure the template is selected according to the transformation flow.
+3)	The Connection Page opens. Click on the `Add New Button` for creating the touchpoint.
 ![create-touchpoint1](/staticfiles/root/media/create-touchpoint1.png) 
-4.  The Touchpoint Information Page opens. Fill-up the fields marked with a mandatory symbol (a red coloured asterix) and click on the Continue Button.
+4)  The Touchpoint Information Page opens. Fill-up the fields marked with a mandatory symbol (a red coloured asterix) and click on the Continue Button.
 * Name: The name should be the touchpoint name. Ensure that the APPSeCONNECT naming Convention is used for the touchpoint.
 * Group: Select the group type, whether it is `Transactional Touchpoint or Configurational`.       
 **Note: Enable the checkbox for Show in Agent or else, the touchpoint will not be appearing in the Agent even if the touchpoint is ready.**
@@ -201,14 +201,14 @@ The field description is given below:
 * Status - Status remains as Released by default.
 * Sequence - This is to add dependency sequence to the touchpoint.
 * Description - This field is for adding descriptions to the touchpoint for briefing the behaviour of the touchpoint. (For Ex: Adding Bundle Product for Shopify to Priority.)  
-5.	The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also [Add New Schema & New Action](/transformation/working-with-schemas-action-filter/), by clicking on the respective buttons. Click on the Continue button.               
+5)	The Source Setup Page opens. Select the mandatory fields - Schema, Action, Protocol and the Method. You can also [Add New Schema & New Action](/transformation/working-with-schemas-action-filter/), by clicking on the respective buttons. Click on the Continue button.               
 **Note: The Schema and the Action should be selected according to the nature of the touchpoint. Suppose, the touchpoint is of Product Add, the Schema and the Action should be selected for the Product only.***
 ![create-touchpoint3](/staticfiles/root/media/create-touchpoint3.png) 
-6.	The Target Setup page opens. Fill the mandatory fields - Schema, Action, Protocol, and Method. Similar, to the Source Setup here too `New Schema/New Action` can be added by clicking on the respective buttons. Click Continue Button.
+6)	The Target Setup page opens. Fill the mandatory fields - Schema, Action, Protocol, and Method. Similar, to the Source Setup here too `New Schema/New Action` can be added by clicking on the respective buttons. Click Continue Button.
 ![create-touchpoint4](/staticfiles/root/media/create-touchpoint4.png) 
-7.  The Transformation/Mapping Page opens. [Click Here](/transformation/overview/) to know more about the Transformation Concept. Click Continue button.
+7)  The Transformation/Mapping Page opens. [Click Here](/transformation/overview/) to know more about the Transformation Concept. Click Continue button.
 ![create-touchpoint5](/staticfiles/root/media/create-touchpoint5.png) 
-8.  The summary page opens. This page displays the complete details provided for creating the touchpoint. Click  FINISH Button.
+8)  The summary page opens. This page displays the complete details provided for creating the touchpoint. Click  FINISH Button.
 ![create-touchpoint6](/staticfiles/root/media/create-touchpoint6.png) 
 **Note: Only the Transformation module of the Touchpoint can be edited anytime. Users cannot change or modify Touchpoint Information, Source Setup and the Target Setup of the touchpoint.**
 
@@ -252,9 +252,10 @@ On Enabling, all the default touchpoints will be activated for that connection.
 6.  The user can also search the touchpoints present in the list from the Find Touchpoints option. Click on the SELECT Button to activate the same. 
     Here, the Product: Add touchpoint is Selected.              
 ![choose-touchpoint3](/staticfiles/root/media/choose-touchpoint3.png)  
-                          
-![choose-touchpoint4](/staticfiles/root/media/choose-touchpoint4.png)                                    
+                                                        
 The above steps complete the process of Choosing Touchpoint.
+
+![choose-touchpoint4](/staticfiles/root/media/choose-touchpoint4.png)   
 
 ## Reverse Touchpoint
 
@@ -270,13 +271,15 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 
 ### Environment setup of the on-premise agent:
 
- 1. Login to the portal and from the Dashboard section download the Agent from the Downloads section as shown below.  
- ![DashboardScreen](/staticfiles/root/media/DashboardScreen.png)
- 2. Run the setup folder to install the Agent in the system.
- 3. Open the installed Agent on your machine.
- 4. Login to the agent with your portal credentials.    
-   ![Login1](/staticfiles/root/media/Login1.png)
- 5. There are four icons as shown below:
+ 1. Login to the portal and download the Agent from the Downloads section as shown below.  
+![DashboardScreen](/staticfiles/root/media/DashboardScreen.png)
+You can also download the agent from the [Environment](/deployment/Environment-Management/) page
+2. Run the setup folder to install the Agent in the system.
+3. Open the installed Agent on your machine.
+4. Login to the agent with your portal credentials.    
+![Login1](/staticfiles/root/media/Login1.png)
+5. There are four icons as shown below:
+
 * The home icon shows the connections in the project'
 * The app configuration panel displays the applications that are selected in the portal for Integration. Credentials for each application adapters are provided in the `App Configuration panel` of the agent. View here know about providing [credentials to application adapters](/connectors/overview-of-application-connectors/).
 * The sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in sync panel checkbox in the Connections page.
@@ -292,15 +295,15 @@ To know more about Configuring Environment, [Click here](/deployment/Deployment-
 
 View for [creating a cloud agent](/deployment/Environment-Management/#adding-cloud-environment) for an organisation
 
-1. Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).  
+1) Login to the portal and under the apps section provide the respective app credential data (similar to the configuration of the app in the on-premise Agent).  
 ![App](/staticfiles/root/media/App.png)
-2. After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.  
+2) After providing the credentials to the applications, navigate to the Connections page and click on the configuration assignment button setup option as shown below.  
 ![Connection_New](/staticfiles/root/media/Connection_New.png)
-3. Enable the assigned credential to the connection by choosing the configuration 
+3) Enable the assigned credential to the connection by choosing the configuration 
 ![Connection_New2](/staticfiles/root/media/Connection_New2.png)  
-4.Enable the toggle button on the connector.  
+4) Enable the toggle button on the connector.  
 ![Connection_New3](/staticfiles/root/media/Connection_New3.png)
-5. Click on the View the Connection icon and navigate to the touchpoints page and then Click on the play button to run the sync process.  
+5) Click on the View the Connection icon and navigate to the touchpoints page and then Click on the play button to run the sync process.  
 ![Connection_Touchpoint](/staticfiles/root/media/Connection_Touchpoint.png)  
 
 ## Default Notification for Transactions

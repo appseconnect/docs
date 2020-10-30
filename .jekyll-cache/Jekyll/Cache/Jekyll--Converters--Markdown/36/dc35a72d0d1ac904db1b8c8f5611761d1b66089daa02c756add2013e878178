@@ -1,8 +1,0 @@
-I"Æ<h2 id="prerequisites-for-configuring-oauth-10-in-on-premise-agent">Prerequisites for configuring Oauth 1.0 in On Premise Agent</h2>
-<ul>
-  <li>You need to have a valid credentials to the portal.</li>
-  <li>You need create a <a href="/configuring%20appseconnect/configurations/#b-technology-app-creation">REST based Technology Application</a>.</li>
-  <li><a href="/accessing%20portal/accessing-portal/">Configure the connector</a> and <a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">create a connection</a> between the two apps.</li>
-  <li>Publish the created connection and update the configuration followed by update adapters in agent.</li>
-</ul>
-:ET

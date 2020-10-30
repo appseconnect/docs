@@ -1,7 +1,0 @@
-I"¥<ul class="toc__menu">
-  <li><a href="#avoid-hard-coding-on-api-urls">Avoid hard-coding on API URLs</a></li>
-  <li><a href="#do-not-use-system-apis-inside-adapter-code">Do not use System APIs inside Adapter code</a></li>
-  <li><a href="#do-not-use-depricated-apis">Do not use depricated APIs</a></li>
-  <li><a href="#design-the-ui-as-to-improve-user-experience">Design the UI as to improve user experience</a></li>
-</ul>
-:ET

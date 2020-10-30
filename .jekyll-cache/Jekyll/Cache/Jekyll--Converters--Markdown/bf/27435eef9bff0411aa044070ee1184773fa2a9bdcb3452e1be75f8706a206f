@@ -1,8 +1,0 @@
-I"£<p>An integration is generally scheduled at an interval or a specific time such that the data 
-is pulled from the application only when the scheduler gets a trigger. Now, sometimes there is
-an better way to do an integration only when the application which needs to send data gives us
-webhooks. A webhook is a feature in an application that allows the application to put an endpoint 
-url which it triggers automatically when some transaction is made on the application end. Or more
-precisely, the application is expected to raise an event which the platform can subscribe for and 
-when certain action is performed on the application it gets notification about the event.</p>
-:ET

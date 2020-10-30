@@ -1,7 +1,0 @@
-I"§<p>Adapter supports a number of storages which you can make use of to perform various tasks. For an adapter developer,
-it is sometimes becoming important to store mapping or related data inside the application so as to ensure the future 
-data transfer executes smoothly. Some store transactional mapping data which is used to validate duplicate data, while 
-some store operational data which are required very often to execute individual integration points. Some data are required 
-for each transactional validation while some are used to gain performance. In this article we will 
-understand how once can make use of APPSeCONNECT transactional store to store/retrieve data.</p>
-:ET

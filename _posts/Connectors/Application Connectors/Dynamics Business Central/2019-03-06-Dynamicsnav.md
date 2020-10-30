@@ -18,8 +18,8 @@ Here you will find the detailed description on how to configure the agents for t
 
 ## Prerequisites for Dynamics NAV Configuration 
 
-1.	Select the application Microsoft Dynamics NAV (≥ 2009R2 Generic) in the APPS section of the APPSeCONNECT Portal.
-2.	Create and publish a connection in the cloud portal.
+1.	Select the application Microsoft Dynamics NAV (≥ 2009R2 Generic) in the [APPS](/getting%20started/configurations/#process-of-choosing-app) section of the APPSeCONNECT Portal.
+2.	Create and publish a [connection](/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection) in the cloud portal.
 3.	Update the Configuration in your On-Premise AEC Agent. You will find your Connection present in the agent. To Know about Agent Configuration, [Click here](/deployment/Deployment-Configuration/)
 
 **Note: if you are working with custom connector (per business need), custom touchpoints are needed to be created**

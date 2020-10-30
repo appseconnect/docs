@@ -15,7 +15,7 @@ menus:
 
 POST node is used for pushing transformed data to the destination application by 
 using API Endpoints provided by the application. When you drag an application node 
-in the Process Flow Designer Panel, the node configuration window opens. 
+in the processflow Designer Panel, the node configuration window opens. 
 You specify the following details and click on the SAVE button.
 
 * Node Description: This denotes the description of the node.
@@ -29,7 +29,7 @@ You specify the following details and click on the SAVE button.
 For making the application node execute POST operation, you need to select the Node Type as POST.
 
 ## Working Principle for POST node
-1. POST node in APPSeCONNECT Process Flow is linked with the Mapper node such that when the POST node is executed, the transformed data are pushed to the destination application.
+1. POST node in APPSeCONNECT processflow is linked with the Mapper node such that when the POST node is executed, the transformed data are pushed to the destination application.
 2. Click on the Node Configuration icon to open the Node configuration window for the selected application node.
 ![Post Node1](../../../staticfiles/processflow/media/mapper/post-node1.png)   
 3. Select the node type as POST in the Node Configuration window and click the save button.

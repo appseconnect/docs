@@ -14,7 +14,7 @@ menus:
 Every process requires static steps to begin with. APPSeCONNECT is a robust iPaaS product and users are advised to follow the steps before implementing the integration process with APPSeCONNECT. 
 Below is the list of modules that will guide the user with the usability of APPSeCONNECT and let you Getting Started.
 
-## Table of the Modules of APPSeCONNECT
+## Modules for Getting Started
 
 |Modules|Details|
 |---|---|

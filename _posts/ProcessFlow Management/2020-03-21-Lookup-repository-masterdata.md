@@ -28,7 +28,7 @@ of Lookup References.
 * User should have valid credentials for login to the APPSeCONNECT Credentials.
 
 ## Steps to Create Repository Collections:
-1.	Login to the portal and navigate to the Repositories under Manage section. You can view Repository landing page, if creating for the first time.  
+1.	Login to the portal and navigate to **Manage > Repositories**. You can view Repository landing page, if creating for the first time.  
 ![Create Lookrepo1](../../staticfiles/processflow/media/create-lookrepo1.png)   
 2.	Click the button to Create a new Repository Collection. The window for providing the name for the Repository Collection opens.  
 ![Create Lookrepo2](../../staticfiles/processflow/media/create-lookrepo2.png)  
@@ -55,7 +55,7 @@ Prerequisites for Creating Lookup Reference Tables
 **Note: User cannot create a Reference Tables with same name under a single Repository Collection.**
 
 ## Steps to Create Reference Tables
-1.	Login to the portal and navigate to the Repositories under Manage section. You can now view the Repositories Screen  
+1.	Login to the portal and navigate to **Manage > Repositories**. You can now view the Repositories Screen  
 ![Reference Table1](../../staticfiles/processflow/media/reference-table1.png)  
 2.	On clicking over the Ellipsis icon (...) beside every Repository Collection, user gets the 
 following option.  

@@ -34,6 +34,9 @@ If you are new to Workflow, then go through the below steps to know more.
 
 * The connection should be done in the Cloud.
 
+* When designing workflows, you may come across Nodes and Elements, or you may like get some Usecase examples that would help you build a workflow. Visit this section [Quickstart](/workflow/quickstart-guides-to-workflow-management/) to get more highlights on **Workflow Nodes and Links** , **Scheduling and Deploying a Workflow** , **Workflow Snapshots** , **Usecases** etc.
+
+
 ## Steps to workflow creation
 
  1. Logging in to the Portal, choose `Workflows` section under Account and a new page will open.
@@ -43,7 +46,7 @@ If you are new to Workflow, then go through the below steps to know more.
 
 3. Choose one project.
 
-4. Go to Workflows section under Account and a new page will  open up.
+4. Go to Workflows section under **Designer** and a new page will open up.
 
    ![WorkflowPage](/staticfiles/workflow-management/media/WorkflowPage.png)
 
@@ -97,15 +100,8 @@ If the RUN button is still in disabled state, you can do [Troubleshooting](/work
            Failed Operation  = Red color         
 {: .notice--info}
 
-11. You will view messages in each step.  You can check the workflow functionalities for the following nodes:
+_**Note:** When designing workflows, you may come across Nodes and Elements, or you may like get some Usecase examples that would help you build a workflow. Visit this section [Quickstart](/workflow/quickstart-guides-to-workflow-management/) to get more highlights on **Workflow Nodes and Links** , **Scheduling and Deploying a Workflow** , **Workflow Snapshots** , **Usecases** etc._
 
-## Workflow Nodes
-
-* [Get](/workflow/working-with-get/)
-* [Splitter](/workflow/working-with-splitter/)
-* [Merger](/workflow/working-with-merger/)
-* [Loop](/workflow/working-with-loops/)
-* [Halt Resume](/workflow/working-with-halt-resume/)
 
 **Protip** For execution of workflow using cloud agent you need to have cloud to cloud connection, cloud agent and cloud supported app.
 {: .notice--info}

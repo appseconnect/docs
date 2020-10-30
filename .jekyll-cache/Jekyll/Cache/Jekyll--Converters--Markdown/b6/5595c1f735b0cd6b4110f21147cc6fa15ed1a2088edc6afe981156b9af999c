@@ -1,7 +1,0 @@
-I"®<p>Execution of a process flow is vital process for transforming data from source to 
-destination application. In real-time, execution of process flow may fetch errors 
-with respect to data configurations. 
-Process Flow Retry is a feature that can Resync the data after rectifying the error 
-such that no data loss occurs with respect to the sync process. Process Flow Retry 
-can be configured both Manually and in Auto-Mode.</p>
-:ET

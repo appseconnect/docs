@@ -404,7 +404,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to create Workflow",
+      title: "Quickstart to Workflows",
       excerpt: "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Workflow"],
       tags: ["developers"],
@@ -477,7 +477,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Accessing Portal",
-      excerpt: "Accessing Portal The APPSeCONNECT portal is the webbased interface where you can access APPSeCONNECT application for integration, with the set...",
+      excerpt: "Accessing Portal The APPSeCONNECT portal is the web based interface where you can access APPSeCONNECT application for integration, with the...",
       categories: ["Accessing Portal"],
       tags: ["developers"],
       id: 51
@@ -963,7 +963,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Environment Management",
-      excerpt: "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
+      excerpt: "Pre-requisites To visit the ENVIRONMENT page in portal, navigate to Deploy &gt; Environments. It is recommended that user should upgrade/install...",
       categories: ["Deployment"],
       tags: ["developers"],
       id: 105
@@ -1898,11 +1898,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "APPSeCONNECT 2020 Release",
+      excerpt: "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 209
+    });
+    
+  
+    idx.add({
       title: "Authentication & Authorization of REST Adapters",
       excerpt: "APPSeCONNECT REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND SERVER...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 209
+      id: 210
     });
     
   
@@ -1911,7 +1920,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure Basic Authentication in Rest Adapter - On Premise To configure the Basic Authentication Type for Rest Adapter...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 210
+      id: 211
     });
     
   
@@ -1920,7 +1929,7 @@ var idx = lunr(function () {
       excerpt: "Prerequisites for configuring Oauth 1.0 in On Premise Agent You need to have a valid credentials to the portal. You...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 211
+      id: 212
     });
     
   
@@ -1929,7 +1938,7 @@ var idx = lunr(function () {
       excerpt: "Process to Configure OAuth2.0 Rest Adapter - On Premise To configure the OAuth2.0 Authentication type for Rest Adapter follow the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 212
+      id: 213
     });
     
   
@@ -1938,7 +1947,7 @@ var idx = lunr(function () {
       excerpt: "HTTP based endpoint connector is a pre-packaged software package which provides seamless connectivity to RESTful APIs and leverage to communicate...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 213
+      id: 214
     });
     
   
@@ -1947,7 +1956,7 @@ var idx = lunr(function () {
       excerpt: "Users can define Filters for integration scenario as per business requirements for the GET, POST and PUT operation for REST...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 214
+      id: 215
     });
     
   
@@ -1956,7 +1965,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the mapping details for Rest Adapter required for data Integration. Basic prerequisite for Mapping: (A) Here the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 215
+      id: 216
     });
     
   
@@ -1965,7 +1974,7 @@ var idx = lunr(function () {
       excerpt: "Listing of Advance Workflow section provides the option of creating folders for organizing the advance workflows with respect to the...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 216
+      id: 217
     });
     
   
@@ -1974,7 +1983,7 @@ var idx = lunr(function () {
       excerpt: "This section provides the functionality to implement your business scenario by designing the workflow. On clicking the Create Workflow button...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 217
+      id: 218
     });
     
   
@@ -1983,7 +1992,7 @@ var idx = lunr(function () {
       excerpt: "Created/Edited Advanced workflows needs to be deployed to the environment in order to execute the integration process. Users of APPSeCONNECT,...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 218
+      id: 219
     });
     
   
@@ -1992,7 +2001,7 @@ var idx = lunr(function () {
       excerpt: "Users/Implementers of APPSeCONNECT requires to edit and modify workflows frequently as per the business requirement. Advance Workflows is enabled with...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 219
+      id: 220
     });
     
   
@@ -2001,7 +2010,7 @@ var idx = lunr(function () {
       excerpt: "What is Decision Node Significance of Decision Node is implemented when fetching or synchronising data based on certain criteria or...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 220
+      id: 221
     });
     
   
@@ -2010,7 +2019,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay Node DELAY node is used to delay or stop an execution flow for a specific period (in...",
       categories: ["Advance Workflow"],
       tags: ["developers"],
-      id: 221
+      id: 222
     });
     
   
@@ -2019,7 +2028,7 @@ var idx = lunr(function () {
       excerpt: "Troubleshooting Scenario 1 Even after updating subscription, Update Configuration and Update adapters, credential page for the respective app shows exhausted....",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 222
+      id: 223
     });
     
   
@@ -2028,7 +2037,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT platform accomplishes the integration of your most serious business information and business processes with the utmost security. The application...",
       categories: ["Security"],
       tags: ["developers"],
-      id: 223
+      id: 224
     });
     
   
@@ -2037,25 +2046,25 @@ var idx = lunr(function () {
       excerpt: "The list of GDPR (Global Data Protection Regulations) policies is given below which our product imparts to the user for...",
       categories: ["GDPR"],
       tags: ["developers"],
-      id: 224
-    });
-    
-  
-    idx.add({
-      title: "Overview of ProcessFlow",
-      excerpt: "APPSeCONNECT Process Flows suite features an extensive interface that provide the ability to easily create digital maps to make out...",
-      categories: ["Processflow"],
-      tags: ["developers"],
       id: 225
     });
     
   
     idx.add({
-      title: "Quickstart guides to create ProcessFlow",
-      excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+      title: "Overview of ProcessFlow",
+      excerpt: "APPSeCONNECT processflows suite features an extensive interface that provide the ability to easily create digital maps to make out robust...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 226
+    });
+    
+  
+    idx.add({
+      title: "Quickstart to Designing processflow",
+      excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 227
     });
     
   
@@ -2064,22 +2073,13 @@ var idx = lunr(function () {
       excerpt: "Processflow is a visual representation of a business process integration, which helps you as an user to orchestrate a business...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 227
-    });
-    
-  
-    idx.add({
-      title: "Important Terminology",
-      excerpt: "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
-      categories: ["Processflow"],
-      tags: ["developers"],
       id: 228
     });
     
   
     idx.add({
-      title: "Designer",
-      excerpt: "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+      title: "Important Terminology",
+      excerpt: "This document demonstrates the important terminologies that you need to consider while using ProcessFlows ProcessFlow Folder It is one the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 229
@@ -2087,8 +2087,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Organising Process Flow",
-      excerpt: "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+      title: "Designer",
+      excerpt: "This section enables the user to implement business scenarios by designing processflows. Here user would get the detailed usability of...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 230
@@ -2096,11 +2096,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Steps to Create a ProcessFlow",
-      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
+      title: "Organising ProcessFlow",
+      excerpt: "This section provides the option of creating folders for organizing the ProcessFlows with respect to the business requirements for any...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 231
+    });
+    
+  
+    idx.add({
+      title: "Steps to Create a ProcessFlow",
+      excerpt: "This section of the documentation will guide the user with the process of Creating &amp; Saving new processflows. The steps...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 232
     });
     
   
@@ -2109,7 +2118,7 @@ var idx = lunr(function () {
       excerpt: "Partners &amp; Developers or any other user (except the client) can now, no longer be able to login into the...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 232
+      id: 233
     });
     
   
@@ -2118,22 +2127,13 @@ var idx = lunr(function () {
       excerpt: "License key-based authentication approach is security enhancement for your on-premise and cloud integrations. This mechanism authenticates users who tries to...",
       categories: ["License Management"],
       tags: ["developers"],
-      id: 233
-    });
-    
-  
-    idx.add({
-      title: "Deploy, Execute & Undeploy",
-      excerpt: "Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users,...",
-      categories: ["Processflow"],
-      tags: ["developers"],
       id: 234
     });
     
   
     idx.add({
-      title: "Redeploy",
-      excerpt: "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
+      title: "Deploy, Execute & Undeploy",
+      excerpt: "Created or Edited processflows needs to be deployed to the environment in order to execute the integration process. Users, now...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 235
@@ -2141,8 +2141,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Retrying a Process Flow",
-      excerpt: "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
+      title: "Redeploy",
+      excerpt: "Redeploying processflow functionality allows you to re-deploy an existing processflows (deployed/deployed and executed) to the same environment in order to...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 236
@@ -2150,11 +2150,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Data view of Snapshot",
-      excerpt: "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
+      title: "Retrying a processflow",
+      excerpt: "Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 237
+    });
+    
+  
+    idx.add({
+      title: "Data view of Snapshot",
+      excerpt: "Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 238
     });
     
   
@@ -2163,16 +2172,16 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. As...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 238
+      id: 239
     });
     
   
     idx.add({
       title: "Delete Processflow",
-      excerpt: "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+      excerpt: "Deleting option enables you to delete a processflow once you have designed it, deployed it or executed it. Deletion is...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 239
+      id: 240
     });
     
   
@@ -2181,7 +2190,7 @@ var idx = lunr(function () {
       excerpt: "Once the Collection and the Reference tables are created, users can implement those lookups in the attribute mapping for the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 240
+      id: 241
     });
     
   
@@ -2190,7 +2199,7 @@ var idx = lunr(function () {
       excerpt: "Repositories in APPSeCONNECT provides the user to create and manage Lookup types in form of tables for the organisation. Lookups...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 241
+      id: 242
     });
     
   
@@ -2199,7 +2208,7 @@ var idx = lunr(function () {
       excerpt: "Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 242
+      id: 243
     });
     
   
@@ -2208,7 +2217,7 @@ var idx = lunr(function () {
       excerpt: "The data coming from the source schema requires to be transformed individually such that it matches the format of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 243
+      id: 244
     });
     
   
@@ -2217,7 +2226,7 @@ var idx = lunr(function () {
       excerpt: "Here you will understand the process of defining Variables (any variables that stores the data that can be used later...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 244
+      id: 245
     });
     
   
@@ -2226,7 +2235,7 @@ var idx = lunr(function () {
       excerpt: "XPATH is an essential concept that is required when implementing mapping and transformations. XPATH access nodes in a hierarchical structure...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 245
+      id: 246
     });
     
   
@@ -2235,7 +2244,7 @@ var idx = lunr(function () {
       excerpt: "Namespace is a technique that defines a set of unique names within an XML file, consisting of several XML elements...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 246
+      id: 247
     });
     
   
@@ -2244,7 +2253,7 @@ var idx = lunr(function () {
       excerpt: "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 247
+      id: 248
     });
     
   
@@ -2253,16 +2262,16 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 248
+      id: 249
     });
     
   
     idx.add({
       title: "Nodes and Link overview",
-      excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
+      excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT processflow. You can use the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 249
+      id: 250
     });
     
   
@@ -2271,7 +2280,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 250
+      id: 251
     });
     
   
@@ -2280,7 +2289,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need APPS? For transforming data from one application to another you need to drag Application nodes to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 251
+      id: 252
     });
     
   
@@ -2289,7 +2298,7 @@ var idx = lunr(function () {
       excerpt: "What is Get Node? GET node is used for getting data from an application by using their API Endpoints provided...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 252
+      id: 253
     });
     
   
@@ -2298,7 +2307,7 @@ var idx = lunr(function () {
       excerpt: "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 253
+      id: 254
     });
     
   
@@ -2307,22 +2316,13 @@ var idx = lunr(function () {
       excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which is used for the data transformation...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 254
+      id: 255
     });
     
   
     idx.add({
       title: "Splitter Node",
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
-      categories: ["Processflow"],
-      tags: ["developers"],
-      id: 255
-    });
-    
-  
-    idx.add({
-      title: "Merger Node",
-      excerpt: "What is Merger Node? This node is used to merge smaller data chunks into a single data packet, in order...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 256
@@ -2529,7 +2529,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Release Notes",
-      excerpt: "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
+      excerpt: "Discover whats going on in APPSeCONNECT. Explore the most recent features and updates and learn more about the product enhancements,...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 279
@@ -2538,7 +2538,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "2020-Q2 Version 1.0 Hotfix Release Note",
-      excerpt: "This document highlights the details of V1.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 280
@@ -2555,8 +2555,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "APPSeCONNECT 2020 Release",
-      excerpt: "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections under 2020 Release is given under...",
+      title: "Q2 Release Version 4.7.0",
+      excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 282
@@ -2564,17 +2564,17 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Q2 Release Version 4.7.0",
-      excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
-      categories: ["release-notes"],
+      title: "Managing - Schema & Attributes",
+      excerpt: "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
+      categories: ["Processflow"],
       tags: ["developers"],
       id: 283
     });
     
   
     idx.add({
-      title: "Managing - Schema & Actions",
-      excerpt: "The user can view the schemas and the action present in an app and can also add schema and add...",
+      title: "Working with Capture Variables",
+      excerpt: "APPSeCONNECT processflow allows you to create variables that captures certain values that can be reused in any part of the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 284
@@ -2582,11 +2582,20 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Working with Capture Variables",
-      excerpt: "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+      title: "Delay Node",
+      excerpt: "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 285
+    });
+    
+  
+    idx.add({
+      title: "Technology App creation Within processflow",
+      excerpt: "processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 286
     });
     
   
@@ -2595,7 +2604,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2014 releases. Product Release Version: 2.1.0 Product Release Version: 2.0.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 286
+      id: 287
     });
     
   
@@ -2604,7 +2613,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2015 releases. Product Release Version: 2.5.0 Product Release Version: 2.4.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 287
+      id: 288
     });
     
   
@@ -2613,7 +2622,16 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2016 releases. Product Release Version: 3.3.0 Product Release Version: 3.2.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 288
+      id: 289
+    });
+    
+  
+    idx.add({
+      title: "Link Order Sequencing",
+      excerpt: "Link Ordering of Nodes for Sequential Execution processflow being the advanced sync flow feature of APPSeCONNECT, allows you to create...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 290
     });
     
   
@@ -2622,7 +2640,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.0.0 Release notes were published and last revised in April 2016. We started the new year with...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 289
+      id: 291
     });
     
   
@@ -2631,7 +2649,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.1.0 As per our schedule, we are trying to continuously improve our platform with newer features. We...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 290
+      id: 292
     });
     
   
@@ -2640,7 +2658,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.2.0 APPSeCONNECT being the only integration platform to support end to end business process provider, we are...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 291
+      id: 293
     });
     
   
@@ -2649,7 +2667,16 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.3.0 APPSeCONNECT focusses on delivering more and more flexibility, power and ease to its users. We try...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 292
+      id: 294
+    });
+    
+  
+    idx.add({
+      title: "Managing - Action, Action Filters & Error Filters",
+      excerpt: "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 295
     });
     
   
@@ -2658,7 +2685,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.2.0 During the first quarter of 2015 product cycle, we wanted to give you some interesting features....",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 293
+      id: 296
     });
     
   
@@ -2667,7 +2694,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.3.0 This release mainly focusses on providing a number of new features which our users thought to...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 294
+      id: 297
     });
     
   
@@ -2676,7 +2703,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.4.0 This release mainly focusses on enhancing the APPSeCONNECT usage by providing more automation from base and...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 295
+      id: 298
     });
     
   
@@ -2685,7 +2712,34 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.5.0 Bug bash release focusses mainly on removing bugs from the product and enhancing the already existing...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 296
+      id: 299
+    });
+    
+  
+    idx.add({
+      title: "Processflow Packaging",
+      excerpt: "Processflow Packaging is a concept of zipping multiple ProcessFlows or Processflow folders from one organisation to another. Processflow being the...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 300
+    });
+    
+  
+    idx.add({
+      title: "Viewing, Installing & Re-Installing processflow Packages",
+      excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the Processflows...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 301
+    });
+    
+  
+    idx.add({
+      title: "Package Sharing",
+      excerpt: "Packaging of processflows have enabled the users to zip multiple processflows. The main goal to create packages was to share...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 302
     });
     
   
@@ -2694,7 +2748,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
       categories: ["Glossary"],
       tags: ["developers"],
-      id: 297
+      id: 303
     });
     
   
@@ -2703,7 +2757,79 @@ var idx = lunr(function () {
       excerpt: "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
       categories: ["Glossary"],
       tags: ["developers"],
-      id: 298
+      id: 304
+    });
+    
+  
+    idx.add({
+      title: "Company Add from Magento2 to SAGE 300",
+      excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+      categories: ["Integration"],
+      tags: ["developers"],
+      id: 305
+    });
+    
+  
+    idx.add({
+      title: "ZohoBooks",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 306
+    });
+    
+  
+    idx.add({
+      title: "Packaging Overview",
+      excerpt: "Zipping up of multiple files in packages makes it easy to reuse and share with different users. Huge set of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 307
+    });
+    
+  
+    idx.add({
+      title: "Merger Node",
+      excerpt: "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 308
+    });
+    
+  
+    idx.add({
+      title: "Unfinished Deployment",
+      excerpt: "Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 309
+    });
+    
+  
+    idx.add({
+      title: "Q3 Release Version 4.8.0",
+      excerpt: "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 310
+    });
+    
+  
+    idx.add({
+      title: "SAP Business One Service Layer",
+      excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 311
+    });
+    
+  
+    idx.add({
+      title: "Copy Processflow",
+      excerpt: "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 312
     });
     
   
@@ -3199,7 +3325,7 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to create Workflow",
+        "title": "Quickstart to Workflows",
         "url": "/workflow/quickstart-guides-to-workflow-management/",
         "excerpt": "Workflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
@@ -3289,7 +3415,7 @@ var store = [
       {
         "title": "Accessing Portal",
         "url": "/accessing%20portal/accessing-portal/",
-        "excerpt": "Accessing Portal The APPSeCONNECT portal is the webbased interface where you can access APPSeCONNECT application for integration, with the set...",
+        "excerpt": "Accessing Portal The APPSeCONNECT portal is the web based interface where you can access APPSeCONNECT application for integration, with the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -3883,7 +4009,7 @@ var store = [
       {
         "title": "Environment Management",
         "url": "/deployment/Environment-Management/",
-        "excerpt": "Pre-requisites It is recommended that user should upgrade/install the latest Agent from cloud. Even though we are backward compatible, and...",
+        "excerpt": "Pre-requisites To visit the ENVIRONMENT page in portal, navigate to Deploy &gt; Environments. It is recommended that user should upgrade/install...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5025,6 +5151,17 @@ var store = [
     
       
       {
+        "title": "APPSeCONNECT 2020 Release",
+        "url": "/release-notes/2020/",
+        "excerpt": "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Authentication & Authorization of REST Adapters",
         "url": "/connectors/Authentication-and-Authorization/",
         "excerpt": "APPSeCONNECT REST Adapter provides a detailed way for consuming external RESTful APIs including secure APIs. COMMUNICATION BETWEEN CLIENT AND SERVER...",
@@ -5203,7 +5340,7 @@ var store = [
       {
         "title": "Overview of ProcessFlow",
         "url": "/processflow/overview-of-processflow/",
-        "excerpt": "APPSeCONNECT Process Flows suite features an extensive interface that provide the ability to easily create digital maps to make out...",
+        "excerpt": "APPSeCONNECT processflows suite features an extensive interface that provide the ability to easily create digital maps to make out robust...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5212,7 +5349,7 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to create ProcessFlow",
+        "title": "Quickstart to Designing processflow",
         "url": "/processflow/Quickstart-guide-to-processflow/",
         "excerpt": "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
@@ -5236,7 +5373,7 @@ var store = [
       {
         "title": "Important Terminology",
         "url": "/processflow/Terminology/",
-        "excerpt": "This document demonstrates the important terminologies that you need to consider while using Process Flows Home Folder It is a...",
+        "excerpt": "This document demonstrates the important terminologies that you need to consider while using ProcessFlows ProcessFlow Folder It is one the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5247,7 +5384,7 @@ var store = [
       {
         "title": "Designer",
         "url": "/processflow/designer-processflow/",
-        "excerpt": "This section enables the user to implement business scenarios by designing Process Flows. Here user would get the detailed usability...",
+        "excerpt": "This section enables the user to implement business scenarios by designing processflows. Here user would get the detailed usability of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5256,9 +5393,9 @@ var store = [
     
       
       {
-        "title": "Organising Process Flow",
+        "title": "Organising ProcessFlow",
         "url": "/processflow/processflow-listing-page/",
-        "excerpt": "This section provides the option of creating folders for organizing the Process Flows with respect to the business requirements for...",
+        "excerpt": "This section provides the option of creating folders for organizing the ProcessFlows with respect to the business requirements for any...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5269,7 +5406,7 @@ var store = [
       {
         "title": "Steps to Create a ProcessFlow",
         "url": "/processflow/creating-processflow/",
-        "excerpt": "This section of the documentation will guide the user with the process of Creating &amp; Saving new process flows. The...",
+        "excerpt": "This section of the documentation will guide the user with the process of Creating &amp; Saving new processflows. The steps...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5302,7 +5439,7 @@ var store = [
       {
         "title": "Deploy, Execute & Undeploy",
         "url": "/processflow/deploying-and-executing-processfloww/",
-        "excerpt": "Created or Edited Process Flows needs to be deployed to the environment in order to execute the integration process. Users,...",
+        "excerpt": "Created or Edited processflows needs to be deployed to the environment in order to execute the integration process. Users, now...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5313,7 +5450,7 @@ var store = [
       {
         "title": "Redeploy",
         "url": "/processflow/redeploying-processflow/",
-        "excerpt": "Redeploying processflow functionality allows you to re-deploy an existing Process Flows (deployed/deployed and executed) to the same environment in order...",
+        "excerpt": "Redeploying processflow functionality allows you to re-deploy an existing processflows (deployed/deployed and executed) to the same environment in order to...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5322,9 +5459,9 @@ var store = [
     
       
       {
-        "title": "Retrying a Process Flow",
+        "title": "Retrying a processflow",
         "url": "/processflow/retry-processflow/",
-        "excerpt": "Execution of a process flow is vital process for transforming data from source to destination application. In real-time, execution of...",
+        "excerpt": "Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5335,7 +5472,7 @@ var store = [
       {
         "title": "Data view of Snapshot",
         "url": "/processflow/snapshot-processflow/",
-        "excerpt": "Snapshot in Process Flow gives complete overview of the transactions that was executed. A transaction in Process Flow defines an...",
+        "excerpt": "Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5357,7 +5494,7 @@ var store = [
       {
         "title": "Delete Processflow",
         "url": "/processflow/delete-processflow/",
-        "excerpt": "Deleting option enables you to delete a process flow once you have designed it, deployed it or executed it. Deletion...",
+        "excerpt": "Deleting option enables you to delete a processflow once you have designed it, deployed it or executed it. Deletion is...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5467,7 +5604,7 @@ var store = [
       {
         "title": "Nodes and Link overview",
         "url": "/processflow/processflow-nodes-and-links/",
-        "excerpt": "Given below is the list of elements you will be able to use in APPSeCONNECT Process Flow. You can use...",
+        "excerpt": "Given below is the list of elements you will be able to use in APPSeCONNECT processflow. You can use the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5534,17 +5671,6 @@ var store = [
         "title": "Splitter Node",
         "url": "/processflow/working-with-processflow-splitter/",
         "excerpt": "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
-        "title": "Merger Node",
-        "url": "/processflow/working-with-processflow-merger/",
-        "excerpt": "What is Merger Node? This node is used to merge smaller data chunks into a single data packet, in order...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5797,7 +5923,7 @@ var store = [
       {
         "title": "Release Notes",
         "url": "/release-notes/overview/",
-        "excerpt": "Discover whats going on in APPSeCONNECT. Look at our most recent features and updates from APPSeCONNECT. Here are the Release...",
+        "excerpt": "Discover whats going on in APPSeCONNECT. Explore the most recent features and updates and learn more about the product enhancements,...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5808,7 +5934,7 @@ var store = [
       {
         "title": "2020-Q2 Version 1.0 Hotfix Release Note",
         "url": "/release-notes/2020-Q2-V1.0-Hotfix/",
-        "excerpt": "This document highlights the details of V1.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5828,17 +5954,6 @@ var store = [
     
       
       {
-        "title": "APPSeCONNECT 2020 Release",
-        "url": "/release-notes/2020/",
-        "excerpt": "This section will give you detailed decsription of 2020 releases. Presently the enlisted sections under 2020 Release is given under...",
-        "teaser":
-          
-            "/assets/images/APPSeCONNECT-documentation.png"
-          
-      },
-    
-      
-      {
         "title": "Q2 Release Version 4.7.0",
         "url": "/release-notes/2020-Q2/",
         "excerpt": "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
@@ -5850,9 +5965,9 @@ var store = [
     
       
       {
-        "title": "Managing - Schema & Actions",
+        "title": "Managing - Schema & Attributes",
         "url": "/processflow/adding-schema-actions/",
-        "excerpt": "The user can view the schemas and the action present in an app and can also add schema and add...",
+        "excerpt": "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5863,7 +5978,29 @@ var store = [
       {
         "title": "Working with Capture Variables",
         "url": "/processflow/working-with-variable/",
-        "excerpt": "APPSeCONNECT Process Flow allows you to create variables that captures certain values that can be reused in any part of...",
+        "excerpt": "APPSeCONNECT processflow allows you to create variables that captures certain values that can be reused in any part of the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Delay Node",
+        "url": "/processflow/working-with-processflow-delay/",
+        "excerpt": "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Technology App creation Within processflow",
+        "url": "/processflow/technology-app-creation-using-processflow/",
+        "excerpt": "processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5897,6 +6034,17 @@ var store = [
         "title": " APPSeCONNECT 2016 Release",
         "url": "/release-notes/2016/",
         "excerpt": "This section will give you detailed decsription of 2016 releases. Product Release Version: 3.3.0 Product Release Version: 3.2.0 Product Release...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Link Order Sequencing",
+        "url": "/processflow/link-order-sequencing/",
+        "excerpt": "Link Ordering of Nodes for Sequential Execution processflow being the advanced sync flow feature of APPSeCONNECT, allows you to create...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5949,6 +6097,17 @@ var store = [
     
       
       {
+        "title": "Managing - Action, Action Filters & Error Filters",
+        "url": "/processflow/manage-actions-actionfilters-errorfilters/",
+        "excerpt": "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Q1 Release Version 2.2.0",
         "url": "/release-notes/2015-Q1/",
         "excerpt": "Product Release Version: 2.2.0 During the first quarter of 2015 product cycle, we wanted to give you some interesting features....",
@@ -5993,6 +6152,39 @@ var store = [
     
       
       {
+        "title": "Processflow Packaging",
+        "url": "/processflow/processflow-packaging/",
+        "excerpt": "Processflow Packaging is a concept of zipping multiple ProcessFlows or Processflow folders from one organisation to another. Processflow being the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Viewing, Installing & Re-Installing processflow Packages",
+        "url": "/processflow/processflow-package-installation/",
+        "excerpt": "Once you are shared with packages from other organisation, you need to install the packages before working with the Processflows...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Package Sharing",
+        "url": "/processflow/processflow-package-sharing/",
+        "excerpt": "Packaging of processflows have enabled the users to zip multiple processflows. The main goal to create packages was to share...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "APPSeCONNECT Glossary",
         "url": "/glossary/appseconnect-glossary/",
         "excerpt": "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
@@ -6007,6 +6199,94 @@ var store = [
         "title": "Glossary",
         "url": "/glossary/glossary/",
         "excerpt": "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Company Add from Magento2 to SAGE 300",
+        "url": "/integration/company-add/",
+        "excerpt": "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "ZohoBooks",
+        "url": "/connectors/zohobooks/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Packaging Overview",
+        "url": "/processflow/processflow-packaging-overview/",
+        "excerpt": "Zipping up of multiple files in packages makes it easy to reuse and share with different users. Huge set of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Merger Node",
+        "url": "/processflow/working-with-revamped-merger/",
+        "excerpt": "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Unfinished Deployment",
+        "url": "/processflow/unfinished-deployment/",
+        "excerpt": "Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Q3 Release Version 4.8.0",
+        "url": "/release-notes/2020-Q3/",
+        "excerpt": "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "SAP Business One Service Layer",
+        "url": "/connectors/Sap-Business-One-Service-Layer/",
+        "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Copy Processflow",
+        "url": "/processflow/copy-processflow/",
+        "excerpt": "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

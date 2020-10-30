@@ -18,10 +18,12 @@ Swagger Documentation and Applying Action Parameters to Action Filter.
 ## Steps to User Authentication 
 
 1. Go to APPSeCONNECT Portal> API> Proxy> Click on the AUTHENTICATION button(Top Right Corner) on the APPSeCONNECT Cloud Portal.  
+
 ![authentication-proxy](/staticfiles/api-management/media/authentication-proxy.png)
 
 2.The following screen appears. Select your User Organisation from the drop-down menu and it will automatically 
 generate the Username and Password.   
+
 ![authentication-re-generation](/staticfiles/api-management/media/authentication-re-generation.png)
 
 3. Click on the Re-generate button to regenerate the authentication details as and when required.   

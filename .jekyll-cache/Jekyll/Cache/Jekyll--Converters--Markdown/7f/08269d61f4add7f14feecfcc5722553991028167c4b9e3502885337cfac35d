@@ -1,5 +1,0 @@
-I"¼<p>Adapter works on background always to communicate data between application and APPSeCONNECT. As there are a large part of code 
-written by you which the platform need to execute, logging and tracing problems that might come in production 
-environment might sometimes becomes very important. Inside SDK, APPSeCONNECT provides a number of methods which 
-you as a developer can invoke to perform various types of logging from the platform.</p>
-:ET

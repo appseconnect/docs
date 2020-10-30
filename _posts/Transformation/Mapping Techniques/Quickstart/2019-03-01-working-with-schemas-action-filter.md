@@ -42,7 +42,7 @@ d.	Schema Namespace URL: Differentiates between two similar schemas using URL.
 ### Importing schemas in APPSeCONNECT portal
 
 1.	Login to the APPSeCONNECT Portal with valid credentials.
-2.	Go to APPS Page and [Choose any application](/getting%20started/configurations/#process-of-choosing-app)
+2.	Go to **MANAGE > APPS**  and [Choose any application](/getting%20started/configurations/#process-of-choosing-app)
 3.	Click on the + sign after adding the application and click on the Schema button  
 ![importing-schema](/staticfiles/Transformation/media/importing-schema.png)
 4.	On the Schema Window the user can view the list of schemas present or can also add schemas from the ADD Schema 

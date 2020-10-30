@@ -1,4 +1,0 @@
-I"=<p>Action filters are special hierarchical key-value data store for each integration points which provides functionality to have 
-hierarchy and can invoke AppResource methods. An Action filter is an open ended data store which lets the developer
-specify a storage to generate Request and Response data structure.</p>
-:ET

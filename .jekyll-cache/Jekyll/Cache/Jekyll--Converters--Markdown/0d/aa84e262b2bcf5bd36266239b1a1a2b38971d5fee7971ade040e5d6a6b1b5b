@@ -1,7 +1,0 @@
-I"�<p>This is a very common scenario where syncing records incrementally in one direction between two applications, occurs. 
-An incremental (or “delta” ) sync is a process where the data records that have changed (created or modified) after the last time the integration ran as opposed to processing the entire data set every time. 
-It is the favoured approach for most point-to-point integration scenarios since by restricting the number of 
-records being processed to only what has changed, it permits the integration to run more rapidly 
-and proficiently which in chance allows it to run more frequently to keep systems up to date.
-Designing and executing an incremental sync does require more effort than simply syncing all records every time.</p>
-:ET

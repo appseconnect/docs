@@ -19,9 +19,10 @@ runtime to debug and execute workflows.
 ## Prerequisites
 * You must choose the project in which the user will be added.
 * Install the AEC OP Agent from the portal and login with the portal credentials. [Click here](/deployment/Deployment-Configuration/) to know more about the agent setup and configuration.
-* Now Choose two generic app for integration & [workflow creation](/workflow/steps-to-create-your-first-workflow/).
+* Now Choose any two application for integration & [workflow creation](/workflow/steps-to-create-your-first-workflow/).
 * Before executing the workflow for app integration, you should have a valid data in the source application
 * The connection or the workflow design should be done in the Cloud Portal.
+* The environment should be set as **PRIMARY** by enabling the checkbox beside the [Environment](/deployment/Environment-Management/#accessing-the-environment-user-interface) name. The workflow will be deployed only to the environment which will be set as primary.
 
 ## Creating a Workflow
 
@@ -74,16 +75,21 @@ accessible from the APPSeCONNECT Agent.
 
 ## Deploying a Workflow
 
-1. After creation and saving of the workflow, navigate to the Environments Tab. 
-![deploying-workflow](/staticfiles/workflow-management/media/deploying-workflow.png) 
-2. The Environment window shows up. Click on the Agent Settings button to confirm the connectivity of the agent with the portal. 
-The Pop up window shown below, confirms the connectivity.
-![deploying-workflow2](/staticfiles/workflow-management/media/deploying-workflow2.png) 
-3. After the confirmation of the connectivity, click on the Deploy Configuration button to deploy the workflow connection
-in the agent. The user can also click on the Update Configuration button in the OP Agent.  
-**Note: The environment section displays all agents that are associated with the organisation. The buttons Agent Settings 
-and Deploy Configuration should be clicked for the agent that is being used.**
-4. After successfully deploying the configuration in the agent, navigate to the workflow tab for executing the workflow.
+The procedures for deploying workflow as per the chosen environment is given below:
+
+### Deploying in OP Agent
+
+1) After successfully [publishing](/workflow/deploying-and-executing/#publishing-a-workflow) the workflow, you need to click on the **Update Configuration** button, to deploy the changes in the OP AGENT. As a prerequisite, the required environment needs to be set as primary from the [environment](/deployment/Environment-Management/) section.
+
+![deployop1](\staticfiles\workflow-management\media\deployop1.PNG)
+
+2) Once the configuration are updated, you can view your workflow deployed in the [Workflow Panel](/deployment/Deployment-Configuration/#configuration-process-for-op)
+
+**Note:** Before Updating Configuration, you need to uncheck the Enable Environment button.
+
+### Deploying in Cloud Agent
+
+After successfully publishing the workflow, you need run and execute the workflow. As a prerequisite, you need to enable the Cloud Environment as primary by checking the checkbox in the [environment section](/deployment/Environment-Management/) before [publishing](/workflow/deploying-and-executing/#publishing-a-workflow) the workflow.
 
 ## Executing the Workflow
 

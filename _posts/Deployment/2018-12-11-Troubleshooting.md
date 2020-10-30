@@ -94,6 +94,16 @@ The sync bucket is showing blank, although data has been synced.
 **NOTE: Choosing `Migrate All Timestamp` will take time depending on the volume of your data,
 so plan it according to the business requirement**
 
+### Troubleshooting: User cannot Login into the Agent, No error is displayed in the Agent Login section and gives blank Response.
 
+The scenario usually occures when the **CONFIG** file gets corrupt. The issue is resolved and for this scenario if occured, you will not get the following message **Configuration file is corrupt. Do you want to recreate it**. This helps to you to identify and troubleshoot the problem.
+
+**Steps to Troubleshooting:**
+
+1) When you get the above message, you will provided with an option for YES or NO.
+
+2) On Clicking Yes, it recreates the config file internally and it redirects to On Premise agent Login screen. 
+
+3) Provide your credentials and click on the Login button. You should login successfully.
 
 
