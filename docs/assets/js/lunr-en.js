@@ -2808,7 +2808,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Q3 Release Version 4.8.0",
-      excerpt: "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
+      excerpt: "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 310
@@ -6264,7 +6264,7 @@ var store = [
       {
         "title": "Q3 Release Version 4.8.0",
         "url": "/release-notes/2020-Q3/",
-        "excerpt": "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
+        "excerpt": "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
