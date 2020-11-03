@@ -81,20 +81,19 @@ _**Note:** You can only provide those Appresource Functions (both Cloud & Generi
 
 4) You need to provide the Decision KEY, for commanding the Decision Operation. Here you can view the decision key applied on the Decision Attribute.
 
-    **Scenario:** Implementing Decision as Static.
+**Scenario:** Implementing Decision as Static.
 
-    **Description:** In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields `Decision Key` & `Value` is equal, the data will be passed as success.
+**Description:** In this case, the scenario is implemented with fact keeping in mind that only if the node is able to prove that both the static values provided in the fields `Decision Key` & `Value` is equal, the data will be passed as success.
 
-    - **Decision Key:** `20`
-    - **Operator:** `=`
+- **Decision Key:** `20`
+- **Operator:** `=`
+- **Value:** `20`
 
-    - **Value:** `20`
+AND
 
-    AND
-
-    - **Decision Key:** `40`
-    - **Operator:** `=`
-    - **Value:** `40`
+- **Decision Key:** `40`
+- **Operator:** `=`
+- **Value:** `40`
 
 _**Note:**_ 
  - _**You need to click the button `Add Criteria` for providing multiple condition with conjunctions. Also, you need to enable the toggle button for activating the conditions.**_
