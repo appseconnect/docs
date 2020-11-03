@@ -2060,8 +2060,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Quickstart guides to Designing processflow",
-      excerpt: "processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+      title: "Quickstart to Designing processflow",
+      excerpt: "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 227
@@ -2808,7 +2808,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Q3 Release Version 4.8.0",
-      excerpt: "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
+      excerpt: "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 310
@@ -5349,9 +5349,9 @@ var store = [
     
       
       {
-        "title": "Quickstart guides to Designing processflow",
+        "title": "Quickstart to Designing processflow",
         "url": "/processflow/Quickstart-guide-to-processflow/",
-        "excerpt": "processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
+        "excerpt": "Processflows are the diagrammatic representation of a business process. As an organization, you can have a number of business processes...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6264,7 +6264,7 @@ var store = [
       {
         "title": "Q3 Release Version 4.8.0",
         "url": "/release-notes/2020-Q3/",
-        "excerpt": "Product Release Version: Release notes were published and last revised in October 2020. Updates in this release include New Feature...",
+        "excerpt": "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
