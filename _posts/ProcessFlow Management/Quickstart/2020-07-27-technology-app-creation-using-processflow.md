@@ -14,11 +14,11 @@ menus:
 Processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple other applications or a single application. processflow is a Robust feature of APPSeCONNECT, where you can implement your business processes by customizing the nodes as per your requirement.
 With processflow, you can now create your customized technology application supporting the below mentioned protocols from your [Designer Page of processflow](/processflow/designer-processflow/).
 
-1) File  
-2) REST  
-3) SOAP  
-4) OLEDB  
-5) FTP  
+1) File     
+2) REST    
+3) SOAP    
+4) OLEDB    
+5) FTP    
 
 The steps to create a **Technology Application** is provided below.
 
