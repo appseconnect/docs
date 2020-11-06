@@ -11,14 +11,14 @@ menus:
         identifier: deployprocessflow
 ---
 
-processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple other applications or a single application. processflow is a Robust feature of APPSeCONNECT, where you can implement your business processes by customizing the nodes as per your requirement.
+Processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple other applications or a single application. processflow is a Robust feature of APPSeCONNECT, where you can implement your business processes by customizing the nodes as per your requirement.
 With processflow, you can now create your customized technology application supporting the below mentioned protocols from your [Designer Page of processflow](/processflow/designer-processflow/).
 
-1) File
-2) REST
-3) SOAP
-4) OLEDB
-5) FTP
+1) File  
+2) REST  
+3) SOAP  
+4) OLEDB  
+5) FTP  
 
 The steps to create a **Technology Application** is provided below.
 
@@ -49,15 +49,15 @@ The steps to create a **Technology Application** is provided below.
 
 4) Enter the details for the above mentioned fields and click on the **Save & Continue** button.
 
-![techapp3](\staticfiles\processflow\media\techapp3.png)
+![techapp3](\staticfiles\processflow\media\techapp3.png)  
 
 5) The Node Configuration Window opens automatically for the created technology application.
 
-![techapp4](\staticfiles\processflow\media\techapp4.png)
+![techapp4](\staticfiles\processflow\media\techapp4.png)    
 
 6) Enter the details of the Node Configuration Window for the created application, for specifying the node configuration. Click on the SAVE button.
 
-![techapp5](\staticfiles\processflow\media\techapp5.png)
+![techapp5](\staticfiles\processflow\media\techapp5.png)  
 
 **Note:**
     - You cannot edit the created app from the processflow section. However you can anytime edit your application by navigating to APPS > Search your App. Click on the View button for editing your created app.

@@ -2592,7 +2592,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Technology App creation Within processflow",
-      excerpt: "processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
+      excerpt: "Processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 286
@@ -6000,7 +6000,7 @@ var store = [
       {
         "title": "Technology App creation Within processflow",
         "url": "/processflow/technology-app-creation-using-processflow/",
-        "excerpt": "processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
+        "excerpt": "Processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
