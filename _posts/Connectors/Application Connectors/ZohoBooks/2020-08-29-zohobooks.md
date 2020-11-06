@@ -35,7 +35,7 @@ credential of the application ZOHOBOOKS.
 
 2) The Adapter configurations will get downloaded automatically (within a timespan), and then you can proceed with credential authorization.
 
-![zohobooks2](\staticfiles\connectors\media\application-connector\zohobooks2.png)
+![zohobooks2](\staticfiles\connectors\media\application-connector\zohobooks2.PNG)
 
 3) The configurational fields for the credential templates get downoaded. You can now provide the credentials for your applications. The following fields are required for validating the your credentials. The Authentication fields for OAUTH 2.0 are:
 
@@ -48,7 +48,7 @@ credential of the application ZOHOBOOKS.
 - Scope - Scopes defines the specific actions applications can be allowed to do on a user behalf.
 - Organisation Id - This is an optional field. However if your application supports organisation id, you can anytime provide your applications org id. For more details on Organisation Id, [click here](https://www.zoho.com/books/api/v3/#organization-id).
 
-![zohobooks4](\staticfiles\connectors\media\application-connector\zohobooks4.png)
+![zohobooks4](\staticfiles\connectors\media\application-connector\zohobooks4.PNG)
 
 5) Provide your credentials as per the fields given.
 

@@ -46,20 +46,20 @@ The steps to create a **Technology Application** is provided below.
 - Category: You can select the type of application based upon the categories such as Marketing, Huma Resource, Ecommerce, ERP, Accounting etc.
 - Status: This defines the status of the application, by default, it will be selected as Released. 
 
-![techapp2](../../staticfiles/processflow/media/techapp2.png)
+![techapp2](../../staticfiles/processflow/media/techapp2.PNG)
 
 
 4) Enter the details for the above mentioned fields and click on the **Save & Continue** button.
 
-![techapp3](\staticfiles\processflow\media\techapp3.png)  
+![techapp3](\staticfiles\processflow\media\techapp3.PNG)  
 
 5) The Node Configuration Window opens automatically for the created technology application.
 
-![techapp4](\staticfiles\processflow\media\techapp4.png)    
+![techapp4](\staticfiles\processflow\media\techapp4.PNG)    
 
 6) Enter the details of the Node Configuration Window for the created application, for specifying the node configuration. Click on the SAVE button.
 
-![techapp5](\staticfiles\processflow\media\techapp5.png)  
+![techapp5](\staticfiles\processflow\media\techapp5.PNG)  
 
 **Note:**
     - You cannot edit the created app from the processflow section. However you can anytime edit your application by navigating to APPS > Search your App. Click on the View button for editing your created app.
@@ -81,7 +81,7 @@ You may require to reuse the same created techology app in the same processflow 
 
 3) Click on the **My Apps** tab. You can view all the custom and the technology apps, you have created for your organisation.
 
-![techapp7](\staticfiles\processflow\media\techapp7.png)
+![techapp7](\staticfiles\processflow\media\techapp7.PNG)
 
 4) Select the app from the **My Apps** list and drag it on the [designer panel](/processflow/designer-processflow/#process-flow-designer-view). The node configuration window opens for the dragged app.
 

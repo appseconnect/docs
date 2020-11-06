@@ -50,7 +50,7 @@ The HEADER tab has two fields:  `KEY` & `VALUE`. You need to provide the **PREFE
 
 7) Navigate to the tab **BODY**. You will have to provide your login credentials here. Follow the image below to provide the details.
 
-![sapsl4](\staticfiles\connectors\media\application-connector\sapsl4.PNG)
+![sapsl4](\staticfiles\connectors\media\application-connector\sapsl4.png)
 
 The login details needs to be provided as per the below syntax:
 

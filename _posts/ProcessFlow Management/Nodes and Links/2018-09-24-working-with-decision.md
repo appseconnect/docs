@@ -110,7 +110,7 @@ _**Note:**_
 
 7) After completion of the execution, you successfully view the snapshot for the Decision Node. [Click Here](/processflow/snapshot-processflow/) to know more about processflow Snapshots. The **Activity Log** against the `Decision node` in snapshot will display you the status of the condition.
 
-![PFdecision5](\staticfiles\processflow\media\pfdecision5.PNG)
+![PFdecision5](\staticfiles\processflow\media\pfdecision5.png)
 
 **Note:** 
 
