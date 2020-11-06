@@ -196,7 +196,7 @@ b.	Organization Admin
 
 #### Steps to add USER to an organisation
 
-1) Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.
+1) Login to the APPSeCONNECT Portal and navigate to the USER module under Manage.  
 2) By default, the interface would be of the tab Client Users. By default, APPSeCONNECT user would view the interface of the tab Client Users. 
 
 **Note: The tab Partners will not have any view unless an organization has any requirements for partners.**
@@ -227,7 +227,7 @@ b.	Organization Admin
 
 8) Once activated, login to your account with the provided credential provided in the Activation Mail.
 
-![Useradd6](\staticfiles\root\media\useradd6.PNG)
+![useradd6](\staticfiles\root\media\useradd6.png)
 
 **Note:** 
 

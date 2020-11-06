@@ -51,7 +51,7 @@ in the [designer section](/processflow/designer-processflow/).
     - **processflow:** This is the Global variable that can be used in the processflows under any nodes.
     - **Node:** This is the Local Variable and can be used only in the node where it is defined within that processflow.
 
-![var2](\staticfiles\processflow\media\var2.png)
+![var2](\staticfiles\processflow\media\var2.PNG)
 
 6) You will also be able to view the following toggle button in the `Create Variable` page.
 - **Is Persistant:** On Enabling this toggle button, the value after the execution will be remembered across subsequent executions.
@@ -59,7 +59,7 @@ in the [designer section](/processflow/designer-processflow/).
 
 7) Once all the necessary details are provided. Click on the **SAVE** or **SAVE & CLOSE** button. 
 
-![var3](\staticfiles\processflow\media\var3.png)
+![var3](\staticfiles\processflow\media\var3.PNG)
 
 8) On clicking the `View List` button, you can view all the created variable for the node in a list view.
 
@@ -131,11 +131,11 @@ A. Click on the Ellipses button beside the Variable, in the variable listing pag
 
 B. Click on the Delete button available on the drop down window. 
 
-![var6](\staticfiles\processflow\media\var6.png)
+![var6](\staticfiles\processflow\media\var6.PNG)
 
 C. You'll be getting a confirmation message for the deletion process.
 
-![var7](\staticfiles\processflow\media\var7.png)
+![var7](\staticfiles\processflow\media\var7.PNG)
 
 D. Your variable gets deleted from the list.
 
@@ -147,13 +147,13 @@ _**Note:** You cannot delete a Variable that is currently in use for execution a
 
 2) Enter the required fields in the **General Tab** of the Node Configuration Window of the application implementing GET operation. Click on the **Properties** Tab.
 
-![var8](\staticfiles\processflow\media\var8.png)
+![var8](\staticfiles\processflow\media\var8.PNG)
 
 3) Click on the [**Create**](/processflow/working-with-variable/#creating-variable) Button in the Properties Window.
 
 4) The Variable creation page opens. Enter the required details and click on the save button.
 
-![var9](\staticfiles\processflow\media\var3.png)
+![var9](\staticfiles\processflow\media\var3.PNG)
 
 5) Navigate to the General tab and click on the **Configure Filter** button. Expand the Action filer node and click on the `created_at`. To know more about Actions & Action Filters, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/)
 

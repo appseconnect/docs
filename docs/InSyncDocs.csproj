@@ -1010,6 +1010,10 @@
     <Content Include="staticfiles\processflow\media\snapshot7.png" />
     <Content Include="staticfiles\processflow\media\snapshot8.png" />
     <Content Include="staticfiles\processflow\media\snapshot9.png" />
+    <Content Include="staticfiles\processflow\media\splitflow1.PNG" />
+    <Content Include="staticfiles\processflow\media\splitflow2.PNG" />
+    <Content Include="staticfiles\processflow\media\splitflow3.PNG" />
+    <Content Include="staticfiles\processflow\media\splitflow4.PNG" />
     <Content Include="staticfiles\processflow\media\splitter1.png" />
     <Content Include="staticfiles\processflow\media\splitternode2.png" />
     <Content Include="staticfiles\processflow\media\splitternode3.png" />
@@ -1593,8 +1597,10 @@
     <None Include="_posts\Connectors\Application Connectors\Lightspeed\2020-04-02-Lightspeed.md" />
     <None Include="_posts\Connectors\Application Connectors\Prestashop\2018-12-07-Prestashop.md" />
     <None Include="_posts\Connectors\Application Connectors\Salesforce\2018-12-07-Salesforce.md" />
+    <None Include="_posts\Connectors\Application Connectors\SAP B1 Service Layer\2020-09-23-Sap-Business-One-Service-Layer.md" />
     <None Include="_posts\Connectors\Application Connectors\Shipstation\2018-12-07-Shipstation.md" />
     <None Include="_posts\Connectors\Application Connectors\Woocommerce\2019-05-05-Sap-Business-Addon.md" />
+    <None Include="_posts\Connectors\Application Connectors\ZohoBooks\2020-08-29-zohobooks.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2019-09-20-OAuth1.0.md" />
     <None Include="_posts\Connectors\Technology Connectors\Rest\2019-10-22-Troubleshooting-Rest.md" />
     <None Include="_posts\Deployment\Environment Management\2018-11-20-Deployment Configuration.md" />
@@ -1629,6 +1635,11 @@
     <None Include="_posts\Integration\Shopify-Sage300\2020-05-23-ic-shipment-add.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Terminology.md" />
     <None Include="_posts\ProcessFlow Management\2020-03-16-Architecture.md" />
+    <None Include="_posts\ProcessFlow Management\2020-06-30-protocol-implementation.md" />
+    <None Include="_posts\ProcessFlow Management\2020-07-15-adding-schema-actions.md" />
+    <None Include="_posts\ProcessFlow Management\2020-07-15-working-with-variable.md" />
+    <None Include="_posts\ProcessFlow Management\2020-08-05-manage-actions-actionfilters-errorfilters.md" />
+    <None Include="_posts\ProcessFlow Management\adding-schema-actionss.md" />
     <None Include="_posts\ProcessFlow Management\migration-of-processflow.md" />
     <None Include="_posts\ProcessFlow Management\adding-schema-actions.md" />
     <None Include="_posts\ProcessFlow Management\2020-06-07-adding-schema-actions.md" />
