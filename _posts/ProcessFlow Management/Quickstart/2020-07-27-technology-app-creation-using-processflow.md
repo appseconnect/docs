@@ -33,6 +33,8 @@ The steps to create a **Technology Application** is provided below.
 
 ![techapp1](\staticfiles\processflow\media\techapp1.png)
 
+
+
 2) Drag any desired technology protocols to the designer panel for creating the application. The technology should be selected based on the protocol, your application supports. For REST based, you need to drag the REST config template, for SOAP based you need to select SOAP config template.
 
 3) On dragging the technology specific template, the technology configuration window opens. You will be able to view the following fields.
@@ -45,7 +47,7 @@ The steps to create a **Technology Application** is provided below.
 - Category: You can select the type of application based upon the categories such as Marketing, Huma Resource, Ecommerce, ERP, Accounting etc.
 - Status: This defines the status of the application, by default, it will be selected as Released. 
 
-![techapp2](\staticfiles\processflow\media\techapp2.png)
+![techapp2](../../staticfiles/processflow/media/techapp2.png)
 
 4) Enter the details for the above mentioned fields and click on the **Save & Continue** button.
 
