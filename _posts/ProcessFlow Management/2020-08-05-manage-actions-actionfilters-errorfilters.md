@@ -37,11 +37,11 @@ This section of the document will enable the user to create actions, action filt
 
 4) The Manage Action window opens. You will be able to view the schema, selected in the node configuration window.
 
-![pf_actions2](\staticfiles\processflow\media\pf_actions2.png)
+![pf_actions2](\staticfiles\processflow\media\pf_actions2.PNG)
 
 5) Click on the **Ellipsis icon** (three horizontal dots) beside the schema to view the **Add Action** option in the contextual menu. 
 
-![pf_actions3](\staticfiles\processflow\media\pf_actions3.png)
+![pf_actions3](\staticfiles\processflow\media\pf_actions3.PNG)
 
 6) You will provided with two mandatory fields for creating the **ACTION** under the schema. Below are the mentioned fields.
 
@@ -50,7 +50,7 @@ This section of the document will enable the user to create actions, action filt
 
 Click on the SAVE button.
 
-![pf_action4](\staticfiles\processflow\media\pf_actions4.png)
+![pf_action4](\staticfiles\processflow\media\pf_actions4.PNG)
 
 Following the above steps , you can successfully create a new Action to a schema.
 
@@ -82,7 +82,7 @@ Following the above steps , you can successfully create a new Action to a schema
     - You can successfully rename both the mandatory fields: **Action Name** & **Action Description**.
     - Click on the SAVE button to apply the changes on your organisation.
 
-![edit_action3](\staticfiles\processflow\media\edit_action3.PNG)
+![edit_action3](\staticfiles\processflow\media\edit_action3.png)
 
 Following the above process, you can successfully Edit, Delete & Rename an existing action.
 
@@ -100,11 +100,11 @@ Following the above process, you can successfully Edit, Delete & Rename an exist
 
 3) The Configure filter window opens. You can view the selected shema listed on the window.
 
-![actionfilter2](\staticfiles\processflow\media\action_filter2.png)
+![actionfilter2](\staticfiles\processflow\media\action_filter2.PNG)
 
 4) Expand the nodes `customer > Action > Select Action` to view the **Action Filter** and the **Error Filter**
 
-![actionfilter3](\staticfiles\processflow\media\action_filter3.png)
+![actionfilter3](\staticfiles\processflow\media\action_filter3.PNG)
 
 5) Click on the ellipses beside the Action Filter to view the **CREATE** Button. Clicking on the create button, the action filter creation window opens.
 
@@ -118,7 +118,7 @@ Following the above process, you can successfully Edit, Delete & Rename an exist
 
 Click on the SAVE icon beside the filter to save the current sibling.
 
-![actionfilter5](\staticfiles\processflow\media\action_filter5.png)
+![actionfilter5](\staticfiles\processflow\media\action_filter5.PNG)
 
 7) You can also append multiple filters by clicking on the **APPEND** button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.
 
@@ -136,7 +136,7 @@ Click on the SAVE icon beside the filter to save the current sibling.
 
 3) The Configure filter window opens. You can view the selected shema listed on the window.
 
-![errorfilter2](\staticfiles\processflow\media\action_filter2.png)
+![errorfilter2](\staticfiles\processflow\media\action_filter2.PNG)
 
 4) Expand the nodes `customer > Action > Select Action` to view the **Action Filter** and the **Error Filter**
 

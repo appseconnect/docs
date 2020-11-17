@@ -11,14 +11,14 @@ menus:
         identifier: deployprocessflow
 ---
 
-processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple other applications or a single application. processflow is a Robust feature of APPSeCONNECT, where you can implement your business processes by customizing the nodes as per your requirement.
+Processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple other applications or a single application. processflow is a Robust feature of APPSeCONNECT, where you can implement your business processes by customizing the nodes as per your requirement.
 With processflow, you can now create your customized technology application supporting the below mentioned protocols from your [Designer Page of processflow](/processflow/designer-processflow/).
 
-1) File
-2) REST
-3) SOAP
-4) OLEDB
-5) FTP
+1) File     
+2) REST    
+3) SOAP    
+4) OLEDB    
+5) FTP    
 
 The steps to create a **Technology Application** is provided below.
 
@@ -33,6 +33,7 @@ The steps to create a **Technology Application** is provided below.
 
 ![techapp1](\staticfiles\processflow\media\techapp1.png)
 
+
 2) Drag any desired technology protocols to the designer panel for creating the application. The technology should be selected based on the protocol, your application supports. For REST based, you need to drag the REST config template, for SOAP based you need to select SOAP config template.
 
 3) On dragging the technology specific template, the technology configuration window opens. You will be able to view the following fields.
@@ -45,19 +46,20 @@ The steps to create a **Technology Application** is provided below.
 - Category: You can select the type of application based upon the categories such as Marketing, Huma Resource, Ecommerce, ERP, Accounting etc.
 - Status: This defines the status of the application, by default, it will be selected as Released. 
 
-![techapp2](\staticfiles\processflow\media\techapp2.png)
+![techapp2](../../staticfiles/processflow/media/techapp2.PNG)
+
 
 4) Enter the details for the above mentioned fields and click on the **Save & Continue** button.
 
-![techapp3](\staticfiles\processflow\media\techapp3.png)
+![techapp3](\staticfiles\processflow\media\techapp3.PNG)  
 
 5) The Node Configuration Window opens automatically for the created technology application.
 
-![techapp4](\staticfiles\processflow\media\techapp4.png)
+![techapp4](\staticfiles\processflow\media\techapp4.PNG)    
 
 6) Enter the details of the Node Configuration Window for the created application, for specifying the node configuration. Click on the SAVE button.
 
-![techapp5](\staticfiles\processflow\media\techapp5.png)
+![techapp5](\staticfiles\processflow\media\techapp5.PNG)  
 
 **Note:**
     - You cannot edit the created app from the processflow section. However you can anytime edit your application by navigating to APPS > Search your App. Click on the View button for editing your created app.
@@ -79,7 +81,7 @@ You may require to reuse the same created techology app in the same processflow 
 
 3) Click on the **My Apps** tab. You can view all the custom and the technology apps, you have created for your organisation.
 
-![techapp7](\staticfiles\processflow\media\techapp7.png)
+![techapp7](\staticfiles\processflow\media\techapp7.PNG)
 
 4) Select the app from the **My Apps** list and drag it on the [designer panel](/processflow/designer-processflow/#process-flow-designer-view). The node configuration window opens for the dragged app.
 

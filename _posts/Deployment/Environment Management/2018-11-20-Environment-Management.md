@@ -185,7 +185,7 @@ Cloud supported. To enable your organisation with cloud support, [Click here.](/
 
 3) Your Hosted environment will be created automatically. You will be provided with a confirmation message on its successful creation.
 
-![hostedcreate2](\staticfiles\deployment\media\EasyEnv\hostedcreate2.PNG)
+![hostedcreate2](\staticfiles\deployment\media\EasyEnv\hostedcreate2.png)
 
 4) You can view the created environment in the listing, by expanding the Hosted Node. By default, the name of hosted environment will created as **My-Hosted-Environment**.
 
@@ -328,7 +328,7 @@ This section of the document will allow to attach/detach your environments. You 
 
 3) Post detachment, if the user tries to re-login to the On-Premise environment, it will display the message, **Agent is Blocked.**
 
-![detach3](\staticfiles\deployment\media\EasyEnv\detach3.PNG)
+![detach3](\staticfiles\deployment\media\EasyEnv\detach3.png)
 
 4) You can anytime re-attach your On-Premise environment by clicking on the **ATTACH** button in the contextual menu.
 
@@ -354,7 +354,7 @@ All the services and sync operations will get stopped. If any new user or differ
 
 3) You will get a confirmation pop-up before the deletion process.
 
-![delete2](\staticfiles\deployment\media\EasyEnv\delete2.png)
+![delete2](\staticfiles\deployment\media\EasyEnv\delete2.PNG)
 
 4) Once deleted, user get a successful message for the deletion of the environment. The environment gets removed from the environment list after the deletion process.
 
