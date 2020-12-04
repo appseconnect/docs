@@ -157,38 +157,24 @@ Follow the documentation of Reference Tables for reference. The lookups listed b
 ## Field Mapping Information:
 
 The ProcessFlows in this package are pre-implemented with the field mappings that will let you just to plug and play the integrations. The mapped attributes will let your Source App sync data in required fields of your Destination App minimizing sync errors and maximizing data integration efficiency. 
-However the mappings can always be customized and may require, usage of variables as per your need of any variable type. These variables store sync related data that can be used later in the mapping for the transformation process. These variables can be of multiple datatypes, as per your usage. Check  Docs for more details on variable creation.
+However the mappings can always be customized and may require, usage of variables as per your need of any variable type. These variables store sync related data that can be used later in the mapping for the transformation process. These variables can be of multiple datatypes, as per your usage. Check [Docs](https://docs.appseconnect.com/processflow/defining-variables-in-processflow-mapping/) for more details on variable creation.
 
 **1. Process Flow: Business Partner Add**
 
-| Attribute | Mapping |
-
-| | |
-
+|Attribute|Mapping|  
+|-------|-----------------------------------------------------|
 | CardCode | `{{id}}`|
-
 | EmailAddress | `{{email}}`|
-
 | CardName | `{{concat(firstname,' ',lastname)}}`|
-
 | City | `{{city}}`|
-
 | Country | `{{country_id}}`|
-
 | AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}`|
-
 | ZipCode | `{{postcode}}`|
-
 | Street | `{{street/item[1]}}`|
-
 | State | ` {{region/region_code}}`|
-
 | AddressType | `[choose] [when] ({{default_billing}}='true') bo_BillTo [endwhen] [when] ({{default_shipping}}='true') bo_ShipTo [endwhen] [otherwise] bo_ShipTo [endotherwise] [endchoose]`|
-
 | Block | `{{street/item[2]}}`|
-
 | U_WBCUSTADDID | `{{id}}`|
-
 | U_TelNo | {{telephone}}`|
 
 **2. Process Flow: Simple Product Add**
