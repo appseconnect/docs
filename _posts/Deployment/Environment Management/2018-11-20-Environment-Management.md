@@ -21,6 +21,7 @@ menus:
     - RED indicator - Agent is either detached or inactive.
     - BLUE indicator - Agent is up and Running.
 * The will be no colour indicators for an Hosted Agent.
+* You can group your On-Premise environments by creating Folders. The Folder names can have maximum of 100 letter counts.
 * The view for the **[Last Deployment Log](/deployment/Environment-Management/#last-deployment-log)** is same for both Hosted and On-Premise environment.
 
 ## On-Premise
@@ -111,7 +112,6 @@ This section of the document will allow you to view and understand the details o
 
 - **The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.**
 
-
 ### Grouping of On-Premise Environments
 This section of the document will allow you to Group multiple OP environments in folders. Grouping is initiated to manage and the arrangement of multiple similar elements for distinguishing its exact purpose. In APPSeCONNECT, for On-Premise environments
 , you can group environments in folders as per your requirement. You can view all your created folders on expanding the On-Premise section.
@@ -149,6 +149,7 @@ Following the above process you can easily create and group your On Premise Envi
 
 - You can create to max upto any level when creating folders exculding the main **On-Premise**: On Premise > Folder 1 > Sub folder 1 > Sub folder 2 > Sub folder 3 .......
 - You cannot create Folders, Sub-Folders with same name in your organisation. Each name provided for any folders or sub-folders should be unique.
+- The folder name can have upto 100 letter counts.
 
 
 ## Hosted 
