@@ -162,20 +162,34 @@ However the mappings can always be customized and may require, usage of variable
 **1. Process Flow: Business Partner Add**
 
 | Attribute | Mapping |
+
 | | |
-| CardCode | `{{id}}` |
-| EmailAddress | `{{email}}` |
-| CardName | `{{concat(firstname,' ',lastname)}}` |
-| City | `{{city}}` |
-| Country | `{{country_id}}` |
-| AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}` |
-| ZipCode | `{{postcode}}` |
+
+| CardCode | `{{id}}`|
+
+| EmailAddress | `{{email}}`|
+
+| CardName | `{{concat(firstname,' ',lastname)}}`|
+
+| City | `{{city}}`|
+
+| Country | `{{country_id}}`|
+
+| AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}`|
+
+| ZipCode | `{{postcode}}`|
+
 | Street | `{{street/item[1]}}`|
-| State | ` {{region/region_code}}` |
-| AddressType | `[choose] [when] ({{default_billing}}='true') bo_BillTo [endwhen] [when] ({{default_shipping}}='true') bo_ShipTo [endwhen] [otherwise] bo_ShipTo [endotherwise] [endchoose]` |
-| Block | `{{street/item[2]}}` |
-| U_WBCUSTADDID | `{{id}}` |
-| U_TelNo | {{telephone}}` |
+
+| State | ` {{region/region_code}}`|
+
+| AddressType | `[choose] [when] ({{default_billing}}='true') bo_BillTo [endwhen] [when] ({{default_shipping}}='true') bo_ShipTo [endwhen] [otherwise] bo_ShipTo [endotherwise] [endchoose]`|
+
+| Block | `{{street/item[2]}}`|
+
+| U_WBCUSTADDID | `{{id}}`|
+
+| U_TelNo | {{telephone}}`|
 
 **2. Process Flow: Simple Product Add**
 
@@ -202,24 +216,33 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 **WooCommerce Application**
 
 •	Version: WooCommerce 2.6 V & Above
+
 •	Extension: insync-wp-rest-filter-1.0.3
+
 •	Description: This is used For API Filtration with respect to Date & Time
 
 **SAP ByDesign Application**
 
 •	Version: SAP ByDesign 19.1.0
+
 •	Extension: `YJT3WBG5Y__V7(INS_AEC_STOCK)`
+
 •	Description: This extension is used for Stock Updating
 
 **SAP B1 Application**
 
 •	Version: Supported SAP B1 Version are:
+
     - SAP B1 9.1
+
     - SAP B1 9.2
+
     - SAP B1 9.3V & Above
 
 •	Add On: 
+
     - APPSeCONNECT_2.4.3.0_32 (For 32 Bit supported SAP Application)
+
     - APPSeCONNECT_2.4.10.0_64 (For 64 Bit supported SAP Application)
 
 •	Description: This Add On is used for Web Item Master Data Configuration (created under Inventory Module) for adding web product details required for integration.
@@ -254,22 +277,31 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 You need to import below listed .fob files
 
 •	table
+
 •	page
+
 •	code unit
+
 •	xmlport
 
 You need to import below listed XML Files
 
 •	Application Id
+
 •	Webservices
 
 Description: This extension details are enlisted below:
 
 •	Table: This fob file enables to add additional fields in the NAV Tables, which is required for integration.
+
 •	Page: This fob file enables UI Representation of the Tables in NAV Application
+
 •	Code Unit: This C/AL Code enables to hold backend code of extension modules.
+
 •	XML Port: This enables to import external data source in NAV
+
 •	Application Id: This is a data file, which holds the application Id & application name required for NAV Integration
+
 •	Webservices: This is an XML doc which hold information of webservices for base and extension pages.
 
 ## Adapter Compatibility Check:
