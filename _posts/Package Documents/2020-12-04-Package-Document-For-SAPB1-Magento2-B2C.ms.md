@@ -1,7 +1,7 @@
 ## Overview
 
 The package **SAP Business One - Magento2 B2C** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design. 
-One -Click installation of the [package] allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
+One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
 ## Additional Information
