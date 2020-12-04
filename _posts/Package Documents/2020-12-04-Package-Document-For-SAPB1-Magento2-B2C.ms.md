@@ -84,34 +84,40 @@ Given below are the Transactional Data Configuration Details:
 - **Business Partner Add:**
 
 i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone. 
+
 ii.	Dependency flow: Not Applicable 
 
 - **Simple Product Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your destination application. The details are: Product Id, Product SKU, Product Name, Price, Product Status, Attribute id, Product type, weight etc. 
+
 ii.	Dependency Flow: Not Applicable 
 
 -	**Simple Product Update:** 
 
 i.	Flow Description: This ProcessFlow is featured to update the changes of the product details. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
+
 ii.	Dependency Flow: Simple Product Add 
 Simple Product Update is equipped of updating the changes made to the Product details on your Source Application. As the updates are made against the ItemCode, therefore the dependency of Simple Product Add occurs which is responsible of adding the ItemCode primarily.
 
 -	**Inventory Update:**
 
 i.	Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Item Quantity against the item code available on your inventory. 
+
 ii.	Dependency Flow: Simple Product Add 
 As the inventory is updated against the ItemCode, the item needs to be added first so that the respective stocks can be updated accordingly.
 
 -	**Order Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
+
 ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update. 
 The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
 
 -	**Invoice Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Invoices raised against the Sales Order Generated. The flow syncs the Item SKU, Quantity, and the Order Details to your destination application. Invoice Add is also equipped with a Post Acknowledgement task that integrates Sync Back Invoice Flag details back to your Source Application. 
+
 ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order Add 
 The Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
@@ -119,24 +125,28 @@ The Invoice Add ProcessFlow is equipped of integrating the details of the order 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Delivery/Shipment docs generated against your Sales Order to your destination application. This flow sync the Shipment Tracking Number along with the Customer details, order details, and tax information’s. 
 Delivery/Shipment Add is also equipped with a Post Acknowledgement task that integrates Sync Back ShipmentSyncFlag details.
+
 ii. Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order Add 
 The Delivery/Shipment Add ProcessFlow is equipped of integrating the details of the order delivery receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 -	**Bundle Product Add:**
 
 i.	Flow Description: This ProcessFlow syncs all the details bundled products to your destination application. As Simple product a bundled to form Bundle Products, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Bundle Product Add. 
+
 ii.	Dependency Flow: NA. 
 As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again. 
 
 -	**Configurable Product Add:**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the configurable products to your destination application. A configurable product are the simple products with options, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. The Simple Product Add flow is also equipped with a Post Acknowledgement task that integrates Sync Back Flag details. 
+
 ii.	Dependency Flow: NA. 
 As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again.
 
 -	**Grouped Product Add:**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the Grouped Products to your destination application. Group products are the pack of multiple simple products. This ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. 
+
 ii.	Dependency Flow: NA. 
 As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again.
 
