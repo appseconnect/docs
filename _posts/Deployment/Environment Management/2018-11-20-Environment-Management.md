@@ -71,7 +71,7 @@ This section of the document will allow you to view and understand the details o
 1) Click on the **Process Flows** tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
 
 - **Process Flow Name:** The name of the process flow, deployed, will be displayed.
-- **Deployed At:** The last deployment of the process flow will be displayed.
+- **Deployed At:** The last deployment of the process flow will be displayed. The time displayed here will be as per the UTC timezone settings in your organization.
 - **No. of tries:** You will be able to view the count of the number of retries performed.
 - **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
 - **Actions** The following actions can be formed for each process flows: 
@@ -192,8 +192,8 @@ Cloud supported. To enable your organisation with cloud support, [Click here.](/
 
 5) Clicking on the created environment, you will be able to view the details page consisting of the following tabs:
 
-- Settings -> You can modify and update the environment setting from this tab
 - Process Flow -> You will be able to view all the deployed process flows, related snapshots, retry, undeploy etc.
+- Settings -> You can modify and update the environment setting from this tab.
 
 For more details on the Environment Details page, [Click Here](/deployment/Easy-Environment-Management/#hosted-environment-details-page)
 
@@ -211,17 +211,9 @@ You will be able to view this page only when you have your hosted environment cr
 
 ![hosteddetails1](\staticfiles\deployment\media\EasyEnv\hosteddetails1.PNG)
 
-1) Clicking on the Hosted environment, will provide you with TWO tabs: **Settings** and **Process Flows**.
+1) Clicking on the Hosted environment, will provide you with TWO tabs: **Process Flows** and **Settings**.
 
-2) You will be able to view the following section when clicked on the [**Settings**](/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise) tab. You can view the following settings panel in the page.
-
-- **[Retry Settings](/deployment/Environment-Management/#retry-setting):** - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
-- **[Log Settings](/deployment/Environment-Management/#log-settings):** You can control the way you want to view and store the logs for every execution on you hosted environment.
-- **[Pending Timeout Settings](/deployment/Environment-Management/#pending-timeout-settings)** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
-   
-![hosteddetails2](\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG)
-
-3) Clicking on the **Process Flow Tab** You can view all the Process Flow those are deployed on that environment. 
+2) Clicking on the **Process Flow Tab** You can view all the Process Flow those are deployed on that environment. 
 The following are the details that will displayed for deployed Process Flows. 
 - **Process Flow Name:** The name of the process flow, deployed, will be displayed.
 - **Deployed At:** The last deployment of the process flow will be displayed.
@@ -233,8 +225,15 @@ The following are the details that will displayed for deployed Process Flows.
     - **[View Snapshot](/processflow/snapshot-processflow/)**  - This will enable you view the snapshot for a process flow that is executed.
     - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
 
+![hosteddetails3](\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG)  
 
-![hosteddetails3](\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG)
+3) You will be able to view the following section when clicked on the [**Settings**](/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise) tab. You can view the following settings panel in the page.
+
+- **[Retry Settings](/deployment/Environment-Management/#retry-setting):** - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
+- **[Log Settings](/deployment/Environment-Management/#log-settings):** You can control the way you want to view and store the logs for every execution on you hosted environment.
+- **[Pending Timeout Settings](/deployment/Environment-Management/#pending-timeout-settings)** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
+   
+![hosteddetails2](\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG)  
 
 Following the above process, you can easily view and update the details of the Hosted agent.
 
@@ -378,6 +377,8 @@ This feature will store and will enable the user to view the stored deployment l
 **Note: The view for the Last Deployment Log is same for both Hosted and On-Premise environment.**
 
 ![lastdeploylogs](\staticfiles\deployment\media\EasyEnv\lastdeploylogs1.PNG)
+
+**NOTE:The time displayed in last deployed log is similar to the UTC time set for the organization [timezone]()**
 
 ## Environment View for Old Agents
 

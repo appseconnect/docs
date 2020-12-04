@@ -78,9 +78,11 @@ g.	All the created folder will get the options to create a new folder, Rename th
 h.	Folders on deleting would be moved to Trash with a toaster message for successful completion of the delete process.   
 
 
-**Note - Folder name will consist of 50 characters and can have alphanumeric characters. 
+**Note - 
+1) Folder name will consist of 50 characters and can have alphanumeric characters. 
 Name of a folder cannot be same if created on same level. However, folder name can 
-remain same if created on different level.**
+remain same if created on different level.  
+2) Full Folder Name is visible by hovering the tool tip over the folder name**
 
 ### Steps to Rename a Created Folder
 

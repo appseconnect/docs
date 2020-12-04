@@ -28,6 +28,8 @@ a revocable, secure and unique license or a security token that is provided by t
 * Multiple users of the organisation will now be able to login to same as well as different agent environments.
 * A user of an organization will not be able to login to the same environment, if that user is already been linked with any other organization. 
 * Every agent associated with an organisation, will have separate license key for each agent instances in each environment.
+* While updating to Agent Version 4.9.0 & Above, Ensure to run the migration tool for Agent Upgradation.
+
 
 **Note: (a) Agent needs to be dissociated first from the portal, before reassigning the same license key.    
         (b) APPSeCONNECT License Management is compatible even with older versions of the agent**

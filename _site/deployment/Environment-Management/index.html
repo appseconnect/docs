@@ -2747,7 +2747,7 @@
 
 <ul>
   <li><strong>Process Flow Name:</strong> The name of the process flow, deployed, will be displayed.</li>
-  <li><strong>Deployed At:</strong> The last deployment of the process flow will be displayed.</li>
+  <li><strong>Deployed At:</strong> The last deployment of the process flow will be displayed. The time displayed here will be as per the UTC timezone settings in your organization.</li>
   <li><strong>No. of tries:</strong> You will be able to view the count of the number of retries performed.</li>
   <li><strong>Status</strong> The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.</li>
   <li><strong>Actions</strong> The following actions can be formed for each process flows:
@@ -2881,8 +2881,8 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
 <p>5) Clicking on the created environment, you will be able to view the details page consisting of the following tabs:</p>
 
 <ul>
-  <li>Settings -&gt; You can modify and update the environment setting from this tab</li>
   <li>Process Flow -&gt; You will be able to view all the deployed process flows, related snapshots, retry, undeploy etc.</li>
+  <li>Settings -&gt; You can modify and update the environment setting from this tab.</li>
 </ul>
 
 <p>For more details on the Environment Details page, <a href="/deployment/Easy-Environment-Management/#hosted-environment-details-page">Click Here</a></p>
@@ -2907,19 +2907,9 @@ Cloud supported. To enable your organisation with cloud support, <a href="/deplo
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails1.PNG" alt="hosteddetails1" /></p>
 
-<p>1) Clicking on the Hosted environment, will provide you with TWO tabs: <strong>Settings</strong> and <strong>Process Flows</strong>.</p>
+<p>1) Clicking on the Hosted environment, will provide you with TWO tabs: <strong>Process Flows</strong> and <strong>Settings</strong>.</p>
 
-<p>2) You will be able to view the following section when clicked on the <a href="/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise"><strong>Settings</strong></a> tab. You can view the following settings panel in the page.</p>
-
-<ul>
-  <li><strong><a href="/deployment/Environment-Management/#retry-setting">Retry Settings</a>:</strong> - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.</li>
-  <li><strong><a href="/deployment/Environment-Management/#log-settings">Log Settings</a>:</strong> You can control the way you want to view and store the logs for every execution on you hosted environment.</li>
-  <li><strong><a href="/deployment/Environment-Management/#pending-timeout-settings">Pending Timeout Settings</a></strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.</li>
-</ul>
-
-<p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG" alt="hosteddetails2" /></p>
-
-<p>3) Clicking on the <strong>Process Flow Tab</strong> You can view all the Process Flow those are deployed on that environment. 
+<p>2) Clicking on the <strong>Process Flow Tab</strong> You can view all the Process Flow those are deployed on that environment. 
 The following are the details that will displayed for deployed Process Flows.</p>
 <ul>
   <li><strong>Process Flow Name:</strong> The name of the process flow, deployed, will be displayed.</li>
@@ -2937,6 +2927,16 @@ The following are the details that will displayed for deployed Process Flows.</p
 </ul>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG" alt="hosteddetails3" /></p>
+
+<p>3) You will be able to view the following section when clicked on the <a href="/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise"><strong>Settings</strong></a> tab. You can view the following settings panel in the page.</p>
+
+<ul>
+  <li><strong><a href="/deployment/Environment-Management/#retry-setting">Retry Settings</a>:</strong> - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.</li>
+  <li><strong><a href="/deployment/Environment-Management/#log-settings">Log Settings</a>:</strong> You can control the way you want to view and store the logs for every execution on you hosted environment.</li>
+  <li><strong><a href="/deployment/Environment-Management/#pending-timeout-settings">Pending Timeout Settings</a></strong> - Users will be provided with the <strong>Frequency of Pending Timeout</strong> field in which users can provide with a timeout time period for a pending deployment process to suspend.</li>
+</ul>
+
+<p><img src="\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG" alt="hosteddetails2" /></p>
 
 <p>Following the above process, you can easily view and update the details of the Hosted agent.</p>
 
@@ -3107,6 +3107,8 @@ the deleted agent now will be visible in attached mode in the portal.</strong></
 <p><strong>Note: The view for the Last Deployment Log is same for both Hosted and On-Premise environment.</strong></p>
 
 <p><img src="\staticfiles\deployment\media\EasyEnv\lastdeploylogs1.PNG" alt="lastdeploylogs" /></p>
+
+<p><strong>NOTE:The time displayed in last deployed log is similar to the UTC time set for the organization <a href="">timezone</a></strong></p>
 
 <h2 id="environment-view-for-old-agents">Environment View for Old Agents</h2>
 

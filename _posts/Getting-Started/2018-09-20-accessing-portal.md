@@ -36,7 +36,7 @@ Let us walkthrough the Functional Modules for understanding the usage and need o
 
 **For Older users, the old DASHBOARD page is the new HOME page of the APPSeCONNECT portal**
 
-The **Home page** is the default page which you can view after logging in to the APPSeCONNECT portal. In this page you can see the snapshot of the project at a glance with respect to the activities of the user. 
+The **Home page** is the default page which you can view after logging in to the APPSeCONNECT portal. In this page you can see the snapshot of the project at a glance with respect to the activities of the user.   
 ![Dashboard](/staticfiles/root/media/Dashboard.png)
 
 The Home page view captures the following information- 
@@ -161,7 +161,6 @@ This section will allow you to manage the applications, connection, rules and ot
 that will be available to you under the **MANAGE** section.
 
 ![manage1](\staticfiles\root\media\manage1.PNG)
-
 
 ### Users
 
@@ -379,6 +378,8 @@ In the Personal Info tab, you can edit your name, mobile number.
 * The **Privacy Setting section** allows you to agree/disagree with the privacy policy. Basic privacy policy includes - Subscribing to Email Notifications & Acceptance of Terms & Condition.
 * The **Security Setting** enables you to handle all the security related settings like password expiry time set, account deactivation and updating encryption policy. 
 ![SecuritySettings](/staticfiles/root/media/SecuritySettings.png)
+* The **TimeZone Settings** enables you to set the timezone in UTC as per your preferred location
+in the organization. Select the UTC time from the dropdown list and click SAVE option.
 
 
 ### (b) My Subscription
