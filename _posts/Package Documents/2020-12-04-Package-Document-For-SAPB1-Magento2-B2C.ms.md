@@ -9,7 +9,7 @@ Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your 
 - Version Number – 1.0.0 
 - Package Name - SAP B1 and Magento2 B2B Package 
 - Created By –  INSYNC Solutions
-- Last Modified - 07/12/2020 01:40:46 PM (Date & Time)
+- Last Modified - 07/12/2020 07:28:30 PM (Date & Time)
 - Apps Used in the Package – App Icons/names
 
 ## Package Key Features
