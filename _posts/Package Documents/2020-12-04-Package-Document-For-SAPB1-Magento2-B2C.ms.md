@@ -167,6 +167,7 @@ Follow the documentation of Reference Tables for reference. The lookups listed b
 ## Field Mapping Information:
 
 The ProcessFlows in this package are pre-implemented with the field mappings that will let you just to plug and play the integrations. The mapped attributes will let your Source App sync data in required fields of your Destination App minimizing sync errors and maximizing data integration efficiency. 
+
 However the mappings can always be customized and may require, usage of variables as per your need of any variable type. These variables store sync related data that can be used later in the mapping for the transformation process. These variables can be of multiple datatypes, as per your usage. Check [Docs](https://docs.appseconnect.com/processflow/defining-variables-in-processflow-mapping/) for more details on variable creation.
 
 **1. Process Flow: Business Partner Add**
@@ -183,15 +184,15 @@ However the mappings can always be customized and may require, usage of variable
 | BPAddresses| - | `{{$CustomerAddresses/item}}`|
 | BPAddresses| row | `{{item}}`|
 | BPAddresses| City | `{{city}}`|
-| BPAddresses Country | `{{country_id}}`|
-| BPAddresses AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}`|
-| BPAddresses ZipCode | `{{postcode}}`|
-| BPAddresses Street | `{{street/item[1]}}`|
-| BPAddresses State | ` {{region/region_code}}`|
+| BPAddresses| Country | `{{country_id}}`|
+| BPAddresses| AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}`|
+| BPAddresses| ZipCode | `{{postcode}}`|
+| BPAddresses| Street | `{{street/item[1]}}`|
+| BPAddresses| State | ` {{region/region_code}}`|
 | BPAddresses| AddressType | `[choose] [when] ({{default_billing}}='true') bo_BillTo [endwhen] [when] ({{default_shipping}}='true') bo_ShipTo [endwhen] [otherwise] bo_ShipTo [endotherwise] [endchoose]`|
-| BPAddresses Block | `{{street/item[2]}}`|
+| BPAddresses| Block | `{{street/item[2]}}`|
 | BPAddresses| U_WBCUSTADDID | `{{id}}`|
-| BPAddresses U_TelNo | {{telephone}}`|
+| BPAddresses| U_TelNo | `{{telephone}}`|
 
 **2. Process Flow: Simple Product Add**
 
@@ -354,7 +355,7 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 
 •	Extension: NAV Extension comprises of a package containing .fob files & XML files.
 
-You need to import below listed .fob files
+**You need to import below listed .fob files**
 
 •	table
 
@@ -364,13 +365,13 @@ You need to import below listed .fob files
 
 •	xmlport
 
-You need to import below listed XML Files
+**You need to import below listed XML Files**
 
 •	Application Id
 
 •	Webservices
 
-Description: This extension details are enlisted below:
+**Description: This extension details are enlisted below:**
 
 •	Table: This fob file enables to add additional fields in the NAV Tables, which is required for integration.
 
@@ -388,7 +389,7 @@ Description: This extension details are enlisted below:
 ProcessFlows in this package have no direct dependencies with Adapter Compatibility. Anytime on deploying your ProcessFlow, the latest adapter set in APPSeCONNECT Portal will be downloaded against the applications selected.
 
 ## Environment Selection
-This [package] is pre-implemented with all the configurations and mappings. To deploy the ProcessFlows you are required to select the environment in which your business flow will be deployed. Your Environments are needed to be setup before the deploying process. 
+This package is pre-implemented with all the configurations and mappings. To deploy the ProcessFlows you are required to select the environment in which your business flow will be deployed. Your Environments are needed to be setup before the deploying process. 
 Checkout the details below to setup, your choice of environment.
 
 **On-Premise Setup:**
