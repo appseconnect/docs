@@ -9,7 +9,7 @@ Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your 
 - Version Number – 1.0.0 
 - Package Name - SAP B1 and Magento2 B2B Package 
 - Created By –  INSYNC Solutions
-- Last Modified - 11/23/2020 6:23:46 AM (Date & Time)
+- Last Modified - 07/12/2020 01:40:46 PM (Date & Time)
 - Apps Used in the Package – App Icons/names
 
 ## Package Key Features
@@ -171,27 +171,111 @@ However the mappings can always be customized and may require, usage of variable
 
 **1. Process Flow: Business Partner Add**
 
-|Attribute|Mapping|  
-|-------|-----------------------------------------------------|
-| CardCode | `{{id}}`|
-| EmailAddress | `{{email}}`|
-| CardName | `{{concat(firstname,' ',lastname)}}`|
-| City | `{{city}}`|
-| Country | `{{country_id}}`|
-| AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}`|
-| ZipCode | `{{postcode}}`|
-| Street | `{{street/item[1]}}`|
-| State | ` {{region/region_code}}`|
-| AddressType | `[choose] [when] ({{default_billing}}='true') bo_BillTo [endwhen] [when] ({{default_shipping}}='true') bo_ShipTo [endwhen] [otherwise] bo_ShipTo [endotherwise] [endchoose]`|
-| Block | `{{street/item[2]}}`|
-| U_WBCUSTADDID | `{{id}}`|
-| U_TelNo | {{telephone}}`|
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+| BusinessPartners| CardCode | `{{id}}`|
+| BusinessPartners| EmailAddress | `{{email}}`|
+| BusinessPartners| CardName | `{{concat(firstname,' ',lastname)}}`|
+| BusinessPartners| U_WBCUSTGR| `{{group_id}}`|
+| BusinessPartners| U_GENDER | `{{gender}}` |
+| BusinessPartners| U_WEBSITE | `[destinationlib:GetMasterDataValue('U_Name','website','U_Code',{{website_id}})]`|
+| BusinessPartners| U_WEB_FLAG | `Y`|
+| BPAddresses| - | `{{$CustomerAddresses/item}}`|
+| BPAddresses| row | `{{item}}`|
+| BPAddresses| City | `{{city}}`|
+| BPAddresses Country | `{{country_id}}`|
+| BPAddresses AddressName | `{{$AddressesNames//Item[position()=$addresposition]/names}}`|
+| BPAddresses ZipCode | `{{postcode}}`|
+| BPAddresses Street | `{{street/item[1]}}`|
+| BPAddresses State | ` {{region/region_code}}`|
+| BPAddresses| AddressType | `[choose] [when] ({{default_billing}}='true') bo_BillTo [endwhen] [when] ({{default_shipping}}='true') bo_ShipTo [endwhen] [otherwise] bo_ShipTo [endotherwise] [endchoose]`|
+| BPAddresses Block | `{{street/item[2]}}`|
+| BPAddresses| U_WBCUSTADDID | `{{id}}`|
+| BPAddresses U_TelNo | {{telephone}}`|
 
 **2. Process Flow: Simple Product Add**
 
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+| product| UploadURL | products|
+| product| sku | `{{dis:ItemCode}}` |
+| product| name | `{{dis:ItemName}}` |
+| product| price | `{{$itemDetailsRead//dis:ItemPrices//dis:ItemPrice[dis:PriceList =1]//dis:Price}}`|
+| product| status | `[choose] [when] ({{$webitemdetail//dis:U_IsEnbl}}='Y') 1 [endwhen] [otherwise] 2 [endotherwise] [endchoose]` |
+| product| attribute_set_id| `[sourcelib:GetMasterDataValue('U_Code','attributeset','U_Name',{{$webitemdetail//dis:U_AttrSet}})]`|
+| product| visibility | `[choose] [when] ({{$webitemdetail//dis:U_IsVisbl}}='Y') 4 [endwhen] [otherwise] 1 [endotherwise] [endchoose]`|
+| product| type_id| simple |
+| product| custom_attributes| `{{$productAttributes//Item[value!='']}}`|
+| product| attribute_code | `{{attribute_code}}`|
+| product| value | `:=loop {{.}} : {{value//item}}`|
+| extension_attributes| weight | `{{format-number($itemDetailsRead//dis:SalesUnitWeight,'.00')}}`|
+| product_links| - | `{{$productDetails/item[sku!='']}}` |
+| product_links| sku | `{{$itemSKU}}`|
+| product_links| link_type | `{{type}}`|
+| product_links| linked_product_sku| `{{sku}}` |
+ 
 **3. Process Flow: Simple Product Update**
 
-**4. Process Flow: Sales Order Add**
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+| product| UploadURL | `{{concat('products/',dis:ItemCode)}}`|
+| product| sku | `{{dis:ItemCode}}` |
+| product| name | `{{dis:ItemName}}` |
+| product| price | `{{$itemDetailsRead//dis:ItemPrices//dis:ItemPrice[dis:PriceList =1]//dis:Price}}`|
+| product| status | `[choose] [when] ({{$webitemdetail//dis:U_IsEnbl}}='Y') 1 [endwhen] [otherwise] 2 [endotherwise] [endchoose]` |
+| product| attribute_set_id| `[sourcelib:GetMasterDataValue('U_Code','attributeset','U_Name',{{$webitemdetail//dis:U_AttrSet}})]`|
+| product| visibility | `[choose] [when] ({{$webitemdetail//dis:U_IsVisbl}}='Y') 4 [endwhen] [otherwise] 1 [endotherwise] [endchoose]`|
+| product| type_id| simple |
+| product| custom_attributes| `{{$productAttributes//Item[value!='']}}`|
+| product| attribute_code | `{{attribute_code}}`|
+| product| value | `:=loop {{.}} : {{value//item}}`|
+| extension_attributes| weight | `{{format-number($itemDetailsRead//dis:SalesUnitWeight,'.00')}}`|
+| product_links| - | `{{$productDetails/item[sku!='']}}` |
+| product_links| sku | `{{$itemSKU}}`|
+| product_links| link_type | `{{type}}`|
+| product_links| linked_product_sku| `{{sku}}` |
+    
+**4. Process Flow: Order Add**
+
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+| DocumentsAdditionalExpenses| - | `{{$magentoShippingDetails//item[value1!='']}}`|
+| DocumentsAdditionalExpenses| LineTotal | `{{value2}}`|
+| DocumentsAdditionalExpenses| ExpenseCode| `{{value1}}`|
+| DocumentsAdditionalExpenses| TaxCode| `[choose] [when] (value3 != '' and $shippingTaxAmount !='0') {{value3}} [endwhen] [otherwise] exempt [endotherwise] [endchoose]`|
+| DocumentsAdditionalExpenses| VatGroup| `[choose] [when] (value3 != '' and $shippingTaxAmount !='0') {{value3}} [endwhen] [otherwise] exempt [endotherwise] [endchoose]`|
+| Documents| PayToCode| `[if] ($varBillToCode!='') {{$varBillToCode}} [endif]`|
+| Documents| ShipToCode| `[if] ($varShipToCode!='') {{$varShipToCode}} [endif]`|
+| Documents| U_SYNCFLAG| `T`|
+| Documents| U_Coupon| `{{coupon_code}}`|
+| Documents| CardCode| `[choose] [when] ({{$guestId}} = '1') [destinationlib:GetFieldValue('select DfltCard from OACP','DfltCard')] [endwhen] [when] ({{$CustomerEmailQuery}} = '') [destinationlib:GetFieldValueByCondition('CardCode','OCPR','E_MailL',customer_email,'','')] [endwhen] [otherwise] {{$CustomerEmailQuery}} [endotherwise] [endchoose]`|
+| Documents| DocObjectCode| `17`|
+| Documents| DocDate| `[destinationlib:getDateFormat({{created-at}})]`|
+| Documents| DocDueDate| `[destinationlib:getDateFormat({{created-at}})]`|
+| Documents| DocDueDate| `[destinationlib:getDateFormat({{created-at}})]`|
+| Documents| NumAtCard| `{{increment_id}}`|
+| Documents| U_NumAtCard| `{{increment_id}}`|
+| Documents| U_PAYMETH| `{{payment/method}}`|
+| Document_Lines| - | `{{$SalesOrderItems/item}}`|
+| Document_Lines| U_WebOrderItemId|`{{item_id}}`|
+| Document_Lines| ItemCode| `{{$ProductSKU}}`|
+| Document_Lines| UnitPrice| `[choose] [when] ({{$BundlePriceType}}= 'Fixed') {{price}} [endwhen] [otherwise] 0 [endotherwise] [endchoose]`|
+| Document_Lines| Quantity| `{{qty_ordered}}`|
+| Document_Lines| TaxCode| `[choose] [when] ({{$orderTax}}= '') exempt [endwhen] [otherwise] {{$orderTax}} [endotherwise] [endchoose]`|
+| Document_Lines| VatGroup| `[choose] [when] ({{$orderTax}}= '') exempt [endwhen] [otherwise] {{$orderTax}} [endotherwise] [endchoose]`|
+| Document_Lines| DiscountPercent| `[choose] [when] ({{discount_amount}}= '0') 0 [endwhen] [otherwise] {{(discount_amount*100)div(price)div(qty_ordered)}} [endotherwise] [endchoose]`|
+| AddressExtension| ShipToState| `{{destinationlib:GetUniqueId('Code','OCST','Country',extension_attributes//shipping/address/country_id,'Name',extension_attributes//shipping/address/region,'','')}}`|
+| AddressExtension| BillToState| `{{destinationlib:GetUniqueId('Code','OCST','Country',billing_address/country_id,'Name',billing_address/region,'','')}}`|
+| AddressExtension| ShipToStreet| `{{extension_attributes//shipping/address/street/item[1]}}`|
+| AddressExtension| ShipToBlock| `{{extension_attributes//shipping/address/street/item[2]}}`|
+| AddressExtension| ShipToCity| `{{extension_attributes//shipping/address/city}}`|
+| AddressExtension| ShipToZipCode| `{{extension_attributes//shipping/address/postcode}}`|
+| AddressExtension| ShipToCountry| `{{extension_attributes//shipping/address/country_id}}`|
+| AddressExtension| BillToStreet| `{{billing_address/street/item[1]}}`|
+| AddressExtension| BillToBlock| `{{billing_address/street/item[2]}}`|
+| AddressExtension| BillToCity| `{{billing_address/city}}`|
+| AddressExtension| BillToZipCode| `{{billing_address/postcode}}`|
+| AddressExtension| BillToCountry| `{{billing_address/country_id}}`|
 
 **5. Process Flow: Invoice Add**
 
