@@ -116,7 +116,7 @@ The Sales Order ProcessFlow is equipped of integrating the details of the custom
 
 -	**Invoice Add:** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the Invoices raised against the Sales Order Generated. The flow syncs the Item SKU, Quantity, and the Order Details to your destination application. Invoice Add is also equipped with a Post Acknowledgement task that integrates Sync Back Invoice Flag details back to your Source Application. 
+i.	Flow Description: This ProcessFlow is featured to sync the Invoices raised against the Sales Order Generated. The flow syncs the Item SKU, Quantity, and the Order Details to your destination application. Invoice Add is also equipped with a Post Acknowledgement task that integrates Sync Back Invoice Flag details back to your Source Application. Also, the ProcessFlow Invoice Add is featured to sync the payment type made for each invoice be it **Payment through Cash**, **Payment through Bank transfer**, **Payment thorugh Cheque**
 
 ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order Add 
 The Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
@@ -235,8 +235,37 @@ However the mappings can always be customized and may require, usage of variable
 | product_links| sku | `{{$itemSKU}}`|
 | product_links| link_type | `{{type}}`|
 | product_links| linked_product_sku| `{{sku}}` |
+
+**4. Process Flow: Inventory Update**
+
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+|stockItem| itemId| `{{dis:U_WebID}}`|
+|stockItem| productId| `{{dis:U_WebID}}`|
+|stockItem| qty| `{{dis:OnHand}}`|
+|stockItem| isinStock| `true`|
+|stockItem| isQtyDecimal| `true`|
+|stockItem| useConfigMinQty| `true`|
+|stockItem| minQty| `0`|
+|stockItem| useConfigMinSaleQty| `0`|
+|stockItem| minSaleQty| `0`|
+|stockItem| useConfigMaxSaleQty| `true`|
+|stockItem| maxSaleQty| `0`|
+|stockItem| useConfigBackorders| `true`|
+|stockItem| backorders| `0`|
+|stockItem| backorders| `0`|
+|stockItem| useConfigNotifyStockQty| `true`|
+|stockItem| notifyStockQty| `0`|
+|stockItem| qtyIncrements| `0`|
+|stockItem| useConfigEnableQtyInc| `true`|
+|stockItem| enableQtyIncrements| `true`|
+|stockItem| useConfigNotifyStockQty| `true`|
+|stockItem| manageStock| `true`|
+|stockItem| IsDecimalDivided| `true`|
+|stockItem| stockStatusChangedAuto| `true`|
+|stockItem| UploadURL| `{{concat('products/',dis:ItemCode,'/stockItems','/',dis:U_WebID)}}`|
     
-**4. Process Flow: Order Add**
+**5. Process Flow: Order Add**
 
 |Complex Object/Collection|Attribute|Mapping|  
 |-----------------|-------|-----------------------------------------------------|
@@ -278,15 +307,69 @@ However the mappings can always be customized and may require, usage of variable
 | AddressExtension| BillToZipCode| `{{billing_address/postcode}}`|
 | AddressExtension| BillToCountry| `{{billing_address/country_id}}`|
 
-**5. Process Flow: Invoice Add**
+**6. Process Flow: Invoice Add**
 
-**6. Process Flow: Delivery/Shipment Add**
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+|Documents|DocTotal|`{{base_grand_total}}`|
+|Documents|CardCode|`{{$orderdetails//dis:Document/dis:CardCode}}`|
+|Documents|DocObjectCode|`13`|
+|Documents|DocDate|`[destinationlib:getDateFormat({{created_at}})]`|
+|Documents|DocDueDate|`[destinationlib:getDateFormat({{created_at}})]`|
+|Documents|ReserveInvoice|`[choose] [when] ({{$deliveryDocentry}}='0') tYES [endwhen] [otherwise] tNO [endotherwise] [endchoose]`|
+|Documents|U_InvoiceId| `{{increment_id}}`|
+|Document_Lines|-| `{{items/item[price!='0']}}`|
+|Document_Lines|ItemCode| `{{sku}}`|
+|Document_Lines|UnitPrice| `{{price}}`|
+|Document_Lines|Quantity| `{{qty}}`|
+|Document_Lines|TaxCode| `{{$orderdetails//dis:Document//dis:DocumentLines/dis:DocumentLine[dis:U_WebOrderItemId=$curItmId]//dis:TaxCode}}`|
+|Document_Lines|VatGroup| `{{$orderdetails//dis:Document//dis:DocumentLines/dis:DocumentLine[dis:U_WebOrderItemId=$curItmId]//dis:TaxCode}}`|
+|Document_Lines|BaseLine| `{{$orderdetails//dis:Document//dis:DocumentLines/dis:DocumentLine[dis:U_WebOrderItemId=$curItmId]//dis:LineNum}}`|
+|Document_Lines|BaseType| `[choose] [when] ({{$deliveryDocentry}}='0') 17 [endwhen] [otherwise] 15 [endotherwise] [endchoose]`|
+|Document_Lines|BaseEntry| `[choose] [when] ({{$deliveryDocentry}}='0') {{$ordrdocentry}} [endwhen] [otherwise] {{$deliveryDocentry}} [endotherwise] [endchoose]`|
+|DocumentsAdditionalExpenses|-| `{{$shipmentCollections/Item}}`|
+|DocumentsAdditionalExpenses|ExpenseCode| `{{$orderdetails//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:ExpenseCode}}`|
+|DocumentsAdditionalExpenses|LineTotal| `{{$orderdetails//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:LineTotal}}`|
+|DocumentsAdditionalExpenses|TaxCode| `{{$orderdetails//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:LineTotal}}`|
+|DocumentsAdditionalExpenses|VatGroup| `{{$orderdetails//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:LineTotal}}`|
+|DocumentsAdditionalExpenses|BaseDocEntry| `[choose] [when] ({{$deliveryDocentry}}='0') {{$ordrdocentry}} [endwhen] [otherwise] {{$deliveryDocentry}} [endotherwise] [endchoose]`|
+|DocumentsAdditionalExpenses|BaseDocType| `[choose] [when] ({{$deliveryDocentry}}='0') 17 [endwhen] [otherwise] 15 [endotherwise] [endchoose]`|
+|DocumentsAdditionalExpenses|BaseDocLine| `0`|
 
-**7. Process Flow: Bundle Product Add**
+**7. Process Flow: Delivery/Shipment Add**
 
-**8. Process Flow: Configurable Product Add**
+|Complex Object/Collection|Attribute|Mapping|  
+|-----------------|-------|-----------------------------------------------------|
+|Documents|CardCode|`{{$orderDetails//dis:Document/dis:CardCode}}`|
+|Documents|DocDate|`[destinationlib:getDateFormat(created_at)]`|
+|Documents|DocDueDate|`[destinationlib:getDateFormat(created_at)]`|
+|Documents|CardName|`{{$orderDetails//dis:Document/dis:CardName}}`|
+|Documents|TrackingNumber|`{{tracks/item[order_id=$orderId]/track_number}}`|
+|Documents|U_DeliveryId|`{{increment_id}}`|
+|Document_Lines|-|`{{items/item}}`|
+|Document_Lines|ItemCode|`{{sku}}`|
+|Document_Lines|UnitPrice|`{{price}}`|
+|Document_Lines|Quantity|`{{price}}`|
+|Document_Lines|TaxCode|`{{$orderDocumentData//dis:DocumentLines/dis:DocumentLine[dis:U_WebOrderItemId=$curItmId]/dis:TaxCode}}`|
+|Document_Lines|VatGroup|`{{$orderDocumentData//dis:DocumentLines/dis:DocumentLine[dis:U_WebOrderItemId=$curItmId]/dis:VatGroup}}`|
+|Document_Lines|BaseLine|`{{$orderDocumentData//dis:DocumentLines/dis:DocumentLine[dis:U_WebOrderItemId=$curItmId]/dis:LineNum}}`|
+|Document_Lines|BaseType|`[choose] [when] ({{$orderDetails//dis:Document/dis:DocumentStatus}}='bost_Open') 17 [endwhen] [otherwise] 13 [endotherwise] [endchoose]`|
+|Document_Lines|BaseEntry|`[choose] [when] ({{$orderDetails//dis:Document/dis:DocumentStatus}}='bost_Open') {{$orderDocentry}} [endwhen] [otherwise] {{$invoiceDocentry}} [endotherwise] [endchoose]`|
+|DocumentAdditionalExpenses|-|`{{$shipmentCollections/Item}}`|
+|DocumentAdditionalExpenses|ExpenseCode|`{{$orderDocumentData//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:ExpenseCode}}`|
+|DocumentAdditionalExpenses|LineTotal|`{{$orderDocumentData//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:ExpenseCode}}`|
+|DocumentAdditionalExpenses|TaxCode|`{{$orderDocumentData//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:ExpenseCode}}`|
+|DocumentAdditionalExpenses|VatGroup|`{{$orderDocumentData//dis:DocumentAdditionalExpenses//dis:DocumentAdditionalExpense[dis:LineNum=0]//dis:ExpenseCode}}`|
+|DocumentAdditionalExpenses|BaseDocEntry|`[choose] [when] ({{$orderDetails//dis:Document/dis:DocumentStatus}}='bost_Open') {{$orderDocentry}} [endwhen] [otherwise] {{$invoiceDocentry}} [endotherwise] [endchoose]`|
+|DocumentAdditionalExpenses|BaseDocType|`[choose] [when] ({{$orderDetails//dis:Document/dis:DocumentStatus}}='bost_Open') 17 [endwhen] [otherwise] 13 [endotherwise] [endchoose]`|
+|DocumentAdditionalExpenses|BaseDocLine|`0`|
 
-**9. Process Flow: Grouped Product Add**
+
+**8. Process Flow: Bundle Product Add**
+
+**9. Process Flow: Configurable Product Add**
+
+**10. Process Flow: Grouped Product Add**
 
 ## Extension Configuration Information:
 
