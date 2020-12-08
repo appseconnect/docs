@@ -29,11 +29,10 @@ This package consists the following configurations details:
 1.	App Authentication Mechanism
 2.	Packaged Processflows & Dependencies
 3.	Action Filter configurations 
-4.	Field/Attribute Mappings 
-5.	LookUp Mapping
-6.	Extensions & Add-On Installation Details
-7.	Environment Setup Parameter 
-8.	Deployment Setup 
+4.	LookUp Mapping
+5.	Extensions & Add-On Installation Details
+6.	Environment Setup Parameter 
+7.	Deployment Setup 
 
 ## App Authentication Mechanism
 
