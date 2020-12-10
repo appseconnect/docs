@@ -56,79 +56,83 @@ Given below are the Transactional Data Configuration Details:
 
 1. **ProcessFlow - Customer Add**
 
-i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone from SAP Business One to Magento2.
+i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The customers will be added from SAP Business One to WooCommerce. The following Customer details will be synced: CardCode, First Name, Last Name, Email, Username, Password, Billing Address, Shipping Address.
+Your ProcessFlow is also featured with a SyncBack as a Post Acknowledgement Task that returns back SyncFlag status & ReturnEntityId back to SAP Business One.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: NA
 
 
 2. **ProcessFlow - Customer Update**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to updated the added Customer Details from SAP Business One to WooCommerce. The following Customer details will be updated: First Name, Last Name, Email, Billing Address, Shipping Address. 
 
-ii.	Dependency flow:
+ii.	Dependency flow: ProcessFlow Customer Add
 
 
 3. **ProcessFlow - Business Partner Add**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured integrate the newly on boarded Customer and their details. The customers will be added from WooCommerce to SAP Business One. The following Customer details will be synced: Customer Id, Email, Name, Contact No, Customer Address, SyncFlag & ReturnEntityId.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: NA
 
 
 4. **ProcessFlow - Business Partner Update**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to update the added Customer details from WooCommerce to SAP Business One. The following Customer details will be updated: Customer Id, Email, Name, Contact No, Customer Address, SyncFlag & ReturnEntityId.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Business Partner Add
 
 
 5. **ProcessFlow - Company Add**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to ADD new onboarded Companies from SAP Business One to WooCommerce for your B2B business. The following details of the Companies will be added: CardCode, First Name, Last Name, Email, Username, Password, Billing Address, Shipping Address.
+Your ProcessFlow is also featured with a SyncBack as a Post Acknowledgement Task that returns back SyncFlag status & ReturnEntityId back to SAP Business One.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: NA
 
 
 6. **ProcessFlow - Company Update**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to update the onboarded Companies from SAP Business One to WooCommerce for your B2B business. The following details of the Companies will be updated: EntityReturnId, First Name, Last Name, Email, Billing Address, Shipping Address.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Company Add
 
 
 7. **ProcessFlow - Contact Person Add**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to sync Contact Persons of the Companies Added. The Operation will be performed from SAP Business One to WooCommerce. The following details will be added: Email, Username & Password.
+Your ProcessFlow is also featured with a SyncBack as a Post Acknowledgement Task that returns back SyncFlag status & ReturnEntityId back to SAP Business One.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Company Add
 
 
 8. **ProcessFlow - Contact Person Update**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to sync the updated details of the Contact Persons added. The Operation will be performed from SAP Business One to WooCommerce. The following details will be updated: Email, Username & Password.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Company Add ; ProcessFlow - Contact Person Add.
 
 
 9. **ProcessFlow - Product Add [Simple]**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to sync Simple Products from SAP Business One to WooCommerce. The following details of the simple products will synced: Product Name, SKU, Product Description, Product Remarks, Product Type, Wieght, Regular Price & Product Dimensions.
+Your ProcessFlow is also featured with a SyncBack as a Post Acknowledgement Task that returns back the ReturnEntityId back to SAP Business One.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: NA
 
 
 10. **ProcessFlow - Product Add**
 
-i.	Flow Description: WooCommerce to SAP
+i.	Flow Description: This ProcessFlow is featured to sync Simple Products from WooCommerce to SAP Business One. The following details of the simple products will be synced: Item Code, Item Name, Product Description, Wieght, Price, Currency, PriceList, Product Dimensions & ReturnEntityId.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: NA
 
 
 11. **ProcessFlow - Product Update**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to sync Simple Products from SAP Business One to WooCommerce. The following details of the simple products will be synced: Item Name, Product Description, Wieght, Regular Price, Stock Quantity, Product Dimensions & ReturnEntityId.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Product Add [Simple]
 
 
 12. **ProcessFlow - PriceLists Add**
@@ -147,9 +151,9 @@ ii.	Dependency flow:
 
 14. **ProcessFlow - Sales Order Add**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFlow is featured to add B2C Sales Orders from WooCommerce to SAP Business One. This ProcessFlow is featured to sync the following details: Customer Details, Order Document Date, Order Id, Order Total, Item Details, Tax Details, Discount.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Business Partner Add ; ProcessFlow - Customer Add ; ProcessFlow - Product Add [Simple]
 
 
 15. **ProcessFlow - Shipment Status Add**
