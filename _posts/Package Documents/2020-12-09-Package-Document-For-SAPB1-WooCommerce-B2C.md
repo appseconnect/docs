@@ -1,25 +1,26 @@
 ## Overview
 
-The package **SAP Business One - WooCommerce B2C** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design. 
+The package **SAP Business One - WooCommerce** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design both for your B2C and B2B Business Module. 
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
 ## Additional Information
 
 - Version Number – 1.0.0 
-- Package Name - Woocommerce and SAP Business One B2C Package 
+- Package Name - Woocommerce and SAP Business One 
 - Created By –  INSYNC Solutions
 - Last Modified - 08/12/2020 07:23:30 PM (Date & Time)
 - Apps Used in the Package – SAP Business One & WooCommerce
 
 ## Package Key Features
 
-**SAP Business One - WooCommerce B2C** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
+**SAP Business One - WooCommerce** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
 Checkout the Key Features of this package, listed below:
 
-1.	Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
-2.	Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically 
-3.	Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
+1. Includes B2B & B2C Support: This package supports and comprises of the ProcessFlows both B2B and B2C at one place supporting both type of Business Module.
+2. Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
+3. Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically 
+4. Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 
 ## Package Tech Specification
 
@@ -137,30 +138,37 @@ ii.	Dependency flow: ProcessFlow - Product Add [Simple]
 
 12. **ProcessFlow - PriceLists Add**
 
-i.	Flow Description: WooCommerce to SAP
+i.	Flow Description: This ProcessFlow is featured to sync the Price Lists from SAP Business One to WooCommerce. The integration process is featured to sync only the list to WooCommerce. 
 
-ii.	Dependency flow: 
-
-
-13. **ProcessFlow - Stock Update**
-
-i.	Flow Description:
-
-ii.	Dependency flow: 
+ii.	Dependency flow: NA
 
 
-14. **ProcessFlow - Sales Order Add**
+13. **ProcessFlow - Product PriceLists Assign**
+
+i.	Flow Description: This ProcessFlow is featured to assign the PriceLists to the respective items from SAP Business One to WooCommerce. The integration process wil sync and assign the Pricelist Id with Product SKU and its Price.
+
+ii.	Dependency flow: ProcessFlow - PriceLists Add
+
+
+14. **ProcessFlow - Stock Update**
+
+i.	Flow Description: This ProcessFlow is featured to update the Stocks On Hand. The operation will be intergated from SAP Business One to WooCommerce. The ReturnEntityId along the with the stocks quantity will be synced to WooCommerce.
+
+ii.	Dependency flow: ProcessFlow - Product Add [Simple]
+
+
+15. **ProcessFlow - Sales Order Add**
 
 i.	Flow Description: This ProcessFlow is featured to add B2C Sales Orders from WooCommerce to SAP Business One. This ProcessFlow is featured to sync the following details: Customer Details, Order Document Date, Order Id, Order Total, Item Details, Tax Details, Discount.
 
 ii.	Dependency flow: ProcessFlow - Business Partner Add ; ProcessFlow - Customer Add ; ProcessFlow - Product Add [Simple]
 
 
-15. **ProcessFlow - Shipment Status Add**
+16. **ProcessFlow - Shipment Status Add**
 
-i.	Flow Description:
+i.	Flow Description: This ProcessFLow is featured to sync the Shipment Status agaisnt your generated order from SAP Business One to WooCommerce. The ProcessFlow will sync the Shipment Status against Order ReturnEntityId.
 
-ii.	Dependency flow: 
+ii.	Dependency flow: ProcessFlow - Sales Order Add
 
 
 ## Action Filter configurations:
