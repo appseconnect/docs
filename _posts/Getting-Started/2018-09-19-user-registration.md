@@ -77,8 +77,15 @@ You require to sign up for an account with APPSeCONNECT Community.
 6.	Once the changes are saved, user needs to re-login to the portal with the new password.  
 7.	Once logged in, APPSeCONNECT would ask to accept the License Agreement. Users can opt for reading the details by clicking on the provided links.  
 ![newcustomer_registration5](/staticfiles/root/media/newcustomer_registration5.png)  
-8.	Once accepted, the user would be able to view the account profile details. Click on organisation tab, and this will navigate the user to the [Organisation Dashboard](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#a-accessing-organization-dashboard).   
-9.	Here you can view the other [Organisation modules](https://docs.appseconnect.com/accessing%20portal/accessing-portal/) available for every organisation.  
+8. Now you will be directed to the `PhoneNumber`setting screen. Select Country/Region
+from the drop down list & Input your phone number.Click on Add Button to Add the phone number
+or skip button to skip the section. 
+![addphone_number](/staticfiles/root/media/addphone_number.png)   
+(a) Incase of erroneous phone number you will get an error message on screen    
+(b) You can also Enable Two Factor Authentication by clicking on the check box. This will
+send a verification code to your registered number.    
+9.	Once accepted, the user would be able to view the account profile details. Click on organisation tab, and this will navigate the user to the [Organisation Dashboard](https://docs.appseconnect.com/accessing%20portal/accessing-portal/#a-accessing-organization-dashboard).   
+10.	Here you can view the other [Organisation modules](https://docs.appseconnect.com/accessing%20portal/accessing-portal/) available for every organisation.  
 
 **Note: The newly created organisation will be a Trail Account by default, available only for 31days. However, SuperAdmins of APPSeCONNECT 
 can promote the newly created organisation to a fully-fledged organisation by upgrading the Organisation Status to Live.** 
