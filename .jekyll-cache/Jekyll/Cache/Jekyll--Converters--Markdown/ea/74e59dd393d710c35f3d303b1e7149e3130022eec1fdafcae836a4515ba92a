@@ -1,0 +1,38 @@
+I"ç<ul class="toc__menu">
+  <li><a href="#pre-requisites">Pre-requisites</a></li>
+  <li><a href="#on-premise">On-Premise</a>
+    <ul>
+      <li><a href="#on-premise-environment-details-page">On-Premise Environment Details page</a></li>
+      <li><a href="#grouping-of-on-premise-environments">Grouping of On-Premise Environments</a></li>
+    </ul>
+  </li>
+  <li><a href="#hosted">Hosted</a>
+    <ul>
+      <li><a href="#create-hosted-environment">Create Hosted Environment</a></li>
+      <li><a href="#hosted-environment-details-page">Hosted Environment Details page</a></li>
+    </ul>
+  </li>
+  <li><a href="#settings-tab-on-details-page-hosted--on-premise">SETTINGS tab on Details Page: Hosted &amp; On-Premise</a>
+    <ul>
+      <li><a href="#retry-setting">Retry Setting</a></li>
+      <li><a href="#log-settings">Log Settings</a></li>
+      <li><a href="#real-time-settings">Real Time Settings</a></li>
+      <li><a href="#pending-timeout-settings">Pending Timeout Settings</a></li>
+      <li><a href="#diagnostic-settings">Diagnostic Settings</a></li>
+    </ul>
+  </li>
+  <li><a href="#manage-control-of-environments">Manage Control of Environments</a></li>
+  <li><a href="#detaching--deleting-the-environments">Detaching &amp; Deleting the Environments</a>
+    <ul>
+      <li><a href="#attachdetach-of-environments">Attach/Detach of Environments</a></li>
+      <li><a href="#deleting-environments">Deleting Environments</a></li>
+    </ul>
+  </li>
+  <li><a href="#last-deployment-log">Last Deployment Log</a></li>
+  <li><a href="#environment-view-for-old-agents">Environment View for Old Agents</a>
+    <ul>
+      <li><a href="#working-with-the-agent-settings-panel-in-old-agent">Working with the Agent Settings Panel in Old Agent</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

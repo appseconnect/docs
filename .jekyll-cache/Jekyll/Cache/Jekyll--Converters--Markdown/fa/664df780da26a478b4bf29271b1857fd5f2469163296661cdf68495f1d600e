@@ -1,0 +1,91 @@
+I"ö<p>Product Release Version: 3.8.0 <br />
+Release notes were published and last revised in April 2018. 
+Updates in this release includes introduction to New features, 
+Portal &amp; Integration, Enhancements, Adapters, Extensions, Agents and Product Documentation.</p>
+
+<p>Log in to <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">portal</a> to access the latest version of
+of APPSeCONNECT AGENT, PLUGINS, ADAPTERS.</p>
+
+<p>The following section list the updates on APPSeCONNECT, as on April 2018 release.</p>
+
+<p><strong>Highlights of the release features are mentioned below</strong>.</p>
+
+<h2 id="new-apps-supported">New Apps Supported</h2>
+
+<ul>
+  <li>Acumatica</li>
+  <li>Microsoft Dynamics GP</li>
+  <li>Micsosoft Dynamics 365 CRM</li>
+  <li>ePages</li>
+  <li>OroCommerce</li>
+</ul>
+
+<h2 id="new-features--enhancements">New Features &amp; Enhancements</h2>
+<p><strong>Agent</strong></p>
+
+<p><strong>New Action Clean-Up on Rules</strong>  <br />
+This will allow you to perform a regular cleanup job on the platform whenever there is a low disk space or there is memory pressure. 
+The cleanup ensures that the application runs smoothly over longer time.</p>
+
+<p><strong>Portal</strong></p>
+
+<p><strong>Cloud Execution of Touchpoint from Web</strong>  <br />
+Users can now sync, re-sync, filter, purge, delete, schedule data for touchpoint 
+from the portal, so that all the on-premise activities can be performed for cloud 
+agent with ease.</p>
+
+<p><strong>Cloud-to-Cloud</strong><br />
+<strong>Smart UI for App Credential</strong>
+You can now design the UI Credential page for application as defined in the adapter. 
+This feature will help an implementer to develop a smart UI such that they can design 
+and deliver the cloud-based credential screen to its customers.</p>
+
+<p><strong>Organization Specific App Credential</strong> <br />
+This feature will give its users an option to view the Application specific credential 
+data for all cloud-supported apps while designing the Smart UI page.</p>
+
+<p><strong>Migration of Admin APIs to Service fabric.</strong> <br />
+This feature will help its users to get the benefits service fabric for easy 
+deployment, packaging, upgrading of scalable applications that run on a cluster or 
+shared pool of machines.</p>
+
+<p><strong>Execution Calculator</strong> <br />
+This feature will allow you to keep track of no. of touchpoint executions in auto 
+mode for a specified interval of time.</p>
+
+<p><strong>Environment Setup for cloud hosted application</strong> <br />
+This feature will allow its users to create separate cloud environment for projects 
+where cloud hosting is enabled.</p>
+
+<p><strong>Credential Creation for Cloud Hosting Apps in Base</strong> <br />
+Smart UI Credential designer and creator form is given to users for feeding the 
+credentials of cloud-hosted applications in the base.</p>
+
+<p><strong>Connection Setup feature and activation</strong><br />
+This will allow you to have a separate pop up window to choose the credentials that are provided for cloud-hosted apps from the connection page of the organization. To access this feature, cloud environment needs to be activated beforehand. Connection Activation or Deployment in Cloud Agent from Portal.</p>
+
+<p><strong>Smart Credentials UI Designer</strong>   <br />
+This will provide you with controls that are draggable to generate the smart form in
+WYSIWYG way. Each control has some pre-defined properties that can be set for the 
+design.</p>
+
+<p><strong>Search Criteria in Feeds Page</strong>   <br />
+This feature has been included for Audit Trail so that feeds can be filtered out 
+easily using date and topic filters.</p>
+
+<h2 id="integration-enhancements">Integration Enhancements</h2>
+
+<ul>
+  <li>LightSpeedPOS-Shopify</li>
+  <li>SAPB1-Magento2B2B</li>
+  <li>SAPB1-BigCommerce</li>
+  <li>SAPB1-OroCommerce</li>
+  <li>SAPB1SL-ePages</li>
+  <li>DynamicsGP-Shopify</li>
+  <li>Acumatica-Shopify</li>
+  <li>Dynamics 365 CRM-WooCommerce</li>
+</ul>
+
+<p>As always for any support, please <a href="support@appseconnect.com">mail us</a></p>
+
+:ET

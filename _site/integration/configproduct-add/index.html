@@ -2577,31 +2577,31 @@ In this integration scenario, multiple connections have been made for transforma
   <li>Login to the Ms Dynamics NAV Client and create a new item from the Items Page.</li>
   <li>Provide the details of the item say the Item No., Item description and the Unit of Measure.</li>
   <li>Input the details for multiple connections that can be selected from the drop down of the <strong>Web Product Details CP page</strong> 
-and select the <code class="highlighter-rouge">ConnectionName, ApplicationName, WebAttributeSetId, WebTaxClassId</code> and enable the checkbox for <code class="highlighter-rouge">WebItemFlag</code>. 
-Also, select the <code class="highlighter-rouge">WebProductType</code> as Configurable from the dropdown.</li>
-  <li>Navigate to the <strong>Web ProductWebsites Page</strong> and select the <code class="highlighter-rouge">ConnectionName &amp; the WebsiteID</code> from the Drop-down.</li>
+and select the <code class="language-plaintext highlighter-rouge">ConnectionName, ApplicationName, WebAttributeSetId, WebTaxClassId</code> and enable the checkbox for <code class="language-plaintext highlighter-rouge">WebItemFlag</code>. 
+Also, select the <code class="language-plaintext highlighter-rouge">WebProductType</code> as Configurable from the dropdown.</li>
+  <li>Navigate to the <strong>Web ProductWebsites Page</strong> and select the <code class="language-plaintext highlighter-rouge">ConnectionName &amp; the WebsiteID</code> from the Drop-down.</li>
   <li>In the <strong>Web ProductAttribute Page</strong> select the `ConnectionName, AttributeID  from the drop-down for the ConnectionName and the rest will be autopopulated.<br />
 <img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi1.png" alt="confgprdctadd_navtomage2multi1" /></li>
 </ul>
 
-<p><strong>Note: The <code class="highlighter-rouge">AttributeId</code> can be opted from the drop-down only when the <code class="highlighter-rouge">WebAttributeSetId</code> is selected from the Web Product Details CP page. 
-        The <code class="highlighter-rouge">AttributeOptionId</code> can be opted when the <code class="highlighter-rouge">AttributeId</code> is selected.</strong> 
-        <code class="highlighter-rouge">AttributeOptionId</code> needs to be kept blank. <code class="highlighter-rouge">WebAttributeSetId</code> and <code class="highlighter-rouge">AttributeId</code> needs to be same as that the 
+<p><strong>Note: The <code class="language-plaintext highlighter-rouge">AttributeId</code> can be opted from the drop-down only when the <code class="language-plaintext highlighter-rouge">WebAttributeSetId</code> is selected from the Web Product Details CP page. 
+        The <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> can be opted when the <code class="language-plaintext highlighter-rouge">AttributeId</code> is selected.</strong> 
+        <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> needs to be kept blank. <code class="language-plaintext highlighter-rouge">WebAttributeSetId</code> and <code class="language-plaintext highlighter-rouge">AttributeId</code> needs to be same as that the 
         child items (which will be added in the section WebProductChildDetails of the Item card) of this new configurable 
         product which are already been synced as simple products.</p>
 <ul>
-  <li>In the <strong>WebProductChildDetails</strong> page select the <code class="highlighter-rouge">ChildItemNo and the ConnectionName</code> from the drop-down options.<br />
-<strong>Note</strong> : The <code class="highlighter-rouge">AttributeId</code> can be opted from the dropdown only when the <code class="highlighter-rouge">WebAttributeSetId</code> is selected from the Web Product Details CP page. 
-         The <code class="highlighter-rouge">AttributeOptionId</code> needs to be kept blank. <code class="highlighter-rouge">WebAttributeSetId</code> and <code class="highlighter-rouge">AttributeId</code> needs to be same as that the child items 
+  <li>In the <strong>WebProductChildDetails</strong> page select the <code class="language-plaintext highlighter-rouge">ChildItemNo and the ConnectionName</code> from the drop-down options.<br />
+<strong>Note</strong> : The <code class="language-plaintext highlighter-rouge">AttributeId</code> can be opted from the dropdown only when the <code class="language-plaintext highlighter-rouge">WebAttributeSetId</code> is selected from the Web Product Details CP page. 
+         The <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> needs to be kept blank. <code class="language-plaintext highlighter-rouge">WebAttributeSetId</code> and <code class="language-plaintext highlighter-rouge">AttributeId</code> needs to be same as that the child items 
          (which will be added in the section WebProductChildDetails of the Item card) of this new configurable product which is already been 
          synced as simple products.</li>
-  <li>Navigate to the <strong>WebProductCategorypage</strong> and select the <code class="highlighter-rouge">CategoryId, CategoryName and the connection name</code> from the drop-down.</li>
+  <li>Navigate to the <strong>WebProductCategorypage</strong> and select the <code class="language-plaintext highlighter-rouge">CategoryId, CategoryName and the connection name</code> from the drop-down.</li>
   <li>In the <strong>AEC Application Item List</strong> the details will be auto-populated as per the input provided in the Web Product Details CP page.</li>
-  <li>On completion of the process, click on the OK button. The entire <code class="highlighter-rouge">ItemCard</code> for this Configurable product is given below.
+  <li>On completion of the process, click on the OK button. The entire <code class="language-plaintext highlighter-rouge">ItemCard</code> for this Configurable product is given below.
 <img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi3.png" alt="confgprdctadd_navtomage2multi3" /></li>
 </ul>
 
-<p><strong>Note: The same product can be added to <code class="highlighter-rouge">multiple connection</code> by creating a new line in Web Product Details CP Page and choosing the 
+<p><strong>Note: The same product can be added to <code class="language-plaintext highlighter-rouge">multiple connection</code> by creating a new line in Web Product Details CP Page and choosing the 
 desired connection name. Further repeat the same steps as discussed above for the newly chosen connection. Also there is no need to create duplicate products 
 in NAV to be synced in multiple magento that is we can sync the same item in NAV  to multiple Magento urls.</strong></p>
 
@@ -2614,18 +2614,18 @@ in NAV to be synced in multiple magento that is we can sync the same item in NAV
 <p>Following the Provided Mapping, the user can sync the Configurable Product Add from Ms Dynamics NAV to Magento2. 
 To know more see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Transformation Techniques</a></p>
 
-<p>Mapping for the Transformation of <code class="highlighter-rouge">Configurable Products add Touchpoint</code>
+<p>Mapping for the Transformation of <code class="language-plaintext highlighter-rouge">Configurable Products add Touchpoint</code>
 <img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi9.png" alt="confgprdctadd_navtomage2multi9" /></p>
 
-<p><strong>Note: If the Magento has a single website a <code class="highlighter-rouge">Blank Mapping</code> is required in the second <code class="highlighter-rouge">website_ids</code> attribute. 
-In case of multiple website, no mapping is required for the second <code class="highlighter-rouge">website_ids</code> attribute</strong></p>
+<p><strong>Note: If the Magento has a single website a <code class="language-plaintext highlighter-rouge">Blank Mapping</code> is required in the second <code class="language-plaintext highlighter-rouge">website_ids</code> attribute. 
+In case of multiple website, no mapping is required for the second <code class="language-plaintext highlighter-rouge">website_ids</code> attribute</strong></p>
 
-<p>Mapping for the Root Variables for the <code class="highlighter-rouge">Configurable Product add Touchpoint</code>
+<p>Mapping for the Root Variables for the <code class="language-plaintext highlighter-rouge">Configurable Product add Touchpoint</code>
 <img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi10.png" alt="confgprdctadd_navtomage2multi10" /></p>
 
 <h2 id="action-filter">Action Filter</h2>
 
-<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="highlighter-rouge">Field and Criteria</code>.
+<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="language-plaintext highlighter-rouge">Field and Criteria</code>.
 View the image below to define the Action Filters</p>
 
 <p><img src="/staticfiles/integration/media/confgprdctadd_navtomage2multi11.png" alt="confgprdctadd_navtomage2multi11" />

@@ -2568,16 +2568,16 @@
 
 <h3 id="working-principle">Working Principle</h3>
 
-<p><code class="highlighter-rouge">SPLITTER</code> node in APPSeCONNECT workflow used for splitting large volume of data in smaller chunks and smaller chunks of data will go to the next process flow .</p>
+<p><code class="language-plaintext highlighter-rouge">SPLITTER</code> node in APPSeCONNECT workflow used for splitting large volume of data in smaller chunks and smaller chunks of data will go to the next process flow .</p>
 
 <p>For example: if a packet contains multiple customer data. A batch size of 1 is defined in the splitter node,where XPATH  is  //items/item and Entity name as response/items. 
 So, after data passed through the Splitter node 20 individual data files will be created where each file contains a single customer data.</p>
 
 <p><img src="/staticfiles/workflow-management/media/Splitter/Splitter.png" alt="Splitter" /></p>
 
-<p><code class="highlighter-rouge">For providing the properties of Split and Merger, XPath for the packets is needed to be known.</code></p>
+<p><code class="language-plaintext highlighter-rouge">For providing the properties of Split and Merger, XPath for the packets is needed to be known.</code></p>
 
-<p>The Parent node for the items present in the XSLT is the <code class="highlighter-rouge">XPATH</code> that needs to be given in the Split and Merger Property.</p>
+<p>The Parent node for the items present in the XSLT is the <code class="language-plaintext highlighter-rouge">XPATH</code> that needs to be given in the Split and Merger Property.</p>
 
 <p><strong>Note: Single forward Slash (For Eg: /Items) access all the sub nodes present inside it. 
 Double Forward Slash (For Eg: //Items) access all the nodes present inside it</strong></p>

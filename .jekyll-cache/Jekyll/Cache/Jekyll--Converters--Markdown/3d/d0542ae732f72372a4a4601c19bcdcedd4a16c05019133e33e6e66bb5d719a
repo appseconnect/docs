@@ -1,0 +1,79 @@
+I"}<p>Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to have COPY of an essential work such that it can be used later on.
+The entire technology world now relies on having a COPY or a Backup of your essential items.</p>
+
+<p>Processflows, processes your entire flow and its as essential as your business. Now with ProcessFlows you can anytime create a Copy of your designed process such that any efforts provided in designing a processflow, is not wasted.
+This document will let you help in creating a copy of your designed Processflows.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>You need to have the ProcessFlows created. Steps are create ProcessFlow are <a href="/processflow/creating-processflow/">Given Here</a></li>
+  <li>You will be provided with <strong>rename</strong> option before copying to the destination folder in case a processflow with same name is available already.</li>
+  <li>All the mappings and configurations made in the original processflow, will be copied while copying the processflow.</li>
+  <li>All the copied versions will be treated as a New Designed processflow, hence the user needs to <a href="/processflow/deploying-and-executing-processfloww/">freshly deploy</a> the copied processflow, when required.</li>
+  <li>Processflows that are copied from the <strong><a href="/processflow/processflow-listing-page/#process-flow-folder">ProcessFlow Folder</a> and its subfolders</strong> can be copied only within the same area, that is: <strong>ProcessFlow Folder and its Sub-Folder</strong>.</li>
+  <li>Processflows that are copied from the <strong><a href="/processflow/processflow-listing-page/#installed-process-flows-folder">Installed ProcessFlow Folder</a> and its subfolders</strong> can be copied only within the same area, that is: <strong>Installed ProcessFlow Folder and its Sub-Folder</strong>.</li>
+  <li>In-case of same name, you will have the option to rename your copied processflow before copying starts. If not renamed, your copied processflow will be named as <code class="language-plaintext highlighter-rouge">processflow name (n)</code>. Where <code class="language-plaintext highlighter-rouge">n</code> stands for the sequence of the same name. <strong>For Ex: Business Partner Add (1)</strong>.</li>
+</ul>
+
+<h2 id="copying-processflows">Copying Processflows</h2>
+
+<p>This section of the document will help you to copy and store a backup of your designed processflows. The steps for the same are provided below:</p>
+
+<p>1) Navigate to <strong>DESIGNER &gt; ProcessFlows</strong> in the Portal.</p>
+
+<p><img src="\staticfiles\processflow\media\copypf1.PNG" alt="copypf1" /></p>
+
+<p>2) In the listing page that appears, navigate to the folder (either ProcessFlow Folder or Installed ProcessFlow Folder) where your designed flow is available.</p>
+
+<p>3) Copying a ProcessFlow is divided into types based on the Folder Level, as given flow.</p>
+
+<ul>
+  <li>ProcessFlows that copied from <a href="/processflow/processflow-listing-page/#process-flow-folder">ProcessFlow folder or its sub folder</a> will be copied only within that same area: <strong>processflow Folder and its Sub-Folder</strong>.</li>
+  <li>ProcessFlows that copied from <a href="/processflow/processflow-listing-page/#installed-process-flows-folder">Installed ProcessFlow folder or its sub folders</a> will be copied only within that same area: <strong>Installed processflow Folder and its Sub-Folders</strong>.</li>
+</ul>
+
+<p>4) On the listing page of your chosen folder, click on the <code class="language-plaintext highlighter-rouge">Context Menu</code> on the <strong>ACTIONS tab</strong> of your ProcessFlow. Select the <strong>COPY</strong> option.</p>
+
+<p><img src="\staticfiles\processflow\media\copypf2.PNG" alt="copypf2" /></p>
+
+<p>5) The Folder Path window opens upon clicking the COPY button. The window alters as per the Folder.</p>
+
+<h3 id="copy-from-processflow-folder">COPY from ProcessFlow Folder:</h3>
+
+<p>5.1) You will be getting the following Folder Path window, if you are copying your processflow from the <a href="/processflow/processflow-listing-page/#process-flow-folder">PROCESSFLOW FOLDER</a>. You can expand the subfolders to view its Child Folders (all under ProcessFlow folder) if any. To know more about the sub and its child folders, <a href="/processflow/processflow-listing-page/#steps-to-create-child-folders-in-the-listing-page">Click Here</a>.</p>
+
+<p><img src="\staticfiles\processflow\media\copypf3.png" alt="copypf3" /></p>
+
+<p>5.2) The Folder path for this case will display only the <strong>Sub folders</strong> available under the <strong>ProcessFlow Folder</strong>. Select the subfolder, where you want your processflow to be copied. Click on the DONE button after the selection is over.</p>
+
+<h3 id="copy-from-installed-processflow-folder">COPY from Installed ProcessFlow Folder:</h3>
+
+<p>5.3) You will be getting the following Folder Path window, if you are copying your processflow from the <a href="/processflow/processflow-listing-page/#process-flow-folder">Installed ProcessFlow FOLDER</a>. You can expand the Package folders to view its Child Folders (all under Installed ProcessFlow folder) if any.</p>
+
+<p>5.4) The Folder path for this case will display only the <strong>Sub folders</strong> available under the <strong>Installed ProcessFlow Folder</strong>. Select the subfolder, where you want your processflow to be copied. Once you have selected your desired folder, Click on the Done button.</p>
+
+<p><img src="\staticfiles\processflow\media\copypf8.png" alt="copypf8" /></p>
+
+<p>6) If in-case your chosen folder has a processflow with same name, you will get an option to <strong>rename</strong> the processflow that is to be copied. On renaming, the copying process starts automatically.
+If not renamed, your copied ProcessFlow will be named as <code class="language-plaintext highlighter-rouge">processflow name (n)</code>. Where <code class="language-plaintext highlighter-rouge">n</code> stands for the sequence of the same name. <strong>For Ex: Business Partner Add (1)</strong>.</p>
+
+<p><img src="\staticfiles\processflow\media\copypf7.PNG" alt="copypf7" /></p>
+
+<p>7) A toaster message will confirm the start of the copying process. You will be displayed with a loader that would give you a view of the copying process.</p>
+
+<p><img src="\staticfiles\processflow\media\copypf6.PNG" alt="copypf6" /></p>
+
+<p>8) Once the process of copying is over, you may navigate to the folder to view your copied processflow. All the mappings and along with the configurations will be copied during this process.</p>
+
+<p>Following the above process, you can successfully copy your processflows from one folder to another.</p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li><strong>You cannot copy processflows from the ProcessFlow folder to Installed ProcessFlow Folder or vice versa.</strong></li>
+  <li><strong>In-case of same name, you will have the option to rename your copied processflow before copying starts. If not renamed, your copied ProcessFlow will be named as <code class="language-plaintext highlighter-rouge">ProcessFlow name (n)</code>. Where <code class="language-plaintext highlighter-rouge">n</code> stands for the sequence of the same name. <code class="language-plaintext highlighter-rouge">For Ex: Business Partner Add (1)</code></strong>.</li>
+  <li>Once copied, any changes made to the original processflow, the updates will not reflect in its copied version.</li>
+</ul>
+
+:ET

@@ -2562,9 +2562,9 @@ supports the request data without root element.</p>
 <p>Omit Root: This attribute needs to be added to the transformation section when you need to remove any root tag 
 from the transform packet as that root variable is not accepted by the destination application.</p>
 
-<p><code class="highlighter-rouge">Attribute name: OmitRoot</code>
-<code class="highlighter-rouge">Type: string</code><br />
-<code class="highlighter-rouge">Mapping: True</code></p>
+<p><code class="language-plaintext highlighter-rouge">Attribute name: OmitRoot</code>
+<code class="language-plaintext highlighter-rouge">Type: string</code><br />
+<code class="language-plaintext highlighter-rouge">Mapping: True</code></p>
 
 <p><strong>NOTE: After the sync process, the output packet is checked and we find that the root tag has been removed.</strong></p>
 
@@ -2574,9 +2574,9 @@ from the transform packet as that root variable is not accepted by the destinati
 This root variable fetch the date and time of the latest data record created in the Source app and store it so that whenever 
 the sync is executed after the first sync, it does not fetch the old records everytime. This ensures quick sync process.</p>
 
-<p><code class="highlighter-rouge">Root variable name: maxDate</code>  <br />
-<code class="highlighter-rouge">Type: String</code>  <br />
-<code class="highlighter-rouge">Mapping: [sourcelib:WriteMaxDate(..,'{parent tag for each individual record}','{tag which as the value of the date &amp; time when the record got created /updated}','1')]</code></p>
+<p><code class="language-plaintext highlighter-rouge">Root variable name: maxDate</code>  <br />
+<code class="language-plaintext highlighter-rouge">Type: String</code>  <br />
+<code class="language-plaintext highlighter-rouge">Mapping: [sourcelib:WriteMaxDate(..,'{parent tag for each individual record}','{tag which as the value of the date &amp; time when the record got created /updated}','1')]</code></p>
 
 <p>Example: [sourcelib:WriteMaxDate(..,’Customer’,’createTime’,’1’)]</p>
 

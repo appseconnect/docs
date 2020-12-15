@@ -2570,7 +2570,7 @@ the Integration Techniques and the Troubleshooting issues.</p>
 
 <ol>
   <li>Check into Magento2 account.</li>
-  <li>As Magento is a cloud-based application, therefore it has an URL. The API Path is your - <code class="highlighter-rouge">URL/index.php/rest/V1/</code></li>
+  <li>As Magento is a cloud-based application, therefore it has an URL. The API Path is your - <code class="language-plaintext highlighter-rouge">URL/index.php/rest/V1/</code></li>
   <li>For all Magento Activities, Template bar is required, therefore the API Path in this case should be.</li>
 </ol>
 
@@ -2623,13 +2623,13 @@ the Integration Techniques and the Troubleshooting issues.</p>
 <p><img src="\staticfiles\connectors\media\application-connector\magentoat1.png" alt="magentoat1" /></p>
 
 <ol>
-  <li>For generating the Integration Access token, login to the Magento2 Admin and Navigate to <code class="highlighter-rouge">System &gt; Extensions &gt; Integration.</code></li>
+  <li>For generating the Integration Access token, login to the Magento2 Admin and Navigate to <code class="language-plaintext highlighter-rouge">System &gt; Extensions &gt; Integration.</code></li>
 </ol>
 
 <p><img src="\staticfiles\connectors\media\application-connector\magentoat2.png" alt="magentoat2" /></p>
 
 <ol>
-  <li>Click on the <code class="highlighter-rouge">Add New Integration button</code>, in the Integration window.</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">Add New Integration button</code>, in the Integration window.</li>
 </ol>
 
 <p><img src="\staticfiles\connectors\media\application-connector\magentoat3.png" alt="magentoat3" /></p>
@@ -2692,7 +2692,7 @@ the Integration Techniques and the Troubleshooting issues.</p>
 this basic issue resolves after removing the Temp and Cache files from the portal and from your system. Therefore, after clearing all this publish the 
 touchpoints again along with Update Configuration on the agent.</p>
 
-<p>For E.g. If the <code class="highlighter-rouge">Source Application Not Found</code> in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
+<p>For E.g. If the <code class="language-plaintext highlighter-rouge">Source Application Not Found</code> in the log file appears, the probable cause is due to the presence of the Temp and Cache Files.</p>
 
 <p><strong>ISSUE 2:</strong></p>
 
@@ -2730,7 +2730,7 @@ This function transforms extra node to push the address in ship to section of SA
 
 <p>This extra node is creating an issue in NAV with multiple Address Line which is not allowed and resulting in failure of the data.</p>
 
-<p>Solution: - Simple mapping should be done. No need to call the method <code class="highlighter-rouge">SetCustomerAddressItems()</code>. This method is developed only for SAP B1</p>
+<p>Solution: - Simple mapping should be done. No need to call the method <code class="language-plaintext highlighter-rouge">SetCustomerAddressItems()</code>. This method is developed only for SAP B1</p>
 
 <p class="notice--info"><strong>Protip:</strong> While working with SAP B1 Integrations, SAP Business One DI Server ON/OFF is needed to be done for proper syncing if any errors like the above one persists</p>
 
@@ -2759,7 +2759,7 @@ integrations.</p>
       <td><a href="https://portal.appseconnect.com/AppEntityAction?AppVersionId=c47be8ef-bef4-4cf3-972a-9a4aa912461b&amp;entityId=d5b93e08-37a6-4042-a86d-a5e096b0232c&amp;entityActionId=b449e18b-dfff-4d11-9f2c-07d701ef1c3a">customers/search</a></td>
       <td>Get</td>
       <td><a href="https://portal.appseconnect.com/AppEntity/BaseCreate?entityId=d5b93e08-37a6-4042-a86d-a5e096b0232c&amp;AppVersionId=c47be8ef-bef4-4cf3-972a-9a4aa912461b">Customer</a></td>
-      <td>It will search customer from magento. You can specify filter criteria based on type of customer <code class="highlighter-rouge">customer_type</code> and /or <code class="highlighter-rouge">created_at</code> or <code class="highlighter-rouge">updated_at fields</code>. The API also supports limit filters. <a href="https://docs.magento.com/m2/ce/user_guide/customers/account-create.html">Click here</a></td>
+      <td>It will search customer from magento. You can specify filter criteria based on type of customer <code class="language-plaintext highlighter-rouge">customer_type</code> and /or <code class="language-plaintext highlighter-rouge">created_at</code> or <code class="language-plaintext highlighter-rouge">updated_at fields</code>. The API also supports limit filters. <a href="https://docs.magento.com/m2/ce/user_guide/customers/account-create.html">Click here</a></td>
       <td><a href="https://devdocs.magento.com/redoc/2.3/admin-rest-api.html#operation/customerCustomerRepositoryV1GetListGet">Search Customers</a></td>
     </tr>
     <tr>

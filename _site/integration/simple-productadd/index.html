@@ -2574,19 +2574,19 @@ In this integration scenario, multiple connections have been made for transforma
   <li>Click the WebItemFlag checkbox and also choose the application ID (application ID should be defined in the AEC application table while syncing setup). 
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti1.png" alt="simpleprdct_navmagemulti1" /></li>
   <li>Input the details for multiple connections that can be selected from the drop downs of the</li>
-  <li>Web Product Details CP Page - Select the <code class="highlighter-rouge">ConnectionName</code>, <code class="highlighter-rouge">ApplicationName</code>, <code class="highlighter-rouge">WebAttributeSetId</code> and enable the checkbox for <code class="highlighter-rouge">WebItemFlag</code>.
+  <li>Web Product Details CP Page - Select the <code class="language-plaintext highlighter-rouge">ConnectionName</code>, <code class="language-plaintext highlighter-rouge">ApplicationName</code>, <code class="language-plaintext highlighter-rouge">WebAttributeSetId</code> and enable the checkbox for <code class="language-plaintext highlighter-rouge">WebItemFlag</code>.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti2.png" alt="simpleprdct_navmagemulti2" /></li>
 </ul>
 
 <p><strong>NOTE: The same product can be added to multiple connection by creating a new line in Web Product Details CP Page and choosing the desired connection name. Further repeat the same steps as discussed above for the newly chosen connection.</strong></p>
 
 <ul>
-  <li>Web Product Websites Page - The <code class="highlighter-rouge">ConnectionName</code> &amp; the <code class="highlighter-rouge">WebsiteID</code> needs to be selected from the Drop-down.
+  <li>Web Product Websites Page - The <code class="language-plaintext highlighter-rouge">ConnectionName</code> &amp; the <code class="language-plaintext highlighter-rouge">WebsiteID</code> needs to be selected from the Drop-down.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti3.png" alt="simpleprdct_navmagemulti3" /></li>
-  <li>Web ProductAttribute Page - Select the <code class="highlighter-rouge">ConnectionName</code>, <code class="highlighter-rouge">AttributeID</code> and the <code class="highlighter-rouge">AttributeOptionId</code> from the drop-down for the product that needs to be synced to Magento.<br />
-<strong>Note:</strong> The <code class="highlighter-rouge">AttributeId</code>can be opted from the drop-down only when the <code class="highlighter-rouge">WebAttributeSetId</code> is selected from the <code class="highlighter-rouge">Web Product Details CP page</code>. The <code class="highlighter-rouge">AttributeOptionId</code> can be opted when the <code class="highlighter-rouge">AttributeId</code> is selected. 
+  <li>Web ProductAttribute Page - Select the <code class="language-plaintext highlighter-rouge">ConnectionName</code>, <code class="language-plaintext highlighter-rouge">AttributeID</code> and the <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> from the drop-down for the product that needs to be synced to Magento.<br />
+<strong>Note:</strong> The <code class="language-plaintext highlighter-rouge">AttributeId</code>can be opted from the drop-down only when the <code class="language-plaintext highlighter-rouge">WebAttributeSetId</code> is selected from the <code class="language-plaintext highlighter-rouge">Web Product Details CP page</code>. The <code class="language-plaintext highlighter-rouge">AttributeOptionId</code> can be opted when the <code class="language-plaintext highlighter-rouge">AttributeId</code> is selected. 
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti4.png" alt="simpleprdct_navmagemulti4" /></li>
-  <li>Web ProductCategory Page - Select the <code class="highlighter-rouge">ConnectionName</code> and the <code class="highlighter-rouge">CategoryId</code> form the drop down that needs to be synced to Magento.
+  <li>Web ProductCategory Page - Select the <code class="language-plaintext highlighter-rouge">ConnectionName</code> and the <code class="language-plaintext highlighter-rouge">CategoryId</code> form the drop down that needs to be synced to Magento.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti5.png" alt="simpleprdct_navmagemulti5" /></li>
   <li>AEC Application Item List -  The details will be auto-populated as per the input provided in the Web Product Details CP page.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti6.png" alt="simpleprdct_navmagemulti6" />
@@ -2608,16 +2608,16 @@ The entire Item Card Page for the selected product (here - Schneider Circuit Bre
 <p>Following the Provided Mapping, the user can sync the Simple Product Add from Ms Dynamics NAV to Magento2. 
 To know more, see <a href="/transformation/steps-to-cutomize-prebuilt-mapping/">Mapping &amp; Transformation Techniques</a>.</p>
 
-<p>Mapping for the Transformation for <code class="highlighter-rouge">Simple Product Add Touchpoint</code>
+<p>Mapping for the Transformation for <code class="language-plaintext highlighter-rouge">Simple Product Add Touchpoint</code>
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti9.png" alt="simpleprdct_navmagemulti9" />
-<strong>Note: If the Magento has a single website a <code class="highlighter-rouge">Blank Mapping</code> is required in the second <code class="highlighter-rouge">website_ids</code> attribute. 
-In case of multiple website, no mapping is required for the second <code class="highlighter-rouge">website_ids</code> attribute</strong>
-Mapping for the Root Variables for the <code class="highlighter-rouge">Simple Product add Touchpoint</code>: 
+<strong>Note: If the Magento has a single website a <code class="language-plaintext highlighter-rouge">Blank Mapping</code> is required in the second <code class="language-plaintext highlighter-rouge">website_ids</code> attribute. 
+In case of multiple website, no mapping is required for the second <code class="language-plaintext highlighter-rouge">website_ids</code> attribute</strong>
+Mapping for the Root Variables for the <code class="language-plaintext highlighter-rouge">Simple Product add Touchpoint</code>: 
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti10.png" alt="simpleprdct_navmagemulti10" /></p>
 
 <h2 id="action-filters">Action Filters</h2>
 
-<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="highlighter-rouge">Field</code> and <code class="highlighter-rouge">Criteria</code>.
+<p>Add a node to the given pre-packaged order of the Action filter with two sub-nodes <code class="language-plaintext highlighter-rouge">Field</code> and <code class="language-plaintext highlighter-rouge">Criteria</code>.
 View the image below to define the Action Filters.
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti11.png" alt="simpleprdct_navmagemulti11" />
 <img src="/staticfiles/integration/media/simpleprdct_navmagemulti12.png" alt="simpleprdct_navmagemulti12" /></p>
@@ -2627,9 +2627,9 @@ View the image below to define the Action Filters.
 <p><strong>Note: Before integrating with Magento2 and MS Dynamics NAV , make sure all the Master Data Touchpoints are synced.</strong></p>
 
 <ol>
-  <li>Once the workflow is designed, <code class="highlighter-rouge">Update the Configuration</code> in agent for deploying the workflow in the agent.</li>
+  <li>Once the workflow is designed, <code class="language-plaintext highlighter-rouge">Update the Configuration</code> in agent for deploying the workflow in the agent.</li>
   <li>Navigate to the Workflow Panel in the agent and click on the Start Sync Button for executing the Process.</li>
-  <li>Once the Execution is finished, click <code class="highlighter-rouge">Resync Button</code> in the agent.</li>
+  <li>Once the Execution is finished, click <code class="language-plaintext highlighter-rouge">Resync Button</code> in the agent.</li>
   <li>The Resync Panel show the Success Result in the agent.</li>
 </ol>
 
