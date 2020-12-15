@@ -52,31 +52,9 @@ If you have an application which has an application connector present on platfor
 This package comes with pre-designed and mapped Processflows between your chosen applications which will enable you to Install, Deploy and Execute your flow seamlessly. With pre-implemented lookups and mappings, this Package will minimize your efforts to design and map your flow accordingly.  
 Data Configuration is broadly classified into Master Data Configuration & Transactional Data Configuration. Your package may require both type of Data Configuration Processflows or simply transactional data Configuration, depending on your chosen application.
 
-Given below are the Master Data Configuration Details:
+**This package has dependencies based on other ProcessFlows which are not available in this Package. However, SAP Business One - Magento2 B2B package, will require to integrate ProcessFlows from `SAP Business One - Magento2 B2C` package.** 
+**The related dependent informations are provided in the package for `SAP Business One - Magento2 B2C`.** 
 
-• ProcessFlow - Master Data Add [Attribute Set] 
-Description: This master data syncs the configuration details of the Product Attribute Sets. 
-
-• ProcessFlow - Master Data Add [Attributes]
-Description: This master data syncs the configuration details of the Product Attributes. 
-
-• ProcessFlow - Master Data Add [Attribute Options]
-Description: This master data syncs the configuration details of the Product Attribute Options. 
-
-• ProcessFlow - Master Data Add [TaxClass]
-Description: This master data syncs the configuration details of the Product Tax Classes. 
-
-• ProcessFlow - Master Data Add [Country State]
-Description: This master data syncs the configuration details of Countries and States. 
-
-• ProcessFlow - Master Data Add [Website]
-Description: This master data syncs the configuration details of the application websites.
-
-• ProcessFlow - Master Data Add [Category] 
-Description: This master data syncs the configuration details of the Product Categories. 
-
-• ProcessFlow - Master Data Add [Customer Group]
-Description: This master data syncs the configuration details of the Customer Groups. 
 
 Given below are the Transactional Data Configuration Details:
 
@@ -110,7 +88,7 @@ i.	Flow Description: This ProcessFlow is featured to Update the details of the C
 ii.	Dependency flow: ProcessFlow- Contact Person Add to Magento
 
 
-5. **ProcessFlow - PriceLists Add**
+5. **ProcessFlow - PriceLists Add [B2B]**
 
 i.	Flow Description: This ProcessFlow is featured to sync the Price Lists from SAP Business One to Magento2. The following details of the PriceLists would be synced: website_id, pricelist name, status & Factor.
 
@@ -135,28 +113,177 @@ ii.	Dependency flow: ProcessFlow - Company Add
 
 8. **ProcessFlow - Credit Limit Update**
 
-i.	Flow Description: This ProcessFlow is featured to sync Updated Credit Limits from SAP Business One to Magento2, that are assigned to companies. This integration will sync the following details: Company ID & Credit Limit.
+i.	Flow Description: This ProcessFlow is featured to sync Updated Credit Limits from SAP Business One to Magento2, that are assigned to companies. The integration will update only the added details of Credit Limits.
 
-ii.	Dependency flow: Not Applicable 
-
-
-9. **ProcessFlow - Customer Specific Special Price Sync B2B**
-
-i.	Flow Description: 
-
-ii.	Dependency flow: Not Applicable 
+ii.	Dependency flow: ProcessFlow - Credit Limit Add
 
 
-10. **ProcessFlow - Price List Product Price Assign**
+9. **ProcessFlow - Customer Specific Special Price Add B2B**
 
-i.	Flow Description: 
+i.	Flow Description: This ProcessFlow is featured to sync Customer Specific Special Price from SAP Business One to Magento2. The following details are synced when integrated: website id, company id, pricelist id, discount type, Start Date, End Date & Product Details.
 
-ii.	Dependency flow: Not Applicable 
+ii.	Dependency flow: ProcessFlow - Company Add,  ProcessFlow - PriceLists Add [B2B] & ProcessFlow - Simple Product Add.
+
+
+10. **ProcessFlow - PriceList Product Price Assign**
+
+i.	Flow Description: This ProcessFlow is featured to assign Pricelists to respective products from SAP Business One to Magento2. The following details will be integrated: Pricelist id, SKU & Product Price.
+
+ii.	Dependency flow: ProcessFlow - PriceLists Add [B2B] , ProcessFlow - Simple Product Add.
 
 
 11: **ProcessFlow - Special Price : Add**
 
-i.	Flow Description: 
+i.	Flow Description: This ProcessFlow is featured to add Special Price from SAP Business One to Magento2. The following details would be synced: Item Code, Special Price, Start Date & End Date.
 
-ii.	Dependency flow: Not Applicable 
+ii.	Dependency flow: ProcessFlow - Simple Product Add
 
+
+12. **ProcessFlow - Customer Specific TierPrice Add B2B**
+
+i.	Flow Description: This ProcessFlow is featured to add Tier Prices, customer specific from SAP Business One to Magento2. The following details would be synced: website id, company id, pricelist id, discount type & Product details.
+
+ii.	Dependency flow: ProcessFlow - Company Add,  ProcessFlow - PriceLists Add [B2B] & ProcessFlow - Simple Product Add
+
+
+13. **ProcessFlow - Customer Specific TierPrice Sync Update B2B**
+
+i.	Flow Description: This ProcessFlow is featured to update the customer specific Tier Prices from SAP Business One to Magento2. The details synced with the ADD opration will only be updated when triggered this ProcessFlow.
+
+ii.	Dependency flow: ProcessFlow - Customer Specific TierPrice Add B2B
+
+
+## Action Filter configurations:
+
+ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 
+Have a glance on the [Action Filter](https://docs.appseconnect.com/processflow/manage-actions-actionfilters-errorfilters/) documentation, for more information.
+
+## LookUp Mapping:
+Your contains multiple Processflows and few of those Processflows may require mapping of specific values in certain fields as lookups. Few Processflow may need you to create these lookups manually in the Reference Tables of the APPSeCONNECT Repositories. 
+Follow the documentation of Reference Tables for reference. The lookups listed below needs to be created in reference tables for the below mentioned ProcessFlow. The list is put based on the format given below:
+
+[Processflow Name][Reference Table]
+
+• [Order Add][Freight] 
+
+• [Order Add][Tax]
+
+**Your Package doesnt consist of ProcessFlow for Adding Orders, however, you need to use dependent ProcessFlows available in the `SAP Business One - Magento2 B2C` package.**
+
+## Extension Configuration Information:
+
+If your package comprises of prepackaged applications namely SAP, SAP ByDesign, Dynamics GP, Dynamics NAV Extension & WooCommerce, you need to configure the required extension & Add Ons. 
+
+Given below is the checklist of Extension & Add On’s required for these applications.
+
+**WooCommerce Application**
+
+•	Version: WooCommerce 2.6 V & Above
+
+•	Extension: insync-wp-rest-filter-1.0.3
+
+•	Description: This is used For API Filtration with respect to Date & Time
+
+**SAP ByDesign Application**
+
+•	Version: SAP ByDesign 19.1.0
+
+•	Extension: `YJT3WBG5Y__V7(INS_AEC_STOCK)`
+
+•	Description: This extension is used for Stock Updating
+
+**SAP B1 Application**
+
+•	Version: Supported SAP B1 Version are:
+
+    - SAP B1 9.1
+
+    - SAP B1 9.2
+
+    - SAP B1 9.3V & Above
+
+•	Add On: 
+
+    - APPSeCONNECT_2.4.3.0_32 (For 32 Bit supported SAP Application)
+
+    - APPSeCONNECT_2.4.10.0_64 (For 64 Bit supported SAP Application)
+
+•	Description: This Add On is used for Web Item Master Data Configuration (created under Inventory Module) for adding web product details required for integration.
+
+**Dynamics GP Application**
+
+•	Version: Supported Dynamics GP Version are:	
+	
+    - Dynamics GP 2010
+    - Dynamics GP 2010 R2
+    - Dynamics GP 2013
+    - Dynamics GP 2015
+    - Dynamics GP 2018
+    - Dynamics GP 2016
+
+•	Extension: Compatible eConnect extension is provided with Dynamics GP Version.
+
+•	Description: This extension is used for retrieval of data from GP and push Data to GP.
+
+**Dynamics NAV Application**
+•	Version: Supported NAV Versions are:
+    - NAV 2009R2
+    - NAV 2013 Generic
+    - NAV 2013 R2
+    - NAV 2015
+    - NAV 2016
+    - NAV 2017
+    - NAV 2017 Multiconnection
+    - NAV BC 
+
+•	Extension: NAV Extension comprises of a package containing .fob files & XML files.
+
+**You need to import below listed .fob files**
+
+•	table
+
+•	page
+
+•	code unit
+
+•	xmlport
+
+**You need to import below listed XML Files**
+
+•	Application Id
+
+•	Webservices
+
+**Description: This extension details are enlisted below:**
+
+•	Table: This fob file enables to add additional fields in the NAV Tables, which is required for integration.
+
+•	Page: This fob file enables UI Representation of the Tables in NAV Application
+
+•	Code Unit: This C/AL Code enables to hold backend code of extension modules.
+
+•	XML Port: This enables to import external data source in NAV
+
+•	Application Id: This is a data file, which holds the application Id & application name required for NAV Integration
+
+•	Webservices: This is an XML doc which hold information of webservices for base and extension pages.
+
+## Adapter Compatibility Check:
+ProcessFlows in this package have no direct dependencies with Adapter Compatibility. Anytime on deploying your ProcessFlow, the latest adapter set in APPSeCONNECT Portal will be downloaded against the applications selected.
+
+## Environment Selection
+This package is pre-implemented with all the configurations and mappings. To deploy the ProcessFlows you are required to select the environment in which your business flow will be deployed. Your Environments are needed to be setup before the deploying process. 
+Checkout the details below to setup, your choice of environment.
+
+**On-Premise Setup:**
+To download your On-Premise Agent, navigate to the Deploy > Environments > On Premise > Click on the Download Hyperlink. To know more about the installation process, [Click Here](https://docs.appseconnect.com/deployment/Deployment-Configuration/#on-premise-agent-configuration) 
+Once the installation process completes, you can view your [OP details Page](https://docs.appseconnect.com/deployment/Environment-Management/). 
+
+**Hosted Setup:**
+To add your hosted agent on your organisation, follow the process provided in the [link](https://docs.appseconnect.com/deployment/Deployment-Configuration/#cloud-agent-configuration)
+To know more about Hosted Environment, [Click Here](https://docs.appseconnect.com/deployment/Environment-Management/)
+
+## Deployment
+Deploying is an essential step for integrating your business flow. Environment needs to have the configuration deployed which drives the integration process. Check the [Deployment Documents](https://docs.appseconnect.com/deployment/overview/) to know about the steps to deploy your flow on your selected environment.
+
+Once deployed, you need to click on the RUN button in the designer page to [execute your flow](https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow). All its execution generates [SNAPSHOTS](https://docs.appseconnect.com/processflow/snapshot-processflow/) that will allow you to monitor the data synced with the execution attempt.

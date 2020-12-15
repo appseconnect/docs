@@ -111,7 +111,7 @@ ii.	Dependency flow: Business Partner Add
 
 - **ProcessFlow: Simple Product Add** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your destination application. The details are: Product Id, Product SKU, Product Name, Price, Product Status, Attribute id, Product type, weight etc. 
+i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application. The details are: Product Id, Product SKU, Product Name, Price, Product Status, Attribute id, Product type, weight etc. 
 
 ii.	Dependency Flow: Not Applicable 
 
