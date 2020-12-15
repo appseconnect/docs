@@ -2833,6 +2833,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Working with Start Node",
+      excerpt: "What is Start Node? Start Node node intitates the ignition of the Start process and Trigger Type of the ProcessFlow....",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 313
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -6287,6 +6296,17 @@ var store = [
         "title": "Copy Processflow",
         "url": "/processflow/copy-processflow/",
         "excerpt": "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Working with Start Node",
+        "url": "/processflow/working-with-Start-Node/",
+        "excerpt": "What is Start Node? Start Node node intitates the ignition of the Start process and Trigger Type of the ProcessFlow....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
