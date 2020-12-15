@@ -62,7 +62,7 @@ Before, integrating with Realtime Webhooks, user needs to know whether the used 
 
 For creating a Webhook Realtime API, login to APPSeCONNECT portal and follow the steps given below:
 
-* Navigate to API section of the APPSeCONNECT Portal available on the left side menu. Inside **APIManagementSection** you can see Webhooks 
+* Navigate to **Manage > API section** of the APPSeCONNECT Portal available on the left side menu. Inside **APIManagementSection** you can see Webhooks 
   and Proxy.`By default Webhook section will be shown`. You can see all your connections listed here.  
 ![Webhook-Introduction](/staticfiles/api-management/media/Webhook-Introduction.png)  
 

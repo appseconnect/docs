@@ -22,7 +22,7 @@ An implementer can now be able to use the `CHOOSE WORKFLOW` feature in the APPSe
 
 ## Steps to choosing Workflow in your workpanel
 1. Login to your APPSeCONNECT Portal with valid credentials.
-2. Click on the Workflow module and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in  your workflow panel. For a new user, you can
+2. Click on the Workflow module Under **Designer** and the Workflow Panel opens up. The Workflow Panel shows you the workflows created in  your workflow panel. For a new user, you can
    [create a workflow](/workflow/steps-to-create-your-first-workflow/).
 ![ChooseWorkflow1](/staticfiles/workflow-management/media/ChooseWorkflow1.png)
 3. Click Choose Workflow button and you can view the list of workflows migrated from the BASE appears.

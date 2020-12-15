@@ -1,7 +1,0 @@
-I"}<p>When working with Process Flows, it is essential to map the attributes and the entities of both source and destination applications, for synchronizing data.
-Process flow <a href="/processflow/designer-processflow/">designer inteface</a> gives you the space to design your business flow
-and do the node configurations of the applications and trasformation activities all in one go</p>
-
-<p>In Process Flows, you need to drag the mapper node and link up the application nodes for activating the Node Configuration window 
-of the Mapper Node, as shown in <a href="/processflow/creating-processflow/">process flow creation</a> section</p>
-:ET

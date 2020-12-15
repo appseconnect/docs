@@ -1,6 +1,0 @@
-I"*<p>Policies are special modules which hooks over an Http pipeline of API execution. In addition to prebuilt policies,
-APPSeCONNECT also allows the developer to develop custom policies which will be applied through the API process 
-execution. A custom made policy provides a Data repository, which needs a designer on the Portal itself to build the 
-data design, and when the policy is applied with proper data dynamically provided while API creation, 
-the policy can inspect the incoming Http Request and Response and provide certain action over it.</p>
-:ET

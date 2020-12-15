@@ -1,2 +1,0 @@
-I"–<p>Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which is used for the data transformation from the source Application to the Destination Application. Appresources are library functions added to the DLL files. This Appresource functions are coded to perform a definite task. This document will help you to implement Cloud Appresource Function in Process Flow.</p>
-:ET

@@ -1,6 +1,0 @@
-I"<ul class="toc__menu">
-  <li><a href="#scenario-1-workflow-created-although-run-button-disabled">Scenario 1: Workflow Created although Run Button Disabled.</a></li>
-  <li><a href="#scenario-2-workflow-is-executed-but-nothing-is-posted-in-the-destination-application">Scenario 2: Workflow is executed, but nothing is posted in the Destination Application</a></li>
-  <li><a href="#scenario-3-transformation-failed-and-skipped-further-synchronization">Scenario 3: Transformation Failed and skipped further synchronization</a></li>
-</ul>
-:ET

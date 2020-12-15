@@ -1,5 +1,0 @@
-I"Ø<p>Workflow in APPSeCONNECT generates flow that executes integration endpoints one by one through our Micro-service architecture and 
-updates business data to all the applications that needs to be affected. Workflow has the ability to individually understand
-each and every functions and business process, take decisions, invoke notifications etc. In this article, we cover how to use workflow
-in efficient way to update business data from one application to another.</p>
-:ET

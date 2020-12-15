@@ -1,6 +1,0 @@
-I"P<p>Adapter in terms of APPSeCONNECT is a piece of software component external to the application core is plugged in to the system seamelessly such that the
- platform can communicate to the respective application. In case of building an integration between two disparate apps, you need an adapter. Even though if the 
-application is following standard protocols, we encourage to use <a href="/connectors/Overview-of-technology-connectors/">prebuild technology connectors</a> which will help in fetching data without requiring to write 
-a single lines of code. But in case, you are not sure about the protocol or you want to optimize the connection for the application itself, or even you 
-want to remove the complexity from the user while connecting to the application from cloud, adapter development would be your perfect choice down the line.</p>
-:ET

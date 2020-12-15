@@ -1,5 +1,0 @@
-I"ó<p>Throttling policy prevents an API usage spikes on per API version basis, such that if the same API is 
-getting somehow spammed, the policy will automatically detect it and update the response accordingly. The 
-API rate limit can be set up by the developer for a specified time period and when the policy is
-triggered for a specific call, the caller will receive <code class="language-plaintext highlighter-rouge">429 - Throttling Maximum sending rate exceeded</code> as response status code.</p>
-:ET

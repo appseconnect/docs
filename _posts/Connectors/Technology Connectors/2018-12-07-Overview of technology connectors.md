@@ -16,9 +16,11 @@ technology connectors which can connect any data source having standard protocol
 established. The connectors are plug and play oriented and hence within APPSeCONNECT one can 
 easily add a technology connector and connect an App using popular technology. 
 
-APPSeCONNECT allows custom development of connectors. As these [technology connectors](/configuring%20appseconnect/configurations/#b-technology-app-creation) are more inclined towards
+APPSeCONNECT allows custom development of connectors. As these [technology connectors](/getting%20started/configurations/#b-technology-app-creation) are more inclined towards
 own custom made applications or custom data sources, the connection need to be implemented correctly 
 within the application such that data can freely flow from the data source to the other end of the application. 
+
+With the introduction of [ProcessFlows](/processflow/overview-of-processflow/), you can now create your **Technology applications** for the ProcessFlow designer page itself. [Click Here](/processflow/technology-app-creation-using-processflow/) to know more on tech app creation from ProcessFlows.
 
 |Connector Name|Supported Protocol|Description|
 |---|---|---------|

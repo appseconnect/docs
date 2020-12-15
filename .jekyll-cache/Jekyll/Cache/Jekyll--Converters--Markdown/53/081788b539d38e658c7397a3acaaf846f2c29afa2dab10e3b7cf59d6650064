@@ -1,9 +1,0 @@
-I"§<ul class="toc__menu">
-  <li><a href="#prerequisites-for-dynamics-nav-configuration">Prerequisites for Dynamics NAV Configuration</a></li>
-  <li><a href="#populating-historical-data-in-aec-tables">Populating Historical Data in AEC Tables</a></li>
-  <li><a href="#configure-the-dynamics-nav-in-the-agent-soap-based-protocol">Configure the Dynamics NAV in the Agent (SOAP BASED PROTOCOL)</a></li>
-  <li><a href="#configure-the-dynamics-nav-in-the-agent-rest-based-protocol">Configure the Dynamics NAV in the Agent (REST BASED PROTOCOL)</a></li>
-  <li><a href="#troubleshooting">Troubleshooting</a></li>
-  <li><a href="#attributes-and-actions">Attributes and Actions</a></li>
-</ul>
-:ET

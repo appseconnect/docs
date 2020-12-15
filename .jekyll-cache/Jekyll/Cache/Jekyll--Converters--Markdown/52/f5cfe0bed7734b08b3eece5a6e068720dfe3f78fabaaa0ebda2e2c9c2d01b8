@@ -1,7 +1,0 @@
-I"ÿ<p><a href="http://isdn.appseconnect.com/html/9B9A41E5.htm">Plugins</a> are a piece of software which lets to tightly couple with the platform to enhance the platform
-and / or improve performance of the integration. As you know the default integration platform is sufficient
-to build any integration out of the box, but still we thought for advanced need, there should be separate hooks which an enterprise developer or team of 
-developers might need to build plugins on top of our components. The plugin is built using the SDK to enhance or change functionality of how the platform 
-behaves. For instance, you can build a plugin which will allow you to move our data storage to a separate database rather than the inbuilt databases 
-which we provide by default.</p>
-:ET

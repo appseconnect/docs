@@ -1,4 +1,0 @@
-I"<p>Adapter development is a common practice, and one of the most challenging thing to do is to debug an adapter 
-before you finally publish it to the APPSeCONNECT cloud. To debug an adapter, you need to install 
-appseconnect agent and use Visual Studio to debug the code.</p>
-:ET

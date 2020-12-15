@@ -1,3 +1,0 @@
-I"K<p>Actions are certain tasks like getting data from an application or sending data to an application based on specific API filter conditions known as Action Filters.
-Every Schema is an entity that requires to multiple actions to perform multiple operations as per the transaction happening. For Eg: GET, POST, PUT, DELETE etc.</p>
-:ET

@@ -1,5 +1,5 @@
 ---
-title: "Quickstart guides to create Workflow"
+title: "Quickstart to Workflows"
 toc: true
 tag: developers
 category: "Workflow"

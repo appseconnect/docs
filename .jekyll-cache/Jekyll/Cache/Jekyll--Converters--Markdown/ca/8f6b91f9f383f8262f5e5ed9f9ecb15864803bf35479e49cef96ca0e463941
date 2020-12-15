@@ -1,7 +1,0 @@
-I"F<p>It is evident that implementating adapter requires extensive knowledge about the API which you want to connect to, 
-such that you can clearly implement and optimize the calls made to the APIs. As a developer you can implement 
-the adapter in such a way, so that the data is perfectly transferred from one application to another without compormising
-performance and also giving most of the flexibility for cloud integrations. Before you move ahead on developing the connector
-I hope you have <a href="/sdk/Prerequisites/">installed the pre-requisites</a> correctly on the system and you have all the prebuilt code ready on your visual studio.
-Also you need to make sure that you follow our <a href="/sdk/Best-practices/">best practices</a> and <a href="/sdk/Development-Guidelines/">guidelines</a> provided for adapter development.</p>
-:ET

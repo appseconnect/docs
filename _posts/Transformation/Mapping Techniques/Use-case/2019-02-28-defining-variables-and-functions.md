@@ -15,7 +15,7 @@ menus:
 Here you will understand the process of defining [Variables](/transformation/types-of-variable/) (any variables that stores the data that can be used later within 
 the process of transformation) and then mapping of variables during transformation phase. 
 
-Here The flow is explained using `Root Variable` for a Touchpoint.   
+Here, the flow is explained using `Root Variable` for a Touchpoint.   
 **NOTE- The process of defining the variables remain same for any type of variable.**
 
 
@@ -50,11 +50,11 @@ The user can delete the Variables whenever required, any-time after its creation
 button. Hardcorded variables cant be deleted.  
 ![delete-variable](../../../../staticfiles/Transformation/media/delete-variable.png)
 
-## Edit Varibale
+## Edit Variable
 
 The user can edit the variables defined any-time after its creation by clicking on `edit variable` button.
 Hardcorded variables cant be edited.  
-![edit-variable](../../../../_site/staticfiles/Transformation/media/edit-variable.png)
+![edit-variable](../../../../staticfiles/Transformation/media/edit-variable.png)
 
 
 

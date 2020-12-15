@@ -11,8 +11,8 @@ menus:
         identifier: schemaactionprocessflow
 ---
 The user can view the schemasss and the action present in an app and can also add schema and add action for application node used in processflow. 
-This section enables the user to view, add the Schema, Attributes and the Actions of an application in the Process Flow and managing the same
-within a process flow for easy execution. The added schema and its component from the application node will
+This section enables the user to view, add the Schema, Attributes and the Actions of an application in the processflow and managing the same
+within a processflow for easy execution. The added schema and its component from the application node will
 be visible from the APP Section of the portal as well. 
 
 ## Prerequisites
@@ -24,11 +24,11 @@ be visible from the APP Section of the portal as well.
 
 ## Listing of Schemas and Attributes
 
-Process flow allows a defined tree view listing structure for managing and viewing
+processflow allows a defined tree view listing structure for managing and viewing
 defined Schema, Attributes and Actions associated with it. 
 
 To view the listing of Schemas and Attribute,  navigate to the following section:   
-(a) Go to Portal and click on Process Flow module  
+(a) Go to Portal and click on processflow module  
 (b) Go to [desiger](/processflow/designer-processflow/) section and Drag the required App Node  
 (c) The Node Configuration window opens. Go to General tab and Click `Manage Schema`.   
 (d) A window opens up and here you can view the listing of all the Schema and Attribute(s) of the Application 
@@ -47,7 +47,7 @@ Thus listing view gives a clear synopisis to the user regarding the Schema acces
 Managementfrom the processflow node configuration level. 
 
 
-### Adding Schemas in an Application node of Process flow 
+### Adding Schemas in an Application node of processflow 
 
 1) Go to [designer section](/processflow/designer-processflow/) and [create a process](/processflow/creating-processflow/) flow.  
 2) Drag the application node and the following  Node Configuration window appears.  
@@ -72,7 +72,7 @@ the list of schema. And if` No schema` is available for the given application no
  ![Pf Addschema2](../../staticfiles/processflow/media/pf-addschema2.png)    
 8) The newly created Schema is added and gets listed in the left side pane.  
 
-### Editing & Deleting Schemas in an Application node of Process flow 
+### Editing & Deleting Schemas in an Application node of processflow 
 
 (A) To `Edit Schema`, do the following steps:
      
@@ -85,16 +85,16 @@ context menu and do the changes.
 5) The `Schema Name` is uneditable, rest other fields are editable like Schema Description, Namespace &
 Namespace URL.
 
-**NOTE: (a) Once a Process Flow has been saved in an Environment you will be
+**NOTE: (a) Once a processflow has been saved in an Environment you will be
 unable to Rename the Schema.  
 (b) You will be able to add/edit the `Namespace`, and `Namespace URL` values provided in the Schema.  
 (c) You will be able to edit the `Description`, via `Edit Schema` option.**
 
 (b) To `Delete Schema` do the following:
   
-1) Once a Process Flow has been saved, you will be
+1) Once a processflow has been saved, you will be
 unable to Rename the Schema, Delete the Schema.  
-2) If you try deleting Schema created for an organisation when the Process Flow is saved OR schema is already in 
+2) If you try deleting Schema created for an organisation when the processflow is saved OR schema is already in 
 use for TouchPoint or Workflow. Error message should be displayed as "Base schema cannot be deleted"
 as shown below.  
 ![Deleting Schema](../../staticfiles/processflow/media/deleting-schema.PNG)  
@@ -124,7 +124,7 @@ d. Tags: Used  providing specific tags to the attribute.
 e. Namespace Prefix: Prefix could be added for this attribute while working with namespaces.  
 f. Attribute Scope: Select the Scope - Organization Level or ProcessFlow Level. This is a mandatory field
 select as per your business requirement.Attributes with scope `Organization` will be added at the Organization
- level whereas Attributes with scope `Local` will be added at the Process Flow level. 
+ level whereas Attributes with scope `Local` will be added at the processflow level. 
 g. Attribute Property: This section has 3 checkboxes - Primary, Required, Attribute.   
 * Primary: For allotting this attribute as the Primary Key.  
 * Required: For making this attribute mandatory for the mapping purpose.  
@@ -139,19 +139,19 @@ the attribute.
 
 **Note: For adding Reference API, the created attribute must have the datatype Complex Object or Complex Object Collection.**
 
-### Editing. Deleting & Renaming Attribute in an Application node of Process flow 
+### Editing. Deleting & Renaming Attribute in an Application node of processflow 
 
-#### (a) Editing Attribute within a  Process Flow Scope (local attribute)
+#### (a) Editing Attribute within a  processflow Scope (local attribute)
 
 1) Any editing/changes done to an existing Attribute will not change the Attribute defined under the Organization Scope (global).    
 You can check the same by navigating to the App section of the portal, where the Schema Attribute(s) under Organization scope (global) will remain unchanged.
-2) Changes done to an existing Attribute (local attribute) will be reflected within that specific Process Flow only.
-3) Changes done to an existing Attribute (local attribute) will not affect other Process Flows using the same Schema and Attribute.
+2) Changes done to an existing Attribute (local attribute) will be reflected within that specific processflow only.
+3) Changes done to an existing Attribute (local attribute) will not affect other processflows using the same Schema and Attribute.
 4) Users will be able to Edit, Rename, or Delete the existing Attributes by clicking on the corresponding options.
 5) Primary set Attributes (local attributes)cannot be deleted.
 
 #### (b) Editing Attribute within Organization Scope (global attribute)
-On deleting an Attribute from the Manage Schema section, it will not be visible in new Process Flow.
+On deleting an Attribute from the Manage Schema section, it will not be visible in new processflow.
 
 (B) To `Delete Schema`, do the following steps:
 

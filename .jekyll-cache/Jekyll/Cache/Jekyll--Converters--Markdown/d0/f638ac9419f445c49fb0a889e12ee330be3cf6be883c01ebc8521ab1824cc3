@@ -1,7 +1,0 @@
-I"©<p>Snapshot in Workflow gives complete overview of the transactions made through it. A transaction in workflow means an an unique execution
-of the workflow at that instance. Every workflow might execute more than one integration, which depends on 
-logic defined on the workflow, dependencies specified, or even based on data volume. The snapshot gives a detailed overview
-of the data that is being transferred through workflow giving you a complete picture of the data transformed through
-the process. The snapshot gives tracing over the data transferred through integration. You can investigate the data packet, process
-logs and even the data logs for each process execution.</p>
-:ET

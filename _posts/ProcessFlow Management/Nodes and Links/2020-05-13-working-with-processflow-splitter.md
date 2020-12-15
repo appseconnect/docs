@@ -65,8 +65,8 @@ The XPath provided for the node SPLIT (Magento2 to SAP B1) is shown above:
 and splitting it into multiple output packets for posting in destination application.  
 4) You have to add [Self loop](/processflow/working-with-processflow-selfloop/) in the mapper node so that all the splitted files are executed
 and posted in the destination application, to avoid any data loss.   
-5) Now [Deploy](/processflow/deploying-and-executing-processfloww/) the Process flow. After successful deployment, to your environment, [Execute](/processflow/deploying-and-executing-processfloww/) the Processflow.  
-6) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the process flow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
+5) Now [Deploy](/processflow/deploying-and-executing-processfloww/) the processflow. After successful deployment, to your environment, [Execute](/processflow/deploying-and-executing-processfloww/) the Processflow.  
+6) Go to [Environment](/deployment/Environment-Management/)section of the portal, select the processflow from the listing section and click [View Snapshot](/processflow/snapshot-processflow/)
 to view the detailed node by node snapshot data of the processflow.    
 7) Click on the Splitter node to get the snapshot dataview of the splitted files.      
 ![splitflow2](\staticfiles\processflow\media\splitflow2.PNG)    
@@ -91,7 +91,7 @@ view the iteration wise node execution created with self loop.
 
 ### Business Scenario - Low Server Response in Destination Application   
 
-1. Here you designe a process flow with splitter node. The splitter node is attached
+1. Here you designe a processflow with splitter node. The splitter node is attached
  after Source Application (E.g: Magento2) which is fetching a huge number of data but the
 destination application (E.g: SAP B1) is unable to sync the single data packet with huge number of 
 data due to low server response.
