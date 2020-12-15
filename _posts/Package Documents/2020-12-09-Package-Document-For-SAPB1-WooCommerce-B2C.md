@@ -171,6 +171,9 @@ i.	Flow Description: This ProcessFLow is featured to sync the Shipment Status ag
 ii.	Dependency flow: ProcessFlow - Sales Order Add
 
 
+Integrating these ProcessFlows will require [creation of Custom fields UDF's](https://help.sap.com/doc/e8d8abefb22343a586d744db9cba0bcb/9.3/en-US/How_to_Create_User_Defined_Fields_and_Tables.pdf) and installation of Stored Procedures, which would be provided On-Demand.
+
+
 ## Action Filter configurations:
 
 ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 
