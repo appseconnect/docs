@@ -1,6 +1,6 @@
 ## Overview
 
-The package **SAP Business One - WooCommerce** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design both for your B2C and B2B Business Module. 
+The package **SAP Business One - WooCommerce B2C & B2B** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design both for your B2C and B2B Business Module. 
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
