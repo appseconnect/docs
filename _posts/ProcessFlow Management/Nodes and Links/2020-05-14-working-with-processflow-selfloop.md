@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Working with Selfloop" 
+        title: "Selfloop" 
         identifier: selfloopprocesflow
 ---
 ### What is Loop node

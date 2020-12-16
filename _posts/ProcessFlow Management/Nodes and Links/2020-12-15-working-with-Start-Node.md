@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Working with START" 
+        title: "START Node" 
         identifier: getprocessflow 
 ---
 

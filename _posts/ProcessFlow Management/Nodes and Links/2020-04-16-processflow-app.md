@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Processflow APP" 
+        title: "APP Node" 
         identifier: appprocessflow 
 
 ---

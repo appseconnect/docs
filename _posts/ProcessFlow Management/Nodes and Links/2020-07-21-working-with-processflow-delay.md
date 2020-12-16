@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Working with Delay" 
+        title: "Delay Node" 
         identifier: delayprocesflow
 ---
 

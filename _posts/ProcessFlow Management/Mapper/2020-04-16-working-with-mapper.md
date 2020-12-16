@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Working with Mapper" 
+        title: "Mapper Node" 
         identifier: mapperprocessflow 
 
 ---

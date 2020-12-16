@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 5
-        title: "Working with Merger" 
+        title: "Merger Node" 
         identifier: mergerprocesflow
 ---
 ## What is Merger Node?

@@ -7,7 +7,7 @@ menus:
     processnodeandlinks:
         icon: fa fa-gg
         weight: 6
-        title: "Working with Decision" 
+        title: "Decision Node" 
         identifier: decisionprocesflow
 ---
 
