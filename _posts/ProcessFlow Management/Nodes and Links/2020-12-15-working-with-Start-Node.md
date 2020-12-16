@@ -88,11 +88,19 @@ b. For **Event Type**: The execution will on REALTIME basis.
 
 ![startnode5](\staticfiles\processflow\media\startnode5.PNG)
 
+11) You can also view your Triggered *EVENT* URL, from Environment Section. Navigate: **Deploy > Environments > Processflow Tab > [Processflow URL](/deployment/Environment-Management/#on-premise-environment-details-page)** (in the context menu).
+
+![startnode8](\staticfiles\processflow\media\startnode8.PNG)
+
 Following the above process you can successfully configure and execute Start Nodes with both the Trigger Types.
 
 **Note:**
 
-- 
+- You cannot edit or modify the sub domain of the URL, once SAVED.
+- Your Sub-Domain name can be upto 100 characters.
+- Registered URL will be displayed on Read-Only mode.
+- You can anytime convert a normal Processflow to a Triggered Processflow, by updating START node Configurations.
+- For the Trigger Type `EVENT`, the SYNC & RETRY section will not be available during its deployment process. 
 
 
 

@@ -83,6 +83,12 @@ This section of the document will allow you to view and understand the details o
 
 ![opdetails2](\staticfiles\deployment\media\EasyEnv\opdetails2.PNG)
 
+_**Note:** If your ProcessFlow triggered is of **EVENT** Type, the ACTIONS column will have the Option of **ProcessFlow URL** that will display you the Triggered URL of your Organisation._
+
+![opdetails2.1](\staticfiles\deployment\media\EasyEnv\opdetails2.1.PNG)
+
+
+
 
 #### Plugins Tab
 
@@ -227,6 +233,10 @@ The following are the details that will displayed for deployed Process Flows.
     - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
 
 ![hosteddetails3](\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG)  
+
+_**Note:** If your ProcessFlow triggered is of **EVENT** Type, the ACTIONS column will have the Option of **ProcessFlow URL** that will display you the Triggered URL of your Organisation._
+
+![hosteddetails3.1](\staticfiles\deployment\media\EasyEnv\hosteddetails3.1.PNG)
 
 3) You will be able to view the following section when clicked on the [**Settings**](/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise) tab. You can view the following settings panel in the page.
 

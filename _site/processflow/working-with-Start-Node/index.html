@@ -1645,7 +1645,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/working-with-Start-Node/" data-jstree='{"icon":"fa fa-gg"}'>
-        <a href="/processflow/working-with-Start-Node/" onclick="selectTab('/processflow/working-with-Start-Node/', event);" title="Go to Working with GET">Working with GET</a>
+        <a href="/processflow/working-with-Start-Node/" onclick="selectTab('/processflow/working-with-Start-Node/', event);" title="Go to Working with START">Working with START</a>
         
     </li>
     
@@ -2632,7 +2632,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2663,13 +2663,13 @@ Trigger Type.</p>
   <li><strong>Event:</strong>  This type defines the RealTime Trigger of your processflow using API proxy Register URL.</li>
 </ul>
 
-<p><img src="" alt="startnode1" /></p>
+<p><img src="\staticfiles\processflow\media\startnode1.PNG" alt="startnode1" /></p>
 
 <h2 id="working-principle">Working Principle</h2>
 
 <p>1) Drag the start node to the designer panel. The Start Node Configuration Panel Opens.</p>
 
-<p><img src="" alt="startnode1" /></p>
+<p><img src="\staticfiles\processflow\media\startnode1.PNG" alt="startnode1" /></p>
 
 <p>2) You will get the following 2 Trigger Type:</p>
 
@@ -2682,42 +2682,65 @@ Trigger Type.</p>
 
 <p>3) Selection of Polling Type will allow your processflow to trigger a normal sync process either manually or if scheduled.</p>
 
-<p>4) On selecting the Trigger Type as <strong>Event</strong>, the following field would appear. <strong>Enter Register URL</strong> &amp; <strong>Provide Description</strong>.</p>
+<p>4) On selecting the Trigger Type as <strong>Event</strong>, the following field would appear: <strong>Enter Register URL</strong>.</p>
 
-<p><img src="" alt="startnode2" /></p>
+<p><img src="\staticfiles\processflow\media\startnode2.PNG" alt="startnode2" /></p>
 
 <p>5) Provide the details for these fields.</p>
 
 <ul>
-  <li>
-    <p><strong>Enter Register URL :</strong> You will have to provide your Organisation name as the sub-domain that would be merged with the APPseCONNECT Domain. This field for registering URL will appear only when you havent register any URL for that processflow. 
-The URL will be displayed in the Regsiter URL field, if its already registered.</p>
-  </li>
-  <li>
-    <p><strong>Provide Description :</strong> A general text field for the users to provide description for the URL.</p>
-  </li>
+  <li><strong>Enter Register URL :</strong> You will have to provide your Organisation name as the sub-domain that would be merged with the APPseCONNECT Domain.</li>
 </ul>
 
-<p><img src="" alt="startnode3" /></p>
+<p>For Example: <code class="language-plaintext highlighter-rouge">MRFCorporation.APPSeCONNECTAPI.com</code> where <strong>MRFCorporation</strong> is the sub-domain name of the organisation. The rest is the Domain name.</p>
 
-<p>5) Once you are done with the configurations, Click on the SAVE button.</p>
+<p>This field for registering URL will appear only when you havent register any URL for that processflow. The URL will be displayed in the Regsiter URL field in Read-Only mode, if its already registered on your organisation.</p>
+
+<p><img src="\staticfiles\processflow\media\startnode3.PNG" alt="startnode3" /></p>
+
+<p>5) Once you are done with the configurations, Click on the SAVE button. On saving the Registered URL, you get a confirmation message.</p>
+
+<p><img src="\staticfiles\processflow\media\startnode6.PNG" alt="startnode6" /></p>
+
+<p>You can also view your registered URL on your <strong>APIs Section</strong>. Navigate: Manage &gt; APIs &gt; Register URL.</p>
+
+<p><img src="\staticfiles\processflow\media\startnode7.PNG" alt="startnode7" /></p>
+
+<p><strong>Note: You cannot alter a registered URL for any processflow, once SAVED in your organisation.</strong></p>
 
 <p>6) Now you need to design your processflow. <a href="/processflow/creating-processflow/">Click Here</a> to know more on ProcessFlow creation.</p>
 
 <p>7) Deploy your designed processflow to your required environment.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a. If your Trigger Type is selected as **Polling**, the steps for deployment will remain same.
+<p>a. If your Trigger Type is selected as <strong>Polling</strong>, the steps for deployment will remain same.</p>
 
-b. If your Trigger Type is selected as **Event**, the deployment will not have the **Sync &amp; Retry** step.
-</code></pre></div></div>
+<p>b. If your Trigger Type is selected as <strong>Event</strong>, the deployment will not have the <strong>Sync &amp; Retry</strong> step.</p>
 
 <p><a href="/processflow/deploying-and-executing-processfloww/#deploying-processflows-to-environment">Click Here</a> for more details ProcessFlow Deployment.</p>
 
-<p>8) The deployed processflows with Trigger Type will <strong>EVENT</strong> will represent with a Black Icon in the ProcessFlow tab in environment section.</p>
+<p>8) The deployed processflows with Trigger Type <strong>EVENT</strong> will represent with a Black Icon in the <a href="/deployment/Environment-Management/#pre-requisites">ProcessFlow tab</a> in environment section.</p>
 
-<p><img src="" alt="startnode4" /></p>
+<p><img src="\staticfiles\processflow\media\startnode4.PNG" alt="startnode4" /></p>
 
-<p>9)</p>
+<p>Trigger Type <strong>Polling</strong> will have normal representation in the ProcessFlow Tab in Environment Section.</p>
+
+<p>9) The ProcessFlows needs to be executed once the deployment is over. Execution for Trigger Types differs:</p>
+
+<p>a. For <strong>Polling Type</strong>: The execution process will be a normal procedure by clicking on the Execute button. For more details on this process, <a href="/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow">Click Here</a>.</p>
+
+<p>b. For <strong>Event Type</strong>: The execution will on REALTIME basis.</p>
+
+<p>10) You can anytime check your snapshot for the execution status and data survey for both Trigger Types. For more details on Snapshot, <a href="/processflow/snapshot-processflow/">Click Here</a>.</p>
+
+<p><img src="\staticfiles\processflow\media\startnode5.PNG" alt="startnode5" /></p>
+
+<p>Following the above process you can successfully configure and execute Start Nodes with both the Trigger Types.</p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li></li>
+</ul>
 
 
                 
