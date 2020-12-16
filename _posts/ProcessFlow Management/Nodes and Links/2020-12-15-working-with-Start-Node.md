@@ -88,7 +88,7 @@ b. For **Event Type**: The execution will on REALTIME basis.
 
 ![startnode5](\staticfiles\processflow\media\startnode5.PNG)
 
-11) You can also view your Triggered *EVENT* URL, from Environment Section. Navigate: **Deploy > Environments > Processflow Tab > [Processflow URL](/deployment/Environment-Management/#on-premise-environment-details-page)** (in the context menu).
+11) You can also view your Triggered **EVENT** URL, from Environment Section. Navigate: **Deploy > Environments > Processflow Tab > [Processflow URL](/deployment/Environment-Management/#on-premise-environment-details-page)** (in the context menu).
 
 ![startnode8](\staticfiles\processflow\media\startnode8.PNG)
 
