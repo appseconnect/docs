@@ -1,0 +1,97 @@
+I"”<h2 id="mapping-levels">Mapping Levels</h2>
+
+<p>Mapping is done at various level of Input Packet. Refer <a href="/transformation/basic-of-source-destination-mapping/#source-destination-mapping">here</a></p>
+<h3 id="mapping-at-attribute-level">Mapping at Attribute Level</h3>
+
+<p>The user/implementer can work on If-Else Mapping in the attribute level. Given below is the Screen where the If-Else Mapping is done at the Attribute level.<br />
+<img src="/staticfiles/Transformation/media/Attributelevel-Mapping.png" alt="Attributelevel-Mapping" /></p>
+
+<p>The user can add condition and attributes from the drop-down option for which the If-Else mapping will work.</p>
+
+<p><img src="/staticfiles/Transformation/media/Attributelevel-AddCondition.png" alt="Attributelevel-AddCondition" /></p>
+
+<p><strong>Note: The user can add conditions (Else-If &amp; Else) inside an IF Node similarly as shown in the screen below, except for the FOR-EACH LOOP LEVEL.</strong></p>
+
+<p><em>The above mapping scenario is explained below</em></p>
+
+<p>The Condition <code class="language-plaintext highlighter-rouge">default-address/country-code='US'</code> in the IF Node describes that if the Country Code in the default address is US, the clause Country_Region_Code=HU is carried out.</p>
+
+<p>The Condition <code class="language-plaintext highlighter-rouge">default-address/country-code='IN'</code> in the Else-If node describes that if the Country code in the Default Address is IN, the clause Country_Region_Code = GB is carried out.</p>
+
+<p>And for the Otherwise (ELSE)Node,the given clause will be carried out.</p>
+
+<p>Refer the screen given below:</p>
+
+<p><img src="/staticfiles/Transformation/media/Attributelevel-ConditionView.png" alt="Attributelevel-ConditionView" /><br />
+The User can also add Else-If and Else(Otherwise) and its clauses in the attribute Level. The following screen shows the Condition add for If-Else.</p>
+
+<p><img src="/staticfiles/Transformation/media/Attributelevel-Else.png" alt="Attributelevel-Else" /></p>
+
+<p><strong>NOTE: The Add Condition window is for the condition marked in the Yellow Box</strong></p>
+
+<h3 id="mapping-at-loop-level">Mapping at Loop Level</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">If Mapping can be done at the For-Each Loop level</code>. Below is the screen which shows the <strong>If Mapping</strong> at the For-Each Loop Level.</p>
+
+<p><img src="/staticfiles/Transformation/media/LoopLevel-Mapping.png" alt="LoopLevel-Mapping" /></p>
+
+<p class="notice--info"><strong>Protip</strong> In the For-Loop Level, only IF is used as this level is just for removing duplicate check and also removing junk data, for integration process</p>
+
+<h3 id="mapping-at-complex-object-level">Mapping at Complex Object Level</h3>
+
+<p>The user/implementer can work on the If-Else Mapping in the complex object level. 
+Below is the Screen which shows the If-Else Mapping at the complex object level.</p>
+
+<p><img src="/staticfiles/Transformation/media/ComplexObject-Mapping.png" alt="LoopLevel-Mapping" /></p>
+
+<p>Like other levels, the user can add Else-If and Otherwise and its conditions from the drop down.</p>
+
+<h3 id="mapping-at-complex-object-collection--level">Mapping at Complex Object Collection  Level</h3>
+
+<p>The If-Else Mapping can be done at the ComplexObjectCollection Level. Below is the screens which shows the Mapping at that level.</p>
+
+<p><img src="/staticfiles/Transformation/media/ComplexObjectCollection-If-Mapping.png" alt="LoopLevel-Mapping" /><br />
+<img src="/staticfiles/Transformation/media/ComplexObjectCollection-else-Mapping.png" alt="LoopLevel-Mapping" /></p>
+
+<h2 id="respect-hierarchical-rendering-on-mapping-state">Respect Hierarchical Rendering on Mapping state</h2>
+
+<p>On disabling the mapping of the parent node, it disables all the child node such that when the XML is rendered, 
+only the enabled node will be rendered in the XML. This feature will help the user to implement
+the hierarchical rendering feature in the APPSeCONNECT Portal.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<p>Mapping should be done in the parent node for accessing the Enable/Disable feature.</p>
+
+<p><strong>Steps to implement hierarchical rendering on mapping</strong></p>
+<ol>
+  <li>Login the APPSeCONNECT Portal.</li>
+  <li>Navigate to the touchpoints area after <a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">creating a connection</a></li>
+  <li>Choose any touchpoint and click on the Transform button.</li>
+  <li>On <code class="language-plaintext highlighter-rouge">expanding the schema object</code>, all the <code class="language-plaintext highlighter-rouge">complex objects and the complex objects collection</code> are displayed.
+<img src="/staticfiles/Transformation/media/hierarchial-rendering1.png" alt="hierarchial-rendering1" /></li>
+  <li>Hover the icon over the mapped complex object/complex object collection. The Disable option will appear. 
+<img src="/staticfiles/Transformation/media/hierarchial-rendering2.png" alt="hierarchial-rendering2" /></li>
+  <li>Click the Disable option, the complex object/complex object collection and its child, sub-child, 
+all the nodes get disabled, present under it.
+<img src="/staticfiles/Transformation/media/hierarchial-rendering3.png" alt="hierarchial-rendering3" /> 
+<img src="/staticfiles/Transformation/media/hierarchial-rendering4.png" alt="hierarchial-rendering4" /> 
+<strong>Note: The ROW Node remains white even on disabling. Its colour will only change if the row node is also mapped.</strong>
+<img src="/staticfiles/Transformation/media/hierarchial-rendering5.png" alt="hierarchial-rendering5" /></li>
+  <li>Now, if a child node is enabled from the list of disabled nodes, the child gets enabled, also its immediate parent gets enabled.
+<img src="/staticfiles/Transformation/media/hierarchial-rendering6.png" alt="hierarchial-rendering5" /> 
+Now if the immediate parent is also associated with a parent (a complex object/complex object collection), it also gets 
+enabled, rest all other child nodes on that tree, remains disabled.</li>
+</ol>
+
+<p><strong>Protip:</strong> The Disabled node turns grey on disabling.
+{: .noticeâ€“info} Mapping in APPSeCONNECT is done so that a Source Application can communicate with the Destination Application. APPSeCONNECT, introduces a new mapping structure <code class="language-plaintext highlighter-rouge">If-Else Mapping</code>. This Document will talk about this mapping process and in different levels where we can apply the If-Else Mapping.</p>
+
+<h2 id="pre-requisites-for-mapping">Pre-requisites for Mapping</h2>
+<ol>
+  <li>Login to the APPSeCONNECT Portal with valid credentials.</li>
+  <li>Select the Application. <a href="/getting%20started/configurations/#process-of-choosing-app">Click HERE</a> to know more about selecting of Applications.</li>
+  <li>Create a Connection. <a href="/getting%20started/configurations-for-integration/#configuring-connector-while-creating-connection">Click HERE</a> to know more.</li>
+</ol>
+
+:ET

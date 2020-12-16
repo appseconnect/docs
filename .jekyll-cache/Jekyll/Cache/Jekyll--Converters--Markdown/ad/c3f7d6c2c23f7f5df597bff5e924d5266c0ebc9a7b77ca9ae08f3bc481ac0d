@@ -1,0 +1,218 @@
+I"ø6<p>Actions are certain tasks like getting data from an application or sending data to an application based on specific API filter conditions known as Action Filters.
+Every Schema is an entity that requires to multiple actions to perform multiple operations as per the transaction happening. For Eg: GET, POST, PUT, DELETE etc.</p>
+
+<p>This section of the document will enable the user to create actions, action filter and error filters under a created schema, when working with processflow.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>The User should have a valid APPSeCONNECT account.</li>
+  <li>APPSeCONNECT should be up and running</li>
+  <li>An application node is needed for defining the Actions.</li>
+  <li>The app node needs to be dragged in the <a href="/processflow/designer-processflow/">designer section</a> to define the actions under <a href="/processflow/adding-schema-actions/">manage schema</a></li>
+  <li>The <a href="/processflow/adding-schema-actions/#adding-schemas-in-an-application-node-of-process-flow">Schemas should be created</a> under which the Actions are to be defined.</li>
+  <li>For defining <strong>Action &amp; Error Filters</strong>, you need to have the ACTIONS created for the chosen application on your organisations. <a href="">Click Here</a> to know more about creating actions.</li>
+  <li>You need to have an action filter/retry filter created, to create it as a template.</li>
+</ul>
+
+<h2 id="adding-a-new-action">Adding a New Action</h2>
+
+<p>1) Navigate to the processflow and the drag the application node for which the Actions are to be made. The Node configuration window of the app node opens.</p>
+
+<p>2) Enter all the mandatory fields and click on the save button.</p>
+
+<p>3) If you donot get to find the needed action in the <code class="language-plaintext highlighter-rouge">actions</code> menu, click on the <strong>Manage Action</strong> button for defining Actions.</p>
+
+<p><img src="\staticfiles\processflow\media\pf_actions1.png" alt="pf_actions1" /></p>
+
+<p>4) The Manage Action window opens. You will be able to view the schema, selected in the node configuration window.</p>
+
+<p><img src="\staticfiles\processflow\media\pf_actions2.PNG" alt="pf_actions2" /></p>
+
+<p>5) Click on the <strong>Ellipsis icon</strong> (three horizontal dots) beside the schema to view the <strong>Add Action</strong> option in the contextual menu.</p>
+
+<p><img src="\staticfiles\processflow\media\pf_actions3.PNG" alt="pf_actions3" /></p>
+
+<p>6) You will provided with two mandatory fields for creating the <strong>ACTION</strong> under the schema. Below are the mentioned fields.</p>
+
+<ul>
+  <li><strong>Action Name:</strong> This is the name of the action that would signify the operation it would be doing. For Example: POST Customers, getting Customer from WooCommerce etc.</li>
+  <li><strong>Action Description:</strong> The description of the actions briefs the operation, the action would be performing. For Example: Adding customes to Shopify, Fetching Orders from Magento etc.</li>
+</ul>
+
+<p>Click on the SAVE button.</p>
+
+<p><img src="\staticfiles\processflow\media\pf_actions4.PNG" alt="pf_action4" /></p>
+
+<p>Following the above steps , you can successfully create a new Action to a schema.</p>
+
+<p><strong>Note:</strong></p>
+<ul>
+  <li>The newly created action will be created in the organisation level.</li>
+  <li>The field <strong>Action Name</strong> will allow a maximum 100 characters</li>
+  <li>You can create multiple ACTIONS under a schema.</li>
+</ul>
+
+<h3 id="edit-delete--rename-an-existing-action">Edit, Delete &amp; Rename an existing action</h3>
+
+<p>1) Navigate to the <strong>Manage Actions</strong> in the node configuration window of the selected application. Select the required action from the <code class="language-plaintext highlighter-rouge">Actions</code> contextual menu in the Node Configuration Window, that needs to be <strong>EDITED</strong>. The Manage Action window opens.</p>
+
+<p><img src="\staticfiles\processflow\media\edit_action1.PNG" alt="edit_actions1" /></p>
+
+<p>2) Expand the Schema node &gt; Actions Node to view the selected action. Click on the Contextual menu to view the following option.</p>
+
+<ul>
+  <li>Edit Action:
+    <ul>
+      <li>You can view the two fields <strong>Action Name</strong> &amp; <strong>Action Description</strong> in the edit window.</li>
+      <li>Modify the changes required and click on the SAVE button.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\edit_action2.PNG" alt="edit_action2" /></p>
+
+<ul>
+  <li>Delete Action
+    <ul>
+      <li>Clicking on the delete action button, you get a confirmation message for deletion process.</li>
+      <li>Clicking on the <code class="language-plaintext highlighter-rouge">YES</code> button will delete the action from your organisation for the selected application.</li>
+    </ul>
+  </li>
+  <li>Rename Action
+    <ul>
+      <li>Clicking on the RENAME button, You get the edit action window.</li>
+      <li>You can successfully rename both the mandatory fields: <strong>Action Name</strong> &amp; <strong>Action Description</strong>.</li>
+      <li>Click on the SAVE button to apply the changes on your organisation.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\edit_action3.png" alt="edit_action3" /></p>
+
+<p>Following the above process, you can successfully Edit, Delete &amp; Rename an existing action.</p>
+
+<p><strong>Note:</strong></p>
+<ul>
+  <li>You cannot delete an action that is already in use and deployed.</li>
+  <li>You can also perform the DELETE and the EDIT operation of the schema for the <a href="/getting%20started/configurations/">APP &gt; Select your App &gt; Schema</a>.</li>
+</ul>
+
+<h2 id="adding-action-filters">Adding Action Filters</h2>
+
+<p>1) Select the Action from the contextual menu of the node configuration window of the dragged application.</p>
+
+<p>2) Click on the <strong>Configure Filter</strong> button after selecting the action from the contextual menu.</p>
+
+<p><img src="\staticfiles\processflow\media\action_filter1.png" alt="actionfilter1" /></p>
+
+<p>3) The Configure filter window opens. You can view the selected shema listed on the window.</p>
+
+<p><img src="\staticfiles\processflow\media\action_filter2.PNG" alt="actionfilter2" /></p>
+
+<p>4) Expand the nodes <code class="language-plaintext highlighter-rouge">customer &gt; Action &gt; Select Action</code> to view the <strong>Action Filter</strong> and the <strong>Error Filter</strong></p>
+
+<p><img src="\staticfiles\processflow\media\action_filter3.PNG" alt="actionfilter3" /></p>
+
+<p>5) Click on the ellipses beside the Action Filter to view the <strong>CREATE</strong> Button. Clicking on the create button, the action filter creation window opens.</p>
+
+<p><img src="\staticfiles\processflow\media\action_filter4.png" alt="actionfilter4" /></p>
+
+<p>6) You get the option to provide your filter for TWO sections. Either on <strong>HEADER</strong> and <strong>BODY</strong>. As per you application API, you can provide the following details to configure the action filter.</p>
+
+<ul>
+  <li>Key: This is the filter key that will define the key to filter.</li>
+  <li>Operator: You need to select the type of operator needed for the execution of the action filter.</li>
+  <li>Value: You need to provide the value to the filter that will be executed to GET or POST data.</li>
+</ul>
+
+<p>Click on the SAVE icon beside the filter to save the current sibling.</p>
+
+<p><img src="\staticfiles\processflow\media\action_filter5.PNG" alt="actionfilter5" /></p>
+
+<p>7) You can also append multiple filters by clicking on the <strong>APPEND</strong> button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.</p>
+
+<p>8) You can also save the filter as a template by clicking on <strong>SAVE AS TEMPLATE</strong> for reusing it on a different processflow for the same application within the same organisation. For more details on TEMPLATE, <a href="/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter">Click Here</a>.</p>
+
+<p><strong>Note:</strong> You need to save the elder sibling before applying conjuction on same level or below level.</p>
+
+<h2 id="adding-retry-filters">Adding Retry Filters</h2>
+
+<p>1) Select the Action from the contextual menu of the node configuration window of the dragged application.</p>
+
+<p>2) Click on the <strong>Configure Filter</strong> button after selecting the action from the contextual menu.</p>
+
+<p><img src="\staticfiles\processflow\media\action_filter1.png" alt="errorfilter1" /></p>
+
+<p>3) The Configure filter window opens. You can view the selected shema listed on the window.</p>
+
+<p><img src="\staticfiles\processflow\media\action_filter2.PNG" alt="errorfilter2" /></p>
+
+<p>4) Expand the nodes <code class="language-plaintext highlighter-rouge">customer &gt; Action &gt; Select Action</code> to view the <strong>Action Filter</strong> and the <strong>Error Filter</strong></p>
+
+<p><img src="\staticfiles\processflow\media\error_filter3.PNG" alt="errorfilter3" /></p>
+
+<p>5) Click on the ellipses beside the Error Filter to view the <strong>CREATE</strong> Button. Clicking on the create button, the error filter creation window opens.</p>
+
+<p><img src="\staticfiles\processflow\media\error_filter4.PNG" alt="errorfilter4" /></p>
+
+<p>6) You get the option to provide your retry filter for TWO sections. Either on <strong>HEADER</strong> and <strong>BODY</strong>. As per you application API, you can provide the following details to configure the retry filter. Provide the following details to configure the retry filter.</p>
+
+<ul>
+  <li>Key: This is the filter key that will define the key to filter.</li>
+  <li>Operator: You need to select the type of operator needed for the execution of the action filter.</li>
+  <li>Value: You need to provide the value to the filter that will be executed to GET or POST data.</li>
+</ul>
+
+<p>Click on the SAVE icon beside the filter to save the current sibling. To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the <strong>ADD CRITERIA</strong> button to add conjuction on the same level as of the elder sibling filter.</p>
+
+<p>Following the above process, you can successfully implement Retry filter for an action.</p>
+
+<h2 id="saving-and-creating-from-a-template-filter">Saving and creating from a Template Filter</h2>
+
+<p>1) Drag the application node for whose Action filter/Retry filter you need to create as a template.</p>
+
+<p>2) You need to navigate to the Node Configuration window &gt; Select Action &gt; configure filter.</p>
+
+<p>3) The Configure Filter opens. Expand the nodes until <code class="language-plaintext highlighter-rouge">Action filter</code> &amp; <code class="language-plaintext highlighter-rouge">Retry Filter</code> appears.</p>
+
+<p>4) Click on the <strong>CREATE</strong> button as per the options selected, either ACTION FILTER or RETRY FILTER. The create window opens as per the selected choice (The window remains same for both Action Filter and Retry Filter). 
+<strong>Here we have chosen ACTION FILTER</strong>.</p>
+
+<p>4) Provide the details in the fields and click on the SAVE icon beside the filter column. After saving the column, you get the option of <strong>SAVE AS TEMPLATE</strong>.</p>
+
+<p><img src="\staticfiles\processflow\media\savetemplate1.PNG" alt="savetemplate1" /></p>
+
+<p>5) Click on the <strong>Save as Template</strong> button to save the provided Action Filter as a template. 
+You can reuse this saved template on any other nodes of any processflow in your organisation, 
+provided the <strong>application node</strong> , <strong>Schema</strong> &amp; the <strong>Action</strong> remains the same.</p>
+
+<p>6) You can view the saved for the schema and action by navigating to <strong><a href="/processflow/adding-schema-actions/#listing-of-schemas-and-attributes">Manage Schema</a> &gt; your selected Schema Entity &gt; The Action in which you have created the Template &gt; Click on the Action filter.</strong>
+You will be able to view the saved template for that schema and the action. The template will not be editable in the Manage schema window.</p>
+
+<p>7) To create filter from a saved template, navigate to Node Config window -&gt;  Select Schema -&gt; Select Action -&gt; Configure filter. Expand the Schema node until Action Filter, Retry Filter appears.</p>
+
+<p>8) Click on the Ellipses beside your chosen option (Action Filter, Retry Filter) and select the option <strong>Create from template</strong> from the context menu.</p>
+
+<p><img src="\staticfiles\processflow\media\createtemplate1.PNG" alt="createtemplate1" /></p>
+
+<p>9) On clicking <strong>Create from template</strong> you get a confirmation message. Click on the YES button.</p>
+
+<p><img src="\staticfiles\processflow\media\createtemplate2.PNG" alt="createtemplate2" /></p>
+
+<p>10) The saved template opens. You can anytime edit the action filter placed in the template as per your requirement. The updates made will not change in the template that is saved.</p>
+
+<p><img src="\staticfiles\processflow\media\createtemplate3.PNG" alt="createtemplate3" /></p>
+
+<p>Following the above process you can successfully SAVE and create filter from template.</p>
+
+<p><strong>Note:</strong></p>
+
+<p><strong>-The steps to remains when working with Retry filer.</strong></p>
+
+<p><strong>- Each action of a schema can have only one created template.</strong></p>
+
+<p><strong>- You cannot modify the template when viewed from the <a href="/processflow/adding-schema-actions/#listing-of-schemas-and-attributes">Manage Schema</a> section.</strong></p>
+
+<p><strong>- You can also <code class="language-plaintext highlighter-rouge">view</code> , <code class="language-plaintext highlighter-rouge">edit</code> and <code class="language-plaintext highlighter-rouge">delete</code> the saved template from the <a href="/getting%20started/configurations/">APPS</a> section.</strong></p>
+
+:ET

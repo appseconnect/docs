@@ -1,0 +1,50 @@
+I"	<p>Zipping up of multiple files in packages makes it easy to reuse and share 
+with different users.</p>
+
+<p>Huge set of files can easily be zipped and packaged for sharing making 
+collaborations easy. processflow is an advanced concept and with its 
+latest packaging technique, you can easily bundle multiple processflows 
+within packages and can share with different organisation users which 
+diminishes the time for creating mapping an identical processflow in a 
+different organisation.</p>
+
+<h2 id="navigating-to-processflow-packages">Navigating to processflow Packages:</h2>
+
+<p>1) Navigate to the <strong>Designer &gt; processflow</strong>. The <a href="/processflow/processflow-listing-page/">processflow listing</a> page appears.</p>
+
+<p><img src="\staticfiles\processflow\media\package1.PNG" alt="package1" /></p>
+
+<p>2) Click on the <strong>Package Library</strong> folder that gives the summary on Packages. On expanding the Package Library node, you will listed with two sub folders.</p>
+
+<ul>
+  <li>My Packages - This will enable you to create and Share Package to different organisations.</li>
+  <li>Shared With Me - This will enable you to view and install incoming packages from other organisations, shared to you.</li>
+</ul>
+
+<p><img src="\staticfiles\processflow\media\sharedlistingpage1.PNG" alt="sharedlistingpage1" /></p>
+
+<h2 id="for-more-details-on-packaging-please-visit-the-below-sections">For more details on packaging, please visit the below sections:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modules</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/processflow/processflow-packaging/">processflow Packaging</a></td>
+      <td>Lets you understand the steps to create &amp; edit packages. You’ll get more details on Package listing and View Packages</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/processflow-package-sharing/">Package Sharing</a></td>
+      <td>Enables you to share the created packages from one organisation to another.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/processflow-package-installation/">Package Installation &amp; Reinstallation</a></td>
+      <td>Enables you to view and install/Reinstall the incoming packages shared from remote organisations.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

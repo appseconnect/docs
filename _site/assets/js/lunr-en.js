@@ -2833,6 +2833,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "2020-Q3 Version 1.0 Hotfix Release Note",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q3 Release. This hotfix release introduces few minor improvements...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 313
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -6287,6 +6296,17 @@ var store = [
         "title": "Copy Processflow",
         "url": "/processflow/copy-processflow/",
         "excerpt": "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "2020-Q3 Version 1.0 Hotfix Release Note",
+        "url": "/release-notes/2020-Q3-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q3 Release. This hotfix release introduces few minor improvements...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

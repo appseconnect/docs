@@ -1,0 +1,108 @@
+I"†<p>APPSeCONNECT is of Hybrid Architecture and the data can be integrated both on the <code class="language-plaintext highlighter-rouge">CLOUD PORTAL</code>
+and in <code class="language-plaintext highlighter-rouge">OP Agent</code>. This section of the document will enable you to know and configure the Cloud Agent and the OP Agent.</p>
+
+<h2 id="cloud-agent-configuration">Cloud Agent Configuration</h2>
+
+<p class="notice--info"><strong>Protip</strong> By default, organisations will only be On-Premise enabled. Users of the organisation needs to<br />
+contact the APPSeCONNECT team for enabling cloud hosted organisation so that users can integrate cloud application 
+using the cloud agent.</p>
+
+<h3 id="pre-requisites">Pre-requisites</h3>
+<ul>
+  <li>The Organisation should be cloud Enabled.</li>
+  <li>The two applications between which data has to be synced should be cloud supported.</li>
+  <li>The connection made for the two applications should be cloud supported.</li>
+</ul>
+
+<h3 id="enabling-organisations-for-cloud-support">Enabling Organisations for Cloud Support:</h3>
+
+<p>a.	On the Dashboard of your cloud portal, click PROJECTS &gt; Manage Projects.</p>
+
+<p>b.	Click on the Edit button on your project.</p>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Edit-Organization.png" alt="Edit-Organization" /></p>
+
+<p>c.	Enable the Check-Box for <strong>Cloud Hosting</strong> and click <strong>SAVE</strong>.</p>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Edit-Organization1.png" alt="Edit-Organization1" /></p>
+
+<p>d.	After enabling the organisation for Cloud Hosting, a new environment is to be created for CLOUD EXECUTION.</p>
+
+<p>e.	In the Environment section of the cloud portal, Click on the <strong>HOSTED</strong> button. <a href="/deployment/Environment-Management/#create-hosted-environment">Click Here</a> to know more on creating a Cloud Environment.</p>
+
+<h2 id="on-premise-agent-configuration">On-Premise Agent Configuration:</h2>
+
+<h3 id="pre-requisites-1">Pre-requisites</h3>
+
+<ol>
+  <li>The user needs to have an account in the APPSeCONNECT Portal.</li>
+  <li>The implementer/user needs to have a valid user name and password for accessing the APPSeCONNECT Portal.</li>
+</ol>
+
+<h3 id="installing-process-of-an-on-premise-agent">Installing Process of an On Premise Agent:</h3>
+<p>a.	Login to the portal. Download the Agent from the <a href="/accessing%20portal/accessing-portal/#downloads-section">Downloads menu</a> as shown below.</p>
+
+<p>b.	Run the SETUP FILE (as administrator). The Setup wizard opens.</p>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/AgentWizard.png" alt="AgentWizard" /></p>
+
+<p>c.  Click <strong>Next button</strong> to begin the installation process.</p>
+
+<p>d.	Open the Agent after the installation.</p>
+
+<p>e.	Hover and activate the cursor on the Login ID field and Press CTRL+F10 for configuring 
+    the Base API URL, Connection URL.</p>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/AgentLogin-Screen.png" alt="AgentLogin-Screen" /></p>
+
+<p>f.	Provide the Username and Password of your AEC Cloud Portal and click Login.</p>
+
+<p>g.	Once logged in the <em>Agent provides four set of tabs</em>  as shown below:</p>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Agent-Icon.png" alt="Agent-Icon" /></p>
+
+<ul>
+  <li>The home icon shows the Connections in the project.</li>
+  <li>The Apps configuration icon (next to the home icon) shows the applications used for the connections 
+which need to be configured for successful sync.</li>
+  <li>The Sync panel displays the connections deployed successfully for sync. It is visible after you have checked the Show in 
+sync panel checkbox in the Connections page.</li>
+  <li>The last one is the Workflow Panel that displays the configured workflows in the project.</li>
+</ul>
+
+<ol>
+  <li>The <strong>home icon</strong> shows the all the Connections Present in the project. New connection if made, 
+will reflect only if Update Configuration is clicked. Click on the checkbox in each connection 
+for viewing the touchpoint in the SYNC PANEL.</li>
+</ol>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Agent-Home.png" alt="Agent-Home" /></p>
+
+<ol>
+  <li>The <strong>Apps configuration icon</strong> (next to the home icon) shows the applications used for the connections 
+which need to be configured for successful sync.  Clicking on the + beside any application, 
+opens the application validation page.</li>
+</ol>
+
+<p><strong>Note: The drop-down provided beside the application is for editing the application configuration details. The drop-down gets activated only after the first validation of the corresponding application.</strong></p>
+
+<p><strong>Note: Validated application can only be edited, when the check box is disabled for that application in the connections page of the agent</strong></p>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Agent-AppConfig.png" alt="Agent-AppConfig" /></p>
+
+<ol>
+  <li>The <strong>Sync panel</strong>  displays the connections deployed successfully for sync. All the activated transaction 
+and configuration touchpoints are displayed here. The touchpoints in sync panel is visible after you 
+have checked the Show in sync panel checkbox in the Connections page.</li>
+</ol>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Agent-SyncPanel.png" alt="Agent-SyncPanel" /></p>
+
+<ol>
+  <li>The last one is the <strong>Workflow Panel</strong> that displays the workflows created or activated in the portal. 
+The workflows can be synced from the sync panel. All the errors in sync bucket and log bucket can be 
+viewed in the Workflow Panel.</li>
+</ol>
+
+<p><img src="/staticfiles/deployment/media/AgentConfig/Agent-WorkflowPanel.png" alt="Agent-WorkflowPanel" /></p>
+:ET
