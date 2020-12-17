@@ -36,13 +36,25 @@ On dragging the Start node to the designer panel, the Start Node Configuration w
 
 By default, the **Polling type** would be selected.
 
-3) Selection of Polling Type will allow your processflow to trigger a normal sync process either manually or if scheduled.
 
-4) On selecting the Trigger Type as **Event**, the following field would appear: **Enter Register URL**.
+### Trigger Type - Polling
+
+a) Selection of Polling Type will allow your processflow to trigger a normal sync process either manually or if scheduled. Click on the SAVE button after selecting the Radio button for POLLING Type.
+
+b) [Design](/processflow/creating-processflow/) and [Deploy](/processflow/deploying-and-executing-processfloww/#deploying-processflows-to-environment) your ProcessFlow to your choice of environment.
+
+c) [Execute](/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow) ProcessFlow by clicking on the PLAY button on your designer page.
+
+d) You can anytime check your snapshot for the execution status and data survey for both Trigger Types. For more details on Snapshot, [Click Here](/processflow/snapshot-processflow/).
+
+
+### Trigger Type - Event
+
+a) On selecting the Trigger Type as **Event**, the following field would appear: **Enter Register URL**.
 
 ![startnode2](\staticfiles\processflow\media\startnode2.PNG)
 
-5) Provide the details for these fields.
+b) Provide the details for the field.
 
 - **Enter Register URL :** You will have to provide your Organisation name as the sub-domain that would be merged with the APPseCONNECT Domain. 
 
@@ -52,7 +64,7 @@ This field for registering URL will appear only when you havent register any URL
 
 ![startnode3](\staticfiles\processflow\media\startnode3.PNG)
 
-5) Once you are done with the configurations, Click on the SAVE button. On saving the Registered URL, you get a confirmation message. 
+c) Once you are done with the configurations, Click on the SAVE button. On saving the Registered URL, you get a confirmation message. 
 
 ![startnode6](\staticfiles\processflow\media\startnode6.PNG)
 
@@ -62,33 +74,23 @@ You can also view your registered URL on your **APIs Section**. Navigate: Manage
 
 **Note: You cannot alter a registered URL for any processflow, once SAVED in your organisation.**
 
-6) Now you need to design your processflow. [Click Here](/processflow/creating-processflow/) to know more on ProcessFlow creation.
+d) design your processflow to integrate your chosen apps. [Click Here](/processflow/creating-processflow/) to know more on ProcessFlow creation.
 
-7) Deploy your designed processflow to your required environment. 
-
-a. If your Trigger Type is selected as **Polling**, the steps for deployment will remain same.
-
-b. If your Trigger Type is selected as **Event**, the deployment will not have the **Sync & Retry** step.
+e) Deploy your designed processflow to your required environment. For Trigger Type **Event**, the deployment will not have the **Sync & Retry** step.
 
 [Click Here](/processflow/deploying-and-executing-processfloww/#deploying-processflows-to-environment) for more details ProcessFlow Deployment.
 
-8) The deployed processflows with Trigger Type **EVENT** will represent with a Black Icon in the [ProcessFlow tab](/deployment/Environment-Management/#pre-requisites) in environment section.
+f) The deployed processflows with Trigger Type **EVENT** will represent with a Black Icon in the [ProcessFlow tab](/deployment/Environment-Management/#pre-requisites) in environment section.
 
 ![startnode4](\staticfiles\processflow\media\startnode4.PNG)
 
-Trigger Type **Polling** will have normal representation in the ProcessFlow Tab in Environment Section. 
+g) The ProcessFlows needs to be executed once the deployment is over. For **Event Type**, The execution will on REALTIME basis. The RUN button in the designer page will be disabled for **EVENT** Trigger.
 
-9) The ProcessFlows needs to be executed once the deployment is over. Execution for Trigger Types differs:
-
-a. For **Polling Type**: The execution process will be a normal procedure by clicking on the Execute button. For more details on this process, [Click Here](/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow).
-
-b. For **Event Type**: The execution will on REALTIME basis.
-
-10) You can anytime check your snapshot for the execution status and data survey for both Trigger Types. For more details on Snapshot, [Click Here](/processflow/snapshot-processflow/).
+h) You can anytime check your snapshot for the execution status and data survey for both Trigger Types. For more details on Snapshot, [Click Here](/processflow/snapshot-processflow/).
 
 ![startnode5](\staticfiles\processflow\media\startnode5.PNG)
 
-11) You can also view your Triggered **EVENT** URL, from Environment Section. Navigate: **Deploy > Environments > Processflow Tab > [Processflow URL](/deployment/Environment-Management/#on-premise-environment-details-page)** (in the context menu).
+i) You can also view your Triggered **EVENT** URL, from Environment Section. Navigate: **Deploy > Environments > Processflow Tab > [Processflow URL](/deployment/Environment-Management/#on-premise-environment-details-page)** (in the context menu).
 
 ![startnode8](\staticfiles\processflow\media\startnode8.PNG)
 
@@ -101,6 +103,7 @@ Following the above process you can successfully configure and execute Start Nod
 - Registered URL will be displayed on Read-Only mode.
 - You can anytime convert a normal Processflow to a Triggered Processflow, by updating START node Configurations.
 - For the Trigger Type `EVENT`, the SYNC & RETRY section will not be available during its deployment process. 
+- The RUN button in the designer page will be disabled for Trigger Type **EVENT**.
 
 
 
