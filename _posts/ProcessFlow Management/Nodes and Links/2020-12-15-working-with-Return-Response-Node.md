@@ -26,13 +26,11 @@ The return information can be configured according to 2 Responses:
 
 ## Working Principle:
 
-1) Navigate to the designer and drag the Return Response Node to the design panel, available under **Flow Logic**.
-
-![returnresponse1]()
+1) Navigate to the designer and drag the Return Response Node to the design panel, available under **Flow Logic** menu.
 
 2) The Node Configuration Window of the Return Response Node Opens.
 
-![returnresponse2]()
+![returnresponse2](\staticfiles\processflow\media\returnresponse2.PNG)
 
 3) Response node can return Two types of Responses that can be selected using Radio Buttons:
 
@@ -45,7 +43,7 @@ a. On selecting this response type, you get the following field:
 
 - Define Acknowledgement Message: You need to provide a customized information that will be returned as the response.
 
-![returnresponse3]()
+![returnresponse3](\staticfiles\processflow\media\returnresponse3.PNG)
 
 b. Click on the SAVE button, once you provided the customized info.
 
@@ -53,6 +51,21 @@ c. [Design](/processflow/creating-processflow/) your processflow and [Deploy](/p
 
 d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the Customized Info provided by the user as Return Response.
 
-![returnresponse4]()
+![returnresponse4](\staticfiles\processflow\media\returnresponse4.PNG)
 
 ### Reponse Type: Output of the Previous Node
+
+a.  On selecting this response type, the Output of the preceeding node will be displayed in the **Transaction file tab** of [snapshot](/processflow/snapshot-processflow/) for the Response Type node.
+
+![responsenode5](\staticfiles\processflow\media\returnresponse5.PNG)
+
+b. Click on the SAVE button, once you provided the customized info.
+
+c. d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the the previous node output in Response node transaction file.
+
+![responsenode6](\staticfiles\processflow\media\returnresponse6.PNG)
+
+**Note:**
+
+- You cannot implement Response Node with Start Trigger Type as Polling.
+- You cannot link multiple Response Nodes with each other.
