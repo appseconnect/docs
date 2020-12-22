@@ -57,13 +57,13 @@ d. The snapshots will be generated for each execution that will allow you to sur
 
 a.  On selecting this response type, the Output of the preceeding node will be displayed in the **Transaction file tab** of [snapshot](/processflow/snapshot-processflow/) for the Response Type node.
 
-![responsenode5](\staticfiles\processflow\media\returnresponse5.PNG)
+![responsenode5](\staticfiles\processflow\media\responsenode5.PNG)
 
 b. Click on the SAVE button, once you provided the customized info.
 
 c. d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the the previous node output in Response node transaction file.
 
-![responsenode6](\staticfiles\processflow\media\returnresponse6.PNG)
+![responsenode6](\staticfiles\processflow\media\responsenode6.PNG)
 
 **Note:**
 

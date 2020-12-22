@@ -2678,13 +2678,11 @@ Return Response Node needs to be implemented after the node whose response youâ€
 
 <h2 id="working-principle">Working Principle:</h2>
 
-<p>1) Navigate to the designer and drag the Return Response Node to the design panel, available under <strong>Flow Logic</strong>.</p>
-
-<p><img src="" alt="returnresponse1" /></p>
+<p>1) Navigate to the designer and drag the Return Response Node to the design panel, available under <strong>Flow Logic</strong> menu.</p>
 
 <p>2) The Node Configuration Window of the Return Response Node Opens.</p>
 
-<p><img src="" alt="returnresponse2" /></p>
+<p><img src="\staticfiles\processflow\media\returnresponse2.PNG" alt="returnresponse2" /></p>
 
 <p>3) Response node can return Two types of Responses that can be selected using Radio Buttons:</p>
 
@@ -2701,7 +2699,7 @@ Return Response Node needs to be implemented after the node whose response youâ€
   <li>Define Acknowledgement Message: You need to provide a customized information that will be returned as the response.</li>
 </ul>
 
-<p><img src="" alt="returnresponse3" /></p>
+<p><img src="\staticfiles\processflow\media\returnresponse3.PNG" alt="returnresponse3" /></p>
 
 <p>b. Click on the SAVE button, once you provided the customized info.</p>
 
@@ -2709,9 +2707,26 @@ Return Response Node needs to be implemented after the node whose response youâ€
 
 <p>d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the Customized Info provided by the user as Return Response.</p>
 
-<p><img src="" alt="returnresponse4" /></p>
+<p><img src="\staticfiles\processflow\media\returnresponse4.PNG" alt="returnresponse4" /></p>
 
 <h3 id="reponse-type-output-of-the-previous-node">Reponse Type: Output of the Previous Node</h3>
+
+<p>a.  On selecting this response type, the Output of the preceeding node will be displayed in the <strong>Transaction file tab</strong> of <a href="/processflow/snapshot-processflow/">snapshot</a> for the Response Type node.</p>
+
+<p><img src="\staticfiles\processflow\media\responsenode5.PNG" alt="responsenode5" /></p>
+
+<p>b. Click on the SAVE button, once you provided the customized info.</p>
+
+<p>c. d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the the previous node output in Response node transaction file.</p>
+
+<p><img src="\staticfiles\processflow\media\responsenode6.PNG" alt="responsenode6" /></p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li>You cannot implement Response Node with Start Trigger Type as Polling.</li>
+  <li>You cannot link multiple Response Nodes with each other.</li>
+</ul>
 
                 
             </section>

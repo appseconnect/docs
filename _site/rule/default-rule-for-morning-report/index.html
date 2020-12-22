@@ -2664,8 +2664,19 @@ on daily basis. The main utility for this report is:</p>
 <ol>
   <li>The feature has been implemented in APPSeCONNECT Rule engine, so that rule gets triggered on default scheduled time for all organization users. 
 (00:00 hrs Local Time for OP Agent and UTC Time for Cloud Agent users)</li>
-  <li>The report will have the following columns that will display the following details :</li>
+  <li>
+    <p>The report will have two sections that would display the execution status for the last 24 hours: 
+a. Connection Wise Status Report: This section will display the execution reports for sync process implemented using <strong>Workflow</strong>.
+b. ProcessFlow Execution Status Report: This section will display the execution reports for sync process implemented using <strong>ProcessFlows</strong></p>
+  </li>
+  <li>
+    <p><strong>Transaction Period:</strong> Denotes the timespan of data transaction meant for report generation.
+To Cite an example, if the transaction period is from 3.12.2019 - 00.00hrs to 4.12.2019 23.59 hrs (Inclusive of 59th minute)</p>
+  </li>
+  <li><strong>Data Generated From:</strong> This will enlist your environment name using which the processes are integrated.</li>
 </ol>
+
+<p>The report will have the following columns that will display the following details :</p>
 
 <table>
   <thead>
@@ -2675,6 +2686,10 @@ on daily basis. The main utility for this report is:</p>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>Connection/ProcessFlow Name</td>
+      <td>This will display the name of the Connection (Workflow) or ProcessFlow name  that was executed.</td>
+    </tr>
     <tr>
       <td>Success</td>
       <td>These are the Data which is successfully synced within the transaction period</td>
@@ -2687,9 +2702,6 @@ on daily basis. The main utility for this report is:</p>
 </table>
 
 <p><strong>Note: Failed data that have been attempted with autosync of resync, for Success, the count would be displayed on the success column on the morning report for the next day.</strong></p>
-
-<p>Transaction Period: Denotes the timespan of data transaction meant for report generation.
-To Cite an example, if the transaction period is from 3.12.2019 - 00.00hrs to 4.12.2019 23.59 hrs (Inclusive of 59th minute)</p>
 
 <p><img src="/staticfiles/rules/media/morning-report.png" alt="morning-report" /></p>
 
