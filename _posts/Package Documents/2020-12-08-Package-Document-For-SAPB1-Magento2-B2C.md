@@ -230,7 +230,6 @@ i.	Flow Description: This ProcessFlow is featured to update complete details of 
 ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Bundle Product] ; ProcessFlow - Web Item Master Data Add [Bundle Product]
 
 
-
 -	**ProcessFlow - Configurable Product Add**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the configurable products from SAP Business One to Magento2. A configurable product are the simple products with options, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. The Simple Product Add flow is also equipped with a Post Acknowledgement task that integrates Sync Back Flag details. 

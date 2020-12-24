@@ -80,3 +80,9 @@ i.	Flow Description: This ProcessFlow is featured to sync the following details 
 ii.	Dependency Flow: Not Applicable 
 
 
+-	**ProcessFlow - Order Add:** 
+
+i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
+
+ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update. 
+The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
