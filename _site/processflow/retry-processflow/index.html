@@ -19,12 +19,12 @@
 
 
 
-<title>Retrying a processflow - APPSeCONNECT Product Docs</title>
+<title>Sync Info &amp; Retry - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. processflow Retry can be configured both Manually and in Auto-Mode.">
+<meta name="description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. Processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. ProcessFlow Retry can be configured both Manually and in Auto-Mode.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Retrying a processflow">
+<meta property="og:title" content="Sync Info &amp; Retry">
 
 
   <link rel="canonical" href="http://localhost:4000/processflow/retry-processflow/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. processflow Retry can be configured both Manually and in Auto-Mode.">
+  <meta property="og:description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. Processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. ProcessFlow Retry can be configured both Manually and in Auto-Mode.">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Retrying a processflow</li>
+      <li class="current">Sync Info & Retry</li>
     
   
 </ol>-->
@@ -1517,7 +1517,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Retrying a processflow">Retrying a processflow</a>
+        <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Sync Info & Retry">Sync Info & Retry</a>
         
     </li>
     
@@ -2568,8 +2568,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Retrying a processflow">
-        <meta itemprop="description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. processflow Retry can be configured both Manually and in Auto-Mode.">
+        <meta itemprop="headline" content="Sync Info &amp; Retry">
+        <meta itemprop="description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. Processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. ProcessFlow Retry can be configured both Manually and in Auto-Mode.">
         <meta itemprop="datePublished" content="March 18, 2020">
         
 
@@ -2597,7 +2597,7 @@
                 
                 
                 
-                <li class="current">Retrying a processflow</li>
+                <li class="current">Sync Info & Retry</li>
                 
                 
             </ol>
@@ -2607,7 +2607,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Retrying a processflow
+                <h1 class="page__title" itemprop="headline">Sync Info &amp; Retry
 </h1>
                 
                 
@@ -2651,8 +2651,13 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#prerequisites-for-processflow-retry-in-auto-mode">Prerequisites for processflow Retry (in Auto-Mode)</a></li>
-  <li><a href="#steps-to-configure-auto-retry">Steps to configure Auto-Retry:</a></li>
+  <li><a href="#prerequisites-for-processflow-retry-in-auto-mode">Prerequisites for processflow Retry (in Auto-Mode)</a>
+    <ul>
+      <li><a href="#configuring-auto-retry">Configuring Auto-Retry:</a></li>
+      <li><a href="#sync-info--retry">Sync Info &amp; Retry</a></li>
+      <li><a href="#manual-retry">Manual Retry</a></li>
+    </ul>
+  </li>
 </ul>
                     </nav>
                 </aside>
@@ -2660,8 +2665,8 @@
                 <p>Execution of a processflow is vital process for transforming data from source to 
 destination application. In real-time, execution of processflow may fetch errors 
 with respect to data configurations. 
-processflow Retry is a feature that can Resync the data after rectifying the error 
-such that no data loss occurs with respect to the sync process. processflow Retry 
+Processflow Retry is a feature that can Resync the data after rectifying the error 
+such that no data loss occurs with respect to the sync process. ProcessFlow Retry 
 can be configured both Manually and in Auto-Mode.</p>
 
 <h2 id="prerequisites-for-processflow-retry-in-auto-mode">Prerequisites for processflow Retry (in Auto-Mode)</h2>
@@ -2672,7 +2677,7 @@ can be configured both Manually and in Auto-Mode.</p>
   <li>You need to execute a processflow for implementing Retry.</li>
 </ul>
 
-<h2 id="steps-to-configure-auto-retry">Steps to configure Auto-Retry:</h2>
+<h3 id="configuring-auto-retry">Configuring Auto-Retry:</h3>
 <ol>
   <li>Navigate to the processflow designer page and Deploy/Redeploy a processflow.</li>
   <li>Click on the <code class="language-plaintext highlighter-rouge">Deploy button</code> in the designer page. The <a href="/processflow/deploying-and-executing-processfloww/">deploy</a> wizard opens.</li>
@@ -2695,21 +2700,30 @@ Interval time can be selected from 1-23 only.  <br />
 (b) Time Lapse: This determines the execution time of the set of errored data and will execute the Retry based on its previous attempts. The time lapse is based on Minutes.    <br />
 (c) Batch Size: This defines the number of data  that will be Resynced in one batch.  <br />
 For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse selected as 20mins. The failed data will be activated for retry after 14:20 hrs. And if the Interval is set at 1hr, the execution of the Retry sync of those failed data happen at 15:00 hrs, if the Deployment Time and the first execution was made at 14:00 hrs.</li>
-  <li>After configuring the Auto-Retry, click on the Deploy button. Execute the designed processflow.
+  <li>After configuring the Auto-Retry, click on the <strong>FINISH</strong> button. Execute the designed processflow.
  <strong>You can execute the processflow both in Manual or in Auto-Mode even if processflow Retry is configured as Auto.</strong></li>
-  <li>Navigate to the Manage &gt; Environment for viewing the Resync Bucket of Retry, for the executed processflow.
-<strong>You need have the environment active for viewing the details page, You can troubleshoot a <a href="/deployment/Environment-Management/#detaching-and-attaching-environment">detached or a disconnected agent</a>.</strong></li>
-  <li>Click processflows Tab. You can view the list of all the deployed processflows. Following are the details that will display for each deployed processflows.
+</ol>
+
+<h3 id="sync-info--retry">Sync Info &amp; Retry</h3>
+<ol>
+  <li>
+    <p>Navigate to the Deploy &gt; Environment for viewing the Sync Info for Retrying, the executed processflow.</p>
+  </li>
+  <li>Click on <strong>ProcessFlows</strong> Tab. You can view the list of all the deployed processflows. Following are the details that will display for each deployed processflows.
     <ul>
-      <li>Name of the processflow</li>
-      <li>The time of Deployment</li>
-      <li>Actions  <br />
+      <li>ProcessFlow Name</li>
+      <li>Deployed At</li>
+      <li>No. of Tries</li>
+      <li>Deployment Status</li>
+      <li>Actions
 <img src="../../../staticfiles/processflow/media/processflow-retry5.png" alt="Processflow Retry5" /></li>
     </ul>
   </li>
-  <li>Click Ellipses button (…) available beside the processflow that you have executed. You can view the Retry button available in the context menu.<br />
-<img src="../../../staticfiles/processflow/media/processflow-retry6.png" alt="Processflow Retry6" /></li>
-  <li>The Resync Bucket of the Retry Window opens. You can view the following details in the Rety Window:
+  <li>
+    <p>Click Ellipses button (…) available beside the processflow that you have executed. You can view the <strong>SyncInfo</strong> button available in the context menu.<br />
+<img src="../../../staticfiles/processflow/media/processflow-retry6.png" alt="Processflow Retry6" /></p>
+  </li>
+  <li>The Sync Info Window that will capture all the data that have synced successfully or have faced errors. You can view the following details in the Sync Info Window:
     <ul>
       <li>Name: You will be able to view the name of the processflow in the Header Panel.</li>
       <li>Environment Name: You will be able to view the Environment Name, on which the PF is deployed.</li>
@@ -2719,23 +2733,47 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 <img src="../../../staticfiles/processflow/media/processflow-retry7.png" alt="Processflow Retry7" /></li>
     </ul>
   </li>
-  <li>You can filter the data in the list using the contents of the Source ID by click on the filter icon.
-<img src="../../../staticfiles/processflow/media/processflow-retry8.png" alt="Processflow Retry8" /></li>
-  <li>You can view the list of the Failed items along with the following set of informations.
+  <li>You can view the list of the data along with the following set of informations.
     <ul>
       <li>Node Name: You will be viewing the app name used in the GET node.</li>
       <li>Source Id : The Ids of the failed item fetched from the Source App will be displayed in this Column.</li>
       <li>Status: The status of the all the data failure/Success will be displayed in the bucket.</li>
       <li>Time Stamp: You will be viewing the time stamp of the last execution.</li>
       <li>Tries: You would be viewing number of tries that has been attempted to resync a failed data. 
- <img src="../../../staticfiles/processflow/media/processflow-retry9.png" alt="Processflow Retry9" />  <br />
-<strong>Note: For Auto-Retry, each data will be Retried 4 times excluding the main execution.</strong></li>
+ <img src="../../../staticfiles/processflow/media/processflow-retry9.png" alt="Processflow Retry9" /></li>
     </ul>
   </li>
-  <li>You can also Resync the failed data manually, after auto-retry has made its attempts, by selecting the check boxes and clicking on the <strong>RESYNC</strong> button.</li>
+  <li>Sync Info Window will display following sync status:
+    <ul>
+      <li><strong>Success</strong></li>
+      <li><strong>Failed</strong></li>
+      <li><strong>Unprocessed</strong>.</li>
+    </ul>
+  </li>
+  <li>You can filter the data in the list using the contents of the Source ID by click on the filter icon.
+<img src="../../../staticfiles/processflow/media/processflow-retry8.png" alt="Processflow Retry8" /></li>
 </ol>
 
-<p><strong>Note:</strong> You can either select all the data by enabling the checkbox beside <code class="language-plaintext highlighter-rouge">Node Name</code> or you can individually select checkbox, for executing the Resync Process for selective data.</p>
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li>For Auto-Retry, each data will be Retried 4 times excluding the main execution.</li>
+  <li>You need have the environment active for viewing the details page, You can troubleshoot a <a href="/deployment/Environment-Management/#detaching-and-attaching-environment">detached or a disconnected agent</a>.</li>
+  <li>You can anytime Resync the <code class="language-plaintext highlighter-rouge">Failed</code> and the <code class="language-plaintext highlighter-rouge">Unprocessed</code> data.</li>
+</ul>
+
+<h3 id="manual-retry">Manual Retry</h3>
+
+<ol>
+  <li>
+    <p>You can anytime Resync the <strong>Failed &amp; Unprocessed</strong> data manually, after auto-retry has made its attempts,</p>
+  </li>
+  <li>
+    <p>Select the check boxes and click on the <strong>RESYNC</strong> button.</p>
+  </li>
+</ol>
+
+<p><strong>Note:</strong> You can either select all the data by enabling the checkbox beside <code class="language-plaintext highlighter-rouge">Node Name</code> or you can individually select checkbox, for executing the Resync Process of selective data.</p>
 
 <p><img src="../../../staticfiles/processflow/media/processflow-retry10.png" alt="Processflow Retry10" /></p>
 
@@ -2799,7 +2837,7 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Retrying+a+processflow%20https://docs.appseconnect.com%2Fprocessflow%2Fretry-processflow%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Sync+Info+%26+Retry%20https://docs.appseconnect.com%2Fprocessflow%2Fretry-processflow%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Fretry-processflow%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

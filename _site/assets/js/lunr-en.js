@@ -2150,7 +2150,7 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "Retrying a processflow",
+      title: "Sync Info & Retry",
       excerpt: "Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow...",
       categories: ["Processflow"],
       tags: ["developers"],
@@ -5477,7 +5477,7 @@ var store = [
     
       
       {
-        "title": "Retrying a processflow",
+        "title": "Sync Info & Retry",
         "url": "/processflow/retry-processflow/",
         "excerpt": "Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow...",
         "teaser":

@@ -1,5 +1,5 @@
 ﻿---
-title:  "Sync Info & Retry
+title:  "Sync Info & Retry"
 toc: true
 tag: developers
 category: "Processflow"
