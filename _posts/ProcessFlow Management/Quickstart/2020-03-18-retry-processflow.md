@@ -47,8 +47,7 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
  **You can execute the processflow both in Manual or in Auto-Mode even if processflow Retry is configured as Auto.**
 
 ### Sync Info & Retry
-1.	Navigate to the Manage > Environment for viewing the Sync Info for Retrying, the executed processflow.
-**You need have the environment active for viewing the details page, You can troubleshoot a [detached or a disconnected agent](/deployment/Environment-Management/#detaching-and-attaching-environment).** 
+1.	Navigate to the Deploy > Environment for viewing the Sync Info for Retrying, the executed processflow. 
 
 2.	Click on **ProcessFlows** Tab. You can view the list of all the deployed processflows. Following are the details that will display for each deployed processflows.
 * ProcessFlow Name  
@@ -77,12 +76,19 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 * Tries: You would be viewing number of tries that has been attempted to resync a failed data. 
  ![Processflow Retry9](../../../staticfiles/processflow/media/processflow-retry9.png)   
  
-**Note: For Auto-Retry, each data will be Retried 4 times excluding the main execution.**
-
-6. Sync Info Window will display the data of follwoing sync status: **Success, Failed & Unprocessed**. You can anytime Resync the `Failed` and the `Unprocessed` data.
+6. Sync Info Window will display following sync status: 
+- **Success** 
+- **Failed** 
+- **Unprocessed**. 
 
 7.	You can filter the data in the list using the contents of the Source ID by click on the filter icon.
 ![Processflow Retry8](../../../staticfiles/processflow/media/processflow-retry8.png) 
+
+**Note:**
+
+- For Auto-Retry, each data will be Retried 4 times excluding the main execution.
+- You need have the environment active for viewing the details page, You can troubleshoot a [detached or a disconnected agent](/deployment/Environment-Management/#detaching-and-attaching-environment).
+- You can anytime Resync the `Failed` and the `Unprocessed` data.
 
 ### Manual Retry
 
@@ -90,7 +96,7 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 
 2. Select the check boxes and click on the **RESYNC** button. 
 
-**Note:** You can either select all the data by enabling the checkbox beside `Node Name` or you can individually select checkbox, for executing the Resync Process for selective data. 
+**Note:** You can either select all the data by enabling the checkbox beside `Node Name` or you can individually select checkbox, for executing the Resync Process of selective data. 
 
 ![Processflow Retry10](../../../staticfiles/processflow/media/processflow-retry10.png)    
 
