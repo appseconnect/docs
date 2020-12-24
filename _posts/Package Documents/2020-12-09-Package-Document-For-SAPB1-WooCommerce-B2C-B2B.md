@@ -45,8 +45,6 @@ This package comprises of the following Applications.
 - [SAP Business One](https://docs.appseconnect.com/connectors/Sap-Business-One/)
 - [WooCommerce](https://docs.appseconnect.com/connectors/woocommerce/) 
 
-If you have an application which has an application connector present on platform, you as a user require very small effort to configure the connector to work correctly with the application. 
-
 ## Packaged Processflows & Dependencies:
 
 This package comes with pre-designed and mapped Processflows between your chosen applications which will enable you to Install, Deploy and Execute your flow seamlessly. With pre-implemented lookups and mappings, this Package will minimize your efforts to design and map your flow accordingly.  
