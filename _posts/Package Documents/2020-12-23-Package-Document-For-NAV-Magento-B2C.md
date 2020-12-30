@@ -168,9 +168,9 @@ Follow the documentation of Reference Tables for reference. The lookups listed b
 
 [Processflow Name][Reference Table]
 
-• [ ][] 
+• [Sales Order Add][Tax] 
 
-• [ ][]
+• [Sales Order Add][Frieght]
 
 ## Extension Configuration Information:
 
