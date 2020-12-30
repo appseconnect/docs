@@ -20,7 +20,7 @@ Checkout the Key Features of this package, listed below:
 1. Includes B2B & B2C Support: This package supports and comprises of the ProcessFlows both B2B and B2C at one place supporting both type of Business Module.
 2. Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
 3. Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically 
-4. Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
+4. Pre-Implemented mappings: The process flows in this package are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 
 ## Package Tech Specification
 

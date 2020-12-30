@@ -1,26 +1,26 @@
 ## Overview
 
-The package **SAP Business One - Shopify B2C** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design both for your B2C and B2B Business Module. 
+The package **Dynamics NAV - Magento2 B2C** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design both for your B2C and B2B Business Module. 
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
 ## Additional Information
 
 - Version Number – 1.0.0 
-- Package Name - Shopify and SAP Business One 
+- Package Name - Dynamics NAV - Magento2 B2C
 - Created By –  INSYNC Solutions
 - Last Modified - 23/12/2020 04:23:30 PM (Date & Time)
-- Apps Used in the Package – SAP Business One & Shopify
+- Apps Used in the Package –  Dynamics NAV & Magento2 
 
 ## Package Key Features
 
-**SAP Business One - Shopify** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
+**Dynamics NAV - Magento2 B2C** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
 Checkout the Key Features of this package, listed below:
 
 1. Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
-2. Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically 
-3. Pre-Implemented mappings: The process flows in this package are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
-4. Multiple Product Types Support: This package will enable you to sync product of types: Configurable products, bundle products, virtual products, downloadable products etc.
+2. Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically between your selected applications Magento2 & Dynamics NAV.
+3. Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
+4. Multiple Product Types Support: This package will enable you to sync product of types: Configurable products, bundle products & Simple Products etc.
 
 ## Package Tech Specification
 
@@ -42,106 +42,119 @@ Study your required application’s document to know about the Authentication and 
 
 This package comprises of the following Applications.
 
-- [SAP Business One](https://docs.appseconnect.com/connectors/Sap-Business-One/)
-- [Shopify](https://docs.appseconnect.com/connectors/shopify/) 
+- [Dynamics NAV](https://docs.appseconnect.com/connectors/Dynamicsnav/)
+- [Magento2](https://docs.appseconnect.com/connectors/magento2/) 
 
 ## Packaged Processflows & Dependencies:
 
 This package comes with pre-designed and mapped Processflows between your chosen applications which will enable you to Install, Deploy and Execute your flow seamlessly. With pre-implemented lookups and mappings, this Package will minimize your efforts to design and map your flow accordingly.  
-This package will not require any additional Configurational Master Data Sync which reduces additional Time and Efforts.
+Data Configuration is broadly classified into Master Data Configuration & Transactional Data Configuration. Your package may require both type of Data Configuration Processflows or simply transactional data Configuration, depending on your chosen application.
+
+Given below are the Master Data Configuration Details:
+
+• Master Data Add [Attribute Sets] 
+Description: This master data syncs the configuration details of the Product Attribute Sets. 
+
+• Master Data Add [Attributes]
+Description: This master data syncs the configuration details of the Product Attributes. 
+
+• Master Data Add [Attribute Options]
+Description: This master data syncs the configuration details of the Product Attribute Options. 
+
+• Master Data Add [Tax Class]
+Description: This master data syncs the configuration details of the Product Tax Classes. 
+
+• Master Data Add [WebSites]
+Description: This master data syncs the configuration details of the application websites.
+
+• Master Data Add [Item Categories] 
+Description: This master data syncs the configuration details of the Product Categories. 
+
+• Master Data Add [CustomerGroup]
+Description: This master data syncs the configuration details of the Customer Groups. 
 
 Given below are the Transactional Data Configuration Details:
 
-- **ProcessFlow - Customer Add**
- 
-i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone from SAP Business One to Shopify .
+- **Customer Add [NAV - Magento2]**
+
+i.	Flow Description: This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Magento2. The following Customer details will be synced: Customer Group ID, First Name, Last Name, Gender, Store Id, Email Id, Customer Address & Contact details and Customer ID.
 
 ii.	Dependency flow: Not Applicable 
 
 
-- **ProcessFlow: Business Partner Add**
+- **Customer Update [NAV - Magento2]**
 
-i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone. 
+i.	Flow Description: This ProcessFlow will integrate the updated details of the customers added from Dynamics NAV to Magento2. The details that were added while integrating the ProcessFlow **Customer Add [NAV - Magento2]** will only be updated.
+
+ii.	Dependency flow: Customer Add [NAV - Magento2]
+
+
+- **Customer Add [Magento2 - NAV]**
+
+i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from Magento2 to Dynamics NAV. The following Customer details will be synced: Customer Address Details, Customer Price Group, Customer Discount Group, Customer Number, Phone No, 
+Email Details, Website ID. 
 
 ii.	Dependency flow: Not Applicable 
 
 
-- **ProcessFlow: Business Partner Update**
+- **Customer Update [Magento2 - NAV]**
 
-i.	Flow Description: This ProcessFlow will integrate the updated details of each Business partners in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone. 
+i.	Flow Description: This ProcessFlow will integrate the updated details of the customers from Magento2 to Dynamics NAV. The details that were added in the Processflow **Customer Add [Magento2 - NAV]** will only be updated in this flow.
 
-ii.	Dependency flow: Business Partner Add
+ii.	Dependency flow: Customer Add [Magento2 - NAV]
 
 
-- **ProcessFlow: Product Add [With Variants]** 
+- **Simple Product Add** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the following details of Products along with its variants to your Shopify application. The details are: Product SKU, Product Name, Price, Inventory Name, Variant Details, Product type, weight & product Description etc. 
-This ProcessFlow is also equipped with a Post Acknowledgement flow that sync back Shopify UDO details back to SAP Business One.
+i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application from Dynamics NAV. The details are: Product SKU, Product Name, Price, Product Status, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
+This processflow is also equipped with a Post-Acknowledgment flow that syncs back the WebId & WebSyncFlag based on the Item No (SKU).
 
 ii.	Dependency Flow: Not Applicable 
 
 
-**ProcessFlow - Item  Add** 
+- **Simple Product Update** 
 
-i.	Flow Description: This ProcessFlow is featured to add new incoming Products from Shopify to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, Product SKU, Description, Price, Currency & PriceLists.
-This ProcessFlow is also equipped with a Post Acknowledgement flow that sync back  UDO details back to Shopify.
+i.	Flow Description: This ProcessFlow is featured to update the changes of the product details from Dynamics NAV to Magento2. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
 
-ii.	Dependency Flow: NA
+ii.	Dependency Flow: Simple Product Add
+Simple Product Update is equipped of updating the changes made to the Product details on your Source Application. As the updates are made against the ItemCode, therefore the dependency of Simple Product Add occurs which is responsible of adding the ItemCode primarily.
 
 
--	**ProcessFlow - Draft Sales Order Add:** 
+- **Configurable Product Add**
 
-i.	Flow Description: This ProcessFlow is featured to sync the following details of Drafted Sales Orders from Shopify to the SAP Business One. The details are: Order Id, Customer Details, Product details, Product Unit Price, Ordered Quantity, Tax Code & VAT group details, Sales Order generation date and shipment details. 
+i.	Flow Description: This ProcessFlow syncs all the details of the configurable products from Dynamics NAV to Magento2. The following details will be integrated with this ProcessFlow: Product SKU, Product Name, Price, Product Status, Configurable Product Option Details, Configurable Product Links, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
+This processflow is also equipped with a Post-Acknowledgment flow that syncs back the WebId & WebSyncFlag based on the Item No (SKU).
 
-ii.	Dependency Flow: Business Partner Add, Product Add. Stock Update.
+ii.	Dependency Flow: NA. 
+
+
+- **Configurable Product Update**
+
+i.	Flow Description: This ProcessFlow syncs the updated details of each configurable products from Dynamics NAV to Magento2. All the details added while integrating the ProcessFlow **Configurable Product Add** will be updated when triggered this processflow.
+
+ii.	Dependency Flow: Configurable Product Add
+
+
+- **Product Price :Update**
+
+i.	Flow Description: This ProcessFlow is featured to update the prices of the Products from Dynamics NAV to Magento2. The PRICE is updated for each the Item Numbers that requires the update.
+ii.	Dependency Flow: You will be required to sync all the related products as they are required before integrating its updated Price.
+
+
+- **Inventory Update:**
+
+i.	Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Quantity and other inventory details the Item Id. 
+
+ii.	Dependency Flow: Simple Product Add 
+As the inventory is updated against the ItemCode, the item needs to be added first so that the respective stocks can be updated accordingly.
+
+
+- **Sales Order Add:** 
+
+i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
+
+ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update. 
 The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
-
-
--	**ProcessFlow - Sales Order Add:** 
-
-i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from Shopify to the SAP Business One. The details are: Order Id, Customer Name, Order Total, Discount Percent, Product details, Product Unit Price, Ordered Quantity, Tax Code & VAT Group details, Sales Order generation date and shipment details. 
-
-ii.	Dependency Flow: Business Partner Add, Product Add, Stock Update. 
-The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
-
-
--	**ProcessFlow - Incoming Payment Add** 
-
-i.	Flow Description: This ProcessFlow is featured to sync the Incoming Payments against the Sales Order Generated from Shopify to SAP Business One. The flow syncs the related CardCode details, Transfer Account Details, Transfer Date & Invoice Details.
-
-ii.	Dependency Flow: Order Add, Order Fulfillment Add, A/R Invoice Add
-
-
-- **ProcessFlow - Order Fulfillment Add**
-
-i.	Flow Description: This ProcessFlow is featured to sync the Order Fulfillment (Shipment details) agaisnt your generated order from SAP Business One to Shopify. The ProcessFlow will sync the Shipment Location, Order Id & Quantity & the Shipment Tracking Number.
-
-ii.	Dependency flow: ProcessFlow - Sales Order Add 
-
-
-- **ProcessFlow - Price Sync**
-
-i.	Flow Description: This ProcessFlow is featured to sync the prices of the Variants from SAP Business One to Shopify. The Processflow syncs the following details: Variants Web ID & Variants Price details.
-
-ii.	Dependency flow: ProcessFlow - Product Add [With Variants]
-
-
--	**ProcessFlow - A/R Invoice Add:** 
-
-i.	Flow Description: This ProcessFlow is featured to sync the A/R Invoices from SAP Business One to Shopify, raised against the Sales Order Generated . The flow syncs the Reserve Invoice, Customer Details, Customer Name, Tracking Number, Invoice Id,  Item SKU, Quantity, Order Details, Tax Details.
-
-ii.	Dependency Flow: Business Partner Add, Product Add [With Variants], Stock Update, Sales Order Add 
-The A/R Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
-
-
-- **ProcessFlow - Stock Update**
-
-i.	Flow Description: This ProcessFlow is featured to update the VAriants Stocks in Inventory. The operation will be integrated from SAP Business One to Shopify. The following details will be synced: Inventory Location Id, Inventory Item Id, Stock Count.
-
-ii.	Dependency flow: ProcessFlow - Product Add [With Variants]
-
-
-Integrating these ProcessFlows will require [creation of Custom fields UDF's](https://help.sap.com/doc/e8d8abefb22343a586d744db9cba0bcb/9.3/en-US/How_to_Create_User_Defined_Fields_and_Tables.pdf) and installation of Stored Procedures, which would be provided On-Demand.
 
 
 ## Action Filter configurations:
@@ -155,11 +168,9 @@ Follow the documentation of Reference Tables for reference. The lookups listed b
 
 [Processflow Name][Reference Table]
 
-•  [Sales Order Add, Draft Sales Order Add][TAX]
+• [ ][] 
 
-•  [Sales Order Add, Draft Sales Order Add][Frieght]
-
-•  [Incoming Payment Add][Transfer Account]
+• [ ][]
 
 ## Extension Configuration Information:
 
@@ -259,10 +270,8 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 
 •	Webservices: This is an XML doc which hold information of webservices for base and extension pages.
 
-
 ## Adapter Compatibility Check:
 ProcessFlows in this package have no direct dependencies with Adapter Compatibility. Anytime on deploying your ProcessFlow, the latest adapter set in APPSeCONNECT Portal will be downloaded against the applications selected.
-
 
 ## Environment Selection
 This package is pre-implemented with all the configurations and mappings. To deploy the ProcessFlows you are required to select the environment in which your business flow will be deployed. Your Environments are needed to be setup before the deploying process. 
@@ -276,15 +285,7 @@ Once the installation process completes, you can view your [OP details Page](htt
 To add your hosted agent on your organisation, follow the process provided in the [link](https://docs.appseconnect.com/deployment/Deployment-Configuration/#cloud-agent-configuration)
 To know more about Hosted Environment, [Click Here](https://docs.appseconnect.com/deployment/Environment-Management/)
 
-
 ## Deployment
 Deploying is an essential step for integrating your business flow. Environment needs to have the configuration deployed which drives the integration process. Check the [Deployment Documents](https://docs.appseconnect.com/deployment/overview/) to know about the steps to deploy your flow on your selected environment.
 
 Once deployed, you need to click on the RUN button in the designer page to [execute your flow](https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow). All its execution generates [SNAPSHOTS](https://docs.appseconnect.com/processflow/snapshot-processflow/) that will allow you to monitor the data synced with the execution attempt.
-
-
-
-
-
-
-

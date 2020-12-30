@@ -19,7 +19,7 @@ Checkout the Key Features of this package, listed below:
 
 1.	Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
 2.	Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically 
-3.	Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
+3.	Pre-Implemented mappings: The process flows in this package are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4.	Easy integrations of Bundled and Configurable products: This package will let you sync the Bundled and Configurable Products if sold within your Business Process. The Configurations and Mappings will be pre-implemented for its integration process.
 
 ## Package Tech Specification
@@ -402,7 +402,7 @@ ii. Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order 
 The Delivery/Shipment Add ProcessFlow is equipped of integrating the details of the order delivery receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 
-- -	**ProcessFlow - Shipment Add:** 
+- 	**ProcessFlow - Shipment Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Shipment docs generated against your Sales Order SAP Business One to Magento2. This flow syncs the Shipment Tracking Number along with the Customer details, order details & Carrier Code. 
 Shipment Add is also equipped with a Post Acknowledgement task that Updates Sync Back Flag details.
