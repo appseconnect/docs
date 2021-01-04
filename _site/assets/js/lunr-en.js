@@ -2258,11 +2258,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Pre-Configured Rule of Mail Notification of Errors",
+      excerpt: "Scenario Integrations are scheduled to run automatically and for users its effecient to send reports for scheduled process that either...",
+      categories: ["Rule"],
+      tags: ["developers"],
+      id: 249
+    });
+    
+  
+    idx.add({
       title: "Lightspeed",
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Salesforce, credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 249
+      id: 250
     });
     
   
@@ -2271,7 +2280,7 @@ var idx = lunr(function () {
       excerpt: "Given below is the list of elements you will be able to use in APPSeCONNECT processflow. You can use the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 250
+      id: 251
     });
     
   
@@ -2280,7 +2289,7 @@ var idx = lunr(function () {
       excerpt: "When working with Process Flows, it is essential to map the attributes and the entities of both source and destination...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 251
+      id: 252
     });
     
   
@@ -2289,7 +2298,7 @@ var idx = lunr(function () {
       excerpt: "Why do you need APPS? For transforming data from one application to another you need to drag Application nodes to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 252
+      id: 253
     });
     
   
@@ -2298,7 +2307,7 @@ var idx = lunr(function () {
       excerpt: "What is Get Node? GET node is used for getting data from an application by using their API Endpoints provided...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 253
+      id: 254
     });
     
   
@@ -2307,7 +2316,7 @@ var idx = lunr(function () {
       excerpt: "What is POST Node? POST node is used for pushing transformed data to the destination application by using API Endpoints...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 254
+      id: 255
     });
     
   
@@ -2316,7 +2325,7 @@ var idx = lunr(function () {
       excerpt: "Appresource Functions are the functions in APPSeCONNECT that are written in the adapter which is used for the data transformation...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 255
+      id: 256
     });
     
   
@@ -2325,7 +2334,7 @@ var idx = lunr(function () {
       excerpt: "What is Splitter Node? This node is used to split a data packet into smaller chunks for processing in small...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 256
+      id: 257
     });
     
   
@@ -2334,7 +2343,7 @@ var idx = lunr(function () {
       excerpt: "What is Loop node In APPSeCONNECT Processflow using a Self-loop, we can repeatedly execute an individual node without affecting the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 257
+      id: 258
     });
     
   
@@ -2343,7 +2352,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAGE 300 - Magento 2 Integration and the subsequent...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 258
+      id: 259
     });
     
   
@@ -2352,7 +2361,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will given you an overview of SAGE 300 - Shopify Integration and the subsequent chapters...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 259
+      id: 260
     });
     
   
@@ -2361,7 +2370,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 260
+      id: 261
     });
     
   
@@ -2370,7 +2379,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 261
+      id: 262
     });
     
   
@@ -2379,7 +2388,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This document will let the users integrate updated customers...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 262
+      id: 263
     });
     
   
@@ -2388,7 +2397,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 263
+      id: 264
     });
     
   
@@ -2397,7 +2406,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 264
+      id: 265
     });
     
   
@@ -2406,7 +2415,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 265
+      id: 266
     });
     
   
@@ -2415,7 +2424,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 266
+      id: 267
     });
     
   
@@ -2424,7 +2433,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 267
+      id: 268
     });
     
   
@@ -2433,7 +2442,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 268
+      id: 269
     });
     
   
@@ -2442,7 +2451,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This Document will let the users to understand how...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 269
+      id: 270
     });
     
   
@@ -2451,7 +2460,7 @@ var idx = lunr(function () {
       excerpt: "Configuring and Executing the workflow for integration requires multiples steps to perform. This section of the document will let the...",
       categories: ["Integration/Sage-Shopify"],
       tags: ["developers"],
-      id: 270
+      id: 271
     });
     
   
@@ -2460,7 +2469,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 271
+      id: 272
     });
     
   
@@ -2469,7 +2478,7 @@ var idx = lunr(function () {
       excerpt: "Executing the process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 272
+      id: 273
     });
     
   
@@ -2478,7 +2487,7 @@ var idx = lunr(function () {
       excerpt: "During this phase we were working on features and mainly on stability of the product. We have just launched into...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 273
+      id: 274
     });
     
   
@@ -2487,7 +2496,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 1.4.0 In this release we wanted to make APPSeCONNECT smooth and provide a stable release of the...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 274
+      id: 275
     });
     
   
@@ -2496,7 +2505,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.0.0 This is a major release of APPSeCONNECT where we have fixed our APPSeCONNECT SDK and released...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 275
+      id: 276
     });
     
   
@@ -2505,7 +2514,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.1.0 This release focusses mainly on removing bugs from the product and enhancing the already existing components...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 276
+      id: 277
     });
     
   
@@ -2514,7 +2523,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.6.0 Release notes were published and last revised in May 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 277
+      id: 278
     });
     
   
@@ -2523,7 +2532,7 @@ var idx = lunr(function () {
       excerpt: "Applications are built with protocols for making them communicate with network resources and other applications. Application like SAP Business One...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 278
+      id: 279
     });
     
   
@@ -2532,7 +2541,7 @@ var idx = lunr(function () {
       excerpt: "Discover whats going on in APPSeCONNECT. Explore the most recent features and updates and learn more about the product enhancements,...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 279
+      id: 280
     });
     
   
@@ -2541,7 +2550,7 @@ var idx = lunr(function () {
       excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor improvements...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 280
+      id: 281
     });
     
   
@@ -2550,7 +2559,7 @@ var idx = lunr(function () {
       excerpt: "This document highlights the details of V2.0 hotfix(s) done for the 2020 Q2 Release. This hotfix release introduces few minor...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 281
+      id: 282
     });
     
   
@@ -2559,7 +2568,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.7.0 Release notes were published and last revised in July 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 282
+      id: 283
     });
     
   
@@ -2568,7 +2577,7 @@ var idx = lunr(function () {
       excerpt: "The user can view the schemas present in an app and can also add schema and import schemas and attributes...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 283
+      id: 284
     });
     
   
@@ -2577,7 +2586,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT processflow allows you to create variables that captures certain values that can be reused in any part of the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 284
+      id: 285
     });
     
   
@@ -2586,7 +2595,7 @@ var idx = lunr(function () {
       excerpt: "What is Delay node? API request may have a limitation of accepting one request per second. So for implementing GET...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 285
+      id: 286
     });
     
   
@@ -2595,7 +2604,7 @@ var idx = lunr(function () {
       excerpt: "Processflow is the advanced sync flow feature that will enable you sync node specific data from an application to multiple...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 286
+      id: 287
     });
     
   
@@ -2604,7 +2613,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2014 releases. Product Release Version: 2.1.0 Product Release Version: 2.0.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 287
+      id: 288
     });
     
   
@@ -2613,7 +2622,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2015 releases. Product Release Version: 2.5.0 Product Release Version: 2.4.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 288
+      id: 289
     });
     
   
@@ -2622,7 +2631,7 @@ var idx = lunr(function () {
       excerpt: "This section will give you detailed decsription of 2016 releases. Product Release Version: 3.3.0 Product Release Version: 3.2.0 Product Release...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 289
+      id: 290
     });
     
   
@@ -2631,7 +2640,7 @@ var idx = lunr(function () {
       excerpt: "Link Ordering of Nodes for Sequential Execution processflow being the advanced sync flow feature of APPSeCONNECT, allows you to create...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 290
+      id: 291
     });
     
   
@@ -2640,7 +2649,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.0.0 Release notes were published and last revised in April 2016. We started the new year with...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 291
+      id: 292
     });
     
   
@@ -2649,7 +2658,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.1.0 As per our schedule, we are trying to continuously improve our platform with newer features. We...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 292
+      id: 293
     });
     
   
@@ -2658,7 +2667,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.2.0 APPSeCONNECT being the only integration platform to support end to end business process provider, we are...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 293
+      id: 294
     });
     
   
@@ -2667,7 +2676,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 3.3.0 APPSeCONNECT focusses on delivering more and more flexibility, power and ease to its users. We try...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 294
+      id: 295
     });
     
   
@@ -2676,7 +2685,7 @@ var idx = lunr(function () {
       excerpt: "Actions are certain tasks like getting data from an application or sending data to an application based on specific API...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 295
+      id: 296
     });
     
   
@@ -2685,7 +2694,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.2.0 During the first quarter of 2015 product cycle, we wanted to give you some interesting features....",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 296
+      id: 297
     });
     
   
@@ -2694,7 +2703,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.3.0 This release mainly focusses on providing a number of new features which our users thought to...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 297
+      id: 298
     });
     
   
@@ -2703,7 +2712,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.4.0 This release mainly focusses on enhancing the APPSeCONNECT usage by providing more automation from base and...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 298
+      id: 299
     });
     
   
@@ -2712,7 +2721,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 2.5.0 Bug bash release focusses mainly on removing bugs from the product and enhancing the already existing...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 299
+      id: 300
     });
     
   
@@ -2721,7 +2730,7 @@ var idx = lunr(function () {
       excerpt: "Processflow Packaging is a concept of zipping multiple ProcessFlows or Processflow folders from one organisation to another. Processflow being the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 300
+      id: 301
     });
     
   
@@ -2730,7 +2739,7 @@ var idx = lunr(function () {
       excerpt: "Once you are shared with packages from other organisation, you need to install the packages before working with the Processflows...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 301
+      id: 302
     });
     
   
@@ -2739,7 +2748,7 @@ var idx = lunr(function () {
       excerpt: "Packaging of processflows have enabled the users to zip multiple processflows. The main goal to create packages was to share...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 302
+      id: 303
     });
     
   
@@ -2748,7 +2757,7 @@ var idx = lunr(function () {
       excerpt: "APPSeCONNECT APPSeCONNECT is an Integration Platform through which one can connect Enterprise Business Applications, like Back Office ERP systems (SAP...",
       categories: ["Glossary"],
       tags: ["developers"],
-      id: 303
+      id: 304
     });
     
   
@@ -2757,7 +2766,7 @@ var idx = lunr(function () {
       excerpt: "Here you will view the list of Glossary which is enlisted in the section. Read our full glossary to learn...",
       categories: ["Glossary"],
       tags: ["developers"],
-      id: 304
+      id: 305
     });
     
   
@@ -2766,7 +2775,7 @@ var idx = lunr(function () {
       excerpt: "Executing the Process is a vital part when integrating any applications. This section of the document will let the users...",
       categories: ["Integration"],
       tags: ["developers"],
-      id: 305
+      id: 306
     });
     
   
@@ -2775,7 +2784,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is Zohobooks credentials need...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 306
+      id: 307
     });
     
   
@@ -2784,7 +2793,7 @@ var idx = lunr(function () {
       excerpt: "Zipping up of multiple files in packages makes it easy to reuse and share with different users. Huge set of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 307
+      id: 308
     });
     
   
@@ -2793,7 +2802,7 @@ var idx = lunr(function () {
       excerpt: "What is Merger Node? Merger Node integrates data documents into a single data packet, in order to avoid multiple hits...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 308
+      id: 309
     });
     
   
@@ -2802,7 +2811,7 @@ var idx = lunr(function () {
       excerpt: "Unfinished Deployment functionality enables the user to track the undeployed processflows, and inturn aids you to check the status of...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 309
+      id: 310
     });
     
   
@@ -2811,7 +2820,7 @@ var idx = lunr(function () {
       excerpt: "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 310
+      id: 311
     });
     
   
@@ -2820,7 +2829,7 @@ var idx = lunr(function () {
       excerpt: "Application configuration is an integral activity prior to the process of integration. If your chosen application is SAP Business One...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 311
+      id: 312
     });
     
   
@@ -2829,7 +2838,7 @@ var idx = lunr(function () {
       excerpt: "Processflows in APPSeCONNECT is a very robust feature that helps you integrate your applications with ease. It always beneficial to...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 312
+      id: 313
     });
     
   
@@ -2838,7 +2847,7 @@ var idx = lunr(function () {
       excerpt: "What is Return Response Node? Return Response Node is a confirmation node that returns back an acknowledgement information to your...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 313
+      id: 314
     });
     
   
@@ -2847,7 +2856,7 @@ var idx = lunr(function () {
       excerpt: "What is Start Node? Start Node node intitates the ignition of the Start process and Trigger Type of the ProcessFlow....",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 314
+      id: 315
     });
     
   
@@ -5601,6 +5610,17 @@ var store = [
         "title": "Advance Mapping through Custom Renderer",
         "url": "/processflow/advance-mapping-render-processflow/",
         "excerpt": "Renderer enables the user to alter the default XML structure which and when required through rendering. In case of Complex...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Pre-Configured Rule of Mail Notification of Errors",
+        "url": "/rule/error-mail-notification/",
+        "excerpt": "Scenario Integrations are scheduled to run automatically and for users its effecient to send reports for scheduled process that either...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

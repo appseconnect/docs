@@ -19,9 +19,9 @@ or is success. However, its always productive and valuable to get a detailed rep
 APPSeCONNECT users will now recieve mail notifications with the mail header as **Interrupted Integration Process. Reason in details** that sends detailed reports 
 for the cause of errors faced for the following Scenarios:
 
-### Application Issues
+## Application Issues
 
-1) For ECommerce Applications:
+### 1) For ECommerce Applications:
 
 Listed below are the scenarios that will trigger the MAIL if your ECommerce Application generate issues.
 
@@ -31,7 +31,7 @@ Listed below are the scenarios that will trigger the MAIL if your ECommerce Appl
 - **Throttling Errors:** API throttles effects integration process which return errors while sync.
 - **Output response do not translate :** Output response such as HTTP 404, 500 hampers sync errors that would trigger the mail notification.
 
-2) For ERP Applications:
+### 2) For ERP Applications:
 
 Listed below are the scenarios that will trigger the MAIL if your ERP Application generate issue.
 
@@ -42,7 +42,7 @@ Listed below are the scenarios that will trigger the MAIL if your ERP Applicatio
 - **NAV Webservice/DI Server/Service Layer Connection Faults:** Will trigger the mail on returning error in the sync process
 - **Timeout:** Timeouts are responsible for sync failures in return will trigger this mail to notify the user for the cause.
 
-3) For Process Oriented:
+### 3) For Process Oriented:
 
 Listed below are the scenarios that will trigger the MAIL if your ERP Application generates issue.
 
@@ -51,7 +51,7 @@ Listed below are the scenarios that will trigger the MAIL if your ERP Applicatio
 - **Touchpoint/Workflow execution stuck**
 - **Touchpoint/Workflow taking excess time to execute**
 
-4) For APPSeCONNECT based:
+### 4) For APPSeCONNECT based:
 
 Listed below are the scenarios that will trigger the MAIL if APPSeCONNECT generates issue.
 
