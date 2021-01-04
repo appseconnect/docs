@@ -1,5 +1,5 @@
 ---
-title: "Pre-Configured Rule of Mail Notification of Errors1"
+title: "Pre-Configured Rule of Mail Notification of Errors"
 toc: true
 tag: developers
 category: "Rule"
@@ -26,10 +26,10 @@ for the cause of errors faced for the following Scenarios:
 Listed below are the scenarios that will trigger the MAIL if your ECommerce Application generate issues.
 
 - **Password Change:** If there is a change in the password of your application, your integration process will throw Validations errors.
-- **API doesn’t work:** API changes or modifications will result in Integration errors.
+- **API doesnt work:** API changes or modifications will result in Integration errors.
 - **Request Timed out happens due to any limit issue:** Application Time out will result in error generation for which the mail will be triggered.
 - **Throttling Errors:** API throttles effects integration process which return errors while sync.
-- **Output response don’t translate :** Output response such as HTTP 404, 500 hampers sync errors that would trigger the mail notification.
+- **Output response do not translate :** Output response such as HTTP 404, 500 hampers sync errors that would trigger the mail notification.
 
 2) For ERP Applications:
 
@@ -61,8 +61,3 @@ Listed below are the scenarios that will trigger the MAIL if APPSeCONNECT genera
 - **AutoSync Failure**
 - **Adapter Unavailability**
 - **Workflow Execution Failed**
-
-
-
-
-
