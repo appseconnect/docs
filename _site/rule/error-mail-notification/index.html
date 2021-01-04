@@ -2644,7 +2644,7 @@
 
 
 
-  1 minute read
+  3 minute read
 </p>
                 
                 
@@ -2658,7 +2658,7 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#scenario">Scenario</a></li>
-  <li><a href="#application-issues">Application Issues</a>
+  <li><a href="#scenarios-for-error-mail-report-generation">Scenarios for Error Mail Report Generation</a>
     <ul>
       <li><a href="#1-for-ecommerce-applications">1) For ECommerce Applications:</a></li>
       <li><a href="#2-for-erp-applications">2) For ERP Applications:</a></li>
@@ -2666,6 +2666,9 @@
       <li><a href="#4-for-appseconnect-based">4) For APPSeCONNECT based:</a></li>
     </ul>
   </li>
+  <li><a href="#requirement-of-the-rule">Requirement of the Rule</a></li>
+  <li><a href="#area-of-implementation">Area of Implementation</a></li>
+  <li><a href="#rule-notification">Rule Notification</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2678,7 +2681,7 @@ or is success. However, its always productive and valuable to get a detailed rep
 <p>APPSeCONNECT users will now recieve mail notifications with the mail header as <strong>Interrupted Integration Process. Reason in details</strong> that sends detailed reports 
 for the cause of errors faced for the following Scenarios:</p>
 
-<h2 id="application-issues">Application Issues</h2>
+<h2 id="scenarios-for-error-mail-report-generation">Scenarios for Error Mail Report Generation</h2>
 
 <h3 id="1-for-ecommerce-applications">1) For ECommerce Applications:</h3>
 
@@ -2728,6 +2731,34 @@ for the cause of errors faced for the following Scenarios:</p>
   <li><strong>Adapter Unavailability</strong></li>
   <li><strong>Workflow Execution Failed</strong></li>
 </ul>
+
+<h2 id="requirement-of-the-rule">Requirement of the Rule</h2>
+
+<p>The is a Pre-packaged and Pre-Configured Rule that need to be activated in organisation to get the report. 
+The Rule will be initiated every and will check for errors as per the scenarios given above. If any of the error scenarios is matched, 
+you will be notified with a mail report. However if none errors occured, you will not recieve any mail notification even if the Rule is triggered as per schedule.</p>
+
+<h2 id="area-of-implementation">Area of Implementation</h2>
+
+<p>This is a Pre-packaged &amp; Pre-configured rule and needs to be activated from the <a href="/rule/choose-rule/">Choose Rule</a> option in the Rule section. 
+Users cannot modify any configuration to the rule.</p>
+
+<h2 id="rule-notification">Rule Notification</h2>
+<p>Users would receive the Error based Hourly Notification in the email id provided for the Organisation. The Rule will be triggered every hour and would check for errors. However, if No-Errors found, you will not recive any Email Notification Reports
+even if the rule triggers. A sample mail is provided below:</p>
+
+<p><img src="\staticfiles\rules\media\errormailnotification1.PNG" alt="errormailnotification1" /></p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li><strong>If internal processes donot detect any errors, the mail notification will not be sent.</strong></li>
+  <li><strong>Mail Notification will be sent if the internal processes detects atleast One Issue as per the above mentioned Scenarios.</strong></li>
+  <li><strong>The notification will be sent only to the mail provided in the organisation details.</strong></li>
+  <li><strong>You need to Update Configuration on your On-Premise Agent, after ACTIVATING the rule from the Portal.</strong></li>
+  <li><strong>This Rule is only applicable for the integration processes based on TOUCHPOINTS &amp; WORKFLOW</strong></li>
+</ul>
+
 
                 
             </section>
