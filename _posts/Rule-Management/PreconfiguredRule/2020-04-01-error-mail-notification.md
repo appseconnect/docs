@@ -19,7 +19,7 @@ or is success. However, its always productive and valuable to get a detailed rep
 APPSeCONNECT users will now recieve mail notifications with the mail header as **Interrupted Integration Process. Reason in details** that sends detailed reports 
 for the cause of errors faced for the following Scenarios:
 
-## Application Issues
+## Scenarios for Error Mail Report Generation
 
 ### 1) For ECommerce Applications:
 
@@ -61,3 +61,29 @@ Listed below are the scenarios that will trigger the MAIL if APPSeCONNECT genera
 - **AutoSync Failure**
 - **Adapter Unavailability**
 - **Workflow Execution Failed**
+
+## Requirement of the Rule
+
+The is a Pre-packaged and Pre-Configured Rule that need to be activated in organisation to get the report. 
+The Rule will be initiated every and will check for errors as per the scenarios given above. If any of the error scenarios is matched, 
+you will be notified with a mail report. However if none errors occured, you will not recieve any mail notification even if the Rule is triggered as per schedule.
+
+## Area of Implementation
+
+This is a Pre-packaged & Pre-configured rule and needs to be activated from the [Choose Rule](/rule/choose-rule/) option in the Rule section. 
+Users cannot modify any configuration to the rule. 
+
+## Rule Notification
+Users would receive the Error based Hourly Notification in the email id provided for the Organisation. The Rule will be triggered every hour and would check for errors. However, if No-Errors found, you will not recive any Email Notification Reports
+even if the rule triggers. A sample mail is provided below:
+
+![errormailnotification1](\staticfiles\rules\media\errormailnotification1.PNG)
+
+**Note:**
+
+- **If internal processes donot detect any errors, the mail notification will not be sent.**
+- **Mail Notification will be sent if the internal processes detects atleast One Issue as per the above mentioned Scenarios.**
+- **The notification will be sent only to the mail provided in the organisation details.**
+- **You need to Update Configuration on your On-Premise Agent, after ACTIVATING the rule from the Portal.**
+- **This Rule is only applicable for the integration processes based on TOUCHPOINTS & WORKFLOW**
+
