@@ -5,7 +5,7 @@ tag: developers
 category: "Rule"
 menus: 
     preconfigurerule:
-        title: "Pre-Configured Rule of Mail Notification of Errors"
+        title: "Pre-Configured Rule Error Mail Notification"
         weight: 18
         icon: fa fa-wpexplorer
         identifier: preconfigurerulelog
@@ -19,7 +19,7 @@ or is success. However, its always productive and valuable to get a detailed rep
 APPSeCONNECT users will now recieve mail notifications with the mail header as **Interrupted Integration Process. Reason in details** that sends detailed reports 
 for the cause of errors faced for the following Scenarios:
 
-### Application Issue 
+### Application Issues
 
 1) For ECommerce Applications:
 
