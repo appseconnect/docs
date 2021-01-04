@@ -157,6 +157,20 @@ ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update.
 The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
 
 
+-	**Bundle Product Add**
+
+i.	Flow Description: This ProcessFlow syncs all the details bundled products from Dynamics NAV to Magento2. The following details is featured to sync with this processflow: SKU, name, price, status, attribute_set_id, visibility, type_id, attribute code, value, Bundle Product Details & Weight.
+This Processflow is also equipped with Post-Acknowledgement flow that updates WebId & WebSyncFlag back to Dynamics NAV.
+
+ii.	Dependency Flow: NA. 
+
+
+-	**Bundle Product Update**
+
+i.	Flow Description: This ProcessFlow syncs all the updated details bundled products from Dynamics NAV to Magento2. All the added bundled products will be updated with the respective updates when triggered the sync.
+
+ii.	Dependency Flow: ProcessFlow - Bundle Product Add
+
 ## Action Filter configurations:
 
 ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 
