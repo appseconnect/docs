@@ -52,103 +52,103 @@ Data Configuration is broadly classified into Master Data Configuration & Transa
 
 Given below are the Master Data Configuration Details:
 
-• ProcessFlow - Master Data Add [Attribute Set] 
+• Configuration Data Add [Attribute Set] 
 Description: This master data syncs the configuration details of the Product Attribute Sets. 
 
-• ProcessFlow - Master Data Add [Attributes]
+• Configuration Data Add [Attributes]
 Description: This master data syncs the configuration details of the Product Attributes. 
 
-• ProcessFlow - Master Data Add [Attribute Options]
+• Configuration Data Add [Attribute Options]
 Description: This master data syncs the configuration details of the Product Attribute Options. 
 
-• ProcessFlow - Master Data Add [TaxClass]
+• Configuration Data Add [TaxClass]
 Description: This master data syncs the configuration details of the Product Tax Classes. 
 
-• ProcessFlow - Master Data Add [Country State]
+• Configuration Data Add [Country State]
 Description: This master data syncs the configuration details of Countries and States. 
 
-• ProcessFlow - Master Data Add [Website]
+• Configuration Data Add [Website]
 Description: This master data syncs the configuration details of the application websites.
 
-• ProcessFlow - Master Data Add [Category] 
+• Configuration Data Add [Category] 
 Description: This master data syncs the configuration details of the Product Categories. 
 
-• ProcessFlow - Master Data Add [Customer Group]
+• Configuration Data Add [Customer Group]
 Description: This master data syncs the configuration details of the Customer Groups. 
 
 Given below are the Transactional Data Configuration Details:
 
 
-- **ProcessFlow - Customer Add**
+- ** Customer Add**
 
 i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone from SAP Business One to Magento2.
 
 ii.	Dependency flow: Not Applicable 
 
 
-- **ProcessFlow - Customer Update**
+- ** Customer Update**
 
 i.	Flow Description: This ProcessFlow will integrate the updated details of the customers added in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone from SAP Business One to Magento2.
 
 ii.	Dependency flow: Customer Add
 
 
-- **ProcessFlow: Business Partner Add**
+- **Business Partner Add**
 
 i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone. 
 
 ii.	Dependency flow: Not Applicable 
 
 
-- **ProcessFlow: Business Partner Update**
+- **Business Partner Update**
 
 i.	Flow Description: This ProcessFlow will integrate the updated details of each Business partners in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone. 
 
 ii.	Dependency flow: Business Partner Add
 
 
-- **ProcessFlow: Simple Product Add** 
+- **Simple Product Add** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application. The details are: Product Id, Product SKU, Product Name, Price, Product Status, Attribute id, Product type, weight etc. 
 
 ii.	Dependency Flow: Not Applicable 
 
 
--	**ProcessFLow - Simple Product Update** 
+-	**Simple Product Update** 
 
 i.	Flow Description: This ProcessFlow is featured to update the changes of the product details. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
 
-ii.	Dependency Flow: ProcessFlow: Simple Product Add
+ii.	Dependency Flow:  Simple Product Add
 Simple Product Update is equipped of updating the changes made to the Product details on your Source Application. As the updates are made against the ItemCode, therefore the dependency of Simple Product Add occurs which is responsible of adding the ItemCode primarily.
 
 
--	**ProcessFlow - Item Master Data Add [Simple Product]** 
+-	**Item Master Data Add [Simple Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add all the Simple Products from Magento2 to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Item Master Data Update [Simple Product]** 
+-	**Item Master Data Update [Simple Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to Update  the Simple Products details from Magento2 to SAP Business One. This ProcessFlow will only update the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Web Item Master Data Add [Simple Product]** 
+-	**Web Item Master Data Add [Simple Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add complete details of each Simple Products from Magento2 to SAP Business One. The details are added with respect to the ProcessFlow performing the Add operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Simple Product]
+ii.	Dependency Flow:  Item Master Data Add [Simple Product]
 
 
--	**ProcessFlow - Web Item Master Data Update [Simple Product]** 
+-	**Web Item Master Data Update [Simple Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to update complete details of each Simple Products from Magento2 to SAP Business One. The details are updated with respect to the ProcessFlows performing the Add operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Simple Product] ; ProcessFlow - Web Item Master Data Add [Simple Product]
+ii.	Dependency Flow:  Item Master Data Add [Simple Product] ;  Web Item Master Data Add [Simple Product]
 
 
--	**ProcessFlow - Grouped Product Add**
+-	**Grouped Product Add**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the Grouped Products from SAP Business One to Magento2. Group products are the pack of multiple simple products. This ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. 
 
@@ -156,40 +156,40 @@ ii.	Dependency Flow: NA.
 As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again.
 
 
--	**ProcessFlow - Grouped Product Update**
+-	**Grouped Product Update**
 
 i.	Flow Description: This ProcessFlow syncs all updated details of the Grouped Products from SAP Business One to Magento2 . Group products are the pack of multiple simple products.
 
-ii.	Dependency Flow: ProcessFlow - Grouped Product Add
+ii.	Dependency Flow:  Grouped Product Add
 
 
--	**ProcessFlow - Item Master Data Add [Grouped Product]** 
+-	**Item Master Data Add [Grouped Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add all the Grouped Products from Magento2 to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, SKU, Description, Wieght, Price & Currency .
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Item Master Data Update [Grouped Product]** 
+-	**Item Master Data Update [Grouped Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to Update the Grouped Products details from Magento2 to SAP Business One. This ProcessFlow will only update the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
-ii.	Dependency Flow:  ProcessFlow - Item Master Data Add [Grouped Product]
+ii.	Dependency Flow:   Item Master Data Add [Grouped Product]
 
 
--	**ProcessFlow - Web Item Master Data Add [Grouped Product]** 
+-	**Web Item Master Data Add [Grouped Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add complete details of each Grouped Products from Magento2 to SAP Business One. The details are added with respect to the ProcessFlow, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Grouped Product]
+ii.	Dependency Flow:  Item Master Data Add [Grouped Product]
 
 
--	**ProcessFlow - Web Item Master Data Update [Grouped Product]** 
+-	**Web Item Master Data Update [Grouped Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to update complete details of each Grouped Products from Magento2 to SAP Business One. The details are updated with respect to the ProcessFlows, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Grouped Product] ; ProcessFlow - Web Item Master Data Add [Grouped Product]
+ii.	Dependency Flow:  Item Master Data Add [Grouped Product] ;  Web Item Master Data Add [Grouped Product]
 
 
--	**ProcessFlow - Bundle Product Add**
+-	**Bundle Product Add**
 
 i.	Flow Description: This ProcessFlow syncs all the details bundled products to your destination application. As Simple product a bundled to form Bundle Products, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Bundle Product Add. 
 
@@ -197,40 +197,40 @@ ii.	Dependency Flow: NA.
 As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again. 
 
 
--	**ProcessFlow - Bundle Product Update**
+-	**Bundle Product Update**
 
 i.	Flow Description: This ProcessFlow syncs all the updated details bundled products from SAP Business One to Magento2. All the added bundled products will be updated with the respective updates when triggered the sync.
 
-ii.	Dependency Flow: ProcessFlow - Bundle Product Add
+ii.	Dependency Flow:  Bundle Product Add
 
 
--	**ProcessFlow - Item Master Data Add [Bundle Product]** 
+-	**Item Master Data Add [Bundle Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add all the Bundled Products from Magento2 to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, SKU, Description, Wieght, Price & Currency .
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Item Master Data Update [Bundle Product]** 
+-	**Item Master Data Update [Bundle Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to Update the Bundled Products details from Magento2 to SAP Business One. This ProcessFlow will only update the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
-ii.	Dependency Flow:  ProcessFlow - Item Master Data Add [Bundle Product]
+ii.	Dependency Flow: Item Master Data Add [Bundle Product]
 
 
--	**ProcessFlow - Web Item Master Data Add [Bundle Product]** 
+-	**Web Item Master Data Add [Bundle Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add complete details of each Bundle Products from Magento2 to SAP Business One. The details are added with respect to the ProcessFlow, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Bundle Product]
+ii.	Dependency Flow:  Item Master Data Add [Bundle Product]
 
 
--	**ProcessFlow - Web Item Master Data Update [Bundle Product]** 
+-	**Web Item Master Data Update [Bundle Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to update complete details of each Bundle Products from Magento2 to SAP Business One. The details are updated with respect to the ProcessFlows, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Bundle Product] ; ProcessFlow - Web Item Master Data Add [Bundle Product]
+ii.	Dependency Flow:  Item Master Data Add [Bundle Product] ;  Web Item Master Data Add [Bundle Product]
 
 
--	**ProcessFlow - Configurable Product Add**
+-	**Configurable Product Add**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the configurable products from SAP Business One to Magento2. A configurable product are the simple products with options, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. The Simple Product Add flow is also equipped with a Post Acknowledgement task that integrates Sync Back Flag details. 
 
@@ -238,40 +238,40 @@ ii.	Dependency Flow: NA.
 As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again.
 
 
--	**ProcessFlow - Configurable Product Update**
+-	**Configurable Product Update**
 
 i.	Flow Description: This ProcessFlow syncs the updated details of each configurable products from SAP Business One to Magento2.
 
-ii.	Dependency Flow: ProcessFlow - Configurable Product Add
+ii.	Dependency Flow:  Configurable Product Add
 
 
--	**ProcessFlow - Item Master Data Add [Configurable Product]** 
+-	**Item Master Data Add [Configurable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add all the Configurable Products from Magento2 to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, SKU, Description, Wieght, Price & Currency .
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Item Master Data Update [Configurable Product]** 
+-	**Item Master Data Update [Configurable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to Update the Configurable Products details from Magento2 to SAP Business One. This ProcessFlow will only update the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
-ii.	Dependency Flow:  ProcessFlow - Item Master Data Add [Configurable Product]
+ii.	Dependency Flow:   Item Master Data Add [Configurable Product]
 
 
--	**ProcessFlow - Web Item Master Data Add [Configurable Product]** 
+-	**Web Item Master Data Add [Configurable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add complete details of each Configurable Products from Magento2 to SAP Business One. The details are added with respect to the ProcessFlow, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Configurable Product]
+ii.	Dependency Flow:  Item Master Data Add [Configurable Product]
 
 
--	**ProcessFlow - Configurable WebItems Update** 
+-	**Configurable WebItems Update** 
 
 i.	Flow Description: This ProcessFlow is featured to update complete details of each Configurable Products from Magento2 to SAP Business One. The details are updated with respect to the ProcessFlows, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Configurable Product] ; ProcessFlow - Web Item Master Data Add [Configurable Product]
+ii.	Dependency Flow:  Item Master Data Add [Configurable Product] ;  Web Item Master Data Add [Configurable Product]
 
 
--	**ProcessFlow - Downloadable Product Add**
+-	**Downloadable Product Add**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the Downloadable Products from SAP Business One to Magento2. Downloadable products A downloadable product can be anything that can deliver as a file, such as an eBook, music, video, software application, or update etc. 
 This ProcessFlow is also equipped with a Post Acknowledgement task that integrates Sync Back Flag details. 
@@ -279,40 +279,40 @@ This ProcessFlow is also equipped with a Post Acknowledgement task that integrat
 ii.	Dependency Flow: NA. 
 
 
--	**ProcessFlow - Downloadble Product Update**
+-	**Downloadble Product Update**
 
 i.	Flow Description: This ProcessFlow syncs the updated details of each downloadable products from SAP Business One to Magento2.
 
-ii.	Dependency Flow: ProcessFlow - Downloadable Product Add
+ii.	Dependency Flow:  Downloadable Product Add
 
 
--	**ProcessFlow - Item Master Data Add [Downloadable Product]** 
+-	**Item Master Data Add [Downloadable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add all the Downloadable Products from Magento2 to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, SKU, Description, Wieght, Price & Currency .
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Item Master Data Update [Downloadable Product]** 
+-	**Item Master Data Update [Downloadable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to Update the Downloadable Products details from Magento2 to SAP Business One. This ProcessFlow will only update the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
-ii.	Dependency Flow:  ProcessFlow - Item Master Data Add [Downloadable Product]
+ii.	Dependency Flow:   Item Master Data Add [Downloadable Product]
 
 
--	**ProcessFlow - Web Item Master Data Add [Downloadable Product]** 
+-	**Web Item Master Data Add [Downloadable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add complete details of each Downloadable Products from Magento2 to SAP Business One. The details are added with respect to the ProcessFlow, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Downloadable Product]
+ii.	Dependency Flow:  Item Master Data Add [Downloadable Product]
 
 
--	**ProcessFlow - Web Item Master Data Update [Downloadable Product]** 
+-	**Web Item Master Data Update [Downloadable Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to update complete details of each Downloadable Products from Magento2 to SAP Business One. The details are updated with respect to the ProcessFlows, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Downloadable Product] ; ProcessFlow - Web Item Master Data Add [Downloadable Product]
+ii.	Dependency Flow:  Item Master Data Add [Downloadable Product] ;  Web Item Master Data Add [Downloadable Product]
 
 
--	**ProcessFlow - Virtual Product Add**
+-	**Virtual Product Add**
 
 i.	Flow Description: This ProcessFlow syncs all the details of the Virtual Products from SAP Business One to Magento2. Virtual products can be anything that can have a subscription plans or can be waranty product etc. 
 This ProcessFlow is also equipped with a Post Acknowledgement task that integrates Sync Back Flag details. 
@@ -320,72 +320,72 @@ This ProcessFlow is also equipped with a Post Acknowledgement task that integrat
 ii.	Dependency Flow: NA. 
 
 
--	**ProcessFlow - Virtual Product Update**
+-	**Virtual Product Update**
 
 i.	Flow Description: This ProcessFlow syncs the updated details of each Virtual products from SAP Business One to Magento2.
 
-ii.	Dependency Flow: ProcessFlow - Virtual Product Add
+ii.	Dependency Flow:  Virtual Product Add
 
 
--	**ProcessFlow - Item Master Data Add [Virtual Product]** 
+-	**Item Master Data Add [Virtual Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add all the Virtual Products from Magento2 to SAP Business One. This ProcessFlow will only add the following details of the Products: Product Name, SKU, Description, Wieght, Price & Currency .
 
 ii.	Dependency Flow: NA 
 
 
--	**ProcessFlow - Item Master Data Update [Virtual Product]** 
+-	**Item Master Data Update [Virtual Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to Update the Virtual Products details from Magento2 to SAP Business One. This ProcessFlow will only update the following details of the Products: Product Name, Description, Wieght, Price, Currency & SKU.
 
-ii.	Dependency Flow:  ProcessFlow - Item Master Data Add [Virtual Product]
+ii.	Dependency Flow:   Item Master Data Add [Virtual Product]
 
 
--	**ProcessFlow - Web Item Master Data Add [Virtual Product]** 
+-	**Web Item Master Data Add [Virtual Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to add complete details of each Virtual Products from Magento2 to SAP Business One. The details are added with respect to the ProcessFlow, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Virtual Product]
+ii.	Dependency Flow:  Item Master Data Add [Virtual Product]
 
 
--	**ProcessFlow - Web Item Master Data Update [Virtual Product]** 
+-	**Web Item Master Data Update [Virtual Product]** 
 
 i.	Flow Description: This ProcessFlow is featured to update complete details of each Virtual Products from Magento2 to SAP Business One. The details are updated with respect to the ProcessFlows, performing the ADD operation previously.
-ii.	Dependency Flow: ProcessFlow - Item Master Data Add [Virtual Product] ; ProcessFlow - Web Item Master Data Add [Virtual Product]
+ii.	Dependency Flow:  Item Master Data Add [Virtual Product] ;  Web Item Master Data Add [Virtual Product]
 
 
-- **ProcessFlow - Product Images Add**
+- **Product Images Add**
 
 i.	Flow Description: This ProcessFlow is featured to add the images of the Products from SAP Business One to Magento2. The following details of the images are synced: Image, Image Type, Image Label, Image Source Key.
-ii.	Dependency Flow: ProcessFlow - Simple Product Add ;  ProcessFlow - Virtual Product Add ; ProcessFlow - Downloadable Product Add.
+ii.	Dependency Flow:  Simple Product Add ;   Virtual Product Add ;  Downloadable Product Add.
 Also, the Images will be synced only for products which are already uploaded in Magento2. Therefore, you are required to sync Products before integrating its images.
 
 
-- **ProcessFlow - Product Price :Update**
+- **Product Price :Update**
 
 i.	Flow Description: This ProcessFlow is featured to update the prices of the Products from SAP Business One to Magento2. The following relatred details are synced: Price & SKU .
 ii.	Dependency Flow: You will be required to sync the related products as required before integrating its updated Price.
 
 
-- **ProcessFlow - Special Price : Add**
+- **Special Price : Add**
 
 i.	Flow Description: This ProcessFlow is featured to ADD Special Prices for various Products as per your business criteria, from SAP Business One to Magento2. The following related details are synced: Special price from start date to end date build upon Item SKUs.
 ii.	Dependency Flow: You will be required to sync the related products as required before integrating its Special Price of that product.
 
 
-- **ProcessFlow - Tier Price : Add**
+- **Tier Price : Add**
 
 i.	Flow Description: This ProcessFlow is featured to ADD Tier Prices for Products as per your business criteria, from SAP Business One to Magento2. The Details of Tier Prices are synced based on the Item Code , Group Code etc.
 ii.	Dependency Flow: You will be required to sync the related products as required before integrating its Tier Prices.
 
 
--	**ProcessFlow - Inventory Update:**
+-	**Inventory Update:**
 
 i.	Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Item Quantity against the item code available on your inventory. 
 
 ii.	Dependency Flow: Simple Product Add 
 As the inventory is updated against the ItemCode, the item needs to be added first so that the respective stocks can be updated accordingly.
 
--	**ProcessFlow - Order Add:** 
+-	**Order Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
 
@@ -393,7 +393,7 @@ ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update.
 The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
 
 
--	**ProcessFlow - Delivery/Shipment Add:** 
+-	**Delivery/Shipment Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Delivery/Shipment docs generated against your Sales Order from Magento2 to SAP Business One. This flow sync the Shipment Tracking Number along with the Customer details, order details, and tax information’s. 
 Delivery/Shipment Add is also equipped with a Post Acknowledgement task that integrates Sync Back ShipmentSyncFlag details.
@@ -402,7 +402,7 @@ ii. Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order 
 The Delivery/Shipment Add ProcessFlow is equipped of integrating the details of the order delivery receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 
-- 	**ProcessFlow - Shipment Add:** 
+- 	**Shipment Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Shipment docs generated against your Sales Order SAP Business One to Magento2. This flow syncs the Shipment Tracking Number along with the Customer details, order details & Carrier Code. 
 Shipment Add is also equipped with a Post Acknowledgement task that Updates Sync Back Flag details.
@@ -419,7 +419,7 @@ ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order 
 The A/R Down Payment Invoice : Add ProcessFlow is equipped of integrating the details of the order Invoice receipt of the Downpayment. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 
--	**ProcessFlow - Invoice Add:** 
+-	**Invoice Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Invoices from Magento2 to SAP Business One, raised against the Sales Order Generated. The flow syncs the Item SKU, Quantity, and the Order Details to your destination application. Invoice Add is also equipped with a Post Acknowledgement task that updates Sync Back Invoice Flag details back to your Source Application. Also, the ProcessFlow Invoice Add is featured to sync the payment type made for each invoice be it **Payment through Cash**, **Payment through Bank transfer**, **Payment through Cheque**
 
@@ -427,14 +427,14 @@ ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order 
 The Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 
--	**ProcessFlow - A/R Invoice Add:** 
+-	**A/R Invoice Add:** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the A/R Invoices from SAP Business One to Magento2, raised against the Sales Order Generated . The flow syncs the Item SKU, Quantity, and the Order Details to your destination application. Invoice Add is also equipped with a Post Acknowledgement task that updates Sync Back Invoice Flag details back to your Source Application.
 ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order Add 
 The A/R Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 
--	**ProcessFlow- A/R Down Payment Invoice : Add** 
+-	**A/R Down Payment Invoice : Add** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Downpayment Invoices raised against the Sales Order Generated. The flow syncs the Item SKU, Quantity, and the Order Details from Magento2 to SAP Business One. Also, this ProcessFlow is featured to sync the incoming payment types made for each invoice be it **Payment through Cash**, **Payment through Bank transfer**, **Payment through Cheque**
 
@@ -442,7 +442,7 @@ ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order 
 The Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
 
 
--	**ProcessFlow - Incoming Payment with CreditCard :Add** 
+-	**Incoming Payment with CreditCard :Add** 
 
 i.	Flow Description: This ProcessFlow is featured to sync the Incoming Payments against the Sales Order Generated using Credit Card from Magento2 to SAP Business One. The flow syncs the related CardCode details, Invoice Details & Credit Card Details from Magento2 to SAP Business One.
 
