@@ -2860,6 +2860,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Generic NAV 2013R2 Extension",
+      excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
+      categories: ["Connectors"],
+      tags: ["developers"],
+      id: 316
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -6347,6 +6356,17 @@ var store = [
         "title": "Working with Start Node",
         "url": "/processflow/working-with-Start-Node/",
         "excerpt": "What is Start Node? Start Node node intitates the ignition of the Start process and Trigger Type of the ProcessFlow....",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Generic NAV 2013R2 Extension",
+        "url": "/connectors/generic-nav2013-R2-extension/",
+        "excerpt": "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
