@@ -105,3 +105,14 @@ Following the above process, you can successfully implement Auto-Retry and view 
 **Protip**  For every Retry process (Both Auto/Manual), you will be generated with a [Snapshot](/processflow/snapshot-processflow/). 
 {: .notice--info}
 
+## Snapshot view for Retried Data:
+
+The SyncInfo window captures all the data that either is synced successfully, or failed or is in Unprocessed State. However, SyncInfo
+window is now featured to display [Snapshot](/processflow/snapshot-processflow/) for every individual data. Below are the steps provided to view individual snapshots for each data.
+
+1) Navigate to Deploy > Environments for accessing the [SyncInfo](/processflow/retry-processflow/#sync-info--retry) window.  
+
+2) You will be listed with all your data that was executed previously.
+
+![processflow Retry11]()
+

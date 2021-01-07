@@ -34,12 +34,15 @@ d) xmlport
 
 Step.1: Open NAV Development Centre and log in with SQL Server credentials or Windows authentication. Then, go to 'tools' and select object designer or just press 'Shift+F12'.
 
-Step.2: Select tables and go to 'File' and select import. After that select the '2009 R2 Tables.fob' file and import.
+Step.2: Select tables and go to 'File Tab' and select import. After that select the '2013 R2 Tables.fob' file and import.
 
 Step.3: Repeat the Step.2 for different '.fob' files, like for imports, tables, code units, and page.
 
 Step.4:      
 a) We need to run 'AEC WebServices Import' xmlport. An import popup will be shown where specify a direction value import and click on ok button. Another popup will be shown where we should select the webservices of the XML file.
+
+OR
+
 b) We need to run-ins import codeunit where we have called the AECWebServiceImport function with a parameter datafile path. This datafile path is webservices of XML file path. We will be provided XML file in extension build. You need to be changed function parameter path value as per your web service XML file location. This will insert data in Dynamics NAV 'Web Service' table.
 
 
