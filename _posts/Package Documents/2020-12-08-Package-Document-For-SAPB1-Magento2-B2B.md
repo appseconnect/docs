@@ -1,23 +1,23 @@
 ## Overview
 
-The package **SAP Business One - Magento2 B2B** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design. 
+The package **Magento2.X  - SAP Business One B2B** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design. 
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
 ## Additional Information
 
 - Version Number – 1.0.0 
-- Package Name - SAP B1 and Magento2 B2B Package 
+- Package Name - Magento2.X  - SAP Business One B2B Package 
 - Created By –  INSYNC Solutions
 - Last Modified - 08/12/2020 07:23:30 PM (Date & Time)
-- Apps Used in the Package – SAP Business One & Magento2
+- Apps Used in the Package – SAP Business One (>= 8.8) & Magento2 (>=2.0.0.0)
 
 ## Package Key Features
 
-**SAP Business One - Magento2 B2B** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
+**Magento2.X  - SAP Business One B2B** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
 Checkout the Key Features of this package, listed below:
 
-1.	Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
+1.	Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/packaging-overview/)
 2.	Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically 
 3.	Pre-Implemented mappings: The process flows in this package are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4.	Easy integrations of B2B Business Model: This package will let you sync the B2B business areas with Magento 2 and SAP Business One making your integrations cover the B2B areas as well.
@@ -31,8 +31,9 @@ This package consists the following configurations details:
 3.	Action Filter configurations 
 4.	LookUp Mapping
 5.	Extensions & Add-On Installation Details
-6.	Environment Setup Parameter 
-7.	Deployment Setup 
+6.  Adapter Compatibility Check
+7.	Environment Selection 
+8.	Deployment 
 
 ## App Authentication Mechanism
 
@@ -55,102 +56,79 @@ Data Configuration is broadly classified into Master Data Configuration & Transa
 **This package has dependencies based on other ProcessFlows which are not available in this Package. However, SAP Business One - Magento2 B2B package, will require to integrate ProcessFlows from `SAP Business One - Magento2 B2C` package.** 
 **The related dependent informations are provided in the package for `SAP Business One - Magento2 B2C`.** 
 
-
 Given below are the Transactional Data Configuration Details:
 
-
-1. **ProcessFlow - Company Add**
+1. **Company Add [B2B]**
 
 i.	Flow Description: This ProcessFlow will integrate the newly on boarded Companies and their details to your B2B business line-up from SAP Business One to Magento2. The following Customer details will be synced: Company Group ID, First Name, Last Name, Email, Gender, Store id, Website id, City, postcode, Shipping Address, Billing Address, Country Address, and Telephone.
 
-ii.	Dependency flow: Not Applicable 
 
-
-2. **ProcessFlow - Company Update**
+2. **Company Update [B2B]**
 
 i.	Flow Description: This ProcessFlow will integrate the updated Companies and their details to your B2B business line-up from SAP Business One to Magento2. The Details that are synced while adding companies will only be updated.
 
-ii.	Dependency flow: ProcessFlow - Company Add
 
-
-3. **ProcessFlow- Contact Person Add to Magento**
+3. **Contact Person Add (SAP B1 to Magento) [B2B]**
 
 i.	Flow Description: This ProcessFlow is featured to add Contact Persons of the Companies added to your business network. This ProcessFlow is also equipped with a flow for adding new Companies as well so as to keep accepting the incoming of new Companies and to avoid Document Mismatch errors. 
 The following details of the Contact Person Add will be integrated: Customer id, email, first name, last name. Both the flows in this ProcessFlow is also equipped with SyncBack that updates back a Post-Acknowledment value to the Source. All the Flows will be executed from SAP Business One to Magento2.
 
-ii.	Dependency flow: Not Applicable
+
+4. **Contact Person Update (SAP B1 to Magento) [B2B]**
+
+i.	Flow Description: This ProcessFlow is featured to Update the details of the Contact Persons of the Companies added to your business network. Only the details added will adding Contact Persons will be updated and synced from SAP Business One to Magento2.
 
 
-4. **ProcessFlow - Contact Person Update to Magento**
+5. **Contact Person Update (Magento to SAP B1) [B2B]**
 
-i.	Flow Description: This ProcessFlow is featured to Update the details of the Contact Persons of the Companies added to your business network. Only the details added will adding Contact Persons will be updated and synced to Magento from SAP Business One.
-
-ii.	Dependency flow: ProcessFlow- Contact Person Add to Magento
+i.	Flow Description: This ProcessFlow is featured to update the details of the Contact Persons of the Companies. All the details of the Contact Persons will be updated from Magento2 to SAP Business One.
 
 
-5. **ProcessFlow - PriceLists Add [B2B]**
+6. **PriceLists Add [B2B]**
 
 i.	Flow Description: This ProcessFlow is featured to sync the Price Lists from SAP Business One to Magento2. The following details of the PriceLists would be synced: website_id, pricelist name, status & Factor.
 
-ii.	Dependency flow: Not Applicable 
 
-
-6. **ProcessFlow - SalesRep Add**
+7. **SalesRep Add**
 
 i.	Flow Description: This ProcessFlow is featured to sync the Sales Representatives from SAP Business One to Magento2. This ProcessFlow is also featured to link the added SalesReps with the Companies added on your Business Process.
 The following details of the Sales Represatatives would be added: First Name, Last Name, Gender, website id. The Flow for assigning the Sales Rep to Companies will add the Sales Rep Id and the Company customer ID.
 The flow for adding SalesRep is also equipped with a SyncBack that Posts the Post-Acknowledgement status of the primary sync back to the Source Application.
 
-ii.	Dependency flow: ProcessFlow - Company Add 
 
-
-7. **ProcessFlow - Credit Limit Add**
+8. **Credit Limit Add**
 
 i.	Flow Description: This ProcessFlow is featured to sync the credit limits from SAP Business One to Magento2, that are assigned to companies. This integration will sync the following details: Company ID & Credit Limit.
 
-ii.	Dependency flow: ProcessFlow - Company Add 
 
-
-8. **ProcessFlow - Credit Limit Update**
+9. **Credit Limit Update**
 
 i.	Flow Description: This ProcessFlow is featured to sync Updated Credit Limits from SAP Business One to Magento2, that are assigned to companies. The integration will update only the added details of Credit Limits.
 
-ii.	Dependency flow: ProcessFlow - Credit Limit Add
 
-
-9. **ProcessFlow - Customer Specific Special Price Add B2B**
+10. **Customer Specific Special Price Add [B2B]**
 
 i.	Flow Description: This ProcessFlow is featured to sync Customer Specific Special Price from SAP Business One to Magento2. The following details are synced when integrated: website id, company id, pricelist id, discount type, Start Date, End Date & Product Details.
 
-ii.	Dependency flow: ProcessFlow - Company Add,  ProcessFlow - PriceLists Add [B2B] & ProcessFlow - Simple Product Add.
+
+11. **Customer Specific Special Price Update [B2B]**
+
+i.	Flow Description: This ProcessFlow is featured to Update the Customer Specific Special Price from SAP Business One to Magento2. All the details that were added previously will only updated with this ProcessFlow.
 
 
-10. **ProcessFlow - PriceList Product Price Assign**
-
-i.	Flow Description: This ProcessFlow is featured to assign Pricelists to respective products from SAP Business One to Magento2. The following details will be integrated: Pricelist id, SKU & Product Price.
-
-ii.	Dependency flow: ProcessFlow - PriceLists Add [B2B] , ProcessFlow - Simple Product Add.
-
-
-11: **ProcessFlow - Special Price : Add**
-
-i.	Flow Description: This ProcessFlow is featured to add Special Price from SAP Business One to Magento2. The following details would be synced: Item Code, Special Price, Start Date & End Date.
-
-ii.	Dependency flow: ProcessFlow - Simple Product Add
-
-
-12. **ProcessFlow - Customer Specific TierPrice Add B2B**
+12. **Customer Specific TierPrice Add B2B**
 
 i.	Flow Description: This ProcessFlow is featured to add Tier Prices, customer specific from SAP Business One to Magento2. The following details would be synced: website id, company id, pricelist id, discount type & Product details.
 
-ii.	Dependency flow: ProcessFlow - Company Add,  ProcessFlow - PriceLists Add [B2B] & ProcessFlow - Simple Product Add
 
-
-13. **ProcessFlow - Customer Specific TierPrice Sync Update B2B**
+13. **Customer Specific TierPrice Sync Update B2B**
 
 i.	Flow Description: This ProcessFlow is featured to update the customer specific Tier Prices from SAP Business One to Magento2. The details synced with the ADD opration will only be updated when triggered this ProcessFlow.
 
-ii.	Dependency flow: ProcessFlow - Customer Specific TierPrice Add B2B
+
+14. **PriceList specific Product Price Add [B2B]**
+
+i.	Flow Description: This ProcessFlow is featured to add Product Specific Pricelists from SAP Business One to Magento2. The PriceLists ID, Product SKU and Product Price will be added using this ProcessFlow.
 
 
 ## Action Filter configurations:
@@ -176,22 +154,6 @@ If your package comprises of prepackaged applications namely SAP, SAP ByDesign, 
 
 Given below is the checklist of Extension & Add On’s required for these applications.
 
-**WooCommerce Application**
-
-•	Version: WooCommerce 2.6 V & Above
-
-•	Extension: insync-wp-rest-filter-1.0.3
-
-•	Description: This is used For API Filtration with respect to Date & Time
-
-**SAP ByDesign Application**
-
-•	Version: SAP ByDesign 19.1.0
-
-•	Extension: `YJT3WBG5Y__V7(INS_AEC_STOCK)`
-
-•	Description: This extension is used for Stock Updating
-
 **SAP B1 Application**
 
 •	Version: Supported SAP B1 Version are:
@@ -210,63 +172,6 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 
 •	Description: This Add On is used for Web Item Master Data Configuration (created under Inventory Module) for adding web product details required for integration.
 
-**Dynamics GP Application**
-
-•	Version: Supported Dynamics GP Version are:	
-	
-    - Dynamics GP 2010
-    - Dynamics GP 2010 R2
-    - Dynamics GP 2013
-    - Dynamics GP 2015
-    - Dynamics GP 2018
-    - Dynamics GP 2016
-
-•	Extension: Compatible eConnect extension is provided with Dynamics GP Version.
-
-•	Description: This extension is used for retrieval of data from GP and push Data to GP.
-
-**Dynamics NAV Application**
-•	Version: Supported NAV Versions are:
-    - NAV 2009R2
-    - NAV 2013 Generic
-    - NAV 2013 R2
-    - NAV 2015
-    - NAV 2016
-    - NAV 2017
-    - NAV 2017 Multiconnection
-    - NAV BC 
-
-•	Extension: NAV Extension comprises of a package containing .fob files & XML files.
-
-**You need to import below listed .fob files**
-
-•	table
-
-•	page
-
-•	code unit
-
-•	xmlport
-
-**You need to import below listed XML Files**
-
-•	Application Id
-
-•	Webservices
-
-**Description: This extension details are enlisted below:**
-
-•	Table: This fob file enables to add additional fields in the NAV Tables, which is required for integration.
-
-•	Page: This fob file enables UI Representation of the Tables in NAV Application
-
-•	Code Unit: This C/AL Code enables to hold backend code of extension modules.
-
-•	XML Port: This enables to import external data source in NAV
-
-•	Application Id: This is a data file, which holds the application Id & application name required for NAV Integration
-
-•	Webservices: This is an XML doc which hold information of webservices for base and extension pages.
 
 ## Adapter Compatibility Check:
 ProcessFlows in this package have no direct dependencies with Adapter Compatibility. Anytime on deploying your ProcessFlow, the latest adapter set in APPSeCONNECT Portal will be downloaded against the applications selected.
