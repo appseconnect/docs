@@ -116,3 +116,10 @@ window is now featured to display [Snapshot](/processflow/snapshot-processflow/)
 
 ![processflow Retry11]()
 
+3) Click on the Hyperlink against the `Sourceids` provided against each data captured.
+
+![processflow Retry12]()
+
+4) You will get the all the snapshots for the selected data displaying all the execution instances.
+
+![processflow retry13]()

@@ -295,7 +295,7 @@ Page 'AEC Contact Details CardPart' SubPageLink field is 'No' and base page SubP
 |PartType|Page|
 |PagePartID|AEC Contact Details CardPart|
 
-b) We have added our Extension page 'AEC Application Contact LP' (33064483) as a part type with the name  'AEC Application Contact List'. 
+b) We have added our Extension page 'AEC Application Contact LP' (33064482) as a part type with the name  'AEC Application Contact List'. 
 Page 'AEC Application Contact LP' SubPageLink field is 'CustomerNo' and base page SubPageLink field is 'No.'
 
 ![nav2013ext15](\staticfiles\connectors\media\application-connector\navextension\nav2013ext15.png)
@@ -345,11 +345,11 @@ b) Add a base table (Contact Alt. Address) field "Contact No." with the name "Co
 
 ### For Invoice
 
-Add a variable (varAECInvoice) in Sales Post (80) code unit .Please find the attached document
+Add a variable (varAECInvoice) for **AEC Invoice** in Sales Post (80) code unit.
 
 ![nav2013ext19](\staticfiles\connectors\media\application-connector\navextension\nav2013ext19.png)
 
-Added below line after  : SalesInvHeader.INSERT;;
+**Added below line after : SalesInvHeader.INSERT;**
 
 //INS2.6 Start>
 
@@ -357,13 +357,13 @@ IF (Invoice) THEN
 
 BEGIN
 
-varAECInvoice.WebInvoiceInsert(SalesHeader  ,SalesInvHeader."No.");
+varAECInvoice.WebInvoiceInsert(SalesHeader,SalesInvHeader."No.");
 
 END;
 
 //INS2.6 End<
 
-Added below code after  SalesInvLine.INSERT;
+**Added below code after SalesInvLine.INSERT;**
          
 //InvoiceLine Start
 
@@ -374,11 +374,12 @@ varAECInvoice.WebInvoiceLineInsert(SalesInvLine);
 
 ### For Shipment
 
-Add a variable (varAECShipment) in Sales Post (80) code unit.
+Add a variable (varAECShipment) for **AEC Shipment** in Sales Post (80) code unit.
 
 ![nav2013ext18](\staticfiles\connectors\media\application-connector\navextension\nav2013ext18.png)
 
-Add below line after  : SalesShptHeader.INSERT;
+**Add below line after  : SalesShptHeader.INSERT;**
+
 //INS2.6 Start>
 
 IF (Ship) THEN
@@ -391,8 +392,7 @@ END;
 
 //INS2.6 End<
 
-
-Added below line after  :  SalesShptLine.INSERT;
+**Added below line after  :  SalesShptLine.INSERT;**
 
 //ShipmentLine Start
 
