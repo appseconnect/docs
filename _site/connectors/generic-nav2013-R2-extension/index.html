@@ -3367,7 +3367,7 @@ Page ‘AEC Contact Details CardPart’ SubPageLink field is ‘No’ and base p
   </tbody>
 </table>
 
-<p>b) We have added our Extension page ‘AEC Application Contact LP’ (33064483) as a part type with the name  ‘AEC Application Contact List’. 
+<p>b) We have added our Extension page ‘AEC Application Contact LP’ (33064482) as a part type with the name  ‘AEC Application Contact List’. 
 Page ‘AEC Application Contact LP’ SubPageLink field is ‘CustomerNo’ and base page SubPageLink field is ‘No.’</p>
 
 <p><img src="\staticfiles\connectors\media\application-connector\navextension\nav2013ext15.png" alt="nav2013ext15" /></p>
@@ -3494,11 +3494,11 @@ Base page SubPageLink field is ‘Contact No.’ and ‘Code’.</p>
 
 <h3 id="for-invoice">For Invoice</h3>
 
-<p>Add a variable (varAECInvoice) in Sales Post (80) code unit .Please find the attached document</p>
+<p>Add a variable (varAECInvoice) for <strong>AEC Invoice</strong> in Sales Post (80) code unit.</p>
 
 <p><img src="\staticfiles\connectors\media\application-connector\navextension\nav2013ext19.png" alt="nav2013ext19" /></p>
 
-<p>Added below line after  : SalesInvHeader.INSERT;;</p>
+<p><strong>Added below line after : SalesInvHeader.INSERT;</strong></p>
 
 <p>//INS2.6 Start&gt;</p>
 
@@ -3506,13 +3506,13 @@ Base page SubPageLink field is ‘Contact No.’ and ‘Code’.</p>
 
 <p>BEGIN</p>
 
-<p>varAECInvoice.WebInvoiceInsert(SalesHeader  ,SalesInvHeader.”No.”);</p>
+<p>varAECInvoice.WebInvoiceInsert(SalesHeader,SalesInvHeader.”No.”);</p>
 
 <p>END;</p>
 
 <p>//INS2.6 End&lt;</p>
 
-<p>Added below code after  SalesInvLine.INSERT;</p>
+<p><strong>Added below code after SalesInvLine.INSERT;</strong></p>
 
 <p>//InvoiceLine Start</p>
 
@@ -3522,12 +3522,13 @@ Base page SubPageLink field is ‘Contact No.’ and ‘Code’.</p>
 
 <h3 id="for-shipment">For Shipment</h3>
 
-<p>Add a variable (varAECShipment) in Sales Post (80) code unit.</p>
+<p>Add a variable (varAECShipment) for <strong>AEC Shipment</strong> in Sales Post (80) code unit.</p>
 
 <p><img src="\staticfiles\connectors\media\application-connector\navextension\nav2013ext18.png" alt="nav2013ext18" /></p>
 
-<p>Add below line after  : SalesShptHeader.INSERT;
-//INS2.6 Start&gt;</p>
+<p><strong>Add below line after  : SalesShptHeader.INSERT;</strong></p>
+
+<p>//INS2.6 Start&gt;</p>
 
 <p>IF (Ship) THEN</p>
 
@@ -3539,7 +3540,7 @@ Base page SubPageLink field is ‘Contact No.’ and ‘Code’.</p>
 
 <p>//INS2.6 End&lt;</p>
 
-<p>Added below line after  :  SalesShptLine.INSERT;</p>
+<p><strong>Added below line after  :  SalesShptLine.INSERT;</strong></p>
 
 <p>//ShipmentLine Start</p>
 
