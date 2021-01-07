@@ -345,11 +345,60 @@ b) Add a base table (Contact Alt. Address) field "Contact No." with the name "Co
 
 ### For Invoice
 
-![nav2013ext18](\staticfiles\connectors\media\application-connector\navextension\nav2013ext18.png)
+Add a variable (varAECInvoice) in Sales Post (80) code unit .Please find the attached document
+
+![nav2013ext19](\staticfiles\connectors\media\application-connector\navextension\nav2013ext19.png)
+
+Added below line after  : SalesInvHeader.INSERT;;
+
+//INS2.6 Start>
+
+IF (Invoice) THEN
+
+BEGIN
+
+varAECInvoice.WebInvoiceInsert(SalesHeader  ,SalesInvHeader."No.");
+
+END;
+
+//INS2.6 End<
+
+Added below code after  SalesInvLine.INSERT;
+         
+//InvoiceLine Start
+
+varAECInvoice.WebInvoiceLineInsert(SalesInvLine);
+
+//InvoiceLine End
+
 
 ### For Shipment
 
+Add a variable (varAECShipment) in Sales Post (80) code unit.
+
 ![nav2013ext18](\staticfiles\connectors\media\application-connector\navextension\nav2013ext18.png)
+
+Add below line after  : SalesShptHeader.INSERT;
+//INS2.6 Start>
+
+IF (Ship) THEN
+
+BEGIN
+
+varAECShipment.WebShipmentInsert(SalesHeader  ,SalesShptHeader."No.");
+
+END;
+
+//INS2.6 End<
+
+
+Added below line after  :  SalesShptLine.INSERT;
+
+//ShipmentLine Start
+
+varAECShipment.WebShipmentLineInsert(SalesShptLine);
+
+//ShipmentLine End
 
 
 ## Log table setup information:
