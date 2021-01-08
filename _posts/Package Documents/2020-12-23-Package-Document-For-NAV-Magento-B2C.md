@@ -77,124 +77,101 @@ Given below are the Transactional Data Configuration Details:
 
 1. **Customer Add [NAV - Magento2]**
 
-i.	Flow Description: This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Magento2. The following Customer details will be synced: Customer Group ID, First Name, Last Name, Gender, Store Id, Email Id, Customer Address & Contact details and Customer ID.
-
-ii.	Dependency flow: Not Applicable 
+Flow Description: This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Magento2. The following Customer details will be synced: Customer Group ID, First Name, Last Name, Gender, Store Id, Email Id, Customer Address & Contact details and Customer ID.
 
 
 2. **Customer Update [NAV - Magento2]**
 
-i.	Flow Description: This ProcessFlow will integrate the updated details of the customers added from Dynamics NAV to Magento2. The details that were added while integrating the ProcessFlow **Customer Add [NAV - Magento2]** will only be updated.
-
-ii.	Dependency flow: Customer Add [NAV - Magento2]
+Flow Description: This ProcessFlow will integrate the updated details of the customers added from Dynamics NAV to Magento2. The details that were added while integrating the ProcessFlow **Customer Add [NAV - Magento2]** will only be updated.
 
 
 3. **Customer Add [Magento2 - NAV]**
 
-i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from Magento2 to Dynamics NAV. The following Customer details will be synced: Customer Address Details, Customer Price Group, Customer Discount Group, Customer Number, Phone No, 
+Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from Magento2 to Dynamics NAV. The following Customer details will be synced: Customer Address Details, Customer Price Group, Customer Discount Group, Customer Number, Phone No, 
 Email Details, Website ID. 
-
-ii.	Dependency flow: Not Applicable 
 
 
 4. **Customer Update [Magento2 - NAV]**
 
-i.	Flow Description: This ProcessFlow will integrate the updated details of the customers from Magento2 to Dynamics NAV. The details that were added in the Processflow **Customer Add [Magento2 - NAV]** will only be updated in this flow.
+Flow Description: This ProcessFlow will integrate the updated details of the customers from Magento2 to Dynamics NAV. The details that were added in the Processflow **Customer Add [Magento2 - NAV]** will only be updated in this flow.
 
-ii.	Dependency flow: Customer Add [Magento2 - NAV]
 
 
 5. **Simple Product Add** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application from Dynamics NAV. The details are: Product SKU, Product Name, Price, Product Status, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
+Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application from Dynamics NAV. The details are: Product SKU, Product Name, Price, Product Status, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
 This processflow is also equipped with a Post-Acknowledgment flow that syncs back the WebId & WebSyncFlag based on the Item No (SKU).
 
-ii.	Dependency Flow: Not Applicable 
 
 
 6. **Simple Product Update** 
 
-i.	Flow Description: This ProcessFlow is featured to update the changes of the product details from Dynamics NAV to Magento2. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
-
-ii.	Dependency Flow: Simple Product Add
-Simple Product Update is equipped of updating the changes made to the Product details on your Source Application. As the updates are made against the ItemCode, therefore the dependency of Simple Product Add occurs which is responsible of adding the ItemCode primarily.
+Flow Description: This ProcessFlow is featured to update the changes of the product details from Dynamics NAV to Magento2. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
 
 
 7. **Configurable Product Add**
 
-i.	Flow Description: This ProcessFlow syncs all the details of the configurable products from Dynamics NAV to Magento2. The following details will be integrated with this ProcessFlow: Product SKU, Product Name, Price, Product Status, Configurable Product Option Details, Configurable Product Links, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
+Flow Description: This ProcessFlow syncs all the details of the configurable products from Dynamics NAV to Magento2. The following details will be integrated with this ProcessFlow: Product SKU, Product Name, Price, Product Status, Configurable Product Option Details, Configurable Product Links, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
 This processflow is also equipped with a Post-Acknowledgment flow that syncs back the WebId & WebSyncFlag based on the Item No (SKU).
 
-ii.	Dependency Flow: NA. 
 
 
 8. **Configurable Product Update**
 
-i.	Flow Description: This ProcessFlow syncs the updated details of each configurable products from Dynamics NAV to Magento2. All the details added while integrating the ProcessFlow **Configurable Product Add** will be updated when triggered this processflow.
+Flow Description: This ProcessFlow syncs the updated details of each configurable products from Dynamics NAV to Magento2. All the details added while integrating the ProcessFlow **Configurable Product Add** will be updated when triggered this processflow.
 
-ii.	Dependency Flow: Configurable Product Add
 
 
 9. **Bundle Product Add**
 
-i.	Flow Description: This ProcessFlow syncs all the details bundled products from Dynamics NAV to Magento2. The following details is featured to sync with this processflow: SKU, name, price, status, attribute_set_id, visibility, type_id, attribute code, value, Bundle Product Details & Weight.
+Flow Description: This ProcessFlow syncs all the details bundled products from Dynamics NAV to Magento2. The following details is featured to sync with this processflow: SKU, name, price, status, attribute_set_id, visibility, type_id, attribute code, value, Bundle Product Details & Weight.
 This Processflow is also equipped with Post-Acknowledgement flow that updates WebId & WebSyncFlag back to Dynamics NAV.
 
-ii.	Dependency Flow: NA. 
 
 
 10.	**Bundle Product Update**
 
-i.	Flow Description: This ProcessFlow syncs all the updated details bundled products from Dynamics NAV to Magento2. All the added bundled products will be updated with the respective updates when triggered the sync.
+Flow Description: This ProcessFlow syncs all the updated details bundled products from Dynamics NAV to Magento2. All the added bundled products will be updated with the respective updates when triggered the sync.
 
-ii.	Dependency Flow: ProcessFlow - Bundle Product Add
 
 
 11. **Product Price :Update**
 
-i.	Flow Description: This ProcessFlow is featured to update the prices of the Products from Dynamics NAV to Magento2. The PRICE is updated for each the Item Numbers that requires the update.
-ii.	Dependency Flow: You will be required to sync all the related products as they are required before integrating its updated Price.
+Flow Description: This ProcessFlow is featured to update the prices of the Products from Dynamics NAV to Magento2. The PRICE is updated for each the Item Numbers that requires the update.
 
 
 12. **Inventory Update:**
 
-i.	Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Quantity and other inventory details the Item Id. 
+Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Quantity and other inventory details the Item Id. 
 
-ii.	Dependency Flow: Simple Product Add 
-As the inventory is updated against the ItemCode, the item needs to be added first so that the respective stocks can be updated accordingly.
 
 
 13. **Sales Order Add:** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
-
-ii.	Dependency Flow:  Customer Add [Magento2 - NAV], Product Add, Inventory Update. 
-The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
+Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
 
 
 14. **Shipment Add:** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the Shipment docs generated against your Sales Order, from Dynamics NAV to Magento2. This flow syncs the Shipment Tracking Number, Carrier Code along with the ordered item details. 
+Flow Description: This ProcessFlow is featured to sync the Shipment docs generated against your Sales Order, from Dynamics NAV to Magento2. This flow syncs the Shipment Tracking Number, Carrier Code along with the ordered item details. 
 Shipment Add is also equipped with a Post Acknowledgement task that Updates the WebIncrementId & Sync Back Flag details of Shipment back to Dynamics NAV.
-
-ii. Dependency Flow: Customer Add [Magento2 - NAV], Simple Product Add, Configurable Product Add, Bundle Product Add, Inventory Update, Sales Order Add.
 
 
 15.	**Invoice Add:** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the Invoices from Dynamics NAV to Magento2, raised against the Sales Order Generated. The flow syncs the Order Id, Ordered Item Details, Quantity etc. 
+Flow Description: This ProcessFlow is featured to sync the Invoices from Dynamics NAV to Magento2, raised against the Sales Order Generated. The flow syncs the Order Id, Ordered Item Details, Quantity etc. 
 Invoice Add is also equipped with a Post Acknowledgement task that Updates the WebIncrementId & Sync Back Flag details of Invoice back to Dynamics NAV.
 
-ii.	Dependency Flow:  Customer Add [Magento2 - NAV], Product Add, Inventory Update, Order Add 
 
 
 16.	**Special Price Add:** 
 
-i.	Flow Description:
-
-ii.	Dependency Flow:
+Flow Description: This ProcessFlow is featured to Add as well as Update Special Prices from Dynamics NAV to Magento2. The following are the details that will be synced: Price, Store_id, SKU, Start Date & End Date. 
 
 
+17.	**Tier Price Add:** 
+
+Flow Description: This ProcessFlow is featured to Add as well as Update tier Prices from Dynamics NAV to Magento2. This processflow syncs the following details: Product SKU, Tier Price Value, Customer group id, & Quantity.
 
 
 ## Action Filter configurations:
