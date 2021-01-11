@@ -31,8 +31,10 @@ This package consists the following configurations details:
 3.	Action Filter configurations 
 4.	LookUp Mapping
 5.	Extensions & Add-On Installation Details
-6.	Environment Setup Parameter 
-7.	Deployment Setup 
+6.  Adapter Compatibility Check
+7.	Environment Selection 
+8.	Deployment 
+
 
 ## App Authentication Mechanism
 

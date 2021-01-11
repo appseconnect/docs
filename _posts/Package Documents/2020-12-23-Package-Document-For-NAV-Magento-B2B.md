@@ -61,26 +61,29 @@ Given below are the Transactional Data Configuration Details:
 
 1. **Company Add [B2B]**
 
-i.	Flow Description: This ProcessFlow will integrate the newly on boarded Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The following Customer details will be synced: Company Group ID, First Name, Last Name, Email, Gender, Store id, Website id, City, postcode, Shipping Address, Billing Address, Country Address, and Telephone.
+Flow Description: This ProcessFlow will integrate the newly on boarded Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The following Customer details will be synced: Company Group ID, First Name, Last Name, Email, Gender, Store id, Website id, City, postcode, Shipping Address, Billing Address, Country Address, and Telephone.
 This ProcessFlow is also equipped with a Post-Acknowledgement flow that syncs back WebCustomerId & WebSyncFlag back to Dynamics NAV from Magento2.
 
 
 2. **Company Update [B2B]**
 
-i.	Flow Description: This ProcessFlow will integrate the updated Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The Details that are synced while adding companies will only be updated.
+Flow Description: This ProcessFlow will integrate the updated Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The Details that are synced while adding companies will only be updated.
 
 
 3. **Contact Person Add (Dyanmics NAV to Magento) [B2B]**
 
-i.	Flow Description: This ProcessFlow is featured to add Contact Persons of the Companies from Dynamics NAV to Magento2. 
+Flow Description: This ProcessFlow is featured to add Contact Persons of the Companies from Dynamics NAV to Magento2. 
 The following details of the Contact Person Add will be integrated: Customer id, email, first name, last name & Customer Business Relation. Both the flows in this ProcessFlow is also equipped with SyncBack that updates back a Post-Acknowledment value to the Source. All the Flows will be executed from SAP Business One to Magento2.
 
 
 4. **Contact Person Update (SAP B1 to Magento) [B2B]**
 
-i.	Flow Description: This ProcessFlow is featured to Update the details of the Contact Persons of the Companies added to your business network. Only the details added will adding Contact Persons will be updated and synced from SAP Business One to Magento2.
+Flow Description: This ProcessFlow is featured to Update the details of the Contact Persons of the Companies added to your business network. Only the details added will adding Contact Persons will be updated and synced from SAP Business One to Magento2.
 
 
+5. **Customer Specific Special Price Add [B2B]**
+
+Flow Description: This ProcessFlow is featured to add Company specific Special Prices from Dynamics NAV to Magento2. The following are the details that will added on its sync: WebsiteId, customer id, pricelist details, Start & End Date, Product SKU, & Special.
 
 
 ## Action Filter configurations:
