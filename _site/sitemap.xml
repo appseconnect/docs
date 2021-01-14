@@ -53,6 +53,14 @@
 <lastmod>2010-01-03T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/processflow/Create-User-Defined-Functions/</loc>
+<lastmod>2014-01-14T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/processflow/overview-of-user-defined-functions/</loc>
+<lastmod>2014-01-14T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/release-notes/2017-Q1/</loc>
 <lastmod>2017-06-14T00:00:00+05:30</lastmod>
 </url>
@@ -1305,6 +1313,9 @@
 <loc>http://localhost:4000/sdk/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/processflow/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/release-notes/</loc>
 </url>
 <url>
@@ -1324,9 +1335,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/resuming-workflows/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/processflow/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/deployment/</loc>

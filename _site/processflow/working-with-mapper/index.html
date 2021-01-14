@@ -1478,12 +1478,6 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising ProcessFlow">Organising ProcessFlow</a>
-        
-    </li>
-    
-    
     <li class="menu-item-" data-url="/processflow/Quickstart-guide-to-processflow/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/processflow/Quickstart-guide-to-processflow/" onclick="selectTab('/processflow/Quickstart-guide-to-processflow/', event);" title="Go to Quickstart">Quickstart</a>
         
@@ -1554,6 +1548,31 @@
     
     <li class="menu-item-" data-url="/processflow/redeploying-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/redeploying-processflow/" onclick="selectTab('/processflow/redeploying-processflow/', event);" title="Go to Redeploy">Redeploy</a>
+        
+    </li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/processflow-listing-page/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/processflow-listing-page/" onclick="selectTab('/processflow/processflow-listing-page/', event);" title="Go to Organising ProcessFlow">Organising ProcessFlow</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/overview-of-user-defined-functions/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/processflow/overview-of-user-defined-functions/" onclick="selectTab('/processflow/overview-of-user-defined-functions/', event);" title="Go to User Defined Functions overview">User Defined Functions overview</a>
+        
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/processflow/Create-User-Defined-Functions/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/processflow/Create-User-Defined-Functions/" onclick="selectTab('/processflow/Create-User-Defined-Functions/', event);" title="Go to Create User Defined Appresource Functions">Create User Defined Appresource Functions</a>
         
     </li>
     
@@ -2686,29 +2705,49 @@ for activating the Node Configuration window of Mapper Node.</li>
 
 <h2 id="steps-to-work-with-mapper-node">Steps to work with Mapper Node</h2>
 
-<ol>
-  <li>Login to the Portal and Navigate to the Process Flow Section from <a href="/processflow/processflow-listing-page/">Process Flow Listing Page</a>.</li>
-  <li><a href="/processflow/creating-processflow/">Create a New Process Flow</a> or Edit an existing Process Flow in the <a href="/processflow/designer-processflow/">Designer Page</a>.</li>
-  <li>Start with linking  the Source and Destination app with the mapper node.The Node configuration Window of Mapper Node opens.
- <img src="../../../staticfiles/processflow/media/mapper/mapper_1.png" alt="Mapper 1" /></li>
-  <li>In the Node Configuration Window of Mapper Node, you will be to view the 
-<a href="/transformation/getting-started-with-mapping/#structure-of-mapping">structure of the mapper</a>node.</li>
-  <li><a href="/transformation/getting-started-with-mapping/#structure-of-mapping">Structure of Mapping</a>will help you know provide a 
-basic walkthrough of the Mapper Node.</li>
-  <li>To work with Mapper node, you need to know about the <a href="/transformation/understanding-components-of-mapping/">components of Mapping</a> or Mapper node. 
-<img src="../../../staticfiles/processflow/media/mapper/mapper_2.png" alt="Mapper 2" /></li>
-  <li>Variables are one such component which are necessary when working with 
+<p>1)	Login to the Portal and Navigate to the Process Flow Section from <a href="/processflow/processflow-listing-page/">Process Flow Listing Page</a>.</p>
+
+<p>2)	<a href="/processflow/creating-processflow/">Create a New Process Flow</a> or Edit an existing Process Flow in the <a href="/processflow/designer-processflow/">Designer Page</a>.</p>
+
+<p>3) Start with linking  the Source and Destination app with the mapper node.The Node configuration Window of Mapper Node opens.
+ <img src="../../../staticfiles/processflow/media/mapper/mapper_1.png" alt="Mapper 1" /></p>
+
+<p>4) In the Node Configuration Window of Mapper Node, you will be to view the following components. <a href="/transformation/getting-started-with-mapping/#structure-of-mapping">structure of the mapper</a>node. The Window will</p>
+
+<ul>
+  <li>Node Name &amp; Type: You will be able to view the Application Node Name and its Operation Type for both the Source and Destination Application.</li>
+  <li>Schema and Action Details: On the Left Pane of the window, you will be displayed with the Schema and Action selected for this transformation process. The details will be shown for both the selected apps.</li>
+  <li>Mapper Node Description: This will allow you to provide a description to the mapper node for distinguishing if you are working with multiple mapper nodes in a single Process Flow.</li>
+  <li><a href="/transformation/getting-started-with-mapping/#structure-of-mapping">structure of the mapper</a>node: The right side of the window, will enlist the components of the mapper node that will help you transform data between applications.</li>
+</ul>
+
+<p><strong>Note: The option for Lookups in <a href="/transformation/getting-started-with-mapping/#structure-of-mapping">Structure of Mapping</a> will not be available for ProcessFlows</strong></p>
+
+<p>5)	<a href="/transformation/getting-started-with-mapping/#structure-of-mapping">Structure of Mapping</a>will help you know provide a 
+basic walkthrough of the Mapper Node.</p>
+
+<p><strong>Note: The option for Lookups in <a href="/transformation/getting-started-with-mapping/#structure-of-mapping">Structure of Mapping</a> will not be available for ProcessFlows</strong></p>
+
+<p>6) To work with Mapper node, you need to know about the <a href="/transformation/understanding-components-of-mapping/">components of Mapping</a> or Mapper node. 
+<img src="../../../staticfiles/processflow/media/mapper/mapper_2.png" alt="Mapper 2" /></p>
+
+<p>7)	Variables are one such component which are necessary when working with 
 Mapper Node. To know more, view <a href="/transformation/types-of-variable/">types of variables</a> used in APPSeCONNECT.
-<img src="../../../staticfiles/processflow/media/mapper/mapper_3.png" alt="Mapper 3" /></li>
-  <li>Mapper node focuses on mapping of attributes with Source &amp; Destination
-applications. To know more, view <a href="/processflow/customising-attribute-mapping/">steps to Customize Attribute Mapping</a></li>
-  <li>Mapping/Mapper of Processflows requires the usage of Library functions for transforming data from Source to Destination. <br />
-To know more, view the <a href="/transformation/using-library-methods/">Appresource functions</a>.</li>
-  <li>You can also implement logic over attributes using IF condition. <br />
-To know more, view <a href="/processflow/steps-to-define-logic-over-destination-mapping/">implementing IF condition</a> in attribute mapping.<br />
-8.Lookups maps specific value that are required to transform. <br />
-To know more on repository, view <a href="/processflow/implementing-lookup-in-mapping/">Lookup Repositories</a>.</li>
-</ol>
+<img src="../../../staticfiles/processflow/media/mapper/mapper_3.png" alt="Mapper 3" /></p>
+
+<p>8)	Mapper node focuses on mapping of attributes with Source &amp; Destination
+applications. To know more, view <a href="/processflow/customising-attribute-mapping/">steps to Customize Attribute Mapping</a></p>
+
+<p>9)	Mapping/Mapper of Processflows requires the usage of Library functions for transforming data from Source to Destination. <br />
+To know more, view the <a href="/transformation/using-library-methods/">Appresource functions</a>.</p>
+
+<p>10)	You can also implement logic over attributes using IF condition. <br />
+To know more, view <a href="/processflow/steps-to-define-logic-over-destination-mapping/">implementing IF condition</a> in attribute mapping.</p>
+
+<p>11) Lookups maps specific value that are required to transform. <br />
+To know more on repository, view <a href="/processflow/implementing-lookup-in-mapping/">Lookup Repositories</a>.</p>
+
+<p><strong>Note: The option for Lookups in <a href="/transformation/getting-started-with-mapping/#structure-of-mapping">Structure of Mapping</a> will not be available for ProcessFlows</strong></p>
 
 <p>Following are the steps and necessary links that are required to work with the Mapper node of Process Flow.
 For executing a sync process user needs to execute the following tasks in mapper node.</p>
@@ -5343,6 +5382,22 @@ For executing a sync process user needs to execute the following tasks in mapper
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -5406,6 +5461,10 @@ For executing a sync process user needs to execute the following tasks in mapper
                                     Merger Node
                                 </a>
                             </li>
+                            
+                            
+                            
+                            
                             
                             
                             
