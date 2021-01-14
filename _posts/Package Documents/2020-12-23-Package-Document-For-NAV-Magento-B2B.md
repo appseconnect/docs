@@ -10,7 +10,7 @@ Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your 
 - Package Name - Magento2.X  - Dynamics NAV B2B Package 
 - Created By –  INSYNC Solutions
 - Last Modified - 08/12/2020 07:23:30 PM (Date & Time)
-- Apps Used in the Package – Dynamics NAV (*****) & Magento2 (>=2.0.0.0)
+- Apps Used in the Package – Dynamics NAV & Magento2 (>=2.0.0.0)
 
 ## Package Key Features
 
@@ -83,7 +83,20 @@ Flow Description: This ProcessFlow is featured to Update the details of the Cont
 
 5. **Customer Specific Special Price Add [B2B]**
 
-Flow Description: This ProcessFlow is featured to add Company specific Special Prices from Dynamics NAV to Magento2. The following are the details that will added on its sync: WebsiteId, customer id, pricelist details, Start & End Date, Product SKU, & Special.
+Flow Description: This ProcessFlow is featured to add Company specific Special Prices from Dynamics NAV to Magento2. The following are the details that will be added on its sync: WebsiteId, customer id, pricelist details, Start & End Date, Product SKU, & Special.
+
+
+6. **Customer Specific Special Price Update [B2B]**
+
+Flow Description: This ProcessFlow is featured to update the added Company specific Special Prices frmom Dynamics NAV to Magento2. The following are the details that were added will only be updated when executed this ProcessFlow. 
+
+
+7. **Customer Specific Tier Price Add [B2B] 
+
+Flow Description:
+
+
+8. **Customer Specific Tier Price Update [B2B] 
 
 
 ## Action Filter configurations:
