@@ -135,7 +135,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Create User Defined Appresource Functions",
-      excerpt: "Implementing User Specific Business Scenarios often requires creation of User Defined Appresource Function that enables you develop customized expressions as...",
+      excerpt: "Implementing User Specific Business Integrations often requires usage of User Defined Appresource Functions that enables you to provide customized expressions...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 13
@@ -3051,7 +3051,7 @@ var store = [
       {
         "title": "Create User Defined Appresource Functions",
         "url": "/processflow/Create-User-Defined-Functions/",
-        "excerpt": "Implementing User Specific Business Scenarios often requires creation of User Defined Appresource Function that enables you develop customized expressions as...",
+        "excerpt": "Implementing User Specific Business Integrations often requires usage of User Defined Appresource Functions that enables you to provide customized expressions...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
