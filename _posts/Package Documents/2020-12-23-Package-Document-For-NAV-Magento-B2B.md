@@ -91,12 +91,16 @@ Flow Description: This ProcessFlow is featured to add Company specific Special P
 Flow Description: This ProcessFlow is featured to update the added Company specific Special Prices frmom Dynamics NAV to Magento2. The following are the details that were added will only be updated when executed this ProcessFlow. 
 
 
-7. **Customer Specific Tier Price Add [B2B] 
+7. **Customer Specific Tier Price Add [B2B]** 
 
-Flow Description:
+Flow Description: This Processflow is featured to add Company Specific Tier prices from Dynamics NAV to Magento2. The following details would be added with this processflow: SourceKey, website id, pricelist id, discount type, Product SKU, Quantity, & Tier Price. 
+This processflow is also equipped with a post - acknowledgement flow thats sync back Customer Tier Price Flag & Customer Tier Price Id from Magento2 to Dynamics NAV.
 
 
-8. **Customer Specific Tier Price Update [B2B] 
+8. **Customer Specific Tier Price Update [B2B]** 
+
+Flow Description: This Processflow is featured to UPDATE the customer specific tier prices from Dynamics NAV to Magento2. The details that were added in the processflow **Customer Specific Tier Price Add [B2B]** will only be updated on executing this processflow.
+This processflow is will also update the post acknowledgment values of the syncs back the updated  Customer Tier Price Flag & Customer Tier Price Id from Magento2 to Dynamics NAV.
 
 
 ## Action Filter configurations:

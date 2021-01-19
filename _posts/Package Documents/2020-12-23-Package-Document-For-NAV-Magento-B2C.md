@@ -75,6 +75,12 @@ Description: This master data syncs the configuration details of the Product Cat
 • Configuration Data Add [CustomerGroup]
 Description: This master data syncs the configuration details of the Customer Groups. 
 
+• Configuration Data Add [States]
+Description: .
+
+
+
+
 Given below are the Transactional Data Configuration Details:
 
 1. **Customer Add [NAV - Magento2]**
@@ -163,7 +169,6 @@ Shipment Add is also equipped with a Post Acknowledgement task that Updates the 
 
 Flow Description: This ProcessFlow is featured to sync the Invoices from Dynamics NAV to Magento2, raised against the Sales Order Generated. The flow syncs the Order Id, Ordered Item Details, Quantity etc. 
 Invoice Add is also equipped with a Post Acknowledgement task that Updates the WebIncrementId & Sync Back Flag details of Invoice back to Dynamics NAV.
-
 
 
 16.	**Special Price Add:** 
