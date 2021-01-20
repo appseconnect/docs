@@ -2887,6 +2887,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "Lisitng & Editing User Defined Appresource Functions",
+      excerpt: "End Users will be listed with the Functions that they have created in the UDF Listing window. Every functions listed...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 319
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -6407,6 +6416,17 @@ var store = [
         "title": "Generic NAV 2013R2 Extension",
         "url": "/connectors/generic-nav2013-R2-extension/",
         "excerpt": "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Lisitng & Editing User Defined Appresource Functions",
+        "url": "/processflow/Listing-Editing-user-defined-functions/",
+        "excerpt": "End Users will be listed with the Functions that they have created in the UDF Listing window. Every functions listed...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
