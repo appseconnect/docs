@@ -49,9 +49,13 @@ b. Click on the SAVE button, once you provided the customized info.
 
 c. [Design](/processflow/creating-processflow/) your processflow and [Deploy](/processflow/deploying-and-executing-processfloww/#deploying-processflows-to-environment) to execute your designed processflow.
 
-d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the Customized Info provided by the user as Return Response.
+d. The snapshots will be generated for each execution that will allow you to survey the Data synced and the returned response. You will be able to view the Customized Info provided by the user as Return Response in the **ACTIVITY LOG** of Snapshot.
 
 ![returnresponse4](\staticfiles\processflow\media\returnresponse4.PNG)
+
+e. Clicking over the specific LOG, you can view the complete defined text provided on a separate window.
+
+![returnresponse6](\staticfiles\processflow\media\returnresponse5.PNG)
 
 ### Reponse Type: Output of the Previous Node
 
