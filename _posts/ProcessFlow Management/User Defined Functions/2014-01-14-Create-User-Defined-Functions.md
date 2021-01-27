@@ -29,7 +29,7 @@ Follow the steps below to create the user Defined Cloud Appresource Functions.
 
 2) Click on the Functions Icon available in Header Panel of the designer page.
 
-![udfcreate1]()
+![udfcreate1](\staticfiles\processflow\media\udfcreate1.png)
 
 3) The UDF listing window opens. 
 
@@ -39,30 +39,22 @@ Follow the steps below to create the user Defined Cloud Appresource Functions.
 
 Once you are in the UDF Listing window, you can now proceed with the create of User Defined Functions. Based on the User Journey, you get TWO Process to land upto the function CREATE Page
 
-### User Journey 1: Creating the First Time
+4) Click on the **Click Here** button to create you first User Defined Function. You can also Click on the (+) button to create functions.
+The CREATE Page Opens.
 
-4) You will get this view if you don't have any functions created. 
+![udfcreate4](\staticfiles\processflow\media\udfcreate4.png)
 
-![udfcreate3]()
+5) Either way you will land on the **CREATE Page** for defining the function.
 
-5) Click on the **Click Here** button to create you first User Defined Function. The CREATE Page Opens.
+6) You need to Provide the **Function Name** & **Description** for its definition.
 
-### User Journey 1: After Multiple Creations
+![udfcreate5](\staticfiles\processflow\media\udfcreate5.png)
 
-6) If you have created functions, more than ONE, you will get to view the **NEW** button for creating another function.
-
-![udfcreate4]()
-
-7) Clicking on the **NEW** button, the CREATE Page Opens.
-
-8) Either way you will land upto the **CREATE Page** for defining the function.
-
-9) You need to Provide the **Function Name** & **Description** for its definition.
-
-![udfcreate5]()
-
-10) Once defined, you need to navigate to the **editor** for the function code definition. Click on the **Go to Editor** for the same.
+7) Once defined, you need to navigate to the **editor** for the function code definition. Click on the **Go to Editor** for the same.
 
 For more information on the Code Editor, Visit [UDF Code Editor and Validation]().
 
 **Note:**
+
+- You can also create your Cloud Appresource Functions from the mapper node. For more information on that steps, [click here](/processflow/cloud-appresource-functions/).
+- All the created functions irrespective of the areas, the functions will be listed on the UDF Listing Window. For more details on the Listing page, [Click Here](/processflow/Listing-Editing-user-defined-functions/).
