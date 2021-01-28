@@ -4,14 +4,6 @@ The package **Magento2.X  - Dynamics NAV B2B** will let you integrate the pre-im
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
-## Additional Information
-
-- Version Number – 1.0.0 
-- Package Name - Magento2.X  - Dynamics NAV B2B Package 
-- Created By –  INSYNC Solutions
-- Last Modified - 08/12/2020 07:23:30 PM (Date & Time)
-- Apps Used in the Package – Dynamics NAV & Magento2 (>=2.0.0.0)
-
 ## Package Key Features
 
 **Magento2.X  - Dynamics NAV B2B** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
@@ -23,18 +15,12 @@ Checkout the Key Features of this package, listed below:
 4.	Easy integrations of B2B Business Model: This package will let you sync the B2B business areas with Magento 2 and SAP Business One making your integrations cover the B2B areas as well.
 5.  Generic Compatibility: This package is compatible with any Generic Versions of Dynamics NAV integrating its B2B Module with Magento2.
 
-## Package Tech Specification
+## Package Setup
 
-This package consists the following configurations details:
+You are few steps away from UNBOXing this package on your APPSeCONNECT Organisation. Check out the [Installation Manual](https://docs.appseconnect.com/processflow/processflow-package-installation/) for more details.
+Your installed package will be available in the **Installed Process Folder**.
 
-1.	App Authentication Mechanism
-2.	Packaged Processflows & Dependencies
-3.	Action Filter configurations 
-4.	LookUp Mapping
-5.	Extensions & Add-On Installation Details
-6.  Adapter Compatibility Check
-7.	Environment Selection 
-8.	Deployment 
+Study this documentation for the Configuration, Deploy & the Execution details.
 
 ## App Authentication Mechanism
 
@@ -45,7 +31,7 @@ Study your required application’s document to know about the Authentication and 
 This package comprises of the following Applications.
 
 - [Dynamics NAV](https://docs.appseconnect.com/connectors/Dynamicsnav/)
-- [Magento 2](https://docs.appseconnect.com/connectors/magento2/) 
+- [Magento 2](https://docs.appseconnect.com/connectors/magento2/) (>=2.0.0.0)
 
 If you have an application which has an application connector present on platform, you as a user require very small effort to configure the connector to work correctly with the application. 
 
@@ -61,46 +47,49 @@ Given below are the Transactional Data Configuration Details:
 
 1. **Company Add [B2B]**
 
-Flow Description: This ProcessFlow will integrate the newly on boarded Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The following Customer details will be synced: Company Group ID, First Name, Last Name, Email, Gender, Store id, Website id, City, postcode, Shipping Address, Billing Address, Country Address, and Telephone.
+This ProcessFlow will integrate the newly on boarded Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The following Customer details will be synced: Company Group ID, First Name, Last Name, Email, Gender, Store id, Website id, City, postcode, Shipping Address, Billing Address, Country Address, and Telephone.
 This ProcessFlow is also equipped with a Post-Acknowledgement flow that syncs back WebCustomerId & WebSyncFlag back to Dynamics NAV from Magento2.
 
 
 2. **Company Update [B2B]**
 
-Flow Description: This ProcessFlow will integrate the updated Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The Details that are synced while adding companies will only be updated.
+This ProcessFlow will integrate the updated Companies and their details to your B2B business line-up from Dynamics NAV to Magento2. The Details that are synced while adding companies will only be updated.
 
 
 3. **Contact Person Add (Dyanmics NAV to Magento) [B2B]**
 
-Flow Description: This ProcessFlow is featured to add Contact Persons of the Companies from Dynamics NAV to Magento2. 
+This ProcessFlow is featured to add Contact Persons of the Companies from Dynamics NAV to Magento2. 
 The following details of the Contact Person Add will be integrated: Customer id, email, first name, last name & Customer Business Relation. Both the flows in this ProcessFlow is also equipped with SyncBack that updates back a Post-Acknowledment value to the Source. All the Flows will be executed from SAP Business One to Magento2.
 
 
 4. **Contact Person Update (SAP B1 to Magento) [B2B]**
 
-Flow Description: This ProcessFlow is featured to Update the details of the Contact Persons of the Companies added to your business network. Only the details added will adding Contact Persons will be updated and synced from SAP Business One to Magento2.
+This ProcessFlow is featured to Update the details of the Contact Persons of the Companies added to your business network. Only the details added will adding Contact Persons will be updated and synced from SAP Business One to Magento2.
 
 
 5. **Customer Specific Special Price Add [B2B]**
 
-Flow Description: This ProcessFlow is featured to add Company specific Special Prices from Dynamics NAV to Magento2. The following are the details that will be added on its sync: WebsiteId, customer id, pricelist details, Start & End Date, Product SKU, & Special.
+This ProcessFlow is featured to add Company specific Special Prices from Dynamics NAV to Magento2. The following are the details that will be added on its sync: WebsiteId, customer id, pricelist details, Start & End Date, Product SKU, & Special.
 
 
 6. **Customer Specific Special Price Update [B2B]**
 
-Flow Description: This ProcessFlow is featured to update the added Company specific Special Prices frmom Dynamics NAV to Magento2. The following are the details that were added will only be updated when executed this ProcessFlow. 
+This ProcessFlow is featured to update the added Company specific Special Prices frmom Dynamics NAV to Magento2. The following are the details that were added will only be updated when executed this ProcessFlow. 
 
 
 7. **Customer Specific Tier Price Add [B2B]** 
 
-Flow Description: This Processflow is featured to add Company Specific Tier prices from Dynamics NAV to Magento2. The following details would be added with this processflow: SourceKey, website id, pricelist id, discount type, Product SKU, Quantity, & Tier Price. 
+This Processflow is featured to add Company Specific Tier prices from Dynamics NAV to Magento2. The following details would be added with this processflow: SourceKey, website id, pricelist id, discount type, Product SKU, Quantity, & Tier Price. 
 This processflow is also equipped with a post - acknowledgement flow thats sync back Customer Tier Price Flag & Customer Tier Price Id from Magento2 to Dynamics NAV.
 
 
 8. **Customer Specific Tier Price Update [B2B]** 
 
-Flow Description: This Processflow is featured to UPDATE the customer specific tier prices from Dynamics NAV to Magento2. The details that were added in the processflow **Customer Specific Tier Price Add [B2B]** will only be updated on executing this processflow.
+This Processflow is featured to UPDATE the customer specific tier prices from Dynamics NAV to Magento2. The details that were added in the processflow **Customer Specific Tier Price Add [B2B]** will only be updated on executing this processflow.
 This processflow is will also update the post acknowledgment values of the syncs back the updated  Customer Tier Price Flag & Customer Tier Price Id from Magento2 to Dynamics NAV.
+
+9. **Sales Representative Add [B2B]**
+
 
 
 ## Action Filter configurations:
@@ -121,58 +110,10 @@ The list is put based on the format given below:
 
 ## Extension Configuration Information:
 
-If your package comprises of prepackaged applications namely SAP, SAP ByDesign, Dynamics GP, Dynamics NAV Extension & WooCommerce, you need to configure the required extension & Add Ons. 
+This package comprises of prepackaged applications namely Microsoft Dynamics NAV, which requires extension to be configured. 
 
 Given below is the checklist of Extension & Add On’s required for these applications.
 
-**WooCommerce Application**
-
-•	Version: WooCommerce 2.6 V & Above
-
-•	Extension: insync-wp-rest-filter-1.0.3
-
-•	Description: This is used For API Filtration with respect to Date & Time
-
-**SAP ByDesign Application**
-
-•	Version: SAP ByDesign 19.1.0
-
-•	Extension: `YJT3WBG5Y__V7(INS_AEC_STOCK)`
-
-•	Description: This extension is used for Stock Updating
-
-**SAP B1 Application**
-
-•	Version: Supported SAP B1 Version are:
-
-    - SAP B1 9.1
-
-    - SAP B1 9.2
-
-    - SAP B1 9.3V & Above
-
-•	Add On: 
-
-    - APPSeCONNECT_2.4.3.0_32 (For 32 Bit supported SAP Application)
-
-    - APPSeCONNECT_2.4.10.0_64 (For 64 Bit supported SAP Application)
-
-•	Description: This Add On is used for Web Item Master Data Configuration (created under Inventory Module) for adding web product details required for integration.
-
-**Dynamics GP Application**
-
-•	Version: Supported Dynamics GP Version are:	
-	
-    - Dynamics GP 2010
-    - Dynamics GP 2010 R2
-    - Dynamics GP 2013
-    - Dynamics GP 2015
-    - Dynamics GP 2018
-    - Dynamics GP 2016
-
-•	Extension: Compatible eConnect extension is provided with Dynamics GP Version.
-
-•	Description: This extension is used for retrieval of data from GP and push Data to GP.
 
 **Dynamics NAV Application**
 •	Version: Supported NAV Versions are:
@@ -203,7 +144,7 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 
 •	Webservices
 
-**Description: This extension details are enlisted below:**
+** This extension details are enlisted below:**
 
 •	Table: This fob file enables to add additional fields in the NAV Tables, which is required for integration.
 

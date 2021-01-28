@@ -4,14 +4,6 @@ The package **Dynamics NAV - Magento2 B2C** will let you integrate the pre-imple
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
-## Additional Information
-
-- Version Number – 1.0.0 
-- Package Name - Dynamics NAV - Magento2 B2C
-- Created By –  INSYNC Solutions
-- Last Modified - 23/12/2020 04:23:30 PM (Date & Time)
-- Apps Used in the Package –  Dynamics NAV & Magento2 
-
 ## Package Key Features
 
 **Dynamics NAV - Magento2 B2C** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
@@ -22,18 +14,12 @@ Checkout the Key Features of this package, listed below:
 3. Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4. Multiple Product Types Support: This package will enable you to sync product of types: Configurable products, bundle products & Simple Products etc.
 
-## Package Tech Specification
+## Package Setup
 
-This package consists the following configurations details:
+You are few steps away from UNBOXing this package on your APPSeCONNECT Organisation. Check out the [Installation Manual](https://docs.appseconnect.com/processflow/processflow-package-installation/) for more details.
+Your installed package will be available in the **Installed Process Folder**.
 
-1.	App Authentication Mechanism
-2.	Packaged Processflows & Dependencies
-3.	Action Filter configurations 
-4.	LookUp Mapping
-5.	Extensions & Add-On Installation Details
-6.  Adapter Compatibility Check
-7.	Environment Selection 
-8.	Deployment 
+Study this documentation for the Configuration, Deploy & the Execution details.
 
 
 ## App Authentication Mechanism
@@ -55,28 +41,28 @@ Data Configuration is broadly classified into Configuration Data Configuration &
 Given below are the Master Data Configuration Details:
 
 • Configuration Data Add [Attribute Sets] 
-Description: This master data syncs the configuration details of the Product Attribute Sets. 
+This master data syncs the configuration details of the Product Attribute Sets. 
 
 • Configuration Data Add [Attributes]
-Description: This master data syncs the configuration details of the Product Attributes. 
+This master data syncs the configuration details of the Product Attributes. 
 
 • Configuration Data Add [Attribute Options]
-Description: This master data syncs the configuration details of the Product Attribute Options. 
+This master data syncs the configuration details of the Product Attribute Options. 
 
 • Configuration Data Add [Tax Class]
-Description: This master data syncs the configuration details of the Product Tax Classes. 
+This master data syncs the configuration details of the Product Tax Classes. 
 
 • Configuration Data Add [WebSites]
-Description: This master data syncs the configuration details of the application websites.
+This master data syncs the configuration details of the application websites.
 
 • Configuration Data Add [Item Categories] 
-Description: This master data syncs the configuration details of the Product Categories. 
+This master data syncs the configuration details of the Product Categories. 
 
 • Configuration Data Add [CustomerGroup]
-Description: This master data syncs the configuration details of the Customer Groups. 
+This master data syncs the configuration details of the Customer Groups. 
 
 • Configuration Data Add [States]
-Description: .
+This master data syncs the configuration details of the State depending on Country Code.
 
 
 
@@ -85,100 +71,103 @@ Given below are the Transactional Data Configuration Details:
 
 1. **Customer Add [NAV - Magento2]**
 
-Flow Description: This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Magento2. The following Customer details will be synced: Customer Group ID, First Name, Last Name, Gender, Store Id, Email Id, Customer Address & Contact details and Customer ID.
+This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Magento2. The following Customer details will be synced: Customer Group ID, First Name, Last Name, Gender, Store Id, Email Id, Customer Address & Contact details and Customer ID.
 
 
 2. **Customer Update [NAV - Magento2]**
 
-Flow Description: This ProcessFlow will integrate the updated details of the customers added from Dynamics NAV to Magento2. The details that were added while integrating the ProcessFlow **Customer Add [NAV - Magento2]** will only be updated.
+This ProcessFlow will integrate the updated details of the customers added from Dynamics NAV to Magento2. The details that were added while integrating the ProcessFlow **Customer Add [NAV - Magento2]** will only be updated.
 
 
 3. **Customer Add [Magento2 - NAV]**
 
-Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from Magento2 to Dynamics NAV. The following Customer details will be synced: Customer Address Details, Customer Price Group, Customer Discount Group, Customer Number, Phone No, 
+This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from Magento2 to Dynamics NAV. The following Customer details will be synced: Customer Address Details, Customer Price Group, Customer Discount Group, Customer Number, Phone No, 
 Email Details, Website ID. 
 
 
 4. **Customer Update [Magento2 - NAV]**
 
-Flow Description: This ProcessFlow will integrate the updated details of the customers from Magento2 to Dynamics NAV. The details that were added in the Processflow **Customer Add [Magento2 - NAV]** will only be updated in this flow.
+This ProcessFlow will integrate the updated details of the customers from Magento2 to Dynamics NAV. The details that were added in the Processflow **Customer Add [Magento2 - NAV]** will only be updated in this flow.
 
 
 
 5. **Simple Product Add** 
 
-Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application from Dynamics NAV. The details are: Product SKU, Product Name, Price, Product Status, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
+This ProcessFlow is featured to sync the following details of Simple Products to your Magento2 application from Dynamics NAV. The details are: Product SKU, Product Name, Price, Product Status, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
 This processflow is also equipped with a Post-Acknowledgment flow that syncs back the WebId & WebSyncFlag based on the Item No (SKU).
 
 
 
 6. **Simple Product Update** 
 
-Flow Description: This ProcessFlow is featured to update the changes of the product details from Dynamics NAV to Magento2. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
+This ProcessFlow is featured to update the changes of the product details from Dynamics NAV to Magento2. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
 
 
 7. **Configurable Product Add**
 
-Flow Description: This ProcessFlow syncs all the details of the configurable products from Dynamics NAV to Magento2. The following details will be integrated with this ProcessFlow: Product SKU, Product Name, Price, Product Status, Configurable Product Option Details, Configurable Product Links, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
+This ProcessFlow syncs all the details of the configurable products from Dynamics NAV to Magento2. The following details will be integrated with this ProcessFlow: Product SKU, Product Name, Price, Product Status, Configurable Product Option Details, Configurable Product Links, Attribute set id, Product type, Attribute Code, attribute Value & Product Weight. 
 This processflow is also equipped with a Post-Acknowledgment flow that syncs back the WebId & WebSyncFlag based on the Item No (SKU).
 
 
 
 8. **Configurable Product Update**
 
-Flow Description: This ProcessFlow syncs the updated details of each configurable products from Dynamics NAV to Magento2. All the details added while integrating the ProcessFlow **Configurable Product Add** will be updated when triggered this processflow.
+This ProcessFlow syncs the updated details of each configurable products from Dynamics NAV to Magento2. All the details added while integrating the ProcessFlow **Configurable Product Add** will be updated when triggered this processflow.
 
 
 
 9. **Bundle Product Add**
 
-Flow Description: This ProcessFlow syncs all the details bundled products from Dynamics NAV to Magento2. The following details is featured to sync with this processflow: SKU, name, price, status, attribute_set_id, visibility, type_id, attribute code, value, Bundle Product Details & Weight.
+This ProcessFlow syncs all the details bundled products from Dynamics NAV to Magento2. The following details is featured to sync with this processflow: SKU, name, price, status, attribute_set_id, visibility, type_id, attribute code, value, Bundle Product Details & Weight.
 This Processflow is also equipped with Post-Acknowledgement flow that updates WebId & WebSyncFlag back to Dynamics NAV.
-
 
 
 10.	**Bundle Product Update**
 
-Flow Description: This ProcessFlow syncs all the updated details bundled products from Dynamics NAV to Magento2. All the added bundled products will be updated with the respective updates when triggered the sync.
-
+This ProcessFlow syncs all the updated details bundled products from Dynamics NAV to Magento2. All the added bundled products will be updated with the respective updates when triggered the sync.
 
 
 11. **Product Price :Update**
 
-Flow Description: This ProcessFlow is featured to update the prices of the Products from Dynamics NAV to Magento2. The PRICE is updated for each the Item Numbers that requires the update.
+This ProcessFlow is featured to update the prices of the Products from Dynamics NAV to Magento2. The PRICE is updated for each the Item Numbers that requires the update.
 
 
 12. **Inventory Update:**
 
-Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Quantity and other inventory details the Item Id. 
+This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Quantity and other inventory details the Item Id. 
 
 
 
 13. **Sales Order Add:** 
 
-Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
+This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
 
 
 14. **Shipment Add:** 
 
-Flow Description: This ProcessFlow is featured to sync the Shipment docs generated against your Sales Order, from Dynamics NAV to Magento2. This flow syncs the Shipment Tracking Number, Carrier Code along with the ordered item details. 
+This ProcessFlow is featured to sync the Shipment docs generated against your Sales Order, from Dynamics NAV to Magento2. This flow syncs the Shipment Tracking Number, Carrier Code along with the ordered item details. 
 Shipment Add is also equipped with a Post Acknowledgement task that Updates the WebIncrementId & Sync Back Flag details of Shipment back to Dynamics NAV.
 
 
 15.	**Invoice Add:** 
 
-Flow Description: This ProcessFlow is featured to sync the Invoices from Dynamics NAV to Magento2, raised against the Sales Order Generated. The flow syncs the Order Id, Ordered Item Details, Quantity etc. 
+This ProcessFlow is featured to sync the Invoices from Dynamics NAV to Magento2, raised against the Sales Order Generated. The flow syncs the Order Id, Ordered Item Details, Quantity etc. 
 Invoice Add is also equipped with a Post Acknowledgement task that Updates the WebIncrementId & Sync Back Flag details of Invoice back to Dynamics NAV.
 
 
 16.	**Special Price Add:** 
 
-Flow Description: This ProcessFlow is featured to Add as well as Update Special Prices from Dynamics NAV to Magento2. The following are the details that will be synced: Price, Store_id, SKU, Start Date & End Date. 
+This ProcessFlow is featured to Add as well as Update Special Prices from Dynamics NAV to Magento2. The following are the details that will be synced: Price, Store_id, SKU, Start Date & End Date. 
 
 
 17.	**Tier Price Add:** 
 
-Flow Description: This ProcessFlow is featured to Add as well as Update tier Prices from Dynamics NAV to Magento2. This processflow syncs the following details: Product SKU, Tier Price Value, Customer group id, & Quantity.
+This ProcessFlow is featured to Add as well as Update tier Prices from Dynamics NAV to Magento2. This processflow syncs the following details: Product SKU, Tier Price Value, Customer group id, & Quantity.
+
+
+18. **Special Price Add from Sales Price** 
+
+This Processflow is featured to Add Special Prices based upon Sales Prices which would flow from Ms Dynamics NAV to Magento2. This processflow syncs the following details: Sales Price, Store ID, sku, Start Date & End Date.
 
 
 ## Action Filter configurations:
@@ -201,58 +190,10 @@ The list is put based on the format given below:
 
 ## Extension Configuration Information:
 
-If your package comprises of prepackaged applications namely SAP, SAP ByDesign, Dynamics GP, Dynamics NAV Extension & WooCommerce, you need to configure the required extension & Add Ons. 
+This package comprises of prepackaged applications namely Microsoft Dynamics NAV, which requires extension to be configured. 
 
 Given below is the checklist of Extension & Add On’s required for these applications.
 
-**WooCommerce Application**
-
-•	Version: WooCommerce 2.6 V & Above
-
-•	Extension: insync-wp-rest-filter-1.0.3
-
-•	Description: This is used For API Filtration with respect to Date & Time
-
-**SAP ByDesign Application**
-
-•	Version: SAP ByDesign 19.1.0
-
-•	Extension: `YJT3WBG5Y__V7(INS_AEC_STOCK)`
-
-•	Description: This extension is used for Stock Updating
-
-**SAP B1 Application**
-
-•	Version: Supported SAP B1 Version are:
-
-    - SAP B1 9.1
-
-    - SAP B1 9.2
-
-    - SAP B1 9.3V & Above
-
-•	Add On: 
-
-    - APPSeCONNECT_2.4.3.0_32 (For 32 Bit supported SAP Application)
-
-    - APPSeCONNECT_2.4.10.0_64 (For 64 Bit supported SAP Application)
-
-•	Description: This Add On is used for Web Item Master Data Configuration (created under Inventory Module) for adding web product details required for integration.
-
-**Dynamics GP Application**
-
-•	Version: Supported Dynamics GP Version are:	
-	
-    - Dynamics GP 2010
-    - Dynamics GP 2010 R2
-    - Dynamics GP 2013
-    - Dynamics GP 2015
-    - Dynamics GP 2018
-    - Dynamics GP 2016
-
-•	Extension: Compatible eConnect extension is provided with Dynamics GP Version.
-
-•	Description: This extension is used for retrieval of data from GP and push Data to GP.
 
 **Dynamics NAV Application**
 •	Version: Supported NAV Versions are:
@@ -283,7 +224,7 @@ Given below is the checklist of Extension & Add On’s required for these applicat
 
 •	Webservices
 
-**Description: This extension details are enlisted below:**
+** This extension details are enlisted below:**
 
 •	Table: This fob file enables to add additional fields in the NAV Tables, which is required for integration.
 
