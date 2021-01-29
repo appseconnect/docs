@@ -31,7 +31,7 @@ Study your required application’s document to know about the Authentication and 
 This package comprises of the following Applications.
 
 - [Dynamics NAV](https://docs.appseconnect.com/connectors/Dynamicsnav/)
-- [Magento2](https://docs.appseconnect.com/connectors/magento2/) 
+- [Magento2](https://docs.appseconnect.com/connectors/magento2/) (>=2.0.0.0)
 
 ## Packaged Processflows & Dependencies:
 
@@ -63,8 +63,6 @@ This master data syncs the configuration details of the Customer Groups.
 
 • Configuration Data Add [States]
 This master data syncs the configuration details of the State depending on Country Code.
-
-
 
 
 Given below are the Transactional Data Configuration Details:

@@ -90,6 +90,11 @@ This processflow is will also update the post acknowledgment values of the syncs
 
 9. **Sales Representative Add [B2B]**
 
+This Processflow is featured to add Sales Representatives of your Business Model from MS Dynamics NAV to Magento2. The following details would be synced upon its integration: Group ID, Email, First Name & Last Name.
+This processflow will also sync back the Web Id and Sync Flag back to MS Dynamics NAV.
+
+10. **Company Link to Sales Representative**
+
 
 
 ## Action Filter configurations:
