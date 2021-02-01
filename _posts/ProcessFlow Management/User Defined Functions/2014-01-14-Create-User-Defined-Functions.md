@@ -7,7 +7,7 @@ menus:
     processuserdefinedfunctions:
         icon: fa fa-link
         weight: 5
-        title: "Create User Defined Appresource Functions" 
+        title: "Create Functions" 
         identifier: processcreateuserdefinedfunctions
 
 ---
@@ -39,7 +39,7 @@ Follow the steps below to create the user Defined Cloud Appresource Functions.
 
 Once you are in the UDF Listing window, you can now proceed with the create of User Defined Functions. Based on the User Journey, you get TWO Process to land upto the function CREATE Page
 
-4) Click on the **Click Here** button to create you first User Defined Function. You can also Click on the (+) button to create functions.
+4) Click on the **(+)** button to create functions.
 The CREATE Page Opens.
 
 ![udfcreate4](\staticfiles\processflow\media\udfcreate4.png)

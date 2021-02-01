@@ -21,15 +21,17 @@ This document will enable you to work with the Listing structure for the users t
 
 1) Navigate to the designer page and click on the **Functions Icon** in the [Header Panel](/processflow/designer-processflow/#processflow-header-panel).
 
-2) The UDF Listing Window Opens. 
+2) The UDF Listing Window Opens. Click on the EXPAND (+) button beside the **FUNCTIONS** text.
 
-![UDFlisting1]()
+![UDFlisting1](\staticfiles\processflow\media\UDFlisting1.PNG)
 
 3) You will be listed with all the functions created, for that ProcessFlow.
 
-4) You will have Context Menus beside each listed functions that will allow you to EDIT and DELETE the existing functions.
+![UDFlisting](\staticfiles\processflow\media\UDFlisting.PNG)
 
-![UDFlisting2]()
+4) You will have Context Menus beside each listed functions that will allow you to **EDIT**, **DEBUG** & **DELETE** the existing functions.
+
+![UDFlisting2](\staticfiles\processflow\media\UDFlisting2.PNG)
 
 5) The following options will be listed in the Context menu of each existing functions.
 
@@ -38,20 +40,18 @@ This document will enable you to work with the Listing structure for the users t
 - **Delete** - This lets you delete the function permanently. However, you will be unable to delete, if the defined function is in use.
 
 
-## Editing Exisitng Functions:
+## Functions - EDIT:
 
 To Edit the existing functions, you need to navigate to the [UDF Listing Window](/processflow/Listing-Editing-user-defined-functions/#functions-listing). Follow the steps given below to edit 
 the existing functions: 
 
-1) Navigate to the UDF Listing Window.
+1) Navigate to the UDF Listing Window. 
 
 2) Click on the Context Menus available beside each of the existing function.
 
-![UDFedit1]()
-
 3) Select the **EDIT** option available in the Context Menu. The EDIT panel opens on the Right Side of the window.
 
-![UDFedit2]()
+![UDFedit2](\staticfiles\processflow\media\UDFedit2.PNG)
 
 4) You will be able to view the following details of the functions:
 
@@ -61,4 +61,27 @@ the existing functions:
 - **Used in** - Will display the area where the function is used in.
 
 ![UDFedit3]()
+
+5) Edit the functions as required and save the process until the FINISH button appears.
+
+Along with editing the function details, you will be able to debug the function code in the code editor as well.
+
+
+## Function - DEBUG:
+
+1) Navigate to the UDF Listing Window. 
+
+2) Click on the Context Menus available beside each of the existing function.
+
+3) Select the **DEBUG** option available in the Context Menu. The **Code Editor** panel opens on the Right Side of the window.
+
+![UDFdebug](\staticfiles\processflow\media\UDFdebug.PNG)
+
+4) You can modify and debug the code in case of changes or modifications required in the code editor.
+
+![UDFdebug1](\staticfiles\processflow\media\UDFdebug.PNG)
+
+Following the above process, you can debug or modify the function code.
+
+## Function - DELETE
 
