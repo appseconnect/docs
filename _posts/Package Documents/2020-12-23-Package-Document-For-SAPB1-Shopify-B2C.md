@@ -4,14 +4,6 @@ The package **SAP Business One - Shopify B2C** will let you integrate the pre-im
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
-## Additional Information
-
-- Version Number – 1.0.0 
-- Package Name - Shopify and SAP Business One 
-- Created By –  INSYNC Solutions
-- Last Modified - 23/12/2020 04:23:30 PM (Date & Time)
-- Apps Used in the Package – SAP Business One & Shopify
-
 ## Package Key Features
 
 **SAP Business One - Shopify** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
@@ -22,19 +14,12 @@ Checkout the Key Features of this package, listed below:
 3. Pre-Implemented mappings: The process flows in this package are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4. Multiple Product Types Support: This package will enable you to sync product of types: Configurable products, bundle products, virtual products, downloadable products etc.
 
-## Package Tech Specification
+## Package Setup
 
-This package consists the following configurations details:
+You are few steps away from UNBOXing this package on your APPSeCONNECT Organisation. Check out the [Installation Manual](https://docs.appseconnect.com/processflow/processflow-package-installation/) for more details.
+Your installed package will be available in the **Installed Process Folder**.
 
-1.	App Authentication Mechanism
-2.	Packaged Processflows & Dependencies
-3.	Action Filter configurations 
-4.	LookUp Mapping
-5.	Extensions & Add-On Installation Details
-6.  Adapter Compatibility Check
-7.	Environment Selection 
-8.	Deployment 
-
+Study this documentation for the Configuration, Deploy & the Execution details.
 
 ## App Authentication Mechanism
 
@@ -44,8 +29,8 @@ Study your required application’s document to know about the Authentication and 
 
 This package comprises of the following Applications.
 
-- [SAP Business One](https://docs.appseconnect.com/connectors/Sap-Business-One/)
-- [Shopify](https://docs.appseconnect.com/connectors/shopify/) 
+- [SAP Business One](https://docs.appseconnect.com/connectors/Sap-Business-One/) (>= 8.8)
+- [Shopify](https://docs.appseconnect.com/connectors/shopify/) (Shopify 1.0)
 
 ## Packaged Processflows & Dependencies:
 
