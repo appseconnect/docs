@@ -40,7 +40,7 @@ Data Configuration is broadly classified into Configuration Data Configuration &
 
 Given below are the Master Data Configuration Details:
 
-• Configuration Data Add [Attribute Sets] 
+• Configuration Data Add [Attribute Sets]
 This master data syncs the configuration details of the Product Attribute Sets. 
 
 • Configuration Data Add [Attributes]
