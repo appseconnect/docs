@@ -14,7 +14,6 @@ Checkout the Key Features of this package, listed below:
 3. Pre-Implemented mappings: The process flows in this package are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4. Pre-implemented filters with variables: Processflows in this package are pre - implemented with variables that will allow only to alter on the variable configurations instead of the Filters used. However, you need to configure and create the variables as per your usage. Check this documentation further for the required details. 
 
-
 ## Package Setup
 
 You are few steps away from UNBOXing this package on your APPSeCONNECT Organisation. Check out the [Installation Manual](https://docs.appseconnect.com/processflow/processflow-package-installation/) for more details.
