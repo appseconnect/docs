@@ -6,9 +6,9 @@ category: "Processflow"
 menus: 
     processuserdefinedfunctions:
         icon: fa fa-link
-        weight: 5
+        weight: 6
         title: "List & Edit Appresource Functions" 
-        identifier: processcreateuserdefinedfunctions
+        identifier: processlistuserdefinedfunctions
 
 ---
 
