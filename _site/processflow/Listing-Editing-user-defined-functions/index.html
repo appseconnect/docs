@@ -2675,7 +2675,7 @@
 
 
 
-  2 minute read
+  3 minute read
 </p>
                 
                 
@@ -2690,7 +2690,12 @@
                         <ul class="toc__menu">
   <li><a href="#functions-listing">Functions Listing</a></li>
   <li><a href="#functions---edit">Functions - EDIT:</a></li>
-  <li><a href="#function---debug">Function - DEBUG:</a></li>
+  <li><a href="#function---modify-code">Function - Modify Code:</a>
+    <ul>
+      <li><a href="#validation-status-successful">Validation Status: Successful</a></li>
+      <li><a href="#validation-status-failed">Validation Status: Failed</a></li>
+    </ul>
+  </li>
   <li><a href="#function---delete">Function - DELETE</a></li>
 </ul>
                     </nav>
@@ -2713,15 +2718,18 @@ for users to modify changes and configurations to the existing functions.</p>
 
 <p><img src="\staticfiles\processflow\media\UDFlisting.PNG" alt="UDFlisting" /></p>
 
-<p>4) You will have Context Menus beside each listed functions that will allow you to <strong>EDIT</strong>, <strong>DEBUG</strong> &amp; <strong>DELETE</strong> the existing functions.</p>
+<p>4) Clicking over individual listed function, will allow you to view the <strong>Function Name</strong> and <strong>Function Description</strong> in EDIT mode. Users can any time alter and modify the Name and its Description.</p>
+
+<p><img src="" alt="UDFListing3" /></p>
+
+<p>4) You will have Context Menus beside each listed functions that will allow you to <strong>Modify Code</strong> &amp; <strong>DELETE</strong> the existing functions.</p>
 
 <p><img src="\staticfiles\processflow\media\UDFlisting2.PNG" alt="UDFlisting2" /></p>
 
 <p>5) The following options will be listed in the Context menu of each existing functions.</p>
 
 <ul>
-  <li><strong>Edit</strong> -  This lets you edit the Function Name and the Description provided to function created.</li>
-  <li><strong>Debug</strong> - This lets you debug or modify the function code written in the code editor of the function.</li>
+  <li><strong>Modify Code</strong> - This lets you modify the function code written in the code editor of the function.</li>
   <li><strong>Delete</strong> - This lets you delete the function permanently. However, you will be unable to delete, if the defined function is in use.</li>
 </ul>
 
@@ -2730,15 +2738,11 @@ for users to modify changes and configurations to the existing functions.</p>
 <p>To Edit the existing functions, you need to navigate to the <a href="/processflow/Listing-Editing-user-defined-functions/#functions-listing">UDF Listing Window</a>. Follow the steps given below to edit 
 the existing functions:</p>
 
-<p>1) Navigate to the UDF Listing Window.</p>
+<p>1) Navigate to the UDF Listing Window. All your created functions will be listed below.</p>
 
-<p>2) Click on the Context Menus available beside each of the existing function.</p>
+<p>2) Click over the individual functions to view the function information on your RIGHT in <strong>EDIT View</strong>.</p>
 
-<p>3) Select the <strong>EDIT</strong> option available in the Context Menu. The EDIT panel opens on the Right Side of the window.</p>
-
-<p><img src="\staticfiles\processflow\media\UDFedit2.PNG" alt="UDFedit2" /></p>
-
-<p>4) You will be able to view the following details of the functions:</p>
+<p>3) You will be able to view the following details of the functions:</p>
 
 <ul>
   <li><strong>Function Name</strong> - Will display the name of the function.</li>
@@ -2747,30 +2751,78 @@ the existing functions:</p>
   <li><strong>Used in</strong> - Will display the area where the function is used in.</li>
 </ul>
 
+<p>4) You can anytime edit the function information <strong>Function Name</strong> &amp; <strong>Function Description</strong>.</p>
+
+<p><img src="" alt="UDFedit2" /></p>
+
+<p>5) You can SAVE the function informations directly. Also, you can navigate to the Code Editor page, if required to modify the same.</p>
+
 <p><img src="" alt="UDFedit3" /></p>
 
-<p>5) Edit the functions as required and save the process until the FINISH button appears.</p>
+<p>Following the above steps, you successfully Edit and modify the Function Informations.
+Along with editing the function details, you will be able to debug the function code in the code editor as well.</p>
 
-<p>Along with editing the function details, you will be able to debug the function code in the code editor as well.</p>
-
-<h2 id="function---debug">Function - DEBUG:</h2>
+<h2 id="function---modify-code">Function - Modify Code:</h2>
 
 <p>1) Navigate to the UDF Listing Window.</p>
 
 <p>2) Click on the Context Menus available beside each of the existing function.</p>
 
-<p>3) Select the <strong>DEBUG</strong> option available in the Context Menu. The <strong>Code Editor</strong> panel opens on the Right Side of the window.</p>
+<p>3) Select the <strong>Modify Code</strong> option available in the Context Menu. The <strong>Code Editor</strong> panel opens on the Right Side of the window.</p>
 
 <p><img src="\staticfiles\processflow\media\UDFdebug.PNG" alt="UDFdebug" /></p>
 
-<p>4) You can modify and debug the code in case of changes or modifications required in the code editor.</p>
+<p>4) You can anytime Update and Modify the code within the code editor, whenever required.</p>
 
 <p><img src="\staticfiles\processflow\media\UDFdebug.PNG" alt="UDFdebug1" /></p>
 
-<p>Following the above process, you can debug or modify the function code.</p>
+<p>5) You need to Validate the code to view its validation.</p>
+
+<h3 id="validation-status-successful">Validation Status: Successful</h3>
+
+<p>a) If your function code validation is successful, you get its success message.</p>
+
+<p><img src="" alt="UDFdebug3" /></p>
+
+<p>b) You can SAVE the function immediately after the successful validation.</p>
+
+<p><img src="" alt="UDFdebug4" /></p>
+
+<h3 id="validation-status-failed">Validation Status: Failed</h3>
+
+<p>a) If your function code validation has failed, you’ll be notified with the errors and error position within the function code.</p>
+
+<p><img src="" alt="UDFdebug5" /></p>
+
+<p>b) Clicking on the errors, will navigate you to individual error positions in the <strong>Code Editor</strong>.</p>
+
+<p><img src="" alt="UDFdebug6" /></p>
+
+<p>c) Debug all the listed errors and click on the <strong>DEBUG</strong> button to validate again.</p>
+
+<p><img src="" alt="UDFdebug7" /></p>
+
+<p>d) Click on the SAVE button after debugging successfully.</p>
+
+<p>Following the above process, you can successfully debug or modify the function code.</p>
 
 <h2 id="function---delete">Function - DELETE</h2>
 
+<p>1) Navigate to the UDF (User Defined Functions) Listing Window.</p>
+
+<p>2) Click on the Context Menus available beside each of the existing function to find the <strong>DELETE</strong> option.</p>
+
+<p><img src="" alt="udfdelete1" /></p>
+
+<p>3) Clicking on the <strong>DELETE</strong> option, you’ll get confirmation message for the deletion process.</p>
+
+<p><img src="" alt="udfdelete2" /></p>
+
+<p>4) Clicking on the YES will successfully delete the function.</p>
+
+<p><strong>Note:</strong> You cannot delete the function if its already in use. You need to remove the function from its area of usage to proceed with the delete process.</p>
+
+<p>Following the above process, you can successfully EDIT, Modify and DELETE functions from UDF Listing.</p>
 
                 
             </section>
