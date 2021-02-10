@@ -54,7 +54,19 @@ The CREATE Page Opens.
 
 For more information on the Code Editor, Visit [UDF Code Editor and Validation]().
 
+## Areas of Usage 
+
+You can use your created functions in the listed areas:
+
+- [Capture Variables](/processflow/working-with-variable/): You can use your created functions in the variable expressions or as a default value, provided the Variable Type and the Output of your function must be same.
+- [Decision Node Expression](/processflow/working-with-decision/): You can use your created functions with the condition statement of DECISION NODE as KEY or as a VALUE, provided either of the types and output of the function must be same.
+- [Delay Node Expression](/processflow/working-with-processflow-delay/): You can use your created functions within the delay node provided the return value of your function be a TIME.
+- [Action Filter](/processflow/manage-actions-actionfilters-errorfilters/#adding-action-filters): You can use your created functions within the Action Filter of a ProcessFlow, provided the return Type of your function should not be a **Complex Object** or **Complex Object Collection**.
+- [Error/retry Filter](/processflow/manage-actions-actionfilters-errorfilters/#adding-retry-filters): You can use your created functions within the Error/retry Filters of a Processflow, provided the return Type of your function should not be a **Complex Object** or **Complex Object Collection**.
+
 **Note:**
 
 - You can also create your Cloud Appresource Functions from the mapper node. For more information on that steps, [click here](/processflow/cloud-appresource-functions/).
 - All the created functions irrespective of the areas, the functions will be listed on the UDF Listing Window. For more details on the Listing page, [Click Here](/processflow/Listing-Editing-user-defined-functions/).
+- You cannot create Functions with same **Function Name**.
+- The name must begin with a letter and can contain letters, numbers, and the following special characters: `_ @ $ #`.
