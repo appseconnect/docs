@@ -19,12 +19,12 @@
 
 
 
-<title>Defining variables in Mapping - APPSeCONNECT Product Docs</title>
+<title>Function Code Validation - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="Here you will understand the process of defining Variables (any variables that stores the data that can be used later within the process of transformation) and then mapping of variables during transformation phase.">
+<meta name="description" content="This section of the document will allow you to know the code editor and the validation process of your function.">
 
 
 
@@ -33,15 +33,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="Defining variables in Mapping">
+<meta property="og:title" content="Function Code Validation">
 
 
-  <link rel="canonical" href="//docs.appseconnect.com/processflow/defining-variables-in-processflow-mapping/">
-  <meta property="og:url" content="//docs.appseconnect.com/processflow/defining-variables-in-processflow-mapping/">
+  <link rel="canonical" href="//docs.appseconnect.com/processflow/Function-Code-Validation/">
+  <meta property="og:url" content="//docs.appseconnect.com/processflow/Function-Code-Validation/">
 
 
 
-  <meta property="og:description" content="Here you will understand the process of defining Variables (any variables that stores the data that can be used later within the process of transformation) and then mapping of variables during transformation phase.">
+  <meta property="og:description" content="This section of the document will allow you to know the code editor and the validation process of your function.">
 
 
 
@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-03-24T00:00:00+05:30">
+  <meta property="article:published_time" content="2021-01-10T00:00:00+05:30">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">Defining variables in Mapping</li>
+      <li class="current">Function Code Validation</li>
     
   
 </ol>-->
@@ -2611,9 +2611,9 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Defining variables in Mapping">
-        <meta itemprop="description" content="Here you will understand the process of defining Variables (any variables that stores the data that can be used later within the process of transformation) and then mapping of variables during transformation phase.">
-        <meta itemprop="datePublished" content="March 24, 2020">
+        <meta itemprop="headline" content="Function Code Validation">
+        <meta itemprop="description" content="This section of the document will allow you to know the code editor and the validation process of your function.">
+        <meta itemprop="datePublished" content="January 10, 2021">
         
 
 
@@ -2640,7 +2640,7 @@
                 
                 
                 
-                <li class="current">Defining variables in Mapping</li>
+                <li class="current">Function Code Validation</li>
                 
                 
             </ol>
@@ -2650,7 +2650,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">Defining variables in Mapping
+                <h1 class="page__title" itemprop="headline">Function Code Validation
 </h1>
                 
                 
@@ -2673,7 +2673,7 @@
 
                 
                 
-                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-24T00:00:00+05:30">March 24, 2020</time></p>
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-10T00:00:00+05:30">January 10, 2021</time></p>
                 
                 
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -2694,62 +2694,108 @@
                     <nav class="toc">
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
-  <li><a href="#prerequisites-for-adding-variables-in-processflow-mapping">Prerequisites for adding Variables in Processflow Mapping</a></li>
-  <li><a href="#delete-variable">Delete variable</a></li>
-  <li><a href="#edit-varibale">Edit Varibale</a></li>
+  <li><a href="#code-editor">Code Editor:</a>
+    <ul>
+      <li><a href="#language-fundamentals">Language Fundamentals</a></li>
+      <li><a href="#code-snippets">Code Snippets</a></li>
+    </ul>
+  </li>
+  <li><a href="#validation-status">Validation Status</a>
+    <ul>
+      <li><a href="#status-successful">Status: Successful</a></li>
+      <li><a href="#status-failed">Status: Failed</a></li>
+    </ul>
+  </li>
 </ul>
                     </nav>
                 </aside>
                 
-                <p>Here you will understand the process of defining <a href="/transformation/types-of-variable/">Variables</a> (any variables that stores the data that can be used later within 
-the process of transformation) and then mapping of variables during transformation phase.</p>
+                <p>This section of the document will allow you to know the code editor and the validation process of your function.</p>
 
-<p>Here The flow is explained using <code class="language-plaintext highlighter-rouge">Root Variable</code> for a processflow. <br />
-<strong>NOTE- The process of defining the variables remain same for any type of variable.</strong></p>
+<h2 id="code-editor">Code Editor:</h2>
 
-<h2 id="prerequisites-for-adding-variables-in-processflow-mapping">Prerequisites for adding Variables in Processflow Mapping</h2>
+<p>This is the space that will allow you to write the function code as per your need. Following the steps you can work with the function Code Editor successfully.</p>
+
+<p>1) You can navigate to the Code Editor as per following mentioned User Journeys:</p>
 <ul>
-  <li>You need to have valid credentials of the portal.</li>
-  <li>You need to navigate to the <a href="/processflow/processflow-listing-page/">Process Flow listing page</a> for creating or editing a Process Flow</li>
-  <li>You need to <a href="/processflow/creating-processflow/">create a Process Flow</a> or Edit an existing process flow for implementing Namespace in Mapper node.</li>
+  <li><a href="/processflow/Create-User-Defined-Functions/#creating-user-defined-functions">Creating Function for the First Time</a></li>
+  <li><a href="/processflow/Listing-Editing-user-defined-functions/#functions---edit">Editing Function</a></li>
+  <li><a href="/processflow/Listing-Editing-user-defined-functions/#function---modify-code">Modify Code</a></li>
 </ul>
 
-<ol>
-  <li>Select the processflow for which the Root Variable is to be created. Click on the Node 
-Configuration button for the Mapper node after linking the application nodes for viewing the mapper window.
-<img src="../../staticfiles/processflow/media/mapper/addvariable_processflow.PNG" alt="Addvariable Processflow" /></li>
-  <li>Click on the Option <code class="language-plaintext highlighter-rouge">ADD VARIABLE</code> present on the Transform Window.
-<img src="../../staticfiles/processflow/media/mapper/addvariable_processflow1.PNG" alt="Addvariable Processflow1" /></li>
-  <li>Input the details Variable Name, Data Type and the Reference Entity.             <br />
-<img src="../../staticfiles/processflow/media/mapper/addvariable_processflow2.PNG" alt="Addvariable Processflow2" />    <br />
-(a) In this case Variable Name <code class="language-plaintext highlighter-rouge">ShipmentCode</code> is used whose Data Type is provided <code class="language-plaintext highlighter-rouge">String</code>. The flow remains same for the 
-Data type-  Bool, Datetime, Number and Double.<br />
-(b) Whereas for the <code class="language-plaintext highlighter-rouge">Data Type - Complex Object, Complex Object Collection and Double</code> providing the XPATH is mandatory as
-shown below<br />
-<img src="../../staticfiles/processflow/media/mapper/addvariable_processflow3.PNG" alt="Addvariable Processflow3" /> 
-Once the details are filled, click Save and Close. 
-For Mapping the variable, click on the Open button, which is visible beside the variable name, when hovered over.
-Select the function from the <code class="language-plaintext highlighter-rouge">Functions List</code>  and click on the function as required (Taken [genericlib:getMapping(ObjectType,Value)] as an example)  <br />
-<strong>Note: The mapping can be executed with the functions as well as, with the source attributes. Implementing mapping only with the functions is not mandatory.</strong></li>
-</ol>
+<p>2) Either way you will get the <strong>Code Editor Screen</strong> of your Function.</p>
 
-<p><img src="../../staticfiles/processflow/media/mapper/addvariable_new.png" alt="Addvariable New" />
-Now for implementing the mapping, input the required ObjectType and Value in the Function syntax. Click on the Submit Button, on completion of mapping.<br />
-<img src="../../staticfiles/processflow/media/mapper/addvariable_new1.png" alt="Addvariable New1" /></p>
+<p><img src="" alt="codeeditor1" /></p>
 
-<p>The user can view the successful sync of the processflow for which the Variables was created</p>
+<p>3) By default you will be provided with default code along with a String Parameter, everytime you create a new function.</p>
 
-<h2 id="delete-variable">Delete variable</h2>
-<p>The user can delete the Variables whenever required, any-time after its creation by clicking on <code class="language-plaintext highlighter-rouge">delete variable</code>.
-button. Hardcorded variables cant be deleted.<br />
-<img src="../../staticfiles/Transformation/media/delete-variable.png" alt="Delete Variable" /></p>
+<p>4) You can use multiple code fundamentals and snippets as per the need.</p>
 
-<h2 id="edit-varibale">Edit Varibale</h2>
+<h3 id="language-fundamentals">Language Fundamentals</h3>
 
-<p>The user can edit the variables defined any-time after its creation by clicking on <code class="language-plaintext highlighter-rouge">edit variable</code> button.
-Hardcorded variables cant be edited.<br />
-<img src="../../staticfiles/Transformation/media/edit-variable.png" alt="Edit Variable" /></p>
+<p>5) You can implement the following Code Fundamentals as listed below:</p>
+<ul>
+  <li>If statement</li>
+  <li>Else If</li>
+  <li>Switch</li>
+  <li>While</li>
+  <li>For</li>
+  <li>Foreach</li>
+  <li>Do while</li>
+  <li>Using</li>
+  <li>Try Catch</li>
+  <li>Try Finally</li>
+</ul>
 
+<p><img src="" alt="codeeditor2" /></p>
+
+<p>6) You need to implement these fundamentals by dragging it to the required location within your Code.</p>
+
+<p><img src="" alt="codeeditor3" /></p>
+
+<h3 id="code-snippets">Code Snippets</h3>
+
+<p>7) You can also implement multiple Code Snippets based on your requirement as listed below:</p>
+
+<ul>
+  <li>IterateNodes</li>
+  <li>GetRequest</li>
+  <li>PostRequest</li>
+</ul>
+
+<p>8) You need to drag individual snippets to the required location within your code.</p>
+
+<p>9) Once you have successfully implemented your Function Code, you can click on <strong>VALIDATE and SAVE</strong> button</p>
+
+<h2 id="validation-status">Validation Status</h2>
+
+<p>You can have two instances for the validation process: Success or Failed. The instances are provided below in detail.</p>
+
+<h3 id="status-successful">Status: Successful</h3>
+
+<p>a) If your function code validation is successful, you get its success message.</p>
+
+<p><img src="" alt="codeeditor4" /></p>
+
+<p>b) You can SAVE the function immediately after the successful validation.</p>
+
+<p><img src="" alt="codeeditor5" /></p>
+
+<h3 id="status-failed">Status: Failed</h3>
+
+<p>a) If your function code validation has failed, you’ll be notified with the errors and error position within the function code.</p>
+
+<p><img src="" alt="codeeditor6" /></p>
+
+<p>b) Clicking on the errors, will navigate you to individual error positions in the <strong>Code Editor</strong>.</p>
+
+<p><img src="" alt="codeeditor7" /></p>
+
+<p>c) Debug all the listed errors and click on the <strong>DEBUG</strong> button to validate again.</p>
+
+<p>On successful validation, the function will be saved.</p>
+
+<p>Following the above procedures, you can successfully implement the Code Fundamentals and Snippets within your Function Code Structure.</p>
 
                 
             </section>
@@ -2757,7 +2803,7 @@ Hardcorded variables cant be edited.<br />
             <footer class="page__meta">
                 
                 
-                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-24T00:00:00+05:30">March 24, 2020</time></div>
+                <div class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-10T00:00:00+05:30">January 10, 2021</time></div>
                 
                 
   
@@ -2806,13 +2852,13 @@ Hardcorded variables cant be edited.<br />
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Defining+variables+in+Mapping%20https://docs.appseconnect.com%2Fprocessflow%2Fdefining-variables-in-processflow-mapping%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Function+Code+Validation%20https://docs.appseconnect.com%2Fprocessflow%2FFunction-Code-Validation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2Fdefining-variables-in-processflow-mapping%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2FFunction-Code-Validation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fprocessflow%2Fdefining-variables-in-processflow-mapping%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://docs.appseconnect.com%2Fprocessflow%2FFunction-Code-Validation%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Fdefining-variables-in-processflow-mapping%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2FFunction-Code-Validation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
             
@@ -5422,15 +5468,6 @@ Hardcorded variables cant be edited.<br />
                             
                             
                             
-                            <li>
-                                <a href="/processflow/Function-Code-Validation/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Function Code Validation
-                                </a>
-                            </li>
-                            
-                            
-                            
                             
                             
                             
@@ -5469,6 +5506,15 @@ Hardcorded variables cant be edited.<br />
                             
                             
                             
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/unfinished-deployment/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Unfinished Deployment
+                                </a>
+                            </li>
                             
                             
                             
@@ -6225,8 +6271,8 @@ Hardcorded variables cant be edited.<br />
 <script id="dsq-count-scr" src="https://docs-appseconnect-com.disqus.com/count.js" async></script>
 <script>
     var disqus_config = function () {
-      this.page.url = "//docs.appseconnect.com/processflow/defining-variables-in-processflow-mapping/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/processflow/defining-variables-in-processflow-mapping "; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "//docs.appseconnect.com/processflow/Function-Code-Validation/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/processflow/Function-Code-Validation"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

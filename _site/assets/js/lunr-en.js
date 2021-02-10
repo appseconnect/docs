@@ -2888,11 +2888,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "Function Code Validation",
+      excerpt: "This section of the document will allow you to know the code editor and the validation process of your function....",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 319
+    });
+    
+  
+    idx.add({
       title: "Lisitng & Editing User Defined Appresource Functions",
       excerpt: "End Users will be listed with the Functions that they have created in the UDF Listing window. Every functions listed...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 319
+      id: 320
     });
     
   
@@ -6416,6 +6425,17 @@ var store = [
         "title": "Generic NAV 2013R2 Extension",
         "url": "/connectors/generic-nav2013-R2-extension/",
         "excerpt": "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "Function Code Validation",
+        "url": "/processflow/Function-Code-Validation/",
+        "excerpt": "This section of the document will allow you to know the code editor and the validation process of your function....",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

@@ -19,10 +19,9 @@ This section of the document will allow you to know the code editor and the vali
 This is the space that will allow you to write the function code as per your need. Following the steps you can work with the function Code Editor successfully.
 
 1) You can navigate to the Code Editor as per following mentioned User Journeys:
-
-    - [Creating Function for the First Time](/processflow/Create-User-Defined-Functions/#creating-user-defined-functions)
-    - [Editing Function](/processflow/Listing-Editing-user-defined-functions/#functions---edit)
-    - [Modify Code](/processflow/Listing-Editing-user-defined-functions/#function---modify-code)
+ - [Creating Function for the First Time](/processflow/Create-User-Defined-Functions/#creating-user-defined-functions)
+ - [Editing Function](/processflow/Listing-Editing-user-defined-functions/#functions---edit)
+ - [Modify Code](/processflow/Listing-Editing-user-defined-functions/#function---modify-code)
 
 2) Either way you will get the **Code Editor Screen** of your Function.
 
@@ -35,17 +34,16 @@ This is the space that will allow you to write the function code as per your nee
 ### Language Fundamentals
 
 5) You can implement the following Code Fundamentals as listed below:
-
-    - If statement
-    - Else If
-    - Switch
-    - While
-    - For
-    - Foreach
-    - Do while
-    - Using
-    - Try Catch
-    - Try Finally
+ - If statement
+ - Else If
+ - Switch
+ - While
+ - For
+ - Foreach
+ - Do while
+ - Using
+ - Try Catch
+ - Try Finally
 
 ![codeeditor2]()
 
@@ -57,18 +55,19 @@ This is the space that will allow you to write the function code as per your nee
 
 7) You can also implement multiple Code Snippets based on your requirement as listed below:
 
-    - IterateNodes
-    - GetRequest
-    - PostRequest
+ - IterateNodes
+ - GetRequest
+ - PostRequest
 
 8) You need to drag individual snippets to the required location within your code.
 
 9) Once you have successfully implemented your Function Code, you can click on **VALIDATE and SAVE** button
 
-10) You can have two instances for the validation process: Success or Failed.
+## Validation Status
 
+You can have two instances for the validation process: Success or Failed. The instances are provided below in detail.
 
-### Validation Status: Successful
+### Status: Successful
 
 a) If your function code validation is successful, you get its success message.
 
@@ -78,8 +77,7 @@ b) You can SAVE the function immediately after the successful validation.
 
 ![codeeditor5]()
 
-
-### Validation Status: Failed
+### Status: Failed
 
 a) If your function code validation has failed, you'll be notified with the errors and error position within the function code.
 

@@ -1582,6 +1582,12 @@
         
     </li>
     
+    
+    <li class="menu-item-" data-url="/processflow/Function-Code-Validation/" data-jstree='{"icon":"fa fa-link"}'>
+        <a href="/processflow/Function-Code-Validation/" onclick="selectTab('/processflow/Function-Code-Validation/', event);" title="Go to Code Validation">Code Validation</a>
+        
+    </li>
+    
 </ul>
 
         
@@ -2675,7 +2681,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2691,6 +2697,7 @@
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#navigating-to-user-defined-functions">Navigating to User Defined Functions</a></li>
   <li><a href="#creating-user-defined-functions">Creating User Defined Functions</a></li>
+  <li><a href="#areas-of-usage">Areas of Usage</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2737,11 +2744,25 @@ The CREATE Page Opens.</p>
 
 <p>For more information on the Code Editor, Visit <a href="">UDF Code Editor and Validation</a>.</p>
 
+<h2 id="areas-of-usage">Areas of Usage</h2>
+
+<p>You can use your created functions in the listed areas:</p>
+
+<ul>
+  <li><a href="/processflow/working-with-variable/">Capture Variables</a>: You can use your created functions in the variable expressions or as a default value, provided the Variable Type and the Output of your function must be same.</li>
+  <li><a href="/processflow/working-with-decision/">Decision Node Expression</a>: You can use your created functions with the condition statement of DECISION NODE as KEY or as a VALUE, provided either of the types and output of the function must be same.</li>
+  <li><a href="/processflow/working-with-processflow-delay/">Delay Node Expression</a>: You can use your created functions within the delay node provided the return value of your function be a TIME.</li>
+  <li><a href="/processflow/manage-actions-actionfilters-errorfilters/#adding-action-filters">Action Filter</a>: You can use your created functions within the Action Filter of a ProcessFlow, provided the return Type of your function should not be a <strong>Complex Object</strong> or <strong>Complex Object Collection</strong>.</li>
+  <li><a href="/processflow/manage-actions-actionfilters-errorfilters/#adding-retry-filters">Error/retry Filter</a>: You can use your created functions within the Error/retry Filters of a Processflow, provided the return Type of your function should not be a <strong>Complex Object</strong> or <strong>Complex Object Collection</strong>.</li>
+</ul>
+
 <p><strong>Note:</strong></p>
 
 <ul>
   <li>You can also create your Cloud Appresource Functions from the mapper node. For more information on that steps, <a href="/processflow/cloud-appresource-functions/">click here</a>.</li>
   <li>All the created functions irrespective of the areas, the functions will be listed on the UDF Listing Window. For more details on the Listing page, <a href="/processflow/Listing-Editing-user-defined-functions/">Click Here</a>.</li>
+  <li>You cannot create Functions with same <strong>Function Name</strong>.</li>
+  <li>The name must begin with a letter and can contain letters, numbers, and the following special characters: <code class="language-plaintext highlighter-rouge">_ @ $ #</code>.</li>
 </ul>
 
                 
@@ -5389,6 +5410,14 @@ The CREATE Page Opens.</p>
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
                             
@@ -5400,6 +5429,17 @@ The CREATE Page Opens.</p>
                                 <a href="/processflow/Listing-Editing-user-defined-functions/" rel="permalink">
                                     <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
                                     Lisitng & Editing User Defined Appresource Functions
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/Function-Code-Validation/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    Function Code Validation
                                 </a>
                             </li>
                             
@@ -5443,15 +5483,6 @@ The CREATE Page Opens.</p>
                             
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/unfinished-deployment/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Unfinished Deployment
-                                </a>
-                            </li>
                             
                             
                             
