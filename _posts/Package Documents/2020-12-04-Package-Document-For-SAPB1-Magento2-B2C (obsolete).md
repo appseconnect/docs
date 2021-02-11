@@ -1,20 +1,12 @@
 ## Overview
 
-The package **SAP Business One - Magento2 B2C** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design. 
+The package **PACKAGE NAME** will let you integrate the pre-implemented ProcessFlows for your business processes integrations, seamlessly reducing your time and effort in configuring and design. 
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
-## Additional Information
-
-- Version Number – 1.0.0 
-- Package Name - SAP B1 and Magento2 B2B Package 
-- Created By –  INSYNC Solutions
-- Last Modified - 07/12/2020 07:28:30 PM (Date & Time)
-- Apps Used in the Package – App Icons/names
-
 ## Package Key Features
 
-**SAP Business One - Magento2 B2C** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
+**PACKAGE NAME** will let you integrate all your business flows keeping and maintaining the complete transparency of your business integration. 
 Checkout the Key Features of this package, listed below:
 
 1.	Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
@@ -22,18 +14,13 @@ Checkout the Key Features of this package, listed below:
 3.	Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4.	Easy integrations of Bundled and Configurable products: This package will let you sync the Bundled and Configurable Products if sold within your Business Process. The Configurations and Mappings will be pre-implemented for its integration process.
 
-## Package Tech Specification
 
-This package consists the following configurations details:
+## Package Setup
 
-1.	App Authentication Mechanism
-2.	Packaged Processflows & Dependencies
-3.	Action Filter configurations 
-4.	Field/Attribute Mappings 
-5.	LookUp Mapping
-6.	Extensions & Add-On Installation Details
-7.	Environment Setup Parameter 
-8.	Deployment Setup 
+You are few steps away from UNBOXing this package on your APPSeCONNECT Organisation. Check out the [Installation Manual](https://docs.appseconnect.com/processflow/processflow-package-installation/) for more details.
+Your installed package will be available in the **Installed Process Folder**.
+
+Study this documentation for the Configuration, Deploy & the Execution details.
 
 ## App Authentication Mechanism
 
@@ -43,10 +30,10 @@ Study your required application’s document to know about the Authentication and 
 
 This package comprises of the following Applications.
 
-- [SAP Business One](https://docs.appseconnect.com/connectors/Sap-Business-One/)
-- [Magento 2](https://docs.appseconnect.com/connectors/magento2/) 
+- [Application 1](Doc Link)
+- [Application 2](Doc Link) 
 
-If you have an application which has an application connector present on platform, you as a user require very small effort to configure the connector to work correctly with the application. 
+If your chosen application doesnot have a Prepackaged connector, you can use the [Technology Connectors](https://docs.appseconnect.com/connectors/Overview-of-technology-connectors/) to authenticate your application with APPSeCONNECT.
 
 ## Packaged Processflows & Dependencies:
 
@@ -81,83 +68,35 @@ Description: This master data syncs the configuration details of the Customer Gr
 
 Given below are the Transactional Data Configuration Details:
 
+
 - **Business Partner Add:**
 
-i.	Flow Description: This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up. The following Customer details will be synced: Customer ID, Name, Email Id, City, Country Address, and Telephone. 
-
-ii.	Dependency flow: Not Applicable 
 
 - **Simple Product Add:** 
 
-i.	Flow Description: This ProcessFlow is featured to sync the following details of Simple Products to your destination application. The details are: Product Id, Product SKU, Product Name, Price, Product Status, Attribute id, Product type, weight etc. 
 
-ii.	Dependency Flow: Not Applicable 
+- **Simple Product Update:** 
 
--	**Simple Product Update:** 
 
-i.	Flow Description: This ProcessFlow is featured to update the changes of the product details. This ProcessFlow will only update the changes of the details that was synced while adding a new simple product. 
+- **Inventory Update:**
 
-ii.	Dependency Flow: Simple Product Add 
-Simple Product Update is equipped of updating the changes made to the Product details on your Source Application. As the updates are made against the ItemCode, therefore the dependency of Simple Product Add occurs which is responsible of adding the ItemCode primarily.
 
--	**Inventory Update:**
+- **Order Add:** 
 
-i.	Flow Description: This ProcessFlow is featured to sync and update your warehouse inventory stocks. This ProcessFlow will sync the Item Quantity against the item code available on your inventory. 
 
-ii.	Dependency Flow: Simple Product Add 
-As the inventory is updated against the ItemCode, the item needs to be added first so that the respective stocks can be updated accordingly.
+- **Invoice Add:** 
 
--	**Order Add:** 
-
-i.	Flow Description: This ProcessFlow is featured to sync the following details of each Sales Orders from your customer facing application to the destination application. The details are: Order Id, Customer Name, Product details, Product Unit Price, Ordered Quantity, Tax, VAT, Discount, Sales Order generation date and shipment details. 
-
-ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update. 
-The Sales Order ProcessFlow is equipped of integrating the details of the customers and products. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors. 
-
--	**Invoice Add:** 
-
-i.	Flow Description: This ProcessFlow is featured to sync the Invoices raised against the Sales Order Generated. The flow syncs the Item SKU, Quantity, and the Order Details to your destination application. Invoice Add is also equipped with a Post Acknowledgement task that integrates Sync Back Invoice Flag details back to your Source Application. Also, the ProcessFlow Invoice Add is featured to sync the payment type made for each invoice be it **Payment through Cash**, **Payment through Bank transfer**, **Payment thorugh Cheque**
-
-ii.	Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order Add 
-The Invoice Add ProcessFlow is equipped of integrating the details of the order Invoice receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
-
--	**Delivery/Shipment Add:** 
-
-i.	Flow Description: This ProcessFlow is featured to sync the Delivery/Shipment docs generated against your Sales Order to your destination application. This flow sync the Shipment Tracking Number along with the Customer details, order details, and tax information’s. 
-Delivery/Shipment Add is also equipped with a Post Acknowledgement task that integrates Sync Back ShipmentSyncFlag details.
-
-ii. Dependency Flow: Business Partner Add, Product Add, Inventory Update, Order Add 
-The Delivery/Shipment Add ProcessFlow is equipped of integrating the details of the order delivery receipt. The above-mentioned dependencies need to be integrated first so as to avoid document mismatch errors.
-
--	**Bundle Product Add:**
-
-i.	Flow Description: This ProcessFlow syncs all the details bundled products to your destination application. As Simple product a bundled to form Bundle Products, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Bundle Product Add. 
-
-ii.	Dependency Flow: NA. 
-As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again. 
-
--	**Configurable Product Add:**
-
-i.	Flow Description: This ProcessFlow syncs all the details of the configurable products to your destination application. A configurable product are the simple products with options, this ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. The Simple Product Add flow is also equipped with a Post Acknowledgement task that integrates Sync Back Flag details. 
-
-ii.	Dependency Flow: NA. 
-As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again.
-
--	**Grouped Product Add:**
-
-i.	Flow Description: This ProcessFlow syncs all the details of the Grouped Products to your destination application. Group products are the pack of multiple simple products. This ProcessFlow is featured with Simple product add such that when triggered, new Simple Products will get added followed by the Configurable Product Add. 
-
-ii.	Dependency Flow: NA. 
-As Simple Product Add is already equipped in this flow, you will not have to trigger Simple product add flow again.
 
 ## Action Filter configurations:
 
 ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 
 Have a glance on the [Action Filter](https://docs.appseconnect.com/processflow/manage-actions-actionfilters-errorfilters/) documentation, for more information.
 
+
 ## LookUp Mapping:
-Your contains multiple Processflows and few of those Processflows may require mapping of specific values in certain fields as lookups. Few Processflow may need you to create these lookups manually in the Reference Tables of the APPSeCONNECT Repositories. 
-Follow the documentation of Reference Tables for reference. The lookups listed below needs to be created in reference tables for the below mentioned ProcessFlow. The list is put based on the format given below:
+Your Package contains multiple Processflows and few of those Processflows may require mapping of specific values in certain fields as lookups. You are required to create these lookups manually in the Reference Tables of the APPSeCONNECT [Repositories](https://docs.appseconnect.com/processflow/Lookup-repository-masterdata/). 
+Follow the documentation of [Reference Tables](https://docs.appseconnect.com/processflow/Lookup-repository-masterdata/#reference-tables) for reference. The lookups listed below needs to be created in reference tables for the below mentioned ProcessFlow. 
+The list is put based on the format given below:
 
 [Processflow Name][Reference Table]
 
