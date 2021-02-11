@@ -18,6 +18,6 @@ Below are the modules that would help you to work with the functions.
 
 |Modules|Description|
 |------------------|----------------|
-|Creating User Defined Functions| TEXT|
-|Listing of User Defined Functions|TEXT|
-|Validating User Defined Function|TEXT|
+|[Creating User Defined Functions](/processflow/Create-User-Defined-Functions/)| This document will help you with the steps and information for creating User Defined Appresource Functions.|
+|[Listing & Editing User Defined Functions](/processflow/Listing-Editing-user-defined-functions/)|This document will help with the steps and information |
+|[Function Code validation](/processflow/Function-Code-Validation/)|This document will help you with the instructions related to the Code Editor Window for Validation process of the Function Code.|
