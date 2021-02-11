@@ -1,5 +1,5 @@
 
-# This Document is solely for Internal Purpose, Check the highlighted NOTES for specific Information.
+# This Document is solely for Internal Purpose, Check the highlighted TipsS for specific Information.
 
 
 ## Overview
@@ -8,7 +8,7 @@ The package **PACKAGE NAME** will let you integrate the pre-implemented ProcessF
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
 
 ## Package Key Features
 
@@ -20,7 +20,7 @@ Checkout the Key Features of this package, listed below:
 3.	Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 4.	Easy integrations of Bundled and Configurable products: This package will let you sync the Bundled and Configurable Products if sold within your Business Process. The Configurations and Mappings will be pre-implemented for its integration process.
 
-**Note: Features may change with respect to every Package. However its not necessary to differ everytime, Can be common for different packages, Sometimes.**
+**Tips: Features may change with respect to every Package. However its not necessary to differ everytime, Can be common for different packages, Sometimes.**
 
 ## Package Setup
 
@@ -29,7 +29,7 @@ Your installed package will be available in the **Installed Process Folder**.
 
 Study this documentation for the Configuration, Deploy & the Execution details.
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
 
 ## App Authentication Mechanism
 
@@ -46,18 +46,18 @@ This package comprises of the following Applications.
 - [Application 1](Doc Link)
 - [Application 2](Doc Link) 
 
-**Note: This section will be in use when all the applications used within the package are the Pre-Packaged Applications.**
+**Tips: This section will be in use when all the applications used within the package are the Pre-Packaged Applications.**
 
 
 
-### App Combination: All TECH APPS.
+### App Combination: All Tech Apps.
 
 
 The applications used in the package requires to be authenticated for its integration. 
 Check out our [Technology Connectors](https://docs.appseconnect.com/connectors/Overview-of-technology-connectors/) in order to view the authentication mechanism of the Technology Applications used in this package. 
 Study your required application’s document to know about the Authentication and its API details.
 
-**Note: This section will be in use when all the applications used within the package are the TECHNOLOGY applications.**
+**Tips: This section will be in use when all the applications used within the package are the TECHNOLOGY applications.**
 
 
 ### App Combination: Both Prepackage and Tech App
@@ -72,7 +72,7 @@ This package comprises of the following Applications.
 
 However, this package also used Technology Application. Check out our [Technology Connectors](https://docs.appseconnect.com/connectors/Overview-of-technology-connectors/) in order to view the authentication mechanism of the Technology Applications used in this package. 
 
-**Note: This will be used only when both the Prepackaged and a Technology Application is used.**
+**Tips: This will be used only when both the Prepackaged and a Technology Application is used.**
 
 
 
@@ -108,7 +108,7 @@ This master data syncs the configuration details of the Product Categories.
 • ProcessFlow - Master Data Add [Customer Group]
 This master data syncs the configuration details of the Customer Groups. 
 
-**NOTE: The above Master Data details need to be added only if it is implemented within the Package.**
+**Tips: The above Master Data details need to be added only if it is implemented within the Package.**
 
 Given below are the Transactional Data Configuration Details:
 
@@ -139,14 +139,14 @@ PF Description
 
 
 
-**NOTE: This part of the Document will always differ from Package to Package. Descriptions should be provided in detail based on the data that would integrated with each flows.**
+**Tips: This part of the Document will always differ from Package to Package. Descriptions should be provided in detail based on the data that would integrated with each flows.**
 
 ## Action Filter configurations:
 
 ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 
 Have a glance on the [Action Filter](https://docs.appseconnect.com/processflow/manage-actions-actionfilters-errorfilters/) documentation, for more information.
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
 
 
 ## LookUp Mapping:
@@ -159,14 +159,14 @@ The list is put based on the format given below:
 • [Order Add][Freight] 
 • [Order Add][Tax]
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
 
 ## Extension Configuration Information:
 
-This package comprises of the following prepackaged applications namely SAP Business One Service Layer that requires to configure the required extension & Add Ons. For SAP Business One S/L, you are required to use the Addon for SAP Business One.
+This package comprises of the following prepackaged applications namely **APP 1** & **APP 2** that requires to configure the required extension & Add Ons.
 Given below is the checklist of Add On’s required for this Package.
 
-**Note: Provided below are the details of all the extensions provided by InSync for the Listed Applications. While Documenting the Package, you are required to provide the details of Extension of the only Applications used within that package.**
+**Tips: Provided below are the details of all the extensions provided by InSync for the Listed Applications. While Documenting the Package, you are required to provide the details of Extension of the only Applications used within that package.**
 
 
 **WooCommerce Application**
@@ -263,7 +263,7 @@ Given below is the checklist of Add On’s required for this Package.
 ## Adapter Compatibility Check:
 ProcessFlows in this package have no direct dependencies with Adapter Compatibility. Anytime on deploying your ProcessFlow, the latest adapter set in APPSeCONNECT Portal will be downloaded against the applications selected.
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
 
 ## Environment Selection
 This package is pre-implemented with all the configurations and mappings. To deploy the ProcessFlows you are required to select the environment in which your business flow will be deployed. Your Environments are needed to be setup before the deploying process. 
@@ -277,11 +277,11 @@ Once the installation process completes, you can view your [OP details Page](htt
 To add your hosted agent on your organisation, follow the process provided in the [link](https://docs.appseconnect.com/deployment/Deployment-Configuration/#cloud-agent-configuration)
 To know more about Hosted Environment, [Click Here](https://docs.appseconnect.com/deployment/Environment-Management/)
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
 
 ## Deployment
 Deploying is an essential step for integrating your business flow. Environment needs to have the configuration deployed which drives the integration process. Check the [Deployment Documents](https://docs.appseconnect.com/deployment/overview/) to know about the steps to deploy your flow on your selected environment.
 
 Once deployed, you need to click on the RUN button in the designer page to [execute your flow](https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow). All its execution generates [SNAPSHOTS](https://docs.appseconnect.com/processflow/snapshot-processflow/) that will allow you to monitor the data synced with the execution attempt.
 
-**Note: This is a Common Section**
+**Tips: This is a Common Section**
