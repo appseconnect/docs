@@ -69,6 +69,9 @@ the existing functions:
 Following the above steps, you successfully Edit and modify the Function Informations.
 Along with editing the function details, you will be able to debug the function code in the code editor as well.
 
+**Note:**
+
+- You need to [Redeploy](/processflow/redeploying-processflow/) your Processflow to reflect changes, if already deployed to your environment with previous configurations.
 
 ## Function - Modify Code:
 
@@ -113,6 +116,11 @@ c) Debug all the listed errors and click on the **DEBUG** button to validate aga
 d) Click on the SAVE button after debugging successfully.
 
 Following the above process, you can successfully debug or modify the function code.
+
+**Note:**
+
+- You need to [Redeploy](/processflow/redeploying-processflow/) your Processflow to reflect the new modifications, if already deployed to your environment with previous configurations.
+
 
 ## Function - DELETE
 
