@@ -25,7 +25,7 @@ This is the space that will allow you to write the function code as per your nee
 
 2) Either way you will get the **Code Editor Screen** of your Function.
 
-![codeeditor1]()
+![codeeditor1](\staticfiles\processflow\media\codeeditor1.PNG)
 
 3) By default you will be provided with default code along with a String Parameter, everytime you create a new function. 
 
