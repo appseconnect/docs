@@ -43,7 +43,9 @@ Given below are the Transactional Data Configuration Details:
 
 This processflow is equipped with two different flows with With SAP Business One Service Layer being the SOURCE for both.
 This Processflow is equipped of adding new Customers in one flow and Address Details in the other. 
+
 The following details will be synced with the **Customer Add** Flow: Password, First Name, Last Name, Email, Is_Guest & Source Key.
+
 The following details will be synced with the **Address Add** Flow: Customer Id, City, First Name, Last Name, Postal Code, Address, Country Id, State Id, Contact No, Alias.
 
 2. **Customer Add**
@@ -53,7 +55,9 @@ Street, Block, ZIP Code, City, Country, State & U_WBCUSTADDID.
 3. **Customer Group Price and Sync Update**
 
 You will be having two different flows equipped with this ProcessFlow. Integrating this processflow, you can both ADD and UPDATE Customer Group Price from SAP Business One S/L to Prestashop.
+
 The following details will be added when Customer Group Price is Integrated: Shop Group ID, Shop ID, Cart ID, Product ID, Currency ID, Country ID, Customer Group ID, Customer Id, Price, Quantity from & Reduction.
+
 The details that were added in the previous flow, will be updated with this flow. This flow is also equipped with a sync back which returns back the U_GroupPriceSync and ItemCode back SAP Business One S/L.
 
 4. **Simple Product Add**
@@ -70,8 +74,10 @@ This flow is also equipped with a sync back that return back and updates the Pro
 6. **Sales Order Add**
 
 This processflow is equipped with two different flows that updates existing Customer Details, simultaneously adds New Incoming Sales Orders both happening from Prestashop to SAP Business One S/L.
+
 The flow for updating Customer Details will update the Customer Name along with the Address Details if any.
-The flow for adding Sales Orders will add the following details when integrated: Document Type, Document date, Document Due Date, Card Code, Document Total, Document Object Code, Total Discount, Item Code, Quantity Ordered, Tax Code,
+
+The flow for adding **Sales Orders** will add the following details when integrated: Document Type, Document date, Document Due Date, Card Code, Document Total, Document Object Code, Total Discount, Item Code, Quantity Ordered, Tax Code,
 Unit Price, VAT Group, Shipping Address Details & Order Line Total.
 
 7. **Invoice Upload**
@@ -81,8 +87,10 @@ The flow is also equipped with a sync back that returns back the updated Invoice
 
 ## Action Filter configurations:
 
-ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. Store Variable are used within the `Action filters` to fetch the data from Source. For this Package, you need to configure the varaible within the each of the processflows 
-with same naming convention used in the Action Filters. For The first instance of execution, your variable will store the value of the last data such that on next execution, all the data after the last execute date & time will be fetched. For more details on these Variable, Check out our feature document for [Store Variables](https://docs.appseconnect.com/processflow/working-with-variable/#capture-variables-utility)
+ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. Store Variable are used within the **Action filters** to fetch the data from Source. For this Package, you need to configure the varaible within the each of the processflows 
+with same naming convention used in the Action Filters. 
+
+For The first instance of execution, your variable will store the value of the last data such that on next execution, all the data after the last execute date & time will be fetched. For more details on these Variable, Check out our feature document for [Store Variables](https://docs.appseconnect.com/processflow/working-with-variable/#capture-variables-utility)
 Have a glance on the [Action Filter](https://docs.appseconnect.com/processflow/manage-actions-actionfilters-errorfilters/) documentation, for more information.
 
 ## LookUp Mapping:
@@ -145,5 +153,4 @@ To know more about Hosted Environment, [Click Here](https://docs.appseconnect.co
 Deploying is an essential step for integrating your business flow. Environment needs to have the configuration deployed which drives the integration process. Check the [Deployment Documents](https://docs.appseconnect.com/deployment/overview/) to know about the steps to deploy your flow on your selected environment.
 
 Once deployed, you need to click on the RUN button in the designer page to [execute your flow](https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow). All its execution generates [SNAPSHOTS](https://docs.appseconnect.com/processflow/snapshot-processflow/) that will allow you to monitor the data synced with the execution attempt.
-
 
