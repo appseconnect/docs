@@ -77,7 +77,7 @@ Users cannot modify any configuration to the rule.
 Users would receive the Error based Hourly Notification in the email id provided for the Organisation. The Rule will be triggered every hour and would check for errors. However, if No-Errors found, you will not recive any Email Notification Reports
 even if the rule triggers. A sample mail is provided below:
 
-![errormailnotification1](\staticfiles\rules\media\errormailnotification1.PNG)
+![errormailnotification1](\staticfiles\rules\media\errormailnotification1 (2).png)
 
 **Note:**
 

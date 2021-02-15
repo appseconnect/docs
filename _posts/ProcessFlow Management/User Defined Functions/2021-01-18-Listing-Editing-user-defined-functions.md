@@ -31,7 +31,7 @@ This document will enable you to work with the Listing structure for the users t
 
 4) Clicking over individual listed function, will allow you to view the **Function Name** and **Function Description** in EDIT mode. Users can any time alter and modify the Name and its Description.
 
-![UDFListing3]()
+![UDFListing3](\staticfiles\processflow\media\UDFListing3.PNG)
 
 4) You will have Context Menus beside each listed functions that will allow you to **Modify Code** & **DELETE** the existing functions.
 
@@ -56,15 +56,14 @@ the existing functions:
 - **Function Name** - Will display the name of the function.
 - **Function Description** - Will display the description of the function.
 - **Function Return Type** - Will display the return type of the function used in the code.
-- **Used in** - Will display the area where the function is used in.
 
 4) You can anytime edit the function information **Function Name** & **Function Description**. 
 
-![UDFedit2]()
+![UDFedit2](\staticfiles\processflow\media\UDFedit2.PNG)
 
 5) You can SAVE the function informations directly. Also, you can navigate to the Code Editor page, if required to modify the same.
 
-![UDFedit3]()
+![UDFedit3](\staticfiles\processflow\media\UDFedit3.PNG)
 
 Following the above steps, you successfully Edit and modify the Function Informations.
 Along with editing the function details, you will be able to debug the function code in the code editor as well.
@@ -79,15 +78,15 @@ Along with editing the function details, you will be able to debug the function 
 
 2) Click on the Context Menus available beside each of the existing function.
 
-3) Select the **Modify Code** option available in the Context Menu. The **Code Editor** panel opens on the Right Side of the window.
+3) Select the **Modify Code** option available in the Context Menu. 
 
 ![UDFdebug](\staticfiles\processflow\media\UDFdebug.PNG)
 
-4) You can anytime Update and Modify the code within the code editor, whenever required.
+4) The **Code Editor** panel opens on the Right Side of the window. You can anytime Update and Modify the code within the code editor, whenever required.
 
-![UDFdebug1](\staticfiles\processflow\media\UDFdebug.PNG)
+![UDFdebug1]()
 
-5) You need to Validate the code to view its validation. 
+5) You need to Validate the code to view its validation. Click on the **VALIDATE & SAVE** button. 
 
 ### Validation Status: Successful
 
@@ -95,25 +94,23 @@ a) If your function code validation is successful, you get its success message.
 
 ![UDFdebug3]()
 
-b) You can SAVE the function immediately after the successful validation.
-
-![UDFdebug4]()
+b) Your function gets SAVED immediately after the successful validation.
 
 ### Validation Status: Failed
 
 a) If your function code validation has failed, you'll be notified with the errors and error position within the function code.
 
-![UDFdebug5]()
+![UDFdebug5](\staticfiles\processflow\media\UDFdebug5.PNG)
 
-b) Clicking on the errors, will navigate you to individual error positions in the **Code Editor**.
+b) Clicking on the errors, will navigate you to individual error positions. Click on **DEBUG** button.
 
-![UDFdebug6]()
+![UDFdebug6](\staticfiles\processflow\media\UDFdebug6.PNG)
 
-c) Debug all the listed errors and click on the **DEBUG** button to validate again.
+c) You will be navigated to the **Code Editor tab**, to debug all the listed errors. 
 
-![UDFdebug7]()
+![UDFdebug7](\staticfiles\processflow\media\UDFdebug7.PNG)
 
-d) Click on the SAVE button after debugging successfully.
+d) Click on the **VALIDATE & SAVE** button once debugged.
 
 Following the above process, you can successfully debug or modify the function code.
 
@@ -132,7 +129,7 @@ Following the above process, you can successfully debug or modify the function c
 
 3) Clicking on the **DELETE** option, you'll get confirmation message for the deletion process.
 
-![udfdelete2]()
+![udfdelete2](\staticfiles\processflow\media\udfdelete2.PNG)
 
 4) Clicking on the YES will successfully delete the function.
 
