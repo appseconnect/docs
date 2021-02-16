@@ -33,11 +33,11 @@ Follow the steps below to create the user Defined Cloud Appresource Functions.
 
 3) The UDF listing window opens. 
 
-![udfcreate2]()
+![udfcreate2](\staticfiles\processflow\media\udfcreate2.png)
 
 ## Creating User Defined Functions
 
-Once you are in the UDF Listing window, you can now proceed with the create of User Defined Functions. Based on the User Journey, you get TWO Process to land upto the function CREATE Page
+Once you are in the UDF Listing window, you can now proceed with the create of User Defined Functions.
 
 4) Click on the **(+)** button to create functions.
 The CREATE Page Opens.
@@ -52,7 +52,7 @@ The CREATE Page Opens.
 
 7) Once defined, you need to navigate to the **editor** for the function code definition. Click on the **Go to Editor** for the same.
 
-For more information on the Code Editor, Visit [UDF Code Editor and Validation]().
+For more information on the Code Editor, Visit [UDF Code Editor and Validation](/processflow/Function-Code-Validation/).
 
 ## Areas of Usage 
 

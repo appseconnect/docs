@@ -84,15 +84,13 @@ Along with editing the function details, you will be able to debug the function 
 
 4) The **Code Editor** panel opens on the Right Side of the window. You can anytime Update and Modify the code within the code editor, whenever required.
 
-![UDFdebug1]()
+![UDFdebug1](\staticfiles\processflow\media\UDFdebug1.PNG)
 
 5) You need to Validate the code to view its validation. Click on the **VALIDATE & SAVE** button. 
 
 ### Validation Status: Successful
 
 a) If your function code validation is successful, you get its success message.
-
-![UDFdebug3]()
 
 b) Your function gets SAVED immediately after the successful validation.
 
@@ -107,6 +105,7 @@ b) Clicking on the errors, will navigate you to individual error positions. Clic
 ![UDFdebug6](\staticfiles\processflow\media\UDFdebug6.PNG)
 
 c) You will be navigated to the **Code Editor tab**, to debug all the listed errors. 
+The Code Editor Window will be highlighted with the areas in RED where the modifications is required.
 
 ![UDFdebug7](\staticfiles\processflow\media\UDFdebug7.PNG)
 
@@ -125,7 +124,7 @@ Following the above process, you can successfully debug or modify the function c
 
 2) Click on the Context Menus available beside each of the existing function to find the **DELETE** option.
 
-![udfdelete1]()
+![udfdelete1](\staticfiles\processflow\media\udfdelete1.PNG)
 
 3) Clicking on the **DELETE** option, you'll get confirmation message for the deletion process.
 

@@ -45,11 +45,11 @@ This is the space that will allow you to write the function code as per your nee
  - Try Catch
  - Try Finally
 
-![codeeditor2]()
+![codeeditor2](\staticfiles\processflow\media\codeeditor2.PNG)
 
 6) You need to implement these fundamentals by dragging it to the required location within your Code.
 
-![codeeditor3]()
+![codeeditor3](\staticfiles\processflow\media\codeeditor2.PNG)
 
 ### Code Snippets
 
@@ -65,30 +65,8 @@ This is the space that will allow you to write the function code as per your nee
 
 ## Validation Status
 
-You can have two instances for the validation process: Success or Failed. The instances are provided below in detail.
+You can have two instances for the validation process: **Success** or **Failed**. For more details on each of the Instances, visit [Validation Status: Successful](/processflow/Listing-Editing-user-defined-functions/#validation-status-successful) 
+& [Validation Status: Failed](/processflow/Listing-Editing-user-defined-functions/#validation-status-failed)
 
-### Status: Successful
-
-a) If your function code validation is successful, you get its success message.
-
-![codeeditor4]()
-
-b) You can SAVE the function immediately after the successful validation.
-
-![codeeditor5]()
-
-### Status: Failed
-
-a) If your function code validation has failed, you'll be notified with the errors and error position within the function code.
-
-![codeeditor6]()
-
-b) Clicking on the errors, will navigate you to individual error positions in the **Code Editor**.
-
-![codeeditor7]()
-
-c) Debug all the listed errors and click on the **DEBUG** button to validate again.
-
-On successful validation, the function will be saved.
 
 Following the above procedures, you can successfully implement the Code Fundamentals and Snippets within your Function Code Structure.
