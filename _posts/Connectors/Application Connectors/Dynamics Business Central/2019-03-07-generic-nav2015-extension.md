@@ -380,9 +380,7 @@ Now we can set the log table according to the following details:
 |33064470|Web Product Child Details|All Fields|All Fields|All Fields|
 |33064471|AEC Customer Details|All Fields|All Fields|All Fields|
 |33064472|AEC Ship-to Address|All Fields|All Fields|All Fields|
-|33064475|AEC Application Item|All Fields|All Fields|All Fields|
 |33064476|AEC Order Header Details|All Fields|All Fields|All Fields|
-|33064479|AEC Application Contact|All Fields|All Fields|All Fields|
 |33064480|AEC Contact Address|All Fields|All Fields|All Fields|
 |33064482|AEC Shipment Line|All Fields|All Fields|All Fields|
 
