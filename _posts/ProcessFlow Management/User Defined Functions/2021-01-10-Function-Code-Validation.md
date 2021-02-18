@@ -12,7 +12,7 @@ menus:
 
 ---
 
-This section of the document will allow you to know the code editor and the validation process of your function.
+This section of the document will allow you to gain knowledge on the code editor and the validation process the defined function.
 
 ## Code Editor:
 

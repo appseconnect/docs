@@ -27,7 +27,7 @@ Follow the steps below to create the user Defined Cloud Appresource Functions.
 
 1) Login to the Portal and Navigate to the [ProcessFlow Designer](/processflow/designer-processflow/) Page.
 
-2) Click on the Functions Icon available in Header Panel of the designer page.
+2) Click on the Functions Icon available in [Header Panel](/processflow/designer-processflow/#processflow-header-panel) of the designer page.
 
 ![udfcreate1](\staticfiles\processflow\media\udfcreate1.png)
 
@@ -37,20 +37,20 @@ Follow the steps below to create the user Defined Cloud Appresource Functions.
 
 ## Creating User Defined Functions
 
-Once you are in the UDF Listing window, you can now proceed with the create of User Defined Functions.
+Once you are in the UDF Listing window, you can now create User Defined Functions.
 
-4) Click on the **(+)** button to create functions.
-The CREATE Page Opens.
+4) Click on the **(+)** button beside the FILTER icons to create functions.
+The CREATE Page opens on your Right.
 
 ![udfcreate4](\staticfiles\processflow\media\udfcreate4.png)
 
-5) Either way you will land on the **CREATE Page** for defining the function.
+**You can anytime FILTER your created functions using Function Name, if the list of Functions is exhaustive.**
 
-6) You need to Provide the **Function Name** & **Description** for its definition.
+5) You need to Provide the **Function Name** & **Function Description** for its definition.
 
 ![udfcreate5](\staticfiles\processflow\media\udfcreate5.png)
 
-7) Once defined, you need to navigate to the **editor** for the function code definition. Click on the **Go to Editor** for the same.
+6) Once defined, you need to navigate to the **editor** for the function code definition. Click on the **Go to Editor** for the same.
 
 For more information on the Code Editor, Visit [UDF Code Editor and Validation](/processflow/Function-Code-Validation/).
 
@@ -64,9 +64,11 @@ You can use your created functions in the listed areas:
 - [Action Filter](/processflow/manage-actions-actionfilters-errorfilters/#adding-action-filters): You can use your created functions within the Action Filter of a ProcessFlow, provided the return Type of your function should not be a **Complex Object** or **Complex Object Collection**.
 - [Error/retry Filter](/processflow/manage-actions-actionfilters-errorfilters/#adding-retry-filters): You can use your created functions within the Error/retry Filters of a Processflow, provided the return Type of your function should not be a **Complex Object** or **Complex Object Collection**.
 
+
+
 **Note:**
 
-- You can also create your Cloud Appresource Functions from the mapper node. For more information on that steps, [click here](/processflow/cloud-appresource-functions/).
+- You can also create your Cloud Appresource Functions from the mapper node. For more informations on it, [click here](/processflow/cloud-appresource-functions/).
 - All the created functions irrespective of the areas, the functions will be listed on the UDF Listing Window. For more details on the Listing page, [Click Here](/processflow/Listing-Editing-user-defined-functions/).
 - You cannot create Functions with same **Function Name**.
 - The name must begin with a letter and can contain letters, numbers, and the following special characters: `_ @ $ #`.

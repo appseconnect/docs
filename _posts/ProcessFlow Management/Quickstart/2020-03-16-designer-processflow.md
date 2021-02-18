@@ -22,12 +22,12 @@ This section enables the user to implement business scenarios by designing proce
 The page is divided into 4 sections that are static for every processflow designing page. 
 The following sections are:  
 
-**processflow Header panel**  
-**processflow Left panel**  
-**processflow Designer View**  
-**processflow Right Panel**  
+**Processflow Header panel**  
+**Processflow Left panel**  
+**Processflow Designer View**  
+**Processflow Right Panel**  
 
-## processflow Header Panel
+## Processflow Header Panel
 
 ![Create Processflow4](../../staticfiles/processflow/media/create-processflow4.png)
 
@@ -46,7 +46,8 @@ Details of the list of executable buttons are given below:
 * Delete button: The delete button will allow to delete the selected Nodes and link in the processflow. You will get a confirmation pop-up for the delete operation of the workflow. 
 * Zoom in: You can zoom in the processflows for better viewing purpose.
 * Zoom out: You can zoom out the processflow for better user experience. Users can also resize the screen accordingly. 
-* Link Order: YOu can sequence your execution order of your processflow. On clicking the [Link Order](/processflow/link-order-sequencing/) button, the order sequence window configuration window opens.
+* Link Order: You can sequence your execution order of your processflow. On clicking the [Link Order](/processflow/link-order-sequencing/) button, the order sequence window configuration window opens.
+* User Defined Functions: Here, you can implement multiple Cloud Appresource User Defined Functions for implementing Definite Tasks within your ProcessFlow. For more details on the Cloud Appresource User Defined Functions, [Click Here](/processflow/overview-of-user-defined-functions/).
 * To view the screen in full screen mode, click the Button for Full Screen.
 * You will have the option adjust the screen resolution to 100%, 50% & 25% & Fit to Screen as per the need.
 * Save: The save button allows you to save the following processflow for later use. You can edit the processflows anytime by clicking the edit button available in the processflow listing Page.
@@ -54,7 +55,7 @@ Details of the list of executable buttons are given below:
 
 You can view the **Back to processflow** button that will navigate you to the [listing page](/processflow/processflow-listing-page/). 
 
-## processflow Left Panel
+## Processflow Left Panel
 Here the users can add processflows nodes to the processflow designer panel. The nodes
  can be dragged and dropped in the design panel for configuring & designing the Process 
 flow. Users can utilize any node based on the business requirement and can view the 
@@ -77,14 +78,14 @@ On dragging the applications to the designer panel, the node configuration windo
 
 ![Create Processflow5](../../staticfiles/processflow/media/create-processflow5.png)
 
-## processflow Designer View 
+## Processflow Designer View 
 Here you can design/create the processflow. Drag and drop the required nodes to the 
 designer panel for creating the processflow. Expanding the menu in the left panel, 
 you can view all the node that can applied for designing the processflow.
 
 ![Create Processflow6](../../staticfiles/processflow/media/create-processflow6.png)  
 
-## processflow Right Panel
+## Processflow Right Panel
 The right panel of the processflow Designer Page will have the following sections:  
 ![Create Processflow7](../../staticfiles/processflow/media/create-processflow7.PNG)  
 * Suggested Node: Here you will get suggestions of providing nodes that can be applied with the node dragged in the processflow designer panel.
