@@ -2889,7 +2889,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Function Code Validation",
-      excerpt: "This section of the document will allow you to know the code editor and the validation process of your function....",
+      excerpt: "This section of the document will allow you to gain knowledge on the code editor and the validation process the...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 319
@@ -6435,7 +6435,7 @@ var store = [
       {
         "title": "Function Code Validation",
         "url": "/processflow/Function-Code-Validation/",
-        "excerpt": "This section of the document will allow you to know the code editor and the validation process of your function....",
+        "excerpt": "This section of the document will allow you to gain knowledge on the code editor and the validation process the...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
