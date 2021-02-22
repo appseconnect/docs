@@ -86,13 +86,52 @@ This ProcessFlow will integrate new Customer and their details from Dynamics NAV
 This ProcessFlow will integrate new Customer and their details from Shopify to Dynamics NAV. The following details be integrated with this ProcessFlow: Customer No, Name, Address, Postal Code, City, Country Code, Phone No, Email, Customer Price Group, Customer Discount Group,
 Warehouse Location Code, VAT Group.
 
-3. **Customer Update**
+3. **Customer Update [Shopify - NAV]**
 
 This ProcessFlow will integrate the updated details of the customers from Shopify to Dynamics NAV. 
 The details that were added from Shopify to NAV will only be updated when this ProcessFlow is synced.
 
-4. **PF - Customer : Update**
+4. **PF - Customer : Update [NAV-Shopify]**
 
 This ProcessFlow will integrate the updated details of the customers from Dynamics NAV to Shopify. The following details will be updated, integrating this flow: email, first_name, last_name.
 
-5. **PF - Product Add**
+5. **PF - Product Add [Shopify - NAV]**
+
+This ProcessFlow will you add products from front end and will sync the added to products to Dynamics NAV/BC. The following details will be integrated: Product SKU, Description, Unit Price, Net Weight, Unit of Measure, Product Posting Group (General), Product Posting Group (VAT),
+Inventory Posting Group, Web Item Flag,Web item Application ID, Web Item SKU, WebSync FLag, Web Stock Flag, WebTierPriceSyncFlag, WebSpecialPriceSyncFlag.
+
+6. **PF - Product : Add (With Variants) [NAV-Shopify]**
+
+This Processflow is implemented with multiple flows that integrates Products and their Variants from NAV/BC to Shopify. The following data will be integrated: Item Description Body, Item Title, Vendor, Barcode, Variants (Complex Object), position, product price, Variants SKU, Variants Title, Unit Price (Compare At Price), inventory management, 
+Weight, Product Type & Source Key.
+This processflow is equipped of SyncBack that returns back the updated ApplicationId, Item Number, WebSyncFlag & WebId to NAV/BC from Shopify for the AEC Items.
+This Processflow is also equipped of Syncback that returns the Application Id, Item Number & Webid to NAV/BC from Shopify for the Child Items.
+
+7. **PF - Product : Add (Without Variants) [NAV-Shopify]**
+
+This Processflow is implemented with multiple flows that integrates Products without Variants from NAV/BC to Shopify. The following data will be integrated: Item Description Body, Item Title, Vendor, product price,Item SKU, inventory quantity, inventory management, 
+Weight & Source Key.
+This Processflow is also equipped of Syncback that returns the Application Id, Item Number, WebSyncFlag, WebId, VariantId & WebInventoryId to NAV/BC from Shopify for the AEC Items.
+
+8. **PF- Inventory Update [NAV - Shopify]**
+
+This Processflow is equipped of updating inventories from Dynamics NAV to Shopify. The following details would be synced: Requestaction, inventory_item_id, Location_id & Availability.
+This Processflow is also equipped with a syncback that returns back the Updated Flag back to Dynamics NAV to Shopify.
+
+9. **PF - Inventory Update (Default Variant) [NAV to Shopify]**
+
+This Processflow integrates the updated inventory with default variants of products from Dynamics NAV to Shopify. The following details would be synced: inventory_item_id, location_id, SourceKey & Availability.
+This flow also syncs the updated flag from Dynamics NAV to Shopify.
+
+10. **PF - Product Update**
+
+This Processflow integrates the updated Product Details like Product Name, description, Variants etc from Dynamics NAV to Shopify. The following details will be integrated: Product Web Id, Item Title, Variants, Variant Id, Variant Title, Item Price, Variant SKU & SourceKey.
+This Processflow is also equipped with syncbacks that returns back the Application Id, Item Number, WebSyncFlag & WebId from Shopify to NAV.
+
+11. **PF - Order Add [Shopify - NAV]**
+
+This Processflow integrates the incoming Sales Orders from Shopify to NAV. The following data are integrated with this flow: Document Type, Document Number, Document Date, Posting Date, Payment Method,
+Sell to Customer Number, Sell to Customer Name, Address 1, Address 2, City, Country, PostCode, Ship to Name, Shipping Address Details, Order Details (Sales Line), Web Order Id, Item Number, Web Id & Line Number.
+
+12. **PF - Fulfillment Add**
+
