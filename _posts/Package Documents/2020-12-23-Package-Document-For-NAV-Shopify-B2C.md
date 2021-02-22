@@ -79,16 +79,20 @@ Given below are the Transactional Data Configuration Details:
 
 1. **Customer Add [NAV - Shopify]**
 
-Flow Description: This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Shopify. The following Customer details will be synced: Customer Number, Email, first name, last name, address details and Phone No.
+This ProcessFlow will integrate new Customer and their details from Dynamics NAV to Shopify. The following Customer details will be synced: Customer Number, Email, first name, last name, address details and Phone No.
 
 2. **Customer Add [Shopify - NAV]**
 
-Flow Description: This ProcessFlow will integrate new Customer and their details from Shopify to Dynamics NAV. The following details be integrated with this ProcessFlow: Customer No, Name, Address, Postal Code, City, Country Code, Phone No, Email, Customer Price Group, Customer Discount Group,
+This ProcessFlow will integrate new Customer and their details from Shopify to Dynamics NAV. The following details be integrated with this ProcessFlow: Customer No, Name, Address, Postal Code, City, Country Code, Phone No, Email, Customer Price Group, Customer Discount Group,
 Warehouse Location Code, VAT Group.
 
 3. **Customer Update**
 
-Flow Description: This ProcessFlow will integrated the updated details of the customers from Shopify to Dynamics NAV. 
+This ProcessFlow will integrate the updated details of the customers from Shopify to Dynamics NAV. 
 The details that were added from Shopify to NAV will only be updated when this ProcessFlow is synced.
 
-4. 
+4. **PF - Customer : Update**
+
+This ProcessFlow will integrate the updated details of the customers from Dynamics NAV to Shopify. The following details will be updated, integrating this flow: email, first_name, last_name.
+
+5. **PF - Product Add**

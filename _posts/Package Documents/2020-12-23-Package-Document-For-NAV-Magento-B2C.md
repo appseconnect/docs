@@ -168,6 +168,29 @@ This ProcessFlow is featured to Add as well as Update tier Prices from Dynamics 
 This Processflow is featured to Add Special Prices based upon Sales Prices which would flow from Ms Dynamics NAV to Magento2. This processflow syncs the following details: Sales Price, Store ID, sku, Start Date & End Date.
 
 
+19. **Shipment add [Magento2.x to Dynamics NAV OP]**
+
+This Processflow is featured to add Shipments from Magento to Dynamics NAV. The following details will be integrated: Order Increment Id, Shipment Web Id, Tracking Number and Application ID.
+
+
+
+20. **Invoice Add [Magento2.x to Dynamics NAV OP]**
+
+This Processflow is featured to add order Invoices from Magento to Dynamics NAV. The following details will be integrated: Order Increment Id, Application ID & Invoice Web ID.
+
+
+
+21. **Shipment and Invoice add [Magento2.x to NAV]** 
+
+This Processflow is featured with two different flows for integrating Shipment and Invoice on one go. Both the flows will be executed from Magento to Dynamics NAV.
+The flow for adding SHIPMENT will integrate the following data: Order Increment Id, Shipment Web Id, Tracking Number & Application Id.
+The flow for adding INVOICE will integrate the following data: Order Increment Id, Application Id & Invoice Web Id.
+
+
+22. **Simple Product Add [Magento 2.x to NAV]**
+
+This Processflow is featured to integrate
+
 ## Action Filter configurations:
 
 ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 

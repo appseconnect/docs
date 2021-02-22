@@ -97,20 +97,6 @@ This processflow will also sync back the Web Id and Sync Flag back to MS Dynamic
 
 This Processflow is featured to add Sales Respresentatives against the Company profile from Dynamics NAV to Magento. The following details will be added: Sales Rep ID, Customer (Company) Id.
 
-11. **Shipment add [Magento2.x to Dynamics NAV OP]**
-
-This Processflow is featured to add Shipments from Magento to Dynamics NAV. The following details will be integrated: Order Increment Id, Shipment Web Id, Tracking Number and Application ID.
-
-12. **Invoice Add [Magento2.x to Dynamics NAV OP]**
-
-This Processflow is featured to add order Invoices from Magento to Dynamics NAV. The following details will be integrated: Order Increment Id, Application ID & Invoice Web ID.
-
-13. **Shipment and Invoice add [Magento2.x to NAV]** 
-
-This Processflow is featured with two different flows for integrating Shipment and Invoice on one go. Both the flows will be executed from Magento to Dynamics NAV.
-The flow for adding SHIPMENT will integrate the following data: Order Increment Id, Shipment Web Id, Tracking Number & Application Id.
-The flow for adding INVOICE will integrate the following data: Order Increment Id, Application Id & Invoice Web Id.
-
 
 ## Action Filter configurations:
 
