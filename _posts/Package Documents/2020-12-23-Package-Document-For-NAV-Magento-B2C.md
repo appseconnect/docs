@@ -189,7 +189,10 @@ The flow for adding INVOICE will integrate the following data: Order Increment I
 
 22. **Simple Product Add [Magento 2.x to NAV]**
 
-This Processflow is featured to integrate
+This Processflow is featured to integrate the Simple Products from Magento 2.X to Dynamics NAV. The following details would be integrated: Product SKU, Product Description, Unit_Price, Unit of Measurement, Product Posting Group (general), Product Posting Group (VAT), Inventory Posting Group, Web Attribute Set Id,
+Web Tax Class Id, Web Item IsEnable, Web Item IsVisible, Web Description, Web ItemFlag, Web ProdType, WebSite Id, WebSite Name, Web Product Attribute Id, Web Product Attribute Option Id, Web Product Category Id, Web Item Application Id,
+Product Item Number, WebSyncFlag & WebId. 
+
 
 ## Action Filter configurations:
 

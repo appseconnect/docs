@@ -170,6 +170,7 @@ This Processflow is also equipped with a Sync Back that returns back Item Price 
 
 BLANK
 
+
 17. **PF - Product Update**
 
 
@@ -191,11 +192,15 @@ The list is put based on the format given below:
 
 [Processflow Name][Reference Table]
 
-• [][] 
+• [PF - Order Add (Shopify - NAV)] [Freight] 
 
-• [][]
+• [PF - Order Add (Shopify - NAV)] [ShippingTax] 
 
-• [][]
+• [PF - Order Add (Shopify - NAV)][DiscountGroup]
+
+• [PF - Order Add (Shopify - NAV)][Tax]
+
+• [PF - Fulfillment Add][myStoreId]
 
 ## Extension Configuration Information:
 
