@@ -166,19 +166,6 @@ This Processflow integrates the updated prices of Items from Dynamics NAV to Sho
 This Processflow is also equipped with a Sync Back that returns back Item Price Details Flag back to Dynamics NAV from Shopify.
 
 
-16. **PF - Order : Update**
-
-BLANK
-
-
-17. **PF - Product Update**
-
-
-
-18. **PF - Variant Item Link**
-
-This Processflow integrates the Variant links with Items from Shopify to Dynamics NAV. The following data will be synced: Application Id, Parent Item SKU, Web Sync Flag & barcode.
-
 
 ## Action Filter configurations:
 
