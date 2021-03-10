@@ -106,21 +106,23 @@ Following the above process, you can successfully Edit, Delete & Rename an exist
 
 ![actionfilter3](\staticfiles\processflow\media\action_filter3.PNG)
 
-5) Click on the ellipses beside the Action Filter to view the **CREATE** Button. Clicking on the create button, the action filter creation window opens.
+5) Click on the ellipses beside the Action Filter to view the **CREATE** Button. Clicking on the create button, the action filter creation window opens. You can view the two sections **Header** and **Body** in a drop down form.
 
-![actionfilter4](\staticfiles\processflow\media\action_filter4.png)
+![actionfilter4]()
 
-6) You get the option to provide your filter for TWO sections. Either on **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the action filter.
+6) You need to provide the below requirements the **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the action filter.
  
 - Key: This is the filter key that will define the key to filter.
-- Operator: You need to select the type of operator needed for the execution of the action filter.
 - Value: You need to provide the value to the filter that will be executed to GET or POST data.
 
-Click on the SAVE icon beside the filter to save the current sibling.
+Clicking on the **Horizontal lines**, you'll be getting the list of operators those are respnsible to execute the condition key of the filter.
 
-![actionfilter5](\staticfiles\processflow\media\action_filter5.PNG)
+![actionfilter5]()
 
-7) You can also append multiple filters by clicking on the **APPEND** button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.
+7) You can also append **Conditions** and **Conjunctions** as multiple filters by clicking on the **Ellipses** button that gives you a context menu for adding the below functionalities.
+
+- **Add Condition:** Probabtion for providing condition on filter that will allow you to fetch user specific data.
+- **Add Child Clause:** Probation for applying conjunction on the same level as of the elder sibling filter.
 
 8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different processflow for the same application within the same organisation. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
 
