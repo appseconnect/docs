@@ -4,13 +4,6 @@ The package **Dynamics NAV - Shopify B2C** will let you integrate the pre-implem
 One -Click installation allows you to access the packaged ProcessFlows designs and mappings. Amplify your revenue numbers and growth with Packages. 
 Just Install, Deploy and Execute to integrate your ProcessFlows inbuilt in your package.
 
-## Additional Information
-
-- Version Number – 1.0.0 
-- Package Name - Dynamics NAV - Shopify B2C
-- Created By –  INSYNC Solutions
-- Last Modified - 23/12/2020 04:23:30 PM (Date & Time)
-- Apps Used in the Package – Dynamics NAV & Shopify 
 
 ## Package Key Features
 
@@ -19,22 +12,14 @@ Checkout the Key Features of this package, listed below:
 
 1. Easy Package Sharing & Installation: Two step Package Sharing, and One Click Installation lets you share and unzip your packages with ease and reduces time and effort, encouraging Citizen Integration. Know more on [Processflow Packaging](https://docs.appseconnect.com/processflow/processflow-packaging-overview/)
 2. Automated Business Cycle Integration: Lets you just to plug and play every cycle of your business process automatically between your selected applications Magento2 & Dynamics NAV.
-3. Pre-Implemented mappings: The process flows in this [package] are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
-4. Multiple Product Types Support: This package will enable you to sync product of types: Configurable products, bundle products & Simple Products etc.
+3. Pre-Implemented mappings: The processflows in this are pre-implemented with all the mappings required for integrating your ProcessFlow minimizing the manual efforts. However, you are always welcome in altering the [mappings](https://docs.appseconnect.com/processflow/customising-attribute-mapping/) as per your business process. 
 
-## Package Tech Specification
+## Package Setup
 
-This package consists the following configurations details:
+You are few steps away from UNBOXing this package on your APPSeCONNECT Organisation. Check out the [Installation Manual](https://docs.appseconnect.com/processflow/processflow-package-installation/) for more details.
+Your installed package will be available in the **Installed Process Folder**.
 
-1.	App Authentication Mechanism
-2.	Packaged Processflows & Dependencies
-3.	Action Filter configurations 
-4.	LookUp Mapping
-5.	Extensions & Add-On Installation Details
-6.  Adapter Compatibility Check
-7.	Environment Selection 
-8.	Deployment 
-
+Study this documentation for the Configuration, Deploy & the Execution details.
 
 ## App Authentication Mechanism
 
@@ -45,7 +30,7 @@ Study your required application’s document to know about the Authentication and 
 This package comprises of the following Applications.
 
 - [Dynamics NAV](https://docs.appseconnect.com/connectors/Dynamicsnav/)
-- [Shopify](https://docs.appseconnect.com/connectors/magento2/) 
+- [Shopify](https://docs.appseconnect.com/connectors/magento2/) (Shopify 1.0)
 
 ## Packaged Processflows & Dependencies:
 
@@ -166,11 +151,11 @@ This Processflow integrates the updated prices of Items from Dynamics NAV to Sho
 This Processflow is also equipped with a Sync Back that returns back Item Price Details Flag back to Dynamics NAV from Shopify.
 
 
-
 ## Action Filter configurations:
 
 ProcessFlows in this package are pre-configured with the action filters that are required to GET and POST data from Source to Destination Application minimizing the implementation time. 
 Have a glance on the [Action Filter](https://docs.appseconnect.com/processflow/manage-actions-actionfilters-errorfilters/) documentation, for more information.
+
 
 ## LookUp Mapping:
 Your Package contains multiple Processflows and few of those Processflows may require mapping of specific values in certain fields as lookups. Few Processflow requires to create these lookups manually in the Reference Tables of the APPSeCONNECT [Repositories](https://docs.appseconnect.com/processflow/Lookup-repository-masterdata/). 
