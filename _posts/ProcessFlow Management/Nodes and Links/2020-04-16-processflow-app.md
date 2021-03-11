@@ -18,7 +18,8 @@ For transforming data from one application to another you need to drag Applicati
 nodes to the designer panel for operating as source application and destination application. Every Application node has node configuration window where you can define the type of node for the application: GET or POST
 
 ## Type of Elements in APPSeCONNECT processflow  
-|Element|Description|    
+
+|Element|Description|
 |--------|-----------|  
 |[GET](/processflow/working-with-GET/)|GET node is used for fetching data from the source application by using the API provided by the application|  
 |[MAPPER](/processflow/working-with-mapper/)|Mapper node is used to map the attributes and the entities of both source and destination applications|  
