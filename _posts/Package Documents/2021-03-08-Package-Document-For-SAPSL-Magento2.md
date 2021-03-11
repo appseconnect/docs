@@ -73,3 +73,16 @@ This master data syncs the configuration details of the Customer Groups.
 
 
 Given below are the **Transactional Data** Configuration Details:
+
+
+- **Business Partner Add**
+
+This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from Magento 2 to SAP S/L. The following Customer details will be synced: CardCode as Customer ID, Name, Email Id, Address, Street, Block, ZipCode, City, Country, State, Telephone &  Address Type. 
+
+
+- **PF-Customer Add [Company]**
+
+This ProcessFlow will integrate the newly on boarded Customer and their details in your business line-up from SAP Business One S/L to Magento2. The following Customer details will be synced: Customer Group ID, First Name, Last Name, Email Id, Store Id, Website Id, City, Country ID, Telephone, Post Code, address name, street, region_id, Default Shipping, Default Name, street & Gender.
+
+
+- 
