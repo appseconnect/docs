@@ -2905,6 +2905,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "User Defined Dynamic Filter",
+      excerpt: "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom...",
+      categories: ["Processflow"],
+      tags: ["developers"],
+      id: 321
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -6447,6 +6456,17 @@ var store = [
         "title": "Lisitng & Editing User Defined Appresource Functions",
         "url": "/processflow/Listing-Editing-user-defined-functions/",
         "excerpt": "End Users will be listed with the Functions that they have created in the UDF Listing window. Every functions listed...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
+        "title": "User Defined Dynamic Filter",
+        "url": "/processflow/User-Defined-Dynamic-Filter/",
+        "excerpt": "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"

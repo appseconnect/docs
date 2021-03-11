@@ -1498,8 +1498,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
+    <li class="menu-item-" data-url="/processflow/deploying-and-executing-processfloww/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/deploying-and-executing-processfloww/" onclick="selectTab('/processflow/deploying-and-executing-processfloww/', event);" title="Go to Deploy, Execute & Undeploy">Deploy, Execute & Undeploy</a>
         
     </li>
     
@@ -1510,14 +1510,20 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/deploying-and-executing-processfloww/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/deploying-and-executing-processfloww/" onclick="selectTab('/processflow/deploying-and-executing-processfloww/', event);" title="Go to Deploy, Execute & Undeploy">Deploy, Execute & Undeploy</a>
+    <li class="menu-item-" data-url="/processflow/link-order-sequencing/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/link-order-sequencing/" onclick="selectTab('/processflow/link-order-sequencing/', event);" title="Go to Link Order Sequencing">Link Order Sequencing</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/processflow/retry-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/retry-processflow/" onclick="selectTab('/processflow/retry-processflow/', event);" title="Go to Sync Info & Retry">Sync Info & Retry</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/copy-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/copy-processflow/" onclick="selectTab('/processflow/copy-processflow/', event);" title="Go to Copy Processflow">Copy Processflow</a>
         
     </li>
     
@@ -1534,20 +1540,20 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/processflow/copy-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/copy-processflow/" onclick="selectTab('/processflow/copy-processflow/', event);" title="Go to Copy Processflow">Copy Processflow</a>
-        
-    </li>
-    
-    
-    <li class="menu-item-" data-url="/processflow/unfinished-deployment/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/unfinished-deployment/" onclick="selectTab('/processflow/unfinished-deployment/', event);" title="Go to Unfinished Deployment">Unfinished Deployment</a>
+    <li class="menu-item-" data-url="/processflow/User-Defined-Dynamic-Filter/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/User-Defined-Dynamic-Filter/" onclick="selectTab('/processflow/User-Defined-Dynamic-Filter/', event);" title="Go to User Defined Dynamic Filter">User Defined Dynamic Filter</a>
         
     </li>
     
     
     <li class="menu-item-" data-url="/processflow/redeploying-processflow/" data-jstree='{"icon":"fa fa-file-word-o"}'>
         <a href="/processflow/redeploying-processflow/" onclick="selectTab('/processflow/redeploying-processflow/', event);" title="Go to Redeploy">Redeploy</a>
+        
+    </li>
+    
+    
+    <li class="menu-item-" data-url="/processflow/unfinished-deployment/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/processflow/unfinished-deployment/" onclick="selectTab('/processflow/unfinished-deployment/', event);" title="Go to Unfinished Deployment">Unfinished Deployment</a>
         
     </li>
     
@@ -2706,11 +2712,29 @@
 nodes to the designer panel for operating as source application and destination application. Every Application node has node configuration window where you can define the type of node for the application: GET or POST</p>
 
 <h2 id="type-of-elements-in-appseconnect-processflow">Type of Elements in APPSeCONNECT processflow</h2>
-<p>|Element|Description|  <br />
-|——–|———–|<br />
-|<a href="/processflow/working-with-GET/">GET</a>|GET node is used for fetching data from the source application by using the API provided by the application|<br />
-|<a href="/processflow/working-with-mapper/">MAPPER</a>|Mapper node is used to map the attributes and the entities of both source and destination applications|<br />
-|<a href="/processflow/working-with-POST/">POST</a>|POST node is used for pushing data to an application based on the API provided by the destination application|</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/processflow/working-with-GET/">GET</a></td>
+      <td>GET node is used for fetching data from the source application by using the API provided by the application</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-mapper/">MAPPER</a></td>
+      <td>Mapper node is used to map the attributes and the entities of both source and destination applications</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-POST/">POST</a></td>
+      <td>POST node is used for pushing data to an application based on the API provided by the destination application</td>
+    </tr>
+  </tbody>
+</table>
 
 
                 
@@ -5366,8 +5390,27 @@ nodes to the designer panel for operating as source application and destination 
 
                             
 
+                            
+                            
+                            
+
+                            
+
+                            
+
                              
                              
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a href="/processflow/User-Defined-Dynamic-Filter/" rel="permalink">
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
+                                    User Defined Dynamic Filter
+                                </a>
+                            </li>
                             
                             
                             
@@ -5416,15 +5459,6 @@ nodes to the designer panel for operating as source application and destination 
                             </li>
                             
                             
-                            
-                            
-                            
-                            <li>
-                                <a href="/processflow/copy-processflow/" rel="permalink">
-                                    <i class="fa fa-angle-double-right" aria-hidden="true" title="permalink"></i>
-                                    Copy Processflow
-                                </a>
-                            </li>
                             
                             
                             
