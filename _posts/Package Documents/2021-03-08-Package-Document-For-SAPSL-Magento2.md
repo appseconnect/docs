@@ -127,7 +127,7 @@ Unit Price, VAT Group, Discount Percent, Num at Card, WebOrderId & Sync Flag.
 
 - **PF-  Invoice Add**
 
-This Processflow is equipped of integrating Invoices from Magento2 to SAP Business One S/L. The following data will be synced with this processflow: Order Item ID, Qty, SourceKey, Capture & Comments.
+This Processflow is equipped of integrating Invoices from SAP Business One S/L to Magento2. The following data will be synced with this processflow: Order Item ID, Qty, SourceKey, Capture & Comments.
 This Processflow is also equipped with post acknowledgement flow that updates back the InvoiceId back to SAP Business One S/L.
 
 
@@ -158,3 +158,26 @@ Product Visibility, Weight & SourceKey.
 
 The flow for adding Configurable Products will sync the following data: Product SKU, name, price, status, attribute_set_id, Product Visibility, Product Type, Weight, attribute code, value,
 Item SKU, Product Link Type, Linked Product SKU, SourceKey, Configurable Product Option, Configurable product attribute id, label & Value Index.
+
+
+- **PF-Grouped Product Add [SAP S/L to Magento 2]**
+
+This Processflow is eqipped with multiple flow that integrates both the Simple Products and Grouped Products from SAP Business One S/L to Magento 2.
+
+The flow for adding Simple Products will be integrated first with following data: Product SKU, name, price, attribute_set_id, attribute code, value, Product Type, status, 
+Product Visibility, Weight & SourceKey.
+
+The flow for adding Configurable Products will sync the following data: Product SKU, name, price, status, attribute_set_id, Product Visibility, Product Type, Weight, attribute code, value,
+Item SKU, Product Link Type, Linked Product SKU, Position & SourceKey.
+
+
+- **PF - Shipment Upload**
+
+This Processflow will integrate the generated Shipment Document from SAP Business One S/L to Magento2. The following data will be integrated: Order Item Id, Quantity & SourceKey.
+
+
+- **Stock Update [SAP S/L TO MAGENTO 2.x]**
+
+This Processflow will integrate the updated inventory stocks from SAP Business One S/L to Magento2. The following data will be integrated: Stock Quantity details against every Item Id getting updated.
+
+
