@@ -28,42 +28,54 @@ On execution, you get the option to execute either with the generic filter or wi
 
 2) Once you have [designed your Processflow](/processflow/creating-processflow/), deploy the processflow. You'll get the Deployment steps on the Tracker Window.
 
-3) You'll get the following message on the Tracker Window, once the deployment steps are completed.
-
-`To execute the Processflow, please click the dropdown of execute play button and Choose your desired Execution option.`
-
-![customfilter1]()
-
-4) Clicking on the Play button, you get the following two options in the drop-down.
+3) Clicking on the Play button, you get the following two options in the drop-down.
 
 - Execute - This option allows you to execute with the filter (generic filter) provided in the App Node.
 - Execute with Custom Action filter - This option will allow you to perform execution with a custom filter apart from the generic filter.
 
 Select the option **Execute with Custom Action Filter**.
 
-![customfilter2]()
+![customfilter2](\staticfiles\processflow\media\customfilter2.PNG)
 
-5) The Custom Action filter Window opens that will allow you to provide the filter as per your need.
+4) The Custom Action filter Window opens that will allow you to provide the filter as per your need.
 
-![customfilter3]()
+![customfilter3](\staticfiles\processflow\media\customfilter3.PNG)
 
 
 ## Creating Dynamic Custom Filter
 
 1) Landing on the **Custom Action filter Window**, you will be listed with all the GET nodes of that ProcessFlow.
 
-![customfilter4]()
+![customfilter4](\staticfiles\processflow\media\customfilter4.PNG)
 
-2) On implementing Custom Action Filter for the first time, you can view the following screen, on clicking over the desired GET node for implementing the filter.
 
-![customfilter5]()
+2) To ADD the filter click on the Ellipses -> Context Menu -> Create. The screen for creating custom action filter will be displayed.
 
-3) To ADD the filter click on the Ellipses -> Context Menu -> Create. The screen for creating custom action filter will be displayed.
+![customfilter6](\staticfiles\processflow\media\customfilter6.PNG)
 
-![customfilter6]()
-
-4)  You can also add Conditions and Conjuctions over the filters by clicking on the Ellipses over the HEADER and the BODY section.
+3) You can also add Conditions and Conjuctions over the filters by clicking on the Ellipses over the HEADER and the BODY section.
 
 ![customfilter7]()
 
-5) YOu can either click on the SAVE button or SAVE and Execute button.
+4) You can either click on the **Execute** button or **SAVE and Execute** button. You can track the Execution details on the Tracker Window.
+
+
+**Note:**
+
+- You will not get the option of `Execute with Custom Filter`, if your processflow is not deployed.
+- Clicking on the Execute button in Custom Filter window, will not SAVE the filter.
+
+
+## Deleting Dynamic Action Filter.
+
+1) To Delete a Custom Action Filter, Navigate to the **Custom Action filter Window** by clicking on the **Execute with Custom Action filter**. The window opens.
+
+2) Click on the ellipses of the GET node, whose filter you would like to delete.
+
+![customfilter8]()
+
+3) You will get a confirmation message for proceeding with the delete process. Click on the YES button to proceed with the deletion process.
+
+![customfilter9]()
+
+4) You can also delete the filter from the normal action filter UI. Click Here for more details.
