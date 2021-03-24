@@ -43,6 +43,27 @@ Select the option **Execute with Custom Action Filter**.
 
 ![customfilter2]()
 
-5) The Custom Action filter opens that will allow you to provide the filter as per your need.
+5) The Custom Action filter Window opens that will allow you to provide the filter as per your need.
 
 ![customfilter3]()
+
+
+## Creating Dynamic Custom Filter
+
+1) Landing on the **Custom Action filter Window**, you will be listed with all the GET nodes of that ProcessFlow.
+
+![customfilter4]()
+
+2) On implementing Custom Action Filter for the first time, you can view the following screen, on clicking over the desired GET node for implementing the filter.
+
+![customfilter5]()
+
+3) To ADD the filter click on the Ellipses -> Context Menu -> Create. The screen for creating custom action filter will be displayed.
+
+![customfilter6]()
+
+4)  You can also add Conditions and Conjuctions over the filters by clicking on the Ellipses over the HEADER and the BODY section.
+
+![customfilter7]()
+
+5) YOu can either click on the SAVE button or SAVE and Execute button.
