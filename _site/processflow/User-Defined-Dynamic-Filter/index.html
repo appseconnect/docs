@@ -2687,7 +2687,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
                 
                 
@@ -2702,6 +2702,8 @@
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#implementing-dynamic-custom-filter">Implementing Dynamic Custom Filter</a></li>
+  <li><a href="#creating-dynamic-custom-filter">Creating Dynamic Custom Filter</a></li>
+  <li><a href="#deleting-dynamic-action-filter">Deleting Dynamic Action Filter.</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2725,13 +2727,7 @@ that are required only for specific scenarios. With this feature, you can not on
 
 <p>2) Once you have <a href="/processflow/creating-processflow/">designed your Processflow</a>, deploy the processflow. You’ll get the Deployment steps on the Tracker Window.</p>
 
-<p>3) You’ll get the following message on the Tracker Window, once the deployment steps are completed.</p>
-
-<p><code class="language-plaintext highlighter-rouge">To execute the Processflow, please click the dropdown of execute play button and Choose your desired Execution option.</code></p>
-
-<p><img src="" alt="customfilter1" /></p>
-
-<p>4) Clicking on the Play button, you get the following two options in the drop-down.</p>
+<p>3) Clicking on the Play button, you get the following two options in the drop-down.</p>
 
 <ul>
   <li>Execute - This option allows you to execute with the filter (generic filter) provided in the App Node.</li>
@@ -2740,11 +2736,48 @@ that are required only for specific scenarios. With this feature, you can not on
 
 <p>Select the option <strong>Execute with Custom Action Filter</strong>.</p>
 
-<p><img src="" alt="customfilter2" /></p>
+<p><img src="\staticfiles\processflow\media\customfilter2.PNG" alt="customfilter2" /></p>
 
-<p>5) The Custom Action filter opens that will allow you to provide the filter as per your need.</p>
+<p>4) The Custom Action filter Window opens that will allow you to provide the filter as per your need.</p>
 
-<p><img src="" alt="customfilter3" /></p>
+<p><img src="\staticfiles\processflow\media\customfilter3.PNG" alt="customfilter3" /></p>
+
+<h2 id="creating-dynamic-custom-filter">Creating Dynamic Custom Filter</h2>
+
+<p>1) Landing on the <strong>Custom Action filter Window</strong>, you will be listed with all the GET nodes of that ProcessFlow.</p>
+
+<p><img src="\staticfiles\processflow\media\customfilter4.PNG" alt="customfilter4" /></p>
+
+<p>2) To ADD the filter click on the Ellipses -&gt; Context Menu -&gt; Create. The screen for creating custom action filter will be displayed.</p>
+
+<p><img src="\staticfiles\processflow\media\customfilter6.PNG" alt="customfilter6" /></p>
+
+<p>3) You can also add Conditions and Conjuctions over the filters by clicking on the Ellipses over the HEADER and the BODY section.</p>
+
+<p><img src="" alt="customfilter7" /></p>
+
+<p>4) You can either click on the <strong>Execute</strong> button or <strong>SAVE and Execute</strong> button. You can track the Execution details on the Tracker Window.</p>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+  <li>You will not get the option of <code class="language-plaintext highlighter-rouge">Execute with Custom Filter</code>, if your processflow is not deployed.</li>
+  <li>Clicking on the Execute button in Custom Filter window, will not SAVE the filter.</li>
+</ul>
+
+<h2 id="deleting-dynamic-action-filter">Deleting Dynamic Action Filter.</h2>
+
+<p>1) To Delete a Custom Action Filter, Navigate to the <strong>Custom Action filter Window</strong> by clicking on the <strong>Execute with Custom Action filter</strong>. The window opens.</p>
+
+<p>2) Click on the ellipses of the GET node, whose filter you would like to delete.</p>
+
+<p><img src="" alt="customfilter8" /></p>
+
+<p>3) You will get a confirmation message for proceeding with the delete process. Click on the YES button to proceed with the deletion process.</p>
+
+<p><img src="" alt="customfilter9" /></p>
+
+<p>4) You can also delete the filter from the normal action filter UI. Click Here for more details.</p>
 
                 
             </section>
