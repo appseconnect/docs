@@ -65,6 +65,8 @@ This part of the document will allow you to create Custom Filter on GET node for
 
 4) You can either click on the **Execute** button or **SAVE and Execute** button. You can track the Execution details on the Tracker Window.
 
+5) You will be generated with [Snapshots](/processflow/snapshot-processflow/) for every execution with the Custom Filter.
+
 
 **Note:**
 
@@ -86,8 +88,6 @@ This part of the document will allow you to create Custom Filter on GET node for
 4) The SAVED filters will also be available in the **Execute with Custom Action filter**. The process to add and create the filter is save as that performed in [**Execute with Custom Action filter**](/processflow/manage-actions-actionfilters-errorfilters/#working-with-custom-filter).
 
 For more details on this section, [ClicK Here](/processflow/manage-actions-actionfilters-errorfilters/)
-
-
 
 
 ## Deleting Dynamic Action Filter.
