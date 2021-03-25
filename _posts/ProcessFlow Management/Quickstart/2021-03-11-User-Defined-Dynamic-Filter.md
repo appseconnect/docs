@@ -44,10 +44,16 @@ Select the option **Execute with Custom Action Filter**.
 
 ## Creating Dynamic Custom Filter
 
+This part of the document will allow you to create Custom Filter on GET node for specific scenario execution. You can create these filters from TWO different areas.
+
+- Create from **Execute with Custom Action filter**
+- Create from **Node Configuration - Configure Filter**
+
+### Create From : Execute with Custom Action Filter
+
 1) Landing on the **Custom Action filter Window**, you will be listed with all the GET nodes of that ProcessFlow.
 
 ![customfilter4](\staticfiles\processflow\media\customfilter4.PNG)
-
 
 2) To ADD the filter click on the Ellipses -> Context Menu -> Create. The screen for creating custom action filter will be displayed.
 
@@ -55,10 +61,25 @@ Select the option **Execute with Custom Action Filter**.
 
 3) You can also add Conditions and Conjuctions over the filters by clicking on the Ellipses over the HEADER and the BODY section.
 
-![customfilter7]()
+![customfilter7](\staticfiles\processflow\media\customfilter7.PNG)
 
 4) You can either click on the **Execute** button or **SAVE and Execute** button. You can track the Execution details on the Tracker Window.
 
+### Create From : Node Configuration - Configure Filter
+
+1) Click on the Node Configuration button for the GET Node. You get the Node Configuration window. Click on the **Configure Filter** button to get the Action Filter window.
+
+![customfilter10](\staticfiles\processflow\media\customfilter10.PNG)
+
+2) Expand the nodes to view the **Custom Filter** option. Click on the Ellipses to view the **CREATE** option.
+
+![customfilter11](\staticfiles\processflow\media\customfilter11.PNG)
+
+3) Clicking on the CREATE button, you get the window for providing the filter. Input the filter as required and click on the SAVE button.
+
+4) The SAVED filters will also be available in the **Execute with Custom Action filter**. The process to add and create the filter is save as that performed in [**Execute with Custom Action filter**]().
+
+For more details on this section, [ClicK Here](/processflow/manage-actions-actionfilters-errorfilters/)
 
 **Note:**
 
@@ -72,10 +93,10 @@ Select the option **Execute with Custom Action Filter**.
 
 2) Click on the ellipses of the GET node, whose filter you would like to delete.
 
-![customfilter8]()
+![customfilter8](\staticfiles\processflow\media\customfilter8.PNG)
 
 3) You will get a confirmation message for proceeding with the delete process. Click on the YES button to proceed with the deletion process.
 
-![customfilter9]()
+![customfilter9](\staticfiles\processflow\media\customfilter9.PNG)
 
 4) You can also delete the filter from the normal action filter UI. Click Here for more details.
