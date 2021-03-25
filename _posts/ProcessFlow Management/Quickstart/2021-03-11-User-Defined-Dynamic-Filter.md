@@ -65,6 +65,12 @@ This part of the document will allow you to create Custom Filter on GET node for
 
 4) You can either click on the **Execute** button or **SAVE and Execute** button. You can track the Execution details on the Tracker Window.
 
+
+**Note:**
+
+- You will not get the option of `Execute with Custom Filter`, if your processflow is not deployed.
+- Clicking on the Execute button in Custom Filter window, will not SAVE the filter.
+
 ### Create From : Node Configuration - Configure Filter
 
 1) Click on the Node Configuration button for the GET Node. You get the Node Configuration window. Click on the **Configure Filter** button to get the Action Filter window.
@@ -77,14 +83,11 @@ This part of the document will allow you to create Custom Filter on GET node for
 
 3) Clicking on the CREATE button, you get the window for providing the filter. Input the filter as required and click on the SAVE button.
 
-4) The SAVED filters will also be available in the **Execute with Custom Action filter**. The process to add and create the filter is save as that performed in [**Execute with Custom Action filter**]().
+4) The SAVED filters will also be available in the **Execute with Custom Action filter**. The process to add and create the filter is save as that performed in [**Execute with Custom Action filter**](/processflow/manage-actions-actionfilters-errorfilters/#working-with-custom-filter).
 
 For more details on this section, [ClicK Here](/processflow/manage-actions-actionfilters-errorfilters/)
 
-**Note:**
 
-- You will not get the option of `Execute with Custom Filter`, if your processflow is not deployed.
-- Clicking on the Execute button in Custom Filter window, will not SAVE the filter.
 
 
 ## Deleting Dynamic Action Filter.
@@ -99,4 +102,4 @@ For more details on this section, [ClicK Here](/processflow/manage-actions-actio
 
 ![customfilter9](\staticfiles\processflow\media\customfilter9.PNG)
 
-4) You can also delete the filter from the normal action filter UI. Click Here for more details.
+4) You can also delete the filter from the normal action filter UI. [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#working-with-custom-filter) for more details.

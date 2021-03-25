@@ -202,7 +202,7 @@ The **Custom Filter** functionality on this area will only allow you to Create, 
 
 The filters created can be also be viewed in the **Execute with Custom Action filter** area. For more Details, [Click Here.](/processflow/User-Defined-Dynamic-Filter/#implementing-dynamic-custom-filter)
 
-![customfilternormal](C:\Users\rajshekhar\Documents\devdocs\staticfiles\processflow\media\customfilternormal.PNG)
+![customfilternormal](\staticfiles\processflow\media\customfilternormal.PNG)
 
 Following the above process, you can successfully **Create, View and Delete** Dynamic Custom Filters.
 
