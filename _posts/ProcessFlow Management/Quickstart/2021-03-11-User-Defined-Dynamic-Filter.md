@@ -103,3 +103,10 @@ For more details on this section, [ClicK Here](/processflow/manage-actions-actio
 ![customfilter9](\staticfiles\processflow\media\customfilter9.PNG)
 
 4) You can also delete the filter from the normal action filter UI. [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#working-with-custom-filter) for more details.
+
+
+**Note:**
+
+- You may delete filters anytime from both the interfaces of Custom Filter.
+- For every operation you perform with Custom Filter - Create, Edit, Delete & Execute, you will be updated with its operation on your [FEEDS](/accessing%20portal/accessing-portal/#feeds) section.
+- You need to keep your Processflow deployed, to Execute with Custom filter.
