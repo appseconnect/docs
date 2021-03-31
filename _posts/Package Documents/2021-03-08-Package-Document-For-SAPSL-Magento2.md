@@ -181,3 +181,68 @@ This Processflow will integrate the generated Shipment Document from SAP Busines
 This Processflow will integrate the updated inventory stocks from SAP Business One S/L to Magento2. The following data will be integrated: Stock Quantity details against every Item Id getting updated.
 
 
+## LookUp Mapping:
+Your Package contains multiple Processflows and few of those Processflows may require mapping of specific values in certain fields as lookups. You are required to create these lookups manually in the Reference Tables of the APPSeCONNECT [Repositories](https://docs.appseconnect.com/processflow/Lookup-repository-masterdata/). 
+Follow the documentation of [Reference Tables](https://docs.appseconnect.com/processflow/Lookup-repository-masterdata/#reference-tables) for reference. The lookups listed below needs to be created in reference tables for the below mentioned ProcessFlow. 
+The list is put based on the format given below:
+
+[Processflow Name][Reference Table]
+
+•  [ Customer Add  ][CustomerGroup]
+
+•  [ Simple Product Add (Magento 2.x to SAP SL)][WebsitePriceList]
+
+•  [ Simple Product Add (Magento 2.x to SAP SL)][Currency]
+
+•  [ CONFIGURABLE PRODUCT ADD (Magento 2.0 to SAP SL)][WebsitePriceList]
+
+•  [ CONFIGURABLE PRODUCT ADD (Magento 2.0 to SAP SL)][Currency]
+
+•  [ PF - Grouped Product Add (Magento 2.x to SAP SL)][WebsitePriceList]
+
+•  [ PF - Grouped Product Add (Magento 2.x to SAP SL)][Currency]
+
+
+## Extension Configuration Information:
+
+This package comprises of the following prepackaged applications namely **SAP Business One Service Layer** that requires to configure the required extension & Add Ons. For SAP Business One S/L, you are required to use the Addon for SAP Business One.
+Given below is the checklist of Add On’s required for this Package.
+
+**SAP B1 Application**
+
+•	Version: Supported SAP B1 Version are:
+
+    - SAP B1 9.1
+    
+    - SAP B1 9.2
+
+    - SAP B1 9.3V & Above
+
+•	Add On: 
+
+    - APPSeCONNECT_2.4.3.0_32 (For 32 Bit supported SAP Application)
+
+    - APPSeCONNECT_2.4.10.0_64 (For 64 Bit supported SAP Application)
+
+•	Description: This Add On is used for Web Item Master Data Configuration (created under Inventory Module) for adding web product details required for integration.
+
+
+## Adapter Compatibility Check:
+ProcessFlows in this package have no direct dependencies with Adapter Compatibility. Anytime on deploying your ProcessFlow, the latest adapter set in APPSeCONNECT Portal will be downloaded against the applications selected.
+
+## Environment Selection
+This package is pre-implemented with all the configurations and mappings. To deploy the ProcessFlows you are required to select the environment in which your business flow will be deployed. Your Environments are needed to be setup before the deploying process. 
+Checkout the details below to setup, your choice of environment.
+
+**On-Premise Setup:**
+To download your On-Premise Agent, navigate to the Deploy > Environments > On Premise > Click on the Download Hyperlink. To know more about the installation process, [Click Here](https://docs.appseconnect.com/deployment/Deployment-Configuration/#on-premise-agent-configuration) 
+Once the installation process completes, you can view your [OP details Page](https://docs.appseconnect.com/deployment/Environment-Management/). 
+
+**Hosted Setup:**
+To add your hosted agent on your organisation, follow the process provided in the [link](https://docs.appseconnect.com/deployment/Deployment-Configuration/#cloud-agent-configuration)
+To know more about Hosted Environment, [Click Here](https://docs.appseconnect.com/deployment/Environment-Management/)
+
+## Deployment
+Deploying is an essential step for integrating your business flow. Environment needs to have the configuration deployed which drives the integration process. Check the [Deployment Documents](https://docs.appseconnect.com/deployment/overview/) to know about the steps to deploy your flow on your selected environment.
+
+Once deployed, you need to click on the RUN button in the designer page to [execute your flow](https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/#executing-deployed-processflow). All its execution generates [SNAPSHOTS](https://docs.appseconnect.com/processflow/snapshot-processflow/) that will allow you to monitor the data synced with the execution attempt.

@@ -120,7 +120,7 @@ Given below is the checklist of Add On’s required for this Package.
 •	Version: Supported SAP B1 Version are:
 
     - SAP B1 9.1
-    h
+    
     - SAP B1 9.2
 
     - SAP B1 9.3V & Above
