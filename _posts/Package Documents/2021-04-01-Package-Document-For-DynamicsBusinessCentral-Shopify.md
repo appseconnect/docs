@@ -68,3 +68,9 @@ Ship to Address 2, Ship to City, Tax Area Code, Bill to Post Code, Bill to Name 
 
 This Processflow adds the invoices of the generated order as Fulfillment from Dynamics 365 BC to Shopify. The following data will be added when synced: Line Item Details (Item Web Id, quantity, Item SKU), Tracking Number, order_id & SourceKey.
 This processflow is also equipped with a post acknowledgement flow that syncs back the following data: SyncFlag, PatchHeaderData & RequestMethod.
+
+
+- **PF-Price Update**
+
+This Processflow updates the Product Price from Dynamics 365 BC to Shopify. The followings data will be updated: Product Web Id & Product Price.
+This Processflow is also equipped with a Post Acknowledgement flow that syncs back the Application ID, Request Method, Patch Header Data & Web Price Sync Flag back to Dynamics 365 BC from Shopify.
