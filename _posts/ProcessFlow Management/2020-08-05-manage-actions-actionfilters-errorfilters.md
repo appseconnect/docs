@@ -167,32 +167,45 @@ Following the above process, you can successfully implement Retry filter for an 
 4) Click on the **CREATE** button as per the options selected, either ACTION FILTER or RETRY FILTER. The create window opens as per the selected choice (The window remains same for both Action Filter and Retry Filter). 
 **Here we have chosen ACTION FILTER**.
 
-4) Provide the details in the fields and click on the SAVE icon beside the filter column. After saving the column, you get the option of **SAVE AS TEMPLATE**.
+5) Provide the details in the fields and click on the SAVE icon beside the filter column. After saving the column, you get the option of **SAVE AS TEMPLATE**.
 
 ![savetemplate1](\staticfiles\processflow\media\savetemplate1.PNG)
 
-5) Click on the **Save as Template** button to save the provided Action Filter as a template. 
+6) Click on the **Save as Template** button to save the provided Action Filter as a template. 
 You can reuse this saved template on any other nodes of any processflow in your organisation, 
 provided the **application node** , **Schema** & the **Action** remains the same.
 
-6) You can view the saved for the schema and action by navigating to **[Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) > your selected Schema Entity > The Action in which you have created the Template > Click on the Action filter.**
+7) You can view the saved for the schema and action by navigating to **[Manage Schema](/processflow/adding-schema-actions/#listing-of-schemas-and-attributes) > your selected Schema Entity > The Action in which you have created the Template > Click on the Action filter.**
 You will be able to view the saved template for that schema and the action. The template will not be editable in the Manage schema window.
 
-7) To create filter from a saved template, navigate to Node Config window ->  Select Schema -> Select Action -> Configure filter. Expand the Schema node until Action Filter, Retry Filter appears.
+8) To create filter from a saved template, navigate to Node Config window ->  Select Schema -> Select Action -> Configure filter. Expand the Schema node until Action Filter, Retry Filter appears.
 
-8) Click on the Ellipses beside your chosen option (Action Filter, Retry Filter) and select the option **Create from template** from the context menu.
+9) Click on the Ellipses beside your chosen option (Action Filter, Retry Filter) and select the option **Create from template** from the context menu.
 
 ![createtemplate1](\staticfiles\processflow\media\createtemplate1.PNG)
 
-9) On clicking **Create from template** you get a confirmation message. Click on the YES button.
+10) On clicking **Create from template** you get a confirmation message. Click on the YES button.
 
 ![createtemplate2](\staticfiles\processflow\media\createtemplate2.PNG)
 
-10) The saved template opens. You can anytime edit the action filter placed in the template as per your requirement. The updates made will not change in the template that is saved.
+11) The saved template opens. You can anytime edit the action filter placed in the template as per your requirement. The updates made will not change in the template that is saved.
 
 ![createtemplate3](\staticfiles\processflow\media\createtemplate3.PNG)
 
 Following the above process you can successfully SAVE and create filter from template.
+
+
+## Working with Custom Filter
+
+You can create the Dynamic Custom Filter for performing specific integration operations. However, you cannot execute from this section. 
+The **Custom Filter** functionality on this area will only allow you to Create, View and Delete.
+
+The filters created can be also be viewed in the **Execute with Custom Action filter** area. For more Details, [Click Here.](/processflow/User-Defined-Dynamic-Filter/#implementing-dynamic-custom-filter)
+
+![customfilternormal](\staticfiles\processflow\media\customfilternormal.PNG)
+
+Following the above process, you can successfully **Create, View and Delete** Dynamic Custom Filters.
+
 
 
 **Note:**
