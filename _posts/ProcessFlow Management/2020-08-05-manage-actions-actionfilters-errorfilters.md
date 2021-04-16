@@ -210,7 +210,7 @@ Following the above process, you can successfully **Create, View and Delete** Dy
 
 **Note:**
 
-**-The steps to remains when working with Retry filer.**
+**-The steps to remains when working with Retry filter.**
 
 **- Each action of a schema can have only one created template.**
 
