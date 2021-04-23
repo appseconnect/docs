@@ -1,11 +1,11 @@
 ---
-title: "User Defined Dynamic Filter"
+title: "User Defined Custom Filter"
 toc: true
 tag: developers
 category: "Processflow"
 menus: 
     quickstartprocessflow:
-        title: "User Defined Dynamic Filter"
+        title: "User Defined Custom Filter"
         weight: 8
         icon: fa fa-file-word-o
         identifier: customfilterprocessflow
@@ -41,6 +41,11 @@ Select the option **Execute with Custom Action Filter**.
 
 ![customfilter3](\staticfiles\processflow\media\customfilter3.PNG)
 
+
+**Note:**
+
+- By Default, the custom filter will display the [Action Filter](/processflow/manage-actions-actionfilters-errorfilters/) used normally in the GET node. However, once edited and saved, you will not have to work on the same from the 2nd instances.  
+- Changes made in the normal Action Filter will not impact that in the custom filter.
 
 ## Creating Dynamic Custom Filter
 
@@ -90,6 +95,13 @@ This part of the document will allow you to create Custom Filter on GET node for
 For more details on this section, [ClicK Here](/processflow/manage-actions-actionfilters-errorfilters/)
 
 
+**Note:**
+
+- By Default, the custom filter will display the [Action Filter](/processflow/manage-actions-actionfilters-errorfilters/) used normally in the GET node. However, once edited and saved, you will not have to work on the same from the 2nd instances.  
+- Changes made in the normal Action Filter will not impact that in the custom filter.
+
+
+
 ## Deleting Dynamic Action Filter.
 
 1) To Delete a Custom Action Filter, Navigate to the **Custom Action filter Window** by clicking on the **Execute with Custom Action filter**. The window opens.
@@ -110,3 +122,4 @@ For more details on this section, [ClicK Here](/processflow/manage-actions-actio
 - You may delete filters anytime from both the interfaces of Custom Filter.
 - For every operation you perform with Custom Filter - Create, Edit, Delete & Execute, you will be updated with its operation on your [FEEDS](/accessing%20portal/accessing-portal/#feeds) section.
 - You need to keep your Processflow deployed, to Execute with Custom filter.
+- While the Custom Filter is on its Execution process, the Autosync remains PAUSED until it is completed. Any operation scheduled during that time will be paused and will be resumes immediately, once its over.
