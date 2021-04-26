@@ -68,9 +68,11 @@ This part of the document will allow you to create Custom Filter on GET node for
 
 ![customfilter7](\staticfiles\processflow\media\customfilter7.PNG)
 
-4) You can either click on the **Execute** button or **SAVE and Execute** button. You can track the Execution details on the Tracker Window.
+4) You can either click on the **SAVE** button or directly execute the process by clicking on the **EXECUTE**  button. You can track the Execution details on the Tracker Window.
 
-5) You will be generated with [Snapshots](/processflow/snapshot-processflow/) for every execution with the Custom Filter.
+5) You will be generated with [Snapshots](/processflow/snapshot-processflow/) for every execution with the Custom Filter. For every executions with Custom Filter, Snapshots be spcially indicated with a **`TAG`** icon.
+
+![Customfiltersnapshottag](\staticfiles\processflow\media\customfiltersnapshottag.png)
 
 
 **Note:**
