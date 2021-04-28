@@ -1926,7 +1926,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "APPSeCONNECT 2021 Release",
-      excerpt: "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
+      excerpt: "This section will give you detailed decsription of 2021 releases. Presently the enlisted sections under 2021 Release is given under...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 212
@@ -2870,11 +2870,20 @@ var idx = lunr(function () {
     
   
     idx.add({
+      title: "2020-Q3 Version 1.0 Hotfix Release Note",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2020 Q3 Release. This hotfix release introduces few minor improvements...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 317
+    });
+    
+  
+    idx.add({
       title: "Working with Return Response Node",
       excerpt: "What is Return Response Node? Return Response Node is a confirmation node that returns back an acknowledgement information to your...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 317
+      id: 318
     });
     
   
@@ -2883,7 +2892,7 @@ var idx = lunr(function () {
       excerpt: "What is Start Node? Start Node node intitates the ignition of the Start process and Trigger Type of the ProcessFlow....",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 318
+      id: 319
     });
     
   
@@ -2892,7 +2901,7 @@ var idx = lunr(function () {
       excerpt: "Here you will get the step by step process to use NAV 2015 Extension as and when required in the...",
       categories: ["Connectors"],
       tags: ["developers"],
-      id: 319
+      id: 320
     });
     
   
@@ -2901,7 +2910,7 @@ var idx = lunr(function () {
       excerpt: "This section of the document will allow you to gain knowledge on the code editor and the validation process the...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 320
+      id: 321
     });
     
   
@@ -2910,7 +2919,7 @@ var idx = lunr(function () {
       excerpt: "End Users will be listed with the Functions that they have created in the UDF Listing window. Every functions listed...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 321
+      id: 322
     });
     
   
@@ -2919,16 +2928,16 @@ var idx = lunr(function () {
       excerpt: "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom...",
       categories: ["Processflow"],
       tags: ["developers"],
-      id: 322
+      id: 323
     });
     
   
     idx.add({
-      title: "Q3 Release Version X.X.X",
-      excerpt: "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
+      title: "Q1 Release Version 4.10.0",
+      excerpt: "Product Release Version: 4.10.0 Release notes were published and last revised in April 2021. Updates in this release include New...",
       categories: ["release-notes"],
       tags: ["developers"],
-      id: 323
+      id: 324
     });
     
   
@@ -5285,7 +5294,7 @@ var store = [
       {
         "title": "APPSeCONNECT 2021 Release",
         "url": "/release-notes/2021/",
-        "excerpt": "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
+        "excerpt": "This section will give you detailed decsription of 2021 releases. Presently the enlisted sections under 2021 Release is given under...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -6438,6 +6447,17 @@ var store = [
     
       
       {
+        "title": "2020-Q3 Version 1.0 Hotfix Release Note",
+        "url": "/release-notes/2020-Q3-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2020 Q3 Release. This hotfix release introduces few minor improvements...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
+      },
+    
+      
+      {
         "title": "Working with Return Response Node",
         "url": "/processflow/working-with-Return-Response-Node/",
         "excerpt": "What is Return Response Node? Return Response Node is a confirmation node that returns back an acknowledgement information to your...",
@@ -6504,9 +6524,9 @@ var store = [
     
       
       {
-        "title": "Q3 Release Version X.X.X",
-        "url": "/release-notes/2021-Q2/",
-        "excerpt": "Product Release Version: 4.8.0 Release notes were published and last revised in October 2020. Updates in this release include New...",
+        "title": "Q1 Release Version 4.10.0",
+        "url": "/release-notes/2021-Q1/",
+        "excerpt": "Product Release Version: 4.10.0 Release notes were published and last revised in April 2021. Updates in this release include New...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
