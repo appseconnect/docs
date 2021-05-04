@@ -1908,7 +1908,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "APPSeCONNECT 2019 Release",
-      excerpt: "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2019 Release is given under...",
+      excerpt: "This section will give you detailed description of 2019 releases. Presently the enlisted sections under 2019 Release is given under...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 210
@@ -1917,7 +1917,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "APPSeCONNECT 2020 Release",
-      excerpt: "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
+      excerpt: "This section will give you detailed description of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 211
@@ -1926,7 +1926,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "APPSeCONNECT 2021 Release",
-      excerpt: "This section will give you detailed decsription of 2021 releases. Presently the enlisted sections under 2021 Release is given under...",
+      excerpt: "This section will give you detailed description of 2021 releases. Presently the enlisted sections under 2021 Release is given under...",
       categories: ["release-notes"],
       tags: ["developers"],
       id: 212
@@ -5272,7 +5272,7 @@ var store = [
       {
         "title": "APPSeCONNECT 2019 Release",
         "url": "/release-notes/2019/",
-        "excerpt": "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2019 Release is given under...",
+        "excerpt": "This section will give you detailed description of 2019 releases. Presently the enlisted sections under 2019 Release is given under...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5283,7 +5283,7 @@ var store = [
       {
         "title": "APPSeCONNECT 2020 Release",
         "url": "/release-notes/2020/",
-        "excerpt": "This section will give you detailed decsription of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
+        "excerpt": "This section will give you detailed description of 2019 releases. Presently the enlisted sections under 2020 Release is given under...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
@@ -5294,7 +5294,7 @@ var store = [
       {
         "title": "APPSeCONNECT 2021 Release",
         "url": "/release-notes/2021/",
-        "excerpt": "This section will give you detailed decsription of 2021 releases. Presently the enlisted sections under 2021 Release is given under...",
+        "excerpt": "This section will give you detailed description of 2021 releases. Presently the enlisted sections under 2021 Release is given under...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
