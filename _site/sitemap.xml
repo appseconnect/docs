@@ -849,10 +849,6 @@
 <lastmod>2019-07-14T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>//docs.appseconnect.com/release-notes/2021/</loc>
-<lastmod>2019-07-14T00:00:00+05:30</lastmod>
-</url>
-<url>
 <loc>//docs.appseconnect.com/connectors/Authentication-and-Authorization/</loc>
 <lastmod>2019-09-18T00:00:00+05:30</lastmod>
 </url>
@@ -1039,6 +1035,10 @@
 <url>
 <loc>//docs.appseconnect.com/processflow/cloud-appresource-functions/</loc>
 <lastmod>2020-04-17T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>//docs.appseconnect.com/release-notes/2021/</loc>
+<lastmod>2020-05-04T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>//docs.appseconnect.com/processflow/working-with-processflow-splitter/</loc>
