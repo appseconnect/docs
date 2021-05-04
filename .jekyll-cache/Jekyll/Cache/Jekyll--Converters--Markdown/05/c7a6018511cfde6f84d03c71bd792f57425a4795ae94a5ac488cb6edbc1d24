@@ -1,0 +1,53 @@
+I"ñ<p>Given below is the list of elements you will be able to use in APPSeCONNECT processflow. You can use the following nodes for designing and executing processflows for sync purpose:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Processflow Nodes</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Start Node</td>
+      <td>This node initiates the start process of the processflow execution. You cannot SAVE or execute a processflow without a Start Node.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-GET/">GET Node</a></td>
+      <td>This node fetches the data from the source application for the sync purpose. You need to enable the APP dragged for operating GET node by selecting the Node Type as GET in the Node Configuration window of the dragged application.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-mapper/">Mapper Node</a></td>
+      <td>This node transforms the data to the destination application by applying field mappings of source and destination application.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-POST/">POST Node</a></td>
+      <td>This node dumps the transformed data to the destination application after the transformation process is completed. You need to enable the destination application as POST node by selecting the Node Type as POST in the Node Configuration window of the dragged destination application.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-processflow-splitter/">Splitter Node</a></td>
+      <td>Splitter Node in processflow will split the incoming data into small packets such that the execution load of bulk data can be minimized during the execution process.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-revamped-merger/">Merger Node</a></td>
+      <td>Merger Node in processflow will merge multiple data into batches as per the input provided by the user.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-processflow-selfloop/">Self loop</a></td>
+      <td>This enables the user to apply self-loop on a node such that on execution, the self-loop will iterate until all data is available from its predecessor node.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-processflow-delay/">Delay Node</a></td>
+      <td>This node will enable you to hold the execution flow for a specific period, so as to fetch more incoming requests from the Predecessor Node. Delay node can be implemented anywhere within a processflow, and the configuration for implementing delay can be provided using Static Time or by using a Dynamic Time.</td>
+    </tr>
+    <tr>
+      <td><a href="/processflow/working-with-decision/">Decision Node</a></td>
+      <td>This node enables you to apply condition checks for filtering redundant data</td>
+    </tr>
+    <tr>
+      <td>End Node</td>
+      <td>This node signifies the completion of the sync process. You may or may not use the End node to design processflows.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

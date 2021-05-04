@@ -1,0 +1,45 @@
+I"�
+<p>Product Release Version: 2.5.0</p>
+
+<p>Bug bash release focusses mainly on removing bugs from the product and enhancing the 
+already existing components to deliver bug free and better product experience 
+to our customers. This release is taken once in a year such that all the enhancement that we made throughout the whole year are properly brushed up. The Bug Bash release for year 2015 contains following enhancements.</p>
+
+<h2 id="agent--appseconnect-sync-tool">Agent / APPSeCONNECT Sync tool</h2>
+
+<ul>
+  <li>We have enhanced the sync tool to support skipping functionalities such that our connector can track every data that is downloaded from Source.</li>
+  <li>The Skipped data can also be resynced from the Sync bucket to success or failure.</li>
+  <li>With the new version of APPSeCONNECT agent, we can now determine the transformation failure and can also comment what kind of problem that causes data failures from our logs.</li>
+  <li>We provide search / copy feature in Resync panel so that you can use the search box to easily find an entry.</li>
+  <li>You will be receiving notification to agent when even a connection name is edited in the server. Accordingly, you can refresh your configuration in agent.</li>
+  <li>We have also fixed an issue with auto-sync service which ensures the service now runs with less privileges and also can notify problems.</li>
+  <li>We fixed the issue of multiple instance of service running on the same machine.</li>
+  <li>In addition to these, we have also fixed a couple of hundred new bugs with the release.</li>
+</ul>
+
+<h2 id="for-administration">For Administration</h2>
+
+<ul>
+  <li>We fixed some of the data issues by linking wikis with actual features, adding default value mappings, todos etc.</li>
+  <li>The administrator can now check the data problems directly from our platform like whether agent is running, if primary agent is turned down etc.</li>
+  <li>Variables can now be sorted directly from our admin portal.</li>
+  <li>We fixed problems with custom attribute mapping such that the configuration is secure in cloud.</li>
+  <li>We now show invalid mapping in attribute mapping page of admin, this will enable easy identification of all the issues a mapping container have in one page.</li>
+  <li>We have fixed a hell lot of UI related bugs during this release.</li>
+</ul>
+
+<h2 id="integration">﻿﻿Integration﻿﻿</h2>
+
+<p>We have introduced SAP B1 DIS with WooCommerce as a new connector to the platform.
+We have improved the following existing connectors:</p>
+
+<p>SAP DIS ⇔ Magento<br />
+Navision ⇔ Salesforce 
+Navision ⇔Shopify</p>
+
+<p>We have some major / minor fixes to each and every connector.</p>
+
+<p>We have also worked considerably on our Magento B2B Extension to give you better experience.</p>
+
+:ET

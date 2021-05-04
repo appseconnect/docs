@@ -1,0 +1,186 @@
+I",<p>Product Release Version: 4.6.0 <br />
+Release notes were published and last revised in May 2020. 
+Updates in this release include New Feature Development &amp; Enhancements, Introducing Artificial Intelligence-based APPSeCONNECT Resolve, UI Enhancements, 
+Integration Enhancements &amp; Adapters Enhancements.</p>
+
+<p>Log in to the portal to access the latest version of Workflow, Environment, etc. 
+along with the newly introduced Process flow (Beta Version) and download the updated version of 
+<code class="language-plaintext highlighter-rouge">APPSeCONNECT AGENT</code>. The following section list the updates on APPSeCONNECT, as on May 2020 release.</p>
+
+<p><strong>Highlights of the release features are mentioned below</strong>.</p>
+
+<h2 id="new-feature-and-enhancements">New Feature and Enhancements</h2>
+
+<p><strong>Introducing Artificial Intelligence-based APPSeCONNECT Resolve</strong></p>
+
+<p>APPSeCONNECT introduces the users an Artificial Intelligence-based APPSeCONNECT Resolve for predicting all types of Data integration error resolution. 
+An integration error usually refers to some form of data inconsistency due to data corruption, missing data, or unexpected data formats. 
+APPSeCONNECT Resolve includes AI-based enactment in various areas of APPSeCONNECT.</p>
+
+<p>Users will now get resolution of errors at ease as it defines error type for all business-related or technical conditions that can be expected and make sense for the user to want to handle specifically.</p>
+
+<ul>
+  <li>Erroneous data resolution for this feature will be available in Resync bucket &amp; Logbucket.</li>
+  <li>This Error based resolution through AI will be implemented through - APPSeCONNECT Knowledge Base Form &amp; Application Community Form.</li>
+</ul>
+
+<p><strong>Presenting REST Adapter – Supporting OAuth 1.0</strong></p>
+
+<p>APPSeCONNECT presents the REST Adapter supporting OAuth 1.0. This feature allows the user to integrate REST-based API applications using REST Adapter.</p>
+
+<ul>
+  <li>
+    <p>Presenting OAuth 1.0 in REST Adapter – OnPremise Agent<br />
+REST API supported customers will now get an OAuth 1.0 authenticate mechanism to 
+connect any application supporting REST protocol to make the CRUD operation. 
+Therefore, the user would be able to validate and generate tokens for the 
+OAuth 1.0 authentication for the <a href="https://docs.appseconnect.com/connectors/OAuth1.0/#process-to-configure-oauth-10-in-rest-adapter---oauth-10">REST Adapter in OP Agent</a>.</p>
+  </li>
+  <li>
+    <p>Presenting of OAuth 1.0 in REST Adapter – Cloud Agent <br />
+REST API supported customers will now get OAuth 1.0 authenticate mechanism to 
+connect any application supporting REST protocol to make the CRUD operation. 
+Therefore, the user would be able to validate and generate tokens for the 
+oAuth 1.0 authentication for the <a href="https://docs.appseconnect.com/connectors/OAuth1.0/#process-to-configure-oauth-10-in--rest-adapter--cloud-agent">REST Adapter in Cloud Agent</a>.</p>
+  </li>
+</ul>
+
+<p><strong>Integration of Documentation Help Files in APPSeCONNECT Portal</strong></p>
+
+<p>Users can now work on APPSeCONNECT <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">Portal</a> with the aid of help files present on every window with respect to the functionality used. Therefore, assistance will be available at appropriate times in the interaction, making sure that such information is easy to search, focused on the user task and provide lists of concrete steps to be carried out.</p>
+
+<p><strong>Introducing ProcessFlow Management (Beta Version Release)</strong></p>
+
+<p>Introducing APPSeCONNECT Process Flow suite which features an extensive interface and provides the ability to easily create digital maps to make out robust process flows simple to cater any business requirements. Now Creating, Editing, Deploying, Executing, Environment Management of Process flow has gone intuitive and saves time as it helps to map and view almost everything on the interface and is fuss-free.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Major attractions of the process flow management feature and functionality</code>.</p>
+
+<ul>
+  <li>Enabling Process flow Management in a Folder structure<br />
+Users gets the option to create multiple folders with the combination of folder and child folder under the default folder named Home.</li>
+  <li>Listed View of Deployed Process Flow in Environment<br />
+Users now get easy visibility of the <a href="https://docs.appseconnect.com/processflow/processflow-listing-page/">listed view</a> of flow in the Environment section of APPSeCONNECT, thus, managing the environment is better than previous times.</li>
+  <li>Seamless Designing &amp; Organising Process flow<br />
+Designing Process flow has gone an edge above with aid of Process Flow <a href="https://docs.appseconnect.com/processflow/designer-processflow/">Designer</a>. Easy and intuitive Process Flow Designing, Execution and Organizing is now available to the users and they will be able to create/edit Process Flow and deploy the flows with the aid of application nodes and mapper nodes. The mapper node captures the attribute and variable mapping components related to transformation. Presently Process flow is catering to <a href="https://docs.appseconnect.com/processflow/working-with-GET/">GET</a>, <a href="https://docs.appseconnect.com/processflow/working-with-mapper/">MAPPER</a> &amp; <a href="https://docs.appseconnect.com/processflow/working-with-POST/">POST</a> nodes.</li>
+  <li>One Step Deployment of Process Flows<br />
+Deploying process flows has gone convenient as the users can now <a href="https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/">Deploy</a> a Process Flow in one single window and in one go. From environment selection, setting up the connection, lookup selection, to syncing and retrying of process flow everything can be now done in one go.</li>
+  <li>User-Created and Maintained Lookup Repository<br />
+  (a) Users now can create and manage Lookup types in the form of Repositories (tables for the organization) in APPSeCONNECT.<br />
+  (b) Easy Import &amp; Export Feature of Lookup Available.<br />
+  (c) Users get the available, list of lookups used within the process flow mapper nodes.</li>
+</ul>
+
+<p><strong>Revamped Environment</strong></p>
+
+<p>APPSeCONNECT Revamped <a href="https://docs.appseconnect.com/deployment/Environment-Management/">Environment</a> is grouped section-wise for the detailed view of
+ agent properties, process flow, plugins and settings. Users can view the deployed
+ process flow in a listed format. <a href="https://docs.appseconnect.com/processflow/deploying-and-executing-processfloww/">Undeploying</a> process flow, <a href="https://docs.appseconnect.com/processflow/retry-processflow/">retry</a> and <a href="https://docs.appseconnect.com/processflow/snapshot-processflow/">data snapshot</a>
+ is also available in the Environment section and displays the activity and error
+ log status of the executed ProcessFlow in the snapshot’s environment section.</p>
+
+<p><strong>Performance Improvement and Data Integrity in Cloud</strong></p>
+
+<p>Users of APPSeCONNECT hosted environment will now get enhanced data integrity 
+and better-quality performance for sync related information much more accurately.  
+The storage architectural change has been taken care of for healthier and fast 
+performance to avoid data loss thereby minimizing network storage.</p>
+
+<h2 id="adapter--plugins">Adapter &amp; Plugins</h2>
+
+<p>These are the Adapters which has been enhanced in this release:</p>
+
+<p>Enhanced <a href="https://docs.appseconnect.com/connectors/Lightspeed/">Lightspeed</a> POS Adapter-   APPSeCONNECT introduces the enhanced adapter for the application Lightspeed which helps in syncing data when integrated with different applications.</p>
+
+<p>Enhanced <a href="https://docs.appseconnect.com/connectors/zohocrmv2/">Zoho CRM</a> Adapter-   APPSeCONNECT introduces the enhanced adapter for the application Zoho CRM which helps in syncing data when integrated with different applications.</p>
+
+<p>New Rest OAuth Supporting 1.0 (OP &amp; Cloud) - APPSeCONNECT introduces the enhanced adapter for the rest-based application supporting OAuth 1.0 which helps in syncing data when integrated with different applications.</p>
+
+<h2 id="new-extension">New Extension</h2>
+
+<p>SAP ByDesign Extension 
+Introducing a new extension that will keep a track of every inventory transaction of SAP ByDesign. The scenarios catered by this extension includes:</p>
+
+<ul>
+  <li>Sales Order Fulfilment</li>
+  <li>Purchase Order Receipt</li>
+  <li>Stock Transfer</li>
+  <li>Inventory Adjustment.</li>
+  <li>Customer Return</li>
+  <li>Return to Supplier</li>
+  <li>Production Order Run</li>
+  <li>Goods Movement</li>
+  <li>Change of Stock – Restricting Inventory, Unrestricted Inventory, Move to Inspection, Remove from Inspection, Changing one SKU to another
+Scrapping</li>
+</ul>
+
+<h2 id="other-enhancements">Other Enhancements</h2>
+
+<ul>
+  <li>Users now get the ease of managing OP Agent settings from the portal as well.</li>
+  <li>The default <a href="https://docs.appseconnect.com/rule/default-rule-for-morning-report/">Morning report</a> has been enhanced with the simplified demonstration of sync status for ease of understandability.</li>
+  <li><a href="https://docs.appseconnect.com/security/security/">Security</a> has been improvised in APPSeCONNECT as this provides a secure access to the environment of the partner using a one-time [temporary license]https://docs.appseconnect.com/license%20management/license-generation/() which has a specific time span.</li>
+  <li>APPSeCONNECT lightspeed adapter is now browser-version independent.</li>
+  <li>REST adapter is upgraded with state management.</li>
+  <li>Deploy configuration from the portal is available for old Agents.</li>
+  <li>Users can now manage ‘Retry settings’ and ‘Log Settings’ for cloud agent.</li>
+  <li>Redesigning of workflow option is now available to the users even after workflow execution to make any changes on the go.</li>
+  <li>Users now can write custom functions to control the transformation.</li>
+</ul>
+
+<h2 id="component-versioning-details">Component Versioning Details</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Component</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Agent</td>
+      <td>Cloud</td>
+      <td>4.5.0</td>
+    </tr>
+    <tr>
+      <td>Agent</td>
+      <td>On-Premise</td>
+      <td>4.6.0.1</td>
+    </tr>
+    <tr>
+      <td>Adapter</td>
+      <td>Rest</td>
+      <td>4.1.19.0</td>
+    </tr>
+    <tr>
+      <td>Adapter</td>
+      <td>Lightspeed</td>
+      <td>4.4.3.0</td>
+    </tr>
+    <tr>
+      <td>Adapter</td>
+      <td>Zoho CRM</td>
+      <td>4.4.9.0</td>
+    </tr>
+    <tr>
+      <td>Portal</td>
+      <td>WebApp</td>
+      <td>4.6.0</td>
+    </tr>
+    <tr>
+      <td>Portal</td>
+      <td>WebAPI</td>
+      <td>4.6.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>REST (On-Premise) REST (Cloud) are same </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>As always for any support, please <a href="support@appseconnect.com">mail us</a>.</p>
+
+:ET

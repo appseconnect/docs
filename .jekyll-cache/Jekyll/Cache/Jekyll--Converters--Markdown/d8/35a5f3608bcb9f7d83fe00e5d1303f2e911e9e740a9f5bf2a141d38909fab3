@@ -1,0 +1,130 @@
+I"5<p>Product Release Version: 4.2.0 <br />
+Release notes were published and last revised in March 2019. 
+Updates in this release includes introduction to New features, 
+Portal &amp; Integration, Enhancements, Adapters, Extensions, Agents and 
+Product Documentation.</p>
+
+<p>Log in to <a href="https://portal.appseconnect.com/Account/Login?ReturnUrl=%2f#!">portal</a> to access the latest version of Workflow, API Manager etc. or
+to download the latest version of APPSeCONNECT AGENT, PLUGINS, ADAPTERS.</p>
+
+<p>The following section list the updates on APPSeCONNECT, as on March 2019 release.</p>
+
+<p><strong>Highlights of the release features are mentioned below</strong>.</p>
+
+<h2 id="new-supported-apps">New Supported Apps</h2>
+
+<ul>
+  <li>Uniconta</li>
+  <li>BambooHR</li>
+</ul>
+
+<h2 id="new-features-and-enhancements">New Features and Enhancements</h2>
+
+<p><strong>Enhancements</strong></p>
+
+<ul>
+  <li>Implementing Pre-Configured Rules from APPSeCONNECT Portal  <br />
+The Portal has reinvigorated the feature Rules management, where some predefined rules can be activated to the project or can be made available to the project to active manually in case of an event or misfire occurs.</li>
+  <li>Extension support for MS Dynamics NAV 2016<br />
+The MS Dynamics NAV <a href="https://docs.appseconnect.com/connectors/generic-nav2016-extension/">2016 Extension</a> now comes with the support of Product Type (Variant with/without Cross reference) as required, so that the requirement of cross reference of the Product can be managed effortlessly.</li>
+  <li>
+    <p>Extension support for MS Dynamics NAV 2015 
+The MS Dynamics NAV <a href="https://docs.appseconnect.com/connectors/generic-nav2015-extension/">2015 Extension</a> now comes with the support of Inserting Product Variants as required.</p>
+  </li>
+  <li>Extension support for MS Dynamics NAV 2009R2 <br />
+Product Variants can now be inserted with the MS Dynamics NAV <a href="https://docs.appseconnect.com/connectors/generic-nav2009-R2-extension/">2009R2 extension</a>, as and when required.</li>
+</ul>
+
+<p><strong>Integration Enhancements</strong>
+Given below are the integration areas of this release:</p>
+
+<p><strong>MS Dynamics NAV Business Central – Zoho CRM V2</strong></p>
+
+<p>This feature syncs data from <a href="https://docs.appseconnect.com/connectors/Dynamicsnav/">MS Dynamics NAV Business Central</a> – <a href="https://docs.appseconnect.com/connectors/zohocrmv2/">Zoho CRM V2</a> and vice versa so that sync requirements between the applications are met. Here accounts can be added from MS Dynamics NAV Business Central – Zoho CRM V2 and will be synced successfully with all details:</p>
+
+<ul>
+  <li>Here Products can be fetched from MS Dynamics Business Central and are posted to ZOHO CRM with the complete Product Details.</li>
+  <li>Customers can be added from ZOHO CRM and are posted to MS Dynamics Business Central.</li>
+  <li>Products can be fetched from ZOHO CRM and are posted to MS Dynamics Business Central with the complete details</li>
+</ul>
+
+<p><strong>Priority - WooCommerce</strong></p>
+
+<p>This feature syncs data from <a href="https://docs.appseconnect.com/connectors/priority/">Priority</a> - <a href="https://docs.appseconnect.com/connectors/woocommerce/">WooCommerce</a> and vice versa so that user sync requirements between the applications are met.</p>
+
+<ul>
+  <li>Here, Customer can be added from WooCommerce to Priority and will be synced successfully with all the details.</li>
+  <li>Product can be added with its complete details from Priority and will be posted to WooCommerce.</li>
+  <li>Here, the Inventory is updated, and the sync process is done from Priority to WooCommerce.</li>
+  <li>Here Sales Order can be added from WooCommerce to Priority and can be synced successfully with all details.</li>
+</ul>
+
+<p><strong>SAGE300 – WooCommerce</strong><br />
+​
+​This feature syncs data from <a href="https://docs.appseconnect.com/connectors/sage300/">SAGE300</a> and <a href="https://docs.appseconnect.com/connectors/woocommerce/">Woo-Commerce</a> and vice versa so that user sync requirements between the applications are met.</p>
+
+<ul>
+  <li>Here, Products can be added with the complete product details from SAGE300 to WooCommerce as required.</li>
+  <li>Invoices are added from SAGE300 to WooCommerce with the complete details.</li>
+  <li>Customers can be added from WooCommerce and will posted to SAGE300 with all the customer details.</li>
+  <li>Here Sales Order can be added from WooCommerce to SAGE300 and can be synced successfully with the complete order details.</li>
+  <li>Here, the Inventory is updated, and the sync process is done from WooCommerce to SAGE300.</li>
+</ul>
+
+<p><strong>Uniconta - Zoho CRM V2</strong></p>
+
+<p>This feature syncs data from <a href="https://docs.appseconnect.com/connectors/uniconta/">Uniconta</a> – <a href="https://docs.appseconnect.com/connectors/zohocrmv2/">Zoho CRM V2</a> and vice versa so that user sync requirements between the applications are met.</p>
+
+<ul>
+  <li>Here, Products can be added with the complete product details from Uniconta to Zoho CRM V2.</li>
+  <li>Customers can be added from Zoho CRM V2 and will posted to Uniconta with all the customer details.</li>
+  <li>Here, the details of the Deals are added from Zoho CRM V2.0 to Uniconta.</li>
+  <li>Sales Quotations are added from ZOHO CRM and are posted to Uniconta with all the complete details.</li>
+</ul>
+
+<p>See Uniconta &amp; Zoho CRM V2 connector documentation.</p>
+
+<p><strong>BambooHR - SAP Business One</strong></p>
+
+<p>This feature syncs data from <a href="https://docs.appseconnect.com/connectors/bamboohr/">Bamboo HR</a> – <a href="https://docs.appseconnect.com/connectors/Sap-Business-One/">SAP Business One</a> and vice versa so that user sync requirements between the applications are met.</p>
+
+<ul>
+  <li>Here, the Employee Details are fetched from BambooHR to SAP Business One and Vice Versa.See BambooHR &amp; SAP Business One connector documentation.</li>
+</ul>
+
+<p><strong>Priority – Magento 2</strong></p>
+
+<p>Customers are added from <a href="https://docs.appseconnect.com/connectors/magento2/">Magento2</a> and are posted to <a href="https://docs.appseconnect.com/connectors/priority/">Priority</a> with all the customer details.</p>
+<ul>
+  <li>Here, The Inventory is updated, and the sync process is done from Priority to Magento2.</li>
+  <li>Products are added from Priority and are posted to Magento2 with all the Product details.</li>
+  <li>Here, the Sales order are added, and the sync process is done from WooCommerce to SAGE300.</li>
+</ul>
+
+<h2 id="new-features">New Features</h2>
+
+<p><strong>APPSeCONNECT Platform</strong></p>
+
+<p>Introducing Hierarchical Rendering on Mapping State</p>
+
+<p>The Platform now provides the feature to disable the parent node along with 
+disabling all the mapped child nodes such that when the XML is rendered, only the enabled node will be rendered in the XML.</p>
+
+<h2 id="adapter--plugins">Adapter &amp; Plugins</h2>
+
+<ul>
+  <li>Uniconta Adapter with integration support</li>
+</ul>
+
+<p>APPSeCONNECT needs adapter to connect to a specific Application to Get and 
+Push data to and from the application. It introduces <a href="https://docs.appseconnect.com/connectors/uniconta/">Uniconta Adapter</a> to sync 
+data successfully when integrating applications with Uniconta.</p>
+
+<p><strong>Adapter for BambooHR</strong></p>
+
+<p>Similarly APPSeCONNECT introduces the adapter for the application <a href="https://docs.appseconnect.com/connectors/bamboohr/">BambooHR</a> 
+which helps in syncing data when integrated with different applications.</p>
+
+<p>As always for any support, please <a href="support@appseconnect.com">mail us</a></p>
+
+:ET

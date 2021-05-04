@@ -1,0 +1,105 @@
+I"<p>Product Release Version: 3.2.0</p>
+
+<p>APPSeCONNECT being the only integration platform to support end to end business process provider, we are continuously improving our offering by adding more and 
+more application to the platform and also giving more and more power to our partners
+and consumers. As per our schedule, we have developed considerable no of cool feature 
+which our customers really wanted and also added some features that we thought would
+be best suited to our customers.</p>
+
+<p>We have also executed a hackathon to ensure getting things done quicker. 
+We did extensive hackathon where the entire team sat together to develop a number of 
+new connectors which we will define shortly.</p>
+
+<h2 id="whats-new-in-agent-appseconnect-sync-tool">Whats new in Agent (APPSeCONNECT Sync tool)</h2>
+<ul>
+  <li>We have released our new plugin to support any database to store agent data. We use OLE DB object library to implement the plugin, 
+so most of the databases which have OLE drivers available can be used.</li>
+  <li>We have improved your experiences with Auto sync services, by enabling decoupled architecture to call services from agent and cloud.</li>
+  <li>We now provide you access to our help documents directly from agent.</li>
+</ul>
+
+<h2 id="whats-new-in-cloud">Whats new in Cloud</h2>
+<ul>
+  <li>We have improved user experiences by providing tweaks to the new themes and adding more functionalities to handle agent from cloud.</li>
+  <li>With improved reporting on our cloud portal, it is hardly as a user you might go to agent to check sync status.</li>
+</ul>
+
+<h2 id="whats-new-for-administration">Whats new for Administration</h2>
+<ul>
+  <li>We have improved APPSeCONNECT admin with new theme. For ISVs we have improved the look and feel of admin, developed new interfaces and revamped the entire web application.</li>
+  <li>We have now opened Admin site for Partners and Resellers.</li>
+  <li>We improved the notification engine that our agent sends to the customers, giving more settings and options which you as an implementer can use.</li>
+  <li>We have fixed the Breadcrumb on each page for easier navigation.</li>
+  <li>We have added a feature to enable our users to add bookmark on a page, such that you working on the website can use these feature to log the recently used pages.</li>
+</ul>
+
+<h2 id="integrations">Integrations</h2>
+<p>On integration side, we have worked a lot on improving the existing connectors, yet releasing
+the new connectors from scratch. Let us look quickly what are the integration points 
+we have created so far during this release. We have added all the integration points for our SAP B1 and Magento 2.0 connector. Let us take a quick pick on what we did on that side:</p>
+
+<ul>
+  <li>Simple product sync.</li>
+  <li>Configurable product sync.</li>
+  <li>Grouped product sync.</li>
+  <li>Virtual product sync</li>
+  <li>Downloadable product sync</li>
+  <li>Bundled product sync</li>
+  <li>Invoice sync</li>
+  <li>Payment sync.</li>
+  <li>Delivery sync.</li>
+  <li>Sales order sync.</li>
+</ul>
+
+<p>We have revamped our new extension to support our B2B offering with Magento 2.0. Some of our new offering with B2B are:</p>
+
+<ul>
+  <li>Customer specific product tier price.</li>
+  <li>Customer specific product special price.</li>
+  <li>Customer specific discount.</li>
+  <li>Order approval</li>
+  <li>Sales representative login as contact person and place orders.</li>
+  <li>Discount priority management</li>
+  <li>Customer specific pricelist management</li>
+  <li>Contact person management</li>
+</ul>
+
+<p>We have added Service Layer integration of SAP B1 with Magento. Some of the integration points are:</p>
+
+<ul>
+  <li>All types of Configurational data integration</li>
+  <li>Customer Sync</li>
+  <li>Simple product sync</li>
+  <li>Configurable product sync.</li>
+  <li>Order sync</li>
+  <li>Shipment sync</li>
+  <li>Invoice sync</li>
+  <li>Price sync</li>
+  <li>Stock sync</li>
+</ul>
+
+<p>We have also added new integrations in the release. We have executed a 35 hours hackathon to build brand new connectors. Here is what we have released so far.</p>
+
+<ul>
+  <li>Dynamics NAV and Magento 2.0 integration</li>
+  <li>SAP B1 with Shipstation integration</li>
+  <li>SAP B1 with Shipworks integration</li>
+  <li>Dynamics NAV and Woocommerce integration</li>
+  <li>SAP B1 and 3D Cart integration</li>
+  <li>Lightspeed and shopify integration</li>
+</ul>
+
+<p>In addition to that, we have also created</p>
+
+<ul>
+  <li>APPSeCONNECT Extension for Zoho.</li>
+</ul>
+
+<p>In addition to these, we have also improved our learning portal, documentations and 
+videos. We are also continuously improving our platform to give not only to our 
+customer but our independent software vendors a platform where they can easily 
+integrate and customize.</p>
+
+<p>As always for any support, please <a href="support@appseconnect.com">mail us</a></p>
+
+:ET

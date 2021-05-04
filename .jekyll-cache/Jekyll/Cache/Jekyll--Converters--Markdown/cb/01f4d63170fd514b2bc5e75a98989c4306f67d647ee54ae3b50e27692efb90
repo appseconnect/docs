@@ -1,0 +1,5 @@
+I"×<p>Created or Edited processflows needs to be deployed to the environment in order to execute the integration process. 
+Users, now need not have to update configuration every time for deploying every change made in the processflows. 
+<code class="language-plaintext highlighter-rouge">DEPLOY</code> button enables the user to automatically deploy the changes in the environment as well as assign the 
+credential for the applications that is used in the processflows.</p>
+:ET
