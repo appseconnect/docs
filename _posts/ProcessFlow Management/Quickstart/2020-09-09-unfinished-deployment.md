@@ -63,8 +63,9 @@ You can view the following deployment status
  within the time range of pending time out, then the agent will automatically retry the pending 
  steps of deployment and will complete the deployment process.  
  * In the pending state of deployment - Resync, Un-deploy context menu will be unavailable.
- * Pending state will show -  Deployment Started: (time), Pending timeout: 10 mint, 
+ * Pending state will show -  Deployment Started: (time), Pending timeout: 5 mint, 
    Wait till :(start time+Pending timeout).
+   ![pendingstatus](\staticfiles\processflow\media\pendingstatus.png)  
 *  processflows are editable in `Pending` state of deployment.     
 ![unfinished_deployment4](\staticfiles\processflow\media\unfinished_deployment4.png)        
 (c) Unsuccessful - If the Deployment is incomplete and have not reached the finishing step. 

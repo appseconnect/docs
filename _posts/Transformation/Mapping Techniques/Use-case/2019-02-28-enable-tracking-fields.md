@@ -43,8 +43,10 @@ Organisation Creation & Connection Creation.
 3. Click on the option `ADD`. The tracking configuration window opens up.
 ![trackingdata1-new](/staticfiles/Transformation/media/trackingdata1-new.png)
 
-**Note: The user can even Delete all the configured tracked data by clicking on the DELETE ALL button.**
-
+**Note: The user can even Delete all the configured tracked data by clicking 
+on the DELETE ALL button. If the user clicks on `Delete all` button and there is no tracking
+data available in the mapping, user will get a confirmation toaster message displayig `Failed 
+to Delete Tracking Data`**  
 4.	The three sections of the Tracking Data feature will be visible.
 * **Source Tree**: Contains all the elements (Child Elements) for which the tracking is to be done.
 * **Tracking Details**: This is the area where the Tracking is initiated. Tracking Details consists of the 

@@ -21,6 +21,7 @@ menus:
     - RED indicator - Agent is either detached or inactive.
     - BLUE indicator - Agent is up and Running.
 * The will be no colour indicators for an Hosted Agent.
+* You can group your On-Premise environments by creating Folders. The Folder names can have maximum of 100 letter counts.
 * The view for the **[Last Deployment Log](/deployment/Environment-Management/#last-deployment-log)** is same for both Hosted and On-Premise environment.
 
 ## On-Premise
@@ -71,7 +72,7 @@ This section of the document will allow you to view and understand the details o
 1) Click on the **Process Flows** tab in the Environment Details Page. You can view all the Process Flow those are deployed on that environment. The following are the details that will displayed for deployed Process Flows.
 
 - **Process Flow Name:** The name of the process flow, deployed, will be displayed.
-- **Deployed At:** The last deployment of the process flow will be displayed.
+- **Deployed At:** The last deployment of the process flow will be displayed. The time displayed here will be as per the UTC timezone settings in your organization.
 - **No. of tries:** You will be able to view the count of the number of retries performed.
 - **Status** The status of the attempt of the deployment process (Successful or Unsuccessful) will be displayed.
 - **Actions** The following actions can be formed for each process flows: 
@@ -81,6 +82,12 @@ This section of the document will allow you to view and understand the details o
     - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
 
 ![opdetails2](\staticfiles\deployment\media\EasyEnv\opdetails2.PNG)
+
+_**Note:** If your ProcessFlow triggered is of **EVENT** Type, the ACTIONS column will have the Option of **ProcessFlow URL** that will display you the Triggered URL of your Organisation._
+
+![opdetails2.1](\staticfiles\deployment\media\EasyEnv\opdetails2.1.PNG)
+
+
 
 
 #### Plugins Tab
@@ -110,7 +117,6 @@ This section of the document will allow you to view and understand the details o
 - **Any changes done and saved in the environment settings page of the portal, will get updated in the Settings section of the corresponding OP Agent and vice-versa.**
 
 - **The environment details page appears only when the autosync checkbox is enabled and activated in the settings of OP Agent as keeping autosync activated keeps the Agent and the Portal connected.**
-
 
 ### Grouping of On-Premise Environments
 This section of the document will allow you to Group multiple OP environments in folders. Grouping is initiated to manage and the arrangement of multiple similar elements for distinguishing its exact purpose. In APPSeCONNECT, for On-Premise environments
@@ -149,6 +155,7 @@ Following the above process you can easily create and group your On Premise Envi
 
 - You can create to max upto any level when creating folders exculding the main **On-Premise**: On Premise > Folder 1 > Sub folder 1 > Sub folder 2 > Sub folder 3 .......
 - You cannot create Folders, Sub-Folders with same name in your organisation. Each name provided for any folders or sub-folders should be unique.
+- The folder name can have upto 100 letter counts.
 
 
 ## Hosted 
@@ -192,8 +199,8 @@ Cloud supported. To enable your organisation with cloud support, [Click here.](/
 
 5) Clicking on the created environment, you will be able to view the details page consisting of the following tabs:
 
-- Settings -> You can modify and update the environment setting from this tab
 - Process Flow -> You will be able to view all the deployed process flows, related snapshots, retry, undeploy etc.
+- Settings -> You can modify and update the environment setting from this tab.
 
 For more details on the Environment Details page, [Click Here](/deployment/Easy-Environment-Management/#hosted-environment-details-page)
 
@@ -211,17 +218,9 @@ You will be able to view this page only when you have your hosted environment cr
 
 ![hosteddetails1](\staticfiles\deployment\media\EasyEnv\hosteddetails1.PNG)
 
-1) Clicking on the Hosted environment, will provide you with TWO tabs: **Settings** and **Process Flows**.
+1) Clicking on the Hosted environment, will provide you with TWO tabs: **Process Flows** and **Settings**.
 
-2) You will be able to view the following section when clicked on the [**Settings**](/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise) tab. You can view the following settings panel in the page.
-
-- **[Retry Settings](/deployment/Environment-Management/#retry-setting):** - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
-- **[Log Settings](/deployment/Environment-Management/#log-settings):** You can control the way you want to view and store the logs for every execution on you hosted environment.
-- **[Pending Timeout Settings](/deployment/Environment-Management/#pending-timeout-settings)** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
-   
-![hosteddetails2](\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG)
-
-3) Clicking on the **Process Flow Tab** You can view all the Process Flow those are deployed on that environment. 
+2) Clicking on the **Process Flow Tab** You can view all the Process Flow those are deployed on that environment. 
 The following are the details that will displayed for deployed Process Flows. 
 - **Process Flow Name:** The name of the process flow, deployed, will be displayed.
 - **Deployed At:** The last deployment of the process flow will be displayed.
@@ -233,8 +232,19 @@ The following are the details that will displayed for deployed Process Flows.
     - **[View Snapshot](/processflow/snapshot-processflow/)**  - This will enable you view the snapshot for a process flow that is executed.
     - **[Retry](/processflow/retry-processflow/)** - All failed data will be captured in Retry Bucket. You can anytime resync the failed data in **Auto or Manual** mode from this Retry Window.
 
+![hosteddetails3](\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG)  
 
-![hosteddetails3](\staticfiles\deployment\media\EasyEnv\hosteddetails3.PNG)
+_**Note:** If your ProcessFlow triggered is of **EVENT** Type, the ACTIONS column will have the Option of **ProcessFlow URL** that will display you the Triggered URL of your Organisation._
+
+![hosteddetails3.1](\staticfiles\deployment\media\EasyEnv\hosteddetails3.1.PNG)
+
+3) You will be able to view the following section when clicked on the [**Settings**](/deployment/Environment-Management/#settings-tab-on-details-page-hosted--on-premise) tab. You can view the following settings panel in the page.
+
+- **[Retry Settings](/deployment/Environment-Management/#retry-setting):** - This will enable you to configure the retry/resync of the integration process if executed on this environment. The following configuration can be made in the retry section.
+- **[Log Settings](/deployment/Environment-Management/#log-settings):** You can control the way you want to view and store the logs for every execution on you hosted environment.
+- **[Pending Timeout Settings](/deployment/Environment-Management/#pending-timeout-settings)** - Users will be provided with the **Frequency of Pending Timeout** field in which users can provide with a timeout time period for a pending deployment process to suspend.
+   
+![hosteddetails2](\staticfiles\deployment\media\EasyEnv\hosteddetails2.PNG)  
 
 Following the above process, you can easily view and update the details of the Hosted agent.
 
@@ -378,6 +388,8 @@ This feature will store and will enable the user to view the stored deployment l
 **Note: The view for the Last Deployment Log is same for both Hosted and On-Premise environment.**
 
 ![lastdeploylogs](\staticfiles\deployment\media\EasyEnv\lastdeploylogs1.PNG)
+
+**NOTE:The time displayed in last deployed log is similar to the UTC time set for the organization [timezone]()**
 
 ## Environment View for Old Agents
 

@@ -360,7 +360,7 @@ Now we can set the log table according to the following details:
 |ID|Name|Log Insertion|Log Modification|Log Deletion|
 |---|---|---|---|------|
 |18|Customer|All Fields|All Fields|All Fields|
-|27|	Item|All Fields|All Fields|All Fields|
+|27|Item|All Fields|All Fields|All Fields|
 |36|Sales Header|All Fields|Some Fields|All Fields|
 |37|Sales Line|All Fields|All Fields|All Fields|
 |110|Sales Shipment Header|All Fields|All Fields|Some Fields|
@@ -380,9 +380,7 @@ Now we can set the log table according to the following details:
 |33064470|Web Product Child Details|All Fields|All Fields|All Fields|
 |33064471|AEC Customer Details|All Fields|All Fields|All Fields|
 |33064472|AEC Ship-to Address|All Fields|All Fields|All Fields|
-|33064475|AEC Application Item|All Fields|All Fields|All Fields|
 |33064476|AEC Order Header Details|All Fields|All Fields|All Fields|
-|33064479|AEC Application Contact|All Fields|All Fields|All Fields|
 |33064480|AEC Contact Address|All Fields|All Fields|All Fields|
 |33064482|AEC Shipment Line|All Fields|All Fields|All Fields|
 
@@ -404,13 +402,13 @@ Now we can set the log table according to the following details:
 
 For Modify and Rename we need to define two local variables (RecRef and xRecRef) while for Insert and Delete we need only one (RecRef)
 
-  a. Goto View > C/AL Locals
+a. Goto View > C/AL Locals
 
-    Under Parameters:
+Under Parameters:
 
-  b.  Name: RecRef     Datatype: RecordRef
+b.  Name: RecRef     Datatype: RecordRef
 
-      Name: xRecRef   Datatype: RecordRef
+Name: xRecRef   Datatype: RecordRef
 
 4.  Under the OnDatabaseInsert, OnDatabaseModify, OnDatabaseDelete and OnDatabaseRename define methods as follows: 
 
