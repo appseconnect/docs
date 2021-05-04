@@ -1,7 +1,0 @@
-I"ª<p>Execution of a processflow is vital process for transforming data from source to 
-destination application. In real-time, execution of processflow may fetch errors 
-with respect to data configurations. 
-processflow Retry is a feature that can Resync the data after rectifying the error 
-such that no data loss occurs with respect to the sync process. processflow Retry 
-can be configured both Manually and in Auto-Mode.</p>
-:ET
