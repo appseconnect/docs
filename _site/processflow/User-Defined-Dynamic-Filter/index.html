@@ -19,12 +19,12 @@
 
 
 
-<title>User Defined Custom Filter - APPSeCONNECT Product Docs</title>
+<title>User Defined Runtime  Filter - APPSeCONNECT Product Docs</title>
 
 
 
 
-<meta name="description" content="As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom filters on processflows that will allow you to fetch and post data to and fro applicationsthat are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.">
+<meta name="description" content="As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement Runtime filters on processflows that will allow you to fetch and post data to and fro applicationsthat are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.">
 
 
 
@@ -33,7 +33,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="APPSeCONNECT Product Docs">
-<meta property="og:title" content="User Defined Custom Filter">
+<meta property="og:title" content="User Defined Runtime  Filter">
 
 
   <link rel="canonical" href="//docs.appseconnect.com/processflow/User-Defined-Dynamic-Filter/">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom filters on processflows that will allow you to fetch and post data to and fro applicationsthat are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.">
+  <meta property="og:description" content="As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement Runtime filters on processflows that will allow you to fetch and post data to and fro applicationsthat are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.">
 
 
 
@@ -214,7 +214,7 @@
   
     
     
-      <li class="current">User Defined Custom Filter</li>
+      <li class="current">User Defined Runtime  Filter</li>
     
   
 </ol>-->
@@ -1541,7 +1541,7 @@
     
     
     <li class="menu-item-" data-url="/processflow/User-Defined-Dynamic-Filter/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/processflow/User-Defined-Dynamic-Filter/" onclick="selectTab('/processflow/User-Defined-Dynamic-Filter/', event);" title="Go to User Defined Custom Filter">User Defined Custom Filter</a>
+        <a href="/processflow/User-Defined-Dynamic-Filter/" onclick="selectTab('/processflow/User-Defined-Dynamic-Filter/', event);" title="Go to User Defined Runtime Filter">User Defined Runtime Filter</a>
         
     </li>
     
@@ -2649,8 +2649,8 @@
 
 
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="User Defined Custom Filter">
-        <meta itemprop="description" content="As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom filters on processflows that will allow you to fetch and post data to and fro applicationsthat are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.">
+        <meta itemprop="headline" content="User Defined Runtime  Filter">
+        <meta itemprop="description" content="As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement Runtime filters on processflows that will allow you to fetch and post data to and fro applicationsthat are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.">
         <meta itemprop="datePublished" content="March 11, 2021">
         
 
@@ -2678,7 +2678,7 @@
                 
                 
                 
-                <li class="current">User Defined Custom Filter</li>
+                <li class="current">User Defined Runtime  Filter</li>
                 
                 
             </ol>
@@ -2688,7 +2688,7 @@
         <div class="page__inner-wrap">
             
             <header>
-                <h1 class="page__title" itemprop="headline">User Defined Custom Filter
+                <h1 class="page__title" itemprop="headline">User Defined Runtime  Filter
 </h1>
                 
                 
@@ -2733,10 +2733,10 @@
                         <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On this page</h4></header>
                         <ul class="toc__menu">
   <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#implementing-dynamic-custom-filter">Implementing Dynamic Custom Filter</a></li>
-  <li><a href="#creating-dynamic-custom-filter">Creating Dynamic Custom Filter</a>
+  <li><a href="#implementing-dynamic-runtime-filter">Implementing Dynamic Runtime Filter</a></li>
+  <li><a href="#creating-dynamic-runtime-filter">Creating Dynamic Runtime Filter</a>
     <ul>
-      <li><a href="#create-from--execute-with-custom-action-filter">Create From : Execute with Custom Action Filter</a></li>
+      <li><a href="#create-from--execute-with-runtime-filter">Create From : Execute with Runtime Filter</a></li>
       <li><a href="#create-from--node-configuration---configure-filter">Create From : Node Configuration - Configure Filter</a></li>
     </ul>
   </li>
@@ -2745,10 +2745,10 @@
                     </nav>
                 </aside>
                 
-                <p>As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom filters on processflows that will allow you to fetch and post data to and fro applications
+                <p>As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement Runtime filters on processflows that will allow you to fetch and post data to and fro applications
 that are required only for specific scenarios. With this feature, you can not only implement the generic filter but also a custom filter.</p>
 
-<p>On execution, you get the option to execute either with the generic filter or with the custom filter depending on your choice. Below are the process that would help you implement Dynamic Custom Action Filtern on your organisation.</p>
+<p>On execution, you get the option to execute either with the generic filter or with the custom filter depending on your choice. Below are the process that would help you implement Dynamic Runtime Filter on your organisation.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -2758,7 +2758,7 @@ that are required only for specific scenarios. With this feature, you can not on
   <li>Your designed processflow should be deployed successfully.</li>
 </ul>
 
-<h2 id="implementing-dynamic-custom-filter">Implementing Dynamic Custom Filter</h2>
+<h2 id="implementing-dynamic-runtime-filter">Implementing Dynamic Runtime Filter</h2>
 
 <p>1) Navigate to the <a href="/processflow/designer-processflow/">Designer</a> of ProcessFlow.</p>
 
@@ -2768,42 +2768,40 @@ that are required only for specific scenarios. With this feature, you can not on
 
 <ul>
   <li>Execute - This option allows you to execute with the filter (generic filter) provided in the App Node.</li>
-  <li>Execute with Custom Action filter - This option will allow you to perform execution with a custom filter apart from the generic filter.</li>
+  <li>Execute with Runtime filter - This option will allow you to perform execution with a Runtime filter apart from the generic filter.</li>
 </ul>
 
-<p>Select the option <strong>Execute with Custom Action Filter</strong>.</p>
+<p>Select the option <strong>Execute with Runtime Filter</strong>.</p>
 
 <p><img src="\staticfiles\processflow\media\customfilter2.PNG" alt="customfilter2" /></p>
 
-<p>4) The Custom Action filter Window opens that will allow you to provide the filter as per your need.</p>
+<p>4) The Runtime filter Window opens that will allow you to provide the filter as per your need.</p>
 
 <p><img src="\staticfiles\processflow\media\customfilter3.PNG" alt="customfilter3" /></p>
 
 <p><strong>Note:</strong></p>
 
 <ul>
-  <li>By Default, the custom filter will display the <a href="/processflow/manage-actions-actionfilters-errorfilters/">Action Filter</a> used normally in the GET node. However, once edited and saved, you will not have to work on the same from the 2nd instances.</li>
-  <li>Changes made in the normal Action Filter will not impact that in the custom filter.</li>
+  <li>By Default, the Runtime filter will display the <a href="/processflow/manage-actions-actionfilters-errorfilters/">Action Filter</a> used normally in the GET node. However, once edited and saved, you will not have to work on the same from the 2nd instances.</li>
+  <li>Changes made in the normal Action Filter will not impact that in the Runtime filter.</li>
 </ul>
 
-<h2 id="creating-dynamic-custom-filter">Creating Dynamic Custom Filter</h2>
+<h2 id="creating-dynamic-runtime-filter">Creating Dynamic Runtime Filter</h2>
 
-<p>This part of the document will allow you to create Custom Filter on GET node for specific scenario execution. You can create these filters from TWO different areas.</p>
+<p>This part of the document will allow you to create Runtime Filter on GET node for specific scenario execution. You can create these filters from TWO different areas.</p>
 
 <ul>
-  <li>Create from <strong>Execute with Custom Action filter</strong></li>
+  <li>Create from <strong>Execute with Runtime filter</strong></li>
   <li>Create from <strong>Node Configuration - Configure Filter</strong></li>
 </ul>
 
-<h3 id="create-from--execute-with-custom-action-filter">Create From : Execute with Custom Action Filter</h3>
+<h3 id="create-from--execute-with-runtime-filter">Create From : Execute with Runtime Filter</h3>
 
-<p>1) Landing on the <strong>Custom Action filter Window</strong>, you will be listed with all the GET nodes of that ProcessFlow.</p>
+<p>1) Landing on the <strong>Runtime filter Window</strong>, you will be listed with all the GET nodes of that ProcessFlow.</p>
 
 <p><img src="\staticfiles\processflow\media\customfilter4.PNG" alt="customfilter4" /></p>
 
-<p>2) To ADD the filter click on the Ellipses -&gt; Context Menu -&gt; Create. The screen for creating custom action filter will be displayed.</p>
-
-<p><img src="\staticfiles\processflow\media\customfilter6.PNG" alt="customfilter6" /></p>
+<p>2) To ADD the filter click on the Ellipses -&gt; Context Menu -&gt; Create.</p>
 
 <p>3) You can also add Conditions and Conjuctions over the filters by clicking on the Ellipses over the HEADER and the BODY section.</p>
 
@@ -2811,15 +2809,15 @@ that are required only for specific scenarios. With this feature, you can not on
 
 <p>4) You can either click on the <strong>SAVE</strong> button or directly execute the process by clicking on the <strong>EXECUTE</strong>  button. You can track the Execution details on the Tracker Window.</p>
 
-<p>5) You will be generated with <a href="/processflow/snapshot-processflow/">Snapshots</a> for every execution with the Custom Filter. For every executions with Custom Filter, Snapshots be spcially indicated with a <strong><code class="language-plaintext highlighter-rouge">TAG</code></strong> icon.</p>
+<p>5) You will be generated with <a href="/processflow/snapshot-processflow/">Snapshots</a> for every execution with the Runtime Filter. For every executions with Runtime Filter, Snapshots be spcially indicated with a <strong><code class="language-plaintext highlighter-rouge">TAG</code></strong> icon.</p>
 
 <p><img src="\staticfiles\processflow\media\customfiltersnapshottag.png" alt="Customfiltersnapshottag" /></p>
 
 <p><strong>Note:</strong></p>
 
 <ul>
-  <li>You will not get the option of <code class="language-plaintext highlighter-rouge">Execute with Custom Filter</code>, if your processflow is not deployed.</li>
-  <li>Clicking on the Execute button in Custom Filter window, will not SAVE the filter.</li>
+  <li>You will not get the option of <code class="language-plaintext highlighter-rouge">Execute with Runtime Filter</code>, if your processflow is not deployed.</li>
+  <li>Clicking on the Execute button in Runtime Filter window, will not SAVE the filter.</li>
 </ul>
 
 <h3 id="create-from--node-configuration---configure-filter">Create From : Node Configuration - Configure Filter</h3>
@@ -2828,26 +2826,26 @@ that are required only for specific scenarios. With this feature, you can not on
 
 <p><img src="\staticfiles\processflow\media\customfilter10.PNG" alt="customfilter10" /></p>
 
-<p>2) Expand the nodes to view the <strong>Custom Filter</strong> option. Click on the Ellipses to view the <strong>CREATE</strong> option.</p>
+<p>2) Expand the nodes to view the <strong>Runtime Filter</strong> option. Click on the Ellipses to view the <strong>CREATE</strong> option.</p>
 
 <p><img src="\staticfiles\processflow\media\customfilter11.PNG" alt="customfilter11" /></p>
 
 <p>3) Clicking on the CREATE button, you get the window for providing the filter. Input the filter as required and click on the SAVE button.</p>
 
-<p>4) The SAVED filters will also be available in the <strong>Execute with Custom Action filter</strong>. The process to add and create the filter is save as that performed in <a href="/processflow/manage-actions-actionfilters-errorfilters/#working-with-custom-filter"><strong>Execute with Custom Action filter</strong></a>.</p>
+<p>4) The SAVED filters will also be available in the <strong>Execute with Runtime filter</strong>. The process to add and create the filter is save as that performed in <a href="/processflow/manage-actions-actionfilters-errorfilters/#working-with-custom-filter"><strong>Execute with Custom Action filter</strong></a>.</p>
 
 <p>For more details on this section, <a href="/processflow/manage-actions-actionfilters-errorfilters/">ClicK Here</a></p>
 
 <p><strong>Note:</strong></p>
 
 <ul>
-  <li>By Default, the custom filter will display the <a href="/processflow/manage-actions-actionfilters-errorfilters/">Action Filter</a> used normally in the GET node. However, once edited and saved, you will not have to work on the same from the 2nd instances.</li>
-  <li>Changes made in the normal Action Filter will not impact that in the custom filter.</li>
+  <li>By Default, the Runtime filter will display the <a href="/processflow/manage-actions-actionfilters-errorfilters/">Action Filter</a> used normally in the GET node. However, once edited and saved, you will not have to work on the same from the 2nd instances.</li>
+  <li>Changes made in the normal Action Filter will not impact that in the Runtime filter.</li>
 </ul>
 
 <h2 id="deleting-dynamic-action-filter">Deleting Dynamic Action Filter.</h2>
 
-<p>1) To Delete a Custom Action Filter, Navigate to the <strong>Custom Action filter Window</strong> by clicking on the <strong>Execute with Custom Action filter</strong>. The window opens.</p>
+<p>1) To Delete a Runtime Filter, Navigate to the <strong>Runtime filter Window</strong> by clicking on the <strong>Execute with Runtime filter</strong>. The window opens.</p>
 
 <p>2) Click on the ellipses of the GET node, whose filter you would like to delete.</p>
 
@@ -2862,10 +2860,10 @@ that are required only for specific scenarios. With this feature, you can not on
 <p><strong>Note:</strong></p>
 
 <ul>
-  <li>You may delete filters anytime from both the interfaces of Custom Filter.</li>
-  <li>For every operation you perform with Custom Filter - Create, Edit, Delete &amp; Execute, you will be updated with its operation on your <a href="/accessing%20portal/accessing-portal/#feeds">FEEDS</a> section.</li>
-  <li>You need to keep your Processflow deployed, to Execute with Custom filter.</li>
-  <li>While the Custom Filter is on its Execution process, the Autosync remains PAUSED until it is completed. Any operation scheduled during that time will be paused and will be resumes immediately, once its over.</li>
+  <li>You may delete filters anytime from both the interfaces of Runtime Filter.</li>
+  <li>For every operation you perform with Runtime Filter - Create, Edit, Delete &amp; Execute, you will be updated with its operation on your <a href="/accessing%20portal/accessing-portal/#feeds">FEEDS</a> section.</li>
+  <li>You need to keep your Processflow deployed, to Execute with Runtime filter.</li>
+  <li>While the Runtime Filter is on its Execution process, the Autosync remains PAUSED until it is completed. Any operation scheduled during that time will be paused and will be resumes immediately, once its over.</li>
 </ul>
 
                 
@@ -2923,7 +2921,7 @@ that are required only for specific scenarios. With this feature, you can not on
             <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=User+Defined+Custom+Filter%20https://docs.appseconnect.com%2Fprocessflow%2FUser-Defined-Dynamic-Filter%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=User+Defined+Runtime++Filter%20https://docs.appseconnect.com%2Fprocessflow%2FUser-Defined-Dynamic-Filter%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://docs.appseconnect.com%2Fprocessflow%2FUser-Defined-Dynamic-Filter%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

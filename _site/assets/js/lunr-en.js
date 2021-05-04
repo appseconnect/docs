@@ -2924,8 +2924,8 @@ var idx = lunr(function () {
     
   
     idx.add({
-      title: "User Defined Custom Filter",
-      excerpt: "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom...",
+      title: "User Defined Runtime  Filter",
+      excerpt: "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement Runtime...",
       categories: ["Processflow"],
       tags: ["developers"],
       id: 323
@@ -6513,9 +6513,9 @@ var store = [
     
       
       {
-        "title": "User Defined Custom Filter",
+        "title": "User Defined Runtime  Filter",
         "url": "/processflow/User-Defined-Dynamic-Filter/",
-        "excerpt": "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement custom...",
+        "excerpt": "As ActionFilters are the commands for the applications to perform specific integration operations. Using ProcessFlows, you can now implement Runtime...",
         "teaser":
           
             "/assets/images/APPSeCONNECT-documentation.png"
