@@ -1,12 +1,12 @@
 ---
 title: "Handling various events of Adapter"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
     overviewsdkadapter: 
-        icon: fa fa-gg
         weight: 9
+        icon: fa fa-gg
         title: "Handling events"
         identifier: handlingeventssdk    
 ---

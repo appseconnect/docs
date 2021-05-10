@@ -3,6 +3,9 @@ title: "Inventory Update NAV-Mage2 Multiconnection"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     navmagentointegration:
         title: "Inventory Update NAV-Mage2 Multiconnection"

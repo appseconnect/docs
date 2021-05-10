@@ -2,8 +2,7 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-$(document).ready(function () {
-    debugger;
+$(document).ready(function () { 
   // Sticky footer
   var bumpIt = function() {
       $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
@@ -32,8 +31,7 @@ $(document).ready(function () {
   });
 
   // Search toggle
-    $(".search__toggle").on("click", function () {
-        debugger;
+    $(".search__toggle").on("click", function () { 
     $(".search-content").toggleClass("is--visible");
       $(".initial-content").toggleClass("is--initial-content");
     // set focus on input

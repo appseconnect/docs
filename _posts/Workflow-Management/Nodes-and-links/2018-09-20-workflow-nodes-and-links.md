@@ -3,6 +3,9 @@ title: "Nodes and Link overview"
 toc: true
 tag: developers
 category: "Workflow"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     workflow:
         icon: fa fa-link

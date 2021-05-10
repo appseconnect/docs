@@ -1,12 +1,12 @@
 ---
 title: "Implementing Action filter Parser"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
-    overviewsdkadapter: 
-        icon: fa fa-gg
+    overviewsdkadapter:
         weight: 5
+        icon: fa fa-gg
         title: "Action-filter Parser"
         identifier: actionfilterparser    
 ---

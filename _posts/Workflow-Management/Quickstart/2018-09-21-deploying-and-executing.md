@@ -2,7 +2,10 @@
 title: "Scheduling, Deploying & Executing workflows"
 toc: true
 tag: developers
-category: "Workflow" 
+category: "Workflow"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     workflow:
         icon: fa fa-link

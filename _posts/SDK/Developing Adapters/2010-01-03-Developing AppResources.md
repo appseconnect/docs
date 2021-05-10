@@ -1,14 +1,14 @@
 ---
 title: "Developing APPResource Methods"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
-    overviewsdkadapter: 
-        icon: fa fa-gg
+    overviewsdkadapter:
         weight: 3
+        icon: fa fa-gg
         title: "Develop appresources"
-        identifier: developappresource    
+        identifier: developappresource
 ---
 Application resources are special methods that can be added on the adapter code using the interface [`IAppResources`](http://isdn.appseconnect.com/html/10297E4C.htm) which can 
 be referenced in mapping or else in filters. An AppResource interface receives the `ApplicationContext` during its 

@@ -209,8 +209,7 @@ function selectTab(url, e) {
         $(window).scroll(onScrollCallback);
     }, function (request) {
         $('.page').html(request.responseText);
-    });
-    debugger;
+    }); 
     e.stopImmediatePropagation();
     e.preventDefault();
     return false;

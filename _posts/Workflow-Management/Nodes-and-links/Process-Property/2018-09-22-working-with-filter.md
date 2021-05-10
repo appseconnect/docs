@@ -5,6 +5,9 @@ tag:
         - developers
         - nodes
 category: "Workflow"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     nodesprocess:
         icon: fa fa-link

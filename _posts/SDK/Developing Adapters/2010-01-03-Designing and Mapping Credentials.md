@@ -1,12 +1,12 @@
 ---
 title: "How to design an interface for Credentials"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
     overviewsdkadapter: 
-        icon: fa fa-gg
         weight: 8
+        icon: fa fa-gg
         title: "Designing Credential UI"
         identifier: designadapter    
 ---

@@ -3,6 +3,9 @@ title: "Resuming Workflows"
 toc: true
 tag: developers
 category: "Resuming Workflows"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     quickstartworkflow:
         icon: fa fa-link

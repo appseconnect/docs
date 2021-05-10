@@ -3,6 +3,9 @@ title: "Add Sales Order Magento2 Multiconnection-NAV"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     navmagentointegration:
         title: "Add Sales Order Magento2 Multiconnection-NAV"

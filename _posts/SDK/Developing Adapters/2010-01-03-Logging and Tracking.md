@@ -1,12 +1,12 @@
 ---
 title: "Logging and Tracing"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
-    overviewsdkadapter: 
-        icon: fa fa-gg
+    overviewsdkadapter:
         weight: 6
+        icon: fa fa-gg
         title: "Logging and tracing"
         identifier: loggingsdk    
 ---

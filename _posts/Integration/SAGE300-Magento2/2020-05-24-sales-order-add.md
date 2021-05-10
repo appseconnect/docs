@@ -3,6 +3,9 @@ title: "Sales Order Add from Magento 2 to SAGE 300"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     sagemagentointegration:
         title: "Sales Order Add"
