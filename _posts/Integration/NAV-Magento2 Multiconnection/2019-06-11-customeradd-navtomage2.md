@@ -3,6 +3,9 @@ title: "Customer Add NAV-Magento2 Multiconnection"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     navmagentointegration:
         title: "Customer Add NAV-Magento2 Multiconnection"

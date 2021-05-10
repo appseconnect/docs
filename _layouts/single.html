@@ -58,6 +58,15 @@ layout: inner
             </ol>
         </div>
 
+        {% if page.deprecated %}
+        <div class="alert alert-secondary" role="alert">
+            {% if page.deprecated.url %}
+            You are looking at an old and deprecated content. Please check <a href="{{ page.deprecated.url }}">{{page.deprecated.title}}</a> for latest updates.
+            {% else %}
+            {{page.deprecated | markdownify | remove: "<p>" | remove: "</p>" }}
+            {% endif %}
+        </div>
+        {% endif %}
 
         <div class="page__inner-wrap">
             {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -75,19 +84,20 @@ layout: inner
                 <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
                 {% endif %}
                 {% if site.github %}
-                    <span class="contributors-text">
-                        Contributors
-                    </span>
-                    <ul>
-                        {% for contributer in site.github.contributors %}
-                            <li>
-                                <a href="{{html_url}}" 
-                                   title="{{name}}">
-                                <img src="{{html_url}}.png?size=32" 
-                                     alt="{{name}}"></a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <span class="contributors-text">
+                    Contributors
+                </span>
+                <ul>
+                    {% for contributer in site.github.contributors %}
+                    <li>
+                        <a href="{{html_url}}"
+                           title="{{name}}">
+                            <img src="{{html_url}}.png?size=32"
+                                 alt="{{name}}">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
                 {% endif %}
             </header>
             {% endunless %}
@@ -119,7 +129,7 @@ layout: inner
             </footer>
 
             {% if page.share %}{% include social-share.html %}{% endif %}
-            
+
             <div id="disqus_thread"></div>
 
             {% include post_pagination.html %}
@@ -166,8 +176,8 @@ layout: inner
                             {% endif %}
                             {% endif %}
 
-                            {% endfor %} 
-                            {% if relatedposts <= 4 %} 
+                            {% endfor %}
+                            {% if relatedposts <= 4 %}
                             {% assign category = page.category %}
                             {% assign i = 0 %}
                             {% for post in site.posts %}
@@ -190,7 +200,7 @@ layout: inner
         </div>
         {% endif %}
         {% comment %}
-            <!-- only show related on a post page when `related: true` -->
+        <!-- only show related on a post page when `related: true` -->
         {% endcomment %}
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Implementing Action filter Parser"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
     overviewsdkadapter: 

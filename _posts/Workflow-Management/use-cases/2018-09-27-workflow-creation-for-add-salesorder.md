@@ -4,7 +4,10 @@ toc: true
 tag: 
     - developers
     - usecases
-category: "Workflow"           
+category: "Workflow"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     workflowusecases:
         icon: fa fa-link

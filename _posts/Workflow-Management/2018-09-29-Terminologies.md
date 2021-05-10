@@ -3,6 +3,9 @@ title: "Important Terminologies"
 toc: true
 tag: developers
 category: "Workflow"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     workflow:
         title: "Terminology" 

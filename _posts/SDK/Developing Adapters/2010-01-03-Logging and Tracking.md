@@ -1,7 +1,7 @@
 ---
 title: "Logging and Tracing"
 toc: true
-tag: developers,reseller
+tag: developers
 category: "SDK"
 menus:
     overviewsdkadapter: 

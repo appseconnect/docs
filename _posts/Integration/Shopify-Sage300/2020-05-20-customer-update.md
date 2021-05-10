@@ -3,6 +3,9 @@ title: "Customer Update from Shopify to SAGE 300"
 toc: true
 tag: developers
 category: "Integration/Sage-Shopify"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
    shopifysageintegration:
         title: "Customer Update"

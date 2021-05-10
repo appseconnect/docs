@@ -3,6 +3,9 @@ title: "I/C Product Add from SAGE300 to Magento2"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     sagemagentointegration:
         title:  "I/C Product Add"

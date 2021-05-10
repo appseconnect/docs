@@ -3,6 +3,9 @@ title: "Shipment Add from SAGE 300 to Shopify"
 toc: true
 tag: developers
 category: "Integration/Sage-Shopify"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     shopifysageintegration:
         title: "Shipment Add from SAGE 300 to Shopify"
