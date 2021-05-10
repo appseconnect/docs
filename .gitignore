@@ -21,6 +21,10 @@
 bld/
 [Bb]in/
 [Oo]bj/
+docs/
+_site/
+.jekyll-cache/
+.sass-cache/
 
 # Visual Studio 2015 cache/options directory
 .vs/
