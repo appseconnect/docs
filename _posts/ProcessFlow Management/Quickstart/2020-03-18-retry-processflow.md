@@ -52,6 +52,7 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 2.	Click on **ProcessFlows** Tab. You can view the list of all the deployed processflows. Following are the details that will display for each deployed processflows.
 * ProcessFlow Name  
 * Deployed At   
+* Snapshots
 * No. of Tries
 * Deployment Status
 * Actions
@@ -83,6 +84,12 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 
 7.	You can filter the data in the list using the contents of the Source ID by click on the filter icon.
 ![Processflow Retry8](../../../staticfiles/processflow/media/processflow-retry8.png) 
+
+8. You will get a link of Snapshots inside the Sync Info window such that when you click on the row, it will open a filtered view.
+![Processflow Retry9](../../../staticfiles/processflow/media/processflow-syncinfo-mark.png)
+
+9. Once you click on the link, you will be redirected to the snapshots corresponding to the execution of that particular data. 
+![Processflow Retry 10](../../../staticfiles/processflow/media/processflow-syncinfo-snapshot.png)
 
 **Note:**
 

@@ -188,6 +188,10 @@ function selectTab(url, e) {
         });
 
         $('.page').html($(data).find('.page').html());
+        var tempDom = $('<div></div>').append($.parseHTML(data));
+        document.title = tempDom.find('title').text();
+        $('meta[name="description"]').attr('content', tempDom.find('meta[name="description"]').attr('content'));
+        $('meta[name="keywords"]').attr('content', tempDom.find('meta[name="keywords"]').attr('content'));
         window.history.pushState({ url: url }, title, url);
         $("html, body").animate({ scrollTop: 0 }, "slow");
         //remove all jsTree clicked
