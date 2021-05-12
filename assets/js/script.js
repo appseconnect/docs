@@ -192,6 +192,7 @@ function selectTab(url, e) {
         document.title = tempDom.find('title').text();
         $('meta[name="description"]').attr('content', tempDom.find('meta[name="description"]').attr('content'));
         $('meta[name="keywords"]').attr('content', tempDom.find('meta[name="keywords"]').attr('content'));
+
         window.history.pushState({ url: url }, title, url);
         $("html, body").animate({ scrollTop: 0 }, "slow");
         //remove all jsTree clicked
@@ -208,6 +209,14 @@ function selectTab(url, e) {
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
+        });
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                this.page.identifier = url;
+                this.page.url = location.href;
+                this.page.title = document.title; 
+            }
         });
 
         $(window).scroll(onScrollCallback);
