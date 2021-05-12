@@ -35,11 +35,13 @@ var onScrollCallback = function () {
     var nav = $('.sidebar__right,.page');
     // Get container scroll position
     var fromTop = $(this).scrollTop();
+    //var fromButtom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
     if (fromTop > 136) {
         nav.addClass("f-nav");
     } else {
         nav.removeClass("f-nav");
     }
+
     // Get id of current scroll item
     var cur = scrollItems.map(function () {
         if ($(this).offset().top - 100 < fromTop)

@@ -319,7 +319,9 @@ body.layout--single .toc .nav__title i.fa {
 body.layout--single .sidebar__right.f-nav {
     top: 28px;
 }
-
+.sidebar_right {
+    position: absolute;
+}
 .sidebar__right .toc__menu li a.active {
     border-left: 4px solid #00aadc;
     background: #f7f7f7;
