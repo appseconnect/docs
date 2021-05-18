@@ -109,8 +109,9 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 
 Following the above process, you can successfully implement Auto-Retry and view the data in the Resync Bucket of the Auto-Retry window.
 
-**Protip**  For every Retry process (Both Auto/Manual), you will be generated with a [Snapshot](/processflow/snapshot-processflow/). 
-{: .notice--info}
+**Protip**  For every Retry process (Both Auto/Manual), you will be generated with a 
+[Snapshot](/processflow/snapshot-processflow/)
+{: .notice--info} 
 
 ## Snapshot view for Retried Data:
 

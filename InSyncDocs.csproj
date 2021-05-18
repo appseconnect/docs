@@ -1105,6 +1105,7 @@
     <Content Include="staticfiles\processflow\media\viewsharedpack5.PNG" />
     <Content Include="staticfiles\processflow\media\viewsharedpack6.PNG" />
     <Content Include="staticfiles\processflow\media\viewsharedpack7.PNG" />
+    <Content Include="staticfiles\processflow\media\runtime-filter-snapshot.png" />
     <Content Include="staticfiles\root\media\Add-Action.png" />
     <Content Include="staticfiles\root\media\Add-Schema.png" />
     <Content Include="staticfiles\root\media\Add-SearchProjects.png" />

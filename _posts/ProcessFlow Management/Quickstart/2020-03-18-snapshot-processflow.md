@@ -120,3 +120,15 @@ d.	Click on the Transaction File tab of the Post node. You will be able to view 
 
 Following the above steps, you can successfully view the snapshot of an executed processflow.
 
+
+## Types of Snapshot
+
+The Snapshots are marked based on the type of execution. The Type defines how the snapshot got executed during the process of integration. 
+There are three types of Snapshots present in APPSeCONNECT. 
+
+- Manual/ Scheduled Snapshot : In this case there will be no mark shown just beside the snapshot. All the above snaps showing a normal snapshot. 
+- Retry Snapshot : If an integration is retried by an user, the snapshot getting generated will show the retry snapshot. Here in the image below, the retry snapshot is getting demarked. 
+![Retry snapshot mark](../../staticfiles/processflow/media/processflow-syncinfo-snapshot.png)
+- Runtime Snapshot: In case if a custom action filter is used to execute an integration manually, the snapshot will show a special symbol marking the Runtime filter.
+![Runtime filter snapshot mark](../../staticfiles/processflow/media/runtime-filter-snapshot.png)
+
