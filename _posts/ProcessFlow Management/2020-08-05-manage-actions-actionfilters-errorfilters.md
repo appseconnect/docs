@@ -92,17 +92,21 @@ Following the above process, you can successfully Edit, Delete & Rename an exist
 
 ## Adding Action Filters
 
+Action filter for an integration represents the same as API filters. In APPSeCONNECT, Action filter lets you define a filter criteria for an action which filters out the data from the API. You can think this as an Where clause of a Select statement or even a search criteria in Windows file system. 
+You should always define an action filter by learning the API structure, such that you dont call the same data again and again. Here in the steps we are going to cover the ways how 
+we can define action filters in ProcessFlow.
+
 1) Select the Action from the contextual menu of the node configuration window of the dragged application.
 
 2) Click on the **Configure Filter** button after selecting the action from the contextual menu.
 
 ![actionfilter1](\staticfiles\processflow\media\action_filter1.png)
 
-3) The Configure filter window opens. You can view the selected shema listed on the window.
+3) The Configure filter window opens. You can view the selected schema listed on the window.
 
 ![actionfilter2](\staticfiles\processflow\media\action_filter2.PNG)
 
-4) Expand the nodes `customer > Action > Select Action` to view the **Action Filter** and the **Error Filter**
+4) Expand the nodes `customer > Action > Select Action` to view the **Action Filter**, Runtime Filter and the **Error Filter**
 
 ![actionfilter3](\staticfiles\processflow\media\action_filter3.PNG)
 
@@ -110,23 +114,24 @@ Following the above process, you can successfully Edit, Delete & Rename an exist
 
 ![actionfilter4](\staticfiles\processflow\media\action_filter4.png)
 
-6) You get the option to provide your filter for TWO sections. Either on **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the action filter.
+6) You get the option to provide your filter for two sections. Either on **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the action filter.
  
-- Key: This is the filter key that will define the key to filter.
-- Operator: You need to select the type of operator needed for the execution of the action filter.
-- Value: You need to provide the value to the filter that will be executed to GET or POST data.
+- Key: The key defines the field on which you want to apply the filter on. For example, let us suppose you want to filter by created_date, then key will have created_date in it. 
+- Operator: It represents the operator between the two operands. The operator is not mandatory. For instance, in case of REST based APIs, the Operator does not generally makes sense, as the filter goes into the query string which contains only a combination of key-value pair.
+- Value: You need to provide the value to the filter. This represents the data. For example, if you want to filter out the customers greater than a particular date, you can specify the date in the value field.
 
 Click on the SAVE icon beside the filter to save the current sibling.
 
 ![actionfilter5](\staticfiles\processflow\media\action_filter5.PNG)
 
-7) You can also append multiple filters by clicking on the **APPEND** button add conjuction on the same level as of the elder sibling filter.. To add a conjuction on a level below, click on the (+) button beside the elder sibling.
+7) You can add as many filters as you want by clicking on the **APPEND** button. An optional conjunction is needed for some integrations which you can provide to join two queries. To add a conjuction on a level below, click on the (+) button beside the parent sibling.
 
-8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different processflow for the same application within the same organisation. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
+8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different processflow. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
 
 **Note:** You need to save the elder sibling before applying conjuction on same level or below level.
 
 ## Adding Retry Filters
+The retry filter allows the integration to rerun an erronous data to fix it. The Retry filter allows the user to create a filter that downloads an item based on a perticular id. 
 
 1) Select the Action from the contextual menu of the node configuration window of the dragged application.
 
@@ -148,9 +153,9 @@ Click on the SAVE icon beside the filter to save the current sibling.
 
 6) You get the option to provide your retry filter for TWO sections. Either on **HEADER** and **BODY**. As per you application API, you can provide the following details to configure the retry filter. Provide the following details to configure the retry filter.
 
-- Key: This is the filter key that will define the key to filter.
-- Operator: You need to select the type of operator needed for the execution of the action filter.
-- Value: You need to provide the value to the filter that will be executed to GET or POST data.
+- Key: The key defines the field on which you want to apply the filter on. For example, let us suppose you want to filter by customer_id, then key will have customer_id in it. 
+- Operator: It represents the operator between the two operands. The operator is not mandatory. For instance, in case of REST based APIs, the Operator does not generally makes sense, as the filter goes into the query string which contains only a combination of key-value pair.
+- Value: You need to provide the value to the filter. This represents the data. For example, if you want to filter out the customers for a perticular date, you can specify the id in the value field. Generally for most of the application we use {$} which will be replaced during retry execution.
 
 Click on the SAVE icon beside the filter to save the current sibling. To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the **ADD CRITERIA** button to add conjuction on the same level as of the elder sibling filter.
 
