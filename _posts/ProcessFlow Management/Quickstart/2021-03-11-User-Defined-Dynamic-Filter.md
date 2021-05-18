@@ -102,7 +102,7 @@ For more details on this section, [ClicK Here](/processflow/manage-actions-actio
 
 
 
-## Deleting Dynamic Action Filter.
+## Deleting Runtime Action Filter.
 
 1) To Delete a Runtime Filter, Navigate to the **Runtime filter Window** by clicking on the **Execute with Runtime filter**. The window opens.
 

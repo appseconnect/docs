@@ -120,15 +120,14 @@ we can define action filters in ProcessFlow.
 - Operator: It represents the operator between the two operands. The operator is not mandatory. For instance, in case of REST based APIs, the Operator does not generally makes sense, as the filter goes into the query string which contains only a combination of key-value pair.
 - Value: You need to provide the value to the filter. This represents the data. For example, if you want to filter out the customers greater than a particular date, you can specify the date in the value field.
 
-Click on the SAVE icon beside the filter to save the current sibling.
+Click on the SAVE icon below the window to save the entire filter.
 
 ![actionfilter5](\staticfiles\processflow\media\action_filter5.PNG)
 
-7) You can add as many filters as you want by clicking on the **APPEND** button. An optional conjunction is needed for some integrations which you can provide to join two queries. To add a conjuction on a level below, click on the (+) button beside the parent sibling.
+7) You can add as many filters as you want by clicking on the **Add Child Clause** button. An optional conjunction is needed for some integrations which you can provide to join two queries. To add a conjuction on a level below, click on the (+) button beside the parent sibling.
 
 8) You can also save the filter as a template by clicking on **SAVE AS TEMPLATE** for reusing it on a different processflow. For more details on TEMPLATE, [Click Here](/processflow/manage-actions-actionfilters-errorfilters/#saving-a-template-filter).
 
-**Note:** You need to save the elder sibling before applying conjuction on same level or below level.
 
 ## Adding Retry Filters
 The retry filter allows the integration to rerun an erronous data to fix it. The Retry filter allows the user to create a filter that downloads an item based on a perticular id. 
@@ -157,7 +156,7 @@ The retry filter allows the integration to rerun an erronous data to fix it. The
 - Operator: It represents the operator between the two operands. The operator is not mandatory. For instance, in case of REST based APIs, the Operator does not generally makes sense, as the filter goes into the query string which contains only a combination of key-value pair.
 - Value: You need to provide the value to the filter. This represents the data. For example, if you want to filter out the customers for a perticular date, you can specify the id in the value field. Generally for most of the application we use {$} which will be replaced during retry execution.
 
-Click on the SAVE icon beside the filter to save the current sibling. To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the **ADD CRITERIA** button to add conjuction on the same level as of the elder sibling filter.
+Click on the SAVE button on the window to save the current filter. To add a conjuction on a level below, click on the (+) button beside the elder sibling. You can also click on the **ADD CRITERIA** button to add conjuction on the same level as of the elder sibling filter.
 
 Following the above process, you can successfully implement Retry filter for an action.
 
@@ -200,12 +199,12 @@ You will be able to view the saved template for that schema and the action. The 
 Following the above process you can successfully SAVE and create filter from template.
 
 
-## Working with Custom Filter
+## Working with Runtime Filter
 
-You can create the Dynamic Custom Filter for performing specific integration operations. However, you cannot execute from this section. 
+You can create the Dynamic Runtime Filter for performing specific integration operations. However, you cannot execute from this section. 
 The **Custom Filter** functionality on this area will only allow you to Create, View and Delete.
 
-The filters created can be also be viewed in the **Execute with Custom Action filter** area. For more Details, [Click Here.](/processflow/User-Defined-Dynamic-Filter/#implementing-dynamic-custom-filter)
+The filters created can be also be viewed in the **Execute with Runtime filter** area. For more Details, [Click Here.](/processflow/User-Defined-Dynamic-Filter/#implementing-dynamic-custom-filter)
 
 ![customfilternormal](\staticfiles\processflow\media\customfilternormal.PNG)
 
