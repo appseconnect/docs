@@ -54,8 +54,7 @@ var store = [
   {% endfor %}]
 
 $(document).ready(function () {
-    $('input#search').on('keyup', function () {
-        debugger;
+    $('input#search').on('keyup', function () { 
         $("#searchFound").addClass('hideBox');
     var resultdiv = $('#results');
     var query = $(this).val();

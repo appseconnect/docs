@@ -3,6 +3,9 @@ title: "Contact Person Add/ Update Mage2 multistore to NAV"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     navmagentointegration:
         title: "Contact Person Add/ Update Mage2 multistore to NAV"

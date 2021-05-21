@@ -19,12 +19,17 @@
 
 
 
+
 <title>Data view of Snapshot - APPSeCONNECT Product Docs</title>
 
 
 
 
+
+
+
 <meta name="description" content="Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of the business flow at that instance. Every processflow will be able execute more than one integration, which depends on logic defined on the designed processflow, dependencies specified, or even based on data volume.The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the sync process. The snapshot gives tracing over the data transferred through integration. You can investigate the Data Log, Transaction files &amp; the Activity Log for each process execution.After a successful execution, you can view the snapshot listing on the multiple time execution of the processflow.">
+<meta name="keywords" content="">
 
 
 
@@ -36,12 +41,12 @@
 <meta property="og:title" content="Data view of Snapshot">
 
 
-  <link rel="canonical" href="//docs.appseconnect.com/processflow/snapshot-processflow/">
-  <meta property="og:url" content="//docs.appseconnect.com/processflow/snapshot-processflow/">
+<link rel="canonical" href="//docs.appseconnect.com/processflow/snapshot-processflow/">
+<meta property="og:url" content="//docs.appseconnect.com/processflow/snapshot-processflow/">
 
 
 
-  <meta property="og:description" content="Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of the business flow at that instance. Every processflow will be able execute more than one integration, which depends on logic defined on the designed processflow, dependencies specified, or even based on data volume.The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the sync process. The snapshot gives tracing over the data transferred through integration. You can investigate the Data Log, Transaction files &amp; the Activity Log for each process execution.After a successful execution, you can view the snapshot listing on the multiple time execution of the processflow.">
+<meta property="og:description" content="Snapshot in processflow gives complete overview of the transactions that was executed. A transaction in processflow defines an execution of the business flow at that instance. Every processflow will be able execute more than one integration, which depends on logic defined on the designed processflow, dependencies specified, or even based on data volume.The snapshot gives a detailed overview of the data that is being transferred through workflow giving you a complete picture of the data transformed through the sync process. The snapshot gives tracing over the data transferred through integration. You can investigate the Data Log, Transaction files &amp; the Activity Log for each process execution.After a successful execution, you can view the snapshot listing on the multiple time execution of the processflow.">
 
 
 
@@ -67,8 +72,8 @@
 
 
 
-  <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-03-18T00:00:00+05:30">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-03-18T00:00:00+05:30">
 
 
 
@@ -77,15 +82,15 @@
 
 
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "APPSeCONNECT",
-      "url" : "//docs.appseconnect.com",
-      "sameAs" : null
+    "@context" : "http://schema.org",
+    "@type" : "Person",
+    "name" : "APPSeCONNECT",
+    "url" : "//docs.appseconnect.com",
+    "sameAs" : null
     }
-  </script>
+</script>
 
 
 
@@ -438,8 +443,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/priority/" onclick="selectTab('/connectors/priority/', event);" title="Go to Priority">Priority</a>
+    <li class="menu-item-" data-url="/connectors/Priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Priority/" onclick="selectTab('/connectors/Priority/', event);" title="Go to Priority">Priority</a>
         
         
         
@@ -2345,6 +2350,19 @@
     <li class="menu-item-" data-url="/release-notes/2021-Q1/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/release-notes/2021-Q1/" onclick="selectTab('/release-notes/2021-Q1/', event);" title="Go to Q1 V 4.10.0">Q1 V 4.10.0</a>
         
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/release-notes/2021-Q1-V1.0-Hotfix/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/release-notes/2021-Q1-V1.0-Hotfix/" onclick="selectTab('/release-notes/2021-Q1-V1.0-Hotfix/', event);" title="Go to Q1 V1.0 Hotfix Release Note">Q1 V1.0 Hotfix Release Note</a>
+        
+    </li>
+    
+</ul>
+
+        
     </li>
     
 </ul>
@@ -2684,6 +2702,7 @@
             </ol>
         </div>
 
+        
 
         <div class="page__inner-wrap">
             
@@ -2719,7 +2738,7 @@
 
 
 
-  6 minute read
+  7 minute read
 </p>
                 
                 
@@ -2741,6 +2760,7 @@
       <li><a href="#3-scenario-post-node">3. Scenario: Post Node</a></li>
     </ul>
   </li>
+  <li><a href="#types-of-snapshot">Types of Snapshot</a></li>
 </ul>
                     </nav>
                 </aside>
@@ -2869,6 +2889,19 @@ d.	Click on the Transaction File tab of the Post node. You will be able to view 
 
 <p>Following the above steps, you can successfully view the snapshot of an executed processflow.</p>
 
+<h2 id="types-of-snapshot">Types of Snapshot</h2>
+
+<p>The Snapshots are marked based on the type of execution. The Type defines how the snapshot got executed during the process of integration. 
+There are three types of Snapshots present in APPSeCONNECT.</p>
+
+<ul>
+  <li>Manual/ Scheduled Snapshot : In this case there will be no mark shown just beside the snapshot. All the above snaps showing a normal snapshot.</li>
+  <li>Retry Snapshot : If an integration is retried by an user, the snapshot getting generated will show the retry snapshot. Here in the image below, the retry snapshot is getting demarked. 
+<img src="../../staticfiles/processflow/media/processflow-syncinfo-snapshot.png" alt="Retry snapshot mark" /></li>
+  <li>Runtime Snapshot: In case if a custom action filter is used to execute an integration manually, the snapshot will show a special symbol marking the Runtime filter.
+<img src="../../staticfiles/processflow/media/runtime-filter-snapshot.png" alt="Runtime filter snapshot mark" /></li>
+</ul>
+
 
                 
             </section>
@@ -2934,8 +2967,6 @@ d.	Click on the Transaction File tab of the Post node. You will be able to view 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Fsnapshot-processflow%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
-            
-            <div id="disqus_thread"></div>
 
             
 
@@ -5555,8 +5586,18 @@ d.	Click on the Transaction File tab of the Post node. You will be able to view 
 
                             
 
-                             
-                             
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -6330,7 +6371,7 @@ d.	Click on the Transaction File tab of the Post node. You will be able to view 
         <div class="docFooterBottomTop"><p>APPSeCONNECT is a smart and robust Integration Platform as a Service (iPaaS) that seamlessly integrates a host of business applications to one another to streamline operations and facilitate the free-flow of data across various platforms. Advancing in the industry of iPaaS, APPSeCONNECT proves to be a best-in-the-class platform that easily connects systems to collect data under the same roof.</p></div>
         <div class="copyRightPan">
             <div class="copyRightLeft">
-                <p> © 2020 InSync Tech-Fin Solutions Ltd. All rights reserved. &nbsp; &nbsp; <a href="https://www.appseconnect.com/terms-of-use/" target="_blank" title="Terms of Use">Terms of Use</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://www.appseconnect.com/privacy-policy/" title="Privacy Policy" target="_blank">Privacy Policy</a></p>
+                <p> © 2021 InSync Tech-Fin Solutions Ltd. All rights reserved. &nbsp; &nbsp; <a href="https://www.appseconnect.com/terms-of-use/" target="_blank" title="Terms of Use">Terms of Use</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://www.appseconnect.com/privacy-policy/" title="Privacy Policy" target="_blank">Privacy Policy</a></p>
             </div>
             <div class="copyRightRight">
                 <ul>

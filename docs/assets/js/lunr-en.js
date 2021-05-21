@@ -74,7 +74,7 @@ var idx = lunr(function () {
       title: "How to design an interface for Credentials",
       excerpt: "APPSeCONNECT adapter development SDK allows one to implement and create user interface for credentials. In case of OnPremise agent, you...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 6
     });
     
@@ -83,7 +83,7 @@ var idx = lunr(function () {
       title: "Developing APPResource Methods",
       excerpt: "Application resources are special methods that can be added on the adapter code using the interface IAppResources which can be...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 7
     });
     
@@ -92,7 +92,7 @@ var idx = lunr(function () {
       title: "Handling various events of Adapter",
       excerpt: "APPSeCONNECT provides a number of events which you as a developer can hook into, to write code specially when the...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 8
     });
     
@@ -101,7 +101,7 @@ var idx = lunr(function () {
       title: "How to test an Adapter",
       excerpt: "Adapter development is a common practice, and one of the most challenging thing to do is to debug an adapter...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 9
     });
     
@@ -110,7 +110,7 @@ var idx = lunr(function () {
       title: "Implementing Action filter Parser",
       excerpt: "Action filters are special hierarchical key-value data store for each integration points which provides functionality to have hierarchy and can...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 10
     });
     
@@ -119,7 +119,7 @@ var idx = lunr(function () {
       title: "Logging and Tracing",
       excerpt: "Adapter works on background always to communicate data between application and APPSeCONNECT. As there are a large part of code...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 11
     });
     
@@ -128,7 +128,7 @@ var idx = lunr(function () {
       title: "Storing Transactional Data",
       excerpt: "Adapter supports a number of storages which you can make use of to perform various tasks. For an adapter developer,...",
       categories: ["SDK"],
-      tags: ["developers,reseller"],
+      tags: ["developers"],
       id: 12
     });
     
@@ -2941,6 +2941,15 @@ var idx = lunr(function () {
     });
     
   
+    idx.add({
+      title: "2021-Q1 Version 1.0 Hotfix Release Note",
+      excerpt: "This document highlights the details of hotfix(s) done for the 2021 Q1 Release. This hotfix release introduces few improvements and...",
+      categories: ["release-notes"],
+      tags: ["developers"],
+      id: 325
+    });
+    
+  
 
 
 console.log( jQuery.type(idx) );
@@ -4226,7 +4235,7 @@ var store = [
       
       {
         "title": "Priority",
-        "url": "/connectors/priority/",
+        "url": "/connectors/Priority/",
         "excerpt": "Application configuration is an integral activity prior to the process of integration. If your chosen application is Priority, such as...",
         "teaser":
           
@@ -6531,13 +6540,23 @@ var store = [
           
             "/assets/images/APPSeCONNECT-documentation.png"
           
+      },
+    
+      
+      {
+        "title": "2021-Q1 Version 1.0 Hotfix Release Note",
+        "url": "/release-notes/2021-Q1-V1.0-Hotfix/",
+        "excerpt": "This document highlights the details of hotfix(s) done for the 2021 Q1 Release. This hotfix release introduces few improvements and...",
+        "teaser":
+          
+            "/assets/images/APPSeCONNECT-documentation.png"
+          
       }
     
   ]
 
 $(document).ready(function () {
-    $('input#search').on('keyup', function () {
-        debugger;
+    $('input#search').on('keyup', function () { 
         $("#searchFound").addClass('hideBox');
     var resultdiv = $('#results');
     var query = $(this).val();

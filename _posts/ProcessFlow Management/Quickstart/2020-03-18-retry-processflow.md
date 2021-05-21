@@ -52,6 +52,7 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 2.	Click on **ProcessFlows** Tab. You can view the list of all the deployed processflows. Following are the details that will display for each deployed processflows.
 * ProcessFlow Name  
 * Deployed At   
+* Snapshots
 * No. of Tries
 * Deployment Status
 * Actions
@@ -84,6 +85,12 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 7.	You can filter the data in the list using the contents of the Source ID by click on the filter icon.
 ![Processflow Retry8](../../../staticfiles/processflow/media/processflow-retry8.png) 
 
+8. You will get a link of Snapshots inside the Sync Info window such that when you click on the row, it will open a filtered view.
+![Processflow Retry9](../../../staticfiles/processflow/media/processflow-syncinfo-mark.png)
+
+9. Once you click on the link, you will be redirected to the snapshots corresponding to the execution of that particular data. 
+![Processflow Retry 10](../../../staticfiles/processflow/media/processflow-syncinfo-snapshot.png)
+
 **Note:**
 
 - For Auto-Retry, each data will be Retried 4 times excluding the main execution.
@@ -102,8 +109,9 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 
 Following the above process, you can successfully implement Auto-Retry and view the data in the Resync Bucket of the Auto-Retry window.
 
-**Protip**  For every Retry process (Both Auto/Manual), you will be generated with a [Snapshot](/processflow/snapshot-processflow/). 
-{: .notice--info}
+**Protip**  For every Retry process (Both Auto/Manual), you will be generated with a 
+[Snapshot](/processflow/snapshot-processflow/)
+{: .notice--info} 
 
 ## Snapshot view for Retried Data:
 
@@ -118,7 +126,7 @@ window is now featured to display [Snapshot](/processflow/snapshot-processflow/)
 
 3) Click on the Hyperlink against the `Sourceids` provided against each data captured.
 
-![processflow_retry12](\staticfiles\processflow\media\processflow_retry12.PNG)
+![processflow_retry12](\staticfiles\processflow\media\processflow_retry12.png)
 
 4) You will get the all the snapshots for the selected data displaying all the execution instances.
 

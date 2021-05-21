@@ -3,6 +3,9 @@ title: "Product Add"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     sapwoocommerceintegration:
         title: "Product Add"

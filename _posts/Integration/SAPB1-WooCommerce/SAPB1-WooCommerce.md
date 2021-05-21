@@ -3,6 +3,9 @@ title: "SAPB1-WooCommerce"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     integration:
         title: "SAPB1-WooCommerce"

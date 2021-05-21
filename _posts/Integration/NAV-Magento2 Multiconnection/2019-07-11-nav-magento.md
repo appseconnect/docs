@@ -3,6 +3,9 @@ title: "NAV-Magento 2 Multiple Connection"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     integration:
         title: "NAV-Magento 2 Multiple Connection"

@@ -3,6 +3,9 @@ title: "Business Partner Add"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     sapbmagentointegration:
         icon: fa fa-wpexplorer  

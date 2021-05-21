@@ -3,6 +3,9 @@ title: "Configurable Product Update Nav-Magento2 MultiConnection"
 toc: true
 tag: developers
 category: "Integration"
+deprecated: 
+    url: "/processflow/overview-of-processflow"
+    title: "Overview of ProcessFlow"
 menus: 
     navmagentointegration:
         title: "Configurable Product Update Nav-Mage2 MultiConnection"

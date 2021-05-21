@@ -19,12 +19,17 @@
 
 
 
+
 <title>Sync Info &amp; Retry - APPSeCONNECT Product Docs</title>
 
 
 
 
+
+
+
 <meta name="description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. Processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. ProcessFlow Retry can be configured both Manually and in Auto-Mode.">
+<meta name="keywords" content="">
 
 
 
@@ -36,12 +41,12 @@
 <meta property="og:title" content="Sync Info &amp; Retry">
 
 
-  <link rel="canonical" href="//docs.appseconnect.com/processflow/retry-processflow/">
-  <meta property="og:url" content="//docs.appseconnect.com/processflow/retry-processflow/">
+<link rel="canonical" href="//docs.appseconnect.com/processflow/retry-processflow/">
+<meta property="og:url" content="//docs.appseconnect.com/processflow/retry-processflow/">
 
 
 
-  <meta property="og:description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. Processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. ProcessFlow Retry can be configured both Manually and in Auto-Mode.">
+<meta property="og:description" content="Execution of a processflow is vital process for transforming data from source to destination application. In real-time, execution of processflow may fetch errors with respect to data configurations. Processflow Retry is a feature that can Resync the data after rectifying the error such that no data loss occurs with respect to the sync process. ProcessFlow Retry can be configured both Manually and in Auto-Mode.">
 
 
 
@@ -67,8 +72,8 @@
 
 
 
-  <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-03-18T00:00:00+05:30">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-03-18T00:00:00+05:30">
 
 
 
@@ -77,15 +82,15 @@
 
 
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "APPSeCONNECT",
-      "url" : "//docs.appseconnect.com",
-      "sameAs" : null
+    "@context" : "http://schema.org",
+    "@type" : "Person",
+    "name" : "APPSeCONNECT",
+    "url" : "//docs.appseconnect.com",
+    "sameAs" : null
     }
-  </script>
+</script>
 
 
 
@@ -438,8 +443,8 @@
     </li>
     
     
-    <li class="menu-item-" data-url="/connectors/priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
-        <a href="/connectors/priority/" onclick="selectTab('/connectors/priority/', event);" title="Go to Priority">Priority</a>
+    <li class="menu-item-" data-url="/connectors/Priority/" data-jstree='{"icon":"fa fa-file-word-o"}'>
+        <a href="/connectors/Priority/" onclick="selectTab('/connectors/Priority/', event);" title="Go to Priority">Priority</a>
         
         
         
@@ -2345,6 +2350,19 @@
     <li class="menu-item-" data-url="/release-notes/2021-Q1/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
         <a href="/release-notes/2021-Q1/" onclick="selectTab('/release-notes/2021-Q1/', event);" title="Go to Q1 V 4.10.0">Q1 V 4.10.0</a>
         
+        
+        
+<ul class="nav__items">
+    
+    
+    <li class="menu-item-" data-url="/release-notes/2021-Q1-V1.0-Hotfix/" data-jstree='{"icon":"fa fa-wpexplorer"}'>
+        <a href="/release-notes/2021-Q1-V1.0-Hotfix/" onclick="selectTab('/release-notes/2021-Q1-V1.0-Hotfix/', event);" title="Go to Q1 V1.0 Hotfix Release Note">Q1 V1.0 Hotfix Release Note</a>
+        
+    </li>
+    
+</ul>
+
+        
     </li>
     
 </ul>
@@ -2684,6 +2702,7 @@
             </ol>
         </div>
 
+        
 
         <div class="page__inner-wrap">
             
@@ -2795,6 +2814,7 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
     <ul>
       <li>ProcessFlow Name</li>
       <li>Deployed At</li>
+      <li>Snapshots</li>
       <li>No. of Tries</li>
       <li>Deployment Status</li>
       <li>Actions
@@ -2832,8 +2852,16 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
       <li><strong>Unprocessed</strong>.</li>
     </ul>
   </li>
-  <li>You can filter the data in the list using the contents of the Source ID by click on the filter icon.
-<img src="../../../staticfiles/processflow/media/processflow-retry8.png" alt="Processflow Retry8" /></li>
+  <li>
+    <p>You can filter the data in the list using the contents of the Source ID by click on the filter icon.
+<img src="../../../staticfiles/processflow/media/processflow-retry8.png" alt="Processflow Retry8" /></p>
+  </li>
+  <li>
+    <p>You will get a link of Snapshots inside the Sync Info window such that when you click on the row, it will open a filtered view.
+<img src="../../../staticfiles/processflow/media/processflow-syncinfo-mark.png" alt="Processflow Retry9" /></p>
+  </li>
+  <li>Once you click on the link, you will be redirected to the snapshots corresponding to the execution of that particular data. 
+<img src="../../../staticfiles/processflow/media/processflow-syncinfo-snapshot.png" alt="Processflow Retry 10" /></li>
 </ol>
 
 <p><strong>Note:</strong></p>
@@ -2861,7 +2889,8 @@ For an Instance: If a set of data is failed at 14:00 hrs, and the Time lapse sel
 
 <p>Following the above process, you can successfully implement Auto-Retry and view the data in the Resync Bucket of the Auto-Retry window.</p>
 
-<p class="notice--info"><strong>Protip</strong>  For every Retry process (Both Auto/Manual), you will be generated with a <a href="/processflow/snapshot-processflow/">Snapshot</a>.</p>
+<p class="notice--info"><strong>Protip</strong>  For every Retry process (Both Auto/Manual), you will be generated with a 
+<a href="/processflow/snapshot-processflow/">Snapshot</a></p>
 
 <h2 id="snapshot-view-for-retried-data">Snapshot view for Retried Data:</h2>
 
@@ -2876,7 +2905,7 @@ window is now featured to display <a href="/processflow/snapshot-processflow/">S
 
 <p>3) Click on the Hyperlink against the <code class="language-plaintext highlighter-rouge">Sourceids</code> provided against each data captured.</p>
 
-<p><img src="\staticfiles\processflow\media\processflow_retry12.PNG" alt="processflow_retry12" /></p>
+<p><img src="\staticfiles\processflow\media\processflow_retry12.png" alt="processflow_retry12" /></p>
 
 <p>4) You will get the all the snapshots for the selected data displaying all the execution instances.</p>
 
@@ -2948,8 +2977,6 @@ window is now featured to display <a href="/processflow/snapshot-processflow/">S
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://docs.appseconnect.com%2Fprocessflow%2Fretry-processflow%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
-            
-            <div id="disqus_thread"></div>
 
             
 
@@ -5569,8 +5596,18 @@ window is now featured to display <a href="/processflow/snapshot-processflow/">S
 
                             
 
-                             
-                             
+                            
+                            
+                            
+
+                            
+
+                            
+
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -6344,7 +6381,7 @@ window is now featured to display <a href="/processflow/snapshot-processflow/">S
         <div class="docFooterBottomTop"><p>APPSeCONNECT is a smart and robust Integration Platform as a Service (iPaaS) that seamlessly integrates a host of business applications to one another to streamline operations and facilitate the free-flow of data across various platforms. Advancing in the industry of iPaaS, APPSeCONNECT proves to be a best-in-the-class platform that easily connects systems to collect data under the same roof.</p></div>
         <div class="copyRightPan">
             <div class="copyRightLeft">
-                <p> © 2020 InSync Tech-Fin Solutions Ltd. All rights reserved. &nbsp; &nbsp; <a href="https://www.appseconnect.com/terms-of-use/" target="_blank" title="Terms of Use">Terms of Use</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://www.appseconnect.com/privacy-policy/" title="Privacy Policy" target="_blank">Privacy Policy</a></p>
+                <p> © 2021 InSync Tech-Fin Solutions Ltd. All rights reserved. &nbsp; &nbsp; <a href="https://www.appseconnect.com/terms-of-use/" target="_blank" title="Terms of Use">Terms of Use</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://www.appseconnect.com/privacy-policy/" title="Privacy Policy" target="_blank">Privacy Policy</a></p>
             </div>
             <div class="copyRightRight">
                 <ul>

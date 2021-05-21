@@ -35,11 +35,13 @@ var onScrollCallback = function () {
     var nav = $('.sidebar__right,.page');
     // Get container scroll position
     var fromTop = $(this).scrollTop();
+    //var fromButtom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
     if (fromTop > 136) {
         nav.addClass("f-nav");
     } else {
         nav.removeClass("f-nav");
     }
+
     // Get id of current scroll item
     var cur = scrollItems.map(function () {
         if ($(this).offset().top - 100 < fromTop)
@@ -188,6 +190,12 @@ function selectTab(url, e) {
         });
 
         $('.page').html($(data).find('.page').html());
+        var tempDom = $('<div></div>').append($.parseHTML(data));
+        document.title = tempDom.find('title').text();
+        $('meta[name="description"]').attr('content', tempDom.find('meta[name="description"]').attr('content'));
+        $('meta[name="keywords"]').attr('content', tempDom.find('meta[name="keywords"]').attr('content'));
+        $('link[rel="canonical"]').attr('href', tempDom.find('link[rel="canonical"]').attr('href'));
+
         window.history.pushState({ url: url }, title, url);
         $("html, body").animate({ scrollTop: 0 }, "slow");
         //remove all jsTree clicked
@@ -205,12 +213,19 @@ function selectTab(url, e) {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
         });
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                this.page.identifier = url;
+                this.page.url = location.href;
+                this.page.title = document.title; 
+            }
+        });
 
         $(window).scroll(onScrollCallback);
     }, function (request) {
         $('.page').html(request.responseText);
-    });
-    debugger;
+    }); 
     e.stopImmediatePropagation();
     e.preventDefault();
     return false;

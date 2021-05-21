@@ -319,7 +319,9 @@ body.layout--single .toc .nav__title i.fa {
 body.layout--single .sidebar__right.f-nav {
     top: 28px;
 }
-
+.sidebar_right {
+    position: absolute;
+}
 .sidebar__right .toc__menu li a.active {
     border-left: 4px solid #00aadc;
     background: #f7f7f7;
@@ -745,7 +747,31 @@ a {
     float: right;
     margin: 18px;
 }
+.alert {
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    padding: .25rem .50rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
 
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
 /* ------------- End : Main Content  ------------- */
 /* ------------- Start : Main Content  ------------- */
 .footer {

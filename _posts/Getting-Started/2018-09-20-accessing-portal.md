@@ -343,6 +343,13 @@ Users can aslo study and view the latest updates and Hotfixes provided for APPSe
 ![Help2](\staticfiles\root\media\help2.PNG)
 
 
+### Chat
+On every page, there is a small icon provided on to bottom right corner of the page which allows to chat with our executive. The chat functionality is open 24/7 throughout the year and you can quickly click on the icon to execute the step. 
+The chat functionality connects to our support executive who are available for you to help you as and when required. 
+![Chat](\staticfiles\root\media\portal_chat.PNG)
+
+Feel free to chat with it whenever required. 
+
 ## Managing Customer Profile 
 
 

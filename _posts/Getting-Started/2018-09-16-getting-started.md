@@ -1,5 +1,7 @@
 ---
 title: "Getting Started"
+description: "Getting started with APPSeCONNECT"
+keywords: "APPSeCONNECT, Getting Started,Knowledge base"
 toc: true
 tag: developers
 category: "Getting Started"
