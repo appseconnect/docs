@@ -1785,7 +1785,7 @@
     <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-resync-bucket.md" />
     <None Include="_posts\Rule-Management\DefaultRule\preconfigured-rule-for-log-bucket.md" />
     <None Include="_posts\Rule-Management\DefaultRule\default-rule-for-data-purge-policy.md" />
-    <None Include="_posts\Rule-Management\PreconfiguredRule\2021-07-15-preconfigured-rule-for-issue-notification.md" />
+    <None Include="_posts\Rule-Management\PreconfiguredRule\2020-04-01-error-mail-notification.md" />
     <None Include="_posts\Security\2020-03-06-GDPR.md" />
     <None Include="_posts\Security\License-Management\2020-03-17-license-generation.md" />
     <None Include="_posts\Security\License-Management\2020-03-17-license-management.md" />

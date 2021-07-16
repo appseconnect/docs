@@ -13,11 +13,17 @@ menus:
 
 ## Scenario
 
-Integrations are scheduled to run automatically and for users its effecient to send reports for scheduled process that either may face errors 
-or is success. However, its always productive and valuable to get a detailed report for the cause of errors that user may face during the integration.
+Integration is a continuous process which gives the flexibility to the users to run an integration procedure again and again
+based on the schedule defined by the user. As the process executes in background without any human intervension, it gives 
+the user a piece of mind such that the data syncs seamlessly. 
 
-APPSeCONNECT users will now recieve mail notifications with the mail header as **Interrupted Integration Process. Reason in details** that sends detailed reports 
-for the cause of errors faced for the following Scenarios:
+But occassionally there might be a situation where the integration stops all of a sudden and the user who is not regularly monitoring
+it, does not get any clue about it. This rule will identify any issue in the platform and generate notification
+based on various parameters, such that any decrepancy could be identified easily.
+
+**Note: User is required to activate the rule for Error email notification from the choose rule 
+section. However, the user cannot edit and customize any of the fields of this rule.** 
+
 
 ## Scenarios for Error Mail Report Generation
 
@@ -71,19 +77,34 @@ you will be notified with a mail report. However if none errors occured, you wil
 ## Area of Implementation
 
 This is a Pre-packaged & Pre-configured rule and needs to be activated from the [Choose Rule](/rule/choose-rule/) option in the Rule section. 
-Users cannot modify any configuration to the rule. 
+Users cannot modify any configuration to the rule. This rule triggers the tokens that generates the hourly report.
+
+|Event used|Token used |
+|---|---|
+|Network failure hapeend for X number of times|${NetworkConnectivityCount}$|
+|Agent is crashed|${AppsEconnectCrashCount}$|
+|Server communication channel interrupted|${SignalRDisconnectedCount}$|
+|Process generated error during the scheduled exection|${ErrorLogDataWithinScheduledTime}$|
+|Process is not executed as per schedule|${NoLogInScheduledTime}$|
+|Configuration file is corrupt|${ConfigCorrupt}$|
+|Process took longer than expected time|${LongerTouchpointExecutionTime}$|
+|Transformation failed during process execution|${TouchpointHasTransformationError}$|
+|Credential for applications failed|${AppCredentialErrorMessage}$|
+|License for the server is expired|${LicenseExpired}$|
+
+**Note: The token remains activated by default. If the process does not find any of the token as true, the notification will not be generated.**
+
 
 ## Rule Notification
-Users would receive the Error based Hourly Notification in the email id provided for the Organisation. The Rule will be triggered every hour and would check for errors. However, if No-Errors found, you will not recive any Email Notification Reports
-even if the rule triggers. A sample mail is provided below:
+Users would receive the hourly report in the email id provided for the Organisation. The email would consist 
+of the sync report (for failed during the execution process) for the previous hour. 
 
 ![errormailnotification1](\staticfiles\rules\media\errormailnotification1 (2).png)
 
 **Note:**
-
-- **If internal processes donot detect any errors, the mail notification will not be sent.**
-- **Mail Notification will be sent if the internal processes detects atleast One Issue as per the above mentioned Scenarios.**
-- **The notification will be sent only to the mail provided in the organisation details.**
-- **You need to Update Configuration on your On-Premise Agent, after ACTIVATING the rule from the Portal.**
-- **This Rule is only applicable for the integration processes based on TOUCHPOINTS & WORKFLOW**
-
+        * In-case of no error, there wont be any mail sent.           
+        * Also, by default, the token for sending mails is set as ${orgEmails}$ which represents, that all users of the same organization will receive the notifications.       
+        * Users can provide the specific recipient email address directly to mail field for sending the notification to selective users.
+        * This Report will only display the errors that are faced during the sync process of the last hour
+        * You will not recieve the Error details in certain heads based on the type of error which has occurred since last email.**
+        * If there are no errors during this period, email will not be sent out.
