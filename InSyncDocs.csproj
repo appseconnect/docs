@@ -1238,6 +1238,7 @@
     <Content Include="staticfiles\root\media\Usernode.png" />
     <Content Include="staticfiles\rule-confirm.png.jpg" />
     <Content Include="staticfiles\rules\media\action-cleanup.png" />
+    <Content Include="staticfiles\rules\media\appseconnect-status-report.jpg" />
     <Content Include="staticfiles\rules\media\choose-rule1.png" />
     <Content Include="staticfiles\rules\media\choose-rule2.png" />
     <Content Include="staticfiles\rules\media\choose-rule3.png" />

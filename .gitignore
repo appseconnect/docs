@@ -250,3 +250,4 @@ Gemfile.lock
 
 
 /.jekyll-cache/Jekyll/Cache
+/package.json

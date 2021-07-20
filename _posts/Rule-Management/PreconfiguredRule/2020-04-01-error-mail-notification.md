@@ -42,10 +42,7 @@ Listed below are the scenarios that will trigger the MAIL if your ECommerce Appl
 Listed below are the scenarios that will trigger the MAIL if your ERP Application generate issue.
 
 - **Connection Issues:** Connection failures will also allow to trigger mail to the user.
-- **SQL Exception/errors:** If your SQL queries return errors and fails to return data.
-- **SQL Deadlocks:** For any deadlocks in SQL, you will recieve the mails if any sync process is scheduled.
 - **App Adapter or Function exception:** These components are responsible for connecting applications with APPSeCONNECT which failure results to the sync processes.
-- **NAV Webservice/DI Server/Service Layer Connection Faults:** Will trigger the mail on returning error in the sync process
 - **Timeout:** Timeouts are responsible for sync failures in return will trigger this mail to notify the user for the cause.
 
 ### 3) For Process Oriented:
@@ -65,7 +62,6 @@ Listed below are the scenarios that will trigger the MAIL if APPSeCONNECT genera
 - **License Expiration**
 - **Agent Conectivity Issue**
 - **AutoSync Failure**
-- **Adapter Unavailability**
 - **Workflow Execution Failed**
 
 ## Requirement of the Rule
@@ -99,7 +95,7 @@ Users cannot modify any configuration to the rule. This rule triggers the tokens
 Users would receive the hourly report in the email id provided for the Organisation. The email would consist 
 of the sync report (for failed during the execution process) for the previous hour. 
 
-![errormailnotification1](\staticfiles\rules\media\errormailnotification1 (2).png)
+![errormailnotification1](\staticfiles\rules\media\appseconnect-status-report.jpg)
 
 **Note:**
         * In-case of no error, there wont be any mail sent.           
