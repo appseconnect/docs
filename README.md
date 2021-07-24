@@ -1,3 +1,8 @@
+We are moved to [this link](https://github.com/insyncsolutions/appseconnectdocs)
+
+
+
+
 ## APPSeCONNECT Documentation
 
 APPSeCONNECT provides the Platform to help your organization create integrations and APIs, simplifying the task of connecting multiple data sources.
